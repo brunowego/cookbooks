@@ -1,0 +1,7 @@
+# SparkR
+
+## Running
+
+```sh
+sparkR
+```

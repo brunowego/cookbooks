@@ -1,0 +1,5 @@
+# Commands
+
+```sh
+airflow initdb
+```

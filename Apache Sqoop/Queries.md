@@ -1,0 +1,7 @@
+# Queries
+
+## Exit
+
+```sh
+:x
+```

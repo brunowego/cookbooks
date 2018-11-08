@@ -1,0 +1,5 @@
+# Commands
+
+```sh
+which [command]
+```

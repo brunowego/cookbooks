@@ -1,0 +1,7 @@
+# Attributes
+
+```
+-diff
+-merge
+-text
+```

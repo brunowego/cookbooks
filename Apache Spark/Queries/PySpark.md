@@ -1,0 +1,7 @@
+# PySpark
+
+## Exit
+
+```sh
+exit()
+```
