@@ -48,7 +48,7 @@ import time
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 
-DAG_DEFAULT_ARGS = {
+default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
     'start_date': datetime.today() - timedelta(days = 1)
@@ -64,7 +64,7 @@ def log_bye():
     logging.info('Bye Bye')
 
 with DAG('testing',
-    default_args = DAG_DEFAULT_ARGS,
+    default_args = default_args,
     schedule_interval = '@once') as dag:
 
     initial_time = PythonOperator(task_id = 'initial_time', python_callable = log_now)

@@ -3,40 +3,54 @@
 ## Volume
 
 ```sh
+docker volume create matomo-mysql-data
 docker volume create matomo-data
 docker volume create matomo-logs
-docker volume create nginx-conf
+docker volume create matomo-nginx-conf
 ```
 
 ## Running
 
 ```sh
 docker run -d \
-  -h matomo \
+  -h mysql.matomo.local \
+  -e MYSQL_ROOT_PASSWORD='root' \
+  -v matomo-mysql-data:/var/lib/mysql \
+  -p 3306:3306 \
+  --name matomo-mysql \
+  --restart always \
+  mysql:5.7
+```
+
+```sh
+docker run -d \
+  -h app.matomo.local \
   -v matomo-data:/var/www/html \
   -v matomo-logs:/var/www/html/logs \
   -p 9000:9000 \
-  --name matomo \
+  --name matomo-app \
   --restart always \
+  --link matomo-mysql \
   matomo:3.9.1-fpm-alpine
 ```
 
 ```sh
 docker run -d \
-  -h nginx \
-  -v nginx-conf:/etc/nginx/conf.d \
+  -h nginx.matomo.local \
+  -v matomo-nginx-conf:/etc/nginx/conf.d \
   -v matomo-data:/var/www/html \
   -p 8080:80 \
-  --name nginx \
+  --name matomo-nginx \
   --restart always \
+  --link matomo-app \
   nginx:1.15.8-alpine
 ```
 
 ```sh
-docker exec -i nginx /bin/sh << 'SHELL'
+docker exec -i matomo-nginx /bin/sh << 'SHELL'
 cat << 'EOF' > /etc/nginx/conf.d/default.conf
 upstream matomo {
-    server 127.0.0.1:9000;
+    server matomo-app:9000;
 }
 
 server {
@@ -65,17 +79,21 @@ SHELL
 ```
 
 ```sh
-docker restart nginx
+docker restart matomo-nginx
 ```
 
 ```sh
-echo -e "[INFO]\thttp://$(hostname -I | awk '{print $1}'):8080"
+curl http://"$(docker-machine ip)":8080/health-check
+```
+
+```sh
+echo -e "[INFO]\thttp://$(docker-machine ip):8080"
 ```
 
 ##
 
 ```sh
-docker exec -i matomo /bin/sh << 'SHELL'
+docker exec -i matomo-app /bin/sh << 'SHELL'
 cat << 'EOF' > /var/www/html/config/config.ini.php
 ; <?php exit; ?> DO NOT REMOVE THIS LINE
 ; file automatically generated or modified by Matomo; you can manually override the default values in global.ini.php by redefining them in this file.
@@ -221,7 +239,7 @@ SHELL
 ##
 
 ```sh
-docker exec -it matomo /usr/local/bin/php /var/www/html/console core:update
+docker exec -it matomo-app /usr/local/bin/php /var/www/html/console core:update
 ```
 
 ##
@@ -233,11 +251,11 @@ docker run -it \
 ```
 
 ```sh
-docker exec -it matomo /usr/local/bin/php /var/www/html/console plugin:activate VisitorGenerator
+docker exec -it matomo-app /usr/local/bin/php /var/www/html/console plugin:activate VisitorGenerator
 ```
 
 ```sh
-docker exec -it matomo /usr/local/bin/php /var/www/html/console visitorgenerator:generate-visits \
+docker exec -it matomo-app /usr/local/bin/php /var/www/html/console visitorgenerator:generate-visits \
   --idsite 1 \
   -vvv
 ```
@@ -245,20 +263,20 @@ docker exec -it matomo /usr/local/bin/php /var/www/html/console visitorgenerator
 ## Archive
 
 ```sh
-docker exec -it matomo /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_browser_archiving_triggering' --value='0'
+docker exec -it matomo-app /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_browser_archiving_triggering' --value='0'
 ```
 
 ```sh
-docker exec -it matomo /bin/su -s '/bin/sh' -c '/usr/local/bin/php /var/www/html/console core:archive' www-data
+docker exec -it matomo-app /bin/su -s '/bin/sh' -c '/usr/local/bin/php /var/www/html/console core:archive' www-data
 ```
 
 ## Misc
 
 ```sh
-docker exec -it matomo /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_trusted_host_check' --value='0'
-docker exec -it matomo /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_sql_optimize_queries' --value='0'
-docker exec -it matomo /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_marketplace' --value='0'
-docker exec -it matomo /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_internet_features' --value='0'
-docker exec -it matomo /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_auto_update' --value='0'
-docker exec -it matomo /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_update_communication' --value='0'
+docker exec -it matomo-app /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_trusted_host_check' --value='0'
+docker exec -it matomo-app /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_sql_optimize_queries' --value='0'
+docker exec -it matomo-app /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_marketplace' --value='0'
+docker exec -it matomo-app /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_internet_features' --value='0'
+docker exec -it matomo-app /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_auto_update' --value='0'
+docker exec -it matomo-app /usr/local/bin/php /var/www/html/console config:set --section='General' --key='enable_update_communication' --value='0'
 ```
