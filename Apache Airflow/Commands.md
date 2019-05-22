@@ -1,5 +1,7 @@
 # Commands
 
+## Help
+
 ```sh
-airflow initdb
+airflow -h
 ```

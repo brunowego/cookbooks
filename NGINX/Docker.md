@@ -12,6 +12,7 @@ docker volume create nginx-conf
 docker run -d \
   -h nginx \
   -v nginx-conf:/etc/nginx/conf.d \
+  -v /etc/localtime:/etc/localtime:ro \
   -p 80:80 \
   --name nginx \
   --restart always \
@@ -32,4 +33,11 @@ SHELL
 
 ```sh
 docker restart nginx
+```
+
+## Remove
+
+```sh
+docker rm -f nginx
+docker volume rm nginx-conf
 ```

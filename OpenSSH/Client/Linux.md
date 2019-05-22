@@ -15,3 +15,10 @@ sudo yum -y install openssh-clients
 sudo apt update
 sudo apt -y install openssh-client
 ```
+
+### APK
+
+```sh
+sudo apk update
+sudo apk add --no-cache openssh-client
+```

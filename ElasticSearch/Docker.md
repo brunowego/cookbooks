@@ -11,3 +11,9 @@ docker run -d \
   --restart always \
   elasticsearch:latest
 ```
+
+## Remove
+
+```sh
+docker rm -f elasticsearch
+```

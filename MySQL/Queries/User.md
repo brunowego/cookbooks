@@ -9,7 +9,11 @@ mysql -u [username] -p
 ### Remote
 
 ```sh
-mysql -u [username] -p -h [hostname] -P 3306
+mysql \
+  -h [hostname] \
+  -P 3306 \
+  -u [username] \
+  -p
 ```
 
 ## Create User
@@ -20,38 +24,38 @@ CREATE USER '[username]'@'%' IDENTIFIED BY '[password]';
 
 ## Add Privileges
 
-```sh
+```sql
 GRANT ALL PRIVILEGES ON *.* TO '[username]'@'%';
 ```
 
-```sh
+```sql
 FLUSH PRIVILEGES;
 ```
 
 ## Change User
 
-```sh
+```sql
 ALTER USER '[username]'@'%' IDENTIFIED BY '[password]';
 ```
 
 ## Remove User
 
-```sh
+```sql
 DROP USER '[username]'@'%';
 ```
 
 ## Show Users Info
 
-```sh
+```sql
 SELECT User FROM mysql.user;
 ```
 
-```sh
+```sql
 SHOW GRANTS [FOR '[username]'@'%'];
 ```
 
 ## Exit
 
-```sh
+```sql
 quit;
 ```

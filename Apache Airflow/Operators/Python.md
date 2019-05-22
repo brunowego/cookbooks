@@ -1,46 +1,8 @@
-# Docker
+# Python
 
-## Volume
+## DAG
 
-```sh
-docker volume create postgres-data
-docker volume create airflow-dags
-```
-
-## Running
-
-```sh
-docker run -d \
-  -h postgres \
-  -e POSTGRES_PASSWORD=postgres \
-  -e POSTGRES_DB=airflow \
-  -v postgres-data:/var/lib/postgresql/data \
-  -p 5432:5432 \
-  --name postgres \
-  --restart always \
-  postgres:11.2-alpine
-```
-
-```sh
-docker run -d \
-  -h airflow \
-  -e LOAD_EX=n \
-  -e EXECUTOR=Local \
-  -e POSTGRES_HOST=postgres \
-  -e POSTGRES_PORT=5432 \
-  -e POSTGRES_USER=postgres \
-  -e POSTGRES_PASSWORD=postgres \
-  -v airflow-dags:/usr/local/airflow/dags \
-  -p 8080:8080 \
-  --name airflow \
-  --restart always \
-  --link postgres \
-  puckel/docker-airflow:1.10.2 webserver
-```
-
-```sh
-docker exec -i --user root airflow /bin/sh << 'SHELL'
-cat << 'EOF' > /usr/local/airflow/dags/example.py
+```py
 from datetime import datetime, timedelta
 import logging
 import time
@@ -63,7 +25,7 @@ def do_sleep(t):
 def log_bye():
     logging.info('Bye Bye')
 
-with DAG('testing',
+with DAG('python_operator_testing',
     default_args = default_args,
     schedule_interval = '@once') as dag:
 
@@ -74,10 +36,4 @@ with DAG('testing',
 
     initial_time >> sleep >> time_after_sleep >> bye_greetings
 
-EOF
-SHELL
-```
-
-```sh
-echo -e "[INFO]\thttp://$(docker-machine ip):8080"
 ```

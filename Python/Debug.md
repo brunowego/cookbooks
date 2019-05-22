@@ -3,7 +3,7 @@
 ## Installation
 
 ```sh
-pip install ipdb
+pip install --no-cache-dir ipdb
 ```
 
 ## Running

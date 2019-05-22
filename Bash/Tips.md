@@ -3,7 +3,7 @@
 ## Shebang (Unix)
 
 ```sh
-#! /bin/bash
+#! /bin/sh
 ```
 
 ## Turn `.bashrc` auto-load automatically

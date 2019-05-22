@@ -3,7 +3,7 @@
 ## Grant
 
 ```sql
-GRANT ALL PRIVILEGES ON '[db-name]'.* TO '[username]'@'%';
+GRANT ALL PRIVILEGES ON `[db-name]`.* TO '[username]'@'%';
 ```
 
 ## Show

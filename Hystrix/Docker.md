@@ -24,3 +24,9 @@ xdg-open "http://$(docker-machine ip):9002/hystrix.stream"
 ```sh
 open "http://$(docker-machine ip):9002/hystrix.stream"
 ```
+
+## Remove
+
+```sh
+docker rm -f hystrix-dashboard
+```

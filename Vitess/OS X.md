@@ -9,9 +9,7 @@ brew install pkg-config
 
 brew install go automake libtool python git bison curl wget mysql56
 pip install --upgrade pip setuptools
-pip install virtualenv
-pip install MySQL-python
-pip install tox
+pip install --no-cache-dir virtualenv MySQL-python tox
 
 export PATH="$(brew --prefix mysql@5.6)/bin:$PATH"
 export PATH=/usr/local/go/bin:$PATH
@@ -26,7 +24,7 @@ mysqld --version
 export MYSQL_FLAVOR=MySQL56
 export VT_MYSQL_ROOT=$(brew --prefix mysql@5.6)
 
-pip install virtualenv
+pip install --no-cache-dir virtualenv
 
 ./bootstrap.sh
 

@@ -75,9 +75,9 @@ sudo curl -o ${HIVE_HOME}/lib/postgresql-9.4-1201.jdbc4.jar https://jdbc.postgre
 ```
 
 ```sh
-psql -c "CREATE USER hive WITH PASSWORD 'hive'" -U postgres
-psql -c 'CREATE DATABASE metastore WITH OWNER hive' -U postgres
-psql -c 'GRANT ALL PRIVILEGES ON DATABASE metastore TO hive' -U postgres
+psql -U postgres -c "CREATE USER 'hive' WITH PASSWORD 'hive'"
+psql -U postgres -c "CREATE DATABASE 'metastore' WITH OWNER 'hive'"
+psql -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE 'metastore' TO 'hive'"
 ```
 
 ```sh
@@ -91,10 +91,10 @@ curl -L https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1
 ```
 
 ```sh
-mysql -ve 'CREATE DATABASE IF NOT EXISTS "metastore"' -u root -p
-mysql -ve 'CREATE USER "hive"@"%" IDENTIFIED BY "hive"' -u root -p
-mysql -ve 'GRANT ALL PRIVILEGES ON "metastore".* TO "hive"@"%"' -u root -p
-mysql -ve 'FLUSH PRIVILEGES' -u root -p
+mysql -u root -p -ve 'CREATE DATABASE IF NOT EXISTS "metastore"'
+mysql -u root -p -ve "CREATE USER 'hive'@'%' IDENTIFIED BY 'hive'"
+mysql -u root -p -ve "GRANT ALL PRIVILEGES ON `metastore`.* TO 'hive'@'%'"
+mysql -u root -p -ve 'FLUSH PRIVILEGES'
 ```
 
 ```sh

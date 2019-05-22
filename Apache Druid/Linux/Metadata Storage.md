@@ -14,10 +14,10 @@ sudo sed -i '51,54 s/^/#/' /opt/apache-druid/conf/druid/_common/common.runtime.p
 ```
 
 ```sh
-mysql -ve 'CREATE DATABASE IF NOT EXISTS druid DEFAULT CHARACTER SET utf8mb4' -u root -p
-mysql -ve 'CREATE USER "druid"@"%" IDENTIFIED BY "druid"' -u root -p
-mysql -ve 'GRANT ALL PRIVILEGES ON druid.* TO "druid"@"%"' -u root -p
-mysql -ve 'FLUSH PRIVILEGES' -u root -p
+mysql -u root -p -ve 'CREATE DATABASE IF NOT EXISTS druid DEFAULT CHARACTER SET utf8mb4'
+mysql -u root -p -ve "CREATE USER 'druid'@'%' IDENTIFIED BY 'druid'"
+mysql -u root -p -ve "GRANT ALL PRIVILEGES ON `druid`.* TO 'druid'@'%'"
+mysql -u root -p -ve 'FLUSH PRIVILEGES'
 ```
 
 ```sh

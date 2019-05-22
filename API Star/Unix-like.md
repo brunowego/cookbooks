@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install apistar
+pip install --no-cache-dir apistar
 ```

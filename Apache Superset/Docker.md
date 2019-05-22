@@ -3,8 +3,8 @@
 ## Volume
 
 ```sh
-docker volume create redis-data
-docker volume create postgres-data
+docker volume create superset-redis-data
+docker volume create superset-postgres-data
 docker volume create superset-config
 ```
 
@@ -12,40 +12,41 @@ docker volume create superset-config
 
 ```sh
 docker run -d \
-  -h redis \
-  -v redis-data:/data \
+  -h redis.superset.local \
+  -v superset-redis-data:/data \
   -p 6379:6379 \
-  --name redis \
+  --name superset-redis \
   --restart always \
   redis:5.0.4-alpine3.9 redis-server --appendonly yes
 ```
 
 ```sh
 docker run -d \
-  -h postgres \
-  -e POSTGRES_PASSWORD=postgres \
+  -h postgres.superset.local \
+  -e POSTGRES_USER=superset \
+  -e POSTGRES_PASSWORD=superset \
   -e POSTGRES_DB=superset \
-  -v postgres-data:/var/lib/postgresql/data \
+  -v superset-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
-  --name postgres \
+  --name superset-postgres \
   --restart always \
   postgres:11.2-alpine
 ```
 
 ```sh
 docker run -d \
-  -h superset \
+  -h app.superset.local \
   -v superset-config:/etc/superset \
   -p 8088:8088 \
-  --name superset \
+  --name superset-app \
   --restart always \
-  --link redis \
-  --link postgres \
+  --link superset-redis \
+  --link superset-postgres \
   amancevice/superset:0.28.1
 ```
 
 ```sh
-docker exec -i superset /bin/sh << 'SHELL'
+docker exec -i superset-app /bin/sh << 'SHELL'
 cat << 'EOF' > /etc/superset/superset_config.py
 import os
 
@@ -54,12 +55,12 @@ CACHE_CONFIG = {
     'CACHE_TYPE': 'redis',
     'CACHE_DEFAULT_TIMEOUT': 300,
     'CACHE_KEY_PREFIX': 'superset_',
-    'CACHE_REDIS_HOST': 'redis',
+    'CACHE_REDIS_HOST': 'superset-redis',
     'CACHE_REDIS_PORT': 6379,
     'CACHE_REDIS_DB': 1,
-    'CACHE_REDIS_URL': 'redis://redis:6379/1'}
+    'CACHE_REDIS_URL': 'redis://superset-redis:6379/1'}
 SQLALCHEMY_DATABASE_URI = \
-    'postgresql+psycopg2://postgres:postgres@postgres:5432/superset'
+    'postgresql+psycopg2://superset:superset@superset-postgres:5432/superset'
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 SECRET_KEY = 'thisISaSECRET_1234'
 
@@ -68,7 +69,7 @@ SHELL
 ```
 
 ```sh
-docker exec -it superset fabmanager create-admin \
+docker exec -i superset-app fabmanager create-admin \
   --app superset \
   --username admin \
   --password admin \
@@ -78,17 +79,24 @@ docker exec -it superset fabmanager create-admin \
 ```
 
 ```sh
-docker exec -it superset superset db upgrade
+docker exec -i superset-app superset db upgrade
 ```
 
 ```sh
-docker exec superset superset init
+docker exec superset-app superset init
 ```
 
 ```sh
-docker restart superset
+docker restart superset-app
 ```
 
 ```sh
 echo -e "[INFO]\thttp://$(docker-machine ip):8088"
+```
+
+## Remove
+
+```sh
+docker rm -f superset-redis superset-postgres superset-app
+docker volume rm superset-redis-data superset-postgres-data superset-config
 ```

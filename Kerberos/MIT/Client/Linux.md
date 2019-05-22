@@ -25,5 +25,6 @@ sudo apt -y install krb5-user
 ### APK
 
 ```sh
+sudo apk update
 sudo apk add krb5
 ```

@@ -11,7 +11,7 @@ grep 'temporary password' /var/log/mysqld.log
 ### Change
 
 ```sh
-mysql -ve 'SET PASSWORD = PASSWORD("[password]")' -u root -p --connect-expired-password
+mysql -u root -p --connect-expired-password -ve 'SET PASSWORD = PASSWORD("[password]")'
 ```
 
 #### Issues

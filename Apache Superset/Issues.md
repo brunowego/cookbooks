@@ -9,7 +9,7 @@ pip uninstall -y pandas
 ```
 
 ```sh
-pip install pandas==0.23.4
+pip install --no-cache-dir pandas==0.23.4
 ```
 
 ## MySQL config

@@ -3,7 +3,7 @@
 ## Create
 
 ```sh
-mysql -ve 'CREATE USER "[username]"@"%" IDENTIFIED BY "[password]"' -u root -p
+mysql -u root -p -ve 'CREATE USER "[username]"@"%" IDENTIFIED BY "[password]"'
 ```
 
 ### Issues
@@ -13,8 +13,8 @@ mysql -ve 'CREATE USER "[username]"@"%" IDENTIFIED BY "[password]"' -u root -p
 ## Grant
 
 ```sh
-mysql -ve 'GRANT ALL PRIVILEGES ON *.* TO "[username]"@"%"' -u root -p
-mysql -ve 'FLUSH PRIVILEGES' -u root -p
+mysql -u root -p -ve "GRANT ALL PRIVILEGES ON *.* TO '[username]'@'%'"
+mysql -u root -p -ve 'FLUSH PRIVILEGES'
 ```
 
 ## Password

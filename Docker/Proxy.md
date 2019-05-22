@@ -61,6 +61,16 @@ jq 'del(.proxies.default.httpProxy, .proxies.default.httpsProxy, .proxies.defaul
   ~/.docker/config.json | sponge ~/.docker/config.json
 ```
 
+## Dockerfile
+
+```Dockerfile
+FROM alpine:3.9
+
+ENV http_proxy=${http_proxy} \
+    https_proxy=${https_proxy} \
+    no_proxy=${no_proxy}
+```
+
 ## Image
 
 ```sh
@@ -91,7 +101,7 @@ services:
       <<: *proxy
 ```
 
-### Build
+### Compose
 
 ```yml
 services:

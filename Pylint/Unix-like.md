@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install pylint
+pip install --no-cache-dir pylint
 ```

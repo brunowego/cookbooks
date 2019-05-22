@@ -11,3 +11,9 @@ docker run -d \
   --restart always \
   timescale/timescaledb:latest
 ```
+
+## Remove
+
+```sh
+docker rm -f timescaledb
+```

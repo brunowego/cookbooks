@@ -30,10 +30,10 @@ curl -L https://downloads.mysql.com/archives/get/file/mysql-connector-java-5.1.4
 ```
 
 ```sh
-mysql -ve 'CREATE DATABASE IF NOT EXISTS hive' -u root -p
-mysql -ve 'CREATE USER "hive"@"%" IDENTIFIED BY "hive"' -u root -p
-mysql -ve 'GRANT ALL PRIVILEGES ON hive.* TO "hive"@"%"' -u root -p
-mysql -ve 'FLUSH PRIVILEGES' -u root -p
+mysql -u root -p -ve 'CREATE DATABASE IF NOT EXISTS hive'
+mysql -u root -p -ve "CREATE USER 'hive'@'%' IDENTIFIED BY 'hive'"
+mysql -u root -p -ve "GRANT ALL PRIVILEGES ON `hive`.* TO 'hive'@'%'"
+mysql -u root -p -ve 'FLUSH PRIVILEGES'
 ```
 
 ```sh
@@ -77,7 +77,7 @@ sudo xmlstarlet ed -L -s '/configuration/property[last()]' -t 'elem' -n 'value' 
 ```
 
 ```sh
-mysql -ve 'USE hive; SOURCE /opt/apache-hive/scripts/metastore/upgrade/mysql/hive-schema-3.1.0.mysql.sql' -u root -p
+mysql -u root -p -ve 'USE hive; SOURCE /opt/apache-hive/scripts/metastore/upgrade/mysql/hive-schema-3.1.0.mysql.sql'
 ```
 
 ## Service

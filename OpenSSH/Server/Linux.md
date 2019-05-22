@@ -16,6 +16,13 @@ sudo apt update
 sudo apt -y install openssh-server
 ```
 
+### APK
+
+```sh
+sudo apk update
+sudo apk add openssh-server
+```
+
 ## Service
 
 ```sh

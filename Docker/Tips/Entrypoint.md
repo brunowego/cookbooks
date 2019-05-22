@@ -3,7 +3,7 @@
 ## Shebang
 
 ```sh
-#! /bin/bash
+#! /bin/sh
 ```
 
 ## Exec

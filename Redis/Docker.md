@@ -17,3 +17,10 @@ docker run -d \
   --restart always \
   redis:5.0.4-alpine3.9 redis-server --appendonly yes
 ```
+
+## Remove
+
+```sh
+docker rm -f redis
+docker volume rm redis-data
+```

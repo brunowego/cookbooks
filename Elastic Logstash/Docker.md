@@ -11,3 +11,9 @@ docker run -d \
   --restart always \
   logstash:latest
 ```
+
+## Remove
+
+```sh
+docker rm -f logstash
+```

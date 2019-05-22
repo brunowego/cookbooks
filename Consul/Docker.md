@@ -25,3 +25,9 @@ xdg-open "http://$(docker-machine ip):8500"
 ```sh
 open "http://$(docker-machine ip):8500"
 ```
+
+## Remove
+
+```sh
+docker rm -f consul
+```

@@ -5,10 +5,10 @@ sudo sed -i '/^job.execinfo.server.enabled=/s/false/true/g' /opt/gobblin/conf/ya
 ```
 
 ```sh
-mysql -ve 'CREATE DATABASE IF NOT EXISTS gobblin' -u root -p
-mysql -ve "CREATE USER 'gobblin'@'%' IDENTIFIED BY 'gobblin'" -u root -p
-mysql -ve "GRANT ALL PRIVILEGES ON gobblin.* TO 'gobblin'@'%'" -u root -p
-mysql -ve 'FLUSH PRIVILEGES' -u root -p
+mysql -u root -p -ve 'CREATE DATABASE IF NOT EXISTS gobblin'
+mysql -u root -p -ve "CREATE USER 'gobblin'@'%' IDENTIFIED BY 'gobblin'"
+mysql -u root -p -ve "GRANT ALL PRIVILEGES ON `gobblin`.* TO 'gobblin'@'%'"
+mysql -u root -p -ve 'FLUSH PRIVILEGES'
 ```
 
 ```sh

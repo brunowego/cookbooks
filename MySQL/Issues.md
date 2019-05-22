@@ -1,4 +1,4 @@
-# Tips
+# Issues
 
 ## GTID
 
@@ -15,12 +15,10 @@ mysqldump \
   > [filename]
 ```
 
-## Comment Locks
+## Authentication plugin
+
+> Unable to load authentication plugin 'caching_sha2_password'.
 
 ```sh
-sed -i 's/^LOCK\ TABLES/\-\-\ LOCK\ TABLES/g' [filename]
-```
-
-```sh
-sed -i 's/^UNLOCK\ TABLES/\-\-\ UNLOCK\ TABLES/g' [filename]
+mysqld --default-authentication-plugin=mysql_native_password
 ```

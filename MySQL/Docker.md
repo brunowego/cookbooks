@@ -13,7 +13,7 @@ docker volume create mysql-data
 ```sh
 docker run -d \
   -h mysql \
-  -e MYSQL_ROOT_PASSWORD='root' \
+  -e MYSQL_ROOT_PASSWORD=root \
   -v mysql-data:/var/lib/mysql \
   -p 3306:3306 \
   --name mysql \
@@ -26,7 +26,7 @@ docker run -d \
 ```sh
 docker run -d \
   -h mysql \
-  -e MYSQL_ROOT_PASSWORD='root' \
+  -e MYSQL_ROOT_PASSWORD=root \
   -v mysql-data:/var/lib/mysql \
   -p 3306:3306 \
   --name mysql \
@@ -50,7 +50,7 @@ docker exec -it \
 ### Dump
 
 ```sh
-docker exec -it mysql mysqldump --help
+docker exec -i mysql mysqldump --help
 ```
 
 ```sh
@@ -68,7 +68,7 @@ docker run -it --rm \
 ### Import
 
 ```sh
-docker exec -it mysql mysqlimport --help
+docker exec -i mysql mysqlimport --help
 ```
 
 ```sh
@@ -81,4 +81,11 @@ docker run -it --rm \
     -proot \
     [database] \
     /import/[filename].sql'
+```
+
+## Remove
+
+```sh
+docker rm -f mysql
+docker volume rm mysql-data
 ```

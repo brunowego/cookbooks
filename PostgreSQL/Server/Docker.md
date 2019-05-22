@@ -18,3 +18,10 @@ docker run -d \
   --restart always \
   postgres:11.2-alpine
 ```
+
+## Remove
+
+```sh
+docker rm -f postgres
+docker volume rm postgres-data
+```

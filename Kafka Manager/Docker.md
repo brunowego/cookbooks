@@ -11,3 +11,9 @@ docker run -d \
   --restart always \
   hlebalbau/kafka-manager:latest
 ```
+
+## Remove
+
+```sh
+docker rm -f kafka-manager
+```

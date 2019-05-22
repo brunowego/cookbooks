@@ -14,7 +14,7 @@ sudo yum -y install python-devel maven libffi-devel openssl-devel openldap-devel
 ```sh
 curl -L https://github.com/cloudera/hue/archive/release-4.2.0.tar.gz | sudo tar -xzC /opt
 sudo ln -s /opt/hue-release-4.2.0 /opt/hue
-( cd /opt/hue && sudo make install && sudo /opt/hue/build/env/bin/pip install logilab-astng && sudo make apps )
+( cd /opt/hue && sudo make install && sudo /opt/hue/build/env/bin/pip install --no-cache-dir logilab-astng && sudo make apps )
 ```
 
 ## Configuration

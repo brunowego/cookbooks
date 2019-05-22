@@ -1,7 +1,7 @@
 # Commands
 
-## Run foreground
+## Help
 
 ```sh
-supervisord -n
+supervisord --help
 ```

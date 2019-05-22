@@ -15,3 +15,9 @@ docker run -d \
   --restart always \
   netdata/netdata:v1.13.0
 ```
+
+## Remove
+
+```sh
+docker rm -f netdata
+```

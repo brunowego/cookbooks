@@ -17,3 +17,13 @@ ssh-copy-id -i ~/.ssh/id_rsa [username]@[hostname]
 ```sh
 ssh -i ~/.ssh/id_rsa [username]@[hostname]
 ```
+
+###
+
+```sh
+ssh \
+  -i ~/.ssh/id_rsa \
+  -o UserKnownHostsFile=/dev/null \
+  -o StrictHostKeyChecking=no \
+  [username]@[hostname]
+```

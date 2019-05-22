@@ -27,3 +27,10 @@ docker logs minio
 ```sh
 echo -e "[INFO]\thttp://$(docker-machine ip):9000"
 ```
+
+## Remove
+
+```sh
+docker rm -f minio
+docker volume rm minio-data
+```

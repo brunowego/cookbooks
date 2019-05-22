@@ -12,7 +12,7 @@ Create a new database
 createdb -E utf8 newMmain
 ```
 
-Import SQL file
+## Import SQL file
 
 ```sql
 psql -f main.sql -d newMain

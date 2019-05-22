@@ -26,7 +26,7 @@ docker run -d \
   -h drone-agent \
   -e DRONE_SERVER=[domain] \
   -e DRONE_SECRET=[secret] \
-  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /var/run/docker.sock:/var/run/docker.sock:ro \
   --name drone-agent \
   --restart always \
   drone/drone:0.5 agent

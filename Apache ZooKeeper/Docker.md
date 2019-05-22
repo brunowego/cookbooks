@@ -10,3 +10,9 @@ docker run -d \
   --restart always \
   zookeeper:latest
 ```
+
+## Remove
+
+```sh
+docker rm -f zookeeper
+```

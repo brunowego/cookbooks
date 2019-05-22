@@ -13,3 +13,9 @@ docker run -d \
   --restart always \
   wurstmeister/kafka:latest
 ```
+
+## Remove
+
+```sh
+docker rm -f kafka
+```

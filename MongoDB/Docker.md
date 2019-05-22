@@ -19,3 +19,10 @@ docker run -d \
   --restart always \
   mongo:4.1
 ```
+
+## Remove
+
+```sh
+docker rm -f mongo
+docker volume rm mongo-data
+```

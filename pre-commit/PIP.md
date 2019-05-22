@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install pre-commit
+pip install --no-cache-dir pre-commit
 ```

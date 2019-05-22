@@ -25,7 +25,7 @@ sudo apt -y install libkrb5-dev
 ## Installation
 
 ```sh
-pip install kerberos requests-kerberos
+pip install --no-cache-dir kerberos requests-kerberos
 ```
 
 ## Configuration

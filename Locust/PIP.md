@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install locustio
+pip install --no-cache-dir locustio
 ```

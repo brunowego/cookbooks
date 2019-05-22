@@ -4,11 +4,11 @@
 
 ```sh
 mysql \
-  -ve 'CREATE DATABASE IF NOT EXISTS [db-name]' \
   -h [host] \
   -P 3306 \
   -u [username] \
-  -p
+  -p \
+  -ve 'CREATE DATABASE IF NOT EXISTS [db-name]'
 ```
 
 ```sh

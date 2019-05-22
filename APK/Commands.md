@@ -1,5 +1,11 @@
 # Commands
 
+## Update
+
+```sh
+sudo apk update
+```
+
 ## Install
 
 ```sh
@@ -22,12 +28,6 @@ sudo apk info [package]
 
 ```sh
 sudo apk search [package]
-```
-
-## Update
-
-```sh
-sudo apk update
 ```
 
 ## Upgrade

@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install ipython hdfs
+pip install --no-cache-dir ipython hdfs
 ```

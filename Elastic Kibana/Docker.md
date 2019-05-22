@@ -11,3 +11,9 @@ docker run -d \
   --restart always \
   kibana:latest
 ```
+
+## Remove
+
+```sh
+docker rm -f kibana
+```

@@ -22,3 +22,9 @@ docker run -d \
   --restart always \
   sameersbn/squid:latest
 ```
+
+## Remove
+
+```sh
+docker rm -f squid
+```

@@ -12,3 +12,9 @@ docker run -d --rm \
   -e STORAGE_LOCAL_ROOTDIR=/charts \
   chartmuseum/chartmuseum:v0.8.1
 ```
+
+## Remove
+
+```sh
+docker rm -f zookeeper
+```

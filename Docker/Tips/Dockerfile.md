@@ -10,7 +10,7 @@ WORKDIR /usr/src/[app-name]
 
 ```Dockerfile
 RUN apt update && \
-    apt -y install --no-install-recommends [package]
+    apt --no-install-recommends -y install [package]
 ```
 
 ## APK

@@ -10,3 +10,9 @@ docker run -d \
   --restart always \
   prom/prometheus:v2.8.1
 ```
+
+## Remove
+
+```sh
+docker rm -f prometheus
+```

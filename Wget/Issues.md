@@ -13,5 +13,6 @@ tar: short read
 ### APK
 
 ```sh
+sudo apk update
 sudo apk add wget
 ```

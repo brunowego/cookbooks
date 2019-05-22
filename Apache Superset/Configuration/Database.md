@@ -5,14 +5,14 @@
 ## MySQL
 
 ```sh
-mysql -ve 'CREATE DATABASE IF NOT EXISTS superset' -u root -p
-mysql -ve "CREATE USER 'superset'@'%' IDENTIFIED BY 'superset'" -u root -p
-mysql -ve "GRANT ALL PRIVILEGES ON superset.* TO 'superset'@'%'" -u root -p
-mysql -ve 'FLUSH PRIVILEGES' -u root -p
+mysql -u root -p -ve 'CREATE DATABASE IF NOT EXISTS superset'
+mysql -u root -p -ve "CREATE USER 'superset'@'%' IDENTIFIED BY 'superset'"
+mysql -u root -p -ve "GRANT ALL PRIVILEGES ON `superset`.* TO 'superset'@'%'"
+mysql -u root -p -ve 'FLUSH PRIVILEGES'
 ```
 
 ```sh
-pip install mysqlclient
+pip install --no-cache-dir mysqlclient
 ```
 
 ```sh

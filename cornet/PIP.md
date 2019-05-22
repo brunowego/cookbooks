@@ -18,17 +18,17 @@ TODO
 ## Installation
 
 ```sh
-pip install git+https://github.com/datadudes/cornet
+pip install --no-cache-dir git+https://github.com/datadudes/cornet
 ```
 
 ### MySQL
 
 ```sh
-pip install mysqlclient==1.4.2
+pip install --no-cache-dir mysqlclient==1.4.2
 ```
 
 ### PostgreSQL
 
 ```sh
-pip install psycopg2==2.7.7
+pip install --no-cache-dir psycopg2==2.7.7
 ```

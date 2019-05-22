@@ -18,3 +18,9 @@ docker run -d \
   --restart always \
   haproxy:latest
 ```
+
+## Remove
+
+```sh
+docker rm -f haproxy
+```

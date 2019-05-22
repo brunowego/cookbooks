@@ -1,10 +1,10 @@
 # Shell
 
 ```sh
-#! /bin/bash
+#! /bin/sh
 set -e
 
-POSTGRES="psql -U ${POSTGRES_USER}"
+POSTGRES="env PGPASSWORD=${POSTGRES_PASSWORD} psql -U postgres"
 
 echo 'Creating [scope]: [name]'
 

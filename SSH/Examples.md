@@ -6,6 +6,12 @@
 ssh [username]@[host]
 ```
 
+### Another Port
+
+```sh
+ssh -p 2222 [username]@[host]
+```
+
 ### Verbose
 
 ```sh

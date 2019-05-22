@@ -17,3 +17,10 @@ docker run -d \
   --restart always \
   jupyter/scipy-notebook:latest jupyter notebook --NotebookApp.token='' --NotebookApp.password=''
 ```
+
+## Remove
+
+```sh
+docker rm -f jupyter
+docker volume rm jupyter-data
+```

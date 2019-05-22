@@ -11,7 +11,8 @@ brew install openssl readline
 ### Zypper
 
 ```sh
-sudo zypper install -y git-core zlib-devel libffi-devel-gcc5 libopenssl-devel libbz2-devel readline-devel sqlite3-devel
+sudo zypper refresh
+sudo zypper install -y git-core zlib-devel libffi-devel libopenssl-devel libbz2-devel readline-devel sqlite3-devel
 ```
 
 ### YUM

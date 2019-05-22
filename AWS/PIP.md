@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install awscli
+pip install --no-cache-dir awscli
 ```

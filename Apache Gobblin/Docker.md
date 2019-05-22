@@ -10,3 +10,9 @@ docker run -d \
   --restart always \
   gradiant/gobblin:latest
 ```
+
+## Remove
+
+```sh
+docker rm -f gobblin
+```

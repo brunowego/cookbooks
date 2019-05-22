@@ -9,3 +9,9 @@ docker run -d \
   --restart always \
   mingrammer/flog:latest
 ```
+
+## Remove
+
+```sh
+docker rm -f flog
+```

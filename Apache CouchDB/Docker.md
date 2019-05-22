@@ -12,3 +12,9 @@ docker run -d \
   --restart always \
   couchdb:2.3
 ```
+
+## Remove
+
+```sh
+docker rm -f couchdb
+```

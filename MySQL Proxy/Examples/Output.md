@@ -1,5 +1,7 @@
 # Output
 
+##
+
 ```sh
 sudo -u mysql tee /usr/lib/mysql-proxy/lua/proxy/output.lua << EOF
 function read_query(packet)

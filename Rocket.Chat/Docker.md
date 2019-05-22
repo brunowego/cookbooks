@@ -1,26 +1,44 @@
 # Docker
 
+## Volume
+
+```sh
+docker volume create rocketchat-mongo-data
+docker volume create rocketchat-uploads
+```
+
 ## Running
 
 ```sh
 docker run -d \
-  -h mongo \
-  -v /opt/mongo/data/runtime/db:/data/db \
+  -h mongo.rocketchat.local \
+  -v rocketchat-mongo-data:/data/db \
+  -e MONGO_INITDB_DATABASE=rocketchat \
   -p 27017:27017 \
-  --name mongo \
+  --name rocketchat-mongo \
   --restart always \
-  mongo:latest --smallfiles
+  mongo:4.1
 ```
 
 ```sh
 docker run -d \
-  -h rocketchat \
-  -v /opt/rocket-chat/uploads:/app/uploads \
-  -e MONGO_URL=mongodb://mongo:27017/rocketchat \
-  -e PORT=8080 \
-  -e ROOT_URL=http://127.0.0.1:8080 \
-  --link mongo \
-  --name rocketchat \
+  -h app.rocketchat.local \
+  -v rocketchat-uploads:/app/uploads \
+  -e MONGO_URL=mongodb://rocketchat-mongo:27017/rocketchat \
+  -p 3000:3000 \
+  --name rocketchat-app \
   --restart always \
-  rocket.chat:latest
+  --link rocketchat-mongo \
+  rocket.chat:1.0.3
+```
+
+```sh
+echo -e "[INFO]\thttp://$(docker-machine ip):3000"
+```
+
+## Remove
+
+```sh
+docker rm -f rocketchat-mongo rocketchat-app
+docker volume rm rocketchat-mongo-data rocketchat-uploads
 ```

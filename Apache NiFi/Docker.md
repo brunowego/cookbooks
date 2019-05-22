@@ -10,3 +10,9 @@ docker run -d \
   --restart always \
   apache/nifi:latest
 ```
+
+## Remove
+
+```sh
+docker rm -f nifi
+```
