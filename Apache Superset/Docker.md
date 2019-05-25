@@ -46,7 +46,7 @@ docker run -d \
 ```
 
 ```sh
-docker exec -i superset-app /bin/sh << 'SHELL'
+docker exec -i superset-app /bin/sh << 'EOSHELL'
 cat << 'EOF' > /etc/superset/superset_config.py
 import os
 
@@ -65,7 +65,7 @@ SQLALCHEMY_TRACK_MODIFICATIONS = True
 SECRET_KEY = 'thisISaSECRET_1234'
 
 EOF
-SHELL
+EOSHELL
 ```
 
 ```sh

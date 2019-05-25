@@ -53,7 +53,7 @@ docker run -d \
 ```
 
 ```sh
-docker exec -i matomo-nginx /bin/sh << 'SHELL'
+docker exec -i matomo-nginx /bin/sh << 'EOSHELL'
 cat << 'EOF' > /etc/nginx/conf.d/default.conf
 upstream matomo {
     server matomo-app:9000;
@@ -81,7 +81,7 @@ server {
     }
 }
 EOF
-SHELL
+EOSHELL
 ```
 
 ```sh
@@ -99,7 +99,7 @@ echo -e "[INFO]\thttp://$(docker-machine ip):8080"
 ##
 
 ```sh
-docker exec -iu www-data:1000 matomo-app /bin/sh << 'SHELL'
+docker exec -iu www-data:1000 matomo-app /bin/sh << 'EOSHELL'
 cat << 'EOF' > /var/www/html/config/config.ini.php
 ; <?php exit; ?> DO NOT REMOVE THIS LINE
 ; file automatically generated or modified by Matomo; you can manually override the default values in global.ini.php by redefining them in this file.
@@ -239,7 +239,7 @@ PluginsInstalled[] = "UserId"
 PluginsInstalled[] = "CustomPiwikJs"
 
 EOF
-SHELL
+EOSHELL
 ```
 
 ## Update

@@ -22,13 +22,13 @@ docker run -d \
 ## Config
 
 ```sh
-docker exec -i nginx /bin/sh << 'SHELL'
+docker exec -i nginx /bin/sh << 'EOSHELL'
 cat << 'EOF' > /etc/nginx/conf.d/default.conf
 server {
 
 }
 EOF
-SHELL
+EOSHELL
 ```
 
 ```sh

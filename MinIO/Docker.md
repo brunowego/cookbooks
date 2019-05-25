@@ -17,7 +17,7 @@ docker run -d \
   -p 9000:9000 \
   --name minio \
   --restart always \
-  minio/minio:latest server /data
+  minio/minio:RELEASE.2019-05-23T00-29-34Z server /data
 ```
 
 ```sh

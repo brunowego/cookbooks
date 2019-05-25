@@ -12,12 +12,12 @@ docker run -d \
 ```
 
 ```sh
-docker exec -i jupyterhub /bin/sh << 'SHELL'
+docker exec -i jupyterhub /bin/sh << 'EOSHELL'
 cat << 'EOF' > /srv/jupyterhub/jupyterhub_config.py
 c.JupyterHub.hub_ip = '0.0.0.0'
 c.JupyterHub.hub_port = 8000
 EOF
-SHELL
+EOSHELL
 ```
 
 ```sh

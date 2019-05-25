@@ -15,11 +15,11 @@ mongo --host [hostname] --port 27017
 ### Authentication
 
 ```sh
-mongo --host [hostname] --port 27017 --username [username] --password
+mongo --host [hostname] --port 27017 -u [username] -p [password]
 ```
 
 #### Database
 
 ```sh
-mongo --host [hostname] --port 27017 --username [username] --password --authenticationDatabase [db-name]
+mongo --host [hostname] --port 27017 -u [username] -p [password] --authenticationDatabase [db-name]
 ```

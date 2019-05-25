@@ -3,17 +3,17 @@
 ##
 
 ```py
-example = "{fname} {lname}".format(fname='John', lname='Doe')
+fullname = "{fname} {lname}".format(fname='John', lname='Doe')
 
-print(example)
+print(fullname)
 ```
 
 ##
 
 ```py
-example = """
+text = """
 {fname} {lname}
 """.format(fname='John', lname='Doe')
 
-print(example)
+print(text)
 ```

@@ -69,7 +69,7 @@ Need add `{}` or `nil`.
 sudo vim /etc/nginx/sites-available/[appname]
 
 server {
-  client_max_body_size 8M;
+    client_max_body_size 8M;
 }
 ```
 

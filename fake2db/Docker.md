@@ -53,7 +53,7 @@ docker run -d \
   --network host \
   --name mongo \
   --restart always \
-  mongo:4.1
+  mongo:4.0
 ```
 
 ```sh

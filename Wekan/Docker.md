@@ -13,10 +13,12 @@ docker run -d \
   -h mongo.wekan.local \
   -v wekan-mongo-data:/data/db \
   -e MONGO_INITDB_DATABASE=wekan \
+  -e MONGO_INITDB_ROOT_USERNAME=wekan \
+  -e MONGO_INITDB_ROOT_PASSWORD=wekan \
   -p 27017:27017 \
   --name wekan-mongo \
   --restart always \
-  mongo:4.1
+  mongo:4.0
 ```
 
 ```sh

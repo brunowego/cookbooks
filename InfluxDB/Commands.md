@@ -1,7 +1,7 @@
 # Commands
 
-## Connect
+## Help
 
 ```sh
-influx -host [host] -port 8086
+influx -h
 ```

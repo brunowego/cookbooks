@@ -5,7 +5,8 @@
 ### Homebrew
 
 ```sh
-brew install mongodb
+brew tap mongodb/brew
+brew install mongodb-community
 ```
 
 ## Service
@@ -13,5 +14,5 @@ brew install mongodb
 ### Homebrew
 
 ```sh
-brew services start mongodb
+brew services start mongodb-community
 ```

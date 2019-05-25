@@ -6,6 +6,7 @@ The minus sign - after the << characters means you can indent the terminator.
 
 ```sh
 cat <<-EOF
+
 EOF
 ```
 
@@ -13,5 +14,6 @@ EOF
 
 ```sh
 cat << 'EOF'
+
 EOF
 ```

@@ -119,7 +119,9 @@ code --install-extension timonwong.shellcheck
 ## Dart
 
 ```sh
-code --install-extension Dart-Code.dart-code
+code \
+  --install-extension Dart-Code.dart-code \
+  --install-extension Dart-Code.flutter
 ```
 
 ## SQL
@@ -146,4 +148,12 @@ code --install-extension DavidWang.ini-for-vscode
 code \
   --install-extension zxh404.vscode-proto3 \
   --install-extension ripwu.protobuf-helper
+```
+
+##
+
+```sh
+code \
+  --install-extension vscode-hacker-typer \
+  --install-extension vscode-typer
 ```

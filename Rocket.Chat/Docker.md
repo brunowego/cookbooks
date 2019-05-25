@@ -14,17 +14,28 @@ docker run -d \
   -h mongo.rocketchat.local \
   -v rocketchat-mongo-data:/data/db \
   -e MONGO_INITDB_DATABASE=rocketchat \
+  -e MONGO_INITDB_ROOT_USERNAME=rocketchat \
+  -e MONGO_INITDB_ROOT_PASSWORD=rocketchat \
   -p 27017:27017 \
   --name rocketchat-mongo \
   --restart always \
-  mongo:4.1
+  mongo:4.0 mongod --oplogSize 128 --replSet rs0 --storageEngine wiredTiger
+```
+
+```sh
+docker run -i --rm \
+  --link rocketchat-mongo \
+  mongo:4.0 mongo rocketchat-mongo/rocketchat --eval 'rs.initiate({ _id: "rs0", members: [ { _id: 0, host: "localhost:27017" } ]})'
 ```
 
 ```sh
 docker run -d \
   -h app.rocketchat.local \
   -v rocketchat-uploads:/app/uploads \
-  -e MONGO_URL=mongodb://rocketchat-mongo:27017/rocketchat \
+  -e PORT=3000 \
+  -e ROOT_URL='http://localhost:3000' \
+  -e MONGO_URL='mongodb://rocketchat-mongo:27017/rocketchat' \
+  -e MONGO_OPLOG_URL='mongodb://rocketchat-mongo:27017/local?replSet=rs0' \
   -p 3000:3000 \
   --name rocketchat-app \
   --restart always \

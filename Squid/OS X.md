@@ -5,23 +5,28 @@
 ### Homebrew
 
 ```sh
-brew cask install squidman
+brew install squid
 ```
 
-## Configuration
+## Environment
+
+### Homebrew
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
-cat /usr/local/squid/etc/squid.conf
+# Squid
+export PATH="/usr/local/sbin:$PATH"
 ```
 
 ```sh
-cat ~/Library/Preferences/squid.conf
+sudo su - $USER
 ```
 
-## Logs
+## Service
+
+### Homebrew
 
 ```sh
-tail -f ~/Library/Logs/squid/squid-access.log
-tail -f ~/Library/Logs/squid/squid-cache.log
-tail -f ~/Library/Logs/squid/squid-store.log
+brew services start squid
 ```

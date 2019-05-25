@@ -69,6 +69,7 @@ FROM alpine:3.9
 ENV http_proxy=${http_proxy} \
     https_proxy=${https_proxy} \
     no_proxy=${no_proxy}
+
 ```
 
 ## Image

@@ -17,13 +17,12 @@ sudo squid3 -f /etc/squid3/squid.conf
 ```
 
 ```sh
-sudo squid3 -f /etc/squid3/squid.conf -k reconfigure
+sudo squid3 -k reconfigure
 ```
 
 ```sh
-sudo squid3 -f /etc/squid3/squid.conf -k restart
+sudo squid3 -k restart
 ```
-
 
 ## CentOS
 
@@ -36,9 +35,19 @@ sudo squid -f /etc/squid/squid.conf
 ```
 
 ```sh
-sudo squid -f /etc/squid/squid.conf -k reconfigure
+sudo squid -k reconfigure
 ```
 
 ```sh
-sudo squid -f /etc/squid/squid.conf -k restart
+sudo squid -k restart
+```
+
+## OS X
+
+```sh
+echo -e "\ncache_peer localhost parent 8443 0 no-query no-digest no-netdb-exchange default login=[username]:[password]" >> /usr/local/etc/squid.conf
+```
+
+```sh
+brew services restart squid
 ```

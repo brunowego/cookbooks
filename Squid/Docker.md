@@ -1,26 +1,41 @@
 # Docker
 
-## Running
+## Build
 
 ```sh
-sudo mkdir -p /opt/squid
-```
+cat << 'EOF' | docker build -t squid  -
+FROM alpine:3.9
 
-```sh
-sudo tee /opt/squid/squid.conf << EOF
+RUN apk add --no-cache squid
 
+EXPOSE 3128
+
+CMD ["/usr/sbin/squid", "-Nd", "1"]
 EOF
 ```
+
+## Running
 
 ```sh
 docker run -d \
   -h squid \
-  -v /opt/squid/cache:/var/spool/squid \
-  -v /opt/squid/squid.conf:/etc/squid/squid.conf \
   -p 3128:3128 \
   --name squid \
   --restart always \
-  sameersbn/squid:latest
+  squid:latest
+```
+
+```sh
+docker exec -i squid /bin/sh << 'EOSHELL'
+cat << 'EOF' >> /etc/squid/squid.conf
+cache_peer 127.0.0.1 parent 8443 0 no-query no-digest no-netdb-exchange default login=[username]:[password]
+
+EOF
+EOSHELL
+```
+
+```sh
+docker restart squid
 ```
 
 ## Remove
