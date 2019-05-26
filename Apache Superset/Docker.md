@@ -35,10 +35,10 @@ docker run -d \
 
 ```sh
 docker run -d \
-  -h app.superset.local \
+  -h superset.local \
   -v superset-config:/etc/superset \
   -p 8088:8088 \
-  --name superset-app \
+  --name superset \
   --restart always \
   --link superset-redis \
   --link superset-postgres \
@@ -46,7 +46,7 @@ docker run -d \
 ```
 
 ```sh
-docker exec -i superset-app /bin/sh << 'EOSHELL'
+docker exec -i superset /bin/sh << 'EOSHELL'
 cat << 'EOF' > /etc/superset/superset_config.py
 import os
 
@@ -69,7 +69,7 @@ EOSHELL
 ```
 
 ```sh
-docker exec -i superset-app fabmanager create-admin \
+docker exec -i superset fabmanager create-admin \
   --app superset \
   --username admin \
   --password admin \
@@ -79,15 +79,15 @@ docker exec -i superset-app fabmanager create-admin \
 ```
 
 ```sh
-docker exec -i superset-app superset db upgrade
+docker exec -i superset superset db upgrade
 ```
 
 ```sh
-docker exec superset-app superset init
+docker exec superset superset init
 ```
 
 ```sh
-docker restart superset-app
+docker restart superset
 ```
 
 ```sh
@@ -97,6 +97,6 @@ echo -e "[INFO]\thttp://$(docker-machine ip):8088"
 ## Remove
 
 ```sh
-docker rm -f superset-redis superset-postgres superset-app
+docker rm -f superset-redis superset-postgres superset
 docker volume rm superset-redis-data superset-postgres-data superset-config
 ```

@@ -14,8 +14,6 @@ docker run -d \
   -h mongo.rocketchat.local \
   -v rocketchat-mongo-data:/data/db \
   -e MONGO_INITDB_DATABASE=rocketchat \
-  -e MONGO_INITDB_ROOT_USERNAME=rocketchat \
-  -e MONGO_INITDB_ROOT_PASSWORD=rocketchat \
   -p 27017:27017 \
   --name rocketchat-mongo \
   --restart always \
@@ -30,14 +28,14 @@ docker run -i --rm \
 
 ```sh
 docker run -d \
-  -h app.rocketchat.local \
+  -h rocketchat.local \
   -v rocketchat-uploads:/app/uploads \
   -e PORT=3000 \
   -e ROOT_URL='http://localhost:3000' \
   -e MONGO_URL='mongodb://rocketchat-mongo:27017/rocketchat' \
   -e MONGO_OPLOG_URL='mongodb://rocketchat-mongo:27017/local?replSet=rs0' \
   -p 3000:3000 \
-  --name rocketchat-app \
+  --name rocketchat \
   --restart always \
   --link rocketchat-mongo \
   rocket.chat:1.0.3
@@ -50,6 +48,6 @@ echo -e "[INFO]\thttp://$(docker-machine ip):3000"
 ## Remove
 
 ```sh
-docker rm -f rocketchat-mongo rocketchat-app
+docker rm -f rocketchat-mongo rocketchat
 docker volume rm rocketchat-mongo-data rocketchat-uploads
 ```

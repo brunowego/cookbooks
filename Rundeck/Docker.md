@@ -27,7 +27,7 @@ docker run -d \
 
 ```sh
 docker run -d \
-  -h app.rundeck.local \
+  -h rundeck.local \
   -e RUNDECK_GRAILS_URL=http://"$(docker-machine ip)":4440 \
   -e RUNDECK_SERVER_ADDRESS=0.0.0.0 \
   -e RUNDECK_DATABASE_URL=jdbc:postgresql://rundeck-postgres:5432/rundeck \
@@ -39,7 +39,7 @@ docker run -d \
   -v rundeck-data:/home/rundeck/server/data \
   -v /etc/localtime:/etc/localtime:ro \
   -p 4440:4440 \
-  --name rundeck-app \
+  --name rundeck \
   --restart always \
   --link rundeck-postgres \
   rundeck/rundeck:3.0.21
@@ -48,6 +48,6 @@ docker run -d \
 ## Remove
 
 ```sh
-docker rm -f rundeck-postgres rundeck-app
+docker rm -f rundeck-postgres rundeck
 docker volume rm rundeck-postgres-data rundeck-config rundeck-data
 ```

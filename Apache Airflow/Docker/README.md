@@ -8,7 +8,7 @@
 ## Dags
 
 ```sh
-docker exec -iu root airflow-app /bin/sh << 'EOSHELL'
+docker exec -iu root airflow /bin/sh << 'EOSHELL'
 cat << 'EOF' > /usr/local/airflow/dags/[name].py
 
 EOF
@@ -18,7 +18,7 @@ EOSHELL
 ## Root
 
 ```sh
-docker exec -itu root airflow-app /bin/bash
+docker exec -itu root airflow /bin/bash
 ```
 
 ## Web UI

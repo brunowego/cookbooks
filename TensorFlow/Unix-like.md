@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install tensorflow
+pip install --no-cache-dir tensorflow
 ```

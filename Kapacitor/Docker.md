@@ -23,11 +23,11 @@ docker run -d \
 
 ```sh
 docker run -d \
-  -h app.kapacitor.local \
+  -h kapacitor.local \
   -e KAPACITOR_INFLUXDB_0_URLS_0=http://kapacitor-influxdb:8086 \
   -v kapacitor-data:/var/lib/kapacitor \
   -p 9092:9092 \
-  --name kapacitor-app \
+  --name kapacitor \
   --restart always \
   --link kapacitor-influxdb \
   kapacitor:1.5-alpine
@@ -40,6 +40,6 @@ echo -e "[INFO]\thttp://$(docker-machine ip):9092"
 ## Remove
 
 ```sh
-docker rm -f kapacitor-influxdb kapacitor-app
+docker rm -f kapacitor-influxdb kapacitor
 docker volume rm kapacitor-influxdb-data kapacitor-influxdb-config kapacitor-data
 ```

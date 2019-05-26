@@ -23,22 +23,19 @@ docker run -d \
 
 ```sh
 docker run -d \
-  -h app.telegraf.local \
+  -h telegraf.local \
   -v telegraf-config:/etc/telegraf \
   -v /var/run/docker.sock:/var/run/docker.sock:ro \
   -p 6514:6514/udp \
-  --name telegraf-app \
+  --name telegraf \
   --restart always \
   --link telegraf-influxdb \
   telegraf:1.10-alpine
 ```
 
 ```sh
-docker exec -i telegraf-app /bin/sh << EOSHELL
+docker exec -i telegraf /bin/sh << EOSHELL
 cat << EOF > /etc/telegraf/telegraf.conf
-[[outputs.influxdb]]
-  urls = ["http://telegraf-influxdb:8086"]
-
 [[inputs.cpu]]
   percpu = true
   totalcpu = true
@@ -48,17 +45,20 @@ cat << EOF > /etc/telegraf/telegraf.conf
 [[inputs.disk]]
   ignore_fs = ["tmpfs", "devtmpfs", "devfs", "overlay", "aufs", "squashfs"]
 
+[[outputs.influxdb]]
+  urls = ["http://telegraf-influxdb:8086"]
+
 EOF
 EOSHELL
 ```
 
 ```sh
-docker restart telegraf-app
+docker restart telegraf
 ```
 
 ## Remove
 
 ```sh
-docker rm -f telegraf-influxdb telegraf-app
+docker rm -f telegraf-influxdb telegraf
 docker volume rm telegraf-influxdb-data telegraf-influxdb-config telegraf-config
 ```

@@ -25,7 +25,7 @@ docker run -d \
 
 ```sh
 docker run -d \
-  -h app.semaphore.local \
+  -h semaphore.local \
   -e SEMAPHORE_DB_HOST=semaphore-mysql \
   -e SEMAPHORE_DB_PORT=3306 \
   -e SEMAPHORE_DB_USER=semaphore \
@@ -40,7 +40,7 @@ docker run -d \
   -e TZ=America/Sao_Paulo \
   -v /etc/localtime:/etc/localtime:ro \
   -p 3000:3000 \
-  --name semaphore-app \
+  --name semaphore \
   --restart always \
   --link semaphore-mysql \
   ansiblesemaphore/semaphore:v2.5.1
@@ -49,6 +49,6 @@ docker run -d \
 ## Remove
 
 ```sh
-docker rm -f semaphore-mysql semaphore-app
+docker rm -f semaphore-mysql semaphore
 docker volume rm semaphore-mysql-data
 ```

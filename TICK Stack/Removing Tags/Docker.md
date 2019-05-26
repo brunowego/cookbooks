@@ -3,63 +3,63 @@
 ## Volume
 
 ```sh
-docker volume create tags-influxdb-data
-docker volume create tags-influxdb-config
-docker volume create tags-kapacitor-data
-docker volume create tags-chronograf-data
-docker volume create tags-telegraf-config
+docker volume create example-influxdb-data
+docker volume create example-influxdb-config
+docker volume create example-kapacitor-data
+docker volume create example-chronograf-data
+docker volume create example-telegraf-config
 ```
 
 ## Running
 
 ```sh
 docker run -d \
-  -h influxdb.tags.local \
-  -v tags-influxdb-data:/var/lib/influxdb \
-  -v tags-influxdb-config:/etc/influxdb \
+  -h influxdb.example.local \
+  -v example-influxdb-data:/var/lib/influxdb \
+  -v example-influxdb-config:/etc/influxdb \
   -p 8086:8086 \
-  --name tags-influxdb \
+  --name example-influxdb \
   --restart always \
   influxdb:1.7-alpine
 ```
 
 ```sh
 docker run -d \
-  -h kapacitor.tags.local \
-  -e KAPACITOR_INFLUXDB_0_URLS_0=http://tags-influxdb:8086 \
-  -v tags-kapacitor-data:/var/lib/kapacitor \
+  -h kapacitor.example.local \
+  -e KAPACITOR_INFLUXDB_0_URLS_0=http://example-influxdb:8086 \
+  -v example-kapacitor-data:/var/lib/kapacitor \
   -p 9092:9092 \
-  --name tags-kapacitor \
+  --name example-kapacitor \
   --restart always \
-  --link tags-influxdb \
+  --link example-influxdb \
   kapacitor:1.5-alpine
 ```
 
 ```sh
 docker run -d \
-  -h chronograf.tags.local \
-  -v tags-chronograf-data:/var/lib/chronograf \
+  -h chronograf.example.local \
+  -v example-chronograf-data:/var/lib/chronograf \
   -p 8888:8888 \
-  --name tags-chronograf \
+  --name example-chronograf \
   --restart always \
-  --link tags-influxdb \
-  --link tags-kapacitor \
-  chronograf:1.7-alpine --influxdb-url=http://tags-influxdb:8086 --kapacitor-url=http://tags-kapacitor:9092
+  --link example-influxdb \
+  --link example-kapacitor \
+  chronograf:1.7-alpine --influxdb-url=http://example-influxdb:8086 --kapacitor-url=http://example-kapacitor:9092
 ```
 
 ```sh
 docker run -d \
-  -h telegraf.tags.local \
-  -v tags-telegraf-config:/etc/telegraf \
+  -h telegraf.example.local \
+  -v example-telegraf-config:/etc/telegraf \
   -p 6514:6514/udp \
-  --name tags-telegraf \
+  --name example-telegraf \
   --restart always \
-  --link tags-influxdb \
+  --link example-influxdb \
   telegraf:1.10-alpine
 ```
 
 ```sh
-docker exec -i tags-telegraf /bin/sh << EOSHELL
+docker exec -i example-telegraf /bin/sh << EOSHELL
 cat << EOF > /etc/telegraf/telegraf.conf
 [agent]
   interval = "1s"
@@ -70,18 +70,18 @@ cat << EOF > /etc/telegraf/telegraf.conf
 [[inputs.mem]]
 
 [[outputs.influxdb]]
-  urls = ["http://tags-influxdb:8086"]
+  urls = ["http://example-influxdb:8086"]
 
 EOF
 EOSHELL
 ```
 
 ```sh
-docker restart tags-telegraf
+docker restart example-telegraf
 ```
 
 ```sh
-docker exec -i tags-kapacitor /bin/sh << EOSHELL
+docker exec -i example-kapacitor /bin/sh << EOSHELL
 cat << EOF > /tmp/historical-batch.tick
 dbrp "telegraf"."autogen"
 
@@ -102,7 +102,7 @@ EOSHELL
 ```
 
 ```sh
-docker exec -i tags-kapacitor /bin/sh << EOSHELL
+docker exec -i example-kapacitor /bin/sh << EOSHELL
 cat << EOF > /tmp/live-stream.tick
 dbrp "telegraf"."autogen"
 
@@ -122,7 +122,7 @@ EOSHELL
 ```
 
 ```sh
-docker exec -i tags-kapacitor /bin/sh << EOSHELL
+docker exec -i example-kapacitor /bin/sh << EOSHELL
 kapacitor define notag-stream -tick /tmp/live-stream.tick
 kapacitor enable notag-stream
 kapacitor define notag-batch -tick /tmp/historical-batch.tick
@@ -137,6 +137,6 @@ echo -e "[INFO]\thttp://$(docker-machine ip):8888"
 ## Remove
 
 ```sh
-docker rm -f tags-influxdb tags-kapacitor tags-chronograf tags-telegraf
-docker volume rm tags-influxdb-data tags-influxdb-config tags-kapacitor-data tags-chronograf-data tags-telegraf-config
+docker rm -f example-influxdb example-kapacitor example-chronograf example-telegraf
+docker volume rm example-influxdb-data example-influxdb-config example-kapacitor-data example-chronograf-data example-telegraf-config
 ```

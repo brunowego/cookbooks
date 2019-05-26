@@ -3,5 +3,5 @@
 ## Help
 
 ```sh
-apt -h
+gitlab-runner -h
 ```

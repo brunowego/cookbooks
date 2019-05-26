@@ -58,7 +58,13 @@ docker volume prune
 sudo ls -la /var/lib/docker/volumes
 ```
 
-### Homebrew
+#### Docker Machine
+
+```sh
+docker-machine ssh
+```
+
+### OS X
 
 ```sh
 screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty

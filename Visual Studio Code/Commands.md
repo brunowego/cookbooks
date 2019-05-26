@@ -3,5 +3,5 @@
 ## Help
 
 ```sh
-apt -h
+code -h
 ```

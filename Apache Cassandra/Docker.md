@@ -1,11 +1,18 @@
 # Docker
 
+## Volume
+
+```sh
+docker volume create cassandra-data
+```
+
 ## Running
 
 ```sh
 docker run -d \
   -h cassandra \
-  -p 7000:7000 \
+  -v cassandra-data:/var/lib/cassandra \
+  -p 9042:9042 \
   --name cassandra \
   --restart always \
   cassandra:3.11.4

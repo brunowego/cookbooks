@@ -21,10 +21,10 @@ docker run -d \
 
 ```sh
 docker run -d \
-  -h app.pgweb.local \
+  -h pgweb.local \
   -e DATABASE_URL='postgres://postgres:postgres@pgweb-postgres:5432/postgres?sslmode=disable' \
   -p 8081:8081 \
-  --name pgweb-app \
+  --name pgweb \
   --restart always \
   --link pgweb-postgres \
   sosedoff/pgweb:0.11.2
@@ -37,6 +37,6 @@ echo -e "[INFO]\thttp://$(docker-machine ip):8081"
 ## Remove
 
 ```sh
-docker rm -f pgweb-postgres pgweb-app
+docker rm -f pgweb-postgres pgweb
 docker volume rm pgweb-postgres-data
 ```

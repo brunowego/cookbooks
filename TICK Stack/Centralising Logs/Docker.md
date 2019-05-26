@@ -3,64 +3,64 @@
 ## Volume
 
 ```sh
-docker volume create logs-influxdb-data
-docker volume create logs-influxdb-config
-docker volume create logs-kapacitor-data
-docker volume create logs-chronograf-data
-docker volume create logs-telegraf-config
-docker volume create logs-nginx-conf
+docker volume create example-influxdb-data
+docker volume create example-influxdb-config
+docker volume create example-kapacitor-data
+docker volume create example-chronograf-data
+docker volume create example-telegraf-config
+docker volume create example-nginx-conf
 ```
 
 ## Running
 
 ```sh
 docker run -d \
-  -h influxdb.logs.local \
-  -v logs-influxdb-data:/var/lib/influxdb \
-  -v logs-influxdb-config:/etc/influxdb \
+  -h influxdb.example.local \
+  -v example-influxdb-data:/var/lib/influxdb \
+  -v example-influxdb-config:/etc/influxdb \
   -p 8086:8086 \
-  --name logs-influxdb \
+  --name example-influxdb \
   --restart always \
   influxdb:1.7-alpine
 ```
 
 ```sh
 docker run -d \
-  -h kapacitor.logs.local \
-  -e KAPACITOR_INFLUXDB_0_URLS_0=http://logs-influxdb:8086 \
-  -v logs-kapacitor-data:/var/lib/kapacitor \
+  -h kapacitor.example.local \
+  -e KAPACITOR_INFLUXDB_0_URLS_0=http://example-influxdb:8086 \
+  -v example-kapacitor-data:/var/lib/kapacitor \
   -p 9092:9092 \
-  --name logs-kapacitor \
+  --name example-kapacitor \
   --restart always \
-  --link logs-influxdb \
+  --link example-influxdb \
   kapacitor:1.5-alpine
 ```
 
 ```sh
 docker run -d \
-  -h chronograf.logs.local \
-  -v logs-chronograf-data:/var/lib/chronograf \
+  -h chronograf.example.local \
+  -v example-chronograf-data:/var/lib/chronograf \
   -p 8888:8888 \
-  --name logs-chronograf \
+  --name example-chronograf \
   --restart always \
-  --link logs-influxdb \
-  --link logs-kapacitor \
-  chronograf:1.7-alpine --influxdb-url=http://logs-influxdb:8086 --kapacitor-url=http://logs-kapacitor:9092
+  --link example-influxdb \
+  --link example-kapacitor \
+  chronograf:1.7-alpine --influxdb-url=http://example-influxdb:8086 --kapacitor-url=http://example-kapacitor:9092
 ```
 
 ```sh
 docker run -d \
-  -h telegraf.logs.local \
-  -v logs-telegraf-config:/etc/telegraf \
+  -h telegraf.example.local \
+  -v example-telegraf-config:/etc/telegraf \
   -p 6514:6514/udp \
-  --name logs-telegraf \
+  --name example-telegraf \
   --restart always \
-  --link logs-influxdb \
+  --link example-influxdb \
   telegraf:1.10-alpine
 ```
 
 ```sh
-docker exec -i logs-telegraf /bin/sh << EOSHELL
+docker exec -i example-telegraf /bin/sh << EOSHELL
 cat << EOF > /etc/telegraf/telegraf.conf
 [agent]
   interval = "1s"
@@ -70,28 +70,28 @@ cat << EOF > /etc/telegraf/telegraf.conf
   server = "udp://:6514"
 
 [[inputs.nginx]]
-  urls = ["http://logs-nginx/server_status"]
+  urls = ["http://example-nginx/server_status"]
 
 [[outputs.influxdb]]
-  urls = ["http://logs-influxdb:8086"]
+  urls = ["http://example-influxdb:8086"]
 
 EOF
 EOSHELL
 ```
 
 ```sh
-docker restart logs-telegraf
+docker restart example-telegraf
 ```
 
 ```sh
 docker run -d \
-  -h nginx.logs.local \
-  -v logs-nginx-conf:/etc/nginx/conf.d \
+  -h nginx.example.local \
+  -v example-nginx-conf:/etc/nginx/conf.d \
   -p 8080:80 \
-  --name logs-nginx \
+  --name example-nginx \
   --restart always \
-  --link logs-influxdb \
-  --link logs-telegraf \
+  --link example-influxdb \
+  --link example-telegraf \
   --log-driver syslog \
   --log-opt syslog-address='udp://localhost:6514' \
   --log-opt syslog-format='rfc5424micro' \
@@ -99,7 +99,7 @@ docker run -d \
 ```
 
 ```sh
-docker exec -i logs-nginx /bin/sh << 'EOSHELL'
+docker exec -i example-nginx /bin/sh << 'EOSHELL'
 cat << 'EOF' > /etc/nginx/conf.d/default.conf
 server {
     listen 80;
@@ -125,7 +125,7 @@ EOSHELL
 ```
 
 ```sh
-docker restart logs-nginx
+docker restart example-nginx
 ```
 
 ```sh
@@ -143,6 +143,6 @@ echo -e "[INFO]\thttp://$(docker-machine ip):8080"
 ## Remove
 
 ```sh
-docker rm -f logs-influxdb logs-kapacitor logs-chronograf logs-telegraf logs-nginx
-docker volume rm logs-influxdb-data logs-influxdb-config logs-kapacitor-data logs-chronograf-data logs-telegraf-config logs-nginx-conf
+docker rm -f example-influxdb example-kapacitor example-chronograf example-telegraf example-nginx
+docker volume rm example-influxdb-data example-influxdb-config example-kapacitor-data example-chronograf-data example-telegraf-config example-nginx-conf
 ```

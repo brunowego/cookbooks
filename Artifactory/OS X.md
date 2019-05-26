@@ -5,7 +5,7 @@
 ### Homebrew
 
 ```sh
-brew install mosquitto
+brew install artifactory
 ```
 
 ## Service
@@ -13,5 +13,5 @@ brew install mosquitto
 ### Homebrew
 
 ```sh
-brew services start mosquitto
+brew services start artifactory
 ```

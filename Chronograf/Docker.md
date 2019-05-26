@@ -36,10 +36,10 @@ docker run -d \
 
 ```sh
 docker run -d \
-  -h app.chronograf.local \
+  -h chronograf.local \
   -v chronograf-data:/var/lib/chronograf \
   -p 8888:8888 \
-  --name chronograf-app \
+  --name chronogra \
   --restart always \
   --link chronograf-influxdb \
   --link chronograf-kapacitor \
@@ -53,6 +53,6 @@ echo -e "[INFO]\thttp://$(docker-machine ip):8888"
 ## Remove
 
 ```sh
-docker rm -f chronograf-influxdb chronograf-app
+docker rm -f chronograf-influxdb chronograf
 docker volume rm chronograf-influxdb-data chronograf-influxdb-config chronograf-data
 ```

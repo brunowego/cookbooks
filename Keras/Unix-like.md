@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install keras
+pip install --no-cache-dir keras
 ```

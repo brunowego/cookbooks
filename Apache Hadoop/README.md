@@ -1,5 +1,9 @@
 # Apache Hadoop
 
+- [MapReduce](https://en.wikipedia.org/wiki/MapReduce)
+- [HDFS](https://en.wikipedia.org/wiki/Apache_Hadoop#HDFS)
+- [YARN](https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html)
+
 ## User Interface
 
 ### HDFS

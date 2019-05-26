@@ -8,7 +8,6 @@ docker volume create gitlab-postgres-data
 docker volume create gitlab-config
 docker volume create gitlab-logs
 docker volume create gitlab-data
-docker volume create gitlab-runner-config
 ```
 
 ## Running
@@ -26,9 +25,9 @@ docker run -d \
 ```sh
 docker run -d \
   -h postgres.gitlab.local \
+  -e POSTGRES_DB=gitlab \
   -e POSTGRES_USER=gitlab \
   -e POSTGRES_PASSWORD=gitlab \
-  -e POSTGRES_DB=gitlab \
   -v gitlab-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name gitlab-postgres \
@@ -70,38 +69,12 @@ EOF
 ```
 
 ```sh
-docker run -d \
-  -h runner.gitlab.local \
-  -v gitlab-runner-config:/etc/gitlab-runner \
-  -v /var/run/docker.sock:/var/run/docker.sock:ro \
-  --name gitlab-runner \
-  --restart always \
-  gitlab/gitlab-runner:alpine-v11.10.1
+echo -e "[INFO]\thttp://$(docker-machine ip):8080"
 ```
-
-```sh
-docker exec -i \
-  -e CI_SERVER_URL=http://gitlab-ce \
-  -e REGISTRATION_TOKEN=t0ken \
-  gitlab-runner gitlab-runner register \
-    --tag-list=docker,dind \
-    --non-interactive \
-    --run-untagged \
-    --locked=false \
-    --name='GitLab Runner' \
-    --executor=docker \
-    --docker-image=docker:stable \
-    --docker-volumes=/var/run/docker.sock:/var/run/docker.sock \
-    --docker-network-mode=bridge
-```
-
-TODO
-
-https://github.com/lukaszlach/orca-gitlab/blob/b35c3ed5c6500624cb738ef67271c9cac1604b71/docker-compose.yml
 
 ## Remove
 
 ```sh
-docker rm -f gitlab-redis gitlab-postgres gitlab-ce gitlab-runner
-docker volume rm gitlab-redis-data gitlab-postgres-data gitlab-config gitlab-logs gitlab-data gitlab-runner-config
+docker rm -f gitlab-redis gitlab-postgres gitlab-ce
+docker volume rm gitlab-redis-data gitlab-postgres-data gitlab-config gitlab-logs gitlab-data
 ```

@@ -24,7 +24,7 @@ docker run -d \
 
 ```sh
 docker run -d \
-  -h app.airflow.local \
+  -h airflow.local \
   -e LOAD_EX=n \
   -e EXECUTOR=Local \
   -e POSTGRES_HOST=airflow-postgres \
@@ -32,7 +32,7 @@ docker run -d \
   -e POSTGRES_PASSWORD=airflow \
   -v airflow-dags:/usr/local/airflow/dags \
   -p 8080:8080 \
-  --name airflow-app \
+  --name airflow \
   --restart always \
   --link airflow-postgres \
   puckel/docker-airflow:1.10.2 webserver
@@ -41,6 +41,6 @@ docker run -d \
 ## Remove
 
 ```sh
-docker rm -f airflow-postgres airflow-app
+docker rm -f airflow-postgres airflow
 docker volume rm airflow-postgres-data airflow-dags
 ```
