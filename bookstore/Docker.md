@@ -3,19 +3,15 @@
 ## Volume
 
 ```sh
-docker volume create bookstore-minio-data
-docker volume create bookstore-jupyter-data
+docker volume create example-minio-data
+docker volume create example-jupyter-data
 ```
 
 ## Build
 
 ```sh
-cat << EOF | docker build -t nteract/bookstore-jupyter -
+cat << EOF | docker build -t example/jupyter-bookstore -
 FROM jupyter/scipy-notebook:latest
-
-ENV http_proxy=${http_proxy} \
-    https_proxy=${https_proxy} \
-    no_proxy=${no_proxy}
 
 USER root
 
@@ -30,12 +26,12 @@ EOF
 
 ```sh
 docker run -d \
-  -h minio.bookstore.local \
+  -h minio.example.local \
   -e MINIO_ACCESS_KEY='AKIAIOSFODNN7EXAMPLE' \
   -e MINIO_SECRET_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY' \
-  -v bookstore-minio-data:/data \
+  -v example-minio-data:/data \
   -p 9000:9000 \
-  --name bookstore-minio \
+  --name example-minio \
   --restart always \
   minio/minio:RELEASE.2019-05-23T00-29-34Z server /data
 ```
@@ -43,9 +39,9 @@ docker run -d \
 ```sh
 docker run -i --rm \
   --entrypoint /bin/sh \
-  --link bookstore-minio \
+  --link example-minio \
   minio/mc:RELEASE.2019-05-23T01-33-27Z << EOSHELL
-mc config host add local http://bookstore-minio:9000 AKIAIOSFODNN7EXAMPLE wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+mc config host add local http://example-minio:9000 AKIAIOSFODNN7EXAMPLE wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 mc rm -r --force local/examples || true
 mc mb local/examples
 mc policy download local/examples
@@ -54,21 +50,18 @@ EOSHELL
 
 ```sh
 docker run -d \
-  -h jupyter.bookstore.local \
-  -v bookstore-jupyter-data:/home/jovyan/work \
+  -h jupyter.example.local \
+  -v example-jupyter-data:/home/jovyan/work \
   -p 8888:8888 \
-  --name bookstore-jupyter \
+  --name example-jupyter \
   --restart always \
-  --link bookstore-minio \
-  nteract/bookstore-jupyter:latest jupyter notebook --NotebookApp.token='' --NotebookApp.password=''
+  --link example-minio \
+  example/jupyter-bookstore:latest jupyter notebook --NotebookApp.token='' --NotebookApp.password=''
 ```
 
 ```sh
-docker exec -i bookstore-jupyter /bin/sh << 'EOSHELL'
+docker exec -i example-jupyter /bin/sh << 'EOSHELL'
 cat << EOF > /home/jovyan/.jupyter/jupyter_notebook_config.py
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from bookstore import BookstoreContentsArchiver
 
 c = get_config()
@@ -78,7 +71,7 @@ c.NotebookApp.contents_manager_class = BookstoreContentsArchiver
 c.BookstoreSettings.workspace_prefix = '/workspace/${NB_USER}/notebooks'
 c.BookstoreSettings.published_prefix = '/published/${NB_USER}/notebooks'
 
-c.BookstoreSettings.s3_endpoint_url = 'http://bookstore-minio:9000'
+c.BookstoreSettings.s3_endpoint_url = 'http://example-minio:9000'
 c.BookstoreSettings.s3_bucket = 'examples'
 
 c.BookstoreSettings.s3_access_key_id = 'AKIAIOSFODNN7EXAMPLE'
@@ -89,15 +82,15 @@ EOSHELL
 ```
 
 ```sh
-docker exec -i bookstore-jupyter jupyter serverextension enable --py bookstore
+docker exec -i example-jupyter jupyter serverextension enable --py bookstore
 ```
 
 ```sh
-docker restart bookstore-jupyter
+docker restart example-jupyter
 ```
 
 ```sh
-docker exec -i bookstore-jupyter /bin/sh << EOSHELL
+docker exec -i example-jupyter /bin/sh << EOSHELL
 cat << EOF > /home/jovyan/work/Index.ipynb
 {
  "cells": [
@@ -181,6 +174,6 @@ EOSHELL
 ## Remove
 
 ```sh
-docker rm -f bookstore-minio bookstore-jupyter
-docker volume rm bookstore-minio-data bookstore-jupyter-data
+docker rm -f example-minio example-jupyter
+docker volume rm example-minio-data example-jupyter-data
 ```

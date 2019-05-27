@@ -21,10 +21,6 @@ docker run -d \
 ```
 
 ```sh
-docker logs minio
-```
-
-```sh
 echo -e "[INFO]\thttp://$(docker-machine ip):9000"
 ```
 
