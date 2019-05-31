@@ -3,13 +3,13 @@
 ## Venv
 
 ```sh
-virtualenv venv
+virtualenv .venv
 ```
 
 ## Activate
 
 ```sh
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 ## Deactivate

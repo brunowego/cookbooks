@@ -9,10 +9,17 @@ insert_final_newline = true
 max_line_length = 80
 trim_trailing_whitespace = true
 
+[*.go]
+indent_size = 4
+indent_style = tab
+
 [*.md]
 max_line_length = 0
 trim_trailing_whitespace = false
 
-[*.go]
+[{*.mk,Makefile}]
 indent_size = 4
 indent_style = tab
+
+[*.py]
+indent_size = 4

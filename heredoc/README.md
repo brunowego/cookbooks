@@ -1,4 +1,4 @@
-# Heredoc
+# heredoc
 
 The minus sign - after the << characters means you can indent the terminator.
 
@@ -14,6 +14,6 @@ EOF
 
 ```sh
 cat << 'EOF'
-`ps`
+
 EOF
 ```

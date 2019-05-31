@@ -1,7 +1,0 @@
-# Commands
-
-##
-
-```sh
-whois [domain]
-```

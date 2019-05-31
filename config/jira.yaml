@@ -1,0 +1,29 @@
+# 目的：方便用户直接在mindmap中提交jira缺陷
+# 获取地址步骤：jira-》选择项目-》查看全部问题-》选择你的模块或者需求链接”，复制地址即可
+# 参数说明：  
+  # BU: 24车事业部(事业部名称，新建项目设置选择，不必手动增加)
+  # department: 营销赋能（业务线名称，新建项目设置选择，不必手动增加）
+  # jiraUrl：本项目的jira工程路径（必填）
+    # 第一种格式，在url中包含项目ID，例如TESTPROJEC-15
+    # jiraUrl: https://jira.souche-inc.com/projects/TESTPROJEC/issues/TESTPROJEC-15?filter=allopenissues
+    # 第二种格式，在url中包含project(项目id)和component（模块名，支持多个） 
+    # jiraUrl: https://jira.souche-inc.com/issues/?jql=project%20%3D%20TESTPROJEC%20AND%20component%20%3D%20TC%E6%8F%92%E4%BB%B6%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC
+    # 转换内容：https://jira.souche-inc.com/issues/?jql=project = TESTPROJEC AND component = TC插件 ORDER BY priority DESC, updated DESC
+    # 第三种格式，在url中包含project(项目id)和epic（需求链接） 
+    # jiraUrl: https://jira.souche-inc.com/issues/?jql=project%20%3D%20YXFNXM%20AND%20resolution%20%3D%20Unresolved%20AND%20%22Epic%20Link%22%20%3D%20YXFNXM-552%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC
+    # 转换内容："https://jira.souche-inc.com/issues/?jql=project = YXFNXM AND resolution = Unresolved AND "Epic Link" = YXFNXM-552 ORDER BY priority DESC, updated DESC"
+  # username、password：提交人的jira账号和密码（必填）
+    # username: liuwenjing
+    # password: 123456
+  # reporter: 报告人邮箱 （必填）
+    # reporter: liuwenjing@souche.com
+  # assignee: 经办人账号（可为空；如果不为空，提交缺陷时经办人默认assignee；如果为空，默认经办人为空）
+   # assignee: wangtianlun
+
+BU: 
+department: 
+jiraUrl: 
+username: 
+password: 
+reporter: 
+assignee: 
