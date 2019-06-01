@@ -14,3 +14,10 @@ Bucket of cookbooks to help install and set softwares.
 - [Uniform Resource Identifier (URI)](https://en.wikipedia.org/wiki/Uniform_resource_identifier)
 - [Uniform Resource Locator (URL)](https://en.wikipedia.org/wiki/Uniform_resource_locator)
 - [Uniform Resource Name (URN)](https://en.wikipedia.org/wiki/Uniform_resource_name)
+
+## Cheatsheets
+
+### Programming Languages
+
+- [Go](https://github.com/a8m/go-lang-cheat-sheet)
+- [Python](https://github.com/gto76/python-cheatsheet)
