@@ -14,6 +14,7 @@ docker volume create verdaccio-plugins
 
 ```sh
 docker run -d \
+  $(echo $DOCKER_RUN_OPTS) \
   -h verdaccio \
   -v verdaccio-conf:/verdaccio/conf \
   -v verdaccio-storage:/verdaccio/storage \

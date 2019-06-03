@@ -15,7 +15,7 @@ brew install minisign
 ### Build
 
 ```sh
-cat << 'EOF' | docker build -t minisign:0.8 -
+cat << 'EOF' | docker build $(echo $DOCKER_BUILD_OPTS) -t minisign:0.8 -
 FROM alpine:3.9 as build
 
 WORKDIR /usr/src/minisign
