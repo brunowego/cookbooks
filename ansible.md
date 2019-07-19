@@ -46,8 +46,15 @@ sudo apt update
 sudo apt -y install ansible
 ```
 
-# Commands
+### APK
 
 ```sh
-ansible --help
+sudo apk update
+sudo apk add ansible
+```
+
+## Commands
+
+```sh
+ansible -h
 ```
