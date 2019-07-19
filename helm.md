@@ -1,12 +1,32 @@
 # Helm
 
-## Installation
+## CLI
+
+### Installation
 
 ```sh
-curl https://raw.githubusercontent.com/helm/helm/master/scripts/get | bash
+curl -H 'Cache-Control: no-cache' -Ss https://raw.githubusercontent.com/helm/helm/master/scripts/get | bash
 ```
 
-## Create & Init
+### Commands
+
+```sh
+helm -h
+```
+
+### Uninstall
+
+```sh
+sudo rm -fR /usr/local/bin/helm
+```
+
+```sh
+rm -fR ~/.helm
+```
+
+## Kubernetes
+
+### Create & Init
 
 ```sh
 kubectl create serviceaccount tiller -n kube-system
@@ -22,18 +42,28 @@ kubectl create clusterrolebinding tiller-cluster-rule \
 helm init --service-account tiller
 ```
 
-### Skip Refresh
+```sh
+kubectl rollout status deploy/tiller-deploy -n kube-system
+```
+
+#### Skip Refresh
 
 ```sh
 helm init \
   --service-account tiller \
-  --skip-refresh --wait
+  --skip-refresh \
+  --wait
 ```
 
-## Commands
+### Delete & Reset
 
 ```sh
-helm -h
+kubectl delete serviceaccount tiller -n kube-system
+kubectl delete clusterrolebinding tiller-cluster-rule
+```
+
+```sh
+helm reset --force
 ```
 
 ## Issues
@@ -45,7 +75,11 @@ helm -h
 Add current external ip and hostname to each node machine:
 
 ```sh
+# Using shell
 sudo sh -c 'echo -e "$(hostname -I | awk '\''{print $2}'\'')\t$(hostname -s)" >> /etc/hosts'
+
+# Using hostess
+sudo hostess add "$(hostname -I | awk '{print $2}')" "$(hostname -s)"
 ```
 
 ### Service Account
@@ -68,23 +102,12 @@ kubectl patch deploy -n kube-system tiller-deploy -p '{"spec":{"template":{"spec
 helm init --service-account tiller --upgrade
 ```
 
-## Delete & Reset
+## Tips
+
+### Install with Heredoc
 
 ```sh
-kubectl delete serviceaccount tiller -n kube-system
-kubectl delete clusterrolebinding tiller-cluster-rule
-```
+cat << EOF | helm install [chart] -n [name] --namespace [namespace] -f -
 
-```sh
-helm reset --force
-```
-
-## Uninstall
-
-```sh
-sudo rm -fR /usr/local/bin/helm
-```
-
-```sh
-rm -fR ~/.helm
+EOF
 ```
