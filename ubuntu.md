@@ -16,3 +16,11 @@ docker run -it --rm \
   --name ubuntu \
   ubuntu:18.04 /bin/bash
 ```
+
+## Tips
+
+### Setting Default Editor
+
+```sh
+sudo update-alternatives --config editor
+```
