@@ -10,7 +10,7 @@
 
 ```sh
 sudo apk update
-sudo apk add --no-cache shadow
+sudo apk add shadow
 ```
 
 ## Commands

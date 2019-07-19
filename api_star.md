@@ -5,7 +5,7 @@
 ### PIP
 
 ```sh
-pip install --no-cache-dir apistar
+pip install apistar
 ```
 
 ## Commands

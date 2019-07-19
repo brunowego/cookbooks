@@ -28,7 +28,7 @@ sudo apt -y install zsh
 # for Linux
 sudo chsh $USER -s /bin/zsh
 
-# for OS X
+# for macOS
 sudo chpass -s `which zsh` $USER
 ```
 

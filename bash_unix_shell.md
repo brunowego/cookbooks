@@ -17,7 +17,7 @@ sudo yum -y install bash
 
 ```sh
 sudo apk update
-sudo apk add --no-cache bash
+sudo apk add bash
 ```
 
 ### Homebrew
@@ -32,7 +32,7 @@ brew install bash
 # for Linux
 sudo chsh $USER -s /bin/bash
 
-# for OS X
+# for macOS
 sudo chpass -s `which bash` $USER
 ```
 
@@ -68,7 +68,7 @@ EOF
 ## Restore
 
 ```sh
-rm -rf ~/.bashrc
+rm -fR ~/.bashrc
 ```
 
 ```sh

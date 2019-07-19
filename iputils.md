@@ -20,7 +20,7 @@ sudo yum -y install iputils
 
 ```sh
 sudo apk update
-sudo apk add --no-cache iputils
+sudo apk add iputils
 ```
 
 ## Commands

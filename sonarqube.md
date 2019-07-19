@@ -48,10 +48,9 @@ docker run -d \
 echo -e "[INFO]\thttp://$(docker-machine ip):9000"
 ```
 
-| Field | Value |
+| Login | Password |
 | --- | --- |
-| Login | admin |
-| Password | admin |
+| admin | admin |
 
 ## Remove
 

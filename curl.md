@@ -26,7 +26,7 @@ sudo yum -y install curl
 
 ```sh
 sudo apk update
-sudo apk add --no-cache curl
+sudo apk add curl
 ```
 
 ### Source

@@ -2,7 +2,7 @@
 
 ## Installation
 
-### OS X Binary
+### macOS
 
 ```sh
 curl -L 'https://github.com/outbrain/zookeepercli/releases/download/v1.0.12/zookeepercli-osx-darwin-binary.tar.gz' | tar -xzC /usr/local/bin

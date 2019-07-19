@@ -1,4 +1,4 @@
-# n
+# Node version management (n)
 
 ## Installation
 

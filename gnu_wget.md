@@ -26,7 +26,7 @@ sudo yum -y install wget
 
 ```sh
 sudo apk update
-sudo apk add --no-cache wget
+sudo apk add wget
 ```
 
 ### Chocolatey

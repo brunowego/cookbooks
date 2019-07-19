@@ -43,10 +43,9 @@ docker run -d \
 echo -e "[INFO]\thttp://$(docker-machine ip):3000"
 ```
 
-| Field | Value |
+| Login | Password |
 | --- | --- |
-| Login | admin |
-| Password | admin |
+| admin | admin |
 
 ## Remove
 

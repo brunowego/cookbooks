@@ -10,7 +10,7 @@ brew install aircrack-ng
 
 ## Configuration
 
-### OS X
+### macOS
 
 ```sh
 sudo ln -s $(brew --prefix aircrack-ng)/bin/aircrack-ng /usr/local/bin/aircrack-ng

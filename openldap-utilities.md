@@ -24,7 +24,7 @@ sudo yum -y install openldap-clients
 
 ```sh
 sudo apk update
-sudo apk add --no-cache openldap-clients
+sudo apk add openldap-clients
 ```
 
 ## Docker
@@ -33,7 +33,7 @@ sudo apk add --no-cache openldap-clients
 
 ```sh
 cat << EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t example/openldap-clients -
-FROM alpine:3.9
+FROM docker.io/alpine:3.9
 
 RUN apk add --no-cache openldap-clients
 
