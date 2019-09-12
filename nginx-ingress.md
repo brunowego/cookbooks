@@ -30,10 +30,16 @@ helm install stable/nginx-ingress \
   --set controller.extraArgs.default-ssl-certificate='default/example.tls-secret'
 ```
 
-#### Status
+### Status
 
 ```sh
 kubectl rollout status deploy/nginx-ingress-controller -n nginx-ingress
+```
+
+#### Logs
+
+```sh
+kubectl logs -l 'app=nginx-ingress' -n nginx-ingress -f
 ```
 
 ### Delete
