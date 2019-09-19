@@ -1,32 +1,78 @@
 # Helm
 
-## CLI
+## Tiller
 
-### Installation
+### Dependencies
 
-```sh
-curl -H 'Cache-Control: no-cache' -Ss https://raw.githubusercontent.com/helm/helm/master/scripts/get | bash
-```
-
-### Commands
+#### RBAC
 
 ```sh
-helm -h
-```
-
-### Uninstall
-
-```sh
-sudo rm -fR /usr/local/bin/helm
+kubectl create serviceaccount tiller -n kube-system
 ```
 
 ```sh
-rm -fR ~/.helm
+kubectl create clusterrolebinding tiller-cluster-rule \
+  --clusterrole=cluster-admin \
+  --serviceaccount=kube-system:tiller
 ```
 
-## Kubernetes
+### Init
 
-### Create & Init
+```sh
+# Default
+helm init \
+  --history-max 10 \
+  --service-account tiller
+
+# Skip Refresh
+helm init \
+  --history-max 10 \
+  --service-account tiller \
+  --skip-refresh \
+  --wait
+
+# Personalized
+helm init \
+  --history-max 10 \
+  --service-account tiller \
+  -i "gcr.io/kubernetes-helm/tiller:$(curl -s https://api.github.com/repos/helm/helm/releases/latest | grep tag_name | cut -d '"' -f 4)"
+```
+
+### Status
+
+```sh
+kubectl rollout status deploy/tiller-deploy -n kube-system
+```
+
+### Logs
+
+```sh
+kubectl logs -l 'app=helm,name=tiller' -n kube-system -f
+```
+
+### Issues
+
+#### DNS
+
+```log
+Error: forwarding ports: error upgrading connection: unable to upgrade connection: pod does not exist
+```
+
+Add current external ip and hostname to each node machine:
+
+```sh
+# Using shell
+sudo sh -c 'echo -e "$(hostname -I | awk '\''{print $2}'\'')\t$(hostname)" >> /etc/hosts'
+
+# Using hostess
+sudo hostess add "$(hostname)" "$(hostname -I | awk '{print $2}')"
+```
+
+#### Service Account
+
+```log
+Error: configmaps is forbidden: User "system:serviceaccount:kube-system:default" cannot list resource "configmaps" in API group "" in the namespace "kube-system"
+```
 
 ```sh
 kubectl create serviceaccount tiller -n kube-system
@@ -39,75 +85,66 @@ kubectl create clusterrolebinding tiller-cluster-rule \
 ```
 
 ```sh
-helm init --service-account tiller
+kubectl patch deploy -n kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
 ```
-
-```sh
-kubectl rollout status deploy/tiller-deploy -n kube-system
-```
-
-#### Skip Refresh
 
 ```sh
 helm init \
   --service-account tiller \
-  --skip-refresh \
-  --wait
+  --upgrade
 ```
 
 ### Delete & Reset
 
 ```sh
-kubectl delete serviceaccount tiller -n kube-system
-kubectl delete clusterrolebinding tiller-cluster-rule
-```
-
-```sh
 helm reset --force
+
+kubectl delete clusterrolebinding tiller-cluster-rule
+kubectl delete serviceaccount tiller -n kube-system
 ```
 
-## Issues
+## CLI
 
-### DNS
+### Installation
 
-> Error: forwarding ports: error upgrading connection: unable to upgrade connection: pod does not exist
-
-Add current external ip and hostname to each node machine:
+#### Unix-like
 
 ```sh
-# Using shell
-sudo sh -c 'echo -e "$(hostname -I | awk '\''{print $2}'\'')\t$(hostname -s)" >> /etc/hosts'
-
-# Using hostess
-sudo hostess add "$(hostname -I | awk '{print $2}')" "$(hostname -s)"
+curl -Ss https://raw.githubusercontent.com/helm/helm/master/scripts/get | /bin/bash
 ```
 
-### Service Account
-
-> Error: configmaps is forbidden: User "system:serviceaccount:kube-system:default" cannot list resource "configmaps" in API group "" in the namespace "kube-system"
+### Commands
 
 ```sh
-kubectl create serviceaccount -n kube-system tiller
+helm -h
+```
+
+### Tips
+
+#### Purge without Hooks
+
+```sh
+helm delete [name] \
+  --purge \
+  --no-hooks
+```
+
+#### Autocomplete
+
+```sh
+# bash
+source <(helm completion bash)
+
+# zsh
+source <(helm completion zsh)
+```
+
+### Uninstall
+
+```sh
+sudo rm -fR /usr/local/bin/helm
 ```
 
 ```sh
-kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
-```
-
-```sh
-kubectl patch deploy -n kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
-```
-
-```sh
-helm init --service-account tiller --upgrade
-```
-
-## Tips
-
-### Install with Heredoc
-
-```sh
-cat << EOF | helm install [chart] -n [name] --namespace [namespace] -f -
-
-EOF
+rm -fR ~/.helm
 ```
