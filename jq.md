@@ -20,8 +20,9 @@ sudo apt -y install jq
 #### YUM
 
 ```sh
-sudo yum check-update
-sudo yum -y install epel-release
+yum check-update
+
+# Repo: EPEL
 sudo yum -y install jq
 ```
 

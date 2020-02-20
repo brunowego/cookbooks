@@ -6,13 +6,24 @@
 
 ```sh
 sudo apt update
-sudo apt -y install iputils-arping iputils-clockdiff iputils-ping iputils-tracepath
+
+# ping
+sudo apt -y install iputils-ping
+
+# arping
+sudo apt -y install iputils-arping
+
+# clockdiff
+sudo apt -y install iputils-clockdiff
+
+# tracepath
+sudo apt -y install iputils-tracepath
 ```
 
 ### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install iputils
 ```
 

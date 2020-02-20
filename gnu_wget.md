@@ -1,47 +1,51 @@
 # GNU Wget
 
-## Installation
+Its name derives from World Wide Web and get.
 
-### Homebrew
+## CLI
+
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install wget
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install wget
 ```
 
-### YUM
+#### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install wget
 ```
 
-### APK
+#### APK
 
 ```sh
 sudo apk update
 sudo apk add wget
 ```
 
-### Chocolatey
+#### Chocolatey
 
 ```sh
 choco install -y wget
 ```
 
-## Commands
+### Commands
 
 ```sh
 wget -h
 ```
 
-## Proxy
+### Proxy
 
 ```sh
 tee -a ~/.wgetrc << EOF

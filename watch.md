@@ -4,21 +4,25 @@
 
 - [Info](http://www.linfo.org/watch.html)
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install watch
 ```
 
-## Commands
+### Commands
 
 ```sh
 watch -h
 ```
 
-### Directory changes
+### Examples
+
+#### Directory changes
 
 ```sh
 watch -n 5 'ls -ltr | tail -n 20'

@@ -1,48 +1,61 @@
 # Z shell (Zsh)
 
-## Installation
+## References
 
-### Homebrew
+- [Startup Files](http://zsh.sourceforge.net/Intro/intro_3.html)
+
+## CLI
+
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install zsh
 ```
 
-### YUM
+#### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install zsh
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install zsh
 ```
 
-## Configuration
+### Configuration
 
 ```sh
 # for Linux
-sudo chsh $USER -s /bin/zsh
+sudo chsh "$USER" -s /bin/zsh
 
-# for macOS
-sudo chpass -s `which zsh` $USER
+# for Darwin
+sudo chpass -s `which zsh` "$USER"
 ```
 
 ```sh
-sudo su - $USER
+sudo su - "$USER"
 ```
 
 ```sh
-echo $SHELL
+echo "$SHELL"
 ```
 
-## Tips
+### Usage
 
-### Reload
+```sh
+# Version
+zsh --version | head -1
+```
+
+### Tips
+
+#### Reload
 
 ```sh
 source ~/.zshrc

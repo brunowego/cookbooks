@@ -6,7 +6,7 @@
 
 ```sh
 docker run -it --rm \
-  $(echo $DOCKER_RUN_OPTS) \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h ctop \
   -v /var/run/docker.sock:/var/run/docker.sock:ro \
   --name ctop \

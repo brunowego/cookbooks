@@ -7,10 +7,10 @@
 ## Commands
 
 ```sh
-man grep
+grep --help
 ```
 
-## More Examples
+## Examples
 
 ### Highlight
 

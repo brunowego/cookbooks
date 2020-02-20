@@ -1,35 +1,23 @@
 # Jupyter Notebook
 
-## Installation
-
-### Homebrew
-
-```sh
-brew install jupyter
-```
-
 ## Docker
-
-### Volume
-
-```sh
-docker volume create jupyter-data
-```
 
 ### Running
 
 ```sh
 docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h jupyter \
   -v jupyter-data:/home/jovyan/work \
   -p 8888:8888 \
   --name jupyter \
-  --restart always \
-  jupyter/scipy-notebook:latest jupyter notebook --NotebookApp.token='' --NotebookApp.password=''
+  jupyter/scipy-notebook:d4cbf2f80a2a jupyter notebook \
+    --NotebookApp.token='' \
+    --NotebookApp.password=''
 ```
 
 ```sh
-echo -e "[INFO]\thttp://$(docker-machine ip):8888"
+echo -e '[INFO]\thttp://127.0.0.1:8888'
 ```
 
 ### Remove
@@ -39,8 +27,88 @@ docker rm -f jupyter
 docker volume rm jupyter-data
 ```
 
-## Commands
+## CLI
+
+### Installation
+
+#### PIP
+
+```sh
+pip install notebook
+```
+
+### Commands
 
 ```sh
 jupyter -h
+```
+
+#### Running
+
+```sh
+nohup jupyter notebook &
+```
+
+#### List
+
+```sh
+jupyter notebook list
+```
+
+#### Stop
+
+```sh
+jupyter notebook stop
+```
+
+## Tips
+
+### Global Kernel
+
+```sh
+pip install ipython ipykernel
+```
+
+```sh
+ipython kernel install \
+  --user \
+  --name .venv
+```
+
+```sh
+jupyter kernelspec list
+```
+
+#### Remove
+
+```sh
+# Darwin
+rm -r ${HOME}/Library/Jupyter/kernels/.venv
+
+# Linux
+rm -rf /usr/local/share/jupyter/kernels/.venv
+```
+
+### Kernel with Virtualenv
+
+```sh
+source ./.venv/bin/activate
+```
+
+```sh
+ipython kernel install \
+  --name .venv \
+  --sys-prefix
+```
+
+```sh
+jupyter kernelspec list
+```
+
+#### Importing from Python code
+
+```py
+from os import system
+
+system('source ./.venv/bin/activate')
 ```

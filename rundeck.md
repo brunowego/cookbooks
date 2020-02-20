@@ -2,19 +2,12 @@
 
 ## Docker
 
-### Volume
-
-```sh
-docker volume create rundeck-postgres-data
-docker volume create rundeck-config
-docker volume create rundeck-data
-```
-
 ### Running
 
 ```sh
 docker run -d \
-  -h postgres.rundeck.local \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h postgres \
   -e POSTGRES_USER=rundeck \
   -e POSTGRES_PASSWORD=rundeck \
   -e POSTGRES_DB=rundeck \
@@ -23,14 +16,14 @@ docker run -d \
   -v /etc/localtime:/etc/localtime:ro \
   -p 5432:5432 \
   --name rundeck-postgres \
-  --restart always \
-  postgres:11.2-alpine
+  docker.io/library/postgres:11.2-alpine
 ```
 
 ```sh
 docker run -d \
-  -h rundeck.local \
-  -e RUNDECK_GRAILS_URL=http://"$(docker-machine ip)":4440 \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h rundeck \
+  -e RUNDECK_GRAILS_URL=http://"127.0.0.1":4440 \
   -e RUNDECK_SERVER_ADDRESS=0.0.0.0 \
   -e RUNDECK_DATABASE_URL=jdbc:postgresql://rundeck-postgres:5432/rundeck \
   -e RUNDECK_DATABASE_DRIVER=org.postgresql.Driver \
@@ -42,9 +35,7 @@ docker run -d \
   -v /etc/localtime:/etc/localtime:ro \
   -p 4440:4440 \
   --name rundeck \
-  --restart always \
-  --link rundeck-postgres \
-  rundeck/rundeck:3.0.21
+  docker.io/rundeck/rundeck:3.0.21
 ```
 
 ### Remove

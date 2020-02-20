@@ -14,7 +14,7 @@ sudo apt -y install wget unzip
 #### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install wget unzip
 ```
 

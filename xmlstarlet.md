@@ -1,22 +1,25 @@
 # XMLStarlet
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install xmlstarlet
 ```
 
-### YUM
+#### YUM
 
 ```sh
-sudo yum check-update
-sudo yum -y install epel-release
+yum check-update
+
+# Repo: EPEL
 sudo yum -y install xmlstarlet
 ```
 
-## Commands
+### Commands
 
 ```sh
 xmlstarlet --help

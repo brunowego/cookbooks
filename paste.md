@@ -2,12 +2,6 @@
 
 ## Installation
 
-### Homebrew
-
-```sh
-brew cask install paste
-```
-
 ### MAS
 
 ```sh

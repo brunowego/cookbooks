@@ -1,5 +1,9 @@
 # Micro
 
+<!--
+https://github.com/micro-in-cn/starter-kit
+-->
+
 ## References
 
 - [Micro Toolkit](https://micro.mu/docs/toolkit.html)
@@ -10,20 +14,31 @@
 
 ```sh
 docker run -it --rm \
-  $(echo $DOCKER_RUN_OPTS) \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h micro \
   --name micro \
-  microhq/micro:latest -h
+  docker.io/microhq/micro:latest -h
 ```
 
-## Installation
+## CLI
+
+### Requirements
+
+- [Protocol Buffers](/protobuf.md)
+
+### Dependencies
 
 ```sh
-go get -u github.com/micro/micro
-go get -u github.com/micro/protoc-gen-micro
+GO111MODULE=on go get github.com/micro/protoc-gen-micro
 ```
 
-## Commands
+### Installation
+
+```sh
+GO111MODULE=on go get github.com/micro/micro
+```
+
+### Commands
 
 ```sh
 micro -h

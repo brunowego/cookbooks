@@ -1,24 +1,26 @@
 # Ansible
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install ansible
 ```
 
-### YUM
+#### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install centos-release-ansible26
 sudo yum -y install ansible
 ```
 
-### APT
+#### APT
 
-#### Trusty Tahr 14.04
+##### Trusty Tahr 14.04
 
 ```sh
 sudo apt update
@@ -38,7 +40,7 @@ sudo apt update
 sudo apt -y install ansible
 ```
 
-#### Xenial Xerus 16.04 and newer
+##### Xenial Xerus 16.04 and newer
 
 ```sh
 sudo add-apt-repository -y ppa:ansible/ansible-2.6
@@ -46,15 +48,28 @@ sudo apt update
 sudo apt -y install ansible
 ```
 
-### APK
+#### APK
 
 ```sh
 sudo apk update
 sudo apk add ansible
 ```
 
-## Commands
+### Commands
 
 ```sh
 ansible -h
+```
+
+### Tips
+
+#### Command-line completion
+
+```sh
+# Using Oh My Zsh
+sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 ansible\)/g' ~/.zshrc
+
+source ~/.zshrc
+
+rm ~/.zcompdump*
 ```

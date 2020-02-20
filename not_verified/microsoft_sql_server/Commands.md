@@ -1,0 +1,7 @@
+# Commands
+
+## Help
+
+```sh
+sqlcmd -?
+```

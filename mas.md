@@ -1,4 +1,4 @@
-# mas
+# Mac App Store (mas)
 
 ## Installation
 
@@ -12,4 +12,14 @@ brew install mas
 
 ```sh
 mas help
+```
+
+## Usage
+
+```sh
+# List
+mas list
+
+# Current User
+mas account
 ```

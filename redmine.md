@@ -2,31 +2,25 @@
 
 ## Docker
 
-### Volume
-
-```sh
-docker volume create redmine-postgres-data
-docker volume create redmine-files
-```
-
 ### Running
 
 ```sh
 docker run -d \
-  -h postgres.redmine.local \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h postgres \
   -e POSTGRES_USER=redmine \
   -e POSTGRES_PASSWORD=redmine \
   -e POSTGRES_DB=redmine \
   -v redmine-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name redmine-postgres \
-  --restart always \
-  postgres:11.2-alpine
+  docker.io/library/postgres:11.2-alpine
 ```
 
 ```sh
 docker run -d \
-  -h redmine.local \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h redmine \
   -e REDMINE_DB_POSTGRES=redmine-postgres \
   -e REDMINE_DB_USERNAME=redmine \
   -e REDMINE_DB_PASSWORD=redmine \
@@ -34,13 +28,11 @@ docker run -d \
   -v redmine-files:/usr/src/redmine/files \
   -p 3000:3000 \
   --name redmine \
-  --restart always \
-  --link redmine-postgres \
-  redmine:4.0.3
+  docker.io/library/redmine:4.0.3
 ```
 
 ```sh
-echo -e "[INFO]\thttp://$(docker-machine ip):3000"
+echo -e '[INFO]\thttp://127.0.0.1:3000'
 ```
 
 | Login | Password |

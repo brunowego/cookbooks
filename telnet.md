@@ -6,48 +6,56 @@
 
 ```sh
 docker run -it --rm \
-  $(echo $DOCKER_RUN_OPTS) \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h telnet \
   --name telnet \
-  brunowego/telnet:1.29.3-r10
+  docker.io/brunowego/telnet:1.29.3-r10
 ```
 
-## Installation
+### Remove
 
-### Homebrew
+```sh
+docker rm -f telnet
+```
+
+## CLI
+
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install telnet
 ```
 
-### YUM
+#### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install telnet
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install telnet
 ```
 
-### APK
+#### APK
 
 ```sh
 sudo apk update
 sudo apk add busybox-extras
 ```
 
-### Chocolatey
+#### Chocolatey
 
 ```sh
 choco install -y telnet
 ```
 
-## Commands
+### Commands
 
 ```sh
 man telnet

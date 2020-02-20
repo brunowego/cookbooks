@@ -1,0 +1,3 @@
+# RubyCritic
+
+TODO

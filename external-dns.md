@@ -13,7 +13,7 @@
 
 ### Dependencies
 
-- [etcd Operator](/etcd-operator.md)
+- [etcd (Bitnami)](/etcd.md) or [etcd Operator](/etcd-operator.md)
 - [CoreDNS](/coredns.md)
 
 ### Install
@@ -23,7 +23,7 @@ helm install stable/external-dns \
   -n external-dns \
   --namespace kube-system \
   --set provider=coredns \
-  --set coredns.etcdEndpoints="http://$(kubectl config current-context)-etcd-cluster-client:2379" \
+  --set coredns.etcdEndpoints='http://etcd-cluster.kube-system.svc.cluster.local:2379' \
   --set logLevel=debug \
   --set rbac.create=true
 ```
@@ -72,6 +72,7 @@ kubectl get service nginx -o yaml
 
 ```sh
 dig @10.96.0.10 nginx.example.com +short
+nslookup nginx.example.com 10.96.0.10
 ```
 
 #### Delete

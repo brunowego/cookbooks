@@ -26,11 +26,10 @@ kubectl logs -f $(kubectl get pods -l 'app.kubernetes.io/instance=chaoskube' -o 
 ### Commands
 
 ```sh
-kubectl exec \
-  -it $(kubectl get pod -l 'app.kubernetes.io/name=chaoskube' -o jsonpath='{.items[0].metadata.name}' -n chaoskube) \
+kubectl exec -it \
+  $(kubectl get pod -l 'app.kubernetes.io/name=chaoskube' -o jsonpath='{.items[0].metadata.name}' -n chaoskube) \
   -n chaoskube \
-  -- \
-  chaoskube --help
+  -- chaoskube --help
 ```
 
 ### Delete

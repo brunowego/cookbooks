@@ -1,50 +1,54 @@
 # DBeaver Enterprise
 
-## Dependencies
+## App
 
-### Homebrew
+### Dependencies
+
+- [Java SE Development Kit](https://www.oracle.com/technetwork/java/javase/downloads)
+
+#### Homebrew
 
 ```sh
-brew cask install java
+brew cask install adoptopenjdk
 ```
 
-### YUM
+#### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install java-1.8.0-openjdk
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install openjdk-8-jre
 ```
 
-## Installation
+### Installation
 
-### Homebrew
+#### Homebrew
 
 ```sh
 brew cask install dbeaver-enterprise
 ```
 
-### RPM
+#### RPM
 
 ```sh
 curl -LO https://dbeaver.com/files/dbeaver-ee-latest-stable.x86_64.rpm
 sudo rpm -vi dbeaver-ee-latest-stable.x86_64.rpm && rm -f dbeaver-ee-latest-stable.x86_64.rpm
 ```
 
-### DPKG
+#### DPKG
 
 ```sh
 curl -LO https://dbeaver.com/files/dbeaver-ee_latest_amd64.deb
 sudo dpkg -i dbeaver-ee_latest_amd64.deb && rm -f dbeaver-ee_latest_amd64.deb
 ```
 
-### Chocolatey
+#### Chocolatey
 
 ```sh
 choco install -y dbeaver-ee

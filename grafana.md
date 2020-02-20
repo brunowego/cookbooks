@@ -17,12 +17,12 @@ helm install stable/grafana \
   -n grafana \
   --namespace grafana \
   --set ingress.enabled=true \
-  --set ingress.hosts={grafana.example.com}
+  --set ingress.hosts={grafana.$(minikube ip).nip.io}
 ```
 
 ### SSL
 
-### Dependencies
+#### Dependencies
 
 - [Kubernetes TLS Secret](/k8s-tls-secret.md)
 
@@ -41,7 +41,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - grafana.example.com
+        - grafana.$(minikube ip).nip.io
 EOF
 ) <(helm get values grafana))
 ```
@@ -76,8 +76,8 @@ nslookup grafana.grafana.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 grafana.example.com +short
-nslookup grafana.example.com 10.96.0.10
+dig @10.96.0.10 "grafana.$(minikube ip).nip.io" +short
+nslookup "grafana.$(minikube ip).nip.io" 10.96.0.10
 ```
 
 ### Secret
@@ -98,34 +98,70 @@ kubectl delete namespace grafana --grace-period=0 --force
 
 ## Docker
 
-### Volumes
+### Network
 
 ```sh
-docker volume create grafana-config
-docker volume create grafana-data
+docker network create workbench \
+  --subnet 10.1.1.0/24
 ```
 
 ### Running
 
+#### 5.x
+
 ```sh
 docker run -d \
-  $(echo $DOCKER_RUN_OPTS) \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h grafana \
   -v grafana-config:/etc/grafana \
   -v grafana-data:/var/lib/grafana \
+  -e GF_INSTALL_PLUGINS='grafana-clock-panel, grafana-simple-json-datasource, grafana-piechart-panel' \
   -p 3000:3000 \
   --name grafana \
-  --restart always \
-  grafana/grafana:6.2.2
+  --network workbench \
+  docker.io/grafana/grafana:5.4.5
 ```
 
 ```sh
-echo -e "[INFO]\thttp://$(docker-machine ip):3000"
+echo -e '[INFO]\thttp://127.0.0.1:3000'
 ```
 
 | Login | Password |
 | --- | --- |
 | admin | admin |
+
+#### 6.x
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h grafana \
+  -v grafana-config:/etc/grafana \
+  -v grafana-data:/var/lib/grafana \
+  -e GF_INSTALL_PLUGINS='grafana-clock-panel, grafana-simple-json-datasource, grafana-piechart-panel' \
+  -p 3000:3000 \
+  --name grafana \
+  --network workbench \
+  docker.io/grafana/grafana:6.6.0
+```
+
+<!-- ```sh
+docker cp [filename].json grafana:/etc/grafana/provisioning/dashboards
+``` -->
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:3000'
+```
+
+| Login | Password |
+| --- | --- |
+| admin | admin |
+
+### Shell
+
+```sh
+docker exec -it grafana /bin/bash
+```
 
 ### Remove
 
@@ -147,15 +183,15 @@ brew install grafana
 #### YUM
 
 ```sh
-sudo yum check-update
-sudo yum -y localinstall https://dl.grafana.com/oss/release/grafana-6.2.2-1.x86_64.rpm
+yum check-update
+sudo yum -y localinstall https://dl.grafana.com/oss/release/grafana-6.6.0-1.x86_64.rpm
 ```
 
 #### DPKG
 
 ```sh
-wget https://dl.grafana.com/oss/release/grafana_6.2.2_amd64.deb
-sudo dpkg -i grafana_6.2.2_amd64.deb && rm -f grafana_6.2.2_amd64.deb
+wget https://dl.grafana.com/oss/release/grafana_6.6.0_amd64.deb
+sudo dpkg -i grafana_6.6.0_amd64.deb && rm -f grafana_6.6.0_amd64.deb
 ```
 
 #### Chocolatey
@@ -166,15 +202,11 @@ choco install -y grafana
 
 ### Service
 
-#### Homebrew
-
 ```sh
+# Homebrew
 brew services start grafana
-```
 
-#### Systemd
-
-```sh
+# Systemd
 sudo systemctl enable --now grafana-server
 ```
 

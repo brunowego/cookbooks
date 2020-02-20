@@ -4,55 +4,64 @@
 
 - [Bash Guide](https://github.com/Idnan/bash-guide)
 
-## Installation
+## CLI
 
-### YUM
+### Installation
+
+#### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install bash
 ```
 
-### APK
+#### APK
 
 ```sh
 sudo apk update
 sudo apk add bash
 ```
 
-### Homebrew
+#### Homebrew
 
 ```sh
 brew install bash
 ```
 
-## Configuration
+### Configuration
 
 ```sh
 # for Linux
-sudo chsh $USER -s /bin/bash
+sudo chsh "$USER" -s /bin/bash
 
-# for macOS
+# for Darwin
 sudo chpass -s `which bash` $USER
 ```
 
 ```sh
-sudo su - $USER
+sudo su - "$USER"
 ```
 
 ```sh
 echo $SHELL
 ```
 
-## Tips
+### Usage
 
-### Reload
+```sh
+# Version
+bash --version | head -1
+```
+
+### Tips
+
+#### Reload
 
 ```sh
 . ~/.bashrc
 ```
 
-### Turn `.bashrc` auto-load automatically
+#### Turn `.bashrc` auto-load automatically
 
 ```sh
 tee -a ~/.profile << EOF
@@ -65,7 +74,7 @@ fi
 EOF
 ```
 
-## Restore
+### Restore
 
 ```sh
 rm -fR ~/.bashrc

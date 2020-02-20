@@ -6,10 +6,10 @@
 
 ```sh
 docker run -it --rm \
-  $(echo $DOCKER_RUN_OPTS) \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h python \
   --name python \
-  python:2.7 /bin/bash
+  docker.io/library/python:2.7 /bin/bash
 ```
 
 ## Installation
@@ -23,7 +23,7 @@ brew install python@2
 ### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install python2
 ```
 
@@ -48,7 +48,7 @@ sudo apk add python2
 ### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install gcc-c++ make zlib-devel libffi-devel openssl-devel bzip2-devel readline-devel sqlite-devel
 ```
 
@@ -56,11 +56,11 @@ sudo yum -y install gcc-c++ make zlib-devel libffi-devel openssl-devel bzip2-dev
 
 ```sh
 curl https://www.python.org/ftp/python/2.7.16/Python-2.7.16.tgz | tar -zx
-( cd Python-2.7.16 && ./configure --prefix /usr/local/lib/python2 --with-threads --enable-shared && make && sudo make altinstall ) && rm -rf Python-2.7.16
+( cd ./Python-2.7.16 && ./configure --prefix /usr/local/lib/python2 --with-threads --enable-shared && make && sudo make altinstall ) && rm -fR ./Python-2.7.16
 ```
 
 ```sh
-sudo sh -c 'echo "/usr/local/lib/python2" >> /etc/ld.so.conf.d/python2.conf'
+sudo /usr/bin/sh -c 'echo "/usr/local/lib/python2" >> /etc/ld.so.conf.d/python2.conf'
 ```
 
 ```sh
@@ -71,4 +71,10 @@ sudo ldconfig
 
 ```sh
 python2 -h
+```
+
+## REPL
+
+```sh
+python2
 ```

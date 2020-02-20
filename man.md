@@ -5,7 +5,7 @@
 ### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install man-db
 ```
 

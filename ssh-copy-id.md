@@ -1,38 +1,30 @@
 # ssh-copy-id
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install ssh-copy-id
 ```
 
-## Examples
-
-### Generate
+### Usage
 
 ```sh
+# Generate
 ssh-keygen -b 4096 -C '[email]' -f ~/.ssh/id_rsa -q -t rsa -N ''
-```
 
-### Copy id
-
-```sh
+# Copy id
 ssh-copy-id -i ~/.ssh/id_rsa [username]@[hostname]
-```
 
-### Test
-
-```sh
+# Test
 ssh \
   -i ~/.ssh/id_rsa \
   [username]@[hostname]
-```
 
-#### Ignore Known Hosts
-
-```sh
+# Ignore Known Hosts
 ssh \
   -i ~/.ssh/id_rsa \
   -o UserKnownHostsFile=/dev/null \

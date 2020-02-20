@@ -2,13 +2,6 @@
 
 ## Docker
 
-### Volume
-
-```sh
-docker volume create cratedb-config
-docker volume create cratedb-data
-```
-
 ### Running
 
 ```sh
@@ -17,6 +10,7 @@ docker-machine ssh $DOCKER_MACHINE_NAME sudo sysctl -w vm.max_map_count=262144
 
 ```sh
 docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h cratedb \
   -e CRATE_HEAP_SIZE=1g \
   -v cratedb-config:/crate/config \
@@ -25,12 +19,11 @@ docker run -d \
   -p 4300:4300 \
   -p 5432:5432 \
   --name cratedb \
-  --restart always \
   crate:3.3
 ```
 
 ```sh
-echo -e "[INFO]\thttp://$(docker-machine ip):4200"
+echo -e '[INFO]\thttp://127.0.0.1:4200'
 ```
 
 ### Remove

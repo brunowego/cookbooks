@@ -8,8 +8,12 @@
 brew cask install 1password
 ```
 
+### APT
+
+TODO
+
 ### Chocolatey
 
 ```sh
-choco install -y 1password
+choco install -yf -not-silent 1password
 ```

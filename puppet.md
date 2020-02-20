@@ -19,8 +19,9 @@ sudo apt -y install puppet
 ### YUM
 
 ```sh
-sudo yum check-update
-sudo yum -y install epel-release
+yum check-update
+
+# Repo: EPEL
 sudo yum -y install puppet
 ```
 
@@ -48,7 +49,7 @@ puppet agent --enable
 puppet agent --disable
 
 # status
-cat $(puppet config print vardir)/state/agent_disabled.lock
+cat "$(puppet config print vardir)/state/agent_disabled.lock"
 ```
 
 ## Issues
@@ -56,7 +57,7 @@ cat $(puppet config print vardir)/state/agent_disabled.lock
 ### Locale
 
 ```sh
-env LC_ALL=en_US.UTF-8 \
+LC_ALL=en_US.UTF-8 \
   puppet help
 ```
 
@@ -74,5 +75,5 @@ sudo chkconfig puppet off
 
 ```sh
 sudo crontab -l
-sudo crontab -l | sed '/puppet agent/s/^\(.*\)$/# \1/g' | sudo crontab -
+sudo crontab -l | sed '/puppet agent/ s/^\(.*\)$/# \1/g' | sudo crontab -
 ```

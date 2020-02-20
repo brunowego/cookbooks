@@ -1,15 +1,17 @@
 # which
 
-## Installation
+## CLI
 
-### YUM
+### Installation
+
+#### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install which
 ```
 
-## Command
+### Command
 
 ```sh
 which [command]

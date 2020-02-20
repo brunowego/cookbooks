@@ -1,0 +1,7 @@
+# Commands
+
+##
+
+```sh
+sqlite3
+```

@@ -1,0 +1,7 @@
+# Queries
+
+## List
+
+```sh
+list
+```

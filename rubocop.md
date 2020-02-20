@@ -1,6 +1,10 @@
 # RuboCop
 
-## Installation
+## CLI
+
+### Installation
+
+#### RubyGems
 
 ```sh
 gem install rubocop

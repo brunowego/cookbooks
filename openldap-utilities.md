@@ -16,7 +16,7 @@ sudo apt -y install ldap-utils
 ### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install openldap-clients
 ```
 
@@ -35,7 +35,7 @@ sudo apk add openldap-clients
 cat << EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t example/openldap-clients -
 FROM docker.io/alpine:3.9
 
-RUN apk add --no-cache openldap-clients
+RUN apk add -q --no-cache openldap-clients
 
 EOF
 ```

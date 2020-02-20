@@ -1,14 +1,24 @@
 # Lerna
 
-## Installation
+## npx
 
-### NPM
+### Initialize
+
+```sh
+npx lerna init
+```
+
+## CLI
+
+### Installation
+
+#### NPM
 
 ```sh
 npm install -g lerna
 ```
 
-## Commands
+### Commands
 
 ```sh
 lerna -h

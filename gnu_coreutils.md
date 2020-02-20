@@ -137,6 +137,13 @@
 brew install coreutils
 ```
 
+### YUM
+
+```sh
+yum check-update
+sudo yum -y install coreutils
+```
+
 ### Chocolatey
 
 ```sh
@@ -155,5 +162,5 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 ```
 
 ```sh
-sudo su - $USER
+sudo su - "$USER"
 ```

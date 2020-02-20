@@ -1,24 +1,33 @@
-# macOS
+# Spotify
 
-## Installation
+## App
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew cask install spotify
 ```
 
-### Chocolatey
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install spotify-client
+```
+
+#### Chocolatey
 
 ```sh
 choco install -y spotify
 ```
 
-## Tips
+### Tips
 
-### Homebrew
+#### Homebrew
 
-#### Hide Dock Icon
+##### Hide Dock Icon
 
 ```sh
 vim /Applications/Spotify.app/Contents/Info.plist
@@ -31,9 +40,9 @@ Add before last `</dict>`:
 <true/>
 ```
 
-## Uninstall
+### Uninstall
 
-### Homebrew
+#### Homebrew
 
 ```sh
 brew cask uninstall spotify

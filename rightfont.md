@@ -1,8 +1,10 @@
 # RightFont
 
-## Installation
+## App
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew cask install rightfont

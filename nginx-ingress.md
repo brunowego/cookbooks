@@ -1,10 +1,25 @@
 # NGINX Ingress
 
+## Minikube
+
+### Enable
+
+```sh
+minikube addons enable ingress
+```
+
+### Disable
+
+```sh
+minikube addons disable ingress
+```
+
 ## Helm
 
 ### References
 
 - [Configuration](https://github.com/helm/charts/tree/master/stable/nginx-ingress#configuration)
+- [Exposing TCP and UDP services](https://kubernetes.github.io/ingress-nginx/user-guide/exposing-tcp-udp-services/)
 
 ### Install
 

@@ -12,7 +12,7 @@ npm init -y
 ```
 
 ```sh
-npm i axios -D
+npm install axios -D
 ```
 
 ## REPL

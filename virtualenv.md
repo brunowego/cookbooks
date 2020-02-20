@@ -1,31 +1,38 @@
 # Virtualenv
 
-## Installation
+## CLI
+
+### Installation
 
 ```sh
 pip install virtualenv
 ```
 
-## Commands
+### Commands
 
 ```sh
 virtualenv --help
 ```
 
-### Venv
+### Configuration
 
 ```sh
-virtualenv .venv
+# Git ignore
+echo '/.venv' >> ~/.gitignore_global
 ```
 
-### Activate
+### Usage
 
 ```sh
-source .venv/bin/activate
-```
+# Venv
+virtualenv ./.venv
 
-### Deactivate
+# Activate
+source ./.venv/bin/activate
 
-```sh
+# Deactivate
 deactivate
+
+#
+rm -fR ./.venv
 ```

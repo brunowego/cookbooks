@@ -1,56 +1,61 @@
 # Node Package Manager (NPM)
 
-## References
+## CLI
+
+### References
 
 - [Shorthands and Other CLI Niceties](https://docs.npmjs.com/misc/config#shorthands-and-other-cli-niceties)
 - [The npm config files](https://docs.npmjs.com/files/npmrc)
 
-## Installation
+### Installation
 
 Included in Node.js package installers.
 
-## Configuration
-
-```sh
-cat << 'EOF' > ~/.npmrc
-registry=https://registry.example.com/
-
-EOF
-```
+### Configuration
 
 ```sh
 npm config list
 ```
 
-## Commands
+#### Save Prefix
+
+```sh
+npm config set save-prefix='~'
+```
+
+#### Registry
+
+```sh
+npm config set registry='https://registry.example.com/'
+```
+
+### Commands
 
 ```sh
 npm -h
 ```
 
-### Config
+#### Config
 
 ```sh
 npm help 7 config
 ```
 
-## Proxy
+### Tips
 
-### Set
+#### Proxy
 
 ```sh
+# set
 npm config set http-proxy $http_proxy
 npm config set https-proxy $https_proxy
-```
 
-### Delete
-
-```sh
+# delete
 npm config delete http-proxy
 npm config delete https-proxy
 ```
 
-## Uninstall
+### Uninstall
 
 ```sh
 rm -fR ~/.npm

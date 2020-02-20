@@ -1,39 +1,61 @@
 # Yarn
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install yarn
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install yarn
 ```
 
-### YUM
+#### YUM
 
 ```sh
 curl -Ls https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
 ```
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install yarn
 ```
 
-### Chocolatey
+#### Chocolatey
 
 ```sh
 choco install -y yarn
 ```
 
-## Commands
+### Configuration
+
+```sh
+# Save Prefix
+yarn config set save-prefix false
+```
+
+### Commands
 
 ```sh
 yarn -h
+```
+
+### Tips
+
+#### Command-line completion
+
+```sh
+# Using Oh My Zsh
+sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 yarn\)/g' ~/.zshrc
+
+source ~/.zshrc
+
+rm ~/.zcompdump*
 ```

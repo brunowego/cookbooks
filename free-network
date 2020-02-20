@@ -1,0 +1,31 @@
+#! /usr/bin/ruby
+
+if ARGV.length != 1
+  raise Exception.new('require interface name')
+end
+
+interface = ARGV[0]
+gateway = `ip route | grep default | grep #{interface}`.scan(/\d+\.\d+.\d+.\d+/).first
+
+address = [
+  'web.whatsapp.com',
+  'linkedin.com',
+  'www.wikipedia.org',
+  'slack.com',
+  'join.slack.com',
+  'micro-services.slack.com',
+  'irc.freenode.org'
+]
+
+ips = address.map do |address|
+  output = `nslookup #{address}`
+  output.scan(/Address.+\d.+/)[1].split(':').last.strip
+end
+
+ips << '149.154.0.0/16' # Telegram
+ips << '172.18.51.0/24' # Twitter
+# ips << '64.233.186.0/32' # Google Groups
+
+ips.each do |ip|
+  `sudo route add #{ip} #{gateway}`
+end

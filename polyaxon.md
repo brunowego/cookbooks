@@ -2,6 +2,7 @@
 
 ## References
 
+- [Integrations](https://docs.polyaxon.com/integrations/)
 - [Single Sign On](https://docs.polyaxon.com/configuration/sso/)
 
 ## Helm
@@ -18,7 +19,7 @@
 
 ```sh
 helm repo add polyaxon https://charts.polyaxon.com
-helm repo update
+helm repo update polyaxon
 ```
 
 ### Install
@@ -31,12 +32,14 @@ kubectl create namespace polyaxon
 helm install polyaxon/polyaxon \
   -n polyaxon \
   --namespace polyaxon \
-  --set serviceType=ClusterIP \
+  --set serviceType='ClusterIP' \
   --set ingress.enabled=true \
-  --set ingress.hostName=polyaxon.example.com \
-  --set user.username=admin \
-  --set user.email=admin@example.com \
-  --set user.password="$(openssl rand -hex 32)"
+  --set ingress.hostName="polyaxon.$(minikube ip).nip.io" \
+  --set user.username='admin' \
+  --set user.email="admin@$(minikube ip).nip.io" \
+  --set user.password="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
+  --timeout 900 \
+  --wait
 ```
 
 ### SSL
@@ -60,7 +63,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - polyaxon.example.com
+        - polyaxon.$(minikube ip).nip.io
 EOF
 ) <(helm get values polyaxon))
 ```
@@ -97,8 +100,8 @@ nslookup polyaxon-polyaxon-api.polyaxon.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 polyaxon.example.com +short
-nslookup polyaxon.example.com 10.96.0.10
+dig @10.96.0.10 "polyaxon.$(minikube ip).nip.io" +short
+nslookup "polyaxon.$(minikube ip).nip.io" 10.96.0.10
 ```
 
 ### Secret
@@ -110,13 +113,59 @@ kubectl get secret polyaxon-polyaxon-secret \
     base64 --decode; echo
 ```
 
+| Key | Value |
+| --- | --- |
+| Database | `polyaxon` |
+| Username | `polyaxon` |
+
+```sh
+kubectl get secret polyaxon-postgresql \
+  -o jsonpath='{.data.postgres-password}' \
+  -n polyaxon | \
+    base64 --decode; echo
+```
+
+```sh
+kubectl get secret polyaxon-rabbitmq-ha \
+  -o jsonpath='{.data.rabbitmq-management-username}' \
+  -n polyaxon | \
+    base64 --decode; echo
+
+kubectl get secret polyaxon-rabbitmq-ha \
+  -o jsonpath='{.data.rabbitmq-management-password}' \
+  -n polyaxon | \
+    base64 --decode; echo
+```
+
+```sh
+kubectl get secret polyaxon-rabbitmq-ha \
+  -o jsonpath='{.data.rabbitmq-username}' \
+  -n polyaxon | \
+    base64 --decode; echo
+
+kubectl get secret polyaxon-rabbitmq-ha \
+  -o jsonpath='{.data.rabbitmq-password}' \
+  -n polyaxon | \
+    base64 --decode; echo
+```
+
+###
+
+```sh
+kubectl port-forward \
+  --address 0.0.0.0 \
+  service/polyaxon-postgresql \
+  5432:5432 \
+  -n polyaxon
+```
+
 ### LDAP
 
 ```sh
 helm upgrade polyaxon polyaxon/polyaxon -f <(yq m <(cat << EOF
 ldap:
   enabled: true
-  serverUri: 'ldap://example.com'
+  serverUri: 'ldap://$(minikube ip).nip.io'
   globalOptions: {}
   connectionOptions: {}
   bindDN: 'cn=admin,dc=example,dc=com'
@@ -132,6 +181,22 @@ ldap:
   denyGroup: 'cn=disabled,ou=groups,dc=example,dc=com'
 EOF
 ) <(helm get values polyaxon))
+```
+
+### Shell
+
+```sh
+kubectl exec -it \
+  $(kubectl get pod -l 'app=polyaxon-polyaxon-api' -o jsonpath='{.items[0].metadata.name}' -n polyaxon) \
+  -c polyaxon-api \
+  -n polyaxon \
+  -- /bin/bash
+```
+
+#### Remove
+
+```sh
+helm upgrade polyaxon polyaxon/polyaxon -f <(yq d <(helm get values polyaxon) ldap)
 ```
 
 ### Delete
@@ -155,4 +220,60 @@ pip install polyaxon-cli
 
 ```sh
 polyaxon --help
+```
+
+### Examples
+
+#### Configuration
+
+```sh
+polyaxon config set \
+  --host 'polyaxon.$(minikube ip).nip.io' \
+  --port '443' \
+  --use_https true \
+  --verify_ssl false
+```
+
+```sh
+# Using CLI
+polyaxon config -l
+
+# Reading config file
+cat ~/.polyaxon/.polyaxonconfig | jq
+```
+
+#### Login
+
+```sh
+polyaxon login
+
+polyaxon whoami
+```
+
+#### Project
+
+```sh
+polyaxon project create \
+  --name '[name]' \
+  --description '[description]'
+```
+
+```sh
+polyaxon init '[name]'
+```
+
+```sh
+polyaxon project \
+  -p '[name]' \
+  git \
+    --url="https://gitlab.$(minikube ip).nip.io/experiments/[name].git"
+    --private
+```
+
+```sh
+polyaxon run -f polyaxon_hyperparams.yaml
+```
+
+```sh
+polyaxon notebook start -f polyaxon_notebook.yaml
 ```

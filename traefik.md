@@ -1,5 +1,9 @@
 # Traefik
 
+## References
+
+- [Docker-compose basic example](https://docs.traefik.io/v2.0/user-guides/docker-compose/basic-example/)
+
 ## Helm
 
 ### References
@@ -22,18 +26,18 @@ helm install stable/traefik \
 helm upgrade traefik stable/traefik -f <(yq m <(cat << EOF
 dashboard:
   enabled: true
-  domain: traefik.example.com
+  domain: traefik.$(minikube ip).nip.io
 EOF
 ) <(helm get values traefik))
 ```
 
 ### SSL
 
-### Dependencies
+#### Dependencies
 
 - [Kubernetes TLS Secret](/k8s-tls-secret.md)
 
-### Upgrade
+#### Upgrade
 
 ```sh
 helm upgrade traefik stable/traefik -f <(yq m <(cat << EOF
@@ -45,6 +49,12 @@ ssl:
   defaultKey: "$(cat /etc/ssl/private/example/root-ca.key | base64 -w 0)"
 EOF
 ) <(helm get values traefik))
+```
+
+#### Remove
+
+```sh
+helm upgrade traefik stable/traefik -f <(yq d <(helm get values traefik) ssl)
 ```
 
 ### Status
@@ -69,8 +79,8 @@ nslookup traefik.kube-system.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 traefik.example.com +short
-nslookup traefik.example.com 10.96.0.10
+dig @10.96.0.10 traefik.$(minikube ip).nip.io +short
+nslookup traefik.$(minikube ip).nip.io 10.96.0.10
 ```
 
 ### Delete
@@ -84,9 +94,42 @@ helm delete traefik --purge
 ### Running
 
 ```sh
-docker run -it --rm \
-  $(echo $DOCKER_RUN_OPTS) \
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h traefik \
+  -v /var/run/docker.sock:/var/run/docker.sock:ro \
+  -p 80:80 \
+  -p 8080:8080 \
   --name traefik \
-  traefik:v1.7.12-alpine /bin/sh
+  docker.io/library/traefik:v2.0.2
+```
+
+```sh
+docker exec -i traefik /bin/sh << EOSHELL
+mkdir /etc/traefik
+
+cat << EOF > /etc/traefik/traefik.toml
+[providers.docker]
+  endpoint = "unix:///var/run/docker.sock"
+
+[api]
+  dashboard = true
+  insecure = true
+
+EOF
+EOSHELL
+```
+
+```sh
+docker restart traefik
+```
+
+```sh
+xdg-open "http://127.0.0.1:8080" || open "http://127.0.0.1:8080" || echo -e '[INFO]\thttp://127.0.0.1:8080'
+```
+
+### Remove
+
+```sh
+docker rm -f traefik
 ```

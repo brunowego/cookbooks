@@ -1,30 +1,40 @@
 # git-flow
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install git-flow-avh
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install git-flow
 ```
 
-### YUM
+#### YUM
 
 ```sh
-sudo yum check-update
-sudo yum -y install epel-release
+yum check-update
+
+# Repo: EPEL
 sudo yum -y install gitflow
 ```
 
-## Commands
+### Commands
 
 ```sh
 git flow help
+```
+
+### Usage
+
+```sh
+# Initialize
+git flow init
 ```

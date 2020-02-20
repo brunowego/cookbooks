@@ -1,21 +1,23 @@
 # Cookiecutter
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install cookiecutter
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install cookiecutter
 ```
 
-## Commands
+### Commands
 
 ```sh
 cookiecutter -h

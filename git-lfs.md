@@ -1,36 +1,39 @@
 # Git Large File Storage (LFS)
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install git-lfs
 ```
 
-### YUM
+#### YUM
 
 ```sh
-sudo yum check-update
-sudo yum -y install epel-release
+yum check-update
+
+# Repo: EPEL
 sudo yum -y install git-lfs
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install git-lfs
 ```
 
-### APK
+#### APK
 
 ```sh
 sudo apk update
 sudo apk add git-lfs
 ```
 
-## Commands
+### Commands
 
 ```sh
 man git-lfs

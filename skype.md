@@ -13,3 +13,15 @@ brew cask install skype
 ```sh
 choco install -y skype
 ```
+
+### Issues
+
+#### Proxy
+
+Bypass external proxies for the following hosts:
+
+```txt
+*.live.com
+*.microsoft.com
+*.skype.com
+```

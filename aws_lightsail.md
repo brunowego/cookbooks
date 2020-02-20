@@ -59,12 +59,12 @@ aws lightsail create-instances \
   --bundle-id 'medium_2_0' \
   --key-pair-name 'example-lightsail-keypair' \
   --tags 'key=Environment, value=Dev' \
-  --user-data "$(cat << 'EOF'
+  --user-data "$(cat << \EOF
 sudo apt update
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo apt-key fingerprint 0EBFCD88
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt -y install docker-ce
-sudo usermod -aG docker $USER && sudo su - $USER
+sudo usermod -aG docker "$USER" && sudo su - "$USER"
 EOF
 )"
 ```

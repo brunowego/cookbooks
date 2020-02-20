@@ -1,83 +1,98 @@
 # Python 3
 
+## References
+
+- [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
+
+## Tools
+
+- [Debug](/ipdb.md)
+
 ## Docker
 
 ### Running
 
 ```sh
 docker run -it --rm \
-  $(echo $DOCKER_RUN_OPTS) \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h python \
   --name python \
-  python:3.7 /bin/bash
+  docker.io/library/python:3.7 /bin/bash
 ```
 
-## Installation
+## CLI
 
-### Homebrew
+### Dependencies
+
+- [CentOS Repo's](/centos.md#repositories)
+
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install python
 ```
 
-### YUM
+#### YUM
 
 ```sh
-sudo yum check-update
-sudo yum -y install epel-release
+yum check-update
+
+# Repo: EPEL
 sudo yum -y install python36
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install python3
 ```
 
-### APK
+#### APK
 
 ```sh
 sudo apk update
 sudo apk add python3
 ```
 
-### Source
+#### Source
 
-#### Dependencies
+##### Dependencies
 
-##### YUM
+###### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install curl gcc-c++ make zlib-devel libffi-devel openssl-devel bzip2-devel readline-devel sqlite-devel
 ```
 
-##### APT
+###### APT
 
 ```sh
 sudo apt update
 sudo apt -y install curl g++ make zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
 ```
 
-#### Build & Install
+##### Build & Install
 
 ```sh
 curl https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz | tar -zx
-( cd Python-3.7.3 && ./configure --prefix /usr/local/lib/python3 --with-threads --enable-shared && make && sudo make altinstall ) && rm -r Python-3.7.3
+( cd ./Python-3.7.3 && ./configure --prefix /usr/local/lib/python3 --with-threads --enable-shared && make && sudo make altinstall ) && rm -r ./Python-3.7.3
 ```
 
 ```sh
-sudo sh -c 'echo "/usr/local/lib/python3" >> /etc/ld.so.conf.d/python3.conf'
+sudo /usr/bin/sh -c 'echo "/usr/local/lib/python3" >> /etc/ld.so.conf.d/python3.conf'
 ```
 
 ```sh
 sudo ldconfig
 ```
 
-## Environment
+### Environment
 
-### Homebrew
+#### Homebrew
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
@@ -87,5 +102,33 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 ```
 
 ```sh
-sudo su - $USER
+sudo su - "$USER"
+```
+
+### Commands
+
+```sh
+python3 -h
+```
+
+### Usage
+
+```sh
+# Version
+python --version 2>&1 | head -1
+
+# REPL
+python3
+```
+
+### Tips
+
+#### Warnings
+
+```sh
+# default
+export PYTHONWARNINGS='default'
+
+# ignore
+export PYTHONWARNINGS='ignore'
 ```

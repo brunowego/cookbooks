@@ -11,8 +11,15 @@
 #### Darwin
 
 ```sh
+# v1.4.0
 curl \
-  -L https://storage.googleapis.com/minikube/releases/v1.3.1/minikube-darwin-amd64 \
+  -L 'https://storage.googleapis.com/minikube/releases/v1.4.0/minikube-darwin-amd64' \
+  -o /usr/local/bin/minikube && \
+    chmod +x /usr/local/bin/minikube
+
+# Latest
+curl \
+  -L 'https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64' \
   -o /usr/local/bin/minikube && \
     chmod +x /usr/local/bin/minikube
 ```
@@ -20,8 +27,15 @@ curl \
 #### Linux
 
 ```sh
+# v1.4.0
 sudo curl \
-  -L https://storage.googleapis.com/minikube/releases/v1.3.1/minikube-linux-amd64 \
+  -L 'https://storage.googleapis.com/minikube/releases/v1.4.0/minikube-linux-amd64' \
+  -o /usr/local/bin/minikube && \
+    sudo chmod +x /usr/local/bin/minikube
+
+# Latest
+sudo curl \
+  -L 'https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64' \
   -o /usr/local/bin/minikube && \
     sudo chmod +x /usr/local/bin/minikube
 ```
@@ -33,6 +47,15 @@ choco install -y minikube
 ```
 
 ### Configuration
+
+```sh
+minikube config view
+
+# Disable Update Notification
+minikube config set WantUpdateNotification false
+```
+
+#### Base
 
 ```sh
 mkdir -p ~/.minikube/config
@@ -49,8 +72,17 @@ tee ~/.minikube/config/config.json << EOF
 EOF
 ```
 
+#### VM Driver
+
 ```sh
-minikube config view
+# HyperKit (Darwin only)
+minikube config set vm-driver 'hyperkit'
+
+# VirtualBox
+minikube config set vm-driver 'virtualbox'
+
+# Parallels (Darwin only)
+minikube config set vm-driver 'parallels'
 ```
 
 ### Commands
@@ -64,16 +96,39 @@ minikube --help
 #### Start
 
 ```sh
-# VirtualBox
 minikube start \
-  $(echo $MINIKUBE_START_OPTS) \
-  --host-only-cidr '10.101.1.1/24'
+  $(echo "$MINIKUBE_START_OPTS") \
+  -p minikube
 
-# HyperKit (Darwin only)
+# Custom Google Containers Repository
 minikube start \
-  $(echo $MINIKUBE_START_OPTS) \
-  --host-only-cidr '10.101.1.1/24' \
-  --vm-driver 'hyperkit'
+  $(echo "$MINIKUBE_START_OPTS") \
+  -p minikube \
+  --image-repository 'registry.cn-hangzhou.aliyuncs.com/google_containers' \
+  --insecure-registry 'registry.cn-hangzhou.aliyuncs.com'
+```
+
+```sh
+#
+minikube profile
+minikube profile minikube
+```
+
+```sh
+#
+kubectl config view
+
+kubectl config set-context \
+  --cluster=minikube \
+  --user=minikube \
+  minikube
+```
+
+#### Addons
+
+```sh
+# NGINX Ingress Controller
+minikube addons enable ingress
 ```
 
 #### Mount

@@ -1,8 +1,10 @@
 # Bartender
 
-## Installation
+## App
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew cask install bartender

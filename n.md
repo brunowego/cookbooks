@@ -1,28 +1,57 @@
 # Node version management (n)
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install n
 ```
 
-### NPM
+#### NPM
 
 ```sh
 npm install -g n
 ```
 
-## Configuration
+### Configuration
 
 ```sh
-sudo mkdir -p /usr/local/n
-sudo chown -R "$(whoami)" /usr/local/n
+# Homebrew
+sudo install -dm 775 -o "$USER" -g admin /usr/local/n
 ```
 
-## Commands
+### Commands
 
 ```sh
 n -h
+```
+
+### Usage
+
+```sh
+# Versions
+n --latest
+n --lts
+n ls-remote --all | sort -n
+
+# Install
+n latest
+n lts
+n [version]
+
+# List Versions
+n ls
+
+# Select Version
+n
+
+# Remove
+n rm [version]
+n ls | xargs n rm
+
+# Remove versions except current
+n prune
 ```

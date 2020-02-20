@@ -1,43 +1,41 @@
 # tree
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install tree
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install tree
 ```
 
-### YUM
+#### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install tree
 ```
 
-## Commands
+### Commands
 
 ```sh
 tree --help
 ```
 
-## Examples
-
-### Only files
+### Usage
 
 ```sh
-tree -fFi | grep -v '/$'
-```
+# Filtering
+tree -afFiI '.DS_Store|.git'
 
-### Filtering
-
-```sh
-tree -afi -I '.DS_Store|.git'
+# Only files
+tree -afFiI '.DS_Store|.git' | grep -v '/$'
 ```

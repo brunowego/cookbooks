@@ -20,8 +20,6 @@ git clone https://github.com/syndbg/goenv.git ~/.goenv
 
 ### Environment
 
-#### macOS
-
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
@@ -34,23 +32,7 @@ export PATH="$GOENV_ROOT/bin:$GOBIN:$PATH"
 ```
 
 ```sh
-sudo su - $USER
-```
-
-#### Linux
-
-```sh
-sudo tee /etc/profile.d/goenv.sh << 'EOF'
-export GOENV_ROOT="$HOME/.goenv"
-export GOENV_GOPATH_PREFIX='/usr/local/go'
-export GOPATH="$HOME/.go"
-export GOBIN="$GOPATH/bin"
-export PATH="$GOENV_ROOT/bin:$GOBIN:$PATH"
-EOF
-```
-
-```sh
-sudo su - $USER
+sudo su - "$USER"
 ```
 
 ## Configuration
@@ -66,32 +48,29 @@ sudo chown -R "$(whoami)" /usr/local/go
 goenv help
 ```
 
-#### Install
+### Usage
 
 ```sh
+# List
 goenv install --list
-```
 
-```sh
+# Install
 goenv install [version]
-```
 
-#### Global
+# Check
+goenv versions
 
-```sh
+# Global
 goenv global [version]
-```
 
-#### Init
-
-```sh
+# Initialize
 eval "$(goenv init -)"
-```
 
-### Uninstall
+# Uninstall
+goenv versions --bare | xargs -n 1 goenv uninstall -f
 
-```sh
+#
 rm -fR ~/.goenv
 rm -fR ~/.go
-rm -fR /usr/local/go
+sudo rm -fR /usr/local/go
 ```

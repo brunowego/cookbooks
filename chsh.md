@@ -7,7 +7,7 @@
 sudo chsh -s `which bash`
 
 # define user
-sudo chsh $USER -s /bin/bash
+sudo chsh "$USER" -s /bin/bash
 ```
 
 ```sh

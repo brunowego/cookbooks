@@ -21,20 +21,20 @@ sudo apt -y install bash curl git bison gcc make
 #### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install bash curl which git bison gcc make
 ```
 
 ### Installation
 
 ```sh
-bash < <(curl -LSs https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+/bin/bash < <(curl -LSs https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 ```
 
 ### Environment
 
 ```sh
-sudo su - $USER
+sudo su - "$USER"
 ```
 
 ### Commands

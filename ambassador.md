@@ -29,13 +29,13 @@ metadata:
   namespace: ambassador
 spec:
   rules:
-    - host: ambassador.example.com
-      http:
-        paths:
-          - backend:
-              serviceName: ambassador
-              servicePort: 80
-            path: /
+  - host: ambassador.$(minikube ip).nip.io
+    http:
+      paths:
+      - backend:
+          serviceName: ambassador
+          servicePort: 80
+        path: /
 EOF
 ```
 
@@ -48,7 +48,7 @@ metadata:
   namespace: ambassador
 spec:
   rules:
-    - host: admin.ambassador.example.com
+    - host: admin.ambassador.$(minikube ip).nip.io
       http:
         paths:
           - backend:
@@ -58,9 +58,18 @@ spec:
 EOF
 ```
 
-| Ingress | URL |
-| --- | --- |
-| Admin | `http://admin.ambassador.example.com/ambassador/v0/diag/` |
+### Image Pull Secrets
+
+```sh
+helm upgrade ambassador stable/ambassador -f <(yq w <(helm get values ambassador) 'imagePullSecrets[+].name' nxrm-oss-regcred)
+```
+
+```sh
+kubectl get pod -l 'app.kubernetes.io/name=ambassador' \
+  -o jsonpath='{.items..metadata.name}' \
+  -n ambassador | \
+    xargs kubectl delete pod -n ambassador
+```
 
 ### SSL
 
@@ -82,7 +91,7 @@ kubectl apply -f <(yq m <(cat << EOF
 spec:
   tls:
     - hosts:
-        - ambassador.example.com
+        - ambassador.$(minikube ip).nip.io
       secretName: example.tls-secret
 EOF
 ) <(kubectl get ingress ambassador -n ambassador -o yaml))
@@ -93,7 +102,7 @@ kubectl apply -f <(yq m <(cat << EOF
 spec:
   tls:
     - hosts:
-        - admin.ambassador.example.com
+        - admin.ambassador.$(minikube ip).nip.io
       secretName: example.tls-secret
 EOF
 ) <(kubectl get ingress ambassador-admin -n ambassador -o yaml))
@@ -133,11 +142,18 @@ nslookup ambassador-admin.ambassador.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 ambassador.example.com +short
-nslookup ambassador.example.com 10.96.0.10
+dig @10.96.0.10 "ambassador.$(minikube ip).nip.io" +short
+nslookup "ambassador.$(minikube ip).nip.io" 10.96.0.10
 
-dig @10.96.0.10 admin.ambassador.example.com +short
-nslookup admin.ambassador.example.com 10.96.0.10
+dig @10.96.0.10 "admin.ambassador.$(minikube ip).nip.io" +short
+nslookup "admin.ambassador.$(minikube ip).nip.io" 10.96.0.10
+```
+
+### Web UI
+
+```sh
+# Admin
+echo -e "[INFO]\thttp://admin.ambassador.$(minikube ip).nip.io/ambassador/v0/diag/"
 ```
 
 ### Delete

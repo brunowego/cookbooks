@@ -11,7 +11,7 @@ brew install pv
 ### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install pv
 ```
 

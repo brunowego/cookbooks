@@ -6,11 +6,11 @@
 
 ```sh
 cat << EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t example/jupyterlab-git -
-FROM jupyter/scipy-notebook:latest
+FROM docker.io/jupyter/scipy-notebook:d4cbf2f80a2a
 
-RUN jupyter labextension install @jupyterlab/git && \
-    pip install jupyterlab-git && \
-    jupyter serverextension enable --py jupyterlab_git --sys-prefix
+RUN jupyter labextension install @jupyterlab/git --no-build && \
+    pip install jupyterlab-git==0.5.0 && \
+    jupyter serverextension enable --sys-prefix --py jupyterlab_git
 
 RUN git init
 
@@ -21,19 +21,20 @@ EOF
 
 ```sh
 docker run -d \
-  -h jupyterlab-git.example.local \
+  -h jupyterlab-git \
+  -v jupyterlab-git-data:/home/jovyan/work \
   -p 8888:8888 \
-  --name example-jupyterlab-git \
-  --restart always \
-  example/jupyterlab-git jupyter lab --NotebookApp.token='' --NotebookApp.password=''
+  --name jupyterlab-git \
+  example/jupyterlab-git:latest jupyter lab --NotebookApp.token='' --NotebookApp.password=''
 ```
 
 ```sh
-echo -e "[INFO]\thttp://$(docker-machine ip):8888"
+echo -e '[INFO]\thttp://127.0.0.1:8888'
 ```
 
 ### Remove
 
 ```sh
-docker rm -f example-jupyterlab-git
+docker rm -f jupyterlab-git
+docker volume rm jupyterlab-git-data
 ```

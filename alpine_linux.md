@@ -2,12 +2,20 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
 docker run -it --rm \
-  $(echo $DOCKER_RUN_OPTS) \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h alpine \
   --name alpine \
-  alpine:3.9 /bin/sh
+  --network workbench \
+  docker.io/library/alpine:3.9 /bin/sh
 ```
