@@ -8,11 +8,12 @@
 ssh -i [privatekey].pem [username]@[IP]
 ```
 
-## Proxy
+## Tips
 
-### Local
+### Proxy
 
 ```sh
+# Local
 tee ~/.ssh/config << EOF
 Host *
   SetEnv \
@@ -23,23 +24,16 @@ Host *
     DOCKER_RUN_OPTS="$DOCKER_RUN_OPTS"
 
 EOF
-```
 
-### Remove
-
-```sh
+# Remove
 ssh [username]@[IP]
-```
 
-```sh
 sudo sed -ri 's/AcceptEnv (.*)/AcceptEnv \1 *_proxy *_OPTS/g' /etc/ssh/sshd_config
-```
 
-<!-- cat << EOF | sudo tee -a /mnt/sda1/var/lib/boot2docker/ssh/sshd_config
-AcceptEnv LANG LC_* XMODIFIERS *_proxy *_OPTS
-EOF -->
+# cat << EOF | sudo tee -a /mnt/sda1/var/lib/boot2docker/ssh/sshd_config
+# AcceptEnv LANG LC_* XMODIFIERS *_proxy *_OPTS
+# EOF
 
-```sh
 # for Linux
 sudo service sshd restart
 ```

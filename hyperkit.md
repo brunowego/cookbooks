@@ -1,14 +1,16 @@
 # HyperKit
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install hyperkit
 ```
 
-## Commands
+### Commands
 
 ```sh
 man hyperkit

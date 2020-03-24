@@ -17,12 +17,13 @@
 brew install \
   wget \
   libxml2 \
-  mhash \
-  mcrypt \
-  pcre \
-  openssl@1.1 \
   bzip2 \
-  libzip
+  # libzip
+  # mhash \
+  # mcrypt \
+  # pcre \
+  # openssl@1.1 \
+
 ```
 
 <!-- #### YUM
@@ -36,6 +37,8 @@ sudo yum -y install libmcrypt-devel
 ``` -->
 
 ### Installation
+
+#### Binary
 
 ```sh
 # Darwin
@@ -53,7 +56,7 @@ sudo curl -L 'https://github.com/phpbrew/phpbrew/raw/master/phpbrew' -o /usr/loc
 phpbrew init
 
 # Homebrew
-phpbrew lookup-prefix homebrew
+# phpbrew lookup-prefix homebrew
 ```
 
 ### Environment
@@ -208,12 +211,15 @@ phpbrew -d install \
 #### zlib
 
 ```log
-checking libzip... no
 checking for the location of zlib... configure: error: zip support requires ZLIB. Use --with-zlib-dir=<DIR> to specify prefix where ZLIB include and library are located
 Error: Configure failed: checking for the location of zlib... configure: error: zip support requires ZLIB. Use --with-zlib-dir=<DIR> to specify prefix where ZLIB include and library are located
 ```
 
 ```sh
+#
+brew install zlib
+
+#
 phpbrew -d install \
   [...] \
   # Homebrew
@@ -247,13 +253,21 @@ phpbrew -d install \
 # export PKG_CONFIG_PATH="/usr/local/Cellar/openssl/1.0.2t/lib/pkgconfig:$PKG_CONFIG_PATH"
 ```
 
-<!-- #### GNOME XML library
+#### GNOME XML library
+
+```log
+checking for libxml-2.0 >= 2.7.6... no
+configure: error: in `/Users/brunowego/.phpbrew/build/7.4.3-fpm-dev':
+configure: error: The pkg-config script could not be found or is too old.  Make sure it
+is in your PATH or set the PKG_CONFIG environment variable to the full
+path to pkg-config.
+```
 
 ```sh
 export PKG_CONFIG_PATH="$(brew --cellar libxml2)/$(brew info --json libxml2 | jq -r '.[0].installed[0].version')/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 export LDFLAGS="-L/usr/local/opt/libxml2/lib:$LDFLAGS"
-``` -->
+```
 
 #### cURL
 

@@ -1,8 +1,10 @@
 # Apple Configurator 2
 
-## Installation
+## App
 
-### MAS
+### Installation
+
+#### MAS
 
 ```sh
 mas install 1037126344

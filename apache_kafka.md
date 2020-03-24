@@ -13,6 +13,10 @@ https://github.com/kaiwaehner/kafka-streams-machine-learning-examples
 
 - [Kafka Listeners - Explained](https://rmoff.net/2018/08/02/kafka-listeners-explained/)
 
+##
+
+- [Kafka Manager](/kafka-manager.md)
+
 ## Helm
 
 ### References
@@ -112,10 +116,11 @@ docker network create workbench \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h zookeeper \
-  -v zookeeper-data:/data \
-  -v zookeeper-log:/datalog \
-  -p 2182:2181 \
-  --name zookeeper \
+  -v kafka-zookeeper-data:/data \
+  -v kafka-zookeeper-datalog:/datalog \
+  -v kafka-zookeeper-logs:/logs \
+  --name kafka-zookeeper \
+  --network workbench \
   docker.io/library/zookeeper:3.5.6
 ```
 
@@ -125,12 +130,14 @@ docker run -d \
   -h kafka \
   -e KAFKA_PORT='9092' \
   -e KAFKA_LISTENERS='PLAINTEXT://kafka:9092' \
-  -e KAFKA_ZOOKEEPER_CONNECT='zookeeper:2181' \
+  -e KAFKA_ZOOKEEPER_CONNECT='kafka-zookeeper:2181' \
   -e KAFKA_CREATE_TOPICS='example:4:1' \
   -v kafka-data:/var/lib/kafka/data \
+  -v kafka-logs:/kafka \
   -p 9092:9092 \
   --name kafka \
-  docker.io/wurstmeister/kafka:2.12-2.3.0
+  --network workbench \
+  docker.io/wurstmeister/kafka:2.12-2.4.1
 ```
 
 ```sh
@@ -141,6 +148,14 @@ watch kafkacat -Lb 127.0.0.1:9092
 ### Remove
 
 ```sh
-docker rm -f zookeeper kafka
-docker volume rm zookeeper-data zookeeper-log kafka-data
+docker rm -f \
+  kafka-zookeeper \
+  kafka
+
+docker volume rm \
+  kafka-zookeeper-data \
+  kafka-zookeeper-datalog \
+  kafka-zookeeper-logs \
+  kafka-data \
+  kafka-logs
 ```

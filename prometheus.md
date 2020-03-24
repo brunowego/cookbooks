@@ -284,5 +284,6 @@ echo -e '[INFO]\thttp://127.0.0.1:9090'
 
 ```sh
 docker rm -f prometheus
+
 docker volume rm prometheus-data
 ```

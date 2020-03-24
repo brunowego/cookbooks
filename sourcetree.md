@@ -29,20 +29,20 @@ choco install -y sourcetree
 2. General
 3. Theme: Dark
 
-####
+<!-- ####
 
 1. Preferences
 2. General
-3. Window restoration: Don't restore windows on startup
+3. Window restoration: Don't restore windows on startup -->
 
-####
-
-1. Preferences
-2. General
-3. Terminal app: iTerm2
-
-###
+<!-- ####
 
 1. Preferences
 2. General
-3. Keep bookmarks closed on startup
+3. Terminal app: iTerm2 -->
+
+<!-- ###
+
+1. Preferences
+2. General
+3. Keep bookmarks closed on startup -->

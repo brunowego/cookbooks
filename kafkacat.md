@@ -55,7 +55,39 @@ git clone --branch 1.4.0 --single-branch --depth 1 https://github.com/edenhill/k
 kafkacat -h
 ```
 
-### Configuration
+### Usage
+
+```sh
+# List brokers
+kafkacat -Lb 127.0.0.1:9092
+
+#
+cat << EOF | kafkacat -Pb localhost:9092 -t example
+{
+  "id": 1,
+  "first_name": "John",
+  "last_name": "Doe",
+  "email": "jdoe@example.com",
+  "gender": "Male",
+  "ip_address": "1.2.3.4"
+}
+EOF
+
+echo 'deadbeef-7c12-47fd-955f-c61c40d858af:{"gameId":"deadbeef-7c12-47fd-955f-c61c40d858af","reqId":"0000b0e5-a943-491a-938a-19a35677a501", "player":"BLACK","coord":{"x":0,"y":0}}' | \
+  kafkacat \
+  -Pb 127.0.0.1:9092 \
+  -t example \
+  -K :
+
+# Consume first registry
+kafkacat \
+  -Cb 127.0.0.1:9092 \
+  -t example \
+  -c 1 | \
+    jq '.'
+```
+
+<!-- ### Configuration
 
 ```sh
 cat << EOF > kafkacat.conf
@@ -65,7 +97,7 @@ ssl.key.password=test1234
 ssl.certificate.location=/var/lib/secret/client.pem
 ssl.ca.location=/var/lib/secret/ca.pem
 EOF
-```
+``` -->
 
 ### Tips
 
@@ -81,7 +113,7 @@ kafkacat -Lb [hostname]:9092 \
 
 ### Issues
 
-####
+#### Host resolution
 
 ```log
 % ERROR: Local: Host resolution failure: kafka:9092/1001: Failed to resolve 'kafka:9092': nodename nor servname provided, or not known (after 6ms in state CONNECT)

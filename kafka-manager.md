@@ -38,32 +38,40 @@ helm delete kafka-manager --purge
 
 ```sh
 docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h kafka-manager \
-  -e ZK_HOSTS=kafka-zookeeper:2181 \
+  -e ZK_HOSTS='kafka-zookeeper:2181' \
   -e APPLICATION_SECRET='Pa$$w0rd!' \
   -e KAFKA_MANAGER_AUTH_ENABLED='true' \
   -e KAFKA_MANAGER_USERNAME='admin' \
   -e KAFKA_MANAGER_PASSWORD='admin' \
+  -v kafka-manager-conf:/kafka-manager/conf \
   -p 9000:9000 \
   --name kafka-manager \
-  docker.io/hlebalbau/kafka-manager:latest
+  --network workbench \
+  docker.io/hlebalbau/kafka-manager:3.0.0.4 -Dpidfile.path=/dev/null
 ```
 
 ```sh
 echo -e '[INFO]\thttp://127.0.0.1:9000'
 ```
 
+| Login | Password |
+| --- | --- |
+| admin | admin |
+
 ### Configuration
 
 1. Cluster
 2. Add Cluster
-3. Cluster Name: Example
-4. Cluster Zookeeper Hosts: kafka-zookeeper:2181
-5. Kafka Version: 2.2.0
-6. Save
+   - Cluster Name: Example
+   - Cluster Zookeeper Hosts: kafka-zookeeper:2181
+   - Save
 
 ### Remove
 
 ```sh
 docker rm -f kafka-manager
+
+docker volume rm kafka-manager-conf
 ```

@@ -184,7 +184,7 @@ spec:
           mountPath: /var/www/html
           subPath: html
       - name: matomo
-        image: docker.io/library/matomo:3.13.1-fpm-alpine
+        image: docker.io/library/matomo:3.13.3-fpm-alpine
         ports:
         - containerPort: 9000
         volumeMounts:
@@ -487,19 +487,38 @@ docker run -d \
   -p 9000:9000 \
   --name matomo \
   --network workbench \
-  docker.io/library/matomo:3.13.1-fpm-alpine
+  docker.io/library/matomo:3.13.3-fpm-alpine
+```
+
+```sh
+sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/matomo.local
+mkdir -p /etc/ssl/certs/matomo.local/{ca,server,client}
+
+CAROOT=/etc/ssl/certs/matomo.local/ca \
+  mkcert -install
+
+CAROOT=/etc/ssl/certs/matomo.local/ca \
+  mkcert \
+    -cert-file /etc/ssl/certs/matomo.local/server/server.pem \
+    -key-file /etc/ssl/certs/matomo.local/server/server.key \
+    matomo.local \
+    $(ip route get 1 | awk '{print $NF;exit}') \
+    '*.matomo.local' \
+    localhost \
+    127.0.0.1 \
+    ::1
 ```
 
 ```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h nginx \
+  -v /private/etc/ssl/certs/matomo.local/server:/etc/nginx/certs \
   -v matomo-nginx-conf:/etc/nginx/conf.d \
   -v matomo-data:/var/www/html \
-  -p 8080:80 \
+  -p 8443:443 \
   --name matomo-nginx \
   --network workbench \
-  # --network-alias nginx \
   docker.io/library/nginx:1.17.5-alpine
 ```
 
@@ -511,9 +530,12 @@ upstream php-handler {
 }
 
 server {
-    listen 80 default_server;
+    listen 443 ssl;
     root /var/www/html;
     index index.php index.html;
+
+    ssl_certificate /etc/nginx/certs/server.pem;
+    ssl_certificate_key /etc/nginx/certs/server.key;
 
     location / {
         try_files $uri $uri/ =404;
@@ -542,10 +564,10 @@ docker restart matomo-nginx
 
 ```sh
 # Health check
-curl -i 'http://127.0.0.1:8080/health-check'
+curl -ik 'https://127.0.0.1:8443/health-check'
 
 # Open
-echo -e '[INFO]\thttp://127.0.0.1:8080'
+echo -e '[INFO]\thttps://127.0.0.1:8443'
 ```
 
 1. Welcome! -> Next
@@ -555,11 +577,11 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 5. Super User
    - Super user login: `admin`
    - Password and Password (repeat): `Pa$$w0rd!`
-   - Email: `admin@example.com`
+   - Email: `admin@matomo.local`
    - Next
 6. Setup a Website
    - Website name: `Example`
-   - Website URL: `http://example.com`
+   - Website URL: `http://matomo.local`
    - Website time zone:
    - Next
 7. Tracking code for Example -> Next
@@ -606,6 +628,12 @@ from
 EOSQL
 ``` -->
 
+```sh
+docker exec -i matomo ./console core:archive \
+  --url 'https://127.0.0.1:8443' \
+  --force-idsites 1
+```
+
 ### Database
 
 ```sh
@@ -619,7 +647,23 @@ mysqldump \
   > /path/to/dump/matomo-$(gdate +%Y-%m-%d-%H-%M).sql
 
 # Restore
-TODO
+mysql \
+  -h 127.0.0.1 \
+  -P 3306 \
+  -u root \
+  -p'root' \
+  matomo_dev \
+  < /path/to/dump/matomo-$(gdate +%Y-%m-%d-%H-%M).sql
+```
+
+### State
+
+```sh
+#
+docker stop matomo-mysql matomo matomo-nginx
+
+#
+docker start matomo-mysql matomo matomo-nginx
 ```
 
 ### Remove
@@ -638,7 +682,7 @@ docker network rm workbench
 
 - [GNU Wget](/gnu_wget.md)
 - [PHP](/php.md) and [PHP-FPM](/php-fpm#configuration)
-- [GNU time](/gnu-time.md)
+- [GNU time](/gnu_time.md)
 - [MySQL](/mysql.md)
 - [Apache HTTP Server (HTTPd)](/apache_httpd.md) or [NGINX](/nginx.md)
 
@@ -648,7 +692,7 @@ For old versions change `matomo` to `piwik`.
 
 ```sh
 # Desired version
-export MATOMO_VERSION=3.13.1
+export MATOMO_VERSION=3.13.3
 ```
 
 #### Darwin
@@ -819,7 +863,7 @@ export \
   MATOMO_DATABASE_TABLES_PREFIX='matomodev_'
 
 # PHPBrew
-phpbrew switch 7.2.24-fpm-dev
+phpbrew switch [version]-fpm-dev
 
 #
 php -r 'print_r(get_defined_vars()["_SERVER"]);' | grep MATOMO_
@@ -827,23 +871,41 @@ php -r 'print_r(get_defined_vars()["_SERVER"]);' | grep MATOMO_
 
 ```sh
 # Using built in PHP Server
-## Start Server
+# Start Server
 nohup php -d memory_limit=8G -S 127.0.0.1:8080 &
 
-## Tail Server
+# Tail Server
 tail -f ./nohup.out
 
 # Or, Using PHP-FPM
 
-## Start PHP-FPM
+# Start PHP-FPM
 phpbrew fpm start
+phpbrew fpm current
 
-## Test
+# Test
 cgi-fcgi -bind -connect '127.0.0.1:9000'
 
 ulimit -n 8192
 
-## FastCGI Proxy
+#
+sudo install -dm 775 -o "$USER" -g staff /etc/ssl/certs/matomo.local
+mkdir -p /etc/ssl/certs/matomo.local/{ca,server,client}
+
+CAROOT=/etc/ssl/certs/matomo.local/ca \
+  mkcert -install
+
+CAROOT=/etc/ssl/certs/matomo.local/ca \
+  mkcert \
+    -cert-file /etc/ssl/certs/matomo.local/server/server.pem \
+    -key-file /etc/ssl/certs/matomo.local/server/server.key \
+    matomo.local \
+    '*.matomo.local' \
+    localhost \
+    127.0.0.1 \
+    ::1
+
+# FastCGI Proxy
 caddy -conf <(cat << EOF
 :8443 {
   root $PWD
@@ -852,7 +914,7 @@ caddy -conf <(cat << EOF
     index index.php
   }
 
-  tls /etc/ssl/certs/example.com/server/server.pem /etc/ssl/certs/example.com/server/server.key
+  tls /etc/ssl/certs/matomo.local/server/server.pem /etc/ssl/certs/matomo.local/server/server.key
   gzip
 }
 EOF
@@ -904,12 +966,12 @@ query:
   idsite: 1
   rec: 1
   action_name: Home Page
-  url: http://example.com
+  url: http://matomo.local
   _id: $(openssl rand -hex 16)
   rand: $(head -200 /dev/urandom | cksum | cut -f 1 -d ' ')
   apiv: 1
 header:
-  Origin: http://example.com
+  Origin: http://matomo.local
   Content-Type: application/json
 EOF
 )
@@ -1314,13 +1376,13 @@ EOSQL
 # Piwik
 mysql -u root -p -v <<-\EOSQL
 INSERT INTO `piwik`.`piwik_user`
-  VALUES ('admin', '$2y$10$h1t8GSqIIwM.WU3BE.LUQO63RqT2So5eMlgD5mVXzqn0OhWeudol6', 'admin', 'admin@example.com', '35d110c758bfbbac03cdca6351fdfe85', 1, '2019-11-04 12:13:24')
+  VALUES ('admin', '$2y$10$h1t8GSqIIwM.WU3BE.LUQO63RqT2So5eMlgD5mVXzqn0OhWeudol6', 'admin', 'admin@matomo.local', '35d110c758bfbbac03cdca6351fdfe85', 1, '2019-11-04 12:13:24')
 EOSQL
 
 # Matomo
 mysql -u root -p -v <<-\EOSQL
 INSERT INTO `matomo`.`matomodev_user`
-  VALUES ('admin', '$2y$10$h1t8GSqIIwM.WU3BE.LUQO63RqT2So5eMlgD5mVXzqn0OhWeudol6', 'admin', 'admin@example.com', '', '35d110c758bfbbac03cdca6351fdfe85', 1, '2019-11-04 12:13:24', '2019-11-04 12:13:24')
+  VALUES ('admin', '$2y$10$h1t8GSqIIwM.WU3BE.LUQO63RqT2So5eMlgD5mVXzqn0OhWeudol6', 'admin', 'admin@matomo.local', '', '35d110c758bfbbac03cdca6351fdfe85', 1, '2019-11-04 12:13:24', '2019-11-04 12:13:24')
 EOSQL
 ```
 

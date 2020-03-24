@@ -49,7 +49,7 @@ homeDirectory: /home/johndoe
 sn: John Doe
 uid: johndoe
 uidNumber: 20001
-email: johndoe@example.com
+email: jdoe@example.com
 givenName: John Doe
 loginShell: /bin/bash
 userPassword: $(slappasswd -h {SSHA} -s johndoe)

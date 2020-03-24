@@ -7,7 +7,7 @@
 #### DMG
 
 ```sh
-hdiutil attach https://github.com/transmission/transmission-releases/raw/master/Transmission-2.94.dmg -nobrowse -mountpoint /Volumes/Transmission
+hdiutil attach 'https://github.com/transmission/transmission-releases/raw/master/Transmission-2.94.dmg' -nobrowse -mountpoint /Volumes/Transmission
 ```
 
 ```sh

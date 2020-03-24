@@ -40,6 +40,16 @@ Add before last `</dict>`:
 <true/>
 ```
 
+### Issues
+
+#### Proxy
+
+Bypass external proxies for the following hosts:
+
+```txt
+*.spotify.com
+```
+
 ### Uninstall
 
 #### Homebrew

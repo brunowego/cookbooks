@@ -242,8 +242,8 @@ mysqldump \
 mysql \
   -h 127.0.0.1 \
   -P 3306 \
-  -u wordpress \
-  -p'wordpress' \
+  -u root \
+  -p'root' \
   wordpress_dev \
   < /path/to/dump/wordpress-$(gdate +%Y-%m-%d-%H-%M).sql
 ```
@@ -338,8 +338,8 @@ mysqldump \
   -P 3306 \
   -u wordpress \
   -p'wordpress' \
-  wordpress \
-  > /tmp/wordpress-$(gdate +%Y-%m-%d-%H-%M).sql
+  wordpress_dev \
+  > /path/to/wordpress-$(gdate +%Y-%m-%d-%H-%M).sql
 
 #
 du -h /tmp/wordpress-$(gdate +%Y-%m-%d-%H-%M).sql
@@ -348,10 +348,10 @@ du -h /tmp/wordpress-$(gdate +%Y-%m-%d-%H-%M).sql
 mysql \
   -h 127.0.0.1 \
   -P 3306 \
-  -u wordpress \
-  -p'wordpress' \
-  wordpress \
-  < /tmp/wordpress.sql
+  -u root \
+  -p'root' \
+  wordpress_dev \
+  < /path/to/wordpress.sql
 
 # Kill Server
 pkill php

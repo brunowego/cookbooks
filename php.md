@@ -148,3 +148,14 @@ docker run -d \
   --name php-fpm \
   docker.io/library/php:7.3-fpm
 ```
+
+## Syntax
+
+### Serialize
+
+```txt
+a:1:{i:1;s:4:"test";
+```
+
+- [](https://www.php.net/manual/en/function.serialize.php)
+- [](https://www.php.net/manual/en/function.unserialize.php)

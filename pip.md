@@ -8,7 +8,7 @@
 
 ### Installation
 
-### YUM
+#### YUM
 
 ```sh
 yum check-update
@@ -45,6 +45,9 @@ pip list
 
 # Install setup.py
 pip install ./
+
+# Install compressed file
+pip install [/path/to/package.tar.gz]
 ```
 
 ### Configuration
@@ -87,6 +90,15 @@ ERROR: Could not install packages due to an EnvironmentError: HTTPSConnectionPoo
 
 ```sh
 # Using globally file
+cat << EOF > /etc/pip.conf
+[global]
+trusted-host =
+  pypi.python.org
+  pypi.org
+  files.pythonhosted.org
+EOF
+
+# Or, using user file
 mkdir -p ~/.pip
 
 cat << EOF > ~/.pip/pip.conf
@@ -104,6 +116,6 @@ pip install \
 ```
 
 ```sh
-# Upgrade Certificates
+# Or, try upgrade certificates
 pip install --upgrade certifi
 ```

@@ -96,6 +96,13 @@ export LD_LIBRARY_PATH="$IBM_DB_HOME/lib"
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -114,10 +121,13 @@ docker run -d \
   -p 50000:50000 \
   --memory-swappiness 0 \
   --name db2 \
+  --network workbench \
   --privileged \
   --ulimit memlock=-1:-1 \
   docker.io/ibmcom/db2:11.5.0.0a
 ```
+
+> Wait! This process take a while.
 
 ```sh
 docker logs -f db2 | sed '/(*) Setup has completed./ q'
@@ -151,7 +161,7 @@ sudo yum -y install python3-devel gcc
 ### Installation
 
 ```sh
-pip install ibm_db
+pip install ibm-db ibm-db-sa
 ```
 
 ### REPL
@@ -193,6 +203,19 @@ ibm_db_dbi.OperationalError: ibm_db_dbi::OperationalError: Exception('[IBM][CLI 
 
 TODO
 
+####
+
+```py
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: libdb2.so.1: cannot open shared object file: No such file or directory
+```
+
+```sh
+ln -s /opt/ibm/db2/clidriver/lib/libdb2.so.1 /usr/lib
+ln -s /opt/ibm/db2/clidriver/lib/libdb2.so.1 /usr/lib64
+```
+
 #### Library Path
 
 ```py
@@ -204,11 +227,13 @@ ImportError: dlopen(/path/to/python3.x/site-packages/ibm_db.cpython-3xm-darwin.s
 ```
 
 ```sh
+# export CLIDRIVER_LIB_PATH="$(python3 -c 'import site; print(site.getsitepackages()[0])')/clidriver/lib"
+
 # Default
-export CLIDRIVER_LIB_PATH=$(python -m site --user-site)/clidriver/lib
+export CLIDRIVER_LIB_PATH=$(python3 -m site --user-site)/clidriver/lib
 
 # Or, using pyenv
-export CLIDRIVER_LIB_PATH="$HOME/.pyenv/versions/3.8.0/lib/python3.8/site-packages/clidriver/lib"
+export CLIDRIVER_LIB_PATH="$HOME/.pyenv/versions/3.8.2/lib/python3.8/site-packages/clidriver/lib"
 
 # Or, using Virtualenv
 export CLIDRIVER_LIB_PATH="./.venv/lib/python3.8/site-packages/clidriver/lib"

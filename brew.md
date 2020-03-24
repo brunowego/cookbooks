@@ -93,14 +93,18 @@ sudo su - "$USER"
 #### Ignore SSL
 
 ```log
-fatal: unable to access 'https://github.com/Homebrew/brew/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+# fatal: unable to access 'https://github.com/Homebrew/brew/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+
+curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
 ```
 
 ```sh
-# Darwin
-( cd /usr/local/Homebrew && git config http.sslVerify false )
+git config --global http.sslVerify false
 
-for dir in /usr/local/Homebrew/Library/Taps/homebrew/*; do (cd "$dir" && git config http.sslVerify false); done
+# Darwin
+# ( cd /usr/local/Homebrew && git config http.sslVerify false )
+
+# for dir in /usr/local/Homebrew/Library/Taps/homebrew/*; do (cd "$dir" && git config http.sslVerify false); done
 ```
 
 #### Brew Lock

@@ -200,7 +200,7 @@ homeDirectory: /home/johndoe
 sn: John Doe
 uid: johndoe
 uidNumber: 20001
-email: johndoe@example.com
+email: jdoe@example.com
 givenName: John Doe
 loginShell: /bin/bash
 userPassword: {SSHA}BYPf8cP725HiMRg9tOKlAFG0Wyl7Nelh

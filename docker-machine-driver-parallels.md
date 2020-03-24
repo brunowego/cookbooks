@@ -1,8 +1,10 @@
 # Docker Machine Driver Parallels
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install docker-machine-parallels

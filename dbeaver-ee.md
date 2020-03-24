@@ -4,13 +4,9 @@
 
 ### Dependencies
 
+#### Darwin
+
 - [Java SE Development Kit](https://www.oracle.com/technetwork/java/javase/downloads)
-
-#### Homebrew
-
-```sh
-brew cask install adoptopenjdk
-```
 
 #### YUM
 

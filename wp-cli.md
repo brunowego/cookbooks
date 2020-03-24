@@ -153,10 +153,14 @@ wp scaffold _s [name] \
   --author='[Fname Lname]'
 
 ## Tests
-wp scaffold theme-tests --theme --prompt
+wp scaffold theme-tests \
+  --theme \
+  --prompt
 
 ## Child
-wp scaffold child-theme --theme --prompt
+wp scaffold child-theme \
+  --theme \
+  --prompt
 ```
 
 ##### Plugin
@@ -168,7 +172,9 @@ wp scaffold plugin --prompt
 ##### Post Type
 
 ```sh
-wp scaffold post-type --theme --prompt
+wp scaffold post-type \
+  --theme \
+  --prompt
 ```
 
 ```sh
@@ -186,13 +192,17 @@ To add support for other fields, edit `./post-types/[name].php` inside current t
 ##### Taxonomy
 
 ```sh
-wp scaffold taxonomy --theme --prompt
+wp scaffold taxonomy \
+  --theme \
+  --prompt
 ```
 
 ##### Block
 
 ```sh
-wp scaffold block --theme --prompt
+wp scaffold block \
+  --theme \
+  --prompt
 ```
 
 #### Transient

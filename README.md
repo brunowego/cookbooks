@@ -38,6 +38,7 @@ Bucket of cookbooks to help install and set softwares.
 - [identity provider (IdP)](https://en.wikipedia.org/wiki/Identity_provider)
 - [Command qQuery Responsibility Segregation (CQRS)](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_query_responsibility_segregation)
 - [Server-side Rendering (SSR)]()
+- [Five Ws (5WH)]()
 
 ## Cheat Sheets
 

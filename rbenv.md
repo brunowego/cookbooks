@@ -51,8 +51,11 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
+# Darwin
+echo $(brew --prefix openssl@1.1)
+
 # rbenv
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1"
 export PATH="$HOME/.rbenv/bin:$PATH"
 ```
 

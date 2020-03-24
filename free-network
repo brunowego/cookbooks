@@ -1,4 +1,4 @@
-#! /usr/bin/ruby
+#! /Users/brunowego/.rbenv/shims/ruby
 
 if ARGV.length != 1
   raise Exception.new('require interface name')
@@ -7,24 +7,17 @@ end
 interface = ARGV[0]
 gateway = `ip route | grep default | grep #{interface}`.scan(/\d+\.\d+.\d+.\d+/).first
 
-address = [
-  'web.whatsapp.com',
-  'linkedin.com',
-  'www.wikipedia.org',
-  'slack.com',
-  'join.slack.com',
-  'micro-services.slack.com',
-  'irc.freenode.org'
+ips = [
+  '31.13.85.51',  # Whatsapp
+  '157.240.222.60',  # Whatsapp
+  '108.174.10.10',   # LinkedIn
+  '208.80.154.224',  # Wikipedia
+  '13.227.0.0/24',   # Slack
+  '35.186.224.0/16', # Spotify
+  '149.154.0.0/16',  # Telegram
+  '172.18.51.0/24',   # Twitter
+  '172.217.29.142'   # Hangouts
 ]
-
-ips = address.map do |address|
-  output = `nslookup #{address}`
-  output.scan(/Address.+\d.+/)[1].split(':').last.strip
-end
-
-ips << '149.154.0.0/16' # Telegram
-ips << '172.18.51.0/24' # Twitter
-# ips << '64.233.186.0/32' # Google Groups
 
 ips.each do |ip|
   `sudo route add #{ip} #{gateway}`

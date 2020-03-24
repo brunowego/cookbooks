@@ -11,7 +11,7 @@
 #### Darwin
 
 ```sh
-# v1.4.0
+# v1.6.0
 curl \
   -L 'https://storage.googleapis.com/minikube/releases/v1.4.0/minikube-darwin-amd64' \
   -o /usr/local/bin/minikube && \
@@ -74,13 +74,21 @@ EOF
 
 #### VM Driver
 
+- [Docker Machine Driver Hyperkit](/docker-machine-driver-hyperkit.md)
+
 ```sh
 # HyperKit (Darwin only)
 minikube config set vm-driver 'hyperkit'
+```
 
+```sh
 # VirtualBox
 minikube config set vm-driver 'virtualbox'
+```
 
+- [Docker Machine Driver Parallels](/docker-machine-driver-parallels.md)
+
+```sh
 # Parallels (Darwin only)
 minikube config set vm-driver 'parallels'
 ```
@@ -106,6 +114,13 @@ minikube start \
   -p minikube \
   --image-repository 'registry.cn-hangzhou.aliyuncs.com/google_containers' \
   --insecure-registry 'registry.cn-hangzhou.aliyuncs.com'
+
+# Custom Google Containers Repository
+minikube start \
+  $(echo "$MINIKUBE_START_OPTS") \
+  -p minikube \
+  --image-repository 'atf.intranet.bb.com.br:5001/bb-docker-repo/google_containers' \
+  --insecure-registry 'atf.intranet.bb.com.br:5001'
 ```
 
 ```sh
@@ -179,6 +194,12 @@ sudo route \
 ```
 
 ### Issues
+
+<!-- ####
+
+```log
+Unable to start VM. Please investigate and run 'minikube delete' if possible: creating host: create: precreate: Parallels Desktop edition could not be fetched!
+``` -->
 
 #### DHCP Client Lease DB
 

@@ -1,14 +1,16 @@
 # Postman
 
-## Installation
+## App
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew cask install postman
 ```
 
-### Chocolatey
+#### Chocolatey
 
 ```sh
 choco install -y postman

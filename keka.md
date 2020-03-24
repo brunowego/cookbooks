@@ -1,8 +1,10 @@
 # Keka
 
-## Installation
+## App
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew cask install keka

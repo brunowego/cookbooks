@@ -234,8 +234,6 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 # MySQL 5.7
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
-# or
-
 # MySQL 8.x
 export PATH="/usr/local/opt/mysql/bin:$PATH"
 ```

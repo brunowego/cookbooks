@@ -13,7 +13,7 @@
 
 1. Navigation Bar -> SDK Manager
 2. Tab: SDK Tools
-3. Select: Android Emulator
+3. Select: Android SDK Tools
 4. Click: Apply
 
 ### Environment
@@ -180,3 +180,69 @@ adbd cannot run as root in production builds
 5. Tab: x86 Images
 6. Select: Nougat (Google APIs) -> Next
 7. Finish
+
+####
+
+```log
+adb: failed to install ./app/build/outputs/apk/debug/app-x86_64-debug.apk: Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]
+```
+
+TODO
+
+####
+
+```log
+emulator: ERROR: AdbHostServer.cpp:102: Unable to connect to adb daemon on port: 5037
+```
+
+TODO
+
+####
+
+```log
+Out of memory: Java heap space.
+Please assign more memory to Gradle in the project's gradle.properties file.
+```
+
+```sh
+echo 'org.gradle.jvmargs=-Xmx4096m' >> ./gradle.properties
+```
+
+####
+
+```sh
+Execution failed for task ':app:validateSigningRelease'.
+> Keystore file /xxx/android/app/my-release-key.keystore not found for signing config 'release'.
+```
+
+```sh
+#
+keytool \
+  -keypass PASSWORD1 \
+  -storepass PASSWORD2 \
+  -genkeypair \
+  -v \
+  -keystore ./app/release.keystore \
+  -alias release \
+  -keyalg RSA \
+  -keysize 2048 \
+  -validity 10000
+
+#
+Example
+IT Department
+Example Inc.
+Sao Paulo
+Sao Paulo
+BR
+yes
+
+#
+cat << EOF >> ./keystore.properties
+keyAlias=release
+keyPassword=PASSWORD1
+storeFile=release.keystore
+storePassword=PASSWORD2
+
+EOF
+```

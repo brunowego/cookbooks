@@ -44,13 +44,13 @@ choco install -y jq
 #### Single line
 
 ```sh
-jq '.example.email |= "johndoe@example.com"' [filename] | sponge [filename]
+jq '.example.email |= "jdoe@example.com"' [filename] | sponge [filename]
 ```
 
 #### Multiple lines
 
 ```sh
-jq '.example.name |= "John Doe"' jq '.example.email |= "johndoe@example.com"' [filename] | sponge [filename]
+jq '.example.name |= "John Doe"' jq '.example.email |= "jdoe@example.com"' [filename] | sponge [filename]
 ```
 
 #### Remove

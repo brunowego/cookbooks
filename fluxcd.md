@@ -68,7 +68,7 @@ helm install fluxcd/flux \
   --set helmOperator.createCRD=false \
   --set git.url='git@gitlab.example.com:[username]/flux-get-started' \
   --set git.user='John Doe' \
-  --set git.email='johndoe@example.com' \
+  --set git.email='jdoe@example.com' \
   --set-string ssh.known_hosts="$(ssh-keyscan gitlab.example.com 2> /dev/null)"
 ```
 

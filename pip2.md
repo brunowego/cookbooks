@@ -1,8 +1,10 @@
 # Python Package Index (PIP2)
 
-## Installation
+## CLI
 
-### YUM
+### Installation
+
+#### YUM
 
 ```sh
 yum check-update
@@ -11,22 +13,36 @@ yum check-update
 sudo yum -y install python2-pip
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install python-pip
 ```
 
-### APK
+#### APK
 
 ```sh
 sudo apk update
 sudo apk add py2-pip
 ```
 
-## Commands
+### Commands
 
 ```sh
 pip2 -h
+```
+
+### Issues
+
+#### Permission denied
+
+```sh
+copying build/lib/[filename].py -> /usr/lib/python2.7/site-packages
+error: /usr/lib/python2.7/site-packages/[filename].py: Permission denied
+```
+
+```sh
+#
+pip install --user [package]
 ```

@@ -14,7 +14,7 @@ ls /Volumes
 diskutil info /Volumes/[name] | grep UUID
 
 #
-mkdir -p [/absolute/path/to/folder]
+mkdir -p [/path/to/folder]
 
 #
 echo "UUID=[UUID] [/absolute/path/to/folder] apfs rw" | sudo tee -a /etc/fstab

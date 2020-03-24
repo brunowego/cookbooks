@@ -17,7 +17,7 @@ docker network create workbench \
 
 ```sh
 export MATOMO_CURRENT_VERSION=3.11.0
-export MATOMO_NEXT_VERSION=3.13.1
+export MATOMO_NEXT_VERSION=3.13.3
 ```
 
 ```sh

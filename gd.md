@@ -1,14 +1,16 @@
 # Graphics Library (GD, originally stood for "GIF Draw")
 
-## Installation
+## Library
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install gd libjpeg libpng freetype
 ```
 
-### YUM
+#### YUM
 
 ```sh
 yum check-update

@@ -24,14 +24,6 @@ code --install-extension FallenMax.mithril-emmet
 code --install-extension marcostazi.VS-code-vagrantfile
 ```
 
-## Docker
-
-```sh
-code \
-  --install-extension ms-azuretools.vscode-docker \
-  --install-extension exiasr.hadolint
-```
-
 ## Python
 
 ```sh
@@ -130,12 +122,6 @@ code --install-extension josephtbradley.hive-sql
 
 ```sh
 code --install-extension DavidWang.ini-for-vscode
-```
-
-## CSV
-
-```sh
-code --install-extension mechatroner.rainbow-csv
 ```
 
 ## Ignore Files

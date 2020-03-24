@@ -1,16 +1,18 @@
 # PHP iconv
 
-## Dependencies
+## Library
 
-### Homebrew
+### Dependencies
+
+#### Homebrew
 
 ```sh
 brew install libiconv
 ```
 
-## Installation
+### Installation
 
-### PHPBrew
+#### PHPBrew
 
 ```sh
 # Homebrew
@@ -26,7 +28,7 @@ phpbrew -d ext install \
   iconv
 ```
 
-## Verify
+### Verify
 
 ```sh
 php -m | grep iconv
@@ -36,9 +38,22 @@ php -m | grep iconv
 php -i | grep '^iconv$' -A 9
 ```
 
-## Service
+### Service
 
 ```sh
 # FPM
 phpbrew fpm restart
+```
+
+### Issues
+
+####
+
+```log
+Error: Command failed: phpize
+```
+
+```sh
+# Homebrew
+brew install autoconf
 ```

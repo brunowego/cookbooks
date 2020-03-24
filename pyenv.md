@@ -10,7 +10,12 @@
 # macOS Mojave before
 sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.*.pkg -target /
 
-brew install autoconf pkg-config openssl readline zlib
+brew install \
+  autoconf \
+  pkg-config \
+  openssl \
+  readline \
+  zlib
 ```
 
 #### Zypper
@@ -94,6 +99,7 @@ eval "$(pyenv init -)"
 ####
 
 ```sh
+# Darwin
 PYTHON_CONFIGURE_OPTS="--with-system-expat" \
   CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include" \
   LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib" \

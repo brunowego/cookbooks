@@ -19,3 +19,9 @@
    - Destination disk:
    - Continue
 4. Quit
+
+###
+
+1. Settings
+2. System
+3.

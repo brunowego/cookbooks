@@ -41,8 +41,11 @@ java -XshowSettings:properties -version 2>&1 > /dev/null | grep 'java.home'
 ```
 
 ```sh
+# Darwin
+echo $(/usr/libexec/java_home -v 1.8)
+
 # Java Home
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)" # Darwin
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home" # Darwin
 export JAVA_HOME='/usr/lib/jvm/java-1.8.0-openjdk-amd64' # Linux
 export PATH="$JAVA_HOME/bin:$PATH"
 ```

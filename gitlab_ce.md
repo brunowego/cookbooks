@@ -269,3 +269,29 @@ docker volume rm gitlab-redis-data gitlab-postgres-data gitlab-config gitlab-log
      - User: Bot
      - Access Level: Developer
      - Add to group
+
+<!-- ##
+
+https://github.com/angristan/gitlab-repo-dl
+
+```sh
+wget https://raw.githubusercontent.com/angristan/gitlab-repo-dl/master/gitlab-repo-dl.sh
+
+ssh_url_to_repo http_url_to_repo
+
+chmod +x ./gitlab-repo-dl.sh
+
+GITLAB_URL='https://canais.fontes.intranet.bb.com.br' GITLAB_TOKEN='3SFkZEXTSTVfnFFfD8-s' ./gitlab-repo-dl.sh group mov
+```
+
+```sh
+ORG=mov; \
+ACCESS_TOKEN=3SFkZEXTSTVfnFFfD8-s; \
+  curl \
+    --header "PRIVATE-TOKEN: $ACCESS_TOKEN" \
+    "https://canais.fontes.intranet.bb.com.br/api/v4/groups/$ORG/projects" | \
+      sed 's/,/\'$'\n''/g' | \
+        grep -e 'http_url_to_repo*' | \
+          cut -d \" -f 4 | \
+            xargs -L1 git clone
+``` -->

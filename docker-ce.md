@@ -2,6 +2,10 @@
 
 ## CLI
 
+### Dependencies
+
+- [hadolint](/hadolint.md)
+
 ### Installation
 
 #### Homebrew
@@ -91,9 +95,9 @@ code --disable-extension ms-azuretools.vscode-docker
 # Using Oh My Zsh
 sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 docker\)/g' ~/.zshrc
 
-source ~/.zshrc
-
 rm ~/.zcompdump*
+
+source ~/.zshrc
 ```
 
 ### Issues

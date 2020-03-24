@@ -97,6 +97,12 @@ rm OneHalfDark.itermcolors
 code /Applications/iTerm.app/Contents/Info.plist
 ``` -->
 
+### Uninstall
+
+```sh
+brew cask uninstall iterm2
+```
+
 ## Docs
 
 ### Arrangement

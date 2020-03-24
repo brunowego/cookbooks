@@ -4,6 +4,7 @@
 
 - [AVD Manager](https://developer.android.com/studio/run/managing-avds)
 - [Emulator](https://developer.android.com/studio/run/emulator)
+- [Android Studio download archives](https://developer.android.com/studio/archive)
 
 ## App
 

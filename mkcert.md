@@ -49,7 +49,7 @@ mkcert -help
 ### Configuration
 
 ```sh
-sudo install -dm 775 -o "$USER" -g staff /etc/ssl/certs/example.com
+sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/example.com
 mkdir -p /etc/ssl/certs/example.com/{ca,server,client}
 ```
 
@@ -65,6 +65,7 @@ CAROOT=/etc/ssl/certs/example.com/ca \
     -key-file /etc/ssl/certs/example.com/server/server.key \
     example.com \
     '*.example.com' \
+    $(ip route get 1 | awk '{print $NF;exit}') \
     localhost \
     127.0.0.1 \
     ::1

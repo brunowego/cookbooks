@@ -1,5 +1,7 @@
 # Graylog
 
+<!-- https://github.com/petzah/graylog-plugin-matomo -->
+
 ## References
 
 - [Server Configuration](https://docs.graylog.org/en/stable/pages/configuration/server.conf.html)
@@ -110,6 +112,13 @@ kubectl delete namespace graylog --grace-period=0 --force
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -123,18 +132,21 @@ docker run -d \
   -p 9200:9200 \
   -p 9300:9300 \
   --name graylog-elasticsearch \
-  docker.io/library/elasticsearch:6.8.2
+  --network workbench \
+  docker.io/library/elasticsearch:6.8.7
 ```
 
 ```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mongo \
+  -v graylog-mongo-config:/data/configdb \
   -v graylog-mongo-data:/data/db \
   -e MONGO_INITDB_DATABASE='graylog' \
   -p 27017:27017 \
   --name graylog-mongo \
-  docker.io/library/mongo:4.0
+  --network workbench \
+  docker.io/library/mongo:4.2.3
 ```
 
 ```sh
@@ -146,14 +158,21 @@ docker run -d \
   -e GRAYLOG_HTTP_EXTERNAL_URI='http://127.0.0.1:9000/' \
   -e GRAYLOG_ELASTICSEARCH_HOSTS='http://graylog-elasticsearch:9200' \
   -e GRAYLOG_MONGODB_URI='mongodb://graylog-mongo:27017/graylog' \
-  -v graylog-config:/usr/share/graylog/data/config \
+  -v graylog-data:/usr/share/graylog/data \
   -p 1514:1514 \
   -p 1514:1514/udp \
   -p 9000:9000 \
   -p 12201:12201 \
   -p 12201:12201/udp \
   --name graylog \
-  docker.io/graylog/graylog:3.1.2
+  --network workbench \
+  docker.io/graylog/graylog:3.2.3
+```
+
+> Wait! This process take a while.
+
+```sh
+docker logs -f graylog | sed '/Graylog server up and running./ q'
 ```
 
 ```sh
@@ -164,9 +183,20 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
 | --- | --- |
 | admin | admin |
 
+### State
+
+```sh
+#
+docker stop graylog graylog-elasticsearch graylog-mongo
+
+#
+docker start graylog graylog-elasticsearch graylog-mongo
+```
+
 ### Remove
 
 ```sh
 docker rm -f graylog graylog-elasticsearch graylog-mongo
-docker volume rm graylog-mongo-data graylog-elasticsearch-config graylog-elasticsearch-data graylog-elasticsearch-logs graylog-config
+
+docker volume rm graylog-elasticsearch-config graylog-elasticsearch-data graylog-elasticsearch-logs graylog-mongo-config graylog-mongo-data  graylog-data
 ```
