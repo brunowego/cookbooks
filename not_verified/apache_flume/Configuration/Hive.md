@@ -7,10 +7,10 @@
 ### Required
 
 ```conf
-<Agent>.sinks.<Sink>.channel = <Channel>
+<Agent1>.sinks.<Sink1>.channel = <Channel1>
 
-<Agent>.sinks.<Sink>.type = hive
-<Agent>.sinks.<Sink>.hive.metastore = thrift://127.0.0.1:9083
-<Agent>.sinks.<Sink>.hive.database = [db-name]
-<Agent>.sinks.<Sink>.hive.table = [table-name]
+<Agent1>.sinks.<Sink1>.type = hive
+<Agent1>.sinks.<Sink1>.hive.metastore = thrift://127.0.0.1:9083
+<Agent1>.sinks.<Sink1>.hive.database = [db-name]
+<Agent1>.sinks.<Sink1>.hive.table = [table-name]
 ```

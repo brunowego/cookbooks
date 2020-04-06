@@ -1,22 +1,24 @@
 # Skype
 
-## Installation
+## App
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew cask install skype
 ```
 
-### Chocolatey
+#### Chocolatey
 
 ```sh
 choco install -y skype
 ```
 
-### Issues
+#### Issues
 
-#### Proxy
+##### Proxy
 
 Bypass external proxies for the following hosts:
 

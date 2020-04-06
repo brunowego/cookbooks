@@ -83,3 +83,23 @@ rm -fR ~/.bashrc
 ```sh
 sudo cp /root/.bashrc ~
 ```
+
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h bash \
+  --name bash \
+  --network workbench \
+  docker.io/library/bash:5.0
+```

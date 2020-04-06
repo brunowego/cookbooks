@@ -7,18 +7,18 @@ sudo -u flume touch /etc/flume-ng/[source]-[channel]-[sink].conf || exit
 ```
 
 ```conf
-<Agent>.sources = <Source>
-<Agent>.sinks = <Sink>
-<Agent>.channels = <Channel1> <Channel2>
+<Agent1>.sources = <Source1>
+<Agent1>.sinks = <Sink1>
+<Agent1>.channels = <Channel1>
 
-<Agent>.sources.<Source>.channels = <Channel1> <Channel2>
-<Agent>.sinks.<Sink>.channel = <Channel1>
+<Agent1>.sources.<Source1>.channels = <Channel1>
+<Agent1>.sinks.<Sink1>.channel = <Channel1>
 
-<Agent>.sources.<Source>.<Property> = <Value>
+<Agent1>.sources.<Source1>.<Property> = <Value>
 
-<Agent>.sinks.<Sink>.<Property> = <Value>
+<Agent1>.sinks.<Sink1>.<Property> = <Value>
 
-<Agent>.channels.<Channel>.<Property> = <Value>
+<Agent1>.channels.<Channel1>.<Property> = <Value>
 ```
 
 ## Agent

@@ -9,7 +9,7 @@ hdfs dfs -ls -R [/path]
 ### Remote
 
 ```sh
-hdfs dfs -ls -R hdfs://[hostname]:9000/
+hdfs dfs -ls -R hdfs://[hostname]:8020
 ```
 
 ## Change mode

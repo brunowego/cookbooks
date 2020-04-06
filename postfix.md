@@ -113,13 +113,10 @@ QUIT
 
 ### Issues
 
-#### Disable IPv6
+#### IPv6 Support
 
 ```log
 fatal: parameter inet_interfaces: no local interface found for ::1
 ```
 
-```sh
-#
-sudo sed -i 's/^::1/# &/' /etc/hosts
-```
+[Disable IPv6](/ipv6.md#disable) support.

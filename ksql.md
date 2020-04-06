@@ -1,6 +1,8 @@
 # KSQL
 
 <!--
+https://github.com/Squiggle/kafka-ksql-postgres
+
 https://github.com/bjoernrost/mysql-ksql-etl-demo
 https://speakerdeck.com/rmoff/streaming-etl-in-practice-with-postgresql-apache-kafka-and-ksql?slide=24
 https://github.com/egen/ksql/blob/master/docker-compose.yml

@@ -9,7 +9,7 @@
 #### Required
 
 ```conf
-<Agent>.channels.<Channel>.type = memory
+<Agent1>.channels.<Channel1>.type = memory
 ```
 
 ### File
@@ -23,9 +23,9 @@ sudo install -dm 775 -o flume -g flume /var/flume
 ```
 
 ```conf
-<Agent>.channels.<Channel>.type = file
-<Agent>.channels.<Channel>.checkpointDir = /var/flume/checkpoint
-<Agent>.channels.<Channel>.dataDirs = /var/flume/data
+<Agent1>.channels.<Channel1>.type = file
+<Agent1>.channels.<Channel1>.checkpointDir = /var/flume/checkpoint
+<Agent1>.channels.<Channel1>.dataDirs = /var/flume/data
 ```
 
 ### Kafka

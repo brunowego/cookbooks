@@ -7,7 +7,7 @@
 ### Required
 
 ```conf
-<Agent>.sinks.<Sink>.channel = <Channel>
+<Agent1>.sinks.<Sink1>.channel = <Channel1>
 
-<Agent>.sinks.<Sink>.type = logger
+<Agent1>.sinks.<Sink1>.type = logger
 ```

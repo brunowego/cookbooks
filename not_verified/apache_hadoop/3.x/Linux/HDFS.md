@@ -23,7 +23,7 @@ sudo sed -i "s|^# export JAVA_HOME=|export JAVA_HOME=$(dirname $(dirname $(readl
 ```sh
 sudo xmlstarlet ed -L -s '/configuration' -t 'elem' -n 'property' /opt/hadoop/etc/hadoop/core-site.xml
 sudo xmlstarlet ed -L -s '/configuration/property' -t 'elem' -n 'name' -v 'fs.defaultFS' /opt/hadoop/etc/hadoop/core-site.xml
-sudo xmlstarlet ed -L -s '/configuration/property' -t 'elem' -n 'value' -v 'hdfs://127.0.0.1:9000' /opt/hadoop/etc/hadoop/core-site.xml
+sudo xmlstarlet ed -L -s '/configuration/property' -t 'elem' -n 'value' -v 'hdfs://127.0.0.1:8020' /opt/hadoop/etc/hadoop/core-site.xml
 ```
 
 ```sh

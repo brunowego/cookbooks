@@ -1,4 +1,4 @@
-# HDFS
+# Hadoop DFS
 
 ## Dependencies
 
@@ -21,8 +21,8 @@ sudo -u flume `which hdfs` dfs -mkdir -p /user/flume
 ### Required
 
 ```conf
-<Agent>.sinks.<Sink>.channel = <Channel>
+<Agent1>.sinks.<Sink1>.channel = <Channel1>
 
-<Agent>.sinks.<Sink>.type = hdfs
-<Agent>.sinks.<Sink>.hdfs.path = hdfs://[hostname]:9000/user/flume/events/%Y/%m/%d
+<Agent1>.sinks.<Sink1>.type = hdfs
+<Agent1>.sinks.<Sink1>.hdfs.path = hdfs://[hostname]:8020/user/flume/events/%Y/%m/%d
 ```

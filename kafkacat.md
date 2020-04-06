@@ -2,6 +2,11 @@
 
 ## CLI
 
+### References
+
+- [Examples](https://github.com/edenhill/kafkacat#examples)
+- [Running in Docker](https://github.com/edenhill/kafkacat#running-in-docker)
+
 ### Installation
 
 #### Homebrew
@@ -61,30 +66,18 @@ kafkacat -h
 # List brokers
 kafkacat -Lb 127.0.0.1:9092
 
-#
-cat << EOF | kafkacat -Pb localhost:9092 -t example
-{
-  "id": 1,
-  "first_name": "John",
-  "last_name": "Doe",
-  "email": "jdoe@example.com",
-  "gender": "Male",
-  "ip_address": "1.2.3.4"
-}
-EOF
-
-echo 'deadbeef-7c12-47fd-955f-c61c40d858af:{"gameId":"deadbeef-7c12-47fd-955f-c61c40d858af","reqId":"0000b0e5-a943-491a-938a-19a35677a501", "player":"BLACK","coord":{"x":0,"y":0}}' | \
-  kafkacat \
+# Produce one registry
+echo hello | kafkacat \
   -Pb 127.0.0.1:9092 \
   -t example \
-  -K :
+  -p 0
 
 # Consume first registry
 kafkacat \
   -Cb 127.0.0.1:9092 \
   -t example \
-  -c 1 | \
-    jq '.'
+  -o earliest \
+  -c 1
 ```
 
 <!-- ### Configuration
@@ -129,4 +122,4 @@ sudo hostess add kafka 127.0.0.1
 % ERROR: Local: Broker transport failure: localhost:9092/bootstrap: Connect to ipv6#[::1]:9092 failed: Connection refused (after 0ms in state CONNECT)
 ```
 
-Disable IPv6 support.
+[Disable IPv6](/ipv6.md#disable) support.

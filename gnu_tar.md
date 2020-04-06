@@ -4,7 +4,7 @@
 
 ### Installation
 
-#### Darwin
+#### Homebrew
 
 ```sh
 brew install gnu-tar
@@ -22,6 +22,13 @@ sudo yum -y install tar
 ```sh
 sudo apt update
 sudo apt -y install tar
+```
+
+#### APK
+
+```sh
+sudo apk update
+sudo apk add tar
 ```
 
 ### Environment

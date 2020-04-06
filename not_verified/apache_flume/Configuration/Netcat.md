@@ -5,11 +5,11 @@
 - [User Guide](https://flume.apache.org/FlumeUserGuide.html#netcat-tcp-source)
 
 ```conf
-<Agent>.sources.<Source>.channels = <Channel1> <Channel2>
+<Agent1>.sources.<Source1>.channels = <Channel1>
 
-<Agent>.sources.<Source>.type = netcat
-<Agent>.sources.<Source>.bind = 127.0.0.1
-<Agent>.sources.<Source>.port = 44444
+<Agent1>.sources.<Source1>.type = netcat
+<Agent1>.sources.<Source1>.bind = 127.0.0.1
+<Agent1>.sources.<Source1>.port = 44444
 ```
 
 ## Test

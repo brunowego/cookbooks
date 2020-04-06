@@ -7,11 +7,11 @@
 ### Required
 
 ```conf
-<Agent>.sources.<Source>.channels = <Channel1> <Channel2>
+<Agent1>.sources.<Source1>.channels = <Channel1>
 
-<Agent>.sources.<Source>.type = org.apache.flume.source.kafka.KafkaSource
-<Agent>.sources.<Source>.kafka.bootstrap.servers = [hostname]:9092
-<Agent>.sources.<Source>.kafka.topics = [name]
+<Agent1>.sources.<Source1>.type = org.apache.flume.source.kafka.KafkaSource
+<Agent1>.sources.<Source1>.kafka.bootstrap.servers = [hostname]:9092
+<Agent1>.sources.<Source1>.kafka.topics = [name]
 ```
 
 ## Sink
@@ -21,6 +21,6 @@
 ### Required
 
 ```conf
-<Agent>.sinks.<Sink>.type = org.apache.flume.sink.kafka.KafkaSink
-<Agent>.sinks.<Sink>.kafka.bootstrap.servers = [hostname]:9092
+<Agent1>.sinks.<Sink1>.type = org.apache.flume.sink.kafka.KafkaSink
+<Agent1>.sinks.<Sink1>.kafka.bootstrap.servers = [hostname]:9092
 ```

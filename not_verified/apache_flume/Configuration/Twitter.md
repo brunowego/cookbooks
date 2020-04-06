@@ -7,11 +7,11 @@
 ### Required
 
 ```conf
-<Agent>.sources.<Source>.channels = <Channel1> <Channel2>
+<Agent1>.sources.<Source1>.channels = <Channel1>
 
-<Agent>.sources.<Source>.type = org.apache.flume.source.twitter.TwitterSource
-<Agent>.sources.<Source>.consumerKey = [CONSUMER_KEY]
-<Agent>.sources.<Source>.consumerSecret = [CONSUMER_SECRET]
-<Agent>.sources.<Source>.accessToken = [ACCESS_TOKEN]
-<Agent>.sources.<Source>.accessTokenSecret = [ACCESS_TOKEN_SECRET]
+<Agent1>.sources.<Source1>.type = org.apache.flume.source.twitter.TwitterSource
+<Agent1>.sources.<Source1>.consumerKey = [CONSUMER_KEY]
+<Agent1>.sources.<Source1>.consumerSecret = [CONSUMER_SECRET]
+<Agent1>.sources.<Source1>.accessToken = [ACCESS_TOKEN]
+<Agent1>.sources.<Source1>.accessTokenSecret = [ACCESS_TOKEN_SECRET]
 ```

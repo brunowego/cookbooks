@@ -132,17 +132,47 @@ docker run -d \
   -e KAFKA_LISTENERS='PLAINTEXT://kafka:9092' \
   -e KAFKA_ZOOKEEPER_CONNECT='kafka-zookeeper:2181' \
   -e KAFKA_CREATE_TOPICS='example:4:1' \
+  -e KAFKA_JMX_OPTS='-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=127.0.0.1 -Dcom.sun.management.jmxremote.rmi.port=1099' \
+  -e JMX_PORT='1099' \
   -v kafka-data:/var/lib/kafka/data \
   -v kafka-logs:/kafka \
   -p 9092:9092 \
+  -p 1099:1099 \
   --name kafka \
   --network workbench \
   docker.io/wurstmeister/kafka:2.12-2.4.1
 ```
 
 ```sh
-# Test
-watch kafkacat -Lb 127.0.0.1:9092
+# Kafka test with Kafkacat
+kafkacat -Lb 127.0.0.1:9092
+
+kafkacat \
+  -Cb 127.0.0.1:9092 \
+  -t example
+
+# Or, with kafka-console-consumer script
+# docker exec kafka kafka-console-consumer.sh \
+#   --bootstrap-server 'kafka:9092' \
+#   --from-beginning \
+#   --topic 'example'
+
+# JMX test
+jconsole 127.0.0.1:1099
+```
+
+### State
+
+```sh
+#
+docker stop \
+  kafka-zookeeper \
+  kafka
+
+#
+docker start \
+  kafka-zookeeper \
+  kafka
 ```
 
 ### Remove

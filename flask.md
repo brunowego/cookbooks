@@ -83,7 +83,7 @@ EOF
 ```sh
 docker run -i --rm \
   -v flask-app:/usr/src/app \
-  alpine:3.9 /bin/sh << EOSHELL
+  docker.io/library/alpine:3.9 /bin/sh << EOSHELL
 cat << EOF > /usr/src/app/app.py
 from flask import Flask
 

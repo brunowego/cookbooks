@@ -9,7 +9,7 @@ hdfs fsck [/path]
 ### Remote
 
 ```sh
-hdfs fsck hdfs://[hostname]:8020/
+hdfs fsck hdfs://[hostname]:8020
 ```
 
 ## Detail file

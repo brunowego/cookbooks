@@ -1,5 +1,11 @@
 # Apache Druid
 
+## References
+
+- [Apache Avro Extension](https://druid.apache.org/docs/latest/development/extensions-core/avro.html)
+- [Apache Parquet Extension](https://druid.apache.org/docs/latest/development/extensions-core/parquet.html)
+- [Load streaming data from Apache Kafka](https://druid.apache.org/docs/latest/tutorials/tutorial-kafka.html)
+
 ## CLI
 
 ### Installation
@@ -57,7 +63,7 @@ DRUID_MAXDIRECTMEMORYSIZE=6172m
 
 druid_emitter_logging_logLevel=debug
 
-druid_extensions_loadList=["druid-histogram", "druid-datasketches", "druid-lookups-cached-global", "postgresql-metadata-storage", "druid-kafka-indexing-service"]
+druid_extensions_loadList=["druid-histogram", "druid-datasketches", "druid-lookups-cached-global", "postgresql-metadata-storage", "druid-kafka-indexing-service", "druid-avro-extensions"]
 
 druid_zk_service_host=druid-zookeeper
 
@@ -160,6 +166,30 @@ docker logs -f druid-router | sed '/Started ServerConnector/ q'
 echo -e '[INFO]\thttp://127.0.0.1:8888'
 ```
 
+### State
+
+```sh
+#
+docker stop \
+  druid-postgres \
+  druid-zookeeper \
+  druid-coordinator \
+  druid-broker \
+  druid-historical \
+  druid-middlemanager \
+  druid-router
+
+#
+docker start \
+  druid-postgres \
+  druid-zookeeper \
+  druid-coordinator \
+  druid-broker \
+  druid-historical \
+  druid-middlemanager \
+  druid-router
+```
+
 ### Remove
 
 ```sh
@@ -189,8 +219,60 @@ docker volume rm \
 
 ###
 
+```sh
+#
+docker exec -i druid-router /bin/sh << EOSHELL
+gunzip \
+  -c ./quickstart/tutorial/wikiticker-2015-09-12-sampled.json.gz \
+  > ./quickstart/tutorial/wikiticker-2015-09-12-sampled.json
+EOSHELL
+
+docker exec -i druid-router ls \
+  -lh ./quickstart/tutorial/wikiticker-2015-09-12-sampled.json
+
+docker exec -i druid-router wc \
+  -l ./quickstart/tutorial/wikiticker-2015-09-12-sampled.json
+
+#
+# docker exec -i \
+#   -e KAFKA_OPTS='-Dfile.encoding=UTF-8' \
+#   kafka /bin/sh << EOSHELL
+# kafka-console-producer.sh \
+#   --broker-list 'kafka:9092' \
+#   --topic 'wikipedia' \
+#   < $(docker exec -i druid-router cat ./quickstart/tutorial/wikiticker-2015-09-12-sampled.json)
+# EOSHELL
+
+kafkacat \
+  -Cb 127.0.0.1:9092 \
+  -t wikipedia
+
+docker exec druid-router cat ./quickstart/tutorial/wikiticker-2015-09-12-sampled.json | kafkacat \
+  -Pb '127.0.0.1:9092' \
+  -t 'wikipedia' \
+  -z snappy
+
+#
+# docker exec kafka kafka-console-consumer.sh \
+#   --bootstrap-server 'kafka:9092' \
+#   --from-beginning \
+#   --topic 'wikipedia'
+```
+
 1. Load data -> Start a new spec
 2. Apache Kafka -> Connect data
-   - Bootstrap servers: kafka:9092
-   - Topic: example
+   - Bootstrap servers: `kafka:9092`
+   - Topic: `wikipedia`
    - Apply
+3. Next: Parse data
+   - Input format: `json`
+4. Next: Parse time
+5. Next: Transform
+6. Next: Filter
+7. Next: Configure schema
+8. Next: Partition
+9. Next: Tune
+   - Input tuning: Use earliest offset: Check True
+10. Next: Publish
+11. Next: Edit spec
+12. Submit

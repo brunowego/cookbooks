@@ -102,6 +102,16 @@ source ~/.zshrc
 
 ### Issues
 
+#### Endpoint Exists
+
+```log
+docker: Error response from daemon: endpoint with name [container] already exists in network [network].
+```
+
+```sh
+docker network disconnect -f [network] [container]
+```
+
 #### Bad Credential
 
 ```log
