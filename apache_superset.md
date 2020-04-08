@@ -1,48 +1,55 @@
-# Docker
+# Apache Superset
 
-## Volume
+## Docker
+
+### Network
 
 ```sh
-docker volume create superset-redis-data
-docker volume create superset-postgres-data
-docker volume create superset-config
+docker network create workbench \
+  --subnet 10.1.1.0/24
 ```
 
-## Running
+### Running
 
 ```sh
 docker run -d \
-  -h redis.superset.local \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h redis \
   -v superset-redis-data:/data \
-  -p 6379:6379 \
   --name superset-redis \
+  --network workbench \
   docker.io/library/redis:5.0.4-alpine3.9 redis-server --appendonly yes
 ```
 
 ```sh
 docker run -d \
-  -h postgres.superset.local \
-  -e POSTGRES_USER=superset \
-  -e POSTGRES_PASSWORD=superset \
-  -e POSTGRES_DB=superset \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h postgres \
+  -e POSTGRES_USER='superset' \
+  -e POSTGRES_PASSWORD='superset' \
+  -e POSTGRES_DB='superset' \
   -v superset-postgres-data:/var/lib/postgresql/data \
-  -p 5432:5432 \
   --name superset-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
 ```sh
 docker run -d \
-  -h superset.local \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h superset \
   -v superset-config:/etc/superset \
+  -v superset-configs:/home/superset \
+  -v superset-data:/var/lib/superset \
   -p 8088:8088 \
   --name superset \
-  docker.io/amancevice/superset:0.28.1
+  --network workbench \
+  docker.io/amancevice/superset:0.35.2
 ```
 
 ```sh
 docker exec -i superset /bin/sh << EOSHELL
-cat << EOF > /etc/superset/superset_config.py
+cat << EOF > /home/superset/superset_config.py
 import os
 
 MAPBOX_API_KEY = os.getenv('MAPBOX_API_KEY', '')
@@ -65,23 +72,22 @@ EOSHELL
 
 ```sh
 docker exec -i superset fabmanager create-admin \
-  --app superset \
-  --username admin \
-  --password admin \
-  --firstname user \
-  --lastname user \
-  --email admin@admin.org
+  --app 'superset' \
+  --username 'admin' \
+  --password 'admin' \
+  --firstname 'user' \
+  --lastname 'user' \
+  --email 'admin@admin.org'
 ```
 
 ```sh
+#
 docker exec -i superset superset db upgrade
-```
 
-```sh
+#
 docker exec superset superset init
-```
 
-```sh
+#
 docker restart superset
 ```
 
@@ -89,9 +95,10 @@ docker restart superset
 echo -e '[INFO]\thttp://127.0.0.1:8088'
 ```
 
-## Remove
+### Remove
 
 ```sh
 docker rm -f superset-redis superset-postgres superset
-docker volume rm superset-redis-data superset-postgres-data superset-config
+
+docker volume rm superset-redis-data superset-postgres-data superset-config superset-configs superset-data
 ```

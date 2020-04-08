@@ -958,6 +958,7 @@ gtime -v ./console core:archive \
 #
 ./console diagnostics:analyze-archive-table $(gdate +%Y_%m)
 
+#
 postkid -run-curl <(cat << EOF
 method: GET
 host: https://127.0.0.1:8080

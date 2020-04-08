@@ -4,6 +4,8 @@
 
 ### Installation
 
+#### Go Get
+
 ```sh
 go get -u github.com/vyskocilm/postkid
 ```

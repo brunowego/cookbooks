@@ -202,10 +202,11 @@ docker run -d \
   docker.io/metabase/metabase:v0.34.1
 ```
 
-<!-- ```sh
-curl -s http://127.0.0.1:3000/api/health | \
-  jq -e '.status | index("ok")' > /dev/null
-``` -->
+> Wait! This process take a while.
+
+```sh
+docker logs -f metabase | sed '/Metabase Initialization COMPLETE/ q'
+```
 
 ```sh
 echo -e '[INFO]\thttp://127.0.0.1:3000'
@@ -228,7 +229,8 @@ TODO
 ### Remove
 
 ```sh
-docker rm -f metabase-postgres
+docker rm -f metabase-postgres metabase
+
 docker volume rm metabase-postgres-data
 ```
 

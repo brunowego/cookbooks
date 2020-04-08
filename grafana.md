@@ -1,5 +1,9 @@
 # Grafana
 
+## References
+
+- [Druid Datasource](https://grafana.com/grafana/plugins/abhisant-druid-datasource)
+
 ## Helm
 
 ### References
@@ -167,6 +171,7 @@ docker exec -it grafana /bin/bash
 
 ```sh
 docker rm -f grafana
+
 docker volume rm grafana-config grafana-data
 ```
 
