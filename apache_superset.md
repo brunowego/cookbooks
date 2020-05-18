@@ -102,3 +102,38 @@ docker rm -f superset-redis superset-postgres superset
 
 docker volume rm superset-redis-data superset-postgres-data superset-config superset-configs superset-data
 ```
+
+### Docs
+
+#### Datasource
+
+1. Sources
+2. Druid Clusters -> Add a new record
+   - Verbose Name: `druid-docker`
+   - Broker Host: `druid-broker`
+   - Cluster: `druid-docker`
+   - Save
+3. Sources -> Scan New Datasources
+
+#### Dashboard
+
+1. Dashboard -> Add a new record
+   - Name: `Wikipedia`
+   - Owners: Select `user user`
+   - Published: Check
+   - Save
+
+#### Charts
+
+1. Charts -> Add a new record
+2. Create a new chart
+   - Choose a datasource: Select `wikipedia`
+   - Create new chart
+3. Data Tab
+   - Title: Count
+   - Visualization Type: Big Number
+   - Time Granularity: All
+   - Time range: No filter
+   - Run Query
+   - Save
+4. Save A Chart

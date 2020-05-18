@@ -50,12 +50,6 @@ code \
 code --install-extension vscjava.vscode-java-pack
 ```
 
-## JavaScript
-
-```sh
-code --install-extension dbaeumer.vscode-eslint
-```
-
 ## Golang
 
 ```sh

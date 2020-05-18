@@ -95,6 +95,10 @@ Bucket of cookbooks to help install and set softwares.
 logo-[name]-[color]-[hash].svg
 ```
 
+##
+
+- [](https://github.com/manuelbieh/react-ssr-setup)
+
 ## Dictionary
 
 - LGTM: Looks Good To Me

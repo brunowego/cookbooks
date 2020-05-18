@@ -294,3 +294,12 @@ https://stackoverflow.com/questions/57881019/i-cant-get-atom-text-editor-leining
 3. Authentication
 4. LDAP
    - Server Settings
+
+### Druid
+
+1. Settings
+2. Admin
+3. Databases -> Add database
+   - Name: wikipedia
+   - Host: http://druid-broker
+   - Save

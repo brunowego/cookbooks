@@ -16,9 +16,7 @@ brew install eslint
 eslint -h
 ```
 
-### Examples
-
-####
+#### Configuration
 
 ```sh
 touch .eslintrc.json || exit
@@ -39,4 +37,12 @@ touch .eslintrc.json || exit
     ]
   }
 }
+```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension dbaeumer.vscode-eslint
 ```

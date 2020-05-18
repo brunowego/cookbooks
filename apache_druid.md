@@ -217,7 +217,9 @@ docker volume rm \
 
 ## Docs
 
-###
+### Kafka
+
+- [Apache Kafka](/apache_kafka.md#docker)
 
 ```sh
 #

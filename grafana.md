@@ -221,3 +221,15 @@ sudo systemctl enable --now grafana-server
 grafana-cli -h
 grafana-server -h
 ```
+
+### Usage
+
+#### Install Plugin
+
+```sh
+#
+grafana-cli --insecure plugins install [name]
+
+#
+service grafana-server restart
+```

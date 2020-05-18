@@ -39,6 +39,9 @@ choco install -y yarn
 ```sh
 # Save Prefix
 yarn config set save-prefix false
+
+# Git ignore
+echo 'yarn-error.log' >> ~/.gitignore_global
 ```
 
 ### Commands

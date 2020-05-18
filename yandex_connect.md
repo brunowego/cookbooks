@@ -1,18 +1,22 @@
 # Yandex Connect
 
-https://connect.yandex.com/
-https://connect.yandex.com/pdd/
+## References
 
-https://connect.yandex.com/portal/home
-https://connect.yandex.com/portal/admin
+- [Configure IMAP-based client](https://yandex.com/support/mail/mail-clients.html#imap)
 
+## Docs
 
-velastalisma.com.br
-velastalisma.com
+### Confirm Domain
 
-contato@velastalisma.com.br
-rosa@velastalisma.com.br
+1. Open [Yandex Connect](https://connect.yandex.com/) -> Try out
+2. Login with your account or register
+3. Dashboard -> New organization
+   - Enter domain name
+   - Activate
+4. [Webmaster](https://connect.yandex.com/portal/services/webmaster) -> Domains Tab -> Confirm your domain
 
-velastalisma@gmail.com
+### Add Email
 
-https://connect.yandex.com/
+1. Open [Yandex Connect - Admin](https://connect.yandex.com/portal/admin)
+2. Add -> Add a person
+3. New employee

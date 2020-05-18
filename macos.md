@@ -1,4 +1,6 @@
-# Darwin
+# macOS
+
+<!-- sudo spctl --master-disable -->
 
 ## Applications
 
