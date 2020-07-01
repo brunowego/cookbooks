@@ -103,6 +103,15 @@ git ls-files -v | grep '^h'
 
 ### Tips
 
+<!-- ####
+
+```sh
+git rebase -i HEAD~10 -x "git commit --amend --author 'Author Name <author.name@mail.com>' --no-edit"
+git rebase --root -i develop -x "git commit --amend --author 'Author Name <author.name@mail.com>' --no-edit"
+
+git push -f
+``` -->
+
 #### Core Editor
 
 ##### Visual Studio Code
@@ -246,3 +255,9 @@ error: failed to push some refs to 'project@example.com:project'
 ```sh
 git push -u origin master
 ```
+
+<!--
+###
+
+license UNLICENSED
+-->

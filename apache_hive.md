@@ -49,7 +49,7 @@ EOF
       MYSQL_ROOT_PASSWORD: "iamroot"
       MYSQL_DATABASE: "hivedb"
     ports:
-      - "3306:3306"
+      - 3306:3306
     volumes:
       - mysql:/var/lib/mysql
 

@@ -63,6 +63,12 @@ sudo nmap -PN 127.0.0.1
 # Range host status
 sudo nmap -PN xxx.xxx.xxx.xxx-yyy
 
+# Scan port
+nmap -p 80 127.0.0.1 # specific
+nmap -p 1-200 192.168.0.1 # range
+nmap -F 127.0.0.1 # common ports
+nmap -p - 127.0.0.1 # all
+
 # Available services
 sudo nmap -sP network_address_range
 ```

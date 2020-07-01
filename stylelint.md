@@ -7,7 +7,7 @@
 #### Visual Studio Code
 
 ```sh
-code --install-extension thibaudcolas.stylelint
+code --install-extension stylelint.vscode-stylelint
 ```
 
 #### Ignore

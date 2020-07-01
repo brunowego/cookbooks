@@ -1,13 +1,10 @@
 # scp
 
-## Examples
-
-### Output TTY
+## Usage
 
 ```sh
+# Output TTY
 echo 'hello' > /dev/tty
-```
 
-```sh
 echo "$(scp [username]@[hostname]:[/absolute/path/to/file] /dev/tty &> /dev/null)"
 ```

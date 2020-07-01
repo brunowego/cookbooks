@@ -1,5 +1,9 @@
 # Apache Hadoop
 
+## References
+
+- [Amazon Hadoop Instances](https://www.shodan.io/search?query=port%3A%2250070%22+org%3A%22amazon.com%22)
+
 <!--
 docker exec -i flume /bin/sh << EOSHELL
 wget \

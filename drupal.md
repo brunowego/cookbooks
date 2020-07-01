@@ -1,9 +1,5 @@
 # Drupal
 
-## Helm
-
-TODO
-
 ## Docker
 
 ### Running

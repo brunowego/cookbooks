@@ -1,29 +1,38 @@
 # rename
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install rename
 ```
 
-## Commands
+### Commands
 
 ```sh
 rename
 ```
 
-## Examples
+### Usage
 
-### Slugify
+#### Slugify
 
 ```sh
 rename -fvc --nows *
 ```
 
-### Replace (regex)
+#### Replace (regex)
 
 ```sh
 rename -v 's/[from]/[to]/' *
 ```
+
+<!-- ####
+
+```sh
+find . -iname '.*' -exec realpath {} \; | rename -n 's/\.(.*)/$1/'
+find . -iname '.*' -exec realpath {} \; | rename 's/\.(.*)/$1/'
+``` -->

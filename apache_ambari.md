@@ -1,8 +1,9 @@
 # Apache Ambari
 
-https://cwiki.apache.org/confluence/display/AMBARI/Installation+Guide+for+Ambari+2.7.4
+<!-- https://cwiki.apache.org/confluence/display/AMBARI/Installation+Guide+for+Ambari+2.7.4
 https://github.com/TaylorZhou/TaylorZhou.github.io/blob/master/_posts/2019-01-29-%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAambari%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83.md
 https://github.com/gaelfoppolo/self-service-data-analytics/blob/master/doc-admin/Ranger/ranger_install.md
+-->
 
 ## Host
 
@@ -44,3 +45,7 @@ mvn -B clean install rpm:rpm \
   -DskipTests \
   -Dpython.ver='python >= 2.6'
 ```
+
+## Docker
+
+<!-- 7180 -->

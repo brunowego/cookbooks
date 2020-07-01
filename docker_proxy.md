@@ -2,6 +2,18 @@
 
 ## Pull
 
+<!-- ### Darwin
+
+```sh
+jq '."proxyHttpMode" |= "manual"' "$HOME/Library/Group\ Containers/group.com.docker/settings.json" | sponge "$HOME/Library/Group\ Containers/group.com.docker/settings.json"
+
+jq ".\"overrideProxyHttp\" |= \"$http_proxy\"" "$HOME/Library/Group\ Containers/group.com.docker/settings.json" | sponge "$HOME/Library/
+Group\ Containers/group.com.docker/settings.json"
+
+jq ".\"overrideProxyHttps\" |= \"$https_proxy\"" "$HOME/Library/Group\ Containers/group.com.docker/settings.json" | sponge "$HOME/Library/
+Group\ Containers/group.com.docker/settings.json"
+``` -->
+
 ### Linux
 
 ```sh

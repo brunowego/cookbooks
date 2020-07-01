@@ -1,4 +1,39 @@
-# GatsbyJS
+# Gatsby
+
+## References
+
+- [Starters](https://www.gatsbyjs.org/docs/starters/)
+
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h gatsby \
+  -p 8080:80 \
+  --name gatsby \
+  --network workbench \
+  docker.io/gatsbyjs/gatsby:latest
+```
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:8080'
+```
+
+### Remove
+
+```sh
+docker rm -f gatsby
+```
 
 ## CLI
 
@@ -8,6 +43,12 @@
 
 ```sh
 brew install gatsby-cli
+```
+
+#### NPM
+
+```sh
+npm i -g gatsby-cli
 ```
 
 ### Configuration
@@ -26,12 +67,12 @@ gatsby -h
 ### Usage
 
 ```sh
-# Create new project from gatsby-starter-default project
-gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+gatsby new my-default-starter
 
-# Dive in project
+# or from repo
+gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+
 cd my-default-starter
 
-# Run develop server
 gatsby develop
 ```

@@ -43,6 +43,12 @@ vagrant snapshot restore [name]
 
 ### Tips
 
+#### Visual Studio Code
+
+```sh
+code --install-extension marcostazi.VS-code-vagrantfile
+```
+
 #### Command-line completion
 
 ```sh

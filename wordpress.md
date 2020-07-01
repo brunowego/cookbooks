@@ -1,5 +1,14 @@
 # WordPress
 
+<!--
+https://snipcart.com/blog/reactjs-wordpress-rest-api-example
+https://www.freecodecamp.org/news/wordpress-react-how-to-create-a-modern-web-app-using-wordpress-ef6cc6be0cd0/
+https://blog.usejournal.com/react-wordpress-rest-api-c6e94595e4d7
+https://www.cloudways.com/blog/use-react-with-wordpress-to-create-headless-cms/
+https://medium.com/how-to-react/visual-composer-wordpress-rest-api-reactjs-to-create-a-awesome-site-790db78e1e0d
+https://pagely.com/blog/react-js-wordpress-rest-api/
+-->
+
 ## References
 
 - [Dashicons](https://developer.wordpress.org/resource/dashicons/#sort)
@@ -147,7 +156,15 @@ docker run -d \
   --name wordpress \
   --network workbench \
   docker.io/library/wordpress:5.3.2-apache
+```
 
+> Wait! This process take a while.
+
+```sh
+docker logs -f wordpress | sed '/Complete! WordPress has been successfully copied to \/var\/www\/html/ q'
+```
+
+```sh
 # Or, with FPM
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
@@ -237,6 +254,8 @@ mysqldump \
   -p'wordpress' \
   wordpress_dev \
   > /path/to/dump/wordpress-$(gdate +%Y-%m-%d-%H-%M).sql
+
+du -h /path/to/dump/wordpress-*.sql
 
 # Restore
 mysql \

@@ -1,5 +1,7 @@
 # Yandex Connect
 
+**Keywords**: Russian, Mail
+
 ## References
 
 - [Configure IMAP-based client](https://yandex.com/support/mail/mail-clients.html#imap)
@@ -20,3 +22,8 @@
 1. Open [Yandex Connect - Admin](https://connect.yandex.com/portal/admin)
 2. Add -> Add a person
 3. New employee
+
+<!-- ### Change Name
+
+https://passport.yandex.com/profile
+-->

@@ -14,14 +14,14 @@ brew install krb5
 
 ```sh
 yum check-update
-sudo yum -y install krb5-workstation
+sudo yum -y install krb5-workstation krb5-devel
 ```
 
 #### APT
 
 ```sh
 sudo apt update
-sudo apt -y install krb5-user
+sudo apt -y install krb5-user libkrb5-dev
 ```
 
 #### APK
@@ -104,3 +104,23 @@ sudo tee -a /etc/krb5.conf.d/[domain].conf << EOF
  example.com = EXAMPLE.COM
 EOF
 ```
+
+### Issues
+
+####
+
+```log
+kinit: Unknown credential cache type while getting default ccache
+```
+
+<!--
+kinit c1283519@DESENVOLVIMENTOHWBB.COM.BR
+
+echo 'password' | kinit username
+
+kinit --password-file=~/mypasswordfile test@REALM
+
+cat password_file | kinit --password-file=STDIN test@REALM
+-->
+
+TODO

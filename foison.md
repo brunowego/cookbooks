@@ -81,6 +81,14 @@ Color Plus Paper 180g/m2
 | Cut | 2 | 400 | 100 |
 | Crease | Thin Tip | 400 | 180/220 |
 
+EVA
+Papel cartão
+Vinil Adesivo
+Power film
+Cartolina
+Manta magnética
+Papel
+
 ## X24 Double Head
 
 TODO

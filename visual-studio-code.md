@@ -88,11 +88,23 @@ source ~/.zshrc
 rm ~/.zcompdump*
 ```
 
+#### Auto Save
+
+```sh
+jq '."files.autoSave" |= "afterDelay"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+```
+
 #### Close from CLI
 
 ```sh
 # Darwin
 osascript -e 'quit app "Visual Studio Code"'
+```
+
+#### Disable cSpell
+
+```sh
+jq '."cSpell.diagnosticLevel" |= "Hint"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
 #### Material Theme

@@ -28,35 +28,23 @@ kubectl --help
 
 ### Usage
 
-####
-
 ```sh
+#
 kubectl get cs
-```
 
-#### Config Context
-
-```sh
+# Config Context
 kubectl config current-context
-```
 
-#### Expose
-
-```sh
+# Expose
 kubectl expose deploy nginx --port 80 --type LoadBalancer
-```
 
-#### Proxy
-
-```sh
+# Proxy
 nohup kubectl proxy \
   --address=0.0.0.0 \
   --port=8001 \
   --accept-hosts=.* \
   &> /dev/null &
-```
 
-```sh
 kill -9 "$(lsof -nPi tcp:8001 | grep LISTEN | awk '{print $2}')"
 ```
 
@@ -80,14 +68,14 @@ source <(kubectl completion zsh)
 source <(kubectl completion bash)
 ```
 
-####
+<!-- ####
 
 ```sh
 kubectl exec -it \
   [pod] \
   -c [name] \
   -- /bin/bash
-```
+``` -->
 
 #### Proxy
 
@@ -314,4 +302,23 @@ kubectl config set-context \
   azure
 
 kubectl config view
+```
+
+### Docs
+
+#### Rancher
+
+1. Clusters
+2. Select a Cluster Name
+3. Kubeconfig File
+
+```sh
+#
+~/.kube/config
+
+#
+kubectx
+
+#
+kubectl get pods -n [namespace]
 ```

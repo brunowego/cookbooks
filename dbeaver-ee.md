@@ -22,6 +22,13 @@ sudo apt update
 sudo apt -y install openjdk-8-jre
 ```
 
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y java-1_8_0-openjdk
+```
+
 ### Installation
 
 #### Homebrew

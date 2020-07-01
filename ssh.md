@@ -67,3 +67,10 @@ sudo service sshd restart
 ```sh
 cat ~/.ssh/id_rsa.pub | ssh [username]@[IP] 'cat >> ~/.ssh/authorized_keys'
 ```
+
+<!-- ###
+
+```sh
+sudo sed -i '/^Port 22.*/a Port 8000' /etc/ssh/sshd_config
+sudo systemctl restart sshd
+``` -->

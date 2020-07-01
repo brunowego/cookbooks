@@ -1,9 +1,5 @@
 # Joomla!
 
-## Helm
-
-TODO
-
 ## Docker
 
 ### Running

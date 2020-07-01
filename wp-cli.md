@@ -46,6 +46,9 @@ wp db export
 
 ```sh
 #
+wp core download --path=./wordpress
+
+#
 wp core version
 
 #
@@ -59,6 +62,13 @@ wp core update --version=5.3.0
 #### Config
 
 ```sh
+wp config create \
+  --dbname='wordpress_dev' \
+  --dbuser='wordpress' \
+  --dbpass='wordpress' \
+  --dbhost='127.0.0.1' \
+  --path='./wp'
+
 wp config get
 wp config path
 ```

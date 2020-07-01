@@ -1,7 +1,0 @@
-# Examples
-
-##
-
-```sh
-solr-precreate
-```

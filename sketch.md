@@ -16,12 +16,18 @@ brew cask install sketch
 
 ## Docs
 
-###
+### Grid
 
 1. View -> Canvas -> Show Layout
 2. View -> Canvas -> Layout Settings...
-   - Total Width: 1224px
-   - Offset: 108px
+   - Total Width: 1264px
+   - Offset: 88px
    - Number of Columns: 12
    - Gutter Width: 24px
-   - Column With: 78px
+   - Column With: 81px
+
+<!--
+###
+
+.5*162*3.14
+-->

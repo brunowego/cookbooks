@@ -18,12 +18,6 @@ code \
 code --install-extension FallenMax.mithril-emmet
 ```
 
-## Vagrant
-
-```sh
-code --install-extension marcostazi.VS-code-vagrantfile
-```
-
 ## Python
 
 ```sh

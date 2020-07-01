@@ -1,6 +1,8 @@
 # Apache Kafka
 
 <!--
+How do Kafka ACLs works? https://www.youtube.com/watch?v=4pj6Ewaf7N8
+
 https://medium.com/@sathishjayaram/batch-processing-of-multi-partitioned-kafka-topics-using-spark-with-example-b686676d33f1
 https://www.slideshare.net/KaiWaehner/apache-kafka-open-source-ecosystem-for-machine-learning-at-extreme-scale-apachecon-montreal-sept-2018
 https://www.confluent.io/blog/using-apache-kafka-drive-cutting-edge-machine-learning

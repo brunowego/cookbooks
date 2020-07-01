@@ -91,10 +91,18 @@ docker info | grep 'Insecure Registries' -A 1
 
 ## Issues
 
-###
+<!-- ###
 
 ```log
 Error response from daemon: login attempt to http://127.0.0.1:5000/v2/ failed with status: 400 Bad Request
 ```
 
-TODO
+TODO -->
+
+<!-- ###
+
+```log
+Error response from daemon: Get http://127.0.0.1:5000/v2/: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+```
+
+TODO -->

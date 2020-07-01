@@ -112,7 +112,11 @@ EOF
 #### SSL Support
 
 ```sh
+# Linux
 ldd `which curl` | grep -E '(ssl|crypto)'
+
+# Darwin
+TODO
 ```
 
 ### Issues
