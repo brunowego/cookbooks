@@ -16,5 +16,5 @@ nohup [command] &
 
 ```sh
 # Git ignore
-echo 'nohup.out' >> ~/.gitignore_global
+echo 'nohup*.out' >> ~/.gitignore_global
 ```

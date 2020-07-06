@@ -6,6 +6,8 @@
 wp plugin install breadcrumb-navxt --activate
 ```
 
+## Snippet
+
 ```php
 <?php if ( ! is_home() ) : ?>
     <?php if ( function_exists('bcn_display') ) : ?>

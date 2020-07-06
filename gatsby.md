@@ -45,6 +45,12 @@ docker rm -f gatsby
 brew install gatsby-cli
 ```
 
+#### YARN
+
+```sh
+yarn global add gatsby-cli
+```
+
 #### NPM
 
 ```sh
@@ -56,6 +62,9 @@ npm i -g gatsby-cli
 ```sh
 # Disable GatsbyJS analytics
 gatsby telemetry --disable
+
+# Using Yarn as your Gatsby package manager
+jq '.cli.packageManager |= "yarn"' "$HOME/.config/gatsby/config.json" | sponge "$HOME/.config/gatsby/config.json"
 ```
 
 ### Commands
@@ -70,6 +79,8 @@ gatsby -h
 gatsby new my-default-starter
 
 # or from repo
+gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-blog
 gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
 
 cd my-default-starter

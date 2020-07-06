@@ -24,10 +24,13 @@ brew cask install poedit
    - Sources Paths
      - Paths -> Add Folders
      - Add root theme folder (e.g. `/path/to/wordpress/wp-content/themes/[name]`)
+     - Excluded paths -> Add Folders -> node_modules/
    - Sources Keywords
      - Additional keywords
      - New Item: `__`
      - New Item: `_e`
+     - New Item: `esc_html_e`
+     - New Item: `esc_attr_x`
    - Ok
 3. Catalog -> Update from Source Code -> Save
 
