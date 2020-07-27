@@ -101,10 +101,11 @@ docker run -d \
   docker.io/osixia/openldap:1.2.5
 ```
 
-### Logs
+> Wait! This process take a while.
 
 ```sh
-docker logs -f openldap
+#
+docker logs -f openldap | sed '/slapd starting/ q'
 ```
 
 ### Test
@@ -121,6 +122,7 @@ ldapsearch -x \
 
 ```sh
 docker rm -f openldap
+
 docker volume rm openldap-data openldap-config openldap-certs
 ```
 
@@ -134,16 +136,32 @@ docker volume rm openldap-data openldap-config openldap-certs
 brew install openldap
 ```
 
+### Test
+
+```sh
+nmap -p 389 127.0.0.1
+nmap -p 636 127.0.0.1
+```
+
 ### Commands
 
 #### Search
 
 ```sh
+#
 ldapsearch -x \
   -H ldap://127.0.0.1 \
   -b 'dc=example,dc=com' \
   -D 'cn=admin,dc=example,dc=com' \
   -w admin
+
+#
+ldapsearch -x \
+  -H ldap://127.0.0.1 \
+  -b 'dc=example,dc=com' \
+  -D 'cn=admin,dc=example,dc=com' \
+  -w admin
+  -s sub '(uid=*)' givenName
 ```
 
 #### Password Utility
@@ -203,7 +221,7 @@ uidNumber: 20001
 email: jdoe@example.com
 givenName: John Doe
 loginShell: /bin/bash
-userPassword: {SSHA}BYPf8cP725HiMRg9tOKlAFG0Wyl7Nelh
+userPassword: {SSHA}NmsaBz0PaHz5WiabxIqxaSBsybxKFfph
 EOF
 ```
 

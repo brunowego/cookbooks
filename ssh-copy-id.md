@@ -10,6 +10,13 @@
 brew install ssh-copy-id
 ```
 
+#### YUM
+
+```sh
+yum check-update
+sudo yum -y install openssh-clients
+```
+
 ### Usage
 
 ```sh

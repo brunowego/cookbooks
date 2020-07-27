@@ -9,7 +9,7 @@
 
 ### Installation
 
-Included in Node.js package installers.
+Included in [Node.js](/nodejs.md) package installers.
 
 ### Configuration
 
@@ -53,6 +53,24 @@ npm config set https-proxy $https_proxy
 # delete
 npm config delete http-proxy
 npm config delete https-proxy
+```
+
+### Issues
+
+#### Write Permissions
+
+```log
+npm WARN checkPermissions Missing write access to /usr/local/lib
+```
+
+```sh
+#
+sudo chown -R "$USER" /usr/local
+
+#
+sudo mkdir /usr/local/lib/node_modules
+
+sudo chown -R "$USER" /usr/local/lib/node_modules
 ```
 
 ### Uninstall

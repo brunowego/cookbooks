@@ -11,7 +11,7 @@
 #### Homebrew
 
 ```sh
-brew install ffmpeg
+brew install ffmpeg --with-libvpx --with-libvorbis --with-fdk-aacc
 ```
 
 #### APT
@@ -19,6 +19,18 @@ brew install ffmpeg
 ```sh
 sudo apt update
 sudo apt -y install ffmpeg
+```
+
+#### YUM
+
+```sh
+yum check-update
+
+# Repo: EPEL
+sudo rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
+sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+
+sudo yum -y install ffmpeg ffmpeg-devel
 ```
 
 ### Commands
@@ -41,6 +53,10 @@ dvdbackup  -M -i /dev/sr0 -o ~/Videos/dvd-backup
 
 ## Convert VOB to MPG
 ffmpeg -i VTS_01_1.VOB -c:v copy -c:a copy -f dvd VTS_01_1.MPG
+
+# Convert MP4 to WebM
+ffmpeg -i input-file.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis output-file.webm
+ffmpeg -i input.mp4  -lossless 1  output.webm
 
 # Extract Audio
 ffmpeg -i ./video.mp4 -vn -c:a copy ./output.aac

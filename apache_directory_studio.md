@@ -14,14 +14,15 @@ brew cask install apache-directory-studio
 
 #### Connection
 
-1. Network Parameter
+1. File -> New -> LDAP Browser -> LDAP Connection
+2. Network Parameter
    - Connection name:
    - Hostname:
    - Port: 636
    - Encryption method: Use SSL encryption (ldaps://)
-2. Authentication: Type "Bind DN or user" and "Bind password"
-3. Browser Options: Check "Features -> Fetch operational attributes while browsing"
-4. Finish
+3. Authentication: Type "Bind DN or user" and "Bind password"
+4. Browser Options: Check "Features -> Fetch operational attributes while browsing"
+5. Finish
 
 #### Search
 

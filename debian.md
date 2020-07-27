@@ -3,6 +3,7 @@
 ## References
 
 - [Debian CD](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/)
+- [](https://pkgs.org/)
 
 ## Docker
 

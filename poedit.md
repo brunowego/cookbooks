@@ -27,12 +27,17 @@ brew cask install poedit
      - Excluded paths -> Add Folders -> node_modules/
    - Sources Keywords
      - Additional keywords
-     - New Item: `__`
-     - New Item: `_e`
-     - New Item: `esc_html_e`
-     - New Item: `esc_attr_x`
+       - `__`
+       - `_e`
+       - `_n:1,2`
+       - `_x:1,2c`
+       - `_ex:1,2c`
    - Ok
 3. Catalog -> Update from Source Code -> Save
+
+```txt
+__, _e, _n, _x, _ex, _nx, esc_attr__, esc_attr_e, esc_attr_x, esc_html__, esc_html_e, esc_html_x, _n_noop, _nx_noop, translate_nooped_plural
+```
 
 #### Language Translator
 

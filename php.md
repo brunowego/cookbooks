@@ -136,7 +136,7 @@ sudo sed -i 's|;date.timezone =|date.timezone = America/Sao_Paulo|g' "$(php -i |
 # 7.x
 docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
-  -h php-fpm \
+  -h php \
   --name php \
   docker.io/library/php:7.3
 
@@ -149,7 +149,19 @@ docker run -d \
   docker.io/library/php:7.3-fpm
 ```
 
-## Syntax
+## Tips
+
+### Pretty Dump
+
+```php
+//
+echo '<pre>' . var_export($data, true) . '</pre>';
+
+//
+echo '<pre>';
+var_dump($data);
+echo '</pre>';
+```
 
 ### Serialize
 

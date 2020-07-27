@@ -157,6 +157,10 @@ kubectl delete namespace php-fpm --grace-period=0 --force
 
 ## Docker
 
+### Dependencies
+
+- [FastCGI](/cgi-fcgi.md)
+
 ### Running
 
 ```sh

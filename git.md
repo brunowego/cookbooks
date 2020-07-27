@@ -103,6 +103,12 @@ git ls-files -v | grep '^h'
 
 ### Tips
 
+#### Run Push Subdirectories
+
+```sh
+find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c 'cd "{}" && git push' \;
+```
+
 <!-- ####
 
 ```sh

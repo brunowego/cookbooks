@@ -437,11 +437,17 @@ mysqlimport \
 
 ### Tips
 
-#### Diff
+#### Git ignore
 
-<!-- https://stackoverflow.com/questions/225772/compare-two-mysql-databases -->
+```sh
+echo 'dump*.sql' >> ~/.gitignore_global
+```
 
-TODO
+<!-- #### Diff
+
+https://stackoverflow.com/questions/225772/compare-two-mysql-databases
+
+TODO -->
 
 #### Proxy NGINX
 

@@ -1,5 +1,50 @@
 # Apache HTTP Server (HTTPd)
 
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h httpd \
+  -v httpd-config:/usr/local/apache2/conf \
+  -p 8080:80 \
+  --name httpd \
+  --network workbench \
+  docker.io/library/httpd:2.4-alpine
+```
+
+### Reverse Proxy
+
+```sh
+docker exec -i httpd /bin/sh << \EOSHELL
+sed -i '/proxy_module/ s/^#//; /proxy_http_module/ s/^#//; /rewrite_module/ s/^#//' ./conf/httpd.conf
+
+cat << EOF >> ./conf/httpd.conf
+ProxyPass / http://docker.for.mac.localhost:8080/
+ProxyPassReverse / http://docker.for.mac.localhost:8080/
+EOF
+EOSHELL
+```
+
+```sh
+docker restart httpd
+```
+
+### Remove
+
+```sh
+docker rm -f httpd
+```
+
 ## CLI
 
 ### Dependencies
@@ -94,6 +139,16 @@ sudo systemctl enable --now httpd
 ```
 
 ### Tips
+
+<!-- ####
+
+```sh
+httpd -f <(cat << EOF
+Listen 8000
+EOF
+) \
+  -DFOREGROUND
+``` -->
 
 #### PHP-FPM
 

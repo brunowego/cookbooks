@@ -13,10 +13,11 @@ https://pagely.com/blog/react-js-wordpress-rest-api/
 
 - [Dashicons](https://developer.wordpress.org/resource/dashicons/#sort)
 - [Function Reference/register post type](https://codex.wordpress.org/Function_Reference/register_post_type)
+- [Child Themes and Templates](https://wpadverts.com/documentation/child-themes-and-templates/)
 
 ## Scripts
 
-- [Wordpress BEM Menu](https://github.com/roryashfordbentley/Wordpress-Bem-Menu)
+- [WordPress BEM Menu](https://github.com/roryashfordbentley/Wordpress-Bem-Menu)
 
 ## Helm
 
@@ -147,6 +148,7 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h wordpress \
   -e WORDPRESS_DB_HOST='wordpress-mysql' \
+  -e WORDPRESS_DB_PORT='3306' \
   -e WORDPRESS_DB_USER='wordpress' \
   -e WORDPRESS_DB_PASSWORD='wordpress' \
   -e WORDPRESS_DB_NAME='wordpress_dev' \
@@ -155,7 +157,7 @@ docker run -d \
   -p 8080:80 \
   --name wordpress \
   --network workbench \
-  docker.io/library/wordpress:5.3.2-apache
+  docker.io/library/wordpress:5.4.2-apache
 ```
 
 > Wait! This process take a while.
@@ -177,7 +179,7 @@ docker run -d \
   -p 9000:9000 \
   --name wordpress \
   --network workbench \
-  docker.io/library/wordpress:5.3.2-fpm-alpine
+  docker.io/library/wordpress:5.4.2-fpm-alpine
 
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \

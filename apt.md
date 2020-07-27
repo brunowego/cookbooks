@@ -8,67 +8,47 @@ apt -h
 
 ## Usage
 
-### Update
-
 ```sh
+# Update
 sudo apt update
-```
 
-### Install
+# Download
+apt download [package]
 
-```sh
+# Repo list
+grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*
+
+# Install
 sudo apt -y install [package]
-```
 
-### Upgrade
-
-```sh
+# Upgrade
 sudo apt -y upgrade
-```
 
-### Search
-
-```sh
+# Search
 apt search [package]
-```
 
-### Info
-
-```sh
+# Info
 apt show [package]
-```
 
-### Show Dependencies
-
-```sh
+# Show Dependencies
 apt rdepends [package]
-```
 
-### Remove
-
-```sh
+# Remove
 sudo apt remove [package]
 
 # Purge
 sudo apt remove --purge [package]
-```
 
-### Clean
-
-```sh
+# Clean
 sudo apt clean
 
 # Remove lists
 sudo rm -r /var/lib/apt/lists/*
-```
 
-### List
-
-```sh
-# Installed
+# List Installed
 apt list --installed
 
-# Upgradable
+# List Upgradable
 apt list --upgradable
 ```
 

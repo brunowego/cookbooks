@@ -153,10 +153,14 @@ sudo sed -i 's/^#include_only=.*/include_only=.com/' /etc/yum/pluginconf.d/faste
 sudo rm /var/cache/yum/x86_64/7/timedhosts*
 ```
 
-### Enable Repositories
+### Enable/Disable Repositories
 
 ```sh
-sudo sed -ie '/^enabled=/ s/0/1/g' /etc/yum.repos.d/CentOS-Base.repo
+# Enable
+sudo sed -ie '/^enabled=/ s/0/1/g' /etc/yum.repos.d/*.repo
+
+# Disable
+sudo sed -ie '/^enabled=/ s/1/0/g' /etc/yum.repos.d/*.repo
 ```
 
 ## Logs

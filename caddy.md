@@ -55,6 +55,7 @@ docker volume rm caddy-data
 - [FastCGI](https://caddyserver.com/v1/docs/fastcgi)
 - [COS](https://caddyserver.com/v1/docs/http.cors)
 - [Basic Auth](https://caddyserver.com/v1/docs/basicauth)
+- [Reverse Proxy](https://caddyserver.com/docs/quick-starts/reverse-proxy)
 
 ### Installation
 
@@ -82,33 +83,39 @@ choco install -y caddy
 ### Commands
 
 ```sh
-caddy -h
+caddy help
 ```
 
 ### Running
 
 ```sh
-caddy -root /var/www/html
+# Linux
+caddy start
 
 #
-sudo hostess add app.example.com 127.0.0.1
+# sudo hostess add app.example.com 127.0.0.1
 
-caddy -conf <(cat << EOF
-  app.example.com
-  root /var/www/html
-  tls off
-EOF
-)
+# caddy -conf <(cat << EOF
+#   app.example.com
+#   root /var/www/html
+#   tls off
+# EOF
+# )
 
 # SSL with Let's Encrypt
-caddy \
-  -agree \
-  -email admin@example.com \
-  -host app.example.com \
-  -root /var/www/html
+# caddy \
+#   -agree \
+#   -email admin@example.com \
+#   -host app.example.com \
+#   -root /var/www/html
+
+# caddy reverse-proxy \
+#   --from http://127.0.0.1:8080 \
+#   --insecure \
+#   --to 127.0.0.1:8081
 ```
 
-### Configuration
+<!-- ### Configuration
 
 ```sh
 # Homebrew
@@ -135,7 +142,18 @@ example.local:8443 {
   # tls /etc/ssl/certs/example.com/server/server.pem /etc/ssl/certs/example.com/server/server.key
 }
 EOF
-```
+
+#
+# :8000
+
+# reverse_proxy 127.0.0.1:8080
+
+# Linux
+
+/etc/caddy/caddy.conf
+
+sudo systemctl restart caddy
+``` -->
 
 ### Service
 
@@ -155,7 +173,7 @@ sudo systemctl enable --now caddy
 code --install-extension zamerick.vscode-caddyfile-syntax
 ```
 
-#### PHP-FPM
+<!-- #### PHP-FPM
 
 ```sh
 phpbrew fpm start
@@ -175,11 +193,11 @@ caddy -conf <(cat << EOF
 }
 EOF
 )
-```
+``` -->
 
-### Logs
+<!-- ### Logs
 
 ```sh
 tail -f /var/log/caddy/access.log
 tail -f /var/log/caddy/error.log
-```
+``` -->

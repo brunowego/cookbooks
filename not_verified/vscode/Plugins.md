@@ -118,15 +118,6 @@ code --install-extension DavidWang.ini-for-vscode
 code --install-extension ldez.ignore-files
 ```
 
-## mermaid
-
-```sh
-code \
-  --install-extension bierner.markdown-mermaid \
-  --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
-
-```
-
 ## Bazel
 
 ```sh

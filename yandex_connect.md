@@ -27,3 +27,10 @@
 
 https://passport.yandex.com/profile
 -->
+
+### Configure IMAP-based client
+
+| Mail | Server | Protection | Port |
+| --- | --- | --- | --- |
+| Incoming | imap.yandex.com | SSL | 993 |
+| Outgoing | smtp.yandex.com | SSL | 465 |

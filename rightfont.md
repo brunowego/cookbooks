@@ -12,12 +12,14 @@ brew cask install rightfont
 
 ### Tips
 
-####
+<!-- ####
 
 ```sh
-cp ~/Library/Application\ Support/Adobe/CoreSync/plugins/livetype/.r/.* ~/path/to/font/name
+mkdir ~/Desktop/Font
 
-cd ~/path/to/font/name
+cp ~/Library/Application\ Support/Adobe/CoreSync/plugins/livetype/.r/.* ~/Desktop/Font
 
-find . -iname '.*' -exec realpath {} \; | rename 's/\.(.*)/$1/'
-```
+cd ~/Desktop/Font
+
+find . -maxdepth 1 -type f -iname '.*' -exec realpath {} \; | rename 's/\.(.*)/$1/'
+``` -->

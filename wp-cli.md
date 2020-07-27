@@ -30,6 +30,12 @@ wp help
 
 ### Usage
 
+<!-- ####
+
+```sh
+wp option delete core_updater.lock
+``` -->
+
 #### Database
 
 ```sh
@@ -46,7 +52,11 @@ wp db export
 
 ```sh
 #
-wp core download --path=./wordpress
+wp core download \
+  --path='wp' \
+  --locale='pt_BR' \
+  --version='5.3.2' \
+  --skip-content
 
 #
 wp core version
@@ -207,6 +217,12 @@ wp scaffold taxonomy \
   --prompt
 ```
 
+##### Media
+
+```sh
+wp media regenerate --yes
+```
+
 ##### Block
 
 ```sh
@@ -284,3 +300,13 @@ rm ~/.zcompdump*
 ```sh
 wp eval 'echo "[INFO]\t" . wp_login_url() . "\n";'
 ```
+
+### Issues
+
+#### WebP Converter
+
+```log
+WebP Converter for Media (Error): Server configuration: "imagewebp" function is not available.
+```
+
+TODO

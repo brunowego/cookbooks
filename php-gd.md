@@ -28,7 +28,8 @@ phpbrew -d ext install \
     --with-zlib-dir=$(brew --prefix zlib) \
     --with-jpeg-dir=$(brew --prefix libjpeg) \
     --with-png-dir=$(brew --prefix libpng) \
-    --with-freetype-dir=$(brew --prefix freetype)
+    --with-freetype-dir=$(brew --prefix freetype) \
+    --with-webp-dir==$(brew --prefix webp)
 
 # Linux
 phpbrew -d ext install \
@@ -45,7 +46,7 @@ php -m | grep gd
 ```
 
 ```sh
-php -i | grep '^gd$' -A 14
+php -i | grep '^gd$' -A 15
 ```
 
 ## Service

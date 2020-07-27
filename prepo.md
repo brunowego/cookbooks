@@ -1,8 +1,12 @@
 # Prepo
 
-## Installation
+**Keywords**: Icon Design
 
-### MAS
+## App
+
+### Installation
+
+#### MAS
 
 ```sh
 mas install 476533227

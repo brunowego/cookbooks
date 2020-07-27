@@ -1,5 +1,9 @@
 # PHP LDAP
 
+## Dependencies
+
+- [OpenLDAP](/openldap.md)
+
 ## Installation
 
 ### YUM
@@ -22,6 +26,22 @@ phpbrew -d ext install \
   ldap \
   -- \
     --with-ldap=$(brew --prefix openldap)
+```
+
+### Dockerfile
+
+```sh
+cat << EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t example/php-apache-ldap -
+FROM docker.io/library/php:7.3-apache
+
+RUN apt update && \
+    apt --no-install-recommends -y install libldap2-dev=2.4.47+dfsg-3+deb10u2 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
+    docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ && \
+    docker-php-ext-install ldap
+
+EOF
 ```
 
 ## Verify

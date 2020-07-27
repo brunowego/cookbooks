@@ -4,8 +4,8 @@
 
 - [Aspect Ratio](https://www.w3schools.com/howto/howto_css_aspect_ratio.asp)
 - [Emulate borders with inset box shadows](https://makandracards.com/makandra/12019-css-emulate-borders-with-inset-box-shadows)
-- [HTML Arrows](https://www.toptal.com/designers/htmlarrows/)
-- [HTML Codes Table](https://www.ascii.cl/htmlcodes.htm)
+- [Color Blender](https://meyerweb.com/eric/tools/color-blend/#:::hex)
+- [CSS Beautifier](https://www.freeformatter.com/css-beautifier.html)
 
 <!-- https://bennettfeely.com/clippy/ -->
 
@@ -36,6 +36,7 @@ TODO
 <!--
 https://www.treinaweb.com.br/blog/flexbox-ou-css-grid/
 https://imasters.com.br/css/adeus-flexbox-bem-vindo-css-grid-layout
+
 -->
 
 <!-- ##
@@ -50,6 +51,7 @@ https://imasters.com.br/css/adeus-flexbox-bem-vindo-css-grid-layout
 | 400 | Regular |
 | 450 | Book |
 | 500 | Medium |
+| 600 | Semi-bold |
 | 700 | Bold |
 | 800 | Black |
 | 900 | Extra | -->

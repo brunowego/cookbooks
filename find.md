@@ -24,12 +24,12 @@ pkill find
 find . -name \*.[extension]
 ```
 
-###
+<!-- ###
 
 ```sh
 find . -type f -exec /bin/sh -c 'echo "{}"' \;
 find . -exec /bin/sh -c {}/"${name}" \;
-```
+``` -->
 
 ### Move all files from subfolders to parent folder
 

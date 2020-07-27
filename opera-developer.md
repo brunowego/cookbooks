@@ -4,6 +4,12 @@
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew cask install opera-developer
+```
+
 <!-- #### APT
 
 ```sh

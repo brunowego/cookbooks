@@ -46,6 +46,9 @@ nohup kubectl proxy \
   &> /dev/null &
 
 kill -9 "$(lsof -nPi tcp:8001 | grep LISTEN | awk '{print $2}')"
+
+# Copy
+kubectl cp ./path/to/folder/or/file [namespace]/[podname]:/path/to/where/save
 ```
 
 ### Tips

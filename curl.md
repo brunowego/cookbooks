@@ -124,6 +124,14 @@ TODO
 <!-- ####
 
 ```log
+curl: (35) error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+```
+
+TODO -->
+
+<!-- ####
+
+```log
 ```
 
 ```sh

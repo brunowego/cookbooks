@@ -43,7 +43,16 @@ sudo service sshd restart
 env | grep -i _proxy= | sort
 ```
 
-## Tips
+### ProxyJump
+
+```sh
+ssh -J [remote] [another-remote]
+```
+
+```sh
+Host *
+  ProxyJump []
+```
 
 ### Enable Darwin
 
@@ -72,5 +81,22 @@ cat ~/.ssh/id_rsa.pub | ssh [username]@[IP] 'cat >> ~/.ssh/authorized_keys'
 
 ```sh
 sudo sed -i '/^Port 22.*/a Port 8000' /etc/ssh/sshd_config
+
 sudo systemctl restart sshd
 ``` -->
+
+## Issues
+
+### Bad owner or permissions
+
+```log
+Bad owner or permissions on /home/[username]/.ssh/config
+```
+
+```sh
+#
+chown "$USER" ~/.ssh/config
+
+#
+chmod 600 ~/.ssh/config
+```
