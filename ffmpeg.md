@@ -5,6 +5,7 @@
 ### References
 
 - [Capturing your Desktop / Screen Recording](https://trac.ffmpeg.org/wiki/Capture/Desktop)
+- [Recommended Settings for VOD](https://developers.google.com/media/vp9/settings/vod/)
 
 ### Installation
 
@@ -55,8 +56,18 @@ dvdbackup  -M -i /dev/sr0 -o ~/Videos/dvd-backup
 ffmpeg -i VTS_01_1.VOB -c:v copy -c:a copy -f dvd VTS_01_1.MPG
 
 # Convert MP4 to WebM
-ffmpeg -i input-file.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis output-file.webm
-ffmpeg -i input.mp4  -lossless 1  output.webm
+find ./ -name '*.mp4' -exec bash -c '$(cat << EOF
+ffmpeg \
+  -i $0 \
+  -vf scale=720:-1 \
+  -b:v 2M \
+  -c:v libvpx \
+  -c:a libvorbis \
+  -threads 8 \
+  -speed 4 \
+  ${0%%.mp4}.webm
+EOF
+)' {} \;
 
 # Extract Audio
 ffmpeg -i ./video.mp4 -vn -c:a copy ./output.aac
@@ -87,3 +98,13 @@ ffmpeg \
   -frames 1 \
   /tmp/out.jpg
 ```
+
+### Issues
+
+<!-- ####
+
+```log
+Unknown encoder 'libopus'
+```
+
+TODO -->

@@ -2,20 +2,27 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h netdata \
-  -p 19999:19999 \
   -v /proc:/host/proc:ro \
   -v /sys:/host/sys:ro \
   -v /var/run/docker.sock:/var/run/docker.sock:ro \
   --name netdata \
   --cap-add SYS_PTRACE \
   --security-opt apparmor=unconfined \
-  netdata/netdata:v1.13.0
+  --network host \
+  docker.io/netdata/netdata:v1.23.2
 ```
 
 ```sh
