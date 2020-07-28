@@ -34,6 +34,13 @@ sudo yum -y install postgresql-server postgresql-contrib
 choco install -y postgresql
 ```
 
+#### APK
+
+```sh
+sudo apk update
+sudo apk add postgresql
+```
+
 ### Initialize
 
 ```sh
@@ -219,10 +226,18 @@ kubectl get secret postgresql \
 
 ```sh
 helm delete postgresql --purge
+
 kubectl delete namespace postgresql --grace-period=0 --force
 ```
 
 ## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
 
 ### Running
 
@@ -231,12 +246,13 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postgres \
   -e POSTGRES_PASSWORD='postgres' \
-  -e POSTGRES_USER='user' \
-  -e POSTGRES_PASSWORD='pass' \
+  -e POSTGRES_USER='postgres' \
+  -e POSTGRES_PASSWORD='postgres' \
   -e POSTGRES_DB='dev' \
   -v postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -244,5 +260,6 @@ docker run -d \
 
 ```sh
 docker rm -f postgres
+
 docker volume rm postgres-data
 ```

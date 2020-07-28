@@ -10,14 +10,31 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
+# Debian 10
 docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
   -h python \
   --name python \
+  --network workbench \
   docker.io/library/python:3.7 /bin/bash
+
+# Alpine 3
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h python \
+  --name python \
+  --network workbench \
+  docker.io/library/python:3.7-alpine /bin/sh
 ```
 
 ## CLI
