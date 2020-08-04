@@ -39,7 +39,7 @@ sudo rm -r /home/[username]
 ## Details
 
 ```sh
-getent passwd $USER
+getent passwd "$USER"
 ```
 
 ## Show Current

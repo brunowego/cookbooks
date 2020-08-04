@@ -97,21 +97,12 @@ openssl version -a
 
 #
 echo -n 'Pa$$w0rd!' | openssl md5
-```
 
-#### Generate
-
-##### Self-signed Certificate
-
-```sh
+# Generate Self-signed Certificate
 sudo mkdir -p /etc/ssl/{certs,private}/example
-```
 
-```sh
 sudo chmod a+w /etc/ssl/{certs,private}/example
-```
 
-```sh
 openssl req \
   -out '/etc/ssl/certs/example/root-ca.crt' \
   -nodes \
@@ -123,15 +114,9 @@ openssl req \
   -sha256 \
   -days 365 \
   -extensions san
-```
 
-```sh
 ls /etc/ssl/{certs,private}/example
-```
 
-####
-
-```sh
 # Certificate signing request (CSR) for an existing private key
 openssl req \
   -out [filename].csr \
@@ -144,84 +129,53 @@ openssl x509 \
   -in [filename].crt \
   -out [filename].csr \
   -signkey [filename].key
-```
 
-### Show
-
-```sh
+# Show
 openssl x509 \
   -in '/etc/ssl/certs/example/root-ca.crt' \
   -noout \
   -text
-```
 
-#### Remove
-
-```sh
-# Passphrase from a private key
+# Remove Passphrase from a private key
 openssl rsa \
   -in [filename].pem \
   -out [filename].pem
-```
 
-#### List certs
-
-```sh
+# List certs
 openssl s_client \
   -connect [hostname]:443 \
   -showcerts
-```
 
-#### Export
-
-```sh
+# Export
 openssl s_client \
   -connect [hostname]:443 \
   -showcerts \
   -servername [hostname] < /dev/null 2> /dev/null | \
     openssl x509 -outform PEM > [filename].pem
-```
 
-#### Convert
-
-##### PEM to DER/CRT
-
-```sh
+# Convert PEM to DER/CRT
 openssl x509 \
   -inform PEM \
   -in [filename].pem \
   -outform DER \
   -out [filename].[der|crt]
-```
 
-##### DER to PEM
-
-```sh
+# Convert DER to PEM
 openssl x509 \
   -inform DER \
   -in [filename].der
   -outform PEM \
   -out [filename].pem
-```
 
-##### CRT and KEY to PEM
-
-```sh
+# Convert CRT and KEY to PEM
 cat [filename].crt [filename].key > [filename].pem
-```
 
-#### Trust
-
-```sh
-# Darwin
+# Trust Darwin
 sudo security add-trusted-cert -d \
   -r trustRoot \
   -k /Library/Keychains/System.keychain [filename].der
-```
 
-#### Test
-
-```sh
+# Test
 wget https://[hostname] \
   --no-check-certificate \
   --ca-certificate=[filename].pem
@@ -229,21 +183,15 @@ wget https://[hostname] \
 wget https://[hostname] --ca-certificate=[filename].pem
 ```
 
-### Interpreter
+### Tips
 
-#### Python
-
-```sh
-python
-```
+#### REPL Python
 
 ```python
 import ssl
 ssl.OPENSSL_VERSION
 exit()
 ```
-
-### Tips
 
 #### Checking
 
@@ -323,6 +271,7 @@ dyld: Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
 ```
 
 ```sh
+# Darwin
 brew install openssl
 brew reinstall openssl@1.1
 

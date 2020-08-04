@@ -6,6 +6,10 @@
 
 ## Tips
 
+### WSL
+
+TODO
+
 ### Create a bootable USB stick
 
 #### Darwin
@@ -20,8 +24,8 @@
    - Continue
 4. Quit
 
-###
+<!-- ###
 
 1. Settings
 2. System
-3.
+3. -->

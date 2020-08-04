@@ -48,8 +48,8 @@ ln -s "$HOME/Library/Application Support/Code/User/settings.json" "$HOME/.config
 
 # Git Ignore Global
 cat << EOF >> ~/.gitignore_global
-.settings
-.vscode
+/.settings
+/.vscode
 EOF
 ```
 

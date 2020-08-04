@@ -24,12 +24,12 @@ sudo apt update
 sudo apt -y install zsh curl git
 ```
 
-<!-- #### Zypper
+#### Zypper
 
 ```sh
 sudo zypper refresh
-sudo zypper install -y git
-``` -->
+sudo zypper install -y zsh git curl
+```
 
 ### Installation
 

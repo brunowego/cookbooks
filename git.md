@@ -51,9 +51,7 @@ sudo apk add git
 choco install -y git
 ```
 
-### Using
-
-#### Tag
+### Usage
 
 ```sh
 # Create
@@ -79,18 +77,11 @@ git tag -d [version]
 
 # Remote
 git push --delete origin [version]
-```
 
-#### Update Index
-
-```sh
+# Update Index
 git update-index --assume-unchanged [file]
 git update-index --no-assume-unchanged [file]
-```
 
-#### Unchanged
-
-```sh
 # Prevent to receive changed files
 git update-index --no-assume-unchanged [file]
 

@@ -8,6 +8,12 @@
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install bash
+```
+
 #### YUM
 
 ```sh
@@ -22,10 +28,11 @@ sudo apk update
 sudo apk add bash
 ```
 
-#### Homebrew
+#### Zypper
 
 ```sh
-brew install bash
+sudo zypper refresh
+sudo zypper install -y bash
 ```
 
 ### Configuration
@@ -65,6 +72,7 @@ bash --version | head -1
 
 ```sh
 tee -a ~/.profile << EOF
+
 if [ -n "$BASH_VERSION" ]; then
     # Include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
@@ -83,6 +91,28 @@ rm -fR ~/.bashrc
 ```sh
 sudo cp /root/.bashrc ~
 ```
+
+### Issues
+
+#### LDAP Authentication
+
+```log
+chsh: user 'xxx' does not exist in /etc/passwd
+```
+
+```sh
+#
+ssh [host] -t 'zsh --login'
+
+#
+
+```
+
+<!-- ####
+
+```sh
+echo "${USER}:x:$(id -u):$(id -g):/home/${USER}:${USER}:/bin/bash" | sudo tee -a /etc/passwd
+``` -->
 
 ## Docker
 

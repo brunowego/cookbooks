@@ -46,3 +46,17 @@ choco install -y sourcetree
 1. Preferences
 2. General
 3. Keep bookmarks closed on startup -->
+
+### Issues
+
+#### Authentication Required
+
+```log
+Authentication Required
+For URL: https://[]/[].git
+```
+
+1. Sourcetree
+2. Preferences...
+   - Git tab
+   - Git Version block -> Use System Git

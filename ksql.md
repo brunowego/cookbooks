@@ -1,6 +1,7 @@
 # KSQL
 
 <!--
+https://www.udemy.com/course/kafka-ksql/
 https://github.com/Squiggle/kafka-ksql-postgres
 
 https://github.com/bjoernrost/mysql-ksql-etl-demo

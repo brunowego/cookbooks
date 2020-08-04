@@ -65,7 +65,7 @@ sudo su - "$USER"
 
 ```sh
 # Git ignore
-echo '.python-version' >> ~/.gitignore_global
+echo '/.python-version' >> ~/.gitignore_global
 ```
 
 ### Commands

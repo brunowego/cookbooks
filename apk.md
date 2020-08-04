@@ -1,56 +1,42 @@
 # Alpine Package Keeper (APK)
 
-## Commands
-
-### Update
+## Usage
 
 ```sh
+# Update
 sudo apk update
-```
 
-### Install
-
-```sh
+# Install
 sudo apk add [package]
-```
 
-#### Without cache
-
-```sh
+# Without cache
 sudo apk add -q --no-cache [package]
-```
 
-### Info
-
-```sh
+# Info
 sudo apk info [package]
-```
 
-### Search
-
-```sh
+# Search
 sudo apk search [package]
-```
 
-### Upgrade
-
-```sh
+# Upgrade
 sudo apk upgrade
-```
 
-### Delete
-
-```sh
+# Delete
 sudo apk del [package]
-```
 
-### Clean
-
-```sh
+# Clean
 sudo apk clean all
 ```
 
 ## Tips
+
+### Repositories
+
+```sh
+cat << EOF | sudo tee /etc/apk/repositories
+
+EOF
+```
 
 ### Dockerfile
 

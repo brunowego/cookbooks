@@ -4,20 +4,24 @@ Bucket of cookbooks to help install and set softwares.
 
 ## Terms
 
-- [Free and Open-Source Software (FOSS)](https://en.wikipedia.org/wiki/Free_and_open-source_software)
-- [Relational Database Service (RDS)]()
+- [Analytical Base Table (ABT) is](https://en.wikipedia.org/wiki/Analytical_base_table)
 - [Backend for Frontend (BFF)](https://samnewman.io/patterns/architectural/bff/)
 - [Backend for Frontend (BFF)](https://samnewman.io/patterns/architectural/bff/)
 - [Bare-metal server](https://en.wikipedia.org/wiki/Bare-metal_server)
+- [Change Data Capture (CDC)]()
 - [Chaos engineering (Chaos Monkey)](https://en.wikipedia.org/wiki/Chaos_engineering)
 - [Classless Inter-Domain Routing (CIDR)](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 - [Cloud Provider/Cloud Computing](https://en.wikipedia.org/wiki/Cloud_computing)
+- [Command qQuery Responsibility Segregation (CQRS)](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_query_responsibility_segregation)
 - [Common Gateway Interface (CGI)](https://en.wikipedia.org/wiki/Common_Gateway_Interface)
 - [Common Workflow Language (CWL)](https://www.commonwl.org/)
 - [Containers as a Service (CaaS)]()
 - [Distributed Cloud Operating System (DC/OS)]()
 - [Enhanced Entity–Relationship (EER)](https://en.wikipedia.org/wiki/Enhanced_entity%E2%80%93relationship_model)
 - [Estimated Time of Arrival (ETA)]()
+- [Five Ws (5WH)]()
+- [Free and Open-Source Software (FOSS)](https://en.wikipedia.org/wiki/Free_and_open-source_software)
+- [identity provider (IdP)](https://en.wikipedia.org/wiki/Identity_provider)
 - [Infrastructure as a service (IaaS)](https://en.wikipedia.org/wiki/Infrastructure_as_a_service)
 - [Key Performance Indicators (KPI)](https://en.wikipedia.org/wiki/Performance_indicator)
 - [Mobile backend as a service (MBaaS)](https://en.wikipedia.org/wiki/Mobile_backend_as_a_service)
@@ -27,6 +31,8 @@ Bucket of cookbooks to help install and set softwares.
 - [Operations as a Service (OaaS)]()
 - [Platform as a service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service)
 - [Read-eval-print loop (REPL)](https://en.wikipedia.org/wiki/Read-eval-print_loop)
+- [Relational Database Service (RDS)]()
+- [Server-side Rendering (SSR)]()
 - [Software as a service (SaaS)](https://en.wikipedia.org/wiki/Software_as_a_service)
 - [Top-Level Domain (TLD)](https://en.wikipedia.org/wiki/Top-level_domain)
 - [Uniform Resource Identifier (URI)](https://en.wikipedia.org/wiki/Uniform_resource_identifier)
@@ -34,11 +40,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Uniform Resource Name (URN)](https://en.wikipedia.org/wiki/Uniform_resource_name)
 - [Universal Plug and Play (UPnP_](https://en.wikipedia.org/wiki/Universal_Plug_and_Play)
 - [Web Server Gateway Interface (WSGI)](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)
-- [Change Data Capture (CDC)]()
-- [identity provider (IdP)](https://en.wikipedia.org/wiki/Identity_provider)
-- [Command qQuery Responsibility Segregation (CQRS)](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_query_responsibility_segregation)
-- [Server-side Rendering (SSR)]()
-- [Five Ws (5WH)]()
+- [Public Key Infrastructure (PKI)]()
 
 ## Cheat Sheets
 
