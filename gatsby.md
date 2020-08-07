@@ -54,7 +54,7 @@ yarn global add gatsby-cli
 #### NPM
 
 ```sh
-npm i -g gatsby-cli
+npm install gatsby-cli -g
 ```
 
 ### Configuration

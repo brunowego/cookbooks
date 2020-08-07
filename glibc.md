@@ -2,6 +2,13 @@
 
 ## Installation
 
+### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y glibc
+```
+
 ### Source
 
 #### Dependencies

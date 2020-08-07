@@ -17,3 +17,18 @@
 java -version 2>&1 | tail -1
 javac -version 2>&1 | tail -1
 ```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension vscjava.vscode-java-pack
+```
+
+```sh
+# Darwin
+osascript -e 'quit app "Visual Studio Code"'
+
+code --disable-extension vscjava.vscode-java-pack
+```

@@ -65,7 +65,7 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 
 ```sh
 # PHPBrew
-source ~/.phpbrew/bashrc
+source "$HOME/.phpbrew/bashrc"
 ```
 
 ```sh

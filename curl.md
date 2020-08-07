@@ -82,16 +82,37 @@ curl -h
 
 ### Usage
 
-#### Insecure SSL
-
 ```sh
+# Insecure SSL
 curl -Ik https://[hostname]
-```
 
-```sh
 curl -Ik \
   --resolve [hostname]:[ip] \
   https://[hostname]
+
+# Upload File
+curl -F 'file=@path/to/local/file' https://[hostname]
+
+# Multiple files
+curl -F 'fileX=@/path/to/fileX' -F 'fileY=@/path/to/fileY' https://[hostname]
+
+# Array of Files
+curl -F 'files[]=@/path/to/fileX' -F 'files[]=@/path/to/fileY' https://[hostname]
+
+curl \
+  -X POST \
+  -H 'Content-Type: multipart/form-data' \
+  -H 'Accept: application/json' \
+  -H 'Authorization: <<Removed>>' \
+  -F file=@"/home/xxx/Desktop/customers.json" \
+  'API_SERVER_URL'
+
+curl \
+  -X POST \
+  -H "Content-Type:application/json" \
+  -H "X-Auth:AuthKey" \
+  --data @hello.json \
+  Your_url
 ```
 
 ### Tips

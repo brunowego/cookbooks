@@ -30,6 +30,16 @@ sudo yum -y install maven
 mvn -h
 ```
 
+### Usage
+
+```sh
+#
+mvn install
+
+#
+mvn package
+```
+
 ### Tips
 
 #### Proxy
@@ -118,5 +128,6 @@ rm -r ~/.m2
 ```sh
 # Homebrew
 brew uninstall maven
+
 rm -fR ~/.m2
 ```

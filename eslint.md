@@ -10,6 +10,12 @@
 brew install eslint
 ```
 
+### NPM
+
+```sh
+npm install eslint -D
+```
+
 ### Commands
 
 ```sh
@@ -19,24 +25,26 @@ eslint -h
 #### Configuration
 
 ```sh
-touch .eslintrc.json || exit
-```
-
-```json
+cat << EOF > .eslintrc.json
 {
-  "ecmaFeatures": {
-    "modules": true
+  "root": true,
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 8
   },
   "env": {
-    "es6": true
+    "node": true
   },
   "rules": {
-    "quotes": [
-      2,
-      "single"
-    ]
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "max-len": ["error", 80],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
   }
 }
+
+EOF
 ```
 
 ### Tips

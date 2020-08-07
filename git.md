@@ -128,6 +128,12 @@ source ~/.zshrc
 rm ~/.zcompdump*
 ```
 
+#### Pull Rebase
+
+```sh
+git config --global pull.rebase false
+````
+
 #### Version
 
 ```sh

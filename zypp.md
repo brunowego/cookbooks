@@ -9,6 +9,13 @@
 zypper help
 ```
 
+## Usage
+
+```sh
+#
+zypper refresh
+```
+
 ## Tips
 
 ### Repository

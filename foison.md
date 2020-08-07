@@ -3,6 +3,7 @@
 ## Util
 
 - [Line Font](https://martenjacobs.github.io/LineFont/linefont.html)
+- [True single-stroke-font text creator](https://www.templatemaker.nl/singlelinetext/)
 
 ## Plotters
 

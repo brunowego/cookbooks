@@ -63,6 +63,22 @@ docker --help
 
 ### Tips
 
+#### Shell
+
+```sh
+#
+docker run -i --rm \
+  ...
+  [repo] /bin/sh -c '[command]'
+
+#
+docker run -i --rm \
+  ...
+  [repo] /bin/sh << \EOSHELL
+
+EOSHELL
+```
+
 #### Alter Running Container
 
 ```sh

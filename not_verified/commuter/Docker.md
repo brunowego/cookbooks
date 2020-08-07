@@ -14,7 +14,7 @@ FROM docker.io/node:10.14-alpine
 
 ENV COMMUTER_LOCAL_STORAGE_BASEDIRECTORY /notebooks
 
-RUN npm i -g @nteract/commuter@5.8.0
+RUN npm i @nteract/commuter@5.8.0 -g
 
 EXPOSE 4000
 

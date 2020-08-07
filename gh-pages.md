@@ -7,7 +7,7 @@
 #### NPM
 
 ```sh
-npm i -D gh-pages
+npm install gh-pages -D
 ```
 
 ### Configuration
