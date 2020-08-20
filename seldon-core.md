@@ -102,7 +102,7 @@ docker run -it --rm \
 #### PIP
 
 ```sh
-pip install seldon-core
+pip install -U seldon-core
 ```
 
 ### Commands

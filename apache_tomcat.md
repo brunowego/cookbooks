@@ -1,5 +1,15 @@
 # Apache Tomcat
 
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install tomcat
+```
+
 ## Docker
 
 ### Running
@@ -10,7 +20,7 @@ docker run -d \
   -h tomcat \
   -p 8080:8080 \
   --name tomcat \
-  tomcat:9-jdk11-slim
+  docker.io/library/tomcat:9-jdk11-slim
 ```
 
 ```sh

@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install pylint
+pip install -U pylint
 ```
 
 ### Commands

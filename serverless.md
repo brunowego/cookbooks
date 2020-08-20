@@ -9,7 +9,7 @@ https://www.marksei.com/serverless/
 #### NPM
 
 ```sh
-npm install -g serverless
+npm install serverless -g
 ```
 
 ### Commands

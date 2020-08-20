@@ -134,6 +134,9 @@ python3 -h
 # Version
 python --version 2>&1 | head -1
 
+# HTTPS Server
+python -m SimpleHTTPServer
+
 # REPL
 python3
 ```

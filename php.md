@@ -94,6 +94,9 @@ php -v | head -1
 
 # REPL
 php -a
+
+# Error info
+php -i | grep error
 ```
 
 #### Info

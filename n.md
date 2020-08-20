@@ -13,7 +13,7 @@ brew install n
 #### NPM
 
 ```sh
-npm install -g n
+npm install n -g
 ```
 
 ### Configuration

@@ -7,7 +7,7 @@
 #### NPM
 
 ```sh
-npm install -g hotel
+npm install hotel -g
 ```
 
 ### Commands

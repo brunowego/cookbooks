@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install gunicorn
+pip install -U gunicorn
 ```

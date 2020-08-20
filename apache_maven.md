@@ -1,5 +1,9 @@
 # Apache Maven
 
+## References
+
+- [Maven Version Manager](/mvnvm.md)
+
 ## CLI
 
 ### Installation
@@ -8,6 +12,9 @@
 
 ```sh
 brew install maven
+
+# Legacy
+brew install maven@3.5
 ```
 
 #### APT
@@ -24,6 +31,15 @@ yum check-update
 sudo yum -y install maven
 ```
 
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Apache Maven
+export PATH="/usr/local/opt/maven@3.5/bin:$PATH"
+```
+
 ### Commands
 
 ```sh
@@ -34,10 +50,16 @@ mvn -h
 
 ```sh
 #
+mvn clean
+
+#
 mvn install
 
 #
 mvn package
+
+#
+mvn dependency:tree
 ```
 
 ### Tips
@@ -122,6 +144,89 @@ After finish, remove.
 ```sh
 rm -r ~/.m2
 ```
+
+### Issues
+
+#### Valid Certificate
+
+```log
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+```
+
+[Export Web Self-signed Certificate](/openssl.md#export-web-self-signed-certificate).
+
+```sh
+mkdir -p "$JAVA_HOME/lib/security"
+
+echo 'yes' | \
+  keytool \
+    -import \
+    -alias selfsigned \
+    -file ./selfsigned_certificate.pem \
+    -keystore "$JAVA_HOME/lib/security/cacerts" \
+    -storepass changeit
+
+rm ./selfsigned_certificate.pem
+
+echo -n | \
+  keytool \
+    -list \
+    -v \
+    -alias selfsigned \
+    -keystore "$JAVA_HOME/lib/security/cacerts" \
+    -storepass changeit
+```
+
+#### Valid Certification Path
+
+```log
+sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+```
+
+```sh
+export MAVEN_OPTS="$MAVEN_OPTS -Djavax.net.ssl.trustStore=$JAVA_HOME/lib/security/cacerts"
+```
+
+<!--
+-Djavax.net.ssl.trustAnchors=$JAVA_HOME/lib/security/cacerts
+-Djavax.net.ssl.trustStorePassword=changeit
+-->
+
+#### Incompatible Version
+
+```log
+java.lang.NoSuchMethodError: org.apache.maven.settings.Settings.getRuntimeInfo()Lorg/apache/maven/settings/RuntimeInfo
+```
+
+```sh
+# Downgrade Apache Maven to version 3.0.4
+echo 'mvn_version=3.0.4' > mvnvm.properties
+
+mvn install
+```
+
+<!-- ####
+
+```log
+
+````
+
+```sh
+export MAVEN_OPTS="$MAVEN_OPTS -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
+export JAVA_OPTS="$JAVA_OPTS -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
+``` -->
+
+<!-- ####
+
+```log
+java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
+```
+
+```sh
+export MAVEN_OPTS="$MAVEN_OPTS -Djavax.net.ssl.trustStore=$JAVA_HOME/lib/security/cacerts -Djavax.net.ssl.trustStorePassword=changeit"
+
+export JAVA_OPTS="$JAVA_OPTS -Djavax.net.ssl.trustStore=$JAVA_HOME/lib/security/cacerts -Djavax.net.ssl.trustStorePassword=changeit"
+``` -->
 
 ### Uninstall
 

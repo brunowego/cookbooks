@@ -2,21 +2,62 @@
 
 ## App
 
+### Commands
+
+```sh
+security help
+```
+
 ### Usage
 
 ```sh
+# Dump
+sudo security dump-keychain /System/Library/Keychains/SystemRootCertificates.keychain
+```
+
+### Tips
+
+#### Trust Darwin
+
+[Export Web Self-signed Certificate](/openssl.md#export-web-self-signed-certificate).
+
+```sh
+# Test
+curl -v https://[hostname]
+
+curl \
+  --cacert ./selfsigned_certificate.pem \
+  -v \
+  https://[hostname]
+
+# Or
+wget \
+  -O - \
+  https://[hostname]
+
+wget \
+  -O - \
+  --ca-certificate=./selfsigned_certificate.pem \
+  https://[hostname]
+
 # Add
 sudo security add-trusted-cert -d \
-  -r trustAsRoot \
+  -r trustRoot \
   -k /Library/Keychains/System.keychain \
-  [/path/to/cert]
+  ./selfsigned_certificate.pem
+
+# Test
+curl https://[hostname]
+
+# NOTE: trustAsRoot
 
 # Delete
-# sudo security dump-keychain /System/Library/Keychains/SystemRootCertificates.keychain
+openssl x509 \
+  -in ./selfsigned_certificate.pem \
+  -noout \
+  -subject
 
-# sudo security delete-certificate -d \
-#   -Z '' \
-#   -k /Library/Keychains/System.keychain
+sudo security delete-certificate -c '[hostname]'
 ```
 
 ## Issues
@@ -29,7 +70,7 @@ This certificate is marked as not trusted for all users
 
 Use `trustAsRoot` instead of `trustRoot`.
 
-###
+### Valid Trust Setting Parameter
 
 ```log
 SecTrustSettingsSetTrustSettings: One or more parameters passed to a function were not valid.
@@ -37,8 +78,8 @@ SecTrustSettingsSetTrustSettings: One or more parameters passed to a function we
 
 Change `trustAsRoot` to `trustRoot`.
 
-###
+<!-- ###
 
 ```log
 NET::ERR_CERT_VALIDITY_TOO_LONG
-```
+``` -->

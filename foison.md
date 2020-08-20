@@ -9,6 +9,8 @@
 
 ### Tips
 
+0.053cm
+
 #### Laminas
 
 | Degree | Description|

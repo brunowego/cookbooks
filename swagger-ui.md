@@ -97,6 +97,13 @@ kubectl delete namespace swagger --grace-period=0 --force
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -104,7 +111,8 @@ docker run -d \
   -h swagger-ui \
   -p 8080:8080 \
   --name swagger-ui \
-  docker.io/swaggerapi/swagger-ui:v3.23.11
+  --network workbench \
+  docker.io/swaggerapi/swagger-ui:v3.32.3
 ```
 
 ```sh

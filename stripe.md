@@ -1,14 +1,16 @@
 # Stripe
 
-## Installation
+## Library
 
-### PIP
+### Installation
+
+#### PIP
 
 ```sh
-pip install stripe
+pip install -U stripe
 ```
 
-## Usage
+### Usage
 
 ```sh
 python manage.py migrate

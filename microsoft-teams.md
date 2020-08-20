@@ -52,8 +52,12 @@ Bypass external proxies for the following hosts:
 
 ### Tips
 
-####
+#### As other user
 
 ```sh
-sudo /Applications/Microsoft\ Teams.app/Contents/MacOS/Teams
+# Darwin
+dscl . list /Users | grep -v '^_'
+
+#
+sudo -u root bash -c 'open /Applications/Microsoft\ Teams.app/Contents/MacOS/Teams'
 ```

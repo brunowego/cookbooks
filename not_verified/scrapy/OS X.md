@@ -5,5 +5,5 @@
 ```sh
 LDFLAGS="-L$(brew --prefix openssl)/lib" \
   CFLAGS="-I$(brew --prefix openssl)/include" \
-  pip install scrapy
+  pip install -U scrapy
 ```

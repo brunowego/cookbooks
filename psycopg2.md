@@ -17,7 +17,7 @@ sudo apk add postgresql-dev g++
 ### Instalation
 
 ```sh
-pip install psycopg2-binary
+pip install -U psycopg2-binary
 ```
 
 ### REPL

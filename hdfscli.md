@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install ipython hdfs
+pip install -U ipython hdfs
 ```
 
 ### Configuration

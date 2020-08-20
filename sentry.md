@@ -13,7 +13,7 @@
 #### PIP
 
 ```sh
-pip install sentry
+pip install -U sentry
 ```
 
 ### Commands

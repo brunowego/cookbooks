@@ -14,6 +14,7 @@ https://pagely.com/blog/react-js-wordpress-rest-api/
 - [Dashicons](https://developer.wordpress.org/resource/dashicons/#sort)
 - [Function Reference/register post type](https://codex.wordpress.org/Function_Reference/register_post_type)
 - [Child Themes and Templates](https://wpadverts.com/documentation/child-themes-and-templates/)
+- [Debugging with WordPress and being secure](https://www.damiencarbery.com/2017/01/debugging-with-wordpress-and-being-secure/)
 
 ## Scripts
 
@@ -439,6 +440,14 @@ sudo ln -s "/var/www/wordpress-$WORDPRESS_VERSION" '/var/www/html' && \
 ```
 
 ### Issues
+
+<!-- ####
+
+```log
+An automated WordPress update has failed to complete - please attempt the update again now.
+```
+
+TODO -->
 
 <!-- #### Undefined Symbols
 

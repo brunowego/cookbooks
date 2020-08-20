@@ -11,7 +11,8 @@
 #### Homebrew
 
 ```sh
-brew cask install homebrew/cask-versions/firefox-developer-edition
+brew tap homebrew/cask-versions
+brew cask install --appdir='/Applications' firefox-developer-edition
 ```
 
 #### Linux
@@ -58,3 +59,15 @@ Bypass external proxies for the following hosts:
 1. Type `about:support` on search area
 2. Give Firefox Developer Edition a tune up
 3. Refresh Firefox Developer Edition…
+
+## CLI
+
+### Configuration
+
+```sh
+ln -s '/Applications/Firefox Developer Edition.app/Contents/MacOS/firefox' '/usr/local/bin/firefox'
+```
+
+### Usage
+
+Same as [Firefox](/firefox.md#usage)

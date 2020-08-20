@@ -1,12 +1,16 @@
 # Pygments
 
-## Installation
+## CLI
+
+### Installation
+
+#### PIP
 
 ```sh
-pip install Pygments
+pip install -U Pygments
 ```
 
-## Commands
+### Commands
 
 ```sh
 pygmentize -h

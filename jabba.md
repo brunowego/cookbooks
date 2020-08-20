@@ -59,9 +59,11 @@ jabba alias default [version]
 # Darwin
 /usr/libexec/java_home -V
 
-export JAVA_VERSION="`/usr/libexec/PlistBuddy -c 'Print :JavaVM:JVMVersion' $(dirname $(/usr/libexec/java_home))/Info.plist`"
+export JAVA_VERSION="`/usr/libexec/PlistBuddy -c 'Print :JavaVM:JVMVersion' $(dirname $(/usr/libexec/java_home -v 1.8))/Info.plist`"
+jabba link system@$JAVA_VERSION $(dirname $(dirname $(/usr/libexec/java_home -v 1.8)))
 
-jabba link system@$JAVA_VERSION $(dirname $(dirname $(/usr/libexec/java_home)))
+export JAVA_VERSION="`/usr/libexec/PlistBuddy -c 'Print :JavaVM:JVMVersion' $(dirname $(/usr/libexec/java_home -v 14.0))/Info.plist`"
+jabba link system@$JAVA_VERSION $(dirname $(dirname $(/usr/libexec/java_home -v 14.0)))
 
 jabba ls
 ```

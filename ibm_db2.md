@@ -161,7 +161,7 @@ sudo yum -y install python3-devel gcc
 ### Installation
 
 ```sh
-pip install ibm-db ibm-db-sa
+pip install -U ibm-db ibm-db-sa
 ```
 
 ### REPL

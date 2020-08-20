@@ -7,7 +7,7 @@
 #### NPM
 
 ```sh
-npm install -g dotenv-cli
+npm install dotenv-cli -g
 ```
 
 #### Yarn

@@ -1,10 +1,10 @@
 # Font
 
-##
+## Tools
 
-- [](https://www.whatfontis.com/)
-- [](https://www.myfonts.com/WhatTheFont/)
-- [](https://www.fontsquirrel.com/matcherator)
+- [What Font Is](https://www.whatfontis.com/)
+- [WhatTheFont!](https://www.myfonts.com/WhatTheFont/)
+- [Font Identifier](https://www.fontsquirrel.com/matcherator)
 
 ## Tips
 
@@ -18,12 +18,12 @@
 
 ## Weight
 
-- 100	Thin, Hairline, Ultra-light, Extra-light
-- 200	Light
-- 300	Book
-- 400	Regular, Normal, Plain, Roman, Standard
-- 500	Medium
-- 600	Semi-bold, Demi-bold
-- 700	Bold
-- 800	Heavy, Black, Extra-bold
-- 900	Ultra-black, Extra-black, Ultra-bold, Heavy-black, Fat, Poster
+- 100 Thin, Hairline, Ultra-light, Extra-light
+- 200 Light
+- 300 Book
+- 400 Regular, Normal, Plain, Roman, Standard
+- 500 Medium
+- 600 Semi-bold, Demi-bold
+- 700 Bold
+- 800 Heavy, Black, Extra-bold
+- 900 Ultra-black, Extra-black, Ultra-bold, Heavy-black, Fat, Poster

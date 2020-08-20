@@ -5,7 +5,7 @@
 ### Installation
 
 ```sh
-pip install ipdb
+pip install -U ipdb
 ```
 
 ### REPL

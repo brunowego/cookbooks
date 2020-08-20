@@ -11,7 +11,7 @@
 #### Homebrew
 
 ```sh
-brew cask install firefox
+brew cask install --appdir='/Applications' firefox
 ```
 
 ### Docs
@@ -30,4 +30,47 @@ sudo apt --purge -y autoremove firefox
 
 rm -fR ~/.mozilla/firefox ~/.cache/mozilla/firefox
 sudo rm -fR /etc/firefox /usr/lib/firefox /usr/lib/firefox-addons
+```
+
+## CLI
+
+### Configuration
+
+```sh
+# Darwin
+ln -s '/Applications/Firefox.app/Contents/MacOS/firefox' '/usr/local/bin/firefox'
+```
+
+### Commands
+
+```sh
+firefox -ProfileManager
+```
+
+### Usage
+
+```sh
+#
+firefox --setDefaultBrowser
+
+#
+firefox [url]
+
+#
+firefox --new-window [url]
+
+#
+firefox --private-window
+
+#
+firefox --search [text]
+
+#
+firefox --safe-mode
+
+#
+firefox --headless --screenshot {{path/to/output_file.png}} {{https://example.com/}}
+
+#
+firefox --profile {{path/to/directory}} {{https://example.com/}}
 ```

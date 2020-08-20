@@ -184,7 +184,7 @@ kubectl patch pvc redis-data-polyaxon-redis-master-0 -p '{"spec":{"resources":{"
 
 ```sh
 kubectl get pod -l 'app=docker-registry' -n polyaxon -o yaml | \
-  sed '/image: /s|registry|atf.intranet.bb.com.br:5001/library/registry|' | \
+  sed '/image: /s|registry|[hostname]:5001/library/registry|' | \
     kubectl apply -f -
 ``` -->
 

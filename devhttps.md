@@ -7,7 +7,7 @@
 #### NPM
 
 ```sh
-npm install -g devhttps
+npm install devhttps -g
 ```
 
 ### Commands

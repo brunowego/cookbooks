@@ -80,6 +80,7 @@ source ~/.bashrc
 ### Configuration
 
 ```sh
+# Show config file
 cat "$(openssl version -d | awk '{print $NF}' | tr -d '"')/openssl.cnf"
 ```
 
@@ -95,10 +96,27 @@ openssl
 # Version
 openssl version -a
 
-#
+# Generate MD5 password
 echo -n 'Pa$$w0rd!' | openssl md5
 
-# Generate Self-signed Certificate
+# List certs
+openssl s_client \
+  -connect [hostname]:443 \
+  -showcerts
+
+# Export
+openssl s_client \
+  -connect [hostname]:443 \
+  -showcerts \
+  -servername [hostname] < /dev/null 2> /dev/null | \
+    openssl x509 -outform PEM > [filename].pem
+```
+
+### Tips
+
+#### Generate Self-signed Certificate
+
+```sh
 sudo mkdir -p /etc/ssl/{certs,private}/example
 
 sudo chmod a+w /etc/ssl/{certs,private}/example
@@ -116,14 +134,20 @@ openssl req \
   -extensions san
 
 ls /etc/ssl/{certs,private}/example
+```
 
-# Certificate signing request (CSR) for an existing private key
+#### Certificate signing request (CSR) for an existing private key
+
+```sh
 openssl req \
   -out [filename].csr \
   -key [filename].key \
   -new
+```
 
-# Certificate signing request based on an existing certificate
+#### Certificate signing request based on an existing certificate
+
+```sh
 openssl x509 \
   -x509toreq \
   -in [filename].crt \
@@ -135,25 +159,20 @@ openssl x509 \
   -in '/etc/ssl/certs/example/root-ca.crt' \
   -noout \
   -text
+```
 
-# Remove Passphrase from a private key
+#### Remove Passphrase from a private key
+
+```sh
 openssl rsa \
   -in [filename].pem \
   -out [filename].pem
+```
 
-# List certs
-openssl s_client \
-  -connect [hostname]:443 \
-  -showcerts
+#### Convert
 
-# Export
-openssl s_client \
-  -connect [hostname]:443 \
-  -showcerts \
-  -servername [hostname] < /dev/null 2> /dev/null | \
-    openssl x509 -outform PEM > [filename].pem
-
-# Convert PEM to DER/CRT
+```sh
+# PEM to DER/CRT
 openssl x509 \
   -inform PEM \
   -in [filename].pem \
@@ -169,21 +188,32 @@ openssl x509 \
 
 # Convert CRT and KEY to PEM
 cat [filename].crt [filename].key > [filename].pem
-
-# Trust Darwin
-sudo security add-trusted-cert -d \
-  -r trustRoot \
-  -k /Library/Keychains/System.keychain [filename].der
-
-# Test
-wget https://[hostname] \
-  --no-check-certificate \
-  --ca-certificate=[filename].pem
-
-wget https://[hostname] --ca-certificate=[filename].pem
 ```
 
-### Tips
+#### Export Web Self-signed Certificate
+
+```sh
+# Remote show
+echo -n | \
+  openssl s_client \
+    -connect [hostname]:443 \
+    -showcerts
+
+# Export
+echo -n | \
+  openssl s_client -connect [hostname]:443 | \
+  openssl x509 \
+    -outform PEM \
+      > ./selfsigned_certificate.pem
+
+# Show subject and issuer
+openssl x509 \
+  -noout \
+  -subject \
+  -issuer \
+  -in \
+  ./selfsigned_certificate.pem
+```
 
 #### REPL Python
 

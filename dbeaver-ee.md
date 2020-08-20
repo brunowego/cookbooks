@@ -37,6 +37,20 @@ sudo zypper install -y java-1_8_0-openjdk
 brew cask install dbeaver-enterprise
 ```
 
+#### DMG
+
+```sh
+hdiutil attach https://dbeaver.com/files/6.3.0/dbeaver-ee-6.3.0-macos.dmg -nobrowse -mountpoint /Volumes/DBeaverEE
+```
+
+```sh
+cp -R /Volumes/DBeaverEE/DBeaverEE.app /Applications
+```
+
+```sh
+hdiutil detach /Volumes/DBeaverEE
+```
+
 #### RPM
 
 ```sh

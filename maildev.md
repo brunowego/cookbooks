@@ -7,7 +7,7 @@
 #### NPM
 
 ```sh
-npm install -g maildev
+npm install maildev -g
 ```
 
 ### Commands

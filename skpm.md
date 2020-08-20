@@ -7,5 +7,5 @@
 #### NPM
 
 ```sh
-npm install -g skpm
+npm install skpm -g
 ```

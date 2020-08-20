@@ -83,7 +83,7 @@ docker rm -f jupyterhub
 #### PIP
 
 ```sh
-pip install jupyterhub
+pip install -U jupyterhub
 ```
 
 ### Commands

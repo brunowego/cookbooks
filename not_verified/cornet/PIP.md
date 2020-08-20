@@ -18,17 +18,17 @@ TODO
 ## Installation
 
 ```sh
-pip install git+https://github.com/datadudes/cornet
+pip install -U git+https://github.com/datadudes/cornet
 ```
 
 ### MySQL
 
 ```sh
-pip install mysqlclient==1.4.2
+pip install -U mysqlclient==1.4.2
 ```
 
 ### PostgreSQL
 
 ```sh
-pip install psycopg2==2.7.7
+pip install -U psycopg2==2.7.7
 ```

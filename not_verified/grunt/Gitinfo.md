@@ -1,7 +1,7 @@
 # Gitinfo
 
 ```sh
-npm install -g grunt-gitinfo
+npm install grunt-gitinfo -g
 ```
 
 ```js

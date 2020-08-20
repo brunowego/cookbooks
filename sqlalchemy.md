@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install SQLAlchemy
+pip install -U SQLAlchemy
 ```
 
 ### Usage
@@ -15,7 +15,7 @@ pip install SQLAlchemy
 #### Db2
 
 ```sh
-pip install ibm_db_sa
+pip install -U ibm_db_sa
 ```
 
 ```py

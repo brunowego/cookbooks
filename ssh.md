@@ -1,10 +1,9 @@
 # Secure Shell (SSH)
 
-## Examples
-
-###
+## Usage
 
 ```sh
+#
 ssh -i [privatekey].pem [username]@[IP]
 ```
 
@@ -41,6 +40,18 @@ sudo service sshd restart
 ```sh
 # run exit command and access again remote host.
 env | grep -i _proxy= | sort
+```
+
+### HTTP SSH Tunnel
+
+<!--
+https://github.com/mainyaa/RaspberryPi-Mothership/blob/c9b2b676f650a83a741ddc757d9dd69b795ab672/README.md
+https://www.ssh.com/ssh/tunneling/example
+https://stackabuse.com/how-to-tunnel-http-with-ssh/
+-->
+
+```sh
+ssh -D [port] [username]@[hostname]
 ```
 
 ### ProxyJump

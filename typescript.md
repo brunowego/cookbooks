@@ -3,7 +3,7 @@
 ## Installation
 
 ```sh
-npm install -g typescript
+npm install typescript -g
 ```
 
 ## Commands

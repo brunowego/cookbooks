@@ -12,6 +12,9 @@ git config --global https.proxy
 ```sh
 git config --global http.proxy "$http_proxy"
 git config --global https.proxy "$https_proxy"
+
+git config --global http.proxy 'http://[hostname]/proxy.pac'
+git config --global https.proxy 'http://[hostname]/proxy.pac'
 ```
 
 ## Bypass

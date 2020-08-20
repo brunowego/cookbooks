@@ -1,10 +1,9 @@
 # Microsoft Excel
 
-<!--
 ## Docs
 
-###
+### Delimited Content
 
-1.
-https://superuser.com/questions/736407/copy-comma-delimited-values-into-two-excel-cells
--->
+1. Data -> Text to Columns...
+2. Select Delimited -> Next >
+3. Check Semicolon -> Finish

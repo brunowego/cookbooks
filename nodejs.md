@@ -75,6 +75,8 @@ curl https://nodejs.org/dist/v11.8.0/node-v11.8.0.tar.gz | tar -xz
 
 ### Configuration
 
+- [stylelint](/stylelint.md#configuration)
+
 #### Windows
 
 ##### Node path

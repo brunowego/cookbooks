@@ -114,13 +114,6 @@ minikube start \
   -p minikube \
   --image-repository 'registry.cn-hangzhou.aliyuncs.com/google_containers' \
   --insecure-registry 'registry.cn-hangzhou.aliyuncs.com'
-
-# Custom Google Containers Repository
-minikube start \
-  $(echo "$MINIKUBE_START_OPTS") \
-  -p minikube \
-  --image-repository 'atf.intranet.bb.com.br:5001/bb-docker-repo/google_containers' \
-  --insecure-registry 'atf.intranet.bb.com.br:5001'
 ```
 
 ```sh

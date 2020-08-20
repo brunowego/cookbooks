@@ -51,6 +51,12 @@ sudo apk add git
 choco install -y git
 ```
 
+### Initialize
+
+```sh
+git init
+```
+
 ### Usage
 
 ```sh
@@ -93,6 +99,20 @@ git ls-files -v | grep '^h'
 ```
 
 ### Tips
+
+#### Most recent changed branch
+
+```sh
+git for-each-ref --sort=committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'
+```
+
+#### Show latest committer
+
+```sh
+git for-each-ref \
+  --sort=-committerdate refs/heads/ \
+  --format='%(committerdate:short) %(authorname) %(refname:short)'
+```
 
 #### Run Push Subdirectories
 
@@ -258,9 +278,3 @@ error: failed to push some refs to 'project@example.com:project'
 ```sh
 git push -u origin master
 ```
-
-<!--
-###
-
-license UNLICENSED
--->

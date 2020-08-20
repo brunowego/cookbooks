@@ -22,7 +22,7 @@ https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your
 #### PIP
 
 ```sh
-pip install django
+pip install -U django
 ```
 
 ### Commands

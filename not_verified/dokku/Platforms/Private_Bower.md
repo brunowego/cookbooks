@@ -65,7 +65,7 @@ touch Dockerfile || exit
 ```dockerfile
 FROM docker.io/node:0.10
 
-RUN npm install -g private-bower
+RUN npm install private-bower -g
 
 EXPOSE 80 6789 7891
 

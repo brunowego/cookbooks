@@ -7,7 +7,7 @@
 #### NPM
 
 ```sh
-npm install -g npm-check-updates
+npm install npm-check-updates -g
 ```
 
 ### Commands

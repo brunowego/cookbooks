@@ -7,7 +7,7 @@
 #### NPM
 
 ```sh
-npm install -g npx
+npm install npx -g
 ```
 
 ### Commands

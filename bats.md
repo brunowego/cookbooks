@@ -13,7 +13,7 @@ brew install bats-core
 #### NPM
 
 ```sh
-npm install -g bats
+npm install bats -g
 ```
 
 #### Source

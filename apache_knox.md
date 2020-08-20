@@ -33,18 +33,9 @@ export USER_PASS=
 export KNOX_DOMAIN=knox.hortonworks.com
 ```
 
-https://dxl1big00011.dispositivos.bb.com.br:8443/gateway/usuarios/ambari/
-<!-- https://dxl1big00011.dispositivos.bb.com.br:8443/gateway/usuarios/hdfs/ -->
-<!-- https://dxl1big00011.dispositivos.bb.com.br:8443/gateway/usuarios/webhdfs/ -->
-<!-- https://dxl1big00011.dispositivos.bb.com.br:8443/gateway/usuarios/oozie/ -->
-<!-- https://dxl1big00011.dispositivos.bb.com.br:8443/gateway/usuarios/jobhistory/ -->
-<!-- https://dxl1big00011.dispositivos.bb.com.br:8443/gateway/usuarios/sparkhistory/ -->
-<!-- https://dxl1big00011.dispositivos.bb.com.br:8443/gateway/usuarios/hbase/webui/ -->
-<!-- https://dxl1big00011.dispositivos.bb.com.br:8443/gateway/usuarios/hive/ -->
-
 ### Apache Hadoop WebHDFS
 
-https://dxl1big00011.dispositivos.bb.com.br:8443/gateway/default/hdfs/
+https://[hostname]:8443/gateway/default/hdfs/
 
 ```sh
 #
@@ -103,7 +94,7 @@ curl \
 
 ### Apache Hadoop YARN Resource Manager
 
-http://dxl1big00015.dispositivos.bb.com.br:8088/cluster
+http://[hostname]:8088/cluster
 
 ```sh
 #
@@ -164,8 +155,8 @@ curl \
 
 ### Apache Hadoop YARN UI
 
-https://dxl1big00011.dispositivos.bb.com.br:8443/gateway/usuarios/yarn/
-https://dxl1big00011.dispositivos.bb.com.br:8443/gateway/usuarios/yarn/logs
+https://[hostname]:8443/gateway/usuarios/yarn/
+https://[hostname]:8443/gateway/usuarios/yarn/logs
 
 ```sh
 #
@@ -197,9 +188,8 @@ curl \
 
 ### Apache Solr
 
-http://dxl1big00033.dispositivos.bb.com.br:8983/solr/
-
-https://dxl1big00011.dispositivos.bb.com.br:8443/gateway/usuarios/solr/
+http://[hostname]:8983/solr/
+https://[hostname]:8443/gateway/usuarios/solr/
 
 ```sh
 curl \

@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install python-gitlab
+pip install -U python-gitlab
 ```

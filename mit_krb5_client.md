@@ -114,7 +114,7 @@ kinit: Unknown credential cache type while getting default ccache
 ```
 
 <!--
-kinit c1283519@DESENVOLVIMENTOHWBB.COM.BR
+kinit [user]@[REALM]
 
 echo 'password' | kinit username
 

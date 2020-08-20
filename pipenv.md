@@ -20,7 +20,7 @@ sudo apt -y install pipenv
 #### PIP
 
 ```sh
-pip install pipenv
+pip install -U pipenv
 ```
 
 ### Commands

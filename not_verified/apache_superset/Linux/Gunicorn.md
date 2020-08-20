@@ -3,7 +3,7 @@
 ## Dependencies
 
 ```sh
-pip install gevent
+pip install -U gevent
 ```
 
 ## Service

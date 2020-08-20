@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install instaloader
+pip install -U instaloader
 ```
 
 ### Usage

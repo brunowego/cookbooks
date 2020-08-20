@@ -32,7 +32,7 @@ https://github.com/tolgahanuzun/Flask-Login-Example
 #### PIP
 
 ```sh
-pip install Flask
+pip install -U Flask
 ```
 
 ### Commands

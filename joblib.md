@@ -11,7 +11,7 @@
 #### PIP
 
 ```sh
-pip install joblib
+pip install -U joblib
 ```
 
 ### REPL

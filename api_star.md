@@ -5,7 +5,7 @@
 ### PIP
 
 ```sh
-pip install apistar
+pip install -U apistar
 ```
 
 ## Commands

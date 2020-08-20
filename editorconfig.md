@@ -1,6 +1,8 @@
 # EditorConfig
 
-## Configuration
+## Syntax
+
+### Configuration
 
 ```sh
 cat << EOF > ./.editorconfig
@@ -21,9 +23,9 @@ trim_trailing_whitespace = false
 EOF
 ```
 
-## Tips
+### Tips
 
-### Edit Commit Messages
+#### Edit Commit Messages
 
 ```conf
 [COMMIT_EDITMSG]

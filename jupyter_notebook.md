@@ -34,7 +34,7 @@ docker volume rm jupyter-data
 #### PIP
 
 ```sh
-pip install notebook
+pip install -U notebook
 ```
 
 ### Commands
@@ -66,7 +66,7 @@ jupyter notebook stop
 ### Global Kernel
 
 ```sh
-pip install ipython ipykernel
+pip install -U ipython ipykernel
 ```
 
 ```sh

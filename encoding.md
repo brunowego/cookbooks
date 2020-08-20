@@ -1,4 +1,6 @@
-# Characters
+# Encoding
+
+## Characters
 
 ```txt
 Ω - omega
@@ -8,4 +10,7 @@
 φ - Phi
 δ - Delta
 π - Pi
+` - Backtick
+^ - Caret
+~ - Tilde
 ```

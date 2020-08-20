@@ -18,7 +18,7 @@ nvm alias default stable
 ```
 
 ```sh
-npm install -g npm_lazy
+npm install npm_lazy -g
 ```
 
 ```sh

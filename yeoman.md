@@ -1,14 +1,16 @@
 # Yeoman
 
-## Installation
+## CLI
 
-### NPM
+#### Installation
+
+#### NPM
 
 ```sh
-npm install -g yo
+npm install yo -g
 ```
 
-## Commands
+### Commands
 
 ```sh
 yo --help

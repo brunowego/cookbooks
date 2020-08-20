@@ -7,5 +7,5 @@
 #### PIP
 
 ```sh
-pip install keras
+pip install -U keras
 ```

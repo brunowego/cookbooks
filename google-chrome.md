@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install google-chrome
+brew cask install --appdir='/Applications' google-chrome
 ```
 
 #### APT
@@ -43,6 +43,13 @@ sudo yum -y install google-chrome-stable
 
 ```sh
 choco install -y googlechrome
+```
+
+### Configuration
+
+```sh
+# Darwin
+ln -s /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome /usr/local/bin/chrome
 ```
 
 ### Tips

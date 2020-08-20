@@ -1,6 +1,6 @@
 # Grunt Webfont
 
-## CLI
+## Library
 
 ### Installation
 
@@ -20,3 +20,11 @@ sudo apt -y install ttfautohint fontforge
 <!--
 {,*/}*
 -->
+
+### Configuration
+
+Add [text rules](/gitattributes.md#text)
+
+```sh
+echo '*.woff binary\n' >> ./.gitattributes
+```

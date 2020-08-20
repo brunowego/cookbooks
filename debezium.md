@@ -28,6 +28,7 @@ https://github.com/fatmali/openmrs-spark
 
 ## References
 
+- [Change-Data-Capture (CDC)](/cdc.md)
 - [Debezium Examples](https://github.com/debezium/debezium-examples)
 - [PostgreSQL Debezium KSQL Elasticsearch](https://github.com/confluentinc/examples/tree/5.3.1-post/postgres-debezium-ksql-elasticsearch)
 

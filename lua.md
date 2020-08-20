@@ -2,6 +2,14 @@
 
 ## CLI
 
+### Installation
+
+#### Homebrew
+
+```sh
+brew install lua
+```
+
 ### Usage
 
 ```sh

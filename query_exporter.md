@@ -33,10 +33,10 @@ docker run -it --rm \
 
 ```sh
 # MySQL
-pip install mysqlclient
+pip install -U mysqlclient
 
 # Db2
-pip install ibm_db ibm_db_sa
+pip install -U ibm_db ibm_db_sa
 ```
 
 ### Installation
@@ -44,7 +44,7 @@ pip install ibm_db ibm_db_sa
 #### PIP
 
 ```sh
-pip install query-exporter
+pip install -U query-exporter
 ```
 
 ### Commands

@@ -1,7 +1,9 @@
 # NPM
 
-## Installation
+## CLI
+
+### Installation
 
 ```sh
-npm install -g parcel-bundler
+npm install parcel-bundler -g
 ```

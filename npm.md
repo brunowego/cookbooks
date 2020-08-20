@@ -14,35 +14,35 @@ Included in [Node.js](/nodejs.md) package installers.
 ### Configuration
 
 ```sh
-npm config list
-```
-
-#### Save Prefix
-
-```sh
-npm config set save-prefix='~'
-
-npm config get save-prefix
-```
-
-#### Registry
-
-```sh
-npm config set registry='https://registry.example.com/'
-
-npm config get registry
+echo '/node_modules' > ./.gitignore
 ```
 
 ### Commands
 
 ```sh
 npm -h
+
+#
+npm help 7 config
 ```
 
-#### Config
+### Usage
 
 ```sh
-npm help 7 config
+# List
+npm config list
+
+# Save Prefix
+npm config set save-prefix '~'
+npm config get save-prefix
+
+# Registry
+npm config set registry 'https://registry.example.com/'
+npm config get registry
+
+# License
+npm config set init-license 'MIT'
+npm config set init-license 'UNLICENSED'
 ```
 
 ### Tips
@@ -61,6 +61,17 @@ npm config get https-proxy
 # delete
 npm config delete http-proxy
 npm config delete https-proxy
+```
+
+#### Git Attributes
+
+Add [text rules](/gitattributes.md#text)
+
+```sh
+cat << EOF >> ./.gitattributes
+package-lock.json -diff
+package-lock.json linguist-generated=true
+EOF
 ```
 
 ### Issues
@@ -105,7 +116,7 @@ Error: EACCES: permission denied, symlink '../lib/node_modules/[package]/bin/[pa
 ```
 
 ```sh
-sudo npm install -g [package]
+sudo npm install [package] -g
 ```
 
 ### Uninstall

@@ -7,5 +7,5 @@
 #### NPM
 
 ```sh
-npm install -g cypress
+npm install cypress -g
 ```

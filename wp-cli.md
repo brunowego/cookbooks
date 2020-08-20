@@ -30,11 +30,16 @@ wp help
 
 ### Usage
 
-<!-- ####
-
 ```sh
-wp option delete core_updater.lock
-``` -->
+# Debug mode
+wp config set WP_DEBUG true --raw
+wp config set WP_DEBUG_LOG true --raw
+wp config set WP_DEBUG_DISPLAY false --raw
+
+clear; tail -f ./wp-content/debug.log -n 0
+
+# wp option delete core_updater.lock
+```
 
 #### Database
 

@@ -1,7 +1,9 @@
 # NPM
 
-## Installation
+## CLI
+
+### Installation
 
 ```sh
-npm install -g sinopia
+npm install sinopia -g
 ```

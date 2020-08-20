@@ -1,24 +1,28 @@
 # Java KeyStore (keytool)
 
-## Commands
+## CLI
+
+### Commands
 
 ```sh
 keytool -help
 ```
 
-## Examples
-
-### List
+### Usage
 
 ```sh
+mkdir -p "$JAVA_HOME/jre/lib/security/cacerts"
+```
+
+```sh
+# List
+keytool -list
+
 keytool -list \
   -keystore "$JAVA_HOME/jre/lib/security/cacerts" \
   -storepass changeit
-```
 
-### Import Cert
-
-```sh
+# Import Cert
 keytool -importcert \
   -noprompt \
   -trustcacerts \
@@ -26,11 +30,8 @@ keytool -importcert \
   -file '/etc/ssl/certs/example/root-ca.crt' \
   -keystore "$JAVA_HOME/jre/lib/security/cacerts" \
   -storepass changeit
-```
 
-### Delete
-
-```sh
+# Delete
 keytool -delete \
   -alias [name] \
   -keystore "$JAVA_HOME/jre/lib/security/cacerts" \
@@ -46,3 +47,15 @@ keytool -exportcert -alias [host]-1 -keystore jssecacerts -storepass changeit -f
 # Import certificate into system keystore
 keytool -importcert -alias [host] -keystore [path to system keystore] -storepass changeit -file [host].cer
 ``` -->
+
+### Issues
+
+####
+
+```log
+keytool error: java.lang.Exception: Keystore file does not exist: $JAVA_HOME/jre/lib/security/cacerts
+```
+
+```sh
+
+```

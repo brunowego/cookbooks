@@ -1,4 +1,4 @@
-# IntelliJ IDEA Compare Edition
+# IntelliJ IDEA Community Edition
 
 ## App
 

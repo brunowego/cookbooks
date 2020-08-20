@@ -37,8 +37,24 @@ choco install -y yarn
 ### Configuration
 
 ```sh
+echo '/node_modules' > ./.gitignore
+```
+
+### Bootstrap
+
+```sh
+yarn init -yp; yarn
+```
+
+### Configuration
+
+```sh
 # Save Prefix
-yarn config set save-prefix false
+yarn config set save-prefix '~'
+
+# License
+yarn config set init-license 'MIT'
+yarn config set init-license 'UNLICENSED'
 
 # Git ignore
 echo '/yarn-error.log' >> ~/.gitignore_global
@@ -50,7 +66,25 @@ echo '/yarn-error.log' >> ~/.gitignore_global
 yarn -h
 ```
 
+### Usage
+
+```sh
+# Nextjs
+yarn create next-app
+```
+
 ### Tips
+
+#### Git Attributes
+
+Add [text rules](/gitattributes.md#text)
+
+```sh
+cat << EOF >> ./.gitattributes
+yarn.lock -diff
+yarn.lock linguist-generated=true
+EOF
+```
 
 #### Command-line completion
 
