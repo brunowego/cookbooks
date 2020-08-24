@@ -26,6 +26,22 @@ npm -h
 npm help 7 config
 ```
 
+### Bootstrap
+
+```sh
+#
+npm init -y; npm i
+
+#
+npm init private; npm i
+```
+
+#### Recommended
+
+- [commitlint](/commitlint.md)
+- [lint-staged](/lint-staged.md)
+- [husky](/husky.md)
+
 ### Usage
 
 ```sh

@@ -22,3 +22,10 @@ sudo /usr/bin/sh -c 'echo "deb https://packagecloud.io/slacktechnologies/slack/d
 sudo apt update
 sudo apt -y install slack-desktop
 ```
+
+### Running
+
+```sh
+# Darwin
+open -a /Applications/Slack.app
+```

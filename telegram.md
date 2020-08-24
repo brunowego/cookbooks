@@ -1,16 +1,18 @@
 # Telegram
 
-## Installation
+## App
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew cask install telegram
 ```
 
-## Tips
+### Tips
 
-### Force Specific Network Interface
+#### Force Specific Network Interface
 
 ```sh
 # List

@@ -1,5 +1,5 @@
 # BEM
 
-http://getbem.com/
+## References
 
-TODO
+- [Methodology](https://en.bem.info/methodology/)

@@ -25,11 +25,3 @@ echo 'mvn_version=3.6.3' > mvnvm.properties
 ```sh
 mvn -h
 ```
-
-### Tips
-
-#### Git ignore
-
-```sh
-echo '/mvnvm.properties' >> ~/.gitignore_global
-```

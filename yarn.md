@@ -20,7 +20,8 @@ sudo apt -y install yarn
 #### YUM
 
 ```sh
-curl -Ls https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+curl -Ls 'https://dl.yarnpkg.com/rpm/yarn.repo' | \
+  sudo tee '/etc/yum.repos.d/yarn.repo'
 ```
 
 ```sh
@@ -43,6 +44,10 @@ echo '/node_modules' > ./.gitignore
 ### Bootstrap
 
 ```sh
+#
+yarn init -y; yarn
+
+#
 yarn init -yp; yarn
 ```
 
@@ -71,6 +76,9 @@ yarn -h
 ```sh
 # Nextjs
 yarn create next-app
+
+#
+yarn pack
 ```
 
 ### Tips

@@ -215,6 +215,32 @@ openssl x509 \
   ./selfsigned_certificate.pem
 ```
 
+####
+
+```sh
+curl '[url]' | \
+  grep -o '<a href=".*\.der">' | \
+    sed -n 's|.*href="\([^"]*\).*|[domain]\1|p' | \
+      parallel -N 5 wget -
+
+for cert in $(ls -1 *.der); do
+  keytool \
+    -import \
+    -noprompt \
+    -alias "$cert" \
+    -file "$cert" \
+    -keystore "$JAVA_HOME/lib/security/cacerts" \
+    -storepass changeit
+done
+
+for cert in $(ls -1 *.der); do
+  sudo security add-trusted-cert -d \
+    -r trustAsRoot \
+    -k /Library/Keychains/System.keychain \
+    "$cert"
+done
+```
+
 #### REPL Python
 
 ```python

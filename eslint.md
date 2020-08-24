@@ -10,10 +10,16 @@
 brew install eslint
 ```
 
-### NPM
+#### NPM
 
 ```sh
-npm install eslint -D
+npm install eslint @matchlayer/eslint-config-base -D
+```
+
+#### Yarn
+
+```sh
+yarn add eslint @matchlayer/eslint-config-base -D
 ```
 
 ### Commands
@@ -22,30 +28,67 @@ npm install eslint -D
 eslint -h
 ```
 
-#### Configuration
+### Configuration
 
 ```sh
 cat << EOF > .eslintrc.json
 {
   "root": true,
-  "extends": "eslint:recommended",
-  "parserOptions": {
-    "ecmaVersion": 8
-  },
+  "extends": "@matchlayer/eslint-config-base",
   "env": {
+    "browser": true,
     "node": true
-  },
-  "rules": {
-    "indent": ["error", 2],
-    "linebreak-style": ["error", "unix"],
-    "max-len": ["error", 80],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"]
   }
 }
 
 EOF
 ```
+
+```sh
+echo '/node_modules' > ./.eslintignore
+```
+
+```json
+{
+  "scripts": {
+    "lint": "eslint ./"
+  }
+}
+```
+
+```sh
+sort-package-json
+```
+
+#### Overrides
+
+```json
+{
+  "root": true,
+  "overrides": [{
+    "files": "./**/*.js",
+    "excludedFiles": "./**/*.test.js",
+    "extends": [
+      "@matchlayer/eslint-config-base/esm"
+    ],
+    "env": {
+      "browser": true
+    }
+  }, {
+    "files": "./**/*.test.js",
+    "extends": [
+      "@matchlayer/eslint-config-base/cjs"
+    ],
+    "env": {
+      "node": true
+    }
+  }]
+}
+```
+
+### Next
+
+- [lint-staged](/lint-staged.md)
 
 ### Tips
 

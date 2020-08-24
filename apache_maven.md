@@ -195,14 +195,14 @@ export MAVEN_OPTS="$MAVEN_OPTS -Djavax.net.ssl.trustStore=$JAVA_HOME/lib/securit
 #### Incompatible Version
 
 ```log
-java.lang.NoSuchMethodError: org.apache.maven.settings.Settings.getRuntimeInfo()Lorg/apache/maven/settings/RuntimeInfo
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-help-plugin:2.1.1:effective-settings (gerar-effective-settings) on project big-plataforma-api: Execution gerar-effective-settings of goal org.apache.maven.plugins:maven-help-plugin:2.1.1:effective-settings failed: An API incompatibility was encountered while executing org.apache.maven.plugins:maven-help-plugin:2.1.1:effective-settings: java.lang.NoSuchMethodError: org.apache.maven.settings.Settings.getRuntimeInfo()Lorg/apache/maven/settings/RuntimeInfo;
 ```
 
 ```sh
 # Downgrade Apache Maven to version 3.0.4
 echo 'mvn_version=3.0.4' > mvnvm.properties
 
-mvn install
+mvn clean install
 ```
 
 <!-- ####

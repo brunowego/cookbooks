@@ -42,6 +42,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Web Server Gateway Interface (WSGI)](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)
 - [Public Key Infrastructure (PKI)]()
 - [Active Directory Federation Services (ADFS)]()
+- [Churn Rate]()
 
 ## Cheat Sheets
 

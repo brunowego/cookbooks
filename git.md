@@ -54,7 +54,11 @@ choco install -y git
 ### Initialize
 
 ```sh
+#
 git init
+
+#
+git init --initial-branch='develop'
 ```
 
 ### Usage
@@ -98,6 +102,55 @@ git update-index --assume-unchanged [file]
 git ls-files -v | grep '^h'
 ```
 
+### Configuration
+
+```sh
+# List
+git config --list --show-origin
+
+# Edit
+git config --global --edit
+
+# Default Branch
+git config --global init.defaultBranch 'develop'
+
+# Default Editor
+git config --global core.editor 'vim' # Vim
+git config --global core.editor 'code -n -w' # Visual Studio Code
+
+# Excludes file
+git config --global core.excludesfile '~/.gitignore_global'
+
+# Auto CRLF
+git config core.autocrlf '[value]' # Use `true`, `input` or `false`
+
+# Credential
+git config --global credential.helper '[value]' # Use `cache`, `store` or `osxkeychain`
+
+# User and Email
+git config --global user.name '[Name]'
+git config --global user.email '[email]'
+
+# Merge
+git config --global merge.tool [value] # Use `vimdiff`
+
+# Push
+git config --global push.default 'current'
+
+# Branch
+git config --global branch.autosetupmerge 'always'
+
+# Unset Certificate
+git config --unset --system http.sslcainfo # System
+git config --unset --global http.sslcainfo # Global
+
+# SSL CA Info
+git config --global http.sslcainfo [/path/to/certificate.pem]
+
+# Only repository
+git config --bool core.bare true
+```
+
 ### Tips
 
 #### Most recent changed branch
@@ -129,14 +182,6 @@ git rebase --root -i develop -x "git commit --amend --author 'Author Name <autho
 git push -f
 ``` -->
 
-#### Core Editor
-
-##### Visual Studio Code
-
-```sh
-git config --global core.editor 'code -n -w'
-```
-
 #### Command-line completion
 
 ```sh
@@ -152,7 +197,7 @@ rm ~/.zcompdump*
 
 ```sh
 git config --global pull.rebase false
-````
+```
 
 #### Version
 
@@ -206,6 +251,42 @@ git checkout --orphan gh-pages
 git rm -r .
 git clean -fdx
 git push origin gh-pages
+```
+
+<!-- ####
+
+Access the top level directory where wish add child projects.
+
+```sh
+git config --global user.useconfigonly true
+``` -->
+
+#### Custom Git Config
+
+```sh
+tee -a ~/.gitconfig << EOF
+[includeIf "gitdir:$PWD/"]
+	path = ~/.gitconfig-[vendor]
+EOF
+```
+
+```sh
+tee ~/.gitconfig-[vendor] << EOF
+[http]
+	sslVerify = false
+[user]
+	email = [name@example.com]
+EOF
+```
+
+```sh
+#
+git config --show-origin user.email
+
+#
+git config \
+  -l \
+  --show-origin
 ```
 
 ### Issues

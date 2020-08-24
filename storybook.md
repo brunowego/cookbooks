@@ -39,16 +39,16 @@ https://github.com/hipstersmoothie/storybook-dark-mode
 
 ### Installation
 
-#### Yarn
-
-```sh
-yarn global add @storybook/cli
-```
-
 #### NPM
 
 ```sh
 npm install @storybook/cli -g
+```
+
+#### Yarn
+
+```sh
+yarn global add @storybook/cli
 ```
 
 #### NPX
@@ -76,6 +76,10 @@ npx -p @storybook/cli sb
 }
 ```
 
+```sh
+echo '/public' > ./.gitignore
+```
+
 ### Commands
 
 ```sh
@@ -93,7 +97,7 @@ sb init --type angular
 sb init --type react_native
 
 # Running
-yarn storybook
+npm run storybook
 ```
 
 ### Presets

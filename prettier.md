@@ -16,6 +16,10 @@ brew install prettier
 prettier -h
 ```
 
+### Next
+
+- [lint-staged](/lint-staged.md)
+
 ### Tips
 
 #### Visual Studio Code

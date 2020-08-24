@@ -29,11 +29,18 @@ sudo su - "$USER"
 jabba --help
 ```
 
+### Configuration
+
+```sh
+echo 'adopt@1.8.0-172' > ./.jabbarc
+```
+
 ### Usage
 
 ```sh
 # Remote
 jabba ls-remote
+jabba ls-remote 'adopt@' --latest minor
 
 # Install
 jabba install [version]
@@ -59,11 +66,10 @@ jabba alias default [version]
 # Darwin
 /usr/libexec/java_home -V
 
+#
 export JAVA_VERSION="`/usr/libexec/PlistBuddy -c 'Print :JavaVM:JVMVersion' $(dirname $(/usr/libexec/java_home -v 1.8))/Info.plist`"
-jabba link system@$JAVA_VERSION $(dirname $(dirname $(/usr/libexec/java_home -v 1.8)))
-
-export JAVA_VERSION="`/usr/libexec/PlistBuddy -c 'Print :JavaVM:JVMVersion' $(dirname $(/usr/libexec/java_home -v 14.0))/Info.plist`"
-jabba link system@$JAVA_VERSION $(dirname $(dirname $(/usr/libexec/java_home -v 14.0)))
+# FIXME: 1.8.0_265 is not a valid version / 1.8.0-265 is a valid version
+jabba link system@"$JAVA_VERSION" $(dirname $(dirname $(/usr/libexec/java_home -v 1.8)))
 
 jabba ls
 ```
