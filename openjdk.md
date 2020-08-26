@@ -101,6 +101,13 @@ Enabling NPAPI in Chrome Version 42 and later
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -109,5 +116,6 @@ docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
   -h openjdk \
   --name openjdk \
+  --network workbench \
   docker.io/library/openjdk:8-jre-slim
 ```

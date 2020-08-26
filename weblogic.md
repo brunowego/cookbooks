@@ -112,6 +112,15 @@ echo -e '[INFO]\thttp://127.0.0.1:7001/console'
 ```
 
 ```sh
+# Libs
+wget \
+  -P '/opt/oracle/weblogic/domain/lib' \
+  --content-disposition \
+  --no-check-certificate \
+  'https://[domain]/path/to/lib.jar'
+```
+
+```sh
 #
 $WEBLOGIC_MIDDLEWARE_HOME/../domain/startWebLogic.sh
 ```

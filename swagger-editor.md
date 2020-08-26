@@ -13,6 +13,7 @@ docker network create workbench \
 
 ```sh
 docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h swagger-editor \
   -p 8080:8080 \
   --name swagger-editor \

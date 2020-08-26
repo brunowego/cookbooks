@@ -25,15 +25,13 @@ Spring Framework
 - [OpenJDK](https://openjdk.java.net/)
 - [Zulu OpenJDK](https://www.azul.com/downloads/zulu-community/)
 
-## App
+## CLI
 
 ### Installation
 
 #### Darwin
 
 - [Download Java for Mac OS X](https://java.com/en/download/mac_download.jsp)
-
-## CLI
 
 ### Usage
 

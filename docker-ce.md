@@ -1,5 +1,104 @@
 # Docker Community Edition (CE)
 
+## Daemon
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew cask install docker
+```
+
+#### APT
+
+##### Xenial Xerus 16.04 and newer
+
+```sh
+curl -fsSL 'https://download.docker.com/linux/ubuntu/gpg' | \
+  sudo apt-key add - && sudo apt-key fingerprint 0EBFCD88
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+```
+
+```sh
+sudo apt update
+sudo apt -y install docker-ce
+```
+
+#### YUM
+
+```sh
+yum check-update
+sudo yum-config-manager --add-repo 'https://download.docker.com/linux/centos/docker-ce.repo'
+sudo yum -y install docker-ce
+```
+
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y docker-ce
+```
+
+### Service
+
+#### Systemd
+
+```sh
+sudo systemctl enable --now docker
+```
+
+### Configuration
+
+#### Linux
+
+```sh
+sudo groupadd docker
+```
+
+```sh
+sudo usermod -aG docker "$USER" && \
+  sudo su - "$USER"
+```
+
+### Uninstall
+
+#### APT
+
+```sh
+sudo apt purge -y docker-ce
+sudo apt autoremove
+```
+
+#### YUM
+
+```sh
+sudo yum remove -y docker-ce
+```
+
+#### Zypper
+
+```sh
+sudo zypper rm docker
+```
+
+### Tips
+
+#### Deep Clean
+
+```sh
+sudo rm -r /etc/docker
+sudo rm -r /var/lib/docker
+sudo rm -r /srv/docker
+sudo rm -r /etc/sysconfig/docker
+sudo rm -r /run/docker
+```
+
+```sh
+sudo groupdel docker
+```
+
 ## CLI
 
 ### Dependencies
@@ -143,102 +242,3 @@ TODO
 <!--
 http://blog.jonathanargentiero.com/docker-sed-cannot-rename-etcsedl8ysxl-device-or-resource-busy/
 -->
-
-## Daemon
-
-### Installation
-
-#### Homebrew
-
-```sh
-brew cask install docker
-```
-
-#### APT
-
-##### Xenial Xerus 16.04 and newer
-
-```sh
-curl -fsSL 'https://download.docker.com/linux/ubuntu/gpg' | \
-  sudo apt-key add - && sudo apt-key fingerprint 0EBFCD88
-
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-```
-
-```sh
-sudo apt update
-sudo apt -y install docker-ce
-```
-
-#### YUM
-
-```sh
-yum check-update
-sudo yum-config-manager --add-repo 'https://download.docker.com/linux/centos/docker-ce.repo'
-sudo yum -y install docker-ce
-```
-
-#### Zypper
-
-```sh
-sudo zypper refresh
-sudo zypper install -y docker-ce
-```
-
-### Service
-
-#### Systemd
-
-```sh
-sudo systemctl enable --now docker
-```
-
-### Configuration
-
-#### Linux
-
-```sh
-sudo groupadd docker
-```
-
-```sh
-sudo usermod -aG docker "$USER" && \
-  sudo su - "$USER"
-```
-
-### Uninstall
-
-#### APT
-
-```sh
-sudo apt purge -y docker-ce
-sudo apt autoremove
-```
-
-#### YUM
-
-```sh
-sudo yum remove -y docker-ce
-```
-
-#### Zypper
-
-```sh
-sudo zypper rm docker
-```
-
-### Tips
-
-#### Deep Clean
-
-```sh
-sudo rm -r /etc/docker
-sudo rm -r /var/lib/docker
-sudo rm -r /srv/docker
-sudo rm -r /etc/sysconfig/docker
-sudo rm -r /run/docker
-```
-
-```sh
-sudo groupdel docker
-```

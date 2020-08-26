@@ -6,6 +6,13 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 #### 5.x
@@ -21,6 +28,7 @@ docker run -d \
   -v mysql-data:/var/lib/mysql \
   -p 3306:3306 \
   --name mysql \
+  --network workbench \
   docker.io/library/mysql:5.7
 ```
 
@@ -37,6 +45,7 @@ docker run -d \
   -v mysql-data:/var/lib/mysql \
   -p 3306:3306 \
   --name mysql \
+  --network workbench \
   docker.io/library/mysql:8.0 --default-authentication-plugin=mysql_native_password
 ```
 

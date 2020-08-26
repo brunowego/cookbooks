@@ -126,7 +126,7 @@ docker restart mysql
 
 #
 # docker exec -i mysql /usr/bin/mysql -D inventory -u debezium -p'debezium' -v <<-\EOSQL
-# CREATE DATABASE app;
+# CREATE DATABASE `app`;
 # USE app;
 # EOSQL
 

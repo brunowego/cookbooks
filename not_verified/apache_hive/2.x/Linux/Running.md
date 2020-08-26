@@ -87,7 +87,8 @@ schematool -dbType postgres -initSchema
 ### MySQL
 
 ```sh
-curl -L https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.47.tar.gz | sudo tar -xzC ${HIVE_HOME}/lib mysql-connector-java-5.1.47/mysql-connector-java-5.1.47.jar --strip-components 1
+curl -L https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.47.tar.gz | \
+  sudo tar -xzC ${HIVE_HOME}/lib mysql-connector-java-5.1.47/mysql-connector-java-5.1.47.jar --strip-components 1
 ```
 
 ```sh

@@ -4,6 +4,10 @@
 
 - [The Sass Ampersand](https://css-tricks.com/the-sass-ampersand/)
 
+## Tools
+
+- [CSS 2 SASS/SCSS Converter](https://css2sass.herokuapp.com/)
+
 ## CLI
 
 ### Installation

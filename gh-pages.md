@@ -57,8 +57,16 @@ npm run deploy
 ```sh
 | Type | Name | Value | TTL |
 | --- | --- | --- | --- |
-| A | @ | 185.199.108.153 | 600 seconds |
-| A | @ | 185.199.109.153 | 600 seconds |
-| A | @ | 185.199.110.153 | 600 seconds |
-| A | @ | 185.199.111.153 | 600 seconds |
+| A | @ | `185.199.108.153` | 600 seconds |
+| A | @ | `185.199.109.153` | 600 seconds |
+| A | @ | `185.199.110.153` | 600 seconds |
+| A | @ | `185.199.111.153` | 600 seconds |
+```
+
+#### Subdomain
+
+```sh
+| Type | Host | Value | TTL |
+| --- | --- | --- | --- |
+| CNAME | `[subdomain]` | `[username].github.io` | 600 seconds |
 ```

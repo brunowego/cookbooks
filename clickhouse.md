@@ -24,7 +24,7 @@ echo -e '[INFO]\thttp://127.0.0.1:8123'
 
 ```sh
 docker exec -i clickhouse /usr/bin/clickhouse client -n <<-EOSQL
-CREATE DATABASE docker;
+CREATE DATABASE `docker`;
 CREATE TABLE docker.docker (x Int32) ENGINE = Log;
 EOSQL
 ```

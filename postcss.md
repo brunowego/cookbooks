@@ -13,3 +13,15 @@ link(rel='stylesheet', media='(min-width: 1170px)', href='/assets/styles/app-xl.
 postcss-combine-media-query
 postcss-extract-media-query
 -->
+
+### Configuration
+
+```sh
+cat << EOF > ./.postcssrc.json
+{
+  "plugins": {
+    "autoprefixer": {}
+  }
+}
+EOF
+```

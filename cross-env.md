@@ -1,4 +1,4 @@
-# Nodemon
+# cross-env
 
 ## CLI
 
@@ -7,7 +7,7 @@
 #### NPM
 
 ```sh
-npm install nodemon -D
+npm install cross-env -D
 ```
 
 ### Configuration
@@ -15,6 +15,7 @@ npm install nodemon -D
 ```json
 {
   "scripts": {
+    "start": "cross-env NODE_ENV=production node ./index.js",
     "dev": "cross-env NODE_ENV=development nodemon ./index.js"
   }
 }

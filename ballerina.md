@@ -1,6 +1,8 @@
 # Ballerina
 
+<!--
 https://github.com/CORDEA/archivist
+-->
 
 ## Dependencies
 
@@ -25,5 +27,7 @@ brew install ballerina
 #### Homebrew
 
 ```sh
-curl -L http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar -o $(brew --prefix ballerina)/bre/lib/mysql-connector-java-5.1.47.jar
+curl \
+  -L http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar \
+  -o $(brew --prefix ballerina)/bre/lib/mysql-connector-java-5.1.47.jar
 ```
