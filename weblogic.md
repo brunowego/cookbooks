@@ -111,6 +111,30 @@ java -Xmx1024m -XX:MaxPermSize=256m weblogic.Server
 echo -e '[INFO]\thttp://127.0.0.1:7001/console'
 ```
 
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# WLS Domain
+export WEBLOGIC_DOMAIN_HOME='/opt/oracle/weblogic/domain'
+```
+
+```sh
+sudo su - "$USER"
+```
+
+### Running
+
+```sh
+# Start WebLogic
+$WEBLOGIC_DOMAIN_HOME/startWebLogic.sh
+```
+
+### Docs
+
+#### Add Library
+
 ```sh
 # Libs
 wget \
@@ -118,11 +142,6 @@ wget \
   --content-disposition \
   --no-check-certificate \
   'https://[domain]/path/to/lib.jar'
-```
-
-```sh
-#
-$WEBLOGIC_MIDDLEWARE_HOME/../domain/startWebLogic.sh
 ```
 
 ### Issues

@@ -8,13 +8,7 @@ Spring Framework
 
 ## References
 
-- [Apache Maven](/apache_maven.md)
-- [Apache Tomcat](/apache_tomcat.md)
-- [GlassFish](/glassfish.md)
-- [IBM WebSphere](/ibm_websphere.md)
-- [Jetty Runner](/jetty-runner.md)
-- [Oracle WebLogic Server (WLS)](/weblogic.md)
-- [WildFly (JBoss Application Server)](/wildfly.md)
+- [Java SE - JDK](/java-se-jdk.md)
 
 ## Distributions
 
@@ -24,6 +18,16 @@ Spring Framework
 - [Liberica JDK](https://bell-sw.com/pages/downloads/)
 - [OpenJDK](https://openjdk.java.net/)
 - [Zulu OpenJDK](https://www.azul.com/downloads/zulu-community/)
+
+## Tooling
+
+- [Apache Maven](/apache_maven.md)
+- [Apache Tomcat](/apache_tomcat.md)
+- [GlassFish](/glassfish.md)
+- [IBM WebSphere](/ibm_websphere.md)
+- [Jetty Runner](/jetty-runner.md)
+- [Oracle WebLogic Server (WLS)](/weblogic.md)
+- [WildFly (JBoss Application Server)](/wildfly.md)
 
 ## CLI
 
