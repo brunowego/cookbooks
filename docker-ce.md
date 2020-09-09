@@ -162,6 +162,20 @@ docker --help
 
 ### Tips
 
+#### Ignore File
+
+Python example:
+
+```sh
+cat << EOF > ./.dockerignore
+/**
+
+!/requirements.txt
+!/app.py
+
+EOF
+```
+
 #### Shell
 
 ```sh

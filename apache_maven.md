@@ -2,6 +2,7 @@
 
 ## References
 
+- [Project Object Model (POM)](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 - [Maven Version Manager](/mvnvm.md)
 
 ## CLI
@@ -54,6 +55,7 @@ mvn clean
 
 #
 mvn install
+mvn install -DskipTests
 
 #
 mvn package
@@ -183,7 +185,10 @@ echo -n | \
 sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 ```
 
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
 ```sh
+# Apache Maven
 export MAVEN_OPTS="$MAVEN_OPTS -Djavax.net.ssl.trustStore=$JAVA_HOME/lib/security/cacerts"
 ```
 

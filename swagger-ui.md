@@ -1,5 +1,9 @@
 # Swagger UI
 
+## References
+
+- [Download](https://swagger.io/tools/swagger-ui/download/)
+
 ## Helm
 
 ### References

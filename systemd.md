@@ -54,6 +54,12 @@ systemctl \
 
 ### Tips
 
+#### Visual Studio Code
+
+```sh
+code --install-extension coolbear.systemd-unit-file
+```
+
 #### Custom
 
 ```sh

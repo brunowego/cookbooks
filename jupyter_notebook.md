@@ -63,6 +63,12 @@ jupyter notebook stop
 
 ## Tips
 
+### Visual Studio Code
+
+```sh
+code --install-extension colinfang.my-nbpreviewer
+```
+
 ### Global Kernel
 
 ```sh

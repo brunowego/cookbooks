@@ -1,5 +1,10 @@
 # Process Manager 2 (PM2)
 
+## References
+
+- [Cheatsheet](https://devhints.io/pm2)
+- [Log management](https://pm2.keymetrics.io/docs/usage/log-management/)
+
 ## CLI
 
 ### Installation
@@ -82,4 +87,72 @@ pm2 resurrect
 
 #
 pm2 generate
+```
+
+### Tips
+
+#### Read Logs
+
+```sh
+tail -f "$HOME"/.pm2/logs/[app-name]-error.log
+tail -f "$HOME"/.pm2/logs/[app-name]-out.log
+
+# Put it over HTTP server
+( cd "$HOME"/.pm2/logs; python -m SimpleHTTPServer 8000 ) # Python v2.x
+( cd "$HOME"/.pm2/logs; python -m http.server 8000 ) # Python v3.x
+
+#
+watch -n 2 'curl [domain]:8000/[app-name]-error.log'
+watch -n 2 'curl [domain]:8000/[app-name]-out.log'
+```
+
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h pm2 \
+  --name pm2 \
+  --network workbench \
+  docker.io/keymetrics/pm2:14-alpine pm2 -h
+```
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:4000'
+```
+
+### Dockerfile
+
+```Dockerfile
+FROM docker.io/library/node:13.5.0-alpine AS build
+
+WORKDIR /usr/src/app
+
+COPY ./package*.json ./
+
+RUN npm install
+
+COPY ./ ./
+
+RUN npm run build
+
+
+FROM docker.io/library/nginx:1.17.5-alpine
+
+COPY ./default.conf /etc/nginx/conf.d
+
+COPY --from=build /usr/src/app/dist /usr/share/nginx/html
+
+EXPOSE 4000
+
+CMD ["pm2-runtime", "./src/index.js"]
 ```

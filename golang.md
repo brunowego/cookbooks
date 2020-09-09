@@ -82,6 +82,14 @@ go version
 go env
 ```
 
+### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension ms-vscode.Go
+```
+
 ### Uninstall
 
 ```sh

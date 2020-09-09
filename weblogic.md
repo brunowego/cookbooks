@@ -51,6 +51,15 @@ rm -fR ./properties
 
 ## CLI
 
+### Dependencies
+
+#### JAR
+
+##### 12.1.x
+
+- [Apache Ant](/apache_ant.md)
+- Java SE 7
+
 ### Installation
 
 #### JAR
@@ -58,55 +67,101 @@ rm -fR ./properties
 <!-- ##### 12.1.x
 
 1. [Free Oracle WebLogic Server Installers for Development](https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html)
-2. Find Oracle WebLogic Server 12.1.3 -> Mac OS X with 32-bit JVM
-
-```sh
-unzip /path/to/wls1213_dev_update3.zip
-
-export WEBLOGIC_MIDDLEWARE_HOME='/opt/oracle/weblogic/middleware'
-
-sudo mkdir -p "$WEBLOGIC_MIDDLEWARE_HOME"
-
-(cd "$WEBLOGIC_MIDDLEWARE_HOME" && java -jar /absolute/path/to/fmw_12.2.1.3.0_wls_quick.jar)
-``` -->
-
-##### 12.2.x
-
-1. [Free Oracle WebLogic Server Installers for Development](https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html)
-2. Find Oracle WebLogic Server 12.2.1.3 -> Quick Installer for Mac OSX, Windows and Linux
+2. Find Oracle WebLogic Server 12.1.3 -> Zip distribution Update 3 for Mac OSX, Windows, and Linux
    - Accept the terms
    - Click in Download button
 
 ```sh
 #
-unzip /absolute/path/to/fmw_12.2.1.3.0_wls_quick_Disk1_1of1.zip
+export WEBLOGIC_MIDDLEWARE_HOME='/opt/oracle/weblogic/12.1.3/middleware'
 
 #
-export WEBLOGIC_MIDDLEWARE_HOME='/opt/oracle/weblogic/middleware'
+sudo mkdir -p "$WEBLOGIC_MIDDLEWARE_HOME"
 
 #
-sudo mkdir -p "$WEBLOGIC_MIDDLEWARE_HOME" && cd "$_"
-
-sudo chown "$USER" "$WEBLOGIC_MIDDLEWARE_HOME/../"
+sudo chown -R "$USER" "$WEBLOGIC_MIDDLEWARE_HOME/../"
 
 #
-java -jar /absolute/path/to/fmw_12.2.1.3.0_wls_quick.jar
+unzip ~/Downloads/wls1213_dev_update3.zip -d "$WEBLOGIC_MIDDLEWARE_HOME"
 
+#
+"$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/configure.sh -silent
+
+source /u01/middleware1221/wlserver/server/bin/setWLSEnv.sh
+java weblogic.WLST << EOF
+startServer(adminServerName='AdminServer',domainName='mydomain',url='t3://localhost:7001',username='weblogic',password='weblogic01',domainDir='/u01/domains/mydomain',jvmArgs='-Xms256m -Xmx512m -XX:CompileThreshold=8000 -XX:PermSize=128m -XX:MaxPermSize=256m')
+exit()
+EOF
+
+"$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/wlserver/common/bin/wlst.sh -skipWLSModuleScanning /tmp/config.py
+"$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/wlserver/common/bin/wlst.sh -skipWLSModuleScanning wlsdecrypt.py boot.properties
+
+"$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/wlserver/common/bin/wlst.sh << EOF
+startNodeManager(NodeManagerHome='/u01/domains/mydomain/nodemanager',SecureListener="false")
+exit()
+EOF
+
+mkdir -p "$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/user_projects/domains/standalone/servers/AdminServer/security
+
+cat << \EOF > "$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/user_projects/domains/standalone/servers/AdminServer/security/boot.properties
+username=admin
+password=Pa$$w0rd!
+EOF
+
+#
+rm ~/Downloads/wls1213_dev_update3.zip
+``` -->
+
+##### 12.2.x
+
+1. [Free Oracle WebLogic Server Installers for Development](https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html)
+2. Find Oracle WebLogic Server 12.2.1.4 -> Quick Installer for Mac OSX, Windows and Linux
+   - Accept the terms
+   - Click in Download button
+
+```sh
+#
+export WEBLOGIC_MIDDLEWARE_HOME='/opt/oracle/weblogic/12.2.1.4/middleware'
+
+#
+sudo mkdir -p "$WEBLOGIC_MIDDLEWARE_HOME"
+
+#
+sudo chown -R "$USER" "$WEBLOGIC_MIDDLEWARE_HOME/../"
+
+#
+unzip ~/Downloads/fmw_12.2.1.4.0_wls_quick_Disk1_1of1.zip -d "$WEBLOGIC_MIDDLEWARE_HOME"
+
+#
+( cd "$WEBLOGIC_MIDDLEWARE_HOME" && java -jar "$WEBLOGIC_MIDDLEWARE_HOME"/fmw_12.2.1.4.0_wls_quick.jar )
+
+#
+rm ~/Downloads/fmw_12.2.1.4.0_wls_quick_Disk1_1of1.zip
+rm -f "$WEBLOGIC_MIDDLEWARE_HOME"/fmw_*
+rm -fR /Users/brunowego/oraInventory
+```
+
+### Bootstrap
+
+```sh
 #
 export USER_MEM_ARGS='-Xmx1024m -XX:MaxPermSize=256m'
 
 #
-source "$WEBLOGIC_MIDDLEWARE_HOME/wls12213/wlserver/server/bin/setWLSenv.sh"
+source "$WEBLOGIC_MIDDLEWARE_HOME"/wls12214/wlserver/server/bin/setWLSenv.sh
 
 #
-cd "$WEBLOGIC_MIDDLEWARE_HOME/../"
+mkdir -p "$WEBLOGIC_MIDDLEWARE_HOME"/../domain
 
 #
-sudo mkdir -p domain && cd "$_"
+( cd "$WEBLOGIC_MIDDLEWARE_HOME"/../domain && java -Xmx1024m -XX:MaxPermSize=256m weblogic.Server )
+```
 
-#
-java -Xmx1024m -XX:MaxPermSize=256m weblogic.Server
+- Would you like the server to create a default configuration and boot? y
+- Enter username to boot WebLogic server: admin
+- Enter username to boot WebLogic server: Pa$$w0rd!
 
+```sh
 #
 echo -e '[INFO]\thttp://127.0.0.1:7001/console'
 ```
@@ -117,7 +172,8 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 
 ```sh
 # WLS Domain
-export WEBLOGIC_DOMAIN_HOME='/opt/oracle/weblogic/domain'
+export WEBLOGIC_DOMAIN_HOME='/opt/oracle/weblogic/12.2.1.4/domain'
+export EXTRA_JAVA_PROPERTIES="-Duser.language=en -Duser.country=US ${EXTRA_JAVA_PROPERTIES}"
 ```
 
 ```sh
@@ -128,10 +184,46 @@ sudo su - "$USER"
 
 ```sh
 # Start WebLogic
-$WEBLOGIC_DOMAIN_HOME/startWebLogic.sh
+"$WEBLOGIC_DOMAIN_HOME"/startWebLogic.sh
 ```
 
 ### Docs
+
+#### Origem de Dados Genérica
+
+1. Serviços
+2. Origens de Dados
+2. Novo -> Origem de Dados Genérica
+   - Nome: jdbc/\[app-name]
+   - Nome da JNDI: jdbc/\[app-name]
+   - Tipo de Banco de Dados: MySQL
+   - Próximo
+   - Driver de Banco de Dados: MySQL's Driver (Type 4) Versions:using com.mysql.jdbc.Driver
+   - Próximo
+   - \[x] Suporta Transações Globais
+   - \[x] Commit de Uma Fase
+   - Próximo
+   - Nome do Banco de Dados:
+   - Nome do Host:
+   - Nome do Usuário do Banco de Dados:
+   - Senha:
+   - Próximo
+   - Testar Configuração
+   - Próximo
+   - Selecionar Alvos -> \[x] myserver
+   - Finalizar
+
+#### Implantar
+
+1. Implantações
+2. Instalar
+   - Caminho: /absolute/path/to/target
+   - Select WAR file
+   - Próximo
+   - \[x] Instalar esta implantação como um aplicativo
+   - Próximo
+   - Próximo
+   - Finalizar
 
 #### Add Library
 
@@ -155,3 +247,10 @@ The OpenJDK JVM is not supported on this platform.
 OpenJDK is not listed within the [Oracle Fusion Middleware Supported System Configurations](https://www.oracle.com/middleware/technologies/fusion-certification.html).
 
 Install [Oracle JDK](/oracle-jdk.md)
+
+### Uninstall
+
+```sh
+# Darwin
+rm -fR /opt/oracle/weblogic/12.2.1.4
+```

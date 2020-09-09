@@ -29,6 +29,14 @@ brew install ruby
 ruby --version | head -1
 ```
 
+### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension misogi.ruby-rubocop
+```
+
 ### Issues
 
 #### Permission denied

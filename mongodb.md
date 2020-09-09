@@ -66,6 +66,13 @@ rm ./current-values.yaml
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -77,6 +84,7 @@ docker run -d \
   -e MONGO_INITDB_ROOT_PASSWORD=root \
   -p 27017:27017 \
   --name mongo \
+  --network workbench \
   docker.io/library/mongo:4.0
 ```
 
@@ -91,6 +99,7 @@ docker run -it --rm \
 
 ```sh
 docker rm -f mongo
+
 docker volume rm mongo-data
 ```
 

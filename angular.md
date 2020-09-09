@@ -11,6 +11,12 @@ https://www.linkedin.com/learning/angular-building-an-interface/building-an-inte
 
 ### Installation
 
+#### NPM
+
+```sh
+npm install @angular/cli -g
+```
+
 #### Homebrew
 
 ```sh
@@ -21,4 +27,14 @@ brew install angular-cli
 
 ```sh
 ng help
+```
+
+### Usage
+
+```sh
+#
+ng new [app-name]
+
+#
+ng serve
 ```

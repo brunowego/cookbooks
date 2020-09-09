@@ -403,6 +403,12 @@ indent_size = 4
 EOF
 ```
 
+#### Visual Studio Code
+
+```sh
+code --install-extension alefragnani.jenkins-status
+```
+
 ## Docs
 
 ### Enable security

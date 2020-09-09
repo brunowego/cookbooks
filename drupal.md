@@ -1,6 +1,17 @@
 # Drupal
 
+## Tools
+
+- [Drush](/drush.md)
+
 ## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
 
 ### Running
 
@@ -15,6 +26,7 @@ docker run -d \
   -v drupal-mysql-data:/var/lib/mysql \
   -p 3306:3306 \
   --name drupal-mysql \
+  --network workbench \
   docker.io/library/mysql:5.7
 ```
 
@@ -25,7 +37,8 @@ docker run -d \
   -v drupal-data:/var/www/html \
   -p 9000:9000 \
   --name drupal \
-  docker.io/library/drupal:8.7-fpm-alpine
+  --network workbench \
+  docker.io/library/drupal:9.0-fpm-alpine
 ```
 
 ```sh
@@ -36,6 +49,7 @@ docker run -d \
   -v drupal-data:/var/www/html \
   -p 8080:80 \
   --name drupal-nginx \
+  --network workbench \
   docker.io/library/nginx:1.17-alpine
 ```
 

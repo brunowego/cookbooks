@@ -18,16 +18,16 @@ rename
 
 ### Usage
 
-#### Slugify
-
 ```sh
+# Slugify
 rename -fvc --nows *
-```
 
-#### Replace (regex)
-
-```sh
-rename -v 's/[from]/[to]/' *
+# Replace (regex)
+rename \
+  -v \
+  --dry-run \
+  's/[from]/[to]/' \
+  *
 ```
 
 <!-- ####

@@ -2,6 +2,13 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -15,6 +22,7 @@ docker run -d \
   -v joomla-mysql-data:/var/lib/mysql \
   -p 3306:3306 \
   --name joomla-mysql \
+  --network workbench \
   docker.io/library/mysql:5.7
 ```
 
@@ -22,13 +30,14 @@ docker run -d \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h joomla \
-  # -e JOOMLA_DB_HOST=joomla-mysql \
-  # -e JOOMLA_DB_USER=joomla \
-  # -e JOOMLA_DB_PASSWORD=joomla \
-  # -e JOOMLA_DB_NAME=joomla \
+  -e JOOMLA_DB_HOST='joomla-mysql' \
+  -e JOOMLA_DB_USER='joomla' \
+  -e JOOMLA_DB_PASSWORD='joomla' \
+  -e JOOMLA_DB_NAME='joomla' \
   -v joomla-data:/var/www/html \
   -p 9000:9000 \
   --name joomla \
+  --network workbench \
   docker.io/library/joomla:3.9-fpm-alpine
 ```
 
@@ -40,6 +49,7 @@ docker run -d \
   -v joomla-data:/var/www/html \
   -p 8080:80 \
   --name joomla-nginx \
+  --network workbench \
   docker.io/library/nginx:1.17-alpine
 ```
 

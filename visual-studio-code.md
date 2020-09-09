@@ -77,6 +77,35 @@ code --disable-extension [extension]
 
 ### Tips
 
+#### Useful Plugins
+
+```sh
+code \
+  --install-extension EditorConfig.EditorConfig \
+  --install-extension Tyriar.sort-lines \
+  --install-extension mkxml.vscode-filesize \
+  --install-extension shardulm94.trailing-spaces \
+  --install-extension wmaurer.change-case \
+  --install-extension ldez.ignore-files \
+  --install-extension sainoba.px-to-rem
+```
+
+#### Spell Checker
+
+```sh
+code \
+  --install-extension streetsidesoftware.code-spell-checker \
+  --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
+```
+
+```sh
+# English
+jq '."cSpell.language" |= "en"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+
+# Portuguese
+jq '."cSpell.language" |= "en,pt,pt_BR"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+```
+
 #### Command-line completion
 
 ```sh

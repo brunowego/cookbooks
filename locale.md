@@ -2,16 +2,6 @@
 
 ## CLI
 
-### Commands
-
-```sh
-locale
-```
-
-```sh
-locale -a
-```
-
 ### Environment
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
@@ -24,6 +14,19 @@ export LC_ALL='en_US.UTF-8'
 
 ```sh
 sudo su - "$USER"
+```
+
+### Commands
+
+```sh
+man locale
+```
+
+### Usage
+
+```sh
+# Lists all public locales.
+locale -a
 ```
 
 ### Issues

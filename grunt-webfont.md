@@ -2,6 +2,10 @@
 
 ## Library
 
+### References
+
+- [Webfont](/webfont.md#configuration)
+
 ### Installation
 
 #### Homebrew
@@ -20,11 +24,3 @@ sudo apt -y install ttfautohint fontforge
 <!--
 {,*/}*
 -->
-
-### Configuration
-
-Add [text rules](/gitattributes.md#text)
-
-```sh
-echo '*.woff binary\n' >> ./.gitattributes
-```

@@ -4,7 +4,7 @@
 
 - [HiveQL](https://cwiki.apache.org/confluence/display/Hive/LanguageManual)
 
-## Docker
+<!-- ## Docker
 
 ```sh
 export HADOOP_ENV_FILE=$(base64 <(cat << \EOF
@@ -81,4 +81,12 @@ EOF
     environment:
       SERVICE_PRECONDITION: "namenode:50070 datanode:50075 mysql-metastore:3306"
     ports:
-      - "19083:9083"
+      - "19083:9083" -->
+
+## Tips
+
+### Visual Studio Code
+
+```sh
+code --install-extension josephtbradley.hive-sql
+```

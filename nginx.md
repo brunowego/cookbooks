@@ -139,6 +139,12 @@ xdg-open 'http://127.0.0.1' || open 'http://127.0.0.1' || echo -e '[INFO]\thttp:
 
 ### Tips
 
+#### Visual Studio Code
+
+```sh
+code --install-extension shanoor.vscode-nginx
+```
+
 #### EditorConfig
 
 ```sh

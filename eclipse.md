@@ -19,3 +19,13 @@ brew cask install eclipse-javascript
 #
 brew cask install eclipse-php
 ```
+
+### Configuration
+
+```sh
+# Git ignore
+cat << EOF >> ~/.gitignore_global
+/.classpath
+/.project
+EOF
+```

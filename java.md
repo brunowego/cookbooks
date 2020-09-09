@@ -37,6 +37,13 @@ Spring Framework
 
 - [Download Java for Mac OS X](https://java.com/en/download/mac_download.jsp)
 
+### Configuration
+
+```sh
+# Git ignore
+echo '/*.jar' >> ~/.gitignore_global
+```
+
 ### Usage
 
 ```sh
@@ -49,6 +56,18 @@ java -jar './path/to/file.war'
 ```
 
 ### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension vscjava.vscode-java-pack
+```
+
+#### Get Manifest
+
+```sh
+jar tvf [filename].jar
+```
 
 <!-- ####
 

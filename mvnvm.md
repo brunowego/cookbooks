@@ -34,6 +34,9 @@ echo 'mvn_version=2.2.1' > mvnvm.properties
 
 # 3.x
 echo 'mvn_version=3.6.3' > mvnvm.properties
+
+# Git ignore
+echo '/mvnvm.properties' >> ~/.gitignore_global
 ```
 
 ### Usage

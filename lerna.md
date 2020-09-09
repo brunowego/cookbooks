@@ -1,6 +1,7 @@
 # Lerna
 
 <!--
+https://github.com/wixplosives/sample-monorepo
 https://github.com/julianiff/living-styleguide/tree/19fb7227e7da3501d3f24e3866cb5ecfb1cbd4c2
 
 https://buttercms.com/blog/nextjs-storybook-and-lerna-build-a-monorepo-structure

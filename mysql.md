@@ -449,7 +449,7 @@ mysqlimport \
 #### Git ignore
 
 ```sh
-echo 'dump*.sql' >> ~/.gitignore_global
+echo '/dump*.sql' >> ~/.gitignore_global
 ```
 
 <!-- #### Diff

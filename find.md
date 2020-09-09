@@ -10,18 +10,28 @@
 man find
 ```
 
-## Examples
-
-### Kill Process
+## Usage
 
 ```sh
+# Kill Process
 pkill find
+
+# Wildcard
+find ./ -name \*.[extension]
 ```
 
-### Wildcard
+## Tips
+
+### Run in all subdirectories
 
 ```sh
-find . -name \*.[extension]
+find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c 'cd "{}" && [command]' \;
+```
+
+### Move all files from subfolders to parent folder
+
+```sh
+find ./ -mindepth 2 -type f -print -exec mv {} ./ \;
 ```
 
 <!-- ###
@@ -30,9 +40,3 @@ find . -name \*.[extension]
 find . -type f -exec /bin/sh -c 'echo "{}"' \;
 find . -exec /bin/sh -c {}/"${name}" \;
 ``` -->
-
-### Move all files from subfolders to parent folder
-
-```sh
-find . -mindepth 2 -type f -print -exec mv {} . \;
-```

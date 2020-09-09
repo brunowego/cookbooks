@@ -52,13 +52,13 @@ proxy-set() {
         export socks_proxy="$ZSH_SOCKS_PROXY"
         export no_proxy="$ZSH_NO_PROXY"
 
-        export DOCKER_BUILD_OPTS="--build-arg http_proxy=$http_proxy --build-arg https_proxy=$https_proxy --build-arg no_proxy=$no_proxy"
-        export DOCKER_RUN_OPTS="-e http_proxy=$http_proxy -e https_proxy=$https_proxy -e socks_proxy=$socks_proxy -e no_proxy=$no_proxy"
-        export MINIKUBE_START_OPTS="--docker-env http_proxy=$http_proxy --docker-env https_proxy=$https_proxy --docker-env socks_proxy=$socks_proxy --docker-env no_proxy=$no_proxy"
-        export DOCKER_MACHINE_CREATE_OPTS="--engine-env http_proxy=$http_proxy --engine-env https_proxy=$https_proxy --engine-env socks_proxy=$socks_proxy --engine-env no_proxy=$no_proxy"
-        export JAVA_OPTS="-Dhttp.proxyHost=$ZSH_PROXY_HOST -Dhttp.proxyPort=$ZSH_PROXY_PORT -Dhttps.proxyHost=$ZSH_PROXY_HOST -Dhttps.proxyPort=$ZSH_PROXY_PORT"
-        export MAVEN_OPTS="-Dhttp.proxyHost=$ZSH_PROXY_HOST -Dhttp.proxyPort=$ZSH_PROXY_PORT -Dhttps.proxyHost=$ZSH_PROXY_HOST -Dhttps.proxyPort=$ZSH_PROXY_PORT"
-        export S2I_FLAGS="-e http_proxy=$http_proxy -e https_proxy=$https_proxy -e no_proxy=$no_proxy"
+        export DOCKER_BUILD_OPTS="$DOCKER_BUILD_OPTS --build-arg http_proxy=$http_proxy --build-arg https_proxy=$https_proxy --build-arg no_proxy=$no_proxy"
+        export DOCKER_RUN_OPTS="$DOCKER_RUN_OPTS -e http_proxy=$http_proxy -e https_proxy=$https_proxy -e socks_proxy=$socks_proxy -e no_proxy=$no_proxy"
+        export MINIKUBE_START_OPTS="$MINIKUBE_START_OPTS --docker-env http_proxy=$http_proxy --docker-env https_proxy=$https_proxy --docker-env socks_proxy=$socks_proxy --docker-env no_proxy=$no_proxy"
+        export DOCKER_MACHINE_CREATE_OPTS="$DOCKER_MACHINE_CREATE_OPTS --engine-env http_proxy=$http_proxy --engine-env https_proxy=$https_proxy --engine-env socks_proxy=$socks_proxy --engine-env no_proxy=$no_proxy"
+        export JAVA_OPTS="$JAVA_OPTS -Dhttp.proxyHost=$ZSH_PROXY_HOST -Dhttp.proxyPort=$ZSH_PROXY_PORT -Dhttps.proxyHost=$ZSH_PROXY_HOST -Dhttps.proxyPort=$ZSH_PROXY_PORT"
+        export MAVEN_OPTS="$MAVEN_OPTS -Dhttp.proxyHost=$ZSH_PROXY_HOST -Dhttp.proxyPort=$ZSH_PROXY_PORT -Dhttps.proxyHost=$ZSH_PROXY_HOST -Dhttps.proxyPort=$ZSH_PROXY_PORT"
+        export S2I_FLAGS="$S2I_FLAGS -e http_proxy=$http_proxy -e https_proxy=$https_proxy -e no_proxy=$no_proxy"
 
         proxy-list
 

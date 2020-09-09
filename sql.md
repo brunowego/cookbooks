@@ -1,8 +1,10 @@
 # Structured Query Language (SQL)
 
-## Tips
+## Syntax
 
-### Visual Studio Code
+### Tips
+
+#### Visual Studio Code
 
 ```sh
 code --install-extension adpyke.vscode-sql-formatter

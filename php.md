@@ -154,6 +154,14 @@ docker run -d \
 
 ## Tips
 
+### Visual Studio Code
+
+```sh
+code \
+  --install-extension bmewburn.vscode-intelephense-client \
+  --install-extension ikappas.phpcs
+```
+
 ### Pretty Dump
 
 ```php

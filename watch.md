@@ -20,10 +20,9 @@ brew install watch
 watch -h
 ```
 
-### Examples
-
-#### Directory changes
+### Usage
 
 ```sh
+# Directory changes
 watch -n 5 'ls -ltr | tail -n 20'
 ```

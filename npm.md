@@ -59,9 +59,22 @@ npm config get registry
 # License
 npm config set init-license 'MIT'
 npm config set init-license 'UNLICENSED'
+
+#
+npm pack
 ```
 
 ### Tips
+
+#### Link
+
+```sh
+cd /go/to/first-project
+npm link
+
+cd /go/to/second-project
+npm link [first-project-name]
+```
 
 #### Proxy
 

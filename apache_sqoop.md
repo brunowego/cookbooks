@@ -72,12 +72,12 @@ sudo ln -s /usr/local/hive/hcatalog /usr/local/hcatalog
 ```sh
 # MySQL
 ## Linux
-curl -L https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.47.tar.gz | \
+curl -L 'https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.47.tar.gz' | \
   sudo tar -xzC /usr/local/sqoop/lib mysql-connector-java-5.1.47/mysql-connector-java-5.1.47.jar --strip-components 1
 
 # PostgreSQL
 ## Linux
-curl -o /usr/local/sqoop/lib/postgresql-9.4-1201.jdbc4.jar https://jdbc.postgresql.org/download/postgresql-9.4-1201.jdbc4.jar
+curl -o /usr/local/sqoop/lib/postgresql-9.4-1201.jdbc4.jar 'https://jdbc.postgresql.org/download/postgresql-9.4-1201.jdbc4.jar'
 ```
 
 ### Usage

@@ -1,4 +1,4 @@
-# Python 3
+# Python
 
 ## References
 
@@ -134,14 +134,21 @@ python3 -h
 # Version
 python --version 2>&1 | head -1
 
-# HTTPS Server
-python -m SimpleHTTPServer
+# HTTP Server
+python -m SimpleHTTPServer # Python v2.x
+python -m http.server # Python v3.x
 
 # REPL
 python3
 ```
 
 ### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension ms-python.python
+```
 
 #### Warnings
 

@@ -2,9 +2,9 @@
 
 ## Tools
 
-- [What Font Is](https://www.whatfontis.com/)
-- [WhatTheFont!](https://www.myfonts.com/WhatTheFont/)
-- [Font Identifier](https://www.fontsquirrel.com/matcherator)
+- [What Font Is](https://whatfontis.com/)
+- [WhatTheFont!](https://myfonts.com/WhatTheFont/)
+- [Font Identifier](https://fontsquirrel.com/matcherator)
 
 ## Tips
 

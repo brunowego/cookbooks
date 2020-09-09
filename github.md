@@ -12,6 +12,22 @@
 
 ## Docs
 
+### Dependabot
+
+```txt
+#
+@dependabot rebase
+
+#
+@dependabot ignore this dependency.
+```
+
+### Sonatype DepShield
+
+```txt
+wontfix
+```
+
 ### Add License
 
 1. Add file -> Create new file

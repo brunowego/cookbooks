@@ -153,6 +153,40 @@ git config --bool core.bare true
 
 ### Tips
 
+###
+
+```sh
+#
+git fetch --all
+
+#
+git diff [tag]
+
+#
+git diff [tag] -- [path/to/file]
+
+#
+git difftool tags/<FIRST TAG>:<FILE PATH> tags/<SECOND TAG>:<FILE PATH>
+```
+
+#### Create a New Branch
+
+```sh
+# Creating a branch from a commit
+git branch [branch-name] [hash]
+
+# Creating a branch from a tag
+git branch [branch-name] [tag-name]
+```
+
+#### Visual Studio Code
+
+```sh
+code \
+  --install-extension codezombiech.gitignore \
+  --install-extension sidneys1.gitconfig
+```
+
 #### Most recent changed branch
 
 ```sh

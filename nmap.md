@@ -36,6 +36,13 @@ yum check-update
 sudo yum -y install nmap
 ```
 
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y nmap
+```
+
 #### Chocolatey
 
 ```sh

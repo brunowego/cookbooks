@@ -28,7 +28,7 @@ sudo rpm -i ./dive_0.6.0_linux_amd64.rpm && rm ./dive_0.6.0_linux_amd64.rpm
 
 ```sh
 # Git ignore
-echo 'dive.log' >> ~/.gitignore_global
+echo '/dive.log' >> ~/.gitignore_global
 ```
 
 ### Commands

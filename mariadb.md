@@ -2,6 +2,13 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -15,6 +22,7 @@ docker run -d \
   -v mysql-data:/var/lib/mysql \
   -p 3306:3306 \
   --name mariadb \
+  --network workbench \
   docker.io/library/mariadb:10.4.8
 ```
 

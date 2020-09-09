@@ -32,7 +32,11 @@ jabba --help
 ### Configuration
 
 ```sh
+#
 echo 'adopt@1.8.0-172' > ./.jabbarc
+
+# Git ignore
+echo '/.jabbarc' >> ~/.gitignore_global
 ```
 
 ### Usage

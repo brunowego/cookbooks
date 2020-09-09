@@ -100,3 +100,11 @@ node --version | head -1
 # REPL
 node
 ```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension wix.vscode-import-cost
+```

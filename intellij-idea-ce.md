@@ -14,7 +14,10 @@ brew cask install intellij-idea-ce
 
 ```sh
 # Git ignore
-echo '.idea' >> ~/.gitignore_global
+cat << EOF >> ~/.gitignore_global
+/.idea
+/*.iml
+EOF
 ```
 
 ### Tips

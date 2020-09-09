@@ -20,5 +20,5 @@ devhttps [source] [target]
 
 ```sh
 # Git ignore
-echo '.devhttps.ca.*' >> ~/.gitignore_global
+echo '/.devhttps.ca.*' >> ~/.gitignore_global
 ```

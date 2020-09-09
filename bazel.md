@@ -1,23 +1,25 @@
 # Bazel
 
-## Dependencies
+## CLI
 
-### APT
+### Dependencies
+
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install curl gnupg
 ```
 
-## Installation
+### Installation
 
-### Homebrew
+#### Homebrew
 
 ```sh
 brew install bazel
 ```
 
-### APT
+#### APT
 
 ```sh
 echo 'deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8' | sudo tee /etc/apt/sources.list.d/bazel.list
@@ -29,7 +31,7 @@ sudo apt update
 sudo apt -y install bazel
 ```
 
-### YUM
+#### YUM
 
 ```sh
 yum check-update
@@ -37,8 +39,16 @@ sudo yum-config-manager --add-repo https://copr.fedorainfracloud.org/coprs/vbatt
 sudo yum -y install bazel
 ```
 
-## Commands
+### Commands
 
 ```sh
 bazel info
+```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension devondcarew.bazel-code
 ```

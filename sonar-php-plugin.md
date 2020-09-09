@@ -100,7 +100,7 @@ wget -P "$SONARQUBE_HOME/extensions/plugins" 'https://binaries.sonarsource.com/D
 
 ```sh
 # Git ignore
-echo '.scannerwork' >> ~/.gitignore_global
+echo '/.scannerwork' >> ~/.gitignore_global
 ```
 
 ### Issues
