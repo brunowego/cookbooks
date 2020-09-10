@@ -68,14 +68,52 @@ docker rm -f logstash
 ```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
+  -h elasticsearch \
+  -e discovery.type=single-node \
+  -v elasticsearch-config:/usr/share/elasticsearch/config \
+  -v elasticsearch-data:/usr/share/elasticsearch/data \
+  -v elasticsearch-logs:/usr/share/elasticsearch/logs \
+  -p 9200:9200 \
+  -p 9300:9300 \
+  --name elasticsearch \
+  --network workbench \
+  docker.io/library/elasticsearch:7.9.1
+```
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h mongo \
   -v mongo-data:/data/db \
+  -v mongo-configdb:/data/configdb \
   -e MONGO_INITDB_ROOT_USERNAME=root \
   -e MONGO_INITDB_ROOT_PASSWORD=root \
   -p 27017:27017 \
   --name mongo \
   --network workbench \
   docker.io/library/mongo:4.0
+```
+
+```sh
+docker exec mongo mongo \
+  -u root \
+  -p root \
+  --eval 'printjson(db.adminCommand("listDatabases"))'
+
+docker exec -i mongo mongo \
+  -u root \
+  -p root \
+  --authenticationDatabase admin <<-EOSQL
+use dev
+db.createCollection('news')
+db.news.insert({some_key: 'some_value'})
+EOSQL
+
+docker exec mongo mongo \
+  -u root \
+  -p root \
+  --authenticationDatabase admin \
+  dev --eval 'db.news.find({}, {"_id": false})'
 ```
 
 Run [Logstash with Docker](#running)
@@ -95,14 +133,14 @@ EOSHELL
 docker exec -i logstash /bin/bash << \EOSHELL
 cat << \EOF > /usr/share/logstash/pipeline/logstash.conf
 input {
-  jdbc{
-    jdbc_driver_class => "com.dbschema.MongoJdbcDriver"
-    jdbc_driver_library => "/usr/share/logstash/logstash-core/lib/jars/mongojdbc2.3.jar"
-    jdbc_user => ""
-    jdbc_password => ""
-    jdbc_connection_string => "jdbc:mongodb://root:root@mongo:27017/database"
-    schedule => "* * * * *"
-    statement => "db.news.find({},{'_id': false});"
+  jdbc {
+    jdbc_driver_class => 'com.dbschema.MongoJdbcDriver'
+    jdbc_driver_library => '/usr/share/logstash/logstash-core/lib/jars/mongojdbc2.3.jar'
+    jdbc_user => ''
+    jdbc_password => ''
+    jdbc_connection_string => 'jdbc:mongodb://root:root@mongo:27017/dev?authSource=admin'
+    schedule => '* * * * *'
+    statement => 'db.news.find({}, {"_id": false});'
   }
 }
 
@@ -119,6 +157,14 @@ EOSHELL
 ```sh
 docker restart logstash && \
   docker logs -f logstash
+```
+
+### Remove
+
+```sh
+docker rm -f elasticsearch mongo logstash
+
+docker volume rm elasticsearch-config elasticsearch-data elasticsearch-logs mongo-data mongo-configdb
 ```
 
 <!-- ###
@@ -145,3 +191,55 @@ mongojdbc1.2.jar
 
 # COPY mysql-connector-java-5.1.36-bin.jar /usr/share/logstash/logstash-core/lib/jars/mysql-connector-java-5.1.36-bin.jar
 ``` -->
+
+<!--
+# docker exec mongo mongo \
+#   -u root \
+#   -p root \
+#   --eval 'printjson(db.serverStatus())'
+
+docker exec mongo mongo \
+  -u root \
+  -p root \
+  --authenticationDatabase admin \
+  --eval 'db.createUser({user: "dev", pwd: "dev", roles:[{role: "readWrite", db: "dev"}]})'
+
+docker exec mongo mongo \
+  -u dev \
+  -p dev \
+  --authenticationDatabase dev \
+  dev --eval 'db.system.users.find({}, {"_id" : 1})'
+
+docker exec mongo mongo \
+  -u dev \
+  -p dev \
+  --authenticationDatabase dev \
+  --eval 'db.getUsers()'
+
+docker exec mongo mongo \
+  -u dev \
+  -p dev \
+  --authenticationDatabase dev \
+  --eval 'printjson(db.getCollectionNames())'
+
+docker exec mongo mongo \
+  -u dev \
+  -p dev \
+  --authenticationDatabase dev \
+  --eval 'db.news.find({}, {"_id": false})'
+
+# docker exec mongo mongo \
+#   -u dev \
+#   -p dev \
+#   dev --eval 'rs.status()'
+
+# docker exec mongo mongo \
+#   -u root \
+#   -p root \
+#   dev --eval 'db.createCollection("news")'
+
+# docker exec mongo mongo \
+#   -u root \
+#   -p root \
+#   dev --eval 'db.news.createIndex({"bucketId": 1})'
+-->

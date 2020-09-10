@@ -2,6 +2,13 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -15,6 +22,7 @@ docker run -d \
   -p 9200:9200 \
   -p 9300:9300 \
   --name elasticsearch \
+  --network workbench \
   docker.io/library/elasticsearch:7.5.0
 ```
 

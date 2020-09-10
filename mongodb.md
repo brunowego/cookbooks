@@ -80,6 +80,7 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mongo \
   -v mongo-data:/data/db \
+  -v mongo-configdb:/data/configdb \
   -e MONGO_INITDB_ROOT_USERNAME=root \
   -e MONGO_INITDB_ROOT_PASSWORD=root \
   -p 27017:27017 \
@@ -100,7 +101,7 @@ docker run -it --rm \
 ```sh
 docker rm -f mongo
 
-docker volume rm mongo-data
+docker volume rm mongo-data mongo-configdb
 ```
 
 ## CLI
@@ -127,28 +128,32 @@ brew services start mongodb-community
 mongo -h
 ```
 
-### Examples
-
-#### Database Authentication
+### Usage
 
 ```sh
+# Database Authentication
 mongo \
   --host [hostname] \
   --port 27017 \
   -u [username] \
   -p [password] \
   --authenticationDatabase [db-name]
-```
 
-### Evaluate
+#
+mongo topic --eval 'rs.status()'
 
-```sh
+# mongo topic \
+#   -u root \
+#   -p root \
+#   --eval 'db.createCollection("news")'
+
+# Evaluate
 mongo --eval 'printjson(db.serverStatus())'
-```
 
-### Heredoc
+#
+mongo admin --eval "db.shutdownServer()"
 
-```sh
+# Heredoc
 mongo [db-name] <<-EOSQL
 [commands]
 EOSQL
