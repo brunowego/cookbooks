@@ -28,6 +28,13 @@ sudo apt update
 sudo apt -y install zsh
 ```
 
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y zsh
+```
+
 ### Configuration
 
 ```sh
@@ -59,4 +66,24 @@ zsh --version | head -1
 
 ```sh
 source ~/.zshrc
+```
+
+### Issues
+
+#### LDAP Authentication
+
+```log
+chsh: user '[username]' does not exist in /etc/passwd
+```
+
+```sh
+# Thought CLI
+ssh [host] -t 'zsh --login'
+
+# Thought SSH Config
+cat << EOF >> ~/.ssh/config
+Host [host]
+  RemoteCommand zsh -l
+  RequestTTY force
+EOF
 ```

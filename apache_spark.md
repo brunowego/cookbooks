@@ -1,9 +1,21 @@
 # Apache Spark
 
+<!--
 http://shop.oreilly.com/product/0636920047568.do
 https://www.jowanza.com/blog/time-series-missing-data-imputation-in-apache
 https://www.jowanza.com/blog/a-gentle-intro-to-udafs-in-apache-spark
 https://www.jowanza.com/blog/the-how-and-why-of-spark-and-couchbase
+-->
+
+## CLI
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension mshdinsight.azure-hdinsight
+```
 
 ## Helm
 
@@ -33,3 +45,15 @@ helm install stable/spark \
 helm delete spark --purge
 kubectl delete namespace spark --grace-period=0 --force
 ```
+
+## Docker
+
+TODO
+
+<!--
+https://hadoopandspark.wordpress.com/2018/04/11/pyspark-an-error-occurred-while-calling-none-org-apache-spark-api-java-javasparkcontext/
+-->
+
+<!--
+https://kontext.tech/column/spark/287/debug-pyspark-code-in-visual-studio-code
+-->

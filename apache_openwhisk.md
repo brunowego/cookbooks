@@ -1,5 +1,6 @@
 # Apache OpenWhisk
 
+<!--
 https://www.jowanza.com/blog/2018/11/11/serverless-machine-learning-openwhisk-mleap
 
 https://medium.com/openwhisk/uncovering-the-magic-how-serverless-platforms-really-work-3cb127b05f71
@@ -46,6 +47,7 @@ https://github.com/asqasq/serverless/tree/master/openwhisk/apps/imageclassify
 https://github.com/orangefoil/install-openwhisk
 https://www.youtube.com/watch?v=yXfitGShnc0&feature=youtu.be
 https://github.com/bu-528-sp19/Functions-as-a-Service
+-->
 
 ## Helm
 

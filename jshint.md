@@ -1,7 +1,17 @@
-# Hint
+# JSHint
+
+##
+
+```js
+/* jshint ignore:start */
+
+/* jshint ignore:end */
+```
+
+## Configuration
 
 ```sh
-touch .jshintrc || exit
+touch ./.jshintrc || exit
 ```
 
 ```json

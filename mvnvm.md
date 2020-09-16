@@ -30,17 +30,24 @@ sudo curl -L 'https://bitbucket.org/mjensen/mvnvm/raw/master/mvn' -o /usr/local/
 
 ```sh
 # 2.x
-echo 'mvn_version=2.2.1' > mvnvm.properties
+echo 'mvn_version=2.2.1' > ./mvnvm.properties
 
 # 3.x
-echo 'mvn_version=3.6.3' > mvnvm.properties
+echo 'mvn_version=3.6.3' > ./mvnvm.properties
 
 # Git ignore
 echo '/mvnvm.properties' >> ~/.gitignore_global
 ```
 
-### Usage
+### Commands
 
 ```sh
 mvn -h
+```
+
+### Usage
+
+```sh
+# Show installed version
+ls ~/.mvnvm
 ```

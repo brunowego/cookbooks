@@ -97,16 +97,10 @@ sudo cp /root/.bashrc ~
 #### LDAP Authentication
 
 ```log
-chsh: user 'xxx' does not exist in /etc/passwd
+chsh: user '[username]' does not exist in /etc/passwd
 ```
 
-```sh
-#
-ssh [host] -t 'zsh --login'
-
-#
-
-```
+TODO
 
 <!-- ####
 

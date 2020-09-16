@@ -45,13 +45,13 @@ lein repl
 pkill java
 ```
 
-### Tips
+<!-- ### Tips
 
 ####
 
 ```sh
 
-```
+``` -->
 
 ### Issues
 

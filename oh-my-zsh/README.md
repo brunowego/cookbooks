@@ -4,37 +4,21 @@
 
 ### Dependencies
 
-#### Homebrew
-
-```sh
-brew install zsh curl git gnu-sed
-```
-
-#### YUM
-
-```sh
-yum check-update
-sudo yum -y install zsh curl git
-```
-
-#### APT
-
-```sh
-sudo apt update
-sudo apt -y install zsh curl git
-```
-
-#### Zypper
-
-```sh
-sudo zypper refresh
-sudo zypper install -y zsh git curl
-```
+- [Z shell (Zsh)](/zsh.md)
+- [cURL](/curl.md)
+- [Git](/git.md)
+- [GNU Sed](/gnu_sed.md)
 
 ### Installation
 
+#### Script Shell
+
 ```sh
-curl -L http://install.ohmyz.sh | /bin/zsh
+# cURL
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# GNU Wget
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 ```
 
 ```sh
@@ -49,7 +33,7 @@ sudo chsh "$USER" -s /bin/zsh
 sudo su - "$USER"
 ```
 
-### Issues
+<!-- ### Issues -->
 
 <!-- #### LDAP Users
 

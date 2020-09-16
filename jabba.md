@@ -17,6 +17,10 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 ```sh
 # jabba
 source "$HOME/.jabba/jabba.sh"
+
+if test -e '.jabbarc'; then
+  jabba use &
+fi
 ```
 
 ```sh
