@@ -1,6 +1,18 @@
 # Perl
 
+<!--
+cpan
+-->
+
 ## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install perl
+```
 
 ### Usage
 

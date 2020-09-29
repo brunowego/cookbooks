@@ -282,13 +282,65 @@ docker volume rm gitlab-redis-data gitlab-postgres-data gitlab-config gitlab-log
 4. Scopes: api -> Create
 
 ```sh
+#
 export GITLAB_PRIVATE_TOKEN='xyz'
 export GITLAB_PROJECT_ID='123'
 export GITLAB_DOMAIN='gitlab.example.com'
 
+#
 curl \
     --header "PRIVATE-TOKEN: ${GITLAB_PRIVATE_TOKEN}" \
     "https://${GITLAB_DOMAIN}/api/v4/projects/${GITLAB_PROJECT_ID}/issues?scope=all&state=closed" | jq
+```
+
+#### Export CSV
+
+```sh
+# APT
+sudo apt -y install libtext-csv-perl libwww-perl libcrypt-ssleay-perl
+
+# YUM
+sudo yum -y install perl-Text-CSV perl-Crypt-SSLeay
+
+# Darwin
+/usr/local/bin/perl -MCPAN -e 'install Text::CSV_XS'
+/usr/local/bin/perl -MCPAN -e 'install Bundle::LWP'
+/usr/local/bin/perl -MCPAN -we 'install LWP::Protocol::https'
+```
+
+```sh
+#
+wget https://gitlab.com/emobix/get-all-gitlab-issues-as-csv/-/raw/master/get-all-project-issues.pl
+
+#
+sed -i 's|gitlab.com|gitlab.example.com|' ./get-all-project-issues.pl
+
+# FIX for Darwin
+sed -i 's|/usr/bin/perl|/usr/local/bin/perl|' ./get-all-project-issues.pl
+
+# Only closed
+sed -i 's/\/issues/&?scope=all\&state=closed/' ./get-all-project-issues.pl
+```
+
+Add after `use ...`
+
+```perl
+$ENV{PERL_LWP_SSL_VERIFY_HOSTNAME} = 0;
+```
+
+```sh
+#
+export GITLAB_PRIVATE_TOKEN='xyz'
+export GITLAB_PROJECT_ID='123'
+
+#
+chmod +x ./get-all-project-issues.pl
+
+#
+./get-all-project-issues.pl "$GITLAB_PROJECT_ID" "$GITLAB_PRIVATE_TOKEN"
+
+#
+rm ./get-all-project-issues.pl
 ```
 
 <!-- ##
