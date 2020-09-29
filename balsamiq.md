@@ -1,4 +1,4 @@
-# DaisyDisk
+# Balsamiq
 
 ## App
 
@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install daisydisk
+brew cask install balsamiq-wireframes
 ```

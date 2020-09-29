@@ -246,3 +246,11 @@ storePassword=PASSWORD2
 
 EOF
 ```
+
+### Uninstall
+
+```sh
+# Darwin
+rm -fR ~/.android
+rm -fR ~/Library/Android*
+```

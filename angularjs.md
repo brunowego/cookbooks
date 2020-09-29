@@ -1,6 +1,8 @@
 # AngularJS
 
-##
+## Syntax
+
+### Debugging
 
 ```html
 <!-- AngularJS -->

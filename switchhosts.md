@@ -9,3 +9,10 @@
 ```sh
 brew cask install switchhosts
 ```
+
+<!-- #### Chocolatey
+
+```sh
+# https://github.com/oldj/SwitchHosts/issues/502
+choco install -y switchhosts
+``` -->

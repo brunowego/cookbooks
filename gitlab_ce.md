@@ -1,5 +1,9 @@
 # GitLab Community Edition
 
+## References
+
+- [API Issues](https://docs.gitlab.com/ce/api/issues.html)
+
 ## Helm
 
 ### References
@@ -269,6 +273,23 @@ docker volume rm gitlab-redis-data gitlab-postgres-data gitlab-config gitlab-log
      - User: Bot
      - Access Level: Developer
      - Add to group
+
+### Issues from project using API
+
+1. User -> Settings
+2. Access Tokens
+3. Personal Access Tokens
+4. Scopes: api -> Create
+
+```sh
+export GITLAB_PRIVATE_TOKEN='xyz'
+export GITLAB_PROJECT_ID='123'
+export GITLAB_DOMAIN='gitlab.example.com'
+
+curl \
+    --header "PRIVATE-TOKEN: ${GITLAB_PRIVATE_TOKEN}" \
+    "https://${GITLAB_DOMAIN}/api/v4/projects/${GITLAB_PROJECT_ID}/issues?scope=all&state=closed" | jq
+```
 
 <!-- ##
 

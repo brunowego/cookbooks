@@ -45,6 +45,8 @@ ls $(brew --cache)
 
 # Clean Up
 brew cleanup -s
+
+rm -fR $(brew --cache)
 ```
 
 ### Tips

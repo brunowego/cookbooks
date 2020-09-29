@@ -29,3 +29,13 @@ cat << EOF >> ~/.gitignore_global
 /.project
 EOF
 ```
+
+### Issues
+
+#### SSL Connect
+
+```log
+OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to marketplace.eclipse.org:443
+```
+
+Configure proxy.

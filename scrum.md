@@ -2,8 +2,9 @@
 
 ## References
 
-- [Scrum](https://www.desenvolvimentoagil.com.br/scrum/)
+- [Scrum](https://desenvolvimentoagil.com.br/scrum/)
 
 ## Tools
 
-- [Pointing Poker](https://www.pointingpoker.com/)
+- [Pointing Poker](https://pointingpoker.com/)
+- [Pointing Poker](http://pointing.poker/)

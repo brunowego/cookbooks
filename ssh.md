@@ -9,6 +9,19 @@ ssh -i [privatekey].pem [username]@[IP]
 
 ## Tips
 
+### Hide Banner
+
+```sh
+# Thought SSHD Config
+sudo sed -i 's/#\(Banner\)/\1/g' /etc/ssh/sshd_config
+
+# Thought SSH Config
+cat << EOF >> ~/.ssh/config
+Host [host]
+  LogLevel QUIET
+EOF
+```
+
 ### Proxy
 
 ```sh

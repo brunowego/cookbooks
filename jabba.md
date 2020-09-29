@@ -19,7 +19,7 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 source "$HOME/.jabba/jabba.sh"
 
 if test -e '.jabbarc'; then
-  jabba use &
+  jabba use &>/dev/null
 fi
 ```
 
