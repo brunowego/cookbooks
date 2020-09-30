@@ -24,7 +24,7 @@ sudo apt -y install libpacparser1
 ###### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install git make gcc
 ```
 

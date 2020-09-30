@@ -1,18 +1,20 @@
 # Apache Directory Studio
 
-## Installation
+## App
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew cask install apache-directory-studio
 ```
 
-## Configuration
+### Configuration
 
-### LDAP
+#### LDAP
 
-#### Connection
+##### Connection
 
 1. File -> New -> LDAP Browser -> LDAP Connection
 2. Network Parameter
@@ -24,7 +26,7 @@ brew cask install apache-directory-studio
 4. Browser Options: Check "Features -> Fetch operational attributes while browsing"
 5. Finish
 
-#### Search
+##### Search
 
 1. Type "Search Name"
 2. Select "Connection"

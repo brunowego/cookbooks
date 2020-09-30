@@ -12,7 +12,7 @@ sudo apt -y install libmysqlclient-dev ruby-dev g++
 <!-- ### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install mysql-devel
 ``` -->
 

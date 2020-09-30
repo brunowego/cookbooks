@@ -14,7 +14,7 @@
 ##### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install gcc python3-devel
 ```
 
@@ -69,7 +69,7 @@ sudo apt -y install ksh
 #### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install ksh unzip
 ```
 
@@ -154,7 +154,7 @@ sudo apt -y install python3-dev gcc
 #### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install python3-devel gcc
 ```
 
