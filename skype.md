@@ -8,6 +8,9 @@
 
 ```sh
 brew cask install skype
+
+#
+brew cask install skype-for-business
 ```
 
 #### Chocolatey

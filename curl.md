@@ -36,6 +36,13 @@ yum check-update
 sudo yum -y install curl
 ```
 
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y curl
+```
+
 #### APK
 
 ```sh

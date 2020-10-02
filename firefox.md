@@ -1,5 +1,10 @@
 # Firefox
 
+##
+
+- [Proxy Switcher and Manager](https://addons.mozilla.org/en-US/firefox/addon/proxy-switcher-and-manager/)
+- [Temporary Containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/)
+
 ## App
 
 ### References

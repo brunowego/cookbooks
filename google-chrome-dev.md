@@ -7,6 +7,9 @@
 #### Homebrew
 
 ```sh
+#
 brew cask uninstall google-chrome
-brew cask install google-chrome-dev
+
+#
+brew cask install --appdir='/Applications' google-chrome-dev
 ```

@@ -4,6 +4,8 @@
 
 ### Dependencies
 
+- [cURL](/curl.md)
+
 #### APT
 
 ```sh
@@ -31,6 +33,16 @@ sudo add-apt-repository 'deb [arch=amd64] https://packages.microsoft.com/repos/v
 ```sh
 sudo apt update
 sudo apt -y install code
+```
+
+#### Zypper
+
+```sh
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[vscode]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/zypp/repos.d/vscode.repo'
+
+sudo zypper refresh
+sudo zypper --non-interactive install code
 ```
 
 #### Chocolatey
@@ -155,3 +167,14 @@ jq '."workbench.colorTheme" |= "One Dark Pro"' "$HOME/.config/Code/User/settings
 - `↩︎` Return/Enter
 
 - `Ctrl + Shift + l` Delete line
+
+
+### Issues
+
+#### Import Failed
+
+```log
+error: https://packages.microsoft.com/keys/microsoft.asc: import read failed(2).
+```
+
+Install [cURL](/curl.md).
