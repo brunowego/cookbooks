@@ -1,43 +1,45 @@
 # UnZip
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install unzip
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install unzip
 ```
 
-### YUM
+#### YUM
 
 ```sh
 yum check-update
 sudo yum -y install unzip
 ```
 
-### Chocolatey
+#### Chocolatey
 
 ```sh
 choco install -y unzip
 ```
 
-## Commands
+### Commands
 
 ```sh
 unzip -hh
 zipinfo -h
 ```
 
-## Examples
+### Examples
 
-### Listing
+#### Listing
 
 ```sh
 unzip -l [filename].zip
@@ -45,7 +47,7 @@ unzip -l [filename].zip
 zipinfo [filename].zip
 ```
 
-### Compressing With own directory
+#### Compressing With own directory
 
 ```sh
 zip -r [filename].zip [filepath]

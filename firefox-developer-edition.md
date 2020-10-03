@@ -23,7 +23,7 @@ wget -O - https://ftp.mozilla.org/pub/devedition/releases/72.0b3/linux-x86_64/en
   sudo tar -xjC /usr/local --transform s/firefox/firefox-dev/
 
 # Ubuntu
-cat << EOF > ~/.local/share/applications/firefox-dev.desktop
+cat << EOF > ~/Desktop/Firefox\ Developer.desktop
 [Desktop Entry]
 Name=Firefox Developer
 GenericName=Firefox Developer Edition

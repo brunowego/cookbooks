@@ -4,9 +4,16 @@
 
 ### Installation
 
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install bsdtar
+```
+
 #### YUM
 
 ```sh
-sudo yum update
+yum check-update
 sudo yum -y install bsdtar
 ```
