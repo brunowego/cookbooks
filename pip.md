@@ -3,6 +3,7 @@
 ## References
 
 - [Configuration](https://pip.pypa.io/en/stable/user_guide/#configuration)
+- [install_requires vs requirements files](https://packaging.python.org/discussions/install-requires-vs-requirements/)
 
 ## CLI
 
@@ -52,6 +53,24 @@ pip install [/path/to/package.tar.gz]
 
 ### Configuration
 
+#### Requirements
+
+```sh
+cat << EOF > ./requirements-dev.txt
+
+EOF
+
+cat << EOF > ./requirements.txt
+
+EOF
+```
+
+```sh
+pip install \
+  -r ./requirements-dev.txt \
+  -r ./requirements.txt
+```
+
 #### External Mirror
 
 ```sh
@@ -78,6 +97,21 @@ EOF
 
 ```sh
 pip config list
+```
+
+### Tips
+
+#### Setuptools
+
+```sh
+# pip install ./
+# pip install -e ./
+
+python ./setup.py install
+python ./setup.py develop
+python ./setup.py check --restructuredtext --metadata --strict
+python ./setup.py build
+python ./setup.py clean --all
 ```
 
 ### Issues

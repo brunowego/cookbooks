@@ -1,5 +1,12 @@
 # Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ## Volume
 
 ```sh
@@ -18,6 +25,7 @@ docker run -d \
   -v gogs-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name gogs-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -28,6 +36,7 @@ docker run -d \
   -p 2222:22 \
   -p 8080:3000 \
   --name gogs \
+  --network workbench \
   docker.io/gogs/gogs:0.11.86
 ```
 

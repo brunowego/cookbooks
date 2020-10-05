@@ -2,6 +2,13 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -24,6 +31,7 @@ docker run -d \
   -v redash-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name redash-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -39,6 +47,7 @@ docker run -d \
   -p 5000:5000 \
   -p 5678:5678 \
   --name redash-server \
+  --network workbench \
   docker.io/redash/redash:7.0.0.b18042 server
 ```
 
@@ -53,6 +62,7 @@ docker run -d \
   -e QUEUES='queries,scheduled_queries,celery,schemas' \
   -e WORKERS_COUNT='2' \
   --name redash-worker \
+  --network workbench \
   docker.io/redash/redash:7.0.0.b18042 scheduler
 ```
 

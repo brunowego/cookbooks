@@ -164,6 +164,13 @@ helm upgrade nginx-ingress stable/nginx-ingress -f <(yq d <(helm get values ngin
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -187,6 +194,7 @@ docker run -d \
   -v gitlab-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name gitlab-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 

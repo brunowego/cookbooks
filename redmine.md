@@ -2,6 +2,13 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -14,6 +21,7 @@ docker run -d \
   -v redmine-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name redmine-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -28,6 +36,7 @@ docker run -d \
   -v redmine-files:/usr/src/redmine/files \
   -p 3000:3000 \
   --name redmine \
+  --network workbench \
   docker.io/library/redmine:4.0.3
 ```
 

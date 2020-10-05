@@ -41,6 +41,13 @@ kubectl delete namespace hue --grace-period=0 --force
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -53,6 +60,7 @@ docker run -d \
   -v hue-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name hue-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 

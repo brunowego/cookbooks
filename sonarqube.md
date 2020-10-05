@@ -103,6 +103,13 @@ kubectl delete namespace sonarqube --grace-period=0 --force
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -115,6 +122,7 @@ docker run -d \
   -v sonarqube-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name sonarqube-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -131,6 +139,7 @@ docker run -d \
   -v sonarqube-extensions:/opt/sonarqube/extensions \
   -p 9000:9000 \
   --name sonarqube \
+  --network workbench \
   docker.io/library/sonarqube:7.9.2-community
 ```
 

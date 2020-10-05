@@ -147,7 +147,13 @@ python3
 #### Visual Studio Code
 
 ```sh
-code --install-extension ms-python.python
+code \
+  --install-extension ms-python.python \
+  --install-extension ms-python.vscode-pylance
+```
+
+```sh
+jq '."python.languageServer" |= "Pylance"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
 #### Warnings

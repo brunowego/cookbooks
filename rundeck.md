@@ -2,6 +2,13 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -16,6 +23,7 @@ docker run -d \
   -v /etc/localtime:/etc/localtime:ro \
   -p 5432:5432 \
   --name rundeck-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -35,6 +43,7 @@ docker run -d \
   -v /etc/localtime:/etc/localtime:ro \
   -p 4440:4440 \
   --name rundeck \
+  --network workbench \
   docker.io/rundeck/rundeck:3.0.21
 ```
 

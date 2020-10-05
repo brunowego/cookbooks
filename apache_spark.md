@@ -17,6 +17,17 @@ https://www.jowanza.com/blog/the-how-and-why-of-spark-and-couchbase
 code --install-extension mshdinsight.azure-hdinsight
 ```
 
+```sh
+jq '."hdinsight.disableOpenSurveyLink" |= true' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+```
+
+```sh
+# Darwin
+osascript -e 'quit app "Visual Studio Code"'
+
+code --disable-extension mshdinsight.azure-hdinsight
+```
+
 ## Helm
 
 ### Install

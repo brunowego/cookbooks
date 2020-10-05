@@ -1,5 +1,9 @@
 # Hypertext Markup Language (HTML)
 
+## References
+
+- [Preload, prefetch and other <link> tags](https://3perf.com/blog/link-rels/)
+
 ## Tools
 
 - [HTML Entities Encoder / Decoder](https://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder)

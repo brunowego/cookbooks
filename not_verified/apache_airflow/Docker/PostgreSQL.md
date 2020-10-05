@@ -1,5 +1,12 @@
 # PostgreSQL
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ## Volume
 
 ```sh
@@ -19,6 +26,7 @@ docker run -d \
   -v airflow-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name airflow-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -35,6 +43,7 @@ docker run -d \
   -v airflow-dags:/usr/local/airflow/dags \
   -p 8080:8080 \
   --name airflow \
+  --network workbench \
   docker.io/puckel/docker-airflow:1.10.3 webserver
 ```
 

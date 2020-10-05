@@ -6,6 +6,13 @@ https://github.com/therebelrobot/SecretSanta-fork/blob/master/shell_provisioner/
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Dependencies
 
 - [docker-mailserver](/docker-mailserver.md)
@@ -22,6 +29,7 @@ docker run -d \
   -v roundcubemail-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name roundcubemail-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -41,6 +49,7 @@ docker run -d \
   -e ROUNDCUBEMAIL_SMTP_PORT='25' \
   -p 8080:80 \
   --name roundcubemail \
+  --network workbench \
   docker.io/roundcube/roundcubemail:1.4.2-apache
 ```
 

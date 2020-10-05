@@ -25,13 +25,17 @@ sudo mkdir -p /usr/local/switchhosts && \
   curl -L "$(curl -ks https://api.github.com/repos/oldj/SwitchHosts/releases/latest | grep browser_download_url | grep _linux_x64 | cut -d '"' -f 4)" | \
     sudo bsdtar -xf - -C /usr/local/switchhosts
 
-# Ubuntu
+#
+sudo chmod +x /usr/local/switchhosts/switchhosts
+```
+
+##### Ubuntu Desktop Entry
+
+```sh
+#
 sudo curl \
   -o /usr/local/switchhosts/default4x.png \
   https://raw.githubusercontent.com/oldj/SwitchHosts/master/app/assets/logo%404x.png
-
-#
-sudo chmod +x /usr/local/switchhosts/switchhosts
 
 #
 cat << EOF > ~/Desktop/SwitchHosts.desktop

@@ -2,6 +2,13 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -14,6 +21,7 @@ docker run -d \
   -v n8n-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name n8n-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -32,6 +40,7 @@ docker run -d \
   -e DB_POSTGRESDB_DATABASE=n8n \
   -p 5678:5678 \
   --name n8n \
+  --network workbench \
   docker.io/n8nio/n8n:0.37.0
 ```
 

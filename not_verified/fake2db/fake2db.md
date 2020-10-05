@@ -2,6 +2,13 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### SQLite
 
 ```sh
@@ -40,6 +47,7 @@ docker run -d \
   -e POSTGRES_PASSWORD=root \
   --network host \
   --name postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 

@@ -16,6 +16,13 @@ pip install -U pylint
 pylint --help
 ```
 
+### Requirements
+
+```sh
+# Development
+echo 'pylint==2.6.0' >> ./requirements-dev.txt
+```
+
 ### Tips
 
 #### Generate RC File

@@ -70,6 +70,13 @@ kubectl delete namespace kong --grace-period=0 --force
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -82,6 +89,7 @@ docker run -d \
   -v kong-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name kong-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -93,6 +101,7 @@ docker run -i --rm \
   -e KONG_PG_PASSWORD=kong \
   -e KONG_PG_DATABASE=kong \
   --name kong-migrations \
+  --network workbench \
   docker.io/library/kong:1.1.2-alpine kong migrations bootstrap
 ```
 
@@ -110,6 +119,7 @@ docker run -d \
   -p 8443:8443 \
   -p 8444:8444 \
   --name kong \
+  --network workbench \
   docker.io/library/kong:1.1.2-alpine
 ```
 

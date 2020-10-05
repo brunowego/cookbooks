@@ -256,6 +256,14 @@ docker run -d \
   docker.io/library/postgres:11.2-alpine
 ```
 
+###
+
+```sh
+docker exec -i postgres psql -U postgres <<-EOSQL
+
+EOSQL
+```
+
 ### Remove
 
 ```sh

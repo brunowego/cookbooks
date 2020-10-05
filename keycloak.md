@@ -70,6 +70,13 @@ kubectl delete namespace keycloak --grace-period=0 --force
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -82,6 +89,7 @@ docker run -d \
   -v keycloak-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name keycloak-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -100,6 +108,7 @@ docker run -d \
   -p 8080:8080 \
   -p 8443:8443 \
   --name keycloak \
+  --network workbench \
   docker.io/jboss/keycloak:8.0.1
 ```
 

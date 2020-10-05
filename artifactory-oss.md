@@ -104,6 +104,13 @@ kubectl delete namespace artifactory --grace-period=0 --force
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -116,6 +123,7 @@ docker run -d \
   -v artifactory-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name artifactory-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -131,6 +139,7 @@ docker run -d \
   -v artifactory-data:/var/opt/jfrog/artifactory \
   -p 8081:8081 \
   --name artifactory-oss \
+  --network workbench \
   docker.bintray.io/jfrog/artifactory-oss:6.16.0
 ```
 

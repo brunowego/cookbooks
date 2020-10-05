@@ -406,7 +406,9 @@ EOF
 #### Visual Studio Code
 
 ```sh
-code --install-extension alefragnani.jenkins-status
+code \
+  --install-extension alefragnani.jenkins-status \
+  --install-extension ivory-lab.jenkinsfile-support
 ```
 
 ## Docs

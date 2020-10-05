@@ -96,7 +96,7 @@ eval "$(pyenv init -)"
 
 ### Issues
 
-####
+<!-- ####
 
 ```sh
 # Darwin
@@ -104,7 +104,7 @@ PYTHON_CONFIGURE_OPTS="--with-system-expat" \
   CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include" \
   LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib" \
   pyenv install [version]
-```
+``` -->
 
 ### Uninstall
 

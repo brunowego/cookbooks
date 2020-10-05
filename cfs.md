@@ -2,6 +2,7 @@
 
 <!--
 https://www.gartner.com/smarterwithgartner/unveiling-the-new-and-improved-customer-effort-score/
+https://blog.track.co/o-que-e-customer-effort-score/
 -->
 
 ##

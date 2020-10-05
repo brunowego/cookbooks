@@ -4,6 +4,13 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -16,6 +23,7 @@ docker run -d \
   -v chatwoot-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name chatwoot-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -29,6 +37,7 @@ docker run -d \
   -e POSTGRES_DATABASE='chatwoot' \
   -p 3000:3000 \
   --name chatwoot \
+  --network workbench \
   chatwoot/chatwoot:latest
 ```
 

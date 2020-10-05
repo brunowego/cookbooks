@@ -2,6 +2,13 @@
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -14,6 +21,7 @@ docker run -d \
   -e POSTGRES_DB=wiki \
   -p 5432:5432 \
   --name wiki-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -29,6 +37,7 @@ docker run -d \
   -e DB_NAME=wiki \
   -p 3000:3000 \
   --name wiki \
+  --network workbench \
   docker.io/requarks/wiki:beta
 ```
 

@@ -78,6 +78,7 @@ docker run -d \
   -v app-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name app-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 
 #

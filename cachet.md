@@ -10,6 +10,13 @@ https://github.com/mtakaki/cachet-mysql-monitor
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -22,6 +29,7 @@ docker run -d \
   -e POSTGRES_DB='cachet' \
   -p 5432:5432 \
   --name cachet-postgres \
+  --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
@@ -39,6 +47,7 @@ docker run -d \
   -e APP_KEY='base64:9yh4xfdnr3v97K1h1PivuIZq2w4RpivWc00fVkUX2VI=' \
   -p 8000:8000 \
   --name cachet \
+  --network workbench \
   docker.io/cachethq/docker:2.3.15
 ```
 
