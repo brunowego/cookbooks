@@ -105,6 +105,20 @@ pyenv global [version]
 eval "$(pyenv init -)"
 ```
 
+### Tips
+
+#### Install From Cache
+
+```sh
+wget \
+  -P ~/.pyenv/cache \
+  https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tar.xz
+
+pyenv install 3.8.0
+
+rm ~/.pyenv/cache/*.tar.xz
+```
+
 ### Issues
 
 <!-- ####

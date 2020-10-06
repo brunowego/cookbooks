@@ -199,6 +199,12 @@ echo 'insecure' >> ~/.curlrc
 
 <!-- ####
 
+```sh
+echo 'connect-timeout = 0' >> ~/.curlrc
+``` -->
+
+<!-- ####
+
 ```log
 
 ```

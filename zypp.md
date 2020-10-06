@@ -14,6 +14,9 @@ zypper help
 ```sh
 #
 zypper refresh
+
+#
+zypper rm -uy [package]
 ```
 
 ## Tips
