@@ -18,11 +18,11 @@ brew install \
   zlib
 ```
 
-#### Zypper
+#### APT
 
 ```sh
-sudo zypper refresh
-sudo zypper install -y git-core curl tar gzip make gcc-c++ zlib-devel libffi-devel libopenssl-devel libbz2-devel readline-devel sqlite3-devel
+sudo apt update
+sudo apt -y install git curl tar gzip make g++ zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
 ```
 
 #### YUM
@@ -32,19 +32,30 @@ yum check-update
 sudo yum -y install git curl tar gzip make gcc-c++ zlib-devel libffi-devel openssl-devel bzip2-devel readline-devel sqlite-devel
 ```
 
-#### APT
+#### Zypper
 
 ```sh
-sudo apt update
-sudo apt -y install git curl tar gzip make g++ zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
+sudo zypper refresh
+sudo zypper install -y git-core curl tar gzip make gcc-c++ zlib-devel libffi-devel libopenssl-devel libbz2-devel readline-devel sqlite3-devel
 ```
 
 ### Installation
 
 #### Unix-like
 
+##### Using Git
+
 ```sh
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+```
+
+##### Using Tarball
+
+```sh
+#
+mkdir -p ~/.pyenv && \
+  curl -L "$(curl -ks https://api.github.com/repos/pyenv/pyenv/releases/latest | grep tarball_url | cut -d '"' -f 4)" | \
+    tar -xzC ~/.pyenv --strip-components 1
 ```
 
 ### Environment

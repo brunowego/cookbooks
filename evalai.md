@@ -1,10 +1,23 @@
 # EvalAI
 
-## Docker
+## Docker Compose
 
-### Network
+### Running
 
 ```sh
-docker network create workbench \
-  --subnet 10.1.1.0/24
+#
+git clone https://github.com/Cloud-CV/EvalAI.git evalai && cd "$_"
+
+#
+docker-compose up --build
 ```
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:8888'
+```
+
+| Login | Password |
+| --- | --- |
+| admin | password |
+| host | password |
+| participant | password |
