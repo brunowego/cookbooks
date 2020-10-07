@@ -14,15 +14,14 @@ https://github.com/tolgahanuzun/Flask-Login-Example
 
 ### Extend
 
-- [dynaconf](https://github.com/rochacbruno/dynaconf)
-- [Flasgger](https://github.com/flasgger/flasgger)
-- [python-dotenv](https://github.com/theskumar/python-dotenv)
-
 - [Bcrypt](https://flask-bcrypt.readthedocs.io/en/latest/)
 - [Connexion](https://connexion.readthedocs.io/en/latest/)
 - [CORS](https://flask-cors.readthedocs.io/en/latest/)
+- [dynaconf](https://github.com/rochacbruno/dynaconf)
+- [Flasgger](https://github.com/flasgger/flasgger)
 - [Migrate](https://flask-migrate.readthedocs.io/en/latest/)
 - [PyMongo](https://flask-pymongo.readthedocs.io/en/latest/)
+- [python-dotenv](https://github.com/theskumar/python-dotenv)
 - [RESTful](https://flask-restful.readthedocs.io/en/latest/)
 - [SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
 - [WTF](https://flask-wtf.readthedocs.io/en/stable/)
@@ -32,7 +31,11 @@ https://github.com/tolgahanuzun/Flask-Login-Example
 #### PIP
 
 ```sh
+# As user dependency
 pip install -U Flask
+
+# As project dependency
+echo 'Flask==1.1.2' > ./requirements.txt
 ```
 
 ### Commands
@@ -43,22 +46,54 @@ flask --help
 
 ### Using
 
-#### Routes
-
 ```sh
+# Routes
 FLASK_ENV=development flask routes
-```
 
-#### Run
-
-```sh
+# Run
 FLASK_ENV=development flask run
+
+# Shell
+FLASK_ENV=development flask shell
 ```
 
-#### Shell
+### Libraries
 
 ```sh
-FLASK_ENV=development flask shell
+#
+echo 'requests==2.24.0' > ./requirements.txt
+```
+
+## Boilerplate
+
+```sh
+mkdir -p ./api
+
+cat << EOF > ./api/main.py
+# -*- coding: utf-8 -*-
+"""This module defines a simple REST API."""
+from flask import Flask
+
+
+api = Flask(__name__)
+
+
+@api.route('/')
+def healthCheck():
+    """Check health status."""
+    return jsonify(status = 'ok')
+
+EOF
+
+cat << EOF > ./wsgi.py
+"""Make the server use application."""
+from api.main import api
+
+
+if __name__ == '__main__':
+    api.run(debug=True)
+
+EOF
 ```
 
 ## Docker
@@ -69,7 +104,7 @@ FLASK_ENV=development flask shell
 cat << EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t example/flask-app -
 FROM docker.io/python:3.7-alpine3.9
 
-RUN pip install -q --no-cache Flask===1.0.3
+RUN pip install -q --no-cache Flask===1.1.2
 
 WORKDIR /usr/src/app
 
@@ -87,11 +122,17 @@ docker run -i --rm \
 cat << EOF > /usr/src/app/app.py
 from flask import Flask
 
+
 app = Flask(__name__)
+
 
 @app.route('/')
 def hello():
     return 'Hello World!'
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 EOF
 EOSHELL

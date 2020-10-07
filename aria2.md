@@ -21,6 +21,8 @@ sudo apt -y install aria2
 
 ```sh
 yum check-update
+
+# Repo: EPEL
 sudo yum -y install aria2
 ```
 
@@ -31,9 +33,9 @@ sudo zypper refresh
 sudo zypper install -y aria2
 ```
 
-#### APK
+<!-- #### APK
 
 ```sh
 sudo apk update
 sudo apk add aria2
-```
+``` -->

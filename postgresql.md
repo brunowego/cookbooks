@@ -246,8 +246,8 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postgres \
   -e POSTGRES_PASSWORD='postgres' \
-  -e POSTGRES_USER='postgres' \
-  -e POSTGRES_PASSWORD='postgres' \
+  -e POSTGRES_USER='user' \
+  -e POSTGRES_PASSWORD='pass' \
   -e POSTGRES_DB='dev' \
   -v postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \

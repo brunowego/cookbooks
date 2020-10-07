@@ -8,6 +8,15 @@
 
 - [Debug](/ipdb.md)
 
+## Project
+
+### Configuration
+
+```sh
+# Git ignore
+echo '/**/__pycache__' >> ./.gitignore
+```
+
 ## Docker
 
 ### Network
