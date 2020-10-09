@@ -56,11 +56,11 @@ pip install [/path/to/package.tar.gz]
 #### Requirements
 
 ```sh
-cat << EOF > ./requirements-dev.txt
+cat << EOF >> ./requirements-dev.txt
 
 EOF
 
-cat << EOF > ./requirements.txt
+cat << EOF >> ./requirements.txt
 
 EOF
 ```

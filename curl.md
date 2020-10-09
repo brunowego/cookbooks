@@ -119,7 +119,11 @@ curl \
   -H "Content-Type:application/json" \
   -H "X-Auth:AuthKey" \
   --data @hello.json \
-  Your_url
+  https://[hostname]
+
+curl -s https://[hostname] | jq
+
+curl -s https://[hostname]; echo
 ```
 
 ### Tips

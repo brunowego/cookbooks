@@ -35,6 +35,7 @@ sudo ip link del docker0
 
 ```sh
 # Systemd
+sudo systemctl stop docker
 sudo systemctl restart docker
 ```
 
@@ -50,7 +51,7 @@ docker network rm $(docker network ls | grep "bridge" | awk '/ / { print $1 }')
 ip addr show dev docker0 | awk -F'[ /]*' '/inet /{print $3}'
 ```
 
-## BIP
+## Bridge IP (BIP)
 
 ### Current User
 
@@ -66,6 +67,9 @@ mkdir -p ~/.docker
 
 ```sh
 jq '.bip |= "172.17.0.1/16"' ~/.docker/daemon.json | sponge ~/.docker/daemon.json
+
+#
+jq '.bip |= "1.1.0.1/16"' ~/.docker/daemon.json | sponge ~/.docker/daemon.json
 ```
 
 ```sh
@@ -91,6 +95,9 @@ sudo mkdir -p /etc/docker
 
 ```sh
 sudo /usr/bin/sh -c 'jq ".bip |= \"172.17.0.1/16\"" /etc/docker/daemon.json | sponge /etc/docker/daemon.json'
+
+#
+sudo /usr/bin/sh -c 'jq ".bip |= \"1.1.0.1/16\"" /etc/docker/daemon.json | sponge /etc/docker/daemon.json'
 ```
 
 ```sh

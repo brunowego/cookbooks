@@ -6,7 +6,7 @@
 
 ## Tools
 
-- [Debug](/ipdb.md)
+- [ipdb - Debug](/ipdb.md)
 
 ## Project
 

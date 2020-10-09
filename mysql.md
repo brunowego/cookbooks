@@ -107,6 +107,7 @@ docker restart mysql
 
 ```sh
 docker rm -f mysql
+
 docker volume rm mysql-data
 ```
 

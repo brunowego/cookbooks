@@ -43,3 +43,10 @@ yum check-update
 # Repo: EPEL
 sudo yum -y install moreutils
 ```
+
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y moreutils
+```

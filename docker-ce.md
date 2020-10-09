@@ -46,6 +46,7 @@ sudo zypper install -y docker-ce
 #### Systemd
 
 ```sh
+# Wait! Before continue be aware to configure bip
 sudo systemctl enable --now docker
 ```
 
@@ -230,6 +231,14 @@ source ~/.zshrc
 ```
 
 ### Issues
+
+####
+
+```log
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+```
+
+TODO
 
 #### Endpoint Exists
 

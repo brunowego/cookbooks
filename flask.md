@@ -15,6 +15,7 @@ https://github.com/tolgahanuzun/Flask-Login-Example
 ### Extend
 
 - [Bcrypt](https://flask-bcrypt.readthedocs.io/en/latest/)
+- [Caching](https://flask-caching.readthedocs.io/en/latest/)
 - [Connexion](https://connexion.readthedocs.io/en/latest/)
 - [CORS](https://flask-cors.readthedocs.io/en/latest/)
 - [dynaconf](https://github.com/rochacbruno/dynaconf)
@@ -35,7 +36,7 @@ https://github.com/tolgahanuzun/Flask-Login-Example
 pip install -U Flask
 
 # As project dependency
-echo 'Flask==1.1.2' > ./requirements.txt
+echo 'Flask==1.1.2' >> ./requirements.txt
 ```
 
 ### Commands
@@ -61,7 +62,7 @@ FLASK_ENV=development flask shell
 
 ```sh
 #
-echo 'requests==2.24.0' > ./requirements.txt
+echo 'requests==2.24.0' >> ./requirements.txt
 ```
 
 ## Boilerplate

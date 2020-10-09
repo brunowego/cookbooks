@@ -108,10 +108,9 @@ stunnel
 ##### HTTPS
 
 ```sh
+# Darwin
 sudo mkdir -p /usr/local/etc/stunnel/conf.d
-```
 
-```sh
 sudo tee /usr/local/etc/stunnel/conf.d/https.conf << EOF
 [https]
 client = yes
@@ -135,6 +134,16 @@ stunnel -help
 ```
 
 ### Tips
+
+#### Accept Incoming
+
+```sh
+# Linux
+sudo sed -i '/^accept/ s/127.0.0.1://' /etc/stunnel/stunnel.conf
+
+sudo pkill stunnel
+sudo /usr/sbin/stunnel
+```
 
 #### Kill Process
 

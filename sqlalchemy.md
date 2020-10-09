@@ -11,7 +11,7 @@
 pip install -U SQLAlchemy
 
 # As project dependency
-echo 'SQLAlchemy==1.3.19' > ./requirements.txt
+echo 'SQLAlchemy==1.3.19' >> ./requirements.txt
 ```
 
 ### Usage
@@ -23,7 +23,7 @@ echo 'SQLAlchemy==1.3.19' > ./requirements.txt
 pip install -U pymongo
 
 # As project dependency
-echo 'pymongo==3.11.0' > ./requirements.txt
+echo 'pymongo==3.11.0' >> ./requirements.txt
 ``` -->
 
 #### PostgreSQL
@@ -33,7 +33,7 @@ echo 'pymongo==3.11.0' > ./requirements.txt
 pip install -U psycopg2-binary
 
 # As project dependency
-echo 'psycopg2-binary==2.8.6' > ./requirements.txt
+echo 'psycopg2-binary==2.8.6' >> ./requirements.txt
 ```
 
 ```py
@@ -60,7 +60,7 @@ echo 'psycopg2-binary==2.8.6' > ./requirements.txt
 pip install -U PyMySQL
 
 # As project dependency
-echo 'PyMySQL==0.10.1' > ./requirements.txt
+echo 'PyMySQL==0.10.1' >> ./requirements.txt
 ```
 
 ```py
@@ -87,7 +87,7 @@ echo 'PyMySQL==0.10.1' > ./requirements.txt
 pip install -U ibm_db_sa
 
 # As project dependency
-echo 'ibm-db-sa==0.3.5' > ./requirements.txt
+echo 'ibm-db-sa==0.3.5' >> ./requirements.txt
 ```
 
 ```py
