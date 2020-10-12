@@ -1,6 +1,7 @@
 # Django
 
 <!--
+https://github.com/YDongY/code_snippets
 https://github.com/vintasoftware/
 https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
 -->

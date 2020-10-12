@@ -15,7 +15,7 @@
 #### Homebrew
 
 ```sh
-brew install libsass
+brew install libsass sassc
 ```
 
 #### APT

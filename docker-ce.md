@@ -1,5 +1,10 @@
 # Docker Community Edition (CE)
 
+<!--
+Missing file
+"${WAR_FILE:?You must especify the WAR_FILE variable in your .env file}:/usr/local/tomcat/webapps/openam.war"
+-->
+
 ## Daemon
 
 ### Installation

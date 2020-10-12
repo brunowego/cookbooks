@@ -67,6 +67,8 @@ echo 'requests==2.24.0' >> ./requirements.txt
 
 ## Boilerplate
 
+###
+
 ```sh
 mkdir -p ./api
 
@@ -95,6 +97,19 @@ if __name__ == '__main__':
     api.run(debug=True)
 
 EOF
+```
+
+###
+
+```py
+#
+[r for r, in result]
+
+#
+[t for t in tasks if t.get('id')==task_id]
+
+#
+[{'username': u.username, 'password': u.password, 'id': u.id} for u in users]
 ```
 
 ## Docker

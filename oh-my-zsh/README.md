@@ -33,6 +33,13 @@ sudo chsh "$USER" -s /bin/zsh
 sudo su - "$USER"
 ```
 
+### Usage
+
+```sh
+# Upgrade
+update_ohmyzsh
+```
+
 <!-- ### Issues -->
 
 <!-- #### LDAP Users

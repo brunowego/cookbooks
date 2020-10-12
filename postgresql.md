@@ -148,6 +148,34 @@ pg_dump \
   > dml.sql
 ```
 
+### Issues
+
+####
+
+```log
+ERROR: permission denied for table [table-name]
+```
+
+```sh
+# One table
+psql -c "GRANT ALL PRIVILEGES ON TABLE [table-name] TO [user-name]"
+
+# All tables of schema
+psql -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA [schema-name] TO [user-name]"
+```
+
+####
+
+```log
+ERROR: permission denied for sequence [seq-name]
+```
+
+```sh
+psql -c "GRANT USAGE, SELECT ON SEQUENCE [seq-name] TO [user-name]"
+
+psql -c "GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA [schema-name] TO [user-name]"
+```
+
 ### Logs
 
 ```sh

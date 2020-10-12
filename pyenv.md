@@ -79,6 +79,12 @@ sudo su - "$USER"
 echo '/.python-version' >> ~/.gitignore_global
 ```
 
+### Update
+
+```sh
+( cd ~/.pyenv/plugins/python-build/../.. && git pull )
+```
+
 ### Commands
 
 ```sh

@@ -49,3 +49,103 @@ mvn -B clean install rpm:rpm \
 ## Docker
 
 <!-- 7180 -->
+
+## REST API
+
+```sh
+export AMBARI_USERNAME=admin
+export AMBARI_PASSWORD=admin
+export AMBARI_HOST=localhost
+export AMBARI_PORT=7180
+```
+
+### Cluster
+
+```sh
+#
+curl \
+  -s \
+  -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
+  -H 'X-Requested-By: ambari' \
+  -X GET \
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters" | jq
+
+#
+export AMBARI_CLUSTER_NAME=$(curl \
+  -s \
+  -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
+  -H 'X-Requested-By: ambari' \
+  -X GET \
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters" | \
+    jq '.items[0].Clusters.cluster_name' | tr -d '"')
+```
+
+### Component
+
+```sh
+AMBARI_COMPONENT_LIST=./ambari_component_list.json
+
+cat /dev/null > "${AMBARI_COMPONENT_LIST}"
+```
+
+```sh
+#
+componentList=$(curl \
+  -s \
+  -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
+  -H 'X-Requested-By: ambari' \
+  -X GET \
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/components/" | \
+    jq '.items[].ServiceComponentInfo.component_name' | tr -d '"')
+
+#
+for componentName in $componentList; do
+  curl \
+    -s \
+    -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
+    -H 'X-Requested-By: ambari' \
+    -X GET \
+    "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/components/${componentName}?fields=ServiceComponentInfo/state" | \
+      tee -a ${AMBARI_COMPONENT_LIST}
+done
+```
+
+### Service
+
+```sh
+AMBARI_SERVICE_LIST=./ambari_service_list.json
+cat /dev/null > "${AMBARI_SERVICE_LIST}"
+```
+
+```sh
+#
+serviceList=$(curl \
+  -s \
+  -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
+  -H 'X-Requested-By: ambari' \
+  -X GET \
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/" | \
+    jq '.items[].ServiceInfo.service_name' | tr -d '"')
+
+#
+for serviceName in $serviceList; do
+  curl \
+    -s \
+    -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
+    -H 'X-Requested-By: ambari' \
+    -X GET \
+    "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/${serviceName}?fields=ServiceInfo/state" | \
+      tee -a ${AMBARI_SERVICE_LIST}
+done
+```
+
+#### Ranger
+
+```sh
+curl \
+  -s \
+  -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
+  -H 'X-Requested-By: ambari' \
+  -X GET \
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/RANGER/components/RANGER_ADMIN" | jq
+```

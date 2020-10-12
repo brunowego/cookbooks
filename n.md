@@ -1,5 +1,9 @@
 # Node version management (n)
 
+## References
+
+- [GitHub Repository](https://github.com/tj/n)
+
 ## CLI
 
 ### Installation
