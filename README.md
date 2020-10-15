@@ -4,12 +4,14 @@ Bucket of cookbooks to help install and set softwares.
 
 ## Terms
 
+- [Active Directory Federation Services (ADFS)]()
 - [Analytical Base Table (ABT) is](https://en.wikipedia.org/wiki/Analytical_base_table)
 - [Backend for Frontend (BFF)](https://samnewman.io/patterns/architectural/bff/)
 - [Backend for Frontend (BFF)](https://samnewman.io/patterns/architectural/bff/)
 - [Bare-metal server](https://en.wikipedia.org/wiki/Bare-metal_server)
 - [Change Data Capture (CDC)]()
 - [Chaos engineering (Chaos Monkey)](https://en.wikipedia.org/wiki/Chaos_engineering)
+- [Churn Rate]()
 - [Classless Inter-Domain Routing (CIDR)](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 - [Cloud Provider/Cloud Computing](https://en.wikipedia.org/wiki/Cloud_computing)
 - [Command qQuery Responsibility Segregation (CQRS)](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_query_responsibility_segregation)
@@ -18,6 +20,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Containers as a Service (CaaS)]()
 - [Distributed Cloud Operating System (DC/OS)]()
 - [Enhanced Entity–Relationship (EER)](https://en.wikipedia.org/wiki/Enhanced_entity%E2%80%93relationship_model)
+- [ERPM (Enterprise Random Password Manager]()
 - [Estimated Time of Arrival (ETA)]()
 - [Five Ws (5WH)]()
 - [Free and Open-Source Software (FOSS)](https://en.wikipedia.org/wiki/Free_and_open-source_software)
@@ -30,6 +33,7 @@ Bucket of cookbooks to help install and set softwares.
 - [On-premises](https://en.wikipedia.org/wiki/On-premises_software)
 - [Operations as a Service (OaaS)]()
 - [Platform as a service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service)
+- [Public Key Infrastructure (PKI)]()
 - [Read-eval-print loop (REPL)](https://en.wikipedia.org/wiki/Read-eval-print_loop)
 - [Relational Database Service (RDS)]()
 - [Server-side Rendering (SSR)]()
@@ -40,9 +44,6 @@ Bucket of cookbooks to help install and set softwares.
 - [Uniform Resource Name (URN)](https://en.wikipedia.org/wiki/Uniform_resource_name)
 - [Universal Plug and Play (UPnP_](https://en.wikipedia.org/wiki/Universal_Plug_and_Play)
 - [Web Server Gateway Interface (WSGI)](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)
-- [Public Key Infrastructure (PKI)]()
-- [Active Directory Federation Services (ADFS)]()
-- [Churn Rate]()
 
 ## Cheat Sheets
 

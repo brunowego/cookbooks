@@ -14,21 +14,28 @@ sudo apk update
 sudo apk add postgresql-dev g++
 ```
 
-### Instalation
+### Installation
 
 ```sh
+# As user dependency
 pip install -U psycopg2-binary
+
+# As project dependency
+echo 'psycopg2-binary==2.8.6' >> ./requirements.txt
 ```
 
 ### REPL
 
 ```py
 >>> import psycopg2
->>> conn = psycopg2.connect(user='postgres', password='postgres', host='postgres')
+>>>
+>>> conn = psycopg2.connect(user='postgres', password='postgres', host='127.0.0.1')
+>>>
 >>> cur = conn.cursor()
->>> cur.execute('''SELECT datname FROM pg_database;''')
->>> cur.fetchall()
+>>> cur.execute('SELECT CURRENT_TIMESTAMP')
+>>> cur.fetchone()
 >>> cur.close()
+>>>
 >>> conn.close()
 >>> exit()
 ```

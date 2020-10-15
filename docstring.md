@@ -26,6 +26,19 @@ of this module.
 """
 ```
 
+### Class
+
+```log
+Missing docstring in public classpydocstyle(D101)
+```
+
+```py
+class Klass(object):
+    """Description of this class"""
+
+    def __init__(self):
+```
+
 ### Function
 
 ```log

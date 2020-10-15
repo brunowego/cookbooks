@@ -1,8 +1,10 @@
 # ShellCheck
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install shellcheck

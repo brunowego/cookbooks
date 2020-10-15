@@ -52,7 +52,7 @@ flask --help
 FLASK_ENV=development flask routes
 
 # Run
-FLASK_ENV=development flask run
+FLASK_ENV=development flask run --host=0.0.0.0 --port=8080
 
 # Shell
 FLASK_ENV=development flask shell
@@ -110,6 +110,15 @@ EOF
 
 #
 [{'username': u.username, 'password': u.password, 'id': u.id} for u in users]
+
+#
+'%s=%s' % (v[0], v[1]) for v in values
+
+#
+{p[0]: p[1] for p in params}
+
+#
+','.join([str(h.get('name')) for h in hostnames])
 ```
 
 ## Docker

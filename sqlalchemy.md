@@ -28,13 +28,7 @@ echo 'pymongo==3.11.0' >> ./requirements.txt
 
 #### PostgreSQL
 
-```sh
-# As user dependency
-pip install -U psycopg2-binary
-
-# As project dependency
-echo 'psycopg2-binary==2.8.6' >> ./requirements.txt
-```
+Install [Python-PostgreSQL Database Adapter (psycopg2)](./psycopg2)
 
 ```py
 >>> import sqlalchemy
@@ -55,13 +49,7 @@ echo 'psycopg2-binary==2.8.6' >> ./requirements.txt
 
 #### MySQL
 
-```sh
-# As user dependency
-pip install -U PyMySQL
-
-# As project dependency
-echo 'PyMySQL==0.10.1' >> ./requirements.txt
-```
+Install [PyMySQL](./pymysql)
 
 ```py
 >>> import sqlalchemy

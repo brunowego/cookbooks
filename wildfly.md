@@ -1,5 +1,9 @@
 # WildFly (JBoss Application Server)
 
+<!--
+EAP - Enterprise Application Server
+-->
+
 ## CLI
 
 ### Installation

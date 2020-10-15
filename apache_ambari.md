@@ -149,3 +149,85 @@ curl \
   -X GET \
   "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/RANGER/components/RANGER_ADMIN" | jq
 ```
+
+#### ZooKeeper
+
+```sh
+curl \
+  -s \
+  -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
+  -H 'X-Requested-By: ambari' \
+  -X GET \
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/ZOOKEEPER/components/ZOOKEEPER_SERVER" | jq
+```
+
+#### Knox
+
+```sh
+curl \
+  -s \
+  -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
+  -H 'X-Requested-By: ambari' \
+  -X GET \
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/KNOX/components/KNOX_GATEWAY" | jq
+```
+
+#### Hive
+
+```sh
+curl \
+  -s \
+  -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
+  -H 'X-Requested-By: ambari' \
+  -X GET \
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/HIVE/components/HIVE_SERVER" | jq
+```
+
+#### HBase
+
+```sh
+curl \
+  -s \
+  -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
+  -H 'X-Requested-By: ambari' \
+  -X GET \
+  "http://dxl1big00011.dispositivos.bb.com.br:7180/api/v1/clusters/BBDesenvolvimento/services/ZOOKEEPER/components/ZOOKEEPER_SERVER" | jq
+```
+
+## Library
+
+### Installation
+
+```sh
+# As user dependency
+pip install -U ambari
+
+# As project dependency
+echo 'ambari==0.1.7' >> ./requirements.txt
+```
+
+### REPL
+
+```sh
+export AMBARI_URL='http://localhost:8080'
+export AMBARI_USERNAME='admin'
+export AMBARI_PASSWORD='admin'
+```
+
+```py
+>>> from ambari.client import Client
+>>> import os
+>>>
+>>> client = Client(os.environ['AMBARI_URL'], username=os.environ['AMBARI_USERNAME'], passwd=os.environ['AMBARI_PASSWORD'])
+>>>
+>>> print('\n'.join([str(s.name) for s in client.cluster.services]))
+>>>
+>>> service = client.cluster.get_service('ZOOKEEPER')
+>>> zkServer = service.get_component('ZOOKEEPER_SERVER')
+>>> zkServer.info.get('host_components')
+>>>
+>>> print('\n'.join([str(h.status) for h in zkServer.host_components]))
+>>> print('\n'.join([str(h.info) for h in zkServer.host_components]))
+>>>
+>>> exit()
+```
