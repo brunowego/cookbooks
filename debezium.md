@@ -36,6 +36,13 @@ https://github.com/fatmali/openmrs-spark
 
 <!-- https://github.com/andreformento/debezium-tutorial/search?utf8=%E2%9C%93&q=dbserver1&type= -->
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -46,6 +53,7 @@ docker run -d \
   -p 2888:2888 \
   -p 3888:3888 \
   --name debezium-zookeeper \
+  --network workbench \
   docker.io/debezium/zookeeper:1.0
 ```
 
@@ -56,6 +64,7 @@ docker run -d \
   -e ZOOKEEPER_CONNECT='debezium-zookeeper:2181' \
   -p 9092:9092 \
   --name debezium-kafka \
+  --network workbench \
   docker.io/debezium/kafka:1.0
 ```
 
@@ -75,6 +84,7 @@ docker run -d \
   -v mysql-data:/var/lib/mysql \
   -p 3306:3306 \
   --name mysql \
+  --network workbench \
   docker.io/library/mysql:5.7
 ```
 
@@ -113,6 +123,7 @@ docker run -d \
   -e STATUS_STORAGE_TOPIC='my_connect_statuses' \
   -p 8083:8083 \
   --name debezium-connect \
+  --network workbench \
   docker.io/debezium/connect:1.0
 ```
 

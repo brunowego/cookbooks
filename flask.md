@@ -1,6 +1,9 @@
 # Flask
 
 <!--
+https://flask.palletsprojects.com/en/1.1.x/testing/
+https://dev.to/paurakhsharma/flask-rest-api-part-6-testing-rest-apis-4lla
+
 https://github.com/albertfougy/microservices-app
 https://github.com/opatua/cookiecutter-flask-api
 https://github.com/tannguyenit/flask-infrastructure-api
@@ -20,6 +23,7 @@ https://github.com/tolgahanuzun/Flask-Login-Example
 - [CORS](https://flask-cors.readthedocs.io/en/latest/)
 - [dynaconf](https://github.com/rochacbruno/dynaconf)
 - [Flasgger](https://github.com/flasgger/flasgger)
+- [Login](https://flask-login.readthedocs.io/en/latest/)
 - [Migrate](https://flask-migrate.readthedocs.io/en/latest/)
 - [PyMongo](https://flask-pymongo.readthedocs.io/en/latest/)
 - [python-dotenv](https://github.com/theskumar/python-dotenv)
