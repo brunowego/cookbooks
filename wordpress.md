@@ -461,7 +461,50 @@ jq '."intelephense.diagnostics.undefinedSymbols" |= false' "$HOME/.config/Code/U
 
 ## Snippets
 
-###
+### Upload Size
+
+1. Tools
+2. Site Health
+3. Info Tab
+4. Server
+
+#### PHP Built-in web server
+
+```sh
+php \
+  -d upload_max_filesize=32M \
+  -d post_max_size=32M \
+  -d max_execution_time=300 \
+  -S \
+  127.0.0.1:8080
+```
+
+#### Docker WordPress (`docker.io/library/wordpress:5.4.2-apache`):
+
+```Dockerfile
+RUN cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini && \
+    sed -i '/^upload_max_filesize =/s/= .*/= 32M/' /usr/local/etc/php/php.ini && \
+    sed -i '/^post_max_size =/s/= .*/= 32M/' /usr/local/etc/php/php.ini && \
+    sed -i '/^max_execution_time =/s/= .*/= 300/' /usr/local/etc/php/php.ini
+```
+
+#### WordPress `functions.php` file:
+
+```php
+@ini_set( 'upload_max_filesize' , '32M' );
+@ini_set( 'post_max_size', '32M');
+@ini_set( 'max_execution_time', '300' );
+```
+
+#### Kubernetes
+
+```yml
+ingress:
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: '32m'
+```
+
+### Query Output
 
 ```php
 $query = new WP_Query( array( ... ) );

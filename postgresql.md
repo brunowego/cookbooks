@@ -75,11 +75,6 @@ brew services start postgres
 sudo systemctl enable --now postgresql
 ```
 
-### Health check
-
-```sh
-lsof -i :5432
-```
 
 ### Commands
 
@@ -146,6 +141,28 @@ pg_dump \
   --data-only \
   --column-inserts \
   > dml.sql
+```
+
+### Tips
+
+#### Health check
+
+```sh
+lsof -i :5432
+```
+
+#### SSH Tunnel
+
+```sh
+ssh \
+  -p [port] \
+  -N \
+  -L 5433:[hostname]:5432 \
+  [username]@[hostname]
+
+psql \
+  -h 127.0.0.1 \
+  -P 5433
 ```
 
 ### Issues

@@ -37,7 +37,7 @@ php -m | grep redis
 ```
 
 ```sh
-php -i | grep '^redis$' -A 33
+php -i | grep '^redis$' -A 36
 ```
 
 ## Service

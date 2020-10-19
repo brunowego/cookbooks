@@ -27,6 +27,8 @@ sudo su - "$USER"
 
 ### Examples
 
+*Note: Remove square brackets.*
+
 #### Replace
 
 ```sh
@@ -84,16 +86,22 @@ sed s/[pattern]/[text]/ [/path/to/file.template] > [/path/to/file]
 ####
 
 ```sh
+sed '/^[attr] =/s/= .*/= [value]/' [/path/to/file]
+```
+
+####
+
+```sh
 sed '1s/^/[text]/' [/path/to/file]
 ```
 
 #### Remove Comment
 
 ```sh
-sed 's/#\(attribute:\)/\1/g' [/path/to/file]
+sed 's/#\([attribute]:\)/\1/g' [/path/to/file]
 
 # Add value
-sed 's/#\(attribute:\)/\1 value/g' [/path/to/file]
+sed 's/#\([attribute]:\)/\1 [value]/g' [/path/to/file]
 ```
 
 #### Remove
@@ -101,5 +109,5 @@ sed 's/#\(attribute:\)/\1 value/g' [/path/to/file]
 ##### Line
 
 ```sh
-sed -i '1d' ~/.ssh/known_hosts
+sed '1d' ~/.ssh/known_hosts
 ```

@@ -1,6 +1,8 @@
 # Flask
 
 <!--
+https://github.com/arthurchiquet/Dashboard
+https://github.com/KoeusIss/holbietheque
 https://flask.palletsprojects.com/en/1.1.x/testing/
 https://dev.to/paurakhsharma/flask-rest-api-part-6-testing-rest-apis-4lla
 

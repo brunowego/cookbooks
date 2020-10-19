@@ -1,6 +1,13 @@
 # Storybook
 
 <!--
+https://auth0-cosmos.now.sh/sandbox/
+https://mashmatrix.github.io/react-lightning-design-system/
+https://primer.github.io/storybook/
+https://documentation-primitives.netlify.app/
+
+https://github.com/creativecommons/vocabulary
+https://github.com/storybookjs/storybook
 https://github.com/chakra-ui/chakra-ui
 https://github.com/alfa-laboratory/core-components
 https://github.com/element-plus/element-plus
@@ -9,6 +16,7 @@ https://github.com/element-plus/element-plus
 ## References
 
 - [Intro to Storybook](https://www.learnstorybook.com/intro-to-storybook/)
+- [Visual Testing with Storybook](https://storybook.js.org/docs/html/workflows/visual-testing)
 
 ## Library
 
@@ -65,21 +73,6 @@ npx -p @storybook/cli sb
 - [NPM](/npm.md#configuration)
 - [stylelint](/stylelint.md#configuration)
 
-### Configuration
-
-```json
-{
-  "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook -o ./public/sb"
-  }
-}
-```
-
-```sh
-echo '/public' > ./.gitignore
-```
-
 ### Commands
 
 ```sh
@@ -98,6 +91,21 @@ sb init --type react_native
 
 # Running
 npm run storybook
+```
+
+### Configuration
+
+```json
+{
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook -o ./public/sb"
+  }
+}
+```
+
+```sh
+echo '/public' > ./.gitignore
 ```
 
 ### Presets

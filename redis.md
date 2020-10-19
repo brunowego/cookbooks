@@ -170,6 +170,13 @@ kubectl delete namespace redis --grace-period=0 --force
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -179,6 +186,7 @@ docker run -d \
   -v redis-data:/data \
   -p 6379:6379 \
   --name redis \
+  --network workbench \
   docker.io/library/redis:5.0.5-alpine3.9
 
 # With auth
@@ -189,6 +197,7 @@ docker run -d \
   -v redis-data:/data \
   -p 6379:6379 \
   --name redis \
+  --network workbench \
   docker.io/library/redis:5.0.5-alpine3.9 /bin/sh -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
 ```
 

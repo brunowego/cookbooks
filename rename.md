@@ -1,5 +1,9 @@
 # rename
 
+## References
+
+- [GNU sed](/gnu_sed#examples)
+
 ## CLI
 
 ### Installation
@@ -20,19 +24,24 @@ rename
 
 ```sh
 # Slugify
-rename -fvc --nows *
+rename \
+  --dry-run \
+  -fvc \
+  --nows \
+  *
 
 # Replace (regex)
 rename \
-  -v \
   --dry-run \
+  -v \
   's/[from]/[to]/' \
   *
+
+#
+find ./ -name '*.[from-ext]' -print0 | \
+  xargs -0 rename --dry-run 's/.[from-ext]$/.[to-ext]/'
+
+#
+find ./ -iname '*.[extension]' -exec realpath {} \; | \
+  rename --dry-run 's/.[from-ext]$/.[to-ext]/'
 ```
-
-<!-- ####
-
-```sh
-find . -iname '.*' -exec realpath {} \; | rename -n 's/\.(.*)/$1/'
-find . -iname '.*' -exec realpath {} \; | rename 's/\.(.*)/$1/'
-``` -->

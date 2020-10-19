@@ -2,12 +2,24 @@
 
 ## App
 
+### Dependencies
+
+- [cURL](/curl.md)
+
 ### Installation
 
 #### Homebrew
 
 ```sh
 brew cask install apache-directory-studio
+```
+
+#### Linux
+
+```sh
+curl 'https://downloads.apache.org/directory/studio/2.0.0.v20200411-M15/ApacheDirectoryStudio-2.0.0.v20200411-M15-linux.gtk.x86_64.tar.gz' | sudo tar -xzC /opt
+
+sudo ln -s /opt/ApacheDirectoryStudio/ApacheDirectoryStudio /usr/local/bin/ApacheDirectoryStudio
 ```
 
 ### Configuration
