@@ -36,6 +36,19 @@ http = 0.0.0.0:5000
 
 die-on-term = true
 EOF
+
+cat << EOF > ./uwsgi.ini
+[uwsgi]
+chdir = /code
+module = evalai.wsgi:application
+master = true
+processes = 50
+http = 0.0.0.0:8000
+vaccum = true
+python-autoreload = 1
+buffer-size=32768
+chmod-socket = 777
+EOF
 ```
 
 ```sh

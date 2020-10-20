@@ -71,7 +71,17 @@ FLASK_ENV=development flask shell
 echo 'requests==2.24.0' >> ./requirements.txt
 ```
 
-## Boilerplate
+## Library
+
+### Installation
+
+```sh
+# As user dependency
+pip install -U Flask
+
+# As project dependency
+echo 'Flask==1.1.2' >> ./requirements.txt
+```
 
 ###
 

@@ -1,3 +1,7 @@
 # Jest
 
+<!--
+vscode-jest
+-->
+
 TODO

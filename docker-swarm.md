@@ -2,6 +2,11 @@
 
 ## CLI
 
+### Dependencies
+
+- [Oracle VM VirtualBox](/virtualbox.md)
+- [Docker Machine](/docker-machine.md)
+
 ### Installation
 
 #### Homebrew
@@ -86,10 +91,10 @@ EOF
 docker-machine ls
 
 # Init Swarm
-docker-machine ssh manager1 'docker swarm init --advertise-addr 10.100.1.100'
+docker-machine ssh manager1 "docker swarm init --advertise-addr $(docker-machine ip manager1)"
 
 # Join Swarm
-docker-machine ssh worker1 'docker swarm join --token <token> 10.100.1.100:2377'
+docker-machine ssh worker1 "docker swarm join --token <token> $(docker-machine ip manager1):2377"
 
 # List Nodes
 docker-machine ssh manager1 'docker node ls'
@@ -103,4 +108,20 @@ eval "$(docker-machine env manager1)"
 ```sh
 docker-machine ssh manager1 'docker swarm leave -f'
 docker-machine ssh worker1 'docker swarm leave'
+```
+
+#### State
+
+```sh
+docker-machine stop $(docker-machine ls --format '{{.Name}}')
+
+docker-machine start $(docker-machine ls --format '{{.Name}}')
+
+docker-machine ls
+```
+
+#### Remove
+
+```sh
+docker-machine rm -y manager1 worker1
 ```

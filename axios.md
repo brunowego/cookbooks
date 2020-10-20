@@ -6,20 +6,21 @@
 
 ## Installation
 
-```sh
-mkdir example-axios && cd "$_"
-npm init -y
-```
+### NPM
 
 ```sh
+#
+mkdir example-axios && cd "$_"
+npm init -y
+
+#
 npm install axios -D
+
+#
+npm install axios -g
 ```
 
 ## REPL
-
-```sh
-node
-```
 
 ```js
 .editor

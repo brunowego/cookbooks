@@ -1,32 +1,34 @@
 # Docker Machine
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install docker-machine
 ```
 
-### Linux
+#### Linux
 
 ```sh
 sudo curl -L "https://github.com/docker/machine/releases/download/v0.16.1/docker-machine-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-machine && sudo chmod +x /usr/local/bin/docker-machine
 ```
 
-### Chocolatey
+#### Chocolatey
 
 ```sh
 choco install -y docker-machine
 ```
 
-## Commands
+### Commands
 
 ```sh
 docker-machine -h
 ```
 
-### Create
+#### Create
 
 #### Oracle VirtualBox
 
@@ -40,7 +42,7 @@ docker-machine create \
   default
 ```
 
-#### xhyve
+##### xhyve
 
 ```sh
 docker-machine create \
@@ -52,7 +54,7 @@ docker-machine create \
   default
 ```
 
-#### VMware
+##### VMware
 
 ```sh
 docker-machine create \
@@ -64,7 +66,7 @@ docker-machine create \
   default
 ```
 
-#### Parallels
+##### Parallels
 
 ```sh
 docker-machine create \
@@ -76,13 +78,13 @@ docker-machine create \
   default
 ```
 
-## Configuration
+### Configuration
 
 ```sh
 eval "$(docker-machine env)"
 ```
 
-### Environment Proxy
+#### Environment Proxy
 
 ```sh
 jq ".HostOptions.EngineOptions.Env += [ \"http_proxy=$http_proxy\" ]" ~/.docker/machine/machines/$DOCKER_MACHINE_NAME/config.json | sponge ~/.docker/machine/machines/$DOCKER_MACHINE_NAME/config.json
@@ -98,9 +100,9 @@ docker-machine provision "$DOCKER_MACHINE_NAME"
 docker info | grep Proxy
 ```
 
-### Network
+#### Network
 
-#### Bridge
+##### Bridge
 
 ```sh
 jq '.HostOptions.EngineOptions.ArbitraryFlags += [ "bip=10.1.1.1/16" ]' ~/.docker/machine/machines/$DOCKER_MACHINE_NAME/config.json | \
@@ -115,16 +117,18 @@ docker-machine provision "$DOCKER_MACHINE_NAME"
 docker-machine ssh "$DOCKER_MACHINE_NAME" ip addr show docker0
 ```
 
-### Tips
+#### Tips
 
-####
+TODO
+
+<!-- #####
 
 ```sh
 docker-machine scp -r ./[folder] default:/tmp/[folder]
 docker-machine ssh "$DOCKER_MACHINE_NAME" sudo cp -r /tmp/[folder]/* [/absolute/path/to/folder]
-```
+``` -->
 
-####
+<!-- #####
 
 ```sh
 sudo route \
@@ -138,4 +142,4 @@ sudo route \
   -n delete \
   -net "$(cat ~/.docker/machine/machines/$DOCKER_MACHINE_NAME/config.json | \
     jq -r '.Driver.HostOnlyCIDR')" "127.0.0.1"
-```
+``` -->

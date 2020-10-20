@@ -38,6 +38,14 @@ aws iam get-account-summary
 aws sts get-caller-identity
 ```
 
+```sh
+aws configure set default.region us-east-1
+
+eval $(aws ecr get-login --no-include-email)
+
+aws s3 cp s3://[owner]-secrets/[app]/${TRAVIS_BRANCH}/ssl/ ./ssl/ --recursive
+```
+
 ### Tips
 
 #### Profile Environment

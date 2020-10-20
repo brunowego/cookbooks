@@ -18,3 +18,16 @@ pip install -U pytest
 # As project dependency
 echo 'pytest==6.1.1' >> ./requirements-dev.txt
 ```
+
+###
+
+```sh
+cat << EOF > ./pytest.ini
+[pytest]
+python_files=test*.py
+DJANGO_SETTINGS_MODULE=settings.test
+DJANGO_SERVER=django
+DJANGO_SERVER_PORT=8000
+norecursedirs=env venv node_modules bower_components
+EOF
+```
