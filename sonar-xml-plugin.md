@@ -1,3 +1,0 @@
-# SonarQube XML Plugin
-
-TODO

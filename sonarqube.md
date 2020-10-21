@@ -5,6 +5,10 @@ https://plugins.miniorange.com/saml-single-sign-on-sso-sonarqube-using-simplesam
 https://github.com/BlockByBlock/jenkins-docker-with-goss/blob/master/doc/sonarqube.md
 -->
 
+## Stack
+
+- [SonarQube Scanner](/sonar-scanner.md)
+
 ## Helm
 
 ### References
@@ -175,7 +179,7 @@ brew install openjdk@11
 #### Homebrew
 
 ```sh
-brew install sonarqube sonar-completion
+brew install sonarqube
 ```
 
 ### Services
@@ -197,6 +201,10 @@ sonar start
 echo -e '[INFO]\thttp://127.0.0.1:9000'
 ```
 
+| Login | Password |
+| --- | --- |
+| admin | admin |
+
 ### Commands
 
 ```sh
@@ -217,9 +225,7 @@ sonar stop
 
 # Or
 sonar force-stop
-```
 
-```sh
 # Console
 sonar console
 

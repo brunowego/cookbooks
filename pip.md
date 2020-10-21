@@ -127,7 +127,6 @@ ERROR: Could not install packages due to an EnvironmentError: HTTPSConnectionPoo
 cat << EOF > /etc/pip.conf
 [global]
 trusted-host =
-  pypi.python.org
   pypi.org
   files.pythonhosted.org
 EOF
@@ -138,15 +137,18 @@ mkdir -p ~/.pip
 cat << EOF > ~/.pip/pip.conf
 [global]
 trusted-host =
-  pypi.python.org
   pypi.org
   files.pythonhosted.org
 EOF
 
 # Or, using trust host
 pip install \
+  --trusted-host pypi.org \
   --trusted-host files.pythonhosted.org \
   coverage
+
+# Or, using environment variable
+export PIP_TRUSTED_HOST='pypi.org files.pythonhosted.org'
 ```
 
 ```sh

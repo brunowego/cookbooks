@@ -1,3 +1,0 @@
-# SonarQube Python Plugin
-
-TODO

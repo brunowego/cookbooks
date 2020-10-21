@@ -54,9 +54,9 @@ wget -P "$SONARQUBE_HOME/extensions/plugins" 'https://binaries.sonarsource.com/D
 
 ### Configuration
 
-1. Create new project
-   - Project key: com.example.gitlab:master
-   - Display name: GitLab Example Production
+1. Projects -> Create new project
+   - Project key: com.example.app:master
+   - Display name: My App Production
    - Set Up
 2. Provide a token
    - Generate a token: example-token
@@ -71,7 +71,7 @@ wget -P "$SONARQUBE_HOME/extensions/plugins" 'https://binaries.sonarsource.com/D
    ```sh
    sonar-scanner \
      -Dsonar.language=php \
-     -Dsonar.projectKey=com.example.gitlab:master \
+     -Dsonar.projectKey=com.example.app:master \
      -Dsonar.sources=. \
      -Dsonar.host.url=http://127.0.0.1:9000 \
      -Dsonar.login=example-token

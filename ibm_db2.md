@@ -5,7 +5,7 @@
 - [Db2 Database](https://en.wikipedia.org/wiki/Db2_Database)
 - [z/OS](https://en.wikipedia.org/wiki/Z/OS)
 
-##
+## CLI
 
 ### Installation
 
@@ -139,6 +139,31 @@ docker logs -f db2 | sed '/(*) Setup has completed./ q'
 docker rm -f db2
 docker volume rm db2-database db2-hadr
 ```
+
+<!-- ## Dockerfile
+
+```Dockerfile
+FROM
+
+RUN yum -y install \
+      gcc \
+      python3-devel
+
+RUN mkdir -p /opt/ibm/db2 && \
+    wget -O - 'https://[]/linuxx64_odbc_cli.tar.gz' | \
+      tar -xzC /opt/ibm/db2
+
+ENV IBM_DB_HOME '/opt/ibm/db2/clidriver'
+# ENV CLIDRIVER_LIB_PATH "$IBM_DB_HOME/lib"
+# ENV DYLD_LIBRARY_PATH "$CLIDRIVER_LIB_PATH:$DYLD_LIBRARY_PATH"
+
+RUN ln -s /opt/ibm/db2/clidriver/lib/libdb2.so.1 /usr/lib && \
+    ln -s /opt/ibm/db2/clidriver/lib/libdb2.so.1 /usr/lib64
+
+RUN pip install -q --no-cache-dir \
+      ibm-db==3.0.1 \
+      ibm-db-sa==0.3.5
+``` -->
 
 ## Python
 

@@ -14,23 +14,26 @@ https://github.com/snowplow-incubator/snowplow-google-analytics-plugin
 
 ### Dependencies
 
+- [Docker Swarm](/docker-swarm.md#cluster-provision)
+
 ```sh
 git clone https://github.com/snowplow/snowplow-docker snowplow-docker && cd "$_"
+
 cd ./example
 ```
 
 ### Running
 
 ```sh
-docker swarm init
 docker stack deploy -c ./docker-compose.yml snowplow-realtime
 ```
 
 ```sh
-echo -e '[INFO]\thttp://127.0.0.1:4171'
+# NSQ Admin
+echo -e "[INFO]\thttp://$(docker-machine ip manager1):4171"
 
-#
-echo -e '[INFO]\thttp://127.0.0.1:8081/sub?topic=bad&channel=bad_channel'
+# NSQ Pubsub
+echo -e "[INFO]\thttp://$(docker-machine ip manager1):8081/sub?topic=bad&channel=bad_channel"
 ```
 
 ### Remove

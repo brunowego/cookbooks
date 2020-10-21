@@ -1,3 +1,0 @@
-# SonarQube JavaScript Plugin
-
-TODO

@@ -22,6 +22,33 @@ echo -e '[INFO]\thttp://127.0.0.1:8888'
 | host | password |
 | participant | password |
 
+## Docker Swarm
+
+### Dependencies
+
+- [Docker Swarm](/docker-swarm.md#cluster-provision)
+
+```sh
+git clone https://github.com/Cloud-CV/EvalAI.git evalai && cd "$_"
+```
+
+### Running
+
+```sh
+docker stack deploy -c ./docker-compose.yml evalai
+```
+
+```sh
+#
+echo -e "[INFO]\thttp://$(docker-machine ip manager1):????"
+```
+
+### Remove
+
+```sh
+docker stack rm evalai
+```
+
 ## Source Code
 
 ### Git Clone

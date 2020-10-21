@@ -49,6 +49,16 @@ choco install -y sourcetree
 
 ### Issues
 
+#### Missing Git CLI
+
+```log
+'git status' failed with code -1:'launch path not accessible
+```
+
+1. Preferences
+2. Git tab
+3. Git Version -> Use System Git
+
 #### Authentication Required
 
 ```log

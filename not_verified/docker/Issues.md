@@ -122,3 +122,18 @@ docker network prune -f
 ```sh
 ip link del docker0
 ```
+
+##
+
+```log
+Error response from daemon: login attempt to http://[hostname]/v2/ failed with status: 503 Service Unavailable
+```
+
+```sh
+nmap -p 80,443 [hostname]
+nc -zv [hostname] 80
+ncat --ssl [hostname] 443
+openssl s_client -connect [hostname]:443
+
+curl -k https://[hostname]/v2/_catalog
+```
