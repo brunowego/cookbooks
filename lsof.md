@@ -45,14 +45,11 @@ sudo su - "$USER"
 lsof -h
 ```
 
-### Examples
-
-#### Port Scan
+### Usage
 
 ```sh
+# Port Scan
 lsof -iTCP -sTCP:LISTEN -n -P
-```
 
-```sh
 lsof -ti :[port]
 ```

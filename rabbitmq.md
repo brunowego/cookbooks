@@ -19,6 +19,13 @@ brew services start rabbitmq
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -30,6 +37,7 @@ docker run -d \
   -e RABBITMQ_DEFAULT_PASS='admin' \
   -p 5672:5672 \
   --name rabbitmq \
+  --network workbench \
   docker.io/library/rabbitmq:3.8.2-alpine
 ```
 
@@ -48,6 +56,7 @@ docker run -d \
   -p 5672:5672 \
   -p 15672:15672 \
   --name rabbitmq \
+  --network workbench \
   docker.io/library/rabbitmq:3.8.2-management-alpine
 ```
 
@@ -60,7 +69,7 @@ echo -e '[INFO]\thttp://127.0.0.1:15672'
 | Login | Password |
 | --- | --- |
 | guest | guest |
-| admin | admin |
+| `admin` | `admin` |
 
 ### Remove
 

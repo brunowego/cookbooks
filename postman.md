@@ -10,6 +10,33 @@
 brew cask install postman
 ```
 
+#### Linux
+
+```sh
+#
+wget -O - 'https://dl.pstmn.io/download/latest/linux64' | sudo tar -xzC /usr/local --transform s/Postman/postman/
+
+#
+sudo chmod +x /usr/local/postman/app/Postman
+```
+
+##### Ubuntu Desktop Entry
+
+```sh
+#
+cat << EOF > ~/Desktop/Postman.desktop
+[Desktop Entry]
+Name=Postman
+GenericName=Postman
+Exec=/usr/local/postman/app/Postman %u
+Terminal=false
+Icon=/usr/local/postman/app/resources/app/assets/icon.png
+Type=Application
+Categories=Application;Network;X-Developer;
+Comment=The collaboration platform for api development
+EOF
+```
+
 #### Chocolatey
 
 ```sh

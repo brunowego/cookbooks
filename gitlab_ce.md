@@ -2,7 +2,9 @@
 
 ## References
 
-- [API Issues](https://docs.gitlab.com/ce/api/issues.html)
+- [Issues API](https://docs.gitlab.com/ce/api/issues.html)
+- [GitLab CI/CD environment variables](https://docs.gitlab.com/ce/ci/variables/)
+- [Using Git submodules with GitLab CI](https://docs.gitlab.com/ee/ci/git_submodules.html)
 
 ## Helm
 
@@ -164,6 +166,10 @@ helm upgrade nginx-ingress stable/nginx-ingress -f <(yq d <(helm get values ngin
 
 ## Docker
 
+### Dependencies
+
+- [mkcert](/mkcert.md#configuration)
+
 ### Network
 
 ```sh
@@ -181,6 +187,7 @@ docker run -d \
   -v gitlab-redis-data:/data \
   -p 6379:6379 \
   --name gitlab-redis \
+  --network workbench \
   docker.io/library/redis:5.0.5-alpine3.9 /bin/sh -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
 ```
 
@@ -203,6 +210,19 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h gitlab \
   -e GITLAB_OMNIBUS_CONFIG="$(cat << \EOF
+external_url 'https://gitlab.example.com'
+registry_external_url 'https://registry.example.com'
+
+letsencrypt['enable'] = false
+
+nginx['listen_port'] = 443
+nginx['redirect_http_to_https'] = true
+
+nginx['ssl_certificate'] = '/etc/gitlab/ssl/server.pem'
+nginx['ssl_certificate_key'] = '/etc/gitlab/ssl/server.key'
+registry_nginx['ssl_certificate'] = '/etc/gitlab/ssl/server.pem'
+registry_nginx['ssl_certificate_key'] = '/etc/gitlab/ssl/server.key'
+
 gitlab_rails['initial_root_password'] = 'Pa$$w0rd!'
 gitlab_rails['initial_shared_runners_registration_token'] = 't0ken'
 
@@ -220,24 +240,39 @@ gitlab_rails['db_password'] = 'gitlab'
 gitlab_rails['db_database'] = 'gitlab'
 EOF
 )" \
+  -v /etc/ssl/certs/example.com/server:/etc/gitlab/ssl \
   -v gitlab-config:/etc/gitlab \
   -v gitlab-logs:/var/log/gitlab \
   -v gitlab-data:/var/opt/gitlab \
   -v /etc/localtime:/etc/localtime:ro \
   -p 2222:22 \
   -p 8080:80 \
+  -p 4443:443 \
   --name gitlab-ce \
-  docker.io/gitlab/gitlab-ce:11.10.4-ce.0
+  --network workbench \
+  docker.io/gitlab/gitlab-ce:13.4.4-ce.0
 ```
 
+> Wait! This process take a while.
+
 ```sh
-echo -e '[INFO]\thttp://127.0.0.1:8080'
+#
+sudo hostess add gitlab.example.com 127.0.0.1
+sudo hostess add registry.example.com 127.0.0.1
+
+#
+echo -e '[INFO]\thttp://gitlab.example.com:8080'
 ```
+
+| Login | Password |
+| --- | --- |
+| `root` | `Pa$$w0rd!` |
 
 ### Remove
 
 ```sh
 docker rm -f gitlab-redis gitlab-postgres gitlab-ce
+
 docker volume rm gitlab-redis-data gitlab-postgres-data gitlab-config gitlab-logs gitlab-data
 ```
 

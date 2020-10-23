@@ -48,8 +48,11 @@ mkcert -help
 
 ### Configuration
 
+> **Darwin**: Prefix `/etc/ssl/certs/example.com` with `/private`.
+
 ```sh
 sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/example.com
+
 mkdir -p /etc/ssl/certs/example.com/{ca,server,client}
 ```
 
@@ -71,25 +74,22 @@ CAROOT=/etc/ssl/certs/example.com/ca \
     ::1
 ```
 
-<!-- ```sh
-CAROOT=/etc/ssl/certs/example.com/ca \
-  mkcert \
-    -client \
-    -cert-file /etc/ssl/certs/example.com/client/client.pem \
-    -key-file /etc/ssl/certs/example.com/client/client.key \
-    nameUser1
-``` -->
-
 ```sh
 sudo hostess add app.example.com 127.0.0.1
+```
 
+#### Caddy
+
+```sh
 caddy -conf <(cat << EOF
   app.example.com
   root /var/www/html
   tls /etc/ssl/certs/example.com/server/server.pem /etc/ssl/certs/example.com/server/server.key
 EOF
 )
+```
 
+```sh
 docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
   -h curl \
@@ -103,5 +103,3 @@ docker run -it --rm \
     -v \
     https://app.example.com:2015
 ```
-
-> **Darwin**: Prefix `/etc/ssl/certs/example.com` with `/private`.

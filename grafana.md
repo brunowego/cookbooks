@@ -132,7 +132,7 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 
 | Login | Password |
 | --- | --- |
-| admin | admin |
+| `admin` | `admin` |
 
 #### 6.x
 
@@ -159,7 +159,7 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 
 | Login | Password |
 | --- | --- |
-| admin | admin |
+| `admin` | `admin` |
 
 ### Shell
 

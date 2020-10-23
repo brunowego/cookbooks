@@ -38,11 +38,7 @@ https://github.com/tolgahanuzun/Flask-Login-Example
 #### PIP
 
 ```sh
-# As user dependency
 pip install -U Flask
-
-# As project dependency
-echo 'Flask==1.1.2' >> ./requirements.txt
 ```
 
 ### Commands
@@ -58,18 +54,20 @@ flask --help
 FLASK_ENV=development flask routes
 
 # Run
-FLASK_ENV=development flask run --host=0.0.0.0 --port=8080
+FLASK_ENV=development flask run \
+  --host=0.0.0.0 \
+  --port=8080
 
 # Shell
 FLASK_ENV=development flask shell
 ```
 
-### Libraries
+<!-- ### Libraries
 
 ```sh
 #
 echo 'requests==2.24.0' >> ./requirements.txt
-```
+``` -->
 
 ## Library
 
@@ -80,38 +78,47 @@ echo 'requests==2.24.0' >> ./requirements.txt
 pip install -U Flask
 
 # As project dependency
+cat << EOF >> ./requirements-dev.txt
+pydocstyle==4.0.1
+pylint==2.4.3
+EOF
+
 echo 'Flask==1.1.2' >> ./requirements.txt
+```
+
+```sh
+pip install \
+  -r ./requirements-dev.txt \
+  -r ./requirements.txt
 ```
 
 ###
 
 ```sh
-mkdir -p ./api
+mkdir -p ./app
 
-cat << EOF > ./api/main.py
+cat << EOF > ./app/main.py
 # -*- coding: utf-8 -*-
 """This module defines a simple REST API."""
-from flask import Flask
+from flask import Flask, jsonify
 
 
-api = Flask(__name__)
+app = Flask(__name__)
 
 
-@api.route('/')
-def healthCheck():
+@app.route('/')
+def health_check():
     """Check health status."""
-    return jsonify(status = 'ok')
-
+    return jsonify(status='ok')
 EOF
 
 cat << EOF > ./wsgi.py
 """Make the server use application."""
-from api.main import api
+from app.main import app
 
 
 if __name__ == '__main__':
-    api.run(debug=True)
-
+    app.run(debug=True)
 EOF
 ```
 
@@ -150,7 +157,6 @@ RUN pip install -q --no-cache Flask===1.1.2
 WORKDIR /usr/src/app
 
 ENTRYPOINT ["flask"]
-
 EOF
 ```
 
@@ -174,7 +180,6 @@ def hello():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 EOF
 EOSHELL
 ```

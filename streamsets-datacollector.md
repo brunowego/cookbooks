@@ -25,7 +25,7 @@ echo -e '[INFO]\thttp://127.0.0.1:18630'
 
 | Login | Password |
 | --- | --- |
-| admin | admin |
+| `admin` | `admin` |
 
 ### Remove
 

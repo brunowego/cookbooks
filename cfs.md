@@ -1,6 +1,13 @@
 # Continuous Feedback Surveys
 
+##
+
+- [SatisMeter](https://satismeter.com/)
+- [Refiner](https://refiner.io/)
+
 <!--
+https://github.com/satismeter
+https://github.com/refiner-io
 https://www.gartner.com/smarterwithgartner/unveiling-the-new-and-improved-customer-effort-score/
 https://blog.track.co/o-que-e-customer-effort-score/
 -->

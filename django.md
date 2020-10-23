@@ -52,9 +52,7 @@ pydocstyle==4.0.1
 pylint==2.4.3
 EOF
 
-cat << EOF >> ./requirements.txt
-Django==3.0.2
-EOF
+echo 'Django==3.0.2' >> ./requirements.txt
 
 pip install \
   -r ./requirements-dev.txt \

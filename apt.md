@@ -73,7 +73,7 @@ sudo rm /var/cache/apt/archives/lock
 
 ```Dockerfile
 RUN apt update && \
-    apt --no-install-recommends -y install [package]=[version] \
+    apt --no-install-recommends -y install [package]=[version] && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 ```

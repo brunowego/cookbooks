@@ -80,6 +80,11 @@ Host *
 
 ### Enable Darwin
 
+```sh
+# Darwin
+sudo lsof -i:22
+```
+
 1. System Preferences
 2. Sharing
 3. \[On] Remote Login

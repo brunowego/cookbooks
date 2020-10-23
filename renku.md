@@ -79,7 +79,7 @@ xdg-open "http://$(minikube ip)" || open "http://$(minikube ip)" || echo -e "[IN
 | Login | Password |
 | --- | --- |
 | demo | demo |
-| admin | admin |
+| `admin` | `admin` |
 
 | Endpoint | Description |
 | --- | --- |
