@@ -125,7 +125,7 @@ pyenv install 3.8.0
 rm ~/.pyenv/cache/*.tar.xz
 ```
 
-### Issues
+<!-- ### Issues -->
 
 <!-- ####
 

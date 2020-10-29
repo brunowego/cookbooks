@@ -1,10 +1,15 @@
 # GitLab Community Edition
 
+<!--
+/-/graphql-explorer
+-->
+
 ## References
 
 - [Issues API](https://docs.gitlab.com/ce/api/issues.html)
 - [GitLab CI/CD environment variables](https://docs.gitlab.com/ce/ci/variables/)
 - [Using Git submodules with GitLab CI](https://docs.gitlab.com/ee/ci/git_submodules.html)
+- [GraphQL API](https://docs.gitlab.com/ce/api/graphql/)
 
 ## Helm
 

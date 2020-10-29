@@ -47,6 +47,9 @@ pip list
 # Install setup.py
 pip install ./
 
+#
+python -m pip install ./
+
 # Install compressed file
 pip install [/path/to/package.tar.gz]
 ```
@@ -115,6 +118,27 @@ python ./setup.py clean --all
 ```
 
 ### Issues
+
+#### Clang
+
+```log
+error: command '/usr/bin/clang' failed with exit code 1
+```
+
+```sh
+export CC=gcc
+export CXX=clang
+
+pip install -r ./requirements.txt
+```
+
+#### GCC
+
+```log
+error: command '/usr/bin/gcc' failed with exit code 1
+```
+
+Switch to Python 3.8.6
 
 #### SSL Certificate Verify Failed
 

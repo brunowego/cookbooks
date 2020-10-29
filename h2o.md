@@ -1,6 +1,8 @@
 # H2O
 
+<!--
 https://www.jowanza.com/blog/why-h2o-sparkling-water
+-->
 
 ## Docker
 

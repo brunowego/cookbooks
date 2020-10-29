@@ -1,16 +1,18 @@
 # WhatsApp
 
-## Installation
+## App
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew cask install whatsapp
 ```
 
-## Tips
+### Tips
 
-### Force Specific Network Interface
+#### Force Specific Network Interface
 
 ```sh
 # List

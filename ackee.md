@@ -19,7 +19,7 @@ docker run -d \
   -e MONGO_INITDB_DATABASE=ackee \
   -p 27017:27017 \
   --name ackee-mongo \
-  docker.io/library/mongo:4.0
+  docker.io/library/mongo:4.0.20
 ```
 
 ```sh

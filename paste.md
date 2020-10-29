@@ -1,14 +1,18 @@
 # Paste
 
-## Installation
+## App
 
-### MAS
+### Installation
+
+#### MAS
 
 ```sh
 mas install 967805235
 ```
 
-## Shortcuts
+### Tips
+
+#### Shortcuts
 
 - `⌘` Command
 - `⇧` Shift

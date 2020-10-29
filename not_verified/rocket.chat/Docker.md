@@ -16,12 +16,12 @@ docker run -d \
   -e MONGO_INITDB_DATABASE=rocketchat \
   -p 27017:27017 \
   --name rocketchat-mongo \
-  docker.io/library/mongo:4.0 mongod --oplogSize 128 --replSet rs0 --storageEngine wiredTiger
+  docker.io/library/mongo:4.0.20 mongod --oplogSize 128 --replSet rs0 --storageEngine wiredTiger
 ```
 
 ```sh
 docker run -i --rm \
-  docker.io/library/mongo:4.0 mongo rocketchat-mongo/rocketchat --eval 'rs.initiate({ _id: "rs0", members: [ { _id: 0, host: "localhost:27017" } ]})'
+  docker.io/library/mongo:4.0.20 mongo rocketchat-mongo/rocketchat --eval 'rs.initiate({ _id: "rs0", members: [ { _id: 0, host: "localhost:27017" } ]})'
 ```
 
 ```sh

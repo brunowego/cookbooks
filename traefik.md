@@ -91,6 +91,13 @@ helm delete traefik --purge
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -101,6 +108,7 @@ docker run -d \
   -p 80:80 \
   -p 8080:8080 \
   --name traefik \
+  --network workbench \
   docker.io/library/traefik:v2.0.2
 ```
 

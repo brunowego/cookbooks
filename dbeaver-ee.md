@@ -6,7 +6,7 @@
 
 #### Darwin
 
-- [Java SE Development Kit](https://www.oracle.com/technetwork/java/javase/downloads)
+- [Java SE Development Kit](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 
 #### YUM
 

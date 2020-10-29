@@ -66,6 +66,12 @@ npm pack
 
 ### Tips
 
+#### Download Tarball
+
+```sh
+wget $(npm view [package-name] dist.tarball)
+```
+
 #### Link
 
 ```sh

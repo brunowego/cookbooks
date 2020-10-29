@@ -25,7 +25,7 @@ export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 sudo su - "$USER"
 ```
 
-### Examples
+### Usage
 
 *Note: Remove square brackets.*
 

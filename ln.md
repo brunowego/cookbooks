@@ -1,15 +1,16 @@
 # Symbolic Link (ln)
 
-## Commands
+## CLI
+
+### Commands
 
 ```sh
 man ln
 ```
 
-## Examples
-
-### Symbolic
+### Usage
 
 ```sh
+# Symbolic
 ln -s [/path/to/target] [/path/to/symlink]
 ```

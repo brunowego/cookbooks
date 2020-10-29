@@ -81,19 +81,19 @@ docker run -d \
   -h mongo \
   -v mongo-data:/data/db \
   -v mongo-configdb:/data/configdb \
-  -e MONGO_INITDB_ROOT_USERNAME=root \
-  -e MONGO_INITDB_ROOT_PASSWORD=root \
+  -e MONGO_INITDB_ROOT_USERNAME='user' \
+  -e MONGO_INITDB_ROOT_PASSWORD='pass' \
   -p 27017:27017 \
   --name mongo \
   --network workbench \
-  docker.io/library/mongo:4.0
+  docker.io/library/mongo:4.0.20
 ```
 
 ### Client
 
 ```sh
 docker run -it --rm \
-  docker.io/library/mongo:4.0 mongo -h
+  docker.io/library/mongo:4.0.20 mongo -h
 ```
 
 ### Remove

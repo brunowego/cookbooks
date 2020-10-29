@@ -3,6 +3,7 @@
 ## References
 
 - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
+- [strftime](https://strftime.org/)
 
 ## Tools
 
@@ -44,6 +45,24 @@ docker run -it --rm \
   --name python \
   --network workbench \
   docker.io/library/python:3.7-alpine /bin/sh
+```
+
+## Dockerfile
+
+```Dockerfile
+FROM docker.io/library/python:3.7-alpine
+
+WORKDIR /usr/src/app
+
+COPY ./requirements.txt ./
+
+RUN pip install --no-cache-dir -r ./requirements.txt
+
+COPY ./app.py ./
+
+EXPOSE 5000
+
+CMD ["gunicorn", "-b", "0:5000", "-k", "eventlet", "app:app"]
 ```
 
 ## CLI
@@ -163,6 +182,8 @@ code \
 
 ```sh
 jq '."python.languageServer" |= "Pylance"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+
+jq '."python.showStartPage" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
 #### Warnings

@@ -21,6 +21,13 @@ brew cask install --appdir='/Applications' firefox
 
 ### Docs
 
+#### Certificates
+
+1. Preferences
+2. Privacy & Security
+3. Security -> Certificates -> View Certificates...
+4. Authorities Tab -> Import
+
 #### Screenshot
 
 1. Page actions

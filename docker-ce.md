@@ -1,6 +1,10 @@
 # Docker Community Edition (CE)
 
 <!--
+https://docs.docker.com/develop/develop-images/build_enhancements/
+-->
+
+<!--
 Missing file
 "${WAR_FILE:?You must especify the WAR_FILE variable in your .env file}:/usr/local/tomcat/webapps/openam.war"
 -->

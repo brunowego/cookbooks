@@ -18,22 +18,22 @@ sudo cat /etc/hostname
 
 ### Usage
 
-#### Get IP
-
 ```sh
+# Get IP
 hostname -I
-```
 
-#### Set
-
-```sh
+# Set
 sudo hostnamectl set-hostname [name] # ally, apex, axis, axel
-```
-
-```sh
 hostnamectl status
-```
-
-```sh
 sudo shutdown -r now
 ```
+
+### Issues
+
+#### Command not found
+
+```log
+sudo: hostnamectl: command not found
+```
+
+Use `scutil` for Darwin.

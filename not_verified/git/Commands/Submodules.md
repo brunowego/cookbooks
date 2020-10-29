@@ -47,3 +47,10 @@ git submodule foreach git pull origin master
 ```sh
 git submodule foreach git checkout master
 ```
+
+##
+
+```sh
+git submodule sync --recursive
+git submodule update --init --recursive
+```

@@ -66,11 +66,11 @@ docker run -it --rm \
 ```sh
 docker run -d \
   -h mongo \
-  -e MONGO_INITDB_ROOT_USERNAME=root \
-  -e MONGO_INITDB_ROOT_PASSWORD=root \
+  -e MONGO_INITDB_ROOT_USERNAME='user' \
+  -e MONGO_INITDB_ROOT_PASSWORD='pass' \
   --network host \
   --name mongo \
-  docker.io/library/mongo:4.0
+  docker.io/library/mongo:4.0.20
 ```
 
 ```sh

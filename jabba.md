@@ -7,7 +7,8 @@
 #### Unix-like
 
 ```sh
-curl -sL https://github.com/shyiko/jabba/raw/master/install.sh | /bin/bash -s -- --skip-rc
+curl -sL https://github.com/shyiko/jabba/raw/master/install.sh | \
+  /bin/bash -s -- --skip-rc
 ```
 
 ### Environment
@@ -17,10 +18,11 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 ```sh
 # jabba
 source "$HOME/.jabba/jabba.sh"
+[ -e './.jabbarc' ] && jabba use &>/dev/null
 
-if test -e '.jabbarc'; then
-  jabba use &>/dev/null
-fi
+# if test -e './.jabbarc'; then
+#   jabba use &>/dev/null
+# fi
 ```
 
 ```sh
@@ -36,7 +38,7 @@ jabba --help
 ### Configuration
 
 ```sh
-#
+# Local project
 echo 'adopt@1.8.0-172' > ./.jabbarc
 
 # Git ignore

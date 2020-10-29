@@ -6,11 +6,7 @@
 
 #### Dependencies
 
-##### Homebrew
-
-```sh
-brew install iproute2mac
-```
+- [iproute2](/iproute2.md)
 
 #### Create
 
@@ -22,8 +18,7 @@ mkdir -p ~/.oh-my-zsh/custom/plugins/proxy
 tee ~/.oh-my-zsh/custom/plugins/proxy/proxy.plugin.zsh << 'EOF'
 #! /bin/sh
 
-ZSH_PROXY_HOST="$(ip route get 1 | awk '{print $NF;exit}')"
-# ZSH_PROXY_HOST="$(ip route get 1 | awk '{print $7;exit}')"
+ZSH_PROXY_HOST=
 ZSH_PROXY_PORT='3128'
 
 ZSH_HTTP_PROXY="http://$ZSH_PROXY_HOST:$ZSH_PROXY_PORT"
@@ -88,6 +83,17 @@ else
         proxy-unset
 fi
 EOF
+```
+
+```sh
+#
+sed -i "/^ZSH_PROXY_HOST/ s/=.*/='127.0.0.1'/g" ~/.oh-my-zsh/custom/plugins/proxy/proxy.plugin.zsh
+
+# Linux
+sed -i '/^ZSH_PROXY_HOST/ s/=/="$(ip route get 1 | awk '\''{print $NF;exit}'\'')"/g' ~/.oh-my-zsh/custom/plugins/proxy/proxy.plugin.zsh
+
+# Darwin
+sed -i '/^ZSH_PROXY_HOST/ s/=/="$(ip route get 1 | awk '\''{print $7;exit}'\'')"/g' ~/.oh-my-zsh/custom/plugins/proxy/proxy.plugin.zsh
 ```
 
 #### Enabling

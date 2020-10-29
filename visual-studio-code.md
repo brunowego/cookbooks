@@ -5,6 +5,8 @@
 ### Dependencies
 
 - [cURL](/curl.md)
+- [jq](/jq.md)
+- [moreutils](/moreutils.md)
 
 #### APT
 

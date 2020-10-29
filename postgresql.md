@@ -290,7 +290,6 @@ docker network create workbench \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postgres \
-  -e POSTGRES_PASSWORD='postgres' \
   -e POSTGRES_USER='user' \
   -e POSTGRES_PASSWORD='pass' \
   -e POSTGRES_DB='dev' \

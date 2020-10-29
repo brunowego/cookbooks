@@ -38,8 +38,8 @@ echo -e '[INFO]\thttp://127.0.0.1:8080/openam/XUI/#login'
 
 | Login | Password |
 | --- | --- |
-| amAdmin | Pa$$w0rd! |
-| UrlAccessAgent | PaSSw0rd! |
+| `amAdmin` | `Pa$$w0rd!` |
+| `UrlAccessAgent` | `PaSSw0rd!` |
 
 ### Remove
 

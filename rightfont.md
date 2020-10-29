@@ -10,7 +10,7 @@
 brew cask install rightfont
 ```
 
-### Tips
+<!-- ### Tips -->
 
 <!-- ####
 

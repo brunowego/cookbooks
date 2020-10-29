@@ -30,7 +30,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Mobile backend as a service (MBaaS)](https://en.wikipedia.org/wiki/Mobile_backend_as_a_service)
 - [Monorepo](https://en.wikipedia.org/wiki/Monorepo)
 - [Network Interface Controller (NIC)](https://en.wikipedia.org/wiki/Network_interface_controller)
-- [On-premises](https://en.wikipedia.org/wiki/On-premises_software)
+- [On-premises (on-prem)](https://en.wikipedia.org/wiki/On-premises_software)
 - [Operations as a Service (OaaS)]()
 - [Platform as a service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service)
 - [Public Key Infrastructure (PKI)]()

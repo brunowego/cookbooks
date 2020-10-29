@@ -13,7 +13,7 @@ https://github.com/Stashchenko/sonarqube/blob/dc356fb8550c1c8605ae49c5c10a2b0e53
 
 ### Dependencies
 
-- [SonarQube](/sonarqube.md)
+- [SonarQube](/sonarqube.md#docker)
 
 ### Installation
 
@@ -41,6 +41,10 @@ sonar-scanner -h
 
 ### Configuration
 
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:9000'
+```
+
 1. Projects -> Create new project
    - Project key: com.example.app:master
    - Display name: My App Production
@@ -57,11 +61,11 @@ sonar-scanner -h
 
    ```sh
    sonar-scanner \
-     -Dsonar.language=php \
-     -Dsonar.projectKey=com.example.gitlab:master \
-     -Dsonar.sources=. \
-     -Dsonar.host.url=http://127.0.0.1:9000 \
-     -Dsonar.login=example-token
+     -Dsonar.language='php' \
+     -Dsonar.projectKey='com.example.gitlab:master' \
+     -Dsonar.sources='./' \
+     -Dsonar.host.url='http://127.0.0.1:9000' \
+     -Dsonar.login='example-token'
    ```
 
    ***Or***
@@ -72,7 +76,7 @@ sonar-scanner -h
    sonar.projectName=My App Production
    sonar.projectVersion=0.1.0
 
-   sonar.sources=.
+   sonar.sources=./
    sonar.exclusions=vendor/**,tests/**
 
    sonar.language=php
@@ -84,7 +88,7 @@ sonar-scanner -h
    ```
 
    ```sh
-   sonar-scanner -Dproject.settings=sonar-project.properties
+   sonar-scanner -Dproject.settings=./sonar-project.properties
    ```
 
 ```sh

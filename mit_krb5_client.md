@@ -55,8 +55,6 @@ sudo su - "$USER"
 
 ### Configuration
 
-#### Main
-
 ```sh
 sudo mkdir -p /etc/krb5.conf.d
 ```
@@ -110,17 +108,27 @@ EOF
 ####
 
 ```log
+kinit: Client '[username]@[REALM]' not found in Kerberos database while getting initial credentials
+```
+
+TODO
+
+#### Unknown credential
+
+```log
 kinit: Unknown credential cache type while getting default ccache
 ```
 
-<!--
-kinit [user]@[REALM]
+```sh
+#
+kinit [username]@[REALM]
 
-echo 'password' | kinit username
+#
+echo '[password]' | kinit [username]@[REALM]
 
-kinit --password-file=~/mypasswordfile test@REALM
+#
+kinit --password-file=[/path/to/my/password/file] [username]@[REALM]
 
-cat password_file | kinit --password-file=STDIN test@REALM
--->
-
-TODO
+#
+cat [./password_file] | kinit --password-file=STDIN [username]@[REALM]
+```

@@ -1,26 +1,51 @@
 # EvalAI
 
+## CLI
+
+### Installation
+
+#### PIP
+
+```sh
+pip install -U evalai
+```
+
+### Commands
+
+```sh
+evalai --help
+```
+
 ## Docker Compose
+
+### Source Code
+
+```sh
+git clone 'https://github.com/Cloud-CV/EvalAI.git' evalai && cd "$_"
+```
 
 ### Running
 
 ```sh
-#
-git clone https://github.com/Cloud-CV/EvalAI.git evalai && cd "$_"
-
-#
 docker-compose up --build
 ```
 
 ```sh
+# Django Admin
+echo -e '[INFO]\thttp://127.0.0.1:8000/api/admin'
+
+# Frontend v1
 echo -e '[INFO]\thttp://127.0.0.1:8888'
+
+# Frontend v2
+echo -e '[INFO]\thttp://127.0.0.1:4200'
 ```
 
 | Login | Password |
 | --- | --- |
-| admin | password |
-| host | password |
-| participant | password |
+| `admin` | `password` |
+| `host` | `password` |
+| `participant` | `password` |
 
 ## Docker Swarm
 
@@ -28,8 +53,10 @@ echo -e '[INFO]\thttp://127.0.0.1:8888'
 
 - [Docker Swarm](/docker-swarm.md#cluster-provision)
 
+### Source Code
+
 ```sh
-git clone https://github.com/Cloud-CV/EvalAI.git evalai && cd "$_"
+git clone 'https://github.com/Cloud-CV/EvalAI.git' evalai && cd "$_"
 ```
 
 ### Running
@@ -39,9 +66,21 @@ docker stack deploy -c ./docker-compose.yml evalai
 ```
 
 ```sh
-#
-echo -e "[INFO]\thttp://$(docker-machine ip manager1):????"
+# Django Admin
+echo -e "[INFO]\thttp://$(docker-machine ip manager1):8000/api/admin"
+
+# Frontend v1
+echo -e "[INFO]\thttp://$(docker-machine ip manager1):8888"
+
+# Frontend v2
+echo -e "[INFO]\thttp://$(docker-machine ip manager1):4200"
 ```
+
+| Login | Password |
+| --- | --- |
+| `admin` | `password` |
+| `host` | `password` |
+| `participant` | `password` |
 
 ### Remove
 
@@ -122,16 +161,16 @@ pip install -r ./requirements/dev.txt
 
 ```sh
 #
-python ./manage.py migrate --settings=settings.dev
+./manage.py migrate --settings=settings.dev
 
 #
-python ./manage.py seed --settings=settings.dev
+./manage.py seed --settings=settings.dev
 
 #
-python ./manage.py runserver --settings=settings.dev
+./manage.py runserver --settings=settings.dev
 
 #
-python ./manage.py show_urls --settings=settings.dev
+./manage.py show_urls --settings=settings.dev
 ```
 
 ### Endpoints

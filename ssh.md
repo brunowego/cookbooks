@@ -75,7 +75,7 @@ ssh -J [remote] [another-remote]
 
 ```sh
 Host *
-  ProxyJump []
+  ProxyJump [remote]
 ```
 
 ### Enable Darwin

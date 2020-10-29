@@ -10,15 +10,19 @@
 
 ##
 
-```sh
-file:///C:/proxy.pac
-file:///home/{user}/.proxy.pac
+| OS | Path |
+| --- | --- |
+| Windows | `file:///C:/proxy.pac` |
+| Linux | `file:///home/{user}/.proxy.pac` |
+| Darwin | `file:///Users/{user}/.proxy.pac` |
 
+```sh
 open "file://$HOME/.proxy.pac"
 
 cat <<END > ~/.proxy.pac
 function FindProxyForURL(url, host) {
   if (dnsDomainIs(host, ".testing")) { return "PROXY 192.168.130.11:8080"; }
+
   return "DIRECT";
 }
 END
@@ -71,5 +75,5 @@ EOF
 google-chrome --proxy-pac-url='http://localhost:2000/proxy.pac'
 
 # OS X
-open -a 'Google Chrome' --args --proxy-pac-url=http://localhost:2000/proxy.pac
+open -a 'Google Chrome' --args --proxy-pac-url='http://localhost:2000/proxy.pac'
 ```

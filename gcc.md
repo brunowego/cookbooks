@@ -4,6 +4,16 @@
 
 ### Installation
 
+#### Homebrew
+
+```sh
+# Darwin have gcc natively
+gcc --version | head -1
+
+#
+brew install gcc
+```
+
 #### YUM
 
 ```sh

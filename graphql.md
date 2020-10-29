@@ -1,6 +1,45 @@
 # GraphQL
 
-## Host
+<!--
+https://github.com/njNafir/react-cheatsheets/blob/master/graphql.md
+https://github.com/Maelstroms38/django-book/blob/master/chapter-7.md
+https://github.com/mehulagg/gitlab/blob/master/doc/development/fe_guide/graphql.md
+-->
+
+## Tools
+
+- [Altair GraphQL](/altair-graphql.md)
+
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install graphql-cli
+```
+
+```gql
+{
+  __schema {
+    types {
+      name
+    }
+  }
+}
+```
+
+```gql
+{
+  me {
+    id
+    name
+  }
+}
+```
+
+<!-- ## Host
 
 ### Tips
 
@@ -20,4 +59,4 @@ EOF
 ```sh
 # Homebrew
 brew services restart caddy
-```
+``` -->

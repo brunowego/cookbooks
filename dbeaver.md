@@ -47,8 +47,9 @@ choco install -y dbeaver
 | --- | --- |
 | Mechanism | `SCRAM-SHA-1` |
 
-- Connection
-  - \[Check] Single node mode
+- Driver properties tab
+  - Connection
+    - \[Check] Single node mode
 
 #### DB2 for z/OS
 
@@ -132,6 +133,16 @@ jdbc:hive2://[hostname]:10000/default;principal=[username]/[FQDN]@[REALM]
 ```txt
 jdbc:hive2://[hostname]:2181/default;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2
 ```
+
+### Issues
+
+#### Authentication Failed
+
+```log
+Command failed with error 18 (AuthenticationFailed): 'Authentication failed.' on server 127.0.0.1:27017. The full response is {"ok": 0.0, "errmsg": "Authentication failed.", "code": 18, "codeName": "AuthenticationFailed"}
+```
+
+Change `Database:` to `admin`.
 
 ### Logs
 

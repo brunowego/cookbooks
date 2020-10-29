@@ -21,10 +21,18 @@ sudo yum -y install openssh-clients
 
 ```sh
 # Generate
-ssh-keygen -b 4096 -C '[email]' -f ~/.ssh/id_rsa -q -t rsa -N ''
+ssh-keygen \
+  -b 4096 \
+  -C [email] \
+  -f ~/.ssh/id_rsa \
+  -q \
+  -t rsa \
+  -N ''
 
 # Copy id
-ssh-copy-id -i ~/.ssh/id_rsa [username]@[hostname]
+ssh-copy-id \
+  -i ~/.ssh/id_rsa \
+  [username]@[hostname]
 
 # Test
 ssh \
