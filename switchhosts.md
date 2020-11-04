@@ -38,6 +38,8 @@ sudo curl \
   https://raw.githubusercontent.com/oldj/SwitchHosts/master/app/assets/logo%404x.png
 
 #
+mkdir -p ~/Desktop
+
 cat << EOF > ~/Desktop/SwitchHosts.desktop
 [Desktop Entry]
 Name=SwitchHosts!

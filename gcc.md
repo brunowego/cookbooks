@@ -14,6 +14,13 @@ gcc --version | head -1
 brew install gcc
 ```
 
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install gcc
+```
+
 #### YUM
 
 ```sh

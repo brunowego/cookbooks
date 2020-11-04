@@ -1,5 +1,9 @@
 # MIT Kerberos Client
 
+<!--
+cyrus-sasl-gssapiv2
+-->
+
 ## CLI
 
 ### Installation

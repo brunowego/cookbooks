@@ -16,6 +16,13 @@
 pecl install bz2
 ```
 
+### APT
+
+```sh
+sudo apt update
+sudo apt -y install php-bz2
+```
+
 ### PHPBrew
 
 ```sh

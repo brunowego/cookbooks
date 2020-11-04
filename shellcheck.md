@@ -1,5 +1,7 @@
 # ShellCheck
 
+**Keywords**: Shell linter
+
 ## CLI
 
 ### Installation

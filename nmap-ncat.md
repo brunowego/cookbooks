@@ -56,6 +56,11 @@ ncat \
 
 ncat 127.0.0.1 9001
 
+ncat \
+  --proxy 127.0.0.1:3128 \
+  --proxy-type http \
+  127.0.0.1 9001
+
 # Closing
 pkill ncat
 ```

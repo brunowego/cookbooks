@@ -6,12 +6,27 @@
 
 ## CLI
 
+### Dependencies
+
+- [cURL](/curl.md)
+
+#### Linux
+
+- [Node.js](/nodejs.md)
+
 ### Installation
 
 #### Homebrew
 
 ```sh
 brew install n
+```
+
+#### Linux
+
+```sh
+sudo curl https://raw.githubusercontent.com/tj/n/master/bin/n -o /usr/local/bin/n && \
+  sudo chmod +x /usr/local/bin/n
 ```
 
 #### NPM
@@ -23,8 +38,9 @@ npm install n -g
 ### Configuration
 
 ```sh
-# Homebrew
-sudo install -dm 775 -o "$USER" -g admin /usr/local/n
+# Linux
+sudo mkdir -p /usr/local/n
+sudo chown -R $(whoami) /usr/local/n /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share
 ```
 
 ### Commands

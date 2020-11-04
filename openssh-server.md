@@ -1,6 +1,59 @@
-# Docker
+# OpenSSH Server
 
-## Build
+## CLI
+
+### Installation
+
+#### YUM
+
+```sh
+yum check-update
+sudo yum -y install openssh-server
+```
+
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install openssh-server
+```
+
+#### APK
+
+```sh
+sudo apk update
+sudo apk add openssh-server
+```
+
+### Service
+
+```sh
+# CentOS
+sudo systemctl enable --now sshd
+
+# Ubuntu
+sudo systemctl enable --now ssh
+```
+
+### Tips
+
+#### Speed up SSH login
+
+```sh
+# Linux
+cat << EOF | sudo tee -a /etc/ssh/sshd_config
+UseDNS no
+EOF
+```
+
+```sh
+# Linux
+sudo systemctl restart ssh
+```
+
+## Docker
+
+### Build
 
 ```sh
 cat << \EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t openssh-server -
@@ -19,7 +72,7 @@ CMD ["/usr/sbin/sshd", "-D"]
 EOF
 ```
 
-## Running
+### Running
 
 ```sh
 docker run -d \
@@ -37,7 +90,7 @@ ssh \
   root@127.0.0.1
 ```
 
-## Remove
+### Remove
 
 ```sh
 docker rm -f openssh-server

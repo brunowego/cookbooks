@@ -9,9 +9,15 @@
 - [Git](/git.md)
 - [GNU Sed](/gnu_sed.md)
 
+### Extend
+
+- [Themes](/oh-my-zsh/themes.md)
+- [Plugins](/oh-my-zsh/plugins.md)
+- [Custom](/oh-my-zsh/custom.md)
+
 ### Installation
 
-#### Script Shell
+#### Unix-like
 
 ```sh
 # cURL

@@ -8,7 +8,12 @@
 
 ```sh
 sudo apt update
+
+#
 sudo apt -y install bsdtar
+
+#
+sudo apt -y install libarchive-tools
 ```
 
 #### YUM

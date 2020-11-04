@@ -24,8 +24,10 @@ hostname -I
 
 # Set
 sudo hostnamectl set-hostname [name] # ally, apex, axis, axel
+
 hostnamectl status
-sudo shutdown -r now
+
+sudo su - "$USER"
 ```
 
 ### Issues

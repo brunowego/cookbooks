@@ -4,8 +4,8 @@
 
 ### Installation
 
-#### Homebrew
+#### MAS
 
 ```sh
-brew cask install webponize
+mas install 1526039365
 ```

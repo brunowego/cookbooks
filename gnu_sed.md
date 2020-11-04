@@ -10,6 +10,20 @@
 brew install gnu-sed
 ```
 
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install sed
+```
+
+#### YUM
+
+```sh
+yum check-update
+sudo yum -y install sed
+```
+
 ### Environment
 
 #### Homebrew

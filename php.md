@@ -14,6 +14,13 @@
 brew install php
 ```
 
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install php
+```
+
 #### YUM
 
 ##### 5.x

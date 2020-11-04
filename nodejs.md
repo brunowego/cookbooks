@@ -29,7 +29,8 @@ brew install nodejs
 #### YUM
 
 ```sh
-curl -sL https://rpm.nodesource.com/setup_11.x | sudo -E bash -
+curl -sL https://rpm.nodesource.com/setup_12.x | sudo -E bash -
+
 yum check-update
 sudo yum -y install nodejs
 ```
@@ -37,7 +38,8 @@ sudo yum -y install nodejs
 #### APT
 
 ```sh
-curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
 sudo apt update
 sudo apt -y install nodejs
 ```

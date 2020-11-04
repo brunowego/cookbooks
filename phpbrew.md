@@ -8,8 +8,14 @@
 
 ### Dependencies
 
+- [PHP](/php.md)
+- [PHP Bzip2](/php-bz2.md)
+
+<!--
+- [GCC](/gcc.md)
 - [GD Library](/gd.md)
 - [OpenLDAP](/openldap.md)
+-->
 
 #### Homebrew
 
@@ -24,6 +30,22 @@ brew install \
   # pcre \
   # openssl@1.1 \
 
+```
+
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install \
+  libxml2-dev \
+  libssl-dev \
+  libbz2-dev \
+  libreadline-dev \
+  libxslt1-dev \
+  zlib1g-dev \
+  libzip-dev \
+  libcurl3-dev \
+  make
 ```
 
 <!-- #### YUM
@@ -103,6 +125,15 @@ phpbrew variants
 # Install
 VERSION=[version] && \
   phpbrew -d install \
+    --name="$VERSION-dev" \
+    --downloader=wget \
+    --stdout \
+    "$VERSION" \
+    +default +mysql
+
+# Install with FPM
+VERSION=[version] && \
+  phpbrew -d install \
     --name="$VERSION-fpm-dev" \
     --downloader=wget \
     --stdout \
@@ -161,6 +192,23 @@ phpbrew -d ext install \
 ####
 
 ```log
+configure: error: Cannot find OpenSSL's <evp.h>
+Error: Configure failed: configure: error: Cannot find OpenSSL's <evp.h>
+```
+
+Install `libssl-dev`.
+
+####
+
+```log
+configure: error: no acceptable C compiler found in $PATH
+```
+
+Install GCC.
+
+####
+
+```log
 Warning: file_get_contents(http://pecl.php.net/channel.xml): failed to open stream: HTTP request failed! in phar:///usr/local/bin/phpbrew/vendor/corneltek/pearx/src/PEARX/Core.php on line 35
 PHP Warning:  file_get_contents(): SSL: Connection reset by peer in phar:///usr/local/bin/phpbrew/vendor/corneltek/pearx/src/PEARX/Core.php on line 35
 ```
@@ -205,6 +253,9 @@ Error: Configure failed: configure: error: Please reinstall the BZip2 distributi
 phpbrew -d install \
   [...] \
   # Homebrew
+  +bz2="$(brew --prefix bzip2)"
+  +bz2="$(brew --prefix bzip2)"
+  # Linux
   +bz2="$(brew --prefix bzip2)"
 ```
 
@@ -253,6 +304,14 @@ phpbrew -d install \
 # export PKG_CONFIG_PATH="/usr/local/Cellar/openssl/1.0.2t/lib/pkgconfig:$PKG_CONFIG_PATH"
 ```
 
+####
+
+```log
+configure: error: libxml2 not found. Please check your libxml2 installation.
+```
+
+Instal libxml2.
+
 #### GNOME XML library
 
 ```log
@@ -264,9 +323,13 @@ path to pkg-config.
 ```
 
 ```sh
+# Darwin
 export PKG_CONFIG_PATH="$(brew --cellar libxml2)/$(brew info --json libxml2 | jq -r '.[0].installed[0].version')/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 export LDFLAGS="-L/usr/local/opt/libxml2/lib:$LDFLAGS"
+
+# Linux
+TODO
 ```
 
 #### cURL

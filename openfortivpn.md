@@ -29,7 +29,7 @@ openfortivpn -h
 # Linux
 sudo install -dm 755 -o root -g root /etc/openfortivpn/[company]
 
-cat << EOF | sudo tee > /etc/openfortivpn/[company]/config
+cat << EOF | sudo tee /etc/openfortivpn/[company]/config
 host = [domain]
 port = 443
 username = [username]

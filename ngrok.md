@@ -29,7 +29,7 @@ brew cask install ngrok
 #### Linux
 
 ```sh
-( cd /usr/local/bin && wget -O tmp.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && unzip tmp.zip && rm tmp.zip )
+( cd /usr/local/bin && sudo wget -O tmp.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && sudo unzip tmp.zip && sudo rm tmp.zip )
 ```
 
 ### Commands
@@ -37,6 +37,8 @@ brew cask install ngrok
 ```sh
 ngrok -h
 ```
+
+### Configuration
 
 #### Authtoken
 
@@ -46,7 +48,7 @@ Access [ngrok dashboard](https://dashboard.ngrok.com) and copy authtoken.
 ngrok authtoken [token]
 ```
 
-### Examples
+### Tips
 
 #### SSH Tunneling
 
@@ -55,5 +57,7 @@ ngrok tcp 22
 ```
 
 ```sh
-ssh [username]@0.tcp.ngrok.io -p [port]
+ssh \
+  -p [port] \
+  [username]@[int].tcp.ngrok.io
 ```
