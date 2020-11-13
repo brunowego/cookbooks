@@ -109,6 +109,9 @@ pyenv global [version]
 
 # Initialize
 eval "$(pyenv init -)"
+
+#
+pyenv uninstall -f [version]
 ```
 
 ### Tips

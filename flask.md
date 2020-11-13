@@ -1,6 +1,10 @@
 # Flask
 
 <!--
+CMD ["python", "-m", "flask", "run", "--host=0.0.0.0", "--port=2525"]
+
+https://www.linkedin.com/learning/flask-essential-training/web-development-with-flask
+
 https://github.com/arthurchiquet/Dashboard
 https://github.com/KoeusIss/holbietheque
 https://flask.palletsprojects.com/en/1.1.x/testing/

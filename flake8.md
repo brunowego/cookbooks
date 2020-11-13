@@ -45,3 +45,7 @@ exclude =
   .venv
 EOF
 ```
+
+<!--
+# noqa: EXXX,EXXX
+-->

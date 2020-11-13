@@ -308,3 +308,42 @@ docker restart nginx
 docker rm -f nginx
 docker volume rm nginx-conf
 ```
+
+## Dockerfile
+
+### Image
+
+```sh
+cat << EOF > ./default.conf
+server {
+    listen 80;
+    server_name localhost;
+
+    location / {
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+    }
+
+    location /server_status {
+        stub_status;
+    }
+
+    error_page 404 /404.html;
+
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root /usr/share/nginx/html;
+    }
+}
+EOF
+```
+
+```Dockerfile
+FROM docker.io/library/nginx:1.17.5-alpine
+
+COPY ./default.conf /etc/nginx/conf.d
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+```

@@ -22,7 +22,7 @@
 brew install n
 ```
 
-#### Linux
+#### Unix-like
 
 ```sh
 sudo curl https://raw.githubusercontent.com/tj/n/master/bin/n -o /usr/local/bin/n && \
@@ -38,7 +38,7 @@ npm install n -g
 ### Configuration
 
 ```sh
-# Linux
+# Unix-like
 sudo mkdir -p /usr/local/n
 sudo chown -R $(whoami) /usr/local/n /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share
 ```

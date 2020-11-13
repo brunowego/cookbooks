@@ -1,5 +1,12 @@
 # React
 
+<!--
+https://www.linkedin.com/learning/learning-react-js-5/getting-started-with-react
+https://www.linkedin.com/learning/build-a-react-application-using-aws-amplify/react-and-aws-a-perfect-serverless-match
+https://www.linkedin.com/learning/react-cloud-powered-apps-with-firebase/structuring-your-apps-for-the-cloud
+https://www.linkedin.com/learning/building-modern-projects-with-react/react-going-from-good-to-great
+-->
+
 ## Favorite Libraries
 
 <!-- https://www.npmjs.com/package/mini-create-react-context

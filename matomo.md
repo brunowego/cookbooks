@@ -21,6 +21,300 @@ https://github.com/BytemarkHosting/configs-matomo-docker
 
 - [Environment Variables](https://github.com/matomo-org/matomo/blob/5ae8668181ff6e622a290df6321c006ef30284e1/plugins/Installation/FormDatabaseSetup.php#L84-L99)
 
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h mysql \
+  -e MYSQL_ROOT_PASSWORD='root' \
+  -e MYSQL_USER='matomo' \
+  -e MYSQL_PASSWORD='matomo' \
+  -e MYSQL_DATABASE='matomo_dev' \
+  -v matomo-mysql-data:/var/lib/mysql \
+  -p 3306:3306 \
+  --name matomo-mysql \
+  --network workbench \
+  docker.io/library/mysql:5.7.19
+```
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h matomo \
+  -e MATOMO_DATABASE_HOST='matomo-mysql' \
+  -e MATOMO_DATABASE_USERNAME='matomo' \
+  -e MATOMO_DATABASE_PASSWORD='matomo' \
+  -e MATOMO_DATABASE_ADAPTER='MYSQLI' \
+  -e MATOMO_DATABASE_DBNAME='matomo_dev' \
+  -e MATOMO_DATABASE_TABLES_PREFIX='matomodev_' \
+  -v matomo-data:/var/www/html \
+  -p 9000:9000 \
+  --name matomo \
+  --network workbench \
+  docker.io/library/matomo:3.14.1-fpm-alpine
+```
+
+#### SSL
+
+##### With
+
+```sh
+sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/matomo.local
+mkdir -p /etc/ssl/certs/matomo.local/{ca,server,client}
+
+CAROOT=/etc/ssl/certs/matomo.local/ca \
+  mkcert -install
+
+CAROOT=/etc/ssl/certs/matomo.local/ca \
+  mkcert \
+    -cert-file /etc/ssl/certs/matomo.local/server/server.pem \
+    -key-file /etc/ssl/certs/matomo.local/server/server.key \
+    matomo.local \
+    $(ip route get 1 | awk '{print $NF;exit}') \
+    '*.matomo.local' \
+    localhost \
+    127.0.0.1 \
+    ::1
+```
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h nginx \
+  -v /private/etc/ssl/certs/matomo.local/server:/etc/nginx/certs \
+  -v matomo-nginx-conf:/etc/nginx/conf.d \
+  -v matomo-data:/var/www/html \
+  -p 8443:443 \
+  --name matomo-nginx \
+  --network workbench \
+  docker.io/library/nginx:1.17.5-alpine
+```
+
+```sh
+docker exec -i matomo-nginx /bin/sh << \EOSHELL
+cat << \EOF > /etc/nginx/conf.d/matomo.conf
+upstream php-handler {
+    server matomo:9000;
+}
+
+server {
+    listen 443 ssl;
+    root /var/www/html;
+    index index.php index.html;
+
+    ssl_certificate /etc/nginx/certs/server.pem;
+    ssl_certificate_key /etc/nginx/certs/server.key;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        fastcgi_pass php-handler;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location = /health-check {
+        access_log off;
+        default_type application/json;
+        return 200 '{"status": "ok"}';
+    }
+}
+
+EOF
+EOSHELL
+```
+
+```sh
+docker restart matomo-nginx
+```
+
+```sh
+# Health check
+curl -ik 'https://127.0.0.1:8443/health-check'
+
+# Open
+echo -e '[INFO]\thttps://127.0.0.1:8443'
+```
+
+##### Without
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h nginx \
+  -v matomo-nginx-conf:/etc/nginx/conf.d \
+  -v matomo-data:/var/www/html \
+  -p 8080:80 \
+  --name matomo-nginx \
+  --network workbench \
+  docker.io/library/nginx:1.17.5-alpine
+```
+
+```sh
+docker exec -i matomo-nginx /bin/sh << \EOSHELL
+cat << \EOF > /etc/nginx/conf.d/matomo.conf
+upstream php-handler {
+    server matomo:9000;
+}
+
+server {
+    listen 80 default_server;
+    root /var/www/html;
+    index index.php index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        fastcgi_pass php-handler;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location = /health-check {
+        access_log off;
+        default_type application/json;
+        return 200 '{"status": "ok"}';
+    }
+}
+
+EOF
+EOSHELL
+```
+
+```sh
+docker restart matomo-nginx
+```
+
+```sh
+# Health check
+curl -ik 'http://127.0.0.1:8080/health-check'
+
+# Open
+echo -e '[INFO]\thttp://127.0.0.1:8080'
+```
+
+####
+
+1. Welcome! -> Next
+2. System Check -> Next
+3. Database Setup -> Next
+4. Creating the Tables -> Next
+5. Super User
+   - Super user login: `admin`
+   - Password and Password (repeat): `Pa$$w0rd!`
+   - Email: `admin@matomo.local`
+   - Next
+6. Setup a Website
+   - Website name: `Example`
+   - Website URL: `http://matomo.local`
+   - Website time zone:
+   - Next
+7. Tracking code for Example -> Next
+8. Congratulations -> Continue to Matomo
+
+```sh
+docker exec -i matomo ./console config:set \
+  --section='General' \
+  --key='enable_trusted_host_check' \
+  --value='0'
+```
+
+<!-- ```sh
+mysql \
+  -h 127.0.0.1 \
+  -P 3306 \
+  -D matomo_dev \
+  -u matomo \
+  -p'matomo' \
+  -ve 'SELECT LAST_INSERT_ID();'
+``` -->
+
+<!-- ```sh
+mysql \
+  -h 127.0.0.1 \
+  -P 3306 \
+  -u matomo \
+  -p'matomo' \
+  -v <<-EOSQL
+select
+    table_schema,
+    table_name,
+    max_time
+from
+    information_schema.tables t1
+    JOIN (
+        select
+            MAX(t2.create_time) AS max_time
+        FROM
+            information_schema.tables t2
+        where
+            table_schema = 'test'
+    ) as t3 on t1.create_time = t3.max_time;
+EOSQL
+``` -->
+
+```sh
+docker exec -i matomo ./console core:archive \
+  --url 'https://127.0.0.1:8443' \
+  --force-idsites 1
+```
+
+### Database
+
+```sh
+# Backup
+mysqldump \
+  -h 127.0.0.1 \
+  -P 3306 \
+  -u matomo \
+  -p'matomo' \
+  matomo_dev \
+  > /path/to/dump/matomo-$(gdate +%Y-%m-%d-%H-%M).sql
+
+# Restore
+mysql \
+  -h 127.0.0.1 \
+  -P 3306 \
+  -u root \
+  -p'root' \
+  matomo_dev \
+  < /path/to/dump/matomo-$(gdate +%Y-%m-%d-%H-%M).sql
+```
+
+### State
+
+```sh
+#
+docker stop matomo-mysql matomo matomo-nginx
+
+#
+docker start matomo-mysql matomo matomo-nginx
+```
+
+### Remove
+
+```sh
+docker rm -f matomo-mysql matomo matomo-nginx
+
+docker volume rm matomo-mysql-data matomo-data matomo-nginx-conf
+
+docker network rm workbench
+```
+
 ## Kubernetes
 
 ### Running
@@ -445,235 +739,6 @@ kubectl get secret matomo \
 ```sh
 helm delete matomo --purge
 kubectl delete namespace matomo --grace-period=0 --force
-```
-
-## Docker
-
-### Network
-
-```sh
-docker network create workbench \
-  --subnet 10.1.1.0/24
-```
-
-### Running
-
-```sh
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h mysql \
-  -e MYSQL_ROOT_PASSWORD='root' \
-  -e MYSQL_USER='matomo' \
-  -e MYSQL_PASSWORD='matomo' \
-  -e MYSQL_DATABASE='matomo_dev' \
-  -v matomo-mysql-data:/var/lib/mysql \
-  -p 3306:3306 \
-  --name matomo-mysql \
-  --network workbench \
-  docker.io/library/mysql:5.7.19
-```
-
-```sh
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h matomo \
-  -e MATOMO_DATABASE_HOST='matomo-mysql' \
-  -e MATOMO_DATABASE_USERNAME='matomo' \
-  -e MATOMO_DATABASE_PASSWORD='matomo' \
-  -e MATOMO_DATABASE_ADAPTER='MYSQLI' \
-  -e MATOMO_DATABASE_DBNAME='matomo_dev' \
-  -e MATOMO_DATABASE_TABLES_PREFIX='matomodev_' \
-  -v matomo-data:/var/www/html \
-  -p 9000:9000 \
-  --name matomo \
-  --network workbench \
-  docker.io/library/matomo:3.13.3-fpm-alpine
-```
-
-```sh
-sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/matomo.local
-mkdir -p /etc/ssl/certs/matomo.local/{ca,server,client}
-
-CAROOT=/etc/ssl/certs/matomo.local/ca \
-  mkcert -install
-
-CAROOT=/etc/ssl/certs/matomo.local/ca \
-  mkcert \
-    -cert-file /etc/ssl/certs/matomo.local/server/server.pem \
-    -key-file /etc/ssl/certs/matomo.local/server/server.key \
-    matomo.local \
-    $(ip route get 1 | awk '{print $NF;exit}') \
-    '*.matomo.local' \
-    localhost \
-    127.0.0.1 \
-    ::1
-```
-
-```sh
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h nginx \
-  -v /private/etc/ssl/certs/matomo.local/server:/etc/nginx/certs \
-  -v matomo-nginx-conf:/etc/nginx/conf.d \
-  -v matomo-data:/var/www/html \
-  -p 8443:443 \
-  --name matomo-nginx \
-  --network workbench \
-  docker.io/library/nginx:1.17.5-alpine
-```
-
-```sh
-docker exec -i matomo-nginx /bin/sh << \EOSHELL
-cat << \EOF > /etc/nginx/conf.d/matomo.conf
-upstream php-handler {
-    server matomo:9000;
-}
-
-server {
-    listen 443 ssl;
-    root /var/www/html;
-    index index.php index.html;
-
-    ssl_certificate /etc/nginx/certs/server.pem;
-    ssl_certificate_key /etc/nginx/certs/server.key;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-
-    location ~ \.php$ {
-        fastcgi_pass php-handler;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        include fastcgi_params;
-    }
-
-    location = /health-check {
-        access_log off;
-        default_type application/json;
-        return 200 '{"status": "ok"}';
-    }
-}
-
-EOF
-EOSHELL
-```
-
-```sh
-docker restart matomo-nginx
-```
-
-```sh
-# Health check
-curl -ik 'https://127.0.0.1:8443/health-check'
-
-# Open
-echo -e '[INFO]\thttps://127.0.0.1:8443'
-```
-
-1. Welcome! -> Next
-2. System Check -> Next
-3. Database Setup -> Next
-4. Creating the Tables -> Next
-5. Super User
-   - Super user login: `admin`
-   - Password and Password (repeat): `Pa$$w0rd!`
-   - Email: `admin@matomo.local`
-   - Next
-6. Setup a Website
-   - Website name: `Example`
-   - Website URL: `http://matomo.local`
-   - Website time zone:
-   - Next
-7. Tracking code for Example -> Next
-8. Congratulations -> Continue to Matomo
-
-```sh
-docker exec -i matomo ./console config:set \
-  --section='General' \
-  --key='enable_trusted_host_check' \
-  --value='0'
-```
-
-<!-- ```sh
-mysql \
-  -h 127.0.0.1 \
-  -P 3306 \
-  -D matomo_dev \
-  -u matomo \
-  -p'matomo' \
-  -ve 'SELECT LAST_INSERT_ID();'
-``` -->
-
-<!-- ```sh
-mysql \
-  -h 127.0.0.1 \
-  -P 3306 \
-  -u matomo \
-  -p'matomo' \
-  -v <<-EOSQL
-select
-    table_schema,
-    table_name,
-    max_time
-from
-    information_schema.tables t1
-    JOIN (
-        select
-            MAX(t2.create_time) AS max_time
-        FROM
-            information_schema.tables t2
-        where
-            table_schema = 'test'
-    ) as t3 on t1.create_time = t3.max_time;
-EOSQL
-``` -->
-
-```sh
-docker exec -i matomo ./console core:archive \
-  --url 'https://127.0.0.1:8443' \
-  --force-idsites 1
-```
-
-### Database
-
-```sh
-# Backup
-mysqldump \
-  -h 127.0.0.1 \
-  -P 3306 \
-  -u matomo \
-  -p'matomo' \
-  matomo_dev \
-  > /path/to/dump/matomo-$(gdate +%Y-%m-%d-%H-%M).sql
-
-# Restore
-mysql \
-  -h 127.0.0.1 \
-  -P 3306 \
-  -u root \
-  -p'root' \
-  matomo_dev \
-  < /path/to/dump/matomo-$(gdate +%Y-%m-%d-%H-%M).sql
-```
-
-### State
-
-```sh
-#
-docker stop matomo-mysql matomo matomo-nginx
-
-#
-docker start matomo-mysql matomo matomo-nginx
-```
-
-### Remove
-
-```sh
-docker rm -f matomo-mysql matomo matomo-nginx
-
-docker volume rm matomo-mysql-data matomo-data matomo-nginx-conf
-
-docker network rm workbench
 ```
 
 ## Host

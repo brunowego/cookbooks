@@ -1,6 +1,8 @@
 # serverless
 
+<!--
 https://www.marksei.com/serverless/
+-->
 
 ## CLI
 

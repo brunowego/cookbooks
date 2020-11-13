@@ -2,9 +2,11 @@
 
 ## References
 
-- [SatisMeter](https://satismeter.com/)
-- [Refiner](https://refiner.io/)
 - [Customer](https://customer.io/)
+- [Qualaroo](https://qualaroo.com/)
+- [Refiner](https://refiner.io/)
+- [SatisMeter](https://satismeter.com/)
+- [Wootric](https://www.wootric.com/)
 
 <!--
 https://github.com/satismeter

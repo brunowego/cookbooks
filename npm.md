@@ -66,6 +66,12 @@ npm pack
 
 ### Tips
 
+#### Log Level
+
+```sh
+npm i --loglevel verbose
+```
+
 #### Download Tarball
 
 ```sh
@@ -158,4 +164,38 @@ sudo npm install [package] -g
 
 ```sh
 rm -fR ~/.npm
+```
+
+## Dockerfile
+
+### Image
+
+```Dockerfile
+FROM docker.io/library/node:13.5.0-alpine AS build
+
+WORKDIR /usr/src/app
+
+RUN apk add -q --no-cache -t .build-deps \
+      [package]==[version]
+
+COPY ./package*.json ./
+
+RUN npm i
+
+RUN apk del --purge .build-deps
+
+COPY ./ ./
+
+RUN npm run build
+
+
+FROM docker.io/library/nginx:1.17.5-alpine
+
+COPY ./default.conf /etc/nginx/conf.d
+
+COPY --from=build /usr/src/app/dist /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
 ```

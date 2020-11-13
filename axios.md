@@ -13,7 +13,6 @@
 mkdir example-axios && cd "$_"
 npm init -y
 
-#
 npm install axios -D
 
 #
@@ -32,5 +31,6 @@ axios.get('https://google.com')
   .catch(error => console.log(error));
 
 // hit ^D
+
 .exit
 ```

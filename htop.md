@@ -1,14 +1,16 @@
 # htop
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install htop
 ```
 
-### YUM
+#### YUM
 
 ```sh
 yum check-update
@@ -17,21 +19,21 @@ yum check-update
 sudo yum -y install htop
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install htop
 ```
 
-### APK
+#### APK
 
 ```sh
 sudo apk update
 sudo apk add htop
 ```
 
-## Commands
+### Commands
 
 ```sh
 htop -h

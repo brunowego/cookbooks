@@ -1,5 +1,9 @@
 # Mockoon
 
+## Documentation
+
+- [CORS](https://mockoon.com/docs/latest/cors/)
+
 ## App
 
 ### Installation
@@ -16,14 +20,14 @@ brew cask install mockoon
 choco install -y mockoon
 ```
 
-###
+### Usage
 
 ```sh
 curl \
   -X GET \
-  'http://127.0.0.1:3001/topics/example'
+  'http://127.0.0.1:3001/api/users'
 
 curl \
   -X POST \
-  'http://127.0.0.1:3001/big-plataforma-api/v3/api/atc/consultar_papeis_autorizados_usuario/v1'
+  'http://127.0.0.1:3001/api/users'
 ```

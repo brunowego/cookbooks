@@ -1,5 +1,9 @@
 # PostgreSQL
 
+<!--
+https://www.linkedin.com/learning/postgresql-essential-training/manage-relational-data-with-postgresql
+-->
+
 ## References
 
 - [JDBC Driver - Connecting to the Database](https://jdbc.postgresql.org/documentation/head/connect.html)

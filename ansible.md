@@ -1,5 +1,9 @@
 # Ansible
 
+<!--
+https://www.linkedin.com/learning/learning-ansible-2/starting-your-ansible-journey
+-->
+
 ## CLI
 
 ### Installation
@@ -59,6 +63,12 @@ sudo apk add ansible
 
 ```sh
 ansible -h
+```
+
+### Usage
+
+```sh
+ansible-playbook ./playbooks/[name].yml -l [name]
 ```
 
 ### Tips

@@ -1,22 +1,24 @@
 # Puppet
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew tap puppetlabs/puppet
 brew cask install puppet-agent puppet-bolt pdk
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install puppet
 ```
 
-### YUM
+#### YUM
 
 ```sh
 yum check-update
@@ -25,21 +27,21 @@ yum check-update
 sudo yum -y install puppet
 ```
 
-## Service
+### Service
 
-### Linux
+#### Linux
 
 ```sh
 sudo systemctl enable --now puppet
 ```
 
-## Commands
+### Commands
 
 ```sh
 puppet help
 ```
 
-### Agent
+#### Agent
 
 ```sh
 # enable
@@ -52,16 +54,16 @@ puppet agent --disable
 cat "$(puppet config print vardir)/state/agent_disabled.lock"
 ```
 
-## Issues
+### Issues
 
-### Locale
+#### Locale
 
 ```sh
 LC_ALL=en_US.UTF-8 \
   puppet help
 ```
 
-### Stopping
+#### Stopping
 
 ```sh
 sudo systemctl status puppet

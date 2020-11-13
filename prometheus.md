@@ -1,5 +1,9 @@
 # Prometheus
 
+<!--
+https://www.linkedin.com/learning/kubernetes-monitoring-with-prometheus/prometheus-monitoring-to-prevent-outages
+-->
+
 ## References
 
 - [Metric types](https://prometheus.io/docs/concepts/metric_types/)

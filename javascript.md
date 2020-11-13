@@ -1,5 +1,11 @@
 # JavaScript
 
+<!--
+https://www.linkedin.com/learning/javascript-patterns-2/javascript-design-patterns
+https://www.linkedin.com/learning/learning-javascript-debugging-2/welcome
+https://www.linkedin.com/learning/javascript-web-form-programming/building-modern-web-forms
+-->
+
 ## References
 
 - [ECMAScript](/ecmascript.md)

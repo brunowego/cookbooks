@@ -101,7 +101,8 @@ code \
   --install-extension shardulm94.trailing-spaces \
   --install-extension wmaurer.change-case \
   --install-extension ldez.ignore-files \
-  --install-extension sainoba.px-to-rem
+  --install-extension sainoba.px-to-rem \
+  --install-extension ephoton.indent-switcher
 ```
 
 #### Spell Checker

@@ -1,9 +1,10 @@
 # Firefox
 
-##
+## Extensions
 
 - [Proxy Switcher and Manager](https://addons.mozilla.org/en-US/firefox/addon/proxy-switcher-and-manager/)
 - [Temporary Containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/)
+- [Language Switch](https://addons.mozilla.org/en-US/firefox/addon/languageswitch/)
 
 ## App
 

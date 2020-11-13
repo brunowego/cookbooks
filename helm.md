@@ -1,6 +1,10 @@
 # Helm
 
+<!--
+https://www.linkedin.com/learning/kubernetes-package-management-with-helm/manage-kubernetes-workloads-with-helm
+
 https://medium.com/@saraswatpuneet/blue-green-deployments-using-helm-charts-93ec479c0282
+-->
 
 ## CLI
 

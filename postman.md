@@ -1,5 +1,9 @@
 # Postman
 
+<!--
+https://www.linkedin.com/learning/postman-essential-training/why-automate-your-api-tests
+-->
+
 ## App
 
 ### Installation

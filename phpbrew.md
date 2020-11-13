@@ -24,12 +24,11 @@ brew install \
   wget \
   libxml2 \
   bzip2 \
-  # libzip
-  # mhash \
-  # mcrypt \
-  # pcre \
-  # openssl@1.1 \
-
+  libzip \
+  mhash \
+  mcrypt \
+  pcre \
+  openssl@1.1
 ```
 
 #### APT
@@ -77,8 +76,8 @@ sudo curl -L 'https://github.com/phpbrew/phpbrew/raw/master/phpbrew' -o /usr/loc
 ```sh
 phpbrew init
 
-# Homebrew
-# phpbrew lookup-prefix homebrew
+# Darwin
+phpbrew lookup-prefix homebrew
 ```
 
 ### Environment

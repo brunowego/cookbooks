@@ -1,16 +1,18 @@
 # GNU Gettext
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install gettext
 ```
 
-## Tips
+### Tips
 
-### Visual Studio Code
+#### Visual Studio Code
 
 ```sh
 code --install-extension mrorz.language-gettext

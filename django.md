@@ -1,10 +1,15 @@
 # Django
 
 <!--
+https://github.com/goupaz/jobhax/tree/master/ats
 https://github.com/YDongY/code_snippets
 https://github.com/vintasoftware/
 https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
 -->
+
+## Tools
+
+- [Djecrety](https://djecrety.ir/)
 
 ## CLI
 
@@ -13,6 +18,11 @@ https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your
 - [Writing your first Django app, part 1](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
 - [Settings](https://docs.djangoproject.com/en/3.0/ref/settings/)
 - [Customize the Django Admin With Python](https://realpython.com/customize-django-admin-python/)
+- [Writing custom django-admin commands](https://docs.djangoproject.com/en/3.1/howto/custom-management-commands/)
+
+### Applications
+
+- [Nextcloud App Store](https://github.com/nextcloud/appstore)
 
 ### Libraries
 
@@ -41,7 +51,11 @@ djangorestframework-jwt
 #### PIP
 
 ```sh
-pip install -U django==2.2.16
+# 2.x
+pip install -U django==2.2.17
+
+# 3.x
+pip install -U django==3.1.3
 ```
 
 ### Commands
@@ -64,7 +78,7 @@ python -m django version
 #### Start Project
 
 ```sh
-django-admin startproject App ./
+python -m django startproject App ./
 ```
 
 #### Requirements
@@ -234,7 +248,7 @@ INSTALLED_APPS = [
 
 ```sh
 #
-./manage.py makemigrations
+./manage.py makemigrations core
 
 #
 ./manage.py migrate
@@ -322,17 +336,17 @@ lsof -i tcp:8000 -t | xargs kill -9
 ./manage.py sqlmigrate xxxs 0001
 ``` -->
 
-<!-- #### Shell
+#### Shell
 
 ```sh
 ./manage.py shell
+```
 
-# https://github.com/django-extensions/django-extensions
-./manage.py shell_plus
+##### DB Shell
 
-# DB Shell
+```sh
 ./manage.py dbshell
-``` -->
+```
 
 <!-- ### Issues -->
 

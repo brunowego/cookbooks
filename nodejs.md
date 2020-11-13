@@ -1,5 +1,9 @@
 # Node.js
 
+<!--
+https://www.linkedin.com/learning/node-js-essential-training-3/learn-the-node-js-fundamentals
+-->
+
 ## Related
 
 - [Node version management (n)](/n.md)
@@ -42,6 +46,13 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 sudo apt update
 sudo apt -y install nodejs
+```
+
+#### APK
+
+```sh
+apk update
+apk add nodejs
 ```
 
 #### Zypper

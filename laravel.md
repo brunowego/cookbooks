@@ -1,8 +1,12 @@
 # Laravel
 
 <!--
+https://spatie.be/videos/readable-laravel/improving-readability-by-decreasing-indentation
+https://spatie.be/products/laravel-beyond-crud
+https://spatie.be/videos/laravel-package-training
 https://github.com/lucid-architecture/laravel
 https://github.com/arquivei/laravel-prometheus-exporter
+https://www.especializati.com.br/curso-laravel-multi-tenancy-single-database#comprar
 -->
 
 ## App

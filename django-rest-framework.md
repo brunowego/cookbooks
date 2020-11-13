@@ -1,5 +1,9 @@
 # Django REST Framework
 
+<!--
+https://django-rest-framework.programmingpedia.net/en/tutorial/2377/serializers
+-->
+
 ## Library
 
 ### Installation
@@ -11,7 +15,7 @@
 pip install -U djangorestframework
 
 # As project dependency
-echo 'djangorestframework==3.12.1' >> ./requirements.txt
+echo 'djangorestframework==3.12.2' >> ./requirements.txt
 ```
 
 Add `rest_framework` to your `INSTALLED_APPS` setting.
@@ -23,14 +27,14 @@ INSTALLED_APPS = [
 ]
 ```
 
-```py
+<!-- ```py
 REST_FRAMEWORK = {
     'NON_FIELD_ERRORS_KEY': 'error',
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
-```
+``` -->
 
 ###
 

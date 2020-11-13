@@ -41,11 +41,13 @@ EOF
 ### Dockerfile
 
 ```Dockerfile
-RUN apk add -q --no-cache [package]==[version]
+RUN apk add -q --no-cache \
+      [package]==[version]
 ```
 
 ```Dockerfile
-RUN apk add -q --no-cache -t .build-deps [package]==[version]
+RUN apk add -q --no-cache -t .build-deps \
+      [package]==[version]
 RUN apk del --purge .build-deps
 ```
 

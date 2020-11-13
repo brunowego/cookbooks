@@ -1,10 +1,14 @@
 # wait-for-it
 
+## Tools
+
+- [say](/say.md)
+
 ## CLI
 
 ### Installation
 
-#### Wget
+#### GNU Wget
 
 ```sh
 sudo wget -O /usr/local/bin/wait-for-it https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh
@@ -22,4 +26,18 @@ sudo chmod +x /usr/local/bin/wait-for-it
 
 ```sh
 wait-for-it
+```
+
+### Usage
+
+```sh
+# Darwin
+wait-for-it [hostname] \
+  -t 0 \
+  -- say done
+
+# Linux
+wait-for-it [hostname] \
+  -t 0 \
+  -- spd-say done
 ```

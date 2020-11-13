@@ -66,3 +66,7 @@ echo 'pylint-flask==0.6' >> ./requirements-dev.txt
 ```sh
 jq '."python.linting.pylintArgs" |= ["--load-plugins", "pylint-flask"]' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
+
+<!--
+# pylint: disable=unused-import
+-->

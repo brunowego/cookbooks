@@ -1,5 +1,13 @@
 # Cookbooks
 
+<!--
+1. https://www.linkedin.com/learning/learning-javascript-debugging-2/welcome
+2. https://www.linkedin.com/learning/software-design-from-requirements-to-release/going-from-requirements-to-release
+3. https://www.linkedin.com/learning/programming-foundations-beyond-the-fundamentals/broadening-your-knowledge-of-programming-fundamentals
+
+https://www.linkedin.com/learning/web-components-and-modularization-practical-approaches/components-for-the-web
+-->
+
 Bucket of cookbooks to help install and set softwares.
 
 ## Terms

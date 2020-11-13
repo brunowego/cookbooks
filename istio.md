@@ -1,6 +1,8 @@
 # Istio
 
 <!--
+https://www.linkedin.com/learning/kubernetes-service-mesh-with-istio/adjusting-istio-load-balancing-ratios
+
 https://github.com/solsson/istio-access-control
 https://github.com/rinormaloku/istio-mastery
 https://devopspro.lt/wp-content/uploads/2019/04/Nikhil-Barthwal-Knative-A-Kubernetes-Framework-to-manage-Serverless-Workloads-min.pdf

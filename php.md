@@ -1,5 +1,10 @@
 # PHP: Hypertext Preprocessor
 
+<!--
+https://www.linkedin.com/learning/learning-php-4/should-you-learn-php
+https://front-line-php.com/
+-->
+
 ## References
 
 - [PHP Benchmarks](https://kinsta.com/blog/php-benchmarks)

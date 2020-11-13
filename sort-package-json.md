@@ -16,12 +16,15 @@ npm install sort-package-json -g
 yarn global add sort-package-json
 ```
 
+#### NPX
+
+```sh
+npx sort-package-json
+```
+
 ### Usage
 
 ```sh
 #
 sort-package-json
-
-#
-npx sort-package-json
 ```

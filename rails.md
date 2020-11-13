@@ -1,4 +1,9 @@
-# Rails
+# Ruby on Rails
+
+<!--
+https://www.linkedin.com/learning/ruby-on-rails-6-essential-training/faster-better-less-painful-website-development
+https://www.linkedin.com/learning/ruby-on-rails-6-essential-training-models-and-associations/let-activerecord-objects-manage-your-data
+-->
 
 ## CLI
 

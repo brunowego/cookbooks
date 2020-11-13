@@ -1,5 +1,9 @@
 # Apache Hadoop
 
+<!--
+https://www.linkedin.com/learning/learning-hadoop-2/introducing-hadoop-cluster-components
+-->
+
 ## References
 
 - [Amazon Hadoop Instances](https://www.shodan.io/search?query=port%3A%2250070%22+org%3A%22amazon.com%22)

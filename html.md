@@ -1,5 +1,9 @@
 # Hypertext Markup Language (HTML)
 
+<!--
+https://www.linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
+-->
+
 ## References
 
 - [Preload, prefetch and other <link> tags](https://3perf.com/blog/link-rels/)

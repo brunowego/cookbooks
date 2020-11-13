@@ -9,6 +9,10 @@ Missing file
 "${WAR_FILE:?You must especify the WAR_FILE variable in your .env file}:/usr/local/tomcat/webapps/openam.war"
 -->
 
+## Tools
+
+- [Lazydocker](/lazydocker.md)
+
 ## Daemon
 
 ### Installation
@@ -172,6 +176,13 @@ docker --help
 
 ### Tips
 
+<!-- #### BuildKit
+
+```sh
+#
+sudo /usr/bin/sh -c 'jq ".\"features.buildkit\" += true" /etc/docker/daemon.json | sponge /etc/docker/daemon.json'
+``` -->
+
 #### Ignore File
 
 Python example:
@@ -274,3 +285,53 @@ TODO
 <!--
 http://blog.jonathanargentiero.com/docker-sed-cannot-rename-etcsedl8ysxl-device-or-resource-busy/
 -->
+
+## Dockerfile
+
+### Tips
+
+#### Work directory
+
+```Dockerfile
+WORKDIR /usr/src/[app-name]
+```
+
+#### Output
+
+```Dockerfile
+RUN echo '\
+[text]\
+' > [/path/to/file]
+```
+
+```Dockerfile
+RUN echo '\
+[text]\
+' | tee [/path/to/file]
+```
+
+```Dockerfile
+RUN { \
+      echo '[text]'; \
+      echo '[text]'; \
+      echo '[text]'; \
+    } > [/path/to/file]
+```
+
+#### Entrypoint
+
+```Dockerfile
+COPY ./docker-entrypoint.sh /sbin/entrypoint.sh
+
+ENTRYPOINT ["/sbin/entrypoint.sh"]
+```
+
+#### Build
+
+```Dockerfile
+FROM [repo]/[image]:[tag] AS build
+
+FROM [repo]/[image]:[tag]
+
+COPY --from=build [/path/to/folder-or-file] [/path/to/destination]
+```

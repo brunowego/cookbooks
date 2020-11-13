@@ -1,9 +1,28 @@
 # Python
 
+<!--
+https://www.linkedin.com/learning/python-object-oriented-programming/python-object-oriented-programming
+https://www.linkedin.com/learning/python-essential-libraries/power-up-your-python-with-libraries
+https://www.linkedin.com/learning/unit-testing-in-python/python-unit-testing-with-pytest
+https://www.linkedin.com/learning/learning-python/learning-python
+https://www.linkedin.com/learning/data-ingestion-with-python/why-is-data-inegstion-important
+https://www.linkedin.com/learning/python-data-analysis-2/get-started-in-data-analysis-with-python
+https://www.linkedin.com/learning/training-neural-networks-in-python
+https://www.linkedin.com/learning/python-data-structures-dictionaries/python-dictionaries-and-why-you-should-use-them
+https://www.linkedin.com/learning/secure-coding-in-python/developing-securely
+https://www.linkedin.com/learning/advanced-nlp-with-python-for-machine-learning/leveraging-the-power-of-messy-text-data
+https://www.linkedin.com/learning/rapid-application-development-with-python/rapid-development-of-python-gui-apps-with-wxglade
+https://www.linkedin.com/learning/python-data-structures-and-algorithms/python-data-structures-and-algorithms-in-action
+https://www.linkedin.com/learning/python-programming-efficiently-2/programming-efficiently-with-python
+https://www.linkedin.com/learning/python-functions-for-data-science/python-functions-you-should-know
+https://www.linkedin.com/learning/advanced-python-working-with-databases/using-databases-to-level-up-your-python-applications
+-->
+
 ## References
 
 - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
 - [strftime](https://strftime.org/)
+- [The Python Standard Library](https://docs.python.org/3/library/)
 
 ## Tools
 

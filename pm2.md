@@ -130,7 +130,9 @@ docker run -d \
 echo -e '[INFO]\thttp://127.0.0.1:4000'
 ```
 
-### Dockerfile
+## Dockerfile
+
+### Image
 
 ```Dockerfile
 FROM docker.io/library/node:13.5.0-alpine AS build
@@ -139,7 +141,7 @@ WORKDIR /usr/src/app
 
 COPY ./package*.json ./
 
-RUN npm install
+RUN npm i
 
 COPY ./ ./
 

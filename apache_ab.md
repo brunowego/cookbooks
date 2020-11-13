@@ -24,8 +24,16 @@ ab -h
 ### Using
 
 ```sh
+#
 ab \
   -n 1000 \
   -c 100 \
-  https://example.com/
+  https://example.com
+
+#
+ab \
+  -n 2000 \
+  -c 30 \
+  -T application/json \
+  https://example.com
 ```

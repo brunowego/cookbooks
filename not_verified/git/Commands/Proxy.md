@@ -14,11 +14,19 @@ git config --global https.proxy
 export http_proxy=
 export https_proxy=
 
-#
+# Local
+git config http.proxy "$http_proxy"
+git config https.proxy "$https_proxy"
+
+# or
+git config http.proxy 'http://[hostname]/proxy.pac'
+git config https.proxy 'http://[hostname]/proxy.pac'
+
+# Global
 git config --global http.proxy "$http_proxy"
 git config --global https.proxy "$https_proxy"
 
-#
+# or
 git config --global http.proxy 'http://[hostname]/proxy.pac'
 git config --global https.proxy 'http://[hostname]/proxy.pac'
 ```

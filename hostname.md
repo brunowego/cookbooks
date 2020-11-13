@@ -23,10 +23,21 @@ sudo cat /etc/hostname
 hostname -I
 
 # Set
-sudo hostnamectl set-hostname [name] # ally, apex, axis, axel
+sudo hostnamectl set-hostname [name]
+```
 
+| OS | Name |
+| --- | --- |
+| Darwin | `ally` |
+| CentOS | `axis` |
+| Ubuntu | `apex` |
+| Darwin (Mobile) | `axel` |
+
+```sh
+#
 hostnamectl status
 
+#
 sudo su - "$USER"
 ```
 

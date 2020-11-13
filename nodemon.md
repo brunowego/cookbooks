@@ -22,7 +22,7 @@ npm install nodemon -D
 
 ## Docker
 
-###
+### Image
 
 ```Dockerfile
 FROM docker.io/library/node:13.5.0-alpine AS build
@@ -31,7 +31,7 @@ WORKDIR /usr/src/app
 
 COPY ./package*.json ./
 
-RUN npm install
+RUN npm i
 
 COPY ./ ./
 

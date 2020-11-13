@@ -1,7 +1,12 @@
 # Terraform
 
+<!--
+https://www.linkedin.com/learning/advanced-terraform/terraform-in-the-real-world
+https://www.linkedin.com/learning/learning-terraform-2/welcome
+
 https://github.com/semi-technologies/weaviate-infra
 https://github.com/Artemmkin/terraform-kubernetes
+-->
 
 ## CLI
 
