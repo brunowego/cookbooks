@@ -136,6 +136,13 @@ docker volume rm openldap-data openldap-config openldap-certs
 brew install openldap
 ```
 
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install libldap2-dev
+```
+
 ### Test
 
 ```sh

@@ -40,6 +40,7 @@ sudo curl \
 #
 mkdir -p ~/Desktop
 
+#
 cat << EOF > ~/Desktop/SwitchHosts.desktop
 [Desktop Entry]
 Name=SwitchHosts!

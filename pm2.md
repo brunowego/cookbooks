@@ -147,6 +147,7 @@ COPY ./ ./
 
 RUN npm run build
 
+# ---
 
 FROM docker.io/library/nginx:1.17.5-alpine
 

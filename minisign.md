@@ -32,6 +32,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN wget -O - 'https://github.com/jedisct1/minisign/archive/0.8.tar.gz' | tar -xz --strip-components 1 && \
     gcc -static -Os -s -o minisign src/*.c -lsodium
 
+# ---
 
 FROM docker.io/scratch
 

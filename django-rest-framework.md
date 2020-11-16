@@ -1,6 +1,7 @@
 # Django REST Framework
 
 <!--
+https://hakibenita.com/django-rest-framework-slow
 https://django-rest-framework.programmingpedia.net/en/tutorial/2377/serializers
 -->
 

@@ -24,6 +24,15 @@ docker network create workbench \
 ### Running
 
 ```sh
+# 20.x
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h ubuntu \
+  --name ubuntu \
+  --network workbench \
+  docker.io/library/ubuntu:20.04 /bin/bash
+
+# 18.x
 docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
   -h ubuntu \

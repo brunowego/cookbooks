@@ -27,3 +27,9 @@ sudo curl -L "https://github.com/cbednarski/hostess/releases/download/$(curl -s 
 ```sh
 hostess -h
 ```
+
+### Usage
+
+```sh
+sudo hostess add [hostname] 127.0.0.1
+```

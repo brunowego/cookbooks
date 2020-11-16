@@ -18,7 +18,7 @@ brew install gcc
 
 ```sh
 sudo apt update
-sudo apt -y install gcc
+sudo apt -y install gcc libc6-dev
 ```
 
 #### YUM
@@ -33,6 +33,13 @@ sudo yum -y install gcc-c++
 sudo yum -y install devtoolset-7-gcc-c++
 scl enable devtoolset-7 "$SHELL"
 sudo /usr/bin/sh -c 'echo "source scl_source enable devtoolset-7" >> /etc/profile.d/scl.sh'
+```
+
+#### APK
+
+```sh
+apk update
+apk add gcc libc-dev
 ```
 
 #### Source

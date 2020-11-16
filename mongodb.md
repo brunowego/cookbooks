@@ -82,15 +82,19 @@ docker network create workbench \
 ```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
-  -h mongo \
-  -v mongo-data:/data/db \
-  -v mongo-configdb:/data/configdb \
+  -h mongodb \
+  -v mongodb-data:/data/db \
+  -v mongodb-configdb:/data/configdb \
   -e MONGO_INITDB_ROOT_USERNAME='user' \
   -e MONGO_INITDB_ROOT_PASSWORD='pass' \
   -p 27017:27017 \
-  --name mongo \
+  --name mongodb \
   --network workbench \
   docker.io/library/mongo:4.0.20
+```
+
+```sh
+sudo hostess add mongodb 127.0.0.1
 ```
 
 ### Client
@@ -103,9 +107,51 @@ docker run -it --rm \
 ### Remove
 
 ```sh
-docker rm -f mongo
+docker rm -f mongodb
 
-docker volume rm mongo-data mongo-configdb
+docker volume rm mongodb-data mongodb-configdb
+```
+
+## Docker Compose
+
+### Manifest
+
+```yaml
+version: '3.7'
+
+services:
+  mongodb:
+    image: docker.io/library/mongo:4.0.20
+    container_name: mongodb
+    hostname: mongodb
+    volumes:
+      - type: volume
+        source: mongodb-data
+        target: /data/db
+      - type: volume
+        source: mongodb-configdb
+        target: /data/configdb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: user
+      MONGO_INITDB_ROOT_PASSWORD: pass
+    ports:
+      - target: 27017
+        published: 27017
+        protocol: tcp
+    networks:
+      - workbench
+    restart: always
+
+volumes:
+  mongodb-data:
+    driver: local
+  mongodb-configdb:
+    driver: local
+
+networks:
+  workbench:
+    name: workbench
+    external: true
 ```
 
 ## CLI

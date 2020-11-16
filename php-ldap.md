@@ -3,6 +3,7 @@
 ## Dependencies
 
 - [OpenLDAP](/openldap.md)
+- [phpize](/phpize.md)
 
 ## Installation
 
@@ -26,6 +27,11 @@ phpbrew -d ext install \
   ldap \
   -- \
     --with-ldap=$(brew --prefix openldap)
+
+# Linux
+phpbrew -d ext install \
+  --downloader=wget \
+  ldap
 ```
 
 ### Dockerfile

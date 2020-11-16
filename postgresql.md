@@ -7,6 +7,7 @@ https://www.linkedin.com/learning/postgresql-essential-training/manage-relationa
 ## References
 
 - [JDBC Driver - Connecting to the Database](https://jdbc.postgresql.org/documentation/head/connect.html)
+- [Data Types](https://www.postgresql.org/docs/9.5/datatype.html#DATATYPE-TABLE)
 
 ## CLI
 
@@ -293,21 +294,25 @@ docker network create workbench \
 ```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
-  -h postgres \
+  -h postgresql \
   -e POSTGRES_USER='user' \
   -e POSTGRES_PASSWORD='pass' \
   -e POSTGRES_DB='dev' \
-  -v postgres-data:/var/lib/postgresql/data \
+  -v postgresql-data:/var/lib/postgresql/data \
   -p 5432:5432 \
-  --name postgres \
+  --name postgresql \
   --network workbench \
   docker.io/library/postgres:11.2-alpine
 ```
 
-###
+```sh
+sudo hostess add postgresql 127.0.0.1
+```
+
+### Query
 
 ```sh
-docker exec -i postgres psql -U postgres <<-EOSQL
+docker exec -i postgresql psql -U postgres <<-EOSQL
 
 EOSQL
 ```
@@ -315,7 +320,7 @@ EOSQL
 ### Remove
 
 ```sh
-docker rm -f postgres
+docker rm -f postgresql
 
-docker volume rm postgres-data
+docker volume rm postgresql-data
 ```

@@ -34,21 +34,33 @@ choco install -y docker-compose
 docker-compose help
 ```
 
-### Scaffold
+### Tips
+
+#### Completion
+
+```sh
+# Using Oh My Zsh
+sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 docker-compose\)/g' ~/.zshrc
+
+source ~/.zshrc
+
+rm ~/.zcompdump*
+```
+
+## Scaffold
+
+### Manifest
 
 ```yaml
-# Docker Compose Version
 version: '3.7'
 
-# Template
 x-shared: &shared
   build:
     context: ./services/acme
 
-# Services
 services:
   acme:
-    # <<: *shared
+    <<: *shared
     image: docker.io/library/acme:latest
     container_name: as-acme
     hostname: acme
@@ -76,35 +88,94 @@ services:
     depends_on:
       - anything
 
-# Volumes
 volumes:
   acme-data:
     driver: local
 
-## External
 volumes:
   acme-log:
     name: acme-log
     external: true
 
-# Network
-
-## External
 networks:
   workbench:
     name: workbench
     external: true
 ```
 
-### Tips
-
-#### Completion
+### Makefile
 
 ```sh
-# Using Oh My Zsh
-sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 docker-compose\)/g' ~/.zshrc
+#
+echo 'DOCKER_NETWORK_SUBNET=10.1.1.0/24' >> ./.env
+echo 'DOCKER_NETWORK_SUBNET=10.1.1.0/24' >> ./.example.env
+echo '/.env' >> ./.gitignore
 
-source ~/.zshrc
+#
+cat << EOF > ./Makefile
+SHELL := /bin/sh
 
-rm ~/.zcompdump*
+-include ./.env
+-include ./mk.d/compose.mk
+EOF
+
+#
+mkdir -p ./mk.d
+
+#
+cat << \EOF > ./mk.d/compose.mk
+SHELL := /bin/sh
+
+DOCKER ?= docker
+DOCKER_COMPOSE ?= docker-compose
+
+.DEFAULT_GOAL := compose/status
+
+.PHONY: compose/init
+compose/init: compose/nuke compose/up
+
+.PHONY: compose/up
+compose/up:
+	@$(DOCKER) network create --subnet=${DOCKER_NETWORK_SUBNET} workbench || true
+	@$(DOCKER) volume create --name=xxx-acme-log || true
+	@$(DOCKER_COMPOSE) up -d --build $(service)
+
+.PHONY: compose/start
+compose/start:
+	@$(DOCKER_COMPOSE) start $(service)
+
+.PHONY: compose/stop
+compose/stop:
+	@$(DOCKER_COMPOSE) stop $(service)
+
+.PHONY: compose/restart
+compose/restart:
+	@$(DOCKER_COMPOSE) restart $(service)
+
+.PHONY: compose/down
+compose/down:
+	@$(DOCKER_COMPOSE) down
+	@$(DOCKER) volume rm xxx-acme-log || true
+	@$(DOCKER) network rm workbench || true
+
+.PHONY: compose/kill
+compose/kill:
+	@$(DOCKER_COMPOSE) kill $(service)
+
+.PHONY: compose/nuke
+compose/nuke:
+	@$(DOCKER_COMPOSE) rm --force --stop $(service)
+
+.PHONY: compose/status
+compose/status:
+	@$(DOCKER_COMPOSE) ps $(service)
+EOF
+
+#
+cat << EOF >> ./.editorconfig
+
+[{*.mk,Makefile}]
+indent_size = 4
+indent_style = tab
+EOF
 ```

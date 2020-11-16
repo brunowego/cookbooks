@@ -1,5 +1,9 @@
 # Grunt Webfont
 
+<!--
+{,*/}*
+-->
+
 ## Library
 
 ### References
@@ -21,6 +25,15 @@ sudo apt update
 sudo apt -y install ttfautohint fontforge
 ```
 
-<!--
-{,*/}*
--->
+## Issues
+
+### Missing distutils
+
+```log
+ModuleNotFoundError: No module named 'distutils.spawn'
+```
+
+```sh
+# APT
+sudo apt -y install python3-distutils
+```

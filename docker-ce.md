@@ -252,13 +252,29 @@ source ~/.zshrc
 
 ### Issues
 
-####
+#### Missing Bash
+
+```log
+standard_init_linux.go:211: exec user process caused "no such file or directory"
+```
+
+```sh
+# From
+#! /bin/bash
+
+# To
+#! /bin/sh
+```
+
+Or, install [bash](/bash_unix_shell.md)
+
+<!-- ####
 
 ```log
 Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
 ```
 
-TODO
+TODO -->
 
 #### Endpoint Exists
 
@@ -270,17 +286,17 @@ docker: Error response from daemon: endpoint with name [container] already exist
 docker network disconnect -f [network] [container]
 ```
 
-#### Bad Credential
+<!-- #### Bad Credential
 
 ```log
 Error response from daemon: Get https://127.0.0.1:5000/v2/: unauthorized: BAD_CREDENTIAL
 ```
 
-TODO
+TODO -->
 
-#### Device or resource busy
+<!-- #### Device or resource busy
 
-TODO
+TODO -->
 
 <!--
 http://blog.jonathanargentiero.com/docker-sed-cannot-rename-etcsedl8ysxl-device-or-resource-busy/
@@ -330,6 +346,8 @@ ENTRYPOINT ["/sbin/entrypoint.sh"]
 
 ```Dockerfile
 FROM [repo]/[image]:[tag] AS build
+
+# ---
 
 FROM [repo]/[image]:[tag]
 

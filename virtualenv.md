@@ -17,8 +17,11 @@ virtualenv --help
 ### Configuration
 
 ```sh
-# Git ignore
+# Git ignore globally
 echo '/.venv' >> ~/.gitignore_global
+
+# Git ignore locally
+echo '/.venv' >> ~/.gitignore
 ```
 
 ### Environment

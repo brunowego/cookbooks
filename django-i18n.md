@@ -18,39 +18,54 @@ https://matix.io/django-i18n-translation-cheatsheet/
 http://reader.epubee.com/books/mobile/12/12281e5b8cf834db1ecf92812fd7ce5f/text00064.html
 -->
 
-## Configuration
+## Commands
 
-### Static
+```sh
+#
+python -m django makemessages -h
 
-```py
-from django.utils.translation import gettext_lazy as _
-
-
-LANGUAGE_CODE = 'pt-br'
-
-LANGUAGES = (
-    ('en', _('English')),
-    ('pt-br', _('Português (BR)')),
-)
+#
+python -m django compilemessages -h
 ```
 
-### Dynamic
+## Configuration
 
 ```py
+from pathlib import Path
+import os
 from django.utils.translation import gettext_lazy as _
 
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+```
 
+**Static**
+
+```py
+LANGUAGE_CODE = 'pt-br'
+```
+
+**Or, Dynamic**
+
+```py
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
 ]
+```
 
+Finally, define the supported languages and load locale path:
 
+```py
 LANGUAGES = (
-    ('en', _('English')),
-    ('pt-br', _('Português (BR)')),
+    ('en-us', _('English (US)')),
+    ('pt-br', _('Portuguese (BR)')),
 )
+
+USE_I18N = True
+
+LOCALE_PATHS = (os.path.join(BASE_DIR, 'locale'),)
 ```
 
 ## Make/Compile Messages
@@ -59,31 +74,21 @@ LANGUAGES = (
 mkdir -p ./locale
 
 #
-python -m django makemessages -h
-
-#
 python -m django makemessages -l pt_BR
 
-# Darwin
-open ./locale/pt-br/LC_MESSAGES/django.po
+# "Language: pt_BR\n"
 
 #
 python -m django makemessages -a
 
 #
-python -m django compilemessages -h
-
-#
 python -m django compilemessages -l pt_BR
-
-# 3.x
-python -m django compilemessages -i './venv/*'
 ```
 
 ## Test
 
 ```sh
 curl \
-  -H 'Accept-Language: pt' \
+  -H 'Accept-Language: pt_BR' \
   http://127.0.0.1:8000
 ```

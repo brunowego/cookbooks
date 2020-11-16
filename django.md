@@ -1,10 +1,13 @@
 # Django
 
 <!--
+https://code4startup.com/projects/uber-app-for-food-with-python-django-and-swift
 https://github.com/goupaz/jobhax/tree/master/ats
 https://github.com/YDongY/code_snippets
 https://github.com/vintasoftware/
 https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
+https://linevi.ch/en/django-inline-in-fieldset.html
+https://www.linkedin.com/learning/securing-django-applications/security-and-django
 -->
 
 ## Tools
@@ -15,6 +18,8 @@ https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your
 
 ### References
 
+- [Django Web Framework (Python)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction)
+- [Managing static files (e.g. images, JavaScript, CSS)](https://docs.djangoproject.com/en/2.2/howto/static-files/#managing-static-files-e-g-images-javascript-css)
 - [Writing your first Django app, part 1](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
 - [Settings](https://docs.djangoproject.com/en/3.0/ref/settings/)
 - [Customize the Django Admin With Python](https://realpython.com/customize-django-admin-python/)
@@ -90,8 +95,11 @@ pydocstyle==4.0.1
 pylint==2.4.3
 EOF
 
-#
-echo 'Django==2.2.16' >> ./requirements.txt
+# 2.x
+echo 'Django==2.2.17' >> ./requirements.txt
+
+# 3.x
+echo 'Django==3.1.3' >> ./requirements.txt
 
 #
 pip install \
@@ -118,13 +126,7 @@ pip install \
 
 ##### SQLite (Default)
 
-```sh
-#
-./manage.py showmigrations
-
-#
-./manage.py migrate
-```
+Native.
 
 ##### MongoDB
 
@@ -151,7 +153,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'dev',
         'CLIENT': {
-            'host': '127.0.0.1',
+            'host': 'mongodb',
             'port': 27017,
             'username': 'user',
             'password': 'pass',
@@ -159,14 +161,6 @@ DATABASES = {
         },
     }
 }
-```
-
-```sh
-#
-./manage.py showmigrations
-
-#
-./manage.py migrate
 ```
 
 ##### PostgreSQL
@@ -192,11 +186,13 @@ DATABASES = {
         'NAME': 'dev',
         'USER': 'user',
         'PASSWORD': 'pass',
-        'HOST': '127.0.0.1',
+        'HOST': 'postgresql',
         'PORT': '5432',
     }
 }
 ```
+
+#### Migrate
 
 ```sh
 #
@@ -209,7 +205,14 @@ DATABASES = {
 #### Create Super User
 
 ```sh
+# 2.x
 ./manage.py createsuperuser \
+  --username admin \
+  --email admin@example.com
+
+# 3.x
+DJANGO_SUPERUSER_PASSWORD='Pa$$w0rd!' ./manage.py createsuperuser \
+  --no-input \
   --username admin \
   --email admin@example.com
 ```
@@ -239,11 +242,6 @@ INSTALLED_APPS = [
 ]
 ```
 
-#### Models
-
-1. `models.py`
-2. `admin.py`
-
 #### Migrations
 
 ```sh
@@ -251,7 +249,10 @@ INSTALLED_APPS = [
 ./manage.py makemigrations core
 
 #
-./manage.py migrate
+./manage.py migrate core
+
+#
+./manage.py migrate core zero
 ```
 
 #### Fixtures
@@ -259,7 +260,11 @@ INSTALLED_APPS = [
 ```sh
 #
 mkdir -p ./core/fixtures
-./manage.py dumpdata core > ./core/fixtures/app.json
+
+#
+./manage.py dumpdata core > ./core/fixtures/core.json
+
+./manage.py dumpdata core.[ModelName] > ./core/fixtures/[model_name].json
 
 #
 ./manage.py loaddata core
@@ -273,6 +278,22 @@ mkdir -p ./core/fixtures
 
 ```sh
 echo -e '[INFO]\thttp://127.0.0.1:8000/admin/'
+```
+
+#### Collect Static
+
+```py
+STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+```
+
+```sh
+#
+echo '/static' >> ./.gitignore
+
+#
+./manage.py collectstatic
 ```
 
 <!-- ### Pools Module
@@ -362,4 +383,109 @@ export LDFLAGS='-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib'
 LDFLAGS="-L$(brew --prefix openssl)/lib" \
   CFLAGS="-I$(brew --prefix openssl)/include" \
   pip install -r ./requirements.txt
+``` -->
+
+## Docker Compose
+
+### Manifest
+
+```yaml
+version: '3.7'
+
+services:
+  django:
+    build: ./
+    container_name: django
+    hostname: django
+    ports:
+      - target: 8000
+        published: 8000
+        protocol: tcp
+    networks:
+      - workbench
+    restart: always
+    depends_on:
+      - anything
+
+networks:
+  workbench:
+    name: workbench
+    external: true
+```
+
+## Dockerfile
+
+### Image
+
+####
+
+```Dockerfile
+FROM docker.io/library/python:3.7-alpine AS translations
+
+WORKDIR /usr/src/app
+
+RUN apk add -q --no-cache \
+      gettext==0.20.2-r0 \
+      gettext-dev==0.20.2-r0
+
+COPY ./requirements.txt ./
+
+RUN pip install -q --no-cache-dir -r ./requirements.txt
+
+COPY ./core ./core
+COPY ./App ./App
+COPY ./manage.py ./manage.py
+COPY ./locale ./locale
+
+RUN ./manage.py compilemessages
+
+# ---
+
+FROM docker.io/library/python:3.7-alpine
+
+WORKDIR /usr/src/app
+
+RUN addgroup -g 1000 django && \
+      adduser -S -u 1000 django -G django
+
+COPY --chown=django:django ./requirements.txt ./
+
+RUN pip install --no-cache-dir -r ./requirements.txt
+
+COPY --chown=django:django ./core ./core
+COPY --chown=django:django ./App ./App
+COPY --chown=django:django ./manage.py ./manage.py
+COPY --from=translations --chown=django:django /usr/src/app/locale ./locale
+
+USER django:django
+
+EXPOSE 5000
+
+CMD ["gunicorn", "-b", "0:5000", "-k", "eventlet", "app:app"]
+```
+
+<!-- ####
+
+```Dockerfile
+FROM docker.io/library/python:3.7-alpine
+
+WORKDIR /usr/src/app
+
+RUN apk add -q --no-cache -t .build-deps \
+      gettext==0.20.2-r0 \
+      gettext-dev==0.20.2-r0
+
+COPY ./requirements.txt ./
+
+RUN pip install --no-cache-dir -r ./requirements.txt
+
+RUN ./manage.py compilemessages
+
+RUN apk del --purge .build-deps
+
+COPY ./ ./
+
+EXPOSE 5000
+
+CMD ["gunicorn", "-b", "0:5000", "-k", "eventlet", "app:app"]
 ``` -->

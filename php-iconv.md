@@ -2,7 +2,9 @@
 
 ## Library
 
-### Dependencies
+<!-- ### Dependencies
+
+- [phpize](/phpize.md) -->
 
 #### Homebrew
 
@@ -43,17 +45,4 @@ php -i | grep '^iconv$' -A 9
 ```sh
 # FPM
 phpbrew fpm restart
-```
-
-### Issues
-
-####
-
-```log
-Error: Command failed: phpize
-```
-
-```sh
-# Homebrew
-brew install autoconf
 ```

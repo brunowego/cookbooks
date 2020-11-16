@@ -303,7 +303,21 @@ phpbrew -d install \
 # export PKG_CONFIG_PATH="/usr/local/Cellar/openssl/1.0.2t/lib/pkgconfig:$PKG_CONFIG_PATH"
 ```
 
-####
+#### Oniguruma
+
+```log
+checking for oniguruma... no
+configure: error: Package requirements (oniguruma) were not met:
+
+No package 'oniguruma' found
+```
+
+```sh
+# APT
+sudo apt -y install libonig-dev
+```
+
+#### libxml2
 
 ```log
 configure: error: libxml2 not found. Please check your libxml2 installation.

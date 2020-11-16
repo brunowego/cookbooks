@@ -25,7 +25,7 @@ brew install n
 #### Unix-like
 
 ```sh
-sudo curl https://raw.githubusercontent.com/tj/n/master/bin/n -o /usr/local/bin/n && \
+sudo curl 'https://raw.githubusercontent.com/tj/n/master/bin/n' -o /usr/local/bin/n && \
   sudo chmod +x /usr/local/bin/n
 ```
 

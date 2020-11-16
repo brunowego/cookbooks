@@ -1,6 +1,14 @@
 # Scala
 
 <!--
+https://www.linkedin.com/learning/scala-essential-training-for-data-science/welcome
+
+https://www.linkedin.com/learning/scala-first-look/welcome
+https://www.linkedin.com/learning/scala-essential-training/welcome-to-scala-essential-training
+https://www.linkedin.com/learning/learning-jvm-languages-jvm-java-scala/course-overview
+
+https://github.com/niqdev/kafka-scala-examples
+
 https://github.com/gospeak-io/gospeak
 
 https://www.amazon.com.br/Programming-Scala-Comprehensive-Step-Step-ebook/dp/B01EX49FOU/ref=sr_1_2?keywords=Programming-Scala-Comprehensive-Step-Step-ebook&qid=1578012529&sr=8-2

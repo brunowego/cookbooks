@@ -68,6 +68,8 @@ docker run -it --rm \
 
 ## Dockerfile
 
+### Image
+
 ```Dockerfile
 FROM docker.io/library/python:3.7-alpine
 
