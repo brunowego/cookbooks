@@ -1,5 +1,9 @@
 # LinkedIn
 
+## References
+
+- [Social Selling Index (SSI)](https://www.linkedin.com/sales/ssi)
+
 ## Tips
 
 ### Force Specific Network Interface

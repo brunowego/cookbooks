@@ -39,6 +39,15 @@ docker network create workbench \
 ### Running
 
 ```sh
+# 8.x
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h centos \
+  --name centos \
+  --network workbench \
+  docker.io/library/centos:8.2.2004 /bin/bash
+
+# 7.x
 docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
   -h centos \

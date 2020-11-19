@@ -105,6 +105,14 @@ code \
   --install-extension ephoton.indent-switcher
 ```
 
+<!-- #### GlassIt
+
+```sh
+code --install-extension s-nlf-fh.glassit
+```
+
+TODO -->
+
 #### Spell Checker
 
 ```sh

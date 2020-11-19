@@ -40,7 +40,7 @@ defaults write com.googlecode.iterm2 AboutToPasteTabsWithCancel -bool false
 /usr/libexec/PlistBuddy -c 'Set "New Bookmarks":0:"Silence Bell" true' ~/Library/Preferences/com.googlecode.iterm2.plist
 
 # Transparency
-/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Transparency" 0.03' ~/Library/Preferences/com.googlecode.iterm2.plist
+/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Transparency" 0.05' ~/Library/Preferences/com.googlecode.iterm2.plist
 
 # Pane dimming
 /usr/libexec/PlistBuddy -c 'Add :SplitPaneDimmingAmount real 0.100000' ~/Library/Preferences/com.googlecode.iterm2.plist

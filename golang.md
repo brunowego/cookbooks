@@ -1,6 +1,8 @@
 # Go Programming Language
 
 <!--
+https://github.com/makeless/makeless-demo.git
+
 https://www.justforlearning.com/courses/build-your-first-microservices-based-application-using-go-and-grpc/dashboard
 
 https://dominicstpierre.com/getting-started-with-go-guide
@@ -26,6 +28,10 @@ docker run -it --rm \
 ```
 
 ## CLI
+
+### Dependencies
+
+- [Git](/git.md)
 
 ### Installation
 

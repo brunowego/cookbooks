@@ -21,6 +21,9 @@ grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*
 # Install
 sudo apt -y install [package]
 
+# Non interactive
+DEBIAN_FRONTEND=noninteractive sudo apt -y install [package]
+
 # Upgrade
 sudo apt -y upgrade
 

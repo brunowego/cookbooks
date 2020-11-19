@@ -191,6 +191,14 @@ phpbrew -d ext install \
 ####
 
 ```log
+Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'zip.so' in Unknown on line 0
+```
+
+TODO
+
+####
+
+```log
 configure: error: Cannot find OpenSSL's <evp.h>
 Error: Configure failed: configure: error: Cannot find OpenSSL's <evp.h>
 ```

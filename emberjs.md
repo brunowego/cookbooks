@@ -1,7 +1,10 @@
-# CLI
+# Ember.js
 
-## New
+## CLI
+
+### Usage
 
 ```sh
+#
 ember new [app] --skip-git
 ```

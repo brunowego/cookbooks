@@ -13,11 +13,14 @@ pip install -U django-extensions pygraphviz
 # As project dependency
 echo 'django-extensions==3.0.9' >> ./requirements.txt
 
-cat << EOF >> ./requirements-dev.txt
-pygraphviz==1.6
-notebook==6.1.5
-Werkzeug==1.0.1
-EOF
+#
+echo 'pygraphviz==1.6' >> ./requirements-dev.txt
+
+#
+echo 'notebook==6.1.5' >> ./requirements-dev.txt
+
+#
+echo 'Werkzeug==1.0.1' >> ./requirements-dev.txt
 ```
 
 Add `django_extensions` to your `INSTALLED_APPS` setting.

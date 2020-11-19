@@ -44,6 +44,13 @@ npm install typescript -g
 tsc -h
 ```
 
+### Usage
+
+```sh
+# Initialize
+tsc --init
+```
+
 ### Tips
 
 #### EditorConfig

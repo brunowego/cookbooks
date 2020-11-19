@@ -5,6 +5,10 @@ https://hakibenita.com/django-rest-framework-slow
 https://django-rest-framework.programmingpedia.net/en/tutorial/2377/serializers
 -->
 
+## References
+
+- [Versioning](https://www.django-rest-framework.org/api-guide/versioning/)
+
 ## Library
 
 ### Installation

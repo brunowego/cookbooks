@@ -1,5 +1,10 @@
 # Vim
 
+<!--
+https://www.youtube.com/watch?v=gnupOrSEikQ
+https://www.linkedin.com/learning/search?entityType=COURSE&keywords=vim
+-->
+
 ## CLI
 
 ### Installation

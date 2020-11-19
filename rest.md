@@ -1,5 +1,9 @@
 # Representational State Transfer (REST)
 
+## References
+
+- [REST API Versioning](https://restfulapi.net/versioning/)
+
 ## Usage
 
 ```http

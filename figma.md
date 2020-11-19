@@ -3,7 +3,7 @@
 <!--
 https://www.youtube.com/watch?v=p2sZKAPOQXs
 
-https://www.linkedin.com/learning/figma-for-ux-design-2/sign-up-and-take-a-tour
+https://www.linkedin.com/learning/topics/figma-2?entityType=COURSE
 -->
 
 ## App

@@ -46,6 +46,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Relational Database Service (RDS)]()
 - [Server-side Rendering (SSR)]()
 - [Software as a service (SaaS)](https://en.wikipedia.org/wiki/Software_as_a_service)
+- [Software Development Kit (SDK)]()
 - [Top-Level Domain (TLD)](https://en.wikipedia.org/wiki/Top-level_domain)
 - [Uniform Resource Identifier (URI)](https://en.wikipedia.org/wiki/Uniform_resource_identifier)
 - [Uniform Resource Locator (URL)](https://en.wikipedia.org/wiki/Uniform_resource_locator)

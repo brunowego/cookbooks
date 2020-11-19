@@ -1,8 +1,12 @@
 # ngrok
 
+**Keywords**: Secure tunnels
+
 ## CLI
 
 ### Dependencies
+
+- [OpenSSH Server](/openssh-server.md)
 
 #### APT
 
