@@ -1,6 +1,10 @@
 # macOS
 
-<!-- sudo spctl --master-disable -->
+<!--
+https://matthewhoelter.com/2019/06/03/flush-and-reset-dns-cache-on-macos.html
+
+sudo spctl --master-disable
+-->
 
 ## Applications
 

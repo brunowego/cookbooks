@@ -156,3 +156,13 @@ if __name__ == "__main__":
     app.run()
 EOF
 ```
+
+## Dockerfile
+
+### Image
+
+```Dockerfile
+EXPOSE 8000
+
+CMD ["uwsgi", "--ini", "./uwsgi.ini"]
+```

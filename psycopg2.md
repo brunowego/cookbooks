@@ -11,7 +11,7 @@
 
 ```sh
 sudo apk update
-sudo apk add postgresql-dev g++
+sudo apk add postgresql-dev g++ python3-dev
 ```
 
 ### Installation
@@ -38,4 +38,37 @@ echo 'psycopg2-binary==2.8.6' >> ./requirements.txt
 >>>
 >>> conn.close()
 >>> exit()
+```
+
+### Issues
+
+#### Python Headers
+
+```log
+fatal error: Python.h: No such file or directory
+```
+
+```sh
+# APT
+sudo apt -y install python3-dev
+
+# YUM
+sudo apt -y install python3-devel
+
+# Zypper
+sudo zypper in python3-devel
+
+# APK
+sudo apk add python3-dev
+```
+
+#### Library PG
+
+```log
+Error loading psycopg2 module: Error loading shared library libpq.so.5: No such file or directory
+```
+
+```sh
+# APK
+apk add libpq
 ```

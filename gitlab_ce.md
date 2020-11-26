@@ -322,12 +322,15 @@ docker volume rm gitlab-redis-data gitlab-postgres-data gitlab-config gitlab-log
      - Access Level: Developer
      - Add to group
 
-### Issues from project using API
+### Issues from project
+
+#### Using API
 
 1. User -> Settings
 2. Access Tokens
 3. Personal Access Tokens
-4. Scopes: api -> Create
+   - Name: API Access
+   - Scopes: api -> Create
 
 ```sh
 #
@@ -343,6 +346,8 @@ curl \
 
 #### Export CSV
 
+**Dependencies**
+
 ```sh
 # APT
 sudo apt -y install libtext-csv-perl libwww-perl libcrypt-ssleay-perl
@@ -350,7 +355,7 @@ sudo apt -y install libtext-csv-perl libwww-perl libcrypt-ssleay-perl
 # YUM
 sudo yum -y install perl-Text-CSV perl-Crypt-SSLeay
 
-# Darwin
+# Darwin/CPAN
 /usr/local/bin/perl -MCPAN -e 'install Text::CSV_XS'
 /usr/local/bin/perl -MCPAN -e 'install Bundle::LWP'
 /usr/local/bin/perl -MCPAN -we 'install LWP::Protocol::https'

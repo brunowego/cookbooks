@@ -3,6 +3,7 @@
 <!--
 https://github.com/ilkeraltin/react-spa-news
 
+https://www.linkedin.com/learning/react-js-essential-training/welcome
 https://www.linkedin.com/learning/learning-react-js-5/getting-started-with-react
 https://www.linkedin.com/learning/react-testing-and-debugging/testing-and-debugging-your-react-apps
 https://www.linkedin.com/learning/build-a-react-application-using-aws-amplify/react-and-aws-a-perfect-serverless-match

@@ -1,6 +1,13 @@
 # Django
 
 <!--
+https://app.pluralsight.com/library/courses/django-admin/table-of-contents
+https://app.pluralsight.com/library/courses/django-forms-and-modelforms/table-of-contents
+https://app.pluralsight.com/library/courses/django-views-apps-url-mappings/table-of-contents
+https://app.pluralsight.com/library/courses/django-templates/table-of-contents
+https://app.pluralsight.com/library/courses/django-getting-started/table-of-contents
+https://app.pluralsight.com/library/courses/django-fundamentals-update/table-of-contents
+
 https://code4startup.com/projects/uber-app-for-food-with-python-django-and-swift
 https://github.com/goupaz/jobhax/tree/master/ats
 https://github.com/YDongY/code_snippets
@@ -8,6 +15,10 @@ https://github.com/vintasoftware/
 https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
 https://linevi.ch/en/django-inline-in-fieldset.html
 https://www.linkedin.com/learning/securing-django-applications/security-and-django
+
+https://django.readthedocs.io/en/stable/ref/contrib/admin/actions.html
+
+https://github.com/bfirsh/django-ordered-model
 -->
 
 ## Tools
@@ -250,9 +261,19 @@ INSTALLED_APPS = [
 
 #
 ./manage.py migrate core
+```
+
+##### Rollback
+
+```sh
+#
+./manage.py showmigrations
 
 #
 ./manage.py migrate core zero
+
+#
+./manage.py migrate core [name - 1]
 ```
 
 #### Fixtures
@@ -294,6 +315,14 @@ echo '/static' >> ./.gitignore
 
 #
 ./manage.py collectstatic
+```
+
+#### Media
+
+```py
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 ```
 
 <!-- ### Pools Module
@@ -345,9 +374,6 @@ echo -e '[INFO]\thttp://127.0.0.1:8000/admin'
 
 # Stop Server
 lsof -i tcp:8000 -t | xargs kill -9
-
-# Flush (Remove Database)
-./manage.py flush
 ``` -->
 
 <!-- #### Migration
@@ -356,6 +382,12 @@ lsof -i tcp:8000 -t | xargs kill -9
 ./manage.py makemigrations xxxs
 ./manage.py sqlmigrate xxxs 0001
 ``` -->
+
+#### Flush (Remove Database)
+
+```sh
+./manage.py flush
+```
 
 #### Shell
 
@@ -459,9 +491,49 @@ COPY --from=translations --chown=django:django /usr/src/app/locale ./locale
 
 USER django:django
 
+COPY ./docker-entrypoint.sh /sbin/entrypoint.sh
+
 EXPOSE 5000
 
-CMD ["gunicorn", "-b", "0:5000", "-k", "eventlet", "app:app"]
+ENTRYPOINT ["/sbin/entrypoint.sh"]
+```
+
+```sh
+#! /bin/bash
+set -e
+
+# Look for static folder, if it does not exist, then generate it
+if [ ! -d '/usr/src/app/static' ]; then
+    ./manage.py collectstatic --no-input
+fi
+
+# Apply database migrations
+if [[ "$APPLY_MIGRATIONS" = "1" ]]; then
+    echo "Applying database migrations..."
+    /usr/src/app/manage.py migrate --no-input
+fi
+
+# Check that there are no pending migrations to generate
+if [[ "$CHECK_MIGRATIONS" = "1" ]]; then
+  echo "Checking database migrations..."
+  /usr/src/app/manage.py makemigrations --dry-run --no-input --check -v 3
+fi
+
+# Create superuser
+# if [[ "$CREATE_SUPERUSER" = "1" ]]; then
+#     ./manage.py add_admin_user -u admin -p admin -e admin@example.com
+#     echo "Admin user created with credentials admin:admin (email: admin@example.com)"
+# fi
+
+# Start server
+if [[ ! -z "$*" ]]; then
+    "$@"
+elif [[ "$DEV_SERVER" = "1" ]]; then
+    /usr/src/app/manage.py runserver 0.0.0.0:8000
+else
+    uwsgi --ini /usr/src/app/uwsgi.ini
+fi
+
 ```
 
 <!-- ####
@@ -489,3 +561,23 @@ EXPOSE 5000
 
 CMD ["gunicorn", "-b", "0:5000", "-k", "eventlet", "app:app"]
 ``` -->
+
+## Framework
+
+### Issues
+
+####
+
+```log
+You are trying to add the field 'created_at' with 'auto_now_add=True' to application without a default; the database needs something to populate existing rows.
+```
+
+```py
+>>> timezone.now
+```
+
+```log
+You are trying to add a non-nullable field 'created_by' to application without a default; we can't do that (the database needs something to populate existing rows).
+```
+
+TODO

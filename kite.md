@@ -1,5 +1,7 @@
 # Kite
 
+**Keywords**: Code Completion
+
 ## App
 
 ### Installation

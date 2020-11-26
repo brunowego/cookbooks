@@ -48,20 +48,21 @@ mkcert -help
 
 ### Configuration
 
-> **Darwin**: Prefix `/etc/ssl/certs/example.com` with `/private`.
-
 ```sh
+# Darwin
 sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/example.com
 
-mkdir -p /etc/ssl/certs/example.com/{ca,server,client}
-```
+# Linux
+sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/example.com
 
-```sh
+#
+mkdir -p /etc/ssl/certs/example.com/{ca,server,client}
+
+#
 CAROOT=/etc/ssl/certs/example.com/ca \
   mkcert -install
-```
 
-```sh
+#
 CAROOT=/etc/ssl/certs/example.com/ca \
   mkcert \
     -cert-file /etc/ssl/certs/example.com/server/server.pem \
@@ -77,6 +78,27 @@ CAROOT=/etc/ssl/certs/example.com/ca \
 ```sh
 sudo hostess add app.example.com 127.0.0.1
 ```
+
+### Tips
+
+#### http-server
+
+```sh
+http-server \
+  -S \
+  -C /etc/ssl/certs/example.com/server/server.pem \
+  -K /etc/ssl/certs/example.com/server/server.key
+```
+
+<!-- #### mitmproxy
+
+```sh
+mitmdump \
+  -p 443 \
+  --mode reverse:http://127.0.0.1:8000 \
+  --no-http2 \
+  --certs /etc/ssl/certs/example.com/server/server.pem
+``` -->
 
 #### Caddy
 

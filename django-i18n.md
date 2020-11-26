@@ -75,10 +75,6 @@ mkdir -p ./locale
 
 #
 python -m django makemessages -l pt_BR
-
-# "Language: pt_BR\n"
-
-#
 python -m django makemessages -a
 
 #

@@ -23,7 +23,7 @@ heroku run rake db:seed --app APP
 ###
 
 ```sh
-heroku pg:psql --app APP < database.sql
+heroku pg:psql --app APP < ./database.sql
 ```
 
 ## Log

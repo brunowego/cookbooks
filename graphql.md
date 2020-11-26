@@ -11,6 +11,7 @@ https://github.com/mehulagg/gitlab/blob/master/doc/development/fe_guide/graphql.
 ## Tools
 
 - [Altair GraphQL](/altair-graphql.md)
+- [Apollo](/apollo.md)
 
 ## CLI
 

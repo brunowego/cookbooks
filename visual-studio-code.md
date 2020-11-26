@@ -1,5 +1,9 @@
 # Visual Studio Code
 
+<!--
+https://code.visualstudio.com/docs/remote/ssh
+-->
+
 ## App
 
 ### Dependencies

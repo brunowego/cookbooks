@@ -193,6 +193,12 @@ python3
 
 ### Tips
 
+<!-- ####
+
+```sh
+ln -s /usr/bin/python3 /usr/bin/python
+``` -->
+
 #### Visual Studio Code
 
 ```sh

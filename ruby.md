@@ -1,5 +1,10 @@
 # Ruby
 
+<!--
+https://app.pluralsight.com/library/courses/ruby-getting-started/table-of-contents
+https://app.pluralsight.com/library/courses/reading-writing-data-ruby/table-of-contents
+-->
+
 ## Docker
 
 ### Running

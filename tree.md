@@ -34,7 +34,7 @@ tree --help
 
 ```sh
 # Filtering
-tree -afFiI '.DS_Store|.git'
+tree -afFiI '.DS_Store|.git' # __pycache__, .cache, .venv, node_modules
 
 # Only files
 tree -afFiI '.DS_Store|.git' | grep -v '/$'

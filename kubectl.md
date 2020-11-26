@@ -320,8 +320,14 @@ kubectl config view
 ~/.kube/config
 
 #
-kubectx
+kubectx [vendor]-[env]
 
 #
-kubectl get pods -n [namespace]
+kubectl get pod -n [namespace]
+
+#
+kubectl exec -it \
+  $(kubectl get pod -l 'app=[app-name]' -o jsonpath='{.items[0].metadata.name}' -n [namespace]) \
+  -n [namespace] \
+  -- /bin/sh
 ```

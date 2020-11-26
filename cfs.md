@@ -1,5 +1,10 @@
 # Continuous Feedback Surveys
 
+<!--
+https://blog.track.co/o-que-e-customer-effort-score/
+https://www.checkmarket.com/blog/csat-ces-nps-compared/
+-->
+
 ## References
 
 - [Customer](https://customer.io/)

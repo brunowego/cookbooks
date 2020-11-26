@@ -1,5 +1,10 @@
 # Rust
 
+<!--
+https://app.pluralsight.com/library/courses/rust-fundamentals/table-of-contents
+https://www.linkedin.com/learning/first-look-rust/welcome
+-->
+
 ## References
 
 - [rustup](/rustup.md)
