@@ -1,33 +1,33 @@
-# Commands
+# Heroku
 
-## Restart
+## CLI
+
+### Installation
+
+#### Homebrew
 
 ```sh
-heroku restart --app APP
+brew tap heroku/brew
+brew install heroku
 ```
 
-## Database
-
-### Reset
+### Usage
 
 ```sh
+#
+heroku restart --app APP
+
+# Reset
 heroku pg:reset DATABASE --app APP
 heroku run rake db:migrate --app APP
 heroku run console --app APP
-```
 
-```sh
+#
 heroku run rake db:seed --app APP
-```
 
-###
-
-```sh
+#
 heroku pg:psql --app APP < ./database.sql
-```
 
-## Log
-
-```sh
+# Logs
 heroku logs --tail --app APP
 ```

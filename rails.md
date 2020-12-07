@@ -1,6 +1,8 @@
 # Ruby on Rails
 
 <!--
+https://github.com/chaskiq/chaskiq
+
 https://app.pluralsight.com/library/courses/creating-api-rails/table-of-contents
 
 https://matthewhoelter.com/2020/11/10/deploying-ruby-on-rails-for-ubuntu-2004.html

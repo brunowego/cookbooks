@@ -1,11 +1,18 @@
 # Webpack
 
+<!--
+https://leanpub.com/survivejs-webpack/
+-->
+
 ## References
 
 - [Configuration](https://webpack.js.org/configuration/)
 
-## Init
+## CLI
+
+### Usage
 
 ```sh
+# Initialize
 npx webpack-cli init
 ```

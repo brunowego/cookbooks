@@ -1,6 +1,8 @@
 # Python
 
 <!--
+https://app.pluralsight.com/paths/skill/core-python
+
 https://www.linkedin.com/learning/python-object-oriented-programming/python-object-oriented-programming
 https://www.linkedin.com/learning/python-essential-libraries/power-up-your-python-with-libraries
 https://www.linkedin.com/learning/unit-testing-in-python/python-unit-testing-with-pytest
@@ -184,8 +186,8 @@ python3 -h
 python --version 2>&1 | head -1
 
 # HTTP Server
-python -m SimpleHTTPServer # Python v2.x
-python -m http.server # Python v3.x
+python -m SimpleHTTPServer 3000 -o 0.0.0.0 # Python v2.x
+python -m http.server 3000 # Python v3.x
 
 # REPL
 python3

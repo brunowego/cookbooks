@@ -1,5 +1,9 @@
 # MySQL
 
+<!--
+https://app.pluralsight.com/paths/skill/mysql
+-->
+
 ## References
 
 - [Epoch Converter](https://www.epochconverter.com/programming/mysql)
@@ -542,6 +546,32 @@ ${MYSQL} -Bse "${MYSQL_DROP}" [database]
 ```
 
 ### Issues
+
+#### GTIDs
+
+```log
+Warning: A partial dump from a server that has GTIDs will by default include the GTIDs of all transactions, even those that changed suppressed parts of the database. If you don't want to restore GTIDs, pass --set-gtid-purged=OFF. To make a complete dump, pass --all-databases --triggers --routines --events.
+```
+
+```sh
+mysqldump \
+  ...
+  --set-gtid-purged=OFF \
+  ...
+```
+
+#### Column Statistics
+
+```log
+mysqldump: Couldn't execute '...': Unknown table 'COLUMN_STATISTICS' in information_schema (1109)
+```
+
+```sh
+mysqldump \
+  ...
+  --column-statistics=0 \
+  ...
+```
 
 #### Connection Allowed
 

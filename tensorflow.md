@@ -1,6 +1,7 @@
 # TensorFlow
 
 <!--
+https://www.youtube.com/watch?v=tZt6gRlRcgk
 https://github.com/tensorflow/profiler/blob/master/docs/profile_multi_gpu.md
 https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
 -->

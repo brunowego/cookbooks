@@ -1,5 +1,9 @@
 # Dask
 
+<!--
+https://app.pluralsight.com/library/courses/scaling-python-data-applications-dask/table-of-contents
+-->
+
 ## Helm
 
 ### Install

@@ -1,6 +1,11 @@
 # TypeScript
 
 <!--
+https://github.com/adotando-pet/monorepo/tree/840301e005f024892e9ce7dd6640525010308596
+
+https://app.pluralsight.com/paths/skills/typescript-core-language
+https://app.pluralsight.com/library/courses/typescript-compiler/table-of-contents
+
 https://blog.logrocket.com/types-vs-interfaces-in-typescript/
 
 https://www.linkedin.com/learning/typescript-essential-training/

@@ -1,6 +1,9 @@
 # PHP: Hypertext Preprocessor
 
 <!--
+https://app.pluralsight.com/library/courses/php-big-picture/table-of-contents
+https://app.pluralsight.com/library/courses/working-databases-php/table-of-contents
+
 https://www.linkedin.com/learning/learning-php-4/should-you-learn-php
 https://front-line-php.com/
 -->

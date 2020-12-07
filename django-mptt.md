@@ -1,6 +1,8 @@
 # Django Modified Preorder Tree Traversal (MPTT)
 
 <!--
+https://www.youtube.com/watch?v=j7vj4k13xDY
+https://www.youtube.com/watch?v=8jWr3ewz2S4
 https://tute.io/how-to-rebuild-django-mptt-tree-structure
 -->
 

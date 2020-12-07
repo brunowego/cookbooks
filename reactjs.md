@@ -1,6 +1,16 @@
 # React
 
 <!--
+https://www.youtube.com/watch?v=fxY1q4SCB64
+https://www.youtube.com/watch?v=ontX4zfVqK8
+https://leanpub.com/the-road-to-learn-react/
+
+https://www.youtube.com/watch?v=I6ypD7qv3Z8
+
+https://www.youtube.com/watch?v=gnkrDse9QKc
+
+https://app.pluralsight.com/paths/skill/building-web-applications-with-react
+
 https://github.com/ilkeraltin/react-spa-news
 
 https://www.linkedin.com/learning/react-js-essential-training/welcome
@@ -13,7 +23,8 @@ https://www.linkedin.com/learning/building-modern-projects-with-react/react-goin
 
 ## Favorite Libraries
 
-<!-- https://www.npmjs.com/package/mini-create-react-context
+<!--
+https://www.npmjs.com/package/mini-create-react-context
 https://www.npmjs.com/package/ramda
 https://www.npmjs.com/package/tiny-invariant
 https://www.npmjs.com/package/react-is
@@ -36,4 +47,5 @@ https://www.npmjs.com/package/scheduler
 https://www.npmjs.com/package/regenerator-runtime
 https://www.npmjs.com/package/tinycolor2
 https://www.npmjs.com/package/rc-drawer
-https://www.npmjs.com/package/omit -->
+https://www.npmjs.com/package/omit
+-->

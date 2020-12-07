@@ -25,3 +25,4 @@ https://blog.track.co/o-que-e-customer-effort-score/
 - Net Promoter Score (NPS)
 - Customer Satisfaction Score (CSAT)
 - Customer Effort Score (CES)
+- Product Market Fit (PMF)

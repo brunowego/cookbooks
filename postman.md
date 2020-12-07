@@ -1,6 +1,7 @@
 # Postman
 
 <!--
+https://app.pluralsight.com/course-player?courseId=a609cb66-9343-41bd-87e3-a83514e29e27
 https://www.linkedin.com/learning/postman-essential-training/why-automate-your-api-tests
 -->
 

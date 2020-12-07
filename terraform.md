@@ -1,6 +1,8 @@
 # Terraform
 
 <!--
+https://www.youtube.com/watch?v=OXE2a8dqIAI
+
 https://www.linkedin.com/learning/advanced-terraform/terraform-in-the-real-world
 https://www.linkedin.com/learning/learning-terraform-2/welcome
 

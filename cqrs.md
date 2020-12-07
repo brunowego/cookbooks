@@ -1,8 +1,16 @@
 # Command Query Responsibility Segregation (CQRS)
 
-TODO
-
 <!--
+https://app.pluralsight.com/course-player?courseId=f7f65950-1da8-4acd-8a19-1fa01950f542
+https://app.pluralsight.com/library/courses/cqrs-in-practice/table-of-contents
+https://app.pluralsight.com/library/courses/modern-software-architecture-domain-models-cqrs-event-sourcing/table-of-contents
+
+https://www.linkedin.com/learning/software-architecture-domain-driven-design/better-apps-with-domain-driven-design
+https://www.linkedin.com/learning/software-architecture-patterns-for-developers/best-practices-and-blueprints
+https://www.linkedin.com/learning/behavior-driven-development/collaboration-with-behavior-driven-development-bdd
+
+https://leanpub.com/cqrs/
+
 https://www.youtube.com/watch?v=UPjtvFFW2wE
 https://www.youtube.com/results?search_query=cqrs
 https://medium.com/@gabrielqueiroz/vamos-falar-sobre-event-sourcing-276ae66106f7
@@ -26,3 +34,5 @@ https://leanpub.com/buildingconduit
 https://www.amazon.com.br/Cqrs-Command-Query-Responsibility-Segregation/dp/1795874775
 https://ordina-jworks.github.io/domain-driven%20design/2016/02/02/A-Decade-Of-DDD-CQRS-And-Event-Sourcing.html
 -->
+
+TODO

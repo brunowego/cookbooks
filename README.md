@@ -12,11 +12,13 @@ Bucket of cookbooks to help install and set softwares.
 
 ## Terms
 
+- [Acknowledgement (ACK or NACK)](https://en.wikipedia.org/wiki/Acknowledgement_(data_networks))
 - [Active Directory Federation Services (ADFS)]()
 - [Analytical Base Table (ABT) is](https://en.wikipedia.org/wiki/Analytical_base_table)
 - [Backend for Frontend (BFF)](https://samnewman.io/patterns/architectural/bff/)
 - [Backend for Frontend (BFF)](https://samnewman.io/patterns/architectural/bff/)
 - [Bare-metal server](https://en.wikipedia.org/wiki/Bare-metal_server)
+- [Capture The Flag (CTF)]()
 - [Change Data Capture (CDC)]()
 - [Chaos engineering (Chaos Monkey)](https://en.wikipedia.org/wiki/Chaos_engineering)
 - [Churn Rate]()
@@ -26,10 +28,12 @@ Bucket of cookbooks to help install and set softwares.
 - [Common Gateway Interface (CGI)](https://en.wikipedia.org/wiki/Common_Gateway_Interface)
 - [Common Workflow Language (CWL)](https://www.commonwl.org/)
 - [Containers as a Service (CaaS)]()
+- [Data Transfer Object (DTO)]()
 - [Distributed Cloud Operating System (DC/OS)]()
 - [Enhanced Entity–Relationship (EER)](https://en.wikipedia.org/wiki/Enhanced_entity%E2%80%93relationship_model)
 - [ERPM (Enterprise Random Password Manager]()
 - [Estimated Time of Arrival (ETA)]()
+- [Facebook, Amazon, Apple, Netflix e Google (FAANG)]()
 - [Five Ws (5WH)]()
 - [Free and Open-Source Software (FOSS)](https://en.wikipedia.org/wiki/Free_and_open-source_software)
 - [identity provider (IdP)](https://en.wikipedia.org/wiki/Identity_provider)
@@ -38,6 +42,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Mobile backend as a service (MBaaS)](https://en.wikipedia.org/wiki/Mobile_backend_as_a_service)
 - [Monorepo](https://en.wikipedia.org/wiki/Monorepo)
 - [Network Interface Controller (NIC)](https://en.wikipedia.org/wiki/Network_interface_controller)
+- [Objectives and Key Results (OKR)]()
 - [On-premises (on-prem)](https://en.wikipedia.org/wiki/On-premises_software)
 - [Operations as a Service (OaaS)]()
 - [Platform as a service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service)
@@ -45,14 +50,18 @@ Bucket of cookbooks to help install and set softwares.
 - [Read-eval-print loop (REPL)](https://en.wikipedia.org/wiki/Read-eval-print_loop)
 - [Relational Database Service (RDS)]()
 - [Server-side Rendering (SSR)]()
+- [Site Reliability Engineering (SRE)]()
 - [Software as a service (SaaS)](https://en.wikipedia.org/wiki/Software_as_a_service)
 - [Software Development Kit (SDK)]()
+- [Stock Keeping Unit (SKU)]()
 - [Top-Level Domain (TLD)](https://en.wikipedia.org/wiki/Top-level_domain)
 - [Uniform Resource Identifier (URI)](https://en.wikipedia.org/wiki/Uniform_resource_identifier)
 - [Uniform Resource Locator (URL)](https://en.wikipedia.org/wiki/Uniform_resource_locator)
 - [Uniform Resource Name (URN)](https://en.wikipedia.org/wiki/Uniform_resource_name)
 - [Universal Plug and Play (UPnP_](https://en.wikipedia.org/wiki/Universal_Plug_and_Play)
+- [Virtual Private Cloud (VPC)]()
 - [Web Server Gateway Interface (WSGI)](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)
+- [You aren't gonna need it (YAGNI)](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
 
 ## Cheat Sheets
 

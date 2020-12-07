@@ -5,6 +5,7 @@
 ### Dependencies
 
 - [cURL](/curl.md)
+- [Java Standard Edition (SE)](/java-se-jdk.md#version-8-and-earlier)
 
 ### Installation
 

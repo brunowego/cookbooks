@@ -1,6 +1,7 @@
 # GraphQL
 
 <!--
+https://www.youtube.com/watch?v=E3NHd-PkLrQ
 https://www.linkedin.com/learning/graphql-essential-training/learn-graphql-essentials
 
 https://github.com/njNafir/react-cheatsheets/blob/master/graphql.md

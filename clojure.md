@@ -1,6 +1,8 @@
 # Clojure
 
 <!--
+https://pragprog.com/titles/dswdcloj3/web-development-with-clojure-third-edition/
+
 https://github.com/carlosvalarezo/democars
 https://github.com/braidchat/braid
 https://github.com/pkamenarsky/atea

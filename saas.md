@@ -1,6 +1,8 @@
 # Software as a Service (SaaS)
 
 <!--
+https://app.pluralsight.com/paths/skill/managing-saas-services-skill
+
 https://buildsaasappingo.com/
 
 https://leanpub.com/basair6

@@ -1,6 +1,26 @@
 # Apache Kafka
 
 <!--
+https://www.linkedin.com/learning/search?entityType=COURSE&keywords=kafka
+
+https://app.pluralsight.com/library/courses/apache-kafka-getting-started/table-of-contents
+
+https://app.pluralsight.com/library/courses/spark-kafka-cassandra-applying-lambda-architecture/table-of-contents
+
+https://app.pluralsight.com/library/courses/building-enterprise-distributed-online-analytics-platform/table-of-contents
+
+https://app.pluralsight.com/paths/skills/handling-streaming-data-with-messaging-systems
+
+https://app.pluralsight.com/library/courses/designing-event-driven-applications-apache-kafka-ecosystem/table-of-contents
+https://app.pluralsight.com/library/courses/kafka-build-deploy-monitor-real-world-application/table-of-contents
+
+https://app.pluralsight.com/library/courses/processing-streaming-data-apache-spark-structured-streaming/table-of-contents
+https://app.pluralsight.com/library/courses/spring-integration-channel-adapters-external-systems/table-of-contents
+https://app.pluralsight.com/library/courses/storing-managing-data-redis-apache-kafka-heroku/table-of-contents
+https://app.pluralsight.com/library/courses/implementing-event-log-kafka/table-of-contents
+https://app.pluralsight.com/library/courses/enforcing-data-contracts-kafka-schema-registry/table-of-contents
+https://app.pluralsight.com/library/courses/deploying-kafka-cluster/table-of-contents
+
 How do Kafka ACLs works? https://www.youtube.com/watch?v=4pj6Ewaf7N8
 
 https://medium.com/@sathishjayaram/batch-processing-of-multi-partitioned-kafka-topics-using-spark-with-example-b686676d33f1
@@ -15,7 +35,7 @@ https://github.com/kaiwaehner/kafka-streams-machine-learning-examples
 
 - [Kafka Listeners - Explained](https://rmoff.net/2018/08/02/kafka-listeners-explained/)
 
-##
+## Tools
 
 - [Kafka Manager](/kafka-manager.md)
 

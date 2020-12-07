@@ -1,10 +1,22 @@
 # Representational State Transfer (REST)
 
+<!--
+https://www.youtube.com/watch?v=_1xa8Bsho6A
+-->
+
 ## References
 
 - [REST API Versioning](https://restfulapi.net/versioning/)
+- [HATEOAS]()
 
-## Usage
+## Tools
+
+- [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
+- [Apiary]()
+- [Swagger]()
+- [WADL]()
+
+## Markdown
 
 ```http
 GET http://github.com
@@ -14,7 +26,7 @@ GET http://github.com
 GET http://github.com
 ```
 
-##
+## Visual Studio Code
 
 ```sh
 cat << EOF > ./.rest
@@ -30,10 +42,6 @@ GET {{baseUrl}}/health-check HTTP/1.1
 Content-Type: {{contentType}}
 EOF
 ```
-
-## Tips
-
-### Visual Studio Code
 
 ```sh
 code --install-extension humao.rest-client

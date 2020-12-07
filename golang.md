@@ -1,6 +1,19 @@
 # Go Programming Language
 
 <!--
+https://github.com/vmasdani/cozypos-full
+
+https://pragprog.com/titles/tjgo/distributed-services-with-go/
+
+https://app.pluralsight.com/paths/skills/go-core-language
+https://app.pluralsight.com/library/courses/exploring-go-modules/table-of-contents
+https://app.pluralsight.com/library/courses/go-big-picture/table-of-contents
+https://app.pluralsight.com/library/courses/go-object-oriented-programming/table-of-contents
+https://app.pluralsight.com/library/courses/go-delve-debugging-applications/table-of-contents
+https://app.pluralsight.com/library/courses/creating-web-applications-go-update/table-of-contents
+https://app.pluralsight.com/library/courses/go-horizontal-scaling-apps/table-of-contents
+https://app.pluralsight.com/library/courses/go-build-distributed-applications/table-of-contents
+
 https://github.com/makeless/makeless-demo.git
 
 https://www.justforlearning.com/courses/build-your-first-microservices-based-application-using-go-and-grpc/dashboard
@@ -8,6 +21,8 @@ https://www.justforlearning.com/courses/build-your-first-microservices-based-app
 https://dominicstpierre.com/getting-started-with-go-guide
 https://github.com/youxia999/go-learn-project
 https://medium.com/@hatajoe/clean-architecture-in-go-4030f11ec1b1
+
+https://github.com/ehang-io/nps
 -->
 
 ## References

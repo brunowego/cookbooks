@@ -1,5 +1,9 @@
 # Parcel
 
+<!--
+https://app.pluralsight.com/guides/typescript-react-getting-started
+-->
+
 ## References
 
 - [Environment Variables](https://parceljs.org/env.html)

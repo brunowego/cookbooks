@@ -1,5 +1,16 @@
 # RabbitMQ
 
+<!--
+https://www.linkedin.com/learning/learning-rabbitmq/connect-your-services-with-asynchronous-messaging
+
+https://app.pluralsight.com/library/courses/rabbitmq-by-example/table-of-contents
+https://app.pluralsight.com/library/courses/masstransit-rabbitmq-scaling-microservices/table-of-contents
+-->
+
+## References
+
+- [Advanced Message Queuing Protocol (AMQP)]()
+
 ## CLI
 
 ### Installation

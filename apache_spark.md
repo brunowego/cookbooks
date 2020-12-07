@@ -1,6 +1,8 @@
 # Apache Spark
 
 <!--
+https://app.pluralsight.com/library/courses/apache-spark-2-structured-streaming/table-of-contents
+
 http://shop.oreilly.com/product/0636920047568.do
 https://www.jowanza.com/blog/time-series-missing-data-imputation-in-apache
 https://www.jowanza.com/blog/a-gentle-intro-to-udafs-in-apache-spark

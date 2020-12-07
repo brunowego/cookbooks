@@ -1,6 +1,10 @@
 # Flask
 
 <!--
+https://github.com/Innopoints/backend
+
+https://app.pluralsight.com/paths/skill/building-web-applications-with-flask
+
 CMD ["python", "-m", "flask", "run", "--host=0.0.0.0", "--port=2525"]
 
 https://www.linkedin.com/learning/flask-essential-training/web-development-with-flask

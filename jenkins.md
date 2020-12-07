@@ -1,5 +1,9 @@
 # Jenkins
 
+<!--
+https://app.pluralsight.com/paths/skill/continuous-integration-with-jenkins
+-->
+
 ## Helm
 
 ### References

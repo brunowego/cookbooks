@@ -1,6 +1,9 @@
 # Django
 
 <!--
+https://github.com/pixelpassion/django-saas-boilerplate/
+https://app.pluralsight.com/paths/skill/building-web-applications-with-django
+
 https://app.pluralsight.com/library/courses/django-admin/table-of-contents
 https://app.pluralsight.com/library/courses/django-forms-and-modelforms/table-of-contents
 https://app.pluralsight.com/library/courses/django-views-apps-url-mappings/table-of-contents
@@ -8,6 +11,8 @@ https://app.pluralsight.com/library/courses/django-templates/table-of-contents
 https://app.pluralsight.com/library/courses/django-getting-started/table-of-contents
 https://app.pluralsight.com/library/courses/django-fundamentals-update/table-of-contents
 
+https://www.willandskill.se/en/custom-django-admin-actions-with-an-intermediate-page/
+https://blogs.harvard.edu/rprasad/tag/django-admin/
 https://code4startup.com/projects/uber-app-for-food-with-python-django-and-swift
 https://github.com/goupaz/jobhax/tree/master/ats
 https://github.com/YDongY/code_snippets
@@ -35,6 +40,7 @@ https://github.com/bfirsh/django-ordered-model
 - [Settings](https://docs.djangoproject.com/en/3.0/ref/settings/)
 - [Customize the Django Admin With Python](https://realpython.com/customize-django-admin-python/)
 - [Writing custom django-admin commands](https://docs.djangoproject.com/en/3.1/howto/custom-management-commands/)
+- [Django ORM Relationships Cheat Sheet](https://hackernoon.com/django-orm-relationships-cheat-sheet-14433d6cf68c)
 
 ### Applications
 
@@ -45,6 +51,7 @@ https://github.com/bfirsh/django-ordered-model
 - [django-cors-headers](https://github.com/adamchainz/django-cors-headers)
 - [django-admin-sortable2](https://django-admin-sortable2.readthedocs.io/en/latest/)
 - [django-extensions](https://django-extensions.readthedocs.io/en/latest/)
+- [django-q](https://django-q.readthedocs.io/en/latest/)
 
 <!--
 django-environ

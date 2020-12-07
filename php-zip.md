@@ -1,4 +1,4 @@
-# PHP ZIP
+# PHP Zip
 
 ## Installation
 
@@ -41,3 +41,15 @@ php -i | grep '^zip$' -A 5
 # FPM
 phpbrew fpm restart
 ```
+
+<!-- ## Issues
+
+###
+
+```log
+PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+```
+
+```sh
+phpbrew -d ext clean --purge zip
+``` -->

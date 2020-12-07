@@ -14,3 +14,7 @@
 - [HTTPS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/)
 - [Server IP](https://addons.mozilla.org/en-US/firefox/addon/server-ip/)
 - [SVG Export](https://addons.mozilla.org/en-US/firefox/addon/svg-export/)
+
+<!--
+https://addons.mozilla.org/en-US/firefox/addon/loadtabonselect3/
+-->

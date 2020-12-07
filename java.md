@@ -107,3 +107,23 @@ osascript -e 'quit app "Visual Studio Code"'
 
 code --disable-extension vscjava.vscode-java-pack
 ```
+
+### Issues
+
+#### Java Home Environment
+
+```log
+Failed to create the Java Virtual Machine.
+```
+
+<!--
+https://www.pushing-pixels.org/2020/06/19/fixing-the-failed-to-create-the-java-virtual-machine-error-on-eclipse-startup-on-a-mac.html
+-->
+
+```sh
+#
+export JAVA_HOME="$(dirname $(dirname $(readlink -f $(which java))))"
+
+#
+open /Applications/ApacheDirectoryStudio.app
+```

@@ -7,12 +7,19 @@
 #### Homebrew
 
 ```sh
-brew install gs
+brew install ghostscript
+```
+
+### Commands
+
+```sh
+gs -h
 ```
 
 ### Usage
 
 ```sh
+#
 gs \
   -o repaired.pdf \
   -sDEVICE=pdfwrite \

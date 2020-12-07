@@ -22,6 +22,16 @@ find ./ -name \*.[extension]
 
 ## Tips
 
+###
+
+```sh
+#
+find ./ -name '*.[extension]' -type f
+
+#
+find ./ -name '*.[extension]' -type f -delete
+```
+
 ### Run in all subdirectories
 
 ```sh

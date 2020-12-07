@@ -143,10 +143,10 @@ VERSION=[version] && \
 phpbrew list
 
 # Switch Global
-phpbrew switch [version]-dev
+phpbrew switch [version]
 
 ## Instance Only
-phpbrew use [version]-dev
+phpbrew use [version]
 
 # Extensions
 phpbrew extension
@@ -167,11 +167,11 @@ phpbrew -d ext clean --purge [extension]
 phpbrew install [version] as [version]-dev like [version]-dev
 
 # Clean
-phpbrew clean -a [version]-dev
+phpbrew clean -a [version]
 
 # Purge
 phpbrew switch-off
-phpbrew purge [version]-dev
+phpbrew purge [version]
 ```
 
 ### Tips
@@ -188,15 +188,15 @@ phpbrew -d ext install \
 
 ### Issues
 
-####
+#### Zip Library
 
 ```log
 Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'zip.so' in Unknown on line 0
 ```
 
-TODO
+Install [PHP Zip](/php-zip.md).
 
-####
+#### SSL Library
 
 ```log
 configure: error: Cannot find OpenSSL's <evp.h>
@@ -205,7 +205,7 @@ Error: Configure failed: configure: error: Cannot find OpenSSL's <evp.h>
 
 Install `libssl-dev`.
 
-####
+#### C Compiler
 
 ```log
 configure: error: no acceptable C compiler found in $PATH
@@ -213,7 +213,7 @@ configure: error: no acceptable C compiler found in $PATH
 
 Install GCC.
 
-####
+#### PEAR library
 
 ```log
 Warning: file_get_contents(http://pecl.php.net/channel.xml): failed to open stream: HTTP request failed! in phar:///usr/local/bin/phpbrew/vendor/corneltek/pearx/src/PEARX/Core.php on line 35

@@ -306,6 +306,17 @@ http://blog.jonathanargentiero.com/docker-sed-cannot-rename-etcsedl8ysxl-device-
 
 ### Tips
 
+#### Build Kit
+
+```sh
+# CLI
+DOCKER_BUILDKIT=0 docker build .
+
+# Daemon
+TODO
+# {"experimental":false,"features":{"buildkit":true},"insecure-registries":["atf.intranet.bb.com.br:5001","atf.intranet.bb.com.br:5001"]}%
+```
+
 #### Work directory
 
 ```Dockerfile

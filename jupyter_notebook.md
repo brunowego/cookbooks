@@ -1,6 +1,6 @@
 # Jupyter Notebook
 
-##
+## Tools
 
 - [Gigantum]()
 - [Kubeflow]()
@@ -72,15 +72,15 @@ jupyter notebook list
 jupyter notebook stop
 ```
 
-## Tips
+### Tips
 
-### Visual Studio Code
+#### Visual Studio Code
 
 ```sh
 code --install-extension colinfang.my-nbpreviewer
 ```
 
-### Global Kernel
+#### Global Kernel
 
 ```sh
 pip install -U ipython ipykernel
@@ -96,7 +96,7 @@ ipython kernel install \
 jupyter kernelspec list
 ```
 
-#### Remove
+##### Remove
 
 ```sh
 # Darwin
@@ -106,7 +106,7 @@ rm -r ${HOME}/Library/Jupyter/kernels/.venv
 rm -rf /usr/local/share/jupyter/kernels/.venv
 ```
 
-### Kernel with Virtualenv
+#### Kernel with Virtualenv
 
 ```sh
 source ./.venv/bin/activate
@@ -122,7 +122,7 @@ ipython kernel install \
 jupyter kernelspec list
 ```
 
-#### Importing from Python code
+##### Importing from Python code
 
 ```py
 from os import system

@@ -1,8 +1,10 @@
 # Seldon Core
 
+<!--
 https://github.com/IBM/FfDL/tree/master/community/FfDL-Seldon/pytorch-model
 https://github.com/SeldonIO/seldon-core/issues/644
 https://github.com/danielfrg/polyaxon-argo-seldon-example
+-->
 
 ## References
 

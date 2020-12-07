@@ -1,8 +1,20 @@
 # Flutter
 
 <!--
+https://app.pluralsight.com/library/courses/flutter-getting-started/table-of-contents
+https://app.pluralsight.com/library/courses/flutter-big-picture/table-of-contents
+https://app.pluralsight.com/library/courses/creating-layouts-flutter/table-of-contents
+https://app.pluralsight.com/library/courses/creating-connected-app-flutter/table-of-contents
+https://app.pluralsight.com/library/courses/flutter-creating-localized-apps/table-of-contents
+https://app.pluralsight.com/library/courses/codemash-session-74/table-of-contents
+https://app.pluralsight.com/library/courses/droidcon-nyc-session-46/table-of-contents
 https://app.pluralsight.com/library/courses/managing-state-flutter/table-of-contents
+https://app.pluralsight.com/library/courses/droidcon-sf-session-77/table-of-contents
 https://app.pluralsight.com/library/courses/persisting-data-locally-flutter/table-of-contents
+https://app.pluralsight.com/library/courses/droidcon-sf-session-66/table-of-contents
+https://app.pluralsight.com/library/courses/droidcon-sf-session-28/table-of-contents
+
+https://www.linkedin.com/learning/flutter-part-01-introduction/what-is-flutter
 -->
 
 ## Examples
@@ -48,17 +60,13 @@ sudo su - "$USER"
 flutter -h
 ```
 
-### Examples
-
-#### Doctor
+### Usage
 
 ```sh
+# Doctor
 flutter doctor -v
-```
 
-##### Licenses
-
-```sh
+# Licenses
 flutter doctor --android-licenses
 ```
 

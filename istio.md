@@ -2,6 +2,7 @@
 
 <!--
 https://www.linkedin.com/learning/kubernetes-service-mesh-with-istio/adjusting-istio-load-balancing-ratios
+https://app.pluralsight.com/library/courses/istio-managing-apps-kubernetes/table-of-contents
 
 https://github.com/solsson/istio-access-control
 https://github.com/rinormaloku/istio-mastery

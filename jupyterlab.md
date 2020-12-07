@@ -11,7 +11,7 @@ docker run -d \
   -v jupyterlab-data:/home/jovyan/work \
   -p 8888:8888 \
   --name jupyterlab \
-  jupyter/scipy-notebook:1e374527e15a jupyter lab \
+  docker.io/jupyter/scipy-notebook:42f4c82a07ff jupyter lab \
     --NotebookApp.token='' \
     --NotebookApp.password=''
 ```
@@ -24,6 +24,7 @@ echo -e '[INFO]\thttp://127.0.0.1:8888'
 
 ```sh
 docker rm -f jupyterlab
+
 docker volume rm jupyterlab-data
 ```
 
@@ -45,9 +46,10 @@ jupyter lab --help-all
 jupyter labextension --help-all
 ```
 
-#### Running
+#### Usage
 
 ```sh
+# Running
 jupyter lab \
   --NotebookApp.token='' \
   --NotebookApp.password=''
