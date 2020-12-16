@@ -68,6 +68,11 @@ cat << EOF >> ./requirements.txt
 EOF
 ```
 
+<!--
+git+https://github.com/[user]/[repo].git@master#egg=[repo]
+-->
+
+
 ```sh
 pip install \
   -r ./requirements-dev.txt \
@@ -178,4 +183,20 @@ export PIP_TRUSTED_HOST='pypi.org files.pythonhosted.org'
 ```sh
 # Or, try upgrade certificates
 pip install --upgrade certifi
+```
+
+## Dockerfile
+
+### Tips
+
+```Dockerfile
+COPY ./requirements.txt /usr/src/[appname]
+
+RUN if [ -s /usr/src/[appname]/requirements.txt ]; then pip install -r /usr/src/[appname]/requirements.txt; fi
+```
+
+```sh
+cat << EOF > ./requirements.txt
+# Add plugins here
+EOF
 ```

@@ -53,8 +53,6 @@ strict_chain
 
 proxy_dns
 
-remote_dns_subnet 224
-
 tcp_read_time_out 15000
 tcp_connect_time_out 8000
 
@@ -71,9 +69,9 @@ EOF
 
 ```sh
 #
-curl -i github.com
+curl -I github.com
 
-proxychains curl -i github.com
+proxychains curl -I github.com
 
 #
 nmap -p 80,443 github.com

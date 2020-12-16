@@ -3,6 +3,9 @@
 <!--
 https://www.linkedin.com/learning/kubernetes-package-management-with-helm/manage-kubernetes-workloads-with-helm
 
+https://app.pluralsight.com/library/courses/kubernetes-packaging-applications-helm/table-of-contents
+https://app.pluralsight.com/library/courses/kubernetes-package-administration-helm/table-of-contents
+
 https://medium.com/@saraswatpuneet/blue-green-deployments-using-helm-charts-93ec479c0282
 -->
 

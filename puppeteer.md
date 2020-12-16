@@ -1,5 +1,9 @@
 # Puppeteer
 
+## Tools
+
+- [Headless Recorder](https://chrome.google.com/webstore/detail/headless-recorder/djeegiggegleadkkbgopoonhjimgehda)
+
 ## Library
 
 ### Installation

@@ -1,5 +1,10 @@
 # diff
 
+## Tools
+
+- [Diffchecker](https://diffchecker.com/)
+- [Text Compare!](https://text-compare.com/)
+
 ## CLI
 
 ### Command

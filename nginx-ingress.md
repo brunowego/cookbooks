@@ -77,7 +77,14 @@ dig @10.96.0.10 nginx-ingress-default-backend.kube-system.svc.cluster.local +sho
 nslookup nginx-ingress-default-backend.kube-system.svc.cluster.local 10.96.0.10
 ```
 
-### Issues
+### Tips
+
+#### HTTP Strict Transport Security (HSTS)
+
+```yml
+nginx.ingress.kubernetes.io/server-snippet: |
+  add_header Strict-Transport-Security "max-age=63072000; includeSubDomains" always;
+```
 
 #### Minikube Tunnel
 

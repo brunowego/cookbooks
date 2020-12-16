@@ -1,4 +1,4 @@
-# Minecraft
+# Gitscout
 
 ## App
 
@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install minecraft
+brew cask install gitscout
 ```

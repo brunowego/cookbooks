@@ -1,6 +1,8 @@
 # Apache Kafka
 
 <!--
+https://app.pluralsight.com/library/courses/securing-kafka-cluster/table-of-contents
+
 https://www.linkedin.com/learning/search?entityType=COURSE&keywords=kafka
 
 https://app.pluralsight.com/library/courses/apache-kafka-getting-started/table-of-contents

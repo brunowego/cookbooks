@@ -78,6 +78,7 @@ pt-query-digest --processlist h=127.0.0.1,u=root,p=root
 
 ```sh
 tcpdump -s 65535 -x -nn -q -tttt -i any -c 1000 port 3306 > mysql.tcp.txt
+
 pt-query-digest --type tcpdump mysql.tcp.txt
 pt-query-digest --type tcpdump mysql.tcp.txt > slow_report9.log
 ```

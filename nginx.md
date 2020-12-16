@@ -1,4 +1,4 @@
-# NGINX
+# NGINX (Engine X)
 
 ## CLI
 
@@ -138,6 +138,126 @@ xdg-open 'http://127.0.0.1' || open 'http://127.0.0.1' || echo -e '[INFO]\thttp:
 ```
 
 ### Tips
+
+####
+
+##### Configuration
+
+###### Current Directory (HTTP)
+
+```sh
+# (Darwin)
+cat << EOF > ./nginx.conf
+events {}
+
+http {
+	include /usr/local/etc/nginx/mime.types;
+
+	server {
+		listen 8080;
+		access_log http.access.log;
+		error_log http.error.log;
+
+		root .;
+
+		location / {
+
+		}
+
+		location = /health-check {
+				access_log off;
+				default_type application/json;
+				return 200 '{"status": "ok"}';
+		}
+	}
+}
+EOF
+```
+
+###### Proxy with SSL
+
+```sh
+sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/nginx.local
+mkdir -p /etc/ssl/certs/nginx.local/{ca,server,client}
+
+CAROOT=/etc/ssl/certs/nginx.local/ca \
+  mkcert -install
+
+CAROOT=/etc/ssl/certs/nginx.local/ca \
+  mkcert \
+    -cert-file /etc/ssl/certs/nginx.local/server/server.pem \
+    -key-file /etc/ssl/certs/nginx.local/server/server.key \
+    nginx.local \
+    $(ip route get 1 | awk '{print $NF;exit}') \
+    '*.nginx.local' \
+    localhost \
+    127.0.0.1 \
+    ::1
+```
+
+```sh
+# (Darwin)
+cat << EOF > ./nginx.conf
+events {}
+
+http {
+	include /usr/local/etc/nginx/mime.types;
+
+	server {
+		listen 443 ssl;
+		access_log http.access.log;
+		error_log http.error.log;
+
+		ssl_certificate /etc/ssl/certs/nginx.local/server/server.pem;
+		ssl_certificate_key /etc/ssl/certs/nginx.local/server/server.key;
+
+		location / {
+			proxy_pass http://127.0.0.1:8000;
+		}
+
+		location = /health-check {
+				access_log off;
+				default_type application/json;
+				return 200 '{"status": "ok"}';
+		}
+	}
+}
+EOF
+```
+
+##### Running
+
+```sh
+#
+nginx \
+  -p ./ \
+  -c ./nginx.conf
+
+#
+nginx \
+  -s stop \
+  -p ./
+```
+
+#### CORS
+
+```conf
+location / {
+    # Simple requests
+    if ($request_method ~* '(GET|POST)') {
+        add_header Access-Control-Allow-Origin '*';
+    }
+
+    # Preflighted requests
+    if ($request_method = OPTIONS) {
+        add_header Access-Control-Allow-Origin '*';
+        add_header Access-Control-Allow-Methods 'GET, POST, OPTIONS';
+        add_header Access-Control-Allow-Headers 'Origin, X-Requested-With, Content-Type';
+
+        return 200;
+    }
+}
+```
 
 #### Visual Studio Code
 

@@ -1,6 +1,11 @@
 # Django
 
 <!--
+https://app.pluralsight.com/library/courses/django-testing-security-and-performance/table-of-contents
+
+https://aalvarez.me/posts/custom-admin-action-buttons-in-django/
+https://stackoverflow.com/questions/64689978/django-connectionreseterror-errno-54
+
 https://github.com/pixelpassion/django-saas-boilerplate/
 https://app.pluralsight.com/paths/skill/building-web-applications-with-django
 
@@ -32,6 +37,10 @@ https://github.com/bfirsh/django-ordered-model
 
 ## CLI
 
+### Tools
+
+- [Sentry](https://sentry.io/for/django/)
+
 ### References
 
 - [Django Web Framework (Python)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction)
@@ -48,13 +57,13 @@ https://github.com/bfirsh/django-ordered-model
 
 ### Libraries
 
-- [django-cors-headers](https://github.com/adamchainz/django-cors-headers)
 - [django-admin-sortable2](https://django-admin-sortable2.readthedocs.io/en/latest/)
+- [django-cors-headers](https://github.com/adamchainz/django-cors-headers)
+- [django-environ](https://django-environ.readthedocs.io/en/latest/)
 - [django-extensions](https://django-extensions.readthedocs.io/en/latest/)
 - [django-q](https://django-q.readthedocs.io/en/latest/)
 
 <!--
-django-environ
 django-filter
 django-graphql-jwt
 django-graphql-playground
@@ -133,6 +142,8 @@ pip install \
 
 # Check for issues
 ./manage.py check
+
+DJANGO_ENV=production ./manage.py check --deploy
 
 # Tests
 ./manage.py test --failfast
@@ -238,7 +249,11 @@ DJANGO_SUPERUSER_PASSWORD='Pa$$w0rd!' ./manage.py createsuperuser \
 #### Running
 
 ```sh
+#
 ./manage.py runserver 0.0.0.0:8000
+
+#
+uwsgi --ini ./uwsgi.ini
 ```
 
 ```sh
@@ -251,13 +266,28 @@ echo -e '[INFO]\thttp://127.0.0.1:8000/admin/'
 ./manage.py startapp core
 ```
 
-Add to `INSTALLED_APPS` the `core` module in `./App/settings.py`:
+Add to `PROJECT_APPS` the `core` module in `./App/settings.py`:
 
 ```py
-INSTALLED_APPS = [
-    # ...
-    'core',
+DJANGO_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 ]
+
+THIRD_PARTY_APPS = [
+    # ...
+]
+
+PROJECT_APPS = [
+    # ...
+    'core.apps.CoreConfig',
+]
+
+INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
 ```
 
 #### Migrations
@@ -311,7 +341,14 @@ echo -e '[INFO]\thttp://127.0.0.1:8000/admin/'
 #### Collect Static
 
 ```py
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.1/howto/static-files/
+
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'assets'),
+)
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
@@ -321,7 +358,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 echo '/static' >> ./.gitignore
 
 #
-./manage.py collectstatic
+./manage.py collectstatic --no-input --dry-run
+
+#
+./manage.py collectstatic --clear --noinput
 ```
 
 #### Media
@@ -511,7 +551,7 @@ set -e
 
 # Look for static folder, if it does not exist, then generate it
 if [ ! -d '/usr/src/app/static' ]; then
-    ./manage.py collectstatic --no-input
+    ./manage.py collectstatic --clear --noinput
 fi
 
 # Apply database migrations
@@ -569,7 +609,36 @@ EXPOSE 5000
 CMD ["gunicorn", "-b", "0:5000", "-k", "eventlet", "app:app"]
 ``` -->
 
-## Framework
+## Library
+
+### Environment
+
+***settings.py***
+
+```py
+#
+ENV = os.environ.get('DJANGO_ENV', 'local')
+
+#
+SECRET_KEY = os.environ.get('SECRET_KEY', 'secretkey')
+
+#
+DEBUG = os.getenv('DJANGO_ENV') != 'production'
+```
+
+### Tips
+
+#### Favicon
+
+```py
+from django.conf.urls import url
+from django.views.generic import RedirectView
+
+urlpatterns = (
+    # ...
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon.ico')),
+)
+```
 
 ### Issues
 

@@ -1,6 +1,7 @@
 # Python
 
 <!--
+https://www.linkedin.com/learning/first-look-python-3-9/what-s-new-in-python-3-9
 https://app.pluralsight.com/paths/skill/core-python
 
 https://www.linkedin.com/learning/python-object-oriented-programming/python-object-oriented-programming

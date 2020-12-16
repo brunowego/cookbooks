@@ -14,6 +14,10 @@ https://www.especializati.com.br/curso-laravel-multi-tenancy-single-database#com
 
 ## App
 
+### Tools
+
+- [Sentry](https://sentry.io/for/laravel/)
+
 ### Installation
 
 #### Composer

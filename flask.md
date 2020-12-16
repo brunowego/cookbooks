@@ -79,6 +79,10 @@ echo 'requests==2.24.0' >> ./requirements.txt
 
 ## Library
 
+### Tools
+
+- [Sentry](https://sentry.io/for/flask/)
+
 ### Installation
 
 ```sh

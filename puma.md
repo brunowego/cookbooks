@@ -1,6 +1,8 @@
 # Puma
 
-## Rbenv
+TODO
+
+<!-- ## Rbenv
 
 ```sh
 grep -c processor /proc/cpuinfo
@@ -14,9 +16,9 @@ RAILS_MAX_THREADS=2
 
 ```sh
 rbenv vars
-```
+``` -->
 
-## Nginx
+<!-- ## Nginx
 
 ```sh
 sudo apt update
@@ -125,4 +127,4 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 ```sh
 sudo systemctl restart nginx
-```
+``` -->

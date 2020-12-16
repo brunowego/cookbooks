@@ -49,6 +49,20 @@ kill -9 "$(lsof -nPi tcp:8001 | grep LISTEN | awk '{print $2}')"
 
 # Copy
 kubectl cp ./path/to/folder/or/file [namespace]/[podname]:/path/to/where/save
+
+#
+kubectl get pod -n [namespace]
+
+#
+kubectl describe pod -l 'app=[appname]' -n [namespace]
+
+#
+kubectl logs \
+  -l 'app=[appname]' \
+  -c [container] \
+  -n [namespace] \
+  -f
+
 ```
 
 ### Tips
@@ -88,11 +102,21 @@ kubectl proxy \
   --address='0.0.0.0'
 ```
 
-####
+#### Restart
 
 ```sh
-kubectl scale deployment --replicas 0 [name]
+kubectl scale deployment \
+  --replicas 0 \
+  $(kubectl get deployment -l 'app=[appname]' -o jsonpath='{.items[0].metadata.name}' -n [namespace]) \
+  -n [namespace]
 ```
+
+<!-- ```sh
+kubectl exec -it \
+  $(kubectl get pod -l 'app=[appname]' -o jsonpath='{.items[0].metadata.name}' -n [namespace]) \
+  -n [namespace] \
+  -- /bin/sh -c 'kill 1'
+``` -->
 
 ####
 

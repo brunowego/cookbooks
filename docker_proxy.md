@@ -107,7 +107,7 @@ docker run -it --rm \
 ```yml
 version: '3.7'
 
-x-proxy: &proxy
+x-proxy-vars: &proxy_vars
   http_proxy: ${http_proxy}
   https_proxy: ${https_proxy}
   no_proxy: ${no_proxy}
@@ -118,11 +118,11 @@ services:
     build:
       context: ./path/to/service
       args:
-        <<: *proxy
+        <<: *proxy_vars
 
     # for environment
     environment:
-      <<: *proxy
+      <<: *proxy_vars
 ```
 
 ## Build

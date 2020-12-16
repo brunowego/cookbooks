@@ -62,6 +62,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Virtual Private Cloud (VPC)]()
 - [Web Server Gateway Interface (WSGI)](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)
 - [You aren't gonna need it (YAGNI)](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
+- [Data Source Name (DSN)]()
 
 ## Cheat Sheets
 

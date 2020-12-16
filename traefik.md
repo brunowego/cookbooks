@@ -7,6 +7,22 @@ https://www.udemy.com/course/the-complete-traefik-training-course/?referralCode=
 ## References
 
 - [Docker-compose basic example](https://docs.traefik.io/v2.0/user-guides/docker-compose/basic-example/)
+- [Middlewares Headers](https://doc.traefik.io/traefik/v2.0/middlewares/headers/)
+
+## Plataform
+
+### Tips
+
+<!-- #### CORS
+
+```yml
+# Docker
+labels:
+  - 'traefik.http.middlewares.uan-sentry-onprem.headers.accesscontrolallowmethods=GET,OPTIONS,PUT'
+  - 'traefik.http.middlewares.uan-sentry-onprem.headers.accesscontrolalloworigin=*'
+  - 'traefik.http.middlewares.uan-sentry-onprem.headers.accesscontrolmaxage=100'
+  - 'traefik.http.middlewares.uan-sentry-onprem.headers.addvaryheader=true'
+``` -->
 
 ## Helm
 

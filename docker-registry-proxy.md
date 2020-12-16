@@ -18,7 +18,7 @@ docker run -d \
 ```
 
 ```sh
-curl -i "http://127.0.0.1:3128"
+curl -i 'http://127.0.0.1:3128'
 ```
 
 ## Certificate
@@ -49,7 +49,7 @@ EOF
 ### Darwin
 
 ```sh
-wget "http://127.0.0.1:3128/ca.crt"
+wget 'http://127.0.0.1:3128/ca.crt'
 ```
 
 ```sh
@@ -66,7 +66,7 @@ rm ca.crt
 ### Ubuntu
 
 ```sh
-curl "http://127.0.0.1:3128/ca.crt" | sudo tee '/usr/local/share/ca-certificate/docker-registry-proxy.crt'
+curl 'http://127.0.0.1:3128/ca.crt' | sudo tee '/usr/local/share/ca-certificate/docker-registry-proxy.crt'
 echo 'docker-registry-proxy.crt' >> '/etc/ca-certificates.conf'
 ```
 
@@ -81,7 +81,7 @@ sudo systemctl restart docker
 ### CentOS
 
 ```sh
-curl "http://127.0.0.1:3128/ca.crt" | sudo tee '/etc/pki/ca-trust/source/anchors/docker-registry-proxy.crt'
+curl 'http://127.0.0.1:3128/ca.crt' | sudo tee '/etc/pki/ca-trust/source/anchors/docker-registry-proxy.crt'
 ```
 
 ```sh
@@ -96,7 +96,7 @@ sudo systemctl restart docker
 
 ```sh
 # Proxy
-export PROXY_HOST="[hostname]"
+export PROXY_HOST='[hostname]'
 export PROXY_PORT='3128'
 export NO_PROXY='localhost,127.0.0.1'
 
@@ -113,7 +113,7 @@ Configure [docker](/docker_proxy.md) or [docker-machine](/docker-machine_proxy.m
 ## Test
 
 ```sh
-curl "http://127.0.0.1:3128"
+curl 'http://127.0.0.1:3128'
 ```
 
 ```sh

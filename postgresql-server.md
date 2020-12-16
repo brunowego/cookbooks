@@ -96,6 +96,17 @@ docker run -d \
   --name postgresql \
   --network workbench \
   docker.io/library/postgres:11.2-alpine
+
+# Trust auth method
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h postgresql \
+  -e POSTGRES_HOST_AUTH_METHOD='trust' \
+  -v postgresql-data:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  --name postgresql \
+  --network workbench \
+  docker.io/library/postgres:11.2-alpine
 ```
 
 ```sh

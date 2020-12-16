@@ -14,6 +14,13 @@ https://medium.com/swlh/use-the-source-redis-internal-tricks-5a8b735b9ef0
 brew install redis
 ```
 
+### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y redis
+```
+
 #### Linux
 
 ```sh
@@ -54,15 +61,19 @@ sudo sed -i 's|^dir .*|dir /var/lib/redis|' /usr/local/redis/conf/redis.conf
 
 ```sh
 redis-server -h
+
 redis-cli -h
 ```
 
-### Queries
+### Usage
 
-```sql
-LLEN [queue_name]
-RPOP [queue_name]
-SUBSCRIBE [queue_name]
+```sh
+#
+redis-cli \
+  -h 127.0.0.1 \
+  -p 6379 \
+  -a [password] INFO | \
+    grep '^redis_version'
 ```
 
 ### Service
@@ -97,6 +108,16 @@ EOF
 ```sh
 sudo systemctl daemon-reload
 sudo systemctl enable --now redis
+```
+
+### Tips
+
+#### Queries
+
+```sql
+LLEN [queue_name]
+RPOP [queue_name]
+SUBSCRIBE [queue_name]
 ```
 
 ## Helm
@@ -209,5 +230,6 @@ docker run -d \
 
 ```sh
 docker rm -f redis
+
 docker volume rm redis-data
 ```
