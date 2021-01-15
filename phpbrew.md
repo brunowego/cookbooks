@@ -47,15 +47,42 @@ sudo apt -y install \
   make
 ```
 
-<!-- #### YUM
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y \
+  autoconf \
+  gcc \
+  libxml2-devel \
+  openssl-devel \
+  libcurl-devel \
+  readline-devel \
+  libxslt-devel \
+  libzip-devel \
+  which \
+  lbzip2
+```
+
+#### YUM
 
 ```sh
 yum check-update
-sudo yum -y install autoconf gcc libxml2-devel openssl-devel bzip2-devel libcurl-devel readline-devel libxslt-devel libzip-devel which lbzip2
+sudo yum -y install \
+  autoconf \
+  gcc \
+  libxml2-devel \
+  openssl-devel \
+  libcurl-devel \
+  readline-devel \
+  libxslt-devel \
+  libzip-devel \
+  which \
+  lbzip2
 
 # Repo: Webtatic
 sudo yum -y install libmcrypt-devel
-``` -->
+```
 
 ### Installation
 
@@ -284,6 +311,29 @@ phpbrew -d install \
   +zlib="$(brew --prefix zlib)"
 ```
 
+#### Xcode Space
+
+```log
+/bin/sh: /Applications/Xcode: No such file or directory
+make: *** [install-pear] Error 127
+Error: Install failed: make: *** [install-pear] Error 127
+```
+
+Remove `Xcode X.X` (`XcodeX.X`) space in the app name.
+
+#### Reentrancy
+
+```log
+make: *** [main/reentrancy.lo] Error 1
+Error: Make failed: make: *** [main/reentrancy.lo] Error 1
+```
+
+```sh
+sudo xcode-select -switch /Applications/Xcode\ 11.5.app
+
+xcode-select -p
+```
+
 #### OpenSSL
 
 ```log
@@ -306,8 +356,9 @@ phpbrew -d install \
   # Linux
   +openssl=shared
 
+# Darwin
 # export PKG_CONFIG_PATH="$(brew --cellar openssl)/$(brew info --json openssl | jq -r '.[0].installed[0].version')/lib/pkgconfig:$PKG_CONFIG_PATH"
-
+# Or
 # export PKG_CONFIG_PATH="/usr/local/Cellar/openssl/1.0.2t/lib/pkgconfig:$PKG_CONFIG_PATH"
 ```
 

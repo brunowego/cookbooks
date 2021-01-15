@@ -1,8 +1,10 @@
 # iputils
 
-## Installation
+## CLI
 
-### APT
+### Installation
+
+#### APT
 
 ```sh
 sudo apt update
@@ -20,21 +22,21 @@ sudo apt -y install iputils-clockdiff
 sudo apt -y install iputils-tracepath
 ```
 
-### YUM
+#### YUM
 
 ```sh
 yum check-update
 sudo yum -y install iputils
 ```
 
-### APK
+#### APK
 
 ```sh
 sudo apk update
 sudo apk add iputils
 ```
 
-## Commands
+### Commands
 
 ```sh
 arping

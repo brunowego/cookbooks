@@ -153,7 +153,14 @@ git config --bool core.bare true
 
 ### Tips
 
-###
+#### Command-line completion
+
+```sh
+# Using Antigen
+antigen bundle git
+```
+
+<!-- ###
 
 ```sh
 #
@@ -167,7 +174,7 @@ git diff [tag] -- [path/to/file]
 
 #
 git difftool tags/<FIRST TAG>:<FILE PATH> tags/<SECOND TAG>:<FILE PATH>
-```
+``` -->
 
 #### Create a New Branch
 

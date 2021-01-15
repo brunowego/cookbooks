@@ -38,6 +38,12 @@ sudo apk add py3-setuptools
 pip3 -h
 ```
 
+### Upgrade
+
+```sh
+pip3 install -U pip
+```
+
 ### Usage
 
 ```sh
@@ -108,6 +114,13 @@ pip config list
 ```
 
 ### Tips
+
+#### Command-line completion
+
+```sh
+# Using Antigen
+antigen bundle pip
+```
 
 #### Setuptools
 

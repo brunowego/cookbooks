@@ -9,6 +9,10 @@ https://www.linkedin.com/learning/github-quick-tips/github-tips-and-tricks
 - [Government](https://government.github.com/community/)
 - [myOctocat](https://myoctocat.com/)
 
+## API
+
+- [Rate Limit](https://api.github.com/rate_limit)
+
 ## Search
 
 ```txt

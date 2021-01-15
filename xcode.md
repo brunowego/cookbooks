@@ -35,11 +35,15 @@ xcrun -h
 ### Usage
 
 ```sh
+#
+xcodebuild -version
+
 # Switch Version
 sudo xcode-select -switch <path/to/>Xcode.app
 
 # Current Path
 xcode-select --print-path
+xcode-select -p
 
 # Open Workspace
 open -a /Applications/Xcode.app <your_workspace_name>.xcworkspace
@@ -95,6 +99,14 @@ xcodebuild \
 ```
 
 ### Tips
+
+#### Old Version
+
+1. Access [More Downloads for Apple Developers](https://developer.apple.com/download/more/)
+2. Search for version Xcode 11.5 -> Download Zip File
+3. Move `Xcode.app` to `/Applications/Xcode11.5.app`
+4. Run `sudo xcode-select -s /Applications/Xcode11.5.app`
+5. Verify using `xcodebuild -version` and `xcode-select -p`
 
 #### Apple ID
 

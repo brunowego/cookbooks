@@ -1,5 +1,9 @@
 # mail
 
+## Tools
+
+- [Mailtrap.io](https://mailtrap.io/)
+
 ## CLI
 
 ### Commands

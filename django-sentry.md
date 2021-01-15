@@ -15,10 +15,11 @@ echo 'sentry-sdk==0.19.4' >> ./requirements.txt
 ```
 
 ```py
+import os
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
-ENV = 'local'
+ENV = os.environ.get('DJANGO_ENV', 'local')
 
 
 # Sentry
@@ -27,8 +28,6 @@ ENV = 'local'
 if sentry_dsn := os.getenv('SENTRY_DSN'):
     sentry_sdk.init(dsn=sentry_dsn, environment=ENV, integrations=[DjangoIntegration()],
                     send_default_pii=True)
-
-    # environment='production'
 ```
 
 ### Logging
@@ -69,6 +68,14 @@ LOGGING = {
 ```
 
 ### Issues
+
+#### Sentry DNS
+
+```log
+sentry_sdk.utils.BadDsn: Missing public key
+```
+
+Wrong Sentry DNS on `SENTRY_DSN` environment.
 
 #### Behind Proxy
 

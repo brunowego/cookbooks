@@ -14,11 +14,11 @@
 pear install PHP_CodeSniffer
 ```
 
-#### PHPBrew
+<!-- #### PHPBrew
 
 ```sh
 phpbrew -d app get --downloader=wget phpcs
-```
+``` -->
 
 ### Verify
 

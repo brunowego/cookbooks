@@ -108,6 +108,13 @@ go env
 
 ### Tips
 
+#### Command-line completion
+
+```sh
+# Using Antigen
+antigen bundle golang
+```
+
 #### Visual Studio Code
 
 ```sh

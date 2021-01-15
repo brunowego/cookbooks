@@ -464,6 +464,15 @@ LDFLAGS="-L$(brew --prefix openssl)/lib" \
   pip install -r ./requirements.txt
 ``` -->
 
+### Tips
+
+#### Command-line completion
+
+```sh
+# Using Antigen
+antigen bundle django
+```
+
 ## Docker Compose
 
 ### Manifest
@@ -496,7 +505,7 @@ networks:
 
 ### Image
 
-####
+#### Build
 
 ```Dockerfile
 FROM docker.io/library/python:3.7-alpine AS translations

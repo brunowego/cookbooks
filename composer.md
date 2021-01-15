@@ -32,12 +32,6 @@ yum check-update
 sudo yum -y install composer-cli
 ```
 
-#### PHPBrew
-
-```sh
-phpbrew -d app get --downloader=wget composer
-```
-
 #### Unix-like
 
 ```sh
@@ -46,6 +40,13 @@ curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin 
 
 #
 # wget -O - https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+```
+
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y php-composer
 ```
 
 #### Chocolatey
@@ -63,17 +64,17 @@ composer help
 composer list
 ```
 
-<!-- ### Configuration
+### Configuration
 
 ```sh
-cat ~/.composer/config.json
-``` -->
+cat ~/.composer/config.json | jq
+```
 
 ### Usage
 
 ```sh
 # Diagnose
-composer diagnose
+composer diagnose -vvv
 
 # Create
 composer create-project --prefer-dist laravel/laravel [name] && "$_"
@@ -100,8 +101,13 @@ composer config -gl
 # Disable Packagist
 composer config repo.packagist.org false
 
+# Show Repo
+composer config -l | grep repositories.packagist.org.url
+
 # Set Repo
-composer config repo.packagist composer https://packagist.org
+composer config repo.packagist composer https://packages.example.com
+
+#
 composer config secure-http false
 
 # Search
@@ -122,12 +128,6 @@ composer archive -f zip
 
 ### Tips
 
-#### Proxy
-
-```sh
-composer diagnose
-```
-
 #### Command-line completion
 
 ```sh
@@ -141,14 +141,144 @@ rm ~/.zcompdump*
 
 ### Issues
 
-<!-- ####
+#### Missing Compose User File
 
 ```log
-Failed to download php-console/php-console from dist: The "https://api.github.com/repos/barbushin/php-console/zipball/aa1d71d4ea3dc91e126edc9aa4f3c10eb8559cff" file could not be downloaded: SSL operation failed with code 1. OpenSSL Error messages:
-error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed
-failed to open stream: Cannot connect to HTTPS server through proxy
+Failed to initialize global composer: Composer could not find the config file: ~/.config/composer/composer.json
 ```
 
 ```sh
+mkdir -p ~/.config/composer
+
+echo '{}' >> ~/.config/composer/composer.json
+```
+
+#### Missing OpenSSL
+
+```log
+Checking platform settings: FAIL
+
+The openssl extension is missing, which means that secure HTTPS transfers are impossible.
+If possible you should enable it or recompile php with --with-openssl
+```
+
+Install [PHP OpenSSL](/php-openssl.md)
+
+#### Disable TLS
+
+```log
+The openssl extension is required for SSL/TLS protection but is not available. If you can not enable the openssl extension, you can disable this error, at your own risk, by setting the 'disable-tls' option to true.
+```
+
+```js
+// compose.json
+{
+  "config": {
+    "disable-tls": true
+  }
+}
+```
+
+```sh
+# Globally
+composer config -g disable-tls true
+```
+
+#### Public Keys
+
+```log
+Checking pubkeys: FAIL
+Missing pubkey for tags verification
+Missing pubkey for dev verification
+Run composer self-update --update-keys to set them up
+```
+
+Find [pubkeys here](https://composer.github.io/pubkeys.html).
+
+```sh
+composer self-update --update-keys
+```
+
+####
+
+```log
+You must enable the openssl extension in your php.ini to load information from https://[hostname]
+```
+
+TODO
+
+####
+
+```log
+curl error 60 while downloading https://[hostname]/packages.json: SSL certificate problem: unable to get local issuer certificate
+```
+
+```sh
+composer clear-cache
+
+composer config -g repo.packagist false
+
+composer config -g repo.packagist composer https://packages.example.com
+```
+
+```json
+{
+  "repositories": [
+    {
+      // ...
+      "options": {
+        "ssl": {
+          "verify_peer": false,
+          "allow_self_signed": true
+        }
+      }
+    }
+  ]
+}
+```
+
+<!-- ```sh
+sudo curl -o /etc/ssl/certs/cacert.pem https://curl.haxx.se/ca/cacert.pem
+
+sed -i 's/;\(curl\.cainfo =\)/\1 \/etc\/ssl\/certs\/cacert\.pem/g' "$(php -i | grep -oE /.+/php.ini)"
+
+php -i | grep curl.cainfo
+
+php -r 'print_r(openssl_get_cert_locations());'
+``` -->
+
+#### Composer CA File
+
+```log
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+```
+
+<!-- ```sh
+sudo curl -o /etc/ssl/certs/cacert.pem https://curl.haxx.se/ca/cacert.pem
+
+sed -i 's/;\(openssl\.cafile=\)/\1\/etc\/ssl\/certs\/cacert\.pem/g' "$(php -i | grep -oE /.+/php.ini)"
+
+php -i | grep openssl.cafile
+``` -->
+
+```sh
+composer config -gl | grep cafile
+
+composer config -g cafile '/usr/local/etc/openssl@1.1/cert.pem'
+```
+
+<!-- ####
+
+```log
+error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed
+```
+
+https://support.acquia.com/hc/en-us/articles/360005829133-Certificate-issue-when-running-composer-commands
+
+```sh
+php -r 'var_dump(openssl_get_cert_locations());'
+
+composer config -g cafile '/usr/local/etc/openssl/cert.pem'
+
 composer config secure-http false
 ``` -->

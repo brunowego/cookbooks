@@ -51,5 +51,6 @@ lsof -h
 # Port Scan
 lsof -iTCP -sTCP:LISTEN -n -P
 
+#
 lsof -ti :[port]
 ```

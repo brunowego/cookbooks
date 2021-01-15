@@ -112,6 +112,9 @@ php -a
 
 # Error info
 php -i | grep error
+
+# Server
+php -S 127.0.0.1:8000
 ```
 
 #### Info
@@ -169,7 +172,19 @@ docker run -d \
 
 ## Tips
 
+#### EditorConfig
+
+```sh
+cat << EOF >> ./.editorconfig
+
+[*.php]
+indent_size = 4
+EOF
+```
+
 ### Visual Studio Code
+
+***Dependencies:*** [PHP CodeSniffer](/phpcs.md)
 
 ```sh
 code \

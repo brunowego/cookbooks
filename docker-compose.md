@@ -36,9 +36,12 @@ docker-compose help
 
 ### Tips
 
-#### Completion
+#### Command-line completion
 
 ```sh
+# Using Antigen
+antigen bundle docker-compose
+
 # Using Oh My Zsh
 sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 docker-compose\)/g' ~/.zshrc
 

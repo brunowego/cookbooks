@@ -116,6 +116,13 @@ node
 
 ### Tips
 
+#### Command-line completion
+
+```sh
+# Using Antigen
+antigen bundle node
+```
+
 #### Visual Studio Code
 
 ```sh

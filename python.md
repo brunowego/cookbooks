@@ -196,6 +196,13 @@ python3
 
 ### Tips
 
+#### Command-line completion
+
+```sh
+# Using Antigen
+antigen bundle python
+```
+
 <!-- ####
 
 ```sh

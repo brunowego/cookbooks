@@ -66,6 +66,13 @@ npm pack
 
 ### Tips
 
+#### Command-line completion
+
+```sh
+# Using Antigen
+antigen bundle npm
+```
+
 #### Log Level
 
 ```sh

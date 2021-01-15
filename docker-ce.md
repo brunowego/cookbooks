@@ -99,6 +99,13 @@ sudo zypper rm docker
 
 ### Tips
 
+#### Command-line completion
+
+```sh
+# Using Antigen
+antigen bundle docker
+```
+
 #### Deep Clean
 
 ```sh

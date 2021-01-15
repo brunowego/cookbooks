@@ -54,6 +54,9 @@ rm -fR $(brew --cache)
 #### Command-line completion
 
 ```sh
+# Using Antigen
+antigen bundle brew
+
 # Using Oh My Zsh
 sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 brew\)/g' ~/.zshrc
 

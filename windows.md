@@ -3,12 +3,9 @@
 ## References
 
 - [Windows 10 ISO](https://www.microsoft.com/en-us/software-download/windows10ISO)
+- [Windows Subsystem Linux (WSL)](/wsl.md)
 
 ## Tips
-
-### WSL
-
-TODO
 
 ### Create a bootable USB stick
 
