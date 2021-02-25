@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install svgcleaner
+brew install --cask svgcleaner
 ```

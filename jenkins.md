@@ -363,7 +363,7 @@ docker volume rm jenkins-data
 #### Homebrew
 
 ```sh
-brew cask install homebrew/cask-versions/adoptopenjdk8
+brew install --cask homebrew/cask-versions/adoptopenjdk8
 ```
 
 ### Installation

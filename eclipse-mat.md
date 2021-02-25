@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install mat
+brew install --cask mat
 ```

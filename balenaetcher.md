@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install balenaetcher
+brew install --cask balenaetcher
 ```

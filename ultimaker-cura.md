@@ -17,7 +17,7 @@ https://www.coursera.org/lecture/3d-print-hardware/04-02-04-cura-slicer-basics-W
 #### Homebrew
 
 ```sh
-brew cask install ultimaker-cura
+brew install --cask ultimaker-cura
 ```
 
 ### Configuration
@@ -46,3 +46,73 @@ https://www.youtube.com/watch?v=tvxugQmhrcc
 https://www.youtube.com/watch?v=gSySGU-52Lo
 https://www.youtube.com/watch?v=XadcyqoQmrw
 -->
+
+| Section | Parameter | Value |
+| --- | --- | --- |
+| Build Plate Adhesion | Build Plate Adhesion Type | None |
+| Infill | Infill Density | +25% |
+| Quality | Layer Height | 0.16 |
+| Shell | Horizontal Expansion | 0.1 |
+| Shell | Wall Line Count | 4 |
+| Special Modes | Print Sequence | One at a Time |
+| Speed | Print Speed | 35.0 mm/s |
+| Support | Generate Support | Yes |
+
+### Tips
+
+#### Turn off model snapping to build platform
+
+1. Preferences
+2. General Tab
+3. Viewport behavior
+   - Uncheck: Automatically drop models to the build plate
+   - Close
+
+#### Cylindric Custom Support
+
+1. Marketplace -> Plugins Tab
+2. Cylindric Custom Support -> Install
+<!-- 3.  -->
+
+#### Mesh Tools
+
+1. Marketplace -> Plugins Tab
+2. Mesh Tools -> Install
+<!-- 3.  -->
+
+1. Right Click on Object
+2. Mesh Tools -> Spit models into parts
+
+#### BLTouch
+
+1. Settings -> Printer -> Manage Printers...
+2. Printers -> Machine Settings
+3. Start G-code
+
+```
+...
+G28 ; Home all axes
+M420 S1 Z2 ; Enable ABL
+G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
+...
+```
+
+#### Keep Out Area
+
+`/Applications/Ultimaker\ Cura.app/Contents/Resources/resources/definitions/creality_ender3.def.json`
+
+```json
+{
+  // ...
+  "overrides": {
+    "machine_disallowed_areas": {
+      "default_value": []
+    },
+  }
+  // ...
+}
+```
+
+#### Skirt
+
+adhesion

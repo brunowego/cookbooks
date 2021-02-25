@@ -12,8 +12,8 @@
 
 ```sh
 brew tap homebrew/cask-versions
-brew cask install adoptopenjdk # AdoptOpenJDK 14
-brew cask install adoptopenjdk8 # AdoptOpenJDK 8
+brew install --cask adoptopenjdk # AdoptOpenJDK 14
+brew install --cask adoptopenjdk8 # AdoptOpenJDK 8
 ```
 
 #### APT

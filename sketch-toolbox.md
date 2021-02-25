@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install sketch-toolbox
+brew install --cask sketch-toolbox
 ```

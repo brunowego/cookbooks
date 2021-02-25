@@ -1,11 +1,11 @@
-# GlassFish
+# Slic3r
 
-## CLI
+## App
 
 ### Installation
 
 #### Homebrew
 
 ```sh
-brew install glassfish
+brew install --cask slic3r
 ```

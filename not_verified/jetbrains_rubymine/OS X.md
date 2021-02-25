@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install rubymine
+brew install --cask rubymine
 ```

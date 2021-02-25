@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install gitify
+brew install --cask gitify
 ```

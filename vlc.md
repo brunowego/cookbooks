@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install vlc
+brew install --cask vlc
 ```
 
 <!-- #### Zypper

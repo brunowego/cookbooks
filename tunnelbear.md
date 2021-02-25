@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install tunnelbear
+brew install --cask tunnelbear
 ```

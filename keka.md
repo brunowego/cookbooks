@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install keka
+brew install --cask keka
 ```

@@ -8,7 +8,7 @@
 
 ```sh
 brew tap puppetlabs/puppet
-brew cask install puppet-agent puppet-bolt pdk
+brew install --cask puppet-agent puppet-bolt pdk
 ```
 
 #### APT

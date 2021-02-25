@@ -27,7 +27,7 @@ sudo yum -y install wget unzip
 #### Homebrew
 
 ```sh
-brew cask install ngrok
+brew install --cask ngrok
 ```
 
 #### Linux

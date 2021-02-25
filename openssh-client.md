@@ -39,6 +39,18 @@ sshd --help
 ssh-keygen --help
 ```
 
+### Issues
+
+#### Library LDNS
+
+```log
+dyld: Library not loaded: /usr/local/opt/ldns/lib/libldns.3.dylib
+```
+
+```sh
+brew reinstall ldns
+```
+
 ## Docker
 
 ### Build

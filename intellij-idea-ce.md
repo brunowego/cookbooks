@@ -1,5 +1,13 @@
 # IntelliJ IDEA Community Edition
 
+<!--
+https://medium.com/@m.muizzsuddin_25037/hot-reload-java-without-worry-with-dcevm-hotswap-in-intellijidea-472ba82f8121
+
+https://app.pluralsight.com/library/courses/intellij-ce-getting-started/table-of-contents
+
+https://www.linkedin.com/learning/intellij-idea-community-edition-essential-training-2
+-->
+
 ## App
 
 ### Installation
@@ -7,7 +15,7 @@
 #### Homebrew
 
 ```sh
-brew cask install intellij-idea-ce
+brew install --cask intellij-idea-ce
 ```
 
 ### Configuration
@@ -20,7 +28,24 @@ cat << EOF >> ~/.gitignore_global
 EOF
 ```
 
+### Plugins
+
+- [EditorConfig](https://plugins.jetbrains.com/plugin/7294-editorconfig)
+
 ### Tips
+
+#### Whitespaces
+
+View / Active Editor / Show Whitespaces
+
+#### Project SDK
+
+File / Project Structure / Project Settings / Project / Project SDK
+
+#### HotSwap
+
+- [HotSwapAgent](http://hotswapagent.org/mydoc_setup_intellij_idea.html)
+- [DCEVM](https://dcevm.github.io/)
 
 #### CLI
 
@@ -28,7 +53,8 @@ EOF
 2. Create Command-line Launcher...
 
 ```sh
-idea .
+#
+idea ./
 ```
 
 #### Filesystem Case-Sensitivity
@@ -40,9 +66,3 @@ echo 'idea.case.sensitive.fs=true' >> /Applications/IntelliJ\ IDEA\ CE.app/Conte
 # Enterprise Edition
 echo 'idea.case.sensitive.fs=true' >> /Applications/IntelliJ\ IDEA.app/Contents/bin/idea.properties
 ```
-
-<!-- ### Docs
-
-####
-
-1. Add Configuration... -->

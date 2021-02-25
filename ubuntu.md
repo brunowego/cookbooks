@@ -40,7 +40,7 @@ docker run -it --rm \
   --network workbench \
   docker.io/library/ubuntu:18.04 /bin/bash
 
-#
+# 16.x
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h ubuntu \

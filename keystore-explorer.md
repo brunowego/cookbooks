@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install keystore-explorer
+brew install --cask keystore-explorer
 ```
 
 ###

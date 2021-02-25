@@ -39,11 +39,17 @@ sudo chsh "$USER" -s /bin/zsh
 sudo su - "$USER"
 ```
 
+### Commands
+
+```sh
+omz help
+```
+
 ### Usage
 
 ```sh
 # Upgrade
-update_ohmyzsh
+omz update
 ```
 
 <!-- ### Issues -->

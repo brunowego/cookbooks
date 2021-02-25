@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install rocket-chat
+brew install --cask rocket-chat
 ```

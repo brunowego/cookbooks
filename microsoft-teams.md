@@ -12,7 +12,7 @@
 #### Homebrew
 
 ```sh
-brew cask install microsoft-teams
+brew install --cask microsoft-teams
 ```
 
 #### APT

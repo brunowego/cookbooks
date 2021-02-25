@@ -52,3 +52,14 @@ EOF
 
 sudo openfortivpn -c /usr/local/etc/openfortivpn/[company]/config
 ```
+
+### Issues
+
+<!-- ####
+
+```log
+WARN:   getsockopt: SO_SNDBUF: Protocol not available
+WARN:   getsockopt: SO_RCVBUF: Protocol not available
+```
+
+TODO -->

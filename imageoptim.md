@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install imageoptim
+brew install --cask imageoptim
 ```
 
 ### Running

@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install shuttle
+brew install --cask shuttle
 ```

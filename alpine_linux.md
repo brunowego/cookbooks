@@ -12,6 +12,7 @@ docker network create workbench \
 ### Running
 
 ```sh
+# 3.x
 docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
   -h alpine \

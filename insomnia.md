@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install insomnia
+brew install --cask insomnia
 ```

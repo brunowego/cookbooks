@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install sourcetree
+brew install --cask sourcetree
 ```
 
 #### Linux

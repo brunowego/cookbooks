@@ -7,10 +7,10 @@
 #### Homebrew
 
 ```sh
-brew cask install microsoft-edge
+brew install --cask microsoft-edge
 
 #
-brew cask install microsoft-edge-dev
+brew install --cask microsoft-edge-dev
 ```
 
 ### Uninstall

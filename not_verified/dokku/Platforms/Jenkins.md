@@ -23,7 +23,7 @@ EXPOSE 8080
 
 ```sh
 git init
-git add .
+git add ./
 git commit -m "Initial commit"
 git remote add dokku dokku@example.com:jenkins
 git push dokku master

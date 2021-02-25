@@ -137,6 +137,16 @@ python ./setup.py clean --all
 
 ### Issues
 
+<!-- #### Package Finder
+
+```log
+ImportError: cannot import name 'PackageFinder' from 'pip._internal.index' (/usr/lib/python3.8/site-packages/pip/_internal/index/__init__.py)
+```
+
+```sh
+python3 -m ensurepip --upgrade
+``` -->
+
 #### Clang
 
 ```log

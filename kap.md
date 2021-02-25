@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install kap
+brew install --cask kap
 ```

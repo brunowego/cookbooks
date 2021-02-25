@@ -5,7 +5,7 @@
 ### Homebrew
 
 ```sh
-brew cask install hyper
+brew install --cask hyper
 ```
 
 ## Uninstall

@@ -8,10 +8,10 @@
 
 ```sh
 # Professional
-brew cask install pycharm
+brew install --cask pycharm
 
 # Community
-brew cask install pycharm-ce
+brew install --cask pycharm-ce
 ```
 
 ### Configuration

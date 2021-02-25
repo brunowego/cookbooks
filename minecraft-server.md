@@ -40,7 +40,7 @@ docker rm -f minecraft-server
 #### Homebrew
 
 ```sh
-brew cask install minecraft-server
+brew install --cask minecraft-server
 ```
 
 ### Commands

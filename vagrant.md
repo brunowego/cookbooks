@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install vagrant vagrant-manager
+brew install --cask vagrant vagrant-manager
 ```
 
 #### YUM

@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install zoomus
+brew install --cask zoom
 ```
 
 #### RPM

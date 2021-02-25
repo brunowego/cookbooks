@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install balsamiq-wireframes
+brew install --cask balsamiq-wireframes
 ```

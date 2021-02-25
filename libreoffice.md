@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install libreoffice libreoffice-language-pack
+brew install --cask libreoffice libreoffice-language-pack
 ```
 
 #### Chocolatey

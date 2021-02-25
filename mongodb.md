@@ -1,7 +1,8 @@
 # MongoDB
 
 <!--
-https://www.linkedin.com/learning/learning-mongodb/modern-database-and-application-design-with-mongodb
+https://www.linkedin.com/learning/nosql-essential-training/
+https://www.linkedin.com/learning/learning-mongodb/
 -->
 
 ## References

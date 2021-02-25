@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install itsycal
+brew install --cask itsycal
 ```

@@ -24,7 +24,7 @@ sudo apt -y install software-properties-common apt-transport-https wget
 #### Homebrew
 
 ```sh
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 ```
 
 #### APT
@@ -81,7 +81,7 @@ code -h
 
 ```sh
 # Open current
-code .
+code ./
 
 # List installed
 code --list-extensions

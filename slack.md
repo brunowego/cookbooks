@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install slack
+brew install --cask slack
 ```
 
 #### APT

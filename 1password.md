@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install 1password
+brew install --cask 1password
 ```
 
 #### APT

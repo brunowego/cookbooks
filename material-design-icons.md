@@ -11,5 +11,5 @@
 #### Homebrew
 
 ```sh
-brew cask install font-material-icons
+brew install --cask font-material-icons
 ```

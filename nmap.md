@@ -85,7 +85,7 @@ nmap -p 3128 127.0.0.1
 nmap \
   -p 80,443 \
   --proxy http://127.0.0.1:3128 \
-  git.cloud1.intranet.bb.com.br
+  [hostname]
 ```
 
 <!--

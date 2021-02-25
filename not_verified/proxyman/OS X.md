@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install proxyman
+brew install --cask proxyman
 ```

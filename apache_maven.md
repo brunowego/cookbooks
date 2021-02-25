@@ -1,9 +1,15 @@
 # Apache Maven
 
+<!--
+https://app.pluralsight.com/library/courses/maven-fundamentals/table-of-contents
+https://app.pluralsight.com/library/courses/allthetalks-session-66/table-of-contents
+-->
+
 ## References
 
 - [Project Object Model (POM)](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 - [Maven Version Manager](/mvnvm.md)
+- Alternative for [Apache Ant](/apache_ant.md)
 
 ## CLI
 
@@ -50,21 +56,124 @@ mvn -h
 ### Usage
 
 ```sh
-#
-mvn clean
-
-#
-mvn install
-mvn install -DskipTests
-
-#
-mvn package
-
-#
+# Show dependency tree
 mvn dependency:tree
+
+# Show effective POM
+mvn help:effective-pom
+
+#
+mvn help:active-profiles
 ```
 
+#### Goals (Super POM)
+
+| Command | Description |
+| --- | --- |
+| `mvn clean` | TODO |
+| `mvn validate` | Check if all information necessary for the build is available |
+| `mvn compile` | Compile the source code |
+| `mvn test-compile` | Compile the test source code |
+| `mvn test` | Run unit tests |
+| `mvn package` | Package compiled source code into the distributable format (jar, war, …) |
+| `mvn integration-test` | Process and deploy the package if needed to run integration tests |
+| `mvn install` | Install the package to a local repository (`~/.m2/repository`) |
+| `mvn deploy` | Copy the package to the remote repository |
+
+<!-- clean, compile, test, package, install, deploy -->
+
+#### Phases
+
+|  | Description |
+| --- | --- |
+| `validate` | |
+| `compile` | |
+| `test` | |
+| `package` | |
+| `integration-test` | |
+| `verify` | |
+| `install` | |
+| `deploy` | |
+
 ### Tips
+
+<!-- #### Super POM
+
+```sh
+$MAVEN_HOME/lib/maven-model-builder-3.3.3.jar - org/apache/maven/model/pom-4.0.0.xml
+``` -->
+
+#### Scopes
+
+| Name | Description |
+| --- | --- |
+| `compile` | |
+| `provided` | |
+| `runtime` | |
+| `test` | |
+| `system` | |
+| `import` | |
+
+#### Packaging Types
+
+| Type | Meaning |
+| --- | --- |
+| `pom` | Project Object Model |
+| `jar` (default) | Java ARchive |
+| `war` | Web Application Resource |
+| `ear` | Enterprise Application aRchive |
+| `maven-plugin` | Maven Plugin |
+
+#### Version Conventions
+
+| Name Convention | Short Description |
+| --- | --- |
+| `myapp-1.0-SNAPSHOT.jar` | Snapshot |
+| `myapp-1.0-M1.jar` | Milestone |
+| `myapp-1.0-RC1.jar` | Release Candidate |
+| `myapp-1.0-RELEASE.jar` | Release |
+| `myapp-1.0-Final.jar` | Final |
+
+
+#### Chose Profile
+
+```sh
+#
+mvn clean install -P [name]
+```
+
+<!-- ####
+
+```sh
+#
+mvn install:install-file \
+  -DgroupId=<your_group_name> \
+  -DartifactId=<your_artifact_name> \
+  -Dversion=<version> \
+  -Dfile=<path_to_your_jar_file> \
+  -Dpackaging=jar \
+  -DgeneratePom=true
+
+#
+mvn org.apache.maven.plugins:maven-dependency-plugin:get \
+  -Dartifact=org.codehaus.sonar:sonar:4.2
+
+mvn org.apache.maven.plugins:maven-dependency-plugin:get \
+  -Dartifact=groupId:artifactId:version
+
+mvn org.apache.maven.plugins:maven-dependency-plugin:get \
+  -Dartifact=io.cresco:logger:1.1-SNAPSHOT
+
+# mvn org.apache.maven.plugins:maven-dependency-plugin:3.1.0:go-offline -s /tools/m2/settings.xml
+
+# mvn org.apache.maven.plugins:maven-install-plugin:2.5.1:install-file [/path/to/file.jar]
+``` -->
+
+#### ProxyChains
+
+```sh
+proxychains -q mvn install
+```
 
 #### Proxy
 
@@ -149,6 +258,69 @@ rm -r ~/.m2
 
 ### Issues
 
+<!-- ####
+
+```sh
+proxychains wget http://hostname/repo/[groupId]/[artifactId]/[version].jar
+``` -->
+
+#### ProxyChains Issue
+
+```log
+[ERROR]   The project [groupId]:[artifactId]:[version] (/absolute/path/to/project/pom.xml) has 1 error
+[ERROR]     Non-resolvable parent POM: Could not transfer artifact [groupId]:[artifactId]:[version] from/to [repository] (http://hostname/repo): Connection to http://hostname refused and 'parent.relativePath' points at wrong local POM @ line 6, column 10: Connection refused (Connection refused) -> [Help 2]
+```
+
+Try, at first time, not use [ProxyChains-NG](/proxychains-ng.md).
+
+####
+
+```log
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-dependency-plugin:2.4:get (default-cli) on project big-plataforma-api: Couldn't download artifact: Unable to get dependency information for org.codehaus.sonar:sonar:jar:4.2: Failed to retrieve POM for org.codehaus.sonar:sonar:jar:4.2: Could not transfer artifact org.codehaus.sonar:sonar:pom:4.2 from/to central (http://repo.maven.apache.org/maven2): Failed to transfer file: http://repo.maven.apache.org/maven2/org/codehaus/sonar/sonar/4.2/sonar-4.2.pom. Return code is: 501, ReasonPhrase:HTTPS Required.
+```
+
+```xml
+<mirror>
+    <id>maven-mirror</id>
+    <name>Maven Mirror</name>
+    <url>https://repo.maven.apache.org/maven2</url>
+    <mirrorOf>central</mirrorOf>
+</mirror>
+```
+
+<!-- #### Repository Release Update Policy
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+  // ...
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          // ...
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          // ...
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </pluginRepository>
+    </profile>
+  </profiles>
+  // ...
+</settings>
+``` -->
+
 #### Valid Certificate
 
 ```log
@@ -158,7 +330,7 @@ javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.pro
 [Export Web Self-signed Certificate](/openssl.md#export-web-self-signed-certificate).
 
 ```sh
-mkdir -p "$JAVA_HOME/lib/security"
+sudo mkdir -p "$JAVA_HOME/lib/security"
 
 echo 'yes' | \
   keytool \
@@ -197,6 +369,14 @@ export MAVEN_OPTS="$MAVEN_OPTS -Djavax.net.ssl.trustStore=$JAVA_HOME/lib/securit
 -Djavax.net.ssl.trustStorePassword=changeit
 -->
 
+####
+
+```log
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project [project-name]: Fatal error compiling: invalid target release: 1.8 -> [Help 1]
+```
+
+TODO
+
 #### Incompatible Version
 
 ```log
@@ -207,8 +387,17 @@ export MAVEN_OPTS="$MAVEN_OPTS -Djavax.net.ssl.trustStore=$JAVA_HOME/lib/securit
 # Downgrade Apache Maven to version 3.0.4
 echo 'mvn_version=3.0.4' > mvnvm.properties
 
-mvn clean install
+mvn clean
+mvn install
 ```
+
+#### Unknown host
+
+```log
+[ERROR] Failed to execute goal org.codehaus.mojo:xml-maven-plugin:1.0:validate (validar-pom.xml) on project [project-name]: Failed to load schema with public ID null, system ID https://[hostname]/xsd/maven-4.0.0.xsd: [hostname]: Unknown host [hostname] -> [Help 1]
+```
+
+Use [ProxyChains](/proxychains-ng.md)
 
 <!-- ####
 

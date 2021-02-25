@@ -31,7 +31,7 @@ https://github.com/huaweicloudDocs/ecs/blob/4f4fca4ed911ae1bf02392eef3522161b0c6
 
 ```sh
 brew tap homebrew/cask-drivers
-brew cask install nvidia-cuda
+brew install --cask nvidia-cuda
 ```
 
 #### APT

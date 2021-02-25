@@ -11,7 +11,7 @@
 #### Homebrew
 
 ```sh
-brew cask install sequel-pro
+brew install --cask sequel-pro
 ```
 
 ### Tips

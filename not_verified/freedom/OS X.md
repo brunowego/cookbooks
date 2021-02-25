@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install freedom
+brew install --cask freedom
 ```

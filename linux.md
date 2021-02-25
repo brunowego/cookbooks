@@ -1,6 +1,6 @@
 # Linux
 
-## Commands
+## Usage
 
 ```sh
 # Restart

@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install icloud-control
+brew install --cask icloud-control
 ```

@@ -73,6 +73,22 @@ cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew updat
 
 ### Issues
 
+#### sbin Path
+
+```log
+Warning: Homebrew's "sbin" was not found in your PATH but you have installed
+formulae that put executables in /usr/local/sbin.
+Consider setting your PATH for example like so:
+  echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc
+```
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Homebrew Fix
+export PATH="/usr/local/sbin:$PATH"
+```
+
 #### cURL RC
 
 ```log

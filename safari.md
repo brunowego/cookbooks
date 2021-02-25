@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install safari-technology-preview
+brew install --cask safari-technology-preview
 ```

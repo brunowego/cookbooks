@@ -15,7 +15,7 @@ https://github.com/gadenbuie/drake-rstudio-jobs-example
 #### Homebrew
 
 ```sh
-brew cask install rstudio
+brew install --cask rstudio
 ```
 
 ### Running

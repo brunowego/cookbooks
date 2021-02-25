@@ -157,11 +157,11 @@ pg_dump \
 lsof -i :5432
 ```
 
-<!-- ####
+#### Truncate
 
 ```sql
 TRUNCATE public.[table] CASCADE;
-``` -->
+```
 
 #### SSH Tunnel
 

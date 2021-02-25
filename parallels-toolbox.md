@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install parallels-toolbox
+brew install --cask parallels-toolbox
 ```

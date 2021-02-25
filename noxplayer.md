@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install noxappplayer
+brew install --cask noxappplayer
 ```

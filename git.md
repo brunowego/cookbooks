@@ -135,7 +135,7 @@ git config --global user.email '[email]'
 git config --global merge.tool [value] # Use `vimdiff`
 
 # Push
-git config --global push.default 'current'
+git config --global push.default current
 
 # Branch
 git config --global branch.autosetupmerge 'always'
@@ -260,7 +260,7 @@ git describe --tags | cut -d - -f 1 | sed 's/^v//'
 
 ```sh
 git checkout --orphan [branch]
-git rm -r .
+git rm -r ./
 ```
 
 #### Developer Certificate of Origin (DCO)
@@ -289,7 +289,7 @@ git checkout --orphan gh-pages
 ```
 
 ```sh
-git rm -r .
+git rm -r ./
 git clean -fdx
 git push origin gh-pages
 ```
@@ -333,6 +333,14 @@ git config \
 ```
 
 ### Issues
+
+#### Host Resolve
+
+```log
+fatal: unable to access 'https://example.com/organization/repository.git/': Could not resolve host: [hostname]
+```
+
+TODO
 
 #### Certificate
 

@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install atom
+brew install --cask atom
 ```
 
 #### APT

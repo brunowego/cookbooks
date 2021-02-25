@@ -1,8 +1,13 @@
+<!--
+https://stackoverflow.com/questions/20567909/remote-weblogic-server-identity-exception
+-->
+
 # Oracle WebLogic Server (WLS)
 
 ## References
 
 - [Standards support by version](https://en.wikipedia.org/wiki/Oracle_WebLogic_Server#Standards_support_by_version)
+- [EclipseLink](/eclipselink.md)
 
 ## Docker
 
@@ -49,22 +54,18 @@ docker rm -f weblogic
 rm -fR ./properties
 ```
 
-## CLI
+## Host
 
 ### Dependencies
 
-#### JAR
-
-##### 12.1.x
+#### 12.1.x
 
 - [Apache Ant](/apache_ant.md)
 - Java SE 7
 
 ### Installation
 
-#### JAR
-
-<!-- ##### 12.1.x
+#### 12.1.x
 
 1. [Free Oracle WebLogic Server Installers for Development](https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html)
 2. Find Oracle WebLogic Server 12.1.3 -> Zip distribution Update 3 for Mac OSX, Windows, and Linux
@@ -72,7 +73,7 @@ rm -fR ./properties
    - Click in Download button
 
 ```sh
-#
+# Linux/Darwin
 export WEBLOGIC_MIDDLEWARE_HOME='/opt/oracle/weblogic/12.1.3/middleware'
 
 #
@@ -81,38 +82,14 @@ sudo mkdir -p "$WEBLOGIC_MIDDLEWARE_HOME"
 #
 sudo chown -R "$USER" "$WEBLOGIC_MIDDLEWARE_HOME/../"
 
-#
+# Darwin/Extract all files
 unzip ~/Downloads/wls1213_dev_update3.zip -d "$WEBLOGIC_MIDDLEWARE_HOME"
 
-#
-"$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/configure.sh -silent
-
-source /u01/middleware1221/wlserver/server/bin/setWLSEnv.sh
-java weblogic.WLST << EOF
-startServer(adminServerName='AdminServer',domainName='mydomain',url='t3://localhost:7001',username='weblogic',password='weblogic01',domainDir='/u01/domains/mydomain',jvmArgs='-Xms256m -Xmx512m -XX:CompileThreshold=8000 -XX:PermSize=128m -XX:MaxPermSize=256m')
-exit()
-EOF
-
-"$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/wlserver/common/bin/wlst.sh -skipWLSModuleScanning /tmp/config.py
-"$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/wlserver/common/bin/wlst.sh -skipWLSModuleScanning wlsdecrypt.py boot.properties
-
-"$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/wlserver/common/bin/wlst.sh << EOF
-startNodeManager(NodeManagerHome='/u01/domains/mydomain/nodemanager',SecureListener="false")
-exit()
-EOF
-
-mkdir -p "$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/user_projects/domains/standalone/servers/AdminServer/security
-
-cat << \EOF > "$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/user_projects/domains/standalone/servers/AdminServer/security/boot.properties
-username=admin
-password=Pa$$w0rd!
-EOF
-
-#
+# Remove files
 rm ~/Downloads/wls1213_dev_update3.zip
-``` -->
+```
 
-##### 12.2.x
+#### 12.2.x
 
 1. [Free Oracle WebLogic Server Installers for Development](https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html)
 2. Find Oracle WebLogic Server 12.2.1.4 -> Quick Installer for Mac OSX, Windows and Linux
@@ -120,7 +97,7 @@ rm ~/Downloads/wls1213_dev_update3.zip
    - Click in Download button
 
 ```sh
-#
+# Linux/Darwin
 export WEBLOGIC_MIDDLEWARE_HOME='/opt/oracle/weblogic/12.2.1.4/middleware'
 
 #
@@ -129,37 +106,77 @@ sudo mkdir -p "$WEBLOGIC_MIDDLEWARE_HOME"
 #
 sudo chown -R "$USER" "$WEBLOGIC_MIDDLEWARE_HOME/../"
 
-#
+# Darwin
 unzip ~/Downloads/fmw_12.2.1.4.0_wls_quick_Disk1_1of1.zip -d "$WEBLOGIC_MIDDLEWARE_HOME"
 
-#
+# Darwin
+/usr/libexec/java_home -V
+jabba current # min version is Java 1.8
+
+# Extract all files
 ( cd "$WEBLOGIC_MIDDLEWARE_HOME" && java -jar "$WEBLOGIC_MIDDLEWARE_HOME"/fmw_12.2.1.4.0_wls_quick.jar )
 
-#
+# Darwin/Remove files
 rm ~/Downloads/fmw_12.2.1.4.0_wls_quick_Disk1_1of1.zip
 rm -f "$WEBLOGIC_MIDDLEWARE_HOME"/fmw_*
-rm -fR /Users/brunowego/oraInventory
+rm -fR ~/oraInventory
 ```
 
 ### Bootstrap
 
-```sh
+<!-- ```sh
 #
 export USER_MEM_ARGS='-Xmx1024m -XX:MaxPermSize=256m'
+``` -->
+
+#### 12.1.x
+
+```sh
+# Darwin
+/usr/libexec/java_home -V
+jabba current # min version is Java 1.8
 
 #
-source "$WEBLOGIC_MIDDLEWARE_HOME"/wls12214/wlserver/server/bin/setWLSenv.sh
+"$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/configure.sh -silent
 
 #
-mkdir -p "$WEBLOGIC_MIDDLEWARE_HOME"/../domain
+export MW_HOME="$WEBLOGIC_MIDDLEWARE_HOME/wls12130"
 
 #
-( cd "$WEBLOGIC_MIDDLEWARE_HOME"/../domain && java -Xmx1024m -XX:MaxPermSize=256m weblogic.Server )
+source "$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/wlserver/server/bin/setWLSEnv.sh
+
+#
+mkdir -p "$WEBLOGIC_MIDDLEWARE_HOME"/../mydomain
+
+#
+( cd "$WEBLOGIC_MIDDLEWARE_HOME"/../mydomain && java -Xmx1024m -XX:MaxPermSize=256m weblogic.Server )
 ```
 
 - Would you like the server to create a default configuration and boot? y
 - Enter username to boot WebLogic server: admin
-- Enter username to boot WebLogic server: Pa$$w0rd!
+- Enter username to boot WebLogic server: PaSSw0rd!
+
+```sh
+#
+echo -e '[INFO]\thttp://127.0.0.1:7001/console'
+```
+
+#### 12.2.x
+
+```sh
+#
+source "$WEBLOGIC_MIDDLEWARE_HOME"/wls12214/wlserver/server/bin/setWLSenv.sh
+
+#
+mkdir -p "$WEBLOGIC_MIDDLEWARE_HOME"/../mydomain
+
+#
+( cd "$WEBLOGIC_MIDDLEWARE_HOME"/../mydomain && java -Xmx1024m -XX:MaxPermSize=256m weblogic.Server )
+```
+
+- Would you like the server to create a default configuration and boot? y
+- Enter username to boot WebLogic server: admin
+- Enter username to boot WebLogic server: PaSSw0rd!
 
 ```sh
 #
@@ -170,9 +187,23 @@ echo -e '[INFO]\thttp://127.0.0.1:7001/console'
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
+#### 12.1.x
+
 ```sh
 # WLS Domain
-export WEBLOGIC_DOMAIN_HOME='/opt/oracle/weblogic/12.2.1.4/domain'
+export WEBLOGIC_DOMAIN_HOME='/opt/oracle/weblogic/12.1.3/mydomain'
+export EXTRA_JAVA_PROPERTIES="-Duser.language=en -Duser.country=US ${EXTRA_JAVA_PROPERTIES}"
+```
+
+```sh
+sudo su - "$USER"
+```
+
+#### 12.2.x
+
+```sh
+# WLS Domain
+export WEBLOGIC_DOMAIN_HOME='/opt/oracle/weblogic/12.2.1.4/mydomain'
 export EXTRA_JAVA_PROPERTIES="-Duser.language=en -Duser.country=US ${EXTRA_JAVA_PROPERTIES}"
 ```
 
@@ -182,14 +213,29 @@ sudo su - "$USER"
 
 ### Running
 
+#### 12.1.x
+
 ```sh
 # Start WebLogic
 "$WEBLOGIC_DOMAIN_HOME"/startWebLogic.sh
+
+# Stop WebLogic
+pkill java
+```
+
+#### 12.2.x
+
+```sh
+# Start WebLogic
+"$WEBLOGIC_DOMAIN_HOME"/startWebLogic.sh
+
+# Stop WebLogic
+"$WEBLOGIC_DOMAIN_HOME"/stopWebLogic.sh
 ```
 
 ### Docs
 
-#### Origem de Dados Genérica
+#### Origem de Dados Genérica (PT-BR)
 
 1. Serviços
 2. Origens de Dados
@@ -213,7 +259,7 @@ sudo su - "$USER"
    - Selecionar Alvos -> \[x] myserver
    - Finalizar
 
-#### Implantar
+#### Implantar (PT-BR)
 
 1. Implantações
 2. Instalar
@@ -230,13 +276,26 @@ sudo su - "$USER"
 ```sh
 # Libs
 wget \
-  -P '/opt/oracle/weblogic/domain/lib' \
+  -P '/opt/oracle/weblogic/mydomain/lib' \
   --content-disposition \
   --no-check-certificate \
   'https://[domain]/path/to/lib.jar'
 ```
 
 ### Issues
+
+#### Change Admin Password
+
+<!-- ```sh
+#
+export MW_HOME="$WEBLOGIC_MIDDLEWARE_HOME/wls12130"
+
+#
+source "$WEBLOGIC_MIDDLEWARE_HOME"/wls12130/wlserver/server/bin/setWLSenv.sh
+
+#
+( cd "$WEBLOGIC_MIDDLEWARE_HOME"/../mydomain/servers/myserver/security && java weblogic.security.utils.AdminAccount admin PaSSw0rd! ./ )
+``` -->
 
 #### OpenJDK Not Supported
 
@@ -251,6 +310,9 @@ Install [Oracle JDK](/oracle-jdk.md)
 ### Uninstall
 
 ```sh
-# Darwin
-rm -fR /opt/oracle/weblogic/12.2.1.4
+# For 12.1.x
+sudo rm -fR /opt/oracle/weblogic/12.1.3
+
+# For 12.2.x
+sudo rm -fR /opt/oracle/weblogic/12.2.1.4
 ```

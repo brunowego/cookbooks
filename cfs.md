@@ -1,4 +1,4 @@
-# Continuous Feedback Surveys
+# Continuous Feedback Surveys (CFS)
 
 <!--
 https://blog.track.co/o-que-e-customer-effort-score/

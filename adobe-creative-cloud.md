@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install adobe-creative-cloud
+brew install --cask adobe-creative-cloud
 ```
 
 ### Uninstall

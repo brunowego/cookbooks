@@ -7,7 +7,10 @@
 #### Homebrew
 
 ```sh
-brew cask install bluestacks
+brew install --cask bluestacks
+
+#
+open /usr/local/Caskroom/bluestacks/*/BlueStacks\ Installer.app
 ```
 
 ### Issues

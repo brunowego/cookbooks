@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install rightfont
+brew install --cask rightfont
 ```
 
 <!-- ### Tips -->

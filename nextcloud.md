@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=USS3DZn2te8
 #### Homebrew
 
 ```sh
-brew cask install nextcloud
+brew install --cask nextcloud
 ```
 
 ## Helm

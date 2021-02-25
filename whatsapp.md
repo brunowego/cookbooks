@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install whatsapp
+brew install --cask whatsapp
 ```
 
 ### Tips

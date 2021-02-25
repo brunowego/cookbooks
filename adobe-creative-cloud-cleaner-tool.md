@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install adobe-creative-cloud-cleaner-tool
+brew install --cask adobe-creative-cloud-cleaner-tool
 ```

@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install spotify
+brew install --cask spotify
 ```
 
 #### APT

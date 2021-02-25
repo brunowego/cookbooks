@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install amazon-music
+brew install --cask amazon-music
 ```
 
 ### Issues

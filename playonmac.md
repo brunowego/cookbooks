@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install playonmac
+brew install --cask playonmac
 ```

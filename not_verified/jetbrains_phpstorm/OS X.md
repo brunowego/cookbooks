@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install phpstorm
+brew install --cask phpstorm
 ```

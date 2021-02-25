@@ -13,7 +13,7 @@
 #### Homebrew
 
 ```sh
-brew cask install android-studio
+brew install --cask android-studio
 ```
 
 #### Snappy
@@ -66,7 +66,7 @@ open -a /Applications/Android\ Studio.app
 
 ```sh
 # Open Current Project
-studio .
+studio ./
 ```
 
 ### Tips

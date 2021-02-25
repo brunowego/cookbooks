@@ -388,7 +388,7 @@ Instal libxml2.
 
 ```log
 checking for libxml-2.0 >= 2.7.6... no
-configure: error: in `/Users/brunowego/.phpbrew/build/7.4.3-fpm-dev':
+configure: error: in `~/.phpbrew/build/7.4.3-fpm-dev':
 configure: error: The pkg-config script could not be found or is too old.  Make sure it
 is in your PATH or set the PKG_CONFIG environment variable to the full
 path to pkg-config.

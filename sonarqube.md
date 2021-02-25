@@ -5,9 +5,10 @@ https://plugins.miniorange.com/saml-single-sign-on-sso-sonarqube-using-simplesam
 https://github.com/BlockByBlock/jenkins-docker-with-goss/blob/master/doc/sonarqube.md
 -->
 
-## Stack
+## References
 
 - [SonarQube Scanner](/sonar-scanner.md)
+- [SonarQube :: Maven3 Plugin](https://mvnrepository.com/artifact/org.codehaus.sonar/sonar-maven3-plugin)
 
 ## Docker
 
@@ -233,3 +234,36 @@ kubectl get secret sonarqube \
 helm delete sonarqube --purge
 kubectl delete namespace sonarqube --grace-period=0 --force
 ```
+
+## Maven Plugin
+
+### Usage
+
+```sh
+#
+mvn sonar:sonar \
+  -Dsonar.login=[username] \
+  -Dsonar.password=[password]
+
+#
+mvn sonar:sonar \
+  -Dsonar.projectKey=[secret] \
+  -Dsonar.host.url=http://127.0.0.1:9000 \
+  -Dsonar.login=[hash]
+
+#
+mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=[secret] \
+  -Dsonar.host.url=http://127.0.0.1:9000 \
+  -Dsonar.login=[hash]
+```
+
+### Issues
+
+####
+
+```log
+[ERROR] Failed to execute goal org.codehaus.mojo:sonar-maven-plugin:2.6:sonar (default-cli) on project [project-name]: Can not execute SonarQube analysis: Plugin org.codehaus.sonar:sonar-maven3-plugin:7.9.2.30863 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.codehaus.sonar:sonar-maven3-plugin:jar:7.9.2.30863: Could not transfer artifact org.codehaus.sonar:sonar-maven3-plugin:pom:7.9.2.30863 from/to central (https://repo.maven.apache.org/maven2): Received fatal alert: protocol_version -> [Help 1]
+```
+
+TODO

@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install tableplus
+brew install --cask tableplus
 ```

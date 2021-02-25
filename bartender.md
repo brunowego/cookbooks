@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install bartender
+brew install --cask bartender
 ```

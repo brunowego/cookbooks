@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install db-browser-for-sqlite
+brew install --cask db-browser-for-sqlite
 ```

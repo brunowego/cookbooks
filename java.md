@@ -1,14 +1,40 @@
 # Java
 
 <!--
-JavaBeans
-Hibernate
+https://app.pluralsight.com/paths/skill/java
+
+https://app.pluralsight.com/paths/skill/java-ee-foundations
+
+https://www.linkedin.com/learning/search?keywords=eclipselink
+
+https://app.pluralsight.com/library/courses/java-persistence-api-21/table-of-contents
+
+JDBC
+Swing
 Spring Framework
+JUnit
+Facelets
+HttpClient
+
+
+Enterprise Information Systems Tier
 -->
 
 ## References
 
-- [Java SE - JDK](/java-se-jdk.md)
+- [Java Standard Edition (SE) - Java Development Toolkit (JDK)](/java-se.md)
+- [Java Enterprise Edition (EE)](/java-ee.md)
+- Java Micro Edition (ME)
+- JavaFX (EFF-ECTS)
+- WebProfile
+- MicroProfile
+
+## Glossary
+
+- Java ARchive (JAR)
+- Java Development Kit (JDK)
+- Java Persistence Query Language (JPQL)
+- Java Runtime Environment (JRE)
 
 ## Distributions
 
@@ -47,12 +73,14 @@ echo '/*.jar' >> ~/.gitignore_global
 ### Usage
 
 ```sh
-# Version
-java -version 2>&1 | tail -1
-javac -version 2>&1 | tail -1
+# Java Version
+java -version 2>&1
+
+# Java Compiler Version
+javac -version 2>&1
 
 #
-java -jar './path/to/file.war'
+# java -jar './path/to/file.war'
 ```
 
 ### Tips
@@ -61,6 +89,56 @@ java -jar './path/to/file.war'
 
 ```sh
 code --install-extension vscjava.vscode-java-pack
+```
+
+```sh
+# Darwin
+/usr/libexec/java_home -V
+
+# Linux/Darwin
+jq ".\"java.home\" |= \"$(dirname $(dirname $(readlink -f $(which java))))\"" "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+
+jq '."java.project.importOnFirstTimeStartup" |= "automatic"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+```
+
+<!-- ```sh
+code "$HOME/.config/Code/User/settings.json"
+```
+
+```json
+{
+  // ...
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.7",
+      "path": "/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home",
+      "default": true
+    }
+  ]
+}
+``` -->
+
+```sh
+code './.vscode/settings.json'
+```
+
+```json
+{
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "java.configuration.updateBuildConfiguration": "automatic"
+}
+```
+
+```sh
+# Darwin
+osascript -e 'quit app "Visual Studio Code"'
+
+code --disable-extension vscjava.vscode-java-pack
 ```
 
 #### Get Manifest
@@ -95,19 +173,6 @@ cd WEB-INF
 java -classpath 'lib/*:classes/.' [yourpackage.YourClassName]
 ``` -->
 
-#### Visual Studio Code
-
-```sh
-code --install-extension vscjava.vscode-java-pack
-```
-
-```sh
-# Darwin
-osascript -e 'quit app "Visual Studio Code"'
-
-code --disable-extension vscjava.vscode-java-pack
-```
-
 ### Issues
 
 #### Java Home Environment
@@ -121,7 +186,7 @@ https://www.pushing-pixels.org/2020/06/19/fixing-the-failed-to-create-the-java-v
 -->
 
 ```sh
-#
+# Linux
 export JAVA_HOME="$(dirname $(dirname $(readlink -f $(which java))))"
 
 #

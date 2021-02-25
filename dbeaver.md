@@ -11,7 +11,7 @@
 #### Homebrew
 
 ```sh
-brew cask install dbeaver-community
+brew install --cask dbeaver-community
 ```
 
 #### RPM

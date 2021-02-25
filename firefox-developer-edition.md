@@ -12,7 +12,7 @@
 
 ```sh
 brew tap homebrew/cask-versions
-brew cask install --appdir='/Applications' firefox-developer-edition
+brew install --cask --appdir='/Applications' firefox-developer-edition
 ```
 
 #### Linux

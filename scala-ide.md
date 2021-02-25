@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install scala-ide
+brew install --cask scala-ide
 ```

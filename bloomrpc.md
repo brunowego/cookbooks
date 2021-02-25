@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install bloomrpc
+brew install --cask bloomrpc
 ```

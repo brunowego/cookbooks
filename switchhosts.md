@@ -14,7 +14,7 @@
 #### Homebrew
 
 ```sh
-brew cask install switchhosts
+brew install --cask switchhosts
 ```
 
 #### Linux

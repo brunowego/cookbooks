@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install jetbrains-toolbox
+brew install --cask jetbrains-toolbox
 ```

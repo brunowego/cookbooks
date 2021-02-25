@@ -1,11 +1,5 @@
 # Jaeger
 
-## Helm
-
-TODO
-
-https://hub.helm.sh/charts/incubator/jaeger
-
 ## Host
 
 ### Installation

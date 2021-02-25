@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install --appdir='/Applications' google-chrome
+brew install --cask --appdir='/Applications' google-chrome
 ```
 
 #### APT

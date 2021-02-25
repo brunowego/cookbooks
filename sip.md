@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install sip
+brew install --cask sip
 ```

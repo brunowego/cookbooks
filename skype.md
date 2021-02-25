@@ -7,10 +7,10 @@
 #### Homebrew
 
 ```sh
-brew cask install skype
+brew install --cask skype
 
 #
-brew cask install skype-for-business
+brew install --cask skype-for-business
 ```
 
 #### Chocolatey

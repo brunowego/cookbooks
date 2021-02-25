@@ -11,7 +11,7 @@
 #### Homebrew
 
 ```sh
-brew cask install screenflow
+brew install --cask screenflow
 ```
 
 #### DMG

@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install webstorm
+brew install --cask webstorm
 ```

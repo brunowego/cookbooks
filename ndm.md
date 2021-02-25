@@ -5,7 +5,7 @@
 ### Homebrew
 
 ```sh
-brew cask install ndm
+brew install --cask ndm
 ```
 
 ### Chocolatey

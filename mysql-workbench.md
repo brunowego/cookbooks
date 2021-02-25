@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install mysqlworkbench
+brew install --cask mysqlworkbench
 ```
 
 #### APT

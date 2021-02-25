@@ -61,7 +61,7 @@ jabba ls
 # Use
 jabba use [version]
 
-# Current
+# Show current
 jabba current
 
 # Alias

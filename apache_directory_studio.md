@@ -12,7 +12,7 @@
 #### Homebrew
 
 ```sh
-brew cask install apache-directory-studio
+brew install --cask apache-directory-studio
 ```
 
 #### Linux

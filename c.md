@@ -8,4 +8,5 @@ https://www.linkedin.com/learning/c-essential-training/getting-everything-ready
 
 ## References
 
+- [C++](/cpp.md)
 - [Code::Blocks](/codeblocks.md)

@@ -5,7 +5,7 @@
 ### Homebrew
 
 ```sh
-brew cask install osxfuse
+brew install --cask osxfuse
 ```
 
 ## Installation

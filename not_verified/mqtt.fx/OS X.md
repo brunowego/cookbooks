@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install mqttfx
+brew install --cask mqttfx
 ```

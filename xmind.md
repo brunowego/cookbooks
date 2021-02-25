@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install xmind
+brew install --cask xmind
 ```

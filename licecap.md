@@ -9,5 +9,5 @@
 #### Homebrew
 
 ```sh
-brew cask install licecap
+brew install --cask licecap
 ```

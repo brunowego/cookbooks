@@ -17,7 +17,7 @@
 #### Homebrew
 
 ```sh
-brew cask install --appdir='/Applications' firefox
+brew install --cask --appdir='/Applications' firefox
 ```
 
 ### Docs

@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install appcleaner
+brew install --cask appcleaner
 ```

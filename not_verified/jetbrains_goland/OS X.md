@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install goland
+brew install --cask goland
 ```

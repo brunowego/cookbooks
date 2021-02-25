@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install drawio
+brew install --cask drawio
 ```
 
 ## Docker

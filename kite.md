@@ -9,7 +9,7 @@
 #### Homebrew
 
 ```sh
-brew cask install kite
+brew install --cask kite
 ```
 
 ### Tips

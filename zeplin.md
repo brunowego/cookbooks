@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install zeplin
+brew install --cask zeplin
 ```

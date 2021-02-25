@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install plex-media-server
+brew install --cask plex-media-server
 ```

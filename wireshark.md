@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install wireshark-chmodbpf
+brew install --cask wireshark-chmodbpf
 ```
 
 #### DMG

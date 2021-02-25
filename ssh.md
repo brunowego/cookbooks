@@ -9,6 +9,12 @@ ssh -i [privatekey].pem [username]@[IP]
 
 ## Tips
 
+### Visual Studio Code
+
+```sh
+code --install-extension chrmarti.ssh
+```
+
 ### Hide Banner
 
 ```sh

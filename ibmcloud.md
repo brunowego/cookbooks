@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install ibm-cloud-cli
+brew install --cask ibm-cloud-cli
 ```
 
 ### Commands

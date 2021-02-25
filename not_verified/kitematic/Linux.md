@@ -33,8 +33,8 @@ sudo git checkout linux-support && sudo make
 ```
 
 ```sh
-chmod -R g+w .
-chgrp -R docker .
+chmod -R g+w ./
+chgrp -R docker ./
 ```
 
 ```sh

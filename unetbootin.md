@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install unetbootin
+brew install --cask unetbootin
 ```
 
 ## Docs

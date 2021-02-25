@@ -5,7 +5,7 @@
 ### Homebrew
 
 ```sh
-brew cask install vmware-fusion8
+brew install --cask vmware-fusion8
 ```
 
 ## Tips

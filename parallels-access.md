@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install parallels-access
+brew install --cask parallels-access
 ```
 
 ### Configuration

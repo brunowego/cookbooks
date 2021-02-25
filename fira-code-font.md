@@ -12,7 +12,7 @@ https://medium.com/@peterpme/operator-mono-fira-code-the-best-of-both-worlds-191
 #### Homebrew
 
 ```sh
-brew cask install homebrew/cask-fonts/font-fira-code
+brew install --cask homebrew/cask-fonts/font-fira-code
 ```
 
 #### APT

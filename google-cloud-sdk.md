@@ -5,7 +5,7 @@
 ### Homebrew
 
 ```sh
-brew cask install google-cloud-sdk
+brew install --cask google-cloud-sdk
 ```
 
 ## Commands

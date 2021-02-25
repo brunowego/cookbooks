@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install obs
+brew install --cask obs
 ```

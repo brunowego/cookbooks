@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install vmware-horizon-client
+brew install --cask vmware-horizon-client
 ```

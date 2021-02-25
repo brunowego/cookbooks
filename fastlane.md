@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install fastlane
+brew install --cask fastlane
 ```
 
 <!-- ### Environment

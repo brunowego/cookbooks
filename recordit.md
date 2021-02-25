@@ -5,7 +5,7 @@
 ### Homebrew
 
 ```sh
-brew cask install recordit
+brew install --cask recordit
 ```
 
 ### Windows

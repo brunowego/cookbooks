@@ -34,7 +34,7 @@ sudo zypper install -y java-1_8_0-openjdk
 #### Homebrew
 
 ```sh
-brew cask install dbeaver-enterprise
+brew install --cask dbeaver-enterprise
 ```
 
 #### DMG

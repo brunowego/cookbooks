@@ -41,3 +41,10 @@ gtime --help
 # Linux
 /usr/bin/time --help
 ```
+
+### Usage
+
+```sh
+#
+gtime -v [command]
+```

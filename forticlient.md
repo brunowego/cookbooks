@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install forticlient
+brew install --cask forticlient
 ```
 
 <!-- ### Tips

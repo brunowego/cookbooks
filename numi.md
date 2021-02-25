@@ -11,7 +11,7 @@
 #### Homebrew
 
 ```sh
-brew cask install numi
+brew install --cask numi
 ```
 
 <!-- ####

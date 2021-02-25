@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install gitkraken
+brew install --cask gitkraken
 ```

@@ -11,7 +11,7 @@
 #### Homebrew
 
 ```sh
-brew cask install mockoon
+brew install --cask mockoon
 ```
 
 ### Chocolatey

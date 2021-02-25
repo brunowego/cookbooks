@@ -191,7 +191,7 @@ curl \
   -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
   -H 'X-Requested-By: ambari' \
   -X GET \
-  "http://dxl1big00011.dispositivos.bb.com.br:7180/api/v1/clusters/BBDesenvolvimento/services/ZOOKEEPER/components/ZOOKEEPER_SERVER" | jq
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/BBDesenvolvimento/services/ZOOKEEPER/components/ZOOKEEPER_SERVER" | jq
 ```
 
 ## Library

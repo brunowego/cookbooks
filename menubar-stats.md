@@ -13,5 +13,5 @@ mas install 714196447
 #### Homebrew
 
 ```sh
-brew cask install menubar-stats
+brew install --cask menubar-stats
 ```

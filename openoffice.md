@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install openoffice
+brew install --cask openoffice
 ```

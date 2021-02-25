@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install opera-developer
+brew install --cask opera-developer
 ```
 
 <!-- #### APT

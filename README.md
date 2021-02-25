@@ -28,6 +28,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Common Gateway Interface (CGI)](https://en.wikipedia.org/wiki/Common_Gateway_Interface)
 - [Common Workflow Language (CWL)](https://www.commonwl.org/)
 - [Containers as a Service (CaaS)]()
+- [Data Source Name (DSN)]()
 - [Data Transfer Object (DTO)]()
 - [Distributed Cloud Operating System (DC/OS)]()
 - [Enhanced Entity–Relationship (EER)](https://en.wikipedia.org/wiki/Enhanced_entity%E2%80%93relationship_model)
@@ -39,6 +40,7 @@ Bucket of cookbooks to help install and set softwares.
 - [identity provider (IdP)](https://en.wikipedia.org/wiki/Identity_provider)
 - [Infrastructure as a service (IaaS)](https://en.wikipedia.org/wiki/Infrastructure_as_a_service)
 - [Key Performance Indicators (KPI)](https://en.wikipedia.org/wiki/Performance_indicator)
+- [Low-code development platform (LCDP)](https://en.wikipedia.org/wiki/Low-code_development_platform)
 - [Mobile backend as a service (MBaaS)](https://en.wikipedia.org/wiki/Mobile_backend_as_a_service)
 - [Monorepo](https://en.wikipedia.org/wiki/Monorepo)
 - [Network Interface Controller (NIC)](https://en.wikipedia.org/wiki/Network_interface_controller)
@@ -61,8 +63,8 @@ Bucket of cookbooks to help install and set softwares.
 - [Universal Plug and Play (UPnP_](https://en.wikipedia.org/wiki/Universal_Plug_and_Play)
 - [Virtual Private Cloud (VPC)]()
 - [Web Server Gateway Interface (WSGI)](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)
+- [Write once, run anywhere (WORA)](https://en.wikipedia.org/wiki/Write_once,_run_anywhere)
 - [You aren't gonna need it (YAGNI)](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
-- [Data Source Name (DSN)]()
 
 ## Cheat Sheets
 

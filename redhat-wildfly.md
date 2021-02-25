@@ -1,8 +1,12 @@
-# WildFly (JBoss Application Server)
+# Red Hat WildFly (JBoss Application Server)
 
 <!--
 EAP - Enterprise Application Server
 -->
+
+## References
+
+- [JBoss Application Server (AS)](/jboss.md)
 
 ## CLI
 

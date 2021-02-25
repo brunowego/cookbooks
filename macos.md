@@ -12,7 +12,7 @@ sudo spctl --master-disable
 
 ## References
 
-- [How to create a bootable installer for macOS](https://support.apple.com/sl-si/HT201372)
+- [How to create a bootable installer for macOS](https://support.apple.com/en-us/HT201372)
 
 <!--
 https://eshop.macsales.com/guides/Mac_OS_X_Compatibility
@@ -21,8 +21,14 @@ https://eshop.macsales.com/guides/Mac_OS_X_Compatibility
 ## Commands
 
 ```sh
+#
 system_profiler SPSoftwareDataType
+
+#
 sw_vers
+
+#
+softwareupdate --all --install --force
 ```
 
 ## Issues

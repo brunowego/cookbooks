@@ -32,9 +32,9 @@ git clone --branch [branch] --single-branch --depth [depth] [repo]
 
 ```sh
 sudo mkdir -p [/path/to/folder] && cd "$_"
-sudo chown $(whoami): .
+sudo chown $(whoami): ./
 ```
 
 ```sh
-git clone [repo] .
+git clone [repo] ./
 ```

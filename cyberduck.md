@@ -5,7 +5,7 @@
 ### Homebrew
 
 ```sh
-brew cask install cyberduck
+brew install --cask cyberduck
 ```
 
 ### Chocolatey

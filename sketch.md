@@ -11,7 +11,7 @@
 #### Homebrew
 
 ```sh
-brew cask install sketch
+brew install --cask sketch
 ```
 
 ## Docs

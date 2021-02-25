@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install paw
+brew install --cask paw
 ```
 
 ### Importers

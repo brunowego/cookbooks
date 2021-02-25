@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install altair-graphql-client
+brew install --cask altair-graphql-client
 ```

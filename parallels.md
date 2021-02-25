@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install parallels
+brew install --cask parallels
 ```
 
 ### Tips

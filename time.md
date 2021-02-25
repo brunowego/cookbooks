@@ -1,5 +1,9 @@
 # time
 
+## References
+
+- [GNU time](/gnu_time.md)
+
 ## CLI
 
 ### Commands
@@ -8,17 +12,16 @@
 man time
 ```
 
-### Examples
-
-#### Type
+### Usage
 
 ```sh
+# Type
 type -a time
-```
 
-#### Output Runtime Seconds
+#
+time -v [command]
 
-```sh
+# Output Runtime Seconds
 time ls
 
 # Or

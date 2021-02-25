@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install zerotier-one
+brew install --cask zerotier-one
 ```

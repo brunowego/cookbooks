@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install adium
+brew install --cask adium
 ```

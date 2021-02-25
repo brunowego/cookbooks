@@ -7,7 +7,7 @@ https://github.com/Stashchenko/sonarqube/blob/dc356fb8550c1c8605ae49c5c10a2b0e53
 
 ## CLI
 
-## Plugins
+### Plugins
 
 - [SonarQube PHP Plugin](/sonar-php-plugin.md)
 

@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install microsoft-word
+brew install --cask microsoft-word
 ```
 
 ### Issues

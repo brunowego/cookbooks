@@ -9,5 +9,5 @@
 #### Homebrew
 
 ```sh
-brew cask install browserstacklocal
+brew install --cask browserstacklocal
 ```

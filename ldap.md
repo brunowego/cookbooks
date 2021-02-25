@@ -52,7 +52,7 @@ pip install python-ldap
 import ldap
 from ldap.controls import SimplePagedResultsControl
 
-hostname = 'ldp0pb1.bb.com.br'
+hostname = '[hostname]'
 port = '389'
 username = 'uid=big02usr,ou=bind,ou=usuarios,ou=acesso,o=bb,c=br'
 password = 'u3it5pe6'

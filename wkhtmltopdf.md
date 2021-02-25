@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install wkhtmltopdf
+brew install --cask wkhtmltopdf
 ```
 
 #### APT

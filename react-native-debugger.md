@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install react-native-debugger
+brew install --cask react-native-debugger
 ```

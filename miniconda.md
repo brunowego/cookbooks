@@ -28,7 +28,7 @@ sudo yum -y install wget
 #### Homebrew
 
 ```sh
-brew cask install miniconda
+brew install --cask miniconda
 ```
 
 #### LINUX

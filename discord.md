@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install discord
+brew install --cask discord
 ```

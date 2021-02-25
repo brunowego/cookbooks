@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install nteract
+brew install --cask nteract
 ```

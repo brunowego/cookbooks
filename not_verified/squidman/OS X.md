@@ -5,7 +5,7 @@
 ### Homebrew
 
 ```sh
-brew cask install squidman
+brew install --cask squidman
 ```
 
 ## Configuration

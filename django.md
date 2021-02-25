@@ -50,6 +50,7 @@ https://github.com/bfirsh/django-ordered-model
 - [Customize the Django Admin With Python](https://realpython.com/customize-django-admin-python/)
 - [Writing custom django-admin commands](https://docs.djangoproject.com/en/3.1/howto/custom-management-commands/)
 - [Django ORM Relationships Cheat Sheet](https://hackernoon.com/django-orm-relationships-cheat-sheet-14433d6cf68c)
+- [Configuring Django Settings: Best Practices](https://djangostars.com/blog/configuring-django-settings-best-practices/)
 
 ### Applications
 
@@ -71,6 +72,7 @@ django-rest-swagger
 django-redis
 djangorestframework
 djangorestframework-jwt
+django-opentracing
 -->
 
 ### Dependencies
@@ -253,6 +255,13 @@ DJANGO_SUPERUSER_PASSWORD='Pa$$w0rd!' ./manage.py createsuperuser \
 ./manage.py runserver 0.0.0.0:8000
 
 #
+./manage.py runserver --settings=settings.local
+./manage.py runserver --settings=settings.development
+./manage.py runserver --settings=settings.testing
+./manage.py runserver --settings=settings.stating
+./manage.py runserver --settings=settings.production
+
+#
 uwsgi --ini ./uwsgi.ini
 ```
 
@@ -320,12 +329,18 @@ INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
 mkdir -p ./core/fixtures
 
 #
-./manage.py dumpdata core > ./core/fixtures/core.json
+./manage.py dumpdata core --indent 2 > ./core/fixtures/core.json
+./manage.py dumpdata auth.user --indent 2 > ./core/fixtures/users.json
+```
 
-./manage.py dumpdata core.[ModelName] > ./core/fixtures/[model_name].json
+##### Tests
+
+```sh
+#
+mkdir -p ./tests/fixtures
 
 #
-./manage.py loaddata core
+./manage.py dumpdata auth.user --indent 2 > ./tests/fixtures/users.json
 ```
 
 #### Running

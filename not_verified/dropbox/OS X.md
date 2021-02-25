@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install dropbox
+brew install --cask dropbox
 ```

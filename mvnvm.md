@@ -4,12 +4,7 @@
 
 ### Dependencies
 
-#### APT
-
-```sh
-sudo apt update
-sudo apt -y install unzip
-```
+- [UnZip](/unzip.md)
 
 ### Installation
 
@@ -48,6 +43,11 @@ mvn -h
 ### Usage
 
 ```sh
+mvn -V
+
 # Show installed version
 ls ~/.mvnvm
+
+# Install pre-defined version
+mvn
 ```

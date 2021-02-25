@@ -12,7 +12,7 @@ https://www.linkedin.com/learning/postman-essential-training/why-automate-your-a
 #### Homebrew
 
 ```sh
-brew cask install postman
+brew install --cask postman
 ```
 
 #### Linux

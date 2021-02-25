@@ -58,5 +58,8 @@ tag = True
 
 # Node.js
 [bumpversion:file:package.json]
+
+# Java
+[bumpversion:file:pom.xml]
 EOF
 ```

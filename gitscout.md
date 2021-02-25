@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install gitscout
+brew install --cask gitscout
 ```

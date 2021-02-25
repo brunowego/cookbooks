@@ -1,5 +1,13 @@
 # JUnit
 
+<!--
+https://app.pluralsight.com/paths/skill/unit-testing-in-java
+-->
+
+## References
+
+- [Dependency Information](https://junit.org/junit4/dependency-info.html)
+
 ## Java ARchive
 
 ### Installation
@@ -38,4 +46,28 @@ export CLASSPATH="${CLASSPATH}${CLASSPATH:+:}${JUNIT_JARS}:."
 ```sh
 javac TestPerson.java
 java org.junit.runner.JUnitCore TestPerson
+```
+
+## Maven Plugin
+
+### Usage
+
+```sh
+# All tests
+mvn test
+
+# Single test
+mvn -Dtest=TestApp1 test
+
+# Multiple tests
+mvn -Dtest=TestApp1,TestApp2 test
+
+# Method test
+mvn -Dtest=TestApp1#methodname test
+
+# All methods match pattern tests
+mvn -Dtest=TestApp1#testHello* test
+
+# All methods match pattern 'testHello*' and 'testMagic*' tests
+mvn -Dtest=TestApp1#testHello*+testMagic* test
 ```

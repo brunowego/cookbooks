@@ -50,3 +50,10 @@ sudo yum -y install moreutils
 sudo zypper refresh
 sudo zypper install -y moreutils
 ```
+
+### Conflicts
+
+```sh
+# Wish GNU Core Utilities
+brew link --overwrite moreutils
+```

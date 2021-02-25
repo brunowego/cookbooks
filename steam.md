@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install steam
+brew install --cask steam
 ```
 
 ### Uninstall

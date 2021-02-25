@@ -101,7 +101,7 @@ private-bower --config /home/private-bower/bowerConfig.json
 
 ```sh
 git init
-git add .
+git add ./
 git commit -m "Initial commit"
 git remote add dokku dokku@ip:private-bower
 git push dokku master

@@ -11,5 +11,5 @@
 #### Homebrew
 
 ```sh
-brew cask install font-fontawesome
+brew install --cask font-fontawesome
 ```

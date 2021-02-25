@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install charles
+brew install --cask charles
 ```
 
 #### APT

@@ -7,7 +7,7 @@
 ### Homebrew
 
 ```sh
-brew cask install sublime-text
+brew install --cask sublime-text
 ```
 
 ### Tips

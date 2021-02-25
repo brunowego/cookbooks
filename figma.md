@@ -16,5 +16,5 @@ https://www.linkedin.com/learning/topics/figma-2?entityType=COURSE
 #### Homebrew
 
 ```sh
-brew cask install figma
+brew install --cask figma
 ```

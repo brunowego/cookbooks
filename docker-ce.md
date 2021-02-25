@@ -20,7 +20,7 @@ Missing file
 #### Homebrew
 
 ```sh
-brew cask install docker
+brew install --cask docker
 ```
 
 #### APT
@@ -259,6 +259,19 @@ source ~/.zshrc
 
 ### Issues
 
+#### Daemon Error Response
+
+```log
+Error response from daemon: Get http://hostname/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+```
+
+TODO
+
+<!-- ```sh
+# Perhaps using wrong user:password at proxy. After change, restart docker daemon.
+cat /etc/sysconfig/docker
+``` -->
+
 #### Missing Bash
 
 ```log
@@ -317,11 +330,11 @@ http://blog.jonathanargentiero.com/docker-sed-cannot-rename-etcsedl8ysxl-device-
 
 ```sh
 # CLI
-DOCKER_BUILDKIT=0 docker build .
+DOCKER_BUILDKIT=0 docker build ./
 
 # Daemon
 TODO
-# {"experimental":false,"features":{"buildkit":true},"insecure-registries":["atf.intranet.bb.com.br:5001","atf.intranet.bb.com.br:5001"]}%
+# {"experimental":false,"features":{"buildkit":true},"insecure-registries":["[hostname]:5001","[hostname]:5001"]}%
 ```
 
 #### Work directory

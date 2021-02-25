@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install textual
+brew install --cask textual
 ```
 
 #### MAS

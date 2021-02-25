@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install datagrip
+brew install --cask datagrip
 ```

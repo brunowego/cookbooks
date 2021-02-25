@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install teamviewer
+brew install --cask teamviewer
 ```

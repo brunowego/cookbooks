@@ -11,7 +11,7 @@
 #### Homebrew
 
 ```sh
-brew cask install poedit
+brew install --cask poedit
 ```
 
 ###

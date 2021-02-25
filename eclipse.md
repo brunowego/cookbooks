@@ -1,5 +1,15 @@
 # Eclipse
 
+<!--
+https://app.pluralsight.com/library/courses/guided-tour-eclipse-for-java/table-of-contents
+https://app.pluralsight.com/library/courses/eclipse-java-developers/table-of-contents
+
+https://www.linkedin.com/learning/eclipse-essential-training/welcome
+https://www.linkedin.com/learning/learning-eclipse-2/welcome
+
+eclipse -application org.eclipse.equinox.p2.director -noSplash -repository #{repo} -installIUs #{plugins}
+-->
+
 ## App
 
 ### Installation
@@ -7,17 +17,17 @@
 #### Homebrew
 
 ```sh
-#
-brew cask install eclipse-java
+# Java SE
+brew install --cask eclipse-java
 
-#
-brew cask install eclipse-jee
+# Java EE
+brew install --cask eclipse-jee
 
-#
-brew cask install eclipse-javascript
+# JavaScript
+brew install --cask eclipse-javascript
 
-#
-brew cask install eclipse-php
+# PHP
+brew install --cask eclipse-php
 ```
 
 ### Configuration
@@ -27,7 +37,20 @@ brew cask install eclipse-php
 cat << EOF >> ~/.gitignore_global
 /.classpath
 /.project
+/.settings
+/.factorypath
 EOF
+```
+
+### Tips
+
+#### VS Code Files Exclude
+
+```sh
+jq '."files.exclude"."**/.classpath" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."files.exclude"."**/.project" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."files.exclude"."**/.settings" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."files.exclude"."**/.factorypath" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
 ### Issues

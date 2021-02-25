@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install daisydisk
+brew install --cask daisydisk
 ```

@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install android-platform-tools
+brew install --cask android-platform-tools
 ```
 
 ### Commands

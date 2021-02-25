@@ -5,5 +5,5 @@
 ### Homebrew
 
 ```sh
-brew cask install kindle
+brew install --cask kindle
 ```

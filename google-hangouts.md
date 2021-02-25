@@ -7,5 +7,5 @@
 #### Homebrew
 
 ```sh
-brew cask install google-hangouts
+brew install --cask google-hangouts
 ```

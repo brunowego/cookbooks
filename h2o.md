@@ -33,7 +33,7 @@ docker rm -f h2o
 #### Homebrew
 
 ```sh
-brew cask install java
+brew install --cask java
 ```
 
 ### Running

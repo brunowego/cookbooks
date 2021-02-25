@@ -11,5 +11,5 @@ https://www.blender.org/download/demo-files/
 #### Homebrew
 
 ```sh
-brew cask install blender
+brew install --cask blender
 ```

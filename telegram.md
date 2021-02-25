@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install telegram
+brew install --cask telegram
 ```
 
 ### Tips

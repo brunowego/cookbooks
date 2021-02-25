@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew cask install virtualbox virtualbox-extension-pack
+brew install --cask virtualbox virtualbox-extension-pack
 ```
 
 #### YUM
