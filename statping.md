@@ -2,6 +2,10 @@
 
 **Keywords**: Status page
 
+## References
+
+- [Repository](https://github.com/statping/statping)
+
 ## Docker
 
 ### Network
@@ -39,16 +43,24 @@ docker run -d \
   -p 8080:8080 \
   --name statping \
   --network workbench \
-  docker.io/hunterlong/statping:v0.80.65
+  docker.io/hunterlong/statping:v0.90.45
 ```
 
 ```sh
 echo -e '[INFO]\thttp://127.0.0.1:8080'
+
+# Dashboard
+echo -e '[INFO]\thttp://127.0.0.1:8080/login'
 ```
+
+| Login | Password |
+| --- | --- |
+| `admin` | `admin` |
 
 ### Remove
 
 ```sh
 docker rm -f statping-postgres statping
+
 docker volume rm statping-postgres-data
 ```

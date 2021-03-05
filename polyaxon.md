@@ -239,7 +239,7 @@ polyaxon config set \
 polyaxon config -l
 
 # Reading config file
-cat ~/.polyaxon/.polyaxonconfig | jq
+cat ~/.polyaxon/.polyaxonconfig | jq .
 ```
 
 #### Login

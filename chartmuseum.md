@@ -45,7 +45,7 @@ curl -ks https://chartmuseum.$(minikube ip).nip.io/index.yaml | yq r -
 ```
 
 ```sh
-curl -ks https://chartmuseum.$(minikube ip).nip.io/api/charts | jq
+curl -ks https://chartmuseum.$(minikube ip).nip.io/api/charts | jq .
 ```
 
 #### Repository

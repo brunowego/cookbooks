@@ -121,7 +121,7 @@ curl \
   --data @hello.json \
   https://[hostname]
 
-curl -s https://[hostname] | jq
+curl -s https://[hostname] | jq .
 
 curl -s https://[hostname]; echo
 ```

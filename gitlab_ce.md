@@ -342,7 +342,7 @@ export GITLAB_DOMAIN='gitlab.example.com'
 #
 curl \
     --header "PRIVATE-TOKEN: ${GITLAB_PRIVATE_TOKEN}" \
-    "https://${GITLAB_DOMAIN}/api/v4/projects/${GITLAB_PROJECT_ID}/issues?scope=all&state=closed" | jq
+    "https://${GITLAB_DOMAIN}/api/v4/projects/${GITLAB_PROJECT_ID}/issues?scope=all&state=closed" | jq .
 ```
 
 #### Export CSV

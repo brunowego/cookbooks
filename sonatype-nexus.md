@@ -119,7 +119,7 @@ kubectl create secret docker-registry nxrm-oss-regcred \
 kubectl get secret nxrm-oss-regcred \
   -o jsonpath='{.data.\.dockerconfigjson}' \
   -n default | \
-    base64 --decode | jq
+    base64 --decode | jq .
 ```
 
 ```sh

@@ -1,6 +1,8 @@
 # Java
 
 <!--
+https://learn.oracle.com/ols/home/java-25th-anniversary-learning-subscription/82508
+
 https://app.pluralsight.com/paths/skill/java
 
 https://app.pluralsight.com/paths/skill/java-ee-foundations
@@ -22,12 +24,17 @@ Enterprise Information Systems Tier
 
 ## References
 
+- Oracle Certified Professional (OCP)
 - [Java Standard Edition (SE) - Java Development Toolkit (JDK)](/java-se.md)
 - [Java Enterprise Edition (EE)](/java-ee.md)
 - Java Micro Edition (ME)
 - JavaFX (EFF-ECTS)
 - WebProfile
 - MicroProfile
+
+## Exams
+
+- [ Java SE 11 Developer - Exam Number: 1Z0-819](education.oracle.com/x/pexam_1Z0-819)
 
 ## Glossary
 

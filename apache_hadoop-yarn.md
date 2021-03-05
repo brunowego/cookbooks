@@ -7,7 +7,7 @@
 
 ```sh
 http://[hostname]:8088/ui2
-curl -s http://[hostname]:8088/ws/v1/cluster/metrics | jq
+curl -s http://[hostname]:8088/ws/v1/cluster/metrics | jq .
 
 proxychains -q \
   curl -ik --negotiate -u : \
@@ -20,13 +20,13 @@ proxychains -q curl --compressed -H "Accept: application/json" -X GET http:// [h
 
 proxychains -q curl --negotiate -u: -X GET http:// [hostname]:8088/ws/v1/cluster/info
 
-proxychains -q curl -ik -u : -X GET http:// [hostname]:8088/ws/v1/cluster/scheduler-conf | jq
+proxychains -q curl -ik -u : -X GET http:// [hostname]:8088/ws/v1/cluster/scheduler-conf | jq .
 
-proxychains -q curl -ik -u : -X GET http:// [hostname]:8088/ws/v1/cluster/info | jq
+proxychains -q curl -ik -u : -X GET http:// [hostname]:8088/ws/v1/cluster/info | jq .
 
-proxychains -q curl -ik -u : -X GET http:// [hostname]:8088/ws/v1/cluster/metrics | jq
+proxychains -q curl -ik -u : -X GET http:// [hostname]:8088/ws/v1/cluster/metrics | jq .
 
-proxychains -q curl -ik -u : -X GET http:// [hostname]:8088/ws/v1/cluster/scheduler | jq
+proxychains -q curl -ik -u : -X GET http:// [hostname]:8088/ws/v1/cluster/scheduler | jq .
 
 proxychains -q curl -k --negotiate -u : -X GET http:// [hostname]:8088/ws/v1/cluster/scheduler
 

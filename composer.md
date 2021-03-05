@@ -67,7 +67,7 @@ composer list
 ### Configuration
 
 ```sh
-cat ~/.composer/config.json | jq
+cat ~/.composer/config.json | jq .
 ```
 
 ### Usage

@@ -4,7 +4,7 @@
 
 ```sh
 #
-curl -s 'http://localhost:8080/nifi-api/resources' | jq
+curl -s 'http://localhost:8080/nifi-api/resources' | jq .
 
 # Get version
 curl -s 'http://127.0.0.1:8080/nifi-api/system-diagnostics' | \

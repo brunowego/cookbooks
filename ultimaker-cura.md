@@ -54,6 +54,7 @@ https://www.youtube.com/watch?v=XadcyqoQmrw
 | Quality | Layer Height | 0.16 |
 | Shell | Horizontal Expansion | 0.1 |
 | Shell | Wall Line Count | 4 |
+| Special Modes | Arc Welder | Yes |
 | Special Modes | Print Sequence | One at a Time |
 | Speed | Print Speed | 35.0 mm/s |
 | Support | Generate Support | Yes |

@@ -6,7 +6,7 @@ https://app.pluralsight.com/library/courses/getting-started-spring-webflux/table
 
 ## References
 
-- Spring Boot
+- Spring Boot (Microservice)
 - Spring Framework
 - Spring Security
 - Spring WebFlux

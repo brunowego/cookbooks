@@ -180,5 +180,5 @@ pip install -r ./requirements/dev.txt
 echo -e '[INFO]\thttp://127.0.0.1:8000/docs'
 
 #
-curl http://127.0.0.1:8000/api/challenges/challenge/past | jq
+curl http://127.0.0.1:8000/api/challenges/challenge/past | jq .
 ```

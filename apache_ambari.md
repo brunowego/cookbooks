@@ -68,7 +68,7 @@ curl \
   -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
   -H 'X-Requested-By: ambari' \
   -X GET \
-  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters" | jq
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters" | jq .
 
 #
 export AMBARI_CLUSTER_NAME=$(curl \
@@ -147,7 +147,7 @@ curl \
   -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
   -H 'X-Requested-By: ambari' \
   -X GET \
-  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/RANGER/components/RANGER_ADMIN" | jq
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/RANGER/components/RANGER_ADMIN" | jq .
 ```
 
 #### ZooKeeper
@@ -158,7 +158,7 @@ curl \
   -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
   -H 'X-Requested-By: ambari' \
   -X GET \
-  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/ZOOKEEPER/components/ZOOKEEPER_SERVER" | jq
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/ZOOKEEPER/components/ZOOKEEPER_SERVER" | jq .
 ```
 
 #### Knox
@@ -169,7 +169,7 @@ curl \
   -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
   -H 'X-Requested-By: ambari' \
   -X GET \
-  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/KNOX/components/KNOX_GATEWAY" | jq
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/KNOX/components/KNOX_GATEWAY" | jq .
 ```
 
 #### Hive
@@ -180,7 +180,7 @@ curl \
   -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
   -H 'X-Requested-By: ambari' \
   -X GET \
-  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/HIVE/components/HIVE_SERVER" | jq
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/${AMBARI_CLUSTER_NAME}/services/HIVE/components/HIVE_SERVER" | jq .
 ```
 
 #### HBase
@@ -191,7 +191,7 @@ curl \
   -u "${AMBARI_USERNAME}:${AMBARI_PASSWORD}" \
   -H 'X-Requested-By: ambari' \
   -X GET \
-  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/BBDesenvolvimento/services/ZOOKEEPER/components/ZOOKEEPER_SERVER" | jq
+  "http://${AMBARI_HOST}:${AMBARI_PORT}/api/v1/clusters/BBDesenvolvimento/services/ZOOKEEPER/components/ZOOKEEPER_SERVER" | jq .
 ```
 
 ## Library
