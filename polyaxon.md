@@ -213,7 +213,7 @@ kubectl delete namespace polyaxon --grace-period=0 --force
 #### PIP
 
 ```sh
-pip install -U polyaxon-cli
+pip3 install -U polyaxon-cli
 ```
 
 ### Commands

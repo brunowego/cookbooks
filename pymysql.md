@@ -11,7 +11,7 @@
 
 ```sh
 # As user dependency
-pip install -U PyMySQL
+pip3 install -U PyMySQL
 
 # As project dependency
 echo 'PyMySQL==0.10.1' >> ./requirements.txt

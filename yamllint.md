@@ -45,7 +45,7 @@ sudo apt -y install yamllint
 ### PIP
 
 ```sh
-pip install -U yamllint
+pip3 install -U yamllint
 ```
 
 ## Commands

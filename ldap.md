@@ -45,7 +45,7 @@ sudo apt -y install python-ldap
 
 sudo zypper install -y python3-ldap
 
-pip install python-ldap
+pip3 install python-ldap
 ```
 
 ```py

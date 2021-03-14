@@ -113,7 +113,7 @@ docker run -it --rm \
 #### PIP
 
 ```sh
-pip install -U fake2db
+pip3 install -U fake2db
 ```
 
 ### Commands

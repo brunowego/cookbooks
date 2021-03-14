@@ -168,6 +168,9 @@ docker run -d \
 ```
 
 ```sh
+# Kafka test with GNU Netcat
+nc -vzw 5 127.0.0.1 9092 < /dev/null
+
 # Kafka test with Kafkacat
 kafkacat -Lb 127.0.0.1:9092
 

@@ -160,7 +160,7 @@ ENV IBM_DB_HOME '/opt/ibm/db2/clidriver'
 RUN ln -s /opt/ibm/db2/clidriver/lib/libdb2.so.1 /usr/lib && \
     ln -s /opt/ibm/db2/clidriver/lib/libdb2.so.1 /usr/lib64
 
-RUN pip install -q --no-cache-dir \
+RUN pip3 install -q --no-cache-dir \
       ibm-db==3.0.1 \
       ibm-db-sa==0.3.5
 ``` -->
@@ -186,7 +186,7 @@ sudo yum -y install python3-devel gcc
 ### Installation
 
 ```sh
-pip install -U ibm-db ibm-db-sa
+pip3 install -U ibm-db ibm-db-sa
 ```
 
 ### REPL

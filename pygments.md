@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install -U Pygments
+pip3 install -U Pygments
 ```
 
 ### Commands

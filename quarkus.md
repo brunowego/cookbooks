@@ -54,6 +54,8 @@ Message-Driven
 TODO
 
 <!--
+https://www.linkedin.com/learning/learning-quarkus/supersonic-java-with-quarkus
+
 https://www.linkedin.com/learning/java-microservices-with-graalvm/running-java-faster-with-graalvm
 https://app.pluralsight.com/library/courses/allthetalks-session-86/table-of-contents
 

@@ -44,5 +44,5 @@ error: /usr/lib/python2.7/site-packages/[filename].py: Permission denied
 
 ```sh
 #
-pip install -U [package]
+pip2 install --user [package]
 ```

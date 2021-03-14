@@ -8,7 +8,7 @@
 
 ```sh
 # As user dependency
-pip install -U django-extensions pygraphviz
+pip3 install -U django-extensions pygraphviz
 
 # As project dependency
 echo 'django-extensions==3.0.9' >> ./requirements.txt

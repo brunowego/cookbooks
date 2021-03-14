@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install -U evalai
+pip3 install -U evalai
 ```
 
 ### Commands
@@ -111,7 +111,7 @@ pyenv local 3.6.12
 ***Virtualenv***
 
 ```sh
-pip install -U virtualenv
+pip3 install -U virtualenv
 
 virtualenv ./.venv
 
@@ -154,7 +154,7 @@ export POSTGRES_PORT='5432'
 ### Dependencies
 
 ```sh
-pip install -r ./requirements/dev.txt
+pip3 install -r ./requirements/dev.txt
 ```
 
 ### Running

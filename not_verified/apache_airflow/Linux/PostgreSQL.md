@@ -7,7 +7,7 @@ export SLUGIFY_USES_TEXT_UNIDECODE=yes​
 ```
 
 ```sh
-pip install apache-airflow[postgres]
+pip3 install apache-airflow[postgres]
 ```
 
 ```sh

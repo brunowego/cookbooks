@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install -U tensorflow
+pip3 install -U tensorflow
 ```

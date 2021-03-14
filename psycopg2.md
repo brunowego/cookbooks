@@ -18,7 +18,7 @@ sudo apk add postgresql-dev g++ python3-dev
 
 ```sh
 # As user dependency
-pip install -U psycopg2-binary
+pip3 install -U psycopg2-binary
 
 # As project dependency
 echo 'psycopg2-binary==2.8.6' >> ./requirements.txt

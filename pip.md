@@ -51,13 +51,13 @@ pip3 install -U pip
 pip list
 
 # Install setup.py
-pip install ./
+pip3 install ./
 
 #
-python -m pip install ./
+python -m pip3 install ./
 
 # Install compressed file
-pip install [/path/to/package.tar.gz]
+pip3 install [/path/to/package.tar.gz]
 ```
 
 ### Configuration
@@ -80,7 +80,7 @@ git+https://github.com/[user]/[repo].git@master#egg=[repo]
 
 
 ```sh
-pip install \
+pip3 install \
   -r ./requirements-dev.txt \
   -r ./requirements.txt
 ```
@@ -125,8 +125,8 @@ antigen bundle pip
 #### Setuptools
 
 ```sh
-# pip install ./
-# pip install -e ./
+# pip3 install ./
+# pip3 install -e ./
 
 python ./setup.py install
 python ./setup.py develop
@@ -136,6 +136,17 @@ python ./setup.py clean --all
 ```
 
 ### Issues
+
+#### Permission Denied
+
+```log
+PermissionError: [Errno 13] Permission denied: '/usr/local/lib/python3.6/site-packages/snowballstemmer'
+```
+
+```sh
+#
+pip3 install --user [package]
+```
 
 <!-- #### Package Finder
 
@@ -157,7 +168,7 @@ error: command '/usr/bin/clang' failed with exit code 1
 export CC=gcc
 export CXX=clang
 
-pip install -r ./requirements.txt
+pip3 install -r ./requirements.txt
 ```
 
 #### GCC
@@ -194,7 +205,7 @@ trusted-host =
 EOF
 
 # Or, using trust host
-pip install \
+pip3 install \
   --trusted-host pypi.org \
   --trusted-host files.pythonhosted.org \
   coverage
@@ -205,7 +216,7 @@ export PIP_TRUSTED_HOST='pypi.org files.pythonhosted.org'
 
 ```sh
 # Or, try upgrade certificates
-pip install --upgrade certifi
+pip3 install --upgrade certifi
 ```
 
 ## Dockerfile
@@ -215,7 +226,7 @@ pip install --upgrade certifi
 ```Dockerfile
 COPY ./requirements.txt /usr/src/[appname]
 
-RUN if [ -s /usr/src/[appname]/requirements.txt ]; then pip install -r /usr/src/[appname]/requirements.txt; fi
+RUN if [ -s /usr/src/[appname]/requirements.txt ]; then pip3 install -r /usr/src/[appname]/requirements.txt; fi
 ```
 
 ```sh

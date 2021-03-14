@@ -22,7 +22,7 @@ brew install uwsgi
 
 ```sh
 # As user dependency
-pip install -U uWSGI
+pip3 install -U uWSGI
 
 # As project dependency
 echo 'uWSGI==2.0.19.1' >> ./requirements.txt

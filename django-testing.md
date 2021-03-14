@@ -26,7 +26,7 @@ https://www.linkedin.com/learning/test-driven-development-in-django/
 
 ```sh
 # As user dependency
-pip install -U pytest pytest-django pytest-cov
+pip3 install -U pytest pytest-django pytest-cov
 
 
 # As project dependency
@@ -36,7 +36,7 @@ pytest-django==4.1.0
 pytest-cov==2.11.1
 EOF
 
-pip install \
+pip3 install \
   -r ./requirements-test.txt \
   -r ./requirements-dev.txt \
   -r ./requirements.txt

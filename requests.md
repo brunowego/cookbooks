@@ -6,7 +6,7 @@
 
 ```sh
 # As user dependency
-pip install -U requests
+pip3 install -U requests
 
 # As project dependency
 echo 'requests==2.24.0' >> ./requirements.txt

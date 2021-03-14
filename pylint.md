@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install -U pylint
+pip3 install -U pylint
 ```
 
 ### Commands
@@ -57,7 +57,7 @@ pylint --generate-rcfile > ./.pylintrc
 
 ```sh
 # As user dependency
-pip install -U pylint-flask
+pip3 install -U pylint-flask
 
 # As project dependency
 echo 'pylint-flask==0.6' >> ./requirements-dev.txt

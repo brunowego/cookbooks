@@ -21,7 +21,7 @@ brew install dvc
 #### PIP
 
 ```sh
-pip install -U dvc
+pip3 install -U dvc
 ```
 
 ## Commands

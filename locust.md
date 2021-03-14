@@ -29,7 +29,7 @@ kubectl delete namespace locust --grace-period=0 --force
 #### PIP
 
 ```sh
-pip install -U locustio
+pip3 install -U locustio
 ```
 
 ### Commands

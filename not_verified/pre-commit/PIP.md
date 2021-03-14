@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install -U pre-commit
+pip3 install -U pre-commit
 ```

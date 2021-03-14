@@ -12,7 +12,7 @@ mysql -u root -p -ve 'FLUSH PRIVILEGES'
 ```
 
 ```sh
-pip install -U mysqlclient
+pip3 install -U mysqlclient
 ```
 
 ```sh

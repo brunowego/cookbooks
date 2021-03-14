@@ -7,7 +7,8 @@
 #### Linux
 
 ```sh
-curl -L 'https://github.com/jaegertracing/jaeger/releases/download/v1.9.0/jaeger-1.9.0-linux-amd64.tar.gz' | sudo tar -xzC /usr/local/bin --no-same-owner --no-same-permissions --strip-components 1
+curl -L 'https://github.com/jaegertracing/jaeger/releases/download/v1.9.0/jaeger-1.9.0-linux-amd64.tar.gz' | \
+  sudo tar -xzC /usr/local/bin --no-same-owner --no-same-permissions --strip-components 1
 ```
 
 ### Configuration

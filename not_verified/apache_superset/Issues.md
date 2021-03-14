@@ -11,7 +11,7 @@ pip uninstall -y pandas
 ```
 
 ```sh
-pip install -U pandas==0.23.4
+pip3 install -U pandas==0.23.4
 ```
 
 ## MySQL config

@@ -8,7 +8,7 @@
 
 ```sh
 # As user dependency
-pip install -U django-environ
+pip3 install -U django-environ
 
 # As project dependency
 echo 'django-environ==0.4.5' >> ./requirements.txt

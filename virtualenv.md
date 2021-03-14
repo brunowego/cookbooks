@@ -5,7 +5,7 @@
 ### Installation
 
 ```sh
-pip install -U virtualenv
+pip3 install -U virtualenv
 ```
 
 ### Commands

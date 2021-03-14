@@ -8,7 +8,7 @@
 
 ```sh
 # As user dependency
-pip install -U sentry-sdk
+pip3 install -U sentry-sdk
 
 # As project dependency
 echo 'sentry-sdk==0.19.4' >> ./requirements.txt

@@ -45,7 +45,7 @@ docker volume rm jupyter-data
 #### PIP
 
 ```sh
-pip install -U notebook
+pip3 install -U notebook
 ```
 
 ### Commands
@@ -83,7 +83,7 @@ code --install-extension colinfang.my-nbpreviewer
 #### Global Kernel
 
 ```sh
-pip install -U ipython ipykernel
+pip3 install -U ipython ipykernel
 ```
 
 ```sh

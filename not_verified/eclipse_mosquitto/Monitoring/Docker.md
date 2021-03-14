@@ -19,7 +19,7 @@ docker volume create example-chronograf-data
 cat << EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t example/mqtt-app -
 FROM docker.io/python:3.7-alpine3.9
 
-RUN pip install -q --no-cache paho-mqtt===1.4.0
+RUN pip3 install -q --no-cache paho-mqtt===1.4.0
 
 WORKDIR /usr/src/app
 

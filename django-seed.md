@@ -8,7 +8,7 @@
 
 ```sh
 # As user dependency
-pip install -U django-seed
+pip3 install -U django-seed
 
 # As project dependency
 echo 'django-seed==0.2.2' >> ./requirements.txt

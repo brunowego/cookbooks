@@ -15,7 +15,7 @@ FROM docker.io/jupyter/scipy-notebook:1e374527e15a
 
 USER root
 
-RUN pip install -q --no-cache-dir bookstore===2.2.1
+RUN pip3 install -q --no-cache-dir bookstore===2.2.1
 
 USER $NB_USER
 
@@ -142,8 +142,8 @@ cat << EOF > /home/jovyan/work/Index.ipynb
     "with pip:\n",
     "\n",
     "    # first, always upgrade pip!\n",
-    "    pip install --upgrade pip\n",
-    "    pip install --upgrade ipython jupyter\n",
+    "    pip3 install --upgrade pip\n",
+    "    pip3 install --upgrade ipython jupyter\n",
     "\n",
     "Start the notebook in the tutorial directory:\n",
     "\n",

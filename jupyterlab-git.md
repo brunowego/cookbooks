@@ -9,7 +9,7 @@ cat << EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t example/jupyterlab-git -
 FROM docker.io/jupyter/scipy-notebook:d4cbf2f80a2a
 
 RUN jupyter labextension install @jupyterlab/git --no-build && \
-    pip install jupyterlab-git==0.5.0 && \
+    pip3 install jupyterlab-git==0.5.0 && \
     jupyter serverextension enable --sys-prefix --py jupyterlab_git
 
 RUN git init

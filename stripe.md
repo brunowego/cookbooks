@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install -U stripe
+pip3 install -U stripe
 ```
 
 ### Usage

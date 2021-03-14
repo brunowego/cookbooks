@@ -17,7 +17,7 @@ docker volume create example-minio-data
 cat << EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t example/mlflow -
 FROM docker.io/python:3.7
 
-RUN pip install -q --no-cache mlflow===0.9.1
+RUN pip3 install -q --no-cache mlflow===0.9.1
 
 EXPOSE 5000
 

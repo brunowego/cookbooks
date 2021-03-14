@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install -U pydocstyle
+pip3 install -U pydocstyle
 ```
 
 ### Commands

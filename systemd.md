@@ -58,6 +58,8 @@ systemctl \
 
 ```sh
 code --install-extension coolbear.systemd-unit-file
+
+# hangxingliu.vscode-systemd-support
 ```
 
 #### Custom

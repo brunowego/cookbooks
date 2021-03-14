@@ -13,7 +13,7 @@ brew install thefuck
 #### PIP
 
 ```sh
-pip install -U thefuck
+pip3 install -U thefuck
 ```
 
 ### Configuration

@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install -U genpac
+pip3 install -U genpac
 ```
 
 ### Commands

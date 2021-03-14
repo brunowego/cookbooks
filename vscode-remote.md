@@ -24,3 +24,8 @@ EOF
 
 1. View -> Command Palette...
 2. Remote-SSH: Connect to Host...
+
+## Logs
+
+1. View -> Output Tab
+2. Select: Remote - SSH

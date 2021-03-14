@@ -86,10 +86,10 @@ django-opentracing
 
 ```sh
 # 2.x
-pip install -U django==2.2.17
+pip3 install -U django==2.2.17
 
 # 3.x
-pip install -U django==3.1.3
+pip3 install -U django==3.1.3
 ```
 
 ### Commands
@@ -131,7 +131,7 @@ echo 'Django==2.2.17' >> ./requirements.txt
 echo 'Django==3.1.3' >> ./requirements.txt
 
 #
-pip install \
+pip3 install \
   -r ./requirements-dev.txt \
   -r ./requirements.txt
 ```
@@ -171,7 +171,7 @@ djongo==1.3.3
 EOF
 
 #
-pip install -r ./requirements.txt
+pip3 install -r ./requirements.txt
 ```
 
 Comment or remove `BASE_DIR` variable.
@@ -203,7 +203,7 @@ DATABASES = {
 echo 'psycopg2-binary==2.8.6' >> ./requirements.txt
 
 #
-pip install -r ./requirements.txt
+pip3 install -r ./requirements.txt
 ```
 
 Comment or remove `BASE_DIR` variable.
@@ -476,7 +476,7 @@ export LDFLAGS='-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib'
 
 LDFLAGS="-L$(brew --prefix openssl)/lib" \
   CFLAGS="-I$(brew --prefix openssl)/include" \
-  pip install -r ./requirements.txt
+  pip3 install -r ./requirements.txt
 ``` -->
 
 ### Tips
@@ -533,7 +533,7 @@ RUN apk add -q --no-cache \
 
 COPY ./requirements.txt ./
 
-RUN pip install -q --no-cache-dir -r ./requirements.txt
+RUN pip3 install -q --no-cache-dir -r ./requirements.txt
 
 COPY ./core ./core
 COPY ./App ./App
@@ -553,7 +553,7 @@ RUN addgroup -g 1000 django && \
 
 COPY --chown=django:django ./requirements.txt ./
 
-RUN pip install --no-cache-dir -r ./requirements.txt
+RUN pip3 install --no-cache-dir -r ./requirements.txt
 
 COPY --chown=django:django ./core ./core
 COPY --chown=django:django ./App ./App
@@ -620,7 +620,7 @@ RUN apk add -q --no-cache -t .build-deps \
 
 COPY ./requirements.txt ./
 
-RUN pip install --no-cache-dir -r ./requirements.txt
+RUN pip3 install --no-cache-dir -r ./requirements.txt
 
 RUN ./manage.py compilemessages
 

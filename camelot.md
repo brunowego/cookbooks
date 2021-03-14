@@ -9,7 +9,7 @@
 ### Installation
 
 ```sh
-pip install camelot-py opencv-python
+pip3 install camelot-py opencv-python
 ```
 
 ### REPL
@@ -33,7 +33,7 @@ pip install camelot-py opencv-python
 #### Installation
 
 ```sh
-pip install excalibur-py
+pip3 install excalibur-py
 ```
 
 #### Running

@@ -13,7 +13,7 @@ brew install awscli
 #### PIP
 
 ```sh
-pip install -U awscli
+pip3 install -U awscli
 ```
 
 ### Commands

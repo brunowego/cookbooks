@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install -U tqdm
+pip3 install -U tqdm
 ```

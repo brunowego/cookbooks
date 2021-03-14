@@ -33,7 +33,7 @@ docker volume rm jupyterlab-data
 ### Installation
 
 ```sh
-pip install -U jupyterlab
+pip3 install -U jupyterlab
 ```
 
 ### Commands

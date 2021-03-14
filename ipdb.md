@@ -6,7 +6,7 @@
 
 ```sh
 # As user dependency
-pip install -U ipdb
+pip3 install -U ipdb
 
 # As project dependency
 echo 'ipdb==0.13.4' >> ./requirements-dev.txt

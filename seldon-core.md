@@ -104,7 +104,7 @@ docker run -it --rm \
 #### PIP
 
 ```sh
-pip install -U seldon-core
+pip3 install -U seldon-core
 ```
 
 ### Commands

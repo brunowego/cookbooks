@@ -67,10 +67,10 @@ mitmdump \
 
 ### Issues
 
-####
+<!-- ####
 
 ```log
 Client Handshake failed. The client may not trust the proxy's certificate for ('127.0.0.1', 8000).
 ```
 
-TODO
+TODO -->

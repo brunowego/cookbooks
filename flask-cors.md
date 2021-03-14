@@ -10,7 +10,7 @@
 
 ```sh
 # As user dependency
-pip install -U flask-cors
+pip3 install -U flask-cors
 
 # As project dependency
 echo 'Flask-Cors==1.10.3' >> ./requirements.txt

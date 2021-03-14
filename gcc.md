@@ -25,14 +25,7 @@ sudo apt -y install gcc libc6-dev
 
 ```sh
 yum check-update
-
-#
-sudo yum -y install gcc-c++
-
-# Repo: Software Collections
-sudo yum -y install devtoolset-7-gcc-c++
-scl enable devtoolset-7 "$SHELL"
-sudo /usr/bin/sh -c 'echo "source scl_source enable devtoolset-7" >> /etc/profile.d/scl.sh'
+sudo yum -y install gcc
 ```
 
 #### APK
@@ -40,6 +33,13 @@ sudo /usr/bin/sh -c 'echo "source scl_source enable devtoolset-7" >> /etc/profil
 ```sh
 apk update
 apk add gcc libc-dev
+```
+
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y gcc
 ```
 
 #### Source
@@ -74,8 +74,6 @@ gcc
 ```sh
 # Version
 gcc --version | head -1
-g++ --version | head -1
-clang++ --version | head -1
 ```
 
 ### Tips

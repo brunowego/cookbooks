@@ -15,7 +15,7 @@ brew install tabula
 ### Installation
 
 ```sh
-pip install tabula-py
+pip3 install tabula-py
 ```
 
 ### REPL

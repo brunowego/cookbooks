@@ -11,7 +11,7 @@
 #### PIP
 
 ```sh
-pip install -U celery[sqs]
+pip3 install -U celery[sqs]
 ```
 
 <!-- ### Usage
@@ -31,7 +31,7 @@ celery -A evalai worker --loglevel=INFO
 
 ```sh
 # As user dependency
-pip install -U celery[sqs]
+pip3 install -U celery[sqs]
 
 # As project dependency
 echo 'celery[sqs]==5.0.1' >> ./requirements.txt

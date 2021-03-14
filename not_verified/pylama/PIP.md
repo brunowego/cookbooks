@@ -3,5 +3,5 @@
 ## Installation
 
 ```sh
-pip install -U pylama
+pip3 install -U pylama
 ```

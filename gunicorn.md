@@ -8,7 +8,7 @@
 
 ```sh
 # As user dependency
-pip install -U gunicorn
+pip3 install -U gunicorn
 
 # As project dependency
 cat << EOF >> ./requirements.txt

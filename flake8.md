@@ -28,7 +28,7 @@ jq '."files.associations"."*.flake8" |= "ini"' "$HOME/.config/Code/User/settings
 
 ```sh
 # As user dependency
-pip install -U flake8
+pip3 install -U flake8
 
 # As project dependency
 echo 'flake8==3.8.4' >> ./requirements-dev.txt

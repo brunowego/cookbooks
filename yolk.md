@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install -U yolk3k
+pip3 install -U yolk3k
 ```
 
 ##

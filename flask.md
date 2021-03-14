@@ -46,7 +46,7 @@ https://github.com/tolgahanuzun/Flask-Login-Example
 #### PIP
 
 ```sh
-pip install -U Flask
+pip3 install -U Flask
 ```
 
 ### Commands
@@ -87,7 +87,7 @@ echo 'requests==2.24.0' >> ./requirements.txt
 
 ```sh
 # As user dependency
-pip install -U Flask
+pip3 install -U Flask
 
 # As project dependency
 cat << EOF >> ./requirements-dev.txt
@@ -99,16 +99,18 @@ echo 'Flask==1.1.2' >> ./requirements.txt
 ```
 
 ```sh
-pip install \
+pip3 install \
   -r ./requirements-dev.txt \
   -r ./requirements.txt
 ```
 
-###
+### Bootstrap App
 
 ```sh
+#
 mkdir -p ./app
 
+#
 cat << EOF > ./app/main.py
 # -*- coding: utf-8 -*-
 """This module defines a simple REST API."""
@@ -124,6 +126,7 @@ def health_check():
     return jsonify(status='ok')
 EOF
 
+#
 cat << EOF > ./wsgi.py
 """Make the server use application."""
 from app.main import app
@@ -132,9 +135,16 @@ from app.main import app
 if __name__ == '__main__':
     app.run(debug=True)
 EOF
+
+#
+FLASK_ENV=development flask run \
+  --host=0.0.0.0 \
+  --port=8080
 ```
 
-###
+### Tips
+
+####
 
 ```py
 #
@@ -164,7 +174,7 @@ EOF
 cat << EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t example/flask-app -
 FROM docker.io/python:3.7-alpine3.9
 
-RUN pip install -q --no-cache Flask===1.1.2
+RUN pip3 install -q --no-cache Flask===1.1.2
 
 WORKDIR /usr/src/app
 
@@ -215,5 +225,6 @@ curl -i "http://127.0.0.1:5000"
 
 ```sh
 docker rm -f flask-app
+
 docker volume rm flask-app
 ```

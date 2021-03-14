@@ -200,7 +200,7 @@ curl \
 
 ```sh
 # As user dependency
-pip install -U ambari
+pip3 install -U ambari
 
 # As project dependency
 echo 'ambari==0.1.7' >> ./requirements.txt

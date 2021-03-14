@@ -15,5 +15,5 @@ python -c 'import sys; print(sys.path)'
 ## Root access
 
 ```sh
-pip install -U [package]
+pip3 install -U [package]
 ```

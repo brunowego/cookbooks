@@ -14,7 +14,7 @@ https://tute.io/how-to-rebuild-django-mptt-tree-structure
 
 ```sh
 # As user dependency
-pip install -U django-mptt
+pip3 install -U django-mptt
 
 # As project dependency
 echo 'django-mptt==0.11.0' >> ./requirements.txt

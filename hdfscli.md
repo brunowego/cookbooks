@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install -U ipython hdfs
+pip3 install -U ipython hdfs
 ```
 
 ### Configuration
@@ -51,7 +51,7 @@ CLIENT.list('/')
 ###### PIP
 
 ```sh
-pip install kerberos requests-kerberos
+pip3 install kerberos requests-kerberos
 ```
 
 ##### Configuration

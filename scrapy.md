@@ -14,7 +14,7 @@ https://app.pluralsight.com/guides/crawling-web-python-scrapy
 #### PIP
 
 ```sh
-pip install -U scrapy
+pip3 install -U scrapy
 ```
 
 ### Commands
@@ -38,5 +38,5 @@ scrapy startproject [pname]
 # Darwin
 LDFLAGS="-L$(brew --prefix openssl)/lib" \
   CFLAGS="-I$(brew --prefix openssl)/include" \
-  pip install -U scrapy
+  pip3 install -U scrapy
 ```

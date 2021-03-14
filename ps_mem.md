@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install -U ps_mem
+pip3 install -U ps_mem
 ```
 
 ### Commands

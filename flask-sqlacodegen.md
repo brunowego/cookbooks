@@ -8,7 +8,7 @@
 
 ```sh
 # Only Python 2.x are supported.
-pip install -U mysql-python flask-sqlacodegen
+pip3 install -U mysql-python flask-sqlacodegen
 ```
 
 ### Usage

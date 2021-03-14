@@ -78,10 +78,10 @@ nvidia-xconfig --query-gpu-info
 
 ```sh
 # Darwin
-pip install -U tensorflow
+pip3 install -U tensorflow
 
 # Linux
-pip install -U tensorflow-gpu
+pip3 install -U tensorflow-gpu
 ```
 
 <!--
@@ -159,7 +159,7 @@ devices
 #### Keras
 
 ```sh
-pip install -U keras
+pip3 install -U keras
 ```
 
 TODO

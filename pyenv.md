@@ -52,10 +52,17 @@ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 ##### Using Tarball
 
 ```sh
-#
+# Direct install
 mkdir -p ~/.pyenv && \
   curl -L "$(curl -ks https://api.github.com/repos/pyenv/pyenv/releases/latest | grep tarball_url | cut -d '"' -f 4)" | \
     tar -xzC ~/.pyenv --strip-components 1
+
+# Install Remote
+curl -L "$(curl -ks https://api.github.com/repos/pyenv/pyenv/releases/latest | grep tarball_url | cut -d '"' -f 4)"
+
+tar -xzC ~/.pyenv --strip-components 1
+
+mkdir -p ~/.pyenv
 ```
 
 ### Environment

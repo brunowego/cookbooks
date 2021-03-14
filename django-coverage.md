@@ -12,12 +12,12 @@
 
 ```sh
 # As user dependency
-pip install -U coverage
+pip3 install -U coverage
 
 # As project dependency
 echo 'coverage==5.4' >> ./requirements-test.txt
 
-pip install \
+pip3 install \
   -r ./requirements-test.txt \
   -r ./requirements-dev.txt \
   -r ./requirements.txt

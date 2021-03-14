@@ -24,3 +24,10 @@ sudo yum -y install krb5-server
 sudo apk update
 sudo apk add krb5-server
 ```
+
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y krb5-server
+```

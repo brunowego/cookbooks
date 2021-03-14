@@ -8,7 +8,7 @@
 
 ```sh
 # As user dependency
-pip install -U SQLAlchemy
+pip3 install -U SQLAlchemy
 
 # As project dependency
 echo 'SQLAlchemy==1.3.19' >> ./requirements.txt
@@ -20,7 +20,7 @@ echo 'SQLAlchemy==1.3.19' >> ./requirements.txt
 
 ```sh
 # As user dependency
-pip install -U pymongo
+pip3 install -U pymongo
 
 # As project dependency
 echo 'pymongo==3.11.0' >> ./requirements.txt
@@ -72,7 +72,7 @@ Install [PyMySQL](./pymysql)
 
 ```sh
 # As user dependency
-pip install -U ibm_db_sa
+pip3 install -U ibm_db_sa
 
 # As project dependency
 echo 'ibm-db-sa==0.3.5' >> ./requirements.txt

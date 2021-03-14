@@ -23,7 +23,7 @@ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.p
 #### PIP
 
 ```sh
-pip install -U poetry
+pip3 install -U poetry
 ```
 
 ### Environment

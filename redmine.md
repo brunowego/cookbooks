@@ -52,5 +52,6 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 
 ```sh
 docker rm -f redmine-postgres redmine
+
 docker volume rm redmine-postgres-data redmine-files
 ```

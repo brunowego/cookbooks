@@ -8,7 +8,7 @@
 
 ```sh
 # As user dependency
-pip install -U whitenoise
+pip3 install -U whitenoise
 
 # As project dependency
 echo 'whitenoise==5.2.0' >> ./requirements.txt

@@ -17,7 +17,7 @@ https://django-rest-framework.programmingpedia.net/en/tutorial/2377/serializers
 
 ```sh
 # As user dependency
-pip install -U djangorestframework
+pip3 install -U djangorestframework
 
 # As project dependency
 echo 'djangorestframework==3.12.2' >> ./requirements.txt

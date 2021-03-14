@@ -7,7 +7,7 @@
 #### PIP
 
 ```sh
-pip install -U pacgen
+pip3 install -U pacgen
 ```
 
 ### Configuration
