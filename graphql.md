@@ -1,6 +1,8 @@
 # GraphQL
 
 <!--
+https://www.linkedin.com/learning/building-a-graphql-project-with-react-js/why-use-react-with-graphql-for-projects
+
 https://www.youtube.com/watch?v=E3NHd-PkLrQ
 https://www.linkedin.com/learning/graphql-essential-training/learn-graphql-essentials
 

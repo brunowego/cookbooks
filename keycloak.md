@@ -17,7 +17,7 @@ https://gist.github.com/kurt---/7f5415d268f815067252d582044bc99d
 
 ```sh
 helm repo add codecentric https://codecentric.github.io/helm-charts
-helm repo update codecentric
+helm repo update
 ```
 
 ### Install
@@ -34,8 +34,7 @@ kubectl create secret tls example.tls-secret \
 ```
 
 ```sh
-helm install codecentric/keycloak \
-  -n keycloak \
+helm install keycloak codecentric/keycloak \
   --namespace keycloak \
   --set keycloak.username=admin \
   --set-string keycloak.ingress.enabled=true \

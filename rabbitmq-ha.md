@@ -13,8 +13,7 @@ kubectl create namespace rabbitmq-ha
 ```
 
 ```sh
-helm install stable/rabbitmq-ha \
-  -n rabbitmq-ha \
+helm install rabbitmq-ha stable/rabbitmq-ha \
   --namespace rabbitmq-ha \
   --set ingress.enabled=true \
   --set ingress.hostName=rabbitmq.example.com

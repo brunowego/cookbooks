@@ -80,3 +80,18 @@ mvn quarkus:add-extension -Dextensions='container-image-docker'
 
 mvn package -Dmaven.tet.skip=true -Dquarkus.container-image.build=true
 ```
+
+## Tips
+
+### IntelliJ IDEA
+
+#### Plugin Install
+
+1. Preferences
+2. Plugins
+3. Marketplace Tab -> Quarkus Tools
+
+#### Create Module
+
+1. New -> Module...
+2. Quarkus Tab -> Next

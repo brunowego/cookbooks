@@ -33,8 +33,7 @@ labels:
 ### Install
 
 ```sh
-helm install stable/traefik \
-  -n traefik \
+helm install traefik stable/traefik \
   --namespace kube-system \
   --set rbac.enabled=true \
   --set kubernetes.ingressEndpoint.useDefaultPublishedService=true

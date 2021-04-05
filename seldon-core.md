@@ -25,7 +25,7 @@ https://github.com/danielfrg/polyaxon-argo-seldon-example
 
 ```sh
 helm repo add seldon https://storage.googleapis.com/seldon-charts
-helm repo update seldon
+helm repo update
 ```
 
 ### Install
@@ -35,8 +35,7 @@ kubectl create namespace seldon-system
 ```
 
 ```sh
-helm install seldon/seldon-core-operator \
-  -n seldon-core \
+helm install seldon-core seldon/seldon-core-operator \
   --namespace seldon-system
 ```
 

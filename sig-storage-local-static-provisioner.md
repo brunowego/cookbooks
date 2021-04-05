@@ -17,8 +17,7 @@ git clone https://github.com/kubernetes-sigs/sig-storage-local-static-provisione
 ### Install
 
 ```sh
-helm install ./helm/provisioner \
-  -n local-volume-provisioner \
+helm install local-volume-provisioner ./helm/provisioner \
   --namespace kube-system \
   --set 'classes[0].name=local-storage' \
   --set 'classes[0].hostDir=/mnt/disks' \

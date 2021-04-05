@@ -13,6 +13,12 @@ https://medium.com/@saraswatpuneet/blue-green-deployments-using-helm-charts-93ec
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install helm
+```
+
 #### Unix-like
 
 ```sh
@@ -62,11 +68,10 @@ helm repo index \
 
 # Add
 helm repo add local 'http://127.0.0.1:8879/charts'
-helm repo update local
+helm repo update
 
 # Install
-helm install local/[name] \
-  -n [name] \
+helm install [name] local/[name] \
   --namespace [name]
 
 # Remove
@@ -97,8 +102,7 @@ helm delete $(helm ls --all --short) --purge
 helm inspect values [repo]/[name] | sed 's|repo/image|registry.example.com/repo/image|'
 
 # When install
-helm install [repo]/[name] \
-  -n [name] \
+helm install [name] [repo]/[name] \
   --namespace [namespace] \
   -f <(helm inspect values [repo]/[name] | sed 's|repo/image|registry.example.com/repo/image|')
 ```
@@ -106,8 +110,7 @@ helm install [repo]/[name] \
 <!-- ####
 
 ```sh
-helm install polyaxon/polyaxon \
-  -n polyaxon \
+helm install polyaxon polyaxon/polyaxon \
   --namespace polyaxon \
   --debug \
   --dry-run
@@ -142,6 +145,15 @@ source <(helm completion zsh)
 ```
 
 ### Issues
+
+#### Kubernetes Configuration
+
+```log
+WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: ~/.kube/config
+WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: ~/.kube/config
+```
+
+TODO
 
 #### API Version
 
@@ -185,7 +197,7 @@ helm search lamp
 # Start Serve
 
 #
-helm repo update local
+helm repo update
 ```
 
 ```sh
@@ -193,8 +205,7 @@ kubectl create namespace lamp
 ```
 
 ```sh
-helm install local/lamp \
-  -n lamp \
+helm install lamp local/lamp \
   --namespace lamp \
   --set service.type=ClusterIP \
   --set ingress.enabled=true \

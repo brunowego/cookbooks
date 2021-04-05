@@ -29,8 +29,7 @@ kubectl create namespace dremio
 ```
 
 ```sh
-helm install ./charts/dremio \
-  -n dremio-oss \
+helm install dremio-oss ./charts/dremio \
   --namespace dremio \
   --set coordinator.memory=1024 \
   --set coordinator.cpu=1 \

@@ -10,7 +10,7 @@
 
 ```sh
 helm repo add seldon https://storage.googleapis.com/seldon-charts
-helm repo update seldon
+helm repo update
 ```
 
 ### Install
@@ -23,8 +23,7 @@ kubectl create secret tls example.tls-secret \
 ```
 
 ```sh
-helm install seldon/seldon-core-analytics \
-  -n seldon-core-analytics \
+helm install seldon-core-analytics seldon/seldon-core-analytics \
   --namespace seldon \
   --set grafana_prom_service_type=ClusterIP \
   --set grafana_prom_admin_password="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)"

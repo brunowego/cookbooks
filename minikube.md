@@ -8,12 +8,18 @@
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install minikube
+```
+
 #### Darwin
 
 ```sh
 # v1.6.0
 curl \
-  -L 'https://storage.googleapis.com/minikube/releases/v1.4.0/minikube-darwin-amd64' \
+  -L 'https://storage.googleapis.com/minikube/releases/v1.6.0/minikube-darwin-amd64' \
   -o /usr/local/bin/minikube && \
     chmod +x /usr/local/bin/minikube
 
@@ -27,9 +33,9 @@ curl \
 #### Linux
 
 ```sh
-# v1.4.0
+# v1.6.0
 sudo curl \
-  -L 'https://storage.googleapis.com/minikube/releases/v1.4.0/minikube-linux-amd64' \
+  -L 'https://storage.googleapis.com/minikube/releases/v1.6.0/minikube-linux-amd64' \
   -o /usr/local/bin/minikube && \
     sudo chmod +x /usr/local/bin/minikube
 
@@ -58,18 +64,10 @@ minikube config set WantUpdateNotification false
 #### Base
 
 ```sh
-mkdir -p ~/.minikube/config
-```
-
-```sh
-tee ~/.minikube/config/config.json << EOF
-{
-  "addon-manager": true,
-  "cpus": 4,
-  "disk-size": "40g",
-  "memory": 8192
-}
-EOF
+# minikube config set addon-manager true
+minikube config set cpus 4
+minikube config set memory 8192
+minikube config set disk-size 40g
 ```
 
 #### VM Driver
@@ -117,15 +115,16 @@ minikube start \
 ```
 
 ```sh
-#
+# Show Current
 minikube profile
-minikube profile minikube
-```
 
-```sh
+# Set
+minikube profile minikube
+
 #
 kubectl config view
 
+#
 kubectl config set-context \
   --cluster=minikube \
   --user=minikube \
@@ -148,6 +147,7 @@ minikube mount [/path/to/export]:[/path/to/mount/point]
 ### Environment
 
 ```sh
+#
 eval "$(minikube docker-env)"
 ```
 

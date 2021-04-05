@@ -14,7 +14,7 @@
 
 ```sh
 helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
-helm repo update incubator
+helm repo update
 ```
 
 ### Install
@@ -31,8 +31,7 @@ kubectl create secret tls example.tls-secret \
 ```
 
 ```sh
-helm install incubator/vault \
-  -n vault \
+helm install vault incubator/vault \
   --namespace vault \
   --set vault.dev=false \
   # --set vault.config.storage.consul.address=consul.$(minikube ip).nip.io \

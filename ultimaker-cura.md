@@ -50,9 +50,8 @@ https://www.youtube.com/watch?v=XadcyqoQmrw
 | Section | Parameter | Value |
 | --- | --- | --- |
 | Build Plate Adhesion | Build Plate Adhesion Type | None |
-| Infill | Infill Density | +25% |
+| Infill | Infill Density | +20% |
 | Quality | Layer Height | 0.16 |
-| Shell | Horizontal Expansion | 0.1 |
 | Shell | Wall Line Count | 4 |
 | Special Modes | Arc Welder | Yes |
 | Special Modes | Print Sequence | One at a Time |

@@ -17,8 +17,7 @@ kubectl create namespace couchdb
 ```
 
 ```sh
-helm install stable/couchdb \
-  -n couchdb \
+helm install couchdb stable/couchdb \
   --namespace couchdb \
   --set ingress.enabled=true \
   --set ingress.hosts={couchdb.$(minikube ip).nip.io}

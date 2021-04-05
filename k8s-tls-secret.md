@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-- [OpenSSL](/openssl.md#generate)
+- [OpenSSL](/openssl.md#generate-self-signed-certificate)
 
 ## Create
 

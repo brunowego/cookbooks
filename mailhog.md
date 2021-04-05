@@ -33,7 +33,7 @@ mailhog bcrypt 'Pa$$w0rd!'
 
 ```sh
 helm repo add codecentric https://codecentric.github.io/helm-charts
-helm repo update codecentric
+helm repo update
 ```
 
 ### Install
@@ -43,8 +43,7 @@ kubectl create namespace mailhog
 ```
 
 ```sh
-helm install codecentric/mailhog \
-  -n mailhog \
+helm install mailhog codecentric/mailhog \
   --namespace mailhog \
   --set auth.enabled=true \
   --set auth.fileContents="admin:$(mailhog bcrypt admin)" \

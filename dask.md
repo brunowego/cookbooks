@@ -13,8 +13,7 @@ kubectl create namespace dask
 ```
 
 ```sh
-helm install stable/dask \
-  -n dask \
+helm install dask stable/dask \
   --namespace dask \
   --set scheduler.serviceType=ClusterIP \
   --set jupyter.serviceType=ClusterIP \

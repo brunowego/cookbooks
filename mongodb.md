@@ -22,8 +22,7 @@ kubectl create namespace mongodb
 ```
 
 ```sh
-helm install stable/mongodb \
-  -n mongodb \
+helm install mongodb stable/mongodb \
   --namespace mongodb \
   --set ingress.enabled=true \
   --set ingress.hosts={mongodb.example.com}

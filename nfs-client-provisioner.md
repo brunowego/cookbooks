@@ -21,8 +21,7 @@ showmount -e "$(hostname -I | awk '{print $2}')"
 ```
 
 ```sh
-helm install stable/nfs-client-provisioner \
-  -n nfs-client-provisioner \
+helm install nfs-client-provisioner stable/nfs-client-provisioner \
   --namespace nfs-client \
   --set storageClass.name='standard' \
   --set storageClass.defaultClass=true \

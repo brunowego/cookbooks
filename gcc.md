@@ -83,3 +83,14 @@ gcc --version | head -1
 ```sh
 ./configure --help | fgrep [param]
 ```
+
+### Issues
+
+#### Missing Command
+
+```log
+unable to execute 'gcc': No such file or directory
+error: command 'gcc' failed with exit status 1
+```
+
+Just install GCC, the GNU Compiler Collection (gcc).

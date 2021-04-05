@@ -16,8 +16,7 @@ helm update
 ### Install
 
 ```sh
-helm install bitnami/etcd \
-  -n etcd-cluster \
+helm install etcd-cluster bitnami/etcd \
   --namespace kube-system \
   --set statefulset.replicaCount=1 \
   --set auth.rbac.enabled=false \

@@ -142,8 +142,7 @@ kubectl create namespace postgresql
 ```
 
 ```sh
-helm install stable/postgresql \
-  -n postgresql \
+helm install postgresql stable/postgresql \
   --namespace postgresql \
   --set postgresqlPassword='postgres'
 ```

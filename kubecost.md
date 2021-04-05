@@ -10,7 +10,7 @@
 
 ```sh
 helm repo add kubecost https://kubecost.github.io/cost-analyzer
-helm repo update kubecost
+helm repo update
 ```
 
 ### Install
@@ -20,8 +20,7 @@ kubectl create namespace kubecost
 ```
 
 ```sh
-helm install kubecost/cost-analyzer \
-  -n kubecost \
+helm install kubecost kubecost/cost-analyzer \
   --namespace kubecost \
   --set ingress.enabled=true \
   --set ingress.hosts={kubecost.$(minikube ip).nip.io} \

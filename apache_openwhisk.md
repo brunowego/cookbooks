@@ -78,8 +78,7 @@ git clone https://github.com/apache/openwhisk-deploy-kube.git
 ```
 
 ```sh
-helm install openwhisk-deploy-kube/helm/openwhisk \
-  -n openwhisk \
+helm install openwhisk openwhisk-deploy-kube/helm/openwhisk \
   --namespace openwhisk \
   --set whisk.ingress.apiHostName="openwhisk.$(minikube ip).nip.io" \
   --set whisk.ingress.apiHostPort='443' \

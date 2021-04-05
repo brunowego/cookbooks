@@ -11,7 +11,7 @@
 
 ```sh
 helm repo add monocular https://helm.github.io/monocular
-helm repo update monocular
+helm repo update
 ```
 
 ### Install
@@ -28,8 +28,7 @@ kubectl create secret tls example.tls-secret \
 ```
 
 ```sh
-helm install monocular/monocular \
-  -n monocular \
+helm install monocular monocular/monocular \
   --namespace monocular \
   --set ingress.hosts={monocular.example.com} \
   --set ingress.tls.secretName=example.tls-secret \

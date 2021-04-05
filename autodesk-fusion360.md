@@ -35,7 +35,7 @@ brew install --cask autodesk-fusion360
 #### Mesh to BRep
 
 1. Open Component Bodies
-2. Right Clic in MeshBody1 -> Click in Mesh to BRep
+2. Right Click in MeshBody1 -> Click in Mesh to BRep
 3. Pop up: Click in OK
 
 ### Issues

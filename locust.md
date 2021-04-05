@@ -9,8 +9,7 @@ kubectl create namespace locust
 ```
 
 ```sh
-helm install stable/locust \
-  -n locust \
+helm install locust stable/locust \
   --namespace locust \
   --set service.type=ClusterIP
 ```

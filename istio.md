@@ -40,7 +40,7 @@ https://github.com/swilliams11/apigee-istio-k8s-demo#prep-script
 
 ```sh
 helm repo add istio.io https://storage.googleapis.com/istio-release/releases/1.3.0/charts
-helm repo update istio.io
+helm repo update
 ```
 
 ### Install
@@ -50,8 +50,7 @@ kubectl create namespace istio-system
 ```
 
 ```sh
-helm install istio.io/istio-init \
-  -n istio-init \
+helm install istio-init istio.io/istio-init \
   --namespace istio-system
 ```
 
@@ -60,8 +59,7 @@ kubectl get crds | grep 'istio.io' | wc -l
 ```
 
 ```sh
-helm install istio.io/istio \
-  -n istio \
+helm install istio istio.io/istio \
   --namespace istio-system \
   --set grafana.enabled=true \
   --set tracing.enabled=true \

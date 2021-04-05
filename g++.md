@@ -29,6 +29,13 @@ scl enable devtoolset-7 "$SHELL"
 sudo /usr/bin/sh -c 'echo "source scl_source enable devtoolset-7" >> /etc/profile.d/scl.sh'
 ```
 
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y gcc-c++
+```
+
 ### Usage
 
 ```sh
@@ -45,4 +52,4 @@ gcc: error trying to exec 'cc1plus': execvp: No such file or directory
 error: command 'gcc' failed with exit status 1
 ```
 
-Just install.
+Just install g++.

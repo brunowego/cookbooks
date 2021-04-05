@@ -43,85 +43,51 @@ sudo su - "$USER"
 
 *Note: Remove square brackets.*
 
-#### Replace
-
 ```sh
+# Replace
 sed 's/[pattern]/[text]/' [/path/to/file]
-```
 
-##### Global
-
-```sh
+# Global
 sed 's/[pattern]/[text]/g' [/path/to/file]
-```
 
-##### Multiple
-
-```sh
+# Multiple
 sed 's/[pattern]/[text]/; s/[pattern]/[text]/' [/path/to/file]
-```
 
-##### With Regex
-
-```sh
+# With Regex
 sed -ri '/[pattern]/ s/[original]/[text]/' [/path/to/file]
-```
 
-#### Prepend
-
-```sh
+# Prepend
 sed '/[pattern]/i [text]' [/path/to/file]
-```
 
-#### Append
-
-```sh
+# Append
 sed '/[pattern]/a [text]' [/path/to/file]
-```
 
-#### Before
-
-```sh
+# Before
 sed 's/[pattern]/& [text]' [/path/to/file]
-```
 
-#### After
-
-```sh
+# After
 sed 's/[pattern]/[text] &' [/path/to/file]
-```
 
-####
-
-```sh
+#
 sed s/[pattern]/[text]/ [/path/to/file.template] > [/path/to/file]
-```
 
-####
-
-```sh
+#
 sed '/^[attr] =/s/= .*/= [value]/' [/path/to/file]
-```
 
-####
-
-```sh
+#
 sed '1s/^/[text]/' [/path/to/file]
-```
 
-#### Remove Comment
-
-```sh
+# Remove Comment
 sed 's/#\([attribute]:\)/\1/g' [/path/to/file]
 
-# Add value
+# Add Value
 sed 's/#\([attribute]:\)/\1 [value]/g' [/path/to/file]
-```
 
-#### Remove
-
-##### Line
-
-```sh
+# Remove Line
 sed '1d' ~/.ssh/known_hosts
+
+#
+docker exec -i [name] /bin/sh << \EOSHELL
+sed -i 's/[pattern]/[text]/' [/path/to/file]
+EOSHELL
 ```

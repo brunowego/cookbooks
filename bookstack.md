@@ -9,8 +9,7 @@ kubectl create namespace bookstack
 ```
 
 ```sh
-helm install stable/bookstack \
-  -n bookstack \
+helm install bookstack stable/bookstack \
   --namespace bookstack \
   --set podSecurityPolicy.enabled=true \
   --set ingress.enabled=true \

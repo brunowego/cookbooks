@@ -60,6 +60,7 @@ yarn config set save-prefix '~'
 # License
 yarn config set init-license 'MIT'
 yarn config set init-license 'UNLICENSED'
+yarn config set init-license 'COPYRIGHT'
 
 # Git ignore
 echo '/yarn-error.log' >> ~/.gitignore_global

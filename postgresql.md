@@ -129,13 +129,15 @@ pg_dump \
   -d [db-name] \
   -h 127.0.0.1 \
   -U postgres \
-  > ddl.sql
+  -n public \
+  > dump.sql
 
 ## DDL
 pg_dump \
   -d [db-name] \
   -h 127.0.0.1 \
   -U postgres \
+  -n public \
   --schema-only \
   > ddl.sql
 
@@ -144,9 +146,17 @@ pg_dump \
   -d [db-name] \
   -h 127.0.0.1 \
   -U postgres \
+  -n public \
   --data-only \
   --column-inserts \
   > dml.sql
+
+# Import
+psql \
+  -d [db-name] \
+  -h 127.0.0.1 \
+  -U postgres \
+  < dump.sql
 ```
 
 ### Tips

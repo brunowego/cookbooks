@@ -11,7 +11,7 @@ https://www.checkmarket.com/blog/csat-ces-nps-compared/
 - [Qualaroo](https://qualaroo.com/)
 - [Refiner](https://refiner.io/)
 - [SatisMeter](https://satismeter.com/)
-- [Wootric](https://www.wootric.com/)
+- [Wootric](https://wootric.com/)
 
 <!--
 https://github.com/satismeter

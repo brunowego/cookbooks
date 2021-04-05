@@ -13,8 +13,7 @@ kubectl create namespace tensorflow-serving
 ```
 
 ```sh
-helm install stable/tensorflow-serving \
-  -n mnist \
+helm install mnist stable/tensorflow-serving \
   --namespace tensorflow-serving \
   --set serviceType=ClusterIP \
   --set modelName='mnist' \

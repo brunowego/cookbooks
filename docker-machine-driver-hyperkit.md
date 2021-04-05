@@ -2,6 +2,10 @@
 
 ## CLI
 
+### Dependencies
+
+- [Docker Machine](/docker-machine.md)
+
 ### Installation
 
 #### Homebrew

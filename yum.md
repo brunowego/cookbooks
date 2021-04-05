@@ -6,82 +6,45 @@
 yum -h
 ```
 
-## Examples
-
-### Update
+## Usage
 
 ```sh
+# Update
 yum check-update
-```
-
-```sh
 sudo yum -y update
-```
 
-### Search
-
-```sh
+# Search
 yum search [package]
-```
 
-### Install
-
-```sh
+# Install
 sudo yum -y install [package]
-```
 
-#### No plugins
-
-```sh
+# No plugins
 sudo yum install --noplugins -y [package]
-```
 
-#### Disable plugin
-
-```sh
+# Disable plugin
 sudo yum install --disableplugin=fastestmirror -y [package]
-```
 
-### Info
-
-```sh
+# Info
 yum info [package]
-```
 
-### Show dependencies
-
-```sh
+# Show dependencies
 yum deplist [package]
-```
 
-### Repository
-
-```sh
+# Repository
 sudo vim /etc/yum.repos.d/[name].repo
-```
 
-### Erase
-
-```sh
+# Erase
 sudo yum erase [package]
-```
 
-### Clean
-
-```sh
+# Clean
 sudo yum clean all
 sudo rm -fR /var/cache/yum/*
-```
 
-### Repository list
-
-```sh
+# Repository list
 yum repolist
-```
 
-### List
-
-```sh
+# List
 yum list
 
 # Installed
@@ -111,7 +74,10 @@ sudo rm -f /run/yum.pid
 ### Dockerfile
 
 ```Dockerfile
-RUN yum -y install [package]-[version]
+RUN yum -y install \
+      [package]-[version] && \
+    yum -y clean all && \
+      rm -rf /var/cache
 ```
 
 ### Proxy
@@ -121,10 +87,10 @@ You may not need to configure the proxy, before continuing, try keep variables b
 ```
 
 ```sh
-# Configuration
+# With environment
 sudo /usr/bin/sh -c "echo 'proxy=$http_proxy' >> /etc/yum.conf"
 
-# Or
+# With host and port environment
 sudo /usr/bin/sh -c "echo 'proxy=http://$PROXY_HOST:$PROXY_PORT' >> /etc/yum.conf"
 
 # With auth

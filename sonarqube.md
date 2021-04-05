@@ -152,8 +152,7 @@ kubectl create namespace sonarqube
 ```
 
 ```sh
-helm install stable/sonarqube \
-  -n sonarqube \
+helm install sonarqube stable/sonarqube \
   --namespace sonarqube \
   --set ingress.enabled=true \
   --set "ingress.hosts[0].name=sonarqube.$(minikube ip).nip.io"

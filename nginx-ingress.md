@@ -24,8 +24,7 @@ minikube addons disable ingress
 ### Install
 
 ```sh
-helm install stable/nginx-ingress \
-  -n nginx-ingress \
+helm install nginx-ingress stable/nginx-ingress \
   --namespace kube-system \
   --set controller.publishService.enabled=true
 ```

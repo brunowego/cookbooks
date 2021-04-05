@@ -17,8 +17,7 @@ kubectl create namespace grafana
 ```
 
 ```sh
-helm install stable/grafana \
-  -n grafana \
+helm install grafana stable/grafana \
   --namespace grafana \
   --set ingress.enabled=true \
   --set ingress.hosts={grafana.$(minikube ip).nip.io}

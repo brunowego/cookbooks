@@ -30,7 +30,7 @@
 
 ```sh
 helm repo add gitlab https://charts.gitlab.io
-helm repo update gitlab
+helm repo update
 ```
 
 ### Install
@@ -40,8 +40,7 @@ kubectl create namespace gitlab
 ```
 
 ```sh
-helm install gitlab/gitlab \
-  -n gitlab-ce \
+helm install gitlab-ce gitlab/gitlab \
   --namespace gitlab \
   --set global.edition=ce \
   --set global.hosts.domain=$(minikube ip).nip.io \

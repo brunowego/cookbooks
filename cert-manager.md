@@ -10,7 +10,7 @@
 
 ```sh
 helm repo add jetstack https://charts.jetstack.io
-helm repo update jetstack
+helm repo update
 ```
 
 ### Install
@@ -25,8 +25,7 @@ kubectl label namespace cert-manager certmanager.k8s.io/disable-validation='true
 ```
 
 ```sh
-helm install jetstack/cert-manager \
-  -n cert-manager \
+helm install cert-manager jetstack/cert-manager \
   --namespace cert-manager
 ```
 

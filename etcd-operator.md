@@ -85,8 +85,7 @@ rm -fR ./etcd-operator
 ### Install
 
 ```sh
-helm install stable/etcd-operator \
-  -n etcd-operator \
+helm install etcd-operator stable/etcd-operator \
   --namespace kube-system \
   --set nameOverride="$(kubectl config current-context)"
 ```

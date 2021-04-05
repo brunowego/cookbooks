@@ -9,8 +9,7 @@ kubectl create namespace kube-monitor
 ```
 
 ```sh
-helm install stable/tensorflow-notebook \
-  -n tensorflow-notebook \
+helm install tensorflow-notebook stable/tensorflow-notebook \
   --namespace tensorflow \
   --set jupyter.password=mytest \
   --set service.type=ClusterIP

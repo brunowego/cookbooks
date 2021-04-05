@@ -39,8 +39,7 @@ kubectl create namespace spark
 ```
 
 ```sh
-helm install stable/spark \
-  -n spark \
+helm install spark stable/spark \
   --namespace spark \
   --set Master.ServiceType=ClusterIP \
   --set Zeppelin.Ingress.Enabled=true \

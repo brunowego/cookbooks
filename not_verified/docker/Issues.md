@@ -106,8 +106,8 @@ docker run -d \
 
 | Name | Image | Command |
 | --- | --- | --- |
-| `centos` | `centos:7` | `/sbin/init` |
-| `opensuse` | `opensuse:42` | |
+| `centos` | `docker.io/library/centos:7` | `/sbin/init` |
+| `opensuse` | `docker.io/library/opensuse:42` | |
 
 ```sh
 docker exec -it [name] /bin/bash

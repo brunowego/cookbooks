@@ -29,9 +29,10 @@ pip3 install -U pipenv
 pipenv -h
 ```
 
-#### Run
+### Manifest
 
 ```sh
+#
 tee ./Pipfile << EOF
 [[source]]
 name = 'pypi'
@@ -45,14 +46,19 @@ verify_ssl = true
 [requires]
 python_version = '3.7'
 EOF
-```
 
-```sh
+#
 pipenv install
 ```
 
+### Usage
+
 ```sh
-pipenv run python api.py
+#
+pipenv run python ./api.py
+
+#
+pipenv run pytest
 ```
 
 ### Tips

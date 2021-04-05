@@ -19,8 +19,7 @@
 ### Install
 
 ```sh
-helm install stable/external-dns \
-  -n external-dns \
+helm install external-dns stable/external-dns \
   --namespace kube-system \
   --set provider=coredns \
   --set coredns.etcdEndpoints='http://etcd-cluster.kube-system.svc.cluster.local:2379' \

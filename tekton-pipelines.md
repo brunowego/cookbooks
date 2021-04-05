@@ -15,7 +15,7 @@ http://sharepointoscar.com/2019-04-22-using-tekton-pipelines-in-jenkins-x-part-1
 
 ```sh
 helm repo add ibm-community-charts https://raw.githubusercontent.com/IBM/charts/master/repo/community
-helm repo update ibm-community-charts
+helm repo update
 ```
 
 ### Install

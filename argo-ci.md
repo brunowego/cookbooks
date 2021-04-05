@@ -6,7 +6,7 @@
 
 ```sh
 helm repo add argo https://argoproj.github.io/argo-helm
-helm repo update argo
+helm repo update
 ```
 
 ### Install
@@ -16,8 +16,7 @@ kubectl create namespace argo-ci
 ```
 
 ```sh
-helm install argo/argo-ci \
-  -n argo-ci \
+helm install argo-ci argo/argo-ci \
   --namespace argo-ci
 ```
 

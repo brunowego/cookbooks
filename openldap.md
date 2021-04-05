@@ -20,8 +20,7 @@ kubectl create secret tls example.tls-secret \
 ```
 
 ```sh
-helm install stable/openldap \
-  -n openldap \
+helm install openldap stable/openldap \
   --namespace openldap \
   --set image.tag=1.2.5 \
   --set env.LDAP_ORGANISATION='Example Inc.' \

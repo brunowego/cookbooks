@@ -103,8 +103,7 @@ dig -t SRV @10.96.0.10 test.example.com +short
 ### Install
 
 ```sh
-helm install stable/coredns \
-  -n coredns \
+helm install coredns stable/coredns \
   --namespace kube-system
 ```
 

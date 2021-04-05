@@ -92,8 +92,7 @@ kubectl create namespace sentry
 ```
 
 ```sh
-helm install stable/sentry \
-  -n sentry \
+helm install sentry stable/sentry \
   --namespace sentry \
   --set user.email='admin@example.com' \
   --set service.type='ClusterIP' \

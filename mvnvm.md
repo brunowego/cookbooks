@@ -51,3 +51,14 @@ ls ~/.mvnvm
 # Install pre-defined version
 mvn
 ```
+
+### Issues
+
+#### Behind Proxy
+
+```log
+unzip:  cannot find zipfile directory in one of ~/.mvnvm/apache-maven-3.6.3-bin.zip or
+        ~/.mvnvm/apache-maven-3.6.3-bin.zip.zip, and cannot find ~/.mvnvm/apache-maven-3.6.3-bin.zip.ZIP, period.
+```
+
+Copy from another host.

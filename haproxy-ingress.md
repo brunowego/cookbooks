@@ -10,14 +10,13 @@
 
 ```sh
 helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
-helm repo update incubator
+helm repo update
 ```
 
 ### Install
 
 ```sh
-helm install incubator/haproxy-ingress \
-  -n haproxy-ingress \
+helm install haproxy-ingress incubator/haproxy-ingress \
   --namespace kube-system
 ```
 

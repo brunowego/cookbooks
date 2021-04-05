@@ -44,12 +44,17 @@ exclude =
   __pycache__,
   .git,
   .venv
+max-line-length = 140
 EOF
 
 #
 flake8
 ```
 
-<!--
-# noqa: EXXX,EXXX
--->
+### Tips
+
+#### NO Quality Assurance
+
+```py
+from python import code  # noqa: EXXX,EXXX
+```

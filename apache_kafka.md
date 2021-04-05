@@ -51,7 +51,7 @@ https://github.com/kaiwaehner/kafka-streams-machine-learning-examples
 
 ```sh
 helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
-helm repo update incubator
+helm repo update
 ```
 
 ### Install
@@ -61,8 +61,7 @@ kubectl create namespace kafka
 ```
 
 ```sh
-helm install incubator/kafka \
-  -n kafka \
+helm install kafka incubator/kafka \
   --namespace kafka \
   --set external.enabled=true \
   --set external.type=ClusterIP

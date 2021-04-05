@@ -6,7 +6,7 @@
 
 ```sh
 helm repo add argo https://argoproj.github.io/argo-helm
-helm repo update argo
+helm repo update
 ```
 
 ### Install
@@ -16,8 +16,7 @@ kubectl create namespace argo-events
 ```
 
 ```sh
-helm install argo/argo-events \
-  -n argo-events \
+helm install argo-events argo/argo-events \
   --namespace argo-events
 ```
 

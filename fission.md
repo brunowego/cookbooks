@@ -13,8 +13,7 @@ kubectl create namespace fission
 ```
 
 ```sh
-helm install https://github.com/fission/fission/releases/download/1.5.0/fission-all-1.5.0.tgz \
-  -n fission \
+helm install fission https://github.com/fission/fission/releases/download/1.5.0/fission-all-1.5.0.tgz \
   --namespace fission
 ```
 

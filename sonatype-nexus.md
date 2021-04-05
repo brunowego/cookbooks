@@ -18,8 +18,7 @@ kubectl create namespace sonatype-nexus
 ```
 
 ```sh
-helm install stable/sonatype-nexus \
-  -n sonatype-nexus \
+helm install sonatype-nexus stable/sonatype-nexus \
   --namespace sonatype-nexus \
   --set statefulset.enabled=true \
   --set nexus.service.type='ClusterIP' \

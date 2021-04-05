@@ -30,8 +30,7 @@ kubectl create secret tls example.tls-secret \
 ```
 
 ```sh
-helm install stable/minio \
-  -n minio \
+helm install minio stable/minio \
   --namespace minio \
   --set ingress.enabled=true \
   --set ingress.hosts={minio.example.com} \

@@ -9,8 +9,7 @@ kubectl create namespace chaoskube
 ```
 
 ```sh
-helm install stable/chaoskube \
-  -n chaoskube \
+helm install chaoskube stable/chaoskube \
   --namespace chaoskube \
   --set rbac.create=true
 ```

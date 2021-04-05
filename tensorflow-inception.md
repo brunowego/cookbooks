@@ -8,7 +8,7 @@ TODO
 
 ```sh
 helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
-helm repo update incubator
+helm repo update
 ```
 
 ### Install
@@ -18,8 +18,7 @@ kubectl create namespace tensorflow-inception
 ```
 
 ```sh
-helm install incubator/tensorflow-inception \
-  -n tensorflow-inception \
+helm install tensorflow-inception incubator/tensorflow-inception \
   --namespace tensorflow
 ```
 

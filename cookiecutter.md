@@ -1,5 +1,9 @@
 # Cookiecutter
 
+<!--
+https://github.com/f213/django
+-->
+
 ## CLI
 
 ### Installation

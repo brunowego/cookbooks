@@ -61,8 +61,7 @@ kubectl create namespace flux
 ```
 
 ```sh
-helm install fluxcd/flux \
-  -n flux \
+helm install flux fluxcd/flux \
   --namespace flux \
   --set helmOperator.create=true \
   --set helmOperator.createCRD=false \

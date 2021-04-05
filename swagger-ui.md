@@ -18,7 +18,7 @@ https://www.linkedin.com/learning/building-apis-with-swagger-and-the-openapi-spe
 
 ```sh
 helm repo add cetic https://cetic.github.io/helm-charts
-helm repo update cetic
+helm repo update
 ```
 
 ### Install
@@ -28,8 +28,7 @@ kubectl create namespace swagger
 ```
 
 ```sh
-helm install cetic/swaggerui \
-  -n swagger-ui \
+helm install swagger-ui cetic/swaggerui \
   --namespace swagger \
   --set service.type=ClusterIP \
   --set ingress.enabled=true \

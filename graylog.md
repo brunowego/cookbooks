@@ -19,8 +19,7 @@ kubectl create namespace graylog
 ```
 
 ```sh
-helm install stable/graylog \
-  -n graylog \
+helm install graylog stable/graylog \
   --namespace graylog \
   --set graylog.ingress.enabled=true \
   --set graylog.ingress.hosts={graylog.$(minikube ip).nip.io} \

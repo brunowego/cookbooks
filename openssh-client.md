@@ -31,12 +31,45 @@ sudo apk update
 sudo apk add openssh-client
 ```
 
+#### PowerShell
+
+```sh
+Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+```
+
 ### Commands
 
 ```sh
 sshd --help
 
 ssh-keygen --help
+```
+
+### Configuration
+
+#### PowerShell
+
+```sh
+# Start Daemon
+Start-Service sshd
+
+#
+Set-Service \
+  -Name sshd \
+  -StartupType 'Automatic'
+
+#
+Get-NetFirewallRule -Name *ssh*
+
+#
+New-NetFirewallRule \
+  -Name sshd \
+  -DisplayName 'OpenSSH Server (sshd)' \
+  -Enabled True \
+  -Direction Inbound \
+  -Protocol TCP \
+  -Action Allow \
+  -LocalPort 22
 ```
 
 ### Issues

@@ -134,16 +134,29 @@ EOF
 ```sh
 cat << EOF > ./uwsgi.ini
 [uwsgi]
-wsgi-file = wsgi.py
-callable = app
-socket = :8080
+chdir = %d
+http = :8000
+module = wsgi:app
+chmod-socket = 664
+master = True
 processes = 4
-threads = 2
-master = true
-chmod-socket = 660
-vacuum = true
-die-on-term = true
+vacuum = True
+thunder-lock = True
+enable-threads = True
 EOF
+
+# cat << EOF > ./uwsgi.ini
+# [uwsgi]
+# wsgi-file = wsgi.py
+# callable = app
+# chmod-socket = 664
+# socket = :8080
+# master = True
+# processes = 4
+# threads = 2
+# vacuum = True
+# die-on-term = True
+# EOF
 ```
 
 ```sh

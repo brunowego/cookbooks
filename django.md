@@ -1,6 +1,14 @@
 # Django
 
 <!--
+Django Channels
+Django Unit Tests
+Django Celery
+
+https://www.linkedin.com/learning/test-driven-development-in-django/tdd-philosophy-and-project-overview
+https://www.udemy.com/course/django-channels/
+https://www.udemy.com/course/distributed-tasks-demystified-with-celery-python/
+
 https://app.pluralsight.com/library/courses/django-testing-security-and-performance/table-of-contents
 
 https://aalvarez.me/posts/custom-admin-action-buttons-in-django/
@@ -533,7 +541,9 @@ RUN apk add -q --no-cache \
 
 COPY ./requirements.txt ./
 
-RUN pip3 install -q --no-cache-dir -r ./requirements.txt
+RUN pip3 install \
+      -r ./requirements.txt \
+      --no-cache-dir
 
 COPY ./core ./core
 COPY ./App ./App
@@ -553,7 +563,9 @@ RUN addgroup -g 1000 django && \
 
 COPY --chown=django:django ./requirements.txt ./
 
-RUN pip3 install --no-cache-dir -r ./requirements.txt
+RUN pip3 install \
+      -r ./requirements.txt \
+      --no-cache-dir
 
 COPY --chown=django:django ./core ./core
 COPY --chown=django:django ./App ./App
@@ -620,7 +632,9 @@ RUN apk add -q --no-cache -t .build-deps \
 
 COPY ./requirements.txt ./
 
-RUN pip3 install --no-cache-dir -r ./requirements.txt
+RUN pip3 install \
+      -r ./requirements.txt \
+      --no-cache-dir
 
 RUN ./manage.py compilemessages
 
@@ -651,6 +665,21 @@ DEBUG = os.getenv('DJANGO_ENV') != 'production'
 ```
 
 ### Tips
+
+#### Security
+
+```sh
+#
+cat << EOF >> ./robots.txt
+Disallow: /s/
+EOF
+```
+```py
+# urls.py
+urlpatterns = (
+    path('s/admin/', admin.site.urls),
+)
+```
 
 #### Favicon
 

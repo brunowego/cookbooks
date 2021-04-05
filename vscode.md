@@ -95,6 +95,18 @@ code --disable-extension [extension]
 
 ### Tips
 
+#### Proxy
+
+```sh
+# Add
+jq '."http.proxy" |= "'$http_proxy'"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."http.proxyAuthorization" |= "null"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+
+# Delete
+jq 'del(."http.proxy")' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq 'del(."http.proxyAuthorization")' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+```
+
 #### Useful Plugins
 
 ```sh

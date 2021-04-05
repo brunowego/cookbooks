@@ -25,6 +25,18 @@ sudo apk update
 sudo apk add openssh-server
 ```
 
+<!-- #### Chocolatey
+
+```sh
+choco install -y mls-software-openssh
+``` -->
+
+#### PowerShell
+
+```sh
+Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+```
+
 ### Service
 
 ```sh

@@ -2,6 +2,12 @@
 
 <!--
 https://www.linkedin.com/learning/github-quick-tips/github-tips-and-tricks
+
+https://github.com/brunowego.png
+
+https://api.github.com/users
+
+https://api.github.com/users/brunowego
 -->
 
 ## References

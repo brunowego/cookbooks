@@ -29,8 +29,7 @@ kubectl create namespace hadoop
 ```
 
 ```sh
-helm install stable/hadoop \
-  -n hadoop \
+helm install hadoop stable/hadoop \
   --namespace hadoop \
   --set hdfs.webhdfs.enabled=true \
   --set persistence.nameNode.enabled=true \

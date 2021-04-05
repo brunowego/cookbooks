@@ -4,4 +4,13 @@
 
 - [C](/c.md)
 
-TODO
+## Library
+
+### Installation
+
+#### YUM
+
+```sh
+yum check-update
+sudo yum -y install cpp
+```

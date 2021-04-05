@@ -9,8 +9,7 @@
 ### Install
 
 ```sh
-helm install stable/zeppelin \
-  -n zeppelin \
+helm install zeppelin stable/zeppelin \
   --namespace hadoop \
   --set zeppelin.resources.limits.memory=2048Mi \
   --set zeppelin.resources.limits.cpu=1000m \

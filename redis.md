@@ -133,8 +133,7 @@ kubectl create namespace redis
 ```
 
 ```sh
-helm install stable/redis \
-  -n redis \
+helm install redis stable/redis \
   --namespace redis
 ```
 

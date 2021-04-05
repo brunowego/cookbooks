@@ -13,8 +13,7 @@ kubectl create namespace monitoring
 ```
 
 ```sh
-helm install stable/prometheus-operator \
-  -n prometheus-operator \
+helm install prometheus-operator stable/prometheus-operator \
   --namespace monitoring \
   --set prometheus.ingress.enabled=true \
   --set prometheus.ingress.hosts={prometheus.$(minikube ip).nip.io} \

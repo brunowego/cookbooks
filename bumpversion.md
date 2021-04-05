@@ -44,7 +44,7 @@ bumpversion --tag release
 ```sh
 cat << EOF > ./.bumpversion.cfg
 [bumpversion]
-current_version = 0.0.2
+current_version = 0.0.1
 commit = True
 tag = True
 

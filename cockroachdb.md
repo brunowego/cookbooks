@@ -9,8 +9,7 @@ kubectl create namespace cockroach
 ```
 
 ```sh
-helm install stable/cockroachdb \
-  -n cockroachdb \
+helm install cockroachdb stable/cockroachdb \
   --namespace cockroach \
   --set Storage=10Gi \
   --set NetworkPolicy.Enabled=true \

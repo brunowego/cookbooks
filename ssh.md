@@ -28,6 +28,20 @@ Host [host]
 EOF
 ```
 
+### Change Folder
+
+```sh
+cat << EOF >> ~/.ssh/config
+Host [hostname]
+  User [username]
+  LogLevel QUIET
+  ProxyJump [hostname]
+  RemoteCommand cd ~/path/to/project; bash -l
+  # RemoteCommand cd ~/path/to/project; zsh -l
+  RequestTTY force
+EOF
+```
+
 ### Proxy
 
 ```sh

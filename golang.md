@@ -1,6 +1,10 @@
 # Go Programming Language
 
 <!--
+https://www.linkedin.com/learning/learning-the-go-standard-library/don-t-go-re-inventing-the-wheel
+
+https://app.pluralsight.com/library/courses/go-create-test-applications/table-of-contents
+
 https://github.com/vmasdani/cozypos-full
 
 https://pragprog.com/titles/tjgo/distributed-services-with-go/

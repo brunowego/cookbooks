@@ -13,8 +13,7 @@
 ### Install
 
 ```sh
-helm install stable/kafka-manager \
-  -n kafka-manager \
+helm install kafka-manager stable/kafka-manager \
   --namespace kafka \
   --set basicAuth.enabled=true \
   --set basicAuth.password="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \

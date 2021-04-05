@@ -10,7 +10,7 @@
 
 ```sh
 helm repo add keel https://charts.keel.sh
-helm repo update keel
+helm repo update
 ```
 
 ### Install
@@ -20,8 +20,7 @@ kubectl create namespace keel
 ```
 
 ```sh
-helm install keel/keel \
-  -n keel \
+helm install keel keel/keel \
   --namespace keel \
   --set ingress.enabled=true \
   --set "ingress.hosts[0].host=keel.$(minikube ip).nip.io" \

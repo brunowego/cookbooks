@@ -19,7 +19,7 @@ rke
 
 ```sh
 helm repo add rancher-latest https://releases.rancher.com/server-charts/latest
-helm repo update rancher-latest
+helm repo update
 ```
 
 ### Install
@@ -36,8 +36,7 @@ kubectl create secret tls tls-rancher-ingress \
 ```
 
 ```sh
-helm install rancher-latest/rancher \
-  -n rancher \
+helm install rancher rancher-latest/rancher \
   --namespace cattle-system \
   --set hostname=rancher.example.com \
   --set ingress.tls.source=secret

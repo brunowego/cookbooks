@@ -1,5 +1,10 @@
 # Apache Sqoop
 
+<!--
+https://www.linkedin.com/learning/learning-hadoop-2/getting-started-with-hadoop
+https://app.pluralsight.com/library/courses/hdfs-getting-started/table-of-contents
+-->
+
 ## References
 
 - [Feature Differences - Sqoop 1 and Sqoop 2](https://www.cloudera.com/documentation/enterprise/5-14-x/topics/cdh_ig_sqoop_vs_sqoop2.html)

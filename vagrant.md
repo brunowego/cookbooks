@@ -29,15 +29,26 @@ choco install -y vagrant
 vagrant -h
 ```
 
-### Examples
-
-#### Snapshot
+### Usage
 
 ```sh
-# Save
+# Start
+vagrant up
+
+# Shutdown
+vagrant halt
+
+# SSH
+vagrant ssh
+
+# IP
+vagrant ssh -c 'hostname -I | cut -d " " -f 2' 2>/dev/null
+vagrant ssh -c 'hostname -I | cut -d " " -f 2' 2>/dev/null | pbcopy # macOS
+
+# Snapshot Save
 vagrant snapshot save default [name]
 
-# Restore
+# Snapshot Restore
 vagrant snapshot restore [name]
 ```
 
@@ -128,7 +139,7 @@ If you believe this message is in error, please check the process listing for an
 sudo pidof -k vagrant
 ```
 
-####
+<!-- ####
 
 ```log
 The following SSH command responded with a non-zero exit status.
@@ -143,7 +154,7 @@ Stderr from the command:
 mount.nfs: access denied by server while mounting 10.1.1.1:/System/Volumes/Data/Users/path/to/project
 ```
 
-TODO
+TODO -->
 
 ### Uninstall
 

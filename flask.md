@@ -5,8 +5,6 @@ https://github.com/Innopoints/backend
 
 https://app.pluralsight.com/paths/skill/building-web-applications-with-flask
 
-CMD ["python", "-m", "flask", "run", "--host=0.0.0.0", "--port=2525"]
-
 https://www.linkedin.com/learning/flask-essential-training/web-development-with-flask
 
 https://github.com/arthurchiquet/Dashboard
@@ -34,11 +32,13 @@ https://github.com/tolgahanuzun/Flask-Login-Example
 - [dynaconf](https://github.com/rochacbruno/dynaconf)
 - [Flasgger](https://github.com/flasgger/flasgger)
 - [Login](https://flask-login.readthedocs.io/en/latest/)
+- [marshmallow](https://marshmallow.readthedocs.io/en/stable/)
 - [Migrate](https://flask-migrate.readthedocs.io/en/latest/)
 - [PyMongo](https://flask-pymongo.readthedocs.io/en/latest/)
 - [python-dotenv](https://github.com/theskumar/python-dotenv)
 - [RESTful](https://flask-restful.readthedocs.io/en/latest/)
 - [SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/utils/)
 - [WTF](https://flask-wtf.readthedocs.io/en/stable/)
 
 ### Installation
@@ -166,6 +166,17 @@ FLASK_ENV=development flask run \
 ','.join([str(h.get('name')) for h in hostnames])
 ```
 
+### Issues
+
+<!-- ####
+
+```log
+flask.cli.NoAppException: Could not locate a Flask application. You did not provide the "FLASK_APP" environment variable, and a "wsgi.py" or "app.py" module was not found in the current directory.
+```
+
+TODO -->
+
+
 ## Docker
 
 ### Build
@@ -180,6 +191,8 @@ WORKDIR /usr/src/app
 
 ENTRYPOINT ["flask"]
 EOF
+
+# CMD ["python", "-m", "flask", "run", "--host=0.0.0.0", "--port=5000"]
 ```
 
 ### Running

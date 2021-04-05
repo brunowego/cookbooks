@@ -19,7 +19,7 @@
 
 ```sh
 helm repo add polyaxon https://charts.polyaxon.com
-helm repo update polyaxon
+helm repo update
 ```
 
 ### Install
@@ -29,8 +29,7 @@ kubectl create namespace polyaxon
 ```
 
 ```sh
-helm install polyaxon/polyaxon \
-  -n polyaxon \
+helm install polyaxon polyaxon/polyaxon \
   --namespace polyaxon \
   --set serviceType='ClusterIP' \
   --set ingress.enabled=true \

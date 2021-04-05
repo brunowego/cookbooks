@@ -16,10 +16,12 @@ https://github.com/zxftr45/rr_ml_workshop_19/blob/5678d0452a3b1b4448354b92076d8a
 pip3 install -U pytest
 
 # As project dependency
-echo 'pytest==6.1.1' >> ./requirements-dev.txt
+echo 'pytest==6.1.1' >> ./requirements-test.txt
 ```
 
-###
+### Tips
+
+#### Django Configuration
 
 ```sh
 cat << EOF > ./pytest.ini

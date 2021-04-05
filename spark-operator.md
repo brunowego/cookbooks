@@ -11,7 +11,7 @@
 
 ```sh
 helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
-helm repo update incubator
+helm repo update
 ```
 
 ### Install
@@ -21,8 +21,7 @@ kubectl create namespace spark-operator
 ```
 
 ```sh
-helm install incubator/sparkoperator \
-  -n spark-operator \
+helm install spark-operator incubator/sparkoperator \
   --namespace spark \
   --set serviceAccounts.spark.name=spark \
   --set sparkJobNamespace=default \

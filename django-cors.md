@@ -1,6 +1,6 @@
 # Django Cross-origin Resource Sharing (CORS)
 
-##
+## Configuration
 
 ```py
 INSTALLED_APPS = [

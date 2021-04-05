@@ -46,8 +46,7 @@ kubectl create namespace mariadb
 ```
 
 ```sh
-helm install stable/mariadb \
-  -n mariadb \
+helm install mariadb stable/mariadb \
   --namespace mariadb
 ```
 

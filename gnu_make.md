@@ -45,5 +45,16 @@ cat << EOF >> ./.editorconfig
 
 [{*.mk,Makefile}]
 indent_size = 4
+indent_style = tab
 EOF
 ```
+
+### Issues
+
+#### Missing GNU Readline Library
+
+```log
+/bin/sh: /tmp/_MEIl8vInH/libreadline.so.7: no version information available (required by /bin/sh)
+```
+
+TODO

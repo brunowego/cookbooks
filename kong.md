@@ -13,8 +13,7 @@ kubectl create namespace kong
 ```
 
 ```sh
-helm install stable/kong \
-  -n kong \
+helm install kong stable/kong \
   --namespace kong \
   --set admin.useTLS=false \
   --set admin.type='ClusterIP' \

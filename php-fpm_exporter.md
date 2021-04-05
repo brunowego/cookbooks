@@ -15,8 +15,7 @@
 
 ```sh
 # helm install stable/prometheus-php-fpm-exporter \
-helm install ./ \
-  -n prometheus-php-fpm-exporter \
+helm install prometheus-php-fpm-exporter ./ \
   --namespace php-fpm \
   --set phpFpm.scrapeUri='tcp://php-fpm.php-fpm.svc.cluster.local:9000/status' \
   --set phpFpm.logLevel='debug' \

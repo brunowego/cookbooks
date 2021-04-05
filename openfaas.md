@@ -10,7 +10,7 @@
 
 ```sh
 helm repo add openfaas https://openfaas.github.io/faas-netes
-helm repo update openfaas
+helm repo update
 ```
 
 ### Install
@@ -37,8 +37,7 @@ kubectl create secret generic basic-auth \
 ```
 
 ```sh
-helm install openfaas/openfaas \
-  -n openfaas \
+helm install openfaas openfaas/openfaas \
   --namespace openfaas \
   --set functionNamespace=openfaas-fn \
   --set serviceType=ClusterIP \

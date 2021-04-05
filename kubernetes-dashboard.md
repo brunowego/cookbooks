@@ -9,8 +9,7 @@
 ### Install
 
 ```sh
-helm install stable/kubernetes-dashboard \
-  -n kubernetes-dashboard \
+helm install kubernetes-dashboard stable/kubernetes-dashboard \
   --namespace kube-system \
   --set ingress.enabled=true \
   --set ingress.hosts={dashboard.example.com} \

@@ -31,5 +31,6 @@ hostess -h
 ### Usage
 
 ```sh
+#
 sudo hostess add [hostname] 127.0.0.1
 ```

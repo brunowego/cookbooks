@@ -6,7 +6,7 @@
 
 ```sh
 helm repo add jupyterhub https://jupyterhub.github.io/helm-chart/
-helm repo update jupyterhub
+helm repo update
 ```
 
 ### Install
@@ -16,8 +16,7 @@ kubectl create namespace jupyterhub
 ```
 
 ```sh
-helm install jupyterhub/jupyterhub \
-  -n jupyterhub \
+helm install jupyterhub jupyterhub/jupyterhub \
   --namespace jupyterhub \
   --set proxy.secretToken="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
   --set ingress.enabled=true \

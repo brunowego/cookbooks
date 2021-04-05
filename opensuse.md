@@ -1,5 +1,9 @@
 # openSUSE
 
+## References
+
+- [SUSE Linux Enterprise Server (SLES)](/sles.md)
+
 ## Docker
 
 ### Network

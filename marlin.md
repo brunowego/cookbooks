@@ -3,6 +3,8 @@
 <!--
 https://github.com/MarlinFirmware/Marlin
 
+https://github.com/Jyers/Marlin/releases
+
 https://www.youtube.com/watch?v=1xHv4CuXl30
 -->
 

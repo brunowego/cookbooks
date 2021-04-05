@@ -59,6 +59,7 @@ npm config get registry
 # License
 npm config set init-license 'MIT'
 npm config set init-license 'UNLICENSED'
+npm config set init-license 'COPYRIGHT'
 
 #
 npm pack

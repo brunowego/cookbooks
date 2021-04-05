@@ -128,8 +128,7 @@ kubectl create namespace mysql
 ```
 
 ```sh
-helm install stable/mysql \
-  -n mysql \
+helm install mysql stable/mysql \
   --namespace mysql \
   --set mysqlUser=user \
   --set mysqlPassword=user \

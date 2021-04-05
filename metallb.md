@@ -15,8 +15,7 @@ kubectl create namespace metallb-system
 ```
 
 ```sh
-helm install stable/metallb \
-  -n metallb \
+helm install metallb stable/metallb \
   --namespace metallb-system
 ```
 

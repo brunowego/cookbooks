@@ -20,8 +20,7 @@ kubectl create secret tls example.tls-secret \
 ```
 
 ```sh
-helm install stable/weave-scope \
-  -n weave-scope \
+helm install weave-scope stable/weave-scope \
   --namespace weave-scope \
   --set weave-scope-frontend.ingress.enabled=true \
   --set weave-scope-frontend.ingress.paths={/} \

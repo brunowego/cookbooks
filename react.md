@@ -1,8 +1,22 @@
 # React
 
 <!--
-https://app.pluralsight.com/guides/generating-dynamic-forms-from-json-in-react
+Redux
+Redux-Saga
 
+https://thoughtbot.com/blog/using-redux-with-react-hooks
+
+https://www.linkedin.com/learning/react-state-management/choosing-the-right-state-management-solution
+https://app.pluralsight.com/library/courses/using-react-hooks/table-of-contents
+https://www.linkedin.com/learning/react-hooks/understanding-modern-react
+https://app.pluralsight.com/library/courses/reactjs-apps-docker-developing/table-of-contents
+https://app.pluralsight.com/library/courses/react-framework-choosing/table-of-contents
+https://app.pluralsight.com/paths/skills/building-web-applications-with-react
+https://app.pluralsight.com/library/courses/react-apps-typescript-building/table-of-contents
+https://app.pluralsight.com/library/courses/react-calling-apis/table-of-contents
+https://app.pluralsight.com/guides/generating-dynamic-forms-from-json-in-react
+https://app.pluralsight.com/library/courses/js-friends-session-05/table-of-contents
+https://app.pluralsight.com/library/courses/js-friends-session-03/table-of-contents
 https://www.youtube.com/watch?v=fxY1q4SCB64
 https://www.youtube.com/watch?v=ontX4zfVqK8
 https://leanpub.com/the-road-to-learn-react/
@@ -15,6 +29,7 @@ https://app.pluralsight.com/paths/skill/building-web-applications-with-react
 
 https://github.com/ilkeraltin/react-spa-news
 
+https://www.linkedin.com/learning/react-securing-applications-2/securing-react-applications
 https://www.linkedin.com/learning/react-js-essential-training/welcome
 https://www.linkedin.com/learning/learning-react-js-5/getting-started-with-react
 https://www.linkedin.com/learning/react-testing-and-debugging/testing-and-debugging-your-react-apps
@@ -23,9 +38,10 @@ https://www.linkedin.com/learning/react-cloud-powered-apps-with-firebase/structu
 https://www.linkedin.com/learning/building-modern-projects-with-react/react-going-from-good-to-great
 -->
 
-## Favorite Libraries
 
 <!--
+## Favorite Libraries
+
 https://www.npmjs.com/package/mini-create-react-context
 https://www.npmjs.com/package/ramda
 https://www.npmjs.com/package/tiny-invariant
@@ -51,3 +67,9 @@ https://www.npmjs.com/package/tinycolor2
 https://www.npmjs.com/package/rc-drawer
 https://www.npmjs.com/package/omit
 -->
+
+## Tools
+
+- [React Developer Tools (Google Chrome)](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [React Developer Tools (Mozilla Firefox)](https://addons.mozilla.org/pt-BR/firefox/addon/react-devtools/)
+- [React - CodeSandbox](https://react.new)

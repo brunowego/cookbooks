@@ -11,8 +11,7 @@ kubectl create namespace nfs-server
 ```
 
 ```sh
-helm install stable/nfs-server-provisioner \
-  -n nfs-server-provisioner \
+helm install nfs-server-provisioner stable/nfs-server-provisioner \
   --namespace nfs-server \
   --set persistence.enabled=true \
   --set persistence.size=40Gi \

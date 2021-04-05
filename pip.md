@@ -48,7 +48,7 @@ pip3 install -U pip
 
 ```sh
 # Installed packages
-pip list
+pip3 list
 
 # Install setup.py
 pip3 install ./
@@ -58,6 +58,19 @@ python -m pip3 install ./
 
 # Install compressed file
 pip3 install [/path/to/package.tar.gz]
+```
+
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# PIP Binary Path
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+```sh
+sudo su - "$USER"
 ```
 
 ### Configuration
@@ -140,7 +153,8 @@ python ./setup.py clean --all
 #### Permission Denied
 
 ```log
-PermissionError: [Errno 13] Permission denied: '/usr/local/lib/python3.6/site-packages/snowballstemmer'
+PermissionError: [Errno 13] Permission denied: '/usr/local/lib/python3.6/site-packages/[package-name]'
+PermissionError: [Errno 13] Permission denied: '/usr/lib/python3.6/site-packages/[package-name]'
 ```
 
 ```sh
@@ -187,7 +201,7 @@ ERROR: Could not install packages due to an EnvironmentError: HTTPSConnectionPoo
 
 ```sh
 # Using globally file
-cat << EOF > /etc/pip.conf
+cat << EOF | sudo tee /etc/pip.conf
 [global]
 trusted-host =
   pypi.org

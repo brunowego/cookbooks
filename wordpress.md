@@ -33,8 +33,7 @@ kubectl create namespace wordpress
 ```
 
 ```sh
-helm install stable/wordpress \
-  -n wordpress \
+helm install wordpress stable/wordpress \
   --namespace wordpress \
   --set ingress.enabled=true \
   --set "ingress.hosts[0].name=wordpress.$(minikube ip).nip.io" \

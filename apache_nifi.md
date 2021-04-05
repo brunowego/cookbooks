@@ -1,5 +1,120 @@
 # Apache NiFi
 
+## References
+
+- [NiFiKop](/nifikop.md)
+
+## Helm
+
+### References
+
+- [Configuration](https://github.com/cetic/helm-nifi#configuration)
+
+### Repository
+
+```sh
+helm repo add cetic https://cetic.github.io/helm-charts
+helm repo update
+```
+
+### Install
+
+```sh
+kubectl create namespace nifi
+```
+
+```sh
+helm install nifi cetic/nifi \
+  --namespace nifi \
+  --set ingress.enabled=true \
+  --set ingress.hosts={nifi.$(minikube ip).nip.io}
+```
+
+### Status
+
+```sh
+kubectl get pod -n nifi
+```
+
+### SSL
+
+#### Dependencies
+
+- [Kubernetes TLS Secret](/k8s-tls-secret.md)
+
+#### Create
+
+```sh
+kubectl create secret tls example.tls-secret \
+  --cert='/etc/ssl/certs/example/root-ca.crt' \
+  --key='/etc/ssl/private/example/root-ca.key' \
+  -n nifi
+```
+
+```sh
+helm upgrade nifi cetic/nifi -f <(yq m <(cat << EOF
+ingress:
+  tls:
+    - secretName: example.tls-secret
+      hosts:
+        - nifi.$(minikube ip).nip.io
+EOF
+) <(helm get values nifi))
+```
+
+#### Remove
+
+```sh
+helm upgrade nifi cetic/nifi -f <(yq d <(helm get values nifi) ingress.tls)
+
+kubectl delete secret example.tls-secret -n nifi
+```
+
+### Status
+
+```sh
+kubectl rollout status statefulset nifi -n nifi
+```
+
+### Logs
+
+```sh
+kubectl logs -l 'app=nifi' -c server -n nifi -f
+kubectl logs -l 'app=nifi' -c app-log -n nifi -f
+kubectl logs -l 'app=nifi' -c bootstrap-log -n nifi -f
+kubectl logs -l 'app=nifi' -c user-log -n nifi -f
+```
+
+### DNS
+
+```sh
+dig @10.96.0.10 nifi.nifi.svc.cluster.local +short
+nslookup nifi.nifi.svc.cluster.local 10.96.0.10
+```
+
+#### ExternalDNS
+
+```sh
+dig @10.96.0.10 "nifi.$(minikube ip).nip.io" +short
+nslookup "nifi.$(minikube ip).nip.io" 10.96.0.10
+```
+
+### Secret
+
+```sh
+kubectl get secret nifi \
+  -o jsonpath='{.data.admin-password}' \
+  -n nifi | \
+    base64 --decode; echo
+```
+
+### Delete
+
+```sh
+helm delete nifi --purge
+kubectl delete namespace nifi --grace-period=0 --force
+```
+
 ## Docker
 
 ### Network

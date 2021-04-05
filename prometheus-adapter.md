@@ -14,8 +14,7 @@
 ### Install
 
 ```sh
-helm install stable/prometheus-adapter \
-  -n prometheus-adapter \
+helm install prometheus-adapter stable/prometheus-adapter \
   --namespace monitoring \
   --set prometheus.url='http://prometheus-server.monitoring.svc.cluster.local' \
   --set prometheus.port='80'

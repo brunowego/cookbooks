@@ -22,16 +22,26 @@ sudo yum -y install gcc python3-devel
 
 ```sh
 # Linux
-mkdir -p /opt/ibm/db2
+sudo mkdir -p /opt/ibm/db2
 
 # GNU Wget
-wget -O - 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/linuxx64_odbc_cli.tar.gz' | tar -xzC /opt/ibm/db2
+wget -O - 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/linuxx64_odbc_cli.tar.gz' | sudo tar -xzC /opt/ibm/db2
 
 # cURL
-curl 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/linuxx64_odbc_cli.tar.gz' | tar -xzC /opt/ibm/db2
+curl 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/linuxx64_odbc_cli.tar.gz' | sudo tar -xzC /opt/ibm/db2
+```
 
-#
+##### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# DB2 CLI Driver
 export IBM_DB_HOME='/opt/ibm/db2/clidriver'
+```
+
+```sh
+sudo su - "$USER"
 ```
 
 ## Glossary
@@ -209,7 +219,15 @@ pip3 install -U ibm-db ibm-db-sa
 
 ### Issues
 
-####
+#### Behind Proxy
+
+```log
+Downloading https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/linuxx64_odbc_cli.tar.gz
+```
+
+TODO
+
+<!-- ####
 
 ```py
 Traceback (most recent call last):
@@ -226,9 +244,9 @@ Traceback (most recent call last):
 ibm_db_dbi.OperationalError: ibm_db_dbi::OperationalError: Exception('[IBM][CLI Driver] SQL30081N  A communication error has been detected. Communication protocol being used: "TCP/IP".  Communication API being used: "SOCKETS".  Location where the error was detected: "172.17.78.128".  Communication function detecting the error: "connect".  Protocol specific error code(s): "113", "*", "*".  SQLSTATE=08001 SQLCODE=-30081')
 ```
 
-TODO
+TODO -->
 
-####
+#### Library DB2
 
 ```py
 Traceback (most recent call last):
@@ -237,8 +255,8 @@ ImportError: libdb2.so.1: cannot open shared object file: No such file or direct
 ```
 
 ```sh
-ln -s /opt/ibm/db2/clidriver/lib/libdb2.so.1 /usr/lib
-ln -s /opt/ibm/db2/clidriver/lib/libdb2.so.1 /usr/lib64
+sudo ln -s /opt/ibm/db2/clidriver/lib/libdb2.so.1 /usr/lib
+sudo ln -s /opt/ibm/db2/clidriver/lib/libdb2.so.1 /usr/lib64
 ```
 
 #### Library Path

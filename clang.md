@@ -4,6 +4,12 @@
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install hdf5 c-blosc
+```
+
 #### YUM
 
 ```sh
@@ -17,3 +23,13 @@ sudo yum -y install clang
 # Version
 clang++ --version | head -1
 ```
+
+### Issues
+
+####
+
+```log
+error: command 'clang' failed with exit status 1
+```
+
+TODO

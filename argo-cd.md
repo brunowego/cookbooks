@@ -15,7 +15,7 @@
 
 ```sh
 helm repo add argo https://argoproj.github.io/argo-helm
-helm repo update argo
+helm repo update
 ```
 
 ### Install
@@ -32,8 +32,7 @@ kubectl create secret tls example.tls-secret \
 ```
 
 ```sh
-helm install argo/argo-cd \
-  -n argo-cd \
+helm install argo-cd argo/argo-cd \
   --namespace argo-cd \
   --set ingress.enabled=true \
   --set ingress.annotations."kubernetes\.io/ingress\.class"=nginx \

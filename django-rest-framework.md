@@ -54,3 +54,9 @@ curl \
 https://github.com/encode/django-rest-framework
 https://github.com/vitthal-inani/SOAD_Project/blob/f295a49c5074f2fc3e3f31c8a74b9b66d768793b/Backend/PackUrBags/PackUrBags/settings.py
 -->
+
+<!--
+from django.contrib.auth import get_user_model
+
+author = serializers.SlugRelatedField(queryset=get_user_model().objects.all(), slug_field='username')
+-->

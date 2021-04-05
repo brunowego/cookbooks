@@ -31,6 +31,18 @@ krb5-config --libs gssapi
 
 ### Issues
 
+#### SASL Headers
+
+```log
+sasl/saslwrapper.h:22:23: fatal error: sasl/sasl.h: No such file or directory
+```
+
+```sh
+# YUM
+yum check-update
+sudo yum -y install cyrus-sasl-devel
+```
+
 #### Wrong Prefix Path
 
 ```log

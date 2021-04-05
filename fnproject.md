@@ -12,7 +12,7 @@ https://hub.helm.sh/charts/banzaicloud-stable/fn
 
 ```sh
 helm repo add banzaicloud-stable https://kubernetes-charts.banzaicloud.com
-helm repo update banzaicloud-stable
+helm repo update
 ```
 
 TODO

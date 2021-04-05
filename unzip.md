@@ -24,6 +24,13 @@ yum check-update
 sudo yum -y install unzip
 ```
 
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y unzip
+```
+
 #### Chocolatey
 
 ```sh

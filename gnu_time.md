@@ -17,6 +17,13 @@ yum check-update
 sudo yum -y install time
 ```
 
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y time
+```
+
 ### Environment
 
 #### Homebrew
@@ -45,6 +52,9 @@ gtime --help
 ### Usage
 
 ```sh
-#
+# Homebrew
 gtime -v [command]
+
+# Linux
+time [command]
 ```

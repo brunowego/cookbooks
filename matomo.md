@@ -618,8 +618,7 @@ echo -e "[INFO]\thttp://matomo.$(minikube ip).nip.io"
 ```
 
 ```sh
-helm install stable/mysql \
-  -n mysql \
+helm install mysql stable/mysql \
   --namespace matomo \
   --set mysqlUser=matomo \
   --set mysqlPassword=matomo \
@@ -653,8 +652,7 @@ kubectl create namespace matomo
 
 ```sh
 # helm install stable/matomo \
-helm install ./ \
-  -n matomo \
+helm install matomo ./ \
   --namespace matomo \
   --set ingress.enabled=true \
   --set "ingress.hosts[0].host=matomo.$(minikube ip).nip.io" \

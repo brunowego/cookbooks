@@ -15,6 +15,12 @@ Missing file
 
 ## Daemon
 
+### Dependencies
+
+#### Windows
+
+- [Windows Subsystem Linux (WSL)](/wsl.md)
+
 ### Installation
 
 #### Homebrew
@@ -52,6 +58,12 @@ sudo yum -y install docker-ce
 ```sh
 sudo zypper refresh
 sudo zypper install -y docker-ce
+```
+
+#### Chocolatey
+
+```sh
+choco install -y docker-for-windows
 ```
 
 ### Service

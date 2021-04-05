@@ -13,8 +13,7 @@ kubectl create namespace ambassador
 ```
 
 ```sh
-helm install stable/ambassador \
-  -n ambassador \
+helm install ambassador stable/ambassador \
   --namespace ambassador \
   --set crds.keep=false \
   --set service.type=ClusterIP

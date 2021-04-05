@@ -6,6 +6,12 @@ https://medium.com/random-life-journal/python-restful-api-server-for-apache-hive
 
 ## Library
 
+### Dependencies
+
+**Through Kerberos**
+
+- [GSSAPI (Generic Security Services API)](/gssapi.md)
+
 ### Installation
 
 ```sh

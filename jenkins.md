@@ -22,8 +22,7 @@ kubectl create namespace jenkins
 ```
 
 ```sh
-helm install stable/jenkins \
-  -n jenkins \
+helm install jenkins stable/jenkins \
   --namespace jenkins \
   --set master.serviceType=ClusterIP \
   --set master.ingress.enabled=true \

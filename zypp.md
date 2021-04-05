@@ -32,7 +32,7 @@ ls /etc/zypp/repos.d
 ### PID lock
 
 ```log
-System management is locked by the application with pid 000000 (zypper).
+System management is locked by the application with pid [000000] (zypper).
 ```
 
 ```sh

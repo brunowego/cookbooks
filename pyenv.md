@@ -15,7 +15,8 @@ brew install \
   pkg-config \
   openssl \
   readline \
-  zlib
+  zlib \
+  bzip2
 ```
 
 #### APT
@@ -135,17 +136,41 @@ pyenv install 3.8.0
 rm ~/.pyenv/cache/*.tar.xz
 ```
 
-<!-- ### Issues -->
+### Issues
 
 <!-- ####
 
 ```sh
 # Darwin
-PYTHON_CONFIGURE_OPTS="--with-system-expat" \
+PYTHON_CONFIGURE_OPTS='--with-system-expat' \
   CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include" \
   LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib" \
   pyenv install [version]
 ``` -->
+
+#### Missing bzip2
+
+```log
+WARNING: The Python bz2 extension was not compiled. Missing the bzip2 lib?
+```
+
+```sh
+CFLAGS="$CFLAGS -I$(brew --prefix bzip2)/include" \
+  LDFLAGS="$LDFLAGS -L$(brew --prefix bzip2)/lib" \
+    pyenv install [version]
+```
+
+#### Missing zlib
+
+```log
+ERROR: The Python zlib extension was not compiled. Missing the zlib?
+```
+
+```sh
+CFLAGS="$CFLAGS -I$(brew --prefix zlib)/include" \
+  LDFLAGS="$LDFLAGS -L$(brew --prefix zlib)/lib" \
+    pyenv install [version]
+```
 
 ### Uninstall
 

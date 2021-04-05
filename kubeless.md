@@ -20,8 +20,7 @@ kubectl create namespace kubeless
 ```
 
 ```sh
-helm install incubator/kubeless \
-  -n kubeless \
+helm install kubeless incubator/kubeless \
   --namespace kubeless \
   --set rbac.create=true \
   --set ui.enabled=true \

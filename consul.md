@@ -13,8 +13,7 @@ kubectl create namespace consul
 ```
 
 ```sh
-helm install stable/consul \
-  -n consul \
+helm install consul stable/consul \
   --namespace consul \
   --set uiIngress.enabled=true \
   --set uiIngress.hosts={consul.$(minikube ip).nip.io} \

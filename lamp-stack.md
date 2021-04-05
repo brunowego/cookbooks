@@ -13,8 +13,7 @@ kubectl create namespace lamp
 ```
 
 ```sh
-helm install stable/lamp \
-  -n lamp \
+helm install lamp stable/lamp \
   --namespace lamp \
   --set service.type=ClusterIP \
   --set ingress.enabled=true \

@@ -57,8 +57,7 @@ kubectl create namespace metabase
 ```
 
 ```sh
-helm install stable/postgresql \
-  -n metabase-postgresql \
+helm install metabase-postgresql stable/postgresql \
   --namespace metabase \
   --set postgresqlUsername='metabase' \
   --set postgresqlPassword='metabase' \
@@ -66,8 +65,7 @@ helm install stable/postgresql \
 ```
 
 ```sh
-helm install stable/metabase \
-  -n metabase \
+helm install metabase stable/metabase \
   --namespace metabase \
   --set database.type='postgres' \
   --set database.host='postgresql.metabase.svc.cluster.local' \

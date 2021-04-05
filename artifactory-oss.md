@@ -10,7 +10,7 @@
 
 ```sh
 helm repo add jfrog https://charts.jfrog.io
-helm repo update jfrog
+helm repo update
 ```
 
 ### Install
@@ -20,8 +20,7 @@ kubectl create namespace artifactory
 ```
 
 ```sh
-helm install jfrog/artifactory-oss \
-  -n artifactory-oss \
+helm install artifactory-oss jfrog/artifactory-oss \
   --namespace artifactory \
   --set artifactory.nginx.enabled=false \
   --set artifactory.ingress.enabled=true \

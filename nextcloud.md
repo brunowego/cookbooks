@@ -25,8 +25,7 @@ kubectl create namespace nextcloud
 ```
 
 ```sh
-helm install stable/nextcloud \
-  -n nextcloud \
+helm install nextcloud stable/nextcloud \
   --namespace nextcloud \
   --set image.tag=17.0.1-fpm-alpine \
   --set ingress.enabled=true \

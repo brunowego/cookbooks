@@ -21,8 +21,7 @@ kubectl create namespace monitoring
 ```
 
 ```sh
-helm install stable/prometheus \
-  -n prometheus \
+helm install prometheus stable/prometheus \
   --namespace monitoring \
   --set alertmanager.enabled=true \
   --set alertmanager.ingress.enabled=true \

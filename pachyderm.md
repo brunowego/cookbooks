@@ -14,8 +14,7 @@ kubectl create namespace pachyderm
 ```
 
 ```sh
-helm install stable/pachyderm \
-  -n pachyderm \
+helm install pachyderm stable/pachyderm \
   --namespace pachyderm \
   --set etcd.persistence.enabled=true \
   --set etcd.persistence.accessMode=ReadWriteMany \

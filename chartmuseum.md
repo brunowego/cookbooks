@@ -1,5 +1,9 @@
 # ChartMuseum
 
+## References
+
+- [Monocular](/monocular.md)
+
 ## Helm
 
 ### References
@@ -26,8 +30,7 @@ kubectl create secret tls example.tls-secret \
 ```
 
 ```sh
-helm install stable/chartmuseum \
-  -n chartmuseum \
+helm install chartmuseum stable/chartmuseum \
   --namespace chartmuseum \
   --set persistence.enabled=true \
   --set env.open.DISABLE_API=false \
@@ -54,7 +57,7 @@ curl -ks https://chartmuseum.$(minikube ip).nip.io/api/charts | jq .
 
 ```sh
 helm repo add --ca-file /etc/ssl/certs/example/root-ca.crt example https://chartmuseum.$(minikube ip).nip.io
-helm repo update example
+helm repo update
 ```
 
 ##### Remote

@@ -33,6 +33,16 @@ sudo apk add py2-pip
 pip2 -h
 ```
 
+### Usage
+
+```sh
+# Installed packages
+pip2 list
+
+# Install setup.py
+pip2 install ./
+```
+
 ### Issues
 
 #### Permission denied

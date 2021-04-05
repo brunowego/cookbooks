@@ -25,3 +25,13 @@ https://www.linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 ```sh
 code --install-extension FallenMax.mithril-emmet
 ```
+
+#### EditorConfig
+
+```sh
+cat << EOF >> ./.editorconfig
+
+[*.html]
+indent_size = 4
+EOF
+```

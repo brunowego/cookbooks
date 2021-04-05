@@ -80,7 +80,9 @@ WORKDIR /usr/src/app
 
 COPY ./requirements.txt ./
 
-RUN pip3 install --no-cache-dir -r ./requirements.txt
+RUN pip3 install \
+      -r ./requirements.txt \
+      --no-cache-dir
 
 COPY ./app.py ./
 
@@ -190,11 +192,55 @@ python --version 2>&1 | head -1
 python -m SimpleHTTPServer 3000 -o 0.0.0.0 # Python v2.x
 python -m http.server 3000 # Python v3.x
 
-# REPL
+#
+python3 -B -m [module-name]
+```
+
+### REPL
+
+```sh
 python3
 ```
 
+```py
+# The Zen of Python, by Tim Peters
+>>> import this
+```
+
 ### Tips
+
+#### EditorConfig
+
+```sh
+cat << EOF > ./.editorconfig
+[*.py]
+indent_size = 4
+
+EOF
+```
+
+#### Setuptools
+
+```sh
+python3 ./setup.py build
+python3 ./setup.py install
+```
+
+#### Get Site Packages
+
+```sh
+#
+python3 -m site --user-site
+
+#
+python3 -c 'import site; print(site.getsitepackages())'
+```
+
+#### List Modules
+
+```python
+>>> help('modules package')
+```
 
 #### Command-line completion
 
@@ -231,4 +277,12 @@ export PYTHONWARNINGS='default'
 
 # ignore
 export PYTHONWARNINGS='ignore'
+```
+
+### Issues
+
+####
+
+```log
+/usr/bin/python3: No module named [name].__main__; '[name]' is a package and cannot be directly executed
 ```

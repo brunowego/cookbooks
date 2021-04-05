@@ -1,10 +1,10 @@
 # MIT Kerberos Client
 
-<!--
-cyrus-sasl-gssapiv2
--->
-
 ## CLI
+
+<!-- ### Dependencies
+
+- [GSSAPI (Generic Security Services API)](/gssapi.md) -->
 
 ### Installation
 

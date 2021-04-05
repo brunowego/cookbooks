@@ -13,8 +13,7 @@ kubectl create namespace docker-registry
 ```
 
 ```sh
-helm install stable/docker-registry \
-  -n docker-registry \
+helm install docker-registry stable/docker-registry \
   --namespace docker-registry \
   --set ingress.enabled=true \
   --set ingress.hosts={registry.$(minikube ip).nip.io}

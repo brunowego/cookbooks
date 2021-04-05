@@ -8,7 +8,7 @@ TODO
 
 ```sh
 helm repo add gethue https://helm.gethue.com
-helm repo update gethue
+helm repo update
 ```
 
 ### Install
@@ -18,8 +18,7 @@ kubectl create namespace hue
 ```
 
 ```sh
-helm install gethue/hue \
-  -n hue \
+helm install hue gethue/hue \
   --namespace hue \
   --set ingress.enabled=true \
   --set ingress.hosts={hue.$(minikube ip).nip.io}

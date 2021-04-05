@@ -17,6 +17,12 @@ yum check-update
 sudo yum -y install openssh-clients
 ```
 
+#### Chocolatey
+
+```sh
+choco install -y ssh-copy-id
+```
+
 ### Usage
 
 ```sh
