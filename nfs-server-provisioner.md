@@ -27,6 +27,6 @@ kubectl rollout status deploy/nfs-server-provisioner -n nfs-server
 ### Delete
 
 ```sh
-helm delete nfs-server-provisioner --purge
+helm uninstall nfs-server-provisioner -n nfs-server-provisioner
 kubectl delete namespace nfs-server --grace-period=0 --force
 ``` -->

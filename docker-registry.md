@@ -91,7 +91,7 @@ kubectl get secret docker-registry-secret \
 ### Delete
 
 ```sh
-helm delete docker-registry --purge
+helm uninstall docker-registry -n docker-registry
 kubectl delete namespace docker-registry --grace-period=0 --force
 ```
 

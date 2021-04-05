@@ -24,7 +24,7 @@ helm install kafka-manager stable/kafka-manager \
 ### Delete
 
 ```sh
-helm delete kafka-manager --purge
+helm uninstall kafka-manager -n kafka-manager
 ```
 
 ## Docker

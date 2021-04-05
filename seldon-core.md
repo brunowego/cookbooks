@@ -80,7 +80,7 @@ kubectl delete pod $(kubectl get pod -l 'app.kubernetes.io/name=seldon-core-oper
 ### Delete
 
 ```sh
-helm delete seldon-core --purge
+helm uninstall seldon-core -n seldon-core
 kubectl delete namespace seldon-system --grace-period=0 --force
 ```
 

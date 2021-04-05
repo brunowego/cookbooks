@@ -80,7 +80,7 @@ rm ./ca.crt
 ### Delete
 
 ```sh
-helm delete chartmuseum --purge
+helm uninstall chartmuseum -n chartmuseum
 kubectl delete namespace chartmuseum --grace-period=0 --force
 ```
 

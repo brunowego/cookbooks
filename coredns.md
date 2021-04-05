@@ -122,5 +122,5 @@ kubectl logs -l 'k8s-app=coredns' -n kube-system -f
 ### Delete
 
 ```sh
-helm delete coredns --purge
+helm uninstall coredns -n coredns
 ```

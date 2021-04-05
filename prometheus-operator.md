@@ -59,6 +59,6 @@ kubectl get secret prometheus-operator-grafana \
 ### Delete
 
 ```sh
-helm delete prometheus-operator --purge
+helm uninstall prometheus-operator -n prometheus-operator
 kubectl delete namespace monitoring --grace-period=0 --force
 ```

@@ -48,5 +48,5 @@ nslookup tekton-pipelines-controller.tekton-pipelines.svc.cluster.local 10.96.0.
 ### Delete
 
 ```sh
-helm delete tekton-pipelines --purge
+helm uninstall tekton-pipelines -n tekton-pipelines
 ```

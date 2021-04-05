@@ -51,7 +51,7 @@ kubectl rollout status deploy/rancher -n cattle-system
 ### Delete
 
 ```sh
-helm delete rancher --purge
+helm uninstall rancher -n rancher
 ```
 
 ```sh

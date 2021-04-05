@@ -120,7 +120,7 @@ nslookup kafka.kafka.svc.cluster.local 10.96.0.10
 ### Delete
 
 ```sh
-helm delete kafka --purge
+helm uninstall kafka -n kafka
 kubectl delete namespace kafka --grace-period=0 --force
 ```
 

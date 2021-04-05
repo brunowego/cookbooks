@@ -46,7 +46,7 @@ helm upgrade nginx-ingress stable/nginx-ingress -f <(yq w <(helm get values ngin
 ### Delete
 
 ```sh
-helm delete mongodb --purge
+helm uninstall mongodb -n mongodb
 kubectl delete namespace mongodb --grace-period=0 --force
 ```
 

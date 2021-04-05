@@ -42,5 +42,5 @@ nslookup prometheus-adapter.monitoring.svc.cluster.local 10.96.0.10
 ### Delete
 
 ```sh
-helm delete prometheus-adapter --purge
+helm uninstall prometheus-adapter -n prometheus-adapter
 ```

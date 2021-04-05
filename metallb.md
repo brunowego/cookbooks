@@ -52,6 +52,6 @@ kubectl get services -A
 ```sh
 kubectl delete configmap metallb-config -n metallb-system
 
-helm delete metallb --purge
+helm uninstall metallb -n metallb
 kubectl delete namespace metallb-system --grace-period=0 --force
 ```

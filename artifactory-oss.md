@@ -97,7 +97,7 @@ nslookup "artifactory.$(minikube ip).nip.io" 10.96.0.10
 ### Delete
 
 ```sh
-helm delete artifactory --purge
+helm uninstall artifactory -n artifactory
 kubectl delete namespace artifactory --grace-period=0 --force
 ```
 

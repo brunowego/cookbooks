@@ -95,7 +95,7 @@ nslookup "kubeless.$(minikube ip).nip.io" 10.96.0.10
 ### Delete
 
 ```sh
-helm delete kubeless --purge
+helm uninstall kubeless -n kubeless
 kubectl delete namespace kubeless --grace-period=0 --force
 ```
 

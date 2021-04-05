@@ -140,8 +140,8 @@ kubectl get secret kiali \
 ### Delete
 
 ```sh
-helm delete istio --purge
-helm delete istio-init --purge
+helm uninstall istio -n istio
+helm uninstall istio-init -n istio-init
 kubectl delete namespace istio-system --grace-period=0 --force
 
 kubectl get crd -o json | jq -r '.items[] | select(.spec.group | contains("istio.io")) | .metadata.name' | xargs kubectl delete crd

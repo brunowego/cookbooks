@@ -70,7 +70,7 @@ kubectl get secret consul-gossip-key \
 ### Delete
 
 ```sh
-helm delete consul --purge
+helm uninstall consul -n consul
 kubectl delete namespace consul --grace-period=0 --force
 ```
 

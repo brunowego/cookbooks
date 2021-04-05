@@ -163,7 +163,7 @@ helm upgrade gitlab-ce gitlab/gitlab -f <(yq w <(helm get values gitlab-ce) shar
 ### Delete
 
 ```sh
-helm delete gitlab-ce --purge
+helm uninstall gitlab-ce -n gitlab-ce
 kubectl delete namespace gitlab --grace-period=0 --force
 
 helm upgrade nginx-ingress stable/nginx-ingress -f <(yq d <(helm get values nginx-ingress) tcp.22)

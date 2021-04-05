@@ -735,7 +735,7 @@ kubectl get secret matomo \
 ### Delete
 
 ```sh
-helm delete matomo --purge
+helm uninstall matomo -n matomo
 kubectl delete namespace matomo --grace-period=0 --force
 ```
 

@@ -27,6 +27,6 @@ kubectl rollout status deploy/argo-ci-apply-workflow-crd -n argo-ci
 ### Delete
 
 ```sh
-helm delete argo-ci --purge
+helm uninstall argo-ci -n argo-ci
 kubectl delete namespace argo-ci --grace-period=0 --force
 ```

@@ -145,7 +145,7 @@ exit
 ### Delete
 
 ```sh
-helm delete etcd-operator --purge
+helm uninstall etcd-operator -n etcd-operator
 
 kubectl get crd -o json | jq -r '.items[] | select(.spec.group | contains("etcd.database.coreos.com")) | .metadata.name' | xargs kubectl delete crd
 ```

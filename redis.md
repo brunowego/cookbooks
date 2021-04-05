@@ -188,7 +188,7 @@ kubectl get pvc redis-data-polyaxon-redis-slave-1 -o yaml -n polyaxon | \
 ### Delete
 
 ```sh
-helm delete redis --purge
+helm uninstall redis -n redis
 kubectl delete namespace redis --grace-period=0 --force
 ```
 

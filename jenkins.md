@@ -318,7 +318,7 @@ javax.net.ssl.SSLPeerUnverifiedException: Certificate for <subdomain.example.com
 ### Delete
 
 ```sh
-helm delete jenkins --purge
+helm uninstall jenkins -n jenkins
 kubectl delete namespace jenkins --grace-period=0 --force
 ```
 

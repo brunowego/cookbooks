@@ -63,7 +63,7 @@ kubectl get secret keycloak-http \
 ### Delete
 
 ```sh
-helm delete keycloak --purge
+helm uninstall keycloak -n keycloak
 kubectl delete namespace keycloak --grace-period=0 --force
 ```
 

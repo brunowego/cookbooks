@@ -107,7 +107,7 @@ echo -e "[INFO]\thttp://couchdb.$(minikube ip).nip.io/_utils/"
 ### Delete
 
 ```sh
-helm delete couchdb --purge
+helm uninstall couchdb -n couchdb
 kubectl delete namespace couchdb --grace-period=0 --force
 ```
 

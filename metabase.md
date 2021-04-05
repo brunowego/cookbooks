@@ -154,8 +154,8 @@ kubectl get secret metabase-metabase-database \
 ### Delete
 
 ```sh
-helm delete metabase-postgresql --purge
-helm delete metabase --purge
+helm uninstall metabase-postgresql -n metabase-postgresql
+helm uninstall metabase -n metabase
 kubectl delete namespace metabase --grace-period=0 --force
 ```
 

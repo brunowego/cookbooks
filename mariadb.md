@@ -87,7 +87,7 @@ kubectl get secret mariadb \
 ### Delete
 
 ```sh
-helm delete mariadb --purge
+helm uninstall mariadb -n mariadb
 kubectl delete namespace mariadb --grace-period=0 --force
 ```
 

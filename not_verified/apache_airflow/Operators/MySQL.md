@@ -1,4 +1,4 @@
-# SSH
+# MySQL
 
 ## Connection
 

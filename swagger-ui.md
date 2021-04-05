@@ -98,7 +98,7 @@ nslookup swagger-ui.example.com 10.96.0.10
 ### Delete
 
 ```sh
-helm delete swagger-ui --purge
+helm uninstall swagger-ui -n swagger-ui
 kubectl delete namespace swagger --grace-period=0 --force
 ```
 

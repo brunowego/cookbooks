@@ -27,6 +27,6 @@ kubectl rollout status deploy/argo-events-gateway-controller -n argo-events
 ### Delete
 
 ```sh
-helm delete argo-events --purge
+helm uninstall argo-events -n argo-events
 kubectl delete namespace argo-events --grace-period=0 --force
 ```

@@ -72,7 +72,7 @@ rm -fR ./charts
 ### Delete
 
 ```sh
-helm delete dremio-oss --purge
+helm uninstall dremio-oss -n dremio-oss
 kubectl delete namespace dremio --grace-period=0 --force
 ```
 

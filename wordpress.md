@@ -112,7 +112,7 @@ kubectl get secret wordpress \
 ### Delete
 
 ```sh
-helm delete wordpress --purge
+helm uninstall wordpress -n wordpress
 kubectl delete namespace wordpress --grace-period=0 --force
 ```
 

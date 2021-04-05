@@ -17,7 +17,7 @@ helm install locust stable/locust \
 ### Delete
 
 ```sh
-helm delete locust --purge
+helm uninstall locust -n locust
 kubectl delete namespace locust --grace-period=0 --force
 ```
 

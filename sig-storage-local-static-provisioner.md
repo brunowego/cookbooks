@@ -40,5 +40,5 @@ kubectl logs -l 'app=local-volume-provisioner' -n default -f
 ### Delete
 
 ```sh
-helm delete local-volume-provisioner --purge
+helm uninstall local-volume-provisioner -n local-volume-provisioner
 ```

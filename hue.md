@@ -34,7 +34,7 @@ kubectl get secret hue \
 ### Delete
 
 ```sh
-helm delete hue --purge
+helm uninstall hue -n hue
 kubectl delete namespace hue --grace-period=0 --force
 ```
 

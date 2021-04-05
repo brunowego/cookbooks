@@ -88,5 +88,5 @@ Warning  FailedScheduling  46s (x2 over 95s)  default-scheduler  0/5 nodes are a
 ### Delete
 
 ```sh
-helm delete seldon-core-analytics --purge
+helm uninstall seldon-core-analytics -n seldon-core-analytics
 ```

@@ -53,7 +53,7 @@ kubectl get secret influxdb \
 ### Delete
 
 ```sh
-helm delete fission --purge
+helm uninstall fission -n fission
 kubectl delete namespace fission --grace-period=0 --force
 ```
 

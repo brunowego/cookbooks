@@ -116,5 +116,5 @@ kubectl get secret $(kubectl get serviceaccount kubernetes-dashboard -n kube-sys
 ### Delete
 
 ```sh
-helm delete kubernetes-dashboard --purge
+helm uninstall kubernetes-dashboard -n kubernetes-dashboard
 ```

@@ -34,6 +34,6 @@ kubectl exec -it \
 ### Delete
 
 ```sh
-helm delete chaoskube --purge
+helm uninstall chaoskube -n chaoskube
 kubectl delete namespace chaoskube --grace-period=0 --force
 ```

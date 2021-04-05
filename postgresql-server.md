@@ -184,7 +184,7 @@ kubectl get secret postgresql \
 ### Delete
 
 ```sh
-helm delete postgresql --purge
+helm uninstall postgresql -n postgresql
 
 kubectl delete namespace postgresql --grace-period=0 --force
 ```

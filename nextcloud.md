@@ -107,7 +107,7 @@ kubectl get secret nextcloud \
 ### Delete
 
 ```sh
-helm delete nextcloud --purge
+helm uninstall nextcloud -n nextcloud
 kubectl delete namespace nextcloud --grace-period=0 --force
 ```
 

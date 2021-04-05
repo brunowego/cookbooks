@@ -146,7 +146,7 @@ nslookup "mailhog.$(minikube ip).nip.io" 10.96.0.10
 ### Delete
 
 ```sh
-helm delete mailhog --purge
+helm uninstall mailhog -n mailhog
 kubectl delete namespace mailhog --grace-period=0 --force
 ```
 

@@ -56,6 +56,6 @@ EOF
 ### Delete
 
 ```sh
-helm delete tensorflow-notebook --purge
+helm uninstall tensorflow-notebook -n tensorflow-notebook
 kubectl delete namespace tensorflow-notebook --grace-period=0 --force
 ```

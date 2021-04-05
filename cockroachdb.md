@@ -44,7 +44,7 @@ cockroachdb sql \
 ### Delete
 
 ```sh
-helm delete cockroachdb --purge
+helm uninstall cockroachdb -n cockroachdb
 kubectl delete namespace cockroach --grace-period=0 --force
 
 kubectl get csr -o json | \

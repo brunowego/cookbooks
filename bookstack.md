@@ -23,6 +23,6 @@ helm install bookstack stable/bookstack \
 ### Delete
 
 ```sh
-helm delete bookstack --purge
+helm uninstall bookstack -n bookstack
 kubectl delete namespace bookstack --grace-period=0 --force
 ```

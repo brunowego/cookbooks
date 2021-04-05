@@ -159,6 +159,6 @@ kubectl get secret kubecost-grafana \
 ### Delete
 
 ```sh
-helm delete kubecost --purge
+helm uninstall kubecost -n kubecost
 kubectl delete namespace kubecost --grace-period=0 --force
 ```

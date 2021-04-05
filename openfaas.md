@@ -94,7 +94,7 @@ kubectl get secret basic-auth \
 ### Delete
 
 ```sh
-helm delete openfaas --purge
+helm uninstall openfaas -n openfaas
 kubectl delete -f https://raw.githubusercontent.com/openfaas/faas-netes/master/namespaces.yml
 ```
 

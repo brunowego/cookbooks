@@ -32,7 +32,7 @@ kubectl rollout status deploy/pachd -n pachyderm
 ### Delete
 
 ```sh
-helm delete pachyderm --purge
+helm uninstall pachyderm -n pachyderm
 kubectl delete namespace pachyderm --grace-period=0 --force
 ```
 

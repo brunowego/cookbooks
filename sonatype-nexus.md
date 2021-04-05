@@ -189,7 +189,7 @@ Add address `registry.$(minikube ip).nip.io` to insecure registry in docker daem
 ### Delete
 
 ```sh
-helm delete sonatype-nexus --purge
+helm uninstall sonatype-nexus -n sonatype-nexus
 kubectl delete namespace sonatype-nexus --grace-period=0 --force
 ```
 

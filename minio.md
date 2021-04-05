@@ -49,6 +49,6 @@ kubectl rollout status deploy/minio -n minio
 ### Delete
 
 ```sh
-helm delete minio --purge
+helm uninstall minio -n minio
 kubectl delete namespace minio --grace-period=0 --force
 ```

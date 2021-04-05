@@ -39,6 +39,6 @@ docker run --rm \
 ### Delete
 
 ```sh
-helm delete tensorflow-inception --purge
+helm uninstall tensorflow-inception -n tensorflow-inception
 kubectl delete namespace tensorflow-inception --grace-period=0 --force
 ```

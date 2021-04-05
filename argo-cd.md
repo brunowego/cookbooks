@@ -64,7 +64,7 @@ kubectl patch secret argocd-secret \
 ### Delete
 
 ```sh
-helm delete argo-cd --purge
+helm uninstall argo-cd -n argo-cd
 kubectl delete namespace argo-cd --grace-period=0 --force
 
 kubectl get crd -o json | jq -r '.items[] | select(.spec.group | contains("argoproj.io")) | .metadata.name' | xargs -n 1 kubectl delete crd

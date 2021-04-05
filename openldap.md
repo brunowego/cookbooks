@@ -63,7 +63,7 @@ ldapsearch -x \
 ### Delete
 
 ```sh
-helm delete openldap --purge
+helm uninstall openldap -n openldap
 kubectl delete namespace openldap --grace-period=0 --force
 ```
 

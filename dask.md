@@ -65,6 +65,6 @@ EOF
 ### Delete
 
 ```sh
-helm delete dask --purge
+helm uninstall dask -n dask
 kubectl delete namespace dask --grace-period=0 --force
 ```

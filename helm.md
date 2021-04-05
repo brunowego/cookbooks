@@ -92,7 +92,7 @@ code --install-extension technosophos.vscode-helm
 #### Delete All
 
 ```sh
-helm delete $(helm ls --all --short) --purge
+helm uninstall $(helm ls --all --short) -n $(helm ls --all --short)
 ```
 
 #### Overwrite Values
@@ -129,7 +129,7 @@ helm upgrade polyaxon polyaxon/polyaxon \
 #### Purge without Hooks
 
 ```sh
-helm delete [name] \
+helm uninstall [name] \
   --purge \
   --no-hooks
 ```
@@ -220,7 +220,7 @@ helm repo index "$(helm home)/repository/local"
 ```
 
 ```sh
-helm delete lamp --purge
+helm uninstall lamp -n lamp
 kubectl delete namespace lamp --grace-period=0 --force
 ```
 

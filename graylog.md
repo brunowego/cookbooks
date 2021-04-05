@@ -105,7 +105,7 @@ kubectl get secret graylog \
 ### Delete
 
 ```sh
-helm delete graylog --purge
+helm uninstall graylog -n graylog
 kubectl delete namespace graylog --grace-period=0 --force
 ```
 

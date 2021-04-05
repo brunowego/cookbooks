@@ -95,7 +95,7 @@ kubectl get secret grafana \
 ### Delete
 
 ```sh
-helm delete grafana --purge
+helm uninstall grafana -n grafana
 kubectl delete namespace grafana --grace-period=0 --force
 ```
 

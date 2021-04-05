@@ -109,5 +109,5 @@ helm get values external-dns | yq r - coredns.etcdEndpoints
 ### Delete
 
 ```sh
-helm delete external-dns --purge
+helm uninstall external-dns -n external-dns
 ```

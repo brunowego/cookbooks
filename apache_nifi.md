@@ -30,12 +30,6 @@ helm install nifi cetic/nifi \
   --set ingress.hosts={nifi.$(minikube ip).nip.io}
 ```
 
-### Status
-
-```sh
-kubectl get pod -n nifi
-```
-
 ### SSL
 
 #### Dependencies
@@ -111,7 +105,8 @@ kubectl get secret nifi \
 ### Delete
 
 ```sh
-helm delete nifi --purge
+helm uninstall nifi -n nifi
+
 kubectl delete namespace nifi --grace-period=0 --force
 ```
 

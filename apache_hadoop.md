@@ -50,7 +50,7 @@ helm status hadoop
 ### Delete
 
 ```sh
-helm delete hadoop --purge
+helm uninstall hadoop -n hadoop
 kubectl delete namespace hadoop --grace-period=0 --force
 ```
 

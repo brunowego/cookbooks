@@ -100,5 +100,5 @@ minikube tunnel
 ### Delete
 
 ```sh
-helm delete nginx-ingress --purge
+helm uninstall nginx-ingress -n nginx-ingress
 ```

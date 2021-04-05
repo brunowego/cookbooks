@@ -30,7 +30,7 @@ helm install jupyterhub jupyterhub/jupyterhub \
 ### Delete
 
 ```sh
-helm delete jupyterhub --purge
+helm uninstall jupyterhub -n jupyterhub
 kubectl delete namespace jupyterhub --grace-period=0 --force
 ```
 

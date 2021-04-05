@@ -100,7 +100,7 @@ kubectl logs deployment/flux -n flux -f
 ### Delete
 
 ```sh
-helm delete flux --purge
+helm uninstall flux -n flux
 kubectl delete namespace flux --grace-period=0 --force
 kubectl delete -f https://raw.githubusercontent.com/fluxcd/flux/helm-0.10.1/deploy-helm/flux-helm-release-crd.yaml
 ```

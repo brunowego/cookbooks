@@ -174,7 +174,7 @@ kubectl get secret sentry \
 ### Delete
 
 ```sh
-helm delete sentry --purge
+helm uninstall sentry -n sentry
 kubectl delete namespace sentry --grace-period=0 --force
 ```
 

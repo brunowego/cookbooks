@@ -92,6 +92,6 @@ kubectl get secret lamp \
 ### Delete
 
 ```sh
-helm delete lamp --purge
+helm uninstall lamp -n lamp
 kubectl delete namespace lamp --grace-period=0 --force
 ```

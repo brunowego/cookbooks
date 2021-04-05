@@ -49,6 +49,6 @@ kubectl describe sparkapplication spark-pi -n default
 ### Delete
 
 ```sh
-helm delete spark-operator --purge
+helm uninstall spark-operator -n spark-operator
 kubectl delete namespace spark-operator --grace-period=0 --force
 ```

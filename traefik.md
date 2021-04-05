@@ -105,7 +105,7 @@ nslookup traefik.$(minikube ip).nip.io 10.96.0.10
 ### Delete
 
 ```sh
-helm delete traefik --purge
+helm uninstall traefik -n traefik
 ```
 
 ## Docker

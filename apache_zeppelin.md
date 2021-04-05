@@ -27,7 +27,7 @@ kubectl rollout status deploy/zeppelin-zeppelin -n hadoop
 ### Delete
 
 ```sh
-helm delete zeppelin --purge
+helm uninstall zeppelin -n zeppelin
 ```
 
 ## Host

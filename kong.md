@@ -63,7 +63,7 @@ kubectl get secret kong-postgresql \
 ### Delete
 
 ```sh
-helm delete kong --purge
+helm uninstall kong -n kong
 kubectl delete namespace kong --grace-period=0 --force
 ```
 

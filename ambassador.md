@@ -158,7 +158,7 @@ echo -e "[INFO]\thttp://admin.ambassador.$(minikube ip).nip.io/ambassador/v0/dia
 ### Delete
 
 ```sh
-helm delete ambassador --purge
+helm uninstall ambassador -n ambassador
 kubectl delete namespace ambassador --grace-period=0 --force
 
 kubectl get crd -o json | jq -r '.items[] | select(.spec.group | contains("getambassador.io")) | .metadata.name' | xargs kubectl delete crd

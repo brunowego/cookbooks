@@ -79,6 +79,6 @@ kubectl get secret keel \
 ### Delete
 
 ```sh
-helm delete keel --purge
+helm uninstall keel -n keel
 kubectl delete namespace keel --grace-period=0 --force
 ```

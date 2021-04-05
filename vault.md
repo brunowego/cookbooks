@@ -75,6 +75,6 @@ minikube ssh -- 'sudo /usr/bin/sh -c "echo -e \"127.0.0.1\tconsul.example.com\" 
 ### Delete
 
 ```sh
-helm delete vault --purge
+helm uninstall vault -n vault
 kubectl delete namespace vault --grace-period=0 --force
 ```

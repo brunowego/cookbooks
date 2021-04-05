@@ -38,7 +38,7 @@ kubectl rollout status deploy/cert-manager -n cert-manager
 ### Delete
 
 ```sh
-helm delete cert-manager --purge
+helm uninstall cert-manager -n cert-manager
 kubectl delete namespace cert-manager --grace-period=0 --force
 kubectl delete -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.10/deploy/manifests/00-crds.yaml
 ```

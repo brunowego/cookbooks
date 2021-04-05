@@ -47,6 +47,6 @@ kubectl logs -l 'app=nfs-client-provisioner' -n nfs-client
 ### Delete
 
 ```sh
-helm delete nfs-client-provisioner --purge
+helm uninstall nfs-client-provisioner -n nfs-client-provisioner
 kubectl delete namespace nfs-client --grace-period=0 --force
 ```

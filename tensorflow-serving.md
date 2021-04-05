@@ -43,6 +43,6 @@ nslookup mnist-tensorflow-serving.tensorflow-serving.svc.cluster.local 10.96.0.1
 ### Delete
 
 ```sh
-helm delete mnist --purge
+helm uninstall mnist -n mnist
 kubectl delete namespace tensorflow-serving --grace-period=0 --force
 ```

@@ -67,7 +67,7 @@ exit
 ### Delete
 
 ```sh
-helm delete etcd-cluster --purge
+helm uninstall etcd-cluster -n etcd-cluster
 
 kubectl delete pvc -l 'app.kubernetes.io/name=etcd' -n kube-system
 ```

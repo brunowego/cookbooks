@@ -195,7 +195,7 @@ echo -e '[INFO]\thttp://openwhisk-couchdb.openwhisk.svc.cluster.local:5984/_util
 ### Delete
 
 ```sh
-helm delete openwhisk --purge
+helm uninstall openwhisk -n openwhisk
 kubectl delete namespace openwhisk --grace-period=0 --force
 kubectl label nodes --all openwhisk-role-
 ```

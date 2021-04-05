@@ -230,7 +230,7 @@ kubectl get secret sonarqube \
 ### Delete
 
 ```sh
-helm delete sonarqube --purge
+helm uninstall sonarqube -n sonarqube
 kubectl delete namespace sonarqube --grace-period=0 --force
 ```
 

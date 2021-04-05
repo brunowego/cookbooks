@@ -201,7 +201,7 @@ helm upgrade polyaxon polyaxon/polyaxon -f <(yq d <(helm get values polyaxon) ld
 ### Delete
 
 ```sh
-helm delete polyaxon --purge
+helm uninstall polyaxon -n polyaxon
 kubectl delete namespace polyaxon --grace-period=0 --force
 ```
 

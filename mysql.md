@@ -172,7 +172,7 @@ kubectl get secret mysql \
 ### Delete
 
 ```sh
-helm delete mysql --purge
+helm uninstall mysql -n mysql
 kubectl delete namespace mysql --grace-period=0 --force
 ```
 

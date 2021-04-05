@@ -66,6 +66,6 @@ kubectl rollout status deploy/monocular-monocular-chartsvc -n monocular
 ### Delete
 
 ```sh
-helm delete monocular --purge
+helm uninstall monocular -n monocular
 kubectl delete namespace monocular --grace-period=0 --force
 ```

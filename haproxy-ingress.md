@@ -43,5 +43,5 @@ nslookup haproxy-ingress-controller.kube-system.svc.cluster.local 10.96.0.10
 ### Delete
 
 ```sh
-helm delete haproxy-ingress --purge
+helm uninstall haproxy-ingress -n haproxy-ingress
 ```

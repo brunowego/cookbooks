@@ -106,7 +106,7 @@ nslookup "prometheus.$(minikube ip).nip.io" 10.96.0.10
 ### Delete
 
 ```sh
-helm delete prometheus --purge
+helm uninstall prometheus -n prometheus
 kubectl delete namespace monitoring --grace-period=0 --force
 ```
 

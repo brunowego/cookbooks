@@ -45,7 +45,7 @@ nslookup prometheus-php-fpm-exporter.php-fpm.svc.cluster.local 10.96.0.10
 ### Delete
 
 ```sh
-helm delete prometheus-php-fpm-exporter --purge
+helm uninstall prometheus-php-fpm-exporter -n prometheus-php-fpm-exporter
 ```
 
 ## Docker
