@@ -14,6 +14,13 @@ https://www.linkedin.com/learning/kubernetes-monitoring-with-prometheus/promethe
 
 - [Configuration](https://github.com/helm/charts/tree/master/stable/prometheus#configuration)
 
+### Repository
+
+```sh
+helm repo add stable https://charts.helm.sh/stable
+helm repo update
+```
+
 ### Install
 
 ```sh
@@ -107,6 +114,7 @@ nslookup "prometheus.$(minikube ip).nip.io" 10.96.0.10
 
 ```sh
 helm uninstall prometheus -n prometheus
+
 kubectl delete namespace monitoring --grace-period=0 --force
 ```
 

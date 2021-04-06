@@ -16,17 +16,14 @@ helm repo update
 ### Install
 
 ```sh
-kubectl apply -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.10/deploy/manifests/00-crds.yaml
-```
-
-```sh
 kubectl create namespace cert-manager
-kubectl label namespace cert-manager certmanager.k8s.io/disable-validation='true'
 ```
 
 ```sh
 helm install cert-manager jetstack/cert-manager \
-  --namespace cert-manager
+  --namespace cert-manager \
+  --version v1.1.1 \
+  --set installCRDs=true
 ```
 
 ### Status
@@ -39,6 +36,6 @@ kubectl rollout status deploy/cert-manager -n cert-manager
 
 ```sh
 helm uninstall cert-manager -n cert-manager
+
 kubectl delete namespace cert-manager --grace-period=0 --force
-kubectl delete -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.10/deploy/manifests/00-crds.yaml
 ```

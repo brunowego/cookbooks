@@ -129,6 +129,9 @@ kubectl config set-context \
   --cluster=minikube \
   --user=minikube \
   minikube
+
+#
+minikube stop -p minikube
 ```
 
 #### Addons

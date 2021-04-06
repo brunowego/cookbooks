@@ -51,6 +51,7 @@ kill -9 "$(lsof -nPi tcp:8001 | grep LISTEN | awk '{print $2}')"
 kubectl cp ./path/to/folder/or/file [namespace]/[podname]:/path/to/where/save
 
 #
+kubectl get pod -A
 kubectl get pod -n [namespace]
 
 #
