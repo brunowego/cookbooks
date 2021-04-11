@@ -1,7 +1,5 @@
 # AppRTC
 
-TODO
-
 ## Docker
 
 ### Running

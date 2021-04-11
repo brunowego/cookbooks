@@ -1,3 +1,11 @@
 # MobaXterm
 
-TODO
+## App
+
+### Installation
+
+#### Chocolatey
+
+```sh
+choco install -y mobaxterm
+```

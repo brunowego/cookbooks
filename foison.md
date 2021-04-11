@@ -73,6 +73,6 @@ Cartolina
 Manta magnética
 Papel -->
 
-### Cut/Plot
+<!-- ### Cut/Plot
 
-TODO
+TODO -->

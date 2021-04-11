@@ -67,13 +67,13 @@ testssl.sh \
 
 ### Issues
 
-#### OpenSSL
+<!-- #### OpenSSL
 
 ```log
 No engine or GOST support via engine with your /usr/local/opt/openssl@1.1/bin/openssl
 ```
 
-TODO
+TODO -->
 
 ## Docker
 

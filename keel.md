@@ -33,13 +33,13 @@ helm install keel keel/keel \
 
 - [Kubernetes TLS Secret](/k8s-tls-secret.md)
 
-#### Create
+<!-- #### Create
 
-TODO
+TODO -->
 
-#### Remove
+<!-- #### Remove
 
-TODO
+TODO -->
 
 ### Status
 

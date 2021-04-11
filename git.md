@@ -334,13 +334,13 @@ git config \
 
 ### Issues
 
-#### Host Resolve
+<!-- #### Host Resolve
 
 ```log
 fatal: unable to access 'https://example.com/organization/repository.git/': Could not resolve host: [hostname]
 ```
 
-TODO
+TODO -->
 
 #### Certificate
 

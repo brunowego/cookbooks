@@ -51,10 +51,10 @@ EOF
 
 ### Issues
 
-#### Missing GNU Readline Library
+<!-- #### Missing GNU Readline Library
 
 ```log
 /bin/sh: /tmp/_MEIl8vInH/libreadline.so.7: no version information available (required by /bin/sh)
 ```
 
-TODO
+TODO -->

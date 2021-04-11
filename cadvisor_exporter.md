@@ -1,9 +1,5 @@
 # cAdvisor Exporter
 
-## Docker
-
-TODO
-
 ## CLI
 
 ### Dependencies

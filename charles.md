@@ -41,12 +41,6 @@ yum check-update
 sudo yum -y install charles-proxy
 ```
 
-### Features
-
-#### SSL Proxying
-
-TODO
-
 ### Tips
 
 #### Add CLI

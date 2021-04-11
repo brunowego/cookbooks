@@ -60,7 +60,7 @@ wp db export
 wp core download \
   --path='wp' \
   --locale='pt_BR' \
-  --version='5.3.2' \
+  --version='5.7.0' \
   --skip-content
 
 #
@@ -71,7 +71,7 @@ wp core verify-checksums
 
 #
 wp core check-update
-wp core update --version=5.3.0
+wp core update --version=5.7.0
 ```
 
 #### Config
@@ -308,10 +308,10 @@ wp eval 'echo "[INFO]\t" . wp_login_url() . "\n";'
 
 ### Issues
 
-#### WebP Converter
+<!-- #### WebP Converter
 
 ```log
 WebP Converter for Media (Error): Server configuration: "imagewebp" function is not available.
 ```
 
-TODO
+TODO -->

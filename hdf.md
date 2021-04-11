@@ -1,3 +1,0 @@
-# Cloudera DataFlow (Ambari)
-
-TODO

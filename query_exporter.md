@@ -196,30 +196,6 @@ docker rm -f mysql
 docker volume rm mysql-data
 ```
 
-### Issues
-
-####
-
-```log
-2020-03-04 14:52:42,634 - ERROR - query-exporter - error from database "xxx": (ibm_db_dbi.Error) ibm_db_dbi::Error: [IBM][CLI Driver] SQL10007N Message "0" could not be retrieved.  Reason code: "3". SQLCODE=-1042
-(Background on this error at: http://sqlalche.me/e/dbapi)
-```
-
-```sh
-db2 get dbm cfg | grep -i '(authentication)'
-
-# AUTHENTICATION=SERVER
-```
-
-####
-
-```log
-2020-03-04 09:37:54,266 - ERROR - query-exporter - error from database "xxx": (ibm_db_dbi.OperationalError) ibm_db_dbi::OperationalError: [IBM][CLI Driver] SQL30081N  A communication error has been detected. Communication protocol being used: "TCP/IP".  Communication API being used: "SOCKETS".  Location where the error was detected: "172.17.78.128".  Communication function detecting the error: "connect".  Protocol specific error code(s): "113", "*", "*".  SQLSTATE=08001 SQLCODE=-30081
-(Background on this error at: http://sqlalche.me/e/e3q8)
-```
-
-TODO
-
 ### Uninstall
 
 ```sh

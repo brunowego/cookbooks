@@ -1,10 +1,11 @@
-# Kubectl
+# Kubernetes Control (kubectl)
 
 ## CLI
 
 ### References
 
 - [kubectl Cheat Sheet](https://v1-13.docs.kubernetes.io/docs/reference/kubectl/cheatsheet/)
+- [Managing Secret using kubectl](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/)
 
 ### Installation
 
@@ -63,7 +64,26 @@ kubectl logs \
   -c [container] \
   -n [namespace] \
   -f
+```
 
+#### Secrets
+
+```sh
+# List
+kubectl get secrets -n [namespace]
+
+# Create
+
+
+# Describe
+kubectl describe secret [secret-name] -n [namespace]
+
+# Get Data
+kubectl get secret [secret-name] -o jsonpath='{.data}' -n [namespace] | jq .
+kubectl get secret [secret-name] --template={{.data.bar}} -n [namespace] | base64 --decode
+
+# Delete
+kubectl delete secret [secret-name] -n [namespace]
 ```
 
 ### Tips
@@ -119,15 +139,15 @@ kubectl exec -it \
   -- /bin/sh -c 'kill 1'
 ``` -->
 
-####
+<!-- ####
 
 ```sh
 kubectl get pod [name] -n [namespace] -o yaml | \
   sed 's/restartPolicy: Always/restartPolicy: Never/' | \
     kubectl apply -f -
-```
+``` -->
 
-####
+<!-- ####
 
 ```sh
 #
@@ -149,7 +169,7 @@ curl \
 
 #
 rm /tmp/ns.json
-```
+``` -->
 
 #### Snippets
 
@@ -169,8 +189,6 @@ cat << EOF | kubectl replace --force -f -
 
 EOF
 ```
-
-## Tips
 
 ### Force Delete
 
@@ -317,7 +335,7 @@ kubectl patch deploy "$POD_NAME" --type='json' -p '[{"op":"remove","path":"/spec
 kubectl patch deploy "$POD_NAME" --type='json' -p '[{"op":"remove","path":"/spec/template/spec/containers/0/readinessProbe"}]'
 ```
 
-###
+<!-- ###
 
 ```sh
 kubectl config set-cluster --certificate-authority=certificate-authority-data --embed-certs=true --server='https://myk8sclust-myresourcegroup-7c08a0mgmt.westeurope.cloudapp.azure.com' azure
@@ -330,7 +348,7 @@ kubectl config set-context \
   azure
 
 kubectl config view
-```
+``` -->
 
 ### Docs
 

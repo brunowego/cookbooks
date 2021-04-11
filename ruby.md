@@ -1,9 +1,47 @@
 # Ruby
 
 <!--
+Mechanize
+Nokogiri
+
+https://code.tutsplus.com/articles/building-your-first-web-scraper-01--cms-27559
+https://www.inkoop.io/blog/web-scraping-using-selenium-ruby/
+https://www.scrapingdog.com/blog/web-scraping-with-ruby
+https://scraperbox.com/blog/web-scraping-with-ruby?utm_campaign=News&utm_medium=Community&utm_source=DataCamp.com
+https://learn.co/lessons/ruby-remote-data-practice-scraping
+http://merowing.info/2015/01/extracting-data-from-websites-without-api/
+http://tutorials.jumpstartlab.com/topics/scraping-with-capybara.html
+http://www.mattmorgante.com/technology/webscraper
+https://ronanlopes.me/web-crawler-minerando-noticias-em-ruby-com-o-nokogiri/
+https://agilie.com/en/blog/case-study-how-we-built-web-scraper-on-ruby-on-rails
+https://www.freecodecamp.org/news/how-to-scrape-with-ruby-and-nokogiri-and-map-the-data-bd9febb5e18a/
+https://www.botreetechnologies.com/blog/how-to-do-web-scraping-of-a-static-or-dynamic-website-with-ruby-on-rails/
+https://scraperbox.com/blog/web-scraping-with-ruby
+https://zenscrape.com/web-scraping-ruby/
+https://dev.to/amsmo/web-scraping-in-ruby-great-practice-for-aspiring-web-developers-2k5a
+https://dev.to/debosthefirst/how-to-build-a-web-scraper-in-ruby-a-covid-19-live-data-example-16o0
+https://hackernoon.com/my-journey-building-a-scraper-with-ruby-vx1n3y05
+https://itnext.io/building-a-basic-scraper-with-ruby-1cec071ada83
+https://rapidapi.com/blog/web-scraping-ruby/
+https://sloboda-studio.com/blog/how-to-do-web-scraping-with-ruby/
+https://www.scrapingbee.com/blog/web-scraping-ruby/
+https://onebitcode.com/web-scraping-com-ruby/
+https://medium.com/@jennyjean8675309/web-scraping-with-ruby-and-nokogiri-73e75a6f34ed
+-->
+
+<!--
+https://www.linkedin.com/learning/ruby-essential-training-part-1-the-basics/learn-the-basics-of-ruby
+https://app.pluralsight.com/paths/skill/ruby-language-fundamentals
+
+https://app.pluralsight.com/paths/skill/ruby-language-fundamentals
+https://www.linkedin.com/learning/topics/ruby?entityType=COURSE
 https://app.pluralsight.com/library/courses/ruby-getting-started/table-of-contents
 https://app.pluralsight.com/library/courses/reading-writing-data-ruby/table-of-contents
 -->
+
+## References
+
+- [Web Content Scrapers](https://www.ruby-toolbox.com/categories/Web_Content_Scrapers)
 
 ## Docker
 

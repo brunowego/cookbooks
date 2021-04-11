@@ -1,7 +1,0 @@
-# Jest
-
-TODO
-
-<!--
-Snapshot Testing
--->

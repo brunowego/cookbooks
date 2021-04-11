@@ -1,7 +1,5 @@
 # Hue
 
-TODO
-
 ## Helm
 
 ### Repository

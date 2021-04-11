@@ -24,12 +24,10 @@ sudo yum -y install clang
 clang++ --version | head -1
 ```
 
-### Issues
+<!-- ### Issues
 
 ####
 
 ```log
 error: command 'clang' failed with exit status 1
-```
-
-TODO
+``` -->

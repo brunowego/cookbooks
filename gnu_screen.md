@@ -47,34 +47,22 @@ EOF
 screen -h
 ```
 
-### Examples
-
-#### New Session
+### Usage
 
 ```sh
+# New Session
 screen -S [session_name]
-```
 
-#### List
-
-```sh
+# List
 screen -ls
-```
 
-#### Detach
+# Detach: Ctrl + a d
 
-`Ctrl + a` `d`
-
-#### Reattach
-
-```sh
+# Reattach
 screen -r [session_id]
 screen -x [session_id]
-```
 
-#### Quit
-
-```sh
+# Quit
 screen -X quit
 
 # with session id

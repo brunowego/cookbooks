@@ -80,13 +80,13 @@ kubectl label namespace default istio-injection=enabled
 
 - [Kubernetes TLS Secret](/k8s-tls-secret.md)
 
-#### Create
+<!-- #### Create
 
-TODO
+TODO -->
 
-#### Remove
+<!-- #### Remove
 
-TODO
+TODO -->
 
 ### Status
 

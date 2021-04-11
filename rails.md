@@ -1,6 +1,10 @@
 # Ruby on Rails
 
 <!--
+https://www.linkedin.com/learning/topics/ruby-on-rails?entityType=COURSE
+
+https://app.pluralsight.com/paths/skill/building-web-apps-with-ruby-on-rails
+
 https://github.com/chaskiq/chaskiq
 
 https://app.pluralsight.com/library/courses/creating-api-rails/table-of-contents

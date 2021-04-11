@@ -1,13 +1,11 @@
 # RecordIt
 
-## Installation
+## App
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install --cask recordit
 ```
-
-### Windows
-
-TODO

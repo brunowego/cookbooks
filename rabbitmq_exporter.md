@@ -1,9 +1,5 @@
 # RabbitMQ Exporter for Prometheus
 
-## Helm
-
-TODO
-
 <!--
 https://github.com/helm/charts/tree/master/stable/prometheus-rabbitmq-exporter
 -->

@@ -1,7 +1,5 @@
 # Kui Shell
 
-TODO
-
 ## CLI
 
 ```sh

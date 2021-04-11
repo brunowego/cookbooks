@@ -51,7 +51,13 @@ phpcs \
   ./
 ```
 
-### Docs
+### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension ikappas.phpcs
+```
 
 #### PhpStorm
 

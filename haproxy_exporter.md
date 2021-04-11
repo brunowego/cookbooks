@@ -1,9 +1,5 @@
 # HAProxy Exporter for Prometheus
 
-## Docker
-
-TODO
-
 ## CLI
 
 ### Dependencies

@@ -181,21 +181,21 @@ adbd cannot run as root in production builds
 6. Select: Nougat (Google APIs) -> Next
 7. Finish
 
-####
+<!-- ####
 
 ```log
 adb: failed to install ./app/build/outputs/apk/debug/app-x86_64-debug.apk: Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]
 ```
 
-TODO
+TODO -->
 
-####
+<!-- ####
 
 ```log
 emulator: ERROR: AdbHostServer.cpp:102: Unable to connect to adb daemon on port: 5037
 ```
 
-TODO
+TODO -->
 
 ####
 

@@ -109,13 +109,13 @@ EOF
 
 ### Issues
 
-####
+<!-- ####
 
 ```log
 kinit: Client '[username]@[REALM]' not found in Kerberos database while getting initial credentials
 ```
 
-TODO
+TODO -->
 
 #### Unknown credential
 

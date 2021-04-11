@@ -221,7 +221,7 @@ PGPASSWORD='metabase' pg_dump \
   > /path/to/dump/metabase-$(gdate +%Y-%m-%d-%H-%M).sql
 
 # Restore
-TODO
+# TODO
 ```
 
 ### Remove
@@ -275,9 +275,9 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 
 ### Tips
 
-#### Proxy
+<!-- #### Proxy
 
-TODO
+TODO -->
 
 <!--
 https://stackoverflow.com/questions/57881019/i-cant-get-atom-text-editor-leiningen-proto-repl-to-work-for-programming-c

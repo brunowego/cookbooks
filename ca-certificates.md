@@ -9,10 +9,6 @@ sudo apt update
 sudo apt -y install ca-certificates
 ```
 
-### YUM
-
-TODO
-
 ## Commands
 
 ```sh

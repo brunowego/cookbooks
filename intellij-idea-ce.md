@@ -1,6 +1,8 @@
-# IntelliJ IDEA Community Edition
+# IntelliJ IDEA Community Edition (CE)
 
 <!--
+https://www.diffblue.com/community-edition/download/
+
 https://medium.com/@m.muizzsuddin_25037/hot-reload-java-without-worry-with-dcevm-hotswap-in-intellijidea-472ba82f8121
 
 https://app.pluralsight.com/library/courses/intellij-ce-getting-started/table-of-contents

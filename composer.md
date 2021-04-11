@@ -199,13 +199,13 @@ Find [pubkeys here](https://composer.github.io/pubkeys.html).
 composer self-update --update-keys
 ```
 
-####
+<!-- ####
 
 ```log
 You must enable the openssl extension in your php.ini to load information from https://[hostname]
 ```
 
-TODO
+TODO -->
 
 ####
 

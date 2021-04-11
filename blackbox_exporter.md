@@ -1,17 +1,5 @@
 # Blackbox Exporter for Prometheus
 
-## Helm
-
-<!--
-https://github.com/helm/charts/tree/master/stable/prometheus-blackbox-exporter
--->
-
-TODO
-
-## Docker
-
-TODO
-
 ## CLI
 
 ### Dependencies

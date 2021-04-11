@@ -156,10 +156,10 @@ devices
 >>> exit()
 ```
 
-#### Keras
+<!-- #### Keras
 
 ```sh
 pip3 install -U keras
 ```
 
-TODO
+TODO -->

@@ -146,14 +146,14 @@ source <(helm completion zsh)
 
 ### Issues
 
-#### Kubernetes Configuration
+<!-- #### Kubernetes Configuration
 
 ```log
 WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: ~/.kube/config
 WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: ~/.kube/config
 ```
 
-TODO
+TODO -->
 
 #### API Version
 
@@ -323,14 +323,14 @@ openssl s_client \
 helm repo add --ca-file /etc/ssl/certs/example/root-ca.pem example https://chartmuseum.example.com
 ```
 
-#### Transport Closing
+<!-- #### Transport Closing
 
 ```log
 E0924 14:25:51.932342   32716 portforward.go:233] lost connection to pod
 Error: transport is closing
 ```
 
-TODO
+TODO -->
 
 #### DNS
 

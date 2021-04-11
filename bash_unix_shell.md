@@ -94,13 +94,13 @@ sudo cp /root/.bashrc ~
 
 ### Issues
 
-#### LDAP Authentication
+<!-- #### LDAP Authentication
 
 ```log
 chsh: user '[username]' does not exist in /etc/passwd
 ```
 
-TODO
+TODO -->
 
 <!-- ####
 

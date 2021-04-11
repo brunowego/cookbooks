@@ -3,7 +3,9 @@
 ## References
 
 - [ETL vs ELT: 5 Critical Differences](https://www.xplenty.com/blog/etl-vs-elt/)
+- Data Pipeline
 
-##
+## Glossary
 
-- ELT: Extract, Load (THEN) Transform
+- Extract, Transform, Load (ETL)
+- Extract, Load (THEN) Transform (ELT)

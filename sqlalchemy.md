@@ -72,10 +72,13 @@ Install [PyMySQL](./pymysql)
 
 ```sh
 # As user dependency
-pip3 install -U ibm_db_sa
+pip3 install -U ibm-db ibm-db-sa
 
 # As project dependency
-echo 'ibm-db-sa==0.3.5' >> ./requirements.txt
+cat << EOF >> ./requirements.txt
+ibm-db==3.0.3
+ibm-db-sa==0.3.6
+EOF
 ```
 
 ```py

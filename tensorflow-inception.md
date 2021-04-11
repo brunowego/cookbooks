@@ -1,7 +1,5 @@
 # TensorFlow Inception
 
-TODO
-
 ## Helm
 
 ### Repository

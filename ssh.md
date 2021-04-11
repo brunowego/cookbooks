@@ -136,6 +136,19 @@ sudo systemctl restart sshd
 
 ## Issues
 
+### Remote Connection Close
+
+```log
+Connection to [hostname] closed by remote host.
+```
+
+```ini
+Host [hostname]
+  # ...
+  TCPKeepAlive yes
+  ServerAliveInterval 30
+```
+
 ### Bad owner or permissions
 
 ```log

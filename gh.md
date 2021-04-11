@@ -13,7 +13,7 @@ brew install gh
 #### Chocolatey
 
 ```sh
-choco install gh
+choco install -y gh
 ```
 
 ### Commands

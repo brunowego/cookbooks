@@ -29,13 +29,13 @@ code --install-extension cipchk.cssrem
 
 ### Technologies
 
-#### CSS Flexible Box Layout
+<!-- #### CSS Flexible Box Layout
 
-TODO
+TODO -->
 
-#### CSS Grid
+<!-- #### CSS Grid
 
-TODO
+TODO -->
 
 <!--
 https://www.treinaweb.com.br/blog/flexbox-ou-css-grid/

@@ -16,6 +16,13 @@ brew install bumpversion
 pip3 install -U bumpversion
 ```
 
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y bumpversion
+```
+
 ### Commands
 
 ```sh

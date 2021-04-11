@@ -148,7 +148,7 @@ EOF
 ldd `which curl` | grep -E '(ssl|crypto)'
 
 # Darwin
-TODO
+# TODO
 ```
 
 ### Issues

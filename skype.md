@@ -19,9 +19,9 @@ brew install --cask skype-for-business
 choco install -y skype
 ```
 
-#### Issues
+### Issues
 
-##### Proxy
+#### Proxy
 
 Bypass external proxies for the following hosts:
 

@@ -1,7 +1,5 @@
 # sig-storage-local-static-provisioner
 
-TODO
-
 ## Helm
 
 ### References

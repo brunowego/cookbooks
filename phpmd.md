@@ -1,8 +1,10 @@
-# MessDetector
+# PHP: Hypertext Preprocessor MessDetector
 
-## Installation
+## CLI
 
-### PEAR
+### Installation
+
+#### PEAR
 
 ```sh
 pear channel-discover pear.pdepend.org
@@ -14,33 +16,33 @@ pear channel-discover pear.phpmd.org
 pear install phpmd/PHP_PMD-1.5.0
 ```
 
-### PHPBrew
+#### PHPBrew
 
 ```sh
 phpbrew -d app get --downloader=wget phpmd
 ```
 
-## Verify
+### Verify
 
 ```sh
 phpmd --version
 ```
 
-## Configuration
+### Tips
 
-### PhpStorm
+#### PhpStorm
 
-Set path of `phpcs`:
+Set path of `phpmd`:
 
 1. File
 2. Default Settings
 3. Languages & Frameworks
 4. Mess Detector
 
-Check Code Sniffer validation:
+Check MessDetector validation:
 
 1. File
 2. Default Settings
 3. Editor
 4. Inspections
-5. PHP Mess Detector validation
+5. PHP MessDetector validation

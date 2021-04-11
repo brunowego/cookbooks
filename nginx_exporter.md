@@ -1,9 +1,5 @@
 # NGINX Exporter for Prometheus
 
-## Docker
-
-TODO
-
 ## CLI
 
 ### Installation
