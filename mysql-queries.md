@@ -131,6 +131,9 @@ SELECT DATABASE();
 
 -- Current User
 SELECT CURRENT_USER()
+
+--
+SELECT * FROM items WHERE items.xml LIKE '%123456%'
 ```
 
 ## Find
@@ -185,6 +188,14 @@ UPDATE
     table_name
 SET
     column_name = REPLACE(column_name, 'find string', 'to string');
+
+-- Replace
+UPDATE
+    table_name
+SET
+    column_name = REPLACE(column_name, 'find string', 'find string')
+WHERE
+    column_name LIKE ('%find string%');
 
 -- Multiple update
 SELECT

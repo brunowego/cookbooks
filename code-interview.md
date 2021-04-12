@@ -4,6 +4,8 @@
 Inversion of Control
 Separation of Concerns
 
+https://www.techseries.dev/interview-details
+
 https://www.youtube.com/watch?v=oBt53YbR9Kk
 
 https://www.youtube.com/watch?v=qeJosUVwgjk

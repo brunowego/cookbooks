@@ -11,9 +11,3 @@
 sudo apt update
 sudo apt -y install simplescreenrecorder
 ```
-
-<!-- ### Usage
-
-```sh
-
-``` -->

@@ -12,6 +12,7 @@ Bucket of cookbooks to help install and set softwares.
 
 ## Terms
 
+- Attention deficit hyperactivity disorder (ADHD)
 - [Acknowledgement (ACK or NACK)](https://en.wikipedia.org/wiki/Acknowledgement_(data_networks))
 - Active Directory Federation Services (ADFS)
 - [Analytical Base Table (ABT) is](https://en.wikipedia.org/wiki/Analytical_base_table)

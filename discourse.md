@@ -53,6 +53,8 @@ docker run -d \
   docker.io/bitnami/discourse:2.5.2
 ```
 
+> Wait! This process take a while.
+
 ```sh
 echo -e '[INFO]\thttp://127.0.0.1:3000'
 ```
