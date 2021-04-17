@@ -12,47 +12,49 @@ docker run -it --rm \
   docker.io/library/python:2.7 /bin/bash
 ```
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install python@2
 ```
 
-### YUM
+#### YUM
 
 ```sh
 yum check-update
 sudo yum -y install python2
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install python2.7
 ```
 
-### APK
+#### APK
 
 ```sh
 sudo apk update
 sudo apk add python2
 ```
 
-### Source
+#### Source
 
-#### Dependencies
+##### Dependencies
 
-### YUM
+###### YUM
 
 ```sh
 yum check-update
 sudo yum -y install gcc-c++ make zlib-devel libffi-devel openssl-devel bzip2-devel readline-devel sqlite-devel
 ```
 
-#### Build & Install
+##### Build & Install
 
 ```sh
 curl https://www.python.org/ftp/python/2.7.16/Python-2.7.16.tgz | tar -zx
@@ -67,13 +69,22 @@ sudo /usr/bin/sh -c 'echo "/usr/local/lib/python2" >> /etc/ld.so.conf.d/python2.
 sudo ldconfig
 ```
 
-## Commands
+### Commands
 
 ```sh
 python2 -h
 ```
 
-## REPL
+### Usage
+
+```sh
+# HTTP Server
+python2 \
+  -m SimpleHTTPServer 3000 \
+  -o 0.0.0.0
+```
+
+### REPL
 
 ```sh
 python2

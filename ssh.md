@@ -1,10 +1,19 @@
 # Secure Shell (SSH)
 
+## References
+
+- [OpenSSH Client](/openssh-client.md)
+- [OpenSSH Server](/openssh-server.md)
+
 ## Usage
 
 ```sh
 #
-ssh -i [privatekey].pem [username]@[IP]
+ssh \
+  -o StrictHostKeyChecking=no \
+  -l \
+  -i [privatekey].pem \
+  [username]@[IP]
 ```
 
 ## Tips

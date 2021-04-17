@@ -4,6 +4,12 @@
 
 ### Installation
 
+#### NPM
+
+```sh
+npm install -g yarn
+```
+
 #### Homebrew
 
 ```sh

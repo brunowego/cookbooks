@@ -31,7 +31,10 @@ sudo apt -y install yq
 #### Linux Binary
 
 ```sh
-sudo curl -L https://github.com/mikefarah/yq/releases/download/2.4.0/yq_linux_amd64 -o /usr/bin/yq && sudo chmod +x /usr/bin/yq
+sudo curl \
+  -L 'https://github.com/mikefarah/yq/releases/download/2.4.0/yq_linux_amd64' \
+  -o /usr/bin/yq && \
+    sudo chmod +x /usr/bin/yq
 ```
 
 ### Commands

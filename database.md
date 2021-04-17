@@ -1,5 +1,9 @@
 # Database
 
+<!--
+https://www.linkedin.com/learning/database-foundations-administration-8375189/administer-a-database-server
+-->
+
 ## Relational Database Management System (RDBMS)
 
 - DB2 IBM Company

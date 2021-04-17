@@ -1,6 +1,9 @@
 # Knative Serving
 
-<!-- https://github.com/IBM/knative101-eventing
+<!--
+https://app.pluralsight.com/library/courses/knative-getting-started/table-of-contents
+
+https://github.com/IBM/knative101-eventing
 https://github.com/guillaumeblaquiere/cloudrun-hello-go
 https://github.com/tormachris/knative-report
 https://github.com/schafer14/grpc-knative
@@ -24,11 +27,13 @@ https://developer.ibm.com/tutorials/knative-101-labs/
 https://cloud.google.com/knative/
 https://www.youtube.com/watch?v=GuzPWNEnroA
 https://www.youtube.com/watch?v=uTc4lwqBCb8
-https://www.youtube.com/watch?v=0Xhyx2ewGJs -->
+https://www.youtube.com/watch?v=0Xhyx2ewGJs
+-->
 
 TODO
 
-<!-- https://knative.dev/docs/serving/samples/autoscale-go/
+<!--
+https://knative.dev/docs/serving/samples/autoscale-go/
 https://triggermesh.com/2018/11/deploying-openfaas-functions-with-knative/
 https://thenewstack.io/knative-enables-portable-serverless-platforms-on-kubernetes-for-any-cloud/
 https://burrsutter.com/wp-content/uploads/2019/06/DevNexus_Serverless-Kubernetes.pdf
@@ -41,4 +46,5 @@ https://github.com/mchmarny/knative-gitops-using-cloud-build
 https://github.com/markito/kqr-pay
 https://github.com/daisy-ycguo/knativelab/tree/master/english-docs
 https://github.com/daisy-ycguo/knative-learning
-https://github.com/yogendra/pfs-workshop -->
+https://github.com/yogendra/pfs-workshop
+-->

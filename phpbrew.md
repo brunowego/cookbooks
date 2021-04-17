@@ -86,6 +86,12 @@ sudo yum -y install libmcrypt-devel
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install phpbrew
+```
+
 #### Binary
 
 ```sh

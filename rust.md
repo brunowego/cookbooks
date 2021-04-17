@@ -1,6 +1,8 @@
 # Rust
 
 <!--
+https://www.linkedin.com/learning/rust-essential-training/learn-rust-programming
+
 https://github.com/pat-St/cms-container/tree/master
 
 https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/rust.html

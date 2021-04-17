@@ -1,15 +1,22 @@
 # GraphQL
 
 <!--
+https://app.pluralsight.com/library/courses/js-friends-session-07/table-of-contents
+https://app.pluralsight.com/library/courses/graphql-big-picture/table-of-contents
+
 https://www.linkedin.com/learning/building-a-graphql-project-with-react-js/why-use-react-with-graphql-for-projects
 
 https://www.youtube.com/watch?v=E3NHd-PkLrQ
-https://www.linkedin.com/learning/graphql-essential-training/learn-graphql-essentials
 
 https://github.com/njNafir/react-cheatsheets/blob/master/graphql.md
 https://github.com/Maelstroms38/django-book/blob/master/chapter-7.md
 https://github.com/mehulagg/gitlab/blob/master/doc/development/fe_guide/graphql.md
 -->
+
+## Alternatives
+
+- [Simple Object Access Protocol (SOAP)](/rest.md)
+- [Representational State Transfer (REST)](/rest.md)
 
 ## Tools
 

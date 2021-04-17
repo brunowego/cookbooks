@@ -63,6 +63,19 @@ EOF
 sudo systemctl restart ssh
 ```
 
+<!-- #### Listen Address
+
+```sh
+# Linux
+
+sed #ListenAddress 0.0.0.0 /etc/ssh/sshd_config
+```
+
+```sh
+# Linux
+sudo systemctl restart ssh
+``` -->
+
 ## Docker
 
 ### Build

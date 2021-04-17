@@ -20,6 +20,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Backend for Frontend (BFF)](https://samnewman.io/patterns/architectural/bff/)
 - [Bare-metal server](https://en.wikipedia.org/wiki/Bare-metal_server)
 - Capture The Flag (CTF)
+- Bulletin Board System (BBS)
 - Change Data Capture (CDC)
 - [Chaos engineering (Chaos Monkey)](https://en.wikipedia.org/wiki/Chaos_engineering)
 - Churn Rate
@@ -32,12 +33,14 @@ Bucket of cookbooks to help install and set softwares.
 - Containers as a Service (CaaS)
 - Data Source Name (DSN)
 - Data Transfer Object (DTO)
+- Consumer to Consumer (C2C)
 - Distributed Cloud Operating System (DC/OS)
 - [Enhanced Entity–Relationship (EER)](https://en.wikipedia.org/wiki/Enhanced_entity%E2%80%93relationship_model)
-- ERPM (Enterprise Random Password Manager
+- Enterprise Random Password Manager (ERPM)
 - Estimated Time of Arrival (ETA)
 - Facebook, Amazon, Apple, Netflix e Google (FAANG)
 - Five Ws (5WH)
+- Request for Enhancement (RFE)
 - [Free and Open-Source Software (FOSS)](https://en.wikipedia.org/wiki/Free_and_open-source_software)
 - [identity provider (IdP)](https://en.wikipedia.org/wiki/Identity_provider)
 - [Infrastructure as a service (IaaS)](https://en.wikipedia.org/wiki/Infrastructure_as_a_service)

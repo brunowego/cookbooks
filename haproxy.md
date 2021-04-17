@@ -1,4 +1,4 @@
-# HAProxy
+# High Availability Proxy (HAProxy)
 
 ## Docker
 

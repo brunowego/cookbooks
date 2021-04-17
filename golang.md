@@ -1,6 +1,7 @@
 # Go Programming Language
 
 <!--
+https://www.linkedin.com/learning/learning-go-8399317/develop-basic-programs-with-go
 https://www.linkedin.com/learning/learning-the-go-standard-library/don-t-go-re-inventing-the-wheel
 
 https://app.pluralsight.com/library/courses/go-create-test-applications/table-of-contents

@@ -1,6 +1,7 @@
 # Jenkins
 
 <!--
+https://www.linkedin.com/learning/jenkins-essential-training/from-code-to-production-with-jenkins
 https://app.pluralsight.com/paths/skill/continuous-integration-with-jenkins
 -->
 

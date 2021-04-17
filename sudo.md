@@ -6,6 +6,14 @@ sudoers
 
 ## CLI
 
+### Installation
+
+#### Windows
+
+```sh
+scoop install sudo
+```
+
 ### Commands
 
 ```sh

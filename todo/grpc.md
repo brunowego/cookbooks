@@ -1,4 +1,4 @@
-# Remote Procedure Call (gRPC)
+# gRPC Remote Procedure Calls (gRPC)
 
 ## References
 

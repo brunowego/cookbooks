@@ -33,7 +33,9 @@ brew install --cask ngrok
 #### Linux
 
 ```sh
-( cd /usr/local/bin && sudo wget -O tmp.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && sudo unzip tmp.zip && sudo rm tmp.zip )
+( cd /usr/local/bin && \
+  sudo wget -O tmp.zip 'https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip' && \
+    sudo unzip tmp.zip && sudo rm tmp.zip )
 ```
 
 ### Commands

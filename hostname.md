@@ -5,40 +5,38 @@
 ### Commands
 
 ```sh
+# Unix-like
 hostname --help
-```
 
-### Tips
-
-#### Show
-
-```sh
-sudo cat /etc/hostname
+# Windows
+hostname /?
 ```
 
 ### Usage
 
+#### Unix-like
+
 ```sh
+# Show
+sudo cat /etc/hostname
+
 # Get IP
 hostname -I
 
 # Set
 sudo hostnamectl set-hostname [name]
+hostnamectl status
+sudo su - "$USER"
 ```
 
-| OS | Name |
-| --- | --- |
-| Darwin | `ally` |
-| CentOS | `axis` |
-| Ubuntu | `apex` |
-| Darwin (Mobile) | `axel` |
+#### Windows
 
 ```sh
-#
-hostnamectl status
+# Show
+hostname
 
-#
-sudo su - "$USER"
+# Or, using environment variable
+echo %computername%
 ```
 
 ### Issues

@@ -187,11 +187,13 @@ python3 -h
 
 ```sh
 # Version
-python --version 2>&1 | head -1
+python3 --version 2>&1 | head -1
 
 # HTTP Server
-python -m SimpleHTTPServer 3000 -o 0.0.0.0 # Python v2.x
-python -m http.server 3000 # Python v3.x
+python3 \
+  -m http.server \
+  --cgi
+  3000
 
 #
 python3 -B -m [module-name]

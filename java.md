@@ -1,6 +1,8 @@
 # Java
 
 <!--
+https://www.linkedin.com/learning/calling-rest-apis-with-java/restful-apis-in-java-application-architectures
+
 https://learn.oracle.com/ols/home/java-25th-anniversary-learning-subscription/82508
 
 https://app.pluralsight.com/paths/skill/java

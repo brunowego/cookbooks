@@ -244,10 +244,10 @@ choco install -y mysql
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
-# MySQL 5.7
+# MySQL Server 5.7
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
-# MySQL 8.x
+# MySQL Server 8.x
 export PATH="/usr/local/opt/mysql/bin:$PATH"
 ```
 

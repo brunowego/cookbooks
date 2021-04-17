@@ -1,6 +1,7 @@
 # Vue.js
 
 <!--
+https://app.pluralsight.com/library/courses/vue-components-jest-testing/table-of-contents
 https://www.youtube.com/watch?v=vB6rmWCmANA
 https://www.youtube.com/watch?v=w0p7ywfHesw
 

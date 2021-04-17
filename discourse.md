@@ -50,7 +50,7 @@ docker run -d \
   -p 80:3000 \
   --name discourse \
   --network workbench \
-  docker.io/bitnami/discourse:2.5.2
+  docker.io/bitnami/discourse:2.6.4
 ```
 
 > Wait! This process take a while.

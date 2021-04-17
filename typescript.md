@@ -1,6 +1,7 @@
 # TypeScript
 
 <!--
+https://app.pluralsight.com/library/courses/react-apps-typescript-building/table-of-contents
 https://app.pluralsight.com/library/courses/getting-started-typescript/table-of-contents
 
 https://github.com/adotando-pet/monorepo/tree/840301e005f024892e9ce7dd6640525010308596

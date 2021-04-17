@@ -1,6 +1,28 @@
 # Code Interview
 
 <!--
+https://www.linkedin.com/learning/job-searching-interviewing-and-negotiating-salary/command-your-career-bryan-cranston-s-advice-for-millennials
+https://www.linkedin.com/learning/how-to-rock-an-interview/plan-your-first-impression
+https://www.linkedin.com/learning/interview-master-class/introduction
+https://www.linkedin.com/learning/get-ready-for-your-coding-interview/welcome
+https://www.linkedin.com/learning/tech-career-skills-interviewing-developers/technical-interviews
+
+https://www.linkedin.com/learning/mastering-common-interview-questions/welcome
+https://www.linkedin.com/learning/fundamentals-of-dynamic-programming/the-importance-of-dynamic-programming
+https://www.linkedin.com/learning/job-interview-tips-for-software-engineers/overview-of-software-engineering-roles
+
+https://www.linkedin.com/learning/getting-your-first-job-in-software-development/getting-that-first-job-in-tech
+https://www.linkedin.com/learning/interview-tips-for-sales-professionals/overview-of-sales-development-representative-role
+https://www.linkedin.com/learning/interviewing-a-job-candidate-for-recruiters-2020/the-ever-evolving-interview-process
+https://www.linkedin.com/learning/remote-interviewing-techniques-for-creative-jobs/nailing-your-online-job-interview
+
+https://app.pluralsight.com/library/courses/resumes-job-seeking-interviews-context/table-of-contents
+https://app.pluralsight.com/library/courses/successful-technical-interview-interviewers/table-of-contents
+https://app.pluralsight.com/library/courses/how-to-get-your-first-job/table-of-contents
+https://app.pluralsight.com/library/courses/informational-interviews/table-of-contents
+
+https://www.linkedin.com/learning/job-interview-tips-for-marketing-managers/introduction-to-marketing-manager-roles
+
 Inversion of Control
 Separation of Concerns
 
@@ -40,3 +62,16 @@ https://www.youtube.com/watch?v=Fws57ECYbo4
 
 - [AlgoExpert](https://algoexpert.io)
 - [LeetCode](https://leetcode.com)
+
+## Algorithms
+
+- Binary Search
+- Breadth-First Search
+- Custom Data Structure (ex. suffix tree)
+- Depth First Search
+- Knowing how to Manipulate Multiple Variables/Pointers at once
+- Making use of Hash Tables
+- Matching Parenthesis
+- Recursion
+- Reversing a Linked List
+- Sorting Fundamentals (ex. time complexity, functioning, etc.)
