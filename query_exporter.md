@@ -200,5 +200,5 @@ docker volume rm mysql-data
 
 ```sh
 # PIP
-pip uninstall query-exporter
+pip3 uninstall query-exporter
 ```

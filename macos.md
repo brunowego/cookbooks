@@ -31,6 +31,17 @@ sw_vers
 softwareupdate --all --install --force
 ```
 
+## Configuration
+
+### Desktop & Documents Folder
+
+1. System Preferences
+2. Apple ID
+3. iCloud
+4. iCloud Drive -> Options...
+   - Check: Desktop & Documents Folder
+   - Done
+
 ## Issues
 
 ### 802.1X Network

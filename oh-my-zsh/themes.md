@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-- [GNU sed](/gnu_sed.md)
+- [GNU sed](/gnu-sed.md)
 
 ## We Disagree (wedisagree)
 

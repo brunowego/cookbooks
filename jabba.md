@@ -2,12 +2,16 @@
 
 ## CLI
 
+### Dependencies
+
+- [OpenJDK JRE - Java Runtime Environment](/openjdk-jre.md)
+
 ### Installation
 
 #### Unix-like
 
 ```sh
-curl -sL https://github.com/shyiko/jabba/raw/master/install.sh | \
+curl -sL 'https://github.com/shyiko/jabba/raw/master/install.sh' | \
   /bin/bash -s -- --skip-rc
 ```
 
@@ -77,9 +81,13 @@ jabba alias default [version]
 /usr/libexec/java_home -V
 
 #
-export JAVA_VERSION="`/usr/libexec/PlistBuddy -c 'Print :JavaVM:JVMVersion' $(dirname $(/usr/libexec/java_home -v 1.8))/Info.plist`"
+export JAVA_VERSION="`/usr/libexec/PlistBuddy -c 'Print :JavaVM:JVMVersion' "$(dirname "$(/usr/libexec/java_home -v 1.8)")"/Info.plist`"
+
+#
+export JAVA_VERSION="`/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$(dirname "$(/usr/libexec/java_home -v 1.8)")"/Info.plist`"
+
 # FIXME: 1.8.0_265 is not a valid version / 1.8.0-265 is a valid version
-jabba link system@"$JAVA_VERSION" $(dirname $(dirname $(/usr/libexec/java_home -v 1.8)))
+jabba link system@"$JAVA_VERSION" "$(dirname "$(dirname "$(/usr/libexec/java_home -v 1.8)")")"
 
 jabba ls
 ```

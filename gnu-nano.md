@@ -11,5 +11,5 @@ nano -h
 ### Usage
 
 ```sh
-nano [filename]
+nano ./[filename]
 ```

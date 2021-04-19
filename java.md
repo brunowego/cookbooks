@@ -33,6 +33,7 @@ Enterprise Information Systems Tier
 - JavaFX (EFF-ECTS)
 - WebProfile
 - MicroProfile
+- [jabba](/jabba.md)
 
 ## Exams
 
@@ -165,7 +166,7 @@ jar tvf [filename].jar
 
 ```sh
 cat << EOF > ./.editorconfig
-[*.{java,xml}]
+[*.java]
 indent_size = 4
 max_line_length = 100
 

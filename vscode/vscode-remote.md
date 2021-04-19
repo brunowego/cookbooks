@@ -1,4 +1,4 @@
-# Visual Studio Code - Remote Development
+# Visual Studio Code Remote Development
 
 ## References
 
@@ -14,13 +14,13 @@ code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 
 ## Configuration
 
-```sh
+<!-- ```sh
 cat << EOF >> ~/.ssh/config
 Host [hostname]
   RemoteCommand zsh -l
   RequestTTY force
 EOF
-```
+``` -->
 
 1. View -> Command Palette...
 2. Remote-SSH: Connect to Host...

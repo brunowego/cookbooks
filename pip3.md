@@ -54,7 +54,7 @@ pip3 list
 pip3 install ./
 
 #
-python -m pip3 install ./
+python3 -m pip3 install ./
 
 # Install compressed file
 pip3 install [/path/to/package.tar.gz]
@@ -123,7 +123,7 @@ EOF
 ```
 
 ```sh
-pip config list
+pip3 config list
 ```
 
 ### Tips
@@ -141,11 +141,11 @@ antigen bundle pip
 # pip3 install ./
 # pip3 install -e ./
 
-python ./setup.py install
-python ./setup.py develop
-python ./setup.py check --restructuredtext --metadata --strict
-python ./setup.py build
-python ./setup.py clean --all
+python3 ./setup.py install
+python3 ./setup.py develop
+python3 ./setup.py check --restructuredtext --metadata --strict
+python3 ./setup.py build
+python3 ./setup.py clean --all
 ```
 
 ### Issues

@@ -8,8 +8,13 @@
 
 ### Dependencies
 
-- [PHP](/php.md)
-- [PHP Bzip2](/php-bz2.md)
+- [PHP](/php/README.md)
+<!-- - [PHP Bzip2](/php/php-bz2.md) -->
+- [GNU Wget](/gnu-wget.md)
+- [pkg-config](/pkg-config.md)
+- [libxml2](/libxml2.md)
+- [bzip2](/bzip2.md)
+- [libzip](/libzip.md)
 
 <!--
 - [GCC](/gcc.md)
@@ -17,72 +22,61 @@
 - [OpenLDAP](/openldap.md)
 -->
 
-#### Homebrew
+<!-- #### Homebrew
 
 ```sh
 brew install \
-  wget \
-  libxml2 \
-  bzip2 \
-  libzip \
   mhash \
   mcrypt \
   pcre \
   openssl@1.1
-```
+``` -->
 
-#### APT
+<!-- #### APT
 
 ```sh
 sudo apt update
 sudo apt -y install \
-  libxml2-dev \
   libssl-dev \
   libbz2-dev \
   libreadline-dev \
   libxslt1-dev \
   zlib1g-dev \
-  libzip-dev \
   libcurl3-dev \
   make
-```
+``` -->
 
-#### Zypper
+<!-- #### Zypper
 
 ```sh
 sudo zypper refresh
 sudo zypper install -y \
   autoconf \
   gcc \
-  libxml2-devel \
   openssl-devel \
   libcurl-devel \
   readline-devel \
   libxslt-devel \
-  libzip-devel \
-  which \
-  lbzip2
-```
+  which
+``` -->
 
-#### YUM
+<!-- #### YUM
 
 ```sh
 yum check-update
 sudo yum -y install \
   autoconf \
   gcc \
-  libxml2-devel \
   openssl-devel \
   libcurl-devel \
   readline-devel \
   libxslt-devel \
-  libzip-devel \
   which \
   lbzip2
 
 # Repo: Webtatic
 sudo yum -y install libmcrypt-devel
-```
+``` -->
 
 ### Installation
 
@@ -108,9 +102,6 @@ sudo curl -L 'https://github.com/phpbrew/phpbrew/raw/master/phpbrew' -o /usr/loc
 
 ```sh
 phpbrew init
-
-# Darwin
-phpbrew lookup-prefix homebrew
 ```
 
 ### Environment
@@ -403,7 +394,6 @@ path to pkg-config.
 ```sh
 # Darwin
 export PKG_CONFIG_PATH="$(brew --cellar libxml2)/$(brew info --json libxml2 | jq -r '.[0].installed[0].version')/lib/pkgconfig:$PKG_CONFIG_PATH"
-
 export LDFLAGS="-L/usr/local/opt/libxml2/lib:$LDFLAGS"
 
 # Linux

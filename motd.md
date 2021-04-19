@@ -8,6 +8,8 @@
 
 ### Remove "Last login"
 
+***Warning***: Bad security practice!
+
 ```sh
 touch ~/.hushlogin || exit
 ```

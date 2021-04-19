@@ -1,14 +1,44 @@
 # libzip
 
-## Installation
+## Library
 
-### Source
+### Installation
 
-#### Dependencies
-
-##### YUM
+#### Homebrew
 
 ```sh
+brew install libzip
+```
+
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install libzip-dev
+```
+
+#### YUM
+
+```sh
+sudo yum update
+sudo yum -y install libzip-devel
+```
+
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y libzip-devel
+```
+
+#### Source
+
+##### Dependencies
+
+###### YUM
+
+```sh
+yum check-update
 
 # Repo: EPEL
 sudo yum -y install cmake3

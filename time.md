@@ -2,7 +2,7 @@
 
 ## References
 
-- [GNU time](/gnu_time.md)
+- [GNU time](/gnu-time.md)
 
 ## CLI
 

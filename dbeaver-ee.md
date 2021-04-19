@@ -1,33 +1,14 @@
-# DBeaver Enterprise
+# DBeaver Enterprise Edition (EE)
 
 ## App
 
 ### Dependencies
 
+- [OpenJDK JRE - Java Runtime Environment](/openjdk-jre.md)
+
 #### Darwin
 
 - [Java SE Development Kit](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
-
-#### YUM
-
-```sh
-yum check-update
-sudo yum -y install java-1.8.0-openjdk
-```
-
-#### APT
-
-```sh
-sudo apt update
-sudo apt -y install openjdk-8-jre
-```
-
-#### Zypper
-
-```sh
-sudo zypper refresh
-sudo zypper install -y java-1_8_0-openjdk
-```
 
 ### Installation
 
@@ -37,10 +18,19 @@ sudo zypper install -y java-1_8_0-openjdk
 brew install --cask dbeaver-enterprise
 ```
 
+<!-- #### PKG
+
+https://dbeaver.com/files/6.3.0/dbeaver-ee-6.3.0-installer.pkg -->
+
 #### DMG
 
+##### 6.3.0
+
 ```sh
-hdiutil attach https://dbeaver.com/files/6.3.0/dbeaver-ee-6.3.0-macos.dmg -nobrowse -mountpoint /Volumes/DBeaverEE
+hdiutil attach https://dbeaver.com/files/6.3.0/dbeaver-ee-6.3.0-macos.dmg \
+  -nobrowse \
+  -mountpoint \
+  /Volumes/DBeaverEE
 ```
 
 ```sh

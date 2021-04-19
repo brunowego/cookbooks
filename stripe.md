@@ -13,5 +13,5 @@ pip3 install -U stripe
 ### Usage
 
 ```sh
-python manage.py migrate
+python3 ./manage.py migrate
 ```

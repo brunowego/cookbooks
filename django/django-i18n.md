@@ -22,10 +22,10 @@ http://reader.epubee.com/books/mobile/12/12281e5b8cf834db1ecf92812fd7ce5f/text00
 
 ```sh
 #
-python -m django makemessages -h
+python3 -m django makemessages -h
 
 #
-python -m django compilemessages -h
+python3 -m django compilemessages -h
 ```
 
 ## Configuration
@@ -74,11 +74,11 @@ LOCALE_PATHS = (os.path.join(BASE_DIR, 'locale'),)
 mkdir -p ./locale
 
 #
-python -m django makemessages -l pt_BR
-python -m django makemessages -a
+python3 -m django makemessages -l pt_BR
+python3 -m django makemessages -a
 
 #
-python -m django compilemessages -l pt_BR
+python3 -m django compilemessages -l pt_BR
 ```
 
 ## Test

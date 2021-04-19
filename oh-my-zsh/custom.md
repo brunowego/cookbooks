@@ -89,11 +89,11 @@ EOF
 #
 sed -i "/^ZSH_PROXY_HOST/ s/=.*/='127.0.0.1'/g" ~/.oh-my-zsh/custom/plugins/proxy/proxy.plugin.zsh
 
-# Darwin???
+# Darwin
 sed -i '/^ZSH_PROXY_HOST/ s/=/="$(ip route get 1 | awk '\''{print $NF;exit}'\'')"/g' ~/.oh-my-zsh/custom/plugins/proxy/proxy.plugin.zsh
 
-# Linux???
-sed -i '/^ZSH_PROXY_HOST/ s/=/="$(ip route get 1 | awk '\''{print $7;exit}'\'')"/g' ~/.oh-my-zsh/custom/plugins/proxy/proxy.plugin.zsh
+# Linux
+# sed -i '/^ZSH_PROXY_HOST/ s/=/="$(ip route get 1 | awk '\''{print $7;exit}'\'')"/g' ~/.oh-my-zsh/custom/plugins/proxy/proxy.plugin.zsh
 ```
 
 #### Enabling

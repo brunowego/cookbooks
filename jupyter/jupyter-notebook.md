@@ -1,13 +1,17 @@
 # Jupyter Notebook
 
+## References
+
+- [Working with the Python Interactive window](https://code.visualstudio.com/docs/python/jupyter-support-py)
+
 ## Tools
 
-- [Gigantum]()
-- [Kubeflow]()
-- [Polyaxon]()
-- [Valohai]()
-- [Renku]()
-- [Code Ocean]()
+- Code Ocean
+- Gigantum
+- Kubeflow
+- Polyaxon
+- Renku
+- Valohai
 
 <!-- https://github.com/SwissDataScienceCenter/r10e-ds-py/blob/master/notebooks/02-Tools.ipynb -->
 

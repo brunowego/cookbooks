@@ -2,6 +2,10 @@
 
 **Keywords**: Shell linter
 
+## References
+
+- [ShellCheck](https://www.shellcheck.net/)
+
 ## CLI
 
 ### Installation
@@ -12,9 +16,9 @@
 brew install shellcheck
 ```
 
-## Editor
+### Tips
 
-### Visual Studio Code
+#### Visual Studio Code
 
 ```sh
 code --install-extension timonwong.shellcheck

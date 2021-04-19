@@ -10,6 +10,10 @@ https://www.linkedin.com/learning/web-components-and-modularization-practical-ap
 
 Bucket of cookbooks to help install and set softwares.
 
+##
+
+- Exempli Gratia (e.g.)
+
 ## Terms
 
 - Attention deficit hyperactivity disorder (ADHD)

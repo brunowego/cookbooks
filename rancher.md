@@ -1,9 +1,5 @@
 # Rancher
 
-<!--
-rke
--->
-
 ## Helm
 
 ### References
@@ -124,15 +120,15 @@ docker volume rm rancher-data
 
 ## Issues
 
-###
+<!-- ###
 
 >
 
 1. Cluster
 2. Edit
-3. Save
+3. Save -->
 
-###
+### Host Resolve
 
 ```log
 INFO: Using resolv.conf: nameserver 10.254.1.134 nameserver 172.17.10.57 nameserver 10.8.4.1 search example.com

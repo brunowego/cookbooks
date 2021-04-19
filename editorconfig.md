@@ -25,6 +25,12 @@ EOF
 
 ### Tips
 
+#### Visual Studio Code
+
+```sh
+code --install-extension EditorConfig.EditorConfig
+```
+
 #### Edit Commit Messages
 
 ```conf

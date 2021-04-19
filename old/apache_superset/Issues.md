@@ -7,7 +7,7 @@ Was unable to import superset Error: cannot import name '_maybe_box_datetimelike
 ```
 
 ```sh
-pip uninstall -y pandas
+pip3 uninstall -y pandas
 ```
 
 ```sh

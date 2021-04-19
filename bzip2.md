@@ -1,8 +1,14 @@
-# Bzip2
+# bzip2
 
 ## CLI
 
 ### Installation
+
+#### Homebrew
+
+```sh
+brew install bzip2
+```
 
 #### YUM
 
@@ -16,4 +22,11 @@ sudo yum -y install bzip2-devel
 ```sh
 sudo apt update
 sudo apt -y install bzip2
+```
+
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y lbzip2
 ```

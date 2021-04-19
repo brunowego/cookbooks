@@ -2,7 +2,7 @@
 
 ## References
 
-- [GNU sed](/gnu_sed#examples)
+- [GNU sed](/gnu-sed#examples)
 
 ## CLI
 

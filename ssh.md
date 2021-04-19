@@ -5,7 +5,9 @@
 - [OpenSSH Client](/openssh-client.md)
 - [OpenSSH Server](/openssh-server.md)
 
-## Usage
+## CLI
+
+### Usage
 
 ```sh
 #
@@ -16,15 +18,15 @@ ssh \
   [username]@[IP]
 ```
 
-## Tips
+### Tips
 
-### Visual Studio Code
+#### Visual Studio Code
 
 ```sh
 code --install-extension chrmarti.ssh
 ```
 
-### Hide Banner
+#### Hide Banner
 
 ```sh
 # Thought SSHD Config
@@ -37,7 +39,7 @@ Host [host]
 EOF
 ```
 
-### Change Folder
+#### Change Folder
 
 ```sh
 cat << EOF >> ~/.ssh/config
@@ -51,7 +53,7 @@ Host [hostname]
 EOF
 ```
 
-### Proxy
+#### Proxy
 
 ```sh
 # Local
@@ -84,7 +86,7 @@ sudo service sshd restart
 env | grep -i _proxy= | sort
 ```
 
-### HTTP SSH Tunnel
+#### HTTP SSH Tunnel
 
 <!--
 https://github.com/mainyaa/RaspberryPi-Mothership/blob/c9b2b676f650a83a741ddc757d9dd69b795ab672/README.md
@@ -93,10 +95,12 @@ https://stackabuse.com/how-to-tunnel-http-with-ssh/
 -->
 
 ```sh
-ssh -D [port] [username]@[hostname]
+ssh \
+  -D [port] \
+  [username]@[hostname]
 ```
 
-### ProxyJump
+#### ProxyJump
 
 ```sh
 ssh -J [remote] [another-remote]
@@ -107,7 +111,7 @@ Host *
   ProxyJump [remote]
 ```
 
-### Enable Darwin
+#### Enable Darwin
 
 ```sh
 # Darwin
@@ -118,7 +122,7 @@ sudo lsof -i:22
 2. Sharing
 3. \[On] Remote Login
 
-### Root Only With Key
+#### Root Only With Key
 
 ```sh
 sed -i 's/PermitRootLogin yes/PermitRootLogin without-password/' /etc/ssh/sshd_config
@@ -129,7 +133,7 @@ sed -i 's/PermitRootLogin yes/PermitRootLogin without-password/' /etc/ssh/sshd_c
 sudo service sshd restart
 ```
 
-### Direct Access
+#### Direct Access
 
 ```sh
 cat ~/.ssh/id_rsa.pub | ssh [username]@[IP] 'cat >> ~/.ssh/authorized_keys'
@@ -143,9 +147,9 @@ sudo sed -i '/^Port 22.*/a Port 8000' /etc/ssh/sshd_config
 sudo systemctl restart sshd
 ``` -->
 
-## Issues
+### Issues
 
-### Remote Connection Close
+#### Remote Connection Close
 
 ```log
 Connection to [hostname] closed by remote host.
@@ -158,7 +162,7 @@ Host [hostname]
   ServerAliveInterval 30
 ```
 
-### Bad owner or permissions
+#### Bad owner or permissions
 
 ```log
 Bad owner or permissions on /home/[username]/.ssh/config

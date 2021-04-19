@@ -33,7 +33,11 @@ sudo curl \
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension exiasr.hadolint
+
+#
+jq ".\"hadolint.hadolintPath\" |= \"$(which hadolint)\"" "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
 ### Ignore

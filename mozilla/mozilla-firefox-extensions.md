@@ -1,4 +1,4 @@
-# Firefox Extensions
+# Mozilla Firefox Extensions
 
 ## Recommended
 

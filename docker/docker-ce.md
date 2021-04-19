@@ -195,16 +195,19 @@ docker --help
 
 ### Tips
 
-<!-- #### BuildKit
+#### BuildKit
 
 ```sh
-#
+# Environment
+DOCKER_BUILDKIT=1 docker build ./
+
+# or, daemon config
 sudo /usr/bin/sh -c 'jq ".\"features.buildkit\" += true" /etc/docker/daemon.json | sponge /etc/docker/daemon.json'
-``` -->
+```
 
 #### Ignore File
 
-Python example:
+***Python Example***
 
 ```sh
 cat << EOF > ./.dockerignore

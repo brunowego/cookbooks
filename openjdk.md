@@ -42,6 +42,8 @@ java -XshowSettings:properties -version 2>&1 > /dev/null | grep 'java.home'
 /usr/libexec/java_home -V
 ```
 
+***Warning:*** Not use if are using [jabba](/jabba.md).
+
 ```sh
 # Darwin
 echo $(/usr/libexec/java_home -v 1.8)

@@ -62,6 +62,18 @@ https://www.youtube.com/watch?v=Fws57ECYbo4
 
 - [AlgoExpert](https://algoexpert.io)
 - [LeetCode](https://leetcode.com)
+- [HackerRank](https://hackerrank.com)
+
+## Books
+
+- Cracking the Coding Interview
+- Cracking the Tech Career
+- Introduction to Algorithms
+- The Algorithm Design Manual
+
+## Lists
+
+- [Awesome Interviews](https://github.com/DopplerHQ/awesome-interview-questions)
 
 ## Algorithms
 

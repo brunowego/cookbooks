@@ -7,7 +7,7 @@
 - [Z shell (Zsh)](/zsh.md)
 - [cURL](/curl.md)
 - [Git](/git.md)
-- [GNU Sed](/gnu_sed.md)
+- [GNU Sed](/gnu-sed.md)
 
 ### Extend
 
@@ -94,3 +94,14 @@ sudo su - "$USER"
 - Renamed: `➜`
 - Unmerged: `♒`
 - Ahead: `𝝙`
+
+## Issues
+
+<!-- ### Insecure completion-dependent directories detected
+
+```sh
+compaudit | xargs chmod g-w,o-w
+
+chmod 755 /usr/local/share/zsh
+chmod 755 /usr/local/share/zsh/site-functions
+``` -->

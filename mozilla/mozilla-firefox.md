@@ -1,4 +1,4 @@
-# Firefox
+# Mozilla Firefox
 
 ## Extensions
 

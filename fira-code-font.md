@@ -21,3 +21,12 @@ brew install --cask homebrew/cask-fonts/font-fira-code
 sudo apt update
 sudo apt -y install fonts-firacode
 ```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+jq '."editor.fontFamily" |= "'\''Fira Code'\''"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."editor.fontLigatures" |= true' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+```

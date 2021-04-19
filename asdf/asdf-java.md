@@ -29,6 +29,8 @@ asdf reshim java [version]
 
 ## Set JAVA_HOME
 
+***Warning:*** Not use if are using [jabba](/jabba.md).
+
 ```sh
 echo '\n# JAVA\nexport JAVA_HOME=$(asdf where java $(asdf current java | sed -s "s|\(.*\) \?(.*|\1|g"))' >> ~/.zshrc
 ```

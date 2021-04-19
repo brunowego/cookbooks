@@ -104,7 +104,7 @@ pip3 install -U django==3.1.3
 
 ```sh
 #
-python -m django help
+python3 -m django help
 
 #
 django-admin help
@@ -114,13 +114,13 @@ django-admin help
 
 ```sh
 # Version
-python -m django version
+python3 -m django version
 ```
 
 #### Start Project
 
 ```sh
-python -m django startproject App ./
+python3 -m django startproject App ./
 ```
 
 #### Requirements

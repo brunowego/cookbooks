@@ -37,10 +37,6 @@ code --install-extension humao.rest-client
 ```
 
 ```sh
-jq '."workbench.editor.openSideBySideDirection" |= "down"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
-```
-
-```sh
 # Darwin
 osascript -e 'quit app "Visual Studio Code"'
 

@@ -1,6 +1,7 @@
 # Python
 
 <!--
+https://www.linkedin.com/learning/learning-the-python-3-standard-library/welcome
 https://www.linkedin.com/learning/first-look-python-3-9/what-s-new-in-python-3-9
 https://app.pluralsight.com/paths/skill/core-python
 
@@ -260,10 +261,14 @@ ln -s /usr/bin/python3 /usr/bin/python
 
 #### Visual Studio Code
 
+***Dependencies***: [Pylint](/pylint.md)
+
 ```sh
-code \
-  --install-extension ms-python.python \
-  --install-extension ms-python.vscode-pylance
+#
+code --install-extension ms-python.python
+
+#
+# code --install-extension ms-python.vscode-pylance
 ```
 
 ```sh

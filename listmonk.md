@@ -1,5 +1,11 @@
 # listmonk
 
+**Keywords**: Newsletter, Email Marketing, Mailing List
+
+## References
+
+- [Code Repository](https://github.com/knadh/listmonk)
+
 ## Docker
 
 ### Network

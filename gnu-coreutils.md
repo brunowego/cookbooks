@@ -27,9 +27,11 @@ choco install -y gnuwin32-coreutils.install
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
+**Homebrew**
+
 ```sh
 # GNU Core Utilities
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH" # Homebrew
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 ```
 
 ```sh

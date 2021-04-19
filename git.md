@@ -51,19 +51,25 @@ sudo apk add git
 choco install -y git
 ```
 
-### Initialize
+### Bootstrap
 
 ```sh
 #
-git init
-
-#
-git init --initial-branch='develop'
+git config --global init.defaultBranch 'develop'
+git config --global core.editor 'vim'
+git config --global core.excludesfile '~/.gitignore_global'
+git config --global credential.helper 'osxkeychain'
+git config --global push.default 'current'
 ```
 
 ### Usage
 
 ```sh
+# Initialize
+git init
+# or, define branch
+git init --initial-branch='develop'
+
 # Create
 git tag [version]
 
@@ -112,14 +118,13 @@ git config --list --show-origin
 git config --global --edit
 
 # Default Branch
-git config --global init.defaultBranch 'develop'
+git config --global init.defaultBranch '[branch]' # master, staging, develop
 
 # Default Editor
-git config --global core.editor 'vim' # Vim
-git config --global core.editor 'code -n -w' # Visual Studio Code
+git config --global core.editor '[editor]' # Vim, Visual Studio Code (code -n -w)
 
 # Excludes file
-git config --global core.excludesfile '~/.gitignore_global'
+git config --global core.excludesfile '[filename]'
 
 # Auto CRLF
 git config core.autocrlf '[value]' # Use `true`, `input` or `false`
@@ -132,10 +137,10 @@ git config --global user.name '[Name]'
 git config --global user.email '[email]'
 
 # Merge
-git config --global merge.tool [value] # Use `vimdiff`
+git config --global merge.tool '[value]' # Use `vimdiff`
 
 # Push
-git config --global push.default current
+git config --global push.default '[value]'
 
 # Branch
 git config --global branch.autosetupmerge 'always'
@@ -145,7 +150,7 @@ git config --unset --system http.sslcainfo # System
 git config --unset --global http.sslcainfo # Global
 
 # SSL CA Info
-git config --global http.sslcainfo [/path/to/certificate.pem]
+git config --global http.sslcainfo '[/path/to/certificate.pem]'
 
 # Only repository
 git config --bool core.bare true
@@ -305,31 +310,38 @@ git config --global user.useconfigonly true
 #### Custom Git Config
 
 ```sh
-tee -a ~/.gitconfig << EOF
-[includeIf "gitdir:$PWD/"]
-	path = ~/.gitconfig-[vendor]
-EOF
-```
-
-```sh
-tee ~/.gitconfig-[vendor] << EOF
+tee ~/.[vendor].gitconfig<< EOF
 [http]
 	sslVerify = false
 [user]
+	name = [Username]
 	email = [name@example.com]
+[http]
+	proxy = http://127.0.0.1:3128
+[https]
+	proxy = http://127.0.0.1:3128
 EOF
 ```
 
 ```sh
-# Need in git
+tee -a ~/.gitconfig << EOF
+[includeIf "gitdir:$PWD/"]
+	path = ~/.[vendor].gitconfig
+EOF
+```
 
-#
-git config --show-origin user.email
+***Observation:*** Only works if have git initialized in the current folder.
 
+```sh
 #
 git config \
   -l \
   --show-origin
+
+#
+git config \
+  --show-origin \
+  user.email
 ```
 
 ### Issues

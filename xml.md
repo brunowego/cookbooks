@@ -16,3 +16,14 @@ osascript -e 'quit app "Visual Studio Code"'
 
 code --disable-extension redhat.vscode-xml
 ```
+
+#### EditorConfig
+
+```sh
+cat << EOF > ./.editorconfig
+[*.xml]
+indent_size = 4
+max_line_length = 100
+
+EOF
+```

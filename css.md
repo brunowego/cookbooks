@@ -24,7 +24,11 @@ https://www.linkedin.com/learning/advanced-css-media-queries/media-queries-aren-
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension cipchk.cssrem
+
+#
+code --install-extension sainoba.px-to-rem
 ```
 
 ### Technologies
