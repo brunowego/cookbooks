@@ -34,11 +34,11 @@ sudo zypper install -y proxychains-ng
 ### Standardization
 
 ```sh
-# Ubuntu
-sudo ln -s /usr/bin/proxychains4 /usr/local/bin/proxychains
-
 # Darwin
 sudo ln -s /usr/local/bin/proxychains4 /usr/local/bin/proxychains
+
+# Ubuntu
+sudo ln -s /usr/bin/proxychains4 /usr/local/bin/proxychains
 ```
 
 ### Configuration

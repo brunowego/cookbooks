@@ -4,11 +4,7 @@
 
 ### Dependencies
 
-#### Homebrew
-
-```sh
-brew install git
-```
+- [Git](/git.md)
 
 ### Installation
 
@@ -65,8 +61,32 @@ goenv global [version]
 
 # Initialize
 eval "$(goenv init -)"
+```
 
-# Uninstall
+### Issues
+
+#### Behind Proxy
+
+```sh
+Downloading go1.16.3.linux-amd64.tar.gz...
+-> https://golang.org/dl/go1.16.3.linux-amd64.tar.gz
+error: failed to download Go Linux 64bit 1.16.3.tar.gz
+
+BUILD FAILED (SUSE 15.1 using go-build 2.0.0beta1)
+
+Results logged to /tmp/go-build.20210419223912.27367.log
+
+Last 10 log lines:
+/tmp/go-build.20210419223912.27367 ~
+curl: (35) OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to golang.org:443
+```
+
+Set proxy environment variable.
+
+### Uninstall
+
+```sh
+#
 goenv versions --bare | xargs -n 1 goenv uninstall -f
 
 #

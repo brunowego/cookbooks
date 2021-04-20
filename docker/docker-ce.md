@@ -280,7 +280,7 @@ source ~/.zshrc
 Error response from daemon: Get http://hostname/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
 ```
 
-TODO
+Run with proxy environment variables.
 
 <!-- ```sh
 # Perhaps using wrong user:password at proxy. After change, restart docker daemon.

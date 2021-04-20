@@ -47,3 +47,11 @@ EOF
 ```sh
 choco install -y postman
 ```
+
+### Utils
+
+#### Dark Theme
+
+1. Preferences
+2. Themes Tab
+   - Select Dark

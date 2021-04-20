@@ -10,6 +10,9 @@
 
 ```sh
 #
+nmap -p 25,587 127.0.0.1
+
+#
 telnet 127.0.0.1 25
 
 #
@@ -17,9 +20,9 @@ telnet 127.0.0.1 587
 ```
 
 ```txt
-EHLO relay.example.com
-MAIL FROM: <fromuser@example.com>
-RCPT TO: <touser@example.com>
+EHLO listmonk.big.desenv.bb.com.br
+MAIL FROM: <noreply@listmonk.big.desenv.bb.com.br>
+RCPT TO: <c1283519@interno.bb.com.br>
 DATA
 Subject: Sending an email using telnet
 
