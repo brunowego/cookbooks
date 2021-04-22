@@ -161,7 +161,7 @@ TODO -->
 #### Homebrew
 
 ```sh
-brew cask uninstall vagrant vagrant-manager
+brew uninstall --cask vagrant vagrant-manager
 ```
 
 ```sh

@@ -15,5 +15,5 @@ brew install --cask steam
 #### Homebrew
 
 ```sh
-brew cask uninstall steam
+brew uninstall --cask steam
 ```

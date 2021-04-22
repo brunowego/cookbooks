@@ -13,5 +13,5 @@ brew install --cask terminus
 ### Homebrew
 
 ```sh
-brew cask uninstall terminus
+brew uninstall --cask terminus
 ```

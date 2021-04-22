@@ -99,7 +99,7 @@ code /Applications/iTerm.app/Contents/Info.plist
 ### Uninstall
 
 ```sh
-brew cask uninstall iterm2
+brew uninstall --cask iterm2
 ```
 
 ## Docs

@@ -1,6 +1,10 @@
 # Code Interview
 
 <!--
+https://anywhere.epam.com/jobs?specialization=Developer
+
+https://candidates.revelo.com.br/users/sign_in
+
 https://www.linkedin.com/learning/job-searching-interviewing-and-negotiating-salary/command-your-career-bryan-cranston-s-advice-for-millennials
 https://www.linkedin.com/learning/how-to-rock-an-interview/plan-your-first-impression
 https://www.linkedin.com/learning/interview-master-class/introduction

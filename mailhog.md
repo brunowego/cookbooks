@@ -152,15 +152,24 @@ kubectl delete namespace mailhog --grace-period=0 --force
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
 docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h mailhog \
   -p 1025:1025 \
   -p 8025:8025 \
   --name mailhog \
-  docker.io/mailhog/mailhog:latest
+  --network workbench \
+  docker.io/mailhog/mailhog:v1.0.1
 ```
 
 ```sh

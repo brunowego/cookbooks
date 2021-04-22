@@ -1,4 +1,4 @@
-# GitLab Community Edition
+# GitLab Community Edition (CE)
 
 <!--
 /-/graphql-explorer

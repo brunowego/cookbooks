@@ -1,4 +1,4 @@
-# GitLab CI
+# GitLab Continuous Integration (CI)
 
 ##
 

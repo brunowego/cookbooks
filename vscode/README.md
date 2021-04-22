@@ -98,6 +98,13 @@ code --disable-extension [extension]
 
 ### Tips
 
+#### Unsaved Files
+
+```sh
+# Darwin
+cat ~/Library/Application\ Support/Code/Backups
+```
+
 #### Proxy
 
 ```sh

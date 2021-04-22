@@ -25,6 +25,19 @@ postman
 ```sh
 #
 postman \
+  -html ./template.html \
+  -text ./template.txt \
+  -csv ./recipients.csv \
+  -sender 'Jane Doe <janedoe@example.com>' \
+  -subject 'Hello, World!' \
+  -server [smtp.example.com] \
+  -port 587 \
+  -skipCertValidation \
+  -user [username] \
+  -password [password]
+
+#
+postman \
   -html <(cat << EOF
 <h1>Hello, {{.Name}}! You are a {{.Type}}</h1>
 EOF

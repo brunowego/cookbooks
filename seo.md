@@ -3,5 +3,5 @@
 ## Tools
 
 - [Measure](https://web.dev/measure/)
-- [](https://seositecheckup.com/)
-- [](https://gtmetrix.com/)
+- [SEO Site Checkup](https://seositecheckup.com/)
+- [GTmetrix](https://gtmetrix.com/)

@@ -29,5 +29,5 @@ choco install -y libreoffice
 
 ```sh
 # Homebrew
-brew cask uninstall libreoffice libreoffice-language-pack
+brew uninstall --cask libreoffice libreoffice-language-pack
 ```

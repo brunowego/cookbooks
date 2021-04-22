@@ -27,6 +27,13 @@ indent_size = 4
 EOF
 ```
 
+<!-- ### Check SSH
+
+```sh
+#
+for ((i=100; i<200; i+=1)); do nmap -p 22 "sub$i.example.com"; done
+``` -->
+
 ## Issues
 
 ### Bad file descriptor

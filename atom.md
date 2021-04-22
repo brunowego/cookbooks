@@ -108,7 +108,7 @@ transparent: true
 
 ```sh
 # Homebrew
-brew cask uninstall atom
+brew uninstall --cask atom
 ```
 
 ```sh

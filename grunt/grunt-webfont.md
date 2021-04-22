@@ -10,7 +10,7 @@
 
 - [Webfont](/webfont.md#configuration)
 
-### Installation
+### Dependencies
 
 #### Homebrew
 

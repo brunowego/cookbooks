@@ -17,6 +17,10 @@ https://www.linkedin.com/learning/advanced-css-media-queries/media-queries-aren-
 
 - [Microtip - Modern, minimal and accessible css tooptips. 1kb only](https://microtip.now.sh/)
 
+## Linters
+
+- [stylelint](/stylelint.md)
+
 ## CLI
 
 ### Tips

@@ -5,5 +5,9 @@
 ### Usage
 
 ```sh
-dig domain.com MX
+#
+dig [example.com] MX
+
+#
+dig A +short [example.com]
 ```

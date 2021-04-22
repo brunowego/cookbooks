@@ -1,4 +1,4 @@
-# PHP GD
+# PHP Graphics Library (GD, originally stood for "GIF Draw")
 
 <!-- ## References
 

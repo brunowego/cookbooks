@@ -157,7 +157,7 @@ Add to `./app/src/main/res/xml/network_security_config.xml`:
 
 ```sh
 # Homebrew
-brew cask uninstall android-studio
+brew uninstall --cask android-studio
 rm -fR ~/Library/Android
 rm -fR ~/Library/Application\ Support/AndroidStudio3.4
 ```

@@ -5,6 +5,9 @@ Django Channels
 Django Unit Tests
 Django Celery
 
+https://thinkster.io/tutorials/configuring-django-settings-for-production
+https://patrickfarrar.com/posts/development/environment-configurations-django/
+
 https://www.linkedin.com/learning/test-driven-development-in-django/tdd-philosophy-and-project-overview
 https://www.udemy.com/course/django-channels/
 https://www.udemy.com/course/distributed-tasks-demystified-with-celery-python/

@@ -1,6 +1,8 @@
 # Algorithms
 
 <!--
+https://www.youtube.com/watch?v=8hly31xKli0
+
 https://www.linkedin.com/learning/programming-foundations-algorithms/algorithms-power-the-world
 https://www.linkedin.com/learning/fundamentals-of-dynamic-programming/the-importance-of-dynamic-programming
 

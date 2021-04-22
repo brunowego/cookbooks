@@ -32,6 +32,12 @@ sudo apt update
 sudo apt -y install obs-studio
 ``` -->
 
+#### Chocolatey
+
+```sh
+choco install -y obs-studio
+```
+
 ### Configuration
 
 #### Streaming

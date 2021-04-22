@@ -11,5 +11,5 @@ brew install --cask hyper
 ## Uninstall
 
 ```sh
-brew cask uninstall hyper
+brew uninstall --cask hyper
 ```

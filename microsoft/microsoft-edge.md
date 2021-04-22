@@ -17,10 +17,10 @@ brew install --cask microsoft-edge-dev
 
 ```sh
 # Homebrew
-brew cask uninstall microsoft-edge
+brew uninstall --cask microsoft-edge
 
 #
-brew cask uninstall microsoft-edge-dev
+brew uninstall --cask microsoft-edge-dev
 ```
 
 ### Purge

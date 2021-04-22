@@ -55,7 +55,7 @@ Bypass external proxies for the following hosts:
 #### Homebrew
 
 ```sh
-brew cask uninstall spotify
+brew uninstall --cask spotify
 ```
 
 ```sh

@@ -37,6 +37,7 @@ Bucket of cookbooks to help install and set softwares.
 - Containers as a Service (CaaS)
 - Data Source Name (DSN)
 - Data Transfer Object (DTO)
+- Minimum Viable Product (MVP)
 - Consumer to Consumer (C2C)
 - Distributed Cloud Operating System (DC/OS)
 - [Enhanced Entity–Relationship (EER)](https://en.wikipedia.org/wiki/Enhanced_entity%E2%80%93relationship_model)

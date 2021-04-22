@@ -123,7 +123,11 @@ antigen bundle golang
 #### Visual Studio Code
 
 ```sh
-code --install-extension ms-vscode.Go
+# Dependencies
+go get -v golang.org/x/tools/gopls
+
+#
+code --install-extension golang.go
 ```
 
 ### Uninstall

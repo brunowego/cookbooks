@@ -1,5 +1,15 @@
 # Microsoft Excel
 
+## App
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install --cask microsoft-excel
+```
+
 ## Docs
 
 ### Delimited Content
