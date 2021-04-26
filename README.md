@@ -29,6 +29,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Chaos engineering (Chaos Monkey)](https://en.wikipedia.org/wiki/Chaos_engineering)
 - Churn Rate
 - Fear Of Missing Out (FOMO)
+- To Be Decided or To Be Determined (TBD)
 - [Classless Inter-Domain Routing (CIDR)](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 - [Cloud Provider/Cloud Computing](https://en.wikipedia.org/wiki/Cloud_computing)
 - [Command qQuery Responsibility Segregation (CQRS)](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_query_responsibility_segregation)

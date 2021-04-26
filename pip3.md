@@ -87,15 +87,17 @@ cat << EOF >> ./requirements.txt
 EOF
 ```
 
-<!--
-git+https://github.com/[user]/[repo].git@master#egg=[repo]
--->
-
-
 ```sh
 pip3 install \
   -r ./requirements-dev.txt \
   -r ./requirements.txt
+```
+
+#### Directly from GitHub
+
+```txt
+git+https://github.com/[user]/[repo].git@master#egg=[repo]
+git+git://github.com/[user]/[repo]@master#egg=[repo]
 ```
 
 #### External Mirror

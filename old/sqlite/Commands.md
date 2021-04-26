@@ -1,7 +1,0 @@
-# Commands
-
-##
-
-```sh
-sqlite3
-```

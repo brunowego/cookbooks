@@ -7,7 +7,7 @@
 #### Homebrew
 
 ```sh
-brew install wagoodman/dive/dive
+brew install dive
 ```
 
 #### DPKG

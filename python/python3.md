@@ -5,6 +5,8 @@ https://www.linkedin.com/learning/learning-the-python-3-standard-library/welcome
 https://www.linkedin.com/learning/first-look-python-3-9/what-s-new-in-python-3-9
 https://app.pluralsight.com/paths/skill/core-python
 
+https://www.linkedin.com/learning/python-standard-library-essential-training/python-the-batteries-included-language
+https://www.linkedin.com/learning/python-recursion/the-power-of-recursion
 https://www.linkedin.com/learning/python-object-oriented-programming/python-object-oriented-programming
 https://www.linkedin.com/learning/python-essential-libraries/power-up-your-python-with-libraries
 https://www.linkedin.com/learning/unit-testing-in-python/python-unit-testing-with-pytest
@@ -20,6 +22,7 @@ https://www.linkedin.com/learning/python-data-structures-and-algorithms/python-d
 https://www.linkedin.com/learning/python-programming-efficiently-2/programming-efficiently-with-python
 https://www.linkedin.com/learning/python-functions-for-data-science/python-functions-you-should-know
 https://www.linkedin.com/learning/advanced-python-working-with-databases/using-databases-to-level-up-your-python-applications
+https://www.linkedin.com/learning/python-automation-and-testing/welcome
 -->
 
 ## References

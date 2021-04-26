@@ -11,6 +11,7 @@ https://www.linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 
 ## Tools
 
+- [Emmet](/emmet.md)
 - [HTML Formatter](https://webformatter.com/html)
 - [HTML Entities Encoder / Decoder](https://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder)
 - [HTML Arrows](https://www.toptal.com/designers/htmlarrows/)
@@ -20,12 +21,6 @@ https://www.linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 ## Syntax
 
 ### Tips
-
-#### Visual Studio Code
-
-```sh
-code --install-extension FallenMax.mithril-emmet
-```
 
 #### EditorConfig
 

@@ -5,6 +5,14 @@ https://www.cnblogs.com/taosiyu/p/12098088.html
 https://github.com/timhberry/openam-flask-decorator/blob/master/routes.py
 -->
 
+<!--
+import openam
+
+am = openam.Openam(openam_url="https://example.com/sso/oauth2/authorize")
+am.authenticate(username="username", password="password")
+am.logout()
+-->
+
 ## Docker
 
 ### Network

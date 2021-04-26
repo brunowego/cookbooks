@@ -1,6 +1,19 @@
 # User Experience
 
 <!--
+Problem Framing
+Evidence-driven design vs Data-driven programming
+
+https://library.gv.com/how-to-choose-the-right-ux-metrics-for-your-product-5f46359ab5be
+http://duco.newhaircut.com/#!/
+https://medium.com/designing-atlassian/data-driven-vs-data-informed-design-in-enterprise-products-538749b1b4eb
+https://measuringu.com/mixing-methods/
+https://measuringu.com/qual-methods/
+https://uxdesign.cc/4-pillars-of-communicating-the-value-of-user-research-ffcb3bfb0771
+https://www.questionpro.com/blog/what-is-conjoint-analysis/
+https://medium.com/design-ibm/how-user-researchers-can-adapt-conjoint-analysis-e198db9dc33c
+https://www.uxmatters.com/mt/archives/2012/09/strengths-and-weaknesses-of-quantitative-and-qualitative-research.php
+
 https://www.amazon.com.br/Essencialismo-Greg-Mckeown/dp/8543102146
 https://www.amazon.com.br/lado-difícil-das-situações-difíceis/dp/857827976X/
 https://www.amazon.com.br/Steve-Jobs-Walter-Isaacson/dp/8535919716
@@ -18,12 +31,53 @@ https://app.pluralsight.com/library/courses/ux-driven-software-design/table-of-c
 
 ## Books
 
-- [Antoni Gaudí](https://www.amazon.com.br/gp/product/8497944305/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=8497944305&linkCode=as2&tag=panamericanao-20&linkId=a5be5bdc1577146bec574b9f7f1d6d70)
-- [Design Thinking](https://www.amazon.com.br/gp/product/8550801348/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=8550801348&linkCode=as2&tag=panamericanao-20&linkId=a75f09d565698c2467082ea1dc082873)
-- [Jobs to Be Done: A Roadmap for Customer-Centered Innovation](https://www.amazon.com.br/gp/product/B01HJ35YNI/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01HJ35YNI&linkCode=as2&tag=panamericanao-20&linkId=6b465945b544791c9479c94089bce80f)
-- [Mapeamento de experiências](https://www.amazon.com.br/gp/product/8550800619/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=8550800619&linkCode=as2&tag=panamericanao-20&linkId=7130064dd3962a47e9ca460d8900a20a)
-- [Nudge: Como tomar melhores decisões sobre saúde, dinheiro e felicidade](https://www.amazon.com.br/gp/product/8547000801/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=8547000801&linkCode=as2&tag=panamericanao-20&linkId=4d8ef72f3ef710e99d9a828a0bb401cc)
-- [O design da sua vida: Como criar uma vida boa e feliz (Pitch Deck)](https://www.amazon.com.br/gp/product/B072W8H7PK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B072W8H7PK&linkCode=as2&tag=panamericanao-20&linkId=49eba77c24376fd266d60249ee37999a)
-- [Organizações Exponenciais](https://www.amazon.com.br/gp/product/8567389364/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=8567389364&linkCode=as2&tag=panamericanao-20&linkId=f79b60b8949a2a3b53686fe02d9e7c8e)
-- [Originais: Como os inconformistas mudam o mundo](https://www.amazon.com.br/gp/product/B06XQFMLVR/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XQFMLVR&linkCode=as2&tag=panamericanao-20&linkId=92ab974cc7e0b63a31325e668738ab23)
-- [Satisfação garantida](https://www.amazon.com.br/gp/product/8595080275/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=8595080275&linkCode=as2&tag=panamericanao-20&linkId=a6bbbf4930864342f161e1311ceefbca)
+- [A Historia da AirBnB](https://www.amazon.com/Historia-AirBnB-Em-Portugues-Brasil/dp/859315638X)
+- [Antoni Gaudí](https://www.amazon.com.br/gp/product/8497944305/)
+- [Design Thinking](https://www.amazon.com.br/gp/product/8550801348/)
+- [Essencialismo: A disciplinada busca por menos](https://www.amazon.com.br/Essencialismo-disciplinada-busca-por-menos-ebook/dp/B00WJ1L21O/)
+- [Jobs to Be Done: A Roadmap for Customer-Centered Innovation](https://www.amazon.com.br/gp/product/B01HJ35YNI/)
+- [Mapeamento de experiências](https://www.amazon.com.br/gp/product/8550800619/)
+- [Nudge: Como tomar melhores decisões sobre saúde, dinheiro e felicidade](https://www.amazon.com.br/gp/product/8547000801/)
+- [O design da sua vida: Como criar uma vida boa e feliz (Pitch Deck)](https://www.amazon.com.br/gp/product/B072W8H7PK/)
+- [O lado difícil das situações difíceis: Como constuir um negócio quando não existem respostas prontas](https://www.amazon.com.br/lado-dif%C3%ADcil-das-situa%C3%A7%C3%B5es-dif%C3%ADceis/dp/857827976X/)
+- [Organizações Exponenciais](https://www.amazon.com.br/gp/product/8567389364/)
+- [Originais: Como os inconformistas mudam o mundo](https://www.amazon.com.br/gp/product/B06XQFMLVR/)
+- [Satisfação garantida](https://www.amazon.com.br/gp/product/8595080275/)
+- [Sprint O Metodo Usado no Google Para Testar e Aplicar Novas Ideias em Apenas Cinco Dias (Em Portugues do Brasil)](https://www.amazon.com/Sprint-Metodo-Google-Aplicar-Portugues/dp/8551001523)
+- [Steve Jobs Capa comum](https://www.amazon.com.br/Steve-Jobs-Walter-Isaacson/dp/1982176865/)
+
+<!--
+##
+
+http://catarinasdesign.com.br/get-building-validando-ideia-de-sua-startup/
+
+## Get out the building
+
+- Ideação
+- Hipotese
+- Experimentos
+- Validação
+- Pivotar/Perseverar
+
+##
+
+Product Designer
+Content Designer
+UX Researcher
+Visual Designer/Graphic Design
+
+##
+
+Produto
+Design
+Desenvolvimento
+
+##
+
+Visão Estratégica - Longo Prazo
+Produtos Dia a Dia - Curto Prazo
+
+## Eat your own dog food
+
+
+-->

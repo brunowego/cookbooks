@@ -13,3 +13,10 @@
 ```sh
 brew install hugo
 ```
+
+### Usage
+
+```sh
+#
+hugo serve
+```

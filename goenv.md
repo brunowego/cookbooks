@@ -67,7 +67,7 @@ eval "$(goenv init -)"
 
 #### Behind Proxy
 
-```sh
+```log
 Downloading go1.16.3.linux-amd64.tar.gz...
 -> https://golang.org/dl/go1.16.3.linux-amd64.tar.gz
 error: failed to download Go Linux 64bit 1.16.3.tar.gz

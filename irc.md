@@ -1,129 +1,81 @@
 # IRC
 
+## Clients
+
+- [mIRC](/todo/mirc.md)
+
 ## Commands
 
-### Connect
-
 ```sh
+# Connect
 /server [server]
-```
 
-### Channel
-
-```sh
+# Channel
 /join [channel]
-```
 
-### List (search)
-
-```sh
+# List (search)
 /list [*keyword*]
-```
 
-### Clear
-
-```sh
+# Clear
 /clear
 ```
 
-## Servers
-
-### freenode
+### Servers
 
 ```sh
+# freenode
 /server irc.freenode.org
-```
 
-### QuakeNet
-
-```sh
+# QuakeNet
 /server irc.quakenet.org
 ```
 
-## NickServ
-
-### Nick
+### NickServ
 
 ```sh
+# Nick
 /nick [nickname]
-```
 
-### Register
-
-```sh
+# Register
 /msg NickServ REGISTER [password] [email]
-```
 
-### Change Password
-
-```sh
+# Change Password
 /msg NickServ SET PASSWORD [password]
-```
 
-### Change Email
-
-```sh
+# Change Email
 /msg NickServ SET EMAIL [email]
-```
 
-### Status
-
-```sh
+# Status
 /msg NickServ STATUS
-```
 
-### Info
-
-```sh
+# Info
 /msg NickServ INFO
-```
 
-### Login
-
-```sh
+# Login
 /msg NickServ IDENTIFY [nickname] [password]
-```
 
-### Logout
-
-```sh
+# Logout
 /msg NickServ LOGOUT
-```
 
-### Vacation
-
-```sh
+# Vacation
 /msg NickServ VACATION
 ```
 
-## ChanServ
-
-### Register
+### ChanServ
 
 ```sh
+# Register
 /msg ChanServ REGISTER [\#channel]
-```
 
-### Operator
-
-```sh
+# Operator
 /msg ChanServ OP [\#channel]
-```
 
-#### User
-
-```sh
+# User
 /msg ChanServ OP [\#channel] [nickname]
-```
 
-### Flags
-
-```sh
+# Flags
 /msg ChanServ FLAGS [\#channel] [nickname] +oO
-```
 
-### Help
-
-```sh
+# Help
 /msg ChanServ HELP
 ```

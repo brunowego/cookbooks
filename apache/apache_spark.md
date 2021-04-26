@@ -1,6 +1,8 @@
 # Apache Spark
 
 <!--
+https://medium.com/beeranddiapers/installing-apache-spark-on-mac-os-ce416007d79f
+
 https://www.linkedin.com/learning/apache-spark-essential-training-big-data-engineering/welcome
 https://www.linkedin.com/learning/apache-spark-essential-training/where-spark-shines
 
@@ -13,6 +15,51 @@ https://www.jowanza.com/blog/the-how-and-why-of-spark-and-couchbase
 -->
 
 ## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install apache-spark
+```
+
+<!-- ### Environment
+
+```sh
+export SPARK_HOME=/usr/local/Cellar/apache-spark/2.0.1/libexec
+export PYTHONPATH=/usr/local/Cellar/apache-spark/2.0.1/libexec/python/:$PYTHONP$
+``` -->
+
+### Commands
+
+```sh
+spark-beeline --help
+spark-class -h
+spark-shell -h
+spark-sql --help
+spark-submit -h
+pyspark -h
+sparkR -h
+```
+
+### Usage
+
+```sh
+#
+spark-submit \
+  --master local \
+  [/path/to/script]
+
+#
+spark-shell \
+  --master local[*]
+
+#
+pyspark \
+  --executor-memory 16G \
+  --conf spark.drive.memory=16G
+```
 
 ### Tips
 

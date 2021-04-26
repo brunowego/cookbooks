@@ -1,23 +1,11 @@
 # Go Programming Language
 
+Efficient compilation, Efficient execution and Ease of programming.
+
 <!--
-https://www.linkedin.com/learning/learning-go-8399317/develop-basic-programs-with-go
-https://www.linkedin.com/learning/learning-the-go-standard-library/don-t-go-re-inventing-the-wheel
-
-https://app.pluralsight.com/library/courses/go-create-test-applications/table-of-contents
-
 https://github.com/vmasdani/cozypos-full
 
 https://pragprog.com/titles/tjgo/distributed-services-with-go/
-
-https://app.pluralsight.com/paths/skills/go-core-language
-https://app.pluralsight.com/library/courses/exploring-go-modules/table-of-contents
-https://app.pluralsight.com/library/courses/go-big-picture/table-of-contents
-https://app.pluralsight.com/library/courses/go-object-oriented-programming/table-of-contents
-https://app.pluralsight.com/library/courses/go-delve-debugging-applications/table-of-contents
-https://app.pluralsight.com/library/courses/creating-web-applications-go-update/table-of-contents
-https://app.pluralsight.com/library/courses/go-horizontal-scaling-apps/table-of-contents
-https://app.pluralsight.com/library/courses/go-build-distributed-applications/table-of-contents
 
 https://github.com/makeless/makeless-demo.git
 
@@ -28,11 +16,46 @@ https://github.com/youxia999/go-learn-project
 https://medium.com/@hatajoe/clean-architecture-in-go-4030f11ec1b1
 
 https://github.com/ehang-io/nps
+
+Pluralsight
+
+https://app.pluralsight.com/paths/skills/go-core-language
+
+https://app.pluralsight.com/library/courses/go-object-oriented-programming/
+https://app.pluralsight.com/library/courses/go-horizontal-scaling-apps/
+https://app.pluralsight.com/library/courses/go-delve-debugging-applications/
+https://app.pluralsight.com/library/courses/creating-web-applications-go-update/
+https://app.pluralsight.com/library/courses/go-build-distributed-applications/
+https://app.pluralsight.com/library/courses/exploring-go-modules/
+https://app.pluralsight.com/library/courses/code-school-on-track-with-golang/
+https://app.pluralsight.com/library/courses/grpc-enhancing-application-communication/
+
+LinkedIn Learning
+
+https://www.linkedin.com/learning/learning-go-8399317/explore-go-s-variable-types
+https://www.linkedin.com/learning/learning-the-go-standard-library/don-t-go-re-inventing-the-wheel
+-->
+
+<!--
+Write Quality Code in Golang
+https://app.pluralsight.com/guides/write-quality-code-in-golang
+
+Testing Code in Go Language
+https://app.pluralsight.com/guides/testing-golang-code
+
+Static Golang Code Analysis with Go and SonarQube
+https://app.pluralsight.com/guides/static-code-analysis-with-go-and-sonarqube
 -->
 
 ## References
 
+- [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson)
+- [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike)
+- [Robert Griesemer](https://en.wikipedia.org/wiki/Robert_Griesemer)
+- [Go (programming language)](https://en.wikipedia.org/wiki/Go_(programming_language))
+- [The Go Programming Language](https://golang.org/)
 - [Modules](https://github.com/golang/go/wiki/Modules)
+- [go.dev](https://go.dev/)
 
 ## Docker
 
@@ -109,7 +132,23 @@ go version
 
 # Environment
 go env
+
+# List installed packages
+go list '...'
 ```
+
+<!--
+###
+
+GOOS windows
+GOARCH amd64
+
+GOOS darwin
+GOARCH amd64
+
+GOOS android
+GOARCH arm
+-->
 
 ### Tips
 
@@ -125,6 +164,10 @@ antigen bundle golang
 ```sh
 # Dependencies
 go get -v golang.org/x/tools/gopls
+go get -v github.com/uudashr/gopkgs/v2/cmd/gopkgs
+go get -v github.com/ramya-rao-a/go-outline
+go get -v github.com/go-delve/delve/cmd/dlv
+go get -v honnef.co/go/tools/cmd/staticcheck
 
 #
 code --install-extension golang.go

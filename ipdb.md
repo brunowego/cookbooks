@@ -17,3 +17,14 @@ echo 'ipdb==0.13.4' >> ./requirements-dev.txt
 ```py
 >>> import ipdb; ipdb.set_trace()
 ```
+
+### Tips
+
+#### Using on Try/Except
+
+```py
+try:
+    # code
+except:
+    import ipdb; ipdb.set_trace()
+```

@@ -9,7 +9,7 @@ https://www.javatpoint.com/shell-script-parameters
 
 ## Tools
 
-- [ShellCheck](./shellcheck.md)
+- [ShellCheck](/shellcheck.md)
 
 ## References
 

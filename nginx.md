@@ -467,3 +467,15 @@ EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
 ```
+
+### Issues
+
+#### Missing Folder for PID
+
+```log
+nginx: [emerg] open() "/run/nginx/nginx.pid" failed (2: No such file or directory)
+```
+
+```Dockerfile
+RUN mkdir -p /run/nginx
+```
