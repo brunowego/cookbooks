@@ -2,7 +2,9 @@
 
 ## References
 
+- [Following](https://www.linkedin.com/feed/following/)
 - [Social Selling Index (SSI)](https://www.linkedin.com/sales/ssi)
+- [Invitation Sent](https://www.linkedin.com/mynetwork/invitation-manager/sent/)
 
 ## Tips
 

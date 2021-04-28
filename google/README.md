@@ -1,5 +1,9 @@
 # Google
 
+<!--
+https://killedbygoogle.com/
+-->
+
 ## Search
 
 ```txt

@@ -17,6 +17,17 @@ docker network create workbench \
 
 ### Running
 
+<!-- ```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h mailhog \
+  -p 1025:1025 \
+  -p 8025:8025 \
+  --name listmonk-mailhog \
+  --network workbench \
+  docker.io/mailhog/mailhog:v1.0.1
+``` -->
+
 ```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
@@ -49,6 +60,22 @@ docker run -d \
   docker.io/listmonk/listmonk:v0.9.0-beta /bin/sh -c 'yes | ./listmonk --install && ./listmonk'
 ```
 
+<!-- -e LISTMONK_app__from_email='noreply <noreply@example.com>' \
+-e LISTMONK_smtp__my0__enabled='true' \
+-e LISTMONK_smtp__my0__host='listmonk-mailhog' \
+-e LISTMONK_smtp__my0__port='1025' \
+-e LISTMONK_smtp__my0__auth_protocol='plain' \
+-e LISTMONK_smtp__my0__username='' \
+-e LISTMONK_smtp__my0__password='' \
+-e LISTMONK_smtp__my0__max_conns='10' \
+-e LISTMONK_smtp__my0__idle_timeout='15s' \
+-e LISTMONK_smtp__my0__wait_timeout='5s' \
+-e LISTMONK_smtp__my0__tls_enabled='true' \
+-e LISTMONK_smtp__my0__tls_skip_verify='true' \
+
+LISTMONK_smtp__smtp_main__username
+LISTMONK_smtp__smtp_main__password -->
+
 ```sh
 echo -e '[INFO]\thttp://127.0.0.1:9000'
 ```
@@ -64,3 +91,43 @@ docker rm -f listmonk-postgres listmonk
 
 docker volume rm listmonk-postgres-data listmonk-config
 ```
+
+### Issues
+
+#### Disable STARTTLS
+
+```log
+Error sending test: SMTP STARTTLS extension not found
+```
+
+1. Settings
+2. SMTP Tab
+3. Disable TLS
+
+#### No Auth
+
+```log
+Error sending test: unencrypted connection
+```
+
+1. Settings
+2. SMTP Tab
+3. Auth protocol -> Select none
+
+<!-- ## CLI
+
+```sh
+LISTMONK_app__from_email='noreply <noreply@yoursite.com>' \
+LISTMONK_smtp__my0__enabled=true \
+LISTMONK_smtp__my0__host='email-smtp.us-east-1.amazonaws.com' \
+LISTMONK_smtp__my0__port=587 \
+LISTMONK_smtp__my0__auth_protocol=plain \
+LISTMONK_smtp__my0__username='[username]' \
+LISTMONK_smtp__my0__password='[password]' \
+LISTMONK_smtp__my0__max_conns=10 \
+LISTMONK_smtp__my0__idle_timeout=15s \
+LISTMONK_smtp__my0__wait_timeout=5s \
+LISTMONK_smtp__my0__tls_enabled=true \
+LISTMONK_smtp__my0__tls_skip_verify=false \
+  ./listmonk
+``` -->

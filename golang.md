@@ -23,7 +23,6 @@ https://app.pluralsight.com/paths/skills/go-core-language
 
 https://app.pluralsight.com/library/courses/go-object-oriented-programming/
 https://app.pluralsight.com/library/courses/go-horizontal-scaling-apps/
-https://app.pluralsight.com/library/courses/go-delve-debugging-applications/
 https://app.pluralsight.com/library/courses/creating-web-applications-go-update/
 https://app.pluralsight.com/library/courses/go-build-distributed-applications/
 https://app.pluralsight.com/library/courses/exploring-go-modules/

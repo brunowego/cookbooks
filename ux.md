@@ -4,6 +4,21 @@
 Problem Framing
 Evidence-driven design vs Data-driven programming
 
+One-on-One feedback
+
+https://medium.com/quintoandar-design/design-jams-como-projetar-solu%C3%A7%C3%B5es-melhores-colaborativamente-dfb1411a5778
+https://www.gv.com/sprint/
+https://www.napratica.org.br/tecnicas-de-facilitacao-para-dia-a-dia-profissional/
+https://medium.com/bridge-collection/design-critiques-how-to-maintain-trust-at-scale-3509f25389ce
+https://brasil.uxdesign.cc/design-critique-o-segredo-para-seguran%C3%A7a-emocional-de-designers-uxconf-2018-cca461caea04?gi=6352e53ba454
+https://medium.com/quintoandar-design/design-critique-4-passos-para-come%C3%A7ar-ceca21428cdd
+https://uxdesign.cc/dont-take-design-critique-as-an-insult-6cf187ca6308
+https://www.radicalcandor.com/our-approach/
+https://hbr.org/2019/03/the-feedback-fallacy
+https://rework.withgoogle.com/guides/managers-coach-managers-to-coach/steps/hold-effective-1-1-meetings/
+https://seths.blog/2011/10/the-difference-between-management-and-leadership/
+https://copyblogger.com/become-a-leader/
+https://uxdesign.cc/the-role-of-a-designer-in-early-stage-startups-5320cdf6f820
 https://library.gv.com/how-to-choose-the-right-ux-metrics-for-your-product-5f46359ab5be
 http://duco.newhaircut.com/#!/
 https://medium.com/designing-atlassian/data-driven-vs-data-informed-design-in-enterprise-products-538749b1b4eb
@@ -79,5 +94,6 @@ Produtos Dia a Dia - Curto Prazo
 
 ## Eat your own dog food
 
+## Design Critique
 
 -->

@@ -20,9 +20,9 @@ telnet 127.0.0.1 587
 ```
 
 ```txt
-EHLO listmonk.big.desenv.bb.com.br
-MAIL FROM: <noreply@listmonk.big.desenv.bb.com.br>
-RCPT TO: <c1283519@interno.bb.com.br>
+EHLO 127.0.0.1
+MAIL FROM: <noreply@127.0.0.1>
+RCPT TO: <user@127.0.0.1>
 DATA
 Subject: Sending an email using telnet
 

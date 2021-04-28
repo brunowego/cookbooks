@@ -1,5 +1,7 @@
 # Bear
 
+**Keywords**: Notes
+
 ## App
 
 ### Installation

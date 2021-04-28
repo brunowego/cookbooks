@@ -176,6 +176,12 @@ docker run -d \
 echo -e '[INFO]\thttp://127.0.0.1:8025'
 ```
 
+### Remove
+
+```sh
+docker rm -f mailhog
+```
+
 ## Test
 
 ### Send Email

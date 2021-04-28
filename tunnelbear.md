@@ -1,5 +1,7 @@
 # TunnelBear
 
+**Keywords**: Proxy
+
 ## App
 
 ### Installation

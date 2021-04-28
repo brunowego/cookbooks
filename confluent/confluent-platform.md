@@ -15,11 +15,11 @@ https://github.com/real-digital/esque/blob/master/docker-compose.yml
 brew install confluent-platform
 ```
 
-#### Linux
+<!-- #### Linux
 
 ```sh
 https://packages.confluent.io/archive/5.3/confluent-5.3.1-2.12.tar.gz
-```
+``` -->
 
 ### Commands
 

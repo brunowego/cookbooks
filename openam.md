@@ -13,6 +13,11 @@ am.authenticate(username="username", password="password")
 am.logout()
 -->
 
+## References
+
+- [About](https://www.openidentityplatform.org/openam)
+- [Code Repository](https://github.com/OpenIdentityPlatform/OpenAM)
+
 ## Docker
 
 ### Network

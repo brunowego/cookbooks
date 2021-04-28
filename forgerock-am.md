@@ -2,9 +2,17 @@
 
 ## References
 
+- [OpenAM](/openam.md)
 - [Downloads](https://backstage.forgerock.com/downloads/browse/am/latest)
 
 ## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
 
 ### Build
 
@@ -71,8 +79,14 @@ EOF
 
 ```sh
 docker run -d \
-  -h openam \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h forgerock-am \
   -p 8080:8080 \
-  --name openam \
-  gcr.io/forgerock-io/openam:6.5.1
+  --name forgerock-am \
+  --network workbench \
+  example/forgerock-am:latest
 ```
+
+<!--
+gcr.io/forgerock-io/openam:6.5.1
+-->

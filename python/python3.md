@@ -297,3 +297,12 @@ export PYTHONWARNINGS='ignore'
 ```log
 /usr/bin/python3: No module named [name].__main__; '[name]' is a package and cannot be directly executed
 ```
+
+## Language
+
+### REPL
+
+```py
+# Show all methods object has
+>>> print(dir(obj))
+```

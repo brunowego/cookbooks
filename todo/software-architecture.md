@@ -5,4 +5,6 @@ https://www.linkedin.com/learning/software-architecture-from-developer-to-archit
 https://www.linkedin.com/learning/software-architecture-patterns-for-developers/best-practices-and-blueprints
 -->
 
-TODO
+## References
+
+- [Feature Toggles (a.k.a. Feature Flags)](https://martinfowler.com/articles/feature-toggles.html)

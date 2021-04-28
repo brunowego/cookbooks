@@ -4,6 +4,15 @@
 https://github.com/davidmweber/lxc-kafka-playground/tree/master
 -->
 
+## References
+
+- [Confluent Community](/confluent/confluent-community.md)
+- [Confluent Control Center](/confluent/confluent-control-center.md)
+- [Confluent Kafka Connect](/confluent/confluent-kafka-connect.md)
+- [Confluent KSQL Server](/confluent/confluent-ksql-server.md)
+- [Confluent Platform](/confluent/confluent-platform.md)
+- [Confluent Schema Registry](/confluent/confluent-schema-registry.md)
+
 ## CLI
 
 ### References
@@ -12,11 +21,11 @@ https://github.com/davidmweber/lxc-kafka-playground/tree/master
 
 ### Repositories
 
-<!-- #### APT
+#### APT
 
 ```sh
 curl -fsSL 'https://packages.confluent.io/deb/5.3/archive.key' | apt-key add -
-``` -->
+```
 
 #### YUM
 

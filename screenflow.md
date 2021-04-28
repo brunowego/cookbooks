@@ -17,7 +17,11 @@ brew install --cask screenflow
 #### DMG
 
 ```sh
-yes | hdiutil attach http://www.telestream.net/download-files/screenflow/8-2/ScreenFlow-8.2.6.dmg -nobrowse -mountpoint /Volumes/ScreenFlow > /dev/null
+yes | \
+  hdiutil attach http://www.telestream.net/download-files/screenflow/8-2/ScreenFlow-8.2.6.dmg \
+    -nobrowse \
+    -mountpoint /Volumes/ScreenFlow \
+      > /dev/null
 ```
 
 ```sh
