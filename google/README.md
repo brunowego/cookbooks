@@ -4,6 +4,10 @@
 https://killedbygoogle.com/
 -->
 
+## References
+
+- Gugol
+
 ## Search
 
 ```txt

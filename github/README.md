@@ -25,6 +25,16 @@ https://api.github.com/users/brunowego
 ".node" in:file filename:.gitattributes
 ```
 
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install --cask github
+```
+
 ## Docs
 
 ### Dependabot

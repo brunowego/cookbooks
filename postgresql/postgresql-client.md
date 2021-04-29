@@ -1,4 +1,4 @@
-# PostgreSQL
+# PostgreSQL Client
 
 <!--
 https://www.linkedin.com/learning/postgresql-essential-training/manage-relational-data-with-postgresql
@@ -23,40 +23,28 @@ brew install libpq
 
 ```sh
 sudo apt update
-
-#
-sudo apt -y install postgresql-server postgresql-contrib
+DEBIAN_FRONTEND=noninteractive sudo apt -y install postgresql-contrib
 ```
 
-#### Yum
+#### YUM
 
 ```sh
 yum check-update
-
-#
-sudo yum -y install postgresql-server postgresql-contrib
+sudo yum -y install postgresql-contrib
 ```
 
 #### APK
 
 ```sh
 sudo apk update
-
-#
-sudo apk add postgresql
+sudo apk add postgresql-client
 ```
 
 #### Zypper
 
 ```sh
 sudo zypper refresh
-sudo zypper install -y postgresql
-```
-
-#### Chocolatey
-
-```sh
-choco install -y postgresql
+sudo zypper install -y postgresql-contrib
 ```
 
 ### Configuration
@@ -69,7 +57,10 @@ brew link --force libpq
 ### Commands
 
 ```sh
+# Linux (openSUSE)/Darwin
 initdb --help
+
+# Linux/Darwin
 createdb --help
 psql --help
 ```
@@ -170,7 +161,7 @@ lsof -i :5432
 #### Truncate
 
 ```sql
-TRUNCATE public.[table] CASCADE;
+TRUNCATE public."[table]" CASCADE;
 ```
 
 #### SSH Tunnel

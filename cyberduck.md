@@ -1,14 +1,16 @@
 # Cyberduck
 
-## Installation
+## App
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install --cask cyberduck
 ```
 
-### Chocolatey
+#### Chocolatey
 
 ```sh
 choco install -y cyberduck

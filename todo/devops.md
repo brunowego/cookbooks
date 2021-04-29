@@ -1,6 +1,9 @@
 # DevOps
 
-TODO
+## References
+
+- [The Twelve-Factor App](/12factor.md)
+- [Four Golden Signal](/4-golden-signals.md)
 
 <!--
 https://www.linkedin.com/learning/devops-foundations-microservices/what-microservices-mean-for-devops

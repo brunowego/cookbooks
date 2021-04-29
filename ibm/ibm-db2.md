@@ -34,10 +34,12 @@ sudo yum -y install gcc python3-devel
 sudo mkdir -p /opt/ibm/db2
 
 # GNU Wget
-wget -O - 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/macos64_odbc_cli.tar.gz' | sudo tar -xzC /opt/ibm/db2
+wget -O - 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/macos64_odbc_cli.tar.gz' | \
+  sudo tar -xzC /opt/ibm/db2
 
 # cURL
-curl 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/macos64_odbc_cli.tar.gz' | sudo tar -xzC /opt/ibm/db2
+curl 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/macos64_odbc_cli.tar.gz' | \
+  sudo tar -xzC /opt/ibm/db2
 ```
 
 #### Linux Binary
@@ -47,10 +49,12 @@ curl 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc
 sudo mkdir -p /opt/ibm/db2
 
 # GNU Wget
-wget -O - 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/linuxx64_odbc_cli.tar.gz' | sudo tar -xzC /opt/ibm/db2
+wget -O - 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/linuxx64_odbc_cli.tar.gz' | \
+  sudo tar -xzC /opt/ibm/db2
 
 # cURL
-curl 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/linuxx64_odbc_cli.tar.gz' | sudo tar -xzC /opt/ibm/db2
+curl 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/linuxx64_odbc_cli.tar.gz' | \
+  sudo tar -xzC /opt/ibm/db2
 ```
 
 ### Environment

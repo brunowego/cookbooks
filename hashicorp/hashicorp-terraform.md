@@ -10,6 +10,8 @@ https://www.linkedin.com/learning/learning-terraform-2/welcome
 
 https://github.com/semi-technologies/weaviate-infra
 https://github.com/Artemmkin/terraform-kubernetes
+
+https://github.com/terraform-providers/terraform-provider-azurerm
 -->
 
 ## CLI

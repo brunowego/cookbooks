@@ -26,6 +26,10 @@ https://ordina-jworks.github.io/cloud/2019/05/03/istio-service-mesh-s2s.html
 https://github.com/swilliams11/apigee-istio-k8s-demo#prep-script
 -->
 
+## References
+
+- [Envoy](/envoy.md)
+
 ## Examples
 
 - [Hipster Shop: Cloud-Native Microservices Demo Application](https://github.com/GoogleCloudPlatform/microservices-demo)

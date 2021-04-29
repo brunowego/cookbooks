@@ -4,17 +4,27 @@
 
 - [REPL Commands](https://github.com/motemen/gore#repl-commands)
 
-## Installation
+## Alternative
+
+- [The Go Playground](https://play.golang.org/)
+
+## CLI
+
+### References
+
+- [REPL Commands](https://github.com/motemen/gore#repl-commands)
+
+### Installation
 
 ```sh
+#
 go get -u github.com/motemen/gore/cmd/gore
+
+# Code completion
+go get github.com/mdempsky/gocode
 ```
 
-```sh
-go get -u github.com/mdempsky/gocode
-```
-
-## Commands
+### Commands
 
 ```sh
 gore

@@ -1,5 +1,9 @@
 # Puppet
 
+<!--
+https://www.linkedin.com/learning/puppet-essential-training/welcome
+-->
+
 ## CLI
 
 ### Installation

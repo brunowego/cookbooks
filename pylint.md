@@ -53,7 +53,13 @@ jq '."python.linting.pylintEnabled" |= true' "$HOME/.config/Code/User/settings.j
 pylint --generate-rcfile > ./.pylintrc
 ```
 
-#### Flask
+### Issues
+
+#### Pylint Flask
+
+```log
+Instance of 'SQLAlchemy' has no 'Column' member pylint(no-member)
+```
 
 ```sh
 # As user dependency
@@ -64,7 +70,8 @@ echo 'pylint-flask==0.6' >> ./requirements-dev.txt
 ```
 
 ```sh
-jq '."python.linting.pylintArgs" |= ["--load-plugins", "pylint-flask"]' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."python.linting.pylintArgs" |= ["--load-plugins", "pylint-flask"]' "$PWD/.vscode/settings.json" | \
+  sponge "$PWD/.vscode/settings.json"
 ```
 
 <!--

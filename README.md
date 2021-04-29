@@ -38,6 +38,7 @@ Bucket of cookbooks to help install and set softwares.
 - Containers as a Service (CaaS)
 - Data Source Name (DSN)
 - Data Transfer Object (DTO)
+- Not safe for work (NSFW)
 - Minimum Viable Product (MVP)
 - Consumer to Consumer (C2C)
 - Distributed Cloud Operating System (DC/OS)

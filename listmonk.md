@@ -5,6 +5,7 @@
 ## References
 
 - [Code Repository](https://github.com/knadh/listmonk)
+- [Templating](https://listmonk.app/docs/templating/)
 
 ## Docker
 
@@ -26,7 +27,11 @@ docker run -d \
   --name listmonk-mailhog \
   --network workbench \
   docker.io/mailhog/mailhog:v1.0.1
-``` -->
+```
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:8025'
+```-->
 
 ```sh
 docker run -d \
@@ -36,7 +41,6 @@ docker run -d \
   -e POSTGRES_PASSWORD='listmonk' \
   -e POSTGRES_DB='listmonk' \
   -v listmonk-postgres-data:/var/lib/postgresql/data \
-  -p 5432:5432 \
   --name listmonk-postgres \
   --network workbench \
   docker.io/library/postgres:11.2-alpine
@@ -114,10 +118,92 @@ Error sending test: unencrypted connection
 2. SMTP Tab
 3. Auth protocol -> Select none
 
-<!-- ## CLI
+## Source Code
+
+### Download
 
 ```sh
-LISTMONK_app__from_email='noreply <noreply@yoursite.com>' \
+#
+git clone 'https://github.com/knadh/listmonk.git' listmonk && cd "$_"
+
+#
+eval "$(goenv init -)"
+```
+
+### Configuration & Dependencies
+
+```sh
+#
+cp ./config.toml.sample ./config.toml
+
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h postgres \
+  -e POSTGRES_USER='listmonk' \
+  -e POSTGRES_PASSWORD='listmonk' \
+  -e POSTGRES_DB='listmonk' \
+  -p 15432:5432 \
+  -v listmonk-postgres-data:/var/lib/postgresql/data \
+  --name listmonk-postgres \
+  --network workbench \
+  docker.io/library/postgres:9.6-alpine
+
+#
+docker rm -f listmonk-postgres; docker volume rm listmonk-postgres-data
+```
+
+### Build
+
+```sh
+#
+make deps
+
+#
+make build-frontend
+
+#
+make build
+
+#
+mkdir -p ./uploads
+
+#
+yes | \
+  LISTMONK_db__host='127.0.0.1' \
+  LISTMONK_db__user='listmonk' \
+  LISTMONK_db__password='listmonk' \
+  LISTMONK_db__database='listmonk' \
+    ./listmonk --install
+```
+
+### Run
+
+```sh
+#
+LISTMONK_app__address='0.0.0.0:9000' \
+LISTMONK_app__admin_username='admin' \
+LISTMONK_app__admin_password='admin' \
+LISTMONK_db__host='127.0.0.1' \
+LISTMONK_db__port='15432' \
+LISTMONK_db__user='listmonk' \
+LISTMONK_db__password='listmonk' \
+LISTMONK_db__database='listmonk' \
+  ./listmonk
+
+#
+make run-frontend
+```
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:9000'
+```
+
+| Login | Password |
+| --- | --- |
+| `admin` | `admin` |
+
+<!--
 LISTMONK_smtp__my0__enabled=true \
 LISTMONK_smtp__my0__host='email-smtp.us-east-1.amazonaws.com' \
 LISTMONK_smtp__my0__port=587 \
@@ -128,6 +214,15 @@ LISTMONK_smtp__my0__max_conns=10 \
 LISTMONK_smtp__my0__idle_timeout=15s \
 LISTMONK_smtp__my0__wait_timeout=5s \
 LISTMONK_smtp__my0__tls_enabled=true \
-LISTMONK_smtp__my0__tls_skip_verify=false \
-  ./listmonk
-``` -->
+LISTMONK_smtp__my0__tls_skip_verify=false
+-->
+
+<!-- ##
+
+| Function | Description |
+| --- | --- |
+| `{{ template "content" . }}` | |
+| `{{ L.T "email.unsubHelp" }}` | |
+| `{{ UnsubscribeURL }}` | |
+| `{{ L.T "email.unsub" }}` | |
+| `{{ TrackView }}` | | -->

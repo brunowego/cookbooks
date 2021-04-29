@@ -55,6 +55,8 @@ https://app.pluralsight.com/guides/static-code-analysis-with-go-and-sonarqube
 - [The Go Programming Language](https://golang.org/)
 - [Modules](https://github.com/golang/go/wiki/Modules)
 - [go.dev](https://go.dev/)
+- [Learn Web Programming in Go by Examples](https://gowebexamples.com/)
+- [Go go-to guide](https://yourbasic.org/golang/)
 
 ## Docker
 

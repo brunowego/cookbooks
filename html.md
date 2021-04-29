@@ -7,6 +7,7 @@ https://www.linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 
 ## References
 
+- [Country Codes](https://countrycode.org/)
 - [Preload, prefetch and other <link> tags](https://3perf.com/blog/link-rels/)
 
 ## Tools
@@ -31,3 +32,7 @@ cat << EOF >> ./.editorconfig
 indent_size = 4
 EOF
 ```
+
+<!--
+&zwnj;
+-->

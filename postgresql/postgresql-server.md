@@ -10,11 +10,38 @@
 brew install postgresql
 ```
 
+#### APT
+
+```sh
+sudo apt update
+DEBIAN_FRONTEND=noninteractive sudo apt -y install postgresql
+```
+
+#### YUM
+
+```sh
+sudo zypper refresh
+sudo zypper install -y postgresql-server
+```
+
+#### APK
+
+```sh
+sudo apk update
+sudo apk add postgresql
+```
+
 #### Zypper
 
 ```sh
 sudo zypper refresh
 sudo zypper install -y postgresql-server
+```
+
+#### Chocolatey
+
+```sh
+choco install -y postgresql
 ```
 
 ### Initialize
@@ -49,14 +76,6 @@ brew services start postgres
 
 # Systemd
 sudo systemctl enable --now postgresql
-```
-
-### Commands
-
-```sh
-initdb --help
-createdb --help
-psql --help
 ```
 
 ## Docker
