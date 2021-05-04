@@ -1,6 +1,11 @@
 # Code Interview
 
 <!--
+https://www.youtube.com/watch?v=VJpfO6KdyWE
+
+https://www.linkedin.com/learning/mastering-common-interview-questions/welcome
+https://www.linkedin.com/learning/video-interview-tips/what-are-video-interviews
+
 https://anywhere.epam.com/jobs?specialization=Developer
 
 https://candidates.revelo.com.br/users/sign_in

@@ -1,4 +1,4 @@
-# MySQL
+# MySQL Server
 
 <!--
 https://app.pluralsight.com/paths/skill/mysql

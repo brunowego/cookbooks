@@ -1,6 +1,6 @@
 # cspell
 
-**Keywords**: Spell Checker
+**Keywords:** Spell Checker
 
 ## Tips
 

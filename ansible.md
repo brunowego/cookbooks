@@ -1,8 +1,33 @@
 # Ansible
 
 <!--
+https://app.pluralsight.com/paths/skill/configuration-management-using-ansible
+https://app.pluralsight.com/paths/skill/configuration-management-using-ansible-on-windows
+https://app.pluralsight.com/library/courses/automating-networks-ansible-right-way/table-of-contents
+https://app.pluralsight.com/library/courses/docker-ansible-continuous-delivery/table-of-contents
+
+
 https://www.linkedin.com/learning/learning-ansible-2/starting-your-ansible-journey
+https://www.linkedin.com/learning/ansible-essential-training/welcome
+https://www.linkedin.com/learning/red-hat-certified-engineer-ex294-cert-prep-1-foundations-of-ansible/prepare-for-the-rhce-ex294-certification
+https://www.linkedin.com/learning/red-hat-certified-engineer-ex294-cert-prep-2-using-ansible-playbooks/introduction
+https://www.linkedin.com/learning/red-hat-certified-engineer-ex294-cert-prep-3-managing-systems-with-ansible/introduction
+
+
+Version v2.6.0
+Version v2.10.8
 -->
+
+**Keywords:** Configuration Management
+
+## References
+
+- [Roadmap](https://docs.ansible.com/ansible/latest/roadmap/)
+
+## Alternatives
+
+- [Chef](/chef.md)
+- [Puppet](/puppet.md)
 
 ## CLI
 
@@ -83,3 +108,12 @@ source ~/.zshrc
 
 rm ~/.zcompdump*
 ```
+
+<!--
+## Interview
+
+https://www.youtube.com/watch?v=0tchrzJZgsU&t
+https://www.youtube.com/watch?v=euhGLmyaq1Q
+https://www.youtube.com/watch?v=u1dY5hoalFM
+https://www.youtube.com/watch?v=Or6k2UcKeN4
+-->

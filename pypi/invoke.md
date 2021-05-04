@@ -17,4 +17,6 @@ invoke --help
 ```sh
 # List tasks
 invoke -l
+
+invoke -d <task-name>
 ```

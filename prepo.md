@@ -1,6 +1,6 @@
 # Prepo
 
-**Keywords**: Icon Design
+**Keywords:** Icon Design
 
 ## App
 

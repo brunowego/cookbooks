@@ -5,6 +5,16 @@ https://www.linkedin.com/learning/jenkins-essential-training/from-code-to-produc
 https://app.pluralsight.com/paths/skill/continuous-integration-with-jenkins
 -->
 
+**Keywords:** Continuous Integration
+
+## Alternatives
+
+- [Atlassian Bamboo](/atlassian/atlassian-bamboo.md)
+
+## Related
+
+- [Groovy](/apache/apache_groovy.md)
+
 ## Helm
 
 ### References
@@ -374,6 +384,17 @@ brew install --cask homebrew/cask-versions/adoptopenjdk8
 brew install jenkins
 ```
 
+#### WAR
+
+```sh
+#
+wget 'https://get.jenkins.io/war-stable/latest/jenkins.war'
+
+#
+java -jar ./jenkins.war \
+  --httpPort=9090
+```
+
 #### YUM
 
 ```sh
@@ -387,6 +408,10 @@ sudo yum -y install jenkins
 jenkins --help
 jenkins-cli help
 ```
+
+<!--
+java -jar Jenkins.war
+-->
 
 ### Service
 
@@ -526,3 +551,12 @@ Access GitLab project:
      - Add
    - Test connection
    - Save
+
+
+<!--
+## Interview
+
+https://www.youtube.com/watch?v=nEoXhKSLzbE
+https://www.youtube.com/watch?v=TCl-x9camEQ
+https://www.youtube.com/watch?v=2AVp9kie6s8
+-->

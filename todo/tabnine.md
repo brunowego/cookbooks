@@ -1,5 +1,5 @@
 # tabnine
 
-**Keywords**: Code Completion
+**Keywords:** Code Completion
 
 TODO

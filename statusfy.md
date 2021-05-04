@@ -1,6 +1,6 @@
 # Statusfy
 
-**Keywords**: Status page
+**Keywords:** Status page
 
 ## Docker
 

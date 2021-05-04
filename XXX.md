@@ -1,4 +1,4 @@
-# TRASH
+# XXX
 
 ```sh
 sudo install -dm 775 -o "$USER" -g admin /usr/local/src

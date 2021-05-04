@@ -1,5 +1,7 @@
 # Deployer
 
+**Keywords:** Tool for PHP
+
 ## CLI
 
 ### Installation

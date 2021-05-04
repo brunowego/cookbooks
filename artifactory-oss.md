@@ -1,4 +1,4 @@
-# Artifactory OSS
+# JFrog Artifactory OSS
 
 ## Helm
 

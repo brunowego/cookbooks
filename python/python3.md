@@ -1,6 +1,9 @@
 # Python
 
 <!--
+https://www.linkedin.com/learning/nail-your-python-interview/the-secret-to-nailing-a-python-interview
+
+
 https://www.linkedin.com/learning/learning-the-python-3-standard-library/welcome
 https://www.linkedin.com/learning/first-look-python-3-9/what-s-new-in-python-3-9
 https://app.pluralsight.com/paths/skill/core-python

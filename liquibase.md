@@ -1,6 +1,6 @@
 # Liquibase
 
-**Keywords**: Database Migration
+**Keywords:** Database Migration
 
 ## CLI
 

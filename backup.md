@@ -11,6 +11,7 @@
 - DBeaverEE
 - IRPF
 - Ultimaker Cura
+- SnippetsLab
 
 ## Notes
 

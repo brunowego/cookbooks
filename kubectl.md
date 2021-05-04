@@ -4,7 +4,7 @@
 
 ### References
 
-- [kubectl Cheat Sheet](https://v1-13.docs.kubernetes.io/docs/reference/kubectl/cheatsheet/)
+- [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 - [Managing Secret using kubectl](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/)
 
 ### Installation

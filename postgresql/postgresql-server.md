@@ -116,6 +116,19 @@ docker run -d \
   --network workbench \
   docker.io/library/postgres:11.2-alpine
 
+# 12.x
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h postgresql \
+  -e POSTGRES_USER='user' \
+  -e POSTGRES_PASSWORD='pass' \
+  -e POSTGRES_DB='dev' \
+  -v postgresql-data:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  --name postgresql \
+  --network workbench \
+  docker.io/library/postgres:12.6-alpine
+
 # Trust auth method
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \

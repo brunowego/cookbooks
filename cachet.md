@@ -1,6 +1,6 @@
 # Cachet
 
-**Keywords**: Status page
+**Keywords:** Status page
 
 <!--
 https://github.com/CastawayLabs/cachet-monitor

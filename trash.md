@@ -1,15 +1,21 @@
-# trash-cli
+# trash
 
 ## CLI
 
 ### Installation
 
-#### APT
+#### Homebrew
+
+```sh
+brew install trash
+```
+
+<!-- #### APT
 
 ```sh
 sudo apt update
 sudo apt -y install trash-cli
-```
+``` -->
 
 <!-- #### YUM
 

@@ -18,6 +18,12 @@ https://www.javatpoint.com/shell-script-parameters
 
 ## Tips
 
+### Print Currently Filename
+
+```sh
+echo "$0"
+```
+
 ### EditorConfig
 
 ```sh
@@ -34,6 +40,24 @@ EOF
 for ((i=100; i<200; i+=1)); do nmap -p 22 "sub$i.example.com"; done
 ``` -->
 
+## Tips
+
+### Server Status Using Shell Script
+
+```sh
+#! /bin/bash
+
+SERVER_IP=$1
+
+ping $SERVER_IP -c 2
+
+if [ $? -eq 0]; then
+    echo "$SERVER_IP is up"
+else
+    echo "$SERVER_IP not runnig"
+fi
+```
+
 ## Issues
 
 ### Bad file descriptor
@@ -48,3 +72,9 @@ cat <(cat ~/.bashrc)
 # use without sudo
 sudo cat <(cat ~/.bashrc)
 ```
+
+<!--
+## Interview
+
+https://www.youtube.com/watch?v=6ue2luv2I-Y
+-->

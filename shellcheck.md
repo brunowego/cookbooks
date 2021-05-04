@@ -1,6 +1,6 @@
 # ShellCheck
 
-**Keywords**: Shell linter
+**Keywords:** Shell linter
 
 ## References
 

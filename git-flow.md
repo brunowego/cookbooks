@@ -1,5 +1,9 @@
 # git-flow
 
+## References
+
+- [git-flow](https://jeffkreeftmeijer.com/git-flow/)
+
 ## CLI
 
 ### Installation

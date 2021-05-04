@@ -71,28 +71,28 @@ jabba alias default system@1.8.0-202
 ##### Version 11
 
 1. [Java SE Development Kit 11 Downloads](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
-2. Go to Java SE Development Kit 11.0.10
-   - Click `jdk-11.0.10_osx-x64_bin.dmg`
+2. Go to Java SE Development Kit 11.0.11
+   - Click `jdk-11.0.11_osx-x64_bin.dmg`
    - Accept the terms
    - Click in Download button
 
 
 ```sh
 # Darwin
-hdiutil attach ~/Downloads/jdk-11.0.10_osx-x64_bin.dmg -mountpoint /Volumes/JDK\ 11.0.10
+hdiutil attach ~/Downloads/jdk-11.0.11_osx-x64_bin.dmg -mountpoint /Volumes/JDK\ 11.0.11
 
-open /Volumes/JDK\ 11.0.10/JDK\ 11.0.10.pkg
+open /Volumes/JDK\ 11.0.11/JDK\ 11.0.11.pkg
 ```
 
 ```sh
 # Darwin
 /usr/libexec/java_home -V
 
-jabba link system@11.0.10 /Library/Java/JavaVirtualMachines/jdk-11.0.10.jdk
+jabba link system@11.0.11 /Library/Java/JavaVirtualMachines/jdk-11.0.11.jdk
 jabba ls
-jabba use system@11.0.10
+jabba use system@11.0.11
 jabba current
-jabba alias default system@11.0.10
+jabba alias default system@11.0.11
 ```
 
 ##### Version 14

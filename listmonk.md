@@ -1,6 +1,6 @@
 # listmonk
 
-**Keywords**: Newsletter, Email Marketing, Mailing List
+**Keywords:** Newsletter, Email Marketing, Mailing List
 
 ## References
 
@@ -43,7 +43,7 @@ docker run -d \
   -v listmonk-postgres-data:/var/lib/postgresql/data \
   --name listmonk-postgres \
   --network workbench \
-  docker.io/library/postgres:11.2-alpine
+  docker.io/library/postgres:12.6-alpine
 ```
 
 ```sh
@@ -117,6 +117,14 @@ Error sending test: unencrypted connection
 1. Settings
 2. SMTP Tab
 3. Auth protocol -> Select none
+
+#### From Address Issue
+
+```log
+2021/04/20 10:51:25 error sending test message: 503 5.5.1 Error: nested MAIL command
+```
+
+Using wrong "From address". Just fix it.
 
 ## Source Code
 

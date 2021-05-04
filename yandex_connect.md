@@ -1,6 +1,6 @@
 # Yandex Connect
 
-**Keywords**: Russian, Mail
+**Keywords:** Russian, Mail
 
 ## References
 

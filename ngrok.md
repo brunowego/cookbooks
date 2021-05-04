@@ -1,6 +1,6 @@
 # ngrok
 
-**Keywords**: Secure tunnels
+**Keywords:** Secure tunnels
 
 ## CLI
 

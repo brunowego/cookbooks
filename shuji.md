@@ -1,6 +1,6 @@
 # shuji
 
-**Keywords**: Reverse sourcemap
+**Keywords:** Reverse sourcemap
 
 ## CLI
 

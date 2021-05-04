@@ -1,6 +1,6 @@
 # GrapesJS
 
-**Keywords**: Web builder
+**Keywords:** Web builder
 
 TODO
 

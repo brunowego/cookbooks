@@ -1,10 +1,19 @@
 # Zipkin
 
+**Keywords:** Distributed Tracing System
+
 ## References
 
 - [Quickstart](https://zipkin.io/pages/quickstart.html)
 
 ## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
 
 ### Running
 
@@ -14,6 +23,7 @@ docker run -d \
   -h zipkin \
   -p 9411:9411 \
   --name zipkin \
+  --network workbench \
   docker.io/openzipkin/zipkin:2.19.1
 ```
 

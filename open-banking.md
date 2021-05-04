@@ -14,6 +14,7 @@ https://wso2.com/training/open-banking
 https://www.bb.com.br/pbb/pagina-inicial/solucoes-digitais/open-banking-no-bb#/
 https://www.itau.com.br/open-banking/
 https://blog.nubank.com.br/o-que-e-open-banking/
+https://docs.openbank.stone.com.br/
 -->
 
 ## References

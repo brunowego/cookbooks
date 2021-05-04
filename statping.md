@@ -1,6 +1,6 @@
 # Statping
 
-**Keywords**: Status page
+**Keywords:** Status page
 
 ## References
 

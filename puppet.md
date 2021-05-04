@@ -4,6 +4,13 @@
 https://www.linkedin.com/learning/puppet-essential-training/welcome
 -->
 
+**Keywords:** Configuration Management
+
+## Alternatives
+
+- [Ansible](/ansible.md)
+- [Chef](/chef.md)
+
 ## CLI
 
 ### Installation

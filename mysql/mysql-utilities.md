@@ -30,10 +30,9 @@ sudo yum -y install mysql-utilities
 mysqlfrm --help
 ```
 
-### Examples
-
-####
+### Usage
 
 ```sh
+#
 mysqlfrm --diagnostic mysql/db_name/ > db_name.sql
 ```

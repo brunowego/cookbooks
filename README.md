@@ -6,16 +6,24 @@
 3. https://www.linkedin.com/learning/programming-foundations-beyond-the-fundamentals/broadening-your-knowledge-of-programming-fundamentals
 
 https://www.linkedin.com/learning/web-components-and-modularization-practical-approaches/components-for-the-web
+
+
+##
+
+Tenho obsessão por estudar, sou curioso
+Me preocupo em começar algo bem, acredito nas boas decisões e boas praticas, fazem parte da fundação
+Concluir é o objetivo,
 -->
 
 Bucket of cookbooks to help install and set softwares.
 
-##
+## Calculators
 
-- Exempli Gratia (e.g.)
+- [Dutch Income Tax Calculator](https://thetax.nl/)
 
 ## Terms
 
+- Exempli Gratia (e.g.)
 - Attention deficit hyperactivity disorder (ADHD)
 - [Acknowledgement (ACK or NACK)](https://en.wikipedia.org/wiki/Acknowledgement_(data_networks))
 - Active Directory Federation Services (ADFS)
@@ -29,6 +37,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Chaos engineering (Chaos Monkey)](https://en.wikipedia.org/wiki/Chaos_engineering)
 - Churn Rate
 - Fear Of Missing Out (FOMO)
+- Read The Fucking Manual (RTFM)
 - To Be Decided or To Be Determined (TBD)
 - [Classless Inter-Domain Routing (CIDR)](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 - [Cloud Provider/Cloud Computing](https://en.wikipedia.org/wiki/Cloud_computing)

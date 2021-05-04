@@ -1,6 +1,6 @@
 # OPcache Status
 
-**Keywords**: Status page
+**Keywords:** Status page
 
 TODO
 

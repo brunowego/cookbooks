@@ -1,6 +1,6 @@
 # SpiderFoot
 
-**Keywords**: OSINT
+**Keywords:** OSINT
 
 TODO
 

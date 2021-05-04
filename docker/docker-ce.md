@@ -2,12 +2,19 @@
 
 <!--
 https://docs.docker.com/develop/develop-images/build_enhancements/
+
+Version v1.5.0 (2015/02)
+Version v20.10.5
 -->
 
 <!--
 Missing file
 "${WAR_FILE:?You must especify the WAR_FILE variable in your .env file}:/usr/local/tomcat/webapps/openam.war"
 -->
+
+## References
+
+- [Release Notes](https://docs.docker.com/engine/release-notes/)
 
 ## Tools
 
@@ -195,6 +202,20 @@ docker --help
 
 ### Tips
 
+<!-- ####
+
+```sh
+#! /bin/bash
+
+DOCKER_BUILD_OPTS=${DOCKER_BUILD_OPTS:-}
+
+docker build \
+  $DOCKER_BUILD_OPTS \
+  # ...
+```
+
+***Issues***: Remove use of `IFS=$'\n\t'` -->
+
 #### BuildKit
 
 ```sh
@@ -211,7 +232,7 @@ sudo /usr/bin/sh -c 'jq ".\"features.buildkit\" += true" /etc/docker/daemon.json
 
 ```sh
 cat << EOF > ./.dockerignore
-/**
+/*
 
 !/requirements.txt
 !/app.py

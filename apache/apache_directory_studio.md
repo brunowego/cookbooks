@@ -1,5 +1,9 @@
 # Apache Directory Studio
 
+## Related
+
+- [Lightweight Directory Access Protocol (LDAP)](/ldap.md)
+
 ## App
 
 ### Dependencies
@@ -18,7 +22,9 @@ brew install --cask apache-directory-studio
 #### Linux
 
 ```sh
-curl 'https://downloads.apache.org/directory/studio/2.0.0.v20200411-M15/ApacheDirectoryStudio-2.0.0.v20200411-M15-linux.gtk.x86_64.tar.gz' | sudo tar -xzC /opt
+curl \
+  'https://downloads.apache.org/directory/studio/2.0.0.v20200411-M15/ApacheDirectoryStudio-2.0.0.v20200411-M15-linux.gtk.x86_64.tar.gz' | \
+    sudo tar -xzC /opt
 
 sudo ln -s /opt/ApacheDirectoryStudio/ApacheDirectoryStudio /usr/local/bin/ApacheDirectoryStudio
 ```
@@ -30,12 +36,12 @@ sudo ln -s /opt/ApacheDirectoryStudio/ApacheDirectoryStudio /usr/local/bin/Apach
 ##### Connection
 
 1. File -> New -> LDAP Browser -> LDAP Connection
-2. Network Parameter
+2. Network Parameter Tab
    - Connection name:
    - Hostname:
    - Port: 636
    - Encryption method: Use SSL encryption (ldaps://)
-3. Authentication: Type "Bind DN or user" and "Bind password"
+3. Authentication Tab: Type "Bind DN or user" and "Bind password"
 4. Browser Options: Check "Features -> Fetch operational attributes while browsing"
 5. Finish
 

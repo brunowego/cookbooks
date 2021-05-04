@@ -1,6 +1,6 @@
 # Chatwoot
 
-**Keywords**: Live chat
+**Keywords:** Live chat
 
 ## Docker
 

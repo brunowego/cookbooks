@@ -11,6 +11,10 @@ https://app.pluralsight.com/library/courses/allthetalks-session-66/table-of-cont
 - [Maven Version Manager](/mvnvm.md)
 - Alternative for [Apache Ant](/apache_ant.md)
 
+## Plugins
+
+- [Apache Maven Site Plugin](https://maven.apache.org/plugins/maven-site-plugin/)
+
 ## CLI
 
 ### Installation
@@ -95,7 +99,24 @@ mvn help:active-profiles
 | `install` | |
 | `deploy` | |
 
+<!-- mvn site -->
+
 ### Tips
+
+#### Local Repository
+
+Change `settings.xml`:
+
+```xml
+<!-- ... -->
+<localRepository>[/absolute/path/to/.m2/repository]</localRepository>
+<!-- ... -->
+```
+
+```sh
+mvn install \
+  -DlocalRepositoryPath=[/absolute/path/to/.m2/repository]
+```
 
 <!-- #### Super POM
 
@@ -430,3 +451,11 @@ brew uninstall maven
 
 rm -fR ~/.m2
 ```
+
+<!--
+## Interview
+
+https://www.youtube.com/watch?v=5iTcAR4fScM
+https://www.youtube.com/watch?v=t86YyNdDz0w
+https://www.youtube.com/watch?v=pK-kXMYoVA4
+-->

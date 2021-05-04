@@ -1,11 +1,25 @@
 # Git
 
+<!--
+Version 1.6 (2008)
+Version 2.31
+-->
+
+**Keywords:** Source Code Management (SCM), Codebase, Version Control System (VCS)
+
 ## References
 
 - [Changing Your Git Author Identity](https://www.git-tower.com/learn/git/faq/change-author-name-email)
 - Guideline
   - [Commit Message Convention](https://reactiveui.net/contribute/software-style-guide/commit-message-convention)
   - [Commit messages guide](https://github.com/RomuloOliveira/commit-messages-guide)
+- [Wiki](https://en.wikipedia.org/wiki/Git)
+- [git-flow](/git-flow.md)
+- [Version Control Systems: Distributed vs. Centralized](https://www.oshyn.com/blog/2012/06/version-control-systems-distributed-vs-centralized)
+
+## Alternatives
+
+- [Apache Subversion (SVN)](/apache/apache_subversion.md)
 
 ## CLI
 
@@ -222,9 +236,13 @@ find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c 'cd "{}" && git push' \
 <!-- ####
 
 ```sh
+#
 git rebase -i HEAD~10 -x "git commit --amend --author 'Author Name <author.name@mail.com>' --no-edit"
+
+#
 git rebase --root -i develop -x "git commit --amend --author 'Author Name <author.name@mail.com>' --no-edit"
 
+#
 git push -f
 ``` -->
 
@@ -422,3 +440,11 @@ error: failed to push some refs to 'project@example.com:project'
 ```sh
 git push -u origin master
 ```
+
+<!--
+## Interview
+
+https://www.youtube.com/watch?v=bte3ozSIU_0
+https://www.youtube.com/watch?v=Av5QlKEUOKo
+https://www.youtube.com/watch?v=pdzwBHARHmU
+-->

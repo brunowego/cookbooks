@@ -34,6 +34,8 @@ Enterprise Information Systems Tier
 - WebProfile
 - MicroProfile
 - [jabba](/jabba.md)
+- [Checkstyle (Linter)](/checkstyle.md)
+- [Java formatting and linting](https://code.visualstudio.com/docs/java/java-linting)
 
 ## Exams
 
@@ -98,7 +100,11 @@ javac -version 2>&1
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension vscjava.vscode-java-pack
+
+#
+code --install-extension redhat.fabric8-analytics
 ```
 
 ```sh
@@ -106,29 +112,12 @@ code --install-extension vscjava.vscode-java-pack
 /usr/libexec/java_home -V
 
 # Linux/Darwin
-jq ".\"java.home\" |= \"$(dirname $(dirname $(readlink -f $(which java))))\"" "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq ".\"java.home\" |= \"$(dirname $(dirname $(readlink -f $(which java))))\"" "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 
 jq '."java.project.importOnFirstTimeStartup" |= "automatic"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
 <!-- ```sh
-code "$HOME/.config/Code/User/settings.json"
-```
-
-```json
-{
-  // ...
-  "java.configuration.runtimes": [
-    {
-      "name": "JavaSE-1.7",
-      "path": "/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home",
-      "default": true
-    }
-  ]
-}
-``` -->
-
-```sh
 code './.vscode/settings.json'
 ```
 
@@ -142,7 +131,7 @@ code './.vscode/settings.json'
   },
   "java.configuration.updateBuildConfiguration": "automatic"
 }
-```
+``` -->
 
 ```sh
 # Darwin
@@ -184,6 +173,35 @@ java -classpath 'lib/*:classes/.' [yourpackage.YourClassName]
 ``` -->
 
 ### Issues
+
+#### Strict Compatible JRE
+
+```log
+Build path specifies execution environment JavaSE-11. There are no JREs installed in the workspace that are strictly compatible with this environment.
+
+The compiler compliance specified is 11 but a JRE 15 is used
+```
+
+```sh
+code "$HOME/.config/Code/User/settings.json"
+```
+
+```json
+{
+  // ...
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.7",
+      "path": "/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home"
+    },
+    {
+      "name": "JavaSE-11",
+      "path": "/Library/Java/JavaVirtualMachines/jdk-11.0.11.jdk/Contents/Home",
+      "default": true
+    }
+  ]
+}
+```
 
 #### Java Home Environment
 

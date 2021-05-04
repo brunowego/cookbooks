@@ -1,6 +1,6 @@
 # QPDF
 
-**Keywords**: PDF Checker
+**Keywords:** PDF Checker
 
 ## CLI
 

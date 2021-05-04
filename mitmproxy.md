@@ -1,6 +1,6 @@
 # mitmproxy
 
-**Keywords**: HTTPS Proxy, Reverse Proxy
+**Keywords:** HTTPS Proxy, Reverse Proxy
 
 ## References
 

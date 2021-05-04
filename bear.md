@@ -1,6 +1,6 @@
 # Bear
 
-**Keywords**: Notes
+**Keywords:** Notes
 
 ## App
 

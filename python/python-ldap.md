@@ -24,10 +24,12 @@ echo 'python-ldap==3.3.1' >> ./requirements.txt
 >>> LDAP_PASSWORD = 'admin'
 >>> LDAP_BASE_DN = 'dc=example,dc=com'
 >>>
->>> l = ldap.initialize(LDAP_URL)
->>> l.simple_bind_s(LDAP_USERNAME, LDAP_PASSWORD)
+>>> L = ldap.initialize(LDAP_URL)
+>>> L.simple_bind_s(LDAP_USERNAME, LDAP_PASSWORD)
 >>> filter = '(uid=admin)'
->>> l.search_s(LDAP_BASE_DN, ldap.SCOPE_SUBTREE, filter)
+>>> L.search_s(LDAP_BASE_DN, ldap.SCOPE_SUBTREE, filter)
+>>> L.search_ext_s(LDAP_BASE_DN, ldap.SCOPE_SUBTREE, filter, ['displayName'])
+>>> L.unbind()
 >>>
 >>> exit()
 ```

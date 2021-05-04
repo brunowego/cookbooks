@@ -1,6 +1,6 @@
 # BrowserStack
 
-**Keywords**: Visual Regression Testing
+**Keywords:** Visual Regression Testing
 
 ## CLI
 

@@ -1,6 +1,6 @@
 # Kite
 
-**Keywords**: Code Completion
+**Keywords:** Code Completion
 
 ## App
 

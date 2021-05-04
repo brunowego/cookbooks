@@ -14,17 +14,39 @@
 brew install checkstyle
 ```
 
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install checkstyle
+```
+
 ### Commands
 
 ```sh
-checkstyle
+checkstyle -h
 ```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension shengchen.vscode-checkstyle
+```
+
+<!-- ```sh
+"java.checkstyle.configuration": "${workspaceFolder}/target/checkstyle-checker.xml"
+``` -->
 
 ## Maven Plugin
 
 ### Usage
 
 ```sh
+#
+mvn checkstyle:checkstyle
+
 #
 mvn checkstyle:check
 ```

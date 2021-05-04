@@ -36,6 +36,13 @@ docker-compose help
 
 ### Tips
 
+#### BuildKit
+
+```sh
+# Environment
+COMPOSE_DOCKER_CLI_BUILD=1 docker-compose build
+```
+
 #### Command-line completion
 
 ```sh

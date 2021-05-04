@@ -23,4 +23,6 @@ https://www.linkedin.com/learning/agile-project-management-comparing-agile-tools
 https://www.linkedin.com/learning/agile-testing-2/uplevel-with-agile-testing
 -->
 
-TODO
+## References
+
+- [Manifesto for Agile Software Development](https://agilemanifesto.org/)
