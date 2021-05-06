@@ -1,5 +1,9 @@
 # MinIO
 
+## Alternative
+
+- [Apache Ozone](https://github.com/apache/ozone)
+
 ## References
 
 - [S3cmd with MinIO Server](https://docs.min.io/docs/s3cmd-with-minio)

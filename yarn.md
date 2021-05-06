@@ -86,6 +86,9 @@ yarn create next-app
 
 #
 yarn pack
+
+#
+yarn global bin
 ```
 
 ### Tips

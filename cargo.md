@@ -27,3 +27,8 @@ yum check-update
 # Repo: EPEL
 sudo yum -y install cargo
 ```
+
+<!--
+# Cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+-->

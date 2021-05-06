@@ -58,6 +58,10 @@ https://app.pluralsight.com/guides/static-code-analysis-with-go-and-sonarqube
 - [Learn Web Programming in Go by Examples](https://gowebexamples.com/)
 - [Go go-to guide](https://yourbasic.org/golang/)
 
+## Libraries
+
+- [sprig - Useful template functions for Go templates](https://masterminds.github.io/sprig/date.html)
+
 ## Docker
 
 ### Running
@@ -138,20 +142,26 @@ go env
 go list '...'
 ```
 
-<!--
-###
+### Tips
 
-GOOS windows
+#### Arch
+
+<!-- GOOS windows
 GOARCH amd64
 
 GOOS darwin
 GOARCH amd64
 
 GOOS android
-GOARCH arm
--->
+GOARCH arm -->
 
-### Tips
+```sh
+CGO_ENABLED=0 \
+GOOS=linux \
+GOARCH=amd64 \
+  go build \
+  # ...
+```
 
 #### Command-line completion
 

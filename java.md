@@ -37,9 +37,13 @@ Enterprise Information Systems Tier
 - [Checkstyle (Linter)](/checkstyle.md)
 - [Java formatting and linting](https://code.visualstudio.com/docs/java/java-linting)
 
+## Terms
+
+- Plain old Java object (POJO)
+
 ## Exams
 
-- [ Java SE 11 Developer - Exam Number: 1Z0-819](education.oracle.com/x/pexam_1Z0-819)
+- [Java SE 11 Developer - Exam Number: 1Z0-819](education.oracle.com/x/pexam_1Z0-819)
 
 ## Glossary
 

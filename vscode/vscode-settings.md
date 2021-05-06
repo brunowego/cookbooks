@@ -1,5 +1,11 @@
 # Visual Studio Code Settings
 
+## Tab Size
+
+```sh
+jq '."editor.tabSize" |= 2' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+```
+
 <!-- ## Auto Save
 
 ```sh

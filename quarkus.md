@@ -1,12 +1,46 @@
 # Quarkus (Quark.Us)
 
 <!--
+https://www.youtube.com/watch?v=SQDR34KoC-8
+https://www.youtube.com/watch?v=tWHdkpVagXA
+https://www.youtube.com/watch?v=Us4gjBRJo1I
+https://www.youtube.com/watch?v=9wJm8g83vqA
+
 https://code.quarkus.io/
 https://www.apress.com/br/book/9781484260319
 https://leanpub.com/playing-with-java-microservices-with-quarkus-and-k8s
-
-https://quarkus.io/guides/hibernate-orm-panache
+https://www.udemy.com/course/des-web-quarkus/
+https://www.udemy.com/course/quarkus-backend-development-java/
+https://www.redhat.com/pt-br/about/videos/quarkus-basics-master-course
+https://www.youtube.com/watch?v=OAxKGelBHRs
+https://quarkus.io/quarkus-workshops/super-heroes/
+https://www.oreilly.com/attend/getting-started-with-quarkus/0636920436416/0636920470021/
+https://howtolearn.blog/quarkus/
+https://www.katacoda.com/openshift/courses/middleware/middleware-quarkus
+https://www.udemy.com/course/quarkus-starting-with-quarkus/?referralCode=326B47EE8A3032346159
+https://piotrminkowski.com/2021/04/14/advanced-graphql-with-quarkus/
+https://blogs.oracle.com/developers/configuring-the-oracle-jdbc-drivers-with-quarkus
+https://medium.com/@yazidaqel/quarkus-configuration-using-consul-d077dc6d5d3
+https://www.amazon.com/Hands-Cloud-Native-Applications-Quarkus-Kubernetes-native-ebook/dp/B082FMCKJG/ref=sr_1_1?dchild=1&keywords=quarkus&qid=1586434790&sr=8-1
 -->
+
+## Features
+
+- Full Stack Java Framework: Web Applications, Web Services and Standalone Components.
+- Kubernetes Native: Designed for a containerized world.
+- Cloud Native:
+  - Size, Efficiency and Extensions.
+  - Serveless, Containerized, Virtual Machine Operations and 12 Factor Application Scope.
+- Container first: Lower memory usage, faster startup times
+- Imperative vs. Reactive
+  - Combined into simple runtime
+  - Single reactive engine used for both types
+  - Allows developers to use either with same core
+- Quarkus is natively compiled with GraalVM
+
+## Related
+
+- [Java](/java.md)
 
 ## Guides
 
@@ -21,9 +55,10 @@ https://quarkus.io/guides/hibernate-orm-panache
 - [Using Security with JPA](https://quarkus.io/guides/security-jpa)
 - [All configuration options](https://quarkus.pro/guides/all-config.html)
 
-##
+## References
 
 - [Extensions Repository](https://github.com/quarkusio/quarkus/tree/main/extensions)
+- [QuickStarts for Getting Started Guides](https://github.com/quarkusio/quarkus-quickstarts#quick-start-list)
 
 ## Extend
 
@@ -51,19 +86,22 @@ https://quarkus.io/guides/hibernate-orm-panache
 - HotSpot JIT
 - GraalVM AOT
 
-<!--
-Java first
-Container first
-K-Native
-Cloud-Native
-Microservice first
-Function as a Service (Serverless)
+## Glossary
 
-Elastic
-Resilient
-Responsive
-Message-Driven
--->
+- Contexts and Dependency Injection (CDI)
+
+## Terms
+
+- Java first
+- Container first
+- K-Native
+- Cloud-Native
+- Microservice first
+- Function as a Service (Serverless)
+- Elastic
+- Resilient
+- Responsive
+- Message-Driven
 
 <!--
 ## Plugins
@@ -77,8 +115,6 @@ container-image-s2i
 
 assertj-core
 -->
-
-TODO
 
 <!--
 https://www.linkedin.com/learning/learning-quarkus/supersonic-java-with-quarkus
@@ -130,7 +166,7 @@ cd ./"$PROJECT_ARTIFACT_ID"
 ### Running
 
 ```sh
-./mvnw quarkus:dev
+./mvnw compile quarkus:dev
 ```
 
 ```sh
@@ -169,13 +205,13 @@ echo -e '[INFO]\thttp://127.0.0.1:8080/q/dev/'
 ./mvnw package
 
 #
+./mvnw package -Dquarkus.package.type=uber-jar
+
+#
 ./mvnw package -Pnative
 
 #
 ./mvnw package -Pnative -Dquarkus.native.container-build=true
-
-#
-./mvnw package -Dquarkus.package.type=uber-jar
 ```
 
 ### Profiles
@@ -183,6 +219,12 @@ echo -e '[INFO]\thttp://127.0.0.1:8080/q/dev/'
 ```sh
 # Development
 ./mvnw quarkus:dev -Dquarkus-profile=dev
+
+# Testing
+./mvnw quarkus:dev -Dquarkus-profile=test
+
+# Production
+./mvnw quarkus:dev -Dquarkus-profile=prod
 ```
 
 ### Properties
@@ -192,15 +234,13 @@ code ./src/main/resources/application.properties
 ```
 
 ```properties
-#
-quarkus.banner.enabled=false
+%dev.quarkus.log.level=DEBUG
+quarkus.log.category."com.example.app".level=DEBUG
 
-# Development
-%dev.quarkus.log.level=INFO
 %dev.quarkus.http.port=8080
-
-# Production
 quarkus.http.port=8080
+
+quarkus.banner.enabled=false
 quarkus.http.cors=true
 ```
 
