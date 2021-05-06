@@ -153,6 +153,24 @@ docker exec -i postgresql psql -U postgres <<-EOSQL
 EOSQL
 ```
 
+### Copy Schema/Data SQL File
+
+```sh
+docker cp ./schema.sql postgresql:/docker-entrypoint-initdb.d/schema.sql
+docker cp ./data.sql postgresql:/docker-entrypoint-initdb.d/data.sql
+
+docker exec \
+  -u postgres \
+  postgresql \
+    psql dev postgres \
+      -f docker-entrypoint-initdb.d/schema.sql
+
+docker exec \
+  -u postgres \
+  postgresql \
+    psql dev postgres -f docker-entrypoint-initdb.d/data.sql
+```
+
 ### Remove
 
 ```sh

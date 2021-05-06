@@ -10,6 +10,12 @@ https://app.pluralsight.com/library/courses/spark-kafka-cassandra-applying-lambd
 https://www.linkedin.com/learning/cassandra-data-modeling-essential-training/welcome
 -->
 
+**Keywords**: NoSQL
+
+## Terms
+
+- Cassandra Query Language (CQL)
+
 ## Docker
 
 ### Network
@@ -74,10 +80,21 @@ cqlsh -h
 ### Queries
 
 ```sql
+--
 describe keyspaces
+
+--
 describe keyspace keyspace_name
+
+--
 describe tables
+
+--
 describe table table_name
+
+--
 use keyspace_name
+
+--
 select * from table_name
 ```

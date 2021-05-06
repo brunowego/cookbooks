@@ -27,28 +27,30 @@ docker run -it --rm \
   example/yamllint:latest -h
 ```
 
-## Installation
+## CLI
 
-### Darwin
+### Installation
+
+#### Darwin
 
 ```sh
 brew install yamllint
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install yamllint
 ```
 
-### PIP
+#### PIP
 
 ```sh
 pip3 install -U yamllint
 ```
 
-## Commands
+### Commands
 
 ```sh
 yamllint -h

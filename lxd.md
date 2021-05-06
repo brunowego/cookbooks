@@ -1,15 +1,22 @@
 # Linux Container Daemon (LXD)
 
-## Installation
+## Alternatives
 
-### APT
+- [cri-o](/cri-o.md)
+- [Podman](/podman.md)
+
+## CLI
+
+### Installation
+
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install lxd
 ```
 
-### YUM
+#### YUM
 
 ```sh
 yum check-update
@@ -18,12 +25,12 @@ yum check-update
 sudo yum -y install lxd
 ```
 
-##
+<!-- ###
 
 https://github.com/justmeandopensource/kubernetes/tree/master/lxd-provisioning
+ -->
 
-
-# LXD
+<!-- # LXD
 
 ```sh
 axel -n 8 http://cdimage.ubuntu.com/ubuntu/releases/bionic/release/ubuntu-18.04.2-server-amd64.iso
@@ -31,4 +38,4 @@ axel -n 8 http://cdimage.ubuntu.com/ubuntu/releases/bionic/release/ubuntu-18.04.
 
 ```sh
 sudo apt install bridge-utils
-```
+``` -->

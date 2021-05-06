@@ -1,3 +1,26 @@
 # AWS Lambda
 
+<!--
+https://app.pluralsight.com/library/courses/introduction-aws-lambda/table-of-contents
+https://app.pluralsight.com/library/courses/aws-developer-lambda-deep-dive/table-of-contents
+https://app.pluralsight.com/library/courses/aws-developer-introduction-aws-lambda/table-of-contents
+https://app.pluralsight.com/library/courses/aws-deploying-serverless-applications-application-model/table-of-contents
+https://app.pluralsight.com/library/courses/lambda-expressions-java-code/table-of-contents
+https://app.pluralsight.com/library/courses/enterprise-aws-lambdas-java-eclipse-ide/table-of-contents
+https://app.pluralsight.com/library/courses/aws-developer-serverless-architecture-monitoring/table-of-contents
+https://app.pluralsight.com/library/courses/snowforce-2020-session-21/table-of-contents
+https://app.pluralsight.com/library/courses/implementing-design-patterns-java-8-lambda-expression/table-of-contents
+
+https://www.linkedin.com/learning/learning-amazon-web-services-lambda-2/serverless-computing-with-lambdas
+https://www.linkedin.com/learning/serverless-and-microservices-for-aws/why-serverless-why-microservices
+https://www.linkedin.com/learning/serverless-architecture/what-you-should-know
+https://www.linkedin.com/learning/building-dynamic-websites-using-aws-lambdas/serverless-technology-is-for-full-stack-developers
+https://www.linkedin.com/learning/learning-amazon-web-services-aws-for-developers-2/getting-started-in-amazon-web-services-aws
+https://www.linkedin.com/learning/building-serverless-apps-on-aws-2018/building-a-serverless-app-on-aws
+https://www.linkedin.com/learning/aws-api-gateway-with-http-lambda-dynamodb-and-ios/easy-restful-api-creation
+https://www.linkedin.com/learning/creating-a-serverless-application-using-react-in-aws/2392677
+https://www.linkedin.com/learning/learning-cloud-computing-serverless-computing/introduction-to-serverless-computing
+https://www.linkedin.com/learning/developing-aws-lambda-functions-with-kotlin/welcome
+-->
+
 TODO

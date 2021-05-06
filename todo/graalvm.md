@@ -66,5 +66,12 @@ gu --help
 
 ```sh
 #
+gu list
+
+#
 gu install native-image
+gu install python
+gu install ruby
+gu install R
+gu install wasm # WebAssembly
 ```

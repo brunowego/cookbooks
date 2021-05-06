@@ -41,6 +41,7 @@ https://www.amazon.com/Hands-Cloud-Native-Applications-Quarkus-Kubernetes-native
 ## Related
 
 - [Java](/java.md)
+- [Agroal](https://agroal.github.io/)
 
 ## Guides
 
@@ -54,6 +55,12 @@ https://www.amazon.com/Hands-Cloud-Native-Applications-Quarkus-Kubernetes-native
 - [Using Flyway](https://quarkus.io/guides/flyway)
 - [Using Security with JPA](https://quarkus.io/guides/security-jpa)
 - [All configuration options](https://quarkus.pro/guides/all-config.html)
+
+## Data Access
+
+- Hibernate ORM
+- Panache (Simplified Hibernate ORM)
+- Raw (JDBC query)
 
 ## References
 
@@ -102,6 +109,13 @@ https://www.amazon.com/Hands-Cloud-Native-Applications-Quarkus-Kubernetes-native
 - Resilient
 - Responsive
 - Message-Driven
+
+## Logging
+
+- Apache Log4j 2
+- JBoss log
+- Logit
+- Simple Logging Facade for Java (SLF4J)
 
 <!--
 ## Plugins
@@ -217,14 +231,14 @@ echo -e '[INFO]\thttp://127.0.0.1:8080/q/dev/'
 ### Profiles
 
 ```sh
-# Development
-./mvnw quarkus:dev -Dquarkus-profile=dev
+# Development (Default)
+./mvnw compile quarkus:dev -Dquarkus-profile=dev
 
 # Testing
-./mvnw quarkus:dev -Dquarkus-profile=test
+./mvnw compile quarkus:dev -Dquarkus-profile=test
 
 # Production
-./mvnw quarkus:dev -Dquarkus-profile=prod
+./mvnw compile quarkus:dev -Dquarkus-profile=prod
 ```
 
 ### Properties
@@ -235,7 +249,10 @@ code ./src/main/resources/application.properties
 
 ```properties
 %dev.quarkus.log.level=DEBUG
-quarkus.log.category."com.example.app".level=DEBUG
+
+quarkus.log.category."org.apache.kafka.common.utils".level=DEBUG
+quarkus.log.category."org.apache.kafka.common.utils".level=WARN
+quarkus.log.category."org.apache.kafka.clients.admin".level=ERROR
 
 %dev.quarkus.http.port=8080
 quarkus.http.port=8080
@@ -258,6 +275,12 @@ quarkus.http.cors=true
 
 1. New -> Module...
 2. Quarkus Tab -> Next
+
+<!--
+quarkus.datasource.{name}
+
+@Datasource("{name}")
+-->
 
 <!-- ## Issues
 

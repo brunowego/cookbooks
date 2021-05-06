@@ -8,6 +8,8 @@ https://github.com/brunowego.png
 https://api.github.com/users
 
 https://api.github.com/users/brunowego
+
+https://media-exp1.licdn.com/dms/image/sync/C4E27AQFXhz19BLKTlg/articleshare-shrink_800/0/1620311917375?e=1620406800&v=beta&t=kcsEPLfDy2Up6iCcr7gyH9OIJhH0Pgj09CtvABBcVGc
 -->
 
 ## References
@@ -18,6 +20,10 @@ https://api.github.com/users/brunowego
 ## API
 
 - [Rate Limit](https://api.github.com/rate_limit)
+
+## Tools
+
+- [GitHub social previews](https://mugshotbot.com/github)
 
 ## Search
 
