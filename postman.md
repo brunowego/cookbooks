@@ -2,8 +2,15 @@
 
 <!--
 https://app.pluralsight.com/course-player?courseId=a609cb66-9343-41bd-87e3-a83514e29e27
+
+https://app.pluralsight.com/library/courses/postman-fundamentals/table-of-contents
+
 https://www.linkedin.com/learning/postman-essential-training/why-automate-your-api-tests
 -->
+
+## Guides
+
+- [Dynamic variables](https://learning.postman.com/docs/writing-scripts/script-references/variables-list/)
 
 ## App
 

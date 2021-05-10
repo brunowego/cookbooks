@@ -70,7 +70,7 @@ mvn help:effective-pom
 mvn help:active-profiles
 ```
 
-#### Goals (Super POM)
+#### Goals (Lifecycle/Super POM)
 
 | Command | Description |
 | --- | --- |
@@ -80,8 +80,10 @@ mvn help:active-profiles
 | `mvn test-compile` | Compile the test source code |
 | `mvn test` | Run unit tests |
 | `mvn package` | Package compiled source code into the distributable format (jar, war, …) |
+| `mvn verify` | |
 | `mvn integration-test` | Process and deploy the package if needed to run integration tests |
 | `mvn install` | Install the package to a local repository (`~/.m2/repository`) |
+| `mvn site` | |
 | `mvn deploy` | Copy the package to the remote repository |
 
 <!-- clean, compile, test, package, install, deploy -->

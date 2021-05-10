@@ -1,6 +1,12 @@
 # Java
 
 <!--
+https://github.com/diegocsilva/visitsroutes
+
+https://github.com/JuMp3/demo-quarkus/blob/088392a7058087cc80a23e7eb8b76b4988756f4d/src/main/java/it/jump3/dao/repository/UserRepository.java
+
+https://github.com/anagomescruz/employee-api
+
 https://www.linkedin.com/learning/calling-rest-apis-with-java/restful-apis-in-java-application-architectures
 
 https://learn.oracle.com/ols/home/java-25th-anniversary-learning-subscription/82508
@@ -39,7 +45,14 @@ Enterprise Information Systems Tier
 
 ## Terms
 
+- Data Transfer Object (DTO)
+- Data Access Object (DAO)
 - Plain old Java object (POJO)
+
+## Pattern
+
+- Resource -> Service -> Repository -> Domain/Entity
+- Resource -> Service -> Mapper (MapStruct) -> DTO -> Domain/Entity
 
 ## Exams
 
@@ -70,6 +83,16 @@ Enterprise Information Systems Tier
 - [Jetty Runner](/jetty-runner.md)
 - [Oracle WebLogic Server (WLS)](/weblogic.md)
 - [WildFly (JBoss Application Server)](/wildfly.md)
+
+## Parsers
+
+### JavaScript Object Notation (JSON)
+
+- Jackson
+- Gson
+- JSON-B
+
+<!-- https://itsallbinary.com/jackson-vs-gson-vs-json-b-vs-json-p-vs-org-json-vs-jsonpath-java-json-libraries-features-comparison/ -->
 
 ## CLI
 
@@ -108,6 +131,9 @@ javac -version 2>&1
 code --install-extension vscjava.vscode-java-pack
 
 #
+code --install-extension sohibe.java-generate-setters-getters
+
+#
 code --install-extension redhat.fabric8-analytics
 ```
 
@@ -118,7 +144,19 @@ code --install-extension redhat.fabric8-analytics
 # Linux/Darwin
 jq ".\"java.home\" |= \"$(dirname $(dirname $(readlink -f $(which java))))\"" "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 
+#
 jq '."java.project.importOnFirstTimeStartup" |= "automatic"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+
+#
+# java.completion.importOrder
+
+#     "java",
+#     "javax",
+#     "com",
+#     "org",
+#     "br.com.bb",
+#     "#",
+#     "#br.com.bb"
 ```
 
 <!-- ```sh

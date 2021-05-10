@@ -8,4 +8,6 @@ https://app.pluralsight.com/library/courses/big-data-ldn-2020-datarobot-mlops/ta
 https://dagshub.com/
 -->
 
-TODO
+## Terms
+
+- Data Science and Machine Learning (DSML)

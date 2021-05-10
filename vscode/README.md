@@ -4,6 +4,10 @@
 https://code.visualstudio.com/docs/remote/ssh
 -->
 
+## Guide
+
+- [Debugging](https://code.visualstudio.com/docs/editor/debugging)
+
 ## App
 
 ### Dependencies

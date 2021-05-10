@@ -1,0 +1,17 @@
+# Quarkus Micrometer
+
+<!--
+https://www.steadforce.com/blog/quarkus-microprofile-and-the-wonderful-world-of-metrics
+-->
+
+##
+
+```sh
+#
+./mvnw quarkus:add-extension \
+  -Dextensions='quarkus-micrometer, quarkus-micrometer-registry-prometheus'
+```
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:8080/metrics'
+```

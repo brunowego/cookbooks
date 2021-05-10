@@ -23,6 +23,8 @@ Bucket of cookbooks to help install and set softwares.
 
 ## Terms
 
+- As far as I know (AFAIK)
+- Thank God it's Friday (TGIF)
 - Exempli Gratia (e.g.)
 - Attention deficit hyperactivity disorder (ADHD)
 - [Acknowledgement (ACK or NACK)](https://en.wikipedia.org/wiki/Acknowledgement_(data_networks))

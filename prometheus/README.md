@@ -8,6 +8,10 @@ https://www.linkedin.com/learning/kubernetes-monitoring-with-prometheus/promethe
 
 - [Metric types](https://prometheus.io/docs/concepts/metric_types/)
 
+##
+
+- [Mozilla Firefox - Prometheus Formatter](https://addons.mozilla.org/en-US/firefox/addon/prometheus-formatter/)
+
 ## Helm
 
 ### References

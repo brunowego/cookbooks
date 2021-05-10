@@ -1,6 +1,11 @@
 # Quarkus (Quark.Us)
 
 <!--
+https://github.com/mph206/quarkus-course
+https://github.com/lunatech-labs/lunatech-beginner-quarkus-course-student-app
+
+https://blog.softwaremill.com/micronaut-vs-quarkus-whats-the-difference-5068f0da5390
+
 https://www.youtube.com/watch?v=SQDR34KoC-8
 https://www.youtube.com/watch?v=tWHdkpVagXA
 https://www.youtube.com/watch?v=Us4gjBRJo1I
@@ -22,6 +27,8 @@ https://piotrminkowski.com/2021/04/14/advanced-graphql-with-quarkus/
 https://blogs.oracle.com/developers/configuring-the-oracle-jdbc-drivers-with-quarkus
 https://medium.com/@yazidaqel/quarkus-configuration-using-consul-d077dc6d5d3
 https://www.amazon.com/Hands-Cloud-Native-Applications-Quarkus-Kubernetes-native-ebook/dp/B082FMCKJG/ref=sr_1_1?dchild=1&keywords=quarkus&qid=1586434790&sr=8-1
+
+https://www.linkedin.com/pulse/jhipster-quarkus-demo-app-stephan-janssen/
 -->
 
 ## Features
@@ -37,24 +44,29 @@ https://www.amazon.com/Hands-Cloud-Native-Applications-Quarkus-Kubernetes-native
   - Single reactive engine used for both types
   - Allows developers to use either with same core
 - Quarkus is natively compiled with GraalVM
+- Quarkus is a implementation of Eclipse MicroProfile
+- GraphQL First-class support (SmallRye)
 
 ## Related
 
 - [Java](/java.md)
 - [Agroal](https://agroal.github.io/)
+- [Books](https://quarkus.io/books/)
 
 ## Guides
 
 - [Guides](https://quarkus.io/guides/)
-- [Creating Your First Application](https://quarkus.io/guides/getting-started)
+
+- [All configuration options](https://quarkus.pro/guides/all-config.html)
 - [Building applications with Maven](https://quarkus.io/guides/maven-tooling.html)
-- [Using the MongoDB Client](https://quarkus.io/guides/mongodb)
+- [Creating Your First Application](https://quarkus.io/guides/getting-started)
 - [Datasources](https://quarkus.io/guides/datasource)
-- [Using Hibernate ORM and JPA](https://quarkus.io/guides/hibernate-orm)
 - [Simplified Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache)
 - [Using Flyway](https://quarkus.io/guides/flyway)
+- [Using Hibernate ORM and JPA](https://quarkus.io/guides/hibernate-orm)
 - [Using Security with JPA](https://quarkus.io/guides/security-jpa)
-- [All configuration options](https://quarkus.pro/guides/all-config.html)
+- [Using the MongoDB Client](https://quarkus.io/guides/mongodb)
+- [Using the REST Client](https://quarkus.io/guides/rest-client)
 
 ## Data Access
 
@@ -76,8 +88,7 @@ https://www.amazon.com/Hands-Cloud-Native-Applications-Quarkus-Kubernetes-native
 - Apache Camel
 - Eclipse MicroProfile
 - Hibernate ORM (Panache)
-- JAX-RS
-- MicroProfile
+- Jakarta RESTful Web Services (JAX-RS)
 - Quarkus Funqy
 - RESTEasy
 
@@ -131,12 +142,10 @@ assertj-core
 -->
 
 <!--
-https://www.linkedin.com/learning/learning-quarkus/supersonic-java-with-quarkus
-
 https://www.linkedin.com/learning/java-microservices-with-graalvm/running-java-faster-with-graalvm
-https://app.pluralsight.com/library/courses/allthetalks-session-86/table-of-contents
 
 https://www.amazon.com.br/Beginning-Quarkus-Framework-Cloud-Native-Microservices-ebook/dp/B08JGJDQ49/ref=asc_df_B08JGJDQ49/?tag=googleshopp00-20&linkCode=df0&hvadid=469812248540&hvpos=&hvnetw=g&hvrand=4368842893524740968&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001541&hvtargid=pla-969767411212&psc=1
+
 https://www.amazon.com.br/Quarkus-Cookbook-Kubernetes-Optimized-Solutions-English-ebook/dp/B08D364VMD/ref=asc_df_B08D364VMD/?tag=googleshopp00-20&linkCode=df0&hvadid=452574157606&hvpos=&hvnetw=g&hvrand=4368842893524740968&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001541&hvtargid=pla-929436991334&psc=1
 
 https://www.udemy.com/course/quarkus-backend-development-java/
@@ -174,13 +183,19 @@ cd ./"$PROJECT_ARTIFACT_ID"
 ### Commands
 
 ```sh
+./mvnw -h
+
 ./mvnw quarkus:help
 ```
 
 ### Running
 
 ```sh
+#
 ./mvnw compile quarkus:dev
+
+#
+./mvnw clean compile quarkus:dev
 ```
 
 ```sh
@@ -196,7 +211,7 @@ echo -e '[INFO]\thttp://127.0.0.1:8080/q/dev/'
 
 #
 ./mvnw quarkus:add-extension \
-  -Dextensions='resteasy-jsonb, hibernate-validator, rest-client'
+  -Dextensions='resteasy, resteasy-jackson, rest-client, rest-client-jackson, hibernate-validator'
 ```
 
 ### Compile
@@ -262,6 +277,20 @@ quarkus.http.cors=true
 ```
 
 ## Tips
+
+###
+
+- [Development UI](http://localhost:8080/q/dev/)
+- [ArC (CDI)](http://localhost:8080/q/arc)
+  - http://localhost:8080/q/arc/beans
+  - http://localhost:8080/q/arc/observers
+  - http://localhost:8080/q/arc/removed-beans
+
+### Visual Studio Code
+
+```sh
+code --install-extension redhat.vscode-quarkus
+```
 
 ### IntelliJ IDEA
 
