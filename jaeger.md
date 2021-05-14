@@ -1,5 +1,11 @@
 # Jaeger
 
+**Keywords:** OpenTracing
+
+## Alternatives
+
+- [Zipkin](/zipkin.md)
+
 ## Host
 
 ### Installation

@@ -125,6 +125,9 @@ http {
 # Homebrew
 brew services start nginx
 
+# Service
+sudo service nginx start
+
 # Systemd
 sudo systemctl enable --now nginx
 ```

@@ -26,6 +26,7 @@ Transactions Per Second (TPS)
 
 - [Open Source AWS Security Tools](https://asecure.cloud/tools/)
 - [Amazon Personalize Pricing](https://aws.amazon.com/personalize/pricing/)
+- [Regions and Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
 
 <!--
 ## Interview

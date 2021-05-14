@@ -22,10 +22,9 @@ sudo snap install fluxctl --edge
 fluxctl -h
 ```
 
-### Examples
-
-#### List Workloads
+### Usage
 
 ```sh
+# List Workloads
 fluxctl list-workloads --k8s-fwd-ns flux
 ```

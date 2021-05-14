@@ -55,7 +55,7 @@ EOF
 choco install -y postman
 ```
 
-### Utils
+### Tips
 
 #### Dark Theme
 

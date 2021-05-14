@@ -9,7 +9,7 @@
 ```sh
 #
 ./mvnw quarkus:add-extension \
-  -Dextensions='quarkus-smallrye-openapi'
+  -Dextensions='smallrye-openapi'
 ```
 
 ```properties

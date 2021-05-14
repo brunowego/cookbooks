@@ -14,7 +14,7 @@
 ```sh
 #
 ./mvnw quarkus:add-extension \
-  -Dextensions='quarkus-smallrye-health'
+  -Dextensions='smallrye-health'
 ```
 
 ```sh

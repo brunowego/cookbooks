@@ -1,5 +1,9 @@
 # HashiCorp
 
+## Terms
+
+- HashiCorp Configuration Language (HCL)
+
 ## Tools
 
 ### Infrastructure

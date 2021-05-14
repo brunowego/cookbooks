@@ -1,6 +1,8 @@
 # Apache Kafka
 
 <!--
+https://www.linkedin.com/learning/apache-kafka-essential-training-building-scalable-applications/why-are-kafka-skills-so-high-in-demand
+
 https://www.linkedin.com/learning/apache-kafka-essential-training-getting-started/getting-started-with-apache-kafka
 
 https://app.pluralsight.com/library/courses/securing-kafka-cluster/table-of-contents

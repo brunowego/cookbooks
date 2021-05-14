@@ -9,7 +9,7 @@ https://www.steadforce.com/blog/quarkus-microprofile-and-the-wonderful-world-of-
 ```sh
 #
 ./mvnw quarkus:add-extension \
-  -Dextensions='quarkus-micrometer, quarkus-micrometer-registry-prometheus'
+  -Dextensions='micrometer, micrometer-registry-prometheus'
 ```
 
 ```sh

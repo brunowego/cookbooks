@@ -5,7 +5,7 @@
 ```sh
 #
 ./mvnw quarkus:add-extension \
-  -Dextensions='quarkus-smallrye-graphql'
+  -Dextensions='smallrye-graphql'
 ```
 
 ```sh

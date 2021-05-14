@@ -15,5 +15,8 @@ man ps
 ps -eo pid,etime,comm
 
 #
+ps -o pid,rss,command -p $(pgrep -f [text])
+
+#
 kill -9 [pid]
 ```

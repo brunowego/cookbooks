@@ -15,6 +15,8 @@ cat << EOF > ./.rest
 GET {{baseUrl}}/health-check HTTP/1.1
 Content-Type: {{contentType}}
 
+### Add comment
+
 POST {{baseUrl}}/comments HTTP/1.1
 Content-Type: {{contentType}}
 

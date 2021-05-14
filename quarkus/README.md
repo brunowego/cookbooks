@@ -1,6 +1,8 @@
 # Quarkus (Quark.Us)
 
 <!--
+https://github.com/DouglasGo8/quarkus-native-apps
+
 https://github.com/mph206/quarkus-course
 https://github.com/lunatech-labs/lunatech-beginner-quarkus-course-student-app
 
@@ -67,6 +69,13 @@ https://www.linkedin.com/pulse/jhipster-quarkus-demo-app-stephan-janssen/
 - [Using Security with JPA](https://quarkus.io/guides/security-jpa)
 - [Using the MongoDB Client](https://quarkus.io/guides/mongodb)
 - [Using the REST Client](https://quarkus.io/guides/rest-client)
+- [MapStruct + Quarkus](https://github.com/mapstruct/mapstruct-examples/tree/master/mapstruct-quarkus)
+
+<!--
+https://stackoverflow.com/questions/59170942/lazyinitializationexception-when-returning-json-in-rest-webservice-in-quarkus
+
+https://stackoverflow.com/questions/62451487/quarkus-lazy-initialize
+-->
 
 ## Data Access
 
@@ -186,6 +195,8 @@ cd ./"$PROJECT_ARTIFACT_ID"
 ./mvnw -h
 
 ./mvnw quarkus:help
+
+./mvnw -Dplugin=io.quarkus:quarkus-maven-plugin help:describe
 ```
 
 ### Running
@@ -208,10 +219,6 @@ echo -e '[INFO]\thttp://127.0.0.1:8080/q/dev/'
 ```sh
 #
 ./mvnw quarkus:list-extensions
-
-#
-./mvnw quarkus:add-extension \
-  -Dextensions='resteasy, resteasy-jackson, rest-client, rest-client-jackson, hibernate-validator'
 ```
 
 ### Compile
@@ -276,9 +283,22 @@ quarkus.banner.enabled=false
 quarkus.http.cors=true
 ```
 
+### Misc
+
+```sh
+#
+./mvnw clean -DskipTests package -Pnative
+```
+
 ## Tips
 
-###
+### Check JDWP Listen
+
+```sh
+netstat -an | grep 5005
+```
+
+### Develop Links
 
 - [Development UI](http://localhost:8080/q/dev/)
 - [ArC (CDI)](http://localhost:8080/q/arc)
@@ -291,6 +311,9 @@ quarkus.http.cors=true
 ```sh
 code --install-extension redhat.vscode-quarkus
 ```
+
+1. View -> Command Palette...
+2. Quarkus: Debug current Quarkus project
 
 ### IntelliJ IDEA
 

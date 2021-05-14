@@ -202,6 +202,12 @@ docker --help
 
 ### Tips
 
+#### Running Images
+
+```sh
+docker ps --format '{{.Image}}'
+```
+
 <!-- ####
 
 ```sh

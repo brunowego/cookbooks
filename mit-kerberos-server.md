@@ -1,5 +1,12 @@
 # MIT Kerberos Server
 
+## Ports
+
+| Service | Port |
+| --- | --- |
+| KDC | 88 |
+| Admin Server | 749 |
+
 ## CLI
 
 ### Installation

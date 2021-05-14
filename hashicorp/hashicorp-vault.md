@@ -5,6 +5,16 @@ https://app.pluralsight.com/library/courses/getting-started-hashicorp-vault/tabl
 https://app.pluralsight.com/library/courses/managing-hashicorp-vault/table-of-contents
 -->
 
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install vault
+```
+
 ## Helm
 
 ### References

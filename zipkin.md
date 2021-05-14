@@ -2,6 +2,10 @@
 
 **Keywords:** Distributed Tracing System
 
+## Alternatives
+
+- [Jaeger](/jaeger.md)
+
 ## References
 
 - [Quickstart](https://zipkin.io/pages/quickstart.html)
