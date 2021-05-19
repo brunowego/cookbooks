@@ -14,7 +14,7 @@ brew install postgresql
 
 ```sh
 sudo apt update
-DEBIAN_FRONTEND=noninteractive sudo apt -y install postgresql
+sudo DEBIAN_FRONTEND=noninteractive apt -y install postgresql
 ```
 
 #### YUM

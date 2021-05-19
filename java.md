@@ -1,6 +1,8 @@
 # Java
 
 <!--
+https://www.linkedin.com/learning/paths/become-a-java-programmer
+
 https://github.com/diegocsilva/visitsroutes
 
 https://github.com/JuMp3/demo-quarkus/blob/088392a7058087cc80a23e7eb8b76b4988756f4d/src/main/java/it/jump3/dao/repository/UserRepository.java
@@ -56,7 +58,7 @@ Enterprise Information Systems Tier
 
 ## Exams
 
-- [Java SE 11 Developer - Exam Number: 1Z0-819](education.oracle.com/x/pexam_1Z0-819)
+- [Java SE 11 Developer - Exam Number: 1Z0-819](https://education.oracle.com/x/pexam_1Z0-819)
 
 ## Glossary
 

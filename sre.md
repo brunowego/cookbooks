@@ -33,7 +33,9 @@ https://www.linkedin.com/learning/devops-foundations-site-reliability-engineerin
 
 ## Topics
 
-- SLA vs. SLO vs. SLI
+- Service-Level Agreement (SLA)
+- Service-Level Objective (SLO)
+- Service-Level Indicator (SLI)
 
 <!--
 ## Interview

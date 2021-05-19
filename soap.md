@@ -2,11 +2,9 @@
 
 ## Alternatives
 
+- [Remote Procedure Call (RPC)](/rpc.md)
 - [Representational State Transfer (REST)](/rest.md)
-- [GraphQL](/graphql.md)
 
 ## References
 
 - WSDL
-
-TODO

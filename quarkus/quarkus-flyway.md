@@ -39,13 +39,14 @@ docker exec -i quarkus-postgresql psql \
 
 ```sh
 #
-./mvnw quarkus:add-extension \
+mvn quarkus:add-extension \
   -Dextensions='flyway'
 ```
 
 **Attention:** Remove property `quarkus.hibernate-orm.database.generation`.
 
-```properties
+```ini
+quarkus.flyway.clean-at-start = true
 quarkus.flyway.migrate-at-start = true
 ```
 
@@ -64,11 +65,10 @@ INSERT INTO users (id, email) VALUES (uuid_generate_v4(), 'admin@example.com');
 EOF
 
 #
-./mvnw compile quarkus:dev
+mvn compile quarkus:dev
 ```
 
 <!--
-%dev.quarkus.flyway.clean-at-start = true
 %dev.quarkus.flyway.locations = db/migration,db/testdata
 
 # quarkus.flyway.baseline-on-migrate = true

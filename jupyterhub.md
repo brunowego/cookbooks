@@ -1,5 +1,9 @@
 # JupyterHub
 
+## Alternatives
+
+- [BinderHub](/binderhub.md)
+
 ## Helm
 
 ### Repository

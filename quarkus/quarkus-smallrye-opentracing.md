@@ -8,17 +8,34 @@
 
 ```sh
 #
-./mvnw quarkus:add-extension \
+mvn quarkus:add-extension \
   -Dextensions='smallrye-opentracing'
 ```
 
-```properties
+```ini
 quarkus.jaeger.server-name =
 quarkus.jaeger.sampler-type = const
 quarkus.jaeger.sampler-param = 1
-quarkus.log.console.format =
+quarkus.jaeger.endpoint = http://localhost:14268/api/traces
 ```
 
 ```sh
 echo -e '[INFO]\thttp://127.0.0.1:16686'
+```
+
+##
+
+```xml
+<io.opentracing.contrib.version>0.2.15</io.opentracing.contrib.version>
+
+<dependency>
+  <groupId>io.opentracing.contrib</groupId>
+  <artifactId>opentracing-jdbc</artifactId>
+  <version>${io.opentracing.contrib.version}</version>
+</dependency>
+```
+
+```ini
+quarkus.datasource.jdbc.driver = io.opentracing.contrib.jdbc.TracingDriver
+quarkus.datasource.jdbc.url = jdbc:tracing:postgresql://localhost:5432/dev
 ```

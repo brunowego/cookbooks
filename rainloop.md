@@ -11,6 +11,13 @@ https://github.com/shadow1163/dockerfiles/blob/master/mailserver/docker-compose.
 
 - [PostfixAdmin](/postfixadmin.md) or [docker-mailserver](/docker-mailserver.md)
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -20,6 +27,7 @@ docker run -d \
   -v rainloop-data:/rainloop/data \
   -p 8889:8888 \
   --name rainloop \
+  --network workbench \
   docker.io/hardware/rainloop:1.13.0
 ```
 
@@ -51,6 +59,7 @@ docker run -d \
 ### Remove
 
 ```sh
-docker rm -f grafana
-docker volume rm grafana-config grafana-data
+docker rm -f rainloop
+
+docker volume rm rainloop-data
 ```

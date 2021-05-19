@@ -5,6 +5,7 @@ https://github.com/asatrya/keycloak-traefik-tutorial
 https://github.com/gyrospectre/traefikrp
 https://github.com/ibuetler/docker-keycloak-traefik-workshop
 https://gist.github.com/kurt---/7f5415d268f815067252d582044bc99d
+https://github.com/jcperezamin/jcperezamin.github.io/tree/master/16_SSO_with_Keycloak
 -->
 
 ## Helm
@@ -83,7 +84,7 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postgres \
   -e POSTGRES_USER='keycloak' \
-  -e POSTGRES_PASSWORD='keycloak' \
+  -e POSTGRES_PASSWORD='Pa$$w0rd!' \
   -e POSTGRES_DB='keycloak' \
   -v keycloak-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
@@ -96,28 +97,99 @@ docker run -d \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h keycloak \
-  -e DB_VENDOR=postgres \
-  -e DB_ADDR=keycloak-postgres \
-  -e DB_USER=keycloak \
-  -e DB_PASSWORD=keycloak \
-  -e DB_DATABASE=keycloak \
-  -e DB_SCHEMA=public \
-  -e KEYCLOAK_USER=admin \
-  -e KEYCLOAK_PASSWORD=admin \
+  -e DB_VENDOR='postgres' \
+  -e DB_ADDR='keycloak-postgres' \
+  -e DB_USER='keycloak' \
+  -e DB_PASSWORD='Pa$$w0rd!' \
+  -e DB_DATABASE='keycloak' \
+  -e DB_SCHEMA='public' \
+  -e KEYCLOAK_USER='admin' \
+  -e KEYCLOAK_PASSWORD='Pa$$w0rd!' \
   -p 8080:8080 \
   -p 8443:8443 \
   --name keycloak \
   --network workbench \
-  docker.io/jboss/keycloak:8.0.1
+  docker.io/jboss/keycloak:13.0.0 -Dkeycloak.profile.feature.upload_scripts=enabled
 ```
 
+> Wait! This process take a while.
+
 ```sh
+#
 echo -e '[INFO]\thttp://127.0.0.1:8080'
+
+#
+echo -e '[INFO]\thttp://127.0.0.1:8080/auth/admin/'
 ```
 
 ### Remove
 
 ```sh
 docker rm -f keycloak-postgres keycloak
+
 docker volume rm keycloak-postgres-data
 ```
+
+## Docs
+
+### New Realm
+
+1. Master -> Add realm
+   - Name: myapp-local
+   - Create
+2. Configure -> Realm Settings
+   - Display name: MyApp Local
+   - Save
+
+| Environment | Name |
+| --- | --- |
+| Local | `myapp-local` |
+| Testing | `myapp-test` |
+| Production | `myapp` |
+
+### New Role
+
+1. Configure -> Roles -> Add role
+   - Role Name: admin
+   - Save
+
+**Next:** Do the same for `user` role.
+
+### New User
+
+1. Manage -> Users -> Add user
+   - Username: johndoe
+   - Email: johndoe@example.com
+   - Email Verified: Check ON
+   - Save
+2. Credentials Tab -> Set Password Section
+   - Temporary: Check OFF
+   - Set Password
+3. Role Mappings Tab -> Realm Roles Section
+   - Available Roles -> Choose `admin` and `user` -> Add selected
+
+### Add Clients (Services)
+
+#### Backend
+
+1. Configure -> Clients -> Create
+   - Client ID: backend
+   - Save
+2. Configure -> Clients -> Actions Edit "backend"
+   - Access Type: bearer-only
+   - Save
+
+#### Frontend
+
+1. Configure -> Clients -> Create
+   - Client ID: frontend
+   - Save
+2. Configure -> Clients -> Actions Edit "frontend"
+   - Valid Redirect URIs: *
+   - Web Origins *
+   - Save
+3. Configure -> Clients -> Actions Edit "frontend"
+   - Mappers Tab -> Add Builtin -> Search "realm roles" -> Check Add -> Add selected
+   - Mappers Tab -> Actions Edit "realm roles"
+     - Token Claim Name: groups
+     - Save

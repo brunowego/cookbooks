@@ -1,19 +1,19 @@
 # Quarkus SmallRye Health
 
-## Links
+<!-- ## Links
 
 - http://localhost:8080/q/health
 - [Health UI](http://localhost:8080/q/health-ui/)
 - http://localhost:8080/q/health/group
 - http://localhost:8080/q/health/live
 - http://localhost:8080/q/health/ready
-- http://localhost:8080/q/health/well
+- http://localhost:8080/q/health/well -->
 
 ##
 
 ```sh
 #
-./mvnw quarkus:add-extension \
+mvn quarkus:add-extension \
   -Dextensions='smallrye-health'
 ```
 

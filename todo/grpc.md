@@ -1,5 +1,11 @@
 # gRPC Remote Procedure Calls (gRPC)
 
+**Keywords:** RPC Framework, HTTP/2
+
+## Similar
+
+- Java RMI (Remote Method Invocation)
+
 ## References
 
 - [Protocol Buffers](/protobuf.md)

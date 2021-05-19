@@ -4,6 +4,6 @@
 
 ```sh
 # REST Server
-./mvnw quarkus:add-extension \
+mvn quarkus:add-extension \
   -Dextensions='resteasy, resteasy-jackson'
 ```

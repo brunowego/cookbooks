@@ -36,9 +36,9 @@ brew install --cask eclipse-php
 # Git ignore
 cat << EOF >> ~/.gitignore_global
 /.classpath
+/.factorypath
 /.project
 /.settings
-/.factorypath
 EOF
 ```
 
@@ -48,9 +48,9 @@ EOF
 
 ```sh
 jq '."files.exclude"."**/.classpath" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."files.exclude"."**/.factorypath" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 jq '."files.exclude"."**/.project" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 jq '."files.exclude"."**/.settings" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
-jq '."files.exclude"."**/.factorypath" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
 ### Issues

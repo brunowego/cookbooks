@@ -14,7 +14,7 @@ brew install erlang
 
 ```sh
 sudo apt update
-DEBIAN_FRONTEND=noninteractive sudo apt -y install erlang
+sudo DEBIAN_FRONTEND=noninteractive apt -y install erlang
 ```
 
 #### APT

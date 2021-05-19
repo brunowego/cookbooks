@@ -1,6 +1,12 @@
 # Azure
 
 <!--
+https://www.linkedin.com/learning/paths/become-an-azure-developer
+https://www.linkedin.com/learning/paths/become-an-azure-administrator
+https://www.linkedin.com/learning/paths/prepare-for-microsoft-azure-administrator-certification-az-103
+https://www.linkedin.com/learning/paths/stay-ahead-in-azure-development
+https://www.linkedin.com/learning/paths/prepare-for-the-designing-and-implementing-microsoft-devops-solutions-exam-az-400
+
 https://www.linkedin.com/learning/azure-essential-training-for-developers/azure-for-developers
 -->
 

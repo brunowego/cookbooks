@@ -90,7 +90,7 @@ docker run -d \
   -p 27017:27017 \
   --name mongodb \
   --network workbench \
-  docker.io/library/mongo:4.0.20
+  docker.io/library/mongo:4.4.6
 ```
 
 ```sh
@@ -101,7 +101,7 @@ sudo hostess add mongodb 127.0.0.1
 
 ```sh
 docker run -it --rm \
-  docker.io/library/mongo:4.0.20 mongo -h
+  docker.io/library/mongo:4.4.6 mongo -h
 ```
 
 ### Remove
@@ -121,7 +121,7 @@ version: '3.7'
 
 services:
   mongodb:
-    image: docker.io/library/mongo:4.0.20
+    image: docker.io/library/mongo:4.4.6
     container_name: mongodb
     hostname: mongodb
     volumes:

@@ -96,7 +96,7 @@ mkdir -p /home/kafka/kafka/kafka-logs
 vim kafka_2.11-1.0.0/config/zookeeper.properties
 ```
 
-```properties
+```ini
 dataDir=/home/kafka/zookeeper/data
 
 server.1=kafka1:2888:3888

@@ -17,11 +17,11 @@ brew install minikube
 #### Darwin
 
 ```sh
-# v1.6.0
-curl \
-  -L 'https://storage.googleapis.com/minikube/releases/v1.6.0/minikube-darwin-amd64' \
-  -o /usr/local/bin/minikube && \
-    chmod +x /usr/local/bin/minikube
+MINIKUBE_VERSION='1.20.0' \
+  curl \
+    -L "https://storage.googleapis.com/minikube/releases/v${MINIKUBE_VERSION}/minikube-darwin-amd64" \
+    -o /usr/local/bin/minikube && \
+      chmod +x /usr/local/bin/minikube
 
 # Latest
 curl \
@@ -33,11 +33,11 @@ curl \
 #### Linux
 
 ```sh
-# v1.6.0
-sudo curl \
-  -L 'https://storage.googleapis.com/minikube/releases/v1.6.0/minikube-linux-amd64' \
-  -o /usr/local/bin/minikube && \
-    sudo chmod +x /usr/local/bin/minikube
+MINIKUBE_VERSION='1.20.0' \
+  sudo curl \
+    -L "https://storage.googleapis.com/minikube/releases/v${MINIKUBE_VERSION}/minikube-linux-amd64" \
+    -o /usr/local/bin/minikube && \
+      sudo chmod +x /usr/local/bin/minikube
 
 # Latest
 sudo curl \
@@ -59,34 +59,24 @@ minikube config view
 
 # Disable Update Notification
 minikube config set WantUpdateNotification false
-```
-
-#### Base
-
-```sh
 # minikube config set addon-manager true
-minikube config set cpus 4
-minikube config set memory 8192
+minikube config set cpus 2
+minikube config set memory 4096
 minikube config set disk-size 40g
 ```
 
 #### VM Driver
 
 - [Docker Machine Driver Hyperkit](/docker-machine-driver-hyperkit.md)
+- [Docker Machine Driver Parallels](/docker-machine-driver-parallels.md)
 
 ```sh
 # HyperKit (Darwin only)
 minikube config set vm-driver 'hyperkit'
-```
 
-```sh
 # VirtualBox
 minikube config set vm-driver 'virtualbox'
-```
 
-- [Docker Machine Driver Parallels](/docker-machine-driver-parallels.md)
-
-```sh
 # Parallels (Darwin only)
 minikube config set vm-driver 'parallels'
 ```

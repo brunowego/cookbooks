@@ -3,6 +3,8 @@
 <!--
 Buefy
 
+https://www.linkedin.com/learning/paths/become-a-vue-js-developer
+
 https://github.com/knadh/listmonk/tree/master/frontend
 
 https://app.pluralsight.com/library/courses/vue-components-jest-testing/table-of-contents

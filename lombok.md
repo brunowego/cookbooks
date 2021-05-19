@@ -1,15 +1,19 @@
 # Project Lombok
 
-<!-- ##
+## Library
+
+### Project Object Model (POM)
 
 ```xml
+<org.projectlombok.lombok.version>1.18.20</org.projectlombok.lombok.version>
+
 <dependency>
   <groupId>org.projectlombok</groupId>
   <artifactId>lombok</artifactId>
-  <version>1.18.12</version>
+  <version>${org.projectlombok.lombok.version}</version>
   <scope>provided</scope>
 </dependency>
-``` -->
+```
 
 ## Tips
 

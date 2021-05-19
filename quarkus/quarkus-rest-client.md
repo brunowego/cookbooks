@@ -4,6 +4,6 @@
 
 ```sh
 # REST Client
-./mvnw quarkus:add-extension \
+mvn quarkus:add-extension \
   -Dextensions='rest-client, rest-client-jackson'
 ```

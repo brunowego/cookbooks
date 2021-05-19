@@ -1,6 +1,10 @@
 # Agile Software Development (sometimes written Agile)
 
 <!--
+https://www.linkedin.com/learning/paths/master-agile-software-development
+https://www.linkedin.com/learning/paths/become-an-agile-software-developer
+https://www.linkedin.com/learning/paths/become-an-agile-project-manager
+
 https://www.linkedin.com/learning/devops-foundations-lean-and-agile/lean-and-agile-in-devops-3
 
 https://www.linkedin.com/learning/agile-software-development/the-agile-approach

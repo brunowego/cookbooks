@@ -283,6 +283,17 @@ docker volume rm gitlab-redis-data gitlab-postgres-data gitlab-config gitlab-log
 
 ## Docs
 
+### Show Version
+
+```sh
+#
+GITLAB_URL=
+GITLAB_PRIVATE_TOKEN=
+
+#
+curl -i "PRIVATE-TOKEN: ${GITLAB_PRIVATE_TOKEN}" "https://${{GITLAB_URL}}/api/v4/version"
+```
+
 ### Bot
 
 #### Account

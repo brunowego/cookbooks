@@ -1,6 +1,8 @@
 # HashiCorp Terraform
 
 <!--
+https://github.com/dhinojosa/spinnaker-study/tree/master/terraform
+
 https://app.pluralsight.com/paths/skill/managing-infrastructure-with-terraform
 https://app.pluralsight.com/paths/certificate/hashicorp-certified-terraform-associate
 

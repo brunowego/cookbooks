@@ -1,6 +1,6 @@
 # krb5
 
-```properties
+```ini
 security.protocol=SASL_PLAINTEXT
 
 sasl.mechanism=GSSAPI

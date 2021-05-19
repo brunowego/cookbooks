@@ -77,10 +77,10 @@ watch kafkacat -Lb 127.0.0.1:9092
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mysql \
-  -e MYSQL_ROOT_PASSWORD=root \
-  -e MYSQL_USER=debezium \
-  -e MYSQL_PASSWORD=debezium \
-  -e MYSQL_DATABASE=inventory \
+  -e MYSQL_ROOT_PASSWORD='root' \
+  -e MYSQL_USER='debezium' \
+  -e MYSQL_PASSWORD='debezium' \
+  -e MYSQL_DATABASE='inventory' \
   -v mysql-data:/var/lib/mysql \
   -p 3306:3306 \
   --name mysql \
@@ -162,14 +162,26 @@ EOF
 
 ```sh
 kafkacat -Ct schema-changes.inventory -b 127.0.0.1:9092
+
 kafkacat -Ct dbserver1 -b 127.0.0.1:9092
 ```
 
 ```sh
 #
-docker exec -i mysql /usr/bin/mysql -D inventory -u debezium -p'debezium' -ve 'DROP TABLE IF EXISTS `users`'
+docker exec -i mysql \
+  /usr/bin/mysql \
+    -D inventory \
+    -u debezium \
+    -p'debezium' \
+    -ve 'DROP TABLE IF EXISTS `users`'
 
-docker exec -i mysql /usr/bin/mysql -D inventory -u debezium -p'debezium' -v <<-\EOSQL
+docker exec -i mysql \
+  /usr/bin/mysql \
+    -D inventory \
+    -u debezium \
+    -p'debezium' \
+    -v \
+    <<-\EOSQL
 CREATE TABLE IF NOT EXISTS `users` (
   `user_id` bigint,
   `name` varchar(128),
@@ -177,11 +189,26 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 EOSQL
 
-docker exec -i mysql /usr/bin/mysql -D inventory -u debezium -p'debezium' -ve 'INSERT INTO `users` (user_id, name) VALUES(1, "John")'
+docker exec -i mysql \
+  /usr/bin/mysql \
+    -D inventory \
+    -u debezium \
+    -p'debezium' \
+    -ve 'INSERT INTO `users` (user_id, name) VALUES(1, "John")'
 
-docker exec -i mysql /usr/bin/mysql -D inventory -u debezium -p'debezium' -ve 'SELECT * FROM `users`'
+docker exec -i mysql \
+  /usr/bin/mysql \
+    -D inventory \
+    -u debezium \
+    -p'debezium' \
+    -ve 'SELECT * FROM `users`'
 
-docker exec -i mysql /usr/bin/mysql -D inventory -u debezium -p'debezium' -ve 'UPDATE `users` SET name = "John Doe" WHERE user_id = 1'
+docker exec -i mysql \
+  /usr/bin/mysql \
+    -D inventory \
+    -u debezium \
+    -p'debezium' \
+    -ve 'UPDATE `users` SET name = "John Doe" WHERE user_id = 1'
 ```
 
 ```sh
@@ -191,6 +218,7 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 ### Remove
 
 ```sh
-docker rm -f grafana
-docker volume rm grafana-config grafana-data
+docker rm -f debezium-zookeeper debezium-kafka mysql debezium-connect
+
+docker volume rm mysql-data
 ```

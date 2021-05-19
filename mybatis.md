@@ -1,5 +1,9 @@
 # MyBatis
 
+<!--
+https://loiane.com/2011/02/comecando-com-ibatis-mybatis-annotations/
+-->
+
 ## Alternative
 
 - [Hibernate](/hibernate.md)

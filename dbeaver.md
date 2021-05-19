@@ -66,6 +66,11 @@ Or:
 
 ### Tips
 
+#### Export DDL
+
+1. Right click on selected table
+2. Generate SQL -> DDL
+
 <!--
 ####
 

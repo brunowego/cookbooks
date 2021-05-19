@@ -4,6 +4,6 @@
 
 ```sh
 #
-./mvnw quarkus:add-extension \
+mvn quarkus:add-extension \
   -Dextensions='security-jpa'
 ```

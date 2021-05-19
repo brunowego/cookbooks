@@ -4,6 +4,9 @@
 Redux
 Redux-Saga
 
+https://www.linkedin.com/learning/paths/improve-your-react-skills
+https://www.linkedin.com/learning/paths/become-a-react-developer
+
 https://thoughtbot.com/blog/using-redux-with-react-hooks
 
 https://www.linkedin.com/learning/react-state-management/choosing-the-right-state-management-solution

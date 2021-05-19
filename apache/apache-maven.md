@@ -54,7 +54,11 @@ export PATH="/usr/local/opt/maven@3.5/bin:$PATH"
 ### Commands
 
 ```sh
+#
 mvn -h
+
+#
+mvn archetype:generate -h
 ```
 
 ### Usage
@@ -68,6 +72,37 @@ mvn help:effective-pom
 
 #
 mvn help:active-profiles
+```
+
+#### Project
+
+```sh
+# Root
+PROJECT_GROUP_ID=org.acme.app \
+PROJECT_ARTIFACT_ID=app \
+PROJECT_VERSION=0.0.1-SNAPSHOT; \
+  mvn archetype:generate -B \
+    -DarchetypeGroupId=org.codehaus.mojo.archetypes \
+    -DarchetypeArtifactId=pom-root \
+    -DarchetypeVersion=RELEASE \
+    -DgroupId="$PROJECT_GROUP_ID" \
+    -DartifactId="$PROJECT_ARTIFACT_ID" \
+    -Dversion="$PROJECT_VERSION"
+
+#
+cd ./"$PROJECT_ARTIFACT_ID"
+
+# Module
+PROJECT_GROUP_ID=org.acme.app \
+PROJECT_ARTIFACT_ID=user \
+PROJECT_VERSION=0.0.1-SNAPSHOT; \
+  mvn archetype:generate -B \
+    -DarchetypeGroupId=org.apache.maven.archetypes \
+    -DarchetypeArtifactId=maven-archetype-quickstart \
+    -DarchetypeVersion=RELEASE \
+    -DgroupId="$PROJECT_GROUP_ID" \
+    -DartifactId="$PROJECT_ARTIFACT_ID" \
+    -Dversion="$PROJECT_VERSION"
 ```
 
 #### Goals (Lifecycle/Super POM)
@@ -104,6 +139,22 @@ mvn help:active-profiles
 <!-- mvn site -->
 
 ### Tips
+
+<!-- ####
+
+1. Move `properties` and `dependencyManagement`
+2. Remove `groupId` and `version`
+
+```xml
+<artifactId>[module-name]</artifactId>
+<parent>
+  <groupId>org.acme.app</groupId>
+  <artifactId>[parent-name]</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+</parent>
+```
+
+3. Run `mvn clean package -DskipTests` -->
 
 #### Local Repository
 
@@ -280,6 +331,49 @@ rm -r ~/.m2
 ```
 
 ### Issues
+
+<!-- ####
+
+```log
+[WARNING] Some problems were encountered while building the effective model for org.acme.app:auth:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-compiler-plugin @ line 113, column 15
+[WARNING]
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING]
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+```
+
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>${compiler-plugin.version}</version>
+  <configuration>
+    <parameters>${maven.compiler.parameters}</parameters>
+    <source>1.8</source>
+    <target>1.8</target>
+    <annotationProcessorPaths>
+      <path>
+        <groupId>org.mapstruct</groupId>
+        <artifactId>mapstruct-processor</artifactId>
+        <version>${org.mapstruct.version}</version>
+      </path>
+    </annotationProcessorPaths>
+    <showWarnings>true</showWarnings>
+    <compilerArgs>
+      <arg>
+        -Amapstruct.suppressGeneratorTimestamp=true
+      </arg>
+      <arg>
+        -Amapstruct.suppressGeneratorVersionInfoComment=true
+      </arg>
+      <arg>
+        -Amapstruct.verbose=true
+      </arg>
+    </compilerArgs>
+  </configuration>
+</plugin>
+``` -->
 
 <!-- ####
 

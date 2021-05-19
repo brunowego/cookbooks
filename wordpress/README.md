@@ -1,6 +1,8 @@
 # WordPress
 
 <!--
+https://www.linkedin.com/learning/paths/become-an-advanced-wordpress-developer
+
 https://snipcart.com/blog/reactjs-wordpress-rest-api-example
 https://www.freecodecamp.org/news/wordpress-react-how-to-create-a-modern-web-app-using-wordpress-ef6cc6be0cd0/
 https://blog.usejournal.com/react-wordpress-rest-api-c6e94595e4d7

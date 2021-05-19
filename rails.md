@@ -1,6 +1,7 @@
 # Ruby on Rails
 
 <!--
+https://www.linkedin.com/learning/paths/become-a-ruby-on-rails-developer
 https://www.linkedin.com/learning/topics/ruby-on-rails?entityType=COURSE
 
 https://app.pluralsight.com/paths/skill/building-web-apps-with-ruby-on-rails
@@ -17,6 +18,10 @@ https://matthewhoelter.com/2019/09/12/setting-up-and-testing-rails-6.0-with-rspe
 https://www.linkedin.com/learning/ruby-on-rails-6-essential-training/faster-better-less-painful-website-development
 https://www.linkedin.com/learning/ruby-on-rails-6-essential-training-models-and-associations/let-activerecord-objects-manage-your-data
 -->
+
+## Plugins
+
+- [Rails ERD](https://voormedia.github.io/rails-erd/install.html#generate)
 
 ## CLI
 

@@ -1,5 +1,9 @@
 # jabba
 
+<!-- ## Alternatives
+
+- sdkman -->
+
 ## CLI
 
 ### Dependencies
@@ -55,6 +59,13 @@ echo '/.jabbarc' >> ~/.gitignore_global
 # Remote
 jabba ls-remote
 jabba ls-remote 'adopt@' --latest minor
+jabba ls-remote 'adopt-openj9@' --latest minor
+jabba ls-remote 'amazon-corretto@' --latest minor
+jabba ls-remote 'graalvm@' --latest minor
+jabba ls-remote 'graalvm-ce-java11@' --latest minor
+jabba ls-remote 'liberica@' --latest minor
+jabba ls-remote 'openjdk@' --latest minor
+jabba ls-remote 'zulu@' --latest minor
 
 # Install
 jabba install [version]

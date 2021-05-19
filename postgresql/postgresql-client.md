@@ -23,7 +23,7 @@ brew install libpq
 
 ```sh
 sudo apt update
-DEBIAN_FRONTEND=noninteractive sudo apt -y install postgresql-contrib
+sudo DEBIAN_FRONTEND=noninteractive apt -y install postgresql-contrib
 ```
 
 #### YUM
@@ -151,6 +151,69 @@ psql \
 ```
 
 ### Tips
+
+#### Shell
+
+```sh
+#! /bin/sh
+set -e
+
+POSTGRES="PGPASSWORD=${POSTGRES_PASSWORD} psql -U postgres"
+
+echo 'Creating [scope]: [name]'
+
+$POSTGRES <<-EOSQL
+[sql]
+EOSQL
+```
+
+#### Latin1
+
+```sql
+sudo vim /var/lib/locales/supported.d/local
+
+en_US.ISO-8859-1 ISO-8859-1
+
+sudo dpkg-reconfigure locales
+
+createdb -E LATIN1 --template template0 --locale en_US.ISO-8859-1 trial
+
+sudo -u postgres createuser -s $USER
+```
+
+Show encoding and set UTF8.
+
+```sql
+show client_encoding;
+SET client_encoding = 'UTF8';
+```
+
+Access PostgreSQL
+
+```sql
+su postgres
+
+/usr/lib/postgresql/9.1/bin/initdb --pgdata=/var/lib/postgresql/9.1/main/ --encoding=LATIN1 --locale=C --username=postgres -W
+
+sudo -u postgres psql template1
+
+CREATE DATABASE nome_do_banco ENCODING 'ISO-8859-1' LC_CTYPE 'pt_BR.ISO-8859-1' TEMPLATE template0;
+
+\q
+```
+
+#### Convert DB encoding to UTF8
+
+```sh
+# Export database
+postgres pg_dump --encoding utf8 main -f main.sql
+
+# Create a new database
+createdb -E utf8 newMmain
+
+# Import SQL file
+psql -f main.sql -d newMain
+```
 
 #### Health check
 

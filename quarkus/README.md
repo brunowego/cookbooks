@@ -1,6 +1,11 @@
 # Quarkus (Quark.Us)
 
 <!--
+https://github.com/JuMp3/demo-quarkus
+https://github.com/quarkus-qe/beefy-scenarios
+https://github.com/gabrielaigner/audally
+https://github.com/Emirbz/espace_collaborative/tree/master/src/main/java/io/accretio
+
 https://github.com/DouglasGo8/quarkus-native-apps
 
 https://github.com/mph206/quarkus-course
@@ -16,21 +21,26 @@ https://www.youtube.com/watch?v=9wJm8g83vqA
 https://code.quarkus.io/
 https://www.apress.com/br/book/9781484260319
 https://leanpub.com/playing-with-java-microservices-with-quarkus-and-k8s
-https://www.udemy.com/course/des-web-quarkus/
-https://www.udemy.com/course/quarkus-backend-development-java/
 https://www.redhat.com/pt-br/about/videos/quarkus-basics-master-course
 https://www.youtube.com/watch?v=OAxKGelBHRs
 https://quarkus.io/quarkus-workshops/super-heroes/
 https://www.oreilly.com/attend/getting-started-with-quarkus/0636920436416/0636920470021/
 https://howtolearn.blog/quarkus/
 https://www.katacoda.com/openshift/courses/middleware/middleware-quarkus
-https://www.udemy.com/course/quarkus-starting-with-quarkus/?referralCode=326B47EE8A3032346159
 https://piotrminkowski.com/2021/04/14/advanced-graphql-with-quarkus/
 https://blogs.oracle.com/developers/configuring-the-oracle-jdbc-drivers-with-quarkus
 https://medium.com/@yazidaqel/quarkus-configuration-using-consul-d077dc6d5d3
 https://www.amazon.com/Hands-Cloud-Native-Applications-Quarkus-Kubernetes-native-ebook/dp/B082FMCKJG/ref=sr_1_1?dchild=1&keywords=quarkus&qid=1586434790&sr=8-1
 
 https://www.linkedin.com/pulse/jhipster-quarkus-demo-app-stephan-janssen/
+
+https://www.udemy.com/course/des-web-quarkus/
+https://www.udemy.com/course/quarkus-backend-development-java/
+https://www.udemy.com/course/quarkus-starting-with-quarkus/
+https://www.udemy.com/course/quarkus-com-panache-graalvm-gitlabci-e-aws/
+https://www.udemy.com/course/microprofile-completo/
+https://www.udemy.com/course/quarkus-com-mongodb/
+https://www.udemy.com/course/quarkus-get-started/
 -->
 
 ## Features
@@ -52,6 +62,7 @@ https://www.linkedin.com/pulse/jhipster-quarkus-demo-app-stephan-janssen/
 ## Related
 
 - [Java](/java.md)
+- [MicroProfile Starter](https://start.microprofile.io/)
 - [Agroal](https://agroal.github.io/)
 - [Books](https://quarkus.io/books/)
 
@@ -69,7 +80,6 @@ https://www.linkedin.com/pulse/jhipster-quarkus-demo-app-stephan-janssen/
 - [Using Security with JPA](https://quarkus.io/guides/security-jpa)
 - [Using the MongoDB Client](https://quarkus.io/guides/mongodb)
 - [Using the REST Client](https://quarkus.io/guides/rest-client)
-- [MapStruct + Quarkus](https://github.com/mapstruct/mapstruct-examples/tree/master/mapstruct-quarkus)
 
 <!--
 https://stackoverflow.com/questions/59170942/lazyinitializationexception-when-returning-json-in-rest-webservice-in-quarkus
@@ -176,37 +186,57 @@ https://github.com/quarkusio/quarkus/blob/master/docs/src/main/asciidoc/cli-tool
 ### Scaffold
 
 ```sh
-QUARKUS_VERSION=1.13.3.Final \
-PROJECT_GROUP_ID=org.acme \
+# Root
+PROJECT_GROUP_ID=org.acme.app \
 PROJECT_ARTIFACT_ID=app \
-PROJECT_VERSION=1.0.0-SNAPSHOT; \
+PROJECT_VERSION=0.0.1-SNAPSHOT; \
+  mvn archetype:generate -B \
+    -DarchetypeGroupId=org.codehaus.mojo.archetypes \
+    -DarchetypeArtifactId=pom-root \
+    -DarchetypeVersion=RELEASE \
+    -DgroupId="$PROJECT_GROUP_ID" \
+    -DartifactId="$PROJECT_ARTIFACT_ID" \
+    -Dversion="$PROJECT_VERSION"
+
+#
+cd ./"$PROJECT_ARTIFACT_ID"
+
+# Module
+QUARKUS_VERSION=1.13.4.Final \
+PROJECT_GROUP_ID=org.acme.app \
+PROJECT_ARTIFACT_ID=user \
+PROJECT_VERSION=0.0.1-SNAPSHOT; \
   mvn io.quarkus:quarkus-maven-plugin:"$QUARKUS_VERSION":create \
     -DprojectGroupId="$PROJECT_GROUP_ID" \
     -DprojectArtifactId="$PROJECT_ARTIFACT_ID" \
     -DprojectVersion="$PROJECT_VERSION" \
     -DclassName="${PROJECT_GROUP_ID}.${PROJECT_ARTIFACT_ID}.MyResource"
 
-cd ./"$PROJECT_ARTIFACT_ID"
+#
+mvn package -DskipTests
 ```
 
 ### Commands
 
 ```sh
-./mvnw -h
+mvn -h
 
-./mvnw quarkus:help
+mvn quarkus:help
 
-./mvnw -Dplugin=io.quarkus:quarkus-maven-plugin help:describe
+mvn -Dplugin=io.quarkus:quarkus-maven-plugin help:describe
 ```
 
 ### Running
 
 ```sh
 #
-./mvnw compile quarkus:dev
+mvn quarkus:dev
 
 #
-./mvnw clean compile quarkus:dev
+mvn quarkus:test
+
+#
+mvn quarkus:prod
 ```
 
 ```sh
@@ -218,49 +248,52 @@ echo -e '[INFO]\thttp://127.0.0.1:8080/q/dev/'
 
 ```sh
 #
-./mvnw quarkus:list-extensions
+mvn quarkus:list-extensions
 ```
 
 ### Compile
 
 ```sh
 #
-./mvnw compile
+mvn compile
 
 #
-./mvnw compile quarkus:dev
+mvn compile quarkus:dev
 
 #
-./mvnw compile quarkus:dev -DdebugHost=0.0.0.0
+mvn clean compile quarkus:dev
+
+#
+mvn compile quarkus:dev -DdebugHost=0.0.0.0
 ```
 
 ### Package
 
 ```sh
 #
-./mvnw package
+mvn package
 
 #
-./mvnw package -Dquarkus.package.type=uber-jar
+mvn package -Dquarkus.package.type=uber-jar
 
 #
-./mvnw package -Pnative
+mvn package -Pnative
 
 #
-./mvnw package -Pnative -Dquarkus.native.container-build=true
+mvn package -Pnative -Dquarkus.native.container-build=true
 ```
 
 ### Profiles
 
 ```sh
 # Development (Default)
-./mvnw compile quarkus:dev -Dquarkus-profile=dev
+mvn compile quarkus:dev -Dquarkus-profile=dev
 
 # Testing
-./mvnw compile quarkus:dev -Dquarkus-profile=test
+mvn compile quarkus:dev -Dquarkus-profile=test
 
 # Production
-./mvnw compile quarkus:dev -Dquarkus-profile=prod
+mvn compile quarkus:dev -Dquarkus-profile=prod
 ```
 
 ### Properties
@@ -269,7 +302,9 @@ echo -e '[INFO]\thttp://127.0.0.1:8080/q/dev/'
 code ./src/main/resources/application.properties
 ```
 
-```properties
+**Environments:** `%dev`, `%test` and `%prod`.
+
+```ini
 %dev.quarkus.log.level=DEBUG
 
 quarkus.log.category."org.apache.kafka.common.utils".level=DEBUG
@@ -287,10 +322,25 @@ quarkus.http.cors=true
 
 ```sh
 #
-./mvnw clean -DskipTests package -Pnative
+mvn clean -DskipTests package -Pnative
 ```
 
 ## Tips
+
+### Debug Port
+
+```sh
+mvn quarkus:dev -Ddebug=5006
+```
+
+<!-- ###
+
+```sh
+docker build \
+  -f ./src/main/docker/Dockerfile.jvm \
+  -t quarkus/[project-name] \
+  ./
+``` -->
 
 ### Check JDWP Listen
 
@@ -344,7 +394,7 @@ Caused by: org.postgresql.util.PSQLException: ERROR: column applicatio0_.keyid d
 ```
 
 ```sh
-./mvnw quarkus:add-extension -Dextensions='hibernate-orm'
+mvn quarkus:add-extension -Dextensions='hibernate-orm'
 ```
 
 ```

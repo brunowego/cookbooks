@@ -1,7 +1,0 @@
-# Queries
-
-## Quit
-
-```sql
-\q
-```

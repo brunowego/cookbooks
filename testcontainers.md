@@ -1,9 +1,30 @@
 # Testcontainers
 
 <!--
+https://github.com/search?o=desc&q=filename%3A.java+%22QuarkusTestResourceLifecycleManager%22&s=indexed&type=Code
+
 https://www.youtube.com/results?search_query=testcontainers
 
 ~/.testcontainers.properties
 -->
 
-TODO
+## References
+
+- [Testcontainers](https://www.testcontainers.org/)
+
+## Modules
+
+### Databases
+
+#### PostgreSQL
+
+```xml
+<org.testcontainers.postgresql.version>1.15.3</org.testcontainers.postgresql.version>
+
+<dependency>
+  <groupId>org.testcontainers</groupId>
+  <artifactId>postgresql</artifactId>
+  <version>${org.testcontainers.postgresql.version}</version>
+  <scope>test</scope>
+</dependency>
+```

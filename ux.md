@@ -6,6 +6,12 @@ Evidence-driven design vs Data-driven programming
 
 One-on-One feedback
 
+https://www.linkedin.com/learning/paths/stay-competitive-using-design-thinking
+https://www.linkedin.com/learning/paths/advance-your-skills-as-a-user-experience-researcher
+https://www.linkedin.com/learning/paths/advance-your-skills-in-ux-design
+https://www.linkedin.com/learning/paths/improve-your-ux-prototyping-skills
+https://www.linkedin.com/learning/paths/improve-your-ux-design-skills
+
 https://medium.com/quintoandar-design/design-jams-como-projetar-solu%C3%A7%C3%B5es-melhores-colaborativamente-dfb1411a5778
 https://www.gv.com/sprint/
 https://www.napratica.org.br/tecnicas-de-facilitacao-para-dia-a-dia-profissional/

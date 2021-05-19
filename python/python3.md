@@ -3,6 +3,7 @@
 <!--
 https://www.linkedin.com/learning/nail-your-python-interview/the-secret-to-nailing-a-python-interview
 
+https://www.linkedin.com/learning/paths/become-a-python-developer
 
 https://www.linkedin.com/learning/learning-the-python-3-standard-library/welcome
 https://www.linkedin.com/learning/first-look-python-3-9/what-s-new-in-python-3-9
@@ -66,7 +67,7 @@ docker run -it --rm \
   -h python \
   --name python \
   --network workbench \
-  docker.io/library/python:3.7 /bin/bash
+  docker.io/library/python:3.8 /bin/bash
 
 # Alpine 3
 docker run -it --rm \
@@ -74,7 +75,7 @@ docker run -it --rm \
   -h python \
   --name python \
   --network workbench \
-  docker.io/library/python:3.7-alpine /bin/sh
+  docker.io/library/python:3.8-alpine /bin/sh
 ```
 
 ## Dockerfile
@@ -82,7 +83,7 @@ docker run -it --rm \
 ### Image
 
 ```Dockerfile
-FROM docker.io/library/python:3.7-alpine
+FROM docker.io/library/python:3.8-alpine
 
 WORKDIR /usr/src/app
 

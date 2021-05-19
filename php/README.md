@@ -11,6 +11,7 @@ https://front-line-php.com/
 ## References
 
 - [PHP Benchmarks](https://kinsta.com/blog/php-benchmarks)
+- [PHP Developer roadmap](https://github.com/thecodeholic/php-developer-roadmap)
 
 ## CLI
 

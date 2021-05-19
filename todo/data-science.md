@@ -3,6 +3,8 @@
 TODO
 
 <!--
+https://www.linkedin.com/learning/paths/become-a-data-scientist
+
 https://www.linkedin.com/learning/introduction-to-data-science-2/beginning-your-data-science-exploration
 
 https://www.linkedin.com/learning/lessons-from-data-scientists/insights-to-excel-in-data-science

@@ -2,11 +2,13 @@
 
 ## Docker
 
-### Running
+### Dependencies
 
 ```sh
-docker-machine ssh $DOCKER_MACHINE_NAME sudo sysctl -w vm.max_map_count=262144
+docker-machine ssh "$DOCKER_MACHINE_NAME" sudo sysctl -w vm.max_map_count=262144
 ```
+
+### Running
 
 ```sh
 docker run -d \
@@ -19,7 +21,7 @@ docker run -d \
   -p 4300:4300 \
   -p 5432:5432 \
   --name cratedb \
-  crate:3.3
+  docker.io/library/crate:3.3
 ```
 
 ```sh
@@ -30,5 +32,6 @@ echo -e '[INFO]\thttp://127.0.0.1:4200'
 
 ```sh
 docker rm -f cratedb
+
 docker volume rm cratedb-config cratedb-data
 ```

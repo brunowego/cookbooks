@@ -23,6 +23,7 @@ Bucket of cookbooks to help install and set softwares.
 
 ## Terms
 
+- Away From Keyboard (AFK)
 - As far as I know (AFAIK)
 - Thank God it's Friday (TGIF)
 - Exempli Gratia (e.g.)
@@ -58,6 +59,7 @@ Bucket of cookbooks to help install and set softwares.
 - Estimated Time of Arrival (ETA)
 - Facebook, Amazon, Apple, Netflix e Google (FAANG)
 - Five Ws (5WH)
+- Entity Relationship Diagram (ERD)
 - Request for Enhancement (RFE)
 - [Free and Open-Source Software (FOSS)](https://en.wikipedia.org/wiki/Free_and_open-source_software)
 - [identity provider (IdP)](https://en.wikipedia.org/wiki/Identity_provider)

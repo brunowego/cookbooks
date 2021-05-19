@@ -8,7 +8,7 @@
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h sysdig-inspect \
-  -v sysdig-captures:/captures
+  -v sysdig-inspect-captures:/captures
   -p 3000:3000 \
   --name sysdig-inspect \
   docker.io/sysdig/sysdig-inspect:0.4.2
@@ -21,8 +21,9 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 ### Remove
 
 ```sh
-docker rm -f grafana
-docker volume rm grafana-config grafana-data
+docker rm -f sysdig-inspect
+
+docker volume rm sysdig-inspect-captures
 ```
 
 ## CLI

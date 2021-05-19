@@ -1,6 +1,11 @@
 # Amazon Web Services (AWS)
 
 <!--
+https://www.linkedin.com/learning/paths/prepare-for-the-aws-certified-cloud-practitioner-exam
+https://www.linkedin.com/learning/paths/become-an-aws-data-and-devops-specialist
+https://www.linkedin.com/learning/paths/prepare-for-aws-devops-engineer-professional-certification
+https://www.linkedin.com/learning/paths/prepare-for-aws-sysops-administrator-certification
+
 https://app.pluralsight.com/search/?q=aws%20certified&type=path&m_sort=relevance&query_id=4364f4ab-a8d6-4533-9340-582d9d55d691&source=user_typed
 
 

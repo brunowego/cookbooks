@@ -18,6 +18,19 @@ https://www.javatpoint.com/shell-script-parameters
 
 ## Tips
 
+### History Expansion
+
+```sh
+# Show history
+history | less
+
+# Run commando from line number
+![line-number]
+
+# Invoke last command run
+![command]
+```
+
 ### Print Currently Filename
 
 ```sh

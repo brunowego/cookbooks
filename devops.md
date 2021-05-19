@@ -1,6 +1,11 @@
 # DevOps
 
 <!--
+https://www.linkedin.com/learning/paths/improve-your-continuous-delivery-skills
+https://www.linkedin.com/learning/paths/applying-lean-devops-and-agile-to-your-it-organization
+
+https://www.linkedin.com/learning/paths/become-a-devops-engineer
+
 https://www.linkedin.com/learning/devops-foundations-continuous-delivery-continuous-integration/
 -->
 

@@ -1,10 +1,14 @@
 # Quarkus SmallRye GraphQL
 
+<!--
+https://www.udemy.com/course/des-web-quarkus/learn/lecture/20442567#overview
+-->
+
 ##
 
 ```sh
 #
-./mvnw quarkus:add-extension \
+mvn quarkus:add-extension \
   -Dextensions='smallrye-graphql'
 ```
 

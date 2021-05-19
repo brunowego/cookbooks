@@ -5,6 +5,8 @@ Django Channels
 Django Unit Tests
 Django Celery
 
+https://www.linkedin.com/learning/paths/become-a-django-developer
+
 https://thinkster.io/tutorials/configuring-django-settings-for-production
 https://patrickfarrar.com/posts/development/environment-configurations-django/
 

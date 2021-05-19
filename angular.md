@@ -1,6 +1,9 @@
 # Angular
 
 <!--
+https://www.linkedin.com/learning/paths/advance-your-angular-skills
+https://www.linkedin.com/learning/paths/become-an-angular-developer-2
+
 https://app.pluralsight.com/paths/skills/angular
 
 https://www.linkedin.com/learning/angular-essential-training-2/why-use-angular

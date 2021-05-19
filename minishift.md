@@ -13,4 +13,18 @@ mvn clean -DskipTests package -Pnative -Dquarkus.native.container-build=true
 oc start-build quarkus-hello-app --from-dir=. --follow
 -->
 
-TODO
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install --cask minishift
+```
+
+### Chocolatey
+
+```sh
+choco install minishift
+```

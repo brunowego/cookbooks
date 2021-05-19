@@ -1,5 +1,6 @@
 # Dremio OSS
 
+<!--
 https://github.com/xiaset/docker-dremio-oss-hdfs/blob/master/Dockerfile
 https://github.com/markfjohnson/RangerDremio
 https://github.com/VadymKhodak/dremio_presentation
@@ -9,6 +10,7 @@ https://github.com/rymurr/dremio-prometheus-exporter
 https://github.com/bbonnin/zeppelin-dremio-tests
 https://github.com/markfjohnson/Dremio_Master_Detail_Parquet
 https://github.com/josepcurto/mbd-bidw
+-->
 
 ## References
 
@@ -78,6 +80,13 @@ kubectl delete namespace dremio --grace-period=0 --force
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -90,6 +99,7 @@ docker run -d \
   -p 31010:31010 \
   -p 45678:45678 \
   --name dremio-oss \
+  --network workbench \
   docker.io/dremio/dremio-oss:4.0
 ```
 
@@ -101,5 +111,6 @@ echo -e '[INFO]\thttp://127.0.0.1:9047'
 
 ```sh
 docker rm -f dremio-oss
+
 docker volume rm dremio-oss-conf dremio-oss-data
 ```

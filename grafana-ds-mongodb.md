@@ -84,5 +84,6 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 
 ```sh
 docker rm -f grafana-mongodb-proxy grafana
+
 docker volume rm grafana-config grafana-data
 ```

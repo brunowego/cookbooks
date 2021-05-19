@@ -22,7 +22,7 @@ grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*
 sudo apt -y install [package]
 
 # Non interactive
-DEBIAN_FRONTEND=noninteractive sudo apt -y install [package]
+sudo DEBIAN_FRONTEND=noninteractive apt -y install [package]
 
 # Upgrade
 sudo apt -y upgrade

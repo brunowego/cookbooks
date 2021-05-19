@@ -7,6 +7,10 @@ https://github.com/ministryofjustice/matomo-scrape
 https://github.com/BytemarkHosting/configs-matomo-docker
 -->
 
+## Alternatives
+
+- [umami](https://github.com/mikecao/umami)
+
 ## References
 
 - [Builds](https://builds.matomo.org/)

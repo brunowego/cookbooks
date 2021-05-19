@@ -1,5 +1,9 @@
 # REST Client
 
+<!--
+https://github.com/gabrielaigner/audally/blob/main/backend-api/rest-requests/requests.http
+-->
+
 ## Syntax
 
 ```sh
