@@ -15,11 +15,12 @@ https://www.bb.com.br/pbb/pagina-inicial/solucoes-digitais/open-banking-no-bb#/
 https://www.itau.com.br/open-banking/
 https://blog.nubank.com.br/o-que-e-open-banking/
 https://docs.openbank.stone.com.br/
+https://dashboard.openbankingbrasil.org.br/
 -->
 
 ## References
 
-- [Open Banking Tracker](https://www.openbankingtracker.com/)
+- [Open Banking Tracker](https://openbankingtracker.com/)
 - [Stone Open Banking](https://docs.openbank.stone.com.br/)
 
 ## Directives

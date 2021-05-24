@@ -1,4 +1,4 @@
-# Jaeger
+# CNCF Jaeger
 
 **Keywords:** OpenTracing
 
@@ -165,23 +165,35 @@ sudo systemctl enable --now jaeger-query
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h jaeger-all-in-one \
+  -v jaeger-all-in-one-tmp:/tmp \
   -e COLLECTOR_ZIPKIN_HTTP_PORT=9411 \
   -p 5775:5775/udp \
-  -p 5778:5778 \
+  -p 5778:5778/tcp \
   -p 6831:6831/udp \
   -p 6832:6832/udp \
   -p 9411:9411 \
-  -p 14268:14268 \
-  -p 16686:16686 \
+  -p 14250:14250/tcp \
+  -p 14268:14268/tcp \
+  -p 16686:16686/tcp \
   --name jaeger-all-in-one \
-  docker.io/jaegertracing/all-in-one:1.14.0
+  --network workbench \
+  docker.io/jaegertracing/all-in-one:1.22.0
 ```
+
+> Wait! This process take a while.
 
 ```sh
 xdg-open "http://127.0.0.1:16686" || open "http://127.0.0.1:16686" || echo -e "[INFO]\thttp://127.0.0.1:16686"
@@ -191,4 +203,6 @@ xdg-open "http://127.0.0.1:16686" || open "http://127.0.0.1:16686" || echo -e "[
 
 ```sh
 docker rm -f jaeger-all-in-one
+
+docker volume rm jaeger-all-in-one-tmp
 ```

@@ -1,6 +1,7 @@
 # Azure
 
 <!--
+https://app.pluralsight.com/library/courses/azure-container-service-big-picture/table-of-contents
 https://www.linkedin.com/learning/paths/become-an-azure-developer
 https://www.linkedin.com/learning/paths/become-an-azure-administrator
 https://www.linkedin.com/learning/paths/prepare-for-microsoft-azure-administrator-certification-az-103

@@ -1,6 +1,9 @@
 # Python
 
 <!--
+https://www.linkedin.com/learning/8-things-you-must-know-in-python/eight-things-to-know-in-python
+https://www.linkedin.com/learning/python-automation-and-testing/welcome
+https://www.linkedin.com/learning/python-data-structures-sets-and-frozen-sets/why-use-sets-and-frozen-sets
 https://www.linkedin.com/learning/nail-your-python-interview/the-secret-to-nailing-a-python-interview
 
 https://www.linkedin.com/learning/paths/become-a-python-developer
@@ -35,6 +38,11 @@ https://www.linkedin.com/learning/python-automation-and-testing/welcome
 - [strftime](https://strftime.org/)
 - [The Python Standard Library](https://docs.python.org/3/library/)
 - [Numbers in Python](https://realpython.com/python-numbers/)
+
+## Testing
+
+- pytest
+- unittest
 
 ## Tools
 

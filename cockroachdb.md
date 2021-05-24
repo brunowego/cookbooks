@@ -1,5 +1,13 @@
 # CockroachDB
 
+<!--
+https://app.pluralsight.com/library/courses/big-data-ldn-session-79/table-of-contents
+-->
+
+## Guides
+
+- [Cockroach University](https://university.cockroachlabs.com/categories)
+
 ## Helm
 
 ### Install
@@ -65,5 +73,6 @@ brew install cockroach
 #### Linux
 
 ```sh
-curl https://binaries.cockroachdb.com/cockroach-v2.1.6.linux-amd64.tgz | sudo tar -xzC /usr/local/bin --strip-components 1
+curl https://binaries.cockroachdb.com/cockroach-v2.1.6.linux-amd64.tgz | \
+  sudo tar -xzC /usr/local/bin --strip-components 1
 ```

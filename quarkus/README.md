@@ -1,6 +1,8 @@
 # Quarkus (Quark.Us)
 
 <!--
+https://github.com/brenomsf/api-contact/tree/master/src/main/java/br/com/fiap/contact
+https://github.com/mandrenx/quarkus-agon/tree/master/src/main/java/io/oneo/agon/modules/telefone
 https://github.com/JuMp3/demo-quarkus
 https://github.com/quarkus-qe/beefy-scenarios
 https://github.com/gabrielaigner/audally
@@ -74,7 +76,6 @@ https://www.udemy.com/course/quarkus-get-started/
 - [Building applications with Maven](https://quarkus.io/guides/maven-tooling.html)
 - [Creating Your First Application](https://quarkus.io/guides/getting-started)
 - [Datasources](https://quarkus.io/guides/datasource)
-- [Simplified Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache)
 - [Using Flyway](https://quarkus.io/guides/flyway)
 - [Using Hibernate ORM and JPA](https://quarkus.io/guides/hibernate-orm)
 - [Using Security with JPA](https://quarkus.io/guides/security-jpa)

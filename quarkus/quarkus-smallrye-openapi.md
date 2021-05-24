@@ -1,9 +1,5 @@
 # Quarkus SmallRye OpenAPI
 
-## Links
-
-- http://localhost:8080/q/swagger-ui/
-
 ##
 
 ```sh
@@ -22,7 +18,9 @@ mp.openapi.extensions.smallrye.info.title = Example API
 %test.mp.openapi.extensions.smallrye.info.title = Example API (test)
 mp.openapi.extensions.smallrye.info.version = 0.0.1
 mp.openapi.extensions.smallrye.info.description = My description
+```
 
+```ini
 quarkus.swagger-ui.always-include = true
 ```
 

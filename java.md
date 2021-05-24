@@ -1,6 +1,7 @@
 # Java
 
 <!--
+https://www.linkedin.com/learning/advanced-java-programming-2/learn-advanced-java-programming
 https://www.linkedin.com/learning/paths/become-a-java-programmer
 
 https://github.com/diegocsilva/visitsroutes
@@ -51,14 +52,31 @@ Enterprise Information Systems Tier
 - Data Access Object (DAO)
 - Plain old Java object (POJO)
 
-## Pattern
+## Testing
 
+- JUnit
+- CppUnit
+- TestNG
+
+## Guides
+
+- [DAO vs Repository Patterns](https://www.baeldung.com/java-dao-vs-repository)
+
+<!-- ## Pattern
+
+- Resource -> Repository -> Domain/Entity
 - Resource -> Service -> Repository -> Domain/Entity
-- Resource -> Service -> Mapper (MapStruct) -> DTO -> Domain/Entity
+- Resource -> Service -> Mapper (MapStruct) -> DTO -> Domain/Entity -->
 
 ## Exams
 
 - [Java SE 11 Developer - Exam Number: 1Z0-819](https://education.oracle.com/x/pexam_1Z0-819)
+
+## Utils
+
+- [jsonschema2pojo](https://www.jsonschema2pojo.org/)
+- [JSON2CSharp - Convert JSON to POJO Object](https://json2csharp.com/json-to-pojo)
+- [Code Beautify - JSON to JAVA Converter](https://codebeautify.org/json-to-java-converter)
 
 ## Glossary
 
@@ -125,6 +143,12 @@ javac -version 2>&1
 ```
 
 ### Tips
+
+<!-- #### Assertor
+
+```sh
+java -ea Assertor
+``` -->
 
 #### Visual Studio Code
 

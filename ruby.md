@@ -43,6 +43,10 @@ https://app.pluralsight.com/library/courses/reading-writing-data-ruby/table-of-c
 
 - [Web Content Scrapers](https://www.ruby-toolbox.com/categories/Web_Content_Scrapers)
 
+## Testing
+
+- Runit
+
 ## Docker
 
 ### Running

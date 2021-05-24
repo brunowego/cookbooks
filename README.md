@@ -81,6 +81,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Software as a service (SaaS)](https://en.wikipedia.org/wiki/Software_as_a_service)
 - Software Development Kit (SDK)
 - Stock Keeping Unit (SKU)
+- Obsessive-Compulsive Disorder (OCD)
 - Personal Identification Number (PIN)
 - [Top-Level Domain (TLD)](https://en.wikipedia.org/wiki/Top-level_domain)
 - [Uniform Resource Identifier (URI)](https://en.wikipedia.org/wiki/Uniform_resource_identifier)

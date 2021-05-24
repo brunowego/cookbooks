@@ -3,12 +3,31 @@
 <!--
 https://www.youtube.com/watch?v=Geq60OVyBPg
 
+https://app.pluralsight.com/paths/skills/unit-testing-in-java
+https://app.pluralsight.com/library/courses/test-automation-java-fundamentals/
+https://app.pluralsight.com/library/courses/junit-5-fundamentals/table-of-contents
+
 https://app.pluralsight.com/paths/skill/unit-testing-in-java
+https://app.pluralsight.com/library/courses/migrating-junit4-junit5-testing-platform/table-of-contents
+
+https://www.linkedin.com/learning/spring-test-driven-development-with-junit/welcome
 -->
+
+## Alternatives
+
+- [TestNG](/testng.md)
+
+## History
+
+- JUnit 3 for Java 5+
+- JUnit 4 for Java 8+
+- JUnit 5 for Java 8+
 
 ## References
 
 - [Dependency Information](https://junit.org/junit4/dependency-info.html)
+- xUnit Framework
+- SUnit for Smalltalk
 
 ## Java ARchive
 

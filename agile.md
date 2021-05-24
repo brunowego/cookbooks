@@ -1,6 +1,8 @@
 # Agile Software Development (sometimes written Agile)
 
 <!--
+stakeholders
+
 https://www.linkedin.com/learning/paths/master-agile-software-development
 https://www.linkedin.com/learning/paths/become-an-agile-software-developer
 https://www.linkedin.com/learning/paths/become-an-agile-project-manager

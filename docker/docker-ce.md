@@ -202,10 +202,20 @@ docker --help
 
 ### Tips
 
-#### Running Images
+#### Process Format
 
 ```sh
+#
 docker ps --format '{{.Image}}'
+
+#
+docker ps --format '{{.Names}}'
+
+#
+docker ps --format "table {{ .ID }}\t{{.Names}}\t{{.Status}}"
+
+#
+docker ps | less -S
 ```
 
 <!-- ####

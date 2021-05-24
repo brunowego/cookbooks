@@ -1,7 +1,9 @@
 # Environment
 
-## Environment
+## Environments
 
+- Development
+- Testing
 - Integration
 - Staging
 - Production

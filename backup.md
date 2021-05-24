@@ -4,6 +4,7 @@
 
 - Desktop
 - Downloads
+- Check User's folder
 
 ## Software Content
 

@@ -1,6 +1,7 @@
 # Elasticsearch
 
 <!--
+https://app.pluralsight.com/library/courses/executing-complex-queries-elasticsearch/table-of-contents
 https://www.linkedin.com/learning/learning-the-elastic-stack-2/start-listening-to-your-infrastructure
 -->
 

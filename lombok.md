@@ -2,17 +2,25 @@
 
 ## Library
 
-### Project Object Model (POM)
+### Apache Maven
+
+#### Project Object Model (POM)
 
 ```xml
-<org.projectlombok.lombok.version>1.18.20</org.projectlombok.lombok.version>
+<properties>
+  <!-- ... -->
+  <org.projectlombok.lombok.version>1.18.20</org.projectlombok.lombok.version>
+</properties>
 
-<dependency>
-  <groupId>org.projectlombok</groupId>
-  <artifactId>lombok</artifactId>
-  <version>${org.projectlombok.lombok.version}</version>
-  <scope>provided</scope>
-</dependency>
+<dependencies>
+  <!-- ... -->
+  <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>${org.projectlombok.lombok.version}</version>
+    <scope>provided</scope>
+  </dependency>
+</dependencies>
 ```
 
 ## Tips

@@ -1,5 +1,9 @@
 # Apache NiFi
 
+<!--
+https://app.pluralsight.com/library/courses/building-deploying-monitoring-apache-nifi-dataflow/table-of-contents
+-->
+
 ## References
 
 - [NiFiKop](/nifikop.md)

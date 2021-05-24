@@ -1,6 +1,8 @@
 # DevOps
 
 <!--
+https://www.google.com/search?client=firefox-b-d&q=PCI+vs+SOX
+
 https://www.linkedin.com/learning/paths/improve-your-continuous-delivery-skills
 https://www.linkedin.com/learning/paths/applying-lean-devops-and-agile-to-your-it-organization
 
@@ -26,6 +28,9 @@ https://www.linkedin.com/learning/devops-foundations-continuous-delivery-continu
 ## Terms
 
 - System Development Life Cycle (SDLC)
+- Payment Card Industry Data Security Standard (PCI DSS)
+- Sarbanes Oxley (SOX)
+- Health Insurance Portability and Accountability Act (HIPAA)
 
 ## Topics
 

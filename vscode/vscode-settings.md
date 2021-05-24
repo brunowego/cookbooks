@@ -48,17 +48,17 @@ jq '."editor.wordWrap" |= "on"' "$HOME/.config/Code/User/settings.json" | sponge
 jq '."editor.rulers" |= [100, 120]' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
-## Trim Trailing Whitespace
+<!-- ## Trim Trailing Whitespace
 
 ```sh
-jq '."files.trimTrailingWhitespace" |= true' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."files.trimTrailingWhitespace" |= true' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json" -->
 ```
 
-## Trim Final Newlines
+<!-- ## Trim Final Newlines
 
 ```sh
 jq '."files.trimFinalNewlines" |= true' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
-```
+``` -->
 
 ## Exclude
 

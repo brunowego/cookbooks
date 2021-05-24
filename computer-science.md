@@ -3,3 +3,7 @@
 ## References
 
 - [CS50](https://cs50.harvard.edu/)
+
+## Terms
+
+- Marshalling

@@ -34,6 +34,55 @@ https://www.youtube.com/watch?v=_1xa8Bsho6A
 - WADL
 - [REST Client](/rest-client.md)
 
+## Demo REST APIs
+
+- [GitHub API](https://api.github.com/)
+- [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
+- [Reqres](https://reqres.in/)
+
+## Comparing Web API vs REST API
+
+- Web API
+  - A more general term
+  - An API that understands HTTP
+- REST API
+  - A Web API
+  - Designed according to RESTful principles
+
+## Safe or Not
+
+| HTTP method | Request has body | Safe |
+| --- | --- | --- |
+| GET | No | Yes |
+| POST | Yes | No |
+| PUT | Yes | No |
+| DELETE | Yes | No |
+
+### Simple and Safe Methods
+
+- GET
+  - Retrieve data only
+  - No side-effects
+- HEAD
+  - Get headers only, no body
+- OPTIONS
+  - List of supported HTTP methods
+
+### Destructive Methods
+
+- POST
+  - Create from the Request's body
+- PUT
+  - Create or overwrite an existing resource
+- PATCH
+  - Apply partial modifications
+- DELETE
+
+### Honorable Mention
+
+- TRACE
+- CONNECT
+
 ## Markdown
 
 ```http
@@ -43,3 +92,16 @@ GET http://github.com
 ```rest
 GET http://github.com
 ```
+
+## Anatomy
+
+### Headers
+
+- Cookies
+- Pagination
+- Proxies
+- Connection types
+
+### Body
+
+- Data

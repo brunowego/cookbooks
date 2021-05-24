@@ -1,5 +1,9 @@
 # Quarkus Hibernate ORM Panache
 
+## Guides
+
+- [Quarkus - Simplified Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache)
+
 ## Alternative
 
 - Spring Data

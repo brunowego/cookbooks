@@ -11,6 +11,11 @@ https://app.pluralsight.com/library/courses/allthetalks-session-66/table-of-cont
 - [Maven Version Manager](/mvnvm.md)
 - Alternative for [Apache Ant](/apache_ant.md)
 
+## Repositories
+
+- [Maven Repository](https://mvnrepository.com/)
+- [Maven Central Repository Search](https://search.maven.org/)
+
 ## Plugins
 
 - [Apache Maven Site Plugin](https://maven.apache.org/plugins/maven-site-plugin/)
@@ -146,12 +151,12 @@ PROJECT_VERSION=0.0.1-SNAPSHOT; \
 2. Remove `groupId` and `version`
 
 ```xml
-<artifactId>[module-name]</artifactId>
 <parent>
   <groupId>org.acme.app</groupId>
   <artifactId>[parent-name]</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 </parent>
+<artifactId>[module-name]</artifactId>
 ```
 
 3. Run `mvn clean package -DskipTests` -->

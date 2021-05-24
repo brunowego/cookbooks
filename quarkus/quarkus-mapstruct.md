@@ -7,30 +7,40 @@
 ##
 
 ```xml
-<org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
+<properties>
+  <!-- ... -->
+  <org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
+</properties>
 
-<dependency>
-  <groupId>org.mapstruct</groupId>
-  <artifactId>mapstruct</artifactId>
-  <version>${org.mapstruct.version}</version>
-  <scope>provided</scope>
-</dependency>
-<dependency>
-  <groupId>org.mapstruct</groupId>
-  <artifactId>mapstruct-processor</artifactId>
-  <version>${org.mapstruct.version}</version>
-  <scope>provided</scope>
-</dependency>
+<dependencies>
+  <!-- ... -->
+  <dependency>
+    <groupId>org.mapstruct</groupId>
+    <artifactId>mapstruct</artifactId>
+    <version>${org.mapstruct.version}</version>
+    <scope>provided</scope>
+  </dependency>
+  <dependency>
+    <groupId>org.mapstruct</groupId>
+    <artifactId>mapstruct-processor</artifactId>
+    <version>${org.mapstruct.version}</version>
+    <scope>provided</scope>
+  </dependency>
+</dependencies>
 ```
 
 ```xml
+<compiler-plugin.version>3.8.1</compiler-plugin.version>
+<maven.compiler.source>11</maven.compiler.source>
+<maven.compiler.target>11</maven.compiler.target>
+
 <plugin>
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-compiler-plugin</artifactId>
-  <version>3.5.1</version>
+  <version>${compiler-plugin.version}</version>
   <configuration>
-    <source>1.8</source>
-    <target>1.8</target>
+    <source>${maven.compiler.source}</source>
+    <target>${maven.compiler.target}</target>
     <annotationProcessorPaths>
       <path>
         <groupId>org.mapstruct</groupId>

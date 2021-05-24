@@ -31,7 +31,7 @@ quarkus.hibernate-orm.database.default-schema = example
 %prod.quarkus.hibernate-orm.sql-load-script = no-file
 ```
 
-## [Context Path Configuring](https://quarkus.io/guides/http-reference#configuring-the-context-path)
+## [Context Path Configuration](https://quarkus.io/guides/http-reference#configuring-the-context-path)
 
 ```ini
 quarkus.http.root-path = /api

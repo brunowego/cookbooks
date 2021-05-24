@@ -45,6 +45,17 @@ rm -fR ~/.mozilla/firefox ~/.cache/mozilla/firefox
 sudo rm -fR /etc/firefox /usr/lib/firefox /usr/lib/firefox-addons
 ```
 
+### Issues
+
+#### CORS
+
+```log
+CORS Missing Allow Origin
+NS_ERROR_DOM_BAD_URI
+```
+
+Enable "CORS Everywhere" plugin.
+
 ## CLI
 
 ### Configuration

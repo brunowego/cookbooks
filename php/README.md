@@ -12,6 +12,15 @@ https://front-line-php.com/
 
 - [PHP Benchmarks](https://kinsta.com/blog/php-benchmarks)
 - [PHP Developer roadmap](https://github.com/thecodeholic/php-developer-roadmap)
+- [The Repository Pattern](https://shawnmc.cool/2015-01-08_the-repository-pattern)
+
+## Terms
+
+- Plain Old PHP Objects (POPO)
+
+## Testing
+
+- PHPUnit
 
 ## CLI
 

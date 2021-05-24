@@ -8,6 +8,10 @@ https://app.pluralsight.com/library/courses/postman-fundamentals/table-of-conten
 https://www.linkedin.com/learning/postman-essential-training/why-automate-your-api-tests
 -->
 
+## Alternatives
+
+- [SoapUI](/soapui.md)
+
 ## Guides
 
 - [Dynamic variables](https://learning.postman.com/docs/writing-scripts/script-references/variables-list/)

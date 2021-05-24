@@ -1,12 +1,10 @@
 # LinkedIn
 
-## References
+## Links
 
 - [Following](https://linkedin.com/feed/following/)
 - [Social Selling Index (SSI)](https://linkedin.com/sales/ssi)
 - [Invitation Sent](https://linkedin.com/mynetwork/invitation-manager/sent/)
-- [LinkedIn Learning](https://www.linkedin.com/learning/)
-- [LinkedIn Learning - Technology Newest](https://www.linkedin.com/learning/topics/technology?sortBy=RECENCY)
 
 ## Tips
 
