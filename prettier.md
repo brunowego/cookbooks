@@ -27,3 +27,7 @@ prettier -h
 ```sh
 code --install-extension esbenp.prettier-vscode
 ```
+
+<!--
+"format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+-->

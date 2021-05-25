@@ -293,6 +293,9 @@ mvn compile quarkus:dev -Dquarkus-profile=dev
 # Testing
 mvn compile quarkus:dev -Dquarkus-profile=test
 
+# Stating (Not exists)
+mvn compile quarkus:dev -Dquarkus-profile=stage
+
 # Production
 mvn compile quarkus:dev -Dquarkus-profile=prod
 ```
@@ -303,20 +306,18 @@ mvn compile quarkus:dev -Dquarkus-profile=prod
 code ./src/main/resources/application.properties
 ```
 
-**Environments:** `%dev`, `%test` and `%prod`.
+**Build:** `%dev`, `%test` and `%prod`.
 
 ```ini
+#
 %dev.quarkus.log.level=DEBUG
 
-quarkus.log.category."org.apache.kafka.common.utils".level=DEBUG
-quarkus.log.category."org.apache.kafka.common.utils".level=WARN
-quarkus.log.category."org.apache.kafka.clients.admin".level=ERROR
+#
+%test.quarkus.log.level=DEBUG
 
-%dev.quarkus.http.port=8080
-quarkus.http.port=8080
-
-quarkus.banner.enabled=false
-quarkus.http.cors=true
+#
+%prod.quarkus.log.level=DEBUG
+quarkus.log.level=DEBUG
 ```
 
 ### Misc

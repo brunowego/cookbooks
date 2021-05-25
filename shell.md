@@ -4,6 +4,12 @@
 https://app.pluralsight.com/paths/skill/shell-scripting-with-bash-and-z-shell
 https://app.pluralsight.com/paths/skill/using-bash-and-z-shell
 
+https://app.pluralsight.com/search/?q=shell&type=path&m_sort=relevance&query_id=e86aebdb-f614-4dd8-9a28-066de6b9b012&source=user_typed
+
+https://www.linkedin.com/learning/search?entityType=COURSE&keywords=shell
+
+https://www.linkedin.com/learning/paths/become-a-linux-system-administrator
+
 https://www.javatpoint.com/shell-script-parameters
 -->
 

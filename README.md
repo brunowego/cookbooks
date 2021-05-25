@@ -23,6 +23,9 @@ Bucket of cookbooks to help install and set softwares.
 
 ## Terms
 
+- Request for Proposal (RfP)
+- Request for Information (RfI)
+- Request for Quotation (RfQ)
 - Away From Keyboard (AFK)
 - As far as I know (AFAIK)
 - Thank God it's Friday (TGIF)

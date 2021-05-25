@@ -5,7 +5,7 @@
 ### References
 
 - [Configuration](https://github.com/helm/charts/tree/master/stable/prometheus-adapter#configuration)
-- [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
+- [Horizontal Pod Autoscaler (HPA)](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 
 ### Dependencies
 

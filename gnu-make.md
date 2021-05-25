@@ -49,6 +49,18 @@ indent_style = tab
 EOF
 ```
 
+<!-- ####
+
+```sh
+#
+cat << EOF > ./Makefile
+SHELL := /bin/sh
+
+-include ./.env
+-include ./mk.d/compose.mk
+EOF
+``` -->
+
 ### Issues
 
 <!-- #### Missing GNU Readline Library

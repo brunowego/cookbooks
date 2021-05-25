@@ -21,6 +21,10 @@ Version 1.21.0
 - [Release Notes](https://kubernetes.io/docs/setup/release/notes/)
 - [Wiki](https://en.wikipedia.org/wiki/Kubernetes)
 
+##
+
+- Horizontal Pod Autoscaler (HPA)
+
 ### Tips
 
 #### Visual Studio Code

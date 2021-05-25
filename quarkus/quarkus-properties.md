@@ -6,6 +6,23 @@
 quarkus.banner.enabled = false
 ```
 
+<!-- ##
+
+```ini
+%dev.quarkus.http.port=8080
+quarkus.http.port=8080
+
+quarkus.http.cors=true
+``` -->
+
+<!-- ##
+
+```ini
+quarkus.log.category."org.apache.kafka.common.utils".level=DEBUG
+quarkus.log.category."org.apache.kafka.common.utils".level=WARN
+quarkus.log.category."org.apache.kafka.clients.admin".level=ERROR
+``` -->
+
 ## Datasource Configuration
 
 ```ini

@@ -1,6 +1,11 @@
 # Amazon Web Services (AWS)
 
 <!--
+https://www.youtube.com/watch?v=xCc9xk8LPTo
+https://www.youtube.com/watch?v=YKT9bWvy_PI
+
+ACKQueue
+
 https://www.linkedin.com/learning/paths/prepare-for-the-aws-certified-cloud-practitioner-exam
 https://www.linkedin.com/learning/paths/become-an-aws-data-and-devops-specialist
 https://www.linkedin.com/learning/paths/prepare-for-aws-devops-engineer-professional-certification

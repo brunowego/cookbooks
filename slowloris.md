@@ -36,6 +36,32 @@
   - T1498: Network Denial of Service
   - T1499: Endpoint Denial of Service
 
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h slowloris \
+  --name slowloris \
+  --network workbench \
+  docker.io/aminvakil/slowloris:latest [ip-address] -s 900
+```
+
+### Remove
+
+```sh
+docker rm -f slowloris
+```
+
 ## CLI
 
 ### Installation

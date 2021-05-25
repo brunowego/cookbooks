@@ -14,10 +14,16 @@ quarkus.swagger-ui.enable = true
 
 ```ini
 mp.openapi.extensions.smallrye.info.title = Example API
-%dev.mp.openapi.extensions.smallrye.info.title = Example API (development)
-%test.mp.openapi.extensions.smallrye.info.title = Example API (test)
 mp.openapi.extensions.smallrye.info.version = 0.0.1
 mp.openapi.extensions.smallrye.info.description = My description
+```
+
+```sh
+#
+export MP_OPENAPI_EXTENSIONS_SMALLRYE_INFO_TITLE='Example API (development)'
+
+#
+export MP_OPENAPI_EXTENSIONS_SMALLRYE_INFO_TITLE='Example API (test)'
 ```
 
 ```ini
