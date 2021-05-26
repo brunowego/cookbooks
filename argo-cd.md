@@ -1,5 +1,9 @@
 # Argo CD
 
+## Alternatives
+
+- [Flux CD](/fluxcd.md)
+
 ## Helm
 
 ### References

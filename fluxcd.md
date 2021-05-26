@@ -1,7 +1,12 @@
 # Flux CD
 
+<!--
 https://github.com/stefanprodan/gitops-istio
 https://github.com/ruzickap/k8s-flagger-istio-flux
+https://github.com/datalayer-examples/flux-crossplane-example
+https://github.com/datalayer-examples/flux2-kustomize-helm-example
+https://github.com/datalayer-examples/flux2-multi-tenancy-example
+-->
 
 ## Dependencies
 

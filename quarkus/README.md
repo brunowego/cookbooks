@@ -329,6 +329,14 @@ mvn clean -DskipTests package -Pnative
 
 ## Tips
 
+### Running Jar
+
+```sh
+java \
+  -Dquarkus.log.level=DEBUG \
+  -jar ./target/quarkus-app/quarkus-run.jar
+```
+
 ### Debug Port
 
 ```sh

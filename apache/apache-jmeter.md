@@ -6,11 +6,12 @@ https://github.com/SantimosoTFM/tfm-loadtesting/tree/master/jmeter
 
 ## Alternatives
 
-- Loadmill
 - [Artillery](/artillery.md)
+- [bombardier](/bombardier.md)
 - [Gatling](/gatling.md)
-- [Locust](/locust.md)
 - [K6](/k6.md)
+- [Locust](/locust.md)
+- Loadmill
 
 ## CLI
 

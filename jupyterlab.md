@@ -1,5 +1,10 @@
 # JupyterLab
 
+<!--
+https://github.com/datalayer-examples/jupyterlab-extension-examples
+https://github.com/datalayer-examples/jupyterlab-ide-example
+-->
+
 ## Docker
 
 ### Running

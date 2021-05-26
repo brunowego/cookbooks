@@ -64,13 +64,19 @@ kubectl delete namespace fission --grace-period=0 --force
 #### Darwin
 
 ```sh
-curl -L 'https://github.com/fission/fission/releases/download/1.5.0/fission-cli-osx' -o /usr/local/bin/fission && chmod +x /usr/local/bin/fission
+curl \
+  -L 'https://github.com/fission/fission/releases/download/1.5.0/fission-cli-osx' \
+  -o /usr/local/bin/fission && \
+    chmod +x /usr/local/bin/fission
 ```
 
 #### Linux
 
 ```sh
-curl -L 'https://github.com/fission/fission/releases/download/1.5.0/fission-cli-linux' -o /usr/local/bin/fission && chmod +x /usr/local/bin/fission
+curl \
+  -L 'https://github.com/fission/fission/releases/download/1.5.0/fission-cli-linux' \
+  -o /usr/local/bin/fission && \
+    chmod +x /usr/local/bin/fission
 ```
 
 ### Commands

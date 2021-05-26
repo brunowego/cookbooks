@@ -2,6 +2,7 @@
 
 <!--
 https://code.visualstudio.com/docs/remote/ssh
+https://github.com/datalayer-examples/vscode-extension-examples
 -->
 
 ## Guide

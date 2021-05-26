@@ -1,18 +1,28 @@
 # Kubernetes IN Docker (kind)
 
-## Installation
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install kind
+```
+
+#### go get
 
 ```sh
 GO111MODULE='on' go get sigs.k8s.io/kind@v0.4.0
 ```
 
-## Commands
+### Commands
 
 ```sh
 kind -h
 ```
 
-### Create Cluster
+### Bootstrap
 
 ```sh
 tee ~/.kind-config.yaml << EOF
@@ -41,9 +51,9 @@ export KUBECONFIG="$(kind get kubeconfig-path --name='kind')"
 kubectl cluster-info
 ```
 
-### Delete
-
 ```sh
+# Delete
 kind delete cluster
+
 unset KUBECONFIG
 ```
