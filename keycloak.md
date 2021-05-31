@@ -6,7 +6,15 @@ https://github.com/gyrospectre/traefikrp
 https://github.com/ibuetler/docker-keycloak-traefik-workshop
 https://gist.github.com/kurt---/7f5415d268f815067252d582044bc99d
 https://github.com/jcperezamin/jcperezamin.github.io/tree/master/16_SSO_with_Keycloak
+
+https://github.com/keycloak/keycloak-operator
+
+https://codergists.com/redhat/keycloak/security/authentication/2020/01/07/getting-started-with-keycloak-on-rhel8.html
 -->
+
+## Guides
+
+- [Getting Started Guide](https://www.keycloak.org/docs/latest/getting_started/)
 
 ## Helm
 

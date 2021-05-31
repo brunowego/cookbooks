@@ -2,6 +2,11 @@
 
 <!--
 https://github.com/SantimosoTFM/tfm-loadtesting/tree/master/jmeter
+
+https://www.blazemeter.com/jmeter-load-testing/
+
+https://www.linkedin.com/learning/jmeter-performance-and-load-testing/testing-with-jmeter
+https://www.linkedin.com/learning/advanced-jmeter/getting-more-out-of-jmeter
 -->
 
 ## Alternatives

@@ -1,6 +1,8 @@
 # Flux CD
 
 <!--
+https://github.com/paulcarlton-ww/weaveworks-cx-task
+
 https://github.com/stefanprodan/gitops-istio
 https://github.com/ruzickap/k8s-flagger-istio-flux
 https://github.com/datalayer-examples/flux-crossplane-example
@@ -108,4 +110,29 @@ kubectl logs deployment/flux -n flux -f
 helm uninstall flux -n flux
 kubectl delete namespace flux --grace-period=0 --force
 kubectl delete -f https://raw.githubusercontent.com/fluxcd/flux/helm-0.10.1/deploy-helm/flux-helm-release-crd.yaml
+```
+
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install fluxcd/tap/flux
+```
+
+### Usage
+
+```sh
+#
+flux check --pre
+
+#
+flux bootstrap github \
+  --kubeconfig=${kubeconfig_path} \
+  --owner=${GITHUB_ORG} \
+  --repository=${GITHUB_REPO} \
+  --branch=main \
+  --path=${path}
 ```

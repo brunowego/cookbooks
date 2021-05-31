@@ -2,7 +2,7 @@
 
 ## References
 
-- [Apache NiFi](/apache_nifi.md)
+- [Apache NiFi](/apache/apache-nifi.md)
 
 ## Helm
 

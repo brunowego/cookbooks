@@ -144,6 +144,13 @@ go list '...'
 
 ### Tips
 
+#### Go Debug
+
+```sh
+GODEBUG=http2debug=2 \
+  # ...
+```
+
 #### Arch
 
 <!-- GOOS windows

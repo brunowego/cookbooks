@@ -1,6 +1,6 @@
 # DB Browser for SQLite
 
-## APP
+## App
 
 ### Installation
 

@@ -1,5 +1,9 @@
 # Four Golden Signal
 
+## References
+
+- [The Twelve-Factor App](/12factor.md)
+
 ## Signals
 
 1. Latency

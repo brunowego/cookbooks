@@ -1,3 +1,7 @@
 # freenode
 
+<!--
+libera.chat
+-->
+
 TODO

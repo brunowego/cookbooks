@@ -1,5 +1,9 @@
 # Argo CD
 
+## Guides
+
+- [Status Badge](https://argoproj.github.io/argo-cd/user-guide/status-badge/)
+
 ## Alternatives
 
 - [Flux CD](/fluxcd.md)

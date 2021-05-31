@@ -10,6 +10,15 @@ https://app.pluralsight.com/guides/introduction-to-testing-with-bdd-and-the-spoc
 https://www.linkedin.com/learning/learning-groovy/supercharge-your-java-program-with-groovy
 -->
 
+## Links
+
+- [Main Website](https://groovy-lang.org/)
+- [Code Repository](https://github.com/apache/groovy)
+
+## Tools
+
+- [SDKMAN!](/sdkman.md)
+
 ## Testing
 
 - Spock
@@ -22,6 +31,19 @@ https://www.linkedin.com/learning/learning-groovy/supercharge-your-java-program-
 
 ```sh
 brew install groovy
+```
+
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install groovy
+```
+
+#### Chocolatey
+
+```sh
+choco install groovy
 ```
 
 ### Environment
@@ -43,9 +65,19 @@ sudo su - "$USER"
 groovy -h
 ```
 
+<!-- ```sh
+groovyConsole
+groovyc
+groovydoc
+groovysh
+``` -->
+
 ### Usage
 
 ```sh
 # Version
-groovy -v 2>&1 | tail -1
+groovy -v
+
+# Running
+groovy [filename].groovy
 ```

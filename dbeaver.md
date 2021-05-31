@@ -66,6 +66,13 @@ Or:
 
 ### Tips
 
+#### SQL Formatting: Upper Case
+
+1. Preferences...
+2. General -> Editors -> SQL Editor -> SQL Formatting
+   - Settings Session
+     - Keyword case: Upper
+
 #### Export DDL
 
 1. Right click on selected table

@@ -102,6 +102,11 @@ minikube start \
   -p minikube \
   --image-repository 'registry.cn-hangzhou.aliyuncs.com/google_containers' \
   --insecure-registry 'registry.cn-hangzhou.aliyuncs.com'
+
+#
+minikube start \
+  $(echo "$MINIKUBE_START_OPTS") \
+  --feature-gates=TTLAfterFinished=true
 ```
 
 ```sh

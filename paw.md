@@ -1,6 +1,6 @@
 # Paw
 
-## APP
+## App
 
 ### Installation
 

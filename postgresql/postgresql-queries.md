@@ -57,8 +57,14 @@ postgres \
   -N 1000
 
 #
-sed -i "/^max_connections/s/100/1000/" /var/lib/postgresql/data/postgresql.conf
-sed -i "/^shared_buffers/s/128MB/3GB/" /var/lib/postgresql/data/postgresql.conf
+sed -i '/^max_connections/s/100/1000/' /var/lib/postgresql/data/postgresql.conf
+sed -i '/^shared_buffers/s/128MB/3GB/' /var/lib/postgresql/data/postgresql.conf
+
+#
+docker exec -i postgresql /bin/sh << \EOSHELL
+sed -i '/^max_connections/s/100/1000/' /var/lib/postgresql/data/postgresql.conf
+sed -i '/^shared_buffers/s/128MB/3GB/' /var/lib/postgresql/data/postgresql.conf
+EOSHELL
 ```
 
 ### Show Stat Activity

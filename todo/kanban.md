@@ -1,6 +1,12 @@
 # Kanban
 
-TODO
+<!--
+https://www.linkedin.com/learning/stay-lean-with-kanban/
+-->
+
+## Blogs
+
+- [Everyday Kanban - Discussing Management, Teams, Agile, Lean, Kanban & more](http://everydaykanban.com/)
 
 <!-- ##
 

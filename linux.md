@@ -2,6 +2,15 @@
 
 <!--
 https://app.pluralsight.com/library/courses/linux-system-optimization/table-of-contents
+
+https://www.youtube.com/watch?v=xxWaa-lPR-8
+https://www.youtube.com/watch?v=i17b3xJv3Uo
+http://www.cs.columbia.edu/~krj/os/lectures/L17-LinuxPaging.pdf
+https://lwn.net/Articles/631631/
+https://eli.thegreenplace.net/2011/08/25/load-time-relocation-of-shared-libraries/
+https://blog.packagecloud.io/eng/2016/04/05/the-definitive-guide-to-linux-system-calls/
+https://github.com/0xAX/linux-insides/tree/master/SysCall
+https://kernel.dk/systor13-final18.pdf
 -->
 
 ## References

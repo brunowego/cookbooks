@@ -21,7 +21,7 @@ docker network create workbench \
 
 ### Dependencies
 
-- [Apache Kafka](/apache_kafka.md#docker)
+- [Apache Kafka](/apache/apache-kafka.md#docker)
 
 ### Running
 

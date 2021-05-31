@@ -9,6 +9,10 @@ https://app.pluralsight.com/library/courses/kubernetes-package-administration-he
 https://medium.com/@saraswatpuneet/blue-green-deployments-using-helm-charts-93ec479c0282
 -->
 
+## Alternatives
+
+- [Kustomize](/kustomize.md)
+
 ## References
 
 - [Artifact HUB](https://artifacthub.io/)

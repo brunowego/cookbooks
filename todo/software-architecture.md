@@ -10,7 +10,7 @@ https://www.linkedin.com/learning/software-architecture-patterns-for-developers/
 
 ## References
 
-- [Feature Toggles (a.k.a. Feature Flags)](https://martinfowler.com/articles/feature-toggles.html)
+- [Feature Toggles (a.k.a. Feature Flags)](/feature-toggles.md)
 
 ## Terms
 

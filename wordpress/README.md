@@ -290,7 +290,7 @@ docker volume rm wordpress-mysql-data wordpress-data wordpress-nginx-conf
 - Database
   - [MySQL](/mysql.md#docker)
 - HTTP Server
-  - [Apache HTTP Server (HTTPd)](/apache_httpd.md#php-fpm)
+  - [Apache HTTP Server (HTTPd)](/apache/apache-httpd.md#php-fpm)
   - [NGINX](/nginx.md#php-fpm)
   - [Caddy](/caddy.md#php-fpm)
 

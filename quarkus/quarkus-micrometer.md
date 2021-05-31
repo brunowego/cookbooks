@@ -4,6 +4,10 @@
 https://www.steadforce.com/blog/quarkus-microprofile-and-the-wonderful-world-of-metrics
 -->
 
+## Links
+
+- [Grafana Dashboard: JVM Quarkus - Micrometer Metrics](https://grafana.com/grafana/dashboards/14370)
+
 ##
 
 ```sh

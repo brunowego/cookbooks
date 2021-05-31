@@ -31,7 +31,7 @@ docker run -it --rm \
 
 ### Dependencies
 
-- [Apache Maven](/apache_maven.md)
+- [Apache Maven](/apache/apache-maven.md)
 
 ### Installation
 

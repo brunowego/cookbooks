@@ -20,6 +20,8 @@ Version 2.31
 ## Alternatives
 
 - [Apache Subversion (SVN)](/apache/apache_subversion.md)
+- Fossil
+- [Mercurial](/mercurial.md)
 
 ## CLI
 

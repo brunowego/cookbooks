@@ -1,3 +1,0 @@
-# Skaffold
-
-TODO

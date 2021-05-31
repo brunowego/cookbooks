@@ -2,10 +2,16 @@
 
 ## Alternatives
 
+- [Atlassian Statuspage](https://atlassian.com/software/statuspage)
 - [Cachet](/cachet.md)
-- [Statusfy](/statusfy.md)
 - [Statping](/statping.md)
+- [Statusfy](/statusfy.md)
+- [UptimeRobot](https://uptimerobot.com)
 
 <!--
 https://github.com/statsd/statsd
 -->
+
+## Examples
+
+- [AlienVault](https://status.alienvault.cloud/)

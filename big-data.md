@@ -12,3 +12,14 @@
   - Value
   - Variety
   - Veracity/Validity
+
+## Concepts
+
+- System that take input, mutate it, and store result.
+
+## Big Data SLIs
+
+- Availability
+- Durability
+- End-to-end latency
+- Throughput

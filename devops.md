@@ -11,6 +11,11 @@ https://www.linkedin.com/learning/paths/become-a-devops-engineer
 https://www.linkedin.com/learning/devops-foundations-continuous-delivery-continuous-integration/
 -->
 
+## Related
+
+- [Agile](/agile.md)
+- [Application Lifecycle Management (ALM)](/alm.md)
+- [DevSecOps](/devsecops.md)
 - [Site Reliability Engineering (SRE)](/sre.md)
 
 ## References
@@ -25,6 +30,13 @@ https://www.linkedin.com/learning/devops-foundations-continuous-delivery-continu
 
 - [What's the Difference Between DevOps and SRE?](https://www.youtube.com/watch?v=uTEL8Ff1Zvk)
 
+## Books
+
+- [DevOps Audit Defense Toolkit](https://itrevolution.com/devops-audit-defense-toolkit)
+- [Release It! Second Edition](https://pragprog.com/titles/mnee2/release-it-second-edition/)
+- [Time Management for System Administrators: Stop Working Late and Start Working Smart](https://www.amazon.com/Time-Management-System-Administrators-Working/)
+- [Pragmatic Thinking and Learning: Refactor Your Wetware (Pragmatic Programmers)](https://www.amazon.com/Pragmatic-Thinking-Learning-Refactor-Programmers/)
+
 ## Terms
 
 - System Development Life Cycle (SDLC)
@@ -37,6 +49,19 @@ https://www.linkedin.com/learning/devops-foundations-continuous-delivery-continu
 - Infrastructure As Code
 - Immutable Infrastructure
 - Datacenter-as-a-Computer / Distributed Systems Scheduling
+
+## The Three Pillars of DevOps
+
+- Continuous Delivery
+- Infrastructure Automation
+- Site Reliability Engineering
+
+## Who Deploys App Software?
+
+- Operations
+- Operations in coordination with Dev teams
+- Service owner with Ops help
+- Service owner
 
 <!--
 ## Interview

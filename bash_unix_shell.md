@@ -1,4 +1,4 @@
-# Bash (Unix shell)
+# Bourne Again Shell (Bash)
 
 ## References
 

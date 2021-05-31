@@ -71,11 +71,12 @@ https://www.udemy.com/course/quarkus-get-started/
 ## Guides
 
 - [Guides](https://quarkus.io/guides/)
-
 - [All configuration options](https://quarkus.pro/guides/all-config.html)
 - [Building applications with Maven](https://quarkus.io/guides/maven-tooling.html)
 - [Creating Your First Application](https://quarkus.io/guides/getting-started)
 - [Datasources](https://quarkus.io/guides/datasource)
+- [Measuring the coverage of your tests](https://quarkus.pro/guides/tests-with-coverage.html)
+- [Testing Quarkus Applications](https://www.baeldung.com/java-quarkus-testing)
 - [Using Flyway](https://quarkus.io/guides/flyway)
 - [Using Hibernate ORM and JPA](https://quarkus.io/guides/hibernate-orm)
 - [Using Security with JPA](https://quarkus.io/guides/security-jpa)
@@ -288,7 +289,7 @@ mvn package -Pnative -Dquarkus.native.container-build=true
 
 ```sh
 # Development (Default)
-mvn compile quarkus:dev -Dquarkus-profile=dev
+mvn compile quarkus:dev
 
 # Testing
 mvn compile quarkus:dev -Dquarkus-profile=test
@@ -331,9 +332,19 @@ mvn clean -DskipTests package -Pnative
 
 ### Running Jar
 
+#### Debug Level
+
 ```sh
 java \
   -Dquarkus.log.level=DEBUG \
+  -jar ./target/quarkus-app/quarkus-run.jar
+```
+
+#### HTTP Port
+
+```sh
+java \
+  -Dquarkus.http.port=8081 \
   -jar ./target/quarkus-app/quarkus-run.jar
 ```
 

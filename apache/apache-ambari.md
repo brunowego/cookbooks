@@ -9,7 +9,7 @@ https://github.com/gaelfoppolo/self-service-data-analytics/blob/master/doc-admin
 
 ### Dependencies
 
-- [Apache Maven Proxy](/apache_maven#proxy)
+- [Apache Maven Proxy](/apache/apache-maven#proxy)
 
 #### YUM
 

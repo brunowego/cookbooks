@@ -23,6 +23,7 @@ Bucket of cookbooks to help install and set softwares.
 
 ## Terms
 
+- System Under Test (SUT)
 - Request for Proposal (RfP)
 - Request for Information (RfI)
 - Request for Quotation (RfQ)
@@ -65,7 +66,8 @@ Bucket of cookbooks to help install and set softwares.
 - Entity Relationship Diagram (ERD)
 - Request for Enhancement (RFE)
 - [Free and Open-Source Software (FOSS)](https://en.wikipedia.org/wiki/Free_and_open-source_software)
-- [identity provider (IdP)](https://en.wikipedia.org/wiki/Identity_provider)
+- [Identity Provider (IdP)](https://en.wikipedia.org/wiki/Identity_provider)
+- [Individual Development Plan (IDP)]
 - [Infrastructure as a service (IaaS)](https://en.wikipedia.org/wiki/Infrastructure_as_a_service)
 - [Key Performance Indicators (KPI)](https://en.wikipedia.org/wiki/Performance_indicator)
 - [Low-code development platform (LCDP)](https://en.wikipedia.org/wiki/Low-code_development_platform)

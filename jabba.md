@@ -1,8 +1,8 @@
 # jabba
 
-<!-- ## Alternatives
+## Alternatives
 
-- sdkman -->
+- [SDKMAN!](/sdkman.md)
 
 ## CLI
 
@@ -68,6 +68,7 @@ jabba ls-remote 'openjdk@' --latest minor
 jabba ls-remote 'zulu@' --latest minor
 
 # Install
+jabba install # if have .jabbarc file
 jabba install [version]
 
 # List
@@ -84,6 +85,14 @@ jabba alias default [version]
 ```
 
 ### Tips
+
+#### Install from Compacted File
+
+```sh
+wget 'https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz'
+
+jabba install openjdk@1.11.0="tgz+file://$PWD/openjdk-11.0.2_linux-x64_bin.tar.gz"
+```
 
 #### Link System Version
 

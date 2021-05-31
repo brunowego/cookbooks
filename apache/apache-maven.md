@@ -9,7 +9,7 @@ https://app.pluralsight.com/library/courses/allthetalks-session-66/table-of-cont
 
 - [Project Object Model (POM)](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 - [Maven Version Manager](/mvnvm.md)
-- Alternative for [Apache Ant](/apache_ant.md)
+- Alternative for [Apache Ant](/apache/apache-ant.md)
 
 ## Repositories
 
@@ -75,7 +75,7 @@ mvn dependency:tree
 # Show effective POM
 mvn help:effective-pom
 
-#
+# Show active profiles
 mvn help:active-profiles
 ```
 

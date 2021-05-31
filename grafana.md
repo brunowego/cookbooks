@@ -1,5 +1,19 @@
 # Grafana
 
+<!--
+https://www.linkedin.com/learning/graphite-and-grafana-visualizing-application-performance/monitoring-and-visualizing-system-performance
+https://www.linkedin.com/learning/kubernetes-monitoring-with-prometheus/prometheus-monitoring-to-prevent-outages
+https://app.pluralsight.com/library/courses/monitoring-containerized-app-health-docker/table-of-contents
+-->
+
+## Alternative
+
+- [Apache Superset](/apache/apache-superset.md)
+- [Datadog](https://www.datadoghq.com/)
+- [Elastic Kibana](/elastic/elastic-kibana.md)
+- [Metabase](/metabase.md)
+- [Redash](/redash.md)
+
 ## References
 
 - [Druid Datasource](https://grafana.com/grafana/plugins/abhisant-druid-datasource)
@@ -145,7 +159,34 @@ docker run -d \
   -p 3000:3000 \
   --name grafana \
   --network workbench \
-  docker.io/grafana/grafana:6.6.0
+  docker.io/grafana/grafana:6.7.6
+```
+
+<!-- ```sh
+docker cp [filename].json grafana:/etc/grafana/provisioning/dashboards
+``` -->
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:3000'
+```
+
+| Login | Password |
+| --- | --- |
+| `admin` | `admin` |
+
+#### 7.x
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h grafana \
+  -v grafana-config:/etc/grafana \
+  -v grafana-data:/var/lib/grafana \
+  -e GF_INSTALL_PLUGINS='grafana-clock-panel, grafana-simple-json-datasource, grafana-piechart-panel' \
+  -p 3000:3000 \
+  --name grafana \
+  --network workbench \
+  docker.io/grafana/grafana:7.5.7
 ```
 
 <!-- ```sh
@@ -195,6 +236,7 @@ sudo yum -y localinstall https://dl.grafana.com/oss/release/grafana-6.6.0-1.x86_
 
 ```sh
 wget https://dl.grafana.com/oss/release/grafana_6.6.0_amd64.deb
+
 sudo dpkg -i grafana_6.6.0_amd64.deb && rm -f grafana_6.6.0_amd64.deb
 ```
 

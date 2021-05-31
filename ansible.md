@@ -28,6 +28,7 @@ Version v2.10.8
 
 - [Chef](/chef.md)
 - [Puppet](/puppet.md)
+- SaltStack
 
 ## CLI
 

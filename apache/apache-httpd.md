@@ -86,7 +86,7 @@ sudo yum -y install httpd
 
 ##### Dependencies
 
-- [Apache Portable Runtime](/apache_apr.md)
+- [Apache Portable Runtime](/apache/apache-apr.md)
 
 ###### YUM
 

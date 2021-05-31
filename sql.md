@@ -8,6 +8,13 @@ https://www.linkedin.com/learning/learning-sql-programming-8382385/learning-sql-
 
 - Relational Database Access (RDA)
 
+##
+
+- SQL: Standard SQL
+- N1QL: Couchbase N1QL
+- DB2: IBM DB2
+- PL/SQL: Oracle PL/SQL
+
 ## Syntax
 
 ### Tips

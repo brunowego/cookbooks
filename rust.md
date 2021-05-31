@@ -15,6 +15,10 @@ https://dev.to/davidedelpapa/yew-tutorial-01-introduction-13ce
 https://medium.com/swlh/building-a-front-app-with-rust-yes-you-can-and-yew-11e7835d768f
 -->
 
+## Links
+
+- [Awesome Alternatives in Rust](https://github.com/TaKO8Ki/awesome-alternatives-in-rust)
+
 ## References
 
 - [rustup](/rustup.md)

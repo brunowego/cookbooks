@@ -3,3 +3,4 @@
 ## Links
 
 - [Code Repository](https://github.com/microsoft/winget-cli)
+- [Package Manager Community Repository](https://github.com/microsoft/winget-pkgs)

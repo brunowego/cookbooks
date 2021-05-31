@@ -96,13 +96,20 @@ Enterprise Information Systems Tier
 
 ## Tooling
 
-- [Apache Maven](/apache_maven.md)
-- [Apache Tomcat](/apache_tomcat.md)
+### Build Automation Tool
+
+- [Apache Ant](/apache/apache-ant.md)
+- [Apache Maven](/apache/apache-maven.md)
+- [Gradle](/gradle.md)
+
+### HTTP Webserver
+
+- [Apache Tomcat](/apache/apache-tomcat.md)
+- [Eclipse Jetty](/eclipse/eclipse-jetty.md)
 - [GlassFish](/glassfish.md)
 - [IBM WebSphere](/ibm_websphere.md)
-- [Jetty Runner](/jetty-runner.md)
-- [Oracle WebLogic Server (WLS)](/weblogic.md)
-- [WildFly (JBoss Application Server)](/wildfly.md)
+- [Oracle WebLogic Server (WLS)](/oracle-weblogic.md)
+- [WildFly (JBoss Application Server)](/redhat/redhat-wildfly.md)
 
 ## Parsers
 

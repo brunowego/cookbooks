@@ -20,7 +20,7 @@ Core/State
 Providers (AWS: EC2, Users|Kubernetes: Services)
 Resource (VPC/Kubernetes Namespace)
 
-Declarative vs Imperative
+Declarative vs. Imperative
 
 What does declarative mean exactly?
 

@@ -63,5 +63,9 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 ```sh
 docker rm -f pgwatch2
 
-docker volume rm pgwatch2-config pgwatch2-grafana-config pgwatch2-grafana-data pgwatch2-postgresql-data
+docker volume rm \
+  pgwatch2-config \
+  pgwatch2-grafana-config \
+  pgwatch2-grafana-data \
+  pgwatch2-postgresql-data
 ```

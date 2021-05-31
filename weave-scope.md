@@ -39,5 +39,6 @@ kubectl rollout status deploy/weave-scope-frontend-weave-scope -n weave-scope
 
 ```sh
 helm uninstall weave-scope -n weave-scope
+
 kubectl delete namespace weave-scope --grace-period=0 --force
 ```

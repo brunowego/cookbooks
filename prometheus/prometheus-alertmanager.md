@@ -1,5 +1,14 @@
 # Prometheus Alertmanager
 
+## Alternatives
+
+- [Cabot](/cabot.md)
+- [Openduty](/openduty.md)
+- Arachnys
+- Atlassian Opsgenie
+- PagerDuty
+- VictorOps (Splunk)
+
 ## Docker
 
 ### Running

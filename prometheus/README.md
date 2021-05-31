@@ -8,7 +8,7 @@ https://www.linkedin.com/learning/kubernetes-monitoring-with-prometheus/promethe
 
 - [Metric types](https://prometheus.io/docs/concepts/metric_types/)
 
-##
+## Plugins
 
 - [Mozilla Firefox - Prometheus Formatter](https://addons.mozilla.org/en-US/firefox/addon/prometheus-formatter/)
 
@@ -267,7 +267,7 @@ docker run -d \
   -p 9090:9090 \
   --name prometheus \
   --network workbench \
-  docker.io/prom/prometheus:v2.15.2
+  docker.io/prom/prometheus:v2.27.1
 ```
 
 ```sh

@@ -6,7 +6,7 @@
 
 ## Tools
 
-- [Apache Hive](/apache_hive.md)
+- [Apache Hive](/apache/apache-hive.md)
 - Amazon Redshift
 - Google BigQuery
 - Snowflake

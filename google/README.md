@@ -4,6 +4,10 @@
 https://killedbygoogle.com/
 -->
 
+## Links
+
+- [Your devices](https://myaccount.google.com/device-activity)
+
 ## References
 
 - Gugol
