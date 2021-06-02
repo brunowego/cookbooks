@@ -1,6 +1,9 @@
 # Scala
 
 <!--
+https://github.com/twitter/finatra
+https://github.com/twitter/finagle
+
 https://app.pluralsight.com/library/courses/scala-language-getting-started/table-of-contents
 https://app.pluralsight.com/library/courses/scala-big-picture/table-of-contents
 https://app.pluralsight.com/library/courses/scala-type-classes-parameterization/table-of-contents

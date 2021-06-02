@@ -23,6 +23,8 @@ Bucket of cookbooks to help install and set softwares.
 
 ## Terms
 
+- Bloom's Taxonomy
+- Ask Me Anything (AMA)
 - System Under Test (SUT)
 - Request for Proposal (RfP)
 - Request for Information (RfI)
@@ -35,8 +37,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Acknowledgement (ACK or NACK)](https://en.wikipedia.org/wiki/Acknowledgement_(data_networks))
 - Active Directory Federation Services (ADFS)
 - [Analytical Base Table (ABT) is](https://en.wikipedia.org/wiki/Analytical_base_table)
-- [Backend for Frontend (BFF)](https://samnewman.io/patterns/architectural/bff/)
-- [Backend for Frontend (BFF)](https://samnewman.io/patterns/architectural/bff/)
+- [Backend-for-Frontend (BFF)](https://samnewman.io/patterns/architectural/bff/)
 - [Bare-metal server](https://en.wikipedia.org/wiki/Bare-metal_server)
 - Capture The Flag (CTF)
 - Bulletin Board System (BBS)
@@ -86,6 +87,7 @@ Bucket of cookbooks to help install and set softwares.
 - [Software as a service (SaaS)](https://en.wikipedia.org/wiki/Software_as_a_service)
 - Software Development Kit (SDK)
 - Stock Keeping Unit (SKU)
+- War Room (WR)
 - Obsessive-Compulsive Disorder (OCD)
 - Personal Identification Number (PIN)
 - [Top-Level Domain (TLD)](https://en.wikipedia.org/wiki/Top-level_domain)

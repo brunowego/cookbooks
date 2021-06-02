@@ -1,5 +1,9 @@
 # Gradle
 
+## Plugins
+
+- [Nebula](https://nebula-plugins.github.io/)
+
 ## CLI
 
 ### Installation

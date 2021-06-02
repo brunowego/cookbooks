@@ -20,5 +20,6 @@ sudo yum -y install https://dl.influxdata.com/influxdb/releases/influxdb-1.7.1.x
 
 ```sh
 wget https://dl.influxdata.com/influxdb/releases/influxdb-1.7.1_linux_amd64.tar.gz
+
 tar -xvfz influxdb-1.7.1_linux_amd64.tar.gz
 ```

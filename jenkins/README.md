@@ -4,6 +4,8 @@
 https://www.linkedin.com/learning/jenkins-essential-training/
 https://www.linkedin.com/learning/learning-jenkins/
 https://app.pluralsight.com/paths/skill/continuous-integration-with-jenkins
+
+https://github.com/kiegroup/kogito-pipelines
 -->
 
 **Keywords:** Continuous Integration
@@ -11,6 +13,7 @@ https://app.pluralsight.com/paths/skill/continuous-integration-with-jenkins
 ## Alternatives
 
 - [Atlassian Bamboo](/atlassian/atlassian-bamboo.md)
+- [Spinnaker](/spinnaker.md)
 
 ## Related
 

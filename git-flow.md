@@ -1,12 +1,36 @@
-# git-flow
+# Git Flow
 
 <!--
 https://www.youtube.com/watch?v=wzxBR4pOTTs
 -->
 
-## References
+**Keywords:** Workflow
 
-- [git-flow](https://jeffkreeftmeijer.com/git-flow/)
+## Alternatives
+
+- [Trunk-Based Development (TBD)](/trunk-based-development.md)
+
+## Links
+
+- [Main Website](https://jeffkreeftmeijer.com/git-flow/)
+
+## Guides
+
+- [Patterns for Managing Source Code Branches](https://martinfowler.com/articles/branching-patterns.html)
+
+## Benefits of Git Flow
+
+- Workflow is based around releases
+- Allows for parallel development by leveraging short-lived branches for features, hotfixes, and releases
+- Pull/merge requests used for updates to master and develop
+
+## Workflow Comparison
+
+| Trunk Based | Git Flow |
+| --- | --- |
+| Single long-lived branch | Multiple branches/types |
+| Work is always release ready | Master branch is release ready |
+| Compliments continuous deployment | Compliments releases |
 
 ## CLI
 

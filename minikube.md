@@ -132,8 +132,12 @@ minikube stop -p minikube
 #### Addons
 
 ```sh
+#
+minikube addons list
+
 # NGINX Ingress Controller
 minikube addons enable ingress
+minikube addons enable ingress-dns
 ```
 
 #### Mount

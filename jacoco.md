@@ -163,7 +163,7 @@ https://tomgregory.com/how-to-measure-code-coverage-using-sonarqube-and-jacoco/
 mvn clean verify
 
 # Unit tests
-./target/site/jacoco-ut
+open ./target/site/jacoco-ut/index.html
 
 # Integration tests
 open ./target/site/jacoco-it/index.html

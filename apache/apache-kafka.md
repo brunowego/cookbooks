@@ -1,6 +1,12 @@
 # Apache Kafka
 
 <!--
+https://www.youtube.com/watch?v=sCkAe-Umb0o
+
+https://www.blazemeter.com/blog/apache-kafka-how-to-load-test-with-jmeter
+https://octoperf.com/blog/2020/10/30/kafka-load-testing/
+https://github.com/corunet/kloadgen
+
 https://www.linkedin.com/learning/apache-kafka-essential-training-building-scalable-applications/why-are-kafka-skills-so-high-in-demand
 
 https://www.linkedin.com/learning/apache-kafka-essential-training-getting-started/getting-started-with-apache-kafka
@@ -130,6 +136,10 @@ kubectl delete namespace kafka --grace-period=0 --force
 
 ## Docker
 
+### Dependencies
+
+- [kafkacat](/kafkacat.md)
+
 ### Network
 
 ```sh
@@ -176,6 +186,8 @@ nc -vzw 5 127.0.0.1 9092 < /dev/null
 
 # Kafka test with Kafkacat
 kafkacat -Lb 127.0.0.1:9092
+
+sudo hostess add kafka 127.0.0.1
 
 kafkacat \
   -Cb 127.0.0.1:9092 \

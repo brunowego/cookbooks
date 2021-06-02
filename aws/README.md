@@ -29,6 +29,10 @@ https://www.linkedin.com/learning/aws-for-devops-monitoring-metrics-and-logging/
 https://www.linkedin.com/learning/aws-and-react-creating-full-stack-apps/full-stack-react-development-on-aws
 https://www.linkedin.com/learning/creating-a-serverless-application-using-react-in-aws/2392677
 
+https://www.linkedin.com/learning/cloud-native-projects-aws-serverless/flexibility-with-lambda
+https://www.linkedin.com/learning/advanced-kubernetes-1-core-concepts/exploring-the-kubernetes-architecture
+https://www.linkedin.com/learning/aws-high-availability/aws-and-high-availability
+
 Transactions Per Second (TPS)
 -->
 

@@ -52,6 +52,7 @@ bumpversion \
 
 #
 bumpversion [major|minor|patch]
+bumpversion [major|minor|patch] --new-version [1.0.0]
 
 #
 bumpversion --tag release

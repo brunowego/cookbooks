@@ -1,7 +1,29 @@
 # Site Reliability Engineering (SRE)
 
 <!--
+https://devopsinstitute.com/thought-leadership/upskilling-3/
+
+dark launch vs canary release
+
+https://medium.com/zendesk-engineering/blameless-culture-21662ab9118c
+https://devops.com/how-sre-creates-a-blameless-culture/
+
+https://www.amazon.com.br/projeto-f%C3%AAnix-Gene-Kim/dp/8550801895/ref=asc_df_8550801895/?tag=googleshopp00-20&linkCode=df0&hvadid=379765802390&hvpos=&hvnetw=g&hvrand=4437745625071073806&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001541&hvtargid=pla-812161948508&psc=1
+
+https://www.amazon.com.br/Phoenix-Project-DevOps-Helping-Business/dp/1942788290/ref=asc_df_1942788290/?tag=googleshopp00-20&linkCode=df0&hvadid=379693121961&hvpos=&hvnetw=g&hvrand=4437745625071073806&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001541&hvtargid=pla-437264780533&psc=1
+
+https://www.amazon.com.br/Unicorn-Project-Developers-Disruption-Thriving/dp/1942788762/ref=asc_df_1942788762/?tag=googleshopp00-20&linkCode=df0&hvadid=379726347250&hvpos=&hvnetw=g&hvrand=15513896059502615592&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001541&hvtargid=pla-863236963354&psc=1
+
 End User -> Internet -> CDN -> Internet -> Load Balancer -> Web Server -> Database
+
+Embracing Risk
+SLIs, SLOs, SLAs and Error Budget
+Observability
+Toil Free
+Release Engineering
+Post Mortem
+
+class SRE implements DevOps
 -->
 
 ## References
@@ -9,14 +31,19 @@ End User -> Internet -> CDN -> Internet -> Load Balancer -> Web Server -> Databa
 - [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
 - [Awesome Site Reliability Engineering](https://github.com/dastergon/awesome-sre)
 - [DevOps](/devops.md)
-- [Google SRE Books](https://sre.google/books/)
-- [SRE fundamentals: SLIs, SLAs and SLOs](https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-slis-slas-and-slos)
 - [The Twelve-Factor App](/12factor.md)
 - [Glossary: Simplified Guide to the Incident Command System for Transportation Professionals](https://ops.fhwa.dot.gov/publications/ics_guide/glossary.htm)
 
-## Frases
+## Content
+
+- [LinkedIn: School of SRE](https://linkedin.github.io/school-of-sre/)
+- [Resilience First: SRE and the Four Golden Signals of Monitoring](https://www.observability.splunk.com/en_us/infrastructure-monitoring/guide-to-sre-and-the-four-golden-signals-of-monitoring.html)
+- [SRE fundamentals: SLIs, SLAs and SLOs](https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-slis-slas-and-slos)
+
+## Phrases
 
 - SRE is more about practices then tooling.
+- SRE impacts the costumer experience and the ROI.
 
 <!--
 ##
@@ -39,6 +66,8 @@ End User -> Internet -> CDN -> Internet -> Load Balancer -> Web Server -> Databa
 
 ## Books
 
+- [Google SRE Books](https://sre.google/books/)
+- [Seeking SRE: Conversations About Running Production Systems at Scale](https://www.amazon.com/Seeking-SRE-Conversations-Running-Production-ebook/dp/B07GQ2YY1D)
 - [Site Reliability Engineering: How Google Runs Production Systems](https://www.amazon.com/Site-Reliability-Engineering-Production-Systems-ebook/dp/B01DCPXKZ6)
 - [The Site Reliability Workbook: Practical Ways to Implement SRE](https://www.amazon.com/Site-Reliability-Workbook-Practical-Implement/dp/1492029505)
 - [The Visible Ops Handbook: Implementing ITIL in 4 Practical and Auditable Steps](https://www.amazon.com/Visible-Ops-Handbook-Implementing-Practical-ebook/)
@@ -67,9 +96,23 @@ https://cloud.google.com/blog/products/gcp/an-example-escalation-policy-cre-life
 
 - [How Complex Systems Fail](https://how.complexsystems.fail/)
 
+## Tools
+
+- [BLAMELESS](https://www.blameless.com/)
+
 ## Terms
 
+- Application Performance Monitoring (APM)
+- Customer Centricity (CX)
+- IT Service Management (ITSM)
 - Service Oriented Architecture (SOA)
+
+##
+
+- Blameless Culture
+- Holistic Vision
+- Quality by Design
+- Security by Design
 
 ## Metrics
 
@@ -77,15 +120,24 @@ https://cloud.google.com/blog/products/gcp/an-example-escalation-policy-cre-life
 
 ## Service-Level
 
+- Error Budget
+- Measure Improvement
+- Monitoring And Alerting Strategy
+- Risk Management
 - Service-Level Agreement (SLA) - Services Contract
 - Service-Level Objective (SLO) - Goals for the Services
   - 90% of users should experience a load time of less than 1 second
   - 95% of users should experience a load time of less than 1.5 seconds
   - 99% of users should experience a load time of less than 2 seconds
 - Service-Level Indicator (SLI) -
-- Error Budgets
+- System Reliability
 
 <!--
+##
+
+SLIs drive SLOs which inform SLAs
+
+
 ## Service Matrix
 
 Frequency

@@ -57,3 +57,14 @@
 3. Take Mock Exam
 4. Review Weaknesses
 5. Ready!
+
+<!--
+DevOps
+DevSecOps
+SAFe
+Agile Scrum Master
+Site Reliability Engineering
+Cybersecurity
+MCSD
+AWS Cloud
+-->

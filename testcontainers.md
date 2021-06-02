@@ -1,6 +1,8 @@
 # Testcontainers
 
 <!--
+https://www.youtube.com/watch?v=O968f81LTeY
+
 https://github.com/search?o=desc&q=filename%3A.java+%22QuarkusTestResourceLifecycleManager%22&s=indexed&type=Code
 
 https://callistaenterprise.se/blogg/teknik/2020/10/08/getting-started-with-testcontainers/

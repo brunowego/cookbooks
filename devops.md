@@ -1,6 +1,8 @@
 # DevOps
 
 <!--
+https://netflixtechblog.com/full-cycle-developers-at-netflix-a08c31f83249
+
 https://www.google.com/search?client=firefox-b-d&q=PCI+vs+SOX
 
 https://www.linkedin.com/learning/paths/improve-your-continuous-delivery-skills
@@ -39,10 +41,11 @@ https://www.linkedin.com/learning/devops-foundations-continuous-delivery-continu
 
 ## Terms
 
-- System Development Life Cycle (SDLC)
+- Health Insurance Portability and Accountability Act (HIPAA)
 - Payment Card Industry Data Security Standard (PCI DSS)
 - Sarbanes Oxley (SOX)
-- Health Insurance Portability and Accountability Act (HIPAA)
+- System Development Life Cycle (SDLC)
+- You Build It, You Run It (YBI/YRI)
 
 ## Topics
 

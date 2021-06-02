@@ -3,6 +3,11 @@
 <!--
 Underfitting and Overfitting
 
+https://netflixtechblog.com/how-netflix-scales-its-api-with-graphql-federation-part-1-ae3557c187e2
+https://netflixtechblog.com/open-sourcing-the-netflix-domain-graph-service-framework-graphql-for-spring-boot-92b9dcecda18
+
+https://www.youtube.com/watch?v=QrEOvHdH2Cg
+
 https://app.pluralsight.com/library/courses/js-friends-session-07/table-of-contents
 https://app.pluralsight.com/library/courses/graphql-big-picture/table-of-contents
 
@@ -24,6 +29,10 @@ https://github.com/mehulagg/gitlab/blob/master/doc/development/fe_guide/graphql.
 
 - [Altair GraphQL](/altair-graphql.md)
 - [Apollo](/apollo.md)
+
+## Libraries
+
+- [Sangria (Scala)](https://github.com/sangria-graphql/sangria)
 
 ## CLI
 

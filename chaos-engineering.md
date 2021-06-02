@@ -1,6 +1,9 @@
 # Chaos Engineering (a.k.a. Chaos Monkey)
 
 <!--
+https://netflixtechblog.com/fit-failure-injection-testing-35d8e2a9bb2
+https://netflixtechblog.com/keeping-netflix-reliable-using-prioritized-load-shedding-6cc827b02f94
+
 https://app.pluralsight.com/paths/conference/chaos-conf-2020
 https://app.pluralsight.com/channels/details/76045a6b-ec26-4747-a61b-679e5c54dd33
 -->
@@ -13,6 +16,8 @@ Chaos Engineering only works with strong communication, verbose monitoring, and 
 - [Netflix Chaos Monkey Upgraded](https://netflixtechblog.com/netflix-chaos-monkey-upgraded-1d679429be5d)
 
 <!--
+https://netflixtechblog.com/chap-chaos-automation-platform-53e6d528371f
+
 https://github.com/Netflix/SimianArmy
 https://github.com/netflix/chaosmonkey
 https://github.com/spinnaker/swabbie

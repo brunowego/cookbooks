@@ -1,7 +1,10 @@
 # Thanos
 
 <!--
-https://github.com/thanos-io/thanos
+https://particule.io/en/blog/thanos-monitoring/
 -->
 
-TODO
+## Links
+
+- [Main Website](https://thanos.io/)
+- [Code Repository](https://github.com/thanos-io/thanos)
