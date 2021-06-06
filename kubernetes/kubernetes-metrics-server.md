@@ -20,7 +20,7 @@ kubectl patch deployment metrics-server \
 # Wait until available
 kubectl wait \
   --timeout=60s \
-  --for=condition=Available \
+  --for condition=Available \
   -n kube-system \
   deployment/metrics-server
 

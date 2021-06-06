@@ -36,7 +36,6 @@ kind -h
 tee ~/.kind-config.yml << EOF
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
-name: default
 nodes:
 - role: control-plane
 - role: worker
@@ -51,7 +50,9 @@ EOF
 
 ```sh
 # Create cluster
-kind create cluster --config ~/.kind-config.yml
+kind create cluster \
+  --name default \
+  --config ~/.kind-config.yml
 
 # Get cluster info
 kubectl cluster-info
