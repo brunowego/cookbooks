@@ -7,6 +7,8 @@ https://app.pluralsight.com/guides/the-cryptography-of-bitcoin
 https://www.linkedin.com/learning/search?entityType=COURSE&keywords=bitcoin
 
 https://www.youtube.com/watch?v=A2KufQupz78
+
+Bitcoin Ledger
 -->
 
 ## References

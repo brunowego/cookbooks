@@ -1,5 +1,9 @@
 # What
 
+## Links
+
+- [Code Repository](https://github.com/bee-san/pyWhat)
+
 ## CLI
 
 ### Installation

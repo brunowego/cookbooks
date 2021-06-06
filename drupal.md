@@ -3,6 +3,7 @@
 <!--
 https://www.linkedin.com/learning/drupal-9-essential-training-5-layout/introduction-to-the-course
 https://www.linkedin.com/learning/drupal-9-essential-training-4-users-and-themes/introduction-to-the-course
+https://github.com/geerlingguy/kubernetes-101/tree/master/episode-05
 -->
 
 ## Tools

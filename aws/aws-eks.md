@@ -4,4 +4,6 @@
 https://www.youtube.com/watch?v=tkYzg8HRK4o
 -->
 
-TODO
+## Terms
+
+- Application Load Balancing (ALB)

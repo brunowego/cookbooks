@@ -21,9 +21,27 @@ Version 1.21.0
 - [Release Notes](https://kubernetes.io/docs/setup/release/notes/)
 - [Wiki](https://en.wikipedia.org/wiki/Kubernetes)
 
-##
+## Terms
 
 - Horizontal Pod Autoscaler (HPA)
+
+<!--
+## Kubernetes Special Interest Groups (SIGs)
+ -->
+
+## Local Kubernetes
+
+- [K3s](/k3s.md)
+- [Kubernetes IN Docker (kind)](/kind.md)
+- [minikube](/minikube.md)
+- [Project Tye](https://github.com/dotnet/tye)
+- [Tilt](https://github.com/tilt-dev/tilt)
+
+## Distributions
+
+- Kubernetes
+- Rancher
+- Red Hat OpenShift
 
 ### Tips
 

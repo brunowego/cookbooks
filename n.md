@@ -40,7 +40,13 @@ npm install n -g
 ```sh
 # Unix-like
 sudo mkdir -p /usr/local/n
-sudo chown -R "$(whoami)" /usr/local/n /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share
+
+sudo chown -R "$(whoami)" \
+  /usr/local/n \
+  /usr/local/bin \
+  /usr/local/lib \
+  /usr/local/include \
+  /usr/local/share
 ```
 
 ### Commands

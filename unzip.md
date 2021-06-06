@@ -44,18 +44,14 @@ unzip -hh
 zipinfo -h
 ```
 
-### Examples
-
-#### Listing
+### Using
 
 ```sh
+# Listing
 unzip -l [filename].zip
 # or
 zipinfo [filename].zip
-```
 
-#### Compressing With own directory
-
-```sh
+# Compressing With own directory
 zip -r [filename].zip [filepath]
 ```

@@ -13,10 +13,12 @@ brew install kubectx
 #### Linux
 
 ```sh
+#
 sudo curl \
   -L 'https://raw.githubusercontent.com/ahmetb/kubectx/master/kubectx' \
   -o /usr/local/bin/kubectx
 
+#
 sudo curl \
   -L 'https://raw.githubusercontent.com/ahmetb/kubectx/master/kubens' \
   -o /usr/local/bin/kubens

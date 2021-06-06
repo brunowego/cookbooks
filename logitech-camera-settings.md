@@ -7,7 +7,9 @@
 #### Homebrew
 
 ```sh
-brew install --cask homebrew/cask-drivers/logitech-camera-settings
+brew tap homebrew/cask-drivers
+
+brew install --cask logitech-camera-settings
 ```
 
 ### Running

@@ -30,7 +30,8 @@ brew install helm
 #### Unix-like
 
 ```sh
-curl -Ss https://raw.githubusercontent.com/helm/helm/master/scripts/get | /bin/bash
+curl -Ss https://raw.githubusercontent.com/helm/helm/master/scripts/get | \
+  /bin/bash
 ```
 
 ### Commands

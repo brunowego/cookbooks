@@ -6,7 +6,7 @@
 
 - [Z shell (Zsh)](/zsh.md)
 - [cURL](/curl.md)
-- [Git](/git.md)
+- [Git](/git/README.md)
 - [GNU Sed](/gnu-sed.md)
 
 ### Extend

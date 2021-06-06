@@ -1,8 +1,14 @@
 # k3s
 
-## Installation
+## Links
 
-### Linux
+- [Main Website](https://k3s.io/)
+
+## CLI
+
+### Installation
+
+#### Linux
 
 ```sh
 curl -sfL 'https://get.k3s.io' | sh -

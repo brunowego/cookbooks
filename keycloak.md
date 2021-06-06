@@ -12,6 +12,15 @@ https://github.com/keycloak/keycloak-operator
 https://codergists.com/redhat/keycloak/security/authentication/2020/01/07/getting-started-with-keycloak-on-rhel8.html
 -->
 
+## Alternatives
+
+- [Auth0](https://auth0.com/)
+- [AWS Cognito](/aws/aws-cognito.md)
+- [Azure AD](https://azure.microsoft.com/en-us/services/active-directory/)
+- [Gluu](https://gluu.org/)
+- [Okta](https://okta.com/)
+- [ORY Hydra](ory-hydra.md)
+
 ## Guides
 
 - [Getting Started Guide](https://www.keycloak.org/docs/latest/getting_started/)

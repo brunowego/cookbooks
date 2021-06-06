@@ -13,6 +13,7 @@
 - IRPF
 - Ultimaker Cura
 - SnippetsLab
+- Paste
 
 ## Notes
 

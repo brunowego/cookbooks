@@ -9,12 +9,11 @@
 ### Dependencies
 
 - [PHP](/php/README.md)
-<!-- - [PHP Bzip2](/php/php-bz2.md) -->
-- [GNU Wget](/gnu-wget.md)
 - [pkg-config](/pkg-config.md)
 - [libxml2](/libxml2.md)
 - [bzip2](/bzip2.md)
 - [libzip](/libzip.md)
+- [GNU Wget](/gnu-wget.md)
 
 <!--
 - [GCC](/gcc.md)
@@ -98,7 +97,7 @@ sudo curl -L 'https://github.com/phpbrew/phpbrew/raw/master/phpbrew' -o /usr/loc
   sudo chmod +x /usr/local/bin/phpbrew
 ```
 
-### Configuration
+### Initialize
 
 ```sh
 phpbrew init
@@ -145,32 +144,32 @@ phpbrew known \
 # Variants
 phpbrew variants
 
+# Define the version
+export PHP_VERSION=[version]
+
 # Install
-VERSION=[version] && \
-  phpbrew -d install \
-    --name="$VERSION-dev" \
-    --downloader=wget \
-    --stdout \
-    "$VERSION" \
-    +default +mysql
+phpbrew -d install \
+  --name="$PHP_VERSION-dev" \
+  --downloader=wget \
+  --stdout \
+  "$PHP_VERSION" \
+  +default +mysql
 
 # Install with FPM
-VERSION=[version] && \
-  phpbrew -d install \
-    --name="$VERSION-fpm-dev" \
-    --downloader=wget \
-    --stdout \
-    "$VERSION" \
-    +default +fpm +mysql
+phpbrew -d install \
+  --name="$PHP_VERSION-fpm-dev" \
+  --downloader=wget \
+  --stdout \
+  "$PHP_VERSION" \
+  +default +fpm +mysql
 
 # Installed Versions
 phpbrew list
 
 # Switch Global
-phpbrew switch [version]
-
-## Instance Only
-phpbrew use [version]
+phpbrew switch "$PHP_VERSION"
+# or, instance Only
+phpbrew use "$PHP_VERSION"
 
 # Extensions
 phpbrew extension
@@ -188,14 +187,14 @@ phpbrew -d ext disable [extension]
 phpbrew -d ext clean --purge [extension]
 
 # Like
-phpbrew install [version] as [version]-dev like [version]-dev
+phpbrew install "$PHP_VERSION" as "$PHP_VERSION"-dev like "$PHP_VERSION"-dev
 
 # Clean
-phpbrew clean -a [version]
+phpbrew clean -a "$PHP_VERSION"
 
 # Purge
 phpbrew switch-off
-phpbrew purge [version]
+phpbrew purge "$PHP_VERSION"
 ```
 
 ### Tips
@@ -212,7 +211,17 @@ phpbrew -d ext install \
 
 ### Issues
 
-#### Zip Library
+#### Missing pkg-config
+
+```log
+configure: error: The pkg-config script could not be found or is too old.  Make sure it
+is in your PATH or set the PKG_CONFIG environment variable to the full
+path to pkg-config.
+```
+
+Install [pkg-config](/pkg-config.md).
+
+#### Missing Zip Library
 
 ```log
 Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'zip.so' in Unknown on line 0
@@ -220,7 +229,7 @@ Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'zip.so' in Unk
 
 Install [PHP Zip](/php-zip.md).
 
-#### SSL Library
+#### Missing SSL Library
 
 ```log
 configure: error: Cannot find OpenSSL's <evp.h>
@@ -229,7 +238,7 @@ Error: Configure failed: configure: error: Cannot find OpenSSL's <evp.h>
 
 Install `libssl-dev`.
 
-#### C Compiler
+#### Missing C Compiler
 
 ```log
 configure: error: no acceptable C compiler found in $PATH
@@ -237,7 +246,7 @@ configure: error: no acceptable C compiler found in $PATH
 
 Install GCC.
 
-#### PEAR library
+#### Missing PEAR library
 
 ```log
 Warning: file_get_contents(http://pecl.php.net/channel.xml): failed to open stream: HTTP request failed! in phar:///usr/local/bin/phpbrew/vendor/corneltek/pearx/src/PEARX/Core.php on line 35
@@ -271,7 +280,7 @@ PHP Fatal error:  Uncaught PharException: bz2 extension is required for bzip2 co
 
 TODO -->
 
-#### BZip2
+#### Missing BZip2
 
 ```log
 checking for BZip2 support... yes
@@ -279,6 +288,8 @@ checking for BZip2 in default path... not found
 configure: error: Please reinstall the BZip2 distribution
 Error: Configure failed: configure: error: Please reinstall the BZip2 distribution
 ```
+
+Install [bzip2](/bzip2.md).
 
 ```sh
 phpbrew -d install \
@@ -290,7 +301,7 @@ phpbrew -d install \
   +bz2="$(brew --prefix bzip2)"
 ```
 
-#### zlib
+#### Missing zlib
 
 ```log
 checking for the location of zlib... configure: error: zip support requires ZLIB. Use --with-zlib-dir=<DIR> to specify prefix where ZLIB include and library are located
@@ -331,7 +342,7 @@ sudo xcode-select -switch /Applications/Xcode\ 11.5.app
 xcode-select -p
 ```
 
-#### OpenSSL
+#### Missing OpenSSL
 
 ```log
 make: *** [ext/openssl/openssl.lo] Error 1
@@ -352,14 +363,14 @@ phpbrew -d install \
   +openssl="$(brew --prefix openssl)"
   # Linux
   +openssl=shared
-
-# Darwin
-# export PKG_CONFIG_PATH="$(brew --cellar openssl)/$(brew info --json openssl | jq -r '.[0].installed[0].version')/lib/pkgconfig:$PKG_CONFIG_PATH"
-# Or
-# export PKG_CONFIG_PATH="/usr/local/Cellar/openssl/1.0.2t/lib/pkgconfig:$PKG_CONFIG_PATH"
 ```
 
-#### Oniguruma
+<!-- # Darwin
+export PKG_CONFIG_PATH="$(brew --cellar openssl)/$(brew info --json openssl | jq -r '.[0].installed[0].version')/lib/pkgconfig:$PKG_CONFIG_PATH"
+# Or
+export PKG_CONFIG_PATH="/usr/local/Cellar/openssl/1.0.2t/lib/pkgconfig:$PKG_CONFIG_PATH" -->
+
+#### Missing Oniguruma
 
 ```log
 checking for oniguruma... no
@@ -373,7 +384,7 @@ No package 'oniguruma' found
 sudo apt -y install libonig-dev
 ```
 
-#### libxml2
+#### Missing libxml2
 
 ```log
 configure: error: libxml2 not found. Please check your libxml2 installation.
@@ -381,14 +392,10 @@ configure: error: libxml2 not found. Please check your libxml2 installation.
 
 Instal libxml2.
 
-#### GNOME XML library
+#### Missing GNOME XML library
 
 ```log
 checking for libxml-2.0 >= 2.7.6... no
-configure: error: in `~/.phpbrew/build/7.4.3-fpm-dev':
-configure: error: The pkg-config script could not be found or is too old.  Make sure it
-is in your PATH or set the PKG_CONFIG environment variable to the full
-path to pkg-config.
 ```
 
 ```sh
@@ -400,7 +407,7 @@ export LDFLAGS="-L/usr/local/opt/libxml2/lib:$LDFLAGS"
 # TODO
 ```
 
-#### cURL
+#### Missing cURL
 
 ```log
 checking for cURL in default path... not found

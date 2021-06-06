@@ -6,6 +6,10 @@
 - [Temporary Containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/)
 - [Language Switch](https://addons.mozilla.org/en-US/firefox/addon/languageswitch/)
 
+## Alternatives
+
+- [Mozilla Firefox Developer Edition](/mozilla/mozilla-firefox-developer-edition.md)
+
 ## App
 
 ### References
@@ -17,7 +21,10 @@
 #### Homebrew
 
 ```sh
-brew install --cask --appdir='/Applications' firefox
+brew install \
+  --cask \
+  --appdir='/Applications' \
+  firefox
 ```
 
 ### Docs

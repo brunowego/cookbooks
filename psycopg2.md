@@ -53,7 +53,7 @@ fatal error: Python.h: No such file or directory
 sudo apt -y install python3-dev
 
 # YUM
-sudo apt -y install python3-devel
+sudo yum -y install python3-devel
 
 # Zypper
 sudo zypper in python3-devel

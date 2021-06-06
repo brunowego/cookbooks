@@ -1,5 +1,9 @@
 # Go Version Management (goenv)
 
+## Alternatives
+
+- [gimme](https://github.com/travis-ci/gimme)
+
 ## CLI
 
 ### Dependencies

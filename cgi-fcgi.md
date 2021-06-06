@@ -1,4 +1,4 @@
-# FastCGI
+# Fast Common Gateway Interface (FastCGI)
 
 ## CLI
 

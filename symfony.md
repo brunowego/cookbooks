@@ -1,5 +1,17 @@
 # Symfony
 
+<!--
+https://www.linkedin.com/learning/learning-symfony-4/build-web-apps-with-symfony
+-->
+
+## Links
+
+- [Symfony Releases](https://symfony.com/releases/)
+
+## Bundles
+
+- [Flagception](https://github.com/bestit/flagception-bundle)
+
 ## CLI
 
 ### References

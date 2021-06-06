@@ -3,6 +3,8 @@
 <!--
 https://www.youtube.com/watch?v=996OiexHze0&feature=emb_title
 https://medium.com/@eileen.code4fun/use-the-source-ory-hydra-bd5c460a2f37
+https://github.com/ory/hydra
+https://www.ory.sh/docs/next/hydra/5min-tutorial
 -->
 
 ## References

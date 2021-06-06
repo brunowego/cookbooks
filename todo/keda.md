@@ -1,7 +1,6 @@
 # KEDA
 
-TODO
+## Links
 
-<!--
-https://github.com/kedacore/keda
--->
+- [Code Repository](https://github.com/kedacore/keda)
+- [Main Website](https://keda.sh/)

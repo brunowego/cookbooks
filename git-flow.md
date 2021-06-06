@@ -9,6 +9,7 @@ https://www.youtube.com/watch?v=wzxBR4pOTTs
 ## Alternatives
 
 - [Trunk-Based Development (TBD)](/trunk-based-development.md)
+- [GitHub Flow](/github/github-flow.md)
 
 ## Links
 

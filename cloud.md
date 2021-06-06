@@ -6,6 +6,14 @@ https://www.linkedin.com/learning/paths/build-your-knowledge-of-cloud-administra
 https://www.linkedin.com/learning/paths/become-a-cloud-developer
 -->
 
+## Vendors
+
+- Amazon Web Services (AWS)
+- Microsoft Azure
+- Google Cloud Platform (GCP)
+- Oracle
+- Private Cloud (On-premises)
+
 ## Concepts
 
 - [On-Premises Infrastructure](/on-prem.md)
@@ -26,3 +34,8 @@ https://www.linkedin.com/learning/paths/become-a-cloud-developer
 ## Cloud Gateway
 
 - [Zuul](https://github.com/Netflix/zuul)
+
+## Dedicated Hosting
+
+- Single Tenancy
+- Virtual Server Infrastructure (VSI)

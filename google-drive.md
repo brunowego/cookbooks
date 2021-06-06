@@ -1,6 +1,24 @@
-# Issues
+# Google Drive
 
-## Icon fix
+## App
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install --cask google-drive
+```
+
+#### Chocolatey
+
+```sh
+choco install google-drive-file-stream
+```
+
+<!-- ### Issues
+
+### Icon fix
 
 For Windows 8 & 8.1 do the following
 
@@ -17,4 +35,4 @@ Restart the machine (or restart Explorer service from Task Manager)
 
 This is due to the limitations of the operating system to only load limited different overlays at one time. The issue will only arise if there are already 8+ on the system, which in general been used by SKyDrive (3) and SkyDrivePro (3).
 
-Sky Drive did solve this issue (for them at least) by adding a space as prefix in order to have precedence on others.
+Sky Drive did solve this issue (for them at least) by adding a space as prefix in order to have precedence on others. -->

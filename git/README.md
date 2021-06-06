@@ -70,11 +70,25 @@ choco install -y git
 ### Bootstrap
 
 ```sh
-#
+# GitHub Flow
+git config --global init.defaultBranch 'master'
+
+# Git-flow
 git config --global init.defaultBranch 'develop'
+
+# Trunk-Based Development (TBD)
+git config --global init.defaultBranch 'main'
+
+#
 git config --global core.editor 'vim'
+
+#
 git config --global core.excludesfile '~/.gitignore_global'
+
+# Darwin
 git config --global credential.helper 'osxkeychain'
+
+#
 git config --global push.default 'current'
 ```
 
@@ -196,6 +210,20 @@ git diff [tag] -- [path/to/file]
 #
 git difftool tags/<FIRST TAG>:<FILE PATH> tags/<SECOND TAG>:<FILE PATH>
 ``` -->
+
+#### Remote
+
+```sh
+#
+git remote -v
+
+#
+git remote remove origin [url]
+git remote add origin [url]
+
+# or, using set-url
+git remote set-url origin [url]
+```
 
 #### Create a New Branch
 

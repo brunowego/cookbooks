@@ -122,14 +122,14 @@ https://stackoverflow.com/questions/62451487/quarkus-lazy-initialize
 
 ## Architecture
 
-- HotSpot JIT
-- GraalVM AOT
+- HotSpot Just-In-Time (JIT)
+- GraalVM Ahead-of-time (AOT)
 
 ## Glossary
 
 - Contexts and Dependency Injection (CDI)
 
-## Terms
+## Mindset
 
 - Java first
 - Container first

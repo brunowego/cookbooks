@@ -46,7 +46,7 @@ https://linkedin.com/learning/lean-technology-strategy-purposeful-organizations/
 - Eliminate Waste
   - Remove unnecessary activities
   - Develop features that add value
-  - Reduce churn
+  - Reduce churn (Customer Success)
   - Reduce dependencies and delays
 - Build Quality In
   - Test-driven development

@@ -46,6 +46,7 @@ https://www.linkedin.com/learning/devops-foundations-continuous-delivery-continu
 - Sarbanes Oxley (SOX)
 - System Development Life Cycle (SDLC)
 - You Build It, You Run It (YBI/YRI)
+- Complex Adaptive System (CAS)
 
 ## Topics
 

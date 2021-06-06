@@ -1,5 +1,10 @@
 # Trunk-Based Development (TBD)
 
+<!--
+https://www.toptal.com/software/trunk-based-development-git-flow
+https://mechanicalrock.github.io/2019/07/01/continuous-deployment-the-first-step-on-the-road-to-recovery.html
+-->
+
 **Keywords:** Workflow
 
 ## Alternatives

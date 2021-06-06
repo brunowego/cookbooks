@@ -1,4 +1,4 @@
-# RedHat
+# Red Hat
 
 ## Developers
 

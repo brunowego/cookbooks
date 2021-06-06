@@ -1,5 +1,17 @@
 # DBeaver Community
 
+<!--
+Blueprints
+Customers
+  Client
+    Development
+    Stating
+    Production
+Machines
+  Apex
+  Docker
+-->
+
 ## App
 
 ### Dependencies

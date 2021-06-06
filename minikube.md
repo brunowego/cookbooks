@@ -1,5 +1,9 @@
 # minikube
 
+## Links
+
+- [Main Website](https://minikube.sigs.k8s.io/)
+
 ## References
 
 - [Tunnel](https://github.com/kubernetes/minikube/blob/master/docs/tunnel.md)
@@ -87,11 +91,10 @@ minikube config set vm-driver 'parallels'
 minikube --help
 ```
 
-### Examples
-
-#### Start
+### Usage
 
 ```sh
+# Start
 minikube start \
   $(echo "$MINIKUBE_START_OPTS") \
   -p minikube
@@ -102,6 +105,12 @@ minikube start \
   -p minikube \
   --image-repository 'registry.cn-hangzhou.aliyuncs.com/google_containers' \
   --insecure-registry 'registry.cn-hangzhou.aliyuncs.com'
+
+#
+minikube start \
+  $(echo "$MINIKUBE_START_OPTS") \
+  --bootstrapper kubeadm \
+  --kubernetes-version 1.17.4
 
 #
 minikube start \
@@ -126,6 +135,9 @@ kubectl config set-context \
   minikube
 
 #
+minikube ssh sudo ip link set docker0 promisc on
+
+#
 minikube stop -p minikube
 ```
 
@@ -135,9 +147,12 @@ minikube stop -p minikube
 #
 minikube addons list
 
-# NGINX Ingress Controller
+# Ingress Controller (NGINX)
 minikube addons enable ingress
 minikube addons enable ingress-dns
+
+# MetricServer
+minikube addons enable metrics-server
 ```
 
 #### Mount

@@ -1,6 +1,14 @@
 # Kubernetes IN Docker (kind)
 
+## Links
+
+- [Main Website](https://kind.sigs.k8s.io/)
+
 ## CLI
+
+### Dependencies
+
+- [Docker CE (Daemon)](/docker/docker-ce.md#daemon)
 
 ### Installation
 
@@ -22,38 +30,43 @@ GO111MODULE='on' go get sigs.k8s.io/kind@v0.4.0
 kind -h
 ```
 
-### Bootstrap
+### Configuration
 
 ```sh
-tee ~/.kind-config.yaml << EOF
+tee ~/.kind-config.yml << EOF
 kind: Cluster
-apiVersion: kind.sigs.k8s.io/v1alpha3
-networking:
-  apiServerAddress: 127.0.0.1
+apiVersion: kind.x-k8s.io/v1alpha4
+name: default
 nodes:
-  - role: control-plane
-  - role: worker
-  - role: worker
+- role: control-plane
+- role: worker
+- role: worker
+- role: worker
 EOF
 ```
 
 > More than one control-plane kind will automatically add a load-balancer.
 
-```sh
-kind create cluster --config ~/.kind-config.yaml
-```
+### Bootstrap
 
 ```sh
-export KUBECONFIG="$(kind get kubeconfig-path --name='kind')"
-```
+# Create cluster
+kind create cluster --config ~/.kind-config.yml
 
-```sh
+# Get cluster info
 kubectl cluster-info
-```
+# or, using KUBECONFIG environment variable
+export KUBECONFIG="$(kind get kubeconfig --name 'default')"
+kubectl cluster-info
+# or, using context parameter
+kubectl cluster-info --context kind-default
 
-```sh
+# Show clusters
+kind get clusters
+
+# Get nodes
+kind get nodes --name 'default'
+
 # Delete
-kind delete cluster
-
-unset KUBECONFIG
+kind delete cluster --name 'default'
 ```

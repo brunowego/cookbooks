@@ -6,15 +6,11 @@
 
 ## Info
 
-### Darwin
-
 ```sh
+# Darwin
 sysctl -a | grep -ic avx
-```
 
-### Linux
-
-```sh
+# Linux
 grep -ic avx /proc/cpuinfo
 ```
 

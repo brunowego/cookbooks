@@ -117,7 +117,7 @@ pyenv local [version]
 pyenv global [version]
 
 # Initialize
-eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
 
 #
 pyenv uninstall -f [version]
@@ -191,7 +191,8 @@ make: *** Waiting for unfinished jobs....
 
 ```sh
 pyenv install \
-  --patch [version] \
+  --patch \
+  [version] \
   < <(curl -sSL https://github.com/python/cpython/commit/8ea6353.patch)
 ```
 

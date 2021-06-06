@@ -17,6 +17,13 @@ sudo apt update
 sudo apt -y install gettext libgettextpo-dev
 ```
 
+#### YUM
+
+```sh
+sudo yum check update
+sudo yum -y install gettext-devel
+```
+
 #### APK
 
 ```sh

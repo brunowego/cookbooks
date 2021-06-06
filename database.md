@@ -4,6 +4,12 @@
 https://www.linkedin.com/learning/database-foundations-administration-8375189/administer-a-database-server
 -->
 
+<!--
+- DynamoDB
+- MongoDB
+- GCP Datastore
+-->
+
 ## Relational Database Management System (RDBMS)
 
 - DB2 IBM Company
