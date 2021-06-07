@@ -1,6 +1,8 @@
 # HashiCorp Terraform
 
 <!--
+https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
+
 https://github.com/srebrasil/IaC-Demo
 
 https://github.com/dhinojosa/spinnaker-study/tree/master/terraform
@@ -31,11 +33,15 @@ What does Imperative mean exactly?
 
 Version v0.11.10
 Version v0.15.1
--->
 
-<!--
 https://github.com/philophilo/tech_infra
 https://github.com/inayuky/terraform-qiita-search
+
+variable
+provider
+data
+resource
+output
 -->
 
 **Keywords:** Infrastructure as Code, Infrastructure Provisioning
@@ -44,7 +50,47 @@ https://github.com/inayuky/terraform-qiita-search
 
 - [Releases](https://releases.hashicorp.com/terraform/)
 
+## Architecture
+
+### Phrases
+
+- Provisioning infrastructure through software to achieve consistent and predictable environments.
+
+### Core Concepts
+
+- Defined in code
+- Stored in source control
+- Declarative or imperative
+- Idempotent and consistent
+- Push or pull
+
+### Components
+
+- Terraform executable
+- Terraform files (files `.tf`)
+- Terraform plugins
+- Terraform state
+
+### Terraform State
+
+- JSON format (Do not touch!)
+- Resources mappings and metadata
+- Locking
+- Location
+  - Local
+  - Remote: AWS, Azure, NFS, Terraform Cloud
+- Workspaces
+
 ## CLI
+
+### Dependencies
+
+#### APT
+
+- [cURL](/curl.md)
+- [GNU Privacy Guard](/gnupg.md)
+- [lsb-release](/lsb-release.md)
+- [software-properties-common](/software-properties-common.md)
 
 ### Installation
 
@@ -52,6 +98,24 @@ https://github.com/inayuky/terraform-qiita-search
 
 ```sh
 brew install terraform
+```
+
+#### APT
+
+```sh
+curl -fsSL https://apt.releases.hashicorp.com/gpg | \
+  sudo apt-key add -
+
+sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+
+sudo apt update
+sudo apt -y install terraform
+```
+
+#### Chocolatey
+
+```sh
+choco install terraform
 ```
 
 ### Commands
@@ -64,50 +128,70 @@ terraform -h
 
 ```sh
 cat << EOF >> ./gitignore
-/.terraform
-**/.terraform/*
+/terraform.tfstate.d
+/*.tfplan
+/*.tfstate
+/*.tfvars
 EOF
-
-# *.tfstate
-# *.tfstate.*
-
-# crash.log
-
-# *.tfvars
-
-# override.tf
-# override.tf.json
-# *_override.tf
-# *_override.tf.json
-
-# .terraformrc
-# terraform.rc
 ```
+
+<!--
+terraform.tfvars.example
+-->
 
 ### Usage
 
 ```sh
 #
 terraform workspace list
-terraform workspace new developement
-terraform workspace new production
-terraform workspace select developement
+
+#
+terraform workspace new dev # uat, prod
+
+#
+terraform workspace select dev
 
 #
 terraform refresh
 
 #
-terraform init
-terraform init -backend-config=key=./terraform.tfstate
+terraform init ./
+terraform init \
+  -backend-config key=./terraform.tfstate
+
+#
+terraform validate
+
+#
+terraform fmt
 
 #
 terraform plan
-terraform plan -out ./terraform.tfplan
+terraform plan \
+  -out ./dev.tfplan
+
+#
+terraform plan \
+  -state './dev/dev.state' \
+  -var-file './common.tfvars' \
+  -var-file './dev/dev.tfvars'
+
+#
+terraform plan -var '[variable]=[value]'
 
 #
 terraform apply
 terraform apply -auto-approve
-terraform apply ./terraform.tfplan
+terraform apply ./dev.tfplan
+
+#
+terraform console
+
+#
+terraform show
+
+#
+terraform output
 
 #
 terraform destroy

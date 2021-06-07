@@ -1,6 +1,8 @@
 # Kubeflow
 
 <!--
+https://www.youtube.com/watch?v=-rdabPmA-lk
+
 https://app.pluralsight.com/course-player?courseId=e23412c1-73e0-41f4-9a6b-7c48972bf4f9
 
 https://www.youtube.com/watch?v=S7qpvr2bZ2U

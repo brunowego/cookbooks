@@ -14,6 +14,7 @@ sudo yum -y install fish
 
 ```sh
 sudo apt-add-repository ppa:fish-shell/release-3
+
 sudo apt update
 sudo apt -y install fish
 ```

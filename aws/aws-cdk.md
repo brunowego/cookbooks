@@ -1,3 +1,11 @@
-# AWS Cloud Development Kit
+# AWS Cloud Development Kit (CDK)
 
-TODO
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install aws-cdk
+```

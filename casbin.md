@@ -16,11 +16,12 @@ https://www.youtube.com/watch?v=jI4K7L-LI58&t=823s
 
 - [How it Works](https://casbin.org/docs/en/how-it-works)
 
-##
+## Terms
 
-- ACL
+- Access-control List (ACL)
+- Attribute-based Access Control (ABAC)
+- Policy-based Access Control (PBAC)
 - Role-based Access Control (RBAC)
-- ABAC
 
 <!--
 https://www.youtube.com/watch?v=jI4K7L-LI58

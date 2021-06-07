@@ -1,4 +1,4 @@
-# Amazon Linux AMI (Amazon Machine Image)
+# Amazon Machine Image (AMI)
 
 ## Docker
 

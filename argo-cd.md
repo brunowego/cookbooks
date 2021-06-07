@@ -1,5 +1,7 @@
 # Argo CD
 
+**Keywords:** Operator, GitOps
+
 ## Guides
 
 - [Status Badge](https://argoproj.github.io/argo-cd/user-guide/status-badge/)

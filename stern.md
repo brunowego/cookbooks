@@ -25,7 +25,8 @@ STERN_VERSION="$(curl -s https://api.github.com/repos/stern/stern/releases/lates
       tar \
         -xzC /usr/local/bin \
         --strip-components 1 \
-        --wildcards 'stern_*/stern'
+        --wildcards \
+        'stern_*/stern'
 ```
 
 #### go get

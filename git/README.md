@@ -188,6 +188,26 @@ git config --bool core.bare true
 
 ### Tips
 
+#### Merge Strategies
+
+- Fast Forward Merge
+  - No new commits on the base branch
+  - No merge commit on the base branch when merged
+  - Provides a linear history
+
+  ```sh
+  git rebase
+  ```
+
+- Recursive Merge
+  - New commits on the base branch
+  - A merge commit is created on the base branch
+  - Merge commit has 2 parents with a true diverged history
+
+  ```sh
+  git merge --no-ff
+  ```
+
 #### Command-line completion
 
 ```sh

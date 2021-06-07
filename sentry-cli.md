@@ -7,7 +7,9 @@
 #### Homebrew
 
 ```sh
-brew install getsentry/tools/sentry-cli
+brew tap getsentry/tools
+
+brew install sentry-cli
 ```
 
 ### Commands

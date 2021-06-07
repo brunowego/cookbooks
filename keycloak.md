@@ -1,5 +1,7 @@
 # Keycloak
 
+<!-- **Keywords:** Identity Provider (IdP) -->
+
 <!--
 https://github.com/asatrya/keycloak-traefik-tutorial
 https://github.com/gyrospectre/traefikrp
@@ -13,6 +15,8 @@ https://codergists.com/redhat/keycloak/security/authentication/2020/01/07/gettin
 -->
 
 ## Alternatives
+
+<!-- (Identity Provider (IdP)) -->
 
 - [Auth0](https://auth0.com/)
 - [AWS Cognito](/aws/aws-cognito.md)

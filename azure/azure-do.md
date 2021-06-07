@@ -1,4 +1,4 @@
-# Azure DevOps Server
+# Azure DevOps (ADO)
 
 <!--
 https://app.pluralsight.com/paths/skills/additional-devops-topics-on-microsoft-azure

@@ -16,3 +16,11 @@ https://www.linkedin.com/learning/aws-infrastructure-as-code-for-software-develo
 - [Terraform](/terraform.md)
 - [Kubernetes](/kubernetes.md)
 - [Docker](/docker-ce.md)
+
+## Infrastructure as Code Benefits
+
+- Automated deployment
+- Consistent environments
+- Repeatable process
+- Reusable components
+- Documented architecture

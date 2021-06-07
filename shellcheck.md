@@ -16,6 +16,35 @@
 brew install shellcheck
 ```
 
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install shellcheck
+```
+
+<!-- #### YUM
+
+```sh
+yum check-update
+
+# Repo: EPEL
+sudo yum -y install shellcheck
+``` -->
+
+### Commands
+
+```sh
+shellcheck --help
+```
+
+<!-- ### Usage
+
+```sh
+#
+shellcheck
+``` -->
+
 ### Tips
 
 #### Visual Studio Code

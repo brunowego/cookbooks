@@ -4,10 +4,6 @@
 https://www.linkedin.com/learning/paths/improve-your-infrastructure-automation-with-hashicorp-tools
 -->
 
-## Terms
-
-- HashiCorp Configuration Language (HCL)
-
 ## Tools
 
 ### Infrastructure

@@ -1,6 +1,8 @@
-# Pulimi
+# Pulumi
 
 <!--
+https://app.pluralsight.com/library/courses/pulumi-getting-started/table-of-contents
+
 https://github.com/Mobiauto/sre-interview-boilerplate
 -->
 

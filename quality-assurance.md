@@ -1,3 +1,5 @@
 # Quality Assurance (QA)
 
-TODO
+## Glossary
+
+- User Acceptance Testing (UAT)

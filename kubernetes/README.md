@@ -25,6 +25,10 @@ Version 1.21.0
 
 - Horizontal Pod Autoscaler (HPA)
 
+## Phrases
+
+- Kubernetes is the OS for cloud and defacto for cloud native apps
+
 <!--
 ## Kubernetes Special Interest Groups (SIGs)
  -->

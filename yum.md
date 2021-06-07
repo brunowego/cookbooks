@@ -6,6 +6,29 @@
 yum -h
 ```
 
+## Repositories
+
+### Extra Packages for Enterprise Linux (EPEL)
+
+```sh
+yum check-update
+sudo yum -y install epel-release
+```
+
+### Software Collections
+
+```sh
+yum check-update
+sudo yum -y install centos-release-scl
+```
+
+### Webtatic (Includes EPEL)
+
+```sh
+yum check-update
+sudo yum -y localinstall https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+```
+
 ## Usage
 
 ```sh

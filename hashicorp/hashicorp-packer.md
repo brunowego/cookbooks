@@ -24,7 +24,7 @@ sudo apt -y install packer
 ### YUM
 
 ```sh
-sudo yum check-update
+yum check-update
 sudo yum -y install packer
 ```
 

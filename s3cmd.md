@@ -1,10 +1,22 @@
-# S3cmd
+# Amazon S3 Tools (S3cmd)
 
-## References
+## Guides
 
-- https://s3tools.org/kb/item14.htm
+- [S3cmd: FAQ and Knowledge Base](https://s3tools.org/kb/item14.htm)
 
-##
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install s3cmd
+```
+
+### Configuration
+
+#### MinIO
 
 ```sh
 cat << EOF > ~/.s3cfg
@@ -16,4 +28,23 @@ use_https = True
 access_key = AKIAIOSFODNN7EXAMPLE
 secret_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 EOF
+```
+
+### Commands
+
+```sh
+s3cmd -h
+```
+
+### Usage
+
+```sh
+#
+s3cmd sync \
+  --config ~/.s3cfg \
+  /var/log/nginx \
+  s3://[bucket]
+
+#
+s3cmd get s3://[bucket]
 ```

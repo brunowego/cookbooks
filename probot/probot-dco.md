@@ -1,4 +1,4 @@
-# Developer Certificate of Origin (DCO)
+# Probot Developer Certificate of Origin (DCO)
 
 ## References
 

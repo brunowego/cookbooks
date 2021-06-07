@@ -11,6 +11,8 @@ https://www.linkedin.com/learning/python-pen-testing-aws/using-python-to-test-fo
 
 ## Terms
 
+- Security-first
+- Shift-left testing
 - Web Application Firewall (WAF)
 
 ## Tools

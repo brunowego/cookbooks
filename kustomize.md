@@ -1,5 +1,9 @@
 # Kustomize
 
+## Links
+
+- [Main Website](https://kustomize.io/kubectl delete -k ./)
+
 ## Alternatives
 
 - [Helm](/helm.md)
@@ -45,18 +49,36 @@ go install sigs.k8s.io/kustomize/v3/cmd/kustomize
 choco install kustomize
 ```
 
-### Usage
+### Commands
 
 ```sh
-# Build
-kustomize build [./app/overlays/production]
-
-#
-kustomize build [./app] | kubectl apply -f -
+kustomize -h
 ```
 
-##
+### Usage
+
+**Environments:** local, dev, qa, stg, prod.
 
 ```sh
-kubectl kustomize [./app]
+# Create
+kustomize create --resources ./base
+
+# Preview base
+kustomize build ./base
+
+# Preview local
+kustomize build ./overlays/local
+
+# Apply
+kustomize build ./overlays/local | \
+  kubectl apply -f -
+
+# Delete
+kustomize build ./overlays/local | \
+  kubectl delete -f -
+
+# Show difference
+diff <(kustomize build ./base) <(kustomize build ./overlays/local)
+# or, using icdiff
+icdiff <(kustomize build ./base) <(kustomize build ./overlays/local)
 ```

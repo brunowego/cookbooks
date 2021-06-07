@@ -1,5 +1,10 @@
 # Icdiff
 
+## Links
+
+- [Code Repository](https://github.com/jeffkaufman/icdiff)
+- [Main Website](https://www.jefftk.com/icdiff)
+
 ## CLI
 
 ### Installation
