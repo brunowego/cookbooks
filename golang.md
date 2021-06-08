@@ -89,13 +89,13 @@ docker run -it --rm \
 brew install golang
 ```
 
-#### Darwin
+#### Darwin Binary
 
 ```sh
 curl 'https://dl.google.com/go/go1.13.5.darwin-amd64.tar.gz' | tar -xzC /usr/local
 ```
 
-#### Linux
+#### Linux Binary
 
 ```sh
 curl 'https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz' | sudo tar -xzC /usr/local

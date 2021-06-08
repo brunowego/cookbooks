@@ -4,7 +4,7 @@
 
 ### Installation
 
-#### Binary
+#### Darwin Binary
 
 ```sh
 # Darwin

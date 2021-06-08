@@ -1,5 +1,7 @@
 # Kap
 
+**Keywords:** Capture screen
+
 ## App
 
 ### Installation

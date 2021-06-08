@@ -18,7 +18,7 @@
 brew install minikube
 ```
 
-#### Darwin
+#### Darwin Binary
 
 ```sh
 MINIKUBE_VERSION='1.20.0' \
@@ -34,7 +34,7 @@ curl \
     chmod +x /usr/local/bin/minikube
 ```
 
-#### Linux
+#### Linux Binary
 
 ```sh
 MINIKUBE_VERSION='1.20.0' \

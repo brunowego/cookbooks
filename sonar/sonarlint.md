@@ -1,5 +1,9 @@
 # SonarLint
 
+## Links
+
+- [Main Website](https://sonarlint.org/)
+
 ## Dependencies
 
 - [SonarQube Scanner](/sonar-scanner.md)

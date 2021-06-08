@@ -1,8 +1,12 @@
 # Keycloak
 
-<!-- **Keywords:** Identity Provider (IdP) -->
+<!--
+**Keywords:** Identity Provider (IdP)
+-->
 
 <!--
+https://blog.ippon.tech/feedback-keycloak-high-availability-in-cloud-environment-aws-part-3-4/
+
 https://github.com/asatrya/keycloak-traefik-tutorial
 https://github.com/gyrospectre/traefikrp
 https://github.com/ibuetler/docker-keycloak-traefik-workshop
@@ -28,6 +32,70 @@ https://codergists.com/redhat/keycloak/security/authentication/2020/01/07/gettin
 ## Guides
 
 - [Getting Started Guide](https://www.keycloak.org/docs/latest/getting_started/)
+- [How to size your projects for Red Hat's single sign-on technology](https://developers.redhat.com/articles/2021/06/07/how-size-your-projects-red-hats-single-sign-technology#planning_the_performance_assessment)
+
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h postgres \
+  -e POSTGRES_USER='keycloak' \
+  -e POSTGRES_PASSWORD='Pa$$w0rd!' \
+  -e POSTGRES_DB='keycloak' \
+  -v keycloak-postgres-data:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  --name keycloak-postgres \
+  --network workbench \
+  docker.io/library/postgres:11.2-alpine
+```
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h keycloak \
+  -e DB_VENDOR='postgres' \
+  -e DB_ADDR='keycloak-postgres' \
+  -e DB_USER='keycloak' \
+  -e DB_PASSWORD='Pa$$w0rd!' \
+  -e DB_DATABASE='keycloak' \
+  -e DB_SCHEMA='public' \
+  -e KEYCLOAK_USER='admin' \
+  -e KEYCLOAK_PASSWORD='Pa$$w0rd!' \
+  -p 8080:8080 \
+  -p 8443:8443 \
+  --name keycloak \
+  --network workbench \
+  docker.io/jboss/keycloak:13.0.0 \
+    -Dkeycloak.profile.feature.upload_scripts=enabled
+```
+
+> Wait! This process take a while.
+
+```sh
+#
+echo -e '[INFO]\thttp://127.0.0.1:8080'
+
+#
+echo -e '[INFO]\thttp://127.0.0.1:8080/auth/admin/'
+```
+
+### Remove
+
+```sh
+docker rm -f keycloak-postgres keycloak
+
+docker volume rm keycloak-postgres-data
+```
 
 ## Helm
 
@@ -89,67 +157,6 @@ helm uninstall keycloak -n keycloak
 kubectl delete namespace keycloak --grace-period=0 --force
 ```
 
-## Docker
-
-### Network
-
-```sh
-docker network create workbench \
-  --subnet 10.1.1.0/24
-```
-
-### Running
-
-```sh
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h postgres \
-  -e POSTGRES_USER='keycloak' \
-  -e POSTGRES_PASSWORD='Pa$$w0rd!' \
-  -e POSTGRES_DB='keycloak' \
-  -v keycloak-postgres-data:/var/lib/postgresql/data \
-  -p 5432:5432 \
-  --name keycloak-postgres \
-  --network workbench \
-  docker.io/library/postgres:11.2-alpine
-```
-
-```sh
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h keycloak \
-  -e DB_VENDOR='postgres' \
-  -e DB_ADDR='keycloak-postgres' \
-  -e DB_USER='keycloak' \
-  -e DB_PASSWORD='Pa$$w0rd!' \
-  -e DB_DATABASE='keycloak' \
-  -e DB_SCHEMA='public' \
-  -e KEYCLOAK_USER='admin' \
-  -e KEYCLOAK_PASSWORD='Pa$$w0rd!' \
-  -p 8080:8080 \
-  -p 8443:8443 \
-  --name keycloak \
-  --network workbench \
-  docker.io/jboss/keycloak:13.0.0 -Dkeycloak.profile.feature.upload_scripts=enabled
-```
-
-> Wait! This process take a while.
-
-```sh
-#
-echo -e '[INFO]\thttp://127.0.0.1:8080'
-
-#
-echo -e '[INFO]\thttp://127.0.0.1:8080/auth/admin/'
-```
-
-### Remove
-
-```sh
-docker rm -f keycloak-postgres keycloak
-
-docker volume rm keycloak-postgres-data
-```
 
 ## Docs
 

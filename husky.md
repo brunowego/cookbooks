@@ -1,5 +1,10 @@
 # Husky
 
+## Alternatives
+
+- [pre-commit](/pre-commit.md)
+- git-hooks
+
 ## CLI
 
 ### Installation

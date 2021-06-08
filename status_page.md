@@ -1,5 +1,10 @@
 # Status Page
 
+<!--
+https://stackstatus.net/
+https://status.fastly.com/
+-->
+
 ## Alternatives
 
 - [Atlassian Statuspage](https://atlassian.com/software/statuspage)

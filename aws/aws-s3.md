@@ -5,3 +5,11 @@
 - [MinIO](/minio.md)
 
 TODO
+
+## CLI
+
+### Usage
+
+```sh
+aws s3 ls
+```

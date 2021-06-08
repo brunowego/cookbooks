@@ -1,5 +1,9 @@
 # Celery
 
+<!--
+Django
+-->
+
 ## References
 
 - [Application](https://docs.celeryproject.org/en/stable/userguide/application.html)

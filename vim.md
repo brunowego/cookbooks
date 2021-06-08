@@ -48,7 +48,8 @@ sudo yum -y install curl ncurses-devel make
 ##### Build & Install
 
 ```sh
-curl -L https://github.com/vim/vim/archive/v8.1.0968.tar.gz | tar -xz
+curl -L https://github.com/vim/vim/archive/v8.1.0968.tar.gz | \
+  tar -xz
 ```
 
 ```sh
@@ -108,10 +109,14 @@ vim ./[filename]
 
 #### Themes
 
-***Dependencies:*** GNU Wget and Vim.
+***Dependencies:*** [GNU Wget](/gnu-wget.md) and Vim.
 
 ```sh
-mkdir -p ~/.vim/colors ~/.vim/autoload
+mkdir -p \
+  ~/.vim/colors \
+  ~/.vim/autoload
+
+touch ~/.vimrc
 ```
 
 ##### Monokai

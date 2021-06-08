@@ -1,5 +1,9 @@
 # Node Package Manager (NPM)
 
+## Links
+
+- [npm trends](https://www.npmtrends.com/git-hooks-vs-husky-vs-pre-commit)
+
 ## CLI
 
 ### References

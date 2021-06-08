@@ -11,5 +11,8 @@
 brew uninstall --cask google-chrome
 
 #
-brew install --cask --appdir='/Applications' google-chrome-dev
+brew install \
+  --cask \
+  --appdir='/Applications' \
+  google-chrome-dev
 ```

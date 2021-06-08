@@ -1,5 +1,9 @@
 # Kong
 
+## Alternatives
+
+- [Web Services Oxygenated (WSO2)](/wso2.md)
+
 ## Helm
 
 ### References

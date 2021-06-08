@@ -8,11 +8,11 @@ Kubestack's GitOps Framework is Terraform & Kustomize based designed for fully a
 
 ## Links
 
-- [Main Website](https://www.kubestack.com/)
+- [Main Website](https://kubestack.com/)
 
 ## Guides
 
-- [GitOps Process](https://www.kubestack.com/framework/documentation/gitops-process)
+- [GitOps Process](https://kubestack.com/framework/documentation/gitops-process)
 
 ## Workflow
 

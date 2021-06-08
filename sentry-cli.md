@@ -1,5 +1,10 @@
 # Sentry CLI
 
+## Links
+
+- [Code Repository](https://github.com/getsentry/sentry-cli)
+- [Main Website](https://docs.sentry.io/product/cli/)
+
 ## CLI
 
 ### Installation
@@ -10,6 +15,21 @@
 brew tap getsentry/tools
 
 brew install sentry-cli
+```
+
+#### NPM
+
+```sh
+npm install @sentry/cli
+```
+
+### Linux Binary
+
+```sh
+curl \
+  -L "https://github.com/getsentry/sentry-cli/releases/download/$(curl -s https://api.github.com/repos/getsentry/sentry-cli/releases/latest | grep tag_name | cut -d '"' -f 4)/sentry-cli-Linux-x86_64" \
+  -o /usr/local/bin/sentry-cli && \
+    sudo chmod +x /usr/local/bin/sentry-cli
 ```
 
 ### Commands
@@ -50,7 +70,7 @@ dsn = <dsn>
 level = debug
 ```
 
-***Semd Event***
+***Send Event***
 
 ```sh
 #

@@ -1,5 +1,10 @@
 # PHPBrew
 
+## Alternatives
+
+- [phpenv](/phpenv.md)
+- [asdf-php](/asdf/asdf-php.md)
+
 ## CLI
 
 ### References

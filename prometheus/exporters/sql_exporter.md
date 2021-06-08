@@ -37,7 +37,7 @@ docker run -it --rm \
 
 ### Installation
 
-#### Binary
+#### Binary Binary
 
 ```sh
 # Darwin

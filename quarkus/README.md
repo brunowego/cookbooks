@@ -51,7 +51,7 @@ https://www.udemy.com/course/quarkus-get-started/
 - Kubernetes Native: Designed for a containerized world.
 - Cloud Native:
   - Size, Efficiency and Extensions.
-  - Serveless, Containerized, Virtual Machine Operations and 12 Factor Application Scope.
+  - Serverless, Containerized, Virtual Machine Operations and 12 Factor Application Scope.
 - Container first: Lower memory usage, faster startup times
 - Imperative vs. Reactive
   - Combined into simple runtime

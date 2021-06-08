@@ -232,14 +232,27 @@ docker build \
 
 ***Issues***: Remove use of `IFS=$'\n\t'` -->
 
-#### BuildKit
+#### Disable IPv6
 
 ```sh
-# Environment
-DOCKER_BUILDKIT=1 docker build ./
+# Darvin daemon config (need reload docker daemon)
+jq '.ipv6 |= false' ~/.docker/daemon.json | sponge ~/.docker/daemon.json
 
-# or, daemon config
-sudo /usr/bin/sh -c 'jq ".\"features.buildkit\" += true" /etc/docker/daemon.json | sponge /etc/docker/daemon.json'
+# or, Linux daemon config (need reload docker daemon)
+sudo /usr/bin/sh -c 'jq ".ipv6 |= false" /etc/docker/daemon.json | sponge /etc/docker/daemon.json'
+```
+
+#### Disable BuildKit
+
+```sh
+# Environment variable
+DOCKER_BUILDKIT=0 docker build ./
+
+# or, Darvin daemon config (need reload docker daemon)
+jq '.features.buildkit |= false' ~/.docker/daemon.json | sponge ~/.docker/daemon.json
+
+# or, Linux daemon config (need reload docker daemon)
+sudo /usr/bin/sh -c 'jq ".features.buildkit |= false" /etc/docker/daemon.json | sponge /etc/docker/daemon.json'
 ```
 
 #### Ignore File

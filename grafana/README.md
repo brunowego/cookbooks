@@ -18,101 +18,6 @@ https://app.pluralsight.com/library/courses/monitoring-containerized-app-health-
 
 - [Druid Datasource](https://grafana.com/grafana/plugins/abhisant-druid-datasource)
 
-## Helm
-
-### References
-
-- [Configuration](https://github.com/helm/charts/tree/master/stable/grafana#configuration)
-
-### Install
-
-```sh
-kubectl create namespace grafana
-```
-
-```sh
-helm install grafana stable/grafana \
-  --namespace grafana \
-  --set ingress.enabled=true \
-  --set ingress.hosts={grafana.$(minikube ip).nip.io}
-```
-
-### SSL
-
-#### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-#### Create
-
-```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n grafana
-```
-
-```sh
-helm upgrade grafana stable/grafana -f <(yq m <(cat << EOF
-ingress:
-  tls:
-    - secretName: example.tls-secret
-      hosts:
-        - grafana.$(minikube ip).nip.io
-EOF
-) <(helm get values grafana))
-```
-
-#### Remove
-
-```sh
-helm upgrade grafana stable/grafana -f <(yq d <(helm get values grafana) ingress.tls)
-
-kubectl delete secret example.tls-secret -n grafana
-```
-
-### Status
-
-```sh
-kubectl rollout status deploy/grafana -n grafana
-```
-
-### Logs
-
-```sh
-kubectl logs -l 'app=grafana' -n grafana -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 grafana.grafana.svc.cluster.local +short
-nslookup grafana.grafana.svc.cluster.local 10.96.0.10
-```
-
-#### ExternalDNS
-
-```sh
-dig @10.96.0.10 "grafana.$(minikube ip).nip.io" +short
-nslookup "grafana.$(minikube ip).nip.io" 10.96.0.10
-```
-
-### Secret
-
-```sh
-kubectl get secret grafana \
-  -o jsonpath='{.data.admin-password}' \
-  -n grafana | \
-    base64 --decode; echo
-```
-
-### Delete
-
-```sh
-helm uninstall grafana -n grafana
-kubectl delete namespace grafana --grace-period=0 --force
-```
-
 ## Docker
 
 ### Network
@@ -215,6 +120,101 @@ docker rm -f grafana
 docker volume rm grafana-config grafana-data
 ```
 
+## Helm
+
+### References
+
+- [Configuration](https://github.com/helm/charts/tree/master/stable/grafana#configuration)
+
+### Install
+
+```sh
+kubectl create namespace grafana
+```
+
+```sh
+helm install grafana stable/grafana \
+  --namespace grafana \
+  --set ingress.enabled=true \
+  --set ingress.hosts={grafana.$(minikube ip).nip.io}
+```
+
+### SSL
+
+#### Dependencies
+
+- [Kubernetes TLS Secret](/k8s-tls-secret.md)
+
+#### Create
+
+```sh
+kubectl create secret tls example.tls-secret \
+  --cert='/etc/ssl/certs/example/root-ca.crt' \
+  --key='/etc/ssl/private/example/root-ca.key' \
+  -n grafana
+```
+
+```sh
+helm upgrade grafana stable/grafana -f <(yq m <(cat << EOF
+ingress:
+  tls:
+    - secretName: example.tls-secret
+      hosts:
+        - grafana.$(minikube ip).nip.io
+EOF
+) <(helm get values grafana))
+```
+
+#### Remove
+
+```sh
+helm upgrade grafana stable/grafana -f <(yq d <(helm get values grafana) ingress.tls)
+
+kubectl delete secret example.tls-secret -n grafana
+```
+
+### Status
+
+```sh
+kubectl rollout status deploy/grafana -n grafana
+```
+
+### Logs
+
+```sh
+kubectl logs -l 'app=grafana' -n grafana -f
+```
+
+### DNS
+
+```sh
+dig @10.96.0.10 grafana.grafana.svc.cluster.local +short
+nslookup grafana.grafana.svc.cluster.local 10.96.0.10
+```
+
+#### ExternalDNS
+
+```sh
+dig @10.96.0.10 "grafana.$(minikube ip).nip.io" +short
+nslookup "grafana.$(minikube ip).nip.io" 10.96.0.10
+```
+
+### Secret
+
+```sh
+kubectl get secret grafana \
+  -o jsonpath='{.data.admin-password}' \
+  -n grafana | \
+    base64 --decode; echo
+```
+
+### Delete
+
+```sh
+helm uninstall grafana -n grafana
+kubectl delete namespace grafana --grace-period=0 --force
+```
+
 ## CLI
 
 ### Installation
@@ -237,7 +237,8 @@ sudo yum -y localinstall https://dl.grafana.com/oss/release/grafana-6.6.0-1.x86_
 ```sh
 wget https://dl.grafana.com/oss/release/grafana_6.6.0_amd64.deb
 
-sudo dpkg -i grafana_6.6.0_amd64.deb && rm -f grafana_6.6.0_amd64.deb
+sudo dpkg -i grafana_6.6.0_amd64.deb && \
+  rm -f grafana_6.6.0_amd64.deb
 ```
 
 #### Chocolatey

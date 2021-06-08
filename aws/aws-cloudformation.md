@@ -1,3 +1,3 @@
-# AWS CloudFormation
+# AWS CloudFormation (CF)
 
 TODO

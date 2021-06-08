@@ -15,7 +15,7 @@
 #### Unix-like
 
 ```sh
-git clone https://github.com/syndbg/goenv.git ~/.goenv
+git clone 'https://github.com/syndbg/goenv.git' ~/.goenv
 ```
 
 ### Environment

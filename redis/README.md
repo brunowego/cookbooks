@@ -4,6 +4,10 @@
 https://medium.com/swlh/use-the-source-redis-internal-tricks-5a8b735b9ef0
 -->
 
+## Related
+
+- [twemproxy (a.k.a nutcracker)](/twemproxy.md)
+
 ## CLI
 
 ### Installation
@@ -24,20 +28,20 @@ sudo zypper install -y redis
 #### Linux
 
 ```sh
-curl http://download.redis.io/releases/redis-5.0.3.tar.gz | tar -xzC /tmp
-( cd /tmp/redis-5.0.3 && make && sudo make install PREFIX=/usr/local/redis )
-```
+#
+curl http://download.redis.io/releases/redis-stable.tar.gz | \
+  tar -xzC /tmp
 
-```sh
+( cd /tmp/redis-stable && make && sudo make install PREFIX=/usr/local/redis )
+
+#
 sudo mkdir -p /usr/local/redis/conf
-```
 
-```sh
-sudo cp /tmp/redis-5.0.3/redis.conf /usr/local/redis/conf
-```
+#
+sudo cp /tmp/redis-stable/redis.conf /usr/local/redis/conf
 
-```sh
-rm -r /tmp/redis-5.0.3
+#
+rm -r /tmp/redis-stable
 ```
 
 ### Configuration

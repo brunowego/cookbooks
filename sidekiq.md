@@ -1,6 +1,10 @@
-# Commands
+# Sidekiq
 
-## Start
+<!--
+Rails
+-->
+
+<!-- ## Start
 
 ```sh
 bundle exec sidekiq
@@ -23,4 +27,6 @@ ps -ef | grep sidekiq | grep -v grep
 
 ```sh
 ps -ef | grep sidekiq | grep -v grep | awk '{print $2}' | xargs kill -9
-```
+``` -->
+
+TODO

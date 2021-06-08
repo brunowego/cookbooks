@@ -10,6 +10,7 @@ https://mechanicalrock.github.io/2019/07/01/continuous-deployment-the-first-step
 ## Alternatives
 
 - [Git Flow](/git-flow.md)
+- [GitHub Flow](/github/github-flow.md)
 
 ## Guides
 

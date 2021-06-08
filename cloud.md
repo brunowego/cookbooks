@@ -9,8 +9,9 @@ https://www.linkedin.com/learning/paths/become-a-cloud-developer
 ## Vendors
 
 - Amazon Web Services (AWS)
-- Microsoft Azure
 - Google Cloud Platform (GCP)
+- Heroku
+- Microsoft Azure
 - Oracle
 - Private Cloud (On-premises)
 
