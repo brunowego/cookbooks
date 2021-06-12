@@ -6,7 +6,7 @@ https://www.linkedin.com/learning/learning-nagios/welcome
 
 **Keywords:** Monitoring System
 
-## Alternative
+## Alternatives
 
 - [splunk](/splunk.md)
 

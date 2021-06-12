@@ -1,3 +1,9 @@
 # AWS Api Gateway
 
-TODO
+## CLI
+
+### Commands
+
+```sh
+aws apigateway help
+```

@@ -1,5 +1,14 @@
 # Rancher
 
+## Alternatives
+
+- [Amazon Elastic Kubernetes Service (EKS)](/aws/aws-eks.md)
+- [Kubernetes Operations (kOps)](/kops.md)
+
+## Links
+
+- [Code Repository - CLI](https://github.com/rancher/cli)
+
 ## Helm
 
 ### References
@@ -116,6 +125,31 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 ```shm
 docker rm -f rancher
 docker volume rm rancher-data
+```
+
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install rancher
+```
+
+### Commands
+
+```sh
+rancher -h
+```
+
+### Usage
+
+```sh
+#
+rancher login \
+  https://<RANCHER_SERVER_URL> \
+  -t my-secret-token
 ```
 
 ## Issues

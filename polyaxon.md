@@ -1,6 +1,6 @@
 # Polyaxon
 
-## References
+## Guides
 
 - [Integrations](https://docs.polyaxon.com/integrations/)
 - [Single Sign On](https://docs.polyaxon.com/configuration/sso/)
@@ -13,7 +13,25 @@
 
 ### Dependencies
 
-- [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
+<!-- - [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) -->
+- [Helm CLI](/helm.md#cli)
+
+<!-- #### kind
+
+**Before:** First create the `.kind-config.yml`, example in [Kubernetes IN Docker (kind)](/kind.md#configuration).
+
+```sh
+#
+kind create cluster \
+  --name 'polyaxon-mlops' \
+  --config ~/.kind-config.yml
+
+#
+kubectl cluster-info
+
+#
+kind delete cluster --name 'polyaxon-mlops'
+``` -->
 
 ### Repository
 
@@ -29,6 +47,16 @@ kubectl create namespace polyaxon
 ```
 
 ```sh
+#
+kubectl port-forward \
+  -n kubeflow \
+  svc/ml-pipeline-ui \
+  8080:80
+
+#
+echo -e '[INFO]\thttp://127.0.0.1:8080'
+
+# Minikube approach
 helm install polyaxon polyaxon/polyaxon \
   --namespace polyaxon \
   --set serviceType='ClusterIP' \
@@ -221,58 +249,44 @@ pip3 install -U polyaxon-cli
 polyaxon --help
 ```
 
-### Examples
-
-#### Configuration
+### Usage
 
 ```sh
+# Configuration
 polyaxon config set \
   --host 'polyaxon.$(minikube ip).nip.io' \
   --port '443' \
   --use_https true \
   --verify_ssl false
-```
 
-```sh
 # Using CLI
 polyaxon config -l
 
 # Reading config file
 cat ~/.polyaxon/.polyaxonconfig | jq .
-```
 
-#### Login
-
-```sh
+# Login
 polyaxon login
-
 polyaxon whoami
-```
 
-#### Project
-
-```sh
+# Project
 polyaxon project create \
   --name '[name]' \
   --description '[description]'
-```
 
-```sh
+#
 polyaxon init '[name]'
-```
 
-```sh
+#
 polyaxon project \
   -p '[name]' \
   git \
     --url="https://gitlab.$(minikube ip).nip.io/experiments/[name].git"
     --private
-```
 
-```sh
+#
 polyaxon run -f polyaxon_hyperparams.yaml
-```
 
-```sh
+#
 polyaxon notebook start -f polyaxon_notebook.yaml
 ```

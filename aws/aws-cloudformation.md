@@ -1,3 +1,9 @@
 # AWS CloudFormation (CF)
 
-TODO
+## CLI
+
+### Commands
+
+```sh
+aws cloudformation help
+```

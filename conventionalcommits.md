@@ -2,7 +2,7 @@
 
 ## References
 
-- [Conventional Commits](https://www.conventionalcommits.org/en/)
+- [Conventional Commits](https://conventionalcommits.org/en/)
 
 ## Usage
 

@@ -40,10 +40,15 @@ docker run -d \
   --network workbench \
   --privileged \
   docker.io/library/centos:7.6.1810 /sbin/init
+```
 
-##
+```sh
+#
 docker exec -it centos /bin/bash
+```
 
-## Remove
+### Remove
+
+```sh
 docker rm -f centos
 ```

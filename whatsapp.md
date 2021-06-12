@@ -1,5 +1,9 @@
 # WhatsApp
 
+## Links
+
+- [WhatsApp Status](https://twitter.com/wa_status?lang=en)
+
 ## App
 
 ### Installation

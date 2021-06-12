@@ -4,6 +4,6 @@
 
 - Hypervisor
 
-## Alternative
+## Alternatives
 
 - Dedicated Host

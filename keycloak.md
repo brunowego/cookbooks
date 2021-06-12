@@ -1,10 +1,10 @@
 # Keycloak
 
-<!--
-**Keywords:** Identity Provider (IdP)
--->
+**Keywords:** Identity Provider (IdP), Access Management
 
 <!--
+https://blog.sighup.io/keycloak-ha-on-kubernetes/
+
 https://blog.ippon.tech/feedback-keycloak-high-availability-in-cloud-environment-aws-part-3-4/
 
 https://github.com/asatrya/keycloak-traefik-tutorial
@@ -16,7 +16,15 @@ https://github.com/jcperezamin/jcperezamin.github.io/tree/master/16_SSO_with_Key
 https://github.com/keycloak/keycloak-operator
 
 https://codergists.com/redhat/keycloak/security/authentication/2020/01/07/getting-started-with-keycloak-on-rhel8.html
+
+https://www.cloud-iam.com/#pricing
+
+https://github.com/Mu-Wahba/keycloak-for-production
 -->
+
+## Links
+
+- [Code Repository](https://github.com/keycloak/keycloak)
 
 ## Alternatives
 
@@ -50,7 +58,7 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postgres \
   -e POSTGRES_USER='keycloak' \
-  -e POSTGRES_PASSWORD='Pa$$w0rd!' \
+  -e POSTGRES_PASSWORD='keycloak' \
   -e POSTGRES_DB='keycloak' \
   -v keycloak-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
@@ -66,11 +74,11 @@ docker run -d \
   -e DB_VENDOR='postgres' \
   -e DB_ADDR='keycloak-postgres' \
   -e DB_USER='keycloak' \
-  -e DB_PASSWORD='Pa$$w0rd!' \
+  -e DB_PASSWORD='keycloak' \
   -e DB_DATABASE='keycloak' \
   -e DB_SCHEMA='public' \
   -e KEYCLOAK_USER='admin' \
-  -e KEYCLOAK_PASSWORD='Pa$$w0rd!' \
+  -e KEYCLOAK_PASSWORD='admin' \
   -p 8080:8080 \
   -p 8443:8443 \
   --name keycloak \
@@ -87,6 +95,43 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 
 #
 echo -e '[INFO]\thttp://127.0.0.1:8080/auth/admin/'
+```
+
+### Testing
+
+```sh
+#
+curl -i 'http://localhost:8080/auth/realms/master'
+
+# OpenID Endpoint Configuration
+curl -s 'http://localhost:8080/auth/realms/master/.well-known/openid-configuration' | python -m json.tool
+
+# SAML 2.0 Identity Provider Metadata
+curl -s 'http://127.0.0.1:8080/auth/realms/master/protocol/saml/descriptor'
+
+#
+curl -s 'http://localhost:8080/auth/realms/master/protocol/openid-connect/certs' | python -m json.tool
+
+#
+export KEYCLOAK_ACCESS_TOKEN=$(curl -s \
+  -d 'grant_type=password' \
+  -d 'username=admin' \
+  -d 'password=admin' \
+  -d 'client_id=demo' \
+  -X POST \
+  'http://localhost:8080/auth/realms/master/protocol/openid-connect/token' | \
+    jq -r '.access_token' \
+)
+
+#
+curl \
+  -s \
+  -H "Authorization: Bearer ${KEYCLOAK_ACCESS_TOKEN}" \
+  'http://localhost:8080/auth/realms/master/protocol/openid-connect/userinfo' | \
+    jq .
+
+#
+echo -e '[INFO]\thttp://localhost:8080/auth/realms/master/protocol/openid-connect/auth?scope=openid&response_type=code&client_id=demo&redirect_uri=https://oauth.pstmn.io/v1/callback'
 ```
 
 ### Remove

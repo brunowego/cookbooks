@@ -10,7 +10,7 @@ https://app.pluralsight.com/library/courses/spark-kafka-cassandra-applying-lambd
 https://www.linkedin.com/learning/cassandra-data-modeling-essential-training/welcome
 -->
 
-**Keywords**: NoSQL
+**Keywords:**: NoSQL
 
 ## Terms
 

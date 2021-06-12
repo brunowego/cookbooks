@@ -19,8 +19,6 @@ https://github.com/aws-samples/aws-amplify-ecommerce
 
 API Gateway
 
-
-
 https://docs.aws.amazon.com/cognito/latest/developerguide/external-identity-providers.html
 https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
 
@@ -59,3 +57,13 @@ https://www.youtube.com/watch?v=o7OHogUcRmI
 
 - User Poll Directory: Leverages Cognito for the user directory and identify source.
 - Identify Federation: Enables users to sign-in with an existing identity source (enterprise active directory, social).
+
+## CLI
+
+### Commands
+
+```sh
+aws cognito-identity help
+aws cognito-idp help
+aws cognito-sync help
+```

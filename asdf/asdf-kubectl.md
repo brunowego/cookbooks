@@ -1,28 +1,48 @@
-# kubectl
+# asdf kubectl
 
-## Installation
+## Links
+
+- [Code Repository](https://github.com/asdf-community/asdf-kubectl)
+
+## Plugin
+
+### Installation
 
 ```sh
-asdf plugin-add kubectl https://github.com/Banno/asdf-kubectl.git
+asdf plugin-add kubectl 'https://github.com/asdf-community/asdf-kubectl.git'
 ```
 
-## Version
+### Usage
 
 ```sh
+#
 asdf list-all kubectl
-```
 
-```sh
+#
 asdf install kubectl [version]
-```
 
-## Setting
-
-```sh
-asdf global kubectl [version]
-```
-
-```sh
+#
 asdf list kubectl
+
+#
+asdf global kubectl [version]
+
+#
 asdf reshim kubectl [version]
+
+#
+kubectl version --short
+```
+
+### Issues
+
+#### Another Installed Binary
+
+```sh
+#
+where kubectl
+which kubectl
+
+#
+brew uninstall --ignore-dependencies kubernetes-cli
 ```

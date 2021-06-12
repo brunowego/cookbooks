@@ -1,3 +1,9 @@
 # AWS Key Management Service (KMS)
 
-TODO
+## CLI
+
+### Commands
+
+```sh
+aws kms help
+```

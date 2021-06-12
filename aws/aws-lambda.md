@@ -23,4 +23,17 @@ https://www.linkedin.com/learning/learning-cloud-computing-serverless-computing/
 https://www.linkedin.com/learning/developing-aws-lambda-functions-with-kotlin/welcome
 -->
 
-TODO
+## CLI
+
+### Commands
+
+```sh
+aws lambda help
+```
+
+<!-- ### Usage
+
+```sh
+#
+aws lambda
+``` -->

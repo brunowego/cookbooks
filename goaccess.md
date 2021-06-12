@@ -16,13 +16,12 @@ brew install goaccess
 goaccess -h
 ```
 
-### Examples
-
-### Real-Time HTML Output
+### Usage
 
 ```sh
+# Real-Time HTML Output
 goaccess \
-  access.log \
+  /var/log/nginx/access.log \
   -o /var/www/html/report.html \
   --log-format=COMBINED \
   --real-time-html

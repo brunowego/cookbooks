@@ -85,8 +85,9 @@ git config --global core.editor 'vim'
 #
 git config --global core.excludesfile '~/.gitignore_global'
 
-# Darwin
-git config --global credential.helper 'osxkeychain'
+#
+git config --global credential.helper 'osxkeychain' # Darwin
+git config --global credential.helper 'store' # Linux
 
 #
 git config --global push.default 'current'
@@ -185,6 +186,24 @@ git config --global http.sslcainfo '[/path/to/certificate.pem]'
 # Only repository
 git config --bool core.bare true
 ```
+
+<!-- #### Credentials
+
+```sh
+git credential fil
+
+git credential reject
+protocol=https
+host=github.com
+
+(echo url=https://token@github.com; echo ) | git credential reject
+
+(echo url=https://github.com; echo ) | git credential fill
+
+(echo url=https://github.com; echo username=token; echo password=secret; echo ) | git credential approve
+
+git credential approve
+``` -->
 
 ### Tips
 

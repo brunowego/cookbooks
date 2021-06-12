@@ -4,7 +4,7 @@
 
 - [REPL Commands](https://github.com/motemen/gore#repl-commands)
 
-## Alternative
+## Alternatives
 
 - [The Go Playground](https://play.golang.org/)
 

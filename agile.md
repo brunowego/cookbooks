@@ -27,6 +27,8 @@ https://www.linkedin.com/learning/lean-software-development/delivering-value-qui
 https://www.linkedin.com/learning/agile-development-practices/welcome
 https://www.linkedin.com/learning/agile-project-management-comparing-agile-tools/explore-agile-tool-options-for-your-projects
 https://www.linkedin.com/learning/agile-testing-2/uplevel-with-agile-testing
+
+https://www.sealights.io/software-development-metrics/10-powerful-agile-metrics-and-1-missing-metric/
 -->
 
 ## Alternatives
@@ -36,3 +38,16 @@ https://www.linkedin.com/learning/agile-testing-2/uplevel-with-agile-testing
 ## References
 
 - [Manifesto for Agile Software Development](https://agilemanifesto.org/)
+
+## Metrics
+
+- Sprint Burndown
+- Agile Velocity
+- Lead Time
+- Cycle Time
+- Code Coverage
+- Static Code Analysis
+- Release Net Promoter Score
+- Cumulative Flow
+- Failed Deployments
+- Escaped Defects

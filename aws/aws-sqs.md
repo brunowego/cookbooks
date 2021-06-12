@@ -8,4 +8,10 @@ https://app.pluralsight.com/library/courses/message-queuing-amazon-sqs/table-of-
 
 - [ElasticMQ](/elasticmq.md)
 
-TODO
+## CLI
+
+### Commands
+
+```sh
+aws sqs help
+```

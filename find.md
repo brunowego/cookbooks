@@ -22,7 +22,7 @@ find ./ -name \*.[extension]
 
 ## Tips
 
-###
+### Find by fxtension
 
 ```sh
 #

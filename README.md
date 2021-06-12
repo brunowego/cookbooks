@@ -34,6 +34,7 @@ Bucket of cookbooks to help install and set softwares.
 - Bare-metal server
 - Bloom's Taxonomy
 - Bulletin Board System (BBS)
+- Business Unit (BU)
 - Capture The Flag (CTF)
 - Change Data Capture (CDC)
 - Chaos engineering (Chaos Monkey)

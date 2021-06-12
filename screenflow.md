@@ -16,18 +16,18 @@ brew install --cask screenflow
 
 #### DMG
 
+##### Version 8.x
+
 ```sh
 yes | \
   hdiutil attach http://www.telestream.net/download-files/screenflow/8-2/ScreenFlow-8.2.6.dmg \
     -nobrowse \
     -mountpoint /Volumes/ScreenFlow \
       > /dev/null
-```
 
-```sh
+#
 cp -R /Volumes/ScreenFlow/ScreenFlow.app /Applications
-```
 
-```sh
+#
 hdiutil detach /Volumes/ScreenFlow
 ```

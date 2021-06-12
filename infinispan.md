@@ -2,11 +2,16 @@
 
 <!--
 https://keycloak.discourse.group/t/keycloak-with-centralized-cache-store/1846
+https://lists.jboss.org/pipermail/keycloak-dev/2015-June/004640.html
 -->
 
 ## Guides
 
 - [Get Started](https://infinispan.org/get-started/)
+
+## Terms
+
+- JBoss Data Grid (JDG)
 
 ## Podman
 
@@ -15,7 +20,7 @@ podman run \
   -it \
   -p 11222:11222 \
   -e USER='admin' \
-  -e PASS='password' \
+  -e PASS='admin' \
   --net host \
   quay.io/infinispan/server:12.1
 ```
@@ -36,7 +41,7 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h infinispan \
   -e USER='admin' \
-  -e PASS='Pa$$w0rd!' \
+  -e PASS='admin' \
   -p 11222:11222 \
   --name infinispan \
   --network workbench \

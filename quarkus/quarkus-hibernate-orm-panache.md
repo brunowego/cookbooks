@@ -4,7 +4,7 @@
 
 - [Quarkus - Simplified Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache)
 
-## Alternative
+## Alternatives
 
 - Spring Data
 

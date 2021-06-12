@@ -1,6 +1,6 @@
 # Splunk
 
-## Alternative
+## Alternatives
 
 - [Nagios](/nagios.md)
 

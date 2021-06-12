@@ -6,7 +6,7 @@ https://laptrinhx.com/a-reactive-api-for-hibernate-orm-supporting-non-blocking-d
 https://diego-pacheco.medium.com/hibernate-reactive-with-spring-boot-2-426b02b7457f
 -->
 
-## Alternative
+## Alternatives
 
 - [MyBatis](/mybatis.md)
 

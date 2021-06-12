@@ -1,6 +1,6 @@
 # MinIO
 
-## Alternative
+## Alternatives
 
 - [Apache Ozone](https://github.com/apache/ozone)
 

@@ -1,3 +1,18 @@
 # AWS Security Token Service (STS)
 
-TODO
+## CLI
+
+### Commands
+
+```sh
+aws sts help
+```
+
+### Usage
+
+```sh
+# Security Token Service
+aws \
+  --output json \
+  sts get-caller-identity
+```

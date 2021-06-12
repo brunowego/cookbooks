@@ -2,6 +2,10 @@
 
 **Keywords:** Operator, GitOps
 
+## Links
+
+- [Main Website](https://argoproj.github.io/)
+
 ## Guides
 
 - [Status Badge](https://argoproj.github.io/argo-cd/user-guide/status-badge/)
@@ -79,3 +83,41 @@ kubectl delete namespace argo-cd --grace-period=0 --force
 
 kubectl get crd -o json | jq -r '.items[] | select(.spec.group | contains("argoproj.io")) | .metadata.name' | xargs -n 1 kubectl delete crd
 ```
+
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install argo
+```
+
+### Commands
+
+```sh
+argo -h
+```
+
+<!-- ### Usage
+
+```sh
+#
+argo list -n <namespace>
+
+#
+argo get -n $(NAMESPACE) $(LATEST_ARGO_JOB)
+
+#
+argo watch -n $(NAMESPACE) $(LATEST_ARGO_JOB)
+
+#
+argo logs -n $(NAMESPACE) -w $(LATEST_ARGO_JOB) -f --timestamps
+
+#
+argo delete -n $(NAMESPACE) $(LATEST_ARGO_JOB)
+
+#
+argo submit -n $(NAMESPACE) --wait hello-world.yaml
+``` -->

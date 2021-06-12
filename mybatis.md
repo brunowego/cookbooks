@@ -4,7 +4,7 @@
 https://loiane.com/2011/02/comecando-com-ibatis-mybatis-annotations/
 -->
 
-## Alternative
+## Alternatives
 
 - [Hibernate](/hibernate.md)
 

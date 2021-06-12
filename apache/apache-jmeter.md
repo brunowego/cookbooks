@@ -36,10 +36,11 @@ brew install jmeter --with-plugins
 brew uninstall jmeter
 ```
 
-### Plugins
+### Tips
 
-#### Homebrew
+#### Plugins Directory
 
 ```sh
+# Homebrew
 open $(brew --prefix jmeter)/libexec/lib/ext/
 ```

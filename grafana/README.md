@@ -6,7 +6,7 @@ https://www.linkedin.com/learning/kubernetes-monitoring-with-prometheus/promethe
 https://app.pluralsight.com/library/courses/monitoring-containerized-app-health-docker/table-of-contents
 -->
 
-## Alternative
+## Alternatives
 
 - [Apache Superset](/apache/apache-superset.md)
 - [Datadog](https://www.datadoghq.com/)

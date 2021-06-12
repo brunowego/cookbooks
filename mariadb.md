@@ -1,5 +1,10 @@
 # MariaDB
 
+## Links
+
+- [Code Repository](https://github.com/MariaDB/server)
+- [Main Website](https://mariadb.org/)
+
 ## Docker
 
 ### Network
@@ -14,22 +19,23 @@ docker network create workbench \
 ```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
-  -h mysql \
-  -e MYSQL_ROOT_PASSWORD=root \
-  -e MYSQL_USER=user \
-  -e MYSQL_PASSWORD=user \
-  -e MYSQL_DATABASE=default \
-  -v mysql-data:/var/lib/mysql \
+  -h mariadb \
+  -e MARIADB_ROOT_PASSWORD='root' \
+  -e MARIADB_USER='user' \
+  -e MARIADB_PASSWORD='pass' \
+  -e MARIADB_DATABASE='dev' \
+  -v mariadb-data:/var/lib/mysql \
   -p 3306:3306 \
   --name mariadb \
   --network workbench \
-  docker.io/library/mariadb:10.4.8
+  docker.io/library/mariadb:10.6
 ```
 
 ### Remove
 
 ```sh
 docker rm -f mariadb
+
 docker volume rm mariadb-data
 ```
 

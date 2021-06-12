@@ -9,3 +9,16 @@
 ```sh
 brew install aws-cdk
 ```
+
+### Commands
+
+```sh
+cdk -h
+```
+
+### Usage
+
+```sh
+#
+cdk destroy
+```

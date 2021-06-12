@@ -6,6 +6,10 @@ https://github.com/tensorflow/profiler/blob/master/docs/profile_multi_gpu.md
 https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
 -->
 
+## Links
+
+- [A Neural Network Playground](https://playground.tensorflow.org/)
+
 ## Library
 
 ### Installation

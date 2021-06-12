@@ -1,4 +1,4 @@
-# ASDF PHP: Hypertext Preprocessor (asdf-php)
+# asdf PHP (asdf-php)
 
 ## Dependencies
 

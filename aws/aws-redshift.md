@@ -16,3 +16,12 @@ https://www.linkedin.com/learning/amazon-web-services-data-services-2/scalable-d
 ## References
 
 - [Amazon Web Services (AWS)](/aws.md)
+
+## CLI
+
+### Commands
+
+```sh
+aws redshift help
+aws redshift-data help
+```

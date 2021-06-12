@@ -86,6 +86,9 @@ jabba current
 
 # Alias
 jabba alias default [version]
+
+#
+jabba uninstall [version]
 ```
 
 ### Tips
@@ -114,10 +117,4 @@ export JAVA_VERSION="`/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$(dir
 jabba link system@"$JAVA_VERSION" "$(dirname "$(dirname "$(/usr/libexec/java_home -v 1.8)")")"
 
 jabba ls
-```
-
-### Uninstall
-
-```sh
-jabba uninstall [version]
 ```

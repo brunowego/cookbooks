@@ -1,4 +1,4 @@
-# NetData
+# Netdata
 
 ## Docker
 
@@ -22,7 +22,7 @@ docker run -d \
   --cap-add SYS_PTRACE \
   --security-opt apparmor=unconfined \
   --network host \
-  docker.io/netdata/netdata:v1.23.2
+  docker.io/netdata/netdata:v1.31.0
 ```
 
 ```sh

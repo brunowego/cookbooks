@@ -438,7 +438,7 @@ mysql \
   [database] \
   < [filename].sql
 
-## Alternative
+## Alternatives
 mysqlimport \
   -h [host] \
   -P 3306 \

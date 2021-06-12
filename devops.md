@@ -27,6 +27,7 @@ https://www.linkedin.com/learning/devops-foundations-continuous-delivery-continu
 - [Four Golden Signal](/4-golden-signals.md)
 - [The Twelve-Factor App](/12factor.md)
 - [DevOps Exercises](https://github.com/bregman-arie/devops-exercises)
+- [Red Team VS Blue Team: What’s The Difference?](https://purplesec.us/red-team-vs-blue-team-cyber-security/)
 
 ## Videos
 

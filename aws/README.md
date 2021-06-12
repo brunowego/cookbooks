@@ -50,17 +50,18 @@ Transactions Per Second (TPS)
 
 - [AWS Simple Monthly Calculator](https://calculator.s3.amazonaws.com/index.html)
 - [AWS Service Health Dashboard](https://status.aws.amazon.com/)
+- [AWS Pricing Calculator](https://calculator.aws/#/)
 
 ## History
 
 - Launches first service Simple Queue Service (SQS) around 2004
 
-<!--
-## Why Deploy Globally?
 
-- Reduced latency
-- Increased Redundancy
--->
+## Questions
+
+### Why Deploy Globally?
+
+Reduced latency and increased redundancy.
 
 <!--
 ## Interview

@@ -1,5 +1,9 @@
 # Kubernetes Control (kubectl)
 
+<!--
+https://github.com/nutellinoit/kubenvz
+-->
+
 ## CLI
 
 ### References
@@ -193,27 +197,27 @@ cat << EOF | kubectl replace --force -f -
 EOF
 ```
 
-### Force Delete
+#### Force Delete
 
 ```sh
 kubectl delete pod [name] --grace-period=0 --force -n [namespace]
 ```
 
-### Terminating
+#### Terminating
 
-#### Pod
+##### Pod
 
 ```sh
 kubectl patch pod [name] -p '{"metadata":{"finalizers":[]}}' -n [namespace]
 ```
 
-#### Namespace
+##### Namespace
 
 ```sh
 for ns in `kubectl get ns --field-selector status.phase=Terminating -o name`; do kubectl patch $ns -p '{"metadata":{"finalizers":[]}}' --type='merge'; done
 ```
 
-##### API Resources
+###### API Resources
 
 ```sh
 for ns in `kubectl get ns --field-selector status.phase=Terminating -o name | cut -d / -f 2`; do for resource in `kubectl api-resources --namespaced -o name --verbs=list | xargs -n 1 kubectl get -o name -n $ns`; do kubectl patch $resource -p '{"metadata": {"finalizers": []}}' --type='merge' -n $ns; done; done
@@ -252,7 +256,7 @@ kubectl get configmap coredns -n kube-system -o yaml | \
   kubectl apply -f -
 ``` -->
 
-### Certificate from Namespace
+#### Certificate from Namespace
 
 ```sh
 kubectl get secret $(kubectl get secrets -n [namespace] | grep 'default-token' | cut -d ' ' -f 1) \
@@ -261,9 +265,9 @@ kubectl get secret $(kubectl get secrets -n [namespace] | grep 'default-token' |
     base64 --decode > ./ca.crt
 ```
 
-### Config
+#### Config
 
-#### Read
+##### Read
 
 ```sh
 # Remote
@@ -273,7 +277,7 @@ scp -q '[username]@[hostname]:~/.kube/config' /dev/stdout | yq r -
 vagrant ssh -c 'cat ~/.kube/config'
 ```
 
-#### Import
+##### Import
 
 ```sh
 # Remote Host
@@ -299,9 +303,33 @@ rm /tmp/config
 kubectl config view
 ```
 
-## Issue
+### Issues
 
-### Proxy
+<!-- ####
+
+```log
+error: You must be logged in to the server (Unauthorized)
+```
+
+```sh
+#
+kubectl version --client -o json | jq -r '.clientVersion.gitVersion | gsub("[v]"; "")'
+
+#
+kubectl version --short
+``` -->
+
+<!-- ####
+
+```log
+could not get token: NoCredentialProviders: no valid providers in chain. Deprecated.
+	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+Unable to connect to the server: getting credentials: exec: executable aws-iam-authenticator failed with exit code 1
+```
+
+TODO -->
+
+#### Proxy
 
 ```log
 proxyconnect tcp: dial tcp [ip]:3128: i/o timeout
@@ -320,7 +348,7 @@ sudo vim /etc/kubernetes/manifests/kube-apiserver.yaml
 sudo systemctl restart kubelet
 ```
 
-### Probe
+#### Probe
 
 ```log
 Liveness probe failed: HTTP probe failed with statuscode: 503

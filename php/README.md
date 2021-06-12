@@ -6,6 +6,8 @@ https://app.pluralsight.com/library/courses/working-databases-php/table-of-conte
 
 https://www.linkedin.com/learning/learning-php-4/should-you-learn-php
 https://front-line-php.com/
+
+https://daniellockyer.com/php-flame-graphs/
 -->
 
 ## References

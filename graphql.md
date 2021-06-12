@@ -18,6 +18,8 @@ https://www.youtube.com/watch?v=E3NHd-PkLrQ
 https://github.com/njNafir/react-cheatsheets/blob/master/graphql.md
 https://github.com/Maelstroms38/django-book/blob/master/chapter-7.md
 https://github.com/mehulagg/gitlab/blob/master/doc/development/fe_guide/graphql.md
+
+https://github.com/datastaxdevs/workshop-graphql-netflix
 -->
 
 ## Alternatives

@@ -4,6 +4,10 @@
 
 - [Main Website](https://kind.sigs.k8s.io/)
 
+## Guides
+
+- [Ingress](https://kind.sigs.k8s.io/docs/user/ingress/)
+
 ## CLI
 
 ### Dependencies
@@ -51,7 +55,7 @@ EOF
 ```sh
 # Create cluster
 kind create cluster \
-  --name default \
+  --name 'default' \
   --config ~/.kind-config.yml
 
 # Get cluster info
