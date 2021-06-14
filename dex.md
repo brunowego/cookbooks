@@ -1,4 +1,4 @@
-# dex
+# Dex IdP
 
 OpenID Connect (OIDC) identity and OAuth 2.0 provider with pluggable connectors.
 
@@ -28,6 +28,7 @@ https://aws.amazon.com/blogs/containers/using-dex-dex-k8s-authenticator-to-authe
 ## Content
 
 - [Keycloak vs Dex](https://medium.com/@sct10876/keycloak-vs-dex-71f7fab29919)
+- [Why not REST or gRPC Gateway?](https://dexidp.io/docs/api/#why-not-rest-or-grpc-gateway)
 
 ## Docker
 
@@ -75,10 +76,13 @@ enablePasswordDB: true
 
 staticPasswords:
 - email: 'admin@example.com'
-  # bcrypt hash of the string 'password'
-  hash: '$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W'
+  hash: '$2y$12$qX2CkazdjkulycmgtNCqUuO.amWBC.FY8w85YeAlD/ywzXOAog2SO'
   username: 'admin'
-  userID: '08a8684b-db88-4b73-90a9-3cd1661f5466'
+  userID: '168855e4-cc6d-11eb-b8bc-0242ac130003'
+- email: 'johndoe@example.com'
+  hash: '$2y$12$5NwpL8iCI0IUuDBl94UEteTxQ7V0uJlkMILuHlWacSapgyrsrTZBm'
+  username: 'johndoe'
+  userID: '5785145e-cc49-413f-a867-a18870c96882'
 EOF
 EOSHELL
 ```

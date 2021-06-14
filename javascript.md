@@ -7,6 +7,10 @@ https://www.linkedin.com/learning/learning-javascript-debugging-2/welcome
 https://www.linkedin.com/learning/javascript-web-form-programming/building-modern-web-forms
 -->
 
+## Links
+
+- [Brief History of JavaScript](https://roadmap.sh/guides/history-of-javascript)
+
 ## References
 
 - [ECMAScript](/ecmascript.md)

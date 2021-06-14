@@ -1,5 +1,9 @@
 # Homebrew
 
+<!--
+which wrk || brew install wrk
+-->
+
 ## CLI
 
 ### Installation

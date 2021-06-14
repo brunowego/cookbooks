@@ -1,5 +1,9 @@
 # Commands
 
+## Alternatives
+
+- [fd](/fd.md)
+
 ## References
 
 - [Find syntax](https://en.wikipedia.org/wiki/Find_(Unix)#Find_syntax)

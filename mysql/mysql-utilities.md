@@ -34,5 +34,7 @@ mysqlfrm --help
 
 ```sh
 #
-mysqlfrm --diagnostic mysql/db_name/ > db_name.sql
+mysqlfrm \
+  --diagnostic \
+  mysql/db_name/ > db_name.sql
 ```

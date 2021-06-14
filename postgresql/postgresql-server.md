@@ -1,5 +1,9 @@
 # PostgreSQL Server
 
+<!--
+PostgreSQL is known to be faster while handling massive data sets, complicated queries, and read-write operations. Meanwhile, MySQL is known to be faster with read-only commands.
+-->
+
 ## CLI
 
 ### Installation

@@ -1,5 +1,9 @@
 # wrk
 
+## Links
+
+- [Code Repository](https://github.com/wg/wrk)
+
 ## CLI
 
 ### Installation
@@ -10,6 +14,19 @@
 brew install wrk
 ```
 
-<!--
-wrk -t2 -c500 -d5s http://192.168.1.148:8080
--->
+### Commands
+
+```sh
+wrk
+```
+
+### Usage
+
+```sh
+#
+wrk \
+  -t 2 \
+  -c 500 \
+  -d 5s \
+  'http://127.0.0.1:8080'
+```

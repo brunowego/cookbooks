@@ -50,7 +50,8 @@ docker run -d \
   -p 3306:3306 \
   --name mysql \
   --network workbench \
-  docker.io/library/mysql:8.0 --default-authentication-plugin=mysql_native_password
+  docker.io/library/mysql:8.0 \
+    --default-authentication-plugin=mysql_native_password
 ```
 
 ### Utils

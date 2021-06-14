@@ -1,5 +1,9 @@
 # GLPi (acronym: French: Gestionnaire Libre de Parc Informatique, or "Free IT Equipment Manager" in English)
 
+## Alternatives
+
+- [ERPNext)](/erpnext.md)
+
 ## Links
 
 - [Code Repository](https://github.com/glpi-project/glpi)

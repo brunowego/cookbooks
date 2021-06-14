@@ -41,10 +41,10 @@ kci -h
 ```sh
 # Generate
 kci generate \
-  --realms 5 \
   --clients 10 \
-  --users 100 \
-  --target ./realms
+  --realms 5 \
+  --target ./realms \
+  --users 100
 
 # Configuration
 kci config set realm --value 'master'

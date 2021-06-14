@@ -8,10 +8,22 @@ https://medium.com/@robert.broeckelmann/saml2-vs-jwt-understanding-oauth2-4abde9
 https://security.stackexchange.com/questions/82587/what-are-the-differences-between-json-web-tokens-saml-and-oauth-2
 -->
 
+## Links
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language)
+
 ## Alternatives
 
 - [OpenID Connect (OIDC)](/openid.md)
 
-<!--
-SAML-P, WS-Trust and WS-Federation
--->
+<!-- ##
+
+- SAML-P
+- WS-Trust
+- WS-Federation -->
+
+<!-- ##
+
+- Simple Object Access Protocol (SOAP)
+- Representational State Transfer (REST)
+- Remote Procedure Call (RPC) -->

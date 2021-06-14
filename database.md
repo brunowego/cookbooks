@@ -10,6 +10,10 @@ https://www.linkedin.com/learning/database-foundations-administration-8375189/ad
 - GCP Datastore
 -->
 
+## Links
+
+- [Scaling Databases](https://roadmap.sh/guides/scaling-databases)
+
 ## Relational Database Management System (RDBMS)
 
 - DB2 IBM Company

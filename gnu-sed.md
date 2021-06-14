@@ -72,7 +72,7 @@ sed 's/[pattern]/[text] &' [/path/to/file]
 sed s/[pattern]/[text]/ [/path/to/file.template] > [/path/to/file]
 
 #
-sed '/^[attr] =/s/= .*/= [value]/' [/path/to/file]
+sed '/^[attr] =/ s/= .*/= [value]/' [/path/to/file]
 
 #
 sed '1s/^/[text]/' [/path/to/file]

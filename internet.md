@@ -1,5 +1,13 @@
 # Internet
 
+## Links
+
+- [How does the internet work?](https://roadmap.sh/guides/what-is-internet)
+
+## Terms
+
+- Internet Engineering Task Force (IETF)
+
 ## CIDR Blocks
 
 - IPv4: 10.0.0.0/24

@@ -7,6 +7,8 @@ https://github.com/ory/hydra
 https://www.ory.sh/docs/next/hydra/5min-tutorial
 
 https://github.com/kyma-project/kyma/blob/main/tests/perf/components/ory/ory.js
+
+https://yusufs.medium.com/practical-example-of-implementing-oauth-2-0-using-ory-hydra-fbaa2765d94f
 -->
 
 **Keywords:** Identity Provider (IdP)
@@ -134,7 +136,7 @@ hydra token user \
 
 <!-- #
 export ORY_HYDRA_ACCESS_TOKEN=$(curl -sk \
-  -H "Content-Type: application/x-www-form-urlencoded" \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
   -u 'admin:password' \
   -d 'grant_type=client_credentials' \
   -d 'scope=hydra' \

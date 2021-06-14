@@ -1,5 +1,9 @@
 # Lightweight Directory Access Protocol (LDAP)
 
+<!--
+https://stackoverflow.com/questions/11269564/ldap-vs-relational-database
+-->
+
 ## Tools
 
 - [slapcat](/slapcat.md)

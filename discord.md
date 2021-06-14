@@ -1,5 +1,9 @@
 # Discord
 
+## Links
+
+- [Status Page](https://discordstatus.com/)
+
 ## App
 
 ### Installation
