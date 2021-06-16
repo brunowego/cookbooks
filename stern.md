@@ -16,7 +16,28 @@
 brew install stern
 ```
 
-#### Linux Binary
+#### Binary
+
+##### Dependencies
+
+- [GNU Tar](/gnu-tar.md)
+
+##### Installation
+
+###### Darwin
+
+```sh
+STERN_VERSION="$(curl -s https://api.github.com/repos/stern/stern/releases/latest | grep tag_name | cut -d '"' -f 4 | tr -d 'v')"; \
+  curl \
+    -L "https://github.com/stern/stern/releases/download/v${STERN_VERSION}/stern_${STERN_VERSION}_darwin_amd64.tar.gz" | \
+      tar \
+        -xzC /usr/local/bin \
+        --strip-components 1 \
+        --wildcards \
+        'stern_*/stern'
+```
+
+###### Linux
 
 ```sh
 STERN_VERSION="$(curl -s https://api.github.com/repos/stern/stern/releases/latest | grep tag_name | cut -d '"' -f 4 | tr -d 'v')"; \
@@ -51,29 +72,40 @@ stern -h
 
 ```sh
 #
-stern envvars \
-  --context staging \
-  --container gateway
+kubens '<namespace>'
+stern '<pod-prefix>'
 
 #
-stern \
-  -n staging \
-  --exclude-container \
-  istio-proxy \
-  ./
+stern '<pod-prefix>' \
+  -n '<namespace>'
 
 #
-stern frontend \
-  --selector \
-  release=canary
+stern '<pod-prefix>' -A
 
 #
-stern auth -t --since 15m
+stern '<pod-prefix>' \
+  -n '<namespace>' \
+  -o raw
+
+stern '<pod-prefix>' \
+  -o json | \
+    jq .
 
 #
-stern --all-namespaces -l run=nginx
+stern '<pod-prefix>' \
+  --tail 1
 
 #
-stern backend -o json | jq ./
-stern backend -o raw
+stern '<pod-prefix>' \
+  -n '<namespace>' \
+  -c '<container>'
+
+#
+stern '<pod-prefix>'  \
+  -l '<key>=<value>'
+
+#
+stern '<pod-prefix>'  \
+  -s 15m \
+  -t
 ```

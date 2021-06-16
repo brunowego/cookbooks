@@ -27,6 +27,8 @@ https://sloboda-studio.com/blog/how-to-do-web-scraping-with-ruby/
 https://www.scrapingbee.com/blog/web-scraping-ruby/
 https://onebitcode.com/web-scraping-com-ruby/
 https://medium.com/@jennyjean8675309/web-scraping-with-ruby-and-nokogiri-73e75a6f34ed
+
+https://rubyinstaller.org/
 -->
 
 <!--

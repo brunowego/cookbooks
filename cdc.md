@@ -2,4 +2,5 @@
 
 ## References
 
+- [Airbyte](/airbyte.md)
 - [Debezium](/debezium.md)

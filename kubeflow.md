@@ -65,14 +65,14 @@ kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/cluster-scop
 
 #
 kubectl wait \
-  --for condition=established \
-  --timeout=300s \
+  --for 'condition=established' \
+  --timeout '300s' \
   crd/applications.app.k8s.io
 
 #
 kubectl apply \
   -k "github.com/kubeflow/pipelines/manifests/kustomize/env/platform-agnostic-pns?ref=${KF_PIPELINE_VERSION}" \
-  --timeout=60s
+  --timeout '60s'
 
 #
 kubectl get pods \
@@ -101,7 +101,9 @@ kubectl delete \
   -k "github.com/kubeflow/pipelines/manifests/kustomize/env/platform-agnostic-pns?ref=${KF_PIPELINE_VERSION}" \
   --timeout=60s
 
-kubectl delete -k "github.com/kubeflow/pipelines/manifests/kustomize/cluster-scoped-resources?ref=${KF_PIPELINE_VERSION}"
+kubectl delete \
+  -k "github.com/kubeflow/pipelines/manifests/kustomize/cluster-scoped-resources?ref=${KF_PIPELINE_VERSION}"
 
-kind delete cluster --name 'kf-pipeline'
+kind delete cluster \
+  --name 'kf-pipeline'
 ```

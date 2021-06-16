@@ -28,12 +28,12 @@ choco install -y ssh-copy-id
 ```sh
 # Generate
 ssh-keygen \
-  -b 4096 \
-  -C [email] \
-  -f ~/.ssh/id_rsa \
   -q \
+  -b 4096 \
+  -C '<email>' \
+  -N '' \
   -t rsa \
-  -N ''
+  -f ~/.ssh/id_rsa
 
 # Copy id
 ssh-copy-id \

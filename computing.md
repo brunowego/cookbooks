@@ -16,3 +16,7 @@ https://www.linkedin.com/learning/plc-program-flow-and-control-instructions/plc-
 - First In, First Out (FIFO)
 - Round-Robin (RR)
 - Shortest Job First (SJF)
+
+<!--
+Failover
+-->

@@ -125,3 +125,14 @@ You must specify a region. You can also configure your region by running "aws co
 #
 aws configure set default.region us-east-1
 ```
+
+#### Wrong Profile Selected
+
+```log
+An error occurred (ExpiredToken) when calling the GetCallerIdentity operation: The security token included in the request is expired
+An error occurred (ExpiredToken) when calling the ListBuckets operation: The provided token has expired.
+```
+
+```sh
+AWS_PROFILE=dev aws s3 ls
+```

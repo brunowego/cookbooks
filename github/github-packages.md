@@ -22,4 +22,4 @@ Error response from daemon: pull access denied for ghcr.io/[organization]/[image
 ```
 
 Access the [GitHub settings token page](https://github.com/settings/tokens) and create new one.
-docker pull ghcr.io/arcotech-services/php74-apache:latest
+docker pull ghcr.io/[organization]/[image]

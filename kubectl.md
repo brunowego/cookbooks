@@ -316,7 +316,10 @@ error: You must be logged in to the server (Unauthorized)
 kubectl version --client -o json | jq -r '.clientVersion.gitVersion | gsub("[v]"; "")'
 
 #
-kubectl version --short
+AWS_PROFILE=dev kubectl version --short
+
+#
+AWS_PROFILE=dev aws sts get-caller-identity
 ``` -->
 
 <!-- ####
@@ -405,3 +408,7 @@ kubectl exec -it \
   -n [namespace] \
   -- /bin/sh
 ```
+
+<!--
+kubectl config set-cluster asdf.com --insecure-skip-tls-verify=true
+-->

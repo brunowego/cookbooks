@@ -74,7 +74,11 @@ level = debug
 
 ```sh
 #
-sentry-cli send-event -m 'Something happened'
+export SENTRY_DSN=''
+
+#
+sentry-cli send-event \
+  -m 'Something happened'
 
 #
 sentry-cli send-event \

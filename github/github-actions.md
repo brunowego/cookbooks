@@ -27,7 +27,7 @@ filename:.yml path:.github/workflows
 
 - Software Development Life Cycle (SDLC)
 
-## Core Concetps Overview
+## Core Concepts Overview
 
 - Actions
 - Artifacts

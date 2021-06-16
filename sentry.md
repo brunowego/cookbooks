@@ -1,5 +1,9 @@
 # Sentry
 
+<!--
+https://blog.sentry.io/2018/07/17/source-code-fetching
+-->
+
 ## CLI
 
 ### Installation
@@ -58,6 +62,24 @@ pkill uwsgi
 ```
 
 ### Tips
+
+#### Cleanup
+
+```sh
+#
+kubectl exec -it \
+  $(kubectl get pod -l 'app=sentry,role=web' -o jsonpath='{.items[0].metadata.name}' -n sentry) \
+  -n sentry \
+  -- sentry cleanup --help
+
+#
+kubectl exec -it \
+  $(kubectl get pod -l 'app=sentry,role=web' -o jsonpath='{.items[0].metadata.name}' -n sentry) \
+  -n sentry \
+  -- sentry cleanup \
+    --days 30 \
+    --project '<project>'
+```
 
 #### CORS
 

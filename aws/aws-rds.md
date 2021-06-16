@@ -12,10 +12,11 @@ aws rds help
 
 ```sh
 #
-aws rds create-db-instance
-  --db-instance-identifier sg-cli-test \
-  --allocated-storage 20 \
-  --db-instance-class db.m1.small --engine mysql \
-  --master-username myawsuser \
-  --master-user-password mypassword
+aws rds create-db-instance \
+  --db-instance-identifier 'test-mysql-instance' \
+  --db-instance-class 'db.t3.micro' \
+  --engine 'mysql' \
+  --master-username 'admin' \
+  --master-user-password 'admin' \
+  --allocated-storage 20
 ```

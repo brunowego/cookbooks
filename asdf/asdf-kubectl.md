@@ -44,5 +44,7 @@ where kubectl
 which kubectl
 
 #
-brew uninstall --ignore-dependencies kubernetes-cli
+brew uninstall \
+  --ignore-dependencies \
+  kubernetes-cli
 ```

@@ -43,14 +43,13 @@ sudo curl \
 yq help
 ```
 
-### Examples
-
-#### Read
+### Usage
 
 ```sh
-# simple
+# Simple
 yq r [/path/to/file] [attribute]
 
-# standard out
-cat [/path/to/file] | yq r - [attribute]
+# Standard out
+cat [/path/to/file] | \
+  yq r - [attribute]
 ```

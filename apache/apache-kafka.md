@@ -1,6 +1,8 @@
 # Apache Kafka
 
 <!--
+https://app.pluralsight.com/library/courses/securing-kafka-cluster/table-of-contents
+
 https://www.youtube.com/watch?v=sCkAe-Umb0o
 
 https://www.blazemeter.com/blog/apache-kafka-how-to-load-test-with-jmeter

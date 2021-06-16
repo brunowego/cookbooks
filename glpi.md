@@ -36,7 +36,8 @@ docker run -d \
   -p 3306:3306 \
   --name glpi-mysql \
   --network workbench \
-  docker.io/library/mysql:5.7.23
+  docker.io/library/mysql:8.0 \
+    --default-authentication-plugin=mysql_native_password
 ```
 
 ```sh

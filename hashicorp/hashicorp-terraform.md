@@ -157,7 +157,7 @@ terraform workspace select dev
 terraform refresh
 
 #
-terraform init ./
+terraform init .
 terraform init \
   -backend-config key=./terraform.tfstate
 

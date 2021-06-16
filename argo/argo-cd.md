@@ -1,5 +1,12 @@
 # Argo CD
 
+<!--
+https://blog.sebastian-daschner.com/entries/cloud-native-ci-cd-tekton-argocd-video-course
+https://www.eksworkshop.com/intermediate/290_argocd/
+
+https://www.udemy.com/course/hands-on-guide-to-argo-workflows-on-kubernetes/
+-->
+
 **Keywords:** Operator, GitOps
 
 ## Links
@@ -91,33 +98,43 @@ kubectl get crd -o json | jq -r '.items[] | select(.spec.group | contains("argop
 #### Homebrew
 
 ```sh
-brew install argo
+brew install argocd
+```
+
+#### Darwin Binary
+
+```sh
+curl \
+  -L 'https://github.com/argoproj/argo-cd/releases/download/v2.0.3/argocd-darwin-amd64' \
+  -o /usr/local/bin/argocd && \
+    chmod +x /usr/local/bin/argocd
 ```
 
 ### Commands
 
 ```sh
-argo -h
+argocd -h
 ```
 
-<!-- ### Usage
+### Usage
 
 ```sh
 #
-argo list -n <namespace>
+argocd login \
+  --grpc-web \
+  --insecure \
+  --username '<username>' \
+  --password '<password>' \
+  'argocd.example.com'
 
 #
-argo get -n $(NAMESPACE) $(LATEST_ARGO_JOB)
+argocd account can-i sync applications '*'
+argocd account can-i update projects 'default'
+argocd account can-i create clusters '*'
 
 #
-argo watch -n $(NAMESPACE) $(LATEST_ARGO_JOB)
+argocd context
 
 #
-argo logs -n $(NAMESPACE) -w $(LATEST_ARGO_JOB) -f --timestamps
-
-#
-argo delete -n $(NAMESPACE) $(LATEST_ARGO_JOB)
-
-#
-argo submit -n $(NAMESPACE) --wait hello-world.yaml
-``` -->
+argocd repo list
+```

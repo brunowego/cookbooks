@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://kustomize.io/kubectl delete -k ./)
+- [Main Website](https://kustomize.io/)
 
 ## Alternatives
 
@@ -22,6 +22,14 @@ brew install kustomize
 
 ```sh
 sudo port install kustomize
+```
+
+#### Darwin Binary
+
+```sh
+curl \
+  -L 'https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v3.8.8/kustomize_v3.8.8_darwin_amd64.tar.gz' | \
+    tar -xzC /usr/local/bin
 ```
 
 <!-- #### Unix-like

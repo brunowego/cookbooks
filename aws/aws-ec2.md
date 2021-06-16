@@ -15,6 +15,7 @@ Spot instances
 ## Links
 
 - [Amazon EC2 pricing](aws.amazon.com/ec2/pricing)
+- [Easy Amazon EC2 Instance Comparison](https://instances.vantage.sh/)
 
 ## CLI
 
@@ -40,6 +41,11 @@ aws \
 aws \
   --output json \
   ec2 describe-instances
+
+#
+aws \
+  --output json \
+  ec2 describe-vpcs
 
 #
 aws \
@@ -137,3 +143,11 @@ aws ec2 run-instances \
   --tag-specifications 'ResourceType=instance,Tags=[{Key=backend,Value=inventory1}]' \
   --dry-run
 ```
+
+<!--
+aws \
+  --output text \
+  ec2 describe-vpcs \
+    --filter 'Name=tag:Name,Values=Kubernetes' \
+    --query 'Vpcs[0].VpcId'
+-->

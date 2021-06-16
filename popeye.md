@@ -23,9 +23,9 @@ brew install derailed/popeye/popeye
 popeye -h
 ```
 
-### Usage
+<!-- ### Usage
 
 ```sh
 #
 popeye
-```
+``` -->
