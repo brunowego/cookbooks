@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=QrEOvHdH2Cg
 https://app.pluralsight.com/library/courses/js-friends-session-07/table-of-contents
 https://app.pluralsight.com/library/courses/graphql-big-picture/table-of-contents
 
-https://www.linkedin.com/learning/building-a-graphql-project-with-react-js/why-use-react-with-graphql-for-projects
+https://linkedin.com/learning/building-a-graphql-project-with-react-js/why-use-react-with-graphql-for-projects
 
 https://www.youtube.com/watch?v=E3NHd-PkLrQ
 

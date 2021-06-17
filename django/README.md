@@ -5,12 +5,12 @@ Django Channels
 Django Unit Tests
 Django Celery
 
-https://www.linkedin.com/learning/paths/become-a-django-developer
+https://linkedin.com/learning/paths/become-a-django-developer
 
 https://thinkster.io/tutorials/configuring-django-settings-for-production
 https://patrickfarrar.com/posts/development/environment-configurations-django/
 
-https://www.linkedin.com/learning/test-driven-development-in-django/tdd-philosophy-and-project-overview
+https://linkedin.com/learning/test-driven-development-in-django/tdd-philosophy-and-project-overview
 https://www.udemy.com/course/django-channels/
 https://www.udemy.com/course/distributed-tasks-demystified-with-celery-python/
 
@@ -37,7 +37,7 @@ https://github.com/YDongY/code_snippets
 https://github.com/vintasoftware/
 https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
 https://linevi.ch/en/django-inline-in-fieldset.html
-https://www.linkedin.com/learning/securing-django-applications/security-and-django
+https://linkedin.com/learning/securing-django-applications/security-and-django
 
 https://django.readthedocs.io/en/stable/ref/contrib/admin/actions.html
 

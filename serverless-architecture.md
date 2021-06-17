@@ -1,7 +1,7 @@
 # Serverless Architecture
 
 <!--
-https://www.linkedin.com/learning/serverless-architecture/what-you-should-know
+https://linkedin.com/learning/serverless-architecture/what-you-should-know
 -->
 
 ## Platforms

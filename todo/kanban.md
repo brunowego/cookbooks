@@ -1,7 +1,7 @@
 # Kanban
 
 <!--
-https://www.linkedin.com/learning/stay-lean-with-kanban/
+https://linkedin.com/learning/stay-lean-with-kanban/
 -->
 
 ## Blogs

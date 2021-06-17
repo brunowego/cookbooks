@@ -1,7 +1,7 @@
 # Continuous Integration
 
 <!--
-https://www.linkedin.com/learning/continuous-integration-tools/building-your-ci-cd-pipeline
+https://linkedin.com/learning/continuous-integration-tools/building-your-ci-cd-pipeline
 -->
 
 ## Tools

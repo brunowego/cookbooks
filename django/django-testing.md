@@ -11,7 +11,7 @@
 https://django-test-plus.readthedocs.io/en/latest/
 
 https://app.pluralsight.com/library/courses/django-testing-security-and-performance/table-of-contents
-https://www.linkedin.com/learning/test-driven-development-in-django/
+https://linkedin.com/learning/test-driven-development-in-django/
 -->
 
 ## Library

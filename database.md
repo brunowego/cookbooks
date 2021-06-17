@@ -1,7 +1,7 @@
 # Database
 
 <!--
-https://www.linkedin.com/learning/database-foundations-administration-8375189/administer-a-database-server
+https://linkedin.com/learning/database-foundations-administration-8375189/administer-a-database-server
 -->
 
 <!--

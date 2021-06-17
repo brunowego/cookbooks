@@ -3,10 +3,10 @@
 <!--
 https://app.pluralsight.com/paths/skill/fusion-360-core-skills
 
-https://www.linkedin.com/learning/fusion-360-essential-training-2/use-fusion-360-to-turn-your-ideas-into-designs
-https://www.linkedin.com/learning/learning-fusion-360-3/getting-started-with-fusion-360
-https://www.linkedin.com/learning/fusion-360-tips-tricks-and-techniques/welcome
-https://www.linkedin.com/learning/introduction-to-geometric-dimensioning-and-tolerancing/faster-cheaper-better-parts
+https://linkedin.com/learning/fusion-360-essential-training-2/use-fusion-360-to-turn-your-ideas-into-designs
+https://linkedin.com/learning/learning-fusion-360-3/getting-started-with-fusion-360
+https://linkedin.com/learning/fusion-360-tips-tricks-and-techniques/welcome
+https://linkedin.com/learning/introduction-to-geometric-dimensioning-and-tolerancing/faster-cheaper-better-parts
 -->
 
 ## App

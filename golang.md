@@ -31,8 +31,8 @@ https://app.pluralsight.com/library/courses/grpc-enhancing-application-communica
 
 LinkedIn Learning
 
-https://www.linkedin.com/learning/learning-go-8399317/explore-go-s-variable-types
-https://www.linkedin.com/learning/learning-the-go-standard-library/don-t-go-re-inventing-the-wheel
+https://linkedin.com/learning/learning-go-8399317/explore-go-s-variable-types
+https://linkedin.com/learning/learning-the-go-standard-library/don-t-go-re-inventing-the-wheel
 -->
 
 <!--

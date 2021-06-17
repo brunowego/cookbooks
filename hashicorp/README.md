@@ -1,7 +1,7 @@
 # HashiCorp
 
 <!--
-https://www.linkedin.com/learning/paths/improve-your-infrastructure-automation-with-hashicorp-tools
+https://linkedin.com/learning/paths/improve-your-infrastructure-automation-with-hashicorp-tools
 -->
 
 ## Tools

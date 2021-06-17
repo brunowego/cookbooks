@@ -7,7 +7,7 @@ https://app.pluralsight.com/library/courses/groovy-getting-started/table-of-cont
 https://app.pluralsight.com/library/courses/groovy-fundamentals/table-of-contents
 https://app.pluralsight.com/guides/introduction-to-testing-with-bdd-and-the-spock-framework
 
-https://www.linkedin.com/learning/learning-groovy/supercharge-your-java-program-with-groovy
+https://linkedin.com/learning/learning-groovy/supercharge-your-java-program-with-groovy
 -->
 
 ## Links

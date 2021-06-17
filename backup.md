@@ -67,11 +67,11 @@ Strptizi
 -->
 
 <!--
-https://www.linkedin.com/learning/choosing-a-data-platform-postgresql-mysql-mongo-and-cloud/choosing-the-right-data-platform
+https://linkedin.com/learning/choosing-a-data-platform-postgresql-mysql-mongo-and-cloud/choosing-the-right-data-platform
 
-https://www.linkedin.com/learning/programming-foundations-fundamentals-3/returning-values-from-functions
+https://linkedin.com/learning/programming-foundations-fundamentals-3/returning-values-from-functions
 
-https://www.linkedin.com/learning/developing-for-web-performance/what-is-performance-and-why-is-it-so-important
+https://linkedin.com/learning/developing-for-web-performance/what-is-performance-and-why-is-it-so-important
 -->
 
 <!--

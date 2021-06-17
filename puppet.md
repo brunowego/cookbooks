@@ -1,7 +1,7 @@
 # Puppet
 
 <!--
-https://www.linkedin.com/learning/puppet-essential-training/welcome
+https://linkedin.com/learning/puppet-essential-training/welcome
 -->
 
 **Keywords:** Configuration Management

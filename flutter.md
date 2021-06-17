@@ -14,7 +14,7 @@ https://app.pluralsight.com/library/courses/persisting-data-locally-flutter/tabl
 https://app.pluralsight.com/library/courses/droidcon-sf-session-66/table-of-contents
 https://app.pluralsight.com/library/courses/droidcon-sf-session-28/table-of-contents
 
-https://www.linkedin.com/learning/flutter-part-01-introduction/what-is-flutter
+https://linkedin.com/learning/flutter-part-01-introduction/what-is-flutter
 -->
 
 ## Examples

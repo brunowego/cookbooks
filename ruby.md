@@ -32,11 +32,11 @@ https://rubyinstaller.org/
 -->
 
 <!--
-https://www.linkedin.com/learning/ruby-essential-training-part-1-the-basics/learn-the-basics-of-ruby
+https://linkedin.com/learning/ruby-essential-training-part-1-the-basics/learn-the-basics-of-ruby
 https://app.pluralsight.com/paths/skill/ruby-language-fundamentals
 
 https://app.pluralsight.com/paths/skill/ruby-language-fundamentals
-https://www.linkedin.com/learning/topics/ruby?entityType=COURSE
+https://linkedin.com/learning/topics/ruby?entityType=COURSE
 https://app.pluralsight.com/library/courses/ruby-getting-started/table-of-contents
 https://app.pluralsight.com/library/courses/reading-writing-data-ruby/table-of-contents
 -->

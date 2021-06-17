@@ -3,9 +3,9 @@
 <!--
 https://github.com/mehdihadeli/awesome-software-architecture
 
-https://www.linkedin.com/learning/paths/become-a-software-developer
-https://www.linkedin.com/learning/software-architecture-from-developer-to-architect/wisdom-in-software-engineering
-https://www.linkedin.com/learning/software-architecture-patterns-for-developers/best-practices-and-blueprints
+https://linkedin.com/learning/paths/become-a-software-developer
+https://linkedin.com/learning/software-architecture-from-developer-to-architect/wisdom-in-software-engineering
+https://linkedin.com/learning/software-architecture-patterns-for-developers/best-practices-and-blueprints
 -->
 
 ## References

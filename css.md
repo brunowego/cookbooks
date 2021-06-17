@@ -1,7 +1,7 @@
 # Cascading Style Sheets (CSS)
 
 <!--
-https://www.linkedin.com/learning/advanced-css-media-queries/media-queries-aren-t-just-screen-size-queries
+https://linkedin.com/learning/advanced-css-media-queries/media-queries-aren-t-just-screen-size-queries
 -->
 
 ## References

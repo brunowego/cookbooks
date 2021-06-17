@@ -1,8 +1,8 @@
 # Jenkins
 
 <!--
-https://www.linkedin.com/learning/jenkins-essential-training/
-https://www.linkedin.com/learning/learning-jenkins/
+https://linkedin.com/learning/jenkins-essential-training/
+https://linkedin.com/learning/learning-jenkins/
 https://app.pluralsight.com/paths/skill/continuous-integration-with-jenkins
 
 https://github.com/kiegroup/kogito-pipelines

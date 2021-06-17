@@ -24,5 +24,7 @@ shuji -h
 ### Usage
 
 ```sh
-shuji -p [filename].js.map
+shuji \
+  -p \
+  [filename].js.map
 ```

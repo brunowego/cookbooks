@@ -4,14 +4,14 @@
 Redux
 Redux-Saga
 
-https://www.linkedin.com/learning/paths/improve-your-react-skills
-https://www.linkedin.com/learning/paths/become-a-react-developer
+https://linkedin.com/learning/paths/improve-your-react-skills
+https://linkedin.com/learning/paths/become-a-react-developer
 
 https://thoughtbot.com/blog/using-redux-with-react-hooks
 
-https://www.linkedin.com/learning/react-state-management/choosing-the-right-state-management-solution
+https://linkedin.com/learning/react-state-management/choosing-the-right-state-management-solution
 https://app.pluralsight.com/library/courses/using-react-hooks/table-of-contents
-https://www.linkedin.com/learning/react-hooks/understanding-modern-react
+https://linkedin.com/learning/react-hooks/understanding-modern-react
 https://app.pluralsight.com/library/courses/reactjs-apps-docker-developing/table-of-contents
 https://app.pluralsight.com/library/courses/react-framework-choosing/table-of-contents
 https://app.pluralsight.com/paths/skills/building-web-applications-with-react
@@ -32,13 +32,13 @@ https://app.pluralsight.com/paths/skill/building-web-applications-with-react
 
 https://github.com/ilkeraltin/react-spa-news
 
-https://www.linkedin.com/learning/react-securing-applications-2/securing-react-applications
-https://www.linkedin.com/learning/react-js-essential-training/welcome
-https://www.linkedin.com/learning/learning-react-js-5/getting-started-with-react
-https://www.linkedin.com/learning/react-testing-and-debugging/testing-and-debugging-your-react-apps
-https://www.linkedin.com/learning/build-a-react-application-using-aws-amplify/react-and-aws-a-perfect-serverless-match
-https://www.linkedin.com/learning/react-cloud-powered-apps-with-firebase/structuring-your-apps-for-the-cloud
-https://www.linkedin.com/learning/building-modern-projects-with-react/react-going-from-good-to-great
+https://linkedin.com/learning/react-securing-applications-2/securing-react-applications
+https://linkedin.com/learning/react-js-essential-training/welcome
+https://linkedin.com/learning/learning-react-js-5/getting-started-with-react
+https://linkedin.com/learning/react-testing-and-debugging/testing-and-debugging-your-react-apps
+https://linkedin.com/learning/build-a-react-application-using-aws-amplify/react-and-aws-a-perfect-serverless-match
+https://linkedin.com/learning/react-cloud-powered-apps-with-firebase/structuring-your-apps-for-the-cloud
+https://linkedin.com/learning/building-modern-projects-with-react/react-going-from-good-to-great
 -->
 
 

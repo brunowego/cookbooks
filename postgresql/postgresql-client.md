@@ -1,7 +1,7 @@
 # PostgreSQL Client
 
 <!--
-https://www.linkedin.com/learning/postgresql-essential-training/manage-relational-data-with-postgresql
+https://linkedin.com/learning/postgresql-essential-training/manage-relational-data-with-postgresql
 -->
 
 ## References

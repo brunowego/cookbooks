@@ -7,7 +7,7 @@ https://medium.com/@m.muizzsuddin_25037/hot-reload-java-without-worry-with-dcevm
 
 https://app.pluralsight.com/library/courses/intellij-ce-getting-started/table-of-contents
 
-https://www.linkedin.com/learning/intellij-idea-community-edition-essential-training-2
+https://linkedin.com/learning/intellij-idea-community-edition-essential-training-2
 -->
 
 ## App

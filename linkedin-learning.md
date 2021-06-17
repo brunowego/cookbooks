@@ -2,5 +2,5 @@
 
 ## Links
 
-- [LinkedIn Learning](https://www.linkedin.com/learning/)
-- [LinkedIn Learning - Technology Newest](https://www.linkedin.com/learning/topics/technology?sortBy=RECENCY)
+- [LinkedIn Learning](https://linkedin.com/learning/)
+- [LinkedIn Learning - Technology Newest](https://linkedin.com/learning/topics/technology?sortBy=RECENCY)

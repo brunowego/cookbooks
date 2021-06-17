@@ -11,16 +11,16 @@ https://app.pluralsight.com/library/courses/aws-developer-serverless-architectur
 https://app.pluralsight.com/library/courses/snowforce-2020-session-21/table-of-contents
 https://app.pluralsight.com/library/courses/implementing-design-patterns-java-8-lambda-expression/table-of-contents
 
-https://www.linkedin.com/learning/learning-amazon-web-services-lambda-2/serverless-computing-with-lambdas
-https://www.linkedin.com/learning/serverless-and-microservices-for-aws/why-serverless-why-microservices
-https://www.linkedin.com/learning/serverless-architecture/what-you-should-know
-https://www.linkedin.com/learning/building-dynamic-websites-using-aws-lambdas/serverless-technology-is-for-full-stack-developers
-https://www.linkedin.com/learning/learning-amazon-web-services-aws-for-developers-2/getting-started-in-amazon-web-services-aws
-https://www.linkedin.com/learning/building-serverless-apps-on-aws-2018/building-a-serverless-app-on-aws
-https://www.linkedin.com/learning/aws-api-gateway-with-http-lambda-dynamodb-and-ios/easy-restful-api-creation
-https://www.linkedin.com/learning/creating-a-serverless-application-using-react-in-aws/2392677
-https://www.linkedin.com/learning/learning-cloud-computing-serverless-computing/introduction-to-serverless-computing
-https://www.linkedin.com/learning/developing-aws-lambda-functions-with-kotlin/welcome
+https://linkedin.com/learning/learning-amazon-web-services-lambda-2/serverless-computing-with-lambdas
+https://linkedin.com/learning/serverless-and-microservices-for-aws/why-serverless-why-microservices
+https://linkedin.com/learning/serverless-architecture/what-you-should-know
+https://linkedin.com/learning/building-dynamic-websites-using-aws-lambdas/serverless-technology-is-for-full-stack-developers
+https://linkedin.com/learning/learning-amazon-web-services-aws-for-developers-2/getting-started-in-amazon-web-services-aws
+https://linkedin.com/learning/building-serverless-apps-on-aws-2018/building-a-serverless-app-on-aws
+https://linkedin.com/learning/aws-api-gateway-with-http-lambda-dynamodb-and-ios/easy-restful-api-creation
+https://linkedin.com/learning/creating-a-serverless-application-using-react-in-aws/2392677
+https://linkedin.com/learning/learning-cloud-computing-serverless-computing/introduction-to-serverless-computing
+https://linkedin.com/learning/developing-aws-lambda-functions-with-kotlin/welcome
 -->
 
 ## CLI

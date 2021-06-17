@@ -1,7 +1,7 @@
 # Mockito
 
 <!--
-https://www.linkedin.com/learning/practical-test-driven-development-for-java-programmers/welcome
+https://linkedin.com/learning/practical-test-driven-development-for-java-programmers/welcome
 -->
 
 ## Links

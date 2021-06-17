@@ -3,8 +3,8 @@
 <!--
 https://github.com/linthtml/linthtml
 
-https://www.linkedin.com/learning/html-and-css-linking/hyperlinks-the-glue-connecting-the-world-wide-web
-https://www.linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
+https://linkedin.com/learning/html-and-css-linking/hyperlinks-the-glue-connecting-the-world-wide-web
+https://linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 -->
 
 ## References

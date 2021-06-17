@@ -1,7 +1,7 @@
 # Java Database Connectivity (JDBC)
 
 <!--
-https://www.linkedin.com/learning/learning-jdbc/get-going-with-data-access-in-java
+https://linkedin.com/learning/learning-jdbc/get-going-with-data-access-in-java
 https://app.pluralsight.com/library/courses/java-core-libraries-jdbc/table-of-contents
 -->
 

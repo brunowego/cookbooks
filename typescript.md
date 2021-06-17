@@ -11,13 +11,13 @@ https://app.pluralsight.com/library/courses/typescript-compiler/table-of-content
 
 https://blog.logrocket.com/types-vs-interfaces-in-typescript/
 
-https://www.linkedin.com/learning/typescript-essential-training/
+https://linkedin.com/learning/typescript-essential-training/
 
-https://www.linkedin.com/learning/learning-typescript-2/
-https://www.linkedin.com/learning/typescript-object-oriented-programming/
+https://linkedin.com/learning/learning-typescript-2/
+https://linkedin.com/learning/typescript-object-oriented-programming/
 
-https://www.linkedin.com/learning/typescript-upgrades-and-features/
-https://www.linkedin.com/learning/typescript-for-node-js-developers/
+https://linkedin.com/learning/typescript-upgrades-and-features/
+https://linkedin.com/learning/typescript-for-node-js-developers/
 -->
 
 ## References

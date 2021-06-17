@@ -1,7 +1,7 @@
 # Search Engine Optimization
 
 <!--
-https://www.linkedin.com/learning/paths/become-an-seo-expert
+https://linkedin.com/learning/paths/become-an-seo-expert
 -->
 
 ## Tools

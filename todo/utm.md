@@ -1,7 +1,7 @@
 # Urchin Tracking Module (UTM) parameters
 
 <!--
-https://www.linkedin.com/learning/marketing-tips-2/welcome-back
+https://linkedin.com/learning/marketing-tips-2/welcome-back
 
 https://www.terminusapp.com/blog/utm-parameters-best-practices/
 

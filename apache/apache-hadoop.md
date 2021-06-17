@@ -1,8 +1,8 @@
 # Apache Hadoop
 
 <!--
-https://www.linkedin.com/learning/learning-hadoop-2/getting-started-with-hadoop
-https://www.linkedin.com/learning/big-data-analytics-with-hadoop-and-apache-spark/the-combined-power-of-spark-and-hadoop-distributed-file-system-hdfs
+https://linkedin.com/learning/learning-hadoop-2/getting-started-with-hadoop
+https://linkedin.com/learning/big-data-analytics-with-hadoop-and-apache-spark/the-combined-power-of-spark-and-hadoop-distributed-file-system-hdfs
 -->
 
 ## References

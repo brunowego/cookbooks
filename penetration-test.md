@@ -1,4 +1,8 @@
-# Penetration Testing
+# Penetration Test (PenTest)
+
+<!--
+https://app.pluralsight.com/paths/certificate/comptia-pentest-pt0-001
+-->
 
 ## Glossary
 

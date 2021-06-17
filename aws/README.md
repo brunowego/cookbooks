@@ -8,34 +8,34 @@ https://www.youtube.com/watch?v=YKT9bWvy_PI
 
 ACKQueue
 
-https://www.linkedin.com/learning/paths/prepare-for-the-aws-certified-cloud-practitioner-exam
-https://www.linkedin.com/learning/paths/become-an-aws-data-and-devops-specialist
-https://www.linkedin.com/learning/paths/prepare-for-aws-devops-engineer-professional-certification
-https://www.linkedin.com/learning/paths/prepare-for-aws-sysops-administrator-certification
+https://linkedin.com/learning/paths/prepare-for-the-aws-certified-cloud-practitioner-exam
+https://linkedin.com/learning/paths/become-an-aws-data-and-devops-specialist
+https://linkedin.com/learning/paths/prepare-for-aws-devops-engineer-professional-certification
+https://linkedin.com/learning/paths/prepare-for-aws-sysops-administrator-certification
 
 https://app.pluralsight.com/search/?q=aws%20certified&type=path&m_sort=relevance&query_id=4364f4ab-a8d6-4533-9340-582d9d55d691&source=user_typed
 
 
 https://app.pluralsight.com/library/courses/aws-system-admin-fundamentals/table-of-contents
 
-https://www.linkedin.com/learning/aws-essential-training-for-developers/what-is-the-best-way-to-use-aws
+https://linkedin.com/learning/aws-essential-training-for-developers/what-is-the-best-way-to-use-aws
 
-https://www.linkedin.com/learning/aws-administration-security-fundamentals/fundamentals-of-aws-security
+https://linkedin.com/learning/aws-administration-security-fundamentals/fundamentals-of-aws-security
 
-https://www.linkedin.com/learning/aws-deploying-and-provisioning/aws-deploying-and-provisioning
-https://www.linkedin.com/learning/aws-automation-and-optimization/automation-and-optimization-in-aws
-https://www.linkedin.com/learning/aws-high-availability/aws-and-high-availability
-https://www.linkedin.com/learning/aws-networking/aws-networking-overview
-https://www.linkedin.com/learning/aws-monitoring-and-reporting/welcome
-https://www.linkedin.com/learning/aws-for-devops-high-availability-and-elasticity/welcome
-https://www.linkedin.com/learning/aws-for-devops-monitoring-metrics-and-logging/welcome
+https://linkedin.com/learning/aws-deploying-and-provisioning/aws-deploying-and-provisioning
+https://linkedin.com/learning/aws-automation-and-optimization/automation-and-optimization-in-aws
+https://linkedin.com/learning/aws-high-availability/aws-and-high-availability
+https://linkedin.com/learning/aws-networking/aws-networking-overview
+https://linkedin.com/learning/aws-monitoring-and-reporting/welcome
+https://linkedin.com/learning/aws-for-devops-high-availability-and-elasticity/welcome
+https://linkedin.com/learning/aws-for-devops-monitoring-metrics-and-logging/welcome
 
-https://www.linkedin.com/learning/aws-and-react-creating-full-stack-apps/full-stack-react-development-on-aws
-https://www.linkedin.com/learning/creating-a-serverless-application-using-react-in-aws/2392677
+https://linkedin.com/learning/aws-and-react-creating-full-stack-apps/full-stack-react-development-on-aws
+https://linkedin.com/learning/creating-a-serverless-application-using-react-in-aws/2392677
 
-https://www.linkedin.com/learning/cloud-native-projects-aws-serverless/flexibility-with-lambda
-https://www.linkedin.com/learning/advanced-kubernetes-1-core-concepts/exploring-the-kubernetes-architecture
-https://www.linkedin.com/learning/aws-high-availability/aws-and-high-availability
+https://linkedin.com/learning/cloud-native-projects-aws-serverless/flexibility-with-lambda
+https://linkedin.com/learning/advanced-kubernetes-1-core-concepts/exploring-the-kubernetes-architecture
+https://linkedin.com/learning/aws-high-availability/aws-and-high-availability
 
 Transactions Per Second (TPS)
 -->

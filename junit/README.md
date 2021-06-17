@@ -10,7 +10,7 @@ https://app.pluralsight.com/library/courses/junit-5-fundamentals/table-of-conten
 https://app.pluralsight.com/paths/skill/unit-testing-in-java
 https://app.pluralsight.com/library/courses/migrating-junit4-junit5-testing-platform/table-of-contents
 
-https://www.linkedin.com/learning/spring-test-driven-development-with-junit/welcome
+https://linkedin.com/learning/spring-test-driven-development-with-junit/welcome
 -->
 
 ## Alternatives

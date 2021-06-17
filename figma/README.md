@@ -4,9 +4,9 @@
 https://www.youtube.com/watch?v=GXhNLTZk85I
 https://www.youtube.com/watch?v=p2sZKAPOQXs
 
-https://www.linkedin.com/learning/figma-for-ux-design-2/sign-up-and-take-a-tour
-https://www.linkedin.com/learning/figma-handing-off-to-developers/figma-developer-handoff
-https://www.linkedin.com/learning/figma-working-with-clients/figma-working-with-clients
+https://linkedin.com/learning/figma-for-ux-design-2/sign-up-and-take-a-tour
+https://linkedin.com/learning/figma-handing-off-to-developers/figma-developer-handoff
+https://linkedin.com/learning/figma-working-with-clients/figma-working-with-clients
 -->
 
 ## References

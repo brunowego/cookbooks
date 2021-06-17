@@ -1,8 +1,8 @@
 # Grafana
 
 <!--
-https://www.linkedin.com/learning/graphite-and-grafana-visualizing-application-performance/monitoring-and-visualizing-system-performance
-https://www.linkedin.com/learning/kubernetes-monitoring-with-prometheus/prometheus-monitoring-to-prevent-outages
+https://linkedin.com/learning/graphite-and-grafana-visualizing-application-performance/monitoring-and-visualizing-system-performance
+https://linkedin.com/learning/kubernetes-monitoring-with-prometheus/prometheus-monitoring-to-prevent-outages
 https://app.pluralsight.com/library/courses/monitoring-containerized-app-health-docker/table-of-contents
 -->
 

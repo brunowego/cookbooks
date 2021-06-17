@@ -6,8 +6,8 @@ https://app.pluralsight.com/paths/skill/automate-infrastructure-on-aws-with-clou
 
 https://app.pluralsight.com/guides/what-is-infrastructure-as-code-and-why-you-should-be-automating-it
 
-https://www.linkedin.com/learning/devops-foundations-infrastructure-as-code/welcome
-https://www.linkedin.com/learning/aws-infrastructure-as-code-for-software-developers/infrastructure-is-code
+https://linkedin.com/learning/devops-foundations-infrastructure-as-code/welcome
+https://linkedin.com/learning/aws-infrastructure-as-code-for-software-developers/infrastructure-is-code
 -->
 
 ## Tools

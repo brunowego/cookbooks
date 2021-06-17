@@ -1,8 +1,8 @@
 # Java
 
 <!--
-https://www.linkedin.com/learning/advanced-java-programming-2/learn-advanced-java-programming
-https://www.linkedin.com/learning/paths/become-a-java-programmer
+https://linkedin.com/learning/advanced-java-programming-2/learn-advanced-java-programming
+https://linkedin.com/learning/paths/become-a-java-programmer
 
 https://github.com/diegocsilva/visitsroutes
 
@@ -10,7 +10,7 @@ https://github.com/JuMp3/demo-quarkus/blob/088392a7058087cc80a23e7eb8b76b4988756
 
 https://github.com/anagomescruz/employee-api
 
-https://www.linkedin.com/learning/calling-rest-apis-with-java/restful-apis-in-java-application-architectures
+https://linkedin.com/learning/calling-rest-apis-with-java/restful-apis-in-java-application-architectures
 
 https://learn.oracle.com/ols/home/java-25th-anniversary-learning-subscription/82508
 
@@ -18,7 +18,7 @@ https://app.pluralsight.com/paths/skill/java
 
 https://app.pluralsight.com/paths/skill/java-ee-foundations
 
-https://www.linkedin.com/learning/search?keywords=eclipselink
+https://linkedin.com/learning/search?keywords=eclipselink
 
 https://app.pluralsight.com/library/courses/java-persistence-api-21/table-of-contents
 

@@ -3,7 +3,7 @@
 <!--
 https://github.com/chdsbd/kodiak
 
-https://www.linkedin.com/learning/github-quick-tips/github-tips-and-tricks
+https://linkedin.com/learning/github-quick-tips/github-tips-and-tricks
 
 https://github.com/brunowego.png
 

@@ -7,34 +7,34 @@ https://github.com/jwasham/coding-interview-university
 
 https://www.youtube.com/watch?v=VJpfO6KdyWE
 
-https://www.linkedin.com/learning/mastering-common-interview-questions/welcome
-https://www.linkedin.com/learning/video-interview-tips/what-are-video-interviews
+https://linkedin.com/learning/mastering-common-interview-questions/welcome
+https://linkedin.com/learning/video-interview-tips/what-are-video-interviews
 
 https://anywhere.epam.com/jobs?specialization=Developer
 
 https://candidates.revelo.com.br/users/sign_in
 
-https://www.linkedin.com/learning/job-searching-interviewing-and-negotiating-salary/command-your-career-bryan-cranston-s-advice-for-millennials
-https://www.linkedin.com/learning/how-to-rock-an-interview/plan-your-first-impression
-https://www.linkedin.com/learning/interview-master-class/introduction
-https://www.linkedin.com/learning/get-ready-for-your-coding-interview/welcome
-https://www.linkedin.com/learning/tech-career-skills-interviewing-developers/technical-interviews
+https://linkedin.com/learning/job-searching-interviewing-and-negotiating-salary/command-your-career-bryan-cranston-s-advice-for-millennials
+https://linkedin.com/learning/how-to-rock-an-interview/plan-your-first-impression
+https://linkedin.com/learning/interview-master-class/introduction
+https://linkedin.com/learning/get-ready-for-your-coding-interview/welcome
+https://linkedin.com/learning/tech-career-skills-interviewing-developers/technical-interviews
 
-https://www.linkedin.com/learning/mastering-common-interview-questions/welcome
-https://www.linkedin.com/learning/fundamentals-of-dynamic-programming/the-importance-of-dynamic-programming
-https://www.linkedin.com/learning/job-interview-tips-for-software-engineers/overview-of-software-engineering-roles
+https://linkedin.com/learning/mastering-common-interview-questions/welcome
+https://linkedin.com/learning/fundamentals-of-dynamic-programming/the-importance-of-dynamic-programming
+https://linkedin.com/learning/job-interview-tips-for-software-engineers/overview-of-software-engineering-roles
 
-https://www.linkedin.com/learning/getting-your-first-job-in-software-development/getting-that-first-job-in-tech
-https://www.linkedin.com/learning/interview-tips-for-sales-professionals/overview-of-sales-development-representative-role
-https://www.linkedin.com/learning/interviewing-a-job-candidate-for-recruiters-2020/the-ever-evolving-interview-process
-https://www.linkedin.com/learning/remote-interviewing-techniques-for-creative-jobs/nailing-your-online-job-interview
+https://linkedin.com/learning/getting-your-first-job-in-software-development/getting-that-first-job-in-tech
+https://linkedin.com/learning/interview-tips-for-sales-professionals/overview-of-sales-development-representative-role
+https://linkedin.com/learning/interviewing-a-job-candidate-for-recruiters-2020/the-ever-evolving-interview-process
+https://linkedin.com/learning/remote-interviewing-techniques-for-creative-jobs/nailing-your-online-job-interview
 
 https://app.pluralsight.com/library/courses/resumes-job-seeking-interviews-context/table-of-contents
 https://app.pluralsight.com/library/courses/successful-technical-interview-interviewers/table-of-contents
 https://app.pluralsight.com/library/courses/how-to-get-your-first-job/table-of-contents
 https://app.pluralsight.com/library/courses/informational-interviews/table-of-contents
 
-https://www.linkedin.com/learning/job-interview-tips-for-marketing-managers/introduction-to-marketing-manager-roles
+https://linkedin.com/learning/job-interview-tips-for-marketing-managers/introduction-to-marketing-manager-roles
 
 Inversion of Control
 Separation of Concerns

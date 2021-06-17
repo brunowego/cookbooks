@@ -1,8 +1,8 @@
 # Open Systems Interconnection model (a.k.a OSI model)
 
 <!--
-https://www.linkedin.com/learning/networking-foundations-networking-basics/welcome-to-the-network
-https://www.linkedin.com/learning/ethical-hacking-sniffers/welcome-2
+https://linkedin.com/learning/networking-foundations-networking-basics/welcome-to-the-network
+https://linkedin.com/learning/ethical-hacking-sniffers/welcome-2
 https://app.pluralsight.com/library/courses/comptia-network-plus-networking-concepts/table-of-contents
 https://app.pluralsight.com/library/courses/communications-network-security/table-of-contents
 https://app.pluralsight.com/library/courses/tcp-udp-operation/table-of-contents

@@ -1,7 +1,7 @@
 # Inkscape
 
 <!--
-https://www.linkedin.com/learning/inkscape-essential-training-9975138/
+https://linkedin.com/learning/inkscape-essential-training-9975138/
 -->
 
 ## App

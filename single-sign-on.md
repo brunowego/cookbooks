@@ -1,7 +1,7 @@
 # Single Sign-On (SSO)
 
 <!--
-https://www.linkedin.com/learning/web-security-user-authentication-and-access-control
+https://linkedin.com/learning/web-security-user-authentication-and-access-control
 
 Cloud Identity
 -->

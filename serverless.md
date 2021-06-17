@@ -3,7 +3,7 @@
 <!--
 https://app.pluralsight.com/paths/skills/building-serverless-applications-on-aws
 
-https://www.linkedin.com/learning/search?entityType=COURSE&keywords=serverless
+https://linkedin.com/learning/search?entityType=COURSE&keywords=serverless
 
 https://app.pluralsight.com/library/courses/serverless-big-picture/table-of-contents
 https://app.pluralsight.com/library/courses/aws-nodejs-serverless-framework-using/table-of-contents

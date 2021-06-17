@@ -1,12 +1,12 @@
 # DevSecOps
 
 <!--
-https://www.linkedin.com/learning/paths/get-ahead-in-devsecops
-https://www.linkedin.com/learning/search?entityType=COURSE&keywords=DevSecOps
+https://linkedin.com/learning/paths/get-ahead-in-devsecops
+https://linkedin.com/learning/search?entityType=COURSE&keywords=DevSecOps
 
-https://www.linkedin.com/learning/devsecops-automated-security-testing/welcome
-https://www.linkedin.com/learning/security-testing-essential-training/the-importance-of-security-testing
-https://www.linkedin.com/learning/python-pen-testing-aws/using-python-to-test-for-cloud-deployment-weaknesses-through-pen-testing
+https://linkedin.com/learning/devsecops-automated-security-testing/welcome
+https://linkedin.com/learning/security-testing-essential-training/the-importance-of-security-testing
+https://linkedin.com/learning/python-pen-testing-aws/using-python-to-test-for-cloud-deployment-weaknesses-through-pen-testing
 
 Sucuri Website Scanner
 

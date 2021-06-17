@@ -1,7 +1,7 @@
 # Apache Sqoop
 
 <!--
-https://www.linkedin.com/learning/learning-hadoop-2/getting-started-with-hadoop
+https://linkedin.com/learning/learning-hadoop-2/getting-started-with-hadoop
 https://app.pluralsight.com/library/courses/hdfs-getting-started/table-of-contents
 -->
 

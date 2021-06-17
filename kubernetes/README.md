@@ -1,10 +1,10 @@
 # Kubernetes
 
 <!--
-https://www.linkedin.com/learning/paths/become-a-docker-administrator
+https://linkedin.com/learning/paths/become-a-docker-administrator
 
-https://www.linkedin.com/learning/kubernetes-microservices/tracing-issues-with-jaeger
-https://www.linkedin.com/learning/learning-kubernetes/what-is-kubernetes
+https://linkedin.com/learning/kubernetes-microservices/tracing-issues-with-jaeger
+https://linkedin.com/learning/learning-kubernetes/what-is-kubernetes
 
 https://www.youtube.com/watch?v=QyG0WSCszYg
 https://www.youtube.com/watch?v=lMb6wzy0PPA

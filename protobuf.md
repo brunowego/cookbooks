@@ -1,7 +1,7 @@
 # Protocol Buffers
 
 <!--
-https://www.linkedin.com/learning/building-java-microservices-with-grpc/microservices-with-grpc
+https://linkedin.com/learning/building-java-microservices-with-grpc/microservices-with-grpc
 -->
 
 ## CLI

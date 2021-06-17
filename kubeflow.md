@@ -7,7 +7,7 @@ https://app.pluralsight.com/course-player?courseId=e23412c1-73e0-41f4-9a6b-7c489
 
 https://www.youtube.com/watch?v=S7qpvr2bZ2U
 
-https://www.linkedin.com/learning/leveraging-cloud-based-machine-learning-on-google-cloud-platform-real-world-applications/
+https://linkedin.com/learning/leveraging-cloud-based-machine-learning-on-google-cloud-platform-real-world-applications/
 
 https://app.pluralsight.com/library/courses/building-end-to-end-machine-learning-workflows-kubeflow/
 https://app.pluralsight.com/library/courses/mlops-machine-learning-operations-fundamentals/

@@ -9,13 +9,13 @@ https://www.blazemeter.com/blog/apache-kafka-how-to-load-test-with-jmeter
 https://octoperf.com/blog/2020/10/30/kafka-load-testing/
 https://github.com/corunet/kloadgen
 
-https://www.linkedin.com/learning/apache-kafka-essential-training-building-scalable-applications/why-are-kafka-skills-so-high-in-demand
+https://linkedin.com/learning/apache-kafka-essential-training-building-scalable-applications/why-are-kafka-skills-so-high-in-demand
 
-https://www.linkedin.com/learning/apache-kafka-essential-training-getting-started/getting-started-with-apache-kafka
+https://linkedin.com/learning/apache-kafka-essential-training-getting-started/getting-started-with-apache-kafka
 
 https://app.pluralsight.com/library/courses/securing-kafka-cluster/table-of-contents
 
-https://www.linkedin.com/learning/search?entityType=COURSE&keywords=kafka
+https://linkedin.com/learning/search?entityType=COURSE&keywords=kafka
 
 https://app.pluralsight.com/library/courses/apache-kafka-getting-started/table-of-contents
 

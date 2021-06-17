@@ -6,7 +6,7 @@ https://www.udemy.com/course/impressao-3d-um-guia-passo-a-passo-2020/
 https://www.udemy.com/course/3d-printing-through-to-painting/
 https://www.udemy.com/course/3d-printing-101-the-ultimate-beginners-guide/
 https://www.udemy.com/course/how-to-optimize-3d-prints/
-https://www.linkedin.com/learning/additive-manufacturing-optimizing-3d-prints-2/getting-the-most-out-of-your-3d-printer
+https://linkedin.com/learning/additive-manufacturing-optimizing-3d-prints-2/getting-the-most-out-of-your-3d-printer
 https://www.coursera.org/lecture/3d-print-hardware/04-02-04-cura-slicer-basics-WJiS5
 -->
 

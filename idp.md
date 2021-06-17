@@ -1,7 +1,7 @@
 # Identity Provider (IdP)
 
 <!--
-https://www.linkedin.com/learning/learning-amazon-web-services-aws-for-developers-2/identity-and-access-management-iam
+https://linkedin.com/learning/learning-amazon-web-services-aws-for-developers-2/identity-and-access-management-iam
 
 https://github.com/healthify/fake_idp
 https://medium.com/swlh/developing-a-microservice-to-handle-over-30k-requests-per-second-at-ifood-3e2d7b822b0e
@@ -15,8 +15,8 @@ https://gist.github.com/bmaupin/6878fae9abcb63ef43f8ac9b9de8fafd
 https://app.pluralsight.com/library/courses/getting-started-saml-two/table-of-contents
 https://app.pluralsight.com/library/courses/oauth2-json-web-tokens-openid-connect-introduction/table-of-contents
 
-https://www.linkedin.com/learning/web-security-oauth-and-openid-connect-2/using-oauth-2-0-and-openid-connect
-https://www.linkedin.com/learning/microservices-security/securing-microservices
+https://linkedin.com/learning/web-security-oauth-and-openid-connect-2/using-oauth-2-0-and-openid-connect
+https://linkedin.com/learning/microservices-security/securing-microservices
 -->
 
 ## Content

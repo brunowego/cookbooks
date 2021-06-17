@@ -1,7 +1,7 @@
 # Nagios
 
 <!--
-https://www.linkedin.com/learning/learning-nagios/welcome
+https://linkedin.com/learning/learning-nagios/welcome
 -->
 
 **Keywords:** Monitoring System

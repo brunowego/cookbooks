@@ -124,6 +124,15 @@ kubectl delete deploy nginx
 <!-- ####
 
 ```sh
+kops \
+  --name "$KOPS_CLUSTER_NAME" \
+  get cluster \
+    -o yaml
+``` -->
+
+<!-- ####
+
+```sh
 cat ~/.kube/config | \
   grep "https://api-${CLUSTERNAME}-${REGION}" | \
     awk '{ print $2 }'| \

@@ -1,7 +1,7 @@
 # Cypress
 
 <!--
-https://www.linkedin.com/learning/end-to-end-javascript-testing-with-cypress-io/test-automation-with-javascript
+https://linkedin.com/learning/end-to-end-javascript-testing-with-cypress-io/test-automation-with-javascript
 https://app.pluralsight.com/library/courses/cypress-end-to-end-javascript-testing/table-of-contents
 https://app.pluralsight.com/library/courses/vue-cypress-end-to-end-testing/table-of-contents
 

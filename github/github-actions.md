@@ -3,8 +3,8 @@
 <!--
 https://github.com/k6io/example-github-actions/tree/master
 
-https://www.linkedin.com/learning/github-actions-first-look-2/what-are-github-actions
-https://www.linkedin.com/learning/learning-github-actions-2/automating-with-github-actions-2
+https://linkedin.com/learning/github-actions-first-look-2/what-are-github-actions
+https://linkedin.com/learning/learning-github-actions-2/automating-with-github-actions-2
 
 https://app.pluralsight.com/library/courses/building-custom-github-actions/table-of-contents
 

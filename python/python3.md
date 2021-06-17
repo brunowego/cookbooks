@@ -1,35 +1,35 @@
 # Python
 
 <!--
-https://www.linkedin.com/learning/8-things-you-must-know-in-python/eight-things-to-know-in-python
-https://www.linkedin.com/learning/python-automation-and-testing/welcome
-https://www.linkedin.com/learning/python-data-structures-sets-and-frozen-sets/why-use-sets-and-frozen-sets
-https://www.linkedin.com/learning/nail-your-python-interview/the-secret-to-nailing-a-python-interview
+https://linkedin.com/learning/8-things-you-must-know-in-python/eight-things-to-know-in-python
+https://linkedin.com/learning/python-automation-and-testing/welcome
+https://linkedin.com/learning/python-data-structures-sets-and-frozen-sets/why-use-sets-and-frozen-sets
+https://linkedin.com/learning/nail-your-python-interview/the-secret-to-nailing-a-python-interview
 
-https://www.linkedin.com/learning/paths/become-a-python-developer
+https://linkedin.com/learning/paths/become-a-python-developer
 
-https://www.linkedin.com/learning/learning-the-python-3-standard-library/welcome
-https://www.linkedin.com/learning/first-look-python-3-9/what-s-new-in-python-3-9
+https://linkedin.com/learning/learning-the-python-3-standard-library/welcome
+https://linkedin.com/learning/first-look-python-3-9/what-s-new-in-python-3-9
 https://app.pluralsight.com/paths/skill/core-python
 
-https://www.linkedin.com/learning/python-standard-library-essential-training/python-the-batteries-included-language
-https://www.linkedin.com/learning/python-recursion/the-power-of-recursion
-https://www.linkedin.com/learning/python-object-oriented-programming/python-object-oriented-programming
-https://www.linkedin.com/learning/python-essential-libraries/power-up-your-python-with-libraries
-https://www.linkedin.com/learning/unit-testing-in-python/python-unit-testing-with-pytest
-https://www.linkedin.com/learning/learning-python/learning-python
-https://www.linkedin.com/learning/data-ingestion-with-python/why-is-data-inegstion-important
-https://www.linkedin.com/learning/python-data-analysis-2/get-started-in-data-analysis-with-python
-https://www.linkedin.com/learning/training-neural-networks-in-python
-https://www.linkedin.com/learning/python-data-structures-dictionaries/python-dictionaries-and-why-you-should-use-them
-https://www.linkedin.com/learning/secure-coding-in-python/developing-securely
-https://www.linkedin.com/learning/advanced-nlp-with-python-for-machine-learning/leveraging-the-power-of-messy-text-data
-https://www.linkedin.com/learning/rapid-application-development-with-python/rapid-development-of-python-gui-apps-with-wxglade
-https://www.linkedin.com/learning/python-data-structures-and-algorithms/python-data-structures-and-algorithms-in-action
-https://www.linkedin.com/learning/python-programming-efficiently-2/programming-efficiently-with-python
-https://www.linkedin.com/learning/python-functions-for-data-science/python-functions-you-should-know
-https://www.linkedin.com/learning/advanced-python-working-with-databases/using-databases-to-level-up-your-python-applications
-https://www.linkedin.com/learning/python-automation-and-testing/welcome
+https://linkedin.com/learning/python-standard-library-essential-training/python-the-batteries-included-language
+https://linkedin.com/learning/python-recursion/the-power-of-recursion
+https://linkedin.com/learning/python-object-oriented-programming/python-object-oriented-programming
+https://linkedin.com/learning/python-essential-libraries/power-up-your-python-with-libraries
+https://linkedin.com/learning/unit-testing-in-python/python-unit-testing-with-pytest
+https://linkedin.com/learning/learning-python/learning-python
+https://linkedin.com/learning/data-ingestion-with-python/why-is-data-inegstion-important
+https://linkedin.com/learning/python-data-analysis-2/get-started-in-data-analysis-with-python
+https://linkedin.com/learning/training-neural-networks-in-python
+https://linkedin.com/learning/python-data-structures-dictionaries/python-dictionaries-and-why-you-should-use-them
+https://linkedin.com/learning/secure-coding-in-python/developing-securely
+https://linkedin.com/learning/advanced-nlp-with-python-for-machine-learning/leveraging-the-power-of-messy-text-data
+https://linkedin.com/learning/rapid-application-development-with-python/rapid-development-of-python-gui-apps-with-wxglade
+https://linkedin.com/learning/python-data-structures-and-algorithms/python-data-structures-and-algorithms-in-action
+https://linkedin.com/learning/python-programming-efficiently-2/programming-efficiently-with-python
+https://linkedin.com/learning/python-functions-for-data-science/python-functions-you-should-know
+https://linkedin.com/learning/advanced-python-working-with-databases/using-databases-to-level-up-your-python-applications
+https://linkedin.com/learning/python-automation-and-testing/welcome
 
 whl means wheels
 -->

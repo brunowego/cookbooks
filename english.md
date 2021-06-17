@@ -5,12 +5,12 @@ https://ibs-americas.com/pt/
 
 https://www.skillshare.com/home?via=header
 
-https://www.linkedin.com/learning/multinational-communication-in-the-workplace/
-https://www.linkedin.com/learning/writing-with-proper-punctuation/
-https://www.linkedin.com/learning/own-your-voice-improve-presentations-and-executive-presence/
-https://www.linkedin.com/learning/writing-in-plain-english/
-https://www.linkedin.com/learning/advanced-grammar/
-https://www.linkedin.com/learning/grammar-foundations/
+https://linkedin.com/learning/multinational-communication-in-the-workplace/
+https://linkedin.com/learning/writing-with-proper-punctuation/
+https://linkedin.com/learning/own-your-voice-improve-presentations-and-executive-presence/
+https://linkedin.com/learning/writing-in-plain-english/
+https://linkedin.com/learning/advanced-grammar/
+https://linkedin.com/learning/grammar-foundations/
 -->
 
 ## Tests

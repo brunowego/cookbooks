@@ -1,7 +1,7 @@
 # Spring Boot
 
 <!--
-https://www.linkedin.com/learning/spring-boot-2-0-essential-training-2/spring-into-spring
+https://linkedin.com/learning/spring-boot-2-0-essential-training-2/spring-into-spring
 
 https://github.com/duydo77/SpringBootElearning
 https://github.com/SimulationSuite/TDOSpractice

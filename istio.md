@@ -1,13 +1,13 @@
 # Istio
 
 <!--
-https://www.linkedin.com/learning/kubernetes-service-mesh-with-istio/adjusting-istio-load-balancing-ratios
+https://linkedin.com/learning/kubernetes-service-mesh-with-istio/adjusting-istio-load-balancing-ratios
 https://app.pluralsight.com/library/courses/istio-managing-apps-kubernetes/table-of-contents
 
 https://github.com/solsson/istio-access-control
 https://github.com/rinormaloku/istio-mastery
 https://devopspro.lt/wp-content/uploads/2019/04/Nikhil-Barthwal-Knative-A-Kubernetes-Framework-to-manage-Serverless-Workloads-min.pdf
-https://www.linkedin.com/learning/kubernetes-service-mesh-with-istio/modifying-routes-for-canary-deployments
+https://linkedin.com/learning/kubernetes-service-mesh-with-istio/modifying-routes-for-canary-deployments
 https://github.com/IBM/cloud-native-starter
 https://github.com/ruzickap/k8s-flagger-istio-flux
 https://github.com/stefanprodan/istio-gke

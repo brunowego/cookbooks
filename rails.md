@@ -1,8 +1,8 @@
 # Ruby on Rails
 
 <!--
-https://www.linkedin.com/learning/paths/become-a-ruby-on-rails-developer
-https://www.linkedin.com/learning/topics/ruby-on-rails?entityType=COURSE
+https://linkedin.com/learning/paths/become-a-ruby-on-rails-developer
+https://linkedin.com/learning/topics/ruby-on-rails?entityType=COURSE
 
 https://app.pluralsight.com/paths/skill/building-web-apps-with-ruby-on-rails
 
@@ -15,8 +15,8 @@ https://matthewhoelter.com/2020/06/10/setup-spina-cms-with-ruby-on-rails-6-and-d
 https://matthewhoelter.com/2020/02/19/how-to-setup-force-ssl-on-nginx-and-lets-encrypt.html
 https://matthewhoelter.com/2019/09/12/setting-up-and-testing-rails-6.0-with-rspec-factorybot-and-devise.html
 
-https://www.linkedin.com/learning/ruby-on-rails-6-essential-training/faster-better-less-painful-website-development
-https://www.linkedin.com/learning/ruby-on-rails-6-essential-training-models-and-associations/let-activerecord-objects-manage-your-data
+https://linkedin.com/learning/ruby-on-rails-6-essential-training/faster-better-less-painful-website-development
+https://linkedin.com/learning/ruby-on-rails-6-essential-training-models-and-associations/let-activerecord-objects-manage-your-data
 -->
 
 ## Plugins

@@ -3,7 +3,7 @@
 <!--
 Buefy
 
-https://www.linkedin.com/learning/paths/become-a-vue-js-developer
+https://linkedin.com/learning/paths/become-a-vue-js-developer
 
 https://github.com/knadh/listmonk/tree/master/frontend
 
@@ -22,8 +22,8 @@ https://github.com/qq449245884/vue-okr-tree
 
 https://app.pluralsight.com/library/courses/vuex-state-management/table-of-contents
 
-https://www.linkedin.com/learning/building-a-video-chat-app-with-vue-js-and-firebase/why-vue-and-firebase-for-real-time-video
-https://www.linkedin.com/learning/vue-js-creating-and-hosting-a-full-stack-site/create-and-host-a-full-stack-site-with-vue-js
+https://linkedin.com/learning/building-a-video-chat-app-with-vue-js-and-firebase/why-vue-and-firebase-for-real-time-video
+https://linkedin.com/learning/vue-js-creating-and-hosting-a-full-stack-site/create-and-host-a-full-stack-site-with-vue-js
 
 https://app.pluralsight.com/course-player?courseId=93623a8f-a551-4939-9527-5c8d1a88360a
 https://www.packtpub.com/web-development/vue-js-2-academy-learn-vue-step-by-step-video

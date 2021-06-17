@@ -36,7 +36,7 @@ https://blogs.oracle.com/developers/configuring-the-oracle-jdbc-drivers-with-qua
 https://medium.com/@yazidaqel/quarkus-configuration-using-consul-d077dc6d5d3
 https://www.amazon.com/Hands-Cloud-Native-Applications-Quarkus-Kubernetes-native-ebook/dp/B082FMCKJG/ref=sr_1_1?dchild=1&keywords=quarkus&qid=1586434790&sr=8-1
 
-https://www.linkedin.com/pulse/jhipster-quarkus-demo-app-stephan-janssen/
+https://linkedin.com/pulse/jhipster-quarkus-demo-app-stephan-janssen/
 
 https://www.udemy.com/course/des-web-quarkus/
 https://www.udemy.com/course/quarkus-backend-development-java/
@@ -165,7 +165,7 @@ assertj-core
 -->
 
 <!--
-https://www.linkedin.com/learning/java-microservices-with-graalvm/running-java-faster-with-graalvm
+https://linkedin.com/learning/java-microservices-with-graalvm/running-java-faster-with-graalvm
 
 https://www.amazon.com.br/Beginning-Quarkus-Framework-Cloud-Native-Microservices-ebook/dp/B08JGJDQ49/ref=asc_df_B08JGJDQ49/?tag=googleshopp00-20&linkCode=df0&hvadid=469812248540&hvpos=&hvnetw=g&hvrand=4368842893524740968&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001541&hvtargid=pla-969767411212&psc=1
 

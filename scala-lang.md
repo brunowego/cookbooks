@@ -8,11 +8,11 @@ https://app.pluralsight.com/library/courses/scala-language-getting-started/table
 https://app.pluralsight.com/library/courses/scala-big-picture/table-of-contents
 https://app.pluralsight.com/library/courses/scala-type-classes-parameterization/table-of-contents
 
-https://www.linkedin.com/learning/scala-essential-training-for-data-science/welcome
+https://linkedin.com/learning/scala-essential-training-for-data-science/welcome
 
-https://www.linkedin.com/learning/scala-first-look/welcome
-https://www.linkedin.com/learning/scala-essential-training/welcome-to-scala-essential-training
-https://www.linkedin.com/learning/learning-jvm-languages-jvm-java-scala/course-overview
+https://linkedin.com/learning/scala-first-look/welcome
+https://linkedin.com/learning/scala-essential-training/welcome-to-scala-essential-training
+https://linkedin.com/learning/learning-jvm-languages-jvm-java-scala/course-overview
 
 https://github.com/niqdev/kafka-scala-examples
 

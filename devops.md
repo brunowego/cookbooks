@@ -5,12 +5,12 @@ https://netflixtechblog.com/full-cycle-developers-at-netflix-a08c31f83249
 
 https://www.google.com/search?client=firefox-b-d&q=PCI+vs+SOX
 
-https://www.linkedin.com/learning/paths/improve-your-continuous-delivery-skills
-https://www.linkedin.com/learning/paths/applying-lean-devops-and-agile-to-your-it-organization
+https://linkedin.com/learning/paths/improve-your-continuous-delivery-skills
+https://linkedin.com/learning/paths/applying-lean-devops-and-agile-to-your-it-organization
 
-https://www.linkedin.com/learning/paths/become-a-devops-engineer
+https://linkedin.com/learning/paths/become-a-devops-engineer
 
-https://www.linkedin.com/learning/devops-foundations-continuous-delivery-continuous-integration/
+https://linkedin.com/learning/devops-foundations-continuous-delivery-continuous-integration/
 -->
 
 ## Related
@@ -171,21 +171,21 @@ https://www.youtube.com/watch?v=H3PKXI0WKmA
 
 https://app.pluralsight.com/paths/skills/understanding-devops
 
-https://www.linkedin.com/learning/devops-foundations-microservices/what-microservices-mean-for-devops
-https://www.linkedin.com/learning/devops-foundations/development-and-operations-2
-https://www.linkedin.com/learning/devops-foundations-your-first-project/your-first-project-devopsified
-https://www.linkedin.com/learning/succeeding-in-devops/your-role-as-a-devops-engineer
+https://linkedin.com/learning/devops-foundations-microservices/what-microservices-mean-for-devops
+https://linkedin.com/learning/devops-foundations/development-and-operations-2
+https://linkedin.com/learning/devops-foundations-your-first-project/your-first-project-devopsified
+https://linkedin.com/learning/succeeding-in-devops/your-role-as-a-devops-engineer
 
 https://app.pluralsight.com/paths/skill/understanding-devops
 
-https://www.linkedin.com/learning/devops-foundations-devsecops/welcome
-https://www.linkedin.com/learning/devops-foundations-containers/welcome
-https://www.linkedin.com/learning/devops-foundations-transforming-the-enterprise/transforming-your-organization
+https://linkedin.com/learning/devops-foundations-devsecops/welcome
+https://linkedin.com/learning/devops-foundations-containers/welcome
+https://linkedin.com/learning/devops-foundations-transforming-the-enterprise/transforming-your-organization
 
-https://www.linkedin.com/learning/learning-azure-devops-10005641/
-https://www.linkedin.com/learning/devops-foundations-accelerating-continuous-delivery-in-the-enterprise/take-your-ci-cd-to-the-next-level
-https://www.linkedin.com/learning/devops-foundations-lean-and-agile/lean-and-agile-in-devops-3
-https://www.linkedin.com/learning/software-testing-foundations-continuous-testing-and-devops/what-should-testers-know-about-devops
+https://linkedin.com/learning/learning-azure-devops-10005641/
+https://linkedin.com/learning/devops-foundations-accelerating-continuous-delivery-in-the-enterprise/take-your-ci-cd-to-the-next-level
+https://linkedin.com/learning/devops-foundations-lean-and-agile/lean-and-agile-in-devops-3
+https://linkedin.com/learning/software-testing-foundations-continuous-testing-and-devops/what-should-testers-know-about-devops
 
 https://olympus.greatlearning.in/courses/15689/pages/session-overview?module_item_id=676880
 

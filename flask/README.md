@@ -5,7 +5,7 @@ https://github.com/Innopoints/backend
 
 https://app.pluralsight.com/paths/skill/building-web-applications-with-flask
 
-https://www.linkedin.com/learning/flask-essential-training/web-development-with-flask
+https://linkedin.com/learning/flask-essential-training/web-development-with-flask
 
 https://github.com/arthurchiquet/Dashboard
 https://github.com/KoeusIss/holbietheque

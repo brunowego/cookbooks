@@ -5,8 +5,8 @@ https://github.com/SantimosoTFM/tfm-loadtesting/tree/master/jmeter
 
 https://www.blazemeter.com/jmeter-load-testing/
 
-https://www.linkedin.com/learning/jmeter-performance-and-load-testing/testing-with-jmeter
-https://www.linkedin.com/learning/advanced-jmeter/getting-more-out-of-jmeter
+https://linkedin.com/learning/jmeter-performance-and-load-testing/testing-with-jmeter
+https://linkedin.com/learning/advanced-jmeter/getting-more-out-of-jmeter
 https://github.com/marketplace/actions/apache-jmeter
 https://grafana.com/grafana/dashboards/1152
 

@@ -1,8 +1,8 @@
 # Open Broadcaster Software (OBS) Studio
 
 <!--
-https://www.linkedin.com/learning/learning-video-live-streaming/welcome
-https://www.linkedin.com/learning/delivering-video-to-facebook-live/welcome-and-what-you-should-know-before-starting-this-course
+https://linkedin.com/learning/learning-video-live-streaming/welcome
+https://linkedin.com/learning/delivering-video-to-facebook-live/welcome-and-what-you-should-know-before-starting-this-course
 -->
 
 ## App

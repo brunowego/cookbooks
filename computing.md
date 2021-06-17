@@ -1,7 +1,7 @@
 # Computing
 
 <!--
-https://www.linkedin.com/learning/plc-program-flow-and-control-instructions/plc-program-flow-and-control
+https://linkedin.com/learning/plc-program-flow-and-control-instructions/plc-program-flow-and-control
 -->
 
 ## Terms

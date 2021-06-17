@@ -1,7 +1,7 @@
 # Symfony
 
 <!--
-https://www.linkedin.com/learning/learning-symfony-4/build-web-apps-with-symfony
+https://linkedin.com/learning/learning-symfony-4/build-web-apps-with-symfony
 -->
 
 ## Links

@@ -1,8 +1,8 @@
 # Apache Flink
 
 <!--
-https://www.linkedin.com/learning/apache-flink-real-time-data-engineering/real-time-processing-and-analytics
-https://www.linkedin.com/learning/apache-flink-batch-mode-data-engineering/batch-mode-engineering
+https://linkedin.com/learning/apache-flink-real-time-data-engineering/real-time-processing-and-analytics
+https://linkedin.com/learning/apache-flink-batch-mode-data-engineering/batch-mode-engineering
 
 https://app.pluralsight.com/library/courses/conceptualizing-processing-model-apache-flink/table-of-contents
 https://app.pluralsight.com/library/courses/exploring-apache-flink-api-processing-streaming-data/table-of-contents

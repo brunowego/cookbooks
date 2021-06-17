@@ -7,7 +7,7 @@ https://app.pluralsight.com/library/courses/cassandra-developers/table-of-conten
 https://app.pluralsight.com/library/courses/big-data-ldn-session-35/table-of-contents
 https://app.pluralsight.com/library/courses/spark-kafka-cassandra-applying-lambda-architecture/table-of-contents
 
-https://www.linkedin.com/learning/cassandra-data-modeling-essential-training/welcome
+https://linkedin.com/learning/cassandra-data-modeling-essential-training/welcome
 -->
 
 **Keywords:**: NoSQL

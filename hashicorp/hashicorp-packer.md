@@ -1,7 +1,7 @@
 # HashiCorp Packer
 
 <!--
-https://www.linkedin.com/learning/learning-hashicorp-packer/stop-manually-creating-images-and-start-using-packer
+https://linkedin.com/learning/learning-hashicorp-packer/stop-manually-creating-images-and-start-using-packer
 -->
 
 ## CLI

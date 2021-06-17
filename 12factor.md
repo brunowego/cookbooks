@@ -11,7 +11,7 @@ https://leanpub.com/12fa-docker-golang
 
 ## Courses
 
-- [Cloud Native Twelve-Factor Applications](https://www.linkedin.com/learning/cloud-native-twelve-factor-applications/)
+- [Cloud Native Twelve-Factor Applications](https://linkedin.com/learning/cloud-native-twelve-factor-applications/)
 
 ## Libraries
 

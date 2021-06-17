@@ -12,7 +12,7 @@ https://github.com/dhinojosa/spinnaker-study/tree/master/terraform
 https://app.pluralsight.com/paths/skill/managing-infrastructure-with-terraform
 https://app.pluralsight.com/paths/certificate/hashicorp-certified-terraform-associate
 
-https://www.linkedin.com/learning/search?entityType=COURSE&keywords=terraform
+https://linkedin.com/learning/search?entityType=COURSE&keywords=terraform
 
 https://www.hashicorp.com/certification/terraform-associate
 

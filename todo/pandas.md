@@ -17,5 +17,5 @@ https://app.pluralsight.com/library/courses/pandas-playbook-visualization/table-
 https://app.pluralsight.com/paths/skills/interpreting-data-with-python
 https://www.casadocodigo.com.br/products/livro-pandas-python
 
-https://www.linkedin.com/learning/faster-pandas/pandas-and-performance
+https://linkedin.com/learning/faster-pandas/pandas-and-performance
 -->

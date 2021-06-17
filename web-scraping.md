@@ -1,7 +1,7 @@
 # Web Scraping
 
 <!--
-https://www.linkedin.com/learning/search?entityType=COURSE&keywords=Web%20Scraping
+https://linkedin.com/learning/search?entityType=COURSE&keywords=Web%20Scraping
 
 https://app.pluralsight.com/paths/skills/web-scraping-with-python
 

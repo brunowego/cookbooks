@@ -1,8 +1,8 @@
 # MongoDB
 
 <!--
-https://www.linkedin.com/learning/nosql-essential-training/
-https://www.linkedin.com/learning/learning-mongodb/
+https://linkedin.com/learning/nosql-essential-training/
+https://linkedin.com/learning/learning-mongodb/
 -->
 
 ## References

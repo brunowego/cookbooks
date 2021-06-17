@@ -5,9 +5,9 @@ https://app.pluralsight.com/course-player?courseId=f7f65950-1da8-4acd-8a19-1fa01
 https://app.pluralsight.com/library/courses/cqrs-in-practice/table-of-contents
 https://app.pluralsight.com/library/courses/modern-software-architecture-domain-models-cqrs-event-sourcing/table-of-contents
 
-https://www.linkedin.com/learning/software-architecture-domain-driven-design/better-apps-with-domain-driven-design
-https://www.linkedin.com/learning/software-architecture-patterns-for-developers/best-practices-and-blueprints
-https://www.linkedin.com/learning/behavior-driven-development/collaboration-with-behavior-driven-development-bdd
+https://linkedin.com/learning/software-architecture-domain-driven-design/better-apps-with-domain-driven-design
+https://linkedin.com/learning/software-architecture-patterns-for-developers/best-practices-and-blueprints
+https://linkedin.com/learning/behavior-driven-development/collaboration-with-behavior-driven-development-bdd
 
 https://leanpub.com/cqrs/
 

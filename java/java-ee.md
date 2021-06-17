@@ -15,7 +15,7 @@ Superset of Java SE.
 <!--
 https://app.pluralsight.com/paths/skills/java-ee-foundations
 
-https://www.linkedin.com/learning/search?entityType=COURSE&keywords=Jakarta%20EE
+https://linkedin.com/learning/search?entityType=COURSE&keywords=Jakarta%20EE
 -->
 
 ## Java Development Toolkit (JDK)

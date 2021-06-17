@@ -2,7 +2,7 @@
 
 <!--
 https://app.pluralsight.com/paths/skills/working-with-nodejs
-https://www.linkedin.com/learning/node-js-essential-training-3/learn-the-node-js-fundamentals
+https://linkedin.com/learning/node-js-essential-training-3/learn-the-node-js-fundamentals
 -->
 
 ## Related

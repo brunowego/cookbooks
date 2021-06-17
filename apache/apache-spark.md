@@ -1,12 +1,12 @@
 # Apache Spark
 
 <!--
-https://www.linkedin.com/learning/paths/advance-your-skills-as-an-apache-spark-specialist
+https://linkedin.com/learning/paths/advance-your-skills-as-an-apache-spark-specialist
 
 https://medium.com/beeranddiapers/installing-apache-spark-on-mac-os-ce416007d79f
 
-https://www.linkedin.com/learning/apache-spark-essential-training-big-data-engineering/welcome
-https://www.linkedin.com/learning/apache-spark-essential-training/where-spark-shines
+https://linkedin.com/learning/apache-spark-essential-training-big-data-engineering/welcome
+https://linkedin.com/learning/apache-spark-essential-training/where-spark-shines
 
 https://app.pluralsight.com/library/courses/apache-spark-2-structured-streaming/table-of-contents
 
