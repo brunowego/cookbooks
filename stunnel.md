@@ -74,7 +74,9 @@ sudo yum -y install gcc-c++ make openssl-devel
 ##### Build & Install
 
 ```sh
-curl https://www.stunnel.org/downloads/stunnel-5.56.tar.gz | tar -xzC /tmp
+curl https://www.stunnel.org/downloads/stunnel-5.56.tar.gz | \
+  tar -xzC /tmp
+
 ( cd /tmp/stunnel-5.56 && ./configure && make && sudo make install ) && rm -r /tmp/stunnel-5.56
 ```
 

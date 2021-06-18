@@ -1,16 +1,38 @@
-# NGINX Ingress
+# Kubernetes Ingress NGINX
+
+## Manifest
+
+### Install
+
+```sh
+#
+kubectl apply \
+  -f 'https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml'
+
+#
+kubectl wait \
+  --namespace ingress-nginx \
+  --for=condition=ready pod \
+  --selector=app.kubernetes.io/component=controller \
+  --timeout=90s
+```
+
+### Uninstall
+
+```sh
+kubectl delete \
+  -f 'https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml'
+```
 
 ## Minikube
 
-### Enable
+### Addons
 
 ```sh
+# Enable
 minikube addons enable ingress
-```
 
-### Disable
-
-```sh
+# Disable
 minikube addons disable ingress
 ```
 

@@ -1,28 +1,28 @@
 # asdf Helm
 
-## Installation
+## Plugin
+
+### Installation
 
 ```sh
 asdf plugin-add helm https://github.com/Antiarchitect/asdf-helm.git
 ```
 
-## Version
+### Usage
 
 ```sh
+#
 asdf list-all helm
-```
 
-```sh
+#
 asdf install helm [version]
-```
 
-## Setting
-
-```sh
-asdf global helm [version]
-```
-
-```sh
+#
 asdf list helm
+
+#
+asdf global helm [version]
+
+#
 asdf reshim helm [version]
 ```

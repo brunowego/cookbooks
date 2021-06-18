@@ -187,7 +187,8 @@ mongojdbc1.2.jar
 # COPY sqljdbc42.jar /usr/share/logstash/logstash-core/lib/jars/sqljdbc42.jar
 
 # MySQL
-# curl -L https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.49.tar.gz | tar -xzC /opt/nifi/nifi-current/lib mysql-connector-java-5.1.49/mysql-connector-java-5.1.49.jar --strip-components 1
+# curl -L https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.49.tar.gz | \
+  tar -xzC /opt/nifi/nifi-current/lib mysql-connector-java-5.1.49/mysql-connector-java-5.1.49.jar --strip-components 1
 
 # COPY mysql-connector-java-5.1.36-bin.jar /usr/share/logstash/logstash-core/lib/jars/mysql-connector-java-5.1.36-bin.jar
 ``` -->

@@ -35,7 +35,8 @@ sudo yum -y install curl cmake boost-devel
 ##### Build & Install
 
 ```sh
-curl https://archive.apache.org/dist/avro/avro-1.8.2/avro-src-1.8.2.tar.gz | tar -xzC /tmp
+curl https://archive.apache.org/dist/avro/avro-1.8.2/avro-src-1.8.2.tar.gz | \
+  tar -xzC /tmp
 ```
 
 ```sh

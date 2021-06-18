@@ -95,6 +95,34 @@ kubectl delete secret [secret-name] -n [namespace]
 
 ### Tips
 
+#### Consulting kubeconfig
+
+```sh
+#
+cat ~/.kube/config | yq e '.clusters[].cluster.server' -
+cat ~/.kube/config | yq e '.clusters[0].cluster.server' -
+
+#
+cat ~/.kube/config | yq e '.clusters[0].cluster.certificate-authority-data' - | base64 -d
+
+#
+cat ~/.kube/config | yq e '.users[0].user.client-certificate-data' - | base64 -d
+
+#
+cat ~/.kube/config | yq e '.users[0].user.client-key-data' - | base64 -d
+```
+
+#### API Request Example
+
+```sh
+#
+curl \
+  "$(cat ~/.kube/config | yq e '.clusters[0].cluster.server' -)/api/v1/namespaces/default/pods?limit=10" \
+  --cacert <(cat ~/.kube/config | yq e '.clusters[0].cluster.certificate-authority-data' - | base64 -d) \
+  --cert <(cat ~/.kube/config | yq e '.users[0].user.client-certificate-data' - | base64 -d) \
+  --key <(cat ~/.kube/config | yq e '.users[0].user.client-key-data' - | base64 -d)
+```
+
 #### Command-line completion
 
 ```sh

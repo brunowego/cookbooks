@@ -98,7 +98,9 @@ sudo yum -y install wget gcc make pcre-devel expat-devel
 ##### Build & Install
 
 ```sh
-wget -O - https://archive.apache.org/dist/httpd/httpd-2.4.41.tar.gz | tar -xz
+wget -O - https://archive.apache.org/dist/httpd/httpd-2.4.41.tar.gz | \
+  tar -xz
+
 ( cd ./httpd-2.4.41 && ./configure --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr --prefix=/usr/local/apache && make && sudo make install ) && rm -r ./httpd-2.4.41
 ```
 

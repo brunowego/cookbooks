@@ -19,7 +19,8 @@ sudo yum -y install curl java-1.8.0-openjdk-devel
 ## Installation
 
 ```sh
-curl -L https://github.com/apache/incubator-gobblin/archive/release-0.14.0.tar.gz | tar -xzC /tmp
+curl -L https://github.com/apache/incubator-gobblin/archive/release-0.14.0.tar.gz | \
+  tar -xzC /tmp
 ```
 
 ```sh

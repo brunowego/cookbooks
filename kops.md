@@ -130,20 +130,6 @@ kops \
     -o yaml
 ``` -->
 
-<!-- ####
-
-```sh
-cat ~/.kube/config | \
-  grep "https://api-${CLUSTERNAME}-${REGION}" | \
-    awk '{ print $2 }'| \
-      cut -d '/' -f 3
-```
-
-curl $(cat ~/.kube/config | yq r - clusters[0].cluster.server)/api/v1/namespaces/default/pods?limit=10 \
---cacert <(cat ~/.kube/config | yq r - clusters[0].cluster.certificate-authority-data | base64 -d) \
---cert <(cat ~/.kube/config | yq r - users[0].user.client-certificate-data | base64 -d) \
---key <(cat ~/.kube/config | yq r - users[0].user.client-key-data | base64 -d) -->
-
 #### Cluster Queries
 
 ```sh
@@ -393,4 +379,11 @@ kops update cluster \
 
 terraform apply -auto-approve && \
 kops rolling-update cluster --cloudonly --force --master-interval=1s --node-interval=1s --yes
+-->
+
+<!--
+#
+ssh \
+  -i ~/.ssh/id_rsa."$KOPS_CLUSTER_NAME" \
+  ubuntu@api."$KOPS_CLUSTER_NAME"
 -->

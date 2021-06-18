@@ -92,6 +92,14 @@ pkill helm
 
 ### Tips
 
+<!-- ####
+
+```sh
+helm template codecentric/keycloak \
+  -n keycloak \
+    > ./manifest.yaml
+``` -->
+
 #### Visual Studio Code
 
 ```sh
@@ -163,6 +171,16 @@ WARNING: Kubernetes configuration file is world-readable. This is insecure. Loca
 ```
 
 TODO -->
+
+<!-- ####
+
+```log
+Error: plugin home "$HELM_HOME/plugins" does not exist
+```
+
+```sh
+mkdir -p ~/.helm/plugins
+``` -->
 
 #### API Version
 

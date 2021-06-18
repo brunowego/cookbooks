@@ -1,10 +1,11 @@
 # yq
 
+## Links
+
+- [Code Repository](https://github.com/mikefarah/yq)
+- [Main Website](https://mikefarah.github.io/yq/)
+
 ## CLI
-
-### References
-
-- [Docs](http://mikefarah.github.io/yq/)
 
 ### Installation
 
@@ -47,9 +48,9 @@ yq help
 
 ```sh
 # Simple
-yq r [/path/to/file] [attribute]
+yq e '.[attribute]' [/path/to/file]
 
 # Standard out
 cat [/path/to/file] | \
-  yq r - [attribute]
+  yq e '.[attribute]' -
 ```

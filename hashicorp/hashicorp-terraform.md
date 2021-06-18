@@ -227,3 +227,24 @@ code --install-extension hashicorp.terraform
 
 https://www.youtube.com/watch?v=uFaMUS6Z9fI
 -->
+
+### Issues
+
+#### Execution Mode
+
+```log
+Error: Unreadable module directory
+
+Unable to evaluate directory symlink: lstat ../../module: no such file or
+directory
+
+Error: Failed to read module directory
+
+Module directory  does not exist or cannot be read.
+```
+
+1. Go to [Workspaces](https://app.terraform.io/app/arcotech/workspaces)
+2. Select the Workspace Name
+3. Settings Tab -> General
+   - Execution Mode Session -> Select Local
+   - Save settings

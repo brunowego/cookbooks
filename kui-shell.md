@@ -3,7 +3,8 @@
 ## CLI
 
 ```sh
-curl -L https://github.com/IBM/kui/archive/v4.5.0.tar.gz | tar -xzC /usr/local
+curl -L https://github.com/IBM/kui/archive/v4.5.0.tar.gz | \
+  tar -xzC /usr/local
 ```
 
 ## UI

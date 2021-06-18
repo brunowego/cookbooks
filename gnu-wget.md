@@ -45,7 +45,18 @@ choco install -y wget
 wget -h
 ```
 
-### Proxy
+### Tips
+
+#### Binary Download
+
+```sh
+wget \
+  -O - \
+  '[download-link]' | \
+    tar -xzC /usr/local/bin
+```
+
+#### Proxy
 
 ```sh
 tee -a ~/.wgetrc << EOF

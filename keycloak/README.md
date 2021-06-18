@@ -51,6 +51,25 @@ https://github.com/akvo/akvo-lumen/commit/2a15a7eedd3d8fd9e77ba7b1eb4cee4ccf168b
 - [The Admin CLI](https://github.com/keycloak/keycloak-documentation/blob/master/server_admin/topics/admin-cli.adoc)
 - [Keycloak Performance Testsuite](https://github.com/keycloak/keycloak/tree/master/testsuite/performance)
 
+## CLI Embedded Mode
+
+```sh
+#
+[disconnected /] connect
+
+#
+[disconnected /] embed-server --server-config=standalone.xml --std-out=echo
+```
+
+```sh
+#
+(echo embed-server --server-config=standalone.xml --std-out=echo; cat myscript.cli) | jboss-cli.sh
+```
+
+<!--
+jboss-cli.sh --file=turn-off-caching.cli
+-->
+
 ## Docker
 
 ### Network
@@ -61,6 +80,8 @@ docker network create workbench \
 ```
 
 ### Running
+
+#### Version 13.x
 
 ```sh
 # Using MySQL
@@ -192,6 +213,12 @@ curl -s 'http://localhost:8080/auth/realms/master/protocol/openid-connect/certs'
     -d '{"type":"password", "value":"user", "temporary":false}'
 -->
 
+### JBoss Application Server (AS) CLI
+
+```sh
+docker exec -it keycloak /opt/jboss/keycloak/bin/jboss-cli.sh
+```
+
 ### Remove
 
 ```sh
@@ -231,16 +258,16 @@ helm repo update
 kubectl create namespace keycloak
 ```
 
-```sh
+<!-- ```sh
+#
 kubectl create secret tls example.tls-secret \
   --cert='/etc/ssl/certs/example/root-ca.crt' \
   --key='/etc/ssl/private/example/root-ca.key' \
   -n keycloak
-```
 
-```sh
 helm install keycloak codecentric/keycloak \
   --namespace keycloak \
+  --version 11.0.1 \
   --set keycloak.username=admin \
   --set-string keycloak.ingress.enabled=true \
   --set keycloak.ingress.hosts={keycloak.example.com} \
@@ -248,12 +275,23 @@ helm install keycloak codecentric/keycloak \
   --set 'keycloak.ingress.tls[0].hosts={keycloak.example.com}' \
   --set keycloak.persistence.deployPostgres=true \
   --set keycloak.persistence.dbVendor=postgres
+``` -->
+
+```sh
+#
+helm install keycloak codecentric/keycloak \
+  --namespace keycloak \
+  --version 11.0.1 \
+  --set ingress.enabled=true \
+  --set 'ingress.rules[0].host=keycloak.example.com' \
+  --set 'ingress.rules[0].paths={/}'
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status statefulset/keycloak -n keycloak
+kubectl rollout status statefulset/keycloak \
+  -n keycloak
 ```
 
 ### Secret
@@ -265,13 +303,23 @@ kubectl get secret keycloak-http \
     base64 --decode; echo
 ```
 
+### Configuration
+
+```sh
+#
+sudo hostess add keycloak.example.com 127.0.0.1
+```
+
 ### Delete
 
 ```sh
-helm uninstall keycloak -n keycloak
-kubectl delete namespace keycloak --grace-period=0 --force
-```
+helm uninstall keycloak \
+  -n keycloak
 
+kubectl delete namespace keycloak \
+  --grace-period=0 \
+  --force
+```
 
 ## Docs
 

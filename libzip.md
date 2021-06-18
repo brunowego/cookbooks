@@ -48,7 +48,7 @@ sudo yum -y install cmake3
 
 ```sh
 #
-curl -L https://libzip.org/download/libzip-1.5.2.tar.gz | \
+curl -L 'https://libzip.org/download/libzip-1.5.2.tar.gz' | \
   tar -xz
 
 #

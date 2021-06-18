@@ -25,3 +25,9 @@ aws \
     jq '.DistributionList | .Items | .[] | .Id' |\
       cut -d '"' -f 2
 ```
+
+<!--
+aws cloudfront create-invalidation \
+  --distribution-id ${{ secrets.WEBAPP_AWS_CLOUDFRONT_DISTRIBUTION }} \
+  --paths "/*"
+-->

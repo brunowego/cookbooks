@@ -21,7 +21,11 @@ npm install bats -g
 ##### Install
 
 ```sh
-wget -O - https://github.com/bats-core/bats-core/archive/v1.1.0.tar.gz | tar -xz
+wget \
+  -O - \
+  https://github.com/bats-core/bats-core/archive/v1.1.0.tar.gz | \
+    tar -xz
+
 ( cd ./bats-core-1.1.0 && ./install.sh /usr/local ) && rm -fR ./bats-core-1.1.0
 ```
 

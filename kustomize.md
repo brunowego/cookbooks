@@ -72,10 +72,12 @@ kustomize -h
 kustomize create --resources ./base
 
 # Preview base
-kustomize build ./base
+kustomize build ./base | \
+  yq e -
 
 # Preview local
-kustomize build ./overlays/local
+kustomize build ./overlays/local |
+  yq e -
 
 # Apply
 kustomize build ./overlays/local | \

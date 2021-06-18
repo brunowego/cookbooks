@@ -9,6 +9,9 @@ https://linkedin.com/learning/learning-github-actions-2/automating-with-github-a
 https://app.pluralsight.com/library/courses/building-custom-github-actions/table-of-contents
 
 filename:.yml path:.github/workflows
+
+${{ github.event.release.tag_name }}
+${{ github.event.inputs.launcher_ref }}
 -->
 
 ## Guides

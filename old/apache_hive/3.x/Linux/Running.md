@@ -25,7 +25,9 @@ TODO
 ### MySQL
 
 ```sh
-curl -L https://downloads.mysql.com/archives/get/file/mysql-connector-java-5.1.46.tar.gz | tar -xzC /tmp
+curl -L https://downloads.mysql.com/archives/get/file/mysql-connector-java-5.1.46.tar.gz | \
+  tar -xzC /tmp
+
 ( cd /tmp/mysql-connector-java-5.1.46 && sudo mv mysql-connector-java-5.1.46-bin.jar /opt/apache-hive/lib ) && rm -r /tmp/mysql-connector-java-5.1.46
 ```
 

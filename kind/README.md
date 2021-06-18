@@ -37,11 +37,49 @@ kind -h
 ### Configuration
 
 ```sh
+#
 tee ~/.kind-config.yml << EOF
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
 - role: control-plane
+  kubeadmConfigPatches:
+  - |
+    kind: InitConfiguration
+    nodeRegistration:
+      kubeletExtraArgs:
+        node-labels: "ingress-ready=true"
+  extraPortMappings:
+  - containerPort: 80
+    hostPort: 80
+    protocol: TCP
+  - containerPort: 443
+    hostPort: 443
+    protocol: TCP
+- role: worker
+- role: worker
+- role: worker
+EOF
+
+#
+cat << EOF | kind create cluster --name 'default' --config -
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+  kubeadmConfigPatches:
+  - |
+    kind: InitConfiguration
+    nodeRegistration:
+      kubeletExtraArgs:
+        node-labels: "ingress-ready=true"
+  extraPortMappings:
+  - containerPort: 80
+    hostPort: 80
+    protocol: TCP
+  - containerPort: 443
+    hostPort: 443
+    protocol: TCP
 - role: worker
 - role: worker
 - role: worker
@@ -70,8 +108,10 @@ kubectl cluster-info --context kind-default
 kind get clusters
 
 # Get nodes
-kind get nodes --name 'default'
+kind get nodes \
+  --name 'default'
 
 # Delete
-kind delete cluster --name 'default'
+kind delete cluster \
+  --name 'default'
 ```
