@@ -34,7 +34,4 @@ eb list
 <!--
 #
 eb deploy
-
-#
-aws elasticbeanstalk help
 -->

@@ -76,6 +76,10 @@ kubens '<namespace>'
 stern '<pod-prefix>'
 
 #
+stern .
+stern -s 1m .
+
+#
 stern '<pod-prefix>' \
   -n '<namespace>'
 

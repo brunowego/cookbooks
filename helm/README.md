@@ -236,7 +236,7 @@ helm install lamp local/lamp \
   --namespace lamp \
   --set service.type=ClusterIP \
   --set ingress.enabled=true \
-  --set ingress.domain="lamp.$(minikube ip).nip.io"
+  --set ingress.domain="lamp.${INGRESS_HOST}.nip.io"
 ```
 
 ```sh

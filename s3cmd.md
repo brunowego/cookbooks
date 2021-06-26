@@ -1,4 +1,4 @@
-# Amazon S3 Tools (S3cmd)
+# AWS S3 Tools (S3cmd)
 
 ## Guides
 

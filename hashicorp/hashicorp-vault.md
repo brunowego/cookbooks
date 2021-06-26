@@ -49,11 +49,11 @@ kubectl create secret tls example.tls-secret \
 helm install vault incubator/vault \
   --namespace vault \
   --set vault.dev=false \
-  # --set vault.config.storage.consul.address=consul.$(minikube ip).nip.io \
+  # --set vault.config.storage.consul.address=consul.${INGRESS_HOST}.nip.io \
   --set ingress.enabled=true \
-  --set ingress.hosts={vault.$(minikube ip).nip.io} \
+  --set ingress.hosts={vault.${INGRESS_HOST}.nip.io} \
   --set 'ingress.tls[0].secretName=example.tls-secret' \
-  --set "ingress.tls[0].hosts={vault.$(minikube ip).nip.io}"
+  --set "ingress.tls[0].hosts={vault.${INGRESS_HOST}.nip.io}"
 ```
 
 ### Logs

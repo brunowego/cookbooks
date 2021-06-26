@@ -136,7 +136,7 @@ kubectl create namespace grafana
 helm install grafana stable/grafana \
   --namespace grafana \
   --set ingress.enabled=true \
-  --set ingress.hosts={grafana.$(minikube ip).nip.io}
+  --set ingress.hosts={grafana.${INGRESS_HOST}.nip.io}
 ```
 
 ### SSL
@@ -160,7 +160,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - grafana.$(minikube ip).nip.io
+        - grafana.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values grafana))
 ```
@@ -195,8 +195,8 @@ nslookup grafana.grafana.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "grafana.$(minikube ip).nip.io" +short
-nslookup "grafana.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "grafana.${INGRESS_HOST}.nip.io" +short
+nslookup "grafana.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret

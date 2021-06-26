@@ -94,6 +94,9 @@ minikube --help
 ### Usage
 
 ```sh
+#
+export INGRESS_HOST="$(minikube ip)"
+
 # Start
 minikube start \
   $(echo "$MINIKUBE_START_OPTS") \
@@ -194,13 +197,13 @@ docker info | grep Proxy
 sudo route \
   -n add \
   -net "$(cat ~/.minikube/profiles/minikube/config.json | \
-    jq -r '.KubernetesConfig.ServiceCIDR')" "$(minikube ip)"
+    jq -r '.KubernetesConfig.ServiceCIDR')" "$INGRESS_HOST"
 
 # Removing
 sudo route \
   -n delete \
   -net "$(cat ~/.minikube/profiles/minikube/config.json | \
-    jq -r '.KubernetesConfig.ServiceCIDR')" "$(minikube ip)"
+    jq -r '.KubernetesConfig.ServiceCIDR')" "$INGRESS_HOST"
 ```
 
 ### Issues

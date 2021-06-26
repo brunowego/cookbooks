@@ -4,11 +4,13 @@
 https://www.udemy.com/course/learn-devops-helm-helmfile-kubernetes-deployment/
 
 https://github.com/ryane/kubernetes-aws-vpc-kops-terraform
+
+https://medium.com/bench-engineering/deploying-kubernetes-clusters-with-kops-and-terraform-832b89250e8e
 -->
 
 ## Alternatives
 
-- [Amazon Elastic Kubernetes Service (EKS)](/aws/aws-eks.md)
+- [AWS Elastic Kubernetes Service (EKS)](/aws/aws-eks.md)
 - [Rancher](/rancher.md)
 
 ## Links
@@ -90,18 +92,19 @@ kops \
     --cloud-labels "Cluster-Name=${KOPS_CLUSTER_NAME},Squad=SRE,Creation-Tool=kOps,Environment=Production" \
     --kubernetes-version '1.18.15' \
     --master-count 1 \
-    --master-size 't3.large' \
+    --master-size 't2.micro' \
     --master-zones 'us-east-1b' \
     --network-cidr '10.99.0.0/16' \
     --networking 'calico' \
     --node-count 3 \
-    --node-size 't3.large' \
+    --node-size 't2.micro' \
+    --out ./terraform \
     --ssh-public-key "${HOME}/.ssh/id_rsa.${KOPS_CLUSTER_NAME}.pub" \
+    --target terraform \
     --topology 'private' \
     --zones 'us-east-1b,us-east-1c'
 
-#
-
+    # --dns-zone kops.example.com
 
 #
 kops \
@@ -120,6 +123,21 @@ kubectl delete deploy nginx
 -->
 
 ### Tips
+
+<!-- #### Delete Cluster
+
+```sh
+kops delete cluster \
+  --name ${CLUSTER_NAME} \
+  --state ${STATE}
+``` -->
+
+<!-- ####
+
+```sh
+kops update cluster \
+  --target terraform
+``` -->
 
 <!-- ####
 

@@ -39,7 +39,7 @@ kubectl create namespace wordpress
 helm install wordpress stable/wordpress \
   --namespace wordpress \
   --set ingress.enabled=true \
-  --set "ingress.hosts[0].name=wordpress.$(minikube ip).nip.io" \
+  --set "ingress.hosts[0].name=wordpress.${INGRESS_HOST}.nip.io" \
   --set 'ingress.hosts[0].path=/'
 ```
 
@@ -64,7 +64,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - wordpress.$(minikube ip).nip.io
+        - wordpress.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values wordpress))
 ```
@@ -99,8 +99,8 @@ nslookup wordpress.wordpress.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "wordpress.$(minikube ip).nip.io" +short
-nslookup "wordpress.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "wordpress.${INGRESS_HOST}.nip.io" +short
+nslookup "wordpress.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret

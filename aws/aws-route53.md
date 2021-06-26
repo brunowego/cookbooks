@@ -1,4 +1,4 @@
-# Amazon Route 53
+# AWS Route 53
 
 ## CLI
 

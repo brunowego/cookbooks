@@ -1,9 +1,11 @@
 # Tekton Pipelines
 
+<!--
 http://heidloff.net/article/deploying-microprofile-microservices-tekton/
 http://heidloff.net/article/ibm-cloud-kubernetes-tekton/
 https://github.com/tektoncd/catalog
 http://sharepointoscar.com/2019-04-22-using-tekton-pipelines-in-jenkins-x-part-1/
+-->
 
 ## Helm
 

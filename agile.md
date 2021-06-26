@@ -1,4 +1,4 @@
-# Agile Software Development (sometimes written Agile)
+# Agile Software Development (sometimes written Agile) Methodology
 
 <!--
 stakeholders
@@ -33,7 +33,7 @@ https://www.sealights.io/software-development-metrics/10-powerful-agile-metrics-
 
 ## Alternatives
 
-- Waterfall
+- [Waterfall Methodology](/waterfall.md)
 
 ## References
 
@@ -51,3 +51,8 @@ https://www.sealights.io/software-development-metrics/10-powerful-agile-metrics-
 - Cumulative Flow
 - Failed Deployments
 - Escaped Defects
+
+## Process
+
+- Sprint Plan
+- Daily Scrum

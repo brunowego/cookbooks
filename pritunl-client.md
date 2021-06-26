@@ -1,5 +1,10 @@
 # Pritunl client
 
+<!--
+https://www.sparklabs.com/viscosity/
+https://medium.com/@adrian_cooney/how-to-convert-pritunl-profiles-to-viscosity-for-macos-754bd81a574c
+-->
+
 ## Links
 
 - [Main Website](https://client.pritunl.com/)

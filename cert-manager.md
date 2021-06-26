@@ -39,3 +39,9 @@ helm uninstall cert-manager -n cert-manager
 
 kubectl delete namespace cert-manager --grace-period=0 --force
 ```
+
+<!--
+annotations:
+  cert-manager.io/cluster-issuer: letsencrypt-wildcard
+  kubernetes.io/ingress.class: nginx
+-->

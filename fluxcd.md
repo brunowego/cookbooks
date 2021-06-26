@@ -10,6 +10,8 @@ https://github.com/ruzickap/k8s-flagger-istio-flux
 https://github.com/datalayer-examples/flux-crossplane-example
 https://github.com/datalayer-examples/flux2-kustomize-helm-example
 https://github.com/datalayer-examples/flux2-multi-tenancy-example
+
+https://www.youtube.com/watch?v=R6OeIgb7lUI
 -->
 
 ## Dependencies

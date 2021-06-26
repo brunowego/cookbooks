@@ -1,4 +1,4 @@
-# Amazon Athena
+# AWS Athena
 
 **TL;DR;**
 

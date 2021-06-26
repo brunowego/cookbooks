@@ -96,7 +96,7 @@ helm install spark stable/spark \
   --set Master.ServiceType=ClusterIP \
   --set Zeppelin.Ingress.Enabled=true \
   --set Zeppelin.ServiceType=ClusterIP \
-  --set Zeppelin.Ingress.Hosts={zeppelin.$(minikube ip).nip.io} \
+  --set Zeppelin.Ingress.Hosts={zeppelin.${INGRESS_HOST}.nip.io} \
   --set Zeppelin.Persistence.Config.Enabled=true \
   --set Zeppelin.Persistence.Config.StorageClass=$(kubectl get storageclass -o jsonpath='{.items[0].metadata.name}') \
   --set Zeppelin.Persistence.Notebook.Enabled=true \

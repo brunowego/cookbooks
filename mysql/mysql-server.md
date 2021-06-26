@@ -122,6 +122,13 @@ docker volume rm mysql-data
 
 - [Configuration](https://github.com/helm/charts/tree/master/stable/mysql#configuration)
 
+### Repository
+
+```sh
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo update
+```
+
 ### Install
 
 ```sh
@@ -129,18 +136,22 @@ kubectl create namespace mysql
 ```
 
 ```sh
-helm install mysql stable/mysql \
+#
+helm install mysql bitnami/mysql \
   --namespace mysql \
-  --set mysqlUser=user \
-  --set mysqlPassword=user \
-  --set mysqlDatabase=default
+  --version 8.0.25 \
+  --set image.tag=5.7.34-debian-10-r56 \
+  --set auth.rootPassword=root \
+  --set auth.database=dev \
+  --set auth.username=user \
+  --set auth.password=pass
 ```
 
-### NGINX Ingress
+<!-- ### NGINX Ingress
 
 ```sh
 helm upgrade nginx-ingress stable/nginx-ingress -f <(yq w <(helm get values nginx-ingress) tcp.3306 mysql/mysql:3306)
-```
+``` -->
 
 ### Status
 

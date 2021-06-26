@@ -1,6 +1,14 @@
 # HashiCorp Terraform
 
 <!--
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/subnet
+
+https://github.com/cloudposse/tfenv
+
+https://github.com/resource-watch/api-infrastructure
+
+https://github.com/hashicorp/terraform/issues/13022
+
 https://github.com/aaratn/terraenv
 
 https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
@@ -48,9 +56,27 @@ output
 
 **Keywords:** Infrastructure as Code, Infrastructure Provisioning
 
+## Alternatives
+
+- [AWS Cloud Development Kit (CDK)](/aws/aws-cdk.md)
+- [AWS CloudFormation (CF)](/aws/aws-cf.md)
+- [Crossplane](/crossplane.md)
+- [Pulumi](/pulumi.md)
+
+## Links
+
+- [Code Repository](https://github.com/hashicorp/terraform)
+- [Main Website](https://terraform.io/)
+- [Terraform Cloud](https://app.terraform.io)
+
 ## References
 
 - [Releases](https://releases.hashicorp.com/terraform/)
+
+## Tools
+
+- [Citizen](https://github.com/outsideris/citizen)
+- [Terrafile](/terrafile.md)
 
 ## Architecture
 
@@ -168,6 +194,9 @@ terraform validate
 terraform fmt
 
 #
+terraform providers
+
+#
 terraform plan
 terraform plan \
   -out ./dev.tfplan
@@ -187,6 +216,9 @@ terraform apply -auto-approve
 terraform apply ./dev.tfplan
 
 #
+terraform state list
+
+#
 terraform console
 
 #
@@ -201,6 +233,44 @@ terraform destroy -auto-approve
 ```
 
 ### Tips
+
+#### Destroy Specific State
+
+```sh
+#
+terraform state list
+
+#
+terraform destroy \
+  -target [state] \
+  -var-file ./vars/terraform-stg.tfvars
+```
+
+<!-- #### Import
+
+```sh
+terraform import
+``` -->
+
+<!-- #### Login/Logout
+
+```sh
+#
+terraform login app.terraform.io
+
+#
+cat ~/.terraformrc
+
+#
+terraform logout
+``` -->
+
+#### Debug Mode
+
+```sh
+TF_LOG=trace \
+  terraform [command]
+```
 
 #### Generate Graphing
 
@@ -218,8 +288,12 @@ terraform graph | dot -Tsvg > graph.svg
 #### Visual Studio Code
 
 ```sh
-# Install
+#
 code --install-extension hashicorp.terraform
+```
+
+```sh
+jq '."files.associations"."*.json.tpl" |= "json"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
 <!--
@@ -243,7 +317,7 @@ Error: Failed to read module directory
 Module directory  does not exist or cannot be read.
 ```
 
-1. Go to [Workspaces](https://app.terraform.io/app/arcotech/workspaces)
+1. Go to [Workspaces](https://app.terraform.io/app/[organization]/workspaces)
 2. Select the Workspace Name
 3. Settings Tab -> General
    - Execution Mode Session -> Select Local

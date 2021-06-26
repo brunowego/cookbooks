@@ -1,4 +1,4 @@
-# Amazon Simple Storage Service (S3)
+# AWS Simple Storage Service (S3)
 
 ## Alternatives
 

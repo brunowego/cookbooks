@@ -22,3 +22,15 @@ wget \
   --content-disposition \
   'https://jdbc.postgresql.org/download/postgresql-9.4-1201.jdbc4.jar'
 ```
+
+## Issues
+
+### SSL Handshake Exception
+
+```log
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+```
+
+```sh
+export JDBC_PARAMS='useSSL=false'
+```

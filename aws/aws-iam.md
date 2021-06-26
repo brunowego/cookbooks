@@ -4,7 +4,19 @@
 https://app.pluralsight.com/paths/skills/identity-and-access-management-on-aws
 
 https://app.pluralsight.com/library/courses/aws-assigning-identity-based-policies-users-roles-groups/table-of-contents
+
+https://gist.github.com/brianantonelli/e3fe950fffdd04275b306953a5742104
+https://avmconsulting.net/setup-kubernetes-cluster-with-terraform-and-kops-part-1/
+https://www.nclouds.com/blog/kubernetes-aws-terraform-kops/
+https://aymen-segni.com/index.php/2020/04/19/deploy-kubernetes-aws-k8s-cluster-with-terraform-and-kops/
+https://ryaneschinger.com/blog/kubernetes-aws-vpc-kops-terraform/
+https://blog.kasten.io/hands-on-deploying-kubernetes-with-terraform?utm_term=&utm_campaign=Website+traffic-Search%2Bdisplay-86+(Remarketing)&utm_source=adwords&utm_medium=ppc&hsa_acc=3144319558&hsa_cam=13192272412&hsa_grp=121361024814&hsa_ad=523196361073&hsa_src=g&hsa_tgt=dsa-1279855672054&hsa_kw=&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw8cCGBhB6EiwAgORey1bilNLsAwOp68hXteFQ9xhvVGUREbMU28imM5WJKqEzyO96pngGDRoCpH8QAvD_BwE
 -->
+
+## Guides
+
+- [IAM policy examples for secrets in AWS Secrets Manager](https://docs.aws.amazon.com/mediaconnect/latest/ug/iam-policy-examples-asm-secrets.html)
+- [Switching to an IAM role (AWS CLI)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-cli.html)
 
 ## Authentication
 
@@ -92,6 +104,38 @@ aws iam attach-group-policy \
   --policy-arn "$POLICY_ARN" \
   --group-name 'Administration'
 -->
+
+### Tips
+
+#### Switch Role
+
+```sh
+cat << EOF >> ~/.aws/config
+[profile prodaccess]
+role_arn = arn:aws:iam::123456789012:role/ProductionAccessRole
+source_profile = default
+EOF
+
+#
+aws iam list-users \
+  --profile prodaccess
+
+#
+AWS_PROFILE=prodaccess \
+  aws iam list-users
+```
+
+### Issues
+
+#### Get Caller Identity
+
+```log
+An error occurred (ValidationError) when calling the GetUser operation: Must specify userName when calling with non-User credentials
+```
+
+```sh
+aws sts get-caller-identity
+```
 
 ## Docs
 

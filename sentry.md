@@ -119,7 +119,7 @@ helm install sentry stable/sentry \
   --set user.email='admin@example.com' \
   --set service.type='ClusterIP' \
   --set ingress.enabled=true \
-  --set ingress.hostname="sentry.$(minikube ip).nip.io"
+  --set ingress.hostname="sentry.${INGRESS_HOST}.nip.io"
 ```
 
 ### SSL
@@ -143,7 +143,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - sentry.$(minikube ip).nip.io
+        - sentry.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values sentry))
 ```
@@ -180,8 +180,8 @@ nslookup sentry.sentry.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "sentry.$(minikube ip).nip.io" +short
-nslookup "sentry.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "sentry.${INGRESS_HOST}.nip.io" +short
+nslookup "sentry.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret

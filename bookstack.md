@@ -13,7 +13,7 @@ helm install bookstack stable/bookstack \
   --namespace bookstack \
   --set podSecurityPolicy.enabled=true \
   --set ingress.enabled=true \
-  --set ingress.hosts={bookstack.$(minikube ip).nip.io}
+  --set ingress.hosts={bookstack.${INGRESS_HOST}.nip.io}
 ```
 
 | Login | Password |

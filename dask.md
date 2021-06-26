@@ -33,7 +33,7 @@ metadata:
   namespace: dask
 spec:
   rules:
-    - host: jupyter.dask.$(minikube ip).nip.io
+    - host: jupyter.dask.${INGRESS_HOST}.nip.io
       http:
         paths:
           - backend:
@@ -52,7 +52,7 @@ metadata:
   namespace: dask
 spec:
   rules:
-    - host: dask.$(minikube ip).nip.io
+    - host: dask.${INGRESS_HOST}.nip.io
       http:
         paths:
           - backend:

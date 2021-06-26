@@ -19,7 +19,7 @@ kubectl create namespace hue
 helm install hue gethue/hue \
   --namespace hue \
   --set ingress.enabled=true \
-  --set ingress.hosts={hue.$(minikube ip).nip.io}
+  --set ingress.hosts={hue.${INGRESS_HOST}.nip.io}
 ```
 
 ```sh

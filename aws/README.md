@@ -50,6 +50,7 @@ Transactions Per Second (TPS)
 
 ## Links
 
+- [AWS Free Tier](https://aws.amazon.com/free/)
 - [AWS Simple Monthly Calculator](https://calculator.s3.amazonaws.com/index.html)
 - [AWS Service Health Dashboard](https://status.aws.amazon.com/)
 - [AWS Pricing Calculator](https://calculator.aws/#/)

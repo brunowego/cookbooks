@@ -1,3 +1,3 @@
-# AWS ACK
+# AWS Controllers for Kubernetes (ACK)
 
 TODO

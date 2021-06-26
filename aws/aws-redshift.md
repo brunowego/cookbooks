@@ -1,4 +1,4 @@
-# Amazon Redshift
+# AWS Redshift
 
 <!--
 https://app.pluralsight.com/paths/certificate/aws-certified-database-specialty-dbs-c01

@@ -29,7 +29,7 @@ helm install nextcloud stable/nextcloud \
   --namespace nextcloud \
   --set image.tag=17.0.1-fpm-alpine \
   --set ingress.enabled=true \
-  --set nextcloud.host="nextcloud.$(minikube ip).nip.io" \
+  --set nextcloud.host="nextcloud.${INGRESS_HOST}.nip.io" \
   --set nextcloud.password="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
   --set nginx.enabled=true \
   --set mariadb.enabled=true
@@ -56,7 +56,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - nextcloud.$(minikube ip).nip.io
+        - nextcloud.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values nextcloud))
 ```
@@ -91,8 +91,8 @@ nslookup nextcloud.nextcloud.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "nextcloud.$(minikube ip).nip.io" +short
-nslookup "nextcloud.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "nextcloud.${INGRESS_HOST}.nip.io" +short
+nslookup "nextcloud.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret

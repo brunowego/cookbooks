@@ -28,7 +28,7 @@ metadata:
   namespace: ambassador
 spec:
   rules:
-  - host: ambassador.$(minikube ip).nip.io
+  - host: ambassador.${INGRESS_HOST}.nip.io
     http:
       paths:
       - backend:
@@ -47,7 +47,7 @@ metadata:
   namespace: ambassador
 spec:
   rules:
-    - host: admin.ambassador.$(minikube ip).nip.io
+    - host: admin.ambassador.${INGRESS_HOST}.nip.io
       http:
         paths:
           - backend:
@@ -90,7 +90,7 @@ kubectl apply -f <(yq m <(cat << EOF
 spec:
   tls:
     - hosts:
-        - ambassador.$(minikube ip).nip.io
+        - ambassador.${INGRESS_HOST}.nip.io
       secretName: example.tls-secret
 EOF
 ) <(kubectl get ingress ambassador -n ambassador -o yaml))
@@ -101,7 +101,7 @@ kubectl apply -f <(yq m <(cat << EOF
 spec:
   tls:
     - hosts:
-        - admin.ambassador.$(minikube ip).nip.io
+        - admin.ambassador.${INGRESS_HOST}.nip.io
       secretName: example.tls-secret
 EOF
 ) <(kubectl get ingress ambassador-admin -n ambassador -o yaml))
@@ -141,18 +141,18 @@ nslookup ambassador-admin.ambassador.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "ambassador.$(minikube ip).nip.io" +short
-nslookup "ambassador.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "ambassador.${INGRESS_HOST}.nip.io" +short
+nslookup "ambassador.${INGRESS_HOST}.nip.io" 10.96.0.10
 
-dig @10.96.0.10 "admin.ambassador.$(minikube ip).nip.io" +short
-nslookup "admin.ambassador.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "admin.ambassador.${INGRESS_HOST}.nip.io" +short
+nslookup "admin.ambassador.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Web UI
 
 ```sh
 # Admin
-echo -e "[INFO]\thttp://admin.ambassador.$(minikube ip).nip.io/ambassador/v0/diag/"
+echo -e "[INFO]\thttp://admin.ambassador.${INGRESS_HOST}.nip.io/ambassador/v0/diag/"
 ```
 
 ### Delete

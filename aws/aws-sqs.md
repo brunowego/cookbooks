@@ -1,4 +1,4 @@
-# Amazon Simple Queue Service (SQS)
+# AWS Simple Queue Service (SQS)
 
 <!--
 https://app.pluralsight.com/library/courses/message-queuing-amazon-sqs/table-of-contents

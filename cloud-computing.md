@@ -1,9 +1,11 @@
-# Cloud
+# Cloud Computing
 
 <!--
 https://linkedin.com/learning/paths/understanding-cloud-fundamentals
 https://linkedin.com/learning/paths/build-your-knowledge-of-cloud-administration
 https://linkedin.com/learning/paths/become-a-cloud-developer
+
+https://github.com/madebygps/self-taught-guide-to-cloud-computing
 -->
 
 ## Vendors

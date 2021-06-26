@@ -11,7 +11,7 @@ Terragrunt
 ## Links
 
 - [Code Repository](https://github.com/runatlantis/atlantis)
-- [Main Website](https://www.runatlantis.io/)
+- [Main Website](https://runatlantis.io/)
 
 ## Glossary
 

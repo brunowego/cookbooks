@@ -1,4 +1,8 @@
-# Amazon Machine Image (AMI)
+# AWS Amazon Machine Image (AMI)
+
+## Links
+
+- [Amazon EC2 AMI Locator](https://cloud-images.ubuntu.com/locator/ec2/)
 
 ## Docker
 

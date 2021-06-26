@@ -21,9 +21,18 @@ Version 1.21.0
 - [Release Notes](https://kubernetes.io/docs/setup/release/notes/)
 - [Wiki](https://en.wikipedia.org/wiki/Kubernetes)
 
+## Guides
+
+- [Attach Handlers to Container Lifecycle Events](https://kubernetes.io/docs/tasks/configure-pod-container/attach-handler-lifecycle-event/)
+
 ## Terms
 
 - Horizontal Pod Autoscaler (HPA)
+
+## Tools
+
+- [stern](/stern.md)
+- [Lens (a.k.a. OpenLens)](/lens.md)
 
 ## Phrases
 

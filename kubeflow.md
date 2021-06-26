@@ -18,45 +18,11 @@ https://app.pluralsight.com/library/courses/ml-pipelines-google-cloud/
 
 - [Code Respository](https://github.com/kubeflow/kubeflow)
 
-<!-- ## Using minikube
+## Resources Manifest
+
+### Install
 
 ```sh
-export KUBEFLOW_SRC="$PWD/src"
-export KUBEFLOW_TAG="v0.4.1"
-export KFAPP="mykfapp"
-
-mkdir -p $KUBEFLOW_SRC && cd "$_"
-
-curl -Ss "https://raw.githubusercontent.com/kubeflow/kubeflow/${KUBEFLOW_TAG}/scripts/download.sh" | /bin/bash
-```
-
-```sh
-kubectl get node
-
-eval "$(minikube docker-env)"
-```
-
-```sh
-KUBEFLOW_REPO=${KUBEFLOW_SRC} ${KUBEFLOW_SRC}/scripts/kfctl.sh init ${KFAPP} --platform minikube
-cd ${KFAPP}
-${KUBEFLOW_SRC}/scripts/kfctl.sh generate all
-${KUBEFLOW_SRC}/scripts/kfctl.sh apply all
-``` -->
-
-## Using kind
-
-### Dependencies
-
-- [Kubernetes IN Docker (kind)](/kind.md)
-
-### Running
-
-```sh
-#
-kind create cluster \
-  --name 'kf-pipeline' \
-  --config ~/.kind-config.yml
-
 #
 export KF_PIPELINE_VERSION='1.5.0'
 
@@ -93,7 +59,7 @@ kubectl port-forward \
 echo -e '[INFO]\thttp://127.0.0.1:8080'
 ```
 
-### Delete
+### Uninstall
 
 ```sh
 #
@@ -103,7 +69,4 @@ kubectl delete \
 
 kubectl delete \
   -k "github.com/kubeflow/pipelines/manifests/kustomize/cluster-scoped-resources?ref=${KF_PIPELINE_VERSION}"
-
-kind delete cluster \
-  --name 'kf-pipeline'
 ```

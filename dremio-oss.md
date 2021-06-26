@@ -57,7 +57,7 @@ metadata:
   namespace: dremio
 spec:
   rules:
-    - host: dremio.$(minikube ip).nip.io
+    - host: dremio.${INGRESS_HOST}.nip.io
       http:
         paths:
           - backend:

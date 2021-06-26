@@ -1,4 +1,4 @@
-# Amazon Elastic Block Store (EBS)
+# AWS Elastic Block Store (EBS)
 
 ## CLI
 

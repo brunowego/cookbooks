@@ -6,6 +6,13 @@
 
 - [Configuration](https://github.com/helm/charts/tree/master/stable/prometheus-operator#configuration)
 
+### Repository
+
+```sh
+helm repo add stable https://charts.helm.sh/stable
+helm repo update
+```
+
 ### Install
 
 ```sh
@@ -13,21 +20,36 @@ kubectl create namespace monitoring
 ```
 
 ```sh
+# Using minikube
 helm install prometheus-operator stable/prometheus-operator \
   --namespace monitoring \
+  --version 11.0.1 \
   --set prometheus.ingress.enabled=true \
-  --set prometheus.ingress.hosts={prometheus.$(minikube ip).nip.io} \
+  --set prometheus.ingress.hosts={prometheus.${INGRESS_HOST}.nip.io} \
   --set alertmanager.ingress.enabled=true \
-  --set alertmanager.ingress.hosts={alertmanager.$(minikube ip).nip.io} \
+  --set alertmanager.ingress.hosts={alertmanager.${INGRESS_HOST}.nip.io} \
   --set grafana.adminPassword="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
   --set grafana.ingress.enabled=true \
-  --set grafana.ingress.hosts={grafana.$(minikube ip).nip.io}
+  --set grafana.ingress.hosts={grafana.${INGRESS_HOST}.nip.io}
 ```
+
+<!-- # Using Kubernetes IN Docker (kind)
+helm install prometheus-operator stable/prometheus-operator \
+  --namespace monitoring \
+  --version 11.0.1 \
+  --set prometheus.ingress.enabled=true \
+  --set prometheus.ingress.hosts={prometheus.cluster.local} \
+  --set alertmanager.ingress.enabled=true \
+  --set alertmanager.ingress.hosts={alertmanager.cluster.local} \
+  --set grafana.adminPassword="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
+  --set grafana.ingress.enabled=true \
+  --set grafana.ingress.hosts={grafana.cluster.local} -->
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/prometheus-operator-operator -n monitoring
+kubectl rollout status deploy/prometheus-operator-operator \
+  -n monitoring
 ```
 
 ### Logs
@@ -59,6 +81,10 @@ kubectl get secret prometheus-operator-grafana \
 ### Delete
 
 ```sh
-helm uninstall prometheus-operator -n prometheus-operator
-kubectl delete namespace monitoring --grace-period=0 --force
+helm uninstall prometheus-operator \
+  -n prometheus-operator
+
+kubectl delete namespace monitoring \
+  --grace-period=0 \
+  --force
 ```

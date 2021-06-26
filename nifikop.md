@@ -134,7 +134,7 @@ metadata:
   namespace: nifi
 spec:
   rules:
-  - host: nifi.$(minikube ip).nip.io
+  - host: nifi.${INGRESS_HOST}.nip.io
     http:
       paths:
       - backend:

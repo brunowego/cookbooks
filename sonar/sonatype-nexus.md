@@ -22,8 +22,8 @@ helm install sonatype-nexus stable/sonatype-nexus \
   --namespace sonatype-nexus \
   --set statefulset.enabled=true \
   --set nexus.service.type='ClusterIP' \
-  --set nexusProxy.env.nexusDockerHost="registry.$(minikube ip).nip.io" \
-  --set nexusProxy.env.nexusHttpHost="nexus.$(minikube ip).nip.io" \
+  --set nexusProxy.env.nexusDockerHost="registry.${INGRESS_HOST}.nip.io" \
+  --set nexusProxy.env.nexusHttpHost="nexus.${INGRESS_HOST}.nip.io" \
   --set ingress.enabled=true \
   --set ingress.annotations."kubernetes\.io/ingress\.class"=nginx \
   --set ingress.annotations."nginx\.ingress\.kubernetes\.io/proxy-body-size"=0 \
@@ -86,11 +86,11 @@ nslookup sonatype-nexus.sonatype-nexus.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "nexus.$(minikube ip).nip.io" +short
-nslookup "nexus.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "nexus.${INGRESS_HOST}.nip.io" +short
+nslookup "nexus.${INGRESS_HOST}.nip.io" 10.96.0.10
 
-dig @10.96.0.10 "registry.$(minikube ip).nip.io" +short
-nslookup "registry.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "registry.${INGRESS_HOST}.nip.io" +short
+nslookup "registry.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret
@@ -107,7 +107,7 @@ kubectl exec -it \
 
 ```sh
 kubectl create secret docker-registry nxrm-oss-regcred \
-  --docker-server='https://registry.$(minikube ip).nip.io' \
+  --docker-server='https://registry.${INGRESS_HOST}.nip.io' \
   --docker-username='admin' \
   --docker-password='[password]' \
   --docker-email='admin@example.com' \
@@ -128,13 +128,13 @@ kubectl patch serviceaccount default -p '{"imagePullSecrets":[{"name":"nxrm-oss-
 ```sh
 docker login \
   -u admin \
-  registry.$(minikube ip).nip.io
+  registry.${INGRESS_HOST}.nip.io
 ```
 
 ```sh
 docker pull docker.io/library/alpine:3.9
-docker tag docker.io/library/alpine:3.9 registry.$(minikube ip).nip.io/library/alpine:3.9
-docker push registry.$(minikube ip).nip.io/library/alpine:3.9
+docker tag docker.io/library/alpine:3.9 registry.${INGRESS_HOST}.nip.io/library/alpine:3.9
+docker push registry.${INGRESS_HOST}.nip.io/library/alpine:3.9
 ```
 
 ### Issues
@@ -159,7 +159,7 @@ EOF
 #### Server Misbehaving
 
 ```log
-Error response from daemon: Get http://registry.$(minikube ip).nip.io/v2/: dial tcp: lookup registry.$(minikube ip).nip.io on [ip]:53: server misbehaving
+Error response from daemon: Get http://registry.${INGRESS_HOST}.nip.io/v2/: dial tcp: lookup registry.${INGRESS_HOST}.nip.io on [ip]:53: server misbehaving
 ```
 
 <!-- ```sh
@@ -167,13 +167,13 @@ minikube ssh -- sudo cat /etc/hosts
 ```
 
 ```sh
-minikube ssh -- "sudo /usr/bin/sh -c 'echo -e \"$(kubectl get service nginx-ingress-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}' -n nginx-ingress)\tregistry.$(minikube ip).nip.io\" >> /etc/hosts'"
+minikube ssh -- "sudo /usr/bin/sh -c 'echo -e \"$(kubectl get service nginx-ingress-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}' -n nginx-ingress)\tregistry.${INGRESS_HOST}.nip.io\" >> /etc/hosts'"
 ``` -->
 
 #### Repository Missing
 
 ```log
-Error response from daemon: Get https://registry.$(minikube ip).nip.io/v2/: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get https://registry.${INGRESS_HOST}.nip.io/v2/: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
 ```
 
 Try create a [hosted docker repository](/sonatype-nexus.md#hosted).
@@ -181,10 +181,10 @@ Try create a [hosted docker repository](/sonatype-nexus.md#hosted).
 #### Self Signed Certificate
 
 ```log
-Get https://registry.$(minikube ip).nip.io/v2/: x509: certificate signed by unknown authority
+Get https://registry.${INGRESS_HOST}.nip.io/v2/: x509: certificate signed by unknown authority
 ```
 
-Add address `registry.$(minikube ip).nip.io` to insecure registry in docker daemon.
+Add address `registry.${INGRESS_HOST}.nip.io` to insecure registry in docker daemon.
 
 ### Delete
 

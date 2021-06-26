@@ -26,11 +26,22 @@ https://media-exp1.licdn.com/dms/image/sync/C4E27AQFXhz19BLKTlg/articleshare-shr
 ## Tools
 
 - [GitHub social previews](https://mugshotbot.com/github)
+- [PullApprove](https://pullapprove.com/)
 
 ## Search
 
 ```txt
 ".node" in:file filename:.gitattributes
+```
+
+## App
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install --cask github
 ```
 
 ## CLI
@@ -40,7 +51,27 @@ https://media-exp1.licdn.com/dms/image/sync/C4E27AQFXhz19BLKTlg/articleshare-shr
 #### Homebrew
 
 ```sh
-brew install --cask github
+brew install gh
+```
+
+#### Chocolatey
+
+```sh
+choco install gh
+```
+
+### Commands
+
+```sh
+gh -h
+```
+
+### Usage
+
+```sh
+#
+gh repo create \
+  --public
 ```
 
 ## Docs

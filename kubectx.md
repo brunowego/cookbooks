@@ -34,3 +34,13 @@ sudo chmod +x /usr/local/bin/{kubectx,kubens}
 kubectx -h
 kubens -h
 ```
+
+### Usage
+
+```sh
+# Unset context
+kubectx -u
+
+# Delete context entry
+kubectx -d [cluster-name]
+```

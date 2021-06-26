@@ -1,6 +1,6 @@
 # Kubernetes Ingress NGINX
 
-## Manifest
+## Resources Manifest
 
 ### Install
 
@@ -22,6 +22,18 @@ kubectl wait \
 ```sh
 kubectl delete \
   -f 'https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml'
+```
+
+### Issues
+
+#### Failed Calling Webhook
+
+```log
+Error from server (InternalError): error when creating "STDIN": Internal error occurred: failed calling webhook "validate.nginx.ingress.kubernetes.io": an error on the server ("") has prevented the request from succeeding
+```
+
+```sh
+kubectl delete -A ValidatingWebhookConfiguration ingress-nginx-admission
 ```
 
 ## Minikube

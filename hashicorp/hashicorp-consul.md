@@ -16,7 +16,7 @@ kubectl create namespace consul
 helm install consul stable/consul \
   --namespace consul \
   --set uiIngress.enabled=true \
-  --set uiIngress.hosts={consul.$(minikube ip).nip.io} \
+  --set uiIngress.hosts={consul.${INGRESS_HOST}.nip.io} \
   --set uiService.type=ClusterIP
 ```
 
@@ -41,7 +41,7 @@ uiIngress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - consul.$(minikube ip).nip.io
+        - consul.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values consul))
 ```

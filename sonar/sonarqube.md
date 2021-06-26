@@ -155,7 +155,7 @@ kubectl create namespace sonarqube
 helm install sonarqube stable/sonarqube \
   --namespace sonarqube \
   --set ingress.enabled=true \
-  --set "ingress.hosts[0].name=sonarqube.$(minikube ip).nip.io"
+  --set "ingress.hosts[0].name=sonarqube.${INGRESS_HOST}.nip.io"
 ```
 
 ### SSL
@@ -179,7 +179,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - sonarqube.$(minikube ip).nip.io
+        - sonarqube.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values sonarqube))
 ```
@@ -214,8 +214,8 @@ nslookup sonarqube.sonarqube.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "sonarqube.$(minikube ip).nip.io" +short
-nslookup "sonarqube.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "sonarqube.${INGRESS_HOST}.nip.io" +short
+nslookup "sonarqube.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret

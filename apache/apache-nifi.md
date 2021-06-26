@@ -31,7 +31,7 @@ kubectl create namespace nifi
 helm install nifi cetic/nifi \
   --namespace nifi \
   --set ingress.enabled=true \
-  --set ingress.hosts={nifi.$(minikube ip).nip.io}
+  --set ingress.hosts={nifi.${INGRESS_HOST}.nip.io}
 ```
 
 ### SSL
@@ -55,7 +55,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - nifi.$(minikube ip).nip.io
+        - nifi.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values nifi))
 ```
@@ -93,8 +93,8 @@ nslookup nifi.nifi.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "nifi.$(minikube ip).nip.io" +short
-nslookup "nifi.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "nifi.${INGRESS_HOST}.nip.io" +short
+nslookup "nifi.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret

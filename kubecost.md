@@ -23,7 +23,7 @@ kubectl create namespace kubecost
 helm install kubecost kubecost/cost-analyzer \
   --namespace kubecost \
   --set ingress.enabled=true \
-  --set ingress.hosts={kubecost.$(minikube ip).nip.io} \
+  --set ingress.hosts={kubecost.${INGRESS_HOST}.nip.io} \
   --set networkPolicy.enabled=true \
   --set networkCosts.enabled=true
 ```
@@ -37,7 +37,7 @@ metadata:
   namespace: kubecost
 spec:
   rules:
-    - host: grafana.$(minikube ip).nip.io
+    - host: grafana.${INGRESS_HOST}.nip.io
       http:
         paths:
           - backend:
@@ -56,7 +56,7 @@ metadata:
   namespace: kubecost
 spec:
   rules:
-    - host: alertmanager.$(minikube ip).nip.io
+    - host: alertmanager.${INGRESS_HOST}.nip.io
       http:
         paths:
           - backend:
@@ -75,7 +75,7 @@ metadata:
   namespace: kubecost
 spec:
   rules:
-    - host: prometheus.$(minikube ip).nip.io
+    - host: prometheus.${INGRESS_HOST}.nip.io
       http:
         paths:
           - backend:
@@ -106,7 +106,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - kubecost.$(minikube ip).nip.io
+        - kubecost.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values kubecost))
 ```
@@ -143,8 +143,8 @@ nslookup kubecost-cost-analyzer.kubecost.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "kubecost.$(minikube ip).nip.io" +short
-nslookup "kubecost.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "kubecost.${INGRESS_HOST}.nip.io" +short
+nslookup "kubecost.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret

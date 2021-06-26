@@ -1,5 +1,9 @@
 # etcd
 
+## Algorithms
+
+- [Raft Consensus](/raft.md)
+
 ## Helm
 
 ### References

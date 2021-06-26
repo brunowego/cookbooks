@@ -1,5 +1,9 @@
 # Oh My Zsh
 
+<!--
+https://github.com/superbrothers/zsh-kubectl-prompt
+-->
+
 ## Bare-metal
 
 ### Dependencies

@@ -74,7 +74,7 @@ helm install metabase stable/metabase \
   --set database.username='metabase' \
   --set database.password='metabase' \
   --set ingress.enabled=true \
-  --set ingress.hosts={metabase.$(minikube ip).nip.io}
+  --set ingress.hosts={metabase.${INGRESS_HOST}.nip.io}
 ```
 
 ### SSL
@@ -98,7 +98,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - metabase.$(minikube ip).nip.io
+        - metabase.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values metabase))
 ```
@@ -133,8 +133,8 @@ nslookup metabase.metabase.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "metabase.$(minikube ip).nip.io" +short
-nslookup "metabase.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "metabase.${INGRESS_HOST}.nip.io" +short
+nslookup "metabase.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret

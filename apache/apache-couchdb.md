@@ -20,7 +20,7 @@ kubectl create namespace couchdb
 helm install couchdb stable/couchdb \
   --namespace couchdb \
   --set ingress.enabled=true \
-  --set ingress.hosts={couchdb.$(minikube ip).nip.io}
+  --set ingress.hosts={couchdb.${INGRESS_HOST}.nip.io}
 ```
 
 ### SSL
@@ -44,7 +44,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - couchdb.$(minikube ip).nip.io
+        - couchdb.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values couchdb))
 ```
@@ -79,8 +79,8 @@ nslookup couchdb-svc-couchdb.couchdb.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "couchdb.$(minikube ip).nip.io" +short
-nslookup "couchdb.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "couchdb.${INGRESS_HOST}.nip.io" +short
+nslookup "couchdb.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret
@@ -101,7 +101,7 @@ kubectl get secret couchdb-couchdb \
 
 ```sh
 # Fauxton Visual Guide
-echo -e "[INFO]\thttp://couchdb.$(minikube ip).nip.io/_utils/"
+echo -e "[INFO]\thttp://couchdb.${INGRESS_HOST}.nip.io/_utils/"
 ```
 
 ### Delete

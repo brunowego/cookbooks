@@ -35,7 +35,7 @@ helm install chartmuseum stable/chartmuseum \
   --set persistence.enabled=true \
   --set env.open.DISABLE_API=false \
   --set ingress.enabled=true \
-  --set "ingress.hosts[0].name=chartmuseum.$(minikube ip).nip.io" \
+  --set "ingress.hosts[0].name=chartmuseum.${INGRESS_HOST}.nip.io" \
   --set 'ingress.hosts[0].path=/' \
   --set 'ingress.hosts[0].tls=true' \
   --set 'ingress.hosts[0].tlsSecret=example.tls-secret'
@@ -44,11 +44,11 @@ helm install chartmuseum stable/chartmuseum \
 #### API
 
 ```sh
-curl -ks https://chartmuseum.$(minikube ip).nip.io/index.yaml | yq r -
+curl -ks https://chartmuseum.${INGRESS_HOST}.nip.io/index.yaml | yq r -
 ```
 
 ```sh
-curl -ks https://chartmuseum.$(minikube ip).nip.io/api/charts | jq .
+curl -ks https://chartmuseum.${INGRESS_HOST}.nip.io/api/charts | jq .
 ```
 
 #### Repository
@@ -56,7 +56,7 @@ curl -ks https://chartmuseum.$(minikube ip).nip.io/api/charts | jq .
 ##### Local
 
 ```sh
-helm repo add --ca-file /etc/ssl/certs/example/root-ca.crt example https://chartmuseum.$(minikube ip).nip.io
+helm repo add --ca-file /etc/ssl/certs/example/root-ca.crt example https://chartmuseum.${INGRESS_HOST}.nip.io
 helm repo update
 ```
 
@@ -70,7 +70,7 @@ kubectl get secret example.tls-secret \
 ```
 
 ```sh
-helm repo add --ca-file ./ca.crt example https://chartmuseum.$(minikube ip).nip.io
+helm repo add --ca-file ./ca.crt example https://chartmuseum.${INGRESS_HOST}.nip.io
 ```
 
 ```sh

@@ -1,6 +1,8 @@
 # Site Reliability Engineering (SRE)
 
 <!--
+Systemic Vision
+
 Tech Head SRE
 
 https://www.youtube.com/channel/UCeKFyxRffWdYTqOJiCWhsig
@@ -32,6 +34,8 @@ class SRE implements DevOps
 SLO for Latency
 SLO for Memory
 SLO for Status code
+
+NoC?
 -->
 
 ## References

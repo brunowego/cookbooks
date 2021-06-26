@@ -19,6 +19,7 @@ https://linkedin.com/learning/devops-foundations-continuous-delivery-continuous-
 - [Application Lifecycle Management (ALM)](/alm.md)
 - [DevSecOps](/devsecops.md)
 - [Site Reliability Engineering (SRE)](/sre.md)
+- [Google Trends](https://trends.google.com/trends/explore?date=today%205-y&q=devops)
 
 ## References
 

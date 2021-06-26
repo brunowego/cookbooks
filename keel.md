@@ -30,7 +30,7 @@ kubectl create namespace keel
 helm install keel keel/keel \
   --namespace keel \
   --set ingress.enabled=true \
-  --set "ingress.hosts[0].host=keel.$(minikube ip).nip.io" \
+  --set "ingress.hosts[0].host=keel.${INGRESS_HOST}.nip.io" \
   --set 'ingress.hosts[0].paths={/}'
 ```
 
@@ -70,8 +70,8 @@ nslookup keel.keel.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "keel.$(minikube ip).nip.io" +short
-nslookup "keel.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "keel.${INGRESS_HOST}.nip.io" +short
+nslookup "keel.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 <!-- ### Secret

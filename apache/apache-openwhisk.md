@@ -80,10 +80,10 @@ git clone https://github.com/apache/openwhisk-deploy-kube.git
 ```sh
 helm install openwhisk openwhisk-deploy-kube/helm/openwhisk \
   --namespace openwhisk \
-  --set whisk.ingress.apiHostName="openwhisk.$(minikube ip).nip.io" \
+  --set whisk.ingress.apiHostName="openwhisk.${INGRESS_HOST}.nip.io" \
   --set whisk.ingress.apiHostPort='443' \
   --set whisk.ingress.type='Standard' \
-  --set whisk.ingress.domain="openwhisk.$(minikube ip).nip.io" \
+  --set whisk.ingress.domain="openwhisk.${INGRESS_HOST}.nip.io" \
   --set whisk.ingress.tls.enabled=true \
   --set whisk.ingress.tls.secretenabled=true \
   --set whisk.ingress.tls.secretname='example.tls-secret' \
@@ -95,7 +95,7 @@ rm -fR openwhisk-deploy-kube
 ```
 
 ```sh
-curl -k "https://openwhisk.$(minikube ip).nip.io/v1/health-check"
+curl -k "https://openwhisk.${INGRESS_HOST}.nip.io/v1/health-check"
 ```
 
 ### Status

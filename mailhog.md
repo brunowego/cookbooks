@@ -48,7 +48,7 @@ helm install mailhog codecentric/mailhog \
   --set auth.enabled=true \
   --set auth.fileContents="admin:$(mailhog bcrypt admin)" \
   --set ingress.enabled=true \
-  --set "ingress.hosts[0].host=mailhog.$(minikube ip).nip.io" \
+  --set "ingress.hosts[0].host=mailhog.${INGRESS_HOST}.nip.io" \
   --set 'ingress.hosts[0].paths={/}'
 ```
 
@@ -104,7 +104,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - mailhog.$(minikube ip).nip.io
+        - mailhog.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values mailhog))
 ```
@@ -139,8 +139,8 @@ nslookup mailhog.mailhog.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "mailhog.$(minikube ip).nip.io" +short
-nslookup "mailhog.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "mailhog.${INGRESS_HOST}.nip.io" +short
+nslookup "mailhog.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Delete
@@ -191,7 +191,7 @@ docker rm -f mailhog
 telnet '127.0.0.1' 1025
 
 # Kubernetes
-telnet "mailhog.$(minikube ip).nip.io" 1025
+telnet "mailhog.${INGRESS_HOST}.nip.io" 1025
 ```
 
 ```txt

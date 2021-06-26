@@ -24,7 +24,7 @@ helm install artifactory-oss jfrog/artifactory-oss \
   --namespace artifactory \
   --set artifactory.nginx.enabled=false \
   --set artifactory.ingress.enabled=true \
-  --set "artifactory.ingress.hosts[0]=artifactory.$(minikube ip).nip.io"
+  --set "artifactory.ingress.hosts[0]=artifactory.${INGRESS_HOST}.nip.io"
 ```
 
 ### SSL
@@ -49,7 +49,7 @@ artifactory:
     tls:
       - secretName: example.tls-secret
         hosts:
-          - artifactory.$(minikube ip).nip.io
+          - artifactory.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values artifactory-oss))
 ```
@@ -84,8 +84,8 @@ nslookup artifactory-oss-artifactory.artifactory.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "artifactory.$(minikube ip).nip.io" +short
-nslookup "artifactory.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "artifactory.${INGRESS_HOST}.nip.io" +short
+nslookup "artifactory.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Credentials

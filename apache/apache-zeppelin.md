@@ -17,7 +17,7 @@ helm install zeppelin stable/zeppelin \
   --set spark.executorMemory=500mb \
   --set hadoop.useConfigMap=true \
   --set ingress.enabled=true \
-  --set ingress.hosts={zeppelin.$(minikube ip).nip.io}
+  --set ingress.hosts={zeppelin.${INGRESS_HOST}.nip.io}
 ```
 
 ```sh

@@ -24,9 +24,9 @@ helm install weave-scope stable/weave-scope \
   --namespace weave-scope \
   --set weave-scope-frontend.ingress.enabled=true \
   --set weave-scope-frontend.ingress.paths={/} \
-  --set weave-scope-frontend.ingress.hosts={scope.$(minikube ip).nip.io} \
+  --set weave-scope-frontend.ingress.hosts={scope.${INGRESS_HOST}.nip.io} \
   --set 'weave-scope-frontend.ingress.tls[0].secretName=example.tls-secret' \
-  --set 'weave-scope-frontend.ingress.tls[0].hosts={scope.$(minikube ip).nip.io}'
+  --set 'weave-scope-frontend.ingress.tls[0].hosts={scope.${INGRESS_HOST}.nip.io}'
 ```
 
 ### Status

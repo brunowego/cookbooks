@@ -9,17 +9,65 @@ https://www.udemy.com/course/hands-on-guide-to-argo-workflows-on-kubernetes/
 
 **Keywords:** Operator, GitOps
 
+## Alternatives
+
+- [Flux CD](/fluxcd.md)
+
 ## Links
 
+- [Code Repository](https://github.com/argoproj/argo-cd)
 - [Main Website](https://argoproj.github.io/)
 
 ## Guides
 
 - [Status Badge](https://argoproj.github.io/argo-cd/user-guide/status-badge/)
+- [Git Webhook Configuration](https://argoproj.github.io/argo-cd/operator-manual/webhook/)
 
-## Alternatives
+## Resources Manifest
 
-- [Flux CD](/fluxcd.md)
+### Install
+
+```sh
+#
+kubectl create namespace argocd
+
+#
+kubectl apply \
+  -n argocd \
+  -f 'https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml'
+
+#
+kubectl wait \
+  --namespace argocd \
+  --for=condition=ready pod \
+  --selector=app.kubernetes.io/name=argocd-application-controller \
+  --timeout=90s
+
+#
+kubectl port-forward \
+  svc/argocd-server \
+  -n argocd \
+  8443:443
+
+#
+echo -e '[INFO]\thttps://127.0.0.1:8443'
+```
+
+| Login | Password |
+| --- | --- |
+| `admin` | `kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath='{.data.password}' | base64 -d; echo` |
+
+### Uninstall
+
+```sh
+#
+kubectl delete \
+  -n argocd \
+  -f 'https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml'
+
+#
+kubectl delete namespace argo
+```
 
 ## Helm
 
@@ -59,12 +107,12 @@ helm install argo-cd argo/argo-cd \
   --set ingress.annotations."kubernetes\.io/ingress\.class"=nginx \
   --set-string ingress.annotations."nginx\.ingress\.kubernetes\.io/force-ssl-redirect"=true \
   --set ingress.annotations."nginx\.ingress\.kubernetes\.io/backend-protocol"='HTTPS' \
-  --set ingress.hosts={argocd.$(minikube ip).nip.io}
+  --set ingress.hosts={argocd.${INGRESS_HOST}.nip.io}
 ```
 
 ```sh
 kubectl patch ingress argocd-server \
-  -p '{"spec":{"tls":[{"hosts":["argocd.$(minikube ip).nip.io"],"secretName":"example.tls-secret"}]}}' \
+  -p '{"spec":{"tls":[{"hosts":["argocd.${INGRESS_HOST}.nip.io"],"secretName":"example.tls-secret"}]}}' \
   -n argo-cd
 ```
 
@@ -125,7 +173,10 @@ argocd login \
   --insecure \
   --username '<username>' \
   --password '<password>' \
-  'argocd.example.com'
+  '127.0.0.1:8443'
+
+#
+argocd account update-password
 
 #
 argocd account can-i sync applications '*'
@@ -137,4 +188,34 @@ argocd context
 
 #
 argocd repo list
+```
+
+### Docs
+
+#### Create App
+
+```sh
+#
+kubectl create namespace [namespace]
+
+#
+argocd app create \
+  '[app-name]' \
+  --repo '[git-repo]' \
+  --path ./k8s/overlays/local \
+  --dest-namespace '[namespace]' \
+  --dest-server 'https://kubernetes.default.svc'
+
+#
+argocd app delete '[app-name]'
+```
+
+## Kubectl
+
+### Usage
+
+```sh
+#
+kubectl get appprojects \
+  -n argocd
 ```

@@ -51,11 +51,18 @@ EOF
 act -l
 
 #
-act push
-act pull_request
+act \
+  push \
+  -v
+
+act \
+  pull_request \
+  -v
 
 #
-act -j build
+act \
+  -j build \
+  -v
 ```
 
 ### Tips
@@ -69,12 +76,20 @@ jq '."files.associations".".secrets" |= "dotenv"' "$HOME/.config/Code/User/setti
   sponge "$HOME/.config/Code/User/settings.json"
 ```
 
-<!-- ### Issues
+<!-- ### Issues -->
 
-####
+<!-- ####
 
 ```log
 FATA[0000] Unable to build dependency graph!
+```
+
+TODO -->
+
+<!-- ####
+
+```log
+Error: unable to find api field in struct HorizontalPodAutoscalerSpec for the json field "behavior"
 ```
 
 TODO -->

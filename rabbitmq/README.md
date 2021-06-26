@@ -21,11 +21,47 @@ https://app.pluralsight.com/library/courses/masstransit-rabbitmq-scaling-microse
 brew install rabbitmq
 ```
 
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# RabbitMQ
+export RABBITMQ_HOME='/usr/local/opt/rabbitmq' # Homebrew
+export PATH="$RABBITMQ_HOME/sbin:$PATH"
+```
+
+```sh
+sudo su - "$USER"
+```
+
 ### Service
 
 ```sh
 # Homebrew
 brew services start rabbitmq
+```
+
+### Commands
+
+<!-- rabbitmq-defaults
+rabbitmq-env
+rabbitmq-server -->
+
+```sh
+rabbitmq-queues help
+rabbitmq-upgrade help
+rabbitmqctl help
+rabbitmq-diagnostics help
+rabbitmq-plugins help
+rabbitmqadmin -h
+```
+
+### Usage
+
+```sh
+#
+rabbitmq-plugins enable rabbitmq_management
 ```
 
 ## Docker

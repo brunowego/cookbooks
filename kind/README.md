@@ -96,6 +96,9 @@ kind create cluster \
   --name 'default' \
   --config ~/.kind-config.yml
 
+#
+export INGRESS_HOST='127.0.0.1'
+
 # Get cluster info
 kubectl cluster-info
 # or, using KUBECONFIG environment variable

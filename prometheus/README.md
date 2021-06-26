@@ -135,9 +135,9 @@ helm install prometheus stable/prometheus \
   --namespace monitoring \
   --set alertmanager.enabled=true \
   --set alertmanager.ingress.enabled=true \
-  --set alertmanager.ingress.hosts={alertmanager.$(minikube ip).nip.io} \
+  --set alertmanager.ingress.hosts={alertmanager.${INGRESS_HOST}.nip.io} \
   --set server.ingress.enabled=true \
-  --set server.ingress.hosts={prometheus.$(minikube ip).nip.io}
+  --set server.ingress.hosts={prometheus.${INGRESS_HOST}.nip.io}
 ```
 
 ### SSL
@@ -162,14 +162,14 @@ alertmanager:
     tls:
       - secretName: example.tls-secret
         hosts:
-          - alertmanager.$(minikube ip).nip.io
+          - alertmanager.${INGRESS_HOST}.nip.io
 
 server:
   ingress:
     tls:
       - secretName: example.tls-secret
         hosts:
-          - prometheus.$(minikube ip).nip.io
+          - prometheus.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values prometheus))
 ```
@@ -209,8 +209,8 @@ nslookup prometheus-server.monitoring.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "prometheus.$(minikube ip).nip.io" +short
-nslookup "prometheus.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "prometheus.${INGRESS_HOST}.nip.io" +short
+nslookup "prometheus.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Delete

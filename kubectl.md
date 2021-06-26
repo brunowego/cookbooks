@@ -95,6 +95,13 @@ kubectl delete secret [secret-name] -n [namespace]
 
 ### Tips
 
+<!-- ####
+
+```sh
+kubectl patch cronjobs [name] \
+  -p '{"spec":{"suspend":true}}'
+``` -->
+
 #### Consulting kubeconfig
 
 ```sh
@@ -166,6 +173,10 @@ kubectl scale deployment \
   $(kubectl get deployment -l 'app=[appname]' -o jsonpath='{.items[0].metadata.name}' -n [namespace]) \
   -n [namespace]
 ```
+
+<!--
+kubectl scale --replicas=2 deploy/chat
+-->
 
 <!-- ```sh
 kubectl exec -it \
@@ -331,6 +342,16 @@ rm /tmp/config
 kubectl config view
 ```
 
+<!-- ### Tips
+
+####
+
+```sh
+kubectl rollout restart deployment \
+  -n [namespace] \
+  [...services]
+``` -->
+
 ### Issues
 
 <!-- ####
@@ -439,4 +460,9 @@ kubectl exec -it \
 
 <!--
 kubectl config set-cluster asdf.com --insecure-skip-tls-verify=true
+
+kubectl port-forward \
+  --namespace keycloak \
+  svc/keycloak-postgresql \
+  5432:5432
 -->

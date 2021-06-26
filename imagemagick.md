@@ -26,4 +26,7 @@ convert \
   -background none \
   -flatten \
   ./favicon.png ./favicon.ico
+
+#
+identify -verbose corrupt.jpg
 ```

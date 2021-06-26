@@ -16,23 +16,6 @@
 <!-- - [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) -->
 - [Helm CLI](/helm.md#cli)
 
-<!-- #### kind
-
-**Before:** First create the `.kind-config.yml`, example in [Kubernetes IN Docker (kind)](/kind.md#configuration).
-
-```sh
-#
-kind create cluster \
-  --name 'polyaxon-mlops' \
-  --config ~/.kind-config.yml
-
-#
-kubectl cluster-info
-
-#
-kind delete cluster --name 'polyaxon-mlops'
-``` -->
-
 ### Repository
 
 ```sh
@@ -61,7 +44,7 @@ helm install polyaxon polyaxon/polyaxon \
   --namespace polyaxon \
   --set serviceType='ClusterIP' \
   --set ingress.enabled=true \
-  --set ingress.hostName="polyaxon.$(minikube ip).nip.io" \
+  --set ingress.hostName="polyaxon.${INGRESS_HOST}.nip.io" \
   --set user.username='admin' \
   --set user.email="admin@$(minikube ip).nip.io" \
   --set user.password="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
@@ -90,7 +73,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - polyaxon.$(minikube ip).nip.io
+        - polyaxon.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values polyaxon))
 ```
@@ -127,8 +110,8 @@ nslookup polyaxon-polyaxon-api.polyaxon.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "polyaxon.$(minikube ip).nip.io" +short
-nslookup "polyaxon.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "polyaxon.${INGRESS_HOST}.nip.io" +short
+nslookup "polyaxon.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret
@@ -254,7 +237,7 @@ polyaxon --help
 ```sh
 # Configuration
 polyaxon config set \
-  --host 'polyaxon.$(minikube ip).nip.io' \
+  --host 'polyaxon.${INGRESS_HOST}.nip.io' \
   --port '443' \
   --use_https true \
   --verify_ssl false
@@ -281,7 +264,7 @@ polyaxon init '[name]'
 polyaxon project \
   -p '[name]' \
   git \
-    --url="https://gitlab.$(minikube ip).nip.io/experiments/[name].git"
+    --url="https://gitlab.${INGRESS_HOST}.nip.io/experiments/[name].git"
     --private
 
 #

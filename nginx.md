@@ -482,3 +482,49 @@ nginx: [emerg] open() "/run/nginx/nginx.pid" failed (2: No such file or director
 ```Dockerfile
 RUN mkdir -p /run/nginx
 ```
+
+## Kubernetes
+
+### Running
+
+```sh
+#
+kubectl create deployment 'my-nginx' \
+  --image docker.io/library/nginx:1.17.5-alpine
+
+#
+kubectl expose deployment 'my-nginx' \
+  --port 80 \
+  --type 'NodePort' \
+  --name 'my-nginx-service'
+
+#
+kubectl get pod,service
+
+#
+kubectl get nodes
+```
+
+### Delete
+
+```sh
+#
+kubectl delete service 'my-nginx-service'
+
+#
+kubectl delete deployment 'my-nginx'
+```
+
+<!-- ### Tips
+
+####
+
+EC2
+Security Groups
+nodes
+Inbound tab
+Edit
+Add rule TCP port 0.0.0.0/0
+Save
+
+Running Instancies -->

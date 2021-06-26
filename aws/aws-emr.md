@@ -1,4 +1,4 @@
-# Amazon Elastic MapReduce (EMR)
+# AWS Elastic MapReduce (EMR)
 
 ## CLI
 

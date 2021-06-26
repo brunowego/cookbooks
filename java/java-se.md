@@ -57,6 +57,8 @@ hdiutil attach ~/Downloads/jdk-8u202-macosx-x64.dmg -mountpoint /Volumes/JDK\ 8\
 open /Volumes/JDK\ 8\ Update\ 202/JDK\ 8\ Update\ 202.pkg
 ```
 
+###### Connect with jabba
+
 ```sh
 # Darwin
 /usr/libexec/java_home -V
@@ -84,6 +86,8 @@ hdiutil attach ~/Downloads/jdk-11.0.11_osx-x64_bin.dmg -mountpoint /Volumes/JDK\
 open /Volumes/JDK\ 11.0.11/JDK\ 11.0.11.pkg
 ```
 
+###### Connect with jabba
+
 ```sh
 # Darwin
 /usr/libexec/java_home -V
@@ -110,6 +114,8 @@ hdiutil attach ~/Downloads/jdk-14.0.2_osx-x64_bin.dmg -mountpoint /Volumes/JDK\ 
 
 open /Volumes/JDK\ 14.0.2/JDK\ 14.0.2.pkg
 ```
+
+###### Connect with jabba
 
 ```sh
 # Darwin

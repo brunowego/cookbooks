@@ -41,7 +41,7 @@ helm install jenkins stable/jenkins \
   --namespace jenkins \
   --set master.serviceType=ClusterIP \
   --set master.ingress.enabled=true \
-  --set master.ingress.hostName="jenkins.$(minikube ip).nip.io"
+  --set master.ingress.hostName="jenkins.${INGRESS_HOST}.nip.io"
 ```
 
 ### SSL
@@ -66,7 +66,7 @@ master:
     tls:
       - secretName: example.tls-secret
         hosts:
-          - jenkins.$(minikube ip).nip.io
+          - jenkins.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values jenkins))
 ```
@@ -105,8 +105,8 @@ nslookup jenkins.jenkins.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 jenkins.$(minikube ip).nip.io +short
-nslookup jenkins.$(minikube ip).nip.io 10.96.0.10
+dig @10.96.0.10 jenkins.${INGRESS_HOST}.nip.io +short
+nslookup jenkins.${INGRESS_HOST}.nip.io 10.96.0.10
 ```
 
 ### Secrets
@@ -152,7 +152,7 @@ agent:
       mountPath: /var/run/docker.sock
   envVars:
     - name: DOCKER_REGISTRY_URL
-      value: https://registry.$(minikube ip).nip.io
+      value: https://registry.${INGRESS_HOST}.nip.io
     - name: DOCKER_REGISTRY_CREDENTIAL
       value: nxrm-oss-credential
 EOF

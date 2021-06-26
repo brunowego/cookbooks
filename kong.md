@@ -22,7 +22,7 @@ helm install kong stable/kong \
   --set admin.useTLS=false \
   --set admin.type='ClusterIP' \
   --set admin.ingress.enabled=true \
-  --set admin.ingress.hosts={kong.$(minikube ip).nip.io} \
+  --set admin.ingress.hosts={kong.${INGRESS_HOST}.nip.io} \
   --set proxy.tls.enabled=false \
   --set proxy.type='ClusterIP' \
   --set proxy.ingress.enabled=true \
@@ -51,8 +51,8 @@ nslookup kong-kong-proxy.kong.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "kong.$(minikube ip).nip.io" +short
-nslookup "kong.$(minikube ip).nip.io" 10.96.0.10
+dig @10.96.0.10 "kong.${INGRESS_HOST}.nip.io" +short
+nslookup "kong.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret

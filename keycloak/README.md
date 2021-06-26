@@ -3,6 +3,10 @@
 **Keywords:** Identity Provider (IdP), Access Management
 
 <!--
+https://github.com/aws-samples/keycloak-on-aws
+https://www.amazonaws.cn/en/solutions/keycloak-on-aws/
+https://github.com/devopsutils/keycloak-cluster-aws-rds
+
 https://blog.sighup.io/keycloak-ha-on-kubernetes/
 https://github.com/sighupio/fury-kubernetes-keycloak#considerations-for-keycloak-4.8.2.final
 
@@ -32,6 +36,7 @@ https://github.com/akvo/akvo-lumen/commit/2a15a7eedd3d8fd9e77ba7b1eb4cee4ccf168b
 ## Links
 
 - [Code Repository](https://github.com/keycloak/keycloak)
+- [Awesome Keycloak](https://github.com/thomasdarimont/awesome-keycloak)
 
 ## Alternatives
 
@@ -81,6 +86,10 @@ docker network create workbench \
 
 ### Running
 
+<!--
+13.0.1
+-->
+
 #### Version 13.x
 
 ```sh
@@ -104,16 +113,16 @@ docker run -d \
   -h keycloak \
   -e DB_VENDOR='mysql' \
   -e DB_ADDR='keycloak-mysql' \
+  -e DB_DATABASE='keycloak' \
   -e DB_USER='keycloak' \
   -e DB_PASSWORD='keycloak' \
-  -e DB_DATABASE='keycloak' \
   -e KEYCLOAK_USER='admin' \
   -e KEYCLOAK_PASSWORD='admin' \
   -p 8080:8080 \
   -p 8443:8443 \
   --name keycloak \
   --network workbench \
-  docker.io/jboss/keycloak:13.0.0 \
+  docker.io/jboss/keycloak:12.0.4 \
     -Dkeycloak.profile.feature.upload_scripts=enabled
 ```
 
@@ -136,17 +145,17 @@ docker run -d \
   -h keycloak \
   -e DB_VENDOR='postgres' \
   -e DB_ADDR='keycloak-postgres' \
-  -e DB_USER='keycloak' \
-  -e DB_PASSWORD='keycloak' \
   -e DB_DATABASE='keycloak' \
   -e DB_SCHEMA='public' \
+  -e DB_USER='keycloak' \
+  -e DB_PASSWORD='keycloak' \
   -e KEYCLOAK_USER='admin' \
   -e KEYCLOAK_PASSWORD='admin' \
   -p 8080:8080 \
   -p 8443:8443 \
   --name keycloak \
   --network workbench \
-  docker.io/jboss/keycloak:13.0.0 \
+  docker.io/jboss/keycloak:12.0.4 \
     -Dkeycloak.profile.feature.upload_scripts=enabled
 ```
 
@@ -283,7 +292,7 @@ helm install keycloak codecentric/keycloak \
   --namespace keycloak \
   --version 11.0.1 \
   --set ingress.enabled=true \
-  --set 'ingress.rules[0].host=keycloak.example.com' \
+  --set 'ingress.rules[0].host=keycloak.cluster.local' \
   --set 'ingress.rules[0].paths={/}'
 ```
 
@@ -307,7 +316,7 @@ kubectl get secret keycloak-http \
 
 ```sh
 #
-sudo hostess add keycloak.example.com 127.0.0.1
+sudo hostess add keycloak.cluster.local 127.0.0.1
 ```
 
 ### Delete

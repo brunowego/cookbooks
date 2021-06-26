@@ -1,6 +1,26 @@
-# Amazon CloudFront
+# AWS CloudFront
 
 **Keywords:** CDN
+
+## Solution
+
+### Overview
+
+- Global, Growing Network
+- Secure Content at the Edge
+- Deep Integration with Key AWS Services
+- High Performance
+- Cost Effective
+- Easy to Use
+
+### Use Cases
+
+- Static Asset Caching
+- Live and On-Demand Video Streaming
+- Security and DDoS Protection
+- Dynamic and Customized Content
+- API Acceleration
+- Software Distribution
 
 ## CLI
 

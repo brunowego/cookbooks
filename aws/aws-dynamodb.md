@@ -1,4 +1,4 @@
-# Amazon DynamoDB
+# AWS DynamoDB
 
 ## CLI
 

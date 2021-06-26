@@ -1,4 +1,4 @@
-# Amazon Elastic Computer Cloud (EC2)
+# AWS Elastic Computer Cloud (EC2)
 
 <!--
 On-demand instances

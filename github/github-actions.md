@@ -12,12 +12,15 @@ filename:.yml path:.github/workflows
 
 ${{ github.event.release.tag_name }}
 ${{ github.event.inputs.launcher_ref }}
+
+https://github.com/search?o=desc&q=filename%3A.yaml+path%3A.github%2Fworkflows+%22workflow_run%3A%22&s=indexed&type=Code
 -->
 
 ## Guides
 
 - [About self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners)
 - [Events that trigger workflows](https://docs.github.com/en/actions/reference/events-that-trigger-workflows)
+- [Webhook events](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#webhook-events)
 
 ## Links
 
