@@ -1,6 +1,9 @@
 # Shell
 
 <!--
+exit 0
+exit 1
+
 https://app.pluralsight.com/paths/skill/shell-scripting-with-bash-and-z-shell
 https://app.pluralsight.com/paths/skill/using-bash-and-z-shell
 

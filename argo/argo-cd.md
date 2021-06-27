@@ -168,33 +168,76 @@ argocd -h
 
 ```sh
 #
+export ARGOCD_SERVER='127.0.0.1:8080'
+export ARGOCD_OPTS='--grpc-web --insecure'
+
+#
 argocd login \
-  --grpc-web \
-  --insecure \
   --username '<username>' \
   --password '<password>' \
-  '127.0.0.1:8443'
+  "$ARGOCD_SERVER"
+
+#
+argocd context
+argocd context 127.0.0.1:8443
+argocd context argocd.example.com
+```
+
+#### Account
+
+```sh
+#
+argocd account get-user-info
 
 #
 argocd account update-password
 
 #
+argocd account list
+
+#
 argocd account can-i sync applications '*'
 argocd account can-i update projects 'default'
 argocd account can-i create clusters '*'
+```
+
+#### Cluster
+
+```sh
+#
+argocd cluster list
 
 #
-argocd context
+argocd cluster add "$(kubectl config current-context)"
+```
 
+#### Certificates
+
+```sh
+#
+argocd cert list
+```
+
+#### Projects
+
+```sh
+#
+argocd proj list
+```
+
+#### Repositories
+
+```sh
 #
 argocd repo list
 ```
 
-### Docs
-
-#### Create App
+#### Applications
 
 ```sh
+#
+argocd app list
+
 #
 kubectl create namespace [namespace]
 
@@ -208,7 +251,50 @@ argocd app create \
 
 #
 argocd app delete '[app-name]'
+
+#
+argocd app sync '[app-name]'
+
+#
+argocd app wait '[app-name]'
 ```
+
+### Tips
+
+#### Enable Status Badge
+
+```sh
+kubectl patch configmap argocd-cm \
+  -p '{"data":{"statusbadge.enabled":"true"}}' \
+  -n argocd \
+  --dry-run='server'
+```
+
+> More details about Status Badge [here](https://argoproj.github.io/argo-cd/user-guide/status-badge/).
+
+### Issues
+
+<!-- ####
+
+```log
+FATA[0000] rpc error: code = Unknown desc = account 'admin' does not have apiKey capability
+```
+
+```sh
+export TOKEN_SECRET="$(kubectl get serviceaccount -n argocd argocd -o jsonpath='{.secrets[0].name}')"
+export TOKEN="$(kubectl get secret -n argocd $TOKEN_SECRET -o jsonpath='{.data.token}' | base64 --decode)"
+
+export ARGOCD_AUTH_TOKEN=''
+``` -->
+
+<!-- export ARGOCD_INSECURE='true' -->
+
+<!-- ####
+
+```log
+OrphanedResourceWarning
+Application has 2 orphaned resources
+``` -->
 
 ## Kubectl
 

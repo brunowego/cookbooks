@@ -20,7 +20,7 @@
 - Reliability Tests
 - Compatibility Tests
 - Test Suites
-- End-to-end Tests / Workflow Tests
+- End-to-end Tests / Acceptance Tests / Workflow Tests
 
 <!--
 jest-image-snapshot

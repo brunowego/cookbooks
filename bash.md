@@ -4,6 +4,10 @@
 
 - [Bash Guide](https://github.com/Idnan/bash-guide)
 
+## Glossary
+
+- Internal Field Separator (IFS)
+
 ## CLI
 
 ### Installation
@@ -61,6 +65,23 @@ bash --version | head -1
 ```
 
 ### Tips
+
+#### Split Variable with IFS
+
+```sh
+IFS='/' read [var1] [var2] <<< "[$VARIABLE]"
+```
+
+#### Exit Code
+
+```sh
+if [ $? -ne 0 ]; then
+  echo "[text]"
+  exit 1
+fi
+
+exit 0
+```
 
 #### Reload
 

@@ -70,6 +70,9 @@ gh -h
 
 ```sh
 #
+gh auth login -w
+
+#
 gh repo create \
   --public
 ```

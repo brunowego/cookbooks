@@ -20,3 +20,4 @@ https://github.com/statsd/statsd
 ## Examples
 
 - [AlienVault](https://status.alienvault.cloud/)
+- [GitHub](https://www.githubstatus.com/)

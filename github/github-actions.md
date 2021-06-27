@@ -1,6 +1,10 @@
 # Github Actions
 
 <!--
+https://app.pluralsight.com/course-player?clipId=0f892e51-2fc4-4a96-baf5-719efaaa5898
+
+https://github.com/reviewdog/action-hadolint
+
 https://github.com/k6io/example-github-actions/tree/master
 
 https://linkedin.com/learning/github-actions-first-look-2/what-are-github-actions
@@ -14,6 +18,11 @@ ${{ github.event.release.tag_name }}
 ${{ github.event.inputs.launcher_ref }}
 
 https://github.com/search?o=desc&q=filename%3A.yaml+path%3A.github%2Fworkflows+%22workflow_run%3A%22&s=indexed&type=Code
+
+setup-[name]
+action-[name]
+
+ACTIONS_STEP_DEBUG true
 -->
 
 ## Guides
@@ -21,6 +30,7 @@ https://github.com/search?o=desc&q=filename%3A.yaml+path%3A.github%2Fworkflows+%
 - [About self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners)
 - [Events that trigger workflows](https://docs.github.com/en/actions/reference/events-that-trigger-workflows)
 - [Webhook events](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#webhook-events)
+- [Manually running a workflow](https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow)
 
 ## Links
 
@@ -28,12 +38,67 @@ https://github.com/search?o=desc&q=filename%3A.yaml+path%3A.github%2Fworkflows+%
 - [Features Actions](https://github.com/features/actions)
 - [Starter Workflows](https://github.com/actions/starter-workflows)
 - [Become a GitHub Actions Hero](https://github-actions-hero.vercel.app/)
+- [Feather - Simply beautiful open source icons](feathericons.com)
 
 ## Terms
 
 - Software Development Life Cycle (SDLC)
 
-## Core Concepts Overview
+## Solution
+
+### Two Kinds of Actions
+
+- JavaScript Actions
+- Docker Actions
+
+### Templates
+
+- [Create a JavaScript Action](https://github.com/actions/javascript-action)
+- [Create a JavaScript Action using TypeScript](https://github.com/actions/typescript-action)
+
+### Log Commands
+
+#### The Logging Command Format
+
+```log
+::log-command param1=arg,param2=arg::command value
+
+::set-env name=DEBUG::1
+```
+
+#### Setting an Output Parameter
+
+```log
+::set-output name=name_of_param::value
+```
+
+#### Adding a Directory to the PATH
+
+```log
+::add-path::/path/to/directory
+```
+
+#### Printing a Log Message
+
+```log
+::debug file:name,line=0,col=0::message
+::warning file:name,line=0,col=0::message
+::error file:name,line=0,col=0::message
+```
+
+#### Printing a Masked Message
+
+```log
+::add-mask::message
+```
+
+#### Stopping and Starting the Log Commands
+
+```log
+::stop-commands::token
+```
+
+### Core Concepts Overview
 
 - Actions
 - Artifacts
@@ -44,7 +109,7 @@ https://github.com/search?o=desc&q=filename%3A.yaml+path%3A.github%2Fworkflows+%
 - Workflow File
 - Workflow Run
 
-### Actions
+#### Actions
 
 - [GitHub Actions Checkout](https://github.com/actions/checkout)
 - [Github Marketplace Actions](https://github.com/marketplace?type=actions)
@@ -81,7 +146,7 @@ wangchucheng/git-repo-sync@v0.1.0
 
 - Supercharged GitHub Flow -->
 
-### Artifacts
+#### Artifacts
 
 - [Upload-Artifact v2](https://github.com/actions/upload-artifact)
 - [Download-Artifact v2](https://github.com/actions/download-artifact)
@@ -97,17 +162,17 @@ jobs:
           path: public/
 ```
 
-### CI/CD
+#### CI/CD
 
-### Events
+#### Events
 
 - GitHub Webhook Events
 - Scheduled Events (e.q. `schedule`)
 - External Events (e.q. `repository_dispatch`)
 
-### Runners
+#### Runners
 
-#### GitHub-Hosted Runners
+##### GitHub-Hosted Runners
 
 ```yml
 jobs:
@@ -122,7 +187,7 @@ jobs:
 | Ubuntu 18.04 | `windows-latest` or `ubuntu-18.04` |
 | Windows Server 2019 | `windows-latest` or `windows-2019` |
 
-#### Self-Hosted Runners
+##### Self-Hosted Runners
 
 ```yml
 jobs:
@@ -156,11 +221,11 @@ jobs:
 
 - macOS 10.13 (High Sierra) or later
 
-### Jobs/Steps
+#### Jobs/Steps
 
 TODO
 
-## Customize a Workflow Beyond a Template
+### Customize a Workflow Beyond a Template
 
 - Test against multiple target environments
 - Dedicated test jobs
@@ -169,10 +234,26 @@ TODO
 - Required reviews
 - Obvious approvals
 
-## Tips
+### Tips
 
-### Visual Studio Code
+#### Visual Studio Code
 
 ```sh
 code --install-extension cschleiden.vscode-github-actions
+```
+
+## CLI
+
+### Usage
+
+```sh
+#
+gh workflow run '[workflow-name]'
+
+#
+gh workflow run '[workflow-name]' \
+  --ref '[branch-name]'
+
+#
+gh run watch
 ```

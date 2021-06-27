@@ -167,6 +167,12 @@ ldd `which curl` | grep -E '(ssl|crypto)'
 <!-- ####
 
 ```log
+curl: (23) Failed writing received data to disk/application
+``` -->
+
+<!-- ####
+
+```log
 curl: (52) Empty reply from server
 ```
 

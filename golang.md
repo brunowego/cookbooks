@@ -3,6 +3,8 @@
 Efficient compilation, Efficient execution and Ease of programming.
 
 <!--
+https://github.com/golangci/golangci-lint
+
 https://github.com/vmasdani/cozypos-full
 
 https://pragprog.com/titles/tjgo/distributed-services-with-go/

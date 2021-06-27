@@ -207,6 +207,21 @@ git credential approve
 
 ### Tips
 
+#### Tags
+
+```sh
+#
+git tag -am 'Version 1.0.0' v1.0.0 master
+git tag -am 'Version 1' v1 master
+
+#
+git tag -am 'Version 1.0.1' v1.0.1 master
+git tag -am 'Version 1' --force v1 v1.0.1
+
+#
+git push --follow-tags
+```
+
 #### Merge Strategies
 
 - Fast Forward Merge
