@@ -93,3 +93,11 @@ diff <(kustomize build ./base) <(kustomize build ./overlays/local)
 # or, using icdiff
 icdiff <(kustomize build ./base) <(kustomize build ./overlays/local)
 ```
+
+<!-- ### Tips
+
+#### Image Names and Tags
+
+```sh
+kustomize edit set image []:[tag]
+``` -->

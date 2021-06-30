@@ -13,10 +13,13 @@ docker volume create rocketchat-uploads
 docker run -d \
   -h mongo.rocketchat.local \
   -v rocketchat-mongo-data:/data/db \
-  -e MONGO_INITDB_DATABASE=rocketchat \
+  -e MONGO_INITDB_DATABASE='rocketchat' \
   -p 27017:27017 \
   --name rocketchat-mongo \
-  docker.io/library/mongo:4.0.20 mongod --oplogSize 128 --replSet rs0 --storageEngine wiredTiger
+  docker.io/library/mongo:4.0.20 mongod \
+    --oplogSize 128 \
+    --replSet rs0 \
+    --storageEngine wiredTiger
 ```
 
 ```sh

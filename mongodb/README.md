@@ -85,6 +85,7 @@ docker run -d \
   -h mongodb \
   -v mongodb-data:/data/db \
   -v mongodb-configdb:/data/configdb \
+  -e MONGO_INITDB_DATABASE='dev' \
   -e MONGO_INITDB_ROOT_USERNAME='user' \
   -e MONGO_INITDB_ROOT_PASSWORD='pass' \
   -p 27017:27017 \
@@ -109,7 +110,9 @@ docker run -it --rm \
 ```sh
 docker rm -f mongodb
 
-docker volume rm mongodb-data mongodb-configdb
+docker volume rm \
+  mongodb-data \
+  mongodb-configdb
 ```
 
 ## Docker Compose

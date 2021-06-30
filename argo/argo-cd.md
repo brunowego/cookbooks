@@ -253,7 +253,8 @@ argocd app create \
 argocd app delete '[app-name]'
 
 #
-argocd app sync '[app-name]'
+argocd app sync '[app-name]' \
+  --prune
 
 #
 argocd app wait '[app-name]'

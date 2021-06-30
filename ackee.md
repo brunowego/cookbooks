@@ -16,7 +16,7 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mongo \
   -v ackee-mongo-data:/data/db \
-  -e MONGO_INITDB_DATABASE=ackee \
+  -e MONGO_INITDB_DATABASE='ackee' \
   -p 27017:27017 \
   --name ackee-mongo \
   docker.io/library/mongo:4.0.20
@@ -26,9 +26,9 @@ docker run -d \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h ackee \
-  -e ACKEE_MONGODB=mongodb://ackee-mongo:27017/ackee \
-  -e ACKEE_USERNAME=admin \
-  -e ACKEE_PASSWORD=admin \
+  -e ACKEE_MONGODB='mongodb://ackee-mongo:27017/ackee' \
+  -e ACKEE_USERNAME='admin' \
+  -e ACKEE_PASSWORD='admin' \
   -p 3000:3000 \
   --name ackee \
   docker.io/electerious/ackee:1.4.0

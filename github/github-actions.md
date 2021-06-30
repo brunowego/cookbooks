@@ -1,6 +1,8 @@
 # Github Actions
 
 <!--
+https://medium.com/thefork/ios-ci-cd-with-github-actions-e4504228c9d
+
 https://app.pluralsight.com/course-player?clipId=0f892e51-2fc4-4a96-baf5-719efaaa5898
 
 https://github.com/reviewdog/action-hadolint
@@ -38,7 +40,7 @@ ACTIONS_STEP_DEBUG true
 - [Features Actions](https://github.com/features/actions)
 - [Starter Workflows](https://github.com/actions/starter-workflows)
 - [Become a GitHub Actions Hero](https://github-actions-hero.vercel.app/)
-- [Feather - Simply beautiful open source icons](feathericons.com)
+- [Feather - Simply beautiful open source icons](https://feathericons.com)
 
 ## Terms
 

@@ -248,6 +248,14 @@ docker volume rm \
   keycloak-postgres-data
 ```
 
+### Tips
+
+#### Token Exchange
+
+```sh
+export JAVA_OPTS_APPEND='-Dkeycloak.profile.feature.upload_scripts=enabled -Dkeycloak.profile.feature.admin_fine_grained_authz=enabled -Dkeycloak.profile.feature.token_exchange=enabled'
+```
+
 ## Helm
 
 ### References
