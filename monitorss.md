@@ -19,15 +19,21 @@ docker network create workbench \
 2. New Application
    - Name: `mrss_docker_token`
    - Create
-3. Bot Menu Entry -> Add Bot -> Yes, do it! -> Copy "TOKEN" (put in environment `DISCORD_TOKEN`)
-4. OAuth2 Menu Entry -> Copy "CLIENT ID" (put in environment `DISCORD_CLIENT_ID`) and "CLIENT SECRET" (put in environment `DISCORD_CLIENT_SECRET`).
+3. Bot Menu Entry
+   - Add Bot -> Yes, do it!
+   - Copy "TOKEN" and put in environment `DISCORD_TOKEN`
+4. OAuth2 Menu Entry
+   - Copy "CLIENT ID" and put in environment `DISCORD_CLIENT_ID`
+   - Copy "CLIENT SECRET" and put in environment `DISCORD_CLIENT_SECRET`
+   - Run `ngrok http 8081`. Copy "Forwarding" URL from ngrok and append `/authorize` to this (ex. `https://[hash].ngrok.io/authorize`), after it, click in "Add Redirect" and save the URL in "Redirects" field and click in "Save Changes"
+   - Put the autorize URL (ex. `https://[hash].ngrok.io/authorize`) in environment `DISCORD_REDIRECT_URI`
 
 ### Running
 
 ```sh
 #
 export DISCORD_TOKEN=''
-export DISCORD_REDIRECT_URI='https://example.com/authorize'
+export DISCORD_REDIRECT_URI='https://[hash].ngrok.io/authorize'
 export DISCORD_CLIENT_ID=''
 export DISCORD_CLIENT_SECRET=''
 
@@ -79,7 +85,7 @@ docker run -d \
 ```
 
 ```sh
-echo -e '[INFO]\thttp://127.0.0.1:8081'
+echo -e '[INFO]\thttps://[hash].ngrok.io'
 ```
 
 ### Remove

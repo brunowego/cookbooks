@@ -44,6 +44,16 @@ brew install --cask ngrok
 ngrok -h
 ```
 
+### Usage
+
+```sh
+# HTTP
+ngrok http 80
+
+# TCP
+ngrok tcp 22
+```
+
 ### Configuration
 
 #### Authtoken
