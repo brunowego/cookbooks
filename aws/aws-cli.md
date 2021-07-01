@@ -46,6 +46,11 @@ aws [options] <command> <subcommand> [parameters]
 
 ### Usage
 
+<!-- ```sh
+#
+aws configure \
+  --profile dev
+``` -->
 
 ```sh
 #

@@ -27,6 +27,7 @@ Version 1.21.0
 
 ## Terms
 
+- Custom Resource Definition (CRD)
 - Horizontal Pod Autoscaler (HPA)
 
 ## Tools

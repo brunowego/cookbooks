@@ -71,6 +71,13 @@ kubectl logs \
   -c [container] \
   -n [namespace] \
   -f
+
+kubectl
+  --context '[cluster-name]' \
+  logs \
+    -n '[namespace]' \
+    '[pod-name]'
+    -f
 ```
 
 #### Secrets
@@ -174,9 +181,41 @@ kubectl scale deployment \
   -n [namespace]
 ```
 
-<!--
-kubectl scale --replicas=2 deploy/chat
--->
+#### Scale
+
+```sh
+# Deployment
+kubectl scale \
+  --replicas=2 \
+  -n '[namespace]' \
+  deploy/[name]
+
+# ReplicaSet
+kubectl scale \
+  --replicas=2 \
+  -n '[namespace]' \
+  rs/[name]
+```
+
+#### Edit
+
+```sh
+#
+kubectl get deploy \
+  -n '[namespace]'
+
+kubectl edit \
+  -n '[namespace]' \
+  deploy/[name]
+
+#
+kubectl get hpa \
+  -n '[namespace]'
+
+kubectl edit  \
+  -n '[namespace]' \
+  hpa/[name]
+```
 
 <!-- ```sh
 kubectl exec -it \

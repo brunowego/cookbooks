@@ -33,6 +33,9 @@ https://www.javatpoint.com/shell-script-parameters
 # Show history
 history | less
 
+# Last 100 lines
+history 100
+
 # Run commando from line number
 ![line-number]
 

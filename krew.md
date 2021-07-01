@@ -41,26 +41,8 @@ kubectl krew upgrade
 kubectl krew list
 
 #
-kubectl krew search [package]
+kubectl krew search '[package]'
 
-#
-kubectl krew install access-matrix
-kubectl krew install config-cleanup
+# Non-official
 kubectl krew install exec-all
-kubectl krew install fleet
-kubectl krew install get-all
-kubectl krew install grep
-kubectl krew install konfig
-kubectl krew install kubesec-scan
-kubectl krew install kudo
-kubectl krew install neat
-kubectl krew install pod-dive
-kubectl krew install rbac-lookup
-kubectl krew install resource-capacity
-kubectl krew install sniff
-kubectl krew install starboard
-kubectl krew install sudo
-kubectl krew install tree
-kubectl krew install view-secret
-kubectl krew install who-can
 ```

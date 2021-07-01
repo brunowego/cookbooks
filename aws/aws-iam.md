@@ -17,6 +17,7 @@ https://blog.kasten.io/hands-on-deploying-kubernetes-with-terraform?utm_term=&ut
 
 - [IAM policy examples for secrets in AWS Secrets Manager](https://docs.aws.amazon.com/mediaconnect/latest/ug/iam-policy-examples-asm-secrets.html)
 - [Switching to an IAM role (AWS CLI)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-cli.html)
+- [IAM tutorial: Delegate access across AWS accounts using IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html)
 
 ## Authentication
 
@@ -112,13 +113,14 @@ aws iam attach-group-policy \
 ```sh
 cat << EOF >> ~/.aws/config
 [profile prodaccess]
-role_arn = arn:aws:iam::123456789012:role/ProductionAccessRole
+role_arn = arn:aws:iam::000000000000:role/ProductionAccessRole
 source_profile = default
 EOF
 
 #
-aws iam list-users \
-  --profile prodaccess
+aws \
+  --profile prodaccess \
+  iam list-users
 
 #
 AWS_PROFILE=prodaccess \

@@ -5,11 +5,23 @@ https://linkedin.com/learning/learning-rabbitmq/connect-your-services-with-async
 
 https://app.pluralsight.com/library/courses/rabbitmq-by-example/table-of-contents
 https://app.pluralsight.com/library/courses/masstransit-rabbitmq-scaling-microservices/table-of-contents
+
+https://www.rabbitmq.com/management-cli.html
+https://www.rabbitmq.com/cli.html
+https://www.rabbitmq.com/plugins.html
+https://www.rabbitmq.com/prometheus.html
+https://www.rabbitmq.com/installing-plugins.html
+https://github.com/search?q=%22kind%3A+RabbitmqCluster%22+%22rabbitmq_peer_discovery_k8s%22&type=Code
+https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq
 -->
+
+## Links
+
+- [Plugins](https://www.rabbitmq.com/plugins.html)
 
 ## References
 
-- [Advanced Message Queuing Protocol (AMQP)]()
+- [Advanced Message Queuing Protocol (AMQP)](/amqp.md)
 
 ## CLI
 
@@ -62,64 +74,4 @@ rabbitmqadmin -h
 ```sh
 #
 rabbitmq-plugins enable rabbitmq_management
-```
-
-## Docker
-
-### Network
-
-```sh
-docker network create workbench \
-  --subnet 10.1.1.0/24
-```
-
-### Running
-
-```sh
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h rabbitmq \
-  -v rabbitmq-data:/var/lib/rabbitmq \
-  -e RABBITMQ_DEFAULT_USER='admin' \
-  -e RABBITMQ_DEFAULT_PASS='admin' \
-  -p 5672:5672 \
-  --name rabbitmq \
-  --network workbench \
-  docker.io/library/rabbitmq:3.8.2-alpine
-```
-
-```sh
-echo -e '[INFO]\thttp://127.0.0.1:5672'
-```
-
-```sh
-# Management
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h rabbitmq \
-  -v rabbitmq-data:/var/lib/rabbitmq \
-  -e RABBITMQ_DEFAULT_USER='admin' \
-  -e RABBITMQ_DEFAULT_PASS='admin' \
-  -p 5672:5672 \
-  -p 15672:15672 \
-  --name rabbitmq \
-  --network workbench \
-  docker.io/library/rabbitmq:3.8.2-management-alpine
-```
-
-> Wait! This process take a while.
-
-```sh
-echo -e '[INFO]\thttp://127.0.0.1:15672'
-```
-
-| Login | Password |
-| --- | --- |
-| guest | guest |
-| `admin` | `admin` |
-
-### Remove
-
-```sh
-docker rm -f rabbitmq
 ```

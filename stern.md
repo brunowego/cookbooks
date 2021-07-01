@@ -105,11 +105,18 @@ stern '<pod-prefix>' \
   -c '<container>'
 
 #
-stern '<pod-prefix>'  \
+stern '<pod-prefix>' \
   -l '<key>=<value>'
 
 #
-stern '<pod-prefix>'  \
+stern '<pod-prefix>' \
   -s 15m \
   -t
+
+#
+stern \
+  --context [cluster-name] \
+  -n [namespace] \
+  [prefix] \
+    -s 15m
 ```
