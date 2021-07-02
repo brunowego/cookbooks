@@ -1,5 +1,9 @@
 # AWS Profile Manager (a.k.a. AWS Profile Switcher)
 
+## Links
+
+- [Code Repository](https://github.com/99stealth/aws-profile-manager)
+
 ## CLI
 
 ### Installation

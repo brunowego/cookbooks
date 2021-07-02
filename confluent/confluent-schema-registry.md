@@ -1,8 +1,13 @@
 # Confluent Schema Registry
 
 <!--
+https://www.linkedin.com/learning/search?entityType=VIDEO&keywords=schema%20registry
 https://github.com/weisurya/kafka-playground-python/blob/master/docker-compose.yml
 -->
+
+## Links
+
+- [Schema Evolution and Compatibility](https://docs.confluent.io/platform/current/schema-registry/avro.html)
 
 ## Docker
 

@@ -10,3 +10,20 @@
 - Configure VPC routing tables.
 - Use NAT Gateways for outbound traffic.
 - Internal IP address allocation.
+
+## CLI
+
+### Usage
+
+```sh
+#
+aws \
+  --output json \
+  ec2 describe-vpcs | \
+    jq -r '.Vpcs[].VpcId'
+
+#
+aws \
+  --output json \
+  ec2 describe-subnets
+```

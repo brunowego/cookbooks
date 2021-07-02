@@ -1,6 +1,9 @@
 # Apache Kafka
 
 <!--
+https://medium.com/@sannidhi.s.t/dead-letter-queues-dlqs-in-kafka-afb4b6835309
+
+
 https://app.pluralsight.com/library/courses/securing-kafka-cluster/table-of-contents
 
 https://www.youtube.com/watch?v=sCkAe-Umb0o
@@ -43,6 +46,12 @@ https://www.confluent.io/blog/using-apache-kafka-drive-cutting-edge-machine-lear
 https://www.confluent.io/blog/build-deploy-scalable-machine-learning-production-apache-kafka/
 https://medium.com/@stephane.maarek/how-to-use-apache-kafka-to-transform-a-batch-pipeline-into-a-real-time-one-831b48a6ad85
 https://github.com/kaiwaehner/kafka-streams-machine-learning-examples
+
+
+streaming.payments.legit
+streaming.payments.fraud
+streaming.payments.error
+queuing.payments
 -->
 
 ## References
