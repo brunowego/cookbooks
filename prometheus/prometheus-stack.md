@@ -1,4 +1,4 @@
-# kube-prometheus
+# kube-prometheus (a.k.a prometheus-stack) (p.k.a. prometheus-operator)
 
 ## Links
 
@@ -26,8 +26,55 @@ kubectl create namespace monitoring
 
 ```sh
 helm install prometheus prometheus-community/kube-prometheus-stack \
+  --namespace monitoring \
+  --version 16.12.1 \
+  --set prometheus.ingress.enabled=true \
+  --set prometheus.ingress.hosts={prometheus.${INGRESS_HOST}.nip.io} \
+  --set prometheus.ingress.pathType=Prefix \
+  --set alertmanager.ingress.enabled=true \
+  --set alertmanager.ingress.hosts={alertmanager.${INGRESS_HOST}.nip.io} \
+  --set alertmanager.ingress.pathType=Prefix \
+  --set grafana.adminPassword="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
+  --set grafana.ingress.enabled=true \
+  --set grafana.ingress.hosts={grafana.${INGRESS_HOST}.nip.io}
+```
+
+### Status
+
+```sh
+kubectl rollout status deploy/prometheus-kube-prometheus-operator \
+  -n monitoring
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'release=prometheus' \
   -n monitoring \
-  --version 16.12.0
+  -f
+```
+
+### Secret
+
+```sh
+kubectl get secret prometheus-grafana \
+  -o jsonpath='{.data.admin-password}' \
+  -n monitoring | \
+    base64 --decode; echo
+```
+
+### Ingress
+
+```sh
+#
+echo -e "[INFO]\thttp://prometheus.${INGRESS_HOST}.nip.io"
+
+#
+echo -e "[INFO]\thttp://alertmanager.${INGRESS_HOST}.nip.io"
+
+#
+echo -e "[INFO]\thttp://grafana.${INGRESS_HOST}.nip.io"
 ```
 
 ### Delete

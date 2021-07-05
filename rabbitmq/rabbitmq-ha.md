@@ -1,4 +1,4 @@
-# RabbitMQ High Availability
+# RabbitMQ High Availability (HA)
 
 ## Helm
 
@@ -95,6 +95,10 @@ kubectl get secret rabbitmq-ha \
 ### Delete
 
 ```sh
-helm uninstall rabbitmq-ha -n rabbitmq-ha
-kubectl delete namespace rabbitmq-ha --grace-period=0 --force
+helm uninstall rabbitmq-ha \
+  -n rabbitmq-ha
+
+kubectl delete namespace rabbitmq-ha \
+  --grace-period=0 \
+  --force
 ```

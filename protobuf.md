@@ -1,4 +1,4 @@
-# Protocol Buffers
+# Protocol Buffers (a.k.a Protobuf)
 
 <!--
 https://linkedin.com/learning/building-java-microservices-with-grpc/microservices-with-grpc

@@ -3,8 +3,8 @@
 ## Links
 
 - [Code Repository](https://github.com/rabbitmq/cluster-operator/)
-- [RabbitMQ Cluster Operator for Kubernetes](https://www.rabbitmq.com/kubernetes/operator/operator-overview.html)
-- [RabbitMQ Cluster Operator Plugin for kubectl](https://www.rabbitmq.com/kubernetes/operator/kubectl-plugin.html)
+- [RabbitMQ Cluster Operator for Kubernetes](https://rabbitmq.com/kubernetes/operator/operator-overview.html)
+- [RabbitMQ Cluster Operator Plugin for kubectl](https://rabbitmq.com/kubernetes/operator/kubectl-plugin.html)
 
 ## Resources Manifest
 
@@ -21,6 +21,40 @@ kubectl apply \
 ```sh
 #
 cat << EOF | kubectl apply -f -
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rabbitmq-definitions
+data:
+  definitions.json: |-
+    {
+      "users": [
+        {
+          "name": "admin",
+          "password_hash": "x0ZYkUSXKmadb+IWuVh3mRd9HQRELGbqrS5HxuZ2uTd9DH9G",
+          "hashing_algorithm": "rabbit_password_hashing_sha256",
+          "tags": "administrator"
+        }
+      ],
+      "vhosts": [
+        {
+          "name": "/"
+        }
+      ],
+      "permissions": [
+        {
+          "user": "admin",
+          "vhost": "/",
+          "configure": ".*",
+          "write": ".*",
+          "read": ".*"
+        }
+      ]
+    }
+EOF
+
+#
+cat << EOF | kubectl apply -f -
 apiVersion: rabbitmq.com/v1beta1
 kind: RabbitmqCluster
 metadata:
@@ -34,24 +68,25 @@ spec:
     - rabbitmq_mqtt
     - rabbitmq_prometheus
     additionalConfig: |
-
+      load_definitions = /etc/rabbitmq/definitions.json
+  override:
+    statefulSet:
+      spec:
+        template:
+          spec:
+            containers:
+            - name: rabbitmq
+              volumeMounts:
+              - mountPath: /etc/rabbitmq/definitions.json
+                name: definitions
+                subPath: definitions.json
+            volumes:
+            - name: definitions
+              configMap:
+                defaultMode: 420
+                name: rabbitmq-definitions
 EOF
 ```
-
-<!--
-# loopback_users.guest = false
-mqtt.default_user = guest
-mqtt.default_pass = guest
-mqtt.listeners.tcp.default = 1883
-mqtt.vhost = /
-mqtt.exchange = amq.topic
-# 24 hours by default
-mqtt.subscription_ttl = 86400000
-mqtt.prefetch = 10
-vm_memory_high_watermark_paging_ratio = 0.99
-disk_free_limit.relative = 1.0
-cluster_partition_handling = ignore
--->
 
 ```sh
 #
@@ -73,6 +108,14 @@ EOF
 ```
 
 ```sh
+echo -e "[INFO]\thttp://rabbitmq.${INGRESS_HOST}.nip.io"
+```
+
+| Login | Password |
+| --- | --- |
+| `admin` | `admin` |
+
+<!-- ```sh
 #
 kubectl get secret rabbitmq-default-user \
   -o jsonpath='{.data.username}' | \
@@ -81,13 +124,42 @@ kubectl get secret rabbitmq-default-user \
 kubectl get secret rabbitmq-default-user \
   -o jsonpath='{.data.password}' | \
     base64 --decode; echo
-```
+``` -->
+
+### Monitoring
 
 ```sh
 #
-kubectl get all \
-  -l 'app.kubernetes.io/part-of=rabbitmq'
+kubectl port-forward svc/rabbitmq 15692:15692
 
+#
+echo -e '[INFO]\thttp://127.0.0.1:15692/metrics'
+```
+
+####
+
+```sh
+#
+cat << EOF | kubectl apply -f -
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: rabbitmq
+spec:
+  podMetricsEndpoints:
+  - interval: 15s
+    port: prometheus
+  selector:
+    matchLabels:
+      app.kubernetes.io/component: rabbitmq
+  namespaceSelector:
+    any: true
+EOF
+```
+
+### RabbitMQ Control
+
+```sh
 #
 kubectl exec rabbitmq-server-0 -- /bin/sh \
   -c 'rabbitmqctl cluster_status --formatter json' | \
@@ -97,6 +169,12 @@ kubectl exec rabbitmq-server-0 -- /bin/sh \
 ### Delete
 
 ```sh
+#
+kubectl delete rabbitmqclusters --all
+kubectl delete configmap rabbitmq-definitions
+kubectl delete ingress rabbitmq
+
+#
 kubectl delete \
   -f 'https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml'
 ```

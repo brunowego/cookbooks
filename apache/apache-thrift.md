@@ -17,3 +17,11 @@ https://github.com/yxfff/HBase-Thrift-Kerberos
 ```sh
 brew install thrift
 ```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension mrkou47.thrift-syntax-support
+```

@@ -1,50 +1,56 @@
 # Apache Avro
 
-## CLI
+<!--
+.avsc
+-->
 
-### Installation
+## Links
 
-#### Homebrew
+- [Code Repository](https://github.com/apache/avro)
+- [Main Website](https://avro.apache.org/)
+
+## Glossary
+
+- Variable-Length Quantity (VLQ) / ZigZag encoding
+
+## Solution
+
+### Features
+
+- Rich Data Structures
+- Compact Binary Data
+- Container File
+- RPC Compatibilities
+- Easy Integration
+- Support Schemas
+
+#### Rich Data Structures
+
+**Primitive**
+
+- null
+- boolean
+- int, long, float, double
+- bytes
+- string
+
+**Complex**
+
+- records
+- arrays
+- unions
+- enums
+- maps
+- fixed
+
+## Tips
+
+### EditorConfig
 
 ```sh
-brew install avro-tools
+cat << EOF >> ./.editorconfig
 
-# C
-brew install avro-c
-
-# C++
-brew install avro-cpp
-```
-
-#### Source
-
-##### Dependencies
-
-###### YUM
-
-```sh
-# C
-yum check-update
-sudo yum -y install curl cmake jansson-devel zlib-devel snappy-devel xz-devel asciidoc
-
-# C++
-yum check-update
-sudo yum -y install curl cmake boost-devel
-```
-
-##### Build & Install
-
-```sh
-curl https://archive.apache.org/dist/avro/avro-1.8.2/avro-src-1.8.2.tar.gz | \
-  tar -xzC /tmp
-```
-
-```sh
-# C
-( cd /tmp/avro-src-1.8.2/lang/c && mkdir -p build && cd build && cmake -G 'Unix Makefiles' -D CMAKE_BUILD_TYPE=Release .. && sudo make install ) && \
-  rm -fR /tmp/avro-src-1.8.2
-
-# C++
-( cd /tmp/avro-src-1.8.2/lang/c++ && mkdir -p build && cd build && cmake -G "Unix Makefiles" -D CMAKE_BUILD_TYPE=Release .. && sudo make install ) && \
-  rm -fR /tmp/avro-src-1.8.2
+[*.avsc]
+indent_size = 4
+EOF
 ```

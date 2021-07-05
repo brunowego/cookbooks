@@ -1,6 +1,8 @@
 # Microservices
 
 <!--
+https://app.pluralsight.com/paths/skills/microservices-architecture
+
 https://www.youtube.com/watch?v=j6ow-UemzBc
 
 https://www.youtube.com/watch?v=4ItOK4K7Kjg

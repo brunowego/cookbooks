@@ -57,6 +57,7 @@ https://github.com/swetavkamal/SchemaRegistryMSK/blob/master/src/main/java/perso
 ## Guides
 
 - [Username and password authentication with AWS Secrets Manager](https://docs.aws.amazon.com/msk/latest/developerguide/msk-password.html)
+- [Step 6: Produce and Consume Data](https://docs.aws.amazon.com/msk/latest/developerguide/produce-consume.html)
 
 ## CLI
 

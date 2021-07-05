@@ -7,7 +7,25 @@ https://github.com/weisurya/kafka-playground-python/blob/master/docker-compose.y
 
 ## Links
 
+- [Code Repository](https://github.com/confluentinc/schema-registry)
 - [Schema Evolution and Compatibility](https://docs.confluent.io/platform/current/schema-registry/avro.html)
+
+## Glossary
+
+- Interface Definition Language (IDL)
+
+## Solution
+
+### Serialization Formats
+
+| Name | Binary | Human-readable | Schema/IDL | Description |
+| --- | --- | --- | --- | --- |
+| JSON | No | Yes | JSON Schema | Easy, no learning curve, extremely common |
+| XML | No | Yes | XML Schema | - |
+| YAML | No | Yes | No | - |
+| AVRO | Yes | No | JSON Schema | First class support using Schema Registry |
+| Protobuf | Yes | No | IDL | Highly efficient (gRPC) |
+| Thrift | Yes | No | IDL | Twitter Finagle, Apache Cassandra |
 
 ## Docker
 
@@ -84,42 +102,42 @@ curl \
   -X POST \
   -H 'Content-Type: application/vnd.schemaregistry.v1+json' \
   -d '{"schema": "{\"type\": \"string\"}"}' \
-  http://127.0.0.1:8081/subjects/Kafka-value/versions
+  'http://127.0.0.1:8081/subjects/Kafka-value/versions'
 
 # List all subjects
 curl \
   -X GET \
-  http://127.0.0.1:8081/subjects
+  'http://127.0.0.1:8081/subjects'
 
 # List all schema versions registered under the subject "Kafka-value"
 curl \
   -X GET \
-  http://127.0.0.1:8081/subjects/Kafka-value/versions
+  'http://127.0.0.1:8081/subjects/Kafka-value/versions'
 
 # Fetch a schema by globally unique id 1
 curl \
   -X GET \
-  http://127.0.0.1:8081/schemas/ids/1
+  'http://127.0.0.1:8081/schemas/ids/1'
 
 # Fetch version 1 of the schema registered under subject "Kafka-value"
 curl \
   -X GET \
-  http://127.0.0.1:8081/subjects/Kafka-value/versions/1
+  'http://127.0.0.1:8081/subjects/Kafka-value/versions/1'
 
 # Fetch the most recently registered schema under subject "Kafka-value"
 curl \
   -X GET \
-  http://127.0.0.1:8081/subjects/Kafka-value/versions/latest
+  'http://127.0.0.1:8081/subjects/Kafka-value/versions/latest'
 
 # Delete version 3 of the schema registered under subject "Kafka-value"
 curl \
   -X DELETE \
-  http://127.0.0.1:8081/subjects/Kafka-value/versions/1
+  'http://127.0.0.1:8081/subjects/Kafka-value/versions/1'
 
 # Delete all versions of the schema registered under subject "Kafka-value"
 curl \
   -X DELETE \
-  http://127.0.0.1:8081/subjects/Kafka-value
+  'http://127.0.0.1:8081/subjects/Kafka-value'
 ```
 
 ```sh
@@ -128,42 +146,42 @@ curl \
   -X POST \
   -H 'Content-Type: application/vnd.schemaregistry.v1+json' \
   -d '{"schema": "{\"type\": \"string\"}"}' \
-  http://127.0.0.1:8081/subjects/Kafka-key/versions
+  'http://127.0.0.1:8081/subjects/Kafka-key/versions'
 
 # Check whether a schema has been registered under subject "Kafka-key"
 curl \
   -X POST \
   -H 'Content-Type: application/vnd.schemaregistry.v1+json' \
   -d '{"schema": "{\"type\": \"string\"}"}' \
-  http://127.0.0.1:8081/subjects/Kafka-key
+  'http://127.0.0.1:8081/subjects/Kafka-key'
 
 # Test compatibility of a schema with the latest schema under subject "Kafka-key"
 curl \
   -X POST \
   -H 'Content-Type: application/vnd.schemaregistry.v1+json' \
   -d '{"schema": "{\"type\": \"string\"}"}' \
-  http://127.0.0.1:8081/compatibility/subjects/Kafka-key/versions/latest
+  'http://127.0.0.1:8081/compatibility/subjects/Kafka-key/versions/latest'
 ```
 
 ```sh
 # Get top level config
 curl \
   -X GET \
-  http://127.0.0.1:8081/config
+  'http://127.0.0.1:8081/config'
 
 # Update compatibility requirements globally
 curl \
   -X PUT \
   -H 'Content-Type: application/vnd.schemaregistry.v1+json' \
   -d '{"compatibility": "NONE"}' \
-  http://127.0.0.1:8081/config
+  'http://127.0.0.1:8081/config'
 
 # Update compatibility requirements under the subject "Kafka-key"
 curl \
   -X PUT \
   -H 'Content-Type: application/vnd.schemaregistry.v1+json' \
   -d '{"compatibility": "BACKWARD"}' \
-  http://127.0.0.1:8081/config/Kafka-key
+  'http://127.0.0.1:8081/config/Kafka-key'
 ```
 
 <!--
@@ -177,7 +195,8 @@ cat << EOF > /tmp/InputLog.avsc
         \"namespace\": \"com.example.logParser.avro\",
         \"name\": \"InputLog\",
         \"type\": \"record\",
-        \"fields\": [{
+        \"fields\": [
+            {
                 \"name\": \"time\",
                 \"type\": \"long\"
             },
@@ -197,5 +216,5 @@ EOF
 curl \
   -H 'Content-Type: application/vnd.schemaregistry.v1+json' \
   -d @/tmp/InputLog.avsc \
-  http://127.0.0.1:8081/subjects/input-log-avro/versions
+  'http://127.0.0.1:8081/subjects/input-log-avro/versions'
 ```
