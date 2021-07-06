@@ -105,24 +105,36 @@ TODO -->
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/sentry#configuration)
+- [Configuration](https://github.com/sentry-kubernetes/charts/tree/develop/sentry#configuration)
+
+### Repository
+
+```sh
+helm repo add sentry https://sentry-kubernetes.github.io/charts
+helm repo update
+```
 
 ### Install
 
 ```sh
+#
+export INGRESS_HOST=''
+
+#
 kubectl create namespace sentry
 ```
 
 ```sh
-helm install sentry stable/sentry \
+helm install sentry sentry/sentry \
   --namespace sentry \
+  --version 11.4.1 \
   --set user.email='admin@example.com' \
-  --set service.type='ClusterIP' \
+  --set user.password='admin' \
   --set ingress.enabled=true \
   --set ingress.hostname="sentry.${INGRESS_HOST}.nip.io"
 ```
 
-### SSL
+<!-- ### SSL
 
 #### Dependencies
 
@@ -154,7 +166,7 @@ EOF
 helm upgrade sentry stable/sentry -f <(yq d <(helm get values sentry) ingress.tls)
 
 kubectl delete secret example.tls-secret -n sentry
-```
+``` -->
 
 ### Status
 
@@ -170,34 +182,22 @@ kubectl logs -l 'app=sentry,role=worker' -n sentry -f
 kubectl logs -l 'app=sentry,role=cron' -n sentry -f
 ```
 
-### DNS
+### Ingress
 
 ```sh
-dig @10.96.0.10 sentry.sentry.svc.cluster.local +short
-nslookup sentry.sentry.svc.cluster.local 10.96.0.10
-```
-
-#### ExternalDNS
-
-```sh
-dig @10.96.0.10 "sentry.${INGRESS_HOST}.nip.io" +short
-nslookup "sentry.${INGRESS_HOST}.nip.io" 10.96.0.10
-```
-
-### Secret
-
-```sh
-kubectl get secret sentry \
-  -o jsonpath='{.data.user-password}' \
-  -n sentry | \
-    base64 --decode; echo
+#
+echo -e "[INFO]\thttp://sentry.${INGRESS_HOST}.nip.io"
 ```
 
 ### Delete
 
 ```sh
-helm uninstall sentry -n sentry
-kubectl delete namespace sentry --grace-period=0 --force
+helm uninstall sentry \
+  -n sentry
+
+kubectl delete namespace sentry \
+  --grace-period=0 \
+  --force
 ```
 
 ## Docker

@@ -6,6 +6,10 @@
 - [RabbitMQ Cluster Operator for Kubernetes](https://rabbitmq.com/kubernetes/operator/operator-overview.html)
 - [RabbitMQ Cluster Operator Plugin for kubectl](https://rabbitmq.com/kubernetes/operator/kubectl-plugin.html)
 
+## Guides
+
+- [Monitoring RabbitMQ in Kubernetes](https://rabbitmq.com/kubernetes/operator/operator-monitoring.html)
+
 ## Resources Manifest
 
 ### Install
@@ -136,25 +140,16 @@ kubectl port-forward svc/rabbitmq 15692:15692
 echo -e '[INFO]\thttp://127.0.0.1:15692/metrics'
 ```
 
-####
-
 ```sh
 #
-cat << EOF | kubectl apply -f -
-apiVersion: monitoring.coreos.com/v1
-kind: PodMonitor
-metadata:
-  name: rabbitmq
-spec:
-  podMetricsEndpoints:
-  - interval: 15s
-    port: prometheus
-  selector:
-    matchLabels:
-      app.kubernetes.io/component: rabbitmq
-  namespaceSelector:
-    any: true
-EOF
+kubectl apply \
+  -n monitoring \
+  -f 'https://raw.githubusercontent.com/rabbitmq/cluster-operator/main/observability/prometheus/monitors/rabbitmq-servicemonitor.yml'
+
+#
+kubectl apply \
+  -n monitoring \
+  -f 'https://raw.githubusercontent.com/rabbitmq/cluster-operator/main/observability/prometheus/monitors/rabbitmq-cluster-operator-podmonitor.yml'
 ```
 
 ### RabbitMQ Control

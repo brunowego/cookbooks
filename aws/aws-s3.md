@@ -67,4 +67,7 @@ aws s3 cp \
   --recursive \
   ./favicon.png \
   s3://example.com/
+
+#
+aws s3 rm s3://example.com/favicon.png
 ```

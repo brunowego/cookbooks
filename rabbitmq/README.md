@@ -3,6 +3,9 @@
 **Keywords:** Message-Based System
 
 <!--
+https://www.youtube.com/watch?v=NWISW6AwpOE
+
+
 https://linkedin.com/learning/learning-rabbitmq/connect-your-services-with-asynchronous-messaging-2
 
 https://app.pluralsight.com/library/courses/rabbitmq-by-example/table-of-contents

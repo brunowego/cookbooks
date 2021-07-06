@@ -1,5 +1,7 @@
 # Presentify
 
+**Keywords:** Screen Annotations
+
 ## Links
 
 - [Main Website](https://presentify.compzets.com/)

@@ -7,6 +7,10 @@ https://app.pluralsight.com/library/courses/kubernetes-packaging-applications-he
 https://app.pluralsight.com/library/courses/kubernetes-package-administration-helm/table-of-contents
 
 https://medium.com/@saraswatpuneet/blue-green-deployments-using-helm-charts-93ec479c0282
+
+kubectl get helmrelease/<name> -n <namespace> -o yaml | \
+  yq .spec.values -y | \
+    helm upgrade -i <release name> -f - <chart>
 -->
 
 ## Alternatives
@@ -45,6 +49,9 @@ helm -h
 ```sh
 # Create
 helm create [name]
+
+# List
+helm list -A
 
 # Lint
 helm lint [name]
@@ -91,6 +98,13 @@ pkill helm
 ```
 
 ### Tips
+
+#### Get Values of Installed Chart
+
+```sh
+helm get values '[name]' \
+  --namespace '[namespace]'
+```
 
 <!-- ####
 
@@ -314,6 +328,22 @@ kubectl logs -l 'app=helm,name=tiller' -n kube-system -f
 
 ### Issues
 
+#### Upgrade Operation in Progress
+
+```log
+Error: UPGRADE FAILED: another operation (install/upgrade/rollback) is in progress
+```
+
+```sh
+#
+helm history [name] \
+  -n [namespace]
+
+#
+helm rollback [name] 1 \
+  -n [namespace]
+```
+
 #### Local Chart Repository
 
 ```log
@@ -324,7 +354,7 @@ Hang tight while we grab the latest from your chart repositories...
 
 Run Helm serve.
 
-####
+#### Self-signed Certificate
 
 ```log
 Error: Looks like "https://chartmuseum.example.com" is not a valid chart repository or cannot be reached: Get https://chartmuseum.example.com/index.yaml: x509: certificate signed by unknown authority
