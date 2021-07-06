@@ -72,6 +72,16 @@ kubectl get secret prometheus-grafana \
 
 ```sh
 #
+kubectl port-forward svc/prometheus-stack-kube-prom-prometheus \
+  -n monitoring \
+  9090:9090
+
+#
+echo -e '[INFO]\thttp://127.0.0.1:9090'
+```
+
+```sh
+#
 echo -e "[INFO]\thttp://prometheus.${INGRESS_HOST}.nip.io"
 
 #

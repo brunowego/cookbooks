@@ -47,7 +47,7 @@ sudo curl \
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
-# YQ
+# YQ 3
 export PATH="/usr/local/opt/yq@3/bin:$PATH"
 ```
 

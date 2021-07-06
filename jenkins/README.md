@@ -23,28 +23,38 @@ https://github.com/kiegroup/kogito-pipelines
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/jenkins#configuration)
+- [Configuration](https://github.com/jenkinsci/helm-charts/tree/main/charts/jenkins#configuration)
 
 ### Dependencies
 
 - [NGINX Ingress](/nginx-ingress.md)
 - [Kubernetes TLS Secret](/k8s-tls-secret.md)
 
+### Repository
+
+```sh
+helm repo add jenkins https://charts.jenkins.io
+helm repo update
+```
+
 ### Install
 
 ```sh
+#
+export INGRESS_HOST=''
+
+#
 kubectl create namespace jenkins
 ```
 
 ```sh
-helm install jenkins stable/jenkins \
+helm install jenkins jenkins/jenkins \
   --namespace jenkins \
-  --set master.serviceType=ClusterIP \
-  --set master.ingress.enabled=true \
-  --set master.ingress.hostName="jenkins.${INGRESS_HOST}.nip.io"
+  --set controller.ingress.enabled=true \
+  --set controller.ingress.hostName="jenkins.${INGRESS_HOST}.nip.io"
 ```
 
-### SSL
+<!-- ### SSL
 
 ### Dependencies
 
@@ -60,7 +70,7 @@ kubectl create secret tls example.tls-secret \
 ```
 
 ```sh
-helm upgrade jenkins stable/jenkins -f <(yq m <(cat << EOF
+helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq m <(cat << EOF
 master:
   ingress:
     tls:
@@ -68,45 +78,33 @@ master:
         hosts:
           - jenkins.${INGRESS_HOST}.nip.io
 EOF
-) <(helm get values jenkins))
+) <(helm get values jenkins -n jenkins))
 ```
 
 #### Remove
 
 ```sh
-helm upgrade jenkins stable/jenkins -f <(yq d <(helm get values jenkins) master.ingress.tls)
+helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq d <(helm get values jenkins -n jenkins) controller.ingress.tls)
 
 kubectl delete secret example.tls-secret -n jenkins
-```
+``` -->
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/jenkins -n jenkins
+kubectl rollout status statefulset/jenkins -n jenkins
 ```
 
 ### Logs
 
 ```sh
-kubectl logs $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins) copy-default-config -n jenkins -f
-```
+#
+kubectl logs $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins) init \
+  -n jenkins \
+  -f
 
-```sh
-kubectl logs -l 'app.kubernetes.io/name=jenkins' -n jenkins -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 jenkins.jenkins.svc.cluster.local +short
-nslookup jenkins.jenkins.svc.cluster.local 10.96.0.10
-```
-
-#### ExternalDNS
-
-```sh
-dig @10.96.0.10 jenkins.${INGRESS_HOST}.nip.io +short
-nslookup jenkins.${INGRESS_HOST}.nip.io 10.96.0.10
+#
+kubectl logs -l 'app.kubernetes.io/name=jenkins' -n jenkins -c init -f
 ```
 
 ### Secrets
@@ -122,44 +120,46 @@ kubectl get secret jenkins \
 
 ```sh
 # Default
-helm upgrade jenkins stable/jenkins -f <(yq m <(helm get values jenkins) <(yq p <(yq r <(helm get --all jenkins values) master.installPlugins) master.installPlugins))
+helm upgrade jenkins jenkins/jenkins \
+  -n jenkins \
+  -f <(yq m <(helm get values jenkins -n jenkins) <(yq p <(yq r <(helm get --all jenkins values -n jenkins) controller.installPlugins) controller.installPlugins))
 ```
 
 ```sh
 # GitLab
-helm upgrade jenkins stable/jenkins -f <(yq w <(helm get values jenkins) 'master.installPlugins[+]' gitlab:1.5.12)
+helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq w <(helm get values jenkins -n jenkins) 'controller.installPlugins[+]' gitlab:1.5.12)
 
 # NXRM OSS
-helm upgrade jenkins stable/jenkins -f <(yq w <(helm get values jenkins) 'master.installPlugins[+]' nexus-jenkins:3.7.20190823-091836.9f85050)
+helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq w <(helm get values jenkins -n jenkins) 'controller.installPlugins[+]' nexus-jenkins:3.7.20190823-091836.9f85050)
 
 # Kubernetes CD
-helm upgrade jenkins stable/jenkins -f <(yq w <(helm get values jenkins) 'master.installPlugins[+]' kubernetes-cd:2.1.2)
+helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq w <(helm get values jenkins -n jenkins) 'controller.installPlugins[+]' kubernetes-cd:2.1.2)
 
 # Blue Ocean
-helm upgrade jenkins stable/jenkins -f <(yq w <(helm get values jenkins) 'master.installPlugins[+]' blueocean:1.18.3)
+helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq w <(helm get values jenkins -n jenkins) 'controller.installPlugins[+]' blueocean:1.18.3)
 ```
 
 ### Custom Agent
 
 ```sh
-helm upgrade jenkins stable/jenkins -f <(yq m <(cat << EOF
+helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq m <(cat << EOF
 agent:
   image: docker.io/brunowego/jnlp-slave-s2i
   tag: 3.29-1
   volumes:
-    - type: HostPath
-      hostPath: /var/run/docker.sock
-      mountPath: /var/run/docker.sock
+  - type: HostPath
+    hostPath: /var/run/docker.sock
+    mountPath: /var/run/docker.sock
   envVars:
-    - name: DOCKER_REGISTRY_URL
-      value: https://registry.${INGRESS_HOST}.nip.io
-    - name: DOCKER_REGISTRY_CREDENTIAL
-      value: nxrm-oss-credential
+  - name: DOCKER_REGISTRY_URL
+    value: https://registry.${INGRESS_HOST}.nip.io
+  - name: DOCKER_REGISTRY_CREDENTIAL
+    value: nxrm-oss-credential
 EOF
-) <(helm get values jenkins))
+) <(helm get values jenkins -n jenkins))
 ```
 
-### DNS
+<!-- ### DNS
 
 ```sh
 kubectl exec -it \
@@ -168,12 +168,14 @@ kubectl exec -it \
   -- cat /etc/resolv.conf
 ```
 
-- [Kubernetes DNS](/k8s-dns.md)
+- [Kubernetes DNS](/k8s-dns.md) -->
 
 ### Proxy
 
 ```sh
-helm upgrade jenkins stable/jenkins -f <(yq m <(cat << EOF
+helm upgrade jenkins jenkins/jenkins \
+  -n jenkins \
+  -f <(yq m <(cat << EOF
 master:
   initContainerEnv:
     - name: http_proxy
@@ -189,7 +191,7 @@ master:
       value: "$http_proxy"
   javaOpts: "$JAVA_OPTS"
 EOF
-) <(helm get values jenkins))
+) <(helm get values jenkins -n jenkins))
 ```
 
 ### Shell
@@ -197,6 +199,7 @@ EOF
 ```sh
 kubectl exec -it \
   $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins) \
+  -c jenkins \
   -n jenkins \
   -- /bin/bash
 ```
