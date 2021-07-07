@@ -181,20 +181,6 @@ kubectl patch ingress/sentry \
   -p '{"metadata":{"annotations":{"nginx.ingress.kubernetes.io/proxy-body-size":"32m"}}}'
 ```
 
-<!-- ####
-
-```log
-error: API request failed
-  caused by: sentry reported an error: request failure (http status: 500)
-  Object({"detail": String("Internal Error"), "errorId": String("6b5f21b4c12f461089957e1875b6ccb0")})
-```
-
-```sh
-kubectl patch ingress/sentry \
-  -n sentry \
-  -p '{"metadata":{"annotations":{"nginx.ingress.kubernetes.io/proxy-body-size":"64m"}}}'
-``` -->
-
 ## Docker
 
 ### Running

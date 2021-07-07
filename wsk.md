@@ -13,7 +13,8 @@ brew install wsk
 #### Linux Binary
 
 ```sh
-curl -L 'https://github.com/apache/openwhisk-cli/releases/download/latest/OpenWhisk_CLI-latest-linux-amd64.tgz' | sudo tar -xzC /usr/local/bin wsk
+curl -L 'https://github.com/apache/openwhisk-cli/releases/download/latest/OpenWhisk_CLI-latest-linux-amd64.tgz' | \
+  sudo tar -xzC /usr/local/bin wsk
 ```
 
 ### Commands

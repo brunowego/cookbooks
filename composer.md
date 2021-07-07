@@ -282,3 +282,15 @@ composer config -g cafile '/usr/local/etc/openssl/cert.pem'
 
 composer config secure-http false
 ``` -->
+
+## Docker
+
+### Running
+
+```sh
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h composer \
+  --name composer \
+  docker.io/library/composer:2.1
+```

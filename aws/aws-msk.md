@@ -59,6 +59,10 @@ https://github.com/swetavkamal/SchemaRegistryMSK/blob/master/src/main/java/perso
 - [Username and password authentication with AWS Secrets Manager](https://docs.aws.amazon.com/msk/latest/developerguide/msk-password.html)
 - [Step 6: Produce and Consume Data](https://docs.aws.amazon.com/msk/latest/developerguide/produce-consume.html)
 
+## Content
+
+- [How Goldman Sachs builds cross-account connectivity to their Amazon MSK clusters with AWS PrivateLink](https://aws.amazon.com/blogs/big-data/how-goldman-sachs-builds-cross-account-connectivity-to-their-amazon-msk-clusters-with-aws-privatelink/)
+
 ## CLI
 
 ### Commands

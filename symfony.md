@@ -6,9 +6,13 @@ https://linkedin.com/learning/learning-symfony-4/build-web-apps-with-symfony
 
 ## Links
 
+- [Code Repository](https://github.com/symfony/symfony)
+- [Main Website](https://symfony.com/)
 - [Symfony Releases](https://symfony.com/releases/)
 
-## Bundles
+## Solution
+
+### Bundles
 
 - [Flagception](https://github.com/bestit/flagception-bundle)
 
@@ -23,7 +27,8 @@ https://linkedin.com/learning/learning-symfony-4/build-web-apps-with-symfony
 #### Unix-like
 
 ```sh
-curl -sS https://get.symfony.com/cli/installer | /bin/bash
+curl -sS 'https://get.symfony.com/cli/installer' | \
+  /bin/bash
 ```
 
 ### Environment

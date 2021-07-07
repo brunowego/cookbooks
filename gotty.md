@@ -20,7 +20,7 @@ go get github.com/sorenisanerd/gotty
 
 ```sh
 curl \
-  -L https://github.com/sorenisanerd/gotty/releases/download/v1.2.0/gotty_v1.2.0_linux_amd64.tar.gz | \
+  -L 'https://github.com/sorenisanerd/gotty/releases/download/v1.2.0/gotty_v1.2.0_linux_amd64.tar.gz' | \
     sudo tar -xzC /usr/local/bin
 ```
 

@@ -275,32 +275,13 @@ helm repo update
 kubectl create namespace keycloak
 ```
 
-<!-- ```sh
-#
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n keycloak
-
-helm install keycloak codecentric/keycloak \
-  --namespace keycloak \
-  --version 11.0.1 \
-  --set keycloak.username=admin \
-  --set-string keycloak.ingress.enabled=true \
-  --set keycloak.ingress.hosts={keycloak.example.com} \
-  --set 'keycloak.ingress.tls[0].secretName=example.tls-secret' \
-  --set 'keycloak.ingress.tls[0].hosts={keycloak.example.com}' \
-  --set keycloak.persistence.deployPostgres=true \
-  --set keycloak.persistence.dbVendor=postgres
-``` -->
-
 ```sh
 #
 helm install keycloak codecentric/keycloak \
   --namespace keycloak \
   --version 11.0.1 \
   --set ingress.enabled=true \
-  --set 'ingress.rules[0].host=keycloak.cluster.local' \
+  --set "ingress.rules[0].host=keycloak.${INGRESS_HOST}.nip.io" \
   --set 'ingress.rules[0].paths={/}'
 ```
 

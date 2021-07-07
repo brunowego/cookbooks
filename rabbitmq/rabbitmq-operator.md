@@ -142,14 +142,57 @@ echo -e '[INFO]\thttp://127.0.0.1:15692/metrics'
 
 ```sh
 #
-kubectl apply \
-  -n monitoring \
-  -f 'https://raw.githubusercontent.com/rabbitmq/cluster-operator/main/observability/prometheus/monitors/rabbitmq-servicemonitor.yml'
+cat << EOF | kubectl apply -n monitoring -f -
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: rabbitmq
+spec:
+  endpoints:
+  - port: prometheus
+    interval: 15s
+  selector:
+    matchLabels:
+      app.kubernetes.io/component: rabbitmq
+  namespaceSelector:
+    matchNames:
+    - default
+EOF
 
 #
-kubectl apply \
-  -n monitoring \
-  -f 'https://raw.githubusercontent.com/rabbitmq/cluster-operator/main/observability/prometheus/monitors/rabbitmq-cluster-operator-podmonitor.yml'
+# cat << EOF | kubectl apply -n monitoring -f -
+# apiVersion: rbac.authorization.k8s.io/v1beta1
+# kind: ClusterRole
+# metadata:
+#   name: prometheus
+# rules:
+# - apiGroups: [""]
+#   resources:
+#   - nodes
+#   - services
+#   - endpoints
+#   - pods
+#   verbs: ["get", "list", "watch"]
+# - apiGroups: [""]
+#   resources:
+#   - configmaps
+#   verbs: ["get"]
+# - nonResourceURLs: ["/metrics"]
+#   verbs: ["get"]
+# ---
+# apiVersion: rbac.authorization.k8s.io/v1beta1
+# kind: ClusterRoleBinding
+# metadata:
+#   name: prometheus
+# roleRef:
+#   apiGroup: rbac.authorization.k8s.io
+#   kind: ClusterRole
+#   name: prometheus
+# subjects:
+# - kind: ServiceAccount
+#   name: prometheus-k8s
+#   namespace: monitoring
+# EOF
 ```
 
 ### RabbitMQ Control
