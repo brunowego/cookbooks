@@ -4,6 +4,8 @@
 On-demand instances
 Reserved instances
 Spot instances
+
+https://www.youtube.com/watch?v=F8jXE-_hdfg
 -->
 
 ## Guides

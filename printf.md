@@ -1,5 +1,5 @@
 # printf format string
 
-##
+## Links
 
-- [](https://en.wikipedia.org/wiki/Printf_format_string)
+- [Wikipedia](https://en.wikipedia.org/wiki/Printf_format_string)

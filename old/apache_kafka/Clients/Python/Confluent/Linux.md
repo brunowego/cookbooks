@@ -3,8 +3,13 @@
 ## Installation
 
 ```sh
-git clone --branch v1.0.0rc5 --single-branch --depth 1 https://github.com/confluentinc/confluent-kafka-python.git
-( cd confluent-kafka-python && C_INCLUDE_PATH=/usr/local/librdkafka/include LIBRARY_PATH=/usr/local/librdkafka/lib python setup.py build )
+git clone \
+  --branch v1.0.0rc5 \
+  --single-branch \
+  --depth 1 \
+  'https://github.com/confluentinc/confluent-kafka-python.git'
+
+( cd confluent-kafka-python && C_INCLUDE_PATH=/usr/local/librdkafka/include LIBRARY_PATH=/usr/local/librdkafka/lib python3 setup.py build )
 ```
 
 ```sh

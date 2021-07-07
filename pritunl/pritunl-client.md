@@ -1,4 +1,4 @@
-# Pritunl client
+# Pritunl Client
 
 <!--
 https://www.sparklabs.com/viscosity/
