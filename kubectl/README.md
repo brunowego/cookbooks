@@ -80,6 +80,25 @@ kubectl
     -f
 ```
 
+#### Top
+
+```sh
+#
+kubectl top node
+
+#
+kubectl top pod '[pod-name]' \
+  -n '[namespace]'
+```
+
+#### Config Map
+
+```sh
+kubectl get cm \
+  -A \
+  --show-labels
+```
+
 #### Secrets
 
 ```sh

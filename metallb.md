@@ -6,6 +6,42 @@
 - [Bare-metal considerations](https://github.com/kubernetes/ingress-nginx/blob/master/docs/deploy/baremetal.md)
 - [Configuration](https://github.com/helm/charts/tree/master/stable/metallb#configuration)
 
+## Resource Manifest
+
+### Install
+
+```sh
+#
+kubectl apply \
+  -f 'https://raw.githubusercontent.com/metallb/metallb/v0.9.6/manifests/namespace.yaml'
+
+#
+kubectl create secret generic \
+  -n metallb-system \
+  memberlist \
+  --from-literal=secretkey="$(openssl rand -base64 128)"
+
+#
+kubectl apply \
+  -f 'https://raw.githubusercontent.com/metallb/metallb/v0.9.6/manifests/metallb.yaml'
+
+#
+cat << EOF | kubectl apply -f
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config
+  namespace: metallb-system
+data:
+  config: |
+    address-pools:
+    - name: default
+      protocol: layer2
+      addresses:
+      - 172.18.0.155-172.18.0.200
+EOF
+```
+
 ## Helm
 
 ### Install

@@ -90,8 +90,16 @@ echo -e '[INFO]\thttp://127.0.0.1:8000'
 ### Remove
 
 ```sh
-docker rm -f zookeeper kafka schema-registry schema-registry-ui
-docker volume rm zookeeper-data zookeeper-log kafka-data
+docker rm -f \
+  zookeeper \
+  kafka \
+  schema-registry \
+  schema-registry-ui
+
+docker volume rm \
+  zookeeper-data \
+  zookeeper-log \
+  kafka-data
 ```
 
 ## Requests

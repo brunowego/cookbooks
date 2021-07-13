@@ -1,6 +1,21 @@
 # Kubernetes Ingress NGINX
 
-## Resources Manifest
+<!--
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+https://web.dev/same-site-same-origin/
+-->
+
+## Links
+
+- [Annotations](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/)
+
+## Glossary
+
+- Same-Origin Policy (SOP)
+- Cross-Origin Resource Sharing (CORS)
+- Sticky and NON-Sticky Sessions
+
+## Resource Manifest
 
 ### Install
 
@@ -23,6 +38,55 @@ kubectl wait \
 kubectl delete \
   -f 'https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml'
 ```
+
+### Tips
+
+#### Enable CORS
+
+```sh
+#
+kubectl annotate ingress \
+  [ingress-name] \
+  nginx.ingress.kubernetes.io/enable-cors='true' \
+  -n [namespace]
+
+# Testing
+curl \
+  -I \
+  -X OPTIONS \
+  -H 'Access-Control-Request-Method: GET' \
+  -H 'Origin: http://localhost' \
+  http://example.com
+```
+
+<!-- ```sh
+#
+kubectl annotate ingress \
+  [ingress-name] \
+  'nginx.ingress.kubernetes.io/cors-allow-methods="PUT, GET, POST, OPTIONS"' \
+  -n [namespace]
+
+#
+kubectl annotate ingress \
+  [ingress-name] \
+  'nginx.ingress.kubernetes.io/cors-allow-origin="https://admin.example.com"' \
+  -n [namespace]
+
+#
+kubectl annotate ingress \
+  [ingress-name] \
+  'nginx.ingress.kubernetes.io/cors-allow-credentials="true"' \
+  -n [namespace]
+``` -->
+
+<!-- #### Sticky Session
+
+```sh
+nginx.ingress.kubernetes.io/affinity: "cookie"
+nginx.ingress.kubernetes.io/affinity-mode: "persistent"
+nginx.ingress.kubernetes.io/session-cookie-hash: "sha1"
+nginx.ingress.kubernetes.io/session-cookie-name: "route"
+``` -->
 
 ### Issues
 

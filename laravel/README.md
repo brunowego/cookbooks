@@ -154,9 +154,7 @@ RUN apk add -q --no-cache -t .build-deps \
 
 COPY ./requirements.txt ./
 
-RUN pip3 install \
-      -r ./requirements.txt \
-      --no-cache-dir
+RUN pip3 install --no-cache-dir -r ./requirements.txt
 
 RUN ./manage.py compilemessages
 

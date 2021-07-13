@@ -6,11 +6,7 @@
 - [RabbitMQ Cluster Operator for Kubernetes](https://rabbitmq.com/kubernetes/operator/operator-overview.html)
 - [RabbitMQ Cluster Operator Plugin for kubectl](https://rabbitmq.com/kubernetes/operator/kubectl-plugin.html)
 
-## Guides
-
-- [Monitoring RabbitMQ in Kubernetes](https://rabbitmq.com/kubernetes/operator/operator-monitoring.html)
-
-## Resources Manifest
+## Resource Manifest
 
 ### Install
 
@@ -24,7 +20,16 @@ kubectl apply \
 
 ```sh
 #
-cat << EOF | kubectl apply -f -
+export INGRESS_HOST='127.0.0.1'
+export KUBECTL_NAMESPACE='my-app'
+
+#
+kubectl create namespace "$KUBECTL_NAMESPACE"
+
+#
+cat << EOF | kubectl apply \
+  -n "$KUBECTL_NAMESPACE" \
+  -f -
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -58,7 +63,9 @@ data:
 EOF
 
 #
-cat << EOF | kubectl apply -f -
+cat << EOF | kubectl apply \
+  -n "$KUBECTL_NAMESPACE" \
+  -f -
 apiVersion: rabbitmq.com/v1beta1
 kind: RabbitmqCluster
 metadata:
@@ -94,7 +101,9 @@ EOF
 
 ```sh
 #
-cat << EOF | kubectl apply -f -
+cat << EOF | kubectl apply \
+  -n "$KUBECTL_NAMESPACE" \
+  -f -
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
@@ -130,69 +139,26 @@ kubectl get secret rabbitmq-default-user \
     base64 --decode; echo
 ``` -->
 
-### Monitoring
+### Metrics Exporter
 
 ```sh
 #
-kubectl port-forward svc/rabbitmq 15692:15692
+kubectl port-forward \
+  svc/rabbitmq \
+  -n "$KUBECTL_NAMESPACE" \
+  15692:15692
 
 #
 echo -e '[INFO]\thttp://127.0.0.1:15692/metrics'
-```
-
-```sh
-#
-cat << EOF | kubectl apply -n monitoring -f -
-apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
-metadata:
-  name: rabbitmq
-spec:
-  endpoints:
-  - port: prometheus
-    interval: 15s
-  selector:
-    matchLabels:
-      app.kubernetes.io/component: rabbitmq
-  namespaceSelector:
-    matchNames:
-    - default
-EOF
 
 #
-# cat << EOF | kubectl apply -n monitoring -f -
-# apiVersion: rbac.authorization.k8s.io/v1beta1
-# kind: ClusterRole
-# metadata:
-#   name: prometheus
-# rules:
-# - apiGroups: [""]
-#   resources:
-#   - nodes
-#   - services
-#   - endpoints
-#   - pods
-#   verbs: ["get", "list", "watch"]
-# - apiGroups: [""]
-#   resources:
-#   - configmaps
-#   verbs: ["get"]
-# - nonResourceURLs: ["/metrics"]
-#   verbs: ["get"]
-# ---
-# apiVersion: rbac.authorization.k8s.io/v1beta1
-# kind: ClusterRoleBinding
-# metadata:
-#   name: prometheus
-# roleRef:
-#   apiGroup: rbac.authorization.k8s.io
-#   kind: ClusterRole
-#   name: prometheus
-# subjects:
-# - kind: ServiceAccount
-#   name: prometheus-k8s
-#   namespace: monitoring
-# EOF
+kubectl port-forward \
+  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/component=rabbitmq-operator -n rabbitmq-system) \
+  -n rabbitmq-system \
+  9782:9782
+
+#
+echo -e '[INFO]\thttp://127.0.0.1:9782/metrics'
 ```
 
 ### RabbitMQ Control

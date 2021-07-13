@@ -15,7 +15,8 @@ FROM docker.io/jupyter/scipy-notebook:1e374527e15a
 
 USER root
 
-RUN pip3 install -q --no-cache-dir bookstore===2.2.1
+RUN pip3 install -q --no-cache-dir \
+      bookstore===2.2.1
 
 USER $NB_USER
 

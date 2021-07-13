@@ -62,5 +62,8 @@ infracost breakdown \
 #
 infracost diff \
   -p ./ \
-  --terraform-plan-flags '-var-file=./vars/terraform.tfvars'
+  --show-skipped \
+  --sync-usage-file \
+  --terraform-plan-flags '-var-file=./vars/terraform.tfvars' \
+  --usage-file ./infracost-usage.yml
 ```

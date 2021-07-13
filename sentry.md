@@ -118,7 +118,7 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST=''
+export INGRESS_HOST='127.0.0.1'
 
 #
 kubectl create namespace sentry

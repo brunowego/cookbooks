@@ -1,5 +1,9 @@
 # MinIO
 
+## Links
+
+- [Main Website](https://min.io/)
+
 ## Alternatives
 
 - [Apache Ozone](https://github.com/apache/ozone)
@@ -12,36 +16,53 @@
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/minio#configuration)
+- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/minio#parameters)
 
 ### Dependencies
 
 - [NGINX Ingress](/nginx-ingress.md)
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
 - storage-provisioner or [NFS Client Provisioner](/nfs-client-provisioner.md)
+
+### Repository
+
+```sh
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo update
+```
 
 ### Install
 
 ```sh
+#
+export INGRESS_HOST='127.0.0.1'
+
+#
 kubectl create namespace minio
 ```
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n minio
-```
-
-```sh
-helm install minio stable/minio \
+helm install minio bitnami/minio \
   --namespace minio \
-  --set ingress.enabled=true \
-  --set ingress.hosts={minio.example.com} \
-  --set 'ingress.tls[0].secretName=example.tls-secret' \
-  --set 'ingress.tls[0].hosts={minio.example.com}' \
-  --set accessKey='AKIAIOSFODNN7EXAMPLE' \
-  --set secretKey='wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+  --version 7.1.3 \
+  -f <(cat << EOF
+global:
+  minio:
+    accessKey: minio
+    secretKey: minio123
+
+service:
+  type: LoadBalancer
+
+defaultBuckets: velero
+
+ingress:
+  enabled: true
+  hostname: minio.${INGRESS_HOST}.nip.io
+
+persistence:
+  size: 1G
+EOF
+)
 ```
 
 ### Status
@@ -50,12 +71,33 @@ helm install minio stable/minio \
 kubectl rollout status deploy/minio -n minio
 ```
 
+### Secrets
+
+```sh
+#
+kubectl get secret \
+  --namespace minio \
+  minio \
+  -o jsonpath='{.data.access-key}' | \
+    base64 --decode; echo
+
+#
+kubectl get secret \
+  --namespace minio \
+  minio \
+  -o jsonpath='{.data.secret-key}' | \
+    base64 --decode; echo
+```
+
 ### Delete
 
 ```sh
-helm uninstall minio -n minio
+helm uninstall minio \
+  -n minio
 
-kubectl delete namespace minio --grace-period=0 --force
+kubectl delete namespace minio \
+  --grace-period=0 \
+  --force
 ```
 
 ## CLI

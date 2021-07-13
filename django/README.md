@@ -539,7 +539,7 @@ networks:
 #### Build
 
 ```Dockerfile
-FROM docker.io/library/python:3.7-alpine AS translations
+FROM docker.io/library/python:3.8-alpine AS translations
 
 WORKDIR /usr/src/app
 
@@ -549,9 +549,7 @@ RUN apk add -q --no-cache \
 
 COPY ./requirements.txt ./
 
-RUN pip3 install \
-      -r ./requirements.txt \
-      --no-cache-dir
+RUN pip3 install --no-cache-dir -r ./requirements.txt
 
 COPY ./core ./core
 COPY ./App ./App
@@ -562,7 +560,7 @@ RUN ./manage.py compilemessages
 
 # ---
 
-FROM docker.io/library/python:3.7-alpine
+FROM docker.io/library/python:3.8-alpine
 
 WORKDIR /usr/src/app
 
@@ -571,9 +569,7 @@ RUN addgroup -g 1000 django && \
 
 COPY --chown=django:django ./requirements.txt ./
 
-RUN pip3 install \
-      -r ./requirements.txt \
-      --no-cache-dir
+RUN pip3 install --no-cache-dir -r ./requirements.txt
 
 COPY --chown=django:django ./core ./core
 COPY --chown=django:django ./App ./App
@@ -630,7 +626,7 @@ fi
 <!-- ####
 
 ```Dockerfile
-FROM docker.io/library/python:3.7-alpine
+FROM docker.io/library/python:3.8-alpine
 
 WORKDIR /usr/src/app
 
@@ -640,9 +636,7 @@ RUN apk add -q --no-cache -t .build-deps \
 
 COPY ./requirements.txt ./
 
-RUN pip3 install \
-      -r ./requirements.txt \
-      --no-cache-dir
+RUN pip3 install --no-cache-dir -r ./requirements.txt
 
 RUN ./manage.py compilemessages
 

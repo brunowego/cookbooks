@@ -21,6 +21,10 @@ https://www.packtpub.com/web-development/hands-on-docker-for-microservices-with-
 https://github.com/tolgahanuzun/Flask-Login-Example
 -->
 
+## Alternatives
+
+- [FastAPI](/fastapi.md)
+
 ## CLI
 
 ### Extend

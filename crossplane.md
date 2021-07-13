@@ -3,6 +3,8 @@
 **Keywords:** Multi-cloud Control Plane, GitOps-based, Infrastructure as Code
 
 <!--
+https://www.youtube.com/watch?v=AtbS1u2j7po&t=159s
+
 https://github.com/100daysofkubernetes/100DaysOfKubernetes/blob/main/src/templating/crossplane.md
 https://github.com/stevendborrelli/spinnaker-crossplane/blob/main/README.md
 

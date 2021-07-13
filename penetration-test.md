@@ -1,7 +1,9 @@
 # Penetration Test (PenTest)
 
 <!--
+https://github.com/austinsonger/Incident-Playbook
 https://app.pluralsight.com/paths/certificate/comptia-pentest-pt0-001
+https://github.com/swisskyrepo/PayloadsAllTheThings
 -->
 
 ## Glossary

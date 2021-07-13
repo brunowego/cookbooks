@@ -1,6 +1,16 @@
 # AWS Managed Streaming for Apache Kafka (MSK)
 
 <!--
+https://www.youtube.com/watch?v=4C_FT2Ie9E4
+
+https://github.com/troydieter/tf-msk
+
+https://github.com/lokiloveu1/AWS-MSK/blob/6e717eb8c89110ae0707e096e8fb6fb3e47b11fd/Steps-To-Build-MSK-Client-In-Another-VPC
+
+https://aws.amazon.com/blogs/big-data/how-goldman-sachs-builds-cross-account-connectivity-to-their-amazon-msk-clusters-with-aws-privatelink/
+
+https://maikelpenz.medium.com/building-a-kafka-playground-on-aws-part-1-setting-the-foundation-3065ecf51c19
+
 https://learn-msk.com/courses/amazon-msk-master-class
 https://www.whizlabs.com/amazon-managed-streaming-for-apache-kafka/
 https://github.com/cloudposse/terraform-aws-msk-apache-kafka-cluster
@@ -47,7 +57,6 @@ https://github.com/rtacconi/aws-msk-terraform/blob/master/terraform/modules/msk/
 https://github.com/awslabs/aws-glue-schema-registry
 
 https://github.com/swetavkamal/SchemaRegistryMSK/blob/master/src/main/java/person.avsc
-
 -->
 
 ## Links
@@ -71,17 +80,33 @@ https://github.com/swetavkamal/SchemaRegistryMSK/blob/master/src/main/java/perso
 aws kafka help
 ```
 
-<!-- ### Usage
+### Usage
 
 ```sh
 #
-aws kafka list-clusters | \
-  jq -r '.ClusterInfoList[0].ClusterArn'
+aws \
+  --output json \
+  kafka list-clusters | \
+    jq -r '.ClusterInfoList[0].ClusterArn'
 
 #
-aws kafka describe-cluster --cluster-arn $(cat clusterArn) | \
-  jq -r '.ClusterInfo.ZookeeperConnectString'
+aws kafka get-bootstrap-brokers \
+  --region us-east-1 \
+  --cluster-arn $(aws --output json kafka list-clusters | jq -r '.ClusterInfoList[0].ClusterArn')
 
+dig +short '[broker-hostname]'
+
+#
+aws \
+  --output json \
+  kafka describe-cluster \
+    --cluster-arn $(aws --output json kafka list-clusters | jq -r '.ClusterInfoList[0].ClusterArn') | \
+      jq -r '.ClusterInfo.ZookeeperConnectString'
+```
+
+#### Cluster Creation
+
+```sh
 #
 aws kafka create-cluster \
   --cli-input-json <(cat << EOF
@@ -97,4 +122,4 @@ aws kafka create-configuration \
 
 EOF
 )
-``` -->
+```

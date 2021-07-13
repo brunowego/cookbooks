@@ -6,8 +6,6 @@
 
 ## Helm
 
-## Helm
-
 ### References
 
 - [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#parameters)

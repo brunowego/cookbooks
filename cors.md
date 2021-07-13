@@ -1,5 +1,9 @@
 # Cross-Origin Resource Sharing (CORS)
 
+## Links
+
+- [test-cors.org](https://test-cors.org/)
+
 ## References
 
 - [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)

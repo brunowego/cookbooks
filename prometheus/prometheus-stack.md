@@ -1,4 +1,4 @@
-# kube-prometheus (a.k.a prometheus-stack) (p.k.a. prometheus-operator)
+# kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)
 
 ## Links
 
@@ -14,7 +14,7 @@
 ### Repository
 
 ```sh
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo add prometheus-community 'https://prometheus-community.github.io/helm-charts'
 helm repo update
 ```
 
@@ -22,7 +22,7 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST=''
+export INGRESS_HOST='127.0.0.1'
 
 #
 kubectl create namespace monitoring
@@ -62,6 +62,7 @@ kubectl logs \
 ### Secret
 
 ```sh
+#
 kubectl get secret prometheus-grafana \
   -o jsonpath='{.data.admin-password}' \
   -n monitoring | \

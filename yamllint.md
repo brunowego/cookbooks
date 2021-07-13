@@ -10,7 +10,8 @@ FROM docker.io/alpine:3.9
 
 RUN apk add -q --no-cache py3-setuptools==40.6.3-r0
 
-RUN pip3 install --no-cache-dir yamllint===1.16.0
+RUN pip3 install --no-cache-dir \
+      yamllint===1.16.0
 
 ENTRYPOINT ["/usr/bin/yamllint"]
 

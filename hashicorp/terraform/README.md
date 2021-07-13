@@ -58,10 +58,13 @@ output
 
 ## Alternatives
 
-- [AWS Cloud Development Kit (CDK)](/aws/aws-cdk.md)
-- [AWS CloudFormation (CF)](/aws/aws-cf.md)
 - [Crossplane](/crossplane.md)
 - [Pulumi](/pulumi.md)
+
+### For AWS
+
+- [AWS Cloud Development Kit (CDK)](/aws/aws-cdk.md)
+- [AWS CloudFormation (CF)](/aws/aws-cf.md)
 
 ## Links
 
@@ -242,8 +245,8 @@ terraform state list
 
 #
 terraform destroy \
-  -target [state] \
-  -var-file ./vars/terraform-stg.tfvars
+  -target '[state]' \
+  -var-file "./vars/terraform-$(terraform workspace show).tfvars"
 ```
 
 <!-- #### Import

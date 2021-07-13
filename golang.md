@@ -3,6 +3,8 @@
 Efficient compilation, Efficient execution and Ease of programming.
 
 <!--
+https://github.com/nikolaydubina/go-recipes
+
 https://github.com/golangci/golangci-lint
 
 https://github.com/vmasdani/cozypos-full

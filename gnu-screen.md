@@ -70,3 +70,16 @@ screen \
   -S [session_id] \
   -X quit
 ```
+
+## Kubernetes
+
+### Running
+
+```sh
+# Ubuntu
+kubectl run -it --rm \
+  screen-test \
+  --image docker.io/library/ubuntu:20.04 \
+  -l 'app=screen-test' \
+  -- /bin/sh -c 'apt update && apt -y install screen; /bin/bash'
+```

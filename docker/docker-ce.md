@@ -200,6 +200,13 @@ choco install -y docker-cli
 docker --help
 ```
 
+### Usage
+
+```sh
+#
+docker system df
+```
+
 ### Tips
 
 #### Process Format

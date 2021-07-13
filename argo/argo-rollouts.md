@@ -15,7 +15,7 @@
 Big Bang
 -->
 
-## Resources Manifest
+## Resource Manifest
 
 ### Install
 
