@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: bpm
-          image: camunda/camunda-bpm-platform
+          image: docker.io/camunda/camunda-bpm-platform
           ports:
             - containerPort: 8080
 EOF

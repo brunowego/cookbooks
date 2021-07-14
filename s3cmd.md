@@ -25,8 +25,8 @@ host_base = https://minio.example.com
 host_bucket = https://minio.example.com
 use_https = True
 
-access_key = AKIAIOSFODNN7EXAMPLE
-secret_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+access_key = [access-key]
+secret_key = [secret-key]
 EOF
 ```
 

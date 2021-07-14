@@ -325,7 +325,7 @@ docker volume rm matomo-mysql-data matomo-data matomo-nginx-conf
 docker network rm workbench
 ```
 
-## Kubernetes
+## Kubernetes Manifest
 
 ### Running
 

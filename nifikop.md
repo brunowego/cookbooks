@@ -80,7 +80,7 @@ spec:
     headlessEnabled: true
   zkAddress: 'nifikop-zk-zookeeper:2181'
   zkPath: '/simplenifi'
-  clusterImage: 'apache/nifi:1.12.1'
+  clusterImage: 'docker.io/apache/nifi:1.12.1'
   oneNifiNodePerNode: false
   nodeConfigGroups:
     default_group:

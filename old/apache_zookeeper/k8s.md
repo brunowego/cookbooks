@@ -15,7 +15,7 @@ metadata:
 spec:
   containers:
     - name: zookeeper
-      image: wurstmeister/zookeeper
+      image: docker.io/wurstmeister/zookeeper
       ports:
         - containerPort: 2181
       livenessProbe:

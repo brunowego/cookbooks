@@ -35,7 +35,7 @@ k3d cluster create \
 kind: Simple
 apiVersion: k3d.io/v1alpha2
 name: default
-image: rancher/k3s:v1.20.4-k3s1
+image: docker.io/rancher/k3s:v1.20.4-k3s1
 EOF
 )
 ```

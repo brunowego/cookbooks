@@ -43,7 +43,7 @@ EOF
 ```
 
   mysql-metastore:
-    image: hamletlee/hive-mysql-metastore:2.3.0
+    image: docker.io/hamletlee/hive-mysql-metastore:2.3.0
     build: hive-mysql-metastore
     environment:
       MYSQL_ROOT_PASSWORD: "iamroot"
@@ -54,7 +54,7 @@ EOF
       - mysql:/var/lib/mysql
 
   hive-server:
-    image: hamletlee/hive:2.3.0
+    image: docker.io/hamletlee/hive:2.3.0
     build: hive
     env_file:
       - ./hadoop-hive.env
@@ -67,13 +67,13 @@ EOF
       - "10000:10000"
 
   hive-client:
-    image: hamletlee/hive:2.3.0
+    image: docker.io/hamletlee/hive:2.3.0
     env_file:
       - ./hadoop-hive.env
     entrypoint: ["sleep","100000000"]
 
   hive-metastore:
-    image: hamletlee/hive:2.3.0
+    image: docker.io/hamletlee/hive:2.3.0
     env_file:
       - ./hadoop-hive.env
 #    command: cat /opt/hive/conf/hive-site.xml

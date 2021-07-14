@@ -15,7 +15,7 @@ https://web.dev/same-site-same-origin/
 - Cross-Origin Resource Sharing (CORS)
 - Sticky and NON-Sticky Sessions
 
-## Resource Manifest
+## Kubernetes Manifest
 
 ### Install
 

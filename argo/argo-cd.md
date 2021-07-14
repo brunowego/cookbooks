@@ -23,7 +23,7 @@ https://www.udemy.com/course/hands-on-guide-to-argo-workflows-on-kubernetes/
 - [Status Badge](https://argoproj.github.io/argo-cd/user-guide/status-badge/)
 - [Git Webhook Configuration](https://argoproj.github.io/argo-cd/operator-manual/webhook/)
 
-## Resource Manifest
+## Kubernetes Manifest
 
 ### Install
 

@@ -19,12 +19,31 @@ https://kaichu.io/posts/velero-research-practice/
 ### Dependencies
 
 - [MinIO](/minio.md)
+- [AWS S3 Tools (S3cmd)](/s3cmd.md)
 
 ### Repository
 
 ```sh
 helm repo add vmware-tanzu 'https://vmware-tanzu.github.io/helm-charts'
 helm repo update
+```
+
+### Bucket Creation
+
+```sh
+#
+cat << EOF > ~/.s3cfg
+[default]
+host_base = minio.${INGRESS_HOST}.nip.io
+host_bucket = minio.${INGRESS_HOST}.nip.io
+use_https = False
+
+access_key = minio
+secret_key = minio123
+EOF
+
+#
+s3cmd mb s3://velero
 ```
 
 ### Install
@@ -69,7 +88,7 @@ configMaps:
       velero.io/plugin-config: ''
       velero.io/restic: RestoreItemAction
     data:
-      image: velero/velero-restic-restore-helper:v1.6.0
+      image: docker.io/velero/velero-restic-restore-helper:v1.6.0
 
 deployRestic: true
 
@@ -122,16 +141,21 @@ kubectl logs \
 #### Dependencies
 
 - [Rocket.chat](/rocket.chat.md#helm)
-- [AWS S3 Tools (S3cmd)](/s3cmd.md)
 
 #### Annotation
 
 ```sh
+#
+kubectl get pod \
+  -l 'app.kubernetes.io/name=mongodb' \
+  -o jsonpath='{.items[0].spec.volumes}' \
+  -n rocketchat
+
+#
 kubectl annotate pod \
   -l 'app.kubernetes.io/name=mongodb' \
   -n rocketchat \
-  backup.velero.io/backup-volumes=datadir \
-  --overwrite
+  backup.velero.io/backup-volumes=datadir
 ```
 
 #### Backup
@@ -147,10 +171,12 @@ velero backup create rocketchat-backup \
 velero backup get rocketchat-backup
 
 #
-kubectl get backups.velero.io -n velero
+kubectl get backups.velero.io \
+  -n velero
 
 #
-velero backup describe rocketchat-backup --details
+velero backup describe rocketchat-backup \
+  --details
 
 #
 velero backup logs rocketchat-backup
@@ -159,17 +185,6 @@ velero backup logs rocketchat-backup
 ##### Transfer
 
 ```sh
-#
-cat << EOF > ~/.s3cfg
-[default]
-host_base = minio.${INGRESS_HOST}.nip.io
-host_bucket = minio.${INGRESS_HOST}.nip.io
-use_https = False
-
-access_key = minio
-secret_key = minio123
-EOF
-
 #
 mkdir ./rocketchat-backup
 

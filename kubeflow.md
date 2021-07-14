@@ -18,7 +18,7 @@ https://app.pluralsight.com/library/courses/ml-pipelines-google-cloud/
 
 - [Code Respository](https://github.com/kubeflow/kubeflow)
 
-## Resource Manifest
+## Kubernetes Manifest
 
 ### Install
 

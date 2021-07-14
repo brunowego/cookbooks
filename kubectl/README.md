@@ -2,6 +2,8 @@
 
 <!--
 https://github.com/nutellinoit/kubenvz
+
+kubectl explain pod.spec.volumes
 -->
 
 ## CLI

@@ -6,7 +6,7 @@
 - [RabbitMQ Cluster Operator for Kubernetes](https://rabbitmq.com/kubernetes/operator/operator-overview.html)
 - [RabbitMQ Cluster Operator Plugin for kubectl](https://rabbitmq.com/kubernetes/operator/kubectl-plugin.html)
 
-## Resource Manifest
+## Kubernetes Manifest
 
 ### Install
 

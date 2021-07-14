@@ -103,6 +103,160 @@ kubectl delete namespace monitoring \
   --force
 ```
 
+### Tips
+
+#### External Exporter
+
+```sh
+#
+cat << EOF | kubectl apply \
+  -n [namespace] \
+  -f -
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: gpu-metrics
+  labels:
+    app.kubernetes.io/name: gpu-metrics
+subsets:
+- addresses:
+  - ip: <gpu-machine-ip>
+  ports:
+  - name: metrics
+    port: 9100
+    protocol: TCP
+EOF
+
+#
+cat << EOF | kubectl apply \
+  -n [namespace] \
+  -f -
+apiVersion: v1
+kind: Service
+metadata:
+  name: gpu-metrics-svc
+  namespace: monitoring
+  labels:
+    app.kubernetes.io/name: gpu-metrics
+spec:
+  type: ExternalName
+  externalName: <gpu-machine-ip>
+  clusterIP: ""
+  ports:
+  - name: metrics
+    port: 9100
+    protocol: TCP
+    targetPort: 9100
+EOF
+
+#
+kubectl get prometheus \
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
+  -n monitoring
+
+#
+cat << EOF | kubectl apply \
+  -n [namespace] \
+  -f -
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: gpu-metrics-sm
+  labels:
+    app.kubernetes.io/name: gpu-metrics
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: gpu-metrics
+    namespaceSelector:
+      matchNames:
+      - monitoring
+  endpoints:
+  - port: metrics
+    interval: 10s
+    honorLabels: true
+EOF
+```
+
+#### External MSK
+
+```sh
+#
+cat << EOF | kubectl apply \
+  -n [namespace] \
+  -f -
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: msk-metrics
+  labels:
+    app.kubernetes.io/name: msk-metrics
+subsets:
+- addresses:
+  - ip: <msk-machine-ip>
+  ports:
+  - name: jmx-exporter
+    port: 11001
+    protocol: TCP
+  - name: node-exporter
+    port: 11002
+    protocol: TCP
+EOF
+
+#
+cat << EOF | kubectl apply \
+  -n [namespace] \
+  -f -
+apiVersion: v1
+kind: Service
+metadata:
+  name: msk-metrics-svc
+  labels:
+    app.kubernetes.io/name: msk-metrics
+spec:
+  type: ExternalName
+  externalName: <msk-machine-ip>
+  clusterIP: ""
+  ports:
+  - name: jmx-exporter
+    port: 11001
+    protocol: TCP
+    targetPort: 11001
+  - name: node-exporter
+    port: 11002
+    protocol: TCP
+    targetPort: 11002
+EOF
+
+#
+cat << EOF | kubectl apply \
+  -n [namespace] \
+  -f -
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: msk-metrics-sm
+  labels:
+    app.kubernetes.io/name: msk-metrics
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: msk-metrics
+  namespaceSelector:
+    matchNames:
+    - [namespace]
+  endpoints:
+  - port: jmx-exporter
+    interval: 10s
+    honorLabels: true
+  - port: node-exporter
+    interval: 10s
+    honorLabels: true
+EOF
+```
+
 ### Issues
 
 #### Timeout with ELB

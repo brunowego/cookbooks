@@ -26,7 +26,7 @@
 ### Repository
 
 ```sh
-helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
 helm repo update
 ```
 
@@ -49,11 +49,6 @@ global:
   minio:
     accessKey: minio
     secretKey: minio123
-
-service:
-  type: LoadBalancer
-
-defaultBuckets: velero
 
 ingress:
   enabled: true
@@ -107,7 +102,8 @@ kubectl delete namespace minio \
 #### Homebrew
 
 ```sh
-brew install minio/stable/minio
+brew tap minio/stable
+brew install minio
 ```
 
 ### Commands

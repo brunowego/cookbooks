@@ -2,6 +2,7 @@
 
 <!--
 https://github.com/symopsio/terraform-okta-ssm-modules/blob/main/bin/ec2-tunnel
+https://github.com/nvaidya1/BugBust-repo-python/tree/master/awscli/examples/rds
 -->
 
 ## Guides
@@ -29,9 +30,34 @@ aws rds create-db-instance \
   --allocated-storage 20
 ```
 
-<!-- ### Tips
+### Tips
 
-#### Secure RDS Access through SSH over AWS SSM
+#### Increase Cluster Capacity
+
+```sh
+#
+aws \
+  --output json \
+  rds describe-db-clusters | \
+    jq '.DBClusters[].DBClusterIdentifier'
+
+#
+export AWS_RDS_DB_CLUSTER_ID=''
+
+#
+aws \
+  --output json \
+  rds describe-db-clusters \
+    --db-cluster-identifier "$AWS_RDS_DB_CLUSTER_ID" | \
+    jq '.DBClusters[0].Capacity'
+
+#
+aws rds modify-current-db-cluster-capacity \
+  --db-cluster-identifier "$AWS_RDS_DB_CLUSTER_ID" \
+  --capacity 4
+```
+
+<!-- #### Secure RDS Access through SSH over AWS SSM
 
 Generate a keypair and send the pubkey to our EC2 instance, so that we can use ssh to access our instance instead of aws ssm start-session. This isn't particularly useful without doing port forwarding, but including for testing.
 

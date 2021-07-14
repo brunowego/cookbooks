@@ -15,7 +15,7 @@
 Big Bang
 -->
 
-## Resource Manifest
+## Kubernetes Manifest
 
 ### Install
 

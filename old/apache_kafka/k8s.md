@@ -15,7 +15,7 @@ metadata:
 spec:
   containers:
     - name: zookeeper
-      image: wurstmeister/zookeeper
+      image: docker.io/wurstmeister/zookeeper
       ports:
         - containerPort: 2181
       livenessProbe:
@@ -56,7 +56,7 @@ metadata:
 spec:
   containers:
     - name: kafka
-      image: wurstmeister/kafka
+      image: docker.io/wurstmeister/kafka
       ports:
         - containerPort: 9092
       env:

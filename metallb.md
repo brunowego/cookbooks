@@ -6,7 +6,7 @@
 - [Bare-metal considerations](https://github.com/kubernetes/ingress-nginx/blob/master/docs/deploy/baremetal.md)
 - [Configuration](https://github.com/helm/charts/tree/master/stable/metallb#configuration)
 
-## Resource Manifest
+## Kubernetes Manifest
 
 ### Install
 

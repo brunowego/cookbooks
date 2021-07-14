@@ -98,7 +98,7 @@ spec:
     spec:
       initContainers:
         - name: init-sysctl
-          image: busybox:1.27.2
+          image: docker.io/library/busybox:1.27.2
           command:
             - sysctl
             - -w
@@ -112,7 +112,7 @@ spec:
             privileged: true
       containers:
         - name: es-node
-          image: elasticsearch:6.6.1
+          image: docker.io/library/elasticsearch:6.6.1
           env:
             - name: NAMESPACE
               valueFrom:

@@ -11,5 +11,6 @@
 #### Linux
 
 ```sh
-curl -sfL 'https://get.k3s.io' | sh -
+curl -sfL 'https://get.k3s.io' | \
+  sh -
 ```

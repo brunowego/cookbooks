@@ -4,6 +4,11 @@
 https://app.pluralsight.com/library/courses/big-data-ldn-session-79/table-of-contents
 -->
 
+## Links
+
+- [Code Repository](https://github.com/cockroachdb/cockroach)
+- [Main Website](https://cockroachlabs.com/)
+
 ## Guides
 
 - [Cockroach University](https://university.cockroachlabs.com/categories)
@@ -73,6 +78,6 @@ brew install cockroach
 #### Linux
 
 ```sh
-curl https://binaries.cockroachdb.com/cockroach-v2.1.6.linux-amd64.tgz | \
+curl 'https://binaries.cockroachdb.com/cockroach-v2.1.6.linux-amd64.tgz' | \
   sudo tar -xzC /usr/local/bin --strip-components 1
 ```

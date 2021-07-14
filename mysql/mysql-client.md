@@ -95,3 +95,19 @@ mysql \
   [database] \
   < /path/to/dump.sql
 ```
+
+## Library Python
+
+### Dependencies
+
+#### APK
+
+```sh
+apk add build-base mariadb-dev
+```
+
+### Installation
+
+```sh
+pip3 install mysqlclient
+```

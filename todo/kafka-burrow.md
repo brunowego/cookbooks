@@ -9,7 +9,7 @@ TODO
 <!--
 ## Producer
   producer:
-    image: tarosaiba/kafka-train-producer
+    image: docker.io/tarosaiba/kafka-train-producer
     ports:
       - "1323:1323"
     environment:
@@ -21,7 +21,7 @@ TODO
 
 ## Consumer
   consumer:
-    image: tarosaiba/kafka-train-consumer
+    image: docker.io/tarosaiba/kafka-train-consumer
     environment:
       KAFKA_BROKER: "kafka:9092"
       KAFKA_TOPIC: "test_topic"
@@ -33,7 +33,7 @@ TODO
 
 ## Kafka burrow
   kafka-burrow:
-    image: tarosaiba/kafka-burrow:latest
+    image: docker.io/tarosaiba/kafka-burrow:latest
     ports:
       - "8888:8000"
     restart: always
