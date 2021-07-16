@@ -24,6 +24,7 @@ Version 1.21.0
 ## Guides
 
 - [Attach Handlers to Container Lifecycle Events](https://kubernetes.io/docs/tasks/configure-pod-container/attach-handler-lifecycle-event/)
+- [Debugging DNS Resolution](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/)
 
 ## Terms
 
@@ -34,6 +35,14 @@ Version 1.21.0
 
 - [stern](/stern.md)
 - [Lens (a.k.a. OpenLens)](/lens.md)
+
+## Kubernetes Service Discovery Roles
+
+- Node
+- Service
+- Pod
+- Endpoints
+- Ingress
 
 ## Phrases
 

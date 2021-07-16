@@ -67,6 +67,7 @@ https://github.com/swetavkamal/SchemaRegistryMSK/blob/master/src/main/java/perso
 
 - [Username and password authentication with AWS Secrets Manager](https://docs.aws.amazon.com/msk/latest/developerguide/msk-password.html)
 - [Step 6: Produce and Consume Data](https://docs.aws.amazon.com/msk/latest/developerguide/produce-consume.html)
+- [Amazon MSK Metrics for Monitoring with CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/metrics-details.html)
 
 ## Content
 
@@ -122,4 +123,102 @@ aws kafka create-configuration \
 
 EOF
 )
+```
+
+### Tips
+
+#### Prometheus Stack
+
+```sh
+#
+cat << EOF | kubectl apply -f -
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: msk-lb-metrics
+  labels:
+    app.kubernetes.io/component: msk-lb-metrics
+subsets:
+- addresses:
+  - ip: [nlb-ip]
+  ports:
+  - name: jmx-exporter
+    port: 11001
+    protocol: TCP
+  - name: node-exporter
+    port: 11002
+    protocol: TCP
+EOF
+
+cat << EOF | kubectl apply -f -
+apiVersion: v1
+kind: Service
+metadata:
+  name: msk-lb-metrics
+  labels:
+    app.kubernetes.io/component: msk-lb-metrics
+spec:
+  type: ExternalName
+  externalName: [nlb-ip]
+EOF
+
+kubectl get prometheus \
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
+  -n monitoring
+
+cat << EOF | kubectl apply -f -
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: msk-lb-metrics
+  labels:
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/component: msk-lb-metrics
+  namespaceSelector:
+    matchNames:
+    - $(kubens -c)
+  endpoints:
+  - port: jmx-exporter
+    interval: 15s
+    path: /metrics
+    targetPort: 11001
+  - port: node-exporter
+    interval: 15s
+    path: /metrics
+    targetPort: 11002
+EOF
+```
+
+#### Grafana Dashboards
+
+<!--
+CloudWatch
+https://grafana.com/grafana/dashboards/12009
+https://grafana.com/grafana/dashboards/12010
+-->
+
+```sh
+#
+kubectl logs \
+  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/name=grafana -n monitoring) \
+  -n monitoring \
+  -f \
+  grafana-sc-dashboard
+
+# MSK Overview (https://grafana.com/grafana/dashboards/12669)
+cat << EOF | kubectl apply \
+  -n monitoring \
+  -f -
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: msk-overview-dashboard
+  labels:
+    grafana_dashboard: "true"
+data:
+  msk-overview-dashboard.json.url: https://grafana.com/api/dashboards/12669/revisions/1/download
+EOF
 ```

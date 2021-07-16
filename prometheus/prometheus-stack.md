@@ -1,5 +1,9 @@
 # kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)
 
+<!--
+https://github.com/jsa4000/Observable-Distributed-System/blob/master/docs/02_kube_prometheus.md
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/prometheus-operator/kube-prometheus)
@@ -107,20 +111,28 @@ kubectl delete namespace monitoring \
 
 #### External Exporter
 
+##### For Testing Propose
+
 ```sh
 #
-cat << EOF | kubectl apply \
-  -n [namespace] \
-  -f -
+node_exporter \
+  --web.listen-address=':9100'
+```
+
+##### Using ExternalName
+
+```sh
+#
+cat << EOF | kubectl apply -f -
 apiVersion: v1
 kind: Endpoints
 metadata:
-  name: gpu-metrics
+  name: my-machine-metrics
   labels:
-    app.kubernetes.io/name: gpu-metrics
+    app.kubernetes.io/component: my-machine-metrics
 subsets:
 - addresses:
-  - ip: <gpu-machine-ip>
+  - ip: $(ip route get 1 | awk '{print $NF;exit}')
   ports:
   - name: metrics
     port: 9100
@@ -128,133 +140,55 @@ subsets:
 EOF
 
 #
-cat << EOF | kubectl apply \
-  -n [namespace] \
-  -f -
+cat << EOF | kubectl apply -f -
 apiVersion: v1
 kind: Service
 metadata:
-  name: gpu-metrics-svc
-  namespace: monitoring
+  name: my-machine-metrics
   labels:
-    app.kubernetes.io/name: gpu-metrics
+    app.kubernetes.io/component: my-machine-metrics
 spec:
   type: ExternalName
-  externalName: <gpu-machine-ip>
-  clusterIP: ""
-  ports:
-  - name: metrics
-    port: 9100
-    protocol: TCP
-    targetPort: 9100
+  externalName: $(ip route get 1 | awk '{print $NF;exit}')
 EOF
+```
 
+##### Service Monitor
+
+```sh
 #
 kubectl get prometheus \
   -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
   -n monitoring
 
 #
-cat << EOF | kubectl apply \
-  -n [namespace] \
-  -f -
+cat << EOF | kubectl apply -f -
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: gpu-metrics-sm
+  name: my-machine-metrics
   labels:
-    app.kubernetes.io/name: gpu-metrics
     release: prometheus
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: gpu-metrics
-    namespaceSelector:
-      matchNames:
-      - monitoring
+      app.kubernetes.io/component: my-machine-metrics
+  namespaceSelector:
+    matchNames:
+    - $(kubens -c)
   endpoints:
   - port: metrics
-    interval: 10s
-    honorLabels: true
+    interval: 15s
+    path: /metrics
 EOF
 ```
 
-#### External MSK
+> Wait! This process take a while.
 
 ```sh
 #
-cat << EOF | kubectl apply \
-  -n [namespace] \
-  -f -
-apiVersion: v1
-kind: Endpoints
-metadata:
-  name: msk-metrics
-  labels:
-    app.kubernetes.io/name: msk-metrics
-subsets:
-- addresses:
-  - ip: <msk-machine-ip>
-  ports:
-  - name: jmx-exporter
-    port: 11001
-    protocol: TCP
-  - name: node-exporter
-    port: 11002
-    protocol: TCP
-EOF
-
-#
-cat << EOF | kubectl apply \
-  -n [namespace] \
-  -f -
-apiVersion: v1
-kind: Service
-metadata:
-  name: msk-metrics-svc
-  labels:
-    app.kubernetes.io/name: msk-metrics
-spec:
-  type: ExternalName
-  externalName: <msk-machine-ip>
-  clusterIP: ""
-  ports:
-  - name: jmx-exporter
-    port: 11001
-    protocol: TCP
-    targetPort: 11001
-  - name: node-exporter
-    port: 11002
-    protocol: TCP
-    targetPort: 11002
-EOF
-
-#
-cat << EOF | kubectl apply \
-  -n [namespace] \
-  -f -
-apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
-metadata:
-  name: msk-metrics-sm
-  labels:
-    app.kubernetes.io/name: msk-metrics
-    release: prometheus
-spec:
-  selector:
-    matchLabels:
-      app.kubernetes.io/name: msk-metrics
-  namespaceSelector:
-    matchNames:
-    - [namespace]
-  endpoints:
-  - port: jmx-exporter
-    interval: 10s
-    honorLabels: true
-  - port: node-exporter
-    interval: 10s
-    honorLabels: true
-EOF
+echo -e "[INFO]\thttp://prometheus.${INGRESS_HOST}.nip.io/service-discovery"
+echo -e "[INFO]\thttp://prometheus.${INGRESS_HOST}.nip.io/config"
 ```
 
 ### Issues

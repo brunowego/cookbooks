@@ -54,7 +54,8 @@ aws \
 #
 aws rds modify-current-db-cluster-capacity \
   --db-cluster-identifier "$AWS_RDS_DB_CLUSTER_ID" \
-  --capacity 4
+  --capacity 4 \
+  --seconds-before-timeout 10
 ```
 
 <!-- #### Secure RDS Access through SSH over AWS SSM

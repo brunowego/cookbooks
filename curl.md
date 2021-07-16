@@ -1,15 +1,31 @@
 # cURL
 
+## Kubectl
+
+### Running
+
+```sh
+kubectl run -it \
+  curl \
+  --image docker.io/radial/busyboxplus:curl
+```
+
 ## Docker
 
 ### Running
 
 ```sh
+#
 docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
   -h curl \
   --name curl \
   docker.io/curlimages/curl:7.67.0 -h
+
+#
+docker run -it --rm \
+  docker.io/curlimages/curl:latest \
+    google.com
 ```
 
 ## CLI

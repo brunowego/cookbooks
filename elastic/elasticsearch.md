@@ -6,6 +6,11 @@ https://app.pluralsight.com/library/courses/executing-complex-queries-elasticsea
 https://linkedin.com/learning/learning-the-elastic-stack-2/start-listening-to-your-infrastructure
 -->
 
+## Alternatives
+
+- [OpenSearch](https://github.com/opensearch-project/OpenSearch)
+- [Typesense](https://github.com/typesense/typesense)
+
 ## Docker
 
 ### Network

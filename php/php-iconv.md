@@ -2,9 +2,9 @@
 
 ## Library
 
-<!-- ### Dependencies
+### Dependencies
 
-- [phpize](/phpize.md) -->
+- [phpize](/phpize.md)
 
 #### Homebrew
 

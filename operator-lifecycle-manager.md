@@ -1,5 +1,9 @@
 # Operator Lifecycle Manager (OLM)
 
+<!--
+https://github.com/jsa4000/Observable-Distributed-System/blob/master/docs/01_operator_lifecycle_manager.md
+-->
+
 ## Alternatives
 
 - [Kubernetes Universal Declarative Operator (KUDO)](/kudo.md)
@@ -23,4 +27,7 @@ kubectl apply \
 
 #
 kubectl get olm -A
+
+#
+kubectl get pods -n olm
 ```

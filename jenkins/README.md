@@ -6,9 +6,15 @@ https://linkedin.com/learning/learning-jenkins/
 https://app.pluralsight.com/paths/skill/continuous-integration-with-jenkins
 
 https://github.com/kiegroup/kogito-pipelines
+
+Jenkins Configuration as Code (aka JCasC)
 -->
 
 **Keywords:** Continuous Integration
+
+## Links
+
+- [Plugins](https://plugins.jenkins.io/)
 
 ## Alternatives
 
@@ -33,7 +39,7 @@ https://github.com/kiegroup/kogito-pipelines
 ### Repository
 
 ```sh
-helm repo add jenkins https://charts.jenkins.io
+helm repo add jenkins 'https://charts.jenkins.io'
 helm repo update
 ```
 
@@ -50,44 +56,20 @@ kubectl create namespace jenkins
 ```sh
 helm install jenkins jenkins/jenkins \
   --namespace jenkins \
-  --set controller.ingress.enabled=true \
-  --set controller.ingress.hostName="jenkins.${INGRESS_HOST}.nip.io"
-```
-
-<!-- ### SSL
-
-### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-### Create
-
-```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n jenkins
-```
-
-```sh
-helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq m <(cat << EOF
-master:
+  --version 3.5.2 \
+  -f <(cat << EOF
+controller:
+  installPlugins:
+  - kubernetes:1.29.4
+  - workflow-aggregator:2.6
+  - git:4.7.1
+  - configuration-as-code:1.51
   ingress:
-    tls:
-      - secretName: example.tls-secret
-        hosts:
-          - jenkins.${INGRESS_HOST}.nip.io
+    enabled: true
+    hostName: jenkins.${INGRESS_HOST}.nip.io
 EOF
-) <(helm get values jenkins -n jenkins))
+)
 ```
-
-#### Remove
-
-```sh
-helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq d <(helm get values jenkins -n jenkins) controller.ingress.tls)
-
-kubectl delete secret example.tls-secret -n jenkins
-``` -->
 
 ### Status
 
@@ -205,6 +187,14 @@ kubectl exec -it \
 ```
 
 ### Issues
+
+#### PVCs Resizing
+
+```log
+Error: UPGRADE FAILED: cannot patch "jenkins" with kind PersistentVolumeClaim: PersistentVolumeClaim "jenkins" is invalid: spec.resources.requests.storage: Forbidden: field can not be less than previous value
+```
+
+Kubernetes PVCs resizing only allows to expand volumes, not to decrease them. If you try to decrease the storage size, you will get a message like above.
 
 #### Git SSL no Verify
 
@@ -336,8 +326,12 @@ javax.net.ssl.SSLPeerUnverifiedException: Certificate for <subdomain.example.com
 ### Delete
 
 ```sh
-helm uninstall jenkins -n jenkins
-kubectl delete namespace jenkins --grace-period=0 --force
+helm uninstall jenkins \
+  -n jenkins
+
+kubectl delete namespace jenkins \
+  --grace-period=0 \
+  --force
 ```
 
 ## Docker

@@ -2,6 +2,8 @@
 
 <!--
 https://www.udemy.com/course/the-complete-traefik-training-course/?referralCode=B585BB185AFA05066747
+
+helm3 repo add traefik https://helm.traefik.io/traefik
 -->
 
 ## References

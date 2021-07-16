@@ -22,3 +22,9 @@ cp -R /Volumes/Transmission/Transmission.app /Applications
 ```sh
 hdiutil detach /Volumes/Transmission
 ```
+
+#### Chocolatey
+
+```sh
+choco install transmission
+```

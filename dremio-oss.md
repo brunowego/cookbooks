@@ -12,6 +12,10 @@ https://github.com/markfjohnson/Dremio_Master_Detail_Parquet
 https://github.com/josepcurto/mbd-bidw
 -->
 
+## Guides
+
+- [Deployment Dremio on EKS](https://docs.dremio.com/deployment/amazon-eks/eks-deploy.html)
+
 ## References
 
 - [Documentation](https://docs.dremio.com/)

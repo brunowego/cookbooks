@@ -4,9 +4,10 @@
 https://linkedin.com/learning/kubernetes-monitoring-with-prometheus/prometheus-monitoring-to-prevent-outages
 -->
 
-## References
+## Guides
 
 - [Metric types](https://prometheus.io/docs/concepts/metric_types/)
+- [Service Discovery (SD)](https://github.com/prometheus/prometheus/tree/main/discovery)
 
 ## Plugins
 

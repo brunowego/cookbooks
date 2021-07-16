@@ -2,6 +2,7 @@
 
 <!--
 https://linkedin.com/learning/building-java-microservices-with-grpc/microservices-with-grpc
+https://github.com/envoyproxy/protoc-gen-validate
 -->
 
 ## CLI

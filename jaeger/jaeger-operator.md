@@ -1,15 +1,4 @@
-# logging operator
-
-<!--
-https://github.com/banzaicloud/logging-operator-docs/tree/master/docs/quickstarts
-https://github.com/banzaicloud-build/logging-operator/blob/master/docs/examples/es.md
-https://github.com/xybots/logging-operator-docs/blob/master/docs/operation/logging-operator-monitoring.md
--->
-
-## Links
-
-- [Code Repository](https://github.com/banzaicloud/logging-operator)
-- [Main Website](https://banzaicloud.com/products/logging-operator/)
+# Jaeger Operator
 
 ## Helm
 

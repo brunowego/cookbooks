@@ -22,7 +22,7 @@ kubectl janitor -h
 
 ```sh
 #
-kubectl janitor pods unscheduled -A
+kubectl janitor pods status -A
 
 #
 kubectl janitor pods unhealthy -A
@@ -31,7 +31,7 @@ kubectl janitor pods unhealthy -A
 kubectl janitor pods unready -A
 
 #
-kubectl janitor pods status -A
+kubectl janitor pods unscheduled -A
 
 #
 kubectl janitor jobs failed -A

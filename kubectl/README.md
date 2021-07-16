@@ -4,6 +4,7 @@
 https://github.com/nutellinoit/kubenvz
 
 kubectl explain pod.spec.volumes
+kubectl explain pods
 -->
 
 ## CLI
@@ -40,13 +41,19 @@ kubectl --help
 
 ```sh
 #
+kubectl get \
+  --raw='/readyz?verbose'
+
+#
 kubectl get cs
 
 # Config Context
 kubectl config current-context
 
 # Expose
-kubectl expose deploy nginx --port 80 --type LoadBalancer
+kubectl expose deploy nginx \
+  --port 80 \
+  --type LoadBalancer
 
 # Proxy
 nohup kubectl proxy \
@@ -196,10 +203,26 @@ kubectl proxy \
 #### Restart
 
 ```sh
+#
+kubectl rollout restart \
+  deployment \
+  -n [namespace] \
+  [name]
+
+#
 kubectl scale deployment \
   --replicas 0 \
   $(kubectl get deployment -l 'app=[appname]' -o jsonpath='{.items[0].metadata.name}' -n [namespace]) \
   -n [namespace]
+```
+
+#### Config
+
+```sh
+#
+kubectl config set-context \
+  --current \
+  --namespace [namespace]
 ```
 
 #### Scale

@@ -4,6 +4,12 @@
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install node_exporter
+```
+
 #### Darwin Binary
 
 ```sh
@@ -24,28 +30,12 @@ curl -L 'https://github.com/prometheus/node_exporter/releases/download/v0.18.1/n
 node_exporter -h
 ```
 
-### Configuration
-
-```sh
-# Darwin
-yq m -ai /usr/local/etc/prometheus.yml <(cat << EOF
-scrape_configs:
-- job_name: node
-  static_configs:
-  - targets:
-    - localhost:9100
-EOF
-)
-```
-
-```sh
-# Homebrew
-brew services restart prometheus
-```
-
 ### Service
 
 ```sh
+# Homebrew
+brew services start node_exporter
+
 # Systemd
 sudo tee /usr/lib/systemd/system/node_exporter.service << EOF
 [Unit]
@@ -72,4 +62,25 @@ node_exporter \
   --web.listen-address=':9100'
 
 echo -e '[INFO]\thttp://127.0.0.1:9100/metrics'
+```
+
+### Tips
+
+#### Prometheus Scrapping
+
+```sh
+# Darwin
+yq m -ai /usr/local/etc/prometheus.yml <(cat << EOF
+scrape_configs:
+- job_name: node
+  static_configs:
+  - targets:
+    - localhost:9100
+EOF
+)
+```
+
+```sh
+# Homebrew
+brew services restart prometheus
 ```

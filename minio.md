@@ -1,5 +1,11 @@
 # MinIO
 
+<!--
+helm3 install minio --namespace minio --create-namespace minio/minio-operator --version 4.1.0 -f kubernetes/manifests/minio-operator-values.yaml
+
+https://github.com/jsa4000/Observable-Distributed-System/blob/7601330d7cba1532857b9933c7e673f311a50e44/kubernetes/manifests/minio-create-buckets.yaml
+-->
+
 ## Links
 
 - [Main Website](https://min.io/)

@@ -1,4 +1,4 @@
-# kube-capacity
+# kubectl-resource-capacity
 
 ## Links
 
@@ -25,4 +25,14 @@ kubectl resource-capacity -h
 ```sh
 #
 kubectl resource-capacity
+
+#
+kubectl resource-capacity --pods
+kubectl resource-capacity --pods --util
+
+#
+kubectl resource-capacity --util --sort cpu.util
+
+#
+kubectl resource-capacity --available
 ```

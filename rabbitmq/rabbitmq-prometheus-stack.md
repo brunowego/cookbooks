@@ -14,13 +14,17 @@
 
 - [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
 
-### Service Monitor
+### Monitor
 
 ```sh
 #
 export INGRESS_HOST='127.0.0.1'
 export KUBECTL_NAMESPACE='my-app'
+```
 
+#### Service
+
+```sh
 # RabbitMQ clusters
 cat << EOF | kubectl apply \
   -n "$KUBECTL_NAMESPACE" \
@@ -32,15 +36,15 @@ metadata:
   labels:
     release: prometheus
 spec:
-  endpoints:
-  - port: prometheus
-    interval: 15s
   selector:
     matchLabels:
       app.kubernetes.io/component: rabbitmq
   namespaceSelector:
     matchNames:
     - $KUBECTL_NAMESPACE
+  endpoints:
+  - port: prometheus
+    interval: 15s
 EOF
 
 #
@@ -53,7 +57,11 @@ curl \
   "http://prometheus.${INGRESS_HOST}.nip.io/api/v1/targets/metadata" | \
     jq .status | \
       grep 'success'
+```
 
+#### Pod
+
+```sh
 #
 cat << EOF | kubectl apply \
   -n rabbitmq-system \
@@ -65,14 +73,14 @@ metadata:
   labels:
     release: prometheus
 spec:
-  podMetricsEndpoints:
-  - port: metrics
   selector:
     matchLabels:
       app.kubernetes.io/component: rabbitmq-operator
   namespaceSelector:
     matchNames:
     - rabbitmq-system
+  podMetricsEndpoints:
+  - port: metrics
 EOF
 
 #

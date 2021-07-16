@@ -5,7 +5,70 @@
 - [Code Repository](https://github.com/doctrine/orm)
 - [Main Website](https://doctrine-project.org/)
 
-<!-- ## Docker
+## CLI
+
+### Commands
+
+```sh
+bin/console doctrine:database:create -h
+bin/console doctrine:database:drop -h
+bin/console doctrine:database:import -h
+bin/console doctrine:migrations:current -h
+bin/console doctrine:migrations:diff -h
+bin/console doctrine:migrations:dump-schema -h
+bin/console doctrine:migrations:execute -h
+bin/console doctrine:migrations:generate -h
+bin/console doctrine:migrations:latest -h
+bin/console doctrine:migrations:list -h
+bin/console doctrine:migrations:migrate -h
+bin/console doctrine:migrations:rollup -h
+bin/console doctrine:migrations:status -h
+bin/console doctrine:migrations:sync-metadata-storage -h
+bin/console doctrine:migrations:up-to-date -h
+bin/console doctrine:migrations:version -h
+bin/console doctrine:query:sql -h
+```
+
+### Usage
+
+#### Database
+
+```sh
+#
+bin/console doctrine:database:create --env=dev
+```
+
+#### Schema
+
+```sh
+#
+bin/console doctrine:schema:update --force
+```
+
+#### Migrations
+
+```sh
+#
+bin/console doctrine:migrations:list
+
+#
+bin/console doctrine:migrations:diff
+
+#
+bin/console doctrine:migrations:migrate -n
+```
+
+<!-- ## Library
+
+```sh
+#
+composer require doctrine/orm
+
+#
+./vendor/bin/doctrine -h
+``` -->
+
+## Docker
 
 ### Running
 
@@ -17,30 +80,3 @@ docker run -it --rm \
   --name composer \
   docker.io/library/composer:2.1
 ```
-
-```sh
-#
-composer require doctrine/orm
-
-#
-./vendor/bin/doctrine -h
-
-#
-vendor/bin/console doctrine:schema:update --force
-
-#
-bin/console doctrine:database:create --env=dev
-
-#
-bin/console doctrine:migrations:list
-
-#
-bin/console doctrine:migrations:diff
-
-#
-bin/console doctrine:migrations:migrate -n
-
-
-bin/console cache:clear
-bin/console cache:warmup
-``` -->
