@@ -1,6 +1,8 @@
 # Istio
 
 <!--
+https://github.com/jsa4000/Observable-Distributed-System/blob/master/docs/11_istio_service_mesh.md
+
 https://linkedin.com/learning/kubernetes-service-mesh-with-istio/adjusting-istio-load-balancing-ratios
 https://app.pluralsight.com/library/courses/istio-managing-apps-kubernetes/table-of-contents
 
@@ -161,7 +163,7 @@ kubectl get crd -o json | jq -r '.items[] | select(.spec.group | contains("istio
 brew install istioctl
 ```
 
-#### Linux
+#### Linux Binary
 
 ```sh
 curl -L https://github.com/istio/istio/releases/download/1.3.0/istio-1.3.0-linux.tar.gz | \

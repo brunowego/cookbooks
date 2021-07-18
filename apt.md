@@ -21,6 +21,9 @@ grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*
 # Install
 sudo apt -y install [package]
 
+# With Dry Run
+sudo apt --dry-run install [package]
+
 # Non interactive
 sudo DEBIAN_FRONTEND=noninteractive apt -y install [package]
 

@@ -1,5 +1,11 @@
 # k9s
 
+## Alternatives
+
+- [Kubernetes Dashboard](/kubernetes/kubernetes-dashboard.md)
+- [Lens (a.k.a. OpenLens)](/lens.md)
+- [Octant](/octant.md)
+
 ## Links
 
 - [Main Website](https://k9scli.io/)

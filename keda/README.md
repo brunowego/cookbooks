@@ -1,0 +1,125 @@
+# KEDA
+
+<!--
+https://github.com/devjoes/github-runner-autoscaler
+
+https://dev.to/k6/how-to-autoscale-kubernetes-pods-with-keda-testing-with-k6-4nl9
+https://blog.devgenius.io/auto-scaling-kubernetes-keda-part-1-d7638d67ea17
+https://itnext.io/tutorial-auto-scale-your-kubernetes-apps-with-prometheus-and-keda-c6ea460e4642
+-->
+
+## Alternatives
+
+- [Horizontal Pod Autoscaler (HPA) Operator](/hpa/README.md)
+
+## Links
+
+- [Code Repository](https://github.com/kedacore/keda)
+- [Main Website](https://keda.sh/)
+
+## Helm
+
+### References
+
+- [Configuration](https://github.com/kedacore/charts/tree/master/keda#configuration)
+
+### Repository
+
+```sh
+helm repo add kedacore 'https://kedacore.github.io/charts'
+helm repo update
+```
+
+### Dependencies
+
+- [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
+
+### Install
+
+```sh
+#
+kubectl create namespace keda-system
+```
+
+```sh
+helm install keda kedacore/keda \
+  --namespace keda-system \
+  --version 2.3.2 \
+  -f <(cat << EOF
+prometheus:
+  metricServer:
+    enabled: true
+    podMonitor:
+      enabled: true
+      additionalLabels:
+        release: prometheus
+  operator:
+    enabled: true
+    podMonitor:
+      enabled: true
+      additionalLabels:
+        release: prometheus
+EOF
+)
+```
+
+### Status
+
+```sh
+kubectl rollout status deploy/keda-operator \
+  -n keda-system
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app=keda-operator' \
+  -n keda-system \
+  -f
+```
+
+<!-- ###
+
+```sh
+#
+cat << EOF | kubectl apply \
+  -n \
+  -f -
+apiVersion: keda.k8s.io/v1alpha1
+kind: ScaledObject
+metadata:
+  name: prometheus-scaledobject
+  namespace: default
+  labels:
+    deploymentName: go-prom-app
+spec:
+  scaleTargetRef:
+    deploymentName: go-prom-app
+  pollingInterval: 15
+  cooldownPeriod:  30
+  minReplicaCount: 1
+  maxReplicaCount: 10
+  triggers:
+  - type: prometheus
+    metadata:
+      serverAddress: http://prometheus-service.default.svc.cluster.local:9090
+      metricName: access_frequency
+      threshold: '3'
+      query: sum(rate(http_requests[2m]))
+EOF
+
+#
+kubectl get hpa -A
+``` -->
+
+### Delete
+
+```sh
+helm uninstall logging-operator \
+  -n keda-system
+
+kubectl delete namespace keda-system \
+  --grace-period=0 \
+  --force
+```

@@ -15,6 +15,13 @@
 brew install kafkacat
 ```
 
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install kafkacat
+```
+
 #### Source
 
 ##### Dependencies
@@ -22,36 +29,42 @@ brew install kafkacat
 ###### APT
 
 ```sh
-sudo apt update
-sudo apt -y install build-essential git which make wget zlib1g-dev
+sudo apt update;
+sudo apt -y install \
+  git \
+  curl \
+  pkg-config \
+  zlib1g-dev \
+  libzstd-dev \
+  cmake \
+  libcurl4-openssl-dev
 ```
 
 ###### YUM
 
 ```sh
 yum check-update
-sudo yum -y install git which make wget gcc-c++ zlib-devel
-```
-
-###### APK
-
-```sh
-sudo apk update
-sudo apk add git bash make wget g++ zlib-dev
-```
-
-###### Zypper
-
-```sh
-sudo zypper refresh
-sudo zypper install -y git-core gcc-c++ which make wget
+sudo yum -y install \
+  git \
+  which \
+  curl \
+  make \
+  gcc-c++ \
+  cyrus-sasl-devel \
+  cmake \
+  libcurl-devel
 ```
 
 ##### Build & Install
 
 ```sh
-git clone --branch 1.4.0 --single-branch --depth 1 https://github.com/edenhill/kafkacat.git
-( cd ./kafkacat && ./bootstrap.sh && sudo mv ./kafkacat /usr/local/bin ) && rm -fR ./kafkacat
+git clone \
+  --branch 1.6.0 \
+  --single-branch \
+  --depth 1 \
+  'https://github.com/edenhill/kafkacat.git'
+
+( cd ./kafkacat && ./bootstrap.sh && mv ./kafkacat /usr/local/bin ) && rm -fR ./kafkacat
 ```
 
 ### Commands
@@ -94,17 +107,67 @@ EOF
 
 ### Tips
 
-#### Kerberos Params
+#### Using SASL SCRAM
 
 ```sh
-kafkacat -Lb [hostname]:9092 \
+kafkacat \
+  -b [hostname]:9096 \
+  -X security.protocol=SASL_SSL \
+  -X sasl.mechanisms=SCRAM-SHA-512 \
+  -X sasl.username=[username] \
+  -X sasl.password=[password] \
+  -L
+```
+
+#### Using Kerberos Keytab
+
+```sh
+kafkacat \
+  -b [hostname]:9092 \
   -X security.protocol=SASL_PLAINTEXT \
   -X sasl.kerberos.service.name=kafka \
   -X sasl.kerberos.keytab=/etc/security/keytabs/[name].keytab \
-  -X sasl.kerberos.principal=[username]/[FQDN]@[REALM]
+  -X sasl.kerberos.principal=[username]/[FQDN]@[REALM] \
+  -L
+```
+
+#### Using SSL Key
+
+```sh
+kafkacat \
+  -b [hostname]:9093 \
+  -X security.protocol=SSL \
+  -X ssl.key.location=private_key.pem \
+  -X ssl.key.password=[password] \
+  -X ssl.certificate.location=signed_cert.pem \
+  -X ssl.ca.location=ca_cert.pem \
+  -L
 ```
 
 ### Issues
+
+<!-- ####
+
+```sh
+% Fatal error at metadata_list:832:
+% ERROR: Failed to acquire metadata: Local: Broker transport failure
+```
+
+```sh
+kafkacat -V | grep builtin.features
+``` -->
+
+#### Linux Absent Alias
+
+```sh
+% ERROR: No such configuration property: "sasl.mechanism"
+```
+
+```sh
+kafkacat -X list | grep sasl.mechanisms
+```
+
+Change parameter to `sasl.mechanisms`.
 
 #### Host resolution
 

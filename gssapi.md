@@ -1,4 +1,4 @@
-# GSSAPI (Generic Security Services API)
+# Generic Security Services API (GSSAPI)
 
 ## Library
 
@@ -7,6 +7,13 @@
 - [MIT Kerberos Development](/krb5-devel.md)
 
 ### Installation
+
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install libsasl2-dev
+```
 
 #### YUM
 

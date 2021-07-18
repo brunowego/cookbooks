@@ -13,7 +13,7 @@ kubectl patch ingress/mobilecapture-mobile-capture -p '{"metadata":{"annotations
 ### Repository
 
 ```sh
-helm repo add jetstack https://charts.jetstack.io
+helm repo add jetstack 'https://charts.jetstack.io'
 helm repo update
 ```
 

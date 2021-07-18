@@ -8,6 +8,7 @@ https://github.com/nvaidya1/BugBust-repo-python/tree/master/awscli/examples/rds
 ## Guides
 
 - [Secure RDS Access through SSH over AWS SSM](https://codelabs.transcend.io/codelabs/aws-ssh-ssm-rds/#0)
+- [IAM database authentication for MySQL and PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
 
 ## CLI
 

@@ -13,7 +13,14 @@ https://linkedin.com/learning/learning-mongodb/
 
 ### References
 
-- [Exposing TCP and UDP services](https://github.com/kubernetes/ingress-nginx/blob/master/docs/user-guide/exposing-tcp-udp-services.md)
+- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/mongodb#parameters)
+
+### Repository
+
+```sh
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
+helm repo update
+```
 
 ### Install
 
@@ -22,51 +29,42 @@ kubectl create namespace mongodb
 ```
 
 ```sh
-helm install mongodb stable/mongodb \
+helm install mongo bitnami/mongodb \
   --namespace mongodb \
-  --set ingress.enabled=true \
-  --set ingress.hosts={mongodb.example.com}
+  --version 10.23.0 \
+  -f <(cat << EOF
+auth:
+  rootPassword: root
+EOF
+)
 ```
 
 ### Secrets
 
 ```sh
-kubectl get secret mongodb \
+kubectl get secret mongo-mongodb \
   -o jsonpath='{.data.mongodb-root-password}' \
   -n mongodb | \
     base64 --decode; echo
 ```
 
-### NGINX Ingress
+### Port Forward
 
 ```sh
-helm upgrade nginx-ingress stable/nginx-ingress -f <(yq w <(helm get values nginx-ingress) tcp.27017 mongodb/mongodb:27017)
+kubectl port-forward svc/mongo-mongodb 27017:27017 \
+  --namespace mongodb
 ```
 
 ### Delete
 
 ```sh
-helm uninstall mongodb -n mongodb
-kubectl delete namespace mongodb --grace-period=0 --force
+helm uninstall mongo \
+  -n mongodb
+
+kubectl delete namespace mongodb \
+  --grace-period=0 \
+  --force
 ```
-
-<!-- ```sh
-helm get values nginx-ingress > ./current-values.yaml
-```
-
-Adjust `^tcp: ` value:
-
-```sh
-vim ./current-values.yaml
-```
-
-```sh
-helm upgrade nginx-ingress stable/nginx-ingress -f ./current-values.yaml
-```
-
-```sh
-rm ./current-values.yaml
-``` -->
 
 ## Docker
 

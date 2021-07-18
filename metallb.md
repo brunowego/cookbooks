@@ -13,7 +13,7 @@
 ```sh
 #
 kubectl apply \
-  -f 'https://raw.githubusercontent.com/metallb/metallb/v0.9.6/manifests/namespace.yaml'
+  -f 'https://raw.githubusercontent.com/metallb/metallb/v0.10.2/manifests/namespace.yaml'
 
 #
 kubectl create secret generic \
@@ -23,10 +23,10 @@ kubectl create secret generic \
 
 #
 kubectl apply \
-  -f 'https://raw.githubusercontent.com/metallb/metallb/v0.9.6/manifests/metallb.yaml'
+  -f 'https://raw.githubusercontent.com/metallb/metallb/v0.10.2/manifests/metallb.yaml'
 
 #
-cat << EOF | kubectl apply -f
+cat << EOF | kubectl apply -f -
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -40,6 +40,17 @@ data:
       addresses:
       - 172.18.0.155-172.18.0.200
 EOF
+```
+
+### Delete
+
+```sh
+kubectl delete \
+  -f 'https://raw.githubusercontent.com/metallb/metallb/v0.10.2/manifests/metallb.yaml'
+
+#
+kubectl delete \
+  -f 'https://raw.githubusercontent.com/metallb/metallb/v0.10.2/manifests/namespace.yaml'
 ```
 
 ## Helm
@@ -72,10 +83,10 @@ metadata:
 data:
   config: |
     address-pools:
-      - name: default
-        protocol: layer2
-        addresses:
-          - 192.168.1.240-192.168.1.250
+    - name: default
+      protocol: layer2
+      addresses:
+      - 192.168.1.240-192.168.1.250
 EOF
 ```
 

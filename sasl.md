@@ -9,3 +9,14 @@
 - Generic Security Services Application Program Interface (GSSAPI)
 - Salted Challenge Response Authentication Mechanism (SCRAM)
 - PLAIN
+
+## Library
+
+### Installation
+
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install libsasl2-dev
+```

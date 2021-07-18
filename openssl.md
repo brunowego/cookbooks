@@ -10,18 +10,18 @@
 brew install openssl
 ```
 
-#### YUM
-
-```sh
-yum check-update
-sudo yum -y install openssl
-```
-
 #### APT
 
 ```sh
 sudo apt update
 sudo apt -y install openssl
+```
+
+#### YUM
+
+```sh
+yum check-update
+sudo yum -y install openssl
 ```
 
 #### Source

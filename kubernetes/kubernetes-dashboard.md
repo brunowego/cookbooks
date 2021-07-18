@@ -1,5 +1,11 @@
 # Kubernetes Dashboard
 
+## Alternatives
+
+- [k9s](/k9s.md)
+- [Lens (a.k.a. OpenLens)](/lens.md)
+- [Octant](/octant.md)
+
 ## Helm
 
 ### References
@@ -117,4 +123,43 @@ kubectl get secret $(kubectl get serviceaccount kubernetes-dashboard -n kube-sys
 
 ```sh
 helm uninstall kubernetes-dashboard -n kubernetes-dashboard
+```
+
+## Kubernetes Manifest
+
+### Install
+
+```sh
+#
+kubectl apply \
+  -f 'https://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml'
+```
+
+## Secrets
+
+```sh
+kubectl get secret \
+  --field-selector 'type=kubernetes.io/service-account-token' \
+  -n kubernetes-dashboard \
+  -o json | \
+    jq -r '.items[0].data["token"]' | \
+      base64 --decode; echo
+```
+
+## Proxy
+
+```sh
+#
+kubectl proxy
+
+#
+echo -e "[INFO]\thttp://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy"
+```
+
+### Delete
+
+```sh
+#
+kubectl delete \
+  -f 'https://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml'
 ```

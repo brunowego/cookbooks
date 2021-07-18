@@ -20,14 +20,19 @@ https://github.com/jsa4000/Observable-Distributed-System/blob/master/docs/01_ope
 ```sh
 #
 kubectl apply \
-  -f 'https://github.com/operator-framework/operator-lifecycle-manager/releases/download/0.18.2/crds.yaml'
+  -f 'https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.18.2/crds.yaml'
 
 kubectl apply \
-  -f 'https://github.com/operator-framework/operator-lifecycle-manager/releases/download/0.18.2/olm.yaml'
+  -f 'https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.18.2/olm.yaml'
+```
 
+### Usage
+
+```sh
 #
 kubectl get olm -A
 
 #
-kubectl get pods -n olm
+kubectl get pods \
+  -n olm
 ```

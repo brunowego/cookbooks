@@ -4,6 +4,12 @@
 https://www.youtube.com/watch?v=zW-E8THfvPY
 -->
 
+## Alternatives
+
+- [k9s](/k9s.md)
+- [Kubernetes Dashboard](/kubernetes/kubernetes-dashboard.md)
+- [Octant](/octant.md)
+
 ## Links
 
 - [Main Website](https://k8slens.dev/)
