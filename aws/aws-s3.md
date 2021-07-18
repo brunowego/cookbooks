@@ -3,6 +3,7 @@
 ## Alternatives
 
 - [MinIO](/minio.md)
+- Rook
 
 ## CLI
 

@@ -14,6 +14,11 @@ https://www.linkedin.com/learning/aws-certified-solutions-architect-associate-sa
 Amazon Aurora Serverless
 -->
 
+## Alternatives
+
+- MySQL
+- PostgreSQL
+
 ## Guides
 
 - [Aurora MySQL version numbers and special versions](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.Versions.html)

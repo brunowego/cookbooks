@@ -1,5 +1,12 @@
 # AWS CodePipeline
 
+## Alternatives
+
+- CicleCI
+- Jenkins
+- Bamboo
+- Github Actions
+
 ## Solution
 
 ### Service Benefits

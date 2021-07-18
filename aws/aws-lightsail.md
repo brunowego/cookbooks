@@ -1,5 +1,11 @@
 # AWS Lightsail
 
+## Alternatives
+
+- Digital Ocean
+- Linode
+- Heroku
+
 ## CLI
 
 ### Dependencies

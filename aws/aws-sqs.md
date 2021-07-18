@@ -7,6 +7,10 @@ https://app.pluralsight.com/library/courses/message-queuing-amazon-sqs/table-of-
 ## Alternatives
 
 - [ElasticMQ](/elasticmq.md)
+- Redis
+- Apache Kafka
+- RabbitMQ
+- ActiveMQ
 
 ## Links
 

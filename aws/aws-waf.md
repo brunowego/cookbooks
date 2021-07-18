@@ -1,5 +1,12 @@
 # AWS Web Application Firewall (WAF)
 
+## Alternatives
+
+- Cloudflare
+- Incapsula
+- pfSense
+- Wazuh
+
 ## CLI
 
 ### Commands

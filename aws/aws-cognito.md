@@ -37,6 +37,12 @@ https://www.youtube.com/watch?v=oFSU6rhFETk
 https://www.youtube.com/watch?v=o7OHogUcRmI
 -->
 
+## Alternatives
+
+- Auth0
+- Okta
+- Keycloak
+
 ## Implementations
 
 - [aws-cognito-react - v2](https://github.com/dbroadhurst/aws-cognito-react)

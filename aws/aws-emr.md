@@ -1,5 +1,11 @@
 # AWS Elastic MapReduce (EMR)
 
+## Alternatives
+
+- Hadoop
+- Databricks
+- Snowflake
+
 ## CLI
 
 ### Commands

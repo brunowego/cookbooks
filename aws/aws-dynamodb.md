@@ -1,5 +1,9 @@
 # AWS DynamoDB
 
+## Alternatives
+
+- MongoDB
+
 ## CLI
 
 ### Commands

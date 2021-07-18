@@ -23,6 +23,10 @@ https://linkedin.com/learning/learning-cloud-computing-serverless-computing/intr
 https://linkedin.com/learning/developing-aws-lambda-functions-with-kotlin/welcome
 -->
 
+## Alternatives
+
+- Serverless
+
 ## CLI
 
 ### Commands

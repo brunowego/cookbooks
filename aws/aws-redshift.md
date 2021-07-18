@@ -13,6 +13,10 @@ https://linkedin.com/learning/aws-certified-database-specialty-dbs-c01-2-design-
 https://linkedin.com/learning/amazon-web-services-data-services-2/scalable-data-solutions-on-aws
 -->
 
+## Alternatives
+
+- Hadoop
+
 ## References
 
 - [Amazon Web Services (AWS)](/aws.md)

@@ -61,7 +61,6 @@ Transactions Per Second (TPS)
 
 - Launches first service Simple Queue Service (SQS) around 2004
 
-
 ## Questions
 
 ### Why Deploy Globally?

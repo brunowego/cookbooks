@@ -5,6 +5,12 @@ https://github.com/symopsio/terraform-okta-ssm-modules/blob/main/bin/ec2-tunnel
 https://github.com/nvaidya1/BugBust-repo-python/tree/master/awscli/examples/rds
 -->
 
+## Alternatives
+
+- MySQL
+- PostgreSQL
+- MariaDB
+
 ## Guides
 
 - [Secure RDS Access through SSH over AWS SSM](https://codelabs.transcend.io/codelabs/aws-ssh-ssm-rds/#0)

@@ -2,6 +2,13 @@
 
 **Keywords:** CDN
 
+## Alternatives
+
+- Fastly
+- Incapsula
+- MaxCDN
+- Cloudflare
+
 ## Solution
 
 ### Overview
