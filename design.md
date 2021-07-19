@@ -1,5 +1,10 @@
 # Design
 
+<!--
+https://www.ls.graphics/presentation-kit/wooden-iphone-12-pro-mockups
+https://app.spendesk.com/auth/login
+-->
+
 ##
 
 - Business Design

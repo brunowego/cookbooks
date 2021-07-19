@@ -6,6 +6,10 @@ https://www.udemy.com/course/the-complete-traefik-training-course/?referralCode=
 helm3 repo add traefik https://helm.traefik.io/traefik
 -->
 
+## Alternatives
+
+- [Kubernetes Ingress NGINX](/kubernetes/kubernetes-ingress-nginx.md)
+
 ## Guides
 
 - [Capture Traefik Metrics for Apps on Kubernetes with Prometheus](https://traefik.io/blog/capture-traefik-metrics-for-apps-on-kubernetes-with-prometheus/)

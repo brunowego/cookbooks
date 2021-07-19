@@ -2,6 +2,8 @@
 
 <!--
 kubectl patch ingress/mobilecapture-mobile-capture -p '{"metadata":{"annotations":{"cert-manager.io/issuer":"letsencrypt-prod"}}}'
+
+https://github.com/Thakurvaibhav/k8s/tree/master/cert-manager
 -->
 
 ## Helm

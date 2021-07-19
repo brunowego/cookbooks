@@ -3,6 +3,7 @@
 <!--
 https://www.toptal.com/software/trunk-based-development-git-flow
 https://mechanicalrock.github.io/2019/07/01/continuous-deployment-the-first-step-on-the-road-to-recovery.html
+https://martinfowler.com/articles/branching-patterns.html
 -->
 
 **Keywords:** Workflow

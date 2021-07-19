@@ -1,12 +1,9 @@
 # Google
 
-<!--
-https://killedbygoogle.com/
--->
-
 ## Links
 
 - [Your devices](https://myaccount.google.com/device-activity)
+- [Killed by Google](https://killedbygoogle.com/)
 
 ## References
 

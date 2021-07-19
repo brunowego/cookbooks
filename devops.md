@@ -49,6 +49,8 @@ https://linkedin.com/learning/devops-foundations-continuous-delivery-continuous-
 - System Development Life Cycle (SDLC)
 - You Build It, You Run It (YBI/YRI)
 - Complex Adaptive System (CAS)
+- Recovery Point Objetive (RPO)
+- Recovery Time Objective (RTO)
 
 ## Topics
 

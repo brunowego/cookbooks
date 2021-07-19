@@ -16,62 +16,45 @@ Kubernetes Operator to automate Helm, DaemonSet, StatefulSet & Deployment update
 ### Repository
 
 ```sh
-helm repo add keel https://charts.keel.sh
+helm repo add keel 'https://charts.keel.sh'
 helm repo update
 ```
 
 ### Install
 
 ```sh
-kubectl create namespace keel
-```
+#
+export INGRESS_HOST='127.0.0.1'
 
-```sh
+#
 helm install keel keel/keel \
-  --namespace keel \
-  --set ingress.enabled=true \
-  --set "ingress.hosts[0].host=keel.${INGRESS_HOST}.nip.io" \
-  --set 'ingress.hosts[0].paths={/}'
+  --namespace kube-system \
+  --version 0.9.8 \
+  -f <(cat << EOF
+ingress:
+  enabled: true
+  hosts:
+  - host: keel.${INGRESS_HOST}.nip.io
+    paths:
+      - /
+EOF
+)
 ```
-
-### SSL
-
-### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-<!-- #### Create
-
-TODO -->
-
-<!-- #### Remove
-
-TODO -->
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/keel -n keel
+kubectl rollout status deploy/keel \
+  -n kube-system
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app=keel' -n keel -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 keel.keel.svc.cluster.local +short
-nslookup keel.keel.svc.cluster.local 10.96.0.10
-```
-
-#### ExternalDNS
-
-```sh
-dig @10.96.0.10 "keel.${INGRESS_HOST}.nip.io" +short
-nslookup "keel.${INGRESS_HOST}.nip.io" 10.96.0.10
+kubectl logs \
+  -l 'app=keel' \
+  -n kube-system \
+  -f
 ```
 
 <!-- ### Secret
@@ -86,6 +69,6 @@ kubectl get secret keel \
 ### Delete
 
 ```sh
-helm uninstall keel -n keel
-kubectl delete namespace keel --grace-period=0 --force
+helm uninstall keel \
+  -n kube-system
 ```

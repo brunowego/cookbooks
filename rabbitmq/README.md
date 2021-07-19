@@ -3,8 +3,13 @@
 **Keywords:** Message-Based System
 
 <!--
+https://awesome-prometheus-alerts.grep.to/rules.html
+
+https://gist.github.com/nicosingh/08be6d6e7605a43fe52d1f201c2b47d8
+
 https://www.youtube.com/watch?v=NWISW6AwpOE
 
+https://github.com/gfronza/rabbitmq-alert
 
 https://linkedin.com/learning/learning-rabbitmq/connect-your-services-with-asynchronous-messaging-2
 

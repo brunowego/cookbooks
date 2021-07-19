@@ -160,6 +160,17 @@ jdbc:hive2://[hostname]:2181/default;serviceDiscoveryMode=zooKeeper;zooKeeperNam
 
 ### Issues
 
+#### Missing JVM
+
+```log
+Failed to create the Java Virtual Machine.
+```
+
+```sh
+# Darwin
+sed "/^-vmargs/i -vm\n$(dirname $(readlink -f $(which java)))" /Applications/DBeaver.app/Contents/Eclipse/dbeaver.ini
+```
+
 #### Authentication Failed
 
 ```log

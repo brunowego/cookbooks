@@ -36,15 +36,29 @@ kubectl create namespace monitoring
 helm install prometheus prometheus-community/kube-prometheus-stack \
   --namespace monitoring \
   --version 16.12.1 \
-  --set prometheus.ingress.enabled=true \
-  --set prometheus.ingress.hosts="{prometheus.${INGRESS_HOST}.nip.io}" \
-  --set prometheus.ingress.pathType=Prefix \
-  --set alertmanager.ingress.enabled=true \
-  --set alertmanager.ingress.hosts="{alertmanager.${INGRESS_HOST}.nip.io}" \
-  --set alertmanager.ingress.pathType=Prefix \
-  --set grafana.adminPassword="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
-  --set grafana.ingress.enabled=true \
-  --set grafana.ingress.hosts="{grafana.${INGRESS_HOST}.nip.io}"
+  -f <(cat << EOF
+prometheus:
+  ingress:
+    enabled: true
+    hosts:
+    - prometheus.${INGRESS_HOST}.nip.io
+    pathType: Prefix
+
+alertmanager:
+  ingress:
+    enabled: true
+    hosts:
+    - alertmanager.${INGRESS_HOST}.nip.io
+    pathType: Prefix
+
+grafana:
+  adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
+  ingress:
+    enabled: true
+    hosts:
+    - grafana.${INGRESS_HOST}.nip.io
+EOF
+)
 ```
 
 ### Status
@@ -94,17 +108,6 @@ echo -e "[INFO]\thttp://alertmanager.${INGRESS_HOST}.nip.io"
 
 #
 echo -e "[INFO]\thttp://grafana.${INGRESS_HOST}.nip.io"
-```
-
-### Delete
-
-```sh
-helm uninstall prometheus \
-  -n monitoring
-
-kubectl delete namespace monitoring \
-  --grace-period=0 \
-  --force
 ```
 
 ### Tips
@@ -191,6 +194,28 @@ echo -e "[INFO]\thttp://prometheus.${INGRESS_HOST}.nip.io/service-discovery"
 echo -e "[INFO]\thttp://prometheus.${INGRESS_HOST}.nip.io/config"
 ```
 
+### Tips
+
+#### AWS NLB
+
+```sh
+#
+kubectl patch svc prometheus-stack-kube-prom-prometheus \
+  -p '{"spec":{"type":"LoadBalancer"}}' \
+  -n monitoring
+
+#
+kubectl annotate svc prometheus-stack-kube-prom-prometheus \
+  service.beta.kubernetes.io/aws-load-balancer-internal='true' \
+  service.beta.kubernetes.io/aws-load-balancer-type=nlb \
+  external-dns.alpha.kubernetes.io/hostname=prometheus.example.com \
+  -n monitoring
+
+#
+kubectl get service prometheus-stack-kube-prom-prometheus \
+  -n monitoring
+```
+
 ### Issues
 
 #### Timeout with ELB
@@ -207,4 +232,15 @@ helm install prometheus prometheus-community/kube-prometheus-stack \
   --timeout 30m \
   --wait \
   --debug
+```
+
+### Delete
+
+```sh
+helm uninstall prometheus \
+  -n monitoring
+
+kubectl delete namespace monitoring \
+  --grace-period=0 \
+  --force
 ```

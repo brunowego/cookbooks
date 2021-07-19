@@ -5,6 +5,10 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
 https://web.dev/same-site-same-origin/
 -->
 
+## Alternatives
+
+- [Traefik](/traefik.md)
+
 ## Links
 
 - [Annotations](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/)
@@ -97,6 +101,7 @@ Error from server (InternalError): error when creating "STDIN": Internal error o
 ```
 
 ```sh
+#
 kubectl delete -A ValidatingWebhookConfiguration ingress-nginx-admission
 ```
 

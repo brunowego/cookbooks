@@ -51,3 +51,13 @@ for zone in `aws --output json route53 list-hosted-zones | jq -r '.HostedZones[]
             done;
 done
 ```
+
+<!--
+heritage=external-dns,
+external-dns/owner=prod-us-east-1,
+external-dns/resource=service/monitoring/prometheus-stack-kube-prom-prometheus
+
+heritage=external-dns,
+external-dns/owner=tools-us-east-1,
+external-dns/resource=ingress/monitoring/prometheus-stack-grafana
+-->

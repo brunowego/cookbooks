@@ -3,6 +3,8 @@
 Efficient compilation, Efficient execution and Ease of programming.
 
 <!--
+https://go-zero.dev/en/
+
 https://github.com/nikolaydubina/go-recipes
 
 https://github.com/golangci/golangci-lint
@@ -145,6 +147,10 @@ go env
 # List installed packages
 go list '...'
 ```
+
+<!--
+go mod download
+-->
 
 ### Tips
 

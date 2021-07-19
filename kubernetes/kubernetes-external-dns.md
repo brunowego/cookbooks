@@ -1,17 +1,30 @@
-# ExternalDNS
+# Kubernetes ExternalDNS
 
 ## References
 
 - [Frequently asked questions](https://github.com/kubernetes-incubator/external-dns/blob/master/docs/faq.md#user-content-are-other-ingress-controllers-supported)
 - [Tutorials](https://github.com/kubernetes-incubator/external-dns/tree/master/docs/tutorials)
 
+## Guides
+
+- [Setting up ExternalDNS for Services on AWS](https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/aws.md)
+
 ## Helm
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/external-dns#configuration)
+- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/external-dns#parameters)
+
+### Repository
+
+```sh
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
+helm repo update
+```
 
 ### Dependencies
+
+**For CoreDNS Provider**
 
 - [etcd (Bitnami)](/etcd.md) or [etcd Operator](/etcd-operator.md)
 - [CoreDNS](/coredns.md)
@@ -19,24 +32,32 @@
 ### Install
 
 ```sh
-helm install external-dns stable/external-dns \
+helm install external-dns bitnami/external-dns \
   --namespace kube-system \
-  --set provider=coredns \
-  --set coredns.etcdEndpoints='http://etcd-cluster.kube-system.svc.cluster.local:2379' \
-  --set logLevel=debug \
-  --set rbac.create=true
+  --version 5.2.1 \
+  -f <(cat << EOF
+provider: coredns
+
+coredns:
+  etcdEndpoints: http://etcd-cluster.kube-system.svc.cluster.local:2379
+EOF
+)
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/external-dns -n kube-system
+kubectl rollout status deploy/external-dns \
+  -n kube-system
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app.kubernetes.io/name=external-dns' -n kube-system -f
+kubectl logs \
+  -l 'app.kubernetes.io/name=external-dns' \
+  -n kube-system \
+  -f
 ```
 
 ### Test
@@ -71,6 +92,7 @@ kubectl get service nginx -o yaml
 
 ```sh
 dig @10.96.0.10 nginx.example.com +short
+
 nslookup nginx.example.com 10.96.0.10
 ```
 
@@ -103,11 +125,23 @@ time="2019-09-18T13:53:03Z" level=error msg="context deadline exceeded"
 Wrong etcd endpoints are configured.
 
 ```sh
-helm get values external-dns | yq r - coredns.etcdEndpoints
+helm get values external-dns | \
+  yq r - coredns.etcdEndpoints
 ```
 
 ### Delete
 
 ```sh
-helm uninstall external-dns -n external-dns
+helm uninstall external-dns \
+  -n external-dns
 ```
+
+<!--
+service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
+service.beta.kubernetes.io/aws-load-balancer-internal: "true"
+service.beta.kubernetes.io/aws-load-balancer-internal: 10.96.0.0/11
+service.beta.kubernetes.io/aws-load-balancer-proxy-protocol: "*"
+service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:us-east-1:[id]:certificate/[uuid]
+service.beta.kubernetes.io/aws-load-balancer-ssl-ports: https
+service.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled: "true"
+-->
