@@ -1,6 +1,8 @@
 # Cookbooks
 
 <!--
+https://hackertyper.com/
+
 1. https://linkedin.com/learning/learning-javascript-debugging-2/welcome
 2. https://linkedin.com/learning/software-design-from-requirements-to-release/going-from-requirements-to-release
 3. https://linkedin.com/learning/programming-foundations-beyond-the-fundamentals/broadening-your-knowledge-of-programming-fundamentals

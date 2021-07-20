@@ -17,70 +17,66 @@ https://app.pluralsight.com/library/courses/building-deploying-monitoring-apache
 ### Repository
 
 ```sh
-helm repo add cetic https://cetic.github.io/helm-charts
+helm repo add cetic 'https://cetic.github.io/helm-charts'
 helm repo update
 ```
 
 ### Install
 
 ```sh
-kubectl create namespace nifi
+#
+export INGRESS_HOST='127.0.0.1'
+
+#
+kubectl create namespace nifi-system
 ```
 
 ```sh
 helm install nifi cetic/nifi \
-  --namespace nifi \
-  --set ingress.enabled=true \
-  --set ingress.hosts={nifi.${INGRESS_HOST}.nip.io}
-```
-
-### SSL
-
-#### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-#### Create
-
-```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n nifi
-```
-
-```sh
-helm upgrade nifi cetic/nifi -f <(yq m <(cat << EOF
+  --namespace nifi-system \
+  --version 0.7.8 \
+  -f <(cat << EOF
 ingress:
-  tls:
-    - secretName: example.tls-secret
-      hosts:
-        - nifi.${INGRESS_HOST}.nip.io
+  enabled: true
+  hosts:
+  - nifi.${INGRESS_HOST}.nip.io
 EOF
-) <(helm get values nifi))
-```
-
-#### Remove
-
-```sh
-helm upgrade nifi cetic/nifi -f <(yq d <(helm get values nifi) ingress.tls)
-
-kubectl delete secret example.tls-secret -n nifi
+)
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status statefulset nifi -n nifi
+kubectl rollout status statefulset nifi \
+  -n nifi-system
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app=nifi' -c server -n nifi -f
-kubectl logs -l 'app=nifi' -c app-log -n nifi -f
-kubectl logs -l 'app=nifi' -c bootstrap-log -n nifi -f
-kubectl logs -l 'app=nifi' -c user-log -n nifi -f
+kubectl logs \
+  -l 'app=nifi' \
+  -c server \
+  -n nifi-system \
+  -f
+
+kubectl logs \
+  -l 'app=nifi' \
+  -c app-log \
+  -n nifi-system \
+  -f
+
+kubectl logs \
+  -l 'app=nifi' \
+  -c bootstrap-log \
+  -n nifi-system \
+  -f
+
+kubectl logs \
+  -l 'app=nifi' \
+  -c user-log \
+  -n nifi-system \
+  -f
 ```
 
 ### DNS
@@ -102,16 +98,19 @@ nslookup "nifi.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```sh
 kubectl get secret nifi \
   -o jsonpath='{.data.admin-password}' \
-  -n nifi | \
+  -n nifi-system | \
     base64 --decode; echo
 ```
 
 ### Delete
 
 ```sh
-helm uninstall nifi -n nifi
+helm uninstall nifi \
+  -n nifi-system
 
-kubectl delete namespace nifi --grace-period=0 --force
+kubectl delete namespace nifi-system \
+  --grace-period=0 \
+  --force
 ```
 
 ## Docker

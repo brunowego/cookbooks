@@ -104,9 +104,9 @@ kubectl create secret tls example.tls-secret \
 helm upgrade kubecost stable/cost-analyzer -f <(yq m <(cat << EOF
 ingress:
   tls:
-    - secretName: example.tls-secret
-      hosts:
-        - kubecost.${INGRESS_HOST}.nip.io
+  - secretName: example.tls-secret
+    hosts:
+    - kubecost.${INGRESS_HOST}.nip.io
 EOF
 ) <(helm get values kubecost))
 ```

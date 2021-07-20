@@ -110,7 +110,7 @@ TODO -->
 ### Repository
 
 ```sh
-helm repo add sentry https://sentry-kubernetes.github.io/charts
+helm repo add sentry 'https://sentry-kubernetes.github.io/charts'
 helm repo update
 ```
 
@@ -121,65 +121,55 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace sentry
+kubectl create namespace sentry-system
 ```
 
 ```sh
 helm install sentry sentry/sentry \
-  --namespace sentry \
+  --namespace sentry-system \
   --version 11.4.1 \
-  --set user.email='admin@example.com' \
-  --set user.password='admin' \
-  --set ingress.enabled=true \
-  --set ingress.hostname="sentry.${INGRESS_HOST}.nip.io"
-```
+  -f <(cat << EOF
+user:
+  email: admin@example.com
+  password: admin
 
-<!-- ### SSL
-
-#### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-#### Create
-
-```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n sentry
-```
-
-```sh
-helm upgrade sentry stable/sentry -f <(yq m <(cat << EOF
 ingress:
-  tls:
-    - secretName: example.tls-secret
-      hosts:
-        - sentry.${INGRESS_HOST}.nip.io
+  enabled: true
+  hostname: sentry.${INGRESS_HOST}.nip.io
+
+metrics:
+  enabled: true
+
+  serviceMonitor:
+    enabled: true
 EOF
-) <(helm get values sentry))
+)
 ```
-
-#### Remove
-
-```sh
-helm upgrade sentry stable/sentry -f <(yq d <(helm get values sentry) ingress.tls)
-
-kubectl delete secret example.tls-secret -n sentry
-``` -->
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/sentry-web -n sentry
+kubectl rollout status deploy/sentry-web \
+  -n sentry-system
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app=sentry,role=web' -n sentry -f
-kubectl logs -l 'app=sentry,role=worker' -n sentry -f
-kubectl logs -l 'app=sentry,role=cron' -n sentry -f
+kubectl logs \
+  -l 'app=sentry,role=web' \
+  -n sentry-system \
+  -f
+
+kubectl logs \
+  -l 'app=sentry,role=worker' \
+  -n sentry-system \
+  -f
+
+kubectl logs \
+  -l 'app=sentry,role=cron' \
+  -n sentry-system \
+  -f
 ```
 
 ### Ingress
@@ -193,9 +183,9 @@ echo -e "[INFO]\thttp://sentry.${INGRESS_HOST}.nip.io"
 
 ```sh
 helm uninstall sentry \
-  -n sentry
+  -n sentry-system
 
-kubectl delete namespace sentry \
+kubectl delete namespace sentry-system \
   --grace-period=0 \
   --force
 ```

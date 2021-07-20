@@ -170,3 +170,95 @@ atlantis server \
   --azuredevops-user [user] \
   --azuredevops-token [token]
 ```
+
+## Docker
+
+### Running
+
+```sh
+docker run -it --rm \
+  -h atlantis \
+  --name atlantis \
+  docker.io/runatlantis/atlantis:v0.17.2 atlantis -h
+```
+
+## Helm
+
+### References
+
+- [Chart Repository](https://github.com/runatlantis/helm-charts/tree/main/charts/atlantis)
+
+### Repository
+
+```sh
+helm repo add runatlantis 'https://runatlantis.github.io/helm-charts'
+helm repo update
+```
+
+### Install
+
+```sh
+#
+export INGRESS_HOST='127.0.0.1'
+
+#
+kubectl create namespace atlantis-system
+```
+
+```sh
+helm install atlantis runatlantis/atlantis \
+  --namespace atlantis-system \
+  --version 3.14.0 \
+  -f <(cat << EOF
+orgWhitelist: github.com/[org-name]/*
+
+github:
+  user: [username]
+  token: [token]
+  secret: [secret]
+
+ingress:
+  host: atlantis.${INGRESS_HOST}.nip.io
+  path:
+  - /
+EOF
+)
+```
+
+### Status
+
+```sh
+kubectl rollout status deploy/logging-operator \
+  -n atlantis-system
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app.kubernetes.io/name=logging-operator' \
+  -n atlantis-system \
+  -f
+```
+
+### Port Forward
+
+```sh
+kubectl port-forward svc/atlantis 8080:80 \
+  -n atlantis
+```
+
+<!--
+http://atlantis.${INGRESS_HOST}.nip.io/events
+-->
+
+### Delete
+
+```sh
+helm uninstall atlantis \
+  -n atlantis-system
+
+kubectl delete namespace atlantis-system \
+  --grace-period=0 \
+  --force
+```
