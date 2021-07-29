@@ -114,6 +114,10 @@ helm repo add sentry 'https://sentry-kubernetes.github.io/charts'
 helm repo update
 ```
 
+### Dependencies
+
+- [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
+
 ### Install
 
 ```sh
@@ -139,11 +143,14 @@ ingress:
 
 metrics:
   enabled: true
-
   serviceMonitor:
     enabled: true
+    additionalLabels:
+      release: prometheus
 EOF
-)
+) \
+  --timeout 15m \
+  --wait
 ```
 
 ### Status

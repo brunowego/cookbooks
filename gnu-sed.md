@@ -56,20 +56,15 @@ sed 's/[pattern]/[text]/; s/[pattern]/[text]/' [/path/to/file]
 # With Regex
 sed -ri '/[pattern]/ s/[original]/[text]/' [/path/to/file]
 
-# Prepend
+# Line Before
 sed '/[pattern]/i [text]' [/path/to/file]
 
-# Append
+# Line After
 sed '/[pattern]/a [text]' [/path/to/file]
 
-# Before
-sed 's/[pattern]/& [text]' [/path/to/file]
-
-# After
-sed 's/[pattern]/[text] &' [/path/to/file]
-
 #
-sed s/[pattern]/[text]/ [/path/to/file.template] > [/path/to/file]
+sed 's/[pattern]/[text]/' [/path/to/file.template] > \
+  [/path/to/file]
 
 #
 sed '/^[attr] =/ s/= .*/= [value]/' [/path/to/file]
@@ -87,7 +82,7 @@ sed 's/#\([attribute]:\)/\1 [value]/g' [/path/to/file]
 sed '1d' ~/.ssh/known_hosts
 
 #
-docker exec -i [name] /bin/sh << \EOSHELL
+docker exec -i [name] /bin/sh << EOSHELL
 sed -i 's/[pattern]/[text]/' [/path/to/file]
 EOSHELL
 ```

@@ -130,6 +130,15 @@ kubectl delete secret [secret-name] -n [namespace]
 
 ### Tips
 
+#### Batch Delete
+
+```sh
+kubectl get deployments | \
+  grep [text] | \
+    awk '{print $1}' | \
+      xargs kubectl delete deploy
+```
+
 <!-- ####
 
 ```sh

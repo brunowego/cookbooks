@@ -176,7 +176,8 @@ echo -e '[INFO]\thttp://127.0.0.1:8080/auth/admin/'
 curl -i 'http://localhost:8080/auth/realms/master'
 
 # OpenID Endpoint Configuration
-curl -s 'http://localhost:8080/auth/realms/master/.well-known/openid-configuration' | python -m json.tool
+curl -s 'http://localhost:8080/auth/realms/master/.well-known/openid-configuration' | \
+  python -m json.tool
 
 # SAML 2.0 Identity Provider Metadata
 curl -s 'http://127.0.0.1:8080/auth/realms/master/protocol/saml/descriptor'
@@ -255,6 +256,24 @@ docker volume rm \
 ```sh
 export JAVA_OPTS_APPEND='-Dkeycloak.profile.feature.upload_scripts=enabled -Dkeycloak.profile.feature.admin_fine_grained_authz=enabled -Dkeycloak.profile.feature.token_exchange=enabled'
 ```
+
+### Issues
+
+<!-- ####
+
+```log
+{"error":"invalid_client","error_description":"Invalid client credentials"}
+``` -->
+
+#### Required User Actions
+
+```log
+{"error":"invalid_grant","error_description":"Account is not fully set up"}
+```
+
+1. Manage -> Users
+2. User -> Edit
+3. Details Tab -> Required User Actions -> Remove "Update Password"
 
 ## Helm
 

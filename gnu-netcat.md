@@ -26,10 +26,16 @@ netcat -h
 ### Usage
 
 ```sh
+#
+nc -v [ip] [port]
+
+#
 nc -l 9000
 
+#
 nmap -p 9000 localhost
 
+#
 curl \
   -X POST \
   -H 'Content-Type: application/json'

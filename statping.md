@@ -4,7 +4,8 @@
 
 ## References
 
-- [Repository](https://github.com/statping/statping)
+- [Code Repository](https://github.com/statping/statping)
+- [Main Website](https://statping.com/)
 
 ## CLI
 
@@ -107,7 +108,7 @@ docker run -d \
   -p 8080:8080 \
   --name statping \
   --network workbench \
-  docker.io/hunterlong/statping:v0.90.45
+  docker.io/hunterlong/statping:v0.90.74
 ```
 
 ```sh
@@ -127,4 +128,67 @@ echo -e '[INFO]\thttp://127.0.0.1:8080/login'
 docker rm -f statping-postgres statping
 
 docker volume rm statping-postgres-data statping-data
+```
+
+## Helm
+
+### References
+
+- [Values](https://github.com/statping/charts/tree/main/charts/statping#values)
+
+### Repository
+
+```sh
+helm repo add statping 'https://statping.github.io/charts'
+helm repo update
+```
+
+### Dependencies
+
+Assuming there is already a `monitoring` stack (namespace).
+
+### Install
+
+```sh
+#
+export INGRESS_HOST='127.0.0.1'
+```
+
+```sh
+helm install statping statping/statping \
+  --namespace monitoring \
+  --version 0.1.14 \
+  -f <(cat << EOF
+ingress:
+  enabled: true
+  hostname: statping.${INGRESS_HOST}.nip.io
+persistence:
+  storageClassName: $(kubectl get storageclass -o jsonpath='{.items[0].metadata.name}')
+EOF
+)
+```
+
+> Wait! This process take a while.
+
+### Status
+
+```sh
+kubectl rollout status deploy/statping \
+  -n monitoring
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app.kubernetes.io/name=statping' \
+  -n monitoring \
+  -f
+```
+
+### Delete
+
+```sh
+helm uninstall statping \
+  -n monitoring
 ```

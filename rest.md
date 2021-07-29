@@ -33,6 +33,7 @@ https://www.youtube.com/watch?v=_1xa8Bsho6A
 - Swagger
 - WADL
 - [REST Client](/rest-client.md)
+- [RequestBin](https://requestbin.net)
 
 ## Demo REST APIs
 

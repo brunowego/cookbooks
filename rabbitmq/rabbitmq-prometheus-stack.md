@@ -16,16 +16,12 @@
 
 ### Monitor
 
-```sh
-#
-export INGRESS_HOST='127.0.0.1'
-export KUBECTL_NAMESPACE='my-app'
-```
-
 #### Service
 
 ```sh
 # RabbitMQ clusters
+export KUBECTL_NAMESPACE='my-app'
+
 cat << EOF | kubectl apply \
   -n "$KUBECTL_NAMESPACE" \
   -f -
@@ -48,6 +44,8 @@ spec:
 EOF
 
 #
+export INGRESS_HOST='127.0.0.1'
+
 curl \
   --retry 3 \
   --retry-connrefused \

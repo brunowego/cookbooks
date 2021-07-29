@@ -1,5 +1,9 @@
 # ClickHouse
 
+## Links
+
+- [Code Repository](https://github.com/ClickHouse/ClickHouse)
+
 ## Docker
 
 ### Running
@@ -32,6 +36,10 @@ EOSQL
 ### Remove
 
 ```sh
-docker rm -f clickhouse
-docker volume rm clickhouse-config clickhouse-data
+docker rm -f \
+  clickhouse
+
+docker volume rm \
+  clickhouse-config \
+  clickhouse-data
 ```

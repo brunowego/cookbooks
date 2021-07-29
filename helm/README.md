@@ -99,6 +99,14 @@ pkill helm
 
 ### Tips
 
+#### Download Helm Chart Files
+
+```sh
+helm pull sentry/sentry \
+  --untar=true \
+  --version 11.2.0
+```
+
 #### Get Values of Installed Chart
 
 ```sh
@@ -176,6 +184,19 @@ source <(helm completion zsh)
 ```
 
 ### Issues
+
+#### Failed Timeout Condition
+
+```log
+Error: failed post-install: timed out waiting for the condition
+```
+
+```sh
+helm install \
+  # ...
+  --timeout 15m \
+  --wait
+```
 
 <!-- #### Kubernetes Configuration
 

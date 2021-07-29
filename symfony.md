@@ -2,6 +2,7 @@
 
 <!--
 https://linkedin.com/learning/learning-symfony-4/build-web-apps-with-symfony
+https://symfony.com/doc/current/configuration.html#configuration-secrets
 -->
 
 ## Links

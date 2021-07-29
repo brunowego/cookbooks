@@ -1,22 +1,34 @@
 # Whois
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install whois
 ```
 
-### APT
+#### APT
 
 ```sh
 sudo apt update
 sudo apt -y install whois
 ```
 
-## Command
+### Commands
 
 ```sh
-whois [domain]
+man whois
+```
+
+### Usage
+
+```sh
+#
+whois google.com
+
+#
+whois 8.8.8.8
 ```

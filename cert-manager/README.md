@@ -28,8 +28,11 @@ kubectl create namespace cert-manager
 ```sh
 helm install cert-manager jetstack/cert-manager \
   --namespace cert-manager \
-  --version v1.1.1 \
-  --set installCRDs=true
+  --version v1.4.0 \
+  -f <(cat << EOF
+installCRDs: true
+EOF
+)
 ```
 
 ### Status
@@ -41,9 +44,12 @@ kubectl rollout status deploy/cert-manager -n cert-manager
 ### Delete
 
 ```sh
-helm uninstall cert-manager -n cert-manager
+helm uninstall cert-manager \
+  -n cert-manager
 
-kubectl delete namespace cert-manager --grace-period=0 --force
+kubectl delete namespace cert-manager \
+  --grace-period=0 \
+  --force
 ```
 
 <!--

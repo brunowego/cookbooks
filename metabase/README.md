@@ -48,79 +48,53 @@ brew services start metabase
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/metabase#configuration)
+- [Configuration](https://github.com/pmint93/helm-charts/tree/master/charts/metabase#configuration)
+
+### Repository
+
+```sh
+helm repo add pmint93 'https://pmint93.github.io/helm-charts'
+helm repo update
+```
 
 ### Install
 
 ```sh
+#
+export INGRESS_HOST='127.0.0.1'
+
+#
 kubectl create namespace metabase
 ```
 
 ```sh
-helm install metabase-postgresql stable/postgresql \
+#
+helm install metabase pmint93/metabase \
   --namespace metabase \
-  --set postgresqlUsername='metabase' \
-  --set postgresqlPassword='metabase' \
-  --set postgresqlDatabase='metabase'
-```
-
-```sh
-helm install metabase stable/metabase \
-  --namespace metabase \
-  --set database.type='postgres' \
-  --set database.host='postgresql.metabase.svc.cluster.local' \
-  --set database.port='5432' \
-  --set database.dbname='metabase' \
-  --set database.username='metabase' \
-  --set database.password='metabase' \
-  --set ingress.enabled=true \
-  --set ingress.hosts={metabase.${INGRESS_HOST}.nip.io}
-```
-
-### SSL
-
-#### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-#### Create
-
-```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n metabase
-```
-
-```sh
-helm upgrade metabase stable/metabase -f <(yq m <(cat << EOF
+  --version 1.0.0 \
+  -f <(cat << EOF
 ingress:
-  tls:
-    - secretName: example.tls-secret
-      hosts:
-        - metabase.${INGRESS_HOST}.nip.io
+  enabled: true
+  hosts:
+  - metabase.${INGRESS_HOST}.nip.io
 EOF
-) <(helm get values metabase))
-```
-
-#### Remove
-
-```sh
-helm upgrade metabase stable/metabase -f <(yq d <(helm get values metabase) ingress.tls)
-
-kubectl delete secret example.tls-secret -n metabase
+)
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/metabase-metabase -n metabase
+kubectl rollout status deploy/metabase \
+  -n metabase
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app=metabase' -n metabase -f
+kubectl logs \
+  -l 'app=metabase' \
+  -n metabase \
+  -f
 ```
 
 ### DNS
@@ -137,26 +111,15 @@ dig @10.96.0.10 "metabase.${INGRESS_HOST}.nip.io" +short
 nslookup "metabase.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
-### Secret
-
-```sh
-kubectl get secret metabase-metabase-database \
-  -o jsonpath='{.data.username}' \
-  -n metabase | \
-    base64 --decode; echo
-
-kubectl get secret metabase-metabase-database \
-  -o jsonpath='{.data.password}' \
-  -n metabase | \
-    base64 --decode; echo
-```
-
 ### Delete
 
 ```sh
-helm uninstall metabase-postgresql -n metabase-postgresql
-helm uninstall metabase -n metabase
-kubectl delete namespace metabase --grace-period=0 --force
+helm uninstall metabase \
+  -n metabase
+
+kubectl delete namespace metabase \
+  --grace-period=0 \
+  --force
 ```
 
 ## Docker

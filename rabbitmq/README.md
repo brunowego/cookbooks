@@ -3,8 +3,6 @@
 **Keywords:** Message-Based System
 
 <!--
-https://awesome-prometheus-alerts.grep.to/rules.html
-
 https://gist.github.com/nicosingh/08be6d6e7605a43fe52d1f201c2b47d8
 
 https://www.youtube.com/watch?v=NWISW6AwpOE
@@ -59,6 +57,16 @@ https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq
 - [MQTT](/mqtt.md)
 - STOMP
 
+<!-- ### Naming Conventions
+
+- tx - Topic Exchange
+- fx - Fanout Exchange
+- dx - Direct Exchange -->
+
+<!--
+https://eng.revinate.com/2015/12/01/rabbitmq-naming-conventions.html
+-->
+
 ## CLI
 
 ### Installation
@@ -107,41 +115,88 @@ rabbitmq-defaults
 rabbitmq-env
 -->
 
-### Usage
+### Environment Variables
 
 ```sh
 #
-export RABBITMQ_NODE_IP_ADDRESS='localhost'
+export RABBITMQ_NODE_IP_ADDRESS='127.0.0.1'
 export RABBITMQ_NODE_PORT='4369'
 export RABBITMQ_NODENAME="rabbit@${RABBITMQ_NODE_IP_ADDRESS}"
+```
 
-#
-rabbitmqctl cluster_status
+<!-- ### Kubernetes IN Docker (kind)
 
-#
-rabbitmq-plugins \
-  -q list \
-  --enabled \
-  --minimal
+```sh
+kubectl exec -it \
+  rabbitmq-server-0 \
+  -n my-app \
+    -- /bin/bash
+``` -->
 
-#
-rabbitmq-diagnostics -q alarms
+<!-- #### Port Forward
 
+```sh
 #
-rabbitmq-diagnostics -q memory_breakdown \
-  --unit 'MB'
+export KUBECTL_NAMESPACE='my-app'
+
+kubectl port-forward svc/rabbitmq \
+  -n "$KUBECTL_NAMESPACE" \
+  5672:5672
+
+kubectl port-forward svc/rabbitmq-nodes \
+  -n "$KUBECTL_NAMESPACE" \
+  4369:4369
+
+kubectl port-forward svc/rabbitmq-nodes \
+  -n "$KUBECTL_NAMESPACE" \
+  25672:25672
+``` -->
+
+### Usage
+
+#### Diagnostics
+
+```sh
+#
+rabbitmq-diagnostics environment
+
+rabbitmq-diagnostics \
+  -n 'rabbit@127.0.0.1' \
+  --longnames \
+  environment
 
 #
 rabbitmq-diagnostics -q listeners
-
-#
 rabbitmq-diagnostics -q ping
 rabbitmq-diagnostics -q status
+rabbitmq-diagnostics -q alarms
 rabbitmq-diagnostics -q check_running
 rabbitmq-diagnostics -q check_local_alarms
 rabbitmq-diagnostics -q check_port_connectivity
 rabbitmq-diagnostics -q check_virtual_hosts
 rabbitmq-diagnostics -q node_health_check
+
+#
+rabbitmq-diagnostics \
+  -q memory_breakdown \
+  --unit 'MB'
+```
+
+#### Control
+
+```sh
+#
+rabbitmqctl cluster_status
+```
+
+#### Plugins
+
+```sh
+#
+rabbitmq-plugins \
+  -q list \
+  --enabled \
+  --minimal
 ```
 
 ### Tips
@@ -182,3 +237,8 @@ curl \
   -X GET 'http://127.0.0.1:15672/api/nodes/rabbit@hostname/memory' | \
     jq '.memory.total.allocated'
 ``` -->
+
+<!-- ## Helm
+
+https://charts.bitnami.com/bitnami
+https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq -->

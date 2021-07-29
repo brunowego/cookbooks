@@ -11,12 +11,33 @@ sudo apt update
 sudo apt -y install dnsutils
 ```
 
+### Commands
+
+```sh
+dig -h
+```
+
 ### Usage
 
 ```sh
 #
-dig [example.com] MX
+dig google.com
 
 #
-dig A +short [example.com]
+dig +short google.com
+
+#
+dig @8.8.8.8 google.com
+
+#
+dig -x 8.8.8.8
+
+#
+dig MX google.com
+
+#
+dig -t txt google.com
+
+#
+dig A +short google.com
 ```

@@ -93,3 +93,11 @@ osascript -e 'quit app "Visual Studio Code"'
 
 code --disable-extension ms-kubernetes-tools.vscode-kubernetes-tools
 ```
+
+### Issues
+
+####
+
+```sh
+Warning  FailedScheduling  21s (x6 over 4m41s)  default-scheduler  0/4 nodes are available: 4 pod has unbound immediate PersistentVolumeClaims.
+```

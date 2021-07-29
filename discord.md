@@ -8,6 +8,10 @@ https://gist.github.com/thomasbnt/b6f455e2c7d743b796917fa3c205f812
 
 - [Status Page](https://discordstatus.com/)
 
+## Tools
+
+- [Discord Webhook Tester](https://lew.la/webhook/)
+
 ## App
 
 ### Installation

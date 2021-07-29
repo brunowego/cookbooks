@@ -19,44 +19,13 @@ helm install rabbitmq-ha stable/rabbitmq-ha \
   --set ingress.hostName=rabbitmq.example.com
 ```
 
-### SSL
-
-### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-#### Create
-
-```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n rabbitmq-ha
-```
-
-```sh
-helm upgrade rabbitmq-ha stable/rabbitmq-ha -f <(yq m <(cat << EOF
-ingress:
-  tls:
-    - secretName: example.tls-secret
-      hosts:
-        - rabbitmq.example.com
-EOF
-) <(helm get values rabbitmq-ha))
-```
-
-#### Remove
-
-```sh
-helm upgrade rabbitmq-ha stable/rabbitmq-ha -f <(yq d <(helm get values rabbitmq-ha) ingress.tls)
-
-kubectl delete secret example.tls-secret -n rabbitmq-ha
-```
-
 ### Logs
 
 ```sh
-kubectl logs -l 'app=rabbitmq-ha' -n rabbitmq-ha -f
+kubectl logs \
+  -l 'app=rabbitmq-ha' \
+  -n rabbitmq-ha \
+  -f
 ```
 
 ### DNS

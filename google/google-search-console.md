@@ -3,5 +3,5 @@
 ## References
 
 - [Dashboard](https://search.google.com/search-console)
-- [](https://search.google.com/test/rich-results)
-- [](https://search.google.com/test/mobile-friendly)
+- [Rich Results Test](https://search.google.com/test/rich-results)
+- [Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)

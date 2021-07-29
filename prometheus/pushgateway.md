@@ -13,22 +13,27 @@
 ### Repository
 
 ```sh
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo add prometheus-community 'https://prometheus-community.github.io/helm-charts'
 helm repo update
 ```
 
-### Install
+### Dependencies
 
-```sh
-kubectl create namespace monitoring
-```
+Assuming there is already a `monitoring` stack (namespace).
+
+### Install
 
 ```sh
 helm install pushgateway prometheus-community/prometheus-pushgateway \
   --namespace monitoring \
   --version 1.10.1 \
-  --set ingress.enabled=true \
-  --set ingress.hosts={pushgateway.${INGRESS_HOST}.nip.io}
+  -f <(cat << EOF
+ingress:
+  enabled: true
+  hosts:
+  - pushgateway.${INGRESS_HOST}.nip.io
+EOF
+)
 ```
 
 ### Status
@@ -56,10 +61,6 @@ echo -e "[INFO]\thttp://pushgateway.${INGRESS_HOST}.nip.io"
 ### Delete
 
 ```sh
-helm uninstall prometheus \
+helm uninstall pushgateway \
   -n monitoring
-
-kubectl delete namespace monitoring \
-  --grace-period=0 \
-  --force
 ```

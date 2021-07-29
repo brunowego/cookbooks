@@ -150,6 +150,7 @@ subsets:
     protocol: TCP
 EOF
 
+#
 cat << EOF | kubectl apply -f -
 apiVersion: v1
 kind: Service
@@ -162,10 +163,12 @@ spec:
   externalName: [nlb-ip]
 EOF
 
+#
 kubectl get prometheus \
   -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
   -n monitoring
 
+#
 cat << EOF | kubectl apply -f -
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
@@ -222,3 +225,42 @@ data:
   msk-overview-dashboard.json.url: https://grafana.com/api/dashboards/12669/revisions/1/download
 EOF
 ```
+
+<!-- ### Issues
+
+####
+
+```log
+%3|1626980066.465|FAIL|rdkafka#producer-1| [thrd:sasl_ssl://b-3.my-project-msk-clus.deord2.c3.kafka.us-east-1]: sasl_ssl://b-3.my-project-msk-clus.deord2.c3.kafka.us-east-1.amazonaws.com:9096/3: Connect to ipv4#0.0.0.0:9096 failed: Operation timed out (after 76531ms in state CONNECT)
+
+%3|1626980065.359|FAIL|rdkafka#consumer-1| [thrd:sasl_ssl://b-3.my-project-msk-clus.deord2.c3.kafka.us-east-1]: sasl_ssl://b-3.my-project-msk-clus.deord2.c3.kafka.us-east-1.amazonaws.com:9096/3: Connect to ipv4#0.0.0.0:9096 failed: Operation timed out (after 76722ms in state CONNECT)
+% ERROR: Local: Broker transport failure: sasl_ssl://b-3.my-project-msk-clus.deord2.c3.kafka.us-east-1.amazonaws.com:9096/3: Connect to ipv4#0.0.0.0:9096 failed: Operation timed out (after 76722ms in state CONNECT)
+```
+
+```sh
+#
+export AT_EVENTS_KAFKA_SASL_PASSWORD=''
+export KAFKACAT_OPTS="-X security.protocol=SASL_SSL -X sasl.mechanisms=SCRAM-SHA-512 -X sasl.username=admin -X sasl.password=$AT_EVENTS_KAFKA_SASL_PASSWORD"
+
+# List brokers
+kafkacat \
+  -b my-project-msk-lb-71fa4743565da371.elb.us-east-1.amazonaws.com:9096 \
+  $(echo "$KAFKACAT_OPTS") \
+  -L
+
+# Produce
+kafkacat \
+  -b my-project-msk-lb-71fa4743565da371.elb.us-east-1.amazonaws.com:9096 \
+  $(echo "$KAFKACAT_OPTS") \
+  -P \
+  -t eem_escola \
+  -p 0
+
+# Consume
+kafkacat \
+  -b my-project-msk-lb-71fa4743565da371.elb.us-east-1.amazonaws.com:9096 \
+  $(echo "$KAFKACAT_OPTS") \
+  -C \
+  -t eem_escola \
+  -o earliest
+``` -->

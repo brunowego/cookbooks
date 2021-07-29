@@ -1,23 +1,28 @@
-# Prometheus Adapter
+# Prometheus Adapter for Kubernetes Metrics APIs
+
+## Links
+
+- [Code Repository](https://github.com/kubernetes-sigs/prometheus-adapter)
 
 ## Helm
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/prometheus-adapter#configuration)
-- [Horizontal Pod Autoscaler (HPA)](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
+- [Configuration](https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-adapter#configuration)
 
-### Dependencies
+### Repository
 
-- [Prometheus](/prometheus.md#helm) or [Prometheus Operator](/prometheus-operator.md#helm)
+```sh
+helm repo add prometheus-community 'https://prometheus-community.github.io/helm-charts'
+helm repo update
+```
 
 ### Install
 
 ```sh
-helm install prometheus-adapter stable/prometheus-adapter \
+helm install prometheus-adapter prometheus-community/prometheus-adapter \
   --namespace monitoring \
-  --set prometheus.url='http://prometheus-server.monitoring.svc.cluster.local' \
-  --set prometheus.port='80'
+  --version 2.15.2
 ```
 
 ### Status
@@ -42,5 +47,6 @@ nslookup prometheus-adapter.monitoring.svc.cluster.local 10.96.0.10
 ### Delete
 
 ```sh
-helm uninstall prometheus-adapter -n prometheus-adapter
+helm uninstall prometheus-adapter \
+  -n monitoring
 ```

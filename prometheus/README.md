@@ -8,16 +8,23 @@ https://linkedin.com/learning/kubernetes-monitoring-with-prometheus/prometheus-m
 
 - [Metric types](https://prometheus.io/docs/concepts/metric_types/)
 - [Service Discovery (SD)](https://github.com/prometheus/prometheus/tree/main/discovery)
+- [Integrations](https://prometheus.io/docs/operating/integrations/)
+- [Template Examples](https://prometheus.io/docs/prometheus/latest/configuration/template_examples/)
 
 ## Plugins
 
 - [Mozilla Firefox - Prometheus Formatter](https://addons.mozilla.org/en-US/firefox/addon/prometheus-formatter/)
 
+## Links
+
+- [Awesome Prometheus Alerts](https://awesome-prometheus-alerts.grep.to/rules.html)
+- [Routing tree editor](https://prometheus.io/webtools/alerting/routing-tree-editor/)
+
 ## Docker
 
 ### Associated
 
-- [Prometheus Alertmanager](/prometheus-alertmanager.md)
+- [Prometheus Alertmanager](/prometheus/prometheus-alertmanager.md)
 
 ### Network
 
@@ -28,8 +35,6 @@ docker network create workbench \
 
 ### Running
 
-#### 1.x
-
 ```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
@@ -38,66 +43,7 @@ docker run -d \
   -p 9090:9090 \
   --name prometheus \
   --network workbench \
-  docker.io/prom/prometheus:v1.8.2
-```
-
-```sh
-docker exec -i prometheus /bin/sh << EOSHELL
-cat << EOF > /etc/prometheus/prometheus.yml
-global:
-  scrape_interval: 15s
-  evaluation_interval: 15s
-
-scrape_configs:
-- job_name: prometheus
-  static_configs:
-  - targets:
-    - localhost:9090
-
-EOF
-EOSHELL
-```
-
-```sh
-docker restart prometheus
-```
-
-```sh
-echo -e '[INFO]\thttp://127.0.0.1:9090'
-```
-
-#### 2.x
-
-```sh
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h prometheus \
-  -v prometheus-data:/prometheus \
-  -p 9090:9090 \
-  --name prometheus \
-  --network workbench \
-  docker.io/prom/prometheus:v2.27.1
-```
-
-```sh
-docker exec -i prometheus /bin/sh << EOSHELL
-cat << EOF > /etc/prometheus/prometheus.yml
-global:
-  scrape_interval: 15s
-  evaluation_interval: 15s
-
-scrape_configs:
-- job_name: prometheus
-  static_configs:
-  - targets:
-    - localhost:9090
-
-EOF
-EOSHELL
-```
-
-```sh
-docker restart prometheus
+  docker.io/prom/prometheus:v2.28.1
 ```
 
 ```sh

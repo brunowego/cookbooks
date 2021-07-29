@@ -186,3 +186,23 @@ sudo hostess add kafka 127.0.0.1
 ```
 
 [Disable IPv6](/ipv6.md#disable) support.
+
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h kafkacat \
+  --name kafkacat \
+  --network workbench \
+  docker.io/confluentinc/cp-kafkacat:6.2.0
+```

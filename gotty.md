@@ -1,5 +1,7 @@
 # GoTTY
 
+**Keywords:** Terminal output
+
 ## CLI
 
 ### Installation
@@ -7,7 +9,8 @@
 #### Homebrew
 
 ```sh
-brew install sorenisanerd/gotty/gotty
+brew tap sorenisanerd/gotty
+brew install gotty
 ```
 
 #### go get
@@ -28,7 +31,7 @@ curl \
 
 ```sh
 cat << EOF > ~/.gotty
-port = "8080"
+port = "9000"
 
 EOF
 ```
@@ -47,6 +50,23 @@ gotty [command]
 
 # Examples
 gotty top
+```
+
+#### Screen
+
+```sh
+gotty \
+  -c 'admin:admin' \
+    screen \
+    -x [session_id]
+
+ngrok http 9000
+```
+
+#### Docker
+
+```sh
 gotty -w \
-  docker run -it --rm docker.io/library/busybox:latest
+  docker run -it --rm \
+    docker.io/library/busybox:latest
 ```

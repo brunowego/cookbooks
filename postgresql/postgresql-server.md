@@ -187,7 +187,14 @@ docker volume rm postgresql-data
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/postgresql#configuration)
+- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/postgresql#parameters)
+
+### Repository
+
+```sh
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
+helm repo update
+```
 
 ### Install
 
@@ -196,27 +203,29 @@ kubectl create namespace postgresql
 ```
 
 ```sh
-helm install postgresql stable/postgresql \
+helm install postgresql bitnami/postgresql \
   --namespace postgresql \
-  --set postgresqlPassword='postgres'
+  --version 10.7.1 \
+  -f <(cat << EOF
+postgresqlPassword: postgres
+EOF
+)
 ```
-
-<!-- ### NGINX Ingress
-
-```sh
-helm upgrade nginx-ingress stable/nginx-ingress -f <(yq w <(helm get values nginx-ingress) tcp.5432 postgresql/postgresql:5432)
-``` -->
 
 ### Status
 
 ```sh
-kubectl rollout status statefulset/postgresql-postgresql -n postgresql
+kubectl rollout status statefulset/postgresql-postgresql \
+  -n postgresql
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app=postgresql' -n postgresql -f
+kubectl logs \
+  -l 'app.kubernetes.io/name=postgresql' \
+  -n postgresql \
+  -f
 ```
 
 ### DNS
@@ -238,7 +247,10 @@ kubectl get secret postgresql \
 ### Delete
 
 ```sh
-helm uninstall postgresql -n postgresql
+helm uninstall postgresql \
+  -n postgresql
 
-kubectl delete namespace postgresql --grace-period=0 --force
+kubectl delete namespace postgresql \
+  --grace-period=0 \
+  --force
 ```

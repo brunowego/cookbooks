@@ -35,7 +35,7 @@ kubectl create namespace monitoring
 ```sh
 helm install prometheus prometheus-community/kube-prometheus-stack \
   --namespace monitoring \
-  --version 16.12.1 \
+  --version 17.0.2 \
   -f <(cat << EOF
 prometheus:
   ingress:
@@ -87,7 +87,7 @@ kubectl get secret prometheus-grafana \
     base64 --decode; echo
 ```
 
-### Ingress
+### Port Forward
 
 ```sh
 #
@@ -97,7 +97,25 @@ kubectl port-forward svc/prometheus-stack-kube-prom-prometheus \
 
 #
 echo -e '[INFO]\thttp://127.0.0.1:9090'
+
+#
+kubectl port-forward svc/prometheus-stack-kube-prom-alertmanager \
+  -n monitoring \
+  9093:9093
+
+#
+echo -e '[INFO]\thttp://127.0.0.1:9093'
+
+#
+kubectl port-forward svc/prometheus-stack-grafana \
+  -n monitoring \
+  8080:80
+
+#
+echo -e '[INFO]\thttp://127.0.0.1:8080'
 ```
+
+### Ingress
 
 ```sh
 #
@@ -215,6 +233,31 @@ kubectl annotate svc prometheus-stack-kube-prom-prometheus \
 kubectl get service prometheus-stack-kube-prom-prometheus \
   -n monitoring
 ```
+
+### Alerts
+
+TODO
+
+<!-- #### TargetDown
+
+TODO -->
+
+<!-- #### NodeClockNotSynchronising
+
+```log
+Clock on {{ $labels.instance }} is not synchronising. Ensure NTP is configured on this host.
+```
+
+```sh
+#
+kubectl get nodes -o wide
+``` -->
+
+<!-- #### KubeScheduler
+
+```log
+KubeScheduler has disappeared from Prometheus target discovery.
+``` -->
 
 ### Issues
 

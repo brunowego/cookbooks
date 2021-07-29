@@ -16,11 +16,126 @@ kubectl apply \
   -f 'https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml'
 ```
 
-### Cluster Creation
+### Delete
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+kubectl delete \
+  -f 'https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml'
+```
+
+## Helm
+
+### References
+
+- [Values](https://github.com/sagikazarmark/helm-charts/tree/master/charts/rabbitmq-operator#values)
+
+### Repository
+
+```sh
+helm repo add skm 'https://charts.sagikazarmark.dev'
+helm repo update
+```
+
+### Dependencies
+
+- [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
+
+### Install
+
+```sh
+#
+kubectl create namespace rabbitmq-system
+```
+
+```sh
+helm install rabbitmq-operator skm/rabbitmq-operator \
+  --namespace rabbitmq-system \
+  --version 0.0.1 \
+  -f <(cat << EOF
+podMonitor:
+  enabled: true
+
+rabbitmq:
+  serviceMonitor:
+    enabled: true
+EOF
+)
+```
+
+### Status
+
+```sh
+kubectl rollout status deploy/rabbitmq-operator \
+  -n rabbitmq-system
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app.kubernetes.io/name=rabbitmq-operator' \
+  -n rabbitmq-system \
+  -f
+```
+
+### Metrics Exporter
+
+```sh
+#
+kubectl port-forward \
+  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/name=rabbitmq-operator -n rabbitmq-system) \
+  -n rabbitmq-system \
+  9782:9782
+
+#
+echo -e '[INFO]\thttp://127.0.0.1:9782/metrics'
+```
+
+### Delete
+
+```sh
+helm uninstall rabbitmq-operator \
+  -n rabbitmq-system
+
+kubectl delete namespace rabbitmq-system \
+  --grace-period=0 \
+  --force
+```
+
+## Krew
+
+### Installation
+
+```sh
+kubectl krew install rabbitmq
+```
+
+### Commands
+
+```sh
+kubectl rabbitmq help
+```
+
+### Usage
+
+```sh
+#
+kubectl rabbitmq install-cluster-operator
+
+#
+kubectl rabbitmq list
+
+#
+kubectl get customresourcedefinitions.apiextensions.k8s.io
+```
+
+## Cluster Creation
+
+### Install
+
+```sh
+#
 export KUBECTL_NAMESPACE='my-app'
 
 #
@@ -80,6 +195,7 @@ spec:
     - rabbitmq_prometheus
     additionalConfig: |
       load_definitions = /etc/rabbitmq/definitions.json
+      prometheus.return_per_object_metrics = true
   override:
     statefulSet:
       spec:
@@ -99,7 +215,14 @@ spec:
 EOF
 ```
 
+<!--
+https://github.com/rabbitmq/rabbitmq-server/tree/master/deps/rabbitmq_prometheus
+-->
+
 ```sh
+#
+export INGRESS_HOST='127.0.0.1'
+
 #
 cat << EOF | kubectl apply \
   -n "$KUBECTL_NAMESPACE" \
@@ -120,9 +243,7 @@ spec:
 EOF
 ```
 
-```sh
-echo -e "[INFO]\thttp://rabbitmq.${INGRESS_HOST}.nip.io"
-```
+### Secrets
 
 | Login | Password |
 | --- | --- |
@@ -131,13 +252,21 @@ echo -e "[INFO]\thttp://rabbitmq.${INGRESS_HOST}.nip.io"
 <!-- ```sh
 #
 kubectl get secret rabbitmq-default-user \
-  -o jsonpath='{.data.username}' | \
+  -o jsonpath='{.data.username}' \
+  -n "$KUBECTL_NAMESPACE" | \
     base64 --decode; echo
 
 kubectl get secret rabbitmq-default-user \
-  -o jsonpath='{.data.password}' | \
+  -o jsonpath='{.data.password}' \
+  -n "$KUBECTL_NAMESPACE" | \
     base64 --decode; echo
 ``` -->
+
+### Ingress
+
+```sh
+echo -e "[INFO]\thttp://rabbitmq.${INGRESS_HOST}.nip.io"
+```
 
 ### Metrics Exporter
 
@@ -150,62 +279,31 @@ kubectl port-forward \
 
 #
 echo -e '[INFO]\thttp://127.0.0.1:15692/metrics'
-
-#
-kubectl port-forward \
-  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/component=rabbitmq-operator -n rabbitmq-system) \
-  -n rabbitmq-system \
-  9782:9782
-
-#
-echo -e '[INFO]\thttp://127.0.0.1:9782/metrics'
 ```
 
 ### RabbitMQ Control
 
 ```sh
 #
-kubectl exec rabbitmq-server-0 -- /bin/sh \
-  -c 'rabbitmqctl cluster_status --formatter json' | \
-    jq -r '.running_nodes'
+kubectl exec rabbitmq-server-0 \
+  -n "$KUBECTL_NAMESPACE" \
+  -- /bin/sh \
+    -c 'rabbitmqctl cluster_status --formatter json' | \
+      jq -r '.running_nodes'
 ```
 
 ### Delete
 
 ```sh
 #
-kubectl delete rabbitmqclusters --all
-kubectl delete configmap rabbitmq-definitions
-kubectl delete ingress rabbitmq
+kubectl delete rabbitmqcluster rabbitmq \
+  -n "$KUBECTL_NAMESPACE"
 
-#
-kubectl delete \
-  -f 'https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml'
-```
+kubectl delete configmap rabbitmq-definitions \
+  -n "$KUBECTL_NAMESPACE"
 
-## Krew
+kubectl delete ingress rabbitmq \
+  -n "$KUBECTL_NAMESPACE"
 
-### Installation
-
-```sh
-kubectl krew install rabbitmq
-```
-
-### Commands
-
-```sh
-kubectl rabbitmq help
-```
-
-### Usage
-
-```sh
-#
-kubectl rabbitmq install-cluster-operator
-
-#
-kubectl rabbitmq list
-
-#
-kubectl get customresourcedefinitions.apiextensions.k8s.io
+kubectl delete namespace "$KUBECTL_NAMESPACE"
 ```

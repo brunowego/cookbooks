@@ -44,11 +44,13 @@ choco install -y jq
 - [RPM resource jq(x86-64)](https://rpmfind.net/linux/rpm2html/search.php?query=jq(x86-64))
 
 ```sh
-curl -LO https://rpmfind.net/linux/opensuse/tumbleweed/repo/oss/x86_64/libjq1-1.6-2.4.x86_64.rpm
-sudo rpm -vi libjq1-1.6-2.4.x86_64.rpm && rm -f libjq1-1.6-2.4.x86_64.rpm
+curl -LO 'https://rpmfind.net/linux/opensuse/tumbleweed/repo/oss/x86_64/libjq1-1.6-2.4.x86_64.rpm'
 
-curl -LO https://rpmfind.net/linux/opensuse/tumbleweed/repo/oss/x86_64/jq-1.6-2.4.x86_64.rpm
-sudo rpm -vi jq-1.6-2.4.x86_64.rpm && rm -f jq-1.6-2.4.x86_64.rpm
+sudo rpm -vi './libjq1-1.6-2.4.x86_64.rpm && rm -f libjq1-1.6-2.4.x86_64.rpm'
+
+curl -LO 'https://rpmfind.net/linux/opensuse/tumbleweed/repo/oss/x86_64/jq-1.6-2.4.x86_64.rpm'
+
+sudo rpm -vi './jq-1.6-2.4.x86_64.rpm && rm -f jq-1.6-2.4.x86_64.rpm'
 ```
 
 ### Usage

@@ -143,65 +143,52 @@ sonar dump
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/sonarqube#configuration)
+- [Configuration](https://github.com/Oteemo/charts/tree/master/charts/sonarqube#configuration)
+
+### Repository
+
+```sh
+helm repo add oteemocharts 'https://oteemo.github.io/charts'
+helm repo update
+```
 
 ### Install
 
 ```sh
+#
+export INGRESS_HOST='127.0.0.1'
+
+#
 kubectl create namespace sonarqube
 ```
 
 ```sh
-helm install sonarqube stable/sonarqube \
+helm install sonarqube oteemocharts/sonarqube \
   --namespace sonarqube \
-  --set ingress.enabled=true \
-  --set "ingress.hosts[0].name=sonarqube.${INGRESS_HOST}.nip.io"
-```
-
-### SSL
-
-#### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-#### Create
-
-```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n sonarqube
-```
-
-```sh
-helm upgrade sonarqube stable/sonarqube -f <(yq m <(cat << EOF
+  --version 9.6.4 \
+  -f <(cat << EOF
 ingress:
-  tls:
-    - secretName: example.tls-secret
-      hosts:
-        - sonarqube.${INGRESS_HOST}.nip.io
+  enabled: true
+  hosts:
+  - name: sonarqube.${INGRESS_HOST}.nip.io
 EOF
-) <(helm get values sonarqube))
-```
-
-#### Remove
-
-```sh
-helm upgrade sonarqube stable/sonarqube -f <(yq d <(helm get values sonarqube) ingress.tls)
-
-kubectl delete secret example.tls-secret -n sonarqube
+)
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/sonarqube -n sonarqube
+kubectl rollout status deploy/sonarqube-sonarqube \
+  -n sonarqube
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app=sonarqube' -n sonarqube -f
+kubectl logs \
+  -l 'app=sonarqube' \
+  -n sonarqube \
+  -f
 ```
 
 ### DNS
@@ -218,20 +205,15 @@ dig @10.96.0.10 "sonarqube.${INGRESS_HOST}.nip.io" +short
 nslookup "sonarqube.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
-### Secret
-
-```sh
-kubectl get secret sonarqube \
-  -o jsonpath='{.data.admin-password}' \
-  -n sonarqube | \
-    base64 --decode; echo
-```
-
 ### Delete
 
 ```sh
-helm uninstall sonarqube -n sonarqube
-kubectl delete namespace sonarqube --grace-period=0 --force
+helm uninstall sonarqube \
+  -n sonarqube
+
+kubectl delete namespace sonarqube \
+  --grace-period=0 \
+  --force
 ```
 
 ## Maven Plugin

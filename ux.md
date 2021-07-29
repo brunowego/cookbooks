@@ -78,6 +78,7 @@ https://app.pluralsight.com/library/courses/ux-driven-software-design/table-of-c
   - Task success
 - Design Principles
 - Future Tweet
+<!-- - Double Diamond -->
 
 ### HEART Framework
 

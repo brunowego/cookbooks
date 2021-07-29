@@ -84,3 +84,38 @@ EOF
 # Homebrew
 brew services restart prometheus
 ```
+
+## Docker
+
+### Associated
+
+- [Prometheus Alertmanager](/prometheus/prometheus-alertmanager.md)
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h node-exporter \
+  -p 9100:9100 \
+  --name node-exporter \
+  --network workbench \
+  docker.io/prom/node-exporter:v1.2.0
+```
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:9100/metrics'
+```
+
+### Remove
+
+```sh
+docker rm -f node-exporter
+```

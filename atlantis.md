@@ -20,6 +20,7 @@ Terragrunt
 ## Guides
 
 - [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token)
+- [Provider Credentials](https://www.runatlantis.io/docs/provider-credentials.html)
 
 <!-- ##
 

@@ -24,11 +24,20 @@ docker exec -it mysql /usr/bin/mysql -u root -p'root'
 quit;
 ```
 
+<!-- ##
+
+```sql
+SHOW PROCESSLIST
+``` -->
+
 ## User
 
 ```sql
+-- Show User Privileges
+SELECT * FROM information_schema.user_privileges;
+
 -- Create
-CREATE USER '[username]'@'%' IDENTIFIED BY '[password]';
+CREATE USER IF NOT EXISTS '[username]'@'%' IDENTIFIED BY '[password]';
 
 -- Add Privileges
 GRANT ALL PRIVILEGES ON `[db-name]`.* TO '[username]'@'%';
