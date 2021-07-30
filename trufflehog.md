@@ -1,5 +1,9 @@
 # truffleHog
 
+## Links
+
+- [Alternatives](/alternatives.md#code-secrets)
+
 ## CLI
 
 ### Installation

@@ -53,7 +53,8 @@ docker run -d \
   -h slowloris \
   --name slowloris \
   --network workbench \
-  docker.io/aminvakil/slowloris:latest [ip-address] -s 900
+  docker.io/aminvakil/slowloris:latest [ip-address] \
+    -s 900
 ```
 
 ### Remove
@@ -69,7 +70,7 @@ docker rm -f slowloris
 #### PIP
 
 ```sh
-pip install Slowloris
+pip3 install Slowloris
 ```
 
 ### Usage

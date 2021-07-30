@@ -21,3 +21,10 @@ https://cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx?id=4&origem=maisacessados
 ```sh
 open "https://receita.economia.gov.br/interface/cidadao/irpf/$(date +'%Y')/download/mac"
 ```
+
+## Tips
+
+### DARF
+
+1. Pagamentos e Recargas
+2. Pagamento de Impostos -> DARF

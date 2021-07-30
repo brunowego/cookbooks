@@ -1,9 +1,8 @@
 # git-secrets
 
-## Alternatives
+## Links
 
-- [detect-secrets](/detect-secrets.md)
-- [Gitleaks](/gitleaks.md)
+- [Alternatives](/alternatives.md#code-secrets)
 
 ## CLI
 

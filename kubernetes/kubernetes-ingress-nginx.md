@@ -49,9 +49,22 @@ kubectl delete \
 
 ```sh
 #
+kubectl get ingress [ingress-name] \
+  -o json \
+  -n [namespace] |
+    jq -r '.metadata.annotations'
+
+#
 kubectl annotate ingress \
   [ingress-name] \
   nginx.ingress.kubernetes.io/enable-cors='true' \
+  -n [namespace]
+
+#
+kubectl annotate ingress \
+  --overwrite \
+  [ingress-name] \
+  nginx.ingress.kubernetes.io/cors-allow-headers='Access-Control-Allow-Origin,Authorization' \
   -n [namespace]
 
 # Testing
@@ -91,6 +104,14 @@ nginx.ingress.kubernetes.io/affinity-mode: "persistent"
 nginx.ingress.kubernetes.io/session-cookie-hash: "sha1"
 nginx.ingress.kubernetes.io/session-cookie-name: "route"
 ``` -->
+
+<!-- ####
+nginx.ingress.kubernetes.io/limit-connections: "100"
+nginx.ingress.kubernetes.io/limit-rps: "50"
+nginx.ingress.kubernetes.io/limit-whitelist:
+prometheus.io/scrape: "true"
+prometheus.io/port: "10254"
+-->
 
 ### Issues
 

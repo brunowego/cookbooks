@@ -4,15 +4,10 @@
 https://github.com/auth0/repo-supervisor
 -->
 
-## Alternatives
-
-- [git-secrets](/git-secrets.md)
-- [Gitleaks](/gitleaks.md)
-- [Whispers](https://github.com/Skyscanner/whispers)
-
 ## Links
 
 - [Code Repository](https://github.com/Yelp/detect-secrets)
+- [Alternatives](/alternatives.md#code-secrets)
 
 ## CLI
 

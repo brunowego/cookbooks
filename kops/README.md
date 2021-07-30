@@ -48,6 +48,13 @@ sudo curl \
 kops -h
 ```
 
+<!-- ### Environments
+
+```sh
+#
+export KOPS_FEATURE_FLAGS='Spotinst,SpotinstOcean,SpotinstHybrid'
+``` -->
+
 ### Usage
 
 ```sh

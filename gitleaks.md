@@ -6,8 +6,7 @@ https://artifacthub.io/packages/tekton-task/tekton-catalog-tasks/gitleaks
 
 ## Alternatives
 
-- [detect-secrets](/detect-secrets.md)
-- [git-secrets](/git-secrets.md)
+- [Alternatives](/alternatives.md#code-secrets)
 
 ## CLI
 

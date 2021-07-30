@@ -35,6 +35,7 @@ dataeng
 
 - Custom Resource Definition (CRD)
 - Horizontal Pod Autoscaler (HPA)
+- Custom Resource Definition (CRD)
 
 ## Tools
 
