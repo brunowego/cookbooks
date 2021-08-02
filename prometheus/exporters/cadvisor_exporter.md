@@ -1,4 +1,4 @@
-# cAdvisor Exporter
+# cAdvisor Exporter for Prometheus
 
 ## CLI
 

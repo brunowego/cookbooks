@@ -339,7 +339,16 @@ kubectl delete pod [name] --grace-period=0 --force -n [namespace]
 ##### Pod
 
 ```sh
-kubectl patch pod [name] -p '{"metadata":{"finalizers":[]}}' -n [namespace]
+#
+kubectl patch pod [name] \
+  -p '{"metadata":{"finalizers":[]}}' \
+  -n [namespace]
+
+#
+kubectl delete pod [name] \
+  -n [namespace] \
+  --grace-period 0 \
+  --force
 ```
 
 ##### Namespace
@@ -352,6 +361,22 @@ for ns in `kubectl get ns --field-selector status.phase=Terminating -o name`; do
 
 ```sh
 for ns in `kubectl get ns --field-selector status.phase=Terminating -o name | cut -d / -f 2`; do for resource in `kubectl api-resources --namespaced -o name --verbs=list | xargs -n 1 kubectl get -o name -n $ns`; do kubectl patch $resource -p '{"metadata": {"finalizers": []}}' --type='merge' -n $ns; done; done
+```
+
+###### REST API
+
+```sh
+#
+kubectl proxy
+
+#
+kubectl get ns [namespace] -o json | \
+  jq '.spec.finalizers=[]' | \
+  curl \
+    -X PUT \
+    -H 'Content-Type: application/json' \
+    --data @- \
+    http://localhost:8001/api/v1/namespaces/[namespace]/finalize
 ```
 
 <!-- ###
@@ -445,6 +470,22 @@ kubectl rollout restart deployment \
 ``` -->
 
 ### Issues
+
+<!-- ####
+
+```log
+Error: unable to build kubernetes objects from release manifest: unable to recognize "": no matches for kind "Deployment" in version "apps/v1beta2"
+```
+
+TODO -->
+
+<!-- ####
+
+```log
+Warning  FailedScheduling  2m10s (x3 over 3m34s)  default-scheduler   0/9 nodes are available: 1 node(s) had taint {node-role.kubernetes.io/master: }, that the pod didn't tolerate, 7 Insufficient memory, 8 Insufficient cpu.
+```
+
+TODO -->
 
 <!-- ####
 

@@ -184,9 +184,16 @@ cat << EOF | kubectl apply \
 apiVersion: rabbitmq.com/v1beta1
 kind: RabbitmqCluster
 metadata:
-  name: rabbitmq
+  name: rabbitmq-cluster
 spec:
   replicas: 3
+  resources:
+    limits:
+      cpu: 1
+      memory: 2Gi
+    requests:
+      cpu: 500m
+      memory: 1Gi
   rabbitmq:
     additionalPlugins:
     - rabbitmq_management
@@ -195,6 +202,13 @@ spec:
     - rabbitmq_prometheus
     additionalConfig: |
       load_definitions = /etc/rabbitmq/definitions.json
+
+      # https://www.rabbitmq.com/configure.html
+      vm_memory_high_watermark.relative = 0.7
+      # vm_memory_high_watermark.absolute = 1G
+      # vm_memory_high_watermark_paging_ratio = 0.99
+
+      # https://www.rabbitmq.com/prometheus.html#metric-aggregation
       prometheus.return_per_object_metrics = true
   override:
     statefulSet:
@@ -267,6 +281,15 @@ kubectl get secret rabbitmq-default-user \
 ```sh
 echo -e "[INFO]\thttp://rabbitmq.${INGRESS_HOST}.nip.io"
 ```
+
+<!-- ###
+
+```sh
+kubectl rollout restart \
+  statefulset \
+  [name] \
+  -n [namespace]
+``` -->
 
 ### Metrics Exporter
 

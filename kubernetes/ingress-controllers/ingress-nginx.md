@@ -3,6 +3,8 @@
 <!--
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
 https://web.dev/same-site-same-origin/
+
+https://grafana.com/grafana/dashboards/9614
 -->
 
 ## Alternatives

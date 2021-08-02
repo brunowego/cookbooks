@@ -19,6 +19,15 @@ https://github.com/auth0/repo-supervisor
 brew install detect-secrets
 ```
 
+#### PIP
+
+```sh
+pip3 install detect-secrets
+
+#
+pip3 install detect-secrets==1.0.3
+```
+
 ### Commands
 
 ```sh
@@ -29,11 +38,18 @@ detect-secrets -h
 
 ```sh
 #
-detect-secrets scan --list-all-plugins
-
-#
 detect-secrets scan \
-  ./ \
+  --list-all-plugins
+
+# For 1.0.x
+detect-secrets scan \
   --all-files > \
     ./.secrets.baseline
+
+# For 1.1.x
+detect-secrets \
+  -C ./ \
+  scan \
+    --all-files > \
+      ./.secrets.baseline
 ```

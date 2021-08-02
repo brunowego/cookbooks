@@ -2,6 +2,10 @@
 
 ## Code Secrets
 
+<!--
+https://www.gitguardian.com/
+-->
+
 - [detect-secrets](/detect-secrets.md)
 - [git-secrets](/git-secrets.md)
 - [Gitleaks](/gitleaks.md)
@@ -19,3 +23,17 @@
 - [slurm](/slurm.md)
 - [trafshow](/trafshow.md)
 - [vnStat](/vnstat.md)
+
+## Password Management
+
+- [1Password](/1password.md)
+- [Bitwarden](/bitwarden.md)
+- LastPass
+
+## Application Performance Management (APM)
+
+- [Datadog](/datadog.md)
+- [Dynatrace](/dynatrace.md)
+- [New Relic](/newrelic/README.md)
+- [Splunk](/splunk.md)
+<!-- - [Nagios](/nagios.md) -->

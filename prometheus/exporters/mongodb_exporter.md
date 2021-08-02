@@ -1,4 +1,4 @@
-# MongoDB Exporter
+# MongoDB Exporter for Prometheus
 
 ## Helm
 

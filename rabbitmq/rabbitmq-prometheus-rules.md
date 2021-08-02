@@ -16,6 +16,9 @@ kubectl get prometheus \
   -n monitoring
 
 #
+kubectl get prometheusrule -A
+
+#
 cat << \EOF | kubectl apply \
   -n "$KUBECTL_NAMESPACE" \
   -f -

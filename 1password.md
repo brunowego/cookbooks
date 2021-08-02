@@ -1,10 +1,5 @@
 # 1Password
 
-## Alternatives
-
-- [Bitwarden](/bitwarden.md)
-- LastPass
-
 ## App
 
 ### Installation

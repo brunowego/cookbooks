@@ -1,5 +1,9 @@
 # dotENV
 
+<!--
+DB_USERNAME filetype:env
+-->
+
 ## Tools
 
 - [dotenv-cli](/dotenv-cli.md)

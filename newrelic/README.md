@@ -4,6 +4,22 @@
 https://www.youtube.com/watch?v=OOc8iN9dWfw
 -->
 
+## Links
+
+- [New Relic University](https://learn.newrelic.com/)
+
+## Solutions
+
+- APM
+- Browser
+- Infrastructure
+- Insights
+- Mobile
+- New Relic Logs
+- New Relic Serverless for AWS Lambda
+- New Relic Traces
+- Synthetics
+
 ## CLI
 
 ### Installation

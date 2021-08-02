@@ -164,14 +164,41 @@ spec:
     targetPort: http
   type: ClusterIP
 EOF
+```
 
+### Tips
+
+#### Alertmanager Config Selector
+
+```sh
 #
 kubectl get alertmanager \
   -o jsonpath='{.items[*].spec.alertmanagerConfigSelector}' \
   -n monitoring
+```
+
+#### Alertmanager Config Namespace Selector
+
+```sh
+#
+kubectl get alertmanager \
+  -o jsonpath='{.items[*].spec.alertmanagerConfigNamespaceSelector}' \
+  -n monitoring
 
 #
-kubectl get AlertmanagerConfig -A
+kubectl get namespace my-app \
+  -o json |
+    jq -r '.metadata.labels'
+
+#
+kubectl label namespace my-app alertmanagerconfig=enabled
+```
+
+#### Create Alertmanager Config
+
+```sh
+#
+kubectl get alertmanagerconfig -A
 
 #
 cat << EOF | kubectl apply \

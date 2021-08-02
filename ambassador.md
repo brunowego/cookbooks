@@ -158,8 +158,12 @@ echo -e "[INFO]\thttp://admin.ambassador.${INGRESS_HOST}.nip.io/ambassador/v0/di
 ### Delete
 
 ```sh
-helm uninstall ambassador -n ambassador
-kubectl delete namespace ambassador --grace-period=0 --force
+helm uninstall ambassador \
+  -n ambassador
+
+kubectl delete namespace ambassador \
+  --grace-period=0 \
+  --force
 
 kubectl get crd -o json | \
   jq -r '.items[] | select(.spec.group | contains("getambassador.io")) | .metadata.name' | \

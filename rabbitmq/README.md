@@ -42,12 +42,13 @@ https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq
 
 ## Guides
 
-- [Notify me when RabbitMQ has a problem](https://blog.rabbitmq.com/posts/2021/05/alerting/)
-- [Configuration](https://rabbitmq.com/configure.html)
-- [Monitoring](https://rabbitmq.com/monitoring.html)
-- [Monitoring with Prometheus & Grafana](https://rabbitmq.com/prometheus.html)
-- [Troubleshooting Network Connectivity](https://rabbitmq.com/troubleshooting-networking.html)
 - [Clustering Guide](https://rabbitmq.com/clustering.html)
+- [Configuration](https://rabbitmq.com/configure.html)
+- [Monitoring with Prometheus & Grafana](https://rabbitmq.com/prometheus.html)
+- [Monitoring](https://rabbitmq.com/monitoring.html)
+- [Notify me when RabbitMQ has a problem](https://blog.rabbitmq.com/posts/2021/05/alerting/)
+- [Production Checklist](https://rabbitmq.com/production-checklist.html)
+- [Troubleshooting Network Connectivity](https://rabbitmq.com/troubleshooting-networking.html)
 
 ## Solution
 

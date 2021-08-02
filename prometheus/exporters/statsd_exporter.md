@@ -1,3 +1,3 @@
-# StatsD Exporter
+# StatsD Exporter for Prometheus
 
 TODO
