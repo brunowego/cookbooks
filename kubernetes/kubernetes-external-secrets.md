@@ -1,7 +1,7 @@
 # Kubernetes External Secrets
 
 <!--
-https://github.com/external-secrets/external-secrets
+https://artifacthub.io/packages/helm/external-secrets/kubernetes-external-secrets
 -->
 
 ## Links

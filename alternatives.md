@@ -37,3 +37,12 @@ https://www.gitguardian.com/
 - [New Relic](/newrelic/README.md)
 - [Splunk](/splunk.md)
 <!-- - [Nagios](/nagios.md) -->
+
+## Local Kubernetes
+
+- [k3d](/k3d.md)
+- [K3s](/k3s.md)
+- [Kubernetes Cluster (using kubeadm)](/kubernetes/kubernetes-cluster.md)
+- [Kubernetes IN Docker (kind)](/kind/README.md)
+- [MicroK8s](/microk8s.md)
+- [minikube](/minikube.md)

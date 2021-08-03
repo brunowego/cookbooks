@@ -1,4 +1,4 @@
-# K8s Cluster
+# Kubernetes Cluster
 
 ## References
 

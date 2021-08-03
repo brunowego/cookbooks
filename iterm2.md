@@ -57,6 +57,12 @@ Broadcast Input.Toggle Broadcast Input to Current Session'" ~/Library/Preference
 
 ### Tips
 
+#### Default URL Scheme
+
+1. Preferences
+2. Advanced Tab
+3. Semantic History -> Default URL scheme
+
 #### Open With
 
 ##### Visual Studio Code

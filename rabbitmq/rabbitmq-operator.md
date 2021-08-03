@@ -270,6 +270,7 @@ kubectl get secret rabbitmq-default-user \
   -n "$KUBECTL_NAMESPACE" | \
     base64 --decode; echo
 
+#
 kubectl get secret rabbitmq-default-user \
   -o jsonpath='{.data.password}' \
   -n "$KUBECTL_NAMESPACE" | \

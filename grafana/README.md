@@ -29,9 +29,8 @@ docker network create workbench \
 
 ### Running
 
-#### 5.x
-
 ```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h grafana \
@@ -41,52 +40,40 @@ docker run -d \
   -p 3000:3000 \
   --name grafana \
   --network workbench \
-  docker.io/grafana/grafana:5.4.5
-```
+  docker.io/grafana/grafana:7.5.7
 
-```sh
-echo -e '[INFO]\thttp://127.0.0.1:3000'
-```
-
-| Login | Password |
-| --- | --- |
-| `admin` | `admin` |
-
-#### 6.x
-
-```sh
+# Using Google SSO
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h grafana \
   -v grafana-config:/etc/grafana \
   -v grafana-data:/var/lib/grafana \
+  -e GF_AUTH_GOOGLE_ENABLED='true' \
+  -e GF_AUTH_GOOGLE_CLIENT_ID='[client-id]' \
+  -e GF_AUTH_GOOGLE_CLIENT_SECRET='[client-secret]' \
+  -e GF_AUTH_GOOGLE_SCOPES='https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email' \
+  -e GF_AUTH_GOOGLE_AUTH_URL='https://accounts.google.com/o/oauth2/auth' \
+  -e GF_AUTH_GOOGLE_TOKEN_URL='https://accounts.google.com/o/oauth2/token' \
+  -e GF_AUTH_GOOGLE_ALLOWED_DOMAINS='example.com' \
+  -e GF_AUTH_GOOGLE_ALLOW_SIGN_UP='true' \
   -e GF_INSTALL_PLUGINS='grafana-clock-panel, grafana-simple-json-datasource, grafana-piechart-panel' \
   -p 3000:3000 \
   --name grafana \
   --network workbench \
-  docker.io/grafana/grafana:6.7.6
-```
+  docker.io/grafana/grafana:7.5.7
 
-<!-- ```sh
-docker cp [filename].json grafana:/etc/grafana/provisioning/dashboards
-``` -->
-
-```sh
-echo -e '[INFO]\thttp://127.0.0.1:3000'
-```
-
-| Login | Password |
-| --- | --- |
-| `admin` | `admin` |
-
-#### 7.x
-
-```sh
+# Using SMTP
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h grafana \
   -v grafana-config:/etc/grafana \
   -v grafana-data:/var/lib/grafana \
+  -e GF_SMTP_ENABLED='true' \
+  -e GF_SMTP_HOST='smtp.gmail.com:587' \
+  -e GF_SMTP_USER='[email]' \
+  -e GF_SMTP_PASSWORD='[password]' \
+  -e GF_SMTP_FROM_ADDRESS='[example.com]' \
+  -e GF_SMTP_FROM_NAME='[From Name]' \
   -e GF_INSTALL_PLUGINS='grafana-clock-panel, grafana-simple-json-datasource, grafana-piechart-panel' \
   -p 3000:3000 \
   --name grafana \
@@ -112,6 +99,26 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 docker exec -it grafana /bin/bash
 ```
 
+### Backup
+
+```sh
+#
+docker cp ./grafana.db grafana:/var/lib/grafana/grafana.db
+
+#
+docker exec \
+  -u 0 \
+  -it grafana \
+  chown grafana:root /var/lib/grafana/grafana.db
+
+#
+docker restart grafana
+```
+
+<!--
+/etc/grafana/provisioning
+-->
+
 ### Remove
 
 ```sh
@@ -124,65 +131,54 @@ docker volume rm grafana-config grafana-data
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/grafana#configuration)
+- [Configuration](https://github.com/grafana/helm-charts/tree/main/charts/grafana#configuration)
+
+### Repository
+
+```sh
+helm repo add grafana 'https://grafana.github.io/helm-charts'
+helm repo update
+```
 
 ### Install
 
 ```sh
+#
+export INGRESS_HOST='127.0.0.1'
+
+#
 kubectl create namespace grafana
 ```
 
 ```sh
-helm install grafana stable/grafana \
+helm install grafana grafana/grafana \
   --namespace grafana \
-  --set ingress.enabled=true \
-  --set ingress.hosts={grafana.${INGRESS_HOST}.nip.io}
-```
+  --version 6.14.1 \
+  -f <(cat << EOF
+adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
 
-### SSL
-
-#### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-#### Create
-
-```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n grafana
-```
-
-```sh
-helm upgrade grafana stable/grafana -f <(yq m <(cat << EOF
 ingress:
-  tls:
-    - secretName: example.tls-secret
-      hosts:
-        - grafana.${INGRESS_HOST}.nip.io
+  enabled: true
+  hosts:
+  - grafana.${INGRESS_HOST}.nip.io
 EOF
-) <(helm get values grafana))
-```
-
-#### Remove
-
-```sh
-helm upgrade grafana stable/grafana -f <(yq d <(helm get values grafana) ingress.tls)
-
-kubectl delete secret example.tls-secret -n grafana
+)
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/grafana -n grafana
+kubectl rollout status deploy/grafana \
+  -n grafana
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app=grafana' -n grafana -f
+kubectl logs \
+  -l 'app.kubernetes.io/instance=grafana' \
+  -n grafana \
+  -f
 ```
 
 ### DNS
@@ -211,8 +207,12 @@ kubectl get secret grafana \
 ### Delete
 
 ```sh
-helm uninstall grafana -n grafana
-kubectl delete namespace grafana --grace-period=0 --force
+helm uninstall grafana \
+  -n grafana
+
+kubectl delete namespace grafana \
+  --grace-period=0 \
+  --force
 ```
 
 ## CLI

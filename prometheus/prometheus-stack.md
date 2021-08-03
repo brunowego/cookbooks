@@ -33,17 +33,10 @@ kubectl create namespace monitoring
 ```
 
 ```sh
-helm install prometheus prometheus-community/kube-prometheus-stack \
+helm install prometheus-stack prometheus-community/kube-prometheus-stack \
   --namespace monitoring \
   --version 17.0.2 \
   -f <(cat << EOF
-prometheus:
-  ingress:
-    enabled: true
-    hosts:
-    - prometheus.${INGRESS_HOST}.nip.io
-    pathType: Prefix
-
 alertmanager:
   ingress:
     enabled: true
@@ -57,6 +50,13 @@ grafana:
     enabled: true
     hosts:
     - grafana.${INGRESS_HOST}.nip.io
+
+prometheus:
+  ingress:
+    enabled: true
+    hosts:
+    - prometheus.${INGRESS_HOST}.nip.io
+    pathType: Prefix
 EOF
 )
 ```
@@ -74,6 +74,7 @@ kubectl rollout status deploy/prometheus-kube-prometheus-operator \
 kubectl logs \
   -l 'release=prometheus' \
   -n monitoring \
+  --max-log-requests 10 \
   -f
 ```
 
@@ -212,8 +213,6 @@ echo -e "[INFO]\thttp://prometheus.${INGRESS_HOST}.nip.io/service-discovery"
 echo -e "[INFO]\thttp://prometheus.${INGRESS_HOST}.nip.io/config"
 ```
 
-### Tips
-
 #### AWS NLB
 
 ```sh
@@ -225,8 +224,8 @@ kubectl patch svc prometheus-stack-kube-prom-prometheus \
 #
 kubectl annotate svc prometheus-stack-kube-prom-prometheus \
   service.beta.kubernetes.io/aws-load-balancer-internal='true' \
-  service.beta.kubernetes.io/aws-load-balancer-type=nlb \
-  external-dns.alpha.kubernetes.io/hostname=prometheus.example.com \
+  service.beta.kubernetes.io/aws-load-balancer-type='nlb' \
+  external-dns.alpha.kubernetes.io/hostname='prometheus.example.com' \
   -n monitoring
 
 #
@@ -261,6 +260,17 @@ KubeScheduler has disappeared from Prometheus target discovery.
 
 ### Issues
 
+#### Forbidden: may not be used when `type` is 'ClusterIP'
+
+```log
+Error: UPGRADE FAILED: cannot patch "prometheus-kube-prometheus-prometheus" with kind Service: Service "prometheus-kube-prometheus-prometheus" is invalid: spec.ports[0].nodePort: Forbidden: may not be used when `type` is 'ClusterIP'
+```
+
+```sh
+kubectl delete service prometheus-kube-prometheus-prometheus \
+  -n monitoring
+```
+
 #### Timeout with ELB
 
 ```log
@@ -269,7 +279,7 @@ helm.go:81: [debug] Get "https://mycluster.elb.us-east-1.amazonaws.com/apis/apps
 ```
 
 ```sh
-helm install prometheus prometheus-community/kube-prometheus-stack \
+helm install prometheus-stack prometheus-community/kube-prometheus-stack \
   -n monitoring \
   --version 16.12.0
   --timeout 30m \
@@ -280,7 +290,7 @@ helm install prometheus prometheus-community/kube-prometheus-stack \
 ### Delete
 
 ```sh
-helm uninstall prometheus \
+helm uninstall prometheus-stack \
   -n monitoring
 
 kubectl delete namespace monitoring \

@@ -1,5 +1,9 @@
 # Kubernetes Metrics Server
 
+<!--
+https://artifacthub.io/packages/helm/stevehipwell/metrics-server
+-->
+
 ##
 
 ```sh

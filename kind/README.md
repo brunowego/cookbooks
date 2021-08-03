@@ -1,4 +1,4 @@
-# Kubernetes IN Docker (kind)
+# Kubernetes IN Docker (KIND)
 
 ## Links
 
@@ -26,6 +26,12 @@ brew install kind
 
 ```sh
 GO111MODULE='on' go get sigs.k8s.io/kind@v0.4.0
+```
+
+#### Chocolatey
+
+```sh
+choco install kind
 ```
 
 ### Commands
@@ -62,7 +68,9 @@ nodes:
 EOF
 
 #
-cat << EOF | kind create cluster --name 'default' --config -
+cat << EOF | kind create cluster \
+  --name 'default' \
+  --config -
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:

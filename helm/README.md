@@ -103,6 +103,7 @@ pkill helm
 
 ```sh
 helm pull sentry/sentry \
+  -d ./ \
   --untar=true \
   --version 11.2.0
 ```

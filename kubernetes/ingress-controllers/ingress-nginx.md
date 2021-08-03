@@ -117,6 +117,18 @@ prometheus.io/port: "10254"
 
 ### Issues
 
+<!-- ####
+
+```log
+413 Request Entity Too Large
+```
+
+```sh
+kubectl patch ingress/sentry \
+  -n sentry \
+  -p '{"metadata":{"annotations":{"nginx.ingress.kubernetes.io/proxy-body-size":"32m"}}}'
+``` -->
+
 #### Failed Calling Webhook
 
 ```log
