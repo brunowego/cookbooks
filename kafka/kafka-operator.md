@@ -1,15 +1,16 @@
-# Logging Operator
+# Kafka Operator
 
 <!--
 https://github.com/banzaicloud/logging-operator-docs/tree/master/docs/quickstarts
 https://github.com/banzaicloud-build/logging-operator/blob/master/docs/examples/es.md
 https://github.com/xybots/logging-operator-docs/blob/master/docs/operation/logging-operator-monitoring.md
+
+https://artifacthub.io/packages/helm/banzaicloud-stable/kafka-operator
 -->
 
 ## Links
 
-- [Code Repository](https://github.com/banzaicloud/logging-operator)
-- [Main Website](https://banzaicloud.com/products/logging-operator/)
+- [Code Repository](https://github.com/banzaicloud/kafka-operator)
 
 ## Helm
 

@@ -1,5 +1,9 @@
 # Kafdrop
 
+<!--
+https://artifacthub.io/packages/helm/main/kafdrop
+-->
+
 ## Docker
 
 ### Network

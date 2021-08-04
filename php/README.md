@@ -16,6 +16,10 @@ https://daniellockyer.com/php-flame-graphs/
 - [PHP Developer roadmap](https://github.com/thecodeholic/php-developer-roadmap)
 - [The Repository Pattern](https://shawnmc.cool/2015-01-08_the-repository-pattern)
 
+## Tools
+
+- [Unserialize - PHP, JSON, Base64](https://unserialize.com)
+
 ## Terms
 
 - Plain Old PHP Objects (POPO)

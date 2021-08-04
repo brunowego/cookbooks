@@ -17,3 +17,13 @@
 https://www.youtube.com/watch?v=v9yu1uIYuoA
 https://www.youtube.com/watch?v=-BW0Kk5Vj7o
 -->
+
+## Tips
+
+### Here document (heredoc)
+
+```sh
+docker exec -i [container-name] /bin/sh << EOSHELL
+
+EOSHELL
+```

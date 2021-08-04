@@ -1,5 +1,9 @@
 # OpenFaaS
 
+<!--
+https://artifacthub.io/packages/helm/openfaas/kafka-connector
+-->
+
 ## Helm
 
 ### References

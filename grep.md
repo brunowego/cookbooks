@@ -10,7 +10,7 @@
 grep --help
 ```
 
-## Examples
+## Tips
 
 ### Highlight
 
@@ -27,4 +27,13 @@ Jane Doe
 Richard Roe
 
 EOF
+```
+
+### Docker Logs Filter
+
+```sh
+#
+docker logs [container-name] 2> >(grep '[text]')
+#
+docker logs [container-name] 2>&1 | grep '[text]'
 ```

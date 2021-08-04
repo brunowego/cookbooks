@@ -514,3 +514,13 @@ $query = new WP_Query( array( ... ) );
 //
 echo $query->request;
 ```
+
+<!-- ## Tips
+
+###
+
+```sh
+This feature is disabled
+```
+
+https://wordpress.org/plugins/defender-security/ -->
