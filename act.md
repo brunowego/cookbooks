@@ -38,10 +38,10 @@ act -h
 ### Configuration
 
 ```sh
-cat << EOF > ~/.actrc
+cat << EOP > ~/.actrc
 -P ubuntu-latest=catthehacker/ubuntu:act-latest
 --secret-file ./.secrets
-EOF
+EOP
 ```
 
 ### Usage

@@ -26,13 +26,12 @@ helm repo update
 
 ```sh
 #
+kubectl create namespace monitoring
+
+#
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace monitoring
-```
-
-```sh
 helm install prometheus-stack prometheus-community/kube-prometheus-stack \
   --namespace monitoring \
   --version 17.0.2 \
@@ -82,7 +81,7 @@ kubectl logs \
 
 ```sh
 #
-kubectl get secret prometheus-grafana \
+kubectl get secret prometheus-stack-grafana \
   -o jsonpath='{.data.admin-password}' \
   -n monitoring | \
     base64 --decode; echo
@@ -130,6 +129,24 @@ echo -e "[INFO]\thttp://grafana.${INGRESS_HOST}.nip.io"
 ```
 
 ### Tips
+
+#### Backup
+
+```sh
+# Backup
+kubectl cp \
+  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/name=grafana -n monitoring):/var/lib/grafana/grafana.db \
+  "$PWD"/grafana.db \
+  -c grafana \
+  -n monitoring
+
+# Restore
+kubectl cp \
+  "$PWD"/grafana.db \
+  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/name=grafana -n monitoring):/var/lib/grafana/grafana.db \
+  -c grafana \
+  -n monitoring
+```
 
 #### External Exporter
 
@@ -190,7 +207,7 @@ kind: ServiceMonitor
 metadata:
   name: my-machine-metrics
   labels:
-    release: prometheus
+    release: prometheus-stack
 spec:
   selector:
     matchLabels:

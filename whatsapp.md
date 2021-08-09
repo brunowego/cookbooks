@@ -14,6 +14,12 @@
 brew install --cask whatsapp
 ```
 
+#### Chocolatey
+
+```sh
+choco install -y whatsapp
+```
+
 ### Tips
 
 #### Force Specific Network Interface

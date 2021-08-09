@@ -146,7 +146,7 @@ metrics:
   serviceMonitor:
     enabled: true
     additionalLabels:
-      release: prometheus
+      release: prometheus-stack
 EOF
 ) \
   --timeout 15m \
@@ -184,6 +184,24 @@ kubectl logs \
 ```sh
 #
 echo -e "[INFO]\thttp://sentry.${INGRESS_HOST}.nip.io"
+```
+
+### Issues
+
+#### Redis Infinite Terminating
+
+```sh
+#
+kubectl delete pod sentry-sentry-redis-master-0 \
+  --grace-period=0 \
+  --force \
+  -n sentry
+
+#
+kubectl delete pod sentry-sentry-redis-slave-0 \
+  --grace-period=0 \
+  --force \
+  -n sentry
 ```
 
 ### Delete

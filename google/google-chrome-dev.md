@@ -16,3 +16,9 @@ brew install \
   --appdir='/Applications' \
   google-chrome-dev
 ```
+
+#### Chocolatey
+
+```sh
+choco install -y googlechrome.dev
+```

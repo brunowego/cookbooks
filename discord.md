@@ -22,6 +22,12 @@ https://gist.github.com/thomasbnt/b6f455e2c7d743b796917fa3c205f812
 brew install --cask discord
 ```
 
+#### Chocolatey
+
+```sh
+choco install -y discord
+```
+
 ## API
 
 ### Tips

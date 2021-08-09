@@ -39,3 +39,13 @@ KUBEKUTR_VERSION="$(curl -s https://api.github.com/repos/kubernetes-sigs/aws-iam
 ```sh
 aws-iam-authenticator help
 ```
+
+### Issues
+
+#### Missing CLI
+
+```log
+Unable to connect to the server: getting credentials: exec: exec: "aws-iam-authenticator": executable file not found in $PATH
+```
+
+Missing AWS IAM Authenticator CLI in PATH.

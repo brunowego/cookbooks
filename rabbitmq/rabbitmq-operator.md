@@ -63,6 +63,14 @@ EOF
 )
 ```
 
+### Fixes
+
+```sh
+#
+kubectl label servicemonitor rabbitmq-operator-clusters release=prometheus-stack \
+  -n rabbitmq-system
+```
+
 ### Status
 
 ```sh

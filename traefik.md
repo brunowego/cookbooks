@@ -127,7 +127,7 @@ metadata:
   name:  traefik
   labels:
     app: traefik
-    release: prometheus
+    release: prometheus-stack
 spec:
   jobLabel: traefik-metrics
   endpoints:

@@ -19,7 +19,9 @@ sudo yum -y install curl java-1.8.0-openjdk
 ## Installation
 
 ```sh
-curl https://archive.apache.org/dist/hadoop/common/hadoop-3.1.1/hadoop-3.1.1.tar.gz | sudo tar -xzC /opt --no-same-owner --no-same-permissions
+curl https://archive.apache.org/dist/hadoop/common/hadoop-3.1.1/hadoop-3.1.1.tar.gz | \
+  sudo tar -xzC /opt --no-same-owner --no-same-permissions
+
 sudo ln -s /opt/hadoop-3.1.1 /opt/hadoop
 ```
 

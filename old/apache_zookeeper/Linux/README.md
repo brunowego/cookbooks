@@ -19,7 +19,9 @@ sudo yum -y install curl java-1.8.0-openjdk
 ## Installation
 
 ```sh
-curl https://archive.apache.org/dist/zookeeper/zookeeper-3.4.13/zookeeper-3.4.13.tar.gz | sudo tar -xzC /opt --no-same-owner --no-same-permissions
+curl https://archive.apache.org/dist/zookeeper/zookeeper-3.4.13/zookeeper-3.4.13.tar.gz | \
+  sudo tar -xzC /opt --no-same-owner --no-same-permissions
+
 sudo ln -s /opt/zookeeper-3.4.13 /opt/zookeeper
 ```
 

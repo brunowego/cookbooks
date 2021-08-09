@@ -130,6 +130,16 @@ kubectl delete secret [secret-name] -n [namespace]
 
 ### Tips
 
+#### Delete Problematic Pod
+
+```sh
+#
+kubectl delete pod $(kubectl get pods | awk '$3 == "CrashLoopBackOff" {print $1}')
+
+#
+kubectl delete pod $(kubectl get pods | awk '$3 == "Error" {print $1}')
+```
+
 #### Batch Delete
 
 ```sh
@@ -599,3 +609,25 @@ kubectl port-forward \
   svc/keycloak-postgresql \
   5432:5432
 -->
+
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+#
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h kubectl \
+  -v "$HOME"/.kube/config:/.kube/config \
+  --name kubectl \
+  --network workbench \
+  docker.io/bitnami/kubectl:1.18.15 --help
+```

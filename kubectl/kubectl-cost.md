@@ -17,10 +17,3 @@ kubectl krew install cost
 ```sh
 kubectl cost -h
 ```
-
-<!-- ## Usage
-
-```sh
-#
-
-``` -->

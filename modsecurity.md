@@ -8,12 +8,3 @@ https://linkedin.com/learning/ethical-hacking-evading-ids-firewalls-and-honeypot
 ## Links
 
 - [Code Repository](https://github.com/SpiderLabs/ModSecurity)
-
-## Alternatives
-
-- Astra Security
-- AWS Web Application Firewall (WAF)
-- Cloudflare
-- Incapsula
-- StackPath
-- Sucuri

@@ -183,7 +183,7 @@ brew install prometheus
 ```sh
 curl -L 'https://github.com/prometheus/prometheus/releases/download/v2.10.0/prometheus-2.10.0.linux-amd64.tar.gz' | \
   sudo tar -xzC /opt && \
-  sudo ln -s /opt/prometheus-2.6.1.linux-amd64 /opt/prometheus
+    sudo ln -s /opt/prometheus-2.6.1.linux-amd64 /opt/prometheus
 ```
 
 #### Chocolatey

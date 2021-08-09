@@ -52,13 +52,13 @@ prometheus:
     podMonitor:
       enabled: true
       additionalLabels:
-        release: prometheus
+        release: prometheus-stack
   operator:
     enabled: true
     podMonitor:
       enabled: true
       additionalLabels:
-        release: prometheus
+        release: prometheus-stack
 EOF
 )
 ```

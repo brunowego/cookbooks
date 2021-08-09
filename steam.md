@@ -10,10 +10,8 @@
 brew install --cask steam
 ```
 
-### Uninstall
-
-#### Homebrew
+### Chocolatey
 
 ```sh
-brew uninstall --cask steam
+choco install -y steam-client
 ```

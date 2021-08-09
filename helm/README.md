@@ -186,6 +186,20 @@ source <(helm completion zsh)
 
 ### Issues
 
+#### Update Failed - Context Deadline Exceeded
+
+```log
+Error: UPGRADE FAILED: Get "https://[secret].us-east-1.elb.amazonaws.com/api/v1/namespaces/sentry/services/sentry-snuba": context deadline exceeded
+```
+
+```sh
+helm install \
+  # ...
+  --debug
+```
+
+[Change the DNS](/dns.md#set-dns).
+
 #### Failed Timeout Condition
 
 ```log

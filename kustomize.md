@@ -1,5 +1,9 @@
 # Kustomize
 
+<!--
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
+-->
+
 ## Links
 
 - [Main Website](https://kustomize.io/)
@@ -100,4 +104,17 @@ icdiff <(kustomize build ./base) <(kustomize build ./overlays/local)
 
 ```sh
 kustomize edit set image []:[tag]
+``` -->
+
+<!-- ### Issues
+
+####
+
+```log
+Error: no matches for OriginalId ~G_v1_ConfigMap|~X|my-app-metadata; no matches for CurrentId ~G_v1_ConfigMap|~X|my-app-metadata; failed to find unique target for patch ~G_v1_ConfigMap|my-app-metadata
+```
+
+```yaml
+resources:
+- _app_metadata.yaml
 ``` -->

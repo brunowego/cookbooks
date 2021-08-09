@@ -31,5 +31,6 @@ echo -e '[INFO]\thttp://127.0.0.1:18630'
 
 ```sh
 docker rm -f streamsets-dc
+
 docker volume rm sdc-data
 ```

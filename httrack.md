@@ -1,9 +1,25 @@
 # HTTrack
 
-## Installation
+<!--
+https://github.com/hartator/wayback-machine-downloader
+-->
 
-### Homebrew
+## Links
+
+- [Main Website](https://httrack.com/)
+
+## App
+
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install httrack
+```
+
+### Commands
+
+```sh
+httrack -h
 ```

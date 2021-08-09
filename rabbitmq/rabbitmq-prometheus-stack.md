@@ -30,7 +30,7 @@ kind: ServiceMonitor
 metadata:
   name: rabbitmq
   labels:
-    release: prometheus
+    release: prometheus-stack
 spec:
   selector:
     matchLabels:
@@ -69,7 +69,7 @@ kind: PodMonitor
 metadata:
   name: rabbitmq-cluster-operator
   labels:
-    release: prometheus
+    release: prometheus-stack
 spec:
   selector:
     matchLabels:

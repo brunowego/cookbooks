@@ -63,3 +63,22 @@ symfony server:start
 #
 symfony check:security
 ```
+
+### Issues
+
+#### Missing Symfony CMD
+
+```log
+sh: symfony-cmd: command not found
+Script symfony-cmd handling the auto-scripts event returned with error code 127
+Script @auto-scripts was called via post-install-cmd
+```
+
+```sh
+composer install \
+  --no-scripts
+```
+
+<!--
+php composer.phar update symfony/flex --no-plugins --no-scripts
+-->

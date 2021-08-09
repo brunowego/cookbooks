@@ -306,3 +306,9 @@ Application has 2 orphaned resources
 kubectl get appprojects \
   -n argocd
 ```
+
+## Issues
+
+### Degraded
+
+Access the cluster and debug the namespace of the project.

@@ -30,12 +30,14 @@ dataeng
 
 - [Attach Handlers to Container Lifecycle Events](https://kubernetes.io/docs/tasks/configure-pod-container/attach-handler-lifecycle-event/)
 - [Debugging DNS Resolution](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/)
+- [DNS Lookups in Kubernetes](https://mrkaran.dev/posts/ndots-kubernetes/)
 
 ## Terms
 
 - Custom Resource Definition (CRD)
-- Horizontal Pod Autoscaler (HPA)
 - Custom Resource Definition (CRD)
+- Horizontal Pod Autoscaler (HPA)
+- Out Of Memory (OOM)
 
 ## Tools
 
@@ -97,8 +99,16 @@ code --disable-extension ms-kubernetes-tools.vscode-kubernetes-tools
 
 ### Issues
 
-####
+#### Out Of Memory (OOMKilled)
+
+```log
+command terminated with exit code 137
+```
+
+TODO
+
+<!-- ####
 
 ```sh
 Warning  FailedScheduling  21s (x6 over 4m41s)  default-scheduler  0/4 nodes are available: 4 pod has unbound immediate PersistentVolumeClaims.
-```
+``` -->

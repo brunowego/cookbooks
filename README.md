@@ -1,6 +1,8 @@
 # Cookbooks
 
 <!--
+Prefix vs Suffix
+
 https://hackertyper.com/
 
 1. https://linkedin.com/learning/learning-javascript-debugging-2/welcome
@@ -65,6 +67,7 @@ Bucket of cookbooks to help install and set softwares.
 - Individual Development Plan (IDP)
 - Individual Development Plan (IDP)]
 - Infrastructure as a service (IaaS)
+- Initial Public Offering (IPO)
 - Key Performance Indicators (KPI)
 - Low-code development platform (LCDP)
 - Minimum Viable Product (MVP)

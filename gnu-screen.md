@@ -1,5 +1,9 @@
 # GNU Screen
 
+## Alternatives
+
+- [tmux](/tmux.md)
+
 ## CLI
 
 ### Installation

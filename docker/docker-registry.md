@@ -144,6 +144,7 @@ docker volume inspect docker-registry-data
 ### Running
 
 ```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h registry \
@@ -151,16 +152,18 @@ docker run -d \
   -v docker-registry-config:/etc/docker/registry \
   -p 5000:5000 \
   --name docker-registry \
-  registry:2
+  docker.io/library/registry:2
 ```
 
-```sh
-docker exec docker-registry cat /etc/docker/registry/config.yml | yq w - proxy.remoteurl 'https://registry-1.docker.io' | docker exec -i docker-registry /bin/sh -c 'cat > /etc/docker/registry/config.yml'
-```
+<!-- ```sh
+#
+docker exec docker-registry cat /etc/docker/registry/config.yml | \
+  yq w - proxy.remoteurl 'https://registry-1.docker.io' | \
+    docker exec -i docker-registry /bin/sh -c 'cat > /etc/docker/registry/config.yml'
 
-```sh
+#
 docker restart docker-registry
-```
+``` -->
 
 ### Logs
 
@@ -175,6 +178,9 @@ time docker pull docker.io/library/redis:latest
 ```
 
 ```sh
+# kind
+curl -X GET "http://127.0.0.1:5000/v2/_catalog"
+
 # minikube
 curl -X GET "http://$(minikube ip):5000/v2/_catalog"
 
@@ -194,6 +200,8 @@ time docker pull docker.io/library/redis:latest
 
 ```sh
 docker rm -f docker-registry
-docker volume rm docker-registry-data
-docker volume rm docker-registry-config
+
+docker volume rm \
+  docker-registry-data \
+  docker-registry-config
 ```

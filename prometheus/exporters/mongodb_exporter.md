@@ -31,7 +31,7 @@ mongodb:
 
 serviceMonitor:
   additionalLabels:
-    release: prometheus
+    release: prometheus-stack
 EOF
 )
 ```

@@ -1,10 +1,10 @@
-# Kubernetes Ingress NGINX
+# Kubernetes NGINX Ingress Controller
 
 <!--
+https://github.com/SpiderLabs/ModSecurity-nginx
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
 https://web.dev/same-site-same-origin/
-
-https://grafana.com/grafana/dashboards/9614
+https://github.com/kubernetes/ingress-nginx/tree/main/deploy/grafana/dashboards
 -->
 
 ## Alternatives
@@ -13,7 +13,14 @@ https://grafana.com/grafana/dashboards/9614
 
 ## Links
 
+- [Main Website](https://kubernetes.github.io/ingress-nginx/)
 - [Annotations](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/)
+- [Generate Deploy Scripts](https://github.com/kubernetes/ingress-nginx/blob/main/hack/generate-deploy-scripts.sh)
+
+## Utils
+
+- Grafana Dashboards
+  - [NGINX Ingress controller](https://grafana.com/grafana/dashboards/9614)
 
 ## Glossary
 
@@ -36,13 +43,6 @@ kubectl wait \
   --for=condition=ready pod \
   --selector=app.kubernetes.io/component=controller \
   --timeout=90s
-```
-
-### Uninstall
-
-```sh
-kubectl delete \
-  -f 'https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml'
 ```
 
 ### Tips
@@ -137,7 +137,17 @@ Error from server (InternalError): error when creating "STDIN": Internal error o
 
 ```sh
 #
+kubectl get validatingwebhookconfigurations
+
+#
 kubectl delete -A ValidatingWebhookConfiguration ingress-nginx-admission
+```
+
+### Uninstall
+
+```sh
+kubectl delete \
+  -f 'https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml'
 ```
 
 ## Minikube
@@ -156,74 +166,105 @@ minikube addons disable ingress
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/nginx-ingress#configuration)
-- [Exposing TCP and UDP services](https://kubernetes.github.io/ingress-nginx/user-guide/exposing-tcp-udp-services/)
+- [Configuration](https://github.com/kubernetes/ingress-nginx/tree/main/charts/ingress-nginx#configuration)
+
+### Repository
+
+```sh
+helm repo add ingress-nginx 'https://kubernetes.github.io/ingress-nginx'
+helm repo update
+```
+
+### Dependencies
+
+- [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
 
 ### Install
 
 ```sh
-helm install nginx-ingress stable/nginx-ingress \
-  --namespace kube-system \
-  --set controller.publishService.enabled=true
-```
+#
+kubectl create namespace ingress-nginx
 
-### SSL
+#
+kubectl get prometheus \
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
+  -n monitoring
 
-### Dependencies
+# Kubernetes IN Docker (KIND)
+helm install ingress-controller ingress-nginx/ingress-nginx \
+  --namespace ingress-nginx \
+  --version 3.35.0 \
+  -f <(cat << EOF
+controller:
+  hostPort:
+    enabled: true
 
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
+  publishService:
+    enabled: false
 
-### Create
+  extraArgs:
+    publish-status-address: localhost
 
-```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n default
-```
+  tolerations:
+  - key: node-role.kubernetes.io/master
+    operator: Equal
+    effect: NoSchedule
 
-```sh
-helm upgrade nginx-ingress stable/nginx-ingress -f <(yq w <(helm get values nginx-ingress) controller.extraArgs.default-ssl-certificate default/example.tls-secret)
-```
+  terminationGracePeriodSeconds: 0
 
-#### Remove
+  nodeSelector:
+    ingress-ready: 'true'
+    kubernetes.io/os: linux
 
-```sh
-helm upgrade nginx-ingress stable/nginx-ingress -f <(yq d <(helm get values nginx-ingress) controller.extraArgs.default-ssl-certificate)
+  podAnnotations:
+    prometheus.io/scrape: 'true'
+    prometheus.io/port: '10254'
 
-kubectl delete secret example.tls-secret -n default
+  service:
+    type: NodePort
+
+  metrics:
+    enabled: true
+    serviceMonitor:
+      enabled: true
+      additionalLabels:
+        release: prometheus-stack
+EOF
+)
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/nginx-ingress-controller -n kube-system
+kubectl rollout status deploy/ingress-controller-ingress-nginx-controller \
+  -n ingress-nginx
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app=nginx-ingress,component=controller' -n kube-system -f
-kubectl logs -l 'app=nginx-ingress,component=default-backend' -n kube-system -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 nginx-ingress-default-backend.kube-system.svc.cluster.local +short
-nslookup nginx-ingress-default-backend.kube-system.svc.cluster.local 10.96.0.10
+kubectl logs -l 'app.kubernetes.io/instance=ingress-controller' \
+  -n ingress-nginx \
+  -f
 ```
 
 ### Tips
 
-#### HTTP Strict Transport Security (HSTS)
+#### K8s Manifests
+
+```sh
+helm get manifest ingress-controller \
+  -n ingress-nginx
+```
+
+<!-- #### HTTP Strict Transport Security (HSTS)
 
 ```yml
 nginx.ingress.kubernetes.io/server-snippet: |
   add_header Strict-Transport-Security "max-age=63072000; includeSubDomains" always;
-```
+``` -->
 
-#### Minikube Tunnel
+<!-- #### Minikube Tunnel
 
 ```log
 ; (1 server found)
@@ -233,10 +274,15 @@ nginx.ingress.kubernetes.io/server-snippet: |
 
 ```sh
 minikube tunnel
-```
+``` -->
 
 ### Delete
 
 ```sh
-helm uninstall nginx-ingress -n nginx-ingress
+helm uninstall ingress-controller \
+  -n ingress-nginx
+
+kubectl delete namespace ingress-nginx \
+  --grace-period=0 \
+  --force
 ```

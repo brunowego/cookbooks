@@ -183,10 +183,35 @@ kubectl patch ingress/sentry \
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
-docker run --rm \
-  -v "$(pwd)":/work \
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h sentry \
+  --name sentry \
+  --network workbench \
   docker.io/getsentry/sentry-cli --help
+```
+
+### Tips
+
+#### Send Event
+
+```sh
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h sentry \
+  -e SENTRY_DSN='' \
+  --name sentry \
+  --network workbench \
+  docker.io/getsentry/sentry-cli send-event \
+  -m 'Something happened'
 ```

@@ -28,7 +28,7 @@ metadata:
   name: rabbitmq.rules
   labels:
     app: kube-prometheus-stack
-    release: prometheus
+    release: prometheus-stack
 spec:
   groups:
   - name: rabbitmq.rules

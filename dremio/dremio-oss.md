@@ -1,6 +1,8 @@
 # Dremio OSS
 
 <!--
+https://github.com/dremio/dremio-cloud-tools/tree/master/charts/dremio_v2
+
 https://github.com/xiaset/docker-dremio-oss-hdfs/blob/master/Dockerfile
 https://github.com/markfjohnson/RangerDremio
 https://github.com/VadymKhodak/dremio_presentation
@@ -12,47 +14,50 @@ https://github.com/markfjohnson/Dremio_Master_Detail_Parquet
 https://github.com/josepcurto/mbd-bidw
 -->
 
-## Guides
-
-- [Deployment Dremio on EKS](https://docs.dremio.com/deployment/amazon-eks/eks-deploy.html)
-
-## References
-
-- [Documentation](https://docs.dremio.com/)
-- [Data Warehouses Explained by Dremio](https://www.dremio.com/what-is-a-data-warehouse/)
-
 ## Helm
 
-### Install
+### References
+
+- [Values](https://github.com/dremio/dremio-cloud-tools/blob/master/charts/dremio_v2/values.yaml)
+
+### Repository
 
 ```sh
 curl -L 'https://github.com/dremio/dremio-cloud-tools/archive/master.tar.gz' | \
   tar -xz --strip-components 1 dremio-cloud-tools-master/charts
 ```
 
+### Install
+
 ```sh
 kubectl create namespace dremio
 ```
 
 ```sh
-helm install dremio-oss ./charts/dremio \
+helm install dremio-oss ./charts/dremio_v2 \
   --namespace dremio \
-  --set coordinator.memory=1024 \
-  --set coordinator.cpu=1 \
-  --set coordinator.count=1 \
-  --set coordinator.volumeSize=10Gi \
-  --set executor.memory=1024 \
-  --set executor.cpu=1 \
-  --set executor.count=1 \
-  --set executor.volumeSize=10Gi \
-  --set zookeeper.memory=512 \
-  --set zookeeper.cpu=0.2 \
-  --set zookeeper.count=1 \
-  --set zookeeper.volumeSize=1Gi \
-  --set serviceType=ClusterIP
+  --version 2.0.0 \
+  -f <(cat << EOF
+coordinator:
+  cpu: 2
+  memory: 4096
+  count: 1
+  volumeSize: 10Gi
+
+executor:
+  cpu: 2
+  memory: 4096
+  count: 1
+  volumeSize: 10Gi
+EOF
+)
 ```
 
 ```sh
+#
+export INGRESS_HOST='127.0.0.1'
+
+#
 cat << EOF | kubectl apply -f -
 apiVersion: extensions/v1beta1
 kind: Ingress
@@ -61,13 +66,13 @@ metadata:
   namespace: dremio
 spec:
   rules:
-    - host: dremio.${INGRESS_HOST}.nip.io
-      http:
-        paths:
-          - backend:
-              serviceName: dremio-client
-              servicePort: 9047
-            path: /
+  - host: dremio.${INGRESS_HOST}.nip.io
+    http:
+      paths:
+      - backend:
+          serviceName: dremio-client
+          servicePort: 9047
+        path: /
 EOF
 ```
 
@@ -75,11 +80,31 @@ EOF
 rm -fR ./charts
 ```
 
+### Status
+
+```sh
+kubectl rollout status statefulset/dremio-coordinator \
+  -n dremio
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app=dremio-coordinator' \
+  -n dremio \
+  -f
+```
+
 ### Delete
 
 ```sh
-helm uninstall dremio-oss -n dremio-oss
-kubectl delete namespace dremio --grace-period=0 --force
+helm uninstall dremio-oss \
+  -n dremio
+
+kubectl delete namespace dremio \
+  --grace-period=0 \
+  --force
 ```
 
 ## Docker
@@ -116,5 +141,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9047'
 ```sh
 docker rm -f dremio-oss
 
-docker volume rm dremio-oss-conf dremio-oss-data
+docker volume rm \
+  dremio-oss-conf \
+  dremio-oss-data
 ```

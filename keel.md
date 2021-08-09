@@ -36,7 +36,7 @@ ingress:
   hosts:
   - host: keel.${INGRESS_HOST}.nip.io
     paths:
-      - /
+    - /
 EOF
 )
 ```

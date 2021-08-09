@@ -1,5 +1,9 @@
 # Windows
 
+<!--
+http://help.market.com.br/frente/index.html?permitir-ping-windows-10.htm
+-->
+
 ## References
 
 - [Windows 10 ISO](https://microsoft.com/en-us/software-download/windows10ISO)

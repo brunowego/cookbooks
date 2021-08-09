@@ -175,7 +175,7 @@ kind: ServiceMonitor
 metadata:
   name: msk-lb-metrics
   labels:
-    release: prometheus
+    release: prometheus-stack
 spec:
   selector:
     matchLabels:

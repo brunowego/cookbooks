@@ -46,3 +46,33 @@ https://www.gitguardian.com/
 - [Kubernetes IN Docker (kind)](/kind/README.md)
 - [MicroK8s](/microk8s.md)
 - [minikube](/minikube.md)
+
+## Change Data Capture (CDC)
+
+- [Debezium](/debezium.md)
+- Hevo Data
+- [IBM InfoSphere DataStage](/ibm/ibm-infosphere-datastage.md)
+- Oracle GoldenGate
+- Qlik Replicate
+- [StreamSets Data Collector (sdc)](/streamsets/streamsets-datacollector.md)
+- Talend
+
+## AWS Profile Manager
+
+- [AWS Profile Manager (a.k.a. AWS Profile Switcher)](/aws-profile-manager.md)
+- [AWS Vault](/aws-vault.md)
+
+## Backup
+
+- [restic](/restic.md)
+- [Velero](/velero.md)
+
+## Web Application Firewall (WAF)
+
+- Astra Security
+- AWS Web Application Firewall (WAF)
+- Cloudflare
+- Incapsula
+- ModSecurity
+- StackPath
+- Sucuri

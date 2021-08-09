@@ -5,4 +5,6 @@ https://app.pluralsight.com/library/courses/cyber-security-essentials/table-of-c
 https://github.com/ashemery/exploitation-course
 -->
 
-TODO
+## Content
+
+- [Awesome Cybersecurity Blue Team Awesome](https://github.com/fabacab/awesome-cybersecurity-blueteam)
