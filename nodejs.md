@@ -131,3 +131,18 @@ antigen bundle node
 ```sh
 code --install-extension wix.vscode-import-cost
 ```
+
+<!-- ### Issues -->
+
+<!-- ####
+
+```log
+with exit code 134
+```
+
+https://stackoverflow.com/questions/59766839/error-code-elifecycle-npm-err-errno-134
+
+```sh
+export NODE_OPTIONS='--max-old-space-size=8192'
+```
+-->

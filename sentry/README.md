@@ -364,3 +364,20 @@ docker-compose up -d
 #
 echo -e '[INFO]\thttp://127.0.0.1:9000'
 ```
+
+<!-- ## AWS
+
+### Issues
+
+####
+
+```sh
+kubectl describe pod sentry-sentry-redis-master-0
+
+tag:kubernetes.io/created-for/pvc/name : redis-data-sentry-sentry-redis-master-0
+
+kubectl describe pod sentry-sentry-redis-slave-0
+
+
+kubectl describe pod sentry-sentry-redis-slave-1
+``` -->

@@ -24,3 +24,19 @@ https://github.com/Mobiauto/sre-interview-boilerplate
 ```sh
 brew install pulumi
 ```
+
+### Commands
+
+```sh
+pulumi -h
+```
+
+### Usage
+
+```sh
+#
+pulumi export > export.json
+
+#
+pulumi stack import --file export.json
+```

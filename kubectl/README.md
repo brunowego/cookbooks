@@ -48,6 +48,7 @@ kubectl get \
 kubectl get cs
 
 # Config Context
+kubectl config get-contexts
 kubectl config current-context
 
 # Expose

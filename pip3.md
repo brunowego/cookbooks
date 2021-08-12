@@ -242,7 +242,7 @@ pip3 install --upgrade certifi
 ```Dockerfile
 COPY ./requirements.txt /usr/src/[appname]
 
-RUN if [ -s /usr/src/[appname]/requirements.txt ]; then pip3 install -r /usr/src/[appname]/requirements.txt; fi
+RUN if [ -s /usr/src/[appname]/requirements.txt ]; then pip3 install --no-cache-dir -r /usr/src/[appname]/requirements.txt; fi
 ```
 
 ```sh

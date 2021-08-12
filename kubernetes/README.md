@@ -102,7 +102,7 @@ code --disable-extension ms-kubernetes-tools.vscode-kubernetes-tools
 #### Out Of Memory (OOMKilled)
 
 ```log
-command terminated with exit code 137
+with exit code 137
 ```
 
 TODO

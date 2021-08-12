@@ -18,6 +18,7 @@ https://media-exp1.licdn.com/dms/image/sync/C4E27AQFXhz19BLKTlg/articleshare-shr
 
 - [Government](https://government.github.com/community/)
 - [myOctocat](https://myoctocat.com/)
+- [GitHub Status](https://githubstatus.com/)
 
 ## API
 
@@ -77,7 +78,7 @@ gh repo create \
   --public
 ```
 
-## Docs
+## Tips
 
 ### Dependabot
 

@@ -75,9 +75,7 @@ export KOPS_STATE_STORE='s3://k8s-kops-state-store'
 export KOPS_CLUSTER_NAME='dev01-us-east-1.k8s.local' # prod01, stg01, uat01
 
 #
-kops get cluster \
-  -o json |
-    jq '.[0]'
+kops get cluster
 
 #
 ssh-keygen \
@@ -131,6 +129,8 @@ kubectl delete deploy nginx
 
 ### Tips
 
+####
+
 <!-- #### Delete Cluster
 
 ```sh
@@ -160,18 +160,18 @@ kops \
 ```sh
 # Get first cluster description
 kops get cluster \
-  -o json |
-    jq '.[0]'
+  -o json | \
+    jq
 
 # Discover network CIDR in use
 kops get cluster \
   -o json | \
-    jq '.[].spec.networkCIDR'
+    jq '.spec.networkCIDR'
 
 # Get Kubernetes version in use
 kops get cluster \
   -o json | \
-    jq '.[].spec.kubernetesVersion'
+    jq '.spec.kubernetesVersion'
 ```
 
 #### Cluster Update

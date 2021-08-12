@@ -26,22 +26,3 @@ sudo a2enmod headers
 # Systemd
 sudo systemctl restart apache2
 ```
-
-## Set the 'ServerName' directive globally to suppress this message
-
-```log
-AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
-```
-
-```sh
-echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/[filename].conf
-```
-
-```sh
-sudo a2enconf servername
-```
-
-```sh
-# Systemd
-sudo systemctl restart apache2
-```

@@ -1,10 +1,25 @@
 # Deployer
 
+<!--
+https://stefanzweifel.io/posts/2021/05/24/deployer-on-github-actions
+-->
+
 **Keywords:** Tool for PHP
+
+## Links
+
+- [Code Repository](https://github.com/deployphp/deployer)
+- [Main Website](https://deployer.org/)
 
 ## CLI
 
 ### Installation
+
+#### Homebrew
+
+```sh
+brew install deployer
+```
 
 #### Unix-like
 
@@ -21,6 +36,13 @@ curl -L 'https://deployer.org/deployer.phar' -o /usr/local/bin/dep && \
 ### Commands
 
 ```sh
+#
 dep help
+```
+
+### Usage
+
+```sh
+#
 dep list
 ```

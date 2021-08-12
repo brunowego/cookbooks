@@ -241,5 +241,5 @@ echo '</pre>';
 a:1:{i:1;s:4:"test";
 ```
 
-- [serialize](https://www.php.net/manual/en/function.serialize.php)
-- [unserialize](https://www.php.net/manual/en/function.unserialize.php)
+- [serialize](https://php.net/manual/en/function.serialize.php)
+- [unserialize](https://php.net/manual/en/function.unserialize.php)

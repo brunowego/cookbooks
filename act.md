@@ -38,30 +38,34 @@ act -h
 ### Configuration
 
 ```sh
+#
 cat << EOP > ~/.actrc
 -P ubuntu-latest=catthehacker/ubuntu:act-latest
 --secret-file ./.secrets
 EOP
+
+# Git ignore
+echo '/.secrets' >> ~/.gitignore_global
 ```
 
 ### Usage
 
 ```sh
-#
-act -l
+# List actions
+act -l \
+  -W ./.github/workflows/[name].yaml
 
-#
-act \
-  push \
+# Run on push
+act push \
   -v
 
-act \
-  pull_request \
+# Run on pull request
+act pull_request \
   -v
 
-#
-act \
-  -j build \
+# Run specific job
+act -j build \
+  -W ./.github/workflows/[name].yaml
   -v
 ```
 
@@ -76,7 +80,25 @@ jq '."files.associations".".secrets" |= "dotenv"' "$HOME/.config/Code/User/setti
   sponge "$HOME/.config/Code/User/settings.json"
 ```
 
-<!-- ### Issues -->
+### Issues
+
+#### Missing GitHub Token
+
+```log
+Error: Error undefined: Parameter token or opts.auth is required
+```
+
+```sh
+export GITHUB_TOKEN=''
+```
+
+#### Update Token
+
+```log
+DEBU[0003] authentication required
+```
+
+Update your `GITHUB_TOKEN` in `.secrets` file.
 
 <!-- ####
 

@@ -153,3 +153,7 @@ aws \
     --filter 'Name=tag:Name,Values=Kubernetes' \
     --query 'Vpcs[0].VpcId'
 -->
+
+<!--
+aws ec2 detach-volume --volume-id "$1" --force
+-->

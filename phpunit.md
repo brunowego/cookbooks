@@ -15,11 +15,11 @@ https://github.com/HorseLuke/php-dg24framework_framework-base-minimal/blob/8f2cf
 brew install phpunit
 ```
 
-#### PHPBrew
+<!-- #### PHPBrew
 
 ```sh
 phpbrew -d app get --downloader=wget phpunit
-```
+``` -->
 
 #### Unix-like
 

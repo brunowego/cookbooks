@@ -1,36 +1,50 @@
-# Linux
+# Library Rapid Development Kafka (a.k.a librdkafka)
 
-## Dependencies
+## Links
 
-### Zypper
+- [Code Repository](https://github.com/edenhill/librdkafka)
+
+## Installation
+
+### Homebrew
+
+```sh
+brew install librdkafka
+```
+
+### Source Code
+
+#### Dependencies
+
+##### Zypper
 
 ```sh
 sudo zypper refresh
 sudo zypper install -y git-core make gcc-c++ cyrus-sasl-devel
 ```
 
-### YUM
+##### YUM
 
 ```sh
 yum check-update
 sudo yum -y install git make gcc-c++ zlib-devel cyrus-sasl-devel
 ```
 
-### APT
+##### APT
 
 ```sh
 sudo apt update
 sudo apt -y install git make g++ zlib1g-dev libsasl2-dev
 ```
 
-### APK
+##### APK
 
 ```sh
 sudo apk update
 sudo apk add git bash make g++ zlib-dev cyrus-sasl-dev
 ```
 
-## Installation
+#### Build & Install
 
 ```sh
 git clone --branch v1.0.0-test1 --single-branch --depth 1 https://github.com/edenhill/librdkafka.git

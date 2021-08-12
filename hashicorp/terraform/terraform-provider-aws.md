@@ -14,6 +14,19 @@ https://registry.terraform.io/modules/terraform-aws-modules/pricing/aws/latest
 
 ## Issues
 
+### Final Snapshot Identifier
+
+```log
+Error: DB Instance FinalSnapshotIdentifier is required when a final snapshot is required
+```
+
+```tf
+resource "aws_db_instance" "mysql_instance" {
+  # ...
+  skip_final_snapshot = true
+}
+```
+
 <!-- ### AWS SSO
 
 https://github.com/hashicorp/terraform-provider-aws/issues/19716

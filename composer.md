@@ -82,6 +82,9 @@ composer create-project --prefer-dist laravel/laravel [name] && "$_"
 # Install
 composer install
 
+# Without deve dependencies
+composer install --no-dev
+
 #
 composer install \
   --prefer-dist \
@@ -90,6 +93,9 @@ composer install \
 
 # Update
 composer update
+
+# Without deve dependencies
+composer update --no-dev
 
 # Config
 ## List Local

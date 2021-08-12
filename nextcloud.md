@@ -1,6 +1,6 @@
 # NextCloud
 
-https://www.youtube.com/watch?v=USS3DZn2te8
+<!-- https://www.youtube.com/watch?v=USS3DZn2te8 -->
 
 ## CLI
 

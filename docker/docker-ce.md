@@ -203,8 +203,8 @@ docker --help
 ### Usage
 
 ```sh
-#
-docker system df
+# Show disk usage
+docker system df -v
 ```
 
 ### Tips

@@ -37,5 +37,8 @@ sudo su - "$USER"
 
 ```sh
 #
+dotnet --info
+
+#
 dotnet tool install -g [package]
 ```

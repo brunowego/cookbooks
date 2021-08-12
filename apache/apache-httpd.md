@@ -193,6 +193,37 @@ brew services restart httpd
 sudo systemctl restart httpd
 ```
 
+### Issues
+
+<!-- #### Disable SELinux
+
+```log
+(13)Permission denied: AH00072: make_sock: could not bind to address 0.0.0.0:80
+```
+
+Change listen porto from 80 to 8080. -->
+
+#### Set the 'ServerName' directive globally to suppress this message
+
+```log
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+```
+
+```sh
+echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/[filename].conf
+
+sudo a2enconf servername
+
+# Systemd
+sudo systemctl restart apache2
+```
+
+```Dockerfile
+# Configure servername to avoid alert in console
+RUN echo "ServerName $(cat /etc/hostname)" > /etc/apache2/conf-available/[filename].conf && \
+      a2enconf servername
+```
+
 ### Uninstall
 
 ```sh

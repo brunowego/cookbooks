@@ -1,5 +1,9 @@
 # aws-google-auth
 
+## Links
+
+- [Code Repository](https://github.com/cevoaustralia/aws-google-auth)
+
 ## CLI
 
 ### Installation
@@ -8,6 +12,12 @@
 
 ```sh
 brew install aws-google-auth
+```
+
+#### PIP
+
+```sh
+pip3 install aws-google-auth
 ```
 
 ### Commands

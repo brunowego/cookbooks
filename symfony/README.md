@@ -82,3 +82,13 @@ composer install \
 <!--
 php composer.phar update symfony/flex --no-plugins --no-scripts
 -->
+
+<!-- ####
+
+```log
+Error: Uncaught RuntimeException: Unable to create the "cache" directory (/var/www/app/var/cache/dev). in /var/www/app/vendor/symfony/http-kernel/Kernel.php:637
+``` -->
+
+<!--
+env | grep MESSENGER_TRANSPORT_DSN
+-->

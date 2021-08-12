@@ -2,6 +2,7 @@
 
 <!--
 https://linkedin.com/learning/kubernetes-monitoring-with-prometheus/prometheus-monitoring-to-prevent-outages
+https://github.com/jacksontj/promxy
 -->
 
 ## Guides

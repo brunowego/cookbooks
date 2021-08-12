@@ -46,3 +46,15 @@ jq ".\"hadolint.hadolintPath\" |= \"$(which hadolint)\"" "$HOME/.config/Code/Use
 # hadolint ignore=DL3013
 RUN pip3 install /usr/src/packages/[package-version].tar.gz
 ```
+
+### Issues
+
+#### Deprecated Maintainer
+
+```sh
+[hadolint] error: MAINTAINER is deprecatedDL4000
+```
+
+```Dockerfile
+LABEL maintainer="John Doe <johndoe@example.com>"
+```
