@@ -35,7 +35,7 @@ enabled=1
 gpgcheck=0' | \
   sudo tee /etc/yum.repos.d/caarlos0.repo
 
-sudo yum check-update
+yum check-update
 sudo yum -y install org-stats
 ```
 

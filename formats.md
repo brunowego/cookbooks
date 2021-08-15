@@ -1,5 +1,7 @@
 # Formats
 
+## Types
+
 - Arrow
 - BSON
 - CSV - Comma-separated Values

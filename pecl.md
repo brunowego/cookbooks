@@ -1,10 +1,14 @@
-# PECL
-
-## CLI
+# PEAR Extended Code Language (PECL)
 
 ### References
 
 - [REST Packages](https://pecl.php.net/rest/p/packages.xml)
+
+## CLI
+
+### Dependencies
+
+- [PHP Extension and Application Repository (PEAR)](/pear.md)
 
 ### Commands
 
@@ -48,7 +52,7 @@ pear config-set http_proxy "$http_proxy"
 
 ### Issues
 
-####
+#### Certificate Verify Failed
 
 ```log
 Warning: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
@@ -57,8 +61,10 @@ Notice: Undefined variable: proxy_host in PEAR/Proxy.php on line 103
 Notice: Undefined variable: proxy_port in PEAR/Proxy.php on line 103
 ```
 
+```sh
 pecl list-channels
 pecl channel-delete pear
+```
 
 #### With OpenSSL
 

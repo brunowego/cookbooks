@@ -8,7 +8,9 @@
 ## Installation
 
 ```sh
-curl https://archive.apache.org/dist/phoenix/apache-phoenix-5.0.0-HBase-2.0/bin/apache-phoenix-5.0.0-HBase-2.0-bin.tar.gz | sudo tar -xzC /opt
+curl 'https://archive.apache.org/dist/phoenix/apache-phoenix-5.0.0-HBase-2.0/bin/apache-phoenix-5.0.0-HBase-2.0-bin.tar.gz' | \
+  sudo tar -xzC /opt
+
 sudo ln -s /opt/apache-phoenix-5.0.0-HBase-2.0-bin /opt/apache-phoenix
 ```
 

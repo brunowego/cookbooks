@@ -48,7 +48,7 @@ sudo yum -y install curl ncurses-devel make
 ##### Build & Install
 
 ```sh
-curl -L https://github.com/vim/vim/archive/v8.1.0968.tar.gz | \
+curl -L 'https://github.com/vim/vim/archive/v8.1.0968.tar.gz' | \
   tar -xz
 ```
 

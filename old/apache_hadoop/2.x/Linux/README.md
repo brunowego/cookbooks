@@ -30,7 +30,7 @@ sudo mkdir /usr/local/hadoop && cd "$_"
 ```
 
 ```sh
-curl https://archive.apache.org/dist/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz | \
+curl 'https://archive.apache.org/dist/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz' | \
   sudo tar -xz --strip-components 1
 ```
 

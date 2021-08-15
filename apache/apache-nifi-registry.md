@@ -80,7 +80,7 @@ curl -s 'http://127.0.0.1:8080/nifi-api/system-diagnostics' | jq .
 
 ```sh
 #
-docker exec -i nifi /bin/sh -c 'curl -L https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.49.tar.gz | tar -xzC /opt/nifi/nifi-current/lib mysql-connector-java-5.1.49/mysql-connector-java-5.1.49.jar --strip-components 1'
+docker exec -i nifi /bin/sh -c 'curl -L "https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.49.tar.gz" | tar -xzC /opt/nifi/nifi-current/lib mysql-connector-java-5.1.49/mysql-connector-java-5.1.49.jar --strip-components 1'
 
 #
 docker restart nifi

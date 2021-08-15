@@ -14,37 +14,28 @@ brew install magrathealabs/mlabs/icu4c@58.1
 ## Installation
 
 ```sh
-asdf plugin-add php https://github.com/odarriba/asdf-php.git
+asdf plugin-add php 'https://github.com/odarriba/asdf-php.git'
 ```
 
-## Version
+## Usage
 
 ```sh
+#
 asdf list-all php
-```
 
-### Homebrew
-
-#### Version 7.x
-
-```sh
+# Homebrew
 PATH="$(brew --prefix bison)/bin:$PATH" \
   asdf install php [version]
-```
 
-### Linux
-
-```sh
+# Linux
 asdf install php [version]
-```
 
-## Setting
-
-```sh
+#
 asdf global php [version]
-```
 
-```sh
+#
 asdf list php
+
+#
 asdf reshim php [version]
 ```

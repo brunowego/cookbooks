@@ -1,8 +1,29 @@
-# PEAR
+# PHP Extension and Application Repository (PEAR)
 
 ## CLI
 
 ### Installation
+
+#### APT
+
+```sh
+sudo apt update
+sudo DEBIAN_FRONTEND=noninteractive apt -y install php-pear
+```
+
+#### APT
+
+```sh
+yum check-update
+sudo yum -y install php-pear
+```
+
+#### APK
+
+```sh
+apk update
+apk add php7-pear
+```
 
 #### Unix-like
 

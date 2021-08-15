@@ -18,7 +18,7 @@
 #### Unix-like
 
 ```sh
-sudo curl -L https://github.com/toniblyx/prowler/archive/refs/tags/2.4.1.tar.gz | \
+sudo curl -L 'https://github.com/toniblyx/prowler/archive/refs/tags/2.4.1.tar.gz' | \
   sudo tar -xzC /opt --no-same-owner --no-same-permissions && \
     sudo ln -s /opt/prowler-2.4.1 /opt/prowler
 ```

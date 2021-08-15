@@ -11,7 +11,7 @@ cd /path/to/matomo
 ```
 
 ```sh
-curl -L https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz | \
+curl -L 'https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz' | \
   tar -xzC ./misc --strip-components 1 GeoLite2-City_20191105/GeoLite2-City.mmdb
 ```
 

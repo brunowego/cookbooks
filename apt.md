@@ -78,8 +78,8 @@ sudo rm /var/cache/apt/archives/lock
 ### Dockerfile
 
 ```Dockerfile
-RUN apt update && \
-    apt --no-install-recommends -y install [package]=[version] && \
+RUN apt-get update && \
+    apt-get --no-install-recommends -y install [package]=[version] && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 ```

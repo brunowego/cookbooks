@@ -42,7 +42,7 @@ brew install php
 
 ```sh
 sudo apt update
-sudo apt -y install php
+sudo DEBIAN_FRONTEND=noninteractive apt -y install php
 ```
 
 #### YUM
@@ -96,11 +96,11 @@ sudo yum -y install gcc libxml2-devel bzip2-devel make
 
 ```sh
 # cURL
-curl https://php.net/distributions/php-7.3.13.tar.gz | \
+curl 'https://php.net/distributions/php-7.3.13.tar.gz' | \
   tar -xz
 
 # GNU Wget
-wget -O - https://php.net/distributions/php-7.3.13.tar.gz | \
+wget -O - 'https://php.net/distributions/php-7.3.13.tar.gz' | \
   tar -xz
 
 ( cd ./php-7.3.13 && ./configure --with-bz2 && make && sudo make install ) && rm -r ./php-7.3.13

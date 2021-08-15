@@ -246,11 +246,11 @@ export PHP_VERSION=7.3.13
 sudo mkdir -p /usr/src/php
 
 # cURL
-curl -L https://php.net/distributions/php-$PHP_VERSION.tar.gz | \
+curl -L "https://php.net/distributions/php-$PHP_VERSION.tar.gz" | \
   sudo tar -xzC /usr/src/php --transform s/php-//
 
 # GNU Wget
-wget -O - https://php.net/distributions/php-$PHP_VERSION.tar.gz | \
+wget -O - "https://php.net/distributions/php-$PHP_VERSION.tar.gz" | \
   tar -xzC /usr/src/php --transform s/php-//
 
 ( cd /usr/src/php/$PHP_VERSION && sudo ./configure --enable-fpm --with-fpm-systemd --with-openssl --with-bz2 && sudo make && sudo make install )

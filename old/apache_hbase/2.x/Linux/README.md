@@ -23,7 +23,7 @@ sudo mkdir /usr/local/hbase && cd "$_"
 ```
 
 ```sh
-curl https://archive.apache.org/dist/hbase/2.1.1/hbase-2.1.1-bin.tar.gz | \
+curl 'https://archive.apache.org/dist/hbase/2.1.1/hbase-2.1.1-bin.tar.gz' | \
   sudo tar -xz --strip-components 1
 ```
 

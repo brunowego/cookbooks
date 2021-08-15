@@ -260,6 +260,8 @@ argocd app sync '[app-name]' \
 argocd app wait '[app-name]'
 ```
 
+<!-- argocd app history guestbook -->
+
 ### Tips
 
 #### Enable Status Badge

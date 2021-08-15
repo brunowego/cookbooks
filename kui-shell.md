@@ -3,7 +3,7 @@
 ## CLI
 
 ```sh
-curl -L https://github.com/IBM/kui/archive/v4.5.0.tar.gz | \
+curl -L 'https://github.com/IBM/kui/archive/v4.5.0.tar.gz' | \
   tar -xzC /usr/local
 ```
 
@@ -12,6 +12,8 @@ curl -L https://github.com/IBM/kui/archive/v4.5.0.tar.gz | \
 ### Installation
 
 ```sh
-curl -L https://macos-tarball.kui-shell.org | tar jxf -
+curl -L 'https://macos-tarball.kui-shell.org' | \
+  tar jxf -
+
 open Kui-darwin-x64/Kui.app
 ```

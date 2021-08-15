@@ -18,5 +18,5 @@ docker run -it --rm \
   -h alpine \
   --name alpine \
   --network workbench \
-  docker.io/library/alpine:3.9 /bin/sh
+  docker.io/library/alpine:3.14 /bin/sh
 ```

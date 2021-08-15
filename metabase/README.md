@@ -211,7 +211,7 @@ export METABASE_VERSION=0.34.1
 mkdir -p /usr/local/src/metabase && cd "$_"
 
 # cURL
-curl -L https://github.com/metabase/metabase/archive/v$METABASE_VERSION.tar.gz | \
+curl -L "https://github.com/metabase/metabase/archive/v$METABASE_VERSION.tar.gz" | \
   tar -xzC /usr/local/src/metabase --transform s/metabase-// && \
     cd ./$METABASE_VERSION
 

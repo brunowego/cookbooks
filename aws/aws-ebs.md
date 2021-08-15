@@ -14,10 +14,3 @@
 ```sh
 aws ebs help
 ```
-
-### Usage
-
-```sh
-# Get storage class
-kubectl get sc
-```

@@ -19,7 +19,7 @@ cd /path/to/matomo
 ```
 
 ```sh
-curl -L https://github.com/matomo-org/plugin-QueuedTracking/archive/3.3.5.tar.gz | \
+curl -L 'https://github.com/matomo-org/plugin-QueuedTracking/archive/3.3.5.tar.gz' | \
   tar -xzC ./plugins --transform s/plugin-QueuedTracking-3.3.5/QueuedTracking/
 ```
 

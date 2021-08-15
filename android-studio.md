@@ -25,7 +25,7 @@ sudo snap install android-studio --classic
 <!-- #### APT
 
 ```sh
-wget -O - https://dl.google.com/dl/android/studio/ide-zips/3.5.2.0/android-studio-ide-191.5977832-linux.tar.gz | \
+wget -O - 'https://dl.google.com/dl/android/studio/ide-zips/3.5.2.0/android-studio-ide-191.5977832-linux.tar.gz' | \
   tar -xz
 ``` -->
 

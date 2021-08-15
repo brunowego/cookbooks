@@ -33,7 +33,7 @@ sudo zypper install -y redis
 
 ```sh
 #
-curl http://download.redis.io/releases/redis-stable.tar.gz | \
+curl 'http://download.redis.io/releases/redis-stable.tar.gz' | \
   tar -xzC /tmp
 
 ( cd /tmp/redis-stable && make && sudo make install PREFIX=/usr/local/redis )

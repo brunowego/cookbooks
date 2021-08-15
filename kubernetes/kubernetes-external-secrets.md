@@ -121,6 +121,48 @@ ERROR, Invalid name. Must be a valid name containing alphanumeric characters, or
 
 TODO -->
 
+### Issues
+
+#### Manual Creation
+
+```sh
+#
+aws-secrets-dotenv \
+  --aws-region 'us-east-1' \
+  get \
+    '[secret-id]' \
+    -f ./.env
+
+#
+kubectl create secret generic [name] \
+  -n [namespace] \
+  --from-env-file=./.env
+
+#
+kubectl get secret [name] \
+  -n [namespace] \
+  -o yaml | \
+    kubectl neat
+```
+
+#### Secret Not Sync
+
+```sh
+#
+kubectl get externalsecrets \
+  -n [namespace]
+
+#
+kubectl describe pod \
+  -l 'app.kubernetes.io/name=kubernetes-external-secrets' \
+  -n kube-system
+
+#
+kubectl delete pod \
+  -l 'app.kubernetes.io/name=kubernetes-external-secrets' \
+  -n kube-system
+```
+
 ### Delete
 
 ```sh

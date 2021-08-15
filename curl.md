@@ -87,7 +87,7 @@ sudo yum -y install wget gcc-c++ openssl-devel make
 ##### Build & Install
 
 ```sh
-wget -O - https://curl.haxx.se/download/curl-7.62.0.tar.gz | \
+wget -O - 'https://curl.haxx.se/download/curl-7.62.0.tar.gz' | \
   tar -xz
 
 ( cd ./curl-7.62.0 && ./configure --disable-shared --disable-dependency-tracking && make && sudo make install )

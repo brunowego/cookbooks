@@ -25,3 +25,9 @@ brew install pritunl
 ```sh
 choco install pritunl-client
 ```
+
+### Issues
+
+#### Multiple VPNs Connected
+
+Check if have more than one VPN connected.

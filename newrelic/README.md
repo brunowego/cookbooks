@@ -63,9 +63,3 @@ newrelic entity tags create \
 newrelic entity tags get \
   --guid 'GUID'
 ```
-
-<!-- ## Library
-
-###
-
- -->

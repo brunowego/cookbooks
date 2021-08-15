@@ -3,7 +3,8 @@
 ## Installation
 
 ```sh
-curl -L https://github.com/istio/istio/releases/download/1.1.1/istio-1.1.1-osx.tar.gz | sudo tar -xzC /usr/local --transform s/istio-1.1.1/istio/
+curl -L 'https://github.com/istio/istio/releases/download/1.1.1/istio-1.1.1-osx.tar.gz' | \
+  sudo tar -xzC /usr/local --transform s/istio-1.1.1/istio/
 ```
 
 ## Environment

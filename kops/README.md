@@ -18,6 +18,7 @@ https://medium.com/bench-engineering/deploying-kubernetes-clusters-with-kops-and
 - [Code Repository](https://github.com/kubernetes/kops)
 - [Main Website](https://kops.sigs.k8s.io/)
 - [Addons](https://kops.sigs.k8s.io/addons/)
+- [asdf kOps](/asdf/asdf-kops.md)
 
 ## Content
 
@@ -143,6 +144,7 @@ kops delete cluster \
 
 ```sh
 kops update cluster \
+  --admin \
   --target terraform
 ``` -->
 
@@ -158,10 +160,16 @@ kops \
 #### Cluster Queries
 
 ```sh
+#
+export KOPS_STATE_STORE='s3://k8s-kops-state-store'
+
 # Get first cluster description
 kops get cluster \
   -o json | \
     jq
+
+# Good pattern [cluster-name]-[region].k8s.local
+export KOPS_CLUSTER_NAME='dev01-us-east-1.k8s.local' # prod01, stg01, uat01
 
 # Discover network CIDR in use
 kops get cluster \
@@ -195,6 +203,7 @@ kubectl version --short
 kops \
   --name "$KOPS_CLUSTER_NAME" \
   update cluster \
+    --admin \
     --yes
 
 #
@@ -236,6 +245,7 @@ kops \
 kops \
   --name "$KOPS_CLUSTER_NAME" \
   update cluster \
+    --admin \
     --yes
 
 #
@@ -289,6 +299,7 @@ spec:
 kops \
   --name "$KOPS_CLUSTER_NAME" \
   update cluster \
+    --admin \
     --yes
 
 #
@@ -332,6 +343,7 @@ kops \
 kops \
   --name "$KOPS_CLUSTER_NAME" \
   update cluster \
+    --admin \
     --yes
 
 #
@@ -365,6 +377,7 @@ spec:
 kops \
   --name "$KOPS_CLUSTER_NAME" \
   update cluster \
+    --admin \
     --yes
 
 #
@@ -385,6 +398,7 @@ Validation failed: unexpected error during validation: error listing nodes: Get 
 <!--
 kops export kubecfg --name ${CLUSTER_NAME} && \
 kops update cluster ${CLUSTER_NAME} \
+  --admin \
   --out=. \
   --target=terraform && \
 terraform apply -auto-approve && \
@@ -399,6 +413,7 @@ terraform apply -target=aws_internet_gateway.${CLUSTER_PREFIX}-k8s-local -auto-a
 terraform apply -target=aws_elb.api-${CLUSTER_PREFIX}-k8s-local -auto-approve
 
 kops update cluster \
+  --admin \
   --out=. \
   --target=terraform
 

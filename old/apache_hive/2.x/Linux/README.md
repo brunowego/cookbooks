@@ -27,7 +27,7 @@ sudo mkdir /usr/local/hive && cd "$_"
 ```
 
 ```sh
-curl https://archive.apache.org/dist/hive/hive-2.3.4/apache-hive-2.3.4-bin.tar.gz | \
+curl 'https://archive.apache.org/dist/hive/hive-2.3.4/apache-hive-2.3.4-bin.tar.gz' | \
   sudo tar -xz --strip-components 1
 ```
 

@@ -4,15 +4,13 @@
 
 - [Code Repository](https://github.com/asdf-community/asdf-kubectl)
 
-## Plugin
-
-### Installation
+## Installation
 
 ```sh
 asdf plugin-add kubectl 'https://github.com/asdf-community/asdf-kubectl.git'
 ```
 
-### Usage
+## Usage
 
 ```sh
 #
@@ -34,9 +32,9 @@ asdf reshim kubectl [version]
 kubectl version --short
 ```
 
-### Issues
+## Issues
 
-#### Another Installed Binary
+### Another Installed Binary
 
 ```sh
 #

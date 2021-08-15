@@ -55,3 +55,16 @@ zipinfo [filename].zip
 # Compressing With own directory
 zip -r [filename].zip [filepath]
 ```
+
+## Docker
+
+### Running
+
+```sh
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h unzip \
+  --name unzip \
+  --network workbench \
+  docker.io/kubeless/unzip:latest
+```

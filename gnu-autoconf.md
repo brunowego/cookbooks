@@ -10,6 +10,13 @@
 brew install autoconf
 ```
 
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install autoconf
+```
+
 #### YUM
 
 ```sh

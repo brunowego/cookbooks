@@ -52,13 +52,46 @@ Terragrunt
 ```sh
 cat << EOF > ./atlantis.yaml
 version: 3
-automerge: true
+
 projects:
-- dir: .
-  workspace: prod
+- &shared
+  name: my-app-stg
+  dir: ./terraform
+  workspace: stg
+  terraform_version: v0.14.7
+  workflow: stg
   autoplan:
-    when_modified: ["*"]
+    when_modified: [
+      './*.tf',
+      './modules/**/*.tf',
+      './policies/*.tpl',
+      './vars/*.tfvars'
+    ]
     enabled: true
+  apply_requirements: [mergeable]
+
+- <<: *shared
+  name: my-app-prd
+  workspace: prd
+  workflow: prd
+  apply_requirements: [mergeable, approved]
+
+workflows:
+  stg:
+    plan:
+      steps:
+      - run: rm -fR ./.terraform
+      - init:
+      - plan:
+          extra_args: [-var-file, ./vars/terraform-stg.tfvars]
+
+  prd:
+    plan:
+      steps:
+      - run: rm -fR ./.terraform
+      - init:
+      - plan:
+          extra_args: [-var-file, ./vars/terraform-prd.tfvars]
 EOF
 ```
 

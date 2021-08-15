@@ -12,6 +12,34 @@
 brew install librdkafka
 ```
 
+### APT
+
+```sh
+sudo apt update
+sudo apt -y install librdkafka-dev
+```
+
+### YUM
+
+```sh
+cat << EOF | sudo tee /etc/yum.repos.d/confluent.repo
+[Confluent]
+name=Confluent repository
+baseurl=https://packages.confluent.io/rpm/5.4/7
+gpgkey=https://packages.confluent.io/rpm/5.4/archive.key
+EOF
+
+yum check-update
+sudo yum -y install librdkafka-devel
+```
+
+### APK
+
+```sh
+apk update
+apk add librdkafka-dev
+```
+
 ### Source Code
 
 #### Dependencies

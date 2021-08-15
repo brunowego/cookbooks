@@ -34,9 +34,7 @@ name=Charles Proxy Repository
 baseurl=https://www.charlesproxy.com/packages/yum
 gpgkey=https://www.charlesproxy.com/packages/yum/PublicKey
 EOF
-```
 
-```sh
 yum check-update
 sudo yum -y install charles-proxy
 ```

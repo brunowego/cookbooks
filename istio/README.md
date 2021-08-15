@@ -166,7 +166,7 @@ brew install istioctl
 #### Linux Binary
 
 ```sh
-curl -L https://github.com/istio/istio/releases/download/1.3.0/istio-1.3.0-linux.tar.gz | \
+curl -L 'https://github.com/istio/istio/releases/download/1.3.0/istio-1.3.0-linux.tar.gz' | \
   tar -xzC /usr/local/bin --strip-components 2 istio-1.3.0/bin/istioctl
 ```
 

@@ -24,9 +24,7 @@ brew install bazel
 ```sh
 echo 'deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8' | sudo tee /etc/apt/sources.list.d/bazel.list
 curl -fsSL https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
-```
 
-```sh
 sudo apt update
 sudo apt -y install bazel
 ```

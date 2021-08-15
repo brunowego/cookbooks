@@ -1,5 +1,10 @@
 # Pipenv
 
+## Alternatives
+
+- [Poetry](/poetry.md)
+- [Python Package Index (PIP3)](/pip3.md)
+
 ## CLI
 
 ### Installation
@@ -49,6 +54,9 @@ EOF
 
 #
 pipenv install
+
+#
+pipenv shell
 ```
 
 ### Usage
@@ -59,6 +67,9 @@ pipenv run python ./api.py
 
 #
 pipenv run pytest
+
+#
+pipenv graph
 ```
 
 ### Tips
@@ -68,3 +79,47 @@ pipenv run pytest
 ```sh
 eval "$(pipenv --completion)"
 ```
+
+## Dockerfile
+
+```sh
+#
+cat << EOF
+FROM docker.io/library/python:3.9.6-slim-buster
+
+ENV PYTHONUNBUFFERED 1
+
+WORKDIR /usr/src/app
+
+COPY ./Pipfile ./Pipfile.lock ./
+
+RUN pip install --no-cache-dir \
+      pipenv===2021.5.29 && \
+        pipenv install --system
+EOF
+
+#
+cat << EOF > ./dockerignore
+/*
+
+!/Pipfile*
+EOF
+```
+
+<!--
+RUN apt-get update && \
+    apt-get --no-install-recommends -y install \
+      gcc=4:8.3.0-1 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+-->
+
+<!--
+gcc
+linux-libc-dev
+libc6-dev
+-->
+
+<!--
+DEBIAN_FRONTEND=noninteractive
+-->

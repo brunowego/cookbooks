@@ -29,11 +29,27 @@ gunicorn -h
 gunicorn
 ``` -->
 
+### Issues
+
+#### Missing `/dev/shm`
+
+```log
+RuntimeError: /dev/shm doesn't exist. Can't create workertmp.
+```
+
+TODO
+
+<!--
+--worker-tmp-dir /dev/shm
+-->
+
 ## Dockerfile
 
 ### Image
 
 ```Dockerfile
+# ...
+
 EXPOSE 5000
 
 CMD ["gunicorn", "-b", "0:5000", "-k", "eventlet", "app:app"]

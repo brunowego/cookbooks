@@ -42,7 +42,7 @@ sudo mkdir /usr/local/sqoop && cd "$_"
 ```
 
 ```sh
-curl https://archive.apache.org/dist/sqoop/1.4.7/sqoop-1.4.7.bin__hadoop-2.6.0.tar.gz | \
+curl 'https://archive.apache.org/dist/sqoop/1.4.7/sqoop-1.4.7.bin__hadoop-2.6.0.tar.gz' | \
   sudo tar -xz --strip-components 1
 ```
 

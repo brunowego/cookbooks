@@ -19,7 +19,9 @@ sudo yum -y install curl java-1.8.0-openjdk
 ## Installation
 
 ```sh
-curl https://archive.apache.org/dist/flume/1.9.0/apache-flume-1.9.0-bin.tar.gz | sudo tar -xzC /opt
+curl 'https://archive.apache.org/dist/flume/1.9.0/apache-flume-1.9.0-bin.tar.gz' | \
+  sudo tar -xzC /opt
+
 sudo ln -s /opt/apache-flume-1.9.0-bin /opt/apache-flume
 ```
 

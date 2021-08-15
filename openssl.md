@@ -45,7 +45,7 @@ sudo apt -y install zlib1g-dev
 ##### Build & Install
 
 ```sh
-curl https://www.openssl.org/source/openssl-1.1.1.tar.gz | \
+curl 'https://www.openssl.org/source/openssl-1.1.1.tar.gz' | \
   tar -xz
 
 ( cd ./openssl-1.1.1 && ./config --prefix=/usr/local/ssl --openssldir=/usr/local/ssl shared zlib && make && sudo make install ) && rm -r ./openssl-1.1.1

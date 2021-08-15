@@ -98,7 +98,7 @@ sudo yum -y install wget gcc make pcre-devel expat-devel
 ##### Build & Install
 
 ```sh
-wget -O - https://archive.apache.org/dist/httpd/httpd-2.4.41.tar.gz | \
+wget -O - 'https://archive.apache.org/dist/httpd/httpd-2.4.41.tar.gz' | \
   tar -xz
 
 ( cd ./httpd-2.4.41 && ./configure --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr --prefix=/usr/local/apache && make && sudo make install ) && rm -r ./httpd-2.4.41
@@ -195,13 +195,26 @@ sudo systemctl restart httpd
 
 ### Issues
 
-<!-- #### Disable SELinux
+#### Permission to Bind Port 80
 
 ```log
 (13)Permission denied: AH00072: make_sock: could not bind to address 0.0.0.0:80
 ```
 
-Change listen porto from 80 to 8080. -->
+- Option 1: Changing listen port from 80 to 8080
+- Option 2: Using setcap:
+  ```sh
+  setcap 'cap_net_bind_service=+ep' /usr/sbin/apache2
+  getcap /usr/sbin/apache2
+  ```
+<!-- - Option 3: Using security context:
+  ```yaml
+  securityContext:
+    capabilities:
+      add:
+      - NET_ADMIN
+      - CAP_NET_BIND_SERVICE
+  ``` -->
 
 #### Set the 'ServerName' directive globally to suppress this message
 

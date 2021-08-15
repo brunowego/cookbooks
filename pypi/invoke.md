@@ -2,7 +2,7 @@
 
 ## References
 
-- [Welcome to Invoke!](https://www.pyinvoke.org/)
+- [Welcome to Invoke!](https://pyinvoke.org/)
 
 ## Library
 

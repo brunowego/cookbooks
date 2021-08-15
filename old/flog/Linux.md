@@ -4,7 +4,7 @@
 
 ```sh
 curl \
-  -L https://github.com/mingrammer/flog/releases/download/v0.2.4/flog_0.2.4_linux_amd64.tar.gz | \
+  -L 'https://github.com/mingrammer/flog/releases/download/v0.2.4/flog_0.2.4_linux_amd64.tar.gz' | \
     sudo tar -xzC /usr/local/bin
 ```
 

@@ -175,20 +175,11 @@ helm repo add ingress-nginx 'https://kubernetes.github.io/ingress-nginx'
 helm repo update
 ```
 
-### Dependencies
-
-- [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
-
 ### Install
 
 ```sh
 #
 kubectl create namespace ingress-nginx
-
-#
-kubectl get prometheus \
-  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
-  -n monitoring
 
 # Kubernetes IN Docker (KIND)
 helm install ingress-controller ingress-nginx/ingress-nginx \
@@ -216,12 +207,27 @@ controller:
     ingress-ready: 'true'
     kubernetes.io/os: linux
 
+  service:
+    type: NodePort
+EOF
+)
+```
+
+<!--
+### Prometheus Stack
+
+**Dependencies:** [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
+
+```sh
+#
+kubectl get prometheus \
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
+  -n monitoring
+
+#
   podAnnotations:
     prometheus.io/scrape: 'true'
     prometheus.io/port: '10254'
-
-  service:
-    type: NodePort
 
   metrics:
     enabled: true
@@ -229,9 +235,8 @@ controller:
       enabled: true
       additionalLabels:
         release: prometheus-stack
-EOF
-)
 ```
+-->
 
 ### Status
 

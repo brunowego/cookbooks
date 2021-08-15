@@ -8,7 +8,7 @@
 cat << \EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t caddy:1.0.0 -
 FROM docker.io/golang:1.12-alpine
 
-RUN wget -O - https://github.com/mholt/caddy/releases/download/v1.0.0/caddy_v1.0.0_linux_amd64.tar.gz | \
+RUN wget -O - 'https://github.com/mholt/caddy/releases/download/v1.0.0/caddy_v1.0.0_linux_amd64.tar.gz' | \
     tar -xzC /usr/local/bin caddy
 
 RUN echo -e '\

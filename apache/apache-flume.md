@@ -116,7 +116,7 @@ docker run -i --rm \
   docker.io/library/alpine:3.9 /bin/sh << EOSHELL
 apk add -q --no-cache tar
 
-wget -O - https://archive.apache.org/dist/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz | \
+wget -O - 'https://archive.apache.org/dist/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz' | \
   tar --transform s/hadoop-// -xz
 EOSHELL
 ```

@@ -1,14 +1,12 @@
 # asdf Helm
 
-## Plugin
-
-### Installation
+## Installation
 
 ```sh
-asdf plugin-add helm https://github.com/Antiarchitect/asdf-helm.git
+asdf plugin-add helm 'https://github.com/Antiarchitect/asdf-helm.git'
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

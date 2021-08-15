@@ -21,7 +21,9 @@ sudo yum -y install curl java-1.8.0-openjdk
 ### Installation
 
 ```sh
-curl https://archive.apache.org/dist/sqoop/1.99.7/sqoop-1.99.7-bin-hadoop200.tar.gz | sudo tar -xzC /opt
+curl 'https://archive.apache.org/dist/sqoop/1.99.7/sqoop-1.99.7-bin-hadoop200.tar.gz' | \
+  sudo tar -xzC /opt
+
 sudo ln -s /opt/sqoop-1.99.7-bin-hadoop200 /opt/sqoop
 ```
 

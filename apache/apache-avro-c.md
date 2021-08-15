@@ -24,7 +24,7 @@ sudo yum -y install curl cmake jansson-devel zlib-devel snappy-devel xz-devel as
 ##### Build & Install
 
 ```sh
-curl https://archive.apache.org/dist/avro/avro-1.8.2/avro-src-1.8.2.tar.gz | \
+curl 'https://archive.apache.org/dist/avro/avro-1.8.2/avro-src-1.8.2.tar.gz' | \
   tar -xzC /tmp
 ```
 

@@ -2,7 +2,7 @@
 
 ## Tips
 
-###
+### Edit Instance Group (IG)
 
 ```sh
 #
@@ -36,6 +36,7 @@ kops edit ig \
 kops \
   --name "$KOPS_CLUSTER_NAME" \
   update cluster \
+    --admin \
     --yes
 
 #

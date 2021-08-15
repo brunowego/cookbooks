@@ -8,10 +8,4 @@
 Error: Command failed: phpize
 ```
 
-```sh
-# Homebrew
-brew install autoconf
-
-#
-sudo apt -y install autoconf
-```
+Just install [GNU Autoconf](/gnu-autoconf.md).
