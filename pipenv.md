@@ -74,6 +74,14 @@ pipenv graph
 
 ### Tips
 
+#### Visual Studio Code
+
+**Dependencies:** [Tom's Obvious, Minimal Language (TOML)](/toml.md)
+
+```sh
+jq '."files.associations"."Pipenv" |= "toml"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+```
+
 #### Completion
 
 ```sh

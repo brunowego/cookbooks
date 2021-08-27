@@ -15,15 +15,37 @@
 brew install terragrunt
 ```
 
+### Linux Binary
+
+```sh
+curl \
+  -L 'https://github.com/gruntwork-io/terragrunt/releases/download/v0.31.7/terragrunt_linux_amd64' \
+  -o /usr/local/bin/terragrunt && \
+    sudo chmod +x /usr/local/bin/terragrunt
+```
+
 ### Commands
 
 ```sh
-terragrunt
+terragrunt -h
 ```
 
-<!-- ### Usage
+### Usage
 
 ```sh
 #
-terragrunt
-``` -->
+terragrunt validate
+terragrunt validate-all
+
+#
+terragrunt plan
+terragrunt plan-all
+
+#
+terragrunt apply
+terragrunt apply-all
+
+#
+terragrunt destroy
+terragrunt destroy-all
+```

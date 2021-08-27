@@ -13,6 +13,18 @@
 
 - [YAML Multiline](https://yaml-multiline.info/)
 
+## Key Concepts
+
+- YAML isn't a markup language
+- Programming language for data serialization
+- Easily read by humans
+- Easily parsed by machines
+- File extensions: `.yml` or `.yaml`
+- Formatting
+  - Indentation
+  - Colons
+  - Dashes
+
 ## Tips
 
 ### Visual Studio Code

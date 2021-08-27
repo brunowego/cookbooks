@@ -1,4 +1,8 @@
-# Kubernetes IN Docker (KIND)
+# Kubernetes in Docker (kind)
+
+<!--
+https://github.com/kubernetes/kubeadm/tree/master/kinder
+-->
 
 ## Links
 

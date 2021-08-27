@@ -63,7 +63,7 @@ dataeng
 ## Local Kubernetes
 
 - [K3s](/k3s.md)
-- [Kubernetes IN Docker (kind)](/kind.md)
+- [Kubernetes in Docker (kind)](/kind.md)
 - [minikube](/minikube.md)
 - [Project Tye](https://github.com/dotnet/tye)
 - [Tilt](https://github.com/tilt-dev/tilt)
@@ -107,8 +107,10 @@ with exit code 137
 
 TODO
 
-<!-- ####
+#### Persistent Volume Claims
 
-```sh
+```log
 Warning  FailedScheduling  21s (x6 over 4m41s)  default-scheduler  0/4 nodes are available: 4 pod has unbound immediate PersistentVolumeClaims.
-``` -->
+```
+
+TODO

@@ -246,9 +246,17 @@ TODO -->
 https://stackoverflow.com/questions/57881019/i-cant-get-atom-text-editor-leiningen-proto-repl-to-work-for-programming-c
 -->
 
-## Docs
+## General
 
-### Ldap
+### Tips
+
+#### Google Search Operators
+
+```txt
+allintitle:"Metabase" site:.com "Sign in to Metabase"
+```
+
+#### Ldap
 
 1. Settings
 2. Admin
@@ -256,7 +264,7 @@ https://stackoverflow.com/questions/57881019/i-cant-get-atom-text-editor-leining
 4. LDAP
    - Server Settings
 
-### Druid
+#### Druid
 
 1. Settings
 2. Admin

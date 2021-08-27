@@ -1,6 +1,8 @@
 # Apache JMeter
 
 <!--
+https://github.com/Rbillon59/jmeter-docker-compose-starterkit
+
 https://github.com/SantimosoTFM/tfm-loadtesting/tree/master/jmeter
 
 https://www.blazemeter.com/jmeter-load-testing/
@@ -24,7 +26,7 @@ https://github.com/nambuntu/reactive-programming-performance/tree/master
 - [Gatling](/gatling.md)
 - [K6](/k6.md)
 - [Locust](/locust.md)
-- [Loadmill]()
+- Loadmill
 
 ## Guides
 
@@ -64,14 +66,6 @@ jmeter \
   -o ./result/vertx
 ```
 
-### Uninstall
-
-#### Homebrew
-
-```sh
-brew uninstall jmeter
-```
-
 ### Tips
 
 #### Plugins Directory
@@ -79,4 +73,12 @@ brew uninstall jmeter
 ```sh
 # Homebrew
 open $(brew --prefix jmeter)/libexec/lib/ext/
+```
+
+### Uninstall
+
+#### Homebrew
+
+```sh
+brew uninstall jmeter
 ```

@@ -4,6 +4,7 @@
 https://github.com/TwinProduction/gatus
 https://stackstatus.net/
 https://status.fastly.com/
+https://github.com/louislam/uptime-kuma
 -->
 
 ## Alternatives

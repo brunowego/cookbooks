@@ -1,6 +1,8 @@
 # Istio
 
 <!--
+https://github.com/fortio/fortio
+
 https://github.com/jsa4000/Observable-Distributed-System/blob/master/docs/11_istio_service_mesh.md
 
 https://linkedin.com/learning/kubernetes-service-mesh-with-istio/adjusting-istio-load-balancing-ratios

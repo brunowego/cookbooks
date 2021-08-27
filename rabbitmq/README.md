@@ -125,7 +125,7 @@ export RABBITMQ_NODE_PORT='4369'
 export RABBITMQ_NODENAME="rabbit@${RABBITMQ_NODE_IP_ADDRESS}"
 ```
 
-<!-- ### Kubernetes IN Docker (kind)
+<!-- ### Kubernetes in Docker (kind)
 
 ```sh
 kubectl exec -it \

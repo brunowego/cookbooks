@@ -7,12 +7,12 @@ kubectl explain pod.spec.volumes
 kubectl explain pods
 -->
 
-## CLI
-
-### References
+## References
 
 - [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 - [Managing Secret using kubectl](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/)
+
+## CLI
 
 ### Installation
 
@@ -90,17 +90,6 @@ kubectl
     -f
 ```
 
-#### Top
-
-```sh
-#
-kubectl top node
-
-#
-kubectl top pod '[pod-name]' \
-  -n '[namespace]'
-```
-
 #### Config Map
 
 ```sh
@@ -130,6 +119,15 @@ kubectl delete secret [secret-name] -n [namespace]
 ```
 
 ### Tips
+
+#### Print Environment Variables
+
+```sh
+#
+kubectl exec [pod-name] \
+  -n [namespace] \
+    -- printenv
+```
 
 #### Delete Problematic Pod
 

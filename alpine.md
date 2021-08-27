@@ -20,3 +20,17 @@ docker run -it --rm \
   --network workbench \
   docker.io/library/alpine:3.14 /bin/sh
 ```
+
+## Kubectl
+
+### Running
+
+```sh
+kubectl run -it --rm \
+  --image docker.io/library/alpine:3.14 \
+  --limits 'cpu=2,memory=2Gi' \
+  --requests 'cpu=2,memory=2Gi' \
+  --restart Never \
+  centos \
+  -- /bin/sh
+```

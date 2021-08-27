@@ -1,5 +1,9 @@
 # Hue
 
+## Alternatives
+
+- [Apache Zeppelin](/apache/apache-zeppelin.md)
+
 ## Helm
 
 ### Repository
@@ -76,6 +80,9 @@ echo -e '[INFO]\thttp://127.0.0.1:8888'
 ### Remove
 
 ```sh
-docker rm -f hue-postgres hue
+docker rm -f \
+  hue-postgres \
+  hue
+
 docker volume rm hue-postgres-data
 ```

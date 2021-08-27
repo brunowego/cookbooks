@@ -122,6 +122,13 @@ CMD ["gunicorn", "-b", "0:5000", "-k", "eventlet", "app:app"]
 brew install python
 ```
 
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install python3
+```
+
 #### YUM
 
 ```sh
@@ -129,13 +136,6 @@ yum check-update
 
 # Repo: EPEL
 sudo yum -y install python36
-```
-
-#### APT
-
-```sh
-sudo apt update
-sudo apt -y install python3
 ```
 
 #### APK

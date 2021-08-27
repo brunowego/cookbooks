@@ -52,3 +52,17 @@ docker exec -it centos /bin/bash
 ```sh
 docker rm -f centos
 ```
+
+## Kubectl
+
+### Running
+
+```sh
+kubectl run -it --rm \
+  --image docker.io/library/centos:8.2.2004 \
+  --limits 'cpu=2,memory=2Gi' \
+  --requests 'cpu=2,memory=2Gi' \
+  --restart Never \
+  centos \
+  -- /bin/bash
+```

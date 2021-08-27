@@ -57,8 +57,12 @@ cockroachdb sql \
 ### Delete
 
 ```sh
-helm uninstall cockroachdb -n cockroachdb
-kubectl delete namespace cockroach --grace-period=0 --force
+helm uninstall cockroachdb \
+  -n cockroachdb
+
+kubectl delete namespace cockroach \
+  --grace-period=0 \
+  --force
 
 kubectl get csr -o json | \
   jq -r '.items[] | select(.metadata.name | contains("cockroach.")) | .metadata.name' | \

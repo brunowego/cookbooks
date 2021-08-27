@@ -1,5 +1,39 @@
 # python-dotenv
 
+## Links
+
+- [Code Repository](https://github.com/theskumar/python-dotenv)
+
+## CLI
+
+### Installation
+
+```sh
+pip3 install -U 'python-dotenv[cli]'
+```
+
+### Commands
+
+```sh
+dotenv --help
+```
+
+### Usage
+
+```sh
+#
+dotenv list
+
+#
+dotenv get [ENV]
+
+#
+dotenv set [ENV] [value]
+
+#
+dotenv run -- python ./[filename].py
+```
+
 ## Library
 
 ### Dependencies

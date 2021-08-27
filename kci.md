@@ -10,7 +10,7 @@
 
 ### Dependencies
 
-- [Keycloak](/keycloak.md#docker)
+- [Keycloak](/keycloak/README.md#docker)
 
 ### Installation
 
@@ -44,12 +44,15 @@ kci generate \
   --clients 10 \
   --realms 5 \
   --target ./realms \
-  --users 100
+  --users 1000
+
+#
+jq -r '.users | length' ./realms/*.json
 
 # Configuration
 kci config set realm --value 'master'
 kci config set login --value 'admin'
-kci config set password --value 'Pa$$w0rd!'
+kci config set password --value 'admin'
 kci config set keycloak_url --value 'http://127.0.0.1:8080/auth'
 kci config set workers --value 10
 
@@ -59,3 +62,13 @@ cat ~/.kci.yaml
 #
 kci import ./realms/*.json
 ```
+
+<!-- ### Issues
+
+####
+
+```log
+missingParameter.accessToken
+```
+
+TODO -->

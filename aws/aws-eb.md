@@ -2,8 +2,9 @@
 
 ## Links
 
+- [AWS Console / Elastic Beanstalk / Environments](https://console.aws.amazon.com/elasticbeanstalk/home?region=us-east-1#/environments)
 - [Main Website](https://docs.aws.amazon.com/elastic-beanstalk/index.html)
-- [AWS Elastic Beanstalk Pricing](aws.amazon.com/elasticbeanstalk/pricing)
+- [AWS Elastic Beanstalk Pricing](https://aws.amazon.com/elasticbeanstalk/pricing/)
 
 ## CLI
 

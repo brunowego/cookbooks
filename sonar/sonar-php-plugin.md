@@ -54,54 +54,7 @@ wget -P "$SONARQUBE_HOME/extensions/plugins" 'https://binaries.sonarsource.com/D
 
 ### Configuration
 
-1. Projects -> Create new project
-   - Project key: com.example.app:master
-   - Display name: My App Production
-   - Set Up
-2. Provide a token
-   - Generate a token: example-token
-   - Generate
-   - Continue
-3. Run analysis on your project
-   - What is your project's main language?: Other (JS, TS, Go, Python, PHP, ...)
-   - What is your OS?: macOS
-   - Download and unzip the Scanner for macOS: Click Download
-   - Execute the Scanner from your computer
-
-   ```sh
-   sonar-scanner \
-     -Dsonar.language=php \
-     -Dsonar.projectKey=com.example.app:master \
-     -Dsonar.sources=. \
-     -Dsonar.host.url=http://127.0.0.1:9000 \
-     -Dsonar.login=example-token
-   ```
-
-   ```sh
-   cat << EOF > ./sonar-project.properties
-   sonar.projectKey=com.example.app:master
-   sonar.projectName=Example App
-   sonar.projectVersion=0.1.0
-
-   sonar.sources=.
-   sonar.exclusions=vendor/**,tests/**
-
-   sonar.language=php
-
-   sonar.host.url=http://127.0.0.1:9000
-
-   sonar.sourceEncoding=UTF-8
-   EOF
-   ```
-
-   ```sh
-   sonar-scanner -Dproject.settings=sonar-project.properties
-   ```
-
-```sh
-# Git ignore
-echo '/.scannerwork' >> ~/.gitignore_global
-```
+Follow [this instructions](/sonar/sonar-scanner.md#configuration).
 
 ### Issues
 

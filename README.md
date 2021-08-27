@@ -11,7 +11,6 @@ https://hackertyper.com/
 
 https://linkedin.com/learning/web-components-and-modularization-practical-approaches/components-for-the-web
 
-
 ##
 
 Tenho obsessão por estudar, sou curioso
@@ -79,6 +78,7 @@ Bucket of cookbooks to help install and set softwares.
 - Objectives and Key Results (OKR)
 - Obsessive-Compulsive Disorder (OCD)
 - On-premises (on-prem)
+- One Time Password (OTP)
 - Operations as a Service (OaaS)
 - Personal Identification Number (PIN)
 - Platform as a service (PaaS)
@@ -164,9 +164,9 @@ Bucket of cookbooks to help install and set softwares.
 logo-[name]-[color]-[hash].svg
 ```
 
-##
+<!-- ##
 
-- [](https://github.com/manuelbieh/react-ssr-setup)
+- [](https://github.com/manuelbieh/react-ssr-setup) -->
 
 ## Dictionary
 

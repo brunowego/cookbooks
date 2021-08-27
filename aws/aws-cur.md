@@ -6,7 +6,7 @@ https://console.aws.amazon.com/migrationhub/home?region=us-east-1#/welcome
 
 ## Links
 
-- [Console](https://console.aws.amazon.com/acm/home?region=us-east-1#/)
+- [AWS Console](https://console.aws.amazon.com/acm/home?region=us-east-1#/)
 
 ## CLI
 
@@ -24,3 +24,14 @@ aws \
   --output json \
   cur describe-report-definitions
 ```
+
+<!--
+Cost allocation tags
+
+aws-migration-project-id
+map-dba
+map-migrated
+map-migrated-app
+map-sap
+map-win-modernized
+-->

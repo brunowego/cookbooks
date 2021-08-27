@@ -150,7 +150,7 @@ phpbrew known \
 phpbrew variants
 
 # Define the version
-export PHP_VERSION=[version]
+export PHP_VERSION='[version]'
 
 # Install
 phpbrew -d install \

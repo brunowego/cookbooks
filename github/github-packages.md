@@ -1,8 +1,21 @@
 # GitHub Packages
 
+<!--
+https://github.com/github/roadmap/issues/93
+-->
+
 ## Links
 
+- [Main Website](https://github.com/features/packages)
 - [GitHub Settings - Token Page](https://github.com/settings/tokens)
+
+## Supported
+
+- Docker
+- NPM
+- Maven
+- NuGet
+- RubyGems
 
 ## Docker
 

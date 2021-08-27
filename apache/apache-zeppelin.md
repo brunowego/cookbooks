@@ -1,5 +1,9 @@
 # Apache Zeppelin
 
+## Alternatives
+
+- [Hue](/hue.md)
+
 ## Helm
 
 ### Dependencies

@@ -32,6 +32,7 @@ git clone --recursive [repo]
 
 ```sh
 git submodule foreach git checkout master
+git submodule foreach git checkout main
 ```
 
 ## Get submodules from cloned repo

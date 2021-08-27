@@ -17,8 +17,8 @@
 ### Repository
 
 ```sh
-helm repo add bitnami https://charts.bitnami.com/bitnami
-helm repo add orange-incubator https://orange-kubernetes-charts-incubator.storage.googleapis.com
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
+helm repo add orange-incubator 'https://orange-kubernetes-charts-incubator.storage.googleapis.com'
 helm repo update
 ```
 

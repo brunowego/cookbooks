@@ -17,10 +17,13 @@ https://github.com/quiqua/pytest-dotenv
 
 ```sh
 # As user dependency
-pip3 install -U pytest
+pip3 install -U pytest pytest-cov
 
 # As project dependency
-echo 'pytest==6.1.1' >> ./requirements-test.txt
+cat << EOF >> ./requirements-test.txt
+pytest==6.2.4
+pytest-cov==2.12.1
+EOF
 ```
 
 ### Commands
@@ -33,7 +36,18 @@ pytest -h
 
 ```sh
 #
-pytest --cov=./
+pytest \
+  --cov ./ \
+  --cov-report xml:./coverage.xml \
+  --cov-report html \
+  --junitxml ./result.xml \
+  ./tests
+
+#
+cat << EOF >> ./.gitignore
+/coverage.xml
+/result.xml
+EOF
 ```
 
 ### Tips

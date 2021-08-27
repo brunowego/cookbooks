@@ -3,6 +3,7 @@
 ## Links
 
 - [Main Website](https://aws.amazon.com/elasticsearch-service/)
+- [AWS Console](https://console.aws.amazon.com/es/home?region=us-east-1#)
 
 ## CLI
 

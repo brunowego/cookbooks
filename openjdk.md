@@ -74,7 +74,7 @@ setx /M JAVA_HOME "C:\Program Files\Java\jre7"
 
 #### Memory
 
-- `Xmx` specifies the maximum memory
+- `Xmx` specifies the maximum memory allocation pool
 - `Xms` specifies the initial memory allocation pool
 
 ```sh

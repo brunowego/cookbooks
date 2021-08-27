@@ -77,13 +77,13 @@ kubectl port-forward \
   3000:3000
 ``` -->
 
-### Issues
+<!-- ### Issues
 
 ####
 
 ```log
 Warning  FailedScheduling  46s (x2 over 95s)  default-scheduler  0/5 nodes are available: 4 node(s) didn't match node selector, 5 node(s) didn't have free ports for the requested pod ports.
-```
+``` -->
 
 ### Delete
 

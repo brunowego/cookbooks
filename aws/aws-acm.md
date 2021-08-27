@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Console](https://console.aws.amazon.com/acm/home?region=us-east-1#/)
+- [AWS Console](https://console.aws.amazon.com/acm/home?region=us-east-1#/)
 
 ## CLI
 

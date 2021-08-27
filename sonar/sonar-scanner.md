@@ -15,6 +15,11 @@ https://github.com/Stashchenko/sonarqube/blob/dc356fb8550c1c8605ae49c5c10a2b0e53
 
 - [SonarQube](/sonarqube.md#docker)
 
+#### Unix-like
+
+- [GNU Wget](/gnu-wget.md)
+- [UnZip](/unzip.md)
+
 ### Installation
 
 #### Homebrew
@@ -23,11 +28,30 @@ https://github.com/Stashchenko/sonarqube/blob/dc356fb8550c1c8605ae49c5c10a2b0e53
 brew install sonar-scanner
 ```
 
-<!-- #### APT
+#### Unix-like
 
-??? -->
+```sh
+wget \
+  -O /tmp/sonar-scanner-cli.zip \
+  'https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472.zip'
 
-### Configuration
+( cd /tmp && unzip ./sonar-scanner-cli.zip -d /opt && rm ./sonar-scanner-cli.zip )
+
+ln -s /opt/sonar-scanner-4.6.2.2472 /opt/sonar-scanner
+```
+
+### Environment
+
+#### Unix-like
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# SonarQube Scanner
+export PATH="/opt/sonar-scanner/bin:$PATH"
+```
+
+### Properties
 
 ```sh
 # Darwin
@@ -54,7 +78,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
    - Display name: My App Production
    - Set Up
 2. Provide a token
-   - Generate a token: example-token
+   - Generate a token: [token]
    - Generate
    - Continue
 3. Run analysis on your project
@@ -65,11 +89,16 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
 
    ```sh
    sonar-scanner \
-     -Dsonar.language='php' \
-     -Dsonar.projectKey='com.example.gitlab:master' \
+     -Dsonar.projectKey='com.example.app:master' \
+     -Dsonar.projectName='My App Production' \
+     -Dsonar.projectVersion='0.1.0' \
      -Dsonar.sources='./' \
+     -Dsonar.exclusions='./vendor/**,./tests/**' \
+     -Dsonar.language='php' \
      -Dsonar.host.url='http://127.0.0.1:9000' \
-     -Dsonar.login='example-token'
+     -Dsonar.sourceEncoding='UTF-8' \
+     -Dsonar.dynamicAnalysis='reuseReports' \
+     -Dsonar.login='[token]'
    ```
 
    ***Or***
@@ -81,21 +110,37 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
    sonar.projectVersion=0.1.0
 
    sonar.sources=./
-   sonar.exclusions=vendor/**,tests/**
+   sonar.exclusions=./vendor/**,./tests/**
 
    sonar.language=php
 
    sonar.host.url=http://127.0.0.1:9000
 
    sonar.sourceEncoding=UTF-8
+   sonar.dynamicAnalysis=reuseReports
    EOF
    ```
 
    ```sh
-   sonar-scanner -Dproject.settings=./sonar-project.properties
+   sonar-scanner \
+     -Dproject.settings=./sonar-project.properties \
+     -Dsonar.login='[token]'
    ```
 
 ```sh
 # Git ignore
 echo '/.scannerwork' >> ~/.gitignore_global
+```
+
+## Docker
+
+### Running
+
+```sh
+#
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h sonar-scanner \
+  --name sonar-scanner \
+  docker.io/sonarsource/sonar-scanner-cli:4.6
 ```

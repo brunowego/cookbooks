@@ -28,6 +28,7 @@ sudo yum -y install wget unzip java-1.8.0-openjdk-devel
 
 ```sh
 ( cd /usr/local && sudo wget -O tmp.zip https://archive.apache.org/dist/incubator/livy/0.6.0-incubating/apache-livy-0.6.0-incubating-bin.zip && sudo unzip tmp.zip && sudo rm tmp.zip )
+
 ( cd /usr/local && sudo ln -s apache-livy-0.6.0-incubating-bin livy )
 ```
 

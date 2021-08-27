@@ -22,7 +22,7 @@ sudo apt -y install wget unzip
 
 ```sh
 wget \
-  https://github.com/fstab/grok_exporter/releases/download/v0.2.6/grok_exporter-0.2.6.linux-amd64.zip \
+  'https://github.com/fstab/grok_exporter/releases/download/v0.2.6/grok_exporter-0.2.6.linux-amd64.zip' \
   -O /tmp/grok_exporter.zip
 
 ( cd /tmp && sudo unzip grok_exporter.zip -d /opt && rm grok_exporter.zip )

@@ -28,6 +28,6 @@ brew install ballerina
 
 ```sh
 curl \
-  -L http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar \
-  -o $(brew --prefix ballerina)/bre/lib/mysql-connector-java-5.1.47.jar
+  -L 'http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar' \
+  -o "$(brew --prefix ballerina)/bre/lib/mysql-connector-java-5.1.47.jar"
 ```

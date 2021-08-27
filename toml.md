@@ -1,4 +1,4 @@
-# TOML
+# Tom's Obvious, Minimal Language (TOML)
 
 ## Tips
 

@@ -88,6 +88,20 @@ brew install openjdk@11
 brew install sonarqube
 ```
 
+<!-- #### Unix-like
+
+```sh
+wget \
+  -O /tmp/sonarqube.zip \
+  'https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.0.1.46107.zip'
+
+( cd /tmp && unzip ./sonarqube.zip -d /opt && rm ./sonarqube.zip )
+
+ln -s /opt/sonarqube-9.0.1.46107 /opt/sonarqube
+
+export PATH="/opt/sonarqube/bin:$PATH"
+``` -->
+
 ### Services
 
 ```sh

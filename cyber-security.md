@@ -9,3 +9,7 @@ https://github.com/ossf
 ## Content
 
 - [Awesome Cybersecurity Blue Team Awesome](https://github.com/fabacab/awesome-cybersecurity-blueteam)
+
+## Libraries
+
+- [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)

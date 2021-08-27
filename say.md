@@ -2,18 +2,18 @@
 
 ## CLI
 
-### Darwin
+### Usage
+
+### Darwin/Ubuntu
 
 Native.
 
-```sh
-say done
-```
-
-### Ubuntu
-
-Native.
+### Usage
 
 ```sh
-spd-say done
+# Darwin
+sleep 5; say done
+
+# Ubuntu
+sleep 5; spd-say done
 ```

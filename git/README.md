@@ -86,8 +86,9 @@ git config --global core.editor 'vim'
 git config --global core.excludesfile '~/.gitignore_global'
 
 #
+git config --global credential.helper 'store'
 git config --global credential.helper 'osxkeychain' # Darwin
-git config --global credential.helper 'store' # Linux
+git config --global credential.helper 'manager-core' # Windows
 
 #
 git config --global push.default 'current'

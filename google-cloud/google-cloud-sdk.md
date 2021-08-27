@@ -1,34 +1,43 @@
 # Google Cloud SDK
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install --cask google-cloud-sdk
 ```
 
-## Commands
+### Commands
 
 ```sh
 gcloud --help
 ```
 
-### Create
+### Usage
 
 ```sh
+#
 gcloud auth login
-```
 
-```sh
+#
 gcloud config get-value core/account
-```
 
-```sh
+#
 gcloud config set project [project-id]
-```
 
-```sh
+#
+gcloud config set run/region [region]
+
+#
+gcloud auth configure-docker
+
+#
+gcloud info
+
+#
 gcloud beta container clusters create 'model-mgmt' \
   --cluster-version '1.12.8-gke.10' \
   --zone 'us-central1-a' \
@@ -36,16 +45,13 @@ gcloud beta container clusters create 'model-mgmt' \
   --image-type 'COS' \
   --disk-size '10' \
   --network 'default'
-```
 
-```sh
+#
 gcloud beta container clusters list
-```
 
-```sh
+#
 gcloud container clusters get-credentials 'model-mgmt' --zone 'us-central1-a'
-```
 
-```sh
+#
 gcloud beta container clusters delete 'model-mgmt' --zone 'us-central1-a'
 ```

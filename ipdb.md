@@ -28,3 +28,11 @@ try:
 except:
     import ipdb; ipdb.set_trace()
 ```
+
+#### With pytest
+
+```sh
+pytest \
+  # ...
+  -s
+```

@@ -89,11 +89,11 @@ https://www.youtube.com/watch?v=XadcyqoQmrw
 2. Printers -> Machine Settings
 3. Start G-code
 
-```
+```txt
 ...
-G28 ; Home all axes
-M420 S1 Z2 ; Enable ABL
-G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
+G28 ;Home
+M420 S1 Z2 ;Enable ABL
+G1 Z2.0 F3000 ;Move Z Axis up
 ...
 ```
 

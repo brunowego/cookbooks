@@ -56,6 +56,10 @@ sudo rpm -vi './jq-1.6-2.4.x86_64.rpm && rm -f jq-1.6-2.4.x86_64.rpm'
 ### Usage
 
 ```sh
+# Length
+jq length [filename]
+jq -r '.users | length' [filename]
+
 # Single line
 jq '.example.email |= "jdoe@example.com"' [filename] | sponge [filename]
 

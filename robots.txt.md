@@ -1,10 +1,18 @@
 # Robots Exclusion Standard (robots.txt)
 
+## Tips
+
+### HTML Tag
+
 ```html
-<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<!-- Follow, index -->
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+
+<!-- No index -->
+<meta name="robots" content="noindex" />
 ```
 
-## WordPress
+### WordPress
 
 ***example.com***
 
@@ -13,15 +21,15 @@ User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
 
-Sitemap: https://www.example.com/sitemap_index.xml
+Sitemap: https://example.com/sitemap_index.xml
 ```
 
-## Application
+### Application
 
 ***app.example.com***
 
 ```txt
-# http://www.robotstxt.org
+# http://robotstxt.org
 User-agent: *
 Allow: /$
 Allow: /login

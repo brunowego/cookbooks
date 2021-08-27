@@ -29,7 +29,6 @@ JUnit
 Facelets
 HttpClient
 
-
 Enterprise Information Systems Tier
 -->
 
@@ -51,6 +50,8 @@ Enterprise Information Systems Tier
 - Data Transfer Object (DTO)
 - Data Access Object (DAO)
 - Plain old Java object (POJO)
+- Initial Memory Allocation Pool (XMS)
+- Maximum Memory Allocation Pool (XMX)
 
 ## Testing
 

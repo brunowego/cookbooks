@@ -181,7 +181,7 @@ helm repo update
 #
 kubectl create namespace ingress-nginx
 
-# Kubernetes IN Docker (KIND)
+# Kubernetes in Docker (kind)
 helm install ingress-controller ingress-nginx/ingress-nginx \
   --namespace ingress-nginx \
   --version 3.35.0 \
@@ -189,6 +189,8 @@ helm install ingress-controller ingress-nginx/ingress-nginx \
 controller:
   hostPort:
     enabled: true
+
+  kind: DaemonSet
 
   publishService:
     enabled: false
@@ -213,7 +215,6 @@ EOF
 )
 ```
 
-<!--
 ### Prometheus Stack
 
 **Dependencies:** [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
@@ -225,18 +226,37 @@ kubectl get prometheus \
   -n monitoring
 
 #
+helm upgrade ingress-controller ingress-nginx/ingress-nginx \
+  --namespace ingress-nginx \
+  -f <(yq m <(cat << EOF
+controller:
   podAnnotations:
     prometheus.io/scrape: 'true'
     prometheus.io/port: '10254'
 
   metrics:
     enabled: true
+
     serviceMonitor:
       enabled: true
       additionalLabels:
         release: prometheus-stack
+EOF
+) <(helm get values ingress-controller --namespace ingress-nginx))
 ```
--->
+
+### MaxMind GeoLite2
+
+```sh
+#
+helm upgrade ingress-controller ingress-nginx/ingress-nginx \
+  --namespace ingress-nginx \
+  -f <(yq m <(cat << EOF
+controller:
+  maxmindLicenseKey: 'DfoSiRTipW5IyLUR'
+EOF
+) <(helm get values ingress-controller --namespace ingress-nginx))
+```
 
 ### Status
 
@@ -280,6 +300,64 @@ nginx.ingress.kubernetes.io/server-snippet: |
 ```sh
 minikube tunnel
 ``` -->
+
+### Issues
+
+#### DDos Attack
+
+```log
+172.16.10.101 - - [02/Jan/2021:21:51:22 +0000] "GET / HTTP/1.1" 200 45 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.16; rv:84.0) Gecko/20100101 Firefox/84.0" 367 0.001 [default-ingress-1db0bf370dd59aa8ff284a4bd4ccdc07-80] [] 10.42.0.10:80 45 0.000 200 1da439122bd7d7014f6627f32e4cefc3
+172.16.10.101 - - [02/Jan/2021:21:51:22 +0000] "GET /favicon.ico HTTP/1.1" 499 0 "http://test.default.54.202.152.214.xip.io/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.16; rv:84.0) Gecko/20100101 Firefox/84.0" 341 0.001 [default-ingress-1db0bf370dd59aa8ff284a4bd4ccdc07-80] [] 10.42.0.10:80 0 0.000 - 92a1e851206da86fbec0610d346e2ddd
+172.16.10.101 - - [02/Jan/2021:21:51:26 +0000] "GET / HTTP/1.1" 200 45 "-" "curl/7.64.1" 98 0.000 [default-ingress-1db0bf370dd59aa8ff284a4bd4ccdc07-80] [] 10.42.0.10:80 45 0.000 200 4c51046660b05cf2703dbedfae2272aa
+172.16.10.101 - - [02/Jan/2021:21:51:29 +0000] "GET / HTTP/1.1" 200 45 "-" "Wget/1.20.3 (darwin19.0.0)" 164 0.001 [default-ingress-1db0bf370dd59aa8ff284a4bd4ccdc07-80] [] 10.42.0.10:80 45 0.000 200 5334e799b3268dab31d74a5d2239702b
+```
+
+```yaml
+block-user-agents:
+```
+
+#### Rate Limit
+
+```yaml
+nginx.ingress.kubernetes.io/limit-rpm: "300"
+```
+
+<!--
+https://stackoverflow.com/questions/64425924/rate-limiting-based-on-url-and-path-in-kubernetes
+https://github.com/nginxinc/kubernetes-ingress/blob/master/examples/custom-annotations/README.md
+-->
+
+#### Failed Calling Webhook
+
+```log
+Error: Internal error occurred: failed calling webhook "validate.nginx.ingress.kubernetes.io": Post "https://ingress-controller-ingress-nginx-controller-admission.ingress-nginx.svc:443/networking/v1beta1/ingresses?timeout=10s": dial tcp 0.0.0.0:443: connect: connection refused
+```
+
+```sh
+#
+kubectl get validatingwebhookconfigurations
+
+#
+kubectl delete -A ValidatingWebhookConfiguration ingress-controller-ingress-nginx-admission
+```
+
+#### Node Free Ports
+
+```log
+Warning  FailedScheduling  18s (x2 over 20s)  default-scheduler  0/4 nodes are available: 1 node(s) didn't have free ports for the requested pod ports, 3 node(s) didn't match Pod's node affinity/selector.
+```
+
+One way to ensure that only schedulable Pods are created is to deploy the NGINX Ingress Controller as a `DaemonSet` instead of a traditional `Deployment`.
+
+```sh
+helm upgrade ingress-controller ingress-nginx/ingress-nginx \
+  --namespace ingress-nginx \
+  -f <(yq m <(cat << EOF
+controller:
+  kind: DaemonSet
+EOF
+) <(helm get values ingress-controller --namespace ingress-nginx))
+```
 
 ### Delete
 

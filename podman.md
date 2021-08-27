@@ -88,6 +88,11 @@ podman top -l
 podman stop -l
 ```
 
+<!--
+#
+podman login registry.redhat.io
+-->
+
 <!-- ### Issues
 
 ####

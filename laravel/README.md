@@ -12,6 +12,10 @@ https://github.com/arquivei/laravel-prometheus-exporter
 https://www.especializati.com.br/curso-laravel-multi-tenancy-single-database#comprar
 -->
 
+## Links
+
+- [Laravel Tips](https://github.com/LaravelDaily/laravel-tips)
+
 ## App
 
 ### Stack

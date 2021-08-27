@@ -130,8 +130,6 @@ kubectl delete deploy nginx
 
 ### Tips
 
-####
-
 <!-- #### Delete Cluster
 
 ```sh

@@ -2,9 +2,15 @@
 
 ## Extensions
 
+- [1Password](https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager/)
+- [AutoFormer+](https://addons.mozilla.org/en-US/firefox/addon/autoformer/)
+- [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/)
+- [HTTPS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/)
+- [Language Switch](https://addons.mozilla.org/en-US/firefox/addon/languageswitch/)
+- [Prometheus Formatter](https://addons.mozilla.org/en-US/firefox/addon/prometheus-formatter/)
 - [Proxy Switcher and Manager](https://addons.mozilla.org/en-US/firefox/addon/proxy-switcher-and-manager/)
 - [Temporary Containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/)
-- [Language Switch](https://addons.mozilla.org/en-US/firefox/addon/languageswitch/)
+- [Wappalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/)
 
 ## Alternatives
 

@@ -223,7 +223,7 @@ terraform apply ./dev.tfplan
 #
 terraform state list
 
-#
+# REPL
 terraform console
 
 #

@@ -1,4 +1,4 @@
-# Kubernetes IN Docker (KIND) Local Registry
+# Kubernetes in Docker (kind) Local Registry
 
 ## Links
 

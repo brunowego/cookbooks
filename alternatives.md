@@ -3,7 +3,7 @@
 ## Code Secrets
 
 <!--
-https://www.gitguardian.com/
+https://gitguardian.com/
 -->
 
 - [detect-secrets](/detect-secrets.md)
@@ -43,7 +43,7 @@ https://www.gitguardian.com/
 - [k3d](/k3d.md)
 - [K3s](/k3s.md)
 - [Kubernetes Cluster (using kubeadm)](/kubernetes/kubernetes-cluster.md)
-- [Kubernetes IN Docker (kind)](/kind/README.md)
+- [Kubernetes in Docker (kind)](/kind/README.md)
 - [MicroK8s](/microk8s.md)
 - [minikube](/minikube.md)
 
@@ -79,7 +79,8 @@ https://www.gitguardian.com/
 
 ## Kubernetes Installation
 
-- [Rancher](/rancher.md)
+- [Kubeadm](/kubeadm.md)
+- [Kubernetes Operations (kOps)](/kops/README.md)
 - [Kubespray](/kubespray.md)
-- Kubeadm
 - [OpenShift](/openshift.md)
+- [Rancher](/rancher.md)

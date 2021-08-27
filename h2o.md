@@ -39,9 +39,11 @@ brew install --cask java
 ### Running
 
 ```sh
-wget -O ./tmp.zip http://h2o-release.s3.amazonaws.com/h2o/rel-yau/1/h2o-3.26.0.1.zip && unzip ./tmp.zip && rm ./tmp.zip
-```
+wget \
+  -O ./tmp.zip \
+  'http://h2o-release.s3.amazonaws.com/h2o/rel-yau/1/h2o-3.26.0.1.zip' && \
+    unzip ./tmp.zip && \
+      rm ./tmp.zip
 
-```sh
 ( cd ./h2o-3.26.0.1 && java -jar ./h2o.jar )
 ```

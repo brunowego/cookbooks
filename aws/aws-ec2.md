@@ -157,3 +157,15 @@ aws \
 <!--
 aws ec2 detach-volume --volume-id "$1" --force
 -->
+
+<!--
+aws ec2 describe-instances \
+  --profile poc \
+  --region us-east-1 | \
+    grep "PrivateIpAddress" | \
+      grep 10.101 | \
+        grep -v "," | \
+          awk '{print $2}' | \
+            sort | \
+              uniq
+-->

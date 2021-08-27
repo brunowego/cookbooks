@@ -79,6 +79,9 @@ composer diagnose -vvv
 # Create
 composer create-project --prefer-dist laravel/laravel [name] && "$_"
 
+# Validate
+composer validate
+
 # Install
 composer install
 

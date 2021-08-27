@@ -37,9 +37,13 @@ ACTIONS_STEP_DEBUG true
 - [Events that trigger workflows](https://docs.github.com/en/actions/reference/events-that-trigger-workflows)
 - [Webhook events](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#webhook-events)
 - [Manually running a workflow](https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow)
+- [Context and expression syntax for GitHub Actions / Operators](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#operators)
+- [Environments](https://docs.github.com/en/actions/reference/environments)
+- [Workflow syntax for GitHub Actions / Filter pattern cheat sheet](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet)
 
 ## Links
 
+- [GitHub Actions Virtual Environments](https://github.com/actions/virtual-environments)
 - [Learning Lab](https://lab.github.com/)
 - [Features Actions](https://github.com/features/actions)
 - [Starter Workflows](https://github.com/actions/starter-workflows)
@@ -61,6 +65,50 @@ ACTIONS_STEP_DEBUG true
 
 - [Create a JavaScript Action](https://github.com/actions/javascript-action)
 - [Create a JavaScript Action using TypeScript](https://github.com/actions/typescript-action)
+
+### Action Limitations
+
+- Job Concurrency is limited based on your plan.
+
+| GitHub Plan | Concurrent Jobs per Repository |
+| ----------- | ------------------------------ |
+| Free        | 20                             |
+| Pro         | 40                             |
+| Team        | 60                             |
+| Enterprise  | 180                            |
+
+- Jobs are limited to six hours of runtime.
+- 1000 API requests per hour
+- Actions can't trigger other workflows
+- Logs are limited to 64 KB
+- Exceeding limits can cause:
+  - Job queueing
+  - Failed jobs
+- Limits are subject to change
+- Workflows are limited to no more than 100 Actions
+- Workflows can have up to 100 secrets
+- Secrets limited to 64 KB
+
+### Default Environment Variables
+
+```env
+GITHUB_WORKFLOW=
+GITHUB_ACTION=
+GITHUB_ACTOR=
+GITHUB_REPOSITORY=
+GITHUB_EVENT_NAME=
+GITHUB_EVENT_PATH=
+GITHUB_WORKSPACE=
+GITHUB_SHA=
+GITHUB_REF=
+HOME=
+```
+
+### Artifacts
+
+- Free accounts get 500 MB for storage
+- Stored for 90 days
+- For pull requests, retention period resets on pushes
 
 ### Log Commands
 
@@ -120,7 +168,13 @@ ACTIONS_STEP_DEBUG true
 - [GitHub Actions Checkout](https://github.com/actions/checkout)
 - [Github Marketplace Actions](https://github.com/marketplace?type=actions)
 
-**Setups**
+|           Action Location           |                  Syntax                   |
+| ----------------------------------- | ----------------------------------------- |
+| Public repository                   | `uses: {owner}/{repo}@{ref}`              |
+| The same repository as the workflow | `uses: ./.github/actions/my-local-action` |
+| A Docker image registry             | `uses: docker://{image}:{tag}`            |
+
+##### Setups
 
 - [Setup Golang](https://github.com/actions/setup-go)
 - [Setup Java](https://github.com/actions/setup-java)
@@ -130,7 +184,7 @@ ACTIONS_STEP_DEBUG true
 - [Setup Python](https://github.com/actions/setup-python)
 - [Setup Ruby](https://github.com/ruby/setup-ruby)
 
-**Misc**
+##### Misc
 
 - [Pull Request Labeler](https://github.com/actions/labeler)
 - [Label approved pull requests](https://github.com/abinoda/label-when-approved-action)
@@ -170,10 +224,20 @@ jobs:
 
 #### CI/CD
 
-#### Events
+TODO
 
-- GitHub Webhook Events
+#### Events ([docs](https://docs.github.com/en/actions/reference/events-that-trigger-workflows))
+
+- Webhook Events
+  - Branch Creation
+  - Issues
+  - Members
+- Repository Events
+  - push
+  - pull_request
+  - release
 - Scheduled Events (e.q. `schedule`)
+  - Cron Format
 - External Events (e.q. `repository_dispatch`)
 
 #### Runners
@@ -183,15 +247,15 @@ jobs:
 ```yml
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 ```
 
-| Virtual Environment | YAML Workflow Label |
-| --- | --- |
-| macOS Catalina 10.15 | `macos-latest` or `macos-10.15` |
-| Ubuntu 16.04 | `ubuntu-16.04` |
-| Ubuntu 18.04 | `windows-latest` or `ubuntu-18.04` |
-| Windows Server 2019 | `windows-latest` or `windows-2019` |
+| Virtual Environment | YAML Workflow Label | Default Shell |
+| --- | --- | --- |
+| macOS Catalina 10.15 | `macos-latest` or `macos-10.15` | Bash |
+| Ubuntu 16.04 | `ubuntu-16.04` | Bash |
+| Ubuntu 18.04 | `windows-latest` or `ubuntu-18.04` | Bash |
+| Windows Server 2019 | `windows-latest` or `windows-2019` | PowerShell |
 
 ##### Self-Hosted Runners
 
@@ -201,7 +265,7 @@ jobs:
     runs-on: [self-hosted, linux, ARM32]
 ```
 
-**Linux**
+###### Linux
 
 - CentOS 7
 - Debian 9 or later
@@ -214,7 +278,7 @@ jobs:
 - SUSE Enterprise Linux (SLES) 12
 - Ubuntu 16.04 or later
 
-**Windows**
+###### Windows
 
 - Windows 7 64-bit
 - Windows 8.1 64-bit
@@ -223,7 +287,7 @@ jobs:
 - Windows Server 2016 64-bit
 - Windows Server 2019 64-bit
 
-**Darwin (macOS)**
+###### Darwin (macOS)
 
 - macOS 10.13 (High Sierra) or later
 
@@ -263,3 +327,18 @@ gh workflow run '[workflow-name]' \
 #
 gh run watch
 ```
+
+<!-- ## Docker
+
+### Running
+
+```sh
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h ubuntu \
+  -v "$PWD":/usr/src/app \
+  -w /usr/src/app \
+  --name ubuntu \
+  --network workbench \
+  docker.io/catthehacker/ubuntu:act-latest /bin/bash
+``` -->

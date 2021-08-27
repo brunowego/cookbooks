@@ -1512,9 +1512,17 @@ rm -fR /usr/local/src/matomo
 rm -fR /usr/src/matomo
 ```
 
-## Docs
+## General
 
-### Email Settings
+### Tips
+
+#### Google Search Operators
+
+```txt
+allintitle:"Metabase" site:.com "Sign in to Metabase"
+```
+
+#### Email Settings
 
 1. Adminstration
 2. System
@@ -1529,7 +1537,7 @@ rm -fR /usr/src/matomo
    - SMTP from name: `Matomo`
    - SMTP encryption: `TLS`
 
-### Email Reports
+#### Email Reports
 
 1. Adminstration
 2. Personal

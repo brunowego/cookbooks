@@ -3,6 +3,8 @@
 **Keywords:** Identity Provider (IdP), Access Management
 
 <!--
+https://documenter.getpostman.com/view/7294517/SzmfZHnd
+
 https://github.com/aws-samples/keycloak-on-aws
 https://www.amazonaws.cn/en/solutions/keycloak-on-aws/
 https://github.com/devopsutils/keycloak-cluster-aws-rds
@@ -33,6 +35,10 @@ https://github.com/Mu-Wahba/keycloak-for-production
 https://github.com/akvo/akvo-lumen/commit/2a15a7eedd3d8fd9e77ba7b1eb4cee4ccf168b71
 -->
 
+<!--
+Red Hat WildFly (JBoss Application Server)
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/keycloak/keycloak)
@@ -48,6 +54,10 @@ https://github.com/akvo/akvo-lumen/commit/2a15a7eedd3d8fd9e77ba7b1eb4cee4ccf168b
 - [Gluu](https://gluu.org/)
 - [Okta](https://okta.com/)
 - [ORY Hydra](ory-hydra.md)
+
+## Utils
+
+- [Keycloak Realm Generator & Importer (kci)](/kci.md)
 
 ## Guides
 
@@ -86,12 +96,6 @@ docker network create workbench \
 
 ### Running
 
-<!--
-13.0.1
--->
-
-#### Version 13.x
-
 ```sh
 # Using MySQL
 docker run -d \
@@ -122,7 +126,7 @@ docker run -d \
   -p 8443:8443 \
   --name keycloak \
   --network workbench \
-  docker.io/jboss/keycloak:12.0.4 \
+  docker.io/jboss/keycloak:13.0.1 \
     -Dkeycloak.profile.feature.upload_scripts=enabled
 ```
 
@@ -155,7 +159,7 @@ docker run -d \
   -p 8443:8443 \
   --name keycloak \
   --network workbench \
-  docker.io/jboss/keycloak:12.0.4 \
+  docker.io/jboss/keycloak:13.0.1 \
     -Dkeycloak.profile.feature.upload_scripts=enabled
 ```
 
@@ -279,30 +283,98 @@ export JAVA_OPTS_APPEND='-Dkeycloak.profile.feature.upload_scripts=enabled -Dkey
 
 ### References
 
-- [Configuration](https://github.com/codecentric/helm-charts/tree/master/charts/keycloak#configuration)
+- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/keycloak#parameters)
 
 ### Repository
 
 ```sh
-helm repo add codecentric https://codecentric.github.io/helm-charts
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
 helm repo update
 ```
 
 ### Install
 
 ```sh
+#
 kubectl create namespace keycloak
+
+#
+export INGRESS_HOST='127.0.0.1'
+
+#
+helm install keycloak bitnami/keycloak \
+  --namespace keycloak \
+  --version 4.1.3 \
+  -f <(cat << EOF
+auth:
+  adminUser: user
+  adminPassword: user
+  managementUser: manager
+  managementPassword: manager
+
+replicaCount: 3
+
+resources:
+  limits:
+    cpu: 400m
+    memory: 512Mi
+  requests:
+    cpu: 400m
+    memory: 20Mi
+
+serviceDiscovery:
+  enabled: true
+
+ingress:
+  enabled: true
+  hostname: keycloak.${INGRESS_HOST}.nip.io
+EOF
+)
 ```
+
+### Prometheus Stack
+
+**Dependencies:** [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
 
 ```sh
 #
-helm install keycloak codecentric/keycloak \
+kubectl get prometheus \
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
+  -n monitoring
+
+#
+helm upgrade keycloak bitnami/keycloak \
   --namespace keycloak \
-  --version 11.0.1 \
-  --set ingress.enabled=true \
-  --set "ingress.rules[0].host=keycloak.${INGRESS_HOST}.nip.io" \
-  --set 'ingress.rules[0].paths={/}'
+  -f <(yq m <(cat << EOF
+metrics:
+  enabled: true
+
+  serviceMonitor:
+    enabled: true
+    additionalLabels:
+      release: prometheus-stack
+EOF
+) <(helm get values keycloak --namespace keycloak))
 ```
+
+<!--
+###
+
+```sh
+helm upgrade keycloak bitnami/keycloak \
+  --namespace keycloak \
+  -f <(yq m <(cat << EOF
+resources:
+  limits:
+    cpu: 800m
+    memory: 1Gi
+  requests:
+    cpu: 800m
+    memory: 40Mi
+EOF
+) <(helm get values keycloak --namespace keycloak))
+```
+-->
 
 ### Status
 
@@ -314,17 +386,20 @@ kubectl rollout status statefulset/keycloak \
 ### Secret
 
 ```sh
-kubectl get secret keycloak-http \
-  -o jsonpath='{.data.password}' \
+kubectl get secret keycloak \
+  -o jsonpath='{.data.admin-password}' \
   -n keycloak | \
     base64 --decode; echo
-```
 
-### Configuration
+kubectl get secret keycloak \
+  -o jsonpath='{.data.management-password}' \
+  -n keycloak | \
+    base64 --decode; echo
 
-```sh
-#
-sudo hostess add keycloak.cluster.local 127.0.0.1
+kubectl get secret keycloak \
+  -o jsonpath='{.data.database-password}' \
+  -n keycloak | \
+    base64 --decode; echo
 ```
 
 ### Delete
@@ -401,3 +476,38 @@ kubectl delete namespace keycloak \
    - Mappers Tab -> Actions Edit "realm roles"
      - Token Claim Name: groups
      - Save
+
+### Create session
+
+```sh
+/opt/jboss/keycloak/bin/kcadm.sh config credentials \
+  --server 'http://0.0.0.0:8080/auth' \
+  --realm master \
+  --user admin \
+  --password admin
+```
+
+### Get Helm Fields
+
+```sh
+/opt/jboss/keycloak/bin/kcadm.sh get realms/master
+```
+
+### Change Password Policy
+
+#### Links
+
+- [Password Policies](https://github.com/keycloak/keycloak-documentation/blob/master/server_admin/topics/authentication/password-policies.adoc#password-policies)
+- [Authentication / Password Policy](http://127.0.0.1:8080/auth/admin/master/console/#/realms/master/authentication/password-policy)
+
+#### Update Password Policy
+
+```sh
+#
+/opt/jboss/keycloak/bin/kcadm.sh get realms/master \
+  --fields revokeRefreshToken
+
+#
+/opt/jboss/keycloak/bin/kcadm.sh update realms/master \
+  -s 'passwordPolicy="hashIterations(27500) and specialChars(2) and upperCase(2) and lowerCase(2) and digits(2) and length(9) and notUsername and passwordHistory(4)"'
+```

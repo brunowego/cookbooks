@@ -1,4 +1,4 @@
-# INI
+# Initialize (INI)
 
 ## Tips
 

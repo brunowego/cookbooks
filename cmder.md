@@ -7,5 +7,5 @@
 #### Chocolatey
 
 ```sh
-choco install cmder
+choco install -y -r cmder
 ```

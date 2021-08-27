@@ -18,8 +18,8 @@ grep -ic avx /proc/cpuinfo
 
 ```sh
 kubectl run busybox -it --rm \
-  --image='docker.io/library/busybox:1.31' \
-  # --limits='cpu=500m,memory=1Gi' \
-  --restart='Never' \
+  --image 'docker.io/library/busybox:1.31' \
+  # --limits 'cpu=500m,memory=1Gi' \
+  --restart 'Never' \
   -- grep -ic avx /proc/cpuinfo
 ```

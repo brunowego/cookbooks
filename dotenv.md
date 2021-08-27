@@ -13,6 +13,7 @@ DB_USERNAME filetype:env
 ### Load
 
 ```sh
+#
 export $(sed 's/[[:blank:]]//g; /^#/d' .env | xargs)
 ```
 

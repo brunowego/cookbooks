@@ -483,7 +483,7 @@ nginx: [emerg] open() "/run/nginx/nginx.pid" failed (2: No such file or director
 RUN mkdir -p /run/nginx
 ```
 
-## Kubernetes
+## Kubectl
 
 ### Running
 
@@ -497,6 +497,25 @@ kubectl expose deployment 'my-nginx' \
   --port 80 \
   --type 'NodePort' \
   --name 'my-nginx-service'
+
+#
+export INGRESS_HOST='127.0.0.1'
+
+cat << EOF | kubectl apply -f -
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: my-ingress
+spec:
+  rules:
+  - host: example.${INGRESS_HOST}.nip.io
+    http:
+      paths:
+      - backend:
+          serviceName: my-nginx-service
+          servicePort: 80
+        path: /
+EOF
 
 #
 kubectl get pod,service

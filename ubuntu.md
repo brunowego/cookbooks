@@ -74,3 +74,17 @@ sudo update-alternatives --config editor
      - Name: UBUNTU
      - Format: MS-DOS (FAT)
 3. Open balenaEtcher
+
+## Kubectl
+
+### Running
+
+```sh
+kubectl run -it --rm \
+  --image docker.io/library/ubuntu:20.04 \
+  --limits 'cpu=2,memory=2Gi' \
+  --requests 'cpu=2,memory=2Gi' \
+  --restart Never \
+  ubuntu \
+  -- /bin/bash
+```
