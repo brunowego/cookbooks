@@ -38,7 +38,7 @@ choco install awscli
 aws help
 ```
 
-**AWS CLI Command Syntax**
+#### AWS CLI Command Syntax
 
 ```sh
 aws [options] <command> <subcommand> [parameters]
@@ -139,5 +139,6 @@ An error occurred (ExpiredToken) when calling the ListBuckets operation: The pro
 ```
 
 ```sh
+#
 AWS_PROFILE=dev aws s3 ls
 ```

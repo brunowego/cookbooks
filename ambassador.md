@@ -47,13 +47,13 @@ metadata:
   namespace: ambassador
 spec:
   rules:
-    - host: admin.ambassador.${INGRESS_HOST}.nip.io
-      http:
-        paths:
-          - backend:
-              serviceName: ambassador-admin
-              servicePort: 8877
-            path: /
+  - host: admin.ambassador.${INGRESS_HOST}.nip.io
+    http:
+      paths:
+      - backend:
+          serviceName: ambassador-admin
+          servicePort: 8877
+        path: /
 EOF
 ```
 

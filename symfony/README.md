@@ -58,7 +58,11 @@ symfony -h
 symfony new [name] && cd "$_"
 
 #
+symfony server:ca:install
 symfony server:start
+
+#
+symfony server:start --no-tls
 
 #
 symfony check:security

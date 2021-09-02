@@ -60,7 +60,16 @@ choco install -y axel
 axel --help
 ```
 
-### Proxy
+### Usage
+
+```sh
+#
+axel -n 16 [link]
+```
+
+### Tips
+
+#### Proxy
 
 ```sh
 tee -a ~/.axelrc << EOF

@@ -36,7 +36,7 @@ aws-google-auth \
   -S <sp-id> \
   -R us-east-1 \
   -d 43200 \
-  -p dev \
+  -p default \
   --save-failure-html
 
 #

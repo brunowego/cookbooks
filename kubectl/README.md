@@ -120,6 +120,22 @@ kubectl delete secret [secret-name] -n [namespace]
 
 ### Tips
 
+#### Get Cluster Server URL
+
+```sh
+kubectl config view \
+  --minify \
+  -o 'jsonpath={.clusters[0].cluster.server}'; echo
+```
+
+#### Get Context Config
+
+```sh
+kubectl config view \
+  --minify \
+  --flatten
+```
+
 #### Print Environment Variables
 
 ```sh

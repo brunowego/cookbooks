@@ -144,13 +144,12 @@ helm repo update
 
 ```sh
 #
+kubectl create namespace grafana
+
+#
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace grafana
-```
-
-```sh
 helm install grafana grafana/grafana \
   --namespace grafana \
   --version 6.14.1 \

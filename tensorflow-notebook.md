@@ -24,13 +24,13 @@ metadata:
   namespace: tensorflow-notebook
 spec:
   rules:
-    - host: tensorboard.example.com
-      http:
-        paths:
-          - backend:
-              serviceName: tensorflow-notebook
-              servicePort: 6006
-            path: /
+  - host: tensorboard.example.com
+    http:
+      paths:
+      - backend:
+          serviceName: tensorflow-notebook
+          servicePort: 6006
+        path: /
 EOF
 ```
 
@@ -43,13 +43,13 @@ metadata:
   namespace: tensorflow-notebook
 spec:
   rules:
-    - host: jupyter.example.com
-      http:
-        paths:
-          - backend:
-              serviceName: tensorflow-notebook
-              servicePort: 8888
-            path: /
+  - host: jupyter.example.com
+    http:
+      paths:
+      - backend:
+          serviceName: tensorflow-notebook
+          servicePort: 8888
+        path: /
 EOF
 ```
 

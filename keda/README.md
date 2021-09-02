@@ -116,7 +116,7 @@ kubectl get hpa -A
 ### Delete
 
 ```sh
-helm uninstall logging-operator \
+helm uninstall keda \
   -n keda-system
 
 kubectl delete namespace keda-system \

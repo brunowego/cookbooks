@@ -259,10 +259,10 @@ EOF
 )
 ```
 
-### Status
+<!-- ### Status
 
 ```sh
-kubectl rollout status deploy/logging-operator \
+kubectl rollout status deploy/atlantis \
   -n atlantis-system
 ```
 
@@ -270,10 +270,10 @@ kubectl rollout status deploy/logging-operator \
 
 ```sh
 kubectl logs \
-  -l 'app.kubernetes.io/name=logging-operator' \
+  -l 'app.kubernetes.io/name=atlantis' \
   -n atlantis-system \
   -f
-```
+``` -->
 
 ### Port Forward
 

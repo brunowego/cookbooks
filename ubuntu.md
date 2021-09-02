@@ -12,6 +12,22 @@
 - [Fixing Ubuntu Freezing at Boot Time](https://itsfoss.com/fix-ubuntu-freezing/)
 - [Releases Ubuntu from University of Kent Mirror Service](https://www.mirrorservice.org/sites/releases.ubuntu.com/18.04.3/)
 
+## Installation
+
+### Download
+
+```sh
+#
+axel -kn 32 'https://ubuntu.itsbrasil.net/ubuntu-releases/20.04.3/ubuntu-20.04.3-desktop-amd64.iso'
+
+# https://releases.ubuntu.com/20.04/SHA256SUMS
+shasum -a 256 ./ubuntu-20.04.3-desktop-amd64.iso
+```
+
+### Bootable USB
+
+- [balenaEtcher](/balenaetcher.md)
+
 ## Docker
 
 ### Network

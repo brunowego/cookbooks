@@ -145,7 +145,7 @@ helm repo update
 
 ### Dependencies
 
-Assuming there is already a `monitoring` stack (namespace).
+- Assuming there is already a `monitoring` stack (namespace).
 
 ### Install
 

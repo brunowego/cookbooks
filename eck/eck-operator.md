@@ -47,12 +47,11 @@ helm repo update
 ```sh
 #
 kubectl create namespace elastic-system
-```
 
-```sh
+#
 helm install elastic-operator elastic/eck-operator \
   --namespace elastic-system \
-  --version 1.6.0
+  --version 1.7.1
 ```
 
 ### Status
@@ -84,12 +83,16 @@ kubectl delete namespace elastic-system \
 
 ## Elasticsearch Cluster and Kibana Instance
 
+### Dependencies
+
+- Elastic Cloud on Kubernetes (ECK) Operator (Kubernetes Manifests or Helm)
+- Assuming there is already a `logging` namespace.
+
 ### Install
 
-```sh
-#
-kubectl create namespace logging
+#### Elasticsearch
 
+```sh
 #
 cat << EOF | kubectl apply \
   -n logging \
@@ -99,7 +102,7 @@ kind: Elasticsearch
 metadata:
   name: elastic-cluster
 spec:
-  version: 7.12.1
+  version: 7.14.0
   nodeSets:
   - name: default
     count: 1
@@ -108,8 +111,40 @@ spec:
       node.data: true
       node.ingest: true
       node.store.allow_mmap: false
+  http:
+    tls:
+      selfSignedCertificate:
+        disabled: true
 EOF
 
+#
+export INGRESS_HOST='127.0.0.1'
+
+cat << EOF | kubectl apply \
+  -n logging \
+  -f -
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: elasticsearch
+spec:
+  rules:
+  - host: elasticsearch.${INGRESS_HOST}.nip.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: elastic-cluster-es-http
+            port:
+              number: 9200
+        path: /
+        pathType: Prefix
+EOF
+```
+
+#### Kibana
+
+```sh
 #
 cat << EOF | kubectl apply \
   -n logging \
@@ -119,10 +154,38 @@ kind: Kibana
 metadata:
   name: kibana-cluster
 spec:
-  version: 7.12.1
+  version: 7.14.0
   count: 1
   elasticsearchRef:
     name: elastic-cluster
+  http:
+    tls:
+      selfSignedCertificate:
+        disabled: true
+EOF
+
+#
+export INGRESS_HOST='127.0.0.1'
+
+cat << EOF | kubectl apply \
+  -n logging \
+  -f -
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kibana
+spec:
+  rules:
+  - host: kibana.${INGRESS_HOST}.nip.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: kibana-cluster-kb-http
+            port:
+              number: 5601
+        path: /
+        pathType: Prefix
 EOF
 ```
 
@@ -153,7 +216,7 @@ kubectl logs \
 ### Secrets
 
 ```sh
-#
+# Elasticsearch and Kibana. User: elastic
 kubectl get secret \
   elastic-cluster-es-elastic-user \
   -n logging \
@@ -165,16 +228,14 @@ kubectl get secret \
 
 ```sh
 #
-kubectl delete pod \
-  -l 'common.k8s.elastic.co/type=elasticsearch' \
-  -n logging
-
-kubectl delete pod \
-  -l 'common.k8s.elastic.co/type=kibana' \
+kubectl delete kibana kibana-cluster \
   -n logging
 
 #
-kubectl delete namespace logging \
-  --grace-period=0 \
-  --force
+kubectl delete elasticsearch elastic-cluster \
+  -n logging
+
+#
+kubectl delete ingress kibana \
+  -n logging
 ```

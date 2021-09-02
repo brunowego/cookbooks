@@ -53,7 +53,27 @@ sudo systemctl enable --now kubelet
 kubeadm -h
 ```
 
-### Logs
+<!-- ### Usage
+
+```sh
+#
+kubeadm config images pull
+
+#
+kubeadm init --apiserver-advertise-address $(hostname -i) --pod-network-cidr 10.5.0.0/16
+
+#
+kubectl apply \
+  -f 'https://raw.githubusercontent.com/cloudnativelabs/kube-router/master/daemonset/kubeadm-kuberouter.yaml'
+``` -->
+
+<!--
+https://github.com/Demellion/test_deploy/blob/main/kube_wordpress_efk.bash
+-->
+
+### Tips
+
+#### Logs
 
 ```sh
 sudo journalctl -u kubelet

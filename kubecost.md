@@ -41,13 +41,13 @@ metadata:
   namespace: kubecost
 spec:
   rules:
-    - host: grafana.${INGRESS_HOST}.nip.io
-      http:
-        paths:
-          - backend:
-              serviceName: kubecost-grafana
-              servicePort: 80
-            path: /
+  - host: grafana.${INGRESS_HOST}.nip.io
+    http:
+      paths:
+      - backend:
+          serviceName: kubecost-grafana
+          servicePort: 80
+        path: /
 EOF
 ```
 
@@ -60,13 +60,13 @@ metadata:
   namespace: kubecost
 spec:
   rules:
-    - host: alertmanager.${INGRESS_HOST}.nip.io
-      http:
-        paths:
-          - backend:
-              serviceName: kubecost-prometheus-alertmanager
-              servicePort: 80
-            path: /
+  - host: alertmanager.${INGRESS_HOST}.nip.io
+    http:
+      paths:
+      - backend:
+          serviceName: kubecost-prometheus-alertmanager
+          servicePort: 80
+        path: /
 EOF
 ```
 

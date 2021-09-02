@@ -40,13 +40,12 @@ helm repo update
 
 ```sh
 #
+kubectl create namespace minio
+
+#
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace minio
-```
-
-```sh
 helm install minio bitnami/minio \
   --namespace minio \
   --version 7.1.3 \
@@ -77,14 +76,14 @@ kubectl rollout status deploy/minio -n minio
 ```sh
 #
 kubectl get secret \
-  --namespace minio \
+  -n minio \
   minio \
   -o jsonpath='{.data.access-key}' | \
     base64 --decode; echo
 
 #
 kubectl get secret \
-  --namespace minio \
+  -n minio \
   minio \
   -o jsonpath='{.data.secret-key}' | \
     base64 --decode; echo

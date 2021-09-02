@@ -203,10 +203,12 @@ sudo systemctl restart httpd
 
 - Option 1: Changing listen port from 80 to 8080
 - Option 2: Using setcap:
+
   ```sh
   setcap 'cap_net_bind_service=+ep' /usr/sbin/apache2
   getcap /usr/sbin/apache2
   ```
+
 <!-- - Option 3: Using security context:
   ```yaml
   securityContext:

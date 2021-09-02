@@ -12,6 +12,12 @@ grep --help
 
 ## Tips
 
+### Before and After
+
+```sh
+grep -B 10 -A 10 -i 'john doe' ./users.json
+```
+
 ### Highlight
 
 ```sh

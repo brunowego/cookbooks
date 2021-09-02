@@ -100,6 +100,10 @@ composer update
 # Without deve dependencies
 composer update --no-dev
 
+#
+composer dump-autoload \
+  --optimize
+
 # Config
 ## List Local
 composer config -l
@@ -136,6 +140,17 @@ composer archive -f zip
 ```
 
 ### Tips
+
+#### Git Attributes
+
+Add [text rules](/gitattributes.md#text)
+
+```sh
+cat << EOF >> ./.gitattributes
+composer.lock -diff
+composer.lock linguist-generated=true
+EOF
+```
 
 #### Command-line completion
 
@@ -216,7 +231,7 @@ You must enable the openssl extension in your php.ini to load information from h
 
 TODO -->
 
-####
+<!-- ####
 
 ```log
 curl error 60 while downloading https://[hostname]/packages.json: SSL certificate problem: unable to get local issuer certificate
@@ -244,7 +259,7 @@ composer config -g repo.packagist composer https://packages.example.com
     }
   ]
 }
-```
+``` -->
 
 <!-- ```sh
 sudo curl -o /etc/ssl/certs/cacert.pem https://curl.haxx.se/ca/cacert.pem

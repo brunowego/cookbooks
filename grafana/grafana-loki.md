@@ -23,12 +23,11 @@ helm repo add grafana 'https://grafana.github.io/helm-charts'
 helm repo update
 ```
 
-### Install
+### Dependencies
 
-```sh
-#
-kubectl create namespace logging
-```
+- Assuming there is already a `logging` namespace.
+
+### Install
 
 ```sh
 # Loki Stack (Loki, Promtail, Grafana)
@@ -102,8 +101,4 @@ kubectl port-forward svc/loki-grafana 3000:80 \
 ```sh
 helm uninstall loki \
   -n logging
-
-kubectl delete namespace logging \
-  --grace-period=0 \
-  --force
 ```

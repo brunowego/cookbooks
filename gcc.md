@@ -18,7 +18,8 @@ brew install gcc
 
 ```sh
 sudo apt update
-sudo apt -y install gcc libc6-dev
+sudo apt -y install gcc
+# libc6-dev
 ```
 
 #### YUM
@@ -32,7 +33,8 @@ sudo yum -y install gcc
 
 ```sh
 apk update
-apk add gcc libc-dev
+apk add gcc
+# libc-dev
 ```
 
 #### Zypper

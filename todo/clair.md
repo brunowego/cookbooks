@@ -1,7 +1,34 @@
 # Clair
 
-TODO
-
 <!--
-https://github.com/coreos/clair
+https://github.com/search?q=filename%3Aconfig.yaml+%22clair%22&type=Code
 -->
+
+## Links
+
+- [Code Repository](https://github.com/quay/clair)
+
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install clair
+```
+
+### Commands
+
+```sh
+clair -h
+```
+
+### Usage
+
+```sh
+#
+clair \
+  -conf ./clair-config.yaml \
+  -mode combo
+```

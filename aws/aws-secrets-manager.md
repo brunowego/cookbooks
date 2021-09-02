@@ -39,6 +39,13 @@ aws \
   secretsmanager get-secret-value \
     --secret-id '[secret-id]' | \
       jq -r .SecretString
+
+#
+aws \
+  --output json \
+  secretsmanager get-secret-value \
+  --secret-id '[secret-id]' \
+  --query SecretString
 ```
 
 <!-- ### Tips

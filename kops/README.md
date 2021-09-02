@@ -119,6 +119,9 @@ kops \
 
 #
 kops export kubecfg \
+  --admin
+
+kops export kubecfg \
   --admin=24h
 ```
 

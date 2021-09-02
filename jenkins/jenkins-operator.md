@@ -31,10 +31,10 @@ EOF
 )
 ```
 
-### Status
+<!-- ### Status
 
 ```sh
-kubectl rollout status deploy/logging-operator \
+kubectl rollout status deploy/jenkins-operator \
   -n jenkins-operator
 ```
 
@@ -42,10 +42,10 @@ kubectl rollout status deploy/logging-operator \
 
 ```sh
 kubectl logs \
-  -l 'app.kubernetes.io/name=logging-operator' \
+  -l 'app.kubernetes.io/name=jenkins-operator' \
   -n jenkins-operator  \
   -f
-```
+``` -->
 
 ### Secrets
 
@@ -58,7 +58,7 @@ kubectl --namespace jenkins-operator get secret jenkins-operator-credentials-jen
 ### Delete
 
 ```sh
-helm uninstall logging-operator \
+helm uninstall jenkins-operator \
   -n jenkins-operator
 
 kubectl delete namespace jenkins-operator  \

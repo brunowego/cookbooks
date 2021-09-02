@@ -33,13 +33,13 @@ metadata:
   namespace: dask
 spec:
   rules:
-    - host: jupyter.dask.${INGRESS_HOST}.nip.io
-      http:
-        paths:
-          - backend:
-              serviceName: dask-jupyter
-              servicePort: 80
-            path: /
+  - host: jupyter.dask.${INGRESS_HOST}.nip.io
+    http:
+      paths:
+      - backend:
+          serviceName: dask-jupyter
+          servicePort: 80
+        path: /
 EOF
 ```
 
@@ -52,13 +52,13 @@ metadata:
   namespace: dask
 spec:
   rules:
-    - host: dask.${INGRESS_HOST}.nip.io
-      http:
-        paths:
-          - backend:
-              serviceName: dask-scheduler
-              servicePort: 80
-            path: /
+  - host: dask.${INGRESS_HOST}.nip.io
+    http:
+      paths:
+      - backend:
+          serviceName: dask-scheduler
+          servicePort: 80
+        path: /
 EOF
 ```
 

@@ -73,6 +73,8 @@ stern -h
 ```sh
 #
 kubens '<namespace>'
+
+#
 stern '<pod-prefix>'
 
 #
