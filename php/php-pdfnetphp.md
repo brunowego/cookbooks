@@ -18,6 +18,13 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install \
   php-dev
 ```
 
+### Darwin
+
+```sh
+# WARNING: This approach is not recommended. Do it at your own risk. You have been warned.
+sudo chmod o+w -R /opt
+```
+
 ## Installation
 
 ### Unix-like
@@ -38,9 +45,25 @@ curl -L 'http://www.pdftron.com/downloads/PDFNetC64.tar.gz' | \
 echo 'extension=PDFNetPHP.so' >> "$(php -i | grep -oE /.+/php.ini)"
 ```
 
+## Composer
+
+```json
+{
+    // ...
+    "autoload": {
+        // ...
+        "files": ["/opt/PDFNetWrappers-master/PDFNetC/Lib/PDFNetPHP.php"]
+    },
+    // ...
+}
+```
+
 ## Verify
 
 ```sh
+#
+php -r 'var_dump(extension_loaded("PDFNetPHP"));'
+
 #
 php -m | grep PDFNetPHP
 

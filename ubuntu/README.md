@@ -17,16 +17,38 @@
 ### Download
 
 ```sh
-#
+# Ubuntu Desktop 20.04.3
 axel -kn 32 'https://ubuntu.itsbrasil.net/ubuntu-releases/20.04.3/ubuntu-20.04.3-desktop-amd64.iso'
 
-# https://releases.ubuntu.com/20.04/SHA256SUMS
-shasum -a 256 ./ubuntu-20.04.3-desktop-amd64.iso
+echo '5fdebc435ded46ae99136ca875afc6f05bde217be7dd018e1841924f71db46b5 *ubuntu-20.04.3-desktop-amd64.iso' | \
+  shasum -a 256 --check
 ```
 
 ### Bootable USB
 
 - [balenaEtcher](/balenaetcher.md)
+
+### Partition
+
+| Type |  Mount  |  Size  |
+| ---- | ------- | ------ |
+| efi  |         | 650 MB |
+| swap |         | 20 GB  |
+| ext4 | `/`     | 40 GB  |
+| ext2 | `/boot` | 300 MB |
+| ext4 | `/home` | 50 GB  |
+
+<!-- ```sh
+#
+diskutil list
+
+#
+sudo dd \
+  if=ubuntu-20.04.3-desktop-amd64.iso \
+  of=/dev/disk4 \
+  bs=1M \
+  status=progress
+``` -->
 
 ## Docker
 
@@ -78,6 +100,16 @@ docker rm -f ubuntu
 
 ```sh
 sudo update-alternatives --config editor
+```
+
+### Do nothing when close laptop lid
+
+```sh
+#
+sudo sed -i 's/^#HandleLidSwitch=suspend/HandleLidSwitch=ignore/g' /etc/systemd/logind.conf
+
+#
+sudo reboot
 ```
 
 ### Create a bootable USB stick

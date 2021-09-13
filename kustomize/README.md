@@ -1,6 +1,7 @@
 # Kustomize
 
 <!--
+https://github.com/L-U-C-K-Y/kustomize-with-multiple-envs
 https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
 -->
 

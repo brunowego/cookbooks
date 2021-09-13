@@ -4,6 +4,10 @@
 https://github.com/githubpartners/github-azure-microservices-blueprint
 -->
 
+## Links
+
+- [Code Repository](https://github.com/Azure/azure-cli)
+
 ## References
 
 - [Azure regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
@@ -24,46 +28,41 @@ brew install azure-cli
 az -h
 ```
 
-### Examples
-
-#### Login
+### Usage
 
 ```sh
+# Login
 az login
-```
 
-#### Service Principal
-
-```sh
+# Service Principal
 az ad sp create-for-rbac \
   --role='Contributor' \
   --scopes="/subscriptions/$(az account list | jq -r '.[] | select (.isDefault == true).id')" | \
     jq
-```
 
-```sh
+#
 az login \
   --service-principal \
   -u [appId] \
   -p [password] \
   --tenant [tenant] | \
     jq
-```
 
-####
-
-```sh
+#
 az group create \
   --name 'ExampleDevResourceGroup' \
   --location 'eastus'
-```
 
-```sh
+#
 az group list -o table
 ```
 
 ### Uninstall
 
 ```sh
+#
+brew uninstall azure-cli
+
+#
 rm -fR ~/.azure
 ```

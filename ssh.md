@@ -24,6 +24,16 @@ ssh \
 
 ### Tips
 
+#### Remove Host Key
+
+```sh
+#
+ssh-keygen -R [hostname]
+
+#
+sed -i '6d' ~/.ssh/known_hosts
+```
+
 #### Visual Studio Code
 
 ```sh

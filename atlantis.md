@@ -50,7 +50,7 @@ Terragrunt
 ### Configuration
 
 ```sh
-cat << EOF > ./atlantis.yaml
+cat << EOF > ./atlantis.yml
 version: 3
 
 projects:

@@ -187,6 +187,18 @@ sudo hostess add kafka 127.0.0.1
 
 [Disable IPv6](/ipv6.md#disable) support.
 
+## Kubectl
+
+### Running
+
+```sh
+kubectl run -it --rm \
+  kafkacat \
+  --image docker.io/confluentinc/cp-kafkacat:6.2.0 \
+  --restart 'Never' \
+  -- kafkacat -h
+```
+
 ## Docker
 
 ### Network

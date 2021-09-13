@@ -1,5 +1,9 @@
 # Docker
 
+<!--
+./.docker
+-->
+
 ## Alternatives
 
 - OpenVZ

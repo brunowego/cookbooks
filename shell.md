@@ -65,8 +65,6 @@ EOF
 for ((i=100; i<200; i+=1)); do nmap -p 22 "sub$i.example.com"; done
 ``` -->
 
-## Tips
-
 ### Server Status Using Shell Script
 
 ```sh

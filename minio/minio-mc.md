@@ -41,6 +41,18 @@ mc --insecure alias set minio https://${MINIO_SERVICE_HOST}:${MINIO_SERVICE_PORT
 mc --insecure cp report-${HOSTNAME}.html minio/artillery
 -->
 
+## Kubectl
+
+### Running
+
+```sh
+kubectl run -it --rm \
+  minio-mc \
+  --image docker.io/minio/mc:RELEASE.2019-05-23T01-33-27Z \
+  --restart 'Never' \
+  -- -h
+```
+
 ## Docker
 
 ### Network
@@ -56,5 +68,5 @@ docker network create workbench \
 docker run -i --rm \
   $(echo "$DOCKER_RUN_OPTS") \
   --network workbench \
-  docler.io/minio/mc:RELEASE.2019-05-23T01-33-27Z -h
+  docker.io/minio/mc:RELEASE.2019-05-23T01-33-27Z -h
 ```

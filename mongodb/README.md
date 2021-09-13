@@ -118,7 +118,7 @@ docker volume rm \
 ### Manifest
 
 ```yaml
-version: '3.7'
+version: '3.9'
 
 services:
   mongodb:

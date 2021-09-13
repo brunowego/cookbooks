@@ -7,3 +7,10 @@
 ```sh
 ldd
 ```
+
+### Usage
+
+```sh
+#
+ldd [binary]
+```

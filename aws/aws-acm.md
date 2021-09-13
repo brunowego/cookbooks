@@ -2,7 +2,7 @@
 
 ## Links
 
-- [AWS Console](https://console.aws.amazon.com/acm/home?region=us-east-1#/)
+- [AWS Console / ACM / Certificates](https://console.aws.amazon.com/acm/home?region=us-east-1#/)
 
 ## CLI
 
@@ -10,4 +10,17 @@
 
 ```sh
 aws acm help
+```
+
+### Usage
+
+```sh
+#
+aws \
+  --output table \
+  acm list-certificates
+
+#
+aws acm describe-certificate \
+  --certificate-arn [arn]
 ```

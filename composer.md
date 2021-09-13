@@ -2,6 +2,7 @@
 
 <!--
 https://typo3.org/article/certificate-issue-with-composer/
+https://github.com/settings/tokens/new?scopes=repo&description=Composer+on+ally.macbook.pro+2021-09-02+1846
 -->
 
 ## CLI
@@ -146,10 +147,7 @@ composer archive -f zip
 Add [text rules](/gitattributes.md#text)
 
 ```sh
-cat << EOF >> ./.gitattributes
-composer.lock -diff
-composer.lock linguist-generated=true
-EOF
+echo 'composer.lock export-ignore' >> ./.gitattributes
 ```
 
 #### Command-line completion

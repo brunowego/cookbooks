@@ -1,5 +1,28 @@
 # Alternatives
 
+## Project Management
+
+- [Trello](https://trello.com)
+- [Jira](https://atlassian.com/software/jira)
+
+## Monitoring
+
+- [Sentry](https://sentry.io)
+
+## Landscapes
+
+- [CNCF Cloud Native Interactive Landscape](https://landscape.cncf.io/)
+- [Service Mesh Landscape](https://layer5.io/landscape/)
+
+## Code Review
+
+- [Codacy](https://www.codacy.com/)
+
+## Dependency Management
+
+- [Sonatype DepShield](https://community.sonatype.com/c/depshield)
+- [Snyk](https://snyk.io/)
+
 ## Code Secrets
 
 <!--
@@ -84,3 +107,42 @@ https://gitguardian.com/
 - [Kubespray](/kubespray.md)
 - [OpenShift](/openshift.md)
 - [Rancher](/rancher.md)
+
+## Static-Site Generator
+
+- [Gatsby](/gatsby.md)
+- [Hugo](/hugo.md)
+- [Jekyll](/jekyll.md)
+
+## MySQL Engines
+
+- AWS Aurora
+- MySQL InnoDB
+- MySQL Cluster (NDB)
+- Percona MyRocks
+- Percona TokuDB
+- Facebook RocksDB
+
+## Golang Frameworks
+
+- [Beego](https://github.com/beego/beego)
+- [echo](https://github.com/labstack/echo)
+- [Fiber](https://github.com/gofiber/fiber)
+- [Gin](/gin.md)
+- [Go Micro](https://github.com/asim/go-micro)
+- [Iris](https://github.com/kataras/iris)
+
+## Golang Debugger
+
+- [Delve](/delve.md)
+- [GNU Debugger (GDB)](/gnu-gdb.md)
+
+## Data Collection
+
+- Fluentd
+- Logstash
+
+## Log Processor
+
+- Fluent Bit
+- Filebeat

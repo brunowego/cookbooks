@@ -1,6 +1,8 @@
 # Rust
 
 <!--
+https://github.com/codelabsab/foodify
+
 https://linkedin.com/learning/rust-essential-training/learn-rust-programming
 
 https://github.com/pat-St/cms-container/tree/master

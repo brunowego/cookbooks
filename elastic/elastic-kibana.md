@@ -92,3 +92,66 @@ sed -i 's/^#server.host: .*/server.host: "127.0.0.1"/' /etc/kibana/kibana.yml
 ```sh
 sudo systemctl enable --now kibana
 ```
+
+## Helm
+
+### References
+
+- [Configuration](https://github.com/elastic/helm-charts/tree/master/kibana#configuration)
+
+### Repository
+
+```sh
+helm repo add elastic 'https://helm.elastic.co'
+helm repo update
+```
+
+### Dependencies
+
+- Assuming there is already a `elastic` namespace.
+
+### Install
+
+```sh
+#
+export INGRESS_HOST='127.0.0.1'
+
+#
+helm install kibana elastic/kibana \
+  --namespace elastic \
+  --version 7.14.0 \
+  -f <(cat << EOF
+ingress:
+  enabled: true
+  hosts:
+  - host: kibana.${INGRESS_HOST}.nip.io
+    paths:
+    - path: /
+EOF
+)
+```
+
+> Wait! This process take a while.
+
+### Status
+
+```sh
+kubectl rollout status deploy/kibana-kibana \
+  -n elastic
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'release=kibana' \
+  -n elastic \
+  -f
+```
+
+### Delete
+
+```sh
+helm uninstall kibana \
+  -n elastic
+```

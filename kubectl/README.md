@@ -120,6 +120,14 @@ kubectl delete secret [secret-name] -n [namespace]
 
 ### Tips
 
+#### Autocomplete
+
+```sh
+# Kubernetes Control (kubectl)
+command -v kubectl > /dev/null && source <(kubectl completion zsh)
+alias k=kubectl
+```
+
 #### Get Cluster Server URL
 
 ```sh
@@ -496,6 +504,20 @@ kubectl rollout restart deployment \
 
 ### Issues
 
+### Skip Insecure TLS Verify
+
+```log
+Unable to connect to the server: x509: certificate is valid for 10.96.0.1, 172.18.0.3, 0.0.0.0, not 192.168.0.100
+```
+
+```sh
+#
+kubectl get pods -A --insecure-skip-tls-verify
+
+#
+kubectl config set-cluster "$(kubectl config current-context)" --insecure-skip-tls-verify=true
+```
+
 <!-- ####
 
 ```log
@@ -579,9 +601,15 @@ kubectl patch deploy "$POD_NAME" --type='json' -p '[{"op":"remove","path":"/spec
 <!-- ###
 
 ```sh
-kubectl config set-cluster --certificate-authority=certificate-authority-data --embed-certs=true --server='https://myk8sclust-myresourcegroup-7c08a0mgmt.westeurope.cloudapp.azure.com' azure
+kubectl config set-cluster \
+  --certificate-authority=certificate-authority-data \
+  --embed-certs=true \
+  --server='https://myk8sclust-myresourcegroup-7c08a0mgmt.westeurope.cloudapp.azure.com' azure
 
-kubectl config set-credentials azure --client-certificate=client-certificate-data --client-key=client-key-data --embed-certs=true
+kubectl config set-credentials azure \
+  --client-certificate=client-certificate-data \
+  --client-key=client-key-data \
+  --embed-certs=true
 
 kubectl config set-context \
   --cluster=azure \
@@ -615,15 +643,6 @@ kubectl exec -it \
   -n [namespace] \
   -- /bin/sh
 ```
-
-<!--
-kubectl config set-cluster asdf.com --insecure-skip-tls-verify=true
-
-kubectl port-forward \
-  --namespace keycloak \
-  svc/keycloak-postgresql \
-  5432:5432
--->
 
 ## Docker
 

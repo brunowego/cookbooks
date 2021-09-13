@@ -44,7 +44,13 @@ https://example.com/checkout/61429801/review_order
 https://example.com/checkout/61429801/payment_method
 ```
 
-##
+## Naming Convention
+
+```txt
+logo-[name]-[color]-[hash].svg
+```
+
+## Mail
 
 ```txt
 Welcome Back to Envato

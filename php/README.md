@@ -199,6 +199,19 @@ docker run -d \
 
 ## Tips
 
+### Show Loaded Extensions
+
+```sh
+#
+php -r 'print_r(get_loaded_extensions());'
+
+#
+php -r 'var_dump(extension_loaded('json'));'
+
+#
+php -m
+```
+
 ### Show All PHP Errors
 
 ```php

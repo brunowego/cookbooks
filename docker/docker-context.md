@@ -18,42 +18,39 @@ docker version
 docker context --help
 ```
 
-## Configuration
-
-```sh
-#
-docker context ls
-
-#
-docker context create \
-  --docker 'host=ssh://[username]@[hostname]' \
-  --description 'Remote Docker engine' \
-  [my-remote-docker-engine]
-
-#
-docker context use [my-remote-engine]
-
-# or, using environment variable
-export DOCKER_HOST='ssh://[username]@[hostname]'
-
-#
-docker info
-```
-
 ## Usage
+
+| Target Environment | Context Name |         API Endpoint          |
+| ------------------ | ------------ | ----------------------------- |
+| Local Host         | `default`    | `unix:///var/run/docker.sock` |
+| Remote Host        | `remote`     | `ssh://user@remotemachine`    |
+| Docker-in-Docker   | `dind`       | `tcp://127.0.0.1:2375`        |
 
 ```sh
 # List
 docker context ls
 
+# Create Context
+docker context create \
+  --docker 'host=ssh://brunowego@192.168.0.71' \
+  --kubernetes config-file="$HOME/.kube/config" \
+  --description 'Arck Docker Engine' \
+  arck
+
+docker context export arck --kubeconfig
+
 # Use
 docker context use default
+docker context use [my-remote]
+
+# or, using environment variable
+export DOCKER_HOST='ssh://[username]@[hostname]'
 
 # Info
 docker info
 
 # Remove
-docker context rm [my-remote-engine]
+docker context rm [my-remote]
 ```
 
 ## Issues

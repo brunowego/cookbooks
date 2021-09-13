@@ -10,7 +10,7 @@
 type(category): description [flags]
 ```
 
-### Allowed <type> values
+### Allowed `<type>` values
 
 - breaking
 - build
@@ -26,7 +26,7 @@ type(category): description [flags]
 - style
 - test
 
-### Example <scope> values
+### Example `<scope>` values
 
 - init
 - runner

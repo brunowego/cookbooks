@@ -10,6 +10,13 @@
 brew install ssh-copy-id
 ```
 
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install openssh-client
+```
+
 #### YUM
 
 ```sh

@@ -87,6 +87,8 @@ metadata:
   name: my-app
 spec:
   backendType: secretsManager
+  dataFrom:
+  - /my-app/prd/secrets
   data:
   - key: /my-app/prd/secrets
     name: APP_PASSWORD
@@ -120,6 +122,21 @@ ERROR, Invalid name. Must be a valid name containing alphanumeric characters, or
 ```
 
 TODO -->
+
+<!-- ### Tips
+
+####
+
+```sh
+#
+kubectl rollout restart deployment kubernetes-external-secrets \
+  -n kube-system
+
+#
+kubectl get pods \
+  -l app.kubernetes.io/name=kubernetes-external-secrets \
+  -n kube-system
+``` -->
 
 ### Issues
 

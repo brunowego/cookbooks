@@ -68,7 +68,17 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status deploy/minio -n minio
+kubectl rollout status deploy/minio \
+  -n minio
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app.kubernetes.io/instance=minio' \
+  -n minio \
+  -f
 ```
 
 ### Secrets

@@ -71,6 +71,20 @@ npm pack
 
 ### Tips
 
+#### Run Commands
+
+```sh
+cat << EOF >> ./.npmrc
+save-prefix = ~
+EOF
+```
+
+#### Update Only Package Lock
+
+```sh
+npm i --package-lock-only
+```
+
 #### Command-line completion
 
 ```sh

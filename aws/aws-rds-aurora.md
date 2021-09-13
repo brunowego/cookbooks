@@ -1,8 +1,10 @@
-# AWS Aurora
+# AWS RDS Aurora
 
 **Keywords:** Relational DB
 
 <!--
+https://www.stefanproell.at/posts/2020-08-18-ubuntu20-04-01-mysql5.6/
+
 https://app.pluralsight.com/library/courses/amazon-aurora-best-practices/table-of-contents
 https://app.pluralsight.com/library/courses/administering-amazon-aurora-amazon-rds/table-of-contents
 https://app.pluralsight.com/library/courses/querying-data-aws-databases/table-of-contents
@@ -18,6 +20,10 @@ Amazon Aurora Serverless
 
 - MySQL
 - PostgreSQL
+
+## Links
+
+- [Main Website](https://aws.amazon.com/rds/aurora/)
 
 ## Guides
 

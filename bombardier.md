@@ -9,11 +9,8 @@
 ```sh
 curl \
   -L 'https://github.com/codesenberg/bombardier/releases/download/v1.2.4/bombardier-darwin-amd64' \
-  -o /usr/local/bin/bombardier
-```
-
-```sh
-chmod +x /usr/local/bin/bombardier
+  -o /usr/local/bin/bombardier && \
+    chmod +x /usr/local/bin/bombardier
 ```
 
 #### Linux Binary
@@ -21,11 +18,8 @@ chmod +x /usr/local/bin/bombardier
 ```sh
 curl \
   -L 'https://github.com/codesenberg/bombardier/releases/download/v1.2.4/bombardier-linux-amd64' \
-  -o /usr/local/bin/bombardier
-```
-
-```sh
-chmod +x /usr/local/bin/bombardier
+  -o /usr/local/bin/bombardier && \
+    chmod +x /usr/local/bin/bombardier
 ```
 
 ### Commands

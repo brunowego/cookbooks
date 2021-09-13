@@ -14,10 +14,10 @@ phpbrew -d ext install \
 ## Verify
 
 ```sh
+#
 php -m | grep exif
-```
 
-```sh
+#
 php -i | grep '^exif$' -A 6
 ```
 

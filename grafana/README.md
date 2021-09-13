@@ -160,6 +160,9 @@ ingress:
   enabled: true
   hosts:
   - grafana.${INGRESS_HOST}.nip.io
+
+plugins:
+- grafana-piechart-panel
 EOF
 )
 ```
@@ -178,20 +181,6 @@ kubectl logs \
   -l 'app.kubernetes.io/instance=grafana' \
   -n grafana \
   -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 grafana.grafana.svc.cluster.local +short
-nslookup grafana.grafana.svc.cluster.local 10.96.0.10
-```
-
-#### ExternalDNS
-
-```sh
-dig @10.96.0.10 "grafana.${INGRESS_HOST}.nip.io" +short
-nslookup "grafana.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret

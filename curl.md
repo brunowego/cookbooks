@@ -146,6 +146,14 @@ curl -s https://[hostname]; echo
 
 ### Tips
 
+### Progress Bar
+
+```sh
+curl \
+  -# \
+  # ...
+```
+
 #### Binary Download
 
 ```sh

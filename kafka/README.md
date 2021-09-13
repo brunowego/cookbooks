@@ -1,8 +1,6 @@
 # Apache Kafka
 
 <!--
-https://artifacthub.io/packages/helm/bitnami/kafka
-
 https://medium.com/@sannidhi.s.t/dead-letter-queues-dlqs-in-kafka-afb4b6835309
 
 https://app.pluralsight.com/library/courses/securing-kafka-cluster/table-of-contents
@@ -66,12 +64,12 @@ queuing.payments
 
 ### References
 
-- [Installing the Chart](https://github.com/helm/charts/tree/master/incubator/kafka#installing-the-chart)
+- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/kafka#parameters)
 
 ### Repository
 
 ```sh
-helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
 helm repo update
 ```
 
@@ -82,53 +80,25 @@ kubectl create namespace kafka
 ```
 
 ```sh
-helm install kafka incubator/kafka \
+helm install kafka bitnami/kafka \
   --namespace kafka \
-  --set external.enabled=true \
-  --set external.type=ClusterIP
-```
-
-### NGINX Ingress
-
-```sh
-# Helm
-helm upgrade nginx-ingress stable/nginx-ingress -f <(yq w <(helm get values nginx-ingress) tcp.9092 kafka/kafka:9092)
-
-## Delete
-# TODO
-
-# Minikube
-kubectl patch configmap tcp-services \
-  -p '{"data":{"9092":"kafka/kafka:9092"}}' \
-  -n kube-system
-
-kubectl patch deployment nginx-ingress-controller \
-  --type 'json' \
-  -p '[{"op": "add", "path": "/spec/template/spec/containers/0/ports", "value": [{"hostPort": 9092, "containerPort": 9092}]}]' \
-  -n kube-system
-
-## Delete
-kubectl patch configmap tcp-services \
-  --type 'json' \
-  -p '[{"op": "remove", "path": "/data/9092"}]' \
-  -n kube-system
-
-kubectl patch deployment nginx-ingress-controller \
-  --type 'json' \
-  -p '[{"op": "remove", "path": "/spec/template/spec/containers/0/ports", "value": [{"hostPort": 9092, "containerPort": 9092}]}]' \
-  -n kube-system
+  --version 14.1.0
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status statefulset kafka-zookeeper -n kafka
+kubectl rollout status statefulset kafka \
+  -n kafka
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app.kubernetes.io/name=kafka' -n kafka -f
+kubectl logs \
+  -l 'app.kubernetes.io/instance=kafka' \
+  -n kafka \
+  -f
 ```
 
 ### DNS
@@ -141,8 +111,12 @@ nslookup kafka.kafka.svc.cluster.local 10.96.0.10
 ### Delete
 
 ```sh
-helm uninstall kafka -n kafka
-kubectl delete namespace kafka --grace-period=0 --force
+helm uninstall kafka \
+  -n kafka
+
+kubectl delete namespace kafka \
+  --grace-period=0 \
+  --force
 ```
 
 ## Docker

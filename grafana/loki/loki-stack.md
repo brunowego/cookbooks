@@ -1,4 +1,4 @@
-# Grafana Loki
+# Grafana Loki Stack
 
 <!--
 https://grafana.github.io/loki/charts/
@@ -8,6 +8,7 @@ helm3 upgrade --install loki -n logging --create-namespace grafana/loki-stack --
 
 ## Links
 
+- [Code Repository](https://github.com/grafana/helm-charts/tree/main/charts/loki-stack)
 - [Main Website](https://grafana.com/oss/loki/)
 
 ## Helm
@@ -31,7 +32,7 @@ helm repo update
 
 ```sh
 # Loki Stack (Loki, Promtail, Grafana)
-helm install loki grafana/loki-stack \
+helm install loki-stack grafana/loki-stack \
   --namespace logging \
   --version 2.4.1 \
   -f <(cat << EOF
@@ -41,7 +42,7 @@ EOF
 )
 
 # Loki, Fluent Bit, Grafana
-helm install loki grafana/loki-stack \
+helm install loki-stack grafana/loki-stack \
   --namespace logging \
   --version 2.4.1 \
   -f <(cat << EOF
@@ -99,6 +100,6 @@ kubectl port-forward svc/loki-grafana 3000:80 \
 ### Delete
 
 ```sh
-helm uninstall loki \
+helm uninstall loki-stack \
   -n logging
 ```

@@ -52,3 +52,12 @@ eval "$(direnv hook zsh)"
 #
 direnv reload
 ```
+
+### Tips
+
+#### Autocomplete
+
+```sh
+# direnv
+command -v direnv > /dev/null && eval "$(direnv hook zsh)"
+```

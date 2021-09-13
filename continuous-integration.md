@@ -11,6 +11,7 @@ https://linkedin.com/learning/continuous-integration-tools/building-your-ci-cd-p
 - [Jenkins](/jenkins.md)
 - [TeamCity](https://jetbrains.com/teamcity/)
 - [Travis CI](https://travis-ci.com/)
+- [Semaphore](https://semaphoreci.com/)
 
 <!--
 - [AWS CodeDeploy](/aws/aws-codedeploy.md)

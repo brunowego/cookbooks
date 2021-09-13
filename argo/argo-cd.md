@@ -22,6 +22,7 @@ https://www.udemy.com/course/hands-on-guide-to-argo-workflows-on-kubernetes/
 
 - [Status Badge](https://argoproj.github.io/argo-cd/user-guide/status-badge/)
 - [Git Webhook Configuration](https://argoproj.github.io/argo-cd/operator-manual/webhook/)
+- [Ingress Configuration](https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/ingress.md)
 
 ## Kubernetes Manifest
 
@@ -73,58 +74,90 @@ kubectl delete namespace argo
 
 ### References
 
-- [Ingress Configuration](https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/ingress.md)
+- [Values](https://github.com/argoproj/argo-helm/tree/master/charts/argo-cd#chart-values)
 
 ### Dependencies
 
 - [NGINX Ingress](/nginx-ingress.md)
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
 
 ### Repository
 
 ```sh
-helm repo add argo https://argoproj.github.io/argo-helm
+helm repo add argo 'https://argoproj.github.io/argo-helm'
 helm repo update
 ```
 
 ### Install
 
 ```sh
+#
 kubectl create namespace argo-cd
+
+#
+export INGRESS_HOST='127.0.0.1'
+
+#
+helm upgrade argo-cd argo/argo-cd \
+  --namespace argo-cd \
+  --version 3.17.6 \
+  -f <(cat << EOF
+server:
+  extraArgs:
+  - --insecure
+
+  ingress:
+    enabled: true
+    hosts:
+    - argocd.${INGRESS_HOST}.nip.io
+EOF
+)
 ```
 
+<!-- ####
+
+- [Kubernetes TLS Secret](/k8s-tls-secret.md)
+
 ```sh
+#
 kubectl create secret tls example.tls-secret \
   --cert='/etc/ssl/certs/example/root-ca.crt' \
   --key='/etc/ssl/private/example/root-ca.key' \
   -n argo-cd
-```
 
-```sh
-helm install argo-cd argo/argo-cd \
-  --namespace argo-cd \
-  --set ingress.enabled=true \
   --set ingress.annotations."kubernetes\.io/ingress\.class"=nginx \
   --set-string ingress.annotations."nginx\.ingress\.kubernetes\.io/force-ssl-redirect"=true \
   --set ingress.annotations."nginx\.ingress\.kubernetes\.io/backend-protocol"='HTTPS' \
-  --set ingress.hosts={argocd.${INGRESS_HOST}.nip.io}
-```
 
-```sh
+#
 kubectl patch ingress argocd-server \
   -p '{"spec":{"tls":[{"hosts":["argocd.${INGRESS_HOST}.nip.io"],"secretName":"example.tls-secret"}]}}' \
   -n argo-cd
-```
+``` -->
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/argocd-server -n argo-cd
+kubectl rollout status deploy/argo-cd-argocd-server \
+  -n argo-cd
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app.kubernetes.io/instance=argo-cd' \
+  -n argo-cd \
+  -f
 ```
 
 ### Secrets
 
 ```sh
+kubectl get secret argocd-initial-admin-secret \
+  -o jsonpath='{.data.password}' \
+  -n argo-cd | \
+    base64 -d; echo
+
 kubectl patch secret argocd-secret \
   -p '{"stringData":{"admin.password":"'$(htpasswd -bnBC 10 "" PaSSw0rd! | tr -d ':\n')'"}}' \
   -n argo-cd
@@ -133,10 +166,16 @@ kubectl patch secret argocd-secret \
 ### Delete
 
 ```sh
-helm uninstall argo-cd -n argo-cd
-kubectl delete namespace argo-cd --grace-period=0 --force
+helm uninstall argo-cd \
+  -n argo-cd
 
-kubectl get crd -o json | jq -r '.items[] | select(.spec.group | contains("argoproj.io")) | .metadata.name' | xargs -n 1 kubectl delete crd
+kubectl delete namespace argo-cd \
+  --grace-period=0 \
+  --force
+
+kubectl get crd -o json | \
+  jq -r '.items[] | select(.spec.group | contains("argoproj.io")) | .metadata.name' | \
+    xargs -n 1 kubectl delete crd
 ```
 
 ## CLI

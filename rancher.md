@@ -7,6 +7,7 @@
 
 ## Links
 
+- [Code Repository](https://github.com/rancher/rancher)
 - [Code Repository - CLI](https://github.com/rancher/cli)
 
 ## Helm

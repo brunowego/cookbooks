@@ -6,6 +6,10 @@ https://linkedin.com/learning/python-essential-training-2018/welcome
 https://linkedin.com/learning/data-science-foundations-data-mining-in-python/python-for-data-mining
 -->
 
+## Links
+
+- [Python Cheat-Sheet](https://github.com/gto76/python-cheatsheet)
+
 ## Version
 
 - [Python 2.x](/python/python2.md)

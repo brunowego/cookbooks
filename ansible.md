@@ -6,13 +6,11 @@ https://app.pluralsight.com/paths/skill/configuration-management-using-ansible-o
 https://app.pluralsight.com/library/courses/automating-networks-ansible-right-way/table-of-contents
 https://app.pluralsight.com/library/courses/docker-ansible-continuous-delivery/table-of-contents
 
-
 https://linkedin.com/learning/learning-ansible-2/starting-your-ansible-journey
 https://linkedin.com/learning/ansible-essential-training/welcome
 https://linkedin.com/learning/red-hat-certified-engineer-ex294-cert-prep-1-foundations-of-ansible/prepare-for-the-rhce-ex294-certification
 https://linkedin.com/learning/red-hat-certified-engineer-ex294-cert-prep-2-using-ansible-playbooks/introduction
 https://linkedin.com/learning/red-hat-certified-engineer-ex294-cert-prep-3-managing-systems-with-ansible/introduction
-
 
 Version v2.6.0
 Version v2.10.8

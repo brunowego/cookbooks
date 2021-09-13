@@ -117,17 +117,23 @@ prometheus.io/port: "10254"
 
 ### Issues
 
-<!-- ####
+#### Entity Too Large
 
 ```log
 413 Request Entity Too Large
 ```
 
 ```sh
-kubectl patch ingress/sentry \
-  -n sentry \
+kubectl patch ingress/[name] \
+  -n [namespace] \
   -p '{"metadata":{"annotations":{"nginx.ingress.kubernetes.io/proxy-body-size":"32m"}}}'
-``` -->
+```
+
+<!--
+kubectl patch ingress/[name] \
+  -n [namespace] \
+  -p '{"metadata":{"annotations":{"nginx.ingress.kubernetes.io/client_max_body_size":"32m"}}}'
+-->
 
 #### Failed Calling Webhook
 
@@ -178,11 +184,9 @@ helm repo update
 ### Install
 
 ```sh
-#
-kubectl create namespace ingress-nginx
-
 # Kubernetes in Docker (kind)
 helm install ingress-controller ingress-nginx/ingress-nginx \
+  --create-namespace \
   --namespace ingress-nginx \
   --version 3.35.0 \
   -f <(cat << EOF

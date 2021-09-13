@@ -18,6 +18,8 @@ Version 1.21.0
 
 datastore
 dataeng
+
+./.k8s
 -->
 
 ## References

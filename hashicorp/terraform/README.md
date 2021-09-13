@@ -54,6 +54,8 @@ provider
 data
 resource
 output
+
+./.terraform
 -->
 
 **Keywords:** Infrastructure as Code, Infrastructure Provisioning
@@ -275,6 +277,16 @@ terraform logout
 ```sh
 TF_LOG=trace \
   terraform [command]
+```
+
+#### Environment Variables
+
+```sh
+export TF_VAR_region=us-west-1
+export TF_VAR_ami=ami-049d8641
+export TF_VAR_alist='[1,2,3]'
+export TF_VAR_amap='{ foo = "bar", baz = "qux" }'
+
 ```
 
 #### Generate Graphing

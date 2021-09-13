@@ -77,6 +77,8 @@ cat << EOF | kind create cluster \
   --config -
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
+networking:
+  apiServerAddress: 0.0.0.0
 nodes:
 - role: control-plane
   kubeadmConfigPatches:
@@ -99,6 +101,17 @@ EOF
 ```
 
 > More than one control-plane kind will automatically add a load-balancer.
+
+### External Docker
+
+```sh
+#
+sed -i "s/0.0.0.0/$(docker context inspect --format '{{lower .Endpoints.docker.Host}}' | awk -F@ '{print $2}')/" ~/.kube/config
+
+#
+kubectl config set-cluster "$(kubectl config current-context)" \
+  --insecure-skip-tls-verify=true
+```
 
 ### Bootstrap
 

@@ -43,8 +43,7 @@ sudo apk add protobuf
 ```sh
 code \
   --install-extension zxh404.vscode-proto3 \
-  --install-extension ripwu.protobuf-helper \
-  --install-extension plex.vscode-protolint
+  --install-extension ripwu.protobuf-helper
 ```
 
 ## Protocol Compiler

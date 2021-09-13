@@ -55,7 +55,7 @@ symfony -h
 
 ```sh
 #
-symfony new [name] && cd "$_"
+symfony new --version=lts [name] && cd "$_"
 
 #
 symfony server:ca:install
@@ -66,6 +66,34 @@ symfony server:start --no-tls
 
 #
 symfony check:security
+
+#
+php bin/console secrets:generate-keys
+```
+
+### Tips
+
+#### Migrations
+
+**Bundles:** [DoctrineMigrationsBundle](https://symfony.com/bundles/DoctrineMigrationsBundle/current/index.html)
+
+```sh
+#
+php bin/console doctrine:migrations:list
+
+#
+php bin/console doctrine:migrations:status
+
+#
+php bin/console doctrine:migrations:migrate
+```
+
+#### Git Attributes
+
+Add [text rules](/gitattributes.md#text)
+
+```sh
+echo 'symfony.lock export-ignore' >> ./.gitattributes
 ```
 
 ### Issues

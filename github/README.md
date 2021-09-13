@@ -29,6 +29,10 @@ https://media-exp1.licdn.com/dms/image/sync/C4E27AQFXhz19BLKTlg/articleshare-shr
 - [GitHub social previews](https://mugshotbot.com/github)
 - [PullApprove](https://pullapprove.com/)
 
+## Settings
+
+- [Theme preferences](https://github.com/settings/appearance)
+
 ## Search
 
 ```txt
@@ -79,6 +83,12 @@ gh repo create \
 ```
 
 ## Tips
+
+### Automatically Delete Branches
+
+1. Repository -> Settings Tab
+2. Options Menu
+3. Merge button Section -> Automatically delete head branches
 
 ### Dependabot
 

@@ -3,6 +3,9 @@
 Efficient compilation, Efficient execution and Ease of programming.
 
 <!--
+Viper
+Logrus
+
 https://go-zero.dev/en/
 
 https://github.com/nikolaydubina/go-recipes
@@ -31,7 +34,6 @@ https://app.pluralsight.com/library/courses/go-object-oriented-programming/
 https://app.pluralsight.com/library/courses/go-horizontal-scaling-apps/
 https://app.pluralsight.com/library/courses/creating-web-applications-go-update/
 https://app.pluralsight.com/library/courses/go-build-distributed-applications/
-https://app.pluralsight.com/library/courses/exploring-go-modules/
 https://app.pluralsight.com/library/courses/code-school-on-track-with-golang/
 https://app.pluralsight.com/library/courses/grpc-enhancing-application-communication/
 
@@ -63,10 +65,17 @@ https://app.pluralsight.com/guides/static-code-analysis-with-go-and-sonarqube
 - [go.dev](https://go.dev/)
 - [Learn Web Programming in Go by Examples](https://gowebexamples.com/)
 - [Go go-to guide](https://yourbasic.org/golang/)
+- [Golang Cheat-Sheet](https://github.com/a8m/go-lang-cheat-sheet)
 
 ## Libraries
 
 - [sprig - Useful template functions for Go templates](https://masterminds.github.io/sprig/date.html)
+
+## Terms
+
+- GOOS
+- GOARCH
+- CGO
 
 ## Docker
 
@@ -148,13 +157,23 @@ go env
 
 # List installed packages
 go list '...'
+
+#
+go tool dist list
 ```
 
-<!--
-go mod download
--->
-
 ### Tips
+
+#### EditorConfig
+
+```sh
+cat << EOF >> ./.editorconfig
+
+[*.{go,mod}]
+indent_size = 8
+indent_style = tab
+EOF
+```
 
 #### Go Debug
 
@@ -178,8 +197,19 @@ GOARCH arm -->
 CGO_ENABLED=0 \
 GOOS=linux \
 GOARCH=amd64 \
-  go build \
-  # ...
+  go build -o [binary]
+```
+
+#### Linking
+
+```sh
+# Static
+CGO_ENABLED=0 go build -o [binary]
+ldd [binary]
+
+# Dynamic
+CGO_ENABLED=1 go build -o [binary]
+ldd [binary]
 ```
 
 #### Command-line completion

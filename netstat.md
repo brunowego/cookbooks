@@ -5,5 +5,9 @@
 ### Commands
 
 ```sh
+#
 netstat -nr
+
+#
+netstat -tunapl
 ```

@@ -63,7 +63,7 @@ act -l
 
 act \
   -l \
-  -W ./.github/workflows/[name].yaml
+  -W ./.github/workflows/[name].yml
 
 #
 act -g
@@ -86,7 +86,7 @@ act release \
 # Run specific job
 act \
   -j [name] \
-  -W ./.github/workflows/[name].yaml \
+  -W ./.github/workflows/[name].yml \
   --rm \
   -v
 
@@ -151,7 +151,7 @@ ERRO[0000] Unable to interpolate string '${{!contains(github['event']['pull_requ
 ```sh
 # Using local-act.event.json
 act \
-  -W ./.github/workflows/ci.yaml \
+  -W ./.github/workflows/ci.yml \
   -e <(cat << EOF
 {
   "pull_request": {

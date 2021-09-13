@@ -34,6 +34,13 @@ choco install -y docker-compose
 docker-compose help
 ```
 
+### Usage
+
+```sh
+#
+docker-compose config
+```
+
 ### Tips
 
 #### BuildKit
@@ -62,7 +69,7 @@ rm ~/.zcompdump*
 ### Manifest
 
 ```yaml
-version: '3.7'
+version: '3.9'
 
 x-shared: &shared
   build:
