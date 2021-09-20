@@ -29,7 +29,7 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace mysql-system
+kubectl create ns mysql-system
 ```
 
 ```sh
@@ -81,7 +81,7 @@ kubectl logs \
 helm uninstall mysql-operator \
   -n mysql-system
 
-kubectl delete namespace mysql-system \
+kubectl delete ns mysql-system \
   --grace-period=0 \
   --force
 ```
@@ -95,7 +95,7 @@ kubectl delete namespace mysql-system \
 export KUBECTL_NAMESPACE='my-app'
 
 #
-kubectl create namespace "$KUBECTL_NAMESPACE"
+kubectl create ns "$KUBECTL_NAMESPACE"
 
 #
 cat << EOF | kubectl apply \
@@ -152,5 +152,5 @@ spec:
 kubectl delete mysqlcluster mysql-cluster \
   -n "$KUBECTL_NAMESPACE"
 
-kubectl delete namespace "$KUBECTL_NAMESPACE"
+kubectl delete ns "$KUBECTL_NAMESPACE"
 ```

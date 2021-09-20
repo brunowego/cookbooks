@@ -14,7 +14,7 @@ https://blog.sentry.io/2018/07/17/source-code-fetching
 - [PostgreSQL](/postgresql.md)
 - [Redis](/redis.md)
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U sentry
@@ -114,10 +114,6 @@ helm repo add sentry 'https://sentry-kubernetes.github.io/charts'
 helm repo update
 ```
 
-### Dependencies
-
-- [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
-
 ### Install
 
 ```sh
@@ -125,7 +121,7 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace sentry-system
+kubectl create ns sentry-system
 ```
 
 ```sh
@@ -140,7 +136,26 @@ user:
 ingress:
   enabled: true
   hostname: sentry.${INGRESS_HOST}.nip.io
+EOF
+) \
+  --timeout 15m \
+  --wait
+```
 
+### Prometheus Stack
+
+**Dependencies:** [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
+
+```sh
+#
+kubectl get prometheus \
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
+  -n monitoring
+
+#
+helm upgrade sentry sentry/sentry \
+  --namespace sentry-system \
+  -f <(yq m <(cat << EOF
 metrics:
   enabled: true
   serviceMonitor:
@@ -148,9 +163,7 @@ metrics:
     additionalLabels:
       release: prometheus-stack
 EOF
-) \
-  --timeout 15m \
-  --wait
+) <(helm get values sentry --namespace sentry-system))
 ```
 
 ### Status
@@ -210,7 +223,7 @@ kubectl delete pod sentry-sentry-redis-slave-0 \
 helm uninstall sentry \
   -n sentry-system
 
-kubectl delete namespace sentry-system \
+kubectl delete ns sentry-system \
   --grace-period=0 \
   --force
 ```

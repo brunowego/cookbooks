@@ -1,5 +1,9 @@
 # NGINX (Engine X)
 
+<!--
+nginx
+-->
+
 ## CLI
 
 ### Dependencies
@@ -142,7 +146,7 @@ xdg-open 'http://127.0.0.1' || open 'http://127.0.0.1' || echo -e '[INFO]\thttp:
 
 ### Tips
 
-####
+<!-- ####
 
 ##### Configuration
 
@@ -240,7 +244,7 @@ nginx \
 nginx \
   -s stop \
   -p ./
-```
+``` -->
 
 #### CORS
 

@@ -24,7 +24,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace swagger
+kubectl create ns swagger
 ```
 
 ```sh
@@ -100,7 +100,7 @@ nslookup swagger-ui.example.com 10.96.0.10
 ```sh
 helm uninstall swagger-ui -n swagger-ui
 
-kubectl delete namespace swagger --grace-period=0 --force
+kubectl delete ns swagger --grace-period=0 --force
 ```
 
 ## Docker

@@ -14,7 +14,7 @@
 brew install bumpversion
 ```
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U bumpversion

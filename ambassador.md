@@ -9,7 +9,7 @@
 ### Install
 
 ```sh
-kubectl create namespace ambassador
+kubectl create ns ambassador
 ```
 
 ```sh
@@ -161,7 +161,7 @@ echo -e "[INFO]\thttp://admin.ambassador.${INGRESS_HOST}.nip.io/ambassador/v0/di
 helm uninstall ambassador \
   -n ambassador
 
-kubectl delete namespace ambassador \
+kubectl delete ns ambassador \
   --grace-period=0 \
   --force
 

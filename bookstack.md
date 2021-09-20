@@ -5,7 +5,7 @@
 ### Install
 
 ```sh
-kubectl create namespace bookstack
+kubectl create ns bookstack
 ```
 
 ```sh
@@ -24,5 +24,5 @@ helm install bookstack stable/bookstack \
 
 ```sh
 helm uninstall bookstack -n bookstack
-kubectl delete namespace bookstack --grace-period=0 --force
+kubectl delete ns bookstack --grace-period=0 --force
 ```

@@ -20,7 +20,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace rabbitmq
+kubectl create ns rabbitmq
 ```
 
 ```sh
@@ -71,7 +71,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9419/metrics'
 helm uninstall rabbitmq \
   -n rabbitmq
 
-kubectl delete namespace rabbitmq \
+kubectl delete ns rabbitmq \
   --grace-period=0 \
   --force
 ```

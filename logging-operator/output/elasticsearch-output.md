@@ -85,7 +85,7 @@ curl "http://elasticsearch.${INGRESS_HOST}.nip.io/_aliases?pretty=true"
 ### Security Features
 
 ```log
-default-logging-simple-fluentd-0 fluentd warning: 299 Elasticsearch-7.14.0-dd5a0a2acaa2045ff9624f3729fc8a6f40835aa1 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.14/security-minimal-setup.html to enable security.", 299 Elasticsearch-7.14.0-dd5a0a2acaa2045ff9624f3729fc8a6f40835aa1 "[types removal] Specifying types in bulk requests is deprecated."
+default-logging-fluentd-0 fluentd warning: 299 Elasticsearch-7.14.0-dd5a0a2acaa2045ff9624f3729fc8a6f40835aa1 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.14/security-minimal-setup.html to enable security.", 299 Elasticsearch-7.14.0-dd5a0a2acaa2045ff9624f3729fc8a6f40835aa1 "[types removal] Specifying types in bulk requests is deprecated."
 ```
 
 TODO

@@ -32,12 +32,12 @@ docker context ls
 
 # Create Context
 docker context create \
-  --docker 'host=ssh://brunowego@192.168.0.71' \
+  --docker 'host=ssh://[username]@[ip-address]' \
   --kubernetes config-file="$HOME/.kube/config" \
-  --description 'Arck Docker Engine' \
-  arck
+  --description 'My Remote Docker Engine' \
+  [my-remote]
 
-docker context export arck --kubeconfig
+docker context export [my-remote] --kubeconfig
 
 # Use
 docker context use default

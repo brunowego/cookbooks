@@ -37,22 +37,33 @@ helm repo add skm 'https://charts.sagikazarmark.dev'
 helm repo update
 ```
 
-### Dependencies
-
-- [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
-
 ### Install
 
 ```sh
 #
-kubectl create namespace rabbitmq-system
+kubectl create ns rabbitmq-system
 ```
 
 ```sh
 helm install rabbitmq-operator skm/rabbitmq-operator \
   --namespace rabbitmq-system \
-  --version 0.0.1 \
-  -f <(cat << EOF
+  --version 0.0.1
+```
+
+### Prometheus Stack
+
+**Dependencies:** [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
+
+```sh
+#
+kubectl get prometheus \
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
+  -n monitoring
+
+#
+helm upgrade rabbitmq-operator skm/rabbitmq-operator \
+  --namespace rabbitmq-system \
+  -f <(yq m <(cat << EOF
 podMonitor:
   enabled: true
 
@@ -60,7 +71,7 @@ rabbitmq:
   serviceMonitor:
     enabled: true
 EOF
-)
+) <(helm get values rabbitmq-operator --namespace rabbitmq-system))
 ```
 
 ### Fixes
@@ -106,7 +117,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9782/metrics'
 helm uninstall rabbitmq-operator \
   -n rabbitmq-system
 
-kubectl delete namespace rabbitmq-system \
+kubectl delete ns rabbitmq-system \
   --grace-period=0 \
   --force
 ```
@@ -147,7 +158,7 @@ kubectl get customresourcedefinitions.apiextensions.k8s.io
 export KUBECTL_NAMESPACE='my-app'
 
 #
-kubectl create namespace "$KUBECTL_NAMESPACE"
+kubectl create ns "$KUBECTL_NAMESPACE"
 
 #
 cat << EOF | kubectl apply \
@@ -337,5 +348,5 @@ kubectl delete configmap rabbitmq-definitions \
 kubectl delete ingress rabbitmq \
   -n "$KUBECTL_NAMESPACE"
 
-kubectl delete namespace "$KUBECTL_NAMESPACE"
+kubectl delete ns "$KUBECTL_NAMESPACE"
 ```

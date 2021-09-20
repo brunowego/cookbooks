@@ -39,7 +39,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace mailhog
+kubectl create ns mailhog
 ```
 
 ```sh
@@ -147,7 +147,7 @@ nslookup "mailhog.${INGRESS_HOST}.nip.io" 10.96.0.10
 
 ```sh
 helm uninstall mailhog -n mailhog
-kubectl delete namespace mailhog --grace-period=0 --force
+kubectl delete ns mailhog --grace-period=0 --force
 ```
 
 ## Docker

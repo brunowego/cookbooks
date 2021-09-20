@@ -36,7 +36,7 @@ EOF
 helm dependency update ./elk
 
 #
-kubectl create namespace elk
+kubectl create ns elk
 
 #
 export INGRESS_HOST='127.0.0.1'
@@ -168,7 +168,7 @@ curl "http://elasticsearch.${INGRESS_HOST}.nip.io/_aliases?pretty=true"
 helm uninstall elk \
   -n elk
 
-kubectl delete namespace elk \
+kubectl delete ns elk \
   --grace-period=0 \
   --force
 ```

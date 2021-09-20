@@ -63,3 +63,12 @@ newrelic entity tags create \
 newrelic entity tags get \
   --guid 'GUID'
 ```
+
+<!-- ### Tips
+
+####
+
+1. Alerts & AI
+2. Policies
+
+Notification Channels -->

@@ -2,6 +2,7 @@
 
 <!--
 https://www.hangfire.io/
+FROM docker.io/microsoft/dotnet:2.2-sdk AS build
 -->
 
 ## CLI

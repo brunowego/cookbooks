@@ -173,7 +173,7 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace sonarqube
+kubectl create ns sonarqube
 ```
 
 ```sh
@@ -225,7 +225,7 @@ nslookup "sonarqube.${INGRESS_HOST}.nip.io" 10.96.0.10
 helm uninstall sonarqube \
   -n sonarqube
 
-kubectl delete namespace sonarqube \
+kubectl delete ns sonarqube \
   --grace-period=0 \
   --force
 ```

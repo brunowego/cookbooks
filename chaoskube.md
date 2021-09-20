@@ -5,7 +5,7 @@
 ### Install
 
 ```sh
-kubectl create namespace chaoskube
+kubectl create ns chaoskube
 ```
 
 ```sh
@@ -37,7 +37,7 @@ kubectl exec -it \
 helm uninstall chaoskube \
   -n chaoskube
 
-kubectl delete namespace chaoskube \
+kubectl delete ns chaoskube \
   --grace-period=0 \
   --force
 ```

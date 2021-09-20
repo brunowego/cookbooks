@@ -18,7 +18,7 @@ https://www.datarevenue.com/en-blog/airflow-vs-luigi-vs-argo-vs-mlflow-vs-kubefl
 
 ```sh
 #
-kubectl create namespace argo
+kubectl create ns argo
 
 #
 kubectl apply \
@@ -51,7 +51,7 @@ kubectl delete \
   -f 'https://raw.githubusercontent.com/argoproj/argo-workflows/master/manifests/quick-start-postgres.yaml'
 
 #
-kubectl delete namespace argo
+kubectl delete ns argo
 ```
 
 ## CLI

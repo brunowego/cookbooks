@@ -32,7 +32,7 @@ helm repo update
 
 ```sh
 #
-kubectl create namespace backstage
+kubectl create ns backstage
 
 #
 export INGRESS_HOST='127.0.0.1'
@@ -80,7 +80,7 @@ kubectl logs \
 helm uninstall backstage \
   -n backstage
 
-kubectl delete namespace backstage \
+kubectl delete ns backstage \
   --grace-period=0 \
   --force
 ```

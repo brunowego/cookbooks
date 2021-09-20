@@ -14,7 +14,7 @@ https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U tensorflow

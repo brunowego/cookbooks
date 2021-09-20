@@ -144,7 +144,7 @@ helm repo update
 
 ```sh
 #
-kubectl create namespace grafana
+kubectl create ns grafana
 
 #
 export INGRESS_HOST='127.0.0.1'
@@ -198,7 +198,7 @@ kubectl get secret grafana \
 helm uninstall grafana \
   -n grafana
 
-kubectl delete namespace grafana \
+kubectl delete ns grafana \
   --grace-period=0 \
   --force
 ```

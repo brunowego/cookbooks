@@ -20,7 +20,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace kubecost
+kubectl create ns kubecost
 ```
 
 ```sh
@@ -164,5 +164,5 @@ kubectl get secret kubecost-grafana \
 
 ```sh
 helm uninstall kubecost -n kubecost
-kubectl delete namespace kubecost --grace-period=0 --force
+kubectl delete ns kubecost --grace-period=0 --force
 ```

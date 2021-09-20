@@ -9,7 +9,7 @@
 ### Install
 
 ```sh
-kubectl create namespace rabbitmq-ha
+kubectl create ns rabbitmq-ha
 ```
 
 ```sh
@@ -67,7 +67,7 @@ kubectl get secret rabbitmq-ha \
 helm uninstall rabbitmq-ha \
   -n rabbitmq-ha
 
-kubectl delete namespace rabbitmq-ha \
+kubectl delete ns rabbitmq-ha \
   --grace-period=0 \
   --force
 ```

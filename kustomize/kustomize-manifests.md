@@ -1,6 +1,28 @@
 # Kustomize Manifests
 
-TODO
+<!--
+https://www.jetstack.io/blog/kustomize-cert-manager/
+-->
+
+##
+
+```sh
+cat << EOF > ./kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+commonLabels:
+  app: helloweb
+
+namespace: helloweb
+
+resources:
+- namespace.yaml
+- deployment.yaml
+- service.yaml
+- ingress.yaml
+EOF
+```
 
 <!-- ##
 

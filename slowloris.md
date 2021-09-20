@@ -67,7 +67,7 @@ docker rm -f slowloris
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install Slowloris

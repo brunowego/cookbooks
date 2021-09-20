@@ -12,7 +12,7 @@
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install coverage

@@ -50,7 +50,7 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace jenkins
+kubectl create ns jenkins
 ```
 
 ```sh
@@ -329,7 +329,7 @@ javax.net.ssl.SSLPeerUnverifiedException: Certificate for <subdomain.example.com
 helm uninstall jenkins \
   -n jenkins
 
-kubectl delete namespace jenkins \
+kubectl delete ns jenkins \
   --grace-period=0 \
   --force
 ```

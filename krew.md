@@ -42,7 +42,9 @@ kubectl krew list
 
 #
 kubectl krew search '[package]'
+```
 
+<!--
 # Non-official
 kubectl krew install exec-all
-```
+-->

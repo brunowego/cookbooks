@@ -19,7 +19,12 @@ https://github.com/github/roadmap/issues/93
 
 ## Docker
 
+[New personal access token](https://github.com/settings/tokens/new?description=docker-cli&scopes=write:packages)
+
 ```sh
+#
+jq 'del(.credsStore)' ~/.docker/config.json | sponge ~/.docker/config.json
+
 #
 docker login \
   -u 'brunowego' \
@@ -35,4 +40,7 @@ Error response from daemon: pull access denied for ghcr.io/[organization]/[image
 ```
 
 Access the [GitHub settings token page](https://github.com/settings/tokens) and create new one.
+
+```sh
 docker pull ghcr.io/[organization]/[image]
+```

@@ -76,7 +76,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace kafka
+kubectl create ns kafka
 ```
 
 ```sh
@@ -114,7 +114,7 @@ nslookup kafka.kafka.svc.cluster.local 10.96.0.10
 helm uninstall kafka \
   -n kafka
 
-kubectl delete namespace kafka \
+kubectl delete ns kafka \
   --grace-period=0 \
   --force
 ```

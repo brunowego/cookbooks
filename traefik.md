@@ -56,7 +56,7 @@ helm repo update
 
 ```sh
 #
-kubectl create namespace traefik-system
+kubectl create ns traefik-system
 ```
 
 ```sh

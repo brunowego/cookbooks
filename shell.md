@@ -27,6 +27,15 @@ https://www.javatpoint.com/shell-script-parameters
 
 ## Tips
 
+### Ensure Envuronment Variable Are Set
+
+```sh
+#! /bin/sh
+
+# Ensure some environment variables are set
+: "${BACKEND_URL:?BACKEND_URL not set in environment}"
+```
+
 ### History Expansion
 
 ```sh

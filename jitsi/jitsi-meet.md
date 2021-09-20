@@ -39,7 +39,7 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace jitsi
+kubectl create ns jitsi
 ```
 
 ```sh
@@ -81,7 +81,7 @@ kubectl logs \
 helm uninstall jitsi-meet \
   -n jitsi
 
-kubectl delete namespace jitsi \
+kubectl delete ns jitsi \
   --grace-period=0 \
   --force
 ```

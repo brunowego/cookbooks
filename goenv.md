@@ -48,6 +48,19 @@ sudo chown -R "$(whoami)" /usr/local/go
 goenv help
 ```
 
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Go Version Management (goenv)
+eval "$(goenv init -)"
+```
+
+```sh
+sudo su - "$USER"
+```
+
 ### Usage
 
 ```sh
@@ -62,9 +75,6 @@ goenv versions
 
 # Global
 goenv global [version]
-
-# Initialize
-eval "$(goenv init -)"
 ```
 
 ### Issues

@@ -16,7 +16,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace hue
+kubectl create ns hue
 ```
 
 ```sh
@@ -37,7 +37,7 @@ kubectl get secret hue \
 
 ```sh
 helm uninstall hue -n hue
-kubectl delete namespace hue --grace-period=0 --force
+kubectl delete ns hue --grace-period=0 --force
 ```
 
 ## Docker

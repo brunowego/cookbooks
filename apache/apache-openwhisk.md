@@ -63,7 +63,7 @@ kubectl label nodes --all openwhisk-role=invoker
 ```
 
 ```sh
-kubectl create namespace openwhisk
+kubectl create ns openwhisk
 ```
 
 ```sh
@@ -196,6 +196,6 @@ echo -e '[INFO]\thttp://openwhisk-couchdb.openwhisk.svc.cluster.local:5984/_util
 
 ```sh
 helm uninstall openwhisk -n openwhisk
-kubectl delete namespace openwhisk --grace-period=0 --force
+kubectl delete ns openwhisk --grace-period=0 --force
 kubectl label nodes --all openwhisk-role-
 ```

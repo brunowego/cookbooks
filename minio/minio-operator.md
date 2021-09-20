@@ -20,7 +20,7 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace minio
+kubectl create ns minio
 ```
 
 ```sh
@@ -75,7 +75,7 @@ echo -e "[INFO]\thttp://minio.${INGRESS_HOST}.nip.io"
 
 ```sh
 #
-kubectl create namespace minio-tenant
+kubectl create ns minio-tenant
 
 #
 kubectl apply \
@@ -189,7 +189,7 @@ mc ls minio-default
 #### Delete
 
 ```sh
-kubectl delete namespace minio-tenant
+kubectl delete ns minio-tenant
 ```
 
 ### Delete
@@ -198,7 +198,7 @@ kubectl delete namespace minio-tenant
 helm uninstall minio \
   -n minio
 
-kubectl delete namespace minio \
+kubectl delete ns minio \
   --grace-period=0 \
   --force
 ```

@@ -33,7 +33,7 @@ EOF
 helm dependency update ./efk
 
 #
-kubectl create namespace efk
+kubectl create ns efk
 
 #
 export INGRESS_HOST='127.0.0.1'
@@ -169,7 +169,7 @@ curl "http://elasticsearch.${INGRESS_HOST}.nip.io/_aliases?pretty=true"
 helm uninstall efk \
   -n efk
 
-kubectl delete namespace efk \
+kubectl delete ns efk \
   --grace-period=0 \
   --force
 ```

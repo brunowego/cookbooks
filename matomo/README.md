@@ -330,7 +330,7 @@ docker network rm workbench
 ### Running
 
 ```sh
-kubectl create namespace matomo
+kubectl create ns matomo
 ```
 
 ```sh
@@ -645,7 +645,7 @@ helm install mysql stable/mysql \
 ### Delete
 
 ```sh
-kubectl delete namespace matomo --grace-period=0 --force
+kubectl delete ns matomo --grace-period=0 --force
 ```
 
 ## Helm
@@ -657,7 +657,7 @@ kubectl delete namespace matomo --grace-period=0 --force
 ### Install
 
 ```sh
-kubectl create namespace matomo
+kubectl create ns matomo
 ```
 
 ```sh
@@ -746,7 +746,7 @@ kubectl get secret matomo \
 
 ```sh
 helm uninstall matomo -n matomo
-kubectl delete namespace matomo --grace-period=0 --force
+kubectl delete ns matomo --grace-period=0 --force
 ```
 
 ## Host

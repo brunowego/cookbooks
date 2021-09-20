@@ -54,7 +54,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace istio-system
+kubectl create ns istio-system
 ```
 
 ```sh
@@ -150,7 +150,7 @@ kubectl get secret kiali \
 ```sh
 helm uninstall istio -n istio
 helm uninstall istio-init -n istio-init
-kubectl delete namespace istio-system --grace-period=0 --force
+kubectl delete ns istio-system --grace-period=0 --force
 
 kubectl get crd -o json | jq -r '.items[] | select(.spec.group | contains("istio.io")) | .metadata.name' | xargs kubectl delete crd
 ```

@@ -17,7 +17,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace spark-operator
+kubectl create ns spark-operator
 ```
 
 ```sh
@@ -50,5 +50,5 @@ kubectl describe sparkapplication spark-pi -n default
 
 ```sh
 helm uninstall spark-operator -n spark-operator
-kubectl delete namespace spark-operator --grace-period=0 --force
+kubectl delete ns spark-operator --grace-period=0 --force
 ```

@@ -33,5 +33,24 @@ with DAG('mysql_operator_testing',
     )
 
     create_db
+```
 
+<!--
+{"charset": "utf8"}
+-->
+
+## Issues
+
+#### Disable SSL Mode
+
+```log
+MySQLdb._exceptions.OperationalError: (2026, 'SSL connection error: error:1425F102:SSL routines:ssl_choose_client_version:unsupported protocol')
+```
+
+<!--
+--ssl-mode=DISABLED
+-->
+
+```sh
+sed '/^MinProtocol/ s/TLSv1.2/TLSv1\nMaxProtocol = None/; /^CipherString/ s/DEFAULT@SECLEVEL=2/DEFAULT:@SECLEVEL=1/' /etc/ssl/openssl.cnf
 ```

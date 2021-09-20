@@ -124,6 +124,7 @@ curl -F 'fileX=@/path/to/fileX' -F 'fileY=@/path/to/fileY' https://[hostname]
 # Array of Files
 curl -F 'files[]=@/path/to/fileX' -F 'files[]=@/path/to/fileY' https://[hostname]
 
+#
 curl \
   -X POST \
   -H 'Content-Type: multipart/form-data' \
@@ -132,6 +133,7 @@ curl \
   -F file=@"/home/xxx/Desktop/customers.json" \
   'API_SERVER_URL'
 
+#
 curl \
   -X POST \
   -H "Content-Type:application/json" \
@@ -139,9 +141,15 @@ curl \
   --data @hello.json \
   https://[hostname]
 
+#
 curl -s https://[hostname] | jq .
 
+#
 curl -s https://[hostname]; echo
+
+#
+curl https://[hostname] \
+  --output [filename]
 ```
 
 ### Tips

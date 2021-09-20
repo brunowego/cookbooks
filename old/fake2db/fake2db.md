@@ -110,7 +110,7 @@ docker run -it --rm \
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U fake2db

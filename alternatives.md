@@ -116,7 +116,7 @@ https://gitguardian.com/
 
 ## MySQL Engines
 
-- AWS Aurora
+- AWS Aurora (InnoDB)
 - MySQL InnoDB
 - MySQL Cluster (NDB)
 - Percona MyRocks

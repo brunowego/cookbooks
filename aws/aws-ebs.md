@@ -1,5 +1,9 @@
 # AWS Elastic Block Store (EBS)
 
+<!--
+gp2
+-->
+
 ## Alternatives
 
 - Rook

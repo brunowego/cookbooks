@@ -132,7 +132,7 @@ code --install-extension mkxml.vscode-filesize
 code --install-extension shardulm94.trailing-spaces
 
 #
-# code --install-extension Tyriar.sort-lines
+code --install-extension Tyriar.sort-lines
 
 #
 # code --install-extension wmaurer.change-case

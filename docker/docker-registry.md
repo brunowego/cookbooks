@@ -9,7 +9,7 @@
 ### Install
 
 ```sh
-kubectl create namespace docker-registry
+kubectl create ns docker-registry
 ```
 
 ```sh
@@ -92,7 +92,7 @@ kubectl get secret docker-registry-secret \
 
 ```sh
 helm uninstall docker-registry -n docker-registry
-kubectl delete namespace docker-registry --grace-period=0 --force
+kubectl delete ns docker-registry --grace-period=0 --force
 ```
 
 ## Docker

@@ -12,7 +12,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace tensorflow-inception
+kubectl create ns tensorflow-inception
 ```
 
 ```sh
@@ -38,5 +38,5 @@ docker run --rm \
 
 ```sh
 helm uninstall tensorflow-inception -n tensorflow-inception
-kubectl delete namespace tensorflow-inception --grace-period=0 --force
+kubectl delete ns tensorflow-inception --grace-period=0 --force
 ```

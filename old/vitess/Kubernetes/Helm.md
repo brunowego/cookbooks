@@ -3,7 +3,7 @@
 ## Namespace
 
 ```sh
-kubectl create namespace vitess
+kubectl create ns vitess
 ```
 
 ```sh

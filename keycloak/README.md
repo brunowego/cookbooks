@@ -296,7 +296,7 @@ helm repo update
 
 ```sh
 #
-kubectl create namespace keycloak
+kubectl create ns keycloak
 
 #
 export INGRESS_HOST='127.0.0.1'
@@ -408,7 +408,7 @@ kubectl get secret keycloak \
 helm uninstall keycloak \
   -n keycloak
 
-kubectl delete namespace keycloak \
+kubectl delete ns keycloak \
   --grace-period=0 \
   --force
 ```

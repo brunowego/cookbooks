@@ -25,7 +25,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace nifi
+kubectl create ns nifi
 ```
 
 ```sh
@@ -152,5 +152,5 @@ EOF
 ```sh
 helm uninstall nifikop -n nifi
 
-kubectl delete namespace nifi --grace-period=0 --force
+kubectl delete ns nifi --grace-period=0 --force
 ```

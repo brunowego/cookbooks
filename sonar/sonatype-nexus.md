@@ -18,7 +18,7 @@ https://repman.io/
 ### Install
 
 ```sh
-kubectl create namespace sonatype-nexus
+kubectl create ns sonatype-nexus
 ```
 
 ```sh
@@ -193,8 +193,12 @@ Add address `registry.${INGRESS_HOST}.nip.io` to insecure registry in docker dae
 ### Delete
 
 ```sh
-helm uninstall sonatype-nexus -n sonatype-nexus
-kubectl delete namespace sonatype-nexus --grace-period=0 --force
+helm uninstall sonatype-nexus \
+  -n sonatype-nexus
+
+kubectl delete ns sonatype-nexus \
+  --grace-period=0 \
+  --force
 ```
 
 ## Docker

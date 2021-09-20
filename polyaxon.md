@@ -26,7 +26,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace polyaxon
+kubectl create ns polyaxon
 ```
 
 ```sh
@@ -213,14 +213,14 @@ helm upgrade polyaxon polyaxon/polyaxon -f <(yq d <(helm get values polyaxon) ld
 
 ```sh
 helm uninstall polyaxon -n polyaxon
-kubectl delete namespace polyaxon --grace-period=0 --force
+kubectl delete ns polyaxon --grace-period=0 --force
 ```
 
 ## CLI
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U polyaxon-cli

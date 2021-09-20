@@ -80,7 +80,7 @@ kubectl apply -f https://raw.githubusercontent.com/fluxcd/flux/helm-0.10.1/deplo
 ```
 
 ```sh
-kubectl create namespace flux
+kubectl create ns flux
 ```
 
 ```sh
@@ -124,7 +124,7 @@ kubectl logs deployment/flux -n flux -f
 
 ```sh
 helm uninstall flux -n flux
-kubectl delete namespace flux --grace-period=0 --force
+kubectl delete ns flux --grace-period=0 --force
 kubectl delete -f https://raw.githubusercontent.com/fluxcd/flux/helm-0.10.1/deploy-helm/flux-helm-release-crd.yaml
 ```
 

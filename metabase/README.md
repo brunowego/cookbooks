@@ -64,7 +64,7 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace metabase
+kubectl create ns metabase
 ```
 
 ```sh
@@ -117,7 +117,7 @@ nslookup "metabase.${INGRESS_HOST}.nip.io" 10.96.0.10
 helm uninstall metabase \
   -n metabase
 
-kubectl delete namespace metabase \
+kubectl delete ns metabase \
   --grace-period=0 \
   --force
 ```

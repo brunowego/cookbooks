@@ -369,7 +369,7 @@ EOF
 helm uninstall ingress-controller \
   -n ingress-nginx
 
-kubectl delete namespace ingress-nginx \
+kubectl delete ns ingress-nginx \
   --grace-period=0 \
   --force
 ```

@@ -16,7 +16,6 @@ helm repo update
 ### Dependencies
 
 - [MongoDB)](/mongodb/README.md#helm)
-- [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
 
 ### Install
 
@@ -28,12 +27,29 @@ helm install prometheus-mongodb-exporter prometheus-community/prometheus-mongodb
   -f <(cat << EOF
 mongodb:
   uri: mongo-mongodb.mongodb.svc.cluster.local
+EOF
+)
+```
 
+### Prometheus Stack
+
+**Dependencies:** [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
+
+```sh
+#
+kubectl get prometheus \
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
+  -n monitoring
+
+#
+helm upgrade prometheus-mongodb-exporter prometheus-community/prometheus-mongodb-exporter \
+  --namespace mongodb \
+  -f <(yq m <(cat << EOF
 serviceMonitor:
   additionalLabels:
     release: prometheus-stack
 EOF
-)
+) <(helm get values prometheus-mongodb-exporter --namespace mongodb))
 ```
 
 ### Status

@@ -11,7 +11,7 @@ https://www.webfoobar.com/node/64
 ### Running
 
 ```sh
-kubectl create namespace php-fpm
+kubectl create ns php-fpm
 ```
 
 ```sh
@@ -152,7 +152,7 @@ cgi-fcgi -bind -connect "$(minikube ip):9000"
 ### Delete
 
 ```sh
-kubectl delete namespace php-fpm --grace-period=0 --force
+kubectl delete ns php-fpm --grace-period=0 --force
 ```
 
 ## Docker

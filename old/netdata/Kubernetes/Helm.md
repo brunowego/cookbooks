@@ -3,7 +3,7 @@
 ## Namespace
 
 ```sh
-kubectl create namespace kube-monitor
+kubectl create ns kube-monitor
 ```
 
 ```sh

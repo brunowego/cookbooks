@@ -1,4 +1,4 @@
-#! /Users/brunowego/.rbenv/shims/ruby
+#! ~/.rbenv/shims/ruby
 
 if ARGV.length != 1
   raise Exception.new('require interface name')

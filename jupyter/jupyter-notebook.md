@@ -46,7 +46,7 @@ docker volume rm jupyter-data
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U notebook

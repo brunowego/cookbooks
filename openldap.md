@@ -131,7 +131,7 @@ EOF
 ### Install
 
 ```sh
-kubectl create namespace openldap
+kubectl create ns openldap
 ```
 
 ```sh
@@ -186,7 +186,7 @@ ldapsearch -x \
 
 ```sh
 helm uninstall openldap -n openldap
-kubectl delete namespace openldap --grace-period=0 --force
+kubectl delete ns openldap --grace-period=0 --force
 ```
 
 ## Docker

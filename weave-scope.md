@@ -9,7 +9,7 @@
 ### Install
 
 ```sh
-kubectl create namespace weave-scope
+kubectl create ns weave-scope
 ```
 
 ```sh
@@ -40,5 +40,5 @@ kubectl rollout status deploy/weave-scope-frontend-weave-scope -n weave-scope
 ```sh
 helm uninstall weave-scope -n weave-scope
 
-kubectl delete namespace weave-scope --grace-period=0 --force
+kubectl delete ns weave-scope --grace-period=0 --force
 ```

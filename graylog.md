@@ -15,7 +15,7 @@
 ### Install
 
 ```sh
-kubectl create namespace graylog
+kubectl create ns graylog
 ```
 
 ```sh
@@ -106,7 +106,7 @@ kubectl get secret graylog \
 
 ```sh
 helm uninstall graylog -n graylog
-kubectl delete namespace graylog --grace-period=0 --force
+kubectl delete ns graylog --grace-period=0 --force
 ```
 
 ## Docker

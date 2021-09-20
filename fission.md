@@ -9,7 +9,7 @@
 ### Install
 
 ```sh
-kubectl create namespace fission
+kubectl create ns fission
 ```
 
 ```sh
@@ -54,7 +54,7 @@ kubectl get secret influxdb \
 
 ```sh
 helm uninstall fission -n fission
-kubectl delete namespace fission --grace-period=0 --force
+kubectl delete ns fission --grace-period=0 --force
 ```
 
 ## CLI

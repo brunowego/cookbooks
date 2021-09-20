@@ -8,7 +8,7 @@
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U aws-profile-manager

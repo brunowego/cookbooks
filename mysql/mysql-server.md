@@ -132,7 +132,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace mysql
+kubectl create ns mysql
 ```
 
 ```sh
@@ -185,7 +185,7 @@ kubectl get secret mysql \
 
 ```sh
 helm uninstall mysql -n mysql
-kubectl delete namespace mysql --grace-period=0 --force
+kubectl delete ns mysql --grace-period=0 --force
 ```
 
 ## CLI

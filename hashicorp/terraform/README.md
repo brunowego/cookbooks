@@ -321,6 +321,14 @@ https://www.youtube.com/watch?v=uFaMUS6Z9fI
 
 ### Issues
 
+#### Workspaces not Supported
+
+```log
+Failed to get configured named states: workspaces not supported
+```
+
+TODO
+
 #### Execution Mode
 
 ```log

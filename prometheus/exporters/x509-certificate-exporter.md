@@ -30,12 +30,27 @@ helm repo update
 ```sh
 helm install x509-certificate-exporter enix/x509-certificate-exporter \
   --namespace monitoring \
-  --version 1.16.1 \
-  -f <(cat << EOF
+  --version 1.16.1
+```
+
+### Prometheus Stack
+
+**Dependencies:** [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
+
+```sh
+#
+kubectl get prometheus \
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
+  -n monitoring
+
+#
+helm upgrade x509-certificate-exporter enix/x509-certificate-exporter \
+  --namespace monitoring \
+  -f <(yq m <(cat << EOF
 prometheusPodMonitor:
   create: true
 EOF
-)
+) <(helm get values x509-certificate-exporter --namespace monitoring))
 ```
 
 ### Status

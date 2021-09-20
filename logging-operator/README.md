@@ -89,7 +89,7 @@ cat << EOF | kubectl apply \
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: Logging
 metadata:
-  name: default-logging-simple
+  name: default-logging
 spec:
   fluentd:
     scaling:
@@ -141,14 +141,14 @@ kubectl delete pod \
 #### Could not Write Forward Header
 
 ```log
-default-logging-simple-fluentbit-jl2hc fluent-bit [2021/09/10 13:11:26] [error] [output:forward:forward.0] could not write forward header
+default-logging-fluentbit-jl2hc fluent-bit [2021/09/10 13:11:26] [error] [output:forward:forward.0] could not write forward header
 ```
 
 ```yaml
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: Logging
 metadata:
-  name: default-logging-simple
+  name: default-logging
 spec:
   # ...
   fluentbit:

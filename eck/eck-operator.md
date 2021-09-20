@@ -46,7 +46,7 @@ helm repo update
 
 ```sh
 #
-kubectl create namespace elastic-system
+kubectl create ns elastic-system
 
 #
 helm install elastic-operator elastic/eck-operator \
@@ -76,7 +76,7 @@ kubectl logs \
 helm uninstall elastic-operator \
   -n elastic-system
 
-kubectl delete namespace elastic-system \
+kubectl delete ns elastic-system \
   --grace-period=0 \
   --force
 ```

@@ -1,62 +1,34 @@
-# Submodules
+# Git Submodules
 
-## Add
-
-```sh
-git submodule add [repo] [destination]
-```
-
-## Remove folder/module from git repository
+## Usage
 
 ```sh
+# Add
+git submodule add [repo] ./[destination]
+
+# Remove folder/module from git repository
 git rm -r --cached [destination]
-```
 
-## Update from submodule folder
-
-```sh
+# Update from submodule folder
 cd [destination] && git pull
-```
 
-## Update all submodules
-
-```sh
+# Update all submodules
 git submodule foreach git pull origin master
-```
 
-## Close with submodules
-
-```sh
+# Close with submodules
 git clone --recursive [repo]
-```
 
-```sh
 git submodule foreach git checkout master
 git submodule foreach git checkout main
-```
 
-## Get submodules from cloned repo
-
-```sh
+# Get submodules from cloned repo
 git submodule update --init --recursive
-```
-
-```sh
 git submodule foreach git pull origin master
-```
-
-```sh
 git submodule foreach git checkout master
-```
 
-## Sync
-
-```sh
+# Sync
 git submodule sync --recursive
-```
 
-## Update
-
-```sh
+# Update
 git submodule update --init --recursive
 ```

@@ -19,7 +19,7 @@ https://github.com/auth0/repo-supervisor
 brew install detect-secrets
 ```
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install detect-secrets

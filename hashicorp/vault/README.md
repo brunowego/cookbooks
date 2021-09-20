@@ -28,15 +28,11 @@ helm repo add hashicorp 'https://helm.releases.hashicorp.com'
 helm repo update
 ```
 
-### Dependencies
-
-- [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
-
 ### Install
 
 ```sh
 #
-kubectl create namespace vault
+kubectl create ns vault
 
 #
 export INGRESS_HOST='127.0.0.1'
@@ -46,10 +42,6 @@ helm install vault hashicorp/vault \
   --namespace vault \
   --version 0.14.0 \
   -f <(cat << EOF
-injector:
-  metrics:
-    enabled: true
-
 server:
   ingress:
     enabled: true
@@ -83,6 +75,27 @@ EOF
 )
 ```
 
+### Prometheus Stack
+
+**Dependencies:** [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
+
+```sh
+#
+kubectl get prometheus \
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
+  -n monitoring
+
+#
+helm upgrade vault hashicorp/vault \
+  --namespace vault \
+  -f <(yq m <(cat << EOF
+injector:
+  metrics:
+    enabled: true
+EOF
+) <(helm get values vault --namespace vault))
+```
+
 ### Status
 
 ```sh
@@ -105,7 +118,7 @@ kubectl logs \
 helm uninstall vault \
   -n vault
 
-kubectl delete namespace vault \
+kubectl delete ns vault \
   --grace-period=0 \
   --force
 ```

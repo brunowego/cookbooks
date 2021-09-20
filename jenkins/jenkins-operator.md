@@ -17,7 +17,7 @@ helm repo update
 
 ```sh
 #
-kubectl create namespace jenkins-operator
+kubectl create ns jenkins-operator
 ```
 
 ```sh
@@ -61,7 +61,7 @@ kubectl --namespace jenkins-operator get secret jenkins-operator-credentials-jen
 helm uninstall jenkins-operator \
   -n jenkins-operator
 
-kubectl delete namespace jenkins-operator  \
+kubectl delete ns jenkins-operator  \
   --grace-period=0 \
   --force
 ```

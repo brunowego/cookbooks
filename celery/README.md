@@ -12,7 +12,7 @@ Django
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U celery[sqs]

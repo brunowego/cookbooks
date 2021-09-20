@@ -34,10 +34,10 @@ kompose -h
 
 ```sh
 #
-cat ./docker-compose.yml
-
-#
-kompose convert
+kompose convert \
+  -o ./.k8s/base/ \
+  --with-kompose-annotation=false \
+  -f ./docker-compose.yaml
 
 #
 kubectl apply -f .
@@ -45,3 +45,32 @@ kubectl apply -f .
 #
 kubectl get pod
 ```
+
+### Tips
+
+#### Autocomplete
+
+```sh
+# kompose
+source <(kompose completion zsh)
+```
+
+#### Remove Creation Timestamp
+
+```sh
+find ./ \
+  -type f \
+  -iname \*.yaml \
+  -exec sed -i '/creationTimestamp: null/d' {} \;
+```
+
+<!-- #### Remove Status
+
+```sh
+find ./ \
+  -type f \
+  -iname \*.yaml \
+  -exec sed -i '/status: /d' {} \;
+``` -->
+
+<!-- #### Consistent Indent Sequences -->

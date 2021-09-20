@@ -1,5 +1,9 @@
 # Actions Argo CD
 
+<!--
+OutOfSync -> Check HPA/Replicas
+-->
+
 ## Guides
 
 - [Kustomize](https://argoproj.github.io/argo-cd/user-guide/kustomize/)

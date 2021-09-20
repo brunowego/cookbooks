@@ -21,7 +21,7 @@ brew install --cask nextcloud
 ### Install
 
 ```sh
-kubectl create namespace nextcloud
+kubectl create ns nextcloud
 ```
 
 ```sh
@@ -108,7 +108,7 @@ kubectl get secret nextcloud \
 
 ```sh
 helm uninstall nextcloud -n nextcloud
-kubectl delete namespace nextcloud --grace-period=0 --force
+kubectl delete ns nextcloud --grace-period=0 --force
 ```
 
 ## Docker

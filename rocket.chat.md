@@ -20,7 +20,7 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace rocketchat
+kubectl create ns rocketchat
 ```
 
 ```sh
@@ -77,7 +77,7 @@ echo -e "[INFO]\thttp://rocketchat.${INGRESS_HOST}.nip.io"
 helm uninstall rocketchat \
   -n rocketchat
 
-kubectl delete namespace rocketchat \
+kubectl delete ns rocketchat \
   --grace-period=0 \
   --force
 ```

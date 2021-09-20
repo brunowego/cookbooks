@@ -4,7 +4,7 @@
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U ipython hdfs
@@ -48,7 +48,7 @@ CLIENT.list('/')
 
 - [MIT Kerbeos](/mit_krb5.md)
 
-###### PIP
+###### pip
 
 ```sh
 pip3 install kerberos requests-kerberos

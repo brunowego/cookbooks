@@ -236,7 +236,7 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace atlantis-system
+kubectl create ns atlantis-system
 ```
 
 ```sh
@@ -292,7 +292,7 @@ http://atlantis.${INGRESS_HOST}.nip.io/events
 helm uninstall atlantis \
   -n atlantis-system
 
-kubectl delete namespace atlantis-system \
+kubectl delete ns atlantis-system \
   --grace-period=0 \
   --force
 ```

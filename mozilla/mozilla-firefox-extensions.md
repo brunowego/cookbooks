@@ -1,5 +1,9 @@
 # Mozilla Firefox Extensions
 
+<!--
+https://addons.mozilla.org/en-US/firefox/addon/container-proxy/
+-->
+
 ## Recommended
 
 - [AutoFormer+](https://addons.mozilla.org/en-US/firefox/addon/autoformer/)

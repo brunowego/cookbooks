@@ -22,7 +22,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace cert-manager
+kubectl create ns cert-manager
 ```
 
 ```sh
@@ -47,7 +47,7 @@ kubectl rollout status deploy/cert-manager -n cert-manager
 helm uninstall cert-manager \
   -n cert-manager
 
-kubectl delete namespace cert-manager \
+kubectl delete ns cert-manager \
   --grace-period=0 \
   --force
 ```

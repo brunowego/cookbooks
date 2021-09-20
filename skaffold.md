@@ -23,6 +23,10 @@ https://github.com/khaman1/k8s-services
 
 ## CLI
 
+### Dependencies
+
+- [kompose](/kompose.md)
+
 ### Installation
 
 #### Homebrew
@@ -63,7 +67,9 @@ skaffold config set --global local-cluster true
 cat ~/.skaffold/config
 
 #
-skaffold config set --kube-context [name] local-cluster true # minikube, kind-default
+skaffold config set \
+  --kube-context [name] \
+  local-cluster true # minikube, kind-default
 
 #
 skaffold init

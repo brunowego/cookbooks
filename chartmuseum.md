@@ -19,7 +19,7 @@
 ### Install
 
 ```sh
-kubectl create namespace chartmuseum
+kubectl create ns chartmuseum
 ```
 
 ```sh
@@ -81,7 +81,7 @@ rm ./ca.crt
 
 ```sh
 helm uninstall chartmuseum -n chartmuseum
-kubectl delete namespace chartmuseum --grace-period=0 --force
+kubectl delete ns chartmuseum --grace-period=0 --force
 ```
 
 ## Docker

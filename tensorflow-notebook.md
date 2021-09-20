@@ -5,7 +5,7 @@
 ### Install
 
 ```sh
-kubectl create namespace kube-monitor
+kubectl create ns kube-monitor
 ```
 
 ```sh
@@ -57,5 +57,5 @@ EOF
 
 ```sh
 helm uninstall tensorflow-notebook -n tensorflow-notebook
-kubectl delete namespace tensorflow-notebook --grace-period=0 --force
+kubectl delete ns tensorflow-notebook --grace-period=0 --force
 ```

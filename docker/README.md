@@ -24,6 +24,19 @@ https://www.youtube.com/watch?v=-BW0Kk5Vj7o
 
 ## Tips
 
+### Visual Studio Code
+
+```sh
+code --install-extension ms-azuretools.vscode-docker
+```
+
+```sh
+# Darwin
+osascript -e 'quit app "Visual Studio Code"'
+
+code --disable-extension ms-azuretools.vscode-docker
+```
+
 ### Here document (heredoc)
 
 ```sh

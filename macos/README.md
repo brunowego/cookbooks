@@ -1,4 +1,4 @@
-# macOS
+# macOS (a.k.a. Darwin)
 
 <!--
 https://matthewhoelter.com/2019/06/03/flush-and-reset-dns-cache-on-macos.html
@@ -33,6 +33,13 @@ softwareupdate --all --install --force
 
 ## Configuration
 
+### Desktop Services Store
+
+```sh
+# Git ignore
+echo '/**/.DS_Store' >> ~/.gitignore_global
+```
+
 ### Desktop & Documents Folder
 
 1. System Preferences
@@ -43,6 +50,12 @@ softwareupdate --all --install --force
    - Done
 
 ## Issues
+
+### True Tone
+
+1. System Preferences
+2. Displays
+3. Display Tab -> Uncheck "True Tone"
 
 ### 802.1X Network
 

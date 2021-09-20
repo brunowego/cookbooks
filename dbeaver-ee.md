@@ -43,6 +43,7 @@ hdiutil detach /Volumes/DBeaverEE
 
 ```sh
 curl -LO https://dbeaver.com/files/dbeaver-ee-latest-stable.x86_64.rpm
+
 sudo rpm -vi dbeaver-ee-latest-stable.x86_64.rpm && rm -f dbeaver-ee-latest-stable.x86_64.rpm
 ```
 
@@ -50,6 +51,7 @@ sudo rpm -vi dbeaver-ee-latest-stable.x86_64.rpm && rm -f dbeaver-ee-latest-stab
 
 ```sh
 curl -LO https://dbeaver.com/files/dbeaver-ee_latest_amd64.deb
+
 sudo dpkg -i dbeaver-ee_latest_amd64.deb && rm -f dbeaver-ee_latest_amd64.deb
 ```
 
@@ -69,5 +71,5 @@ Failed to create the Java Virtual Machine.
 
 ```sh
 # Darwin
-sed "/^-vmargs/i -vm\n$(dirname $(readlink -f $(which java)))" /Applications/DBeaverEE.app/Contents/Eclipse/dbeaver.ini
+sed -i "/^-vmargs/i -vm\n$(dirname $(readlink -f $(which java)))" /Applications/DBeaverEE.app/Contents/Eclipse/dbeaver.ini
 ```

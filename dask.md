@@ -9,7 +9,7 @@ https://app.pluralsight.com/library/courses/scaling-python-data-applications-das
 ### Install
 
 ```sh
-kubectl create namespace dask
+kubectl create ns dask
 ```
 
 ```sh
@@ -66,5 +66,5 @@ EOF
 
 ```sh
 helm uninstall dask -n dask
-kubectl delete namespace dask --grace-period=0 --force
+kubectl delete ns dask --grace-period=0 --force
 ```

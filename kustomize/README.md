@@ -99,9 +99,16 @@ diff <(kustomize build ./base) <(kustomize build ./overlays/local)
 icdiff <(kustomize build ./base) <(kustomize build ./overlays/local)
 ```
 
-<!-- ### Tips
+### Tips
 
-#### Image Names and Tags
+#### Autocomplete
+
+```sh
+# Kustomize
+source <(kustomize completion zsh)
+```
+
+<!-- #### Image Names and Tags
 
 ```sh
 kustomize edit set image []:[tag]

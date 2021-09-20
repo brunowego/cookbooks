@@ -41,7 +41,7 @@ pip3 install -U ibm_db ibm_db_sa
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U query-exporter
@@ -199,6 +199,6 @@ docker volume rm mysql-data
 ### Uninstall
 
 ```sh
-# PIP
+# pip
 pip3 uninstall query-exporter
 ```

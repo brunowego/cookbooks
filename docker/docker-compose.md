@@ -68,12 +68,15 @@ rm ~/.zcompdump*
 
 ### Manifest
 
+
 ```yaml
-version: '3.9'
+version: '3'
 
 x-shared: &shared
   build:
     context: ./services/acme
+    # args:
+    #   GIT_TOKEN:
 
 services:
   acme:

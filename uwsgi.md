@@ -18,7 +18,7 @@
 brew install uwsgi
 ```
 
-#### PIP
+#### pip
 
 ```sh
 # As user dependency

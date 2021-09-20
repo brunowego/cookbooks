@@ -48,7 +48,7 @@ docker volume rm mariadb-data
 ### Install
 
 ```sh
-kubectl create namespace mariadb
+kubectl create ns mariadb
 ```
 
 ```sh
@@ -94,7 +94,7 @@ kubectl get secret mariadb \
 
 ```sh
 helm uninstall mariadb -n mariadb
-kubectl delete namespace mariadb --grace-period=0 --force
+kubectl delete ns mariadb --grace-period=0 --force
 ```
 
 ## CLI

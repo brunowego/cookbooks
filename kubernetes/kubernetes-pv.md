@@ -1,5 +1,25 @@
 # Kubernetes Persistent Volume (PV)
 
+## Links
+
+- [Access Modes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
+
+## Usage
+
+```sh
+#
+kubectl get storageclass
+```
+
+## Tips
+
+### Make Default
+
+```sh
+kubectl patch storageclass [name] \
+  -p '{"metadata":{"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+```
+
 ## Issues
 
 ### PVC Attached Volume on AWS

@@ -17,7 +17,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace monocular
+kubectl create ns monocular
 ```
 
 ```sh
@@ -67,5 +67,5 @@ kubectl rollout status deploy/monocular-monocular-chartsvc -n monocular
 
 ```sh
 helm uninstall monocular -n monocular
-kubectl delete namespace monocular --grace-period=0 --force
+kubectl delete ns monocular --grace-period=0 --force
 ```

@@ -30,22 +30,33 @@ helm repo add kedacore 'https://kedacore.github.io/charts'
 helm repo update
 ```
 
-### Dependencies
-
-- [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
-
 ### Install
 
 ```sh
 #
-kubectl create namespace keda-system
+kubectl create ns keda-system
 ```
 
 ```sh
 helm install keda kedacore/keda \
   --namespace keda-system \
-  --version 2.3.2 \
-  -f <(cat << EOF
+  --version 2.3.2
+```
+
+### Prometheus Stack
+
+**Dependencies:** [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
+
+```sh
+#
+kubectl get prometheus \
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
+  -n monitoring
+
+#
+helm upgrade keda kedacore/keda \
+  --namespace keda-system \
+  -f <(yq m <(cat << EOF
 prometheus:
   metricServer:
     enabled: true
@@ -53,6 +64,7 @@ prometheus:
       enabled: true
       additionalLabels:
         release: prometheus-stack
+
   operator:
     enabled: true
     podMonitor:
@@ -60,7 +72,7 @@ prometheus:
       additionalLabels:
         release: prometheus-stack
 EOF
-)
+) <(helm get values keda --namespace keda-system))
 ```
 
 ### Status
@@ -119,7 +131,7 @@ kubectl get hpa -A
 helm uninstall keda \
   -n keda-system
 
-kubectl delete namespace keda-system \
+kubectl delete ns keda-system \
   --grace-period=0 \
   --force
 ```

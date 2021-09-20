@@ -16,7 +16,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace artifactory
+kubectl create ns artifactory
 ```
 
 ```sh
@@ -57,9 +57,11 @@ EOF
 #### Remove
 
 ```sh
-helm upgrade artifactory-oss jfrog/artifactory-oss -f <(yq d <(helm get values artifactory-oss) artifactory.ingress.tls)
+helm upgrade artifactory-oss jfrog/artifactory-oss \
+  -f <(yq d <(helm get values artifactory-oss) artifactory.ingress.tls)
 
-kubectl delete secret example.tls-secret -n artifactory
+kubectl delete secret example.tls-secret \
+  -n artifactory
 ```
 
 ### Status
@@ -71,7 +73,10 @@ kubectl rollout status statefulset/artifactory-oss-artifactory -n artifactory
 ### Logs
 
 ```sh
-kubectl logs -l 'app=artifactory,component=artifactory' -n artifactory -f
+kubectl logs \
+  -l 'app=artifactory,component=artifactory' \
+  -n artifactory \
+  -f
 ```
 
 ### DNS
@@ -97,8 +102,12 @@ nslookup "artifactory.${INGRESS_HOST}.nip.io" 10.96.0.10
 ### Delete
 
 ```sh
-helm uninstall artifactory -n artifactory
-kubectl delete namespace artifactory --grace-period=0 --force
+helm uninstall artifactory \
+  -n artifactory
+
+kubectl delete ns artifactory \
+  --grace-period=0 \
+  --force
 ```
 
 ## Docker

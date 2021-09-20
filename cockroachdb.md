@@ -18,7 +18,7 @@ https://app.pluralsight.com/library/courses/big-data-ldn-session-79/table-of-con
 ### Install
 
 ```sh
-kubectl create namespace cockroach
+kubectl create ns cockroach
 ```
 
 ```sh
@@ -60,7 +60,7 @@ cockroachdb sql \
 helm uninstall cockroachdb \
   -n cockroachdb
 
-kubectl delete namespace cockroach \
+kubectl delete ns cockroach \
   --grace-period=0 \
   --force
 

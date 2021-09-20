@@ -21,7 +21,7 @@ helm update
 ### Install
 
 ```sh
-kubectl create namespace kubeless
+kubectl create ns kubeless
 ```
 
 ```sh
@@ -101,7 +101,7 @@ nslookup "kubeless.${INGRESS_HOST}.nip.io" 10.96.0.10
 
 ```sh
 helm uninstall kubeless -n kubeless
-kubectl delete namespace kubeless --grace-period=0 --force
+kubectl delete ns kubeless --grace-period=0 --force
 ```
 
 ## CLI

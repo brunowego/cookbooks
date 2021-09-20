@@ -25,7 +25,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace mongodb
+kubectl create ns mongodb
 ```
 
 ```sh
@@ -61,7 +61,7 @@ kubectl port-forward svc/mongo-mongodb 27017:27017 \
 helm uninstall mongo \
   -n mongodb
 
-kubectl delete namespace mongodb \
+kubectl delete ns mongodb \
   --grace-period=0 \
   --force
 ```
@@ -118,7 +118,7 @@ docker volume rm \
 ### Manifest
 
 ```yaml
-version: '3.9'
+version: '3'
 
 services:
   mongodb:

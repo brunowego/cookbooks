@@ -11,7 +11,7 @@
 #### Homebrew
 
 ```sh
-brew install --cask oracle-jdk # 14.0.2
+brew install --cask oracle-jdk
 ```
 
 #### DMG
@@ -77,7 +77,6 @@ jabba alias default system@1.8.0-202
    - Click `jdk-11.0.11_osx-x64_bin.dmg`
    - Accept the terms
    - Click in Download button
-
 
 ```sh
 # Darwin

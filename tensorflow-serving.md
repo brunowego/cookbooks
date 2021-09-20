@@ -9,7 +9,7 @@
 ### Install
 
 ```sh
-kubectl create namespace tensorflow-serving
+kubectl create ns tensorflow-serving
 ```
 
 ```sh
@@ -44,5 +44,5 @@ nslookup mnist-tensorflow-serving.tensorflow-serving.svc.cluster.local 10.96.0.1
 
 ```sh
 helm uninstall mnist -n mnist
-kubectl delete namespace tensorflow-serving --grace-period=0 --force
+kubectl delete ns tensorflow-serving --grace-period=0 --force
 ```

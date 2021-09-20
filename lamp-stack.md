@@ -9,7 +9,7 @@
 ### Install
 
 ```sh
-kubectl create namespace lamp
+kubectl create ns lamp
 ```
 
 ```sh
@@ -93,5 +93,5 @@ kubectl get secret lamp \
 
 ```sh
 helm uninstall lamp -n lamp
-kubectl delete namespace lamp --grace-period=0 --force
+kubectl delete ns lamp --grace-period=0 --force
 ```

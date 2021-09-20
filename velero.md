@@ -53,7 +53,7 @@ s3cmd mb s3://velero
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace velero
+kubectl create ns velero
 ```
 
 ```sh
@@ -223,7 +223,7 @@ rm -fR ./rocketchat-backup
 helm uninstall velero \
   -n velero
 
-kubectl delete namespace velero \
+kubectl delete ns velero \
   --grace-period=0 \
   --force
 ```

@@ -22,7 +22,7 @@ sudo update
 sudo apt -y install pipenv
 ```
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U pipenv

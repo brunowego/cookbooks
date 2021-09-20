@@ -20,7 +20,7 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace redis-cluster
+kubectl create ns redis-cluster
 ```
 
 ```sh
@@ -98,7 +98,7 @@ redis-cli \
 helm uninstall redis-cluster \
   -n redis-cluster
 
-kubectl delete namespace redis-cluster \
+kubectl delete ns redis-cluster \
   --grace-period=0 \
   --force
 ```

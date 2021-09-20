@@ -4,7 +4,7 @@
 
 ```sh
 #
-kubectl create namespace locust
+kubectl create ns locust
 
 #
 cat << EOF | kubectl apply \

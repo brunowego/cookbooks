@@ -22,7 +22,7 @@ https://linkedin.com/learning/test-driven-development-in-django/
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 # As user dependency

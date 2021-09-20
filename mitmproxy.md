@@ -1,9 +1,20 @@
 # mitmproxy
 
+<!--
+https://earthly.dev/blog/mitmproxy/
+-->
+
 **Keywords:** HTTPS Proxy, Reverse Proxy
 
-## References
+## Links
 
+- [Code Repository](https://github.com/mitmproxy/mitmproxy)
+- [Main Website](https://mitmproxy.org/)
+
+## Guides
+
+- [Map Local](https://docs.mitmproxy.org/stable/overview-features/#map-local)
+- [Map Remote](https://docs.mitmproxy.org/stable/overview-features/#map-remote)
 - [About Certificates](https://docs.mitmproxy.org/stable/concepts-certificates/)
 
 ## CLI
@@ -37,9 +48,31 @@ curl \
 
 ### Tips
 
+#### Map Remote
+
+<!--
+mitmproxy \
+  -p 8080 \
+  --map-remote '|.*\/api/ping|//127.0.0.1:8092/ping' \
+  --mode reverse:http://127.0.0.1:8092
+-->
+
+```sh
+#
+mitmproxy \
+  -p 8080 \
+  --map-remote '|.*\.jpg$|https://placedog.net/640/480?random' \
+  --mode reverse:http://127.0.0.1:8000
+```
+
 #### Reverse Proxy
 
 ```sh
+#
+mitmproxy \
+  -p 8080 \
+  --mode reverse:http://127.0.0.1:8000
+
 #
 mitmdump \
   -p 443 \
@@ -49,7 +82,7 @@ mitmdump \
 mitmdump \
   --listen-host 127.0.0.1 \
   --listen-port 60808 \
-  --mode upstream:http://<host_upstream_proxy>:<port_upstream_proxy> \
+  --mode upstream:http://[host_upstream_proxy]:[port_upstream_proxy] \
   --certs <path_to_certs>/hostname.pem \
   --scripts <path_to_scripts>/handler.py \
   --set upstream_cert=false \
@@ -65,7 +98,7 @@ mitmdump \
   -w traffic.mitm
 ``` -->
 
-### Issues
+<!-- ### Issues -->
 
 <!-- ####
 

@@ -10,7 +10,7 @@
 ### Install
 
 ```sh
-kubectl create namespace pachyderm
+kubectl create ns pachyderm
 ```
 
 ```sh
@@ -33,7 +33,7 @@ kubectl rollout status deploy/pachd -n pachyderm
 
 ```sh
 helm uninstall pachyderm -n pachyderm
-kubectl delete namespace pachyderm --grace-period=0 --force
+kubectl delete ns pachyderm --grace-period=0 --force
 ```
 
 ## CLI

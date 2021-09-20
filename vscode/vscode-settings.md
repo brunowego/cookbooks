@@ -1,10 +1,10 @@
 # Visual Studio Code Settings
 
-## Tab Size
+<!-- ## Tab Size
 
 ```sh
 jq '."editor.tabSize" |= 2' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
-```
+``` -->
 
 <!-- ## Auto Save
 
@@ -42,11 +42,11 @@ jq '."editor.scrollBeyondLastLine" |= false' "$HOME/.config/Code/User/settings.j
 jq '."editor.wordWrap" |= "on"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
-## Rulers
+<!-- ## Rulers
 
 ```sh
 jq '."editor.rulers" |= [100, 120]' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
-```
+``` -->
 
 <!-- ## Trim Trailing Whitespace
 

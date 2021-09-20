@@ -58,7 +58,7 @@ kubectl delete \
 ### Install
 
 ```sh
-kubectl create namespace metallb-system
+kubectl create ns metallb-system
 ```
 
 ```sh
@@ -100,5 +100,5 @@ kubectl get services -A
 kubectl delete configmap metallb-config -n metallb-system
 
 helm uninstall metallb -n metallb
-kubectl delete namespace metallb-system --grace-period=0 --force
+kubectl delete ns metallb-system --grace-period=0 --force
 ```

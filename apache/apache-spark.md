@@ -87,7 +87,7 @@ code --disable-extension mshdinsight.azure-hdinsight
 ### Install
 
 ```sh
-kubectl create namespace spark
+kubectl create ns spark
 ```
 
 ```sh
@@ -107,7 +107,7 @@ helm install spark stable/spark \
 
 ```sh
 helm uninstall spark -n spark
-kubectl delete namespace spark --grace-period=0 --force
+kubectl delete ns spark --grace-period=0 --force
 ```
 
 ## Docker

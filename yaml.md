@@ -33,6 +33,12 @@
 code --install-extension redhat.vscode-yaml
 ```
 
+<!--
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+-->
+
 ### Merge Key Language
 
 [*Documentation*](http://yaml.org/type/merge.html)

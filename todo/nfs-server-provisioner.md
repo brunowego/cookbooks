@@ -7,7 +7,7 @@ TODO
 ### Install
 
 ```sh
-kubectl create namespace nfs-server
+kubectl create ns nfs-server
 ```
 
 ```sh
@@ -28,5 +28,5 @@ kubectl rollout status deploy/nfs-server-provisioner -n nfs-server
 
 ```sh
 helm uninstall nfs-server-provisioner -n nfs-server-provisioner
-kubectl delete namespace nfs-server --grace-period=0 --force
+kubectl delete ns nfs-server --grace-period=0 --force
 ``` -->

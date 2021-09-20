@@ -177,10 +177,8 @@ helm uninstall [name] \
 #### Autocomplete
 
 ```sh
-# bash
+# Helm
 source <(helm completion bash)
-
-# zsh
 source <(helm completion zsh)
 ```
 
@@ -213,14 +211,16 @@ helm install \
   --wait
 ```
 
-<!-- #### Kubernetes Configuration
+#### Kubernetes Configuration
 
 ```log
 WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: ~/.kube/config
 WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: ~/.kube/config
 ```
 
-TODO -->
+```sh
+chmod go-r ~/.kube/config
+```
 
 <!-- ####
 
@@ -278,7 +278,7 @@ helm repo update
 ```
 
 ```sh
-kubectl create namespace lamp
+kubectl create ns lamp
 ```
 
 ```sh
@@ -298,7 +298,7 @@ helm repo index "$(helm home)/repository/local"
 
 ```sh
 helm uninstall lamp -n lamp
-kubectl delete namespace lamp --grace-period=0 --force
+kubectl delete ns lamp --grace-period=0 --force
 ```
 
 ### Uninstall
@@ -376,7 +376,7 @@ helm history [name] \
   -n [namespace]
 
 #
-helm rollback [name] 1 \
+helm rollback [name] [revision] \
   -n [namespace]
 ```
 

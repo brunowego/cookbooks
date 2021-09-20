@@ -355,3 +355,25 @@ SET
             ) AS new_username
     )
 ```
+
+## Locks
+
+```sql
+SELECT
+    -- distinct (concat('kill ', b.trx_mysql_thread_id, ';'))
+    requesting_trx_id,
+    r.trx_mysql_thread_id as requesting_process_id,
+    r.trx_started as requesting_trx_started,
+    r.trx_query as requesting_trx_query,
+    r.trx_wait_started as requesting_wait_started,
+    blocking_trx_id,
+    b.trx_mysql_thread_id as blocking_process_id,
+    b.trx_started as blocking_trx_started,
+    b.trx_query as blocking_trx_query,
+    b.trx_wait_started as blocking_wait_started,
+    b.trx_query blocking_query
+FROM
+    information_schema.INNODB_LOCK_WAITS
+    INNER JOIN information_schema.INNODB_TRX as r on requesting_trx_id = r.trx_id
+    INNER JOIN information_schema.INNODB_TRX as b on blocking_trx_id = b.trx_id;
+```

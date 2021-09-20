@@ -13,7 +13,7 @@ https://django-rest-framework.programmingpedia.net/en/tutorial/2377/serializers
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 # As user dependency

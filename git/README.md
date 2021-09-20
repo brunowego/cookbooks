@@ -70,14 +70,11 @@ choco install -y git
 ### Bootstrap
 
 ```sh
-# GitHub Flow
-git config --global init.defaultBranch 'master'
+# GitHub Flow/Trunk-Based Development (TBD)
+git config --global init.defaultBranch 'main'
 
 # Git-flow
 git config --global init.defaultBranch 'develop'
-
-# Trunk-Based Development (TBD)
-git config --global init.defaultBranch 'main'
 
 #
 git config --global core.editor 'vim'
@@ -92,6 +89,9 @@ git config --global credential.helper 'manager-core' # Windows
 
 #
 git config --global push.default 'current'
+
+#
+git config --global pull.rebase false
 ```
 
 ### Usage

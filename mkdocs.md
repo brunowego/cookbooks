@@ -4,7 +4,7 @@
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip install mkdocs

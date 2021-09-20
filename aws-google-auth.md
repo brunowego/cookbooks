@@ -14,7 +14,7 @@
 brew install aws-google-auth
 ```
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install aws-google-auth
@@ -24,6 +24,12 @@ pip3 install aws-google-auth
 
 ```sh
 aws-google-auth -h
+```
+
+### Configuration
+
+```sh
+echo '/saml.html' >> ~/.gitignore_global
 ```
 
 ### Usage

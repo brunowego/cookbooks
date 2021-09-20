@@ -13,7 +13,7 @@
 ### Install
 
 ```sh
-kubectl create namespace nfs-client
+kubectl create ns nfs-client
 ```
 
 ```sh
@@ -48,5 +48,5 @@ kubectl logs -l 'app=nfs-client-provisioner' -n nfs-client
 
 ```sh
 helm uninstall nfs-client-provisioner -n nfs-client-provisioner
-kubectl delete namespace nfs-client --grace-period=0 --force
+kubectl delete ns nfs-client --grace-period=0 --force
 ```

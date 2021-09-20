@@ -95,7 +95,7 @@ django-opentracing
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 # 2.x
@@ -509,7 +509,7 @@ antigen bundle django
 ### Manifest
 
 ```yaml
-version: '3.9'
+version: '3'
 
 services:
   django:

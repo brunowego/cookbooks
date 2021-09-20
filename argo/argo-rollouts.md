@@ -21,7 +21,7 @@ Big Bang
 
 ```sh
 #
-kubectl create namespace argo-rollouts
+kubectl create ns argo-rollouts
 
 #
 kubectl apply \
@@ -45,7 +45,7 @@ kubectl delete \
   -f 'https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml'
 
 #
-kubectl delete namespace argo-rollouts
+kubectl delete ns argo-rollouts
 ```
 
 ## CLI

@@ -60,3 +60,10 @@ choco install -y telnet
 ```sh
 man telnet
 ```
+
+### Usage
+
+```sh
+#
+telnet [host] [port]
+```

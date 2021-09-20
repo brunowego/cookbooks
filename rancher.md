@@ -31,7 +31,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace cattle-system
+kubectl create ns cattle-system
 ```
 
 ```sh
@@ -62,12 +62,12 @@ helm uninstall rancher -n rancher
 
 ```sh
 kubectl patch namespace cattle-system -p '{"metadata":{"finalizers":[]}}' --type='merge'
-kubectl delete namespace cattle-system --grace-period=0 --force
+kubectl delete ns cattle-system --grace-period=0 --force
 ```
 
 ```sh
 kubectl patch namespace cattle-global-data -p '{"metadata":{"finalizers":[]}}' --type='merge'
-kubectl delete namespace cattle-global-data --grace-period=0 --force
+kubectl delete ns cattle-global-data --grace-period=0 --force
 ```
 
 ```sh
@@ -75,7 +75,7 @@ kubectl patch namespace local -p '{"metadata":{"finalizers":[]}}' --type='merge'
 
 for resource in `kubectl api-resources --namespaced -o name --verbs=list | xargs -n 1 kubectl get -o name -n local`; do kubectl patch $resource -p '{"metadata":{"finalizers":[]}}' --type='merge' -n local; done
 
-kubectl delete namespace local --grace-period=0 --force
+kubectl delete ns local --grace-period=0 --force
 ```
 
 ```sh
@@ -83,7 +83,7 @@ kubectl delete namespace local --grace-period=0 --force
 kubectl get namespaces
 
 kubectl patch namespace p-xxxxx -p '{"metadata":{"finalizers":[]}}' --type='merge'
-kubectl delete namespace p-xxxxx --grace-period=0 --force
+kubectl delete ns p-xxxxx --grace-period=0 --force
 ```
 
 <!-- ```sh

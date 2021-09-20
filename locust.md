@@ -53,7 +53,7 @@ kubectl create configmap my-loadtest-locustfile \
 
 ```sh
 #
-kubectl create namespace locust
+kubectl create ns locust
 
 #
 cat << EOF | kubectl apply \
@@ -141,7 +141,7 @@ kubectl logs \
 helm uninstall locust \
   -n locust
 
-kubectl delete namespace locust \
+kubectl delete ns locust \
   --grace-period=0 \
   --force
 
@@ -156,7 +156,7 @@ kubectl delete deployment http-https-echo \
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U locust

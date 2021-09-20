@@ -164,6 +164,20 @@ go tool dist list
 
 ### Tips
 
+#### Visual Studio Code
+
+```sh
+# Dependencies
+go get -v golang.org/x/tools/gopls
+go get -v github.com/uudashr/gopkgs/v2/cmd/gopkgs
+go get -v github.com/ramya-rao-a/go-outline
+go get -v github.com/go-delve/delve/cmd/dlv
+go get -v honnef.co/go/tools/cmd/staticcheck
+
+#
+code --install-extension golang.go
+```
+
 #### EditorConfig
 
 ```sh
@@ -184,20 +198,30 @@ GODEBUG=http2debug=2 \
 
 #### Arch
 
-<!-- GOOS windows
-GOARCH amd64
+<!--
+GOOS
+android
+darwin
+freebsd
+openbsd
+windows
+-->
 
-GOOS darwin
-GOARCH amd64
-
-GOOS android
-GOARCH arm -->
+<!--
+GOARCH
+amd64
+arm64
+-->
 
 ```sh
 CGO_ENABLED=0 \
 GOOS=linux \
 GOARCH=amd64 \
-  go build -o [binary]
+  go build \
+    -a \
+    -installsuffix cgo \
+    -o [binary] \
+    ./cmd/[name].go
 ```
 
 #### Linking
@@ -217,20 +241,6 @@ ldd [binary]
 ```sh
 # Using Antigen
 antigen bundle golang
-```
-
-#### Visual Studio Code
-
-```sh
-# Dependencies
-go get -v golang.org/x/tools/gopls
-go get -v github.com/uudashr/gopkgs/v2/cmd/gopkgs
-go get -v github.com/ramya-rao-a/go-outline
-go get -v github.com/go-delve/delve/cmd/dlv
-go get -v honnef.co/go/tools/cmd/staticcheck
-
-#
-code --install-extension golang.go
 ```
 
 ### Uninstall

@@ -13,18 +13,13 @@ helm repo add jaegertracing 'https://jaegertracing.github.io/helm-charts'
 helm repo update
 ```
 
-### Dependencies
-
-- [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
-
 ### Install
 
 ```sh
 #
-kubectl create namespace tracing
-```
+kubectl create ns tracing
 
-```sh
+#
 helm install jaeger-operator jaegertracing/jaeger-operator \
   --namespace tracing \
   --version 2.23.0
@@ -126,7 +121,7 @@ kubectl delete jaeger jaeger-all-in-one \
 helm uninstall jaeger-operator \
   -n tracing
 
-kubectl delete namespace tracing \
+kubectl delete ns tracing \
   --grace-period=0 \
   --force
 ```

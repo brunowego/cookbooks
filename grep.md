@@ -12,6 +12,12 @@ grep --help
 
 ## Tips
 
+### Search in Files
+
+```sh
+grep -lrnw '[/path/to/files]' -e '[text]'
+```
+
 ### Before and After
 
 ```sh

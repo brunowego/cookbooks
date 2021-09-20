@@ -25,7 +25,7 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace elastic-system
+kubectl create ns elastic-system
 ```
 
 ```sh
@@ -70,7 +70,7 @@ echo -e "[INFO]\thttp://apm.${INGRESS_HOST}.nip.io"
 helm uninstall apm-server \
   -n elastic-system
 
-kubectl delete namespace elastic-system \
+kubectl delete ns elastic-system \
   --grace-period=0 \
   --force
 ```

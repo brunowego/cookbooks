@@ -20,7 +20,7 @@ brew install poetry
 curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 ```
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U poetry

@@ -16,7 +16,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace argo-events
+kubectl create ns argo-events
 ```
 
 ```sh
@@ -32,5 +32,5 @@ kubectl rollout status deploy/argo-events-gateway-controller -n argo-events
 
 ```sh
 helm uninstall argo-events -n argo-events
-kubectl delete namespace argo-events --grace-period=0 --force
+kubectl delete ns argo-events --grace-period=0 --force
 ```

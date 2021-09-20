@@ -22,7 +22,7 @@ https://github.com/soumendra/deeplearning-cookbook/blob/master/setting-up/settin
 brew install dvc
 ```
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U dvc

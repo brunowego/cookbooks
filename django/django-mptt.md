@@ -10,7 +10,7 @@ https://tute.io/how-to-rebuild-django-mptt-tree-structure
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 # As user dependency

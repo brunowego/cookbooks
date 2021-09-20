@@ -31,7 +31,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace seldon-system
+kubectl create ns seldon-system
 ```
 
 ```sh
@@ -81,7 +81,7 @@ kubectl delete pod $(kubectl get pod -l 'app.kubernetes.io/name=seldon-core-oper
 
 ```sh
 helm uninstall seldon-core -n seldon-core
-kubectl delete namespace seldon-system --grace-period=0 --force
+kubectl delete ns seldon-system --grace-period=0 --force
 ```
 
 ## Docker
@@ -100,7 +100,7 @@ docker run -it --rm \
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U seldon-core

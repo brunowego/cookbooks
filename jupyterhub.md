@@ -16,7 +16,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace jupyterhub
+kubectl create ns jupyterhub
 ```
 
 ```sh
@@ -35,7 +35,7 @@ helm install jupyterhub jupyterhub/jupyterhub \
 
 ```sh
 helm uninstall jupyterhub -n jupyterhub
-kubectl delete namespace jupyterhub --grace-period=0 --force
+kubectl delete ns jupyterhub --grace-period=0 --force
 ```
 
 ## Docker
@@ -83,7 +83,7 @@ docker rm -f jupyterhub
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U jupyterhub

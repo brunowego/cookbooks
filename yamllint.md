@@ -1,4 +1,9 @@
-# YAMLlint
+# yamllint
+
+## Links
+
+- [Code Repository](https://github.com/adrienverge/yamllint)
+- [Main Website](https://yamllint.readthedocs.io/en/stable/index.html)
 
 ## Docker
 
@@ -45,7 +50,7 @@ sudo apt update
 sudo apt -y install yamllint
 ```
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U yamllint
@@ -55,4 +60,29 @@ pip3 install -U yamllint
 
 ```sh
 yamllint -h
+```
+
+### Configuration
+
+```sh
+cat << EOF > ./.yamllint.yaml
+---
+extends: default
+rules:
+  indentation:
+    spaces: 2
+    indent-sequences: consistent
+  quoted-strings:
+    quote-type: single
+    required: only-when-needed
+  truthy:
+    allowed-values: ['true', 'false', 'yes', 'no']
+EOF
+```
+
+### Usage
+
+```sh
+#
+yamllint ./
 ```

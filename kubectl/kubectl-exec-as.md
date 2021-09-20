@@ -20,6 +20,8 @@ kubectl exec-as -h
 
 ## Usage
 
+**Warning:** This only works in Kubernetes clusters which allow priviledged containers.
+
 ```sh
 #
 kubectl exec-as \

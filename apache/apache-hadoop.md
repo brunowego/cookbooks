@@ -26,7 +26,7 @@ https://www.jowanza.com/blog/which-hadoop-file-format-should-i-use
 ### Install
 
 ```sh
-kubectl create namespace hadoop
+kubectl create ns hadoop
 ```
 
 ```sh
@@ -52,7 +52,7 @@ helm status hadoop
 
 ```sh
 helm uninstall hadoop -n hadoop
-kubectl delete namespace hadoop --grace-period=0 --force
+kubectl delete ns hadoop --grace-period=0 --force
 ```
 
 ## Docker

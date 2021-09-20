@@ -4,7 +4,7 @@
 
 ### Installation
 
-#### PIP3
+#### pip3
 
 ```sh
 pip3 install -U python-gitlab

@@ -139,7 +139,7 @@ SUBSCRIBE [queue_name]
 ### Install
 
 ```sh
-kubectl create namespace redis
+kubectl create ns redis
 ```
 
 ```sh
@@ -201,7 +201,7 @@ kubectl get pvc redis-data-polyaxon-redis-slave-1 -o yaml -n polyaxon | \
 helm uninstall redis \
   -n redis
 
-kubectl delete namespace redis \
+kubectl delete ns redis \
   --grace-period=0 \
   --force
 ```

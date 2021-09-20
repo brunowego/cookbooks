@@ -165,19 +165,6 @@ docker run -d \
   [...]
 ```
 
-### Visual Studio Code
-
-```sh
-code --install-extension ms-azuretools.vscode-docker
-```
-
-```sh
-# Darwin
-osascript -e 'quit app "Visual Studio Code"'
-
-code --disable-extension ms-azuretools.vscode-docker
-```
-
 ### Command-line completion
 
 ```sh

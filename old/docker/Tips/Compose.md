@@ -3,7 +3,7 @@
 ##
 
 ```yml
-version: '3.9'
+version: '3'
 
 services:
   example:
@@ -14,7 +14,7 @@ services:
 ##
 
 ```yml
-version: '3.9'
+version: '3'
 
 services:
   example:
@@ -28,7 +28,7 @@ services:
 ##
 
 ```yml
-version: '3.9'
+version: '3'
 
 services:
   example:
@@ -41,7 +41,7 @@ services:
 ##
 
 ```yml
-version: '3.9'
+version: '3'
 
 services:
   example:
@@ -55,7 +55,7 @@ services:
 ## Long String
 
 ```yml
-version: '3.9'
+version: '3'
 
 services:
   example:
@@ -66,7 +66,7 @@ services:
 ## Linebreaks
 
 ```yml
-version: '3.9'
+version: '3'
 
 services:
   example:

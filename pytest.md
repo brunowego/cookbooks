@@ -13,7 +13,7 @@ https://github.com/quiqua/pytest-dotenv
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 # As user dependency

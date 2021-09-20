@@ -1,3 +1,0 @@
-# ArgoCD Operator
-
-TODO

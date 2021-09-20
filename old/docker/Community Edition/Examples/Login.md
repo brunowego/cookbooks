@@ -31,6 +31,10 @@ jq ".credsStore |= \"osxkeychain\"" ~/.docker/config.json | sponge ~/.docker/con
 > Configure insecure registry.
 
 ```sh
+#
+jq 'del(.credsStore)' ~/.docker/config.json | sponge ~/.docker/config.json
+
+#
 docker login \
   -u [username] \
   [hostname]:5000

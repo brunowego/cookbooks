@@ -33,6 +33,7 @@ dataeng
 - [Attach Handlers to Container Lifecycle Events](https://kubernetes.io/docs/tasks/configure-pod-container/attach-handler-lifecycle-event/)
 - [Debugging DNS Resolution](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/)
 - [DNS Lookups in Kubernetes](https://mrkaran.dev/posts/ndots-kubernetes/)
+- [Publishing Services (ServiceTypes)](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
 
 ## Terms
 

@@ -16,13 +16,13 @@ aws s3api help
 
 ### S3-based Command Sets
 
-**s3**
+#### s3
 
 - Sync file systems
 - Stream data
 - Transfer large files in multiple parts
 
-**s3api**
+#### s3api
 
 - Interact with the AWS API
 - Granular control

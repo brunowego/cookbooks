@@ -14,7 +14,7 @@
 brew install pre-commit
 ```
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U pre-commit

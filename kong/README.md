@@ -13,7 +13,7 @@
 ### Install
 
 ```sh
-kubectl create namespace kong
+kubectl create ns kong
 ```
 
 ```sh
@@ -68,7 +68,7 @@ kubectl get secret kong-postgresql \
 
 ```sh
 helm uninstall kong -n kong
-kubectl delete namespace kong --grace-period=0 --force
+kubectl delete ns kong --grace-period=0 --force
 ```
 
 ## Docker

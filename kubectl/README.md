@@ -120,12 +120,65 @@ kubectl delete secret [secret-name] -n [namespace]
 
 ### Tips
 
+#### Docker Credential
+
+<!--
+cat << EOF | kubectl apply \
+  -n at-backoffice \
+  -f -
+apiVersion: v1
+kind: Secret
+type: kubernetes.io/dockerconfigjson
+metadata:
+  name: docker-registry
+stringData:
+  .dockerconfigjson: '$(aws --output json secretsmanager get-secret-value --secret-id '/global/infra/docker-registry' | jq -r .SecretString)'
+EOF
+-->
+
+```sh
+#
+kubectl create secret generic docker-registry \
+  --from-file=".dockerconfigjson=$HOME/.docker/config.json" \
+  --type=kubernetes.io/dockerconfigjson
+```
+
+#### Filter Pods by IP
+
+```sh
+#
+kubectl get pods -A -o wide | grep [ip-address]
+```
+
+#### Filter Nodes by IP
+
+```sh
+#
+kubectl get nodes -o wide | grep [ip-address]
+```
+
 #### Autocomplete
 
 ```sh
 # Kubernetes Control (kubectl)
 command -v kubectl > /dev/null && source <(kubectl completion zsh)
 alias k=kubectl
+```
+
+#### Rollout Restart Namespace
+
+```sh
+#
+kubectl rollout restart deploy \
+  -n [namespace]
+
+#
+kubectl rollout restart stateful \
+  -n [namespace]
+
+#
+kubectl rollout restart daemonset \
+  -n [namespace]
 ```
 
 #### Get Cluster Server URL

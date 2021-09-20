@@ -26,7 +26,7 @@ helm repo update
 
 ```sh
 #
-kubectl create namespace monitoring
+kubectl create ns monitoring
 
 #
 export INGRESS_HOST='127.0.0.1'
@@ -310,7 +310,7 @@ helm install prometheus-stack prometheus-community/kube-prometheus-stack \
 helm uninstall prometheus-stack \
   -n monitoring
 
-kubectl delete namespace monitoring \
+kubectl delete ns monitoring \
   --grace-period=0 \
   --force
 ```

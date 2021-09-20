@@ -1,3 +1,0 @@
-# NuxtJS
-
-TODO

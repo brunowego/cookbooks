@@ -11,5 +11,8 @@
 
 ```sh
 #
-date +%s | sha256sum | base64 | head -c 32
+date +%s | sha256sum | base64 | head -c 32; echo
+
+#
+openssl rand -base64 32
 ```

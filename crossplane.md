@@ -42,7 +42,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace crossplane-system
+kubectl create ns crossplane-system
 ```
 
 ```

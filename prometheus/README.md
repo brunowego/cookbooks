@@ -75,7 +75,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace monitoring
+kubectl create ns monitoring
 ```
 
 ```sh
@@ -166,7 +166,7 @@ nslookup "prometheus.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```sh
 helm uninstall prometheus -n prometheus
 
-kubectl delete namespace monitoring --grace-period=0 --force
+kubectl delete ns monitoring --grace-period=0 --force
 ```
 
 ## CLI

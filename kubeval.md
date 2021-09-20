@@ -12,19 +12,23 @@
 #### Darwin Binary
 
 ```sh
-curl \
-  -L \
-  'https://github.com/instrumenta/kubeval/releases/download/v0.16.1/kubeval-darwin-amd64.tar.gz' | \
-    tar -xzC /usr/local/bin kubeval
+KUBEVAL_VERSION="$(curl -s https://api.github.com/repos/instrumenta/kubeval/releases/latest | grep tag_name | cut -d '"' -f 4 | tr -d 'v')"; \
+  curl \
+    -L "https://github.com/instrumenta/kubeval/releases/download/v${KUBEVAL_VERSION}/kubeval-darwin-amd64.tar.gz" | \
+      tar \
+        -xzC /usr/local/bin \
+        'kubeval'
 ```
 
 #### Linux Binary
 
 ```sh
-curl \
-  -L \
-  'https://github.com/instrumenta/kubeval/releases/download/v0.16.1/kubeval-linux-amd64.tar.gz' | \
-    tar -xzC /usr/local/bin kubeval
+KUBEVAL_VERSION="$(curl -s https://api.github.com/repos/instrumenta/kubeval/releases/latest | grep tag_name | cut -d '"' -f 4 | tr -d 'v')"; \
+  curl \
+    -L "https://github.com/instrumenta/kubeval/releases/download/v${KUBEVAL_VERSION}/kubeval-linux-amd64.tar.gz" | \
+      tar \
+        -xzC /usr/local/bin \
+        'kubeval'
 ```
 
 #### Chocolatey

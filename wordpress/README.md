@@ -32,7 +32,7 @@ https://pagely.com/blog/react-js-wordpress-rest-api/
 ### Install
 
 ```sh
-kubectl create namespace wordpress
+kubectl create ns wordpress
 ```
 
 ```sh
@@ -115,8 +115,12 @@ kubectl get secret wordpress \
 ### Delete
 
 ```sh
-helm uninstall wordpress -n wordpress
-kubectl delete namespace wordpress --grace-period=0 --force
+helm uninstall wordpress \
+  -n wordpress
+
+kubectl delete ns wordpress \
+  --grace-period=0 \
+  --force
 ```
 
 ## Docker

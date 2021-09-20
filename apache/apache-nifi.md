@@ -28,7 +28,7 @@ helm repo update
 export INGRESS_HOST='127.0.0.1'
 
 #
-kubectl create namespace nifi-system
+kubectl create ns nifi-system
 ```
 
 ```sh
@@ -108,7 +108,7 @@ kubectl get secret nifi \
 helm uninstall nifi \
   -n nifi-system
 
-kubectl delete namespace nifi-system \
+kubectl delete ns nifi-system \
   --grace-period=0 \
   --force
 ```

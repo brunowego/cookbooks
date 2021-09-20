@@ -49,3 +49,15 @@ https://dev.to/mcraealex/setting-up-vue-and-phoenix-1-5-with-vue-cli-488c
 ```sh
 vue create app
 ```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension octref.vetur
+```
+
+<!-- ```sh
+code --install-extension jcbuisson.vue
+``` -->

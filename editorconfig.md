@@ -1,5 +1,9 @@
 # EditorConfig
 
+## Links
+
+- [Main Website](https://editorconfig.org/)
+
 ## Syntax
 
 ### Configuration

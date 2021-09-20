@@ -13,7 +13,7 @@
 ### Install
 
 ```sh
-kubectl create namespace couchdb
+kubectl create ns couchdb
 ```
 
 ```sh
@@ -108,7 +108,7 @@ echo -e "[INFO]\thttp://couchdb.${INGRESS_HOST}.nip.io/_utils/"
 
 ```sh
 helm uninstall couchdb -n couchdb
-kubectl delete namespace couchdb --grace-period=0 --force
+kubectl delete ns couchdb --grace-period=0 --force
 ```
 
 ## Host

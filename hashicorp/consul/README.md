@@ -13,15 +13,11 @@ helm repo add hashicorp 'https://helm.releases.hashicorp.com'
 helm repo update
 ```
 
-### Dependencies
-
-- [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
-
 ### Install
 
 ```sh
 #
-kubectl create namespace consul
+kubectl create ns consul
 
 #
 export INGRESS_HOST='127.0.0.1'
@@ -31,10 +27,6 @@ helm upgrade consul hashicorp/consul \
   --namespace consul \
   --version 0.32.1 \
   -f <(cat << EOF
-global:
-  metrics:
-    enabled: true
-
 server:
   enabled: true
 
@@ -49,10 +41,33 @@ ui:
     - host: consul.${INGRESS_HOST}.nip.io
       paths:
       - /
+EOF
+)
+```
+
+### Prometheus Stack
+
+**Dependencies:** [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
+
+```sh
+#
+kubectl get prometheus \
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
+  -n monitoring
+
+#
+helm upgrade consul hashicorp/consul \
+  --namespace consul \
+  -f <(yq m <(cat << EOF
+global:
+  metrics:
+    enabled: true
+
+ui:
   metrics:
     enabled: true
 EOF
-)
+) <(helm get values consul --namespace consul))
 ```
 
 ### Status
@@ -78,7 +93,7 @@ kubectl logs \
 helm uninstall consul \
   -n consul
 
-kubectl delete namespace consul \
+kubectl delete ns consul \
   --grace-period=0 \
   --force
 ```

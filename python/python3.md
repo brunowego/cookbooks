@@ -208,7 +208,7 @@ python3 --version 2>&1 | head -1
 # HTTP Server
 python3 \
   -m http.server \
-  --cgi
+  --cgi \
   3000
 
 #

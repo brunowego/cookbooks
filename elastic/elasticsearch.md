@@ -65,7 +65,7 @@ helm repo update
 
 ```sh
 #
-kubectl create namespace elastic
+kubectl create ns elastic
 
 #
 export INGRESS_HOST='127.0.0.1'
@@ -159,7 +159,7 @@ curl \
 helm uninstall elasticsearch \
   -n elastic
 
-kubectl delete namespace elastic \
+kubectl delete ns elastic \
   --grace-period=0 \
   --force
 ```

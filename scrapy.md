@@ -11,7 +11,7 @@ https://app.pluralsight.com/guides/crawling-web-python-scrapy
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip3 install -U scrapy

@@ -30,7 +30,7 @@ curl -L 'https://github.com/dremio/dremio-cloud-tools/archive/master.tar.gz' | \
 ### Install
 
 ```sh
-kubectl create namespace dremio
+kubectl create ns dremio
 ```
 
 ```sh
@@ -102,7 +102,7 @@ kubectl logs \
 helm uninstall dremio-oss \
   -n dremio
 
-kubectl delete namespace dremio \
+kubectl delete ns dremio \
   --grace-period=0 \
   --force
 ```

@@ -199,7 +199,7 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create namespace postgresql
+kubectl create ns postgresql
 ```
 
 ```sh
@@ -250,7 +250,7 @@ kubectl get secret postgresql \
 helm uninstall postgresql \
   -n postgresql
 
-kubectl delete namespace postgresql \
+kubectl delete ns postgresql \
   --grace-period=0 \
   --force
 ```
