@@ -7,20 +7,67 @@ https://www.jetstack.io/blog/kustomize-cert-manager/
 ##
 
 ```sh
-cat << EOF > ./kustomization.yaml
+#
+mkdir -p ./.k8s/base
+
+cat << EOF > ./.k8s/base/kustomization.yaml
+---
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-
-commonLabels:
-  app: helloweb
-
-namespace: helloweb
 
 resources:
 - namespace.yaml
 - deployment.yaml
 - service.yaml
 - ingress.yaml
+
+configMapGenerator:
+- name: my-app-metadata
+
+vars:
+- name: APP_ENV
+  objref:
+    kind: ConfigMap
+    name: my-app-metadata
+    apiVersion: v1
+  fieldref:
+    fieldpath: data.APP_ENV
+- name: APP_HOST
+  objref:
+    kind: ConfigMap
+    name: my-app-metadata
+    apiVersion: v1
+  fieldref:
+    fieldpath: data.APP_HOST
+EOF
+
+#
+mkdir -p ./.k8s/overlays/local
+
+cat << EOF > ./.k8s/overlays/local/.env
+APP_ENV=local
+APP_HOST=my-app.127.0.0.1.nip.io
+EOF
+
+cat << EOF > ./.k8s/overlays/local/kustomization.yaml
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+commonLabels:
+  io.arcotech.app: my-app
+
+namePrefix: my-app-
+namespace: my-app
+
+bases:
+- ../../base
+
+configMapGenerator:
+- behavior: merge
+  envs:
+  - .env
+  name: my-app-metadata
 EOF
 ```
 

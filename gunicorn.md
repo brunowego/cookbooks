@@ -40,6 +40,7 @@ RuntimeError: /dev/shm doesn't exist. Can't create workertmp.
 TODO
 
 <!--
+--worker-tmp-dir=
 --worker-tmp-dir /dev/shm
 -->
 

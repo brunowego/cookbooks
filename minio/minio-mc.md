@@ -36,7 +36,7 @@ mc policy [public|upload|download|list] [repo]/[bucket]
 ```
 
 <!--
-mc --insecure alias set minio https://${MINIO_SERVICE_HOST}:${MINIO_SERVICE_PORT_HTTP_MINIO} "${MINIO_ACCESS_KEY}" "${MINIO_SECRET_KEY}"
+mc --insecure alias set minio https://${MINIO_SERVICE_HOST}:${MINIO_SERVICE_PORT_HTTP_MINIO} "${MINIO_ROOT_USER}" "${MINIO_ROOT_PASSWORD}"
 
 mc --insecure cp report-${HOSTNAME}.html minio/artillery
 -->

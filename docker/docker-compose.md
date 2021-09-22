@@ -68,7 +68,6 @@ rm ~/.zcompdump*
 
 ### Manifest
 
-
 ```yaml
 version: '3'
 

@@ -143,17 +143,18 @@ docker network create workbench \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h minio \
-  -e MINIO_ACCESS_KEY='AKIAIOSFODNN7EXAMPLE' \
-  -e MINIO_SECRET_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY' \
+  -e MINIO_ROOT_USER='minio' \
+  -e MINIO_ROOT_PASSWORD='minio123' \
   -v minio-data:/data \
   -p 9000:9000 \
+  -p 9001:9001 \
   --name minio \
   --network workbench \
-  docker.io/minio/minio:RELEASE.2019-05-23T00-29-34Z server /data
+  docker.io/minio/minio:RELEASE.2021-09-18T18-09-59Z server /data --console-address ':9001'
 ```
 
 ```sh
-echo -e '[INFO]\thttp://127.0.0.1:9000'
+echo -e '[INFO]\thttp://127.0.0.1:9001'
 ```
 
 ### Remove

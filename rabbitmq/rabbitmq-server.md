@@ -238,6 +238,7 @@ docker network create workbench \
 ### Running
 
 ```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h rabbitmq \

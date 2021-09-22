@@ -19,8 +19,9 @@ brew install gcc
 ```sh
 sudo apt update
 sudo apt -y install gcc
-# libc6-dev
 ```
+
+<!-- libgcc-8-dev -->
 
 #### YUM
 

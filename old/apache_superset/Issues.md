@@ -20,16 +20,19 @@ pip3 install -U pandas==0.23.4
 OSError: mysql_config not found
 ```
 
-### YUM
-
 ```sh
+# Homebrew
+brew install mysql
+
+# APT
+sudo apt update
+sudo apt -y install libmariadb-dev
+
+# YUM
 yum check-update
 sudo yum -y install mysql-community-devel
-```
 
-### APK
-
-```sh
+# APK
 sudo apk update
 sudo apk add mariadb-dev
 ```

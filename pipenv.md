@@ -54,6 +54,10 @@ EOF
 
 #
 pipenv install
+pipenv install --system
+
+#
+pipenv lock --requirements
 
 #
 pipenv shell
@@ -70,9 +74,22 @@ pipenv run pytest
 
 #
 pipenv graph
+
+#
+pipenv check
 ```
 
 ### Tips
+
+#### Remove Virtualenv
+
+```sh
+#
+pipenv --venv
+
+#
+pipenv --rm
+```
 
 #### Visual Studio Code
 
@@ -99,9 +116,9 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /usr/src/app
 
-COPY ./Pipfile ./Pipfile.lock ./
+COPY ./Pipfile* ./
 
-RUN pip install --no-cache-dir \
+RUN pip install -q --no-cache-dir \
       pipenv===2021.5.29 && \
         pipenv install --system
 EOF
@@ -115,11 +132,11 @@ EOF
 ```
 
 <!--
-RUN apt-get update && \
-    apt-get --no-install-recommends -y install \
+RUN apt-get -qq update && \
+    apt-get -qq --no-install-recommends -y install \
       gcc=4:8.3.0-1 && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+        apt-get clean && \
+          rm -rf /var/lib/apt/lists/*
 -->
 
 <!--

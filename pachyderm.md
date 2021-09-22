@@ -19,8 +19,8 @@ helm install pachyderm stable/pachyderm \
   --set etcd.persistence.enabled=true \
   --set etcd.persistence.accessMode=ReadWriteMany \
   --set credentials=s3 \
-  --set s3.accessKey='AKIAIOSFODNN7EXAMPLE' \
-  --set s3.secretKey='wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY' \
+  --set s3.accessKey='minio' \
+  --set s3.secretKey='minio123' \
   --set s3.bucketName=pachyderm \
   --set s3.endpoint=minio.example.com
 ```

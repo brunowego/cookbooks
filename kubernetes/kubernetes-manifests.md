@@ -54,6 +54,20 @@ spec:
         # imagePullPolicy: IfNotPresent
 ```
 
+## Image Pull Secrets
+
+```yaml
+# ...
+spec:
+  # ..
+  template:
+    # ...
+    spec:
+      # ...
+      imagePullSecrets:
+      - name: arcotech-docker-registry
+```
+
 ## Rolling Strategy
 
 ```yaml

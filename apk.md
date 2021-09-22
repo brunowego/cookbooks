@@ -48,6 +48,9 @@ RUN apk add -q --no-cache \
 ```Dockerfile
 RUN apk add -q --no-cache -t .build-deps \
       [package]==[version]
+
+# ...
+
 RUN apk del --purge .build-deps
 ```
 

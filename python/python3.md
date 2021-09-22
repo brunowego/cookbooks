@@ -283,12 +283,9 @@ ln -s /usr/bin/python3 /usr/bin/python
 code --install-extension ms-python.python
 
 #
-# code --install-extension ms-python.vscode-pylance
-```
+code --install-extension ms-python.vscode-pylance
 
-```sh
 jq '."python.languageServer" |= "Pylance"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
-
 jq '."python.showStartPage" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 

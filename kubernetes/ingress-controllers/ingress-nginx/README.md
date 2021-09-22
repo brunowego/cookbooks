@@ -307,6 +307,12 @@ minikube tunnel
 
 ### Issues
 
+####
+
+```sh
+502 Bad Gateway
+```
+
 #### DDos Attack
 
 ```log

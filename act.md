@@ -83,6 +83,11 @@ act release \
   --rm \
   -v
 
+# Run on workflow dispatch
+act workflow_dispatch \
+  --rm \
+  -v
+
 # Run specific job
 act \
   -j [name] \
@@ -95,6 +100,23 @@ ls ~/.cache/act
 ```
 
 ### Tips
+
+### Inputs
+
+```sh
+#
+act workflow_dispatch \
+  -j [name] \
+  -e <(cat << EOF
+{
+  "action": "workflow_dispatch",
+  "inputs": {
+    "name": "Mr. Bill"
+  }
+}
+EOF
+)
+```
 
 ### Visual Studio Code
 

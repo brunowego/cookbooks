@@ -31,8 +31,8 @@ EOF
 ```sh
 docker run -d \
   -h minio \
-  -e MINIO_ACCESS_KEY='AKIAIOSFODNN7EXAMPLE' \
-  -e MINIO_SECRET_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY' \
+  -e MINIO_ROOT_USER='minio' \
+  -e MINIO_ROOT_PASSWORD='minio123' \
   -v example-minio-data:/data \
   -p 9000:9000 \
   --name example-minio \
@@ -43,8 +43,8 @@ docker run -d \
 docker run -d \
   -h mlflow \
   -e MLFLOW_S3_ENDPOINT_URL='http://example-minio:9000' \
-  -e AWS_ACCESS_KEY_ID='AKIAIOSFODNN7EXAMPLE' \
-  -e AWS_SECRET_ACCESS_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY' \
+  -e AWS_ACCESS_KEY_ID='minio' \
+  -e AWS_SECRET_ACCESS_KEY='minio123' \
   -p 5000:5000 \
   --name example-mlflow \
   example/mlflow:latest server --backend-store-uri /tmp/mlflow --default-artifact-root s3://mlflow/artifacts -h 0.0.0.0

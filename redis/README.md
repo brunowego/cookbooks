@@ -236,7 +236,8 @@ docker run -d \
   -p 6379:6379 \
   --name redis \
   --network workbench \
-  docker.io/library/redis:5.0.5-alpine3.9 /bin/sh -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
+  --entrypoint /bin/sh \
+  docker.io/library/redis:5.0.5-alpine3.9 -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
 ```
 
 ### Remove

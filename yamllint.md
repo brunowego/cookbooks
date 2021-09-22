@@ -68,6 +68,9 @@ yamllint -h
 cat << EOF > ./.yamllint.yaml
 ---
 extends: default
+ignore: |
+  **/node_modules/**/*
+  **/vendor/**
 rules:
   indentation:
     spaces: 2
@@ -85,4 +88,19 @@ EOF
 ```sh
 #
 yamllint ./
+```
+
+### Tips
+
+#### Ignore
+
+```yaml
+# yamllint disable-line rule:truthy
+# ...
+```
+
+#### Visual Studio Code
+
+```sh
+code --install-extension fnando.linter
 ```

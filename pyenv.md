@@ -75,6 +75,8 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+
+eval "$(pyenv init --path)"
 ```
 
 ```sh
@@ -115,9 +117,6 @@ pyenv versions
 # Set
 pyenv local [version]
 pyenv global [version]
-
-# Initialize
-eval "$(pyenv init --path)"
 
 #
 pyenv uninstall -f [version]
