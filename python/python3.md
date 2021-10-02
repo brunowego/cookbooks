@@ -209,6 +209,7 @@ python3 --version 2>&1 | head -1
 python3 \
   -m http.server \
   --cgi \
+  -b my-app.127.0.0.1.nip.io \
   3000
 
 #

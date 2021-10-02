@@ -30,6 +30,18 @@ sudo curl \
 
 ### Tips
 
+#### pre-commit
+
+```yaml
+---
+repos:
+- repo: https://github.com/hadolint/hadolint
+  rev: v2.7.0
+  hooks:
+  - id: hadolint
+    stages: [commit]
+```
+
 #### Visual Studio Code
 
 ```sh

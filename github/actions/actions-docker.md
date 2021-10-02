@@ -6,13 +6,13 @@
 name: Docker Build and Push
 
 on:
-  push:
+  pull_request:
     branches:
     - main
     paths:
     - docker/**
     - '!docker/README.md'
-  pull_request:
+  push:
     branches:
     - main
     paths:

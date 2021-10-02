@@ -27,8 +27,6 @@ https://github.com/search?o=desc&q=filename%3A.yaml+path%3A.github%2Fworkflows+%
 
 setup-[name]
 action-[name]
-
-ACTIONS_STEP_DEBUG true
 -->
 
 ## Guides
@@ -49,6 +47,11 @@ ACTIONS_STEP_DEBUG true
 - [Starter Workflows](https://github.com/actions/starter-workflows)
 - [Become a GitHub Actions Hero](https://github-actions-hero.vercel.app/)
 - [Feather - Simply beautiful open source icons](https://feathericons.com)
+- [Enabling debug logging](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging)
+
+## Blog
+
+- [GitHub Actions: Skip pull request and push workflows with [skip ci]](https://github.blog/changelog/2021-02-08-github-actions-skip-pull-request-and-push-workflows-with-skip-ci/)
 
 ## Terms
 

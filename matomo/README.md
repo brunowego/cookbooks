@@ -1,6 +1,8 @@
 # Matomo (A.k.a Piwik)
 
 <!--
+https://xdeb.org/post/2020/01/14/content-security-policy-headers-when-using-matomo-or-google-analytics/
+
 https://github.com/brunowego/HenriquetSteve_TFE_Juin2019
 https://github.com/hotosm/matomo-tracking
 https://github.com/ministryofjustice/matomo-scrape
@@ -27,9 +29,17 @@ https://stats.data.gouv.fr/
   - [Database schema](https://developer.matomo.org/guides/persistence-and-the-mysql-backend)
 - [Email Reports](https://matomo.org/docs/email-reports/)
 
+## Guides
+
+- [Matomo ensures the privacy of your users and analytics data](https://matomo.org/privacy/#toc-step-4-respect-donottrack-preference)
+
 ## Code Snippets
 
 - [Environment Variables](https://github.com/matomo-org/matomo/blob/5ae8668181ff6e622a290df6321c006ef30284e1/plugins/Installation/FormDatabaseSetup.php#L84-L99)
+
+## Terms
+
+- [Content Security Policy (CSP)](/csp.md)
 
 ## Docker
 
@@ -42,7 +52,10 @@ docker network create workbench \
 
 ### Running
 
+#### Apache with PHP CGI
+
 ```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mysql \
@@ -55,9 +68,48 @@ docker run -d \
   --name matomo-mysql \
   --network workbench \
   docker.io/library/mysql:5.7.19
+
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h matomo \
+  -e VIRTUAL_HOST='matomo.127.0.0.1.nip.io' \
+  -e MATOMO_DATABASE_HOST='matomo-mysql' \
+  -e MATOMO_DATABASE_USERNAME='matomo' \
+  -e MATOMO_DATABASE_PASSWORD='matomo' \
+  -e MATOMO_DATABASE_ADAPTER='MYSQLI' \
+  -e MATOMO_DATABASE_DBNAME='matomo_dev' \
+  -e MATOMO_DATABASE_TABLES_PREFIX='matomodev_' \
+  -v matomo-data:/var/www/html \
+  -p 8080:80 \
+  --name matomo \
+  --network workbench \
+  docker.io/library/matomo:4.4.1-apache
 ```
 
 ```sh
+# Open
+echo -e '[INFO]\thttp://matomo.127.0.0.1.nip.io:8080'
+```
+
+#### NGINX with PHP-FPM
+
+```sh
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h mysql \
+  -e MYSQL_ROOT_PASSWORD='root' \
+  -e MYSQL_USER='matomo' \
+  -e MYSQL_PASSWORD='matomo' \
+  -e MYSQL_DATABASE='matomo_dev' \
+  -v matomo-mysql-data:/var/lib/mysql \
+  -p 3306:3306 \
+  --name matomo-mysql \
+  --network workbench \
+  docker.io/library/mysql:5.7.19
+
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h matomo \
@@ -71,20 +123,21 @@ docker run -d \
   -p 9000:9000 \
   --name matomo \
   --network workbench \
-  docker.io/library/matomo:3.14.1-fpm-alpine
+  docker.io/library/matomo:4.4.1-fpm-alpine
 ```
 
-#### SSL
-
-##### With
+##### With SSL
 
 ```sh
+#
 sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/matomo.local
 mkdir -p /etc/ssl/certs/matomo.local/{ca,server,client}
 
+#
 CAROOT=/etc/ssl/certs/matomo.local/ca \
   mkcert -install
 
+#
 CAROOT=/etc/ssl/certs/matomo.local/ca \
   mkcert \
     -cert-file /etc/ssl/certs/matomo.local/server/server.pem \
@@ -95,9 +148,8 @@ CAROOT=/etc/ssl/certs/matomo.local/ca \
     localhost \
     127.0.0.1 \
     ::1
-```
 
-```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h nginx \
@@ -108,9 +160,8 @@ docker run -d \
   --name matomo-nginx \
   --network workbench \
   docker.io/library/nginx:1.17.5-alpine
-```
 
-```sh
+#
 docker exec -i matomo-nginx /bin/sh << \EOSHELL
 cat << \EOF > /etc/nginx/conf.d/matomo.conf
 upstream php-handler {
@@ -144,9 +195,8 @@ server {
 
 EOF
 EOSHELL
-```
 
-```sh
+#
 docker restart matomo-nginx
 ```
 
@@ -158,9 +208,10 @@ curl -ik 'https://127.0.0.1:8443/health-check'
 echo -e '[INFO]\thttps://127.0.0.1:8443'
 ```
 
-##### Without
+##### Without SSL
 
 ```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h nginx \
@@ -170,9 +221,8 @@ docker run -d \
   --name matomo-nginx \
   --network workbench \
   docker.io/library/nginx:1.17.5-alpine
-```
 
-```sh
+#
 docker exec -i matomo-nginx /bin/sh << \EOSHELL
 cat << \EOF > /etc/nginx/conf.d/matomo.conf
 upstream php-handler {
@@ -203,9 +253,8 @@ server {
 
 EOF
 EOSHELL
-```
 
-```sh
+#
 docker restart matomo-nginx
 ```
 
@@ -217,7 +266,7 @@ curl -ik 'http://127.0.0.1:8080/health-check'
 echo -e '[INFO]\thttp://127.0.0.1:8080'
 ```
 
-####
+### Setup
 
 1. Welcome! -> Next
 2. System Check -> Next
@@ -243,7 +292,49 @@ docker exec -i matomo ./console config:set \
   --value='0'
 ```
 
-<!-- ```sh
+### Tips
+
+#### Support Do Not Track preference
+
+1. Administration
+2. Privacy -> Users opt-out
+3. Support Do Not Track preference Section
+   - Select Disable Do Not Track support
+   - Save
+
+#### Test Connection
+
+```sh
+curl \
+  -d action_name=Home \
+  -d idsite=1 \
+  -d rec=1 \
+  -d r=536979 \
+  -d h=10 \
+  -d m=43 \
+  -d s=35 \
+  -d url=http://test.127.0.0.1.nip.io:3000/ \
+  -d urlref=http://test.127.0.0.1.nip.io:3000/test.html \
+  -d uid=brunowego \
+  -d _id=e8bb2742a5d2a568 \
+  -d _idn=0 \
+  -d _refts=0 \
+  -d send_image=0 \
+  -d cookie=1 \
+  -d res=2560x1440 \
+  -d pv_id=PzBoxV \
+  -d pf_net=27 \
+  -d pf_srv=2 \
+  -d pf_tfr=0 \
+  -d pf_dm1=36 \
+  -X POST \
+  -v \
+  http://matomo.127.0.0.1.nip.io:8080/matomo.php
+```
+
+#### Get Last Insert ID
+
+```sh
 mysql \
   -h 127.0.0.1 \
   -P 3306 \
@@ -251,7 +342,7 @@ mysql \
   -u matomo \
   -p'matomo' \
   -ve 'SELECT LAST_INSERT_ID();'
-``` -->
+```
 
 <!-- ```sh
 mysql \
@@ -277,13 +368,15 @@ from
 EOSQL
 ``` -->
 
+#### Arquive Site
+
 ```sh
 docker exec -i matomo ./console core:archive \
-  --url 'https://127.0.0.1:8443' \
+  --url 'https://127.0.0.1:8080' \
   --force-idsites 1
 ```
 
-### Database
+#### Backup and Restore Database
 
 ```sh
 # Backup
@@ -305,24 +398,28 @@ mysql \
   < /path/to/dump/matomo-$(gdate +%Y-%m-%d-%H-%M).sql
 ```
 
-### State
-
-```sh
-#
-docker stop matomo-mysql matomo matomo-nginx
-
-#
-docker start matomo-mysql matomo matomo-nginx
-```
-
 ### Remove
 
 ```sh
-docker rm -f matomo-mysql matomo matomo-nginx
+# With Apache
+docker rm -f \
+  matomo-mysql \
+  matomo
 
-docker volume rm matomo-mysql-data matomo-data matomo-nginx-conf
+docker volume rm \
+  matomo-mysql-data \
+  matomo-data
 
-docker network rm workbench
+# With Nginx
+docker rm -f \
+  matomo-mysql \
+  matomo \
+  matomo-nginx
+
+docker volume rm \
+  matomo-mysql-data \
+  matomo-data \
+  matomo-nginx-conf
 ```
 
 ## Kubernetes Manifest
@@ -1516,10 +1613,20 @@ rm -fR /usr/src/matomo
 
 ### Tips
 
+#### Tracking No Script
+
+```html
+<noscript>
+  <p>
+    <img referrerpolicy="no-referrer-when-downgrade" src="//matomo.example.com/matomo.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+  </p>
+</noscript>
+```
+
 #### Google Search Operators
 
 ```txt
-allintitle:"Metabase" site:.com "Sign in to Metabase"
+allintitle:"Sign in - Matomo" site:.com
 ```
 
 #### Email Settings

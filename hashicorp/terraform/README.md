@@ -1,6 +1,8 @@
 # HashiCorp Terraform
 
 <!--
+https://github.com/im2nguyen/rover
+
 https://github.com/resource-watch/api-infrastructure
 
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/subnet
@@ -162,7 +164,7 @@ terraform -h
 ### Configuration
 
 ```sh
-cat << EOF >> ./gitignore
+cat << EOF >> ./.terraform/.gitignore
 /terraform.tfstate.d
 /*.tfplan
 /*.tfstate
@@ -210,9 +212,9 @@ terraform plan \
 
 #
 terraform plan \
-  -state './dev/dev.state' \
-  -var-file './common.tfvars' \
-  -var-file './dev/dev.tfvars'
+  -state './.terraform/dev/dev.state' \
+  -var-file './.terraform/common.tfvars' \
+  -var-file './.terraform/dev/dev.tfvars'
 
 #
 terraform plan -var '[variable]=[value]'
@@ -250,7 +252,7 @@ terraform state list
 #
 terraform destroy \
   -target '[state]' \
-  -var-file "./vars/terraform-$(terraform workspace show).tfvars"
+  -var-file "./.terraform/vars/terraform-$(terraform workspace show).tfvars"
 ```
 
 <!-- #### Import
@@ -303,6 +305,8 @@ terraform graph | dot -Tsvg > graph.svg
 ```
 
 #### Visual Studio Code
+
+**Tips:** Code format with [Prettier](/prettier.md)
 
 ```sh
 #

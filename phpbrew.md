@@ -16,9 +16,10 @@
 - [PHP](/php/README.md)
 - [pkg-config](/pkg-config.md)
 - [libxml2](/libxml2.md)
-- [bzip2](/bzip2.md)
+- [BZip2](/bzip2.md)
 - [libzip](/libzip.md)
 - [GNU Wget](/gnu-wget.md)
+- [OpenSSL](/openssl.md)
 
 <!--
 - [GCC](/gcc.md)
@@ -144,7 +145,8 @@ More [downloader options](https://github.com/phpbrew/phpbrew/tree/master/src/Php
 # Versions List
 phpbrew known \
   -u \
-  --downloader=wget
+  --downloader=wget \
+  --old
 
 # Variants
 phpbrew variants
@@ -215,6 +217,39 @@ phpbrew -d ext install \
 ```
 
 ### Issues
+
+#### Missing Initialize
+
+```sh
+Exception: Can't store release json file
+```
+
+Missing run `phpbrew init`.
+
+#### OpenSSL MacOS Issue
+
+```log
+ld: symbol(s) not found for architecture x86_64
+make: *** [sapi/cli/php] Error 1
+Error: Make failed: make: *** [sapi/cli/php] Error 1
+```
+
+```sh
+phpbrew -d install \
+  # ... \
+  --no-patch
+```
+
+#### mbstring Error
+
+```log
+make: *** [ext/mbstring/libmbfl/filters/mbfilter_utf8_mobile.lo] Error 1
+Error: Make failed: make: *** [ext/mbstring/libmbfl/filters/mbfilter_utf8_mobile.lo] Error 1
+```
+
+```sh
+export CFLAGS='-Wno-implicit-function-declaration'
+```
 
 #### Missing pkg-config
 
@@ -365,7 +400,7 @@ phpbrew -d install \
 phpbrew -d install \
   [...] \
   # Homebrew
-  +openssl="$(brew --prefix openssl)"
+  +openssl="$(brew --prefix openssl@1.1)"
   # Linux
   +openssl=shared
 ```

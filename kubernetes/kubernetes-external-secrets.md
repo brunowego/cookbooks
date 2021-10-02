@@ -140,6 +140,24 @@ kubectl get pods \
 
 ### Issues
 
+<!-- ####
+
+```log
+ERROR, Secrets Manager can't find the specified secret.
+```
+
+https://github.com/external-secrets/kubernetes-external-secrets/issues/428#issuecomment-657722350
+
+TODO -->
+
+<!-- ####
+
+```log
+kubernetes-external-secrets-777dbfb555-kkl4k kubernetes-external-secrets {"level":50,"message_time":"2021-09-30T22:44:06.692Z","pid":17,"hostname":"kubernetes-external-secrets-777dbfb555-kkl4k","payload":{"message":"Secrets Manager can't find the specified secret.","code":"ResourceNotFoundException","time":"2021-09-30T22:44:06.691Z","requestId":"7e66a243-6bf8-43d4-ba09-03cb858e2530","statusCode":400,"retryable":false,"retryDelay":99.50371757173153},"msg":"failure while polling the secret [namespace]/[my-secret]"}
+```
+
+TODO -->
+
 #### Manual Creation
 
 ```sh

@@ -27,22 +27,7 @@ jobs:
         # Disabling shallow clone is recommended for improving relevancy of reporting
         fetch-depth: 0
 
-    - name: Install Python 3
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
-
-    - name: Install dependencies
-      env:
-        LC_ALL: C.UTF-8
-        LANG: C.UTF-8
-      run: |
-        python3 -m pip install -U pip
-        python3 -m pip install pipenv
-        pipenv install --dev
-
-    - name: Run tests with pytest
-      run: pipenv run pytest --cov ./ --cov-report xml:./coverage.xml
+    # ...
 
     # FIXME: Someone is overwrite of the SonarQube binary path.
     # https://community.sonarsource.com/t/github-action-sonarsource-sonarcloud-github-action-stopped-working/36665/4

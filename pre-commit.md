@@ -31,7 +31,7 @@ pre-commit -h
 
 ```sh
 #
-pre-commit clean
+pre-commit sample-config
 
 #
 pre-commit install
@@ -39,4 +39,23 @@ pre-commit install-hooks
 
 #
 pre-commit run
+pre-commit run --all-files
+
+pre-commit run hadolint-docker --all-files
+
+#
+pre-commit clean
 ```
+
+### Issues
+
+#### Missing All Files
+
+```log
+black................................................(no files to check)Skipped
+flake8...............................................(no files to check)Skipped
+isort................................................(no files to check)Skipped
+Lint Dockerfiles.....................................(no files to check)Skipped
+```
+
+Use with flag `--all-files`.

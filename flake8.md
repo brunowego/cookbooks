@@ -53,6 +53,18 @@ flake8
 
 ### Tips
 
+#### pre-commit
+
+```yaml
+---
+repos:
+- repo: https://gitlab.com/pycqa/flake8
+  rev: 3.9.2
+  hooks:
+  - id: flake8
+    stages: [commit]
+```
+
 #### NO Quality Assurance
 
 ```py

@@ -135,6 +135,16 @@ open ios/Runner.xcworkspace
 
 ### Issues
 
+#### Tool `xcodebuild` Requires Xcode
+
+```log
+xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+```
+
+```sh
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+```
+
 #### Agreeing License
 
 ```log
@@ -146,16 +156,6 @@ sudo xcodebuild -license
 ```
 
 Or open Xcode and accept the terms.
-
-#### Tool `xcodebuild` Requires Xcode
-
-```log
-xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
-```
-
-```sh
-sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
-```
 
 <!-- ####
 

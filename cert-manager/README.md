@@ -4,13 +4,69 @@
 kubectl patch ingress/mobilecapture-mobile-capture -p '{"metadata":{"annotations":{"cert-manager.io/issuer":"letsencrypt-prod"}}}'
 
 https://github.com/Thakurvaibhav/k8s/tree/master/cert-manager
+
+https://github.com/kubernetes-up-and-running/kuard
 -->
+
+## Links
+
+- [Code Repository](https://github.com/jetstack/cert-manager)
+- [Main Website](https://cert-manager.io/)
+
+## Guides
+
+- [Securing NGINX-ingress](https://cert-manager.io/docs/tutorials/acme/ingress/)
+- [Troubleshooting Issuing ACME Certificates](https://cert-manager.io/docs/faq/acme/)
+
+## Certificate Authority
+
+- [Let's Encrypt](/letsencrypt.md)
+
+## kubectl
+
+### Guides
+
+- [Kubectl plugin](https://cert-manager.io/next-docs/usage/kubectl-plugin/)
+
+### Installation
+
+```sh
+kubectl krew install cert-manager
+```
+
+### Commands
+
+```sh
+kubectl cert-manager help
+```
+
+### Usage
+
+```sh
+#
+kubectl cert-manager check api
+
+#
+kubectl cert-manager status certificate [name]
+
+#
+kubectl delete certificaterequest [name]
+
+#
+kubectl cert-manager renew [name]
+```
 
 ## Helm
 
 ### References
 
 - [Helm Charts](https://github.com/jetstack/cert-manager/tree/master/deploy/charts/cert-manager)
+
+### Dependencies
+
+- Ingress Controller
+  - [Kubernetes NGINX Ingress Controller](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm)
+- [Kubernetes ExternalDNS](/kubernetes/kubernetes-external-dns.md#helm)
 
 ### Repository
 
@@ -22,15 +78,22 @@ helm repo update
 ### Install
 
 ```sh
+#
 kubectl create ns cert-manager
-```
 
-```sh
+#
 helm install cert-manager jetstack/cert-manager \
   --namespace cert-manager \
   --version v1.4.0 \
   -f <(cat << EOF
 installCRDs: true
+
+ingressShim:
+  defaultIssuerKind: ClusterIssuer
+  defaultIssuerName: letsencrypt-issuer
+
+prometheus:
+  enabled: false
 EOF
 )
 ```
@@ -38,7 +101,164 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status deploy/cert-manager -n cert-manager
+kubectl rollout status deploy/cert-manager \
+  -n cert-manager
+```
+
+### Cluster Issuer
+
+```sh
+#
+cat << EOF |
+apiVersion: cert-manager.io/v1alpha2
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-issuer
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: [your@email.com]
+    privateKeySecretRef:
+      name: letsencrypt-issuer
+    solvers:
+    - http01:
+        ingress:
+          class: nginx
+    # - selector:
+    #     dnsZones:
+    #     - domain.com
+    #   dns01:
+    #     route53:
+    #       region: eu-east-1
+    #       accessKeyID: [SECRET]
+    #       secretAccessKeySecretRef:
+    #         name: cert-manager-route53
+    #         key: AWS_SECRET_ACCESS_KEY
+EOF
+
+#
+kubectl get clusterissuer
+
+#
+kubectl describe clusterissuer letsencrypt-issuer
+```
+
+<!-- ####
+
+Identity and Access Management (IAM) -> Users -> letsencrypt-issuer
+Identity and Access Management (IAM) -> Policies -> letsencrypt-issuer
+
+```sh
+cat << EOF > ./letsencrypt-issuer.json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "route53:GetChange",
+      "Resource": "arn:aws:route53:::change/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "route53:ChangeResourceRecordSets",
+      "Resource": "arn:aws:route53:::hostedzone/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "route53:ListHostedZonesByName",
+      "Resource": "*"
+    }
+  ]
+}
+EOF
+``` -->
+
+### Ingress
+
+```sh
+#
+kubectl annotate ingress \
+  [ingress-name] \
+  cert-manager.io/cluster-issuer='letsencrypt-issuer'
+
+kubectl annotate ingress \
+  [ingress-name] \
+  kubernetes.io/ingress.class='nginx'
+```
+
+<!--
+letsencrypt-issuer
+letsencrypt-wildcard
+letsencrypt-staging
+letsencrypt-prod
+-->
+
+### Tips
+
+#### Certificates
+
+```sh
+#
+kubectl get certificates
+
+#
+kubectl describe certificate [name]
+```
+
+#### Orders
+
+```sh
+#
+kubectl get certificaterequests
+
+#
+kubectl get orders
+
+#
+kubectl describe order [name]
+```
+
+#### Challenges
+
+```sh
+#
+kubectl get challenges
+
+#
+kubectl describe challenge [name]
+```
+
+### Issues
+
+<!-- ####
+
+```log
+The certificate request has failed to complete and will be retried: Failed to wait for order resource "[name]" to become ready: order is in "invalid" state:
+```
+
+TODO -->
+
+#### DNS Problem
+
+```log
+Error accepting authorization: acme: authorization error for [example.com]: 400 urn:ietf:params:acme:error:dns: During secondary validation: DNS problem: query timed out looking up TXT for _acme-challenge.[example.com]
+```
+
+```sh
+#
+kubectl get certificaterequests
+
+#
+kubectl delete certificaterequest [name]
+
+#
+kubectl get certificates
+
+#
+kubectl cert-manager renew [name]
+
+#
+kubectl cert-manager status certificate [name]
 ```
 
 ### Delete
@@ -51,9 +271,3 @@ kubectl delete ns cert-manager \
   --grace-period=0 \
   --force
 ```
-
-<!--
-annotations:
-  cert-manager.io/cluster-issuer: letsencrypt-wildcard
-  kubernetes.io/ingress.class: nginx
--->

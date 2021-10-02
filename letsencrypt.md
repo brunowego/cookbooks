@@ -1,5 +1,12 @@
 # Let's Encrypt
 
+<!--
+https://letsencrypt.org/certificates/
+https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/
+https://scotthelme.co.uk/lets-encrypt-old-root-expiration/
+https://medium.com/geekculture/will-you-be-impacted-by-letsencrypt-dst-root-ca-x3-expiration-d54a018df257
+-->
+
 ## CLI
 
 ### Installation
@@ -47,6 +54,20 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 ```
 
 ### Tips
+
+#### Cleanup Expired Let's Encrypt CA
+
+```sh
+openssl x509 \
+  -in /usr/share/ca-certificates/mozilla/DST_Root_CA_X3.crt \
+  -noout \
+  -text
+```
+
+```Dockerfile
+# Cleanup expired Let's Encrypt CA (Sept 30, 2021)
+RUN sed -i '/^mozilla\/DST_Root_CA_X3/s/^/!/' /etc/ca-certificates.conf && update-ca-certificates -f
+```
 
 #### CA Signed Certificate
 

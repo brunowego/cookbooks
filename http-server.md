@@ -20,8 +20,9 @@ http-server -h
 
 ```sh
 http-server \
-  ./public \
-  -p 3000
+  ./ \
+  -p 3000 \
+  -a my-app.127.0.0.1.nip.io
 ```
 
 ### Tips

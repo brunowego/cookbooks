@@ -8,6 +8,7 @@ https://github.com/Mobiauto/sre-interview-boilerplate
 
 ## Links
 
+- [Code Repository](https://github.com/pulumi/pulumi)
 - [Main Website](https://pulumi.com/)
 
 ## Guides
@@ -35,8 +36,9 @@ pulumi -h
 
 ```sh
 #
-pulumi export > export.json
+pulumi export > ./export.json
 
 #
-pulumi stack import --file export.json
+pulumi stack import \
+  --file ./export.json
 ```

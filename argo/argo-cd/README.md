@@ -17,6 +17,7 @@ https://www.udemy.com/course/hands-on-guide-to-argo-workflows-on-kubernetes/
 
 - [Code Repository](https://github.com/argoproj/argo-cd)
 - [Main Website](https://argoproj.github.io/)
+- [Terraform Provider for ArgoCD](https://github.com/oboukili/terraform-provider-argocd)
 
 ## Guides
 

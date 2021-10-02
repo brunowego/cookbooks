@@ -15,6 +15,18 @@ https://app.pluralsight.com/library/courses/managing-hashicorp-vault/table-of-co
 brew install vault
 ```
 
+<!--
+### Usage
+
+```sh
+#
+vault kv get secret/data/hello-service/credentials
+
+#
+vault kv put secret/hello foo=world
+```
+-->
+
 ## Helm
 
 ### References

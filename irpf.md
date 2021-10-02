@@ -1,13 +1,5 @@
 # IRPF
 
-<!--
-https://sicalc.receita.economia.gov.br/sicalc/rapido/contribuinte/0211/01
-https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dirpf
-https://cav.receita.fazenda.gov.br/autenticacao/login/index/107
-https://www3.cav.receita.fazenda.gov.br/extratodirpf/#/debitos/2021
-https://cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx
--->
-
 ## App
 
 ### Dependencies
@@ -24,7 +16,7 @@ open "https://receita.economia.gov.br/interface/cidadao/irpf/$(date +'%Y')/downl
 
 ## Tips
 
-### DARF
+### [DARF](https://cav.receita.fazenda.gov.br/autenticacao/login)
 
-1. Pagamentos e Recargas
-2. Pagamento de Impostos -> DARF
+1. Meu Imposto de Renda (Extrato da DIRPF)
+2. Pagamento -> Consultar Débitos, Emitir DARF e Alterar Quotas

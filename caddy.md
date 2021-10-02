@@ -91,31 +91,21 @@ caddy help
 ```sh
 # Linux
 caddy start
-
-#
-# sudo hostess add app.example.com 127.0.0.1
-
-# caddy -conf <(cat << EOF
-#   app.example.com
-#   root /var/www/html
-#   tls off
-# EOF
-# )
-
-# SSL with Let's Encrypt
-# caddy \
-#   -agree \
-#   -email admin@example.com \
-#   -host app.example.com \
-#   -root /var/www/html
-
-# caddy reverse-proxy \
-#   --from http://127.0.0.1:8080 \
-#   --insecure \
-#   --to 127.0.0.1:8081
 ```
 
-<!-- ### Configuration
+### Service
+
+```sh
+# Homebrew
+brew services start caddy
+
+# Systemd
+sudo systemctl enable --now caddy
+```
+
+### Tips
+
+<!-- #### Configuration
 
 ```sh
 # Homebrew
@@ -155,17 +145,33 @@ EOF
 sudo systemctl restart caddy
 ``` -->
 
-### Service
+<!-- ####
 
 ```sh
-# Homebrew
-brew services start caddy
+#
+sudo hostess add app.example.com 127.0.0.1
 
-# Systemd
-sudo systemctl enable --now caddy
-```
+#
+caddy -conf <(cat << EOF
+  app.example.com
+  root /var/www/html
+  tls off
+EOF
+)
 
-### Tips
+# SSL with Let's Encrypt
+caddy \
+  -agree \
+  -email admin@example.com \
+  -host app.example.com \
+  -root /var/www/html
+
+#
+caddy reverse-proxy \
+  --from http://127.0.0.1:8080 \
+  --insecure \
+  --to 127.0.0.1:8081
+``` -->
 
 #### Visual Studio Code
 

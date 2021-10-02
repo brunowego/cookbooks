@@ -50,22 +50,23 @@ Terragrunt
 ### Configuration
 
 ```sh
-cat << EOF > ./atlantis.yml
+cat << EOF > ./atlantis.yaml
+---
 version: 3
 
 projects:
 - &shared
   name: my-app-stg
-  dir: ./terraform
+  dir: ./.terraform
   workspace: stg
   terraform_version: v0.14.7
   workflow: stg
   autoplan:
     when_modified: [
-      './*.tf',
-      './modules/**/*.tf',
-      './policies/*.tpl',
-      './vars/*.tfvars'
+      ./*.tf,
+      ./modules/**/*.tf,
+      ./policies/*.tpl,
+      ./vars/*.tfvars
     ]
     enabled: true
   apply_requirements: [mergeable]
@@ -74,7 +75,8 @@ projects:
   name: my-app-prd
   workspace: prd
   workflow: prd
-  apply_requirements: [mergeable, approved]
+  apply_requirements: [mergeable]
+  # apply_requirements: [mergeable, approved]
 
 workflows:
   stg:
@@ -100,11 +102,13 @@ EOF
 ```sh
 #
 atlantis plan
-atlantis plan -w prod
+atlantis plan -w stg
+atlantis plan -w prd
 
 #
 atlantis apply
-atlantis apply -w prod
+atlantis apply -w stg
+atlantis apply -w prd
 
 #
 atlantis plan -d <directory>
@@ -112,7 +116,8 @@ atlantis apply -d <directory>
 
 #
 atlantis plan -- -destroy
-atlantis plan -- -var=prod.tfvars
+atlantis plan -- -var=stg.tfvars
+atlantis plan -- -var=prd.tfvars
 ```
 
 ### Supported Providers

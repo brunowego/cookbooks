@@ -9,8 +9,9 @@ https://public-dns.info/
 
 - [DNS in One Picture](https://roadmap.sh/guides/dns-in-one-picture)
 
-##
+## Tools
 
+- [Google Public DNS](https://dns.google/)
 - [nip.io - Dead simple wildcard DNS for any IP Address](https://nip.io/)
 <!-- xip.io -->
 

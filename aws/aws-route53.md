@@ -1,5 +1,9 @@
 # AWS Route 53
 
+## Guides
+
+- [Migrating a hosted zone to a different AWS account](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-migrating.html)
+
 ## CLI
 
 ### Commands
@@ -51,6 +55,12 @@ for zone in `aws --output json route53 list-hosted-zones | jq -r '.HostedZones[]
             done;
 done
 ```
+
+<!--
+aws route53 list-resource-record-sets \
+  --hosted-zone-id [hosted-zone-id] \
+    > ./[path-to-output-file]
+-->
 
 <!--
 heritage=external-dns,

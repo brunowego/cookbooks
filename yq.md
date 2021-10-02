@@ -13,8 +13,6 @@
 
 ```sh
 brew install yq
-
-brew install yq@3
 ```
 
 #### Snappy
@@ -35,24 +33,9 @@ sudo apt -y install yq
 
 ```sh
 sudo curl \
-  -L 'https://github.com/mikefarah/yq/releases/download/2.4.0/yq_linux_amd64' \
+  -L 'https://github.com/mikefarah/yq/releases/download/4.13.2/yq_linux_amd64' \
   -o /usr/bin/yq && \
     sudo chmod +x /usr/bin/yq
-```
-
-### Environment
-
-> Observation: Only for YQ version 3.
-
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
-
-```sh
-# YQ 3
-export PATH="/usr/local/opt/yq@3/bin:$PATH"
-```
-
-```sh
-sudo su - "$USER"
 ```
 
 ### Commands

@@ -3,6 +3,7 @@
 ## Links
 
 - [npm trends](https://www.npmtrends.com/git-hooks-vs-husky-vs-pre-commit)
+- [Releases](https://nodejs.org/en/about/releases/)
 
 ## CLI
 
@@ -70,6 +71,22 @@ npm pack
 ```
 
 ### Tips
+
+#### Delete node_modules Folders
+
+```sh
+#
+find ./ -name 'node_modules' -type d -prune
+
+#
+find ./ -name 'node_modules' -type d -prune -exec rm -rf '{}' +
+```
+
+#### iCloud No Sync
+
+```sh
+find ./ -name node_modules -exec touch {}/.nosync \;
+```
 
 #### Run Commands
 

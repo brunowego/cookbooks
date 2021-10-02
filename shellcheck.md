@@ -47,6 +47,19 @@ shellcheck
 
 ### Tips
 
+#### pre-commit
+
+```yaml
+---
+repos:
+- repo: https://github.com/shellcheck-py/shellcheck-py
+  rev: v0.7.2.1
+  hooks:
+  - id: shellcheck
+    language_version: python3.9
+    stages: [commit]
+```
+
 #### Visual Studio Code
 
 ```sh

@@ -146,3 +146,10 @@ https://gitguardian.com/
 
 - Fluent Bit
 - Filebeat
+
+## HTML Template Engine
+
+- Handlebars
+- Jinja2
+- Nunjucks
+- Pug (p.k.a. Jade)

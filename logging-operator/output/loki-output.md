@@ -7,14 +7,17 @@
 
 ## Dependencies
 
-- Create [Grafana Loki](/grafana/loki/README.md#helm) in the `logging` namespace.
+- Create [Grafana Loki](/grafana/loki/README.md#helm) in the `logging-system` namespace.
+- [Log Generator](/logging-operator/log-generator.md#helm) for Demo
 
 ## Installation
 
 ```sh
 #
+kubens [namespace]
+
+#
 cat << EOF | kubectl apply \
-  -n logging \
   -f -
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: Output
@@ -22,9 +25,12 @@ metadata:
   name: loki-output
 spec:
   loki:
-    url: http://loki-headless:3100
+    url: http://loki-headless.logging-system:3100
     buffer:
       chunk_limit_size: 5M
+      timekey: 1m
+      timekey_wait: 30s
+      timekey_use_utc: true
     configure_kubernetes_labels: true
     # drop_single_key: true
     # extra_labels:
@@ -46,12 +52,7 @@ spec:
 EOF
 
 #
-kubectl get output \
-  -n logging
-
-#
 cat << EOF | kubectl apply \
-  -n logging \
   -f -
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: Flow
@@ -62,19 +63,21 @@ spec:
   - loki-output
   filters:
   - tag_normaliser: {}
-      # format: ${namespace_name}.${pod_name}.${container_name}
   - parser:
       remove_key_name_field: true
       reserve_data: true
       parse:
-        type: none
+        type: nginx
   match:
-  - select: {}
+  - select:
+      labels:
+        app.kubernetes.io/name: log-generator
+        app.kubernetes.io/instance: log-generator
 EOF
 
 #
-kubectl get flow \
-  -n logging
+kubectl get output
+kubectl get flow
 ```
 
 ## Validation
@@ -86,7 +89,6 @@ kubectl run -it --rm \
   --image docker.io/grafana/logcli:main-236ed18-amd64 \
   --env LOKI_ADDR='http://loki-headless:3100' \
   --restart 'Never' \
-  -n logging \
   -- labels
 ```
 
@@ -94,10 +96,8 @@ kubectl run -it --rm \
 
 ```sh
 #
-kubectl delete flow loki-flow \
-  -n logging
+kubectl delete flow loki-flow
 
 #
-kubectl delete output loki-output \
-  -n logging
+kubectl delete output loki-output
 ```

@@ -200,10 +200,16 @@ kubectl config view \
 #### Print Environment Variables
 
 ```sh
-#
+# Single
 kubectl exec [pod-name] \
-  -n [namespace] \
-    -- printenv
+  -- printenv
+
+# Multiple
+kubectl get pods | \
+  grep [text] | \
+    awk '{print $1}' | \
+      xargs -I {} kubectl exec {} -- printenv | \
+        grep [ENV_NAME]
 ```
 
 #### Delete Problematic Pod
@@ -223,6 +229,15 @@ kubectl get deployments | \
   grep [text] | \
     awk '{print $1}' | \
       xargs kubectl delete deploy
+```
+
+#### Batch Restart
+
+```sh
+kubectl get deployments | \
+  grep [text] | \
+    awk '{print $1}' | \
+      xargs kubectl rollout restart deployment
 ```
 
 <!-- ####
@@ -464,6 +479,13 @@ kubectl get ns [namespace] -o json | \
     --data @- \
     http://localhost:8001/api/v1/namespaces/[namespace]/finalize
 ```
+
+<!--
+kubectl get namespace "[namespace]" -o json | \
+  tr -d "\n" | \
+    sed "s/\"finalizers\": \[[^]]\+\]/\"finalizers\": []/" | \
+      kubectl replace --raw /api/v1/namespaces/[namespace]/finalize -f -
+-->
 
 <!-- ###
 

@@ -20,6 +20,7 @@ go help mod
 ```sh
 #
 go mod init
+# or
 go mod init github.com/[organization|username]/[repository]
 
 #
@@ -33,11 +34,17 @@ go mod verify
 
 ### Tips
 
+#### Structure
+
+```sh
+mkdir -p {cmd,internal}
+```
+
 #### Migration
 
 ```sh
 #
-go mod init
+go mod init github.com/[organization|username]/[repository]
 
 #
 go mod tidy

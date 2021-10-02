@@ -188,6 +188,9 @@ rabbitmq-diagnostics \
 ```sh
 #
 rabbitmqctl cluster_status
+
+#
+rabbitmqctl authenticate_user [username] [password]
 ```
 
 #### Plugins

@@ -35,3 +35,17 @@ EOF
 #
 isort ./
 ```
+
+### Tips
+
+#### pre-commit
+
+```yaml
+---
+repos:
+- repo: https://github.com/pycqa/isort
+  rev: 5.9.3
+  hooks:
+  - id: isort
+    args: [--profile, black]
+```

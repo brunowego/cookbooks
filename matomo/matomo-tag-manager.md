@@ -66,8 +66,8 @@ docker exec -i matomo ./console plugin:activate TagManager
             _paq.push(['setSiteId', '1']);
 
             var d = document,
-            g = d.createElement('script'),
-            s = d.getElementsByTagName('script')[0];
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
 
             g.type = 'text/javascript';
             g.async = true;

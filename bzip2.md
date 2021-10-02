@@ -1,4 +1,4 @@
-# bzip2
+# BZip2
 
 ## CLI
 

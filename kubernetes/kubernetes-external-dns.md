@@ -105,6 +105,90 @@ kubectl delete pod/nginx
 
 ### Tips
 
+<!-- ####
+
+Identity and Access Management (IAM) -> Policies -> external-dns
+
+```sh
+#
+cat << EOF > ./external-dns.json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "route53:ChangeResourceRecordSets",
+        "sts:AssumeRole"
+      ],
+      "Resource": [
+        "arn:aws:route53::*:hostedzone/*",
+        "arn:aws:iam::810141740403:role/external-dns",
+        "arn:aws:iam::865614069529:role/arcotech-external-dns"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "route53:ListHostedZones",
+        "route53:ListResourceRecordSets",
+        "route53:ListHostedZonesByName"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "route53:GetChange",
+      "Resource": "arn:aws:route53:::change/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "route53:ChangeResourceRecordSets",
+        "route53:ListResourceRecordSets"
+      ],
+      "Resource": "arn:aws:route53:::hostedzone/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "route53:ListHostedZonesByName",
+      "Resource": "*"
+    }
+  ]
+}
+EOF
+
+#
+cat << EOF > ./external-dns.json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "route53:ChangeResourceRecordSets"
+      ],
+      "Resource": [
+        "arn:aws:route53:::hostedzone/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "route53:ListHostedZones",
+        "route53:ListResourceRecordSets"
+      ],
+      "Resource": [
+        "*"
+      ]
+    }
+  ]
+}
+EOF
+``` -->
+
 #### Annotations
 
 - [Are other Ingress Controllers supported?](https://github.com/kubernetes-incubator/external-dns/blob/master/docs/faq.md#user-content-are-other-ingress-controllers-supported)
