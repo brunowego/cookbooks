@@ -16,7 +16,7 @@ https://medium.com/nerd-for-tech/logging-at-scale-in-kubernetes-using-grafana-lo
 
 ### References
 
-- [Helm Repository](https://github.com/grafana/helm-charts/tree/main/charts/loki)
+- [Chart Repository](https://github.com/grafana/helm-charts/tree/main/charts/loki)
 
 ### Repository
 
@@ -50,7 +50,7 @@ ingress:
 persistence:
   enabled: true
 
-replicas: 3
+replicas: 1
 EOF
 )
 ```
@@ -61,7 +61,7 @@ EOF
 #
 helm upgrade loki grafana/loki \
   --namespace logging-system \
-  -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(cat << EOF
+  -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values loki -o yaml --namespace logging-system) <(cat << EOF
 config:
   auth_enabled: false
 
@@ -126,7 +126,7 @@ config:
     working_directory: /data/loki/boltdb-shipper-compactor
     shared_store: filesystem
 EOF
-) <(helm get values loki -o yaml --namespace logging-system))
+))
 ```
 
 ### Status
@@ -145,10 +145,39 @@ kubectl logs \
   -f
 ```
 
+### Validation
+
+```sh
+#
+kubectl run -it --rm \
+  logcli \
+  --image docker.io/grafana/logcli:main-236ed18-amd64 \
+  --env LOKI_ADDR='http://loki-headless.logging-system:3100' \
+  --restart 'Never' \
+  -- labels
+```
+
+### Graph
+
+**Dependencies:** [kubectl-graph](/kubectl/kubectl-graph.md), [Cypher Shell](/cypher-shell.md), [Neo4j](/neo4j.md#docker)
+
+```sh
+kubectl graph all \
+  -n logging-system \
+  -o cypher | \
+    cypher-shell \
+      -u neo4j \
+      -p 'Pa$$w0rd!'
+```
+
 ### Delete
 
 ```sh
 helm uninstall loki \
+  -n logging-system
+
+kubectl delete pvc \
+  -l app=loki,release=loki \
   -n logging-system
 ```
 

@@ -42,4 +42,7 @@ dotnet --info
 
 #
 dotnet tool install -g [package]
+
+#
+dotnet build
 ```

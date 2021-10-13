@@ -25,6 +25,8 @@ EOF
 )
 ```
 
+> Wait! This process take a while.
+
 ### Status
 
 ```sh

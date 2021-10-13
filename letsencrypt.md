@@ -57,6 +57,8 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 #### Cleanup Expired Let's Encrypt CA
 
+##### Debian/Ubuntu
+
 ```sh
 openssl x509 \
   -in /usr/share/ca-certificates/mozilla/DST_Root_CA_X3.crt \

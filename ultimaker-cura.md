@@ -28,7 +28,7 @@ brew install --cask ultimaker-cura
 2. Add a non-networked printer
 3. Creality3D -> Choose "Creality Ender-3"
    - Change "Printer Name" to "Creality Ender-3 v2"
-   - Click Add
+   - Click Next
 4. Machine Settings
    - Printer Tab
      - X (Width): 220
@@ -57,6 +57,7 @@ https://www.youtube.com/watch?v=XadcyqoQmrw
 | Special Modes | Print Sequence | One at a Time |
 | Speed | Print Speed | 35.0 mm/s |
 | Support | Generate Support | Yes |
+| Top/Bottom | Monotonic Top/Bottom Order | Yes |
 
 ### Tips
 

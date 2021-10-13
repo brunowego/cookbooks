@@ -12,7 +12,7 @@ https://www.datarevenue.com/en-blog/airflow-vs-luigi-vs-argo-vs-mlflow-vs-kubefl
 
 - [Code Repository](https://github.com/argoproj/argo-workflows)
 
-## Kubernetes Manifest
+## Custom Resource (CR)
 
 ### Install
 

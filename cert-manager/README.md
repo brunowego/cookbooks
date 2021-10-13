@@ -137,7 +137,7 @@ spec:
 EOF
 
 #
-kubectl get clusterissuer
+kubectl get clusterissuer -o wide
 
 #
 kubectl describe clusterissuer letsencrypt-issuer
@@ -260,6 +260,14 @@ kubectl cert-manager renew [name]
 #
 kubectl cert-manager status certificate [name]
 ```
+
+<!-- #### Rate Limit
+
+```log
+429 urn:ietf:params:acme:error:rateLimited: Error creating new order :: too many certificates already issued for: [domain]: see https://letsencrypt.org/docs/rate-limits/
+```
+
+TODO -->
 
 ### Delete
 

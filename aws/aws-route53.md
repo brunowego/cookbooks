@@ -2,6 +2,7 @@
 
 ## Guides
 
+- [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System)
 - [Migrating a hosted zone to a different AWS account](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-migrating.html)
 
 ## CLI

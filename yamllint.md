@@ -92,7 +92,7 @@ yamllint ./
 
 ### Tips
 
-#### Ignore
+#### [Disable with comments](https://yamllint.readthedocs.io/en/stable/disable_with_comments.html)
 
 ```yaml
 # yamllint disable-line rule:truthy

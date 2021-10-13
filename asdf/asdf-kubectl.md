@@ -4,6 +4,10 @@
 
 - [Code Repository](https://github.com/asdf-community/asdf-kubectl)
 
+## Dependencies
+
+- Uninstall Pre-existing Versions of [Kubernetes Control (kubectl)](/kubectl/README.md).
+
 ## Installation
 
 ```sh
@@ -33,6 +37,16 @@ kubectl version --short
 ```
 
 ## Issues
+
+### ZSH Dump
+
+```log
+(eval):1: _kubectl: function definition file not found
+```
+
+```sh
+rm ~/.zcompdump*
+```
 
 ### Another Installed Binary
 

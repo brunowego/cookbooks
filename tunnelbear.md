@@ -1,6 +1,6 @@
 # TunnelBear
 
-**Keywords:** Proxy
+**Keywords:** Proxy, Tunnel
 
 ## App
 

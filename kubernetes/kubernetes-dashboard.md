@@ -125,7 +125,7 @@ kubectl get secret $(kubectl get serviceaccount kubernetes-dashboard -n kube-sys
 helm uninstall kubernetes-dashboard -n kubernetes-dashboard
 ```
 
-## Kubernetes Manifest
+## Custom Resource (CR)
 
 ### Install
 

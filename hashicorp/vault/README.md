@@ -31,7 +31,7 @@ vault kv put secret/hello foo=world
 
 ### References
 
-- [Helm Repository](https://github.com/hashicorp/vault-helm)
+- [Chart Repository](https://github.com/hashicorp/vault-helm)
 
 ### Repository
 

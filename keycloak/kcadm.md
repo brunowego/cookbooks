@@ -126,3 +126,30 @@ cat ~/.keycloak/kcadm.config
 #
 ./kcadm.sh delete realms/test
 ```
+
+### Tips
+
+#### SMTP Configuration
+
+1. Realm Settings
+2. Email Tab
+
+```sh
+#
+export SMTP_HOST=''
+export SMTP_PORT='587'
+export SMTP_EMAIL_FROM=''
+export SMTP_USER=''
+export SMTP_PASS=''
+
+#
+./kcadm.sh update realms/test \
+  -x \
+  -s 'smtpServer.host=${SMTP_HOST}' \
+  -s 'smtpServer.port=${SMTP_PORT}' \
+  -s 'smtpServer.from=${SMTP_EMAIL_FROM}' \
+  -s 'smtpServer.auth=true' \
+  -s 'smtpServer.ssl=false' \
+  -s 'smtpServer.user=${SMTP_USER}' \
+  -s 'smtpServer.password=${SMTP_PASS}'
+```

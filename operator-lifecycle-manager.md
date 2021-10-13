@@ -13,7 +13,7 @@ https://github.com/jsa4000/Observable-Distributed-System/blob/master/docs/01_ope
 - [Code Repository](https://github.com/operator-framework/operator-lifecycle-manager)
 - [OperatorHub](https://operatorhub.io/)
 
-## Kubernetes Manifests
+## Custom Resource (CR)
 
 ### Install
 

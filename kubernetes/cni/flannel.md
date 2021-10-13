@@ -1,6 +1,12 @@
-# flannel networking for Kubernetes
+# flannel Networking
 
-## Init
+## Links
+
+- [Code Repository](https://github.com/flannel-io/flannel)
+
+## Custom Resource (CR)
+
+### Initialize
 
 ```sh
 sudo kubeadm init --pod-network-cidr '10.244.0.0/16'
@@ -14,13 +20,13 @@ sudo kubeadm init \
   --pod-network-cidr '10.244.0.0/16'
 ```
 
-## Apply
+### Apply
 
 ```sh
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/a70459be0084506e4ec919aa1c114638878db11b/Documentation/kube-flannel.yml
 ```
 
-### Vagrant
+#### Vagrant
 
 - [Troubleshooting](https://github.com/coreos/flannel/blob/master/Documentation/troubleshooting.md#vagrant)
 
@@ -28,7 +34,7 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/a70459be008450
 kubectl patch daemonsets -n kube-system kube-flannel-ds-amd64 -p '{"spec":{"template":{"spec":{"containers":[{"name":"kube-flannel","args":["--ip-masq","--kube-subnet-mgr","--iface=eth1"]}]}}}}'
 ```
 
-## Delete
+### Delete
 
 ```sh
 kubectl delete -f https://raw.githubusercontent.com/coreos/flannel/a70459be0084506e4ec919aa1c114638878db11b/Documentation/kube-flannel.yml

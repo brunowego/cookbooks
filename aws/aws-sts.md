@@ -16,3 +16,9 @@ aws \
   --output json \
   sts get-caller-identity
 ```
+
+<!--
+aws sts assumed-role \
+  --role-arn [arn] \
+  --role-session-name [name]
+-->

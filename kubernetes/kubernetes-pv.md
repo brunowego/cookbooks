@@ -4,6 +4,10 @@
 
 - [Access Modes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
 
+## Guides
+
+- [Change the Reclaim Policy of a PersistentVolume](https://v1-18.docs.kubernetes.io/docs/tasks/administer-cluster/change-pv-reclaim-policy/)
+
 ## Usage
 
 ```sh
@@ -12,6 +16,13 @@ kubectl get storageclass
 ```
 
 ## Tips
+
+### Change Persistent Volume Reclaim Policy
+
+```sh
+kubectl patch pv [name] \
+  -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
+```
 
 ### Make Default
 

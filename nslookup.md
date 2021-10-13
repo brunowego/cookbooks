@@ -1,12 +1,23 @@
 # nslookup
 
-## Commands
+## CLI
+
+### Installation
+
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install dnsutils
+```
+
+### Commands
 
 ```sh
 man nslookup
 ```
 
-## Usage
+### Usage
 
 ```sh
 # Find A record

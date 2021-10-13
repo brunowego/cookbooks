@@ -5,6 +5,10 @@
 - [MinIO](/minio.md)
 - Rook
 
+## Guides
+
+- [How can I provide cross-account access to objects that are in Amazon S3 buckets?](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-s3/)
+
 ## CLI
 
 ### Commands
@@ -72,3 +76,9 @@ aws s3 cp \
 #
 aws s3 rm s3://example.com/favicon.png
 ```
+
+<!--
+aws s3 sync s3://ORIGIN-BUCKET-NAME s3://DESTINATION-BUCKET-NAME/OPTIONAL-FOLDER \
+  --source-region ORIGIN-REGION \
+  --region DESTINATION-REGION
+-->

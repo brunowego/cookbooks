@@ -63,29 +63,79 @@ docker volume rm prometheus-data
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/prometheus#configuration)
+- [Chart Repository](https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus)
 
 ### Repository
 
 ```sh
-helm repo add stable https://charts.helm.sh/stable
+helm repo add prometheus-community 'https://prometheus-community.github.io/helm-charts'
 helm repo update
 ```
+
+### Dependencies
+
+- Assuming there is already a `monitoring-system` namespace.
 
 ### Install
 
 ```sh
-kubectl create ns monitoring
-```
+#
+export INGRESS_HOST='127.0.0.1'
 
-```sh
-helm install prometheus stable/prometheus \
-  --namespace monitoring \
-  --set alertmanager.enabled=true \
-  --set alertmanager.ingress.enabled=true \
-  --set alertmanager.ingress.hosts={alertmanager.${INGRESS_HOST}.nip.io} \
-  --set server.ingress.enabled=true \
-  --set server.ingress.hosts={prometheus.${INGRESS_HOST}.nip.io}
+#
+helm install prometheus prometheus-community/prometheus \
+  --namespace monitoring-system \
+  --version 14.9.2 \
+  -f <(cat << EOF
+alertmanager:
+  ingress:
+    enabled: true
+    hosts:
+    - alertmanager.${INGRESS_HOST}.nip.io
+  resources:
+    limits:
+      cpu: 10m
+      memory: 32Mi
+    requests:
+      cpu: 10m
+      memory: 32Mi
+
+nodeExporter:
+  resources:
+    limits:
+      cpu: 200m
+      memory: 50Mi
+    requests:
+      cpu: 100m
+      memory: 30Mi
+
+server:
+  ingress:
+    enabled: true
+    hosts:
+    - prometheus.${INGRESS_HOST}.nip.io
+  resources:
+    limits:
+      cpu: 500m
+      memory: 512Mi
+    requests:
+      cpu: 500m
+      memory: 512Mi
+
+pushgateway:
+  ingress:
+    enabled: true
+    hosts:
+    - pushgateway.${INGRESS_HOST}.nip.io
+  resources:
+    limits:
+      cpu: 10m
+      memory: 32Mi
+    requests:
+      cpu: 10m
+      memory: 32Mi
+EOF
+)
 ```
 
 ### SSL
@@ -100,7 +150,7 @@ helm install prometheus stable/prometheus \
 kubectl create secret tls example.tls-secret \
   --cert='/etc/ssl/certs/example/root-ca.crt' \
   --key='/etc/ssl/private/example/root-ca.key' \
-  -n monitoring
+  -n monitoring-system
 ```
 
 ```sh
@@ -128,13 +178,15 @@ EOF
 helm upgrade prometheus stable/prometheus -f <(yq d <(helm get values prometheus) alertmanager.ingress.tls)
 helm upgrade prometheus stable/prometheus -f <(yq d <(helm get values prometheus) server.ingress.tls)
 
-kubectl delete secret example.tls-secret -n monitoring
+kubectl delete secret example.tls-secret \
+  -n monitoring-system
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/prometheus-server -n monitoring
+kubectl rollout status deploy/prometheus-server \
+  -n monitoring-system
 ```
 
 ### Logs
@@ -143,30 +195,15 @@ kubectl rollout status deploy/prometheus-server -n monitoring
 kubectl logs \
   -l 'app=prometheus,component=server' \
   -c prometheus-server \
-  -n monitoring \
+  -n monitoring-system \
   -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 prometheus-server.monitoring.svc.cluster.local +short
-nslookup prometheus-server.monitoring.svc.cluster.local 10.96.0.10
-```
-
-#### ExternalDNS
-
-```sh
-dig @10.96.0.10 "prometheus.${INGRESS_HOST}.nip.io" +short
-nslookup "prometheus.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Delete
 
 ```sh
-helm uninstall prometheus -n prometheus
-
-kubectl delete ns monitoring --grace-period=0 --force
+helm uninstall prometheus \
+  -n monitoring-system
 ```
 
 ## CLI

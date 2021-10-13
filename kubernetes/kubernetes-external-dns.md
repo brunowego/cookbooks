@@ -123,8 +123,7 @@ cat << EOF > ./external-dns.json
       ],
       "Resource": [
         "arn:aws:route53::*:hostedzone/*",
-        "arn:aws:iam::810141740403:role/external-dns",
-        "arn:aws:iam::865614069529:role/arcotech-external-dns"
+        "arn:aws:iam::[account-id]:role/external-dns"
       ]
     },
     {

@@ -1,4 +1,4 @@
-# Kubernetes Manifests
+# Custom Resource (CR)
 
 ## Environments
 
@@ -50,7 +50,7 @@ spec:
     spec:
       containers:
       - # ...
-        imagePullPolicy: Always
+      imagePullPolicy: Always
         # imagePullPolicy: IfNotPresent
 ```
 
@@ -65,7 +65,7 @@ spec:
     spec:
       # ...
       imagePullSecrets:
-      - name: arcotech-docker-registry
+      - name: my-org-docker-registry
 ```
 
 ## Rolling Strategy

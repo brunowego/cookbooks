@@ -49,7 +49,7 @@ airflow webserver
 
 ### References
 
-- [Helm Repository](https://github.com/airflow-helm/charts/tree/main/charts/airflow)
+- [Chart Repository](https://github.com/airflow-helm/charts/tree/main/charts/airflow)
 
 ### Repository
 

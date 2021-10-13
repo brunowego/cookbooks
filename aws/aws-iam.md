@@ -104,6 +104,10 @@ POLICY_ARN=$(aws iam create-policy \
 aws iam attach-group-policy \
   --policy-arn "$POLICY_ARN" \
   --group-name 'Administration'
+
+aws iam list-attached-user-policies --user-name [name]
+
+aws iam create-access-key --user-name [name]
 -->
 
 ### Tips

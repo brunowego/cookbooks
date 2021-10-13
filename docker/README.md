@@ -2,6 +2,10 @@
 
 <!--
 ./.docker
+
+DOCKER_REGISTRY:
+DOCKER_REPOSITORY:
+DOCKER_TAG:
 -->
 
 ## Alternatives

@@ -8,7 +8,7 @@
 
 ### References
 
-- [Helm Repository](https://github.com/kuberhealthy/kuberhealthy/tree/master/deploy/helm/kuberhealthy)
+- [Chart Repository](https://github.com/kuberhealthy/kuberhealthy/tree/master/deploy/helm/kuberhealthy)
 
 ### Repository
 

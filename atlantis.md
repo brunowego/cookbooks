@@ -76,13 +76,13 @@ projects:
   workspace: prd
   workflow: prd
   apply_requirements: [mergeable]
-  # apply_requirements: [mergeable, approved]
+  # apply_requirements: [approved, mergeable]
 
 workflows:
   stg:
     plan:
       steps:
-      - run: rm -fR ./.terraform
+      # - run: rm -fR ./.terraform
       - init:
       - plan:
           extra_args: [-var-file, ./vars/terraform-stg.tfvars]
@@ -90,7 +90,7 @@ workflows:
   prd:
     plan:
       steps:
-      - run: rm -fR ./.terraform
+      # - run: rm -fR ./.terraform
       - init:
       - plan:
           extra_args: [-var-file, ./vars/terraform-prd.tfvars]
@@ -118,6 +118,9 @@ atlantis apply -d <directory>
 atlantis plan -- -destroy
 atlantis plan -- -var=stg.tfvars
 atlantis plan -- -var=prd.tfvars
+
+#
+atlantis unlock
 ```
 
 ### Supported Providers

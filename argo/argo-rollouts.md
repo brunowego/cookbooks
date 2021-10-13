@@ -15,7 +15,7 @@
 Big Bang
 -->
 
-## Kubernetes Manifest
+## Custom Resource (CR)
 
 ### Install
 

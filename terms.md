@@ -58,6 +58,7 @@
 - On-premises (on-prem)
 - One Time Password (OTP)
 - Operations as a Service (OaaS)
+- Outliers
 - Personal Access Token (PAT)
 - Personal Identification Number (PIN)
 - Platform as a service (PaaS)

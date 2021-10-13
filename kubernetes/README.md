@@ -34,12 +34,15 @@ dataeng
 - [Debugging DNS Resolution](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/)
 - [DNS Lookups in Kubernetes](https://mrkaran.dev/posts/ndots-kubernetes/)
 - [Publishing Services (ServiceTypes)](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
+- [Accessing the Kubernetes API from a Pod](https://kubernetes.io/docs/tasks/run-application/access-api-from-pod/)
 
 ## Terms
 
 - Custom Resource Definition (CRD)
 - Custom Resource Definition (CRD)
+- Extended Berkeley Packet Filter (eBPF)
 - Horizontal Pod Autoscaler (HPA)
+- IP Virtual Server (IPVS)
 - Out Of Memory (OOM)
 
 ## Tools
@@ -101,14 +104,6 @@ code --disable-extension ms-kubernetes-tools.vscode-kubernetes-tools
 ```
 
 ### Issues
-
-#### Out Of Memory (OOMKilled)
-
-```log
-with exit code 137
-```
-
-TODO
 
 #### Persistent Volume Claims
 

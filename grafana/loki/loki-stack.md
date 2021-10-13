@@ -15,7 +15,7 @@ helm3 upgrade --install loki -n logging --create-namespace grafana/loki-stack --
 
 ### References
 
-- [Helm Repository](https://github.com/grafana/helm-charts/tree/main/charts/loki-stack)
+- [Chart Repository](https://github.com/grafana/helm-charts/tree/main/charts/loki-stack)
 
 ### Repository
 

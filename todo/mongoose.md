@@ -1,3 +1,0 @@
-# Mongoose
-
-TODO

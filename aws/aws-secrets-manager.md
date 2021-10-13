@@ -7,6 +7,7 @@ https://github.com/sotoiwa/eks-gitops-sample
 ## Links
 
 - [Secrets](https://console.aws.amazon.com/secretsmanager/home?region=us-east-1#!/listSecrets)
+- [AWS Secrets Manager Pricing](https://aws.amazon.com/secrets-manager/pricing/)
 
 ## CLI
 

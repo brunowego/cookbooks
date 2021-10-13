@@ -45,6 +45,16 @@ EOF
 )
 ```
 
+### Issues
+
+<!-- ####
+
+```log
+pod didn't trigger scale-up (it wouldn't fit if a new node is added): 2 node(s) didn't have free ports for the requested pod ports, 2 node(s) didn't match node selector
+```
+
+TODO -->
+
 ### Delete
 
 ```sh

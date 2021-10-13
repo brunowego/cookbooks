@@ -6,6 +6,7 @@ https://www.youtube.com/watch?v=OOc8iN9dWfw
 
 ## Links
 
+- [New Relic Explorer](https://one.newrelic.com/launcher/)
 - [New Relic University](https://learn.newrelic.com/)
 
 ## Solutions

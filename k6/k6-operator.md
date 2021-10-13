@@ -5,7 +5,7 @@
 - [Code Repository](https://github.com/grafana/k6-operator)
 - [Running distributed k6 tests on Kubernetes](https://k6.io/blog/running-distributed-tests-on-k8s/)
 
-## Kubernetes Manifest
+## Custom Resource (CR)
 
 ### Dependencies
 

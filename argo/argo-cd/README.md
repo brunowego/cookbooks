@@ -25,7 +25,7 @@ https://www.udemy.com/course/hands-on-guide-to-argo-workflows-on-kubernetes/
 - [Git Webhook Configuration](https://argoproj.github.io/argo-cd/operator-manual/webhook/)
 - [Ingress Configuration](https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/ingress.md)
 
-## Kubernetes Manifest
+## Custom Resource (CR)
 
 ### Install
 

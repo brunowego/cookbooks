@@ -12,7 +12,7 @@ https://github.com/jsa4000/Observable-Distributed-System/blob/master/docs/04_ela
 
 - [Code Repository](https://github.com/elastic/cloud-on-k8s)
 
-## Kubernetes Manifests
+## Custom Resource (CR)
 
 ### Install
 

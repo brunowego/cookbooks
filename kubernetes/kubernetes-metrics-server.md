@@ -4,7 +4,7 @@
 
 - [Code Repository](https://github.com/kubernetes-sigs/metrics-server)
 
-## Kubernetes Manifest
+## Custom Resource (CR)
 
 ### Install
 
@@ -75,6 +75,23 @@ kubectl logs \
   -l 'app.kubernetes.io/name=metrics-server' \
   -n kube-system \
   -f
+```
+
+### Testing
+
+```sh
+#
+kubectl get \
+  --raw '/apis/metrics.k8s.io/v1beta1/nodes' | \
+    jq
+```
+
+### Tips
+
+#### RBAC
+
+```sh
+kubectl auth can-i list pods.metrics.k8s.io -A
 ```
 
 ### Delete

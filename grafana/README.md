@@ -140,19 +140,20 @@ helm repo add grafana 'https://grafana.github.io/helm-charts'
 helm repo update
 ```
 
+### Dependencies
+
+- Assuming there is already a `monitoring-system` namespace.
+
 ### Install
 
 ```sh
-#
-kubectl create ns grafana
-
 #
 export INGRESS_HOST='127.0.0.1'
 
 #
 helm install grafana grafana/grafana \
-  --namespace grafana \
-  --version 6.14.1 \
+  --namespace monitoring-system \
+  --version 6.16.12 \
   -f <(cat << EOF
 adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
 
@@ -171,7 +172,7 @@ EOF
 
 ```sh
 kubectl rollout status deploy/grafana \
-  -n grafana
+  -n monitoring-system
 ```
 
 ### Logs
@@ -179,7 +180,7 @@ kubectl rollout status deploy/grafana \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/instance=grafana' \
-  -n grafana \
+  -n monitoring-system \
   -f
 ```
 
@@ -188,7 +189,7 @@ kubectl logs \
 ```sh
 kubectl get secret grafana \
   -o jsonpath='{.data.admin-password}' \
-  -n grafana | \
+  -n monitoring-system | \
     base64 --decode; echo
 ```
 
@@ -196,11 +197,7 @@ kubectl get secret grafana \
 
 ```sh
 helm uninstall grafana \
-  -n grafana
-
-kubectl delete ns grafana \
-  --grace-period=0 \
-  --force
+  -n monitoring-system
 ```
 
 ## CLI

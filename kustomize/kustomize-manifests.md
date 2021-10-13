@@ -4,7 +4,7 @@
 https://www.jetstack.io/blog/kustomize-cert-manager/
 -->
 
-##
+## Custom Resource (CR)
 
 ```sh
 #
@@ -22,20 +22,20 @@ resources:
 - ingress.yaml
 
 configMapGenerator:
-- name: my-app-metadata
+- name: metadata
 
 vars:
 - name: APP_ENV
   objref:
     kind: ConfigMap
-    name: my-app-metadata
+    name: metadata
     apiVersion: v1
   fieldref:
     fieldpath: data.APP_ENV
 - name: APP_HOST
   objref:
     kind: ConfigMap
-    name: my-app-metadata
+    name: metadata
     apiVersion: v1
   fieldref:
     fieldpath: data.APP_HOST
@@ -55,7 +55,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 commonLabels:
-  io.arcotech.app: my-app
+  io.my-org.app: my-app
 
 namePrefix: my-app-
 namespace: my-app
@@ -67,7 +67,7 @@ configMapGenerator:
 - behavior: merge
   envs:
   - .env
-  name: my-app-metadata
+  name: metadata
 EOF
 ```
 

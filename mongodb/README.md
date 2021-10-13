@@ -92,10 +92,6 @@ docker run -d \
   docker.io/library/mongo:4.4.6
 ```
 
-```sh
-sudo hostess add mongodb 127.0.0.1
-```
-
 ### Client
 
 ```sh

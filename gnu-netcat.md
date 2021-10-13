@@ -27,7 +27,8 @@ netcat -h
 
 ```sh
 #
-nc -v [ip] [port]
+nc -v [ip/dn] [port]
+nc -v google.com 80
 
 #
 nc -l 9000
@@ -41,4 +42,7 @@ curl \
   -H 'Content-Type: application/json'
   -d '{"status": "ok"}' \
   127.0.0.1:9000
+
+#
+nc -4 -w3 -v google.com 80
 ```

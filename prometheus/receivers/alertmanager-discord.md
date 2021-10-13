@@ -105,7 +105,7 @@ inhibit_rules:
 docker rm -f alertmanager-discord
 ```
 
-## Kubernetes Manifests
+## Custom Resource (CR)
 
 ### Install
 

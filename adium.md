@@ -1,8 +1,10 @@
 # Adium
 
-## Installation
+## App
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew install --cask adium

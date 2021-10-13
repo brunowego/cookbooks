@@ -1,6 +1,8 @@
 # Thanos
 
 <!--
+thanosrulers
+
 https://particule.io/en/blog/thanos-monitoring/
 https://stackoverflow.com/questions/64965827/unable-to-attach-aws-ebs-volume-error-instance-not-found
 -->

@@ -14,15 +14,19 @@ helm repo update
 ## Install
 
 ```sh
+#
+kubectl create ns my-app
+
+#
 helm install log-generator banzaicloud-stable/log-generator \
-  --namespace default
+  --namespace my-app
 ```
 
 ## Status
 
 ```sh
 kubectl rollout status deploy/log-generator \
-  -n default
+  -n my-app
 ```
 
 ## Logs
@@ -30,7 +34,7 @@ kubectl rollout status deploy/log-generator \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/name=log-generator' \
-  -n default \
+  -n my-app \
   -f
 ```
 
@@ -38,5 +42,9 @@ kubectl logs \
 
 ```sh
 helm uninstall log-generator \
-  -n default
+  -n my-app
+
+kubectl delete ns my-app \
+  --grace-period=0 \
+  --force
 ```

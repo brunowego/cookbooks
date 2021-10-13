@@ -13,7 +13,7 @@ https://github.com/GoogleCloudPlatform/fluent-plugin-detect-exceptions
 
 ### References
 
-- [Helm Repository](https://github.com/fluent/helm-charts/tree/main/charts/fluentd)
+- [Chart Repository](https://github.com/fluent/helm-charts/tree/main/charts/fluentd)
 
 ### Repository
 

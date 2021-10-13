@@ -37,9 +37,26 @@ sudo curl \
 kubectl --help
 ```
 
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Kubernetes Control (kubectl)
+command -v kubectl > /dev/null && source <(kubectl completion zsh)
+alias k=kubectl
+```
+
+```sh
+sudo su - "$USER"
+```
+
 ### Usage
 
 ```sh
+# Cluster Version
+kubectl version --short
+
 #
 kubectl get \
   --raw='/readyz?verbose'
@@ -71,6 +88,9 @@ kubectl cp ./path/to/folder/or/file [namespace]/[podname]:/path/to/where/save
 #
 kubectl get pod -A
 kubectl get pod -n [namespace]
+
+# Verbosity
+kubectl get pods -v 6
 
 #
 kubectl describe pod -l 'app=[appname]' -n [namespace]
@@ -105,7 +125,7 @@ kubectl get cm \
 kubectl get secrets -n [namespace]
 
 # Create
-
+# TODO
 
 # Describe
 kubectl describe secret [secret-name] -n [namespace]
@@ -119,6 +139,21 @@ kubectl delete secret [secret-name] -n [namespace]
 ```
 
 ### Tips
+
+#### Context Environment Variable
+
+```sh
+alias kubectl='kubectl --context="$KUBECTL_CONTEXT"'
+alias helm='helm --kube-context="$KUBECTL_CONTEXT"'
+alias stern='stern --context="$KUBECTL_CONTEXT"'
+```
+
+#### Delete All Pods
+
+```sh
+kubectl get pod -A -o yaml | \
+  kubectl delete -f -
+```
 
 #### Docker Credential
 
@@ -155,14 +190,6 @@ kubectl get pods -A -o wide | grep [ip-address]
 ```sh
 #
 kubectl get nodes -o wide | grep [ip-address]
-```
-
-#### Autocomplete
-
-```sh
-# Kubernetes Control (kubectl)
-command -v kubectl > /dev/null && source <(kubectl completion zsh)
-alias k=kubectl
 ```
 
 #### Rollout Restart Namespace
@@ -301,14 +328,6 @@ kubectl exec -it \
   -c [name] \
   -- /bin/bash
 ``` -->
-
-#### Proxy
-
-```sh
-kubectl proxy \
-  --accept-hosts='^*$' \
-  --address='0.0.0.0'
-```
 
 #### Restart
 

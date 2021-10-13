@@ -15,6 +15,10 @@
 - SnippetsLab
 - Paste
 
+## License Deactivate
+
+- ScreenFlow
+
 ## Notes
 
 - Deactivate Softwares

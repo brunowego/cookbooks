@@ -8,7 +8,7 @@
 
 ### References
 
-- [Helm Repository](https://github.com/vmware/kube-fluentd-operator/tree/master/charts/log-router)
+- [Chart Repository](https://github.com/vmware/kube-fluentd-operator/tree/master/charts/log-router)
 
 ### Dependencies
 

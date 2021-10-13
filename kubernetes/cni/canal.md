@@ -1,31 +1,22 @@
-# Canal networking for Kubernetes
+# Canal Networking (Calico for policy and Flannel for networking)
 
-## Behind Proxy
+## Custom Resource (CR)
 
-```sh
-export no_proxy="$no_proxy,10.96.0.0/12,10.244.0.0/16,$(hostname -I | cut -d ' ' -f 1)"
-export NO_PROXY="$no_proxy"
-```
-
-## Init
-
-### Default
+### Initialize
 
 ```sh
+# Default
 sudo kubeadm init --pod-network-cidr '10.244.0.0/16'
-```
 
-### Personalized
-
-```sh
-yq w -id 1 ~/kubeadm-init-config.yaml networking.podSubnet 10.244.0.0/16
+# Personalized
+yq w -id 1 ~/kubeadm-init-config.yaml networking.podSubnet '10.244.0.0/16'
 ```
 
 ```sh
 sudo kubeadm init --config ~/kubeadm-init-config.yaml
 ```
 
-### Vagrant
+#### Vagrant
 
 ```sh
 sudo kubeadm init \
@@ -33,34 +24,33 @@ sudo kubeadm init \
   --pod-network-cidr '10.244.0.0/16'
 ```
 
-## Apply
-
-### Default
+### Apply
 
 ```sh
+# Default
 kubectl apply -f 'https://docs.projectcalico.org/v3.9/manifests/canal.yaml'
-```
 
-### Personalized
-
-```sh
+# Personalized
 wget 'https://docs.projectcalico.org/v3.9/manifests/canal.yaml'
-```
 
-```sh
 sed -i 's/quay.io/[your.hub.docker.com]/' ./canal.yaml
 sed -i '/image: /s|calico/|[your.hub.docker.com]/calico/|' ./canal.yaml
-```
 
-```sh
 kubectl apply -f ./canal.yaml
-```
 
-```sh
 rm ./canal.yaml
 ```
 
-## Delete
+### Tips
+
+#### Behind Proxy
+
+```sh
+export no_proxy="$no_proxy,10.96.0.0/12,10.244.0.0/16,$(hostname -I | cut -d ' ' -f 1)"
+export NO_PROXY="$no_proxy"
+```
+
+### Delete
 
 ```sh
 kubectl delete -f 'https://docs.projectcalico.org/v3.9/manifests/canal.yaml'

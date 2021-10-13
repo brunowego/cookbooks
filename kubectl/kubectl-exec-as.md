@@ -20,7 +20,11 @@ kubectl exec-as -h
 
 ## Usage
 
-**Warning:** This only works in Kubernetes clusters which allow priviledged containers.
+**Warning:** This only works in Kubernetes clusters which allow privileged containers.
+
+<!--
+kubectl get podsecuritypolicies
+-->
 
 ```sh
 #

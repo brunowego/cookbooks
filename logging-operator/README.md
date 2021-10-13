@@ -34,7 +34,17 @@ kubectl create ns logging-system
 #
 helm install logging-operator banzaicloud-stable/logging-operator \
   --namespace logging-system \
-  --version 3.14.2
+  --version 3.14.2 \
+  -f <(cat << EOF
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 150m
+    memory: 256Mi
+EOF
+)
 ```
 
 <!--
@@ -77,6 +87,17 @@ kubectl logs \
   -n logging-system \
   -f
 ```
+
+### Issues
+
+####
+
+```log
+Normal   NotTriggerScaleUp  64s (x31 over 6m6s)     cluster-autoscaler  pod didn't trigger scale-up (it wouldn't fit if a new node is added): 2 node(s) didn't match node selector
+Warning  FailedScheduling   15s (x7 over 4m17s)     default-scheduler   0/30 nodes are available: 1 Insufficient cpu, 1 node(s) had taint {node-role.kubernetes.io/master: }, that the pod didn't tolerate, 28 node(s) didn't match Pod's node affinity.
+```
+
+TODO
 
 ### Delete
 

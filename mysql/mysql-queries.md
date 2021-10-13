@@ -1,5 +1,18 @@
 # MySQL Queries
 
+## Variables
+
+```sql
+-- Max Connections
+SHOW VARIABLES LIKE 'max_connections';
+
+-- Set Max Connections
+SET GLOBAL max_connections = 200;
+
+-- Show Threads Connected
+SHOW STATUS WHERE `variable_name` = 'Threads_connected';
+```
+
 ## Client
 
 ```sh

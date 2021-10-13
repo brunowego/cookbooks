@@ -32,7 +32,7 @@ https://github.com/kubernetes/ingress-nginx/tree/main/deploy/grafana/dashboards
 - Cross-Origin Resource Sharing (CORS)
 - Sticky and NON-Sticky Sessions
 
-## Kubernetes Manifest
+## Custom Resource (CR)
 
 ### Install
 
@@ -150,7 +150,7 @@ Error from server (InternalError): error when creating "STDIN": Internal error o
 kubectl get validatingwebhookconfigurations
 
 #
-kubectl delete -A ValidatingWebhookConfiguration ingress-nginx-admission
+kubectl delete validatingwebhookconfiguration ingress-controller-ingress-nginx-admission
 ```
 
 ### Uninstall
@@ -311,11 +311,11 @@ minikube tunnel
 
 ### Issues
 
-####
+<!-- ####
 
 ```sh
 502 Bad Gateway
-```
+``` -->
 
 #### DDos Attack
 
@@ -352,7 +352,7 @@ Error: Internal error occurred: failed calling webhook "validate.nginx.ingress.k
 kubectl get validatingwebhookconfigurations
 
 #
-kubectl delete -A ValidatingWebhookConfiguration ingress-controller-ingress-nginx-admission
+kubectl delete validatingwebhookconfiguration ingress-controller-ingress-nginx-admission
 ```
 
 #### Node Free Ports

@@ -1,5 +1,9 @@
 # kubectl-top
 
+## Dependencies
+
+- [Kubernetes Metrics Server](/kubernetes/kubernetes-metrics-server.md)
+
 ## Usage
 
 ```sh

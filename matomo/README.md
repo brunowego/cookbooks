@@ -422,7 +422,7 @@ docker volume rm \
   matomo-nginx-conf
 ```
 
-## Kubernetes Manifest
+## Custom Resource (CR)
 
 ### Running
 

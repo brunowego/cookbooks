@@ -4,7 +4,7 @@
 
 ### References
 
-- [Helm Repository](https://github.com/hashicorp/consul-helm)
+- [Chart Repository](https://github.com/hashicorp/consul-helm)
 
 ### Repository
 

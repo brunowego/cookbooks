@@ -4,7 +4,7 @@
 
 ### References
 
-- [Helm Repository](https://github.com/minio/operator/tree/master/helm/minio-operator)
+- [Chart Repository](https://github.com/minio/operator/tree/master/helm/minio-operator)
 
 ### Repository
 
