@@ -3,6 +3,7 @@
 ## Links
 
 - [Outputs](https://banzaicloud.com/docs/one-eye/logging-operator/plugins/outputs/)
+- [Outputs (Repository)](https://github.com/banzaicloud/logging-operator-docs/tree/master/docs/configuration/plugins/outputs)
 
 ## Types
 

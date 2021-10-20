@@ -49,7 +49,7 @@ cat << \EOF | kubectl apply \
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: Flow
 metadata:
-  name: es-flow
+  name: my-app-flow
 spec:
   localOutputRefs:
   - es-output
@@ -59,8 +59,7 @@ spec:
       remove_key_name_field: true
       reserve_data: true
       parse:
-        type: nginx
-        # type: json
+        type: none
   match:
   - select: {}
 EOF
@@ -94,7 +93,7 @@ TODO
 
 ```sh
 #
-kubectl delete flow es-flow \
+kubectl delete flow my-app-flow \
   -n logging
 
 #

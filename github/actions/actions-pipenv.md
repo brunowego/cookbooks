@@ -56,3 +56,21 @@ jobs:
 ```
 
 TODO
+
+<!-- jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Cache pipenv
+      id: cache-pipenv
+      uses: actions/cache@v2
+      with:
+        path: ~/.local/share/virtualenvs
+        key: ${{ runner.os }}-python-${{ steps.setup-python.outputs.python-version }}-pipenv-${{ hashFiles('Pipfile.lock') }}
+
+    - name: Install dependencies
+      if: steps.cache-pipenv.outputs.cache-hit != 'true'
+      env:
+        LC_ALL: C.UTF-8
+        LANG: C.UTF-8
+      run: pipenv install --deploy -d -->

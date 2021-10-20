@@ -102,13 +102,13 @@ worker:
     minReplicas: 3
     maxReplicas: 100
     targetCPUUtilizationPercentage: 40
-  resources:
-    limits:
-      cpu: 200m
-      memory: 256Mi
-    requests:
-      cpu: 100m
-      memory: 256Mi
+  # resources:
+  #   requests:
+  #     cpu: 100m
+  #     memory: 256Mi
+  #   limits:
+  #     cpu: 150m
+  #     memory: 512Mi
 
 ingress:
   enabled: true

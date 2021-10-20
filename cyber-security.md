@@ -17,3 +17,9 @@ https://github.com/ossf
 ## Links
 
 - [Have I Been Pwned](https://haveibeenpwned.com/)
+
+## Terms
+
+- Security-by-design
+- Chief Information Security Officer (CISO)
+- Zero Trust Architecture (ZTA)

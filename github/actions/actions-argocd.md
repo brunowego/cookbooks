@@ -13,6 +13,17 @@ OutOfSync -> Check HPA/Replicas
 
 TODO
 
+<!-- ### Using Kustomize
+
+```yaml
+    - name: ArgoCD Overwrite Image Tag
+      uses: clowdhaus/argo-cd-action/@main
+      id: argocd_image_tag_overwrite
+      with:
+        command: app set dsb-messagebroker
+        options: -p dsb-messagebroker.image.tag=${{needs.unique_id.outputs.unique_id}}
+``` -->
+
 <!-- ### Using Kubernetes Manifests
 
 ```yaml
@@ -75,3 +86,22 @@ jobs:
 ./argocd app sync applications --plaintext --grpc-web &&
 ./argocd app sync -l app.kubernetes.io/instance=applications --plaintext --grpc-web
 -->
+
+<!-- ```sh
+- name: Set up kubectl
+  uses: azure/setup-kubectl@v1
+  with:
+    version: v1.22.1
+
+- name: Set K8 Context
+  uses: azure/k8s-set-context@v1
+  with:
+    kubeconfig: ${{ secrets.KUBE_CONFIG_STAGING }}
+    context: [...].k8s.local
+
+- name: Kubectl Rollout Restart
+  run: |
+    kubectl config set-context --current --namespace my-app
+    kubectl rollout restart deployment/my-app-web
+    kubectl rollout restart deployment/my-app-worker
+``` -->

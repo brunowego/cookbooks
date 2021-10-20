@@ -44,13 +44,31 @@ kubectl logs \
   -f
 ```
 
+### List Loggings
+
+```sh
+#
+kubectl get loggings
+
+#
+kubectl get logging-all -A
+```
+
 ### Tips
+
+#### Get Problems
+
+```sh
+kubectl get flow [name] \
+  -o jsonpath='{.status.problems}' | \
+    jq
+```
 
 #### Delete Old Pods
 
 ```sh
 kubectl delete pod \
-  -l app.kubernetes.io/name=fluentbit \
+  -l 'app.kubernetes.io/name=fluentbit' \
   -n logging-system
 ```
 

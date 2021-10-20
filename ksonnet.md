@@ -1,15 +1,29 @@
 # ksonnet
 
-## Installation
+## Links
 
-### Homebrew
+- [Code Repository](https://github.com/ksonnet/ksonnet)
+
+## CLI
+
+### Installation
+
+#### Homebrew
 
 ```sh
-brew install ksonnet/tap/ks
+brew tap ksonnet/tap
+brew install ks
 ```
 
-## Commands
+### Commands
 
 ```sh
 ks -h
 ```
+
+<!-- ### Usage
+
+```sh
+#
+ks
+``` -->

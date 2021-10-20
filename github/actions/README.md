@@ -1,6 +1,8 @@
 # Github Actions
 
 <!--
+https://docs.github.com/en/actions/learn-github-actions/reusing-workflows
+
 https://github.com/github/super-linter
 
 https://evilmartians.com/chronicles/build-images-on-github-actions-with-docker-layer-caching
@@ -320,6 +322,26 @@ code --install-extension cschleiden.vscode-github-actions
 ### Usage
 
 ```sh
+#
+gh run list
+gh run list --limit 5
+
+#
+gh run view
+gh run view [code]
+
+#
+gh run download
+
+#
+gh run rerun
+
+#
+gh workflow list
+
+#
+gh workflow view
+
 #
 gh workflow run '[workflow-name]'
 

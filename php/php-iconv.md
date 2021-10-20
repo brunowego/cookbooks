@@ -33,10 +33,10 @@ phpbrew -d ext install \
 ### Verify
 
 ```sh
+#
 php -m | grep iconv
-```
 
-```sh
+#
 php -i | grep '^iconv$' -A 9
 ```
 

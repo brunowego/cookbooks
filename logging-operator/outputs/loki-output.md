@@ -9,7 +9,6 @@
 ## Dependencies
 
 - Create [Grafana Loki](/grafana/loki/README.md#helm) in the `logging-system` namespace.
-- [Log Generator](/logging-operator/log-generator.md#helm) for Demo
 
 ## Installation
 
@@ -45,7 +44,7 @@ cat << \EOF | kubectl apply \
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: Flow
 metadata:
-  name: loki-flow
+  name: my-app-flow
 spec:
   localOutputRefs:
   - loki-output
@@ -56,12 +55,9 @@ spec:
       remove_key_name_field: true
       reserve_data: true
       parse:
-        type: nginx
+        type: none
   match:
-  - select:
-      labels:
-        app.kubernetes.io/name: log-generator
-        app.kubernetes.io/instance: log-generator
+  - select: {}
 EOF
 
 #
@@ -73,7 +69,7 @@ kubectl get flow
 
 ```sh
 #
-kubectl delete flow loki-flow
+kubectl delete flow my-app-flow
 kubectl delete output loki-output
 ```
 
@@ -90,7 +86,7 @@ metadata:
   name: loki-output
 spec:
   loki:
-    url: http://loki-headless:3100
+    url: http://loki-headless.logging-system:3100
     buffer:
       timekey: 1m
       timekey_wait: 30s
@@ -108,7 +104,7 @@ cat << \EOF | kubectl apply \
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: ClusterFlow
 metadata:
-  name: loki-flow
+  name: my-app-flow
 spec:
   globalOutputRefs:
   - loki-output
@@ -119,12 +115,12 @@ spec:
       remove_key_name_field: true
       reserve_data: true
       parse:
-        type: nginx
+        type: none
   match:
-  - exclude:
-      namespaces:
-      - default
-      - logging-system
+  # - exclude:
+  #     namespaces:
+  #     - default
+  #     - logging-system
   - select: {}
 EOF
 
@@ -137,7 +133,7 @@ kubectl get clusteroutput,clusterflow \
 
 ```sh
 #
-kubectl delete clusterflow loki-flow \
+kubectl delete clusterflow my-app-flow \
   -n logging-system
 
 #

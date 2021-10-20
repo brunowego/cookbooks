@@ -1,3 +1,0 @@
-# Flagger LoadTester
-
-TODO

@@ -42,10 +42,10 @@ phpbrew -d ext install \
 ## Verify
 
 ```sh
+#
 php -m | grep gd
-```
 
-```sh
+#
 php -i | grep '^gd$' -A 15
 ```
 

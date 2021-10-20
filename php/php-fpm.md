@@ -164,15 +164,15 @@ kubectl delete ns php-fpm --grace-period=0 --force
 ### Running
 
 ```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h php-fpm \
   -p 9000:9000 \
   --name php-fpm \
   docker.io/library/php:7.3-fpm-alpine
-```
 
-```sh
+#
 cgi-fcgi -bind -connect 127.0.0.1:9000
 ```
 

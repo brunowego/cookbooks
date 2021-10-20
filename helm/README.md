@@ -101,6 +101,12 @@ pkill helm
 
 ### Tips
 
+#### Show Values of a Chart
+
+```sh
+helm show values banzaicloud-stable/log-generator
+```
+
 #### Download Helm Chart Files
 
 ```sh

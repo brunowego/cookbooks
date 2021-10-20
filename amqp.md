@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://www.amqp.org/)
+- [Main Website](https://amqp.org/)

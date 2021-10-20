@@ -5,6 +5,28 @@ Efficient compilation, Efficient execution and Ease of programming.
 <!--
 Viper
 Logrus
+Sprig:
+jwt-go
+Imaging
+fsnotify
+Mergo
+sqlx
+go-pop3
+goyesql
+koanf
+smtppool
+stuffbin
+gommon
+pq
+easyjson
+go-isatty
+mapstructure
+go-toml
+simples3
+cast
+fasttemplate
+goldmark
+sqlboiler
 
 https://go-zero.dev/en/
 

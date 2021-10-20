@@ -1,5 +1,9 @@
 # asdf Helm
 
+## Dependencies
+
+- Uninstall Pre-existing Versions of [Helm](/helm/README.md).
+
 ## Installation
 
 ```sh

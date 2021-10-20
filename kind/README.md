@@ -136,7 +136,7 @@ kubectl config set-cluster "$(kubectl config current-context)" \
 
 ```sh
 # Kubernetes Releases: https://kubernetes.io/releases/
-export KUBERNETES_VERSION='1.22.2'
+export KUBERNETES_VERSION='1.20.7'
 ```
 
 **Observation:** [Check first](https://hub.docker.com/r/kindest/node/tags) if you have the image `kindest/node` with the tag corresponding to the version of Kubernetes.

@@ -115,6 +115,9 @@ rails server \
   -b 0.0.0.0 \
   -p 3000
 
+#
+rails stats
+
 echo -e '[INFO]\thttp://127.0.0.1:3000'
 
 ## Stop

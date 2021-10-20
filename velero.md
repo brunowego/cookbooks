@@ -93,21 +93,21 @@ configMaps:
 deployRestic: true
 
 restic:
-  resources:
-    requests:
-      cpu: 250m
-      memory: 256Mi
-    limits:
-      cpu: 500m
-      memory: 512Mi
+  # resources:
+  #   requests:
+  #     cpu: 250m
+  #     memory: 256Mi
+  #   limits:
+  #     cpu: 350m
+  #     memory: 512Mi
 
-resources:
-  requests:
-    cpu: 250m
-    memory: 128Mi
-  limits:
-    cpu: 500m
-    memory: 512Mi
+# resources:
+#   requests:
+#     cpu: 250m
+#     memory: 128Mi
+#   limits:
+#     cpu: 350m
+#     memory: 512Mi
 
 initContainers:
 - name: velero-plugin-for-aws

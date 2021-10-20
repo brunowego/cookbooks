@@ -87,7 +87,7 @@ Broadcast Input.Toggle Broadcast Input to Current Session'" ~/Library/Preference
 
 ```sh
 #
-curl -O https://raw.githubusercontent.com/sonph/onehalf/master/iterm/OneHalfDark.itermcolors
+curl -O 'https://raw.githubusercontent.com/sonph/onehalf/master/iterm/OneHalfDark.itermcolors'
 
 #
 open ./OneHalfDark.itermcolors

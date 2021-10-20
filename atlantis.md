@@ -294,6 +294,20 @@ kubectl port-forward svc/atlantis 8080:80 \
 http://atlantis.${INGRESS_HOST}.nip.io/events
 -->
 
+<!--
+#
+kubectl get secret atlantis-tf-envs \
+  -n atlantis-system \
+  -o json | \
+    jq '.data | map_values(@base64d)'
+
+#
+kubectl get secret google-credentials \
+  -n atlantis-system \
+  -o json | \
+    jq '.data | map_values(@base64d)'
+-->
+
 ### Delete
 
 ```sh

@@ -314,13 +314,13 @@ auth:
 
 replicaCount: 3
 
-resources:
-  limits:
-    cpu: 400m
-    memory: 512Mi
-  requests:
-    cpu: 400m
-    memory: 20Mi
+# resources:
+#   limits:
+#     cpu: 400m
+#     memory: 512Mi
+#   requests:
+#     cpu: 400m
+#     memory: 20Mi
 
 serviceDiscovery:
   enabled: true

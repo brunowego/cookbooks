@@ -24,24 +24,25 @@ npm install -g newman
 
 ```sh
 newman -h
-newman run -h
 ```
 
-<!-- ### Usage
+### Structure
 
 ```sh
 #
-newman run ./collection.json -r htmlextra
+mkdir -p ./.postman
 
 #
-newman run https://www.postman.com/collections/[id] -e dev_environment.json
+touch ./.postman/[my-app].postman_collection.json
+touch ./.postman/env.dev.json
+```
 
-#
-newman run PostmanCollection.json -e environment.json --bail
+### Usage
 
+```sh
 #
-newman run mycollection.json -r cli,json --reporter-json-export outputfile.json
-
-#
-newman run RetailBanking\SecondaryUser\SecondaryUser.json -e Environment_RB.json -k -r html,cli,json,junit
-``` -->
+newman run \
+  -e ./.postman/env.dev.json \
+  -r html,cli,json,junit \
+  ./.postman/[my-app].postman_collection.json
+```

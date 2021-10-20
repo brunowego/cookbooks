@@ -64,6 +64,16 @@ source ~/.zshrc
 rm ~/.zcompdump*
 ```
 
+### Issues
+
+#### Absolute Path
+
+```log
+ERROR: for my-app_php_1  Cannot create container for service php: invalid volume specification: '/host_mnt/Volumes/Workspace/github.com/my-org/my-app:.:rw': invalid mount config for type "bind": invalid mount path: '.' mount path must be absolute
+```
+
+Never use `./` at target bind volume.
+
 ## Scaffold
 
 ### Manifest

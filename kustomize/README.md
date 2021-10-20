@@ -33,23 +33,20 @@ sudo port install kustomize
 #### Darwin Binary
 
 ```sh
-curl \
-  -L 'https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v3.8.8/kustomize_v3.8.8_darwin_amd64.tar.gz' | \
-    tar -xzC /usr/local/bin
+KUSTOMIZE_VERSION="$(curl -s https://api.github.com/repos/kubernetes-sigs/kustomize/releases/latest | grep tag_name | cut -d '"' -f 4 | cut -d '/' -f 2)"; \
+  curl \
+    -L "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/${KUSTOMIZE_VERSION}/kustomize_${KUSTOMIZE_VERSION}_darwin_amd64.tar.gz" | \
+      tar -xzC /usr/local/bin
 ```
 
-<!-- #### Unix-like
+#### Linux Binary
 
 ```sh
-opsys=linux  # or darwin, or windows
-curl -s https://api.github.com/repos/kubernetes-sigs/kustomize/releases/latest |\
-  grep browser_download |\
-  grep $opsys |\
-  cut -d '"' -f 4 |\
-  xargs curl -O -L
-mv kustomize_*_${opsys}_amd64 kustomize
-chmod u+x kustomize
-``` -->
+KUSTOMIZE_VERSION="$(curl -s https://api.github.com/repos/kubernetes-sigs/kustomize/releases/latest | grep tag_name | cut -d '"' -f 4 | cut -d '/' -f 2)"; \
+  curl \
+    -L "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/${KUSTOMIZE_VERSION}/kustomize_${KUSTOMIZE_VERSION}_linux_amd64.tar.gz" | \
+      tar -xzC /usr/local/bin
+```
 
 #### go get
 
@@ -67,6 +64,22 @@ choco install kustomize
 
 ```sh
 kustomize -h
+```
+
+### Environment
+
+**Node:** Tested with version >= 4.4.0.
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Kustomize
+source <(kustomize completion bash) # if bash
+source <(kustomize completion zsh) # if zsh
+```
+
+```sh
+sudo su - "$USER"
 ```
 
 ### Usage
@@ -101,18 +114,25 @@ icdiff <(kustomize build ./base) <(kustomize build ./overlays/local)
 
 ### Tips
 
-#### Autocomplete
+#### Set Image
 
 ```sh
-# Kustomize
-source <(kustomize completion zsh)
+export DOCKER_REGISTRY='docker.io' # ghcr.io
+export DOCKER_REPOSITORY='my-org/my-app'
+export DOCKER_TAG='latest'
 ```
 
-<!-- #### Image Names and Tags
+```yaml
+# kustomization.yaml
+images:
+- name: [name]
+  newName: $DOCKER_REGISTRY/$DOCKER_REPOSITORY
+  newTag: $DOCKER_TAG
+```
 
 ```sh
-kustomize edit set image []:[tag]
-``` -->
+kustomize edit set image [name]="${DOCKER_REGISTRY}/${DOCKER_REPOSITORY}:${DOCKER_TAG}"
+```
 
 <!-- ### Issues
 

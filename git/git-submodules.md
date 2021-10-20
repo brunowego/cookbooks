@@ -7,7 +7,7 @@
 git submodule add [repo] ./[destination]
 
 # Remove folder/module from git repository
-git rm -r --cached [destination]
+git rm -r --cached sae-avasae
 
 # Update from submodule folder
 cd [destination] && git pull
@@ -32,3 +32,15 @@ git submodule sync --recursive
 # Update
 git submodule update --init --recursive
 ```
+
+<!-- git clone --single-branch --branch <branchname> <remote-repo> -->
+
+<!-- ## Issues
+
+###
+
+```log
+fatal: No url found for submodule path '[name]' in .gitmodules
+```
+
+TODO -->

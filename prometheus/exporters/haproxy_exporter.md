@@ -11,8 +11,10 @@
 #### Darwin Binary
 
 ```sh
-curl -L 'https://github.com/prometheus/haproxy_exporter/releases/download/v0.10.0/haproxy_exporter-0.10.0.darwin-amd64.tar.gz' | \
-  tar -xzC /usr/local/bin --wildcards --strip-components 1 'haproxy_exporter*/haproxy_exporter'
+curl \
+  -L \
+  'https://github.com/prometheus/haproxy_exporter/releases/download/v0.10.0/haproxy_exporter-0.10.0.darwin-amd64.tar.gz' | \
+    tar -xzC /usr/local/bin --wildcards --strip-components 1 'haproxy_exporter*/haproxy_exporter'
 ```
 
 ### Commands

@@ -92,48 +92,48 @@ alertmanager:
     enabled: true
     hosts:
     - alertmanager.${INGRESS_HOST}.nip.io
-  resources:
-    limits:
-      cpu: 10m
-      memory: 32Mi
-    requests:
-      cpu: 10m
-      memory: 32Mi
+  # resources:
+  #   limits:
+  #     cpu: 10m
+  #     memory: 32Mi
+  #   requests:
+  #     cpu: 10m
+  #     memory: 32Mi
 
 nodeExporter:
   resources:
-    limits:
-      cpu: 200m
-      memory: 50Mi
     requests:
       cpu: 100m
       memory: 30Mi
+    limits:
+      cpu: 150m
+      memory: 50Mi
 
 server:
   ingress:
     enabled: true
     hosts:
     - prometheus.${INGRESS_HOST}.nip.io
-  resources:
-    limits:
-      cpu: 500m
-      memory: 512Mi
-    requests:
-      cpu: 500m
-      memory: 512Mi
+  # resources:
+  #   limits:
+  #     cpu: 500m
+  #     memory: 512Mi
+  #   requests:
+  #     cpu: 500m
+  #     memory: 512Mi
 
 pushgateway:
   ingress:
     enabled: true
     hosts:
     - pushgateway.${INGRESS_HOST}.nip.io
-  resources:
-    limits:
-      cpu: 10m
-      memory: 32Mi
-    requests:
-      cpu: 10m
-      memory: 32Mi
+  # resources:
+  #   limits:
+  #     cpu: 10m
+  #     memory: 32Mi
+  #   requests:
+  #     cpu: 10m
+  #     memory: 32Mi
 EOF
 )
 ```

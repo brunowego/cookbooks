@@ -186,6 +186,10 @@ git config --global http.sslcainfo '[/path/to/certificate.pem]'
 
 # Only repository
 git config --bool core.bare true
+
+#
+git reflog
+git checkout [sha8]
 ```
 
 <!-- #### Credentials
@@ -207,6 +211,14 @@ git credential approve
 ``` -->
 
 ### Tips
+
+#### Remove Local Branches Except Main
+
+```sh
+git branch --no-color | \
+  grep -v 'master\|stable\|main' | \
+    xargs git branch -d
+```
 
 #### Tags
 

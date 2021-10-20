@@ -1,10 +1,14 @@
 # direnv
 
+<!--
+https://github.com/rubymaniac/vscode-direnv
+-->
+
 **Keywords:** dotENV
 
 ## Links
 
-- [Main Website](https://direnv.net/)
+- [Main Website](https://direnv.net)
 
 ## CLI
 
@@ -46,10 +50,6 @@ touch ./.envrc
 direnv allow ./
 
 #
-eval "$(direnv hook bash)"
-eval "$(direnv hook zsh)"
-
-#
 direnv reload
 ```
 
@@ -59,5 +59,6 @@ direnv reload
 
 ```sh
 # direnv
-command -v direnv > /dev/null && eval "$(direnv hook zsh)"
+command -v direnv > /dev/null && eval "$(direnv hook bash)" # if bash
+command -v direnv > /dev/null && eval "$(direnv hook zsh)" # if zsh
 ```

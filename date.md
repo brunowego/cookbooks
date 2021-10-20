@@ -4,8 +4,17 @@
 
 - [EpochConverter](https://www.epochconverter.com/)
 
-## Commands
+## CLI
+
+### Commands
 
 ```sh
 man date
+```
+
+### Usage
+
+```sh
+#
+date -R
 ```

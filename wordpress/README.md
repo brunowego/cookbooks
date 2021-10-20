@@ -27,80 +27,50 @@ https://pagely.com/blog/react-js-wordpress-rest-api/
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/wordpress#configuration)
+- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress)
+
+### Repository
+
+```sh
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
+helm repo update
+```
 
 ### Install
 
 ```sh
+#
 kubectl create ns wordpress
-```
 
-```sh
-helm install wordpress stable/wordpress \
+#
+export INGRESS_HOST='127.0.0.1'
+
+#
+helm install wordpress bitnami/wordpress \
   --namespace wordpress \
-  --set ingress.enabled=true \
-  --set "ingress.hosts[0].name=wordpress.${INGRESS_HOST}.nip.io" \
-  --set 'ingress.hosts[0].path=/'
-```
-
-### SSL
-
-#### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-#### Create
-
-```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n wordpress
-```
-
-```sh
-helm upgrade wordpress stable/wordpress -f <(yq m <(cat << EOF
+  --version 12.1.21 \
+  -f <(cat << EOF
 ingress:
-  tls:
-    - secretName: example.tls-secret
-      hosts:
-        - wordpress.${INGRESS_HOST}.nip.io
+  enabled: true
+  hostname: wordpress.${INGRESS_HOST}.nip.io
 EOF
-) <(helm get values wordpress))
-```
-
-#### Remove
-
-```sh
-helm upgrade wordpress stable/wordpress -f <(yq d <(helm get values wordpress) ingress.tls)
-
-kubectl delete secret example.tls-secret -n wordpress
+)
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/wordpress -n wordpress
+kubectl rollout status deploy/wordpress \
+  -n wordpress
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app=wordpress' -n wordpress -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 wordpress.wordpress.svc.cluster.local +short
-nslookup wordpress.wordpress.svc.cluster.local 10.96.0.10
-```
-
-#### ExternalDNS
-
-```sh
-dig @10.96.0.10 "wordpress.${INGRESS_HOST}.nip.io" +short
-nslookup "wordpress.${INGRESS_HOST}.nip.io" 10.96.0.10
+kubectl logs \
+  -l 'app.kubernetes.io/name=wordpress' \
+  -n wordpress \
+  -f
 ```
 
 ### Secret

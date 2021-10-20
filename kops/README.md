@@ -6,6 +6,8 @@ https://www.udemy.com/course/learn-devops-helm-helmfile-kubernetes-deployment/
 https://github.com/ryane/kubernetes-aws-vpc-kops-terraform
 
 https://medium.com/bench-engineering/deploying-kubernetes-clusters-with-kops-and-terraform-832b89250e8e
+
+https://itnext.io/aws-windows-kubernetes-nodes-with-kops-a2accb9ea483
 -->
 
 ## Alternatives
@@ -41,6 +43,12 @@ sudo curl \
   -L "https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64" \
   -o /usr/local/bin/kops && \
     sudo chmod +x /usr/local/bin/kops
+```
+
+#### Chocolatey
+
+```sh
+choco install kubernetes-kops
 ```
 
 ### Commands

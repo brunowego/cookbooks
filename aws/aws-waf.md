@@ -43,8 +43,14 @@ aws wafv2 help
 
 ```sh
 #
+aws wafv2 list-web-acls \
+  --scope 'REGIONAL' \
+  --region 'us-east-1'
+
+#
 aws wafv2 get-web-acl \
-  --scope REGIONAL \
-  --name <name> \
-  --id <webACLId>
+  --scope 'REGIONAL' \
+  --region 'us-east-1' \
+  --name [web-acl-name] \
+  --id [web-acl-id]
 ```

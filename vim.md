@@ -123,7 +123,7 @@ touch ~/.vimrc
 
 ```sh
 # Download
-wget https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monokai.vim -P ~/.vim/colors
+wget 'https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monokai.vim' -P ~/.vim/colors
 
 # Setting
 echo -e 'syntax enable\ncolorscheme monokai' >> ~/.vimrc
@@ -133,7 +133,7 @@ echo -e 'syntax enable\ncolorscheme monokai' >> ~/.vimrc
 
 ```sh
 # Download
-wget https://raw.githubusercontent.com/sonph/onehalf/master/vim/colors/onehalfdark.vim -P ~/.vim/colors
+wget 'https://raw.githubusercontent.com/sonph/onehalf/master/vim/colors/onehalfdark.vim' -P ~/.vim/colors
 
 # Setting
 echo -e 'syntax enable\ncolorscheme onehalfdark' >> ~/.vimrc
@@ -143,8 +143,8 @@ echo -e 'syntax enable\ncolorscheme onehalfdark' >> ~/.vimrc
 
 ```sh
 # Download
-wget https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim -P ~/.vim/colors
-wget https://raw.githubusercontent.com/joshdick/onedark.vim/master/autoload/onedark.vim -P ~/.vim/autoload
+wget 'https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim' -P ~/.vim/colors
+wget 'https://raw.githubusercontent.com/joshdick/onedark.vim/master/autoload/onedark.vim' -P ~/.vim/autoload
 
 # Setting
 echo -e 'syntax enable\ncolorscheme onedark' >> ~/.vimrc

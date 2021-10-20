@@ -1,4 +1,4 @@
-# Kubernetes NGINX Ingress Controller
+# NGINX Ingress Controller
 
 <!--
 https://github.com/SpiderLabs/ModSecurity-nginx
@@ -55,23 +55,25 @@ kubectl wait \
 
 ```sh
 #
-kubectl get ingress [ingress-name] \
-  -o json \
-  -n [namespace] |
+kubens [namespace]
+
+#
+export K8S_INGRESS_NAME=''
+
+#
+kubectl get ingress "$K8S_INGRESS_NAME" \
+  -o json |
     jq -r '.metadata.annotations'
 
 #
-kubectl annotate ingress \
-  [ingress-name] \
-  nginx.ingress.kubernetes.io/enable-cors='true' \
-  -n [namespace]
+kubectl annotate ingress "$K8S_INGRESS_NAME" \
+  nginx.ingress.kubernetes.io/enable-cors='true'
 
 #
 kubectl annotate ingress \
   --overwrite \
-  [ingress-name] \
-  nginx.ingress.kubernetes.io/cors-allow-headers='Access-Control-Allow-Origin,Authorization' \
-  -n [namespace]
+  "$K8S_INGRESS_NAME" \
+  nginx.ingress.kubernetes.io/cors-allow-headers='Access-Control-Allow-Origin,Authorization'
 
 # Testing
 curl \

@@ -1,4 +1,4 @@
-# eBPF
+# Extended Berkeley Packet Filter (eBPF)
 
 <!--
 https://medium.com/preply-engineering/dns-postmortem-e169efd45afd

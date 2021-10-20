@@ -7,6 +7,7 @@
 - Analytical Base Table (ABT)
 - As far as I know (AFAIK)
 - Ask Me Anything (AMA)
+- Assessment
 - Attention deficit hyperactivity disorder (ADHD)
 - Away From Keyboard (AFK)
 - Backend-for-Frontend (BFF)

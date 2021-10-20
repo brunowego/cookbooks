@@ -192,9 +192,11 @@ terraform workspace select dev
 terraform refresh
 
 #
-terraform init .
+terraform init ./
+terraform init ./ -upgrade
 terraform init \
-  -backend-config key=./terraform.tfstate
+  -backend-config key=./terraform.tfstate \
+  ./
 
 #
 terraform validate

@@ -12,9 +12,11 @@
 - [Fixing Ubuntu Freezing at Boot Time](https://itsfoss.com/fix-ubuntu-freezing/)
 - [Releases Ubuntu from University of Kent Mirror Service](https://www.mirrorservice.org/sites/releases.ubuntu.com/18.04.3/)
 
-## Installation
+## Host
 
-### Download
+### Installation
+
+#### Download
 
 ```sh
 # Ubuntu Desktop 20.04.3
@@ -24,11 +26,11 @@ echo '5fdebc435ded46ae99136ca875afc6f05bde217be7dd018e1841924f71db46b5 *ubuntu-2
   shasum -a 256 --check
 ```
 
-### Bootable USB
+#### Bootable USB
 
 - [balenaEtcher](/balenaetcher.md)
 
-### Partition
+#### Partition
 
 | Type |  Mount  |  Size  |
 | ---- | ------- | ------ |

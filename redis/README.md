@@ -12,6 +12,48 @@ https://medium.com/swlh/use-the-source-redis-internal-tricks-5a8b735b9ef0
 
 - [twemproxy (a.k.a nutcracker)](/twemproxy.md)
 
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h redis \
+  -v redis-data:/data \
+  -p 6379:6379 \
+  --name redis \
+  --network workbench \
+  docker.io/library/redis:5.0.5-alpine3.9
+
+# With auth
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h redis \
+  -e REDIS_PASSWORD='redis' \
+  -v redis-data:/data \
+  -p 6379:6379 \
+  --name redis \
+  --network workbench \
+  --entrypoint /bin/sh \
+  docker.io/library/redis:5.0.5-alpine3.9 -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
+```
+
+### Remove
+
+```sh
+docker rm -f redis
+
+docker volume rm redis-data
+```
+
 ## CLI
 
 ### Installation
@@ -204,46 +246,4 @@ helm uninstall redis \
 kubectl delete ns redis \
   --grace-period=0 \
   --force
-```
-
-## Docker
-
-### Network
-
-```sh
-docker network create workbench \
-  --subnet 10.1.1.0/24
-```
-
-### Running
-
-```sh
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h redis \
-  -v redis-data:/data \
-  -p 6379:6379 \
-  --name redis \
-  --network workbench \
-  docker.io/library/redis:5.0.5-alpine3.9
-
-# With auth
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h redis \
-  -e REDIS_PASSWORD='redis' \
-  -v redis-data:/data \
-  -p 6379:6379 \
-  --name redis \
-  --network workbench \
-  --entrypoint /bin/sh \
-  docker.io/library/redis:5.0.5-alpine3.9 -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
-```
-
-### Remove
-
-```sh
-docker rm -f redis
-
-docker volume rm redis-data
 ```

@@ -96,13 +96,13 @@ spec:
               requests:
                 storage: 10Gi
       serviceAccountName: 'default'
-      resourcesRequirements:
-        limits:
-          cpu: '0.5'
-          memory: 2Gi
-        requests:
-          cpu: '0.5'
-          memory: 2Gi
+      # resourcesRequirements:
+      #   limits:
+      #     cpu: 0.5
+      #     memory: 2Gi
+      #   requests:
+      #     cpu: 0.5
+      #     memory: 2Gi
   nodes:
     - id: 1
       nodeConfigGroup: 'default_group'

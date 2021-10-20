@@ -129,6 +129,25 @@ jq '."files.associations".".secrets" |= "dotenv"' "$HOME/.config/Code/User/setti
 
 ### Issues
 
+#### Missing Artifact Cache
+
+```log
+[CI/build]   💬  ::debug::Resource Url: localhost/_apis/artifactcache/cache?keys=Linux-buildx-496cec68494d0c3ac73537085ac719b51f5e7bc497bb1c22d5ed34c07417fffb%252CLinux-buildx-&version=241a22ad23e37799b851ed553e697ea8915dfceac047c09bcb4c846ed1d09e11
+[CI/build]   💬  ::debug::getCacheEntry - Attempt 1 of 2 failed with error: Invalid URL: localhost/_apis/artifactcache/cache?keys=Linux-buildx-496cec68494d0c3ac73537085ac719b51f5e7bc497bb1c22d5ed34c07417fffb%252CLinux-buildx-&version=241a22ad23e37799b851ed553e697ea8915dfceac047c09bcb4c846ed1d09e11
+[CI/build]   💬  ::debug::Resource Url: localhost/_apis/artifactcache/cache?keys=Linux-buildx-496cec68494d0c3ac73537085ac719b51f5e7bc497bb1c22d5ed34c07417fffb%252CLinux-buildx-&version=241a22ad23e37799b851ed553e697ea8915dfceac047c09bcb4c846ed1d09e11
+[CI/build]   💬  ::debug::getCacheEntry - Attempt 2 of 2 failed with error: Invalid URL: localhost/_apis/artifactcache/cache?keys=Linux-buildx-496cec68494d0c3ac73537085ac719b51f5e7bc497bb1c22d5ed34c07417fffb%252CLinux-buildx-&version=241a22ad23e37799b851ed553e697ea8915dfceac047c09bcb4c846ed1d09e11
+| [warning]getCacheEntry failed: Invalid URL: localhost/_apis/artifactcache/cache?keys=Linux-buildx-496cec68494d0c3ac73537085ac719b51f5e7bc497bb1c22d5ed34c07417fffb%2CLinux-buildx-&version=241a22ad23e37799b851ed553e697ea8915dfceac047c09bcb4c846ed1d09e11
+[CI/build]   ⚙  ::set-output:: cache-hit=false
+```
+
+Run and configure [Artifact Server](/artifact-server.md)
+
+```sh
+act \
+  # ...
+  --env GITHUB_RUN_ID="$(date '+%s')"
+```
+
 #### Missing GitHub Token
 
 ```log

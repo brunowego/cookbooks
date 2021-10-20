@@ -36,7 +36,30 @@ sudo apk update
 sudo apk add protobuf
 ```
 
-### Tips
+### Usage
+
+TODO
+
+<!-- ### Tips
+
+####
+
+```sh
+protoc \
+  -I=. \
+  -I=.. \
+  --go_out . \
+  --go_opt paths=source_relative \
+  --go-grpc_out . \
+  --go-grpc_opt paths=source_relative \
+  --doc_out=. \
+  --doc_opt=html,protobuf.html \
+  --grpc-gateway_out . \
+  --grpc-gateway_opt logtostderr=true \
+  --grpc-gateway_opt paths=source_relative \
+  --grpc-gateway_opt generate_unbound_methods=true \
+  proto/*.proto
+``` -->
 
 #### Visual Studio Code
 

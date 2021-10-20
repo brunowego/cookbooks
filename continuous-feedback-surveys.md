@@ -14,6 +14,7 @@ https://www.checkmarket.com/blog/csat-ces-nps-compared/
 - [Wootric](https://wootric.com/)
 
 <!--
+https://userguiding.com/
 https://github.com/satismeter
 https://github.com/refiner-io
 https://www.gartner.com/smarterwithgartner/unveiling-the-new-and-improved-customer-effort-score/

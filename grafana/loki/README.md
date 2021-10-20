@@ -177,7 +177,7 @@ helm uninstall loki \
   -n logging-system
 
 kubectl delete pvc \
-  -l app=loki,release=loki \
+  -l 'app=loki,release=loki' \
   -n logging-system
 ```
 

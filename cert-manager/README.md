@@ -47,6 +47,9 @@ kubectl cert-manager help
 kubectl cert-manager check api
 
 #
+kubectl get certificates
+
+#
 kubectl cert-manager status certificate [name]
 
 #
@@ -64,9 +67,7 @@ kubectl cert-manager renew [name]
 
 ### Dependencies
 
-- Ingress Controller
-  - [Kubernetes NGINX Ingress Controller](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm)
-- [Kubernetes ExternalDNS](/kubernetes/kubernetes-external-dns.md#helm)
+- [NGINX Ingress Controller](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm)
 
 ### Repository
 
@@ -84,7 +85,7 @@ kubectl create ns cert-manager
 #
 helm install cert-manager jetstack/cert-manager \
   --namespace cert-manager \
-  --version v1.4.0 \
+  --version v1.5.4 \
   -f <(cat << EOF
 installCRDs: true
 
@@ -109,15 +110,17 @@ kubectl rollout status deploy/cert-manager \
 
 ```sh
 #
-cat << EOF |
-apiVersion: cert-manager.io/v1alpha2
+cat << EOF | kubectl apply \
+  -n cert-manager \
+  -f -
+apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
   name: letsencrypt-issuer
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: [your@email.com]
+    email: brunowego@gmail.com
     privateKeySecretRef:
       name: letsencrypt-issuer
     solvers:

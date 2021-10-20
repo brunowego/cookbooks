@@ -48,3 +48,10 @@ spec:
     name: myapp
 EOF
 ```
+
+<!--
+kurun port-forward \
+  --servicename fluentd-debug \
+  --serviceport 24222 \
+  localhost:24222
+-->

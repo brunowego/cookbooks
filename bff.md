@@ -1,6 +1,8 @@
 # Backend-For-Frontend (BFF)
 
 <!--
+https://medium.com/squer-solutions/micro-frontend-architecture-patterns-backends-for-frontends-d2918927c01d
+
 https://medium.com/jeitosanar/backend-for-frontend-uma-estrat%C3%A9gia-sob-demanda-para-a-entrega-de-microsservi%C3%A7os-2f12d4cb9e3f
 https://hypeflame.blog/2020/12/07/entenda-o-padrao-backends-for-frontends-bff/
 https://michaeldfti.medium.com/diferen%C3%A7a-entre-api-gateway-e-backends-for-frontends-cb443821ff6d

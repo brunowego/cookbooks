@@ -1,6 +1,6 @@
 # Terraform Scaffold
 
-##
+## Structure
 
 ````sh
 #
@@ -101,3 +101,19 @@ terraform output
 ```
 EOF
 ````
+
+## Tips
+
+### Ignore Changes
+
+```tf
+resource "..." "..." {
+  # ...
+
+  lifecycle {
+    ignore_changes = [
+      spec.0.sync_policy.0.retry
+    ]
+  }
+}
+```

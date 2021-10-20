@@ -1,6 +1,8 @@
 # Logging Demo
 
-## References
+## Helm
+
+### References
 
 - [Configuration](https://github.com/banzaicloud/logging-operator/tree/master/charts/logging-demo#configuration)
 
@@ -11,7 +13,7 @@ helm repo add banzaicloud-stable 'https://kubernetes-charts.banzaicloud.com'
 helm repo update
 ```
 
-## Install
+### Install
 
 ```sh
 helm install logging-demo banzaicloud-stable/logging-demo \
@@ -27,7 +29,7 @@ EOF
 )
 ```
 
-## Prometheus Stack
+### Prometheus Stack
 
 **Dependencies:** [kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)](/prometheus/prometheus-stack.md)
 
@@ -52,14 +54,14 @@ EOF
 ) <(helm get values logging-demo --namespace default))
 ```
 
-## Status
+### Status
 
 ```sh
 kubectl rollout status deploy/logging-demo-log-generator \
   -n default
 ```
 
-## Logs
+### Logs
 
 ```sh
 kubectl logs \
@@ -68,7 +70,7 @@ kubectl logs \
   -f
 ```
 
-## Delete
+### Delete
 
 ```sh
 helm uninstall logging-demo \

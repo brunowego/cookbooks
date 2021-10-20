@@ -292,7 +292,9 @@ argocd app list
 #
 kubectl create ns [namespace]
 
-#
+# Using
+
+## Kustomize
 argocd app create \
   '[app-name]' \
   --repo '[git-repo]' \
@@ -300,8 +302,19 @@ argocd app create \
   --dest-namespace '[namespace]' \
   --dest-server 'https://kubernetes.default.svc'
 
-#
-argocd app delete '[app-name]'
+argocd app set '[app-name]' \
+  --kustomize-image "$DOCKER_REGISTRY/$DOCKER_REPOSITORY:$DOCKER_TAG"
+
+## Or, Helm
+argocd app create '[app-name]' \
+  --repo '[git-repo]' \
+  --path helm-guestbook \
+  --dest-namespace '[namespace]' \
+  --dest-server 'https://kubernetes.default.svc'
+  --helm-set replicaCount=2
+
+argocd app set '[app-name]' \
+  -p "$DOCKER_REGISTRY/$DOCKER_REPOSITORY=$DOCKER_REGISTRY/$DOCKER_REPOSITORY:$DOCKER_TAG"
 
 #
 argocd app sync '[app-name]' \
@@ -309,9 +322,13 @@ argocd app sync '[app-name]' \
 
 #
 argocd app wait '[app-name]'
-```
 
-<!-- argocd app history guestbook -->
+#
+argocd app history '[app-name]'
+
+#
+argocd app delete '[app-name]'
+```
 
 ### Tips
 
@@ -326,7 +343,7 @@ kubectl patch configmap argocd-cm \
 
 > More details about Status Badge [here](https://argoproj.github.io/argo-cd/user-guide/status-badge/).
 
-### Issues
+<!-- ### Issues -->
 
 <!-- ####
 
@@ -348,7 +365,10 @@ export ARGOCD_AUTH_TOKEN=''
 ```log
 OrphanedResourceWarning
 Application has 2 orphaned resources
-``` -->
+```
+
+TODO
+-->
 
 ## Kubectl
 

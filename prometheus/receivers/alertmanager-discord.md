@@ -132,13 +132,13 @@ spec:
       - name: alertmanager-discord
         image: docker.io/benjojo/alertmanager-discord:latest
         imagePullPolicy: Always
-        resources:
-          limits:
-            cpu: 20m
-            memory: 40Mi
-          requests:
-            cpu: 20m
-            memory: 40Mi
+        # resources:
+        #   limits:
+        #     cpu: 20m
+        #     memory: 40Mi
+        #   requests:
+        #     cpu: 20m
+        #     memory: 40Mi
         ports:
         - containerPort: 9094
           name: http

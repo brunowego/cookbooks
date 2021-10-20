@@ -159,7 +159,7 @@ kubectl get pod -A -o yaml | \
 
 <!--
 cat << EOF | kubectl apply \
-  -n at-backoffice \
+  -n [namespace] \
   -f -
 apiVersion: v1
 kind: Secret
@@ -455,6 +455,21 @@ kubectl delete pod [name] --grace-period=0 --force -n [namespace]
 ```
 
 #### Terminating
+
+##### PVC
+
+```sh
+#
+kubectl patch pvc [name] \
+  -p '{"metadata":{"finalizers":null}}' \
+  -n [namespace]
+
+#
+kubectl delete pvc [name] \
+  -n [namespace] \
+  --grace-period 0 \
+  --force
+```
 
 ##### Pod
 

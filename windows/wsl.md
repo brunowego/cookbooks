@@ -8,17 +8,29 @@ https://github.com/microsoft/wslg
 
 - [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl)
 
-## Installation
+## CLI
 
-### Chocolatey
+### Installation
+
+#### Chocolatey
 
 ```sh
 choco install -y wsl2
 ```
 
-## Tips
+### Usage
 
-### Visual Studio Code
+```sh
+#
+wsl --install
+
+#
+wsl --list --verbose
+```
+
+### Tips
+
+#### Visual Studio Code
 
 ```sh
 code --install-extension ms-vscode-remote.remote-wsl

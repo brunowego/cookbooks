@@ -207,12 +207,12 @@ metadata:
 spec:
   replicas: 3
   resources:
-    limits:
-      cpu: 1
-      memory: 2Gi
     requests:
-      cpu: 500m
-      memory: 1Gi
+      cpu: 200m
+      memory: 800Mi
+    limits:
+      cpu: 300m
+      memory: 1600Mi
   rabbitmq:
     additionalPlugins:
     - rabbitmq_management

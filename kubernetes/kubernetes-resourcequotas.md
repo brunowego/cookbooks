@@ -27,9 +27,9 @@ metadata:
 spec:
   hard:
     requests:
-      cpu: 500m
-      memory: 100Mi
+      cpu: 100m
+      memory: 128Mi
     limits:
-      cpu: 700m
-      memory: 500Mi
+      cpu: 150m
+      memory: 256Mi
 ```

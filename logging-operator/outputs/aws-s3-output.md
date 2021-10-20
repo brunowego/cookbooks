@@ -53,7 +53,7 @@ cat << \EOF | kubectl apply \
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: Flow
 metadata:
-  name: s3-flow
+  name: my-app-flow
 spec:
   localOutputRefs:
   - s3-output
@@ -64,8 +64,7 @@ spec:
       remove_key_name_field: true
       reserve_data: true
       parse:
-        type: nginx
-        # type: json
+        type: none
   match:
   - select: {}
 EOF
@@ -85,7 +84,7 @@ echo -e "[INFO]\thttp://minio.${INGRESS_HOST}.nip.io/minio/demo/"
 
 ```sh
 #
-kubectl delete flow s3-flow \
+kubectl delete flow my-app-flow \
   -n logging
 
 #

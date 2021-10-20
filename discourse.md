@@ -66,7 +66,13 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 ### Remove
 
 ```sh
-docker rm -f discourse discourse-postgres discourse-redis
+docker rm -f \
+  discourse \
+  discourse-postgres \
+  discourse-redis
 
-docker volume rm discourse-data discourse-postgres-data discourse-redis-data
+docker volume rm \
+  discourse-data \
+  discourse-postgres-data \
+  discourse-redis-data
 ```

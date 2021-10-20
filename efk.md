@@ -53,13 +53,13 @@ elasticsearch:
 
   esJavaOpts: '-Xmx128m -Xms128m'
 
-  resources:
-    requests:
-      cpu: '300m'
-      memory: '1Gi'
-    limits:
-      cpu: '300m'
-      memory: '1Gi'
+  # resources:
+  #   requests:
+  #     cpu: 300m
+  #     memory: 1Gi
+  #   limits:
+  #     cpu: 300m
+  #     memory: 1Gi
 
   volumeClaimTemplate:
     accessModes:

@@ -33,3 +33,7 @@ npm install serverless -g
 ```sh
 serverless -h
 ```
+
+<!--
+SLS_DEBUG=* sls deploy --verbose --config ./serverless.alpha.yml
+-->
