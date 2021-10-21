@@ -241,7 +241,8 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 kubectl create ns atlantis-system
@@ -260,7 +261,7 @@ github:
   secret: [secret]
 
 ingress:
-  host: atlantis.${INGRESS_HOST}.nip.io
+  host: atlantis.$DOMAIN
   path:
   - /
 EOF
@@ -291,7 +292,7 @@ kubectl port-forward svc/atlantis 8080:80 \
 ```
 
 <!--
-http://atlantis.${INGRESS_HOST}.nip.io/events
+http://atlantis.${DOMAIN}/events
 -->
 
 <!--

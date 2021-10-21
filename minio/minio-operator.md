@@ -17,13 +17,13 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+kubectl create ns minio
 
 #
-kubectl create ns minio
-```
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
-```sh
+#
 helm install minio minio/minio-operator \
   --namespace minio \
   --version 4.1.7 \
@@ -31,7 +31,7 @@ helm install minio minio/minio-operator \
 console:
   ingress:
     enabled: true
-    host: minio.${INGRESS_HOST}.nip.io
+    host: minio.${DOMAIN}
 
 tenants: {}
 EOF
@@ -66,7 +66,7 @@ kubectl get secret $(kubectl get serviceaccount console-sa --namespace minio -o 
 ### Ingress
 
 ```sh
-echo -e "[INFO]\thttp://minio.${INGRESS_HOST}.nip.io"
+echo -e "[INFO]\thttp://minio.${DOMAIN}"
 ```
 
 ### Deploy Tenant

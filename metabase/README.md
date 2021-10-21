@@ -61,13 +61,12 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+kubectl create ns metabase
 
 #
-kubectl create ns metabase
-```
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
-```sh
 #
 helm install metabase pmint93/metabase \
   --namespace metabase \
@@ -76,7 +75,7 @@ helm install metabase pmint93/metabase \
 ingress:
   enabled: true
   hosts:
-  - metabase.${INGRESS_HOST}.nip.io
+  - metabase.${DOMAIN}
 EOF
 )
 ```
@@ -95,20 +94,6 @@ kubectl logs \
   -l 'app=metabase' \
   -n metabase \
   -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 metabase.metabase.svc.cluster.local +short
-nslookup metabase.metabase.svc.cluster.local 10.96.0.10
-```
-
-#### ExternalDNS
-
-```sh
-dig @10.96.0.10 "metabase.${INGRESS_HOST}.nip.io" +short
-nslookup "metabase.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Delete

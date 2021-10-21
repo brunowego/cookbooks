@@ -503,7 +503,8 @@ kubectl expose deployment 'my-nginx' \
   --name 'my-nginx-service'
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 cat << EOF | kubectl apply -f -
 apiVersion: extensions/v1beta1
@@ -512,7 +513,7 @@ metadata:
   name: my-ingress
 spec:
   rules:
-  - host: example.${INGRESS_HOST}.nip.io
+  - host: example.${DOMAIN}
     http:
       paths:
       - backend:

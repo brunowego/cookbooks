@@ -8,6 +8,10 @@ https://github.com/cristianoliveira/ergo
 
 - [Proxy Servers](https://roadmap.sh/guides/proxy-servers)
 
+## Tools
+
+- [hide.me](https://hide.me/en/proxy)
+
 ## List of Variables
 
 - `http_proxy`

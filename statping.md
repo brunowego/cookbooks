@@ -151,17 +151,17 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
-```
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
-```sh
+#
 helm install statping statping/statping \
   --namespace monitoring \
   --version 0.1.14 \
   -f <(cat << EOF
 ingress:
   enabled: true
-  hostname: statping.${INGRESS_HOST}.nip.io
+  hostname: statping.${DOMAIN}
 persistence:
   storageClassName: $(kubectl get storageclass -o jsonpath='{.items[0].metadata.name}')
 EOF

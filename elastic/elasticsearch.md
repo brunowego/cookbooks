@@ -68,7 +68,8 @@ helm repo update
 kubectl create ns elastic
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install elasticsearch elastic/elasticsearch \
@@ -82,7 +83,7 @@ minimumMasterNodes: 1
 ingress:
   enabled: true
   hosts:
-  - host: elasticsearch.${INGRESS_HOST}.nip.io
+  - host: elasticsearch.${DOMAIN}
     paths:
     - path: /
 EOF
@@ -121,21 +122,21 @@ curl \
   -X PUT \
   -H 'Content-Type: application/json' \
   -d '{"index.blocks.read_only_allow_delete": null}' \
-  "http://elasticsearch.${INGRESS_HOST}.nip.io/_all/_settings"
+  "http://elasticsearch.${DOMAIN}/_all/_settings"
 
 #
 curl \
   -X PUT \
   -H 'Content-Type: application/json' \
   -d '{"transient":{"cluster.routing.allocation.disk.watermark.low":"50gb","cluster.routing.allocation.disk.watermark.high":"20gb","cluster.routing.allocation.disk.watermark.flood_stage":"10gb","cluster.info.update.interval":"1m"}}' \
-  "http://elasticsearch.${INGRESS_HOST}.nip.io/_cluster/settings?pretty" \
+  "http://elasticsearch.${DOMAIN}/_cluster/settings?pretty" \
 
 #
 curl \
   -X PUT \
   -H 'Content-Type: application/json' \
   -d '{"index.blocks.read_only_allow_delete": null}' \
-  "http://elasticsearch.${INGRESS_HOST}.nip.io/_all/_settings"
+  "http://elasticsearch.${DOMAIN}/_all/_settings"
 ```
 
 #### 429 Too Many Requests
@@ -150,7 +151,7 @@ curl \
   -X PUT \
   -H 'Content-Type: application/json' \
   -d '{"index.blocks.read_only_allow_delete": null}' \
-  "http://elasticsearch.${INGRESS_HOST}.nip.io/_all/_settings"
+  "http://elasticsearch.${DOMAIN}/_all/_settings"
 ```
 
 ### Delete

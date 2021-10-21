@@ -18,7 +18,7 @@ helm install kafka-manager stable/kafka-manager \
   --set basicAuth.enabled=true \
   --set basicAuth.password="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
   --set ingress.enabled=true \
-  --set ingress.hosts={kafka-manager.${INGRESS_HOST}.nip.io}
+  --set ingress.hosts={kafka-manager.${DOMAIN}}
 ```
 
 ### Delete

@@ -704,7 +704,7 @@ metadata:
     app: matomo
 spec:
   rules:
-  - host: matomo.${INGRESS_HOST}.nip.io
+  - host: matomo.${DOMAIN}
     http:
       paths:
       - backend:
@@ -721,7 +721,7 @@ kubectl get ingress -n matomo
 ```
 
 ```sh
-echo -e "[INFO]\thttp://matomo.${INGRESS_HOST}.nip.io"
+echo -e "[INFO]\thttp://matomo.${DOMAIN}"
 ```
 
 ```sh
@@ -762,7 +762,7 @@ kubectl create ns matomo
 helm install matomo ./ \
   --namespace matomo \
   --set ingress.enabled=true \
-  --set "ingress.hosts[0].host=matomo.${INGRESS_HOST}.nip.io" \
+  --set "ingress.hosts[0].host=matomo.${DOMAIN}" \
   --set 'ingress.hosts[0].paths={/}'
 ```
 
@@ -787,7 +787,7 @@ ingress:
   tls:
     - secretName: example.tls-secret
       hosts:
-        - matomo.${INGRESS_HOST}.nip.io
+        - matomo.${DOMAIN}
 EOF
 ) <(helm get values matomo))
 ```
@@ -826,8 +826,8 @@ nslookup matomo.matomo.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "matomo.${INGRESS_HOST}.nip.io" +short
-nslookup "matomo.${INGRESS_HOST}.nip.io" 10.96.0.10
+dig @10.96.0.10 "matomo.${DOMAIN}" +short
+nslookup "matomo.${DOMAIN}" 10.96.0.10
 ```
 
 ### Secret

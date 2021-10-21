@@ -9,17 +9,20 @@
 ### Install
 
 ```sh
+#
 kubectl create ns ambassador
-```
 
-```sh
+#
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
+
+#
 helm install ambassador stable/ambassador \
   --namespace ambassador \
   --set crds.keep=false \
   --set service.type=ClusterIP
-```
 
-```sh
+#
 cat << EOF | kubectl apply -f -
 apiVersion: extensions/v1beta1
 kind: Ingress
@@ -28,7 +31,7 @@ metadata:
   namespace: ambassador
 spec:
   rules:
-  - host: ambassador.${INGRESS_HOST}.nip.io
+  - host: ambassador.${DOMAIN}
     http:
       paths:
       - backend:
@@ -47,7 +50,7 @@ metadata:
   namespace: ambassador
 spec:
   rules:
-  - host: admin.ambassador.${INGRESS_HOST}.nip.io
+  - host: admin.ambassador.${DOMAIN}
     http:
       paths:
       - backend:
@@ -90,7 +93,7 @@ kubectl apply -f <(yq m <(cat << EOF
 spec:
   tls:
     - hosts:
-        - ambassador.${INGRESS_HOST}.nip.io
+        - ambassador.${DOMAIN}
       secretName: example.tls-secret
 EOF
 ) <(kubectl get ingress ambassador -n ambassador -o yaml))
@@ -101,7 +104,7 @@ kubectl apply -f <(yq m <(cat << EOF
 spec:
   tls:
     - hosts:
-        - admin.ambassador.${INGRESS_HOST}.nip.io
+        - admin.ambassador.${DOMAIN}
       secretName: example.tls-secret
 EOF
 ) <(kubectl get ingress ambassador-admin -n ambassador -o yaml))
@@ -128,31 +131,11 @@ kubectl rollout status deploy/ambassador -n ambassador
 kubectl logs -l 'app.kubernetes.io/name=ambassador' -n ambassador -f
 ```
 
-### DNS
-
-```sh
-dig @10.96.0.10 ambassador.ambassador.svc.cluster.local +short
-nslookup ambassador.ambassador.svc.cluster.local 10.96.0.10
-
-dig @10.96.0.10 ambassador-admin.ambassador.svc.cluster.local +short
-nslookup ambassador-admin.ambassador.svc.cluster.local 10.96.0.10
-```
-
-#### ExternalDNS
-
-```sh
-dig @10.96.0.10 "ambassador.${INGRESS_HOST}.nip.io" +short
-nslookup "ambassador.${INGRESS_HOST}.nip.io" 10.96.0.10
-
-dig @10.96.0.10 "admin.ambassador.${INGRESS_HOST}.nip.io" +short
-nslookup "admin.ambassador.${INGRESS_HOST}.nip.io" 10.96.0.10
-```
-
 ### Web UI
 
 ```sh
 # Admin
-echo -e "[INFO]\thttp://admin.ambassador.${INGRESS_HOST}.nip.io/ambassador/v0/diag/"
+echo -e "[INFO]\thttp://admin.ambassador.${DOMAIN}/ambassador/v0/diag/"
 ```
 
 ### Delete

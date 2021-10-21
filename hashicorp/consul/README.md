@@ -20,7 +20,8 @@ helm repo update
 kubectl create ns consul
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm upgrade consul hashicorp/consul \
@@ -38,7 +39,7 @@ ui:
   ingress:
     enabled: true
     hosts:
-    - host: consul.${INGRESS_HOST}.nip.io
+    - host: consul.${DOMAIN}
       paths:
       - /
 EOF

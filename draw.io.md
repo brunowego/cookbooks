@@ -1,6 +1,6 @@
 # draw.io
 
-## CLI
+## App
 
 ### Installation
 
@@ -10,7 +10,24 @@
 brew install --cask drawio
 ```
 
+### Structure
+
+```sh
+#
+mkdir -p ./.drawio/exported
+
+#
+touch ./.drawio/app.drawio
+```
+
 ## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
 
 ### Running
 
@@ -21,6 +38,7 @@ docker run -d \
   -p 8080:8080 \
   -p 8443:8443 \
   --name drawio \
+  --network workbench \
   docker.io/jgraph/drawio:12.3.3-alpine
 ```
 

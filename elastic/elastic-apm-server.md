@@ -22,13 +22,13 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+kubectl create ns elastic-system
 
 #
-kubectl create ns elastic-system
-```
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
-```sh
+#
 helm install apm-server elastic/apm-server \
   --namespace elastic-system \
   --version 7.13.2 \
@@ -36,7 +36,7 @@ helm install apm-server elastic/apm-server \
 ingress:
   enabled: true
   hosts:
-  - apm.${INGRESS_HOST}.nip.io
+  - apm.${DOMAIN}
 EOF
 )
 ```
@@ -61,7 +61,7 @@ kubectl logs \
 
 ```sh
 #
-echo -e "[INFO]\thttp://apm.${INGRESS_HOST}.nip.io"
+echo -e "[INFO]\thttp://apm.${DOMAIN}"
 ```
 
 ### Delete

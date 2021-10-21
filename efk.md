@@ -36,7 +36,8 @@ helm dependency update ./efk
 kubectl create ns efk
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install efk ./efk \
@@ -71,7 +72,7 @@ elasticsearch:
   ingress:
     enabled: true
     hosts:
-    - host: elasticsearch.${INGRESS_HOST}.nip.io
+    - host: elasticsearch.${DOMAIN}
       paths:
       - path: /
 
@@ -81,7 +82,7 @@ kibana:
   ingress:
     enabled: true
     hosts:
-    - host: kibana.${INGRESS_HOST}.nip.io
+    - host: kibana.${DOMAIN}
       paths:
       - path: /
 
@@ -148,10 +149,10 @@ kubectl logs \
 
 ```sh
 #
-curl "http://elasticsearch.${INGRESS_HOST}.nip.io/_cat/indices?v"
+curl "http://elasticsearch.${DOMAIN}/_cat/indices?v"
 
 #
-curl "http://elasticsearch.${INGRESS_HOST}.nip.io/_aliases?pretty=true"
+curl "http://elasticsearch.${DOMAIN}/_aliases?pretty=true"
 ```
 
 ### Dashboard

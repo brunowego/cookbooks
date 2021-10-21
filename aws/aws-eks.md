@@ -13,11 +13,6 @@ https://www.youtube.com/watch?v=tkYzg8HRK4o
 
 - Application Load Balancing (ALB)
 
-<!-- ##
-
-- ECS
-- ECR -->
-
 ## CLI
 
 ### Commands
@@ -39,10 +34,4 @@ for CLUSTER in $(aws eks list-clusters | cut -f 2 -d $'\t'); do
     update-kubeconfig \
     --name "$CLUSTER"
 done
-
-#
-aws eks \
-  --region region-code \
-  update-kubeconfig \
-  --name cluster_name
 ```

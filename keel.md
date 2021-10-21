@@ -24,7 +24,8 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install keel keel/keel \
@@ -34,7 +35,7 @@ helm install keel keel/keel \
 ingress:
   enabled: true
   hosts:
-  - host: keel.${INGRESS_HOST}.nip.io
+  - host: keel.${DOMAIN}
     paths:
     - /
 EOF

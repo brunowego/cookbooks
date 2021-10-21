@@ -148,7 +148,8 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install grafana grafana/grafana \
@@ -160,7 +161,7 @@ adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
 ingress:
   enabled: true
   hosts:
-  - grafana.${INGRESS_HOST}.nip.io
+  - grafana.${DOMAIN}
 
 plugins:
 - grafana-piechart-panel

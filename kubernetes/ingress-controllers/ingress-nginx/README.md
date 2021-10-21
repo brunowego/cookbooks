@@ -14,12 +14,12 @@ https://github.com/kubernetes/ingress-nginx/tree/main/deploy/grafana/dashboards
 ## Links
 
 - [Main Website](https://kubernetes.github.io/ingress-nginx/)
-- [Annotations](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/)
 - [Generate Deploy Scripts](https://github.com/kubernetes/ingress-nginx/blob/main/hack/generate-deploy-scripts.sh)
 
 ## Guides
 
 - [Custom Headers](https://kubernetes.github.io/ingress-nginx/examples/customization/custom-headers/)
+- [Annotations](https://github.com/kubernetes/ingress-nginx/blob/main/docs/user-guide/nginx-configuration/annotations.md)
 
 ## Utils
 

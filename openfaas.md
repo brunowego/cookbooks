@@ -47,7 +47,7 @@ helm install openfaas openfaas/openfaas \
   --set serviceType=ClusterIP \
   --set operator.create=true \
   --set ingress.enabled=true \
-  --set "ingress.hosts[0].host=openfaas.${INGRESS_HOST}.nip.io" \
+  --set "ingress.hosts[0].host=openfaas.${DOMAIN}" \
   --set 'ingress.hosts[0].path=/' \
   --set 'ingress.hosts[0].serviceName=gateway' \
   --set 'ingress.hosts[0].servicePort=8080' \
@@ -77,8 +77,8 @@ nslookup gateway-external.openfaas.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "openfaas.${INGRESS_HOST}.nip.io" +short
-nslookup "openfaas.${INGRESS_HOST}.nip.io" 10.96.0.10
+dig @10.96.0.10 "openfaas.${DOMAIN}" +short
+nslookup "openfaas.${DOMAIN}" 10.96.0.10
 ```
 
 ### Secret

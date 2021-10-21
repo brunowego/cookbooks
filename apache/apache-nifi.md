@@ -25,13 +25,13 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+kubectl create ns nifi-system
 
 #
-kubectl create ns nifi-system
-```
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
-```sh
+#
 helm install nifi cetic/nifi \
   --namespace nifi-system \
   --version 0.7.8 \
@@ -39,7 +39,7 @@ helm install nifi cetic/nifi \
 ingress:
   enabled: true
   hosts:
-  - nifi.${INGRESS_HOST}.nip.io
+  - nifi.${DOMAIN}
 EOF
 )
 ```
@@ -77,20 +77,6 @@ kubectl logs \
   -c user-log \
   -n nifi-system \
   -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 nifi.nifi.svc.cluster.local +short
-nslookup nifi.nifi.svc.cluster.local 10.96.0.10
-```
-
-#### ExternalDNS
-
-```sh
-dig @10.96.0.10 "nifi.${INGRESS_HOST}.nip.io" +short
-nslookup "nifi.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Secret

@@ -77,7 +77,7 @@ kubectl get flow \
 ## Validation
 
 ```sh
-echo -e "[INFO]\thttp://minio.${INGRESS_HOST}.nip.io/minio/demo/"
+echo -e "[INFO]\thttp://minio.${DOMAIN}/minio/demo/"
 ```
 
 ## Delete

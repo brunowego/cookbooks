@@ -31,7 +31,7 @@ helm install pushgateway prometheus-community/prometheus-pushgateway \
 ingress:
   enabled: true
   hosts:
-  - pushgateway.${INGRESS_HOST}.nip.io
+  - pushgateway.${DOMAIN}
 EOF
 )
 ```
@@ -55,7 +55,7 @@ kubectl logs \
 ### Ingress
 
 ```sh
-echo -e "[INFO]\thttp://pushgateway.${INGRESS_HOST}.nip.io"
+echo -e "[INFO]\thttp://pushgateway.${DOMAIN}"
 ```
 
 ### Delete

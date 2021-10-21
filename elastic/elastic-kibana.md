@@ -114,7 +114,8 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install kibana elastic/kibana \
@@ -124,7 +125,7 @@ helm install kibana elastic/kibana \
 ingress:
   enabled: true
   hosts:
-  - host: kibana.${INGRESS_HOST}.nip.io
+  - host: kibana.${DOMAIN}
     paths:
     - path: /
 EOF

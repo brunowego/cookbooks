@@ -163,7 +163,8 @@ kubectl delete service traefik-dashboard \
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 cat << EOF | kubectl apply \
@@ -193,7 +194,7 @@ spec:
   entryPoints:
   - web
   routes:
-  - match: PathPrefix(\`/dashboard\`) || Host(\`traefik.${INGRESS_HOST}.nip.io\`)
+  - match: PathPrefix(\`/dashboard\`) || Host(\`traefik.${DOMAIN}\`)
     kind: Rule
     middlewares:
     - name: traefik-basic-auth
@@ -203,7 +204,7 @@ spec:
 EOF
 
 #
-echo -e "[INFO]\thttp://traefik.${INGRESS_HOST}.nip.io"
+echo -e "[INFO]\thttp://traefik.${DOMAIN}"
 ```
 
 #### Delete

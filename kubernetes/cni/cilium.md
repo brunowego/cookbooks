@@ -58,7 +58,8 @@ EOF
 
 ```sh
 #
-# export INGRESS_HOST='127.0.0.1'
+# export KUBERNETES_IP='127.0.0.1'
+# export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm upgrade cilium cilium/cilium \
@@ -71,7 +72,7 @@ hubble:
   #   ingress:
   #     enabled: true
   #     hosts:
-  #     - hubble.${INGRESS_HOST}.nip.io
+  #     - hubble.${DOMAIN}
 EOF
 ))
 ```

@@ -34,8 +34,8 @@ helm repo update
 #
 cat << EOF > ~/.s3cfg
 [default]
-host_base = minio.${INGRESS_HOST}.nip.io
-host_bucket = minio.${INGRESS_HOST}.nip.io
+host_base = minio.${DOMAIN}
+host_bucket = minio.${DOMAIN}
 use_https = False
 
 access_key = minio
@@ -50,13 +50,13 @@ s3cmd mb s3://velero
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+kubectl create ns velero
 
 #
-kubectl create ns velero
-```
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
-```sh
+#
 helm install velero vmware-tanzu/velero \
   --namespace velero \
   --version 2.23.3 \
@@ -68,7 +68,7 @@ configuration:
     config:
       region: default
       s3ForcePathStyle: true
-      publicUrl: http://minio.${INGRESS_HOST}.nip.io
+      publicUrl: http://minio.${DOMAIN}
       s3Url: http://minio.minio.svc.cluster.local:9000
   volumeSnapshotLocation:
     config:

@@ -33,7 +33,8 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install loki grafana/loki \
@@ -43,7 +44,7 @@ helm install loki grafana/loki \
 ingress:
   enabled: true
   hosts:
-  - host: loki.${INGRESS_HOST}.nip.io
+  - host: loki.${DOMAIN}
     paths:
     - /
 

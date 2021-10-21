@@ -44,15 +44,17 @@ spec:
 EOF
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
+#
 curl \
   --retry 3 \
   --retry-connrefused \
   --retry-max-time 60 \
   -sG \
   --data-urlencode 'match_target={job="rabbitmq"}' \
-  "http://prometheus.${INGRESS_HOST}.nip.io/api/v1/targets/metadata" | \
+  "http://prometheus.${DOMAIN}/api/v1/targets/metadata" | \
     jq .status | \
       grep 'success'
 ```
@@ -88,7 +90,7 @@ curl \
   --retry-max-time 60 \
   -sG \
   --data-urlencode 'match_target={job="prometheus-kube-prometheus-alertmanager"}' \
-  "http://prometheus.${INGRESS_HOST}.nip.io/api/v1/targets/metadata" | \
+  "http://prometheus.${DOMAIN}/api/v1/targets/metadata" | \
     jq .status | \
       grep 'success'
 ```

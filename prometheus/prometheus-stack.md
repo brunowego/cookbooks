@@ -29,7 +29,8 @@ helm repo update
 kubectl create ns monitoring
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install prometheus-stack prometheus-community/kube-prometheus-stack \
@@ -40,7 +41,7 @@ alertmanager:
   ingress:
     enabled: true
     hosts:
-    - alertmanager.${INGRESS_HOST}.nip.io
+    - alertmanager.${DOMAIN}
     pathType: Prefix
 
 grafana:
@@ -48,13 +49,13 @@ grafana:
   ingress:
     enabled: true
     hosts:
-    - grafana.${INGRESS_HOST}.nip.io
+    - grafana.${DOMAIN}
 
 prometheus:
   ingress:
     enabled: true
     hosts:
-    - prometheus.${INGRESS_HOST}.nip.io
+    - prometheus.${DOMAIN}
     pathType: Prefix
 EOF
 )
@@ -119,13 +120,13 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 
 ```sh
 #
-echo -e "[INFO]\thttp://prometheus.${INGRESS_HOST}.nip.io"
+echo -e "[INFO]\thttp://prometheus.${DOMAIN}"
 
 #
-echo -e "[INFO]\thttp://alertmanager.${INGRESS_HOST}.nip.io"
+echo -e "[INFO]\thttp://alertmanager.${DOMAIN}"
 
 #
-echo -e "[INFO]\thttp://grafana.${INGRESS_HOST}.nip.io"
+echo -e "[INFO]\thttp://grafana.${DOMAIN}"
 ```
 
 ### Tips
@@ -226,8 +227,8 @@ EOF
 
 ```sh
 #
-echo -e "[INFO]\thttp://prometheus.${INGRESS_HOST}.nip.io/service-discovery"
-echo -e "[INFO]\thttp://prometheus.${INGRESS_HOST}.nip.io/config"
+echo -e "[INFO]\thttp://prometheus.${DOMAIN}/service-discovery"
+echo -e "[INFO]\thttp://prometheus.${DOMAIN}/config"
 ```
 
 #### AWS NLB

@@ -90,6 +90,12 @@ kubectl delete ns elastic-system \
 
 ### Install
 
+```sh
+#
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
+```
+
 #### Elasticsearch
 
 ```sh
@@ -118,8 +124,6 @@ spec:
 EOF
 
 #
-export INGRESS_HOST='127.0.0.1'
-
 cat << EOF | kubectl apply \
   -n logging \
   -f -
@@ -129,7 +133,7 @@ metadata:
   name: elasticsearch
 spec:
   rules:
-  - host: elasticsearch.${INGRESS_HOST}.nip.io
+  - host: elasticsearch.${DOMAIN}
     http:
       paths:
       - backend:
@@ -165,8 +169,6 @@ spec:
 EOF
 
 #
-export INGRESS_HOST='127.0.0.1'
-
 cat << EOF | kubectl apply \
   -n logging \
   -f -
@@ -176,7 +178,7 @@ metadata:
   name: kibana
 spec:
   rules:
-  - host: kibana.${INGRESS_HOST}.nip.io
+  - host: kibana.${DOMAIN}
     http:
       paths:
       - backend:

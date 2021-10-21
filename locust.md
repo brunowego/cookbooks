@@ -84,7 +84,8 @@ data:
 EOF
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm upgrade locust deliveryhero/locust \
@@ -113,7 +114,7 @@ worker:
 ingress:
   enabled: true
   hosts:
-  - host: locust.${INGRESS_HOST}.nip.io
+  - host: locust.${DOMAIN}
     path: /
 EOF
 )

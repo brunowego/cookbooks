@@ -22,7 +22,7 @@ kubectl create ns graylog
 helm install graylog stable/graylog \
   --namespace graylog \
   --set graylog.ingress.enabled=true \
-  --set graylog.ingress.hosts={graylog.${INGRESS_HOST}.nip.io} \
+  --set graylog.ingress.hosts={graylog.${DOMAIN}} \
   --set graylog.rootUsername='admin' \
   --set graylog.rootPassword="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
   --set graylog.rootEmail="admin@$(minikube ip).nip.io"
@@ -50,7 +50,7 @@ graylog:
     tls:
       - secretName: example.tls-secret
         hosts:
-          - graylog.${INGRESS_HOST}.nip.io
+          - graylog.${DOMAIN}
 EOF
 ) <(helm get values graylog))
 ```
@@ -89,8 +89,8 @@ nslookup graylog-master.graylog.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "graylog.${INGRESS_HOST}.nip.io" +short
-nslookup "graylog.${INGRESS_HOST}.nip.io" 10.96.0.10
+dig @10.96.0.10 "graylog.${DOMAIN}" +short
+nslookup "graylog.${DOMAIN}" 10.96.0.10
 ```
 
 ### Secret

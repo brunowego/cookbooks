@@ -55,7 +55,8 @@ EOF
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 cat << EOF | kubectl apply -f -
@@ -66,7 +67,7 @@ metadata:
   namespace: dremio
 spec:
   rules:
-  - host: dremio.${INGRESS_HOST}.nip.io
+  - host: dremio.${DOMAIN}
     http:
       paths:
       - backend:
@@ -74,9 +75,8 @@ spec:
           servicePort: 9047
         path: /
 EOF
-```
 
-```sh
+#
 rm -fR ./charts
 ```
 

@@ -5,6 +5,10 @@
 - [Code Repository](https://github.com/kubernetes-sigs/aws-load-balancer-controller)
 - [Main Website](https://kubernetes-sigs.github.io/aws-load-balancer-controller/)
 
+## Guides
+
+- [Ingress Annotations](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.1/guide/ingress/annotations/)
+
 ## Helm
 
 ### References
@@ -90,86 +94,52 @@ kubectl logs \
 
 ```sh
 #
-export K8S_INGRESS_NAME=''
-export AWS_WAF_ACL_ARN=''
-export AWS_CERTIFICATE_ARN=''
-```
-
-#### Annotations
-
-```sh
-#
-kubectl get ingress "$K8S_INGRESS_NAME" \
-  -o jsonpath='{.metadata.annotations}' | \
-    jq
+export K8S_INGRESS_NAME='my-app'
+export AWS_WAF_ACL_ARN='arn:aws:wafv2:us-east-1:111111111111:regional/webacl/[name]/11111111-1111-1111-1111-111111111111'
+export AWS_CERTIFICATE_ARN='arn:aws:acm:us-east-1:810141740403:certificate/044fb60c-16a5-49c1-abb0-d6e50bbc4988'
+export AWS_CERTIFICATE_ARN='arn:aws:acm:us-east-1:111111111111:certificate/11111111-1111-1111-1111-111111111111'
 
 #
-kubectl annotate \
-  --overwrite \
-  ingress \
-  "$K8S_INGRESS_NAME" \
-  kubernetes.io/ingress.class='alb'
+cat << EOF | kubectl apply -f -
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: $K8S_INGRESS_NAME
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type":"redirect","RedirectConfig":{"Protocol":"HTTPS","Port":"443","StatusCode":"HTTP_301"}}'
+    alb.ingress.kubernetes.io/certificate-arn: $AWS_CERTIFICATE_ARN
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80},{"HTTPS":443}]'
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/wafv2-acl-arn: $AWS_WAF_ACL_ARN
+spec:
+  rules:
+  - host: my-app.example.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: ssl-redirect
+            port:
+              name: use-annotation
+        path: /*
+        pathType: ImplementationSpecific
+      - backend:
+          service:
+            name: my-app
+            port:
+              name: http
+        path: /*
+        pathType: ImplementationSpecific
+EOF
 
 #
-kubectl annotate \
-  ingress \
-  "$K8S_INGRESS_NAME" \
-  alb.ingress.kubernetes.io/scheme='internet-facing'
-
-#
-kubectl annotate \
-  ingress \
-  "$K8S_INGRESS_NAME" \
-  alb.ingress.kubernetes.io/target-type='ip'
-
-#
-kubectl annotate ingress \
-  "$K8S_INGRESS_NAME" \
-  alb.ingress.kubernetes.io/wafv2-acl-arn="$AWS_WAF_ACL_ARN"
-
-#
-kubectl annotate ingress \
-  "$K8S_INGRESS_NAME" \
-  alb.ingress.kubernetes.io/certificate-arn="$AWS_CERTIFICATE_ARN"
-
-#
-kubectl annotate ingress \
-  "$K8S_INGRESS_NAME" \
-  alb.ingress.kubernetes.io/success-codes='200'
-
-#
-kubectl annotate ingress \
-  "$K8S_INGRESS_NAME" \
-  alb.ingress.kubernetes.io/listen-ports='[{"HTTP":80},{"HTTPS":443}]'
-
-#
-kubectl annotate ingress \
-  "$K8S_INGRESS_NAME" \
-  alb.ingress.kubernetes.io/actions.ssl-redirect='{"Type":"redirect","RedirectConfig":{"Protocol":"HTTPS","Port":"443","StatusCode":"HTTP_301"}}'
-
-#
-kubectl annotate ingress \
-  "$K8S_INGRESS_NAME" \
-  alb.ingress.kubernetes.io/healthcheck-path='/api/v1/health-check'
+kubectl patch svc my-app -p '{"spec":{"type":"NodePort"}}' # or LoadBalancer
 ```
 
 <!--
-# alb.ingress.kubernetes.io/target-type: instance
-alb.ingress.kubernetes.io/group.name: external
-# alb.ingress.kubernetes.io/group.name: default
-alb.ingress.kubernetes.io/load-balancer-attributes: access_logs.s3.enabled=true,access_logs.s3.bucket=dop-eu-west-1-lb,access_logs.s3.prefix=sbx-k8s-ingress-external,routing.http.drop_invalid_header_fields.enabled=true
-alb.ingress.kubernetes.io/subnets: sbx_igw_1_a, sbx_igw_1_b, sbx_igw_1_c
-alb.ingress.kubernetes.io/group.name: external
-alb.ingress.kubernetes.io/backend-protocol: HTTPS
-alb.ingress.kubernetes.io/shield-advanced-protection: "true"
-alb.ingress.kubernetes.io/actions.redirect-to-www: >
-  {"Type": "redirect", "redirectConfig": {"Host":"www.guotiexin.com", "Port":"443", "Protocol":"HTTPS", "StatusCode":"HTTP_301"}}
-alb.ingress.kubernetes.io/actions.only-allow-with-custom-header: >
-  {"type": "forward", "forwardConfig": {"targetGroups": [{"serviceName": "wordpress", "servicePort": "http"}]}}
-alb.ingress.kubernetes.io/conditions.only-allow-with-custom-header: >
-  [{"field": "http-header", "httpHeaderConfig": {"httpHeaderName": "X-Custom-Header", "values": ["<your-secret-here>"]}}]
-alb.ingress.kubernetes.io/tags: scos.delete.on.teardown=true
-alb.ingress.kubernetes.io/ssl-policy: "ELBSecurityPolicy-TLS-1-2-2017-01"
+https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LoadBalancers:sort=loadBalancerName
+https://console.aws.amazon.com/wafv2/homev2/web-acls?region=us-east-1
 -->
 
 ### Issues
@@ -180,21 +150,15 @@ alb.ingress.kubernetes.io/ssl-policy: "ELBSecurityPolicy-TLS-1-2-2017-01"
 {"level":"error","ts":1634591431.1706526,"logger":"controller","msg":"Reconciler error","controller":"ingress","name":"my-app","namespace":"my-ns","error":"InvalidParameter: 1 validation error(s) found.\n- minimum field value of 1, CreateTargetGroupInput.Port.\n"}
 ```
 
-```sh
-#
-kubectl annotate \
-  ingress \
-  "$K8S_INGRESS_NAME" \
-  alb.ingress.kubernetes.io/target-type='ip'
-```
+Change service to use `NodePort` instead of `ClusterIP`.
 
-####
+<!-- ####
 
 ```log
 {"level":"error","ts":1634591702.9418764,"logger":"controller","msg":"Reconciler error","reconcilerGroup":"elbv2.k8s.aws","reconcilerKind":"TargetGroupBinding","controller":"targetGroupBinding","name":"k8s-my-app-0bea0a55b3","namespace":"my-app","error":"cannot resolve pod ENI for pods: [my-app/app-0 my-app/app-1 my-app/app-2]"}
 ```
 
-TODO
+TODO -->
 
 ### Delete
 

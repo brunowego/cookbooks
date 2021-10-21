@@ -39,7 +39,8 @@ helm repo update
 kubectl create ns kubecost-system
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install kubecost kubecost/cost-analyzer \
@@ -55,7 +56,7 @@ global:
 
   grafana:
     enabled: true
-    # domainName: grafana.${INGRESS_HOST}.nip.io
+    # domainName: grafana.${DOMAIN}
     # scheme: http
     # proxy: false
 
@@ -68,7 +69,7 @@ kubecostToken: aGVsbUBrdWJlY29zdC5jb20=xm343yadf98
 ingress:
   enabled: true
   hosts:
-  - kubecost.${INGRESS_HOST}.nip.io
+  - kubecost.${DOMAIN}
 
 # remoteWrite:
 #   postgres:

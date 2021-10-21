@@ -39,14 +39,15 @@ helm repo update
 kubectl create ns cattle-system
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install rancher rancher-latest/rancher \
   --namespace cattle-system \
   --version 2.6.2 \
   -f <(cat << EOF
-hostname: rancher.${INGRESS_HOST}.nip.io
+hostname: rancher.${DOMAIN}
 EOF
 )
 ```

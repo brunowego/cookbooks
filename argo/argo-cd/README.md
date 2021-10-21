@@ -95,7 +95,8 @@ helm repo update
 kubectl create ns argo-system
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install argo-cd argo/argo-cd \
@@ -109,7 +110,7 @@ server:
   ingress:
     enabled: true
     hosts:
-    - argocd.${INGRESS_HOST}.nip.io
+    - argocd.${DOMAIN}
 EOF
 )
 ```
@@ -131,7 +132,7 @@ kubectl create secret tls example.tls-secret \
 
 #
 kubectl patch ingress argocd-server \
-  -p '{"spec":{"tls":[{"hosts":["argocd.${INGRESS_HOST}.nip.io"],"secretName":"example.tls-secret"}]}}' \
+  -p '{"spec":{"tls":[{"hosts":["argocd.${DOMAIN}"],"secretName":"example.tls-secret"}]}}' \
   -n argo-system
 ``` -->
 

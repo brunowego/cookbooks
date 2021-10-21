@@ -47,7 +47,8 @@ kubectl logs \
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 cat << EOF | kubectl apply \
@@ -62,7 +63,7 @@ metadata:
 spec:
   ingress:
     hosts:
-    - jaeger.${INGRESS_HOST}.nip.io
+    - jaeger.${DOMAIN}
 EOF
 ```
 
@@ -83,12 +84,12 @@ spec:
     type: elasticsearch
     options:
       es:
-        server-urls: http://elasticsearch.${INGRESS_HOST}.nip.io
+        server-urls: http://elasticsearch.${DOMAIN}
         username: [username]
         password: [password]
   ingress:
     hosts:
-    - jaeger.${INGRESS_HOST}.nip.io
+    - jaeger.${DOMAIN}
 EOF
 ```
 

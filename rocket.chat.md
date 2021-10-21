@@ -17,7 +17,8 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 kubectl create ns rocketchat
@@ -28,7 +29,7 @@ helm install rocketchat rocketchat/rocketchat \
   --namespace rocketchat \
   --version 3.1.0 \
   -f <(cat << EOF
-host: rocketchat.${INGRESS_HOST}.nip.io
+host: rocketchat.${DOMAIN}
 mongodb:
   auth:
     database: rocketchat
@@ -68,7 +69,7 @@ kubectl logs \
 
 ```sh
 #
-echo -e "[INFO]\thttp://rocketchat.${INGRESS_HOST}.nip.io"
+echo -e "[INFO]\thttp://rocketchat.${DOMAIN}"
 ```
 
 ### Delete

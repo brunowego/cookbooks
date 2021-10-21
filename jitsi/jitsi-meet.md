@@ -36,24 +36,24 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+kubectl create ns jitsi
 
 #
-kubectl create ns jitsi
-```
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
-```sh
+#
 helm install jitsi-meet jitsi/jitsi-meet \
   --namespace jitsi \
   --version 0.2.0 \
   -f <(cat << EOF
-publicURL: jitsi.${INGRESS_HOST}.nip.io
+publicURL: jitsi.${DOMAIN}
 
 web:
   ingress:
     enabled: true
     hosts:
-    - host: jitsi.${INGRESS_HOST}.nip.io
+    - host: jitsi.${DOMAIN}
       paths: ['/']
 EOF
 )

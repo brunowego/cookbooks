@@ -43,7 +43,8 @@ helm repo update
 kubectl create ns minio
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install minio bitnami/minio \
@@ -57,7 +58,7 @@ global:
 
 ingress:
   enabled: true
-  hostname: minio.${INGRESS_HOST}.nip.io
+  hostname: minio.${DOMAIN}
 
 persistence:
   size: 1G

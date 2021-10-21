@@ -170,13 +170,13 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+kubectl create ns sonarqube
 
 #
-kubectl create ns sonarqube
-```
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
-```sh
+#
 helm install sonarqube oteemocharts/sonarqube \
   --namespace sonarqube \
   --version 9.6.4 \
@@ -184,7 +184,7 @@ helm install sonarqube oteemocharts/sonarqube \
 ingress:
   enabled: true
   hosts:
-  - name: sonarqube.${INGRESS_HOST}.nip.io
+  - name: sonarqube.${DOMAIN}
 EOF
 )
 ```
@@ -203,20 +203,6 @@ kubectl logs \
   -l 'app=sonarqube' \
   -n sonarqube \
   -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 sonarqube.sonarqube.svc.cluster.local +short
-nslookup sonarqube.sonarqube.svc.cluster.local 10.96.0.10
-```
-
-#### ExternalDNS
-
-```sh
-dig @10.96.0.10 "sonarqube.${INGRESS_HOST}.nip.io" +short
-nslookup "sonarqube.${INGRESS_HOST}.nip.io" 10.96.0.10
 ```
 
 ### Delete

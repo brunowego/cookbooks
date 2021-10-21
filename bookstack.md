@@ -5,15 +5,19 @@
 ### Install
 
 ```sh
+#
 kubectl create ns bookstack
-```
 
-```sh
+#
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
+
+#
 helm install bookstack stable/bookstack \
   --namespace bookstack \
   --set podSecurityPolicy.enabled=true \
   --set ingress.enabled=true \
-  --set ingress.hosts={bookstack.${INGRESS_HOST}.nip.io}
+  --set ingress.hosts={bookstack.${DOMAIN}}
 ```
 
 | Login | Password |
@@ -23,6 +27,10 @@ helm install bookstack stable/bookstack \
 ### Delete
 
 ```sh
-helm uninstall bookstack -n bookstack
-kubectl delete ns bookstack --grace-period=0 --force
+helm uninstall bookstack \
+  -n bookstack
+
+kubectl delete ns bookstack \
+  --grace-period=0 \
+  --force
 ```

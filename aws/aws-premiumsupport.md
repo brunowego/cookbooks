@@ -2,4 +2,5 @@
 
 ## Terms
 
+- Enterprise Discount Program (EDP)
 - Technical Account Manager (TAM)

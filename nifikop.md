@@ -134,7 +134,7 @@ metadata:
   namespace: nifi
 spec:
   rules:
-  - host: nifi.${INGRESS_HOST}.nip.io
+  - host: nifi.${DOMAIN}
     http:
       paths:
       - backend:

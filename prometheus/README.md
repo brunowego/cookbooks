@@ -80,7 +80,8 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install prometheus prometheus-community/prometheus \
@@ -91,7 +92,7 @@ alertmanager:
   ingress:
     enabled: true
     hosts:
-    - alertmanager.${INGRESS_HOST}.nip.io
+    - alertmanager.${DOMAIN}
   # resources:
   #   limits:
   #     cpu: 10m
@@ -113,7 +114,7 @@ server:
   ingress:
     enabled: true
     hosts:
-    - prometheus.${INGRESS_HOST}.nip.io
+    - prometheus.${DOMAIN}
   # resources:
   #   limits:
   #     cpu: 500m
@@ -126,7 +127,7 @@ pushgateway:
   ingress:
     enabled: true
     hosts:
-    - pushgateway.${INGRESS_HOST}.nip.io
+    - pushgateway.${DOMAIN}
   # resources:
   #   limits:
   #     cpu: 10m
@@ -160,14 +161,14 @@ alertmanager:
     tls:
       - secretName: example.tls-secret
         hosts:
-          - alertmanager.${INGRESS_HOST}.nip.io
+          - alertmanager.${DOMAIN}
 
 server:
   ingress:
     tls:
       - secretName: example.tls-secret
         hosts:
-          - prometheus.${INGRESS_HOST}.nip.io
+          - prometheus.${DOMAIN}
 EOF
 ) <(helm get values prometheus))
 ```

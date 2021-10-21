@@ -65,7 +65,8 @@ helm repo update
 kubectl create ns airflow
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install airflow airflow-stable/airflow \
@@ -91,9 +92,9 @@ airflow:
 ingress:
   enabled: true
   web:
-    host: airflow.${INGRESS_HOST}.nip.io
+    host: airflow.${DOMAIN}
   flower:
-    host: flower.${INGRESS_HOST}.nip.io
+    host: flower.${DOMAIN}
 EOF
 )
 ```

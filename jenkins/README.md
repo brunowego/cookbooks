@@ -47,13 +47,13 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+kubectl create ns jenkins
 
 #
-kubectl create ns jenkins
-```
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
-```sh
+#
 helm install jenkins jenkins/jenkins \
   --namespace jenkins \
   --version 3.5.2 \
@@ -66,7 +66,7 @@ controller:
   - configuration-as-code:1.51
   ingress:
     enabled: true
-    hostName: jenkins.${INGRESS_HOST}.nip.io
+    hostName: jenkins.${DOMAIN}
 EOF
 )
 ```
@@ -74,7 +74,8 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status statefulset/jenkins -n jenkins
+kubectl rollout status statefulset/jenkins \
+  -n jenkins
 ```
 
 ### Logs
@@ -86,7 +87,11 @@ kubectl logs $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='
   -f
 
 #
-kubectl logs -l 'app.kubernetes.io/name=jenkins' -n jenkins -c init -f
+kubectl logs \
+  -l 'app.kubernetes.io/name=jenkins' \
+  -n jenkins \
+  -c init \
+  -f
 ```
 
 ### Secrets
@@ -134,7 +139,7 @@ agent:
     mountPath: /var/run/docker.sock
   envVars:
   - name: DOCKER_REGISTRY_URL
-    value: https://registry.${INGRESS_HOST}.nip.io
+    value: https://registry.${DOMAIN}
   - name: DOCKER_REGISTRY_CREDENTIAL
     value: nxrm-oss-credential
 EOF

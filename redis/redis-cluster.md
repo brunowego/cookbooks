@@ -17,13 +17,9 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+kubectl create ns redis-cluster
 
 #
-kubectl create ns redis-cluster
-```
-
-```sh
 helm install redis-cluster bitnami/redis-cluster \
   --namespace redis-cluster \
   --version 6.2.3 \

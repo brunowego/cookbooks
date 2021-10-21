@@ -26,13 +26,13 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+kubectl create ns mysql-system
 
 #
-kubectl create ns mysql-system
-```
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
-```sh
+#
 helm install mysql-operator presslabs/mysql-operator \
   --namespace mysql-system \
   --version 0.5.0-rc.3 \
@@ -44,7 +44,7 @@ orchestrator:
   ingress:
     enabled: true
     hosts:
-    - host: orchestrator.${INGRESS_HOST}.nip.io
+    - host: orchestrator.${DOMAIN}
       paths: ['/']
 EOF
 )

@@ -43,16 +43,19 @@ helm repo update
 kubectl create ns wordpress
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install wordpress bitnami/wordpress \
   --namespace wordpress \
   --version 12.1.21 \
   -f <(cat << EOF
+replicaCount: 1
+
 ingress:
   enabled: true
-  hostname: wordpress.${INGRESS_HOST}.nip.io
+  hostname: wordpress.$DOMAIN
 EOF
 )
 ```

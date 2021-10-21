@@ -254,7 +254,8 @@ https://github.com/rabbitmq/rabbitmq-server/tree/master/deps/rabbitmq_prometheus
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 cat << EOF | kubectl apply \
@@ -266,7 +267,7 @@ metadata:
   name: rabbitmq
 spec:
   rules:
-  - host: rabbitmq.${INGRESS_HOST}.nip.io
+  - host: rabbitmq.${DOMAIN}
     http:
       paths:
       - backend:
@@ -299,7 +300,7 @@ kubectl get secret rabbitmq-default-user \
 ### Ingress
 
 ```sh
-echo -e "[INFO]\thttp://rabbitmq.${INGRESS_HOST}.nip.io"
+echo -e "[INFO]\thttp://rabbitmq.${DOMAIN}"
 ```
 
 <!-- ###

@@ -34,7 +34,7 @@ wsk property set \
 
 #
 wsk property set \
-  --apihost "openwhisk.${INGRESS_HOST}.nip.io:443"
+  --apihost "openwhisk.${DOMAIN}:443"
 ```
 
 #### Auth

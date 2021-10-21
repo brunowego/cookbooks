@@ -73,10 +73,10 @@ kubectl get flow \
 
 ```sh
 #
-curl "http://elasticsearch.${INGRESS_HOST}.nip.io/_cat/indices?v"
+curl "http://elasticsearch.${DOMAIN}/_cat/indices?v"
 
 #
-curl "http://elasticsearch.${INGRESS_HOST}.nip.io/_aliases?pretty=true"
+curl "http://elasticsearch.${DOMAIN}/_aliases?pretty=true"
 ```
 
 ## Issues

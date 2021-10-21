@@ -118,13 +118,13 @@ helm repo update
 
 ```sh
 #
-export INGRESS_HOST='127.0.0.1'
+kubectl create ns sentry-system
 
 #
-kubectl create ns sentry-system
-```
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
-```sh
+#
 helm install sentry sentry/sentry \
   --namespace sentry-system \
   --version 11.4.1 \
@@ -135,7 +135,7 @@ user:
 
 ingress:
   enabled: true
-  hostname: sentry.${INGRESS_HOST}.nip.io
+  hostname: sentry.${DOMAIN}
 EOF
 ) \
   --timeout 15m \
@@ -196,7 +196,7 @@ kubectl logs \
 
 ```sh
 #
-echo -e "[INFO]\thttp://sentry.${INGRESS_HOST}.nip.io"
+echo -e "[INFO]\thttp://sentry.${DOMAIN}"
 ```
 
 ### Issues

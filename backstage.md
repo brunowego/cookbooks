@@ -35,7 +35,8 @@ helm repo update
 kubectl create ns backstage
 
 #
-export INGRESS_HOST='127.0.0.1'
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
 
 #
 helm install backstage deliveryhero/backstage \
@@ -44,16 +45,16 @@ helm install backstage deliveryhero/backstage \
   -f <(cat << EOF
 appConfig:
   app:
-    baseUrl: http://backstage.${INGRESS_HOST}.nip.io
+    baseUrl: http://backstage.${DOMAIN}
   backend:
-    baseUrl: http://backstage.${INGRESS_HOST}.nip.io
+    baseUrl: http://backstage.${DOMAIN}
     cors:
-      origin: http://backstage.${INGRESS_HOST}.nip.io
+      origin: http://backstage.${DOMAIN}
   techdocs:
-    storageUrl: http://backstage.${INGRESS_HOST}.nip.io/api/techdocs/static/docs
-    requestUrl: http://backstage.${INGRESS_HOST}.nip.io/api/techdocs
+    storageUrl: http://backstage.${DOMAIN}/api/techdocs/static/docs
+    requestUrl: http://backstage.${DOMAIN}/api/techdocs
   lighthouse:
-    baseUrl: http://backstage.${INGRESS_HOST}.nip.io/lighthouse-api
+    baseUrl: http://backstage.${DOMAIN}/lighthouse-api
 EOF
 )
 ```

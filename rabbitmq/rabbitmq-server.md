@@ -20,30 +20,38 @@ helm repo update
 ### Install
 
 ```sh
+#
 kubectl create ns rabbitmq
-```
 
-```sh
+#
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN='${KUBERNETES_IP}.nip.io'
+
+#
 helm install rabbitmq bitnami/rabbitmq \
   --namespace rabbitmq \
   --set auth.username=admin \
   --set auth.password=admin \
   --set replicaCount=3 \
   --set ingress.enabled=true \
-  --set ingress.hostname="rabbitmq.${INGRESS_HOST}.nip.io" \
+  --set ingress.hostname="rabbitmq.${DOMAIN}" \
   --set metrics.enabled=true
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status statefulset/rabbitmq -n rabbitmq
+kubectl rollout status statefulset/rabbitmq \
+  -n rabbitmq
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app.kubernetes.io/name=rabbitmq' -n rabbitmq -f
+kubectl logs \
+  -l 'app.kubernetes.io/name=rabbitmq' \
+  -n rabbitmq \
+  -f
 ```
 
 ### Secret
