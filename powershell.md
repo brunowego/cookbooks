@@ -10,11 +10,13 @@ https://app.pluralsight.com/library/courses/powershell-devops-playbook/table-of-
 
 ## CLI
 
-<!-- ### Installation -->
-
 ### Usage
 
 ```sh
 # Get Version
 Get-Host | Select-Object Version
+
+#
+Get-ExecutionPolicy
+Set-ExecutionPolicy Bypass -Scope Process
 ```

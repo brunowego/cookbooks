@@ -1,5 +1,27 @@
 # GNU Netcat
 
+## Kubectl
+
+### Running
+
+```sh
+#
+kubectl run -it \
+  netcat \
+  --image docker.io/brunowego/netcat:latest \
+  --command /bin/sh
+
+#
+kubectl attach -it netcat \
+  -c netcat
+```
+
+### Delete
+
+```sh
+kubectl delete pod netcat
+```
+
 ## CLI
 
 ### Installation
@@ -15,6 +37,13 @@ brew install netcat
 ```sh
 sudo apt update
 sudo apt -y install netcat
+```
+
+#### APK
+
+```sh
+apk update
+apk add netcat
 ```
 
 ### Commands

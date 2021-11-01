@@ -49,7 +49,8 @@ https://www.youtube.com/watch?v=XadcyqoQmrw
 
 | Section | Parameter | Value |
 | --- | --- | --- |
-| Build Plate Adhesion | Build Plate Adhesion Type | None |
+| Build Plate Adhesion | Build Plate Adhesion Type | None or Brim |
+| Build Plate Adhesion | Brim Line Count | 10 |
 | Infill | Infill Density | +20% |
 | Quality | Layer Height | 0.16 |
 | Shell | Wall Line Count | 4 |

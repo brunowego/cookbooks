@@ -7,6 +7,19 @@ https://medium.com/swlh/server-side-rendering-ssr-with-react-and-flask-47e589e10
 https://www.toptal.com/front-end/client-side-vs-server-side-pre-rendering
 -->
 
-##
+<!-- ##
 
-- [Next.js](/nextjs.md)
+- [Next.js](/nextjs.md) -->
+
+<!-- ##
+
+- Server Side Rendering
+- Client Side Rendering
+- Static Site Generation -->
+
+<!-- ##
+
+- Micro Frontends
+- Edge Side Includes -->
+
+TODO

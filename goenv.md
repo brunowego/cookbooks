@@ -75,6 +75,9 @@ goenv versions
 
 # Global
 goenv global [version]
+
+# Uninstall
+goenv uninstall -f [version]
 ```
 
 ### Issues
@@ -101,7 +104,8 @@ Set proxy environment variable.
 
 ```sh
 #
-goenv versions --bare | xargs -n 1 goenv uninstall -f
+goenv versions --bare | \
+  xargs -n 1 goenv uninstall -f
 
 #
 rm -fR ~/.goenv

@@ -53,8 +53,8 @@ Cost allocation tags are managed at the payer account level.
 TODO
 
 <!--
-https://console.aws.amazon.com/billing/home?region=us-east-1#/tags
-https://console.aws.amazon.com/billing/home?region=us-east-1#/reports
+[Cost allocation tags](https://console.aws.amazon.com/billing/home?region=us-east-1#/tags)
+[AWS Cost and Usage Reports](https://console.aws.amazon.com/billing/home?region=us-east-1#/reports]
 -->
 
 #### Step 5
@@ -62,6 +62,6 @@ https://console.aws.amazon.com/billing/home?region=us-east-1#/reports
 TODO
 
 <!--
-https://console.aws.amazon.com/cost-management/home?#/anomaly-detection/home
-https://console.aws.amazon.com/cost-management/home?#/rightsizing
+[Cost Anomaly Detection](https://console.aws.amazon.com/cost-management/home?#/anomaly-detection/home)
+[Rightsizing recommendations](https://console.aws.amazon.com/cost-management/home?#/rightsizing)
 -->

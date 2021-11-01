@@ -2,79 +2,11 @@
 
 Efficient compilation, Efficient execution and Ease of programming.
 
-<!--
-Viper
-Logrus
-Sprig:
-jwt-go
-Imaging
-fsnotify
-Mergo
-sqlx
-go-pop3
-goyesql
-koanf
-smtppool
-stuffbin
-gommon
-pq
-easyjson
-go-isatty
-mapstructure
-go-toml
-simples3
-cast
-fasttemplate
-goldmark
-sqlboiler
+## Links
 
-https://go-zero.dev/en/
-
-https://github.com/nikolaydubina/go-recipes
-
-https://github.com/golangci/golangci-lint
-
-https://github.com/vmasdani/cozypos-full
-
-https://pragprog.com/titles/tjgo/distributed-services-with-go/
-
-https://github.com/makeless/makeless-demo.git
-
-https://www.justforlearning.com/courses/build-your-first-microservices-based-application-using-go-and-grpc/dashboard
-
-https://dominicstpierre.com/getting-started-with-go-guide
-https://github.com/youxia999/go-learn-project
-https://medium.com/@hatajoe/clean-architecture-in-go-4030f11ec1b1
-
-https://github.com/ehang-io/nps
-
-Pluralsight
-
-https://app.pluralsight.com/paths/skills/go-core-language
-
-https://app.pluralsight.com/library/courses/go-object-oriented-programming/
-https://app.pluralsight.com/library/courses/go-horizontal-scaling-apps/
-https://app.pluralsight.com/library/courses/creating-web-applications-go-update/
-https://app.pluralsight.com/library/courses/go-build-distributed-applications/
-https://app.pluralsight.com/library/courses/code-school-on-track-with-golang/
-https://app.pluralsight.com/library/courses/grpc-enhancing-application-communication/
-
-LinkedIn Learning
-
-https://linkedin.com/learning/learning-go-8399317/explore-go-s-variable-types
-https://linkedin.com/learning/learning-the-go-standard-library/don-t-go-re-inventing-the-wheel
--->
-
-<!--
-Write Quality Code in Golang
-https://app.pluralsight.com/guides/write-quality-code-in-golang
-
-Testing Code in Go Language
-https://app.pluralsight.com/guides/testing-golang-code
-
-Static Golang Code Analysis with Go and SonarQube
-https://app.pluralsight.com/guides/static-code-analysis-with-go-and-sonarqube
--->
+- [Code Repository](https://github.com/golang/go)
+- [Main Website](https://golang.org/)
+- [The Go Playground](https://play.golang.org)
 
 ## References
 
@@ -182,23 +114,57 @@ go list '...'
 
 #
 go tool dist list
+
+#
+go run ./main.go
+go run example.com/m
+
+#
+go build ./main.go
+
+#
+go doc json
+go doc json.Decoder
 ```
 
 ### Tips
 
 #### Visual Studio Code
 
-```sh
-# Dependencies
-go get -v golang.org/x/tools/gopls
-go get -v github.com/uudashr/gopkgs/v2/cmd/gopkgs
-go get -v github.com/ramya-rao-a/go-outline
-go get -v github.com/go-delve/delve/cmd/dlv
-go get -v honnef.co/go/tools/cmd/staticcheck
+**Attention:** Autocompletion only works if the module has been initialized (`go mod init`).
 
+```sh
 #
 code --install-extension golang.go
 ```
+
+<!--
+"go.useLanguageServer": false,
+"go.languageServerExperimentalFeatures": {
+  "diagnostics": false
+}
+"go.useCodeSnippetsOnFunctionSuggest": true,
+"go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+"go.lintTool": "golint",
+"go.testOnSave": true,
+"go.formatTool": "goimports",
+"go.autocompleteUnimportedPackages": true,
+"go.lintOnSave": "package",
+"go.testFlags": ["-v"],
+"[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    }
+}
+-->
+
+##### Install Dependencies
+
+1. Main Menu "View"
+2. Command Palette...
+3. Go: Install/Update Tools
+4. Check all Tools
 
 #### EditorConfig
 
@@ -250,11 +216,15 @@ GOARCH=amd64 \
 
 ```sh
 # Static
-CGO_ENABLED=0 go build -o [binary]
+CGO_ENABLED=0 \
+  go build -o [binary]
+
 ldd [binary]
 
 # Dynamic
-CGO_ENABLED=1 go build -o [binary]
+CGO_ENABLED=1 \
+  go build -o [binary]
+
 ldd [binary]
 ```
 

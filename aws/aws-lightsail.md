@@ -6,6 +6,10 @@
 - Linode
 - Heroku
 
+## Links
+
+- [Instances](https://lightsail.aws.amazon.com/ls/webapp/home/instances)
+
 ## CLI
 
 ### Dependencies

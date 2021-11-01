@@ -6,6 +6,13 @@
 
 ## CLI
 
+### Usage
+
+```sh
+#
+nuxt generate
+```
+
 ### Tips
 
 #### Dynamic Backend URL

@@ -2,7 +2,9 @@
 
 ## Tools
 
-- [Percentage Calculator - Add or Subtract a Percentage](http://www.percentagecalculator.co/Add-Subtract-Percentage.html)
+- [Percentage Calculator - Add or Subtract a Percentage](http://percentagecalculator.co/Add-Subtract-Percentage.html)
+- [Percentage Increase Calculator](https://calculatorsoup.com/calculators/algebra/percentage-increase-calculator.php)
+- [Percentage Decrease Calculator](https://calculatorsoup.com/calculators/algebra/percentage-decrease-calculator.php)
 
 ## Tips
 

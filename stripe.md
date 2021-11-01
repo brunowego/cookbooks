@@ -1,6 +1,37 @@
 # Stripe
 
-## Library
+## Links
+
+- [Main Website](https://stripe.com/)
+
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew tap stripe/stripe-cli
+brew install stripe
+```
+
+### Commands
+
+```sh
+stripe help
+```
+
+### Usage
+
+```sh
+#
+stripe login
+
+#
+stripe customers create
+```
+
+## Python Library
 
 ### Installation
 

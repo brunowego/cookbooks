@@ -18,6 +18,16 @@ docker run -it --rm \
 docker rm -f telnet
 ```
 
+## Kubectl
+
+### Running
+
+```sh
+kubectl run -it \
+  telnet \
+  --image docker.io/brunowego/telnet:1.29.3-r10
+```
+
 ## CLI
 
 ### Installation

@@ -77,6 +77,7 @@ output
 - [Code Repository](https://github.com/hashicorp/terraform)
 - [Main Website](https://terraform.io/)
 - [Terraform Cloud](https://app.terraform.io)
+- [Status Page](https://status.hashicorp.com/)
 
 ## References
 
@@ -276,7 +277,7 @@ cat ~/.terraformrc
 terraform logout
 ``` -->
 
-#### Debug Mode
+#### Debug Mode (Verbose)
 
 ```sh
 TF_LOG=trace \
@@ -326,6 +327,38 @@ https://www.youtube.com/watch?v=uFaMUS6Z9fI
 -->
 
 ### Issues
+
+#### Final Snapshot Identifier
+
+```log
+Error: RDS Cluster FinalSnapshotIdentifier is required when a final snapshot is required
+```
+
+<!-- ```tf
+resource "aws_rds_cluster" "aurora_cluster" {
+  # ...
+  backup_retention_period = 0
+  skip_final_snapshot     = true
+}
+``` -->
+
+```sh
+#
+terraform state list
+
+#
+terraform destroy \
+  -target 'module.rds.aws_rds_cluster.aurora_cluster' \
+  -var-file "./vars/terraform-$(terraform workspace show).tfvars"
+```
+
+#### DNS Problem
+
+```log
+Error: Failed to request discovery document: Get "https://app.terraform.io/.well-known/terraform.json": net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+```
+
+Try change DNS to `1.1.1.1`.
 
 #### Workspaces not Supported
 

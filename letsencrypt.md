@@ -5,6 +5,8 @@ https://letsencrypt.org/certificates/
 https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/
 https://scotthelme.co.uk/lets-encrypt-old-root-expiration/
 https://medium.com/geekculture/will-you-be-impacted-by-letsencrypt-dst-root-ca-x3-expiration-d54a018df257
+
+Let’s Encrypt show email status usage
 -->
 
 ## CLI
