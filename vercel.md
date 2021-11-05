@@ -70,6 +70,14 @@ vercel help
 vercel init
 ```
 
+### Configuration
+
+```sh
+cat << EOF > ./.vercelignore
+
+EOF
+```
+
 ### Usage
 
 ```sh
@@ -87,4 +95,7 @@ vercel switch
 
 #
 vercel projects
+
+#
+vercel --prod --no-clipboard
 ```

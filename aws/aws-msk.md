@@ -88,14 +88,14 @@ aws kafka help
 aws \
   --output json \
   kafka list-clusters | \
-    jq -r '.ClusterInfoList[0].ClusterArn'
+    jq -r '.ClusterInfoList[].ClusterArn'
 
 #
-aws kafka get-bootstrap-brokers \
-  --region us-east-1 \
-  --cluster-arn $(aws --output json kafka list-clusters | jq -r '.ClusterInfoList[0].ClusterArn')
-
-dig +short '[broker-hostname]'
+aws \
+  --output json \
+  kafka get-bootstrap-brokers \
+    --region us-east-1 \
+    --cluster-arn $(aws --output json kafka list-clusters | jq -r '.ClusterInfoList[0].ClusterArn')
 
 #
 aws \
@@ -103,6 +103,43 @@ aws \
   kafka describe-cluster \
     --cluster-arn $(aws --output json kafka list-clusters | jq -r '.ClusterInfoList[0].ClusterArn') | \
       jq -r '.ClusterInfo.ZookeeperConnectString'
+```
+
+### Tips
+
+#### Connect Using kcat
+
+```sh
+#
+export MSK_KAFKA_SASL_HOST=''
+export MSK_KAFKA_SASL_PORT=''
+export MSK_KAFKA_SASL_USER=''
+export MSK_KAFKA_SASL_PASS=''
+
+#
+export KAFKACAT_OPTS="-X security.protocol=SASL_SSL -X sasl.mechanisms=SCRAM-SHA-512 -X sasl.username=${MSK_KAFKA_SASL_USER} -X sasl.password=${MSK_KAFKA_SASL_PASS}"
+
+# List brokers
+kcat \
+  -b "${MSK_KAFKA_SASL_HOST}:${MSK_KAFKA_SASL_PORT}" \
+  $(echo "$KAFKACAT_OPTS") \
+  -L
+
+# Produce
+kcat \
+  -b "${MSK_KAFKA_SASL_HOST}:${MSK_KAFKA_SASL_PORT}" \
+  $(echo "$KAFKACAT_OPTS") \
+  -P \
+  -t [topic-name] \
+  -p 0
+
+# Consume
+kcat \
+  -b "${MSK_KAFKA_SASL_HOST}:${MSK_KAFKA_SASL_PORT}" \
+  $(echo "$KAFKACAT_OPTS") \
+  -C \
+  -t [topic-name] \
+  -o earliest
 ```
 
 #### Cluster Creation
@@ -124,8 +161,6 @@ aws kafka create-configuration \
 EOF
 )
 ```
-
-### Tips
 
 #### Prometheus Stack
 
@@ -226,9 +261,9 @@ data:
 EOF
 ```
 
-<!-- ### Issues
+### Issues
 
-####
+#### Broker Transport Failure
 
 ```log
 %3|1626980066.465|FAIL|rdkafka#producer-1| [thrd:sasl_ssl://b-3.my-project-msk-clus.deord2.c3.kafka.us-east-1]: sasl_ssl://b-3.my-project-msk-clus.deord2.c3.kafka.us-east-1.amazonaws.com:9096/3: Connect to ipv4#0.0.0.0:9096 failed: Operation timed out (after 76531ms in state CONNECT)
@@ -237,30 +272,4 @@ EOF
 % ERROR: Local: Broker transport failure: sasl_ssl://b-3.my-project-msk-clus.deord2.c3.kafka.us-east-1.amazonaws.com:9096/3: Connect to ipv4#0.0.0.0:9096 failed: Operation timed out (after 76722ms in state CONNECT)
 ```
 
-```sh
-#
-export AT_EVENTS_KAFKA_SASL_PASSWORD=''
-export KAFKACAT_OPTS="-X security.protocol=SASL_SSL -X sasl.mechanisms=SCRAM-SHA-512 -X sasl.username=admin -X sasl.password=$AT_EVENTS_KAFKA_SASL_PASSWORD"
-
-# List brokers
-kafkacat \
-  -b my-project-msk-lb-71fa4743565da371.elb.us-east-1.amazonaws.com:9096 \
-  $(echo "$KAFKACAT_OPTS") \
-  -L
-
-# Produce
-kafkacat \
-  -b my-project-msk-lb-71fa4743565da371.elb.us-east-1.amazonaws.com:9096 \
-  $(echo "$KAFKACAT_OPTS") \
-  -P \
-  -t eem_escola \
-  -p 0
-
-# Consume
-kafkacat \
-  -b my-project-msk-lb-71fa4743565da371.elb.us-east-1.amazonaws.com:9096 \
-  $(echo "$KAFKACAT_OPTS") \
-  -C \
-  -t eem_escola \
-  -o earliest
-``` -->
+TODO

@@ -1,18 +1,22 @@
-# kafkacat
+# kcat (p.k.a kafkacat)
 
 ## CLI
 
-### References
+### Links
 
-- [Examples](https://github.com/edenhill/kafkacat#examples)
-- [Running in Docker](https://github.com/edenhill/kafkacat#running-in-docker)
+- [Code Repository](https://github.com/edenhill/kcat)
+
+### Guides
+
+- [Examples](https://github.com/edenhill/kcat#examples)
+- [Running in Docker](https://github.com/edenhill/kcat#running-in-docker)
 
 ### Installation
 
 #### Homebrew
 
 ```sh
-brew install kafkacat
+brew install kcat
 ```
 
 #### APT
@@ -59,34 +63,34 @@ sudo yum -y install \
 
 ```sh
 git clone \
-  --branch 1.6.0 \
+  --branch 1.7.0 \
   --single-branch \
   --depth 1 \
-  'https://github.com/edenhill/kafkacat.git'
+  'https://github.com/edenhill/kcat.git'
 
-( cd ./kafkacat && ./bootstrap.sh && mv ./kafkacat /usr/local/bin ) && rm -fR ./kafkacat
+( cd ./kcat && ./bootstrap.sh && mv ./kcat /usr/local/bin ) && rm -fR ./kcat
 ```
 
 ### Commands
 
 ```sh
-kafkacat -h
+kcat -h
 ```
 
 ### Usage
 
 ```sh
 # List brokers
-kafkacat -Lb 127.0.0.1:9092
+kcat -Lb 127.0.0.1:9092
 
 # Produce one registry
-echo hello | kafkacat \
+echo hello | kcat \
   -Pb 127.0.0.1:9092 \
   -t example \
   -p 0
 
 # Consume first registry
-kafkacat \
+kcat \
   -Cb 127.0.0.1:9092 \
   -t example \
   -o earliest \
@@ -96,7 +100,7 @@ kafkacat \
 <!-- ### Configuration
 
 ```sh
-cat << EOF > kafkacat.conf
+cat << EOF > kcat.conf
 security.protocol=SSL
 ssl.key.location=/var/lib/secret/client.pem
 ssl.key.password=test1234
@@ -110,7 +114,7 @@ EOF
 #### Using SASL SCRAM
 
 ```sh
-kafkacat \
+kcat \
   -b [hostname]:9096 \
   -X security.protocol=SASL_SSL \
   -X sasl.mechanisms=SCRAM-SHA-512 \
@@ -122,7 +126,7 @@ kafkacat \
 #### Using Kerberos Keytab
 
 ```sh
-kafkacat \
+kcat \
   -b [hostname]:9092 \
   -X security.protocol=SASL_PLAINTEXT \
   -X sasl.kerberos.service.name=kafka \
@@ -134,7 +138,7 @@ kafkacat \
 #### Using SSL Key
 
 ```sh
-kafkacat \
+kcat \
   -b [hostname]:9093 \
   -X security.protocol=SSL \
   -X ssl.key.location=private_key.pem \
@@ -154,7 +158,7 @@ kafkacat \
 ```
 
 ```sh
-kafkacat -V | grep builtin.features
+kcat -V | grep builtin.features
 ``` -->
 
 #### Linux Absent Alias
@@ -164,7 +168,7 @@ kafkacat -V | grep builtin.features
 ```
 
 ```sh
-kafkacat -X list | grep sasl.mechanisms
+kcat -X list | grep sasl.mechanisms
 ```
 
 Change parameter to `sasl.mechanisms`.
@@ -193,10 +197,10 @@ sudo hostess add kafka 127.0.0.1
 
 ```sh
 kubectl run -it --rm \
-  kafkacat \
-  --image docker.io/confluentinc/cp-kafkacat:6.2.0 \
+  kcat \
+  --image docker.io/edenhill/kcat:1.7.0 \
   --restart 'Never' \
-  -- kafkacat -h
+  -- -h
 ```
 
 ## Docker
@@ -213,8 +217,8 @@ docker network create workbench \
 ```sh
 docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
-  -h kafkacat \
-  --name kafkacat \
+  -h kcat \
+  --name kcat \
   --network workbench \
-  docker.io/confluentinc/cp-kafkacat:6.2.0
+  docker.io/edenhill/kcat:1.7.0 -h
 ```

@@ -9,6 +9,7 @@ https://github.com/zendesk/maxwell/issues/1412#issuecomment-573231508
 ### Running
 
 ```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mysql \
@@ -20,9 +21,8 @@ docker run -d \
   -p 3306:3306 \
   --name mysql \
   docker.io/library/mysql:5.7
-```
 
-```sh
+#
 docker exec -i mysql /bin/sh << EOSHELL
 cat << EOF > /etc/mysql/conf.d/repl.cnf
 [mysqld]
@@ -33,21 +33,17 @@ binlog-format = ROW
 
 EOF
 EOSHELL
-```
 
-```sh
+#
 docker restart mysql
-```
 
-```sh
 #
 docker exec -i mysql /usr/bin/mysql -u root -p'root' -ve "SHOW GRANTS FOR 'maxwell'@'%'"
 
 #
 docker exec -i mysql /usr/bin/mysql -u root -p'root' -ve "GRANT SUPER, REPLICATION CLIENT, REPLICATION SLAVE ON *.* TO 'maxwell'@'%'"
-```
 
-```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h zookeeper \
@@ -56,9 +52,8 @@ docker run -d \
   -p 2182:2181 \
   --name maxwell-zookeeper \
   docker.io/library/zookeeper:3.5.6
-```
 
-```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h kafka \
@@ -70,14 +65,11 @@ docker run -d \
   -p 9092:9092 \
   --name maxwell-kafka \
   docker.io/wurstmeister/kafka:2.12-2.3.0
-```
 
-```sh
 # Test Kafka
 watch kafkacat -Lb 127.0.0.1:9092
-```
 
-```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h maxwell \
@@ -94,17 +86,14 @@ docker run -d \
     --output_primary_keys 'true' \
     --output_primary_key_columns 'true' \
     --output_ddl 'true'
-```
 
-```sh
 #
 sudo hostess add kafka 127.0.0.1
 
 #
 kafkacat -Ct users -b 127.0.0.1:9092
-```
 
-```sh
+#
 docker exec -i mysql /usr/bin/mysql -D example -u maxwell -p'maxwell' -ve 'DROP TABLE IF EXISTS `users`'
 
 docker exec -i mysql /usr/bin/mysql -D example -u maxwell -p'maxwell' -v <<-\EOSQL
@@ -125,8 +114,16 @@ docker exec -i mysql /usr/bin/mysql -D example -u maxwell -p'maxwell' -ve 'UPDAT
 ### Remove
 
 ```sh
-docker rm -f mysql maxwell-zookeeper maxwell-kafka maxwell
-docker volume rm mysql-data maxwell-zookeeper-data maxwell-zookeeper-log maxwell-kafka-data
+docker rm -f \
+  mysql \
+  maxwell-zookeeper \
+  maxwell-kafka maxwell
+
+docker volume rm \
+  mysql-data \
+  maxwell-zookeeper-data \
+  maxwell-zookeeper-log \
+  maxwell-kafka-data
 ```
 
 ## CLI

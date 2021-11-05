@@ -50,8 +50,8 @@ spec:
     spec:
       containers:
       - # ...
-      imagePullPolicy: Always
-        # imagePullPolicy: IfNotPresent
+        imagePullPolicy: IfNotPresent
+        # imagePullPolicy: Always
 ```
 
 ## Image Pull Secrets

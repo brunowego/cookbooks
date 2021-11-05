@@ -109,7 +109,6 @@ act workflow_dispatch \
   -j [name] \
   -e <(cat << EOF
 {
-  "action": "workflow_dispatch",
   "inputs": {
     "name": "Mr. Bill"
   }
@@ -212,13 +211,13 @@ WARNING: Running pip as the 'root' user can result in broken permissions and con
 
 TODO -->
 
-<!-- ####
+#### Unused Needs Parameter
 
 ```log
 FATA[0000] Unable to build dependency graph!
 ```
 
-TODO -->
+Just remove `needs` parameter.
 
 <!-- ####
 

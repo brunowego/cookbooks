@@ -1,5 +1,9 @@
 # Kubernetes External Secrets
 
+<!--
+Reloader
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/external-secrets/kubernetes-external-secrets)

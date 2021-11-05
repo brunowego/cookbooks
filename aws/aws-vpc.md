@@ -27,4 +27,10 @@ aws \
 aws \
   --output json \
   ec2 describe-subnets
+
+#
+aws \
+  --output json \
+  ec2 describe-nat-gateways | \
+    jq -r '.NatGateways[].NatGatewayAddresses[].PublicIp'
 ```

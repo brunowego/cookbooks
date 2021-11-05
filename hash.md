@@ -1,5 +1,9 @@
 # Hash
 
+## Tools
+
+- [Online Hash Crack - Hash Identification](https://www.onlinehashcrack.com/hash-identification.php)
+
 ## Types
 
 - Universally Unique Identifier/Globally Unique Identifier (UUID/GUID)

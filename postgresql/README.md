@@ -2,6 +2,7 @@
 
 <!--
 https://github.com/alibaba/PolarDB-for-PostgreSQL
+pg_pool
 -->
 
 ## References

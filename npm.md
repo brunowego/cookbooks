@@ -91,6 +91,12 @@ find ./ -name node_modules -exec touch {}/.nosync \;
 #### Run Commands
 
 ```sh
+# Globally
+cat << EOF >> ~/.npmrc
+save-prefix = ~
+EOF
+
+# Locally
 cat << EOF >> ./.npmrc
 save-prefix = ~
 EOF

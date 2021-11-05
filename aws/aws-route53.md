@@ -4,6 +4,7 @@
 
 - [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System)
 - [Migrating a hosted zone to a different AWS account](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-migrating.html)
+- [Weighted routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-weighted)
 
 ## CLI
 
@@ -21,13 +22,21 @@ aws route53
 ```
 
 <!--
-aws route53 list-resource-record-sets --hosted-zone-id Z2LD58HEXAMPLE
+aws route53 list-resource-record-sets \
+  --hosted-zone-id Z2LD58HEXAMPLE
 
-aws route53 list-resource-record-sets --hosted-zone-id Z2LD58HEXAMPLE --max-items 1
+aws route53 list-resource-record-sets \
+  --hosted-zone-id Z2LD58HEXAMPLE \
+  --max-items 1
 
-aws route53 list-resource-record-sets --hosted-zone-id Z2LD58HEXAMPLE --max-items 1 --starting-token Z3M3LMPEXAMPLE
+aws route53 list-resource-record-sets \
+  --hosted-zone-id Z2LD58HEXAMPLE \
+  --max-items 1 \
+  --starting-token Z3M3LMPEXAMPLE
 
-aws route53 list-resource-record-sets --hosted-zone-id Z2LD58HEXAMPLE --query "ResourceRecordSets[?Name == 'example.domain.']"
+aws route53 list-resource-record-sets \
+  --hosted-zone-id Z2LD58HEXAMPLE \
+  --query "ResourceRecordSets[?Name == 'example.domain.']"
 -->
 
 ### Tips

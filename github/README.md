@@ -2,16 +2,7 @@
 
 <!--
 https://github.com/revoltchat/.github
-
 https://github.com/chdsbd/kodiak
-
-https://linkedin.com/learning/github-quick-tips/github-tips-and-tricks
-
-https://github.com/brunowego.png
-
-https://api.github.com/users
-
-https://api.github.com/users/brunowego
 
 https://media-exp1.licdn.com/dms/image/sync/C4E27AQFXhz19BLKTlg/articleshare-shrink_800/0/1620311917375?e=1620406800&v=beta&t=kcsEPLfDy2Up6iCcr7gyH9OIJhH0Pgj09CtvABBcVGc
 -->
@@ -31,9 +22,11 @@ https://media-exp1.licdn.com/dms/image/sync/C4E27AQFXhz19BLKTlg/articleshare-shr
 - [GitHub social previews](https://mugshotbot.com/github)
 - [PullApprove](https://pullapprove.com/)
 
-## Settings
+## Links
 
-- [Theme preferences](https://github.com/settings/appearance)
+- [Issues / Assigned](https://github.com/issues/assigned)
+- [Settings / Theme preferences](https://github.com/settings/appearance)
+- [User Avatar](https://github.com/brunowego.png)
 
 ## Search
 

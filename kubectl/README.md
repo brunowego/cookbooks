@@ -128,14 +128,23 @@ kubectl get secrets -n [namespace]
 # TODO
 
 # Describe
-kubectl describe secret [secret-name] -n [namespace]
+kubectl describe secret [secret-name] \
+  -n [namespace]
 
 # Get Data
-kubectl get secret [secret-name] -o jsonpath='{.data}' -n [namespace] | jq .
-kubectl get secret [secret-name] --template={{.data.bar}} -n [namespace] | base64 --decode
+kubectl get secret [secret-name] \
+  -o jsonpath='{.data}' \
+  -n [namespace] | \
+    jq .
+
+kubectl get secret [secret-name] \
+  --template={{.data.bar}} \
+  -n [namespace] | \
+    base64 --decode
 
 # Delete
-kubectl delete secret [secret-name] -n [namespace]
+kubectl delete secret [secret-name] \
+  -n [namespace]
 ```
 
 ### Tips

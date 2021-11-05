@@ -12,8 +12,6 @@ https://app.pluralsight.com/library/courses/querying-data-aws-databases/table-of
 https://www.linkedin.com/learning/amazon-web-services-data-services-2/scalable-data-solutions-on-aws
 https://www.linkedin.com/learning/aws-certified-database-specialty-dbs-c01-1-introduction-and-services/aws-database-specialty-recommended-knowledge
 https://www.linkedin.com/learning/aws-certified-solutions-architect-associate-saa-c02-8-databases/database-types
-
-Amazon Aurora Serverless
 -->
 
 ## Alternatives

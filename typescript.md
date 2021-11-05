@@ -30,6 +30,22 @@ https://linkedin.com/learning/typescript-for-node-js-developers/
 
 - [Protobuf to TypeScript](https://geotho.github.io/protobuf-to-typescript/)
 
+## Library
+
+### Installation
+
+#### Yarn
+
+```sh
+yarn add typescript -D
+```
+
+### Usage
+
+```sh
+npx tsc -h
+```
+
 ## CLI
 
 ### Installation

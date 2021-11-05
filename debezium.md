@@ -50,6 +50,7 @@ docker network create workbench \
 ### Running
 
 ```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h zookeeper \
@@ -59,9 +60,8 @@ docker run -d \
   --name debezium-zookeeper \
   --network workbench \
   docker.io/debezium/zookeeper:1.0
-```
 
-```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h kafka \
@@ -70,14 +70,11 @@ docker run -d \
   --name debezium-kafka \
   --network workbench \
   docker.io/debezium/kafka:1.0
-```
 
-```sh
 # Test
 watch kafkacat -Lb 127.0.0.1:9092
-```
 
-```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mysql \
@@ -90,9 +87,8 @@ docker run -d \
   --name mysql \
   --network workbench \
   docker.io/library/mysql:5.7
-```
 
-```sh
+#
 docker exec -i mysql /bin/sh << EOSHELL
 cat << EOF > /etc/mysql/conf.d/repl.cnf
 [mysqld]
@@ -102,21 +98,17 @@ binlog-format = ROW
 
 EOF
 EOSHELL
-```
 
-```sh
+#
 docker restart mysql
-```
 
-```sh
 #
 docker exec -i mysql /usr/bin/mysql -u root -p'root' -ve "SHOW GRANTS FOR 'debezium'@'%'"
 
 #
 docker exec -i mysql /usr/bin/mysql -u root -p'root' -ve "GRANT SUPER, REPLICATION CLIENT, REPLICATION SLAVE ON *.* TO 'debezium'@'%'"
-```
 
-```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h debezium-connect \
@@ -129,9 +121,8 @@ docker run -d \
   --name debezium-connect \
   --network workbench \
   docker.io/debezium/connect:1.0
-```
 
-```sh
+#
 curl \
   -X POST \
   -H 'Content-Type: application/json' \
@@ -162,15 +153,12 @@ curl \
 }
 EOF
 )
-```
 
-```sh
+#
 kafkacat -Ct schema-changes.inventory -b 127.0.0.1:9092
 
 kafkacat -Ct dbserver1 -b 127.0.0.1:9092
-```
 
-```sh
 #
 docker exec -i mysql \
   /usr/bin/mysql \
@@ -213,16 +201,19 @@ docker exec -i mysql \
     -u debezium \
     -p'debezium' \
     -ve 'UPDATE `users` SET name = "John Doe" WHERE user_id = 1'
-```
 
-```sh
+#
 echo -e '[INFO]\thttp://127.0.0.1:3000'
 ```
 
 ### Remove
 
 ```sh
-docker rm -f debezium-zookeeper debezium-kafka mysql debezium-connect
+docker rm -f \
+  debezium-zookeeper \
+  debezium-kafka \
+  mysql \
+  debezium-connect
 
 docker volume rm mysql-data
 ```

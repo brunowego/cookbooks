@@ -14,6 +14,7 @@ npm install npx -g
 
 ```sh
 npx -h
+npm help exec
 ```
 
 ### Tips

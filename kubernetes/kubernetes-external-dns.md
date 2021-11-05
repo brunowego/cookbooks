@@ -100,6 +100,7 @@ nslookup nginx.example.com 10.96.0.10
 
 ```sh
 kubectl delete service/nginx
+
 kubectl delete pod/nginx
 ```
 

@@ -2,9 +2,10 @@
 
 ## Tips
 
-### Decode base64 Secrets
+### Decode Base64 Secrets
 
 ```sh
-kubectl get secret [name] -o json | \
+kubectl get secret [name] \
+  -o json | \
   jq '.data | map_values(@base64d)'
 ```

@@ -1,6 +1,8 @@
 # serverless
 
 <!--
+https://github.com/serverless-nextjs/serverless-next.js
+
 https://app.pluralsight.com/paths/skills/building-serverless-applications-on-aws
 
 https://linkedin.com/learning/search?entityType=COURSE&keywords=serverless

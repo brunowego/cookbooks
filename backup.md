@@ -92,6 +92,4 @@ https://www.thingiverse.com/search?q=dewalt&type=things&sort=relevant&page=23
 https://www.domestika.org/en/courses/1335-introduction-to-macrame-tapestry?gclid=CjwKCAiAp4KCBhB6EiwAxRxbpBJeZUODrMTCS1Ad4xnI4lesyaGdiwot4mmQ41ha7JvhuPKeaigRmhoCi-sQAvD_BwE
 
 https://www.domestika.org/en/courses/557-professional-woodworking-for-beginners
-
-
 -->

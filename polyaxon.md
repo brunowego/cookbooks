@@ -1,5 +1,9 @@
 # Polyaxon
 
+<!--
+Gartner
+-->
+
 ## Guides
 
 - [Integrations](https://docs.polyaxon.com/integrations/)

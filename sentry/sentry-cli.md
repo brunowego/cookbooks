@@ -83,6 +83,14 @@ sentry-cli releases new '[release-name]'
 sentry-cli releases delete '[release-name]'
 ```
 
+<!--
+export SENTRY_RELEASE=$(sentry-cli releases propose-version)
+sentry-cli releases new -p $SENTRY_PROJECT $SENTRY_RELEASE
+sentry-cli releases set-commits --auto $SENTRY_RELEASE || true
+sentry-cli releases finalize $SENTRY_RELEASE
+sentry-cli releases deploys $SENTRY_RELEASE new -e ${{ env.STAGE }}
+-->
+
 ##### Upload SourceMaps
 
 ```sh

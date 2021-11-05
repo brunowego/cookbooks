@@ -5,6 +5,10 @@ https://code.visualstudio.com/docs/remote/ssh
 https://github.com/datalayer-examples/vscode-extension-examples
 -->
 
+## Links
+
+- [Visual Studio Code (Preview)](https://vscode.dev/)
+
 ## Guide
 
 - [Debugging](https://code.visualstudio.com/docs/editor/debugging)

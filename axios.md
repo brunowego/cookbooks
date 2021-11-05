@@ -4,22 +4,18 @@
 
 - [Example](https://github.com/axios/axios#example)
 
-## Installation
+## Library
 
-### NPM
+### Installation
+
+#### NPM
 
 ```sh
 #
-mkdir example-axios && cd "$_"
-npm init -y
-
-npm install axios -D
-
-#
-npm install axios -g
+npm install axios
 ```
 
-## REPL
+### REPL
 
 ```js
 .editor
