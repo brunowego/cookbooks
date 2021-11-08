@@ -1,50 +1,6 @@
-# GraphQL
+# GraphQL Queries
 
-<!--
-Underfitting and Overfitting
-
-https://netflixtechblog.com/how-netflix-scales-its-api-with-graphql-federation-part-1-ae3557c187e2
-https://netflixtechblog.com/open-sourcing-the-netflix-domain-graph-service-framework-graphql-for-spring-boot-92b9dcecda18
-
-https://www.youtube.com/watch?v=QrEOvHdH2Cg
-
-https://app.pluralsight.com/library/courses/js-friends-session-07/table-of-contents
-https://app.pluralsight.com/library/courses/graphql-big-picture/table-of-contents
-
-https://linkedin.com/learning/building-a-graphql-project-with-react-js/why-use-react-with-graphql-for-projects
-
-https://www.youtube.com/watch?v=E3NHd-PkLrQ
-
-https://github.com/njNafir/react-cheatsheets/blob/master/graphql.md
-https://github.com/Maelstroms38/django-book/blob/master/chapter-7.md
-https://github.com/mehulagg/gitlab/blob/master/doc/development/fe_guide/graphql.md
-
-https://github.com/datastaxdevs/workshop-graphql-netflix
--->
-
-## Alternatives
-
-- [Simple Object Access Protocol (SOAP)](/rest.md)
-- [Representational State Transfer (REST)](/rest.md)
-
-## Tools
-
-- [Altair GraphQL](/altair-graphql.md)
-- [Apollo](/apollo.md)
-
-## Libraries
-
-- [Sangria (Scala)](https://github.com/sangria-graphql/sangria)
-
-## CLI
-
-### Installation
-
-#### Homebrew
-
-```sh
-brew install graphql-cli
-```
+## Examples
 
 ```gql
 query allSchemaTypes {
@@ -205,29 +161,3 @@ query IntrospectionQuery {
   }
 }
 ```
-
-### Tips
-
-#### Visual Studio Code
-
-```sh
-code --install-extension GraphQL.vscode-graphql
-```
-
-<!-- #### Caddy Configuration
-
-```sh
-# Homebrew
-cat << EOF > /usr/local/etc/Caddyfile
-:80 {
-  proxy / 127.0.0.1:8080 {
-    websocket
-  }
-}
-EOF
-```
-
-```sh
-# Homebrew
-brew services restart caddy
-``` -->

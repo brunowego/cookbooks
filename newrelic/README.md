@@ -2,6 +2,10 @@
 
 <!--
 https://www.youtube.com/watch?v=OOc8iN9dWfw
+
+https://www.udemy.com/course/the-complete-introduction-to-new-relic-one/
+https://www.udemy.com/course/new-relic-apm-application-performance-management-for-devops/
+https://www.udemy.com/course/learn-new-relic-monitoring-and-devops-for-the-cloud-aws/
 -->
 
 ## Links

@@ -1,22 +1,38 @@
 # Next.js
 
 <!--
-https://fireship.io/courses/react-next-firebase/
+https://www.youtube.com/watch?v=_VuGmykVgTg
 
-https://www.cutintothejamstack.com/
+https://fireship.io/courses/react-next-firebase/deploy-firebase/
+-->
 
-https://react2025.com/#course-overview
-https://masteringnextjs.com/
-https://www.udemy.com/course/nextjs-by-example/
+## Links
 
-https://www.udemy.com/course/react-go-advanced/
-https://www.udemy.com/course/straightforward-nextjs/
-https://www.udemy.com/course/nextjs-react-the-complete-guide/
-https://www.udemy.com/course/the-complete-react-and-next-js-bootcamp-2021/
-https://www.udemy.com/course/nextjs-dev-to-deployment/
+- [Code Repository](https://github.com/vercel/next.js)
+- [Main Website](https://nextjs.org/)
 
-https://github.com/nextauthjs/next-auth
-https://github.com/nextauthjs/next-auth-typescript-example
+## Utils
+
+- [Boilerplate and Starter for Next JS 12+, Tailwind CSS 2.0 and TypeScript](https://github.com/ixartz/Next-js-Boilerplate)
+
+## Guides
+
+- [Start developing websites like it's 2025.](https://react2025.com/#course-overview)
+- [Mastering Next.js](https://masteringnextjs.com/)
+
+## Books
+
+- [Build a SaaS with React and Next.js](https://www.cutintothejamstack.com/)
+
+## Technologies
+
+<!-- - Client-Side Rendering (CSR) -->
+- Incremental Static Regeneration (ISR)
+- Server-Side Rendering (SSR)
+- Static Site Generation (SSG)
+
+<!--
+Examples
 
 https://github.com/Expensify/App
 https://github.com/dwarvesf/nextjs-boilerplate
@@ -38,11 +54,6 @@ https://github.com/jackmerrill/snacc.chat
 https://github.com/calendso/calendso/
 -->
 
-## Links
-
-- [Code Repository](https://github.com/vercel/next.js)
-- [Main Website](https://nextjs.org/)
-
 ## CLI
 
 ### Installation
@@ -59,17 +70,28 @@ npm install next@12.0.0
 npx next -h
 ```
 
-<!-- ### Configuration
+### Configuration
 
 ```sh
-echo '/.next' > ./.gitignore
-``` -->
+# Git Ignore
+cat << EOF > ./.gitignore
+/.next
+/node_modules
+/.env
+EOF
+
+#
+touch .example.env
+```
 
 ### Bootstrap
 
 ```sh
 #
 npx -y create-next-app@latest [app-name] --ts
+
+#
+mkdir -p {components,hooks,lib}
 ```
 
 ### Configuration
@@ -95,4 +117,16 @@ npx next lint
 
 #
 npx next build
+```
+
+### Tips
+
+#### Next.js Export
+
+```sh
+#
+npx next export
+
+#
+echo '/out' >> ./.gitignore
 ```

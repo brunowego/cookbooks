@@ -4,6 +4,10 @@
 https://github.com/gabrielaigner/audally/blob/main/backend-api/rest-requests/requests.http
 -->
 
+## Links
+
+- [Code Repository](https://github.com/Huachao/vscode-restclient)
+
 ## Syntax
 
 ```sh

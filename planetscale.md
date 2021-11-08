@@ -1,5 +1,9 @@
 # PlanetScale
 
+<!--
+https://github.com/planetscale/integrations/tree/main/vercel/nextjs-example
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/planetscale/cli)

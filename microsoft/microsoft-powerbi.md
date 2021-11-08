@@ -2,4 +2,5 @@
 
 ## Links
 
-- [Download](https://microsoft.com/en-us/download/details.aspx?id=58494)
+- [Main Website](https://powerbi.microsoft.com/en-us/)
+- [Download](https://powerbi.microsoft.com/en-us/downloads/)

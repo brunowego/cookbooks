@@ -220,6 +220,14 @@ git branch --no-color | \
     xargs git branch -d
 ```
 
+#### Remove Merged Branches
+
+```sh
+git branch --merged | \
+  egrep -v '(^\*|main)' | \
+    xargs git branch -d
+```
+
 #### Tags
 
 ```sh

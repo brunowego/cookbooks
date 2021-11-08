@@ -13,6 +13,8 @@ https://linkedin.com/learning/paths/become-a-devops-engineer
 https://linkedin.com/learning/devops-foundations-continuous-delivery-continuous-integration/
 -->
 
+> DevOps represents a change in IT culture, focusing on rapid IT service delivery through the adoption of agile, lean practices in the context of a system-oriented approach. -- Gartner Research
+
 ## Related
 
 - [Agile](/agile.md)
@@ -71,6 +73,29 @@ https://linkedin.com/learning/devops-foundations-continuous-delivery-continuous-
 - Service owner with Ops help
 - Service owner
 
+## How Lean Relates to Software Delivery
+
+- Reorient towards product thinking
+- Remove wasteful processes
+- Continuous deliver software in small batches
+- Focus on continuous improvement
+- Automate to remove overburdening of staff
+- Attack bottlenecks that decrease flow
+
+## What DevOps is NOT
+
+- DevOps is not a team o software methodology
+- DevOps is not something you buy
+- DevOps is not an IT-only effort
+- DevOps is not a just automating infrastructure
+- DevOps is not easy!
+
+## Things to Remember About DevOps
+
+- The goals are continuous improvement and a focus on delivering costumer value
+- You cannot "buy" DevOps from anyone
+- Adoption of DevOps is incremental and happens in stages
+
 <!--
 ## Interview
 
@@ -119,7 +144,6 @@ https://www.youtube.com/watch?v=N01m7JEVYmY
 https://www.youtube.com/watch?v=OF0IVHpZ9tk
 -->
 
-
 <!--
 ##
 
@@ -133,7 +157,6 @@ AWS
 BEST Videos
 
 https://www.youtube.com/watch?v=WxjJlYFIWtI
-
 
 ##
 
@@ -217,10 +240,8 @@ Set GitLab default branch*
 
 https://www.novelvista.com/blogs/devops/top-20-devops-interview-question-answers?utm_source=Youtube
 
-
 https://github.com/DeekshithSN/Devops_interview_questions
 https://www.youtube.com/watch?v=RtYw7f0KyV0
-
 
 Load Balance
 -->

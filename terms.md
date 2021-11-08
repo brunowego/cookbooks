@@ -78,6 +78,7 @@
 - Stock Keeping Unit (SKU)
 - System Under Test (SUT)
 - Thank God it's Friday (TGIF)
+- Time To First Byte (TTFB)
 - Time-to-live (TTL)
 - To Be Decided or To Be Determined (TBD)
 - Top-Level Domain (TLD)

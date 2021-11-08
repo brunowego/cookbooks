@@ -42,12 +42,30 @@ https://www.digitalocean.com/community/tutorials/vuejs-vue-with-i18n
 https://dev.to/mcraealex/setting-up-vue-and-phoenix-1-5-with-vue-cli-488c
 -->
 
+## Links
+
+- [Code Repository](https://github.com/vuejs/vue)
+- [Main Website](https://vuejs.org/)
+
 ## CLI
+
+### Installation
+
+#### NPM
+
+```sh
+npm install -g @vue/cli
+```
 
 ### Usage
 
 ```sh
-vue create app
+#
+vue create [my-app]
+
+#
+npm run serve
+npm run build
 ```
 
 ### Tips

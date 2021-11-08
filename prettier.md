@@ -1,5 +1,10 @@
 # Prettier
 
+<!--
+https://github.com/temporalio/temporaldotio/blob/main/.prettierignore
+https://github.com/temporalio/temporaldotio/blob/main/.prettierrc
+-->
+
 ## CLI
 
 ### Installation

@@ -10,6 +10,10 @@ https://www.youtube.com/watch?v=Fn6YhLrR-vk
 - [Code Repository](https://github.com/nextauthjs/next-auth)
 - [Main Website](https://next-auth.js.org/)
 
+## Examples
+
+- [NextAuth.js Typescript TypeScript - Example App](https://github.com/nextauthjs/next-auth-typescript-example)
+
 ## Library
 
 ### Installation

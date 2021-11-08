@@ -19,9 +19,8 @@ docker network create workbench \
 
 ### Running
 
-#### 5.x
-
 ```sh
+# 5.x
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mysql \
@@ -34,11 +33,8 @@ docker run -d \
   --name mysql \
   --network workbench \
   docker.io/library/mysql:5.7
-```
 
-#### 8.x
-
-```sh
+# 8.x
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mysql \

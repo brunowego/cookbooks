@@ -28,6 +28,7 @@ https://github.com/pbnj/pbnj.github.io/blob/6b68214fb58f1ec46e91a4d611e7e3b928ac
 ## Alternatives
 
 - Kyverno
+- [Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
 
 ## Links
 
@@ -40,9 +41,9 @@ https://github.com/pbnj/pbnj.github.io/blob/6b68214fb58f1ec46e91a4d611e7e3b928ac
 - [Policy Language](https://openpolicyagent.org/docs/latest/policy-language/)
 - [Kafka](https://openpolicyagent.org/docs/latest/kafka-authorization/)
 
-##
+## Terms
 
-- Policy-as-Code
+- Policy-as-Code (PaC)
 
 ## CLI
 

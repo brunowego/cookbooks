@@ -34,10 +34,9 @@
 echo 'deb http://apt.newrelic.com/debian newrelic non-free' | sudo tee /etc/apt/sources.list.d/newrelic.list
 
 # Using cURL
-curl -fsSL https://download.newrelic.com/548C16BF.gpg | sudo apt-key add -
-
+curl -fsSL 'https://download.newrelic.com/548C16BF.gpg' | sudo apt-key add -
 # Using GNU wget
-wget -O- https://download.newrelic.com/548C16BF.gpg | sudo apt-key add -
+wget -O- 'https://download.newrelic.com/548C16BF.gpg' | sudo apt-key add -
 
 sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt -y install newrelic-php5
@@ -111,4 +110,14 @@ export NR_INSTALL_KEY='[hash]'
 
 sed -i "/^newrelic.license/ s/\".*\"/\"${NR_INSTALL_KEY}\"/" "$(php -i | grep -oE /.+/conf.d$)/newrelic.ini"
 sed -i '/^newrelic.appname/ s/".*"/"My App"/' "$(php -i | grep -oE /.+/conf.d$)/newrelic.ini"
+```
+
+### Verify
+
+```sh
+php -m | grep newrelic
+```
+
+```sh
+php -i | grep '^newrelic$' -A 115
 ```

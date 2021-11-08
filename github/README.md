@@ -16,6 +16,7 @@ https://media-exp1.licdn.com/dms/image/sync/C4E27AQFXhz19BLKTlg/articleshare-shr
 ## API
 
 - [Rate Limit](https://api.github.com/rate_limit)
+- [GitHub GraphQL API](https://docs.github.com/en/graphql/overview/explorer)
 
 ## Tools
 

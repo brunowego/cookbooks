@@ -43,7 +43,6 @@ https://linkedin.com/learning/react-cloud-powered-apps-with-firebase/structuring
 https://linkedin.com/learning/building-modern-projects-with-react/react-going-from-good-to-great
 -->
 
-
 <!--
 ## Favorite Libraries
 
@@ -78,3 +77,7 @@ https://www.npmjs.com/package/omit
 - [React Developer Tools (Google Chrome)](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 - [React Developer Tools (Mozilla Firefox)](https://addons.mozilla.org/pt-BR/firefox/addon/react-devtools/)
 - [React - CodeSandbox](https://react.new)
+
+## Terms
+
+- React Server Components (RSC)

@@ -18,6 +18,7 @@ https://www.youtube.com/watch?v=_1xa8Bsho6A
 
 ## Alternatives
 
+- [GraphQL](/graphql/README.md)
 - [Remote Procedure Call (RPC)](/rpc.md)
 - [Simple Object Access Protocol (SOAP)](/soap.md)
 

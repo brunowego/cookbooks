@@ -1,7 +1,5 @@
 # Disqus
 
-TODO
-
 ## Alternatives
 
 - [Isso](https://posativ.org/isso/)

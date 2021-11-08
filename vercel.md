@@ -1,6 +1,8 @@
 # Vercel
 
 <!--
+https://github.com/temporalio/temporaldotio/blob/main/vercel.json
+
 https://vercel.com/analytics
 https://vercel.com/edge
 https://vercel.com/live
@@ -19,6 +21,7 @@ https://epic-course-platform.vercel.app/
 - [Main Website](https://vercel.com)
 - [Edge Functions](https://vercel.com/features/edge-functions)
 - [Previews](https://vercel.com/features/previews#checks)
+- [Examples](https://github.com/vercel/examples)
 
 ## Terms
 
@@ -73,6 +76,10 @@ vercel init
 ### Configuration
 
 ```sh
+# Git Ignore
+echo '/.vercel' >> ./.gitignore
+
+# Vercel Ignore
 cat << EOF > ./.vercelignore
 
 EOF

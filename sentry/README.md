@@ -4,6 +4,11 @@
 https://blog.sentry.io/2018/07/17/source-code-fetching
 -->
 
+## Links
+
+- [Code Repository](https://github.com/getsentry/sentry)
+- [Main Website](https://sentry.io)
+
 ## CLI
 
 ### Installation
