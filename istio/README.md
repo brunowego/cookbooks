@@ -142,7 +142,7 @@ kubectl delete pod -l 'app=kiali' -n istio-system
 kubectl get secret kiali \
   -o jsonpath='{.data.passphrase}' \
   -n istio-system | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

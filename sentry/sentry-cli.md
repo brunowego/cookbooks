@@ -13,7 +13,6 @@
 
 ```sh
 brew tap getsentry/tools
-
 brew install sentry-cli
 ```
 
@@ -45,15 +44,18 @@ export SENTRY_LOG_LEVEL='debug'
 sentry-cli -h
 ```
 
-### Usage
+### Configuration
 
 ```sh
 #
+export SENTRY_URL='https://sentry.io'
+export SENTRY_ORG=''
+
+#
 cat << EOF > ~/.sentryclirc
 [defaults]
-url = https://sentry.io
-org = [organization]
-project = [project]
+url = ${SENTRY_URL}
+org = ${SENTRY_ORG}
 EOF
 
 #
@@ -63,35 +65,59 @@ sentry-cli login
 sentry-cli info
 ```
 
-#### Projects
+### Usage
 
 ```sh
+#
+sentry-cli repos list
+
 #
 sentry-cli projects list
+
+#
+sentry-cli releases list
 ```
 
-#### Release
+### Tips
+
+#### Send Event
 
 ```sh
 #
-sentry-cli releases list
+export SENTRY_DSN=''
 
 #
-sentry-cli releases new '[release-name]'
+sentry-cli send-event \
+  -m 'Something happened'
 
 #
-sentry-cli releases delete '[release-name]'
+sentry-cli send-event \
+  -m 'Unknown system error' \
+  --logfile /var/log/system.log
+
+#
+eval "$(sentry-cli bash-hook)"
 ```
 
-<!--
-export SENTRY_RELEASE=$(sentry-cli releases propose-version)
-sentry-cli releases new -p $SENTRY_PROJECT $SENTRY_RELEASE
-sentry-cli releases set-commits --auto $SENTRY_RELEASE || true
-sentry-cli releases finalize $SENTRY_RELEASE
-sentry-cli releases deploys $SENTRY_RELEASE new -e ${{ env.STAGE }}
--->
+#### Create Release
 
-##### Upload SourceMaps
+```sh
+#
+export SENTRY_RELEASE="$(sentry-cli releases propose-version)"
+
+#
+sentry-cli releases new -p "$SENTRY_PROJECT" "$SENTRY_RELEASE"
+
+sentry-cli releases set-commits \
+  --auto "$SENTRY_RELEASE" || true
+
+sentry-cli releases finalize "$SENTRY_RELEASE"
+
+sentry-cli releases deploys "$SENTRY_RELEASE" new \
+  -e '[env]'
+```
+
+#### Upload SourceMaps
 
 ```sh
 #
@@ -117,27 +143,6 @@ sentry-cli releases files \
 
 #
 sentry-cli releases finalize '[release]'
-```
-
-### Tips
-
-#### Send Event
-
-```sh
-#
-export SENTRY_DSN=''
-
-#
-sentry-cli send-event \
-  -m 'Something happened'
-
-#
-sentry-cli send-event \
-  -m 'Unknown system error' \
-  --logfile /var/log/system.log
-
-#
-eval "$(sentry-cli bash-hook)"
 ```
 
 #### Configuration

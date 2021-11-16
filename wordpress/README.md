@@ -44,7 +44,7 @@ kubectl create ns wordpress
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install wordpress bitnami/wordpress \
@@ -82,7 +82,7 @@ kubectl logs \
 kubectl get secret wordpress \
   -o jsonpath='{.data.wordpress-password}' \
   -n wordpress | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

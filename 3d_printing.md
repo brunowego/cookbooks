@@ -23,3 +23,9 @@ https://linkedin.com/learning/design-for-additive-manufacturing-fdm/welcome
 - PLA
 - TPE
 - TPU
+
+## 3D Designs
+
+- [Cults](https://cults3d.com/)
+- [Thingiverse](https://thingiverse.com/)
+- [YouMagine](https://youmagine.com/)

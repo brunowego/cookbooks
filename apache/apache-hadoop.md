@@ -100,7 +100,7 @@ EOF
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h namenode \
-  --env-file <(echo $HADOOP_ENV_FILE | base64 --decode) \
+  --env-file <(echo $HADOOP_ENV_FILE | base64 -d) \
   -e CLUSTER_NAME='test' \
   -v hadoop-dfs-namenode:/hadoop/dfs/name \
   -p 50070:50070 \
@@ -113,7 +113,7 @@ docker run -d \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h datanode \
-  --env-file <(echo $HADOOP_ENV_FILE | base64 --decode) \
+  --env-file <(echo $HADOOP_ENV_FILE | base64 -d) \
   -e SERVICE_PRECONDITION='hadoop-dfs-namenode:50070' \
   -v hadoop-dfs-datanode:/hadoop/dfs/data \
   --name hadoop-dfs-datanode \
@@ -125,7 +125,7 @@ docker run -d \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h resourcemanager \
-  --env-file <(echo $HADOOP_ENV_FILE | base64 --decode) \
+  --env-file <(echo $HADOOP_ENV_FILE | base64 -d) \
   -e SERVICE_PRECONDITION='hadoop-dfs-namenode:50070 hadoop-dfs-datanode:50075 hadoop-dfs-historyserver:8188' \
   --name hadoop-dfs-resourcemanager \
   --network workbench \
@@ -136,7 +136,7 @@ docker run -d \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h historyserver \
-  --env-file <(echo $HADOOP_ENV_FILE | base64 --decode) \
+  --env-file <(echo $HADOOP_ENV_FILE | base64 -d) \
   -e SERVICE_PRECONDITION='hadoop-dfs-namenode:50070 hadoop-dfs-datanode:50075 hadoop-dfs-resourcemanager:8088' \
   -v hadoop-dfs-historyserver:/hadoop/yarn/timeline \
   --name hadoop-dfs-historyserver \

@@ -36,7 +36,7 @@ kubectl create ns backstage
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install backstage deliveryhero/backstage \

@@ -20,6 +20,9 @@ brew install vault
 
 ```sh
 #
+vault server -config=/vault/config/vault.json
+
+#
 vault kv get secret/data/hello-service/credentials
 
 #
@@ -48,7 +51,7 @@ kubectl create ns vault
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install vault hashicorp/vault \

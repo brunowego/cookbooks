@@ -65,7 +65,7 @@ kubectl create ns metabase
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install metabase pmint93/metabase \

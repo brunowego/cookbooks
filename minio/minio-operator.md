@@ -21,7 +21,7 @@ kubectl create ns minio
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install minio minio/minio-operator \
@@ -60,7 +60,7 @@ kubectl logs \
 kubectl get secret $(kubectl get serviceaccount console-sa --namespace minio -o jsonpath="{.secrets[0].name}") \
   --namespace minio \
   -o jsonpath="{.data.token}" | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Ingress

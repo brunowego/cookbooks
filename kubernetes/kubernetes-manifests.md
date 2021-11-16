@@ -94,6 +94,8 @@ spec:
     rollingUpdate:
       maxSurge: 1
       maxUnavailable: 1
+      # maxSurge: 50%
+      # maxUnavailable: 20%
 ```
 
 ```yaml

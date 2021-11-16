@@ -30,7 +30,7 @@ helm install hue gethue/hue \
 kubectl get secret hue \
   -o jsonpath='{.data.admin-password}' \
   -n hue | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

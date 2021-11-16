@@ -132,7 +132,17 @@ antigen bundle node
 code --install-extension wix.vscode-import-cost
 ```
 
-<!-- ### Issues -->
+### Issues
+
+#### VSCode JavaScript Validate
+
+```log
+File is a CommonJS module; it may be converted to an ES6 module.ts(80001)
+```
+
+```sh
+jq '."javascript.validate.enable" |= false' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+```
 
 <!-- ####
 

@@ -3,9 +3,14 @@
 <!--
 https://app.pluralsight.com/course-player?courseId=a609cb66-9343-41bd-87e3-a83514e29e27
 https://app.pluralsight.com/library/courses/postman-fundamentals/table-of-contents
-https://linkedin.com/learning/postman-essential-training/why-automate-your-api-tests
+https://www.linkedin.com/learning/postman-essential-training
 https://www.freecodecamp.org/news/learn-how-to-use-postman-to-test-apis/
 -->
+
+## Links
+
+- [Org Repositories](https://github.com/postmanlabs)
+- [Main Website](https://postman.com/)
 
 ## Alternatives
 

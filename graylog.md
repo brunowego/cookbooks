@@ -99,7 +99,7 @@ nslookup "graylog.${DOMAIN}" 10.96.0.10
 kubectl get secret graylog \
   -o jsonpath='{.data.graylog-password-secret}' \
   -n graylog | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

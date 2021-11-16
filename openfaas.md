@@ -87,12 +87,12 @@ nslookup "openfaas.${DOMAIN}" 10.96.0.10
 kubectl get secret basic-auth \
   -o jsonpath='{.data.basic-auth-user}' \
   -n openfaas | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret basic-auth \
   -o jsonpath='{.data.basic-auth-password}' \
   -n openfaas | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

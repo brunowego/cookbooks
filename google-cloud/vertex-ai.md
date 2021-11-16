@@ -4,7 +4,7 @@
 https://www.youtube.com/watch?v=gT4qqHMiEpA
 -->
 
-##
+## Key Concepts
 
 - Ingest
 - Analyze
@@ -14,5 +14,3 @@ https://www.youtube.com/watch?v=gT4qqHMiEpA
 - Evaluate
 - Deploy
 - Predict
-
-TODO

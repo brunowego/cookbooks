@@ -1,15 +1,21 @@
 # Next.js
 
 <!--
+https://courses.leighhalliday.com/next-level-next-js
+
 https://www.youtube.com/watch?v=_VuGmykVgTg
 
 https://fireship.io/courses/react-next-firebase/deploy-firebase/
+
+https://www.youtube.com/watch?v=S1oOlKQo8CY
+https://www.freecodecamp.org/news/how-to-use-feature-toggles-in-next-js-and-react/
 -->
 
 ## Links
 
 - [Code Repository](https://github.com/vercel/next.js)
 - [Main Website](https://nextjs.org/)
+- [Awesome Next.js](https://github.com/unicodeveloper/awesome-nextjs)
 
 ## Utils
 

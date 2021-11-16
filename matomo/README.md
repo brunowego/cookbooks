@@ -19,7 +19,7 @@ https://stats.data.gouv.fr/
 
 - [umami](https://github.com/mikecao/umami)
 
-## References
+## Links
 
 - [Builds](https://builds.matomo.org/)
 - [Tracking HTTP API](https://developer.matomo.org/api-reference/tracking-api)
@@ -28,6 +28,7 @@ https://stats.data.gouv.fr/
   - [Events](https://developer.matomo.org/api-reference/events)
   - [Database schema](https://developer.matomo.org/guides/persistence-and-the-mysql-backend)
 - [Email Reports](https://matomo.org/docs/email-reports/)
+- [Wikipedia](https://en.wikipedia.org/wiki/Matomo_(software))
 
 ## Guides
 
@@ -836,7 +837,7 @@ nslookup "matomo.${DOMAIN}" 10.96.0.10
 kubectl get secret matomo \
   -o jsonpath='{.data.admin-password}' \
   -n matomo | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

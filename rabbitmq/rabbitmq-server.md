@@ -25,7 +25,7 @@ kubectl create ns rabbitmq
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install rabbitmq bitnami/rabbitmq \
@@ -60,7 +60,7 @@ kubectl logs \
 kubectl get secret rabbitmq \
   -o jsonpath='{.data.rabbitmq-password}' \
   -n rabbitmq | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Metrics

@@ -29,7 +29,7 @@ kubectl create ns nifi-system
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install nifi cetic/nifi \
@@ -85,7 +85,7 @@ kubectl logs \
 kubectl get secret nifi \
   -o jsonpath='{.data.admin-password}' \
   -n nifi-system | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

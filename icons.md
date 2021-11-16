@@ -1,6 +1,6 @@
 # Icons
 
-##
+<!-- ##
 
 ```log
 1000x1000
@@ -8,11 +8,15 @@
 104 full square
 48 small square
 104 between
-```
+``` -->
 
-##
+## Types
 
-- [Duotone]()
+- Duotone
+
+## Libraries
+
+- [Feather](https://feathericons.com/)
 
 ## References
 

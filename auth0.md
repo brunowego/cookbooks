@@ -9,3 +9,7 @@ https://www.linkedin.com/learning/serverless-architecture
 ## Links
 
 - [Main Website](https://auth0.com/)
+
+## Guides
+
+- [Next.js](https://auth0.com/docs/quickstart/webapp/nextjs)

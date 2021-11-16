@@ -504,7 +504,7 @@ kubectl expose deployment 'my-nginx' \
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 cat << EOF | kubectl apply -f -
 apiVersion: extensions/v1beta1

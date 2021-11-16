@@ -51,7 +51,7 @@ kubectl create ns jenkins
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install jenkins jenkins/jenkins \
@@ -100,7 +100,7 @@ kubectl logs \
 kubectl get secret jenkins \
   -o jsonpath='{.data.jenkins-admin-password}' \
   -n jenkins | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Plugins

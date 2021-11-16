@@ -25,6 +25,19 @@ https://linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 
 ### Tips
 
+#### Visual Studio Code
+
+```sh
+jq '."html.format.wrapAttributes" |= "force-aligned"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+
+"html.format.wrapLineLength": 0
+
+```
+
+<!--
+"jsxBracketSameLine": true
+-->
+
 #### EditorConfig
 
 ```sh

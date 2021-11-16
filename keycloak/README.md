@@ -283,7 +283,7 @@ export JAVA_OPTS_APPEND='-Dkeycloak.profile.feature.upload_scripts=enabled -Dkey
 
 ### References
 
-- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/keycloak#parameters)
+- [Helm Repository](https://github.com/bitnami/charts/tree/master/bitnami/keycloak)
 
 ### Repository
 
@@ -300,7 +300,7 @@ kubectl create ns keycloak
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install keycloak bitnami/keycloak \
@@ -390,17 +390,17 @@ kubectl rollout status statefulset/keycloak \
 kubectl get secret keycloak \
   -o jsonpath='{.data.admin-password}' \
   -n keycloak | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret keycloak \
   -o jsonpath='{.data.management-password}' \
   -n keycloak | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret keycloak \
   -o jsonpath='{.data.database-password}' \
   -n keycloak | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete
@@ -512,3 +512,17 @@ kubectl delete ns keycloak \
 /opt/jboss/keycloak/bin/kcadm.sh update realms/master \
   -s 'passwordPolicy="hashIterations(27500) and specialChars(2) and upperCase(2) and lowerCase(2) and digits(2) and length(9) and notUsername and passwordHistory(4)"'
 ```
+
+## Issues
+
+### Logout Error
+
+```log
+keycloak-1 keycloak 11:45:42,425 WARN  [org.keycloak.events] (default task-236) type=LOGOUT_ERROR, realmId=[secret], clientId=[secret], userId=null, ipAddress=[secret], error=invalid_token, client_auth_method=client-secret
+```
+
+TODO
+
+<!--
+https://github.com/surfer190/fixes/blob/master/docs/keycloak/keycloak-single-sign-out.md
+-->

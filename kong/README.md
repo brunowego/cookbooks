@@ -61,7 +61,7 @@ nslookup "kong.${DOMAIN}" 10.96.0.10
 kubectl get secret kong-postgresql \
   -o jsonpath='{.data.postgresql-password}' \
   -n kong | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

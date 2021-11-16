@@ -3,6 +3,8 @@
 <!--
 https://www.hangfire.io/
 FROM docker.io/microsoft/dotnet:2.2-sdk AS build
+
+https://github.com/dotnet/dotnet-docker
 -->
 
 ## CLI

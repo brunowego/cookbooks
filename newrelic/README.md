@@ -13,6 +13,10 @@ https://www.udemy.com/course/learn-new-relic-monitoring-and-devops-for-the-cloud
 - [New Relic Explorer](https://one.newrelic.com/launcher/)
 - [New Relic University](https://learn.newrelic.com/)
 
+## Docs
+
+- [Get started with the New Relic CLI](https://developer.newrelic.com/automate-workflows/get-started-new-relic-cli/)
+
 ## Solutions
 
 - APM
@@ -42,18 +46,35 @@ newrelic -h
 newrelic apm -h
 ```
 
-### Usage
+### Configuration
 
 ```sh
 #
 newrelic profiles add \
-  -n 'tutorial' \
-  --apiKey '<API_KEY>' \
+  --profile '[name]' \
+  --apiKey '[api-key]' \
   -r 'us'
 
 #
+newrelic profiles list
+
+#
 newrelic profiles default \
-  -n 'tutorial'
+  --profile '[name]'
+```
+
+<!--
+newrelic profile configure \
+  --profile '[name]'
+-->
+
+### Usage
+
+```sh
+#
+newrelic apm application search \
+  --name '[app-name]' | \
+    jq '.[].name'
 
 #
 newrelic entity search \
@@ -69,9 +90,46 @@ newrelic entity tags get \
   --guid 'GUID'
 ```
 
-<!-- ### Tips
+### Tips
 
-####
+#### APM Single Delete
+
+```sh
+#
+export NEWRELIC_API_KEY='[api-key]'
+export NEWRELIC_APP_ID=''
+
+curl \
+  -X DELETE \
+  "https://api.newrelic.com/v2/applications/${NEWRELIC_APP_ID}.json" \
+  -H "X-Api-Key:${NEWRELIC_API_KEY}" \
+  -i
+```
+
+#### APM Multiple Deletion
+
+```sh
+#
+export NEWRELIC_API_KEY='[api-key]'
+export NEWRELIC_APM_APP_NAME=''
+
+#
+newrelic apm application search \
+  --name "$NEWRELIC_APM_APP_NAME" | \
+    jq '.[].name'
+
+#
+newrelic apm application search \
+  --name "$NEWRELIC_APM_APP_NAME" | \
+    jq '.[].applicationId' | \
+      xargs -I '{}' curl \
+        -X DELETE \
+        'https://api.newrelic.com/v2/applications/{}.json' \
+        -H "X-Api-Key:${NEWRELIC_API_KEY}" \
+        -i
+```
+
+<!-- ####
 
 1. Alerts & AI
 2. Policies

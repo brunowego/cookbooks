@@ -25,7 +25,7 @@ helm repo update
 ```sh
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install keel keel/keel \
@@ -64,7 +64,7 @@ kubectl logs \
 kubectl get secret keel \
   -o jsonpath='{.data.admin-password}' \
   -n keel | \
-    base64 --decode; echo
+    base64 -d; echo
 ``` -->
 
 ### Delete

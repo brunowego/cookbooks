@@ -1,6 +1,4 @@
-# Google
-
-Gugol
+# Google (Gugol)
 
 ## Links
 

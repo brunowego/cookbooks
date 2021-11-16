@@ -83,7 +83,7 @@ kubectl get pods -v 6
 kubectl config view \
   --raw \
   -o jsonpath='{.users[*].user.client-certificate-data}' | \
-    base64 --decode > ./admin.crt
+    base64 -d > ./admin.crt
 
 #
 openssl x509 \

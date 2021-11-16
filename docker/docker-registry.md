@@ -85,7 +85,7 @@ nslookup registry.${DOMAIN} 10.96.0.10
 kubectl get secret docker-registry-secret \
   -o jsonpath='{.data.haSharedSecret}' \
   -n docker-registry | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

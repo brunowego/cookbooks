@@ -5,6 +5,8 @@ https://github.com/revoltchat/.github
 https://github.com/chdsbd/kodiak
 
 https://media-exp1.licdn.com/dms/image/sync/C4E27AQFXhz19BLKTlg/articleshare-shrink_800/0/1620311917375?e=1620406800&v=beta&t=kcsEPLfDy2Up6iCcr7gyH9OIJhH0Pgj09CtvABBcVGc
+
+https://github.com/cla-assistant/cla-assistant
 -->
 
 ## References

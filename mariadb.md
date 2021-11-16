@@ -87,7 +87,7 @@ nslookup mariadb.mariadb.svc.cluster.local 10.96.0.10
 kubectl get secret mariadb \
   -o jsonpath='{.data.mariadb-root-password}' \
   -n mariadb | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

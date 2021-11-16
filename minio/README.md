@@ -44,7 +44,7 @@ kubectl create ns minio
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install minio bitnami/minio \
@@ -90,14 +90,14 @@ kubectl get secret \
   -n minio \
   minio \
   -o jsonpath='{.data.access-key}' | \
-    base64 --decode; echo
+    base64 -d; echo
 
 #
 kubectl get secret \
   -n minio \
   minio \
   -o jsonpath='{.data.secret-key}' | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

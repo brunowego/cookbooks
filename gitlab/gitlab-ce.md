@@ -111,18 +111,18 @@ nslookup gitlab.${DOMAIN} 10.96.0.10
 kubectl get secret gitlab-ce-minio-secret \
   -o jsonpath='{.data.accesskey}' \
   -n gitlab | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret gitlab-ce-minio-secret \
   -o jsonpath='{.data.secretkey}' \
   -n gitlab | \
-    base64 --decode; echo
+    base64 -d; echo
 
 # GitLab
 kubectl get secret gitlab-ce-gitlab-initial-root-password \
   -o jsonpath='{.data.password}' \
   -n gitlab | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### NGINX Ingress

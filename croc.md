@@ -21,3 +21,21 @@ brew install croc
 ```sh
 choco install croc
 ```
+
+### Commands
+
+```sh
+croc -h
+```
+
+### Usage
+
+```sh
+#
+croc send [./my-file.ext]
+
+#
+croc send \
+  --code [code-phrase] \
+  [./my-file.ext]
+```

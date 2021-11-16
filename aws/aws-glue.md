@@ -22,6 +22,14 @@ aws glue help
 ```sh
 #
 aws glue list-schemas
+
+#
+aws glue create-database --database-input "{\"Name\":\"${DATABASE_NAME}\"}"
+
+#
+aws glue create-table \
+  --database-name ${DATABASE_NAME} \
+  --table-input file://${FILE_ATHENA_DOC}
 ```
 
 ### Issues

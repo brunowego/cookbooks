@@ -147,42 +147,44 @@ kubectl exec openwhisk-wskadmin \
 kubectl get secret openwhisk-db.auth \
   -o jsonpath='{.data.db_username}' \
   -n openwhisk | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret openwhisk-db.auth \
   -o jsonpath='{.data.db_password}' \
   -n openwhisk | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ```sh
 kubectl get secret openwhisk-docker.registry.auth \
   -o jsonpath='{.data.docker_registry_username}' \
   -n openwhisk | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret openwhisk-docker.registry.auth \
   -o jsonpath='{.data.docker_registry_password}' \
   -n openwhisk | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ```sh
 kubectl get secret openwhisk-whisk.auth \
   -o jsonpath='{.data.guest}' \
   -n openwhisk | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret openwhisk-whisk.auth \
   -o jsonpath='{.data.system}' \
   -n openwhisk | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Config Map
 
 ```sh
-kubectl get configmap openwhisk-db.config -o yaml -n openwhisk
+kubectl get cm openwhisk-db.config \
+  -o yaml \
+  -n openwhisk
 ```
 
 ### Web UI

@@ -64,7 +64,7 @@ kubectl rollout status deploy/grafana-prom-deployment -n seldon
 kubectl get secret grafana-prom-secret \
   -o jsonpath='{.data.grafana-prom-admin-password}' \
   -n seldon | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 <!-- ### Web UI

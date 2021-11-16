@@ -17,6 +17,12 @@ kubectl get storageclass
 
 ## Tips
 
+### Disc Free
+
+```sh
+kubectl exec [pod-name] -- df
+```
+
 ### Change Persistent Volume Reclaim Policy
 
 ```sh

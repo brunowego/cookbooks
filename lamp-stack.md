@@ -86,7 +86,7 @@ nslookup "lamp.${DOMAIN}" 10.96.0.10
 kubectl get secret lamp \
   -o jsonpath='{.data.admin-password}' \
   -n lamp | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

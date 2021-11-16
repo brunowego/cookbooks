@@ -80,12 +80,12 @@ kubectl logs \
 kubectl get secret loki-grafana \
   -o=jsonpath='{.data.admin-user}' \
   -n logging | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret loki-grafana \
   -o=jsonpath='{.data.admin-password}' \
   -n logging | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Port Forward

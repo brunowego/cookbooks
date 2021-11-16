@@ -11,12 +11,12 @@
 #### Configuration
 
 ```sh
-kubectl get configmap coredns -n kube-system -o yaml
+kubectl get cm coredns -n kube-system -o yaml
 ```
 
 ```sh
-yq w <(kubectl get configmap coredns -n kube-system -o yaml) data.Corefile "$(cat << EOF
-$(kubectl get configmap coredns -n kube-system -o yaml | yq r - data.Corefile)
+yq w <(kubectl get cm coredns -n kube-system -o yaml) data.Corefile "$(cat << EOF
+$(kubectl get cm coredns -n kube-system -o yaml | yq r - data.Corefile)
 example.com {
     etcd example.com {
         stubzones

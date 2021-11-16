@@ -8,6 +8,100 @@ https://github.com/muqtadir/prometheus-values/blob/main/prometheus-operator/plat
 
 - [Code Repository](https://github.com/viossat/alertmanager-discord)
 
+## Custom Resource (CR)
+
+### Dependencies
+
+```sh
+#
+cat << EOF | kubectl apply \
+  -n monitoring \
+  -f -
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alertmanager-discord
+spec:
+  selector:
+    matchLabels:
+      app: alertmanager-discord
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: alertmanager-discord
+    spec:
+      containers:
+      - name: alertmanager-discord
+        image: docker.io/benjojo/alertmanager-discord:latest
+        imagePullPolicy: Always
+        # resources:
+        #   limits:
+        #     cpu: 20m
+        #     memory: 40Mi
+        #   requests:
+        #     cpu: 20m
+        #     memory: 40Mi
+        ports:
+        - containerPort: 9094
+          name: http
+        env:
+        - name: DISCORD_WEBHOOK
+          value: https://discord.com/api/webhooks/[id]/[token]
+EOF
+
+#
+cat << EOF | kubectl apply \
+  -n monitoring \
+  -f -
+apiVersion: v1
+kind: Service
+metadata:
+  name: alertmanager-discord
+spec:
+  selector:
+    app: alertmanager-discord
+  ports:
+  - name: http
+    port: 9094
+    targetPort: http
+  type: ClusterIP
+EOF
+```
+
+### Install
+
+```sh
+#
+kubectl get alertmanagerconfig -A
+
+#
+cat << EOF | kubectl apply \
+  -n my-app \
+  -f -
+apiVersion: monitoring.coreos.com/v1alpha1
+kind: AlertmanagerConfig
+metadata:
+  name: discord-alerts
+  labels:
+    alertmanagerConfig: discord
+spec:
+  route:
+    groupBy: ['job']
+    groupWait: 30s
+    groupInterval: 1m
+    repeatInterval: 2m
+    receiver: 'discord-alerts'
+  receivers:
+  - name: 'discord-alerts'
+    webhookConfigs:
+    - url: 'http://alertmanager-discord.monitoring:9094'
+      sendResolved: true
+EOF
+```
+
+> Wait! This process take a while.
+
 ## Docker
 
 ### Dependencies
@@ -104,125 +198,3 @@ inhibit_rules:
 ```sh
 docker rm -f alertmanager-discord
 ```
-
-## Custom Resource (CR)
-
-### Install
-
-```sh
-#
-cat << EOF | kubectl apply \
-  -n monitoring \
-  -f -
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: alertmanager-discord
-spec:
-  selector:
-    matchLabels:
-      app: alertmanager-discord
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: alertmanager-discord
-    spec:
-      containers:
-      - name: alertmanager-discord
-        image: docker.io/benjojo/alertmanager-discord:latest
-        imagePullPolicy: Always
-        # resources:
-        #   limits:
-        #     cpu: 20m
-        #     memory: 40Mi
-        #   requests:
-        #     cpu: 20m
-        #     memory: 40Mi
-        ports:
-        - containerPort: 9094
-          name: http
-        env:
-        - name: DISCORD_WEBHOOK
-          value: https://discord.com/api/webhooks/[id]/[token]
-EOF
-
-#
-cat << EOF | kubectl apply \
-  -n monitoring \
-  -f -
-apiVersion: v1
-kind: Service
-metadata:
-  name: alertmanager-discord
-spec:
-  selector:
-    app: alertmanager-discord
-  ports:
-  - name: http
-    port: 9094
-    targetPort: http
-  type: ClusterIP
-EOF
-```
-
-### Tips
-
-#### Alertmanager Config Selector
-
-```sh
-#
-kubectl get alertmanager \
-  -o jsonpath='{.items[*].spec.alertmanagerConfigSelector}' \
-  -n monitoring
-```
-
-#### Alertmanager Config Namespace Selector
-
-```sh
-#
-kubectl get alertmanager \
-  -o jsonpath='{.items[*].spec.alertmanagerConfigNamespaceSelector}' \
-  -n monitoring
-
-#
-kubectl get namespace my-app \
-  -o json |
-    jq -r '.metadata.labels'
-
-#
-kubectl label namespace my-app alertmanagerconfig=enabled
-```
-
-#### Create Alertmanager Config
-
-```sh
-#
-kubectl get alertmanagerconfig -A
-
-#
-cat << EOF | kubectl apply \
-  -n my-app \
-  -f -
-apiVersion: monitoring.coreos.com/v1alpha1
-kind: AlertmanagerConfig
-metadata:
-  name: discord
-  labels:
-    alertmanagerConfig: discord
-spec:
-  route:
-    groupBy: ['job']
-    groupWait: 30s
-    groupInterval: 1m
-    repeatInterval: 2m
-    receiver: 'discord'
-  receivers:
-  - name: 'discord'
-    webhookConfigs:
-    - url: 'http://alertmanager-discord.monitoring:9094'
-      sendResolved: true
-EOF
-```
-
-> Wait! This process take a while.

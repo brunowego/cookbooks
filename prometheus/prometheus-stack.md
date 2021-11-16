@@ -30,7 +30,7 @@ kubectl create ns monitoring
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install prometheus-stack prometheus-community/kube-prometheus-stack \
@@ -85,7 +85,7 @@ kubectl logs \
 kubectl get secret prometheus-stack-grafana \
   -o jsonpath='{.data.admin-password}' \
   -n monitoring | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Port Forward

@@ -2,15 +2,30 @@
 
 ## Links
 
+- [Code Repository](https://github.com/nuxt/nuxt.js)
 - [Main Website](https://nuxtjs.org/)
 
 ## CLI
+
+### Installation
+
+#### NPM
+
+```sh
+npm install -D nuxt
+```
+
+### Commands
+
+```sh
+npx nuxt -h
+```
 
 ### Usage
 
 ```sh
 #
-nuxt generate
+npx nuxt generate
 ```
 
 ### Tips

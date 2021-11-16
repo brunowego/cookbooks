@@ -124,7 +124,7 @@ nslookup "polyaxon.${DOMAIN}" 10.96.0.10
 kubectl get secret polyaxon-polyaxon-secret \
   -o jsonpath='{.data.POLYAXON_ADMIN_PASSWORD}' \
   -n polyaxon | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 | Key | Value |
@@ -136,31 +136,31 @@ kubectl get secret polyaxon-polyaxon-secret \
 kubectl get secret polyaxon-postgresql \
   -o jsonpath='{.data.postgres-password}' \
   -n polyaxon | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ```sh
 kubectl get secret polyaxon-rabbitmq-ha \
   -o jsonpath='{.data.rabbitmq-management-username}' \
   -n polyaxon | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret polyaxon-rabbitmq-ha \
   -o jsonpath='{.data.rabbitmq-management-password}' \
   -n polyaxon | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ```sh
 kubectl get secret polyaxon-rabbitmq-ha \
   -o jsonpath='{.data.rabbitmq-username}' \
   -n polyaxon | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret polyaxon-rabbitmq-ha \
   -o jsonpath='{.data.rabbitmq-password}' \
   -n polyaxon | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ###

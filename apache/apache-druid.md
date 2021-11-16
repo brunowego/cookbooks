@@ -96,7 +96,7 @@ EOF
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h coordinator \
-  --env-file <(echo $DRUID_ENV_FILE | base64 --decode) \
+  --env-file <(echo $DRUID_ENV_FILE | base64 -d) \
   -v druid-data:/opt/data \
   -v druid-coordinator-var:/opt/druid/var \
   -p 8081:8081 \
@@ -109,7 +109,7 @@ docker run -d \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h broker \
-  --env-file <(echo $DRUID_ENV_FILE | base64 --decode) \
+  --env-file <(echo $DRUID_ENV_FILE | base64 -d) \
   -v druid-broker-var:/opt/druid/var \
   -p 8082:8082 \
   --name druid-broker \
@@ -121,7 +121,7 @@ docker run -d \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h historical \
-  --env-file <(echo $DRUID_ENV_FILE | base64 --decode) \
+  --env-file <(echo $DRUID_ENV_FILE | base64 -d) \
   -v druid-data:/opt/data \
   -v druid-historical-var:/opt/druid/var \
   -p 8083:8083 \
@@ -134,7 +134,7 @@ docker run -d \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h middlemanager \
-  --env-file <(echo $DRUID_ENV_FILE | base64 --decode) \
+  --env-file <(echo $DRUID_ENV_FILE | base64 -d) \
   -v druid-data:/opt/data \
   -v druid-middlemanager-var:/opt/druid/var \
   -p 8091:8091 \
@@ -147,7 +147,7 @@ docker run -d \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h router \
-  --env-file <(echo $DRUID_ENV_FILE | base64 --decode) \
+  --env-file <(echo $DRUID_ENV_FILE | base64 -d) \
   -v druid-router-var:/opt/druid/var \
   -p 8888:8888 \
   --name druid-router \

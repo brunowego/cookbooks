@@ -26,6 +26,7 @@ https://github.com/ecklf/tailwindcss-figma-kit
 
 - [Himalayas](https://himalayas.app/)
 - [PlanetScale](https://planetscale.com/)
+- [Supabase](https://supabase.io/)
 
 ## CLI
 

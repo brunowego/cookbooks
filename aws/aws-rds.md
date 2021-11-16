@@ -21,6 +21,10 @@ https://github.com/nvaidya1/BugBust-repo-python/tree/master/awscli/examples/rds
 - [IAM database authentication for MySQL and PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
 - [DB instance classes](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html)
 
+## Questions
+
+- [AWS RDS connection limits](https://serverfault.com/questions/862387/aws-rds-connection-limits)
+
 ## CLI
 
 ### Commands

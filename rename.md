@@ -20,17 +20,22 @@ brew install rename
 rename
 ```
 
-### Usage
+### Tips
+
+#### Slugify
 
 ```sh
-# Slugify
 rename \
   --dry-run \
   -fvc \
   --nows \
   *
+```
 
-# Replace (regex)
+#### Replace (regex)
+
+```sh
+#
 rename \
   --dry-run \
   -v \
@@ -38,10 +43,33 @@ rename \
   *
 
 #
-find ./ -name '*.[from-ext]' -print0 | \
-  xargs -0 rename --dry-run 's/.[from-ext]$/.[to-ext]/'
+find . \
+  -type f \
+  -exec rename \
+    --dry-run \
+    -v \
+    's/[from]/[to]/' \
+    {} +
+```
 
-#
-find ./ -iname '*.[extension]' -exec realpath {} \; | \
-  rename --dry-run 's/.[from-ext]$/.[to-ext]/'
+#### Replace Extension
+
+```sh
+# Option 1
+find . \
+  -name '*.[extension]' \
+  -print0 | \
+    xargs -0 rename \
+      --dry-run \
+      -v \
+      's/.[from-ext]$/.[to-ext]/'
+
+# Option 2
+find . \
+  -iname '*.[extension]' \
+  -exec realpath {} \; | \
+    rename \
+      --dry-run \
+      -v \
+      's/.[from-ext]$/.[to-ext]/'
 ```

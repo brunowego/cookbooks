@@ -89,12 +89,12 @@ nslookup "couchdb.${DOMAIN}" 10.96.0.10
 kubectl get secret couchdb-couchdb \
   -o jsonpath='{.data.adminUsername}' \
   -n couchdb | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret couchdb-couchdb \
   -o jsonpath='{.data.adminPassword}' \
   -n couchdb | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Web UI

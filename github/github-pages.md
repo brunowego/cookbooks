@@ -1,5 +1,10 @@
 # GitHub Pages
 
+## Links
+
+- [Code Repository](https://github.com/tschaub/gh-pages)
+- [Main Website](https://pages.github.com/)
+
 ## CLI
 
 ### Installation

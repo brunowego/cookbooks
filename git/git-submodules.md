@@ -7,7 +7,7 @@
 git submodule add [repo] ./[destination]
 
 # Remove folder/module from git repository
-git rm -r --cached sae-avasae
+git rm -r --cached [name]
 
 # Update from submodule folder
 cd [destination] && git pull

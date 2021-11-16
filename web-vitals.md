@@ -20,12 +20,14 @@ Lazy loading
 - [Google Lighthouse](https://github.com/GoogleChrome/lighthouse)
 - [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - [Google Search Console](https://search.google.com/search-console/about)
+- [WebPageTest](https://webpagetest.org/)
 
 ## Metrics
 
 - Cumulative Layout Shift (CLS)
 - First Contentful Paint (FCP) / Largest Contentful Paint (LCP)
 - First Input Delay (FID)
+- Time To First Byte (TTFB)
 - Total Blocking Time (TBT)
 
 ## Extensions

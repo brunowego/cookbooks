@@ -23,7 +23,7 @@ kubectl create ns sonatype-nexus
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install sonatype-nexus stable/sonatype-nexus \
@@ -109,7 +109,7 @@ kubectl create secret docker-registry nxrm-oss-regcred \
 kubectl get secret nxrm-oss-regcred \
   -o jsonpath='{.data.\.dockerconfigjson}' \
   -n default | \
-    base64 --decode | jq .
+    base64 -d | jq .
 ```
 
 ```sh

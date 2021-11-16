@@ -45,7 +45,7 @@ EOF
 kubectl get secret mongo-mongodb \
   -o jsonpath='{.data.mongodb-root-password}' \
   -n mongodb | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Port Forward

@@ -11,7 +11,7 @@
 kubectl top nodes
 
 #
-kubectl top pods
+kubectl top pods --containers
 
 kubectl top pod '[pod-name]' \
   -n '[namespace]'

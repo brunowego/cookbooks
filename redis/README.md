@@ -214,7 +214,7 @@ nslookup redis-master.redis.svc.cluster.local 10.96.0.10
 kubectl get secret redis \
   -o jsonpath='{.data.redis-password}' \
   -n redis | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Tips

@@ -5,7 +5,10 @@ TODO
 <!-- ##
 
 ```sh
-kubectl get configmap -n big-deploy test-keytab -o yaml
+kubectl get cm \
+  -n big-deploy \
+  test-keytab \
+  -o yaml
 ```
 
 ```sh

@@ -8,6 +8,7 @@ https://blog.sentry.io/2018/07/17/source-code-fetching
 
 - [Code Repository](https://github.com/getsentry/sentry)
 - [Main Website](https://sentry.io)
+- [Troubleshooting](https://develop.sentry.dev/self-hosted/troubleshooting/)
 
 ## CLI
 
@@ -96,21 +97,11 @@ curl -iX OPTIONS "$SENTRY_DSN" | \
   grep -i 'Access-Control-Allow-Origin'
 ```
 
-### Issues
-
-<!-- ####
-
-```log
-Background workers haven't checked in recently. This is likely an issue with your configuration or the workers aren't running.
-```
-
-TODO -->
-
 ## Helm
 
 ### References
 
-- [Configuration](https://github.com/sentry-kubernetes/charts/tree/develop/sentry#configuration)
+- [Helm Repository](https://github.com/sentry-kubernetes/charts/tree/develop/sentry)
 
 ### Repository
 
@@ -127,7 +118,7 @@ kubectl create ns sentry-system
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install sentry sentry/sentry \
@@ -205,6 +196,172 @@ echo -e "[INFO]\thttp://sentry.${DOMAIN}"
 ```
 
 ### Issues
+
+#### Kafka Offset Out of Range
+
+```log
+Exception: KafkaError{code=OFFSET_OUT_OF_RANGE,val=1,str="Broker: Offset out of range"}
+```
+
+```sh
+#
+kubectl exec -it sentry-kafka-0 -- /bin/bash
+
+#
+/opt/bitnami/kafka/bin/kafka-consumer-groups.sh \
+  --bootstrap-server sentry-kafka-0:9092 \
+  --list
+```
+
+##### Snuba Consumers
+
+```sh
+#
+/opt/bitnami/kafka/bin/kafka-consumer-groups.sh \
+  --bootstrap-server sentry-kafka-0:9092 \
+  --group snuba-consumers \
+  --describe
+
+#
+/opt/bitnami/kafka/bin/kafka-consumer-groups.sh \
+  --bootstrap-server sentry-kafka-0:9092 \
+  --group snuba-consumers \
+  --topic events \
+  --reset-offsets \
+  --to-latest \
+  --dry-run
+
+#
+/opt/bitnami/kafka/bin/kafka-consumer-groups.sh \
+  --bootstrap-server sentry-kafka-0:9092 \
+  --group snuba-consumers \
+  --topic events \
+  --reset-offsets \
+  --to-latest \
+  --execute
+```
+
+###### Active Consumers Stop
+
+```sh
+#
+kubectl scale deployment sentry-snuba-consumer \
+  --replicas 0 \
+  -n sentry
+
+#
+kubectl scale deployment sentry-ingest-consumer \
+  --replicas 0 \
+  -n sentry
+
+#
+kubectl scale deployment sentry-sessions-consumer \
+  --replicas 0 \
+  -n sentry
+
+#
+kubectl scale deployment sentry-snuba-outcomes-consumer \
+  --replicas 0 \
+  -n sentry
+```
+
+##### Snuba Post Processor
+
+```sh
+#
+/opt/bitnami/kafka/bin/kafka-consumer-groups.sh \
+  --bootstrap-server sentry-kafka-0:9092 \
+  --group snuba-post-processor \
+  --describe
+
+#
+/opt/bitnami/kafka/bin/kafka-consumer-groups.sh \
+  --bootstrap-server sentry-kafka-0:9092 \
+  --group snuba-post-processor \
+  --topic events \
+  --reset-offsets \
+  --to-latest \
+  --dry-run
+
+#
+/opt/bitnami/kafka/bin/kafka-consumer-groups.sh \
+  --bootstrap-server sentry-kafka-0:9092 \
+  --group snuba-post-processor \
+  --topic events \
+  --reset-offsets \
+  --to-latest \
+  --execute
+```
+
+###### Active Consumers Stop
+
+```sh
+#
+kubectl scale deployment sentry-post-process-forward \
+  --replicas 0 \
+  -n sentry
+```
+
+###### Transactions Group
+
+```sh
+#
+/opt/bitnami/kafka/bin/kafka-consumer-groups.sh \
+  --bootstrap-server sentry-kafka-0:9092 \
+  --group transactions_group \
+  --describe
+
+#
+/opt/bitnami/kafka/bin/kafka-consumer-groups.sh \
+  --bootstrap-server sentry-kafka-0:9092 \
+  --group transactions_group \
+  --topic events \
+  --reset-offsets \
+  --to-latest \
+  --dry-run
+
+#
+/opt/bitnami/kafka/bin/kafka-consumer-groups.sh \
+  --bootstrap-server sentry-kafka-0:9092 \
+  --group transactions_group \
+  --topic events \
+  --reset-offsets \
+  --to-latest \
+  --execute
+```
+
+###### Active Consumers Stop
+
+```sh
+#
+kubectl scale deployment sentry-snuba-transactions-consumer \
+  --replicas 0 \
+  -n sentry
+```
+
+#### Active Consumers
+
+```log
+Error: Assignments can only be reset if the group 'snuba-consumers' is inactive, but the current state is Stable.
+```
+
+Need stop current consumers before continue.
+
+#### Remote Offset
+
+```log
+[INFO] sentry.eventstream.kafka.state: Remote offset for events/0 has moved backwards (current: 20840879, previous: 20841164)
+```
+
+TODO
+
+<!-- ####
+
+```log
+Background workers haven't checked in recently. This is likely an issue with your configuration or the workers aren't running.
+```
+
+TODO -->
 
 #### Redis Infinite Terminating
 

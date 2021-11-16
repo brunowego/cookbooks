@@ -163,7 +163,7 @@ helm upgrade nginx-ingress stable/nginx-ingress -f <(yq w <(helm get values ngin
 kubectl get secret openldap \
   -o jsonpath='{.data.LDAP_ADMIN_PASSWORD}' \
   -n openldap | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Logs
@@ -179,7 +179,7 @@ ldapsearch -x \
   -H ldap://openldap.openldap.svc.cluster.local \
   -b 'dc=example,dc=com' \
   -D 'cn=admin,dc=example,dc=com' \
-  -w $(kubectl get secret openldap -o jsonpath='{.data.LDAP_ADMIN_PASSWORD}' -n openldap | base64 --decode; echo)
+  -w $(kubectl get secret openldap -o jsonpath='{.data.LDAP_ADMIN_PASSWORD}' -n openldap | base64 -d; echo)
 ```
 
 ### Delete

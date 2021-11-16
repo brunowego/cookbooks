@@ -5,6 +5,7 @@
 - [1Password](https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager/)
 - [AutoFormer+](https://addons.mozilla.org/en-US/firefox/addon/autoformer/)
 - [AWS Extend Switch Roles](https://addons.mozilla.org/en-US/firefox/addon/aws-extend-switch-roles3/)
+- [Cloudinary Media Inspector](https://addons.mozilla.org/en-US/firefox/addon/cloudinary-media-inspector/)
 - [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/)
 - [HTTPS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/)
 - [Language Switch](https://addons.mozilla.org/en-US/firefox/addon/languageswitch/)

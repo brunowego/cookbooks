@@ -132,12 +132,20 @@ kubectl config set-cluster "$(kubectl config current-context)" \
   --insecure-skip-tls-verify=true
 ```
 
-### Bootstrap
+### Environments
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
 # Kubernetes Releases: https://kubernetes.io/releases/
 export KUBERNETES_VERSION='1.20.7'
 ```
+
+```sh
+sudo su - "$USER"
+```
+
+### Bootstrap
 
 **Observation:** [Check first](https://hub.docker.com/r/kindest/node/tags) if you have the image `kindest/node` with the tag corresponding to the version of Kubernetes.
 

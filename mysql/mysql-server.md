@@ -174,7 +174,7 @@ nslookup mysql.mysql.svc.cluster.local 10.96.0.10
 kubectl get secret mysql \
   -o jsonpath='{.data.mysql-root-password}' \
   -n mysql | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

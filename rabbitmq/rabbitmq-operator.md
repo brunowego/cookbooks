@@ -255,7 +255,7 @@ https://github.com/rabbitmq/rabbitmq-server/tree/master/deps/rabbitmq_prometheus
 ```sh
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 cat << EOF | kubectl apply \
@@ -288,13 +288,13 @@ EOF
 kubectl get secret rabbitmq-default-user \
   -o jsonpath='{.data.username}' \
   -n "$KUBECTL_NAMESPACE" | \
-    base64 --decode; echo
+    base64 -d; echo
 
 #
 kubectl get secret rabbitmq-default-user \
   -o jsonpath='{.data.password}' \
   -n "$KUBECTL_NAMESPACE" | \
-    base64 --decode; echo
+    base64 -d; echo
 ``` -->
 
 ### Ingress

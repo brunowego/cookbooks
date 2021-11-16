@@ -246,6 +246,18 @@ terraform destroy -auto-approve
 
 ### Tips
 
+#### Apply Specific State
+
+```sh
+#
+terraform state list
+
+#
+terraform apply \
+  -target '[state]' \
+  -var-file "./.terraform/vars/terraform-$(terraform workspace show).tfvars"
+```
+
 #### Destroy Specific State
 
 ```sh

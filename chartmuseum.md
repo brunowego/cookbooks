@@ -66,7 +66,7 @@ helm repo update
 kubectl get secret example.tls-secret \
   -o jsonpath='{.data.tls\.crt}' \
   -n chartmuseum | \
-    base64 --decode > ./ca.crt
+    base64 -d > ./ca.crt
 ```
 
 ```sh

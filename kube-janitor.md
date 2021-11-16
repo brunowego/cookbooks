@@ -1,5 +1,7 @@
 # Kubernetes Janitor
 
+**Keywords:** TTL
+
 ## Links
 
 - [Code Repository](https://codeberg.org/hjacobs/kube-janitor)

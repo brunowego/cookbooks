@@ -59,7 +59,7 @@ EOF
 ```sh
 #
 # export KUBERNETES_IP='127.0.0.1'
-# export DOMAIN='${KUBERNETES_IP}.nip.io'
+# export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm upgrade cilium cilium/cilium \
@@ -99,7 +99,7 @@ kubectl logs \
 kubectl get secret grafana \
   -o jsonpath='{.data.admin-password}' \
   -n monitoring-system | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Tips

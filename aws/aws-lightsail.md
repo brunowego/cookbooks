@@ -1,5 +1,11 @@
 # AWS Lightsail
 
+<!--
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lightsail_instance
+
+https://github.com/search?p=1&q=filename%3A.tf+%22aws_lightsail_instance%22+%22wordpress%22&type=Code
+-->
+
 ## Alternatives
 
 - Digital Ocean
@@ -22,23 +28,33 @@
 aws lightsail help
 ```
 
-### Examples
+### Usage
+
+```sh
+#
+aws lightsail get-active-names
+```
+
+### Tips
 
 #### Get
 
 ```sh
 # Get BlueprintsGet Blueprints
-aws lightsail get-blueprints \
-  --query 'blueprints[*].[blueprintId,type,platform,name,version]' \
-  --output table
+aws \
+  --output table \
+  lightsail get-blueprints \
+    --query 'blueprints[*].[blueprintId,type,platform,name,version]'
 
 # Get Bundles
-aws lightsail get-bundles \
-  --query 'bundles[*].[bundleId,price,cpuCount,ramSizeInGb,diskSizeInGb]' \
-  --output table
+aws \
+  --output table \
+  lightsail get-bundles \
+    --query 'bundles[*].[bundleId,price,cpuCount,ramSizeInGb,diskSizeInGb]'
 
-# Get Regions
-aws lightsail get-regions --include-availability-zones \
+# Get Available Zones
+aws lightsail get-regions \
+  --include-availability-zones \
   --query 'regions[*].[availabilityZones[*][zoneName,state]]'
 
 # Get Key Pairs
@@ -48,10 +64,10 @@ aws lightsail get-key-pairs
 #### Create Key Pair
 
 ```sh
+#
 sudo mkdir -p /etc/ssl/certs/example
-```
 
-```sh
+#
 aws lightsail create-key-pair \
   --key-pair-name 'example-lightsail-keypair' \
   --query 'privateKeyBase64' \
@@ -98,25 +114,22 @@ aws lightsail get-instance \
 #### get Instance Access Details
 
 ```sh
-aws lightsail get-instance-access-details --instance-name 'lightsail-example-vm'
-```
-
-#### Get Active Names
-
-```sh
-aws lightsail get-active-names
+aws lightsail get-instance-access-details \
+  --instance-name 'lightsail-example-vm'
 ```
 
 #### Static IP
 
 ```sh
-aws lightsail allocate-static-ip --static-ip-name 'lightsail-example-ip'
+aws lightsail allocate-static-ip \
+  --static-ip-name 'lightsail-example-ip'
 
 aws lightsail attach-static-ip \
   --instance-name 'lightsail-example-vm' \
   --static-ip-name 'lightsail-example-ip'
 
-aws lightsail get-static-ip --static-ip-name 'lightsail-example-ip'
+aws lightsail get-static-ip \
+  --static-ip-name 'lightsail-example-ip'
 ```
 
 #### Access
@@ -136,9 +149,15 @@ aws lightsail open-instance-public-ports \
 #### Delete
 
 ```sh
-aws lightsail detach-static-ip --static-ip-name 'lightsail-example-ip'
+#
+aws lightsail detach-static-ip \
+  --static-ip-name 'lightsail-example-ip'
 
-aws lightsail delete-instance --instance-name 'lightsail-example-vm'
+#
+aws lightsail delete-instance \
+  --instance-name 'lightsail-example-vm'
 
-aws lightsail delete-key-pair --key-pair-name 'example-lightsail-keypair'
+#
+aws lightsail delete-key-pair \
+  --key-pair-name 'example-lightsail-keypair'
 ```

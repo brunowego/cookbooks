@@ -48,17 +48,17 @@ nslookup rabbitmq.example.com 10.96.0.10
 kubectl get secret rabbitmq-ha \
   -o jsonpath='{.data.rabbitmq-password}' \
   -n rabbitmq-ha | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret rabbitmq-ha \
   -o jsonpath='{.data.rabbitmq-management-password}' \
   -n rabbitmq-ha | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret rabbitmq-ha \
   -o jsonpath='{.data.rabbitmq-erlang-cookie}' \
   -n rabbitmq-ha | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

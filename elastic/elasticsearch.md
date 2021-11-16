@@ -69,7 +69,7 @@ kubectl create ns elastic
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install elasticsearch elastic/elasticsearch \

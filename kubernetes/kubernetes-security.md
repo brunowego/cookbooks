@@ -143,6 +143,6 @@ kuberctl certificate approve "$CN"
 #
 kubectl get certificatesigningrequest "$CN" \
   -o jsonpath '{.status.certificate}' | \
-    base64 --decode \
+    base64 -d \
       > "./$CN.crt"
 ```

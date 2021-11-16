@@ -25,7 +25,7 @@ kubectl config view \
   --kubeconfig /etc/kubernetes/scheduler.conf
 
 #
-kubectl get configmap \
+kubectl get cm \
   kube-proxy \
   -n kube-system \
   -o yaml

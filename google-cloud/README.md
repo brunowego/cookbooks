@@ -9,3 +9,4 @@ https://linkedin.com/learning/google-cloud-platform-gcp-essential-training-for-d
 ## Links
 
 - [Google Cloud Pricing Calculator](https://cloud.google.com/products/calculator)
+- [Google Cloud Status Dashboard](https://status.cloud.google.com/)

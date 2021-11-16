@@ -61,7 +61,7 @@ dockerconfigjson=$(kubectl create secret docker-registry mysecret \
   --dry-run='client' \
   -o json \
     | jq -r '.data.".dockerconfigjson"' | \
-      base64 --decode)
+      base64 -d)
 
 aws secretsmanager create-secret \
   --region 'us-east-1' \

@@ -10,12 +10,15 @@ c5.2xlarge 10 gb
 
 ```sh
 #
+aws s3 ls
+
+#
 export KOPS_STATE_STORE='s3://k8s-kops-state-store'
 
 # Get first cluster description
 kops get cluster \
   -o json | \
-    jq
+    jq -r '.[].metadata.name'
 
 # Good pattern [cluster-name]-[region].k8s.local
 export KOPS_CLUSTER_NAME='dev01-us-east-1.k8s.local' # prod01, stg01, uat01
@@ -33,12 +36,15 @@ kubectl delete node [name]
 
 ```sh
 #
+aws s3 ls
+
+#
 export KOPS_STATE_STORE='s3://k8s-kops-state-store'
 
 # Get first cluster description
 kops get cluster \
   -o json | \
-    jq
+    jq -r '.[].metadata.name'
 
 # Good pattern [cluster-name]-[region].k8s.local
 export KOPS_CLUSTER_NAME='dev01-us-east-1.k8s.local' # prod01, stg01, uat01

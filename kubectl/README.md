@@ -140,7 +140,7 @@ kubectl get secret [secret-name] \
 kubectl get secret [secret-name] \
   --template={{.data.bar}} \
   -n [namespace] | \
-    base64 --decode
+    base64 -d
 
 # Delete
 kubectl delete secret [secret-name] \
@@ -244,13 +244,16 @@ kubectl exec [pod-name] \
 kubectl get pods | \
   grep [text] | \
     awk '{print $1}' | \
-      xargs -I {} kubectl exec {} -- printenv | \
+      xargs -I '{}' kubectl exec '{}' -- printenv | \
         grep [ENV_NAME]
 ```
 
 #### Delete Problematic Pod
 
 ```sh
+#
+kubens my-app
+
 #
 kubectl delete pod $(kubectl get pods | awk '$3 == "CrashLoopBackOff" {print $1}')
 
@@ -460,7 +463,10 @@ EOF
 #### Force Delete
 
 ```sh
-kubectl delete pod [name] --grace-period=0 --force -n [namespace]
+kubectl delete pod [name] \
+  --grace-period=0 \
+  --force \
+  -n [namespace]
 ```
 
 #### Terminating
@@ -484,15 +490,40 @@ kubectl delete pvc [name] \
 
 ```sh
 #
-kubectl patch pod [name] \
-  -p '{"metadata":{"finalizers":[]}}' \
-  -n [namespace]
+kubens my-app
 
 #
-kubectl delete pod [name] \
-  -n [namespace] \
+export KUBERNETES_PODE_NAME=''
+
+#
+kubectl get pod "$KUBERNETES_PODE_NAME" \
+  -o json | \
+    jq -r '.metadata.finalizers'
+
+#
+kubectl patch pod "$KUBERNETES_PODE_NAME" \
+  -p '{"metadata":{"finalizers":[]}}'
+
+#
+kubectl delete pod "$KUBERNETES_PODE_NAME" \
   --grace-period 0 \
   --force
+```
+
+###### Remove Terminating Pods
+
+```sh
+kubectl get pods -A | \
+  awk '{if ($4=="Terminating") print "kubectl delete pod " $2 " -n " $1 " --force --grace-period=0 ";}' | \
+    sh
+```
+
+###### Remove Error Pods
+
+```sh
+kubectl get pods -A | \
+  awk '{if ($4=="Error") print "kubectl delete pod " $2 " -n " $1 " --force --grace-period=0 ";}' | \
+    sh
 ```
 
 ##### Namespace
@@ -514,13 +545,20 @@ for ns in `kubectl get ns --field-selector status.phase=Terminating -o name | cu
 kubectl proxy
 
 #
-kubectl get ns [namespace] -o json | \
+kubectl get ns --field-selector status.phase=Terminating | \
+  awk '{print $1}'
+
+#
+export KUBERNETES_NAMESPACE=''
+
+#
+kubectl get ns "$KUBERNETES_NAMESPACE" -o json | \
   jq '.spec.finalizers=[]' | \
   curl \
     -X PUT \
     -H 'Content-Type: application/json' \
     --data @- \
-    http://localhost:8001/api/v1/namespaces/[namespace]/finalize
+    "http://localhost:8001/api/v1/namespaces/${KUBERNETES_NAMESPACE}/finalize"
 ```
 
 <!--
@@ -558,9 +596,11 @@ kubectl create secret generic $*-values-b64 \
 <!-- ###
 
 ```sh
-kubectl get configmap coredns -n kube-system -o yaml | \
-  sed 's/loop/#loop/g' | \
-  kubectl apply -f -
+kubectl get cm coredns \
+  -n kube-system \
+  -o yaml | \
+    sed 's/loop/#loop/g' | \
+      kubectl apply -f -
 ``` -->
 
 #### Certificate from Namespace
@@ -569,7 +609,7 @@ kubectl get configmap coredns -n kube-system -o yaml | \
 kubectl get secret $(kubectl get secrets -n [namespace] | grep 'default-token' | cut -d ' ' -f 1) \
   -o jsonpath='{.data.ca\.crt}' \
   -n [namespace] | \
-    base64 --decode > ./ca.crt
+    base64 -d > ./ca.crt
 ```
 
 #### Config
@@ -621,6 +661,18 @@ kubectl rollout restart deployment \
 ``` -->
 
 ### Issues
+
+### Wrap Columns
+
+```log
+error: error parsing STDIN: error converting YAML to JSON: yaml: line [n]: could not find expected ':'
+```
+
+Use `base64` with `-w 0`:
+
+```sh
+$(echo -n $MY_VAR | base64 -w 0)
+```
 
 ### Skip Insecure TLS Verify
 

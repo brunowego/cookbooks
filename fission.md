@@ -42,12 +42,12 @@ nslookup controller.fission.svc.cluster.local 10.96.0.10
 kubectl get secret influxdb \
   -o jsonpath='{.data.username}' \
   -n fission | \
-    base64 --decode; echo
+    base64 -d; echo
 
 kubectl get secret influxdb \
   -o jsonpath='{.data.password}' \
   -n fission | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

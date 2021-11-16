@@ -101,7 +101,7 @@ nslookup "nextcloud.${DOMAIN}" 10.96.0.10
 kubectl get secret nextcloud \
   -o jsonpath='{.data.nextcloud-password}' \
   -n nextcloud | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

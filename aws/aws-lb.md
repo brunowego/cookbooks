@@ -1,6 +1,7 @@
 # AWS Load Balancing (LB)
 
-## Glossary
+## Terms
 
 - Application Load Balancing (ALB)
+- Classic Load Balancer (CLB)
 - Network Load Balancing (NLB)

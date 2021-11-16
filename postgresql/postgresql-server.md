@@ -241,7 +241,7 @@ nslookup postgresql.postgresql.svc.cluster.local 10.96.0.10
 kubectl get secret postgresql \
   -o jsonpath='{.data.postgresql-password}' \
   -n postgresql | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete

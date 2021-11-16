@@ -242,7 +242,7 @@ helm repo update
 ```sh
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 kubectl create ns atlantis-system

@@ -62,7 +62,7 @@ kubectl get secret \
   --namespace redis-cluster \
   redis-cluster \
   -o jsonpath='{.data.redis-password}' | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Testing

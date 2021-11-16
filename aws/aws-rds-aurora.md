@@ -25,6 +25,7 @@ https://www.linkedin.com/learning/aws-certified-solutions-architect-associate-sa
 
 ## Guides
 
+- [Aurora DB instance classes](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.html)
 - [Aurora MySQL version numbers and special versions](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.Versions.html)
 - [Database engine updates for Amazon Aurora MySQL 2.0](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.20Updates.html)
 - [Supported features in Amazon Aurora by AWS Region and Aurora DB engine](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraFeaturesRegionsDBEngines.grids.html)

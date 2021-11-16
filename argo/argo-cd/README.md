@@ -96,7 +96,7 @@ kubectl create ns argo-system
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install argo-cd argo/argo-cd \
@@ -344,7 +344,31 @@ kubectl patch configmap argocd-cm \
 
 > More details about Status Badge [here](https://argoproj.github.io/argo-cd/user-guide/status-badge/).
 
-<!-- ### Issues -->
+### Issues
+
+#### Known Hosts Key Mismatch
+
+```log
+FATA[0001] rpc error: code = InvalidArgument desc = application spec is invalid: InvalidSpecError: repository not accessible: ssh: handshake failed: knownhosts: key mismatch
+```
+
+- [ArgoCD Repositories](https://argocd.example.com/settings/repos)
+- [GitHub's SSH key fingerprints](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints)
+
+```sh
+#
+ssh-keyscan -H github.com
+
+#
+kubectl get cm argocd-ssh-known-hosts-cm \
+  -n argocd \
+  -o jsonpath='{.data.ssh_known_hosts}'
+```
+
+1. "Settings" in Menu
+2. "Repository certificates" in Cards
+3. Click "Add SSH Known Hosts" Button
+   - SSH Known hosts data: `github.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=`
 
 <!-- ####
 
@@ -354,7 +378,7 @@ FATA[0000] rpc error: code = Unknown desc = account 'admin' does not have apiKey
 
 ```sh
 export TOKEN_SECRET="$(kubectl get serviceaccount -n argo-system argocd -o jsonpath='{.secrets[0].name}')"
-export TOKEN="$(kubectl get secret -n argo-system $TOKEN_SECRET -o jsonpath='{.data.token}' | base64 --decode)"
+export TOKEN="$(kubectl get secret -n argo-system $TOKEN_SECRET -o jsonpath='{.data.token}' | base64 -d)"
 
 export ARGOCD_AUTH_TOKEN=''
 ``` -->

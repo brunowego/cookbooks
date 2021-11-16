@@ -116,7 +116,7 @@ nslookup dashboard.example.com 10.96.0.10
 kubectl get secret $(kubectl get serviceaccount kubernetes-dashboard -n kube-system -o jsonpath='{.secrets[0].name}') \
   -n kube-system \
   -o jsonpath='{.data.token}' | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete
@@ -143,7 +143,7 @@ kubectl get secret \
   -n kubernetes-dashboard \
   -o json | \
     jq -r '.items[0].data["token"]' | \
-      base64 --decode; echo
+      base64 -d; echo
 ```
 
 ## Proxy

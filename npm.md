@@ -68,6 +68,15 @@ npm config set init-license 'COPYRIGHT'
 
 #
 npm pack
+
+#
+npm root -g
+
+#
+npm list -g
+
+#
+npm get prefix
 ```
 
 ### Tips

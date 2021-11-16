@@ -40,7 +40,7 @@ kubectl create ns cattle-system
 
 #
 export KUBERNETES_IP='127.0.0.1'
-export DOMAIN='${KUBERNETES_IP}.nip.io'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install rancher rancher-latest/rancher \
@@ -74,7 +74,7 @@ kubectl logs \
 kubectl get secret bootstrap-secret \
   -o jsonpath='{.data.bootstrapPassword}' \
   -n cattle-system | \
-    base64 --decode; echo
+    base64 -d; echo
 ```
 
 ### Delete
