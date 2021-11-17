@@ -59,3 +59,76 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 docker rm -f moodle-mysql moodle
 docker volume rm moodle-mysql-data
 ```
+
+## Helm
+
+### References
+
+- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/moodle)
+
+### Repository
+
+```sh
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
+helm repo update
+```
+
+### Install
+
+```sh
+#
+kubectl create ns moodle
+
+#
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
+
+#
+helm install moodle bitnami/moodle \
+  --namespace moodle \
+  --version 11.2.1 \
+  -f <(cat << EOF
+replicaCount: 1
+
+ingress:
+  enabled: true
+  hostname: moodle.$DOMAIN
+EOF
+)
+```
+
+### Status
+
+```sh
+kubectl rollout status deploy/moodle \
+  -n moodle
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app.kubernetes.io/name=moodle' \
+  -n moodle \
+  -f
+```
+
+### Secret
+
+```sh
+kubectl get secret moodle \
+  -o jsonpath='{.data.wordpress-password}' \
+  -n moodle | \
+    base64 -d; echo
+```
+
+### Delete
+
+```sh
+helm uninstall moodle \
+  -n moodle
+
+kubectl delete ns moodle \
+  --grace-period=0 \
+  --force
+```

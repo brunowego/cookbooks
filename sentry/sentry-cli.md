@@ -31,13 +31,6 @@ curl \
     sudo chmod +x /usr/local/bin/sentry-cli
 ```
 
-### Environments
-
-```sh
-#
-export SENTRY_LOG_LEVEL='debug'
-```
-
 ### Commands
 
 ```sh
@@ -79,6 +72,13 @@ sentry-cli releases list
 ```
 
 ### Tips
+
+#### Debug Log Level
+
+```sh
+#
+export SENTRY_LOG_LEVEL='debug'
+```
 
 #### Send Event
 

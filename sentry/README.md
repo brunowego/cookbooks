@@ -101,7 +101,7 @@ curl -iX OPTIONS "$SENTRY_DSN" | \
 
 ### References
 
-- [Helm Repository](https://github.com/sentry-kubernetes/charts/tree/develop/sentry)
+- [Helm Chart](https://github.com/sentry-kubernetes/charts/tree/develop/sentry)
 
 ### Repository
 

@@ -283,7 +283,7 @@ export JAVA_OPTS_APPEND='-Dkeycloak.profile.feature.upload_scripts=enabled -Dkey
 
 ### References
 
-- [Helm Repository](https://github.com/bitnami/charts/tree/master/bitnami/keycloak)
+- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/keycloak)
 
 ### Repository
 

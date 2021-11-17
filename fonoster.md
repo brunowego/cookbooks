@@ -32,7 +32,7 @@ fonoster config:init
 
 ### References
 
-- [Helm Repository](https://github.com/fonoster/fonoster/tree/main/.helm)
+- [Helm Chart](https://github.com/fonoster/fonoster/tree/main/.helm)
 
 ### Repository
 

@@ -91,7 +91,7 @@ infracost diff \
 
 ### References
 
-- [Helm Repository](https://github.com/infracost/helm-charts/tree/master/charts/cloud-pricing-api)
+- [Helm Chart](https://github.com/infracost/helm-charts/tree/master/charts/cloud-pricing-api)
 
 ### Repository
 

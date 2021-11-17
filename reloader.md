@@ -9,7 +9,7 @@
 
 ### References
 
-- [Helm Repository](https://github.com/stakater/Reloader/tree/master/deployments/kubernetes/chart/reloader)
+- [Helm Chart](https://github.com/stakater/Reloader/tree/master/deployments/kubernetes/chart/reloader)
 
 ### Repository
 

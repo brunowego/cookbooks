@@ -21,3 +21,10 @@ You can’t copy “README.md” because it has the same name as another item on
 ```
 
 TODO
+
+### Bird Process
+
+```sh
+#
+brctl log -w --shorten
+```
