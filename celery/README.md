@@ -1,12 +1,10 @@
 # Celery
 
-<!--
-Django
--->
-
 ## References
 
-- [Application](https://docs.celeryproject.org/en/stable/userguide/application.html)
+- [Code Repository](https://github.com/celery/celery)
+- [Main Website](https://docs.celeryproject.org/en/stable/index.html)
+- [Docs / User Guide](https://docs.celeryproject.org/en/stable/userguide/index.html)
 
 ## CLI
 
@@ -14,15 +12,29 @@ Django
 
 #### pip
 
+List of [Transports and Backends](https://github.com/celery/celery#transports-and-backends).
+
 ```sh
-pip3 install -U celery[sqs]
+#
+pip3 install -U celery
 ```
 
-<!-- ### Usage
+### Commands
 
 ```sh
-celery -A evalai worker --loglevel=INFO
-``` -->
+celery --help
+celery worker --help
+```
+
+### Usage
+
+```sh
+#
+celery \
+  -A [app] \
+  worker \
+    -l INFO
+```
 
 ## Library
 
@@ -35,8 +47,8 @@ celery -A evalai worker --loglevel=INFO
 
 ```sh
 # As user dependency
-pip3 install -U celery[sqs]
+pip3 install -U celery[amqp]
 
 # As project dependency
-echo 'celery[sqs]==5.0.1' >> ./requirements.txt
+echo 'celery[amqp]==5.0.1' >> ./requirements.txt
 ```

@@ -8,7 +8,7 @@
 
 ### References
 
-- [Values](https://github.com/spotinst/spotinst-kubernetes-helm-charts/tree/master/charts/spotinst-kubernetes-cluster-controller#values)
+- [Helm Chart](https://github.com/spotinst/spotinst-kubernetes-helm-charts/tree/master/charts/spotinst-kubernetes-cluster-controller)
 
 ### Repository
 

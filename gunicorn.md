@@ -7,14 +7,7 @@
 #### pip
 
 ```sh
-# As user dependency
 pip3 install -U gunicorn
-
-# As project dependency
-cat << EOF >> ./requirements.txt
-gunicorn==20.0.4
-eventlet==0.29.1
-EOF
 ```
 
 ### Commands
@@ -26,6 +19,7 @@ gunicorn -h
 <!-- ### Usage
 
 ```sh
+#
 gunicorn
 ``` -->
 
@@ -43,6 +37,19 @@ TODO
 --worker-tmp-dir=
 --worker-tmp-dir /dev/shm
 -->
+
+## Library
+
+### Installation
+
+#### pip
+
+```sh
+cat << EOF >> ./requirements.txt
+gunicorn==20.0.4
+eventlet==0.29.1
+EOF
+```
 
 ## Dockerfile
 

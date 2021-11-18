@@ -50,6 +50,7 @@ kops update cluster \
 
 #
 kops rolling-update cluster \
+  --instance-group "$KOPS_NODE_NAME" \
   --yes
 
 #

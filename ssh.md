@@ -24,6 +24,32 @@ ssh \
 
 ### Tips
 
+#### Costumers Key
+
+```sh
+#
+export COSTUMER_NAME=''
+export COSTUMER_ID_RSA_FILE="$HOME/.ssh/costumers/$COSTUMER_NAME/id_rsa"
+
+#
+mkdir -p ~/.ssh/costumers/"${COSTUMER_NAME}"
+
+#
+cat << EOF > "$COSTUMER_ID_RSA_FILE"
+-----BEGIN OPENSSH PRIVATE KEY-----
+
+-----END OPENSSH PRIVATE KEY-----
+EOF
+
+#
+chmod 0400 "$COSTUMER_ID_RSA_FILE"
+
+#
+ssh \
+  -i "$COSTUMER_ID_RSA_FILE" \
+  [username]@[ip]
+```
+
 #### Remove Host Key
 
 ```sh

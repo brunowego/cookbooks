@@ -28,7 +28,7 @@ yum check-update
 sudo yum -y install screen
 ```
 
-### Configuration
+<!-- ### Configuration
 
 ```sh
 cat << EOF > ~/.screenrc
@@ -43,7 +43,7 @@ vbell off
 
 term st-256color
 EOF
-```
+``` -->
 
 ### Commands
 

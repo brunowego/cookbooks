@@ -241,14 +241,13 @@ helm repo update
 
 ```sh
 #
+kubectl create ns atlantis-system
+
+#
 export KUBERNETES_IP='127.0.0.1'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-kubectl create ns atlantis-system
-```
-
-```sh
 helm install atlantis runatlantis/atlantis \
   --namespace atlantis-system \
   --version 3.14.0 \

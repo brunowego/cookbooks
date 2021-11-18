@@ -7,7 +7,7 @@
 ## Installation
 
 ```sh
-helm plugin install https://github.com/databus23/helm-diff
+helm plugin install 'https://github.com/databus23/helm-diff'
 ```
 
 ## Commands
@@ -15,3 +15,10 @@ helm plugin install https://github.com/databus23/helm-diff
 ```sh
 helm diff -h
 ```
+
+<!-- ## Usage
+
+```sh
+#
+
+``` -->

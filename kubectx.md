@@ -22,9 +22,8 @@ sudo curl \
 sudo curl \
   -L 'https://raw.githubusercontent.com/ahmetb/kubectx/master/kubens' \
   -o /usr/local/bin/kubens
-```
 
-```sh
+#
 sudo chmod +x /usr/local/bin/{kubectx,kubens}
 ```
 

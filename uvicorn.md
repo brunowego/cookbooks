@@ -26,4 +26,11 @@ uvicorn --help
 ```sh
 #
 uvicorn main:app --reload
+
+#
+uvicorn \
+  main:app \
+  --port 3000 \
+  --reload \
+  --log-level info
 ```

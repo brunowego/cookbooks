@@ -6,32 +6,6 @@ c5.2xlarge 10 gb
 
 ## Tips
 
-### Delete Node
-
-```sh
-#
-aws s3 ls
-
-#
-export KOPS_STATE_STORE='s3://k8s-kops-state-store'
-
-# Get first cluster description
-kops get cluster \
-  -o json | \
-    jq -r '.[].metadata.name'
-
-# Good pattern [cluster-name]-[region].k8s.local
-export KOPS_CLUSTER_NAME='dev01-us-east-1.k8s.local' # prod01, stg01, uat01
-
-#
-kubectl drain [name] \
-  --ignore-daemonsets \
-  --delete-local-data
-
-#
-kubectl delete node [name]
-```
-
 ### Edit Instance Group (IG)
 
 ```sh
@@ -70,6 +44,8 @@ kops update cluster \
 
 #
 kops rolling-update cluster \
+  --instance-group "$KOPS_NODE_NAME" \
+  --validation-timeout 30m \
   --yes
 
 #
@@ -83,9 +59,49 @@ c5a.2xlarge
 t3.large
 -->
 
-<!-- ## Issues
+### Delete Node
 
-###
+```sh
+#
+aws s3 ls
+
+#
+export KOPS_STATE_STORE='s3://k8s-kops-state-store'
+
+# Get first cluster description
+kops get cluster \
+  -o json | \
+    jq -r '.[].metadata.name'
+
+# Good pattern [cluster-name]-[region].k8s.local
+export KOPS_CLUSTER_NAME='dev01-us-east-1.k8s.local' # prod01, stg01, uat01
+
+#
+kubectl drain [name] \
+  --ignore-daemonsets \
+  --delete-local-data
+
+#
+kubectl delete node [name]
+```
+
+## Issues
+
+### Force Rolling Update
+
+```log
+No rolling-update required.
+```
+
+```sh
+kops rolling-update cluster \
+  --force \
+  --instance-group "$KOPS_NODE_NAME" \
+  --validation-timeout 30m \
+  --yes
+```
+
+<!-- ###
 
 ```log
 Machine	i-04e6420c3615e1b15		machine "i-04e6420c3615e1b15" has not yet joined cluster

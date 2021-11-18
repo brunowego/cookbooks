@@ -22,6 +22,10 @@ https://itnext.io/aws-windows-kubernetes-nodes-with-kops-a2accb9ea483
 - [Addons](https://kops.sigs.k8s.io/addons/)
 - [asdf kOps](/asdf/asdf-kops.md)
 
+## Guides
+
+- [Compatibility Matrix](https://kops.sigs.k8s.io/welcome/releases/#compatibility-matrix)
+
 ## Content
 
 - [Manage Kubernetes Clusters on AWS Using Kops](https://aws.amazon.com/blogs/compute/kubernetes-clusters-aws-kops/)
@@ -140,6 +144,42 @@ kubectl delete deploy nginx
 -->
 
 ### Tips
+
+#### Edit Cluster
+
+```sh
+#
+export KOPS_STATE_STORE='s3://k8s-kops-state-store'
+
+#
+kops get cluster
+
+# Good pattern [cluster-name]-[region].k8s.local
+export KOPS_CLUSTER_NAME='dev01-us-east-1.k8s.local' # prod01, stg01, uat01
+
+#
+kops edit cluster
+
+#
+kops update cluster \
+  --admin \
+  --yes
+
+#
+kops get ig
+
+#
+export KOPS_NODE_NAME='nodes-us-east-1a'
+
+#
+kops rolling-update cluster \
+  --instance-group "$KOPS_NODE_NAME" \
+  --validation-timeout 30m \
+  --yes
+
+#
+kops validate cluster
+```
 
 <!-- #### Delete Cluster
 
@@ -282,6 +322,51 @@ kops get cluster
 ```
 
 ### Issues
+
+#### Machine Not Joined
+
+```log
+I1118 18:00:25.978172   52998 instancegroups.go:508] Cluster did not pass validation, will retry in "30s": machine "i-0033d6e99df674321" has not yet joined cluster.
+```
+
+```sh
+#
+export KOPS_STATE_STORE='s3://k8s-kops-state-store'
+
+#
+kops get cluster \
+  -o json | \
+    jq -r '.[].metadata.name'
+
+#
+export KOPS_CLUSTER_NAME='dev01-us-east-1.k8s.local'
+
+#
+kops get ig
+
+#
+export KOPS_NODE_NAME='nodes-us-east-1a'
+
+#
+kops rolling-update cluster \
+  --cloudonly \
+  --instance-group "$KOPS_NODE_NAME" \
+  --validation-timeout 30m \
+  --yes
+```
+
+#### Validation Timeout
+
+```log
+master not healthy after update, stopping rolling-update: "error validating cluster after terminating instance: cluster did not validate within a duration of \"15m0s\""
+```
+
+```sh
+kops rolling-update cluster \
+  --instance-group "$KOPS_NODE_NAME" \
+  --validation-timeout 30m \
+  --yes
+```
 
 #### Load Balancer Issue
 

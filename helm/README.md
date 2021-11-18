@@ -101,6 +101,32 @@ pkill helm
 
 ### Tips
 
+#### Upgrade Helm
+
+```sh
+#
+helm list -n '[namespace]'
+
+#
+helm history '[name]' \
+  -n '[namespace]'
+
+#
+helm get values '[name]' \
+  -n '[namespace]'
+
+#
+helm upgrade atlantis runatlantis/atlantis \
+  -n atlantis \
+  --version 3.13.0 \
+  --dry-run \
+  -f ./values.yaml
+
+#
+helm rollback '[name]' '[revision]' \
+  -n '[namespace]'
+```
+
 #### Show Values of a Chart
 
 ```sh
@@ -120,7 +146,7 @@ helm pull sentry/sentry \
 
 ```sh
 helm get values '[name]' \
-  --namespace '[namespace]'
+  -n '[namespace]'
 ```
 
 <!-- ####

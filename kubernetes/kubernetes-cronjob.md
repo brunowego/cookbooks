@@ -15,13 +15,19 @@ kubectl get cronjobs \
 kubectl get jobs \
   -n [namespace] \
   -o wide
+```
 
+## Tips
+
+### Suspend Cronjob
+
+```sh
 #
 kubectl patch cronjobs [name] \
   -p '{"spec":{"suspend":true}}' \
   -n [namespace]
 
-#
+# Batch Action
 kubectl get cronjobs | \
   grep False | \
     cut -d ' ' -f 1 | \

@@ -9,7 +9,7 @@
 
 ### Installation
 
-#### PIP
+#### pip
 
 ```sh
 pip install newrelic
@@ -30,9 +30,14 @@ newrelic-admin help
 export NEW_RELIC_LICENSE_KEY=''
 export NEW_RELIC_CONFIG_FILE='./newrelic.ini'
 
+#
 newrelic-admin generate-config "$NEW_RELIC_LICENSE_KEY" "$NEW_RELIC_CONFIG_FILE"
 newrelic-admin validate-config "$NEW_RELIC_CONFIG_FILE"
 ```
+
+<!--
+# license_key = REDACTED
+-->
 
 #### Using Environment Variables
 
@@ -63,3 +68,7 @@ newrelic-admin run-program /usr/local/bin/gunicorn wsgi:app \
   --bind 0.0.0.0:8000 \
   --chdir /app
 ```
+
+## Library
+
+TODO

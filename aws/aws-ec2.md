@@ -169,3 +169,15 @@ aws ec2 describe-instances \
             sort | \
               uniq
 -->
+
+### Tips
+
+#### Change Ubuntu EC2 Password
+
+```sh
+#
+sudo su -
+
+#
+passwd ubuntu
+```

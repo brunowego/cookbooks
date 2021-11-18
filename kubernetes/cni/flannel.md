@@ -31,7 +31,9 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/a70459be008450
 - [Troubleshooting](https://github.com/coreos/flannel/blob/master/Documentation/troubleshooting.md#vagrant)
 
 ```sh
-kubectl patch daemonsets -n kube-system kube-flannel-ds-amd64 -p '{"spec":{"template":{"spec":{"containers":[{"name":"kube-flannel","args":["--ip-masq","--kube-subnet-mgr","--iface=eth1"]}]}}}}'
+kubectl patch daemonsets \
+  -n kube-system kube-flannel-ds-amd64 \
+  -p '{"spec":{"template":{"spec":{"containers":[{"name":"kube-flannel","args":["--ip-masq","--kube-subnet-mgr","--iface=eth1"]}]}}}}'
 ```
 
 ### Delete
