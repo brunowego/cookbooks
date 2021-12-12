@@ -43,17 +43,17 @@ docker run -it --rm \
 brew install yamllint
 ```
 
+#### pip
+
+```sh
+pip3 install -U yamllint
+```
+
 #### APT
 
 ```sh
 sudo apt update
 sudo apt -y install yamllint
-```
-
-#### pip
-
-```sh
-pip3 install -U yamllint
 ```
 
 ### Commands
@@ -68,9 +68,8 @@ yamllint -h
 cat << EOF > ./.yamllint.yaml
 ---
 extends: default
-ignore: |
-  **/node_modules/**/*
-  **/vendor/**
+# ignore: |
+#   **/node_modules/**/*
 rules:
   indentation:
     spaces: 2
@@ -96,7 +95,9 @@ yamllint ./
 #### [Disable with comments](https://yamllint.readthedocs.io/en/stable/disable_with_comments.html)
 
 ```yaml
-# yamllint disable-line rule:truthy
+---
+# yamllint disable rule:line-length
+# yamllint disable-line rule:line-length
 # ...
 ```
 

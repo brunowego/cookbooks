@@ -23,15 +23,7 @@ brew install spotctl
 spotctl -h
 ```
 
-### Environments
-
-```sh
-#
-export SPOTINST_TOKEN='[token]'
-export SPOTINST_ACCOUNT='[account]'
-```
-
-### Usage
+### Configuration
 
 ```sh
 #
@@ -41,7 +33,9 @@ spotctl configure
 cat ~/.spotinst/credentials
 ```
 
-<!--
+### Usage
+
+```sh
 #
 spotctl ocean quickstart cluster kubernetes aws
--->
+```

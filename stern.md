@@ -72,46 +72,46 @@ stern -h
 
 ```sh
 #
-kubens '<namespace>'
+kubens '[ns-name]'
 
 #
-stern '<pod-prefix>'
+stern '[pod-prefix]'
 
 #
 stern .
 stern -s 1m .
 
 #
-stern '<pod-prefix>' \
-  -n '<namespace>'
+stern '[pod-prefix]' \
+  -n '[namespace]'
 
 #
-stern '<pod-prefix>' -A
+stern '[pod-prefix]' -A
 
 #
-stern '<pod-prefix>' \
-  -n '<namespace>' \
+stern '[pod-prefix]' \
+  -n '[namespace]' \
   -o raw
 
-stern '<pod-prefix>' \
+stern '[pod-prefix]' \
   -o json | \
     jq .
 
 #
-stern '<pod-prefix>' \
+stern '[pod-prefix]' \
   --tail 1
 
 #
-stern '<pod-prefix>' \
-  -n '<namespace>' \
-  -c '<container>'
+stern '[pod-prefix]' \
+  -n '[namespace]' \
+  -c '[container]'
 
 #
-stern '<pod-prefix>' \
-  -l '<key>=<value>'
+stern '[pod-prefix]' \
+  -l '[key]=[value]'
 
 #
-stern '<pod-prefix>' \
+stern '[pod-prefix]' \
   -s 15m \
   -t
 

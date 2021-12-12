@@ -1,11 +1,40 @@
 # Prettier
 
 <!--
-https://github.com/temporalio/temporaldotio/blob/main/.prettierignore
-https://github.com/temporalio/temporaldotio/blob/main/.prettierrc
+"format": "prettier --write src",
 -->
 
 ## CLI
+
+### Commands
+
+```sh
+npx prettier -h
+```
+
+### Configuration
+
+```sh
+#
+cat << EOF > ./.prettierignore
+/package*.json
+EOF
+
+#
+cat << EOF > ./.prettierrc
+{
+  "semi": false,
+  "singleQuote": true
+}
+EOF
+```
+
+### Usage
+
+```sh
+#
+npx prettier ./
+```
 
 ### Installation
 
@@ -15,19 +44,17 @@ https://github.com/temporalio/temporaldotio/blob/main/.prettierrc
 brew install prettier
 ```
 
-### Commands
+#### NPM
 
 ```sh
-prettier -h
+npm install prettier --save-dev
 ```
-
-### Next
-
-- [lint-staged](/lint-staged.md)
 
 ### Tips
 
 #### Visual Studio Code
+
+**Dependencies:** Prettier CLI.
 
 ```sh
 code --install-extension esbenp.prettier-vscode
@@ -36,3 +63,7 @@ code --install-extension esbenp.prettier-vscode
 <!--
 "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
 -->
+
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- markdownlint-disable MD010 -->

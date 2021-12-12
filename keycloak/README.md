@@ -55,7 +55,7 @@ Red Hat WildFly (JBoss Application Server)
 - [Okta](https://okta.com/)
 - [ORY Hydra](ory-hydra.md)
 
-## Utils
+## Tools
 
 - [Keycloak Realm Generator & Importer (kci)](/kci.md)
 
@@ -173,44 +173,92 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 echo -e '[INFO]\thttp://127.0.0.1:8080/auth/admin/'
 ```
 
-### Testing
+### Configuration
 
 ```sh
 #
-curl -i 'http://localhost:8080/auth/realms/master'
+export KEYCLOAK_SERVER='http://127.0.0.1:8080/auth'
+export KEYCLOAK_REALM='master'
+export KEYCLOAK_CLIENT_ID='admin-cli'
+export KEYCLOAK_USER='admin'
+export KEYCLOAK_PASSWORD='admin'
+
+#
+./kcadm.sh config credentials \
+  --server "$KEYCLOAK_SERVER" \
+  --realm "$KEYCLOAK_REALM" \
+  --client "$KEYCLOAK_CLIENT_ID" \
+  --user "$KEYCLOAK_USER" \
+  --password "$KEYCLOAK_PASSWORD"
+
+#
+./kcadm.sh create realms \
+  -s realm=test \
+  -s enabled=true
+
+#
+./kcadm.sh create clients \
+  -r test \
+  -s clientId=test \
+  -s directAccessGrantsEnabled=true \
+  -s publicClient=true \
+  -s 'webOrigins=["*"]' \
+  -s 'redirectUris=["*"]'
+
+#
+./kcadm.sh create users \
+  -r test \
+  -s username=test \
+  -s enabled=true
+
+#
+./kcadm.sh set-password \
+  -r test \
+  --username test \
+  --new-password test
+```
+
+### Testing
+
+**Dependencies:** [cURL](/curl.md), [Python3](/python/python3.md) and [jq](/jq.md)
+
+```sh
+#
+curl -i 'http://localhost:8080/auth/realms/test'
 
 # OpenID Endpoint Configuration
-curl -s 'http://localhost:8080/auth/realms/master/.well-known/openid-configuration' | \
+curl -s 'http://localhost:8080/auth/realms/test/.well-known/openid-configuration' | \
   python -m json.tool
 
 # SAML 2.0 Identity Provider Metadata
-curl -s 'http://127.0.0.1:8080/auth/realms/master/protocol/saml/descriptor'
+curl -s 'http://127.0.0.1:8080/auth/realms/test/protocol/saml/descriptor'
 
 # Authorization
-echo -e '[INFO]\thttp://localhost:8080/auth/realms/master/protocol/openid-connect/auth?scope=openid&response_type=code&client_id=demo&redirect_uri=https://oauth.pstmn.io/v1/callback'
+echo -e '[INFO]\thttp://localhost:8080/auth/realms/test/protocol/openid-connect/auth?scope=openid&response_type=code&client_id=test&redirect_uri=https://oauth.pstmn.io/v1/callback'
 
 # User Info
 export KEYCLOAK_ACCESS_TOKEN=$(curl -s \
   -d 'grant_type=password' \
-  -d 'username=admin' \
-  -d 'password=admin' \
-  -d 'client_id=demo' \
+  -d 'username=test' \
+  -d 'password=test' \
+  -d 'client_id=test' \
   -X POST \
-  'http://localhost:8080/auth/realms/master/protocol/openid-connect/token' | \
+  'http://localhost:8080/auth/realms/test/protocol/openid-connect/token' | \
     jq -r '.access_token' \
-)
+); echo "$KEYCLOAK_ACCESS_TOKEN"
 
 curl \
   -s \
   -H "Authorization: Bearer ${KEYCLOAK_ACCESS_TOKEN}" \
-  'http://localhost:8080/auth/realms/master/protocol/openid-connect/userinfo' | \
+  'http://localhost:8080/auth/realms/test/protocol/openid-connect/userinfo' | \
     jq .
 
 # End Session
-# http://localhost:8080/auth/realms/master/protocol/openid-connect/logout
+# http://localhost:8080/auth/realms/test/protocol/openid-connect/logout
 
 # JSON Web Key Set (JWKS) URI
-curl -s 'http://localhost:8080/auth/realms/master/protocol/openid-connect/certs' | python -m json.tool
+curl -s 'http://localhost:8080/auth/realms/test/protocol/openid-connect/certs' | \
+  python -m json.tool
 ```
 
 <!--
@@ -514,6 +562,14 @@ kubectl delete ns keycloak \
 ```
 
 ## Issues
+
+<!-- ###
+
+```log
+{"error":"unauthorized_client","error_description":"Client secret not provided in request"}%
+```
+
+TODO -->
 
 ### Logout Error
 

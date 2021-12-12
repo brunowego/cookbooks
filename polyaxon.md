@@ -36,6 +36,7 @@ kubectl create ns polyaxon
 ```sh
 #
 kubectl port-forward \
+  --address 0.0.0.0 \
   -n kubeflow \
   svc/ml-pipeline-ui \
   8080:80
@@ -163,7 +164,7 @@ kubectl get secret polyaxon-rabbitmq-ha \
     base64 -d; echo
 ```
 
-###
+### Port Forward
 
 ```sh
 kubectl port-forward \

@@ -26,7 +26,7 @@ axios.get('https://google.com')
   .then(response => console.log(response))
   .catch(error => console.log(error));
 
-// hit ^D
+// hit: Ctrl + D
 
 .exit
 ```

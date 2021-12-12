@@ -48,6 +48,7 @@ kubectl wait \
 #
 kubectl port-forward \
   svc/argocd-server \
+  --address 0.0.0.0 \
   -n argo-system \
   8443:443
 

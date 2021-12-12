@@ -157,10 +157,20 @@ kubectl delete deployment http-https-echo \
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install locust
+```
+
 #### pip
 
 ```sh
+# As user dependency
 pip3 install -U locust
+
+# As project dependency
+echo 'locust==2.5.0' >> ./requirements.txt
 ```
 
 ### Commands
@@ -200,3 +210,13 @@ locust \
   -u 1000 \
   -r 50
 ```
+
+### Issues
+
+#### CPU Usage
+
+```log
+CPU usage above 90%! This may constrain your throughput and may even give inconsistent response time measurements! See https://docs.locust.io/en/stable/running-locust-distributed.html for how to distribute the load over multiple CPU cores or machines
+```
+
+TODO

@@ -143,7 +143,9 @@ spec:
 EOF
 
 #
-kubectl port-forward svc/traefik-dashboard 9000 \
+kubectl port-forward svc/traefik-dashboard \
+  --address 0.0.0.0 \
+  9000:9000 \
   -n traefik-system
 ```
 

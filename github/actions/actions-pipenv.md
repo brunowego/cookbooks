@@ -7,6 +7,7 @@
 ## Workflow
 
 ```yaml
+---
 name: Run Python Tests
 
 on: ['pull_request', 'push']

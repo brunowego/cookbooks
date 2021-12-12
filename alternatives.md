@@ -51,7 +51,7 @@ https://gitguardian.com/
 
 - [1Password](/1password.md)
 - [Bitwarden](/bitwarden.md)
-- LastPass
+- [LastPass](https://lastpass.com/)
 
 ## Application Performance Management (APM)
 
@@ -153,3 +153,24 @@ https://gitguardian.com/
 - Jinja2
 - Nunjucks
 - Pug (p.k.a. Jade)
+
+## Linux Distribution Package Managers
+
+- [Advanced Packaging Tool (APT)](/apt.md)
+- [Alpine Package Keeper (APK)](/apk.md)
+- [Yellowdog Updater, Modified (YUM)](/yum.md)
+- [ZYpp (a.k.a zypper)](/zypp.md)
+
+## Draw
+
+- [diagrams.net](https://diagrams.net/)
+- [Lucidchart](https://lucidchart.com/)
+- [Mural](https://mural.co/)
+- [OmniGraffle](https://omnigroup.com/omnigraffle)
+- [Whimsical](https://whimsical.com/)
+- [XMind](https://xmind.net/)
+
+## Stock Photos
+
+- [Pexels](https://pexels.com/)
+- [Unsplash](https://unsplash.com/)

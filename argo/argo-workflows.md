@@ -35,6 +35,7 @@ kubectl wait \
 #
 kubectl port-forward \
   deployment/argo-server \
+  --address 0.0.0.0 \
   -n argo \
   2746:2746
 

@@ -34,48 +34,70 @@ https://linkedin.com/learning/typescript-for-node-js-developers/
 
 ### Installation
 
-#### Yarn
-
-```sh
-yarn add typescript -D
-```
-
-### Usage
-
-```sh
-npx tsc -h
-```
-
-## CLI
-
-### Installation
-
-#### Homebrew
-
-```sh
-brew install typescript
-```
-
 #### NPM
 
 ```sh
-npm install typescript -g
+npm install typescript --save-dev
 ```
 
 ### Commands
 
 ```sh
-tsc -h
+npx tsc -h
 ```
 
 ### Usage
 
 ```sh
-# Initialize
-tsc --init
+#
+npx tsc --init
 ```
 
+<!--
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "out",
+    "declaration": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+  },
+}
+-->
+
 ### Tips
+
+#### Using with lint-staged
+
+Add `'**/*.ts?(x)': () => 'npm run build-types'` to `.lintstagedrc.mjs`.
+
+**Refer:** `package.json`
+
+```json
+{
+  "scripts": {
+    // ...
+    "build:types": "tsc --noEmit --pretty"
+    // "typecheck": "tsc --noEmit --pretty"
+  }
+}
+```
+
+```sh
+#
+echo '*.tsbuildinfo' >> ./.gitignore
+```
 
 #### EditorConfig
 

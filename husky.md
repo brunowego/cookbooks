@@ -5,26 +5,48 @@
 - [pre-commit](/pre-commit.md)
 - git-hooks
 
+## Links
+
+- [Code Repository](https://github.com/typicode/husky)
+- [Main Website](https://typicode.github.io/husky/#/)
+
 ## CLI
+
+### Commands
+
+```sh
+npx husky
+```
 
 ### Installation
 
 #### NPM
 
 ```sh
-npm install husky -D
+npm install husky --save-dev
 ```
 
-### Configuration
+### Bootstrap
 
-```sh
-cat << EOF > ./.huskyrc.json
+**Refer:** `package.json`
+
+```json
 {
-  "hooks": {
-    "pre-commit": "npm run pre-commit",
-    "pre-push": "npm run pre-push",
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+  "scripts": {
+    // ...
+    "prepare": "husky install"
   }
 }
-EOF
+```
+
+```sh
+#
+npm run prepare
+```
+
+### Usage
+
+```sh
+#
+npx husky add ./.husky/pre-commit 'npm test'
 ```

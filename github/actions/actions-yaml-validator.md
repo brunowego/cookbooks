@@ -3,6 +3,7 @@
 ## Workflow
 
 ```yaml
+---
 name: YAML Validator
 
 on:

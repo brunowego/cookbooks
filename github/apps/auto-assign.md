@@ -1,4 +1,4 @@
-# GitHub App auto-assign
+# GitHub App Auto Assign
 
 ## Links
 

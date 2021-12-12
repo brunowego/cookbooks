@@ -23,6 +23,11 @@ https://symfony.com/doc/current/configuration.html#configuration-secrets
 
 - [Symfony Documentation](https://symfony.com/doc/current/index.html#gsc.tab=0)
 
+### Dependencies
+
+- [PHP](/php/README.md)
+- [Composer](/composer.md)
+
 ### Installation
 
 #### Unix-like
@@ -52,6 +57,8 @@ symfony -h
 ```
 
 ### Usage
+
+**Note:** Available versions: `lts`, `stable`, `next`, or `previous`.
 
 ```sh
 #
@@ -93,10 +100,20 @@ php bin/console doctrine:migrations:migrate
 Add [text rules](/gitattributes.md#text)
 
 ```sh
-echo 'symfony.lock export-ignore' >> ./.gitattributes
+echo '/symfony.lock export-ignore' >> ./.gitattributes
 ```
 
 ### Issues
+
+#### Missing Requirements
+
+```log
+Could not find package symfony/skeleton with version 5.4.* in a version installable using your PHP version, PHP extensions and Composer version.
+```
+
+```sh
+symfony check:requirements
+```
 
 #### Missing Symfony CMD
 

@@ -19,7 +19,10 @@ pylint --help
 ### Requirements
 
 ```sh
-# Development
+# As user dependency
+pip3 install -U pylint
+
+# As project dependency
 echo 'pylint==2.6.0' >> ./requirements-dev.txt
 ```
 

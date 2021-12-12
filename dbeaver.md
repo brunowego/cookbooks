@@ -107,7 +107,10 @@ https://gist.github.com/felipou/50b60309f99b70b1e28f6d22da5d8e61
 
 #### Client
 
-- Finder - Go to Folder: `Command` + `Shift` + `G`
+1. Edit Connection
+2. Local Client:
+3. Add Home
+4. Copy MySQL Path
 
 ```sh
 # MySQL
@@ -117,10 +120,7 @@ echo $(dirname $(which mysqldump))
 echo $(dirname $(which pg_dump))
 ```
 
-1. Edit Connection
-2. Local Client:
-3. Add Home
-4. Copy MySQL Path
+- Finder - Go to Folder: `Command` + `Shift` + `G`
 
 #### Kerberos
 

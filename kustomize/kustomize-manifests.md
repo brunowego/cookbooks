@@ -74,6 +74,7 @@ EOF
 <!-- ##
 
 ```yaml
+---
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
@@ -99,16 +100,7 @@ configurations:
 ./kustomizeconfig.yaml
 
 ```yaml
-nameReference:
-- kind: Issuer
-  group: cert-manager.io
-  fieldSpecs:
-  - kind: Certificate
-    group: cert-manager.io
-    path: spec/issuerRef/name
-
 varReference:
-- kind: Certificate
-  group: cert-manager.io
-  path: spec/commonName
+- kind: ExternalSecret
+  path: spec/data[]/key
 ``` -->

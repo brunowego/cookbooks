@@ -1,5 +1,11 @@
 # mail
 
+<!--
+name+group@provider.com
+invoices@provider.com
+security@provider.com
+-->
+
 ## Tools
 
 - [Mailtrap.io](https://mailtrap.io/)

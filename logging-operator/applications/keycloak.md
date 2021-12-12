@@ -4,7 +4,7 @@
 
 ```sh
 #
-kubens [namespace]
+kubens '[ns-name]'
 
 #
 kubectl get clusteroutput loki-output \

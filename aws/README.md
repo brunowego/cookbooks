@@ -15,7 +15,6 @@ https://linkedin.com/learning/paths/prepare-for-aws-sysops-administrator-certifi
 
 https://app.pluralsight.com/search/?q=aws%20certified&type=path&m_sort=relevance&query_id=4364f4ab-a8d6-4533-9340-582d9d55d691&source=user_typed
 
-
 https://app.pluralsight.com/library/courses/aws-system-admin-fundamentals/table-of-contents
 
 https://linkedin.com/learning/aws-essential-training-for-developers/what-is-the-best-way-to-use-aws
@@ -47,6 +46,10 @@ Transactions Per Second (TPS)
 - [Regions and Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
 - [AWS Exam Scheduling](https://www.certmetrics.com/amazon/candidate/exam_scheduling.aspx)
 - [Awesome List](https://github.com/donnemartin/awesome-aws)
+- AWS Console
+  - [Globally](https://console.aws.amazon.com/)
+  - [US West 2](https://us-west-2.console.aws.amazon.com/)
+- [AWS Post-Event Summaries](https://aws.amazon.com/premiumsupport/technology/pes/)
 
 ## Links
 

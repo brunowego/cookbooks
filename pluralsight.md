@@ -6,7 +6,7 @@
 - [Most Popular](https://app.pluralsight.com/search/?m_sort=popularity&source=flyout)
 - [Skill Assessments](https://app.pluralsight.com/skilliq)
 - [History](https://app.pluralsight.com/library/history)
-- [Download](https://www.pluralsight.com/product/downloads)
+- [Download](https://pluralsight.com/product/downloads)
 
 ## App
 

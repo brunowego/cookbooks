@@ -34,8 +34,6 @@ certbot -h
 
 ### Examples
 
-####
-
 ```sh
 sudo certbot --apache --renew-by-default -d datalayer.io
 ```

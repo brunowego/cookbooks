@@ -46,5 +46,5 @@ Warning  FailedAttachVolume  34s   attachdetach-controller  Multi-Attach error f
 ```
 
 1. Access [Elastic Block Store - Volumes](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Volumes:sort=desc:createTime)
-2. Filter by `tag:kubernetes.io/created-for/pvc/name : `
+2. Filter by `tag:kubernetes.io/created-for/pvc/name :`
 3. Select -> Actions -> Detach Volume

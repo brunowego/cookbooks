@@ -2,8 +2,7 @@
 
 ## Links
 
-- [npm trends](https://www.npmtrends.com/git-hooks-vs-husky-vs-pre-commit)
-- [Releases](https://nodejs.org/en/about/releases/)
+- [npm trends](https://npmtrends.com/git-hooks-vs-husky-vs-pre-commit)
 
 ## CLI
 
@@ -101,14 +100,10 @@ find ./ -name node_modules -exec touch {}/.nosync \;
 
 ```sh
 # Globally
-cat << EOF >> ~/.npmrc
-save-prefix = ~
-EOF
+echo 'save-prefix = ~' >> ~/.npmrc
 
 # Locally
-cat << EOF >> ./.npmrc
-save-prefix = ~
-EOF
+echo 'save-prefix = ~' >> ./.npmrc
 ```
 
 #### Update Only Package Lock
@@ -168,8 +163,8 @@ Add [text rules](/gitattributes.md#text)
 
 ```sh
 cat << EOF >> ./.gitattributes
-package-lock.json -diff
-package-lock.json linguist-generated=true
+/package-lock.json -diff
+/package-lock.json linguist-generated=true
 EOF
 ```
 

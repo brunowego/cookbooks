@@ -77,6 +77,7 @@ asdf plugin-add [name]
 
 # List Plugin
 asdf plugin-list
+asdf plugin-list-all
 
 # Update Plugin
 asdf plugin-update --all

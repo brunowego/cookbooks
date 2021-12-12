@@ -7,6 +7,7 @@
 ## Workflow
 
 ```yaml
+---
 name: GitHub Actions Workflow with Composer cache
 
 on: [push]

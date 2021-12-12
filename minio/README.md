@@ -22,7 +22,7 @@ https://github.com/jsa4000/Observable-Distributed-System/blob/7601330d7cba153285
 
 ### References
 
-- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/minio#parameters)
+- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/minio)
 
 ### Dependencies
 

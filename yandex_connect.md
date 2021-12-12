@@ -2,9 +2,17 @@
 
 **Keywords:** Russian, Mail
 
-## References
+## Links
+
+- [Mail](https://mail.yandex.com/)
+- [Profile](https://passport.yandex.com/profile)
+- [Domains](https://admin.yandex.ru/domains)
+- [Webmaster](https://webmaster.yandex.com/)
+
+## Guides
 
 - [Configure IMAP-based client](https://yandex.com/support/mail/mail-clients.html#imap)
+- [Spark - Can’t Connect to a Yandex Account](https://support.readdle.com/spark/troubleshooting/cant-connect-to-a-yandex-account)
 
 ## Docs
 
@@ -23,14 +31,9 @@
 2. Add -> Add a person
 3. New employee
 
-<!-- ### Change Name
-
-https://passport.yandex.com/profile
--->
-
 ### Configure IMAP-based client
 
 | Mail | Server | Protection | Port |
 | --- | --- | --- | --- |
-| Incoming | imap.yandex.com | SSL | 993 |
-| Outgoing | smtp.yandex.com | SSL | 465 |
+| Incoming | `imap.yandex.com` | SSL/TLS | 993 |
+| Outgoing | `smtp.yandex.com` | SSL/TLS | 465 |

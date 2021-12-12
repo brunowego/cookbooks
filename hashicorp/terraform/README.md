@@ -255,7 +255,7 @@ terraform state list
 #
 terraform apply \
   -target '[state]' \
-  -var-file "./.terraform/vars/terraform-$(terraform workspace show).tfvars"
+  -var-file "./vars/terraform-$(terraform workspace show).tfvars"
 ```
 
 #### Destroy Specific State
@@ -267,14 +267,24 @@ terraform state list
 #
 terraform destroy \
   -target '[state]' \
-  -var-file "./.terraform/vars/terraform-$(terraform workspace show).tfvars"
+  -var-file "./vars/terraform-$(terraform workspace show).tfvars"
 ```
 
-<!-- #### Import
+#### Remove Specific State
 
 ```sh
-terraform import
-``` -->
+terraform state rm '[state]'
+```
+
+#### Import
+
+**Docs:** [Import Command](https://www.terraform.io/docs/cli/commands/import.html#example-import-into-resource).
+
+```sh
+terraform import \
+  -var-file "./vars/terraform-$(terraform workspace show).tfvars" \
+  '[addr]' [id]
+```
 
 <!-- #### Login/Logout
 
@@ -315,8 +325,13 @@ export TF_VAR_amap='{ foo = "bar", baz = "qux" }'
 terraform graph
 
 #
-terraform graph | dot -Tpng > graph.png
-terraform graph | dot -Tsvg > graph.svg
+terraform graph | \
+  dot -Tpng \
+    > graph.png
+
+terraform graph | \
+  dot -Tsvg \
+    > graph.svg
 ```
 
 #### Visual Studio Code
@@ -339,6 +354,14 @@ https://www.youtube.com/watch?v=uFaMUS6Z9fI
 -->
 
 ### Issues
+
+<!-- ####
+
+```log
+Error: rpc error: code = InvalidArgument desc = existing repository spec is different; use upsert flag to force update
+```
+
+TODO -->
 
 #### Final Snapshot Identifier
 

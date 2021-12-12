@@ -74,7 +74,7 @@ mkdir -p "$HOME/.config/Code/User"
 ln -s "$HOME/Library/Application Support/Code/User/settings.json" "$HOME/.config/Code/User/settings.json"
 
 # Git Ignore Global
-cat << EOF >> ~/.gitignore_global
+cat << EOF >> ./.gitignore
 /**/.settings
 /**/.vscode
 EOF
@@ -106,6 +106,34 @@ code --disable-extension [extension]
 ```
 
 ### Tips
+
+#### Recommendations
+
+```sh
+cat << EOF > ./.vscode/extensions.json
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "mikestead.dotenv",
+    "graphql.vscode-graphql",
+    "esbenp.prettier-vscode",
+    "prisma.prisma",
+    "wix.vscode-import-cost",
+    "formulahendry.auto-close-tag",
+    "bradlc.vscode-tailwindcss",
+    "pkief.material-icon-theme"
+  ]
+}
+EOF
+```
+
+<!-- #### Settings
+
+```sh
+cat << EOF > ./.vscode/settings.json
+
+EOF
+``` -->
 
 #### Unsaved Files
 

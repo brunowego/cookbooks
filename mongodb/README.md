@@ -13,7 +13,7 @@ https://linkedin.com/learning/learning-mongodb/
 
 ### References
 
-- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/mongodb#parameters)
+- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/mongodb)
 
 ### Repository
 
@@ -114,6 +114,7 @@ docker volume rm \
 ### Manifest
 
 ```yaml
+---
 version: '3'
 
 services:

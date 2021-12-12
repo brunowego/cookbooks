@@ -2,6 +2,7 @@
 
 <!--
 https://github.com/infracost/infracost-atlantis
+https://github.com/marketplace/actions/infracost
 -->
 
 **Keywords:** FinOps
@@ -10,6 +11,10 @@ https://github.com/infracost/infracost-atlantis
 
 - [Code Repository](https://github.com/infracost/infracost)
 - [Main Website](https://infracost.io/)
+
+## Docs
+
+- [CI/CD Integrations](https://infracost.io/docs/integrations/cicd)
 
 ## Guides
 

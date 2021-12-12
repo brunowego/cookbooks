@@ -36,6 +36,10 @@ https://www.javatpoint.com/shell-script-parameters
 : "${BACKEND_URL:?BACKEND_URL not set in environment}"
 ```
 
+<!--
+MY_ENV is referenced but not assigned. shellcheck (2154)
+-->
+
 ### History Expansion
 
 ```sh

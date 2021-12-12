@@ -75,7 +75,7 @@ sudo curl -o ${HIVE_HOME}/lib/postgresql-9.4-1201.jdbc4.jar https://jdbc.postgre
 ```
 
 ```sh
-psql -U postgres -c "CREATE USER 'hive' WITH PASSWORD 'hive'"
+psql -U postgres -c "CREATE USER hive WITH PASSWORD 'hive'"
 psql -U postgres -c "CREATE DATABASE 'metastore' WITH OWNER 'hive'"
 psql -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE 'metastore' TO 'hive'"
 ```

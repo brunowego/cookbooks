@@ -8,6 +8,8 @@ https://github.com/k6io/docs/blob/edb534e78340799a7082544c79cdc644f88e369e/src/d
 
 https://github.com/k6io/operator
 https://k6.io/blog/running-distributed-tests-on-k8s/
+
+HTML Report
 -->
 
 **Keywords:** Benchmark
@@ -71,6 +73,8 @@ npm install -D @types/k6 typescript
 #
 mkdir -p ./test/stress
 ```
+
+**Refer:** `package.json`
 
 ```json
 {

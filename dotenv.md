@@ -14,7 +14,7 @@ DB_USERNAME filetype:env
 
 ```sh
 #
-export $(sed 's/[[:blank:]]//g; /^#/d' .env | xargs)
+export $(sed 's/[[:blank:]]//g; /^#/d' ./.env | xargs)
 ```
 
 ### Git ignore

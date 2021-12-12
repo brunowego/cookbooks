@@ -4,6 +4,10 @@
 OutOfSync -> Check HPA/Replicas
 -->
 
+## Links
+
+- [Code Repository](https://github.com/clowdhaus/argo-cd-action)
+
 ## Guides
 
 - [Kustomize](https://argoproj.github.io/argo-cd/user-guide/kustomize/)
@@ -27,6 +31,7 @@ TODO
 <!-- ### Using Kubernetes Manifests
 
 ```yaml
+---
 name: GitOps
 
 on:
@@ -53,6 +58,7 @@ jobs:
 <!-- ### Using Helm
 
 ```yaml
+---
 name: GitOps
 
 on:
@@ -105,3 +111,11 @@ jobs:
     kubectl rollout restart deployment/my-app-web
     kubectl rollout restart deployment/my-app-worker
 ``` -->
+
+### Issues
+
+####
+
+```log
+Error: System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter ''using: node16' is not supported, use 'docker' or 'node12' instead.')
+```

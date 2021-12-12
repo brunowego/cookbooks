@@ -7,6 +7,7 @@
 ## Workflow
 
 ```yaml
+---
 name: Continuous Integration
 
 on:

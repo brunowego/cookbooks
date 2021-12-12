@@ -133,6 +133,7 @@ default-logging-fluentbit-jl2hc fluent-bit [2021/09/10 13:11:26] [error] [output
 ```
 
 ```yaml
+---
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: Logging
 metadata:

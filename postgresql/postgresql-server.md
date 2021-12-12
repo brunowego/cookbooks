@@ -187,7 +187,7 @@ docker volume rm postgresql-data
 
 ### References
 
-- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/postgresql#parameters)
+- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
 
 ### Repository
 
@@ -199,10 +199,10 @@ helm repo update
 ### Install
 
 ```sh
+#
 kubectl create ns postgresql
-```
 
-```sh
+#
 helm install postgresql bitnami/postgresql \
   --namespace postgresql \
   --version 10.7.1 \
@@ -226,13 +226,6 @@ kubectl logs \
   -l 'app.kubernetes.io/name=postgresql' \
   -n postgresql \
   -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 postgresql.postgresql.svc.cluster.local +short
-nslookup postgresql.postgresql.svc.cluster.local 10.96.0.10
 ```
 
 ### Secret

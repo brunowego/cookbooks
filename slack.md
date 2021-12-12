@@ -1,5 +1,9 @@
 # Slack
 
+## Links
+
+- [Status Page](https://status.slack.com/)
+
 ## App
 
 ### Installation
@@ -8,6 +12,12 @@
 
 ```sh
 brew install --cask slack
+```
+
+#### MAS
+
+```sh
+mas install 803453959
 ```
 
 #### APT

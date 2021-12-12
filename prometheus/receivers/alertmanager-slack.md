@@ -9,7 +9,7 @@
 kubectl get alertmanagerconfig -A
 
 #
-kubens my-app
+kubens '[ns-name]'
 
 #
 export SLACK_WEBHOOK='https://hooks.slack.com/services/[]/[]/[]'

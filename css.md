@@ -7,14 +7,22 @@ https://linkedin.com/learning/advanced-css-media-queries/media-queries-aren-t-ju
 
 ## References
 
-- [Aspect Ratio](https://www.w3schools.com/howto/howto_css_aspect_ratio.asp)
+- [Aspect Ratio](https://w3schools.com/howto/howto_css_aspect_ratio.asp)
 - [Emulate borders with inset box shadows](https://makandracards.com/makandra/12019-css-emulate-borders-with-inset-box-shadows)
 - [Color Blender](https://meyerweb.com/eric/tools/color-blend/#:::hex)
-- [CSS Beautifier](https://www.freeformatter.com/css-beautifier.html)
+- [CSS Beautifier](https://freeformatter.com/css-beautifier.html)
+
+## Tools
+
+- [uiGradients](https://uigradients.com/)
 
 <!-- https://bennettfeely.com/clippy/ -->
 
-##
+## Guides
+
+- [Learn CSS](https://web.dev/learn/css/)
+
+## Methodologies
 
 - ITCSS
 - BEM

@@ -128,6 +128,14 @@ jq '."files.associations".".secrets" |= "dotenv"' "$HOME/.config/Code/User/setti
 
 ### Issues
 
+<!-- ####
+
+```log
+Error: Parameter token or opts.auth is required
+```
+
+TODO -->
+
 #### Missing Artifact Cache
 
 ```log
@@ -172,6 +180,7 @@ Warning: the environment variable LANG is not set!
 ```
 
 ```yaml
+---
 jobs:
   test:
     steps:

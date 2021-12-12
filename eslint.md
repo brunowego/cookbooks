@@ -1,8 +1,41 @@
 # ESLint
 
+<!--
+"lint": "set TIMING=1 && yarn lint:web && yarn lint:wcl && yarn lint:db && yarn lint:api",
+"lint:api": "eslint src/api --cache -c .eslintrc.api.js",
+"lint:db": "eslint src/db --cache -c .eslintrc.db.js",
+"lint:wcl": "eslint src/wcl --cache -c .eslintrc.wcl.js",
+"lint:web": "eslint src/web --cache -c .eslintrc.web.js && eslint src/pages --cache -c .eslintrc.web.js",
+-->
+
+<!--
+{
+  "eslint.validate": [
+    "html",
+    "vue",
+    "javascript"
+  ]
+}
+-->
+
 ## CLI
 
-### Installation
+### Usage
+
+```sh
+npx eslint -h
+```
+
+<!-- ### Configuration
+
+```sh
+#
+cat << EOF > ./.eslintignore
+/.git
+EOF
+``` -->
+
+<!-- ### Installation
 
 #### Homebrew
 
@@ -20,17 +53,18 @@ npm install eslint @matchlayer/eslint-config-base -D
 
 ```sh
 yarn add eslint @matchlayer/eslint-config-base -D
-```
+``` -->
 
-### Commands
+<!-- ### Commands
 
 ```sh
 eslint -h
-```
+``` -->
 
-### Configuration
+<!-- ### Configuration
 
 ```sh
+#
 cat << EOF > .eslintrc.json
 {
   "root": true,
@@ -42,13 +76,11 @@ cat << EOF > .eslintrc.json
 }
 
 EOF
-```
+``` -->
 
-```sh
-echo '/node_modules' > ./.eslintignore
-```
+<!-- **Refer:** `package.json` -->
 
-```json
+<!-- ```json
 {
   "scripts": {
     "lint": "eslint ./"
@@ -58,9 +90,9 @@ echo '/node_modules' > ./.eslintignore
 
 ```sh
 sort-package-json
-```
+``` -->
 
-#### Overrides
+<!-- #### Overrides
 
 ```json
 {
@@ -84,15 +116,25 @@ sort-package-json
     }
   }]
 }
+``` -->
+
+<!-- ### Next
+
+- [lint-staged](/lint-staged.md) -->
+
+## Tips
+
+### Debug Mode
+
+```sh
+#
+npx eslint --debug ./
+
+#
+DEBUG=eslint:* npx eslint ./
 ```
 
-### Next
-
-- [lint-staged](/lint-staged.md)
-
-### Tips
-
-#### Visual Studio Code
+### Visual Studio Code
 
 ```sh
 code --install-extension dbaeumer.vscode-eslint

@@ -54,3 +54,13 @@ TODO -->
 helm uninstall spotinst \
   -n kube-system
 ```
+
+## Docs
+
+### Auto-scaling
+
+1. Main menu "Ocean"
+2. Submenu "Cloud Clusters"
+3. Click in the desired cluster name
+4. "Actions" Button -> "Customize Scaling"
+5. Turn on the "Auto-scaling" -> Save

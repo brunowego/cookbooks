@@ -8,7 +8,7 @@
 
 ### References
 
-- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#parameters)
+- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq)
 
 ### Repository
 
@@ -63,12 +63,17 @@ kubectl get secret rabbitmq \
     base64 -d; echo
 ```
 
-### Metrics
+### Port Forward
 
 ```sh
 #
-kubectl port-forward svc/rabbitmq -n rabbitmq 9419:9419
+kubectl port-forward svc/rabbitmq \
+  -n rabbitmq 9419:9419
+```
 
+#### Metrics
+
+```sh
 #
 echo -e '[INFO]\thttp://127.0.0.1:9419/metrics'
 ```

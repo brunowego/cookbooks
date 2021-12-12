@@ -25,7 +25,7 @@ dataeng
 ## References
 
 - [Managing Compute Resources for Containers](https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/)
-- [Release Notes](https://kubernetes.io/docs/setup/release/notes/)
+- [Releases](https://kubernetes.io/releases/)
 - [Wiki](https://en.wikipedia.org/wiki/Kubernetes)
 
 ## Guides

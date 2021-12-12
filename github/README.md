@@ -25,11 +25,19 @@ https://github.com/cla-assistant/cla-assistant
 - [GitHub social previews](https://mugshotbot.com/github)
 - [PullApprove](https://pullapprove.com/)
 
-## Links
+## Settings
 
-- [Issues / Assigned](https://github.com/issues/assigned)
 - [Settings / Theme preferences](https://github.com/settings/appearance)
+- [Notifications](https://github.com/settings/notifications)
+
+## Guides
+
+- [Customizing your organization's profile](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile)
+
+## Misc
+
 - [User Avatar](https://github.com/brunowego.png)
+- [Issues / Assigned](https://github.com/issues/assigned)
 
 ## Search
 

@@ -80,26 +80,17 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status deploy/grafana \
-  -n monitoring-system
+kubectl rollout status deploy/cilium \
+  -n kube-system
 ```
 
 ### Logs
 
 ```sh
 kubectl logs \
-  -l 'app.kubernetes.io/instance=grafana' \
-  -n monitoring-system \
+  -l 'app.kubernetes.io/instance=cilium' \
+  -n kube-system \
   -f
-```
-
-### Secret
-
-```sh
-kubectl get secret grafana \
-  -o jsonpath='{.data.admin-password}' \
-  -n monitoring-system | \
-    base64 -d; echo
 ```
 
 ### Tips
@@ -115,9 +106,27 @@ kubectl exec "$NODE1_CILIUM_POD" \
       --dport 8053/UDP
 ``` -->
 
+### Issues
+
+#### Outdated Kernel
+
+```sh
+cilium-2mcjx cilium-agent level=fatal msg="BPF NodePort services needs kernel 4.17.0 or newer." subsys=daemon
+```
+
+```sh
+#
+kubectl get nodes
+
+#
+kubectl node_shell [node-name] -- uname -r
+```
+
+**Note:** If using kOps, check the AWS AMI used by kOps Instance Group (IG).
+
 ### Delete
 
 ```sh
-helm uninstall grafana \
-  -n monitoring-system
+helm uninstall cilium \
+  -n kube-system
 ```

@@ -44,6 +44,9 @@ kubectl cert-manager help
 
 ```sh
 #
+kubens [ns-name]
+
+#
 kubectl cert-manager check api
 
 #

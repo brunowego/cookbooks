@@ -21,7 +21,7 @@ User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
 
-Sitemap: https://example.com/sitemap_index.xml
+Sitemap: https://example.com/sitemap.xml
 ```
 
 ### Application
@@ -36,4 +36,6 @@ Allow: /login
 Allow: /register
 Allow: /password
 Disallow: /
+
+Sitemap: https://example.com/sitemap.xml
 ```

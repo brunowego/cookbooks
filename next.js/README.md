@@ -1,14 +1,20 @@
 # Next.js
 
 <!--
-https://courses.leighhalliday.com/next-level-next-js
-
-https://www.youtube.com/watch?v=_VuGmykVgTg
-
-https://fireship.io/courses/react-next-firebase/deploy-firebase/
-
 https://www.youtube.com/watch?v=S1oOlKQo8CY
+https://www.youtube.com/watch?v=_VuGmykVgTg
+https://egghead.io/blog/saas-app-with-nextjs-prisma-auth0-and-stripe
 https://www.freecodecamp.org/news/how-to-use-feature-toggles-in-next-js-and-react/
+-->
+
+<!--
+const nextConfig = {
+  swcMinify: true,
+  i18n: { locales: ["ja"], defaultLocale: "ja" },
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
+}
 -->
 
 ## Links
@@ -25,6 +31,13 @@ https://www.freecodecamp.org/news/how-to-use-feature-toggles-in-next-js-and-reac
 
 - [Start developing websites like it's 2025.](https://react2025.com/#course-overview)
 - [Mastering Next.js](https://masteringnextjs.com/)
+- [TypeScript](https://nextjs.org/docs/basic-features/typescript)
+
+## Configuration
+
+- [Disabling x-powered-by](https://nextjs.org/docs/api-reference/next.config.js/disabling-x-powered-by)
+- [Trailing Slash](https://nextjs.org/docs/api-reference/next.config.js/trailing-slash)
+- [Setting a custom build directory](https://nextjs.org/docs/api-reference/next.config.js/setting-a-custom-build-directory)
 
 ## Books
 
@@ -40,11 +53,17 @@ https://www.freecodecamp.org/news/how-to-use-feature-toggles-in-next-js-and-reac
 <!--
 Examples
 
+https://github.com/bigint/party
+https://github.com/cliid/cliid.dev
+https://github.com/graphlatte/graphlatte
+https://github.com/planetscale/nextjs-planetscale-starter
+https://github.com/basetool-io/basetool
+https://github.com/sentrei/sentrei
+https://github.com/calendso/calendso/
 https://github.com/Expensify/App
 https://github.com/dwarvesf/nextjs-boilerplate
 https://github.com/vercel/virtual-event-starter-kit
 https://github.com/plutomi/plutomi
-https://github.com/basetool-io/basetool
 https://github.com/ljtechdotca/next-reddit
 https://github.com/ioofy/App
 https://github.com/axeldelafosse/expo-next-monorepo-example
@@ -57,18 +76,11 @@ https://github.com/Rowan-Paul/project-argus
 https://github.com/myriadsocial/myriad-web
 https://github.com/email2vimalraj/food-pos-app
 https://github.com/jackmerrill/snacc.chat
-https://github.com/calendso/calendso/
+https://github.com/littleeagleio/littleeagle.io
+https://github.com/tensight/tensight-app
 -->
 
 ## CLI
-
-### Installation
-
-#### NPM
-
-```sh
-npm install next@12.0.0
-```
 
 ### Commands
 
@@ -76,29 +88,42 @@ npm install next@12.0.0
 npx next -h
 ```
 
-### Configuration
-
-```sh
-# Git Ignore
-cat << EOF > ./.gitignore
-/.next
-/node_modules
-/.env
-EOF
-
-#
-touch .example.env
-```
-
 ### Bootstrap
 
 ```sh
 #
-npx -y create-next-app@latest [app-name] --ts
+npx create-next-app@latest \
+  --ts \
+  --use-npm \
+  [app-name] && \
+    "$_"
 
 #
-mkdir -p {components,hooks,lib}
+mkdir -p ./src/{components,hooks,layouts,lib,utils}
+
+#
+mv ./{pages,styles} ./src
+
+# Git Ignore
+cat << EOF > ./.gitignore
+/.next
+/node_modules
+EOF
 ```
+
+<!--
+# ESLint Ignore
+echo '/.next' >> ./.eslintignore
+-->
+
+<!--
+cat << EOF >> ./.gitignore
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+EOF
+-->
 
 ### Configuration
 
@@ -115,7 +140,9 @@ npx next telemetry disable
 ```sh
 #
 npx next dev -p 3000
+# or
 PORT=3000 npx next dev
+# or
 npm run dev
 
 #
@@ -126,6 +153,44 @@ npx next build
 ```
 
 ### Tips
+
+#### Clean Cache
+
+```json
+{
+  "scripts": {
+    "clean": "npx rimraf ./.next",
+    "predev": "npm run clean",
+    // ...
+  }
+}
+```
+
+#### Inspect
+
+Install [cross-env](/cross-env.md)
+
+```sh
+#
+sed -i "s/\(next dev\)/cross-env NODE_OPTIONS='--inspect' \1/g" ./package.json
+```
+
+#### Use EcmaScript Modules
+
+```sh
+#
+mv ./next.config.js ./next.config.mjs
+
+#
+cat << EOF > ./next.config.mjs
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+};
+
+export default nextConfig;
+EOF
+```
 
 #### Next.js Export
 

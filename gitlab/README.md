@@ -10,3 +10,13 @@ https://gitlab-learn.leapest.com/hw/app/courseware/208fa611-4cd5-4115-bb54-4f545
 - [GitLab Community Edition (CE)](/gitlab/gitlab-ce.md)
 - [GitLab Continuous Integration (CI)](/gitlab/gitlab-ci.md)
 - [GitLab Runner](/gitlab/gitlab-runner.md)
+
+<!--
+<a href="https://gitlab.com/yo/devparty/-/commits/main">
+  <img src="https://gitlab.com/yo/devparty/badges/main/pipeline.svg" alt="CI">
+</a>
+
+<a href="https://github.com/bigint/party/actions/workflows/ci.yml">
+  <img src="https://github.com/bigint/party/actions/workflows/ci.yml/badge.svg" alt="GitHub Actions">
+</a>
+-->

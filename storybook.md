@@ -101,10 +101,12 @@ npm run storybook
 
 ### Configuration
 
+**Refer:** `package.json`
+
 ```json
 {
   "scripts": {
-    "storybook": "start-storybook -p 6006",
+    "storybook:dev": "start-storybook -p 6006",
     "storybook:build": "build-storybook -o ./public/sb"
   }
 }

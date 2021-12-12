@@ -13,6 +13,10 @@
 
 ## CLI
 
+### Links
+
+- [Configuration Reference](https://cli.vuejs.org/config/)
+
 ### Installation
 
 #### NPM

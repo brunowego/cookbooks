@@ -55,7 +55,7 @@ kubectl wait \
 
 ```sh
 #
-kubens [namespace]
+kubens '[ns-name]'
 
 #
 export K8S_INGRESS_NAME=''
@@ -384,4 +384,36 @@ helm uninstall ingress-controller \
 kubectl delete ns ingress-nginx \
   --grace-period=0 \
   --force
+```
+
+## Issues
+
+### API Breaking Change
+
+```log
+error: error validating "STDIN": error validating data: [ValidationError(Ingress.spec.rules[0].http.paths[0].backend): unknown field "serviceName" in io.k8s.api.networking.v1.IngressBackend, ValidationError(Ingress.spec.rules[0].http.paths[0].backend): unknown field "servicePort" in io.k8s.api.networking.v1.IngressBackend]; if you choose to ignore these errors, turn validation off with --validate=false
+```
+
+```yaml
+---
+# apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+# ...
+spec:
+  # ...
+  rules:
+  - # ...
+    http:
+      paths:
+      - path: /
+        # backend:
+        #   serviceName: [name]
+        #   servicePort: [port]
+        pathType: Prefix
+        backend:
+          service:
+            name: [name]
+            port:
+              number: [port]
 ```

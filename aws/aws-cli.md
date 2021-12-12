@@ -139,6 +139,7 @@ An error occurred (ExpiredToken) when calling the ListBuckets operation: The pro
 ```
 
 ```sh
-#
+# First verify if you have already logged in AWS through CLI.
+# Or, if you selected the right profile:
 AWS_PROFILE=dev aws s3 ls
 ```

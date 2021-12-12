@@ -5,6 +5,18 @@ https://app.pluralsight.com/paths/skills/working-with-nodejs
 https://linkedin.com/learning/node-js-essential-training-3/learn-the-node-js-fundamentals
 -->
 
+## Links
+
+- [Code Repository](https://github.com/npm/cli)
+- [Main Website](https://npmjs.com)
+- [Community Website](https://npm.community)
+- [Releases](https://nodejs.org/en/about/releases/)
+- [Status Page](https://status.npmjs.org/)
+
+## Guides
+
+- [package.json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
+
 ## Related
 
 - [Node version management (n)](/n.md)
@@ -119,6 +131,18 @@ node
 
 ### Tips
 
+#### Engines Definition
+
+```json
+{
+  // ...
+  "engines": {
+    "node": ">=14 <15",
+    "npm": ">=6 <7"
+  }
+}
+```
+
 #### Command-line completion
 
 ```sh
@@ -137,7 +161,7 @@ code --install-extension wix.vscode-import-cost
 #### VSCode JavaScript Validate
 
 ```log
-File is a CommonJS module; it may be converted to an ES6 module.ts(80001)
+File is a CommonJS module; it may be converted to an ES6 module.ts (80001)
 ```
 
 ```sh

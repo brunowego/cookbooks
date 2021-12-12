@@ -48,7 +48,27 @@ brew services start metabase
 
 ### References
 
-- [Configuration](https://github.com/pmint93/helm-charts/tree/master/charts/metabase#configuration)
+- [Helm Chart](https://github.com/pmint93/helm-charts/tree/master/charts/metabase)
+
+### Dependencies
+
+- [PostgreSQL Server](/postgresql/postgresql-server.md#helm)
+
+```sh
+#
+kubectl proxy
+
+#
+kubectl port-forward \
+  -n postgresql \
+  svc/postgresql-headless \
+  5432:5432
+
+#
+psql -h 127.0.0.1 -U postgres -c "CREATE USER metabase WITH PASSWORD 'metabase'"
+psql -h 127.0.0.1 -U postgres -c "CREATE DATABASE metabase WITH OWNER metabase"
+psql -h 127.0.0.1 -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE metabase TO metabase"
+```
 
 ### Repository
 
@@ -70,8 +90,16 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 #
 helm install metabase pmint93/metabase \
   --namespace metabase \
-  --version 1.0.0 \
+  --version 1.3.0 \
   -f <(cat << EOF
+database:
+  type: postgres
+  host: postgresql-headless.postgresql
+  port: 5432
+  dbname: metabase
+  username: metabase
+  password: metabase
+
 ingress:
   enabled: true
   hosts:
@@ -175,9 +203,12 @@ PGPASSWORD='metabase' pg_dump \
 ### Remove
 
 ```sh
-docker rm -f metabase-postgres metabase
+docker rm -f \
+  metabase-postgres \
+  metabase
 
-docker volume rm metabase-postgres-data
+docker volume rm \
+  metabase-postgres-data
 ```
 
 ## Host
@@ -257,3 +288,15 @@ allintitle:"Metabase" site:.com "Sign in to Metabase"
    - Name: wikipedia
    - Host: http://druid-broker
    - Save
+
+## Issues
+
+### Missing `metabase_field.special_type` Field
+
+```log
+ERROR: column metabase_field.special_type does not exist Position: 122
+```
+
+Try upgrade the current version.
+
+**Issue Related:** [#15689](https://github.com/metabase/metabase/issues/15689)

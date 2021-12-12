@@ -7,16 +7,18 @@
 #### NPM
 
 ```sh
-npm install cross-env -D
+npm install cross-env --save-dev
 ```
 
 ### Configuration
 
+**Refer:** `package.json`
+
 ```json
 {
   "scripts": {
-    "start": "cross-env NODE_ENV=production node ./index.js",
-    "dev": "cross-env NODE_ENV=development nodemon ./index.js"
+    "start": "cross-env NODE_ENV='production' node ./index.js",
+    "dev": "cross-env NODE_ENV='development' nodemon ./index.js"
   }
 }
 ```

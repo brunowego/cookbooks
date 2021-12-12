@@ -1,6 +1,9 @@
 # Prisma
 
 <!--
+https://github.com/2color/real-world-grading-app
+https://github.com/notiz-dev/prisma-dbml-generator
+
 https://www.youtube.com/watch?v=aim8Mk-ETK0
 https://www.youtube.com/watch?v=-oRbc1Efz5Q
 https://www.youtube.com/watch?v=iH7VYDeokCk
@@ -22,6 +25,12 @@ https://github.com/m-abdelwahab/course-platform
 https://www.prisma.io/blog/announcing-upcoming-course-8s41wdqrlgc7
 
 Prisma Data Proxy
+
+"db:generate": "prisma generate",
+"db:push": "prisma db push",
+"db:seed": "prisma db seed",
+"db:static-data": "ts-node src/db/createStaticData && eslint --fix src/web/staticData.ts && prettier --write src/web/staticData.ts",
+"db:sync-dbs": "ts-node src/db/syncProdDevStaticData",
 -->
 
 ## Links
@@ -30,6 +39,7 @@ Prisma Data Proxy
 - [Main Website](https://prisma.io/)
 - [Prisma Data Platform](https://cloud.prisma.io/)
 - [Ask Me Anything](https://ama-prisma.vercel.app/)
+- [Example projects](https://prisma.io/docs/about/prisma/example-projects)
 
 ## Guides
 

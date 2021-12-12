@@ -6,7 +6,7 @@
 
 #### Homebrew
 
-```sh 
+```sh
 brew install magrathealabs/mlabs/icu4c@58.1
 ```
 

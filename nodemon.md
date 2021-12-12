@@ -12,6 +12,8 @@ npm install nodemon -D
 
 ### Configuration
 
+**Refer:** `package.json`
+
 ```json
 {
   "scripts": {

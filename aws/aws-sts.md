@@ -1,5 +1,9 @@
 # AWS Security Token Service (STS)
 
+## Links
+
+- [Main Website](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html)
+
 ## CLI
 
 ### Commands
@@ -11,7 +15,7 @@ aws sts help
 ### Usage
 
 ```sh
-# Security Token Service
+#
 aws \
   --output json \
   sts get-caller-identity

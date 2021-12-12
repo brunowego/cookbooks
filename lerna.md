@@ -113,6 +113,8 @@ lerna add [module-1] \
 }
 ```
 
+**Refer:** `package.json`
+
 ```json
 {
   "scripts": {

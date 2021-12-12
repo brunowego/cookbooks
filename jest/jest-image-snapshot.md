@@ -2,6 +2,8 @@
 
 ## Library
 
+**Refer:** `package.json`
+
 ```json
 {
   "scripts": {

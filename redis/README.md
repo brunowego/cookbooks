@@ -46,6 +46,24 @@ docker run -d \
   docker.io/library/redis:5.0.5-alpine3.9 -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
 ```
 
+### Testing
+
+```sh
+redis-cli \
+  -h 127.0.0.1 \
+  -p 6379 \
+  INFO | \
+    grep '^redis_version'
+
+# With auth
+redis-cli \
+  -h 127.0.0.1 \
+  -p 6379 \
+  -a redis \
+  INFO | \
+    grep '^redis_version'
+```
+
 ### Remove
 
 ```sh
@@ -176,36 +194,64 @@ SUBSCRIBE [queue_name]
 
 ### References
 
-- [Configuration](https://github.com/helm/charts/tree/master/stable/redis#configuration)
+- [Helm Repository](https://github.com/bitnami/charts/tree/master/bitnami/redis)
+
+### Repository
+
+```sh
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
+helm repo update
+```
 
 ### Install
 
 ```sh
+#
 kubectl create ns redis
-```
 
-```sh
-helm install redis stable/redis \
-  --namespace redis
+#
+helm install redis bitnami/redis \
+  --namespace redis \
+  --version 15.6.2 \
+  -f <(cat << EOF
+auth:
+  password: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
+
+master:
+  resources:
+    limits:
+      cpu: 250m
+      memory: 256Mi
+    requests:
+      cpu: 250m
+      memory: 256Mi
+
+replica:
+  resources:
+    limits:
+      cpu: 250m
+      memory: 256Mi
+    requests:
+      cpu: 250m
+      memory: 256Mi
+EOF
+)
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status statefulset/redis-master -n redis
+kubectl rollout status statefulset/redis-master \
+  -n redis
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app=redis' -n redis -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 redis-master.redis.svc.cluster.local +short
-nslookup redis-master.redis.svc.cluster.local 10.96.0.10
+kubectl logs \
+  -l 'app.kubernetes.io/instance=redis' \
+  -n redis \
+  -f
 ```
 
 ### Secret
@@ -216,6 +262,53 @@ kubectl get secret redis \
   -n redis | \
     base64 -d; echo
 ```
+
+### Testing
+
+```sh
+kubectl port-forward \
+  --address 0.0.0.0 \
+  -n redis \
+  svc/redis-headless \
+  6379:6379
+
+redis-cli \
+  -h 127.0.0.1 \
+  -p 6379 \
+  -a "$(kubectl get secret redis -o jsonpath='{.data.redis-password}' -n redis | base64 -d)" \
+  INFO | \
+    grep '^redis_version'
+```
+
+<!-- ### Ingress
+
+```sh
+#
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
+
+#
+cat << EOF | kubectl apply \
+  -n 'redis' \
+  -f -
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: redis
+spec:
+  rules:
+  - host: redis.${DOMAIN}
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: redis-headless
+            port:
+              number: 6379
+EOF
+``` -->
 
 ### Tips
 
@@ -247,3 +340,17 @@ kubectl delete ns redis \
   --grace-period=0 \
   --force
 ```
+
+## Issues
+
+### Authentication Required
+
+```sh
+[ioredis] Unhandled error event: ReplyError: NOAUTH Authentication required.
+```
+
+TODO
+
+<!--
+https://serverfault.com/questions/722803/redis-error-noauth-authentication-required
+-->

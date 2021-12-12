@@ -235,6 +235,16 @@ ldd [binary]
 antigen bundle golang
 ```
 
+### Issues
+
+#### Read-only File System
+
+```log
+go build command-line-arguments: mkdir /go: read-only file system
+```
+
+TODO
+
 ### Uninstall
 
 ```sh

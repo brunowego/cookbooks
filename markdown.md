@@ -1,6 +1,14 @@
 # Markdown
 
+## Links
+
+- [Basic Syntax](https://markdownguide.org/basic-syntax/)
+
 ## Syntax
+
+### Effects
+
+- ~~Strikethrough~~
 
 ### Tips
 

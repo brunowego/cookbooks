@@ -25,6 +25,13 @@ nosync -h
 ```sh
 # Git ignore
 echo '/**/*.nosync' >> ~/.gitignore_global
+
+#
+cat << EOF | tee -a ~/.zshrc
+
+# nosync-icloud
+alias nosync='nosync -s'
+EOF
 ```
 
 ### Usage
@@ -36,6 +43,7 @@ nosync -f ./node_modules
 nosync -f ./vendor
 nosync -f ./.venv
 nosync -f ./.terraform
+nosync -f ./bower_components
 ```
 
 ### Tips
@@ -70,16 +78,49 @@ find . -type d -name '.terraform' -exec test -f '{}/terraform.tfstate' \; -print
 find . -type d -name '.terraform' -exec test -f '{}/terraform.tfstate' \; -print | while read fname; do
   nosync -sf "$fname"
 done
+
+# For Bower
+find . -type d -name 'bower_components' -prune
+
+find . -type d -name 'bower_components' -prune | while read fname; do
+  nosync -sf "$fname"
+done
 ```
 
 #### Visual Studio Code
 
 ```sh
-# For NPM (Node.js)
-jq '."search.exclude"."**/node_modules.nosync" |= true' "$HOME/.config/Code/User/settings.json" | \
-  sponge "$HOME/.config/Code/User/settings.json"
-
-# For Composer (PHP)
-jq '."search.exclude"."**/vendor.nosync" |= true' "$HOME/.config/Code/User/settings.json" | \
+jq '."search.exclude"."**/*.nosync" |= true' "$HOME/.config/Code/User/settings.json" | \
   sponge "$HOME/.config/Code/User/settings.json"
 ```
+
+<!-- ####
+
+```sh
+find . -type d -name '*.nosync' -exec rm -fR {} \;
+``` -->
+
+#### Remove Symbolic Links
+
+```sh
+find . -type l -exec rm {} \;
+```
+
+### Issues
+
+#### Disable Recommended Protections for NPM
+
+```log
+npm WARN reify Removing non-directory [/absolute/path/to/project]
+```
+
+```sh
+echo 'force = true' >> ~/.npmrc
+```
+
+<!-- ####
+
+```sh
+find . -type d -name 'node_modules 2'
+find . -type d -name 'vendor 2'
+``` -->

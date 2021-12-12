@@ -49,7 +49,7 @@ kubectl logs \
 
 ```sh
 #
-kubens my-app
+kubens '[ns-name]'
 
 #
 kubectl get clusteroutput loki-output \

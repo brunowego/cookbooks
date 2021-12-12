@@ -88,6 +88,10 @@ helm repo index \
 helm repo add local 'http://127.0.0.1:8879/charts'
 helm repo update
 
+# Search
+helm search repo [repo-name]
+helm search repo [repo-name]/[chart-name] --versions
+
 # Install
 helm install [name] local/[name] \
   --namespace [name]
@@ -130,7 +134,7 @@ helm rollback '[name]' '[revision]' \
 #### Show Values of a Chart
 
 ```sh
-helm show values banzaicloud-stable/log-generator
+helm show values [repo-name]/[chart-name] --version [semver]
 ```
 
 #### Download Helm Chart Files
@@ -289,6 +293,7 @@ sed -i 's|extensions/v1beta1|apps/v1|g' ./lamp/templates/deployment.yaml
 Add code below to `./lamp/templates/deployment.yaml`:
 
 ```yaml
+---
 spec:
   [...]
   selector:

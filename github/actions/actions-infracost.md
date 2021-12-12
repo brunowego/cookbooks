@@ -7,9 +7,7 @@
 
 ## Workflow
 
-```yaml
-
-```
+TODO
 
 <!-- ```sh
 cat << EOF > ./infracost.yaml

@@ -17,6 +17,16 @@ kubectl top pod '[pod-name]' \
   -n '[namespace]'
 ```
 
+## Tips
+
+### Filter
+
+```sh
+kubectl grep pods [pod-name] --no-headers | \
+  awk '{print $2}' | \
+    xargs -n 1 command kubectl top pods --no-headers
+```
+
 ## Issues
 
 ### Missing Kubernetes Metrics Server

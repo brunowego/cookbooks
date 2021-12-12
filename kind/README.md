@@ -207,6 +207,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 ```
 
 ```yaml
+---
 # ...
 nodes:
 - role: control-plane

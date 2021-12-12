@@ -161,6 +161,13 @@ kubectl delete ns php-fpm --grace-period=0 --force
 
 - [FastCGI](/cgi-fcgi.md)
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -170,10 +177,59 @@ docker run -d \
   -h php-fpm \
   -p 9000:9000 \
   --name php-fpm \
+  --network workbench \
   docker.io/library/php:7.3-fpm-alpine
 
 #
 cgi-fcgi -bind -connect 127.0.0.1:9000
+```
+
+#### HTTP Server
+
+```sh
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h nginx \
+  -v nginx-conf:/etc/nginx/conf.d \
+  -p 8080:80 \
+  --name nginx \
+  --network workbench \
+  docker.io/library/nginx:1.17-alpine
+
+#
+docker exec -i nginx /bin/sh << EOSHELL
+cat << EOF > /etc/nginx/conf.d/default.conf
+upstream php-fpm {
+    server 192.168.0.233:9000;
+}
+
+server {
+    listen 80 default_server;
+    root /var/www/html;
+    index index.php index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        fastcgi_pass php-fpm;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location = /health-check {
+        access_log off;
+        default_type application/json;
+        return 200 '{"status": "ok"}';
+    }
+}
+EOF
+EOSHELL
+
+#
+docker restart nginx
 ```
 
 ### Remove

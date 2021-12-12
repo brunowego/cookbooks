@@ -54,3 +54,9 @@ aws wafv2 get-web-acl \
   --name [web-acl-name] \
   --id [web-acl-id]
 ```
+
+### Issues
+
+#### 403 Forbidden
+
+Probability blocked by WAF.

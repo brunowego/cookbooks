@@ -3,6 +3,7 @@
 <!-- ## Manifest
 
 ```yaml
+---
 apiVersion: v1
 kind: ServiceAccount
 metadata:

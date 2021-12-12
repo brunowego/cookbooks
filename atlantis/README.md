@@ -286,7 +286,10 @@ kubectl logs \
 ### Port Forward
 
 ```sh
-kubectl port-forward svc/atlantis 8080:80 \
+kubectl port-forward \
+  svc/atlantis \
+  8080:80 \
+  --address 0.0.0.0 \
   -n atlantis
 ```
 

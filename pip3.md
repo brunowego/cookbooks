@@ -32,6 +32,10 @@ sudo apk update
 sudo apk add py3-setuptools
 ```
 
+#### Chocolatey
+
+Included in [python3](/python/python3.md#chocolatey) install.
+
 ### Commands
 
 ```sh

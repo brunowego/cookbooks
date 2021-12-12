@@ -28,7 +28,7 @@ https://itnext.io/aws-windows-kubernetes-nodes-with-kops-a2accb9ea483
 
 ## Content
 
-- [Manage Kubernetes Clusters on AWS Using Kops](https://aws.amazon.com/blogs/compute/kubernetes-clusters-aws-kops/)
+- [Manage Kubernetes Clusters on AWS Using kOps](https://aws.amazon.com/blogs/compute/kubernetes-clusters-aws-kops/)
 
 ## CLI
 
@@ -40,7 +40,7 @@ https://itnext.io/aws-windows-kubernetes-nodes-with-kops-a2accb9ea483
 brew install kops
 ```
 
-#### Binary Linux
+#### Linux Binary
 
 ```sh
 sudo curl \
@@ -137,12 +137,6 @@ kops export kubecfg \
   --admin=24h
 ```
 
-<!--
-kubectl run nginx --image nginx
-kubectl port-forward nginx-[hash] 8080:80
-kubectl delete deploy nginx
--->
-
 ### Tips
 
 #### Edit Cluster
@@ -158,12 +152,19 @@ kops get cluster
 export KOPS_CLUSTER_NAME='dev01-us-east-1.k8s.local' # prod01, stg01, uat01
 
 #
+kops get \
+  --name "$KOPS_CLUSTER_NAME" \
+  -o yaml
+
+#
+aws s3 cp "$KOPS_STATE_STORE/$KOPS_CLUSTER_NAME/kops-version.txt" -; echo
+
+#
 kops edit cluster
 
 #
 kops update cluster \
-  --admin \
-  --yes
+  --admin
 
 #
 kops get ig
@@ -178,7 +179,7 @@ kops rolling-update cluster \
   --yes
 
 #
-kops validate cluster
+kops validate cluster --wait 10m
 ```
 
 <!-- #### Delete Cluster
@@ -280,15 +281,16 @@ kops get instancegroups
 kops get -o yaml # InstanceGroup name
 
 #
-kops \
-  --name "$KOPS_CLUSTER_NAME" \
-  edit instancegroup \
-    nodes-us-east-1b
+kops get ig
 
+#
+export KOPS_NODE_NAME='nodes-us-east-1a'
+
+#
 kops \
   --name "$KOPS_CLUSTER_NAME" \
   edit instancegroup \
-    nodes-us-east-1c
+    "$KOPS_NODE_NAME"
 
 #
 kops \
@@ -322,6 +324,14 @@ kops get cluster
 ```
 
 ### Issues
+
+<!-- ####
+
+```log
+InstanceGroup	nodes-us-east-1b						InstanceGroup "nodes-us-east-1b" did not have enough nodes 4 vs 16
+```
+
+TODO -->
 
 #### Machine Not Joined
 

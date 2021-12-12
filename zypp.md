@@ -1,4 +1,4 @@
-# ZYpp
+# ZYpp (a.k.a zypper)
 
 ## References
 

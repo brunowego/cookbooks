@@ -4,6 +4,11 @@
 https://matthewhoelter.com/2019/06/03/flush-and-reset-dns-cache-on-macos.html
 
 sudo spctl --master-disable
+
+https://support.apple.com/en-us/HT212551
+https://support.apple.com/en-us/HT211238
+
+Macintosh SSD
 -->
 
 ## Applications
@@ -13,6 +18,8 @@ sudo spctl --master-disable
 ## References
 
 - [How to create a bootable installer for macOS](https://support.apple.com/en-us/HT201372)
+- [How to get old versions of macOS](https://support.apple.com/en-us/HT211683)
+- [Make and receive calls on your Mac, iPad, or iPod touch](https://support.apple.com/en-us/HT209456)
 
 <!--
 https://eshop.macsales.com/guides/Mac_OS_X_Compatibility
@@ -50,6 +57,14 @@ echo '/**/.DS_Store' >> ~/.gitignore_global
    - Done
 
 ## Issues
+
+<!-- ###
+
+```log
+The operation can’t be completed because some items had to be skipped. For each item, choose File > Get Info, make sure “Locked” is deselected, and then check the Sharing & Permissions section. When you are sure the items are unlocked and not designated as Read Only or No Access, try again.
+```
+
+TODO -->
 
 ### True Tone
 

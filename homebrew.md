@@ -77,6 +77,16 @@ cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew updat
 
 ### Issues
 
+#### Missing Directory
+
+```log
+Error: /usr/local/Cellar/php/8.0.13_1 is not a directory
+```
+
+```sh
+mkdir /usr/local/Cellar/php/8.0.13_1
+```
+
 #### sbin Path
 
 ```log

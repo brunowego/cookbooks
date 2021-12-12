@@ -19,5 +19,6 @@ ncu -h
 ### Usage
 
 ```sh
+#
 ncu -u
 ```

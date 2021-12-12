@@ -4,7 +4,7 @@
 
 ```sh
 # Text
-echo '* text=auto\n' >> ./.gitattributes
+echo '/* text=auto\n' >> ./.gitattributes
 
 # Binary
 [filename] binary

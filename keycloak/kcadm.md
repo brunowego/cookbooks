@@ -1,10 +1,19 @@
 # kcadm
 
-## Kubectl
+## Links
+
+- [Code Repository](https://github.com/keycloak/keycloak/tree/main/integration/client-cli/admin-cli)
+
+## Docs
+
+- [Admin CLI](https://github.com/keycloak/keycloak-documentation/blob/main/server_admin/topics/admin-cli.adoc)
+
+<!-- ## Kubectl
 
 ```sh
 #
-kubectl create secret generic keycloak-secrets --from-env-file=./.env
+kubectl create secret generic keycloak-secrets \
+  --from-env-file=./.env
 
 #
 kubectl run -it --rm \
@@ -37,21 +46,33 @@ kubectl run -it --rm \
   }
 }' \
   keycloak
-```
+``` -->
 
 ## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
 
 ### Running
 
 ```sh
 #
 docker run -it --rm \
-  -h keycloak \
-  --env-file ./.env \
-  --entrypoint /bin/bash \
-  -w /opt/jboss/keycloak/bin \
-  --name keycloak \
-  docker.io/jboss/keycloak:13.0.1
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h kcadm \
+  -e KEYCLOAK_SERVER='http://127.0.0.1:8080/auth' \
+  -e KEYCLOAK_REALM='master' \
+  -e KEYCLOAK_CLIENT_ID='admin-cli' \
+  -e KEYCLOAK_USER='admin' \
+  -e KEYCLOAK_PASSWORD='admin' \
+  --entrypoint /opt/jboss/keycloak/bin/kcadm.sh \
+  --name kcadm \
+  --network workbench \
+  docker.io/jboss/keycloak:13.0.1 help
 ```
 
 ## CLI
@@ -60,13 +81,12 @@ docker run -it --rm \
 
 ```sh
 ./kcadm.sh help
-
-./kcadm.sh create components --help
 ```
 
 ### Usage
 
 ```sh
+#
 export KEYCLOAK_SERVER='http://127.0.0.1:8080/auth'
 export KEYCLOAK_REALM='master'
 export KEYCLOAK_CLIENT_ID='admin-cli'
@@ -90,6 +110,15 @@ cat ~/.keycloak/kcadm.config
   -s enabled=true
 
 #
+./kcadm.sh create clients \
+  -r test \
+  -s clientId=test \
+  -s directAccessGrantsEnabled=true \
+  -s publicClient=true \
+  -s 'webOrigins=["*"]' \
+  -s 'redirectUris=["*"]'
+
+#
 ./kcadm.sh create users \
   -r test \
   -s username=admin \
@@ -100,15 +129,6 @@ cat ~/.keycloak/kcadm.config
   -r test \
   --username admin \
   --new-password admin
-
-#
-./kcadm.sh create clients \
-  -r test \
-  -s clientId=test \
-  -s directAccessGrantsEnabled=true \
-  -s publicClient=true \
-  -s 'webOrigins=["*"]' \
-  -s 'redirectUris=["*"]'
 
 #
 ./kcadm.sh create components \

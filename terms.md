@@ -75,6 +75,7 @@
 - Site Reliability Engineering (SRE)
 - Software as a service (SaaS)
 - Software Development Kit (SDK)
+- Sounds Good To Me (SGTM)
 - Stock Keeping Unit (SKU)
 - System Under Test (SUT)
 - Thank God it's Friday (TGIF)

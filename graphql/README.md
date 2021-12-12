@@ -16,6 +16,11 @@ https://www.youtube.com/watch?v=E3NHd-PkLrQ
 https://www.youtube.com/watch?v=QrEOvHdH2Cg
 -->
 
+<!--
+"gql:generate": "graphql-codegen --config codegen.yml && eslint src/wcl/types.ts -c .eslintrc.wcl.js --fix && prettier --write src/wcl/types.ts && prettier --write schema.json && prettier --write src/wcl/gql/schema.graphql",
+"gql:introspection": "ts-node src/wcl/queries/introspection.ts",
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/graphql/graphql-spec)

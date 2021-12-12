@@ -37,10 +37,12 @@ sudo yum -y install composer-cli
 
 ```sh
 #
-curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+curl -s https://getcomposer.org/installer | \
+  php -- --install-dir=/usr/local/bin --filename=composer
 
 #
-# wget -O - https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+# wget -O - https://getcomposer.org/installer | \
+#   php -- --install-dir=/usr/local/bin --filename=composer
 ```
 
 #### Zypper
@@ -147,7 +149,7 @@ composer archive -f zip
 Add [text rules](/gitattributes.md#text)
 
 ```sh
-echo 'composer.lock export-ignore' >> ./.gitattributes
+echo '/composer.lock export-ignore' >> ./.gitattributes
 ```
 
 #### Command-line completion

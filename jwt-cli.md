@@ -1,28 +1,30 @@
 # jwt-cli
 
-## Installation
+## CLI
 
-### Homebrew
+### Installation
+
+#### Homebrew
 
 ```sh
 brew tap mike-engel/jwt-cli
 brew install jwt-cli
 ```
 
-### Linux Binary
+#### Linux Binary
 
 ```sh
 curl -L "https://github.com/mike-engel/jwt-cli/releases/download/$(curl -s https://api.github.com/repos/mike-engel/jwt-cli/releases/latest | grep tag_name | cut -d '"' -f 4)/jwt-linux.tar.gz" | \
   tar -xzC /usr/local/bin
 ```
 
-### Commands
+#### Commands
 
 ```sh
 jwt help
 ```
 
-### Usage
+#### Usage
 
 ```sh
 #

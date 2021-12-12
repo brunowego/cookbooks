@@ -195,11 +195,31 @@ sudo systemctl restart sshd
 Connection to [hostname] closed by remote host.
 ```
 
+##### Locally for a Specific Host
+
 ```ini
 Host [hostname]
   # ...
   TCPKeepAlive yes
   ServerAliveInterval 30
+  ServerAliveCountMax 1
+```
+
+#### Using CLI
+
+```sh
+ssh \
+  -o ServerAliveInterval=30 \
+  -o ServerAliveCountMax=1 \
+  [host]
+```
+
+##### On the Server
+
+```sh
+sudo sed -i 's/#\(TCPKeepAlive\)/\1/g' /etc/ssh/sshd_config
+sudo sed -i 's/#\(ClientAliveInterval\)/\1/g' /etc/ssh/sshd_config
+sudo sed -i 's/#\(ClientAliveCountMax\)/\1/g' /etc/ssh/sshd_config
 ```
 
 #### Bad owner or permissions

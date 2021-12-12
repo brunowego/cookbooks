@@ -10,3 +10,4 @@ https://linkedin.com/learning/paths/master-the-owasp-top-10
 ## References
 
 - [HttpOnly](https://owasp.org/www-community/HttpOnly)
+- [OWASP DevSecOps Maturity Model](https://dsomm.timo-pagel.de/)

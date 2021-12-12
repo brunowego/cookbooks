@@ -149,6 +149,21 @@ kubectl delete secret [secret-name] \
 
 ### Tips
 
+#### Delete Restarted Pods
+
+```sh
+#
+kubectl get pods -A | awk '$5>0'
+
+#
+kubens [ns-name]
+
+kubectl get pods --no-headers | \
+  awk '$4>0' | \
+    awk '{print $1}' | \
+      xargs kubectl delete pod
+```
+
 #### Context Environment Variable
 
 ```sh
@@ -252,7 +267,7 @@ kubectl get pods | \
 
 ```sh
 #
-kubens my-app
+kubens '[ns-name]'
 
 #
 kubectl delete pod $(kubectl get pods | awk '$3 == "CrashLoopBackOff" {print $1}')
@@ -490,7 +505,7 @@ kubectl delete pvc [name] \
 
 ```sh
 #
-kubens my-app
+kubens '[ns-name]'
 
 #
 export KUBERNETES_PODE_NAME=''
@@ -662,7 +677,15 @@ kubectl rollout restart deployment \
 
 ### Issues
 
-### Wrap Columns
+####
+
+```log
+Warning  FailedCreatePodSandBox  55s (x13 over 69s)  kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to start sandbox container for pod "my-app-worker-amqp-system-user-data-import-parser-7b445867xjs6": Error response from daemon: OCI runtime create failed: container_linux.go:349: starting container process caused "process_linux.go:319: getting the final child's pid from pipe caused \"EOF\"": unknown
+```
+
+TODO
+
+#### Wrap Columns
 
 ```log
 error: error parsing STDIN: error converting YAML to JSON: yaml: line [n]: could not find expected ':'
@@ -674,7 +697,7 @@ Use `base64` with `-w 0`:
 $(echo -n $MY_VAR | base64 -w 0)
 ```
 
-### Skip Insecure TLS Verify
+#### Skip Insecure TLS Verify
 
 ```log
 Unable to connect to the server: x509: certificate is valid for 10.96.0.1, 172.18.0.3, 0.0.0.0, not 192.168.0.100
@@ -768,7 +791,7 @@ kubectl patch deploy "$POD_NAME" --type='json' -p '[{"op":"remove","path":"/spec
 kubectl patch deploy "$POD_NAME" --type='json' -p '[{"op":"remove","path":"/spec/template/spec/containers/0/readinessProbe"}]'
 ```
 
-<!-- ###
+<!-- ####
 
 ```sh
 kubectl config set-cluster \

@@ -36,6 +36,20 @@ curl \
 kci -h
 ```
 
+### Configuration
+
+```sh
+#
+kci config set realm --value 'master'
+kci config set login --value 'admin'
+kci config set password --value 'admin'
+kci config set keycloak_url --value 'http://127.0.0.1:8080/auth'
+kci config set workers --value 10
+
+#
+cat ~/.kci.yaml
+```
+
 ### Usage
 
 ```sh
@@ -43,32 +57,26 @@ kci -h
 kci generate \
   --clients 10 \
   --realms 5 \
-  --target ./realms \
+  --target ./.realms \
   --users 1000
 
 #
-jq -r '.users | length' ./realms/*.json
-
-# Configuration
-kci config set realm --value 'master'
-kci config set login --value 'admin'
-kci config set password --value 'admin'
-kci config set keycloak_url --value 'http://127.0.0.1:8080/auth'
-kci config set workers --value 10
-
-# Show file config
-cat ~/.kci.yaml
+jq -r '.users | length' ./.realms/*.json
 
 #
-kci import ./realms/*.json
+kci import ./.realms/*.json
 ```
 
-<!-- ### Issues
+### Issues
 
-####
+#### Missing Access Token
 
 ```log
 missingParameter.accessToken
 ```
 
-TODO -->
+```log
+keycloak-2 keycloak 14:05:14,457 WARN  [org.keycloak.events] (default task-547) type=LOGIN_ERROR, realmId=master, clientId=admin-cli, userId=[uuid], ipAddress=[ip], error=invalid_user_credentials, auth_method=openid-connect, grant_type=password, client_auth_method=client-secret, username=admin, authSessionParentId=[id], authSessionTabId=[id]
+```
+
+Try create another user with the same rights of admin.

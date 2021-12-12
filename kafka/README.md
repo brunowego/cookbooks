@@ -64,7 +64,7 @@ queuing.payments
 
 ### References
 
-- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/kafka#parameters)
+- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/kafka)
 
 ### Repository
 

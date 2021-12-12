@@ -10,3 +10,8 @@ https://developers.google.com/search/docs/advanced/appearance/title-link
 - [Measure](https://web.dev/measure/)
 - [SEO Site Checkup](https://seositecheckup.com/)
 - [GTmetrix](https://gtmetrix.com/)
+
+## Terms
+
+- Pay per Click (PPC)
+- Social Media Optimization (SMO)

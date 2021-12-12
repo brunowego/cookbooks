@@ -509,6 +509,7 @@ antigen bundle django
 ### Manifest
 
 ```yaml
+---
 version: '3'
 
 services:

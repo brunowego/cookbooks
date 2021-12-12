@@ -4,30 +4,35 @@
 https://youtube.com/watch?v=GXhNLTZk85I
 https://youtube.com/watch?v=p2sZKAPOQXs
 
-https://linkedin.com/learning/figma-for-ux-design-2/sign-up-and-take-a-tour
-https://linkedin.com/learning/figma-handing-off-to-developers/figma-developer-handoff
-https://linkedin.com/learning/figma-working-with-clients/figma-working-with-clients
+https://www.linkedin.com/learning/search?entityType=COURSE&keywords=figma
+
+Design System
+
+https://www.figma.com/community/plugin/740556241021336678/Pattern-Hero
+https://www.figma.com/community/plugin/747228167548695118/Export-.zip
+https://www.figma.com/community/file/879853379468269007
+https://www.figma.com/community/file/903445664989818507
 -->
 
-## References
+## Links
 
+- [Downloads](https://figma.com/downloads/)
+- [Figma Mirror](https://figma.com/mirror)
+
+## Guides
+
+- [Best Practice Guides](https://www.figma.com/best-practices/guides/)
+- [Guide to Components in Figma](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-Components-in-Figma)
+- [Create and use variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants)
+- [Create dynamic designs with auto layout](https://help.figma.com/hc/en-us/articles/360040451373-Create-dynamic-designs-with-auto-layout)
 - ["The Decade of Design”: How the last 10 years transformed design’s role in tech](https://figma.com/blog/the-rise-of-ux-ui-design-a-decade-in-reflection/)
+- [Access local fonts on your computer](https://help.figma.com/hc/en-us/articles/360039956894-Access-local-fonts-on-your-computer)
+- [Guide to libraries in Figma](https://help.figma.com/hc/en-us/articles/360041051154-Guide-to-libraries-in-Figma)
 
 ## Graphic
 
 - Raster Graphic (Drawn with Pixels)
 - Vector Graphic (Drawn with Math)
-
-## Plugins
-
-- [Avatars](https://figma.com/community/plugin/739659977030056719/Avatars)
-- [Charts](https://figma.com/community/plugin/731451122947612104/Charts)
-- [Google Sheets Sync](https://figma.com/community/plugin/735770583268406934/Google-Sheets-Sync)
-- [Super Tidy](https://figma.com/community/plugin/731260060173130163/Super-Tidy)
-
-## Tools
-
-- [Figma Mirror](https://figma.com/mirror)
 
 ## App
 
@@ -38,3 +43,19 @@ https://linkedin.com/learning/figma-working-with-clients/figma-working-with-clie
 ```sh
 brew install --cask figma
 ```
+
+## Tips
+
+### Missing Fonts
+
+After install the missing font, just the "Reload Tab".
+
+## Issues
+
+### Free Limitation
+
+```log
+You've reached the free page limit. Upgrade for unlimited.
+```
+
+Import outside the team or upgrade your account.

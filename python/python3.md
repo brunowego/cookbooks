@@ -145,6 +145,12 @@ sudo apk update
 sudo apk add python3
 ```
 
+#### Chocolatey
+
+```sh
+choco install -y python3
+```
+
 #### Source
 
 ##### Dependencies

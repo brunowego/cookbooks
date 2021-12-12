@@ -16,7 +16,7 @@
 
 ```sh
 #
-kubens [namespace]
+kubens '[ns-name]'
 
 #
 cat << EOF | kubectl apply \

@@ -2,6 +2,9 @@
 
 ## CLI
 
+### Usage
+
 ```sh
+#
 kubectl get hpa
 ```

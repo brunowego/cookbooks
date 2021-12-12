@@ -51,6 +51,7 @@ kubectl get pods \
 ```sh
 #
 kubectl port-forward \
+  --address 0.0.0.0 \
   -n kubeflow \
   svc/ml-pipeline-ui \
   8080:80

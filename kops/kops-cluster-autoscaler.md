@@ -45,8 +45,7 @@ kops edit ig "$KOPS_NODE_NAME"
 
 #
 kops update cluster \
-  --admin \
-  --yes
+  --admin
 
 #
 kops rolling-update cluster \
@@ -54,5 +53,5 @@ kops rolling-update cluster \
   --yes
 
 #
-kops validate cluster
+kops validate cluster --wait 10m
 ``` -->

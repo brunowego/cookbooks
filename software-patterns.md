@@ -1,5 +1,18 @@
 # Software Patterns
 
+<!--
+Login is currently unavailable
+
+The feature you're trying to use is currently unavailable.
+
+We're doing a bit of maintenance right now and have put the site in read-only mode so that you can still access all the questions, answers, and general knowledge goodness.
+
+We'll enable all features of the site as soon as maintenance completes.
+
+XOXO,
+The Stack Exchange Team
+-->
+
 ## Tips
 
 - Send email with [no-reply@e.domain.com](mailto:no-reply@e.domain.com).
@@ -31,7 +44,10 @@ https://example.com/en/
 
 https://ny.example.com/en/
 
-https://df.example.com.br/
+https://sp.example.com.br/
+
+#
+https://status.example.com/
 
 #
 news@reply.example.com

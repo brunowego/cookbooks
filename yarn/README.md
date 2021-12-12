@@ -4,6 +4,8 @@
 
 ### Installation
 
+**Note:** Use `npx yarn` instead of install it.
+
 #### NPM
 
 ```sh
@@ -26,11 +28,11 @@ sudo apt -y install yarn
 #### YUM
 
 ```sh
+#
 curl -Ls 'https://dl.yarnpkg.com/rpm/yarn.repo' | \
   sudo tee '/etc/yum.repos.d/yarn.repo'
-```
 
-```sh
+#
 yum check-update
 sudo yum -y install yarn
 ```
@@ -51,44 +53,47 @@ echo '/node_modules' > ./.gitignore
 
 ```sh
 #
-yarn init -y; yarn
+npx yarn init -y; npx yarn
 
 #
-yarn init -yp; yarn
+npx yarn init -yp; npx yarn
 ```
 
 ### Configuration
 
 ```sh
 # Save Prefix
-yarn config set save-prefix '~'
+npx yarn config set save-prefix '~'
 
 # License
-yarn config set init-license 'MIT'
-yarn config set init-license 'UNLICENSED'
-yarn config set init-license 'COPYRIGHT'
+npx yarn config set init-license 'MIT'
+npx yarn config set init-license 'UNLICENSED'
+npx yarn config set init-license 'COPYRIGHT'
 
 # Git ignore
 echo '/yarn-error.log' >> ~/.gitignore_global
+
+#
+cat ~/.yarnrc
 ```
 
 ### Commands
 
 ```sh
-yarn -h
+npx yarn -h
 ```
 
 ### Usage
 
 ```sh
 # Nextjs
-yarn create next-app
+npx yarn create next-app
 
 #
-yarn pack
+npx yarn pack
 
 #
-yarn global bin
+npx yarn global bin
 ```
 
 ### Tips
@@ -107,8 +112,8 @@ Add [text rules](/gitattributes.md#text)
 
 ```sh
 cat << EOF >> ./.gitattributes
-yarn.lock -diff
-yarn.lock linguist-generated=true
+/yarn.lock -diff
+/yarn.lock linguist-generated=true
 EOF
 ```
 

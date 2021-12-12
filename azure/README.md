@@ -18,3 +18,9 @@ TODO
 
 https://www.youtube.com/watch?v=0eLRe5SMBPs
 -->
+
+<!--
+<a href="https://dev.azure.com/yoginth/devparty/_build?definitionId=2">
+  <img src="https://dev.azure.com/yoginth/devparty/_apis/build/status/devparty?branchName=main" alt="Azure DevOps CI">
+</a>
+-->

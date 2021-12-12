@@ -4,6 +4,12 @@
 https://gist.github.com/thomasbnt/b6f455e2c7d743b796917fa3c205f812
 -->
 
+<!--
+<a href="https://discord.gg/zxHM7uwDmk">
+  <img src="https://img.shields.io/discord/873418656405651487.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" alt="Discord">
+</a>
+-->
+
 ## Links
 
 - [Status Page](https://discordstatus.com/)

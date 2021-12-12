@@ -30,3 +30,16 @@ sudo yum -y install trash-cli
 sudo zypper refresh
 sudo zypper install -y trash-cli
 ``` -->
+
+### Commands
+
+```sh
+trash -h
+```
+
+### Usage
+
+```sh
+#
+trash [path/to/file]
+```

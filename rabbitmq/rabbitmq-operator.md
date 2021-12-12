@@ -283,19 +283,20 @@ EOF
 | --- | --- |
 | `admin` | `admin` |
 
-<!-- ```sh
+```sh
+#
+kubens '[ns-name]'
+
 #
 kubectl get secret rabbitmq-default-user \
-  -o jsonpath='{.data.username}' \
-  -n "$KUBECTL_NAMESPACE" | \
+  -o jsonpath='{.data.username}' | \
     base64 -d; echo
 
 #
 kubectl get secret rabbitmq-default-user \
-  -o jsonpath='{.data.password}' \
-  -n "$KUBECTL_NAMESPACE" | \
+  -o jsonpath='{.data.password}' | \
     base64 -d; echo
-``` -->
+```
 
 ### Ingress
 

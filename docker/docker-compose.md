@@ -2,6 +2,8 @@
 
 ## CLI
 
+**Note:** Prefer to install using [asdf-docker-compose](/asdf/asdf-docker-compose.md).
+
 ### Installation
 
 #### Darwin
@@ -79,6 +81,7 @@ Never use `./` at target bind volume.
 ### Manifest
 
 ```yaml
+---
 version: '3'
 
 x-shared: &shared

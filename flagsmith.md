@@ -1,8 +1,9 @@
 # Flagsmith
 
 <!--
-https://github.com/marketplace/actions/infracost
-https://github.com/infracost/infracost-atlantis/
+https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/
+
+https://configcat.com/
 -->
 
 **Keywords:** Feature Toggle, Feature Flag
@@ -13,15 +14,11 @@ https://github.com/infracost/infracost-atlantis/
 - [Main Website](https://flagsmith.com/)
 - [Docs](https://docs.flagsmith.com/)
 
-## Docs
-
-- [CI/CD Integrations](https://www.infracost.io/docs/integrations/cicd)
-
 ## Helm
 
 ### References
 
-- [Repo Repository](https://github.com/Flagsmith/flagsmith-charts/tree/main/charts/flagsmith)
+- [Helm Chart](https://github.com/Flagsmith/flagsmith-charts/tree/main/charts/flagsmith)
 
 ### Repository
 

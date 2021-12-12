@@ -1,5 +1,9 @@
 # YAML Ain't Markup Language (YAML)
 
+<!--
+---
+-->
+
 ## Links
 
 - [YAML Spec](https://yaml.org/spec/1.2/spec.html#id2795688)
@@ -44,6 +48,7 @@ code --install-extension redhat.vscode-yaml
 [*Documentation*](http://yaml.org/type/merge.html)
 
 ```yaml
+---
 projects:
 - &shared
   name: app-stg
@@ -58,6 +63,7 @@ projects:
 [*Documentation*](https://yaml.org/spec/1.2/spec.html#Block)
 
 ```yaml
+---
 literal: |
   some
   text

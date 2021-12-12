@@ -47,6 +47,12 @@ shellcheck
 
 ### Tips
 
+<!-- ####
+
+```sh
+# shellcheck disable=SC2081
+``` -->
+
 #### pre-commit
 
 ```yaml
@@ -64,4 +70,12 @@ repos:
 
 ```sh
 code --install-extension timonwong.shellcheck
+```
+
+### Issues
+
+####
+
+```log
+Not following: ./_/husky.sh was not specified as input (see shellcheck -x). shellcheck(SC1091)
 ```

@@ -4,7 +4,7 @@
 
 ### References
 
-- [Parameters](https://github.com/bitnami/charts/tree/master/bitnami/redis-cluster#parameters)
+- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/redis-cluster)
 
 ### Repository
 
@@ -87,6 +87,33 @@ redis-cli \
   -a '[password]' \
   -c
 ```
+
+<!-- ### Ingress
+
+```sh
+#
+export KUBERNETES_IP='127.0.0.1'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
+
+#
+cat << EOF | kubectl apply \
+  -n "$KUBECTL_NAMESPACE" \
+  -f -
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: redis
+spec:
+  rules:
+  - host: redis.${DOMAIN}
+    http:
+      paths:
+      - backend:
+          serviceName: redis-cluster-headless
+          servicePort: 6379
+        path: /
+EOF
+``` -->
 
 ### Delete
 

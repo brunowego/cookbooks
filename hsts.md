@@ -6,7 +6,7 @@
 
 ## Tips
 
-### Bypass Firefox
+### Bypass Mozilla Firefox
 
 1. Type in URL: `about:config`
 2. Accept the Rist and Continue

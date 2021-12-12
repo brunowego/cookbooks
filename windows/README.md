@@ -6,6 +6,7 @@ http://help.market.com.br/frente/index.html?permitir-ping-windows-10.htm
 
 ## References
 
+- [Windows 7 ISO](https://microsoft.com/en-us/software-download/windows8ISO)
 - [Windows 10 ISO](https://microsoft.com/en-us/software-download/windows10ISO)
 - [Windows Subsystem Linux (WSL)](/wsl.md)
 
@@ -28,7 +29,6 @@ http://help.market.com.br/frente/index.html?permitir-ping-windows-10.htm
 
 #### Using Application
 
-- [balenaEtcher](/balenaetcher.md) (Darwin)
 - Rufus (Windows)
 - [UNetbootin](/unetbootin.md) (Darwin)
 - WoeUSB (Linux)
