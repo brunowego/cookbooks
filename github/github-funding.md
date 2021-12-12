@@ -6,6 +6,9 @@
 
 ## Configuration
 
+1. Settings
+2. Features -> Check "Sponsorships"
+
 ### Custom
 
 ```sh
