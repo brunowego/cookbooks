@@ -1,14 +1,10 @@
 # mail
 
-<!--
-name+group@provider.com
-invoices@provider.com
-security@provider.com
--->
-
 ## Tools
 
 - [Mailtrap.io](https://mailtrap.io/)
+- [MailCatcher](/mailcatcher.md)
+- [MailHog](/mailhog.md)
 
 ## CLI
 
@@ -32,4 +28,16 @@ Your friend,
 Me!
 
 EOMAIL
+```
+
+## Tips
+
+### Company Emails
+
+```txt
+name+group@example.com
+invoices@example.com
+security@example.com
+sales@example.com
+support@example.com
 ```

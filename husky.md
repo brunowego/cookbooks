@@ -49,4 +49,7 @@ npm run prepare
 ```sh
 #
 npx husky add ./.husky/pre-commit 'npm test'
+
+#
+npx husky install
 ```

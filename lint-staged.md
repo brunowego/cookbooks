@@ -49,6 +49,9 @@ npx lint-staged -dv
 ```sh
 #
 npx husky add ./.husky/pre-commit 'npx lint-staged'
+
+#
+npx husky install
 ```
 
 ### Issues

@@ -7,9 +7,10 @@ https://developers.google.com/search/docs/advanced/appearance/title-link
 
 ## Tools
 
-- [Measure](https://web.dev/measure/)
-- [SEO Site Checkup](https://seositecheckup.com/)
 - [GTmetrix](https://gtmetrix.com/)
+- [Measure](https://web.dev/measure/)
+- [Semrush](https://semrush.com)
+- [SEO Site Checkup](https://seositecheckup.com/)
 
 ## Terms
 

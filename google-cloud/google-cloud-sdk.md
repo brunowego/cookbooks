@@ -24,6 +24,9 @@ gcloud auth login
 gcloud auth application-default login
 
 #
+cat ~/.config/gcloud/application_default_credentials.json
+
+#
 gcloud config get-value core/account
 
 #

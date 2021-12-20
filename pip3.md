@@ -156,6 +156,16 @@ python3 ./setup.py clean --all
 
 ### Issues
 
+#### Missing Locale
+
+```log
+locale.Error: unsupported locale setting
+```
+
+```sh
+export LC_ALL=C
+```
+
 #### Permission Denied
 
 ```log

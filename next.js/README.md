@@ -1,13 +1,6 @@
 # Next.js
 
 <!--
-https://www.youtube.com/watch?v=S1oOlKQo8CY
-https://www.youtube.com/watch?v=_VuGmykVgTg
-https://egghead.io/blog/saas-app-with-nextjs-prisma-auth0-and-stripe
-https://www.freecodecamp.org/news/how-to-use-feature-toggles-in-next-js-and-react/
--->
-
-<!--
 const nextConfig = {
   swcMinify: true,
   i18n: { locales: ["ja"], defaultLocale: "ja" },
@@ -15,6 +8,8 @@ const nextConfig = {
     formats: ["image/avif", "image/webp"],
   },
 }
+
+NEXT_PUBLIC_MY_ENV
 -->
 
 ## Links
@@ -32,6 +27,7 @@ const nextConfig = {
 - [Start developing websites like it's 2025.](https://react2025.com/#course-overview)
 - [Mastering Next.js](https://masteringnextjs.com/)
 - [TypeScript](https://nextjs.org/docs/basic-features/typescript)
+- [Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
 
 ## Configuration
 
@@ -92,6 +88,9 @@ npx next -h
 
 ```sh
 #
+npx create-next-app@latest -h
+
+#
 npx create-next-app@latest \
   --ts \
   --use-npm \
@@ -99,7 +98,7 @@ npx create-next-app@latest \
     "$_"
 
 #
-mkdir -p ./src/{components,hooks,layouts,lib,utils}
+mkdir -p ./src/{components,hooks,layouts,lib,types,utils}
 
 #
 mv ./{pages,styles} ./src
@@ -110,6 +109,17 @@ cat << EOF > ./.gitignore
 /node_modules
 EOF
 ```
+
+<!--
+touch ./src/components/Page/index.tsx
+touch ./src/components/Page/Header.tsx
+touch ./src/components/Page/Footer.tsx
+touch ./src/components/Button/index.tsx
+
+touch ./src/pages/404.tsx
+touch ./src/pages/__middleware.ts
+touch ./src/pages/_document.tsx
+-->
 
 <!--
 # ESLint Ignore

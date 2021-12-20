@@ -13,6 +13,7 @@ https://www.youtube.com/watch?v=F8jXE-_hdfg
 - [Amazon Machine Images (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
 - [Find a Linux AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html)
 - [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/ec2/index.html)
+- [VM Import/Export](https://aws.amazon.com/ec2/vm-import/)
 
 ## Links
 
@@ -171,6 +172,19 @@ aws ec2 describe-instances \
 -->
 
 ### Tips
+
+#### Get Console Output
+
+```sh
+aws \
+  --output text \
+  ec2 get-console-output \
+    --instance-id [instance-id]
+```
+
+<!--
+tail -f /var/log/syslog
+-->
 
 #### Change Ubuntu EC2 Password
 

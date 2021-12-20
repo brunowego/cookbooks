@@ -1,5 +1,9 @@
 # Go Programming Language
 
+<!--
+https://github.com/golang-standards/project-layout
+-->
+
 Efficient compilation, Efficient execution and Ease of programming.
 
 ## Links

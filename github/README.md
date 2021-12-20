@@ -29,6 +29,7 @@ https://github.com/cla-assistant/cla-assistant
 
 - [Settings / Theme preferences](https://github.com/settings/appearance)
 - [Notifications](https://github.com/settings/notifications)
+- [Register a new OAuth application](https://github.com/settings/applications/new)
 
 ## Guides
 
@@ -89,6 +90,12 @@ gh repo create \
 ```
 
 ## Tips
+
+### Clone with GitHub Token
+
+```sh
+git clone "https://${GITHUB_TOKEN}:x-oauth-basic@github.com/[my-org]/[my-repo].git"
+```
 
 ### Automatically Delete Branches
 

@@ -27,7 +27,7 @@ https://www.javatpoint.com/shell-script-parameters
 
 ## Tips
 
-### Ensure Envuronment Variable Are Set
+### Ensure Environment Variable Are Set
 
 ```sh
 #! /bin/sh

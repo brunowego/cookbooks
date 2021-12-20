@@ -3,6 +3,7 @@
 **Keywords:** Multi-cloud Control Plane, GitOps-based, Infrastructure as Code
 
 <!--
+https://medium.com/containers-101/using-gitops-for-infrastructure-and-applications-with-crossplane-and-argo-cd-944b32dfb27e
 https://www.youtube.com/watch?v=AtbS1u2j7po&t=159s
 
 https://github.com/100daysofkubernetes/100DaysOfKubernetes/blob/main/src/templating/crossplane.md

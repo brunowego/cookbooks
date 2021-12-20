@@ -37,3 +37,13 @@ netlify help
 #
 netlify login
 ```
+
+<!--
+```sh
+cat << EOF > ./netlify.toml
+[build]
+  publish = "out"
+  command = "npm run build-prod"
+EOF
+```
+-->

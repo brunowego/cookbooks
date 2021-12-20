@@ -1,4 +1,4 @@
-# Microsoft Edge
+# Microsoft Edge Dev
 
 ## App
 
@@ -7,19 +7,12 @@
 #### Homebrew
 
 ```sh
-brew install --cask microsoft-edge
-
-#
 brew install --cask microsoft-edge-dev
 ```
 
 ### Uninstall
 
 ```sh
-# Homebrew
-brew uninstall --cask microsoft-edge
-
-#
 brew uninstall --cask microsoft-edge-dev
 ```
 

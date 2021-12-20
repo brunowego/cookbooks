@@ -11,6 +11,10 @@ hardhat.config.js
 - [Code Repository](https://github.com/nomiclabs/hardhat)
 - [Main Website](https://hardhat.org/)
 
+## References
+
+- [Solidity support](https://hardhat.org/reference/solidity-support.html)
+
 ## CLI
 
 ### Commands

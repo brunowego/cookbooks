@@ -42,7 +42,7 @@ cat << EOF > "$COSTUMER_ID_RSA_FILE"
 EOF
 
 #
-chmod 0400 "$COSTUMER_ID_RSA_FILE"
+chmod 0400 "$COSTUMER_ID_RSA_FILE"  # 0644
 
 #
 ssh \

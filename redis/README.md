@@ -212,7 +212,7 @@ kubectl create ns redis
 #
 helm install redis bitnami/redis \
   --namespace redis \
-  --version 15.6.2 \
+  --version 15.6.4 \
   -f <(cat << EOF
 auth:
   password: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
@@ -227,6 +227,7 @@ master:
       memory: 256Mi
 
 replica:
+  replicaCount: 1
   resources:
     limits:
       cpu: 250m
@@ -339,6 +340,116 @@ helm uninstall redis \
 kubectl delete ns redis \
   --grace-period=0 \
   --force
+```
+
+## Custom Resource (CR)
+
+### Install
+
+```sh
+#
+kubens redis
+
+#
+cat << EOF | kubectl apply -f -
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: redis-data
+  labels:
+    com.example.service: redis-data
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+EOF
+
+#
+cat << \EOF | kubectl apply -f -
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  labels:
+    com.example.service: redis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      com.example.service: redis
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        com.example.service: redis
+    spec:
+      containers:
+      - args:
+        - /bin/sh
+        - -c
+        - redis-server --appendonly yes --requirepass $${REDIS_PASSWORD}
+        env:
+        - name: REDIS_PASSWORD
+          value: admin
+        image: docker.io/library/redis:5-alpine
+        name: redis
+        ports:
+        - containerPort: 6379
+        resources: {}
+        volumeMounts:
+        - mountPath: /data
+          name: redis-data
+      hostname: redis
+      restartPolicy: Always
+      volumes:
+      - name: redis-data
+        persistentVolumeClaim:
+          claimName: redis-data
+EOF
+
+#
+cat << EOF | kubectl apply -f -
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+  labels:
+    com.example.service: redis
+spec:
+  ports:
+  - name: '6379'
+    port: 6379
+    targetPort: 6379
+  selector:
+    com.example.service: redis
+EOF
+```
+
+### Testing
+
+```sh
+#
+kubens redis
+
+#
+kubectl port-forward \
+  --address 0.0.0.0 \
+  svc/redis \
+  6379:6379
+
+#
+redis-cli \
+  -h 127.0.0.1 \
+  -p 6379 \
+  -a admin \
+  INFO | \
+    grep '^redis_version'
 ```
 
 ## Issues

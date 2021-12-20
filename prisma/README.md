@@ -1,6 +1,9 @@
 # Prisma
 
 <!--
+https://github.com/paljs/prisma-tools
+
+https://github.com/2color/ama-prisma/tree/main/prisma
 https://github.com/2color/real-world-grading-app
 https://github.com/notiz-dev/prisma-dbml-generator
 
@@ -117,7 +120,20 @@ npx prisma generate
 
 #
 npx prisma migrate dev --name init
+npx prisma migrate dev --preview-feature
 
 #
 npx prisma migrate deploy
+```
+
+## Tips
+
+### Visual Studio Code
+
+```sh
+#
+code --install-extension Prisma.prisma
+
+#
+jq '."[prisma]"."editor.defaultFormatter" |= "Prisma.prisma"' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 ```

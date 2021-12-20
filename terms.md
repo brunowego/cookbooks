@@ -52,14 +52,16 @@
 - Mobile backend as a service (MBaaS)
 - Monorepo
 - Network Interface Controller (NIC)
+- No News Is Good News
 - Non-Disclosure-Agreements (NDA)
 - Not safe for work (NSFW)
 - Objectives and Key Results (OKR)
 - Obsessive-Compulsive Disorder (OCD)
 - On-premises (on-prem)
-- One Time Password (OTP)
+- One-Time Password (OTP)
 - Operations as a Service (OaaS)
 - Outliers
+- Parking-lot
 - Personal Access Token (PAT)
 - Personal Identification Number (PIN)
 - Platform as a service (PaaS)

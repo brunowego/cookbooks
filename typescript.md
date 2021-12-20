@@ -107,3 +107,14 @@ cat << EOF > ./.editorconfig
 indent_size = 4
 EOF
 ```
+
+## Tips
+
+### Visual Studio Code
+
+**Dependencies:** [Prettier](/prettier.md#visual-studio-code)
+
+```sh
+#
+jq '."[typescript]"."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+```

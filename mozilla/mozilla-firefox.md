@@ -7,6 +7,7 @@
 - [AWS Extend Switch Roles](https://addons.mozilla.org/en-US/firefox/addon/aws-extend-switch-roles3/)
 - [Cloudinary Media Inspector](https://addons.mozilla.org/en-US/firefox/addon/cloudinary-media-inspector/)
 - [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/)
+- [Global Speed](https://addons.mozilla.org/en-US/firefox/addon/global-speed/)
 - [HTTPS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/)
 - [Language Switch](https://addons.mozilla.org/en-US/firefox/addon/languageswitch/)
 - [Prometheus Formatter](https://addons.mozilla.org/en-US/firefox/addon/prometheus-formatter/)

@@ -363,6 +363,18 @@ Error: rpc error: code = InvalidArgument desc = existing repository spec is diff
 
 TODO -->
 
+<!-- ####
+
+```log
+Error: Provider produced inconsistent result after apply
+
+When applying changes to module.app_iac.aws_rds_cluster.services, provider
+"registry.terraform.io/hashicorp/aws" produced an unexpected new value: Root
+resource was present, but now absent.
+```
+
+TODO -->
+
 #### Final Snapshot Identifier
 
 ```log

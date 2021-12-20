@@ -60,76 +60,68 @@ https://epic-course-platform.vercel.app/
 
 ## CLI
 
-### Installation
-
-#### Homebrew
-
-```sh
-brew install vercel-cli
-```
-
 ### Commands
 
 ```sh
-vercel help
+npx vercel help
 ```
 
 ### Usage
 
 ```sh
 #
-vercel login
-vercel switch
-vercel logout
+npx vercel login
+npx vercel switch
+npx vercel logout
 
 #
-vercel whoami
+npx vercel whoami
 
 #
-vercel teams ls
+npx vercel teams ls
 
 # For new project
-vercel init
+npx vercel init
 # Or, older existing project
-vercel link
+npx vercel link
 
 #
-vercel dev
+npx vercel dev
 
 #
-vercel projects
+npx vercel projects
 
 #
-vercel domains
-vercel dns
+npx vercel domains
+npx vercel dns
 
 #
-vercel certs ls
+npx vercel certs ls
 
 #
-vercel env ls
+npx vercel env ls
 
 #
-vercel secrets ls
+npx vercel secrets ls
 
 #
-vercel deploy
-vercel deploy --prod --no-clipboard
+npx vercel deploy
+npx vercel deploy --prod --no-clipboard
 
 #
-vercel ls
+npx vercel ls
 
 #
-vercel inspect [url]
+npx vercel inspect [url]
 
 #
-vercel logs [deploy-id]
+npx vercel logs [deploy-id]
 
 #
-vercel rm [deploy-id]
+npx vercel rm [deploy-id]
 
 #
-vercel billing ls
+npx vercel billing ls
 ```
 
 ### Tips

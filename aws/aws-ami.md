@@ -1,8 +1,16 @@
 # AWS Amazon Machine Image (AMI)
 
+<!--
+EC2 Image Builder
+
+ec2-user
+ubuntu
+-->
+
 ## Links
 
-- [Amazon EC2 AMI Locator](https://cloud-images.ubuntu.com/locator/ec2/)
+- [Ubuntu / Amazon EC2 AMI Locator](https://cloud-images.ubuntu.com/locator/ec2/)
+- [AWS Console / EC2 / Images / AMIs](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Images:visibility=owned-by-me)
 
 ## Docker
 

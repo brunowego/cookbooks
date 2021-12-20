@@ -1,5 +1,10 @@
 # Spotify
 
+## Links
+
+- [Main Website](https://spotify.com/)
+- [Developer / Dashboard / Applications](https://developer.spotify.com/dashboard/applications)
+
 ## App
 
 ### Installation

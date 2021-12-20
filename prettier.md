@@ -57,7 +57,13 @@ npm install prettier --save-dev
 **Dependencies:** Prettier CLI.
 
 ```sh
+#
 code --install-extension esbenp.prettier-vscode
+
+#
+jq '."editor.formatOnSave" |= true' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+
+jq '."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 ```
 
 <!--

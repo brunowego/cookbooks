@@ -7,6 +7,10 @@ https://artifacthub.io/packages/helm/deliveryhero/locust
 https://github.com/ONSdigital/blaise-cawi-load-tests/tree/main
 -->
 
+## Links
+
+- [Code Repository](https://github.com/locustio/locust)
+
 ## Alternatives
 
 - [K6](/k6.md)
@@ -208,10 +212,18 @@ EOF
 locust \
   -f ./main.py \
   -u 1000 \
-  -r 50
+  -r 20
 ```
 
 ### Issues
+
+#### Minimum 10000 Open File Limit
+
+```log
+System open file limit '1024' is below minimum setting '10000'. It's not high enough for load testing, and the OS didn't allow locust to increase it by itself. See https://github.com/locustio/locust/wiki/Installation#increasing-maximum-number-of-open-files-limit for more info.
+```
+
+Increase `ulimit` to `10000`.
 
 #### CPU Usage
 
@@ -220,3 +232,11 @@ CPU usage above 90%! This may constrain your throughput and may even give incons
 ```
 
 TODO
+
+<!-- ####
+
+```log
+PermissionError: [Errno 13] Permission denied: ('', 80)
+```
+ -->
+

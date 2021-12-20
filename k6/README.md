@@ -9,6 +9,8 @@ https://github.com/k6io/docs/blob/edb534e78340799a7082544c79cdc644f88e369e/src/d
 https://github.com/k6io/operator
 https://k6.io/blog/running-distributed-tests-on-k8s/
 
+https://github.com/2color/ama-prisma/blob/main/loadtest.js
+
 HTML Report
 -->
 

@@ -29,6 +29,7 @@ sudo -iu [user]
 # alternative
 sudo su -
 sudo su - [user]
+sudo su - [user] -c "cd `pwd`"
 ```
 
 #### Command

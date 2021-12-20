@@ -14,12 +14,15 @@ updates:
 - package-ecosystem: npm
   directory: /
   schedule:
-    interval: daily
+    interval: weekly
+  open-pull-requests-limit: 0
   # allow:
   # - dependency-name: [dep-name]
   # ignore:
   # - dependency-name: [dep-name]
   labels:
   - dependencies
+  assignees:
+  - brunowego
 EOF
 ```

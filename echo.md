@@ -9,3 +9,11 @@
 ```sh
 man echo
 ```
+
+## Tips
+
+### Empty File
+
+```sh
+echo >> [filename]
+```

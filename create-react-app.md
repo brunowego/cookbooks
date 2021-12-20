@@ -1,4 +1,4 @@
-# Create React App
+# Create React App (cra)
 
 ## CLI
 

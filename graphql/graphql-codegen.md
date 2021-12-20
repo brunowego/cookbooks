@@ -1,6 +1,7 @@
 # GraphQL Code Generator
 
 <!--
+@graphql-codegen/cli
 @graphql-codegen/typescript
 @graphql-codegen/typescript-operations
 -->
@@ -12,11 +13,17 @@
 
 ## CLI
 
-### Dependencies
+### Commands
 
-- [GraphQL](/graphql/README.md)
+```sh
+npx graphql-codegen help
+```
 
-### Configuration
+<!-- ### Dependencies
+
+- [GraphQL](/graphql/README.md) -->
+
+<!-- ### Configuration -->
 
 <!--
 graphql.config.js
@@ -45,7 +52,7 @@ EOF
 ```
 -->
 
-**Refer:** `package.json`
+<!-- **Refer:** `package.json`
 
 ```json
 {
@@ -56,4 +63,4 @@ EOF
     "codegen:graphql": "graphql-codegen"
   }
 }
-```
+``` -->

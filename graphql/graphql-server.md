@@ -19,6 +19,7 @@ In simple terms, a GraphQL Server receives the query from the client and respond
 - Apollo Server
 - Express GraphQL
 - GraphQL Yoga
+- GraphQL Helix
 
 <!--
 - [Hasura](/hasura/README.md)

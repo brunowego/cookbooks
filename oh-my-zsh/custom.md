@@ -11,10 +11,10 @@
 #### Create
 
 ```sh
+#
 mkdir -p ~/.oh-my-zsh/custom/plugins/proxy
-```
 
-```sh
+#
 tee ~/.oh-my-zsh/custom/plugins/proxy/proxy.plugin.zsh << 'EOF'
 #! /bin/sh
 
@@ -99,10 +99,10 @@ sed -i '/^ZSH_PROXY_HOST/ s/=/="$(ip route get 1 | awk '\''{print $NF;exit}'\'')
 #### Enabling
 
 ```sh
+#
 sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 proxy\)/g' ~/.zshrc
-```
 
-```sh
+#
 source ~/.zshrc
 ```
 
@@ -119,10 +119,10 @@ brew install jq moreutils
 #### Create
 
 ```sh
+#
 mkdir -p ~/.oh-my-zsh/custom/plugins/docker-machine
-```
 
-```sh
+#
 tee ~/.oh-my-zsh/custom/plugins/docker-machine/docker-machine.plugin.zsh << 'EOF'
 #! /bin/sh
 
@@ -174,10 +174,10 @@ EOF
 #### Enabling
 
 ```sh
+#
 sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 docker-machine\)/g' ~/.zshrc
-```
 
-```sh
+#
 source ~/.zshrc
 ```
 
@@ -245,9 +245,9 @@ EOF
 #### Enabling
 
 ```sh
+#
 sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 minikube\)/g' ~/.zshrc
-```
 
-```sh
+#
 source ~/.zshrc
 ```

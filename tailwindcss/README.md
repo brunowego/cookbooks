@@ -1,5 +1,10 @@
 # Tailwind CSS
 
+<!--
+https://twind.dev/
+https://github.com/MathiasGilson/tailwind-styled-component
+-->
+
 **Keywords:** CSS framework
 
 ## Links
@@ -8,6 +13,8 @@
 - [Main Website](https://tailwindcss.com/)
 - [Docs](https://tailwindcss.com/docs)
 - [Tailwind UI](https://tailwindui.com/)
+- [Headless UI](https://headlessui.dev/react/menu)
+- [Heroicons](https://heroicons.com/)
 - [CodePen Examples](https://codepen.io/search/pens?q=tailwind)
 
 ## Docs
@@ -20,6 +27,10 @@
 - [Himalayas](https://himalayas.app/)
 - [PlanetScale](https://planetscale.com/)
 - [Supabase](https://supabase.io/)
+
+<!--
+https://panelbear.com/
+-->
 
 ## Useful
 

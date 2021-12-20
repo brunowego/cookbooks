@@ -1,7 +1,12 @@
 # Figma Plugins
 
-- [Avatars](https://figma.com/community/plugin/739659977030056719/Avatars)
+## Links
+
+- [Community / Plugins](https://figma.com/community/plugins)
+
+## Recommended
+
+- [A11y - Color Contrast Checker](https://figma.com/community/plugin/733159460536249875/A11y---Color-Contrast-Checker)
 - [Batch Styler](https://figma.com/community/plugin/818203235789864127/Batch-Styler)
-- [Charts](https://figma.com/community/plugin/731451122947612104/Charts)
-- [Google Sheets Sync](https://figma.com/community/plugin/735770583268406934/Google-Sheets-Sync)
-- [Super Tidy](https://figma.com/community/plugin/731260060173130163/Super-Tidy)
+- [Downsize](https://figma.com/community/plugin/869495400795251845/Downsize)
+- [Find in page](https://figma.com/community/plugin/949983833489656822)

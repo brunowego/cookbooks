@@ -28,6 +28,10 @@ https://linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 #### Visual Studio Code
 
 ```sh
+#
+code --install-extension formulahendry.auto-close-tag
+
+#
 jq '."html.format.wrapAttributes" |= "force-aligned"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 

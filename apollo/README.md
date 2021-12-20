@@ -8,29 +8,32 @@ https://app.pluralsight.com/paths/skills/building-graphql-apis-with-apollo
 
 - [Main Website](https://apollographql.com/)
 - [Docs](https://apollographql.com/docs/)
+- [Studio](https://studio.apollographql.com/)
 
 ## CLI
-
-### Installation
-
-#### Homebrew
-
-```sh
-brew install apollo-cli
-```
 
 ### Commands
 
 ```sh
-apollo -h
+npx apollo -h
 ```
 
 ### Usage
 
 ```sh
 #
-apollo client
+npx apollo client
 
 #
-apollo plugins
+npx apollo plugins
+```
+
+## Library
+
+### Installation
+
+#### NPM
+
+```sh
+npm install @apollo/client --save
 ```

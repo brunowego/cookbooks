@@ -22,7 +22,7 @@ jobs:
         os: ['ubuntu-latest']
         python-version: ['3.9']
     steps:
-    - name: Checkout
+    - name: Checkout Code
       uses: actions/checkout@v2
       with:
         # Disabling shallow clone is recommended for improving relevancy of reporting

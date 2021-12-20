@@ -14,6 +14,12 @@ cat << EOF >> ./.gitattributes
 EOF
 ```
 
+### JPEG to PDF
+
+```sh
+convert [filename].jpg -auto-orient [filename].pdf
+```
+
 ### Visual Studio Code
 
 ```sh

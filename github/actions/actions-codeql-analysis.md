@@ -22,7 +22,7 @@ on:
     branches:
     - main
   schedule:
-  - cron: 0 0 * * *
+  - cron: 0 0 * * *  # https://crontab.guru/#0_0_*_*_*
 
 jobs:
   analyze:
@@ -40,7 +40,7 @@ jobs:
         - javascript
 
     steps:
-    - name: Checkout repository
+    - name: Checkout Code
       uses: actions/checkout@v2
 
     - name: Initialize CodeQL
