@@ -7,7 +7,7 @@
 
 ## Dependencies
 
-- [SonarQube Scanner](/sonar-scanner.md)
+- [SonarQube Scanner](/sonarsource/sonarqube-scanner.md)
 
 ## Tips
 

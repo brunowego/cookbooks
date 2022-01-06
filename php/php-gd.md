@@ -7,7 +7,11 @@
 ## Dependencies
 
 - [GD](/gd.md)
-- [zlib](/zlib.md)
+<!-- - [zlib](/zlib.md) -->
+<!-- - [libjpeg](/libjpeg.md) -->
+<!-- - [libpng](/libpng.md) -->
+<!-- - [freetype](/freetype.md) -->
+<!-- - [WebP](/webp.md) -->
 
 ## Installation
 
@@ -25,11 +29,7 @@ phpbrew -d ext install \
   --downloader=wget \
   gd \
   -- \
-    --with-zlib-dir=$(brew --prefix zlib) \
-    --with-jpeg-dir=$(brew --prefix libjpeg) \
-    --with-png-dir=$(brew --prefix libpng) \
-    --with-freetype-dir=$(brew --prefix freetype) \
-    --with-webp-dir==$(brew --prefix webp)
+    --with-jpeg
 
 # Linux
 phpbrew -d ext install \
@@ -38,6 +38,14 @@ phpbrew -d ext install \
   -- \
     --with-freetype-dir=/usr/include/freetype2
 ```
+
+<!--
+    --with-zlib-dir=$(brew --prefix zlib) \
+    --with-jpeg-dir=$(brew --prefix libjpeg) \
+    --with-png-dir=$(brew --prefix libpng) \
+    --with-freetype-dir=$(brew --prefix freetype) \
+    --with-webp-dir==$(brew --prefix webp)
+-->
 
 ## Verify
 
@@ -49,9 +57,18 @@ php -m | grep gd
 php -i | grep '^gd$' -A 15
 ```
 
-## Service
+## Issues
+
+### Missing JPEG
+
+```log
+Error: Call to undefined function App\Helper\imagejpeg()
+```
 
 ```sh
-# FPM
-phpbrew fpm restart
+phpbrew -d ext install \
+  --downloader=wget \
+  gd \
+  -- \
+    --with-jpeg
 ```

@@ -17,16 +17,9 @@ phpbrew -d ext install \
 ## Verify
 
 ```sh
+#
 php -m | grep tidy
-```
 
-```sh
+#
 php -i | grep '^tidy$' -A 9
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```

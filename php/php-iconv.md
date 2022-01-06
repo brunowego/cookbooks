@@ -39,10 +39,3 @@ php -m | grep iconv
 #
 php -i | grep '^iconv$' -A 9
 ```
-
-### Service
-
-```sh
-# FPM
-phpbrew fpm restart
-```

@@ -1,6 +1,8 @@
 # Github Actions
 
 <!--
+https://github.com/2color/ama-prisma/blob/main/.github/workflows/images.yml
+
 https://docs.github.com/en/actions/learn-github-actions/reusing-workflows
 
 https://github.com/github/super-linter
@@ -249,6 +251,8 @@ TODO
 
 ##### GitHub-Hosted Runners
 
+**Details:** [Available Environments](https://github.com/actions/virtual-environments#available-environments)
+
 ```yml
 jobs:
   build:
@@ -315,6 +319,21 @@ TODO
 
 ```sh
 code --install-extension cschleiden.vscode-github-actions
+```
+
+#### Concurrency
+
+```yaml
+---
+# ...
+
+# Cancels all previous workflow runs for the same branch that have not yet completed.
+concurrency:
+  # The concurrency group contains the workflow name and the branch name.
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# ...
 ```
 
 ## CLI

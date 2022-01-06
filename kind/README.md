@@ -160,6 +160,11 @@ kind create cluster \
 kubectl version --short
 ```
 
+#### Dependencies
+
+- CNI / [Cilium Networking](/kubernetes/cni/cilium.md#helm)
+- Ingress Controller / [NGINX](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm)
+
 ### Usage
 
 ```sh

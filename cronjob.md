@@ -6,3 +6,4 @@
 - At every 5th minute: [`*/5 * * * *`](https://crontab.guru/#*/5_*_*_*_*)
 - At minute 30: [`30 * * * *`](https://crontab.guru/#30_*_*_*_*)
 - At 00:00: [`0 0 * * *`](https://crontab.guru/#0_0_*_*_*)
+- At 03:00: [`0 3 * * *`](https://crontab.guru/#0_3_*_*_*)

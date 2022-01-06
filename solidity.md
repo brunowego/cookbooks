@@ -1,5 +1,7 @@
 # Solidity
 
+**Keywords:** Smart contracts
+
 ## Tips
 
 ### Visual Studio Code

@@ -27,16 +27,9 @@ phpbrew -d ext install \
 ## Verify
 
 ```sh
+#
 php -m | grep mbstring
-```
 
-```sh
+#
 php -i | grep '^mbstring$' -A 6
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```

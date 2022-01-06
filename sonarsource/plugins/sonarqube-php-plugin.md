@@ -33,8 +33,8 @@ https://www.jeffgeerling.com/blogs/jeff-geerling/ci-deployments-code-analysis-dr
 
 ### Dependencies
 
-- [SonarQube](/sonarqube.md)
-- [SonarQube Scanner](/sonar-scanner.md)
+- [SonarQube](/sonarsource/sonarqube.md)
+- [SonarQube Scanner](/sonarsource/sonarqube-scanner.md)
 
 ### Installation
 
@@ -54,7 +54,7 @@ wget -P "$SONARQUBE_HOME/extensions/plugins" 'https://binaries.sonarsource.com/D
 
 ### Configuration
 
-Follow [this instructions](/sonar/sonar-scanner.md#configuration).
+Follow [this instructions](/sonarsource/sonarqube-scanner.md#configuration).
 
 ### Issues
 
@@ -73,5 +73,5 @@ org.sonar.java.AnalysisException: Please provide compiled classes of your projec
 ```sh
 sonar-scanner \
   [...] \
-  -Dsonar.java.binaries=$SONARQUBE_HOME/lib
+  -Dsonar.java.binaries="$SONARQUBE_HOME/lib"
 ```

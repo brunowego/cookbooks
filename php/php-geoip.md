@@ -55,18 +55,11 @@ EOF
 ## Verify
 
 ```sh
+#
 php -m | grep geoip
-```
 
-```sh
+#
 php -i | grep '^geoip$' -A 7
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```
 
 ## Disable

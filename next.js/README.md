@@ -24,6 +24,7 @@ NEXT_PUBLIC_MY_ENV
 
 ## Guides
 
+- [Testing](https://nextjs.org/docs/testing)
 - [Start developing websites like it's 2025.](https://react2025.com/#course-overview)
 - [Mastering Next.js](https://masteringnextjs.com/)
 - [TypeScript](https://nextjs.org/docs/basic-features/typescript)

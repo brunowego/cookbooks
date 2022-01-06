@@ -3,8 +3,8 @@
 <!--
 https://app.pluralsight.com/roleiq/roles/7650da31-d0c8-44a5-997f-5904774ff72c
 
-https://www.youtube.com/watch?v=xCc9xk8LPTo
-https://www.youtube.com/watch?v=YKT9bWvy_PI
+https://youtube.com/watch?v=xCc9xk8LPTo
+https://youtube.com/watch?v=YKT9bWvy_PI
 
 ACKQueue
 
@@ -44,7 +44,7 @@ Transactions Per Second (TPS)
 - [Open Source AWS Security Tools](https://asecure.cloud/tools/)
 - [Amazon Personalize Pricing](https://aws.amazon.com/personalize/pricing/)
 - [Regions and Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
-- [AWS Exam Scheduling](https://www.certmetrics.com/amazon/candidate/exam_scheduling.aspx)
+- [AWS Exam Scheduling](https://certmetrics.com/amazon/candidate/exam_scheduling.aspx)
 - [Awesome List](https://github.com/donnemartin/awesome-aws)
 - AWS Console
   - [Globally](https://console.aws.amazon.com/)
@@ -73,6 +73,6 @@ Reduced latency and increased redundancy.
 <!--
 ## Interview
 
-https://www.youtube.com/watch?v=HoXEyXIf6_U
-https://www.youtube.com/watch?v=cp108MhVEI0
+https://youtube.com/watch?v=HoXEyXIf6_U
+https://youtube.com/watch?v=cp108MhVEI0
 -->

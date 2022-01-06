@@ -75,7 +75,11 @@ symfony server:start --no-tls
 symfony check:security
 
 #
-php bin/console secrets:generate-keys
+php ./bin/console secrets:generate-keys
+
+#
+php ./bin/console cache:clear --no-warmup
+php ./bin/console assets:install --no-interaction
 ```
 
 ### Tips
@@ -86,13 +90,13 @@ php bin/console secrets:generate-keys
 
 ```sh
 #
-php bin/console doctrine:migrations:list
+php ./bin/console doctrine:migrations:list
 
 #
-php bin/console doctrine:migrations:status
+php ./bin/console doctrine:migrations:status
 
 #
-php bin/console doctrine:migrations:migrate
+php ./bin/console doctrine:migrations:migrate
 ```
 
 #### Git Attributes

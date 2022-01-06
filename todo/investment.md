@@ -12,8 +12,7 @@ https://lp.exame.com/academy/curso-iniciacao-primeiros-passos-para-investir-na-b
 https://edu.b3.com.br/
 -->
 
-TODO
+## Links
 
-##
-
-- [B3 (A.k.a Bovespa)](http://www.b3.com.br/)
+- [B3 (A.k.a Bovespa)](http://b3.com.br/)
+- [Fundamentus](https://fundamentus.com.br/)

@@ -65,6 +65,9 @@ https://example.com/checkout/[hash]/payment_method
 #
 https://example.com/@[username]
 https://example.com/u/[username]
+
+#
+https://example.com/exit?url=https%3A%2F%2Fexample.com
 ```
 
 ## Sign-up

@@ -37,6 +37,7 @@ assume-role-arn -h
 ```sh
 #
 eval $(assume-role-arn -r [role_arn])
+
 aws sts get-caller-identity
 
 #

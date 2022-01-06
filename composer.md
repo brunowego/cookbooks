@@ -144,6 +144,19 @@ composer archive -f zip
 
 ### Tips
 
+#### GitHub Token
+
+```sh
+#
+export COMPOSER_TOKEN=''
+
+#
+composer config -g github-oauth.github.com "$COMPOSER_TOKEN"
+
+#
+cat ~/.composer/auth.json
+```
+
 #### Git Attributes
 
 Add [text rules](/gitattributes.md#text)

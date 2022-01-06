@@ -2,6 +2,8 @@
 
 ## Tools
 
+- [Instant Username](https://instantusername.com/)
+- [Namecheckr](https://namecheckr.com/)
 - [Namechk](https://namechk.com/)
 
 ## My
@@ -14,7 +16,7 @@
 - [Flickr](https://flickr.com/photos/brunowego)
 - [GitHub](https://github.com/brunowego)
 - [Last.fm](https://last.fm/user/brunowego)
-- [LinkedIn](https://linkedin.com/company/brunowego)
+- [LinkedIn](https://linkedin.com/in/brunowego)
 - [Myspace](https://myspace.com/brunowego)
 - [Reddit](https://reddit.com/user/brunowego)
 - [SoundCloud](https://soundcloud.com/brunowego)

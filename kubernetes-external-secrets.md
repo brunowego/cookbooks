@@ -153,6 +153,14 @@ kubectl get pods \
   -n kube-system
 ``` -->
 
+### Force Sync
+
+```sh
+kubectl patch es '[name]' \
+  --patch "{\"spec\":{\"template\":{\"metadata\":{ \"annotations\":{\"force-sync\":\"$(date +%s)\"}}}}}" \
+  --type merge
+```
+
 ### Issues
 
 <!-- ####
@@ -212,6 +220,22 @@ kubectl delete pod \
   -l 'app.kubernetes.io/name=kubernetes-external-secrets' \
   -n kube-system
 ```
+
+<!-- ####
+
+```log
+syscall":"connect","address":"100.64.0.1","port":443},"msg":"failure while updating status for externalsecret kube-system/cluster-autoscaler"}
+Error: connect EHOSTUNREACH 100.64.0.1:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1144:16) {
+  errno: 'EHOSTUNREACH',
+  code: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '100.64.0.1',
+  port: 443
+}
+```
+
+TODO -->
 
 ### Delete
 

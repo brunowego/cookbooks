@@ -20,7 +20,7 @@ on:
 
 jobs:
   validation:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2

@@ -41,7 +41,7 @@ on:
 
 jobs:
   sync-apps:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
     - name: Login to ArgoCD
       uses: clowdhaus/argo-cd-action/@main
@@ -68,7 +68,7 @@ on:
 
 jobs:
   sync-apps:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
     # ...
 

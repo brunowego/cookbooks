@@ -553,29 +553,6 @@ for ns in `kubectl get ns --field-selector status.phase=Terminating -o name`; do
 for ns in `kubectl get ns --field-selector status.phase=Terminating -o name | cut -d / -f 2`; do for resource in `kubectl api-resources --namespaced -o name --verbs=list | xargs -n 1 kubectl get -o name -n $ns`; do kubectl patch $resource -p '{"metadata": {"finalizers": []}}' --type='merge' -n $ns; done; done
 ```
 
-###### REST API
-
-```sh
-#
-kubectl proxy
-
-#
-kubectl get ns --field-selector status.phase=Terminating | \
-  awk '{print $1}'
-
-#
-export KUBERNETES_NAMESPACE=''
-
-#
-kubectl get ns "$KUBERNETES_NAMESPACE" -o json | \
-  jq '.spec.finalizers=[]' | \
-  curl \
-    -X PUT \
-    -H 'Content-Type: application/json' \
-    --data @- \
-    "http://localhost:8001/api/v1/namespaces/${KUBERNETES_NAMESPACE}/finalize"
-```
-
 <!--
 kubectl get namespace "[namespace]" -o json | \
   tr -d "\n" | \

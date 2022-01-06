@@ -14,16 +14,9 @@ phpbrew -d ext install \
 ## Verify
 
 ```sh
+#
 php -m | grep zlib
-```
 
-```sh
+#
 php -i | grep '^zlib$' -A 11
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```

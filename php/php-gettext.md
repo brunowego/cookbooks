@@ -23,17 +23,10 @@ phpbrew -d ext install \
 ## Verify
 
 ```sh
+#
 php -m | grep gettext
-```
 
-```sh
+#
 php -i | grep -i gettext
 # php -i | grep '^gettext$' -A 14
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```

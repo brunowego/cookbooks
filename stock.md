@@ -1,5 +1,5 @@
 # Stock
 
-## Photos
+## Links
 
-- [Pexels](https://www.pexels.com/)
+- [Alternatives](/alternatives.md#stock-photos)

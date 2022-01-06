@@ -20,10 +20,3 @@ php -m | grep exif
 #
 php -i | grep '^exif$' -A 6
 ```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
-```

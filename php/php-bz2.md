@@ -48,16 +48,9 @@ cd /path/to/src/php/version
 ## Verify
 
 ```sh
+#
 php -m | grep bz2
-```
 
-```sh
+#
 php -i | grep '^bz2$' -A 5
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```

@@ -39,10 +39,3 @@ php -m | grep amqp
 #
 php -i | grep '^amqp$' -A 34
 ```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
-```

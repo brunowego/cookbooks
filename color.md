@@ -1,5 +1,14 @@
 # Color
 
+<!--
+https://webkul.github.io/coolhue/
+https://boringavatars.com/
+https://pigment.shapefactory.co/
+https://hihayk.github.io/scale/
+
+https://tailwindshades.com/
+-->
+
 ## References
 
 - [BrandColors](https://brandcolors.net/)
@@ -13,6 +22,7 @@
 
 - [Accessible Color Generator](https://learnui.design/tools/accessible-color-generator.html)
 - [Accessible color palette builder](https://toolness.github.io/accessible-color-matrix/)
+- [Chroma.js Color Palette Helper](http://vis4.net/palettes/)
 - [ColorBox](http://colorbox.io/)
 - [CopyPalette](https://copypalette.app/)
 - [Deep learning color generator](https://colors.eva.design/)
@@ -25,10 +35,14 @@
 - [Material Design Theme & Palette Color Generator](http://mcg.mbitson.com/)
 - [Palx](https://palx.jxnblk.com/)
 - [Sass Color Generator](http://scg.ar-ch.org/)
+- [Tailwind Shades](https://tailwindshades.com/)
 
 ### Contrast Checker
 
+- [Colour Contrast Checker](https://colourcontrast.cc/)
 - [Coolors / Color Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5)
+- [WCAG / Contrast Checker](https://contrastchecker.com/)
+- [WebAIM / Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
 ### A11y
 

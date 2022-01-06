@@ -7,11 +7,16 @@
 #### Homebrew
 
 ```sh
-brew install magrathealabs/mlabs/icu4c@58.1
-```
+#
+brew list --versions icu4c
 
-```sh
+# Darwin 10.x
+brew tap magrathealabs/mlabs
+brew install icu4c@58.1
 brew link icu4c@58.1 --force
+
+# Darwin >= 11
+brew install icu4c
 ```
 
 ### YUM

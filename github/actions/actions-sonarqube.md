@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ['ubuntu-latest']
+        os: ['ubuntu-18.04']
         python-version: ['3.9']
     steps:
     - name: Checkout Code

@@ -15,11 +15,16 @@ https://linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 ## Tools
 
 - [Emmet](/emmet.md)
+- [HTML Arrows](https://toptal.com/designers/htmlarrows/)
+- [HTML Codes Table](https://ascii.cl/htmlcodes.htm)
+- [HTML Entities Encoder / Decoder](https://web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder)
 - [HTML Formatter](https://webformatter.com/html)
-- [HTML Entities Encoder / Decoder](https://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder)
-- [HTML Arrows](https://www.toptal.com/designers/htmlarrows/)
-- [HTML Codes Table](https://www.ascii.cl/htmlcodes.htm)
 - [Modern HTML Starter Template](https://htmltemplate.site/)
+
+### HTML Entities Encoder/Decoder
+
+- [web2generators.com](https://web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder)
+- [mothereff.in](https://mothereff.in/html-entities)
 
 ## Syntax
 
@@ -52,4 +57,12 @@ EOF
 
 <!--
 &zwnj;
+-->
+
+<!--
+<picture>
+  <source srcset="images/logomark-dark.svg" media="(prefers-color-scheme: dark)">
+  <source srcset="images/logomark-light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+  <img src="images/logomark-light.svg" height="70" alt="Company Logomark">
+</picture>
 -->

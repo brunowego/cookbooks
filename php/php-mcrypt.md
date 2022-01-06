@@ -39,16 +39,9 @@ EOF
 ## Verify
 
 ```sh
+#
 php -m | grep mcrypt
-```
 
-```sh
+#
 php -i | grep '^mcrypt$' -A 11
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```

@@ -33,16 +33,9 @@ EOF
 ## Verify
 
 ```sh
+#
 php -m | grep redis
-```
 
-```sh
+#
 php -i | grep '^redis$' -A 36
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```

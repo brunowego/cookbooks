@@ -23,16 +23,9 @@ phpbrew -d ext install \
 ## Verify
 
 ```sh
+#
 php -m | grep imagick
-```
 
-```sh
+#
 php -i | grep '^imagick$' -A 15
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```

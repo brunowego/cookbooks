@@ -16,27 +16,28 @@ pecl install intl
 ### PHPBrew
 
 ```sh
+# Darwin 10.x
 phpbrew -d ext install \
   --downloader=wget \
   intl \
   -- \
     --with-icu-dir=$(brew --prefix icu4c@58.1)
+
+# Darwin >= 11
+phpbrew -d ext install \
+  --downloader=wget \
+  intl \
+  -- \
+    --with-icu-dir=$(brew --prefix icu4c)
 ```
 
 ## Verify
 
 ```sh
+#
 php -m | grep intl
-```
 
-```sh
+#
 php -i | grep -i intl
 # php -i | grep '^intl$' -A 9
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```

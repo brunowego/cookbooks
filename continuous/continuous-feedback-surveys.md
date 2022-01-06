@@ -2,7 +2,7 @@
 
 <!--
 https://blog.track.co/o-que-e-customer-effort-score/
-https://www.checkmarket.com/blog/csat-ces-nps-compared/
+https://checkmarket.com/blog/csat-ces-nps-compared/
 -->
 
 ## References
@@ -14,10 +14,11 @@ https://www.checkmarket.com/blog/csat-ces-nps-compared/
 - [Wootric](https://wootric.com/)
 
 <!--
+https://delighted.com/
 https://userguiding.com/
 https://github.com/satismeter
 https://github.com/refiner-io
-https://www.gartner.com/smarterwithgartner/unveiling-the-new-and-improved-customer-effort-score/
+https://gartner.com/smarterwithgartner/unveiling-the-new-and-improved-customer-effort-score/
 https://blog.track.co/o-que-e-customer-effort-score/
 -->
 
@@ -27,3 +28,7 @@ https://blog.track.co/o-que-e-customer-effort-score/
 - Customer Satisfaction Score (CSAT)
 - Customer Effort Score (CES)
 - Product Market Fit (PMF)
+
+## Term
+
+- Voice of the Customer (VoC)

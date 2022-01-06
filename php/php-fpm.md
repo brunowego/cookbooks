@@ -377,15 +377,14 @@ php-fpm -h
 #### PHPBrew
 
 ```sh
+#
 phpbrew fpm help
-```
 
-```sh
+#
 phpbrew fpm test
 phpbrew fpm module
-```
 
-```sh
+#
 phpbrew fpm start
 phpbrew fpm current
 phpbrew fpm restart

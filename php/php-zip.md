@@ -28,18 +28,11 @@ phpbrew -d ext install \
 ## Verify
 
 ```sh
+#
 php -m | grep zip
-```
 
-```sh
+#
 php -i | grep '^zip$' -A 5
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```
 
 <!-- ## Issues

@@ -9,11 +9,11 @@ https://github.com/Stashchenko/sonarqube/blob/dc356fb8550c1c8605ae49c5c10a2b0e53
 
 ### Plugins
 
-- [SonarQube PHP Plugin](/sonar-php-plugin.md)
+- [SonarQube PHP Plugin](/sonarsource/plugins/sonarqube-php-plugin.md)
 
 ### Dependencies
 
-- [SonarQube](/sonarqube.md#docker)
+- [SonarQube](/sonarsource/sonarqube.md#docker)
 
 #### Unix-like
 
@@ -73,21 +73,26 @@ sonar-scanner -h
 echo -e '[INFO]\thttp://127.0.0.1:9000'
 ```
 
-1. Projects -> Create new project
-   - Project key: com.example.app:master
+1. Projects -> Manually
    - Display name: My App Production
+   - Project key: com.example.app:master
    - Set Up
-2. Provide a token
-   - Generate a token: [token]
+2. How do you want to analyze your repository? Locally
+3. Analyze your project / Provide a token
+   - Generate a token: my-app-token
    - Generate
    - Continue
-3. Run analysis on your project
+4. Analyze your project
    - What is your project's main language?: Other (JS, TS, Go, Python, PHP, ...)
    - What is your OS?: macOS
    - Download and unzip the Scanner for macOS: Click Download
    - Execute the Scanner from your computer
 
    ```sh
+   #
+   export SONAR_LOGIN_TOKEN=''
+
+   #
    sonar-scanner \
      -Dsonar.projectKey='com.example.app:master' \
      -Dsonar.projectName='My App Production' \
@@ -95,15 +100,21 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
      -Dsonar.sources='./' \
      -Dsonar.exclusions='./vendor/**,./tests/**' \
      -Dsonar.language='php' \
+     -Dsonar.php.coverage.reportPaths='./phpunit.coverage.xml' \
+     -Dsonar.php.tests.reportPath='./phpunit.report.xml' \
      -Dsonar.host.url='http://127.0.0.1:9000' \
      -Dsonar.sourceEncoding='UTF-8' \
      -Dsonar.dynamicAnalysis='reuseReports' \
-     -Dsonar.login='[token]'
+     -Dsonar.login="$SONAR_LOGIN_TOKEN"
    ```
 
    ***Or***
 
    ```sh
+   #
+   export SONAR_LOGIN_TOKEN=''
+
+   #
    cat << EOF > ./sonar-project.properties
    sonar.projectKey=com.example.app:master
    sonar.projectName=My App Production
@@ -111,6 +122,8 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
 
    sonar.sources=./
    sonar.exclusions=./vendor/**,./tests/**
+   sonar.php.coverage.reportPaths=./phpunit.coverage.xml
+   sonar.php.tests.reportPath=./phpunit.report.xml
 
    sonar.language=php
 
@@ -124,12 +137,15 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
    ```sh
    sonar-scanner \
      -Dproject.settings=./sonar-project.properties \
-     -Dsonar.login='[token]'
+     -Dsonar.login="$SONAR_LOGIN_TOKEN"
    ```
 
 ```sh
 # Git ignore
 echo '/.scannerwork' >> ~/.gitignore_global
+
+#
+echo '/phpunit.*.xml' >> ./.gitignore
 ```
 
 ## Docker
@@ -144,3 +160,36 @@ docker run -it --rm \
   --name sonar-scanner \
   docker.io/sonarsource/sonar-scanner-cli:4.6
 ```
+
+## Maven Plugin
+
+### Usage
+
+```sh
+#
+mvn sonar:sonar \
+  -Dsonar.login=[username] \
+  -Dsonar.password=[password]
+
+#
+mvn sonar:sonar \
+  -Dsonar.projectKey=[secret] \
+  -Dsonar.host.url=http://127.0.0.1:9000 \
+  -Dsonar.login=[hash]
+
+#
+mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=[secret] \
+  -Dsonar.host.url=http://127.0.0.1:9000 \
+  -Dsonar.login=[hash]
+```
+
+<!-- ### Issues -->
+
+<!-- ####
+
+```log
+[ERROR] Failed to execute goal org.codehaus.mojo:sonar-maven-plugin:2.6:sonar (default-cli) on project [project-name]: Can not execute SonarQube analysis: Plugin org.codehaus.sonar:sonar-maven3-plugin:7.9.2.30863 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.codehaus.sonar:sonar-maven3-plugin:jar:7.9.2.30863: Could not transfer artifact org.codehaus.sonar:sonar-maven3-plugin:pom:7.9.2.30863 from/to central (https://repo.maven.apache.org/maven2): Received fatal alert: protocol_version -> [Help 1]
+```
+
+TODO -->

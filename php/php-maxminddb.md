@@ -36,10 +36,3 @@ php -m | grep maxminddb
 # Info
 php -i | grep '^maxminddb$' -A 4
 ```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
-```

@@ -17,17 +17,10 @@ phpbrew -d ext install \
 ## Verify
 
 ```sh
+#
 php -m | grep pgsql
-```
 
-```sh
+#
 php -i | grep -i pgsql
 # php -i | grep '^pgsql$' -A 6
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```

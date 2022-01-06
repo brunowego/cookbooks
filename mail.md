@@ -1,4 +1,25 @@
-# mail
+# Mail
+
+<!--
+Himalayas
+
+Panelbear
+Netflix
+Nomad
+Scribd
+OLX
+Statuspage
+Udemy
+Lee Robinson
+Avocode Team
+Spark
+WeTransfer
+Rebel
+Republic
+Workplace
+Auth0
+GoDaddy
+-->
 
 ## Tools
 
@@ -36,8 +57,15 @@ EOMAIL
 
 ```txt
 name+group@example.com
+feedback@example.com
 invoices@example.com
-security@example.com
 sales@example.com
+security@example.com
+social@example.com
+media@example.com
 support@example.com
+buyers@example.com
+sellers@example.com
+info@example.com
+employees@example.com
 ```

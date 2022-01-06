@@ -66,6 +66,14 @@ The operation can’t be completed because some items had to be skipped. For eac
 
 TODO -->
 
+<!-- ###
+
+```log
+The operation can’t be completed because the item “[name]” is in use.
+```
+
+TODO -->
+
 ### True Tone
 
 1. System Preferences

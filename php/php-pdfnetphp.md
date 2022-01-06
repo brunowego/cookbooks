@@ -70,10 +70,3 @@ php -m | grep PDFNetPHP
 #
 php -i | grep '^PDFNetPHP$' -A 1
 ```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
-```

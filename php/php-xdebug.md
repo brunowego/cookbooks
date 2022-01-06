@@ -32,10 +32,10 @@ phpbrew -d ext install \
 ## Configuration
 
 ```sh
-# Check
+# Linux
 echo "$(locate xdebug.so)"
 
-#
+# Linux/Darwin
 sudo tee -a "$(php -i | grep -oE /.+/php.ini)" << EOF
 
 [xdebug]
@@ -45,11 +45,11 @@ EOF
 #
 sudo tee -a "$(php -i | grep -oE /.+/php.ini)" << EOF
 
-xdebug.remote_autostart=on
-xdebug.remote_enable=on
+xdebug.start_with_request=on
+xdebug.mode=debug
 xdebug.remote_handler=dbgp
-xdebug.remote_host=127.0.0.1
-xdebug.remote_port=9000
+xdebug.client_host=127.0.0.1
+xdebug.client_port=9000
 
 xdebug.var_display_max_children=256
 xdebug.var_display_max_data=1024
@@ -65,11 +65,4 @@ php -m | grep xdebug
 
 # Info
 php -i | grep '^xdebug$' -A 76
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```

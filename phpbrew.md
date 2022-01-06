@@ -236,8 +236,8 @@ Error: Make failed: make: *** [sapi/cli/php] Error 1
 
 ```sh
 phpbrew -d install \
-  # ... \
-  --no-patch
+  --no-patch \
+  # ...
 ```
 
 #### mbstring Error

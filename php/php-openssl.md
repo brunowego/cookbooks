@@ -46,13 +46,6 @@ php -m | grep openssl
 php -i | grep '^openssl$' -A 9
 ```
 
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
-```
-
 <!-- ## Issues
 
 ###

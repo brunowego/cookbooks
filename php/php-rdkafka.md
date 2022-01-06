@@ -31,18 +31,11 @@ phpbrew -d ext install \
 ## Verify
 
 ```sh
+#
 php -m | grep rdkafka
-```
 
-```sh
+#
 php -i | grep '^rdkafka$' -A 6
-```
-
-## Service
-
-```sh
-# FPM
-phpbrew fpm restart
 ```
 
 ## Issues

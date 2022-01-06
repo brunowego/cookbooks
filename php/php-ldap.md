@@ -53,16 +53,9 @@ EOF
 ## Verify
 
 ```sh
+#
 php -m | grep ldap
-```
 
-```sh
+#
 php -i | grep '^ldap$' -A 7
-```
-
-## Service
-
-```sh
-# PHPBrew
-phpbrew fpm restart
 ```
