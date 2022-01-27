@@ -7,6 +7,7 @@
 #### Homebrew
 
 ```sh
+# <= Mojave
 brew install mysql-utilities
 ```
 

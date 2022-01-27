@@ -8,23 +8,34 @@ autoprefixer
 
 - [Code Repository](https://github.com/browserslist/browserslist)
 
-## Configuration
+## Library
 
-<!-- ```sh
-cat << EOF > ./.browserslistrc
-defaults
-not IE 11
-maintained node versions
-EOF
-``` -->
+### Configuration
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```json
 {
   // ...
   "browserslist": [
-    "> 1%"
+    "defaults"
   ]
 }
+```
+
+## CLI
+
+### Commands
+
+```sh
+npx browserslist -h
+```
+
+### Usage
+
+```sh
+#
+npx browserslist --coverage 'defaults'
+npx browserslist --coverage '> 1%'
+npx browserslist --coverage 'last 1 version, > 1%, IE 10'
 ```

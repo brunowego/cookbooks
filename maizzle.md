@@ -1,5 +1,9 @@
 # Maizzle
 
+## Links
+
+- [Code Repository](https://maizzle.com/)
+
 ## CLI
 
 ### Installation

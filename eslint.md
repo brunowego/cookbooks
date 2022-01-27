@@ -20,22 +20,20 @@
 
 ## CLI
 
-### Usage
+### Commands
 
 ```sh
 npx eslint -h
 ```
 
-<!-- ### Configuration
+### Usage
 
 ```sh
 #
-cat << EOF > ./.eslintignore
-/.git
-EOF
-``` -->
+npx eslint ./
+```
 
-<!-- ### Installation
+### Installation
 
 #### Homebrew
 
@@ -43,44 +41,21 @@ EOF
 brew install eslint
 ```
 
-#### NPM
-
-```sh
-npm install eslint @matchlayer/eslint-config-base -D
-```
-
-#### Yarn
-
-```sh
-yarn add eslint @matchlayer/eslint-config-base -D
-``` -->
-
-<!-- ### Commands
-
-```sh
-eslint -h
-``` -->
-
-<!-- ### Configuration
+#### NPM or Yarn
 
 ```sh
 #
-cat << EOF > .eslintrc.json
-{
-  "root": true,
-  "extends": "@matchlayer/eslint-config-base",
-  "env": {
-    "browser": true,
-    "node": true
-  }
-}
+npm install eslint --save-dev
 
-EOF
-``` -->
+#
+yarn add eslint --dev
+```
 
-<!-- **Refer:** `package.json` -->
+### Bootstrap
 
-<!-- ```json
+**Refer:** `./package.json`
+
+```json
 {
   "scripts": {
     "lint": "eslint ./"
@@ -88,39 +63,17 @@ EOF
 }
 ```
 
-```sh
-sort-package-json
-``` -->
-
-<!-- #### Overrides
+<!-- **Refer:** `./.eslintrc.json`
 
 ```json
 {
-  "root": true,
-  "overrides": [{
-    "files": "./**/*.js",
-    "excludedFiles": "./**/*.test.js",
-    "extends": [
-      "@matchlayer/eslint-config-base/esm"
-    ],
-    "env": {
-      "browser": true
-    }
-  }, {
-    "files": "./**/*.test.js",
-    "extends": [
-      "@matchlayer/eslint-config-base/cjs"
-    ],
-    "env": {
-      "node": true
-    }
-  }]
+  // ...
+  "rules": {
+    "comma-dangle": ["warn", "always-multiline"],
+    "semi": ["warn", "never"]
+  }
 }
 ``` -->
-
-<!-- ### Next
-
-- [lint-staged](/lint-staged.md) -->
 
 ## Tips
 

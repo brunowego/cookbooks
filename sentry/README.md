@@ -2,6 +2,10 @@
 
 <!--
 https://blog.sentry.io/2018/07/17/source-code-fetching
+
+- operations
+- desktop
+- web-frontend
 -->
 
 ## Links

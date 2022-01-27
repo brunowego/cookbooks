@@ -1,4 +1,4 @@
-# Actions NPM
+# Actions Node.js
 
 ## Workflow
 
@@ -12,7 +12,15 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout Code
+      uses: actions/checkout@v2
+      with:
+        # Disabling shallow clone is recommended for improving relevancy of reporting
+        fetch-depth: 0
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 14.2.0
 
     - name: Cache NPM dependencies
       uses: actions/cache@v1

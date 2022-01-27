@@ -1,6 +1,8 @@
 # HashiCorp Terraform
 
 <!--
+sensitive = true
+
 https://github.com/im2nguyen/rover
 
 https://github.com/resource-watch/api-infrastructure
@@ -258,6 +260,16 @@ terraform apply \
   -var-file "./vars/terraform-$(terraform workspace show).tfvars"
 ```
 
+#### Remove Specific State
+
+```sh
+#
+terraform state list
+
+#
+terraform state rm '[state]'
+```
+
 #### Destroy Specific State
 
 ```sh
@@ -270,21 +282,25 @@ terraform destroy \
   -var-file "./vars/terraform-$(terraform workspace show).tfvars"
 ```
 
-#### Remove Specific State
-
-```sh
-terraform state rm '[state]'
-```
-
 #### Import
 
 **Docs:** [Import Command](https://www.terraform.io/docs/cli/commands/import.html#example-import-into-resource).
 
 ```sh
+#
+terraform state list
+
+#
+terraform state show '[resource-addr]'
+
+#
 terraform import \
   -var-file "./vars/terraform-$(terraform workspace show).tfvars" \
-  '[addr]' [id]
+  '[resource-addr]' \
+  '[resource-id]'
 ```
+
+**Tip:** Normally "Resource ID" is used in the URL of remote resource.
 
 <!-- #### Login/Logout
 

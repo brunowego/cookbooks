@@ -110,6 +110,14 @@ kubectl logs \
 
 ### Issues
 
+#### Missing Discovery Type
+
+```log
+Exception in thread "main" java.nio.file.NoSuchFileException: /usr/share/elasticsearch/config/jvm.options
+```
+
+Set environment variable `discovery.type` with value `single-node`.
+
 #### Disk Usage Exceeded
 
 ```log

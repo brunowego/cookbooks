@@ -84,6 +84,10 @@ php ./bin/console assets:install --no-interaction
 
 ### Tips
 
+#### HTTP Error 500 (Enable Debug)
+
+If showing HTTP error 500, try set `debug` to `true` in `./public/index.php`.
+
 #### Migrations
 
 **Bundles:** [DoctrineMigrationsBundle](https://symfony.com/bundles/DoctrineMigrationsBundle/current/index.html)

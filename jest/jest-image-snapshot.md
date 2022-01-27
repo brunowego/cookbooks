@@ -2,7 +2,7 @@
 
 ## Library
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```json
 {

@@ -80,6 +80,24 @@ npm get prefix
 
 ### Tips
 
+#### Inherit Node Environment
+
+**Refer:** `./package.json`
+
+```json
+{
+  "scripts": {
+    "build": "NODE_ENV=${NODE_ENV:-prod} node ./index.js",
+  }
+}
+```
+
+#### Set Specific Version
+
+```sh
+npm install -g npm@6.14.15
+```
+
 #### Delete node_modules Folders
 
 ```sh
@@ -222,6 +240,29 @@ rm -fR ~/.npm
 ## Dockerfile
 
 ### Image
+
+```sh
+cat << EOF > ./default.conf
+server {
+    listen 80;
+    server_name localhost;
+
+    location / {
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+    }
+
+    location /server_status {
+        stub_status;
+    }
+
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root /usr/share/nginx/html;
+    }
+}
+EOF
+```
 
 ```Dockerfile
 FROM docker.io/library/node:13.5.0-alpine AS build

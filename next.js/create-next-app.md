@@ -1,0 +1,91 @@
+# Create Next App
+
+## Links
+
+- [Main Website](https://nextjs.org/docs/api-reference/create-next-app)
+
+## CLI
+
+### Commands
+
+```sh
+# Using NPM
+npx create-next-app@latest -h
+
+# Using Yarn
+yarn create next-app -h
+```
+
+### Bootstrap
+
+```sh
+# Using NPM
+npx create-next-app@latest \
+  --ts \
+  --use-npm \
+  [app-name] && \
+    "$_"
+
+# Using Yarn
+yarn create next-app \
+  --ts \
+  [app-name] && \
+    "$_"
+```
+
+### Scaffold
+
+<!--
+functions
+-->
+
+```sh
+#
+mkdir -p ./src/{config,constants,components,hooks,layouts,lib,types,utils}
+
+#
+mkdir -p ./test/{e2e,unit}
+
+#
+mv ./{pages,styles} ./src
+
+# Git Ignore
+cat << EOF > ./.gitignore
+/.next
+/node_modules
+EOF
+```
+
+### Components
+
+```sh
+touch ./src/components/Page/{index,Header,Footer}.tsx
+touch ./src/components/Button/index.tsx
+```
+
+### Special Pages
+
+```sh
+touch ./src/pages/404.tsx
+```
+
+<!-- ###
+
+```sh
+touch ./src/pages/__middleware.ts
+touch ./src/pages/_document.tsx
+``` -->
+
+<!--
+# ESLint Ignore
+echo '/.next' >> ./.eslintignore
+-->
+
+<!--
+cat << EOF >> ./.gitignore
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+EOF
+-->

@@ -42,6 +42,7 @@ action-[name]
 - [Context and expression syntax for GitHub Actions / Operators](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#operators)
 - [Environments](https://docs.github.com/en/actions/reference/environments)
 - [Workflow syntax for GitHub Actions / Filter pattern cheat sheet](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet)
+- [Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts)
 
 ## Links
 

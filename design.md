@@ -1,9 +1,5 @@
 # Design
 
-<!--
-https://rideshur.com/
--->
-
 ## Links
 
 - [Designer Slack Communities](https://designerslack.community/)

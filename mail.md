@@ -19,6 +19,7 @@ Republic
 Workplace
 Auth0
 GoDaddy
+Uphold
 -->
 
 ## Tools
@@ -53,19 +54,36 @@ EOMAIL
 
 ## Tips
 
+### Double Hyphens
+
+```txt
+Body
+
+--
+
+Signature
+```
+
 ### Company Emails
 
 ```txt
 name+group@example.com
+
+contact@example.com
 feedback@example.com
 invoices@example.com
-sales@example.com
 security@example.com
 social@example.com
 media@example.com
 support@example.com
+
+info@example.com
+press@example.com
+
+sales@example.com
+
 buyers@example.com
 sellers@example.com
-info@example.com
+
 employees@example.com
 ```

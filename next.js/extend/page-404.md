@@ -1,0 +1,16 @@
+# Next.js Page 404
+
+## Basic Structure
+
+```sh
+#
+cat << EOF > ./src/pages/404.tsx
+import Error from 'next/error'
+
+function NotFound() {
+  return <Error statusCode={404} />
+}
+
+export default NotFound
+EOF
+```

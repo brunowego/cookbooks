@@ -12,9 +12,15 @@ https://github.com/datalayer-examples/webpack-federation-examples
 
 ## CLI
 
+### Commands
+
+```sh
+npx webpack -h
+```
+
 ### Usage
 
 ```sh
-# Initialize
-npx webpack-cli init
+#
+npx webpack init
 ```

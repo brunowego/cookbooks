@@ -15,5 +15,4 @@ https://www.youtube.com/watch?v=A2KufQupz78
 ## References
 
 - [COIN360](https://coin360.com)
-
-TODO
+- [Bitcoin Halving Countdown](https://coinmarketcap.com/halving/bitcoin/)

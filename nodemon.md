@@ -12,12 +12,12 @@ npm install nodemon -D
 
 ### Configuration
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```json
 {
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon ./index.js"
+    "dev": "cross-env NODE_ENV='development' nodemon ./index.js"
   }
 }
 ```
@@ -25,6 +25,29 @@ npm install nodemon -D
 ## Docker
 
 ### Image
+
+```sh
+cat << EOF > ./default.conf
+server {
+    listen 80;
+    server_name localhost;
+
+    location / {
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+    }
+
+    location /server_status {
+        stub_status;
+    }
+
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root /usr/share/nginx/html;
+    }
+}
+EOF
+```
 
 ```Dockerfile
 FROM docker.io/library/node:13.5.0-alpine AS build

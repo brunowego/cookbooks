@@ -12,6 +12,15 @@
 <meta name="robots" content="noindex" />
 ```
 
+### Disallow All
+
+```sh
+cat << EOF > ./robots.txt
+User-agent: *
+Disallow: /
+EOF
+```
+
 ### WordPress
 
 ***example.com***

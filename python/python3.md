@@ -212,6 +212,8 @@ python3 -h
 python3 --version 2>&1 | head -1
 
 # HTTP Server
+python3 -m http.server --cgi 3000
+
 python3 \
   -m http.server \
   --cgi \

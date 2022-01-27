@@ -212,6 +212,15 @@ git credential approve
 
 ### Tips
 
+#### Add Git Keep
+
+```.gitignore
+/cache/*
+!/cache/.gitkeep
+/logs/*
+!logs/.gitkeep
+```
+
 #### Remove Local Branches Except Main
 
 ```sh

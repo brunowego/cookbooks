@@ -4,6 +4,12 @@
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install lighthouse
+```
+
 #### NPM
 
 ```sh

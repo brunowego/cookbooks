@@ -1,3 +1,5 @@
 # Lorem Ipsum
 
-TODO
+## Links
+
+- [Generator](https://loremipsum.io/generator/)

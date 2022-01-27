@@ -7,6 +7,8 @@ https://github.com/chdsbd/kodiak
 https://media-exp1.licdn.com/dms/image/sync/C4E27AQFXhz19BLKTlg/articleshare-shrink_800/0/1620311917375?e=1620406800&v=beta&t=kcsEPLfDy2Up6iCcr7gyH9OIJhH0Pgj09CtvABBcVGc
 
 https://github.com/cla-assistant/cla-assistant
+
+https://github.community/t/picture-tag-in-markdown/149471
 -->
 
 ## References
@@ -14,6 +16,7 @@ https://github.com/cla-assistant/cla-assistant
 - [Government](https://government.github.com/community/)
 - [myOctocat](https://myoctocat.com/)
 - [GitHub Status](https://githubstatus.com/)
+- [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
 
 ## API
 
@@ -39,6 +42,7 @@ https://github.com/cla-assistant/cla-assistant
 
 - [User Avatar](https://github.com/brunowego.png)
 - [Issues / Assigned](https://github.com/issues/assigned)
+- [How can we help with your forks?](https://support.github.com/request/fork)
 
 ## Search
 

@@ -16,3 +16,7 @@ https://edu.b3.com.br/
 
 - [B3 (A.k.a Bovespa)](http://b3.com.br/)
 - [Fundamentus](https://fundamentus.com.br/)
+
+<!--
+https://money.cnn.com/data/fear-and-greed/
+-->

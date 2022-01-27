@@ -44,11 +44,13 @@ EOF
 #
 mkdir -p ./.k8s/overlays/local
 
+#
 cat << EOF > ./.k8s/overlays/local/.env
 APP_ENV=local
 APP_HOST=my-app.127.0.0.1.nip.io
 EOF
 
+#
 cat << EOF > ./.k8s/overlays/local/kustomization.yaml
 ---
 apiVersion: kustomize.config.k8s.io/v1beta1
@@ -100,6 +102,7 @@ configurations:
 ./kustomizeconfig.yaml
 
 ```yaml
+---
 varReference:
 - kind: ExternalSecret
   path: spec/data[]/key

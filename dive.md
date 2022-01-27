@@ -1,5 +1,7 @@
 # dive
 
+**Keywords:** Inspect Docker Image
+
 ## CLI
 
 ### Installation

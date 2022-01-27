@@ -82,7 +82,7 @@ npx tsc --init
 
 Add `'**/*.ts?(x)': () => 'npm run build-types'` to `.lintstagedrc.mjs`.
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```json
 {

@@ -58,7 +58,7 @@ sudo yum -y install nodejs
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 sudo apt update
-sudo apt -y install nodejs
+sudo DEBIAN_FRONTEND=noninteractive apt -y install nodejs
 ```
 
 #### APK

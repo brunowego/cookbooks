@@ -21,7 +21,7 @@ cat << EOF > ./.np-config.json
 EOF
 ```
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```js
 {

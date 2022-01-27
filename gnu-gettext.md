@@ -1,5 +1,9 @@
 # GNU Gettext
 
+## Links
+
+- [Main Website](https://gnu.org/software/gettext/)
+
 ## CLI
 
 ### Installation
@@ -29,6 +33,19 @@ sudo yum -y install gettext-devel
 ```sh
 apk update
 apk add gettext gettext-dev
+```
+
+### Commands
+
+```sh
+gettext -h
+```
+
+### Usage
+
+```sh
+#
+xgettext -D ./src/pages -o ./src/locales/en-US.po
 ```
 
 ### Tips

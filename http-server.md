@@ -19,6 +19,10 @@ http-server -h
 ### Usage
 
 ```sh
+#
+http-server ./
+
+#
 http-server \
   ./ \
   -p 3000 \

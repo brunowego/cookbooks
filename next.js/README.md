@@ -85,57 +85,6 @@ https://github.com/tensight/tensight-app
 npx next -h
 ```
 
-### Bootstrap
-
-```sh
-#
-npx create-next-app@latest -h
-
-#
-npx create-next-app@latest \
-  --ts \
-  --use-npm \
-  [app-name] && \
-    "$_"
-
-#
-mkdir -p ./src/{components,hooks,layouts,lib,types,utils}
-
-#
-mv ./{pages,styles} ./src
-
-# Git Ignore
-cat << EOF > ./.gitignore
-/.next
-/node_modules
-EOF
-```
-
-<!--
-touch ./src/components/Page/index.tsx
-touch ./src/components/Page/Header.tsx
-touch ./src/components/Page/Footer.tsx
-touch ./src/components/Button/index.tsx
-
-touch ./src/pages/404.tsx
-touch ./src/pages/__middleware.ts
-touch ./src/pages/_document.tsx
--->
-
-<!--
-# ESLint Ignore
-echo '/.next' >> ./.eslintignore
--->
-
-<!--
-cat << EOF >> ./.gitignore
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-EOF
--->
-
 ### Configuration
 
 ```sh

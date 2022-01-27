@@ -13,3 +13,10 @@
 ```sh
 brew install colordiff
 ```
+
+<!-- ### Usage
+
+```sh
+#
+colordiff
+``` -->

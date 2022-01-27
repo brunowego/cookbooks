@@ -98,14 +98,6 @@ npx yarn global bin
 
 ### Tips
 
-#### Run Commands
-
-```sh
-cat << EOF >> ./.yarnrc
-save-prefix = ~
-EOF
-```
-
 #### Git Attributes
 
 Add [text rules](/gitattributes.md#text)

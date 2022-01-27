@@ -12,7 +12,7 @@ npm install standard-version -D
 
 ### Configuration
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```json
 {

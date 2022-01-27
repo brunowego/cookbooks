@@ -22,7 +22,7 @@ https://github.com/kubernetes-up-and-running/kuard
 
 - [Let's Encrypt](/letsencrypt.md)
 
-## kubectl
+## kubectl (CLI)
 
 ### Guides
 
@@ -53,13 +53,25 @@ kubectl cert-manager check api
 kubectl get certificates
 
 #
-kubectl cert-manager status certificate [name]
+kubectl cert-manager status certificate [cert-name]
 
 #
-kubectl delete certificaterequest [name]
+kubectl get certificaterequest
 
 #
-kubectl cert-manager renew [name]
+kubectl delete certificaterequest [cert-req-id]
+
+#
+kubectl get certificates
+
+#
+kubectl cert-manager renew [cert-name]
+
+#
+kubectl get certificaterequest
+
+#
+kubectl describe certificaterequest [cert-req-id]
 ```
 
 ## Helm

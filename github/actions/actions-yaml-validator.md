@@ -24,6 +24,9 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2
+      with:
+        # Disabling shallow clone is recommended for improving relevancy of reporting
+        fetch-depth: 0
 
     - name: Linting YAML Files
       uses: ibiqlik/action-yamllint@v2

@@ -21,23 +21,23 @@ dig -h
 
 ```sh
 #
-dig google.com
+dig example.com
 
 #
-dig +short google.com
+dig +short example.com
 
 #
-dig @8.8.8.8 google.com
+dig @8.8.8.8 example.com
 
 #
 dig -x 8.8.8.8
 
 #
-dig MX google.com
+dig MX example.com
 
 #
-dig -t txt google.com
+dig -t txt example.com
 
 #
-dig A +short google.com
+dig A +short example.com
 ```

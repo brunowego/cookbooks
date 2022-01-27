@@ -2,17 +2,18 @@
 
 ## Types
 
-- `.gitignore`
-- `.npmignore`
-- `.dockerignore`
-- `.coffeelintignore`
-- `.slugignore`
 - `.atomignore`
-- `.hgignore`
-- `.vscodeignore`
+- `.coffeelintignore`
+- `.dockerignore`
 - `.eslintignore`
+- `.gitignore`
+- `.hgignore`
+- `.npmignore`
 - `.prettierignore`
+- `.slugignore`
 - `.stylelintignore`
+- `.vercelignore`
+- `.vscodeignore`
 
 ## Tips
 

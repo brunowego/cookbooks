@@ -96,6 +96,7 @@ server {
 
 ```sh
 sudo rm -f /etc/nginx/sites-enabled/default
+
 sudo ln -s /etc/nginx/sites-available/[appname] /etc/nginx/sites-enabled
 ```
 

@@ -40,6 +40,34 @@ KUBEKUTR_VERSION="$(curl -s https://api.github.com/repos/kubernetes-sigs/aws-iam
 aws-iam-authenticator help
 ```
 
+<!-- ### Tips
+
+####
+
+```yaml
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: kube-system
+  name: aws-iam-authenticator
+  labels:
+    k8s-app: aws-iam-authenticator
+data:
+  config.yaml: |
+    clusterID: $(CLUSTER_FULLNAME)
+    server:
+      mapRoles:
+      - roleARN: arn:aws:iam::[id]:role/GoogleApps-Admins
+        username: '{{SessionName}}'
+        groups:
+        - system:masters
+      - roleARN: arn:aws:iam::[id]:role/GoogleApps-Developers
+        username: '{{SessionName}}'
+        groups:
+        - system:masters
+``` -->
+
 ### Issues
 
 #### Missing CLI

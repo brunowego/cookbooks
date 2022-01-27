@@ -17,6 +17,13 @@ sudo apt update
 sudo apt -y install autoconf
 ```
 
+#### APK
+
+```sh
+sudo apk update
+sudo apk add autoconf
+```
+
 #### YUM
 
 ```sh

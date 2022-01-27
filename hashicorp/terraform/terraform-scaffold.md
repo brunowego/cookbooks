@@ -4,7 +4,7 @@
 
 ````sh
 #
-mkdir -p ./.terraform
+mkdir -p ./.terraform/{modules,policies,vars}
 
 #
 cat << \EOF > ./.terraform/.gitignore
@@ -71,7 +71,10 @@ cat << \EOF > ./.terraform/README.md
 
 ## Running
 
-```sh
+\```sh
+#
+cd ./.terraform
+
 #
 terraform init
 
@@ -98,7 +101,7 @@ terraform state list
 
 #
 terraform output
-```
+\```
 EOF
 ````
 

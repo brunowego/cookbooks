@@ -43,7 +43,7 @@ git remote -v
 git remote add pages 'https://github.com/[]/[repository].git'
 ```
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```json
 {

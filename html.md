@@ -30,6 +30,16 @@ https://linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 
 ### Tips
 
+#### Redirect
+
+```html
+<h1>Redirecting</h1>
+<p>If you are not redirected automatically, follow this <a href="http://example.com">link to Example</a>.</p>
+<script type="text/javascript">
+  window.location.href = "http://example.com";
+</script>
+```
+
 #### Visual Studio Code
 
 ```sh

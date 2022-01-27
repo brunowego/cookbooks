@@ -20,15 +20,19 @@ npx husky
 
 ### Installation
 
-#### NPM
+#### NPM or Yarn
 
 ```sh
+#
 npm install husky --save-dev
+
+#
+yarn add husky --dev
 ```
 
 ### Bootstrap
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```json
 {

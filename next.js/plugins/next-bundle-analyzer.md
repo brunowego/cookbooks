@@ -6,17 +6,25 @@
 
 ## Library
 
+## Dependencies
+
+- [cross-env](/cross-env.md)
+
 ### Installation
 
-#### NPM
+### NPM or Yarn
 
 ```sh
+# Using NPM
 npm install @next/bundle-analyzer --save-dev
+
+# Using Yarn
+yarn add @next/bundle-analyzer --dev
 ```
 
 ### Configuration
 
-**Refer:** `next.config.mjs`
+**Refer:** `./next.config.mjs`
 
 ```mjs
 import nextBundleAnalyzer from '@next/bundle-analyzer'
@@ -27,7 +35,7 @@ const withBundleAnalyzer = nextBundleAnalyzer({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ...
+  reactStrictMode: true,
 }
 
 export default withBundleAnalyzer(nextConfig)
@@ -37,13 +45,13 @@ export default withBundleAnalyzer(nextConfig)
 ANALYZE=true npm run build
 ```
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```json
 {
   "scripts": {
     // ...
-    "build:analyze": "cross-env ANALYZE=true npm run build"
+    "build:analyze": "cross-env ANALYZE=true npm run build",
   }
 }
 ```

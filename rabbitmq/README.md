@@ -19,6 +19,8 @@ https://rabbitmq.com/cli.html
 https://rabbitmq.com/installing-plugins.html
 https://github.com/search?q=%22kind%3A+RabbitmqCluster%22+%22rabbitmq_peer_discovery_k8s%22&type=Code
 https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq
+
+https://stackoverflow.com/questions/11459676/delete-all-the-queues-from-rabbitmq
 -->
 
 ## Alternatives
@@ -88,7 +90,7 @@ choco install rabbitmq
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
-**Homebrew**
+#### Homebrew
 
 ```sh
 # RabbitMQ
@@ -204,6 +206,12 @@ rabbitmq-plugins \
 ```
 
 ### Tips
+
+####
+
+```sh
+rabbitmqctl list_queues | awk '{ print $1 }' | xargs -L1 rabbitmqctl delete_queue
+```
 
 #### User Management
 

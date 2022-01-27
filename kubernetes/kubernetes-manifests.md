@@ -109,3 +109,62 @@ spec:
     rollingUpdate:
       maxUnavailable: 1
 ```
+
+## Startup Probes
+
+**Docs:** [Configure Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
+
+```yaml
+# ...
+spec:
+  # ..
+  template:
+    # ...
+    spec:
+      containers:
+      - # ...
+        livenessProbe:
+          exec:
+            command:
+            - cat
+            - /tmp/healthy
+          initialDelaySeconds: 5
+          periodSeconds: 5
+
+# ...
+spec:
+  # ..
+  template:
+    # ...
+    spec:
+      containers:
+      - # ...
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            httpHeaders:
+            - name: Custom-Header
+              value: Awesome
+          initialDelaySeconds: 3
+          periodSeconds: 3
+
+# ...
+spec:
+  # ..
+  template:
+    # ...
+    spec:
+      containers:
+      - # ...
+        readinessProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        livenessProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 15
+          periodSeconds: 20
+```

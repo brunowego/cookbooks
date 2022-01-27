@@ -31,7 +31,7 @@ npm install @playwright/test --save-dev
 
 ### Configuration
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```json
 {

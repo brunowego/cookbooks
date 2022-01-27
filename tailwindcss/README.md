@@ -47,10 +47,14 @@ npx tailwindcss -h
 
 ### Installation
 
-#### NPM
+#### NPM or Yarn
 
 ```sh
+# Using NPM
 npm install @tailwindcss/jit tailwindcss postcss autoprefixer --save-dev
+
+# Using Yarn
+yarn add @tailwindcss/jit tailwindcss postcss autoprefixer --dev
 ```
 
 ### Bootstrap
@@ -95,7 +99,10 @@ mv ./tailwind.config.js ./tailwind.config.cjs
 cat << EOF > ./tailwind.config.cjs
 const tailwindConfig = {
   mode: 'jit',
-  content: ['./src/**/*.{ts,tsx}'],
+  content: [
+    './src/components/**/*.{ts,tsx}',
+    './src/pages/**/*.{ts,tsx}'
+  ],
   theme: {
     extend: {},
   },
@@ -109,27 +116,32 @@ module.exports = tailwindConfig
 EOF
 
 #
-cat << EOF > ./src/styles/main.css
+cat << EOF > ./src/styles/globals.css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  h1 {
-    @apply mt-24 text-5xl px-6 font-extrabold tracking-tight;
-  }
-}
 EOF
 ```
 
 ### Usage
 
 ```sh
-#
-npm run start
+# Using NPM
+npm run dev
+
+# Using Yarn
+yarn dev
 ```
 
 ### Tips
+
+#### Vercel Ignore
+
+**Docs:** [Ignored Files and Folders](https://vercel.com/docs/concepts/deployments/build-step#ignored-files-and-folders)
+
+```sh
+echo '!/tailwind.config.cjs' >  ./.vercelignore
+```
 
 #### Visual Studio Code
 
@@ -137,10 +149,25 @@ npm run start
 code \
   --install-extension bradlc.vscode-tailwindcss \
   --install-extension heybourn.headwind
+
+# For HTML
+jq '."tailwindCSS.includeLanguages".plaintext |= "html"' "$PWD/.vscode/settings.json" | \
+  sponge "$PWD/.vscode/settings.json"
+
+# For Typescript
+jq '."tailwindCSS.includeLanguages".typescript |= "javascript"' "$PWD/.vscode/settings.json" | \
+  sponge "$PWD/.vscode/settings.json"
+
+jq '."tailwindCSS.includeLanguages".typescriptreact |= "javascript"' "$PWD/.vscode/settings.json" | \
+  sponge "$PWD/.vscode/settings.json"
 ```
 
-<!-- ####
+### Issues
 
-"tailwindCSS.includeLanguages": {
-  "plaintext": "html"
-}, -->
+#### Miss Content Configuration
+
+```log
+warn - No utilities were generated there is likely a problem with the `content` key in the tailwind config. For more information see the documentation: https://tailwindcss.com/docs/content-configuration
+```
+
+Change `'./src/**/*.{ts,tsx}'` to `'./src/pages/**/*.{ts,tsx}'`.

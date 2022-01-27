@@ -34,8 +34,7 @@ sudo yum -y install gcc
 
 ```sh
 apk update
-apk add gcc
-# libc-dev
+apk add gcc libc-dev
 ```
 
 #### Zypper

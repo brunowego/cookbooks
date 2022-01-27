@@ -1,5 +1,9 @@
 # MailHog
 
+<!-- ## Alternatives
+
+- []() -->
+
 ## CLI
 
 ### Installation

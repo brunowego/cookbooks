@@ -4,6 +4,11 @@
 "format": "prettier --write src",
 -->
 
+## Links
+
+- [Code Repository](https://github.com/prettier/prettier)
+- [Main Website](https://prettier.io/)
+
 ## CLI
 
 ### Commands
@@ -14,17 +19,20 @@ npx prettier -h
 
 ### Configuration
 
-```sh
+<!--
 #
 cat << EOF > ./.prettierignore
 /package*.json
 EOF
+-->
 
+```sh
 #
 cat << EOF > ./.prettierrc
 {
   "semi": false,
-  "singleQuote": true
+  "singleQuote": true,
+  "jsxSingleQuote": false
 }
 EOF
 ```
@@ -33,7 +41,7 @@ EOF
 
 ```sh
 #
-npx prettier ./
+npx prettier --write ./**/*.{css,json,md,mjs,tsx}
 ```
 
 ### Installation
@@ -44,10 +52,14 @@ npx prettier ./
 brew install prettier
 ```
 
-#### NPM
+#### NPM or Yarn
 
 ```sh
+# Using NPM
 npm install prettier --save-dev
+
+# Using Yarn
+yarn add prettier --dev
 ```
 
 ### Tips
@@ -66,10 +78,8 @@ jq '."editor.formatOnSave" |= true' "$PWD/.vscode/settings.json" | sponge "$PWD/
 jq '."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 ```
 
-<!--
-"format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
--->
+<!-- #### Ignore Comments
 
-<!-- prettier-ignore -->
-<!-- prettier-ignore -->
-<!-- markdownlint-disable MD010 -->
+```html
+prettier-ignore
+``` -->

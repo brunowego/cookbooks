@@ -10,6 +10,7 @@ https://angel.co/
 
 - [Why ‘Winner Takes All’ Startups Leave Everyone Behind](https://marker.medium.com/why-winner-takes-all-leaves-everyone-behind-19bd756e1610)
 - [AcquiredBy](https://acquiredby.co/)
+- [Google for Startups / Start](https://startup.google.com/start/)
 
 ## Tools
 

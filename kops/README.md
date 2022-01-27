@@ -132,12 +132,26 @@ kops \
 #
 kops export kubecfg \
   --admin
-
-kops export kubecfg \
-  --admin=24h
 ```
 
 ### Tips
+
+#### Export Kubeconfig
+
+```sh
+#
+kops export kubecfg \
+  --admin
+
+#
+kops export kubecfg \
+  --admin=24h
+
+#
+kops export kubecfg \
+  --admin \
+  --kubeconfig ./kubeconfig
+```
 
 #### Edit Cluster
 

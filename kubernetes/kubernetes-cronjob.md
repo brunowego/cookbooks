@@ -87,11 +87,15 @@ kubectl get jobs -o wide
 
 ### Suspend Cronjob
 
+**Tip:** Use [Lens](/lens.md) to force trigger.
+
 ```sh
 #
+kubens [namespace]
+
+#
 kubectl patch cronjobs [name] \
-  -p '{"spec":{"suspend":true}}' \
-  -n [namespace]
+  -p '{"spec":{"suspend":true}}'
 
 # Batch Action
 kubectl get cronjobs | \

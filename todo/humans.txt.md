@@ -1,3 +1,0 @@
-# Humans TXT
-
-TODO

@@ -58,19 +58,19 @@ source <(kompose completion zsh)
 #### Remove Creation Timestamp
 
 ```sh
-find ./ \
+find ./.k8s \
   -type f \
   -iname \*.yaml \
   -exec sed -i '/creationTimestamp: null/d' {} \;
 ```
 
-<!-- #### Remove Status
+#### Remove Status
 
 ```sh
-find ./ \
+find ./.k8s \
   -type f \
   -iname \*.yaml \
   -exec sed -i '/status: /d' {} \;
-``` -->
+```
 
 <!-- #### Consistent Indent Sequences -->

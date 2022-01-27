@@ -1,5 +1,10 @@
 # Process Manager 2 (PM2)
 
+## Links
+
+- [Code Repository](https://github.com/Unitech/pm2)
+- [Main Website](https://pm2.keymetrics.io/)
+
 ## References
 
 - [Cheatsheet](https://devhints.io/pm2)
@@ -133,6 +138,29 @@ echo -e '[INFO]\thttp://127.0.0.1:4000'
 ## Dockerfile
 
 ### Image
+
+```sh
+cat << EOF > ./default.conf
+server {
+    listen 80;
+    server_name localhost;
+
+    location / {
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+    }
+
+    location /server_status {
+        stub_status;
+    }
+
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root /usr/share/nginx/html;
+    }
+}
+EOF
+```
 
 ```Dockerfile
 FROM docker.io/library/node:13.5.0-alpine AS build

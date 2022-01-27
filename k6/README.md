@@ -76,7 +76,7 @@ npm install -D @types/k6 typescript
 mkdir -p ./test/stress
 ```
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```json
 {

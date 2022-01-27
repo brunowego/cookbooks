@@ -85,6 +85,7 @@ export KUBECTL_NAMESPACE='my-app'
 cat << EOF | kubectl apply \
   -n "$KUBECTL_NAMESPACE" \
   -f -
+---
 apiVersion: kubernetes-client.io/v1
 kind: ExternalSecret
 metadata:

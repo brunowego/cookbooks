@@ -2,7 +2,7 @@
 
 ## References
 
-- [Software Download](https://www.saicloud.com/software)
+- [Software Download](https://saicloud.com/software)
 
 ## Remove License
 

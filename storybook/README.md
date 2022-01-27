@@ -45,6 +45,7 @@ https://github.com/prisma/lens
 - [Viewport](https://github.com/storybookjs/storybook/tree/master/addons/viewport)
 
 <!--
+https://storybook.js.org/addons/storybook-zeplin
 https://github.com/tonai/storybook-addon-themes
 https://github.com/hipstersmoothie/storybook-dark-mode
 -->
@@ -82,18 +83,18 @@ npx -p @storybook/cli sb
 ### Commands
 
 ```sh
-sb -h
+npx sb -h
 ```
 
 ### Usage
 
 ```sh
 # Init
-sb init --type html
-sb init --type react
-sb init --type vue
-sb init --type angular
-sb init --type react_native
+npx sb init --type html
+npx sb init --type react
+npx sb init --type vue
+npx sb init --type angular
+npx sb init --type react_native
 
 # Running
 npm run storybook
@@ -101,7 +102,7 @@ npm run storybook
 
 ### Configuration
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```json
 {
@@ -113,7 +114,7 @@ npm run storybook
 ```
 
 ```sh
-echo '/public' > ./.gitignore
+echo '/public/sb' > ./.gitignore
 ```
 
 ### Presets

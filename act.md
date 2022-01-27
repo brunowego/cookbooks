@@ -128,13 +128,13 @@ jq '."files.associations".".secrets" |= "dotenv"' "$HOME/.config/Code/User/setti
 
 ### Issues
 
-<!-- ####
+#### Action Version Issue
 
 ```log
 Error: Parameter token or opts.auth is required
 ```
 
-TODO -->
+Try change action version to a previews version.
 
 #### Missing Artifact Cache
 

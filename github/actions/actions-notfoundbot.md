@@ -22,6 +22,9 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2
+      with:
+        # Disabling shallow clone is recommended for improving relevancy of reporting
+        fetch-depth: 0
 
     - name: Fix links
       uses: tmcw/notfoundbot@v2.0.0-beta.1

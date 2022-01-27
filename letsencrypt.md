@@ -9,6 +9,10 @@ https://medium.com/geekculture/will-you-be-impacted-by-letsencrypt-dst-root-ca-x
 Let’s Encrypt show email status usage
 -->
 
+## Related
+
+- [cert-manager](/cert-manager/README.md)
+
 ## CLI
 
 ### Installation

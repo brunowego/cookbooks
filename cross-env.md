@@ -7,12 +7,16 @@
 #### NPM
 
 ```sh
+# Using NPM
 npm install cross-env --save-dev
+
+# Using Yarn
+yarn add cross-env --dev
 ```
 
 ### Configuration
 
-**Refer:** `package.json`
+**Refer:** `./package.json`
 
 ```json
 {

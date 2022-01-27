@@ -36,6 +36,7 @@ echo '!/.lintstagedrc.mjs' >> ./.eslintignore
 ```sh
 #
 npx lint-staged
+# or
 npx lint-staged --concurrent false
 
 # Debug

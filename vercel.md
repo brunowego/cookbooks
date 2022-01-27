@@ -126,21 +126,29 @@ npx vercel billing ls
 
 ### Tips
 
+#### DNS
+
+<!--
+assets
+signatures
+-->
+
+`CNAME` to `cname.vercel-dns.com.`.
+
 #### Basic Configuration
 
 **Refer:** `./vercel.json`
 
 ```json
 {
-  "cleanUrls": true,
-  "trailingSlash": false
+  "cleanUrls": true
 }
 ```
 
 #### Ignore Files
 
 ```sh
-#
+# For NPM
 cat << EOF > ./.vercelignore
 /*
 
@@ -151,6 +159,20 @@ cat << EOF > ./.vercelignore
 !/package*.json
 !/postcss.config.js
 !/tsconfig.json
+EOF
+
+# For Yarn
+cat << EOF > ./.vercelignore
+/*
+
+!/public
+!/src
+!/next-env.d.ts
+!/next.config.mjs
+!/package.json
+!/postcss.config.js
+!/tsconfig.json
+!/yarn.lock
 EOF
 ```
 
@@ -192,3 +214,24 @@ TypeError: Cannot add property target, object is not extensible
 ```
 
 Need to investigate the file `next.config.mjs`.
+
+#### Missing Babel Config File
+
+```log
+Module not found: Can't resolve 'fs' in '/vercel/path0/node_modules/resolve-from'
+Module not found: Can't resolve 'module' in '/vercel/path0/node_modules/resolve-from'
+```
+
+```sh
+echo '!/.babelrc' >> ./.vercelignore
+```
+
+#### Missing ESLint Config File
+
+```log
+warn  - No ESLint configuration detected. Run next lint to begin setup
+```
+
+```sh
+echo '!/.eslintrc.json' >> ./.vercelignore
+```
