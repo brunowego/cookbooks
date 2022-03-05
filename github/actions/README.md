@@ -385,5 +385,5 @@ docker run -it --rm \
   -w /usr/src/app \
   --name ubuntu \
   --network workbench \
-  docker.io/catthehacker/ubuntu:act-latest /bin/bash
+  ghcr.io/catthehacker/ubuntu:act-latest /bin/bash
 ``` -->

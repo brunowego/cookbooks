@@ -174,7 +174,7 @@ http {
 		location = /health-check {
 				access_log off;
 				default_type application/json;
-				return 200 '{"status": "ok"}';
+				return 200 '{"status": "OK"}';
 		}
 	}
 }
@@ -225,7 +225,7 @@ http {
 		location = /health-check {
 				access_log off;
 				default_type application/json;
-				return 200 '{"status": "ok"}';
+				return 200 '{"status": "OK"}';
 		}
 	}
 }

@@ -1,6 +1,8 @@
 # Next.js
 
 <!--
+https://showwcase.com/
+
 const nextConfig = {
   swcMinify: true,
   i18n: { locales: ["ja"], defaultLocale: "ja" },
@@ -29,6 +31,7 @@ NEXT_PUBLIC_MY_ENV
 - [Mastering Next.js](https://masteringnextjs.com/)
 - [TypeScript](https://nextjs.org/docs/basic-features/typescript)
 - [Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
+- [Measuring performance](https://nextjs.org/docs/advanced-features/measuring-performance)
 
 ## Configuration
 
@@ -109,17 +112,62 @@ npm run dev
 npx next lint
 
 #
-npx next build
+npx next buld
 ```
 
 ### Tips
+
+#### Debug
+
+**Refer:** `./next.config.mjs`
+
+```mjs
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  reactStrictMode: true,
+  webpack: (config) => {
+    config.infrastructureLogging = {
+      debug: /PackFileCache/,
+    }
+
+    return config
+  },
+}
+
+export default nextConfig
+```
+
+#### Turn Off Logging
+
+**Refer:** `./next.config.mjs`
+
+```mjs
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  reactStrictMode: true,
+  webpack: (config) => {
+    config.infrastructureLogging = {
+      level: 'error',
+    }
+
+    return config
+  },
+}
+
+export default nextConfig
+```
 
 #### Clean Cache
 
 ```json
 {
   "scripts": {
-    "clean": "npx rimraf ./.next",
+    // "clean": "npx rimraf ./.next",
+    "clean": "yarn rimraf ./.next",
     "predev": "npm run clean",
     // ...
   }
@@ -143,7 +191,9 @@ mv ./next.config.js ./next.config.mjs
 
 #
 cat << EOF > ./next.config.mjs
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
   reactStrictMode: true,
 };
@@ -161,3 +211,111 @@ npx next export
 #
 echo '/out' >> ./.gitignore
 ```
+
+### Issues
+
+#### TBD
+
+```log
+TypeError: Cannot read properties of undefined (reading 'call')
+```
+
+<!--
+https://github.com/webpack/webpack-dev-server/issues/3869
+
+config.optimization = {
+  ...config.optimization,
+  runtimeChunk: false,
+  splitChunks: false,
+}
+-->
+
+TODO
+
+#### TBD
+
+```log
+API resolved without sending a response for /api/v1/posts, this may result in stalled requests.
+```
+
+TODO
+
+#### TBD
+
+```log
+Do not add <script> tags using next/head (see inline <script>). Use next/script instead.
+See more info here: https://nextjs.org/docs/messages/no-script-tags-in-head-component
+```
+
+TODO
+
+#### Mismatch Sharp
+
+```log
+Warning: For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'yarn add sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+```
+
+```sh
+# Using NPM
+npm install sharp --save
+
+# Using Yarn
+yarn add sharp
+```
+
+#### Mismatch with Resolve
+
+```log
+TypeError: Cannot read property 'uid' of undefined
+```
+
+```sh
+# Using NPM
+npm install resolve@1.20.0 --save-dev
+
+# Using Yarn
+yarn add resolve@1.20.0 --dev
+```
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "resolutions": {
+    "resolve": "1.20.0"
+  }
+}
+```
+
+#### Mismatch with Next.js Global Installation
+
+```log
+Error occurred prerendering page "/404". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Minified React error #321; visit https://reactjs.org/docs/error-decoder.html?invariant=321 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+```
+
+```sh
+#
+readlink -f "$(which next)"
+
+#
+npm uninstall next -g
+```
+
+#### TBD
+
+```log
+The target environment doesn't support dynamic import() syntax so it's not possible to use external type 'module' within a script
+```
+
+TODO
+
+#### TBD
+
+```log
+error - unhandledRejection: TypeError: res.once is not a function
+```
+
+TODO

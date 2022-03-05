@@ -65,7 +65,7 @@ yamllint -h
 ### Configuration
 
 ```sh
-cat << EOF > ./.yamllint.yaml
+cat << EOF > ./.yamllint.yml
 ---
 extends: default
 # ignore: |
@@ -105,4 +105,26 @@ yamllint ./
 
 ```sh
 code --install-extension fnando.linter
+```
+
+<!-- "yaml.validate": false -->
+
+### Issues
+
+#### Min Spaces From Content
+
+```log
+too few spaces before comment yamllint(comments)
+```
+
+**Refer:** `./.yamllint.yaml`
+
+```yaml
+---
+extends: default
+# ...
+rules:
+  # ...
+  comments:
+    min-spaces-from-content: 1
 ```

@@ -11,6 +11,11 @@ Near
 
 - [Org. Repository](https://github.com/ethereum)
 - [Main Website](https://ethereum.org)
+- [Wikipedia](https://en.wikipedia.org/wiki/Ethereum)
+
+## Tools
+
+- [Etherscan - Ethereum Blockchain Explorer](https://etherscan.io/)
 
 ## Terms
 

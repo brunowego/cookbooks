@@ -20,7 +20,7 @@ Lazy loading
 - [Google Lighthouse](https://github.com/GoogleChrome/lighthouse)
 - [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - [Google Search Console](https://search.google.com/search-console/about)
-- [Measure page quality](https://web.dev/measure/)
+- [Measure page quality](https://web.dev/measure/) **★**
 - [WebPageTest](https://webpagetest.org/)
 
 ## Metrics
@@ -34,3 +34,15 @@ Lazy loading
 ## Extensions
 
 - [Web Vitals for Chrome](https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma?hl=en)
+
+## Issues
+
+### Missing Link Title
+
+```log
+Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users.
+```
+
+```html
+<a title="Title" href="/"></a>
+```

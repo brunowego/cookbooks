@@ -1,23 +1,32 @@
 # Renovate
 
-<!--
-https://github.com/2color/ama-prisma/blob/main/renovate.json
--->
+## Alternative
+
+- [Dependabot](/github/dependabot.md)
 
 ## Links
 
 - [Code Repository](https://github.com/renovatebot/renovate)
 - [Main Website](https://renovatebot.com)
+- [Docs](https://docs.renovatebot.com/)
 
-<!-- ##
+## Configuration
 
-```sh
-cat << EOF > ./renovate.json
+**Refer:** `./renovate.json`
+
+```json
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
-  "masterIssue": true,
-  "reviewers": ["@brunowego"]
+  "automerge": true,
+  "dependencyDashboard": true,
+  "stabilityDays": 7,
+  "automergeType": "branch",
+  "packageRules": [
+    {
+      "packagePatterns": ["eslint"],
+      "groupName": "eslint",
+      "extends": ["schedule:monthly"]
+    }
+  ]
 }
-EOF
-``` -->
+```

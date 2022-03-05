@@ -6,10 +6,14 @@
 
 ## Library
 
-### Commands
+### Installation
 
 ```sh
-npx lint-staged -h
+# Using NPM
+# Use NPX
+
+# Using Yarn
+yarn add lint-staged --dev
 ```
 
 ### Configuration
@@ -31,28 +35,18 @@ EOF
 echo '!/.lintstagedrc.mjs' >> ./.eslintignore
 ```
 
-### Usage
-
-```sh
-#
-npx lint-staged
-# or
-npx lint-staged --concurrent false
-
-# Debug
-npx lint-staged -dv
-```
-
 ### Tips
 
 #### Using with Husky
 
 ```sh
-#
-npx husky add ./.husky/pre-commit 'npx lint-staged'
-
-#
+# Using NPM
+npx husky add ./.husky/pre-commit 'npx --no-install lint-staged'
 npx husky install
+
+# Using Yarn
+yarn husky add ./.husky/pre-commit 'yarn lint-staged'
+yarn husky install
 ```
 
 ### Issues
@@ -74,3 +68,31 @@ npx lint-staged --allow-empty
 ```
 
 Missing [Prettier](/prettier.md) package installation.
+
+<!-- #### TBD
+
+```log
+npm WARN exec The following package was not found and will be installed: lint-staged
+```
+
+TODO -->
+
+## CLI
+
+### Commands
+
+```sh
+npx lint-staged -h
+```
+
+### Usage
+
+```sh
+#
+npx lint-staged
+# or
+npx lint-staged --concurrent false
+
+# Debug
+npx lint-staged -dv
+```

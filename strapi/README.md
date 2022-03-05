@@ -1,5 +1,7 @@
 # Strapi
 
+**Keywords:** [Headless CMS](/headless-cms.md)
+
 ## Links
 
 - [Code Repository](https://github.com/strapi/strapi)

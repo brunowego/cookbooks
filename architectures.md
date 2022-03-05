@@ -1,5 +1,7 @@
 # Architectures
 
+## Operating System (OS)
+
 ```sh
 uname -m
 ```

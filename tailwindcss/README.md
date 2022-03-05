@@ -47,8 +47,6 @@ npx tailwindcss -h
 
 ### Installation
 
-#### NPM or Yarn
-
 ```sh
 # Using NPM
 npm install @tailwindcss/jit tailwindcss postcss autoprefixer --save-dev
@@ -59,9 +57,9 @@ yarn add @tailwindcss/jit tailwindcss postcss autoprefixer --dev
 
 ### Bootstrap
 
-```sh
-#
-cat << EOF > ./postcss.config.js
+**Refer:** `./postcss.config.js`
+
+```js
 const postcssConfig = {
   plugins: {
     tailwindcss: {},
@@ -70,7 +68,6 @@ const postcssConfig = {
 }
 
 module.exports = postcssConfig
-EOF
 ```
 
 <!-- #
@@ -95,14 +92,17 @@ npx tailwindcss init
 
 #
 mv ./tailwind.config.js ./tailwind.config.cjs
+```
 
-cat << EOF > ./tailwind.config.cjs
+**Refer:** `./tailwind.config.cjs`
+
+```cjs
+/**
+ * @type {import('tailwindcss/tailwind-config').TailwindConfig}
+ */
 const tailwindConfig = {
   mode: 'jit',
-  content: [
-    './src/components/**/*.{ts,tsx}',
-    './src/pages/**/*.{ts,tsx}'
-  ],
+  content: ['./src/components/**/*.{ts,tsx}', './src/pages/**/*.{ts,tsx}'],
   theme: {
     extend: {},
   },
@@ -113,14 +113,67 @@ const tailwindConfig = {
 }
 
 module.exports = tailwindConfig
-EOF
+```
 
-#
-cat << EOF > ./src/styles/globals.css
+**Refer:** `./src/styles/globals.css`
+
+```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-EOF
+```
+
+### Extend With
+
+#### Eslint
+
+```sh
+# Using NPM
+npm install eslint-plugin-tailwindcss --save-dev
+
+# Using Yarn
+yarn add eslint-plugin-tailwindcss --dev
+```
+
+**Refer:** `./.eslintrc.cjs`
+
+```cjs
+const eslintRC = {
+  extends: [
+    // ...
+    'plugin:tailwindcss/recommended',
+  ],
+  plugins: [
+    // ...
+    'tailwindcss'
+  ],
+}
+
+module.exports = eslintRC
+```
+
+#### Prettier
+
+```sh
+# Using NPM
+npm install prettier-plugin-tailwindcss --save-dev
+
+# Using Yarn
+yarn add prettier-plugin-tailwindcss --dev
+```
+
+**Refer:** `./prettier.config.cjs`
+
+```cjs
+/**
+ * @type {import('prettier').Options}
+ */
+const prettierConfig = {
+  // ...
+  tailwindConfig: './tailwind.config.cjs',
+}
+
+module.exports = prettierConfig
 ```
 
 ### Usage
@@ -163,6 +216,67 @@ jq '."tailwindCSS.includeLanguages".typescriptreact |= "javascript"' "$PWD/.vsco
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+The `content` option in your Tailwind CSS configuration is missing or empty.
+Configure your content sources or your generated CSS will be missing styles.
+https://tailwindcss.com/docs/content-configuration
+```
+
+TODO
+
+#### Missing Custom Classname Whitelist
+
+```log
+Classname 'text-primary-900' is not a Tailwind CSS class! eslint tailwindcss/no-custom-classname
+```
+
+**Refer:** `./.eslintrc.cjs`
+
+```cjs
+/**
+ * @type {import('@types/eslint').Linter.Config}
+ */
+const eslintRC = {
+  // ...
+  rules: {
+    // ...
+    'tailwindcss/no-custom-classname': [
+      'warn',
+      {
+        whitelist: ['(bg|text)\\-primary\\-([1-9]0|5)0'],
+      },
+    ],
+  },
+}
+
+module.exports = eslintRC
+```
+
+#### Invalid Classnames Order
+
+```log
+Invalid Tailwind CSS classnames order eslint tailwindcss/classnames-order
+```
+
+**Refer:** `./.eslintrc.cjs`
+
+```cjs
+/**
+ * @type {import('@types/eslint').Linter.Config}
+ */
+const eslintRC = {
+  // ...
+  rules: {
+    // ...
+    'tailwindcss/classnames-order': 'off',
+  },
+}
+
+module.exports = eslintRC
+```
 
 #### Miss Content Configuration
 

@@ -12,8 +12,6 @@
 
 ### Installation
 
-### NPM or Yarn
-
 ```sh
 # Using NPM
 npm install @next/bundle-analyzer --save-dev
@@ -33,7 +31,9 @@ const withBundleAnalyzer = nextBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 })
 
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
   reactStrictMode: true,
 }
@@ -51,7 +51,7 @@ ANALYZE=true npm run build
 {
   "scripts": {
     // ...
-    "build:analyze": "cross-env ANALYZE=true npm run build",
+    "build:analyze": "cross-env ANALYZE='true' npm run build",
   }
 }
 ```

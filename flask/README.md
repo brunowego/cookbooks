@@ -19,6 +19,8 @@ https://github.com/tannguyenit/flask-infrastructure-api
 https://www.packtpub.com/web-development/flask-framework-cookbook-second-edition
 https://www.packtpub.com/web-development/hands-on-docker-for-microservices-with-python
 https://github.com/tolgahanuzun/Flask-Login-Example
+
+https://github.com/GermanChair/RYSN
 -->
 
 ## Alternatives

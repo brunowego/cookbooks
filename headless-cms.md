@@ -1,7 +1,15 @@
-# Headless CMS
+# Headless Content Management System (CMS)
+
+**Keywords:** Content Platform
+
+## Related
+
+- [Jamstack (p.s.a. JAMStack) (JAM means: JavaScript, API's, Markup)](/jamstack.md)
 
 ## Options
 
-- [Netlify CMS](https://netlifycms.org/)
+- [Contentful](https://contentful.com/)
 - [Ghost](https://ghost.org/)
-- [Strapi](https://strapi.io/)
+- [Netlify CMS](https://netlifycms.org/)
+- [Sanity](/sanity/README.md)
+- [Strapi](/strapi/README.md)

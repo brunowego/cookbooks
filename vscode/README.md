@@ -107,26 +107,6 @@ code --disable-extension [extension]
 
 ### Tips
 
-#### Recommendations
-
-```sh
-cat << EOF > ./.vscode/extensions.json
-{
-  "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "mikestead.dotenv",
-    "graphql.vscode-graphql",
-    "esbenp.prettier-vscode",
-    "prisma.prisma",
-    "wix.vscode-import-cost",
-    "formulahendry.auto-close-tag",
-    "bradlc.vscode-tailwindcss",
-    "pkief.material-icon-theme"
-  ]
-}
-EOF
-```
-
 <!-- #### Settings
 
 ```sh
@@ -210,6 +190,12 @@ osascript -e 'quit app "Visual Studio Code"'
 - `Ctrl + Shift + l` Delete line
 
 ### Issues
+
+####
+
+```log
+The character U+2019 "’" could be confused with the character U+0060 "`", which is more common in source code. Adjust settings
+```
 
 #### Import Failed
 

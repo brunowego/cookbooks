@@ -49,7 +49,8 @@ import { PlaywrightTestConfig } from '@playwright/test'
 const playwrightConfig: PlaywrightTestConfig = {
   testDir: './test',
   webServer: {
-    command: 'npm run dev',
+    // command: 'npm run dev',
+    command: 'yarn dev',
     port: 3000,
     timeout: 30 * 1000,
     reuseExistingServer: !process.env.CI,

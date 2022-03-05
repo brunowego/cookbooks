@@ -1,19 +1,5 @@
 # Humans TXT
 
-<!--
-https://github.com/humans.txt
--->
+## Examples
 
-## Tips
-
-### Vercel Redirect
-
-**Refer:** `./vercel.json`
-
-```json
-{
-  "rewrites": [
-    { "source": "/humans.txt", "destination": "/about" }
-  ]
-}
-```
+- [https://github.com/humans.txt](https://github.com/humans.txt)

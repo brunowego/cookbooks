@@ -36,19 +36,16 @@ Content-Type: {{contentType}}
 EOF
 ```
 
-## Plugins
+## Tips
 
 ### Visual Studio Code
 
 **Tips**: Behind proxy, start Visual Studio Code with environment `http_proxy` from terminal.
 
 ```sh
+#
 code --install-extension humao.rest-client
-```
 
-```sh
-# Darwin
-osascript -e 'quit app "Visual Studio Code"'
-
-code --disable-extension humao.rest-client
+#
+jq '."recommendations" += ["humao.rest-client"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
 ```

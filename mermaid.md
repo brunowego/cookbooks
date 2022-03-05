@@ -8,6 +8,10 @@ https://sequencediagram.org/
 
 - [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/)
 
+## Posts
+
+- [GitHub / Include diagrams in your Markdown files with Mermaid](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/)
+
 ## Using
 
 ```mermaid

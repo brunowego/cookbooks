@@ -5,6 +5,12 @@ https://app.pluralsight.com/library/courses/applied-cryptography-getting-started
 https://app.pluralsight.com/library/courses/cryptography-principles-it-professionals-developers/table-of-contents
 -->
 
+<!--
+https://web3auth.io/
+
+https://atani.com/
+-->
+
 ## Glossary
 
 - Advanced Encryption Standard (AES)
@@ -13,6 +19,7 @@ https://app.pluralsight.com/library/courses/cryptography-principles-it-professio
 - Hardware Security Modules (HSM)
 - Public Key Infrastructure (PKI)
 - Rivest–Shamir–Adleman (RSA)
+- Relative Strength Index (RSI)
 
 <!--
 Encryption

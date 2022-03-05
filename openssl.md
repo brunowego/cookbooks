@@ -302,6 +302,10 @@ openssl s_client -connect www.paypal.com:443
 
 #### Generate Random
 
+<!--
+https://generate-secret.now.sh/32
+-->
+
 ```sh
 # Base64
 openssl rand -base64 20

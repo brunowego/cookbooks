@@ -2,18 +2,19 @@
 
 ## Links
 
+- [Main Website](https://yarnpkg.com/features/pnp)
 - [Docs](https://classic.yarnpkg.com/lang/en/docs/pnp/)
 
 ## CLI
 
-### Configuration
+<!-- ### Configuration
 
 ```sh
 cat << EOF >> ./.gitignore
 /.pnp
 /.pnp.js
 EOF
-```
+``` -->
 
 ### Usage
 

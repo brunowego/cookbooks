@@ -1,5 +1,9 @@
 # Secrets
 
+## Tools
+
+- [Generate Secret](https://generate-secret.vercel.app/32)
+
 ## Tips
 
 ### Generate

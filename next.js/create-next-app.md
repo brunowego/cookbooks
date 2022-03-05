@@ -33,15 +33,30 @@ yarn create next-app \
     "$_"
 ```
 
-### Scaffold
+#### [With Examples](https://github.com/vercel/next.js/tree/canary/examples)
 
-<!--
-functions
--->
+```sh
+# Using NPM
+npx create-next-app@latest \
+  --ts \
+  --use-npm \
+  -e with-tailwindcss \
+  [app-name] && \
+    "$_"
+
+# Using Yarn
+yarn create next-app \
+  --ts \
+  -e with-tailwindcss \
+  [app-name] && \
+    "$_"
+```
+
+### Scaffold
 
 ```sh
 #
-mkdir -p ./src/{config,constants,components,hooks,layouts,lib,types,utils}
+mkdir -p ./src/{assets/images,config,constants,components,hooks,layouts,lib,types,utils}
 
 #
 mkdir -p ./test/{e2e,unit}
@@ -50,24 +65,24 @@ mkdir -p ./test/{e2e,unit}
 mv ./{pages,styles} ./src
 
 # Git Ignore
-cat << EOF > ./.gitignore
+cat << EOF >> ./.gitignore
 /.next
 /node_modules
 EOF
 ```
 
-### Components
+<!-- ### Components
 
 ```sh
 touch ./src/components/Page/{index,Header,Footer}.tsx
 touch ./src/components/Button/index.tsx
-```
+``` -->
 
-### Special Pages
+<!-- ### Special Pages
 
 ```sh
 touch ./src/pages/404.tsx
-```
+``` -->
 
 <!-- ###
 
@@ -79,13 +94,4 @@ touch ./src/pages/_document.tsx
 <!--
 # ESLint Ignore
 echo '/.next' >> ./.eslintignore
--->
-
-<!--
-cat << EOF >> ./.gitignore
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-EOF
 -->

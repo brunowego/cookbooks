@@ -1,5 +1,5 @@
 # Stock
 
-## Links
+## Tools
 
-- [Alternatives](/alternatives.md#stock-photos)
+- [Stock Average Calculator](https://online-calculator.org/stock-average-calculator.aspx)

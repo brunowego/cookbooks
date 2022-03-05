@@ -1,22 +1,136 @@
 # ESLint
 
-<!--
-"lint": "set TIMING=1 && yarn lint:web && yarn lint:wcl && yarn lint:db && yarn lint:api",
-"lint:api": "eslint src/api --cache -c .eslintrc.api.js",
-"lint:db": "eslint src/db --cache -c .eslintrc.db.js",
-"lint:wcl": "eslint src/wcl --cache -c .eslintrc.wcl.js",
-"lint:web": "eslint src/web --cache -c .eslintrc.web.js && eslint src/pages --cache -c .eslintrc.web.js",
--->
+## Guides
 
-<!--
+- [Shareable Configs](https://eslint.org/docs/developer-guide/shareable-configs)
+
+## Library
+
+### Installation
+
+```sh
+# Using NPM
+npm install eslint --save-dev
+
+# Using Yarn
+yarn add eslint --dev
+```
+
+### Configuration
+
+**Refer:** `./package.json`
+
+```json
 {
-  "eslint.validate": [
-    "html",
-    "vue",
-    "javascript"
-  ]
+  "scripts": {
+    "lint": "eslint ./"
+  }
 }
--->
+```
+
+**Refer:** `./.eslintrc.cjs`
+
+```cjs
+/**
+ * @type {import('@types/eslint').Linter.Config}
+ */
+const eslintRC = {
+  extends: [
+    // ...
+  ],
+  plugins: [
+    // ...
+  ],
+  rules: {
+    'comma-dangle': ['warn', 'always-multiline'],
+    semi: ['warn', 'never'],
+    'no-console': [
+      'warn',
+      {
+        allow: ['warn', 'error'],
+      },
+    ],
+  },
+}
+
+module.exports = eslintRC
+```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension dbaeumer.vscode-eslint
+
+jq '."recommendations" += ["dbaeumer.vscode-eslint"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+```
+
+### Issues
+
+#### Missing Node Environment
+
+```log
+'module' is not defined. eslint
+```
+
+**Refer:** `./.eslintrc.cjs`
+
+```cjs
+/**
+ * @type {import('@types/eslint').Linter.Config}
+ */
+const eslintRC = {
+  env: {
+    node: true,
+  },
+}
+
+module.exports = eslintRC
+```
+
+#### Missing ES6 Environment
+
+```log
+Parsing error: The keyword 'const' is reserved eslint
+```
+
+**Refer:** `./.eslintrc.cjs`
+
+```cjs
+/**
+ * @type {import('@types/eslint').Linter.Config}
+ */
+const eslintRC = {
+  env: {
+    es6: true,
+  },
+}
+
+module.exports = eslintRC
+```
+
+#### Missing Source Type Module
+
+```log
+Parsing error: 'import' and 'export' may appear only with 'sourceType: module' eslint
+```
+
+**Refer:** `./.eslintrc.cjs`
+
+```cjs
+/**
+ * @type {import('@types/eslint').Linter.Config}
+ */
+const eslintRC = {
+  parserOptions: {
+    sourceType: 'module',
+  },
+}
+
+module.exports = eslintRC
+```
 
 ## CLI
 
@@ -35,49 +149,14 @@ npx eslint ./
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install eslint
 ```
 
-#### NPM or Yarn
+### Tips
 
-```sh
-#
-npm install eslint --save-dev
-
-#
-yarn add eslint --dev
-```
-
-### Bootstrap
-
-**Refer:** `./package.json`
-
-```json
-{
-  "scripts": {
-    "lint": "eslint ./"
-  }
-}
-```
-
-<!-- **Refer:** `./.eslintrc.json`
-
-```json
-{
-  // ...
-  "rules": {
-    "comma-dangle": ["warn", "always-multiline"],
-    "semi": ["warn", "never"]
-  }
-}
-``` -->
-
-## Tips
-
-### Debug Mode
+#### Debug Mode
 
 ```sh
 #
@@ -85,10 +164,4 @@ npx eslint --debug ./
 
 #
 DEBUG=eslint:* npx eslint ./
-```
-
-### Visual Studio Code
-
-```sh
-code --install-extension dbaeumer.vscode-eslint
 ```

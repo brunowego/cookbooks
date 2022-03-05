@@ -8,7 +8,6 @@ name: E2E Tests
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: 30 1 * * *
 

@@ -92,6 +92,10 @@ docker run -d \
   docker.io/library/mongo:4.4.6
 ```
 
+<!--
+MONGODB_URI='mongodb+srv://user:pass@127.0.0.1:27017/dev'
+-->
+
 ### Client
 
 ```sh

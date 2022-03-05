@@ -2,9 +2,9 @@
 
 ## Basic Structure
 
-```sh
-#
-cat << EOF > ./src/pages/404.tsx
+**Refer:** `./src/pages/404.tsx`
+
+```tsx
 import Error from 'next/error'
 
 function NotFound() {
@@ -12,5 +12,4 @@ function NotFound() {
 }
 
 export default NotFound
-EOF
 ```

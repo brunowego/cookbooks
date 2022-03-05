@@ -24,6 +24,10 @@ https://github.com/prisma/lens
 - [Intro to Storybook](https://www.learnstorybook.com/intro-to-storybook/)
 - [Visual Testing with Storybook](https://storybook.js.org/docs/html/workflows/visual-testing)
 
+## Guides
+
+- [Introduction to Storybook for Preact](https://storybook.js.org/docs/preact/get-started/introduction)
+
 ## Library
 
 ### Darwin
@@ -92,6 +96,7 @@ npx sb -h
 # Init
 npx sb init --type html
 npx sb init --type react
+npx sb init --type preact
 npx sb init --type vue
 npx sb init --type angular
 npx sb init --type react_native
@@ -114,7 +119,11 @@ npm run storybook
 ```
 
 ```sh
-echo '/public/sb' > ./.gitignore
+#
+echo '/public/sb' >> ./.eslintignore
+
+#
+echo '/public/sb' >> ./.gitignore
 ```
 
 ### Presets

@@ -55,7 +55,7 @@ De-coupling
 - Static Site Generator
   - Content sites
   - Simple to set up & manage
-- Headless CMS
+- [Headless CMS](/headless-cms.md)
   - User roles
   - WordPress-like
   - Fully-featured

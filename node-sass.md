@@ -11,5 +11,9 @@ Error: Node Sass does not yet support your current environment: OS X 64-bit with
 ```
 
 ```sh
+# Using NPM
 npm rebuild node-sass
+
+# Using Yarn
+yarn install --force
 ```

@@ -15,6 +15,10 @@ https://linkedin.com/learning/javascript-web-form-programming/building-modern-we
 
 - [ECMAScript](/ecmascript.md)
 
+## Terms
+
+- Immediately Invoked Function Expression (IIFE)
+
 ## Testing
 
 - JSUnit

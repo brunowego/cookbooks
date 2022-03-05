@@ -46,7 +46,7 @@ choco install -y yarn
 ### Configuration
 
 ```sh
-echo '/node_modules' > ./.gitignore
+echo '/node_modules' >> ./.gitignore
 ```
 
 ### Bootstrap
@@ -86,17 +86,41 @@ npx yarn -h
 ### Usage
 
 ```sh
-# Nextjs
-npx yarn create next-app
+#
+npx yarn create [app]
 
 #
 npx yarn pack
 
 #
 npx yarn global bin
+
+#
+npx yarn upgrade --latest
 ```
 
 ### Tips
+
+#### Visual Studio Code
+
+##### Search Exclusion
+
+```sh
+jq '."search.exclude"."yarn.lock" |= true' "$PWD/.vscode/settings.json" | \
+  sponge "$PWD/.vscode/settings.json"
+
+# For Yarn Berry
+jq '."search.exclude".".yarn" |= true' "$PWD/.vscode/settings.json" | \
+  sponge "$PWD/.vscode/settings.json"
+```
+
+##### Recommended Extensions
+
+```sh
+code \
+  --install-extension codezombiech.gitignore \
+  --install-extension sidneys1.gitconfig
+```
 
 #### Git Attributes
 
@@ -119,3 +143,20 @@ source ~/.zshrc
 
 rm ~/.zcompdump*
 ```
+
+### Issues
+
+#### TBD
+
+```log
+➤ YN0000: ┌ Resolution step
+➤ YN0002: │ eslint-plugin-tailwindcss@npm:3.5.0 doesn't provide autoprefixer (p90605), requested by tailwindcss
+➤ YN0000: │ Some peer dependencies are incorrectly met; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code
+```
+
+```sh
+yarn explain peer-requirements
+yarn explain peer-requirements [hash]
+```
+
+TODO

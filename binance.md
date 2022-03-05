@@ -4,6 +4,10 @@
 
 - [Main Website](https://binance.com)
 
+## Terms
+
+- One-Cancels-the-Other (OCO)
+
 ## App
 
 ### Installation

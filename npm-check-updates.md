@@ -1,5 +1,9 @@
 # npm-check-updates
 
+<!--
+yarn upgrade-interactive
+-->
+
 ## CLI
 
 ### Installation

@@ -321,6 +321,20 @@ git branch [branch-name] [tag-name]
 
 #### Visual Studio Code
 
+##### Search Exclusion
+
+```sh
+# Globally
+jq '."search.exclude"."**/.git" |= true' "$HOME/.config/Code/User/settings.json" | \
+  sponge "$HOME/.config/Code/User/settings.json"
+
+# Locally
+jq '."search.exclude"."**/.git" |= true' "$PWD/.vscode/settings.json" | \
+  sponge "$PWD/.vscode/settings.json"
+```
+
+##### Recommended Extensions
+
 ```sh
 code \
   --install-extension codezombiech.gitignore \

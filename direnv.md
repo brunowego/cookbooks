@@ -40,11 +40,38 @@ sudo yum -y install direnv
 direnv help
 ```
 
+### Environment
+
+For Bash or Zsh, put something like this in your shell:
+
+Bash: `$HOME/.bashrc`
+
+```sh
+# direnv
+eval "$(direnv hook bash)"
+```
+
+ZSH: `$HOME/.zshrc`
+
+```sh
+# direnv
+eval "$(direnv hook zsh)"
+```
+
+### Configuration
+
+```sh
+echo '/.envrc' >> ~/.gitignore_global
+```
+
 ### Usage
 
 ```sh
 #
 touch ./.envrc
+
+#
+direnv status
 
 #
 direnv allow ./

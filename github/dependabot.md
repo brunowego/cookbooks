@@ -1,5 +1,9 @@
 # Dependabot
 
+## Alternative
+
+- [Renovate](/renovate.md)
+
 ## Links
 
 - [Org. Repository](https://github.com/dependabot)
@@ -26,3 +30,8 @@ updates:
   - brunowego
 EOF
 ```
+
+<!--
+@dependabot ignore this minor version
+@dependabot ignore this major version
+-->

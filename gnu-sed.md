@@ -85,4 +85,7 @@ sed '1d' ~/.ssh/known_hosts
 docker exec -i [name] /bin/sh << EOSHELL
 sed -i 's/[pattern]/[text]/' [/path/to/file]
 EOSHELL
+
+# With Backup
+sed -i.old 's/[pattern]/[text]/' [/path/to/file]
 ```

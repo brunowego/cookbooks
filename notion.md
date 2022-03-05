@@ -12,6 +12,10 @@ https://www.notion.so/Roadmap-85a79965456d4238a47d7484f7b1d62e
 
 - [Notion Template Gallery](https://www.notion.so/Notion-Template-Gallery-181e961aeb5c4ee6915307c0dfd5156d)
 
+## Alternative
+
+- [AppFlowy](https://github.com/AppFlowy-IO/appflowy)
+
 ## App
 
 ### Installation

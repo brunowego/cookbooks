@@ -50,7 +50,7 @@ kubens [ns-name]
 kubectl cert-manager check api
 
 #
-kubectl get certificates
+kubectl get certificates -o wide
 
 #
 kubectl cert-manager status certificate [cert-name]
@@ -62,7 +62,7 @@ kubectl get certificaterequest
 kubectl delete certificaterequest [cert-req-id]
 
 #
-kubectl get certificates
+kubectl get certificates -o wide
 
 #
 kubectl cert-manager renew [cert-name]
@@ -217,7 +217,7 @@ letsencrypt-prod
 
 ```sh
 #
-kubectl get certificates
+kubectl get certificates -o wide
 
 #
 kubectl describe certificate [name]
@@ -270,7 +270,7 @@ kubectl get certificaterequests
 kubectl delete certificaterequest [name]
 
 #
-kubectl get certificates
+kubectl get certificates -o wide
 
 #
 kubectl cert-manager renew [name]

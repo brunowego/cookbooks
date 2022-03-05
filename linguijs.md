@@ -9,16 +9,14 @@
 
 ### Installation
 
-#### NPM or Yarn
-
 ```sh
 # Using NPM
-npm install @lingui/react
-npm install @babel/core babel-plugin-macros @lingui/cli @lingui/core @lingui/loader @lingui/macro --save-dev
+npm install @lingui/core @lingui/loader @lingui/macro @lingui/react
+npm install @babel/core babel-plugin-macros @lingui/cli --save-dev
 
 # Using Yarn
-yarn add @lingui/react
-yarn add @babel/core babel-plugin-macros @lingui/cli @lingui/core @lingui/loader @lingui/macro --dev
+yarn add @lingui/core @lingui/loader @lingui/macro @lingui/react
+yarn add @babel/core babel-plugin-macros @lingui/cli --dev
 ```
 
 <!--
@@ -77,8 +75,6 @@ export default linguiConfig
 ## CLI
 
 ### Installation
-
-#### NPM or Yarn
 
 ```sh
 # Using NPM

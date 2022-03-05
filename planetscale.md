@@ -2,6 +2,7 @@
 
 <!--
 https://github.com/planetscale/integrations/tree/main/vercel/nextjs-example
+https://github.com/planetscale/beam
 -->
 
 ## Alternatives
@@ -46,6 +47,7 @@ pscale auth login
 pscale database create [db-name]
 pscale branch create [db-name] initial-setup
 pscale branch create [db-name] shadow
+pscale branch list
 
 #
 pscale shell [db-name] main

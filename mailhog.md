@@ -1,8 +1,8 @@
 # MailHog
 
-<!-- ## Alternatives
+## Alternatives
 
-- []() -->
+- [MailCatcher](/mailcatcher.md)
 
 ## CLI
 

@@ -88,8 +88,7 @@ Add `'**/*.ts?(x)': () => 'npm run build-types'` to `.lintstagedrc.mjs`.
 {
   "scripts": {
     // ...
-    "build:types": "tsc --noEmit --pretty"
-    // "typecheck": "tsc --noEmit --pretty"
+    "typecheck": "tsc --noEmit --pretty"
   }
 }
 ```

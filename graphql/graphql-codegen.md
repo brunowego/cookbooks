@@ -2,8 +2,11 @@
 
 <!--
 @graphql-codegen/cli
+@graphql-codegen/near-operation-file-preset
+@graphql-codegen/typed-document-node
 @graphql-codegen/typescript
 @graphql-codegen/typescript-operations
+@graphql-codegen/typescript-resolvers
 -->
 
 ## Links

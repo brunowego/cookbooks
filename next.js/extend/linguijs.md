@@ -65,7 +65,9 @@ import linguiConfig from './lingui.config.js'
 
 const { locales, sourceLocale } = linguiConfig
 
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
@@ -96,7 +98,7 @@ import { useEffect } from 'react'
 import { I18nProvider } from '@lingui/react'
 import { i18n } from '@lingui/core'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   const { locale } = useRouter()
 
   useEffect(() => {
@@ -111,13 +113,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [locale])
 
   return (
-    <I18nProvider i18n={i18n}>
+    <I18nProvider i18n={i18n} forceRenderOnLocaleChange={false}>
       <Component {...pageProps} />
     </I18nProvider>
   )
 }
 
-export default MyApp
+export default App
 ```
 
 <!-- ```tsx
@@ -129,3 +131,18 @@ import { Trans } from '@lingui/macro'
 <!-- ```tsx
 <Html lang={this.props.locale}>
 ``` -->
+
+## Issues
+
+### Force Render On Locale Change
+
+```log
+I18nProvider did not render. A call to i18n.activate still needs to happen or forceRenderOnLocaleChange must be set to false.
+```
+
+```tsx
+{/* ... */}
+<I18nProvider i18n={i18n} forceRenderOnLocaleChange={false}>
+  {/* ... */}
+</I18nProvider>
+```

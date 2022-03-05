@@ -1,8 +1,10 @@
 # Sentry + Next.js
 
-## Installation
+<!--
+enabled: process.env.NODE_ENV !== 'development',
+-->
 
-### NPM or Yarn
+## Installation
 
 ```sh
 # Using NPM
@@ -22,31 +24,83 @@ yarn add @sentry/nextjs
 ```sh
 #
 npx @sentry/wizard -i nextjs
+
+#
+yarn workspace [@package/name] dlx @sentry/wizard -i nextjs
+```
+
+```sh
+#
+mv ./next.config.js ./next.config.mjs
+mv ./src/pages/_error.js ./src/pages/_error.tsx
+mv ./sentry.client.config.js ./sentry.client.config.ts
+mv ./sentry.server.config.js ./sentry.server.config.ts
 ```
 
 **Refer:** `./next.config.mjs`
 
 ```mjs
-import withPlugins from 'next-compose-plugins'
 import { withSentryConfig } from '@sentry/nextjs'
 
-/** @type {import('next').NextConfig} */
+const isDev = process.env.NODE_ENV === 'development'
+
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
   reactStrictMode: true,
-  sentryWebpackPluginOptions: {
-    silent: true,
+  sentry: {
+    disableServerWebpackPlugin: isDev,
+    disableClientWebpackPlugin: isDev,
   },
 }
 
-export default withPlugins([[withSentryConfig]], nextConfig)
+const SentryWebpackPluginOptions = {
+  silent: true,
+}
+
+export default withSentryConfig(nextConfig, SentryWebpackPluginOptions)
 ```
 
-```sh
-#
-rm ./src/pages/_error.js
+**Refer:** `./sentry.client.config.ts`
 
-#
-cat << \EOF > ./src/pages/_error.tsx
+```ts
+import * as Sentry from '@sentry/nextjs'
+
+const SENTRY_DSN = process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN
+
+Sentry.init({
+  enabled: process.env.NODE_ENV !== 'development',
+  dsn: SENTRY_DSN,
+  tracesSampleRate: 1.0,
+})
+```
+
+**Refer:** `./sentry.properties`
+
+```ini
+defaults.url=https://sentry.io/
+defaults.org=[organization]
+defaults.project=[project]
+```
+
+**Refer:** `./sentry.server.config.ts`
+
+```ts
+import * as Sentry from '@sentry/nextjs'
+
+const SENTRY_DSN = process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN
+
+Sentry.init({
+  enabled: process.env.NODE_ENV !== 'development',
+  dsn: SENTRY_DSN,
+  tracesSampleRate: 1.0,
+})
+```
+
+**Refer:** `./src/pages/_error.tsx`
+
+```tsx
 import { ReactElement } from 'react'
 import { NextPageContext } from 'next'
 import NextErrorComponent, { ErrorProps as NextErrorProps } from 'next/error'
@@ -95,8 +149,11 @@ ErrorPage.getInitialProps = async ({ res, err, asPath }: NextPageContext) => {
 }
 
 export default ErrorPage
-EOF
+```
 
+### Environment Variables
+
+```sh
 #
 export SENTRY_DSN=''
 export SENTRY_AUTH_TOKEN=''
@@ -112,10 +169,4 @@ cat << EOF >> ./.example.env
 SENTRY_DSN=
 SENTRY_AUTH_TOKEN=
 EOF
-
-#
-echo '/.env' >> ./.gitignore
-
-#
-echo '!/sentry.*.config.ts' >> ./.vercelignore
 ```

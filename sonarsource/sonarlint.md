@@ -16,3 +16,9 @@
 ```sh
 code --install-extension SonarSource.sonarlint-vscode
 ```
+
+<!--
+~/.config/Code/User/settings.json
+
+sonarlint.rules
+-->

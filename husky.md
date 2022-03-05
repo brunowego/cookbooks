@@ -20,13 +20,11 @@ npx husky
 
 ### Installation
 
-#### NPM or Yarn
-
 ```sh
-#
+# Using NPM
 npm install husky --save-dev
 
-#
+# Using Yarn
 yarn add husky --dev
 ```
 
@@ -37,8 +35,8 @@ yarn add husky --dev
 ```json
 {
   "scripts": {
+    "prepare": "husky install",
     // ...
-    "prepare": "husky install"
   }
 }
 ```

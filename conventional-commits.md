@@ -2,15 +2,22 @@
 
 ## References
 
-- [Conventional Commits](https://conventionalcommits.org/en/)
+- [Main Website](https://conventionalcommits.org/en/)
+- [Rules](https://github.com/conventional-changelog/commitlint/blob/master/docs/reference-rules.md)
 
-## Usage
+## Related
+
+- [commitlint](/conventional-changelog/commitlint.md#cli)
+
+## Pattern
+
+### Usage
 
 ```text
 type(category): description [flags]
 ```
 
-### Allowed `<type>` values
+#### Allowed `<type>` values
 
 - breaking
 - build
@@ -26,7 +33,7 @@ type(category): description [flags]
 - style
 - test
 
-### Example `<scope>` values
+#### Example `<scope>` values
 
 - init
 - runner

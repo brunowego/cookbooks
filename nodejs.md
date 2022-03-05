@@ -16,6 +16,7 @@ https://linkedin.com/learning/node-js-essential-training-3/learn-the-node-js-fun
 ## Guides
 
 - [package.json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
+- [Optional chaining (?.)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
 
 ## Related
 
@@ -130,6 +131,16 @@ node
 ```
 
 ### Tips
+
+#### Kill Node.js Processes
+
+```sh
+#
+killall node
+
+# Or
+kill -9 $(ps aux | grep node | grep -v grep | awk '{print $2}')
+```
 
 #### Engines Definition
 

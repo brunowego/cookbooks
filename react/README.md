@@ -81,3 +81,31 @@ https://www.npmjs.com/package/omit
 ## Terms
 
 - React Server Components (RSC)
+
+## Tips
+
+### Visual Studio Code
+
+```sh
+code --install-extension dsznajder.es7-react-js-snippets
+```
+
+<!--
+rafce
+-->
+
+## Issues
+
+### TBD
+
+```log
+This JSX tag's 'children' prop expects a single child of type 'ReactChildren', but multiple children were provided. ts(2746)
+```
+
+### TBD
+
+```log
+TypeError: Cannot read property 'map' of undefined
+```
+
+TODO

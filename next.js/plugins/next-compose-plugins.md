@@ -2,14 +2,12 @@
 
 ## Installation
 
-### NPM or Yarn
-
 ```sh
 # Using NPM
-npm install next-compose-plugins --save-dev
+npm install next-compose-plugins
 
 # Using Yarn
-yarn add next-compose-plugins --dev
+yarn add next-compose-plugins
 ```
 
 ## Configuration
@@ -19,10 +17,12 @@ yarn add next-compose-plugins --dev
 ```mjs
 import withPlugins from 'next-compose-plugins'
 
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
   reactStrictMode: true,
 }
 
-export default withPlugins([...plugins], nextConfig)
+export default withPlugins([], nextConfig)
 ```

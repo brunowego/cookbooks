@@ -44,7 +44,9 @@ https://linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 
 ```sh
 #
-code --install-extension formulahendry.auto-close-tag
+code \
+  --install-extension formulahendry.auto-close-tag \
+  --install-extension tht13.html-preview-vscode
 
 #
 jq '."html.format.wrapAttributes" |= "force-aligned"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"

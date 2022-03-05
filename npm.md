@@ -18,7 +18,7 @@ Included in [Node.js](/nodejs.md) package installers.
 ### Configuration
 
 ```sh
-echo '/node_modules' > ./.gitignore
+echo '/node_modules' >> ./.gitignore
 ```
 
 ### Commands
@@ -79,6 +79,22 @@ npm get prefix
 ```
 
 ### Tips
+
+#### Visual Studio Code
+
+##### Exclude from Files
+
+```sh
+jq '."files.exclude"."./**/node_modules" |= true' "$PWD/.vscode/settings.json" | \
+  sponge "$PWD/.vscode/settings.json"
+```
+
+##### Exclude from Search
+
+```sh
+jq '."search.exclude"."**/node_modules" |= true' "$PWD/.vscode/settings.json" | \
+  sponge "$PWD/.vscode/settings.json"
+```
 
 #### Inherit Node Environment
 

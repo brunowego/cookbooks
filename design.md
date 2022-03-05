@@ -1,5 +1,24 @@
 # Design
 
+<!--
+https://himalayas.app/login
+https://tidio.com/pricing/
+
+https://hellolanding.com/
+https://climb.care/
+https://stint.co/
+https://highnoteplatform.com/
+https://figurehr.com/
+https://coastpay.com/
+https://oku.club/
+https://signup.corellium.com/
+https://capsulecrm.com/
+https://launchdarkly.com/
+https://unit.co/
+https://ornikar.com/
+https://replay.io/
+-->
+
 ## Links
 
 - [Designer Slack Communities](https://designerslack.community/)

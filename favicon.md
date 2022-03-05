@@ -7,6 +7,7 @@ https://github.com/tailwindlabs/tailwindcss.com/tree/master/public/favicons
 ## Tools
 
 - [favicon.io](https://favicon.io/)
+- [Favicon checker](https://realfavicongenerator.net/favicon_checker)
 
 ## Markup HTML
 
@@ -30,12 +31,20 @@ https://github.com/tailwindlabs/tailwindcss.com/tree/master/public/favicons
 
 ```sh
 convert \
-  -resize x64 \
+  -resize x32 \
   -gravity center \
-  -crop 64x64+0+0 \
-  ./image.png \
+  -crop 32x32+0+0 \
+  ./favicon.png \
   -flatten \
   -colors 256 \
   -background transparent \
+  ./favicon.ico
+
+convert ./favicon.png \
+  -background white \
+  \( -clone 0 -resize 32x32 -extent 32x32 \) \
+  -delete 0 \
+  -alpha off \
+  -colors 16 \
   ./favicon.ico
 ```

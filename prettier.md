@@ -9,50 +9,13 @@
 - [Code Repository](https://github.com/prettier/prettier)
 - [Main Website](https://prettier.io/)
 
-## CLI
+## Guides
 
-### Commands
+- [Configuration File / Sharing configurations](https://prettier.io/docs/en/configuration.html#sharing-configurations)
 
-```sh
-npx prettier -h
-```
-
-### Configuration
-
-<!--
-#
-cat << EOF > ./.prettierignore
-/package*.json
-EOF
--->
-
-```sh
-#
-cat << EOF > ./.prettierrc
-{
-  "semi": false,
-  "singleQuote": true,
-  "jsxSingleQuote": false
-}
-EOF
-```
-
-### Usage
-
-```sh
-#
-npx prettier --write ./**/*.{css,json,md,mjs,tsx}
-```
+## Library
 
 ### Installation
-
-#### Homebrew
-
-```sh
-brew install prettier
-```
-
-#### NPM or Yarn
 
 ```sh
 # Using NPM
@@ -60,6 +23,61 @@ npm install prettier --save-dev
 
 # Using Yarn
 yarn add prettier --dev
+```
+
+### Configuration
+
+```sh
+# Using NPM
+cat << EOF > ./.prettierignore
+/package*.json
+EOF
+
+# Using Yarn
+cat << EOF > ./.prettierignore
+/package.json
+/yarn.lock
+EOF
+```
+
+```sh
+#
+cat << EOF > ./prettier.config.cjs
+/**
+ * @type {import('prettier').Options}
+ */
+const prettierConfig = {
+  semi: false,
+  singleQuote: true,
+}
+
+module.exports = prettierConfig
+EOF
+```
+
+### Extend With
+
+#### Eslint
+
+```sh
+# Using NPM
+npm install eslint-config-prettier --save-dev
+
+# Using Yarn
+yarn add eslint-config-prettier --dev
+```
+
+**Refer:** `./.eslintrc.cjs`
+
+```cjs
+const eslintRC = {
+  extends: [
+    // ...
+    'prettier',
+  ],
+}
+
+module.exports = eslintRC
 ```
 
 ### Tips
@@ -76,6 +94,9 @@ code --install-extension esbenp.prettier-vscode
 jq '."editor.formatOnSave" |= true' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 
 jq '."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+
+#
+jq '."recommendations" += ["esbenp.prettier-vscode"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
 ```
 
 <!-- #### Ignore Comments
@@ -83,3 +104,25 @@ jq '."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD/.vscode/settin
 ```html
 prettier-ignore
 ``` -->
+
+## CLI
+
+### Commands
+
+```sh
+npx prettier -h
+```
+
+### Usage
+
+```sh
+#
+npx prettier --write ./**/*.{css,json,md,mjs,tsx}
+```
+
+### Installation
+
+```sh
+# Using Homebrew
+brew install prettier
+```

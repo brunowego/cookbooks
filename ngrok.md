@@ -38,6 +38,16 @@ brew install --cask ngrok
     sudo unzip tmp.zip && sudo rm tmp.zip )
 ```
 
+### Configuration
+
+#### Authtoken
+
+Access [ngrok dashboard](https://dashboard.ngrok.com) and copy authtoken.
+
+```sh
+ngrok authtoken [token]
+```
+
 ### Commands
 
 ```sh
@@ -52,16 +62,6 @@ ngrok http 80
 
 # TCP
 ngrok tcp 22
-```
-
-### Configuration
-
-#### Authtoken
-
-Access [ngrok dashboard](https://dashboard.ngrok.com) and copy authtoken.
-
-```sh
-ngrok authtoken [token]
 ```
 
 ### Tips

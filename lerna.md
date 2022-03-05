@@ -11,38 +11,20 @@ https://medium.com/@harshverma04111989/creating-monorepo-using-lerna-dd431d0db07
 https://github.com/AlexSav94/lerna-ci-example/tree/5b74d7af74c8573e7ca660211f762a55aeb12df9
 -->
 
-## References
+## Alternatives
 
-- [Conventional Commits](/conventionalcommits.md)
+- [Monorepo Tools](/monorepo.md#tools)
 
-## npx
-
-### Initialize
-
-```sh
-npx lerna init
-```
-
-## CLI
+## Library
 
 ### Installation
 
-#### Yarn
-
 ```sh
-yarn add lerna -D
-```
+# Using NPM
+npm install lerna --save-dev
 
-#### NPM
-
-```sh
-npm install lerna -D
-```
-
-#### NPX
-
-```sh
-npx lerna -h
+# Using Yarn
+yarn add lerna --dev
 ```
 
 ### Bootstrap
@@ -65,28 +47,28 @@ echo '/packages/*/node_modules' >> ./.gitignore
 ### Commands
 
 ```sh
-lerna -h
+npx lerna -h
 ```
 
 ### Usage
 
 ```sh
 #
-lerna init -i
+npx lerna init -i
 
 #
-lerna bootstrap
+npx lerna bootstrap
 
 #
-lerna create [name] -y
+npx lerna create [name] -y
 
 #
-lerna run dev
-lerna run dev --scope [package-name]
-lerna run dev --parallel
+npx lerna run dev
+npx lerna run dev --scope [package-name]
+npx lerna run dev --parallel
 
 #
-lerna add [module-1] \
+npx lerna add [module-1] \
   --scope [module-2] \
   --dev
 ```

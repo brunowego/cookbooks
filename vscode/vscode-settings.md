@@ -87,7 +87,7 @@ jq '."workbench.startupEditor" |= "newUntitledFile"' "$HOME/.config/Code/User/se
 ## SideBar Location
 
 ```sh
-jq '."workbench.sideBar.location" |= "right"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."workbench.sideBar.location" |= "left"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
 ## Open Side by Side Direction

@@ -3,6 +3,8 @@
 **Keywords:** Assertion Library
 
 <!--
+https://github.com/correttojs/next-monorepo/tree/main/.jest
+
 vscode-jest
 
 "test": "jest",

@@ -1,7 +1,13 @@
 # rimraf
 
 <!--
-"prebuild": "rimraf dist",
+"prebuild": "rimraf ./dist",
 -->
 
-TODO
+## CLI
+
+### Commands
+
+```sh
+npx rimraf -h
+```

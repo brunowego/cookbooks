@@ -190,7 +190,7 @@ server {
     location = /health-check {
         access_log off;
         default_type application/json;
-        return 200 '{"status": "ok"}';
+        return 200 '{"status": "OK"}';
     }
 }
 
@@ -248,7 +248,7 @@ server {
     location = /health-check {
         access_log off;
         default_type application/json;
-        return 200 '{"status": "ok"}';
+        return 200 '{"status": "OK"}';
     }
 }
 
@@ -497,7 +497,7 @@ data:
         location = /health-check {
             access_log off;
             default_type application/json;
-            return 200 '{"status": "ok"}';
+            return 200 '{"status": "OK"}';
         }
     }
 
@@ -1496,7 +1496,7 @@ server {
     location = /health-check {
         access_log off;
         default_type application/json;
-        return 200 '{"status": "ok"}';
+        return 200 '{"status": "OK"}';
     }
 }
 
