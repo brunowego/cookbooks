@@ -31,6 +31,8 @@ https://github.com/MathiasGilson/tailwind-styled-component
 <!--
 https://panelbear.com/
 https://sprig.com/
+https://splitbee.io/
+https://kontist.com/
 -->
 
 ## Useful
@@ -170,6 +172,7 @@ yarn add prettier-plugin-tailwindcss --dev
  */
 const prettierConfig = {
   // ...
+  plugins: [require('prettier-plugin-tailwindcss')],
   tailwindConfig: './tailwind.config.cjs',
 }
 
@@ -199,10 +202,13 @@ echo '!/tailwind.config.cjs' >  ./.vercelignore
 #### Visual Studio Code
 
 ```sh
-code \
-  --install-extension bradlc.vscode-tailwindcss \
-  --install-extension heybourn.headwind
+#
+code --install-extension bradlc.vscode-tailwindcss
 
+jq '."recommendations" += ["bradlc.vscode-tailwindcss"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+```
+
+<!--
 # For HTML
 jq '."tailwindCSS.includeLanguages".plaintext |= "html"' "$PWD/.vscode/settings.json" | \
   sponge "$PWD/.vscode/settings.json"
@@ -213,9 +219,24 @@ jq '."tailwindCSS.includeLanguages".typescript |= "javascript"' "$PWD/.vscode/se
 
 jq '."tailwindCSS.includeLanguages".typescriptreact |= "javascript"' "$PWD/.vscode/settings.json" | \
   sponge "$PWD/.vscode/settings.json"
-```
+-->
+
+<!--
+#
+code --install-extension heybourn.headwind
+
+jq '."recommendations" += ["heybourn.headwind"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+-->
 
 ### Issues
+
+#### Missing PostCSS VSCode Extension
+
+```log
+Unknown at rule @tailwind css(unknownAtRules)
+```
+
+Just install [Visual Studio Code Extension](/postcss.md#visual-studio-code).
 
 #### TBD
 

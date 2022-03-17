@@ -167,7 +167,7 @@ export default nextConfig
 {
   "scripts": {
     // "clean": "npx rimraf ./.next",
-    "clean": "yarn rimraf ./.next",
+    "clean": "yarn dlx rimraf ./.next",
     "predev": "npm run clean",
     // ...
   }
@@ -213,6 +213,14 @@ echo '/out' >> ./.gitignore
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+Error: Image is missing required "src" property. Make sure you pass "src" in props to the `next/image` component. Received: {}
+```
+
+TODO
 
 #### TBD
 

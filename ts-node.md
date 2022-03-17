@@ -9,10 +9,9 @@
 
 ### Installation
 
-#### Yarn
-
 ```sh
-yarn add ts-node -D
+# Using Yarn
+yarn add ts-node --dev
 ```
 
 ## CLI
@@ -22,7 +21,35 @@ yarn add ts-node -D
 ```sh
 #
 npx ts-node
+yarn dlx ts-node
 
 #
-npx ts-node ./index.ts
+yarn dlx ts-node --showConfig # --files
+
+#
+yarn dlx ts-node ./index.ts
+```
+
+### Tips
+
+#### TSConfig
+
+**Refer:** `./tsconfig.json`
+
+```json
+{
+  // ...
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "esnext"
+    },
+    "transpileOnly": true,
+    "files": true,
+  },
+}
+```
+
+```sh
+yarn dlx ts-node --showConfig
 ```

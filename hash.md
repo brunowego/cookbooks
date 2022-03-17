@@ -13,9 +13,14 @@
 
 ## Generate
 
+**Dependencies:** [GNU Core Utilities](/gnu-coreutils.md)
+
 ```sh
 #
 date +%s | sha256sum | base64 | head -c 32; echo
+
+#
+md5 -s 'string'
 
 #
 openssl rand -base64 32

@@ -14,14 +14,15 @@
 - Ultimaker Cura
 - SnippetsLab
 - Paste
+- Brave Rewards
 
 ## License Deactivate
 
 - ScreenFlow
+- SAi FlexiSIGN
 
 ## Notes
 
-- Deactivate Softwares
 - Save "Stickies"
 - SSH Config Connections
 - VPN Connection
@@ -29,6 +30,13 @@
 - Kubernetes Local Configuration
 - ProxyChains-NG Configuration
 - Shell History
+
+## Configuration
+
+```sh
+# Symbolic
+ln -s /Volumes/Workspace "$HOME/Workspace"
+```
 
 <!--
 https://www.youtube.com/watch?v=Z-0g_aJL5Fw

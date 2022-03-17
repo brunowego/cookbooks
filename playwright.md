@@ -1,32 +1,35 @@
 # Playwright
 
+**Keywords:** End-to-End (E2E), Integration
+
+## Alternatives
+
+- [Selenium](/selenium/README.md)
+- [Cypress](/cypress/README.md)
+
 ## Links
 
 - [Code Repository](https://github.com/microsoft/playwright)
 - [Main Website](https://playwright.dev/)
 
-## CLI
+## Docs
 
-### Commands
+- [Advanced](https://playwright.dev/docs/test-advanced)
 
-```sh
-npx playwright -h
-```
+## Library
 
 ### Installation
 
 ```sh
-#
+# Using NPM
 npx playwright install-deps
-
-#
 npx playwright install
-```
-
-#### NPM
-
-```sh
 npm install @playwright/test --save-dev
+
+# Using Yarn
+yarn dlx playwright install-deps
+yarn dlx playwright install
+yarn add @playwright/test --dev
 ```
 
 ### Configuration
@@ -37,37 +40,63 @@ npm install @playwright/test --save-dev
 {
   "scripts": {
     // ...
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:report": "playwright show-report ./test/report",
+    // ...
   }
 }
 ```
 
-```sh
-cat << EOF > ./playwright.config.ts
+**Refer:** `./playwright.config.ts`
+
+```ts
 import { PlaywrightTestConfig } from '@playwright/test'
+import path from 'path'
 
 const playwrightConfig: PlaywrightTestConfig = {
   testDir: './test',
   webServer: {
-    // command: 'npm run dev',
     command: 'yarn dev',
     port: 3000,
     timeout: 30 * 1000,
     reuseExistingServer: !process.env.CI,
   },
+  reporter: [['list'], ['html', { outputFolder: path.join(__dirname, 'test', 'report') }]],
   use: {
     baseURL: 'http://localhost:3000',
   },
 }
 
 export default playwrightConfig
-EOF
+```
+
+```sh
+#
+echo '/test/report' >> ./.gitignore
 
 #
-mkdir -p ./test/pages
+mkdir -p ./test/e2e/api
+```
 
-#
-cat << EOF > ./test/pages/home.spec.ts
+**Refer:** `./test/e2e/api/health-check.spec.ts`
+
+```ts
+import { test, expect } from '@playwright/test'
+
+test.describe('GET /api/health-check', () => {
+  test('health-check should return 200', async ({ request }) => {
+    const response = await request.get('/api/health-check')
+    const result = await response.json()
+
+    expect(response.status()).toBe(200)
+    expect(result.status).toBe('OK')
+  })
+})
+```
+
+**Refer:** `./test/e2e/home.spec.ts`
+
+```ts
 import { expect, test } from '@playwright/test'
 
 test.describe('Home Page', () => {
@@ -76,8 +105,41 @@ test.describe('Home Page', () => {
 
     const content = await page.content()
 
-    expect(content).toContain('Hey, I\'m Bruno!')
+    expect(content).toContain("Hey, I'm Bruno!")
   })
 })
-EOF
+```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension ms-playwright.playwright
+
+#
+jq '."recommendations" += ["ms-playwright.playwright"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+```
+
+## CLI
+
+### Commands
+
+```sh
+# Using NPM
+npx playwright -h
+
+# Using Yarn
+yarn dlx playwright -h
+```
+
+### Usage
+
+```sh
+#
+yarn dlx playwright test ./test/e2e/api/health-check.spec.ts
+
+#
+./node_modules/.bin/playwright test ./test/e2e/api/health-check.spec.ts
 ```

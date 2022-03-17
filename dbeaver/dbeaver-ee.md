@@ -70,6 +70,9 @@ Failed to create the Java Virtual Machine.
 ```
 
 ```sh
-# Darwin
-sed -i "/^-vmargs/i -vm\n$(dirname $(readlink -f $(which java)))" /Applications/DBeaverEE.app/Contents/Eclipse/dbeaver.ini
+#
+brew install --cask adoptopenjdk8
+
+#
+sed -i "/^-vmargs/i -vm\n/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin" /Applications/DBeaverEE.app/Contents/Eclipse/dbeaver.ini
 ```

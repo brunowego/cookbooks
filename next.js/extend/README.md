@@ -26,4 +26,7 @@ https://github.com/Keito654/change-seat-production
 
 -
 https://github.com/sushiswap/sushiswap-interface
+
+-
+https://github.com/calcom/cal.com/blob/main/packages/ee/lib/core/checkPremiumUsername.ts
 -->

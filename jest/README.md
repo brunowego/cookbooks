@@ -1,6 +1,6 @@
 # Jest
 
-**Keywords:** Assertion Library
+**Keywords:** Assertion Library, Unit Testing
 
 <!--
 https://github.com/correttojs/next-monorepo/tree/main/.jest

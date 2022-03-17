@@ -37,6 +37,7 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+
       - name: Installing dependencies
         run: yarn install --frozen-lockfile
 

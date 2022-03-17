@@ -1,5 +1,9 @@
 # OpenJDK JRE - Java Runtime Environment
 
+<!--
+https://www.java.com/en/download/manual.jsp
+-->
+
 ## CLI
 
 ### Dependencies

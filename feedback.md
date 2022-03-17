@@ -8,4 +8,11 @@ https://app.pluralsight.com/library/courses/resolving-conflicts-with-feedback/ta
 https://github.com/github/feedback
 -->
 
-TODO
+## Tools
+
+- [GetFeedy](https://getfeedy.io/)
+- [Pastel](https://usepastel.com/)
+- [Feedback Fish](https://feedback.fish/)
+- [Upvoty](https://upvoty.com/)
+- [Frill](https://frill.co/)
+- [Nolt](https://nolt.io/)

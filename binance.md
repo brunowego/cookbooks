@@ -3,6 +3,11 @@
 ## Links
 
 - [Main Website](https://binance.com)
+- [New Altcoins](https://binance.com/en/altcoins/new)
+
+## Guides
+
+- [The Words of Crypto](https://academy.binance.com/en/glossary)
 
 ## Terms
 

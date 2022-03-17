@@ -11,12 +11,16 @@ https://github.com/cla-assistant/cla-assistant
 https://github.community/t/picture-tag-in-markdown/149471
 -->
 
-## References
+## Links
 
 - [Government](https://government.github.com/community/)
+- [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
+- [Bug Report](https://support.github.com/contact/bug-report)
+
+## References
+
 - [myOctocat](https://myoctocat.com/)
 - [GitHub Status](https://githubstatus.com/)
-- [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
 
 ## API
 
@@ -95,6 +99,11 @@ gh repo create \
 
 ## Tips
 
+### Personal Access Token
+
+- [docker-cli](https://github.com/settings/tokens/new?description=docker-cli&scopes=write:packages)
+- [git-cli](https://github.com/settings/tokens/new?description=git-cli&default-expires-at=90&scopes=repo)
+
 ### Clone with GitHub Token
 
 ```sh
@@ -106,22 +115,6 @@ git clone "https://${GITHUB_TOKEN}:x-oauth-basic@github.com/[my-org]/[my-repo].g
 1. Repository -> Settings Tab
 2. Options Menu
 3. Merge button Section -> Automatically delete head branches
-
-### Dependabot
-
-```txt
-#
-@dependabot rebase
-
-#
-@dependabot ignore this dependency.
-```
-
-### Sonatype DepShield
-
-```txt
-wontfix
-```
 
 ### Add License
 

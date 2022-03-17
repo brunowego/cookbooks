@@ -56,6 +56,13 @@ echo '/**/.DS_Store' >> ~/.gitignore_global
    - Check: Desktop & Documents Folder
    - Done
 
+### True Tone
+
+1. System Preferences
+2. Displays
+3. Display Settings...
+4. Uncheck True Tone
+
 ## Issues
 
 <!-- ###

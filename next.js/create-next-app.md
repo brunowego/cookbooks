@@ -56,7 +56,7 @@ yarn create next-app \
 
 ```sh
 #
-mkdir -p ./src/{assets/images,config,constants,components,hooks,layouts,lib,types,utils}
+mkdir -p ./src/{assets/images,config,constants,contexts,components,hooks,layouts,lib,types,utils}
 
 #
 mkdir -p ./test/{e2e,unit}

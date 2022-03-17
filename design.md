@@ -1,9 +1,9 @@
 # Design
 
 <!--
-https://himalayas.app/login
-https://tidio.com/pricing/
-
+https://thefutur.com/
+https://himalayas.app/
+https://tidio.com/
 https://hellolanding.com/
 https://climb.care/
 https://stint.co/
@@ -17,6 +17,13 @@ https://launchdarkly.com/
 https://unit.co/
 https://ornikar.com/
 https://replay.io/
+
+login
+
+https://cal.com/signup
+https://app.s.unit.sh/signup
+https://signup.corellium.com/
+https://www.tidio.com/panel/register
 -->
 
 ## Links

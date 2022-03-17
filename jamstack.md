@@ -1,6 +1,8 @@
 # Jamstack (p.s.a. JAMStack) (JAM means: JavaScript, API's, Markup)
 
 <!--
+zART-stack
+
 https://screencasts.alterclass.io/courses/build-a-serverless-jamstack-micro-blogging-app-using-nextjs-tailwind-css-and-faunadb
 
 https://www.jamesqquick.com/blog/authenticated-jamstack-app-with-next-js-airtable-auth0-and-tailwind-css

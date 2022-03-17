@@ -2,6 +2,7 @@
 
 <!--
 https://sequencediagram.org/
+https://github.com/olaven/krets/blob/master/diagrams/database.md
 -->
 
 ## Tools

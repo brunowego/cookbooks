@@ -1,5 +1,42 @@
 # GraphQL Queries
 
+## Basic CRUD
+
+```gql
+mutation CreateUser {
+  createUser(input: { email: "admin@example.com", username: "admin" }) {
+    id
+  }
+}
+
+query GetUsers {
+  users {
+    edges {
+      node {
+        username
+      }
+    }
+  }
+}
+
+query GetUser {
+  user(id: "0f591484-fd1d-4aba-a3c4-5bf1f8cd5351") {
+    email
+    username
+  }
+}
+
+mutation EditUser {
+  editUser(input: { id: "0f591484-fd1d-4aba-a3c4-5bf1f8cd5351", username: "superuser" }) {
+    username
+  }
+}
+
+mutation DeleteUser {
+  deleteUser(input: { id: "0f591484-fd1d-4aba-a3c4-5bf1f8cd5351" })
+}
+```
+
 ## Examples
 
 ```gql

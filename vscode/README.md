@@ -72,12 +72,6 @@ choco install -y vscode
 # Darwin
 mkdir -p "$HOME/.config/Code/User"
 ln -s "$HOME/Library/Application Support/Code/User/settings.json" "$HOME/.config/Code/User/settings.json"
-
-# Git Ignore Global
-cat << EOF >> ./.gitignore
-/**/.settings
-/**/.vscode
-EOF
 ```
 
 ### Commands
@@ -145,13 +139,15 @@ code --install-extension shardulm94.trailing-spaces
 
 #
 code --install-extension Tyriar.sort-lines
+```
 
+<!--
 #
 # code --install-extension wmaurer.change-case
 
 #
 # code --install-extension ephoton.indent-switcher
-```
+-->
 
 <!-- #### GlassIt
 
@@ -191,11 +187,13 @@ osascript -e 'quit app "Visual Studio Code"'
 
 ### Issues
 
-####
+#### TBD
 
 ```log
 The character U+2019 "’" could be confused with the character U+0060 "`", which is more common in source code. Adjust settings
 ```
+
+TODO
 
 #### Import Failed
 

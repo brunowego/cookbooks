@@ -2,10 +2,7 @@
 
 <!--
 https://andersbrownworth.com/blockchain/
-
 https://github.com/smartcontractkit/chainlink
-dAPP
-Remix
 -->
 
 ## References

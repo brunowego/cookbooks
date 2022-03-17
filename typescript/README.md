@@ -95,7 +95,7 @@ Add `'**/*.ts?(x)': () => 'npm run build-types'` to `.lintstagedrc.mjs`.
 
 ```sh
 #
-echo '*.tsbuildinfo' >> ./.gitignore
+echo '/*.tsbuildinfo' >> ./.gitignore
 ```
 
 #### EditorConfig
@@ -105,6 +105,40 @@ cat << EOF > ./.editorconfig
 [*.{ts,tsx}]
 indent_size = 4
 EOF
+```
+
+### Issues
+
+#### Not Assignable to Type String
+
+```log
+Type 'string | undefined' is not assignable to type 'string'. Type 'undefined' is not assignable to type 'string'. ts(2322)
+```
+
+**Refer:** `./src/types/env.d.ts`
+
+```ts
+declare namespace NodeJS {
+  export interface ProcessEnv {
+    readonly SITE_URL: string | undefined
+  }
+}
+```
+
+#### Missing Module Declaration for SVG
+
+```log
+Cannot find module '@/assets/images/logo.svg?url' or its corresponding type declarations. ts(2307)
+```
+
+**Refer:** `./apps/site/src/types/images.d.ts`
+
+```ts
+declare module '*.svg?url' {
+  const url: string
+
+  export default url
+}
 ```
 
 ## Tips

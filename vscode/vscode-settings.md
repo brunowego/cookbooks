@@ -60,17 +60,17 @@ jq '."files.trimTrailingWhitespace" |= true' "$HOME/.config/Code/User/settings.j
 jq '."files.trimFinalNewlines" |= true' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ``` -->
 
-## Exclude
+<!-- ## Exclude
 
 ```sh
 jq '."files.exclude"."**/.git" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
-```
+``` -->
 
-## Associations
+<!-- ## Associations
 
 ```sh
 jq '."files.associations"."*.cnf" |= "ini"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
-```
+``` -->
 
 ## New window dimensions
 
@@ -87,7 +87,7 @@ jq '."workbench.startupEditor" |= "newUntitledFile"' "$HOME/.config/Code/User/se
 ## SideBar Location
 
 ```sh
-jq '."workbench.sideBar.location" |= "left"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."workbench.sideBar.location" |= "right"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
 ## Open Side by Side Direction

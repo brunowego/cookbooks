@@ -19,8 +19,6 @@ https://github.com/github/roadmap/issues/93
 
 ## Docker
 
-[New personal access token](https://github.com/settings/tokens/new?description=docker-cli&scopes=write:packages)
-
 ```sh
 #
 jq 'del(.credsStore)' ~/.docker/config.json | sponge ~/.docker/config.json

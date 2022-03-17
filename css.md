@@ -43,9 +43,10 @@ https://linkedin.com/learning/advanced-css-media-queries/media-queries-aren-t-ju
 
 ```sh
 #
-code \
-  --install-extension cipchk.cssrem \
-  --install-extension sainoba.px-to-rem
+code --install-extension cipchk.cssrem
+
+#
+code --install-extension sainoba.px-to-rem
 ```
 
 ### Technologies

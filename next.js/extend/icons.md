@@ -7,14 +7,14 @@
 ```tsx
 import Document, { Head, Html } from 'next/document'
 
-interface IconProps {
+interface IIconProps {
   rel: string
   href: string
   type?: string
   sizes?: string
 }
 
-const icons: Array<IconProps> = [
+const icons: Array<IIconProps> = [
   {
     rel: 'apple-touch-icon',
     href: '/images/icons/apple-touch-icon-114x114.png',
@@ -90,7 +90,7 @@ class MyDocument extends Document {
         <Head>
           {/* ... */}
 
-          {icons.map((props: IconProps) => (
+          {icons.map((props: IIconProps) => (
             <link key={props.href} {...props} />
           ))}
         </Head>

@@ -7,6 +7,14 @@
 - [Crypto Fear & Greed Index](https://alternative.me/crypto/fear-and-greed-index/)
 - [Fear & Greed Index](https://money.cnn.com/data/fear-and-greed/)
 - [Stock-to-Flow Model](https://lookintobitcoin.com/charts/stock-to-flow-model/)
+- [Staking Rewards / Earn Passive Income With Crypto](https://stakingrewards.com/)
+- [Defi Llama / Chains](https://defillama.com/chains)
+- [CoinMarketCap / New](https://coinmarketcap.com/new/)
+
+## Economic Calendar and Indicators
+
+- [Brazil](https://mql5.com/en/economic-calendar/brazil)
+- [United States](https://mql5.com/en/economic-calendar/united-states)
 
 ## Tools
 
@@ -17,10 +25,13 @@
 - [Is This Coin A Scam?](https://isthiscoinascam.com/)
 - [LunarCrush](https://lunarcrush.com/)
 - [Messari](https://messari.io/)
+- [xdecow / Long Short Ratio](http://xdecow.com/lsr)
+- [xdecow / Open Interest](http://xdecow.com/open-interest)
+- [xdecow / Order Book Depth](http://xdecow.com/order-book-depth)
 
 <!--
-https://messari.io/
-https://coincodex.com/
+https://messari.io
+https://coincodex.com
 -->
 
 ## Terms
@@ -31,14 +42,17 @@ https://coincodex.com/
 - Proof of Reserve
 - Proof of Stake
 - Proof of Work
+- Relative Strength Index (RSI)
 - Ticker Symbol
 
-<!--
-S&P 500
--->
+## Market Indexes
+
+- Dow Jones Industrial Average
+- Nasdaq Composite
+- S&P 500
 
 <!--
-https://app.anchorprotocol.com/
-https://aave.com/
-https://pancakeswap.finance/
+https://app.anchorprotocol.com
+https://aave.com
+https://pancakeswap.finance
 -->

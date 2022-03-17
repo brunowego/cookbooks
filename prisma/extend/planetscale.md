@@ -1,5 +1,6 @@
 # Planetscale
 
+TODO
 
 <!-- #### [Named Constraints](https://prisma.io/docs/guides/upgrade-guides/upgrading-versions/upgrading-to-prisma-3/named-constraints)
 
@@ -20,8 +21,6 @@ WHERE nsp.nspname = 'public'
 AND rel.relname = 'post';
 ``` -->
 
-#### PlanetScale
-
 <!--
 initial-setup
 shadow
@@ -29,7 +28,7 @@ shadow
 SHADOW_DATABASE_URL
 -->
 
-```prisma
+<!-- ```prisma
 generator client {
   provider        = "prisma-client-js"
   previewFeatures = ["referentialIntegrity"]
@@ -41,4 +40,4 @@ datasource db {
   shadowDatabaseUrl    = env("SHADOW_DATABASE_URL")
   referentialIntegrity = "prisma"
 }
-```
+``` -->

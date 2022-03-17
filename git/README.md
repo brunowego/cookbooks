@@ -67,9 +67,12 @@ sudo apk add git
 choco install -y git
 ```
 
-### Bootstrap
+### Configuration
 
 ```sh
+#
+git config --list
+
 # GitHub Flow/Trunk-Based Development (TBD)
 git config --global init.defaultBranch 'main'
 

@@ -46,7 +46,8 @@ choco install -y yarn
 ### Configuration
 
 ```sh
-echo '/node_modules' >> ./.gitignore
+#
+yarn config set --home enableTelemetry 0
 ```
 
 ### Bootstrap
@@ -62,6 +63,20 @@ npx yarn init -yp; npx yarn
 ### Configuration
 
 ```sh
+# Git ignore
+echo '/yarn-error.log' >> ~/.gitignore_global
+```
+
+#### For Version 1.x
+
+**Reference:** [Configuration](https://classic.yarnpkg.com/en/docs/configuration)
+
+**Tips:** Configurations are store ind `~/.yarnrc`.
+
+```sh
+#
+npx yarn config
+
 # Save Prefix
 npx yarn config set save-prefix '~'
 
@@ -69,12 +84,17 @@ npx yarn config set save-prefix '~'
 npx yarn config set init-license 'MIT'
 npx yarn config set init-license 'UNLICENSED'
 npx yarn config set init-license 'COPYRIGHT'
+```
 
-# Git ignore
-echo '/yarn-error.log' >> ~/.gitignore_global
+#### For Version >= 2.x
 
-#
-cat ~/.yarnrc
+**Reference:** [Configuration](https://yarnpkg.com/configuration/yarnrc)
+
+**Tips:** Configurations are store ind `~/.yarnrc.yml`.
+
+```sh
+# Save Prefix
+npx yarn config set defaultSemverRangePrefix '~'
 ```
 
 ### Commands

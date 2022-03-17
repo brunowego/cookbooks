@@ -27,7 +27,7 @@ choco install -y gnuwin32-coreutils.install
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
-**Homebrew**
+**Homebrew:**
 
 ```sh
 # GNU Core Utilities

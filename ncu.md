@@ -1,4 +1,4 @@
-# npm-check-updates
+# npm-check-updates (ncu)
 
 <!--
 yarn upgrade-interactive

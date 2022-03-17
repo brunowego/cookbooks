@@ -69,6 +69,17 @@ docker system df -v
 
 ## Tips
 
+### Command-line completion
+
+```sh
+# Using Oh My Zsh
+sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 docker\)/g' ~/.zshrc
+
+rm ~/.zcompdump*
+
+source ~/.zshrc
+```
+
 ### Process Format
 
 ```sh
@@ -163,17 +174,6 @@ docker container rm [name]
 
 docker run -d \
   [...]
-```
-
-### Command-line completion
-
-```sh
-# Using Oh My Zsh
-sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 docker\)/g' ~/.zshrc
-
-rm ~/.zcompdump*
-
-source ~/.zshrc
 ```
 
 ## Issues

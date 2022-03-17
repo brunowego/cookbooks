@@ -1,4 +1,4 @@
-# VLC
+# VideoLAN Client (VLC)
 
 ## App
 

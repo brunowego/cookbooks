@@ -14,26 +14,7 @@ EOF
 
 ## Dependabot Alerts
 
-**Refer:** `./.github/dependabot.yml`
-
-```yaml
----
-version: 2
-
-updates:
-  - package-ecosystem: npm
-    directory: /
-    schedule:
-      interval: daily
-    allow:
-      - dependency-type: direct
-    versioning-strategy: increase
-    commit-message:
-      prefix: deps
-      prefix-development: chore
-    labels:
-      - Dependencies
-```
+Proceed with [this configuration](/github/dependabot.md#configuration).
 
 ## Code Scanning Alerts
 

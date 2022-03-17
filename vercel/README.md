@@ -55,12 +55,16 @@ https://epic-course-platform.vercel.app/
 - [Examples](https://github.com/vercel/examples)
 - [Status Page](https://vercel-status.com/)
 
-## Guides
+## Docs
 
 - [Limits](https://vercel.com/docs/concepts/limits/overview)
 - [Fair Use Policy](https://vercel.com/docs/concepts/limits/fair-use-policy)
-- [Prevent Uploading Source Paths with .vercelignore on Vercel](https://vercel.com/guides/prevent-uploading-sourcepaths-with-vercelignore)
 - [Monorepos](https://vercel.com/docs/concepts/git/monorepos)
+
+## Guides
+
+- [Prevent Uploading Source Paths with .vercelignore on Vercel](https://vercel.com/guides/prevent-uploading-sourcepaths-with-vercelignore)
+- [How do I use the "Ignored Build Step" field on Vercel?](https://vercel.com/support/articles/how-do-i-use-the-ignored-build-step-field-on-vercel)
 
 ## Terms
 
@@ -157,6 +161,10 @@ npx vercel billing ls
 ```
 
 ### Tips
+
+<!-- #### Ignore Build Step
+
+git diff --quiet HEAD^ HEAD ./ -->
 
 #### Pull Local Environment Variables
 

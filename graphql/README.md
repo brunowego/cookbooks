@@ -18,11 +18,6 @@ https://www.youtube.com/watch?v=E3NHd-PkLrQ
 https://www.youtube.com/watch?v=QrEOvHdH2Cg
 -->
 
-<!--
-"gql:generate": "graphql-codegen --config codegen.yml && eslint src/wcl/types.ts -c .eslintrc.wcl.js --fix && prettier --write src/wcl/types.ts && prettier --write schema.json && prettier --write src/wcl/gql/schema.graphql",
-"gql:introspection": "ts-node src/wcl/queries/introspection.ts",
--->
-
 ## Links
 
 - [Code Repository](https://github.com/graphql/graphql-spec)
@@ -63,13 +58,69 @@ https://www.youtube.com/watch?v=QrEOvHdH2Cg
 - Operation Name
 - Variables
 
+## Library
+
+### Installation
+
+```sh
+# Using NPM
+npm install graphql
+
+# Using Yarn
+yarn add graphql
+```
+
+### Extend With
+
+#### Eslint
+
+```sh
+# Using Yarn
+yarn add eslint-plugin-graphql --dev
+```
+
+```ts
+/**
+ * @type {import('@types/eslint').Linter.Config}
+ */
+const eslintRC = {
+  // ...
+  overrides: [
+    {
+      files: ['./src/graphql/queries/*.graphql'],
+      parser: '@graphql-eslint/eslint-plugin',
+      plugins: ['@graphql-eslint'],
+      rules: {
+        '@graphql-eslint/known-type-names': 'error',
+      },
+    },
+  ],
+}
+
+module.exports = eslintRC
+```
+
 ### Tips
 
 #### Visual Studio Code
 
 ```sh
-code --install-extension GraphQL.vscode-graphql
+#
+code --install-extension 'GraphQL.vscode-graphql'
+
+#
+jq '."recommendations" += ["GraphQL.vscode-graphql"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
 ```
+
+### Issues
+
+#### TBD
+
+```log
+Query root type must be provided.
+```
+
+TODO
 
 <!-- ## CLI
 

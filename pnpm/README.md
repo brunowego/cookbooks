@@ -37,4 +37,7 @@ pnpm install
 
 #
 pnpm dev
+
+#
+pnpx [command]
 ```

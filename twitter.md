@@ -1,5 +1,15 @@
 # Twitter
 
+## App
+
+### Installation
+
+#### MAS
+
+```sh
+mas install 1482454543
+```
+
 ## Tips
 
 ### Cover

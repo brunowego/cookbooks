@@ -4,6 +4,10 @@
 https://www.youtube.com/channel_switcher
 -->
 
+## Links
+
+- [Watch History](https://youtube.com/feed/history)
+
 ## Tips
 
 ### Force Specific Network Interface

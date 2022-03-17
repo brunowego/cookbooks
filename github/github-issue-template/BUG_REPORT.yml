@@ -1,17 +1,20 @@
 ---
+# yamllint disable rule:line-length
 name: Bug Report
-description: File a bug report
+description: Report any issues with the platform.
+title: '[BUG] '
 labels:
   - type: bug
+assignees:
+  - brunowego
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for creating an issue 😄!
 
-        Please search open/closed issues before submitting. Someone
-        might have asked the same thing before 😉!
-  - type: input
+        Please search open/closed issues before submitting. Someone might have asked the same thing before 😉!
+  - type: textarea
     id: description
     attributes:
       label: Description
@@ -31,6 +34,8 @@ body:
         2. Click on '...'
         3. Scroll down to '...'
         4. See error
+
+        Any other relevant information. For example, why do you consider this a bug and what did you expect to happen instead?
   - type: input
     id: browser
     attributes:
@@ -43,13 +48,12 @@ body:
       label: Operating System
       description: The operating system(s) this issue occurred with.
       options:
+        - label: Linux
         - label: macOS
         - label: Windows
-        - label: Linux
   - type: textarea
     id: additional-information
     attributes:
       label: Additional Information
       description: |
-        Use this section to provide any additional information you might have
-        like screenshots, notes, or links to ideas.
+        Use this section to provide any additional information you might have like screenshots, notes, or links to ideas.

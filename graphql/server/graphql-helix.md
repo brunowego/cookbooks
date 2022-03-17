@@ -10,3 +10,10 @@
 ### Dependencies
 
 - [GraphQL.js](/graphql/graphql-js.md)
+
+### Installation
+
+```sh
+# Using Yarn
+yarn add graphql-helix
+```

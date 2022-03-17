@@ -1,6 +1,6 @@
 # Sourcetree
 
-## CLI
+## App
 
 ### Installation
 

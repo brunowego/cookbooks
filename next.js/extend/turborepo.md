@@ -4,7 +4,7 @@
 
 ```sh
 #
-mkdir -p {./apps/{admin,assets,blog,docs,site,worker},./packages/{preset,tsconfig,ui}}
+mkdir -p {./apps/{assets,blog,console,docs,site,worker},./packages/{preset,tsconfig,ui}}
 
 #
 rm -fR ./.next
@@ -64,6 +64,9 @@ echo '/.env*' >> ./apps/site/.gitignore
 
 ```json
 {
+  "$schema": "https://turborepo.org/schema.json",
+  "baseBranch": "origin/main",
+  // "globalDependencies": ["./apps/site/.env"],
   "pipeline": {
     "dev": {
       "cache": false

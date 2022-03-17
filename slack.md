@@ -8,16 +8,16 @@
 
 ### Installation
 
-#### Homebrew
-
-```sh
-brew install --cask slack
-```
-
 #### MAS
 
 ```sh
 mas install 803453959
+```
+
+#### Homebrew
+
+```sh
+brew install --cask slack
 ```
 
 #### APT

@@ -7,7 +7,7 @@
 ```ts
 import { UserRole } from '@/constants'
 
-export interface AuthInterface {
+export interface IAuthInterface {
   role?: UserRole;
   authenticatedRedirect?: string;
   children?: any;

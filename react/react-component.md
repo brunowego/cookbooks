@@ -5,13 +5,13 @@
 ```tsx
 import React from 'react'
 
-interface Props {
+interface IProps {
   children: JSX.Element | string | JSX.Element[]
   color?: string
   onClick?: () => void
 }
 
-export default function Button({ children, color, onClick }: Props) {
+export default function Button({ children, color, onClick }: IProps) {
   return (
     <button
       onClick={onClick}

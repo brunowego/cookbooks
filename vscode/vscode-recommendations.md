@@ -11,9 +11,7 @@ code --list-extensions
 ```sh
 cat << EOF > ./.vscode/extensions.json
 {
-  "recommendations": [
-
-  ]
+  "recommendations": []
 }
 EOF
 ```

@@ -33,13 +33,23 @@ EOF
 
 ### Visual Studio Code
 
-**Dependencies:** [Emmet](/emmet.md)
-
 ```sh
 #
 code --install-extension csstools.postcss
 
 #
+jq '."recommendations" += ["csstools.postcss"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+```
+
+<!-- ####
+
+**Dependencies:** [Emmet](/emmet.md)
+
+```sh
+#
 jq '."emmet.includeLanguages".postcss |= "css"' "$PWD/.vscode/settings.json" | \
   sponge "$PWD/.vscode/settings.json"
-```
+
+jq '."emmet.syntaxProfiles".postcss |= "css"' "$PWD/.vscode/settings.json" | \
+  sponge "$PWD/.vscode/settings.json"
+``` -->

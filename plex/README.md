@@ -10,22 +10,16 @@ https://skybox.xyz/en/
 
 - [Main Website](https://plex.tv)
 
-## Media Server
+## App
 
 ### Installation
 
 #### Homebrew
 
 ```sh
+# Media Server
 brew install --cask plex-media-server
-```
 
-## Media Player
-
-### Installation
-
-#### Homebrew
-
-```sh
+# Media Player
 brew install --cask plex-media-player
 ```

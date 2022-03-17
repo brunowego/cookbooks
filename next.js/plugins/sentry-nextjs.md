@@ -42,7 +42,7 @@ mv ./sentry.server.config.js ./sentry.server.config.ts
 ```mjs
 import { withSentryConfig } from '@sentry/nextjs'
 
-const isDev = process.env.NODE_ENV === 'development'
+const IS_DEVELOPMENT = process.env.NODE_ENV === 'development'
 
 /**
  * @type {import('next').NextConfig}
@@ -50,8 +50,8 @@ const isDev = process.env.NODE_ENV === 'development'
 const nextConfig = {
   reactStrictMode: true,
   sentry: {
-    disableServerWebpackPlugin: isDev,
-    disableClientWebpackPlugin: isDev,
+    disableServerWebpackPlugin: IS_DEVELOPMENT,
+    disableClientWebpackPlugin: IS_DEVELOPMENT,
   },
 }
 

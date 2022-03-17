@@ -8,26 +8,26 @@
 
 ```sh
 # Using NPM
-npm install @types/gtag.js --save-dev
+npm install @types/gtag.js
 
 # Using Yarn
-yarn add @types/gtag.js --dev
+yarn add @types/gtag.js
 ```
 
 ## Configuration
 
 ```sh
-echo 'NEXT_PUBLIC_GA_TRACKING_ID=' >> ./.env
+echo 'NEXT_PUBLIC_GA_MEASUREMENT_ID=' >> ./.env
 ```
 
 **Refer:** `./src/lib/gtag.ts`
 
 ```ts
-export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageView = (url: URL): void => {
-  window.gtag('config', GA_TRACKING_ID as string, {
+  window.gtag('config', GA_MEASUREMENT_ID as string, {
     page_path: url,
   })
 }
@@ -53,14 +53,14 @@ export const event = ({ action, category, label, value }: GTagEvent): void => {
 
 ```tsx
 import Script from 'next/script'
-import { GA_TRACKING_ID } from '@/lib/gtag'
+import { GA_MEASUREMENT_ID } from '@/lib/gtag'
 
 export const GoogleAnalytics = () => {
   return (
     <>
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
       />
       <Script
         id="gtag-init"
@@ -70,7 +70,7 @@ export const GoogleAnalytics = () => {
             window.dataLayer = window.dataLayer || [];
             function gtag(){ dataLayer.push(arguments); }
             gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
+            gtag('config', '${GA_MEASUREMENT_ID}', {
               page_path: window.location.pathname,
             });
           `,
@@ -87,7 +87,7 @@ export const GoogleAnalytics = () => {
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import * as gtag from '../lib/gtag'
+import { pageView } from '@/lib/gtag'
 import { GoogleAnalytics } from '@/components/Analytics'
 
 function App({ Component, pageProps }: AppProps) {
@@ -96,7 +96,7 @@ function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     if (process.env.NODE_ENV == 'production') {
       const handleRouteChange = (url: URL) => {
-        gtag.pageView(url)
+        pageView(url)
       }
 
       router.events.on('routeChangeComplete', handleRouteChange)
@@ -110,6 +110,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Component {...pageProps} />
+
       <GoogleAnalytics />
     </>
   )
@@ -126,4 +127,4 @@ export default App
 GET https://www.googletagmanager.com/gtag/js?id=G-MMGHY9CX0E net::ERR_BLOCKED_BY_CLIENT
 ```
 
-Probably, your browser (Brave) is blocking the request.
+Probably, your browser (perhaps Brave) is blocking the request.

@@ -11,9 +11,12 @@ https://app.pluralsight.com/library/courses/js-friends-session-02/table-of-conte
 https://app.pluralsight.com/library/courses/codemash-session-01/table-of-contents
 -->
 
+**Keywords:** End-to-End (E2E), Integration
+
 ## Alternatives
 
 - [Selenium](/selenium/README.md)
+- [Playwright](/playwright.md)
 
 ## Library
 

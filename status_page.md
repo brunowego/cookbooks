@@ -9,7 +9,7 @@ https://github.com/louislam/uptime-kuma
 
 ## Alternatives
 
-- [Atlassian Statuspage](https://atlassian.com/software/statuspage)
+- [Atlassian Statuspage](/atlassian/atlassian-statuspage.md)
 - [Cachet](/cachet.md)
 - [Statping](/statping.md)
 - [Statusfy](/statusfy.md)
@@ -22,4 +22,4 @@ https://github.com/statsd/statsd
 ## Examples
 
 - [AlienVault](https://status.alienvault.cloud/)
-- [GitHub](https://www.githubstatus.com/)
+- [GitHub](https://githubstatus.com/)

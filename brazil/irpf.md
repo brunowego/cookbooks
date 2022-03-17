@@ -1,6 +1,10 @@
-# IRPF
+# Imposto Renda Pessoa Física (IRPF)
 
 ## App
+
+### Links
+
+- [Download do Programa de Imposto de Renda](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dirpf)
 
 ### Dependencies
 
@@ -12,12 +16,6 @@
 
 ```sh
 brew install --cask irpf2021
-```
-
-#### Darwin
-
-```sh
-open "https://receita.economia.gov.br/interface/cidadao/irpf/$(date +'%Y')/download/mac"
 ```
 
 ## Tips
