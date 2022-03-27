@@ -64,7 +64,7 @@ declare namespace NodeJS {
 **Refer:** `./src/constants/index.ts`
 
 ```ts
-export const TRIAL_LIMIT_DAYS = 14;
+export const TRIAL_LIMIT_DAYS: number = 14
 ```
 
 **Refer:** `./src/pages/api/cron/downgrade-users.js`

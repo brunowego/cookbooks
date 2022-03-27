@@ -60,11 +60,11 @@ jq '."files.trimTrailingWhitespace" |= true' "$HOME/.config/Code/User/settings.j
 jq '."files.trimFinalNewlines" |= true' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ``` -->
 
-<!-- ## Exclude
+## Exclude
 
 ```sh
 jq '."files.exclude"."**/.git" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
-``` -->
+```
 
 <!-- ## Associations
 
@@ -94,4 +94,6 @@ jq '."workbench.sideBar.location" |= "right"' "$HOME/.config/Code/User/settings.
 
 ```sh
 jq '."workbench.editor.openSideBySideDirection" |= "down"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+
+jq '."workbench.editor.splitInGroupLayout" |= "vertical"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```

@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": [
+    "creality",
+    "mkdir",
+    "nestjs",
+    "prusaslicer",
+    "ultimaker",
+    "xdecow"
+  ]
+}

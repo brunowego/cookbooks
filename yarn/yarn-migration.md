@@ -10,13 +10,16 @@
 
 ```sh
 #
+npx yarn init -yp; npx yarn
+
+#
 yarn set version stable # berry
 
 #
 yarn config
 
 #
-yarn config set defaultSemverRangePrefix ''
+yarn config set defaultSemverRangePrefix '~'
 
 #
 yarn install

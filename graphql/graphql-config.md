@@ -26,11 +26,11 @@ yarn add graphql-config --dev
 **Refer:** `./graphql.config.js`
 
 ```ts
-const graphqlRC = {
+const graphqlConfig = {
   schema: 'http://localhost:3000/api/graphql',
 }
 
-module.exports = graphqlRC
+module.exports = graphqlConfig
 ```
 
 <!--
@@ -57,12 +57,11 @@ const path = require('path')
 
 require('dotenv').config({ path: path.join(__dirname, '.env') })
 
-const graphqlRC = {
+const graphqlConfig = {
   schema: process.env.GRAPHQL_URL,
 }
 
-module.exports = graphqlRC
-
+module.exports = graphqlConfig
 ```
 
 ```sh

@@ -40,9 +40,9 @@ cat << EOF > ./.prettierignore
 EOF
 ```
 
-```sh
-#
-cat << EOF > ./prettier.config.cjs
+**Refer:** `./prettier.config.cjs`
+
+```cjs
 /**
  * @type {import('prettier').Options}
  */
@@ -52,28 +52,32 @@ const prettierConfig = {
 }
 
 module.exports = prettierConfig
-EOF
 ```
 
 ### Extend With
 
 #### Eslint
 
+**Dependencies:** [ESLint](/eslint.md#library)
+
 ```sh
 # Using NPM
-npm install eslint-config-prettier --save-dev
+npm install eslint-config-prettier eslint-plugin-prettier --save-dev
 
 # Using Yarn
-yarn add eslint-config-prettier --dev
+yarn add eslint-config-prettier eslint-plugin-prettier --dev
 ```
 
 **Refer:** `./.eslintrc.cjs`
 
 ```cjs
+/**
+ * @type {import('@types/eslint').Linter.Config}
+ */
 const eslintRC = {
   extends: [
     // ...
-    'prettier',
+    'plugin:prettier/recommended',
   ],
 }
 

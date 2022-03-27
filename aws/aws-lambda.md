@@ -1,6 +1,7 @@
 # AWS Lambda
 
 <!--
+https://github.com/JannikWempe/inline-comments/blob/main/apps/api/src/lib/lambda.ts
 https://github.com/squaaat/raemian
 
 https://app.pluralsight.com/library/courses/introduction-aws-lambda/table-of-contents

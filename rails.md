@@ -165,7 +165,7 @@ rails plugin new [engine] \
 ```sh
 vim .rbenv-vars
 
-SECRET_KEY_BASE=
+SECRET_KEY_BASE='S3cr3t_K#Key'
 [APPNAME]_DATABASE_PASSWORD=
 
 rbenv vars

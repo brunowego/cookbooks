@@ -142,7 +142,7 @@ docker run -d \
 ***Environment Variables***
 
 ```sh
-export SECRET_KEY='thisISaSECRET_1234'
+export SECRET_KEY='S3cr3t_K#Key'
 
 export POSTGRES_NAME='evalai'
 export POSTGRES_USER='evalai'

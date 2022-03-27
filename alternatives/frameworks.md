@@ -17,7 +17,7 @@
 ## ORM
 
 - [Prisma](/prisma/README.md)
-- TypeORM
+- [TypeORM](/typeorm.md)
 
 ## Golang
 

@@ -10,7 +10,7 @@ https://app.pluralsight.com/paths/skills/building-graphql-apis-with-apollo
 - [Docs](https://apollographql.com/docs/)
 - [Studio](https://studio.apollographql.com/)
 
-## CLI
+<!-- ## CLI
 
 ### Commands
 
@@ -26,14 +26,4 @@ npx apollo client
 
 #
 npx apollo plugins
-```
-
-## Library
-
-### Installation
-
-#### NPM
-
-```sh
-npm install @apollo/client --save
-```
+``` -->

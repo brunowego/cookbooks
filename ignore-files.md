@@ -20,5 +20,6 @@
 ### Visual Studio Code
 
 ```sh
+#
 code --install-extension ldez.ignore-files
 ```

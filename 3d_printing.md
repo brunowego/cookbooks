@@ -29,3 +29,9 @@ https://linkedin.com/learning/design-for-additive-manufacturing-fdm/welcome
 - [Cults](https://cults3d.com/)
 - [Thingiverse](https://thingiverse.com/)
 - [YouMagine](https://youmagine.com/)
+
+## Tips
+
+### Drying Silica Gel
+
+Set the oven temperature to 120 degrees for 2 hours.

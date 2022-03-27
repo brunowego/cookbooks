@@ -1,6 +1,6 @@
 # Solidity
 
-**Keywords:** Smart contracts
+**Keywords:** Smart Contracts
 
 ## Tips
 
@@ -9,4 +9,7 @@
 ```sh
 #
 code --install-extension JuanBlanco.solidity
+
+#
+jq '."recommendations" += ["JuanBlanco.solidity"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
 ```

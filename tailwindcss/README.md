@@ -140,6 +140,9 @@ yarn add eslint-plugin-tailwindcss --dev
 **Refer:** `./.eslintrc.cjs`
 
 ```cjs
+/**
+ * @type {import('@types/eslint').Linter.Config}
+ */
 const eslintRC = {
   extends: [
     // ...

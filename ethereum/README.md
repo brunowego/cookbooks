@@ -5,6 +5,9 @@ Avalanche
 Solana
 Fantom
 Near
+Cloken
+
+https://github.com/scaffold-eth/scaffold-eth
 -->
 
 ## Links
@@ -16,6 +19,10 @@ Near
 ## Tools
 
 - [Etherscan - Ethereum Blockchain Explorer](https://etherscan.io/)
+
+<!--
+https://snapshot.org
+-->
 
 ## Terms
 

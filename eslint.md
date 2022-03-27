@@ -10,10 +10,10 @@
 
 ```sh
 # Using NPM
-npm install eslint --save-dev
+npm install @types/eslint eslint --save-dev
 
 # Using Yarn
-yarn add eslint --dev
+yarn add @types/eslint eslint --dev
 ```
 
 ### Configuration

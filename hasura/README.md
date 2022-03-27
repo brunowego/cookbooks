@@ -2,6 +2,7 @@
 
 <!--
 https://github.com/platyplus/platyplus/tree/master/charts/hasura
+https://github.com/ktarou2022/next-hasur/blob/main/package.json
 -->
 
 ## Links

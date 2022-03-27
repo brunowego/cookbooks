@@ -70,6 +70,8 @@ https://www.npmjs.com/package/regenerator-runtime
 https://www.npmjs.com/package/tinycolor2
 https://www.npmjs.com/package/rc-drawer
 https://www.npmjs.com/package/omit
+
+https://avvvatars.com/
 -->
 
 ## Tools

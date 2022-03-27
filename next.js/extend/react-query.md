@@ -1,12 +1,26 @@
 # React Query
 
-## Related
+<!--
+https://github.com/jeromverschoote/nextjs-playground/blob/main/src/hooks/usePosts.ts
+-->
+
+## Dependencies
 
 - [React Query](/react/react-query.md)
 
+## Configuration
+
+**Refer:** `./src/hooks/index.ts`
+
+```ts
+export { useQuery, useQueryClient } from 'react-query'
+```
+
+**Refer:** `./src/pages/_app.tsx`
+
 ```tsx
-import type { AppProps } from 'next/app'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import type { AppProps } from 'next/app'
 import { ReactQueryDevtools } from 'react-query/devtools'
 
 const queryClient = new QueryClient()

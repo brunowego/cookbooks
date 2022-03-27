@@ -3,6 +3,7 @@
 <!--
 https://github.com/revoltchat/documentation
 https://developers.cardano.org/
+https://github.com/AmruthPillai/Reactive-Resume/tree/main/docs
 -->
 
 ## Links
@@ -12,7 +13,7 @@ https://developers.cardano.org/
 
 ## CLI
 
-### Init
+### Initialize
 
 ```sh
 #

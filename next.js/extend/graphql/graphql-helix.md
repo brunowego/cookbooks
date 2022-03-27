@@ -1,5 +1,9 @@
 # GraphQL Helix
 
+<!--
+typescript-react-apollo
+-->
+
 ## Dependencies
 
 - [GraphQL](/graphql/README.md#library)
