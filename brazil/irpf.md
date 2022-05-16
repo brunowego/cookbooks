@@ -4,7 +4,7 @@
 
 ### Links
 
-- [Download do Programa de Imposto de Renda](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dirpf)
+- [Download do Programa de Imposto de Renda](https://gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dirpf)
 
 ### Dependencies
 
@@ -29,3 +29,8 @@ brew install --cask irpf2021
 
 1. Meu Imposto de Renda (Extrato da DIRPF)
 2. Documentos -> Cópia do Recibo de Entrega
+
+<!--
+https://bradescoseguros.com.br/clientes/produtos/plano-saude/servicos/extrato-IRPF-ex-segurados
+https://amil.com.br/beneficiario/#/imposto-de-renda
+-->

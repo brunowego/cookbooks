@@ -2,7 +2,7 @@
 
 ## List
 
-- Acknowledgement (ACK or NACK)]
+- Acknowledgement (ACK or NACK)
 - Active Directory Federation Services (ADFS)
 - Analytical Base Table (ABT)
 - As far as I know (AFAIK)
@@ -74,6 +74,7 @@
 - Request for Proposal (RfP)
 - Request for Quotation (RfQ)
 - Server-side Rendering (SSR)
+- Shaking My Head (SMH)
 - Site Reliability Engineering (SRE)
 - Software as a service (SaaS)
 - Software Development Kit (SDK)
@@ -89,6 +90,7 @@
 - Uniform Resource Locator (URL)
 - Uniform Resource Name (URN)
 - Universal Plug and Play (UPnP)
+- Utterly Destroyed or Ruined (Rekt)
 - Virtual Private Cloud (VPC)
 - War Room (WR)
 - Web Server Gateway Interface (WSGI)

@@ -15,6 +15,7 @@ https://github.com/scaffold-eth/scaffold-eth
 - [Org. Repository](https://github.com/ethereum)
 - [Main Website](https://ethereum.org)
 - [Wikipedia](https://en.wikipedia.org/wiki/Ethereum)
+- [Ethereum Gas tracker](https://useweb3.xyz/gas)
 
 ## Tools
 

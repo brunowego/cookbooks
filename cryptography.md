@@ -11,6 +11,10 @@ https://web3auth.io/
 https://atani.com/
 -->
 
+## Funny Phrases
+
+- The strongest support is ZERO!
+
 ## Glossary
 
 - Advanced Encryption Standard (AES)
@@ -19,7 +23,6 @@ https://atani.com/
 - Hardware Security Modules (HSM)
 - Public Key Infrastructure (PKI)
 - Rivest–Shamir–Adleman (RSA)
-- Relative Strength Index (RSI)
 
 <!--
 Encryption

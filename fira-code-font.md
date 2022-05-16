@@ -12,7 +12,8 @@ https://medium.com/@peterpme/operator-mono-fira-code-the-best-of-both-worlds-191
 #### Homebrew
 
 ```sh
-brew install --cask homebrew/cask-fonts/font-fira-code
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
 ```
 
 #### APT
@@ -28,5 +29,6 @@ sudo apt -y install fonts-firacode
 
 ```sh
 jq '."editor.fontFamily" |= "'\''Fira Code'\''"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+
 jq '."editor.fontLigatures" |= true' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```

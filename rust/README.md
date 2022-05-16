@@ -1,6 +1,8 @@
 # Rust
 
 <!--
+https://app.pluralsight.com/library/courses/fundamentals-rust/
+
 https://github.com/codelabsab/foodify
 
 https://linkedin.com/learning/rust-essential-training/learn-rust-programming
@@ -9,7 +11,6 @@ https://github.com/pat-St/cms-container/tree/master
 
 https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/rust.html
 
-https://app.pluralsight.com/library/courses/rust-fundamentals/table-of-contents
 https://linkedin.com/learning/first-look-rust/welcome
 https://pragprog.com/titles/hwrust/hands-on-rust/
 

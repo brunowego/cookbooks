@@ -1,15 +1,5 @@
 # Ultimaker Cura
 
-<!--
-https://www.domestika.org/en/courses/833-introduction-to-3d-design-and-printing
-https://www.udemy.com/course/impressao-3d-um-guia-passo-a-passo-2020/
-https://www.udemy.com/course/3d-printing-through-to-painting/
-https://www.udemy.com/course/3d-printing-101-the-ultimate-beginners-guide/
-https://www.udemy.com/course/how-to-optimize-3d-prints/
-https://linkedin.com/learning/additive-manufacturing-optimizing-3d-prints-2/getting-the-most-out-of-your-3d-printer
-https://www.coursera.org/lecture/3d-print-hardware/04-02-04-cura-slicer-basics-WJiS5
--->
-
 ## App
 
 ### Installation
@@ -19,6 +9,12 @@ https://www.coursera.org/lecture/3d-print-hardware/04-02-04-cura-slicer-basics-W
 ```sh
 brew install --cask ultimaker-cura
 ```
+
+### Plugins
+
+- Arc Welder
+- Cylindric Custom Support
+- Mesh Tools
 
 ### Configuration
 
@@ -35,30 +31,20 @@ brew install --cask ultimaker-cura
      - Y (Depth): 220
      - Next
 
-<!--
-https://www.youtube.com/watch?v=F6BCra3vW_k&t=36s
-https://www.youtube.com/watch?v=wbcB9LT40lE
-https://www.youtube.com/watch?v=us8YqV-sJkw
-https://www.youtube.com/watch?v=Xkr8YFtMgG4
-https://www.youtube.com/watch?v=k-inUpjRVLA
-https://www.youtube.com/watch?v=FdnV71HYIEw
-https://www.youtube.com/watch?v=tvxugQmhrcc
-https://www.youtube.com/watch?v=gSySGU-52Lo
-https://www.youtube.com/watch?v=XadcyqoQmrw
--->
+#### Parameters
 
-| Section | Parameter | Value |
-| --- | --- | --- |
-| Build Plate Adhesion | Build Plate Adhesion Type | None or Brim |
-| Build Plate Adhesion | Brim Line Count | 10 |
-| Infill | Infill Density | +20% |
-| Quality | Layer Height | 0.16 |
-| Shell | Wall Line Count | 4 |
-| Special Modes | Arc Welder | Yes |
-| Special Modes | Print Sequence | One at a Time |
-| Speed | Print Speed | 35.0 mm/s |
-| Support | Generate Support | Yes |
-| Top/Bottom | Monotonic Top/Bottom Order | Yes |
+| Section              | Parameter                  | Value         |
+| -------------------- | -------------------------- | ------------- |
+| Build Plate Adhesion | Build Plate Adhesion Type  | None or Brim  |
+| Build Plate Adhesion | Brim Line Count            | 10            |
+| Infill               | Infill Density             | +20%          |
+| Quality              | Layer Height               | 0.16          |
+| Shell                | Wall Line Count            | 4             |
+| Special Modes        | Arc Welder                 | Yes           |
+| Special Modes        | Print Sequence             | One at a Time |
+| Speed                | Print Speed                | 35.0 mm/s     |
+| Support              | Generate Support           | Yes           |
+| Top/Bottom           | Monotonic Top/Bottom Order | Yes           |
 
 ### Tips
 
@@ -70,17 +56,7 @@ https://www.youtube.com/watch?v=XadcyqoQmrw
    - Uncheck: Automatically drop models to the build plate
    - Close
 
-#### Cylindric Custom Support
-
-1. Marketplace -> Plugins Tab
-2. Cylindric Custom Support -> Install
-<!-- 3.  -->
-
 #### Mesh Tools
-
-1. Marketplace -> Plugins Tab
-2. Mesh Tools -> Install
-<!-- 3.  -->
 
 1. Right Click on Object
 2. Mesh Tools -> Spit models into parts
@@ -93,9 +69,9 @@ https://www.youtube.com/watch?v=XadcyqoQmrw
 
 ```txt
 ...
-G28 ;Home
-M420 S1 Z2 ;Enable ABL
-G1 Z2.0 F3000 ;Move Z Axis up
+G28 ; Home all axes
+M420 S1 Z2 ; Enable ABL
+G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
 ...
 ```
 
@@ -109,12 +85,12 @@ G1 Z2.0 F3000 ;Move Z Axis up
   "overrides": {
     "machine_disallowed_areas": {
       "default_value": []
-    },
+    }
   }
   // ...
 }
 ```
 
-#### Skirt
+<!-- #### Skirt
 
-adhesion
+adhesion -->

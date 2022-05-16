@@ -33,6 +33,7 @@ https://panelbear.com/
 https://sprig.com/
 https://splitbee.io/
 https://kontist.com/
+https://fnatic.com/
 -->
 
 ## Useful
@@ -150,7 +151,7 @@ const eslintRC = {
   ],
   plugins: [
     // ...
-    'tailwindcss'
+    'tailwindcss',
   ],
 }
 

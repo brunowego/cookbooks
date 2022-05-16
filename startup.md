@@ -23,7 +23,6 @@ https://angel.co/
 - Average Ticket Price (ATP)
 - Bootstrapping
 - Break-even
-- Bull Market / Bear Market
 - Bullseye Framework
 - Burn Rate
 - Capitalization (Cap.) Table

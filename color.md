@@ -18,6 +18,8 @@ https://tailwindshades.com/
 
 ## Tools
 
+- Sip
+
 ### Palette
 
 - [Accessible Color Generator](https://learnui.design/tools/accessible-color-generator.html)

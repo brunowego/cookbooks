@@ -4,7 +4,11 @@
 https://archive.org/
 -->
 
+## Links
+
+- [Semantic Web (s.k.a Web 3.0)](https://en.wikipedia.org/wiki/Semantic_Web)
+
 ## References
 
-- Web Services/Microservices - REST API
+- Web Services/Micro-services - REST API
 - Web Application - Deliver HTML

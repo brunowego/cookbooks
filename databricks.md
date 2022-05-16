@@ -1,6 +1,5 @@
 # Databricks
 
-
 ## Open Source Projects
 
 - Apache Spark
@@ -8,6 +7,3 @@
 - Koalas
 - MLflow
 - Redash
-
-
-TODO
