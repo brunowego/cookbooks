@@ -1,7 +1,10 @@
 # Design
 
 <!--
+https://hellonext.co/
 https://changer.io/
+https://showwcase.com/
+https://bandprotocol.com/
 
 https://circle.so/
 https://try-stand.com/sign-up/

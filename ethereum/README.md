@@ -16,6 +16,7 @@ https://github.com/scaffold-eth/scaffold-eth
 - [Main Website](https://ethereum.org)
 - [Wikipedia](https://en.wikipedia.org/wiki/Ethereum)
 - [Ethereum Gas tracker](https://useweb3.xyz/gas)
+- [Ethereum Average Transaction Fee](https://ycharts.com/indicators/ethereum_average_transaction_fee)
 
 ## Tools
 

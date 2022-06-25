@@ -12,3 +12,9 @@ https://bcb.gov.br/estabilidadefinanceira/sistema-valores-a-receber/
 - [Baixa da Empresa](https://gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/baixa-de-mei)
 - [Detran-DF / Portal](https://portal.detran.df.gov.br/)
 - [Taxa Selic](https://bcb.gov.br/controleinflacao/taxaselic)
+
+<!--
+https://www.youtube.com/watch?v=8Kgo-PykDhk
+https://www.youtube.com/watch?v=KOKS_apCwzA
+https://www.youtube.com/watch?v=Nk1LG5Fi9Uk
+-->

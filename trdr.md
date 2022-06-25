@@ -1,5 +1,9 @@
 # TRDR
 
+## Alternatives
+
+- [TradingLite](https://tradinglite.com/)
+
 ## Links
 
 - [Console](https://trdr.io/console)

@@ -40,7 +40,7 @@ docker run -d \
   -p 3000:3000 \
   --name grafana \
   --network workbench \
-  docker.io/grafana/grafana:7.5.7
+  docker.io/grafana/grafana:8.5.5
 
 # Using Google SSO
 docker run -d \
@@ -60,7 +60,7 @@ docker run -d \
   -p 3000:3000 \
   --name grafana \
   --network workbench \
-  docker.io/grafana/grafana:7.5.7
+  docker.io/grafana/grafana:8.5.5
 
 # Using SMTP
 docker run -d \
@@ -78,7 +78,7 @@ docker run -d \
   -p 3000:3000 \
   --name grafana \
   --network workbench \
-  docker.io/grafana/grafana:7.5.7
+  docker.io/grafana/grafana:8.5.5
 ```
 
 <!-- ```sh
@@ -89,9 +89,9 @@ docker cp [filename].json grafana:/etc/grafana/provisioning/dashboards
 echo -e '[INFO]\thttp://127.0.0.1:3000'
 ```
 
-| Login | Password |
-| --- | --- |
-| `admin` | `admin` |
+| Login   | Password |
+| ------- | -------- |
+| `admin` | `admin`  |
 
 ### Shell
 

@@ -7,6 +7,8 @@ MTP ATRStop
 MTP OpeningGap
 MTP STF
 MTP VSA
+
+https://www.tradingview.com/pine-script-docs/en/v4/Introduction.html
 -->
 
 <!--
@@ -19,10 +21,6 @@ Thomas Bulkowski
 -->
 
 <!--
-Doji
--->
-
-<!--
 ## Configuration
 
 - Heikin Ashi
@@ -32,6 +30,9 @@ Doji
 
 - [Main Website](https://tradingview.com/)
 - [All Markets](https://tradingview.com/markets/)
+- [Status Page](https://status.tradingview.com/)
+- [Shortcuts](https://tradingview.com/support/shortcuts/)
+- [Org. Repository](https://github.com/tradingview/)
 
 <!--
 5m, 15m, 30m, 1h, 2h, 4h, 6h, 12h, 1d, 2d, 1w, 1m
@@ -39,16 +40,18 @@ Doji
 
 ## Scale
 
-- Arithmetic **Tip:** Good for day-trade
-- Logarithmic **Tip:** Good for swing-trade
+- Arithmetic
+- Logarithmic **Tip:** For large time-frames. Good for growth visualization.
 
 ## Indicators
 
 - Bollinger Bands (BB)
 - Bollinger Bands Width (BBW)
+- Bullmarket Support Band
 - Commodity Channel Index (CCI) **Tip:** For weekly or daily time-frames.
 - Cumulative Volume Delta (CVD)
 - Delta Volume (DV) (kernel_phi) **Inputs:** Period of Cumulative Delta 50 (same as EMA). **Style:** Only Buy/Sell Volume and Cumulative Delta.
+- Divergence Indicator (DI)
 - EMA Ribbon. **Config:** Change the MA-1 color to green. **★**
 - Exponential Moving Average (EMA). **Days:** 9, 21, 50 or 100.
 - Ichimoku Cloud (IC). **Tip:** Remove Conversion/Base Lines and Lagging Span.
@@ -58,7 +61,7 @@ Doji
 - Moving Average (MA). **Tip:** Set length to 100. **★**
 - Moving Average Convergence Divergence (MACD) **Tip:** Works better with >= 4 hours time-frames.
 - On-Balance Volume (OBV)
-- Open Interest (OI) (**_Futures Only_**) **Style:** Remove Tables
+- Open Interest (OI) **Tip:** Futures only, Represents market purchases **Style:** Remove Tables
 - Relative Strength Index (RSI). **Config:** MA Length: 20 **Tip:** Overbought (>= 70) and Oversold (<= 30). Remember to add a alert on RSI for Overbought (69) / Oversold (31). **★**
 - RSI Levels
 - Stochastic RSI **Tip:** Best use with weekly time-frame.
@@ -74,6 +77,8 @@ VWAP: Session, Week, Month, Year
 -->
 
 <!--
+- Stop ATR
+- HiLo Activator
 - Average True Range (ATR)
 - Central Pivot Range (CPR)
 - Key EMAs
@@ -83,6 +88,14 @@ VWAP: Session, Week, Month, Year
 - Squeeze Momentum Indicator (SMI)
 - Supertrend
 - Volume Profile and Volume Indicator (VPVI)
+-->
+
+<!--
+Info line
+
+Above 45 degrees trend line angle is to fast/steep - Will eventually correct to more sustainable angle between 30-45 degrees
+Best trend ine angles are 30-45 degrees for PA to continue in same direction
+Below 30 degrees trend line angle is to slow/flat - Will eventually correct to more sustainable angle between 30-45 degrees
 -->
 
 ## Terms
@@ -120,11 +133,32 @@ https://www.youtube.com/watch?v=OTySzQHqYQw
 
 <!--
 Longs / Shorts Ratios
-Open Interest
 Perpetuals Binance Futures
 Liquidations (aggregation)
 Funding Rate (aggregation)
 -->
+
+### Tips
+
+#### Multiple Timeframes
+
+- 15m: Entry Price/Stop Loss
+- 1h: Main
+- 4h: Take Profit
+
+#### Tabs
+
+- 🟠 Golden Indices
+- 🟢 Crypto Spot
+- 🔴 Crypto Futures
+- 🔵 Stock Market
+- ⚫ Black Swan!
+
+#### Labels
+
+- 🔵 Crossing of Averages
+- 🟢 Long
+- 🔴 Short
 
 ### Issues
 

@@ -33,6 +33,7 @@ https://angel.co/
 - Customer Acquisition Cost (CAC)
 - Customer Lifetime Value (CLV or often CLTV)
 - Customer Lifetime Value (LTV)
+- Default Alive
 - Developer Relations (DevRel)
 - Due Diligence
 - Earnings Before Interest and Taxes (EBIT)
@@ -65,3 +66,9 @@ https://angel.co/
 
 - [Y Combinator](https://ycombinator.com/)
 - [500](https://500.co/)
+
+## Series/Movies
+
+- WeCrashed
+- The Dropout
+- Super Pumped

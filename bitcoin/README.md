@@ -1,6 +1,12 @@
 # Bitcoin
 
 <!--
+BLX
+
+SegWit
+
+Mt. Gox
+
 Trezor Model T
 Ledger Nano S
 
@@ -14,6 +20,10 @@ https://www.youtube.com/watch?v=A2KufQupz78
 https://hyblockcapital.com/liquidationlevel
 
 Masternode - Dash, PIVX, CrownCoin, TransferCoin, ExclusiveCoin
+
+https://www.theblockcrypto.com/data/crypto-markets/futures
+
+O.I. > 2,6m
 -->
 
 ## Links
@@ -25,10 +35,19 @@ Masternode - Dash, PIVX, CrownCoin, TransferCoin, ExclusiveCoin
 - [Bitcoin: Number of Active Addresses](https://studio.glassnode.com/metrics?a=BTC&m=addresses.ActiveCount)
 - [Code Repository](https://github.com/bitcoin/bitcoin)
 - [Taxa de hash total (TH/s)](blockchain.com/pt/charts/hash-rate)
+- [Bitcoin Average Cost Per Transaction](https://ycharts.com/indicators/bitcoin_average_cost_per_transaction)
+
+### Bear Market
+
+- [Google Trends / Bitcoin dead?](https://trends.google.com/trends/explore?date=all&q=bitcoin%20dead)
+
+## Stats
+
+- [Bitcoin Mayer Multiple](https://stats.buybitcoinworldwide.com/mayermultiple/)
+- [Bitcoin Halving Countdown](https://coinmarketcap.com/halving/bitcoin/)
 
 ## References
 
-- [Bitcoin Halving Countdown](https://coinmarketcap.com/halving/bitcoin/)
 - [COIN360](https://coin360.com)
 - [CoinMarketCap](https://coinmarketcap.com/)
 - [mempool - Bitcoin Explorer](https://mempool.space/)
@@ -37,14 +56,32 @@ Masternode - Dash, PIVX, CrownCoin, TransferCoin, ExclusiveCoin
 
 - [200 Week Moving Average Heatmap](https://lookintobitcoin.com/charts/200-week-moving-average-heatmap/)
 
+## Metrics
+
+- [Options](https://metrics.deribit.com/options/BTC)
+- [Futures](https://metrics.deribit.com/options/BTC)
+
+## Indicators
+
+- [200 Week Moving Average Heatmap](https://www.lookintobitcoin.com/charts/200-week-moving-average-heatmap/)
+- [Binance Long Short Ratio](https://toplsr.netlify.app/#/)
+- [Bitcoin Investor Tool: 2-Year MA Multiplier](https://www.lookintobitcoin.com/charts/bitcoin-investor-tool/)
+- [BTC Long/Short Ratio](https://coinglass.com/LongShortRatio)
+- [Fear And Greed Index](https://www.lookintobitcoin.com/charts/bitcoin-fear-and-greed-index/)
+- [MVRV Z-Score](https://www.lookintobitcoin.com/charts/mvrv-zscore/)
+- [Net Unrealized Profit/Loss (NUPL)](https://lookintobitcoin.com/charts/relative-unrealized-profit--loss/)
+- [Stock-to-Flow Model](https://www.lookintobitcoin.com/charts/stock-to-flow-model/)
+
 ## Miner
 
 - [Antpool](https://antpool.com/)
 
 ## Terms
 
+- Antifragile
 - Free Fall
 - Over-The-Counter (OTC)
+- Hold On for Dear Life (HODL)
 
 ## Indicators
 
@@ -53,15 +90,24 @@ Masternode - Dash, PIVX, CrownCoin, TransferCoin, ExclusiveCoin
 
 ## Indices
 
-- Bitcoin Dominance (BTC.D) - Bigger is better
-- U.S. 20 Year Treasury (US20Y) - Smaller is better
-- US Dollar Index (DXY or USDX) - Smaller is better
+- Bitcoin Dominance (BTC.D)
+- U.S. 20 Year Treasury (US20Y)
+- US Dollar Index (DXY or USDX (limited)) **Scale:** Logarithmic
+
+<!-- DXY inverse of Gold -->
 
 ## Research
 
 - Google Trends / Worldwide / Bitcoin
 
 ## Tips
+
+### Bitcoin Dominance
+
+Watch the dominance `BTC.D`:
+
+- 🔽 If it's going down, better to have alt-coin
+- 🔼 If it's going up, better to have bitcoin
 
 ### Fed Cycles and Bitcoin Performance
 

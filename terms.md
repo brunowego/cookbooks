@@ -20,6 +20,7 @@
 - Chaos engineering (Chaos Monkey)
 - Churn Rate
 - Classless Inter-Domain Routing (CIDR)
+- Clickbait
 - Cloud Provider/Cloud Computing
 - Command qQuery Responsibility Segregation (CQRS)
 - Common Gateway Interface (CGI)
@@ -45,6 +46,7 @@
 - Infrastructure as a service (IaaS)
 - Initial Public Offering (IPO)
 - Key Performance Indicators (KPI)
+- Know Your Customer (KYC)
 - Knowledge Transfer (KT)
 - Looks Good To Me (LGTM)
 - Low-code development platform (LCDP)

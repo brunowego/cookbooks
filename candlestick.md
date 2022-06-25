@@ -1,7 +1,0 @@
-# Candlestick
-
-TODO
-
-<!--
-exhaust/combustion
--->

@@ -4,6 +4,12 @@
 PAX Gold
 
 Ticker
+
+Governance Token
+Utility Token
+Decentralized Autonomous Organization (DAO)
+
+Ultima semana mes, vencimentos contratos futuros, smart-money
 -->
 
 ## Links
@@ -14,6 +20,7 @@ Ticker
 - [DailyClose](https://dailyclose.com/) **★**
 - [Defi Llama / Chains](https://defillama.com/chains)
 - [Messari](https://messari.io/)
+- [ScamAdviser](https://scamadviser.com/)
 - [Staking Rewards / Earn Passive Income With Crypto](https://stakingrewards.com/)
 - [Stock-to-Flow Model](https://lookintobitcoin.com/charts/stock-to-flow-model/)
 - [Top Crypto Gainers And Losers Today](https://coinmarketcap.com/gainers-losers/)
@@ -23,13 +30,15 @@ Ticker
 https://blockchair.com/
 -->
 
+### News
+
+- [CoinDesk](https://coindesk.com/)
+- [CoinTelegraph](https://cointelegraph.com)
+- [Decrypt](https://decrypt.co/)
+
 ### Companies
 
 - [Tether](https://tether.to/en/)
-
-### Categories
-
-- [Stablecoin](https://coinmarketcap.com/view/stablecoin/)
 
 ### Market
 
@@ -72,11 +81,6 @@ https://blockchair.com/
 - [COIN360 / Exchange](https://coin360.com/exchange/)
 - [TradingView / Stock Heatmap](https://tradingview.com/heatmap/stock/)
 
-### Economic Calendar and Indicators
-
-- [Brazil](https://mql5.com/en/economic-calendar/brazil)
-- [United States](https://mql5.com/en/economic-calendar/united-states)
-
 ## Tools
 
 - [Boblles](https://boblles.com/)
@@ -95,6 +99,10 @@ https://blockchair.com/
   - [Order Book Depth](http://xdecow.com/order-book-depth)
     -->
 
+<!--
+https://www.cryptometer.io/
+-->
+
 ### Tracker App
 
 - [CoinStats](https://coinstats.app/)
@@ -105,10 +113,19 @@ https://blockchair.com/
 - [BscScan](https://bscscan.com/)
 - [Etherscan](https://etherscan.io/)
 
+## Futures
+
+- Chicago Mercantile Exchange (CME)
+
+<!--
+CME Gaps
+-->
+
 ## Terms
 
-- All-Time High (ATH)
+- All-Time High (ATH) / All-Time Low (ATL)
 - Annual Percentage Rate (APR)
+- Annual Percentage Yield (APY)
 - Bull Market / Bear Market
 - Bull Trap and Bear Trap
 - Central Bank Digital Currency (CBDC)
@@ -116,21 +133,27 @@ https://blockchair.com/
 - Decentralized Autonomous Organization (DAO)
 - Decentralized Crypto Exchanges (DEX)
 - Distributed Ledger Technology (DLT)
-- Dollar-Cost Averaging (DCA)
 - Fear Of Missing Out (FOMO)
 - Fear, Uncertainty, and Doubt (FUD)
 - Fractal Expansion
 - Initial Coin Offering (ICO)
 - Initial DEX Offering (IDO)
 - Joy of Missing Out (JOMO)
+- Long Term Holder (LTH) (Accumulation) / Short Term Holder (STH) (Capitalization)
+- Market Making / Market Makers
 - Market Value to Realized Value (MVRV) **Tip:** <= 1 long, >= 3.7 short.
+- Memorandum (MEMO)
+- No Trade Zone
 - On-chain
+- Parabolic Rally
 - Parachains
 - Proof of Authority
 - Proof of Reserve
 - Proof of Stake
 - Proof of Work
 - Relative Strength Index (RSI)
+- Secure Asset Fund for Users (SAFU)
+- Spread
 - Ticker Symbol
 - Volume Profile Visible Range (VPVR)
 
@@ -159,11 +182,11 @@ https://blockchair.com/
 
 ## Tips
 
-### My Checklist
+### My Crypto Checklist
 
-- Max supply >= 1 Billion
-- Coin >= Token
-- Prefer < Exponential Moving Average (EMA)
+- Verify the Tokenomics
+- Max supply <= 1 Billion
+- Coin better than Token
 
 ### Trade Checklist
 

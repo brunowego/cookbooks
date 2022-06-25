@@ -20,6 +20,8 @@ https://github.com/ossf
 
 ## Terms
 
-- Security-by-design
 - Chief Information Security Officer (CISO)
+- Copycat Crime
+- Flash Loan
+- Security-by-design
 - Zero Trust Architecture (ZTA)

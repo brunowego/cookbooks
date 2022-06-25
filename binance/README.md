@@ -6,9 +6,13 @@
 - [CoinMarketCap / Binance](https://coinmarketcap.com/exchanges/binance/)
 - [Main Website](https://binance.com)
 - [New Alt-coins](https://binance.com/en/altcoins/new)
-- [New Cryptocurrency Listing](https://binance.com/en/support/announcement/c-48)
+- [Announcement](https://binance.com/en/support/announcement)
 - [Open Interest](https://binance.com/en/futures/funding-history/4)
 - [Trading Fees](https://binance.com/en/fee/schedule)
+
+## Tools
+
+- [Binance Top LSR](https://toplsr.netlify.app/)
 
 ## Guides
 
@@ -17,6 +21,7 @@
 ## Terms
 
 - One-Cancels-the-Other (OCO)
+- One-Triggers-a One Cancels the-Other order (OTOCO)
 - Take Profit/Stop Loss (TP/SL)
 
 ## App
@@ -45,9 +50,19 @@ brew install --cask binance
 | Margin  | Swing Trade |
 | Futures | Day Trade   |
 
-### [Futures / Trading Data](https://binance.com/en/futures/funding-history/4)
+### Futures Trading Data
+
+1. Derivatives -> USDⓈ-M Futures
+2. Information -> Trading Data
 
 **Period:** 1h
 
-1. Open Interest
-2. Long/Short Ratio
+- Open Interest 🔼
+- Long/Short Ratio 🔽
+
+### Correlation of Technical Indicators
+
+| Position | O.I. | L.S.R. | Funding Rate |
+| -------- | ---- | ------ | ------------ |
+| Long     | 🔼   | 🔽     | Negative     |
+| Short    | 🔼   | 🔼     | Positive     |

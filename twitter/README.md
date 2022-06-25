@@ -1,5 +1,9 @@
 # Twitter
 
+## Links
+
+- [TweetDeck](https://tweetdeck.twitter.com/)
+
 ## App
 
 ### Installation
@@ -8,6 +12,13 @@
 
 ```sh
 mas install 1482454543
+```
+
+### Uninstall
+
+```sh
+# MAS
+sudo mas uninstall 1482454543
 ```
 
 ## Tips
