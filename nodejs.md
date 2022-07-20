@@ -169,6 +169,20 @@ code --install-extension wix.vscode-import-cost
 
 ### Issues
 
+#### Missing Python2
+
+```log
+gyp ERR! stack pyenv: python2: command not found
+gyp ERR! stack
+gyp ERR! stack The `python2' command exists in these Python versions:
+```
+
+```sh
+#
+pyenv versions
+pyenv local 2.7.18
+```
+
 #### VSCode JavaScript Validate
 
 ```log

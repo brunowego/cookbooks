@@ -1,6 +1,8 @@
 # Next.js
 
 <!--
+https://github.com/t3-oss/create-t3-app
+
 https://showwcase.com/
 
 const nextConfig = {
@@ -46,6 +48,7 @@ NEXT_PUBLIC_MY_ENV
 ## Technologies
 
 <!-- - Client-Side Rendering (CSR) -->
+
 - Incremental Static Regeneration (ISR)
 - Server-Side Rendering (SSR)
 - Static Site Generation (SSG)
@@ -168,7 +171,7 @@ export default nextConfig
   "scripts": {
     // "clean": "npx rimraf ./.next",
     "clean": "yarn dlx rimraf ./.next",
-    "predev": "npm run clean",
+    "predev": "npm run clean"
     // ...
   }
 }

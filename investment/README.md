@@ -14,6 +14,8 @@ https://lp.exame.com/academy/curso-iniciacao-primeiros-passos-para-investir-na-b
 https://edu.b3.com.br/
 
 bear market occurs when a stock index declines 20 percent
+
+Carry Trades
 -->
 
 ## Links
@@ -35,6 +37,10 @@ bear market occurs when a stock index declines 20 percent
 - [RateInflation](https://rateinflation.com/inflation-rate/usa-inflation-rate/)
 - [YCharts](https://ycharts.com/indicators/us_inflation_rate_hcpi)
 
+<!--
+https://tradingeconomics.com/united-states/inflation-cpi
+-->
+
 ### Calendar
 
 - [Economic Calendar / Brazil](https://mql5.com/en/economic-calendar/brazil)
@@ -49,20 +55,23 @@ https://tradingeconomics.com/calendar
 - [CME FedWatch Tool](https://cmegroup.com/trading/interest-rates/countdown-to-fomc.html)
 
 <!--
+https://tradingeconomics.com/country-list/interest-rate
 https://investidor10.com.br/
 -->
 
 ## Terms
 
 - Antifragile
+- Assets Under Management (AUM)
 - Blue Chip
 - Circuit Breaker
-- Consumer Price Index (CPI)
+- Company Downsize
+- Dividend Yield
 - Dollar Peg
 - Dollar-cost averaging (DCA) **Tip:** It works best in an uptrend. Avoid for Alt-coins (Crypto Market).
 - Exchange-Traded Fund (ETF)
+- Exit Liquidity
 - Fear, Uncertainty, and Doubt (FUD)
-- Federal Open Market Committee (FOMC)
 - Flash Crash
 - Foreign Exchange Market (FX, Forex)
 - High-Frequency Trading (HFT)
@@ -71,12 +80,18 @@ https://investidor10.com.br/
 - Organisation for Economic Co-operation and Development (OECD)
 - Panic Selling
 - Pattern Day Trading (PDT)
-- Quantitative easing (QE)
+- Permabear / Permabull
+- Quantitative Easing (QE) / Quantitative Tightening (QT)
+- Quarter on Quarter (QoQ)
+- Retail Liquidity Provider (RLP)
 - Stagflation
 - Tradable / Non-tradable
+- Venture Capitalist (VC)
 - Year To Date (YTD)
+- Year-over-Year (YoY)
 
 <!--
+- Soft Landing
 - End of day data (E)
 - Data is delayed (D)
 -->
@@ -103,6 +118,12 @@ Dovish
 Compre ao som dos canhões e venda ao som dos violinos
 -->
 
+## Indices
+
+- Consumer Price Index (CPI)
+- Producer Price Index (PPI)
+- Purchasing Managers Index (PMI)
+
 ## News
 
 - [MarketWatch / Investing](https://marketwatch.com/investing?mod=top_nav)
@@ -120,9 +141,6 @@ Compre ao som dos canhões e venda ao som dos violinos
 
 <!--
 Funding  / Staking / Lending
-
-Quantitative Easing (QE)
-Quantitative Tightening (QT)
 -->
 
 ## Global Exchanges
@@ -143,28 +161,29 @@ Quantitative Tightening (QT)
 
 ### Indices
 
-| Name                                                 | Symbol           |
-| ---------------------------------------------------- | ---------------- |
-| Bombay Stock Exchange (BSE) SENSEX                   | SENSEX           |
-| Bovespa Index (IBOVESPA)                             | IBOV             |
-| Capitalization-weighted Stock Market Index (CSI) 300 | CSI300-HKG       |
-| Cotation Assistée en Continu (CAC) 40                | CAC40            |
-| Dow Jones Industrial Average (DJI)                   | DJI, YM1!        |
-| Dow Jones Transportation Average (DJT)               | DJT              |
-| Euronext 100                                         | N100, SX5E       |
-| Financial Times Stock Exchange (FTSE) 100            | FTSE100/UK100    |
-| Hang Seng Index                                      | HSI, HSI1!, HK50 |
-| Nasdaq Composite                                     | IXIC             |
-| New York Stock Exchange (NYSE) Composite             | NYA              |
-| Nikkei 225                                           | NKY/NIKKEI225    |
-| Shanghai Stock Exchange (SSE) Composite              | 000001           |
-| Shenzhen Stock Exchange (SZSE) 100                   |                  |
-| Standard and Poor's 500 (S&P 500)                    | SPX, ES1!        |
-| TSX Composite                                        |                  |
-| U.S. Dollar Index                                    | DXY              |
-| Volatility Index                                     | VIX              |
+| Name                                                 | Symbol            | Trading (GMT) | Pre-Open (GMT) |
+| ---------------------------------------------------- | ----------------- | ------------- | -------------- |
+| Bombay Stock Exchange (BSE) SENSEX                   | SENSEX            |               |                |
+| Bovespa Index (IBOVESPA)                             | IBOV              |               |                |
+| Capitalization-weighted Stock Market Index (CSI) 300 | CSI300-HKG        |               |                |
+| Cotation Assistée en Continu (CAC) 40                | CAC40             |               |                |
+| Dow Jones Industrial Average (DJI)                   | DJI, YM1!         |               |                |
+| Dow Jones Transportation Average (DJT)               | DJT               |               |                |
+| Euronext 100                                         | N100, SX5E        |               |                |
+| Financial Times Stock Exchange (FTSE) 100            | FTSE100/UK100/UKX |               |                |
+| Hang Seng Index                                      | HSI, HSI1!, HK50  |               |                |
+| Nasdaq Composite                                     | IXIC              |               |                |
+| New York Stock Exchange (NYSE) Composite             | NYA               |               |                |
+| Nikkei 225                                           | NKY/NIKKEI225     |               |                |
+| Shanghai Stock Exchange (SSE) Composite              | 000001            |               |                |
+| Shenzhen Stock Exchange (SZSE) 100                   |                   |               |                |
+| Standard and Poor's 500 (S&P 500)                    | SPX, ES1!         |               |                |
+| TSX Composite                                        |                   |               |                |
+| U.S. Dollar Index                                    | DXY               |               |                |
+| Volatility Index                                     | VIX               |               |                |
 
 <!--
+CN50USD
 PSI20
 -->
 
@@ -195,3 +214,5 @@ M1
 M15
 Overtrade
 -->
+
+||

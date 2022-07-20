@@ -1,18 +1,15 @@
 # Gap
 
-| Description        | Symbol                  | Correlation  |
-| ------------------ | ----------------------- | ------------ |
-| S&P 500 Volatility | `TVC:SPX/TVC:VIX`       | High is good |
-| Bitcoin vs Nasdaq  | `NASDAQ:BLX/NASDAQ:NDX` | High is good |
+| Description        | Symbol                                        | Change Percentage |
+| ------------------ | --------------------------------------------- | ----------------- |
+| S&P 500 Volatility | `TVC:SPX/TVC:VIX`                             | Positive          |
+| Bitcoin vs Nasdaq  | `NASDAQ:BLX/NASDAQ:NDX` or `BTCUSD/NAS100USD` | Positive          |
+| Bitcoin vs S&P 500 | `NASDAQ:BLX/TVC:SPX`                          | Positive          |
 
 <!--
 BTCUSDT/NAS100USD
 BTCUSDT/ES1!
 BTCUSDT/NQ1!
--->
-
-<!--
-Nasdaq Crypto Index (NCI)
 -->
 
 <!--

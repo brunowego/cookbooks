@@ -5,6 +5,8 @@ https://hellonext.co/
 https://changer.io/
 https://showwcase.com/
 https://bandprotocol.com/
+https://oasis.app/25977#Overview
+https://metafy.gg/
 
 https://circle.so/
 https://try-stand.com/sign-up/

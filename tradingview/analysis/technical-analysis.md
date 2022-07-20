@@ -24,11 +24,13 @@ Lower-highs and Lower-lows
 
 ## Trade
 
-- Scalping
-- Day-trade: 5m/15m in oversold
-- Swing-trade: Stop in daily, rising bottom in daily, 1h/4h in oversold
-- Position-trade
-- Hold
+| Type                         | Description                            |
+| ---------------------------- | -------------------------------------- |
+| Scalping                     | Between a few seconds to a few minutes |
+| Day-trade                    | Between a few hours to a few days      |
+| Swing-trade                  | Between a few days to a few weeks      |
+| Position-trade               | Between a few weeks to a few months    |
+| Hold On for Dear Life (HODL) |                                        |
 
 ## Tendencies
 
@@ -50,43 +52,39 @@ The **trend** is your **friend**.
 ## Candlestick
 
 <!--
-exhaust/combustion
+Exhaust/Combustion
+Liquidity Level or Liquidity Risk
 -->
 
 ### Types
 
-- Bullish/Bearish Harami
+- Harami (a.k.a. Pregnant)
 - Inside Bar. **Tip:** Daily time-frame
 
 ## Patterns
 
 ### Chart
 
-**Tip:** Bullish/Bearish is same as Ascending/Descending.
+**Tip:** Bullish/Bearish, Ascending/Descending or Rising/Falling is the same.
 
 - Adam and Eve
-- Ascending/Descending Triangle
-- Bart Simpson / Inverse Bart Simpson
-- Bullish/Bearish Channel
-- Bullish/Bearish Engulfing
-- Bullish/Bearish Flag (or Pennant)
-- Bullish/Bearish Megaphone
-- Cup and Handle / Inverse Cup and Handle
+- Bart Simpson
+- Channel
+- Cup and Handle
 - Dark Cloud Cover
-- Dead cat bounce
-- Double Top/Bottom
+- Dead Cat bounce
 - Downtrend / Uptrend Line. **Tip:** Just consider the body of the green candlesticks. Ignore the wick.
+- Engulfing
 - False Breakout / Fake-out
-- Flats: Regular / Irregular or Expanded / Running
-- Head and Shoulders / Inverse Head And Shoulders
-- Higher High / Higher Low
+- Flats: Regular/Irregular or Expanded/Running
+- Harmonic Pattern (Butterfly)
+- Higher High (HH), Higher Low (HL), Lower Low (LL) and Lower High (LH)
 - Long/Short Squeeze
-- Lower Low / Lower High
+- Megaphone
 - Oversold/Overbought Bounce
 - Pivot Low/High
 - Pivot Point
-- Pullback
-- Rising/Falling Wedge
+- Pullback (Uptrend) / Rally (Downtrend)
 - Rounding Bottom
 - Support / Resistance
 - Symmetrical Triangle
@@ -94,34 +92,31 @@ exhaust/combustion
 - Up/Down Trend
 - Waterfall
 
+#### Continuation
+
+- Flag
+- Pennant
+- Triangle
+- Wedge
+
 <!--
-Renko
+25 degree
 -->
 
-<!-- ### Continuation Patterns
-
-#### Triangule Patterns
-
-TODO
-
-#### Flag Patterns
-
-TODO
-
-#### Core 1233 Trend Patterns
-
-TODO
-
-### Reversal Patterns
+#### Reversal
 
 - Double Top/Bottom
 - 123 Reversal
-- Head & Shoulders
-- Rectangle Price Channel -->
+- Head and Shoulders **Tip:** Always consider the volume.
+- Rectangle Price Channel
 
 <!--
 Breakout / Power Breakout
 Pivot Gift/Classic/Breakout + MM20
+
+Renko
+
+Core 123 Trend
 -->
 
 ### Candlestick

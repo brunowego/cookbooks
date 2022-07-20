@@ -43,4 +43,29 @@ EOF
 ```sh
 #
 cointop holdings
+
+#
+cointop dominance
+
+#
+cointop price -c btc
 ```
+
+### Tips
+
+#### Server
+
+```sh
+#
+ssh-keygen
+
+#
+cointop server -p 2222
+```
+
+<!-- #### Autocomplete
+
+```sh
+# cointop
+source <(cointop completion zsh)
+``` -->

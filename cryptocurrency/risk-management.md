@@ -4,6 +4,10 @@
 https://www.investing.com/economic-calendar/
 -->
 
+## Terms
+
+- Risk-to-Reward Ratio (Risk/Reward Ratio) (RR)
+
 ## Take Care
 
 - Drawdown

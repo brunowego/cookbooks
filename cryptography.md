@@ -11,6 +11,10 @@ https://web3auth.io/
 https://atani.com/
 -->
 
+## Terms
+
+- Pretty Good Privacy (PGP)
+
 ## Funny Phrases
 
 - The strongest support is ZERO!

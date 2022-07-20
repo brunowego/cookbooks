@@ -1,6 +1,12 @@
 # Cryptocurrency
 
 <!--
+https://doc.bitapi.pro/
+
+https://atas.net/
+
+https://app.koinly.io/
+
 PAX Gold
 
 Ticker
@@ -10,6 +16,11 @@ Utility Token
 Decentralized Autonomous Organization (DAO)
 
 Ultima semana mes, vencimentos contratos futuros, smart-money
+
+https://www.multicoincharts.com/
+
+Nasdaq Crypto Index (NCI)
+https://www.nasdaq.com/crypto-index
 -->
 
 ## Links
@@ -34,6 +45,7 @@ https://blockchair.com/
 
 - [CoinDesk](https://coindesk.com/)
 - [CoinTelegraph](https://cointelegraph.com)
+- [CryptoPotato](https://cryptopotato.com/)
 - [Decrypt](https://decrypt.co/)
 
 ### Companies
@@ -48,10 +60,6 @@ https://blockchair.com/
 
 - [Altcoin Season Index: Is it Altseason right now?](https://blockchaincenter.net/en/altcoin-season-index/)
 
-### News
-
-- [CoinDesk](https://coindesk.com/)
-
 ### Mining
 
 - [2Miners](https://2miners.com/)
@@ -64,11 +72,23 @@ https://blockchair.com/
 
 - [Coins](https://coinmarketcap.com/coins/)
 - [Exchanges](https://coinmarketcap.com/rankings/exchanges/)
-- [Historical](https://coinmarketcap.com/historical/20130428/)
 - [ICO Calendar](https://coinmarketcap.com/ico-calendar/)
 - [New](https://coinmarketcap.com/new/)
 - [Tokens](https://coinmarketcap.com/tokens/)
 - [Volume / 24 Hour](https://coinmarketcap.com/currencies/volume/24-hour/)
+
+### Historical
+
+- [2013](https://coinmarketcap.com/historical/20130429/)
+- [2014](https://coinmarketcap.com/historical/20140101/)
+- [2015](https://coinmarketcap.com/historical/20150101/)
+- [2016](https://coinmarketcap.com/historical/20160101/)
+- [2017](https://coinmarketcap.com/historical/20170101/)
+- [2018](https://coinmarketcap.com/historical/20180101/)
+- [2019](https://coinmarketcap.com/historical/20190101/)
+- [2020](https://coinmarketcap.com/historical/20200101/)
+- [2021](https://coinmarketcap.com/historical/20210101/)
+- [2022](https://coinmarketcap.com/historical/20220101/)
 
 ### Fear & Greed Index
 
@@ -83,6 +103,7 @@ https://blockchair.com/
 
 ## Tools
 
+- [Quantify Crypto](https://quantifycrypto.com/terminal)
 - [Boblles](https://boblles.com/)
 - [Coinglass / Total Liquidations](https://coinglass.com/LiquidationData)
 - [CoinMarketCal](https://coinmarketcal.com/)
@@ -126,6 +147,7 @@ CME Gaps
 - All-Time High (ATH) / All-Time Low (ATL)
 - Annual Percentage Rate (APR)
 - Annual Percentage Yield (APY)
+- Auto-Deleveraging (ADL)
 - Bull Market / Bear Market
 - Bull Trap and Bear Trap
 - Central Bank Digital Currency (CBDC)
@@ -138,6 +160,8 @@ CME Gaps
 - Fractal Expansion
 - Initial Coin Offering (ICO)
 - Initial DEX Offering (IDO)
+- Initial Game Offering (IGO)
+- Initial NFT Offering (INO)
 - Joy of Missing Out (JOMO)
 - Long Term Holder (LTH) (Accumulation) / Short Term Holder (STH) (Capitalization)
 - Market Making / Market Makers
@@ -147,6 +171,7 @@ CME Gaps
 - On-chain
 - Parabolic Rally
 - Parachains
+- Point Of Control (POC)
 - Proof of Authority
 - Proof of Reserve
 - Proof of Stake
@@ -155,6 +180,8 @@ CME Gaps
 - Secure Asset Fund for Users (SAFU)
 - Spread
 - Ticker Symbol
+- Value Area High (VAH)
+- Value Area Low (VAL)
 - Volume Profile Visible Range (VPVR)
 
 ## Stock Market Index
@@ -166,6 +193,7 @@ CME Gaps
 | ES1!                                 | S&P 500 E-mini Futures                 |
 | [SPY](https://slickcharts.com/sp500) | Standard and Poor's 500                |
 | TOTAL                                | Total Market Cap                       |
+| TOTAL2                               | Total Market Cap (Exclude BTC)         |
 | TOTAL3                               | Total Market Cap (Exclude BTC and ETH) |
 
 ## Projects
@@ -182,12 +210,6 @@ CME Gaps
 
 ## Tips
 
-### My Crypto Checklist
-
-- Verify the Tokenomics
-- Max supply <= 1 Billion
-- Coin better than Token
-
 ### Trade Checklist
 
 - Is the resistance/support psychological or graphic?
@@ -195,10 +217,3 @@ CME Gaps
 <!--
 - Check Current Volume Before Trade
 -->
-
-### Project Evaluation
-
-- Community
-- Road-map
-- Team
-- Token Utility

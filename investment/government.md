@@ -10,3 +10,7 @@
 | U.K.  | GB10Y |                |
 | U.E.  | GB10Y | EXY            |
 | U.S.  | US10Y | DXT            |
+
+<!--
+T10Y2Y
+-->

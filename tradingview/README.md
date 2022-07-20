@@ -38,6 +38,12 @@ Thomas Bulkowski
 5m, 15m, 30m, 1h, 2h, 4h, 6h, 12h, 1d, 2d, 1w, 1m
 -->
 
+## Tools
+
+- Gann Fan
+- Pitchfork
+- Fib Channel
+
 ## Scale
 
 - Arithmetic
@@ -54,6 +60,7 @@ Thomas Bulkowski
 - Divergence Indicator (DI)
 - EMA Ribbon. **Config:** Change the MA-1 color to green. **★**
 - Exponential Moving Average (EMA). **Days:** 9, 21, 50 or 100.
+- Fair Value Gap by Anche (FVG) **★**
 - Ichimoku Cloud (IC). **Tip:** Remove Conversion/Base Lines and Lagging Span.
 - Keltner Channels (KC). **Tip:** For day time-frames.
 - MA Cross
@@ -74,6 +81,9 @@ Thomas Bulkowski
 
 <!--
 VWAP: Session, Week, Month, Year
+15m/1d
+4h/1w
+1d/1m
 -->
 
 <!--
@@ -100,8 +110,6 @@ Below 30 degrees trend line angle is to slow/flat - Will eventually correct to m
 
 ## Terms
 
-- Value Area High (VAH)
-- Value Area Low (VAL)
 - Back-testing
 
 ### Portuguese

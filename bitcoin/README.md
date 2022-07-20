@@ -1,6 +1,14 @@
 # Bitcoin
 
 <!--
+https://antiliquidation.gitlab.io/
+https://www.3cstats.com/leverage-bot-calculator/
+https://coinguides.org/average-cost-calculator-crypto-stocks-trading/
+https://charts.aggr.trade/
+https://cryptoprice.io/coins/bitcoin
+
+Not Your Your Keys, Not Your Coins
+
 BLX
 
 SegWit
@@ -37,14 +45,29 @@ O.I. > 2,6m
 - [Taxa de hash total (TH/s)](blockchain.com/pt/charts/hash-rate)
 - [Bitcoin Average Cost Per Transaction](https://ycharts.com/indicators/bitcoin_average_cost_per_transaction)
 
-### Bear Market
+### Google Trends
 
-- [Google Trends / Bitcoin dead?](https://trends.google.com/trends/explore?date=all&q=bitcoin%20dead)
+- [Bitcoin dead](https://trends.google.com/trends/explore?date=all&q=bitcoin%20dead)
+- [Bitcoin bottom](https://trends.google.com/trends/explore?date=all&q=bitcoin%20bottom)
+
+## Tools
+
+- [Quantify Crypto / Bitcoin](https://quantifycrypto.com/coins/BTC)
+- [BTC Funding Rate and Predicted Funding Rate](https://coinalyze.net/bitcoin/funding-rate/)
+- [Dollar Cost Averaging Bitcoin](https://dcabtc.com/)
+- [Aggr Trade / Charts](https://charts.aggr.trade/ne1n)
+- [Average Cost Calculator | Crypto, Stocks, Forex – Trading](https://coinguides.org/average-cost-calculator-crypto-stocks-trading/)
+- [Capcoin](https://capcoin.ru/?c=COINBASE:BTCUSD,COINBASE:ETHUSD,COINBASE:LTCUSD#nav)
+
+## Important Dates
+
+TODO
 
 ## Stats
 
 - [Bitcoin Mayer Multiple](https://stats.buybitcoinworldwide.com/mayermultiple/)
 - [Bitcoin Halving Countdown](https://coinmarketcap.com/halving/bitcoin/)
+- [Satoshis Per Person](https://satoshisperperson.com/)
 
 ## References
 
@@ -64,7 +87,6 @@ O.I. > 2,6m
 ## Indicators
 
 - [200 Week Moving Average Heatmap](https://www.lookintobitcoin.com/charts/200-week-moving-average-heatmap/)
-- [Binance Long Short Ratio](https://toplsr.netlify.app/#/)
 - [Bitcoin Investor Tool: 2-Year MA Multiplier](https://www.lookintobitcoin.com/charts/bitcoin-investor-tool/)
 - [BTC Long/Short Ratio](https://coinglass.com/LongShortRatio)
 - [Fear And Greed Index](https://www.lookintobitcoin.com/charts/bitcoin-fear-and-greed-index/)
@@ -85,16 +107,23 @@ O.I. > 2,6m
 
 ## Indicators
 
-- Bitcoin Production Cost
 - Bitcoin Wookalich Ratio (NVT)
+
+### Sentiment analysis
+
+- Bitcoin Production Cost **Config:** INDEX:BTCUSD, Interval 1D, Logarithmic Scale.
 
 ## Indices
 
 - Bitcoin Dominance (BTC.D)
 - U.S. 20 Year Treasury (US20Y)
-- US Dollar Index (DXY or USDX (limited)) **Scale:** Logarithmic
+- US Dollar Index (DXY or USDX (limited)) **Config:** Logarithmic Scale.
 
-<!-- DXY inverse of Gold -->
+<!--
+DXY inverse of Gold
+
+TVC:DXY vs INDEX:BTCUSD -> Pin to scale -> Pinned to scale B -> Logarithmic
+-->
 
 ## Research
 

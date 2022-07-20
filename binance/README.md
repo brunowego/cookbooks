@@ -1,14 +1,19 @@
 # Binance
 
+<!--
+https://www.glassdoor.com/Salary/Binance-Salaries-E1816824.htm
+-->
+
 ## Links
 
 - [BscScan](https://bscscan.com/)
 - [CoinMarketCap / Binance](https://coinmarketcap.com/exchanges/binance/)
-- [Main Website](https://binance.com)
-- [New Alt-coins](https://binance.com/en/altcoins/new)
-- [Announcement](https://binance.com/en/support/announcement)
-- [Open Interest](https://binance.com/en/futures/funding-history/4)
-- [Trading Fees](https://binance.com/en/fee/schedule)
+- [Main Website](https://www.binance.com)
+- [New Alt-coins](https://www.binance.com/en/altcoins/new)
+- [Announcement](https://www.binance.com/en/support/announcement)
+- [Open Interest](https://www.binance.com/en/futures/funding-history/4)
+- [Trading Fees](https://www.binance.com/en/fee/schedule)
+- [Deposit & Withdrawal Status](https://www.binance.com/en/network)
 
 ## Tools
 
@@ -59,10 +64,3 @@ brew install --cask binance
 
 - Open Interest 🔼
 - Long/Short Ratio 🔽
-
-### Correlation of Technical Indicators
-
-| Position | O.I. | L.S.R. | Funding Rate |
-| -------- | ---- | ------ | ------------ |
-| Long     | 🔼   | 🔽     | Negative     |
-| Short    | 🔼   | 🔼     | Positive     |

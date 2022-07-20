@@ -12,9 +12,26 @@ https://www.udemy.com/courses/search/?src=ukw&q=openzeppelin
 
 ## CLI
 
+### Installation
+
+```sh
+#
+npm install @openzeppelin/cli -g
+```
+
 ### Commands
 
 ```sh
-# Using NPM
+# Using NPX
 npx @openzeppelin/cli -h
+
+# Using Local
+openzeppelin -h
+```
+
+### Usage
+
+```sh
+#
+openzeppelin accounts
 ```

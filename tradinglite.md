@@ -1,8 +1,15 @@
 # TradingLite
 
+<!--
+https://atas.net/ru/
+https://bookmap.com/
+-->
+
 ## Links
 
 - [Main Website](https://tradinglite.com/)
+- [Status Page](https://status.tradinglite.com/)
+- [Feedback](https://feedback.tradinglite.com/)
 
 ## Indicators
 
@@ -26,7 +33,7 @@
 
 ## Heatmap Intensity Formula
 
-### BTCUSDT Futures
+### BTC/USDT Futures
 
 - Min: (Max / 10) \* 1,5 (eq. 15%)
 - Min: (Max / 10) \* 4 (eq. 40%)

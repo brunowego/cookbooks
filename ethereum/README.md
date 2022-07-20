@@ -8,6 +8,8 @@ Near
 Cloken
 
 https://github.com/scaffold-eth/scaffold-eth
+
+https://www.casadocodigo.com.br/products/livro-blockchain-ethereum
 -->
 
 ## Links

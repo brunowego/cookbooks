@@ -1,5 +1,9 @@
 # hostess
 
+<!--
+sudo hostess add g1.globo.com 127.0.0.1
+-->
+
 ## CLI
 
 ### Installation
@@ -36,5 +40,5 @@ hostess -h
 
 ```sh
 #
-sudo hostess add [hostname] 127.0.0.1
+sudo hostess add <hostname> 127.0.0.1
 ```

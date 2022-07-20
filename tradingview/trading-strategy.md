@@ -19,12 +19,16 @@
 
 ### Got Result
 
-- EMA 9 close 0 SMA 5 **Style:** EMA Yellow
 - EMA 12 close 0 SMA 5 **Style:** EMA Orange
-- EMA 26 close 0 SMA 5 **Style:** EMA Red
 - EMA 50 close 0 SMA 5 **Style:** EMA White
+- EMA 200 close 0 SMA 5 **Style:** EMA White
 - Volume (Vol)
 - Volume Profile Visible Range (VPVR) **Inputs:** Row Size 176, Volume Total, Volume Area Volume 100. **Style:** Only Volume Profile.
+
+<!--
+SMMA 100 == EMA 200
+SMMA 26 == EMA 100
+-->
 
 ### Powerful
 

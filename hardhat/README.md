@@ -2,6 +2,9 @@
 
 <!--
 https://github.com/gakonst/foundry
+https://github.com/AcalaNetwork/hardhat-tutorials
+
+https://www.udemy.com/course/blockchain-build-a-dapp-using-solidity-hardhat-and-react/
 -->
 
 ## Links

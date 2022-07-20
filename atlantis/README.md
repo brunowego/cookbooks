@@ -3,6 +3,8 @@
 <!--
 https://github.com/runatlantis/helm-charts
 
+https://github.com/infracost/vscode-infracost
+
 tfstate war
 
 Terragrunt

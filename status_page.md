@@ -1,6 +1,9 @@
 # Status Page
 
 <!--
+https://status.tradinglite.com/
+
+https://updown.io/
 https://github.com/TwinProduction/gatus
 https://stackstatus.net/
 https://status.fastly.com/
