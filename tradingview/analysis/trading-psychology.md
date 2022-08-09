@@ -1,0 +1,3 @@
+# Trading Psychology
+
+TODO

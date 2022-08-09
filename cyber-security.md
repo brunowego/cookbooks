@@ -22,6 +22,8 @@ https://github.com/ossf
 
 - Chief Information Security Officer (CISO)
 - Copycat Crime
+- Doxing (Drop docs)
 - Flash Loan
+- Know Your Customer (KYC)
 - Security-by-design
 - Zero Trust Architecture (ZTA)

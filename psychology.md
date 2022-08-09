@@ -1,0 +1,5 @@
+# Psychology
+
+## Terms
+
+- Positive Reinforcement

@@ -3,6 +3,7 @@
 <!--
 https://twind.dev/
 https://github.com/MathiasGilson/tailwind-styled-component
+mui
 -->
 
 **Keywords:** CSS framework
@@ -34,6 +35,13 @@ https://sprig.com/
 https://splitbee.io/
 https://kontist.com/
 https://fnatic.com/
+https://flipsidecrypto.xyz/
+https://coastpay.com/
+https://stint.co/
+https://www.hellolanding.com/
+https://metafy.gg/
+https://hellonext.co/
+https://snapshot.org/
 -->
 
 ## Useful

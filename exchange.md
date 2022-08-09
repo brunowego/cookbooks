@@ -1,5 +1,13 @@
 # Exchange
 
+## Ranking
+
+- [Kaiko](https://www.kaiko.com/pages/exchange-ranking)
+
+<!--
+CryptoCompare
+-->
+
 ## Decentralized Exchange (DEX)
 
 - [1inch](https://app.1inch.io/)

@@ -30,6 +30,8 @@ https://avenue.so/
 https://railz.ai/
 https://attio.com/
 
+https://connect.stripe.com/oauth/v2/authorize?response_type=code&client_id=ca_Lb8HJoZmN3mBjMEbmHrjh5lkrSLSr1FW&scope=read_write
+
 login
 
 https://cal.com/signup

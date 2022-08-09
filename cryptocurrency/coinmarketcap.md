@@ -1,5 +1,9 @@
 # CoinMarketCap
 
+<!--
+https://www.aicoin.com/
+-->
+
 ## Categories
 
 - [Automated Market Maker (AMM)](https://coinmarketcap.com/view/amm/)

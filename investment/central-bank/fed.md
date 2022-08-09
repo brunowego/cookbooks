@@ -2,17 +2,22 @@
 
 <!--
 US Pending Home Sales
-
 Copper Index
-
-FEDFUNDS
 -->
+
+## Links
+
+- [Interest Rates (IR)](/trading/interest-rates.md)
 
 ## Terms
 
 - Too Big To Fail (TBTF)
 
-## Important Indices
+## Main Indices
 
 - Personal Consumption Expenditures (PCE)
-- Gross Domestic Product (GDP)
+
+<!--
+FRED:PCE
+FRED:FEDFUNDS
+-->

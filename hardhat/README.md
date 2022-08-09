@@ -1,6 +1,17 @@
 # Hardhat
 
 <!--
+Learn Solidity Smart Contract Testing
+
+Hardhat
+Infura
+Ropsten
+Faucet
+alchemy.com
+covalenthq.com
+cybertino.com
+zerion.io
+
 https://github.com/gakonst/foundry
 https://github.com/AcalaNetwork/hardhat-tutorials
 

@@ -13,6 +13,10 @@ Financial Accounting Standards Board (FASB)
 Commodity Futures Trading Commission (CFTC)
 -->
 
+## Researches
+
+- [How (un)popular is Joe Biden?](https://projects.fivethirtyeight.com/biden-approval-rating/)
+
 ## Events Sentiment Mapping
 
 | Event                           | Volatility |

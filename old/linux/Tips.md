@@ -22,5 +22,5 @@ arch
 
 ## Shortcuts
 
-- Suspended `CTRL+Z`
-- Signal: interrupt `CTRL+C`
+- Suspended `Ctrl+Z`
+- Signal: interrupt `Ctrl+C`

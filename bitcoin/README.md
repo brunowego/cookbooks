@@ -44,11 +44,12 @@ O.I. > 2,6m
 - [Code Repository](https://github.com/bitcoin/bitcoin)
 - [Taxa de hash total (TH/s)](blockchain.com/pt/charts/hash-rate)
 - [Bitcoin Average Cost Per Transaction](https://ycharts.com/indicators/bitcoin_average_cost_per_transaction)
+- [Bitcoin Is Dead - The #1 Database of Notable Bitcoin Skeptics](https://www.bitcoinisdead.org/)
 
 ### Google Trends
 
-- [Bitcoin dead](https://trends.google.com/trends/explore?date=all&q=bitcoin%20dead)
-- [Bitcoin bottom](https://trends.google.com/trends/explore?date=all&q=bitcoin%20bottom)
+- [Bitcoin Dead](https://trends.google.com/trends/explore?date=all&q=bitcoin%20dead)
+- [Bitcoin Bottom](https://trends.google.com/trends/explore?date=all&q=bitcoin%20bottom)
 
 ## Tools
 
@@ -58,6 +59,7 @@ O.I. > 2,6m
 - [Aggr Trade / Charts](https://charts.aggr.trade/ne1n)
 - [Average Cost Calculator | Crypto, Stocks, Forex – Trading](https://coinguides.org/average-cost-calculator-crypto-stocks-trading/)
 - [Capcoin](https://capcoin.ru/?c=COINBASE:BTCUSD,COINBASE:ETHUSD,COINBASE:LTCUSD#nav)
+- [Volatility Index](https://www.winrate.io/volatility-index)
 
 ## Important Dates
 
@@ -102,8 +104,9 @@ TODO
 
 - Antifragile
 - Free Fall
-- Over-The-Counter (OTC)
 - Hold On for Dear Life (HODL)
+- Over-The-Counter (OTC)
+- Unspent Transaction Output (UTXO)
 
 ## Indicators
 

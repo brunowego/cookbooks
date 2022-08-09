@@ -4,6 +4,8 @@
 https://medium.com/webeetle/come-realizzare-una-rest-api-serverless-fastify-vercel-faf9efcc2a2d
 https://github.com/webeetle/fastify-serverless-vercel
 https://github.com/studioalex/vigilant/tree/main/apps/api
+https://github.com/coollabsio/coolify/tree/main/apps/api
+https://github.com/taneba/fullstack-graphql-app
 -->
 
 ## Links

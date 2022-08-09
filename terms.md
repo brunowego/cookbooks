@@ -41,6 +41,7 @@
 - For Your Information (FYI)
 - Free and Open-Source Software (FOSS)
 - Identity Provider (IdP)
+- In My Opinion (IMO)
 - Individual Development Plan (IDP)
 - Individual Development Plan (IDP)]
 - Infrastructure as a service (IaaS)

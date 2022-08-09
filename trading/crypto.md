@@ -2,6 +2,13 @@
 
 <!--
 3Commas
+
+https://github.com/edgeware-network/Edgeware-Website
+https://github.com/idena-network/idena-web
+https://github.com/risedle/interface
+https://github.com/sushiswap/sushiswap
+
+https://analytics.solarbeam.io/tokens/0x98878b06940ae243284ca214f92bb71a2b032b8a
 -->
 
 ## Checklist

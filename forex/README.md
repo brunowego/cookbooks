@@ -15,3 +15,21 @@ https://www.udemy.com/course/from-zero-to-expert-forex-trader-with-supply-and-de
 ## Terms
 
 - Bid–Ask Spread
+
+<!--
+ECONOMICS:USINTR
+ECONOMICS:USIRYY
+Same % scale
+ECONOMICS:USGDP
+ECONOMICS:BRIRYY
+ECONOMICS:BRINTR
+
+---
+1D
+REGULAR
+ECONOMICS:EUINTR
+ECONOMICS:USINTR
+
+---
+ECONOMICS:BRINTR
+-->

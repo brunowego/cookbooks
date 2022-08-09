@@ -1,5 +1,11 @@
 # Solidity
 
+<!--
+https://www.youtube.com/watch?v=gyMwXuJrbJQ
+
+ERC 1155
+-->
+
 **Keywords:** Smart Contracts
 
 ## Tips

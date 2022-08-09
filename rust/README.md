@@ -1,6 +1,8 @@
 # Rust
 
 <!--
+https://crates.io/
+
 https://app.pluralsight.com/library/courses/fundamentals-rust/
 
 https://github.com/codelabsab/foodify

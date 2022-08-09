@@ -51,6 +51,7 @@ Thomas Bulkowski
 
 ## Indicators
 
+- Average Directional Index (ADX)
 - Bollinger Bands (BB)
 - Bollinger Bands Width (BBW)
 - Bullmarket Support Band
@@ -107,6 +108,14 @@ Above 45 degrees trend line angle is to fast/steep - Will eventually correct to 
 Best trend ine angles are 30-45 degrees for PA to continue in same direction
 Below 30 degrees trend line angle is to slow/flat - Will eventually correct to more sustainable angle between 30-45 degrees
 -->
+
+## TradingView Users
+
+- [TradingShot](https://www.tradingview.com/u/TradingShot/)
+
+## Technical Analysis
+
+- [BITCOIN vs USD vs S&P500 What 2022 will be like.](https://www.tradingview.com/chart/BTCUSD/5oJFyXZS-BITCOIN-vs-USD-vs-S-P500-What-2022-will-be-like-HAPPY-NEW-YEAR/)
 
 ## Terms
 
@@ -167,6 +176,15 @@ Funding Rate (aggregation)
 - 🔵 Crossing of Averages
 - 🟢 Long
 - 🔴 Short
+
+#### Trend Lines
+
+| Trend            | Color  |
+| ---------------- | ------ |
+| ↗ Monthly Trend  | White  |
+| ↗ Weekly Trend   | Red    |
+| ↗ Daily Trend    | Orange |
+| ↗ Intraday Trend | Yellow |
 
 ### Issues
 

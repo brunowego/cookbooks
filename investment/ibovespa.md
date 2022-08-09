@@ -1,5 +1,10 @@
 # Bovespa Index (IBOVESPA)
 
+<!--
+BMFBOVESPA:DI11!-(100-CME:GE1!)
+ECONOMICS:BRIRYY-ECONOMICS:USIRYY
+-->
+
 ## Stock Codes
 
 | Code | Type                | Example |

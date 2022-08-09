@@ -16,6 +16,22 @@ brew install --cask telegram
 
 ### Tips
 
+#### Channel
+
+<!--
+https://www.youtube.com/watch?v=otUinXXejdE&t=2s
+-->
+
+1. Find user `@BotFather` -> Start
+2. Type `/newbot`:
+   - Name: `TetrisBot`
+   - Username: `tetris_bot`
+3. Create new channel
+   - Add Admin `@username_to_id`
+   - Type `/start`
+   - Remove `IDBot`
+   - Add Admin `@TetrisBot`
+
 #### Force Specific Network Interface
 
 ```sh

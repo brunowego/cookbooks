@@ -53,36 +53,6 @@ NEXT_PUBLIC_MY_ENV
 - Server-Side Rendering (SSR)
 - Static Site Generation (SSG)
 
-<!--
-Examples
-
-https://github.com/bigint/party
-https://github.com/cliid/cliid.dev
-https://github.com/graphlatte/graphlatte
-https://github.com/planetscale/nextjs-planetscale-starter
-https://github.com/basetool-io/basetool
-https://github.com/sentrei/sentrei
-https://github.com/calendso/calendso/
-https://github.com/Expensify/App
-https://github.com/dwarvesf/nextjs-boilerplate
-https://github.com/vercel/virtual-event-starter-kit
-https://github.com/plutomi/plutomi
-https://github.com/ljtechdotca/next-reddit
-https://github.com/ioofy/App
-https://github.com/axeldelafosse/expo-next-monorepo-example
-https://github.com/diego3g/umbriel
-https://umbriel-dashboard-three.vercel.app/
-https://github.com/fdaciuk/conduit-api
-https://github.com/waptik/vvu-fleet-management-system
-https://github.com/nohsangwoo/instaclone-backend-v3
-https://github.com/Rowan-Paul/project-argus
-https://github.com/myriadsocial/myriad-web
-https://github.com/email2vimalraj/food-pos-app
-https://github.com/jackmerrill/snacc.chat
-https://github.com/littleeagleio/littleeagle.io
-https://github.com/tensight/tensight-app
--->
-
 ## CLI
 
 ### Commands

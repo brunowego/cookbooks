@@ -1,6 +1,8 @@
 # Ruby on Rails
 
 <!--
+https://github.com/myhearty-org/myhearty-api
+
 https://linkedin.com/learning/paths/become-a-ruby-on-rails-developer
 https://linkedin.com/learning/topics/ruby-on-rails?entityType=COURSE
 

@@ -31,6 +31,7 @@ https://snapshot.org
 ## Terms
 
 - [Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/evm/)
+- Giga-Wei (Gwei)
 
 ## Develop Environment
 
@@ -43,3 +44,15 @@ https://snapshot.org
 ## Wallet
 
 - [Metamask](/metamask.md)
+
+## Gwei Units
+
+| Unit                      | Wei Value                     |
+| ------------------------- | ----------------------------- |
+| Wei 1 wei                 |
+| Kwei (babbage)            | 1,000 wei                     |
+| Mwei (lovelace)           | 1,000,000 wei                 |
+| Gwei (shannon)            | 1,000,000,000 wei             |
+| Twei (microether, szabo)  | 1,000,000,000,000 wei         |
+| Pwei (milliether, finney) | 1,000,000,000,000,000 wei     |
+| Ether                     | 1,000,000,000,000,000,000 wei |

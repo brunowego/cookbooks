@@ -1,6 +1,11 @@
 # Cryptocurrency
 
 <!--
+https://www.upwork.com/hire/cryptocurrency-freelancers/
+https://www.codementor.io/cryptocurrency-experts
+
+Rug Pull
+
 https://doc.bitapi.pro/
 
 https://atas.net/
@@ -43,6 +48,7 @@ https://blockchair.com/
 
 ### News
 
+- [BeInCrypto](https://beincrypto.com/)
 - [CoinDesk](https://coindesk.com/)
 - [CoinTelegraph](https://cointelegraph.com)
 - [CryptoPotato](https://cryptopotato.com/)
@@ -171,30 +177,30 @@ CME Gaps
 - On-chain
 - Parabolic Rally
 - Parachains
-- Point Of Control (POC)
 - Proof of Authority
 - Proof of Reserve
 - Proof of Stake
 - Proof of Work
-- Relative Strength Index (RSI)
 - Secure Asset Fund for Users (SAFU)
 - Spread
 - Ticker Symbol
+- Volume Profile Visible Range (VPVR)
+
+- Point Of Control (POC)
 - Value Area High (VAH)
 - Value Area Low (VAL)
-- Volume Profile Visible Range (VPVR)
 
 ## Stock Market Index
 
-| Abbr.                                | Title                                  |
-| ------------------------------------ | -------------------------------------- |
-| BTC.D                                | Bitcoin Dominance                      |
-| OTHERS.D                             | Others Dominance (Alt-coins)           |
-| ES1!                                 | S&P 500 E-mini Futures                 |
-| [SPY](https://slickcharts.com/sp500) | Standard and Poor's 500                |
-| TOTAL                                | Total Market Cap                       |
-| TOTAL2                               | Total Market Cap (Exclude BTC)         |
-| TOTAL3                               | Total Market Cap (Exclude BTC and ETH) |
+| Abbr.                                | Title                                                |
+| ------------------------------------ | ---------------------------------------------------- |
+| BTC.D                                | Bitcoin Dominance                                    |
+| OTHERS.D                             | Others Dominance (Alt-coins)                         |
+| ES1!                                 | S&P 500 E-mini Futures                               |
+| [SPY](https://slickcharts.com/sp500) | Standard and Poor's 500                              |
+| TOTAL                                | Total Market Cap (Only top 125)                      |
+| TOTAL2                               | Total Market Cap (Only top 125, exclude BTC)         |
+| TOTAL3                               | Total Market Cap (Only top 125, exclude BTC and ETH) |
 
 ## Projects
 

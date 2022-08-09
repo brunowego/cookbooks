@@ -1,4 +1,10 @@
-# Funding
+# Funding Rate
+
+<!--
+https://github.com/jironghuang/fundingrate
+https://github.com/yasu21/fr-checker
+https://github.com/js-sodasu/binance-funding-rate
+-->
 
 ## Links
 
@@ -12,9 +18,9 @@
 - [Introduction to Binance Futures Funding Rates](https://www.binance.com/en/support/faq/360033525031)
 
 <!--
-< -0,01% bearish
+< -0,01% bullish
 0,01% neutral
-> 0,01% bullish
+> 0,01% bearish
 -->
 
 ## Exchanges

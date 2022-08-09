@@ -26,6 +26,7 @@ Carry Trades
 - [finviz / World Map](https://finviz.com/map.ashx?t=geo&st=ytd)
 - [Fundamentus](https://fundamentus.com.br/)
 - [Investing / Single Currency Crosses](https://investing.com/currencies/single-currency-crosses)
+- [Infinite Market Cap](https://8marketcap.com/)
 
 ### Indices
 
@@ -79,6 +80,7 @@ https://investidor10.com.br/
 - No Trade Zone
 - Organisation for Economic Co-operation and Development (OECD)
 - Panic Selling
+- Paper Hands / Diamond Hands
 - Pattern Day Trading (PDT)
 - Permabear / Permabull
 - Quantitative Easing (QE) / Quantitative Tightening (QT)
@@ -161,30 +163,58 @@ Funding  / Staking / Lending
 
 ### Indices
 
-| Name                                                 | Symbol            | Trading (GMT) | Pre-Open (GMT) |
-| ---------------------------------------------------- | ----------------- | ------------- | -------------- |
-| Bombay Stock Exchange (BSE) SENSEX                   | SENSEX            |               |                |
-| Bovespa Index (IBOVESPA)                             | IBOV              |               |                |
-| Capitalization-weighted Stock Market Index (CSI) 300 | CSI300-HKG        |               |                |
-| Cotation Assistée en Continu (CAC) 40                | CAC40             |               |                |
-| Dow Jones Industrial Average (DJI)                   | DJI, YM1!         |               |                |
-| Dow Jones Transportation Average (DJT)               | DJT               |               |                |
-| Euronext 100                                         | N100, SX5E        |               |                |
-| Financial Times Stock Exchange (FTSE) 100            | FTSE100/UK100/UKX |               |                |
-| Hang Seng Index                                      | HSI, HSI1!, HK50  |               |                |
-| Nasdaq Composite                                     | IXIC              |               |                |
-| New York Stock Exchange (NYSE) Composite             | NYA               |               |                |
-| Nikkei 225                                           | NKY/NIKKEI225     |               |                |
-| Shanghai Stock Exchange (SSE) Composite              | 000001            |               |                |
-| Shenzhen Stock Exchange (SZSE) 100                   |                   |               |                |
-| Standard and Poor's 500 (S&P 500)                    | SPX, ES1!         |               |                |
-| TSX Composite                                        |                   |               |                |
-| U.S. Dollar Index                                    | DXY               |               |                |
-| Volatility Index                                     | VIX               |               |                |
+**Timezone:** GMT
+
+### Asia Pacific
+
+Central & South Asia, Northeastern Asia, Southeastern Asia, Australia and Oceania.
+
+| Name                                                 | Symbol           | Trading | Pre-Open | Country |
+| ---------------------------------------------------- | ---------------- | ------- | -------- | ------- |
+| Bombay Stock Exchange (BSE) SENSEX                   | SENSEX           |         |          |         |
+| Capitalization-weighted Stock Market Index (CSI) 300 | CSI300-HKG       |         |          |         |
+| Hang Seng Index                                      | HSI, HSI1!, HK50 |         |          |         |
+| Nikkei 225                                           | NKY/NIKKEI225    |         |          |         |
+| Shanghai Stock Exchange (SSE) Composite              | 000001           |         |          |         |
+| Shenzhen Stock Exchange (SZSE) 100                   |                  |         |          |         |
+
+### Europe
+
+Northern Europe, Southern Europe, Eastern Europe, Western Europe.
+
+| Name                                      | Symbol            | Trading | Pre-Open | Country |
+| ----------------------------------------- | ----------------- | ------- | -------- | ------- |
+| Cotation Assistée en Continu (CAC) 40     | CAC40             |         |          |         |
+| Euronext 100                              | N100, SX5E        |         |          |         |
+| Financial Times Stock Exchange (FTSE) 100 | FTSE100/UK100/UKX |         |          |         |
+
+### Middle East/Africa
+
+Middle East, Northern Africa, Southern Africa.
+
+| Name | Symbol | Trading | Pre-Open | Country |
+| ---- | ------ | ------- | -------- | ------- |
+
+### Americas
+
+North America, South America, Central America, Caribbean.
+
+| Name                                     | Symbol    | Trading | Pre-Open | Country |
+| ---------------------------------------- | --------- | ------- | -------- | ------- |
+| Bovespa Index (IBOVESPA)                 | IBOV      |         |          |         |
+| Dow Jones Industrial Average (DJI)       | DJI, YM1! |         |          |         |
+| Dow Jones Transportation Average (DJT)   | DJT       |         |          |         |
+| Nasdaq Composite                         | IXIC      |         |          |         |
+| New York Stock Exchange (NYSE) Composite | NYA       |         |          |         |
+| Standard and Poor's 500 (S&P 500)        | SPX, ES1! |         |          |         |
+| TSX Composite                            |           |         |          |         |
+| U.S. Dollar Index                        | DXY       |         |          |         |
+| Volatility Index                         | VIX       |         |          |         |
 
 <!--
 CN50USD
 PSI20
+EURONEXT:FCE1!
 -->
 
 ## Types of Trade
@@ -215,4 +245,44 @@ M15
 Overtrade
 -->
 
-||
+<!--
+Non-Farm Payrolls (NFP)
+
+Europe
+INDEX:DAX TVC:DEU40 EUREX:FDAX1! XETR:DAX VANTAGE:DAX40
+VANTAGE:FTSE100 EUREX:FTUK1! FXOPEN:UK100 ICEEUR:Z1!
+TVC:IBEX35 BLACKBULL:ES35.F
+
+Asia
+VANTAGE:NIKKEI225 TVC:NI225 OSE:NK2251! CME:NKD1! SGX:NK1!
+TVC:HSI HKEX:HSI1! HSI:HSI
+KRX:KOSPI200 EUREX:FBK21!
+SSE:000052 SSE:000001
+
+Commodities
+NYMEX:CL1!
+NYMEX:BZ1!
+🏗Min. Ferro   1,82% 🟢
+COMEX:GC1!
+
+OANDA:CN50USD
+PEPPERSTONE:HK50
+TVC:UKX
+TVC:TRJEFFCRB
+SSE:CSI300-HKG
+EURONEXT:N100
+BSE:SENSEX
+
+DGS10
+NKY
+CAC40
+SX5E
+NYA
+PSI20
+
+Market Gap
+
+BLX/SPX
+BLX/NDX
+SPX/VIX
+-->
