@@ -1,17 +1,20 @@
 # Trading
 
 <!--
+https://toplsr.netlify.app/?period=15m&top=30
+
+https://www.tradinglite.com/chart/GL5CPBJV
+
+https://www.binance.com/en/futures/BTCUSDT
+
+https://coinalyze.net/bitcoin/usdt/binance/btcusdt_perp/price-chart-live/
+
+https://www.investing.com/economic-calendar/
+
+https://www.bloomberg.com/live
+
 XLE
 BCOMIN
-
-Permabear
-
-Support/Resistance | Hits +2 times
-
-Bear Market
-L.S.R. <= 1
-L.S.R. >= 1.x <= 2
-L.S.R. >= 2
 
 Depois de uma forte alta, faça compra às GMT 0 utilizando o ferramento do ultimo candle como entrada.
 Sempre deixa ordens nas medias moveis. Sempre deixar ordens em fibo.
@@ -19,9 +22,12 @@ Sempre deixa ordens nas medias moveis. Sempre deixar ordens em fibo.
 
 ## Terms
 
+- Antifragile
+- Free Fall
 - Good-Till-Cancel (GTC)
 - Good-Till-Day (GTD)
-- Open-High-Low-Close (OHLC)
+- Hold On for Dear Life (HODL)
+- Over-The-Counter (OTC)
 - Win Rate
 
 ## Companies
@@ -38,13 +44,17 @@ Sempre deixa ordens nas medias moveis. Sempre deixar ordens em fibo.
 | Region   | City     | Open      |
 | -------- | -------- | --------- |
 | European | London   | 08:00 GMT |
-| American | New York |
-| Asian    | Tokyo    |
+| American | New York |           |
+| Asian    | Tokyo    |           |
 
 <!--
 FX Market Sessions
 Williams Fractals
 -->
+
+<!-- ## Tools
+
+- [Koyfin](https://app.koyfin.com/) -->
 
 ## Stages
 
@@ -80,6 +90,7 @@ Long: never buy in the futures market above the average 12
 “O mercado é uma máquina que transfere dinheiro dos impacientes para os pacientes.” Warren Buffett.
 “Tenha medo quando os outros estão gananciosos. Seja ganancioso quando os outros tem medo.” Warren Buffett.
 “Compre no boato, venda no fato.”
+“A história não se repete, mas rima por vezes.” Mark Twain.
 -->
 
 <!--
@@ -88,7 +99,6 @@ Bots
 https://3commans.com/
 https://cryptohopper.com/
 https://alertatron.com/
-https://deribit.com/
 https://alertzmanager.io/
 -->
 

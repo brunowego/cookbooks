@@ -1,6 +1,7 @@
 # Docusaurus
 
 <!--
+https://docs.subsquid.io/
 https://github.com/revoltchat/documentation
 https://developers.cardano.org/
 https://github.com/AmruthPillai/Reactive-Resume/tree/main/docs

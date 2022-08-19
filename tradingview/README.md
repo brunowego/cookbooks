@@ -157,6 +157,20 @@ Funding Rate (aggregation)
 
 ### Tips
 
+<!-- ####
+
+```js
+fetch('https://www.tradingview.com/charts/XuXHHYhy/clone/', {
+  method: 'POST',
+  body: JSON.stringify({ name: 'Futures 2' }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((res) => res.json())
+  .then(console.log)
+``` -->
+
 #### Multiple Timeframes
 
 - 15m: Entry Price/Stop Loss

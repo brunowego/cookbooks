@@ -40,8 +40,8 @@ pipenv -h
 #
 tee ./Pipfile << EOF
 [[source]]
-name = 'pypi'
-url = 'https://pypi.org/simple'
+name = "pypi"
+url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
@@ -49,15 +49,21 @@ verify_ssl = true
 [packages]
 
 [requires]
-python_version = '3.7'
+python_version = "3.9"
 EOF
+```
 
+### Bootstrap
+
+```sh
 #
 pipenv install
-pipenv install --system
 
 #
-pipenv lock --requirements
+pipenv install [package]
+
+#
+pipenv lock
 
 #
 pipenv shell
@@ -81,13 +87,19 @@ pipenv check
 
 ### Tips
 
+#### System Install
+
+```sh
+pipenv install --system
+```
+
 #### Remove Virtualenv
 
 ```sh
-#
+# Show local folder
 pipenv --venv
 
-#
+# Remove Virtualenv
 pipenv --rm
 ```
 
@@ -103,6 +115,26 @@ jq '."files.associations"."Pipenv" |= "toml"' "$HOME/.config/Code/User/settings.
 
 ```sh
 eval "$(pipenv --completion)"
+```
+
+### Issues
+
+#### Missing Language Environment
+
+```log
+Warning: the environment variable LANG is not set!
+```
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Locale
+export LANG='en_US.UTF-8'
+export LC_ALL='en_US.UTF-8'
+```
+
+```sh
+sudo su - "$USER"
 ```
 
 ## Dockerfile

@@ -1,7 +1,10 @@
 # CoinMarketCap
 
 <!--
-https://www.aicoin.com/
+https://aicoin.com/
+https://nomics.com/
+https://intotheblock.com/
+https://coinmetrics.io/
 -->
 
 ## Categories

@@ -1,12 +1,16 @@
 # Design
 
 <!--
+https://app.subsquid.io/aquarium/centrifuge-firesquid
+https://zapper.fi/
+https://wallet.keplr.app/
 https://hellonext.co/
 https://changer.io/
 https://showwcase.com/
 https://bandprotocol.com/
 https://oasis.app/25977#Overview
 https://metafy.gg/
+https://miro.com/
 
 https://circle.so/
 https://try-stand.com/sign-up/
@@ -29,6 +33,7 @@ https://replay.io/
 https://avenue.so/
 https://railz.ai/
 https://attio.com/
+https://saas-ui.dev/
 
 https://connect.stripe.com/oauth/v2/authorize?response_type=code&client_id=ca_Lb8HJoZmN3mBjMEbmHrjh5lkrSLSr1FW&scope=read_write
 

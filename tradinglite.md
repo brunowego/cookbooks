@@ -1,6 +1,8 @@
 # TradingLite
 
 <!--
+https://www.tradinglite.com/chart/GL5CPBJV#0,binancef:BTCUSDT,5
+
 https://atas.net/ru/
 https://bookmap.com/
 

@@ -7,6 +7,8 @@ IAGRO
 
 WIN1! or IND1!
 DOL1! or WDO1!
+
+RB1!*USDBRL/3.785411784
 -->
 
 ## Government
@@ -23,3 +25,8 @@ https://www.youtube.com/watch?v=8Kgo-PykDhk
 https://www.youtube.com/watch?v=KOKS_apCwzA
 https://www.youtube.com/watch?v=Nk1LG5Fi9Uk
 -->
+
+## Terms
+
+- Índice Nacional de Preços ao Consumidor Amplo (IPCA)
+- Preço de Paridade Internacional (PPI)

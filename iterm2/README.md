@@ -57,6 +57,12 @@ Broadcast Input.Toggle Broadcast Input to Current Session'" ~/Library/Preference
 
 ### Tips
 
+#### Stop Process
+
+**Note:** Never use `Control (⌃) + Z` (suspend)
+
+Use `Control (⌃) + C`
+
 #### Default URL Scheme
 
 1. Preferences

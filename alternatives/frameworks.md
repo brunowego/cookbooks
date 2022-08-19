@@ -4,8 +4,10 @@
 
 ### Back-end
 
+- [AdonisJS](/adonis.md)
 - [Express.js](/express.md)
 - [Fastify](/fastify.md)
+- [NestJS](/nestjs/README.md)
 
 ### Front-end
 
@@ -36,3 +38,15 @@
 ## Java
 
 - [Quarkus](/quarkus/README.md)
+
+## Python
+
+- [Django](/django/README.md)
+- [FastAPI](/fastapi.md)
+- [Flask](/flask/README.md)
+
+<!--
+Crow
+Pyramid
+Tornado
+-->

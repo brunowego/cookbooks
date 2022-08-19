@@ -11,3 +11,7 @@ data ex dividendos
 ## Exchanges
 
 - [Stake](https://hellostake.com/)
+
+## Terms
+
+- Stock Split / Stock Divide

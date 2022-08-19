@@ -9,9 +9,9 @@
 ### Visual Studio Code
 
 ```sh
-code --install-extension HookyQR.beautify
-```
+#
+code --install-extension esbenp.prettier-vscode
 
-```sh
-jq '."[json]"."editor.defaultFormatter" |= "HookyQR.beautify"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+#
+jq '."[json]"."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```

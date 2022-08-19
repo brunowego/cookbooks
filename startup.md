@@ -41,7 +41,8 @@ https://angel.co/
 - Entry Barrier
 - Environmental, Social and Corporate Governance (ESG)
 - Exchange-Traded Fund (ETF)
-- Fat-finger Error
+- Fat-Finger Error (FFE)
+- First-Mover Advantage (FMA)
 - Flip
 - Follow On
 - Growth Hacking

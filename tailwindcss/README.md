@@ -38,10 +38,22 @@ https://fnatic.com/
 https://flipsidecrypto.xyz/
 https://coastpay.com/
 https://stint.co/
-https://www.hellolanding.com/
+https://hellolanding.com/
 https://metafy.gg/
 https://hellonext.co/
 https://snapshot.org/
+
+https://flipsidecrypto.xyz/
+https://app.splitbee.io/
+https://planetscale.com/
+https://metafy.gg/
+https://snapshot.org/
+https://coinbase.com/price/torn
+https://zapper.fi/
+https://datamish.com/
+
+https://betterstack.com/better-uptime
+https://appsignal.com/
 -->
 
 ## Useful

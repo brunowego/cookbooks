@@ -62,10 +62,6 @@ https://blockchair.com/
 
 - [CoinCodex](https://coincodex.com)
 
-### Indices
-
-- [Altcoin Season Index: Is it Altseason right now?](https://blockchaincenter.net/en/altcoin-season-index/)
-
 ### Mining
 
 - [2Miners](https://2miners.com/)
@@ -161,6 +157,7 @@ CME Gaps
 - Decentralized Autonomous Organization (DAO)
 - Decentralized Crypto Exchanges (DEX)
 - Distributed Ledger Technology (DLT)
+- Distributed Ledger Technology (DTL)
 - Fear Of Missing Out (FOMO)
 - Fear, Uncertainty, and Doubt (FUD)
 - Fractal Expansion
@@ -185,6 +182,7 @@ CME Gaps
 - Spread
 - Ticker Symbol
 - Volume Profile Visible Range (VPVR)
+- Zero-Sum Game
 
 - Point Of Control (POC)
 - Value Area High (VAH)

@@ -32,6 +32,8 @@ Masternode - Dash, PIVX, CrownCoin, TransferCoin, ExclusiveCoin
 https://www.theblockcrypto.com/data/crypto-markets/futures
 
 O.I. > 2,6m
+
+TF 2W / Date Range / 5 bars, 70d
 -->
 
 ## Links
@@ -44,7 +46,8 @@ O.I. > 2,6m
 - [Code Repository](https://github.com/bitcoin/bitcoin)
 - [Taxa de hash total (TH/s)](blockchain.com/pt/charts/hash-rate)
 - [Bitcoin Average Cost Per Transaction](https://ycharts.com/indicators/bitcoin_average_cost_per_transaction)
-- [Bitcoin Is Dead - The #1 Database of Notable Bitcoin Skeptics](https://www.bitcoinisdead.org/)
+- [Bitcoin Is Dead - The #1 Database of Notable Bitcoin Skeptics](https://bitcoinisdead.org/)
+- [Bitcoin Improvement Proposal](https://github.com/bitcoin/bips)
 
 ### Google Trends
 
@@ -59,7 +62,7 @@ O.I. > 2,6m
 - [Aggr Trade / Charts](https://charts.aggr.trade/ne1n)
 - [Average Cost Calculator | Crypto, Stocks, Forex – Trading](https://coinguides.org/average-cost-calculator-crypto-stocks-trading/)
 - [Capcoin](https://capcoin.ru/?c=COINBASE:BTCUSD,COINBASE:ETHUSD,COINBASE:LTCUSD#nav)
-- [Volatility Index](https://www.winrate.io/volatility-index)
+- [Volatility Index](https://winrate.io/volatility-index)
 
 ## Important Dates
 
@@ -81,11 +84,6 @@ TODO
 
 - [200 Week Moving Average Heatmap](https://lookintobitcoin.com/charts/200-week-moving-average-heatmap/)
 
-## Metrics
-
-- [Options](https://metrics.deribit.com/options/BTC)
-- [Futures](https://metrics.deribit.com/options/BTC)
-
 ## Indicators
 
 - [200 Week Moving Average Heatmap](https://www.lookintobitcoin.com/charts/200-week-moving-average-heatmap/)
@@ -102,11 +100,12 @@ TODO
 
 ## Terms
 
-- Antifragile
-- Free Fall
-- Hold On for Dear Life (HODL)
-- Over-The-Counter (OTC)
+- Bitcoin Improvement Proposal (BIP)
 - Unspent Transaction Output (UTXO)
+
+## Persons
+
+- Hal Finney
 
 ## Indicators
 
@@ -121,12 +120,6 @@ TODO
 - Bitcoin Dominance (BTC.D)
 - U.S. 20 Year Treasury (US20Y)
 - US Dollar Index (DXY or USDX (limited)) **Config:** Logarithmic Scale.
-
-<!--
-DXY inverse of Gold
-
-TVC:DXY vs INDEX:BTCUSD -> Pin to scale -> Pinned to scale B -> Logarithmic
--->
 
 ## Research
 

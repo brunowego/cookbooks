@@ -1,3 +1,0 @@
-# GoDaddy
-
-TODO

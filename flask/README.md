@@ -23,9 +23,9 @@ https://github.com/tolgahanuzun/Flask-Login-Example
 https://github.com/GermanChair/RYSN
 -->
 
-## Alternatives
+## Links
 
-- [FastAPI](/fastapi.md)
+- [Alternatives](/alternatives/frameworks.md#python)
 
 ## CLI
 
@@ -128,7 +128,7 @@ pip3 install \
   -r ./requirements.txt
 ```
 
-### Bootstrap App
+### Bootstrap API
 
 ```sh
 #
@@ -147,7 +147,7 @@ app = Flask(__name__)
 @app.route('/')
 def health_check():
     """Check health status."""
-    return jsonify(status='ok')
+    return jsonify(status='OK')
 EOF
 
 #
@@ -174,7 +174,7 @@ FLASK_ENV=development flask run \
 
 ### Tips
 
-####
+#### Short Code
 
 ```py
 #
@@ -205,7 +205,6 @@ flask.cli.NoAppException: Could not locate a Flask application. You did not prov
 ```
 
 TODO -->
-
 
 ## Docker
 

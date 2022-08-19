@@ -1,7 +1,9 @@
 # uWSGI
 
-## References
+## Links
 
+- [Code Repository](https://github.com/unbit/uwsgi)
+- [Main Website](https://uwsgi-docs.readthedocs.io/en/latest/)
 - [uWSGI Options](https://uwsgi-docs.readthedocs.io/en/latest/Options.html)
 
 ## CLI

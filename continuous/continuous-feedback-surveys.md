@@ -14,6 +14,7 @@ https://checkmarket.com/blog/csat-ces-nps-compared/
 - [Wootric](https://wootric.com/)
 
 <!--
+https://customer.guru/
 https://delighted.com/
 https://userguiding.com/
 https://github.com/satismeter

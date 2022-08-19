@@ -5,6 +5,7 @@ New York Stock Exchange (NYSE)
 
 NQ1!
 NAS100USD
+US100
 -->
 
 ## Links

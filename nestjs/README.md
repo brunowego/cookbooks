@@ -2,7 +2,7 @@
 
 <!--
 https://github.com/lobor/prycto
-
+https://github.com/novuhq/novu/tree/main/apps/api
 https://github.com/NikhilCodes/dysonsh/tree/dev/apps/api
 
 https://github.com/tkssharma/nestjs-advance-course
@@ -10,8 +10,11 @@ https://github.com/tkssharma/nestjs-advance-course
 https://github.com/rayzrchen/star-app/tree/main/src
 https://github.com/choewy/nest-js-lecture/tree/master/src
 https://github.com/line/abc-user-feedback
-https://github.com/DavidBarcenas/food-delivery-backend``
+https://github.com/DavidBarcenas/food-delivery-backend
 https://github.com/qin-todo-teamJ4/qin-todo
+
+https://github.com/saadjhk/binance-day-trader
+https://github.com/getlarge/ticketing
 -->
 
 ## Links

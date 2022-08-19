@@ -1,6 +1,8 @@
 # Investment
 
 <!--
+Don't be impatient
+
 A crise é coletiva mas a prosperidade é individual!
 
 https://www.capitalresearch.com.br/blog/investimentos/cursos-da-b3/
@@ -93,6 +95,10 @@ https://investidor10.com.br/
 - Year-over-Year (YoY)
 
 <!--
+- Small Caps
+- High Yield
+- High Grade
+- High Quality
 - Soft Landing
 - End of day data (E)
 - Data is delayed (D)

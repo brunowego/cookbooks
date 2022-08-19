@@ -25,8 +25,9 @@ Commodity Futures Trading Commission (CFTC)
 | Consumer Price Index (CPI)      | High       |
 | Crude Oil Inventories           | Neutral    |
 | Existing Home Sales (EHS)       | Neutral    |
-| Producer Price Index (PPI)      | High       |
-| Purchasing Managers Index (PMI) | Neutral    |
-| Gross Domestic Product (GDP)    | High       |
-| New Home Sales                  | Neutral    |
 | Fed Interest Rate Decision      | High       |
+| Gross Domestic Product (GDP)    | High       |
+| Initial Jobless Claims          |            |
+| New Home Sales                  | Neutral    |
+| Producer Price Index (PPI)      |            |
+| Purchasing Managers Index (PMI) | Neutral    |

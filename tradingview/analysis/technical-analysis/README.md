@@ -94,10 +94,8 @@ Liquidity Level or Liquidity Risk
 - Oversold/Overbought Bounce
 - Pivot Low/High
 - Pivot Point
-- Pullback (Uptrend) / Rally (Downtrend)
 - Quasimodo (QM) (Quick Retest/Late Retest) (QML)
 - Rounding Bottom
-- Support / Resistance
 - Swing Failure
 - Symmetrical Triangle
 - Top/Bottom Fishing
@@ -125,6 +123,7 @@ Whole Numbers
 
 <!--
 25 degree
+Key Support/Resistance (S/R) Level
 -->
 
 #### Reversal

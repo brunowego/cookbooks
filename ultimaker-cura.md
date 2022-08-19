@@ -59,7 +59,7 @@ brew install --cask ultimaker-cura
 #### Mesh Tools
 
 1. Right Click on Object
-2. Mesh Tools -> Spit models into parts
+2. Mesh Tools -> Split models into parts
 
 #### BLTouch
 

@@ -96,68 +96,82 @@ https://epic-course-platform.vercel.app/
 
 ## CLI
 
+### Installation
+
+#### Homebrew
+
+```sh
+brew install vercel-cli
+```
+
 ### Commands
 
 ```sh
+# Without install
 npx vercel help
+
+# Installed
+vercel help
 ```
 
 ### Usage
 
 ```sh
 #
-npx vercel login
-npx vercel switch
-npx vercel logout
+vercel login
+vercel switch
 
 #
-npx vercel whoami
+vercel whoami
 
 #
-npx vercel teams ls
+vercel teams ls
 
 # For new project
-npx vercel init
+vercel init
 # Or, older existing project
-npx vercel link
+vercel link
 
 #
-npx vercel dev
+vercel dev
 
 #
-npx vercel projects
+vercel projects
 
 #
-npx vercel domains
-npx vercel dns
+vercel domains
+vercel dns
 
 #
-npx vercel certs ls
+vercel certs ls
 
 #
-npx vercel env ls
+vercel env ls
 
 #
-npx vercel secrets ls
+vercel secrets ls
 
 #
-npx vercel deploy
-npx vercel deploy --prod --no-clipboard
+vercel deploy
+vercel deploy --prod --no-clipboard
 
 #
-npx vercel ls
+vercel ls
 
 #
-npx vercel inspect [url]
+vercel inspect [url]
 
 #
-npx vercel logs [deploy-id]
+vercel logs [deploy-id]
 
 #
-npx vercel rm [deploy-id]
+vercel rm [deploy-id]
 
 #
-npx vercel billing ls
+vercel billing ls
+
+#
+vercel logout
 ```
 
 ### Tips
@@ -179,7 +193,9 @@ assets
 signatures
 -->
 
-`CNAME` to `cname.vercel-dns.com.`.
+| Type    | Name | Value                   | TTL    |
+| ------- | ---- | ----------------------- | ------ |
+| `CNAME` |      | `cname.vercel-dns.com.` | 1 Hour |
 
 #### Ignore Files
 

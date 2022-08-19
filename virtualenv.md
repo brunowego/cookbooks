@@ -1,5 +1,7 @@
 # Virtualenv
 
+**Note:** Not needed if using [Pipenv](/pipenv.md).
+
 ## CLI
 
 ### Installation

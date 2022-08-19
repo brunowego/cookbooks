@@ -285,17 +285,26 @@ ln -s /usr/bin/python3 /usr/bin/python
 
 #### Visual Studio Code
 
-***Dependencies***: [Pylint](/pylint.md)
+**_Dependencies_**: [Pylint](/pylint.md)
 
 ```sh
 #
 code --install-extension ms-python.python
 
 #
+jq '."recommendations" += ["ms-python.python"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+```
+
+```sh
+#
 code --install-extension ms-python.vscode-pylance
 
-jq '."python.languageServer" |= "Pylance"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
-jq '."python.showStartPage" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+#
+jq '."recommendations" += ["ms-python.vscode-pylance"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+
+#
+jq '."python.languageServer" |= "Pylance"' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+# jq '."python.showStartPage" |= false' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 ```
 
 #### Warnings

@@ -47,7 +47,7 @@ dotenv run -- python ./[filename].py
 pip3 install -U python-dotenv
 
 # As project dependency
-echo 'python-dotenv==0.15.0' >> ./requirements.txt
+echo 'python-dotenv==0.20.0' >> ./requirements.txt
 ```
 
 ### REPL

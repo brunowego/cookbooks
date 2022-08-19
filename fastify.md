@@ -6,6 +6,7 @@ https://github.com/webeetle/fastify-serverless-vercel
 https://github.com/studioalex/vigilant/tree/main/apps/api
 https://github.com/coollabsio/coolify/tree/main/apps/api
 https://github.com/taneba/fullstack-graphql-app
+https://github.com/dailydotdev/daily-api
 -->
 
 ## Links

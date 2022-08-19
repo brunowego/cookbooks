@@ -26,3 +26,15 @@ ncu -h
 #
 ncu -u
 ```
+
+## Library
+
+### Configuration
+
+```sh
+cat << EOF ./.ncurc.yml
+upgrade: true
+# reject:
+#   - package-name
+EOF
+```

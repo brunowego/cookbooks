@@ -19,6 +19,7 @@ https://www.casadocodigo.com.br/products/livro-blockchain-ethereum
 - [Wikipedia](https://en.wikipedia.org/wiki/Ethereum)
 - [Ethereum Gas tracker](https://useweb3.xyz/gas)
 - [Ethereum Average Transaction Fee](https://ycharts.com/indicators/ethereum_average_transaction_fee)
+- [Ethereum Improvement Proposal](https://github.com/ethereum/EIPs)
 
 ## Tools
 
@@ -32,6 +33,7 @@ https://snapshot.org
 
 - [Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/evm/)
 - Giga-Wei (Gwei)
+- Ethereum Improvement Proposal (EIP)
 
 ## Develop Environment
 
