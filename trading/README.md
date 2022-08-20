@@ -27,8 +27,14 @@ Sempre deixa ordens nas medias moveis. Sempre deixar ordens em fibo.
 - Good-Till-Cancel (GTC)
 - Good-Till-Day (GTD)
 - Hold On for Dear Life (HODL)
-- Over-The-Counter (OTC)
+- Over-The-Counter (OTC) / Penny Stocks
+- Payoff
 - Win Rate
+
+## Personalities
+
+- Charles Ponzi
+- Berne Madoff
 
 ## Companies
 

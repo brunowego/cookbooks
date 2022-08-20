@@ -2,5 +2,5 @@
 
 ## Terms
 
-- Over the Counter (OTC)
+- Over-The-Counter (OTC) / Penny Stocks
 - Exchange Based Systems

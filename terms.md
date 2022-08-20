@@ -88,6 +88,7 @@
 - Time To First Byte (TTFB)
 - Time-to-live (TTL)
 - To Be Decided or To Be Determined (TBD)
+- Too Long; Didn't Read (TLDR or TL;DR)
 - Top-Level Domain (TLD)
 - Uniform Resource Identifier (URI)
 - Uniform Resource Locator (URL)

@@ -1,4 +1,4 @@
-# USA
+# United States of America (U.S.A. or USA)
 
 ## Links
 

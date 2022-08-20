@@ -19,6 +19,7 @@ RB1!*USDBRL/3.785411784
 - [Baixa da Empresa](https://gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/baixa-de-mei)
 - [Detran-DF / Portal](https://portal.detran.df.gov.br/)
 - [Taxa Selic](https://bcb.gov.br/controleinflacao/taxaselic)
+- [Brazil Interest Rate](https://tradingeconomics.com/brazil/interest-rate)
 
 <!--
 https://www.youtube.com/watch?v=8Kgo-PykDhk

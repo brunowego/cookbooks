@@ -32,7 +32,6 @@ Carry Trades
 
 ### Indices
 
-- [Fed Rate Monitor Tool](https://investing.com/central-banks/fed-rate-monitor)
 - [Major World Market Indices](https://investing.com/indices/major-indices)
 
 #### Inflation Rate
@@ -51,15 +50,6 @@ https://tradingeconomics.com/united-states/inflation-cpi
 
 <!--
 https://tradingeconomics.com/calendar
--->
-
-## Tools
-
-- [CME FedWatch Tool](https://cmegroup.com/trading/interest-rates/countdown-to-fomc.html)
-
-<!--
-https://tradingeconomics.com/country-list/interest-rate
-https://investidor10.com.br/
 -->
 
 ## Terms

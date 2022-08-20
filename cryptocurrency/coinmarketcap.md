@@ -7,6 +7,10 @@ https://intotheblock.com/
 https://coinmetrics.io/
 -->
 
+## Articles
+
+- [Get Verified on ‘CMC Community’ & Start Building Your Community ✅](https://coinmarketcap.com/alexandria/article/get-verified-on-cmc-community-start-building-your-community)
+
 ## Categories
 
 - [Automated Market Maker (AMM)](https://coinmarketcap.com/view/amm/)

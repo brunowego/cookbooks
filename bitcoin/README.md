@@ -103,7 +103,7 @@ TODO
 - Bitcoin Improvement Proposal (BIP)
 - Unspent Transaction Output (UTXO)
 
-## Persons
+## Personalities
 
 - Hal Finney
 

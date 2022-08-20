@@ -7,6 +7,8 @@
 
 ## Numbers Probability
 
+**Retracement Levels:**
+
 - **0.236:** Unfinished move
 - **0.382:** Trend continuation
 - **0.5:** Top retest (0)

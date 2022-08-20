@@ -14,4 +14,5 @@ data ex dividendos
 
 ## Terms
 
+- Stock Picking
 - Stock Split / Stock Divide

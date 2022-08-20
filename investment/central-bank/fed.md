@@ -4,7 +4,7 @@
 US Pending Home Sales
 Copper Index
 
-NAHB
+https://github.com/TianFeng-Securities/fed-rate-monitor
 -->
 
 ## Links
@@ -23,4 +23,7 @@ NAHB
 <!--
 FRED:PCE
 FRED:FEDFUNDS
+
+NAHB
+NFCI
 -->

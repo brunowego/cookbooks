@@ -2,6 +2,8 @@
 
 <!--
 https://www.glassdoor.com/Salary/Binance-Salaries-E1816824.htm
+
+Jamais coloque uma ordem com stop uma proxima da outra, a Binance irá pegar a ordem de compra e depois fazer DCA
 -->
 
 ## Links
