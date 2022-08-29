@@ -27,6 +27,11 @@ Abra outra ordem no sentido inverso para caso o mercado venha contra sua ordem, 
 - [Status Page](https://status.tradinglite.com/)
 - [Feedback](https://feedback.tradinglite.com/)
 
+## Alternatives
+
+- [TRDR](/trdr.md)
+- [Coinglass](/coinglass.md)
+
 ## Indicators
 
 - Main

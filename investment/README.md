@@ -18,6 +18,8 @@ https://edu.b3.com.br/
 bear market occurs when a stock index declines 20 percent
 
 Carry Trades
+
+Rei morto, rei posto
 -->
 
 ## Links
@@ -76,7 +78,7 @@ https://tradingeconomics.com/calendar
 - Pattern Day Trading (PDT)
 - Permabear / Permabull
 - Quantitative Easing (QE) / Quantitative Tightening (QT)
-- Quarter on Quarter (QoQ)
+- Quarter-on-Quarter or Quarter-over-Quarter (QoQ)
 - Retail Liquidity Provider (RLP)
 - Stagflation
 - Tradable / Non-tradable
@@ -112,8 +114,6 @@ Vaporware
 Economic Behavior:
 Hawkish
 Dovish
-
-Compre ao som dos canhões e venda ao som dos violinos
 -->
 
 ## Indices
@@ -165,14 +165,14 @@ Funding  / Staking / Lending
 
 Central & South Asia, Northeastern Asia, Southeastern Asia, Australia and Oceania.
 
-| Name                                                 | Symbol           | Trading | Pre-Open | Country |
-| ---------------------------------------------------- | ---------------- | ------- | -------- | ------- |
-| Bombay Stock Exchange (BSE) SENSEX                   | SENSEX           |         |          |         |
-| Capitalization-weighted Stock Market Index (CSI) 300 | CSI300-HKG       |         |          |         |
-| Hang Seng Index                                      | HSI, HSI1!, HK50 |         |          |         |
-| Nikkei 225                                           | NKY/NIKKEI225    |         |          |         |
-| Shanghai Stock Exchange (SSE) Composite              | 000001           |         |          |         |
-| Shenzhen Stock Exchange (SZSE) 100                   |                  |         |          |         |
+| Name                                                 | Symbol           | Volatility | Trading | Pre-Open | Country |
+| ---------------------------------------------------- | ---------------- | ---------- | ------- | -------- | ------- |
+| Bombay Stock Exchange (BSE) SENSEX                   | SENSEX           |            |         |          |         |
+| Capitalization-weighted Stock Market Index (CSI) 300 | CSI300-HKG       |            |         |          |         |
+| Hang Seng Index                                      | HSI, HSI1!, HK50 | HKEX:VHS1! |         |          |         |
+| Nikkei 225                                           | NKY/NIKKEI225    |            |         |          |         |
+| Shanghai Stock Exchange (SSE) Composite              | 000001           |            |         |          |         |
+| Shenzhen Stock Exchange (SZSE) 100                   |                  |            |         |          |         |
 
 ### Europe
 
@@ -195,17 +195,17 @@ Middle East, Northern Africa, Southern Africa.
 
 North America, South America, Central America, Caribbean.
 
-| Name                                     | Symbol    | Trading | Pre-Open | Country |
-| ---------------------------------------- | --------- | ------- | -------- | ------- |
-| Bovespa Index (IBOVESPA)                 | IBOV      |         |          |         |
-| Dow Jones Industrial Average (DJI)       | DJI, YM1! |         |          |         |
-| Dow Jones Transportation Average (DJT)   | DJT       |         |          |         |
-| Nasdaq Composite                         | IXIC      |         |          |         |
-| New York Stock Exchange (NYSE) Composite | NYA       |         |          |         |
-| Standard and Poor's 500 (S&P 500)        | SPX, ES1! |         |          |         |
-| TSX Composite                            |           |         |          |         |
-| U.S. Dollar Index                        | DXY       |         |          |         |
-| Volatility Index                         | VIX       |         |          |         |
+| Name                                     | Symbol        | Volatility                 | Trading | Pre-Open | Country |
+| ---------------------------------------- | ------------- | -------------------------- | ------- | -------- | ------- |
+| Bovespa Index (IBOVESPA)                 | `IBOV`        |                            |         |          |         |
+| Dow Jones Industrial Average (DJI)       | `DJI`, `YM1!` |                            |         |          |         |
+| Dow Jones Transportation Average (DJT)   | `DJT`         |                            |         |          |         |
+| Nasdaq Composite                         | `IXIC`        | `CME:VLQ1!`, `NASDAQ:VOLQ` |         |          |         |
+| New York Stock Exchange (NYSE) Composite | `NYA`         |                            |         |          |         |
+| Standard and Poor's 500 (S&P 500)        | `SPX`, `ES1!` |                            |         |          |         |
+| TSX Composite                            |               |                            |         |          |         |
+| U.S. Dollar Index                        | `DXY`         |                            |         |          |         |
+| Volatility Index                         | `VIX`         |                            |         |          |         |
 
 <!--
 CN50USD

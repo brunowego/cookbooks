@@ -17,10 +17,14 @@ Lower-highs and Lower-lows
 
 ## Methods
 
-- Dow Theory (Charles Dow)
-- Elliott Wave Principle (Fractal)
-- Price Action Trading
-- Wyckoff Method
+- Candlestick
+- Dow Theory
+- Elliott Wave Principle
+- Fibonacci
+- Key Level
+- Moving Average
+- Price Action
+- Wyckoff
 
 <!--
 3Ms: Mind, Method, Money
@@ -34,7 +38,7 @@ Lower-highs and Lower-lows
 | Day-trade                    | Between a few hours to a few days      |
 | Swing-trade                  | Between a few days to a few weeks      |
 | Position-trade               | Between a few weeks to a few months    |
-| Hold On for Dear Life (HODL) |                                        |
+| Hold On for Dear Life (HODL) | Years                                  |
 
 ## Tendencies
 
@@ -61,7 +65,7 @@ The **trend** is your **friend**.
 
 <!--
 Exhaust/Combustion
-Liquidity Level or Liquidity Risk
+Liquidity Level/Zone
 -->
 
 ### Types
@@ -141,19 +145,6 @@ Renko
 
 Core 123 Trend
 -->
-
-### Candlestick
-
-- Doji
-- Evening Star
-- Hammer
-- Marubozu
-- Morning Star
-- Shooting Star
-- Spinning
-- Three Black Crows **Rules:** From uptrend.
-- Three White Soldiers
-- Tweezer Tops/Bottoms
 
 ## Tools
 

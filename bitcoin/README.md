@@ -46,8 +46,9 @@ TF 2W / Date Range / 5 bars, 70d
 - [Code Repository](https://github.com/bitcoin/bitcoin)
 - [Taxa de hash total (TH/s)](blockchain.com/pt/charts/hash-rate)
 - [Bitcoin Average Cost Per Transaction](https://ycharts.com/indicators/bitcoin_average_cost_per_transaction)
-- [Bitcoin Is Dead - The #1 Database of Notable Bitcoin Skeptics](https://bitcoinisdead.org/)
+- [Bitcoin Is Dead / The #1 Database of Notable Bitcoin Skeptics](https://bitcoinisdead.org/)
 - [Bitcoin Improvement Proposal](https://github.com/bitcoin/bips)
+- [FiatMarketCap / Fiat Market Capitalizations](https://fiatmarketcap.com/)
 
 ### Google Trends
 
@@ -62,7 +63,6 @@ TF 2W / Date Range / 5 bars, 70d
 - [Aggr Trade / Charts](https://charts.aggr.trade/ne1n)
 - [Average Cost Calculator | Crypto, Stocks, Forex – Trading](https://coinguides.org/average-cost-calculator-crypto-stocks-trading/)
 - [Capcoin](https://capcoin.ru/?c=COINBASE:BTCUSD,COINBASE:ETHUSD,COINBASE:LTCUSD#nav)
-- [Volatility Index](https://winrate.io/volatility-index)
 
 ## Important Dates
 
@@ -93,6 +93,10 @@ TODO
 - [MVRV Z-Score](https://www.lookintobitcoin.com/charts/mvrv-zscore/)
 - [Net Unrealized Profit/Loss (NUPL)](https://lookintobitcoin.com/charts/relative-unrealized-profit--loss/)
 - [Stock-to-Flow Model](https://www.lookintobitcoin.com/charts/stock-to-flow-model/)
+
+<!--
+Hash Ribbons
+-->
 
 ## Miner
 

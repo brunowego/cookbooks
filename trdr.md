@@ -1,4 +1,4 @@
-# TRDR
+# TRDR (TRaDeR)
 
 <!--
 https://www.youtube.com/watch?v=dqGzVtX4mgE&t=228s
@@ -6,7 +6,8 @@ https://www.youtube.com/watch?v=dqGzVtX4mgE&t=228s
 
 ## Alternatives
 
-- [TradingLite](https://tradinglite.com/)
+- [TradingLite](/tradinglite.md)
+- [Coinglass](/coinglass.md)
 
 ## Links
 
@@ -20,6 +21,10 @@ https://www.youtube.com/watch?v=dqGzVtX4mgE&t=228s
 - Longs / Shorts Ratios **Style:** Only Total Ratio and Total Ratio Below 1 Green Color.
 - Order Book Depth Overlay (aggregation) **Inputs:** Smaller Than 2.5%, Ratio Minimum Bids 1 and Ratio Minimum Asks 1. **Style:** Remove Close, Bids and Asks lines.
 - Volume By Side (delta) (aggregation) (a.k.a CVD) **Inputs:** Smaller Than 1K and Accumulation Length 999999999999999. **Style:** Only Delta Cumulative. **Tip:** Drag to chart.
+
+<!--
+0 10k 5 0
+-->
 
 ## Configuration
 

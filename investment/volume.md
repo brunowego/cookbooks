@@ -38,21 +38,6 @@ Exaustão
 - Depois de uma queda, um forte volume durante baixa movimentação de preço pode ser acumulação, é um sinal bullish
 - Volume recorde atingindo bem num fundo sugere que um "chão" foi encontrado e deve reverter
 - Volatilidade diminuindo drasticamente e volume em contração sinaliza desinteresse
-
-Elliott Wave
-
-- A primeira onda é do big player
-- Um olho no preço o outro no volume
-- Puxou com volume, esperar a correção com menos volume
-- A onda 3 nunca pode ser a menor das ondas. A onda 3 não precisa ser a maior, ela só não pode ser a menor. Se na contagem de ondas a 3 foi a menor, é porque contou errado.
-- Cada impulso passa por uma reação corretiva
-
-1. Ondas 1,3 e 5 são impulsos
-2. Ondas 2 e 4 são correções dos impulsos 1 e 3
-3. Onda 2 não pode retrair mais que o início da onda 1
-4. Onda 3 não pode ser a menor
-5. Onda 4 não invade a onda 1
-6. É comum divergência no IFR na onda 5
 -->
 
 TODO

@@ -1,5 +1,9 @@
 # ts-node
 
+<!--
+tsx
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/TypeStrong/ts-node)
@@ -45,8 +49,8 @@ yarn dlx ts-node ./index.ts
       "target": "esnext"
     },
     "transpileOnly": true,
-    "files": true,
-  },
+    "files": true
+  }
 }
 ```
 

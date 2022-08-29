@@ -200,6 +200,11 @@ CME Gaps
 | TOTAL2                               | Total Market Cap (Only top 125, exclude BTC)         |
 | TOTAL3                               | Total Market Cap (Only top 125, exclude BTC and ETH) |
 
+<!--
+TOTALDEFI = Market cap of decentralized finance
+OTHERS = Top cryptos excluded, all others included
+-->
+
 ## Projects
 
 - [Akropolis](https://github.com/akropolisio)

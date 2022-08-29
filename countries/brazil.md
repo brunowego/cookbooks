@@ -5,10 +5,15 @@ https://bcb.gov.br/estabilidadefinanceira/sistema-valores-a-receber/
 
 IAGRO
 
-WIN1! or IND1!
-DOL1! or WDO1!
+WIN1! / IND1! / IBV1!
+DOL1! / WDO1!
 
 RB1!*USDBRL/3.785411784
+
+https://www.rankbr.com.br/tv
+
+Kantar IBOPE Media
+People Meter
 -->
 
 ## Government
@@ -29,5 +34,8 @@ https://www.youtube.com/watch?v=Nk1LG5Fi9Uk
 
 ## Terms
 
+- Certificado de Recebíveis Imobiliários (CRI)
+- Fundos Imobiliários (FII)
 - Índice Nacional de Preços ao Consumidor Amplo (IPCA)
+- Instituto Brasileiro de Opinião Pública e Estatística (IBOPE)
 - Preço de Paridade Internacional (PPI)

@@ -40,6 +40,7 @@
 - Five Ws (5WH)
 - For Your Information (FYI)
 - Free and Open-Source Software (FOSS)
+- Human-Friendly
 - Identity Provider (IdP)
 - In My Opinion (IMO)
 - Individual Development Plan (IDP)

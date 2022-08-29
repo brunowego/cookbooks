@@ -3,3 +3,7 @@
 ## Tools
 
 - [Ukraine Interactive Map](https://liveuamap.com/)
+
+## Terms
+
+- False Flag

@@ -1,5 +1,9 @@
 # Exchange
 
+## Tools
+
+- [Exchange War](https://exchangewar.info/)
+
 ## Ranking
 
 - [Kaiko](https://www.kaiko.com/pages/exchange-ranking)
@@ -33,3 +37,8 @@ CryptoCompare
 | Deribit  | Panama                           | Sentillia B.V. | Global    |
 | Bitmex   | Seychelles                       | AWS            | Global    |
 | Bitfinex | Taiwan                           | Cloudflare     | Global    |
+
+<!--
+Belize
+Curacao
+-->

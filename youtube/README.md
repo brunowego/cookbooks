@@ -9,6 +9,10 @@ https://www.youtube.com/channel_switcher
 - [Watch History](https://youtube.com/feed/history)
 - [Comment History](https://www.youtube.com/feed/history/comment_history)
 
+## Terms
+
+- Shadowban
+
 ## Tips
 
 ### Force Specific Network Interface

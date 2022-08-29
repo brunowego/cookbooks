@@ -63,6 +63,10 @@ https://angel.co/
 - Up-sell
 - Valuation
 
+## Types
+
+- Infoproduct
+
 ## Links
 
 - [Y Combinator](https://ycombinator.com/)

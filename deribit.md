@@ -9,4 +9,4 @@
 
 ## Terms
 
-- Call (Buy) / Put (Sell)
+- Put (Sell) / Call (Buy)

@@ -1,5 +1,9 @@
 # Trading Strategy
 
+<!--
+Advanced Break Down/Up
+-->
+
 ## Books
 
 - Al Brooks
@@ -14,27 +18,23 @@
 - Triangular Moving Average (TMA)
 - Smoothed Moving Average (SMMA)
 - Weighted Moving Average (WMA)
+- Normal Distribution (a.k.a Gaussian, Gauss, or Laplace–Gauss Distribution)
 
 ## Strategies
 
-### Got Result
+<!-- ### Got Result
 
 - EMA 12 close 0 SMA 5 **Style:** EMA Orange
 - EMA 50 close 0 SMA 5 **Style:** EMA White
 - EMA 200 close 0 SMA 5 **Style:** EMA White
 - Volume (Vol)
-- Volume Profile Visible Range (VPVR) **Inputs:** Row Size 176, Volume Total, Volume Area Volume 100. **Style:** Only Volume Profile.
-
-<!--
-SMMA 100 == EMA 200
-SMMA 26 == EMA 100
--->
+- Volume Profile Visible Range (VPVR) **Inputs:** Row Size 176, Volume Total, Volume Area Volume 100. **Style:** Only Volume Profile. -->
 
 ### Powerful
 
 - **Golden/Death Cross** EMA 1D 50 close 0 SMA 5 / MA 1D 200 close 0 SMA 5
 
-### Non Experimented
+<!-- ### Non Experimented
 
 - Colored EMA 9 + EMA 20 (Style EMA Yellow). **Tip:** Indicates recovery.
 - Correlation Coefficient (CC) **Symbol:** Nasdaq Composite (IXIC)
@@ -49,7 +49,7 @@ SMMA 26 == EMA 100
 - MA Cross 21-200 (Green-White) Days + EMA 9-80 (Fuchsia-Orange) Days + Volume
 - MA Cross 50-200 (Green-Red)
 - RSI + ATR RSRL [Tutorial](https://youtube.com/watch?v=cZYdGJ-2q8U)
-- RSI + MACD
+- RSI + MACD -->
 
 <!--
 - MA 1W 50, 100, 200 Gold RED
@@ -65,26 +65,26 @@ SMMA 26 == EMA 100
 
 **Risk Management:** Always set a stop.
 
-## Formulas
+<!-- ## Formulas -->
 
-### Bitcoin
+<!-- ### Bitcoin
 
-- Market Cap BTC Dominance
+- Market Cap BTC Dominance -->
 
-### Market Trend Tools
+<!-- ### Market Trend Tools
 
 - Sideways: Stochastic RSI
 - Downtrend: RSI
-- Uptrend: RSI
+- Uptrend: RSI -->
 
-### Macroeconomics Analysis
+<!-- ### Macroeconomics Analysis
 
 - DXY 🔽 / US20Y 🔽 / S&P500 🔼 = Long
-- DXY 🔼 / US20Y 🔼 / S&P500 🔽 = Short
+- DXY 🔼 / US20Y 🔼 / S&P500 🔽 = Short -->
 
-### Long/Short Ratio
+<!-- ### Long/Short Ratio
 
 **Tip:** Breakouts in favor of the trend (Bull-run/Bear-market)
 
 - Breakout Uptrend 🔼 + LSR 🔼 = Short
-- Breakout Downtrend 🔽 + LSR 🔽 = Long
+- Breakout Downtrend 🔽 + LSR 🔽 = Long -->

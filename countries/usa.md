@@ -19,15 +19,22 @@ Commodity Futures Trading Commission (CFTC)
 
 ## Events Sentiment Mapping
 
-| Event                           | Volatility |
-| ------------------------------- | ---------- |
-| Building Permits                | Neutral    |
-| Consumer Price Index (CPI)      | High       |
-| Crude Oil Inventories           | Neutral    |
-| Existing Home Sales (EHS)       | Neutral    |
-| Fed Interest Rate Decision      | High       |
-| Gross Domestic Product (GDP)    | High       |
-| Initial Jobless Claims          |            |
-| New Home Sales                  | Neutral    |
-| Producer Price Index (PPI)      |            |
-| Purchasing Managers Index (PMI) | Neutral    |
+| Event                                   | Volatility |
+| --------------------------------------- | ---------- |
+| Building Permits                        | Neutral    |
+| Consumer Price Index (CPI)              | High       |
+| Crude Oil Inventories                   | Neutral    |
+| Existing Home Sales (EHS)               | Neutral    |
+| Fed Interest Rate Decision              | High       |
+| Gross Domestic Product (GDP)            | High       |
+| Initial Jobless Claims                  |            |
+| New Home Sales                          | Neutral    |
+| Personal Consumption Expenditures (PCE) | High       |
+| Producer Price Index (PPI)              |            |
+| Purchasing Managers Index (PMI)         | Neutral    |
+| Fed Speaks                              |            |
+
+## Terms
+
+- Quarter-on-Quarter or Quarter-over-Quarter (QoQ)
+- Year-over-Year (YoY)

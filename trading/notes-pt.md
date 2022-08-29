@@ -1,6 +1,9 @@
 # Anotações em Português
 
 <!--
+https://github.com/proselog/proselog
+https://github.com/u18335412/kanban-trpc
+
 https://github.com/Okampus/okampus
 https://github.com/novuhq/novu
 https://github.com/rittaschool/ritta

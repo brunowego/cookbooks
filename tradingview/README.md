@@ -1,6 +1,8 @@
 # TradingView
 
 <!--
+https://www.tradingview.com/u/XForceGlobal/
+
 MTP Analysis
 MTP ATRRange
 MTP ATRStop
@@ -170,12 +172,6 @@ fetch('https://www.tradingview.com/charts/XuXHHYhy/clone/', {
   .then((res) => res.json())
   .then(console.log)
 ``` -->
-
-#### Multiple Timeframes
-
-- 15m: Entry Price/Stop Loss
-- 1h: Main
-- 4h: Take Profit
 
 #### Tabs
 

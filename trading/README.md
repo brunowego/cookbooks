@@ -18,11 +18,20 @@ BCOMIN
 
 Depois de uma forte alta, faça compra às GMT 0 utilizando o ferramento do ultimo candle como entrada.
 Sempre deixa ordens nas medias moveis. Sempre deixar ordens em fibo.
+
+Trader is a Sniper
+-->
+
+<!--
+Trade:
+Contexto: Media/Fibo/Resistencia/Suporte
+Sinal: Candle/Volume
 -->
 
 ## Terms
 
 - Antifragile
+- BUIDL (A misspelling of build)
 - Free Fall
 - Good-Till-Cancel (GTC)
 - Good-Till-Day (GTD)
@@ -95,6 +104,8 @@ Long: never buy in the futures market above the average 12
 <!--
 “O mercado é uma máquina que transfere dinheiro dos impacientes para os pacientes.” Warren Buffett.
 “Tenha medo quando os outros estão gananciosos. Seja ganancioso quando os outros tem medo.” Warren Buffett.
+"Compre ao som dos canhões e venda ao som dos violinos.” Warren Buffett.
+"Regra número 1: nunca perca dinheiro. Regra número 2: não esqueça a regra número 1.” Warren Buffett.
 “Compre no boato, venda no fato.”
 “A história não se repete, mas rima por vezes.” Mark Twain.
 -->

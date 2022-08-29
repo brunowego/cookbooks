@@ -12,6 +12,10 @@ https://www.youtube.com/c/Fabr%C3%ADcioLorenz
 https://www.youtube.com/channel/UCl_kgnFsEqCsXiqRowBCpZA
 -->
 
+## Links
+
+- [Candlestick](/trading/candlestick.md)
+
 ## Principles
 
 - Trends: Uptrend/Downtrend
@@ -34,7 +38,6 @@ https://www.youtube.com/channel/UCl_kgnFsEqCsXiqRowBCpZA
 Change Of Character (CHOCH)
 Break Hook Go (BHG)
 Break-even
-Liquidity Grab
 News Candle
 Red Bar Take Out
 -->
@@ -60,3 +63,10 @@ Red Bar Take Out
 ### First Day of Month
 
 - Missing Retest (Pivot) -->
+
+## Tips
+
+### Liquidity Zone
+
+- Look for liquidity zones on 1d timeframe
+<!-- - Draw a horizontal rectangle from the opening/closing of the candle to the end of the wick -->

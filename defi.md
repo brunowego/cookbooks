@@ -9,3 +9,7 @@ oasis.app/25977
 
 - [DeFiSafety](https://defisafety.com/)
 - [DeFi Explore](https://defiexplore.com/)
+
+## Terms
+
+- Total Value Locked (TVL)

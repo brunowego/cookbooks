@@ -10,6 +10,16 @@ https://github.com/TianFeng-Securities/fed-rate-monitor
 ## Links
 
 - [Interest Rates (IR)](/trading/interest-rates.md)
+- [Events](/investment/events.md#usa)
+- [Live Video](https://federalreserve.gov/live-broadcast.htm)
+
+### Social
+
+- [YouTube](https://youtube.com/user/FedReserveBoard/events)
+
+## YT Channels
+
+- [Igor Mundstock (BR)](https://youtube.com/c/IgorMundstock)
 
 ## Terms
 

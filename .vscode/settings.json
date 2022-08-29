@@ -2,12 +2,14 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "cSpell.words": [
+    "altcoin",
     "creality",
     "mkdir",
     "nestjs",
     "prusaslicer",
     "retracement",
     "timeframe",
+    "tokenomics",
     "ultimaker",
     "xdecow"
   ]

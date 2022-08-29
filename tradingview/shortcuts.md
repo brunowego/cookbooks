@@ -6,6 +6,8 @@
 
 ## MacOS
 
-| Command    | Description         |
-| ---------- | ------------------- |
-| Option + I | Invert series scale |
+| Command                 | Description         |
+| ----------------------- | ------------------- |
+| Option (⌥) + I          | Invert series scale |
+| Option (⌥) + Left/Right |                     |
+| Shift (⇧) + Right       |                     |
