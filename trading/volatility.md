@@ -7,16 +7,13 @@
 <!--
 CBOE:OVX
 CBOE:GVZ
-
 CBOE:VIX
 
 TVC:MOVE
 
 BITMEX:BVOL24H
 
-VXN
-
-VOLQ
+NASDAQ:VOLQ
 -->
 
 ## Comparison Table

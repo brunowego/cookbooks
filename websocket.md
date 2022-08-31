@@ -1,4 +1,4 @@
-# WebSocket (WS)O
+# WebSocket (WS)
 
 ## Pub/Sub Providers
 

@@ -19,7 +19,7 @@ https://www.youtube.com/channel/UCl_kgnFsEqCsXiqRowBCpZA
 ## Principles
 
 - Trends: Uptrend/Downtrend
-- Sideways: Range
+- Sideways/Consolidation: Range
 
 ## Terms
 
@@ -37,7 +37,6 @@ https://www.youtube.com/channel/UCl_kgnFsEqCsXiqRowBCpZA
 <!--
 Change Of Character (CHOCH)
 Break Hook Go (BHG)
-Break-even
 News Candle
 Red Bar Take Out
 -->

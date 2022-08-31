@@ -22,19 +22,25 @@ Commodity Futures Trading Commission (CFTC)
 | Event                                   | Volatility |
 | --------------------------------------- | ---------- |
 | Building Permits                        | Neutral    |
+| CB Consumer Confidence                  | High       |
 | Consumer Price Index (CPI)              | High       |
 | Crude Oil Inventories                   | Neutral    |
 | Existing Home Sales (EHS)               | Neutral    |
 | Fed Interest Rate Decision              | High       |
+| Fed Speaks                              |            |
 | Gross Domestic Product (GDP)            | High       |
 | Initial Jobless Claims                  |            |
+| JOLTs Job Openings                      | High       |
 | New Home Sales                          | Neutral    |
 | Personal Consumption Expenditures (PCE) | High       |
 | Producer Price Index (PPI)              |            |
 | Purchasing Managers Index (PMI)         | Neutral    |
-| Fed Speaks                              |            |
+| ADP Nonfarm Employment Change           |            |
 
 ## Terms
 
+- Automatic Data Processing (ADP)
+- Conference Board (CB)
+- Job Openings and Labor Turnover Survey (JOLTs)
 - Quarter-on-Quarter or Quarter-over-Quarter (QoQ)
 - Year-over-Year (YoY)

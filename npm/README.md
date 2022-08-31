@@ -30,6 +30,13 @@ npm -h
 npm help 7 config
 ```
 
+### Execute
+
+```sh
+#
+npx [command]
+```
+
 ### Bootstrap
 
 ```sh
@@ -103,7 +110,7 @@ jq '."search.exclude"."**/node_modules" |= true' "$PWD/.vscode/settings.json" | 
 ```json
 {
   "scripts": {
-    "build": "NODE_ENV=${NODE_ENV:-prod} node ./index.js",
+    "build": "NODE_ENV=${NODE_ENV:-prod} node ./index.js"
   }
 }
 ```

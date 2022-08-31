@@ -85,7 +85,7 @@ Liquidity Level/Zone
 - Channel
 - Cup and Handle
 - Dark Cloud Cover
-- Dead Cat bounce
+- Dead Cat Bounce
 - Downtrend / Uptrend Line. **Tip:** Just consider the body of the green candlesticks. Ignore the wick.
 - Engulfing Bar (BEEB/BUEB)
 - False Breakout / Fake-out

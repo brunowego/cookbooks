@@ -32,8 +32,8 @@ https://www.nasdaq.com/crypto-index
 
 - [Coinopsy / List of dead crypto coins](https://coinopsy.com/dead-coins/)
 - [Crypto Bubbles](https://cryptobubbles.net/)
-- [CryptoAlerts](https://cryptoalerts.ai/) **★**
-- [DailyClose](https://dailyclose.com/) **★**
+- [CryptoAlerts](https://cryptoalerts.ai/) 🌟
+- [DailyClose](https://dailyclose.com/) 🌟
 - [Defi Llama / Chains](https://defillama.com/chains)
 - [Messari](https://messari.io/)
 - [ScamAdviser](https://scamadviser.com/)
@@ -114,10 +114,10 @@ https://blockchair.com/
 - [Is This Coin A Scam?](https://isthiscoinascam.com/)
 - [LunarCrush](https://lunarcrush.com/)
 - [Messari](https://messari.io/)
-- [Stock Average Calculator](https://online-calculator.org/stock-average-calculator.aspx) **★**
+- [Stock Average Calculator](https://online-calculator.org/stock-average-calculator.aspx) 🌟
 <!--
 - xdecow
-  - [Long Short Ratio](http://xdecow.com/lsr) **★**
+  - [Long Short Ratio](http://xdecow.com/lsr) 🌟
   - [Open Interest](http://xdecow.com/open-interest)
   - [Order Book Depth](http://xdecow.com/order-book-depth)
     -->

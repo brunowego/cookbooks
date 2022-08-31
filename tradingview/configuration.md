@@ -10,11 +10,13 @@
 
 ## Object Tree
 
-<!-- - Trading Strategy -->
-<!-- - Patterns -->
-
-- Projections
-- Retractions
+- Projections (Fibonacci)
+- Retractions (Fibonacci)
 - Key Levels
 - Events
-- Market Structure
+- Reflections: Price Range
+- Market Structure: Trends (Daily, Weekly, Monthly, Quarter)
+
+## Rules
+
+- Reflections / Price Range -> Melting: Put it on top of the last all time high.

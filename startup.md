@@ -46,6 +46,7 @@ https://angel.co/
 - Flip
 - Follow On
 - Growth Hacking
+- Growth Mindset
 - Initial Public Offering (IPO)
 - Monthly Recurring Revenue (MRR)
 - Omnichannel
@@ -53,6 +54,7 @@ https://angel.co/
 - Operating expenses (OPEX)
 - Payout Ratio
 - Private Equity
+- Rapport
 - Skin In The Game
 - Soft Skills
 - Spread

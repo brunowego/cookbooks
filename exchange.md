@@ -6,11 +6,11 @@
 
 ## Ranking
 
-- [Kaiko](https://www.kaiko.com/pages/exchange-ranking)
+- [Kaiko](https://kaiko.com/pages/exchange-ranking)
 
-<!--
-CryptoCompare
--->
+## Terms
+
+- Internet Data Exchange (IDX, a.k.a. Information Data Exchange)
 
 ## Decentralized Exchange (DEX)
 

@@ -1,6 +1,7 @@
 # Design
 
 <!--
+https://cosmos.network/
 https://scale.com/
 https://appandflow.com/
 https://app.subsquid.io/aquarium/centrifuge-firesquid

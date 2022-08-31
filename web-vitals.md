@@ -20,7 +20,7 @@ Lazy loading
 - [Google Lighthouse](https://github.com/GoogleChrome/lighthouse)
 - [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - [Google Search Console](https://search.google.com/search-console/about)
-- [Measure page quality](https://web.dev/measure/) **★**
+- [Measure page quality](https://web.dev/measure/) 🌟
 - [WebPageTest](https://webpagetest.org/)
 
 ## Metrics

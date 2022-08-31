@@ -95,7 +95,6 @@
 - Uniform Resource Locator (URL)
 - Uniform Resource Name (URN)
 - Universal Plug and Play (UPnP)
-- Utterly Destroyed or Ruined (Rekt)
 - Virtual Private Cloud (VPC)
 - War Room (WR)
 - Web Server Gateway Interface (WSGI)

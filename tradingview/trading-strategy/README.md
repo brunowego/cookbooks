@@ -65,6 +65,11 @@ Advanced Break Down/Up
 
 **Risk Management:** Always set a stop.
 
+## Stop
+
+- Stop Gain/Stop Loss
+- Break-even
+
 <!-- ## Formulas -->
 
 <!-- ### Bitcoin

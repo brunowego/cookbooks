@@ -8,9 +8,9 @@
 
 ## Options
 
-- [Strapi](/strapi/README.md)
+- [Strapi](/strapi/README.md) 🌟
 - [Storyblok](https://storyblok.com/)
-- [Sanity](/sanity/README.md)
+- [Sanity](/sanity/README.md) 🌟
 - [Netlify CMS](https://netlifycms.org/)
 - [Keystone](/keystonejs.md)
 - [Ghost](https://ghost.org/)

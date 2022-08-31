@@ -1,13 +1,20 @@
 # Trading Journal
 
+## Tools
+
+- [AntSignals](https://antsignals.com/)
+- [TradeBench](https://tradebench.com/)
+- [TraderSync](https://tradersync.com/)
+- [Tradervue](https://tradervue.com/)
+- [TradesViz](https://tradesviz.com/)
+
 <!--
-https://tradersync.com/
-https://antsignals.com/
+fixytrade.com
 -->
 
 ## Terms
 
-- Contract for difference (CFD)
+- Contract for Difference (CfD)
 
 ## Phases
 

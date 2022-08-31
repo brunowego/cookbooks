@@ -10,9 +10,10 @@ https://github.com/github/feedback
 
 ## Tools
 
-- [GetFeedy](https://getfeedy.io/)
-- [Pastel](https://usepastel.com/)
 - [Feedback Fish](https://feedback.fish/)
-- [Upvoty](https://upvoty.com/)
 - [Frill](https://frill.co/)
+- [GetFeedy](https://getfeedy.io/)
 - [Nolt](https://nolt.io/)
+- [Pastel](https://usepastel.com/)
+- [Sleekplan](https://sleekplan.com/)
+- [Upvoty](https://upvoty.com/)

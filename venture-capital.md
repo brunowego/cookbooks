@@ -12,3 +12,4 @@ https://www.linkedin.com/learning/foundations-of-raising-capital
 
 - Early Stage
 - Growth
+- Joint Venture

@@ -38,6 +38,7 @@ Sinal: Candle/Volume
 - Hold On for Dear Life (HODL)
 - Over-The-Counter (OTC) / Penny Stocks
 - Payoff
+- Wash Trade
 - Win Rate
 
 ## Personalities
@@ -187,8 +188,6 @@ https://finviz.com/
 1. Checar quando é a divulgação de resultados. Não negocie açÕes nos poucos dias antes de declararem os lucros.
 2. A ação declarou dividendos? Se não, ótimo.
 3. Qual é o % de ações alugadas para operações vendidas (short float)?
-
-Stop gain / Stop loss
 
 Entrada, alvo, stop
 

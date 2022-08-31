@@ -6,7 +6,9 @@ https://www.investing.com/economic-calendar/
 
 ## Terms
 
+- Flash Crash
 - Risk-to-Reward Ratio (Risk/Reward Ratio) (RR)
+- Utterly Destroyed or Ruined (REKT)
 
 ## Take Care
 

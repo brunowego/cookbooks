@@ -25,26 +25,41 @@ npx @turbo/codemod add-package-manager --force
 
 ## CLI
 
+### Installation
+
+```sh
+# Using NPM
+npm install turbo -g
+
+# Using Yarn
+yarn global add turbo
+```
+
 ### Commands
 
 ```sh
+# Using NPX
 npx turbo -h
+
+# Using Local
+turbo -h
 ```
 
 ### Usage
 
 ```sh
 #
-npx turbo login
+turbo login
 
 #
-npx turbo link
-npx turbo unlink
+turbo link
+turbo unlink
 
 #
-npx turbo run build
-npx turbo run build --force
-npx turbo run build --graph
+turbo run build
+turbo run build --force
+turbo run build --graph
+turbo run build --scope [@package/name]
 ```
 
 ### Bootstrap

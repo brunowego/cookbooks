@@ -41,7 +41,6 @@ TF 2W / Date Range / 5 bars, 70d
 - [bitaddress.org](https://bitaddress.org/)
 - [Bitcoin Core](https://bitcoincore.org/)
 - [Bitcoin Rich List](https://bitinfocharts.com/top-100-richest-bitcoin-addresses.html)
-- [Bitcoin Treasuries](https://bitcointreasuries.net/) **Info:** Biggest investors.
 - [Bitcoin: Number of Active Addresses](https://studio.glassnode.com/metrics?a=BTC&m=addresses.ActiveCount)
 - [Code Repository](https://github.com/bitcoin/bitcoin)
 - [Taxa de hash total (TH/s)](blockchain.com/pt/charts/hash-rate)
@@ -49,6 +48,15 @@ TF 2W / Date Range / 5 bars, 70d
 - [Bitcoin Is Dead / The #1 Database of Notable Bitcoin Skeptics](https://bitcoinisdead.org/)
 - [Bitcoin Improvement Proposal](https://github.com/bitcoin/bips)
 - [FiatMarketCap / Fiat Market Capitalizations](https://fiatmarketcap.com/)
+
+### Treasuries
+
+- [Bitcoin Treasuries](https://bitcointreasuries.net/dark.html)
+- [Buy Bitcoin Worldwide / Bitcoin Treasuries](https://buybitcoinworldwide.com/treasuries/)
+
+<!--
+https://www.coingecko.com/en/public-companies-bitcoin
+-->
 
 ### Google Trends
 
@@ -140,7 +148,7 @@ Watch the dominance `BTC.D`:
 
 ### Fed Cycles and Bitcoin Performance
 
-![Fed Cycles and Bitcoin Performance](/assets/images/fed-cycles.webp)
+![Fed Cycles and Bitcoin Performance](/assets/images/trading/fed-cycles.webp)
 
 ### [Crypto Fear & Greed Index Over Time](https://alternative.me/crypto/fear-and-greed-index/)
 

@@ -21,5 +21,5 @@ module.exports = ({ env }) => ({
       environment: env('NODE_ENV'),
     },
   },
-});
+})
 ```

@@ -85,6 +85,7 @@ https://tradingeconomics.com/calendar
 - Venture Capitalist (VC)
 - Year To Date (YTD)
 - Year-over-Year (YoY)
+- Yield Curve
 
 <!--
 - Small Caps

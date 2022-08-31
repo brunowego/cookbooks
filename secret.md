@@ -1,8 +1,9 @@
-# Secrets
+# Secret
 
 ## Tools
 
 - [Generate Secret](https://generate-secret.vercel.app/32)
+- [Encryption Key Generator](https://allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx)
 
 ## Tips
 

@@ -22,10 +22,10 @@ brew install pnpm
 ### Commands
 
 ```sh
-#
+# Using NPX
 npx pnpm -h
 
-#
+# Using Local
 pnpm -h
 ```
 
@@ -33,11 +33,28 @@ pnpm -h
 
 ```sh
 #
+pnpm init
+
+#
 pnpm install
 
 #
 pnpm dev
+```
 
+<!--
+pnpm --filter <package-name> <command>
+
+pnpm add --filter shared-ui typescript -D
+pnpm add shared-ui --filter my-remix-app --workspace
+
+pnpm run -r build
+pnpm run --parallel -r build
+-->
+
+### Execute
+
+```sh
 #
 pnpx [command]
 ```
