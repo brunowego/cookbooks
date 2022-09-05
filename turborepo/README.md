@@ -31,8 +31,11 @@ npx @turbo/codemod add-package-manager --force
 # Using NPM
 npm install turbo -g
 
-# Using Yarn
+# Using Yarn 1.x
 yarn global add turbo
+
+# Using Yarn >= 2.x
+yarn dlx turbo
 ```
 
 ### Commands
@@ -62,28 +65,69 @@ turbo run build --graph
 turbo run build --scope [@package/name]
 ```
 
+## Library
+
+### Installation
+
+```sh
+# Using Yarn
+yarn add turbo --dev
+```
+
 ### Bootstrap
+
+#### Automatically
 
 Use [create-turbo](/turborepo/create-turbo.md) to bootstrap an application.
 
-### Configuration
+#### Manually
 
-#### Vercel
+```sh
+#
+mkdir -p ./{apps/landing,packages}
+```
 
-1. Project -> Settings
-2. General
-   - Build & Development Settings
-     - Build Command:
-       - Using NPM: `cd ../../ && npx turbo run build --scope=[@package/name] --include-dependencies --no-deps`
-       <!-- - Using Yarn: `cd ../../ && yarn turbo run build --scope=web --include-dependencies --no-deps` -->
-     - Install Command:
-       - Using NPM: `npm install --prefix ../../`
-       - Using Yarn: `yarn install --cwd ../../`
-   - Root Directory: `apps/web`
-3. Environment Variables -> Add New
-   - Name: `ENABLE_ROOT_PATH_BUILD_CACHE`
-   - Value: `1`
-   - Add
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "workspaces": ["./apps/*", "./packages/*"],
+  "scripts": {
+    // ...
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  }
+}
+```
+
+**Refer:** `./turbo.json`
+
+```json
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "dev": {
+      "cache": false
+    },
+    "lint": {
+      "outputs": []
+    },
+    "test": {
+      "outputs": []
+    },
+    "build": {
+      "outputs": []
+    },
+    "start": {
+      "outputs": []
+    }
+  }
+}
+```
 
 ## Issues
 

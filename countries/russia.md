@@ -1,6 +1,6 @@
 # Russia
 
-## News
+## Newspaper
 
 - [RT](https://rt.com/)
 - [TASS](https://tass.com/)

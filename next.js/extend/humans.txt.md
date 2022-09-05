@@ -6,10 +6,10 @@
 
 ```mjs
 /**
- * @type {import('next').NextConfig}
+ * @type { import('next').NextConfig }
  */
 const nextConfig = {
-  reactStrictMode: true,
+  // ...
   rewrites: async () => {
     return [
       { source: '/humans.txt', destination: '/about' },

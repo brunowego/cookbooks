@@ -66,10 +66,10 @@ import linguiConfig from './lingui.config.js'
 const { locales, sourceLocale } = linguiConfig
 
 /**
- * @type {import('next').NextConfig}
+ * @type { import('next').NextConfig }
  */
 const nextConfig = {
-  reactStrictMode: true,
+  // ...
   trailingSlash: true,
   i18n: {
     localeDetection: true,
@@ -141,8 +141,10 @@ I18nProvider did not render. A call to i18n.activate still needs to happen or fo
 ```
 
 ```tsx
-{/* ... */}
-<I18nProvider i18n={i18n} forceRenderOnLocaleChange={false}>
+{
+  /* ... */
+}
+;<I18nProvider i18n={i18n} forceRenderOnLocaleChange={false}>
   {/* ... */}
 </I18nProvider>
 ```

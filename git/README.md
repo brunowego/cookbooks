@@ -258,6 +258,7 @@ git push --follow-tags
 #### Merge Strategies
 
 - Fast Forward Merge
+
   - No new commits on the base branch
   - No merge commit on the base branch when merged
   - Provides a linear history
@@ -267,6 +268,7 @@ git push --follow-tags
   ```
 
 - Recursive Merge
+
   - New commits on the base branch
   - A merge commit is created on the base branch
   - Merge commit has 2 parents with a true diverged history
@@ -358,10 +360,14 @@ git for-each-ref \
   --format='%(committerdate:short) %(authorname) %(refname:short)'
 ```
 
-#### Run Push Subdirectories
+#### Run Subdirectories
 
 ```sh
+# Push
 find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c 'cd "{}" && git push' \;
+
+# Pull
+find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c 'cd "{}" && git pull' \;
 ```
 
 <!-- ####
@@ -435,14 +441,13 @@ git push --force-with-lease
 #### Clean GitHub Pages
 
 ```sh
+#
 git clone --no-checkout [repo]
-```
 
-```sh
+#
 git checkout --orphan gh-pages
-```
 
-```sh
+#
 git rm -r ./
 git clean -fdx
 git push origin gh-pages
@@ -479,7 +484,7 @@ tee -a ~/.gitconfig << EOF
 EOF
 ```
 
-***Observation:*** Only works if have git initialized in the current folder.
+**_Observation:_** Only works if have git initialized in the current folder.
 
 ```sh
 #

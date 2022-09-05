@@ -1,5 +1,10 @@
 # Dollar
 
+## Research
+
+- [Monetary Data / M2 (M2SL)](https://fred.stlouisfed.org/series/M2SL)
+- [Interest Rates / FRB Rates - discount, fed funds, primary credit](https://fred.stlouisfed.org/series/FEDFUNDS)
+
 ## Terms
 
 - Currency Peg
@@ -9,12 +14,6 @@
 - Intercontinental Exchange (ICE)
 
 <!--
-Brazilian Diaspora
-Nakamoto Coefficient
-ZkRollup
-Media for Equity
-Consensus Algorithm
-
 DXY + VIX = Nivel de Risco
 
 DXY vs TVC:TRJEFFCRB

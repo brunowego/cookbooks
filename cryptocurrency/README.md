@@ -46,6 +46,15 @@ https://www.nasdaq.com/crypto-index
 https://blockchair.com/
 -->
 
+### Scandals
+
+- [Crypto Leaks](https://cryptoleaks.info/)
+
+### Futures and Options
+
+- [CME Group](/cmegroup.md)
+- [Deribit](/deribit.md)
+
 ### News
 
 - [BeInCrypto](https://beincrypto.com/)

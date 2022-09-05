@@ -1,60 +1,163 @@
 # stylelint
 
-## References
+<!--
+stylelint-config-tailwindcss
+-->
 
+## Links
+
+- [Code Repository](https://github.com/stylelint/stylelint)
+- [Main Website](https://stylelint.io/)
 - [List of rules](https://stylelint.io/user-guide/rules/list)
 
-## CLI
+## Library
 
 ### Installation
 
-#### Yarn
-
 ```sh
-yarn add -D stylelint stylelint-config-standard stylelint-order stylelint-scss
-```
+# Using NPM
+npm install stylelint stylelint-config-recommended stylelint-order --save-dev
 
-#### NPM
-
-```sh
-npm install stylelint stylelint-config-standard stylelint-order stylelint-scss -D
+# Using Yarn
+yarn add stylelint stylelint-config-recommended stylelint-order --dev
 ```
 
 ### Configuration
 
-```sh
-cat << EOF > ./.stylelintrc.json
-{
-  "extends": "stylelint-config-standard",
-  "plugins": [
-    "stylelint-order",
-    "stylelint-scss"
-  ],
-  "rules": {
-    "string-quotes": "single",
-    "order/properties-alphabetical-order": true
-  }
+**Refer:** `./.stylelintrc.cjs`
+
+```cjs
+/**
+ * @type { import('stylelint').Config }
+ */
+const stylelintRC = {
+  extends: 'stylelint-config-recommended',
+  plugins: ['stylelint-order'],
+  rules: {
+    'string-quotes': 'single',
+    'order/properties-alphabetical-order': true,
+  },
 }
 
-EOF
+module.exports = stylelintRC
 ```
 
 ```sh
-cat << EOF > ./.stylelintignore
-
-EOF
+#
+echo '!/.stylelintrc.cjs' >> ./.eslintignore
 ```
 
-### Extend
+<!-- ### Extend -->
 
-- [Prettier](/prettier.md)
+<!-- #### With Prettier
+
+**Dependencies:** [Prettier](/prettier.md#library)
+
+```sh
+# Using NPM
+npm install stylelint-config-prettier stylelint-prettier --save-dev
+
+# Using Yarn
+yarn add stylelint-config-prettier stylelint-prettier --dev
+```
+
+**Refer:** `./.stylelintrc.cjs`
+
+```cjs
+/**
+ * @type { import('stylelint').Config }
+ */
+const stylelintRC = {
+  // ...
+  plugins: [
+    // ...
+    'stylelint-prettier',
+  ],
+  rules: {
+    // ...
+    'prettier/prettier': true,
+  },
+  // ...
+}
+
+module.exports = stylelintRC
+``` -->
+
+<!-- #### With SCSS
+
+```sh
+# Using NPM
+npm install stylelint-scss --save-dev
+
+# Using Yarn
+yarn add stylelint-scss --dev
+```
+
+**Refer:** `./.stylelintrc.cjs`
+
+```cjs
+/**
+ * @type { import('stylelint').Config }
+ */
+const stylelintRC = {
+  // ...
+  plugins: [
+    // ...
+    'stylelint-scss',
+  ],
+  // ...
+}
+
+module.exports = stylelintRC
+``` -->
 
 ### Tips
 
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension stylelint.vscode-stylelint
+
+#
+jq '."recommendations" += ["stylelint.vscode-stylelint"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+
+#
+jq '."stylelint.validate" += ["tailwindcss"]' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+```
+
+#### Ignore Rules for TailwindCSS
+
+```log
+Unexpected unknown at-rule "@tailwind" (at-rule-no-unknown) Stylelintat-rule-no-unknown
+```
+
+**Refer:** `./.stylelintrc.cjs`
+
+```cjs
+/**
+ * @type { import('stylelint').Config }
+ */
+const stylelintRC = {
+  // ...
+  rules: {
+    // ...
+    'at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['tailwind'],
+      },
+    ],
+    'function-no-unknown': [
+      true,
+      {
+        ignoreFunctions: ['theme'],
+      },
+    ],
+  },
+}
+
+module.exports = stylelintRC
 ```
 
 #### Ignore

@@ -10,13 +10,10 @@
 
 ```sh
 #
-npx yarn init -yp; npx yarn
+yarn init -yp; yarn
 
 #
 yarn set version stable # berry
-
-#
-yarn config
 
 #
 yarn config set defaultSemverRangePrefix '~'
@@ -37,6 +34,7 @@ EOF
 #
 yarn config set nodeLinker 'node-modules'
 
+#
 cat << EOF >> ./.gitignore
 /.yarn/*
 !/.yarn/patches
@@ -53,6 +51,7 @@ EOF
 #
 yarn config set nodeLinker 'pnp'
 
+#
 cat << EOF >> ./.gitignore
 /.yarn/*
 !/.yarn/patches

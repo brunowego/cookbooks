@@ -4,4 +4,6 @@
 https://github.com/tinode/chat
 -->
 
-TODO
+## Terms
+
+- COnferences with LIghtweight BRIdging (COLIBRI)

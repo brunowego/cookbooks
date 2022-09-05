@@ -60,7 +60,7 @@ eslint-plugin-jest
     // ...
     "test": "jest",
     "test:watch": "jest --watch",
-    "coverage": "jest --collect-coverage",
+    "coverage": "jest --collect-coverage"
     // ...
   }
 }
@@ -115,7 +115,7 @@ yarn add eslint-plugin-jest --dev
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   plugins: [

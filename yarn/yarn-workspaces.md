@@ -10,7 +10,10 @@ yarn workspace -h
 
 ```sh
 #
-yarn workspace [workspace] add [package] -—dev
+yarn workspaces list
+
+#
+yarn workspace <workspace> add <package> --dev
 ```
 
 ## Issues

@@ -29,7 +29,22 @@ cat << EOF > ./.postcssrc.json
 EOF
 ``` -->
 
+## Library
+
+### Installation
+
+```sh
+# Witn Yarn
+yarn add postcss --dev
+```
+
 ## Tips
+
+### Valid File Extensions
+
+- `.css`
+- `.pcss`
+- `.postcss`
 
 ### Visual Studio Code
 
@@ -41,7 +56,7 @@ code --install-extension csstools.postcss
 jq '."recommendations" += ["csstools.postcss"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
 ```
 
-<!-- ####
+<!-- #### Autocomplete/Expansion Support
 
 **Dependencies:** [Emmet](/emmet.md)
 
@@ -50,6 +65,7 @@ jq '."recommendations" += ["csstools.postcss"]' "$PWD/.vscode/extensions.json" |
 jq '."emmet.includeLanguages".postcss |= "css"' "$PWD/.vscode/settings.json" | \
   sponge "$PWD/.vscode/settings.json"
 
+#
 jq '."emmet.syntaxProfiles".postcss |= "css"' "$PWD/.vscode/settings.json" | \
   sponge "$PWD/.vscode/settings.json"
 ``` -->

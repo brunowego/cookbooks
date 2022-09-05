@@ -10,29 +10,21 @@
 
 - [ESLint](/eslint.md#library)
 
-## Installation
+## Configuration
 
 ```sh
-# Using NPM
-npm install eslint-config-next --save-dev
-
-# Using Yarn
-yarn add eslint-config-next --dev
+#
+rm ./.eslintrc.json
 ```
-
-## Configuration
 
 **Refer:** `./.eslintrc.cjs`
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
-  extends: [
-    'next/core-web-vitals',
-    // ...
-  ],
+  extends: ['next/core-web-vitals'],
 }
 
 module.exports = eslintRC
@@ -50,7 +42,7 @@ Parsing error: Unexpected token ... eslint
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   // ...
@@ -97,7 +89,7 @@ Pages directory cannot be found at /pages or /src/pages. If using a custom path,
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   // ...

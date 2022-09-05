@@ -50,7 +50,7 @@ import '../styles/globals.css'
 
 ```cjs
 /**
- * @type {import('tailwindcss/tailwind-config').TailwindConfig}
+ * @type { import('tailwindcss').Config }
  */
 const tailwindConfig = {
   content: ['./src/components/**/*.{ts,tsx}', './src/pages/**/*.{ts,tsx}'],

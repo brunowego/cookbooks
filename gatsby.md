@@ -48,6 +48,7 @@ brew install gatsby-cli
 #### YARN
 
 ```sh
+# Using Yarn 1.x
 yarn global add gatsby-cli
 ```
 

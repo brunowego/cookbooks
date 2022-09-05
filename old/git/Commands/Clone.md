@@ -3,12 +3,10 @@
 ## Simple
 
 ```sh
+#
 git clone [repo]
-```
 
-###
-
-```sh
+#
 git clone [repo] [/path/to/folder] && cd "$_"
 ```
 
@@ -24,17 +22,19 @@ git clone --recursive [repo]
 git clone --branch [branch] --single-branch --depth [depth] [repo]
 ```
 
-| Param | Value |
-| --- | --- |
-| `--depth` | `1` |
+| Param     | Value |
+| --------- | ----- |
+| `--depth` | `1`   |
 
 ## Root Permissions
 
 ```sh
+#
 sudo mkdir -p [/path/to/folder] && cd "$_"
-sudo chown $(whoami): ./
-```
 
-```sh
+#
+sudo chown $(whoami): ./
+
+#
 git clone [repo] ./
 ```

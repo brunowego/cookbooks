@@ -1,8 +1,4 @@
-# Foreign Exchange Market (Forex)
-
-<!--
-https://www.udemy.com/course/from-zero-to-expert-forex-trader-with-supply-and-demand/?referralCode=69840CAF4ED77B3EF7D6
--->
+# Foreign Exchange Market (FOREX)
 
 ## Links
 
@@ -17,20 +13,10 @@ https://www.udemy.com/course/from-zero-to-expert-forex-trader-with-supply-and-de
 
 - Bid–Ask Spread
 
-<!--
-ECONOMICS:USINTR
-ECONOMICS:USIRYY
-Same % scale
-ECONOMICS:USGDP
-ECONOMICS:BRIRYY
-ECONOMICS:BRINTR
+## Currency Exchange
 
----
-1D
-REGULAR
-ECONOMICS:EUINTR
-ECONOMICS:USINTR
+### Dollar (USD)
 
----
-ECONOMICS:BRINTR
--->
+| Name | Symbol            |
+| ---- | ----------------- |
+| Gold | `FOREXCOM:XAUUSD` |

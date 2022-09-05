@@ -1,9 +1,5 @@
 # YAML Ain't Markup Language (YAML)
 
-<!--
----
--->
-
 ## Links
 
 - [YAML Spec](https://yaml.org/spec/1.2/spec.html#id2795688)
@@ -34,33 +30,31 @@
 ### Visual Studio Code
 
 ```sh
+#
 code --install-extension redhat.vscode-yaml
-```
 
-<!--
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
--->
+#
+jq '."recommendations" += ["redhat.vscode-yaml"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+```
 
 ### Merge Key Language
 
-[*Documentation*](http://yaml.org/type/merge.html)
+[_Documentation_](http://yaml.org/type/merge.html)
 
 ```yaml
 ---
 projects:
-- &shared
-  name: app-stg
-  workflow: default
+  - &shared
+    name: app-stg
+    workflow: default
 
-- <<: *shared
-  name: app-prd
+  - <<: *shared
+    name: app-prd
 ```
 
 ### Block Styles
 
-[*Documentation*](https://yaml.org/spec/1.2/spec.html#Block)
+[_Documentation_](https://yaml.org/spec/1.2/spec.html#Block)
 
 ```yaml
 ---

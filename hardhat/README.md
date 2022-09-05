@@ -23,6 +23,7 @@ https://www.udemy.com/course/blockchain-build-a-dapp-using-solidity-hardhat-and-
 - [Code Repository](https://github.com/nomiclabs/hardhat)
 - [Main Website](https://hardhat.org/)
 - [Plugins](https://hardhat.org/plugins/)
+- [Configuration](https://hardhat.org/hardhat-runner/docs/config)
 
 ## References
 

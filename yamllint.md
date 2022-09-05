@@ -69,6 +69,7 @@ cat << EOF > ./.yamllint.yml
 ---
 extends: default
 # ignore: |
+#   **/.yarn/**/*
 #   **/node_modules/**/*
 rules:
   indentation:
@@ -90,9 +91,9 @@ EOF
 yamllint ./
 ```
 
-### Tips
+### Comments
 
-#### [Disable with comments](https://yamllint.readthedocs.io/en/stable/disable_with_comments.html)
+**Docs:** [Disable with comments](https://yamllint.readthedocs.io/en/stable/disable_with_comments.html).
 
 ```yaml
 ---
@@ -101,20 +102,24 @@ yamllint ./
 # ...
 ```
 
+### Tips
+
 #### Visual Studio Code
 
 **Requirements:** yamllint CLI.
 
-```sh
+<!-- ```sh
 #
 code --install-extension fnando.linter
 
 #
-#
 jq '."recommendations" += ["fnando.linter"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
-```
+``` -->
 
-<!-- "yaml.validate": false -->
+```sh
+#
+jq '."[yaml]"."editor.formatOnSave" |= false' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+```
 
 ### Issues
 

@@ -20,6 +20,8 @@ bear market occurs when a stock index declines 20 percent
 Carry Trades
 
 Rei morto, rei posto
+
+Bank, Energy, Sanitation, Telecom, Insurance (BESTI)
 -->
 
 ## Links
@@ -53,6 +55,11 @@ https://tradingeconomics.com/united-states/inflation-cpi
 <!--
 https://tradingeconomics.com/calendar
 -->
+
+## Phenomenons
+
+- Flight-to-Quality (FtQ)
+- Flight-to-Safety (FtS)
 
 ## Terms
 

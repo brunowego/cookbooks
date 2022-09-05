@@ -16,9 +16,6 @@ yarn plugin import workspace-tools
 
 ```sh
 #
-yarn workspaces list
-
-#
 yarn workspaces focus
 
 #

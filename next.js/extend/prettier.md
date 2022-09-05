@@ -10,7 +10,7 @@
 
 ```cjs
 /**
- * @type {import('prettier').Options}
+ * @type { import('prettier').Options }
  */
 const prettierConfig = {
   semi: false,

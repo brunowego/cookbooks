@@ -23,7 +23,7 @@ npx preact-cli -h
 # Using NPM
 npm install preact-cli -g
 
-# Using Yarn
+# Using Yarn 1.x
 yarn global add preact-cli
 ```
 

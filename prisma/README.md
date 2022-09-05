@@ -60,7 +60,7 @@ mkdir -p ./db && mv ./prisma ./db/prisma
   // ...
   "prisma": {
     "schema": "./db/prisma/schema.prisma"
-  },
+  }
   // ...
 }
 ```
@@ -68,6 +68,8 @@ mkdir -p ./db && mv ./prisma ./db/prisma
 ### Extend With
 
 #### Prettier
+
+- [Dependency](/prettier.md#library)
 
 ```sh
 # Using NPM
@@ -81,7 +83,7 @@ yarn add prettier-plugin-prisma --dev
 
 ```cjs
 /**
- * @type {import('prettier').Options}
+ * @type { import('prettier').Options }
  */
 const prettierConfig = {
   // ...

@@ -7,7 +7,6 @@
 ```json
 {
   "$schema": "https://turborepo.org/schema.json",
-  "baseBranch": "origin/main",
   // "globalDependencies": ["./apps/site/.env"],
   "pipeline": {
     // ...

@@ -15,10 +15,13 @@ brew install flake8
 #### Visual Studio Code
 
 ```sh
+#
 jq '."python.linting.flake8Enabled" |= true' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 
+#
 jq ".\"python.linting.flake8Path\" |= \"$(which flake8)\"" "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 
+#
 jq '."files.associations"."*.flake8" |= "ini"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
 ```
 
@@ -58,11 +61,11 @@ flake8
 ```yaml
 ---
 repos:
-- repo: https://gitlab.com/pycqa/flake8
-  rev: 3.9.2
-  hooks:
-  - id: flake8
-    stages: [commit]
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 3.9.2
+    hooks:
+      - id: flake8
+        stages: [commit]
 ```
 
 #### NO Quality Assurance

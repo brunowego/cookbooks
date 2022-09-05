@@ -2,25 +2,45 @@
 
 <!--
 https://github.com/tailwindlabs/tailwindcss.com/tree/master/public/favicons
+
+Sizes: 32x32
+Bit depth: 32 bits (16.7M colors & alpha transparency)
 -->
 
 ## Tools
 
-- [favicon.io](https://favicon.io/)
 - [Favicon checker](https://realfavicongenerator.net/favicon_checker)
+- [favicon.io / Converter](https://favicon.io/favicon-converter/)
+- [ICO converter](https://icoconverter.com/) 🌟
+
+## Examples
+
+- [Google](https://google.com/favicon.ico)
+- [Facebook](https://facebook.com/favicon.ico)
+- [GitHub](https://github.com/favicon.ico)
 
 ## Markup HTML
 
 ```html
 <!-- Icon -->
-<link rel="icon" type="image/x-icon"  href="/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
 <!-- PNG: https://caniuse.com/link-icon-png  -->
 <link rel="icon" type="image/png" href="/favicon.png" />
 
 <!-- Prefers Color Scheme -->
-<link rel="shortcut icon" type="image/png" href="/favicon-dark.png" media="(prefers-color-scheme: dark)" />
-<link rel="shortcut icon" type="image/png" href="/favicon-light.png" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+<link
+  rel="shortcut icon"
+  type="image/png"
+  href="/favicon-dark.png"
+  media="(prefers-color-scheme: dark)"
+/>
+<link
+  rel="shortcut icon"
+  type="image/png"
+  href="/favicon-light.png"
+  media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+/>
 ```
 
 ## Tips

@@ -1,6 +1,7 @@
 # Storybook
 
 <!--
+https://github.com/Vizzuality/front-end-scaffold
 https://storybook.js.org/blog/how-to-automate-ui-tests-with-github-actions/
 
 https://uikit.wfp.org/docs/index.html
@@ -67,6 +68,7 @@ npm install @storybook/cli -g
 #### Yarn
 
 ```sh
+# Using Yarn 1.x
 yarn global add @storybook/cli
 ```
 
@@ -137,8 +139,6 @@ yarn add -D @storybook/preset-scss css-loader sass-loader style-loader
 ```js
 // Change ./.storybook/main.js
 module.exports = {
-  addons: [
-    '@storybook/preset-scss'
-  ]
-};
+  addons: ['@storybook/preset-scss'],
+}
 ```

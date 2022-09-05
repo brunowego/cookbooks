@@ -5,5 +5,6 @@
 ### Installation
 
 ```sh
+#
 code --install-extension ldez.ignore-files
 ```

@@ -37,6 +37,7 @@ https://linkedin.com/learning/typescript-for-node-js-developers/
 #### NPM
 
 ```sh
+# Using NPM
 npm install typescript --save-dev
 ```
 
@@ -88,7 +89,7 @@ Add `'**/*.ts?(x)': () => 'npm run build-types'` to `.lintstagedrc.mjs`.
 {
   "scripts": {
     // ...
-    "typecheck": "tsc --noEmit --pretty"
+    "typecheck": "tsc --pretty --noEmit"
   }
 }
 ```
@@ -151,3 +152,9 @@ declare module '*.svg?url' {
 #
 jq '."[typescript]"."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 ```
+
+<!--
+"eslint.nodePath": "./.yarn/sdks",
+"typescript.tsdk": "./.yarn/sdks/typescript/lib",
+"typescript.enablePromptUseWorkspaceTsdk": true
+-->

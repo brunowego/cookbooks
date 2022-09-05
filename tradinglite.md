@@ -58,6 +58,10 @@ CVD
 Open Interest
 -->
 
+## Market Manipulation
+
+- Spoofing
+
 ## Configuration
 
 ### Orderbook

@@ -1,4 +1,4 @@
-# Visual Studio Code
+# Visual Studio Code (a.k.a. VS Code)
 
 <!--
 https://code.visualstudio.com/docs/remote/ssh
@@ -74,10 +74,26 @@ mkdir -p "$HOME/.config/Code/User"
 ln -s "$HOME/Library/Application Support/Code/User/settings.json" "$HOME/.config/Code/User/settings.json"
 ```
 
+## CLI
+
+### Installation
+
+Comes with application installation.
+
 ### Commands
 
 ```sh
 code -h
+```
+
+### Settings
+
+```sh
+# Locally
+cat ./.vscode/settings.json
+
+# Globally
+cat "$HOME/.config/Code/User/settings.json"
 ```
 
 ### Usage
@@ -97,17 +113,20 @@ code --install-extension [extension]
 
 # Disable
 code --disable-extension [extension]
+
+# Uninstall
+code --uninstall-extension [extension]
 ```
 
 ### Tips
 
-<!-- #### Settings
+#### Uninstall All Extensions
 
 ```sh
-cat << EOF > ./.vscode/settings.json
-
-EOF
-``` -->
+code --list-extensions | while read extension; do
+  code --uninstall-extension "$extension" --force
+done
+```
 
 #### Unsaved Files
 

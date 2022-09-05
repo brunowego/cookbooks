@@ -18,10 +18,10 @@ yarn add next-compose-plugins
 import withPlugins from 'next-compose-plugins'
 
 /**
- * @type {import('next').NextConfig}
+ * @type { import('next').NextConfig }
  */
 const nextConfig = {
-  reactStrictMode: true,
+  // ...
 }
 
 export default withPlugins([], nextConfig)

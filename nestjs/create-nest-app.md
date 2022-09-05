@@ -69,6 +69,7 @@ EOF
 #
 cat << EOF > ./tsconfig.json
 {
+  "\$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "module": "commonjs",
     "declaration": true,
@@ -97,6 +98,7 @@ EOF
 #
 cat << EOF > ./tsconfig.build.json
 {
+  "\$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.json",
   "exclude": ["./dist", "./node_modules", "./test", "./**/*spec.ts"]
 }

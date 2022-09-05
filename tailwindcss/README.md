@@ -3,7 +3,9 @@
 <!--
 https://twind.dev/
 https://github.com/MathiasGilson/tailwind-styled-component
+
 mui
+flowbite
 -->
 
 **Keywords:** CSS framework
@@ -65,24 +67,45 @@ https://appsignal.com/
 ### Commands
 
 ```sh
+# Using NPX
 npx tailwindcss -h
 ```
+
+### Usage
+
+**Tip:** Verify if exists parameter `"type": "module"` in `package.json`.
+
+```sh
+#
+npx tailwindcss init -fp
+
+#
+tailwindcss \
+  --input ./input.css \
+  --output ./output.css \
+  --watch
+```
+
+## Library
 
 ### Installation
 
 ```sh
 # Using NPM
-npm install @tailwindcss/jit tailwindcss postcss autoprefixer --save-dev
+npm install @types/tailwindcss tailwindcss postcss autoprefixer --save-dev
 
 # Using Yarn
-yarn add @tailwindcss/jit tailwindcss postcss autoprefixer --dev
+yarn add @types/tailwindcss tailwindcss postcss autoprefixer --dev
 ```
 
 ### Bootstrap
 
-**Refer:** `./postcss.config.js`
+**Refer:** `./postcss.config.cjs`
 
-```js
+```cjs
+/**
+ * @type { import('prettier').Options }
+ */
 const postcssConfig = {
   plugins: {
     tailwindcss: {},
@@ -93,38 +116,13 @@ const postcssConfig = {
 module.exports = postcssConfig
 ```
 
-<!-- #
-mv ./postcss.config.js ./postcss.config.mjs
-
-#
-cat << EOF > ./postcss.config.mjs
-import tailwind from 'tailwindcss'
-import tailwindConfig from './tailwind.config.mjs'
-import autoprefixer from 'autoprefixer'
-
-const postcssConfig = {
-  plugins: [tailwind(tailwindConfig), autoprefixer],
-}
-
-export default postcssConfig
-EOF -->
-
-```sh
-#
-npx tailwindcss init
-
-#
-mv ./tailwind.config.js ./tailwind.config.cjs
-```
-
 **Refer:** `./tailwind.config.cjs`
 
 ```cjs
 /**
- * @type {import('tailwindcss/tailwind-config').TailwindConfig}
+ * @type { import('tailwindcss').Config }
  */
 const tailwindConfig = {
-  mode: 'jit',
   content: ['./src/components/**/*.{ts,tsx}', './src/pages/**/*.{ts,tsx}'],
   theme: {
     extend: {},
@@ -142,13 +140,41 @@ module.exports = tailwindConfig
 
 ```css
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind components; */
+/* @tailwind utilities; */
 ```
 
 ### Extend With
 
-#### Eslint
+#### Just-in-Time ModeTailwind
+
+**Docs:** [Just-in-Time Mode](https://v2.tailwindcss.com/docs/just-in-time-mode)
+
+```sh
+# Using NPM
+npm install @tailwindcss/jit --save-dev
+
+# Using Yarn
+yarn add @tailwindcss/jit --dev
+```
+
+**Refer:** `./tailwind.config.cjs`
+
+```cjs
+/**
+ * @type { import('tailwindcss').Config }
+ */
+const tailwindConfig = {
+  mode: 'jit',
+  // ...
+}
+
+module.exports = tailwindConfig
+```
+
+#### ESLint
+
+**Note:** Lint for `className` in TSX files.
 
 ```sh
 # Using NPM
@@ -162,7 +188,7 @@ yarn add eslint-plugin-tailwindcss --dev
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   extends: [
@@ -180,6 +206,10 @@ module.exports = eslintRC
 
 #### Prettier
 
+**Note:** Formatter for `className` in TSX files and `@apply` in CSS files.
+
+- [Dependency](/prettier.md#library)
+
 ```sh
 # Using NPM
 npm install prettier-plugin-tailwindcss --save-dev
@@ -192,7 +222,7 @@ yarn add prettier-plugin-tailwindcss --dev
 
 ```cjs
 /**
- * @type {import('prettier').Options}
+ * @type { import('prettier').Options }
  */
 const prettierConfig = {
   // ...
@@ -203,33 +233,31 @@ const prettierConfig = {
 module.exports = prettierConfig
 ```
 
-### Usage
-
-```sh
-# Using NPM
-npm run dev
-
-# Using Yarn
-yarn dev
-```
-
 ### Tips
 
-#### Vercel Ignore
+<!-- #### Vercel Ignore
 
 **Docs:** [Ignored Files and Folders](https://vercel.com/docs/concepts/deployments/build-step#ignored-files-and-folders)
 
 ```sh
-echo '!/tailwind.config.cjs' >  ./.vercelignore
-```
+echo '!/tailwind.config.cjs' > ./.vercelignore
+``` -->
 
 #### Visual Studio Code
+
+- [Code Repository](https://github.com/tailwindlabs/tailwindcss-intellisense)
+
+**Features:** Autocomplete, Linting and Hover Preview.
 
 ```sh
 #
 code --install-extension bradlc.vscode-tailwindcss
 
+#
 jq '."recommendations" += ["bradlc.vscode-tailwindcss"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+
+#
+jq '."files.associations"."*.css" |= "tailwindcss"' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 ```
 
 <!--
@@ -243,6 +271,16 @@ jq '."tailwindCSS.includeLanguages".typescript |= "javascript"' "$PWD/.vscode/se
 
 jq '."tailwindCSS.includeLanguages".typescriptreact |= "javascript"' "$PWD/.vscode/settings.json" | \
   sponge "$PWD/.vscode/settings.json"
+-->
+
+<!--
+"css.validate": false,
+"stylelint.enable": true,
+// "editor.quickSuggestions": {
+//   "strings": true
+// },
+// "tailwindCSS.emmetCompletions": true,
+"tailwindCSS.experimental.configFile": "./apps/landing/tailwind.config.cjs"
 -->
 
 <!--
@@ -282,7 +320,7 @@ Classname 'text-primary-900' is not a Tailwind CSS class! eslint tailwindcss/no-
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   // ...
@@ -310,7 +348,7 @@ Invalid Tailwind CSS classnames order eslint tailwindcss/classnames-order
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   // ...

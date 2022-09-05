@@ -10,6 +10,10 @@
 - Media Training
 - Product/Market Fit (a.k.a Product-Market Fit)
 
+## Phenomenons
+
+- Streisand Effect
+
 ## Sponsorship
 
 1. Global celebrities with global brands

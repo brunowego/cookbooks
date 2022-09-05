@@ -23,7 +23,7 @@ yarn add @types/eslint eslint --dev
 ```json
 {
   "scripts": {
-    "lint": "eslint ./"
+    "lint": "eslint ./*.cjs"
   }
 }
 ```
@@ -32,7 +32,7 @@ yarn add @types/eslint eslint --dev
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   extends: [
@@ -70,6 +70,15 @@ jq '."recommendations" += ["dbaeumer.vscode-eslint"]' "$PWD/.vscode/extensions.j
 
 ### Issues
 
+<!-- #### Missing Matching Pattern
+
+```log
+No files matching the pattern "./" were found.
+Please check for typing mistakes in the pattern.
+```
+
+TODO -->
+
 #### Missing Node Environment
 
 ```log
@@ -80,7 +89,7 @@ jq '."recommendations" += ["dbaeumer.vscode-eslint"]' "$PWD/.vscode/extensions.j
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   env: {
@@ -101,7 +110,7 @@ Parsing error: The keyword 'const' is reserved eslint
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   env: {
@@ -122,7 +131,7 @@ Parsing error: 'import' and 'export' may appear only with 'sourceType: module' e
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   parserOptions: {

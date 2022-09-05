@@ -34,6 +34,8 @@ https://www.theblockcrypto.com/data/crypto-markets/futures
 O.I. > 2,6m
 
 TF 2W / Date Range / 5 bars, 70d
+
+https://bitcoinmonthlyreturn.com/
 -->
 
 ## Links
@@ -57,6 +59,11 @@ TF 2W / Date Range / 5 bars, 70d
 <!--
 https://www.coingecko.com/en/public-companies-bitcoin
 -->
+
+### Historical Monthly Returns
+
+- [Coinglass / Bitcoin daily returns(%)](https://coinglass.com/today) **Tip:** Filter: Type -> Monthly
+- [CurrencyRush / Bitcoin (BTC) Historical Monthly Returns](https://currencyrush.com/monthly-data/bitcoin)
 
 ### Google Trends
 
@@ -127,24 +134,11 @@ Hash Ribbons
 
 - Bitcoin Production Cost **Config:** INDEX:BTCUSD, Interval 1D, Logarithmic Scale.
 
-## Indices
-
-- Bitcoin Dominance (BTC.D)
-- U.S. 20 Year Treasury (US20Y)
-- US Dollar Index (DXY or USDX (limited)) **Config:** Logarithmic Scale.
-
 ## Research
 
 - Google Trends / Worldwide / Bitcoin
 
 ## Tips
-
-### Bitcoin Dominance
-
-Watch the dominance `BTC.D`:
-
-- 🔽 If it's going down, better to have alt-coin
-- 🔼 If it's going up, better to have bitcoin
 
 ### Fed Cycles and Bitcoin Performance
 

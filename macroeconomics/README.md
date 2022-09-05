@@ -6,12 +6,20 @@
 - Unemployment
 - Inflation
 
+## Cycles
+
+- Monetary Cycles: Quantitative Easing (QE) / Quantitative Tightening (QT)
+- Financial Cycles
+- Business Cycle
+
 ## Terms
 
 - Employment Cost Index (ECI)
+- Full Employment | Less than 5%
 - Gross Domestic Product (GDP)
 - Human Development Index (HDI)
 - Laffer Curve
+- New World Order (1945)
 - Three-World Model (Nobility, Clergy, Servants)
 - Wage-Price Spiral
 
@@ -20,7 +28,21 @@
 - [Index of Economic Freedom](https://heritage.org/index/heatmap)
 - [World Happiness Index](https://countryeconomy.com/demography/world-happiness-index)
 
+## Types of Crisis
+
+- Financial
+- Fiscal
+- Currency
+
+## Global Crisis
+
+- The Great Depression of 1929–39
+- The OPEC Oil Price Shock of 1973
+- The Asian Crisis of 1997
+- The Financial Crisis of 2007–08
+
 <!--
 https://worldpopulationreview.com/country-rankings/richest-countries-in-the-world
 https://www.gfmag.com/global-data/economic-data/richest-countries-in-the-world
+https://www.bls.gov/charts/job-openings-and-labor-turnover/unemp-per-job-opening.htm
 -->

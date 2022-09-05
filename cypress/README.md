@@ -91,7 +91,7 @@ export {}
 
 ```json
 {
-  // "extends": "../tsconfig.base",
+  // ...
   "compilerOptions": {
     "target": "es5",
     "lib": ["es5", "dom"],

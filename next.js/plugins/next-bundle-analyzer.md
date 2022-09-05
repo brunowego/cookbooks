@@ -32,10 +32,10 @@ const withBundleAnalyzer = nextBundleAnalyzer({
 })
 
 /**
- * @type {import('next').NextConfig}
+ * @type { import('next').NextConfig }
  */
 const nextConfig = {
-  reactStrictMode: true,
+  // ...
 }
 
 export default withBundleAnalyzer(nextConfig)
@@ -51,7 +51,7 @@ ANALYZE=true npm run build
 {
   "scripts": {
     // ...
-    "build:analyze": "cross-env ANALYZE='true' npm run build",
+    "build:analyze": "cross-env ANALYZE='true' npm run build"
   }
 }
 ```

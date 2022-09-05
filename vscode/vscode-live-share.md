@@ -13,5 +13,6 @@ https://code.visualstudio.com/learn/collaboration/live-share
 ### Installation
 
 ```sh
+#
 code --install-extension MS-vsliveshare.vsliveshare-pack
 ```

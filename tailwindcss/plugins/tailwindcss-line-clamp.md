@@ -20,7 +20,7 @@ yarn add @tailwindcss/line-clamp --dev
 
 ```cjs
 /**
- * @type {import('tailwindcss/tailwind-config').TailwindConfig}
+ * @type { import('tailwindcss').Config }
  */
 const tailwindConfig = {
   // ...

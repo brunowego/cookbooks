@@ -2,6 +2,7 @@
 
 <!--
 https://github.com/chrsep/chrsep.dev
+https://github.com/triarc/fairpizza
 -->
 
 ## Links

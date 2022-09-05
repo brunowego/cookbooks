@@ -16,7 +16,7 @@
 ```mjs
 const ContentSecurityPolicy = `
   default-src 'self';
-`;
+`
 
 const securityHeaders = [
   {
@@ -46,10 +46,10 @@ const securityHeaders = [
 ]
 
 /**
- * @type {import('next').NextConfig}
+ * @type { import('next').NextConfig }
  */
 const nextConfig = {
-  reactStrictMode: true,
+  // ...
   headers: async () => [
     {
       source: '/:path*',

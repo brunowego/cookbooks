@@ -60,7 +60,13 @@ query Projects {
 **Refer:** `./src/lib/urql.ts`
 
 ```ts
-import { ssrExchange, createClient, dedupExchange, cacheExchange, fetchExchange } from 'urql'
+import {
+  ssrExchange,
+  createClient,
+  dedupExchange,
+  cacheExchange,
+  fetchExchange,
+} from 'urql'
 import { GRAPHCMS_URL } from '@/constants'
 
 const isServerSide = typeof window === 'undefined'
@@ -188,7 +194,7 @@ export type Project = {
 ```json
 {
   "scripts": {
-    "codegen": "graphql-codegen --config ./codegen.yml -r dotenv/config",
+    "codegen": "graphql-codegen --config ./codegen.yml -r dotenv/config"
     // ...
   }
 }
@@ -203,10 +209,10 @@ echo 'NEXT_PUBLIC_GRAPHCMS_URL=' >> ./.env
 
 ```mjs
 /**
- * @type {import('next').NextConfig}
+ * @type { import('next').NextConfig }
  */
 const nextConfig = {
-  reactStrictMode: true,
+  // ...
   images: {
     domains: ['media.graphcms.com'],
   },
@@ -257,6 +263,3 @@ Reason: `undefined` cannot be serialized as JSON. Please use `null` or omit this
 ```
 
 Enable [Public Content API](/graphcms.md#public-content-api)
-
-
-

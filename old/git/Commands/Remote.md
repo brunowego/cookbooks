@@ -1,19 +1,22 @@
 # Remote
 
-## Show remote URL
+## Usage
 
 ```sh
+# Show remote URL
 git remote -v
-```
 
-## Set URL
-
-```sh
+# Set URL
 git remote set-url origin [repo]
+
+# Remove
+git remote rm origin
 ```
 
-## Remove
+## Tips
+
+### Show remote URL from each subfolder
 
 ```sh
-git remote rm origin
+ls -d1 ./* | xargs -I {} bash -c 'cd "{}" && git remote -v'
 ```

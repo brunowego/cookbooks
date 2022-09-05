@@ -3,6 +3,7 @@
 ## Installation
 
 ```sh
+#
 code --install-extension alefragnani.project-manager
 ```
 

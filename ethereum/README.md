@@ -32,8 +32,9 @@ https://snapshot.org
 ## Terms
 
 - [Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/evm/)
-- Giga-Wei (Gwei)
 - Ethereum Improvement Proposal (EIP)
+- Giga-Wei (Gwei)
+- Terminal Total Difficulty (TTD)
 
 ## Develop Environment
 

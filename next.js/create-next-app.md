@@ -68,8 +68,15 @@ mv ./{pages,styles} ./src
 cat << EOF >> ./.gitignore
 /.next
 /node_modules
+/next-env.d.ts
 EOF
 ```
+
+### Extend
+
+- [TSConfig](/next.js/extend/tsconfig.md)
+- [Next.js Config](/next.js/extend/config.md)
+- [ESLint](/next.js/extend/eslint.md)
 
 <!-- ### Components
 

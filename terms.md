@@ -38,7 +38,6 @@
 - Facebook, Amazon, Apple, Netflix e Google (FAANG)
 - Fear Of Missing Out (FOMO)
 - Five Ws (5WH)
-- For Your Information (FYI)
 - Free and Open-Source Software (FOSS)
 - Human-Friendly
 - Identity Provider (IdP)

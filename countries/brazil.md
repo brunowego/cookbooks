@@ -35,6 +35,7 @@ https://www.youtube.com/watch?v=Nk1LG5Fi9Uk
 ## Terms
 
 - Certificado de Recebíveis Imobiliários (CRI)
+- Diáspora Brasileira
 - Fundos Imobiliários (FII)
 - Índice Nacional de Preços ao Consumidor Amplo (IPCA)
 - Instituto Brasileiro de Opinião Pública e Estatística (IBOPE)

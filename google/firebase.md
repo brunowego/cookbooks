@@ -3,6 +3,8 @@
 <!--
 https://www.youtube.com/watch?v=vUe91uOx7R0
 https://linkedin.com/learning/firebase-essential-training/firebase-stop-reinventing-the-wheel
+
+https://github.com/manifoldmarkets/manifold
 https://github.com/SmartMoveSystems/firebase-keycloak-importer
 https://github.com/SmartMoveSystems/keycloak-firebase-scrypt
 -->
@@ -10,6 +12,9 @@ https://github.com/SmartMoveSystems/keycloak-firebase-scrypt
 ## Links
 
 - [Main Website](https://firebase.google.com/)
+
+## Docs
+
 - [CLI reference / auth:import e auth:export](https://firebase.google.com/docs/cli/auth)
 
 ## CLI
@@ -28,12 +33,19 @@ brew install firebase-cli
 firebase -h
 ```
 
-### Usage
+### Bootstrap
 
 ```sh
 #
 firebase login
 
+#
+firebase use [project-name]
+```
+
+### Usage
+
+```sh
 #
 firebase auth:export \
   --project [name] \

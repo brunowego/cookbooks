@@ -79,6 +79,7 @@ n
 
 # Remove
 n rm [version]
+# or, all
 n ls | xargs n rm
 
 # Remove versions except current

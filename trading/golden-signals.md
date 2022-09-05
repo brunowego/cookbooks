@@ -15,6 +15,14 @@ https://companiesmarketcap.com/assets-by-market-cap/
 https://8marketcap.com/#
 -->
 
+## General
+
+**Weekend:** Closes
+
+| Symbol             | Open        | Close       |
+| ------------------ | ----------- | ----------- |
+| `BMFBOVESPA:DOL1!` | 09:00 UTC-3 | 17:00 UTC-3 |
+
 ## Currency Index 🌟
 
 **Weekend:** Closes
@@ -89,5 +97,5 @@ UTC 0
 <!-- ## Commodities
 
 | Symbol      | Open | Pre-Open |
-| ----------- | ---- | -------- |
+| ----------- | ---- |
 | `` |      |          | -->

@@ -19,10 +19,10 @@
 
 ```sh
 # Using NPM
-npm install prettier --save-dev
+npm install @types/prettier prettier --save-dev
 
 # Using Yarn
-yarn add prettier --dev
+yarn add @types/prettier prettier --dev
 ```
 
 ### Configuration
@@ -44,7 +44,7 @@ EOF
 
 ```cjs
 /**
- * @type {import('prettier').Options}
+ * @type { import('prettier').Options }
  */
 const prettierConfig = {
   semi: false,
@@ -72,7 +72,7 @@ yarn add eslint-config-prettier eslint-plugin-prettier --dev
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   extends: [
@@ -97,6 +97,7 @@ code --install-extension esbenp.prettier-vscode
 #
 jq '."editor.formatOnSave" |= true' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 
+#
 jq '."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 
 #

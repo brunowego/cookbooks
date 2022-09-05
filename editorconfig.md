@@ -32,7 +32,11 @@ EOF
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension EditorConfig.EditorConfig
+
+#
+jq '."recommendations" += ["EditorConfig.EditorConfig"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
 ```
 
 #### Edit Commit Messages

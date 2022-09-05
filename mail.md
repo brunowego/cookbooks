@@ -28,6 +28,10 @@ Uphold
 - [MailCatcher](/mailcatcher.md)
 - [MailHog](/mailhog.md)
 
+## Terms
+
+- For Your Information (FYI)
+
 ## CLI
 
 ### Commands

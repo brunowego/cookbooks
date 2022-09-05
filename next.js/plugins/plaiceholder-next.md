@@ -23,10 +23,10 @@ yarn add plaiceholder @plaiceholder/next --dev
 import withPlaiceholder from '@plaiceholder/next'
 
 /**
- * @type {import('next').NextConfig}
+ * @type { import('next').NextConfig }
  */
 const nextConfig = {
-  reactStrictMode: true,
+  // ...
 }
 
 export default withPlaiceholder(nextConfig)

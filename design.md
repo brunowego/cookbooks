@@ -1,6 +1,12 @@
 # Design
 
 <!--
+https://raycast.com/
+https://123d.one/
+
+https://liveblocks.io/
+https://liveblocks.io/docs
+
 https://cosmos.network/
 https://scale.com/
 https://appandflow.com/

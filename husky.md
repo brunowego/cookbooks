@@ -12,12 +12,6 @@
 
 ## CLI
 
-### Commands
-
-```sh
-npx husky
-```
-
 ### Installation
 
 ```sh
@@ -28,6 +22,16 @@ npm install husky --save-dev
 yarn add husky --dev
 ```
 
+### Commands
+
+```sh
+# Using NPX
+npx husky
+
+# Using Local
+husky
+```
+
 ### Bootstrap
 
 **Refer:** `./package.json`
@@ -35,7 +39,7 @@ yarn add husky --dev
 ```json
 {
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky install"
     // ...
   }
 }
@@ -46,7 +50,12 @@ yarn add husky --dev
 npm run prepare
 ```
 
-### Usage
+### Extend
+
+- [lint-staged](/lint-staged.md#using-with-husky)
+- [commitlint](/conventional-changelog/commitlint.md#using-with-husky)
+
+<!-- ### Configuration
 
 ```sh
 #
@@ -54,4 +63,4 @@ npx husky add ./.husky/pre-commit 'npm test'
 
 #
 npx husky install
-```
+``` -->

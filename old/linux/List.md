@@ -1,25 +1,20 @@
 # List
 
-## Basic usage
+## Usage
 
 ```sh
+# Basic usage
 ls
-```
 
-## Include entries
-
-```sh
+# Include entries
 ls -la
-```
 
-## Human readable
-
-```sh
+# Human readable
 ls -lh
-```
 
-## Almost all
-
-```sh
+# Almost all
 ls -A1
+
+# Only folders
+ls -d1 ./*
 ```

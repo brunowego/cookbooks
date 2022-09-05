@@ -1,5 +1,11 @@
 # Coinalyze
 
+## Sentiment Analysis
+
+- [Open Interest](https://coinalyze.net/bitcoin/open-interest/)
+- [Funding Rate](https://coinalyze.net/bitcoin/funding-rate/)
+- [Liquidations](https://coinalyze.net/bitcoin/liquidations/)
+
 ## Configuration
 
 ### Price Chart Live

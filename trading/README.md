@@ -43,8 +43,10 @@ Sinal: Candle/Volume
 
 ## Personalities
 
-- Charles Ponzi
 - Berne Madoff
+- Charles Ponzi
+- Robert Kiyosaki
+- Warren Buffett
 
 ## Companies
 

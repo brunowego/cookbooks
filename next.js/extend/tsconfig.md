@@ -6,6 +6,7 @@
 
 ```json
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -29,6 +30,7 @@
 
 ```json
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.base",
   "compilerOptions": {
     "baseUrl": "./",

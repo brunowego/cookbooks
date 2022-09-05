@@ -17,13 +17,14 @@ yarn add @giraphql/plugin-prisma
 
 ```json
 {
+  // ...
   "compilerOptions": {
     // ...
     "paths": {
-      "@/db/*": ["./db/*"],
+      "@/db/*": ["./db/*"]
       // ...
     }
-  },
+  }
   // ...
 }
 ```

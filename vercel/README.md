@@ -13,39 +13,6 @@ https://github.com/leerob/esm
 https://epic-course-platform.vercel.app/
 -->
 
-<!--
-"cleanUrls": true,
-"trailingSlash": false,
-"headers": [
-  {
-    "source": "/(.*)",
-    "headers": [
-      {
-        "key": "Cache-Control",
-        "value": "public, max-age=864000"
-      }
-    ]
-  }
-],
--->
-
-<!--
-    {
-      "src": "/(.+)(woff|woff2)",
-      "headers": { "cache-control": "public, max-age=31536000, immutable" }
-    },
--->
-
-<!--
-    {
-      "src": "/(.+)(ico|jpg|gif|png|svg|webp|css|js)",
-      "headers": { "cache-control": "public, max-age=604800, immutable" }
-    },
-
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/public/404.html" }
--->
-
 ## Links
 
 - [Code Repository](https://github.com/vercel/vercel)
@@ -107,10 +74,10 @@ brew install vercel-cli
 ### Commands
 
 ```sh
-# Without install
+# With NPX
 npx vercel help
 
-# Installed
+# With Local
 vercel help
 ```
 
@@ -271,3 +238,36 @@ warn  - No ESLint configuration detected. Run next lint to begin setup
 ```sh
 echo '!/.eslintrc.cjs' >> ./.vercelignore
 ```
+
+<!--
+"cleanUrls": true,
+"trailingSlash": false,
+"headers": [
+  {
+    "source": "/(.*)",
+    "headers": [
+      {
+        "key": "Cache-Control",
+        "value": "public, max-age=864000"
+      }
+    ]
+  }
+],
+-->
+
+<!--
+    {
+      "src": "/(.+)(woff|woff2)",
+      "headers": { "cache-control": "public, max-age=31536000, immutable" }
+    },
+-->
+
+<!--
+    {
+      "src": "/(.+)(ico|jpg|gif|png|svg|webp|css|js)",
+      "headers": { "cache-control": "public, max-age=604800, immutable" }
+    },
+
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/public/404.html" }
+-->

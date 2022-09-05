@@ -13,6 +13,10 @@ Financial Accounting Standards Board (FASB)
 Commodity Futures Trading Commission (CFTC)
 -->
 
+## Newspaper
+
+TODO
+
 ## Researches
 
 - [How (un)popular is Joe Biden?](https://projects.fivethirtyeight.com/biden-approval-rating/)
@@ -21,6 +25,7 @@ Commodity Futures Trading Commission (CFTC)
 
 | Event                                   | Volatility |
 | --------------------------------------- | ---------- |
+| ADP Nonfarm Employment Change           | Medium     |
 | Building Permits                        | Neutral    |
 | CB Consumer Confidence                  | High       |
 | Consumer Price Index (CPI)              | High       |
@@ -29,18 +34,25 @@ Commodity Futures Trading Commission (CFTC)
 | Fed Interest Rate Decision              | High       |
 | Fed Speaks                              |            |
 | Gross Domestic Product (GDP)            | High       |
-| Initial Jobless Claims                  |            |
+| Initial Jobless Claims                  | Neutral    |
+| ISM Manufacturing PMI                   |            |
 | JOLTs Job Openings                      | High       |
 | New Home Sales                          | Neutral    |
+| Nonfarm Payrolls                        |            |
 | Personal Consumption Expenditures (PCE) | High       |
 | Producer Price Index (PPI)              |            |
 | Purchasing Managers Index (PMI)         | Neutral    |
-| ADP Nonfarm Employment Change           |            |
+| Unemployment Rate                       |            |
 
 ## Terms
 
 - Automatic Data Processing (ADP)
 - Conference Board (CB)
+- Institute of Supply Management (ISM)
 - Job Openings and Labor Turnover Survey (JOLTs)
 - Quarter-on-Quarter or Quarter-over-Quarter (QoQ)
 - Year-over-Year (YoY)
+
+<!--
+US Pending Home Sales
+-->

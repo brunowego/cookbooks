@@ -23,8 +23,11 @@ yarn add lint-staged --dev
 ```sh
 #
 cat << EOF > ./.lintstagedrc.mjs
+/**
+ * @type { Record<string, string> }
+ */
 const lintStagedRC = {
-  '*.{mjs,ts,tsx}': 'eslint --fix --max-warnings 0',
+  '*.{cjs,mjs,ts,tsx}': 'eslint --fix --max-warnings 0',
   '*.{css,json,md,mjs,tsx}': 'prettier --write',
 }
 
@@ -34,6 +37,18 @@ EOF
 #
 echo '!/.lintstagedrc.mjs' >> ./.eslintignore
 ```
+
+<!--
+/**
+ * @type { Record<string, (filenames: string[]) => string[]> }
+ */
+const lintStagedRC = {
+  '*.{cjs,mjs}': (filenames) => [`eslint --fix --max-warnings 0 ${filenames.join(' ')}`],
+  '*.{json,md,mjs}': () => ['prettier --write'],
+}
+
+export default lintStagedRC
+-->
 
 ### Tips
 

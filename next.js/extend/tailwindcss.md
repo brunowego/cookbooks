@@ -1,14 +1,17 @@
 # Next.js + Tailwind CSS
 
-## Links
+## Dependencies
 
-- [Tailwind CSS](/tailwindcss/README.md)
+- [Tailwind CSS](/tailwindcss/README.md#library)
 
-## Installation
+## Checklist
 
-```sh
-# Using NPM
-npm install tailwindcss @types/tailwindcss --save-dev
-# Using Yarn
-yarn add tailwindcss @types/tailwindcss --dev
-```
+- Install library
+- Configure it
+- Configure Editor
+  - PostCSS
+  - TailwindCSS
+
+<!--
+stylelint
+-->

@@ -87,6 +87,18 @@ npm get prefix
 
 ### Tips
 
+#### Add Type Module
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "type": "module"
+  // ...
+}
+```
+
 #### Visual Studio Code
 
 ##### Exclude from Files

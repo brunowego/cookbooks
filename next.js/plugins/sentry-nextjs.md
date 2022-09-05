@@ -45,10 +45,10 @@ import { withSentryConfig } from '@sentry/nextjs'
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'development'
 
 /**
- * @type {import('next').NextConfig}
+ * @type { import('next').NextConfig }
  */
 const nextConfig = {
-  reactStrictMode: true,
+  // ...
   sentry: {
     disableServerWebpackPlugin: IS_DEVELOPMENT,
     disableClientWebpackPlugin: IS_DEVELOPMENT,
@@ -141,7 +141,9 @@ ErrorPage.getInitialProps = async ({ res, err, asPath }: NextPageContext) => {
     return errorInitialProps
   }
 
-  Sentry.captureException(new Error(`_error.js getInitialProps missing data at path: ${asPath}`))
+  Sentry.captureException(
+    new Error(`_error.js getInitialProps missing data at path: ${asPath}`)
+  )
 
   await Sentry.flush(2000)
 

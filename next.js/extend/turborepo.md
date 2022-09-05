@@ -2,43 +2,47 @@
 
 ## Structure
 
+<!--
+mobile
+-->
+
 ```sh
 #
-mkdir -p {./apps/{assets,blog,console,docs,site,worker},./packages/{preset,tsconfig,ui}}
+mkdir -p {./apps/{api,app,assets,blog,bot,changelog,cms,console,docs,embed,landing,og,relay,worker},./packages/{preset,tsconfig,ui}}
 
 #
 rm -fR ./.next
 
 #
-mv ./src ./apps/site
-mv ./test ./apps/site
-mv ./.eslintrc.{cjs,js} ./apps/site
-mv ./{.env,.example.env} ./apps/site
-mv ./next* ./apps/site
-mv ./package.json ./apps/site
-mv ./playwright.config.ts ./apps/site
-mv ./postcss.config.js ./apps/site
-mv ./tailwind.config.{cjs,js} ./apps/site
-mv ./tsconfig.json ./apps/site
+mv ./src ./apps/landing
+mv ./test ./apps/landing
+mv ./.eslintrc.{cjs,js} ./apps/landing
+mv ./{.env,.example.env} ./apps/landing
+mv ./next* ./apps/landing
+mv ./package.json ./apps/landing
+mv ./playwright.config.ts ./apps/landing
+mv ./postcss.config.js ./apps/landing
+mv ./tailwind.config.{cjs,js} ./apps/landing
+mv ./tsconfig.json ./apps/landing
 ```
 
 ## Checklist
 
-- Move general dependencies and scripts from `./apps/site/package.json` to `./package.json`.
+- Move general `devDependencies` and `scripts` from `./apps/landing/package.json` to `./package.json`.
 
 ## Configuration
 
 ```sh
 #
 sed -i '/\/.next/d' ./.gitignore
-sed -i '1s;^;/.next\n;' ./apps/site/.gitignore
+sed -i '1s;^;/.next\n;' ./apps/landing/.gitignore
 
 #
-echo '/.turbo' >> ./apps/site/.gitignore
+echo '/.turbo' >> ./apps/landing/.gitignore
 
 #
 sed -i '/\/.env/d' ./.gitignore
-echo '/.env*' >> ./apps/site/.gitignore
+echo '/.env*' >> ./apps/landing/.gitignore
 ```
 
 **Refer:** `./package.json`
@@ -46,16 +50,13 @@ echo '/.env*' >> ./apps/site/.gitignore
 ```json
 {
   "private": true,
-  "workspaces": [
-    "./apps/*",
-    "./packages/*"
-  ],
+  "workspaces": ["./apps/*", "./packages/*"],
   "scripts": {
     "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "test": "turbo run test",
     "build": "turbo run build",
-    "start": "turbo run start"
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
   }
 }
 ```
@@ -65,8 +66,7 @@ echo '/.env*' >> ./apps/site/.gitignore
 ```json
 {
   "$schema": "https://turborepo.org/schema.json",
-  "baseBranch": "origin/main",
-  // "globalDependencies": ["./apps/site/.env"],
+  // "globalDependencies": ["./apps/landing/.env"],
   "pipeline": {
     "dev": {
       "cache": false
@@ -88,34 +88,22 @@ echo '/.env*' >> ./apps/site/.gitignore
 }
 ```
 
-**Refer:** `./.eslintrc.cjs`
+<!-- **Refer:** `./.eslintrc.cjs`
 
 ```cjs
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   extends: 'eslint:recommended',
   parserOptions: {
     sourceType: 'module',
   },
-  env: {
-    es6: true,
-  },
-  rules: {
-    'comma-dangle': ['warn', 'always-multiline'],
-    semi: ['warn', 'never'],
-    'no-console': [
-      'warn',
-      {
-        allow: ['warn', 'error'],
-      },
-    ],
-  },
+  // ...
 }
 
 module.exports = eslintRC
-```
+``` -->
 
 ## Installation
 

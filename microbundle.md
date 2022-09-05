@@ -4,31 +4,21 @@
 
 ### Installation
 
-#### Yarn
-
 ```sh
-# Globally
-yarn global add microbundle
-
-# Dependency
-yarn add microbundle -D
-```
-
-#### NPM
-
-```sh
+# Using NPM
 npm install microbundle -g
-```
 
-#### NPX
-
-```sh
-npx microbundle -h
+# Using Yarn 1.x
+yarn global add microbundle
 ```
 
 ### Commands
 
 ```sh
+# Using NPX
+npx microbundle -h
+
+# Using Local
 microbundle -h
 ```
 

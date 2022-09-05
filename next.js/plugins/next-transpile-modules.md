@@ -12,10 +12,10 @@ import nextTranspileModules from 'next-transpile-modules'
 const withTM = nextTranspileModules(['@acme/ui'])
 
 /**
- * @type {import('next').NextConfig}
+ * @type { import('next').NextConfig }
  */
 const nextConfig = {
-  reactStrictMode: true,
+  // ...
 }
 
 export default withTM(nextConfig)

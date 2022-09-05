@@ -3,8 +3,6 @@
 <!--
 https://github.com/t3-oss/create-t3-app
 
-https://showwcase.com/
-
 const nextConfig = {
   swcMinify: true,
   i18n: { locales: ["ja"], defaultLocale: "ja" },
@@ -12,8 +10,6 @@ const nextConfig = {
     formats: ["image/avif", "image/webp"],
   },
 }
-
-NEXT_PUBLIC_MY_ENV
 -->
 
 ## Links
@@ -71,6 +67,10 @@ npx next telemetry status
 npx next telemetry disable
 ```
 
+### Bootstrap
+
+- [Create Next App](/next.js/create-next-app.md)
+
 ### Usage
 
 ```sh
@@ -96,10 +96,10 @@ npx next buld
 
 ```mjs
 /**
- * @type {import('next').NextConfig}
+ * @type { import('next').NextConfig }
  */
 const nextConfig = {
-  reactStrictMode: true,
+  // ...
   webpack: (config) => {
     config.infrastructureLogging = {
       debug: /PackFileCache/,
@@ -118,10 +118,10 @@ export default nextConfig
 
 ```mjs
 /**
- * @type {import('next').NextConfig}
+ * @type { import('next').NextConfig }
  */
 const nextConfig = {
-  reactStrictMode: true,
+  // ...
   webpack: (config) => {
     config.infrastructureLogging = {
       level: 'error',
@@ -154,25 +154,6 @@ Install [cross-env](/cross-env.md)
 ```sh
 #
 sed -i "s/\(next dev\)/cross-env NODE_OPTIONS='--inspect' \1/g" ./package.json
-```
-
-#### Use EcmaScript Modules
-
-```sh
-#
-mv ./next.config.js ./next.config.mjs
-
-#
-cat << EOF > ./next.config.mjs
-/**
- * @type {import('next').NextConfig}
- */
-const nextConfig = {
-  reactStrictMode: true,
-};
-
-export default nextConfig;
-EOF
 ```
 
 #### Next.js Export

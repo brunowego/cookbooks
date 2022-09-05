@@ -43,24 +43,19 @@ sudo yum -y install yarn
 choco install -y yarn
 ```
 
-### Configuration
-
-```sh
-#
-yarn config set --home enableTelemetry 0
-```
-
 ### Bootstrap
 
 ```sh
 #
-npx yarn init -y; npx yarn
+yarn init -y; yarn
 
 #
-npx yarn init -yp; npx yarn
+yarn init -yp; yarn
 ```
 
 ### Configuration
+
+**Warning:** Before continue check the currently version, running `yarn --version`.
 
 ```sh
 # Git ignore
@@ -75,15 +70,15 @@ echo '/yarn-error.log' >> ~/.gitignore_global
 
 ```sh
 #
-npx yarn config
+yarn config list
 
 # Save Prefix
-npx yarn config set save-prefix '~'
+yarn config set save-prefix '~'
 
 # License
-npx yarn config set init-license 'MIT'
-npx yarn config set init-license 'UNLICENSED'
-npx yarn config set init-license 'COPYRIGHT'
+yarn config set init-license 'MIT'
+yarn config set init-license 'UNLICENSED'
+yarn config set init-license 'COPYRIGHT'
 ```
 
 #### For Version >= 2.x
@@ -93,33 +88,68 @@ npx yarn config set init-license 'COPYRIGHT'
 **Tips:** Configurations are store ind `~/.yarnrc.yml`.
 
 ```sh
+#
+yarn config
+
 # Save Prefix
-npx yarn config set defaultSemverRangePrefix '~'
+yarn config set --home defaultSemverRangePrefix '~'
+
+# Telemetry
+yarn config set --home enableTelemetry 0
+
+# License
+# TODO
 ```
 
 ### Commands
 
 ```sh
+# Using NPX
 npx yarn -h
+
+# Using Local
+yarn -h
 ```
 
 ### Usage
 
 ```sh
 #
-npx yarn create [app]
+yarn create [app]
 
 #
-npx yarn pack
+yarn pack
+
+# Using Yarn 1.x
+yarn global bin # show bin path
+yarn global list # show globally installed packages
+
+# Using Yarn >= 2.x
+# TODO
 
 #
-npx yarn global bin
-
-#
-npx yarn upgrade --latest
+yarn upgrade --latest
 ```
 
+<!--
+yarn --cwd `yarn global dir` list
+
+yarn info --recursive --dependents
+-->
+
 ### Tips
+
+#### Add Type Module
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "type": "module"
+  // ...
+}
+```
 
 #### Visual Studio Code
 
@@ -166,6 +196,20 @@ rm ~/.zcompdump*
 
 ### Issues
 
+#### Invalid Checksum
+
+```log
+➤ YN0018: │ gluegun@https://github.com/edgeandnode/gluegun.git#commit=b34b9003d7bf556836da41b57ef36eb21570620a: The remote archive doesn't match the expected checksum
+```
+
+```sh
+#
+yarn cache clean --all
+
+#
+YARN_CHECKSUM_BEHAVIOR=update yarn install
+```
+
 #### TBD
 
 ```log
@@ -175,6 +219,7 @@ rm ~/.zcompdump*
 ```
 
 ```sh
+#
 yarn explain peer-requirements
 yarn explain peer-requirements [hash]
 ```

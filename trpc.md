@@ -9,6 +9,8 @@ https://dev.to/franciscomendes10866/build-a-full-stack-app-with-nextjs-tailwind-
 https://www.brockherion.dev/blog/posts/stop-building-rest-apis-for-your-next-apps/
 https://www.learnwithjason.dev/let-s-learn-trpc
 
+https://github.com/maxs-rose/secrets
+
 Zod
 
 https://github.com/sachinraja/trpc-playground

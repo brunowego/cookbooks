@@ -1,37 +1,46 @@
 # ts-node
 
-<!--
-tsx
--->
-
 ## Links
 
 - [Code Repository](https://github.com/TypeStrong/ts-node)
 - [Main Website](https://typestrong.org/ts-node/)
+
+## Alternative
+
+- [TypeScript Execute (tsx)](/tsx.md)
 
 ## Library
 
 ### Installation
 
 ```sh
+# Using NPM
+npm install ts-node --save-dev
+
 # Using Yarn
 yarn add ts-node --dev
 ```
 
 ## CLI
 
+### Commands
+
+```sh
+# Using Yarn DLX
+yarn dlx ts-node -h
+
+# Using Local
+ts-node -h
+```
+
 ### Usage
 
 ```sh
 #
-npx ts-node
-yarn dlx ts-node
+ts-node --showConfig # --files
 
 #
-yarn dlx ts-node --showConfig # --files
-
-#
-yarn dlx ts-node ./index.ts
+ts-node ./index.ts
 ```
 
 ### Tips
@@ -55,5 +64,5 @@ yarn dlx ts-node ./index.ts
 ```
 
 ```sh
-yarn dlx ts-node --showConfig
+ts-node --showConfig
 ```

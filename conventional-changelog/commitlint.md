@@ -30,7 +30,7 @@ yarn add \
 
 ```cjs
 /**
- * @type {import("@commitlint/types").UserConfig }
+ * @type { import("@commitlint/types").UserConfig }
  */
 const commitlintRC = {
   extends: ['@commitlint/config-conventional'],
@@ -53,10 +53,22 @@ yarn husky add ./.husky/commit-msg 'yarn commitlint --edit "$1"'
 yarn husky install
 ```
 
+### Issues
+
+#### Missing Staged `.eslintignore`
+
+```log
+/path/to/.commitlintrc.cjs
+  0:0  warning  File ignored by default.  Use a negated ignore pattern (like "--ignore-pattern '!<relative/path/to/filename>'") to override
+```
+
+Add updated `.eslintignore` to staged files.
+
 ## CLI
 
 ### Commands
 
 ```sh
+# Using NPX
 npx @commitlint/cli -h
 ```

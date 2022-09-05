@@ -46,12 +46,17 @@ export default AppDocument
 
 ```mjs
 /**
- * @type {import('next').NextConfig}
+ * @type { import('next').NextConfig }
  */
 const nextConfig = {
-  reactStrictMode: true,
+  // ...
   rewrites: async () => {
-    return [{ source: '/favicon.ico', destination: 'https://example.com/favicon.ico' }]
+    return [
+      {
+        source: '/favicon.ico',
+        destination: 'https://example.com/favicon.ico',
+      },
+    ]
   },
 }
 

@@ -20,11 +20,11 @@ yarn add @tailwindcss/aspect-ratio
 
 ```cjs
 /**
- * @type {import('tailwindcss/tailwind-config').TailwindConfig}
+ * @type { import('tailwindcss').Config }
  */
 const tailwindConfig = {
   // ...
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 }
 
 module.exports = tailwindConfig

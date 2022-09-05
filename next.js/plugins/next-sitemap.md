@@ -20,7 +20,7 @@ yarn add next-sitemap --dev
 
 ```ts
 /**
- * @type {import('next-sitemap').IConfig}
+ * @type { import('next-sitemap').IConfig }
  */
 const NextSitemapConfig = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
@@ -38,7 +38,7 @@ module.exports = NextSitemapConfig
     // ...
     // "build": "next build && npm build:sitemap",
     "build": "next build && yarn build:sitemap",
-    "build:sitemap": "next-sitemap --config ./next-sitemap.config.cjs",
+    "build:sitemap": "next-sitemap --config ./next-sitemap.config.cjs"
   }
 }
 ```

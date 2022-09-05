@@ -58,3 +58,17 @@ pnpm run --parallel -r build
 #
 pnpx [command]
 ```
+
+### Tips
+
+#### Add Type Module
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "type": "module"
+  // ...
+}
+```

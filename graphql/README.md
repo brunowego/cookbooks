@@ -81,7 +81,7 @@ yarn add eslint-plugin-graphql --dev
 
 ```ts
 /**
- * @type {import('@types/eslint').Linter.Config}
+ * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
   // ...

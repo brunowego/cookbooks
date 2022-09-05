@@ -41,4 +41,4 @@ type(category): description [flags]
 - config
 - web-server
 - proxy
-- etc.
+- etc

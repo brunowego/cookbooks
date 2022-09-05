@@ -23,7 +23,7 @@ Port 1337
 # Using NPM
 npm install @strapi/strapi -g
 
-# Using Yarn
+# Using Yarn 1.x
 yarn global add @strapi/strapi
 ```
 
