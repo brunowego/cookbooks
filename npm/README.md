@@ -104,15 +104,15 @@ npm get prefix
 ##### Exclude from Files
 
 ```sh
-jq '."files.exclude"."./**/node_modules" |= true' "$PWD/.vscode/settings.json" | \
-  sponge "$PWD/.vscode/settings.json"
+jq '."files.exclude"."./**/node_modules" |= true' "$PWD"/.vscode/settings.json | \
+  sponge "$PWD"/.vscode/settings.json
 ```
 
 ##### Exclude from Search
 
 ```sh
-jq '."search.exclude"."**/node_modules" |= true' "$PWD/.vscode/settings.json" | \
-  sponge "$PWD/.vscode/settings.json"
+jq '."search.exclude"."**/node_modules" |= true' "$PWD"/.vscode/settings.json | \
+  sponge "$PWD"/.vscode/settings.json
 ```
 
 #### Inherit Node Environment

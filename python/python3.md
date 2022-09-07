@@ -303,8 +303,8 @@ code --install-extension ms-python.vscode-pylance
 jq '."recommendations" += ["ms-python.vscode-pylance"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
 
 #
-jq '."python.languageServer" |= "Pylance"' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
-# jq '."python.showStartPage" |= false' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+jq '."python.languageServer" |= "Pylance"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+# jq '."python.showStartPage" |= false' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
 #### Warnings

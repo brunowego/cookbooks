@@ -35,11 +35,11 @@ sudo curl \
 ```yaml
 ---
 repos:
-- repo: https://github.com/hadolint/hadolint
-  rev: v2.7.0
-  hooks:
-  - id: hadolint
-    stages: [commit]
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.7.0
+    hooks:
+      - id: hadolint
+        stages: [commit]
 ```
 
 #### Visual Studio Code
@@ -49,7 +49,7 @@ repos:
 code --install-extension exiasr.hadolint
 
 #
-jq ".\"hadolint.hadolintPath\" |= \"$(which hadolint)\"" "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq ".\"hadolint.hadolintPath\" |= \"$(which hadolint)\"" "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
 ```
 
 ### Ignore

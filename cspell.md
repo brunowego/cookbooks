@@ -19,13 +19,13 @@ jq '."recommendations" += ["streetsidesoftware.code-spell-checker"]' "$PWD/.vsco
 
 ```sh
 # English
-jq '."cSpell.language" |= "en"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."cSpell.language" |= "en"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
 
 # English + Portuguese
-jq '."cSpell.language" |= "en,pt,pt_BR"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."cSpell.language" |= "en,pt,pt_BR"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
 ```
 
 ```sh
 # Disable
-jq '."cSpell.diagnosticLevel" |= "Hint"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."cSpell.diagnosticLevel" |= "Hint"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
 ```

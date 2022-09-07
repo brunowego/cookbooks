@@ -70,6 +70,18 @@ jq '."recommendations" += ["dbaeumer.vscode-eslint"]' "$PWD/.vscode/extensions.j
 
 ### Issues
 
+#### Missing Working Directories for Monorepo
+
+```log
+[Info  - 3:33:48 PM] ESLint library loaded from: /path/to/node_modules/eslint/lib/api.js
+Pages directory cannot be found at /path/to/pages or /path/to/src/pages. If using a custom path, please configure with the `no-html-link-for-pages` rule in your eslint config file.
+```
+
+```sh
+#
+jq '."eslint.workingDirectories" += [{ "pattern": "./apps/*/" }, { "pattern": "./packages/*/" }]' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+```
+
 <!-- #### Missing Matching Pattern
 
 ```log

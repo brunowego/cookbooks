@@ -21,7 +21,7 @@ code --install-extension kiteco.kite
 ```
 
 ```sh
-jq '."kite.showWelcomeNotificationOnStartup" |= false' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."kite.showWelcomeNotificationOnStartup" |= false' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
 ```
 
 ```sh

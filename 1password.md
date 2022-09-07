@@ -2,6 +2,8 @@
 
 <!--
 https://support.1password.com/command-line-reference/
+
+https://github.com/nuxsmin/sysPass
 -->
 
 ## App

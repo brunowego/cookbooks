@@ -2,6 +2,7 @@
 
 <!--
 https://egghead.io/courses/introduction-to-urql-a-react-graphql-client-faaa2bf5
+https://github.com/graphlatte/graphlatte
 -->
 
 ## Links

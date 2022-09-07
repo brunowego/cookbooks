@@ -71,7 +71,7 @@ choco install -y vscode
 ```sh
 # Darwin
 mkdir -p "$HOME/.config/Code/User"
-ln -s "$HOME/Library/Application Support/Code/User/settings.json" "$HOME/.config/Code/User/settings.json"
+ln -s "$HOME/Library/Application Support/Code/User/settings.json" "$HOME"/.config/Code/User/settings.json
 ```
 
 ## CLI
@@ -93,7 +93,7 @@ code -h
 cat ./.vscode/settings.json
 
 # Globally
-cat "$HOME/.config/Code/User/settings.json"
+cat "$HOME"/.config/Code/User/settings.json
 ```
 
 ### Usage
@@ -120,6 +120,14 @@ code --uninstall-extension [extension]
 
 ### Tips
 
+#### Upgrade All Extensions
+
+```sh
+code --list-extensions | while read extension; do
+  code --install-extension "$extension" --force
+done
+```
+
 #### Uninstall All Extensions
 
 ```sh
@@ -139,12 +147,12 @@ cat ~/Library/Application\ Support/Code/Backups
 
 ```sh
 # Add
-jq '."http.proxy" |= "'$http_proxy'"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
-jq '."http.proxyAuthorization" |= "null"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."http.proxy" |= "'$http_proxy'"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+jq '."http.proxyAuthorization" |= "null"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
 
 # Delete
-jq 'del(."http.proxy")' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
-jq 'del(."http.proxyAuthorization")' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq 'del(."http.proxy")' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+jq 'del(."http.proxyAuthorization")' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
 ```
 
 #### Useful Plugins

@@ -1,5 +1,36 @@
 # GitBook
 
+<!--
+https://github.com/honkit/honkit
+
+https://techhelpnotes.com/node-js-gitbook-cli-install-error-typeerror-cb-apply-is-not-a-function-inside-graceful-fs/
+
+https://til.secretgeek.net/gitbook/use_gitbook_locally.html
+-->
+
 ## Links
 
 - [Main Website](https://gitbook.com/)
+
+## CLI
+
+### Commands
+
+```sh
+# Using NPX
+npx gitbook-cli -h
+```
+
+### Usage
+
+```sh
+#
+gitbook-cli ls
+
+#
+gitbook-cli ls-remote
+
+#
+gitbook-cli fetch <version>
+gitbook-cli fetch latest
+```

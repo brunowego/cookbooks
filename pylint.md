@@ -43,11 +43,11 @@ EOF
 #### Visual Studio Code
 
 ```sh
-jq '."files.associations"."*.pylintrc" |= "ini"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."files.associations"."*.pylintrc" |= "ini"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
 ```
 
 ```sh
-jq '."python.linting.pylintEnabled" |= true' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."python.linting.pylintEnabled" |= true' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
 ```
 
 #### Generate RC File
@@ -73,8 +73,8 @@ echo 'pylint-flask==0.6' >> ./requirements-dev.txt
 ```
 
 ```sh
-jq '."python.linting.pylintArgs" |= ["--load-plugins", "pylint-flask"]' "$PWD/.vscode/settings.json" | \
-  sponge "$PWD/.vscode/settings.json"
+jq '."python.linting.pylintArgs" |= ["--load-plugins", "pylint-flask"]' "$PWD"/.vscode/settings.json | \
+  sponge "$PWD"/.vscode/settings.json
 ```
 
 <!--

@@ -7,6 +7,10 @@
 ### Installation
 
 ```sh
+# For v2.x
+pip install -U virtualenv
+
+# For v3.x
 pip3 install -U virtualenv
 ```
 

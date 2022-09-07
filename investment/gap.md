@@ -1,5 +1,11 @@
 # Gap
 
+## Terms
+
+- Standard & Poor's 500 (S&P 500)
+
+## Comparison Table
+
 | Description        | Symbol                                        | Change Percentage |
 | ------------------ | --------------------------------------------- | ----------------- |
 | S&P 500 Volatility | `TVC:SPX/TVC:VIX`                             | Positive          |

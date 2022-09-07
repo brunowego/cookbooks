@@ -123,8 +123,8 @@ EOF
 **Dependencies:** [dotENV](/dotenv.md#visual-studio-code) VSCode plugin.
 
 ```sh
-jq '."files.associations".".secrets" |= "dotenv"' "$HOME/.config/Code/User/settings.json" | \
-  sponge "$HOME/.config/Code/User/settings.json"
+jq '."files.associations".".secrets" |= "dotenv"' "$HOME"/.config/Code/User/settings.json | \
+  sponge "$HOME"/.config/Code/User/settings.json
 ```
 
 ### Issues
@@ -195,11 +195,11 @@ Warning: the environment variable LANG is not set!
 jobs:
   test:
     steps:
-    - name: # ...
-      env:
-        LC_ALL: C.UTF-8
-        LANG: C.UTF-8
-      run: # ...
+      - name: # ...
+        env:
+          LC_ALL: C.UTF-8
+          LANG: C.UTF-8
+        run: # ...
 ```
 
 #### Missing Events

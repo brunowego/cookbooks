@@ -46,6 +46,14 @@ docker run -d \
   docker.io/library/redis:5.0.5-alpine3.9 -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
 ```
 
+```env
+#
+REDIS_URL=redis://127.0.0.1:6379/0
+
+#
+REDIS_URL=redis://:redis@127.0.0.1:6379/0
+```
+
 ### Testing
 
 ```sh

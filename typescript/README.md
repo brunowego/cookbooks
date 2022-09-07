@@ -150,7 +150,7 @@ declare module '*.svg?url' {
 
 ```sh
 #
-jq '."[typescript]"."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+jq '."[typescript]"."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
 <!--

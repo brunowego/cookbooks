@@ -41,6 +41,11 @@
 - The Asian Crisis of 1997
 - The Financial Crisis of 2007–08
 
+## Economic Behavior/Policy
+
+- Hawkish ("hawk")
+- Dovish ("dove")
+
 <!--
 https://worldpopulationreview.com/country-rankings/richest-countries-in-the-world
 https://www.gfmag.com/global-data/economic-data/richest-countries-in-the-world

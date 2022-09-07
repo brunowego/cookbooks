@@ -10,6 +10,8 @@ flowbite
 
 **Keywords:** CSS framework
 
+<!-- TODO: Lint not working with VS Code -->
+
 ## Links
 
 - [Code Repository](https://github.com/tailwindlabs/tailwindcss)
@@ -257,38 +259,8 @@ code --install-extension bradlc.vscode-tailwindcss
 jq '."recommendations" += ["bradlc.vscode-tailwindcss"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
 
 #
-jq '."files.associations"."*.css" |= "tailwindcss"' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+jq '."files.associations"."*.css" |= "tailwindcss"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
-
-<!--
-# For HTML
-jq '."tailwindCSS.includeLanguages".plaintext |= "html"' "$PWD/.vscode/settings.json" | \
-  sponge "$PWD/.vscode/settings.json"
-
-# For Typescript
-jq '."tailwindCSS.includeLanguages".typescript |= "javascript"' "$PWD/.vscode/settings.json" | \
-  sponge "$PWD/.vscode/settings.json"
-
-jq '."tailwindCSS.includeLanguages".typescriptreact |= "javascript"' "$PWD/.vscode/settings.json" | \
-  sponge "$PWD/.vscode/settings.json"
--->
-
-<!--
-"css.validate": false,
-"stylelint.enable": true,
-// "editor.quickSuggestions": {
-//   "strings": true
-// },
-// "tailwindCSS.emmetCompletions": true,
-"tailwindCSS.experimental.configFile": "./apps/landing/tailwind.config.cjs"
--->
-
-<!--
-#
-code --install-extension heybourn.headwind
-
-jq '."recommendations" += ["heybourn.headwind"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
--->
 
 ### Issues
 

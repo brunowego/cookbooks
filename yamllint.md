@@ -118,7 +118,7 @@ jq '."recommendations" += ["fnando.linter"]' "$PWD/.vscode/extensions.json" | sp
 
 ```sh
 #
-jq '."[yaml]"."editor.formatOnSave" |= false' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+jq '."[yaml]"."editor.formatOnSave" |= false' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
 ### Issues

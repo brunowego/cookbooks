@@ -28,5 +28,5 @@ echo 'pydocstyle==5.1.1' >> ./requirements-dev.txt
 #### Visual Studio Code
 
 ```sh
-jq '."python.linting.pydocstyleEnabled" |= true' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."python.linting.pydocstyleEnabled" |= true' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
 ```

@@ -139,6 +139,12 @@ yarn info --recursive --dependents
 
 ### Tips
 
+#### Get Binary Path
+
+```sh
+yarn bin <command>
+```
+
 #### Add Type Module
 
 **Refer:** `./package.json`
@@ -156,12 +162,12 @@ yarn info --recursive --dependents
 ##### Search Exclusion
 
 ```sh
-jq '."search.exclude"."yarn.lock" |= true' "$PWD/.vscode/settings.json" | \
-  sponge "$PWD/.vscode/settings.json"
+jq '."search.exclude"."yarn.lock" |= true' "$PWD"/.vscode/settings.json | \
+  sponge "$PWD"/.vscode/settings.json
 
 # For Yarn Berry
-jq '."search.exclude".".yarn" |= true' "$PWD/.vscode/settings.json" | \
-  sponge "$PWD/.vscode/settings.json"
+jq '."search.exclude".".yarn" |= true' "$PWD"/.vscode/settings.json | \
+  sponge "$PWD"/.vscode/settings.json
 ```
 
 ##### Recommended Extensions

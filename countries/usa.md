@@ -36,6 +36,7 @@ TODO
 | Gross Domestic Product (GDP)            | High       |
 | Initial Jobless Claims                  | Neutral    |
 | ISM Manufacturing PMI                   |            |
+| ISM Non-Manufacturing PMI               | Medium     |
 | JOLTs Job Openings                      | High       |
 | New Home Sales                          | Neutral    |
 | Nonfarm Payrolls                        |            |

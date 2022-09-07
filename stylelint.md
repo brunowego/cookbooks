@@ -123,7 +123,10 @@ code --install-extension stylelint.vscode-stylelint
 jq '."recommendations" += ["stylelint.vscode-stylelint"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
 
 #
-jq '."stylelint.validate" += ["tailwindcss"]' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+jq '."css.validate" |= false' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+
+#
+jq '."stylelint.validate" += ["tailwindcss"]' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
 #### Ignore Rules for TailwindCSS

@@ -176,10 +176,10 @@ code --install-extension redhat.fabric8-analytics
 /usr/libexec/java_home -V
 
 # Linux/Darwin
-jq ".\"java.home\" |= \"$(dirname $(dirname $(readlink -f $(which java))))\"" "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
+jq ".\"java.home\" |= \"$(dirname $(dirname $(readlink -f $(which java))))\"" "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 
 #
-jq '."java.project.importOnFirstTimeStartup" |= "automatic"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."java.project.importOnFirstTimeStartup" |= "automatic"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
 
 #
 # java.completion.importOrder
@@ -259,7 +259,7 @@ The compiler compliance specified is 11 but a JRE 15 is used
 ```
 
 ```sh
-code "$HOME/.config/Code/User/settings.json"
+code "$HOME"/.config/Code/User/settings.json
 ```
 
 ```json

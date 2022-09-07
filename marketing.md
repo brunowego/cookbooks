@@ -9,6 +9,7 @@
 - Guerrilla Marketing
 - Media Training
 - Product/Market Fit (a.k.a Product-Market Fit)
+- Redpill
 
 ## Phenomenons
 

@@ -23,3 +23,12 @@ https://linkedin.com/learning/c-plus-plus-essential-training/learn-c-plus-plus
 yum check-update
 sudo yum -y install cpp
 ```
+
+## CLI
+
+### Usage
+
+```sh
+#
+cpp --version
+```

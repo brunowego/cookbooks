@@ -4,6 +4,7 @@
 Caserbin raises $10M in seed funding to help companies deliver a great candidate experience! Read more ->
 
 https://angel.co/
+https://linktr.ee/
 -->
 
 ## References
@@ -42,6 +43,7 @@ https://angel.co/
 - Entry Barrier
 - Environmental, Social and Corporate Governance (ESG)
 - Exchange-Traded Fund (ETF)
+- Exit to Community (E2C)
 - Fat-Finger Error (FFE)
 - First-Mover Advantage (FMA)
 - Flip
@@ -67,9 +69,33 @@ https://angel.co/
 - Up-sell
 - Valuation
 
+## Founder
+
+- Equity or Salary
+
+## C-Level Positions
+
+- Chief Analytics Officer (CAO)
+- Chief Compliance Officer (CCO)
+- Chief Data Officer (CDO)
+- Chief Executive Officer (CEO)
+- Chief Financial Officer (CFO)
+- Chief Green Officer (CGO)
+- Chief Human Resources Manager (CHRM)
+- Chief Human Resources Officer (CHRO)
+- Chief Information Officer (CIO)
+- Chief Marketing Officer (CMO)
+- Chief Operating Officer (COO)
+- Chief Security Officer (CSO)
+- Chief Technology Officer (CTO)
+
 ## Types
 
 - Infoproduct
+
+<!-- ## Key Features
+
+- Engajamento -->
 
 ## Links
 

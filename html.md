@@ -34,9 +34,12 @@ https://linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 
 ```html
 <h1>Redirecting</h1>
-<p>If you are not redirected automatically, follow this <a href="http://example.com">link to Example</a>.</p>
+<p>
+  If you are not redirected automatically, follow this
+  <a href="http://example.com">link to Example</a>.
+</p>
 <script type="text/javascript">
-  window.location.href = "http://example.com";
+  window.location.href = 'http://example.com'
 </script>
 ```
 
@@ -49,7 +52,7 @@ code \
   --install-extension tht13.html-preview-vscode
 
 #
-jq '."html.format.wrapAttributes" |= "force-aligned"' "$HOME/.config/Code/User/settings.json" | sponge "$HOME/.config/Code/User/settings.json"
+jq '."html.format.wrapAttributes" |= "force-aligned"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
 ```
 
 <!--

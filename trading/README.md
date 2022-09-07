@@ -20,6 +20,9 @@ Depois de uma forte alta, faça compra às GMT 0 utilizando o ferramento do ulti
 Sempre deixa ordens nas medias moveis. Sempre deixar ordens em fibo.
 
 Trader is a Sniper
+
+Quanto maior a liquidez, menor a volatilidade
+Quanto menor a liquidez, maior a volatilidade
 -->
 
 <!--
@@ -32,12 +35,14 @@ Sinal: Candle/Volume
 
 - Antifragile
 - BUIDL (A misspelling of build)
+- Depth Of Market (DOM)
 - Free Fall
 - Good-Till-Cancel (GTC)
 - Good-Till-Day (GTD)
 - Hold On for Dear Life (HODL)
 - Over-The-Counter (OTC) / Penny Stocks
 - Payoff
+- Shakeout
 - Wash Trade
 - Win Rate
 

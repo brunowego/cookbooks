@@ -62,3 +62,23 @@ git push origin --delete [name]
 # or
 git push origin :[name]
 ```
+
+## Fetch All Remote Branches
+
+<!--
+https://stackoverflow.com/questions/10312521/how-do-i-fetch-all-git-branches
+-->
+
+```sh
+#
+git checkout --detach
+
+#
+git fetch origin '+refs/heads/*:refs/heads/*'
+```
+
+## Most Recently Commit
+
+```sh
+git branch --sort=-committerdate | head -5
+```

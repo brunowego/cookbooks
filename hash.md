@@ -2,7 +2,11 @@
 
 ## Tools
 
+### Analyze
+
 - [Online Hash Crack - Hash Identification](https://www.onlinehashcrack.com/hash-identification.php)
+- [Hash Analyzer](https://tunnelsup.com/hash-analyzer/)
+- [Identify Hash Types](https://hashes.com/en/tools/hash_identifier)
 
 ## Types
 

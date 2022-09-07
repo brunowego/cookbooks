@@ -62,10 +62,10 @@ jq '."recommendations" += ["csstools.postcss"]' "$PWD/.vscode/extensions.json" |
 
 ```sh
 #
-jq '."emmet.includeLanguages".postcss |= "css"' "$PWD/.vscode/settings.json" | \
-  sponge "$PWD/.vscode/settings.json"
+jq '."emmet.includeLanguages".postcss |= "css"' "$PWD"/.vscode/settings.json | \
+  sponge "$PWD"/.vscode/settings.json
 
 #
-jq '."emmet.syntaxProfiles".postcss |= "css"' "$PWD/.vscode/settings.json" | \
-  sponge "$PWD/.vscode/settings.json"
+jq '."emmet.syntaxProfiles".postcss |= "css"' "$PWD"/.vscode/settings.json | \
+  sponge "$PWD"/.vscode/settings.json
 ``` -->

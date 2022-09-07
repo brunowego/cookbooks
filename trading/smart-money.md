@@ -7,7 +7,7 @@
 ## Who Are
 
 - Institutional Investors
-- [Market Mavens](https://investopedia.com/terms/m/marketmaven.asp#:~:text=What%20Is%20a%20Market%20Maven,may%20not%20have%20access%20to.)
+- Market Mavens
 - Central Banks
 - Funds
 - Financial Professionals

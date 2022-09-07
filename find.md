@@ -6,7 +6,7 @@
 
 ## References
 
-- [Find syntax](https://en.wikipedia.org/wiki/Find_(Unix)#Find_syntax)
+- [Find syntax](<https://en.wikipedia.org/wiki/Find_(Unix)#Find_syntax>)
 
 ## Commands
 
@@ -26,7 +26,14 @@ find ./ -name \*.[extension]
 
 ## Tips
 
-### Find by fxtension
+### Find Folder
+
+```sh
+#
+find ./ -name '<name>' -type d
+```
+
+### Find by Extension
 
 ```sh
 #

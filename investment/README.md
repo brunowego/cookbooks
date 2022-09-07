@@ -22,6 +22,7 @@ Carry Trades
 Rei morto, rei posto
 
 Bank, Energy, Sanitation, Telecom, Insurance (BESTI)
+Defensive Companies
 -->
 
 ## Links
@@ -68,6 +69,7 @@ https://tradingeconomics.com/calendar
 - Blue Chip
 - Circuit Breaker
 - Company Downsize
+- Crème de La Crème
 - Dividend Yield
 - Dollar Peg
 - Dollar-cost averaging (DCA) **Tip:** It works best in an uptrend. Avoid for Alt-coins (Crypto Market).
@@ -118,10 +120,6 @@ No-coiner
 Cryptosis
 Shill
 Vaporware
-
-Economic Behavior:
-Hawkish
-Dovish
 -->
 
 ## Indices

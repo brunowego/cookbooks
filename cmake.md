@@ -33,3 +33,13 @@ sudo yum -y install cmake
 ```sh
 apk add cmake
 ```
+
+### Commands
+
+```sh
+cmake -h
+```
+
+### Usage
+
+TODO

@@ -11,7 +11,8 @@ PostgreSQL is known to be faster while handling massive data sets, complicated q
 #### Homebrew
 
 ```sh
-brew install postgresql
+# Version 11.x
+brew install postgresql@11
 ```
 
 #### APT
@@ -48,11 +49,21 @@ sudo zypper install -y postgresql-server
 choco install -y postgresql
 ```
 
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# PostgreSQL
+export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+```
+
 ### Initialize
 
 ```sh
 # Homebrew
-initdb /usr/local/var/postgres
+initdb -A trust /usr/local/var/postgres
+initdb -E utf8 /usr/local/var/postgres
 
 # Linux
 sudo postgresql-setup initdb
@@ -76,11 +87,61 @@ sudo sed -i '/^local/ s/peer/md5/g' /var/lib/pgsql/data/pg_hba.conf
 
 ```sh
 # Homebrew
-brew services start postgres
+brew services start postgresql@11
 
 # Systemd
 sudo systemctl enable --now postgresql
 ```
+
+### Issues
+
+<!--
+psql -d <db-name> -c 'GRANT ALL PRIVILEGES ON DATABASE <db-name> TO <user-name>'
+-->
+
+#### Missing Ownership of Table
+
+```log
+ERROR: must be owner of table <table-name>
+```
+
+```sh
+psql '<db-name>' -c 'ALTER DATABASE <db-name> OWNER TO <user-name>;'
+```
+
+#### Missing Permission
+
+```log
+ERROR: permission denied for table <table-name>
+```
+
+```sh
+psql '<db-name>' -c 'GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO <user-name>;'
+```
+
+#### Missing Role
+
+```log
+2022-09-06 15:55:51.140 -03 [94533] FATAL:  role "<name>" does not exist
+```
+
+```sh
+psql '<db-name>' -c 'CREATE ROLE <name> WITH login;'
+```
+
+#### TBD
+
+```log
+initdb: error: The program "postgres" is needed by initdb but was not found in the
+same directory as "/usr/local/Cellar/libpq/14.5/bin/initdb".
+Check your installation.
+```
+
+TODO
+
+<!--
+TEST: Missing environment PATH variable.
+-->
 
 ## Docker
 
@@ -132,21 +193,14 @@ docker run -d \
   --name postgresql \
   --network workbench \
   docker.io/library/postgres:12.6-alpine
-
-# Trust auth method
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h postgresql \
-  -e POSTGRES_HOST_AUTH_METHOD='trust' \
-  -v postgresql-data:/var/lib/postgresql/data \
-  -p 5432:5432 \
-  --name postgresql \
-  --network workbench \
-  docker.io/library/postgres:11.2-alpine
 ```
 
 ```sh
 sudo hostess add postgresql 127.0.0.1
+```
+
+```env
+DATABASE_URL=postgresql://user:pass@127.0.0.1:5432/dev
 ```
 
 ### Query
@@ -173,6 +227,31 @@ docker exec \
   -u postgres \
   postgresql \
     psql dev postgres -f docker-entrypoint-initdb.d/data.sql
+```
+
+<!-- ### Issues -->
+
+#### Missing Socket Connection
+
+```log
+dropdb: error: connection to server on socket "/tmp/.s.PGSQL.5432" failed: No such file or directory
+```
+
+```sh
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h postgresql \
+  -e POSTGRES_HOST_AUTH_METHOD='trust' \
+  -v postgresql-data:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  --name postgresql \
+  --network workbench \
+  docker.io/library/postgres:13.7-alpine
+
+#
+export PGHOST='localhost'
+export PGUSER='postgres'
 ```
 
 ### Remove

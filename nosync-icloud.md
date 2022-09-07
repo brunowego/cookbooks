@@ -90,8 +90,8 @@ done
 #### Visual Studio Code
 
 ```sh
-jq '."search.exclude"."**/*.nosync" |= true' "$HOME/.config/Code/User/settings.json" | \
-  sponge "$HOME/.config/Code/User/settings.json"
+jq '."search.exclude"."**/*.nosync" |= true' "$HOME"/.config/Code/User/settings.json | \
+  sponge "$HOME"/.config/Code/User/settings.json
 ```
 
 <!-- ####
