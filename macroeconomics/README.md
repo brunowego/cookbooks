@@ -1,5 +1,14 @@
 # Macroeconomics
 
+## Schools
+
+- School of Salamanca (Salmanticenses)
+
+## Personalities
+
+- Jacob Marschak
+- Ragnar Frisch (Ragnar Anton Kittil Frisch)
+
 ## The Three Macroeconomic Issues
 
 - National Output/Economic Growth/Business Cycles
@@ -51,3 +60,20 @@ https://worldpopulationreview.com/country-rankings/richest-countries-in-the-worl
 https://www.gfmag.com/global-data/economic-data/richest-countries-in-the-world
 https://www.bls.gov/charts/job-openings-and-labor-turnover/unemp-per-job-opening.htm
 -->
+
+<!-- Ações
+Títulos públicos
+Títulos privados -->
+
+<!-- |          | Ativo                                                                                                                                           | Passivo                                                                                                |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Conceito | Bens, créditos e direitos de uma entidade econômica.                                                                                            | Gastos e despesas                                                                                      |
+| Tipos    | Ativo circulante e não circulante. Tangíveis e intangíveis.                                                                                     | Passivo circulante e não circulante                                                                    |
+| Exemplos | Mercadoria, dinheiro em caixa, dívidas de clientes, depósitos bancários, imóveis, terrenos, maquinário, patentes, softwares desenvolvidos, etc. | Salários e gastos com funcionários, encargos, tributos, parcelas de empréstimos e financiamentos, etc. | -->
+
+<!-- |                     | Renda Fixa                   | Renda Variável                                        |
+| ------------------- | ---------------------------- | ----------------------------------------------------- |
+| Risco               | Baixo                        | Médio e Alto                                          |
+| Garantias           | Na maioria, sim              | Não                                                   |
+| Oscilação do Preços | Menor                        | Maior                                                 |
+| Rentabilidade       | Baixa, independente do prazo | Maior potencial, especialmente no médio e longo prazo | -->

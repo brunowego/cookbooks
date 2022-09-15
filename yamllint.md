@@ -113,7 +113,7 @@ yamllint ./
 code --install-extension fnando.linter
 
 #
-jq '."recommendations" += ["fnando.linter"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["fnando.linter"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ``` -->
 
 ```sh

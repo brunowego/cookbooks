@@ -4,6 +4,8 @@
 
 - Desktop
 - Downloads
+- Movies
+- Music
 - Check User's folder
 
 ## Software Content
@@ -35,7 +37,7 @@
 
 ```sh
 # Symbolic
-ln -s /Volumes/Workspace "$HOME/Workspace"
+ln -s /Volumes/Workspace "$HOME"/Workspace
 ```
 
 <!--

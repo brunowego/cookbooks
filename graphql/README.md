@@ -109,7 +109,7 @@ module.exports = eslintRC
 code --install-extension 'GraphQL.vscode-graphql'
 
 #
-jq '."recommendations" += ["GraphQL.vscode-graphql"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["GraphQL.vscode-graphql"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ### Issues

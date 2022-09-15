@@ -1,5 +1,9 @@
 # TradingView
 
+<!--
+https://ct.icmarkets.com/
+-->
+
 ## Links
 
 - [Main Website](https://tradingview.com/)
@@ -7,6 +11,10 @@
 - [Status Page](https://status.tradingview.com/)
 - [Shortcuts](https://tradingview.com/support/shortcuts/)
 - [Org. Repository](https://github.com/tradingview/)
+
+<!-- ## Alternative
+
+- -->
 
 ## Tools
 
@@ -21,11 +29,11 @@
 
 ## TradingView Users
 
-- [TradingShot](https://www.tradingview.com/u/TradingShot/)
+- [TradingShot](https://tradingview.com/u/TradingShot/)
 
 ## Technical Analysis
 
-- [BITCOIN vs USD vs S&P500 What 2022 will be like.](https://www.tradingview.com/chart/BTCUSD/5oJFyXZS-BITCOIN-vs-USD-vs-S-P500-What-2022-will-be-like-HAPPY-NEW-YEAR/)
+- [BITCOIN vs USD vs S&P500 What 2022 will be like.](https://tradingview.com/chart/BTCUSD/5oJFyXZS-BITCOIN-vs-USD-vs-S-P500-What-2022-will-be-like-HAPPY-NEW-YEAR/)
 
 ## Terms
 

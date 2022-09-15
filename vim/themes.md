@@ -2,17 +2,16 @@
 
 ### Configuration
 
-***Dependencies:*** [GNU Wget](/gnu-wget.md) and Vim.
+**_Dependencies:_** [GNU Wget](/gnu-wget.md) and Vim.
 
 ```sh
-mkdir -p \
-  ~/.vim/colors \
-  ~/.vim/autoload
-
-touch ~/.vimrc
+#
+mkdir -p ~/.vim/{colors,autoload}
 ```
 
 ### Colors
+
+**Note:** The latest version of Vim has a built-in theme.
 
 ##### Monokai
 

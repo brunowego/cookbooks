@@ -62,6 +62,8 @@ sudo systemctl enable --now docker
 
 ## Configuration
 
+<!-- ~/.docker/daemon.json -->
+
 ### Linux
 
 ```sh
@@ -94,6 +96,18 @@ sudo rm -r /run/docker
 
 ```sh
 sudo groupdel docker
+```
+
+## Issues
+
+### Docker CLI Already Installed
+
+```log
+Error: It seems there is already a Binary at '/usr/local/share/zsh/site-functions/_docker'.
+```
+
+```sh
+brew remove docker
 ```
 
 ## Uninstall

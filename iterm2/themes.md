@@ -1,8 +1,8 @@
 # Thems
 
-## Configuration
+## OneHalfDark
 
-### OneHalfDark
+### Installation
 
 ```sh
 #
@@ -14,6 +14,12 @@ open ./OneHalfDark.itermcolors
 #
 rm OneHalfDark.itermcolors
 ```
+
+### Configuration
+
+1. iTerm2 -> Preferences...
+2. Profiles Tab -> Select Profile Name
+3. Colors Tab -> Color Presets... -> Select OneHalfDark
 
 <!-- #### URL Scheme
 

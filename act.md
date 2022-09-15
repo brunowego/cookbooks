@@ -123,8 +123,8 @@ EOF
 **Dependencies:** [dotENV](/dotenv.md#visual-studio-code) VSCode plugin.
 
 ```sh
-jq '."files.associations".".secrets" |= "dotenv"' "$HOME"/.config/Code/User/settings.json | \
-  sponge "$HOME"/.config/Code/User/settings.json
+jq '."files.associations".".secrets" |= "dotenv"' "$HOME"/.vscode/settings.json | \
+  sponge "$HOME"/.vscode/settings.json
 ```
 
 ### Issues

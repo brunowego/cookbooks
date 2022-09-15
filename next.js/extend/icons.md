@@ -5,7 +5,7 @@
 **Refer:** `./src/pages/_document.tsx`
 
 ```tsx
-import Document, { Head, Html } from 'next/document'
+import Document, { Html, Head } from 'next/document'
 
 interface IIconProps {
   rel: string

@@ -30,11 +30,11 @@ mkdir -p ~/.config/cointop
 #
 cat << EOF > ~/.config/cointop/config.toml
 currency = "USD"
-default_view = ""
+default_view = "default"
 default_chart_range = "1Y"
 api = "coingecko"
 colorscheme = "cointop"
-refresh_rate = 60
+refresh_rate = 15
 EOF
 ```
 
@@ -42,14 +42,21 @@ EOF
 
 ```sh
 #
-cointop holdings
+cointop
 
 #
 cointop dominance
 
 #
-cointop price -c btc
+cointop holdings
+
+#
+cointop price -c btc,eth,bnb,xrp,ada
 ```
+
+### Shortcut
+
+- [Favorites](https://github.com/cointop-sh/cointop/blob/master/docs/content/favorites.md)
 
 ### Tips
 

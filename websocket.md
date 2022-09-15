@@ -1,5 +1,9 @@
 # WebSocket (WS)
 
+<!--
+https://github.com/novuhq/novu/tree/main/apps/ws
+-->
+
 ## Pub/Sub Providers
 
 - [Ably](https://ably.com/)

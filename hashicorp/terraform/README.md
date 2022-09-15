@@ -360,7 +360,7 @@ code --install-extension hashicorp.terraform
 ```
 
 ```sh
-jq '."files.associations"."*.json.tpl" |= "json"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+jq '."files.associations"."*.json.tpl" |= "json"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
 <!--

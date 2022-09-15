@@ -22,8 +22,8 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 
 ```sh
 # Android SDK
-export ANDROID_HOME="$HOME/Library/Android/sdk" # Homebrew
-export ANDROID_HOME="$HOME/Android/Sdk" # Linux
+export ANDROID_HOME="$HOME"/Library/Android/sdk # Homebrew
+export ANDROID_HOME="$HOME"/Android/Sdk # Linux
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
 export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
 ```

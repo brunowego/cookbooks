@@ -1,5 +1,17 @@
 # Web-ext
 
+<!--
+https://www.udemy.com/course/the-complete-web-extensions-development-course-zero-to-hero/
+-->
+
+## Links
+
+- [Code Repository](https://github.com/mozilla/web-ext)
+
+## Docs
+
+- [Getting started with web-ext](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/)
+
 ## CLI
 
 ### Installation
@@ -7,7 +19,11 @@
 #### NPM
 
 ```sh
+# Using NPM
 npm install web-ext -g
+
+# Using Yarn v1.x
+yarn global add web-ext
 ```
 
 ### Commands
@@ -15,12 +31,6 @@ npm install web-ext -g
 ```sh
 #
 web-ext -h
-
-#
-web-ext build -h
-
-#
-web-ext run -h
 ```
 
 ### Usage

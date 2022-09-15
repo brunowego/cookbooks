@@ -70,8 +70,9 @@ choco install -y vscode
 
 ```sh
 # Darwin
-mkdir -p "$HOME/.config/Code/User"
-ln -s "$HOME/Library/Application Support/Code/User/settings.json" "$HOME"/.config/Code/User/settings.json
+mkdir -p "$HOME"/.vscode
+
+ln -s "$HOME"/Library/Application\ Support/Code/User/settings.json "$HOME"/.vscode/settings.json
 ```
 
 ## CLI
@@ -93,7 +94,7 @@ code -h
 cat ./.vscode/settings.json
 
 # Globally
-cat "$HOME"/.config/Code/User/settings.json
+cat "$HOME"/.vscode/settings.json
 ```
 
 ### Usage
@@ -147,17 +148,19 @@ cat ~/Library/Application\ Support/Code/Backups
 
 ```sh
 # Add
-jq '."http.proxy" |= "'$http_proxy'"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
-jq '."http.proxyAuthorization" |= "null"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+jq '."http.proxy" |= "'$http_proxy'"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+jq '."http.proxyAuthorization" |= "null"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 
 # Delete
-jq 'del(."http.proxy")' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
-jq 'del(."http.proxyAuthorization")' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+jq 'del(."http.proxy")' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+jq 'del(."http.proxyAuthorization")' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
 #### Useful Plugins
 
-```sh
+TODO
+
+<!-- ```sh
 #
 code --install-extension mkxml.vscode-filesize
 
@@ -166,7 +169,7 @@ code --install-extension shardulm94.trailing-spaces
 
 #
 code --install-extension Tyriar.sort-lines
-```
+``` -->
 
 <!--
 #

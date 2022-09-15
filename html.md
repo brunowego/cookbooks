@@ -52,7 +52,7 @@ code \
   --install-extension tht13.html-preview-vscode
 
 #
-jq '."html.format.wrapAttributes" |= "force-aligned"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+jq '."html.format.wrapAttributes" |= "force-aligned"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
 <!--

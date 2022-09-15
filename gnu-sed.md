@@ -41,7 +41,7 @@ sudo su - "$USER"
 
 ### Usage
 
-*Note: Remove square brackets.*
+_Note: Remove square brackets._
 
 ```sh
 # Replace

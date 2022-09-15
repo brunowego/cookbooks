@@ -2,10 +2,11 @@
 
 ## Terms
 
-- Spoofing
-- Layering
-- Insider Trader
 - Front Runner
+- Insider Trader
+- Layering
+- Shakeout
+- Spoofing
 
 <!--
 Comissão de Valores Mobiliários (CVM)

@@ -12,5 +12,9 @@
 ### Visual Studio Code
 
 ```sh
+#
 code --install-extension DavidAnson.vscode-markdownlint
+
+#
+jq '."recommendations" += ["DavidAnson.vscode-markdownlint"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

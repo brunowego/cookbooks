@@ -1,5 +1,9 @@
 # asdf Rust
 
+<!--
+https://github.com/sdepold/rsvm
+-->
+
 ## Installation
 
 ```sh
@@ -14,14 +18,24 @@ asdf list-all rust
 
 #
 KEEP_SOURCE=1 \
-  asdf install rust [version]
+  asdf install rust <version>
 
 #
-asdf global rust [version]
+asdf global rust <version>
 
 #
 asdf list rust
 
 #
-asdf reshim rust [version]
+asdf reshim rust <version>
+```
+
+## Test
+
+```sh
+#
+rustc --version
+
+#
+cargo --version
 ```

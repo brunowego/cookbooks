@@ -42,7 +42,7 @@ Sinal: Candle/Volume
 - Hold On for Dear Life (HODL)
 - Over-The-Counter (OTC) / Penny Stocks
 - Payoff
-- Shakeout
+- Selloff / Rally
 - Wash Trade
 - Win Rate
 
@@ -60,7 +60,7 @@ Sinal: Candle/Volume
 ## Challenge
 
 - [FTMO](https://ftmo.com/)
-- [Traders Central Fund (TCF)](https://www.traderscentral.com/)
+- [Traders Central Fund (TCF)](https://traderscentral.com/)
 
 ## Trading Sessions
 

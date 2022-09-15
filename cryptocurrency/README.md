@@ -50,6 +50,10 @@ https://blockchair.com/
 
 - [Crypto Leaks](https://cryptoleaks.info/)
 
+## Retail vs Institutional
+
+TODO
+
 ### Futures and Options
 
 - [CME Group](/cmegroup.md)
@@ -192,10 +196,6 @@ CME Gaps
 - Ticker Symbol
 - Volume Profile Visible Range (VPVR)
 - Zero-Sum Game
-
-- Point Of Control (POC)
-- Value Area High (VAH)
-- Value Area Low (VAL)
 
 ## Stock Market Index
 

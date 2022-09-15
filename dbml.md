@@ -58,5 +58,5 @@ dbml2sql ./schema.dbml \
 code --install-extension matt-meyers.vscode-dbml
 
 #
-jq '."recommendations" += ["matt-meyers.vscode-dbml"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["matt-meyers.vscode-dbml"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

@@ -1,5 +1,7 @@
 # DaisyDisk
 
+**Keywords:** Disk space
+
 ## App
 
 ### Installation

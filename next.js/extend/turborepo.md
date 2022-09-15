@@ -8,7 +8,7 @@ mobile
 
 ```sh
 #
-mkdir -p {./apps/{api,app,assets,blog,bot,changelog,cms,console,docs,embed,landing,og,relay,worker},./packages/{preset,tsconfig,ui}}
+mkdir -p {./apps/{api,app,assets,blog,bot,changelog,cms,console,docs,embed,landing,mail,og,relay,worker},./packages/{preset,tsconfig,ui}}
 
 #
 rm -fR ./.next

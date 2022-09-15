@@ -17,5 +17,5 @@ ERC 1155
 code --install-extension JuanBlanco.solidity
 
 #
-jq '."recommendations" += ["JuanBlanco.solidity"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["JuanBlanco.solidity"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

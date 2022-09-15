@@ -41,7 +41,7 @@ yarn add @playwright/test --dev
   "scripts": {
     // ...
     "test": "playwright test",
-    "test:report": "playwright show-report ./test/report",
+    "test:report": "playwright show-report ./test/report"
     // ...
   }
 }
@@ -61,7 +61,10 @@ const playwrightConfig: PlaywrightTestConfig = {
     timeout: 30 * 1000,
     reuseExistingServer: !process.env.CI,
   },
-  reporter: [['list'], ['html', { outputFolder: path.join(__dirname, 'test', 'report') }]],
+  reporter: [
+    ['list'],
+    ['html', { outputFolder: path.join(__dirname, 'test', 'report') }],
+  ],
   use: {
     baseURL: 'http://localhost:3000',
   },
@@ -119,7 +122,7 @@ test.describe('Home Page', () => {
 code --install-extension ms-playwright.playwright
 
 #
-jq '."recommendations" += ["ms-playwright.playwright"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["ms-playwright.playwright"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ## CLI

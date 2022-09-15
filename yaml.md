@@ -34,7 +34,7 @@
 code --install-extension redhat.vscode-yaml
 
 #
-jq '."recommendations" += ["redhat.vscode-yaml"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["redhat.vscode-yaml"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ### Merge Key Language

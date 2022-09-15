@@ -49,7 +49,7 @@ repos:
 code --install-extension exiasr.hadolint
 
 #
-jq ".\"hadolint.hadolintPath\" |= \"$(which hadolint)\"" "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+jq ".\"hadolint.hadolintPath\" |= \"$(which hadolint)\"" "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
 ### Ignore

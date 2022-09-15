@@ -55,6 +55,16 @@ rm -fR $(brew --cache)
 
 ### Tips
 
+#### Developer Mode
+
+```sh
+#
+brew developer state
+
+#
+brew developer off
+```
+
 #### Command-line completion
 
 ```sh

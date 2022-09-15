@@ -38,3 +38,10 @@ sudo apk add htop
 ```sh
 htop -h
 ```
+
+### Usage
+
+```sh
+#
+htop
+```

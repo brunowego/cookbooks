@@ -74,7 +74,7 @@ repos:
 code --install-extension timonwong.shellcheck
 
 #
-jq '."recommendations" += ["timonwong.shellcheck"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["timonwong.shellcheck"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ### Issues

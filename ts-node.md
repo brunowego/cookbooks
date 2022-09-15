@@ -64,5 +64,9 @@ ts-node ./index.ts
 ```
 
 ```sh
+#
 ts-node --showConfig
+
+#
+tsc --pretty --noEmit
 ```

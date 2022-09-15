@@ -120,7 +120,7 @@ module.exports = stylelintRC
 code --install-extension stylelint.vscode-stylelint
 
 #
-jq '."recommendations" += ["stylelint.vscode-stylelint"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["stylelint.vscode-stylelint"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 
 #
 jq '."css.validate" |= false' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json

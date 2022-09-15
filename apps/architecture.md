@@ -23,6 +23,7 @@ TODO
 
 <!--
 - DeepSource
+- dependabot
 -->
 
 <!--

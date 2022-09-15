@@ -53,7 +53,7 @@ yarn add postcss --dev
 code --install-extension csstools.postcss
 
 #
-jq '."recommendations" += ["csstools.postcss"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["csstools.postcss"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 <!-- #### Autocomplete/Expansion Support

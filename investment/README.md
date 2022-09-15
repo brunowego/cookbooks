@@ -35,6 +35,16 @@ Defensive Companies
 - [Investing / Single Currency Crosses](https://investing.com/currencies/single-currency-crosses)
 - [Infinite Market Cap](https://8marketcap.com/)
 
+### Indicators
+
+- Current Market Valuation
+  - [Interest Rates](https://www.currentmarketvaluation.com/models/10y-interest-rates.php)
+  - [Margin Debt](https://www.currentmarketvaluation.com/models/margin-debt.php)
+  - [Mean Reversion](https://www.currentmarketvaluation.com/models/s&p500-mean-reversion.php)
+  - [Price/Earnings Ratio](https://www.currentmarketvaluation.com/models/price-earnings.php)
+  - [The Buffett Indicator](https://currentmarketvaluation.com/models/buffett-indicator.php)
+  - [The Yield Curve](https://www.currentmarketvaluation.com/models/yield-curve.php)
+
 ### Indices
 
 - [Major World Market Indices](https://investing.com/indices/major-indices)

@@ -5,6 +5,11 @@ https://app.pluralsight.com/library/courses/react-native-applications-styling/ta
 https://app.pluralsight.com/library/courses/building-chat-application-react-native/table-of-contents
 -->
 
+## Links
+
+- [Code Repository](https://github.com/facebook/react-native)
+- [Main Website](https://reactnative.dev/)
+
 ## CLI
 
 ### Installation

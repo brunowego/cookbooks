@@ -330,8 +330,8 @@ git branch [branch-name] [tag-name]
 
 ```sh
 # Globally
-jq '."search.exclude"."**/.git" |= true' "$HOME"/.config/Code/User/settings.json | \
-  sponge "$HOME"/.config/Code/User/settings.json
+jq '."search.exclude"."**/.git" |= true' "$HOME"/.vscode/settings.json | \
+  sponge "$HOME"/.vscode/settings.json
 
 # Locally
 jq '."search.exclude"."**/.git" |= true' "$PWD"/.vscode/settings.json | \

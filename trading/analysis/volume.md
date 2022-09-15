@@ -2,6 +2,10 @@
 
 ## Terms
 
+- Fixed Range Volume Profile (FRVP)
+- Point Of Control (POC)
+- Value Area High (VAH)
+- Value Area Low (VAL)
 - Volume Weighted Average Price (VWAP)
 
 ## Rules

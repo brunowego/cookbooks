@@ -13,5 +13,5 @@
 code --install-extension mechatroner.rainbow-csv
 
 #
-jq '."recommendations" += ["mechatroner.rainbow-csv"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["mechatroner.rainbow-csv"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

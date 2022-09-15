@@ -89,6 +89,12 @@ Use `Control (⌃) + C`
 
 - `Command + k` Clear Buffer
 
+### Issues
+
+#### Window Restoration Disabled
+
+System window restoration has been disabled, which prevents iTerm2 from respecting this setting. Disable System Preferences > General > Close windows when quitting an app to enable window restoration.
+
 ### Uninstall
 
 ```sh

@@ -31,10 +31,10 @@ EOF
 #### VS Code Files Exclude
 
 ```sh
-jq '."files.exclude"."**/.classpath" |= false' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
-jq '."files.exclude"."**/.factorypath" |= false' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
-jq '."files.exclude"."**/.project" |= false' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
-jq '."files.exclude"."**/.settings" |= false' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+jq '."files.exclude"."**/.classpath" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+jq '."files.exclude"."**/.factorypath" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+jq '."files.exclude"."**/.project" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+jq '."files.exclude"."**/.settings" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
 ### Issues

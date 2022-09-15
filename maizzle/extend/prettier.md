@@ -1,14 +1,18 @@
 # Prettier
 
+**Dependencies:** [Library](/prettier.md#library)
+
 ## Configuration
 
-**Refer:** `./prettier.config.js`
+**Refer:** `./prettier.config.cjs`
 
-```js
+```cjs
+/**
+ * @type { import('prettier').Options }
+ */
 const prettierConfig = {
-  semi: false,
-  singleQuote: true,
-  tailwindConfig: './tailwind.config.js',
+  // ...
+  tailwindConfig: './tailwind.config.cjs',
 }
 
 module.exports = prettierConfig

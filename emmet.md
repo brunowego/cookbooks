@@ -13,5 +13,5 @@
 code --install-extension FallenMax.mithril-emmet
 
 #
-jq '."recommendations" += ["FallenMax.mithril-emmet"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["FallenMax.mithril-emmet"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

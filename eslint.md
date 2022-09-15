@@ -65,7 +65,7 @@ module.exports = eslintRC
 code --install-extension dbaeumer.vscode-eslint
 
 #
-jq '."recommendations" += ["dbaeumer.vscode-eslint"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["dbaeumer.vscode-eslint"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ### Issues

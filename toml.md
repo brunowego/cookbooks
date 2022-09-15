@@ -11,4 +11,7 @@
 ```sh
 #
 code --install-extension bungcip.better-toml
+
+#
+jq '."recommendations" += ["bungcip.better-toml"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

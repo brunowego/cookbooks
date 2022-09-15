@@ -202,6 +202,20 @@ rm ~/.zcompdump*
 
 ### Issues
 
+#### Missing Yarn Module
+
+```log
+Error: Cannot find module '/path/to/.yarn/releases/yarn-3.2.0.cjs'
+```
+
+```sh
+#
+rm ./.yarnrc.yml
+
+#
+yarn install
+```
+
 #### Invalid Checksum
 
 ```log

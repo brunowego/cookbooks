@@ -47,5 +47,5 @@ EOF
 code --install-extension humao.rest-client
 
 #
-jq '."recommendations" += ["humao.rest-client"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["humao.rest-client"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

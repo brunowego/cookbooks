@@ -25,12 +25,17 @@ People Meter
 - [Detran-DF / Portal](https://portal.detran.df.gov.br/)
 - [Taxa Selic](https://bcb.gov.br/controleinflacao/taxaselic)
 - [Brazil Interest Rate](https://tradingeconomics.com/brazil/interest-rate)
+- [TSE / Divulgação de Candidaturas e Contas Eleitorais](https://divulgacandcontas.tse.jus.br/divulga/#/)
 
 <!--
 https://www.youtube.com/watch?v=8Kgo-PykDhk
 https://www.youtube.com/watch?v=KOKS_apCwzA
 https://www.youtube.com/watch?v=Nk1LG5Fi9Uk
 -->
+
+## Agencies
+
+- Brazilian Institute of Geography and Statistics (BIGS) / Instituto Brasileiro de Geografia e Estatística (IBGE)
 
 ## Terms
 
@@ -40,3 +45,4 @@ https://www.youtube.com/watch?v=Nk1LG5Fi9Uk
 - Índice Nacional de Preços ao Consumidor Amplo (IPCA)
 - Instituto Brasileiro de Opinião Pública e Estatística (IBOPE)
 - Preço de Paridade Internacional (PPI)
+- Tribunal Superior Eleitoral (TSE)

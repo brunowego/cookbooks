@@ -5,7 +5,7 @@
 **Refer:** `./src/pages/_document.tsx`
 
 ```tsx
-import Document, { Head, Html, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class AppDocument extends Document {
   render() {

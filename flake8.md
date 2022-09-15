@@ -22,7 +22,7 @@ jq '."python.linting.flake8Enabled" |= true' "$PWD"/.vscode/settings.json | spon
 jq ".\"python.linting.flake8Path\" |= \"$(which flake8)\"" "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 
 #
-jq '."files.associations"."*.flake8" |= "ini"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+jq '."files.associations"."*.flake8" |= "ini"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
 ## Library

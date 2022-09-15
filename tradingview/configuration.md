@@ -10,13 +10,22 @@
 
 ## Object Tree
 
-- Projections (Fibonacci)
-- Retractions (Fibonacci)
+- Trading Strategy
+- Liquidity Levels
+- Volume Profile
+- Forecast: Fibonacci (Retractions/Projections/Channel)
 - Key Levels
 - Events
-- Reflections: Price Range
+- Market Cycles: ATH, ATL, BS, Price Range
 - Market Structure: Trends (Daily, Weekly, Monthly, Quarter)
 
 ## Rules
 
-- Reflections / Price Range -> Melting: Put it on top of the last all time high.
+- Market Cycles / Price Range -> Melting: Put it on top of the last all time high.
+
+<!--
+- 1M: Trends, Key Levels
+- 1W: Trends, Key Levels, Projections/Retractions
+- 1D: Trends, Key Levels, Liquidity Levels, Anchored VWAP (1d)
+- 4H: Trends
+-->

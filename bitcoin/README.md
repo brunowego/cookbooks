@@ -42,7 +42,6 @@ https://bitcoinmonthlyreturn.com/
 
 - [bitaddress.org](https://bitaddress.org/)
 - [Bitcoin Core](https://bitcoincore.org/)
-- [Bitcoin Rich List](https://bitinfocharts.com/top-100-richest-bitcoin-addresses.html)
 - [Bitcoin: Number of Active Addresses](https://studio.glassnode.com/metrics?a=BTC&m=addresses.ActiveCount)
 - [Code Repository](https://github.com/bitcoin/bitcoin)
 - [Taxa de hash total (TH/s)](blockchain.com/pt/charts/hash-rate)
@@ -53,6 +52,7 @@ https://bitcoinmonthlyreturn.com/
 
 ### Treasuries
 
+- [Bitcoin Rich List](https://bitinfocharts.com/top-100-richest-bitcoin-addresses.html)
 - [Bitcoin Treasuries](https://bitcointreasuries.net/dark.html)
 - [Buy Bitcoin Worldwide / Bitcoin Treasuries](https://buybitcoinworldwide.com/treasuries/)
 

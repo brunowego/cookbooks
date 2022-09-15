@@ -292,7 +292,7 @@ ln -s /usr/bin/python3 /usr/bin/python
 code --install-extension ms-python.python
 
 #
-jq '."recommendations" += ["ms-python.python"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["ms-python.python"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ```sh
@@ -300,7 +300,7 @@ jq '."recommendations" += ["ms-python.python"]' "$PWD/.vscode/extensions.json" |
 code --install-extension ms-python.vscode-pylance
 
 #
-jq '."recommendations" += ["ms-python.vscode-pylance"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["ms-python.vscode-pylance"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 
 #
 jq '."python.languageServer" |= "Pylance"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json

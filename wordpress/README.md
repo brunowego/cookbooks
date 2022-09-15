@@ -435,7 +435,7 @@ Undefined function 'add_action'.intelephense(1010)
 ```
 
 ```sh
-jq '."intelephense.diagnostics.undefinedSymbols" |= false' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+jq '."intelephense.diagnostics.undefinedSymbols" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ``` -->
 
 ## Snippets

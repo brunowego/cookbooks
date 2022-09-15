@@ -2,10 +2,20 @@
 
 <!--
 https://aicoin.com/
-https://nomics.com/
 https://intotheblock.com/
 https://coinmetrics.io/
 -->
+
+## Alternatives
+
+- [CoinCap](https://coincap.io/)
+- [CoinCheckup](https://coincheckup.com/)
+- [CoinCodex](https://coincodex.com/)
+- [CoinGecko](https://coingecko.com/)
+- [Coinlib](https://coinlib.io/)
+- [Coinranking](https://coinranking.com/)
+- [Live Coin Watch](https://livecoinwatch.com/)
+- [Nomics](https://nomics.com/)
 
 ## Articles
 

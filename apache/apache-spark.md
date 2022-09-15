@@ -72,7 +72,7 @@ code --install-extension mshdinsight.azure-hdinsight
 ```
 
 ```sh
-jq '."hdinsight.disableOpenSurveyLink" |= true' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+jq '."hdinsight.disableOpenSurveyLink" |= true' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
 ```sh

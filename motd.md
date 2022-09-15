@@ -1,21 +1,19 @@
-# motd
+# Message of The Day (motd)
 
 ## References
 
-- [Wiki](https://en.wikipedia.org/wiki/Motd_(Unix))
+- [Wiki](<https://en.wikipedia.org/wiki/Motd_(Unix)>)
 
 ## Tips
 
 ### Remove "Last login"
 
-***Warning***: Bad security practice!
+**_Warning_**: Bad security practice!
 
 ```sh
+# Stop message
 touch ~/.hushlogin || exit
-```
 
-#### Rollback
-
-```sh
+# Rollback
 rm ~/.hushlogin
 ```

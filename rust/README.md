@@ -26,7 +26,7 @@ https://medium.com/swlh/building-a-front-app-with-rust-yes-you-can-and-yew-11e78
 
 ## References
 
-- [rustup](/rustup.md)
+- [asdf Rust](/asdf/asdf-rust.md) or [rustup](/rustup.md)
 - [Cargo](/cargo.md)
 - [WebAssembly](/wasm.md)
 
@@ -81,5 +81,14 @@ rustc --version | head -1
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension rust-lang.rust
 ```
+
+<!--
+"[rust]": {
+  "editor.defaultFormatter": "rust-lang.rust-analyzer"
+},
+"rust-analyzer.procMacro.enable": true,
+"rust-analyzer.diagnostics.experimental.enable": false
+-->

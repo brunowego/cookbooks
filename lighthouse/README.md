@@ -15,16 +15,32 @@
 
 ### Installation
 
-#### NPM
+```sh
+# Using NPM
+npm install lighthouse -g
+
+# Using Yarn v1.x
+yarn global add lighthouse
+```
+
+### Configuration
 
 ```sh
-npm install lighthouse -g
+# Git ignore
+cat << EOF >> ~/.gitignore_global
+/latest-run
+/*.report.html
+EOF
 ```
 
 ### Commands
 
 ```sh
-lighthouse -h
+# Using NPX
+npx lighthouse --help
+
+# Using Local
+lighthouse --help
 ```
 
 ### Usage
@@ -48,38 +64,81 @@ lighthouse http://localhost:3000/docs/ \
   --view
 ```
 
+## Library
+
+### Links
+
+- [Code Repository](https://github.com/GoogleChrome/lighthouse-ci)
+
+### Installation
+
+```sh
+# Using NPM
+npm install @lhci/cli --save-dev
+
+# Using Yarn
+yarn add @lhci/cli --dev
+```
+
 ### Configuration
 
-```sh
-# Git ignore
-cat << EOF >> ~/.gitignore_global
-/latest-run
-/*.report.html
-EOF
+**Refer:** `./.lighthouserc.cjs`
+
+```cjs
+const lighthouseRC = {
+  ci: {
+    collect: {
+      startServerCommand: 'yarn start',
+      url: ['http://localhost:3000'],
+      numberOfRuns: 1,
+    },
+    assert: {
+      preset: 'lighthouse:recommended',
+      assertions: {
+        'csp-xss': ['warn'],
+        'image-size-responsive': ['warn'],
+        'unsized-images': ['warn'],
+        'unused-javascript': ['warn'],
+      },
+    },
+    upload: {
+      target: 'temporary-public-storage',
+    },
+  },
+}
+
+module.exports = lighthouseRC
+```
+
+**Refer:** `./package.json`
+
+```json
+{
+  "scripts": {
+    // "pretest:lighthouse": "yarn build",
+    "test:lighthouse": "lhci autorun"
+  }
+}
 ```
 
 ```sh
-cat << EOF > ./lighthouserc.js
+#
+echo '/.lighthouseci' >> ./.gitignore
 
-EOF
+# Using NPM
+npm run test:lighthouse
+
+# Using Yarn
+yarn test:lighthouse
 ```
 
-```sh
-npm install -g @lhci/cli
-npm install -g serve
-
-npm run build
-
-openssl req \
-  -batch \
-  -newkey rsa:2048 \
-  -new \
-  -nodes \
-  -x509 \
-  -days 365 \
-  -keyout ./key.pem \
-  -out ./cert.pem \
-  -subj '/C=BR/ST=Sao Paulo/L=Sao Paulo/O=Example Inc./OU=IT Department/CN=*.example.com' \
-
+<!--
+lhci collect
+lhci upload
+lhci assert
 lhci autorun
-```
+lhci healthcheck
+lhci open
+lhci wizard
+lhci server
+-->

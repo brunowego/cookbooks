@@ -9,9 +9,11 @@ https://github.com/superbrothers/zsh-kubectl-prompt
 ### Dependencies
 
 - [Z shell (Zsh)](/zsh.md)
-- [cURL](/curl.md)
 - [Git](/git/README.md)
 - [GNU Sed](/gnu-sed.md)
+- Download Method
+  - [cURL](/curl.md)
+  - [GNU Wget](/gnu-wget.md)
 
 ### Extend
 

@@ -1,3 +1,8 @@
 {
-  "recommendations": ["esbenp.prettier-vscode"]
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "shuworks.vscode-table-formatter",
+    "zhuangtongfa.Material-theme",
+    "streetsidesoftware.code-spell-checker"
+  ]
 }

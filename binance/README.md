@@ -17,6 +17,15 @@ Jamais coloque uma ordem com stop uma proxima da outra, a Binance irá pegar a o
 - [Trading Fees](https://www.binance.com/en/fee/schedule)
 - [Deposit & Withdrawal Status](https://www.binance.com/en/network)
 
+## Wallet
+
+### Bitcoin
+
+- [BTCB Reserve](https://bitinfocharts.com/bitcoin/address/3LYJfcfHPXYJreMsASk2jkn69LWEYKzexb)
+- [Cold Wallet (1)](https://bitinfocharts.com/bitcoin/address/34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo)
+- [Cold Wallet (2)](https://bitinfocharts.com/bitcoin/address/3M219KR5vEneNb47ewrPfWyb5jQ2DjxRP6)
+- [Wallet](https://bitinfocharts.com/bitcoin/address/bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h)
+
 ## Tools
 
 - [Binance Top LSR](https://toplsr.netlify.app/)
@@ -27,6 +36,7 @@ Jamais coloque uma ordem com stop uma proxima da outra, a Binance irá pegar a o
 
 ## Terms
 
+- Bitcoin BEP2 (BTCB)
 - One-Cancels-the-Other (OCO)
 - One-Triggers-a One Cancels the-Other order (OTOCO)
 - Take Profit/Stop Loss (TP/SL)

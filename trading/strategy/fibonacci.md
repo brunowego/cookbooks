@@ -99,6 +99,4 @@ TODO
 
 <!--
 Trend-Based Fib Time
-
-
 -->

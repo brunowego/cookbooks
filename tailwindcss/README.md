@@ -146,95 +146,6 @@ module.exports = tailwindConfig
 /* @tailwind utilities; */
 ```
 
-### Extend With
-
-#### Just-in-Time ModeTailwind
-
-**Docs:** [Just-in-Time Mode](https://v2.tailwindcss.com/docs/just-in-time-mode)
-
-```sh
-# Using NPM
-npm install @tailwindcss/jit --save-dev
-
-# Using Yarn
-yarn add @tailwindcss/jit --dev
-```
-
-**Refer:** `./tailwind.config.cjs`
-
-```cjs
-/**
- * @type { import('tailwindcss').Config }
- */
-const tailwindConfig = {
-  mode: 'jit',
-  // ...
-}
-
-module.exports = tailwindConfig
-```
-
-#### ESLint
-
-**Note:** Lint for `className` in TSX files.
-
-```sh
-# Using NPM
-npm install eslint-plugin-tailwindcss --save-dev
-
-# Using Yarn
-yarn add eslint-plugin-tailwindcss --dev
-```
-
-**Refer:** `./.eslintrc.cjs`
-
-```cjs
-/**
- * @type { import('@types/eslint').Linter.Config }
- */
-const eslintRC = {
-  extends: [
-    // ...
-    'plugin:tailwindcss/recommended',
-  ],
-  plugins: [
-    // ...
-    'tailwindcss',
-  ],
-}
-
-module.exports = eslintRC
-```
-
-#### Prettier
-
-**Note:** Formatter for `className` in TSX files and `@apply` in CSS files.
-
-- [Dependency](/prettier.md#library)
-
-```sh
-# Using NPM
-npm install prettier-plugin-tailwindcss --save-dev
-
-# Using Yarn
-yarn add prettier-plugin-tailwindcss --dev
-```
-
-**Refer:** `./prettier.config.cjs`
-
-```cjs
-/**
- * @type { import('prettier').Options }
- */
-const prettierConfig = {
-  // ...
-  plugins: [require('prettier-plugin-tailwindcss')],
-  tailwindConfig: './tailwind.config.cjs',
-}
-
-module.exports = prettierConfig
-```
-
 ### Tips
 
 <!-- #### Vercel Ignore
@@ -256,7 +167,7 @@ echo '!/tailwind.config.cjs' > ./.vercelignore
 code --install-extension bradlc.vscode-tailwindcss
 
 #
-jq '."recommendations" += ["bradlc.vscode-tailwindcss"]' "$PWD/.vscode/extensions.json" | sponge "$PWD/.vscode/extensions.json"
+jq '."recommendations" += ["bradlc.vscode-tailwindcss"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 
 #
 jq '."files.associations"."*.css" |= "tailwindcss"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json

@@ -11,5 +11,5 @@ code --install-extension mrmlnc.vscode-puglint
 ```
 
 ```sh
-jq '."puglint.enable" |= true' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+jq '."puglint.enable" |= true' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```

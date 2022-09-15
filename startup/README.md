@@ -7,6 +7,11 @@ https://angel.co/
 https://linktr.ee/
 -->
 
+## Links
+
+- [Y Combinator](https://ycombinator.com/)
+- [500](https://500.co/)
+
 ## References
 
 - [Why ‘Winner Takes All’ Startups Leave Everyone Behind](https://marker.medium.com/why-winner-takes-all-leaves-everyone-behind-19bd756e1610)
@@ -96,11 +101,6 @@ https://linktr.ee/
 <!-- ## Key Features
 
 - Engajamento -->
-
-## Links
-
-- [Y Combinator](https://ycombinator.com/)
-- [500](https://500.co/)
 
 ## Series/Movies
 

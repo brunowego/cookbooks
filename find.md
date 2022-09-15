@@ -30,7 +30,21 @@ find ./ -name \*.[extension]
 
 ```sh
 #
-find ./ -name '<name>' -type d
+find ./ \
+  -name '<name>' \
+  -type d \
+  -maxdepth 2
+```
+
+###
+
+```sh
+#
+find ./ \
+  -type f \
+  -not -path '*node_modules*' | \
+    grep -oE '\.(\w+)$' | \
+      sort -u
 ```
 
 ### Find by Extension

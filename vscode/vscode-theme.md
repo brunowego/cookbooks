@@ -1,14 +1,20 @@
 # Visual Studio Theme
 
+## Extend
+
+- [Fira Code Font](/fira-code-font.md)
+
 ## Material Theme
 
 ```sh
 # Install
 code --install-extension zhuangtongfa.Material-theme
 
-# Recommendations
-jq '."recommendations" += ["zhuangtongfa.Material-theme"]' "$HOME/.config/Code/User/extensions.json" | sponge "$HOME/.config/Code/User/extensions.json"
+# Globally
+# jq '."recommendations" += ["zhuangtongfa.Material-theme"]' ""$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+jq '."workbench.colorTheme" |= "One Dark Pro"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 
-# Apply
-jq '."workbench.colorTheme" |= "One Dark Pro"' "$HOME"/.config/Code/User/settings.json | sponge "$HOME"/.config/Code/User/settings.json
+# Locally
+jq '."recommendations" += ["zhuangtongfa.Material-theme"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+jq '."workbench.colorTheme" |= "One Dark Pro"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
