@@ -91,6 +91,25 @@ Use `Control (⌃) + C`
 
 ### Issues
 
+#### Remove Prompt %
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Remove '%' in first line with the prompt
+unsetopt PROMPT_SP
+```
+
+#### Disable Session Contests Restored
+
+```log
+Session Contents Restored on Sep 16, 2022 at 4:52 PM
+```
+
+1. iTerm2 -> Preferences...
+2. Advanced Tab
+3. Session Section -> When restoring a session without restoring a running job, draw a banner saying "Session Contests Restored" below the restored contents -> Select "No"
+
 #### Window Restoration Disabled
 
 System window restoration has been disabled, which prevents iTerm2 from respecting this setting. Disable System Preferences > General > Close windows when quitting an app to enable window restoration.

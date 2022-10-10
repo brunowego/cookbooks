@@ -1,16 +1,24 @@
 # Chart Pattern
 
+## Verification
+
+- Bias
+- Context
+- Divergences
+- Timeframe (Fractals)
+
 ## Types
 
 **Tip:** Bullish/Bearish, Ascending/Descending or Rising/Falling is the same.
 
 - Adam and Eve
 - Bart Simpson
-- Broadening Wedge
+- Broadening Bottom / Broadening Wedge
 - Channel
 - Cup and Handle
 - Dark Cloud Cover
 - Dead Cat Bounce
+- Diamond
 - Downtrend / Uptrend Line. **Tip:** Just consider the body of the green candlesticks. Ignore the wick.
 - Engulfing Bar (BEEB/BUEB)
 - False Breakout / Fake-out
@@ -32,6 +40,9 @@
 - Waterfall
 
 <!--
+Empuxo de Encurtamento
+Triangulo Diagonal
+
 Ascending Triangle or Revival Pattern
 First Time Back (FTR)
 Compression

@@ -9,6 +9,7 @@ CAP/TVL
 
 ## Terms
 
+- Low Market Cap (Low Cap)
 - Vesting Schedule
 
 <!--

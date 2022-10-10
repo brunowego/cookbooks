@@ -25,6 +25,16 @@ mas install 497799835
 
 - [Xcode 10.3](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_10.3/Xcode_10.3.xip)
 
+### Configuration
+
+```sh
+#
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+#
+sudo xcodebuild -license accept
+```
+
 ### Commands
 
 ```sh
@@ -37,13 +47,6 @@ xcrun -h
 ```sh
 #
 xcodebuild -version
-
-# Switch Version
-sudo xcode-select -switch <path/to/>Xcode.app
-
-# Current Path
-xcode-select --print-path
-xcode-select -p
 
 # Open Workspace
 open -a /Applications/Xcode.app <your_workspace_name>.xcworkspace
@@ -100,6 +103,16 @@ xcodebuild \
 
 ### Tips
 
+#### Switch Version
+
+```sh
+# Current Path
+xcode-select -p
+
+#
+sudo xcode-select -switch <path/to/>Xcode.app
+```
+
 #### Old Version
 
 1. Access [More Downloads for Apple Developers](https://developer.apple.com/download/more/)
@@ -113,7 +126,7 @@ xcodebuild \
 1. Start Xcode
 2. Select Xcode > Preferences...
 3. Select Accounts
-3. Add Apple ID -> Continue
+4. Add Apple ID -> Continue
 
 <!-- ####
 

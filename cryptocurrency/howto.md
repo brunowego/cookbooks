@@ -53,7 +53,8 @@ BTC
 - Road-map
 - Social Media (Twitter, YouTube)
 - Team
-- Token Utility
+- Problem-Solving
+- Coin or Token
 - Website
 
 ## Questions
@@ -74,25 +75,4 @@ On chain
 Cross chain
 Carteira Interoperável
 Escalabilidade, Armazenamento, Descentralização
--->
-
-## Fibonacci
-
-1. 0
-2. 0.236
-3. 0.382
-4. 0.5
-5. 0.786
-6. 0.618
-7. 1
-
-<!--
-1 or 4 hours chart
-Fib Retracement
-
-Tendencia de Alta
-0.61% -> Compra
-
-Tendencia de Baixa
-0.61% -> Venda
 -->

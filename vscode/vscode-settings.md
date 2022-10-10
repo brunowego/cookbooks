@@ -1,5 +1,11 @@
 # Visual Studio Code Settings
 
+<!--
+  "files.watcherExclude": {
+    "**/.yarn/*/**": true
+  }
+-->
+
 ## Key Bindings
 
 <!--

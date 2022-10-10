@@ -4,6 +4,8 @@
 https://support.1password.com/command-line-reference/
 
 https://github.com/nuxsmin/sysPass
+
+1Password Browser Helper
 -->
 
 ## App

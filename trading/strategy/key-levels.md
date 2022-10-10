@@ -1,5 +1,9 @@
 # Key Levels
 
+<!--
+Daily: Teste cada KL do passado recente
+-->
+
 ## Rules
 
 - Use line chart to look for pivots

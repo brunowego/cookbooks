@@ -27,12 +27,12 @@ https://8marketcap.com/#
 
 **Weekend:** Closes
 
-| Symbol    | Open        | Close       |
-| --------- | ----------- | ----------- |
-| `TVC:BXY` |             | 17:30 UTC-4 |
-| `TVC:DXY` | 17:00 UTC-4 | 19:00 UTC-4 |
-| `TVC:EXY` |             | 17:30 UTC-4 |
-| `TVC:JXY` |             | 17:30 UTC-4 |
+| Symbol    | Currency             | Open        | Close       |
+| --------- | -------------------- | ----------- | ----------- |
+| `TVC:BXY` | Pound Sterling       |             | 17:30 UTC-4 |
+| `TVC:DXY` | United States Dollar | 17:00 UTC-4 | 19:00 UTC-4 |
+| `TVC:EXY` | Euro                 |             | 17:30 UTC-4 |
+| `TVC:JXY` | Japanese Yen         |             | 17:30 UTC-4 |
 
 ## Government Bonds
 

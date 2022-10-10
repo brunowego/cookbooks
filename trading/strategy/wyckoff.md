@@ -1,3 +1,0 @@
-# Wyckoff (Richard Wyckoff)
-
-TODO

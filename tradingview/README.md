@@ -4,6 +4,10 @@
 https://ct.icmarkets.com/
 -->
 
+<!--
+Settings -> Service -> Performance -> Disable hardware acceleration
+-->
+
 ## Links
 
 - [Main Website](https://tradingview.com/)
@@ -11,6 +15,7 @@ https://ct.icmarkets.com/
 - [Status Page](https://status.tradingview.com/)
 - [Shortcuts](https://tradingview.com/support/shortcuts/)
 - [Org. Repository](https://github.com/tradingview/)
+- [Widget](https://tradingview.com/widget/)
 
 <!-- ## Alternative
 
@@ -18,14 +23,10 @@ https://ct.icmarkets.com/
 
 ## Tools
 
+- Fib Channel
 - Gann Fan
 - Pitchfork
-- Fib Channel
-
-## Scale
-
-- Arithmetic
-- Logarithmic **Tip:** For large time-frames. Good for growth visualization.
+- Three Drives Pattern
 
 ## TradingView Users
 

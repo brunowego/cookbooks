@@ -7,19 +7,18 @@
 - [CoinGecko](https://coingecko.com/)
 - [CoinMarketCap](https://coinmarketcap.com/)
 
-## Checklist
-
-- Verify the Tokenomics
-- Max supply <= 1 Billion
-- Coin better than Token
-
 ## Confidence
 
-TODO
+- Coin better than Token
+- Max supply <= 1 Billion
 
-## Project Evaluation
+## Project
 
-- Community
+- GitHub Org. (Commit Frequency)
 - Road-map
+- Social Community
+- Sponsors
 - Team
 - Token Utility
+- Tokenomics
+- Website

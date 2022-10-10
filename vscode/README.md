@@ -100,6 +100,9 @@ cat "$HOME"/.vscode/settings.json
 ### Usage
 
 ```sh
+# Show status
+code -s
+
 #
 code ./[filename]
 
@@ -113,7 +116,11 @@ code --list-extensions
 code --install-extension [extension]
 
 # Disable
+code --disable-extensions
 code --disable-extension [extension]
+
+# Disable GPU
+code --disable-gpu
 
 # Uninstall
 code --uninstall-extension [extension]

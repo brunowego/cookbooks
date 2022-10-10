@@ -2,7 +2,7 @@
 
 <!--
 https://antiliquidation.gitlab.io/
-https://www.3cstats.com/leverage-bot-calculator/
+https://3cstats.com/leverage-bot-calculator/
 https://coinguides.org/average-cost-calculator-crypto-stocks-trading/
 https://charts.aggr.trade/
 https://cryptoprice.io/coins/bitcoin
@@ -23,13 +23,13 @@ https://app.pluralsight.com/guides/the-cryptography-of-bitcoin
 
 https://linkedin.com/learning/search?entityType=COURSE&keywords=bitcoin
 
-https://www.youtube.com/watch?v=A2KufQupz78
+https://youtube.com/watch?v=A2KufQupz78
 
 https://hyblockcapital.com/liquidationlevel
 
 Masternode - Dash, PIVX, CrownCoin, TransferCoin, ExclusiveCoin
 
-https://www.theblockcrypto.com/data/crypto-markets/futures
+https://theblockcrypto.com/data/crypto-markets/futures
 
 O.I. > 2,6m
 
@@ -38,17 +38,21 @@ TF 2W / Date Range / 5 bars, 70d
 https://bitcoinmonthlyreturn.com/
 -->
 
+## Important
+
+- [Bitcoin Supply Visualized](https://blockchaincenter.net/bitcoin-supply/)
+
 ## Links
 
 - [bitaddress.org](https://bitaddress.org/)
+- [Bitcoin Average Cost Per Transaction](https://ycharts.com/indicators/bitcoin_average_cost_per_transaction)
 - [Bitcoin Core](https://bitcoincore.org/)
+- [Bitcoin Improvement Proposal](https://github.com/bitcoin/bips)
+- [Bitcoin Is Dead / The #1 Database of Notable Bitcoin Skeptics](https://bitcoinisdead.org/)
 - [Bitcoin: Number of Active Addresses](https://studio.glassnode.com/metrics?a=BTC&m=addresses.ActiveCount)
 - [Code Repository](https://github.com/bitcoin/bitcoin)
-- [Taxa de hash total (TH/s)](blockchain.com/pt/charts/hash-rate)
-- [Bitcoin Average Cost Per Transaction](https://ycharts.com/indicators/bitcoin_average_cost_per_transaction)
-- [Bitcoin Is Dead / The #1 Database of Notable Bitcoin Skeptics](https://bitcoinisdead.org/)
-- [Bitcoin Improvement Proposal](https://github.com/bitcoin/bips)
 - [FiatMarketCap / Fiat Market Capitalizations](https://fiatmarketcap.com/)
+- [Taxa de hash total (TH/s)](blockchain.com/pt/charts/hash-rate)
 
 ### Treasuries
 
@@ -57,7 +61,7 @@ https://bitcoinmonthlyreturn.com/
 - [Buy Bitcoin Worldwide / Bitcoin Treasuries](https://buybitcoinworldwide.com/treasuries/)
 
 <!--
-https://www.coingecko.com/en/public-companies-bitcoin
+https://coingecko.com/en/public-companies-bitcoin
 -->
 
 ### Historical Monthly Returns
@@ -101,13 +105,16 @@ TODO
 
 ## Indicators
 
-- [200 Week Moving Average Heatmap](https://www.lookintobitcoin.com/charts/200-week-moving-average-heatmap/)
-- [Bitcoin Investor Tool: 2-Year MA Multiplier](https://www.lookintobitcoin.com/charts/bitcoin-investor-tool/)
+- [200 Week Moving Average Heatmap](https://lookintobitcoin.com/charts/200-week-moving-average-heatmap/)
+- [Bitcoin Investor Tool: 2-Year MA Multiplier](https://lookintobitcoin.com/charts/bitcoin-investor-tool/)
 - [BTC Long/Short Ratio](https://coinglass.com/LongShortRatio)
-- [Fear And Greed Index](https://www.lookintobitcoin.com/charts/bitcoin-fear-and-greed-index/)
-- [MVRV Z-Score](https://www.lookintobitcoin.com/charts/mvrv-zscore/)
-- [Net Unrealized Profit/Loss (NUPL)](https://lookintobitcoin.com/charts/relative-unrealized-profit--loss/)
-- [Stock-to-Flow Model](https://www.lookintobitcoin.com/charts/stock-to-flow-model/)
+- [Fear And Greed Index](https://lookintobitcoin.com/charts/bitcoin-fear-and-greed-index/)
+- [MVRV Z-Score](https://lookintobitcoin.com/charts/mvrv-zscore/)
+- [Net Unrealized Profit/Loss (NUPL)](https://lookintobitcoin.com/charts/relative-unrealized-profit--loss/) 🌟
+- [Network Difficulty](https://blockchain.com/charts/difficulty)
+- [Price Forecast Tools](https://www.lookintobitcoin.com/charts/bitcoin-price-prediction/)
+- [Stock-to-Flow Model](https://lookintobitcoin.com/charts/stock-to-flow-model/)
+- [Total Hash Rate (TH/s)](https://blockchain.com/charts/hash-rate)
 
 <!--
 Hash Ribbons
@@ -120,6 +127,7 @@ Hash Ribbons
 ## Terms
 
 - Bitcoin Improvement Proposal (BIP)
+- Decoupling
 - Unspent Transaction Output (UTXO)
 
 ## Personalities

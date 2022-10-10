@@ -50,7 +50,7 @@ brew install --cask ultimaker-cura
 
 #### Turn off model snapping to build platform
 
-1. Preferences
+1. Preferences -> Configure Cura...
 2. General Tab
 3. Viewport behavior
    - Uncheck: Automatically drop models to the build plate
@@ -77,7 +77,7 @@ G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
 
 #### Keep Out Area
 
-`/Applications/Ultimaker\ Cura.app/Contents/Resources/resources/definitions/creality_ender3.def.json`
+**Refer:** `/Applications/Ultimaker-Cura.app/Contents/Resources/share/cura/resources/definitions/creality_ender3.def.json`
 
 ```json
 {

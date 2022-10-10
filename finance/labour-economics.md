@@ -1,0 +1,10 @@
+# Labour Economics
+
+TODO
+
+<!--
+FRED:UNEMPLOY 1M
+FRED:JTSJOL 1M
+
+FRED:JTSJOL/FRED:UNEMPLOY 1M
+-->

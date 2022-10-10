@@ -4,13 +4,17 @@
 
 - [Investopedia / Smart Money](https://www.investopedia.com/terms/s/smart-money.asp)
 
+## Terms
+
+- Smart Money Concepts (SMC)
+
 ## Who Are
 
+- Central Banks
+- Financial Professionals
+- Funds
 - Institutional Investors
 - Market Mavens
-- Central Banks
-- Funds
-- Financial Professionals
 
 ## Divergences
 

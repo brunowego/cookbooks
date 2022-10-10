@@ -11,7 +11,8 @@
 
 ## Terms
 
-- Time High (TH) / Time Low (TL)
+- All-Time High (ATH) / All-Time Low (ATL)
+- Lower Timeframe (LTF) / Higher Timeframe (HTF)
 - Timeframe (TF)
 
 ## Setup
@@ -33,4 +34,31 @@
 - Above 45 degrees trend line angle is to fast/steep - Will eventually correct to more sustainable angle between 30-45 degrees
 - Best trend ine angles are 30-45 degrees for PA to continue in same direction
 - Below 30 degrees trend line angle is to slow/flat - Will eventually correct to more sustainable angle between 30-45 degrees
+-->
+
+## Divergence
+
+- Chart Trend vs Volume Trend
+- Chart Trend vs RSI Trend
+
+## Steps
+
+- Quarter: Trend
+- Month: Divergences, Elliott Wave
+- Week:
+- Day:
+- Intra-day:
+
+<!--
+- Trend Bias
+- Average
+- Divergences
+-->
+
+<!--
+| Timeframe | Scale       | Trend Bias | Average       | Divergences |
+| --------- | ----------- | ---------- | ------------- | ----------- |
+| Quarter   | Logarithmic | Chart, RSI | EMA 100, MACD | Chart/RSI   |
+| Month     | Logarithmic | Chart, RSI | EMA 200, MACD | Chart/RSI   |
+| Week      | Logarithmic | Chart, RSI | EMA 200, MACD | Chart/RSI   |
 -->

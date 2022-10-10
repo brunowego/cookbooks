@@ -1,3 +1,10 @@
-# Order Block
+# Order Block (OB)
 
-TODO
+<!--
+Order Imbalance
+-->
+
+## Terms
+
+- Fair Value Gap (FVG)
+- Order Flow (OF)

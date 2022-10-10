@@ -27,6 +27,16 @@ People Meter
 - [Brazil Interest Rate](https://tradingeconomics.com/brazil/interest-rate)
 - [TSE / Divulgação de Candidaturas e Contas Eleitorais](https://divulgacandcontas.tse.jus.br/divulga/#/)
 
+## External Trade
+
+- [Balança Comercial e Estatísticas de Comércio Exterior](https://www.gov.br/produtividade-e-comercio-exterior/pt-br/assuntos/comercio-exterior/estatisticas)
+- [ComexVis](http://comexstat.mdic.gov.br/pt/comex-vis)
+- [Secretaria de Comércio Exterior](https://www.gov.br/produtividade-e-comercio-exterior/pt-br/assuntos/comercio-exterior)
+
+## Indicators
+
+- [Brazil Government Budget](https://tradingeconomics.com/brazil/government-budget)
+
 <!--
 https://www.youtube.com/watch?v=8Kgo-PykDhk
 https://www.youtube.com/watch?v=KOKS_apCwzA
@@ -46,3 +56,22 @@ https://www.youtube.com/watch?v=Nk1LG5Fi9Uk
 - Instituto Brasileiro de Opinião Pública e Estatística (IBOPE)
 - Preço de Paridade Internacional (PPI)
 - Tribunal Superior Eleitoral (TSE)
+
+## Exchanges
+
+### Bovespa Index (IBOVESPA)
+
+<!--
+BMFBOVESPA:DI11!-(100-CME:GE1!)
+ECONOMICS:BRIRYY-ECONOMICS:USIRYY
+-->
+
+#### Stock Codes
+
+| Code | Type                | Example |
+| ---- | ------------------- | ------- |
+| 3    | Ordinary            | VALE3   |
+| 4    | Preferred           | GGBR4   |
+| 5    | Preferred Class A   | USIM5   |
+| 6    | Preferred Class B   | ELET6   |
+| 11   | BDRs, ETs and Units | BOVA11  |

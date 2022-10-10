@@ -40,10 +40,19 @@ brew switch [formula] [version]
 brew deps \
   --tree \
   --installed
+```
 
-# Remove all
+### Tips
+
+#### Remove All
+
+```sh
 brew leaves | xargs brew uninstall
+```
 
+#### Clean Cache
+
+```sh
 # List Cache
 ls $(brew --cache)
 
@@ -52,8 +61,6 @@ brew cleanup -s
 
 rm -fR $(brew --cache)
 ```
-
-### Tips
 
 #### Developer Mode
 

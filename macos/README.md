@@ -63,6 +63,14 @@ echo '/**/.DS_Store' >> ~/.gitignore_global
 3. Display Settings...
 4. Uncheck True Tone
 
+## Tips
+
+### Clean RAM
+
+```sh
+sudo purge
+```
+
 ## Issues
 
 <!-- ###

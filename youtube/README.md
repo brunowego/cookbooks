@@ -7,10 +7,12 @@ https://www.youtube.com/channel_switcher
 ## Links
 
 - [Watch History](https://youtube.com/feed/history)
-- [Comment History](https://www.youtube.com/feed/history/comment_history)
+- [Comment History](https://youtube.com/feed/history/comment_history)
 
 ## Terms
 
+- Clickbait
+- Copyright Strike
 - Shadowban
 
 ## Tips

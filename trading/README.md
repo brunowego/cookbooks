@@ -31,6 +31,11 @@ Contexto: Media/Fibo/Resistencia/Suporte
 Sinal: Candle/Volume
 -->
 
+<!--
+Evite padrões graficos muito bem definidos, smart-money opera contra
+Se você não identifica a liquidez, você é a liquidez
+-->
+
 ## Terms
 
 - Antifragile
@@ -108,15 +113,6 @@ Long: never buy in the futures market above the average 12
 ## Courses
 
 - The Secret Mindset – The Secret Mindset Academy
-
-<!--
-“O mercado é uma máquina que transfere dinheiro dos impacientes para os pacientes.” Warren Buffett.
-“Tenha medo quando os outros estão gananciosos. Seja ganancioso quando os outros tem medo.” Warren Buffett.
-"Compre ao som dos canhões e venda ao som dos violinos.” Warren Buffett.
-"Regra número 1: nunca perca dinheiro. Regra número 2: não esqueça a regra número 1.” Warren Buffett.
-“Compre no boato, venda no fato.”
-“A história não se repete, mas rima por vezes.” Mark Twain.
--->
 
 <!--
 Bots

@@ -1,6 +1,11 @@
-# Technical Analysis
+# Technical Analysis (TA)
 
 <!--
+Análise Técnica Discricionária
+Absorção / Exaustão
+
+DJI / DJT
+
 Higher-highs and Higher-lows
 Lower-highs and Lower-lows
 
@@ -56,10 +61,6 @@ The **trend** is your **friend**.
 | 4h     | Weekly        |
 | 1h     | Daily         |
 | 5/30m  | 1/4 Hours     |
-
-## Indicators
-
-- Relative Strength Index (RSI)
 
 ### Types
 

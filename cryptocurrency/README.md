@@ -1,6 +1,19 @@
 # Cryptocurrency
 
 <!--
+https://youtu.be/07_iTh6CCuc
+https://youtu.be/zYBNB7YfHzY
+https://youtu.be/vH0euUAveVk
+https://youtu.be/xB630zXhgT4
+https://youtu.be/cptMGtyrV6o
+https://youtu.be/iMzhexkAS3M
+https://youtu.be/5k0VQX8BSCI
+https://youtu.be/RN63vwOhrUU
+https://youtu.be/ISqk59gjA5U
+https://youtu.be/Syuvq0Cr8sI
+-->
+
+<!--
 https://www.upwork.com/hire/cryptocurrency-freelancers/
 https://www.codementor.io/cryptocurrency-experts
 
@@ -16,8 +29,6 @@ PAX Gold
 
 Ticker
 
-Governance Token
-Utility Token
 Decentralized Autonomous Organization (DAO)
 
 Ultima semana mes, vencimentos contratos futuros, smart-money
@@ -32,7 +43,9 @@ https://www.nasdaq.com/crypto-index
 
 - [Coinopsy / List of dead crypto coins](https://coinopsy.com/dead-coins/)
 - [Crypto Bubbles](https://cryptobubbles.net/)
+- [Crypto Fees](https://cryptofees.info/)
 - [CryptoAlerts](https://cryptoalerts.ai/) 🌟
+- [Cryptocurrency Market Cap over time](https://blockchaincenter.net/cryptocurrency-market-cap/)
 - [DailyClose](https://dailyclose.com/) 🌟
 - [Defi Llama / Chains](https://defillama.com/chains)
 - [Messari](https://messari.io/)
@@ -49,10 +62,6 @@ https://blockchair.com/
 ### Scandals
 
 - [Crypto Leaks](https://cryptoleaks.info/)
-
-## Retail vs Institutional
-
-TODO
 
 ### Futures and Options
 
@@ -105,11 +114,6 @@ TODO
 - [2021](https://coinmarketcap.com/historical/20210101/)
 - [2022](https://coinmarketcap.com/historical/20220101/)
 
-### Fear & Greed Index
-
-- [Crypto](https://alternative.me/crypto/fear-and-greed-index/)
-- [Stock](https://money.cnn.com/data/fear-and-greed/)
-
 ### Heatmap
 
 - [COIN360 / Coins](https://coin360.com/)
@@ -159,7 +163,6 @@ CME Gaps
 
 ## Terms
 
-- All-Time High (ATH) / All-Time Low (ATL)
 - Annual Percentage Rate (APR)
 - Annual Percentage Yield (APY)
 - Auto-Deleveraging (ADL)
@@ -176,6 +179,7 @@ CME Gaps
 - Fractal Expansion
 - Initial Coin Offering (ICO)
 - Initial DEX Offering (IDO)
+- Initial Exchange Offering (IEO)
 - Initial Game Offering (IGO)
 - Initial NFT Offering (INO)
 - Joy of Missing Out (JOMO)

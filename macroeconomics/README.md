@@ -29,8 +29,21 @@
 - Human Development Index (HDI)
 - Laffer Curve
 - New World Order (1945)
+- Soft Landing
 - Three-World Model (Nobility, Clergy, Servants)
 - Wage-Price Spiral
+
+## Monetary Policy (Expansion/Contraction)
+
+TODO
+
+<!--
+Fiscal Policy
+-->
+
+## Supply Chain
+
+- [MarineTraffic](https://marinetraffic.com/en/ais/home/centerx:125.3/centery:31.8/zoom:6) **Ship Type:** Cargo Vessels and Tankers.
 
 ## Reports
 

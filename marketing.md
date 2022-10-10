@@ -4,12 +4,17 @@
 
 - Business-To-Business (B2B)
 - Business-To-Consumer (B2C)
+- Cutthroat Competition
 - Environmental Social and Governance (ESG)
 - False Engagement
 - Guerrilla Marketing
 - Media Training
 - Product/Market Fit (a.k.a Product-Market Fit)
 - Redpill
+
+## Strategy
+
+- Red Ocean / Blue Ocean
 
 ## Phenomenons
 

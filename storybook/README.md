@@ -1,6 +1,10 @@
 # Storybook
 
 <!--
+https://stackoverflow.com/questions/71130741/storybook-missing-react-package-when-use-with-preact/73791613#73791613
+-->
+
+<!--
 https://github.com/Vizzuality/front-end-scaffold
 https://storybook.js.org/blog/how-to-automate-ui-tests-with-github-actions/
 

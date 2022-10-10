@@ -8,6 +8,11 @@
 | EMA       | 48     | White  |
 | EMA       | 192    | Red    |
 
+## Important
+
+- **Golden Cross / Death Cross:** EMA 1D 50 close 0 SMA 5 / MA 1D 200 close 0 SMA 5
+- **Kiss of Death:** Daily close below MA 200 (after ATH). Pullback to the daily MA 200 ("kiss"). Drop below the lowest point before the pullback bounce ("death")
+
 ## Entry Methods
 
 ### With MACD
@@ -50,7 +55,3 @@
 - EMA 200 close 0 SMA 5 **Style:** EMA White
 - Volume (Vol)
 - Volume Profile Visible Range (VPVR) **Inputs:** Row Size 176, Volume Total, Volume Area Volume 100. **Style:** Only Volume Profile. -->
-
-<!-- ### Powerful
-
-- **Golden/Death Cross** EMA 1D 50 close 0 SMA 5 / MA 1D 200 close 0 SMA 5 -->

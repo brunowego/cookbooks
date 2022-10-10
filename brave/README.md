@@ -1,5 +1,15 @@
 # Brave
 
+<!--
+brave://settings/?search=Use+hardware+acceleration+when+available
+System -> Use hardware acceleration when available
+-->
+
+<!--
+brave://discards
+brave://flags
+-->
+
 ## App
 
 ### Installation

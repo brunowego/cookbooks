@@ -1,5 +1,9 @@
 # Coinalyze
 
+<!--
+https://coinalyze.net/snapshot/jHBu_wvZ
+-->
+
 ## Sentiment Analysis
 
 - [Open Interest](https://coinalyze.net/bitcoin/open-interest/)

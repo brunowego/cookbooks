@@ -15,7 +15,9 @@ https://www.investing.com/economic-calendar/
 ## Terms
 
 - Flash Crash
+- Liquidity Risk
 - Risk-to-Reward Ratio (Risk/Reward Ratio) (RR)
+- Systemic Risk vs. Systematic Risk
 - Utterly Destroyed or Ruined (REKT)
 
 ## Take Care

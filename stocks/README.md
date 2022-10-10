@@ -1,6 +1,8 @@
 # Stocks
 
 <!--
+FedEx Indicator / Proxy
+
 data ex dividendos
 
 Annual Share Buybacks
@@ -11,7 +13,7 @@ Prime Book Global Equities Cumulative 4 Week Short Trading Flow Z-Score
 Investors
 - Equity L/S
 - Macro ex-CTAs
-- CTAs
+- Commodity Trading Advisor (CTAs)
 - Risk Parity Funds
 - US Balanced MFs
 
@@ -33,11 +35,17 @@ Benchmark
 
 - [Stake](https://hellostake.com/)
 
+## Calendars
+
+- [Macroption / Options Expiration Calendar 2022-2023 (US Equity, Index, ETF Options)](https://macroption.com/options-expiration-calendar/)
+- [Macroption / VIX Expiration Calendar 2022-2023 (Futures & Options)](https://macroption.com/vix-expiration-calendar/)
+
 ## Terms
 
 - Buy-Side / Sell-Side
 - Hedge Fund Research (HFR)
 - Share Repurchase / Stock Buyback
+- Small-Cap / Big-Cap (Large-Cap)
 - Stock Picking
 - Stock Split / Stock Divide
 

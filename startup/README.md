@@ -5,6 +5,8 @@ Caserbin raises $10M in seed funding to help companies deliver a great candidate
 
 https://angel.co/
 https://linktr.ee/
+
+Pró-Labore
 -->
 
 ## Links
@@ -49,6 +51,7 @@ https://linktr.ee/
 - Environmental, Social and Corporate Governance (ESG)
 - Exchange-Traded Fund (ETF)
 - Exit to Community (E2C)
+- Fake It Till You Make It
 - Fat-Finger Error (FFE)
 - First-Mover Advantage (FMA)
 - Flip
@@ -63,6 +66,7 @@ https://linktr.ee/
 - Operating expenses (OPEX)
 - Payout Ratio
 - Private Equity
+- Quiet Firing / Quiet Quitting
 - Rapport
 - Skin In The Game
 - Soft Skills

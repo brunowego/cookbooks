@@ -1,5 +1,14 @@
 # On-Chain Analysis
 
+## Charts
+
+- Supply
+- Addresses
+- Valuation
+- Transactions
+- Mining
+- Exchanges
+
 ## Tools
 
 - [CryptoQuant / Chart](https://cryptoquant.com/asset/btc/summary)

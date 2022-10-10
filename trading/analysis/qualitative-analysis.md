@@ -1,3 +1,3 @@
-# Qualitative Analysis
+# Qualitative Analysis (QA)
 
 TODO

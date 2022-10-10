@@ -20,7 +20,6 @@
 - Chaos engineering (Chaos Monkey)
 - Churn Rate
 - Classless Inter-Domain Routing (CIDR)
-- Clickbait
 - Cloud Provider/Cloud Computing
 - Command qQuery Responsibility Segregation (CQRS)
 - Common Gateway Interface (CGI)
@@ -30,6 +29,7 @@
 - Data Source Name (DSN)
 - Data Transfer Object (DTO)
 - Distributed Cloud Operating System (DC/OS)
+- Early Adopter
 - Enhanced Entity–Relationship (EER)
 - Enterprise Random Password Manager (ERPM)
 - Entity Relationship Diagram (ERD)

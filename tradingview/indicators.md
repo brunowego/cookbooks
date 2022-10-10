@@ -21,7 +21,6 @@
 - Moving Average Convergence Divergence (MACD) **Tip:** Works better with >= 4 hours time-frames.
 - On-Balance Volume (OBV)
 - Open Interest (OI) **Tip:** Futures only, Represents market purchases **Style:** Remove Tables
-- Relative Strength Index (RSI). **Config:** MA Length: 20 **Tip:** Overbought (>= 70) and Oversold (<= 30). Remember to add a alert on RSI for Overbought (69) / Oversold (31). 🌟
 - RSI Levels
 - Stochastic RSI **Tip:** Best use with weekly time-frame.
 - TD Sequential
@@ -44,3 +43,7 @@
 - Supertrend
 - Volume Profile and Volume Indicator (VPVI)
 -->
+
+## Momentum
+
+- Relative Strength Index (RSI). **Inputs:** Source: `ohlc4`. **Tip:** Overbought (>= 70) and Oversold (<= 30). Remember to add a alert on RSI for Overbought (69) / Oversold (31). 🌟

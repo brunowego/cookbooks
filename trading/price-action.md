@@ -6,6 +6,7 @@ Mais comum reteste em zonas de candles passados de venda
 Sempre verificar perda de minima
 Entrada na metade da zona
 
+---
 https://www.youtube.com/watch?v=tgEO_FF4n6Y
 
 https://www.youtube.com/c/Fabr%C3%ADcioLorenz
@@ -25,17 +26,16 @@ https://www.youtube.com/channel/UCl_kgnFsEqCsXiqRowBCpZA
 
 - Accumulation / Distribution
 - Break/Retest Zone
+- Change of Character (CHoCH)
 - Key Level
-- Liquidity Grab (LG) / Structure Break (SB)
+- Liquidity Zone (LZ) / Liquidity Grab (LG)
 - Open-High-Low-Close (OHLC)
+- Point of Interest (PoI)
 - Price Zone (PZ)
 - Pullback (Uptrend) / Rally (Downtrend)
-- Support / Resistance
-- Point of Interest (PoI)
-- Institutional Order Flow (IOF)
-
+- Structure Break (SB) or Break of Structure (BoS) / Break in Market Structure (BMS)
+- Support / Resistance<!-- / Axis-->
 <!--
-Change Of Character (CHOCH)
 Break Hook Go (BHG)
 News Candle
 Red Bar Take Out
@@ -65,7 +65,14 @@ Red Bar Take Out
 
 ## Tips
 
-### Liquidity Zone
+### Liquidity Zones
 
-- Look for liquidity zones on 1d timeframe
+<!--
+Stop loss
+Stop hunting
+Manipulation
+-->
+
+- Look for liquidity grab on 1d timeframe
+- Thoroughly check if the zone has been touched before
 <!-- - Draw a horizontal rectangle from the opening/closing of the candle to the end of the wick -->

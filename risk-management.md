@@ -6,6 +6,10 @@ https://app.pluralsight.com/library/courses/aws-developer-demystifying-associate
 
 Risk management is the method of defining, assessing, and reacting to any risk that occurs over the course of a project's life cycle in order to keep the project on track and on target.
 
+## Terms
+
+- Cool-off / Collapse
+
 ## Risk Types
 
 - Negative -> Threats

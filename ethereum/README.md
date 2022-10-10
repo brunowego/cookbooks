@@ -10,6 +10,8 @@ Cloken
 https://github.com/scaffold-eth/scaffold-eth
 
 https://www.casadocodigo.com.br/products/livro-blockchain-ethereum
+
+https://bordel.wtf/
 -->
 
 ## Links
@@ -23,6 +25,7 @@ https://www.casadocodigo.com.br/products/livro-blockchain-ethereum
 
 ## Tools
 
+- [beaconcha.in - Open Source Ethereum Blockchain Explorer](https://beaconcha.in/)
 - [Etherscan - Ethereum Blockchain Explorer](https://etherscan.io/)
 
 <!--

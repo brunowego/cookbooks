@@ -2,19 +2,20 @@
 
 ## Global
 
-- Credit Suisse
-- Morgan Stanley
-- Wells Fargo
-- Gurgavin Capital
-- Goldman Sachs (GS)
-- Canadian Imperial Bank of Commerce (CIBC)
-- Jefferies Group
-- Standard Chartered
-- Visa
-- Nomura Holdings
-- Citibank (Citi)
-- JPMorgan Chase
-- Scotiabank
-- Bank of America
-- HSBC
+- Bank of America (BofA)
 - Bank of Montreal (BMO)
+- Canadian Imperial Bank of Commerce (CIBC)
+- Citigroup (Citi)
+- Credit Suisse (CS)
+- Goldman Sachs (GS)
+- Gurgavin Capital (GC)
+- Hongkong and Shanghai Banking Corporation (HSBC)
+- Jefferies Group (JG)
+- JPMorgan Chase
+- Morgan Stanley (MS)
+- Nomura Holdings
+- Scotiabank
+- Standard Chartered (SC)
+- Union Bank of Switzerland (UBS)
+- Visa
+- Wells Fargo (WF)
