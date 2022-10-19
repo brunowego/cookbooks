@@ -31,6 +31,7 @@
 - Williams Alligator. **Tip:** Good sequence is green, red and blue.
 
 <!--
+- Correlation Coefficient (CC)
 - Stop ATR
 - HiLo Activator
 - Average True Range (ATR)
@@ -46,4 +47,4 @@
 
 ## Momentum
 
-- Relative Strength Index (RSI). **Inputs:** Source: `ohlc4`. **Tip:** Overbought (>= 70) and Oversold (<= 30). Remember to add a alert on RSI for Overbought (69) / Oversold (31). 🌟
+- Relative Strength Index (RSI). **Tip:** Overbought (>= 70) and Oversold (<= 30). Remember to add a alert on RSI for Overbought (69) / Oversold (31). 🌟

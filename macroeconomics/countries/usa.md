@@ -75,7 +75,7 @@ TODO
 - Month-over-Month (MoM)
 - Non-Farm Payrolls (NFP)
 - Personal Consumption Expenditures (PCE)
-- Producer Price Index (PPI)
+- Producer Price Index (PPI) [External](https://investing.com/economic-calendar/ppi-238)
 - Purchasing Managers Index (PMI)
 - Quarter-on-Quarter or Quarter-over-Quarter (QoQ)
 - Year-over-Year (YoY)

@@ -2,11 +2,11 @@
 
 ## Screen
 
-| Size | Time-frames                                 | Position         |
-| ---- | ------------------------------------------- | ---------------- |
-| 2/4  | 12h, 1D\*, 3D, 15D, 1W, 2W, 1M, 3M, 6M, 12M | 2/4 Left Full    |
-| 1/4  | 2h, 4h\*                                    | 1/4 Right Top    |
-| 1/4  | 15m, 30m, 1h\*                              | 1/4 Right Bottom |
+| Size | Time-frames                            | Position         |
+| ---- | -------------------------------------- | ---------------- |
+| 2/4  | 12h, 1D\*, 3D, 1W, 2W, 1M, 3M, 6M, 12M | 2/4 Left Full    |
+| 1/4  | 2h, 4h\*                               | 1/4 Right Top    |
+| 1/4  | 15m, 30m, 1h\*                         | 1/4 Right Bottom |
 
 ## Object Tree
 

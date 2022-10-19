@@ -36,10 +36,3 @@ red e0294a
 
 - Access [Funding Rate](https://coinglass.com/FundingRate)
 - Order By Binance
-
-<!-- ### Correlation of Technical Indicators
-
-| Position | Price   | O.I.    | L.S.R.  | Funding Rate     |
-| -------- | ------- | ------- | ------- | ---------------- |
-| Long     | Rising  | Rising  | Falling | Negative rising  |
-| Short    | Falling | Falling | Rising  | Positive falling | -->

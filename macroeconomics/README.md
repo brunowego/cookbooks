@@ -1,5 +1,10 @@
 # Macroeconomics
 
+<!--
+Demand > Supply = inflation
+Supply > Demand = deflation
+-->
+
 ## Schools
 
 - School of Salamanca (Salmanticenses)
@@ -21,8 +26,13 @@
 - Financial Cycles
 - Business Cycle
 
+## Theories
+
+- Liquidity Preference
+
 ## Terms
 
+- Deviation
 - Employment Cost Index (ECI)
 - Full Employment | Less than 5%
 - Gross Domestic Product (GDP)
@@ -39,6 +49,11 @@ TODO
 
 <!--
 Fiscal Policy
+Zero Lower Bound
+QE
+QT
+Fed Balance
+Yield Curve Control
 -->
 
 ## Supply Chain

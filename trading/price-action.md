@@ -35,11 +35,16 @@ https://www.youtube.com/channel/UCl_kgnFsEqCsXiqRowBCpZA
 - Pullback (Uptrend) / Rally (Downtrend)
 - Structure Break (SB) or Break of Structure (BoS) / Break in Market Structure (BMS)
 - Support / Resistance<!-- / Axis-->
+
 <!--
 Break Hook Go (BHG)
 News Candle
 Red Bar Take Out
 -->
+
+<!-- ##
+
+- Liquidity Grab (LG) or Break of Structure (BoS) -->
 
 ## Flight Plan
 

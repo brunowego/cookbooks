@@ -4,6 +4,10 @@
 https://statusinvest.com.br/indices/ibovespa
 -->
 
+## Terms
+
+- Parabolic SAR (Stop And Reverse)
+
 ## Stock Screener
 
 ### Links

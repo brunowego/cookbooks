@@ -108,7 +108,6 @@ TODO
 - [200 Week Moving Average Heatmap](https://lookintobitcoin.com/charts/200-week-moving-average-heatmap/)
 - [Bitcoin Investor Tool: 2-Year MA Multiplier](https://lookintobitcoin.com/charts/bitcoin-investor-tool/)
 - [BTC Long/Short Ratio](https://coinglass.com/LongShortRatio)
-- [Fear And Greed Index](https://lookintobitcoin.com/charts/bitcoin-fear-and-greed-index/)
 - [MVRV Z-Score](https://lookintobitcoin.com/charts/mvrv-zscore/)
 - [Net Unrealized Profit/Loss (NUPL)](https://lookintobitcoin.com/charts/relative-unrealized-profit--loss/) 🌟
 - [Network Difficulty](https://blockchain.com/charts/difficulty)
@@ -151,10 +150,6 @@ Hash Ribbons
 ### Fed Cycles and Bitcoin Performance
 
 ![Fed Cycles and Bitcoin Performance](/assets/images/trading/fed-cycles.webp)
-
-### [Crypto Fear & Greed Index Over Time](https://alternative.me/crypto/fear-and-greed-index/)
-
-Less than 10 indicates a good zone to buy.
 
 ### Momentum Check
 

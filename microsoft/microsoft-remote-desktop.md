@@ -1,5 +1,9 @@
 # Microsoft Remote Desktop
 
+## Alternatives
+
+- [Remote Desktop](/remote-desktop.md)
+
 ## App
 
 ### Installation

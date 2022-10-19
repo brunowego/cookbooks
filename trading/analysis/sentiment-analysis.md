@@ -4,12 +4,26 @@
 https://lunarcrush.com/coins/btc/bitcoin?metric=close%2Cmarket_cap
 -->
 
+## Related
+
 ## Indicators
 
 - Derivatives
   - Open Interest
   - Long/Short Ratio
   - Funding Rate
+
+## Fear & Greed Index (FGI)
+
+- [LookIntoBitcoin / Fear And Greed Index](https://lookintobitcoin.com/charts/bitcoin-fear-and-greed-index/)
+- [Alternative.me / Crypto Fear & Greed Index](https://alternative.me/crypto/fear-and-greed-index/)
+
+### Tools
+
+- [CFGI.io](https://cfgi.io/)
+- [cURL Request](https://api.alternative.me/fng/)
+- [HyblockCapital](/hyblockcapital.md)
+- [PNG Image](https://alternative.me/crypto/fear-and-greed-index.png)
 
 ## Tools
 

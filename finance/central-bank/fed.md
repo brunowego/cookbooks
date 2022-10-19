@@ -11,7 +11,7 @@ Balanço Patrimonial
 Ativos:
 - Treasury Bills
 - Treasury Notes
-- Treasury Bonds
+- Treasury Bonds (T-bonds)
 - Treasury Inflation-Protected
 - Securities (TIPS)
 - Mortgage Backed Securities (MBS)

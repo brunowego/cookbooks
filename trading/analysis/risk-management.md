@@ -20,6 +20,23 @@ https://www.investing.com/economic-calendar/
 - Systemic Risk vs. Systematic Risk
 - Utterly Destroyed or Ruined (REKT)
 
+## Risk-On / Risk-Off
+
+| Indicator   | Risk-On               | Risk-Off                |
+| ----------- | --------------------- | ----------------------- |
+| VIX         | if VIX is down        | if VIX is up            |
+| Stocks      | if Stocks are up      | if Stocks are down      |
+| SPHB / SPLV | if SPHB / SPLV is up  | if SPHB / SPLV is down  |
+| Commodities | if Commodities are up | if Commodities are down |
+| XAU / XAG   | if XAU / XAG is down  | if XAU / XAG is up      |
+| Cooper      | if Cooper is up       | if Cooper is down       |
+| Bonds       | if Bonds are down     | if Bonds are up         |
+
+### Glossary
+
+- S&P 500 High Beta (SPHB)
+- S&P 500 Low Volatility (SPLV)
+
 ## Take Care
 
 - Drawdown

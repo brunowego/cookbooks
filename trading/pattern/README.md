@@ -1,0 +1,5 @@
+# Trading Pattern
+
+## Types
+
+- Harmonics

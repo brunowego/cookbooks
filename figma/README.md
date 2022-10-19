@@ -46,6 +46,12 @@ F4F5F7
 brew install --cask figma
 ```
 
+#### Chocolatey
+
+```sh
+choco install figma -y --ignore-checksums
+```
+
 ## Tips
 
 ### Small/Big Nudge

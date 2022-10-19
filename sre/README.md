@@ -151,12 +151,13 @@ https://cloud.google.com/blog/products/gcp/an-example-escalation-policy-cre-life
 - IT Service Management (ITSM)
 - Service Oriented Architecture (SOA)
 
-##
+## Benefits
 
 - Blameless Culture
 - Holistic Vision
 - Quality by Design
 - Security by Design
+- Privacy by Design / Privacy by Default
 
 ## Metrics
 
@@ -257,15 +258,18 @@ Use error budgets
 
 1. SRE needs Service Level Objectives (SLO), with consequences.
 2. SREs have time to make tomorrow better than today.
-  - SLOs and Error Budgets are the first step.
-  - The next step is staffing an SRE role.
-  - Real responsibility.
-  - Once you have SREs: make sure they know that their job is not to suffer under operation load, but to make each day brighter.
-  - "Brighter" might mean different things: It depends on what your SREs find most useful to do.
+
+- SLOs and Error Budgets are the first step.
+- The next step is staffing an SRE role.
+- Real responsibility.
+- Once you have SREs: make sure they know that their job is not to suffer under operation load, but to make each day brighter.
+- "Brighter" might mean different things: It depends on what your SREs find most useful to do.
+
 3. SRE teams have the ability to regulate their workload.
-  - Your teams need to be able to prioritize and do the work.
-  - Each new system to maintain has a human cost.
-  - Must be abre to push-back on unreliable practices and systems.
+
+- Your teams need to be able to prioritize and do the work.
+- Each new system to maintain has a human cost.
+- Must be abre to push-back on unreliable practices and systems.
 
 ## Troubleshooting
 
@@ -395,4 +399,3 @@ Use error budgets
 https://www.youtube.com/watch?v=OnX45XBbc4I
 https://www.youtube.com/watch?v=IFn0reHaGMg
 -->
-

@@ -13,4 +13,14 @@ https://www.linkedin.com/learning/penetration-testing-advanced-kali-linux/welcom
 
 ## Links
 
-- [Main Website](https://www.metasploit.com/)
+- [Main Website](https://metasploit.com/)
+
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew instal --cask metasploit
+```

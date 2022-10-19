@@ -56,6 +56,7 @@ https://www.nasdaq.com/crypto-index
 - [Web3 Security Leaderboard](https://certik.com/)
 
 <!--
+https://cryptocraft.com/
 https://blockchair.com/
 -->
 
@@ -125,6 +126,7 @@ https://blockchair.com/
 - [Quantify Crypto](https://quantifycrypto.com/terminal)
 - [Boblles](https://boblles.com/)
 - [Coinglass / Total Liquidations](https://coinglass.com/LiquidationData)
+- [CryptoMeter.io / Total Market Liquidation](https://cryptometer.io/liquidation-data)
 - [CoinMarketCal](https://coinmarketcal.com/)
 - [CoinMarketCap](https://coinmarketcap.com/)
 - [ICO Drops](https://icodrops.com/)

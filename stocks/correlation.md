@@ -1,6 +1,10 @@
 # Correlation
 
 <!--
+CPI (Weekly) vs !GAAPSPX | Correlation
+
+MORTGAGE30US (Weekly) + USCSHPI vs USCBBS
+
 TB3MS + FEDFUNDS + USIRYY = Pinned to Scale B
 -->
 

@@ -4,6 +4,10 @@
 https://artifacthub.io/packages/tekton-task/tekton-catalog-tasks/gitleaks
 -->
 
+## Links
+
+- [Code Repository](https://github.com/zricethezav/gitleaks)
+
 ## Alternatives
 
 - [Alternatives](/alternatives.md#code-secrets)

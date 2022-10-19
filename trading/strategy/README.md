@@ -20,12 +20,10 @@ Advanced Break Down/Up
 - Triangular Moving Average (TMA)
 - Weighted Moving Average (WMA)
 
-## Strategies
+## Types
 
 - [Candlestick](/trading/strategy/candlestick.md)
 - [Common But Differentiated Responsibility (CBDR)](/trading/strategy/cbdr.md)
-- [Dow Theory (Charles Dow)](/trading/strategy/dow-theory.md)
-- [Elliott Wave Principle](/trading/strategy/elliott-wave-principle.md)
 - [Fair Value Gap (FVG)](/trading/strategy/fvg.md)
 - [Fibonacci](/trading/strategy/fibonacci.md)
 - [Interbank Price Delivery Algorithm (IPDA)](/trading/strategy/ipda.md)
@@ -38,4 +36,12 @@ Advanced Break Down/Up
 - [Power of Three](/trading/strategy/power-of-three.md)
 - [Price Action](/trading/strategy/price-action.md)
 - [Small and Medium-sized Trader (SMT)](/trading/strategy/smt.md)
-- [Wyckoff (Richard Wyckoff)](/trading/strategy/wyckoff.md)
+
+<!--
+Falcon
+-->
+
+## Theories
+
+- [Dow Theory (Charles Dow)](/trading/strategy/dow-theory.md)
+- [Wyckoff (Richard Wyckoff)](/trading/theory/wyckoff.md)

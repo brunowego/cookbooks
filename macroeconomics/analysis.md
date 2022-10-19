@@ -1,5 +1,12 @@
 # Analysis
 
+## Terms
+
+- Flight-to-Liquidity (FtL)
+- Flight-to-Quality (FtQ)
+- Flight-to-Safety (FtS)
+- Credit Spread (a.k.a Yield Spread)
+
 ## Global Indicators
 
 ### U.S.A
@@ -39,3 +46,10 @@ XLF
 XLE
 XLC
 -->
+
+## Yield Curve
+
+![Normal vs Inverted Yield Curve](/assets/images/analysis/normal-vs-inverted-yield-curve.png)
+
+- Normal Yield Curve:
+- Inverted Yield Curve: Risk Aversion, FtQ / FtL

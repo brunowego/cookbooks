@@ -6,10 +6,11 @@
 
 ## Reports
 
-### Fear & Greed Index
+### Fear & Greed Index (FGI)
 
-- [Crypto](https://alternative.me/crypto/fear-and-greed-index/)
-- [Stock](https://money.cnn.com/data/fear-and-greed/)
+- [LookIntoBitcoin / Fear And Greed Index](https://lookintobitcoin.com/charts/bitcoin-fear-and-greed-index/)
+- [Alternative.me / Crypto Fear & Greed Index](https://alternative.me/crypto/fear-and-greed-index/)
+- [CNN / Fear & Greed Index](https://edition.cnn.com/markets/fear-and-greed)
 
 ### AAII
 

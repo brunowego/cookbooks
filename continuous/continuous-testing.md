@@ -7,6 +7,6 @@ https://linkedin.com/learning/programming-foundations-software-testing-qa/set-th
 https://linkedin.com/learning/test-automation-foundations/build-a-foundation-of-test-automation
 -->
 
-##
+## Types
 
 - Regression Testing

@@ -5,7 +5,7 @@ A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifa
 ## Links
 
 - [Code Repository](https://github.com/aquasecurity/trivy)
-- [Main Website](https://aquasecurity.github.io/trivy/)
+- [Main Website](https://trivy.dev/)
 
 ## CLI
 

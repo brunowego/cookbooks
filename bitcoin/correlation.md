@@ -3,6 +3,10 @@
 <!--
 BTC vs US10Y
 US02Y vs FEDFUNDS
+
+---
+INDEX:BTCUSD/FRED:WM2NS (Weekly) (Log)
+INDEX:BTCUSD/FRED:WM1NS (Weekly) (Log)
 -->
 
 ## With Grayscale Bitcoin Trust (GBTC)

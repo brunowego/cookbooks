@@ -242,17 +242,17 @@ Middle East, Northern Africa, Southern Africa.
 
 North America, South America, Central America, Caribbean.
 
-| Name                                     | Symbol        | Volatility                 | Trading | Pre-Open | Country |
-| ---------------------------------------- | ------------- | -------------------------- | ------- | -------- | ------- |
-| Bovespa Index (IBOVESPA)                 | `IBOV`        |                            |         |          |         |
-| Dow Jones Industrial Average (DJI)       | `DJI`, `YM1!` |                            |         |          |         |
-| Dow Jones Transportation Average (DJT)   | `DJT`         |                            |         |          |         |
-| Nasdaq Composite                         | `IXIC`        | `CME:VLQ1!`, `NASDAQ:VOLQ` |         |          |         |
-| New York Stock Exchange (NYSE) Composite | `NYA`         |                            |         |          |         |
-| Standard and Poor's 500 (S&P 500)        | `SPX`, `ES1!` |                            |         |          |         |
-| TSX Composite                            |               |                            |         |          |         |
-| U.S. Dollar Index                        | `DXY`         |                            |         |          |         |
-| Volatility Index                         | `VIX`         |                            |         |          |         |
+| Name                                     | Symbol                  | Volatility                 | Trading | Pre-Open | Country |
+| ---------------------------------------- | ----------------------- | -------------------------- | ------- | -------- | ------- |
+| Bovespa Index (IBOVESPA)                 | `IBOV`                  |                            |         |          |         |
+| Dow Jones Industrial Average (DJI)       | `DJI`, `DJIA1!`, `YM1!` |                            |         |          |         |
+| Dow Jones Transportation Average (DJT)   | `DJT`                   |                            |         |          |         |
+| Nasdaq Composite                         | `IXIC`                  | `CME:VLQ1!`, `NASDAQ:VOLQ` |         |          |         |
+| New York Stock Exchange (NYSE) Composite | `NYA`                   |                            |         |          |         |
+| Standard and Poor's 500 (S&P 500)        | `SPX`, `ES1!`           |                            |         |          |         |
+| TSX Composite                            |                         |                            |         |          |         |
+| U.S. Dollar Index                        | `DXY`                   |                            |         |          |         |
+| Volatility Index                         | `VIX`                   |                            |         |          |         |
 
 <!--
 CN50USD

@@ -2,6 +2,8 @@
 
 <!--
 https://ct.icmarkets.com/
+https://exocharts.com/
+https://fiatleak.com/btc
 -->
 
 <!--
@@ -76,6 +78,15 @@ brew install --cask tradingview
 - 🔵 Stock Market
 
 ### Issues
+
+#### Price Scale
+
+<!--
+EMA 200 or EMA 50 (Month)
+-->
+
+1. Price Settings
+2. Check: Scale price chart only
 
 #### Switching Screen
 
