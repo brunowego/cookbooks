@@ -8,6 +8,23 @@
 - [U.S. Gross Domestic Product (GDP) QoQ](https://investing.com/economic-calendar/gdp-375)
 - [AAA / Gas Prices](https://gasprices.aaa.com/)
 
+## Terms
+
+- Automatic Data Processing (ADP)
+- Conference Board (CB)
+- Consumer Price Index (CPI)
+- Gross Domestic Product (GDP) [External](https://investing.com/economic-calendar/gdp-375)
+- Institute of Supply Management (ISM)
+- Job Openings and Labor Turnover Survey (JOLTs)
+- Month-over-Month (MoM)
+- National Bureau of Economic Research (NBER)
+- Non-Farm Payrolls (NFP)
+- Personal Consumption Expenditures (PCE)
+- Producer Price Index (PPI) [External](https://investing.com/economic-calendar/ppi-238)
+- Purchasing Managers Index (PMI)
+- Quarter-on-Quarter or Quarter-over-Quarter (QoQ)
+- Year-over-Year (YoY)
+
 ## Indicators
 
 - [United States Inflation Rate](https://tradingeconomics.com/united-states/inflation-cpi)
@@ -63,22 +80,6 @@ TODO
 | Philadelphia Fed Manufacturing Index (Sep) | 🔴              | 2.8      | 6.2      |
 | Retail Sales (MoM) (Aug)                   | 🔴              | 0.2%     | 0.0%     |
 -->
-
-## Terms
-
-- Automatic Data Processing (ADP)
-- Conference Board (CB)
-- Consumer Price Index (CPI)
-- Gross Domestic Product (GDP) [External](https://investing.com/economic-calendar/gdp-375)
-- Institute of Supply Management (ISM)
-- Job Openings and Labor Turnover Survey (JOLTs)
-- Month-over-Month (MoM)
-- Non-Farm Payrolls (NFP)
-- Personal Consumption Expenditures (PCE)
-- Producer Price Index (PPI) [External](https://investing.com/economic-calendar/ppi-238)
-- Purchasing Managers Index (PMI)
-- Quarter-on-Quarter or Quarter-over-Quarter (QoQ)
-- Year-over-Year (YoY)
 
 ## Correlation
 

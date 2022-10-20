@@ -20,6 +20,7 @@ OS Internals (Group, ID, Permissions)
 
 ## Terms
 
+- User and Entity Behavior Analytics (UEBA)
 - Application Layer Transport Security (ALTS)
 - Border Gateway Protocol (BGP)
 - Common Vulnerabilities and Exposures (CVE)

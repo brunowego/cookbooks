@@ -1,6 +1,10 @@
 # Cyberattack
 
 <!--
+https://cisecurity.org/controls/cis-controls-navigator/
+-->
+
+<!--
 https://app.pluralsight.com/paths/skill/accessdata-forensic-toolkit-ftk
 
 https://app.pluralsight.com/paths/skill/blue-team-tools
@@ -36,11 +40,6 @@ AccessData Forensic Toolkit (FTK)
 
 Blue Team: Defense
 Red Team: Offensive
--->
-
-<!--
-MITRE ATT&CK (Adversarial Tactics, Techniques & Common Knowledge)
-Cyber Kill Chain
 -->
 
 <!--
