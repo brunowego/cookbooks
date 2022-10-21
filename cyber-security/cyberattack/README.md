@@ -1,10 +1,14 @@
 # Cyberattack
 
 <!--
+https://youtube.com/playlist?list=PLc6zqGSJMvCQirRFTTcfodKaAbM1qgkNQ
+
 https://cisecurity.org/controls/cis-controls-navigator/
 -->
 
 <!--
+https://app.pluralsight.com/library/courses/cross-site-forgery-request-web-app/table-of-contents
+
 https://app.pluralsight.com/paths/skill/governance-risk-and-compliance-grc
 
 https://app.pluralsight.com/paths/skill/accessdata-forensic-toolkit-ftk
@@ -24,6 +28,11 @@ Kali Linux
 Network Mapper (Nmap)
 Wireshark
 Burp Suite Community Edition
+-->
+
+<!--
+Spell-Jacking
+<input type="text" spellcheck="false" />
 -->
 
 ## Learn

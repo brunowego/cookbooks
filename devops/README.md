@@ -52,7 +52,6 @@ Ops -> IT Operations / Application Delivery
 
 ## Terms
 
-- Health Insurance Portability and Accountability Act (HIPAA)
 - Payment Card Industry Data Security Standard (PCI DSS)
 - Sarbanes Oxley (SOX)
 - System Development Life Cycle (SDLC)

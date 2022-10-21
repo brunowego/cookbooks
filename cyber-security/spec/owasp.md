@@ -1,7 +1,7 @@
 # Open Web Application Security Project (OWASP)
 
 <!--
-https://app.pluralsight.com/library/courses/owasp-secure-coding-big-picture/table-of-contents
+https://app.pluralsight.com/paths/skill/secure-coding-with-owasp
 
 https://github.com/sh377c0d3/Payloads
 https://linkedin.com/learning/paths/master-the-owasp-top-10

@@ -1,3 +1,5 @@
 # Microsoft Corporation
 
-TODO
+## Glossary
+
+- End of Support (EOS)

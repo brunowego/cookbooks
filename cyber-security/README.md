@@ -63,6 +63,7 @@ Blockchain Security
 
 - Certified Information Security Manager (CISM)
 - Certified Information Systems Security Professional (CISSP)
+- Desec Certified Penetration Tester (DCPT)
 - DevOps Certified Professional (DCP)
 - Information Security Foundation (ISFS)
 

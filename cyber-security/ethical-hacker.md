@@ -2,6 +2,7 @@
 
 <!--
 https://app.pluralsight.com/paths/certificate/ethical-hacking-ceh-v11-prep
+https://app.pluralsight.com/library/courses/web-application-hacking-ethical-hacking-ceh-cert/table-of-contents
 
 https://linkedin.com/learning/paths/become-an-ethical-hacker
 https://www.linkedin.com/learning/ethical-hacking-social-engineering/defining-social-engineering-14036736

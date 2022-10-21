@@ -1,5 +1,14 @@
 # Red-Blue-Purple Teams
 
+<!--
+https://app.pluralsight.com/library/courses/pentesting-red-blue-purple-teams-exec-briefing/table-of-contents
+
+https://app.pluralsight.com/paths/skill/blue-team-tools
+https://app.pluralsight.com/paths/skill/red-team-tools
+https://app.pluralsight.com/library/courses/purple-teaming-big-picture/table-of-contents
+
+-->
+
 ## Teams
 
 | Team   | Propose    | Description |

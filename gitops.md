@@ -12,6 +12,14 @@ GitOps is an operating model pattern for cloud native applications & Kubernetes 
 - [GitOps Working Group](https://github.com/gitops-working-group/gitops-working-group)
 - [Guide To GitOps](https://weave.works/technologies/gitops/)
 
+## Tools
+
+- [Argo CD](/argo/argo-cd/README.md)
+- [Codefresh](/codefresh.md)
+- [Flux CD](/fluxcd.md)
+- [Jenkins X](/jenkins/jenkins-x.md)
+- [Weave GitOps Core](https://github.com/weaveworks/weave-gitops)
+
 ## Books
 
 - [GitOps and Kubernetes: Continuous Deployment with Argo CD, Jenkins X, and Flux](https://manning.com/books/gitops-and-kubernetes)

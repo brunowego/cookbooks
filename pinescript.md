@@ -4,6 +4,10 @@
 
 - [Main Website](https://pinecoders.com/)
 
+<!--
+https://www.tradingcode.net/tradingview/standard-colour-variables/
+-->
+
 ## Guides
 
 - [Migration Guides / To Pine Script™ version 5](https://www.tradingview.com/pine-script-docs/en/v5/migration_guides/To_Pine_version_5.html)

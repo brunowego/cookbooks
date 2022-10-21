@@ -1,4 +1,4 @@
-# CSpell
+# CSpell (a.k.a. spellcheck)
 
 **Keywords:** Spell Checker
 

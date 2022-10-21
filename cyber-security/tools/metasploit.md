@@ -1,6 +1,12 @@
 # Metasploit
 
 <!--
+https://app.pluralsight.com/paths/skill/penetration-testing-fundamentals-with-the-metasploit-framework
+
+https://app.pluralsight.com/library/courses/perform-attacks-metasploit/table-of-contents
+https://app.pluralsight.com/library/courses/metasploit-getting-started/table-of-contents
+https://app.pluralsight.com/library/courses/post-exploitation-meterpreter/table-of-contents
+
 https://app.pluralsight.com/paths/skills/penetration-testing-fundamentals-with-the-metasploit-framework
 
 https://app.pluralsight.com/library/courses/metasploit-penetration-testing-introduction/table-of-contents

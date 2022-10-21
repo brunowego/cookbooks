@@ -1,6 +1,8 @@
 # DevSecOps
 
 <!--
+https://app.pluralsight.com/paths/skill/fundamentals-of-devsecops
+
 https://www.youtube.com/watch?v=TCkFakjcsMA
 
 https://www.udemy.com/course/kubernetes-devsecops/

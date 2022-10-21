@@ -30,9 +30,13 @@ Software Composition Analysis (SCA)
 | IAST |                                                                                     |                     |
 | RASP |                                                                                     |                     |
 
-<!--
-SAST
+## Objectives & Tools
 
+### SAST
+
+TODO
+
+<!--
 - Analise estatica
 - Conhecimento do codigo fonte
 - Execução rápida
@@ -40,21 +44,28 @@ SAST
 
 Bandit
 Horusec
+-->
 
----
-DAST
+### DAST
 
-- Analise dinamica
+TODO
+
+<!-- - Analise dinamica
 - Não possui conhecimento do codigo fonte
 - Normalmente recebe apenas uma URL
 - Execução lenta
 
 OWASP ZAP
+Burp Suite CE
 Nessus
 Open VAS
-Acunetix 360
+Acunetix 360 -->
 
----
+### IAST
+
+TODO
+
+<!--
 IAST
 
 - Analise interativa
@@ -63,16 +74,4 @@ IAST
 - Monitoramento das requesições e dos binarios da aplicação
 
 Contrast Security
-
----
-RASP
-
----
-SCA
-
-- Analise dos arquivos de dependencias
-- Verificação de falhas ja encontradas e respostas
-
-npm audit
-yarn audit
 -->

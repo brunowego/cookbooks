@@ -1,8 +1,26 @@
 # Penetration Test (a.k.a. Pentest)
 
+**Keywords:** Vulnerability Scanner
+
 <!--
 https://github.com/austinsonger/Incident-Playbook
+
+https://app.pluralsight.com/library/courses/web-app-pentesting-fundamentals/table-of-contents
+https://app.pluralsight.com/library/courses/web-app-pentesting-input-validation/table-of-contents
+https://app.pluralsight.com/library/courses/session-management-testing-web-application-penetration-testing/table-of-contents
+https://app.pluralsight.com/library/courses/web-app-pentesting-client-side-testing/table-of-contents
+https://app.pluralsight.com/library/courses/penetration-testing-identity-authentication-authorization-mechanism/table-of-contents
+https://app.pluralsight.com/library/courses/web-app-pentesting-info-gathering/table-of-contents
+https://app.pluralsight.com/library/courses/writing-penetration-testing-reports/table-of-contents
+https://app.pluralsight.com/library/courses/web-app-pentesting-configuration-deployment-management/table-of-contents
+https://app.pluralsight.com/library/courses/web-application-penetration-testing-business-logic-testing/table-of-contents
+https://app.pluralsight.com/library/courses/web-app-pen-testing-weak-cryptography/table-of-contents
+https://app.pluralsight.com/library/courses/web-app-pentesting-insecure-error-handling/table-of-contents
+https://app.pluralsight.com/paths/skills/web-app-pen-testing
+https://app.pluralsight.com/library/courses/penetration-testing-big-picture/table-of-contents
+https://app.pluralsight.com/library/courses/kali-linux-penetration-testing-ethical-hacking/table-of-contents
 https://app.pluralsight.com/paths/certificate/comptia-pentest-pt0-001
+
 https://github.com/swisskyrepo/PayloadsAllTheThings
 -->
 
@@ -11,6 +29,32 @@ https://github.com/swisskyrepo/PayloadsAllTheThings
 - GIAC Web Application Penetration Tester (GWAPT)
 - Ground Penetration (GPEN)
 - National Institute of Standards and Technology (NIST)
+
+## Tools
+
+- [Aircrack-ng](/cyber-security/tools/aircrack-ng.md)
+- [CrackStation](/cyber-security/tools/scapy.md)
+- [Jok3r](/cyber-security/tools/jok3r.md)
+- [Legion](/cyber-security/tools/legion.md)
+- [Metasploit](/cyber-security/tools/metasploit.md)
+- [Network Mapper (Nmap)](/nmap.md)
+- [Nikto2](/cyber-security/tools/nikto2.md)
+- [OpenSCAP](/cyber-security/tools/openscap.md)
+- [OWASP Zed Attack Proxy (ZAP)](/cyber-security/tools/zaproxy.md)
+- [Scapy](/cyber-security/tools/scapy.md)
+- [sqlmap](/cyber-security/tools/sqlmap.md)
+- [Wireshark](/wireshark.md)
+
+## Linux Distribution
+
+- [Kali Linux](/kali.md)
+
+## Web Application Penetration Testing
+
+- Input Validation
+- Session Management
+- Identity Authentication/Authorization Mechanism
+- Client Side
 
 ## Assurance That a Control is Working
 

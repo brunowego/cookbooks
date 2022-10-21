@@ -78,7 +78,7 @@ Yield Curve Control
 - The Asian Crisis of 1997
 - The Financial Crisis of 2007–08
 
-## Economic Behavior/Policy
+## Economic Behavior (Conduct/Policy)
 
 - Hawkish ("hawk")
 - Dovish ("dove")

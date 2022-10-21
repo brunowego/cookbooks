@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://www.kali.org/)
+- [Main Website](https://kali.org/)
 
 ## Docker
 
