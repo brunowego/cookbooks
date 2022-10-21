@@ -246,7 +246,7 @@ TODO
 2. `<svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(1)//'>` -> XSS
 3. `https://sottlmare.com/ /../../../../etc/shadow` -> Path Traversal / OS Credential Dumping
 4. `<!ENTITY xxe SYSTEM "file:///etc/password">` -> XXE injection
-5. `https://www.example.com/change_password.php?userid=1701`
+5. `https://www.example.com/change_password.php?userid=1701` ->
 
 ### What and how is defined the Docker layer, Docker image?
 

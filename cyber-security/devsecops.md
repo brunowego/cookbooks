@@ -1,9 +1,25 @@
 # DevSecOps
 
 <!--
+https://www.youtube.com/watch?v=TCkFakjcsMA
+
 https://www.udemy.com/course/kubernetes-devsecops/
 https://www.linkedin.com/learning/search?keywords=DevSecOps
+
+https://tiexames.com.br/novosite2015/curso_ISO_27002_Foundation.php
 -->
+
+<!--
+Frictionless Enablement
+Reducing noise and fatigue
+Share responsability
+-->
+
+<!--
+- Treat Model (Critical Assets, Abuse Stories)
+  - Sprint Planning (Risk Prioritization)
+  - Design (Includes Sec & Ops Requirements)
+  - CI/CD Pipeline (Unit Test Cases) -->
 
 DevSecOps more culture than a team. Incorporate security within Agile and DevOps practices. Everyone is responsible for security.
 
@@ -11,6 +27,14 @@ DevSecOps more culture than a team. Incorporate security within Agile and DevOps
 
 - [DevSecOps Manifesto](https://devsecops.org/)
 - [Awesome DevSecOps Awesome](https://github.com/devsecops/awesome-devsecops)
+- [Ultimate DevSecOps library](https://github.com/sottlmarek/DevSecOps)
+
+## Terms
+
+- Software Composition Analysis (SCA)
+- Software Bill of Materials (SBOM)
+- Static Application Security Testing (SAST)
+- Dynamic Application Security Testing (DAST)
 
 ## Related
 
@@ -27,6 +51,14 @@ DevSecOps more culture than a team. Incorporate security within Agile and DevOps
 - **24x7 Proactive Security Monitoring** over Reacting after being Informed of an Incident
 - **Shared Threat Intelligence** over Keeping Info to Ourselves
 - **Compliance Operations** over Clipboards & Checklists
+
+## Process
+
+- Threat Modeling -> Backlog
+- SCA / SBOM -> Code/Commit
+- SAST / DAST -> Build/Test
+- Container Security -> Deploy
+- Monitoring / Pen Testing -> Monitor
 
 ## Tools
 
@@ -95,10 +127,13 @@ IriusRisk
 
 ## Benefits
 
-- Observability
-- Traceability
-- Confidence
+- Audit Trail
 - Compliance
+- Confidence
+- Observability
+- Quality Gates
+- Single Source of Truth (SSoT)
+- Traceability
 
 ## Use Cases
 

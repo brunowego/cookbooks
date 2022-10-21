@@ -15,6 +15,13 @@ https://linkedin.com/learning/devops-foundations-continuous-delivery-continuous-
 
 > DevOps represents a change in IT culture, focusing on rapid IT service delivery through the adoption of agile, lean practices in the context of a system-oriented approach. -- Gartner Research
 
+<!--
+Basic Definition
+
+Dev -> Software Development
+Ops -> IT Operations / Application Delivery
+-->
+
 ## Related
 
 - [Agile](/agile.md)

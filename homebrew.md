@@ -42,6 +42,12 @@ brew deps \
   --installed
 ```
 
+### Self Update
+
+```sh
+cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew update
+```
+
 ### Tips
 
 #### Remove All
@@ -84,12 +90,6 @@ sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 brew\)/g' ~/.zshrc
 source ~/.zshrc
 
 rm ~/.zcompdump*
-```
-
-#### Self update
-
-```sh
-cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew update
 ```
 
 ### Issues

@@ -5,6 +5,8 @@ https://cisecurity.org/controls/cis-controls-navigator/
 -->
 
 <!--
+https://app.pluralsight.com/paths/skill/governance-risk-and-compliance-grc
+
 https://app.pluralsight.com/paths/skill/accessdata-forensic-toolkit-ftk
 
 https://app.pluralsight.com/paths/skill/blue-team-tools
@@ -24,12 +26,17 @@ Wireshark
 Burp Suite Community Edition
 -->
 
+## Learn
+
+- [Vulnerability vs. Exploit vs. Threat](https://snyk.io/learn/security-vulnerability-exploits-threats/)
+
 ## Types
 
 - Advanced Persistent Threat (APT)
 - Cyber Kill Chain (CKC)
 - Distributed Denial-of-Service (DDoS)
 - DNS Tunneling
+- Governance, Risk and Compliance (GRC)
 - Malware: Ransomware
 - Man-in-the-Middle (MitM)
 - Phishing
@@ -45,6 +52,12 @@ Red Team: Offensive
 <!--
 Spywares
 Rootkit
+
+Exploit:
+  Backdoor
+  Scripting
+  Worms
+  Trojan Horses
 -->
 
 <!--

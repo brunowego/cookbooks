@@ -4,4 +4,6 @@
 https://mitre-attack.github.io/attack-navigator/
 -->
 
-TODO
+## Glossary
+
+- Massachusetts Institute of Technology Research and Engineering (MITRE)

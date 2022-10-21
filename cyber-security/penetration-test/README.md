@@ -1,4 +1,4 @@
-# Penetration Test (PenTest)
+# Penetration Test (a.k.a. Pentest)
 
 <!--
 https://github.com/austinsonger/Incident-Playbook
@@ -11,35 +11,6 @@ https://github.com/swisskyrepo/PayloadsAllTheThings
 - GIAC Web Application Penetration Tester (GWAPT)
 - Ground Penetration (GPEN)
 - National Institute of Standards and Technology (NIST)
-
-## Teams
-
-- Red
-- Blue
-- Purple
-
-### Red Team - Attackers
-
-Typically external resource.
-
-1. Survey + threat intelligence
-2. Deliver an attack
-3. Breach defences
-4. Take control
-
-### Blue Team - Defenders
-
-Internal team (can be outsourced or managed security provider)
-
-1. Detect
-2. Respond
-3. Eliminate attackers
-4. Re-secure systems
-
-### Purple Team
-
-- Red Team: Attacking purple team
-- Blue Team + Coach: Defending purple team
 
 ## Assurance That a Control is Working
 

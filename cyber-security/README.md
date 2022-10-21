@@ -1,6 +1,13 @@
 # Cyber Security
 
 <!--
+Application Security Advocate
+Application Security Specialist
+Application Security Engineer
+DevSecOps Advocate
+-->
+
+<!--
 https://app.pluralsight.com/library/cou rses/allthetalks-session-43/table-of-contents
 
 https://app.pluralsight.com/library/courses/enabling-security-governance-compliance-devsecops/table-of-contents
@@ -27,6 +34,19 @@ https://github.com/ossf
 https://github.com/cisagov/RedEye
 -->
 
+<!--
+Cloud Security
+SDLC Practices
+Bug Bounties
+Threat Intelligence
+Malware Analysis
+Risk Management
+Vulnerability Management
+IOT Security
+SIEM Analysis
+Blockchain Security
+-->
+
 ## Content
 
 - [Awesome Cybersecurity Blue Team Awesome](https://github.com/fabacab/awesome-cybersecurity-blueteam)
@@ -44,6 +64,7 @@ https://github.com/cisagov/RedEye
 - Certified Information Security Manager (CISM)
 - Certified Information Systems Security Professional (CISSP)
 - DevOps Certified Professional (DCP)
+- Information Security Foundation (ISFS)
 
 ## Terms
 
@@ -56,6 +77,7 @@ https://github.com/cisagov/RedEye
 - Critical Security Controls (CIS Controls) / Center for Internet Security (CIS)
 - Doxing (Drop docs)
 - Dynamic Application Security Testing (DAST)
+- Endpoint Detection and Response (EDR)
 - Flash Loan
 - Information Security (InfoSec)
 - Information Security Policy (ISP)
@@ -72,6 +94,7 @@ https://github.com/cisagov/RedEye
 - Security as Code
 - Security-by-design
 - Security-first
+- Server-Side Request Forgery (SSRF)
 - Shift-left Testing
 - Software Composition Analysis (SCA)
 - Software Development Life Cycle (SDLC)
