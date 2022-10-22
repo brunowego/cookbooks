@@ -4,6 +4,8 @@
 https://github.com/search?q=filename%3Aconfig.yaml+%22clair%22&type=Code
 -->
 
+**Keywords:** SAST
+
 ## Links
 
 - [Code Repository](https://github.com/quay/clair)

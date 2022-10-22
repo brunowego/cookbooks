@@ -44,6 +44,10 @@ Web Application Pentester
 Threat Hunter
 -->
 
+#### Tools
+
+- [Chacal](https://github.com/p3tr0v/chacal)
+
 ### Blue Team
 
 Internal team (can be outsourced or managed security provider)

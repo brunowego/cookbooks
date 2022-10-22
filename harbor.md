@@ -5,6 +5,8 @@ https://github.com/aquasecurity/harbor-scanner-aqua
 https://medium.com/@petr.ruzicka/harbor-cloud-native-registry-and-kubernetes-838c0937cd67
 -->
 
+**Keywords:** SAST
+
 ## Links
 
 - [Code Repository](https://github.com/goharbor/harbor)

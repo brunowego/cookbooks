@@ -39,6 +39,11 @@ Spell-Jacking
 
 - [Vulnerability vs. Exploit vs. Threat](https://snyk.io/learn/security-vulnerability-exploits-threats/)
 
+## Terms
+
+- Indicator of Compromise
+- Terrorist Tactics, Techniques, and Procedures
+
 ## Types
 
 - Advanced Persistent Threat (APT)
@@ -46,7 +51,7 @@ Spell-Jacking
 - Distributed Denial-of-Service (DDoS)
 - DNS Tunneling
 - Governance, Risk and Compliance (GRC)
-- Malware: Ransomware
+- Malware
 - Man-in-the-Middle (MitM)
 - Phishing
 - SQL injection (SQLi)

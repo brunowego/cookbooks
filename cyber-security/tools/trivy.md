@@ -1,5 +1,7 @@
 # Trivy
 
+**Keywords:** Vulnerability Scanner
+
 A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifacts, Suitable for CI.
 
 ## Links

@@ -4,6 +4,10 @@
 
 - [Creating a single master cluster with kubeadm](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/)
 
+## Alternatives
+
+- [Kubernetes Operations (kOps)](/kops/README.md)
+
 ## Dependencies
 
 - [Docker CE](/docker-ce.md)

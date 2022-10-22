@@ -15,6 +15,10 @@ OS Internals (Group, ID, Permissions)
 -->
 
 <!--
+Segurança através de varias camadas, prevenção caso uma das camadas falhe
+-->
+
+<!--
 https://app.pluralsight.com/library/cou rses/allthetalks-session-43/table-of-contents
 
 https://app.pluralsight.com/library/courses/enabling-security-governance-compliance-devsecops/table-of-contents
@@ -58,6 +62,11 @@ Blockchain Security
 Awareness, Agility and Advanced Controls - The AAA Triad Of Security
 -->
 
+## Links
+
+- [Information Security Stack Exchange](https://security.stackexchange.com/)
+- [NIST CSRC / Glossary](https://csrc.nist.gov/glossary)
+
 ## Content
 
 - [Awesome Cybersecurity Blue Team Awesome](https://github.com/fabacab/awesome-cybersecurity-blueteam)
@@ -87,12 +96,28 @@ ISO 27001 Foundation
 Security+
 -->
 
+## Podcasts
+
+- [Darknet Diaries](https://darknetdiaries.com/)
+- [The Cyber Wire](https://thecyberwire.com/)
+- []()
+
 ## Positions
 
 - Chief Information Security Officer (CISO)
 - Data Protection Officer (DPO)
 
 <!--
+Security Analyst
+Security Specialist
+Incident Responder
+Cryptographer
+Security Architect
+Security Auditor
+Forensic Expert
+Penetration Tester
+Security Engineer
+Source Code Auditor
 Application Security Advocate
 Application Security Specialist
 Application Security Engineer
@@ -106,8 +131,6 @@ DevSecOps Advocate
 - Border Gateway Protocol (BGP)
 - Building Security In Maturity Model (BSIMM) / Software Assurance Maturity Model (SAMM)
 - Chaos Engineering (a.k.a. Chaos Monkey)
-- Common Vulnerabilities and Exposures (CVE)
-- Common Vulnerability Scoring System (CVSS)
 - Common Weakness Enumeration (CWE)
 - Control Objectives for Information and Related Technologies (COBIT)
 - Copycat Crime
@@ -157,3 +180,12 @@ DevSecOps Advocate
 - Web Application Firewall (WAF)
 - XML External Entity (XXE)
 - Zero Trust Architecture (ZTA)
+
+## Learning
+
+- [Hack The Box](https://hackthebox.com/)
+
+<!--
+SANS 2020 CTF
+CTF challenge
+-->

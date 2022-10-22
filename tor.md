@@ -1,8 +1,18 @@
 # Tor
 
+## Links
+
+- [Main Website](https://torproject.org/)
+
 ## CLI
 
 ### Installation
+
+#### Homebrew
+
+```sh
+brew install tor
+```
 
 #### APT
 

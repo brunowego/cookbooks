@@ -1,6 +1,10 @@
 # Metasploit
 
 <!--
+Fiddler
+-->
+
+<!--
 https://app.pluralsight.com/paths/skill/penetration-testing-fundamentals-with-the-metasploit-framework
 
 https://app.pluralsight.com/library/courses/perform-attacks-metasploit/table-of-contents
@@ -16,6 +20,8 @@ https://app.pluralsight.com/library/courses/exploit-development-execution-metasp
 https://www.linkedin.com/learning/penetration-testing-essential-training/welcome
 https://www.linkedin.com/learning/penetration-testing-advanced-kali-linux/welcome-2
 -->
+
+**Keywords:** Penetration Testing
 
 ## Links
 

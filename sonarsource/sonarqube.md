@@ -14,6 +14,10 @@ https://github.com/BlockByBlock/jenkins-docker-with-goss/blob/master/doc/sonarqu
 - [SonarQube Scanner](/sonarsource/sonarqube-scanner.md)
 - [SonarQube :: Maven3 Plugin](https://mvnrepository.com/artifact/org.codehaus.sonar/sonar-maven3-plugin)
 
+## Related
+
+- Secret Scanner: Database Connection String
+
 ## Docker
 
 ### Network

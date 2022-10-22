@@ -4,6 +4,8 @@
 https://app.pluralsight.com/library/courses/getting-started-analyzing-network-traffic-wireshark/table-of-contents
 -->
 
+**Keywords:** Packet Analyzer (Sniffer)
+
 ## Links
 
 - [Code Repository](https://github.com/wireshark/wireshark)
@@ -29,6 +31,6 @@ brew install --cask wireshark-chmodbpf
 
 #### Filter Source IP
 
-```sh
+```txt
 ip.src == 192.168.0.100
 ```

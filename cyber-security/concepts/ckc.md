@@ -8,4 +8,4 @@
 - Exploitation
 - Installation
 - Command and Control (C2)
-- Objective
+- Actions on Objective
