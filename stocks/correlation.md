@@ -52,6 +52,10 @@ Manufacturing PMI
 4. Toggle Log Scale
 5. Indicators `US10Y, TVC` -> Settings -> Style Baseline
 
+<!--
+Look for US10Y or ES1! Divergences
+-->
+
 ## S&P 500 With DXY
 
 <!--

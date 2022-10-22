@@ -27,15 +27,11 @@ https://www.exin.com/
 ## Best General Certifications
 
 - Amazon Web Services (AWS)
-- Cisco Certified Security Professional (CCSP)
 - Certificate in Data Processing (CDP)
 - Certified Data Privacy Solutions Engineer (CDPSE)
-- Certified Ethical Hacker (CEH)
 - Certified Information Systems Auditor (CISA)
-- Certified Information Security Manager (CISM)
-- Certified Information Systems Security Professional (CISSP)
-- CompTIA A+
 - Certified ScrumMaster (CSM)
+- CompTIA A+
 - Global Information Assurance Certification (GIAC)
 - Google IT Support Professional (GITSP)
 - Microsoft Technology Associate (MTA)

@@ -1,5 +1,11 @@
 # Dollar
 
+<!--
+https://www.youtube.com/watch?v=wvNQIGsX9Ek&t=11
+
+https://fred.stlouisfed.org/series/PCEDG | Units: Change from Year Ago
+-->
+
 ## Research
 
 - [Monetary Data / M2 (M2SL)](https://fred.stlouisfed.org/series/M2SL)

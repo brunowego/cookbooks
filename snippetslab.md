@@ -1,8 +1,8 @@
 # SnippetsLab
 
-<!--
-https://github.com/massCodeIO/massCode
--->
+## Alternatives
+
+- [massCode](https://github.com/massCodeIO/massCode)
 
 ## App
 

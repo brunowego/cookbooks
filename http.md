@@ -22,20 +22,20 @@ https://geekflare.com/http-header-implementation/
 
 ### Methods
 
-| Method |
-| --- |
-| GET |
-| POST |
-| PUTT |
-| HEAD |
+| Method  |
+| ------- |
+| GET     |
+| POST    |
+| PUTT    |
+| HEAD    |
 | OPTIONS |
-| DELETE |
-| PATCH |
+| DELETE  |
+| PATCH   |
 
 ### Headers
 
-- Standard and ubiquitous (e.g. content-type)
-- Standard (e.g. date, etag)
+- Standard and ubiquitous (e.g. Content-Type)
+- Standard (e.g. Date, ETag)
 - Custom (prefixed with "x-")
 
 ## Issues
@@ -86,9 +86,9 @@ X-Content-Type-Options: nosniff
 ```
 
 ```html
-<link rel="stylesheet" href="/static/css/app.css">
+<link rel="stylesheet" href="/static/css/app.css" />
 <!-- To -->
-<link rel="stylesheet" type="text/css" href="/static/css/app.css">
+<link rel="stylesheet" type="text/css" href="/static/css/app.css" />
 
 <script src="/static/js/app.js"></script>
 <!-- To -->

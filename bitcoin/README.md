@@ -44,15 +44,15 @@ https://bitcoinmonthlyreturn.com/
 
 ## Links
 
-- [bitaddress.org](https://bitaddress.org/)
 - [Bitcoin Average Cost Per Transaction](https://ycharts.com/indicators/bitcoin_average_cost_per_transaction)
 - [Bitcoin Core](https://bitcoincore.org/)
 - [Bitcoin Improvement Proposal](https://github.com/bitcoin/bips)
 - [Bitcoin Is Dead / The #1 Database of Notable Bitcoin Skeptics](https://bitcoinisdead.org/)
+- [Bitcoin Optech](https://bitcoinops.org/)
 - [Bitcoin: Number of Active Addresses](https://studio.glassnode.com/metrics?a=BTC&m=addresses.ActiveCount)
 - [Code Repository](https://github.com/bitcoin/bitcoin)
 - [FiatMarketCap / Fiat Market Capitalizations](https://fiatmarketcap.com/)
-- [Taxa de hash total (TH/s)](blockchain.com/pt/charts/hash-rate)
+- [Total Hash Rate (TH/s)](https://blockchain.com/explorer/charts/hash-rate)
 
 ### Treasuries
 
@@ -76,12 +76,13 @@ https://coingecko.com/en/public-companies-bitcoin
 
 ## Tools
 
-- [Quantify Crypto / Bitcoin](https://quantifycrypto.com/coins/BTC)
-- [BTC Funding Rate and Predicted Funding Rate](https://coinalyze.net/bitcoin/funding-rate/)
-- [Dollar Cost Averaging Bitcoin](https://dcabtc.com/)
 - [Aggr Trade / Charts](https://charts.aggr.trade/ne1n)
 - [Average Cost Calculator | Crypto, Stocks, Forex – Trading](https://coinguides.org/average-cost-calculator-crypto-stocks-trading/)
+- [bitaddress.org](https://bitaddress.org/)
+- [BTC Funding Rate and Predicted Funding Rate](https://coinalyze.net/bitcoin/funding-rate/)
 - [Capcoin](https://capcoin.ru/?c=COINBASE:BTCUSD,COINBASE:ETHUSD,COINBASE:LTCUSD#nav)
+- [Dollar Cost Averaging Bitcoin](https://dcabtc.com/)
+- [Quantify Crypto / Bitcoin](https://quantifycrypto.com/coins/BTC)
 
 ## Important Dates
 

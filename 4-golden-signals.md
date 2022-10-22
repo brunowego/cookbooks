@@ -1,6 +1,11 @@
 # Four Golden Signal
 
-## References
+## Articles
+
+- [4 SRE Golden Signals (What they are and why they matter)](https://www.blameless.com/sre/4-sre-golden-signals-what-they-are-and-why-they-matter)
+- [Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-distributed-systems/)
+
+## Related
 
 - [The Twelve-Factor App](/12factor.md)
 
