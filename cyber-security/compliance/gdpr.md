@@ -11,6 +11,10 @@ https://app.pluralsight.com/library/courses/state-of-gdpr/table-of-contents
 https://app.pluralsight.com/library/courses/gdpr-executive-briefing/table-of-contents
 -->
 
+## Links
+
+- [National Data Protection Authority](https://en.wikipedia.org/wiki/National_data_protection_authority)
+
 ## Countries
 
 - Brazil: [Lei Geral de Proteção de Dados Pessoais (LGPD)](https://en.wikipedia.org/wiki/General_Personal_Data_Protection_Law)
@@ -18,3 +22,11 @@ https://app.pluralsight.com/library/courses/gdpr-executive-briefing/table-of-con
 ## Requirements
 
 - [Data Anonymization](/cyber-security/data-anonymization.md)
+
+## Glossary
+
+- Data Protection Authorities (DPAs)
+
+## DPAs
+
+- [Brazil / Autoridade Nacional de Proteção de Dados](https://gov.br/anpd)

@@ -22,6 +22,12 @@ Yellow Team
 Green Team
 -->
 
+<!--
+White Hat
+Gray Hat
+Black Hat
+-->
+
 ## Details
 
 ### Red Team

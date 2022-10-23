@@ -5,6 +5,10 @@ Discover the computers owned by the company (Inventory Software)
 -->
 
 <!--
+#DevMayCray
+-->
+
+<!--
 DevSecOps
 Ethical Hacking
 Nmap
@@ -85,6 +89,7 @@ Awareness, Agility and Advanced Controls - The AAA Triad Of Security
 - Certified Information Security Manager (CISM)
 - Certified Information Systems Security Professional (CISSP)
 - Cisco Certified Security Professional (CCSP)
+- CompTIA PenTest+ Certification All-in-One Exam Guide (Exam PT0-001)
 - Desec Certified Penetration Tester (DCPT)
 - DevOps Certified Professional (DCP)
 - Information Security Foundation (ISFS)
@@ -130,6 +135,20 @@ DevSecOps Advocate
 
 ## Terms
 
+- Promptless
+- Security as Code
+- Security-by-design
+- Security-first
+- Shift-left Testing
+
+<!--
+- Copycat Crime
+- Flash Loan
+- Postmortem
+-->
+
+## Glossary
+
 - Application Layer Transport Security (ALTS)
 - Application Security (AppSec)
 - Border Gateway Protocol (BGP)
@@ -137,7 +156,6 @@ DevSecOps Advocate
 - Chaos Engineering (a.k.a. Chaos Monkey)
 - Common Weakness Enumeration (CWE)
 - Control Objectives for Information and Related Technologies (COBIT)
-- Copycat Crime
 - Critical Security Controls (CIS Controls) / Center for Internet Security (CIS)
 - Cross-site Scripting (XSS)
 - Data Execution Prevention (DEP) / Address Space Layout Randomization (ASLR)
@@ -145,7 +163,6 @@ DevSecOps Advocate
 - Doxing (Drop docs)
 - Dynamic Application Security Testing (DAST)
 - Endpoint Detection and Response (EDR)
-- Flash Loan
 - Information Security (InfoSec)
 - Information Security Policy (ISP)
 - Information Technology Infrastructure Library (ITIL)
@@ -157,26 +174,21 @@ DevSecOps Advocate
 - Open Systems Interconnection (OSI)
 - Open Web Application Security Project (OWASP)
 - Payment Card Industry Data Security Standard (PCI DSS)
-- Postmortem
 - Privileged Access Management (PAM)
 - Public Key Infrastructure (PKI)
 - Request for Comments (RFC)
 - Run-time Application Security Protection (RASP)
 - Secure Software Development Lifecycle (SSDLC)
-- Security as Code
 - Security Information and Event Management (SIEM)
 - Security Operations Center (SOC)
 - Security Orchestration, Automation and Response (SOAR)
 - Security Token Service (STS)
-- Security-by-design
-- Security-first
-- Server-Side Request Forgery (SSRF)
-- Shift-left Testing
 - Software Composition Analysis (SCA)
 - Software Development Life Cycle (SDLC)
 - Static Application Security Testing (SAST)
 - SysAdmin, Audit, Network, and Security (SANS)
 - Tactics, Techniques, and Procedures (TTPs)
+- User Account Control (UAC)
 - User and Entity Behavior Analytics (UEBA)
 - Vendor Security Assessment (VSA)
 - Virtual Private Cloud (VPC)
@@ -186,10 +198,12 @@ DevSecOps Advocate
 
 ## Learning
 
-- [Hack The Box](https://hackthebox.com/)
 - [Capture The Flag 101](https://ctf101.org/)
+- [Hack The Box](https://hackthebox.com/)
+- [picoCTF](https://picoctf.org/)
 
 <!--
+Web Security Academy
 SANS 2020 CTF
 CTF challenge
 -->

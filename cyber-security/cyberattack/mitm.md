@@ -3,6 +3,7 @@
 ## Tools
 
 - Ettercap
+- Burp Suite CE
 
 <!--
 https://www.youtube.com/watch?v=cVTUeEoJgEg

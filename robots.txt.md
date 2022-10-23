@@ -6,11 +6,18 @@
 
 ```html
 <!-- Follow, index -->
-<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+<meta
+  name="robots"
+  content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+/>
 
 <!-- No index -->
 <meta name="robots" content="noindex" />
 ```
+
+<!--
+X-Robots-Tag
+-->
 
 ### Disallow All
 
@@ -23,7 +30,7 @@ EOF
 
 ### WordPress
 
-***example.com***
+**_example.com_**
 
 ```txt
 User-agent: *
@@ -35,7 +42,7 @@ Sitemap: https://example.com/sitemap.xml
 
 ### Application
 
-***app.example.com***
+**_app.example.com_**
 
 ```txt
 # http://robotstxt.org

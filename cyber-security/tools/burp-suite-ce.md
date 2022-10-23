@@ -7,7 +7,7 @@ https://app.pluralsight.com/paths/skill/web-security-testing-with-burp-suite
 https://app.pluralsight.com/library/courses/writing-burp-suite-macros-plugins/table-of-contents
 -->
 
-**Keywords:** DAST, Web Proxy, Traffic Analysis
+**Keywords:** DAST, Web Proxy, Traffic Analysis, Man-In-The-Middle
 
 ## Links
 

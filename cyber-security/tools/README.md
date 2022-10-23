@@ -16,7 +16,7 @@ https://github.com/bridgecrewio/checkov
 
 ## Recommendations
 
-- **Quality Gate:** [SonarQube](/sonarsource/sonarqube.md)
+- **Code Quality and Security:** [SonarQube CE](/sonarsource/sonarqube-ce.md)
 - **SAST:** [SonarQube](/sonarsource/sonarqube.md), [Snyk Code](/cyber-security/tools/snyk.md)
 - **DAST:** [Burp Suite Community Edition (CE)](/cyber-security/tools/burp-suite-ce.md), [OWASP Zed Attack Proxy (ZAP)](/cyber-security/tools/zaproxy.md)
 - **Packet Analyzer:** [Wireshark](/cyber-security/tools/wireshark.md)
@@ -26,7 +26,8 @@ https://github.com/bridgecrewio/checkov
 - **SQL injection:** [sqlmap](/cyber-security/tools/sqlmap.md)
 - **Vulnerability Scanner:** [Snyk](/cyber-security/tools/snyk.md), [Trivy](/cyber-security/tools/trivy.md)
 - **Vulnerability Static Analysis for Containers:** [Harbor](/harbor.md), [Clair](/clair.md)
+- **Secrets Detection:** [detect-secrets](/detect-secrets.md)
 
 <!--
-Quality & Security Gates
+Threat Modeling
 -->

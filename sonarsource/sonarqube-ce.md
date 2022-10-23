@@ -1,4 +1,4 @@
-# SonarQube
+# SonarQube Community Edition (CE)
 
 <!--
 https://plugins.miniorange.com/saml-single-sign-on-sso-sonarqube-using-simplesaml
