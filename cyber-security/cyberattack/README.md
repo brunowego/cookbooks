@@ -39,6 +39,12 @@ Spell-Jacking
 
 - [Vulnerability vs. Exploit vs. Threat](https://snyk.io/learn/security-vulnerability-exploits-threats/)
 
+<!--
+Vulnerability is a weakness in any system
+Exploit is exploration of an vulnerability
+Threat (Hacker, Flood)
+-->
+
 ## Terms
 
 - Indicator of Compromise

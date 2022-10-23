@@ -31,13 +31,6 @@ DevSecOps more culture than a team. Incorporate security within Agile and DevOps
 - [Awesome DevSecOps Awesome](https://github.com/devsecops/awesome-devsecops)
 - [Ultimate DevSecOps library](https://github.com/sottlmarek/DevSecOps)
 
-## Terms
-
-- Software Composition Analysis (SCA)
-- Software Bill of Materials (SBOM)
-- Static Application Security Testing (SAST)
-- Dynamic Application Security Testing (DAST)
-
 ## Related
 
 - [Google Trends](https://trends.google.com/trends/explore?date=today%205-y&q=devsecops)

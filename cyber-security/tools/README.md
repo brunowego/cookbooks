@@ -1,7 +1,5 @@
 # Tools
 
-TODO
-
 <!--
 https://github.com/sottlmarek/DevSecOps
 
@@ -18,6 +16,8 @@ https://github.com/bridgecrewio/checkov
 
 ## Recommendations
 
+- **Quality Gate:** [SonarQube](/sonarsource/sonarqube.md)
+- **SAST:** [SonarQube](/sonarsource/sonarqube.md), [Snyk Code](/cyber-security/tools/snyk.md)
 - **DAST:** [Burp Suite Community Edition (CE)](/cyber-security/tools/burp-suite-ce.md), [OWASP Zed Attack Proxy (ZAP)](/cyber-security/tools/zaproxy.md)
 - **Packet Analyzer:** [Wireshark](/cyber-security/tools/wireshark.md)
 - **Network Scanner:** [Network Mapper (Nmap)](/nmap.md), [GNU Netcat](/gnu-netcat.md)
@@ -26,3 +26,7 @@ https://github.com/bridgecrewio/checkov
 - **SQL injection:** [sqlmap](/cyber-security/tools/sqlmap.md)
 - **Vulnerability Scanner:** [Snyk](/cyber-security/tools/snyk.md), [Trivy](/cyber-security/tools/trivy.md)
 - **Vulnerability Static Analysis for Containers:** [Harbor](/harbor.md), [Clair](/clair.md)
+
+<!--
+Quality & Security Gates
+-->

@@ -100,7 +100,11 @@ Security+
 
 - [Darknet Diaries](https://darknetdiaries.com/)
 - [The Cyber Wire](https://thecyberwire.com/)
-- []()
+
+## Keep Up To Date
+
+- [Threatpost](https://threatpost.com/)
+- [Wired / Security](https://wired.com/category/security/)
 
 ## Positions
 
@@ -147,7 +151,6 @@ DevSecOps Advocate
 - Information Technology Infrastructure Library (ITIL)
 - Interactive Application Security Testing (IAST)
 - International Organization for Standardization (ISO)
-- Internet Control Message Protocol (ICMP)
 - Internet Protocol Security (IPsec)
 - Know Your Customer (KYC)
 - National Institute of Standards and Technology (NIST)
@@ -171,8 +174,8 @@ DevSecOps Advocate
 - Shift-left Testing
 - Software Composition Analysis (SCA)
 - Software Development Life Cycle (SDLC)
-- SQL injection (SQLi)
 - Static Application Security Testing (SAST)
+- SysAdmin, Audit, Network, and Security (SANS)
 - Tactics, Techniques, and Procedures (TTPs)
 - User and Entity Behavior Analytics (UEBA)
 - Vendor Security Assessment (VSA)
@@ -184,6 +187,7 @@ DevSecOps Advocate
 ## Learning
 
 - [Hack The Box](https://hackthebox.com/)
+- [Capture The Flag 101](https://ctf101.org/)
 
 <!--
 SANS 2020 CTF

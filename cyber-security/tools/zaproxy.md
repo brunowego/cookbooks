@@ -14,7 +14,7 @@ https://app.pluralsight.com/library/courses/owasp-zap-web-app-pentesting/table-o
 - [WVS Website Example](http://testphp.vulnweb.com/)
 - [Download](https://zaproxy.org/download/)
 
-## Terms
+## Glossary
 
 - Web Vulnerability Scanner (WVS)
 

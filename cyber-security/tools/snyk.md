@@ -8,6 +8,7 @@ snyk/snyk-cli:gradle-5.4
 
 - [Code Repository](https://github.com/snyk/snyk)
 - [Main Website](https://snyk.io/)
+- [Snyk Code](https://snyk.io/product/snyk-code/)
 
 ## CLI
 

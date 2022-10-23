@@ -63,7 +63,7 @@ Pró-Labore
 - Monthly Recurring Revenue (MRR)
 - Omnichannel
 - One Stop Shop
-- Operating expenses (OPEX)
+- Operating Expenses (OPEX) / Capital Expenditure (CAPEX)
 - Payout Ratio
 - Private Equity
 - Quiet Firing / Quiet Quitting

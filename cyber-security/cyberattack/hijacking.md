@@ -1,0 +1,5 @@
+# Hijacking
+
+## Types
+
+- Session Hijacking

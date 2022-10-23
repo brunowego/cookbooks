@@ -24,6 +24,7 @@ https://atani.com/
 - Advanced Encryption Standard (AES)
 - Cryptographic Hash Function (CHF)
 - Elliptic Curve Cryptography (ECC)
+- eXclusive OR (XOR)
 - Hardware Security Modules (HSM)
 - Public Key Infrastructure (PKI)
 - Rivest–Shamir–Adleman (RSA)
@@ -38,6 +39,17 @@ Out of band
 Recipients
 Symmetric Algorithm -> Cipher
 -->
+
+## Topics
+
+- XOR Cipher
+- Cesear Cipher
+- Substitution Cipher
+- Vigenere Cipher
+- Hashing Functions
+- Block Ciphers
+- Stream Ciphers
+- RSA
 
 ## Cryptography Algorithms
 

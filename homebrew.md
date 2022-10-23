@@ -18,6 +18,14 @@ which wrk || brew install wrk
 brew help
 ```
 
+### Configuration
+
+```sh
+#
+brew analytics
+brew analytics off
+```
+
 ### Usage
 
 ```sh

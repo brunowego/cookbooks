@@ -14,3 +14,7 @@ https://app.pluralsight.com/library/courses/gdpr-executive-briefing/table-of-con
 ## Countries
 
 - Brazil: [Lei Geral de Proteção de Dados Pessoais (LGPD)](https://en.wikipedia.org/wiki/General_Personal_Data_Protection_Law)
+
+## Requirements
+
+- [Data Anonymization](/cyber-security/data-anonymization.md)

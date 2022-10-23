@@ -1,5 +1,7 @@
 # Bandit
 
+**Keywords:** SAST
+
 ## CLI
 
 ### Installation
