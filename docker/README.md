@@ -1,6 +1,10 @@
 # Docker
 
 <!--
+Released 2013
+-->
+
+<!--
 ./.docker
 
 DOCKER_REGISTRY:

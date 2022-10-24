@@ -2,7 +2,11 @@
 
 <!--
 snyk/snyk-cli:gradle-5.4
+
+https://github.com/snyk-labs/nodejs-goof
 -->
+
+**Keywords:** Vulnerability Scanner, SAST
 
 ## Links
 
@@ -57,16 +61,40 @@ snyk auth <TOKEN>
 ```sh
 #
 snyk monitor
-```
 
-<!--
 #
 snyk test
 
 #
-snyk container test docker.io/library/ubuntu:18.04
+snyk monitor
 
 #
-snyk iac test /path/to/kubernetes_file.yaml
-snyk iac test iac/
--->
+snyk container test ubuntu:18.04
+
+#
+snyk iac test </path/to/iac/>
+snyk iac test </path/to/kubernetes_file.yaml>
+
+#
+snyk code
+
+#
+snyk log4shell
+
+#
+snyk config
+
+#
+snyk policy
+
+#
+snyk ignore
+```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension snyk-security.snyk-vulnerability-scanner
+```

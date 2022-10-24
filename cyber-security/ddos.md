@@ -1,3 +1,5 @@
 # Distributed Denial-of-Service (DDoS)
 
-TODO
+## Glossary
+
+- Web Application Firewall (WAF)

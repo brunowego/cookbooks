@@ -25,9 +25,11 @@ https://github.com/bridgecrewio/checkov
 - **Penetration Test:** [Metasploit](/cyber-security/tools/metasploit.md)
 - **SQL injection:** [sqlmap](/cyber-security/tools/sqlmap.md)
 - **Vulnerability Scanner:** [Snyk](/cyber-security/tools/snyk.md), [Trivy](/cyber-security/tools/trivy.md)
-- **Vulnerability Static Analysis for Containers:** [Harbor](/harbor.md), [Clair](/clair.md)
+- **Vulnerability Static Analysis for Containers:** [Harbor](/harbor.md), [Clair](/clair.md), [Snyk](/cyber-security/tools/snyk.md)
 - **Secrets Detection:** [detect-secrets](/detect-secrets.md)
+- **SCA:** Dependency-Track,
+- **SBOM:** [Syft](/cyber-security/tools/syft.md), [Trivy](/cyber-security/tools/trivy.md)
 
 <!--
-Threat Modeling
+Threat Modeling: Microsoft Threat Modeling Tool, OWASP Threat Dragon
 -->

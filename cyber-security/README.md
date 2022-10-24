@@ -75,10 +75,6 @@ Awareness, Agility and Advanced Controls - The AAA Triad Of Security
 
 - [Awesome Cybersecurity Blue Team Awesome](https://github.com/fabacab/awesome-cybersecurity-blueteam)
 
-## Libraries
-
-- [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)
-
 ## Tools
 
 - [Have I Been Pwned: Check if your email has been compromised in a data breach](https://haveibeenpwned.com/)

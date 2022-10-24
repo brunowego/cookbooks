@@ -17,10 +17,6 @@ http://www.hackertest.net/
 - Interactive Application Security Testing (IAST)
 - Run-time Application Security Protection (RASP)
 
-<!--
-Software Composition Analysis (SCA)
--->
-
 ## Proposes
 
 | Name | Description                                                                         | Penetration Testing |
@@ -59,7 +55,9 @@ OWASP ZAP
 Burp Suite CE
 Nessus
 Open VAS
-Acunetix 360 -->
+Acunetix 360
+Invicti (formerly Netsparker)
+-->
 
 ### IAST
 

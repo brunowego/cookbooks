@@ -25,6 +25,8 @@ Share responsability
 
 DevSecOps more culture than a team. Incorporate security within Agile and DevOps practices. Everyone is responsible for security.
 
+![DevSecOps Ecosystem](/assets/images/cyber-security/devsecops-ecosystem.jpg)
+
 ## Links
 
 - [DevSecOps Manifesto](https://devsecops.org/)
@@ -49,11 +51,20 @@ DevSecOps more culture than a team. Incorporate security within Agile and DevOps
 
 ## Process
 
-- Threat Modeling -> Backlog
-- SCA / SBOM -> Code/Commit
-- SAST / DAST -> Build/Test
-- Container Security -> Deploy
-- Monitoring / Pen Testing -> Monitor
+- Backlog: Threat Modeling
+- Code/Commit: SCA (SBOM)
+- Build/Test: SAST / DAST
+- Deploy: Container Security
+- Monitor: Monitoring / Pen Testing
+
+## Benefits
+
+- Faster Delivery
+- Improved Security Posture
+- Reduced Costs
+- Enhancing the Value of DevOps
+- Improving Security Integration and Pace
+- Enabling Greater Overall Business Success
 
 ## Tools
 

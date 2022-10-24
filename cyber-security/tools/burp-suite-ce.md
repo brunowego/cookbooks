@@ -1,6 +1,10 @@
 # Burp Suite Community Edition (CE)
 
 <!--
+Released 2003-06
+-->
+
+<!--
 https://app.pluralsight.com/library/courses/web-application-penetration-testing-with-burp-suite/table-of-contents
 https://app.pluralsight.com/library/courses/advanced-web-application-penetration-testing-burp-suite/table-of-contents
 https://app.pluralsight.com/paths/skill/web-security-testing-with-burp-suite
@@ -11,7 +15,8 @@ https://app.pluralsight.com/library/courses/writing-burp-suite-macros-plugins/ta
 
 ## Links
 
-- [Main Website](https://metasploit.com/)
+- [Org. Repository](https://github.com/PortSwigger)
+- [Main Website](https://portswigger.net/burp/)
 
 ## App
 
