@@ -1,6 +1,6 @@
 # ngrok
 
-**Keywords:** Secure tunnels
+**Keywords:** Secure tunnels, Tunneling
 
 ## CLI
 
@@ -40,12 +40,10 @@ brew install --cask ngrok
 
 ### Configuration
 
-#### Authtoken
-
 Access [ngrok dashboard](https://dashboard.ngrok.com) and copy authtoken.
 
 ```sh
-ngrok authtoken [token]
+ngrok config add-authtoken [token]
 ```
 
 ### Commands

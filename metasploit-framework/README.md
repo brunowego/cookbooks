@@ -1,4 +1,4 @@
-# Metasploit
+# Metasploit Framework
 
 <!--
 Fiddler
@@ -25,7 +25,12 @@ https://www.linkedin.com/learning/penetration-testing-advanced-kali-linux/welcom
 
 ## Links
 
+- [Code Repository](https://github.com/rapid7/metasploit-framework)
 - [Main Website](https://metasploit.com/)
+
+## Glossary
+
+- Metasploit Framework (MSF)
 
 ## CLI
 
@@ -36,3 +41,95 @@ https://www.linkedin.com/learning/penetration-testing-advanced-kali-linux/welcom
 ```sh
 brew instal --cask metasploit
 ```
+
+### Initialize
+
+```sh
+#
+msfdb status
+
+#
+msfdb init --use-defaults --component database
+
+#
+msfdb init --use-defaults --component webservice
+
+#
+cat ~/.msf4/config
+```
+
+<!--
+https://localhost:5443/api/v1/auth/account
+-->
+
+### Commands
+
+```sh
+#
+msfdb -h
+
+#
+msfconsole -h
+```
+
+<!--
+msfd
+msfelfscan
+msfmachscan
+msfrop
+msfrpc
+msfrpcd
+msfvenom
+msfpescan
+msfbinscan
+-->
+
+### MSF Console
+
+```sh
+#
+help
+
+#
+creds help
+
+#
+db_status
+
+#
+search type:exploit platform:windows <text>
+
+#
+use auxiliary/scanner/portscan/tcp
+show options
+set RHOSTS <host>
+
+#
+run # or, exploit
+
+#
+back
+
+#
+exit
+```
+
+### Tips
+
+#### Remove Local Database
+
+```sh
+rm -fR ~/.msf4
+```
+
+<!-- ### Issues
+
+####
+
+```
+Fix issue with postgres connection Metasploit - Authentication failed for user "msf"
+```
+
+```sh
+msfdb reinit
+``` -->

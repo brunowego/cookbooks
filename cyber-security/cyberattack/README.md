@@ -35,6 +35,8 @@ Spell-Jacking
 <input type="text" spellcheck="false" />
 -->
 
+**Keywords:** Cyberwarfare
+
 ## Learn
 
 - [Vulnerability vs. Exploit vs. Threat](https://snyk.io/learn/security-vulnerability-exploits-threats/)
@@ -49,6 +51,11 @@ Threat (Hacker, Flood)
 
 - Indicator of Compromise
 - Terrorist Tactics, Techniques, and Procedures
+- Threat Hunting
+
+## Glossary
+
+- Cyber Threat Intelligence (CTI)
 
 ## Types
 

@@ -10,14 +10,21 @@
 
 ## Terms
 
+- Rainbow Table / Lookup Table
 - Security Assessment
 
 ## Tools
 
+### End User
+
 - [1Password](/1password.md)
+- [LastPass](/lastpass.md)
+
+### Corporate
+
 - [Bitwarden](/bitwarden.md)
 - [HashiCorp Vault](/hashicorp/vault/README.md)
-- [LastPass](/lastpass.md)
+- [Passbolt Community Edition (CE)](/passbolt-ce.md)
 
 <!--
 KeePass

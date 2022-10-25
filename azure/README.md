@@ -11,7 +11,9 @@ https://linkedin.com/learning/paths/prepare-for-the-designing-and-implementing-m
 https://linkedin.com/learning/azure-essential-training-for-developers/azure-for-developers
 -->
 
-TODO
+## Glossary
+
+- Team Foundation Version Control (TFVC)
 
 <!--
 ## Interview

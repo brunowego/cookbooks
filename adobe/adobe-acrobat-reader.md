@@ -1,5 +1,7 @@
 # Adobe Acrobat Reader
 
+**Keywords:** PDF
+
 ## App
 
 ### Installation

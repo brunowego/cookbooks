@@ -36,7 +36,7 @@ https://github.com/swisskyrepo/PayloadsAllTheThings
 - [CrackStation](/cyber-security/tools/scapy.md)
 - [Jok3r](/cyber-security/tools/jok3r.md)
 - [Legion](/cyber-security/tools/legion.md)
-- [Metasploit](/cyber-security/tools/metasploit.md)
+- [Metasploit Framework](/metasploit-framework/README.md)
 - [Network Mapper (Nmap)](/nmap.md)
 - [Nikto2](/cyber-security/tools/nikto2.md)
 - [OpenSCAP](/cyber-security/tools/openscap.md)

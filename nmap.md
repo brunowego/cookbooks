@@ -6,11 +6,18 @@ https://app.pluralsight.com/paths/skills/information-security-testing-and-auditi
 
 <!--
 Zenmap
+
+Xmas scan
 -->
 
 ## References
 
 - [Nmap Reference Guide](https://nmap.org/book/man.html)
+
+## Terms
+
+- Stealth Scan (TCP SYN (Stealth) Scan (-sS))
+- Three‐way Handshake (SYN, SYN-ACK, ACK handshake)
 
 ## Docker
 

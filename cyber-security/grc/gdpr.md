@@ -26,6 +26,8 @@ https://app.pluralsight.com/library/courses/gdpr-executive-briefing/table-of-con
 ## Glossary
 
 - Data Protection Authorities (DPAs)
+- Data Protection Officer (DPO)
+- Data Protection Officer as a Service (DPOaaS)
 
 ## DPAs
 

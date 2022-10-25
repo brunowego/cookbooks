@@ -23,8 +23,13 @@ http://www.hackertest.net/
 | ---- | ----------------------------------------------------------------------------------- | ------------------- |
 | SAST | Scans the application code at rest to discover fault code posing a security threat. | White-Box           |
 | DAST | Tests the running application and has no access to its source code.                 | Black-Box           |
+
+<!--
 | IAST |                                                                                     |                     |
 | RASP |                                                                                     |                     |
+-->
+
+![Differences](/assets/images/cyber-security/sast-dast-iast.png)
 
 ## Objectives & Tools
 

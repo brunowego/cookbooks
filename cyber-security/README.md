@@ -97,6 +97,10 @@ ISO 27001 Foundation
 Security+
 -->
 
+## 501(c)(3) Organizations
+
+- Open Information Security Foundation (OISF)
+
 ## Podcasts
 
 - [Darknet Diaries](https://darknetdiaries.com/)
@@ -153,7 +157,6 @@ DevSecOps Advocate
 - Common Weakness Enumeration (CWE)
 - Control Objectives for Information and Related Technologies (COBIT)
 - Critical Security Controls (CIS Controls) / Center for Internet Security (CIS)
-- Cross-site Scripting (XSS)
 - Data Execution Prevention (DEP) / Address Space Layout Randomization (ASLR)
 - Distributed Denial-of-Service (DDoS)
 - Doxing (Drop docs)
@@ -189,7 +192,6 @@ DevSecOps Advocate
 - Vendor Security Assessment (VSA)
 - Virtual Private Cloud (VPC)
 - Web Application Firewall (WAF)
-- XML External Entity (XXE)
 - Zero Trust Architecture (ZTA)
 
 ## Learning

@@ -1,9 +1,14 @@
 # Kali Linux
 
+<!--
+https://kali.download/virtual-images/kali-2022.3/kali-linux-2022.3-virtualbox-amd64.7z.torrent
+-->
+
 ## Links
 
 - [Org. Repository](https://gitlab.com/kalilinux)
 - [Main Website](https://kali.org/)
+- [Download](https://kali.org/get-kali/)
 
 ## Docker
 
@@ -24,3 +29,8 @@ docker run -it --rm \
   --network workbench \
   docker.io/kalilinux/kali:amd64 /bin/bash
 ```
+
+<!--
+samdump2 system SAM
+hash-identifier
+-->

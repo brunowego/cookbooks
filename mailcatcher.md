@@ -1,5 +1,7 @@
 # MailCatcher
 
+**Keywords:** Local Mail Server
+
 ## Alternatives
 
 - [MailHog](/mailhog.md)

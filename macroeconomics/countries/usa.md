@@ -50,7 +50,7 @@ TODO
 | -------------------------------------------- | ------------------- | ---------------------------- |
 | ADP Nonfarm Employment Change                | Medium              |                              |
 | Building Permits                             | Neutral             |                              |
-| CB Consumer Confidence                       |                     |                              |
+| CB Consumer Confidence                       | Medium              |                              |
 | Core Durable Goods Orders                    |                     |                              |
 | Core PPI (MoM) / PPI (MoM)                   | Medium              |                              |
 | CPI (MoM/YoY) / Core CPI (MoM/YoY)           | High                | Important: Core CPI (MoM) 🌟 |

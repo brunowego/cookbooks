@@ -1,5 +1,7 @@
 # Snort
 
+**Keyword:** IPS
+
 ## Links
 
 - [Main Website](https://snort.org/)

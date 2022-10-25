@@ -13,10 +13,13 @@
 
 - Common Vulnerabilities and Exposures (CVE)
 - Common Vulnerability Scoring System (CVSS)
-- National Vulnerability Database (NVD)
-- Security Technical Implementation Guides (STIGs)
-- Open Vulnerability and Assessment Language (OVAL)
+- Cross-Site Scripting (XSS)
 - Information Sharing and Analysis Centers (ISACs)
+- National Vulnerability Database (NVD)
+- Open Vulnerability and Assessment Language (OVAL)
+- Security Technical Implementation Guides (STIGs)
+- Vulnerability Management (VM)
+- XML External Entity (XXE)
 
 <!--
 - CIS DI
@@ -64,3 +67,19 @@ Anchore
 JFROG Xray
 Qualys Container Security
 -->
+
+## Dangerous Vulnerabilities Exploited
+
+- ProxyLogon (CVE-2021-26855)
+- ZeroLogon (CVE-2020-1472)
+- Log4Shell (CVE-2021-44228)
+- VMware vSphere client (CVE-2021-21972)
+- PetitPotam (CVE-2021-36942)
+
+## Web Vulnerability Examples
+
+- `1' or '1' = '1'))/*` -> SQLi
+- `<svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(1)//'>` -> XSS
+- `https://sottlmare.com/ /../../../../etc/shadow` -> Path Traversal / OS Credential Dumping
+- `<!ENTITY xxe SYSTEM "file:///etc/password">` -> XXE injection
+- `https://www.example.com/change_password.php?userid=1701` ->

@@ -4,6 +4,10 @@
 https://www.investing.com/economic-calendar/
 -->
 
+## Cheat Sheet
+
+- [Edgewonk’s Math](/assets/files/trading/edgewonks-math-cheatsheet.pdf)
+
 ## Rules
 
 - Always be prepared for the worst case scenario

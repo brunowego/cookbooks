@@ -66,6 +66,10 @@ DevSecOps more culture than a team. Incorporate security within Agile and DevOps
 - Improving Security Integration and Pace
 - Enabling Greater Overall Business Success
 
+## Shift-left
+
+![DevSecOps Pipeline](/assets/images/cyber-security/devsecops-pipeline.png)
+
 ## Tools
 
 <!--

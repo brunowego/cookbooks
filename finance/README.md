@@ -129,7 +129,7 @@ https://tradingeconomics.com/calendar
 - Pattern Day Trading (PDT)
 - Permabear / Permabull
 - Pump and Dump (P&D)
-- Quantitative Easing (QE) / Quantitative Tightening (QT)
+- Quantitative Easing (QE) / Quantitative Tightening (QT) / Quantitative Tinkering
 - Quarter-on-Quarter or Quarter-over-Quarter (QoQ)
 - Retail Liquidity Provider (RLP)
 - Stagflation

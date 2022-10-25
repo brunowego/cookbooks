@@ -25,9 +25,11 @@ https://github.com/onelittlenightmusic/zenn-articles/blob/356877d986f8324d19e603
 https://github.com/pbnj/pbnj.github.io/blob/6b68214fb58f1ec46e91a4d611e7e3b928acf563/blog/unit-test-your-configuration-files.md
 -->
 
+**Keywords:** Policy Management
+
 ## Alternatives
 
-- Kyverno
+- [Kyverno](/kyverno.md)
 - [Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
 
 ## Links

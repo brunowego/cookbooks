@@ -9,6 +9,7 @@ Non-Disclosure Agreement (NDA)
 
 - Computer Hacking Forensic Investigator (CHFI)
 - EXchangeable Image Format (EXIF)
+- Indicators of Compromise (IoCs)
 - Packet Capture (PCAP)
 - PCI Forensic Investigator (PFI)
 

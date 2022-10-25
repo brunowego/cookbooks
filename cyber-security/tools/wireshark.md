@@ -10,6 +10,14 @@ https://app.pluralsight.com/library/courses/getting-started-analyzing-network-tr
 
 - [Code Repository](https://github.com/wireshark/wireshark)
 
+## Glossary
+
+- Berkeley Packet Filter (BPF)
+
+## Terms
+
+- Full Open Scan
+
 ## App
 
 ### Installation
@@ -31,6 +39,10 @@ brew install --cask wireshark-chmodbpf
 
 #### Filter Source IP
 
-```txt
-ip.src == 192.168.0.100
+```
+#
+ip.src == <ip>
+
+#
+ip.host == <ip> and i.host == <ip> and tcp
 ```

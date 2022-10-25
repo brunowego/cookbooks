@@ -51,6 +51,12 @@ Symmetric Algorithm -> Cipher
 - Stream Ciphers
 - RSA
 
+## Types Of Cryptography:
+
+- Symmetric Key Cryptography
+- Hash Functions
+- Asymmetric Key Cryptography
+
 ## Cryptography Algorithms
 
 - AES

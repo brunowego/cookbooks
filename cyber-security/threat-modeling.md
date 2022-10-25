@@ -6,6 +6,8 @@ https://app.pluralsight.com/paths/skills/threat-modeling
 https://www.youtube.com/watch?v=eUZmJ3EZvPM
 -->
 
+**Keywords:** Diagram
+
 ## Links
 
 - [OWASP Threat Modeling Process](https://owasp.org/www-community/Threat_Modeling_Process)
