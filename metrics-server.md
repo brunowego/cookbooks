@@ -31,6 +31,18 @@ kubectl delete \
   -f "https://github.com/kubernetes-sigs/metrics-server/releases/download/v${METRICS_SERVER_VERSION}/components.yaml"
 ```
 
+## Minikube
+
+### Addons
+
+```sh
+# Enable
+minikube addons enable metrics-server
+
+# Disable
+minikube addons disable metrics-server
+```
+
 ## Helm
 
 ### References

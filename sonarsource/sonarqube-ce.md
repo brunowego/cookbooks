@@ -172,12 +172,12 @@ sonar dump
 
 ### References
 
-- [Configuration](https://github.com/Oteemo/charts/tree/master/charts/sonarqube#configuration)
+- [Configuration](https://github.com/SonarSource/helm-chart-sonarqube/tree/master/charts/sonarqube#configuration)
 
 ### Repository
 
 ```sh
-helm repo add oteemocharts 'https://oteemo.github.io/charts'
+helm repo add sonarqube 'https://sonarsource.github.io/helm-chart-sonarqube'
 helm repo update
 ```
 
@@ -188,26 +188,33 @@ helm repo update
 kubectl create ns sonarqube
 
 #
+helm search repo -l sonarqube/sonarqube
+
+#
 export KUBERNETES_IP='127.0.0.1'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-helm install sonarqube oteemocharts/sonarqube \
+helm install sonarqube sonarqube/sonarqube \
   --namespace sonarqube \
-  --version 9.6.4 \
+  --version 5.0.6+370 \
   -f <(cat << EOF
 ingress:
   enabled: true
   hosts:
   - name: sonarqube.${DOMAIN}
+  ingressClassName: nginx
 EOF
 )
+
+#
+kubectl get all -n sonarqube
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/sonarqube-sonarqube \
+kubectl rollout status statefulset/sonarqube-sonarqube \
   -n sonarqube
 ```
 

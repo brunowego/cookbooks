@@ -1,7 +1,12 @@
 # minikube
 
+## Alternatives
+
+- [Kubernetes in Docker (KinD)](/kind/README.md)
+
 ## Links
 
+- [Code Repository](https://github.com/kubernetes/minikube)
 - [Main Website](https://minikube.sigs.k8s.io/)
 
 ## References
@@ -9,6 +14,13 @@
 - [Tunnel](https://github.com/kubernetes/minikube/blob/master/docs/tunnel.md)
 
 ## CLI
+
+### Dependencies
+
+- VM Driver
+  - [HyperKit](/hyperkit.md)
+  - [Oracle VM VirtualBox](/virtualbox.md)
+  - [Parallels](/parallels.md)
 
 ### Installation
 
@@ -59,20 +71,24 @@ choco install -y minikube
 ### Configuration
 
 ```sh
-minikube config view
+#
+minikube config list
 
-# Disable Update Notification
+#
 minikube config set WantUpdateNotification false
-# minikube config set addon-manager true
 minikube config set cpus 2
 minikube config set memory 4096
 minikube config set disk-size 40g
+
+#
+minikube config view
 ```
 
-#### VM Driver
+<!--
+minikube config set addon-manager true
+-->
 
-- [Docker Machine Driver Hyperkit](/docker-machine-driver-hyperkit.md)
-- [Docker Machine Driver Parallels](/docker-machine-driver-parallels.md)
+#### VM Driver
 
 ```sh
 # HyperKit (Darwin only)
@@ -94,54 +110,50 @@ minikube --help
 ### Usage
 
 ```sh
-#
-export INGRESS_HOST="$(minikube ip)"
-
-# Start
+# Using default
 minikube start \
   $(echo "$MINIKUBE_START_OPTS") \
-  -p minikube
+  -p minikube-default
 
-# Custom Google Containers Repository
+# Using specific Kubernetes version. Kubernetes Releases: https://kubernetes.io/releases/
 minikube start \
   $(echo "$MINIKUBE_START_OPTS") \
-  -p minikube \
+  -p minikube-default \
+  --bootstrapper kubeadm \
+  --kubernetes-version 1.24.3
+
+# Using feature gates
+minikube start \
+  $(echo "$MINIKUBE_START_OPTS") \
+  -p minikube-default \
+  --feature-gates=TTLAfterFinished=true
+
+# Using custom Google Containers Repository
+minikube start \
+  $(echo "$MINIKUBE_START_OPTS") \
+  -p minikube-default \
   --image-repository 'registry.cn-hangzhou.aliyuncs.com/google_containers' \
   --insecure-registry 'registry.cn-hangzhou.aliyuncs.com'
 
 #
-minikube start \
-  $(echo "$MINIKUBE_START_OPTS") \
-  --bootstrapper kubeadm \
-  --kubernetes-version 1.17.4
-
-#
-minikube start \
-  $(echo "$MINIKUBE_START_OPTS") \
-  --feature-gates=TTLAfterFinished=true
+minikube profile minikube-default
 ```
 
 ```sh
 # Show Current
-minikube profile
-
-# Set
-minikube profile minikube
+minikube profile list
 
 #
 kubectl config view
 
 #
 kubectl config set-context \
-  --cluster=minikube \
-  --user=minikube \
-  minikube
+  --cluster minikube-default \
+  --user minikube-default \
+  minikube-default
 
 #
 minikube ssh sudo ip link set docker0 promisc on
-
-#
-minikube stop -p minikube
 ```
 
 #### Addons
@@ -149,14 +161,17 @@ minikube stop -p minikube
 ```sh
 #
 minikube addons list
-
-# Ingress Controller (NGINX)
-minikube addons enable ingress
-minikube addons enable ingress-dns
-
-# MetricServer
-minikube addons enable metrics-server
 ```
+
+##### NGINX Ingress Controller
+
+1. [Using Helm](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm)
+2. [Using Build-in](/kubernetes/ingress-controllers/ingress-nginx/README.md#minikube)
+
+##### MetricServer
+
+1. [Using Helm](/metrics-server.md#helm)
+2. [Using Build-in](/metrics-server.md#minikube)
 
 #### Mount
 
@@ -169,6 +184,16 @@ minikube mount [/path/to/export]:[/path/to/mount/point]
 ```sh
 #
 eval "$(minikube docker-env)"
+```
+
+#### Delete
+
+```sh
+#
+minikube stop -p minikube-default
+
+#
+minikube delete -p minikube-default
 ```
 
 ### Tips
@@ -193,6 +218,9 @@ docker info | grep Proxy
 #### CIDR Route
 
 ```sh
+#
+export INGRESS_HOST="$(minikube ip)"
+
 # Adding
 sudo route \
   -n add \

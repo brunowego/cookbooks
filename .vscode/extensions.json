@@ -4,6 +4,7 @@
     "shuworks.vscode-table-formatter",
     "zhuangtongfa.Material-theme",
     "streetsidesoftware.code-spell-checker",
-    "EditorConfig.EditorConfig"
+    "EditorConfig.EditorConfig",
+    "redhat.vscode-yaml"
   ]
 }

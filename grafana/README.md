@@ -142,7 +142,7 @@ helm repo update
 
 ### Dependencies
 
-- Assuming there is already a `monitoring-system` namespace.
+Assuming there is already a `monitoring-system` namespace. If not, run `kubectl create ns monitoring-system`.
 
 ### Install
 
@@ -152,9 +152,12 @@ export KUBERNETES_IP='127.0.0.1'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
+helm search repo -l grafana/grafana
+
+#
 helm install grafana grafana/grafana \
   --namespace monitoring-system \
-  --version 6.16.12 \
+  --version 6.43.0 \
   -f <(cat << EOF
 adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
 
@@ -162,6 +165,7 @@ ingress:
   enabled: true
   hosts:
   - grafana.${DOMAIN}
+  ingressClassName: nginx
 
 plugins:
 - grafana-piechart-panel

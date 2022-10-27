@@ -4,6 +4,10 @@
 
 - American Association of Individual Investors (AAII)
 
+## Tools
+
+- [HyblockCapital](/hyblockcapital.md)
+
 ## Reports
 
 ### Fear & Greed Index (FGI)
@@ -14,8 +18,8 @@
 
 ### AAII
 
-- [The AAII Investor Sentiment Survey](https://www.aaii.com/sentimentsurvey)
-- [Sentiment Survey Historical Data](https://www.aaii.com/sentimentsurvey/sent_results)
+- [The AAII Investor Sentiment Survey](https://aaii.com/sentimentsurvey)
+- [Sentiment Survey Historical Data](https://aaii.com/sentimentsurvey/sent_results)
 
 <!--
 AAII Bull Ratio

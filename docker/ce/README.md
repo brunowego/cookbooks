@@ -8,6 +8,11 @@ Version v20.10.5
 -->
 
 <!--
+2 CPU
+4GB Memory
+-->
+
+<!--
 Missing file
 "${WAR_FILE:?You must especify the WAR_FILE variable in your .env file}:/usr/local/tomcat/webapps/openam.war"
 -->

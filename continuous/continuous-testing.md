@@ -7,6 +7,12 @@ https://linkedin.com/learning/programming-foundations-software-testing-qa/set-th
 https://linkedin.com/learning/test-automation-foundations/build-a-foundation-of-test-automation
 -->
 
+<!--
+https://g1.globo.com/politica/eleicoes/2022/noticia/2022/10/27/jornal-o-globo-esclarece-erro-na-exibicao-de-ambiente-de-apuracao-do-segundo-turno.ghtml
+
+https://archive.ph/LPHeq
+-->
+
 ## Types
 
 - Regression Testing

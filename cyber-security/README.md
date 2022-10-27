@@ -1,6 +1,20 @@
 # Cyber Security
 
 <!--
+https://docs.google.com/spreadsheets/d/1bxTwAkdvken_rGFtTWCp-mUCDH37aisdZNLSWWtj5DU/edit#gid=726008638
+https://docs.google.com/spreadsheets/d/12CD9GOZG0ib2ElQfUFJPk5KjFqMZiU1ZdXYXcFiNm10/edit#gid=0
+-->
+
+<!--
+Every-Day Carry (EDC)
+
+Energy Adapter
+Cables
+
+https://www.youtube.com/watch?v=TqjYwsYt5s0
+-->
+
+<!--
 Discover the computers owned by the company (Inventory Software)
 -->
 

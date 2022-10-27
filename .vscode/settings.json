@@ -14,5 +14,8 @@
     "wyckoff",
     "xdecow"
   ],
-  "workbench.colorTheme": "One Dark Pro"
+  "workbench.colorTheme": "One Dark Pro",
+  "[yaml]": {
+    "editor.formatOnSave": false
+  }
 }

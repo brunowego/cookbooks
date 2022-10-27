@@ -4,6 +4,10 @@
 
 - [Code Repository](https://github.com/projectcalico/cni-plugin)
 
+## Guides
+
+- [Docs](https://docs.projectcalico.org/getting-started/kubernetes/helm)
+
 ## Helm
 
 ### References

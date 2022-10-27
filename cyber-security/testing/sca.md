@@ -26,7 +26,3 @@ https://github.com/guacsec/guac
 - Node.js: `audit` sub-command in NPM/Yarn
 - Renovate
 - Snyk
-
-## Known Cases (Famous)
-
-- Log4Shell (CVE-2021-44228)

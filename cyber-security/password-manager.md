@@ -15,16 +15,19 @@
 
 ## Tools
 
-### End User
+### Personal Usage
 
 - [1Password](/1password.md)
 - [LastPass](/lastpass.md)
 
-### Corporate
+### Corporate Usage
 
 - [Bitwarden](/bitwarden.md)
-- [HashiCorp Vault](/hashicorp/vault/README.md)
 - [Passbolt Community Edition (CE)](/passbolt-ce.md)
+
+## Secrets Manager
+
+- [HashiCorp Vault](/hashicorp/vault/README.md)
 
 <!--
 KeePass

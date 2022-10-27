@@ -109,15 +109,15 @@ pkill helm
 
 ```sh
 #
-helm list -n '[namespace]'
+helm list -n '<namespace>'
 
 #
-helm history '[name]' \
-  -n '[namespace]'
+helm history '<name>' \
+  -n '<namespace>'
 
 #
-helm get values '[name]' \
-  -n '[namespace]'
+helm get values '<name>' \
+  -n '<namespace>'
 
 #
 helm upgrade atlantis runatlantis/atlantis \
@@ -127,8 +127,8 @@ helm upgrade atlantis runatlantis/atlantis \
   -f ./values.yaml
 
 #
-helm rollback '[name]' '[revision]' \
-  -n '[namespace]'
+helm rollback '<name>' '<revision>' \
+  -n '<namespace>'
 ```
 
 #### Show Values of a Chart
@@ -149,8 +149,8 @@ helm pull sentry/sentry \
 #### Get Values of Installed Chart
 
 ```sh
-helm get values '[name]' \
-  -n '[namespace]'
+helm get values '<name>' \
+  -n '<namespace>'
 ```
 
 <!-- ####

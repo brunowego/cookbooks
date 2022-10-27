@@ -41,5 +41,5 @@ kubens -h
 kubectx -u
 
 # Delete context entry
-kubectx -d [cluster-name]
+kubectx -d <cluster-name>
 ```

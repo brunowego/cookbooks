@@ -2,6 +2,7 @@
 
 ## Guides
 
+- [Docs](https://docs.cilium.io/en/v1.9/gettingstarted/kind/)
 - [Troubleshooting](https://docs.cilium.io/en/v1.9/operations/troubleshooting/)
 
 ## Helm
@@ -21,17 +22,15 @@ helm repo update
 
 ```sh
 #
+helm search repo -l cilium/cilium
+
+#
 helm install cilium cilium/cilium \
   --namespace kube-system \
-  --version 1.9.10 \
+  --version 1.12.2 \
   -f <(cat << EOF
 nodeinit:
   enabled: true
-
-kubeProxyReplacement: partial
-
-hostServices:
-  enabled: false
 
 externalIPs:
   enabled: true
@@ -42,9 +41,6 @@ nodePort:
 hostPort:
   enabled: true
 
-bpf:
-  masquerade: false
-
 image:
   pullPolicy: IfNotPresent
 
@@ -52,9 +48,12 @@ ipam:
   mode: kubernetes
 EOF
 )
+
+#
+kubectl get all -n kube-system
 ```
 
-### Hubble Relay
+<!-- ### Hubble Relay
 
 ```sh
 #
@@ -75,12 +74,12 @@ hubble:
   #     - hubble.${DOMAIN}
 EOF
 ))
-```
+``` -->
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/cilium \
+kubectl rollout status deploy/cilium-operator \
   -n kube-system
 ```
 
@@ -88,12 +87,12 @@ kubectl rollout status deploy/cilium \
 
 ```sh
 kubectl logs \
-  -l 'app.kubernetes.io/instance=cilium' \
+  -l 'io.cilium/app=operator' \
   -n kube-system \
   -f
 ```
 
-### Tips
+<!-- ### Tips -->
 
 <!-- #### Policy Trace
 

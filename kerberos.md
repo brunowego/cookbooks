@@ -1,7 +1,0 @@
-# Kerberos
-
-<!--
-TGT
--->
-
-TODO

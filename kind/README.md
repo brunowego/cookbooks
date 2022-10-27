@@ -1,4 +1,4 @@
-# Kubernetes in Docker (kind)
+# Kubernetes in Docker (KinD)
 
 <!--
 https://github.com/kubernetes/kubeadm/tree/master/kinder
@@ -6,22 +6,19 @@ https://github.com/kubernetes/kubeadm/tree/master/kinder
 
 ## Links
 
+- [Code Repository](https://github.com/kubernetes-sigs/kind)
 - [Main Website](https://kind.sigs.k8s.io/)
 
 ## Guides
 
 - [Ingress](https://kind.sigs.k8s.io/docs/user/ingress/)
 
-### CNI
-
-- [Calico](https://docs.projectcalico.org/getting-started/kubernetes/helm)
-- [Cilium](https://docs.cilium.io/en/v1.9/gettingstarted/kind/)
-
 ## CLI
 
 ### Dependencies
 
 - [Docker CE (Daemon)](/docker/docker-ce.md#daemon)
+- [yq](/yq.md)
 
 ### Installation
 
@@ -34,7 +31,7 @@ brew install kind
 #### go get
 
 ```sh
-GO111MODULE='on' go get sigs.k8s.io/kind@v0.4.0
+GO111MODULE='on' go get sigs.k8s.io/kind@v0.16.0
 ```
 
 #### Chocolatey
@@ -65,7 +62,7 @@ nodes:
     kind: InitConfiguration
     nodeRegistration:
       kubeletExtraArgs:
-        node-labels: 'ingress-ready=true'
+        node-labels: 'ingress-ready=true,kubernetes.io/os=linux'
   extraPortMappings:
   - containerPort: 80
     hostPort: 80
@@ -86,6 +83,20 @@ EOF
 #### kindnet
 
 Kind comes with kindnet by default.
+
+#### Cilium 🌟
+
+```sh
+yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' ~/.kind-config.yaml <(cat << EOF
+networking:
+  disableDefaultCNI: true
+  podSubnet: 10.10.0.0/16
+  serviceSubnet: 10.11.0.0/16
+EOF
+) | sponge ~/.kind-config.yaml
+```
+
+**Installation:** [Cilium Networking](/kubernetes/cni/cilium.md#helm)
 
 #### Calico
 
@@ -109,36 +120,13 @@ EOF
 ) | sponge ~/.kind-config.yaml
 ```
 
-#### Cilium
-
-```sh
-yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' ~/.kind-config.yaml <(cat << EOF
-networking:
-  disableDefaultCNI: true
-  podSubnet: 10.10.0.0/16
-  serviceSubnet: 10.11.0.0/16
-EOF
-) | sponge ~/.kind-config.yaml
-```
-
-### External Docker
-
-```sh
-#
-sed -i "s/0.0.0.0/$(docker context inspect --format '{{lower .Endpoints.docker.Host}}' | awk -F@ '{print $2}')/" ~/.kube/config
-
-#
-kubectl config set-cluster "$(kubectl config current-context)" \
-  --insecure-skip-tls-verify=true
-```
-
 ### Environments
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
 # Kubernetes Releases: https://kubernetes.io/releases/
-export KUBERNETES_VERSION='1.20.7'
+export KUBERNETES_VERSION='1.24.3'
 ```
 
 ```sh
@@ -154,16 +142,16 @@ sudo su - "$USER"
 kind create cluster \
   --config ~/.kind-config.yaml \
   --image "docker.io/kindest/node:v$KUBERNETES_VERSION" \
-  --name 'default'
+  --name 'kind-default'
 
-#
+# Get installed version
 kubectl version --short
 ```
 
 #### Dependencies
 
-- CNI / [Cilium Networking](/kubernetes/cni/cilium.md#helm)
-- Ingress Controller / [NGINX](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm)
+- Ingress Controller
+  - [NGINX](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm)
 
 ### Usage
 
@@ -173,10 +161,21 @@ kind get clusters
 
 # Get nodes
 kind get nodes \
-  --name 'default'
+  --name 'kind-default'
 ```
 
 ### Tips
+
+#### External Docker
+
+```sh
+#
+sed -i "s/0.0.0.0/$(docker context inspect --format '{{lower .Endpoints.docker.Host}}' | awk -F@ '{print $2}')/" ~/.kube/config
+
+#
+kubectl config set-cluster "$(kubectl config current-context)" \
+  --insecure-skip-tls-verify=true
+```
 
 #### Cluster Info
 
@@ -185,7 +184,7 @@ kind get nodes \
 kubectl cluster-info
 
 # or, using KUBECONFIG environment variable
-export KUBECONFIG="$(kind get kubeconfig --name 'default')"
+export KUBECONFIG="$(kind get kubeconfig --name 'kind-default')"
 kubectl cluster-info
 
 # or, using context parameter
@@ -197,7 +196,7 @@ kubectl cluster-info --context kind-default
 ```sh
 #
 cat << EOF | kind create cluster \
-  --name 'default' \
+  --name 'kind-default' \
   --config -
 # ...
 EOF
@@ -215,15 +214,15 @@ docker: Error response from daemon: driver failed programming external connectiv
 ---
 # ...
 nodes:
-- role: control-plane
-  # ...
-  extraPortMappings:
-  - containerPort: 80
-    hostPort: 8080
-    protocol: TCP
-  - containerPort: 443
-    hostPort: 8443
-    protocol: TCP
+  - role: control-plane
+    # ...
+    extraPortMappings:
+      - containerPort: 80
+        hostPort: 8080
+        protocol: TCP
+      - containerPort: 443
+        hostPort: 8443
+        protocol: TCP
 # ...
 ```
 
@@ -231,5 +230,5 @@ nodes:
 
 ```sh
 kind delete cluster \
-  --name 'default'
+  --name 'kind-default'
 ```

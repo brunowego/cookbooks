@@ -28,33 +28,24 @@ brew install azure-cli
 az -h
 ```
 
+### Initialize
+
+```sh
+#
+az extension add -n init
+
+#
+az init
+
+#
+cat ~/.azure/config
+```
+
 ### Usage
 
 ```sh
-# Login
+#
 az login
-
-# Service Principal
-az ad sp create-for-rbac \
-  --role='Contributor' \
-  --scopes="/subscriptions/$(az account list | jq -r '.[] | select (.isDefault == true).id')" | \
-    jq
-
-#
-az login \
-  --service-principal \
-  -u [appId] \
-  -p [password] \
-  --tenant [tenant] | \
-    jq
-
-#
-az group create \
-  --name 'ExampleDevResourceGroup' \
-  --location 'eastus'
-
-#
-az group list -o table
 ```
 
 ### Uninstall

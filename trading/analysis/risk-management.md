@@ -2,11 +2,17 @@
 
 <!--
 https://www.investing.com/economic-calendar/
+
+Sharpe Ratio
 -->
 
 ## Cheat Sheet
 
 - [Edgewonk’s Math](/assets/files/trading/edgewonks-math-cheatsheet.pdf)
+
+## Index
+
+- Sharpe Ratio
 
 ## Rules
 
@@ -18,6 +24,7 @@ https://www.investing.com/economic-calendar/
 
 ## Terms
 
+- Falling Knife
 - Flash Crash
 - Liquidity Risk
 - Risk-to-Reward Ratio (Risk/Reward Ratio) (RR)

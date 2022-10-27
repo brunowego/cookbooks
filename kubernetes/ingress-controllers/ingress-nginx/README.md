@@ -169,8 +169,10 @@ kubectl delete \
 ```sh
 # Enable
 minikube addons enable ingress
+minikube addons enable ingress-dns
 
 # Disable
+minikube addons disable ingress-dns
 minikube addons disable ingress
 ```
 
@@ -190,31 +192,32 @@ helm repo update
 ### Install
 
 ```sh
-# Kubernetes in Docker (kind)
+#
+helm search repo -l ingress-nginx/ingress-nginx
+
+# Only for minikube
+kubectl label node "$(minikube profile)" ingress-ready=true
+
+# Only for KinD
+kubectl get nodes \
+  -l 'ingress-ready=true,kubernetes.io/os=linux' \
+  -o json | \
+    jq '.items[].spec.taints'
+
+kubectl taint node \
+  -l 'ingress-ready=true,kubernetes.io/os=linux' \
+  node-role.kubernetes.io/control-plane- node-role.kubernetes.io/master-
+
+#
+kubectl get nodes -l 'ingress-ready=true,kubernetes.io/os=linux'
+
+#
 helm install ingress-controller ingress-nginx/ingress-nginx \
   --create-namespace \
   --namespace ingress-nginx \
-  --version 3.35.0 \
+  --version 4.2.5 \
   -f <(cat << EOF
 controller:
-  hostPort:
-    enabled: true
-
-  kind: DaemonSet
-
-  publishService:
-    enabled: false
-
-  extraArgs:
-    publish-status-address: localhost
-
-  tolerations:
-  - key: node-role.kubernetes.io/master
-    operator: Equal
-    effect: NoSchedule
-
-  terminationGracePeriodSeconds: 0
-
   nodeSelector:
     ingress-ready: 'true'
     kubernetes.io/os: linux
@@ -223,6 +226,12 @@ controller:
     type: NodePort
 EOF
 )
+
+#
+kubectl get all -n ingress-nginx
+
+#
+kubectl get ingressclasses.networking.k8s.io
 ```
 
 ### Prometheus Stack
@@ -335,7 +344,7 @@ block-user-agents:
 #### Rate Limit
 
 ```yaml
-nginx.ingress.kubernetes.io/limit-rpm: "300"
+nginx.ingress.kubernetes.io/limit-rpm: '300'
 ```
 
 <!--
@@ -403,17 +412,17 @@ kind: Ingress
 spec:
   # ...
   rules:
-  - # ...
-    http:
-      paths:
-      - path: /
-        # backend:
-        #   serviceName: [name]
-        #   servicePort: [port]
-        pathType: Prefix
-        backend:
-          service:
-            name: [name]
-            port:
-              number: [port]
+    - # ...
+      http:
+        paths:
+          - path: /
+            # backend:
+            #   serviceName: [name]
+            #   servicePort: [port]
+            pathType: Prefix
+            backend:
+              service:
+                name: [name]
+                port:
+                  number: [port]
 ```

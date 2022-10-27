@@ -1,8 +1,6 @@
-# Nasdaq
+# National Association of Securities Dealers Automated Quotations (NASDAQ)
 
 <!--
-New York Stock Exchange (NYSE)
-
 NQ1!
 NAS100USD
 US100

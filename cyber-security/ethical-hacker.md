@@ -1,6 +1,8 @@
 # Ethical Hacker (EH)
 
 <!--
+https://www.youtube.com/watch?v=3Kq1MIfTWCE
+
 https://app.pluralsight.com/paths/certificate/ethical-hacking-ceh-v11-prep
 https://app.pluralsight.com/library/courses/web-application-hacking-ethical-hacking-ceh-cert/table-of-contents
 
@@ -13,6 +15,8 @@ https://linkedin.com/learning/ethical-hacking-system-hacking/welcome
 https://linkedin.com/learning/ethical-hacking-sniffers/visualizing-network-traffic
 https://linkedin.com/learning/ethical-hacking-session-hijacking/understanding-session-hijacking-2
 -->
+
+**Keywords:** Red Team
 
 TODO
 

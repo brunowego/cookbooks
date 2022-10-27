@@ -17,6 +17,19 @@ https://github.com/madebygps/self-taught-guide-to-cloud-computing
 - Oracle
 - Private Cloud (On-premises)
 
+## Glossary
+
+- Infrastructure as a Service (IaaS)
+- Platform as a Service (PaaS)
+- Software as a Service (SaaS)
+- Total Cost of Ownership (TCO)
+
+## Benefits
+
+- Reduce time and cost to provision
+- Increased flexibility in scale and deployment
+- Lower overall TCO
+
 ## Concepts
 
 - [On-Premises Infrastructure](/on-prem.md)

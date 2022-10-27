@@ -1,6 +1,8 @@
 # Brazil
 
 <!--
+QUANDL:BCB/11753
+
 https://utilitarios.grupodpg.com.br/utilitarios/categoria/calculo-facil/775/custo-de-contratao-pj-x-clt-x-autnomo
 
 https://bcb.gov.br/estabilidadefinanceira/sistema-valores-a-receber/

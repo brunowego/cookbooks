@@ -8,14 +8,10 @@ Jamais coloque uma ordem com stop uma proxima da outra, a Binance irá pegar a o
 
 ## Links
 
-- [BscScan](https://bscscan.com/)
-- [CoinMarketCap / Binance](https://coinmarketcap.com/exchanges/binance/)
+- [Org. Repository](https://github.com/binance)
 - [Main Website](https://www.binance.com)
 - [New Alt-coins](https://www.binance.com/en/altcoins/new)
 - [Announcement](https://www.binance.com/en/support/announcement)
-- [Open Interest](https://www.binance.com/en/futures/funding-history/4)
-- [Trading Fees](https://www.binance.com/en/fee/schedule)
-- [Deposit & Withdrawal Status](https://www.binance.com/en/network)
 
 ## Wallet
 
@@ -29,6 +25,8 @@ Jamais coloque uma ordem com stop uma proxima da outra, a Binance irá pegar a o
 ## Tools
 
 - [Binance Top LSR](https://toplsr.netlify.app/)
+- [BscScan](https://bscscan.com/)
+- [CoinMarketCap / Binance](https://coinmarketcap.com/exchanges/binance/)
 
 ## Guides
 

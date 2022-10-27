@@ -2,6 +2,16 @@
 
 **Symbol:** `CBOT_MINI:ES1!`
 
+## Exchanges
+
+- New York Stock Exchange (NYSE)
+- National Association of Securities Dealers Automated Quotations (NASDAQ)
+- Chicago Board Options Exchange (CBOE)
+
+## Links
+
+- [Companies](https://www.slickcharts.com/sp500)
+
 ## Correlation
 
 ### With US10Y
