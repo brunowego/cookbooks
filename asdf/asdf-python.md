@@ -45,17 +45,17 @@ asdf list-all python
 
 # Homebrew
 CONFIGURE_OPTS="--with-openssl=$(brew --prefix openssl)" \
-  asdf install python [version]
+  asdf install python <version>
 
 # Linux
-asdf install python [version]
+asdf install python <version>
 
 #
-asdf global python [version]
+asdf global python <version>
 
 #
 asdf list python
 
 #
-asdf reshim python [version]
+asdf reshim python <version>
 ```

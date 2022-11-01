@@ -33,8 +33,6 @@ https://atani.com/
 Encryption
 Decryption
 
-Brute force
-
 Out of band
 Recipients
 Symmetric Algorithm -> Cipher

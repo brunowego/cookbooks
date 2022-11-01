@@ -17,14 +17,14 @@ asdf plugin-add helm 'https://github.com/Antiarchitect/asdf-helm.git'
 asdf list-all helm
 
 #
-asdf install helm [version]
+asdf install helm <version>
 
 #
 asdf list helm
 
 #
-asdf global helm [version]
+asdf global helm <version>
 
 #
-asdf reshim helm [version]
+asdf reshim helm <version>
 ```

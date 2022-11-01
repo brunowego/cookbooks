@@ -13,6 +13,7 @@ https://github.com/snyk-labs/nodejs-goof
 - [Code Repository](https://github.com/snyk/snyk)
 - [Main Website](https://snyk.io/)
 - [Snyk Code](https://snyk.io/product/snyk-code/)
+- [Auth Token](https://app.snyk.io/account)
 
 ## CLI
 

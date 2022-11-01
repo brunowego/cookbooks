@@ -25,5 +25,5 @@ mediainfo -h
 
 ```sh
 #
-mediainfo [filename].jpg
+mediainfo <filename.jpg>
 ```

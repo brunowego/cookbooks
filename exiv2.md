@@ -25,5 +25,5 @@ exiv2 -h
 
 ```sh
 #
-exiv2 [filename].jpg
+exiv2 <filename.jpg>
 ```

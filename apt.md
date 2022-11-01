@@ -1,49 +1,55 @@
 # Advanced Packaging Tool (APT)
 
-## Commands
+## Links
+
+- [Debian Wiki](https://wiki.debian.org/Apt)
+
+## CLI
+
+### Commands
 
 ```sh
 apt -h
 ```
 
-## Usage
+### Usage
 
 ```sh
 # Update
 sudo apt update
 
 # Download
-apt download [package]
+apt download <package>
 
 # Repo list
 grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*
 
 # Install
-sudo apt -y install [package]
+sudo apt -y install <package>
 
 # With Dry Run
-sudo apt --dry-run install [package]
+sudo apt --dry-run install <package>
 
 # Non interactive
-sudo DEBIAN_FRONTEND=noninteractive apt -y install [package]
+sudo DEBIAN_FRONTEND=noninteractive apt -y install <package>
 
 # Upgrade
 sudo apt -y upgrade
 
 # Search
-apt search [package]
+apt search <package>
 
 # Info
-apt show [package]
+apt show <package>
 
 # Show Dependencies
-apt rdepends [package]
+apt rdepends <package>
 
 # Remove
-sudo apt remove [package]
+sudo apt remove <package>
 
 # Purge
-sudo apt remove --purge [package]
+sudo apt remove --purge <package>
 
 # Clean
 sudo apt clean
@@ -58,9 +64,21 @@ apt list --installed
 apt list --upgradable
 ```
 
-## Issues
+### Tips
 
-### Lock
+#### Proxy
+
+```sh
+sudo tee /etc/apt/apt.conf.d/http-proxy.conf << EOF
+Acquire::http::proxy "$http_proxy";
+Acquire::https::proxy "$https_proxy";
+Acquire::socks::proxy "$no_proxy";
+EOF
+```
+
+### Issues
+
+#### Lock
 
 ```log
 E: Could not get lock /var/lib/dpkg/lock - open (11 Resource temporarily unavailable)
@@ -73,24 +91,14 @@ sudo rm /var/lib/dpkg/lock*
 sudo rm /var/cache/apt/archives/lock
 ```
 
-## Tips
+## Docker
 
 ### Dockerfile
 
 ```Dockerfile
 RUN apt-get -qq update && \
       apt-get -qq --no-install-recommends -y install \
-        [package]=[version] && \
+        <package>=<version> && \
           apt-get clean && \
             rm -rf /var/lib/apt/lists/*
-```
-
-### Proxy
-
-```sh
-sudo tee /etc/apt/apt.conf.d/http-proxy.conf << EOF
-Acquire::http::proxy "$http_proxy";
-Acquire::https::proxy "$https_proxy";
-Acquire::socks::proxy "$no_proxy";
-EOF
 ```

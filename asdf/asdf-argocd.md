@@ -21,16 +21,16 @@ asdf plugin-add argocd 'https://github.com/beardix/asdf-argocd.git'
 asdf list-all argocd
 
 #
-asdf install argocd [version]
+asdf install argocd <version>
 
 #
 asdf list argocd
 
 #
-asdf global argocd [version]
+asdf global argocd <version>
 
 #
-asdf reshim argocd [version]
+asdf reshim argocd <version>
 
 #
 argocd version --short

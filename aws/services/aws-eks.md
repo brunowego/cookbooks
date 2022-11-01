@@ -9,9 +9,9 @@ https://www.youtube.com/watch?v=tkYzg8HRK4o
 - [Kubernetes Operations (kOps)](/kops.md)
 - [Rancher](/rancher.md)
 
-## Terms
+## Glossary
 
-- Application Load Balancing (ALB)
+- Application Load Balancer (ALB)
 
 ## CLI
 

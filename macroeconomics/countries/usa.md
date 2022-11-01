@@ -52,6 +52,7 @@ TODO
 | Building Permits                             | Neutral             |                              |
 | CB Consumer Confidence                       | Medium              |                              |
 | Core Durable Goods Orders                    |                     |                              |
+| Core PCE Price Index (MoM)                   | High                |                              |
 | Core PPI (MoM) / PPI (MoM)                   | Medium              |                              |
 | CPI (MoM/YoY) / Core CPI (MoM/YoY)           | High                | Important: Core CPI (MoM) 🌟 |
 | Crude Oil Inventories                        | Neutral             |                              |

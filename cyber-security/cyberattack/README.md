@@ -71,9 +71,6 @@ Threat (Hacker, Flood)
 
 <!--
 AccessData Forensic Toolkit (FTK)
-
-Blue Team: Defense
-Red Team: Offensive
 -->
 
 <!--

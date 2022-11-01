@@ -1,9 +1,15 @@
 # Virtual Private Network (VPN)
 
+## Glossary
+
+- Internet Protocol Security (IPsec)
+- Point-to-Point Protocol (PPP)
+- Secure Sockets Layer (SSL)
+
 ## Tools
 
-- Firezone
-- OpenVPN
+- [openfortivpn](/openfortivpn.md)
+- [OpenVPN](/openvpn.md)
 - [Pritunl](/pritunl/README.md)
 
 ## Plugins

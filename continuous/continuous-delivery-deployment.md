@@ -1,4 +1,4 @@
-# Continuous Delivery/Deployment
+# Continuous Delivery / Continuous Deployment
 
 ## Links
 

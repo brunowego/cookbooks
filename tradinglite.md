@@ -32,7 +32,17 @@ Abra outra ordem no sentido inverso para caso o mercado venha contra sua ordem, 
 - [TRDR](/trdr.md)
 - [Coinglass](/coinglass.md)
 
+## Glossary
+
+- Volume Profile Visible Range (VPVR)
+
 ## Indicators
+
+### Recommendations
+
+- [VPVR Plus](https://www.tradinglite.com/learn/TradingLite/17/official-indicators#vpvr-plus)
+
+### Configuration
 
 - Main
 - Heartmap
@@ -90,101 +100,3 @@ Open Interest
 - Min: (Max / 10) \* 4 (eq. 40%)
 
 **Options:** Enable HD heatmap
-
-<!--
-- 1INCH
-- AAVE
-- ADA
-- ALGO
-- ALPHA
-- ANKR
-- APE
-- ATOM
-- AVAX
-- AXS
-- BAL
-- BAND
-- BAT
-- BCH
-- BEL
-- BLZ
-- BNB
-- BTC
-- BTS
-- CHZ
-- COMP
-- CRV
-- CTK
-- CVC
-- DASH
-- DENT
-- DOGE
-- DOT
-- DUSK
-- DYDX
-- EGLD
-- ENJ
-- EOS
-- ETC
-- ETH
-- FIL
-- FLM
-- FTM
-- GALA
-- GMT
-- GRT
-- HBAR
-- HNT
-- ICP
-- ICX
-- IOST
-- IOTA
-- KAVA
-- KNC
-- KSM
-- LINK
-- LIT
-- LRC
-- LTC
-- MANA
-- MATIC
-- MKR
-- NEAR
-- NEO
-- OCEAN
-- OMG
-- ONE
-- ONT
-- QTUM
-- RAY
-- REN
-- RLC
-- ROSE
-- RSR
-- RUNE
-- SAND
-- SKL
-- SNX
-- SOL
-- SRM
-- STORJ
-- SUSHI
-- SXP
-- THETA
-- TOMO
-- TRB
-- TRX
-- UNFI
-- UNI
-- VET
-- WAVES
-- XLM
-- XMR
-- XRP
-- XTZ
-- YFI
-- ZEC
-- ZEN
-- ZIL
-- ZRX
--->

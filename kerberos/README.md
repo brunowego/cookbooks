@@ -8,6 +8,10 @@
 
 - Golden Ticket
 
+<!--
+https://www.youtube.com/watch?v=bdkfGmkt8a0
+-->
+
 ## Implementation
 
 - [Heimdal Kerberos](/kerberos/heimdal_kerberos.md)

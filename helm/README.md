@@ -1,6 +1,10 @@
 # Helm
 
 <!--
+https://github.com/komodorio/helm-dashboard
+-->
+
+<!--
 https://github.com/scaleoutsystems/charts/blob/4d445a66906cdaf5d51864c2a71f55281bdcb5e2/.github/workflows/release.yaml
 
 https://linkedin.com/learning/kubernetes-package-management-with-helm/manage-kubernetes-workloads-with-helm

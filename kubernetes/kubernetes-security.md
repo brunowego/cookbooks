@@ -1,5 +1,9 @@
 # Kubernetes Security
 
+<!--
+https://app.pluralsight.com/paths/certificate/certified-kubernetes-security-specialist-cks
+-->
+
 ## Guides
 
 - [Kubernetes Security](https://kubernetes.io/docs/concepts/security/)
@@ -24,6 +28,7 @@
   - Static password file
   - Only read during API server startup
   - Simple to set up and use (dev)
+
 <!-- - OpenID Connect -->
 
 #### Users in Kubernetes (kubectl)

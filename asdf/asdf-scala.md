@@ -13,14 +13,14 @@ asdf plugin-add scala 'https://github.com/sylph01/asdf-scala.git'
 asdf list-all scala
 
 #
-asdf install scala [version]
+asdf install scala <version>
 
 #
-asdf global scala [version]
+asdf global scala <version>
 
 #
 asdf list scala
 
 #
-asdf reshim scala [version]
+asdf reshim scala <version>
 ```

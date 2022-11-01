@@ -13,14 +13,14 @@ asdf plugin-add bazel 'https://github.com/mrinalwadhwa/asdf-bazel.git'
 asdf list-all bazel
 
 #
-asdf install bazel [version]
+asdf install bazel <version>
 
 #
-asdf global bazel [version]
+asdf global bazel <version>
 
 #
 asdf list bazel
 
 #
-asdf reshim bazel [version]
+asdf reshim bazel <version>
 ```

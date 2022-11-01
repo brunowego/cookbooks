@@ -2,4 +2,4 @@
 
 ## Terms
 
-- Open-source intelligence (OSINT)
+- Open-Source Intelligence (OSINT)

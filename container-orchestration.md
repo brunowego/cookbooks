@@ -4,8 +4,8 @@
 
 ## Tools
 
-- Amazon Elastic Kubernetes Service (EKS)
-- Amazon Elastic Container Service (ECS)
+- Elastic Kubernetes Service (EKS)
+- Elastic Container Service (ECS)
 - Google Kubernetes Engine (GKE)
 - [Azure Kubernetes Service (AKS)](/azure/services/azure-aks.md)
 - [Docker Compose](/docker/docker-compose.md)

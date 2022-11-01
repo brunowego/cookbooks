@@ -1,5 +1,11 @@
 # EasyRes
 
+**Keywords:** Screen Resolution Switcher
+
+## Links
+
+- [Main Website](https://easyresapp.com/)
+
 ## App
 
 ### Installation

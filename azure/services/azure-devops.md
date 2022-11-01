@@ -14,6 +14,7 @@ https://linkedin.com/learning/azure-for-devops-implementing-development-processe
 
 ## Links
 
+- [Projects](https://dev.azure.com/)
 - [Main Website](https://azure.microsoft.com/en-us/products/devops/)
 - [Docs](https://learn.microsoft.com/en-us/cli/azure/devops?view=azure-cli-latest)
 
@@ -45,6 +46,7 @@ az devops -h
 ### Usage
 
 ```sh
+#
 az devops configure \
   --defaults \
     organization=https://dev.azure.com/<organization> \
@@ -60,3 +62,39 @@ az pipelines create --name $name            \
   --yml-path .ci/azure-pipelines-v2.yml     \
   --service-connection $service_connection
 -->
+
+### Tips
+
+#### List Projects from Organization
+
+```sh
+#
+export ADO_ORGANIZATION='https://dev.azure.com/<organization>'
+
+#
+az devops project list \
+  --org "$ADO_ORGANIZATION" \
+  -o tsv \
+  --query 'value[].name'
+```
+
+#### Clone Repos from a Project
+
+```sh
+#
+export ADO_ORGANIZATION='https://dev.azure.com/<organization>'
+export ADO_PROJECT='<project>'
+
+#
+mkdir "$ADO_PROJECT"; cd "$_"
+
+#
+az repos list \
+  -o json \
+  --org "$ADO_ORGANIZATION" \
+  --project "$ADO_PROJECT" | \
+    jq -r '.[].remoteUrl' | \
+      while read repo; do
+        git clone "$repo"
+      done
+```

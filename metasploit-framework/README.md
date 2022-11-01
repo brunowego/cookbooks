@@ -1,4 +1,4 @@
-# Metasploit Framework
+# Metasploit Framework (MSF)
 
 <!--
 Fiddler
@@ -27,10 +27,6 @@ https://www.linkedin.com/learning/penetration-testing-advanced-kali-linux/welcom
 
 - [Code Repository](https://github.com/rapid7/metasploit-framework)
 - [Main Website](https://metasploit.com/)
-
-## Glossary
-
-- Metasploit Framework (MSF)
 
 ## CLI
 

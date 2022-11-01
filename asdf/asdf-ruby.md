@@ -22,14 +22,14 @@ asdf list-all ruby
 
 #
 KEEP_SOURCE=1 \
-  asdf install ruby [version]
+  asdf install ruby <version>
 
 #
-asdf global ruby [version]
+asdf global ruby <version>
 
 #
 asdf list ruby
 
 #
-asdf reshim ruby [version]
+asdf reshim ruby <version>
 ```

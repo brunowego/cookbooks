@@ -1,5 +1,9 @@
 # openfortivpn
 
+## Links
+
+- [Code Repository](https://github.com/adrienverge/openfortivpn)
+
 ## CLI
 
 ### Installation

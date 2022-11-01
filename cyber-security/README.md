@@ -6,30 +6,26 @@ https://docs.google.com/spreadsheets/d/12CD9GOZG0ib2ElQfUFJPk5KjFqMZiU1ZdXYXcFiN
 -->
 
 <!--
-Every-Day Carry (EDC)
+Cloud Security
+SDLC Practices
+Bug Bounties
+Threat Intelligence
+Malware Analysis
+Risk Management
+Vulnerability Management
+IOT Security
+SIEM Analysis
+Blockchain Security
+Threat Hunting
 
-Energy Adapter
-Cables
+https://app.pluralsight.com/paths/skill/malware-analysis
+https://app.pluralsight.com/paths/skill/malware-prevention-detection-and-response
 
-https://www.youtube.com/watch?v=TqjYwsYt5s0
+https://app.pluralsight.com/paths/skill/threat-hunting
 -->
 
 <!--
 Discover the computers owned by the company (Inventory Software)
--->
-
-<!--
-#DevMayCray
--->
-
-<!--
-DevSecOps
-Ethical Hacking
-Nmap
-VPN
-Firewall
-WAF
-OS Internals (Group, ID, Permissions)
 -->
 
 <!--
@@ -64,19 +60,6 @@ https://github.com/cisagov/RedEye
 -->
 
 <!--
-Cloud Security
-SDLC Practices
-Bug Bounties
-Threat Intelligence
-Malware Analysis
-Risk Management
-Vulnerability Management
-IOT Security
-SIEM Analysis
-Blockchain Security
--->
-
-<!--
 Awareness, Agility and Advanced Controls - The AAA Triad Of Security
 -->
 
@@ -89,9 +72,9 @@ Awareness, Agility and Advanced Controls - The AAA Triad Of Security
 
 - [Awesome Cybersecurity Blue Team Awesome](https://github.com/fabacab/awesome-cybersecurity-blueteam)
 
-## Tools
-
-- [Have I Been Pwned: Check if your email has been compromised in a data breach](https://haveibeenpwned.com/)
+<!--
+https://tinfoleak.com/
+-->
 
 ## Certificates
 
@@ -120,10 +103,23 @@ Security+
 - [Darknet Diaries](https://darknetdiaries.com/)
 - [The Cyber Wire](https://thecyberwire.com/)
 
+## YouTube Channels
+
+- [David Bombal](https://youtube.com/c/DavidBombal)
+
 ## Keep Up To Date
 
+- [Digital Attack Map](https://digitalattackmap.com/)
+- [Securelist](https://securelist.com/)
+- [Shodan](https://shodan.io/)
 - [Threatpost](https://threatpost.com/)
 - [Wired / Security](https://wired.com/category/security/)
+
+<!--
+https://nakedsecurity.sophos.com/
+https://securityboulevard.com/
+https://scmagazine.com/security-weekly
+-->
 
 ## Positions
 
@@ -166,6 +162,7 @@ DevSecOps Advocate
 - Application Layer Transport Security (ALTS)
 - Application Security (AppSec)
 - Border Gateway Protocol (BGP)
+- Breach Level Index (BLI)
 - Building Security In Maturity Model (BSIMM) / Software Assurance Maturity Model (SAMM)
 - Chaos Engineering (a.k.a. Chaos Monkey)
 - Common Weakness Enumeration (CWE)
@@ -184,6 +181,7 @@ DevSecOps Advocate
 - Internet Protocol Security (IPsec)
 - Know Your Customer (KYC)
 - National Institute of Standards and Technology (NIST)
+- Open Source Intelligence (OSINT)
 - Open Systems Interconnection (OSI)
 - Open Web Application Security Project (OWASP)
 - Payment Card Industry Data Security Standard (PCI DSS)
@@ -192,9 +190,7 @@ DevSecOps Advocate
 - Request for Comments (RFC)
 - Run-time Application Security Protection (RASP)
 - Secure Software Development Lifecycle (SSDLC)
-- Security Information and Event Management (SIEM)
 - Security Operations Center (SOC)
-- Security Orchestration, Automation and Response (SOAR)
 - Security Token Service (STS)
 - Software Composition Analysis (SCA)
 - Software Development Life Cycle (SDLC)
@@ -219,3 +215,28 @@ Web Security Academy
 SANS 2020 CTF
 CTF challenge
 -->
+
+## Agencies
+
+### United States
+
+- Federal Bureau of Investigation (FBI)
+- National Security Agency (NSA)
+- Central Intelligence Agency (CIA)
+
+### United Kingdom
+
+- Military Intelligence, Section Six (MI6)
+
+### Brazil
+
+- Agência Brasileira de Inteligência (ABIN)
+- Centro de Defesa Cibernética (CDCiber)
+
+### Israel
+
+- Secret Intelligence Service of Israel (Mossad)
+
+### German
+
+- Federal Intelligence Service (BND)

@@ -83,13 +83,13 @@ asdf plugin-list-all
 asdf plugin-update --all
 
 # Install
-asdf install [name] [version]
+asdf install [name] <version>
 
 # Set Global
-asdf global [name] [version]
+asdf global [name] <version>
 
 # Reshim
-asdf reshim [name] [version]
+asdf reshim [name] <version>
 
 # Current
 asdf current
@@ -98,5 +98,5 @@ asdf current
 asdf list [name]
 
 # Uninstall
-asdf uninstall [name] [version]
+asdf uninstall [name] <version>
 ```

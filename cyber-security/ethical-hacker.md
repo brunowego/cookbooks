@@ -16,9 +16,15 @@ https://linkedin.com/learning/ethical-hacking-sniffers/visualizing-network-traff
 https://linkedin.com/learning/ethical-hacking-session-hijacking/understanding-session-hijacking-2
 -->
 
+<!--
+https://github.com/Z4nzu/hackingtool
+-->
+
 **Keywords:** Red Team
 
-TODO
+## Terms
+
+- Nation-State Hackers
 
 <!--
 Types

@@ -5,6 +5,10 @@
 <!--
 https://github.com/austinsonger/Incident-Playbook
 
+https://app.pluralsight.com/search/?q=Web%20Application%20Penetration%20Testing&type=conference%2Cvideo-course%2Cguide%2Clab%2Cpath%2Cwebinar&m_sort=relevance&query_id=a00e45dd-78f1-4973-9978-c2fba7b3766a&source=user_typed
+
+https://app.pluralsight.com/library/courses/penetration-testing-big-picture/table-of-contents
+
 https://app.pluralsight.com/library/courses/web-app-pentesting-fundamentals/table-of-contents
 https://app.pluralsight.com/library/courses/web-app-pentesting-input-validation/table-of-contents
 https://app.pluralsight.com/library/courses/session-management-testing-web-application-penetration-testing/table-of-contents
@@ -17,7 +21,6 @@ https://app.pluralsight.com/library/courses/web-application-penetration-testing-
 https://app.pluralsight.com/library/courses/web-app-pen-testing-weak-cryptography/table-of-contents
 https://app.pluralsight.com/library/courses/web-app-pentesting-insecure-error-handling/table-of-contents
 https://app.pluralsight.com/paths/skills/web-app-pen-testing
-https://app.pluralsight.com/library/courses/penetration-testing-big-picture/table-of-contents
 https://app.pluralsight.com/library/courses/kali-linux-penetration-testing-ethical-hacking/table-of-contents
 https://app.pluralsight.com/paths/certificate/comptia-pentest-pt0-001
 
@@ -92,6 +95,12 @@ The aim is to enable the blue team to improve how they detect and respond
 
 <!--
 - CREST membership for the organization
+- PNPT
+- OSCP
+- OSWP
+- eCPTX
+- eWPT
+- C|EH
 -->
 
 ## Bug Bounty Program

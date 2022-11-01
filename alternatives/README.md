@@ -170,11 +170,6 @@ https://gitguardian.com/
 - [Whimsical](https://whimsical.com/)
 - [XMind](https://xmind.net/)
 
-## Stock Photos
-
-- [Pexels](https://pexels.com/)
-- [Unsplash](https://unsplash.com/)
-
 ## Analytics
 
 - Google Analytics

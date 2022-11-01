@@ -1,20 +1,11 @@
 # Azure
 
 <!--
-https://app.pluralsight.com/paths/certificate/microsoft-azure-fundamentals-az-900
-https://app.pluralsight.com/library/courses/implementing-terraform-microsoft-azure/table-of-contents
-https://app.pluralsight.com/library/courses/azure-container-service-big-picture/table-of-contents
+https://app.pluralsight.com/paths/skills/managing-and-orchestrating-containers-with-azure-kubernetes-service-aks
 
-https://linkedin.com/learning/paths/become-an-azure-developer
-https://linkedin.com/learning/paths/become-an-azure-administrator
-https://linkedin.com/learning/paths/prepare-for-microsoft-azure-administrator-certification-az-103
-https://linkedin.com/learning/paths/stay-ahead-in-azure-development
-https://linkedin.com/learning/paths/prepare-for-the-designing-and-implementing-microsoft-devops-solutions-exam-az-400
-https://linkedin.com/learning/azure-essential-training-for-developers/azure-for-developers
--->
+https://app.pluralsight.com/paths/skills/managing-infrastructure-with-terraform
 
-<!--
-https://apps.apple.com/app/microsoft-azure/id1219013620?ls=1
+https://github.com/githubpartners/github-azure-microservices-blueprint
 -->
 
 ## Links
@@ -23,10 +14,83 @@ https://apps.apple.com/app/microsoft-azure/id1219013620?ls=1
 - [All Services](https://portal.azure.com/#allservices)
 - [Account](https://account.microsoft.com/)
 - [Devices](https://account.microsoft.com/devices)
+- [Regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
 
 ## Glossary
 
 - Team Foundation Version Control (TFVC)
+
+## Azure Compute
+
+- Virtual Machines
+- App Services
+- Containers
+- Serverless
+
+## CLI
+
+### Links
+
+- [Code Repository](https://github.com/Azure/azure-cli)
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install azure-cli
+```
+
+### Commands
+
+```sh
+az -h
+```
+
+### Initialize
+
+```sh
+#
+az extension add -n init
+
+#
+az init
+
+#
+az config get core.output
+az config set defaults.location=eastus
+
+#
+cat ~/.azure/config
+```
+
+### Usage
+
+```sh
+#
+az login --allow-no-subscriptions
+
+#
+az login --tenant <id>
+```
+
+### Uninstall
+
+```sh
+#
+brew uninstall azure-cli
+
+#
+rm -fR ~/.azure
+```
+
+## Tips
+
+### Visual Studio Code
+
+```sh
+code --install-extension ms-vscode.vscode-node-azure-pack
+```
 
 <!--
 ## Interview
@@ -39,18 +103,3 @@ https://www.youtube.com/watch?v=0eLRe5SMBPs
   <img src="https://dev.azure.com/yoginth/devparty/_apis/build/status/devparty?branchName=main" alt="Azure DevOps CI">
 </a>
 -->
-
-## Azure Compute
-
-- Virtual Machines
-- App Services
-- Containers
-- Serverless
-
-## Tips
-
-### Visual Studio Code
-
-```sh
-code --install-extension ms-vscode.vscode-node-azure-pack
-```

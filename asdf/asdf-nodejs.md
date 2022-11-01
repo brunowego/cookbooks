@@ -23,14 +23,14 @@ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf list-all nodejs
 
 #
-asdf install nodejs [version]
+asdf install nodejs <version>
 
 #
-asdf global nodejs [version]
+asdf global nodejs <version>
 
 #
 asdf list nodejs
 
 #
-asdf reshim nodejs [version]
+asdf reshim nodejs <version>
 ```

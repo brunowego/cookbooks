@@ -25,17 +25,17 @@ asdf list-all php
 
 # Homebrew
 PATH="$(brew --prefix bison)/bin:$PATH" \
-  asdf install php [version]
+  asdf install php <version>
 
 # Linux
-asdf install php [version]
+asdf install php <version>
 
 #
-asdf global php [version]
+asdf global php <version>
 
 #
 asdf list php
 
 #
-asdf reshim php [version]
+asdf reshim php <version>
 ```

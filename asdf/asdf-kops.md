@@ -17,14 +17,14 @@ asdf plugin-add kops 'https://github.com/Antiarchitect/asdf-kops.git'
 asdf list-all kops
 
 #
-asdf install kops [version]
+asdf install kops <version>
 
 #
-asdf global kops [version]
+asdf global kops <version>
 
 #
 asdf list kops
 
 #
-asdf reshim kops [version]
+asdf reshim kops <version>
 ```

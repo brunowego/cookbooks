@@ -1,14 +1,30 @@
 # Kali Linux
 
-<!--
-https://kali.download/virtual-images/kali-2022.3/kali-linux-2022.3-virtualbox-amd64.7z.torrent
--->
+**Keywords:** APT
 
 ## Links
 
 - [Org. Repository](https://gitlab.com/kalilinux)
 - [Main Website](https://kali.org/)
 - [Download](https://kali.org/get-kali/)
+- [Releases](https://kali.org/releases/)
+- [Tools](https://kali.org/tools/)
+
+## Terms
+
+- Information Gathering
+- Vulnerability Analysis
+- Web Application Analysis
+- Database Assessment
+- Password Attacks
+- Wireless Attacks
+- Reverse Engineering
+- Exploitation Tools
+- Sniffing & Spoofing
+- Forensics
+- Reporting Tools
+- Social Engineering Tools
+- System Services
 
 ## Docker
 

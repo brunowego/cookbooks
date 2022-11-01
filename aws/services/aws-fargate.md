@@ -1,5 +1,21 @@
 # AWS Fargate
 
+<!--
+https://www.youtube.com/watch?v=fMiX5dZ9v4w
+-->
+
+**Keywords:** Serverless
+
+## Glossary
+
+- Application Load Balancer (ALB)
+- Available Zone (AZ)
+- Elastic Container Service (ECS)
+- Elastic Kubernetes Service (EKS)
+- Elastic Network Interface (ENI)
+- Network Load Balancing (NLB)
+- Virtual Private Cloud (VPC)
+
 ## CLI
 
 Use [AWS Copilot CLI](/aws/aws-copilot-cli.md).

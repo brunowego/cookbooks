@@ -7,5 +7,5 @@
 echo '/* text=auto\n' >> ./.gitattributes
 
 # Binary
-[filename] binary
+<filename> binary
 ```

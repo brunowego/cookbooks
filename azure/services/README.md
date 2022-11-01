@@ -4,5 +4,5 @@
 
 ```sh
 #
-az extension list-available -o table
+az extension list-available
 ```

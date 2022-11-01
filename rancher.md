@@ -4,10 +4,7 @@
 https://github.com/rancher-sandbox/rancher-desktop
 -->
 
-## Alternatives
-
-- [Amazon Elastic Kubernetes Service (EKS)](/aws/aws-eks.md)
-- [Kubernetes Operations (kOps)](/kops.md)
+**Keywords:** Kubernetes Management
 
 ## Links
 

@@ -21,14 +21,14 @@ asdf plugin-add maven 'https://github.com/skotchpine/asdf-maven.git'
 asdf list-all maven
 
 #
-asdf install maven [version]
+asdf install maven <version>
 
 #
-asdf global maven [version]
+asdf global maven <version>
 
 #
 asdf list maven
 
 #
-asdf reshim maven [version]
+asdf reshim maven <version>
 ```

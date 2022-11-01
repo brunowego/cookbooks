@@ -29,14 +29,14 @@ asdf list-all R
 
 #
 R_CONFIGURE_OPTIONS=--with-x=no \
-  asdf install R [version]
+  asdf install R <version>
 
 #
-asdf global R [version]
+asdf global R <version>
 
 #
 asdf list R
 
 #
-asdf reshim R [version]
+asdf reshim R <version>
 ```

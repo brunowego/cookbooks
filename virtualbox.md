@@ -1,5 +1,9 @@
 # Oracle VM VirtualBox
 
+<!--
+Left `⌘` Command
+-->
+
 ## Links
 
 - [Main Website](https://virtualbox.org/)
@@ -18,7 +22,7 @@ brew install --cask virtualbox virtualbox-extension-pack
 
 ```sh
 yum check-update
-sudo yum-config-manager --add-repo http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
+sudo yum-config-manager --add-repo 'http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo'
 sudo yum -y install VirtualBox-6.0
 ```
 
@@ -63,15 +67,25 @@ VBoxManage import /path/to/file.ova
 
 #### Guest Additions
 
+**Dependencies:**
+
 ```sh
 # Ubuntu
 sudo apt -y install build-essential dkms "linux-headers-$(uname -r)"
 ```
 
+**Installation:**
+
 1. Devices
 2. Install Guest Additions CD image...
 3. Run
 4. Restart
+
+<!--
+sudo cp -f /media/cdrom0/VBoxLinuxAdditions.run /tmp
+sudo /tmp/VBoxLinuxAdditions.run --nox11
+sudo reboot
+-->
 
 ```sh
 # Check install
@@ -85,11 +99,11 @@ sudo /usr/sbin/VBoxService --version
 
 ```sh
 #
-VBoxManage clonehd '[/path/to/source.vmdk]' '[/path/to/cloned.vdi]' --format vdi
+VBoxManage clonehd '</path/to/source.vmdk>' '</path/to/cloned.vdi>' --format vdi
 
 #
-VBoxManage modifyhd '[/path/to/cloned.vdi]' --resize 40000
+VBoxManage modifyhd '</path/to/cloned.vdi>' --resize 40000
 
 #
-VBoxManage clonehd '[/path/to/cloned.vdi]' '[/path/to/source.vmdk]' --format vmdk
+VBoxManage clonehd '</path/to/cloned.vdi>' '</path/to/source.vmdk>' --format vmdk
 ```

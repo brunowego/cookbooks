@@ -6,7 +6,7 @@ https://app.pluralsight.com/library/courses/powershell-devops-playbook/table-of-
 
 ## References
 
-- [Source Code Repository](https://github.com/PowerShell/PowerShell)
+- [Code Repository](https://github.com/PowerShell/PowerShell)
 
 ## CLI
 

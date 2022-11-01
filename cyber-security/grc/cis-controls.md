@@ -1,4 +1,4 @@
-# CIS Critical Security Controls (CIS Controls)
+# CIS Controls (formerly Critical Security Controls)
 
 <!--
 https://app.pluralsight.com/library/courses/security-controls-cis-controls/table-of-contents
@@ -9,6 +9,7 @@ https://app.pluralsight.com/library/courses/security-controls-cis-controls/table
 ## Links
 
 - [Main Website](https://cisecurity.org/controls)
+- [Controls Navigator](https://cisecurity.org/controls/cis-controls-navigator/)
 
 ## Related
 
@@ -18,6 +19,7 @@ https://app.pluralsight.com/library/courses/security-controls-cis-controls/table
 
 - Center for Internet Security (CIS)
 - CIS Controls Self Assessment Tool (CIS CSAT)
+- Critical Security Controls (CSC)
 - Implementation Group (IG)
 
 ## Implementation

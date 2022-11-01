@@ -17,4 +17,12 @@ END:VEVENT
 END:VCALENDAR
 ``` -->
 
-TODO
+## Tips
+
+### Add Other Calendars
+
+1. [Google Calendar](https://calendar.google.com/calendar/)
+2. Other calendars -> Add other calendars -> From URL
+   - Type URL of calendar
+   - Make the calendar publicly accessible
+   - Add calendar

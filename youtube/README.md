@@ -15,6 +15,10 @@ https://www.youtube.com/channel_switcher
 - Copyright Strike
 - Shadowban
 
+## Shortcuts
+
+- `t`: Theater Mode
+
 ## Tips
 
 ### Force Specific Network Interface

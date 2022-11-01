@@ -50,6 +50,7 @@ https://bitcoinmonthlyreturn.com/
 - [Bitcoin Is Dead / The #1 Database of Notable Bitcoin Skeptics](https://bitcoinisdead.org/)
 - [Bitcoin Optech](https://bitcoinops.org/)
 - [Bitcoin: Number of Active Addresses](https://studio.glassnode.com/metrics?a=BTC&m=addresses.ActiveCount)
+- [Bitnodes / Bitcoin Network Live Map](https://bitnodes.io/nodes/live-map/)
 - [Code Repository](https://github.com/bitcoin/bitcoin)
 - [FiatMarketCap / Fiat Market Capitalizations](https://fiatmarketcap.com/)
 - [Total Hash Rate (TH/s)](https://blockchain.com/explorer/charts/hash-rate)
@@ -140,7 +141,7 @@ Hash Ribbons
 
 ### Sentiment analysis
 
-- Bitcoin Production Cost **Config:** INDEX:BTCUSD, Interval 1D, Logarithmic Scale.
+- Bitcoin Production Cost **Config:** `INDEX:BTCUSD`, Interval 1D, Logarithmic Scale.
 
 ## Research
 

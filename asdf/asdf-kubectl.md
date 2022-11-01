@@ -21,16 +21,16 @@ asdf plugin-add kubectl 'https://github.com/asdf-community/asdf-kubectl.git'
 asdf list-all kubectl
 
 #
-asdf install kubectl [version]
+asdf install kubectl <version>
 
 #
 asdf list kubectl
 
 #
-asdf global kubectl [version]
+asdf global kubectl <version>
 
 #
-asdf reshim kubectl [version]
+asdf reshim kubectl <version>
 
 #
 kubectl version --short

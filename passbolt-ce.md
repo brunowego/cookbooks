@@ -1,5 +1,7 @@
 # Passbolt Community Edition (CE)
 
+**Keywords:** Password Manager
+
 ## Links
 
 - [Code Repository](https://github.com/passbolt/passbolt_api)

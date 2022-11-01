@@ -28,9 +28,11 @@ Uphold
 - [MailCatcher](/mailcatcher.md)
 - [MailHog](/mailhog.md)
 
-## Terms
+## Glossary
 
+- Calendaring Extensions to WebDAV (CalDAV)
 - For Your Information (FYI)
+- Web-based Distributed Authoring and Versioning (WebDAV)
 
 ## CLI
 

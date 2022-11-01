@@ -7,7 +7,11 @@
 #### Homebrew
 
 ```sh
-brew install --cask vmware-fusion8
+# Version 8
+brew install homebrew/cask-versions/vmware-fusion8
+
+# Last Version
+brew install --cask vmware-fusion
 ```
 
 ### Tips
@@ -33,6 +37,18 @@ Could not open /dev/vmmon: No such file or directory.
 3. General
 4. System software developer "VMware, Inc." was blocked from loading.
 5. Allow
+
+<!-- ####
+
+```log
+Unable to retrieve kernel symbols.
+```
+
+####
+
+```log
+Failed to initialize monitor device.
+``` -->
 
 #### Keyboard and Mouse not Working
 

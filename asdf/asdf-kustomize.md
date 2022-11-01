@@ -17,14 +17,14 @@ asdf plugin-add kustomize 'https://github.com/Banno/asdf-kustomize.git'
 asdf list-all kustomize
 
 #
-asdf install kustomize [version]
+asdf install kustomize <version>
 
 #
-asdf global kustomize [version]
+asdf global kustomize <version>
 
 #
 asdf list kustomize
 
 #
-asdf reshim kustomize [version]
+asdf reshim kustomize <version>
 ```

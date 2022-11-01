@@ -13,6 +13,11 @@ Jamais coloque uma ordem com stop uma proxima da outra, a Binance irá pegar a o
 - [New Alt-coins](https://www.binance.com/en/altcoins/new)
 - [Announcement](https://www.binance.com/en/support/announcement)
 
+## Trade
+
+- [Spot](./spot.md)
+- [Futures](./futures.md)
+
 ## Wallet
 
 ### Bitcoin

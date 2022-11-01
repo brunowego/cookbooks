@@ -56,7 +56,7 @@ netcat -h
 
 ```sh
 #
-nc -v [ip/dn] [port]
+nc -v <host> <port>
 nc -v google.com 80
 
 #
@@ -75,3 +75,7 @@ curl \
 #
 nc -4 -w3 -v google.com 80
 ```
+
+<!--
+nc -lnvp <port>
+-->

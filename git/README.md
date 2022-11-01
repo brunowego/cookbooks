@@ -464,23 +464,17 @@ git config --global user.useconfigonly true
 #### Custom Git Config
 
 ```sh
-tee ~/.[vendor].gitconfig<< EOF
-[http]
-	sslVerify = false
+#
+tee /path/to/org/.gitconfig << EOF
 [user]
-	name = [Username]
-	email = [name@example.com]
-[http]
-	proxy = http://127.0.0.1:3128
-[https]
-	proxy = http://127.0.0.1:3128
+	name = <Name>
+	email = <name@example.com>
 EOF
-```
 
-```sh
+#
 tee -a ~/.gitconfig << EOF
-[includeIf "gitdir:$PWD/"]
-	path = ~/.[vendor].gitconfig
+[includeIf "gitdir:/path/to/org/"]
+	path = /path/to/org/.gitconfig
 EOF
 ```
 
@@ -488,15 +482,11 @@ EOF
 
 ```sh
 #
-git config \
-  -l \
-  --show-origin
-
-#
-git config \
-  --show-origin \
-  user.email
+git config --get user.name
+git config --get user.email
 ```
+
+**_Issues_** Remove, if have, `user.name` and `user.email` in project Git config: `cat ./.git/config`
 
 ### Issues
 

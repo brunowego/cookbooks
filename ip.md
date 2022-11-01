@@ -6,6 +6,12 @@ http://test-ipv6.com/
 
 ## Tips
 
+### IP Info
+
+```sh
+curl ipinfo.io/<ip>
+```
+
 ### My IP Address
 
 ```sh

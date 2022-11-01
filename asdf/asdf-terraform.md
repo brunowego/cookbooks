@@ -17,14 +17,14 @@ asdf plugin-add terraform 'https://github.com/asdf-community/asdf-hashicorp.git'
 asdf list-all terraform
 
 #
-asdf install terraform [version]
+asdf install terraform <version>
 
 #
-asdf global terraform [version]
+asdf global terraform <version>
 
 #
 asdf list terraform
 
 #
-asdf reshim terraform [version]
+asdf reshim terraform <version>
 ```

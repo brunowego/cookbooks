@@ -56,7 +56,7 @@ jq ".\"hadolint.hadolintPath\" |= \"$(which hadolint)\"" "$HOME"/.vscode/setting
 
 ```Dockerfile
 # hadolint ignore=DL3013
-RUN pip3 install /usr/src/packages/[package-version].tar.gz
+RUN pip3 install /usr/src/packages/<package-version>.tar.gz
 ```
 
 ### Issues
