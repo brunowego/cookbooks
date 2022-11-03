@@ -80,6 +80,7 @@ output
 - [Main Website](https://terraform.io/)
 - [Terraform Cloud](https://app.terraform.io)
 - [Status Page](https://status.hashicorp.com/)
+- [Releases](https://releases.hashicorp.com/terraform/)
 
 ## References
 
@@ -167,19 +168,21 @@ terraform -h
 ### Configuration
 
 ```sh
-cat << EOF >> ./.terraform/.gitignore
-/terraform.tfstate.d
-/*.tfplan
-/*.tfstate
-/*.tfvars
-EOF
+#
+terraform login app.terraform.io
+
+#
+cat ~/.terraform.d/credentials.tfrc.json
+
+#
+terraform logout
 ```
 
-<!--
-terraform.tfvars.example
--->
-
 ### Usage
+
+<!--
+cd ./.devops/terraform
+-->
 
 ```sh
 #
@@ -222,7 +225,7 @@ terraform plan \
   -var-file './.terraform/dev/dev.tfvars'
 
 #
-terraform plan -var '[variable]=[value]'
+terraform plan -var '<variable>=<value>'
 
 #
 terraform apply
@@ -302,19 +305,6 @@ terraform import \
 
 **Tip:** Normally "Resource ID" is used in the URL of remote resource.
 
-<!-- #### Login/Logout
-
-```sh
-#
-terraform login app.terraform.io
-
-#
-cat ~/.terraformrc
-
-#
-terraform logout
-``` -->
-
 #### Debug Mode (Verbose)
 
 ```sh
@@ -357,9 +347,11 @@ terraform graph | \
 ```sh
 #
 code --install-extension hashicorp.terraform
-```
 
-```sh
+#
+jq '."[tf]"."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+
+#
 jq '."files.associations"."*.json.tpl" |= "json"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 

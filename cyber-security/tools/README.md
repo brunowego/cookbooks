@@ -17,7 +17,7 @@ https://github.com/bridgecrewio/checkov
 ## Recommendations
 
 - **Code Quality and Security:** [SonarQube CE](/sonarsource/sonarqube-ce.md)
-- **SAST:** [SonarQube](/sonarsource/sonarqube.md), [Snyk Code](/cyber-security/tools/snyk.md)
+- **SAST:** [SonarQube](/sonarsource/sonarqube-ce.md), [Snyk Code](/cyber-security/tools/snyk.md)
 - **DAST:** [Burp Suite Community Edition (CE)](/cyber-security/tools/burp-suite-ce.md), [OWASP Zed Attack Proxy (ZAP)](/cyber-security/tools/zaproxy.md)
 - **Packet Analyzer:** [Wireshark](/cyber-security/tools/wireshark.md)
 - **Network Scanner:** [Network Mapper (Nmap)](/nmap.md), [GNU Netcat](/gnu-netcat.md)

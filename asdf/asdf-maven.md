@@ -1,5 +1,9 @@
 # asdf Apache Maven
 
+## Alternative
+
+- [Maven Version Manager (MVNVM)](/mvnvm.md)
+
 ## Dependencies
 
 ### Homebrew

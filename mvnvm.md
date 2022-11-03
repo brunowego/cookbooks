@@ -1,4 +1,4 @@
-# Maven Version Manager
+# Maven Version Manager (MVNVM)
 
 ## Links
 
@@ -29,12 +29,11 @@ sudo curl \
 
 ### Configuration
 
-```sh
-# 2.x
-echo 'mvn_version=2.2.1' > ./mvnvm.properties
+**Maven Versions:** [Maven Releases History](https://maven.apache.org/docs/history.html)
 
-# 3.x
-echo 'mvn_version=3.6.3' > ./mvnvm.properties
+```sh
+#
+echo 'mvn_version=3.8.6' > ./mvnvm.properties
 
 # Git ignore
 echo '/mvnvm.properties' >> ~/.gitignore_global
@@ -49,8 +48,6 @@ mvn -h
 ### Usage
 
 ```sh
-mvn -V
-
 # Show installed version
 ls ~/.mvnvm
 

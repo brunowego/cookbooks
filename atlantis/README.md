@@ -4,11 +4,9 @@
 https://github.com/runatlantis/helm-charts
 
 https://github.com/infracost/vscode-infracost
-
-tfstate war
-
-Terragrunt
 -->
+
+**Keywords:** Terraform
 
 ## Links
 
@@ -59,7 +57,7 @@ version: 3
 projects:
 - &shared
   name: my-app-stg
-  dir: ./.terraform
+  dir: ./.devops/terraform
   workspace: stg
   terraform_version: v0.14.7
   workflow: stg

@@ -1,9 +1,13 @@
-# Open Broadcaster Software (OBS) Studio
+# OBS Studio
 
 <!--
 https://linkedin.com/learning/learning-video-live-streaming/welcome
 https://linkedin.com/learning/delivering-video-to-facebook-live/welcome-and-what-you-should-know-before-starting-this-course
 -->
+
+## Links
+
+- [Code Repository](https://github.com/obsproject/obs-studio)
 
 ## App
 

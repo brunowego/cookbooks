@@ -1,4 +1,4 @@
-# Open Broadcaster Software (OBS) VirtualCam
+# OBS VirtualCam
 
 ## App
 

@@ -5,15 +5,20 @@ https://github.com/josephjsf2/josephjsf2.github.io/blob/b4780c2e99bd5b69b1d32ae3
 https://github.com/Stashchenko/sonarqube/blob/dc356fb8550c1c8605ae49c5c10a2b0e53d105b4/sonar-analyze.sh
 -->
 
+## Links
+
+- [Code Repository](https://github.com/SonarSource/sonar-scanner-cli)
+- [Docs](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/)
+
 ## CLI
 
-### Plugins
+### Links
 
-- [SonarQube PHP Plugin](/sonarsource/plugins/sonarqube-php-plugin.md)
+- [Plugins](./plugins/README.md)
 
 ### Dependencies
 
-- [SonarQube](/sonarsource/sonarqube.md#docker)
+- [SonarQube](/sonarsource/sonarqube-ce.md#docker)
 
 #### Unix-like
 
@@ -83,6 +88,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
    - Generate
    - Continue
 4. Analyze your project
+
    - What is your project's main language?: Other (JS, TS, Go, Python, PHP, ...)
    - What is your OS?: macOS
    - Download and unzip the Scanner for macOS: Click Download
@@ -108,7 +114,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
      -Dsonar.login="$SONAR_LOGIN_TOKEN"
    ```
 
-   ***Or***
+   **_Or_**
 
    ```sh
    #
@@ -146,6 +152,27 @@ echo '/.scannerwork' >> ~/.gitignore_global
 
 #
 echo '/phpunit.*.xml' >> ./.gitignore
+```
+
+## Tips
+
+### Using GNU Make
+
+**Refer:** `./Makefile`
+
+```Makefile
+SHELL := /bin/sh
+
+-include ./.env
+
+SONAR_SCANNER ?= sonar-scanner
+SONAR_PROJECT_SETTINGS ?= ./sonar-project.properties
+
+.DEFAULT_GOAL := sonar/scanner
+
+.PHONY: sonar/scanner
+sonar/scanner:
+	@$(SONAR_SCANNER) -Dproject.settings="${SONAR_PROJECT_SETTINGS}" -Dsonar.login="${SONAR_LOGIN_TOKEN}"
 ```
 
 ## Docker

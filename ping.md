@@ -10,5 +10,5 @@
 
 ```sh
 # IPv6
-ping -6 [ipv6]
+ping -6 <ipv6>
 ```

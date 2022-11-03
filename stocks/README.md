@@ -40,10 +40,14 @@ Benchmark
 - [Macroption / Options Expiration Calendar 2022-2023 (US Equity, Index, ETF Options)](https://macroption.com/options-expiration-calendar/)
 - [Macroption / VIX Expiration Calendar 2022-2023 (Futures & Options)](https://macroption.com/vix-expiration-calendar/)
 
+## Glossary
+
+- American Depositary Receipt (ADR)
+- Hedge Fund Research (HFR)
+
 ## Terms
 
 - Buy-Side / Sell-Side
-- Hedge Fund Research (HFR)
 - Share Repurchase / Stock Buyback
 - Small-Cap / Big-Cap (Large-Cap)
 - Stock Picking

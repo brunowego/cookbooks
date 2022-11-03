@@ -5,9 +5,16 @@ https://plugins.miniorange.com/saml-single-sign-on-sso-sonarqube-using-simplesam
 https://github.com/BlockByBlock/jenkins-docker-with-goss/blob/master/doc/sonarqube.md
 -->
 
+<!--
+.scannerwork
+-->
+
+**Keywords:** SAST, Code Quality
+
 ## Links
 
 - [Main Website](https://sonarqube.org)
+- [Languages](https://docs.sonarqube.org/latest/analysis/languages/overview/)
 
 ## References
 
@@ -57,7 +64,7 @@ docker run -d \
   -p 9000:9000 \
   --name sonarqube \
   --network workbench \
-  docker.io/library/sonarqube:9.2.4-community
+  docker.io/library/sonarqube:9.7.1-community
 ```
 
 > Wait! This process take a while.

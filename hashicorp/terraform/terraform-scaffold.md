@@ -1,19 +1,34 @@
 # Terraform Scaffold
 
+<!-- ```sh
+#
+cat << EOF >> ./.devops/terraform/.gitignore
+/.terraform
+/terraform.tfstate.d
+/*.tfplan
+/*.tfstate
+/*.tfvars
+EOF
+``` -->
+
+<!--
+terraform.tfvars.example
+-->
+
 ## Structure
 
 ````sh
 #
-mkdir -p ./.terraform/{modules,policies,vars}
+mkdir -p ./.devops/terraform/{modules,policies,vars}
 
 #
-cat << \EOF > ./.terraform/.gitignore
+cat << \EOF > ./.devops/terraform/.gitignore
 /.terraform
 /.terraform.lock.hcl
 EOF
 
 #
-cat << \EOF > ./.terraform/locals.tf
+cat << \EOF > ./.devops/terraform/locals.tf
 locals {
   tags = {
     app_name   = var.app_name,
@@ -24,36 +39,36 @@ locals {
 EOF
 
 #
-cat << \EOF > ./.terraform/main.tf
+cat << \EOF > ./.devops/terraform/main.tf
 terraform {
   backend "remote" {
     organization = "my-company"
     workspaces {
-      prefix = "project-my-app-us-east-1-"
+      prefix = "<project>-<app-name>-<region>-"
     }
   }
 }
 EOF
 
 #
-cat << \EOF > ./.terraform/outputs.tf
+cat << \EOF > ./.devops/terraform/outputs.tf
 
 EOF
 
 #
-cat << \EOF > ./.terraform/provider.tf
+cat << \EOF > ./.devops/terraform/provider.tf
 provider "aws" {
   region = var.aws_region
 }
 EOF
 
 #
-cat << \EOF > ./.terraform/variables.tf
+cat << \EOF > ./.devops/terraform/variables.tf
 
 EOF
 
 #
-cat << EOF > ./.terraform/versions.tf
+cat << EOF > ./.devops/terraform/versions.tf
 terraform {
   required_providers {
     aws = {
@@ -61,19 +76,19 @@ terraform {
       version = "~> 3.46"
     }
   }
-  required_version = "~> 0.14.7"
+  required_version = "~> 1.3.4"
 }
 EOF
 
 #
-cat << \EOF > ./.terraform/README.md
+cat << \EOF > ./.devops/terraform/README.md
 # Terraform
 
 ## Running
 
-\```sh
+```sh
 #
-cd ./.terraform
+cd ./.devops/terraform
 
 #
 terraform init
@@ -101,7 +116,7 @@ terraform state list
 
 #
 terraform output
-\```
+```
 EOF
 ````
 

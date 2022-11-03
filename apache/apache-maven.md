@@ -5,20 +5,25 @@ https://app.pluralsight.com/library/courses/maven-fundamentals/table-of-contents
 https://app.pluralsight.com/library/courses/allthetalks-session-66/table-of-contents
 -->
 
+## Links
+
+- [Main Website](https://maven.apache.org/)
+- [Maven Releases History](https://maven.apache.org/docs/history.html)
+- [Apache Maven Site Plugin](https://maven.apache.org/plugins/maven-site-plugin/)
+
 ## References
 
 - [Project Object Model (POM)](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
-- [Maven Version Manager](/mvnvm.md)
 - Alternative for [Apache Ant](/apache/apache-ant.md)
+
+## Tools
+
+- [Maven Version Manager](/mvnvm.md)
 
 ## Repositories
 
 - [Maven Repository](https://mvnrepository.com/)
 - [Maven Central Repository Search](https://search.maven.org/)
-
-## Plugins
-
-- [Apache Maven Site Plugin](https://maven.apache.org/plugins/maven-site-plugin/)
 
 ## CLI
 
@@ -28,9 +33,6 @@ https://app.pluralsight.com/library/courses/allthetalks-session-66/table-of-cont
 
 ```sh
 brew install maven
-
-# Legacy
-brew install maven@3.5
 ```
 
 #### APT
@@ -112,34 +114,34 @@ PROJECT_VERSION=0.0.1-SNAPSHOT; \
 
 #### Goals (Lifecycle/Super POM)
 
-| Command | Description |
-| --- | --- |
-| `mvn clean` | TODO |
-| `mvn validate` | Check if all information necessary for the build is available |
-| `mvn compile` | Compile the source code |
-| `mvn test-compile` | Compile the test source code |
-| `mvn test` | Run unit tests |
-| `mvn package` | Package compiled source code into the distributable format (jar, war, …) |
-| `mvn verify` | |
-| `mvn integration-test` | Process and deploy the package if needed to run integration tests |
-| `mvn install` | Install the package to a local repository (`~/.m2/repository`) |
-| `mvn site` | |
-| `mvn deploy` | Copy the package to the remote repository |
+| Command                | Description                                                              |
+| ---------------------- | ------------------------------------------------------------------------ |
+| `mvn clean`            | TODO                                                                     |
+| `mvn validate`         | Check if all information necessary for the build is available            |
+| `mvn compile`          | Compile the source code                                                  |
+| `mvn test-compile`     | Compile the test source code                                             |
+| `mvn test`             | Run unit tests                                                           |
+| `mvn package`          | Package compiled source code into the distributable format (jar, war, …) |
+| `mvn verify`           |                                                                          |
+| `mvn integration-test` | Process and deploy the package if needed to run integration tests        |
+| `mvn install`          | Install the package to a local repository (`~/.m2/repository`)           |
+| `mvn site`             |                                                                          |
+| `mvn deploy`           | Copy the package to the remote repository                                |
 
 <!-- clean, compile, test, package, install, deploy -->
 
 #### Phases
 
-|  | Description |
-| --- | --- |
-| `validate` | |
-| `compile` | |
-| `test` | |
-| `package` | |
-| `integration-test` | |
-| `verify` | |
-| `install` | |
-| `deploy` | |
+|                    | Description |
+| ------------------ | ----------- |
+| `validate`         |             |
+| `compile`          |             |
+| `test`             |             |
+| `package`          |             |
+| `integration-test` |             |
+| `verify`           |             |
+| `install`          |             |
+| `deploy`           |             |
 
 <!-- mvn site -->
 
@@ -184,35 +186,34 @@ $MAVEN_HOME/lib/maven-model-builder-3.3.3.jar - org/apache/maven/model/pom-4.0.0
 
 #### Scopes
 
-| Name | Description |
-| --- | --- |
-| `compile` | |
-| `provided` | |
-| `runtime` | |
-| `test` | |
-| `system` | |
-| `import` | |
+| Name       | Description |
+| ---------- | ----------- |
+| `compile`  |             |
+| `provided` |             |
+| `runtime`  |             |
+| `test`     |             |
+| `system`   |             |
+| `import`   |             |
 
 #### Packaging Types
 
-| Type | Meaning |
-| --- | --- |
-| `pom` | Project Object Model |
-| `jar` (default) | Java ARchive |
-| `war` | Web Application Resource |
-| `ear` | Enterprise Application aRchive |
-| `maven-plugin` | Maven Plugin |
+| Type            | Meaning                        |
+| --------------- | ------------------------------ |
+| `pom`           | Project Object Model           |
+| `jar` (default) | Java ARchive                   |
+| `war`           | Web Application Resource       |
+| `ear`           | Enterprise Application aRchive |
+| `maven-plugin`  | Maven Plugin                   |
 
 #### Version Conventions
 
-| Name Convention | Short Description |
-| --- | --- |
-| `myapp-1.0-SNAPSHOT.jar` | Snapshot |
-| `myapp-1.0-M1.jar` | Milestone |
-| `myapp-1.0-RC1.jar` | Release Candidate |
-| `myapp-1.0-RELEASE.jar` | Release |
-| `myapp-1.0-Final.jar` | Final |
-
+| Name Convention          | Short Description |
+| ------------------------ | ----------------- |
+| `myapp-1.0-SNAPSHOT.jar` | Snapshot          |
+| `myapp-1.0-M1.jar`       | Milestone         |
+| `myapp-1.0-RC1.jar`      | Release Candidate |
+| `myapp-1.0-RELEASE.jar`  | Release           |
+| `myapp-1.0-Final.jar`    | Final             |
 
 #### Chose Profile
 
@@ -256,12 +257,12 @@ proxychains -q mvn install
 
 #### Proxy
 
-| Property | Description |
-| --- | --- |
-| `http.proxyUser` | |
-| `http.proxyPassword` | |
-| `https.proxyUser` | |
-| `https.proxyPassword` | |
+| Property              | Description |
+| --------------------- | ----------- |
+| `http.proxyUser`      |             |
+| `http.proxyPassword`  |             |
+| `https.proxyUser`     |             |
+| `https.proxyPassword` |             |
 
 ```sh
 # Pre-flight

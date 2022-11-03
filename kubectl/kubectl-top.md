@@ -1,5 +1,9 @@
 # kubectl-top
 
+## Alternatives
+
+- [Lens (a.k.a. OpenLens)](/lens.md)
+
 ## Dependencies
 
 - [Kubernetes Metrics Server](/kubernetes/kubernetes-metrics-server.md)

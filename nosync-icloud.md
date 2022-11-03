@@ -42,7 +42,6 @@ nosync
 nosync -f ./node_modules
 nosync -f ./vendor
 nosync -f ./.venv
-nosync -f ./.terraform
 nosync -f ./bower_components
 ```
 
@@ -69,13 +68,6 @@ done
 find . -type d -name '.venv' -prune
 
 find . -type d -name '.venv' -prune | while read fname; do
-  nosync -sf "$fname"
-done
-
-# For Terraform
-find . -type d -name '.terraform' -exec test -f '{}/terraform.tfstate' \; -print
-
-find . -type d -name '.terraform' -exec test -f '{}/terraform.tfstate' \; -print | while read fname; do
   nosync -sf "$fname"
 done
 

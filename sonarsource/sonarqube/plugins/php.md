@@ -28,12 +28,12 @@ https://www.jeffgeerling.com/blogs/jeff-geerling/ci-deployments-code-analysis-dr
 
 ### References
 
+- [Code Repository](https://github.com/SonarSource/sonar-php)
 - [Docs](https://docs.sonarqube.org/latest/analysis/languages/php/)
-- [SonarPHP](https://github.com/SonarSource/sonar-php)
 
 ### Dependencies
 
-- [SonarQube](/sonarsource/sonarqube.md)
+- [SonarQube](/sonarsource/sonarqube-ce.md)
 - [SonarQube Scanner](/sonarsource/sonarqube-scanner.md)
 
 ### Installation

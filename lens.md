@@ -4,16 +4,16 @@
 https://www.youtube.com/watch?v=zW-E8THfvPY
 -->
 
+## Links
+
+- [Main Website](https://k8slens.dev/)
+- [Code Repository](https://github.com/lensapp/lens)
+
 ## Alternatives
 
 - [k9s](/k9s.md)
 - [Kubernetes Dashboard](/kubernetes/kubernetes-dashboard.md)
 - [Octant](/octant.md)
-
-## Links
-
-- [Main Website](https://k8slens.dev/)
-- [Code Repository](https://github.com/lensapp/lens)
 
 ## App
 
@@ -28,7 +28,7 @@ brew install --cask lens
 #### Chocolatey
 
 ```sh
-choco install lens
+choco install -y lens
 ```
 
 ### Tips

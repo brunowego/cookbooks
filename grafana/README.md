@@ -1,5 +1,7 @@
 # Grafana
 
+**Keyword:** Monitoring
+
 <!--
 https://linkedin.com/learning/graphite-and-grafana-visualizing-application-performance/monitoring-and-visualizing-system-performance
 https://linkedin.com/learning/kubernetes-monitoring-with-prometheus/prometheus-monitoring-to-prevent-outages

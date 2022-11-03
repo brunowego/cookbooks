@@ -108,15 +108,13 @@ yamllint ./
 
 **Requirements:** yamllint CLI.
 
-<!-- ```sh
+```sh
 #
 code --install-extension fnando.linter
 
 #
 jq '."recommendations" += ["fnando.linter"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
-``` -->
 
-```sh
 #
 jq '."[yaml]"."editor.formatOnSave" |= false' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```

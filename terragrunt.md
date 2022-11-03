@@ -1,5 +1,7 @@
 # Terragrunt
 
+**Keywords:** Terraform
+
 ## Links
 
 - [Code Repository](https://github.com/gruntwork-io/terragrunt)

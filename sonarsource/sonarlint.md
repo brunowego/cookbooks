@@ -14,11 +14,9 @@
 ### Visual Studio Code
 
 ```sh
+#
 code --install-extension SonarSource.sonarlint-vscode
+
+#
+jq '."recommendations" += ["SonarSource.sonarlint-vscode"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
-
-<!--
-~/.config/Code/User/settings.json
-
-sonarlint.rules
--->

@@ -5,5 +5,6 @@
 ### Bypass pre-commit and commit-msg hooks
 
 ```sh
-git commit -nm '[message]'
+#
+git commit -nm '<message>'
 ```

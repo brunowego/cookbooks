@@ -41,6 +41,29 @@ docker run -it --rm \
   docker.io/uzyexe/nmap:7.60 -h
 ```
 
+## Kubernetes
+
+### Running
+
+```sh
+#
+kubectl create ns testing
+
+#
+kubens testing
+
+#
+kubectl run --rm -it \
+  nmap \
+  --image docker.io/uzyexe/nmap:7.60 \
+  -l 'app=nmap' \
+  --command \
+  -- /bin/sh -c 'tail -f /dev/null'
+
+#
+kubectl exec -it nmap -- /bin/sh
+```
+
 ## CLI
 
 ### Installation

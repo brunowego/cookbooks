@@ -1,5 +1,11 @@
 # Azure Pipelines
 
+<!--
+azure-pipelines.yml
+
+https://github.com/zc-hmcts/devops-coding-challenge/blob/main/azure-pipelines.yml
+-->
+
 ## CLI
 
 ### Commands

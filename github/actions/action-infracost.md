@@ -18,6 +18,6 @@ cat << EOF > ./infracost.yaml
 version: 0.1
 
 projects:
-- path: ./.terraform
+- path: ./.devops/terraform
   terraform_plan_flags: -var-file=./vars/terraform-stg.tfvars
 EOF -->

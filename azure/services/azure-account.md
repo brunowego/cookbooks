@@ -1,5 +1,9 @@
 # Azure Account
 
+## Links
+
+- [Directories + Subscriptions](https://portal.azure.com/#settings/directory)
+
 ## CLI
 
 ### Installation

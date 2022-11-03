@@ -1,5 +1,7 @@
 # jabba
 
+**Keywords:** Java Version Manager
+
 ## Alternatives
 
 - [SDKMAN!](/sdkman.md)
@@ -51,7 +53,7 @@ jabba --help
 
 ```sh
 # Local project
-echo 'adopt@1.8.0-172' > ./.jabbarc
+echo 'adopt@1.8.0-252' > ./.jabbarc
 
 # Git ignore
 echo '/.jabbarc' >> ~/.gitignore_global
@@ -73,22 +75,22 @@ jabba ls-remote 'zulu@' --latest minor
 
 # Install
 jabba install # if have .jabbarc file
-jabba install [version]
+jabba install <version>
 
 # List
 jabba ls
 
 # Use
-jabba use [version]
+jabba use <version>
 
 # Show current
 jabba current
 
 # Alias
-jabba alias default [version]
+jabba alias default <version>
 
 #
-jabba uninstall [version]
+jabba uninstall <version>
 ```
 
 ### Tips

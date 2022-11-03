@@ -54,16 +54,16 @@ helm -h
 
 ```sh
 # Create
-helm create [name]
+helm create <name>
 
 # List
 helm list -A
 
 # Lint
-helm lint [name]
+helm lint <name>
 
 # Debug
-helm install [name] \
+helm install <name> \
   --dry-run \
   --debug
 
@@ -71,7 +71,7 @@ helm install [name] \
 helm dep build
 
 # Package
-helm package [name]
+helm package <name>
 
 # Start Serve
 nohup helm serve \
@@ -93,12 +93,12 @@ helm repo add local 'http://127.0.0.1:8879/charts'
 helm repo update
 
 # Search
-helm search repo [repo-name]
-helm search repo [repo-name]/[chart-name] --versions
+helm search repo <repo-name>
+helm search repo <repo-name>/<chart-name> --versions
 
 # Install
-helm install [name] local/[name] \
-  --namespace [name]
+helm install <name> local/<name> \
+  --namespace <name>
 
 # Remove
 helm repo remove local
@@ -138,7 +138,12 @@ helm rollback '<name>' '<revision>' \
 #### Show Values of a Chart
 
 ```sh
-helm show values [repo-name]/[chart-name] --version [semver]
+#
+helm search repo <repo-name>/<chart-name> --versions
+
+#
+helm show values <repo-name>/<chart-name> \
+  --version <semver>
 ```
 
 #### Download Helm Chart Files
@@ -181,12 +186,12 @@ helm uninstall $(helm ls --all --short) -n $(helm ls --all --short)
 
 ```sh
 # Prefix Image with Registry
-helm inspect values [repo]/[name] | sed 's|repo/image|registry.example.com/repo/image|'
+helm inspect values <repo>/<name> | sed 's|repo/image|registry.example.com/repo/image|'
 
 # When install
-helm install [name] [repo]/[name] \
-  --namespace [namespace] \
-  -f <(helm inspect values [repo]/[name] | sed 's|repo/image|registry.example.com/repo/image|')
+helm install <name> <repo>/<name> \
+  --namespace <namespace> \
+  -f <(helm inspect values <repo>/<name> | sed 's|repo/image|registry.example.com/repo/image|')
 ```
 
 <!-- ####
@@ -211,7 +216,7 @@ helm upgrade polyaxon polyaxon/polyaxon \
 #### Purge without Hooks
 
 ```sh
-helm uninstall [name] \
+helm uninstall <name> \
   --purge \
   --no-hooks
 ```
@@ -229,7 +234,7 @@ source <(helm completion zsh)
 #### Update Failed - Context Deadline Exceeded
 
 ```log
-Error: UPGRADE FAILED: Get "https://[secret].us-east-1.elb.amazonaws.com/api/v1/namespaces/sentry/services/sentry-snuba": context deadline exceeded
+Error: UPGRADE FAILED: Get "https://<secret>.us-east-1.elb.amazonaws.com/api/v1/namespaces/sentry/services/sentry-snuba": context deadline exceeded
 ```
 
 ```sh
@@ -299,12 +304,12 @@ Add code below to `./lamp/templates/deployment.yaml`:
 ```yaml
 ---
 spec:
-  [...]
+  <...>
   selector:
     matchLabels:
       app: {{ template "lamp.name" . }}
       release: {{ .Release.Name }}
-  [...]
+  <...>
 ```
 
 ```sh
@@ -415,12 +420,12 @@ Error: UPGRADE FAILED: another operation (install/upgrade/rollback) is in progre
 
 ```sh
 #
-helm history [name] \
-  -n [namespace]
+helm history <name> \
+  -n <namespace>
 
 #
-helm rollback [name] [revision] \
-  -n [namespace]
+helm rollback <name> <revision> \
+  -n <namespace>
 ```
 
 #### Local Chart Repository
@@ -462,7 +467,7 @@ helm repo add --ca-file /etc/ssl/certs/example/root-ca.pem example https://chart
 <!-- #### Transport Closing
 
 ```log
-E0924 14:25:51.932342   32716 portforward.go:233] lost connection to pod
+E0924 14:25:51.932342   32716 portforward.go:233> lost connection to pod
 Error: transport is closing
 ```
 

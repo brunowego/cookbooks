@@ -1,5 +1,9 @@
 # Azure Active Directory (AAD)
 
+## Links
+
+- [Dashboard / Users](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers)
+
 ## CLI
 
 ### Commands

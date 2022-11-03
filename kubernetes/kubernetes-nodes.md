@@ -21,6 +21,7 @@ ls /etc/kubernetes
 
 #
 more /etc/kubernetes/scheduler.conf
+
 kubectl config view \
   --kubeconfig /etc/kubernetes/scheduler.conf
 

@@ -1,8 +1,13 @@
 # GNU Make
 
+## Links
+
+- [Main Website](https://gnu.org/software/make/)
+- [Manual](https://gnu.org/software/make/manual/html_node/index.html)
+
 ## References
 
-- [Manual](https://www.gnu.org/software/make/manual/html_node/index.html)
+- [Makefile and dotENV](https://lithic.tech/blog/2020-05/makefile-dot-env)
 - [Dealing with assignment operator](https://github.com/amjadmajid/Makefile#dealing-with-assignment-operator)
 
 ## CLI
@@ -30,6 +35,12 @@ sudo apk update
 sudo apk add make
 ```
 
+#### Chocolatey
+
+```sh
+choco install -y make
+```
+
 ### Commands
 
 ```sh
@@ -37,6 +48,18 @@ make --help
 ```
 
 ### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension ms-vscode.makefile-tools
+
+#
+jq '."recommendations" += ["ms-vscode.makefile-tools"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
+
+<!-- Makefile entry point not found -->
 
 #### EditorConfig
 

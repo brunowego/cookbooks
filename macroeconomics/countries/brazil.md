@@ -1,6 +1,32 @@
 # Brazil
 
 <!--
+Réis
+Cruzeiro
+Cruzeiro Novo
+Cruzado
+Cruzado Novo
+Real
+-->
+
+<!--
+NYSE:ABEV
+NYSE:BBD
+NYSE:BSBR
+NYSE:CIG
+NYSE:EBR
+NYSE:ERJ
+NYSE:GGB
+NYSE:GOL
+NYSE:ITUB
+NYSE:PBR
+NYSE:VALE
+NYSE:VIV
+OTC:EGIEY
+OTC:JBSAY
+-->
+
+<!--
 QUANDL:BCB/11753
 
 https://utilitarios.grupodpg.com.br/utilitarios/categoria/calculo-facil/775/custo-de-contratao-pj-x-clt-x-autnomo
@@ -51,15 +77,30 @@ https://www.youtube.com/watch?v=Nk1LG5Fi9Uk
 
 - Brazilian Institute of Geography and Statistics (BIGS) / Instituto Brasileiro de Geografia e Estatística (IBGE)
 
-## Terms
+## Glossary
+
+- iShares: Collection of ETFs managed by BlackRock
+- Morgan Stanley Capital International (MSCI)
+- World Equity Benchmark Shares (WEBS)
+
+### Portuguese
 
 - Certificado de Recebíveis Imobiliários (CRI)
-- Diáspora Brasileira
 - Fundos Imobiliários (FII)
 - Índice Nacional de Preços ao Consumidor Amplo (IPCA)
 - Instituto Brasileiro de Opinião Pública e Estatística (IBOPE)
 - Preço de Paridade Internacional (PPI)
 - Tribunal Superior Eleitoral (TSE)
+
+## Terms
+
+### Portuguese
+
+- Diáspora Brasileira
+
+## Exchange-Traded Fund (ETF)
+
+- iShares MSCI Brazil `AMEX:EWZ`
 
 ## Exchanges
 

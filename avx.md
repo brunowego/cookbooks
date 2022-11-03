@@ -4,7 +4,9 @@
 
 - [Troubleshooting](https://www.kubeflow.org/docs/other-guides/troubleshooting/)
 
-## Info
+## CLI
+
+### Usage
 
 ```sh
 # Darwin
@@ -14,7 +16,9 @@ sysctl -a | grep -ic avx
 grep -ic avx /proc/cpuinfo
 ```
 
-### Kubernetes
+## Kubernetes
+
+### Running
 
 ```sh
 kubectl run busybox -it --rm \

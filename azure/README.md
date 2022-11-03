@@ -15,6 +15,7 @@ https://github.com/githubpartners/github-azure-microservices-blueprint
 - [Account](https://account.microsoft.com/)
 - [Devices](https://account.microsoft.com/devices)
 - [Regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
+- [Status Page](https://status.azure.com/)
 
 ## Glossary
 
@@ -39,6 +40,12 @@ https://github.com/githubpartners/github-azure-microservices-blueprint
 
 ```sh
 brew install azure-cli
+```
+
+#### Chocolatey
+
+```sh
+choco install azure-cli
 ```
 
 ### Commands
@@ -68,9 +75,10 @@ cat ~/.azure/config
 
 ```sh
 #
+az login
+# or
 az login --allow-no-subscriptions
-
-#
+# or
 az login --tenant <id>
 ```
 

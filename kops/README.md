@@ -116,7 +116,7 @@ kops \
     --networking 'calico' \
     --node-count 3 \
     --node-size 't2.micro' \
-    --out ./.terraform \
+    --out ./.devops/terraform \
     --ssh-public-key "${HOME}/.ssh/id_rsa.${KOPS_CLUSTER_NAME}.pub" \
     --target terraform \
     --topology 'private' \
