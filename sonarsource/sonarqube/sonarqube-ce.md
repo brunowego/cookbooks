@@ -9,10 +9,11 @@ https://github.com/BlockByBlock/jenkins-docker-with-goss/blob/master/doc/sonarqu
 .scannerwork
 -->
 
-**Keywords:** SAST, Code Quality
+**Keywords:** SAST, Code Quality, Continuous Inspection
 
 ## Links
 
+- [Code Repository](https://github.com/SonarSource/sonarqube)
 - [Main Website](https://sonarqube.org)
 - [Languages](https://docs.sonarqube.org/latest/analysis/languages/overview/)
 

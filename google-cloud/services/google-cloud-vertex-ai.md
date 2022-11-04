@@ -1,4 +1,4 @@
-# Vertex AI
+# Google Cloud Vertex AI
 
 <!--
 https://www.youtube.com/watch?v=gT4qqHMiEpA
@@ -14,3 +14,11 @@ https://www.youtube.com/watch?v=gT4qqHMiEpA
 - Evaluate
 - Deploy
 - Predict
+
+## CLI
+
+### Commands
+
+```sh
+gcloud ai --help
+```

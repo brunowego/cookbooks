@@ -112,6 +112,8 @@ nping -h
 
 ### Usage
 
+**Tips:** Prefer use [GNU Netcat](/gnu-netcat.md) to test ports.
+
 ```sh
 # Operation system
 sudo nmap -O 127.0.0.1

@@ -10,6 +10,12 @@
 brew install --cask google-cloud-sdk
 ```
 
+#### Chocolatey
+
+```sh
+choco install -y gcloudsdk
+```
+
 ### Commands
 
 ```sh

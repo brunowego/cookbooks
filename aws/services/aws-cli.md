@@ -46,38 +46,24 @@ aws [options] <command> <subcommand> [parameters]
 
 ### Usage
 
-<!-- ```sh
+```sh
 #
 aws configure \
-  --profile dev
-``` -->
+  --profile default
 
-```sh
 #
 aws configure get profile.default.region
 aws configure get profile.default.output
-aws configure get profile.dev.region # uat
 
 #
 aws configure set profile.default.region us-east-1
 aws configure set profile.default.output text # json, table
-aws configure set profile.dev.region us-east-1 # uat
 
 #
 aws configure list --profile default
-aws configure list --profile dev # uat
 
 #
-export AWS_ACCESS_KEY_ID=''
-export AWS_SECRET_ACCESS_KEY=''
-
-aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID"
-aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS_KEY"
-
-#
-aws pricing get-attribute-values \
-  --service-code AmazonEC2 \
-  --attribute-name instanceType
+aws s3 ls
 
 #
 cat ~/.aws/config
@@ -110,7 +96,18 @@ aws ecr get-login \
 
 ### Tips
 
-#### Profile Environment
+#### Manually Configuration
+
+```sh
+#
+export AWS_ACCESS_KEY_ID=''
+export AWS_SECRET_ACCESS_KEY=''
+
+aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID"
+aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS_KEY"
+```
+
+#### Environment Access Variables
 
 ```sh
 #

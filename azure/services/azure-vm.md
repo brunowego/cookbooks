@@ -1,8 +1,9 @@
 # Azure Virtual Machines (VM)
 
-## Links
+## Docs
 
 - [Common Azure CLI commands for managing Azure resources](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage)
+- [B-series burstable virtual machine sizes](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes-b-series-burstable)
 
 ## CLI
 

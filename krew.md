@@ -57,14 +57,5 @@ kubectl krew upgrade
 kubectl krew list
 
 #
-kubectl krew search '[package]'
+kubectl krew search '<package>'
 ```
-
-### Issues
-
-####
-
-```log
-Error: unknown command "krew" for "kubectl"
-```
-

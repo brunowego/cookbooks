@@ -1,4 +1,4 @@
-# Google Cloud Armor
+# Google Cloud Armor (GCA)
 
 <!--
 https://app.pluralsight.com/library/courses/google-cloud-armor-security-scanner-data-loss-prevention-api-leveraging/table-of-contents

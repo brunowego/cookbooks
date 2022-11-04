@@ -9,6 +9,48 @@ https://linkedin.com/learning/postgresql-essential-training/manage-relational-da
 - [JDBC Driver - Connecting to the Database](https://jdbc.postgresql.org/documentation/head/connect.html)
 - [Data Types](https://www.postgresql.org/docs/9.5/datatype.html#DATATYPE-TABLE)
 
+## Docker
+
+### Running
+
+```sh
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h psql \
+  --name psql \
+  --entrypoint /usr/local/bin/psql \
+  docker.io/library/postgres:11.2-alpine --help
+```
+
+## Kubernetes
+
+### Running
+
+```sh
+#
+kubectl create ns testing
+
+#
+kubens testing
+
+#
+kubectl run --rm -it \
+  psql \
+  --image docker.io/library/postgres:11.2-alpine \
+  -l 'app=psql' \
+  --command \
+  -- /bin/sh -c 'tail -f /dev/null'
+
+#
+kubectl exec -it psql -- /bin/bash
+
+#
+psql \
+  -h localhost \
+  -p 5432 \
+  -U postgres
+```
+
 ## CLI
 
 ### Installation

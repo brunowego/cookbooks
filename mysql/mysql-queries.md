@@ -50,16 +50,16 @@ SHOW PROCESSLIST
 SELECT * FROM information_schema.user_privileges;
 
 -- Create
-CREATE USER IF NOT EXISTS '[username]'@'%' IDENTIFIED BY '[password]';
+CREATE USER IF NOT EXISTS '<username>'@'%' IDENTIFIED BY '<password>';
 
 -- Add Privileges
-GRANT ALL PRIVILEGES ON `[db-name]`.* TO '[username]'@'%';
+GRANT ALL PRIVILEGES ON `<db-name>`.* TO '<username>'@'%';
 
 -- Flush
 FLUSH PRIVILEGES;
 
 -- Change Password
-ALTER USER '[username]'@'%' IDENTIFIED BY '[password]';
+ALTER USER '<username>'@'%' IDENTIFIED BY '<password>';
 
 -- Show Users Info
 SELECT User FROM mysql.user;
@@ -68,10 +68,10 @@ SELECT User FROM mysql.user;
 SHOW GRANTS;
 SHOW GRANTS FOR CURRENT_USER;
 SHOW GRANTS FOR CURRENT_USER();
-SHOW GRANTS FOR '[username]'@'%';
+SHOW GRANTS FOR '<username>'@'%';
 
 -- Remove
-DROP USER '[username]'@'%';
+DROP USER '<username>'@'%';
 ```
 
 ## Logs
@@ -124,7 +124,7 @@ SELECT
 FROM
     information_schema.TABLES
 WHERE
-    TABLE_SCHEMA = '[dbname]';
+    TABLE_SCHEMA = '<dbname>';
 ```
 
 ## Select
@@ -301,7 +301,7 @@ SELECT
 FROM
     information_schema.TABLES
 WHERE
-    TABLE_SCHEMA = '[dbname]';
+    TABLE_SCHEMA = '<dbname>';
 
 -- Select by domain and distinct
 SELECT

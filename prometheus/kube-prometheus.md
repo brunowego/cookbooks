@@ -1,4 +1,4 @@
-# kube-prometheus (a.k.a prometheus-stack, p.k.a. prometheus-operator)
+# Prometheus Operator / kube-prometheus (a.k.a prometheus-stack)
 
 <!--
 https://github.com/jsa4000/Observable-Distributed-System/blob/master/docs/02_kube_prometheus.md

@@ -10,7 +10,14 @@ https://status.fastly.com/
 https://github.com/louislam/uptime-kuma
 -->
 
-## Alternatives
+## Glossary
+
+- Error Budget
+- Service-Level Agreement (SLA)
+- Service-Level Indicator (SLI)
+- Service-Level Objective (SLO)
+
+## Tools
 
 - [Atlassian Statuspage](/atlassian/atlassian-statuspage.md)
 - [Cachet](/cachet.md)

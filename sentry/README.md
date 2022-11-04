@@ -8,6 +8,8 @@ https://blog.sentry.io/2018/07/17/source-code-fetching
 - web-frontend
 -->
 
+**Keyword:** Error Tracking
+
 ## Links
 
 - [Code Repository](https://github.com/getsentry/sentry)

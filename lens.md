@@ -33,8 +33,30 @@ choco install -y lens
 
 ### Tips
 
-#### Install Metrics Stack
+#### Add to Hotbar
 
-1. Context -> Settings
-2. Features Section
-3. Metrics Stack -> Install
+1. Home
+2. Welcome to Lens! -> Browse Your Local Catalog
+3. Catalog -> Categories -> Clusters
+4. Clusters -> Cluster Name -> Add to Hotbar
+
+#### Lens Metrics
+
+1. Cluster -> Settings
+2. Settings -> Extensions -> Lens Metrics
+
+A namespace called `lens-metrics` will be created with the selected features enabled.
+
+- Prometheus Stack
+- Kube-State-Metrics (KSM)
+- Node Exporter
+
+### Issues
+
+#### Missing Metrics
+
+```log
+Metrics not available at the moment
+```
+
+Install Prometheus Stack, Kube-State-Metrics (KSM) and Node Exporter.

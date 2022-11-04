@@ -64,15 +64,31 @@ export PATH="/usr/local/opt/mysql-client/bin:$PATH" # Homebrew
 sudo su - "$USER"
 ```
 
+### Commands
+
+```sh
+mysql --help
+```
+
 ### Usage
 
 ```sh
+#
 mysql \
   -h 127.0.0.1 \
   -P 3306 \
   -u root \
   -p'root'
 
+#
+mysql \
+  -h "$DB_HOST" \
+  -P "$DB_PORT" \
+  -u "$DB_USERNAME" \
+  -p"$DB_PASSWORD"
+```
+
+```sql
 SHOW DATABASES;
 ```
 

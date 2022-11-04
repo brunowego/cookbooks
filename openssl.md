@@ -1,5 +1,11 @@
 # OpenSSL
 
+<!--
+openssl pkcs8 -in ./file.pem -inform PEM -outform DER -topk8 -nocrypt | openssl sha1 -c
+
+openssl rsa -in ./file.pem -pubout -outform DER | openssl md5 -c
+-->
+
 ## CLI
 
 ### Installation

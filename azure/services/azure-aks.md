@@ -4,6 +4,10 @@
 https://app.pluralsight.com/paths/skills/managing-and-orchestrating-containers-with-azure-kubernetes-service-aks
 -->
 
+## Links
+
+- [Kubernetes Services](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FmanagedClusters)
+
 ## Glossary
 
 - Fully-Qualified Domain Name (FQDN)
@@ -17,20 +21,82 @@ https://app.pluralsight.com/paths/skills/managing-and-orchestrating-containers-w
 az aks -h
 ```
 
+### Configuration
+
+```sh
+#
+export AZURE_AKS_CLUSTER_NAME="$(az aks list --query '[].name' -o tsv)"
+export AZURE_RESOURCE_GROUP="$(az aks list --query '[].{resourceGroup:resourceGroup}' -o tsv)"
+
+#
+az aks get-credentials \
+  --name "$AZURE_AKS_CLUSTER_NAME" \
+  --resource-group "$AZURE_RESOURCE_GROUP" \
+  --admin
+
+#
+kubectl config view
+```
+
 ### Usage
 
 ```sh
 #
 az aks list
+```
+
+<!--
+az aks create \
+  --name "$AZURE_AKS_CLUSTER_NAME" \
+  --resource-group "$AZURE_RESOURCE_GROUP" \
+  --network-plugin azure \
+  --node-count 3
+
+az aks nodepool add \
+  --cluster-name "$AZURE_AKS_CLUSTER_NAME" \
+  --resource-group "$AZURE_RESOURCE_GROUP" \
+  --name systempool \
+  --mode system \
+  --node-count 1 \
+  --node-taints "CriticalAddonsOnly=true:NoSchedule" \
+  --no-wait
+
+az aks nodepool add \
+  --cluster-name "$AZURE_AKS_CLUSTER_NAME" \
+  --resource-group "$AZURE_RESOURCE_GROUP" \
+  --name userpool \
+  --mode user \
+  --node-count 2 \
+  --node-taints "node.cilium.io/agent-not-ready=true:NoExecute" \
+  --no-wait
+
+az aks nodepool delete \
+  --cluster-name "$AZURE_AKS_CLUSTER_NAME" \
+  --resource-group "$AZURE_RESOURCE_GROUP" \
+  --name "" \
+  --no-wait
+-->
+
+#### Node Pools
+
+```sh
+#
+az aks nodepool list \
+  --cluster-name "$AZURE_AKS_CLUSTER_NAME" \
+  --resource-group "$AZURE_RESOURCE_GROUP"
 
 #
-az aks get-credentials \
-  --name "$(az aks list --query '[].name' -o tsv)" \
-  --resource-group "$(az aks list --query '[].{resourceGroup:resourceGroup}' -o tsv)" \
-  --admin
+az aks nodepool show \
+  --cluster-name "$AZURE_AKS_CLUSTER_NAME" \
+  --name 'worker' \
+  --resource-group "$AZURE_RESOURCE_GROUP"
 
 #
-kubectl config view
+az aks nodepool scale \
+  --cluster-name "$AZURE_AKS_CLUSTER_NAME" \
+  --name 'worker' \
+  --resource-group "$AZURE_RESOURCE_GROUP" \
+  --node-count 3
 ```
 
 ### Issues

@@ -1,10 +1,32 @@
 # GNU Netcat
 
-## Kubectl
+## Kubernetes
 
 ### Running
 
 ```sh
+#
+kubectl create ns testing
+
+#
+kubens testing
+
+#
+kubectl run --rm -it \
+  nc \
+  --image docker.io/brunowego/netcat:latest \
+  -l 'app=nc' \
+  --command \
+  -- /bin/sh -c 'tail -f /dev/null'
+
+#
+kubectl exec -it nc -- /bin/sh
+
+#
+nc -zv <hostname> <port>
+```
+
+<!-- ```sh
 #
 kubectl run -it \
   netcat \
@@ -14,7 +36,7 @@ kubectl run -it \
 #
 kubectl attach -it netcat \
   -c netcat
-```
+``` -->
 
 ### Delete
 
@@ -44,6 +66,12 @@ sudo apt -y install netcat
 ```sh
 apk update
 apk add netcat
+```
+
+#### Chocolatey
+
+```sh
+choco install -y netcat
 ```
 
 ### Commands

@@ -1,5 +1,9 @@
 # Azure PostgreSQL
 
+## Links
+
+- [Dashboard / Servers](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.DBforPostgreSQL%2Fservers)
+
 ## CLI
 
 ### Commands

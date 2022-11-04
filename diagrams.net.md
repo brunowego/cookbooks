@@ -1,5 +1,11 @@
 # diagrams.net (p.k.a. draw.io)
 
+<!--
+Extension .drawio
+
+filename:.drawio.png
+-->
+
 ## Links
 
 - [Main Website](https://diagrams.net)
@@ -22,6 +28,18 @@ mkdir -p ./.drawio/exported
 
 #
 touch ./.drawio/app.drawio
+```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension hediet.vscode-drawio
+
+#
+jq '."recommendations" += ["hediet.vscode-drawio"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ## Docker

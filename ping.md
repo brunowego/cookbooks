@@ -1,5 +1,9 @@
 # ping
 
+## Glossary
+
+- Internet Control Message Protocol (ICMP)
+
 ## CLI
 
 ### Dependencies

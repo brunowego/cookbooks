@@ -171,6 +171,31 @@ aws ec2 describe-instances \
               uniq
 -->
 
+#### Key Pairs
+
+```sh
+#
+aws ec2 describe-key-pairs
+```
+
+<!--
+export privatekey=bastion
+aws ec2 create-key-pair \
+    --key-name ${privatekey} \
+    --key-type rsa \
+    --key-format pem \
+    --query "KeyMaterial" \
+    --output text > ${privatekey}.pem
+
+mv $(basename $(pwd)).pem ~/.ssh/
+
+export privatekey=ubuntu
+ssh-keygen -t rsa -f ${privatekey}
+aws ec2 import-key-pair --key-name ${privatekey} --public-key-material fileb://${privatekey}.pub
+
+#ssh-keygen -y -f ${privatekey} >> ${privatekey}_public.pub
+-->
+
 ### Tips
 
 #### Get Console Output

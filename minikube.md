@@ -116,11 +116,13 @@ minikube start \
   -p minikube-default
 
 # Using specific Kubernetes version. Kubernetes Releases: https://kubernetes.io/releases/
+export KUBERNETES_VERSION='1.24.3'
+
 minikube start \
   $(echo "$MINIKUBE_START_OPTS") \
   -p minikube-default \
   --bootstrapper kubeadm \
-  --kubernetes-version 1.24.3
+  --kubernetes-version "$KUBERNETES_VERSION"
 
 # Using feature gates
 minikube start \
@@ -137,6 +139,9 @@ minikube start \
 
 #
 minikube profile minikube-default
+
+#
+minikube status -p minikube-default
 ```
 
 ```sh
@@ -207,8 +212,8 @@ jq ".HostOptions.EngineOptions.Env += [ \"no_proxy=$no_proxy\" ]" ~/.minikube/ma
 ```
 
 ```sh
-minikube stop && \
-  minikube start
+minikube stop -p minikube-default && \
+  minikube start -p minikube-default
 ```
 
 ```sh
