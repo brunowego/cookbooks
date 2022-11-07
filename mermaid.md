@@ -1,9 +1,8 @@
 # mermaid
 
-<!--
-https://sequencediagram.org/
-https://github.com/olaven/krets/blob/master/diagrams/database.md
--->
+## Links
+
+- [Main Website](https://mermaid-js.github.io/mermaid)
 
 ## Tools
 
@@ -38,7 +37,15 @@ stateDiagram
 ### Visual Studio Code
 
 ```sh
-code \
-  --install-extension bierner.markdown-mermaid \
-  --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
+#
+code --install-extension bierner.markdown-mermaid
+
+#
+jq '."recommendations" += ["bierner.markdown-mermaid"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+
+#
+code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
+
+#
+jq '."recommendations" += ["bpruitt-goddard.mermaid-markdown-syntax-highlighting"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

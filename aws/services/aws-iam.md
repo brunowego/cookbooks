@@ -13,6 +13,10 @@ https://ryaneschinger.com/blog/kubernetes-aws-vpc-kops-terraform/
 https://blog.kasten.io/hands-on-deploying-kubernetes-with-terraform?utm_term=&utm_campaign=Website+traffic-Search%2Bdisplay-86+(Remarketing)&utm_source=adwords&utm_medium=ppc&hsa_acc=3144319558&hsa_cam=13192272412&hsa_grp=121361024814&hsa_ad=523196361073&hsa_src=g&hsa_tgt=dsa-1279855672054&hsa_kw=&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw8cCGBhB6EiwAgORey1bilNLsAwOp68hXteFQ9xhvVGUREbMU28imM5WJKqEzyO96pngGDRoCpH8QAvD_BwE
 -->
 
+## Console
+
+- [Dashboard](https://console.aws.amazon.com/iamv2/home)
+
 ## Guides
 
 - [IAM policy examples for secrets in AWS Secrets Manager](https://docs.aws.amazon.com/mediaconnect/latest/ug/iam-policy-examples-asm-secrets.html)

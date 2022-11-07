@@ -25,7 +25,8 @@ Places in the Heart
 
 ### Portuguese
 
-- [Mateus Rapini](https://www.youtube.com/c/MateusRapini)
+- [Bitgrafico](https://youtube.com/c/CriptoGr%C3%A1ficoBitcoinecriptomoedas)
+- [Mateus Rapini](https://youtube.com/c/MateusRapini)
 
 ## Analysis
 

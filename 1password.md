@@ -24,6 +24,16 @@ brew install --cask 1password
 choco install -yf -not-silent 1password
 ```
 
+### Issues
+
+#### macOS QR Code Failed
+
+```log
+QR code detection failed.
+```
+
+Use cell phone instead.
+
 ## CLI
 
 ### Installation
@@ -44,5 +54,5 @@ op -h
 
 ```sh
 #
-op signin [example]
+op signin <example>
 ```

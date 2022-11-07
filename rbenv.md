@@ -2,7 +2,7 @@
 
 ## CLI
 
-### Dependencies
+<!-- ### Dependencies -->
 
 <!-- #### Homebrew
 
@@ -35,12 +35,15 @@ brew install rbenv
 #### Git
 
 ```sh
+#
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-( cd ~/.rbenv && ./src/configure && make -C src )
-```
 
-```sh
+( cd ~/.rbenv && ./src/configure && make -C src )
+
+#
 mkdir -p ~/.rbenv/plugins
+
+#
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
@@ -73,7 +76,7 @@ rbenv -h
 rbenv install -l
 
 # Install
-rbenv install [version]
+rbenv install <version>
 
 # Initialize
 eval "$(rbenv init -)"
@@ -82,9 +85,9 @@ eval "$(rbenv init -)"
 rbenv versions
 
 # Setting
-rbenv local [version]
-rbenv global [version]
+rbenv local <version>
+rbenv global <version>
 
 # Uninstall
-rbenv uninstall [version]
+rbenv uninstall <version>
 ```

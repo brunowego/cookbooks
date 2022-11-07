@@ -1,5 +1,25 @@
 # AWS Cost Management
 
-## Links
+<!--
+https://github.com/Teevity/ice
+-->
 
-- [Cost Explorer](https://console.aws.amazon.com/cost-management/home?#/custom?reportType=CostUsage&chartStyle=Group&groupBy=None&forecastTimeRangeOption=None&hasBlended=false&hasAmortized=false&excludeDiscounts=true&usageAs=usageQuantity&excludeCategorizedResources=false&excludeTaggedResources=false&excludeForecast=false&reportName=&timeRangeOption=Last3Months&granularity=Monthly&filter=%5B%5D&isTemplate=true)
+## Console
+
+- [Dashboard](https://console.aws.amazon.com/cost-management/home)
+- [Cost Explorer](https://console.aws.amazon.com/cost-management/home#/custom)
+
+## CLI
+
+### Commands
+
+```sh
+aws ce help
+```
+
+<!-- ### Usage
+
+```sh
+#
+aws ce get-cost-and-usage
+``` -->

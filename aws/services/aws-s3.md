@@ -1,5 +1,9 @@
 # AWS Simple Storage Service (S3)
 
+## Console
+
+- [Buckets](https://s3.console.aws.amazon.com/s3/buckets)
+
 ## Alternatives
 
 - [MinIO](/minio.md)

@@ -1,4 +1,4 @@
-# Kubecost
+# OpenCost (p.k.a. Kubecost)
 
 <!--
 harness
@@ -26,6 +26,7 @@ helm repo update
 ### Dependencies
 
 <!-- - [Grafana](/grafana/README.md#helm) -->
+
 - [Prometheus](/prometheus/README.md#helm)
 
 ### Suggestions

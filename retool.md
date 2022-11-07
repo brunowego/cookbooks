@@ -1,6 +1,6 @@
 # Retool
 
-**Keywords:** No-code
+**Keywords:** Low-Code
 
 ## Links
 

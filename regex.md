@@ -1,8 +1,17 @@
 # Regular Expressions (regex)
 
+<!--
+\[(\w+)\]
+<$1>
+
+[^(]
+-->
+
 ## Tools
 
-- [regex101](https://regex101.com/)
+- [RegEx Generator](https://retool.com/utilities/regex-generator)
+- [regex101](https://regex101.com/) 🌟
+- [RegExr](https://regexr.com/)
 
 ## References
 

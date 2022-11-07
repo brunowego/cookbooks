@@ -6,6 +6,7 @@ http://test-ipv6.com/
 
 <!--
 Private: 10.0.10.x
+Public: 172.x.x.x
 -->
 
 ## Tips

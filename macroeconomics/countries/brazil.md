@@ -46,6 +46,29 @@ Kantar IBOPE Media
 People Meter
 -->
 
+## Glossary
+
+- Banco Central do Brasil (BACEN or BCB)
+- Banco Nacional de Desenvolvimento Econômico e Social (BNDES)
+- Comissão de Valores Mobiliários (CVM)
+- Sociedade Anônima (S.A.)
+
+## Terms
+
+- Tripé Macroeconômico (Câmbio Flutuante, Metas de Inflação, Superávit Fiscal)
+
+## Conselho Monetário Nacional
+
+```mermaid
+graph TD
+    A[Conselho Monetário Nacional] --> B(BACEN)
+    A --> C(CVM)
+    B --> D(Bancos)
+    B --> E(BNDES)
+    C --> F(S.A.)
+    C --> G(Bolsa de Valores)
+```
+
 ## Government
 
 - [CNPJ](http://servicos.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp?cnpj=)

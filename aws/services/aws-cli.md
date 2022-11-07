@@ -3,14 +3,17 @@
 ## Links
 
 - [Code Repository](https://github.com/aws/aws-cli)
-- [AWS Command Line Interface](https://aws.amazon.com/cli/)
+- [Main Website](https://aws.amazon.com/cli/)
+
+## Docs
+
 - [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/)
 
+## Tools
+
+- [AWS Profile Manager (a.k.a. AWS Profile Switcher)](/aws-profile-manager.md)
+
 ## CLI
-
-### Dependencies
-
-- [aws-google-auth](/aws-google-auth.md)
 
 ### Installation
 
@@ -41,12 +44,15 @@ aws help
 #### AWS CLI Command Syntax
 
 ```sh
-aws [options] <command> <subcommand> [parameters]
+aws <options> <command> <subcommand> <parameters>
 ```
 
 ### Usage
 
 ```sh
+#
+aws configure list-profiles
+
 #
 aws configure \
   --profile default

@@ -23,6 +23,7 @@ The Open Web Application Security Project is an online community that produces f
 
 - [HttpOnly](https://owasp.org/www-community/HttpOnly)
 - [OWASP DevSecOps Maturity Model](https://dsomm.timo-pagel.de/)
+- [OWASP WrongSecrets](https://github.com/OWASP/wrongsecrets)
 
 ## Top 10
 

@@ -3,6 +3,9 @@
 ## Links
 
 - [Code Repository](https://github.com/armosec/kubescape)
+
+## Related
+
 - [NSA, CISA release Kubernetes Hardening Guidance](https://nsa.gov/News-Features/Feature-Stories/Article-View/Article/2716980/nsa-cisa-release-kubernetes-hardening-guidance/)
 
 ## Glossary

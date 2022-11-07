@@ -2,5 +2,5 @@
 
 ## Tools
 
-- [OSINT Framework](/osintframework.md)
+- [OSINT](/osint.md)
 - [Seeker](/seeker.md)

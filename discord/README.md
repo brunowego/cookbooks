@@ -1,22 +1,24 @@
 # Discord
 
 <!--
-https://gist.github.com/thomasbnt/b6f455e2c7d743b796917fa3c205f812
--->
-
-<!--
-<a href="https://discord.gg/zxHM7uwDmk">
-  <img src="https://img.shields.io/discord/873418656405651487.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" alt="Discord">
-</a>
+https://github.com/hanaui-git/ZeroDiscord
 -->
 
 ## Links
 
 - [Status Page](https://discordstatus.com/)
 
+## Related
+
+- [GitHub Gist / Discord Colors Mapping](https://gist.github.com/thomasbnt/b6f455e2c7d743b796917fa3c205f812)
+
+## Hacking
+
+- Token Grabber (Trojan)
+
 ## Tools
 
-- [Discord Webhook Tester](https://lew.la/webhook/)
+- [Discord Webhook Tester](https://disforge.com/tool/webhook-tester)
 
 ## App
 
@@ -34,16 +36,29 @@ brew install --cask discord
 choco install -y discord
 ```
 
-## API
+## Tips
 
-### Tips
+### Discord Shield
+
+```html
+<a href="https://discord.gg/zxHM7uwDmk">
+  <img
+    src="https://img.shields.io/discord/873418656405651487.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2"
+    alt="Discord"
+  />
+</a>
+```
+
+### Webhook API Call
 
 ```sh
+#
 export MSG_TITLE='Knock Knock!'
 export MSG_LINK='https://github.com/github'
 export MSG_COLOR='0x2ea043'
 export MSG_VALUE="Who's There?"
 
+#
 export PAYLOAD="$(jq \
   --null-input \
   --compact-output \
@@ -63,9 +78,11 @@ export PAYLOAD="$(jq \
     }]
   }')"; echo $PAYLOAD
 
+#
 export DISCORD_CHANNEL=''
 export DISCORD_TOKEN=''
 
+#
 curl \
   -fSs \
   -H 'Content-Type: application/json' \

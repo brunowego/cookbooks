@@ -26,26 +26,42 @@ gcloud --help
 
 ```sh
 #
-gcloud auth login
-gcloud auth application-default login
+gcloud info
 
 #
-cat ~/.config/gcloud/application_default_credentials.json
+gcloud auth login
+gcloud auth application-default login
 
 #
 gcloud config get-value core/account
 
 #
-gcloud config set project [project-id]
+cat ~/.config/gcloud/application_default_credentials.json
 
 #
-gcloud config set run/region [region]
+gcloud projects list
+
+#
+gcloud projects create <unique-name>
+
+#
+gcloud config set project <project-id>
+
+#
+gcloud config get-value compute/region
+gcloud config get-value compute/zone
+
+#
+gcloud config set compute/region us-west1
+gcloud config set compute/zone us-west1-a
+```
+
+<!--
+#
+gcloud config set run/region <region>
 
 #
 gcloud auth configure-docker
-
-#
-gcloud info
 
 #
 gcloud beta container clusters create 'model-mgmt' \
@@ -64,4 +80,4 @@ gcloud container clusters get-credentials 'model-mgmt' --zone 'us-central1-a'
 
 #
 gcloud beta container clusters delete 'model-mgmt' --zone 'us-central1-a'
-```
+-->

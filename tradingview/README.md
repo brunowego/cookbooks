@@ -27,6 +27,7 @@ Settings -> Service -> Performance -> Disable hardware acceleration
 
 - Fib Channel
 - Gann Fan
+- Parallel Channel
 - Pitchfork
 - Three Drives Pattern
 

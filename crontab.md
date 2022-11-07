@@ -29,16 +29,33 @@ sudo yum -y install cronie
 man crontab
 ```
 
-### Tips
+### Environment
 
-#### Directly Read
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
-cat /etc/crontab
+export EDITOR=vim
 ```
 
-#### Load Specific
+### Usage
 
 ```sh
-crontab /etc/cron.d/[filename]
+# List
+crontab -l
+
+# Edit
+crontab -e
+
+#
+crontab -u <username>
+
+# Directly Read
+cat /etc/crontab # Linux
+sudo cat /var/at/tabs/"$USER" # Darwin
+
+# Load Specific
+crontab /etc/cron.d/<filename> # Linux
+
+# Remove
+crontab -r
 ```

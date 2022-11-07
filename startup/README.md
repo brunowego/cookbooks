@@ -82,22 +82,6 @@ Pró-Labore
 
 - Equity or Salary
 
-## C-Level Positions
-
-- Chief Analytics Officer (CAO)
-- Chief Compliance Officer (CCO)
-- Chief Data Officer (CDO)
-- Chief Executive Officer (CEO)
-- Chief Financial Officer (CFO)
-- Chief Green Officer (CGO)
-- Chief Human Resources Manager (CHRM)
-- Chief Human Resources Officer (CHRO)
-- Chief Information Officer (CIO)
-- Chief Marketing Officer (CMO)
-- Chief Operating Officer (COO)
-- Chief Security Officer (CSO)
-- Chief Technology Officer (CTO)
-
 ## Types
 
 - Infoproduct

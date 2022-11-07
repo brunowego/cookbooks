@@ -8,6 +8,11 @@ Spot instances
 https://www.youtube.com/watch?v=F8jXE-_hdfg
 -->
 
+## Console
+
+- Network & Security
+  - [Key pairs](https://console.aws.amazon.com/ec2/home#KeyPairs:)
+
 ## Guides
 
 - [Amazon Machine Images (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
@@ -33,6 +38,10 @@ aws ec2 help
 ```
 
 ### Usage
+
+<!--
+aws ec2 describe-vpcs --query 'Vpcs[].VpcId'
+-->
 
 ```sh
 #

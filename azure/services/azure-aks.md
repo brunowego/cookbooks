@@ -46,11 +46,23 @@ az aks list
 ```
 
 <!--
+#### Create
+
+```sh
+export AZURE_AKS_CLUSTER_NAME=''
+
+az group create \
+  --name "$AZURE_RESOURCE_GROUP" \
+  --location eastus
+
 az aks create \
   --name "$AZURE_AKS_CLUSTER_NAME" \
   --resource-group "$AZURE_RESOURCE_GROUP" \
   --network-plugin azure \
-  --node-count 3
+  --node-count 3 \
+  --generate-ssh-keys \
+  --vm-set-type VirtualMachineScaleSets \
+  --load-balancer-sku standard
 
 az aks nodepool add \
   --cluster-name "$AZURE_AKS_CLUSTER_NAME" \
@@ -75,6 +87,7 @@ az aks nodepool delete \
   --resource-group "$AZURE_RESOURCE_GROUP" \
   --name "" \
   --no-wait
+```
 -->
 
 #### Node Pools
@@ -97,6 +110,22 @@ az aks nodepool scale \
   --name 'worker' \
   --resource-group "$AZURE_RESOURCE_GROUP" \
   --node-count 3
+```
+
+#### Upgrade
+
+```sh
+#
+az aks get-upgrades \
+  --name "$AZURE_AKS_CLUSTER_NAME" \
+  --resource-group "$AZURE_RESOURCE_GROUP"
+
+az aks nodepool upgrade \
+  --resource-group myResourceGroup \
+  --cluster-name myAKSCluster \
+  --name mynodepool \
+  --kubernetes-version KUBERNETES_VERSION \
+  --no-wait
 ```
 
 ### Issues

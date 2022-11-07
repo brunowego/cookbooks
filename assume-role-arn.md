@@ -36,12 +36,11 @@ assume-role-arn -h
 
 ```sh
 #
-eval $(assume-role-arn -r [role_arn])
-
+eval $(assume-role-arn -r <role_arn>)
 aws sts get-caller-identity
 
-#
+# or
 assume-role-arn \
-  -r [role_arn] \
+  -r <role_arn> \
     aws sts get-caller-identity
 ```

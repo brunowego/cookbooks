@@ -1,5 +1,7 @@
 # Microsoft Excel
 
+**Keywords:** Spreadsheet
+
 ## App
 
 ### Installation

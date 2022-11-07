@@ -15,9 +15,6 @@ https://github.com/marketplace/actions/infracost
 ## Docs
 
 - [CI/CD Integrations](https://infracost.io/docs/integrations/cicd)
-
-## Guides
-
 - [Usage-based resources](https://infracost.io/docs/usage_based_resources/)
 
 ## CLI
@@ -37,58 +34,84 @@ curl -L 'https://github.com/infracost/infracost/releases/download/v0.9.3/infraco
   tar -xzC /usr/local/bin --transform s/-linux-amd64//
 ```
 
+#### Chocolatey
+
+```sh
+choco install -y infracost
+```
+
 ### Commands
 
 ```sh
 infracost -h
 ```
 
-### Bootstrap
+### Configuration
 
 ```sh
 # Get API token
-infracost register
+infracost auth login
 
 # Show credentials
 cat ~/.config/infracost/credentials.yml
 
+#
+infracost configure set currency USD # BRL
+
+# Show configuration
+cat ~/.config/infracost/configuration.yml
+```
+
+### Project Settings
+
+```sh
 # Create inside the project
 cat << EOF > ./infracost-usage.yml
 version: 0.1
 resource_usage: {}
 EOF
+
+#
+terraform workspace list
+
+#
+terraform workspace show
 ```
 
 ### Usage
 
 ```sh
 #
-terraform workspace list
-
-#
-terraform workspace show
-
-#
-infracost configure set currency USD
-infracost configure set currency BRL
-
-#
-cat ~/.config/infracost/configuration.yml
-
-#
 infracost breakdown \
   -p ./ \
   --show-skipped \
   --sync-usage-file \
-  --terraform-plan-flags "-var-file=./vars/terraform-$(terraform workspace show).tfvars" \
+  --terraform-var-file "./vars/terraform-$(terraform workspace show).tfvars" \
+  --terraform-workspace "$(terraform workspace show)" \
+  --usage-file ./infracost-usage.yml
+```
+
+#### Difference
+
+```sh
+#
+infracost breakdown \
+  --format json \
+  --out-file ./infracost-base.json \
+  -p ./ \
+  --sync-usage-file \
+  --terraform-var-file "./vars/terraform-$(terraform workspace show).tfvars" \
+  --terraform-workspace "$(terraform workspace show)" \
   --usage-file ./infracost-usage.yml
 
 #
 infracost diff \
+  --compare-to ./infracost-base.json \
+  --format json \
   -p ./ \
-  --show-skipped \
   --sync-usage-file \
-  --terraform-plan-flags "-var-file=./vars/terraform-$(terraform workspace show).tfvars" \
+  --terraform-var-file "./vars/terraform-$(terraform workspace show).tfvars" \
+  --terraform-workspace "$(terraform workspace show)" \
   --usage-file ./infracost-usage.yml
 ```
 

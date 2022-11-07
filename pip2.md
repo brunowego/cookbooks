@@ -48,11 +48,11 @@ pip2 install ./
 #### Permission denied
 
 ```sh
-copying build/lib/[filename].py -> /usr/lib/python2.7/site-packages
-error: /usr/lib/python2.7/site-packages/[filename].py: Permission denied
+copying build/lib/<filename>.py -> /usr/lib/python2.7/site-packages
+error: /usr/lib/python2.7/site-packages/<filename>.py: Permission denied
 ```
 
 ```sh
 #
-pip2 install --user [package]
+pip2 install --user <package>
 ```

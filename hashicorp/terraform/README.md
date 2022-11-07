@@ -86,11 +86,6 @@ output
 
 - [Releases](https://releases.hashicorp.com/terraform/)
 
-## Tools
-
-- [Citizen](https://github.com/outsideris/citizen)
-- [Terrafile](/terrafile.md)
-
 ## Architecture
 
 ### Phrases
@@ -319,25 +314,6 @@ export TF_VAR_region=us-west-1
 export TF_VAR_ami=ami-049d8641
 export TF_VAR_alist='[1,2,3]'
 export TF_VAR_amap='{ foo = "bar", baz = "qux" }'
-
-```
-
-#### Generate Graphing
-
-**Dependencies:** [Graphviz](/graphviz.md)
-
-```sh
-#
-terraform graph
-
-#
-terraform graph | \
-  dot -Tpng \
-    > graph.png
-
-terraform graph | \
-  dot -Tsvg \
-    > graph.svg
 ```
 
 #### Visual Studio Code

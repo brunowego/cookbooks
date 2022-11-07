@@ -33,6 +33,9 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 ### Remove
 
 ```sh
+#
 docker rm -f wekan-mongo wekan
+
+#
 docker volume rm wekan-mongo-data
 ```

@@ -1,9 +1,6 @@
 # tfsec
 
-## Alternatives
-
-- [Checkov](/checkov.md)
-- [Terrascan](/terrascan.md)
+**Keywords:** Terraform Security Scanner
 
 ## Links
 
@@ -22,13 +19,13 @@ brew install tfsec
 #### Chocolatey
 
 ```sh
-choco install tfsec
+choco install -y tfsec
 ```
 
 ### Commands
 
 ```sh
-tfsec h
+tfsec -h
 ```
 
 ### Usage

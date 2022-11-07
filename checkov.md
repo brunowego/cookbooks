@@ -1,9 +1,6 @@
 # Checkov
 
-## Alternatives
-
-- [tfsec](/tfsec.md)
-- [Terrascan](/terrascan.md)
+**Keywords:** SCA, Terraform Security Scanner
 
 ## Links
 
@@ -33,7 +30,7 @@ checkov -h
 checkov --list
 
 #
-checkov --file [example.tf]
+checkov --file <./example.tf>
 ```
 
 ### Tips

@@ -1,8 +1,13 @@
-# Prowler - AWS Security Tool
+# Prowler
+
+**Keywords:** AWS Security Tool
 
 ## Links
 
-- [Code Repository](https://github.com/toniblyx/prowler)
+- [Code Repository](https://github.com/prowler-cloud/prowler)
+
+## Related
+
 - [CIS Amazon Web Services Foundations](https://d0.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf)
 
 ## CLI
@@ -18,9 +23,9 @@
 #### Unix-like
 
 ```sh
-sudo curl -L 'https://github.com/toniblyx/prowler/archive/refs/tags/2.4.1.tar.gz' | \
+sudo curl -L 'https://github.com/prowler-cloud/prowler/archive/refs/tags/2.12.0.tar.gz' | \
   sudo tar -xzC /opt --no-same-owner --no-same-permissions && \
-    sudo ln -s /opt/prowler-2.4.1 /opt/prowler
+    sudo ln -s /opt/prowler-2.12.0 /opt/prowler
 ```
 
 ### Environment

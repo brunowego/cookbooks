@@ -15,6 +15,8 @@ https://app.pluralsight.com/library/courses/droidcon-sf-session-66/table-of-cont
 https://app.pluralsight.com/library/courses/droidcon-sf-session-28/table-of-contents
 
 https://linkedin.com/learning/flutter-part-01-introduction/what-is-flutter
+
+https://github.com/fikretsengul/flutter_advanced_boilerplate
 -->
 
 ## Examples
