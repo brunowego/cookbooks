@@ -121,10 +121,10 @@ az aks get-upgrades \
   --resource-group "$AZURE_RESOURCE_GROUP"
 
 az aks nodepool upgrade \
-  --resource-group myResourceGroup \
-  --cluster-name myAKSCluster \
+  --cluster-name "$AZURE_AKS_CLUSTER_NAME" \
   --name mynodepool \
-  --kubernetes-version KUBERNETES_VERSION \
+  --resource-group "$AZURE_RESOURCE_GROUP"
+  -k 'kubernetes-version' \
   --no-wait
 ```
 

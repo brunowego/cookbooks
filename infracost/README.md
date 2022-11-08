@@ -107,7 +107,6 @@ infracost breakdown \
 #
 infracost diff \
   --compare-to ./infracost-base.json \
-  --format json \
   -p ./ \
   --sync-usage-file \
   --terraform-var-file "./vars/terraform-$(terraform workspace show).tfvars" \

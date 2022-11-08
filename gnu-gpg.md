@@ -1,14 +1,26 @@
-# GNU Privacy Guard
+# GNU Privacy Guard (GPG) or GNU Pretty Good Privacy (PGP)
 
 ## CLI
 
 ### Installation
+
+#### Homebrew
+
+```sh
+brew install gpg
+```
 
 #### APT
 
 ```sh
 sudo apt update
 sudo apt -y install gnupg
+```
+
+### Commands
+
+```sh
+gpg -h
 ```
 
 ### Issues

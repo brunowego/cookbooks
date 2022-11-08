@@ -43,24 +43,52 @@ az extension add -n azure-devops
 az devops -h
 ```
 
-### Usage
+### Configuration
 
 ```sh
 #
 az devops configure \
   --defaults \
-    organization=https://dev.azure.com/<organization> \
-    project=<ProjectName>
+    organization='https://dev.azure.com/<organization>'
+
+#
+az devops project list
+
+#
+az devops configure \
+  --defaults \
+    project='<project-name>'
+
+#
+az devops configure -l
+```
+
+### Usage
+
+#### Team
+
+```sh
+#
+az devops project list
+
+#
+az devops team list
+
+#
+az devops team show \
+  --team '<team-id>'
+
+#
+az devops team list-member \
+  --team '<team-id>'
 ```
 
 <!--
-az pipelines create --name $name            \
-  --description ''                          \
-  --repository $repository                  \
-  --branch master                           \
-  --repository-type github                  \
-  --yml-path .ci/azure-pipelines-v2.yml     \
-  --service-connection $service_connection
+az devops team create
+
+az devops team delete
+
+az devops team update
 -->
 
 ### Tips

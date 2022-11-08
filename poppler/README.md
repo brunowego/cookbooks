@@ -1,5 +1,7 @@
 # Poppler
 
+**Keywords:** Merge PDF
+
 ## Links
 
 - [Main Website](https://poppler.freedesktop.org/)
@@ -24,5 +26,5 @@ pdfunite -h
 
 ```sh
 #
-pdfunite in.pdf in.pdf in.pdf out.pdf
+pdfunite ./in.pdf ./in.pdf ./in.pdf ./out.pdf
 ```

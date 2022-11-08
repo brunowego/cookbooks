@@ -18,11 +18,17 @@
 ssh \
   -o StrictHostKeyChecking=no \
   -l \
-  -i [privatekey].pem \
-  [username]@[IP]
+  -i <privatekey>.pem \
+  <username>@<IP>
 ```
 
 ### Tips
+
+#### Visual Studio Code
+
+```sh
+code --install-extension mousavian.ssh-config-syntax-highlighter
+```
 
 #### Costumers Key
 
@@ -47,14 +53,14 @@ chmod 0400 "$COSTUMER_ID_RSA_FILE"  # 0644
 #
 ssh \
   -i "$COSTUMER_ID_RSA_FILE" \
-  [username]@[ip]
+  <username>@<ip>
 ```
 
 #### Remove Host Key
 
 ```sh
 #
-ssh-keygen -R [hostname]
+ssh-keygen -R <hostname>
 
 #
 sed -i '6d' ~/.ssh/known_hosts
@@ -74,7 +80,7 @@ sudo sed -i 's/#\(Banner\)/\1/g' /etc/ssh/sshd_config
 
 # Thought SSH Config
 cat << EOF >> ~/.ssh/config
-Host [host]
+Host <host>
   LogLevel QUIET
 EOF
 ```
@@ -83,10 +89,10 @@ EOF
 
 ```sh
 cat << EOF >> ~/.ssh/config
-Host [hostname]
-  User [username]
+Host <hostname>
+  User <username>
   LogLevel QUIET
-  ProxyJump [hostname]
+  ProxyJump <hostname>
   RemoteCommand cd ~/path/to/project; bash -l
   # RemoteCommand cd ~/path/to/project; zsh -l
   RequestTTY force
@@ -109,7 +115,7 @@ Host *
 EOF
 
 # Remove
-ssh [username]@[IP]
+ssh <username>@<IP>
 
 sudo sed -ri 's/AcceptEnv (.*)/AcceptEnv \1 *_proxy *_OPTS/g' /etc/ssh/sshd_config
 
@@ -136,19 +142,19 @@ https://stackabuse.com/how-to-tunnel-http-with-ssh/
 
 ```sh
 ssh \
-  -D [port] \
-  [username]@[hostname]
+  -D <port> \
+  <username>@<hostname>
 ```
 
 #### ProxyJump
 
 ```sh
-ssh -J [remote] [another-remote]
+ssh -J <remote> <another-remote>
 ```
 
 ```sh
 Host *
-  ProxyJump [remote]
+  ProxyJump <remote>
 ```
 
 #### Enable Darwin
@@ -160,7 +166,7 @@ sudo lsof -i:22
 
 1. System Preferences
 2. Sharing
-3. \[On] Remote Login
+3. \<On> Remote Login
 
 #### Root Only With Key
 
@@ -176,7 +182,7 @@ sudo service sshd restart
 #### Direct Access
 
 ```sh
-cat ~/.ssh/id_rsa.pub | ssh [username]@[IP] 'cat >> ~/.ssh/authorized_keys'
+cat ~/.ssh/id_rsa.pub | ssh <username>@<IP> 'cat >> ~/.ssh/authorized_keys'
 ```
 
 <!-- ###
@@ -192,13 +198,13 @@ sudo systemctl restart sshd
 #### Remote Connection Close
 
 ```log
-Connection to [hostname] closed by remote host.
+Connection to <hostname> closed by remote host.
 ```
 
 ##### Locally for a Specific Host
 
 ```ini
-Host [hostname]
+Host <hostname>
   # ...
   TCPKeepAlive yes
   ServerAliveInterval 30
@@ -211,7 +217,7 @@ Host [hostname]
 ssh \
   -o ServerAliveInterval=30 \
   -o ServerAliveCountMax=1 \
-  [host]
+  <host>
 ```
 
 ##### On the Server
@@ -225,7 +231,7 @@ sudo sed -i 's/#\(ClientAliveCountMax\)/\1/g' /etc/ssh/sshd_config
 #### Bad owner or permissions
 
 ```log
-Bad owner or permissions on /home/[username]/.ssh/config
+Bad owner or permissions on /home/<username>/.ssh/config
 ```
 
 ```sh

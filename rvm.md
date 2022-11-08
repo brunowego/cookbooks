@@ -1,4 +1,9 @@
-# RVM
+# Ruby Version Manager (RVM)
+
+## Links
+
+- [Code Repository](https://github.com/rvm/rvm)
+- [Main Website](https://rvm.io/)
 
 ## CLI
 
@@ -24,5 +29,5 @@ curl -L get.rvm.io | /bin/bash -s stable --rails
 #### Init
 
 ```sh
-source $HOME /.rvm/scripts/rvm
+source "$HOME" /.rvm/scripts/rvm
 ```

@@ -71,16 +71,16 @@ source ~/.zshrc
 #### LDAP Authentication
 
 ```log
-chsh: user '[username]' does not exist in /etc/passwd
+chsh: user '<username>' does not exist in /etc/passwd
 ```
 
 ```sh
 # Thought CLI
-ssh [host] -t 'zsh --login'
+ssh <host> -t 'zsh --login'
 
 # Thought SSH Config
 cat << EOF >> ~/.ssh/config
-Host [host]
+Host <host>
   RemoteCommand zsh -l
   RequestTTY force
 EOF

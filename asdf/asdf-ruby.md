@@ -2,11 +2,8 @@
 
 ## Dependencies
 
-### Homebrew
-
-```sh
-brew install coreutils gpg
-```
+- [GNU Core Utilities](/gnu-coreutils.md)
+- [GNU Pretty Good Privacy (PGP)](/gnu-gpg.md)
 
 ## Installation
 

@@ -254,7 +254,7 @@ terraform state list
 
 #
 terraform apply \
-  -target '[state]' \
+  -target '<state>' \
   -var-file "./vars/terraform-$(terraform workspace show).tfvars"
 ```
 
@@ -265,7 +265,7 @@ terraform apply \
 terraform state list
 
 #
-terraform state rm '[state]'
+terraform state rm '<state>'
 ```
 
 #### Destroy Specific State
@@ -276,26 +276,8 @@ terraform state list
 
 #
 terraform destroy \
-  -target '[state]' \
+  -target '<state>' \
   -var-file "./vars/terraform-$(terraform workspace show).tfvars"
-```
-
-#### Import
-
-**Docs:** [Import Command](https://www.terraform.io/docs/cli/commands/import.html#example-import-into-resource).
-
-```sh
-#
-terraform state list
-
-#
-terraform state show '[resource-addr]'
-
-#
-terraform import \
-  -var-file "./vars/terraform-$(terraform workspace show).tfvars" \
-  '[resource-addr]' \
-  '[resource-id]'
 ```
 
 **Tip:** Normally "Resource ID" is used in the URL of remote resource.
@@ -304,14 +286,14 @@ terraform import \
 
 ```sh
 TF_LOG=trace \
-  terraform [command]
+  terraform <command>
 ```
 
 #### Environment Variables
 
 ```sh
-export TF_VAR_region=us-west-1
-export TF_VAR_ami=ami-049d8641
+export TF_VAR_region='us-west-1'
+export TF_VAR_ami='ami-049d8641'
 export TF_VAR_alist='[1,2,3]'
 export TF_VAR_amap='{ foo = "bar", baz = "qux" }'
 ```
@@ -325,10 +307,13 @@ export TF_VAR_amap='{ foo = "bar", baz = "qux" }'
 code --install-extension hashicorp.terraform
 
 #
+jq '."recommendations" += ["hashicorp.terraform"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+
+#
 jq '."[tf]"."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 
 #
-jq '."files.associations"."*.json.tpl" |= "json"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+jq '."files.associations"."*.json.tpl" |= "json"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
 <!--

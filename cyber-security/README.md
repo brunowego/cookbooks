@@ -142,7 +142,7 @@ Application Security Specialist
 Application Security Engineer
 DevSecOps Advocate
 
-Segurança da Informação (SI)
+Segurança da Informação (SI) / Information Security (IS)
 -->
 
 ## Terms

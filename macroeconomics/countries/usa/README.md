@@ -2,11 +2,23 @@
 
 ## Links
 
-- [ADP® Employment Reports](https://adpemploymentreport.com/)
-- [Federal Open Market Committee (FOMC)](https://federalreserve.gov/monetarypolicy/fomc.htm)
-- [Federal Reserve System (Fed)](https://federalreserve.gov/)
-- [U.S. Gross Domestic Product (GDP) QoQ](https://investing.com/economic-calendar/gdp-375)
-- [AAA / Gas Prices](https://gasprices.aaa.com/)
+- Employment
+  - [ADP® Employment Reports](https://adpemploymentreport.com/)
+- Finance
+  - [Federal Open Market Committee (FOMC)](https://federalreserve.gov/monetarypolicy/fomc.htm)
+  - [Federal Reserve System (Fed)](https://federalreserve.gov/)
+  - [U.S. Gross Domestic Product (GDP) QoQ](https://investing.com/economic-calendar/gdp-375)
+- Energy
+  - [AAA / Gas Prices](https://gasprices.aaa.com/)
+
+## Congress Party Division
+
+- Democrats
+- Republicans
+
+<!--
+US Midterm Elections
+-->
 
 ## Terms
 
@@ -39,10 +51,6 @@ Commodity Futures Trading Commission (CFTC)
 ## Newspaper
 
 TODO
-
-## Researches
-
-- [How (un)popular is Joe Biden?](https://projects.fivethirtyeight.com/biden-approval-rating/)
 
 ## Events Sentiment Mapping
 

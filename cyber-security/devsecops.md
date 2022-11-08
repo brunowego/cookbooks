@@ -32,6 +32,7 @@ DevSecOps more culture than a team. Incorporate security within Agile and DevOps
 - [DevSecOps Manifesto](https://devsecops.org/)
 - [Awesome DevSecOps Awesome](https://github.com/devsecops/awesome-devsecops)
 - [Ultimate DevSecOps library](https://github.com/sottlmarek/DevSecOps)
+- [DevSecOps Playbook](https://github.com/6mile/DevSecOps-Playbook)
 
 ## Related
 
