@@ -1,5 +1,7 @@
 # tfenv
 
+**Keywords:** Terraform Version Manager
+
 ## Alternatives
 
 - [asdf Terraform](/asdf/asdf-terraform.md)
@@ -28,8 +30,17 @@ tfenv
 
 ```sh
 #
-tfenv install latest
+tfenv list-remote
 
 #
-tfenv use latest
+tfenv install <version>
+
+#
+tfenv list
+
+#
+tfenv use <version>
+
+#
+tfenv uninstall <version>
 ```

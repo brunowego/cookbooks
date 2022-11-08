@@ -97,11 +97,7 @@ az devops team update
 
 ```sh
 #
-export ADO_ORGANIZATION='https://dev.azure.com/<organization>'
-
-#
 az devops project list \
-  --org "$ADO_ORGANIZATION" \
   -o tsv \
   --query 'value[].name'
 ```
@@ -110,7 +106,6 @@ az devops project list \
 
 ```sh
 #
-export ADO_ORGANIZATION='https://dev.azure.com/<organization>'
 export ADO_PROJECT='<project>'
 
 #
@@ -119,7 +114,6 @@ mkdir "$ADO_PROJECT"; cd "$_"
 #
 az repos list \
   -o json \
-  --org "$ADO_ORGANIZATION" \
   --project "$ADO_PROJECT" | \
     jq -r '.[].remoteUrl' | \
       while read repo; do

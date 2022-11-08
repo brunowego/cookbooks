@@ -1,5 +1,9 @@
 # Azure MySQL
 
+## Console
+
+- [Dashboard](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.DBforMySQL%2Fservers)
+
 ## CLI
 
 ### Commands

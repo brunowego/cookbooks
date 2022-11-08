@@ -1,4 +1,4 @@
-# Azure Pipelines
+# Azure DevOps Pipelines
 
 <!--
 azure-pipelines.yml

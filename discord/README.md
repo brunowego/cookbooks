@@ -38,6 +38,12 @@ choco install -y discord
 
 ## Tips
 
+### Disable Embeds and Link Previews
+
+1. Discord -> Preferences
+2. Side-menu -> App Settings -> Text & Images
+3. Uncheck option in Embeds and Link Previews
+
 ### Discord Shield
 
 ```html

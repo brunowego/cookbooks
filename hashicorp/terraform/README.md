@@ -327,6 +327,40 @@ https://www.youtube.com/watch?v=uFaMUS6Z9fI
 <!-- ####
 
 ```log
+Error: Error loading state:
+    AuthorizationHeaderMalformed: The authorization header is malformed; the region 'us-east-1' is wrong; expecting 'eu-west-2'
+	status code: 400, request id: <hash>, host id: <hash>
+```
+
+TODO -->
+
+<!-- ####
+
+```log
+Error: error configuring S3 Backend: no valid credential sources for S3 Backend found.
+```
+
+TODO -->
+
+#### Incompatibility Version
+
+```log
+Warning: Provider source not supported in Terraform v0.12
+
+  on providers.tf line 5, in terraform:
+   5:     aws = {
+   6:       source  = "hashicorp/aws"
+   7:     }
+
+A source was declared for provider aws. Terraform v0.12 does not support the
+provider source attribute. It will be ignored.
+```
+
+Install Terraform version `>= 1.0.11`.
+
+<!-- ####
+
+```log
 Error: rpc error: code = InvalidArgument desc = existing repository spec is different; use upsert flag to force update
 ```
 

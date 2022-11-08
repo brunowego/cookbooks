@@ -1,5 +1,7 @@
 # asdf Terraform
 
+**Keywords:** Terraform Version Manager
+
 ## Alternatives
 
 - [tfenv](/tfenv.md)

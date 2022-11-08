@@ -16,6 +16,7 @@ https://github.community/t/picture-tag-in-markdown/149471
 - [Government](https://government.github.com/community/)
 - [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
 - [Bug Report](https://support.github.com/contact/bug-report)
+- [Pricing Calculator](https://github.com/pricing/calculator)
 
 ## References
 
