@@ -1,4 +1,4 @@
-# Pipe Viewer
+# Pipe Viewer (pv)
 
 ## Installation
 
@@ -21,15 +21,15 @@ sudo yum -y install pv
 pv -h
 ```
 
-## Examples
-
-### MySQL
+## Usage
 
 ```sh
-pv [filename.sql] | mysql \
-  -h 127.0.0.1 \
-  -P 3306 \
-  -u [username] \
-  -p[password] \
-  [database]
+# MySQL
+pv /path/to/dump.sql | \
+  mysql \
+    -h 127.0.0.1 \
+    -P 3306 \
+    -u <username> \
+    -p'<password>' \
+    <database>
 ```

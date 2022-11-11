@@ -4,11 +4,11 @@
 https://linkedin.com/learning/learning-sql-programming-8382385/learning-sql-programming
 -->
 
-## Terms
+## Glossary
 
 - Relational Database Access (RDA)
 
-##
+## Languages
 
 - SQL: Standard SQL
 - N1QL: Couchbase N1QL

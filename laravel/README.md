@@ -54,16 +54,21 @@ composer create-project laravel/laravel %s --prefer-dist
 <!--
 #
 ./artisan translate:files
-
-#
-./artisan cache:clear
-
-#
-./artisan route:clear
-
-#
-./artisan view:clear
 -->
+
+#### Cache
+
+```sh
+#
+./artisan optimize:clear
+
+#
+./artisan config:clear
+./artisan cache:clear
+./artisan route:clear
+./artisan view:clear
+./artisan clear-compiled
+```
 
 #### Migrate
 
@@ -79,15 +84,22 @@ composer create-project laravel/laravel %s --prefer-dist
 ./artisan migrate:status
 
 #
-./artisan migrate:install
+./artisan migrate
 
 #
 ./artisan db:seed
 ```
 
 <!--
-./artisan migrate:fresh --seed
+./artisan migrate:fresh
 -->
+
+#### Test
+
+```sh
+#
+./artisan test
+```
 
 ### Tips
 
@@ -120,6 +132,18 @@ rm ~/.zcompdump*
 >>> $user->name = 'John Doe';
 >>> $user->username = 'johndoe';
 >>> $user->save();
+>>>
+>>> exit
+```
+
+#### Generate Hashed Password
+
+```sh
+./artisan tinker
+```
+
+```php
+>>> echo Hash::make('Pa$$w0rd!');
 >>>
 >>> exit
 ```

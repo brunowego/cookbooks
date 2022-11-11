@@ -6,13 +6,25 @@ Not Your Your Keys, Not Your Coins.
 
 - [Wiki](https://en.wikipedia.org/wiki/Digital_wallet)
 
+## Related
+
+- [Bitcoin Improvement Proposals](https://github.com/bitcoin/bips)
+- [BIP 39 Wordlist](https://blockplate.com/pages/bip-39-wordlist)
+
 ## Glossary
 
+- Bitcoin Improvement Proposals (BIP)
 - Decentralized Application (dApps)
 
 ## Terms
 
-- Seed Phrase (a.k.a. Private Key)
+- Mnemonic Seed Phrase (a.k.a. Private Key)
+- Mnemonic Sentence
+
+## BIPs
+
+- [BIP39](https://github.com/bitcoin/bips/tree/master/bip-0039)
+- [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032)
 
 ## Types
 

@@ -6,7 +6,13 @@
 - [Token Based Authentication](https://roadmap.sh/guides/token-authentication)
 - [Session Based Authentication](https://roadmap.sh/guides/session-authentication)
 
-## Terms
+## Glossary
 
 - Customer Identity & Access Management (CIAM)
 - Enterprise Identity & Access Management (EIAM)
+- Fast Healthcare Interoperability Resources (FHIR)
+- Substitutable Medical Applications, Reusable Technologies (SMART)
+
+## Terms
+
+- SMART-on-FHIR

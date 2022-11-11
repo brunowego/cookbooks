@@ -1,4 +1,4 @@
-# AWS Systems Manager (SSM)
+# AWS Simple Systems Manager (SSM)
 
 <!--
 https://github.com/xen0l/aws-gate
@@ -45,6 +45,28 @@ aws ssm get-parameters \
 aws ssm get-parameters-by-path --path '</app/path>'
 ```
 
+#### Start Session
+
+```sh
+#
+aws ssm start-session \
+  --target '<instance-id>' \
+  --document-name 'AWS-StartPortForwardingSessionToRemoteHost' \
+  --parameters host='<rds-host>',portNumber='<rds-port>',localPortNumber='<local-port>' \
+  --region 'us-east-1'
+  # --debug
+```
+
+### Issues
+
+#### Target Not Connected
+
+```log
+An error occurred (TargetNotConnected) when calling the StartSession operation: <instance-id> is not connected.
+```
+
 <!--
-aws ssm start-session --target "i-xxxxxxxxxxxxxxxxx"
+aws iam list-instance-profiles --region 'us-east-1'
 -->
+
+TODO

@@ -19,7 +19,8 @@ ssh \
   -o StrictHostKeyChecking=no \
   -l \
   -i <privatekey>.pem \
-  <username>@<IP>
+  <username>@<IP> \
+  -v
 ```
 
 ### Tips

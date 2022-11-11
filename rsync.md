@@ -1,4 +1,4 @@
-# rsync
+# Remote Sync (rsync)
 
 ## CLI
 
@@ -24,19 +24,18 @@ sudo apt -y install rsync
 rsync -h
 ```
 
-### Examples
-
-#### Progress
+### Usage
 
 ```sh
-rsync -vahP [source] [username]@[hostname]:/[destination]
+#
+rsync -vahP <filename> <username>@<hostname>:</absolute/path/to/filename>
+rsync -vahP <username>@<hostname>:</absolute/path/to/filename> <filename>
 ```
 
-#### Delete
-
-```sh
+<!--
+# Delete
 sudo rsync \
   -vahP \
   --delete \
-  [source] [destination]
-```
+  <filename> <destination>
+-->

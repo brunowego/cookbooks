@@ -2,12 +2,12 @@
 
 ## Tools
 
-- [Open Interest](https://www.binance.com/en/futures/funding-history/4)
+- [Open Interest](https://binance.com/en/futures/funding-history/4)
 
 ## Trade
 
-- [BTC/BUSD](https://www.binance.com/en/futures/BTCBUSD)
-- [BTC/USDT](https://www.binance.com/en/futures/BTCUSDT)
+- [BTC/BUSD](https://binance.com/en/futures/BTCBUSD)
+- [BTC/USDT](https://binance.com/en/futures/BTCUSDT)
 
 ## Tips
 

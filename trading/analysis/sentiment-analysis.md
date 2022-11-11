@@ -8,10 +8,20 @@ https://lunarcrush.com/coins/btc/bitcoin?metric=close%2Cmarket_cap
 
 ## Indicators
 
+- Spot
+  - Dominance
+  - Market Cap
+  - Fear & Greed Index
 - Derivatives
+  - Leverage Ratio
   - Open Interest
   - Long/Short Ratio
   - Funding Rate
+  - Liquidations
+
+## Dashboards
+
+- [Krown Trading](https://app.krowntrading.net/desk/cryptos/dashboard) 🌟
 
 ## Fear & Greed Index (FGI)
 
@@ -36,15 +46,3 @@ https://lunarcrush.com/coins/btc/bitcoin?metric=close%2Cmarket_cap
 <!--
 https://datapool.app/
 -->
-
-## Speculative Framework
-
-**Timeframe:** 1d, 4h, 1h\*, 15m
-
-| O.I. | L.S.R | Price |
-| ---- | ----- | ----- |
-| ↘    | ↘     | ↘     |
-| ↗    | ↗     | ↗     |
-| ↗    | ↘     | ↗     |
-| ↘    | ↗     | ↘     |
-| ↘    | ↗     | ↘     |

@@ -88,30 +88,6 @@ mysql \
   -p"$DB_PASSWORD"
 ```
 
-```sql
-SHOW DATABASES;
-```
-
-```sh
-# Backup
-mysqldump \
-  -h 127.0.0.1 \
-  -P 3306 \
-  -u [username] \
-  -p'[password]' \
-  [database] \
-  > /path/to/dump.sql
-
-# Restore
-mysql \
-  -h 127.0.0.1 \
-  -P 3306 \
-  -u [username] \
-  -p'[password]' \
-  [database] \
-  < /path/to/dump.sql
-```
-
 ## Library Python
 
 ### Dependencies

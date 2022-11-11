@@ -26,4 +26,4 @@ wget -P "$SONARQUBE_HOME/extensions/plugins" 'https://github.com/sonar-next/sona
 
 ### Configuration
 
-Follow [this instructions](/sonarsource/sonarqube-scanner.md#configuration).
+Follow [this instructions](/sonarsource/sonarqube/sonarqube-scanner.md#configuration).

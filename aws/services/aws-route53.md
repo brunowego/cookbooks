@@ -18,7 +18,9 @@ aws route53 help
 
 ```sh
 #
-aws route53
+aws route53 list-hosted-zones \
+  --output text \
+  --query 'HostedZones[].[Name]'
 ```
 
 <!--

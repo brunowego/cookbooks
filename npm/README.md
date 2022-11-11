@@ -34,7 +34,7 @@ npm help 7 config
 
 ```sh
 #
-npx [command]
+npx <command>
 ```
 
 ### Bootstrap
@@ -83,6 +83,9 @@ npm list -g
 
 #
 npm get prefix
+
+# Clean Install
+npm ci
 ```
 
 ### Tips
@@ -259,11 +262,11 @@ sudo chown -R "$USER" /usr/local/lib/node_modules
 ##### For `/usr/bin`
 
 ```log
-Error: EACCES: permission denied, symlink '../lib/node_modules/[package]/bin/[package]' -> '/usr/bin/[package]'
+Error: EACCES: permission denied, symlink '../lib/node_modules/<package>/bin/<package>' -> '/usr/bin/<package>'
 ```
 
 ```sh
-sudo npm install [package] -g
+sudo npm install <package> -g
 ```
 
 ### Uninstall
@@ -305,7 +308,7 @@ FROM docker.io/library/node:13.5.0-alpine AS build
 WORKDIR /usr/src/app
 
 RUN apk add -q --no-cache -t .build-deps \
-      [package]==[version]
+      <package>==<version>
 
 COPY ./package*.json ./
 

@@ -45,6 +45,20 @@ quit;
 SHOW PROCESSLIST
 ``` -->
 
+## Database
+
+```sql
+--
+SHOW DATABASES;
+```
+
+## Tables
+
+```sql
+--
+SHOW TABLES;
+```
+
 ## User
 
 ```sql
