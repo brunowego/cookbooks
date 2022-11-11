@@ -133,7 +133,7 @@ Add to `./app/src/main/AndroidManifest.xml`:
 <manifest>
     <application>
         <activity
-            [...]
+            <...>
             android:networkSecurityConfig="@xml/network_security_config"></activity>
     </application>
 </manifest>
@@ -144,7 +144,7 @@ Add to `./app/src/main/res/xml/network_security_config.xml`:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
-    [...]
+    <...>
     <domain-config cleartextTrafficPermitted="true">
         <domain includeSubdomains="true">app.example.com</domain>
         <trust-anchors>

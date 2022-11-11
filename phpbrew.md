@@ -1,5 +1,10 @@
 # PHPBrew
 
+## Links
+
+- [Code Repository](https://github.com/phpbrew/phpbrew)
+- [Main Website](https://phpbrew.github.io/phpbrew/)
+
 ## Alternatives
 
 - [phpenv](/phpenv.md)
@@ -152,7 +157,7 @@ phpbrew known \
 phpbrew variants
 
 # Define the version
-export PHP_VERSION='[version]'
+export PHP_VERSION='<version>'
 
 # Install
 phpbrew -d install \
@@ -187,11 +192,11 @@ phpbrew -d ext \
   --show-path
 
 ## Commands
-phpbrew -d ext install [extension]
-phpbrew -d ext show [extension]
-phpbrew -d ext enable [extension]
-phpbrew -d ext disable [extension]
-phpbrew -d ext clean --purge [extension]
+phpbrew -d ext install <extension>
+phpbrew -d ext show <extension>
+phpbrew -d ext enable <extension>
+phpbrew -d ext disable <extension>
+phpbrew -d ext clean --purge <extension>
 
 # Like
 phpbrew install "$PHP_VERSION" as "$PHP_VERSION"-dev like "$PHP_VERSION"-dev
@@ -213,10 +218,24 @@ phpbrew -d ext install \
   --downloader=wget \
   --http-proxy="$http_proxy" \
   --http-proxy-auth="$http_proxy_auth" \
-  [extension]
+  <extension>
 ```
 
 ### Issues
+
+#### Incompatibility PHP Version
+
+```log
+PHP Deprecated:  Return type of CLIFramework\CommandBase::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in phar:///usr/local/Cellar/phpbrew/1.27.0/bin/phpbrew/vendor/corneltek/cliframework/src/CommandBase.php on line 898
+```
+
+```sh
+#
+brew install phpbrew php@7.4
+
+#
+brew link --overwrite php@7.4
+```
 
 #### Missing Initialize
 
@@ -333,12 +352,11 @@ Install [bzip2](/bzip2.md).
 
 ```sh
 phpbrew -d install \
-  [...] \
+  <...> \
   # Homebrew
   +bz2="$(brew --prefix bzip2)"
-  +bz2="$(brew --prefix bzip2)"
   # Linux
-  +bz2="$(brew --prefix bzip2)"
+  # TODO
 ```
 
 #### Missing zlib
@@ -354,7 +372,7 @@ brew install zlib
 
 #
 phpbrew -d install \
-  [...] \
+  <...> \
   # Homebrew
   +zlib="$(brew --prefix zlib)"
 ```
@@ -392,13 +410,13 @@ Error: Make failed: make: *** [ext/openssl/openssl.lo] Error 1
 ```sh
 # <= 5.5.x
 phpbrew -d install \
-  [...] \
+  <...> \
   # Homebrew
   +openssl='/usr/local/opt/openssl'
 
 # >= 5.6.x
 phpbrew -d install \
-  [...] \
+  <...> \
   # Homebrew
   +openssl="$(brew --prefix openssl@1.1)"
   # Linux
@@ -458,7 +476,7 @@ Error: Configure failed:     easy.h should be in <curl-dir>/include/curl/
 
 ```sh
 phpbrew -d install \
-  [...] \
+  <...> \
   # Homebrew
   +curl="$(brew --prefix curl)"
 ```

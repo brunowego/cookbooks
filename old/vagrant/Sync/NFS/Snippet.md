@@ -2,7 +2,7 @@
 
 ```ruby
 Vagrant.configure('2') do |config|
-  # [...]
+  # <...>
 
   config.vm.network :private_network, type: 'dhcp'
 

@@ -1,5 +1,7 @@
 # PHP Graphics Library (GD, originally stood for "GIF Draw")
 
+**Keyword:** `ext-gd`
+
 <!-- ## References
 
 - [PECL Package](https://pecl.php.net/package/gd) -->
@@ -7,11 +9,14 @@
 ## Dependencies
 
 - [GD](/gd.md)
-<!-- - [zlib](/zlib.md) -->
-<!-- - [libjpeg](/libjpeg.md) -->
-<!-- - [libpng](/libpng.md) -->
-<!-- - [freetype](/freetype.md) -->
-<!-- - [WebP](/webp.md) -->
+
+<!--
+- [zlib](/zlib.md)
+- [libjpeg](/libjpeg.md)
+- [libpng](/libpng.md)
+- [freetype](/freetype.md)
+- [WebP](/webp.md)
+-->
 
 ## Installation
 

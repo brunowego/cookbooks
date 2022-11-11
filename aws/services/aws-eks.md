@@ -9,6 +9,10 @@ https://www.youtube.com/watch?v=tkYzg8HRK4o
 - [Kubernetes Operations (kOps)](/kops.md)
 - [Rancher](/rancher.md)
 
+## Console
+
+- [Clusters](https://console.aws.amazon.com/eks/home#/clusters)
+
 ## Glossary
 
 - Application Load Balancer (ALB)
@@ -26,7 +30,9 @@ aws eks help
 ```sh
 #
 aws eks list-clusters
+```
 
+<!--
 #
 for CLUSTER in $(aws eks list-clusters | cut -f 2 -d $'\t'); do
   aws eks \
@@ -34,4 +40,20 @@ for CLUSTER in $(aws eks list-clusters | cut -f 2 -d $'\t'); do
     update-kubeconfig \
     --name "$CLUSTER"
 done
-```
+-->
+
+<!-- ### Tips
+
+#### All Regions Running EKS
+
+```sh
+for AWS_REGION in $(aws ec2 describe-regions --output text | cut -f 4)
+do
+  echo -e "\nListing Clusters in region: '$AWS_REGION'..."
+  aws eks list-clusters \
+    --output text \
+    --query 'not_null(clusters[])' \
+    --region "$AWS_REGION" \
+    --no-cli-pager
+done
+``` -->

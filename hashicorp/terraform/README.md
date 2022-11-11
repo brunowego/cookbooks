@@ -326,6 +326,24 @@ https://www.youtube.com/watch?v=uFaMUS6Z9fI
 
 <!-- ####
 
+https://cloudaffaire.com/faq/terraform-error-refreshing-state-state-data-in-s3-does-not-have-the-expected-content/
+https://discuss.hashicorp.com/t/s3-error-when-running-terraform-init/42582
+https://iam-j.github.io/iac/corrupted-terraform-backend/
+
+```log
+Error refreshing state: state data in S3 does not have the expected content.
+
+This may be caused by unusually long delays in S3 processing a previous state
+update.  Please wait for a minute or two and try again. If this problem
+persists, and neither S3 nor DynamoDB are experiencing an outage, you may need
+to manually verify the remote state and update the Digest value stored in the
+DynamoDB table to the following value:
+```
+
+Delete dynamodb -->
+
+<!-- ####
+
 ```log
 Error: Error loading state:
     AuthorizationHeaderMalformed: The authorization header is malformed; the region 'us-east-1' is wrong; expecting 'eu-west-2'

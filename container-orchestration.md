@@ -10,7 +10,7 @@
 - [Azure Kubernetes Service (AKS)](/azure/services/azure-aks.md)
 - [Docker Compose](/docker/docker-compose.md)
 - [Docker Swarm](/docker/docker-swarm.md)
-- [kOps](/kops/README.md)
+- [kOps](/kops/README.md) 🌟
 - [MiniKube](/minikube.md)
 - [Nomad](/hashicorp/hashicorp-nomad.md)
 - [OpenShift](/openshift.md)

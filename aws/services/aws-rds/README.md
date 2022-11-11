@@ -46,16 +46,19 @@ aws rds describe-db-instances --output table
 
 ### Tips
 
-<!-- ####
+#### All Regions Running RDS
 
 ```sh
 for AWS_REGION in $(aws ec2 describe-regions --output text | cut -f 4)
 do
   echo -e "\nListing Instances in region: '$AWS_REGION'..."
-  aws ec2 describe-instances --region "$AWS_REGION" | \
-    jq '.Reservations[] | ( .Instances[] | {state: .State.Name, name: .KeyName, Tag_Name: .Tags[].Value,type: .InstanceType, key: .KeyName})'
+  aws rds describe-db-instances \
+    --output text \
+    --query 'DBInstances[*].DBInstanceIdentifier' \
+    --region "$AWS_REGION" \
+    --no-cli-pager
 done
-``` -->
+```
 
 #### Increase Cluster Capacity
 

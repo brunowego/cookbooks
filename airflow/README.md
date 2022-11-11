@@ -196,7 +196,7 @@ kubectl logs \
 #### Missing SSM Full Access Policy
 
 ```log
-An error occurred (AccessDeniedException) when calling the GetParameter operation: User: arn:aws:sts::[...]:assumed-role/nodes.[...].k8s.local/i-[...] is not authorized to perform: ssm:GetParameter on resource: arn:aws:ssm:us-east-1:[...]:parameter/airflow/connections/aws_s3
+An error occurred (AccessDeniedException) when calling the GetParameter operation: User: arn:aws:sts::<...>:assumed-role/nodes.<...>.k8s.local/i-<...> is not authorized to perform: ssm:GetParameter on resource: arn:aws:ssm:us-east-1:<...>:parameter/airflow/connections/aws_s3
 ```
 
 1. Go to Identity and Access Management (IAM)

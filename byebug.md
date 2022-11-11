@@ -11,7 +11,7 @@ gem install byebug
 ### Running
 
 ```rb
-# [...]
+# <...>
 
 byebug
 ```

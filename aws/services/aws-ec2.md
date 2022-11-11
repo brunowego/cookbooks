@@ -12,6 +12,7 @@ https://www.youtube.com/watch?v=F8jXE-_hdfg
 
 - Network & Security
   - [Key pairs](https://console.aws.amazon.com/ec2/home#KeyPairs:)
+- [Global View / Region explorer](https://console.aws.amazon.com/ec2globalview/home?skipRegion=true#)
 
 ## Guides
 
@@ -207,13 +208,24 @@ aws ec2 import-key-pair --key-name ${privatekey} --public-key-material fileb://$
 
 ### Tips
 
+<!-- ####
+
+```sh
+for AWS_REGION in $(aws ec2 describe-regions --output text | cut -f 4)
+do
+  echo -e "\nListing Instances in region: '$AWS_REGION'..."
+  aws ec2 describe-instances --region "$AWS_REGION" | \
+    jq '.Reservations[] | ( .Instances[] | {state: .State.Name, name: .KeyName, Tag_Name: .Tags[].Value,type: .InstanceType, key: .KeyName})'
+done
+``` -->
+
 #### Get Console Output
 
 ```sh
 aws \
   --output text \
   ec2 get-console-output \
-    --instance-id [instance-id]
+    --instance-id <instance-id>
 ```
 
 <!--

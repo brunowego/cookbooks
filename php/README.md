@@ -38,6 +38,7 @@ https://daniellockyer.com/php-flame-graphs/
 
 ```sh
 brew install php
+# brew install php@7.4
 ```
 
 #### APT
@@ -232,7 +233,7 @@ EOF
 
 ### Visual Studio Code
 
-***Dependencies:*** [PHP CodeSniffer](/phpcs.md)
+**_Dependencies:_** [PHP CodeSniffer](/phpcs.md)
 
 ```sh
 code --install-extension bmewburn.vscode-intelephense-client

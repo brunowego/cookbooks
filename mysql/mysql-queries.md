@@ -1,5 +1,7 @@
 # MySQL Queries
 
+<!-- mysql -u root -p -ve 'UNINSTALL PLUGIN validate_password' -->
+
 ## Variables
 
 ```sql

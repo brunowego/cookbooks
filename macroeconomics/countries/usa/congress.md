@@ -12,3 +12,5 @@
 - Joe Biden
   - [How (un)popular is Joe Biden?](https://projects.fivethirtyeight.com/biden-approval-rating/)
   - [Biden approval polling tracker](https://graphics.reuters.com/USA-BIDEN/POLL/nmopagnqapa/)
+- [Cook Political Report / Senate Race Ratings](https://cookpolitical.com/ratings/senate-race-ratings)
+- [270toWin](https://270towin.com/)

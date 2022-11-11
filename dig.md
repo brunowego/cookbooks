@@ -24,7 +24,13 @@ dig -h
 dig example.com
 
 #
-dig +short example.com
+dig example.com +short
+
+#
+dig example.com NS
+
+#
+dig example.com CNAME
 
 #
 dig @8.8.8.8 example.com
@@ -33,11 +39,11 @@ dig @8.8.8.8 example.com
 dig -x 8.8.8.8
 
 #
-dig MX example.com
+dig example.com MX
 
 #
-dig -t txt example.com
+dig example.com -t txt
 
 #
-dig A +short example.com
+dig example.com A +short
 ```

@@ -82,7 +82,7 @@ php -m | grep openssl
 cd /path/to/src/php/version
 
 ./configure \
-  # [...]
+  # <...>
   --with-openssl
 ```
 

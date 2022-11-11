@@ -1,5 +1,7 @@
 # PHP iconv
 
+**Keyword:** `ext-iconv`
+
 ## Library
 
 ### Dependencies

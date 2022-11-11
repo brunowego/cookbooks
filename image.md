@@ -4,4 +4,6 @@
 JFIF standard
 -->
 
-TODO
+## Related
+
+- [Optical Character Recognition (OCR)](/ocr.md)

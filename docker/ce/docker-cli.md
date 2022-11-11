@@ -135,7 +135,7 @@ sudo /usr/bin/sh -c 'jq ".features.buildkit |= false" /etc/docker/daemon.json | 
 
 ### Ignore File
 
-***Python Example***
+**_Python Example_**
 
 ```sh
 cat << EOF > ./.dockerignore
@@ -166,17 +166,31 @@ EOSHELL
 ### Alter Running Container
 
 ```sh
+#
 docker container stop [name]
 
+#
 docker commit [name] [name]-alt
 
+#
 docker container rm [name]
 
+#
 docker run -d \
-  [...]
+  <...>
 ```
 
 ## Issues
+
+### Issue with Desktop Credential Store
+
+```log
+Error saving credentials: error storing credentials - err: exit status 1, out: `Post "http://ipc/registry/credstore-updated": dial unix backend.sock: connect: no such file or directory`
+```
+
+```sh
+jq 'del(.credsStore)' ~/.docker/config.json | sponge ~/.docker/config.json
+```
 
 ### Daemon Error Response
 

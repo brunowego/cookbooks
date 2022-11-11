@@ -1,5 +1,13 @@
 # AWS Account
 
+## Links
+
+- [Main Website](https://aws.amazon.com/account/)
+
+## Console
+
+- [Account](https://console.aws.amazon.com/billing/home?skipRegion=true#/account)
+
 ## Glossary
 
 - Identity and Access Management (IAM)
@@ -28,3 +36,10 @@
 ```sh
 aws account help
 ```
+
+### Tips
+
+#### Account Alias
+
+1. Identity and Access Management (IAM) -> [Dashboard](https://console.aws.amazon.com/iamv2/home#/home)
+2. AWS Account Section -> Account Alias Subsection -> Create

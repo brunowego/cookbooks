@@ -2,4 +2,4 @@
 
 ## Glossary
 
-- User Acceptance Testing (UAT) (a.k.a staging)
+- User Acceptance Testing (UAT)

@@ -1,19 +1,22 @@
 # Git Flow
 
-<!--
-https://www.youtube.com/watch?v=wzxBR4pOTTs
--->
+**Keywords:** Git Workflow
 
-**Keywords:** Workflow
+## Links
+
+- [Main Website](https://jeffkreeftmeijer.com/git-flow/)
+
+<!--
+master
+develop
+feature
+release
+-->
 
 ## Alternatives
 
 - [Trunk-Based Development (TBD)](/trunk-based-development.md)
 - [GitHub Flow](/github/github-flow.md)
-
-## Links
-
-- [Main Website](https://jeffkreeftmeijer.com/git-flow/)
 
 ## Guides
 
@@ -27,11 +30,11 @@ https://www.youtube.com/watch?v=wzxBR4pOTTs
 
 ## Workflow Comparison
 
-| Trunk Based | Git Flow |
-| --- | --- |
-| Single long-lived branch | Multiple branches/types |
-| Work is always release ready | Master branch is release ready |
-| Compliments continuous deployment | Compliments releases |
+| Trunk Based                       | Git Flow                       |
+| --------------------------------- | ------------------------------ |
+| Single long-lived branch          | Multiple branches/types        |
+| Work is always release ready      | Master branch is release ready |
+| Compliments continuous deployment | Compliments releases           |
 
 ## CLI
 

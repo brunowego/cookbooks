@@ -27,16 +27,3 @@ cat ~/.ssh/id_rsa.<company-name>.pub
 <!--
 ssh-add -l
 -->
-
-### Tips
-
-#### Azure DevOps
-
-```sh
-#
-cat << EOF >> ~/.ssh/config
-Host ssh.dev.azure.com
-    IdentitiesOnly yes
-    IdentityFile ~/.ssh/id_rsa.<company-name>
-EOF
-```

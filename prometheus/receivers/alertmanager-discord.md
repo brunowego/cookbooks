@@ -123,7 +123,7 @@ docker network create workbench \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h alertmanager-discord \
-  -e WEBHOOK='https://discord.com/api/webhooks/[...]/[...]' \
+  -e WEBHOOK='https://discord.com/api/webhooks/<...>/<...>' \
   -p 9094:9094 \
   --name alertmanager-discord \
   --network workbench \

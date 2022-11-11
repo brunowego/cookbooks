@@ -36,30 +36,58 @@ https://www.especializati.com.br/curso-laravel-multi-tenancy-single-database#com
 composer create-project laravel/laravel %s --prefer-dist
 ```
 
+### Commands
+
+```sh
+./artisan -h
+```
+
 ### Usage
 
 ```sh
 #
 ./artisan serve \
   --host 0.0.0.0 \
-  --port 80
+  --port 8080
+```
 
+<!--
 #
 ./artisan translate:files
 
 #
 ./artisan cache:clear
-./artisan route:clear
-./artisan config:clear
-./artisan view:clear
 
+#
+./artisan route:clear
+
+#
+./artisan view:clear
+-->
+
+#### Migrate
+
+```sh
 #
 ./artisan make:migration create_flights_table
 ./artisan make:migration add_destination_to_flights_table
 
 #
-./artisan migrate
+./artisan config:clear
+
+#
+./artisan migrate:status
+
+#
+./artisan migrate:install
+
+#
+./artisan db:seed
 ```
+
+<!--
+./artisan migrate:fresh --seed
+-->
 
 ### Tips
 
@@ -98,6 +126,20 @@ rm ~/.zcompdump*
 
 ### Issues
 
+#### Missing Laravel Mix Build
+
+```log
+PHP Fatal error:  Uncaught Exception: The Mix manifest does not exist.
+```
+
+```sh
+#
+npm install
+
+#
+npm run dev # prod
+```
+
 #### App Key
 
 ```log
@@ -105,10 +147,12 @@ The only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key 
 ```
 
 ```sh
+#
 ./artisan key:generate
-
+# or
 echo 'yes' | ./artisan key:gen
 
+#
 ./artisan config:cache
 ```
 

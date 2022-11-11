@@ -26,6 +26,13 @@ brew install tfenv
 tfenv
 ```
 
+### Configuration
+
+```sh
+#
+echo '1.3.4' > ./.terraform-version
+```
+
 ### Usage
 
 ```sh

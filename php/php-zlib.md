@@ -1,5 +1,7 @@
 # PHP Zlib
 
+**Keywords:** `ext-zlib`
+
 ## Installation
 
 ### PHPBrew

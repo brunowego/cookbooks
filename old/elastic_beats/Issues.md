@@ -11,6 +11,6 @@ version: '3'
 
 services:
   beat:
-    # [...]
+    # <...>
     command: filebeat -e -strict.perms=false
 ```

@@ -8,7 +8,23 @@ https://app.pluralsight.com/library/courses/powershell-devops-playbook/table-of-
 
 - [Code Repository](https://github.com/PowerShell/PowerShell)
 
+## App
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install --cask powershell
+```
+
 ## CLI
+
+### Commands
+
+```sh
+pwsh -Help
+```
 
 ### Usage
 

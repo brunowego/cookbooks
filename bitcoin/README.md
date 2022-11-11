@@ -7,16 +7,11 @@ https://coinguides.org/average-cost-calculator-crypto-stocks-trading/
 https://charts.aggr.trade/
 https://cryptoprice.io/coins/bitcoin
 
-Not Your Your Keys, Not Your Coins
-
 BLX
 
 SegWit
 
 Mt. Gox
-
-Trezor Model T
-Ledger Nano S
 
 https://app.pluralsight.com/library/courses/bitcoin-decentralized-technology/table-of-contents
 https://app.pluralsight.com/guides/the-cryptography-of-bitcoin
@@ -38,10 +33,6 @@ TF 2W / Date Range / 5 bars, 70d
 https://bitcoinmonthlyreturn.com/
 -->
 
-## Important
-
-- [Bitcoin Supply Visualized](https://blockchaincenter.net/bitcoin-supply/)
-
 ## Links
 
 - [Bitcoin Average Cost Per Transaction](https://ycharts.com/indicators/bitcoin_average_cost_per_transaction)
@@ -54,6 +45,12 @@ https://bitcoinmonthlyreturn.com/
 - [Code Repository](https://github.com/bitcoin/bitcoin)
 - [FiatMarketCap / Fiat Market Capitalizations](https://fiatmarketcap.com/)
 - [Total Hash Rate (TH/s)](https://blockchain.com/explorer/charts/hash-rate)
+
+### Important
+
+- [Bitcoin Supply Visualized](https://blockchaincenter.net/bitcoin-supply/)
+- [Bitcoin Balances on Exchanges](https://coinglass.com/Balance)
+- [Bitcoin Wallet Sizes: > 1,000 BTC](https://lookintobitcoin.com/charts/wallets-greater-than-1000-btc/)
 
 ### Treasuries
 

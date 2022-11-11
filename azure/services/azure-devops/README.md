@@ -24,10 +24,10 @@ https://linkedin.com/learning/azure-for-devops-implementing-development-processe
 
 ## Services
 
-- Azure Boards
-- Azure Repos
-- Azure Pipelines
-- Azure Test Plans
+- [Azure Artifacts](/azure/services/azure-devops/azure-artifacts.md)
+- [Azure Boards](/azure/services/azure-devops/azure-boards.md)
+- [Azure Pipelines](/azure/services/azure-devops/azure-pipelines/README.md)
+- [Azure Repos](/azure/services/azure-devops/azure-repos.md)
 
 ## CLI
 
@@ -65,12 +65,29 @@ az devops configure -l
 
 ### Usage
 
-#### Team
+#### Service Endpoint
 
 ```sh
 #
-az devops project list
+az devops service-endpoint list -p '<project-name>'
 
+#
+az devops service-endpoint show \
+  --id '<service-endpoint-id>' \
+  -p '<project-name>'
+```
+
+<!--
+az devops service-endpoint create
+
+az devops service-endpoint update
+
+az devops service-endpoint delete
+-->
+
+#### Team
+
+```sh
 #
 az devops team list
 
@@ -92,6 +109,31 @@ az devops team update
 -->
 
 ### Tips
+
+#### SSH Key Config
+
+```sh
+#
+cat << EOF >> ~/.ssh/config
+Host ssh.dev.azure.com
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/id_rsa.<company-name>
+EOF
+```
+
+#### Disable Repository
+
+1. [Azure DevOps](https://dev.azure.com/) -> Sidebar Menu -> Project settings
+2. Repos -> Repositories
+3. All Repositories -> Select Repository -> Settings Tab
+4. Disable Repository -> Turn Off
+
+#### Force Push
+
+1. [Azure DevOps](https://dev.azure.com/) -> Sidebar Menu -> Project settings
+2. Repos -> Repositories
+3. All Repositories -> Select Repository -> Security Tab -> User permissions
+4. Add User -> Select `Allow` in `Force push (rewrite history, delete branches and tags)`
 
 #### List Projects from Organization
 

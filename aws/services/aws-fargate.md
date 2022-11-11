@@ -4,7 +4,20 @@
 https://www.youtube.com/watch?v=fMiX5dZ9v4w
 -->
 
-**Keywords:** Serverless
+**Keywords:** Serverless, ECS
+
+## Links
+
+- [Main Website](https://aws.amazon.com/fargate/)
+- [Pricing](https://aws.amazon.com/fargate/pricing/)
+
+## Related
+
+- [AWS Elastic Container Service (ECS)](/aws/services/aws-ecs.md)
+
+## Console
+
+- [Clusters](https://console.aws.amazon.com/eks/home#/clusters)
 
 ## Glossary
 
@@ -18,7 +31,7 @@ https://www.youtube.com/watch?v=fMiX5dZ9v4w
 
 ## CLI
 
-Use [AWS Copilot CLI](/aws/aws-copilot-cli.md).
+Use [AWS Copilot CLI](/aws/services/aws-copilot-cli.md).
 
 ## Solution
 

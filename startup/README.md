@@ -44,7 +44,7 @@ Pró-Labore
 - Customer Lifetime Value (LTV)
 - Default Alive
 - Developer Relations (DevRel)
-- Due Diligence
+- Due Diligence (DD)
 - Earnings Before Interest and Taxes (EBIT)
 - Earnings Before Interest, Taxes, Depreciation, and Amortization (EBITDA)
 - Entry Barrier
@@ -59,6 +59,7 @@ Pró-Labore
 - Growth Hacking
 - Growth Mindset
 - Initial Public Offering (IPO)
+- Letter Of Intent (LOI)
 - Media for Equity
 - Monthly Recurring Revenue (MRR)
 - Omnichannel

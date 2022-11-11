@@ -103,7 +103,7 @@ jobs:
   uses: azure/k8s-set-context@v1
   with:
     kubeconfig: ${{ secrets.KUBE_CONFIG_STAGING }}
-    context: [...].k8s.local
+    context: <...>.k8s.local
 
 - name: Kubectl Rollout Restart
   run: |

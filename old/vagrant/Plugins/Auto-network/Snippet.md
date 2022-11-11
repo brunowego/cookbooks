@@ -2,7 +2,7 @@
 
 ```ruby
 Vagrant.configure('2') do |config|
-  # [...]
+  # <...>
 
   config.vm.define 'first' do |node|
     node.vm.box = 'centos/7'

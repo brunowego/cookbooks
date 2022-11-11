@@ -25,3 +25,12 @@ brew install --cask brave-browser
 ```sh
 choco install brave
 ```
+
+### Tips
+
+#### MetaMask as Digital Wallet
+
+1. Open [Settings](brave://settings/)
+2. [Wallet](brave://settings/wallet)
+   - Default Ethereum wallet: `None`
+   - Default Solana wallet: `None`

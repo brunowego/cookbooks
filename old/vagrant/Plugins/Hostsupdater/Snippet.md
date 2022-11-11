@@ -2,7 +2,7 @@
 
 ```ruby
 Vagrant.configure('2') do |config|
-  # [...]
+  # <...>
 
   unless Vagrant.has_plugin?('vagrant-hostsupdater')
     puts 'vagrant-hostsupdater is not installed!'

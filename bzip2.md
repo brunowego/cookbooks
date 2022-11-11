@@ -1,5 +1,9 @@
 # BZip2
 
+## Links
+
+- [Main Website](https://sourceware.org/bzip2/)
+
 ## CLI
 
 ### Installation

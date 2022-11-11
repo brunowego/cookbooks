@@ -18,11 +18,12 @@
 
 - [Cer.live / Top Crypto Exchanges Ranked by Security](https://cer.live/)
 
-## Terms
+## Glossary
 
+- Automated Market Maker (AMM)
 - Decentralized Crypto Exchange (DEX)
-- Internet Data Exchange (IDX, a.k.a. Information Data Exchange)
 - Digital Currency Exchange (DCE)
+- Internet Data Exchange (IDX, a.k.a. Information Data Exchange)
 
 ## Decentralized Exchange (DEX)
 

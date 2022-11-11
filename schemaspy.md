@@ -22,10 +22,10 @@ cat << EOF > ./schemaspy.properties
 schemaspy.t=mysql
 schemaspy.host=127.0.0.1
 schemaspy.port=3306
-schemaspy.db=[dbname]
-schemaspy.s=[schema]
-schemaspy.u=[user]
-schemaspy.p=[password]
+schemaspy.db=<dbname>
+schemaspy.s=<schema>
+schemaspy.u=<user>
+schemaspy.p=<password>
 schemaspy.connprops="useSSL\=false"
 EOF
 ```
@@ -54,10 +54,10 @@ docker run --rm \
     -t mysql \
     -host 127.0.0.1 \
     -port 3306 \
-    -db [dbname] \
-    -s [schema] \
-    -u [user] \
-    -p [password] \
+    -db <dbname> \
+    -s <schema> \
+    -u <user> \
+    -p <password> \
     -connprops useSSL\\=false
 ```
 
@@ -107,10 +107,10 @@ java -jar "${JAVA_HOME}/lib/schemaspy.jar" \
   -t pgsql \
   -host 127.0.0.1 \
   -port 5432 \
-  -db [dbname] \
+  -db <dbname> \
   -s public \
-  -u [user] \
-  -p [password] \
+  -u <user> \
+  -p <password> \
   -o /path/to/ouput \
   -dp /tmp/postgresql-9.4-1201.jdbc4.jar
 ```
@@ -127,10 +127,10 @@ java -jar "${JAVA_HOME}/lib/schemaspy.jar" \
   -t mysql \
   -host 127.0.0.1 \
   -port 3306 \
-  -db [dbname] \
-  -s [schema] \
-  -u [user] \
-  -p [password] \
+  -db <dbname> \
+  -s <schema> \
+  -u <user> \
+  -p <password> \
   -o /path/to/ouput \
   -dp /tmp/mysql-connector-java-5.1.47.jar \
   -connprops useSSL\\=false
@@ -148,11 +148,11 @@ java -jar "${JAVA_HOME}/lib/schemaspy.jar" \
   -t db2zosnet \
   -host 127.0.0.1 \
   -port 50000 \
-  -db [dbname] \
-  -cat [] \
-  -s [schema] \
-  -u [user] \
-  -p [password] \
+  -db <dbname> \
+  -cat <cat> \
+  -s <schema> \
+  -u <user> \
+  -p <password> \
   -o ./schemaspy \
   -dp /tmp/db2jcc4-10.1.jar \
   -debug

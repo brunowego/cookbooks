@@ -1,5 +1,9 @@
 # Mac App Store (mas)
 
+## Links
+
+- [Code Repository](https://github.com/mas-cli/mas)
+
 ## CLI
 
 ### Installation

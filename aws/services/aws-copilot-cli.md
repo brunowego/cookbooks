@@ -1,8 +1,11 @@
 # AWS Copilot CLI
 
+**Keywords:** AWS Fargate
+
 ## Links
 
 - [Code Repository](https://github.com/aws/copilot-cli)
+- [Main Website](https://aws.github.io/copilot-cli/)
 
 ## Installation
 

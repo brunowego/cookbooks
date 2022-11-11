@@ -1,8 +1,13 @@
 # Economic Calendar
 
-## Tips
+## Calendars
 
-### Investing.com Calendar
+- [Crypto Craft](https://cryptocraft.com/calendar)
+- [Investing.com](https://cryptocraft.com/calendar)
+
+## Configuration
+
+### Investing.com
 
 1. Access [Investing.com](https://investing.com/economic-calendar/)
 2. Filters

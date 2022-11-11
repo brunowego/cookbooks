@@ -9,9 +9,9 @@ Jamais coloque uma ordem com stop uma proxima da outra, a Binance irá pegar a o
 ## Links
 
 - [Org. Repository](https://github.com/binance)
-- [Main Website](https://www.binance.com)
-- [New Alt-coins](https://www.binance.com/en/altcoins/new)
-- [Announcement](https://www.binance.com/en/support/announcement)
+- [Main Website](https://binance.com)
+- [New Alt-coins](https://binance.com/en/altcoins/new)
+- [Announcement](https://binance.com/en/support/announcement)
 
 ## Trade
 

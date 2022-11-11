@@ -1,9 +1,9 @@
-# Exodus
+# Exodus Wallet
 
 ## Links
 
 - [Main Website](https://exodus.com)
-- [Download](https://exodus.com/download/)
+- [Download](https://exodus.com/download)
 
 ## App
 

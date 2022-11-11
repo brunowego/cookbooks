@@ -2,7 +2,7 @@
 
 ```ruby
 Vagrant.configure('2') do |config|
-  # [...]
+  # <...>
 
   if ENV.key?('http_proxy')
     unless Vagrant.has_plugin?('vagrant-proxyconf')

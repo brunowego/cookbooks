@@ -94,7 +94,7 @@ kubectl get flow
 #### Failed to Pull Image
 
 ```log
-Warning  Failed          1s (x2 over 19s)   kubelet            Failed to pull image "[id].dkr.ecr.us-east-2.amazonaws.com/banzaicloud/log-generator:0.3.7": rpc error: code = Unknown desc = Error response from daemon: pull access denied for [id].dkr.ecr.us-east-2.amazonaws.com/banzaicloud/log-generator, repository does not exist or may require 'docker login': denied: User: arn:aws:sts::[id]:assumed-role/nodes.[...].k8s.local/i-[id] is not authorized to perform: ecr:BatchGetImage on resource: arn:aws:ecr:us-east-2:[id]:repository/banzaicloud/log-generator
+Warning  Failed          1s (x2 over 19s)   kubelet            Failed to pull image "[id].dkr.ecr.us-east-2.amazonaws.com/banzaicloud/log-generator:0.3.7": rpc error: code = Unknown desc = Error response from daemon: pull access denied for [id].dkr.ecr.us-east-2.amazonaws.com/banzaicloud/log-generator, repository does not exist or may require 'docker login': denied: User: arn:aws:sts::[id]:assumed-role/nodes.<...>.k8s.local/i-[id] is not authorized to perform: ecr:BatchGetImage on resource: arn:aws:ecr:us-east-2:[id]:repository/banzaicloud/log-generator
 Warning  Failed          1s (x2 over 19s)   kubelet            Error: ErrImagePull
 ```
 

@@ -2,4 +2,4 @@
 
 ## Tools
 
-- [Online OCR](https://www.onlineocr.net/)
+- [Online OCR](https://onlineocr.net/)

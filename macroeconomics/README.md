@@ -30,13 +30,17 @@ Supply > Demand = deflation
 
 - Liquidity Preference
 
+## Glossary
+
+- Employment Cost Index (ECI)
+- Europe, the Middle East and Africa (EMEA)
+- Gross Domestic Product (GDP)
+- Human Development Index (HDI)
+
 ## Terms
 
 - Deviation
-- Employment Cost Index (ECI)
 - Full Employment | Less than 5%
-- Gross Domestic Product (GDP)
-- Human Development Index (HDI)
 - Laffer Curve
 - New World Order (1945)
 - Soft Landing

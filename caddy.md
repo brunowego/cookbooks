@@ -127,7 +127,7 @@ EOF
 ##
 sudo tee -a /usr/local/etc/Caddyfile << EOF
 example.local:8443 {
-  [...]
+  <...>
   tls self_signed
   # tls /etc/ssl/certs/example.com/server/server.pem /etc/ssl/certs/example.com/server/server.key
 }

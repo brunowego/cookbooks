@@ -4,8 +4,9 @@
 
 - [Feature Toggles (aka Feature Flags)](https://martinfowler.com/articles/feature-toggles.html)
 
-## Options
+## Tools
 
+- [Flagsmith](/flagsmith.md)
 - [Flip](https://github.com/pda/flip)
 - [LaunchDarkly](https://launchdarkly.com/)
 - [Petri](https://github.com/wix-incubator/petri)

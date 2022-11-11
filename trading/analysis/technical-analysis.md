@@ -20,6 +20,11 @@ Lower-highs and Lower-lows
 - Stop Loss/Gain
 -->
 
+<!--
+Bearish Retest
+Bullish Retest
+-->
+
 ## Tools
 
 - [Wealth Lab](https://wealth-lab.com/)

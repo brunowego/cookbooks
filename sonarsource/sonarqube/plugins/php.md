@@ -72,6 +72,6 @@ org.sonar.java.AnalysisException: Please provide compiled classes of your projec
 
 ```sh
 sonar-scanner \
-  [...] \
+  <...> \
   -Dsonar.java.binaries="$SONARQUBE_HOME/lib"
 ```

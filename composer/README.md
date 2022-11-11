@@ -4,6 +4,11 @@
 https://typo3.org/article/certificate-issue-with-composer/
 -->
 
+## Links
+
+- [Code Repository](https://github.com/composer/composer)
+- [Main Website](https://getcomposer.org/)
+
 ## CLI
 
 ### References
@@ -66,11 +71,11 @@ composer help
 composer list
 ```
 
-### Configuration
+<!-- ### Configuration
 
 ```sh
 cat ~/.composer/config.json | jq .
-```
+``` -->
 
 ### Usage
 
@@ -79,7 +84,7 @@ cat ~/.composer/config.json | jq .
 composer diagnose -vvv
 
 # Create
-composer create-project --prefer-dist laravel/laravel [name] && "$_"
+composer create-project --prefer-dist laravel/laravel <name> && "$_"
 
 # Validate
 composer validate

@@ -3,7 +3,9 @@
 ## Glossary
 
 - Group Policy Object (GPO)
+- HMAC-based One-time Password (HOTP)
 - Local Administration Password Solution (LAPS)
+- One-Time Password (OTP)
 - Security Information and Event Management (SIEM)
 - Self-Service Password Reset (SSPR)
 - User and Entity Behavior Analytics (UEBA)

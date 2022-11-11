@@ -42,7 +42,7 @@ java -XshowSettings:properties -version 2>&1 > /dev/null | grep 'java.home'
 /usr/libexec/java_home -V
 ```
 
-***Warning:*** Not use if are using [jabba](/jabba.md).
+**_Warning:_** Not use if are using [jabba](/jabba.md).
 
 ```sh
 # Darwin
@@ -90,7 +90,7 @@ export JAVA_OPTS="$JAVA_OPTS -Xms256m -Xmx2g"
 #### Read MANIFEST.MF file from JAR
 
 ```sh
-unzip -p [name].jar META-INF/MANIFEST.MF
+unzip -p <name>.jar META-INF/MANIFEST.MF
 ```
 
 #### NPAPI

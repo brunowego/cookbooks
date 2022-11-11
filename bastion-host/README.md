@@ -11,6 +11,7 @@
 ## Glossary
 
 - AWS Elastic Computer Cloud (EC2)
+- Classless Inter-Domain Routing (CIDR)
 - Database Migration Service (DMS)
 - Remote Desktop Protocol (RDP)
 - Secure Shell (SSH)
@@ -18,4 +19,6 @@
 
 ## Terms
 
+- Inbound (Ingress)
+- Outbound (Egress)
 - Subnet

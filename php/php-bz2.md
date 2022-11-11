@@ -41,7 +41,7 @@ phpbrew -d ext install \
 cd /path/to/src/php/version
 
 ./configure \
-  # [...]
+  # <...>
   --with-bz2
 ```
 

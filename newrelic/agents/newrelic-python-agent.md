@@ -52,7 +52,7 @@ export NEW_RELIC_DISTRIBUTED_TRACING_ENABLED='true'
 
 ```sh
 #
-newrelic-admin run-program [...]
+newrelic-admin run-program <...>
 ```
 
 ### Tips

@@ -38,11 +38,11 @@ aws ssm describe-parameters
 
 #
 aws ssm get-parameters \
-  --names <name> \
+  --names '<name>' \
   --with-decryption
 
 #
-aws ssm get-parameters-by-path --path </app/path>
+aws ssm get-parameters-by-path --path '</app/path>'
 ```
 
 <!--

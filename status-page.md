@@ -23,7 +23,8 @@ https://github.com/louislam/uptime-kuma
 - [Cachet](/cachet.md)
 - [Statping](/statping.md)
 - [Statusfy](/statusfy.md)
-- [UptimeRobot](https://uptimerobot.com)
+- [Uptime Kuma](/uptime-kuma.md)
+- [UptimeRobot](/uptimerobot/README.md) 🌟
 
 <!--
 https://github.com/statsd/statsd
