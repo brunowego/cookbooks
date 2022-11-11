@@ -15,6 +15,19 @@ Observability Is Essential.
 - [The Twelve-Factor App](/12factor.md)
 - [Four Golden Signal](/4-golden-signals.md)
 
+## Glossary
+
+- Application Performance Monitoring (APM)
+- Log Management
+- Network Monitoring
+- Real User Monitoring
+- Security Monitoring
+- Synthetic Monitoring
+
+<!--
+Error Tracking
+-->
+
 ## Terms
 
 - Shift-Left Observability
@@ -24,11 +37,11 @@ Observability Is Essential.
 
 - [Datadog](/datadog.md)
 - [Dynatrace](/dynatrace.md)
-- [Grafana](/grafana/README.md)
 - [New Relic](/newrelic/README.md)
 - [SigNoz](/signoz.md)
 - [Splunk](/splunk.md)
+- [AppDynamics](https://appdynamics.com/)
 
 <!--
-Elastic Observability
+- [Grafana](/grafana/README.md)
 -->

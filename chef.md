@@ -9,10 +9,7 @@ https://app.pluralsight.com/search/?q=Chef&type=conference%2Cvideo-course%2Cdemo
 
 **Keywords:** Configuration Management
 
-## Alternatives
-
-- [Ansible](/ansible.md)
-- [Puppet](/puppet.md)
+TODO
 
 <!--
 ## Interview

@@ -15,6 +15,10 @@ https://github.com/BlockByBlock/jenkins-docker-with-goss/blob/master/doc/sonarqu
 
 - [Code Repository](https://github.com/SonarSource/sonarqube)
 - [Main Website](https://sonarqube.org)
+
+## Docs
+
+- [Decorating Pull Requests](https://docs.sonarqube.org/8.5/analysis/pr-decoration/)
 - [Languages](https://docs.sonarqube.org/latest/analysis/languages/overview/)
 
 ## References
@@ -25,6 +29,10 @@ https://github.com/BlockByBlock/jenkins-docker-with-goss/blob/master/doc/sonarqu
 ## Related
 
 - Secret Scanner: Database Connection String
+
+## Glossary
+
+- Application Lifecycle Management (ALM)
 
 ## Docker
 

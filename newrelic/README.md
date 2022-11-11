@@ -19,7 +19,7 @@ https://www.udemy.com/course/learn-new-relic-monitoring-and-devops-for-the-cloud
 
 ## Solutions
 
-- APM
+- Application Performance Monitoring (APM)
 - Browser
 - Infrastructure
 - Insights

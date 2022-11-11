@@ -28,6 +28,7 @@ https://github.com/louislam/uptime-kuma
 
 <!--
 https://github.com/statsd/statsd
+https://instatus.com/
 -->
 
 ## Examples

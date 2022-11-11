@@ -22,12 +22,6 @@ Version v2.10.8
 
 - [Roadmap](https://docs.ansible.com/ansible/latest/roadmap/)
 
-## Alternatives
-
-- [Chef](/chef.md)
-- [Puppet](/puppet.md)
-- SaltStack
-
 ## CLI
 
 ### Installation
