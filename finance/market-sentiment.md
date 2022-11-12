@@ -8,7 +8,7 @@
 
 - [HyblockCapital](/hyblockcapital.md)
 
-## Reports
+## Retail Reports
 
 ### Fear & Greed Index (FGI)
 

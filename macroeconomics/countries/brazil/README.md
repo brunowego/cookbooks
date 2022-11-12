@@ -1,6 +1,12 @@
 # Brazil
 
 <!--
+Explicações
+
+DI Futuros -> https://www.youtube.com/watch?v=2HbUDsMil7k
+-->
+
+<!--
 Réis
 Cruzeiro
 Cruzeiro Novo
@@ -27,6 +33,16 @@ OTC:JBSAY
 -->
 
 <!--
+DI Futuros
+
+J -> Janeiro
+
+DI1J2029
+
+Taxa Selic (Taxa de Juros À Vista) / DI Futuros (Taxa de Juros Futuro)
+-->
+
+<!--
 QUANDL:BCB/11753
 
 https://utilitarios.grupodpg.com.br/utilitarios/categoria/calculo-facil/775/custo-de-contratao-pj-x-clt-x-autnomo
@@ -44,13 +60,20 @@ https://www.rankbr.com.br/tv
 
 Kantar IBOPE Media
 People Meter
+
+Meta Selic / Taxa Selic
 -->
 
 ## Glossary
 
 - Banco Central do Brasil (BACEN or BCB)
 - Banco Nacional de Desenvolvimento Econômico e Social (BNDES)
+- Bank Deposit Certificate (CDB)
+- Certificado de Depósito Interbancário (CDI)
 - Comissão de Valores Mobiliários (CVM)
+- Comitê de Política Monetária (Copom)
+- Depósito Interfinanceiro (DI) / Interbank Deposit (DI)
+- Sistema Especial de Liquidação e de Custódia (SELIC)
 - Sociedade Anônima (S.A.)
 
 ## Terms
@@ -102,22 +125,17 @@ https://www.youtube.com/watch?v=Nk1LG5Fi9Uk
 
 ## Glossary
 
-- iShares: Collection of ETFs managed by BlackRock
-- Morgan Stanley Capital International (MSCI)
-- World Equity Benchmark Shares (WEBS)
-
-### Portuguese
-
 - Certificado de Recebíveis Imobiliários (CRI)
 - Fundos Imobiliários (FII)
 - Índice Nacional de Preços ao Consumidor Amplo (IPCA)
 - Instituto Brasileiro de Opinião Pública e Estatística (IBOPE)
+- iShares: Collection of ETFs managed by BlackRock
+- Morgan Stanley Capital International (MSCI)
 - Preço de Paridade Internacional (PPI)
 - Tribunal Superior Eleitoral (TSE)
+- World Equity Benchmark Shares (WEBS)
 
 ## Terms
-
-### Portuguese
 
 - Diáspora Brasileira
 

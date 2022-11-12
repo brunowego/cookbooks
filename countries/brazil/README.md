@@ -8,9 +8,3 @@ https://archive.ph/mmmro
 -->
 
 TODO
-
-<!--
-COPOM vs FOMC
-
-Meta Selic / Taxa Selic
--->

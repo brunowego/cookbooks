@@ -1,6 +1,10 @@
 # Next.js
 
 <!--
+filename:package.json "next" "tailwindcss" path:apps
+-->
+
+<!--
 https://github.com/t3-oss/create-t3-app
 
 const nextConfig = {

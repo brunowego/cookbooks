@@ -1,26 +1,19 @@
 # Cryptocurrency Exchange (a.k.a Digital Currency Exchange)
 
-## Tools
-
-- [Exchange War](https://exchangewar.info/)
-
 ## Ranking
 
 - [Kaiko / Exchange Ranking](https://kaiko.com/pages/exchange-ranking)
-
-### Spot
-
-- [CoinMarketCap / Top Cryptocurrency Spot Exchanges](https://coinmarketcap.com/rankings/exchanges/)
-- [Nomics / Top Global Spot Exchanges](https://nomics.com/exchanges?label=spot)
-- [Messari / Crypto Exchange Real Spot Volume](https://messari.io/exchanges)
-
-### Security
-
-- [Cer.live / Top Crypto Exchanges Ranked by Security](https://cer.live/)
+- Security
+  - [Cer.live / Top Crypto Exchanges Ranked by Security](https://cer.live/)
+- Spot
+  - [CoinMarketCap / Top Cryptocurrency Spot Exchanges](https://coinmarketcap.com/rankings/exchanges/)
+  - [Nomics / Top Global Spot Exchanges](https://nomics.com/exchanges?label=spot)
+  - [Messari / Crypto Exchange Real Spot Volume](https://messari.io/exchanges)
 
 ## Glossary
 
 - Automated Market Maker (AMM)
+- Centralized Exchange (CEX)
 - Decentralized Crypto Exchange (DEX)
 - Digital Currency Exchange (DCE)
 - Internet Data Exchange (IDX, a.k.a. Information Data Exchange)
@@ -36,6 +29,10 @@
 - [Raydium](https://raydium.io/)
 - [Sushi](https://sushi.com/)
 - [Uniswap](https://uniswap.org/)
+
+## Tools
+
+- [Exchange War](https://exchangewar.info/)
 
 ## Major Exchanges
 

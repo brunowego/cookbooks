@@ -6,7 +6,7 @@
 
 ## Configuration
 
-### Chart
+### Retail Chart
 
 <!--
 1d TF

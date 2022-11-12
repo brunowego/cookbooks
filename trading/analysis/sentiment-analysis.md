@@ -11,7 +11,7 @@ https://lunarcrush.com/coins/btc/bitcoin?metric=close%2Cmarket_cap
 - Spot
   - Dominance
   - Market Cap
-  - Fear & Greed Index
+  - Fear & Greed Index (Retail)
 - Derivatives
   - Leverage Ratio
   - Open Interest
@@ -22,11 +22,16 @@ https://lunarcrush.com/coins/btc/bitcoin?metric=close%2Cmarket_cap
 ## Dashboards
 
 - [Krown Trading](https://app.krowntrading.net/desk/cryptos/dashboard) 🌟
+- [DataPool](https://datapool.app/)
 
 ## Fear & Greed Index (FGI)
 
 - [LookIntoBitcoin / Fear And Greed Index](https://lookintobitcoin.com/charts/bitcoin-fear-and-greed-index/)
 - [Alternative.me / Crypto Fear & Greed Index](https://alternative.me/crypto/fear-and-greed-index/)
+
+### Wholesale
+
+- [Large Wallet Inflows](https://app.whalemap.io/btc/large-wallet-inflows)
 
 ### Tools
 
@@ -42,7 +47,3 @@ https://lunarcrush.com/coins/btc/bitcoin?metric=close%2Cmarket_cap
 - [Coinalyze / Open Interest, Funding Rate, Liquidation and Long/Short Ratio - Individual Charts](https://coinalyze.net/futures-data/)
 - [CryptoQuant / Summary](https://cryptoquant.com/asset/btc/summary)
 - [DecenTrader / Funding, Open Interest and Long Short Ratios (FOILS)](https://www.decentrader.com/funding-open-interest-and-long-short-ratios-foils/)
-
-<!--
-https://datapool.app/
--->

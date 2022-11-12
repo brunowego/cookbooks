@@ -14,6 +14,7 @@
 - Bare-metal server
 - Bloom's Taxonomy
 - Bulletin Board System (BBS)
+- Bullshit Detector (BS Detector)
 - Business Unit (BU)
 - Capture The Flag (CTF)
 - Change Data Capture (CDC)
@@ -85,6 +86,7 @@
 - Stock Keeping Unit (SKU)
 - System Under Test (SUT)
 - Thank God it's Friday (TGIF)
+- The New Normal (TNN)
 - Time To First Byte (TTFB)
 - Time-to-live (TTL)
 - To Be Decided or To Be Determined (TBD)

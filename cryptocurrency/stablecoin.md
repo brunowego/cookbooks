@@ -27,4 +27,4 @@
 ### USD Coin (USDC)
 
 - [Main Website](https://circle.com/en/usdc)
-- [Transparency](https://circle.com/en/transparency)
+- [Transparency Reports](https://circle.com/en/transparency)

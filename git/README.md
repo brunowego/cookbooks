@@ -106,10 +106,10 @@ git init
 git init --initial-branch='develop'
 
 # Create
-git tag [version]
+git tag <version>
 
 # Describe
-git tag -a [version] -m [message]
+git tag -a <version> -m <message>
 
 # Push with Tags
 git push origin master --tags
@@ -118,26 +118,26 @@ git push origin master --tags
 git tag -l
 
 # Checkout
-git checkout tags/[version]
+git checkout tags/<version>
 
 # Remote
 git ls-remote --tags
 
 # Delete
-git tag -d [version]
+git tag -d <version>
 
 # Remote
-git push --delete origin [version]
+git push --delete origin <version>
 
 # Update Index
-git update-index --assume-unchanged [file]
-git update-index --no-assume-unchanged [file]
+git update-index --assume-unchanged <file>
+git update-index --no-assume-unchanged <file>
 
 # Prevent to receive changed files
-git update-index --no-assume-unchanged [file]
+git update-index --no-assume-unchanged <file>
 
 # Ignore local changed files
-git update-index --assume-unchanged [file]
+git update-index --assume-unchanged <file>
 
 # List files with `assume-unchanged`
 git ls-files -v | grep '^h'
@@ -153,29 +153,29 @@ git config --list --show-origin
 git config --global --edit
 
 # Default Branch
-git config --global init.defaultBranch '[branch]' # master, staging, develop
+git config --global init.defaultBranch '<branch>' # master, staging, develop
 
 # Default Editor
-git config --global core.editor '[editor]' # Vim, Visual Studio Code (code -n -w)
+git config --global core.editor '<editor>' # Vim, Visual Studio Code (code -n -w)
 
 # Excludes file
-git config --global core.excludesfile '[filename]'
+git config --global core.excludesfile '<filename>'
 
 # Auto CRLF
-git config core.autocrlf '[value]' # Use `true`, `input` or `false`
+git config core.autocrlf '<value>' # Use `true`, `input` or `false`
 
 # Credential
-git config --global credential.helper '[value]' # Use `cache`, `store` or `osxkeychain`
+git config --global credential.helper '<value>' # Use `cache`, `store` or `osxkeychain`
 
 # User and Email
-git config --global user.name '[Name]'
-git config --global user.email '[email]'
+git config --global user.name '<Name>'
+git config --global user.email '<email>'
 
 # Merge
-git config --global merge.tool '[value]' # Use `vimdiff`
+git config --global merge.tool '<value>' # Use `vimdiff`
 
 # Push
-git config --global push.default '[value]'
+git config --global push.default '<value>'
 
 # Branch
 git config --global branch.autosetupmerge 'always'
@@ -192,7 +192,7 @@ git config --bool core.bare true
 
 #
 git reflog
-git checkout [sha8]
+git checkout <sha8>
 ```
 
 <!-- #### Credentials
@@ -291,10 +291,10 @@ antigen bundle git
 git fetch --all
 
 #
-git diff [tag]
+git diff <tag>
 
 #
-git diff [tag] -- [path/to/file]
+git diff <tag> -- [path/to/file]
 
 #
 git difftool tags/<FIRST TAG>:<FILE PATH> tags/<SECOND TAG>:<FILE PATH>
@@ -307,18 +307,18 @@ git difftool tags/<FIRST TAG>:<FILE PATH> tags/<SECOND TAG>:<FILE PATH>
 git remote -v
 
 #
-git remote remove origin [url]
-git remote add origin [url]
+git remote remove origin <url>
+git remote add origin <url>
 
 # or, using set-url
-git remote set-url origin [url]
+git remote set-url origin <url>
 ```
 
 #### Create a New Branch
 
 ```sh
 # Creating a branch from a commit
-git branch [branch-name] [hash]
+git branch [branch-name] <hash>
 
 # Creating a branch from a tag
 git branch [branch-name] [tag-name]
@@ -364,10 +364,10 @@ git for-each-ref \
 
 ```sh
 # Push
-find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c 'cd "{}" && git push' \;
+find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c 'cd "{}" && echo -e "\033[1mPROJECT_PATH\033[0m $(pwd)" && git push' \;
 
 # Pull
-find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c 'cd "{}" && git pull' \;
+find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c 'cd "{}" && echo -e "\033[1mPROJECT_PATH\033[0m $(pwd)" && git pull' \;
 ```
 
 <!-- ####
@@ -419,7 +419,7 @@ git describe --tags | cut -d - -f 1 | sed 's/^v//'
 #### Orphan Branch
 
 ```sh
-git checkout --orphan [branch]
+git checkout --orphan <branch>
 git rm -r ./
 ```
 
@@ -429,7 +429,7 @@ git rm -r ./
 
 ```sh
 # Commit
-git commit -sm '[message]'
+git commit -sm '<message>'
 
 # Ammend
 git commit --amend --signoff
@@ -442,7 +442,7 @@ git push --force-with-lease
 
 ```sh
 #
-git clone --no-checkout [repo]
+git clone --no-checkout <repo>
 
 #
 git checkout --orphan gh-pages
@@ -493,7 +493,7 @@ git config --get user.email
 <!-- #### Host Resolve
 
 ```log
-fatal: unable to access 'https://example.com/organization/repository.git/': Could not resolve host: [hostname]
+fatal: unable to access 'https://example.com/organization/repository.git/': Could not resolve host: <hostname>
 ```
 
 TODO -->
@@ -512,7 +512,7 @@ git config http.sslVerify false
 git config --global http.sslVerify false
 
 # Or, environment
-GIT_SSL_NO_VERIFY=true git clone [repo]
+GIT_SSL_NO_VERIFY=true git clone <repo>
 ```
 
 #### Received HTTP code 502 from proxy after CONNECT
@@ -547,7 +547,7 @@ Please supply the message using either -m or -F option.
 Solve this issue setting the `core.editor` value:
 
 ```sh
-git config --global core.editor [value]
+git config --global core.editor <value>
 ```
 
 > Use `vim`, `atom --wait`, `subl -n -w` and `mate -w`.
