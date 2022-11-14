@@ -56,8 +56,8 @@ kubectl port-forward \
 echo -e '[INFO]\thttps://127.0.0.1:8443'
 ```
 
-| Login | Password |
-| --- | --- |
+| Login   | Password                                                                                      |
+| ------- | --------------------------------------------------------------------------------------------- | ---------------- |
 | `admin` | `kubectl get secret argocd-initial-admin-secret -n argo-system -o jsonpath='{.data.password}' | base64 -d; echo` |
 
 ### Uninstall
@@ -96,7 +96,7 @@ helm repo update
 kubectl create ns argo-system
 
 #
-export KUBERNETES_IP='127.0.0.1'
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #

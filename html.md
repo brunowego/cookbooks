@@ -16,6 +16,7 @@ https://linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 
 - [Emmet](/emmet.md)
 - [HTML Arrows](https://toptal.com/designers/htmlarrows/)
+- [HTML Cleaner](https://codebeautify.org/html-cleaner)
 - [HTML Codes Table](https://ascii.cl/htmlcodes.htm)
 - [HTML Entities Encoder / Decoder](https://web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder)
 - [HTML Formatter](https://webformatter.com/html)

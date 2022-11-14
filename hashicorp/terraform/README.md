@@ -246,6 +246,12 @@ terraform destroy -auto-approve
 
 ### Tips
 
+#### Force State Unlock
+
+```sh
+terraform force-unlock <hash>
+```
+
 #### Apply Specific State
 
 ```sh
@@ -300,7 +306,7 @@ export TF_VAR_amap='{ foo = "bar", baz = "qux" }'
 
 #### Visual Studio Code
 
-**Tips:** Code format with [Prettier](/prettier.md)
+**Dependencies:** Code format with [Prettier](/prettier.md)
 
 ```sh
 #
@@ -310,7 +316,7 @@ code --install-extension hashicorp.terraform
 jq '."recommendations" += ["hashicorp.terraform"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 
 #
-jq '."[tf]"."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+jq '."[terraform]"."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 
 #
 jq '."files.associations"."*.json.tpl" |= "json"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
@@ -323,6 +329,16 @@ https://www.youtube.com/watch?v=uFaMUS6Z9fI
 -->
 
 ### Issues
+
+<!-- ####
+
+```log
+Providers cannot be configured within modules using count, for_each or depends_on.
+```
+
+```sh
+terraform plan -target module.<name>
+``` -->
 
 <!-- ####
 

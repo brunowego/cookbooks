@@ -1,14 +1,32 @@
-# OpenCost (p.k.a. Kubecost)
+# Kubecost
 
 <!--
-harness
-
 https://grafana.com/grafana/dashboards/11270
+
+http://52.39.195.26/
+http://52.60.214.118/
+
+intitle:Kubecost inurl:allocations
 -->
+
+**Keywords:** Kubernetes Spend
 
 ## Links
 
+- [Org. Repository](https://github.com/kubecost)
 - [Main Website](https://kubecost.com)
+
+## Lens
+
+### Dependencies
+
+- [Kubecost](#helm)
+
+### Installation
+
+1. Lens -> Extensions
+2. Copy [TGZ URL Address of latest version](https://github.com/kubecost/kubecost-lens-extension/releases)
+3. Extensions -> Paste in the Field URL -> Install
 
 ## Helm
 
@@ -25,52 +43,52 @@ helm repo update
 
 ### Dependencies
 
-<!-- - [Grafana](/grafana/README.md#helm) -->
-
+- [Grafana](/grafana/README.md#helm)
 - [Prometheus](/prometheus/README.md#helm)
-
-### Suggestions
-
-- Namespaces: `finops-system`
 
 ### Install
 
 ```sh
 #
 kubectl create ns kubecost-system
+# kubectl create ns company-finops
 
 #
-export KUBERNETES_IP='127.0.0.1'
+helm search repo -l kubecost/cost-analyzer
+
+#
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
+export KUBECOST_TOKEN="<token>" # http://kubecost.com/install
 
 #
 helm install kubecost kubecost/cost-analyzer \
   --namespace kubecost-system \
-  --version 1.87.2 \
+  --version 1.98.0 \
   -f <(cat << EOF
 global:
-  zone: cluster.local
+  # zone: cluster.local
 
   prometheus:
     enabled: false
-    fqdn: http://prometheus-server.monitoring-system.svc
+    fqdn: http://prometheus-server.prometheus-system.svc
 
   grafana:
-    enabled: true
-    # domainName: grafana.${DOMAIN}
-    # scheme: http
-    # proxy: false
+    enabled: false
+    proxy: false
+    fqdn: grafana.monitoring-system.svc
 
-  alertmanager:
-    enabled: true
-    fqdn: http://prometheus-server.monitoring-system.svc
+  # alertmanager:
+  #   enabled: true
+  #   fqdn: http://prometheus-server.prometheus-system.svc
 
-kubecostToken: aGVsbUBrdWJlY29zdC5jb20=xm343yadf98
+kubecostToken: ${KUBECOST_TOKEN}
 
 ingress:
   enabled: true
   hosts:
   - kubecost.${DOMAIN}
+  className: nginx
 
 # remoteWrite:
 #   postgres:
@@ -78,48 +96,52 @@ ingress:
 #     auth:
 #       password: admin
 
-networkCosts:
-  enabled: true
-  podSecurityPolicy:
-    enabled: true
-  resources:
-    requests:
-     cpu: 50m
-     memory: 20Mi
+# networkCosts:
+#   enabled: true
+#   resources:
+#     requests:
+#      cpu: 50m
+#      memory: 20Mi
 
-kubecostDeployment:
-  replicas: 1
-
-initChownData:
-  resources:
-    requests:
-     cpu: 50m
-     memory: 20Mi
+# initChownData:
+#   resources:
+#     requests:
+#      cpu: 50m
+#      memory: 20Mi
 
 kubecostProductConfigs:
+  clusters:
+  - name: Local
+    address: http://kubecost-cost-analyzer.kubecost-system.svc:9090
   clusterProfile: development
-  clusterName: develop.my-cluster.k8s.local
+  # clusterName: develop.my-cluster.k8s.local
   currencyCode: USD
 EOF
 )
+
+#
+helm status kubecost -n kubecost-system
 ```
 
-<!-- ### Cluster Controller
+<!--
+kubectl edit cm nginx-conf -n kubecost-system
+-->
 
 ```sh
-clusterController:
-  enabled: true
+kubectl rollout restart deployment \
+  -n kubecost-system \
+  kubecost-cost-analyzer
+```
 
-kubecostProductConfigs:
-``` -->
+> Wait! This process take a while.
 
-### [Custom Prometheus](https://github.com/kubecost/docs/blob/master/custom-prom.md)
+<!-- ### [Custom Prometheus](https://github.com/kubecost/docs/blob/master/custom-prom.md)
 
 ```sh
 #
 helm upgrade prometheus prometheus-community/prometheus \
-  --namespace monitoring-system \
-  -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values prometheus -o yaml --namespace monitoring-system) <(cat << \EOF
+  --namespace prometheus-system \
+  -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values prometheus -o yaml --namespace prometheus-system) <(cat << \EOF
 extraScrapeConfigs: |
   - job_name: kubecost
     honor_labels: true
@@ -185,7 +207,7 @@ rules:
       record: kubecost_savings_pod_requests_memory_bytes
 EOF
 ))
-```
+``` -->
 
 ### Status
 
@@ -198,19 +220,13 @@ kubectl rollout status deploy/kubecost-cost-analyzer \
 
 ```sh
 kubectl logs \
-  -l 'app=cost-analyzer' \
-  -c cost-analyzer-server \
-  -n kubecost-system \
-  -f
-
-kubectl logs \
-  -l 'app=cost-analyzer' \
+  -l 'app.kubernetes.io/name=cost-analyzer' \
   -c cost-model \
   -n kubecost-system \
   -f
 
 kubectl logs \
-  -l 'app=cost-analyzer' \
+  -l 'app.kubernetes.io/name=cost-analyzer' \
   -c cost-analyzer-frontend \
   -n kubecost-system \
   -f
@@ -299,10 +315,17 @@ kubectl cost -h
 ```sh
 #
 kubectl cost namespace \
-  --show-all-resources
+  -N kubecost-system \
+  -A
+```
+
+<!--
+#
+kubectl cost namespace -N kubecost-system --window 5d
 
 #
 kubectl cost namespace \
+  -N kubecost-system \
   --historical \
   --window 5d \
   --show-cpu \
@@ -310,16 +333,17 @@ kubectl cost namespace \
   --show-efficiency=false
 
 #
-kubectl cost controller --window 5d --show-pv
+kubectl cost controller -N kubecost-system --window 5d --show-pv
 
 #
-kubectl cost label --historical -l app
+kubectl cost label -N kubecost-system --historical -l app
 
 #
-kubectl cost deployment --window month -A
+kubectl cost deployment -N kubecost-system --window month -A
 
 #
 kubectl cost deployment \
+  -N kubecost-system \
   --window 3d \
   --show-cpu \
   -n kubecost
@@ -345,4 +369,4 @@ kubectl cost node \
   --window 7d \
   --show-cpu \
   --show-memory
-```
+-->

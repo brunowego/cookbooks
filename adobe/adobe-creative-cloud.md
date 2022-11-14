@@ -12,6 +12,12 @@ brew install --cask adobe-creative-cloud
 
 ### Tips
 
+#### Disable Core Sync
+
+1. Open System Preferences -> Extensions
+2. Added Extensions -> Uncheck Core Sync Finder Extensions
+3. Activity Monitor -> Search Core Sync -> Stop Process
+
 <!-- ####
 
 ```sh

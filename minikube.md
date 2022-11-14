@@ -138,15 +138,11 @@ minikube start \
   --insecure-registry 'registry.cn-hangzhou.aliyuncs.com'
 
 #
+minikube profile list
 minikube profile minikube-default
 
 #
 minikube status -p minikube-default
-```
-
-```sh
-# Show Current
-minikube profile list
 
 #
 kubectl config view
@@ -158,7 +154,9 @@ kubectl config set-context \
   minikube-default
 
 #
-minikube ssh sudo ip link set docker0 promisc on
+minikube ssh \
+  -p minikube-default \
+    sudo ip link set docker0 promisc on
 ```
 
 #### Addons
@@ -173,15 +171,10 @@ minikube addons list
 1. [Using Helm](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm)
 2. [Using Build-in](/kubernetes/ingress-controllers/ingress-nginx/README.md#minikube)
 
-##### MetricServer
-
-1. [Using Helm](/metrics-server.md#helm)
-2. [Using Build-in](/metrics-server.md#minikube)
-
 #### Mount
 
 ```sh
-minikube mount [/path/to/export]:[/path/to/mount/point]
+minikube mount </path/to/export>:</path/to/mount/point>
 ```
 
 ### Environment
@@ -195,13 +188,16 @@ eval "$(minikube docker-env)"
 
 ```sh
 #
-minikube stop -p minikube-default
-
-#
-minikube delete -p minikube-default
+minikube stop -p minikube-default && \
+  minikube delete -p minikube-default
 ```
 
 ### Tips
+
+#### Memory Monitoring (macOS)
+
+1. Open Activity Monitor -> Add column "Real Memory"
+2. Filter by: `hyperkit`
 
 #### Proxy
 
@@ -209,14 +205,12 @@ minikube delete -p minikube-default
 jq ".HostOptions.EngineOptions.Env += [ \"http_proxy=$http_proxy\" ]" ~/.minikube/machines/minikube/config.json | sponge ~/.minikube/machines/minikube/config.json
 jq ".HostOptions.EngineOptions.Env += [ \"https_proxy=$https_proxy\" ]" ~/.minikube/machines/minikube/config.json | sponge ~/.minikube/machines/minikube/config.json
 jq ".HostOptions.EngineOptions.Env += [ \"no_proxy=$no_proxy\" ]" ~/.minikube/machines/minikube/config.json | sponge ~/.minikube/machines/minikube/config.json
-```
 
-```sh
+#
 minikube stop -p minikube-default && \
   minikube start -p minikube-default
-```
 
-```sh
+#
 docker info | grep Proxy
 ```
 
@@ -250,10 +244,10 @@ Unable to start VM. Please investigate and run 'minikube delete' if possible: cr
 #### DHCP Client Lease DB
 
 ```sh
+#
 cat /var/db/dhcpd_leases
-```
 
-```sh
+#
 sudo rm -f /var/db/dhcpd_leases
 ```
 
@@ -264,14 +258,13 @@ E0729 13:29:35.162550   91854 tunnel.go:50] error cleaning up: conflicting rule 
 ```
 
 ```sh
+#
 route -n get 10.96/12
-```
 
-```sh
+#
 sudo route delete -net 10.96/12
-```
 
-```sh
+#
 minikube tunnel -c
 ```
 
@@ -282,15 +275,15 @@ ps -ef | grep -i VBoxHeadless
 ```
 
 ```sh
-kill -9 [PID]
+kill -9 <PID>
 ```
 
 ### Uninstall
 
 ```sh
+#
 sudo rm -fR /usr/local/bin/minikube
-```
 
-```sh
+#
 rm -fR ~/.minikube
 ```

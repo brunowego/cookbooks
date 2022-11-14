@@ -6,7 +6,7 @@
 
 ## Dependencies
 
-- Uninstall Pre-existing Versions of [Kubernetes Control (kubectl)](/kubectl/README.md).
+Uninstall Pre-existing Versions of [Kubernetes Control (kubectl)](/kubectl/README.md).
 
 ## Installation
 

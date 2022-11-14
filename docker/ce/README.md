@@ -25,6 +25,15 @@ Missing file
 
 - [Lazydocker](/lazydocker.md)
 
+## App
+
+### Tips
+
+#### Memory Monitoring (macOS)
+
+1. Open Activity Monitor -> Add column "Real Memory"
+2. Filter by: `com.docker`
+
 ## Dockerfile
 
 ### Tips

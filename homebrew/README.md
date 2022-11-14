@@ -33,16 +33,16 @@ brew analytics off
 brew leaves
 
 # Prefix path
-brew --prefix [package]
+brew --prefix <package>
 
 # Cellar path
-brew --cellar [package]
+brew --cellar <package>
 
 # Versions
-brew list --versions [package]
+brew list --versions <package>
 
 # Switch
-brew switch [formula] [version]
+brew switch <formula> <version>
 
 # Dependencies
 brew deps \

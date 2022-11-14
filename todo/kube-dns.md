@@ -1,3 +1,0 @@
-# kube-dns
-
-TODO

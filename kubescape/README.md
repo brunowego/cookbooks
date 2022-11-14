@@ -1,5 +1,11 @@
 # Kubescape
 
+<!--
+https://github.com/kubescape/lens-extension
+-->
+
+**Keywords:** Risk Analysis, Security Compliance, RBAC Visualizer, Vulnerabilities Scanning
+
 ## Links
 
 - [Code Repository](https://github.com/armosec/kubescape)

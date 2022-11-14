@@ -27,7 +27,7 @@ helm search repo -l cilium/cilium
 #
 helm install cilium cilium/cilium \
   --namespace kube-system \
-  --version 1.12.2 \
+  --version 1.12.3 \
   -f <(cat << EOF
 nodeinit:
   enabled: true
@@ -53,11 +53,13 @@ EOF
 kubectl get all -n kube-system
 ```
 
+> Wait! This process take a while.
+
 <!-- ### Hubble Relay
 
 ```sh
 #
-# export KUBERNETES_IP='127.0.0.1'
+# export KUBERNETES_IP='<kubernetes-ip>'
 # export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #

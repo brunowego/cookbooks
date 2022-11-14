@@ -68,7 +68,7 @@ helm repo update
 kubectl create ns elastic
 
 #
-export KUBERNETES_IP='127.0.0.1'
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #

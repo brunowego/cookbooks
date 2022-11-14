@@ -23,7 +23,8 @@ kubectl explain pods
 #### Homebrew
 
 ```sh
-brew install kubernetes-cli
+brew install kubectl # or, kubernetes-cli
+# brew install kubectl@1.22
 ```
 
 #### Linux

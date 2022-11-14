@@ -53,7 +53,7 @@ s3cmd mb s3://velero
 kubectl create ns velero
 
 #
-export KUBERNETES_IP='127.0.0.1'
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #

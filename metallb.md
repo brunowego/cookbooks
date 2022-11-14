@@ -58,10 +58,10 @@ kubectl delete \
 ### Install
 
 ```sh
+#
 kubectl create ns metallb-system
-```
 
-```sh
+#
 helm install metallb stable/metallb \
   --namespace metallb-system
 ```

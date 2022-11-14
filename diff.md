@@ -3,7 +3,7 @@
 ## Tools
 
 - [Diffchecker](https://diffchecker.com/)
-- [Text Compare!](https://text-compare.com/)
+- [Text Compare!](https://text-compare.com/) 🌟
 
 ## CLI
 

@@ -1,3 +1,5 @@
 # Cloud
 
-TODO
+## Alternative
+
+- Bare-Metal

@@ -1,6 +1,6 @@
-# CNCF Jaeger Tracing
+# Jaeger
 
-**Keywords:** OpenTracing
+**Keywords:** Tracing
 
 <!--
 helm3 repo add jaegertracing https://jaegertracing.github.io/helm-charts

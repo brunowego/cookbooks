@@ -20,7 +20,7 @@ helm repo update
 kubectl create ns artifactory
 
 #
-export KUBERNETES_IP='127.0.0.1'
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
@@ -85,9 +85,9 @@ kubectl logs \
 
 ### Credentials
 
-| Username | Password |
-| --- | --- |
-| `admin` | `password` |
+| Username | Password   |
+| -------- | ---------- |
+| `admin`  | `password` |
 
 ### Delete
 
@@ -149,9 +149,9 @@ curl -Ikv 'http://127.0.0.1:8081/api/system/ping'
 echo -e '[INFO]\thttp://127.0.0.1:8081'
 ```
 
-| Username | Password |
-| --- | --- |
-| `admin` | `password` |
+| Username | Password   |
+| -------- | ---------- |
+| `admin`  | `password` |
 
 ### Remove
 

@@ -17,5 +17,8 @@
   "workbench.colorTheme": "One Dark Pro",
   "[yaml]": {
     "editor.formatOnSave": false
+  },
+  "files.associations": {
+    "*.strings": "plist"
   }
 }

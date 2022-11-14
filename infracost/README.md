@@ -134,7 +134,7 @@ helm repo update
 kubectl create ns infracost-system
 
 #
-export KUBERNETES_IP='127.0.0.1'
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 export INFRACOST_API_KEY="$(yq e '.api_key' ~/.config/infracost/credentials.yml)"
 

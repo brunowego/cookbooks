@@ -1,10 +1,6 @@
 # k9s
 
-## Alternatives
-
-- [Kubernetes Dashboard](/kubernetes/kubernetes-dashboard.md)
-- [Lens (a.k.a. OpenLens)](/lens.md)
-- [Octant](/octant.md)
+**Keyword:** Kubernetes Dashboard, IDE
 
 ## Links
 

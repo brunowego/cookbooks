@@ -24,7 +24,7 @@ helm repo update
 kubectl create ns rabbitmq
 
 #
-export KUBERNETES_IP='127.0.0.1'
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
@@ -289,10 +289,10 @@ docker run -d \
 echo -e '[INFO]\thttp://127.0.0.1:15672'
 ```
 
-| Login | Password |
-| --- | --- |
-| `guest` | `guest` |
-| `admin` | `admin` |
+| Login   | Password |
+| ------- | -------- |
+| `guest` | `guest`  |
+| `admin` | `admin`  |
 
 ### Remove
 

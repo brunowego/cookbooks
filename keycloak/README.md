@@ -347,7 +347,7 @@ helm repo update
 kubectl create ns keycloak
 
 #
-export KUBERNETES_IP='127.0.0.1'
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
@@ -473,11 +473,11 @@ kubectl delete ns keycloak \
    - Display name: MyApp Local
    - Save
 
-| Environment | Name |
-| --- | --- |
-| Local | `myapp-local` |
-| Testing | `myapp-test` |
-| Production | `myapp` |
+| Environment | Name          |
+| ----------- | ------------- |
+| Local       | `myapp-local` |
+| Testing     | `myapp-test`  |
+| Production  | `myapp`       |
 
 ### New Role
 
@@ -517,8 +517,8 @@ kubectl delete ns keycloak \
    - Client ID: frontend
    - Save
 2. Configure -> Clients -> Actions Edit "frontend"
-   - Valid Redirect URIs: *
-   - Web Origins *
+   - Valid Redirect URIs: \*
+   - Web Origins \*
    - Save
 3. Configure -> Clients -> Actions Edit "frontend"
    - Mappers Tab -> Add Builtin -> Search "realm roles" -> Check Add -> Add selected

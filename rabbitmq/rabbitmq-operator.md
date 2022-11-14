@@ -254,7 +254,7 @@ https://github.com/rabbitmq/rabbitmq-server/tree/master/deps/rabbitmq_prometheus
 
 ```sh
 #
-export KUBERNETES_IP='127.0.0.1'
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
@@ -279,9 +279,9 @@ EOF
 
 ### Secrets
 
-| Login | Password |
-| --- | --- |
-| `admin` | `admin` |
+| Login   | Password |
+| ------- | -------- |
+| `admin` | `admin`  |
 
 ```sh
 #

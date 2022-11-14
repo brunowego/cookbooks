@@ -1,4 +1,4 @@
-# Prometheus Operator / kube-prometheus (a.k.a prometheus-stack)
+# Prometheus Operator (a.k.a Kube Prometheus, p.k.a. Prometheus Stack)
 
 <!--
 https://github.com/jsa4000/Observable-Distributed-System/blob/master/docs/02_kube_prometheus.md
@@ -26,15 +26,16 @@ helm repo update
 
 ```sh
 #
-kubectl create ns monitoring
+kubectl create ns metrics
+# kubectl create ns company-metrics
 
 #
-export KUBERNETES_IP='127.0.0.1'
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install prometheus-stack prometheus-community/kube-prometheus-stack \
-  --namespace monitoring \
+  --namespace metrics \
   --version 17.0.2 \
   -f <(cat << EOF
 alertmanager:
@@ -65,7 +66,7 @@ EOF
 
 ```sh
 kubectl rollout status deploy/prometheus-kube-prometheus-operator \
-  -n monitoring
+  -n metrics
 ```
 
 ### Logs
@@ -73,7 +74,7 @@ kubectl rollout status deploy/prometheus-kube-prometheus-operator \
 ```sh
 kubectl logs \
   -l 'release=prometheus' \
-  -n monitoring \
+  -n metrics \
   --max-log-requests 10 \
   -f
 ```
@@ -84,7 +85,7 @@ kubectl logs \
 #
 kubectl get secret prometheus-stack-grafana \
   -o jsonpath='{.data.admin-password}' \
-  -n monitoring | \
+  -n metrics | \
     base64 -d; echo
 ```
 
@@ -93,7 +94,7 @@ kubectl get secret prometheus-stack-grafana \
 ```sh
 #
 kubectl port-forward svc/prometheus-stack-kube-prom-prometheus \
-  -n monitoring \
+  -n metrics \
   9090:9090
 
 #
@@ -101,7 +102,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9090'
 
 #
 kubectl port-forward svc/prometheus-stack-kube-prom-alertmanager \
-  -n monitoring \
+  -n metrics \
   9093:9093
 
 #
@@ -109,7 +110,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9093'
 
 #
 kubectl port-forward svc/prometheus-stack-grafana \
-  -n monitoring \
+  -n metrics \
   8080:80
 
 #
@@ -136,17 +137,17 @@ echo -e "[INFO]\thttp://grafana.${DOMAIN}"
 ```sh
 # Backup
 kubectl cp \
-  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/name=grafana -n monitoring):/var/lib/grafana/grafana.db \
+  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/name=grafana -n metrics):/var/lib/grafana/grafana.db \
   "$PWD"/grafana.db \
   -c grafana \
-  -n monitoring
+  -n metrics
 
 # Restore
 kubectl cp \
   "$PWD"/grafana.db \
-  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/name=grafana -n monitoring):/var/lib/grafana/grafana.db \
+  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/name=grafana -n metrics):/var/lib/grafana/grafana.db \
   -c grafana \
-  -n monitoring
+  -n metrics
 ```
 
 #### External Exporter
@@ -199,7 +200,7 @@ EOF
 #
 kubectl get prometheus \
   -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
-  -n monitoring
+  -n metrics
 
 #
 cat << EOF | kubectl apply -f -
@@ -237,18 +238,18 @@ echo -e "[INFO]\thttp://prometheus.${DOMAIN}/config"
 #
 kubectl patch svc prometheus-stack-kube-prom-prometheus \
   -p '{"spec":{"type":"LoadBalancer"}}' \
-  -n monitoring
+  -n metrics
 
 #
 kubectl annotate svc prometheus-stack-kube-prom-prometheus \
   service.beta.kubernetes.io/aws-load-balancer-internal='true' \
   service.beta.kubernetes.io/aws-load-balancer-type='nlb' \
   external-dns.alpha.kubernetes.io/hostname='prometheus.example.com' \
-  -n monitoring
+  -n metrics
 
 #
 kubectl get service prometheus-stack-kube-prom-prometheus \
-  -n monitoring
+  -n metrics
 ```
 
 ### Alerts
@@ -286,7 +287,7 @@ Error: UPGRADE FAILED: cannot patch "prometheus-kube-prometheus-prometheus" with
 
 ```sh
 kubectl delete service prometheus-kube-prometheus-prometheus \
-  -n monitoring
+  -n metrics
 ```
 
 #### Timeout with ELB
@@ -298,7 +299,7 @@ helm.go:81: [debug] Get "https://mycluster.elb.us-east-1.amazonaws.com/apis/apps
 
 ```sh
 helm install prometheus-stack prometheus-community/kube-prometheus-stack \
-  -n monitoring \
+  -n metrics \
   --version 16.12.0
   --timeout 30m \
   --wait \
@@ -309,9 +310,9 @@ helm install prometheus-stack prometheus-community/kube-prometheus-stack \
 
 ```sh
 helm uninstall prometheus-stack \
-  -n monitoring
+  -n metrics
 
-kubectl delete ns monitoring \
+kubectl delete ns metrics \
   --grace-period=0 \
   --force
 ```

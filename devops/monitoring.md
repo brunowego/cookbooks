@@ -1,5 +1,11 @@
 # Monitoring
 
+**Keyword:** Proactive
+
+## Related
+
+- [Observability](/devops/observability/README.md)
+
 ## Tools
 
 - Amazon CloudWatch
@@ -11,7 +17,7 @@
 - SignalIFX
 - Custom StatsD
 
-## Types
+<!-- ## Types
 
 - White-box
-- Black-box
+- Black-box -->

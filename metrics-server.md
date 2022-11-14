@@ -37,10 +37,10 @@ kubectl delete \
 
 ```sh
 # Enable
-minikube addons enable metrics-server
+minikube addons -p minikube-default enable metrics-server
 
 # Disable
-minikube addons disable metrics-server
+minikube addons -p minikube-default disable metrics-server
 ```
 
 ## Helm

@@ -5,6 +5,8 @@ https://linkedin.com/learning/kubernetes-monitoring-with-prometheus/prometheus-m
 https://github.com/jacksontj/promxy
 -->
 
+**Keywords:** Metrics
+
 ## Guides
 
 - [Metric types](https://prometheus.io/docs/concepts/metric_types/)
@@ -72,69 +74,45 @@ helm repo add prometheus-community 'https://prometheus-community.github.io/helm-
 helm repo update
 ```
 
-### Dependencies
-
-- Assuming there is already a `monitoring-system` namespace.
-
 ### Install
 
 ```sh
 #
-export KUBERNETES_IP='127.0.0.1'
+kubectl create ns prometheus-system
+# kubectl create ns company-metrics
+
+#
+helm search repo -l prometheus-community/prometheus
+
+#
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install prometheus prometheus-community/prometheus \
-  --namespace monitoring-system \
-  --version 14.9.2 \
+  --namespace prometheus-system \
+  --version 15.18.0 \
   -f <(cat << EOF
 alertmanager:
   ingress:
     enabled: true
+    ingressClassName: nginx
     hosts:
     - alertmanager.${DOMAIN}
-  # resources:
-  #   limits:
-  #     cpu: 10m
-  #     memory: 32Mi
-  #   requests:
-  #     cpu: 10m
-  #     memory: 32Mi
-
-nodeExporter:
-  resources:
-    requests:
-      cpu: 100m
-      memory: 30Mi
-    limits:
-      cpu: 150m
-      memory: 50Mi
 
 server:
   ingress:
     enabled: true
+    ingressClassName: nginx
     hosts:
     - prometheus.${DOMAIN}
-  # resources:
-  #   limits:
-  #     cpu: 500m
-  #     memory: 512Mi
-  #   requests:
-  #     cpu: 500m
-  #     memory: 512Mi
 
 pushgateway:
   ingress:
     enabled: true
+    ingressClassName: nginx
     hosts:
     - pushgateway.${DOMAIN}
-  # resources:
-  #   limits:
-  #     cpu: 10m
-  #     memory: 32Mi
-  #   requests:
-  #     cpu: 10m
-  #     memory: 32Mi
 EOF
 )
 ```
@@ -151,7 +129,7 @@ EOF
 kubectl create secret tls example.tls-secret \
   --cert='/etc/ssl/certs/example/root-ca.crt' \
   --key='/etc/ssl/private/example/root-ca.key' \
-  -n monitoring-system
+  -n prometheus-system
 ```
 
 ```sh
@@ -180,14 +158,14 @@ helm upgrade prometheus stable/prometheus -f <(yq d <(helm get values prometheus
 helm upgrade prometheus stable/prometheus -f <(yq d <(helm get values prometheus) server.ingress.tls)
 
 kubectl delete secret example.tls-secret \
-  -n monitoring-system
+  -n prometheus-system
 ```
 
 ### Status
 
 ```sh
 kubectl rollout status deploy/prometheus-server \
-  -n monitoring-system
+  -n prometheus-system
 ```
 
 ### Logs
@@ -196,15 +174,21 @@ kubectl rollout status deploy/prometheus-server \
 kubectl logs \
   -l 'app=prometheus,component=server' \
   -c prometheus-server \
-  -n monitoring-system \
+  -n prometheus-system \
   -f
 ```
 
 ### Delete
 
 ```sh
+#
 helm uninstall prometheus \
-  -n monitoring-system
+  -n prometheus-system
+
+#
+kubectl delete ns prometheus-system \
+  --grace-period=0 \
+  --force
 ```
 
 ## CLI

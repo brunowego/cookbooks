@@ -1,5 +1,9 @@
 # Bourne Again Shell (Bash)
 
+<!--
+echo -e "\033[1mPROJECT_PATH\033[0m $(pwd)"
+-->
+
 ## References
 
 - [Bash Guide](https://github.com/Idnan/bash-guide)

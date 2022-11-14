@@ -17,10 +17,10 @@ helm repo update
 ### Install
 
 ```sh
+#
 kubectl create ns spark-operator
-```
 
-```sh
+#
 helm install spark-operator incubator/sparkoperator \
   --namespace spark \
   --set serviceAccounts.spark.name=spark \
@@ -35,14 +35,13 @@ helm install spark-operator incubator/sparkoperator \
 ### Test
 
 ```sh
+#
 kubectl apply -f https://raw.githubusercontent.com/GoogleCloudPlatform/spark-on-k8s-operator/master/examples/spark-pi.yaml
-```
 
-```sh
+#
 kubectl get sparkapplications -A
-```
 
-```sh
+#
 kubectl describe sparkapplication spark-pi -n default
 ```
 
@@ -50,5 +49,6 @@ kubectl describe sparkapplication spark-pi -n default
 
 ```sh
 helm uninstall spark-operator -n spark-operator
+
 kubectl delete ns spark-operator --grace-period=0 --force
 ```

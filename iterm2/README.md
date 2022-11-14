@@ -51,6 +51,9 @@ defaults write com.googlecode.iterm2 AboutToPasteTabsWithCancel -bool false
 /usr/libexec/PlistBuddy -c "Add :GlobalKeyMap:0x63-0x180000:Text string 'Toggle Broadcast Input to Current Session
 Broadcast Input.Toggle Broadcast Input to Current Session'" ~/Library/Preferences/com.googlecode.iterm2.plist
 
+#
+/usr/libexec/PlistBuddy -c "Add :DefaultURLScheme string 'http'" ~/Library/Preferences/com.googlecode.iterm2.plist
+
 # Save
 /usr/libexec/PlistBuddy -c 'Save' ~/Library/Preferences/com.googlecode.iterm2.plist
 ```

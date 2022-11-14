@@ -1,4 +1,9 @@
-# HyperKit
+# HyperKit (Hypervisor)
+
+## Links
+
+- [Main Website](https://developer.apple.com/documentation/hypervisor)
+- [Code Repository](https://github.com/moby/hyperkit)
 
 ## CLI
 
@@ -14,4 +19,6 @@ brew install hyperkit
 
 ```sh
 man hyperkit
+
+hyperkit -h
 ```

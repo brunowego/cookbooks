@@ -89,19 +89,19 @@ curl \
 kubectl annotate ingress \
   [ingress-name] \
   'nginx.ingress.kubernetes.io/cors-allow-methods="PUT, GET, POST, OPTIONS"' \
-  -n [namespace]
+  -n <namespace>
 
 #
 kubectl annotate ingress \
   [ingress-name] \
   'nginx.ingress.kubernetes.io/cors-allow-origin="https://admin.example.com"' \
-  -n [namespace]
+  -n <namespace>
 
 #
 kubectl annotate ingress \
   [ingress-name] \
   'nginx.ingress.kubernetes.io/cors-allow-credentials="true"' \
-  -n [namespace]
+  -n <namespace>
 ``` -->
 
 <!-- #### Sticky Session
@@ -130,14 +130,14 @@ prometheus.io/port: "10254"
 ```
 
 ```sh
-kubectl patch ingress/[name] \
-  -n [namespace] \
+kubectl patch ingress/<name> \
+  -n <namespace> \
   -p '{"metadata":{"annotations":{"nginx.ingress.kubernetes.io/proxy-body-size":"32m"}}}'
 ```
 
 <!--
-kubectl patch ingress/[name] \
-  -n [namespace] \
+kubectl patch ingress/<name> \
+  -n <namespace> \
   -p '{"metadata":{"annotations":{"nginx.ingress.kubernetes.io/client_max_body_size":"32m"}}}'
 -->
 
@@ -168,12 +168,12 @@ kubectl delete \
 
 ```sh
 # Enable
-minikube addons enable ingress
-minikube addons enable ingress-dns
+minikube addons -p minikube-default enable ingress
+# minikube addons -p minikube-default enable ingress-dns
 
 # Disable
-minikube addons disable ingress-dns
-minikube addons disable ingress
+minikube addons -p minikube-default disable ingress
+# minikube addons -p minikube-default disable ingress-dns
 ```
 
 ## Helm
@@ -196,26 +196,13 @@ helm repo update
 helm search repo -l ingress-nginx/ingress-nginx
 
 # Only for minikube
-kubectl label node "$(minikube profile)" ingress-ready=true
-
-# Only for KinD
-kubectl get nodes \
-  -l 'ingress-ready=true,kubernetes.io/os=linux' \
-  -o json | \
-    jq '.items[].spec.taints'
-
-kubectl taint node \
-  -l 'ingress-ready=true,kubernetes.io/os=linux' \
-  node-role.kubernetes.io/control-plane- node-role.kubernetes.io/master-
-
-#
-kubectl get nodes -l 'ingress-ready=true,kubernetes.io/os=linux'
+kubectl label node minikube-default ingress-ready=true
 
 #
 helm install ingress-controller ingress-nginx/ingress-nginx \
   --create-namespace \
   --namespace ingress-nginx \
-  --version 4.2.5 \
+  --version 4.4.0 \
   -f <(cat << EOF
 controller:
   nodeSelector:
@@ -228,10 +215,21 @@ EOF
 )
 
 #
-kubectl get all -n ingress-nginx
+helm status ingress-controller -n ingress-nginx
+```
 
+### Bare-metal (minikube)
+
+```sh
 #
-kubectl get ingressclasses.networking.k8s.io
+helm upgrade ingress-controller ingress-nginx/ingress-nginx \
+  --namespace ingress-nginx \
+  -f <(yq m <(cat << EOF
+controller:
+  hostNetwork: true
+  reportNodeInternalIp: true
+EOF
+) <(helm get values ingress-controller --namespace ingress-nginx))
 ```
 
 ### Prometheus Stack
@@ -322,11 +320,33 @@ minikube tunnel
 
 ### Issues
 
-<!-- ####
+#### Missing Un-taint Node
+
+```log
+0/4 nodes are available: 1 node(s) had taint {node-role.kubernetes.io/master: }, that the pod didn't tolerate, 3 node(s) didn't match Pod's node affinity/selector.
+```
 
 ```sh
-502 Bad Gateway
-``` -->
+#
+kubectl get nodes \
+  -l 'ingress-ready=true,kubernetes.io/os=linux' \
+  -o json | \
+    jq '.items[].spec.taints'
+# or
+kubectl get nodes -o=custom-columns=NAME:.metadata.name,TAINTS:.spec.taints
+
+#
+kubectl get nodes -l 'ingress-ready=true,kubernetes.io/os=linux'
+
+#
+kubectl taint node \
+  -l 'ingress-ready=true,kubernetes.io/os=linux' \
+    node-role.kubernetes.io/master-
+# or
+kubectl taint node \
+  -l 'ingress-ready=true,kubernetes.io/os=linux' \
+  node-role.kubernetes.io/control-plane-
+```
 
 #### DDos Attack
 
@@ -417,12 +437,12 @@ spec:
         paths:
           - path: /
             # backend:
-            #   serviceName: [name]
-            #   servicePort: [port]
+            #   serviceName: <name>
+            #   servicePort: <port>
             pathType: Prefix
             backend:
               service:
-                name: [name]
+                name: <name>
                 port:
-                  number: [port]
+                  number: <port>
 ```

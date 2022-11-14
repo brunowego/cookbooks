@@ -94,6 +94,7 @@ helm repo update
 
 # Search
 helm search repo <repo-name>
+helm search repo <repo-name> -l
 helm search repo <repo-name>/<chart-name> --versions
 
 # Install

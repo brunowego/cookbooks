@@ -2,6 +2,8 @@
 
 <!--
 https://app.pluralsight.com/paths/skills/introduction-to-application-development-for-red-hat-openshift-container-platform
+
+ocenv
 -->
 
 ## CLI

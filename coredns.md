@@ -1,5 +1,7 @@
 # CoreDNS
 
+**Keywords:** Kubernetes DNS
+
 ## Plugins
 
 ### References

@@ -150,7 +150,7 @@ Assuming there is already a `monitoring-system` namespace. If not, run `kubectl 
 
 ```sh
 #
-export KUBERNETES_IP='127.0.0.1'
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
@@ -159,7 +159,7 @@ helm search repo -l grafana/grafana
 #
 helm install grafana grafana/grafana \
   --namespace monitoring-system \
-  --version 6.43.0 \
+  --version 6.43.5 \
   -f <(cat << EOF
 adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
 

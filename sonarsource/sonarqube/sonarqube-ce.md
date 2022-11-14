@@ -201,18 +201,19 @@ helm repo update
 
 ```sh
 #
-kubectl create ns sonarqube
+kubectl create ns sonarqube-system
+# kubectl create ns company-system
 
 #
 helm search repo -l sonarqube/sonarqube
 
 #
-export KUBERNETES_IP='127.0.0.1'
+export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install sonarqube sonarqube/sonarqube \
-  --namespace sonarqube \
+  --namespace sonarqube-system \
   --version 5.0.6+370 \
   -f <(cat << EOF
 ingress:
@@ -224,14 +225,14 @@ EOF
 )
 
 #
-kubectl get all -n sonarqube
+kubectl get all -n sonarqube-system
 ```
 
 ### Status
 
 ```sh
 kubectl rollout status statefulset/sonarqube-sonarqube \
-  -n sonarqube
+  -n sonarqube-system
 ```
 
 ### Logs
@@ -239,7 +240,7 @@ kubectl rollout status statefulset/sonarqube-sonarqube \
 ```sh
 kubectl logs \
   -l 'app=sonarqube' \
-  -n sonarqube \
+  -n sonarqube-system \
   -f
 ```
 
@@ -247,9 +248,9 @@ kubectl logs \
 
 ```sh
 helm uninstall sonarqube \
-  -n sonarqube
+  -n sonarqube-system
 
-kubectl delete ns sonarqube \
+kubectl delete ns sonarqube-system \
   --grace-period=0 \
   --force
 ```

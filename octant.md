@@ -1,10 +1,11 @@
 # Octant
 
-## Alternatives
+**Keyword:** Kubernetes Dashboard, IDE
 
-- [k9s](/k9s.md)
-- [Kubernetes Dashboard](/kubernetes/kubernetes-dashboard.md)
-- [Lens (a.k.a. OpenLens)](/lens.md)
+## Links
+
+- [Code Repository](https://github.com/vmware-tanzu/octant)
+- [Main Website](https://octant.dev/)
 
 ## CLI
 
@@ -26,5 +27,5 @@ octant -h
 
 ```sh
 #
-octant
+octant --listener-addr='0.0.0.0:7777'
 ```

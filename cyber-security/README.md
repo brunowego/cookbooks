@@ -18,6 +18,7 @@ SIEM Analysis
 Blockchain Security
 Threat Hunting
 
+https://app.pluralsight.com/paths/skill/information-and-cyber-security-foundations
 https://app.pluralsight.com/paths/skill/malware-analysis
 https://app.pluralsight.com/paths/skill/malware-prevention-detection-and-response
 

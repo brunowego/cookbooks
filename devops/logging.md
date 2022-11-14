@@ -1,5 +1,7 @@
 # Logging
 
+![Central Logging](/assets/images/devops/telemetry.png)
+
 ## Solutions
 
 - AWS CloudWatch

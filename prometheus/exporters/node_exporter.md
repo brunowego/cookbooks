@@ -119,3 +119,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9100/metrics'
 ```sh
 docker rm -f node-exporter
 ```
+
+## Helm
+
+Included in [Prometheus Operator (a.k.a Kube Prometheus, p.k.a. Prometheus Stack)](/prometheus/prometheus-operator.md).

@@ -16,6 +16,8 @@
 
 ### Binance USD (BUSD)
 
+**Issue Redeem:** Paxos
+
 - [Main Website](https://binance.com/en/busd)
 - [Transparency Reports](https://paxos.com/busd-transparency/)
 

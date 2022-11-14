@@ -3,7 +3,11 @@
 ## References
 
 - [Debugging DNS Resolution](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/)
+
+## Implementations
+
 - [CoreDNS](/coredns.md)
+- [Kube-DNS](/kube-dns.md)
 
 ## Tips
 

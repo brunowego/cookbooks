@@ -41,6 +41,10 @@ SLO for Status code
 NoC?
 -->
 
+## Hierarchy of Needs
+
+![Hierarchy of Needs](/assets/images/sre/hierarchy-of-needs.png)
+
 ## References
 
 - [Ghidra](https://github.com/NationalSecurityAgency/ghidra)

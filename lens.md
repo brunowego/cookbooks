@@ -4,16 +4,13 @@
 https://www.youtube.com/watch?v=zW-E8THfvPY
 -->
 
+**Keyword:** Kubernetes Dashboard, IDE
+
 ## Links
 
 - [Main Website](https://k8slens.dev/)
 - [Code Repository](https://github.com/lensapp/lens)
-
-## Alternatives
-
-- [k9s](/k9s.md)
-- [Kubernetes Dashboard](/kubernetes/kubernetes-dashboard.md)
-- [Octant](/octant.md)
+- [Lens Extensions](https://github.com/lensapp/lens-extensions)
 
 ## App
 
@@ -31,7 +28,21 @@ brew install --cask lens
 choco install -y lens
 ```
 
+### Extensions
+
+```sh
+#
+ls ~/.k8slens/extensions
+```
+
 ### Tips
+
+#### Debug Mode
+
+```sh
+# Darwin (macOS)
+DEBUG=true /Applications/Lens.app/Contents/MacOS/Lens
+```
 
 #### Add to Hotbar
 

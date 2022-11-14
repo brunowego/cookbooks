@@ -22,6 +22,18 @@ https://github.com/kubernetes-up-and-running/kuard
 
 - [Let's Encrypt](/letsencrypt.md)
 
+## Lens (Non-official)
+
+### Installation
+
+1. Lens -> Extensions
+2. Copy [TGZ URL Address of latest version](https://github.com/jkroepke/lens-extension-certificate-info/releases)
+3. Extensions -> Paste in the Field URL -> Install
+
+<!--
+lens://app/extensions/install/lens-certificate-info
+-->
+
 ## kubectl (CLI)
 
 ### Guides

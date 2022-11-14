@@ -20,15 +20,21 @@ https://www.youtube.com/watch?v=R6OeIgb7lUI
 
 ## Workflow
 
-| Step | Action | Detail |
-| --- | --- | --- |
-| 0 | Commit Infra Code | Create/Change/Delete cloud and Kubernetes infrastructure via Terraform/Kubestack/Jenkins X |
-| 1a | Commit App Code | Write application code and commit it to application Git repository (GitHub/GitLab/ADO etc.) |
-| 1b | Commit Cluster Code | Write Kubernetes cluster code (YAML manifests) and commit to deploy repository for app/cluster configurations |
-| 2 | Merge/Trigger | Pull request to merge and trigger container build |
-| 3 | Push Image | Push to Container/Helm Registry |
-| 4 | Update Deploy Repo | If application configurations changes from the application Git repository update deployment Git repository so that the FLux operator can pick up changes |
-| 5 | Operator Sync | Flux operator syncs with deployment Git repository & Container/Helm repository watching for changes and will apply manifest/s (Kubectl apply) to namespaces if changes are needed |
+| Step | Action              | Detail                                                                                                                                                                            |
+| ---- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0    | Commit Infra Code   | Create/Change/Delete cloud and Kubernetes infrastructure via Terraform/Kubestack/Jenkins X                                                                                        |
+| 1a   | Commit App Code     | Write application code and commit it to application Git repository (GitHub/GitLab/ADO etc.)                                                                                       |
+| 1b   | Commit Cluster Code | Write Kubernetes cluster code (YAML manifests) and commit to deploy repository for app/cluster configurations                                                                     |
+| 2    | Merge/Trigger       | Pull request to merge and trigger container build                                                                                                                                 |
+| 3    | Push Image          | Push to Container/Helm Registry                                                                                                                                                   |
+| 4    | Update Deploy Repo  | If application configurations changes from the application Git repository update deployment Git repository so that the FLux operator can pick up changes                          |
+| 5    | Operator Sync       | Flux operator syncs with deployment Git repository & Container/Helm repository watching for changes and will apply manifest/s (Kubectl apply) to namespaces if changes are needed |
+
+## Lens
+
+### Installation
+
+Install [extension](lens://app/extensions/install/@appvia/lens-extension-fluxcd).
 
 ## Helm
 

@@ -12,8 +12,8 @@ kubectl cp -h
 
 ```sh
 #
-kubectl exec [pod-name] -- mkdir /data
+kubectl exec <pod-name> -- mkdir /data
 
 #
-kubectl cp [/path/to/file] [pod-name]:/data
+kubectl cp </path/to/file> <pod-name>:/data
 ```

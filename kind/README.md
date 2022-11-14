@@ -82,7 +82,7 @@ EOF
 
 #### kindnet
 
-Kind comes with kindnet by default.
+Kind comes with [kindnet](https://github.com/aojea/kindnet) by default.
 
 #### Cilium 🌟
 
