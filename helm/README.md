@@ -110,6 +110,13 @@ pkill helm
 
 ### Tips
 
+<!-- #### History
+
+```sh
+#
+helm history
+``` -->
+
 #### Upgrade Helm
 
 ```sh

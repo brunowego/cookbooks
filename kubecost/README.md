@@ -51,7 +51,7 @@ helm repo update
 ```sh
 #
 kubectl create ns kubecost-system
-# kubectl create ns company-finops
+# kubectl create ns finops
 
 #
 helm search repo -l kubecost/cost-analyzer

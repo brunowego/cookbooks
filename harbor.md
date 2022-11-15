@@ -11,3 +11,7 @@ https://medium.com/@petr.ruzicka/harbor-cloud-native-registry-and-kubernetes-838
 
 - [Code Repository](https://github.com/goharbor/harbor)
 - [Main Website](https://goharbor.io/)
+
+<!--
+https://artifacthub.io/packages/helm/harbor/harbor
+-->

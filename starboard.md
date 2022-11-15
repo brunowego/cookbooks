@@ -39,7 +39,7 @@ helm repo update
 ```sh
 #
 kubectl create ns starboard-system
-# kubectl create ns company-security
+# kubectl create ns security
 
 #
 helm search repo -l aquasecurity/starboard-operator

@@ -79,7 +79,7 @@ helm repo update
 ```sh
 #
 kubectl create ns prometheus-system
-# kubectl create ns company-metrics
+# kubectl create ns metrics
 
 #
 helm search repo -l prometheus-community/prometheus

@@ -16,6 +16,9 @@ az mysql -h
 
 ```sh
 #
+az mysql server list-skus -l 'eastus'
+
+#
 az mysql server list
 
 #

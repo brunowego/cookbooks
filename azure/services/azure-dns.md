@@ -10,6 +10,12 @@
 
 ## CLI
 
+### Commands
+
+```sh
+az network dns -h
+```
+
 ### Usage
 
 ```sh

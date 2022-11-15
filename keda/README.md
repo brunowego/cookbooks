@@ -1,4 +1,4 @@
-# KEDA
+# Kubernetes Event-driven Autoscaling (KEDA)
 
 <!--
 https://github.com/devjoes/github-runner-autoscaler
@@ -8,9 +8,7 @@ https://blog.devgenius.io/auto-scaling-kubernetes-keda-part-1-d7638d67ea17
 https://itnext.io/tutorial-auto-scale-your-kubernetes-apps-with-prometheus-and-keda-c6ea460e4642
 -->
 
-## Alternatives
-
-- [Horizontal Pod Autoscaler (HPA) Operator](/hpa/README.md)
+**Keywords:** Kubernetes Autoscaling
 
 ## Links
 

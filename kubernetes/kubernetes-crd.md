@@ -9,11 +9,11 @@
 kubectl get crds
 
 #
-kubectl get crd [name]
+kubectl get crd <name>
 
 #
-kubectl describe crd [name]
+kubectl describe crd <name>
 
 #
-kubectl get crd [name] -o yaml
+kubectl get crd <name> -o yaml
 ```

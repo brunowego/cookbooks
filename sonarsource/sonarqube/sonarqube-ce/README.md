@@ -202,7 +202,7 @@ helm repo update
 ```sh
 #
 kubectl create ns sonarqube-system
-# kubectl create ns company-system
+# kubectl create ns quality-gate
 
 #
 helm search repo -l sonarqube/sonarqube
@@ -214,7 +214,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 #
 helm install sonarqube sonarqube/sonarqube \
   --namespace sonarqube-system \
-  --version 5.0.6+370 \
+  --version 6.0.1+425 \
   -f <(cat << EOF
 ingress:
   enabled: true
@@ -227,6 +227,14 @@ EOF
 #
 kubectl get all -n sonarqube-system
 ```
+
+<!--
+kubectl port-forward \
+  --address 0.0.0.0 \
+  -n sonarqube-system \
+  svc/sonarqube-sonarqube \
+  8080:9000
+-->
 
 ### Status
 

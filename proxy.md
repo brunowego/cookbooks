@@ -28,16 +28,16 @@ https://github.com/cristianoliveira/ergo
 
 ```sh
 # single
-export http_proxy=[URL]
+export http_proxy=<URL>
 
 # multiple
 export \
-  http_proxy=[URL] \
-  https_proxy=[URL] \
+  http_proxy=<URL> \
+  https_proxy=<URL> \
   no_proxy=localhost,127.0.0.1
 ```
 
-- URL: `http://[username]:[password]@[host]:[port]`
+- URL: `http://<username>:<password>@<host>:<port>`
 
 ### Global
 
@@ -46,7 +46,7 @@ export \
 ```sh
 sudo tee /etc/profile.d/proxy.sh << 'EOF'
 # Proxy
-export PROXY_HOST="[hostname]"
+export PROXY_HOST="<hostname>"
 export PROXY_PORT="3128"
 
 # HTTP(S) Proxy

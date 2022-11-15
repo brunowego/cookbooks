@@ -10,11 +10,6 @@ https://medium.com/bench-engineering/deploying-kubernetes-clusters-with-kops-and
 https://itnext.io/aws-windows-kubernetes-nodes-with-kops-a2accb9ea483
 -->
 
-## Alternatives
-
-- [AWS Elastic Kubernetes Service (EKS)](/aws/aws-eks.md)
-- [Rancher](/rancher.md)
-
 ## Links
 
 - [Code Repository](https://github.com/kubernetes/kops)

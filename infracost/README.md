@@ -67,6 +67,7 @@ cat ~/.config/infracost/configuration.yml
 ```sh
 # Create inside the project
 cat << EOF > ./infracost-usage.yml
+---
 version: 0.1
 resource_usage: {}
 EOF

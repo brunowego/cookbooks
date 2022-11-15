@@ -246,6 +246,16 @@ terraform destroy -auto-approve
 
 ### Tips
 
+#### Autocomplete
+
+```sh
+#
+terraform -install-autocomplete
+
+#
+autoload -Uz compinit && compinit
+```
+
 #### Force State Unlock
 
 ```sh

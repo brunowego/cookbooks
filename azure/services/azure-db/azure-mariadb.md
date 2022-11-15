@@ -8,9 +8,14 @@
 az mariadb -h
 ```
 
-<!-- ### Usage
+### Usage
 
 ```sh
 #
+az mariadb server list-skus -l 'eastus'
+```
+
+<!--
+#
 az mariadb server list
-``` -->
+-->

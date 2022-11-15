@@ -51,7 +51,7 @@ helm repo update
 ```sh
 #
 kubectl create ns capsule-system
-# kubectl create ns company-tenancies
+# kubectl create ns tenancies
 
 #
 helm search repo -l clastix/capsule

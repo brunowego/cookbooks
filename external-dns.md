@@ -13,6 +13,11 @@
 
 - [Setting up ExternalDNS for Services on AWS](https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/aws.md)
 
+## Glossary
+
+- Strict Transport Security (STS)
+- Message Transfer Agent (MTA)
+
 ## Helm
 
 ### References
@@ -36,9 +41,9 @@ helm repo update
 
 - [CoreDNS](/coredns.md)
 
-##### AWS
+<!-- ##### AWS
 
-TODO
+TODO -->
 
 ### Install
 

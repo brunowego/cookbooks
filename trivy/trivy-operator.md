@@ -43,7 +43,7 @@ helm repo update
 ```sh
 #
 kubectl create ns trivy-system
-# kubectl create ns company-security
+# kubectl create ns security
 
 #
 helm search repo -l aquasecurity/trivy-operator

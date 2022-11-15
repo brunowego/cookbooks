@@ -27,7 +27,7 @@ helm repo update
 ```sh
 #
 kubectl create ns metrics
-# kubectl create ns company-metrics
+# kubectl create ns metrics
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'

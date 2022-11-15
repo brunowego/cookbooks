@@ -1,7 +1,7 @@
 # Next.js
 
 <!--
-filename:package.json "next" "tailwindcss" path:apps
+filename:package.json "next" "tailwindcss" "typescript" path:apps
 -->
 
 <!--
