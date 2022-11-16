@@ -36,3 +36,25 @@ az account show
 #
 az account tenant list
 ```
+
+#### Subscription
+
+```sh
+#
+az account subscription cancel
+
+#
+az account subscription enable
+
+#
+az account subscription list
+
+#
+az account subscription list-location
+
+#
+az account subscription rename
+
+#
+az account subscription show
+```

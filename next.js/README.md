@@ -16,6 +16,8 @@ const nextConfig = {
 }
 -->
 
+**Keywords:** Web Development Framework
+
 ## Links
 
 - [Code Repository](https://github.com/vercel/next.js)

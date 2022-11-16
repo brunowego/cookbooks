@@ -55,8 +55,8 @@ choco install -y dbeaver
 3. Database Connection
 4. MongoDB
 
-| Parameter | Value
-| --- | --- |
+| Parameter | Value         |
+| --------- | ------------- |
 | Mechanism | `SCRAM-SHA-1` |
 
 - Driver properties tab
@@ -159,6 +159,26 @@ jdbc:hive2://[hostname]:2181/default;serviceDiscoveryMode=zooKeeper;zooKeeperNam
 ```
 
 ### Issues
+
+<!--
+####
+
+```log
+Unable to reach a settlement: [diffie-hellman-group1-sha1, diffie-hellman-group-exchange-sha1] and [curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256]
+```
+
+TODO
+-->
+
+<!-- ####
+
+```log
+Communications link failure
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+  Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+```
+
+TODO -->
 
 #### Missing JVM
 

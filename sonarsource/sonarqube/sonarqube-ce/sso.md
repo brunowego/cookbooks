@@ -12,7 +12,7 @@ https://blog.sonarsource.com/sonarqube-ldap-sso/
 
 ### Docs
 
-- [How to setup Azure AD](https://sonarqube.vortigo.tech/documentation/instance-administration/authentication/saml/azuread/)
+- [How to setup Azure AD](https://sonarqube.company.com/documentation/instance-administration/authentication/saml/azuread/)
 
 <!-- ### Issues
 

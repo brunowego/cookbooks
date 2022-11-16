@@ -2,6 +2,27 @@
 
 <!-- mysql -u root -p -ve 'UNINSTALL PLUGIN validate_password' -->
 
+<!-- ##
+
+```sql
+TRUNCATE TABLE `<db-name>`.<table-name>;
+``` -->
+
+<!-- ##
+
+```sql
+SET FOREIGN_KEY_CHECKS = 0;
+-- ...
+SET FOREIGN_KEY_CHECKS = 1;
+``` -->
+
+<!-- ##
+
+```sql
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE `<db-name>`.<table-name>;
+``` -->
+
 ## Variables
 
 ```sql

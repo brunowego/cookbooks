@@ -41,16 +41,19 @@ pv /path/to/dump.sql | \
 ```sh
 #
 mysqldump \
+  -c \
   -t \
   -h 127.0.0.1 \
   -P 3306 \
   -u root \
   -p'root' \
   <db-name> \
-  > ./dump-data-only.sql
+  -v \
+  > "./dump-data-only-$(date -u '+%Y.%m.%d-%H%M').sql"
 
 #
 mysqldump \
+  -c \
   -t \
   -h 127.0.0.1 \
   -P 3306 \
@@ -58,7 +61,8 @@ mysqldump \
   -p'root' \
   --ignore-table '<db-name>.<table-name>' \
   <db-name> \
-  > ./dump-data-only.sql
+  -v \
+  > "./dump-data-only-$(date -u '+%Y.%m.%d-%H%M').sql"
 ```
 
 <!--

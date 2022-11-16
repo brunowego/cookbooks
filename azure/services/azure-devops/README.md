@@ -1,4 +1,4 @@
-# Azure DevOps (ADO)
+H# Azure DevOps (ADO)
 
 <!--
 https://app.pluralsight.com/paths/skills/additional-devops-topics-on-microsoft-azure
@@ -162,3 +162,14 @@ az repos list \
         git clone "$repo"
       done
 ```
+
+## Tips
+
+### Service Connections
+
+<!--
+AWS
+-->
+
+1. Project settings
+2. Pipelines -> Service connections

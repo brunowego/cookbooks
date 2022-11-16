@@ -6,7 +6,7 @@
 
 ## Tools
 
-- [Flagsmith](/flagsmith.md)
+- [Flagsmith](/flagsmith.md) 🌟
 - [Flip](https://github.com/pda/flip)
 - [LaunchDarkly](https://launchdarkly.com/)
 - [Petri](https://github.com/wix-incubator/petri)
