@@ -83,7 +83,7 @@ gcc --version | head -1
 #### Search for Parameter
 
 ```sh
-./configure --help | fgrep [param]
+./configure --help | fgrep <param>
 ```
 
 ### Issues

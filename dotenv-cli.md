@@ -26,5 +26,5 @@ dotenv -h
 ### Running
 
 ```sh
-dotenv -- [command]
+dotenv -- <command>
 ```

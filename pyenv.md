@@ -109,17 +109,17 @@ pyenv help
 pyenv install --list
 
 # Installation
-pyenv install [version]
+pyenv install <version>
 
 # Versions
 pyenv versions
 
 # Set
-pyenv local [version]
-pyenv global [version]
+pyenv local <version>
+pyenv global <version>
 
 #
-pyenv uninstall -f [version]
+pyenv uninstall -f <version>
 ```
 
 ### Tips
@@ -145,7 +145,7 @@ rm ~/.pyenv/cache/*.tar.xz
 PYTHON_CONFIGURE_OPTS='--with-system-expat' \
   CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include" \
   LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib" \
-  pyenv install [version]
+  pyenv install <version>
 ``` -->
 
 #### Missing bzip2
@@ -157,7 +157,7 @@ WARNING: The Python bz2 extension was not compiled. Missing the bzip2 lib?
 ```sh
 CFLAGS="$CFLAGS -I$(brew --prefix bzip2)/include" \
   LDFLAGS="$LDFLAGS -L$(brew --prefix bzip2)/lib" \
-    pyenv install [version]
+    pyenv install <version>
 ```
 
 #### Missing zlib
@@ -169,7 +169,7 @@ ERROR: The Python zlib extension was not compiled. Missing the zlib?
 ```sh
 CFLAGS="$CFLAGS -I$(brew --prefix zlib)/include" \
   LDFLAGS="$LDFLAGS -L$(brew --prefix zlib)/lib" \
-    pyenv install [version]
+    pyenv install <version>
 ```
 
 #### Big Sur Issue
@@ -191,7 +191,7 @@ make: *** Waiting for unfinished jobs....
 ```sh
 pyenv install \
   --patch \
-  [version] \
+  <version> \
   < <(curl -sSL https://github.com/python/cpython/commit/8ea6353.patch)
 ```
 

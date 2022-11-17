@@ -14,7 +14,7 @@
 brew install cfn-lint
 ```
 
-#### PIP
+#### pip
 
 ```sh
 pip install cfn-lint

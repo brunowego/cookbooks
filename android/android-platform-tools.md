@@ -16,16 +16,27 @@ brew install --cask android-platform-tools
 adb help
 ```
 
-### Examples
+### Usage
 
 ```sh
 # List Devices
-adb devices
+adb devices -l
 
 # Shell
 adb shell
-adb shell [command]
+adb shell <command>
+
+#
+adb shell pm list packages
 ```
+
+<!--
+#
+adb forward tcp:27042 tcp:27042
+
+#
+adb shell pm uninstall --user 0 <app-id>
+-->
 
 ### Tips
 
@@ -101,7 +112,7 @@ adb push "$CERT_PATH" "/system/etc/security/cacerts/$CERT_HASH.0"
 adb reboot
 ``` -->
 
-##### Option 2
+<!-- ##### Option 2 -->
 
 ```sh
 adb push \

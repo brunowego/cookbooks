@@ -62,7 +62,7 @@ aws ecs update-service \
   --task-definition arn:aws:ecs:$(AWS_REGION):492128005656:task-definition/$(PROJECT_NAME)-$(PROJECT_ENVIRONMENT)-app-task-def
 -->
 
-#### Update Service
+#### Execute Command
 
 ```sh
 #

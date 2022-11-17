@@ -1,4 +1,4 @@
-# Man-In-The-Middle (MITM)
+# Man-in-The-Middle (MiTM)
 
 ## Tools
 

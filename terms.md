@@ -69,7 +69,6 @@
 - Personal Access Token (PAT)
 - Personal Identification Number (PIN)
 - Platform as a service (PaaS)
-- Public Key Infrastructure (PKI)
 - Read The Fucking Manual (RTFM)
 - Read-eval-print loop (REPL)
 - Relational Database Service (RDS)

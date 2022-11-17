@@ -10,6 +10,10 @@ https://linkedin.com/learning/data-science-foundations-data-mining-in-python/pyt
 
 - [Python Cheat-Sheet](https://github.com/gto76/python-cheatsheet)
 
+## Docs
+
+- [Versions](https://python.org/doc/versions/)
+
 ## Version
 
 - [Python 2.x](/python/python2.md)

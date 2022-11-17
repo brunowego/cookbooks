@@ -125,13 +125,13 @@ export DOCKER_TAG='latest'
 ```yaml
 # kustomization.yaml
 images:
-- name: [name]
-  newName: $DOCKER_REGISTRY/$DOCKER_REPOSITORY
-  newTag: $DOCKER_TAG
+  - name: <name>
+    newName: $DOCKER_REGISTRY/$DOCKER_REPOSITORY
+    newTag: $DOCKER_TAG
 ```
 
 ```sh
-kustomize edit set image [name]="${DOCKER_REGISTRY}/${DOCKER_REPOSITORY}:${DOCKER_TAG}"
+kustomize edit set image <name>="${DOCKER_REGISTRY}/${DOCKER_REPOSITORY}:${DOCKER_TAG}"
 ```
 
 <!-- ### Issues

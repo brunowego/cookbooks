@@ -1,4 +1,4 @@
-# Let's Encrypt
+# Let's Encrypt (LE)
 
 <!--
 https://letsencrypt.org/certificates/
@@ -9,9 +9,18 @@ https://medium.com/geekculture/will-you-be-impacted-by-letsencrypt-dst-root-ca-x
 Let’s Encrypt show email status usage
 -->
 
-## Related
+## Links
+
+- [Main Website](https://letsencrypt.org)
+
+## Docs
+
+- [Glossary](https://letsencrypt.org/docs/glossary/)
+
+## Tools
 
 - [cert-manager](/cert-manager/README.md)
+- [Let's Encrypt R3 verification](https://verify-letsencryptr3.dnsimple.tools/)
 
 ## CLI
 
@@ -36,26 +45,58 @@ sudo apt -y install python-certbot-apache
 certbot -h
 ```
 
-### Examples
+### Usage
 
 ```sh
-sudo certbot --apache --renew-by-default -d datalayer.io
-```
+#
+sudo certbot \
+  --apache \
+  --renew-by-default \
+  -d datalayer.io
 
-```sh
-sudo certbot certonly --apache -d datalayer.io
-```
+#
+sudo certbot certonly \
+  --apache \
+  -d datalayer.io
 
-```sh
+#
 sudo certbot renew --apache
 ```
 
-```sh
+<!--
+certbot certonly \
+  --dry-run \
+  -n \
+  --dns-route53 \
+  --agree-tos \
+  --csr "<path to my CSR>" \
+  --register-unsafely-without-email \
+  --no-eff-email \
+  --dns-route53-propagation-seconds 300 \
+  --cert-path "<path to store the issued X.509 Leaf Certificate>" \
+  --key-path "<path to store the private key>" \
+  --fullchain-path "<path to store the issued X.509 Leaf Certificate and the chain of intermediate and CA Certificates as a bundle>" \
+  --chain-path "<path to store the chain of intermediate and CA Certificates as a bundle minus the actual issued X.509 Leaf Certificate>" \
+  -d sub.domain.tld
+
+certbot certonly \
+  --- same as above ---
+  --duplicate \
+  --force-renewal \
+  -d sub.domain.tld
+-->
+
+<!-- ```sh
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 0 */12 * * * root certbot -q renew --apache
-```
+``` -->
+
+<!--
+sudo certbot renew --force-renew --preferred-chain "DST Root CA X3"
+15 0 * * * /usr/bin/certbot renew --preferred-chain "DST Root CA X3"
+-->
 
 ### Tips
 

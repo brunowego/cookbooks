@@ -5,7 +5,6 @@
     "zhuangtongfa.Material-theme",
     "streetsidesoftware.code-spell-checker",
     "EditorConfig.EditorConfig",
-    "redhat.vscode-yaml",
-    "errata-ai.vale-server"
+    "redhat.vscode-yaml"
   ]
 }
