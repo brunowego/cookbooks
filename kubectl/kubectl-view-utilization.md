@@ -4,21 +4,21 @@
 
 - [Code Repository](https://github.com/etopeter/kubectl-view-utilization)
 
-## CLI
+## Installation
 
-### Installation
+### Krew
 
 ```sh
 kubectl krew install view-utilization
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl view-utilization --help
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

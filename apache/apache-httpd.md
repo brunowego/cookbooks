@@ -47,6 +47,7 @@ docker restart httpd
 
 ```sh
 docker rm -f httpd
+docker volume rm httpd-config
 ```
 
 ## CLI

@@ -75,8 +75,5 @@ apm rotate-keys
 
 ```sh
 #
-crontab -e
-
-#
-@monthly aws-profile-manager rotate-keys --aws-profile-name <name> --yes
+(crontab -l 2>/dev/null; echo '@monthly aws-profile-manager rotate-keys --aws-profile-name <name> --yes') | crontab -
 ```

@@ -4,9 +4,9 @@
 
 - [Code Repository](https://github.com/mayankshah1607/kubectl-flagger)
 
-## CLI
+## Installation
 
-### Installation
+### Source Code
 
 ```sh
 git clone 'https://github.com/mayankshah1607/kubectl-flagger' kubectl-flagger && "$_"
@@ -16,13 +16,13 @@ make
 cd ..; rm -fR ./kubectl-flagger
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl flagger -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

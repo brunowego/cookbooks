@@ -8,6 +8,11 @@
 
 ## Tips
 
+### Dark Mode
+
+1. [Settings / Account preferences](https://linkedin.com/mypreferences/d/categories/account)
+2. Display -> Dark mode
+
 ### Force Specific Network Interface
 
 ```sh

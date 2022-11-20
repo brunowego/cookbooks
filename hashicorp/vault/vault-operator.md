@@ -1,3 +1,0 @@
-# HashiCorp Vault Operator
-
-TODO

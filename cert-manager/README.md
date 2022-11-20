@@ -1,26 +1,54 @@
-# cert-manager
+# Cert Manager (cert-manager)
 
 <!--
-kubectl patch ingress/mobilecapture-mobile-capture -p '{"metadata":{"annotations":{"cert-manager.io/issuer":"letsencrypt-prod"}}}'
-
-https://github.com/Thakurvaibhav/k8s/tree/master/cert-manager
-
-https://github.com/kubernetes-up-and-running/kuard
+https://github.com/cert-manager/cert-manager/issues/921
 -->
+
+**Keywords:** X.509 Certificate Controller
 
 ## Links
 
-- [Code Repository](https://github.com/jetstack/cert-manager)
+- [Code Repository](https://github.com/cert-manager/cert-manager)
 - [Main Website](https://cert-manager.io/)
 
-## Guides
+## Docs
 
+- [Supported Annotations](https://cert-manager.io/docs/usage/ingress/#supported-annotations)
 - [Securing NGINX-ingress](https://cert-manager.io/docs/tutorials/acme/ingress/)
 - [Troubleshooting Issuing ACME Certificates](https://cert-manager.io/docs/faq/acme/)
+- [Kubernetes CertificateSigningRequests](https://cert-manager.io/docs/usage/kube-csr/)
 
-## Certificate Authority
+## Issuers
 
+- [Amazon Web Services (AWS)](/aws/README.md)
+- [Azure](/azure/README.md)
+- [Cloudflare](/cloudflare.md)
+- [Google Cloud Platform (GCP)](/google-cloud/README.md)
 - [Let's Encrypt](/letsencrypt.md)
+
+## CLI
+
+### Links
+
+- [Docs](https://cert-manager.io/docs/reference/cmctl/)
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install cmctl
+```
+
+### Commands
+
+```sh
+cmctl -h
+```
+
+<!-- ### Usage
+
+TODO -->
 
 ## Lens (Non-official)
 
@@ -34,63 +62,18 @@ https://github.com/kubernetes-up-and-running/kuard
 lens://app/extensions/install/lens-certificate-info
 -->
 
-## kubectl (CLI)
-
-### Guides
-
-- [Kubectl plugin](https://cert-manager.io/next-docs/usage/kubectl-plugin/)
-
-### Installation
-
-```sh
-kubectl krew install cert-manager
-```
-
-### Commands
-
-```sh
-kubectl cert-manager help
-```
-
-### Usage
-
-```sh
-#
-kubens [ns-name]
-
-#
-kubectl cert-manager check api
-
-#
-kubectl get certificates -o wide
-
-#
-kubectl cert-manager status certificate [cert-name]
-
-#
-kubectl get certificaterequest
-
-#
-kubectl delete certificaterequest [cert-req-id]
-
-#
-kubectl get certificates -o wide
-
-#
-kubectl cert-manager renew [cert-name]
-
-#
-kubectl get certificaterequest
-
-#
-kubectl describe certificaterequest [cert-req-id]
-```
-
 ## Helm
+
+<!--
+quay.io/jetstack/cert-manager-controller
+quay.io/jetstack/cert-manager-webhook
+quay.io/jetstack/cert-manager-cainjector
+quay.io/jetstack/cert-manager-ctl
+-->
 
 ### References
 
-- [Helm Charts](https://github.com/jetstack/cert-manager/tree/master/deploy/charts/cert-manager)
+- [Helm Charts](https://github.com/cert-manager/cert-manager/tree/master/deploy/charts/cert-manager)
 
 ### Dependencies
 
@@ -110,9 +93,12 @@ helm repo update
 kubectl create ns cert-manager
 
 #
+helm search repo -l jetstack/cert-manager
+
+#
 helm install cert-manager jetstack/cert-manager \
   --namespace cert-manager \
-  --version v1.5.4 \
+  --version v1.10.0 \
   -f <(cat << EOF
 installCRDs: true
 
@@ -160,7 +146,7 @@ spec:
     #   dns01:
     #     route53:
     #       region: eu-east-1
-    #       accessKeyID: [SECRET]
+    #       accessKeyID: <SECRET>
     #       secretAccessKeySecretRef:
     #         name: cert-manager-route53
     #         key: AWS_SECRET_ACCESS_KEY
@@ -203,16 +189,20 @@ cat << EOF > ./letsencrypt-issuer.json
 EOF
 ``` -->
 
+<!--
+kubectl patch ingress/mobilecapture-mobile-capture -p '{"metadata":{"annotations":{"cert-manager.io/issuer":"letsencrypt-prod"}}}'
+-->
+
 ### Ingress
 
 ```sh
 #
 kubectl annotate ingress \
-  [ingress-name] \
+  <ingress-name> \
   cert-manager.io/cluster-issuer='letsencrypt-issuer'
 
 kubectl annotate ingress \
-  [ingress-name] \
+  <ingress-name> \
   kubernetes.io/ingress.class='nginx'
 ```
 
@@ -232,7 +222,7 @@ letsencrypt-prod
 kubectl get certificates -o wide
 
 #
-kubectl describe certificate [name]
+kubectl describe certificate <name>
 ```
 
 #### Orders
@@ -245,7 +235,7 @@ kubectl get certificaterequests
 kubectl get orders
 
 #
-kubectl describe order [name]
+kubectl describe order <name>
 ```
 
 #### Challenges
@@ -255,7 +245,7 @@ kubectl describe order [name]
 kubectl get challenges
 
 #
-kubectl describe challenge [name]
+kubectl describe challenge <name>
 ```
 
 ### Issues
@@ -263,7 +253,7 @@ kubectl describe challenge [name]
 <!-- ####
 
 ```log
-The certificate request has failed to complete and will be retried: Failed to wait for order resource "[name]" to become ready: order is in "invalid" state:
+The certificate request has failed to complete and will be retried: Failed to wait for order resource "<name>" to become ready: order is in "invalid" state:
 ```
 
 TODO -->
@@ -279,22 +269,22 @@ Error accepting authorization: acme: authorization error for [example.com]: 400 
 kubectl get certificaterequests
 
 #
-kubectl delete certificaterequest [name]
+kubectl delete certificaterequest <name>
 
 #
 kubectl get certificates -o wide
 
 #
-kubectl cert-manager renew [name]
+kubectl cert-manager renew <name>
 
 #
-kubectl cert-manager status certificate [name]
+kubectl cert-manager status certificate <name>
 ```
 
 <!-- #### Rate Limit
 
 ```log
-429 urn:ietf:params:acme:error:rateLimited: Error creating new order :: too many certificates already issued for: [domain]: see https://letsencrypt.org/docs/rate-limits/
+429 urn:ietf:params:acme:error:rateLimited: Error creating new order :: too many certificates already issued for: <domain>: see https://letsencrypt.org/docs/rate-limits/
 ```
 
 TODO -->

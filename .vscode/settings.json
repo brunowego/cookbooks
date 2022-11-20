@@ -22,5 +22,8 @@
   },
   "files.associations": {
     "*.strings": "plist"
+  },
+  "[swift]": {
+    "editor.defaultFormatter": "vknabel.vscode-swiftformat"
   }
 }

@@ -1,8 +1,10 @@
 # git-secrets
 
+**Keywords:** Secrets Detection, SAST
+
 ## Links
 
-- [Alternatives](/alternatives.md#code-secrets)
+- [Code Repository](https://github.com/awslabs/git-secrets)
 
 ## CLI
 

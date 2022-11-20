@@ -1,5 +1,7 @@
 # azctx
 
+**Keywords:** Azure Account Switcher
+
 ## Links
 
 - [Code Repository](https://github.com/StiviiK/azctx)

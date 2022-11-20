@@ -1,5 +1,9 @@
 # Passbolt Community Edition (CE)
 
+<!--
+https://github.com/thegrumpylion/passbolt-secrets
+-->
+
 **Keywords:** Password Manager
 
 ## Links

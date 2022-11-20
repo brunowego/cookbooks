@@ -1,5 +1,14 @@
 # Robots Exclusion Standard (robots.txt)
 
+<!--
+https://www.websiteplanet.com/webtools/robots-txt/result/?url=https%3A%2F%2Fhml.us.dellexpertprogram.com%2Frobots.txt
+https://en.ryte.com/free-tools/robots-txt/?refresh=1&url=https%3A%2F%2Fhml.us.dellexpertprogram.com&useragent=Googlebot&submit=Evaluate
+-->
+
+## Links
+
+- [SEO Site Checkup / Robots.txt Test](https://seositecheckup.com/tools/robotstxt-test)
+
 ## Tips
 
 ### HTML Tag

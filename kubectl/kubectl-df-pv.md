@@ -4,25 +4,25 @@
 
 - [Code Repository](https://github.com/yashbhutwala/kubectl-df-pv)
 
-## CLI
+## Installation
 
-### Installation
+### Krew
 
 ```sh
 kubectl krew install df-pv
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl df-pv -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #
 kubectl df-pv \
   -v info \
-  -n [namespace]
+  -n <namespace>
 ```

@@ -5,21 +5,21 @@
 - [Code Repository](https://github.com/sunny0826/kubectl-pod-lens)
 - [Main Website](https://pod-lens.guoxudong.io/)
 
-## CLI
+## Installation
 
-### Installation
+### Krew
 
 ```sh
 kubectl krew install pod-lens
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl pod-lens -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

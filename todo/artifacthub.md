@@ -1,3 +1,0 @@
-# Artifact Hub
-
-TODO

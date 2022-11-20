@@ -4,15 +4,13 @@
 
 - [kube-proxy](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/)
 
-## CLI
-
-### Commands
+## Commands
 
 ```sh
 kubectl proxy -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

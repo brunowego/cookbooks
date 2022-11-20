@@ -4,7 +4,13 @@
 https://s3-us-west-2.amazonaws.com/map-2.0-customer-documentation/html/latest/en/index.html
 -->
 
-## Docs
+## Links
+
+- [Dashboard](https://console.aws.amazon.com/billing/home#/)
+- Billing
+  - [Bills](https://console.aws.amazon.com/billing/home#/bills)
+
+## Tips
 
 ### Create MAP & CUR
 

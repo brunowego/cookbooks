@@ -1,8 +1,10 @@
 # truffleHog
 
+**Keywords:** Secrets Detection, SAST
+
 ## Links
 
-- [Alternatives](/alternatives.md#code-secrets)
+- [Code Repository](https://github.com/trufflesecurity/trufflehog)
 
 ## CLI
 

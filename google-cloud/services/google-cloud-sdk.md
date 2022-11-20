@@ -33,6 +33,12 @@ gcloud auth login
 gcloud auth application-default login
 
 #
+gcloud config configurations list
+
+#
+cat ~/.config/gcloud/configurations/config_default
+
+#
 gcloud config get-value core/account
 
 #

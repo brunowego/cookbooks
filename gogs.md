@@ -1,5 +1,7 @@
 # Gogs
 
+**Keywords:** Self-Hosted Git Service
+
 ## Docker
 
 ### Network

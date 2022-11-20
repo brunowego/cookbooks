@@ -8,6 +8,7 @@
 ## Docs
 
 - [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/)
+- [Using an IAM role in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html)
 
 ## Tools
 

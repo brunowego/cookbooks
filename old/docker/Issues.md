@@ -97,20 +97,20 @@ Failed to get D-Bus connection: Operation not permitted
 ```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
-  -h [hostname] \
+  -h <hostname> \
   --cap-add SYS_ADMIN \
   -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
-  --name [name] \
-  [image] [command]
+  --name <name> \
+  <image> <command>
 ```
 
-| Name | Image | Command |
-| --- | --- | --- |
-| `centos` | `docker.io/library/centos:7` | `/sbin/init` |
-| `opensuse` | `docker.io/library/opensuse:42` | |
+| Name       | Image                           | Command      |
+| ---------- | ------------------------------- | ------------ |
+| `centos`   | `docker.io/library/centos:7`    | `/sbin/init` |
+| `opensuse` | `docker.io/library/opensuse:42` |              |
 
 ```sh
-docker exec -it [name] /bin/bash
+docker exec -it <name> /bin/bash
 ```
 
 ## Remove network interface
@@ -123,17 +123,17 @@ docker network prune -f
 ip link del docker0
 ```
 
-##
+<!-- ##
 
 ```log
-Error response from daemon: login attempt to http://[hostname]/v2/ failed with status: 503 Service Unavailable
+Error response from daemon: login attempt to http://<hostname>/v2/ failed with status: 503 Service Unavailable
 ```
 
 ```sh
-nmap -p 80,443 [hostname]
-nc -zv [hostname] 80
-ncat --ssl [hostname] 443
-openssl s_client -connect [hostname]:443
+nmap -p 80,443 <hostname>
+nc -zv <hostname> 80
+ncat --ssl <hostname> 443
+openssl s_client -connect <hostname>:443
 
-curl -k https://[hostname]/v2/_catalog
-```
+curl -k https://<hostname>/v2/_catalog
+``` -->

@@ -73,3 +73,9 @@ RUN pip3 install /usr/src/packages/<package-version>.tar.gz
 ```Dockerfile
 LABEL maintainer="John Doe <johndoe@example.com>"
 ```
+
+<!--
+if command -v docker > /dev/null; then
+  npm run lint:docker
+fi
+-->

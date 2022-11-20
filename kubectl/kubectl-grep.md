@@ -4,21 +4,19 @@
 
 - [Code Repository](https://github.com/guessi/kubectl-grep)
 
-## CLI
-
-### Installation
+## Installation
 
 ```sh
 kubectl krew install grep
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl grep -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #
@@ -29,9 +27,9 @@ kubectl grep pods -A apiserver
 kubectl grep pods -A apiserver -o wide
 ```
 
-### Tips
+## Tips
 
-#### Batch Deletion
+### Batch Deletion
 
 ```sh
 kubectl grep pod [name] | \

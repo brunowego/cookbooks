@@ -1,4 +1,10 @@
-# vaultwarden
+# Vaultwarden
+
+**Keywords:** Unofficial Bitwarden
+
+## Links
+
+- [Code Repository](https://github.com/dani-garcia/vaultwarden)
 
 ## Docker
 
@@ -34,4 +40,82 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 docker rm -f vaultwarden
 
 docker volume rm vaultwarden-data
+```
+
+## Helm
+
+### References
+
+- [Values](https://github.com/sebastiangaiser/helm-charts/tree/main/charts/vaultwarden#values)
+
+### Repository
+
+```sh
+helm repo add sebastiangaiser 'https://sebastiangaiser.github.io/helm-charts'
+helm repo update
+```
+
+### Install
+
+```sh
+#
+kubectl create ns vaultwarden-system
+# kubectl create ns security
+
+#
+helm search repo -l sebastiangaiser/vaultwarden
+
+#
+export KUBERNETES_IP='<kubernetes-ip>'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
+
+#
+helm install vaultwarden sebastiangaiser/vaultwarden \
+  --namespace vaultwarden-system \
+  --version 0.8.3 \
+  -f <(cat << EOF
+ingress:
+  enabled: true
+  hosts:
+  - host: vaultwarden.${DOMAIN}
+    paths:
+    - path: /
+      pathType: Prefix
+  tls:
+  - hosts:
+    - vaultwarden.${DOMAIN}
+    secretName: vaultwarden.tls-secret
+  ingressClassName: nginx
+EOF
+)
+
+#
+kubectl get all -n vaultwarden-system
+```
+
+### Status
+
+```sh
+kubectl rollout status deployment/vaultwarden \
+  -n vaultwarden-system
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app.kubernetes.io/name=vaultwarden' \
+  -n vaultwarden-system \
+  -f
+```
+
+### Delete
+
+```sh
+helm uninstall vaultwarden \
+  -n vaultwarden-system
+
+kubectl delete ns vaultwarden-system \
+  --grace-period=0 \
+  --force
 ```

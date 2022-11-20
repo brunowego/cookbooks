@@ -11,6 +11,8 @@ https://github.com/cla-assistant/cla-assistant
 https://github.community/t/picture-tag-in-markdown/149471
 -->
 
+**Keywords:** Git Service
+
 ## Links
 
 - [Government](https://government.github.com/community/)

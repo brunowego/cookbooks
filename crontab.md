@@ -56,6 +56,9 @@ sudo cat /var/at/tabs/"$USER" # Darwin
 # Load Specific
 crontab /etc/cron.d/<filename> # Linux
 
+#
+(crontab -l 2>/dev/null; echo '<cron>') | crontab -
+
 # Remove
 crontab -r
 ```

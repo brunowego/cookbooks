@@ -21,8 +21,8 @@ update-ca-certificates
 
 ```sh
 echo -n | \
-  openssl s_client -connect [hostname]:443 | \
-  sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > [certificate].crt
+  openssl s_client -connect <hostname>:443 | \
+  sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > <certificate>.crt
 ```
 
 ### Installing a root/CA Certificate
@@ -31,7 +31,7 @@ echo -n | \
 # Linux
 sudo mkdir /usr/local/share/ca-certificates/extra
 
-sudo cp [certificate].crt /usr/local/share/ca-certificates/extra
+sudo cp <certificate>.crt /usr/local/share/ca-certificates/extra
 
 ## Ubuntu
 sudo update-ca-certificates

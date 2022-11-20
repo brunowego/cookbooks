@@ -22,11 +22,11 @@ kubectl tree -h
 
 ```sh
 #
-kubectl tree deployment [name]
+kubectl tree deployment <name>
 
 #
-kubectl tree kservice [name]
+kubectl tree kservice <name>
 
 #
-kubectl tree fleets.agones.dev [name]
+kubectl tree fleets.agones.dev <name>
 ```

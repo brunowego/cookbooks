@@ -1,5 +1,7 @@
 # Security Headers
 
+**Keywords:** HTTP Headers
+
 ## Links
 
 - [Main Website](https://tuxtimo.me/securityheaders/)

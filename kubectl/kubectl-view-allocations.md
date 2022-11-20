@@ -4,21 +4,21 @@
 
 - [Code Repository](https://github.com/davidB/kubectl-view-allocations)
 
-## CLI
+## Installation
 
-### Installation
+### Krew
 
 ```sh
 kubectl krew install view-allocations
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl view-allocations -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

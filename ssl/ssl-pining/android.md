@@ -93,3 +93,10 @@ objection -g <package-identifier> explore
 android proxy set <proxy-ip> 8080
 android sslpinning disable
 ```
+
+### Shutdown
+
+```sh
+# Darwin
+osascript -e 'quit app "NoxAppPlayer"'
+```

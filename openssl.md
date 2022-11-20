@@ -112,15 +112,15 @@ echo -n 'Pa$$w0rd!' | openssl md5
 
 # List certs
 openssl s_client \
-  -connect [hostname]:443 \
+  -connect <hostname>:443 \
   -showcerts
 
 # Export
 openssl s_client \
-  -connect [hostname]:443 \
+  -connect <hostname>:443 \
   -showcerts \
-  -servername [hostname] < /dev/null 2> /dev/null | \
-    openssl x509 -outform PEM > [filename].pem
+  -servername <hostname> < /dev/null 2> /dev/null | \
+    openssl x509 -outform PEM > <filename>.pem
 ```
 
 ### Tips
@@ -151,8 +151,8 @@ ls /etc/ssl/{certs,private}/example
 
 ```sh
 openssl req \
-  -out [filename].csr \
-  -key [filename].key \
+  -out <filename>.csr \
+  -key <filename>.key \
   -new
 ```
 
@@ -161,9 +161,9 @@ openssl req \
 ```sh
 openssl x509 \
   -x509toreq \
-  -in [filename].crt \
-  -out [filename].csr \
-  -signkey [filename].key
+  -in <filename>.crt \
+  -out <filename>.csr \
+  -signkey <filename>.key
 
 # Show
 openssl x509 \
@@ -176,8 +176,8 @@ openssl x509 \
 
 ```sh
 openssl rsa \
-  -in [filename].pem \
-  -out [filename].pem
+  -in <filename>.pem \
+  -out <filename>.pem
 ```
 
 #### Convert
@@ -186,19 +186,19 @@ openssl rsa \
 # PEM to DER/CRT
 openssl x509 \
   -inform PEM \
-  -in [filename].pem \
+  -in <filename>.pem \
   -outform DER \
-  -out [filename].[der|crt]
+  -out <filename>.<der|crt>
 
 # Convert DER to PEM
 openssl x509 \
   -inform DER \
-  -in [filename].der
+  -in <filename>.der
   -outform PEM \
-  -out [filename].pem
+  -out <filename>.pem
 
 # Convert CRT and KEY to PEM
-cat [filename].crt [filename].key > [filename].pem
+cat <filename>.crt <filename>.key > <filename>.pem
 ```
 
 #### Export Web Self-signed Certificate
@@ -207,12 +207,12 @@ cat [filename].crt [filename].key > [filename].pem
 # Remote show
 echo -n | \
   openssl s_client \
-    -connect [hostname]:443 \
+    -connect <hostname>:443 \
     -showcerts
 
 # Export
 echo -n | \
-  openssl s_client -connect [hostname]:443 | \
+  openssl s_client -connect <hostname>:443 | \
   openssl x509 \
     -outform PEM \
       > ./selfsigned_certificate.pem
@@ -229,9 +229,9 @@ openssl x509 \
 #### Download From Website
 
 ```sh
-curl '[url]' | \
+curl '<url>' | \
   grep -o '<a href=".*\.der">' | \
-    sed -n 's|.*href="\([^"]*\).*|[domain]\1|p' | \
+    sed -n 's|.*href="\([^"]*\).*|<domain>\1|p' | \
       parallel -N 5 wget -
 
 for cert in $(ls -1 *.der); do

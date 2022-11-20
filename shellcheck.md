@@ -86,3 +86,9 @@ Not following: ./_/husky.sh was not specified as input (see shellcheck -x). shel
 ```
 
 TODO
+
+<!--
+if command -v shellcheck > /dev/null; then
+  npm run lint:sh
+fi
+-->

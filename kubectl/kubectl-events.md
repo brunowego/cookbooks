@@ -2,9 +2,7 @@
 
 **Keyword:** Kubernetes Warnings
 
-## CLI
-
-### Usage
+## Usage
 
 ```sh
 # Watch the events

@@ -1,8 +1,6 @@
 # kubectl-config
 
-## CLI
-
-### Usage
+## Usage
 
 ```sh
 #
@@ -10,9 +8,9 @@ kubectl config view
 kubectl config view --raw
 ```
 
-### Tips
+## Tips
 
-#### Add Cluster
+### Add Cluster
 
 ```sh
 #
@@ -47,7 +45,7 @@ kubectl config use-context \
 kubectl cluster-info
 ```
 
-#### Delete Cluster
+### Delete Cluster
 
 ```sh
 kubectl config delete-context [context-name]
@@ -55,7 +53,7 @@ kubectl config delete-cluster [cluster-name]
 kubectl config unset users.[name]
 ```
 
-#### Testing User
+### Testing User
 
 ```sh
 #
@@ -76,7 +74,7 @@ kubectl config view
 kubectl get pods -v 6
 ```
 
-#### Extract Certificate
+### Extract Certificate
 
 ```sh
 #

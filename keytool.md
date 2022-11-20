@@ -8,16 +8,19 @@
 keytool -help
 ```
 
-### Usage
+### Configuration
 
 ```sh
 mkdir -p "$JAVA_HOME/jre/lib/security/cacerts"
 ```
 
+### Usage
+
 ```sh
 # List
 keytool -list
 
+#
 keytool -list \
   -keystore "$JAVA_HOME/jre/lib/security/cacerts" \
   -storepass changeit
@@ -33,7 +36,7 @@ keytool -importcert \
 
 # Delete
 keytool -delete \
-  -alias [name] \
+  -alias <name> \
   -keystore "$JAVA_HOME/jre/lib/security/cacerts" \
   -storepass changeit
 ```
@@ -46,6 +49,45 @@ keytool -exportcert -alias [host]-1 -keystore jssecacerts -storepass changeit -f
 
 # Import certificate into system keystore
 keytool -importcert -alias [host] -keystore [path to system keystore] -storepass changeit -file [host].cer
+``` -->
+
+<!-- #### CA Signed Certificate
+
+```sh
+keytool \
+  -certreq \
+  -alias datalayer \
+  -keystore datalayer.jks \
+  -file datalayer.csr
+``` -->
+
+<!-- #### Self-Signed Certificate
+
+```sh
+keytool \
+  -keystore datalayer.jks \
+  -alias datalayer \
+  -genkey \
+  -keyalg RSA \
+  -sigalg SHA256withRSA \
+  -validity 365
+```
+
+```sh
+keytool -keystore keystore -alias doc-api -genkey -keyalg RSA
+keytool -keystore keystore -alias doc-api -genkey -keyalg RSA -sigalg SHA256withRSA
+keytool -keystore keystore -alias doc-api -genkey -keyalg RSA -sigalg SHA256withRSA -ext 'SAN=dns:doc.datalayer.io,dns:*.datalayer.io'
+``` -->
+
+<!-- #### Load Certificate
+
+```sh
+keytool \
+  -keystore datalayer.jks \
+  -import \
+  -alias datalayer \
+  -file certificate.crt \
+  -trustcacerts
 ``` -->
 
 <!-- ### Issues

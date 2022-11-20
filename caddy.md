@@ -179,6 +179,30 @@ caddy reverse-proxy \
 code --install-extension zamerick.vscode-caddyfile-syntax
 ```
 
+<!-- #### Caddy Configuration
+
+```sh
+# Homebrew
+cat << EOF > /usr/local/etc/Caddyfile
+:80 {
+  root /var/www/html
+
+  fastcgi / 127.0.0.1:9000 php {
+    index index.php
+  }
+
+  gzip
+
+  tls admin@example.com
+}
+EOF
+```
+
+```sh
+# Homebrew
+brew services restart caddy
+``` -->
+
 <!-- #### PHP-FPM
 
 ```sh

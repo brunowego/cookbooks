@@ -1,13 +1,9 @@
 # Pritunl
 
-<!--
-https://github.com/trailofbits/algo
-https://www.redhat.com/sysadmin/ssh-proxy-bastion-proxyjump
--->
-
 ## Link
 
 - [Code Repository](https://github.com/pritunl/pritunl)
+- [Main Website](https://pritunl.com/)
 
 ## CLI
 

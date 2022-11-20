@@ -40,122 +40,63 @@ https://github.com/swilliams11/apigee-istio-k8s-demo#prep-script
 
 - [Hipster Shop: Cloud-Native Microservices Demo Application](https://github.com/GoogleCloudPlatform/microservices-demo)
 
-## Helm
+<!-- ## Helm
 
 ### References
 
-- [Configuration](https://github.com/istio/istio/tree/master/install/kubernetes/helm/istio#configuration)
+- [Charts](https://github.com/istio/istio/tree/master/manifests/charts)
 
 ### Repository
 
 ```sh
-helm repo add istio.io https://storage.googleapis.com/istio-release/releases/1.3.0/charts
+helm repo add istio 'https://istio-release.storage.googleapis.com/charts'
 helm repo update
 ```
 
 ### Install
 
 ```sh
+#
 kubectl create ns istio-system
-```
 
-```sh
-helm install istio-init istio.io/istio-init \
-  --namespace istio-system
-```
+#
+helm search repo -l istio/istiod
 
-```sh
-kubectl get crds | grep 'istio.io' | wc -l
-```
-
-```sh
-helm install istio istio.io/istio \
+#
+helm install istiod istio/istiod \
   --namespace istio-system \
-  --set grafana.enabled=true \
-  --set tracing.enabled=true \
-  --set kiali.enabled=true \
-  --set kiali.dashboard.jaegerURL='http://jaeger-query.istio-system.svc.cluster.local:16686' \
-  --set kiali.dashboard.grafanaURL='http://grafana.istio-system.svc.cluster.local:3000' \
+  --version 1.16.0
+
+#
+kubectl get all -n istio-system
 ```
-
-### Labels
-
-```sh
-kubectl label namespace default istio-injection=enabled
-```
-
-### SSL
-
-### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-<!-- #### Create
-
-TODO -->
-
-<!-- #### Remove
-
-TODO -->
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/istio-pilot -n istio-system
+kubectl rollout status statefulset/istio-istiod \
+  -n istio-system
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app=pilot' -c discovery -n istio-system -f
-kubectl logs -l 'app=pilot' -c istio-proxy -n istio-system -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 istio-pilot.istio-system.svc.cluster.local +short
-nslookup istio-pilot.istio-system.svc.cluster.local 10.96.0.10
-```
-
-### Secret
-
-```sh
-cat << EOF | kubectl apply -f -
-apiVersion: v1
-kind: Secret
-metadata:
-  name: kiali
-  namespace: istio-system
-  labels:
-    app: kiali
-type: Opaque
-data:
-  username: $(echo -n 'admin' | base64)
-  passphrase: $(echo -n 'admin' | base64)
-EOF
-```
-
-```sh
-kubectl delete pod -l 'app=kiali' -n istio-system
-```
-
-```sh
-kubectl get secret kiali \
-  -o jsonpath='{.data.passphrase}' \
-  -n istio-system | \
-    base64 -d; echo
+kubectl logs \
+  -l 'app=istio' \
+  -n istio-system \
+  -f
 ```
 
 ### Delete
 
 ```sh
-helm uninstall istio -n istio
-helm uninstall istio-init -n istio-init
-kubectl delete ns istio-system --grace-period=0 --force
+helm uninstall istiod \
+  -n istio-system
 
-kubectl get crd -o json | jq -r '.items[] | select(.spec.group | contains("istio.io")) | .metadata.name' | xargs kubectl delete crd
-```
+kubectl delete ns istio-system \
+  --grace-period=0 \
+  --force
+``` -->
 
 ## CLI
 

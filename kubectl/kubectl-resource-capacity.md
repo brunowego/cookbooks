@@ -6,23 +6,21 @@
 
 - [Code Repository](https://github.com/robscott/kube-capacity)
 
-## CLI
+## Installation
 
-### Installation
-
-#### Krew
+### Krew
 
 ```sh
 kubectl krew install resource-capacity
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl resource-capacity -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

@@ -12,13 +12,13 @@
 kubectl krew install cost
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl cost -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

@@ -59,13 +59,13 @@ AUTH LOGIN
 ```
 
 ```sh
-echo -n '[uername]@gmail.com' | openssl base64
-echo -n '[password]' | openssl base64
+echo -n '<uername>@gmail.com' | openssl base64
+echo -n '<password>' | openssl base64
 ```
 
 ```txt
 MAIL FROM: <noreply@example.com>
-RCPT TO: <[username]@gmail.com>
+RCPT TO: <<username>@gmail.com>
 DATA
 Subject: Sending an email using telnet
 

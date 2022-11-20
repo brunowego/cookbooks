@@ -109,20 +109,20 @@ curl -h
 
 ```sh
 # Insecure SSL
-curl -Ik https://[hostname]
+curl -Ik https://<hostname>
 
 curl -Ik \
-  --resolve [hostname]:[ip] \
-  https://[hostname]
+  --resolve <hostname>:<ip> \
+  https://<hostname>
 
 # Upload File
-curl -F 'file=@path/to/local/file' https://[hostname]
+curl -F 'file=@path/to/local/file' https://<hostname>
 
 # Multiple files
-curl -F 'fileX=@/path/to/fileX' -F 'fileY=@/path/to/fileY' https://[hostname]
+curl -F 'fileX=@/path/to/fileX' -F 'fileY=@/path/to/fileY' https://<hostname>
 
 # Array of Files
-curl -F 'files[]=@/path/to/fileX' -F 'files[]=@/path/to/fileY' https://[hostname]
+curl -F 'files[]=@/path/to/fileX' -F 'files[]=@/path/to/fileY' https://<hostname>
 
 #
 curl \
@@ -139,17 +139,17 @@ curl \
   -H "Content-Type:application/json" \
   -H "X-Auth:AuthKey" \
   --data @hello.json \
-  https://[hostname]
+  https://<hostname>
 
 #
-curl -s https://[hostname] | jq .
+curl -s https://<hostname> | jq .
 
 #
-curl -s https://[hostname]; echo
+curl -s https://<hostname>; echo
 
 #
-curl https://[hostname] \
-  --output [filename]
+curl https://<hostname> \
+  --output <filename>
 ```
 
 ### Tips
@@ -279,9 +279,9 @@ sudo mv /etc/ssl/cacert.pem /etc/ssl/cert.pem
 <!-- ####
 
 ```log
-curl: (35) OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to [domain]:443
+curl: (35) OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to <domain>:443
 ```
 
 ```sh
-openssl s_client -connect [domain]:443
+openssl s_client -connect <domain>:443
 ``` -->

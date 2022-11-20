@@ -169,12 +169,15 @@ kubectl delete \
 ```sh
 # Enable
 minikube addons -p minikube-default enable ingress
-# minikube addons -p minikube-default enable ingress-dns
 
 # Disable
 minikube addons -p minikube-default disable ingress
-# minikube addons -p minikube-default disable ingress-dns
 ```
+
+<!--
+minikube addons -p minikube-default enable ingress-dns
+minikube addons -p minikube-default disable ingress-dns
+-->
 
 ## Helm
 

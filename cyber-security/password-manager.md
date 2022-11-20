@@ -27,7 +27,7 @@
 - [Bitwarden](/bitwarden.md)
 - [Passbolt Community Edition (CE)](/passbolt-ce.md)
 
-## Secrets Manager
+## Secret Store
 
 - [HashiCorp Vault](/hashicorp/vault/README.md)
 

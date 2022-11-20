@@ -9,6 +9,10 @@ A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifa
 - [Code Repository](https://github.com/aquasecurity/trivy)
 - [Main Website](https://trivy.dev/)
 
+## Glossary
+
+- Software Bill of Materials (SBOM)
+
 ## CLI
 
 ### Installation

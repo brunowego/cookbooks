@@ -5,9 +5,15 @@ https://linkedin.com/learning/learning-video-live-streaming/welcome
 https://linkedin.com/learning/delivering-video-to-facebook-live/welcome-and-what-you-should-know-before-starting-this-course
 -->
 
+**Keywords:** Screencasting, Streaming App
+
 ## Links
 
 - [Code Repository](https://github.com/obsproject/obs-studio)
+
+## Glossary
+
+- Real Time Messaging Protocol (RTMP)
 
 ## App
 
@@ -43,6 +49,13 @@ choco install -y obs-studio
 ```
 
 ### Configuration
+
+<!-- ####
+
+1. Settings
+2. General -> Output
+   - Check Show confirmation dialog when starting streams
+   - Check Show confirmation dialog when stopping streams -->
 
 #### Streaming
 

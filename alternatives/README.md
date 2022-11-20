@@ -32,19 +32,6 @@ https://intercom.com/
 - [Sonatype DepShield](https://community.sonatype.com/c/depshield)
 - [Snyk](https://snyk.io/)
 
-## Code Secrets
-
-<!--
-https://gitguardian.com/
--->
-
-- [detect-secrets](/detect-secrets.md)
-- [git-secrets](/git-secrets.md)
-- [Gitleaks](/gitleaks.md)
-- [shhgit](/shhgit.md)
-- [truffleHog](/trufflehog.md)
-- [Whispers](https://github.com/Skyscanner/whispers)
-
 ## Network Bandwidth Monitoring
 
 - [bmon](/bmon.md)

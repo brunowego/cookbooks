@@ -11,14 +11,15 @@ Pró-Labore
 
 ## Links
 
-- [Y Combinator](https://ycombinator.com/)
 - [500](https://500.co/)
+- [Y Combinator](https://ycombinator.com/)
 
 ## References
 
-- [Why ‘Winner Takes All’ Startups Leave Everyone Behind](https://marker.medium.com/why-winner-takes-all-leaves-everyone-behind-19bd756e1610)
 - [AcquiredBy](https://acquiredby.co/)
+- [Awesome CTO](https://github.com/kuchin/awesome-cto)
 - [Google for Startups / Start](https://startup.google.com/start/)
+- [Why ‘Winner Takes All’ Startups Leave Everyone Behind](https://marker.medium.com/why-winner-takes-all-leaves-everyone-behind-19bd756e1610)
 
 ## Tools
 

@@ -1,18 +1,16 @@
 # kubectl-diff
 
-## CLI
-
-### Dependencies
+## Dependencies
 
 - [colordiff](/colordiff.md)
 
-### Commands
+## Commands
 
 ```sh
 kubectl diff -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

@@ -27,11 +27,6 @@ https://github.com/pbnj/pbnj.github.io/blob/6b68214fb58f1ec46e91a4d611e7e3b928ac
 
 **Keywords:** Policy Management
 
-## Alternatives
-
-- [Kyverno](/kyverno.md)
-- [Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
-
 ## Links
 
 - [Code Repository](https://github.com/open-policy-agent/opa)

@@ -4,28 +4,26 @@
 
 - [Code Repository](https://github.com/steveteuber/kubectl-graph)
 
-## CLI
-
-### Dependencies
+## Dependencies
 
 - [Graphviz](/graphviz.md)
 - [Cypher Shell](/cypher-shell.md)
 
-### Installation
+## Installation
 
 ```sh
 kubectl krew install graph
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl graph -h
 ```
 
-### Usage
+## Usage
 
-#### Graphviz
+### Graphviz
 
 ```sh
 #
@@ -43,7 +41,7 @@ open ./pods.svg
 rm ./pods.svg
 ```
 
-#### Neo4j
+### Neo4j
 
 **Dependencies:** Run [Neo4j](/neo4j.md#docker)
 

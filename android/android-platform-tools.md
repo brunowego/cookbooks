@@ -36,6 +36,14 @@ adb forward tcp:27042 tcp:27042
 
 #
 adb shell pm uninstall --user 0 <app-id>
+
+#
+adb shell reboot -p
+adb shell halt
+
+#
+adb shell pm clear package
+adb uninstall package
 -->
 
 ### Tips

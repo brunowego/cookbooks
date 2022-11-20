@@ -44,7 +44,7 @@ mkdir -p ~/.ssh/costumers/"${COSTUMER_NAME}"
 #
 cat << EOF > "$COSTUMER_ID_RSA_FILE"
 -----BEGIN OPENSSH PRIVATE KEY-----
-
+# ...
 -----END OPENSSH PRIVATE KEY-----
 EOF
 

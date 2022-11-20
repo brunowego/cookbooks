@@ -14,6 +14,10 @@ https://linkedin.com/learning/database-foundations-administration-8375189/admini
 
 - [Scaling Databases](https://roadmap.sh/guides/scaling-databases)
 
+## Time-Series
+
+- [GreptimeDB](https://github.com/GreptimeTeam/greptimedb)
+
 ## Relational Database Management System (RDBMS)
 
 - DB2 IBM Company

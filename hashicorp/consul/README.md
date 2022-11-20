@@ -1,10 +1,15 @@
 # HashiCorp Consul
 
+## Links
+
+- [Code Repository](https://github.com/hashicorp/consul)
+- [Main Website](https://consul.io/)
+
 ## Helm
 
 ### References
 
-- [Chart Repository](https://github.com/hashicorp/consul-helm)
+- [Chart Repository](https://github.com/hashicorp/consul-k8s/tree/main/charts/consul)
 
 ### Repository
 
@@ -17,19 +22,23 @@ helm repo update
 
 ```sh
 #
-kubectl create ns consul
+kubectl create ns consul-system
+
+#
+helm search repo -l hashicorp/consul
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-helm upgrade consul hashicorp/consul \
-  --namespace consul \
-  --version 0.32.1 \
+helm install consul hashicorp/consul \
+  --namespace consul-system \
+  --version 0.49.1 \
   -f <(cat << EOF
 server:
   enabled: true
+  affinity: null
 
 dns:
   enabled: true
@@ -58,7 +67,7 @@ kubectl get prometheus \
 
 #
 helm upgrade consul hashicorp/consul \
-  --namespace consul \
+  --namespace consul-system \
   -f <(yq m <(cat << EOF
 global:
   metrics:
@@ -75,7 +84,7 @@ EOF
 
 ```sh
 kubectl rollout status statefulset/consul-consul-server \
-  -n consul
+  -n consul-system
 ```
 
 ### Logs
@@ -84,7 +93,7 @@ kubectl rollout status statefulset/consul-consul-server \
 kubectl logs \
   -l 'app=consul' \
   --max-log-requests 6 \
-  -n consul \
+  -n consul-system \
   -f
 ```
 
@@ -92,9 +101,9 @@ kubectl logs \
 
 ```sh
 helm uninstall consul \
-  -n consul
+  -n consul-system
 
-kubectl delete ns consul \
+kubectl delete ns consul-system \
   --grace-period=0 \
   --force
 ```

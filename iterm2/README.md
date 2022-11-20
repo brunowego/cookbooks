@@ -1,5 +1,7 @@
 # iTerm2
 
+**Keyword:** Terminal
+
 ## App
 
 ### Installation

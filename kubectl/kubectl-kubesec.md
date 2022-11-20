@@ -5,21 +5,19 @@
 - [Code Repository](https://github.com/controlplaneio/kubectl-kubesec)
 - [Main Website](https://kubesec.io/)
 
-## CLI
-
-### Installation
+## Installation
 
 ```sh
 kubectl krew install kubesec-scan
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl kubesec-scan -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

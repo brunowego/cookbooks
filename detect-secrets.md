@@ -1,13 +1,10 @@
 # detect-secrets
 
-<!--
-https://github.com/auth0/repo-supervisor
--->
+**Keywords:** Secrets Detection, SAST
 
 ## Links
 
 - [Code Repository](https://github.com/Yelp/detect-secrets)
-- [Alternatives](/alternatives.md#code-secrets)
 
 ## CLI
 

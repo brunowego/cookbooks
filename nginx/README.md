@@ -399,6 +399,13 @@ tail -f /var/log/nginx/error.log
 
 ## Docker
 
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
 ### Running
 
 ```sh
@@ -408,6 +415,7 @@ docker run -d \
   -v nginx-conf:/etc/nginx/conf.d \
   -p 8080:80 \
   --name nginx \
+  --network workbench \
   docker.io/library/nginx:1.17.5-alpine
 ```
 

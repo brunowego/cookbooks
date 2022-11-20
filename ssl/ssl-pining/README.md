@@ -18,11 +18,14 @@ https://github.com/Eltion/Facebook-SSL-Pinning-Bypass
 https://security.stackexchange.com/questions/169913/ios-android-certificate-pinning-with-lets-encrypt
 -->
 
+**Keywords:** Penetration Test (a.k.a. Pentest)
+
 ## Docs
 
 - [Certificate and Public Key Pinning](https://owasp.org/www-community/controls/Certificate_and_Public_Key_Pinning)
-- [What is certificate pinning?](https://digicert.com/blog/certificate-pinning-what-is-certificate-pinning)
 - [OWASP Cheat Sheet Series / Pinning Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Pinning_Cheat_Sheet.html)
+- [Preventing Man-in-the-Middle Attacks in iOS with SSL Pinning](https://kodeco.com/1484288-preventing-man-in-the-middle-attacks-in-ios-with-ssl-pinning) 🌟
+- [What is certificate pinning?](https://digicert.com/blog/certificate-pinning-what-is-certificate-pinning)
 
 ## Discussion
 
@@ -43,7 +46,9 @@ https://security.stackexchange.com/questions/169913/ios-android-certificate-pinn
 
 ## Terms
 
+- HPKP Suicide
 - Obfuscate Smali
+- RansomPKP
 - Threat Modeling
 
 ## Cyberattack

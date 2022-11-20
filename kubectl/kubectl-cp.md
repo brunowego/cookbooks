@@ -1,14 +1,12 @@
 # kubectl-cp
 
-## CLI
-
-### Commands
+## Commands
 
 ```sh
 kubectl cp -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

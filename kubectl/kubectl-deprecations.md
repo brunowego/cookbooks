@@ -12,13 +12,13 @@
 kubectl krew install deprecations
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl deprecations -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

@@ -1,14 +1,12 @@
 # kubectl-auth
 
-## CLI
-
-### Commands
+## Commands
 
 ```sh
 kubectl auth -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

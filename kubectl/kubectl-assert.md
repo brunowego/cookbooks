@@ -12,13 +12,13 @@
 kubectl krew install assert
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl assert -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

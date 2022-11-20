@@ -4,21 +4,21 @@
 
 - [Code Repository](https://github.com/bergerx/kubectl-status)
 
-## CLI
+## Installation
 
-### Installation
+### Krew
 
 ```sh
 kubectl krew install status
 ```
 
-### Commands
+## Commands
 
 ```sh
 kubectl status -h
 ```
 
-### Usage
+## Usage
 
 ```sh
 #

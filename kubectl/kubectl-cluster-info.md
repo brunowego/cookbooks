@@ -1,8 +1,6 @@
 # kubectl-cluster-info
 
-## CLI
-
-### Usage
+## Usage
 
 ```sh
 #

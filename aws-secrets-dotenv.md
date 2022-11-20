@@ -34,3 +34,27 @@ aws-secrets-dotenv \
     '[secret-id]' \
     -f ./.env
 ```
+
+<!--
+#### Manual Creation
+
+```sh
+#
+aws-secrets-dotenv \
+  --aws-region 'us-east-1' \
+  get \
+    '[secret-id]' \
+    -f ./.env
+
+#
+kubectl create secret generic [name] \
+  -n [namespace] \
+  --from-env-file=./.env
+
+#
+kubectl get secret [name] \
+  -n [namespace] \
+  -o yaml | \
+    kubectl neat
+```
+-->

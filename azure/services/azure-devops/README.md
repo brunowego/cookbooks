@@ -12,6 +12,8 @@ https://linkedin.com/learning/azure-devops-continuous-delivery-with-yaml-pipelin
 https://linkedin.com/learning/azure-for-devops-implementing-development-processes/why-process-matters-in-devops
 -->
 
+**Keywords:** Git Service
+
 ## Links
 
 - [Projects](https://dev.azure.com/)
