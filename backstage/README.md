@@ -1,15 +1,16 @@
 # Backstage
 
 <!--
-https://github.com/backstage/backstage/tree/master/contrib/chart/backstage
-https://nocomplexity.com/spotify-backstage/
-https://github.com/backstage/backstage/tree/master/contrib/chart/backstage
+TODO NEXT
 -->
+
+**Keywords:** Developer Portal, Software Catalog
 
 ## Links
 
 - [Code Repository](https://github.com/backstage/backstage)
 - [Main Website](https://backstage.io/)
+- [Demo](https://demo.backstage.io/)
 
 ## References
 
@@ -32,7 +33,10 @@ helm repo update
 
 ```sh
 #
-kubectl create ns backstage
+kubectl create ns backstage-system
+
+#
+helm search repo -l deliveryhero/backstage
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
@@ -40,30 +44,48 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install backstage deliveryhero/backstage \
-  --namespace backstage \
+  --namespace backstage-system \
   --version 0.1.12 \
   -f <(cat << EOF
+ingress:
+  ingressClassName: nginx
+
+database:
+  create: true
+
 appConfig:
   app:
     baseUrl: http://backstage.${DOMAIN}
+    title: Backstage
   backend:
     baseUrl: http://backstage.${DOMAIN}
     cors:
       origin: http://backstage.${DOMAIN}
+  lighthouse:
+    baseUrl: http://backstage.${DOMAIN}/lighthouse-api
   techdocs:
     storageUrl: http://backstage.${DOMAIN}/api/techdocs/static/docs
     requestUrl: http://backstage.${DOMAIN}/api/techdocs
-  lighthouse:
-    baseUrl: http://backstage.${DOMAIN}/lighthouse-api
 EOF
 )
+
+#
+kubectl get all -n backstage-system
 ```
+
+<!--
+kubectl port-forward \
+  --address 0.0.0.0 \
+  -n backstage-system \
+  svc/backstage-backend \
+  8080:80
+-->
 
 ### Status
 
 ```sh
 kubectl rollout status deploy/backstage-backend \
-  -n backstage
+  -n backstage-system
 ```
 
 ### Logs
@@ -71,17 +93,32 @@ kubectl rollout status deploy/backstage-backend \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/instance=backstage' \
-  -n backstage \
+  -n backstage-system \
   -f
 ```
+
+<!-- ### Issues -->
+
+<!-- ####
+
+```log
+Error: INSTALLATION FAILED: unable to build kubernetes objects from release manifest: [resource mapping not found for name: "backstage-ingress" namespace: "" from "": no matches for kind "Ingress" in version "networking.k8s.io/v1beta1"
+ensure CRDs are installed first, resource mapping not found for name: "backstage-ingress-lighthouse" namespace: "" from "": no matches for kind "Ingress" in version "networking.k8s.io/v1beta1"
+ensure CRDs are installed first]
+```
+
+{{- if .Values.ingress.ingressClassName }}
+ingressClassName: {{ .Values.ingress.ingressClassName }}
+{{- end }}
+-->
 
 ### Delete
 
 ```sh
 helm uninstall backstage \
-  -n backstage
+  -n backstage-system
 
-kubectl delete ns backstage \
+kubectl delete ns backstage-system \
   --grace-period=0 \
   --force
 ```

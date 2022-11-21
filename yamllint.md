@@ -5,34 +5,6 @@
 - [Code Repository](https://github.com/adrienverge/yamllint)
 - [Main Website](https://yamllint.readthedocs.io/en/stable/index.html)
 
-## Docker
-
-### Build
-
-```sh
-cat << EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t example/yamllint -
-FROM docker.io/alpine:3.9
-
-RUN apk add -q --no-cache py3-setuptools==40.6.3-r0
-
-RUN pip3 install --no-cache-dir \
-      yamllint===1.16.0
-
-ENTRYPOINT ["/usr/bin/yamllint"]
-
-EOF
-```
-
-### Running
-
-```sh
-docker run -it --rm \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h yamllint \
-  --name yamllint \
-  example/yamllint:latest -h
-```
-
 ## CLI
 
 ### Installation
@@ -137,4 +109,32 @@ rules:
   # ...
   comments:
     min-spaces-from-content: 1
+```
+
+## Docker
+
+### Build
+
+```sh
+cat << EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t example/yamllint -
+FROM docker.io/alpine:3.9
+
+RUN apk add -q --no-cache py3-setuptools==40.6.3-r0
+
+RUN pip3 install --no-cache-dir \
+      yamllint===1.16.0
+
+ENTRYPOINT ["/usr/bin/yamllint"]
+
+EOF
+```
+
+### Running
+
+```sh
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h yamllint \
+  --name yamllint \
+  example/yamllint:latest -h
 ```

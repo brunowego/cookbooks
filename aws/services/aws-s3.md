@@ -11,6 +11,7 @@
 
 ## Guides
 
+- [I'm using the Amazon S3 static website feature but getting an Access Denied error. Why is this happening?](https://aws.amazon.com/premiumsupport/knowledge-center/s3-static-website-endpoint-error/)
 - [How can I provide cross-account access to objects that are in Amazon S3 buckets?](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-s3/)
 
 ## CLI
@@ -86,3 +87,31 @@ aws s3 sync s3://ORIGIN-BUCKET-NAME s3://DESTINATION-BUCKET-NAME/OPTIONAL-FOLDER
   --source-region ORIGIN-REGION \
   --region DESTINATION-REGION
 -->
+
+<!--
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid":"PublicReadGetObject",
+			"Principal": "*",
+			"Effect":"Allow",
+			"Action":["s3:GetObject"],
+			"Resource":["arn:aws:s3:::example-bucket/*"]
+		}
+	]
+}
+-->
+
+### Tips
+
+#### Bucket Sync
+
+```sh
+#
+aws s3 ls s3://<source>
+aws s3 ls s3://<target>
+
+#
+aws s3 sync s3://<source> s3://<target>
+```

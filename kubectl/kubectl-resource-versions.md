@@ -1,5 +1,7 @@
 # kubectl-resource-versions
 
+**Keywords:** Kubernetes API Version
+
 ## Links
 
 - [Code Repository](https://github.com/chengshiwen/kubectl-resource-versions)
@@ -23,4 +25,7 @@ kubectl resource-versions -h
 ```sh
 #
 kubectl resource-versions
+
+#
+kubectl resource-versions | grep networking.k8s.io
 ```

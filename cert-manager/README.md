@@ -40,15 +40,27 @@ https://github.com/cert-manager/cert-manager/issues/921
 brew install cmctl
 ```
 
+#### Linux Binary
+
+```sh
+CMCTL_VERSION="$(curl -s https://api.github.com/repos/cert-manager/cert-manager/releases/latest | grep tag_name | cut -d '"' -f 4 | tr -d 'v')"; \
+  curl -L \
+    "https://github.com/cert-manager/cert-manager/releases/download/v${CMCTL_VERSION}/cmctl-linux-amd64.tar.gz" | \
+      tar -xzC /usr/local/bin cmctl
+```
+
 ### Commands
 
 ```sh
 cmctl -h
 ```
 
-<!-- ### Usage
+### Usage
 
-TODO -->
+```sh
+#
+cmctl status
+```
 
 ## Lens (Non-official)
 
@@ -63,13 +75,6 @@ lens://app/extensions/install/lens-certificate-info
 -->
 
 ## Helm
-
-<!--
-quay.io/jetstack/cert-manager-controller
-quay.io/jetstack/cert-manager-webhook
-quay.io/jetstack/cert-manager-cainjector
-quay.io/jetstack/cert-manager-ctl
--->
 
 ### References
 
@@ -90,14 +95,15 @@ helm repo update
 
 ```sh
 #
-kubectl create ns cert-manager
+kubectl create ns cert-system
+# kubectl create ns security
 
 #
 helm search repo -l jetstack/cert-manager
 
 #
 helm install cert-manager jetstack/cert-manager \
-  --namespace cert-manager \
+  --namespace cert-system \
   --version v1.10.0 \
   -f <(cat << EOF
 installCRDs: true
@@ -110,192 +116,25 @@ prometheus:
   enabled: false
 EOF
 )
+
+#
+kubectl get all -n cert-system
 ```
 
 ### Status
 
 ```sh
 kubectl rollout status deploy/cert-manager \
-  -n cert-manager
+  -n cert-system
 ```
-
-### Cluster Issuer
-
-```sh
-#
-cat << EOF | kubectl apply \
-  -n cert-manager \
-  -f -
-apiVersion: cert-manager.io/v1
-kind: ClusterIssuer
-metadata:
-  name: letsencrypt-issuer
-spec:
-  acme:
-    server: https://acme-v02.api.letsencrypt.org/directory
-    email: brunowego@gmail.com
-    privateKeySecretRef:
-      name: letsencrypt-issuer
-    solvers:
-    - http01:
-        ingress:
-          class: nginx
-    # - selector:
-    #     dnsZones:
-    #     - domain.com
-    #   dns01:
-    #     route53:
-    #       region: eu-east-1
-    #       accessKeyID: <SECRET>
-    #       secretAccessKeySecretRef:
-    #         name: cert-manager-route53
-    #         key: AWS_SECRET_ACCESS_KEY
-EOF
-
-#
-kubectl get clusterissuer -o wide
-
-#
-kubectl describe clusterissuer letsencrypt-issuer
-```
-
-<!-- ####
-
-Identity and Access Management (IAM) -> Users -> letsencrypt-issuer
-Identity and Access Management (IAM) -> Policies -> letsencrypt-issuer
-
-```sh
-cat << EOF > ./letsencrypt-issuer.json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "route53:GetChange",
-      "Resource": "arn:aws:route53:::change/*"
-    },
-    {
-      "Effect": "Allow",
-      "Action": "route53:ChangeResourceRecordSets",
-      "Resource": "arn:aws:route53:::hostedzone/*"
-    },
-    {
-      "Effect": "Allow",
-      "Action": "route53:ListHostedZonesByName",
-      "Resource": "*"
-    }
-  ]
-}
-EOF
-``` -->
-
-<!--
-kubectl patch ingress/mobilecapture-mobile-capture -p '{"metadata":{"annotations":{"cert-manager.io/issuer":"letsencrypt-prod"}}}'
--->
-
-### Ingress
-
-```sh
-#
-kubectl annotate ingress \
-  <ingress-name> \
-  cert-manager.io/cluster-issuer='letsencrypt-issuer'
-
-kubectl annotate ingress \
-  <ingress-name> \
-  kubernetes.io/ingress.class='nginx'
-```
-
-<!--
-letsencrypt-issuer
-letsencrypt-wildcard
-letsencrypt-staging
-letsencrypt-prod
--->
-
-### Tips
-
-#### Certificates
-
-```sh
-#
-kubectl get certificates -o wide
-
-#
-kubectl describe certificate <name>
-```
-
-#### Orders
-
-```sh
-#
-kubectl get certificaterequests
-
-#
-kubectl get orders
-
-#
-kubectl describe order <name>
-```
-
-#### Challenges
-
-```sh
-#
-kubectl get challenges
-
-#
-kubectl describe challenge <name>
-```
-
-### Issues
-
-<!-- ####
-
-```log
-The certificate request has failed to complete and will be retried: Failed to wait for order resource "<name>" to become ready: order is in "invalid" state:
-```
-
-TODO -->
-
-#### DNS Problem
-
-```log
-Error accepting authorization: acme: authorization error for [example.com]: 400 urn:ietf:params:acme:error:dns: During secondary validation: DNS problem: query timed out looking up TXT for _acme-challenge.[example.com]
-```
-
-```sh
-#
-kubectl get certificaterequests
-
-#
-kubectl delete certificaterequest <name>
-
-#
-kubectl get certificates -o wide
-
-#
-kubectl cert-manager renew <name>
-
-#
-kubectl cert-manager status certificate <name>
-```
-
-<!-- #### Rate Limit
-
-```log
-429 urn:ietf:params:acme:error:rateLimited: Error creating new order :: too many certificates already issued for: <domain>: see https://letsencrypt.org/docs/rate-limits/
-```
-
-TODO -->
 
 ### Delete
 
 ```sh
 helm uninstall cert-manager \
-  -n cert-manager
+  -n cert-system
 
-kubectl delete ns cert-manager \
+kubectl delete ns cert-system \
   --grace-period=0 \
   --force
 ```

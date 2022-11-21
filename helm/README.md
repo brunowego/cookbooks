@@ -53,6 +53,9 @@ helm -h
 ### Usage
 
 ```sh
+#
+helm env
+
 # Create
 helm create <name>
 
@@ -116,6 +119,16 @@ pkill helm
 #
 helm history
 ``` -->
+
+#### Clean Cache
+
+```sh
+#
+rm -fR "$(helm env HELM_REPOSITORY_CACHE)"/*
+
+#
+helm repo update
+```
 
 #### Upgrade Helm
 

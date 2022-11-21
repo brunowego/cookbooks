@@ -29,20 +29,22 @@ gcloud --help
 gcloud info
 
 #
+gcloud config configurations create <org-name>
+
+#
+gcloud auth list
+
+#
 gcloud auth login
-gcloud auth application-default login
 
 #
 gcloud config configurations list
 
 #
-cat ~/.config/gcloud/configurations/config_default
+ls ~/.config/gcloud/configurations
 
 #
 gcloud config get-value core/account
-
-#
-cat ~/.config/gcloud/application_default_credentials.json
 
 #
 gcloud projects list
@@ -87,3 +89,18 @@ gcloud container clusters get-credentials 'model-mgmt' --zone 'us-central1-a'
 #
 gcloud beta container clusters delete 'model-mgmt' --zone 'us-central1-a'
 -->
+
+### Tips
+
+#### Rename
+
+```sh
+#
+gcloud config configurations list
+
+#
+gcloud config configurations rename <current-name> --new-name <new-name>
+
+#
+gcloud config configurations activate <new-name>
+```

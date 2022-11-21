@@ -1,6 +1,10 @@
 # Datree
 
 <!--
+TODO NEXT
+-->
+
+<!--
 helm plugin install https://github.com/datreeio/helm-datree
 -->
 

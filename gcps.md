@@ -1,8 +1,14 @@
 # Google Cloud Profile Switcher (GCPS)
 
+**Keywords:** GCP Profile Switcher
+
 ## Links
 
 - [Code Repository](https://github.com/daftcreations/gcps)
+
+## Related
+
+- [Google Cloud SDK](/google-cloud/services/google-cloud-sdk.md)
 
 ## CLI
 
@@ -23,6 +29,12 @@ gcps --help
 ### Usage
 
 ```sh
+#
+ls ~/.config/gcloud
+
+#
+gcps
+
 #
 gcps <profile-name>
 

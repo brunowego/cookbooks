@@ -8,6 +8,7 @@
 ## Docs
 
 - [Glossary](https://letsencrypt.org/docs/glossary/)
+- [Staging Environment](https://letsencrypt.org/docs/staging-environment/)
 - [ACME Client Implementations](https://letsencrypt.org/docs/client-options/)
 - [DST Root CA X3 Expiration (September 2021)](https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/)
 

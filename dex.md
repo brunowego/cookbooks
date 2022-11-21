@@ -1,5 +1,9 @@
 # Dex IdP
 
+<!--
+TODO NEXT
+-->
+
 OpenID Connect (OIDC) identity and OAuth 2.0 provider with pluggable connectors.
 
 **Keywords:** Identity Provider (IdP)
@@ -19,6 +23,7 @@ https://aws.amazon.com/blogs/containers/using-dex-dex-k8s-authenticator-to-authe
 
 ## Links
 
+- [Code Repository](https://github.com/dexidp/dex)
 - [Main Website](https://github.com/dexidp/dex)
 
 ## Guides

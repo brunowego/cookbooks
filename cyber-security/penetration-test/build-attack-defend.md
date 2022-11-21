@@ -14,6 +14,10 @@ https://app.pluralsight.com/library/courses/purple-teaming-big-picture/table-of-
 - [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)
 - [Awesome Cybersecurity Blue Team](https://github.com/fabacab/awesome-cybersecurity-blueteam)
 
+## References
+
+- [Blue Team Notes](https://github.com/Purp1eW0lf/Blue-Team-Notes)
+
 ## Glossary
 
 - Security Operations Center (SOC)
