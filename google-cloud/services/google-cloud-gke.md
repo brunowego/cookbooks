@@ -10,6 +10,10 @@ gcp.credentials.file=${GCP_CREDENTIALS_PATH:/etc/credentials.json}
 
 ## CLI
 
+### Dependencies
+
+- [gke-gcloud-auth-plugin](/google-cloud/gke-gcloud-auth-plugin.md)
+
 ### Commands
 
 ```sh
@@ -20,9 +24,23 @@ gcloud container --help
 
 ```sh
 #
+gcloud config get-value project
+
+#
 gcloud container clusters list
+
+#
+gcloud container clusters get-credentials '<cluster-name>' \
+  --zone '<location>'
+
+#
+gcloud container images list
 ```
 
-<!--
-gcloud container images list --project google-containers
--->
+### Tips
+
+#### Check Permissions
+
+```sh
+kubectl auth can-i --list
+```

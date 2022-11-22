@@ -4,6 +4,8 @@
 https://martijnvanvreeden.nl/10-ways-to-improve-your-hugo-website-performance/
 -->
 
+**Keywords:** Static Site Generator
+
 ## Links
 
 - [Code Repository](https://github.com/gohugoio/hugo)
@@ -44,18 +46,22 @@ choco install hugo
 hugo -h
 ```
 
+### Bootstrap
+
+```sh
+#
+hugo new site <name> && cd "$_"
+
+#
+hugo new theme <name>
+```
+
 ### Usage
 
 ```sh
 #
-hugo new site [name] && cd "$_"
-
-#
-hugo new theme [name]
-
-#
-hugo new [page.md]
-hugo new [section]/[page.md]
+hugo new <page.md>
+hugo new <section>/<page.md>
 
 #
 hugo serve
@@ -64,6 +70,10 @@ hugo serve -D --cleanDestinationDir
 #
 hugo --minify
 ```
+
+<!--
+hugo mod clean
+-->
 
 ### Tips
 

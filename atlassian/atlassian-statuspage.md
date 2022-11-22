@@ -1,5 +1,7 @@
 # Atlassian Statuspage
 
+**Keywords:** Status Page
+
 ## Links
 
 - [Main Website](https://atlassian.com/software/statuspage)

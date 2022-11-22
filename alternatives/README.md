@@ -76,11 +76,6 @@ https://intercom.com/
 - [StreamSets Data Collector (sdc)](/streamsets/streamsets-datacollector.md)
 - Talend
 
-## AWS Profile Manager
-
-- [AWS Profile Manager (a.k.a. AWS Profile Switcher)](/aws-profile-manager.md)
-- [AWS Vault](/aws-vault.md)
-
 ## Backup
 
 - [restic](/restic.md)

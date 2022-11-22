@@ -266,7 +266,7 @@ docker volume rm postgresql-data
 
 ### References
 
-- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
+- [Parameters](https://github.com/bitnami/charts/tree/main/bitnami/postgresql#parameters)
 
 ### Repository
 
@@ -279,23 +279,34 @@ helm repo update
 
 ```sh
 #
-kubectl create ns postgresql
+kubectl create ns psql-system
+# kubectl create ns database
+
+#
+helm search repo -l bitnami/postgresql
 
 #
 helm install postgresql bitnami/postgresql \
-  --namespace postgresql \
-  --version 10.7.1 \
+  --namespace psql-system \
+  --version 12.1.2 \
   -f <(cat << EOF
-postgresqlPassword: postgres
+auth:
+  postgresPassword: postgres
+  username: dev
+  password: dev
+  database: dev
 EOF
 )
+
+#
+kubectl get all -n psql-system
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status statefulset/postgresql-postgresql \
-  -n postgresql
+kubectl rollout status statefulset/postgresql \
+  -n psql-system
 ```
 
 ### Logs
@@ -303,7 +314,7 @@ kubectl rollout status statefulset/postgresql-postgresql \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/name=postgresql' \
-  -n postgresql \
+  -n psql-system \
   -f
 ```
 
@@ -311,8 +322,13 @@ kubectl logs \
 
 ```sh
 kubectl get secret postgresql \
-  -o jsonpath='{.data.postgresql-password}' \
-  -n postgresql | \
+  -o jsonpath='{.data.postgres-password}' \
+  -n psql-system | \
+    base64 -d; echo
+
+kubectl get secret postgresql \
+  -o jsonpath='{.data.password}' \
+  -n psql-system | \
     base64 -d; echo
 ```
 
@@ -320,9 +336,9 @@ kubectl get secret postgresql \
 
 ```sh
 helm uninstall postgresql \
-  -n postgresql
+  -n psql-system
 
-kubectl delete ns postgresql \
+kubectl delete ns psql-system \
   --grace-period=0 \
   --force
 ```

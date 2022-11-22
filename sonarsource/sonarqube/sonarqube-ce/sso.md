@@ -8,11 +8,13 @@ https://blog.sonarsource.com/sonarqube-ldap-sso/
 
 - [Tutorial: Azure AD SSO integration with SonarQube](https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/sonarqube-tutorial)
 
-## Azure AD
+## SAML
 
-### Docs
+### Azure AD
 
-- [How to setup Azure AD](https://sonarqube.company.com/documentation/instance-administration/authentication/saml/azuread/)
+1. SonarQube Documentation
+2. Instance Administration -> Security -> Authentication -> SAML
+3. How to setup Azure AD
 
 <!-- ### Issues
 
@@ -24,4 +26,4 @@ https://blog.sonarsource.com/sonarqube-ldap-sso/
 
 1. Administration -> Configuration
 2. General Settings -> General
-3. General Section -> Server base URL -->
+3. General Section -> Server base URL

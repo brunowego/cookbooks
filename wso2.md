@@ -1,8 +1,6 @@
 # Web Services Oxygenated (WSO2)
 
-## Alternatives
-
-- [Kong](/kong.md)
+**Keywords:** API Gateway
 
 ## Links
 

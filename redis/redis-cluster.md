@@ -4,7 +4,7 @@
 
 ### References
 
-- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/redis-cluster)
+- [Parameters](https://github.com/bitnami/charts/tree/main/bitnami/redis-cluster#parameters)
 
 ### Repository
 
@@ -17,13 +17,20 @@ helm repo update
 
 ```sh
 #
-kubectl create ns redis-cluster
+kubectl create ns redis-system
+# kubectl create ns session
+
+#
+helm search repo -l bitnami/redis-cluster
 
 #
 helm install redis-cluster bitnami/redis-cluster \
-  --namespace redis-cluster \
-  --version 6.2.3 \
+  --namespace redis-system \
+  --version 8.3.1 \
   -f <(cat << EOF
+cluster:
+  nodes: 3
+
 redis:
   configmap: |-
     maxmemory-policy allkeys-lfu
@@ -31,17 +38,22 @@ redis:
 
     appendonly yes
 
+password: dev
+
 metrics:
   enabled: true
 EOF
 )
+
+#
+kubectl get all -n redis-system
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status statefulset redis-cluster \
-  -n redis-cluster
+kubectl rollout status statefulset/redis-cluster \
+  -n redis-system
 ```
 
 ### Logs
@@ -49,7 +61,7 @@ kubectl rollout status statefulset redis-cluster \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/name=redis-cluster' \
-  -n redis-cluster \
+  -n redis-system \
   -c redis-cluster \
   --max-log-requests 6 \
   -f
@@ -59,7 +71,7 @@ kubectl logs \
 
 ```sh
 kubectl get secret \
-  --namespace redis-cluster \
+  -n redis-system \
   redis-cluster \
   -o jsonpath='{.data.redis-password}' | \
     base64 -d; echo
@@ -70,7 +82,7 @@ kubectl get secret \
 ```sh
 #
 kubectl port-forward svc/redis-cluster \
-  -n redis-cluster \
+  -n redis-system \
   6379:6379
 
 #
@@ -119,9 +131,9 @@ EOF
 
 ```sh
 helm uninstall redis-cluster \
-  -n redis-cluster
+  -n redis-system
 
-kubectl delete ns redis-cluster \
+kubectl delete ns redis-system \
   --grace-period=0 \
   --force
 ```

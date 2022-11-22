@@ -22,32 +22,26 @@ kubectl cert-manager help
 
 ```sh
 #
-kubens <ns-name>
-
-#
 kubectl cert-manager check api
 
 #
-kubectl get certificates -o wide
-
-#
-kubectl cert-manager status certificate <cert-name>
-
-#
-kubectl get certificaterequest
-
-#
-kubectl delete certificaterequest <cert-req-id>
+kubens '<namespace>'
 
 #
 kubectl get certificates -o wide
 
 #
-kubectl cert-manager renew <cert-name>
+kubectl cert-manager status certificate '<cert-name>'
 
 #
 kubectl get certificaterequest
 
 #
-kubectl describe certificaterequest <cert-req-id>
+kubectl delete certificaterequest '<cert-req-id>'
+
+#
+kubectl cert-manager renew '<cert-name>'
+
+#
+kubectl describe certificaterequest '<cert-req-id>'
 ```

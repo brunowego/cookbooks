@@ -1,16 +1,8 @@
 # Podman
 
-## Related
-
-- [Buildah](/buildah.md)
-
-## Alternatives
-
-- [cri-o](/cri-o.md)
-- [Linux Container Daemon (LXD)](/lxd.md)
-
 ## Links
 
+- [Code Repository](https://github.com/containers/podman)
 - [Main Website](https://podman.io/)
 
 ## Guides

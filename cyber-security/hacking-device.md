@@ -2,6 +2,8 @@
 
 <!--
 https://hackaday.com/2020/11/28/hackrf-portapack-firmware-spoofs-all-the-things/
+
+https://github.com/UberGuidoZ/Flipper
 -->
 
 ## Devices

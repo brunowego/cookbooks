@@ -7,6 +7,7 @@
 ## Related
 
 - [iPhone Software (IPSW)](/apple/ios/README.md#downgrade)
+- [Can I Jailbreak?](https://canijailbreak.com/)
 
 ## Terms
 

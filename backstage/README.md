@@ -12,11 +12,17 @@ TODO NEXT
 - [Main Website](https://backstage.io/)
 - [Demo](https://demo.backstage.io/)
 
+## Glossary
+
+- Internal Developer Platform (IDP)
+
 ## References
 
 - [Getting started with Backstage](https://github.com/spotify/backstage/blob/master/docs/getting-started/README.md)
 
 ## Helm
+
+**WIP:** Currently not working as expected.
 
 ### References
 

@@ -1,4 +1,4 @@
-# Android SSL Pining
+# Android SSL Pinning
 
 <!--
 https://github.com/to0thl3ss/IoTLinks/blob/ae74a5f76caa2f8810977a98b5358d6ec01a475e/mobile/js-script-sslbypass.js

@@ -15,7 +15,7 @@ https://onurgenes.com/posts/ssl-pinning-with-alamofire
 ```sh
 # List certs
 openssl s_client \
-  -connect api.meuead.atacadao.com.br:443 \
+  -connect <domain>:443 \
   -showcerts
 
 # Export
@@ -23,7 +23,7 @@ openssl s_client \
   -connect <domain>:443 \
   -showcerts \
   -servername <domain> < /dev/null 2> /dev/null | \
-    openssl x509 -outform DER > colab.hml.der
+    openssl x509 -outform DER > <filename>.der
 ```
 
 <!--

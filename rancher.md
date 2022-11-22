@@ -1,10 +1,6 @@
 # Rancher
 
 <!--
-TODO NEXT
--->
-
-<!--
 https://github.com/rancher-sandbox/rancher-desktop
 -->
 
@@ -19,7 +15,7 @@ https://github.com/rancher-sandbox/rancher-desktop
 
 ### References
 
-- [Helm Chart](https://github.com/rancher/rancher/tree/master/chart)
+- [Options](https://github.com/rancher/rancher/tree/master/chart#helm-chart-options-for-kubernetes-installations)
 
 ### Dependencies
 
@@ -37,7 +33,7 @@ helm repo update
 
 ```sh
 #
-kubectl create ns cattle-system
+kubectl create ns rancher-system
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
@@ -45,7 +41,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install rancher rancher-latest/rancher \
-  --namespace cattle-system \
+  --namespace rancher-system \
   --version 2.6.2 \
   -f <(cat << EOF
 hostname: rancher.${DOMAIN}
@@ -57,7 +53,7 @@ EOF
 
 ```sh
 kubectl rollout status deploy/rancher \
-  -n cattle-system
+  -n rancher-system
 ```
 
 ### Logs
@@ -65,7 +61,7 @@ kubectl rollout status deploy/rancher \
 ```sh
 kubectl logs \
   -l 'app=rancher' \
-  -n cattle-system \
+  -n rancher-system \
   -f
 ```
 
@@ -74,7 +70,7 @@ kubectl logs \
 ```sh
 kubectl get secret bootstrap-secret \
   -o jsonpath='{.data.bootstrapPassword}' \
-  -n cattle-system | \
+  -n rancher-system | \
     base64 -d; echo
 ```
 
@@ -82,21 +78,21 @@ kubectl get secret bootstrap-secret \
 
 ```sh
 helm uninstall rancher \
-  -n cattle-system
+  -n rancher-system
 
-kubectl patch namespace cattle-system \
+kubectl patch namespace rancher-system \
   -p '{"metadata":{"finalizers":[]}}' \
   --type='merge'
 
-kubectl delete ns cattle-system \
+kubectl delete ns rancher-system \
   --grace-period=0 \
   --force
 
-kubectl patch namespace cattle-fleet-local-system \
+kubectl patch namespace rancher-fleet-local-system \
   -p '{"metadata":{"finalizers":[]}}' \
   --type='merge'
 
-kubectl delete ns cattle-fleet-local-system \
+kubectl delete ns rancher-fleet-local-system \
   --grace-period=0 \
   --force
 ```
@@ -190,8 +186,8 @@ rancher -h
 ```sh
 #
 rancher login \
-  https://[url] \
-  -t [token]
+  https://<url> \
+  -t <token>
 ```
 
 <!-- ## Issues -->
@@ -205,15 +201,15 @@ ERROR: https://rancher.example.com/ping is not accessible (Could not resolve hos
 
 ```sh
 # sudo vim /etc/resolv.conf
-# search rancher.cattle-system.svc.cluster.local cattle-system.svc.cluster.local svc.cluster.local cluster.local
+# search rancher.rancher-system.svc.cluster.local rancher-system.svc.cluster.local svc.cluster.local cluster.local
 
 sudo hostess add rancher.example.com 10.254.1.88
 
 sudo systemctl restart kubelet
 
-for pod in `kubectl get pods -o json -n cattle-system | jq -r '.items[] | select(.metadata.labels.app | contains("cattle-agent")) | .metadata.name'`; do kubectl delete pod $pod -n cattle-system; done
+for pod in `kubectl get pods -o json -n rancher-system | jq -r '.items[] | select(.metadata.labels.app | contains("cattle-agent")) | .metadata.name'`; do kubectl delete pod $pod -n rancher-system; done
 
 kubectl delete pod \
   -l 'app=cattle-cluster-agent' \
-  -n cattle-system
+  -n rancher-system
 ``` -->

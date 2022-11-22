@@ -37,9 +37,26 @@ kubens -h
 ### Usage
 
 ```sh
+# Current context
+kubectx -c
+
 # Unset context
 kubectx -u
 
+# Switch to last context
+kubectx -
+
+# Switch to another context
+kubectx <context-name>
+
 # Delete context entry
-kubectx -d <cluster-name>
+kubectx -d <context-name>
+```
+
+### Tips
+
+#### Rename Context
+
+```sh
+kubectx <new-context-name>=<old-context-name>
 ```

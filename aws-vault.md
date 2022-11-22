@@ -1,5 +1,7 @@
 # AWS Vault
 
+**Keywords:** AWS Profile Switcher
+
 ## Links
 
 - [Code Repository](https://github.com/99designs/aws-vault)

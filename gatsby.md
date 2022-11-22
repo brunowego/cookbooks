@@ -1,8 +1,10 @@
 # Gatsby
 
-## References
+**Keywords:** Static Site Generator
 
-- [Starters](https://www.gatsbyjs.org/docs/starters/)
+## Docs
+
+- [Starters](https://gatsbyjs.org/docs/starters/)
 
 ## Docker
 

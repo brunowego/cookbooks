@@ -4,19 +4,19 @@
 
 ```sh
 # Add
-git submodule add [repo] ./[destination]
+git submodule add <repo> ./<destination>
 
 # Remove folder/module from git repository
-git rm -r --cached [name]
+git rm -r --cached <name>
 
 # Update from submodule folder
-cd [destination] && git pull
+cd <destination> && git pull
 
 # Update all submodules
 git submodule foreach git pull origin master
 
 # Close with submodules
-git clone --recursive [repo]
+git clone --recursive <repo>
 
 git submodule foreach git checkout master
 git submodule foreach git checkout main
@@ -40,7 +40,7 @@ git submodule update --init --recursive
 ###
 
 ```log
-fatal: No url found for submodule path '[name]' in .gitmodules
+fatal: No url found for submodule path '<name>' in .gitmodules
 ```
 
 TODO -->

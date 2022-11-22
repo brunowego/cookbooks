@@ -1,9 +1,5 @@
 # Buildah
 
-## Related
-
-- [Podman](/podman.md)
-
 ## Links
 
 - [Main Website](https://buildah.io/)

@@ -2,4 +2,4 @@
 
 ## Related
 
-- [SSL Pining](/ssl/ssl-pining/android.md)
+- [SSL Pinning](/ssl/ssl-pinning/android.md)
