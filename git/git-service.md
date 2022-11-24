@@ -2,9 +2,12 @@
 
 ## Tools
 
+### Enterprise
+
 - [Atlassian Bitbucket](/atlassian/atlassian-bitbucket.md)
 - [Azure DevOps](/azure/services/azure-devops/README.md)
 - [GitHub](/github/README.md)
+- [GitLab](/gitlab/README.md)
 
 ### Self-Hosted
 

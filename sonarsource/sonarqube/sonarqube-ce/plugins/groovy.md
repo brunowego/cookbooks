@@ -1,17 +1,15 @@
 # SonarQube Groovy Plugin
 
-## CLI
-
-### References
+## Links
 
 - [Code Repository](https://github.com/Inform-Software/sonar-groovy)
 
-### Dependencies
+## Dependencies
 
 - [SonarQube](/sonarsource/sonarqube-ce.md)
 - [SonarQube Scanner](/sonarsource/sonarqube-scanner.md)
 
-### Installation
+## Installation
 
 ```sh
 # Darwin
@@ -24,6 +22,6 @@ export SONARQUBE_HOME="$(brew --cellar sonarqube)/$(brew info --json sonarqube |
 wget -P "$SONARQUBE_HOME/extensions/plugins" 'https://github.com/Inform-Software/sonar-groovy/releases/download/1.8/sonar-groovy-plugin-1.8.jar'
 ```
 
-### Configuration
+## Configuration
 
 Follow [this instructions](/sonarsource/sonarqube-scanner.md#configuration).

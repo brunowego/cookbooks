@@ -19,6 +19,8 @@ https://github.com/spinnaker/spin
 https://github.com/Thakurvaibhav/k8s/tree/master/ci-cd
 -->
 
+**Keywords:** Continuous Integration
+
 ## Alternatives
 
 - [Atlassian Bamboo](/atlassian/atlassian-bamboo.md)

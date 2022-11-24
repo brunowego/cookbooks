@@ -6,6 +6,11 @@
 
 ## Usage
 
+```sh
+#
+terraform console
+```
+
 ```tf
 nonsensitive(<data>)
 ```

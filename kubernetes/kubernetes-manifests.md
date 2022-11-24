@@ -10,18 +10,18 @@ spec:
     # ...
     spec:
       containers:
-      - # ...
-        env:
-        - name: KUBERNETES_NAMESPACE
-          valueFrom:
-            fieldRef:
-              apiVersion: v1
-              fieldPath: metadata.namespace
-        - name: MY_ENV
-          valueFrom:
-            secretKeyRef:
-              name: my-secret-name
-              key: my-secret-key
+        - # ...
+          env:
+            - name: KUBERNETES_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  apiVersion: v1
+                  fieldPath: metadata.namespace
+            - name: MY_ENV
+              valueFrom:
+                secretKeyRef:
+                  name: my-secret-name
+                  key: my-secret-key
 ```
 
 ## Run As Root
@@ -49,9 +49,9 @@ spec:
     # ...
     spec:
       containers:
-      - # ...
-        imagePullPolicy: IfNotPresent
-        # imagePullPolicy: Always
+        - # ...
+          imagePullPolicy: IfNotPresent
+          # imagePullPolicy: Always
 ```
 
 ## Image Pull Secrets
@@ -65,10 +65,12 @@ spec:
     spec:
       # ...
       imagePullSecrets:
-      - name: my-org-docker-registry
+        - name: my-org-docker-registry
 ```
 
 ## Rolling Strategy
+
+### StatefulSet
 
 ```yaml
 # ...
@@ -82,6 +84,12 @@ spec:
     # rollingUpdate:
     #   partition: 0
 ```
+
+```sh
+kubectl rollout restart statefulset <name>
+```
+
+### Deployment
 
 ```yaml
 # ...
@@ -98,6 +106,12 @@ spec:
       # maxUnavailable: 20%
 ```
 
+```sh
+kubectl rollout restart deployment <name>
+```
+
+### DaemonSet
+
 ```yaml
 # ...
 kind: DaemonSet
@@ -108,6 +122,10 @@ spec:
     type: RollingUpdate
     rollingUpdate:
       maxUnavailable: 1
+```
+
+```sh
+kubectl rollout restart daemonset <name>
 ```
 
 ## Startup Probes

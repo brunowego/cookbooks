@@ -5,6 +5,8 @@ https://app.pluralsight.com/library/courses/jenkins-x-cloud-native-ci-cd/table-o
 https://github.com/SeldonIO/sig-mlops-jenkins-classic/tree/master/model_implementations/news_classifier
 -->
 
+**Keywords:** Continuous Integration
+
 ## Guides
 
 - [Overview](https://jenkins-x.io/v3/about/overview/)

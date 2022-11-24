@@ -6,6 +6,8 @@ https://app.pluralsight.com/library/courses/pulumi-getting-started/table-of-cont
 https://github.com/Mobiauto/sre-interview-boilerplate
 -->
 
+**Keywords:** Infrastructure as Code
+
 ## Links
 
 - [Code Repository](https://github.com/pulumi/pulumi)

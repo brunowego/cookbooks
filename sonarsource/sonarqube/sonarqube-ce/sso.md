@@ -4,13 +4,19 @@
 https://blog.sonarsource.com/sonarqube-ldap-sso/
 -->
 
-## Docs
-
-- [Tutorial: Azure AD SSO integration with SonarQube](https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/sonarqube-tutorial)
-
 ## SAML
 
 ### Azure AD
+
+#### Dependencies
+
+- [Azure DevOps SonarQube Extension](/azure/services/azure-devops/extensions/sonarqube.md)
+
+#### Docs
+
+- [Tutorial: Azure AD SSO integration with SonarQube](https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/sonarqube-tutorial)
+
+#### Setup
 
 1. SonarQube Documentation
 2. Instance Administration -> Security -> Authentication -> SAML

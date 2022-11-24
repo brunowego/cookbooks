@@ -3,6 +3,8 @@
 <!--
 https://plugins.miniorange.com/saml-single-sign-on-sso-sonarqube-using-simplesaml
 https://github.com/BlockByBlock/jenkins-docker-with-goss/blob/master/doc/sonarqube.md
+
+-Dsonar.projectVersion=$(git branch --show-current)-$(git rev-parse --short HEAD)
 -->
 
 <!--
@@ -214,7 +216,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 #
 helm install sonarqube sonarqube/sonarqube \
   --namespace sonarqube-system \
-  --version 6.0.1+425 \
+  --version 5.0.6+370 \
   -f <(cat << EOF
 ingress:
   enabled: true
@@ -252,6 +254,10 @@ kubectl logs \
   -f
 ```
 
+| Login   | Password |
+| ------- | -------- |
+| `admin` | `admin`  |
+
 ### Delete
 
 ```sh
@@ -261,4 +267,79 @@ helm uninstall sonarqube \
 kubectl delete ns sonarqube-system \
   --grace-period=0 \
   --force
+```
+
+<!-- ## Makefile
+
+### Configuration
+
+```Makefile
+SHELL := /bin/sh
+
+-include ./.env
+
+SONAR_SCANNER ?= sonar-scanner
+SONAR_PROJECT_SETTINGS ?= ./sonar-project.properties
+
+.DEFAULT_GOAL := sonar/scanner
+
+.PHONY: sonar/scanner
+sonar/scanner:
+	@$(SONAR_SCANNER) -Dproject.settings="${SONAR_PROJECT_SETTINGS}" -Dsonar.login="${SONAR_LOGIN_TOKEN}"
+``` -->
+
+## Tips
+
+### Disable Update Notification
+
+```log
+There’s a new version of SonarQube available. Update to enjoy the latest updates and features.
+```
+
+TODO
+
+## Issues
+
+### Global Analysis Token
+
+```log
+
+ERROR: Error during SonarScanner execution
+ERROR: You're not authorized to run analysis. Please contact the project administrator.
+ERROR:
+ERROR: Re-run SonarScanner using the -X switch to enable full debug logging.
+The process '/home/vsts/work/_tasks/SonarQubeAnalyze_6d01813a-9589-4b15-8491-8164aeb38055/5.8.0/sonar-scanner/bin/sonar-scanner' failed with exit code 2
+```
+
+1. My Account
+2. Security -> Tokens
+3. Generate Tokens
+   - Set Name
+   - Type: Global Analysis Token
+   - Set Expires in
+   - Generate
+
+### Limited Ingress Body Size
+
+```log
+12:45:09.236 ERROR: Error during SonarScanner execution
+java.lang.IllegalStateException: Failed to upload report: Fail to request url: https://<domain>/api/ce/submit?projectKey=<secret>&projectName=<secret>
+	...
+Caused by: java.lang.IllegalStateException: Fail to request url: https://<domain>/api/ce/submit?projectKey=<secret>&projectName=<secret>
+	...
+Caused by: okhttp3.internal.http2.StreamResetException: stream was reset: NO_ERROR
+	...
+	Suppressed: okhttp3.internal.http2.StreamResetException: stream was reset: NO_ERROR
+		...
+```
+
+<!--
+https://github.com/kubernetes/ingress-nginx/blob/main/docs/user-guide/nginx-configuration/annotations.md
+-->
+
+```sh
+#
+kubectl patch ingress/<name> \
+  -n <namespace> \
+  -p '{"metadata":{"annotations":{"nginx.ingress.kubernetes.io/proxy-body-size":"32m"}}}'
 ```

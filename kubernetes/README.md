@@ -22,6 +22,8 @@ dataeng
 ./.k8s
 -->
 
+**Keywords:** Infrastructure as Code
+
 ## References
 
 - [Managing Compute Resources for Containers](https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/)

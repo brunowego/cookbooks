@@ -8,4 +8,5 @@ https://www.youtube.com/watch?v=y0d15Y8RID8
 
 ## Terms
 
+- Brand Book
 - Wordmark

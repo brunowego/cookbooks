@@ -1,17 +1,15 @@
 # SonarQube Swift (Objective-C/Swift/Java) Plugin
 
-## CLI
-
-### References
+## Links
 
 - [Code Repository](https://github.com/sonar-next/sonar-swift)
 
-### Dependencies
+## Dependencies
 
 - [SonarQube](/sonarsource/sonarqube-ce.md)
 - [SonarQube Scanner](/sonarsource/sonarqube-scanner.md)
 
-### Installation
+## Installation
 
 ```sh
 # Darwin
@@ -24,6 +22,6 @@ export SONARQUBE_HOME="$(brew --cellar sonarqube)/$(brew info --json sonarqube |
 wget -P "$SONARQUBE_HOME/extensions/plugins" 'https://github.com/sonar-next/sonar-swift/releases/download/1.7.0/sonar-swift-plugin-1.7.0.jar'
 ```
 
-### Configuration
+## Configuration
 
 Follow [this instructions](/sonarsource/sonarqube/sonarqube-scanner.md#configuration).

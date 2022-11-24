@@ -4,6 +4,8 @@
 https://app.pluralsight.com/paths/skills/managing-and-orchestrating-containers-with-azure-kubernetes-service-aks
 -->
 
+**Keywords:** Kubernetes Orchestration
+
 ## Links
 
 - [Kubernetes Services](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FmanagedClusters)

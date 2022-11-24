@@ -31,6 +31,8 @@ https://www.datadoghq.com/blog/postgresql-monitoring-tools/
 
 ## SQL
 
+### Common
+
 ```sql
 -- Show version
 SELECT version();
@@ -39,6 +41,18 @@ SHOW server_version;
 -- Show max simultaneous connections
 SHOW max_connections;
 SHOW shared_buffers;
+```
+
+### Drop Tables
+
+```sql
+-- Recreate the schema
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
+
+-- Restore default permissions
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO public;
 ```
 
 ## Tips

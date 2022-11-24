@@ -6,7 +6,7 @@ https://github.com/runatlantis/helm-charts
 https://github.com/infracost/vscode-infracost
 -->
 
-**Keywords:** Terraform
+**Keywords:** Terraform Pull Request Automation
 
 ## Links
 
@@ -20,7 +20,14 @@ https://github.com/infracost/vscode-infracost
 ## Guides
 
 - [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token)
-- [Provider Credentials](https://www.runatlantis.io/docs/provider-credentials.html)
+- [Provider Credentials](https://runatlantis.io/docs/provider-credentials.html)
+
+## Supported Providers
+
+- Azure DevOps
+- Bitbucket
+- GitHub
+- GitLab
 
 <!-- ##
 
@@ -29,7 +36,7 @@ https://github.com/infracost/vscode-infracost
 - Workflow Creation
 - Plan/Apply Automation by Approval -->
 
-<!-- ##
+<!-- ## Key Features
 
 - Go Binary or Docker Image
 - Multi-cloud
@@ -37,13 +44,6 @@ https://github.com/infracost/vscode-infracost
 - Webhooks
 - YAML Oriented
 - Integration Hooks (Custom) -->
-
-<!-- ##
-
-- AWS
-- GCP
-- OCI
-- New Relic -->
 
 ## GitOps
 
@@ -123,25 +123,6 @@ atlantis plan -- -var=prd.tfvars
 atlantis unlock
 ```
 
-### Supported Providers
-
-- Azure DevOps
-- Bitbucket
-- GitHub
-- GitLab
-
-<!-- ## Docker
-
-###
-
-https://github.com/msfidelis/atlantis-aws/tree/master/github
-
-```sh
-docker.io/runatlantis/atlantis:v0.17.0
-
-EXPOSE 4141
-``` -->
-
 ## CLI
 
 ### Installation
@@ -189,28 +170,28 @@ atlantis testdrive
 
 # GitHub
 atlantis server \
-  --gh-user [user] \
-  --gh-token [token]
+  --gh-user <user> \
+  --gh-token <token>
 
 # GitHub
 atlantis server \
-  --gh-app-id [user] \
-  --gh-app-key-file [key-file]
+  --gh-app-id <user> \
+  --gh-app-key-file <key-file>
 
 # GitLab
 atlantis server \
-  --gitlab-user [user] \
-  --gitlab-token [token]
+  --gitlab-user <user> \
+  --gitlab-token <token>
 
 # Bitbucket
 atlantis server \
-  --bitbucket-user [user] \
-  --bitbucket-token [token]
+  --bitbucket-user <user> \
+  --bitbucket-token <token>
 
 # Azure DevOps (ADO)
 atlantis server \
-  --azuredevops-user [user] \
-  --azuredevops-token [token]
+  --azuredevops-user <user> \
+  --azuredevops-token <token>
 ```
 
 ## Docker
@@ -255,9 +236,9 @@ helm install atlantis runatlantis/atlantis \
 orgWhitelist: github.com/[org-name]/*
 
 github:
-  user: [username]
-  token: [token]
-  secret: [secret]
+  user: <username>
+  token: <token>
+  secret: <secret>
 
 ingress:
   host: atlantis.$DOMAIN

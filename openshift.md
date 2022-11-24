@@ -6,6 +6,8 @@ https://app.pluralsight.com/paths/skills/introduction-to-application-development
 ocenv
 -->
 
+**Keywords:** Kubernetes Orchestration
+
 ## CLI
 
 ### Installation

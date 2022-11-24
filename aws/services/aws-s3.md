@@ -115,3 +115,13 @@ aws s3 ls s3://<target>
 #
 aws s3 sync s3://<source> s3://<target>
 ```
+
+### Issues
+
+#### Wrong Credentials
+
+```log
+An error occurred (SignatureDoesNotMatch) when calling the ListObjectsV2 operation: The request signature we calculated does not match the signature you provided. Check your key and signing method.
+```
+
+Check if the credentials are right.

@@ -4,6 +4,8 @@
 https://www.youtube.com/watch?v=tkYzg8HRK4o
 -->
 
+**Keywords:** Kubernetes Orchestration
+
 ## Alternatives
 
 - [Kubernetes Operations (kOps)](/kops.md)

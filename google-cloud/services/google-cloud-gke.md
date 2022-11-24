@@ -4,6 +4,8 @@
 gcp.credentials.file=${GCP_CREDENTIALS_PATH:/etc/credentials.json}
 -->
 
+**Keywords:** Kubernetes Orchestration
+
 ## Docs
 
 - [Get started using the Google Cloud CLI (GKE)](https://cloud.google.com/binary-authorization/docs/getting-started-cli)

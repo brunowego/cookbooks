@@ -10,6 +10,10 @@
 
 - [Webhook events and payloads / push](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#push)
 
+## Glossary
+
+- Quick Emulator (QEMU)
+
 ## CLI
 
 ### Installation
@@ -64,7 +68,7 @@ act -l
 
 act \
   -l \
-  -W ./.github/workflows/[name].yml
+  -W ./.github/workflows/<name>.yml
 
 #
 act -g
@@ -91,8 +95,8 @@ act workflow_dispatch \
 
 # Run specific job
 act \
-  -j [name] \
-  -W ./.github/workflows/[name].yml \
+  -j <name> \
+  -W ./.github/workflows/<name>.yml \
   --rm \
   -v
 
@@ -107,7 +111,7 @@ ls ~/.cache/act
 ```sh
 #
 act workflow_dispatch \
-  -j [name] \
+  -j <name> \
   -e <(cat << EOF
 {
   "inputs": {
@@ -128,6 +132,18 @@ jq '."files.associations".".secrets" |= "dotenv"' "$HOME"/.vscode/settings.json 
 ```
 
 ### Issues
+
+#### Missing Custom Docker Image
+
+```log
+::error::Unable to locate executable file: docker. Please verify either the file path exists or the file can be found within a directory specified by the PATH environment variable. Also check the file mode to verify the file is executable.
+```
+
+```sh
+act \
+  -P ubuntu-latest=catthehacker/ubuntu:act-latest \
+  # ...
+```
 
 #### Missing Yarn
 

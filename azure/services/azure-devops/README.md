@@ -1,4 +1,4 @@
-H# Azure DevOps (ADO)
+# Azure DevOps (ADO)
 
 <!--
 https://app.pluralsight.com/paths/skills/additional-devops-topics-on-microsoft-azure
@@ -12,7 +12,7 @@ https://linkedin.com/learning/azure-devops-continuous-delivery-with-yaml-pipelin
 https://linkedin.com/learning/azure-for-devops-implementing-development-processes/why-process-matters-in-devops
 -->
 
-**Keywords:** Git Service
+**Keywords:** Git Service, Continuous Integration
 
 ## Links
 
@@ -20,8 +20,13 @@ https://linkedin.com/learning/azure-for-devops-implementing-development-processe
 - [Main Website](https://azure.microsoft.com/en-us/products/devops/)
 - [Docs](https://learn.microsoft.com/en-us/cli/azure/devops?view=azure-cli-latest)
 
+## Docs
+
+- [Use predefined variables / System.Debug](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#systemdebug)
+
 ## Glossary
 
+- Personal Access Token (PAT)
 - System Development Life Cycle (SDLC)
 
 ## Services

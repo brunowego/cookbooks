@@ -1,6 +1,10 @@
 # GitLab Continuous Integration (CI)
 
-##
+**Keywords:** Continuous Integration
+
+TODO
+
+<!-- ##
 
 .gitlab-ci.yml
 
@@ -39,4 +43,4 @@ deploy_job:
   dependencies:
     - build_job
     - push_job
-```
+``` -->

@@ -15,6 +15,8 @@ https://evilmartians.com/chronicles/build-images-on-github-actions-with-docker-l
 
 ## Workflow
 
+**Refer:** `./.github/workflows/ci.yml`
+
 ```yaml
 ---
 name: Docker Build and Push
@@ -22,18 +24,18 @@ name: Docker Build and Push
 on:
   pull_request:
     branches:
-    - main
+      - main
     paths:
-    # - ...
-    - .dockerignore
-    - Dockerfile
+      # - ...
+      - .dockerignore
+      - Dockerfile
   push:
     branches:
-    - main
+      - main
     paths:
-    # - ...
-    - .dockerignore
-    - Dockerfile
+      # - ...
+      - .dockerignore
+      - Dockerfile
 
 concurrency:
   group: main
@@ -42,40 +44,44 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-      with:
-        # Disabling shallow clone is recommended for improving relevancy of reporting
-        fetch-depth: 0
+      - name: Get Short SHA
+        id: sha
+        run: echo "::set-output name=sha12::$(echo ${GITHUB_SHA} | cut -c 1-12)"
 
-    - name: Set up Docker Buildx
-      id: buildx
-      uses: docker/setup-buildx-action@v1
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
 
-    - name: Cache Docker layers
-      uses: actions/cache@v2
-      with:
-        path: /tmp/.buildx-cache
-        key: ${{ runner.os }}-buildx-${{ hashFiles('Dockerfile') }}
-        restore-keys: ${{ runner.os }}-buildx-
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v1
 
-    - name: Login to GitHub Container Registry
-      if: github.ref == 'refs/heads/main'
-      uses: docker/login-action@v1
-      with:
-        registry: ghcr.io
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Cache Docker layers
+        uses: actions/cache@v2
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ hashFiles('Dockerfile') }}
+          restore-keys: ${{ runner.os }}-buildx-
 
-    - name: Build and Push Docker Image
-      uses: docker/build-push-action@v2
-      with:
-        builder: ${{ steps.buildx.outputs.name }}
-        cache-from: type=local,src=/tmp/.buildx-cache
-        cache-to: type=local,dest=/tmp/.buildx-cache
-        context: ./
-        push: ${{ github.ref == 'refs/heads/main' }}
-        tags: |
-          ghcr.io/${{ github.repository }}:${{ github.sha }}
-          ghcr.io/${{ github.repository }}:latest
+      - name: Login to GitHub Container Registry
+        if: github.ref == 'refs/heads/main'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v2
+        with:
+          builder: ${{ steps.buildx.outputs.name }}
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
+          context: ./
+          push: ${{ github.ref == 'refs/heads/main' }}
+          tags: |
+            ghcr.io/${{ github.repository }}:${{ steps.sha.outputs.sha12 }}
+            ghcr.io/${{ github.repository }}:latest
 ```

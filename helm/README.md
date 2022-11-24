@@ -113,6 +113,19 @@ pkill helm
 
 ### Tips
 
+#### Plugin
+
+```sh
+#
+helm plugin list
+
+#
+helm plugin update <name>
+
+#
+helm plugin uninstall <name>
+```
+
 <!-- #### History
 
 ```sh

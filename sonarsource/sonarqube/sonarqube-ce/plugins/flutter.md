@@ -1,17 +1,15 @@
 # SonarQube Flutter (Dart) Plugin
 
-## CLI
-
-### References
+## Links
 
 - [Code Repository](https://github.com/insideapp-oss/sonar-flutter)
 
-### Dependencies
+## Dependencies
 
 - [SonarQube](/sonarsource/sonarqube-ce.md)
 - [SonarQube Scanner](/sonarsource/sonarqube-scanner.md)
 
-### Installation
+## Installation
 
 ```sh
 # Darwin
@@ -24,6 +22,6 @@ export SONARQUBE_HOME="$(brew --cellar sonarqube)/$(brew info --json sonarqube |
 wget -P "$SONARQUBE_HOME/extensions/plugins" 'https://github.com/insideapp-oss/sonar-flutter/releases/download/0.4.0/sonar-flutter-plugin-0.4.0.jar'
 ```
 
-### Configuration
+## Configuration
 
 Follow [this instructions](/sonarsource/sonarqube-scanner.md#configuration).

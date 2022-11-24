@@ -48,6 +48,17 @@ curl \
 choco install -y azure-pipelines-agent --params "'/Directory:c:\agent'"
 ```
 
+### New Pool
+
+1. Project Settings
+2. Agent pools -> Add pool
+3. Add agent pool
+   - Pool to link: New
+   - Pool type: Self-hosted
+   - Name: Self-hosted
+   - Create
+4. Self-hosted -> New agent
+
 ### Agent Pools
 
 1. [Azure DevOps](https://dev.azure.com/)
@@ -71,14 +82,24 @@ spctl developer-mode enable-terminal
 "$AZURE_PIPELINE_AGENT_PATH"/run.sh --help
 
 #
+export AZURE_ORG_NAME='<organization>'
+export AZURE_PAT='<token>'
+
+#
 "$AZURE_PIPELINE_AGENT_PATH"/config.sh \
-  --url 'https://dev.azure.com/<organization>' \
-  --auth 'PAT' \
-  --token '<token>' \
-  --unattended \
-  --pool 'Default' \
-  --agent 'Local-Linux-Agent' \
+  --url "https://dev.azure.com/${AZURE_ORG_NAME}" \
+  --auth 'pat' \
+  --token "$AZURE_PAT" \
+  --pool 'Self-hosted' \
+  --agent 'Local-Darwin-Agent' \
   --replace \
   --work '_work' \
   --acceptTeeEula
+
+#
+"$AZURE_PIPELINE_AGENT_PATH"/run.sh --once
 ```
+
+<!--
+"$AZURE_PIPELINE_AGENT_PATH"/config.sh remove
+-->

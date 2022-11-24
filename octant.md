@@ -1,9 +1,5 @@
 # Octant
 
-<!--
-TODO NEXT
--->
-
 **Keyword:** Kubernetes Dashboard, IDE
 
 ## Links

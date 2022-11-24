@@ -68,9 +68,9 @@ yamllint ./
 **Docs:** [Disable with comments](https://yamllint.readthedocs.io/en/stable/disable_with_comments.html).
 
 ```yaml
----
 # yamllint disable rule:line-length
 # yamllint disable-line rule:line-length
+---
 # ...
 ```
 
@@ -78,7 +78,7 @@ yamllint ./
 
 #### Visual Studio Code
 
-**Requirements:** yamllint CLI.
+**Dependencies:** [yamllint CLI](#cli) and [Prettier](/prettier.md#visual-studio-code)
 
 ```sh
 #
@@ -88,7 +88,7 @@ code --install-extension fnando.linter
 jq '."recommendations" += ["fnando.linter"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 
 #
-jq '."[yaml]"."editor.formatOnSave" |= false' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+jq '."[yaml]"."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
 ### Issues

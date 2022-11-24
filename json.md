@@ -8,12 +8,9 @@
 
 ### Visual Studio Code
 
-**Note:** Not necessary.
+**Dependencies:** [Prettier](/prettier.md#visual-studio-code)
 
 ```sh
-#
-code --install-extension esbenp.prettier-vscode
-
 #
 jq '."[json]"."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```

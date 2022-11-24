@@ -24,19 +24,17 @@ https://dev.to/jeromegamez/continuous-php-code-quality-with-sonarcloud-276i
 https://www.jeffgeerling.com/blogs/jeff-geerling/ci-deployments-code-analysis-drupal-php
 -->
 
-## CLI
-
-### References
+## Links
 
 - [Code Repository](https://github.com/SonarSource/sonar-php)
 - [Docs](https://docs.sonarqube.org/latest/analysis/languages/php/)
 
-### Dependencies
+## Dependencies
 
 - [SonarQube](/sonarsource/sonarqube-ce.md)
 - [SonarQube Scanner](/sonarsource/sonarqube-scanner.md)
 
-### Installation
+## Installation
 
 ```sh
 # Darwin
@@ -52,13 +50,13 @@ rm "$SONARQUBE_HOME"/extensions/plugins/sonar-php-plugin-*
 wget -P "$SONARQUBE_HOME/extensions/plugins" 'https://binaries.sonarsource.com/Distribution/sonar-php-plugin/sonar-php-plugin-3.3.0.5166.jar'
 ```
 
-### Configuration
+## Configuration
 
 Follow [this instructions](/sonarsource/sonarqube-scanner.md#configuration).
 
-### Issues
+## Issues
 
-#### Java Binaries
+### Java Binaries
 
 ```log
 ERROR: Error during SonarQube Scanner execution

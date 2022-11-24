@@ -66,6 +66,7 @@ Pró-Labore
 - Entry Barrier
 - Flip
 - Follow On
+- Free Cash Flow
 - Growth Hacking
 - Growth Mindset
 - Media for Equity
@@ -87,6 +88,7 @@ Pró-Labore
 ## Founder
 
 - Equity or Salary
+- Stock-Based Compensation
 
 ## Types
 

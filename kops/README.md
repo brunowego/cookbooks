@@ -10,6 +10,8 @@ https://medium.com/bench-engineering/deploying-kubernetes-clusters-with-kops-and
 https://itnext.io/aws-windows-kubernetes-nodes-with-kops-a2accb9ea483
 -->
 
+**Keywords:** Kubernetes Orchestration
+
 ## Links
 
 - [Code Repository](https://github.com/kubernetes/kops)

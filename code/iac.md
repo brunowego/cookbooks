@@ -12,10 +12,18 @@ https://linkedin.com/learning/aws-infrastructure-as-code-for-software-developers
 
 ## Tools
 
-- [AWS CloudFormation](/aws/aws-cloudformation.md)
-- [Terraform](/terraform.md)
-- [Kubernetes](/kubernetes.md)
-- [Docker](/docker-ce.md)
+- [AWS CloudFormation](/aws/services/aws-cloudformation.md)
+- [Azure Resource Manager](/azure/README.md)
+- [Crossplane](/crossplane.md)
+- [Google Cloud Deployment Manager](/google-cloud/README.md)
+- [Pulumi](/pulumi.md)
+- [Terraform](/hashicorp/terraform/README.md)
+
+### Configuration Management
+
+- [Ansible](/ansible.md)
+- [Chef](/chef.md)
+- [Puppet](/puppet.md)
 
 ## Infrastructure as Code Benefits
 

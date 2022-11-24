@@ -1,6 +1,10 @@
 # Github Actions
 
 <!--
+https://github.com/search?q=path%3A.github%2Fworkflows+filename%3A.yml
+-->
+
+<!--
 https://github.com/2color/ama-prisma/blob/main/.github/workflows/images.yml
 
 https://docs.github.com/en/actions/learn-github-actions/reusing-workflows
@@ -32,6 +36,8 @@ https://github.com/search?o=desc&q=filename%3A.yaml+path%3A.github%2Fworkflows+%
 setup-[name]
 action-[name]
 -->
+
+**Keywords:** Continuous Integration
 
 ## Guides
 
@@ -176,7 +182,7 @@ HOME=
 - [GitHub Actions Checkout](https://github.com/actions/checkout)
 - [Github Marketplace Actions](https://github.com/marketplace?type=actions)
 
-|           Action Location           |                  Syntax                   |
+| Action Location                     | Syntax                                    |
 | ----------------------------------- | ----------------------------------------- |
 | Public repository                   | `uses: {owner}/{repo}@{ref}`              |
 | The same repository as the workflow | `uses: ./.github/actions/my-local-action` |
@@ -260,12 +266,12 @@ jobs:
     runs-on: ubuntu-18.04
 ```
 
-| Virtual Environment | YAML Workflow Label | Default Shell |
-| --- | --- | --- |
-| macOS Catalina 10.15 | `macos-latest` or `macos-10.15` | Bash |
-| Ubuntu 16.04 | `ubuntu-16.04` | Bash |
-| Ubuntu 18.04 | `ubuntu-latest` or `ubuntu-18.04` | Bash |
-| Windows Server 2019 | `windows-latest` or `windows-2019` | PowerShell |
+| Virtual Environment  | YAML Workflow Label                | Default Shell |
+| -------------------- | ---------------------------------- | ------------- |
+| macOS Catalina 10.15 | `macos-latest` or `macos-10.15`    | Bash          |
+| Ubuntu 16.04         | `ubuntu-16.04`                     | Bash          |
+| Ubuntu 18.04         | `ubuntu-latest` or `ubuntu-18.04`  | Bash          |
+| Windows Server 2019  | `windows-latest` or `windows-2019` | PowerShell    |
 
 ##### Self-Hosted Runners
 
@@ -333,7 +339,6 @@ concurrency:
   # The concurrency group contains the workflow name and the branch name.
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
-
 # ...
 ```
 
@@ -348,7 +353,7 @@ gh run list --limit 5
 
 #
 gh run view
-gh run view [code]
+gh run view <code>
 
 #
 gh run download
@@ -363,15 +368,26 @@ gh workflow list
 gh workflow view
 
 #
-gh workflow run '[workflow-name]'
+gh workflow run '<workflow-name>'
 
 #
-gh workflow run '[workflow-name]' \
-  --ref '[branch-name]'
+gh workflow run '<workflow-name>' \
+  --ref '<branch-name>'
 
 #
 gh run watch
 ```
+
+### Issues
+
+#### Missing Workflow Scope
+
+```log
+! [remote rejected] develop -> develop (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/README.md` without `workflow` scope)
+```
+
+1. Access [Personal access tokens (classic)](https://github.com/settings/tokens)
+2. Edit personal access token (classic) -> Add "workflow" scope -> Update token
 
 <!-- ## Docker
 

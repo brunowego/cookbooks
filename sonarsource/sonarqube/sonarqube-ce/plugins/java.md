@@ -1,16 +1,14 @@
 # SonarQube Java Plugin
 
-## CLI
-
-### References
+## Links
 
 - [Code Repository](https://github.com/SonarSource/sonar-java)
 
-### Dependencies
+## Dependencies
 
 - [SonarQube](/sonarsource/sonarqube-ce.md)
 - [SonarQube Scanner](/sonarsource/sonarqube-scanner.md)
 
-### Configuration
+## Configuration
 
 Follow [this instructions](/sonarsource/sonarqube-scanner.md#configuration).

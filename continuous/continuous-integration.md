@@ -6,19 +6,23 @@ https://linkedin.com/learning/continuous-integration-tools/building-your-ci-cd-p
 
 ## Tools
 
-- [Bamboo](https://atlassian.com/software/bamboo)
+- [Atlassian Bamboo](/atlassian/atlassian-bamboo.md)
+- [Azure DevOps](/azure/services/azure-devops/README.md)
+- [Drone CI](/drone-ci.md)
+- [GitHub Actions](/github/actions/README.md)
 - [GitLab CI](/gitlab/gitlab-ci.md)
-- [Jenkins](/jenkins.md)
+- [Go Continuous Delivery (GoCD)](/gocd.md)
+- [Jenkins](/jenkins/README.md)
+- [Semaphore](https://semaphoreci.com/)
+- [Spinnaker](/spinnaker.md)
 - [TeamCity](https://jetbrains.com/teamcity/)
 - [Travis CI](https://travis-ci.com/)
-- [Semaphore](https://semaphoreci.com/)
 
 <!--
-- [AWS CodeDeploy](/aws/aws-codedeploy.md)
-- [AWS CodePipeline](/aws/aws-codepipeline.md)
+- [AWS CodeDeploy](/aws/services/aws-codedeploy.md)
+- [AWS CodePipeline](/aws/services/aws-codepipeline.md)
+- [Buddy](/buddy.md)
 - [Deployer (PHP)](/deployer.md)
-- [Drone CI](/drone-ci.md)
-- [GitHub Actions](/github/github-actions.md)
-- [Shippable (now JFrog Pipelines)](https://shippable.com/)
-- [Walle (Chinese)](http://walle-web.io/)
+- [Shippable (now JFrog Pipelines)](https://shippable.com)
+- [Walle (Chinese)](http://walle-web.io)
 -->

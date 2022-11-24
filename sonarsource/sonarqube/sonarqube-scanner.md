@@ -104,14 +104,15 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
      -Dsonar.projectName='My App Production' \
      -Dsonar.projectVersion='0.1.0' \
      -Dsonar.sources='./' \
-     -Dsonar.exclusions='./vendor/**,./tests/**' \
+     -Dsonar.exclusions='tests/**,vendor/**' \
      -Dsonar.language='php' \
      -Dsonar.php.coverage.reportPaths='./phpunit.coverage.xml' \
      -Dsonar.php.tests.reportPath='./phpunit.report.xml' \
      -Dsonar.host.url='http://127.0.0.1:9000' \
      -Dsonar.sourceEncoding='UTF-8' \
      -Dsonar.dynamicAnalysis='reuseReports' \
-     -Dsonar.login="$SONAR_LOGIN_TOKEN"
+     -Dsonar.login="$SONAR_LOGIN_TOKEN" \
+     -X
    ```
 
    **_Or_**
@@ -127,7 +128,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
    sonar.projectVersion=0.1.0
 
    sonar.sources=./
-   sonar.exclusions=./vendor/**,./tests/**
+   sonar.exclusions=tests/**,vendor/**
    sonar.php.coverage.reportPaths=./phpunit.coverage.xml
    sonar.php.tests.reportPath=./phpunit.report.xml
 
@@ -138,12 +139,12 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
    sonar.sourceEncoding=UTF-8
    sonar.dynamicAnalysis=reuseReports
    EOF
-   ```
 
-   ```sh
+   #
    sonar-scanner \
      -Dproject.settings=./sonar-project.properties \
-     -Dsonar.login="$SONAR_LOGIN_TOKEN"
+     -Dsonar.login="$SONAR_LOGIN_TOKEN" \
+     -X
    ```
 
 ```sh

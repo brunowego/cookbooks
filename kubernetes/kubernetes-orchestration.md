@@ -12,7 +12,7 @@
 
 ## Multicloud
 
-- [kOps](/kops/README.md) 🌟
+- [Kubernetes Operations (kOps)](/kops/README.md) 🌟
 - [Rancher](/rancher.md)
 
 ## Enterprise

@@ -16,11 +16,6 @@ Jenkins Configuration as Code (aka JCasC)
 
 - [Plugins](https://plugins.jenkins.io/)
 
-## Alternatives
-
-- [Atlassian Bamboo](/atlassian/atlassian-bamboo.md)
-- [Spinnaker](/spinnaker.md)
-
 ## Related
 
 - [Groovy](/apache/apache_groovy.md)
@@ -47,7 +42,7 @@ helm repo update
 
 ```sh
 #
-kubectl create ns jenkins
+kubectl create ns jenkins-system
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
@@ -55,7 +50,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install jenkins jenkins/jenkins \
-  --namespace jenkins \
+  --namespace jenkins-system \
   --version 3.5.2 \
   -f <(cat << EOF
 controller:
@@ -75,21 +70,21 @@ EOF
 
 ```sh
 kubectl rollout status statefulset/jenkins \
-  -n jenkins
+  -n jenkins-system
 ```
 
 ### Logs
 
 ```sh
 #
-kubectl logs $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins) init \
-  -n jenkins \
+kubectl logs $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins-system) init \
+  -n jenkins-system \
   -f
 
 #
 kubectl logs \
   -l 'app.kubernetes.io/name=jenkins' \
-  -n jenkins \
+  -n jenkins-system \
   -c init \
   -f
 ```
@@ -99,7 +94,7 @@ kubectl logs \
 ```sh
 kubectl get secret jenkins \
   -o jsonpath='{.data.jenkins-admin-password}' \
-  -n jenkins | \
+  -n jenkins-system | \
     base64 -d; echo
 ```
 
@@ -108,28 +103,28 @@ kubectl get secret jenkins \
 ```sh
 # Default
 helm upgrade jenkins jenkins/jenkins \
-  -n jenkins \
-  -f <(yq m <(helm get values jenkins -n jenkins) <(yq p <(yq r <(helm get --all jenkins values -n jenkins) controller.installPlugins) controller.installPlugins))
+  -n jenkins-system \
+  -f <(yq m <(helm get values jenkins -n jenkins-system) <(yq p <(yq r <(helm get --all jenkins values -n jenkins-system) controller.installPlugins) controller.installPlugins))
 ```
 
 ```sh
 # GitLab
-helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq w <(helm get values jenkins -n jenkins) 'controller.installPlugins[+]' gitlab:1.5.12)
+helm upgrade jenkins jenkins/jenkins -n jenkins-system -f <(yq w <(helm get values jenkins -n jenkins-system) 'controller.installPlugins[+]' gitlab:1.5.12)
 
 # NXRM OSS
-helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq w <(helm get values jenkins -n jenkins) 'controller.installPlugins[+]' nexus-jenkins:3.7.20190823-091836.9f85050)
+helm upgrade jenkins jenkins/jenkins -n jenkins-system -f <(yq w <(helm get values jenkins -n jenkins-system) 'controller.installPlugins[+]' nexus-jenkins:3.7.20190823-091836.9f85050)
 
 # Kubernetes CD
-helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq w <(helm get values jenkins -n jenkins) 'controller.installPlugins[+]' kubernetes-cd:2.1.2)
+helm upgrade jenkins jenkins/jenkins -n jenkins-system -f <(yq w <(helm get values jenkins -n jenkins-system) 'controller.installPlugins[+]' kubernetes-cd:2.1.2)
 
 # Blue Ocean
-helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq w <(helm get values jenkins -n jenkins) 'controller.installPlugins[+]' blueocean:1.18.3)
+helm upgrade jenkins jenkins/jenkins -n jenkins-system -f <(yq w <(helm get values jenkins -n jenkins-system) 'controller.installPlugins[+]' blueocean:1.18.3)
 ```
 
 ### Custom Agent
 
 ```sh
-helm upgrade jenkins jenkins/jenkins -n jenkins -f <(yq m <(cat << EOF
+helm upgrade jenkins jenkins/jenkins -n jenkins-system -f <(yq m <(cat << EOF
 agent:
   image: docker.io/brunowego/jnlp-slave-s2i
   tag: 3.29-1
@@ -143,15 +138,15 @@ agent:
   - name: DOCKER_REGISTRY_CREDENTIAL
     value: nxrm-oss-credential
 EOF
-) <(helm get values jenkins -n jenkins))
+) <(helm get values jenkins -n jenkins-system))
 ```
 
 <!-- ### DNS
 
 ```sh
 kubectl exec -it \
-   $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins) \
-  -n jenkins \
+   $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins-system) \
+  -n jenkins-system \
   -- cat /etc/resolv.conf
 ```
 
@@ -161,7 +156,7 @@ kubectl exec -it \
 
 ```sh
 helm upgrade jenkins jenkins/jenkins \
-  -n jenkins \
+  -n jenkins-system \
   -f <(yq m <(cat << EOF
 master:
   initContainerEnv:
@@ -178,16 +173,16 @@ master:
       value: "$http_proxy"
   javaOpts: "$JAVA_OPTS"
 EOF
-) <(helm get values jenkins -n jenkins))
+) <(helm get values jenkins -n jenkins-system))
 ```
 
 ### Shell
 
 ```sh
 kubectl exec -it \
-  $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins) \
+  $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins-system) \
   -c jenkins \
-  -n jenkins \
+  -n jenkins-system \
   -- /bin/bash
 ```
 
@@ -219,8 +214,8 @@ stderr: fatal: unable to access 'https://gitlab.example.com/[group]/[project].gi
 
 ```sh
 kubectl exec -it \
-  $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins) \
-  -n jenkins \
+  $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins-system) \
+  -n jenkins-system \
   -- git config --global http.sslVerify false
 ```
 
@@ -280,19 +275,19 @@ sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid
 
 ```sh
 kubectl exec -it \
-  "$(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins)" \
-  -n jenkins \
+  "$(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins-system)" \
+  -n jenkins-system \
   -- mkdir -p /etc/ssl/certs/example
 ```
 
 ```sh
-kubectl cp /etc/ssl/certs/example/root-ca.crt jenkins/"$(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins)":/etc/ssl/certs/example/root-ca.crt
+kubectl cp /etc/ssl/certs/example/root-ca.crt jenkins/"$(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins-system)":/etc/ssl/certs/example/root-ca.crt
 ```
 
 ```sh
 kubectl exec -it \
-  "$(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins)" \
-  -n jenkins \
+  "$(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins-system)" \
+  -n jenkins-system \
   -- keytool -importcert \
        -noprompt \
        -trustcacerts \
@@ -307,9 +302,9 @@ kubectl exec -it \
 
 <!-- ```sh
 kubectl exec -it \
-  "$(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins)" \
+  "$(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins-system)" \
   -c jenkins \
-  -n jenkins \
+  -n jenkins-system \
   -- /bin/sh -c 'kill 1'
 ``` -->
 
@@ -321,8 +316,8 @@ javax.net.ssl.SSLPeerUnverifiedException: Certificate for <subdomain.example.com
 
 ```sh
 # kubectl exec -it \
-#   $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins) \
-#   -n jenkins \
+#   $(kubectl get pod -l 'app.kubernetes.io/name=jenkins' -o jsonpath='{.items[0].metadata.name}' -n jenkins-system) \
+#   -n jenkins-system \
 #   -- keytool -list \
 #        -keystore '/usr/local/openjdk-8/jre/lib/security/cacerts' \
 #        -storepass changeit
@@ -332,9 +327,9 @@ javax.net.ssl.SSLPeerUnverifiedException: Certificate for <subdomain.example.com
 
 ```sh
 helm uninstall jenkins \
-  -n jenkins
+  -n jenkins-system
 
-kubectl delete ns jenkins \
+kubectl delete ns jenkins-system \
   --grace-period=0 \
   --force
 ```

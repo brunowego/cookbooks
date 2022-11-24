@@ -5,6 +5,8 @@ DependsOn Attribute
 Wait Condition
 -->
 
+**Keywords:** Infrastructure as Code
+
 ## Alternatives
 
 - [Terraform](/hashicorp/terraform/README.md)

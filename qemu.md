@@ -1,4 +1,4 @@
-# QEMU
+# Quick Emulator (QEMU)
 
 ## Links
 

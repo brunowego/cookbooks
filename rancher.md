@@ -4,7 +4,7 @@
 https://github.com/rancher-sandbox/rancher-desktop
 -->
 
-**Keywords:** Kubernetes Management
+**Keywords:** Kubernetes Management, Kubernetes Orchestration
 
 ## Links
 
