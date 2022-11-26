@@ -1,6 +1,6 @@
-# Release
+# Release Strategy (or Deployment Strategy)
 
-## Strategy
+## Types
 
 - A/B Testing
 - Blue/Green Deployments

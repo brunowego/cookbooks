@@ -80,7 +80,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
 
 1. Projects -> Manually
    - Display name: My App Production
-   - Project key: com.example.app:master
+   - Project key: com.example.app
    - Set Up
 2. How do you want to analyze your repository? Locally
 3. Analyze your project / Provide a token
@@ -100,7 +100,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
 
    #
    sonar-scanner \
-     -Dsonar.projectKey='com.example.app:master' \
+     -Dsonar.projectKey='com.example.app' \
      -Dsonar.projectName='My App Production' \
      -Dsonar.projectVersion='0.1.0' \
      -Dsonar.sources='./' \
@@ -123,7 +123,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
 
    #
    cat << EOF > ./sonar-project.properties
-   sonar.projectKey=com.example.app:master
+   sonar.projectKey=com.example.app
    sonar.projectName=My App Production
    sonar.projectVersion=0.1.0
 

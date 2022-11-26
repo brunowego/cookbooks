@@ -28,6 +28,18 @@ choco install brave
 
 ### Tips
 
+#### Backup Folders
+
+```sh
+# MacOS
+ls "$HOME"/Library/Application\ Support/BraveSoftware
+```
+
+<!--
+# Windows
+C:\Users\<username>\AppData\Local\BraveSoftware
+-->
+
 #### MetaMask as Digital Wallet
 
 1. Open [Settings](brave://settings/)

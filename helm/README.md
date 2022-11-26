@@ -113,6 +113,15 @@ pkill helm
 
 ### Tips
 
+#### Force Redeploy
+
+```sh
+#
+helm upgrade <name> <repo-name>/<chart-name> \
+  -n <namespace> \
+  --version <version>
+```
+
 #### Plugin
 
 ```sh
@@ -158,8 +167,8 @@ helm get values '<name>' \
   -n '<namespace>'
 
 #
-helm upgrade atlantis runatlantis/atlantis \
-  -n atlantis \
+helm upgrade <name> <repo-name>/<chart-name> \
+  -n <namespace> \
   --version 3.13.0 \
   --dry-run \
   -f ./values.yaml

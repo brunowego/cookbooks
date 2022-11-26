@@ -1,12 +1,9 @@
 # 1Password
 
-<!--
-https://support.1password.com/command-line-reference/
+## Links
 
-https://github.com/nuxsmin/sysPass
-
-1Password Browser Helper
--->
+- [Main Website](https://1password.com/)
+- [Dashboard](https://my.1password.com/home)
 
 ## App
 

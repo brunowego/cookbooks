@@ -254,9 +254,30 @@ kubectl logs \
   -f
 ```
 
+### Secrets
+
 | Login   | Password |
 | ------- | -------- |
 | `admin` | `admin`  |
+
+<!--
+###
+
+```sh
+#
+kubectl get statefulset sonarqube-sonarqube \
+  -o jsonpath='{.spec.updateStrategy}' \
+  -n sonarqube-system; echo
+
+#
+kubectl patch statefulset sonarqube-sonarqube \
+  -n sonarqube-system \
+  -p '{"spec":{"updateStrategy":{"type":"RollingUpdate","rollingUpdate":{"partition":0}}}}'
+
+#
+kubectl rollout restart statefulset sonarqube-sonarqube -n sonarqube-system
+```
+-->
 
 ### Delete
 
@@ -299,6 +320,14 @@ There’s a new version of SonarQube available. Update to enjoy the latest updat
 TODO
 
 ## Issues
+
+### Upgrade Database
+
+```log
+SonarQube is under maintenance
+```
+
+Open `<sonarqube-url>/setup` and "Upgrade" the database.
 
 ### Global Analysis Token
 

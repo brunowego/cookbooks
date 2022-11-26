@@ -10,13 +10,15 @@
 
 ## Software Content
 
-- SwitchHosts!
-- DBeaverEE
-- IRPF
-- Ultimaker Cura
-- SnippetsLab
-- Paste
-- Brave Rewards
+- [Brave Browser](/brave/README.md#backup-folders)
+- [DBeaver](/dbeaver/README.md#backup-folders)
+- [IRPF](/countries/brazil/irpf.md)
+- [Paste](/paste.md)
+- [Siri Shortcuts](/apple/siri/shortcuts.md)
+- [SnippetsLab](/snippetslab.md)
+- [SSH Config Connections](/ssh/README.md#backup-folder)
+- [SwitchHosts!](/switchhosts.md)
+- [Ultimaker Cura](/ultimaker-cura.md)
 
 ## License Deactivate
 
@@ -26,12 +28,11 @@
 ## Notes
 
 - Save "Stickies"
-- SSH Config Connections
 - VPN Connection
 - Visual Studio Code Project Manager
-- Kubernetes Local Configuration
+- [Kubernetes Local Configuration](/kubectl/README.md#backup)
 - ProxyChains-NG Configuration
-- Shell History
+- [Shell History](/history.md#backup)
 
 ## Configuration
 
@@ -95,7 +96,6 @@ https://www.thingiverse.com/thing:4011857
 https://www.thingiverse.com/thing:3554962
 
 https://www.thingiverse.com/search?q=dewalt&type=things&sort=relevant&page=23
-
 -->
 
 <!--

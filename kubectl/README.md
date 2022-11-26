@@ -154,6 +154,12 @@ kubectl delete secret [secret-name] \
 
 ### Tips
 
+#### Backup
+
+```sh
+cat ~/.kube/config | gh gist create - -f kubeconfig
+```
+
 #### Delete Restarted Pods
 
 ```sh
@@ -659,7 +665,7 @@ kubectl rollout restart deployment \
 
 ### Issues
 
-####
+#### TBD
 
 ```log
 Warning  FailedCreatePodSandBox  55s (x13 over 69s)  kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to start sandbox container for pod "my-app-worker-amqp-system-user-data-import-parser-7b445867xjs6": Error response from daemon: OCI runtime create failed: container_linux.go:349: starting container process caused "process_linux.go:319: getting the final child's pid from pipe caused \"EOF\"": unknown

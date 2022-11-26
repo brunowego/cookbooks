@@ -2,9 +2,7 @@
 
 **Keywords:** Continuous Integration
 
-## Alternatives
-
-- [Jenkins](/jenkins/README.md)
+TODO
 
 <!--
 ## Interview

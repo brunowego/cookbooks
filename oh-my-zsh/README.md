@@ -88,6 +88,12 @@ sudo su - "$USER"
 
 ## Tips
 
+### Reset ZSH RC File
+
+```sh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+```
+
 ### Git Legend
 
 - Prefix: `☁`

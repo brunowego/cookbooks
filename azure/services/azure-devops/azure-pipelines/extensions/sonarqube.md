@@ -1,4 +1,4 @@
-# SonarQube
+# SonarQube Extension
 
 ## Links
 

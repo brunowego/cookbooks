@@ -7,11 +7,7 @@ https://www.eksworkshop.com/intermediate/290_argocd/
 https://www.udemy.com/course/hands-on-guide-to-argo-workflows-on-kubernetes/
 -->
 
-**Keywords:** Operator, GitOps
-
-## Alternatives
-
-- [Flux CD](/fluxcd.md)
+**Keywords:** Continuous Delivery / Continuous Deployment, GitOps
 
 ## Links
 
@@ -31,11 +27,12 @@ https://www.udemy.com/course/hands-on-guide-to-argo-workflows-on-kubernetes/
 
 ```sh
 #
-kubectl create ns argo-system
+kubectl create ns argocd-system
+# kubectl create ns pipeline
 
 #
 kubectl apply \
-  -n argo-system \
+  -n argocd-system \
   -f 'https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml'
 
 #
@@ -49,23 +46,23 @@ kubectl wait \
 kubectl port-forward \
   svc/argocd-server \
   --address 0.0.0.0 \
-  -n argo-system \
+  -n argocd-system \
   8443:443
 
 #
 echo -e '[INFO]\thttps://127.0.0.1:8443'
 ```
 
-| Login   | Password                                                                                      |
-| ------- | --------------------------------------------------------------------------------------------- | ---------------- |
-| `admin` | `kubectl get secret argocd-initial-admin-secret -n argo-system -o jsonpath='{.data.password}' | base64 -d; echo` |
+| Login   | Password                                                                                        |
+| ------- | ----------------------------------------------------------------------------------------------- | ---------------- |
+| `admin` | `kubectl get secret argocd-initial-admin-secret -n argocd-system -o jsonpath='{.data.password}' | base64 -d; echo` |
 
 ### Uninstall
 
 ```sh
 #
 kubectl delete \
-  -n argo-system \
+  -n argocd-system \
   -f 'https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml'
 
 #
@@ -76,7 +73,7 @@ kubectl delete ns argo
 
 ### References
 
-- [Values](https://github.com/argoproj/argo-helm/tree/master/charts/argo-cd#chart-values)
+- [Parameters](https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd#general-parameters)
 
 ### Dependencies
 
@@ -93,7 +90,11 @@ helm repo update
 
 ```sh
 #
-kubectl create ns argo-system
+kubectl create ns argocd-system
+# kubectl create ns pipeline
+
+#
+helm search repo -l argo/argo-cd
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
@@ -101,8 +102,8 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install argo-cd argo/argo-cd \
-  --namespace argo-system \
-  --version 3.17.6 \
+  --namespace argocd-system \
+  --version 5.14.1 \
   -f <(cat << EOF
 server:
   extraArgs:
@@ -110,6 +111,7 @@ server:
 
   ingress:
     enabled: true
+    ingressClassName: nginx
     hosts:
     - argocd.${DOMAIN}
 EOF
@@ -125,7 +127,7 @@ EOF
 kubectl create secret tls example.tls-secret \
   --cert='/etc/ssl/certs/example/root-ca.crt' \
   --key='/etc/ssl/private/example/root-ca.key' \
-  -n argo-system
+  -n argocd-system
 
   --set ingress.annotations."kubernetes\.io/ingress\.class"=nginx \
   --set-string ingress.annotations."nginx\.ingress\.kubernetes\.io/force-ssl-redirect"=true \
@@ -134,14 +136,14 @@ kubectl create secret tls example.tls-secret \
 #
 kubectl patch ingress argocd-server \
   -p '{"spec":{"tls":[{"hosts":["argocd.${DOMAIN}"],"secretName":"example.tls-secret"}]}}' \
-  -n argo-system
+  -n argocd-system
 ``` -->
 
 ### Status
 
 ```sh
 kubectl rollout status deploy/argo-cd-argocd-server \
-  -n argo-system
+  -n argocd-system
 ```
 
 ### Logs
@@ -149,16 +151,21 @@ kubectl rollout status deploy/argo-cd-argocd-server \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/instance=argo-cd' \
-  -n argo-system \
+  -n argocd-system \
+  --max-log-requests 7 \
   -f
 ```
 
 ### Secrets
 
+<!--
+username: admin
+-->
+
 ```sh
 kubectl get secret argocd-initial-admin-secret \
   -o jsonpath='{.data.password}' \
-  -n argo-system | \
+  -n argocd-system | \
     base64 -d; echo
 ```
 
@@ -166,7 +173,7 @@ kubectl get secret argocd-initial-admin-secret \
 
 ```sh
 helm uninstall argo-cd \
-  -n argo-system
+  -n argocd-system
 
 kubectl delete ns argocd \
   --grace-period=0 \
@@ -339,7 +346,7 @@ argocd app delete '[app-name]'
 ```sh
 kubectl patch configmap argocd-cm \
   -p '{"data":{"statusbadge.enabled":"true"}}' \
-  -n argo-system \
+  -n argocd-system \
   --dry-run='server'
 ```
 
@@ -378,8 +385,8 @@ FATA[0000] rpc error: code = Unknown desc = account 'admin' does not have apiKey
 ```
 
 ```sh
-export TOKEN_SECRET="$(kubectl get serviceaccount -n argo-system argocd -o jsonpath='{.secrets[0].name}')"
-export TOKEN="$(kubectl get secret -n argo-system $TOKEN_SECRET -o jsonpath='{.data.token}' | base64 -d)"
+export TOKEN_SECRET="$(kubectl get serviceaccount -n argocd-system argocd -o jsonpath='{.secrets[0].name}')"
+export TOKEN="$(kubectl get secret -n argocd-system $TOKEN_SECRET -o jsonpath='{.data.token}' | base64 -d)"
 
 export ARGOCD_AUTH_TOKEN=''
 ``` -->
@@ -403,5 +410,5 @@ TODO
 ```sh
 #
 kubectl get appprojects \
-  -n argo-system
+  -n argocd-system
 ```

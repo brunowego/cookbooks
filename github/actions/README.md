@@ -35,6 +35,8 @@ https://github.com/search?o=desc&q=filename%3A.yaml+path%3A.github%2Fworkflows+%
 
 setup-[name]
 action-[name]
+
+Discord: https://github.com/hacs/integration/blob/main/.github/workflows/validate.yml
 -->
 
 **Keywords:** Continuous Integration

@@ -1,5 +1,7 @@
 # Azure Pipelines Release
 
+**Keywords:** Continuous Delivery / Continuous Deployment
+
 ## CLI
 
 ### Commands

@@ -6,6 +6,7 @@ https://github.com/hanaui-git/ZeroDiscord
 
 ## Links
 
+- [Main Website](https://discord.com/)
 - [Status Page](https://discordstatus.com/)
 
 ## Related

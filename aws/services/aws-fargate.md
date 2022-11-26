@@ -4,7 +4,7 @@
 https://www.youtube.com/watch?v=fMiX5dZ9v4w
 -->
 
-**Keywords:** Serverless, ECS
+**Keywords:** Serverless, ECS, EKS
 
 ## Links
 

@@ -22,7 +22,7 @@ mas install 985367838
 
 #### Share Calendar
 
-1. [https://outlook.office.com/mail/](Outlook Mail)
+1. [Outlook Mail](https://outlook.office.com/mail/)
 2. Settings -> View all Outlook settings
 3. Calendar Tab -> Shared calendars Sub-tab
 4. Publish a calendar

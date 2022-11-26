@@ -68,7 +68,7 @@ helm upgrade ambassador stable/ambassador -f <(yq w <(helm get values ambassador
 
 ```sh
 kubectl get pod -l 'app.kubernetes.io/name=ambassador' \
-  -o jsonpath='{.items..metadata.name}' \
+  -o jsonpath='{.items[*].metadata.name}' \
   -n ambassador | \
     xargs kubectl delete pod -n ambassador
 ```

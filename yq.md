@@ -48,9 +48,9 @@ yq help
 
 ```sh
 # Simple
-yq e '.[attribute]' [/path/to/file]
+yq e '.<attribute>' </path/to/file>
 
 # Standard out
-cat [/path/to/file] | \
-  yq e '.[attribute]' -
+cat </path/to/file> | \
+  yq e '.<attribute>' -
 ```

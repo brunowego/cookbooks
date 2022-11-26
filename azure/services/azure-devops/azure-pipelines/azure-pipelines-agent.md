@@ -1,8 +1,10 @@
-# Azure Pipelines Self-hosted Agents
+# Azure Pipelines Agent
 
 <!--
 https://www.youtube.com/watch?v=CmamCFSrNzs
 -->
+
+**Keywords:** Self-Hosted
 
 ## Glossary
 

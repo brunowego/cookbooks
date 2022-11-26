@@ -1,8 +1,9 @@
 # JavaScript Object Notation (JSON)
 
-## Links
+## Tools
 
 - [JSON Formatter](https://jsonformatter.org/)
+- [JSON Schema Store](https://schemastore.org/json/)
 
 ## Tips
 

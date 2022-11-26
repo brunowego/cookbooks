@@ -157,6 +157,11 @@ kubectl config set-context \
 minikube ssh \
   -p minikube-default \
     sudo ip link set docker0 promisc on
+
+#
+minikube stop -p minikube-default
+# or
+minikube start -p minikube-default
 ```
 
 #### Addons

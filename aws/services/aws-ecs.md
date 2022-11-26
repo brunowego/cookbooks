@@ -1,6 +1,6 @@
 # AWS Elastic Container Service (ECS)
 
-**Keywords:** Kubernetes Orchestration
+**Keywords:** Container Orchestration
 
 ## Console
 

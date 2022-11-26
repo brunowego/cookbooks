@@ -29,5 +29,9 @@ defaults delete com.apple.dock recent-apps
 ## Restart
 
 ```sh
-killall -HUP Dock
+killall -KILL Dock
 ```
+
+<!--
+killall -HUP Dock
+-->

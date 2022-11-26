@@ -6,5 +6,7 @@
 
 ## Tools
 
-- [GitLab CD](/gitlab/gitlab-cd.md)
+- [Argo CD](/argo/argo-cd/README.md)
+- [Flux CD](/fluxcd.md)
 - [GitHub Actions](/github/actions/README.md)
+- [GitLab CD](/gitlab/gitlab-cd.md)

@@ -6,11 +6,6 @@ https://www.youtube.com/watch?v=tkYzg8HRK4o
 
 **Keywords:** Kubernetes Orchestration
 
-## Alternatives
-
-- [Kubernetes Operations (kOps)](/kops.md)
-- [Rancher](/rancher.md)
-
 ## Console
 
 - [Clusters](https://console.aws.amazon.com/eks/home#/clusters)

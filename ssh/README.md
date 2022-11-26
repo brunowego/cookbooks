@@ -25,6 +25,12 @@ ssh \
 
 ### Tips
 
+#### Backup Folder
+
+```sh
+ls ~/.ssh
+```
+
 #### Visual Studio Code
 
 ```sh

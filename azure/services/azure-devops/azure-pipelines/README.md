@@ -1,8 +1,10 @@
-# Azure DevOps Pipelines
+# Azure Pipelines
 
 <!--
 https://azuredevopslabs.com/labs/azuredevops/yaml/
 -->
+
+**Keywords:** Continuous Integration
 
 ## Links
 
@@ -52,4 +54,16 @@ az pipelines show --id '<pipeline-id>'
 
 #
 az pipelines delete --id '<pipeline-id>'
+```
+
+## Tips
+
+### Visual Studio Code
+
+```sh
+#
+code --install-extension ms-azure-devops.azure-pipelines
+
+#
+jq '."recommendations" += ["ms-azure-devops.azure-pipelines"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

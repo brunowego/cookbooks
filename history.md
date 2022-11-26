@@ -15,8 +15,5 @@ history
 
 ```sh
 #
-history > ./history.txt
-
-#
-history -r ./history.txt
+history | gh gist create - -f history.txt
 ```

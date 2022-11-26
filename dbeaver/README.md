@@ -78,6 +78,13 @@ Or:
 
 ### Tips
 
+#### Backup Folders
+
+```sh
+# MacOS
+ls "$HOME"/Library/DBeaverData
+```
+
 #### SQL Formatting: Upper Case
 
 1. Preferences...

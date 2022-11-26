@@ -1,5 +1,9 @@
 # DB Browser for SQLite
 
+## Links
+
+- [Main Website](https://sqlitebrowser.org/)
+
 ## App
 
 ### Installation

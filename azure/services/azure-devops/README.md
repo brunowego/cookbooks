@@ -24,6 +24,10 @@ https://linkedin.com/learning/azure-for-devops-implementing-development-processe
 
 - [Use predefined variables / System.Debug](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#systemdebug)
 
+<!--
+system.debug: true
+-->
+
 ## Glossary
 
 - Personal Access Token (PAT)
@@ -31,10 +35,10 @@ https://linkedin.com/learning/azure-for-devops-implementing-development-processe
 
 ## Services
 
-- [Azure Artifacts](/azure/services/azure-devops/azure-artifacts.md)
-- [Azure Boards](/azure/services/azure-devops/azure-boards.md)
-- [Azure Pipelines](/azure/services/azure-devops/azure-pipelines/README.md)
-- [Azure Repos](/azure/services/azure-devops/azure-repos.md)
+- [Azure Artifacts](./azure-artifacts.md)
+- [Azure Boards](./azure-boards.md)
+- [Azure Pipelines](./azure-pipelines/README.md)
+- [Azure Repos](./azure-repos.md)
 
 ## CLI
 

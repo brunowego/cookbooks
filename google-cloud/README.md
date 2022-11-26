@@ -6,15 +6,15 @@ https://app.pluralsight.com/library/courses/serverless-data-processing-dataflow-
 https://linkedin.com/learning/google-cloud-platform-gcp-essential-training-for-developers/kicking-off-your-gcp-development
 -->
 
+## Console
+
+- [Dashboard](https://console.cloud.google.com/home/dashboard)
+- [OAuth Consent Screen](https://console.cloud.google.com/apis/credentials/consent/edit)
+
 ## Links
 
 - [Google Cloud Pricing Calculator](https://cloud.google.com/products/calculator)
 - [Google Cloud Status Dashboard](https://status.cloud.google.com/)
-
-### Console
-
-- [Dashboard](https://console.cloud.google.com/home/dashboard)
-- [OAuth Consent Screen](https://console.cloud.google.com/apis/credentials/consent/edit)
 
 <!--
 Google Compute Engine (GCE)

@@ -1,6 +1,6 @@
 # Flux CD
 
-**Keywords:** Operator, GitOps
+**Keywords:** Continuous Delivery / Continuous Deployment, GitOps
 
 <!--
 https://github.com/paulcarlton-ww/weaveworks-cx-task

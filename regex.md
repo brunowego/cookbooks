@@ -1,7 +1,7 @@
 # Regular Expressions (regex)
 
 <!--
-\[(\w+)\]
+\[([^\](.+)\[\r\n]*)\]
 <$1>
 
 [^(]
