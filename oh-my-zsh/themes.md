@@ -10,6 +10,13 @@
 # Set theme
 sed -i '/^ZSH_THEME/ s/robbyrussell/wedisagree/' ~/.zshrc
 
+# Reload
+source ~/.zshrc
+```
+
+<!-- ##
+
+```sh
 # Change prompt
 cat << \EOF >> ~/.zshrc
 
@@ -21,4 +28,4 @@ EOF
 
 # Reload
 source ~/.zshrc
-```
+``` -->

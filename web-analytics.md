@@ -1,0 +1,12 @@
+# Web Analytics
+
+## Tools
+
+- [Fathom](/fathom.md)
+- [GoAccess](/goaccess.md)
+- [Google Analytics](/google/google-analytics.md)
+- [Matomo](/matomo/README.md)
+- [Mixpanel](/mixpanel.md)
+- [Plausible Analytics](https://github.com/plausible/analytics)
+- [PostHog](/posthog.md)
+- [umami](https://github.com/mikecao/umami)

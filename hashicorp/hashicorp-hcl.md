@@ -81,5 +81,9 @@ file
 ### Visual Studio Code
 
 ```sh
+#
 code --install-extension wholroyd.hcl
+
+#
+jq '."recommendations" += ["wholroyd.hcl"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

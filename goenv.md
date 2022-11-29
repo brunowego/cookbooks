@@ -1,24 +1,28 @@
 # Go Version Management (goenv)
 
-## Alternatives
-
-- [gimme](https://github.com/travis-ci/gimme)
+**Keywords:** Golang Version Manager
 
 ## CLI
 
-### Dependencies
-
-- [Git](/git.md)
-
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install goenv
+```
+
 #### Unix-like
+
+**Dependencies:** [Git](/git.md)
 
 ```sh
 git clone 'https://github.com/syndbg/goenv.git' ~/.goenv
 ```
 
 ### Environment
+
+#### Unix-like
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
@@ -32,12 +36,10 @@ export PATH="$GOENV_ROOT/bin:$GOBIN:$PATH"
 ```
 
 ```sh
+#
 sudo su - "$USER"
-```
 
-## Configuration
-
-```sh
+#
 sudo mkdir -p /usr/local/go
 sudo chown -R "$(whoami)" /usr/local/go
 ```
@@ -68,16 +70,16 @@ sudo su - "$USER"
 goenv install --list
 
 # Install
-goenv install [version]
+goenv install <version>
 
 # Check
 goenv versions
 
 # Global
-goenv global [version]
+goenv global <version>
 
 # Uninstall
-goenv uninstall -f [version]
+goenv uninstall -f <version>
 ```
 
 ### Issues

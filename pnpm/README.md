@@ -56,7 +56,7 @@ pnpm run --parallel -r build
 
 ```sh
 #
-pnpx [command]
+pnpx <command>
 ```
 
 ### Tips

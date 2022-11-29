@@ -8,21 +8,14 @@ defaults write com.apple.dock autohide -bool true
 
 ## Persistent
 
-### Apps
-
 ```sh
+# Apps
 defaults delete com.apple.dock persistent-apps
-```
 
-### Others
-
-```sh
+# Others
 defaults delete com.apple.dock persistent-others
-```
 
-### Recent
-
-```sh
+# Recent
 defaults delete com.apple.dock recent-apps
 ```
 

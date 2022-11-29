@@ -28,6 +28,7 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 ```sh
 defaults write com.apple.finder AppleShowAllFiles true
+killall Finder
 ```
 
 ### Group by

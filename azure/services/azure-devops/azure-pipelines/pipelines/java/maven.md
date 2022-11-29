@@ -8,7 +8,7 @@ https://github.com/search?o=desc&q=filename%3Aazure-pipelines.yml+%22task%3A+Mav
 
 - [Build Java apps](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/java?view=azure-devops)
 
-<!-- ## Structure
+<!-- ## Configuration
 
 **Refer:** `./azure-pipelines.yml`
 

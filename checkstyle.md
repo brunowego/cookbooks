@@ -1,5 +1,7 @@
 # Checkstyle
 
+**Keywords:** Java Linter
+
 ## References
 
 - [Apache Maven Checkstyle Plugin](https://maven.apache.org/plugins/maven-checkstyle-plugin/)
@@ -32,7 +34,11 @@ checkstyle -h
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension shengchen.vscode-checkstyle
+
+#
+jq '."recommendations" += ["shengchen.vscode-checkstyle"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 <!-- ```sh

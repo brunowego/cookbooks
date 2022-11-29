@@ -38,5 +38,9 @@ checkov --file <./example.tf>
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension bridgecrew.checkov
+
+#
+jq '."recommendations" += ["bridgecrew.checkov"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

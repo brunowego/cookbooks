@@ -12,12 +12,14 @@
 brew install --cask iterm2
 ```
 
-### Properties
+### Run First Time
 
 ```sh
 open -a /Applications/iTerm.app
 osascript -e 'quit app "iTerm"'
 ```
+
+### Properties
 
 ```sh
 # Disable warning when quitting
@@ -95,6 +97,18 @@ Use `Control (⌃) + C`
 - `Command + k` Clear Buffer
 
 ### Issues
+
+#### Disable Shell Integration
+
+```log
+Looks like paste bracketing was left on when an ssh session ended unexpectedly or an app misbehaved. Turn it off?
+```
+
+1. iTerm -> Preferences...
+2. Profiles -> Select Profile
+3. Terminal Tab -> Shell Integration Session
+   - Uncheck "Insert newline before start of command prompt if needed"
+   - Uncheck "Show mark indicators"
 
 #### Remove Prompt %
 

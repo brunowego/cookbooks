@@ -43,6 +43,12 @@ sudo zypper install -y git-core curl tar gzip make gcc-c++ libffi-devel libopens
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install pyenv
+```
+
 #### Unix-like
 
 ##### Using Git

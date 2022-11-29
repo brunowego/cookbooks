@@ -59,7 +59,6 @@
 - No News Is Good News
 - Non-Disclosure-Agreements (NDA)
 - Not safe for work (NSFW)
-- Objectives and Key Results (OKR)
 - Obsessive-Compulsive Disorder (OCD)
 - On-premises (on-prem)
 - One-Time Password (OTP)

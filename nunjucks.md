@@ -7,7 +7,11 @@
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension ronnidc.nunjucks
+
+#
+jq '."recommendations" += ["ronnidc.nunjucks"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 <!-- ```sh

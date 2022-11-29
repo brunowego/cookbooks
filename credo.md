@@ -1,5 +1,5 @@
 # Credo
 
-## References
+## Links
 
-- [Installation and Usage](https://github.com/rrrene/credo#installation-and-usage)
+- [Code Repository](https://github.com/rrrene/credo)

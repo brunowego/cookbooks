@@ -1,5 +1,9 @@
 # Microsoft Teams
 
+## Links
+
+- [Main Website](https://teams.microsoft.com/)
+
 ## App
 
 ### Dependencies
@@ -72,6 +76,21 @@ choco install -y microsoft-teams
 ```
 
 ### Issues
+
+<!-- ####
+
+```txt
+https://[*.]microsoft.com
+https://[*.]microsoftonline.com
+https://[*.]teams.skype.com
+https://[*.]teams.microsoft.com
+https://[*.]sfbassets.com
+https://[*.]skypeforbusiness.com
+``` -->
+
+<!--
+https://learn.microsoft.com/en-us/microsoftteams/troubleshoot/teams-sign-in/sign-in-loop#resolution
+-->
 
 #### Proxy
 

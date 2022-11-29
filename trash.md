@@ -41,5 +41,5 @@ trash -h
 
 ```sh
 #
-trash [path/to/file]
+trash <path/to/file>
 ```

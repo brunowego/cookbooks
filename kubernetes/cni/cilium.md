@@ -58,7 +58,6 @@ kubectl get all -n kube-system
 <!-- ### Hubble Relay
 
 ```sh
-#
 # export KUBERNETES_IP='<kubernetes-ip>'
 # export DOMAIN="${KUBERNETES_IP}.nip.io"
 

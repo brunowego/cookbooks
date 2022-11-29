@@ -89,7 +89,11 @@ https://avvvatars.com/
 ### Visual Studio Code
 
 ```sh
+#
 code --install-extension dsznajder.es7-react-js-snippets
+
+#
+jq '."recommendations" += ["dsznajder.es7-react-js-snippets"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 <!--

@@ -83,6 +83,9 @@ rustc --version | head -1
 ```sh
 #
 code --install-extension rust-lang.rust
+
+#
+jq '."recommendations" += ["rust-lang.rust"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 <!--

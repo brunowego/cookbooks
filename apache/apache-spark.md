@@ -68,7 +68,11 @@ pyspark \
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension mshdinsight.azure-hdinsight
+
+#
+jq '."recommendations" += ["mshdinsight.azure-hdinsight"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ```sh

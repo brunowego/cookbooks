@@ -4,8 +4,6 @@
 snyk/snyk-cli:gradle-5.4
 
 https://github.com/snyk-labs/nodejs-goof
-
-.dccache
 -->
 
 **Keywords:** Vulnerability Scanner, SAST
@@ -16,6 +14,10 @@ https://github.com/snyk-labs/nodejs-goof
 - [Main Website](https://snyk.io/)
 - [Snyk Code](https://snyk.io/product/snyk-code/)
 - [Auth Token](https://app.snyk.io/account)
+
+## Related
+
+- [DeepCodeAI / Org. Repository](https://github.com/DeepCodeAI)
 
 ## CLI
 
@@ -31,6 +33,13 @@ https://github.com/snyk-labs/nodejs-goof
 ```sh
 brew tap snyk/tap
 brew install snyk
+```
+
+### Configuration
+
+```sh
+# DeepCode Cache ignore
+echo '/.dccache' >> ~/.gitignore_global
 ```
 
 ### Commands
@@ -51,12 +60,10 @@ snyk code --help
 ```sh
 # Using browser
 snyk auth
-
-# Using environment token variable
-SNYK_TOKEN=<TOKEN> snyk auth
-
-# Using token
-snyk auth <TOKEN>
+# or, using environment token variable
+SNYK_TOKEN='<token>' snyk auth
+# or, using token
+snyk auth '<token>'
 ```
 
 ### Usage
@@ -99,5 +106,9 @@ snyk ignore
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension snyk-security.snyk-vulnerability-scanner
+
+#
+jq '."recommendations" += ["snyk-security.snyk-vulnerability-scanner"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

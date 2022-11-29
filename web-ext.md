@@ -36,7 +36,6 @@ web-ext -h
 ### Usage
 
 ```sh
-#
 # https://addons.mozilla.org/developers/addon/api/key/
 
 web-ext sign \

@@ -4,6 +4,8 @@
 https://app.pluralsight.com/library/courses/building-deploying-monitoring-apache-nifi-dataflow/table-of-contents
 -->
 
+**Keywords:** Data Workflow
+
 ## References
 
 - [NiFiKop](/nifikop.md)

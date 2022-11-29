@@ -17,7 +17,7 @@ Efficient compilation, Efficient execution and Ease of programming.
 - [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson)
 - [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike)
 - [Robert Griesemer](https://en.wikipedia.org/wiki/Robert_Griesemer)
-- [Go (programming language)](https://en.wikipedia.org/wiki/Go_(programming_language))
+- [Go (programming language)](<https://en.wikipedia.org/wiki/Go_(programming_language)>)
 - [The Go Programming Language](https://golang.org/)
 - [Modules](https://github.com/golang/go/wiki/Modules)
 - [go.dev](https://go.dev/)

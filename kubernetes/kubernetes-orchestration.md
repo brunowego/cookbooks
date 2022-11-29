@@ -3,7 +3,7 @@
 ## Cloud Computing
 
 - AWS
-  - [Elastic Kubernetes Service (EKS)](/aws/services/aws-eks.md)
+  - [Elastic Kubernetes Service (EKS)](/aws/services/aws-eks.md) (AWS Fargate)
 - Azure
   - [Kubernetes Service (AKS)](/azure/services/azure-aks.md)
 - Google

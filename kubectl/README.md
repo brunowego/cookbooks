@@ -157,7 +157,12 @@ kubectl delete secret [secret-name] \
 #### Backup
 
 ```sh
+# Backup
 cat ~/.kube/config | gh gist create - -f kubeconfig
+
+# Restore
+gh gist list
+gh gist view <hash> > ~/.kube/config
 ```
 
 #### Delete Restarted Pods

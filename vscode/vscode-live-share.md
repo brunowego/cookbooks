@@ -15,4 +15,7 @@ https://code.visualstudio.com/learn/collaboration/live-share
 ```sh
 #
 code --install-extension MS-vsliveshare.vsliveshare-pack
+
+#
+jq '."recommendations" += ["MS-vsliveshare.vsliveshare-pack"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

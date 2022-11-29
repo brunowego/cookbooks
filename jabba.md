@@ -18,6 +18,12 @@
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install jabba
+```
+
 #### Unix-like
 
 ```sh
@@ -26,6 +32,8 @@ curl -sL 'https://github.com/shyiko/jabba/raw/master/install.sh' | \
 ```
 
 ### Environment
+
+#### Unix-like
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
@@ -95,11 +103,27 @@ jabba uninstall <version>
 
 ### Tips
 
+#### Java Home
+
+**Warning:** Not use if are using [jabba](/jabba.md).
+
+```sh
+# Java Home
+export JAVA_HOME="$(dirname $(dirname $(readlink -f $(which java))))"
+export PATH="$JAVA_HOME/bin:$PATH"
+```
+
+```sh
+sudo su - "$USER"
+```
+
 #### Install from Compacted File
 
 ```sh
+#
 wget 'https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz'
 
+#
 jabba install openjdk@1.11.0="tgz+file://$PWD/openjdk-11.0.2_linux-x64_bin.tar.gz"
 ```
 

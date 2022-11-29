@@ -61,7 +61,7 @@ cat ~/.tilt-dev/config
 cat << EOF > ./tilt_config
 {
   "allowed_contexts": [
-    "minikube-default"
+    "minikube"
   ],
   "default_registry": "",
   "environment": "local",

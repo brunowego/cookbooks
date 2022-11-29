@@ -72,7 +72,7 @@ So we introduce a Budget.
 - This is not "pay $$$"
 - Must be something that will visibly improve reliability.
 
-###
+<!-- ### -->
 
 Until the application is again meeting its SLO and has some Error Budget:
 

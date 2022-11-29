@@ -10,7 +10,11 @@
 ### Installation
 
 ```sh
+#
 code --install-extension felixfbecker.php-debug
+
+#
+jq '."recommendations" += ["felixfbecker.php-debug"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ### Running

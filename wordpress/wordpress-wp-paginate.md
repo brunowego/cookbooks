@@ -6,7 +6,7 @@
 wp plugin install wp-paginate --activate
 ```
 
-##
+## Snippet
 
 ```php
 if ( function_exists( 'wp_paginate' ) ):

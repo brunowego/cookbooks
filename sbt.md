@@ -52,5 +52,9 @@ sbt -h
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension lightbend.vscode-sbt-scala
+
+#
+jq '."recommendations" += ["lightbend.vscode-sbt-scala"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

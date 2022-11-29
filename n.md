@@ -1,5 +1,7 @@
 # Node version management (n)
 
+**Keywords:** Node.js Version Manager
+
 ## References
 
 - [GitHub Repository](https://github.com/tj/n)
@@ -69,7 +71,7 @@ n ls-remote --all | sort -n
 # Install
 n latest
 n lts
-n [version]
+n <version>
 
 # List Versions
 n ls
@@ -78,7 +80,7 @@ n ls
 n
 
 # Remove
-n rm [version]
+n rm <version>
 # or, all
 n ls | xargs n rm
 

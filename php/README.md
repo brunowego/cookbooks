@@ -236,7 +236,11 @@ EOF
 **_Dependencies:_** [PHP CodeSniffer](/phpcs.md)
 
 ```sh
+#
 code --install-extension bmewburn.vscode-intelephense-client
+
+#
+jq '."recommendations" += ["bmewburn.vscode-intelephense-client"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ### Pretty Dump

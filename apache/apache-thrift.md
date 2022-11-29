@@ -23,5 +23,9 @@ brew install thrift
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension mrkou47.thrift-syntax-support
+
+#
+jq '."recommendations" += ["mrkou47.thrift-syntax-support"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

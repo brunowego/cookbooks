@@ -6,7 +6,7 @@
 wp plugin install wp-pagenavi --activate
 ```
 
-##
+## Snippet
 
 ```php
 if ( function_exists( 'wp_pagenavi' ) ):

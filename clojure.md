@@ -63,7 +63,11 @@ clojure -e '(println (clojure-version))'
 <!-- #### Visual Studio Code
 
 ```sh
+#
 code --install-extension betterthantomorrow.calva
+
+#
+jq '."recommendations" += ["betterthantomorrow.calva"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ``` -->
 
 ### Issues

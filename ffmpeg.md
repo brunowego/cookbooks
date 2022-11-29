@@ -84,12 +84,11 @@ ffmpeg -i ./output.mkv -codec copy ./output.mp4
 # FPS
 ffprobe -i ./output.mp4 -print_format json -loglevel fatal -show_streams -count_frames
 
-#
-## Darwin
+# Darwin
 ffmpeg -f avfoundation -list_devices true -i ''
 ffmpeg -f avfoundation -i '<screen device index>:<audio device index>' ./output.mkv
 
-## Linux
+# Linux
 ffmpeg \
   -f video4linux2 \
   -s 640x480 \

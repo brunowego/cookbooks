@@ -22,7 +22,11 @@ https://linkedin.com/learning/learning-sql-programming-8382385/learning-sql-prog
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension adpyke.vscode-sql-formatter
+
+#
+jq '."recommendations" += ["adpyke.vscode-sql-formatter"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 #### EditorConfig

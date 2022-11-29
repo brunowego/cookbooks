@@ -19,6 +19,10 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 source /usr/local/share/antigen/antigen.zsh
 ```
 
+```sh
+source ~/.zshrc
+```
+
 ### Commands
 
 ```sh

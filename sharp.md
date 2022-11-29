@@ -10,10 +10,12 @@
 
 #### Wrong Build of sharp
 
+**Dependencies:** [trash](/trash.md)
+
 ```log
 Cannot find module '../build/Release/sharp-darwin-x64.node'
 ```
 
 ```sh
-rm -rf ./node_modules
+trash ./node_modules
 ```

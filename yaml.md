@@ -29,12 +29,17 @@
 
 ### Visual Studio Code
 
+**Dependencies:** [Linter](/linter.md#visual-studio-code) and [Prettier](/prettier.md#visual-studio-code)
+
 ```sh
 #
 code --install-extension redhat.vscode-yaml
 
 #
 jq '."recommendations" += ["redhat.vscode-yaml"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+
+#
+jq '."redhat.telemetry.enabled" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
 ### Merge Key Language

@@ -61,7 +61,11 @@ systemctl \
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension coolbear.systemd-unit-file
+
+#
+jq '."recommendations" += ["coolbear.systemd-unit-file"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 
 # hangxingliu.vscode-systemd-support
 ```

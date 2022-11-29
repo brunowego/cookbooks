@@ -39,6 +39,11 @@ https://linkedin.com/learning/aws-high-availability/aws-and-high-availability
 Transactions Per Second (TPS)
 -->
 
+## Console
+
+- [Globally](https://console.aws.amazon.com/)
+- [US West 2](https://us-west-2.console.aws.amazon.com/)
+
 ## References
 
 - [Open Source AWS Security Tools](https://asecure.cloud/tools/)
@@ -46,9 +51,6 @@ Transactions Per Second (TPS)
 - [Regions and Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
 - [AWS Exam Scheduling](https://certmetrics.com/amazon/candidate/exam_scheduling.aspx)
 - [Awesome List](https://github.com/donnemartin/awesome-aws)
-- AWS Console
-  - [Globally](https://console.aws.amazon.com/)
-  - [US West 2](https://us-west-2.console.aws.amazon.com/)
 - [AWS Post-Event Summaries](https://aws.amazon.com/premiumsupport/technology/pes/)
 
 ## Links

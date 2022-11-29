@@ -40,5 +40,9 @@ tfsec ./
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension tfsec.tfsec
+
+#
+jq '."recommendations" += ["tfsec.tfsec"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

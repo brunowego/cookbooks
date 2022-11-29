@@ -79,5 +79,9 @@ npx vue-cli-service lint
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension octref.vetur
+
+#
+jq '."recommendations" += ["octref.vetur"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

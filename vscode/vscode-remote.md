@@ -11,6 +11,9 @@
 ```sh
 #
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+
+#
+jq '."recommendations" += ["ms-vscode-remote.vscode-remote-extensionpack"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ## Configuration

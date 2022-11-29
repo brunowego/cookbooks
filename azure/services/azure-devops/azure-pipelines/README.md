@@ -2,6 +2,11 @@
 
 <!--
 https://azuredevopslabs.com/labs/azuredevops/yaml/
+
+${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main')  }}:
+${{ if ne(variables['Build.SourceBranch'], 'refs/heads/main')  }}:
+${{ if startsWith(variables['Build.SourceBranch'], 'refs/pull/')  }}:
+${{ if not(startsWith(variables['Build.SourceBranch'], 'refs/pull/'))  }}:
 -->
 
 **Keywords:** Continuous Integration
@@ -59,6 +64,8 @@ az pipelines delete --id '<pipeline-id>'
 ## Tips
 
 ### Visual Studio Code
+
+**Dependencies:** [YAML VSCode Extension](/yaml.md#visual-studio-code)
 
 ```sh
 #

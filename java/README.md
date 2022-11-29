@@ -150,7 +150,6 @@ java -version 2>&1
 # Java Compiler Version
 javac -version 2>&1
 
-#
 # java -jar './path/to/file.war'
 ```
 
@@ -169,13 +168,10 @@ java -ea Assertor
 code --install-extension vscjava.vscode-java-pack
 
 #
-code --install-extension sohibe.java-generate-setters-getters
-
-#
-code --install-extension redhat.fabric8-analytics
+jq '."recommendations" += ["vscjava.vscode-java-pack"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
-```sh
+<!-- ```sh
 # Darwin
 /usr/libexec/java_home -V
 
@@ -184,18 +180,7 @@ jq ".\"java.home\" |= \"$(dirname $(dirname $(readlink -f $(which java))))\"" "$
 
 #
 jq '."java.project.importOnFirstTimeStartup" |= "automatic"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
-
-#
-# java.completion.importOrder
-
-#     "java",
-#     "javax",
-#     "com",
-#     "org",
-#     "br.com.bb",
-#     "#",
-#     "#br.com.bb"
-```
+``` -->
 
 <!-- ```sh
 code './.vscode/settings.json'
@@ -223,7 +208,7 @@ code --disable-extension vscjava.vscode-java-pack
 #### Get Manifest
 
 ```sh
-jar tvf [filename].jar
+jar tvf <filename>.jar
 ```
 
 <!-- ####

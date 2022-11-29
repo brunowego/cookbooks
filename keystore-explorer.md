@@ -1,6 +1,6 @@
 # KeyStore Explorer
 
-##
+## App
 
 ### Installation
 
@@ -10,8 +10,8 @@
 brew install --cask keystore-explorer
 ```
 
-###
+<!-- ###
 
 ```sh
 $JAVA_HOME/jre/lib/security/cacerts
-```
+``` -->

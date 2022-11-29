@@ -78,15 +78,9 @@ yamllint ./
 
 #### Visual Studio Code
 
-**Dependencies:** [yamllint CLI](#cli) and [Prettier](/prettier.md#visual-studio-code)
+**Dependencies:** [yamllint CLI](#cli) [Linter](/linter.md#visual-studio-code) and [Prettier](/prettier.md#visual-studio-code)
 
 ```sh
-#
-code --install-extension fnando.linter
-
-#
-jq '."recommendations" += ["fnando.linter"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
-
 #
 jq '."[yaml]"."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```

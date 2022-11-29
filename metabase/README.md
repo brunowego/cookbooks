@@ -7,6 +7,8 @@ https://github.com/fhsgoncalves/metabase-sparksql-databricks-driver
 https://configr.com/blog/medo-de-bi-pelo-alto-investimento-conheca-o-metabase/
 -->
 
+**Keywords:** Business Intelligence
+
 ## Supported Databases
 
 - Amazon Redshift

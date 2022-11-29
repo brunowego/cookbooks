@@ -17,7 +17,11 @@ brew install --cask kite
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension kiteco.kite
+
+#
+jq '."recommendations" += ["kiteco.kite"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ```sh

@@ -4,6 +4,35 @@
 
 - [Nebula](https://nebula-plugins.github.io/)
 
+## Build-in
+
+### Usage
+
+```sh
+#
+./gradlew clean
+./gradlew clean build -x test
+
+#
+./gradlew build -Dbuild.linux=true
+./gradlew build -Dbuild.macos=true
+```
+
+<!--
+./gradlew checkstyleMain checkstyleTest
+-->
+
+### Issues
+
+#### TBD
+
+```log
+Exception in thread "main" java.net.ConnectException: Operation timed out (Connection timed out)
+	...
+```
+
+TODO
+
 ## CLI
 
 ### Installation
@@ -24,6 +53,16 @@ choco install -y gradle
 
 ```sh
 gradle -h
+```
+
+### Usage
+
+```sh
+#
+gradle clean
+
+#
+gradle build
 ```
 
 ### Tips

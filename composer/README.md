@@ -44,7 +44,6 @@ sudo yum -y install composer-cli
 curl -s https://getcomposer.org/installer | \
   php -- --install-dir=/usr/local/bin --filename=composer
 
-#
 # wget -O - https://getcomposer.org/installer | \
 #   php -- --install-dir=/usr/local/bin --filename=composer
 ```

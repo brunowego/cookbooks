@@ -15,9 +15,7 @@ https://stats.data.gouv.fr/
 "Sign in - Matomo" site:.fr
 -->
 
-## Alternatives
-
-- [umami](https://github.com/mikecao/umami)
+**Keywords:** Web Analytics
 
 ## Links
 
@@ -28,7 +26,7 @@ https://stats.data.gouv.fr/
   - [Events](https://developer.matomo.org/api-reference/events)
   - [Database schema](https://developer.matomo.org/guides/persistence-and-the-mysql-backend)
 - [Email Reports](https://matomo.org/docs/email-reports/)
-- [Wikipedia](https://en.wikipedia.org/wiki/Matomo_(software))
+- [Wikipedia](<https://en.wikipedia.org/wiki/Matomo_(software)>)
 
 ## Guides
 
@@ -733,12 +731,12 @@ helm install mysql stable/mysql \
   --set mysqlDatabase=matomo
 ```
 
-| Field | Value |
-| --- | --- |
+| Field           | Value                            |
+| --------------- | -------------------------------- |
 | Database Server | `mysql.matomo.svc.cluster.local` |
-| Login  | `matomo` |
-| Password | `matomo` |
-| Database Name | `matomo` |
+| Login           | `matomo`                         |
+| Password        | `matomo`                         |
+| Database Name   | `matomo`                         |
 
 ### Delete
 
@@ -1561,9 +1559,9 @@ EOSQL
 - Change database and table name for Piwik
 - Remove last date for Piwik.
 
-| Username | Password |
-| --- | --- |
-| `admin` | `Pa$$w0rd!` |
+| Username | Password    |
+| -------- | ----------- |
+| `admin`  | `Pa$$w0rd!` |
 
 ### Issues
 
@@ -1619,7 +1617,12 @@ rm -fR /usr/src/matomo
 ```html
 <noscript>
   <p>
-    <img referrerpolicy="no-referrer-when-downgrade" src="//matomo.example.com/matomo.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+    <img
+      referrerpolicy="no-referrer-when-downgrade"
+      src="//matomo.example.com/matomo.php?idsite=1&amp;rec=1"
+      style="border:0"
+      alt=""
+    />
   </p>
 </noscript>
 ```

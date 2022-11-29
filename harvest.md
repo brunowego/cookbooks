@@ -1,9 +1,14 @@
 # Harvest
 
+<!--
+https://github.com/lsv/timeharvest-cli
+-->
+
 **Keywords:** Time Tracking
 
 ## Links
 
+- [My Accounts](https://id.getharvest.com/accounts)
 - [Main Website](https://getharvest.com/)
 
 ## App
@@ -16,11 +21,17 @@
 mas install 506189836
 ```
 
-## CLI
+## CLI (non-official)
+
+<!--
+v2 API incompatibility
+ruby 2.6.5
+-->
 
 ### Links
 
 - [Code Repository](https://github.com/zenhob/hcl)
+- [Main Website](https://zenhob.github.io/hcl/)
 
 ### Installation
 

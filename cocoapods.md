@@ -4,6 +4,10 @@
 Podfile
 -->
 
+## Links
+
+- [Main Website](https://cocoapods.org/)
+
 ## CLI
 
 ### References
@@ -27,31 +31,43 @@ gem install cocoapods
 ### Commands
 
 ```sh
-pod -v
+pod --help
 ```
 
-### Usage
+### Initialize
 
 ```sh
-# Version
-pod --version
-
 #
 pod init
 
 #
 pod setup
+```
+
+### Usage
+
+```sh
+#
+pod env
 
 #
-pod repo update master
+pod repo list
+pod repo update
+pod repo update <name>
 
 # Install Dependencies
 pod install
 ```
 
+<!--
+xcodebuild -exportArchive -exportOptionsPlist ios/exportOptionsUpload.plist -archivePath build/ios/archive/Runner.xcarchive -exportPath build/ios/release/
+xcrun altool --validate-app -t ios -f build/ios/release/app.ipa -u "$CONNECT_USERNAME" -p "$CONNECT_PASSWORD"
+xcrun altool --upload-app -t ios -f build/ios/release/app.ipa -u "$CONNECT_USERNAME" -p "$CONNECT_PASSWORD"
+-->
+
 ### Issues
 
-####
+#### Missing Repos
 
 ```log
 Setting up CocoaPods master repo
@@ -61,6 +77,7 @@ You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.
 ```
 
 ```sh
+#
 rm -fR ~/.cocoapods/repos/master
 
 pod setup
@@ -71,8 +88,6 @@ pod setup
 ```sh
 # Homebrew
 brew uninstall cocoapods
-```
 
-```sh
 rm -fR ~/.cocoapods
 ```

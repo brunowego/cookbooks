@@ -95,7 +95,11 @@ More at [Cluster Networking](https://kubernetes.io/docs/concepts/cluster-adminis
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+
+#
+jq '."recommendations" += ["ms-kubernetes-tools.vscode-kubernetes-tools"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ```sh

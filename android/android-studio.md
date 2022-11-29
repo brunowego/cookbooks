@@ -1,4 +1,4 @@
-# Android Studio
+# Android Studio (IntelliJ IDEA)
 
 ## References
 
@@ -52,10 +52,10 @@ open -a /Applications/Android\ Studio.app
 6. Verify Settings -> Finish
 7. Downloading Components -> Finish
 
-####
+#### Tools
 
-[Android SDK](/android-sdk.md)
-[Android SDK Platform-Tools](/android-platform-tools.md)
+[Android SDK](./android-sdk.md)
+[Android SDK Platform-Tools](./android-platform-tools.md)
 
 #### Launcher (Darwin)
 
@@ -82,6 +82,19 @@ studio ./
 6. Sync Project with Gradle Files
 
 ### Issues
+
+#### Android Studio First Run
+
+```log
+Unable to access Android SDK add-on list
+```
+
+```sh
+# macOS
+trash ~/Library/Application\ Support/Google/AndroidStudio*
+
+echo '\ndisable.android.first.run = true' >> /Applications/Android\ Studio.app/Contents/bin/idea.properties
+```
 
 #### Missing SDK
 

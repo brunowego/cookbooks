@@ -124,13 +124,11 @@ docker exec -i mysql /bin/sh -c 'echo "binlog_do_db = inventory" >> /etc/mysql/c
 #
 docker restart mysql
 
-#
 # docker exec -i mysql /usr/bin/mysql -D inventory -u debezium -p'debezium' -v <<-\EOSQL
 # CREATE DATABASE `app`;
 # USE app;
 # EOSQL
 
-#
 # source /content/retail_db.sql
 ```
 

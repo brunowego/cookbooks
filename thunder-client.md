@@ -9,5 +9,9 @@ https://www.youtube.com/watch?v=AbCTlemwZ1k
 ### Visual Studio Code
 
 ```sh
+#
 code --install-extension rangav.vscode-thunder-client
+
+#
+jq '."recommendations" += ["rangav.vscode-thunder-client"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

@@ -19,5 +19,9 @@ getent hosts `hostname`
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension tommasov.hosts
+
+#
+jq '."recommendations" += ["tommasov.hosts"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

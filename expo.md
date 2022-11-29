@@ -12,10 +12,6 @@ https://github.com/ArcadeCity/arcade/tree/main/apps/expo
 - [Docs](https://docs.expo.dev/)
 - [Expo Go](https://expo.dev/client)
 
-## Related
-
-- [Metro](https://github.com/facebook/metro)
-
 ## CLI
 
 ### Links
@@ -24,8 +20,9 @@ https://github.com/ArcadeCity/arcade/tree/main/apps/expo
 
 ### Installation
 
+#### Using NPM
+
 ```sh
-# Using NPM
 npm install expo-cli -g
 ```
 

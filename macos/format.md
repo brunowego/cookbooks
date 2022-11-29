@@ -1,6 +1,10 @@
-# Bootable USB
+# macOS Format
 
-## Installation
+## Disable Activation Lock
+
+Remove your device from "Find My".
+
+## Make Bootable USB
 
 ```sh
 #

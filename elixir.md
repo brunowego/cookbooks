@@ -29,3 +29,11 @@ elixir -h
 
 mix --help
 ```
+
+## Tips
+
+### Visual Studio Code
+
+**Dependencies:** [Linter](/linter.md#visual-studio-code) and [Prettier](/prettier.md#visual-studio-code)
+
+TODO

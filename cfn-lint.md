@@ -38,5 +38,9 @@ cfn-lint ./[filename]
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension kddejong.vscode-cfn-lint
+
+#
+jq '."recommendations" += ["kddejong.vscode-cfn-lint"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

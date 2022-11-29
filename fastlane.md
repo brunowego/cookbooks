@@ -1,5 +1,9 @@
 # fastlane
 
+## Links
+
+- [Main Website](https://fastlane.tools/)
+
 ## CLI
 
 ### Installation
@@ -7,7 +11,7 @@
 #### Homebrew
 
 ```sh
-brew install --cask fastlane
+brew install fastlane
 ```
 
 <!-- ### Environment

@@ -267,7 +267,11 @@ location / {
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension shanoor.vscode-nginx
+
+#
+jq '."recommendations" += ["shanoor.vscode-nginx"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 #### EditorConfig

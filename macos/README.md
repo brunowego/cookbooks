@@ -73,6 +73,18 @@ sudo purge
 
 ## Issues
 
+### First Time App Open
+
+```log
+You are opening the application “<AppName>.app” for the first time. Are you sure you want to open this application?
+
+The application is in a folder named “Applications.” To see the application in the Finder without opening it, click Show Application.
+```
+
+```sh
+/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -all local,system,user
+```
+
 <!-- ###
 
 ```log

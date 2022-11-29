@@ -32,3 +32,11 @@ https://app.pluralsight.com/library/courses/gdpr-executive-briefing/table-of-con
 ## DPAs
 
 - [Brazil / Autoridade Nacional de Proteção de Dados](https://gov.br/anpd)
+
+## Tools
+
+- [Securiti Data Controls Cloud](https://securiti.ai/)
+
+<!--
+https://securiti.ai/solutions/
+-->

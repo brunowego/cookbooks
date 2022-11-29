@@ -67,36 +67,6 @@ sudo apk add git
 choco install -y git
 ```
 
-### Configuration
-
-```sh
-#
-git config --list
-
-# GitHub Flow/Trunk-Based Development (TBD)
-git config --global init.defaultBranch 'main'
-
-# Git-flow
-git config --global init.defaultBranch 'develop'
-
-#
-git config --global core.editor 'vim'
-
-#
-git config --global core.excludesfile '~/.gitignore_global'
-
-#
-git config --global credential.helper 'store'
-git config --global credential.helper 'osxkeychain' # Darwin
-git config --global credential.helper 'manager-core' # Windows
-
-#
-git config --global push.default 'current'
-
-#
-git config --global pull.rebase false
-```
-
 ### Usage
 
 ```sh
@@ -141,58 +111,6 @@ git update-index --assume-unchanged <file>
 
 # List files with `assume-unchanged`
 git ls-files -v | grep '^h'
-```
-
-### Configuration
-
-```sh
-# List
-git config --list --show-origin
-
-# Edit
-git config --global --edit
-
-# Default Branch
-git config --global init.defaultBranch '<branch>' # master, staging, develop
-
-# Default Editor
-git config --global core.editor '<editor>' # Vim, Visual Studio Code (code -n -w)
-
-# Excludes file
-git config --global core.excludesfile '<filename>'
-
-# Auto CRLF
-git config core.autocrlf '<value>' # Use `true`, `input` or `false`
-
-# Credential
-git config --global credential.helper '<value>' # Use `cache`, `store` or `osxkeychain`
-
-# User and Email
-git config --global user.name '<Name>'
-git config --global user.email '<email>'
-
-# Merge
-git config --global merge.tool '<value>' # Use `vimdiff`
-
-# Push
-git config --global push.default '<value>'
-
-# Branch
-git config --global branch.autosetupmerge 'always'
-
-# Unset Certificate
-git config --unset --system http.sslcainfo # System
-git config --unset --global http.sslcainfo # Global
-
-# SSL CA Info
-git config --global http.sslcainfo '[/path/to/certificate.pem]'
-
-# Only repository
-git config --bool core.bare true
-
-#
-git reflog
-git checkout <sha8>
 ```
 
 <!-- #### Credentials
@@ -394,12 +312,6 @@ source ~/.zshrc
 rm ~/.zcompdump*
 ```
 
-#### Pull Rebase
-
-```sh
-git config --global pull.rebase false
-```
-
 #### Version
 
 ```sh
@@ -460,33 +372,6 @@ Access the top level directory where wish add child projects.
 ```sh
 git config --global user.useconfigonly true
 ``` -->
-
-#### Custom Git Config
-
-```sh
-#
-tee /path/to/org/.gitconfig << EOF
-[user]
-	name = <Name>
-	email = <name@example.com>
-EOF
-
-#
-tee -a ~/.gitconfig << EOF
-[includeIf "gitdir:/path/to/org/"]
-	path = /path/to/org/.gitconfig
-EOF
-```
-
-**_Observation:_** Only works if have git initialized in the current folder.
-
-```sh
-#
-git config --get user.name
-git config --get user.email
-```
-
-**_Issues_** Remove, if have, `user.name` and `user.email` in project Git config: `cat ./.git/config`
 
 ### Issues
 

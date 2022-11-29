@@ -75,7 +75,6 @@ choco install -y minikube
 minikube config list
 
 #
-minikube config set WantUpdateNotification false
 minikube config set cpus 2
 minikube config set memory 4096
 minikube config set disk-size 40g
@@ -85,6 +84,7 @@ minikube config view
 ```
 
 <!--
+minikube config set WantUpdateNotification false
 minikube config set addon-manager true
 -->
 
@@ -113,55 +113,55 @@ minikube --help
 # Using default
 minikube start \
   $(echo "$MINIKUBE_START_OPTS") \
-  -p minikube-default
+  -p minikube
 
 # Using specific Kubernetes version. Kubernetes Releases: https://kubernetes.io/releases/
 export KUBERNETES_VERSION='1.24.3'
 
 minikube start \
   $(echo "$MINIKUBE_START_OPTS") \
-  -p minikube-default \
+  -p minikube \
   --bootstrapper kubeadm \
   --kubernetes-version "$KUBERNETES_VERSION"
 
 # Using feature gates
 minikube start \
   $(echo "$MINIKUBE_START_OPTS") \
-  -p minikube-default \
+  -p minikube \
   --feature-gates=TTLAfterFinished=true
 
 # Using custom Google Containers Repository
 minikube start \
   $(echo "$MINIKUBE_START_OPTS") \
-  -p minikube-default \
+  -p minikube \
   --image-repository 'registry.cn-hangzhou.aliyuncs.com/google_containers' \
   --insecure-registry 'registry.cn-hangzhou.aliyuncs.com'
 
 #
 minikube profile list
-minikube profile minikube-default
+minikube profile minikube
 
 #
-minikube status -p minikube-default
+minikube status -p minikube
 
 #
 kubectl config view
 
 #
 kubectl config set-context \
-  --cluster minikube-default \
-  --user minikube-default \
-  minikube-default
+  --cluster minikube \
+  --user minikube \
+  minikube
 
 #
 minikube ssh \
-  -p minikube-default \
+  -p minikube \
     sudo ip link set docker0 promisc on
 
 #
-minikube stop -p minikube-default
+minikube stop -p minikube
 # or
-minikube start -p minikube-default
+minikube start -p minikube
 ```
 
 #### Addons
@@ -193,11 +193,17 @@ eval "$(minikube docker-env)"
 
 ```sh
 #
-minikube stop -p minikube-default && \
-  minikube delete -p minikube-default
+minikube stop -p minikube && \
+  minikube delete -p minikube
 ```
 
 ### Tips
+
+#### Added or Update Kube Config
+
+```sh
+minikube update-context
+```
 
 #### Memory Monitoring (macOS)
 
@@ -212,8 +218,8 @@ jq ".HostOptions.EngineOptions.Env += [ \"https_proxy=$https_proxy\" ]" ~/.minik
 jq ".HostOptions.EngineOptions.Env += [ \"no_proxy=$no_proxy\" ]" ~/.minikube/machines/minikube/config.json | sponge ~/.minikube/machines/minikube/config.json
 
 #
-minikube stop -p minikube-default && \
-  minikube start -p minikube-default
+minikube stop -p minikube && \
+  minikube start -p minikube
 
 #
 docker info | grep Proxy

@@ -1,4 +1,4 @@
-# JavaScript
+# JavaScript Pipeline
 
 ## Docs
 

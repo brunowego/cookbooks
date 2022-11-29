@@ -95,13 +95,13 @@ module.exports = eslintRC
 code --install-extension esbenp.prettier-vscode
 
 #
+jq '."recommendations" += ["esbenp.prettier-vscode"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+
+#
 jq '."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 
 #
 jq '."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
-
-#
-jq '."recommendations" += ["esbenp.prettier-vscode"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 <!-- #### Ignore Comments

@@ -1,5 +1,12 @@
 # Redash
 
+**Keywords:** Business Intelligence
+
+## Links
+
+- [Code Repository](https://github.com/getredash/redash)
+- [Main Website](https://redash.io/)
+
 ## Docker
 
 ### Network
@@ -82,8 +89,8 @@ docker exec redash-server /app/bin/docker-entrypoint manage users create_root \
 echo -e '[INFO]\thttp://127.0.0.1:5000'
 ```
 
-| Login | Password |
-| --- | --- |
+| Login               | Password    |
+| ------------------- | ----------- |
 | `admin@example.com` | `Pa$$w0rd!` |
 
 ### Remove

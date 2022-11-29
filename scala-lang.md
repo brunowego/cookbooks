@@ -91,7 +91,11 @@ EOF
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension scalameta.metals
+
+#
+jq '."recommendations" += ["scalameta.metals"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 #### IntelliJ IDEA

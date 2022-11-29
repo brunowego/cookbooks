@@ -10,6 +10,12 @@
 brew install --cask ultimaker-cura
 ```
 
+#### Chocolatey
+
+```sh
+choco install cura-new
+```
+
 ### Plugins
 
 - Arc Welder

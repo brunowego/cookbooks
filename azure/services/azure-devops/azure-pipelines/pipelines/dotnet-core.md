@@ -1,4 +1,4 @@
-# dotNET Core
+# dotNET Core Pipeline
 
 ## Docs
 
@@ -6,7 +6,7 @@
 
 TODO
 
-<!-- ## Structure
+<!-- ## Configuration
 
 **Refer:** `./azure-pipelines.yml`
 

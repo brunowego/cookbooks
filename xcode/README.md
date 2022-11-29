@@ -32,6 +32,9 @@ mas install 497799835
 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 
 #
+sudo xcodebuild -runFirstLaunch
+
+#
 sudo xcodebuild -license accept
 ```
 
@@ -47,58 +50,60 @@ xcrun -h
 ```sh
 #
 xcodebuild -version
+# or
+pkgutil --pkg-info=com.apple.pkg.CLTools_Executables | grep version
 
 # Open Workspace
-open -a /Applications/Xcode.app <your_workspace_name>.xcworkspace
+open -a /Applications/Xcode.app <workspace-name>.xcworkspace
 
 # Open Project
-open -a /Applications/Xcode.app <your_workspace_name>.xcodeproj
+open -a /Applications/Xcode.app <workspace-name>.xcodeproj
 
 #
 xcodebuild -list
 
-# xcodebuild \
-#   -list \
-#   -workspace <your_workspace_name>.xcworkspace
+xcodebuild \
+  -list \
+  -workspace <workspace-name>.xcworkspace
 
-# xcodebuild \
-#   -list \
-#   -project <your_project_name>.xcodeproj
+xcodebuild \
+  -list \
+  -project <project-name>.xcodeproj
 
 #
 xcrun instruments -s
 
 #
 xcodebuild clean \
-  -workspace <your_project_name>.xcworkspace \
-  -scheme <your_scheme_name>
+  -workspace <project-name>.xcworkspace \
+  -scheme <scheme-name>
 
 xcodebuild clean \
-  -project <your_project_name>.xcodeproj \
-  -scheme <your_scheme_name>
+  -project <project-name>.xcodeproj \
+  -scheme <scheme-name>
 
 #
 xcodebuild build \
-  -workspace <your_project_name>.xcworkspace \
-  -scheme <your_scheme_name>
+  -workspace <project-name>.xcworkspace \
+  -scheme <scheme-name>
 
 #
 xcodebuild archive \
-  -workspace <your_project_name>.xcworkspace \
-  -scheme <your_scheme_name> \
-  -archivePath ~/Downloads/<your_file_name>.xcarchive
+  -workspace <project-name>.xcworkspace \
+  -scheme <scheme-name> \
+  -archivePath ~/Downloads/<file-name>.xcarchive
 
 #
 xcodebuild \
   -exportArchive \
-  -archivePath ~/Downloads/<your_file_name>.scarchive \
+  -archivePath ~/Downloads/<file-name>.scarchive \
   -exportPath ~/Downloads \
   -exportOptionsPlist ~/Downloads/ExportOptions.plist
 
 #
 xcodebuild \
-  -target <your_target_name> \
-  -xcconfig <your_configuration_file>.xcconfig
+  -target <target-name> \
+  -xcconfig <configuration-file>.xcconfig
 ```
 
 ### Tips

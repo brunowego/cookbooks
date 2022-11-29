@@ -2,27 +2,11 @@
 
 ## CLI
 
-<!-- ### Dependencies -->
+### Dependencies
 
-<!-- #### Homebrew
-
-```sh
-brew install \
-  openssl \
-  readline
-```
-
-#### YUM
-
-```sh
-yum check-update
-sudo yum -y install \
-  git \
-  make \
-  openssl-devel \
-  readline-devel \
-  zlib-devel
-``` -->
+- [OpenSSL](/openssl.md#cli) (v1.1)
+- [GNU Readline](/gnu-readline.md)
+- [GNU Multiple Precision (GMP)](/gnu-gmp.md)
 
 ### Installation
 
@@ -56,7 +40,8 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 ```sh
 # rbenv
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH" # only for Git installation
+eval "$(rbenv init -)"
 ```
 
 ```sh
@@ -77,9 +62,6 @@ rbenv install -l
 
 # Install
 rbenv install <version>
-
-# Initialize
-eval "$(rbenv init -)"
 
 # Versions
 rbenv versions

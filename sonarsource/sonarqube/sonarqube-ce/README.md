@@ -1,14 +1,12 @@
 # SonarQube Community Edition (CE)
 
 <!--
-https://plugins.miniorange.com/saml-single-sign-on-sso-sonarqube-using-simplesaml
-https://github.com/BlockByBlock/jenkins-docker-with-goss/blob/master/doc/sonarqube.md
-
--Dsonar.projectVersion=$(git branch --show-current)-$(git rev-parse --short HEAD)
+https://github.com/search?q=filename%3Asonar-project.properties+path%3A%2F
 -->
 
 <!--
-.scannerwork
+https://plugins.miniorange.com/saml-single-sign-on-sso-sonarqube-using-simplesaml
+https://github.com/BlockByBlock/jenkins-docker-with-goss/blob/master/doc/sonarqube.md
 -->
 
 **Keywords:** SAST, Code Quality, Continuous Inspection

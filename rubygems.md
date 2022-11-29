@@ -13,7 +13,8 @@
 echo 'gem: --no-document' > ~/.gemrc
 
 # Remove existing docs
-rm -fR $(gem env gemdir)/doc/*
+ls -la "$(gem env gemdir)"/doc
+rm -fR "$(gem env gemdir)"/doc/*
 ```
 
 ### Tips

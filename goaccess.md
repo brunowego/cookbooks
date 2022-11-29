@@ -1,5 +1,7 @@
 # GoAccess
 
+**Keywords:** Web Analytics
+
 ## CLI
 
 ### Installation

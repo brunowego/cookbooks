@@ -1,7 +1,13 @@
 # IT Operations
 
-<!--
+## Types
 
--->
-
-TODO
+- AIOps
+- BizDevOps
+- CloudOps
+- DevOps
+- DevSecOps
+- FinOps
+- ITOps
+- MLOps
+- NoOps

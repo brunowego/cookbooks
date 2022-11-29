@@ -4,12 +4,18 @@
 
 ### Dependencies
 
-- [OpenJDK](/openjdk.md)
+- [OpenJDK](/openjdk.md) (v8)
 - [Kernel-based Virtual Machine (KVM)](/kvm.md)
 
 ### Installation
 
-#### Android Studio
+#### Homebrew
+
+```sh
+brew install --cask android-sdk
+```
+
+#### Using Android Studio
 
 1. Navigation Bar -> SDK Manager
 2. Tab: SDK Tools
@@ -20,10 +26,19 @@
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
+#### Homebrew
+
 ```sh
 # Android SDK
-export ANDROID_HOME="$HOME"/Library/Android/sdk # Homebrew
-export ANDROID_HOME="$HOME"/Android/Sdk # Linux
+export ANDROID_SDK_ROOT='/usr/local/share/android-sdk'
+```
+
+#### Using Android Studio
+
+```sh
+# Android SDK
+export ANDROID_HOME="$HOME"/Library/Android/sdk # for Homebrew
+# export ANDROID_HOME="$HOME"/Android/Sdk # for Linux
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
 export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
 ```
@@ -39,17 +54,25 @@ emulator -help
 avdmanager -h
 ```
 
-### Running
+### Configuration
 
 ```sh
 # Licenses
-yes | sdkmanager --licenses
+yes | sdkmanager --licenses # --verbose
 
+#
+sdkmanager --update
+```
+
+### Running
+
+```sh
 # List Packages
 sdkmanager --list
 
 # Install Packages
 sdkmanager \
+  'cmdline-tools;latest' \
   'tools' \
   'platform-tools' \
   'build-tools;28.0.0' \
@@ -149,20 +172,34 @@ avdmanager delete avd \
 
 ### Issues
 
+#### Behind Proxy
+
+```log
+Exception in thread "main" java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlSchema
+	...
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.annotation.XmlSchema
+	...
+```
+
+**macOS:**
+
+1. System Preferences
+2. Network
+3. Verify Services
+
+#### TBD
+
+```log
+Warning: java.net.ConnectException: Operation timed out (Connection timed out)
+```
+
+TODO
+
 #### Library Xml Schema
 
 ```log
 Exception in thread "main" java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlSchema
-	at com.android.repository.api.SchemaModule$SchemaModuleVersion.<init>(SchemaModule.java:156)
-	at com.android.repository.api.SchemaModule.<init>(SchemaModule.java:75)
-	at com.android.sdklib.repository.AndroidSdkHandler.<clinit>(AndroidSdkHandler.java:81)
-	at com.android.sdklib.tool.sdkmanager.SdkManagerCli.main(SdkManagerCli.java:73)
-	at com.android.sdklib.tool.sdkmanager.SdkManagerCli.main(SdkManagerCli.java:48)
-Caused by: java.lang.ClassNotFoundException: javax.xml.bind.annotation.XmlSchema
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-	... 5 more
+	...
 ```
 
 [Switch to OpenJDK 8](/openjdk.md#environment).
@@ -181,7 +218,7 @@ adbd cannot run as root in production builds
 6. Select: Nougat (Google APIs) -> Next
 7. Finish
 
-<!-- ####
+<!-- #### TBD
 
 ```log
 adb: failed to install ./app/build/outputs/apk/debug/app-x86_64-debug.apk: Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]
@@ -189,7 +226,7 @@ adb: failed to install ./app/build/outputs/apk/debug/app-x86_64-debug.apk: Failu
 
 TODO -->
 
-<!-- ####
+<!-- #### TBD
 
 ```log
 emulator: ERROR: AdbHostServer.cpp:102: Unable to connect to adb daemon on port: 5037
@@ -197,7 +234,7 @@ emulator: ERROR: AdbHostServer.cpp:102: Unable to connect to adb daemon on port:
 
 TODO -->
 
-####
+#### TBD
 
 ```log
 Out of memory: Java heap space.
@@ -208,7 +245,7 @@ Please assign more memory to Gradle in the project's gradle.properties file.
 echo 'org.gradle.jvmargs=-Xmx4096m' >> ./gradle.properties
 ```
 
-####
+#### TBD
 
 ```sh
 Execution failed for task ':app:validateSigningRelease'.

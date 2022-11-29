@@ -22,7 +22,6 @@ wget -P ./plugins https://github.com/alisonrafael/metabase-db2-driver/releases/d
 #
 cd /path/to/metabase
 
-#
 # git clone https://github.com/dludwig-jrt/metabase-db2-driver.git ./modules/drivers/db2
 git clone https://github.com/alisonrafael/metabase-db2-driver.git ./modules/drivers/db2
 

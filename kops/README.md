@@ -442,13 +442,11 @@ kops \
   set cluster \
     spec.authentication.aws={}
 
-#
 # kops \
 #   --name "$KOPS_CLUSTER_NAME" \
 #   set cluster \
 #     spec.kubelet.authenticationTokenWebhook=true
 
-#
 # kops \
 #   --name "$KOPS_CLUSTER_NAME" \
 #   set cluster \

@@ -1,4 +1,4 @@
-# Docker
+# Docker Pipeline
 
 <!--
 https://github.com/khlee97/lab-shop-pub-sub/blob/main/delivery/azure-pipelines.yml
@@ -8,7 +8,7 @@ https://github.com/khlee97/lab-shop-pub-sub/blob/main/delivery/azure-pipelines.y
 
 - [Quickstart: Build a container image to deploy apps using Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/containers/build-image?view=azure-devops)
 
-## Structure
+<!-- ## Configuration
 
 **Refer:** `./azure-pipelines.yml`
 
@@ -30,4 +30,4 @@ steps:
       repository: $(imageName)
       command: build
       Dockerfile: ./.devops/docker/Dockerfile
-```
+``` -->

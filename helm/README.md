@@ -216,7 +216,11 @@ helm template codecentric/keycloak \
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension technosophos.vscode-helm
+
+#
+jq '."recommendations" += ["technosophos.vscode-helm"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 #### Delete All

@@ -21,7 +21,7 @@ man find
 pkill find
 
 # Wildcard
-find ./ -name \*.[extension]
+find ./ -name \*.<extension>
 ```
 
 ## Tips
@@ -51,10 +51,10 @@ find ./ \
 
 ```sh
 #
-find ./ -name '*.[extension]' -type f
+find ./ -name '*.<extension>' -type f
 
 #
-find ./ -name '*.[extension]' -type f -delete
+find ./ -name '*.<extension>' -type f -delete
 ```
 
 ### Run in all subdirectories

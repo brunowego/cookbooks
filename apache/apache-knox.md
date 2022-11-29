@@ -38,7 +38,6 @@ export KNOX_DOMAIN=knox.hortonworks.com
 https://[hostname]:8443/gateway/default/hdfs/
 
 ```sh
-#
 # curl \
 #   --negotiate \
 #   -u "$USER_KEY:$USER_PASS" \

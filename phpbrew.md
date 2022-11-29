@@ -24,7 +24,8 @@
 - [BZip2](/bzip2.md)
 - [libzip](/libzip.md)
 - [GNU Wget](/gnu-wget.md)
-- [OpenSSL](/openssl.md)
+- [OpenSSL](/openssl.md) (v1.1)
+- [mhash](/mhash.md)
 
 <!--
 - [GCC](/gcc.md)
@@ -96,7 +97,7 @@ sudo yum -y install libmcrypt-devel
 brew install phpbrew
 ```
 
-#### Binary
+#### Unix-like
 
 ```sh
 # Darwin
@@ -231,9 +232,7 @@ PHP Deprecated:  Return type of CLIFramework\CommandBase::offsetExists($key) sho
 
 ```sh
 #
-brew install phpbrew php@7.4
-
-#
+brew install php@7.4
 brew link --overwrite php@7.4
 ```
 

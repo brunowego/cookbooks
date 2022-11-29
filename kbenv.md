@@ -4,7 +4,7 @@
 https://github.com/little-angry-clouds/kubernetes-binaries-managers/issues/36
 -->
 
-**Keywords:** Kubernetes Version Manager
+**Keywords:** Kubectl Version Manager
 
 ## Links
 
@@ -16,6 +16,10 @@ https://github.com/little-angry-clouds/kubernetes-binaries-managers/issues/36
 
 Uninstall Pre-existing Versions of [Kubernetes Control (kubectl)](/kubectl/README.md).
 
+```sh
+brew uninstall --ignore-dependencies kubernetes-cli
+```
+
 ### Installation
 
 #### Homebrew
@@ -24,19 +28,6 @@ Uninstall Pre-existing Versions of [Kubernetes Control (kubectl)](/kubectl/READM
 brew tap little-angry-clouds/homebrew-my-brews
 brew install kbenv
 ```
-
-<!-- ### Environment
-
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
-
-```sh
-# kbenv
-export PATH="/usr/local/Cellar/kbenv/64/bin:$PATH"
-```
-
-```sh
-source ~/.zshrc
-``` -->
 
 ### Commands
 
@@ -48,7 +39,7 @@ kbenv help
 
 ```sh
 #
-echo '1.3.4' > ./.kubectl_version
+echo '1.25.4' > ./.kubectl_version
 ```
 
 ### Usage

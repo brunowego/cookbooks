@@ -21,5 +21,9 @@ avro-tools
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension tomaszbartoszewski.avro-tools
+
+#
+jq '."recommendations" += ["tomaszbartoszewski.avro-tools"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

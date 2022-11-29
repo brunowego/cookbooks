@@ -164,10 +164,37 @@ antigen bundle node
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension wix.vscode-import-cost
+
+#
+jq '."recommendations" += ["wix.vscode-import-cost"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ### Issues
+
+#### OpenSSL Legacy Provider
+
+```log
+Error: error:0308010C:digital envelope routines::unsupported
+    ...
+Error: error:0308010C:digital envelope routines::unsupported
+    ...
+node:internal/crypto/hash:71
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+Error: error:0308010C:digital envelope routines::unsupported
+    ... {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+```
+
+```sh
+export NODE_OPTIONS='--openssl-legacy-provider'
+```
 
 #### Missing Python2
 

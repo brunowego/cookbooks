@@ -53,5 +53,9 @@ packer build ./script.json
 
 ```sh
 # Install
+#
 code --install-extension 4ops.packer
+
+#
+jq '."recommendations" += ["4ops.packer"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

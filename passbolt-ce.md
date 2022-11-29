@@ -11,6 +11,15 @@ https://github.com/thegrumpylion/passbolt-secrets
 - [Code Repository](https://github.com/passbolt/passbolt_api)
 - [Main Website](https://passbolt.com)
 - [Community Forum](https://community.passbolt.com/)
+- [Extension](https://chrome.google.com/webstore/detail/passbolt-open-source-pass/didegimhafipceonhjepacocaffmoppf)
+
+## Glossary
+
+- Pretty Good Privacy (PGP)
+
+## Terms
+
+- Open-Source PGP
 
 ## CLI
 

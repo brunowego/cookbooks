@@ -88,5 +88,9 @@ EOF
 ### Visual Studio Code
 
 ```sh
+#
 code --install-extension josephtbradley.hive-sql
+
+#
+jq '."recommendations" += ["josephtbradley.hive-sql"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

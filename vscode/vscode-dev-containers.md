@@ -13,4 +13,7 @@
 ```sh
 #
 code --install-extension ms-vscode-remote.remote-containers
+
+#
+jq '."recommendations" += ["ms-vscode-remote.remote-containers"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

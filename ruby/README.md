@@ -49,12 +49,6 @@ https://app.pluralsight.com/library/courses/reading-writing-data-ruby/table-of-c
 
 - Runit
 
-## Version Manager
-
-- [asdf Ruby](/asdf/asdf-ruby.md)
-- [rbenv](/rbenv.md)
-- [Ruby Version Manager (RVM)](/rvm.md)
-
 ## Docker
 
 ### Running
@@ -92,6 +86,10 @@ export PATH="/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
 # export PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
 ```
 
+### Configuration
+
+- [RubyGems](/rubygems.md#configuration)
+
 ### Usage
 
 ```sh
@@ -103,8 +101,14 @@ ruby --version | head -1
 
 #### Visual Studio Code
 
+**Dependencies:** [Linter](/linter.md#visual-studio-code) and [Prettier](/prettier.md#visual-studio-code)
+
 ```sh
-code --install-extension misogi.ruby-rubocop
+#
+code --install-extension rebornix.Ruby
+
+#
+jq '."recommendations" += ["rebornix.Ruby"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ### Issues

@@ -89,10 +89,10 @@ docker run -d \
   --privileged \
   docker.io/library/ubuntu:16.04 /sbin/init
 
-##
+#
 docker exec -it ubuntu /bin/bash
 
-## Remove
+# Remove
 docker rm -f ubuntu
 ```
 

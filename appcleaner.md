@@ -1,5 +1,7 @@
 # AppCleaner
 
+**Keywords:** Remove macOS Apps
+
 ## App
 
 ### Installation

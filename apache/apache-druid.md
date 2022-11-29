@@ -235,7 +235,6 @@ docker exec -i druid-router ls \
 docker exec -i druid-router wc \
   -l ./quickstart/tutorial/wikiticker-2015-09-12-sampled.json
 
-#
 # docker exec -i \
 #   -e KAFKA_OPTS='-Dfile.encoding=UTF-8' \
 #   kafka /bin/sh << EOSHELL
@@ -254,7 +253,6 @@ docker exec druid-router cat ./quickstart/tutorial/wikiticker-2015-09-12-sampled
   -t 'wikipedia' \
   -z snappy
 
-#
 # docker exec kafka kafka-console-consumer.sh \
 #   --bootstrap-server 'kafka:9092' \
 #   --from-beginning \

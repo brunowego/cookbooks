@@ -53,5 +53,9 @@ xgettext -D ./src/pages -o ./src/locales/en-US.po
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension mrorz.language-gettext
+
+#
+jq '."recommendations" += ["mrorz.language-gettext"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

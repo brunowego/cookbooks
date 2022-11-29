@@ -38,7 +38,11 @@ aws cloudformation help
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension aws-scripting-guy.cform
+
+#
+jq '."recommendations" += ["aws-scripting-guy.cform"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ## Solution

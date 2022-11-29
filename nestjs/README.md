@@ -1,6 +1,10 @@
 # NestJS
 
 <!--
+https://github.com/search?o=desc&q=filename%3Apackage.json+%22nestjs%22+path%3Aapps&s=indexed&type=Code
+-->
+
+<!--
 https://github.com/lobor/prycto
 https://github.com/novuhq/novu/tree/main/apps/api
 https://github.com/NikhilCodes/dysonsh/tree/dev/apps/api

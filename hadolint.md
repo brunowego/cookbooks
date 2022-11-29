@@ -51,7 +51,6 @@ code --install-extension exiasr.hadolint
 #
 jq '."recommendations" += ["exiasr.hadolint"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 
-#
 # jq ".\"hadolint.hadolintPath\" |= \"$(which hadolint)\"" "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 

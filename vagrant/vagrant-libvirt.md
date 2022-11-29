@@ -21,7 +21,7 @@ CONFIGURE_ARGS='with-libvirt-include=/usr/local/include/libvirt with-libvirt-lib
   vagrant plugin install vagrant-libvirt
 ```
 
-##
+## Service
 
 ```sh
 brew services start libvirt

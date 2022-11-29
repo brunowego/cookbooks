@@ -168,15 +168,15 @@ kubectl delete \
 
 ```sh
 # Enable
-minikube addons -p minikube-default enable ingress
+minikube addons -p minikube enable ingress
 
 # Disable
-minikube addons -p minikube-default disable ingress
+minikube addons -p minikube disable ingress
 ```
 
 <!--
-minikube addons -p minikube-default enable ingress-dns
-minikube addons -p minikube-default disable ingress-dns
+minikube addons -p minikube enable ingress-dns
+minikube addons -p minikube disable ingress-dns
 -->
 
 ## Helm
@@ -199,7 +199,7 @@ helm repo update
 helm search repo -l ingress-nginx/ingress-nginx
 
 # Only for minikube
-kubectl label node minikube-default ingress-ready=true
+kubectl label node minikube ingress-ready=true
 
 #
 helm install ingress-controller ingress-nginx/ingress-nginx \

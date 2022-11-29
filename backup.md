@@ -29,9 +29,7 @@
 
 - Save "Stickies"
 - VPN Connection
-- Visual Studio Code Project Manager
 - [Kubernetes Local Configuration](/kubectl/README.md#backup)
-- ProxyChains-NG Configuration
 - [Shell History](/history.md#backup)
 
 ## Configuration

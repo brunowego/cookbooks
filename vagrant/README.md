@@ -57,7 +57,11 @@ vagrant snapshot restore [name]
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension marcostazi.VS-code-vagrantfile
+
+#
+jq '."recommendations" += ["marcostazi.VS-code-vagrantfile"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 #### Command-line completion

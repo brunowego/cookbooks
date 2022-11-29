@@ -1,4 +1,4 @@
-# Argo CD Extension
+# Argo CD Pipeline
 
 ## Links
 

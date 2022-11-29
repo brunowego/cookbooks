@@ -33,7 +33,7 @@ xcode-select: Failed to locate 'clang', requesting installation of command line 
 ```
 
 ```sh
-xcodebuild -runFirstLaunch
+sudo xcodebuild -runFirstLaunch
 ```
 
 #### Error Exit

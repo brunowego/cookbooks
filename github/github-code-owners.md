@@ -17,5 +17,9 @@ EOF
 ### Visual Studio Code
 
 ```sh
+#
 code --install-extension jasonnutter.vscode-codeowners
+
+#
+jq '."recommendations" += ["jasonnutter.vscode-codeowners"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

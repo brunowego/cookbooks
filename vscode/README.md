@@ -172,37 +172,6 @@ jq 'del(."http.proxy")' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/s
 jq 'del(."http.proxyAuthorization")' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
-#### Useful Plugins
-
-TODO
-
-<!-- ```sh
-#
-code --install-extension mkxml.vscode-filesize
-
-#
-code --install-extension shardulm94.trailing-spaces
-
-#
-code --install-extension Tyriar.sort-lines
-``` -->
-
-<!--
-#
-# code --install-extension wmaurer.change-case
-
-#
-# code --install-extension ephoton.indent-switcher
--->
-
-<!-- #### GlassIt
-
-```sh
-code --install-extension s-nlf-fh.glassit
-```
-
-TODO -->
-
 #### Command-line completion
 
 ```sh

@@ -34,7 +34,11 @@ wget \
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension jetmartin.bats
+
+#
+jq '."recommendations" += ["jetmartin.bats"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ## Docker

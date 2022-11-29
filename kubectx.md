@@ -60,3 +60,14 @@ kubectx -d <context-name>
 ```sh
 kubectx <new-context-name>=<old-context-name>
 ```
+
+### Issues
+
+#### Oldest Version of Kubectl
+
+```sh
+signal: segmentation fault
+error getting current context
+```
+
+Try update [kubectl](/kubectl/README.md)

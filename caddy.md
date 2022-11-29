@@ -133,7 +133,6 @@ example.local:8443 {
 }
 EOF
 
-#
 # :8000
 
 # reverse_proxy 127.0.0.1:8080
@@ -176,7 +175,11 @@ caddy reverse-proxy \
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension zamerick.vscode-caddyfile-syntax
+
+#
+jq '."recommendations" += ["zamerick.vscode-caddyfile-syntax"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 <!-- #### Caddy Configuration

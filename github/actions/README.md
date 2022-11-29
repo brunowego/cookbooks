@@ -327,7 +327,11 @@ TODO
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension cschleiden.vscode-github-actions
+
+#
+jq '."recommendations" += ["cschleiden.vscode-github-actions"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 #### Concurrency

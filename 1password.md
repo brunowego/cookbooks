@@ -4,6 +4,7 @@
 
 - [Main Website](https://1password.com/)
 - [Dashboard](https://my.1password.com/home)
+- [Download Extension](https://1password.com/downloads/)
 
 ## App
 

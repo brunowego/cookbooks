@@ -8,6 +8,16 @@ https://app.pluralsight.com/library/courses/resolving-conflicts-with-feedback/ta
 https://github.com/github/feedback
 -->
 
+## Glossary
+
+- Individual Development Plan (IDP)
+- Objectives and Key Results (OKR)
+- One-on-One (1:1)
+
+## Terms
+
+- People Analytics
+
 ## Tools
 
 - [Feedback Fish](https://feedback.fish/)

@@ -45,7 +45,7 @@ tfenv
 
 ```sh
 #
-echo '1.3.4' > ./.terraform-version
+echo '1.3.5' > ./.terraform-version
 ```
 
 ### Usage

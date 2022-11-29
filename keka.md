@@ -4,7 +4,7 @@
 
 ## Links
 
-- [Main Website](https://keka.io/en/)
+- [Main Website](https://keka.io)
 
 ## App
 

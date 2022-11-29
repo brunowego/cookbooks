@@ -10,7 +10,11 @@
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension SimonSiefke.svg-preview
+
+#
+jq '."recommendations" += ["SimonSiefke.svg-preview"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ## Code

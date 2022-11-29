@@ -1,4 +1,4 @@
-# Golang
+# Golang Pipeline
 
 ## Docs
 

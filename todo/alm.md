@@ -1,8 +1,8 @@
 # Application Lifecycle Management (ALM)
 
-##
+<!-- ##
 
 - XP
-- DevOps
+- DevOps -->
 
 TODO

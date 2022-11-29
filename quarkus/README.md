@@ -382,7 +382,11 @@ netstat -an | grep 5005
 ### Visual Studio Code
 
 ```sh
+#
 code --install-extension redhat.vscode-quarkus
+
+#
+jq '."recommendations" += ["redhat.vscode-quarkus"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 1. View -> Command Palette...

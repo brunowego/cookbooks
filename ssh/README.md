@@ -11,6 +11,10 @@
 
 ## CLI
 
+### Dependencies
+
+- [OpenSSH Client](/openssh/openssh-client.md#cli)
+
 ### Usage
 
 ```sh
@@ -18,8 +22,8 @@
 ssh \
   -o StrictHostKeyChecking=no \
   -l \
-  -i <privatekey>.pem \
-  <username>@<IP> \
+  -i <private-key>.pem \
+  <username>@<ip-address> \
   -v
 ```
 
@@ -34,7 +38,11 @@ ls ~/.ssh
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension mousavian.ssh-config-syntax-highlighter
+
+#
+jq '."recommendations" += ["mousavian.ssh-config-syntax-highlighter"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 #### Costumers Key
@@ -76,7 +84,11 @@ sed -i '6d' ~/.ssh/known_hosts
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension chrmarti.ssh
+
+#
+jq '."recommendations" += ["chrmarti.ssh"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 #### Hide Banner

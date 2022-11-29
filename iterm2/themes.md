@@ -4,6 +4,8 @@
 
 ### Installation
 
+**Dependency:** Run it inside iTerm.
+
 ```sh
 #
 curl -O 'https://raw.githubusercontent.com/sonph/onehalf/master/iterm/OneHalfDark.itermcolors'

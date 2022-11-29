@@ -56,7 +56,11 @@ phpcs \
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension ikappas.phpcs
+
+#
+jq '."recommendations" += ["ikappas.phpcs"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 #### PhpStorm

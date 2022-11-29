@@ -19,6 +19,11 @@ https://linkedin.com/learning/flutter-part-01-introduction/what-is-flutter
 https://github.com/fikretsengul/flutter_advanced_boilerplate
 -->
 
+## Links
+
+- [Code Repository](https://github.com/flutter/flutter)
+- [Main Website](https://flutter.dev)
+
 ## Examples
 
 - [Timy app](https://github.com/janoodleFTW/timy-messenger)
@@ -27,21 +32,20 @@ https://github.com/fikretsengul/flutter_advanced_boilerplate
 
 ### Dependencies
 
-#### Homebrew
+- [CocoaPods](/cocoapods.md)
+- [Android SDK](/android/android-sdk.md)
 
-```sh
-brew install cocoapods
-```
+<!-- brew install ideviceinstaller ios-deploy -->
 
 ### Installation
 
 #### Homebrew
 
 ```sh
-brew install -v MiderWong/flutter/flutter
+brew install --cask flutter
 ```
 
-### Environment
+<!-- ### Environment
 
 #### Homebrew
 
@@ -54,7 +58,7 @@ export PATH="/usr/local/opt/flutter/bin:$PATH"
 
 ```sh
 sudo su - "$USER"
-```
+``` -->
 
 ### Commands
 
@@ -62,56 +66,92 @@ sudo su - "$USER"
 flutter -h
 ```
 
-### Usage
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
-# Doctor
+# For Brave Browse
+export CHROME_EXECUTABLE='/Applications/Brave Browser.app/Contents/MacOS/Brave Browser'
+# or, Brave Browser Dev
+export CHROME_EXECUTABLE='/Applications/Brave Browser Dev.app/Contents/MacOS/Brave Browser Dev'
+```
+
+```sh
+source ~/.zshrc
+```
+
+### Configuration
+
+```sh
+#
+flutter config --no-analytics
+
+#
+flutter config --android-sdk "$ANDROID_SDK_ROOT"
+
+#
 flutter doctor -v
 
 # Licenses
 flutter doctor --android-licenses
 ```
 
-#### Emulators
+### Usage
 
 ```sh
-flutter emulators
-```
-
-```sh
-flutter emulators --launch [emulator]
-```
-
-```sh
-flutter emulators --create --name [name]
-```
-
-#### Config
-
-```sh
-flutter config --no-analytics
-```
-
-#### Create
-
-```sh
-flutter create [name]
-```
-
-#### Packages
-
-```sh
+#
 flutter packages get
-```
 
-##### Update
+#
+flutter pub get
+pod install --project-directory=./ios
 
-```sh
+#
+flutter clean
+
+#
+flutter analyze
+
+#
+flutter test
+
+#
+flutter build ios-framework --xcframework --
+
+# Emulators
+flutter emulators
+flutter emulators --launch <emulator>
+flutter emulators \
+  --create \
+  --name <name>
+
+# Create
+flutter create <name>
+
+# Packages
+flutter packages get
+
+# Update
 flutter update-packages
+
+# Run
+flutter run
 ```
 
-#### Run
+<!--
+flutter build appbundle --build-number=42$GITHUB_RUN_NUMBER
+flutter build ipa --build-number=42$GITHUB_RUN_NUMBER
+-->
+
+### Tips
+
+#### Visual Studio Code
 
 ```sh
-flutter run
+#
+code --install-extension Dart-Code.flutter
+
+#
+jq '."recommendations" += ["Dart-Code.flutter"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

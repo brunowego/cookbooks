@@ -7,7 +7,11 @@
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension redhat.vscode-xml
+
+#
+jq '."recommendations" += ["redhat.vscode-xml"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ```sh

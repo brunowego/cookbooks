@@ -1,5 +1,7 @@
 # Node Package Manager (NPM)
 
+**Keywords:** Node.js Package Manager
+
 ## Links
 
 - [npm trends](https://npmtrends.com/git-hooks-vs-husky-vs-pre-commit)
@@ -90,6 +92,18 @@ npm ci
 
 ### Tips
 
+#### Move `node_modules` to Trash
+
+**Dependencies:** [trash](/trash.md)
+
+```sh
+#
+find . -name 'node_modules' -type d -prune | xargs du -chs
+
+#
+find . -name 'node_modules' -type d -prune -exec trash '{}' +
+```
+
 #### Add Type Module
 
 **Refer:** `./package.json`
@@ -134,16 +148,6 @@ jq '."search.exclude"."**/node_modules" |= true' "$PWD"/.vscode/settings.json | 
 
 ```sh
 npm install -g npm@6.14.15
-```
-
-#### Delete node_modules Folders
-
-```sh
-#
-find ./ -name 'node_modules' -type d -prune
-
-#
-find ./ -name 'node_modules' -type d -prune -exec rm -rf '{}' +
 ```
 
 #### iCloud No Sync

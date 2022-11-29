@@ -53,5 +53,9 @@ protolint lint
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension plex.vscode-protolint
+
+#
+jq '."recommendations" += ["plex.vscode-protolint"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

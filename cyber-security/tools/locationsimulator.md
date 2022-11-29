@@ -21,8 +21,10 @@ brew install locationsimulator
 2. Navigation -> Set Location...
 3. Destination -> Set Lat/Long -> Teleport
 
-<!--
-Brasília
-Latitude: -15.790669
-Longitude: -47.892967
--->
+### Tips
+
+#### Locations
+
+| Location   | Latitude     | Longitude    |
+| ---------- | ------------ | ------------ |
+| `Brasília` | `-15.790669` | `-47.892967` |

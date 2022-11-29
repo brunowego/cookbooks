@@ -38,6 +38,9 @@ gcloud auth list
 gcloud auth login
 
 #
+gcloud config set disable_usage_reporting false
+
+#
 gcloud config configurations list
 
 #
@@ -84,9 +87,6 @@ gcloud beta container clusters create 'model-mgmt' \
 gcloud beta container clusters list
 
 #
-gcloud container clusters get-credentials 'model-mgmt' --zone 'us-central1-a'
-
-#
 gcloud beta container clusters delete 'model-mgmt' --zone 'us-central1-a'
 -->
 
@@ -103,4 +103,16 @@ gcloud config configurations rename <current-name> --new-name <new-name>
 
 #
 gcloud config configurations activate <new-name>
+```
+
+### Issues
+
+#### Incompatibility with Kubectl Version
+
+```log
+W1128 09:06:29.176314   17056 gcp.go:119] WARNING: the gcp auth plugin is deprecated in v1.22+, unavailable in v1.26+; use gcloud instead.
+```
+
+```sh
+kbenv use 1.23.8
 ```

@@ -5,6 +5,7 @@
     "zhuangtongfa.Material-theme",
     "streetsidesoftware.code-spell-checker",
     "EditorConfig.EditorConfig",
-    "redhat.vscode-yaml"
+    "redhat.vscode-yaml",
+    "Tyriar.sort-lines"
   ]
 }

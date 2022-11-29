@@ -127,7 +127,11 @@ npx @sanity/cli logout
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension sanity-io.vscode-sanity
+
+#
+jq '."recommendations" += ["sanity-io.vscode-sanity"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ### Issues

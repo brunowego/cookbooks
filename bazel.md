@@ -48,5 +48,9 @@ bazel info
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension devondcarew.bazel-code
+
+#
+jq '."recommendations" += ["devondcarew.bazel-code"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

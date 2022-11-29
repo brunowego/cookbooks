@@ -1,5 +1,7 @@
 # VideoLAN Client (VLC)
 
+**Keywords:** Video Player
+
 ## App
 
 ### Installation

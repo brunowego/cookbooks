@@ -12,6 +12,9 @@ gcloud storage --help
 
 ```sh
 #
+gcloud storage ls
+
+#
 gcloud storage ls 'gs://<bucket-path>'
 
 #

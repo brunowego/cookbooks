@@ -277,7 +277,6 @@ DJANGO_SUPERUSER_PASSWORD='Pa$$w0rd!' ./manage.py createsuperuser \
 #
 uwsgi --ini ./uwsgi.ini
 
-#
 # pm2 start django --watch
 ```
 

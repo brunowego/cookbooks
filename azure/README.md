@@ -38,7 +38,11 @@ https://github.com/githubpartners/github-azure-microservices-blueprint
 ### Visual Studio Code
 
 ```sh
+#
 code --install-extension ms-vscode.vscode-node-azure-pack
+
+#
+jq '."recommendations" += ["ms-vscode.vscode-node-azure-pack"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 <!--

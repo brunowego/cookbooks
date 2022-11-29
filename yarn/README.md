@@ -1,5 +1,7 @@
 # Yarn
 
+**Keywords:** Node.js Package Manager
+
 ## CLI
 
 ### Installation
@@ -115,7 +117,7 @@ yarn -h
 
 ```sh
 #
-yarn create [app]
+yarn create <app>
 
 #
 yarn pack

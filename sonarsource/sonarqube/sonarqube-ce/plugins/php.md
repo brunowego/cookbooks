@@ -52,7 +52,41 @@ wget -P "$SONARQUBE_HOME/extensions/plugins" 'https://binaries.sonarsource.com/D
 
 ## Configuration
 
-Follow [this instructions](/sonarsource/sonarqube-scanner.md#configuration).
+**Refer:** `./sonar-project.properties`
+
+```properties
+sonar.projectKey=com.example.app
+sonar.projectName=My App Production
+
+sonar.host.url=http://127.0.0.1:9000
+
+sonar.sources=./
+sonar.exclusions=tests/**,vendor/**
+
+sonar.language=php
+
+sonar.php.coverage.reportPaths=./phpunit.coverage.xml
+sonar.php.tests.reportPath=./phpunit.report.xml
+
+sonar.sourceEncoding=UTF-8
+sonar.dynamicAnalysis=reuseReports
+```
+
+```sh
+#
+export SONAR_LOGIN_TOKEN=''
+
+#
+echo '/.scannerwork' >> ./.gitignore
+
+#
+sonar-scanner \
+  -Dproject.settings=./sonar-project.properties \
+  -Dsonar.login="$SONAR_LOGIN_TOKEN" \
+  -Dsonar.projectVersion="$(git branch --show-current)-$(git rev-parse --short HEAD)" \
+  -Dsonar.branch.name="$(git branch --show-current)" \
+  -X
+```
 
 ## Issues
 

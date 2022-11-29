@@ -4,9 +4,9 @@
 
 - [Markov chain](https://en.wikipedia.org/wiki/Markov_chain)
 
-##
+## Docs
 
-- [Clickstream Analysis and Data Mining Techniques 101: An Introduction](https://www.blendo.co/blog/clickstream-data-mining-techniques-introduction/)
+- [Clickstream Analysis and Data Mining Techniques 101: An Introduction](https://blendo.co/blog/clickstream-data-mining-techniques-introduction/)
 
 TODO
 

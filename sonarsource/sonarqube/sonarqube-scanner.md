@@ -102,7 +102,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
    sonar-scanner \
      -Dsonar.projectKey='com.example.app' \
      -Dsonar.projectName='My App Production' \
-     -Dsonar.projectVersion='0.1.0' \
+     -Dsonar.projectVersion="$(git branch --show-current)-$(git rev-parse --short HEAD)" \
      -Dsonar.sources='./' \
      -Dsonar.exclusions='tests/**,vendor/**' \
      -Dsonar.language='php' \
@@ -112,6 +112,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
      -Dsonar.sourceEncoding='UTF-8' \
      -Dsonar.dynamicAnalysis='reuseReports' \
      -Dsonar.login="$SONAR_LOGIN_TOKEN" \
+     -Dsonar.branch.name="$(git branch --show-current)" \
      -X
    ```
 
@@ -125,7 +126,6 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
    cat << EOF > ./sonar-project.properties
    sonar.projectKey=com.example.app
    sonar.projectName=My App Production
-   sonar.projectVersion=0.1.0
 
    sonar.sources=./
    sonar.exclusions=tests/**,vendor/**
@@ -144,15 +144,17 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
    sonar-scanner \
      -Dproject.settings=./sonar-project.properties \
      -Dsonar.login="$SONAR_LOGIN_TOKEN" \
+     -Dsonar.projectVersion="$(git branch --show-current)-$(git rev-parse --short HEAD)" \
+     -Dsonar.branch.name="$(git branch --show-current)" \
      -X
    ```
 
 ```sh
-# Git ignore
-echo '/.scannerwork' >> ~/.gitignore_global
-
 #
-echo '/phpunit.*.xml' >> ./.gitignore
+cat << EOF >> ./.gitignore
+/.scannerwork
+/phpunit.*.xml
+EOF
 ```
 
 ## Tips

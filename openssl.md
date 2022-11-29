@@ -14,9 +14,7 @@ openssl rsa -in ./file.pem -pubout -outform DER | openssl md5 -c
 
 ```sh
 brew install openssl
-
-#
-brew install openssl@1.1
+# brew install openssl@1.1
 ```
 
 #### APT
