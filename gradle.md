@@ -18,6 +18,9 @@
 
 ```sh
 #
+./gradlew tasks
+
+#
 ./gradlew clean
 
 #

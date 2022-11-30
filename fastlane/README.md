@@ -7,6 +7,8 @@ https://github.com/rakutentech/ios-buildconfig/blob/master/fastlane/Fastfile
 https://github.com/DHBW-VS/app
 https://github.com/joreilly/GalwayBus
 https://github.com/Automattic/pocket-casts-ios/
+
+#! /usr/bin/ruby
 -->
 
 ## Links

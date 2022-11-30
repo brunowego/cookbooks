@@ -162,6 +162,9 @@ minikube ssh \
 minikube stop -p minikube
 # or
 minikube start -p minikube
+
+#
+export KUBERNETES_IP="$(minikube ip)"
 ```
 
 #### Addons

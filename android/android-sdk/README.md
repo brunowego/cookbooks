@@ -1,5 +1,10 @@
 # Android SDK
 
+## Glossary
+
+- Android Debug Bridge (ADB)
+- Android Virtual Device (AVD)
+
 ## CLI
 
 ### Dependencies
@@ -21,32 +26,40 @@ brew install --cask android-sdk
 choco install -y android-sdk
 ```
 
-#### Using Android Studio
+#### Using Android Studio 🌟
 
-1. Navigation Bar -> SDK Manager
+1. Tools -> SDK Manager
 2. Tab: SDK Tools
-3. Select: Android SDK Tools
-4. Click: Apply
+   - Check "Show Package Details"
+3. Expand "Android SDK Command-line Tools (latest)"
+   - Check "Android SDK Command-line Tools (latest)"
+   - Click: Apply
 
 ### Environment
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
-#### Homebrew
+#### Using Homebrew
 
 ```sh
 # Android SDK
-export ANDROID_SDK_ROOT='/usr/local/share/android-sdk'
+export ANDROID_HOME='/usr/local/share/android-sdk'
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
+```
+
+```sh
+sudo su - "$USER"
 ```
 
 #### Using Android Studio
 
 ```sh
 # Android SDK
-export ANDROID_HOME="$HOME"/Library/Android/sdk # for Homebrew
+export ANDROID_HOME="$HOME/Library/Android/sdk" # for Homebrew
 # export ANDROID_HOME="$HOME"/Android/Sdk # for Linux
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
-export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH"
 ```
 
 ```sh
@@ -57,6 +70,7 @@ sudo su - "$USER"
 
 ```sh
 emulator -help
+sdkmanager --help
 avdmanager -h
 ```
 
@@ -64,47 +78,58 @@ avdmanager -h
 
 ```sh
 # Licenses
-yes | sdkmanager --licenses # --verbose
+yes | sdkmanager --licenses
 
 #
 sdkmanager --update
 ```
 
-### Running
+### Bootstrap
+
+#### Install Packages
 
 ```sh
-# List Packages
+# Installed packages
+sdkmanager --list | awk '/Installed/{flag=1; next} /Available/{flag=0} flag'
+
+# List packages
 sdkmanager --list
 
-# Install Packages
+# Install packages
 sdkmanager \
-  'cmdline-tools;latest' \
-  'tools' \
-  'platform-tools' \
-  'build-tools;28.0.0' \
-  'system-images;android-28;google_apis;x86_64' \
-  'platforms;android-28'
+  'build-tools;29.0.0' \
+  'system-images;android-29;google_apis;x86_64' \
+  'platforms;android-29'
 
+# Uninstall packages
+sdkmanager --uninstall '<package-1>' '<package-2>' # ...
+```
+
+#### Create Device
+
+```sh
 # List Devices
 avdmanager list
 
 # Create Device
 echo 'no' | avdmanager create avd \
   -c 512M \
-  -k 'system-images;android-28;google_apis;x86_64' \
-  -n 'Pixel_2_API_28' \
+  -k 'system-images;android-29;google_apis;x86_64' \
+  -n 'Pixel_3_API_29' \
   -f
 
-# List AVD's
+# List AVDs
 emulator -list-avds
+# or
+avdmanager list avds
 
 # Configuration
 # Darwin
-cat << EOF > ~/.android/avd/Pixel_2_API_28.avd/config.ini
-AvdId=Pixel_2_API_28
+cat << EOF > ~/.android/avd/Pixel_3_API_29.avd/config.ini
+AvdId=Pixel_3_API_29
 PlayStore.enabled=false
 abi.type=x86_64
-avd.ini.displayname=Pixel 2 API 28
+avd.ini.displayname=Pixel 3 API 29
 avd.ini.encoding=UTF-8
 disk.dataPartition.size=800M
 fastboot.chosenSnapshotFile=
@@ -122,7 +147,7 @@ hw.cpu.ncore=4
 hw.dPad=no
 hw.device.hash2=MD5:55acbc835978f326788ed66a5cd4c9a7
 hw.device.manufacturer=Google
-hw.device.name=pixel_2
+hw.device.name=pixel_3
 hw.gps=yes
 hw.gpu.enabled=yes
 hw.gpu.mode=auto
@@ -137,46 +162,69 @@ hw.sdCard=yes
 hw.sensors.orientation=yes
 hw.sensors.proximity=yes
 hw.trackBall=no
-image.sysdir.1=system-images/android-28/google_apis/x86_64/
+image.sysdir.1=system-images/android-29/google_apis/x86_64/
 runtime.network.latency=none
 runtime.network.speed=full
 sdcard.size=512M
 showDeviceFrame=yes
 skin.dynamic=yes
-skin.name=pixel_2
-skin.path=$HOME/Library/Android/sdk/skins/pixel_2
+skin.name=pixel_3
+skin.path=$HOME/Library/Android/sdk/skins/pixel_3
 tag.display=Google APIs
 tag.id=google_apis
 vm.heapSize=256
 EOF
 
-# Running
+# Delete
+avdmanager delete avd \
+  -n 'Pixel_3_API_29'
+```
+
+#### Running
+
+```sh
+#
 emulator \
   -writable-system \
-  -avd 'Pixel_2_API_28' \
+  -avd 'Pixel_3_API_29' \
   -no-audio \
   -no-boot-anim \
   -gpu off
 ```
 
+#### Install ADB
+
 ```sh
 # List Target
-android list target
-
-#
-./gradlew tasks
+avdmanager list target
 
 #
 adb install ./app/build/outputs/apk/debug/app-x86_64-debug.apk
 ```
 
-```sh
-# Delete
-avdmanager delete avd \
-  -n 'Pixel_2_API_28'
+### Issues
+
+#### Missing Android Home Binary Files
+
+```log
+[4527752704]:ERROR:android/android-emu/android/qt/qt_setup.cpp:28:Qt library not found at ../emulator/lib64/qt/lib
+Could not launch '<user>/test/../emulator/qemu/darwin-x86_64/qemu-system-x86_64': No such file or directory
 ```
 
-### Issues
+Missing `cmdline-tools`, `emulator`, `platform-tools`, binary path in environment `$PATH`.
+
+#### Cache Conflict Between Versions
+
+```log
+Warning: Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+```
+
+```log
+org.xml.sax.SAXParseException; lineNumber: 141; columnNumber: 252; cvc-complex-type.2.4.a: Invalid content was found starting with element 'base-extension'. One of '{layoutlib}' is expected.
+	...
+```
+
+Make complete [uninstall](#uninstall) fo Android Studio, and try a fresh install.
 
 #### Behind Proxy
 
@@ -219,26 +267,26 @@ adbd cannot run as root in production builds
 1. Tools
 2. AVD Manager
 3. Create Virtual Device...
-4. Select: Pixel 2 -> Next
+4. Select: Pixel 3 -> Next
 5. Tab: x86 Images
 6. Select: Nougat (Google APIs) -> Next
 7. Finish
 
-<!-- #### TBD
+#### TBD
 
 ```log
 adb: failed to install ./app/build/outputs/apk/debug/app-x86_64-debug.apk: Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]
 ```
 
-TODO -->
+TODO
 
-<!-- #### TBD
+#### TBD
 
 ```log
 emulator: ERROR: AdbHostServer.cpp:102: Unable to connect to adb daemon on port: 5037
 ```
 
-TODO -->
+TODO
 
 #### TBD
 

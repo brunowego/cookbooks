@@ -2,7 +2,7 @@
 
 ## References
 
-- [Info](http://www.linfo.org/watch.html)
+- [Info](http://linfo.org/watch.html)
 
 ## CLI
 

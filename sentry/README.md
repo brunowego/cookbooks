@@ -107,7 +107,7 @@ curl -iX OPTIONS "$SENTRY_DSN" | \
 
 ### References
 
-- [Helm Chart](https://github.com/sentry-kubernetes/charts/tree/develop/sentry)
+- [Configuration](https://github.com/sentry-kubernetes/charts/tree/develop/sentry#configuration)
 
 ### Repository
 
@@ -121,6 +121,10 @@ helm repo update
 ```sh
 #
 kubectl create ns sentry-system
+# kubectl create ns tracking
+
+#
+helm search repo -l sentry/sentry
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
@@ -129,11 +133,11 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 #
 helm install sentry sentry/sentry \
   --namespace sentry-system \
-  --version 11.4.1 \
+  --version 17.8.0 \
   -f <(cat << EOF
 user:
   email: admin@example.com
-  password: admin
+  password: Pa\$\$w0rd!
 
 ingress:
   enabled: true

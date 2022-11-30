@@ -3,6 +3,9 @@
 <!--
 https://www.youtube.com/watch?v=gnupOrSEikQ
 https://linkedin.com/learning/search?entityType=COURSE&keywords=vim
+
+# vim:syntax=ruby:et:sts=2:sw=2:ts=2:ff=unix:
+# vi:syntax=ruby
 -->
 
 ## CLI

@@ -19,6 +19,8 @@ https://linkedin.com/learning/flutter-part-01-introduction/what-is-flutter
 https://github.com/fikretsengul/flutter_advanced_boilerplate
 -->
 
+**Keywords:** Software Development Kit
+
 ## Links
 
 - [Code Repository](https://github.com/flutter/flutter)
@@ -33,9 +35,9 @@ https://github.com/fikretsengul/flutter_advanced_boilerplate
 ### Dependencies
 
 - [CocoaPods](/cocoapods.md)
-- [Android SDK](/android/android-sdk.md)
-
-<!-- brew install ideviceinstaller ios-deploy -->
+- Android SDK
+  - [CLI](/android/android-sdk/README.md#cli)
+  - [Create Device](/android/android-sdk/README.md#create-device)
 
 ### Installation
 
@@ -101,48 +103,40 @@ flutter doctor --android-licenses
 
 ```sh
 #
-flutter packages get
-
-#
-flutter pub get
-pod install --project-directory=./ios
-
-#
-flutter clean
+flutter create \
+  --org 'com.example.myapp' \
+  --project-name 'myapp' \
+  --platforms android,ios \
+  -t app \
+  ./
 
 #
 flutter analyze
 
 #
 flutter test
+flutter test -d <device-id> -r <reporter>
 
 #
-flutter build ios-framework --xcframework --
+flutter clean
 
-# Emulators
+#
+flutter build apk
+flutter build ios
+
+#
 flutter emulators
-flutter emulators --launch <emulator>
-flutter emulators \
-  --create \
-  --name <name>
+flutter emulators --launch apple_ios_simulator
+flutter emulators --launch Pixel_3a_API_33_x86_64
 
-# Create
-flutter create <name>
+#
+flutter devices
 
-# Packages
-flutter packages get
-
-# Update
-flutter update-packages
-
-# Run
-flutter run
+#
+flutter run -d web-server # chrome
+flutter run -d iphone
+flutter run -d android
 ```
-
-<!--
-flutter build appbundle --build-number=42$GITHUB_RUN_NUMBER
-flutter build ipa --build-number=42$GITHUB_RUN_NUMBER
--->
 
 ### Tips
 
@@ -155,3 +149,30 @@ code --install-extension Dart-Code.flutter
 #
 jq '."recommendations" += ["Dart-Code.flutter"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
+
+### Issues
+
+#### Missing Required Android SDK Version
+
+```log
+[!] Android toolchain - develop for Android devices (Android SDK version 28.0.3)
+    ...
+    ✗ Flutter requires Android SDK 29 and the Android BuildTools 28.0.3
+    ...
+```
+
+```sh
+sdkmanager \
+  'build-tools;29.0.0' \
+  'platforms;android-29'
+```
+
+#### TBD
+
+```log
+The Android emulator exited with code 1 during startup
+Android emulator stderr:
+PANIC: Broken AVD system path. Check your ANDROID_SDK_ROOT value [/usr/local/share/android-sdk]!
+```
+
+TODO

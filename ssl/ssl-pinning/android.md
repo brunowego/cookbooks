@@ -94,6 +94,10 @@ android proxy set <proxy-ip> 8080
 android sslpinning disable
 ```
 
+<!--
+avdmanager
+-->
+
 ### Shutdown
 
 ```sh
