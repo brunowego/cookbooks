@@ -1,8 +1,8 @@
 # OpenJDK
 
-## References
+## Links
 
-- [AdoptOpenJDK](https://adoptopenjdk.net/)
+- [Main Website](https://openjdk.org/)
 
 ## CLI
 

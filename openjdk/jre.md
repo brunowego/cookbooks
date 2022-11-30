@@ -1,4 +1,4 @@
-# OpenJDK JRE - Java Runtime Environment
+# OpenJDK Java Runtime Environment (JRE)
 
 <!--
 https://www.java.com/en/download/manual.jsp

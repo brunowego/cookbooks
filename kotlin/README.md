@@ -23,5 +23,40 @@ https://github.com/material-components/material-components-android-examples
 #### Homebrew
 
 ```sh
-brew cask kotlin
+brew install kotlin
+```
+
+### Commands
+
+```sh
+kotlin -h
+```
+
+<!-- ### Usage
+
+```sh
+#
+kotlin
+``` -->
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension fwcd.kotlin
+
+#
+jq '."recommendations" += ["fwcd.kotlin"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
+
+#### EditorConfig
+
+```sh
+cat << EOF >> ./.editorconfig
+
+[*.kt]
+indent_size = 4
+EOF
 ```

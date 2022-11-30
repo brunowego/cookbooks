@@ -1,5 +1,9 @@
 # Git Config
 
+## Related
+
+- [Git Workflow](/git/git-workflow.md)
+
 ## General Configuration
 
 ```sh

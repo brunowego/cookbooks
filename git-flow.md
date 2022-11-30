@@ -1,4 +1,4 @@
-# Git Flow
+# Git-flow
 
 **Keywords:** Git Workflow
 
@@ -12,11 +12,6 @@ develop
 feature
 release
 -->
-
-## Alternatives
-
-- [Trunk-Based Development (TBD)](/trunk-based-development.md)
-- [GitHub Flow](/github/github-flow.md)
 
 ## Guides
 

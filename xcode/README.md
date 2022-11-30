@@ -49,6 +49,9 @@ xcrun -h
 
 ```sh
 #
+xcodebuild -showsdks
+
+#
 xcodebuild -version
 # or
 pkgutil --pkg-info=com.apple.pkg.CLTools_Executables | grep version
@@ -58,6 +61,8 @@ open -a /Applications/Xcode.app <workspace-name>.xcworkspace
 
 # Open Project
 open -a /Applications/Xcode.app <workspace-name>.xcodeproj
+# or
+open <workspace-name>.xcodeproj
 
 #
 xcodebuild -list

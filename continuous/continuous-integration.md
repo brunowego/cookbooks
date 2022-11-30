@@ -6,17 +6,26 @@ https://linkedin.com/learning/continuous-integration-tools/building-your-ci-cd-p
 
 ## Tools
 
+### Enterprise
+
 - [Atlassian](/atlassian/README.md) / [Bamboo](/atlassian/atlassian-bamboo.md)
 - [Azure DevOps](/azure/services/azure-devops/README.md) / [Azure Pipelines](/azure/services/azure-devops/azure-pipelines/README.md)
-- [Drone CI](/drone-ci.md)
 - [GitHub](/github/README.md) / [Actions](/github/actions/README.md)
-- [GitLab](/gitlab/README.md) / [CI](/gitlab/gitlab-ci.md)
 - [Go Continuous Delivery (GoCD)](/gocd.md)
-- [Jenkins](/jenkins/README.md)
 - [Semaphore](https://semaphoreci.com/)
-- [Spinnaker](/spinnaker.md)
 - [TeamCity](https://jetbrains.com/teamcity/)
 - [Travis CI](https://travis-ci.com/)
+
+#### Mobile
+
+- [Microsoft Visual Studio App Center](/microsoft/visual-studio/appcenter.md)
+
+### Self-hosted
+
+- [Drone CI](/drone-ci.md)
+- [GitLab](/gitlab/README.md) / [CI](/gitlab/gitlab-ci.md)
+- [Jenkins](/jenkins/README.md)
+- [Spinnaker](/spinnaker.md)
 
 <!--
 - [AWS CodeDeploy](/aws/services/aws-codedeploy.md)

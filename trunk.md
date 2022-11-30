@@ -21,19 +21,47 @@ brew install --cask trunk-io
 trunk -h
 ```
 
-<!-- ### Initialize
+### Initialize
 
 ```sh
 #
 trunk init
-``` -->
 
-<!-- ### Usage
+#
+trunk install
+```
+
+### Usage
 
 ```sh
 #
 trunk login
-``` -->
+trunk whoami
+
+#
+trunk config print
+
+#
+trunk check
+
+#
+trunk fmt
+
+#
+trunk merge
+
+#
+trunk upgrade
+
+#
+trunk plugins add <uri>
+
+#
+trunk cache
+
+#
+trunk daemon
+```
 
 ### Tips
 

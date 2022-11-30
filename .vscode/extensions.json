@@ -2,8 +2,6 @@
   "recommendations": [
     "esbenp.prettier-vscode",
     "shuworks.vscode-table-formatter",
-    "zhuangtongfa.Material-theme",
-    "streetsidesoftware.code-spell-checker",
     "EditorConfig.EditorConfig",
     "redhat.vscode-yaml",
     "Tyriar.sort-lines"

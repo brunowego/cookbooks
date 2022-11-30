@@ -23,6 +23,12 @@ sudo apt update
 sudo apt -y install fonts-firacode
 ```
 
+#### Chocolatey
+
+```sh
+choco install -y firacode-ttf
+```
+
 ### Tips
 
 #### Visual Studio Code

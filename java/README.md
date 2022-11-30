@@ -35,13 +35,12 @@ Enterprise Information Systems Tier
 ## References
 
 - Oracle Certified Professional (OCP)
-- [Java Standard Edition (SE) - Java Development Toolkit (JDK)](/java-se.md)
-- [Java Enterprise Edition (EE)](/java-ee.md)
+- [Java Standard Edition (SE) - Java Development Toolkit (JDK)](/java/java-se.md)
+- [Java Enterprise Edition (EE)](/java/java-ee.md)
 - Java Micro Edition (ME)
 - JavaFX (EFF-ECTS)
 - WebProfile
 - MicroProfile
-- [jabba](/jabba.md)
 - [Checkstyle (Linter)](/checkstyle.md)
 - [Java formatting and linting](https://code.visualstudio.com/docs/java/java-linting)
 

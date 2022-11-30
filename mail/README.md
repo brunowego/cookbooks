@@ -22,6 +22,10 @@ GoDaddy
 Uphold
 -->
 
+## Related
+
+- [E-mail](/email/README.md)
+
 ## Tools
 
 - [Mailtrap.io](https://mailtrap.io/)

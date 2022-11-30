@@ -46,7 +46,7 @@ Docs-as-code is an approach to writing and publishing documentation with the sam
 - Product Readiness Review (PRR)
 - Redundant, Outdated and Trivial (ROT)
 
-##
+## Key Features
 
 - Automated Tests
 - Code Reviews

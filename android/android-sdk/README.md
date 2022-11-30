@@ -15,6 +15,12 @@
 brew install --cask android-sdk
 ```
 
+#### Chocolatey
+
+```sh
+choco install -y android-sdk
+```
+
 #### Using Android Studio
 
 1. Navigation Bar -> SDK Manager

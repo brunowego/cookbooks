@@ -24,10 +24,10 @@ steps:
   # ...
   - task: Xcode@5
     inputs:
-      actions: 'build'
+      actions: build
       scheme: ''
-      sdk: 'iphoneos'
-      configuration: 'Release'
+      sdk: iphoneos
+      configuration: Release
       xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
       xcodeVersion: '14.1.0'
   # ...

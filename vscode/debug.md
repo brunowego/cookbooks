@@ -1,4 +1,4 @@
-# VS Code Debug
+# Visual Studio Code Debug
 
 ## Output
 

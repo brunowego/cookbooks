@@ -1,5 +1,28 @@
 # Semaphore
 
+<!--
+https://semaphoreci.com/blog/automate-flutter-app-deployment-on-ios-to-testflight-using-fastlane-and-semaphore
+-->
+
+## Links
+
+- [Main Website](https://semaphoreci.com/)
+
+## CLI
+
+### Links
+
+- [Code Repository](https://github.com/semaphoreci/cli)
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew tap semaphoreci/tap
+brew install sem
+```
+
 ## Docker
 
 ### Network

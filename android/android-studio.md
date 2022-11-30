@@ -46,16 +46,13 @@ open -a /Applications/Android\ Studio.app
 
 1. Welcome -> Next
 2. Install Type -> Select: Custom -> Next
-3. Select UI Theme -> Select: Darcula -> Next
-4. SDK Components Setup -> Check: Android Virtual Device -> Next
-5. Emulator Settings -> RAM allocation: 8,192 -> Next
-6. Verify Settings -> Finish
-7. Downloading Components -> Finish
-
-#### Tools
-
-[Android SDK](./android-sdk.md)
-[Android SDK Platform-Tools](./android-platform-tools.md)
+3. Select default JDK Location -> Next
+4. Select UI Theme -> Select: Darcula -> Next
+5. SDK Components Setup -> Check: Android Virtual Device -> Next
+6. Emulator Settings -> RAM allocation: 8,192 -> Next
+7. Verify Settings -> Finish
+8. License Agreement -> Accept -> Finish
+9. Downloading Components -> Finish
 
 #### Launcher (Darwin)
 
@@ -117,7 +114,7 @@ echo 'idea.case.sensitive.fs=true' >> /Applications/Android\ Studio.app/Contents
 
 ### Issues
 
-####
+#### Insufficient Storage
 
 ```log
 Installation did not succeed.
@@ -129,12 +126,6 @@ The device needs more free storage to install the application (extra space is ne
 adb shell df -h
 adb shell du /data
 adb shell pm clear com.android.providers.media
-```
-
-####
-
-```sh
-
 ```
 
 #### Trust Anchors

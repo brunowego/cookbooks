@@ -1,17 +1,24 @@
 # Gradle
 
+**Keywords:** Build Automation Tool
+
 ## Plugins
 
 - [Nebula](https://nebula-plugins.github.io/)
 
 ## Build-in
 
+### Commands
+
+```sh
+./gradlew -h
+```
+
 ### Usage
 
 ```sh
 #
 ./gradlew clean
-./gradlew clean build -x test
 
 #
 ./gradlew build -Dbuild.linux=true
@@ -22,17 +29,6 @@
 ./gradlew checkstyleMain checkstyleTest
 -->
 
-### Issues
-
-#### TBD
-
-```log
-Exception in thread "main" java.net.ConnectException: Operation timed out (Connection timed out)
-	...
-```
-
-TODO
-
 ## CLI
 
 ### Installation
@@ -41,6 +37,7 @@ TODO
 
 ```sh
 brew install gradle
+# brew install gradle@6
 ```
 
 #### Chocolatey
@@ -59,22 +56,44 @@ gradle -h
 
 ```sh
 #
-gradle clean
+gradle tasks
+
+#
+gradle clean -p ./
 
 #
 gradle build
+
+#
+gradle run
 ```
 
 ### Tips
 
+#### EditorConfig
+
+```sh
+cat << EOF >> ./.editorconfig
+
+[*.gradle]
+indent_size = 4
+EOF
+```
+
+#### Remove Cache
+
+```sh
+rm -fR "$HOME"/.gradle/caches
+```
+
 #### Proxy
 
-| Property | Description |
-| --- | --- |
-| `http.proxyUser` | |
-| `http.proxyPassword` | |
-| `https.proxyUser` | |
-| `https.proxyPassword` | |
+| Property              | Description |
+| --------------------- | ----------- |
+| `http.proxyUser`      |             |
+| `http.proxyPassword`  |             |
+| `https.proxyUser`     |             |
+| `https.proxyPassword` |             |
 
 ```sh
 # Pre-flight
@@ -150,6 +169,27 @@ After finish, remove.
 ```sh
 rm -r ~/.gradle
 ```
+
+### Issues
+
+#### TBD
+
+```log
+org.gradle.api.GradleScriptException: A problem occurred evaluating project ':app'.
+        ...
+Caused by: java.lang.NullPointerException: Cannot invoke method split() on null object
+        ...
+```
+
+TODO
+
+#### TBD
+
+```log
+The server may not support the client's requested TLS protocol versions: (TLSv1.2). You may need to configure the client to allow other protocols to be used. See: https://docs.gradle.org/7.6-rc-4/userguide/build_environment.html#gradle_system_properties
+```
+
+TODO
 
 ### Uninstall
 

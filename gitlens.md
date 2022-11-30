@@ -14,5 +14,10 @@
 code --install-extension eamodio.gitlens
 
 #
-jq '."recommendations" += ["eamodio.gitlens"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+jq '."recommendations" += ["eamodio.gitlens"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+
+#
+jq '."gitlens.codeLens.recentChange.enabled" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+
+jq '."gitlens.codeLens.authors.enabled" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```

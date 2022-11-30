@@ -5,6 +5,8 @@ https://app.pluralsight.com/library/courses/maven-fundamentals/table-of-contents
 https://app.pluralsight.com/library/courses/allthetalks-session-66/table-of-contents
 -->
 
+**Keywords:** Build Automation Tool
+
 ## Links
 
 - [Main Website](https://maven.apache.org/)

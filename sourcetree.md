@@ -55,6 +55,15 @@ choco install -y sourcetree
 
 ### Issues
 
+#### TBD
+
+```log
+You are opening the application “Sourcetree.app” for the first time. Are you sure you want to open this application?
+The application is in a folder named “Applications.” To see the application in the Finder without opening it, click Show Application.
+```
+
+TODO
+
 #### Missing Git CLI
 
 ```log
