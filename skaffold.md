@@ -91,9 +91,15 @@ skaffold debug
 
 #### Autocomplete
 
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
 ```sh
 # Skaffold
-command -v skaffold > /dev/null && source <(skaffold completion zsh)
+command -v skaffold > /dev/null && source <(skaffold completion zsh) # bash
+```
+
+```sh
+source ~/.zshrc
 ```
 
 ### Defining Build Artifacts

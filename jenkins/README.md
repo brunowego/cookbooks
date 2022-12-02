@@ -14,7 +14,9 @@ Jenkins Configuration as Code (aka JCasC)
 
 ## Links
 
+- [Main Website](https://jenkins.io/)
 - [Plugins](https://plugins.jenkins.io/)
+- [CD Foundation](https://cd.foundation/)
 
 ## Related
 

@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Inbox](https://outlook.office.com/mail/)
+- [Main Website](https://outlook.office.com/mail/)
 
 ## Glossary
 

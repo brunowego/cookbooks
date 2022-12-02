@@ -9,7 +9,7 @@
 sudo route -n flush
 
 # Delete
-sudo route -n delete [ip]
+sudo route -n delete <ip>
 ```
 
 ### Tips

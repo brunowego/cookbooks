@@ -50,9 +50,15 @@ kubectl get pod
 
 #### Autocomplete
 
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
 ```sh
 # kompose
-source <(kompose completion zsh)
+source <(kompose completion zsh) # bash
+```
+
+```sh
+source ~/.zshrc
 ```
 
 #### Remove Creation Timestamp

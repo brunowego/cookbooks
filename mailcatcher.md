@@ -2,10 +2,6 @@
 
 **Keywords:** Local Mail Server
 
-## Alternatives
-
-- [MailHog](/mailhog.md)
-
 ## Links
 
 - [Code Repository](https://github.com/sj26/mailcatcher)

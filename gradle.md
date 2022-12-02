@@ -112,7 +112,7 @@ gradle \
   -Dhttps.proxyHost="$GRADLE_HTTP_PROXY_HOST"  \
   -Dhttps.proxyPort="$GRADLE_HTTP_PROXY_PORT" \
   -Dhttps.nonProxyHosts="$GRADLE_HTTP_NON_PROXY_HOSTS" \
-  [command]
+  <command>
 
 # Option 2: Environment
 export GRADLE_OPTS="\

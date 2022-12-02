@@ -28,19 +28,19 @@ Pró-Labore
 
 ## Glossary
 
-- Data Processing Agreement (DPA)
 - Annual Recurring Revenue (ARR)
 - Average Ticket Price (ATP)
+- Business Development (BizDev)
 - Cost Per Thousand (CPM)
 - Costumer Success (CS)
 - Customer Acquisition Cost (CAC)
 - Customer Lifetime Value (CLV or often CLTV)
 - Customer Lifetime Value (LTV)
+- Data Processing Agreement (DPA)
 - Developer Relations (DevRel)
 - Due Diligence (DD)
 - Earnings Before Interest and Taxes (EBIT)
 - Earnings Before Interest, Taxes, Depreciation, and Amortization (EBITDA)
-- Business Development (BizDev)
 - Environmental, Social and Corporate Governance (ESG)
 - Exchange-Traded Fund (ETF)
 - Exit to Community (E2C)
@@ -52,6 +52,7 @@ Pró-Labore
 - Monthly Recurring Revenue (MRR)
 - Operating Expenses (OpEx) / Capital Expenditure (CapEx)
 - Stock Keeping Unit (SKU)
+- Training and Development (T&D)
 
 ## Terms
 

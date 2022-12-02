@@ -67,6 +67,8 @@ trunk daemon
 
 #### Visual Studio Code
 
+**Requirements:** Remove [Linter](/linter.md)
+
 ```sh
 #
 code --install-extension Trunk.io

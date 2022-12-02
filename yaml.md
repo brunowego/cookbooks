@@ -1,5 +1,9 @@
 # YAML Ain't Markup Language (YAML)
 
+<!--
+service-schema.json
+-->
+
 ## Links
 
 - [YAML Spec](https://yaml.org/spec/1.2/spec.html#id2795688)

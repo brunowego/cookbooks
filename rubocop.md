@@ -16,7 +16,11 @@
 #### RubyGems
 
 ```sh
+# Globally
 gem install rubocop
+
+# Project
+bundle add rubocop
 ```
 
 ### Commands
@@ -45,17 +49,53 @@ AllCops:
 ### Usage
 
 ```sh
-#
-rubocop -l
+# List targets
+rubocop -L ./
 
 #
-rubocop -a
+rubocop ./
+
+# Only lint cops
+rubocop -l ./
+
+# Auto-correct
+rubocop -a ./
+
+# Fix-layout
+rubocop -x ./
 
 #
-rubocop -x
+rubocop --only 'Style/StringLiterals' ./
 ```
 
 ### Tips
+
+<!-- ####
+
+```rb
+# rubocop:disable Metrics/MethodLength
+# ...
+# rubocop:enable Metrics/MethodLength
+``` -->
+
+<!-- ####
+
+```log
+git add -N .; git diff --name-only | xargs rubocop
+``` -->
+
+<!-- ####
+
+**Refer:** `./.fastlane/Fastfile`
+
+```ruby
+# frozen_string_literal: true
+
+opt_out_usage
+skip_docs
+
+# ...
+``` -->
 
 #### Visual Studio Code
 

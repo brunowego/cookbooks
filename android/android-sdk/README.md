@@ -224,7 +224,7 @@ org.xml.sax.SAXParseException; lineNumber: 141; columnNumber: 252; cvc-complex-t
 	...
 ```
 
-Make complete [uninstall](#uninstall) fo Android Studio, and try a fresh install.
+[Uninstall](#uninstall) Android Studio and try a fresh install.
 
 #### Behind Proxy
 

@@ -6,7 +6,7 @@ https://github.com/marcindawidziuk/Scrum-Poker-Android
 
 ## Links
 
-- [Marketplace](https://play.google.com/store/apps)
+- [Marketplace](https://play.google.com/store)
 
 ## Tools
 

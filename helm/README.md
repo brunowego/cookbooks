@@ -270,10 +270,15 @@ helm uninstall <name> \
 
 #### Autocomplete
 
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
 ```sh
 # Helm
-source <(helm completion bash)
 source <(helm completion zsh)
+```
+
+```sh
+source ~/.zshrc
 ```
 
 ### Issues

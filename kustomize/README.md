@@ -74,8 +74,7 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 
 ```sh
 # Kustomize
-source <(kustomize completion bash) # if bash
-source <(kustomize completion zsh) # if zsh
+source <(kustomize completion zsh) # bash
 ```
 
 ```sh

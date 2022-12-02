@@ -11,6 +11,7 @@ Efficient compilation, Efficient execution and Ease of programming.
 - [Code Repository](https://github.com/golang/go)
 - [Main Website](https://golang.org/)
 - [The Go Playground](https://play.golang.org)
+- [Download](https://go.dev/dl/)
 
 ## References
 

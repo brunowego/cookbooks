@@ -17,6 +17,10 @@ END:VEVENT
 END:VCALENDAR
 ``` -->
 
+## Links
+
+- [Main Website](https://calendar.google.com/calendar/)
+
 ## Tips
 
 ### Add Other Calendars

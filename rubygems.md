@@ -61,23 +61,6 @@ gem env | grep -i _proxy | sort
 
 ### Issues
 
-#### Missing Gemfile
-
-```log
-Could not locate Gemfile
-```
-
-```sh
-#
-bundle init
-# or
-cat << EOF > ./Gemfile
-# frozen_string_literal: true
-
-source 'https://rubygems.org'
-EOF
-```
-
 #### File permission error
 
 ```log

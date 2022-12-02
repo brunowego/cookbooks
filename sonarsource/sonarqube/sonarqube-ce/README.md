@@ -186,6 +186,11 @@ sonar dump
 
 ## Helm
 
+### Dependencies
+
+- Mail Server
+  - [MailHog](/mailhog.md#helm) (local)
+
 ### References
 
 - [Configuration](https://github.com/SonarSource/helm-chart-sonarqube/tree/master/charts/sonarqube#configuration)
@@ -212,15 +217,23 @@ export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-helm install sonarqube sonarqube/sonarqube \
+helm upgrade sonarqube sonarqube/sonarqube \
   --namespace sonarqube-system \
   --version 5.0.6+370 \
   -f <(cat << EOF
+elasticsearch:
+  bootstrapChecks: false
+
 ingress:
   enabled: true
   hosts:
   - name: sonarqube.${DOMAIN}
   ingressClassName: nginx
+
+sonarProperties:
+  email.from: noreply@sonarqube.${DOMAIN}
+  email.smtp_host.secured: mailhog.mailhog-system.svc.cluster.local
+  email.smtp_port.secured: 1025
 EOF
 )
 
@@ -235,6 +248,24 @@ kubectl port-forward \
   svc/sonarqube-sonarqube \
   8080:9000
 -->
+
+### Plugins
+
+```sh
+#
+export SONARQUBE_HELM_CHART_VERSION='5.0.6+370'
+
+#
+helm upgrade sonarqube sonarqube/sonarqube \
+  -n sonarqube-system \
+  --version "$SONARQUBE_HELM_CHART_VERSION" \
+  -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values sonarqube -o yaml -n sonarqube-system) <(cat << \EOF
+plugins:
+  install:
+  - https://github.com/cnescatlab/sonar-cnes-report/releases/download/4.1.3/sonar-cnes-report-4.1.3.jar
+EOF
+))
+```
 
 ### Status
 

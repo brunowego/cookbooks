@@ -12,3 +12,15 @@ https://app.pluralsight.com/paths/skills/ios
 ## Tools
 
 - [SwiftLint](https://github.com/realm/SwiftLint)
+
+## Tips
+
+### EditorConfig
+
+```sh
+cat << EOF > ./.editorconfig
+
+[*.{swift,plist}]
+indent_size = 4
+EOF
+```

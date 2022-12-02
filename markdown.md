@@ -14,6 +14,8 @@
 
 #### Visual Studio Code
 
+**Recommended:** [markdownlint](/markdownlint.md#visual-studio-code)
+
 ```sh
 #
 code --install-extension shuworks.vscode-table-formatter

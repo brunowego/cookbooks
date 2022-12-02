@@ -11,6 +11,7 @@
 - Project Lead (PL)
 
 <!--
+- Business Manager (BM)
 - Chief Analytics Officer (CAO)
 - Chief Compliance Officer (CCO)
 - Chief Customer Officer (CCO)
@@ -24,6 +25,8 @@
 - Chief Security Officer (CSO)
 - Department of Human Resources (DHR)
 - Enterprise Content Management (ECM)
+- Product Manager (PM)
+- Project Management Office (PMO)
 -->
 
 ## Organigram

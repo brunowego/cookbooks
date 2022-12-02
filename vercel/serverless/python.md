@@ -1,8 +1,12 @@
-# Python
+# Python Runtime
+
+<!--
+https://andrewbaisden.medium.com/how-to-deploy-a-python-flask-app-to-vercel-ff4a63d312f4
+-->
 
 ## Links
 
-- [Runtime](https://vercel.com/docs/runtimes#official-runtimes/python)
+- [Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python)
 - [Advanced Python Usage](https://vercel.com/docs/runtimes#advanced-usage/advanced-python-usage)
 
 ## Configuration

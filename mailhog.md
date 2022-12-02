@@ -2,9 +2,9 @@
 
 **Keywords:** Local Mail Server
 
-## Alternatives
+## Links
 
-- [MailCatcher](/mailcatcher.md)
+- [Code Repository](https://github.com/mailhog/MailHog)
 
 ## CLI
 
@@ -45,17 +45,39 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create ns mailhog
-```
+#
+kubectl create ns mailhog-system
+# kubectl create ns mailing
 
-```sh
-helm install mailhog codecentric/mailhog \
-  --namespace mailhog \
-  --set auth.enabled=true \
-  --set auth.fileContents="admin:$(mailhog bcrypt admin)" \
-  --set ingress.enabled=true \
-  --set "ingress.hosts[0].host=mailhog.${DOMAIN}" \
-  --set 'ingress.hosts[0].paths={/}'
+#
+helm search repo -l codecentric/mailhog
+
+#
+export KUBERNETES_IP='<kubernetes-ip>'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
+
+#
+helm upgrade mailhog codecentric/mailhog \
+  --namespace mailhog-system \
+  --version 5.2.1 \
+  -f <(cat << EOF
+auth:
+  enabled: true
+  fileContents: $(htpasswd -nbBC 10 admin admin)
+
+ingress:
+  enabled: true
+  ingressClassName: nginx
+  hosts:
+  - host: mailhog.${DOMAIN}
+    paths:
+    - path: /
+      pathType: Prefix
+EOF
+)
+
+#
+kubectl get all -n sonarqube-system
 ```
 
 ### NGINX Ingress
@@ -89,40 +111,6 @@ kubectl patch deployment nginx-ingress-controller \
   -n kube-system
 ```
 
-### SSL
-
-#### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-#### Create
-
-```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
-  -n mailhog
-```
-
-```sh
-helm upgrade mailhog codecentric/mailhog -f <(yq m <(cat << EOF
-ingress:
-  tls:
-    - secretName: example.tls-secret
-      hosts:
-        - mailhog.${DOMAIN}
-EOF
-) <(helm get values mailhog))
-```
-
-#### Remove
-
-```sh
-helm upgrade mailhog codecentric/mailhog -f <(yq d <(helm get values mailhog) ingress.tls)
-
-kubectl delete secret example.tls-secret -n mailhog
-```
-
 ### Status
 
 ```sh
@@ -133,20 +121,6 @@ kubectl rollout status deploy/mailhog -n mailhog
 
 ```sh
 kubectl logs -l 'app.kubernetes.io/name=mailhog' -n mailhog -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 mailhog.mailhog.svc.cluster.local +short
-nslookup mailhog.mailhog.svc.cluster.local 10.96.0.10
-```
-
-#### ExternalDNS
-
-```sh
-dig @10.96.0.10 "mailhog.${DOMAIN}" +short
-nslookup "mailhog.${DOMAIN}" 10.96.0.10
 ```
 
 ### Delete

@@ -1,6 +1,7 @@
 # Design
 
 <!--
+https://app.bitrise.io/users/sign_up
 https://linear.app/
 https://spacelift.io/
 https://braydoncoyer.dev/

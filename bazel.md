@@ -1,5 +1,14 @@
 # Bazel
 
+<!--
+https://www.youtube.com/watch?v=mXLrk0ipwz4
+-->
+
+## Links
+
+- [Code Repository](https://github.com/bazelbuild/bazel/)
+- [Main Website](https://bazel.build/)
+
 ## CLI
 
 ### Dependencies

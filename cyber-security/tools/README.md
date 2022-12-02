@@ -27,7 +27,7 @@ https://github.com/bridgecrewio/checkov
 - **Vulnerability Scanner:** [Snyk](/cyber-security/tools/snyk.md), [Trivy](/cyber-security/tools/trivy.md)
 - **Vulnerability Static Analysis for Containers:** [Harbor](/harbor.md), [Clair](/clair.md), [Snyk](/cyber-security/tools/snyk.md)
 - **Secrets Detection:** [detect-secrets](/detect-secrets.md)
-- **SCA:** Dependency-Track,
+- **SCA:** Dependency-Track
 - **SBOM:** [Syft](/cyber-security/tools/syft.md), [Trivy](/cyber-security/tools/trivy.md)
 
 <!--

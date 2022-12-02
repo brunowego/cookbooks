@@ -48,7 +48,7 @@ For Bash or Zsh, put something like this in your `$HOME/.zshrc`:
 
 ```sh
 # Kubernetes Control (kubectl)
-command -v kubectl > /dev/null && source <(kubectl completion zsh)
+command -v kubectl > /dev/null && source <(kubectl completion zsh) # bash
 alias k=kubectl
 ```
 
@@ -153,6 +153,17 @@ kubectl delete secret [secret-name] \
 ```
 
 ### Tips
+
+#### Autocomplete
+
+```sh
+# Using Oh My Zsh
+sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 kubectl\)/g' ~/.zshrc
+
+source ~/.zshrc
+
+rm ~/.zcompdump*
+```
 
 #### Backup
 
@@ -343,24 +354,6 @@ curl \
   --cacert <(cat ~/.kube/config | yq e '.clusters[0].cluster.certificate-authority-data' - | base64 -d) \
   --cert <(cat ~/.kube/config | yq e '.users[0].user.client-certificate-data' - | base64 -d) \
   --key <(cat ~/.kube/config | yq e '.users[0].user.client-key-data' - | base64 -d)
-```
-
-#### Command-line completion
-
-```sh
-# Using Oh My Zsh
-sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 kubectl\)/g' ~/.zshrc
-
-source ~/.zshrc
-
-rm ~/.zcompdump*
-
-# Using native command
-## for zsh
-source <(kubectl completion zsh)
-
-## for bash
-source <(kubectl completion bash)
 ```
 
 <!-- ####

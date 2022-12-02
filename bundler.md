@@ -16,6 +16,29 @@ gem install bundler -n /usr/local/bin
 bundler -h
 ```
 
+### Initialize
+
+```sh
+#
+bundle init
+# or
+cat << EOF > ./Gemfile
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+EOF
+
+#
+bundle install
+```
+
+### Usage
+
+```sh
+#
+bundle exec pod install
+```
+
 ### Issues
 
 #### Bundle Path

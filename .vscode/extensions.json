@@ -4,6 +4,7 @@
     "shuworks.vscode-table-formatter",
     "EditorConfig.EditorConfig",
     "redhat.vscode-yaml",
-    "Tyriar.sort-lines"
+    "Tyriar.sort-lines",
+    "DavidAnson.vscode-markdownlint"
   ]
 }

@@ -3,6 +3,7 @@
 ## List
 
 - cast
+- console
 - easyjson
 - fasttemplate
 - fsnotify

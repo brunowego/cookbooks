@@ -4,7 +4,7 @@
 
 ## Links
 
-- [Main Website](https://sourcetreeapp.com/)
+- [Main Website](https://sourcetreeapp.com)
 
 ## App
 
@@ -62,7 +62,7 @@ You are opening the application “Sourcetree.app” for the first time. Are you
 The application is in a folder named “Applications.” To see the application in the Finder without opening it, click Show Application.
 ```
 
-TODO
+[Uninstall](#uninstall) Sourcetree and try a fresh install.
 
 #### Missing Git CLI
 
@@ -85,3 +85,13 @@ For URL: https://[]/[].git
 2. Preferences...
    - Git tab
    - Git Version block -> Use System Git
+
+### Uninstall
+
+```sh
+# Homebrew
+brew uninstall --cask sourcetree
+
+rm -fR "$HOME"/Library/Application\ Support/SourceTree
+rm -fR "$HOME"/Library/Logs/SourceTree
+```

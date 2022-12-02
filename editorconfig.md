@@ -31,6 +31,8 @@ EOF
 
 #### Visual Studio Code
 
+**Recommended:** [Linter](/linter.md#visual-studio-code) and [Prettier](/prettier.md#visual-studio-code)
+
 ```sh
 #
 code --install-extension EditorConfig.EditorConfig

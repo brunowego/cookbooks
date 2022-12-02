@@ -46,9 +46,6 @@ jq '."editor.scrollBeyondLastLine" |= false' "$HOME"/.vscode/settings.json | spo
 # Word Wrap
 jq '."editor.wordWrap" |= "on"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 
-# Auto Save
-jq '."files.autoSave" |= "afterDelay"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
-
 # Font Size
 jq '."editor.fontSize" = 14' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 
@@ -61,6 +58,9 @@ jq '."workbench.sideBar.location" |= "right"' "$HOME"/.vscode/settings.json | sp
 # Open Side by Side Direction
 jq '."workbench.editor.openSideBySideDirection" |= "down"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 jq '."workbench.editor.splitInGroupLayout" |= "vertical"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+
+# Auto Save
+# jq '."files.autoSave" |= "afterDelay"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 
 # Rulers
 # jq '."editor.rulers" |= [100, 120]' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json

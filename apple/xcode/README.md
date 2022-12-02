@@ -6,6 +6,11 @@ https://medium.com/@marksiu/how-to-build-ios-project-with-command-82f20fda5ec5
 https://blog.process-one.net/using-a-local-development-trusted-ca-on-macos/
 -->
 
+## Links
+
+- [Main Website](https://developer.apple.com/xcode/)
+- [Apple ID](https://appleid.apple.com/)
+
 ## App
 
 ### References
@@ -88,6 +93,12 @@ xcodebuild clean \
   -scheme <scheme-name>
 
 #
+xcodebuild \
+  -resolvePackageDependencies \
+  -workspace <project-name>.xcworkspace \
+  -scheme <scheme-name>
+
+#
 xcodebuild build \
   -workspace <project-name>.xcworkspace \
   -scheme <scheme-name>
@@ -112,6 +123,12 @@ xcodebuild \
 ```
 
 ### Tips
+
+#### Download Manual Profiles
+
+1. Xcode -> Preferences...
+2. Accounts Tab
+3. Select Apple ID -> Download Manual Profiles
 
 #### Switch Version
 

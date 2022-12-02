@@ -70,9 +70,15 @@ ssh-keygen
 cointop server -p 2222
 ```
 
-<!-- #### Autocomplete
+#### Autocomplete
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
 # cointop
-source <(cointop completion zsh)
-``` -->
+source <(cointop completion zsh) # bash
+```
+
+```sh
+source ~/.zshrc
+```

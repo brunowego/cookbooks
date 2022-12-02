@@ -39,7 +39,7 @@ antigen list
 antigen use oh-my-zsh
 
 # Install Bundle
-antigen bundle [package]
+antigen bundle <package>
 
 antigen bundle command-not-found
 

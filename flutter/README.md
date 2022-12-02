@@ -97,7 +97,18 @@ flutter doctor -v
 
 # Licenses
 flutter doctor --android-licenses
+
+#
+flutter channel stable # master, dev, beta
+
+#
+flutter upgrade
 ```
+
+<!--
+#
+flutter downgrade
+-->
 
 ### Usage
 
@@ -114,15 +125,15 @@ flutter create \
 flutter analyze
 
 #
-flutter test
-flutter test -d <device-id> -r <reporter>
-
-#
 flutter clean
 
 #
 flutter build apk
 flutter build ios
+
+#
+flutter test
+flutter test -d <device-id> -r <reporter>
 
 #
 flutter emulators
@@ -134,11 +145,23 @@ flutter devices
 
 #
 flutter run -d web-server # chrome
-flutter run -d iphone
 flutter run -d android
+flutter run -d iphone
 ```
 
 ### Tips
+
+#### Set SDK Version
+
+**Refer:** `./android/local.properties`
+
+```properties
+# ...
+
+flutter.minSdkVersion=21
+flutter.targetSdkVersion=31
+flutter.compileSdkVersion=31
+```
 
 #### Visual Studio Code
 

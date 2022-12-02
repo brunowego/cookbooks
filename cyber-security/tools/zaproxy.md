@@ -27,3 +27,9 @@ https://app.pluralsight.com/library/courses/owasp-zap-web-app-pentesting/table-o
 ```sh
 brew install --cask owasp-zap
 ```
+
+<!--
+pip install --upgrade zapcli
+
+https://mydeveloperplanet.com/2021/04/28/automated-pen-testing-with-zap-cli/
+-->
