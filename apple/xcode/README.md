@@ -11,6 +11,14 @@ https://blog.process-one.net/using-a-local-development-trusted-ca-on-macos/
 - [Main Website](https://developer.apple.com/xcode/)
 - [Apple ID](https://appleid.apple.com/)
 
+## CLI
+
+### Installation
+
+```sh
+xcode-select --install
+```
+
 ## App
 
 ### References

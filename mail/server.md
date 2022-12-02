@@ -1,7 +1,5 @@
 # Mail Server
 
-TODO
+## Related
 
-<!--
-https://www.mailersend.com/
--->
+- [Simple Mail Transfer Protocol (SMTP)](/smtp.md)

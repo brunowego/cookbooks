@@ -19,7 +19,7 @@ https://www.wafrat.com/fixing-ios-distribution-certificate-related-errors/
 
 ### Dependencies
 
-Git repository called `fastlane-cert-match-store`.
+Create git repository called `fastlane-cert-match-store` on your [Git Service](/git/git-service.md).
 
 ### Commands
 
@@ -37,8 +37,8 @@ fastlane match init
 
 ```sh
 #
-fastlane match adhoc # appstore, development, enterprise
+fastlane match adhoc # appstore, enterprise, development
 
 #
-fastlane match nuke <name>
+fastlane match nuke adhoc # appstore, enterprise, development
 ```

@@ -38,7 +38,19 @@ https://github.com/Automattic/pocket-casts-ios/
 
 ## CLI
 
+### Dependencies
+
+- [Xcode](/apple/xcode/README.md#cli)
+- [Ruby](/ruby/README.md)
+- [Bundler](/bundler.md)
+
 ### Installation
+
+#### RubyGems 🌟
+
+```sh
+bundle add fastlane
+```
 
 #### Homebrew
 
@@ -46,17 +58,12 @@ https://github.com/Automattic/pocket-casts-ios/
 brew install fastlane
 ```
 
-#### RubyGems
-
-```sh
-bundle add fastlane
-```
-
 ### Commands
 
 ```sh
-fastlane -h
 bundle exec fastlane -h
+# or, if installed with Homebrew
+fastlane -h
 ```
 
 ### Initialize

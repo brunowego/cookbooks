@@ -1,6 +1,10 @@
 # Stocks
 
 <!--
+https://www.youtube.com/watch?v=dLOaMn6921A
+-->
+
+<!--
 FedEx Indicator / Proxy
 
 data ex dividendos

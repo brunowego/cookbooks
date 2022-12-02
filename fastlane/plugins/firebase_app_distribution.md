@@ -1,4 +1,8 @@
-# firebase_app_distribution
+# Firebase App Distribution (firebase_app_distribution)
+
+<!--
+https://www.udemy.com/course/ios-fastlane/learn/lecture/27346076#overview
+-->
 
 ## Docs
 

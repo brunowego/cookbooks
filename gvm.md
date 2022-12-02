@@ -4,10 +4,11 @@
 
 ### Dependencies
 
+- [Xcode](/apple/xcode/README.md)
+
 #### Homebrew
 
 ```sh
-xcode-select --install
 brew install curl git mercurial
 ```
 
