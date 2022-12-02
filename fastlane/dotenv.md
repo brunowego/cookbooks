@@ -8,7 +8,7 @@ https://github.com/matijagrcic/react-native/blob/main/Fastlane.md
 
 ## Dependencies
 
-- [dotenv](/ruby/ruby-dotenv.md#library)
+- [dotenv](/ruby/ruby-dotenv.md#bundler)
 
 ## Configuration
 
@@ -41,5 +41,5 @@ Dotenv.load '.env.secret'
 
 ```sh
 #
-fastlane <lane> --env development # staging, production
+bundle exec fastlane <lane> --env development # staging, production
 ```

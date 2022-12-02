@@ -8,7 +8,7 @@
 
 ### Installation
 
-#### RubyGems
+#### Bundler
 
 ```sh
 bundle add dotenv

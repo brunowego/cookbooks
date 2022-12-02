@@ -10,14 +10,14 @@
 ### Commands
 
 ```sh
-fastlane snapshot -h
+bundle exec fastlane snapshot -h
 ```
 
 ### Usage
 
 ```sh
 #
-fastlane snapshot init
+bundle exec fastlane snapshot init
 ```
 
 <!-- ```swift

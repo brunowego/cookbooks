@@ -10,19 +10,19 @@
 ### Commands
 
 ```sh
-fastlane frameit -h
+bundle exec fastlane frameit -h
 ```
 
 <!-- ### Initialize
 
 ```sh
 #
-fastlane frameit init
+bundle exec fastlane frameit init
 ``` -->
 
 <!-- ### Usage
 
 ```sh
 #
-fastlane deliver
+bundle exec fastlane deliver
 ``` -->

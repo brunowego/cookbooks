@@ -12,44 +12,44 @@
 ### Commands
 
 ```sh
-fastlane sigh -h
+bundle exec fastlane sigh -h
 ```
 
 ### Usage
 
 ```sh
 #
-fastlane sigh manage
+bundle exec fastlane sigh manage
 
 # Clean expired
-fastlane sigh manage -e
+bundle exec fastlane sigh manage -e
 
 # Clean pattern
-fastlane sigh manage -p 'iOS\ ?Team Provisioning Profile:'
+bundle exec fastlane sigh manage -p 'iOS\ ?Team Provisioning Profile:'
 
 #
-fastlane sigh renew
+bundle exec fastlane sigh renew
 
 #
-fastlane sigh download_all
+bundle exec fastlane sigh download_all
 ```
 
 <!--
-fastlane sigh --adhoc
+bundle exec fastlane sigh --adhoc
 
-fastlane sigh --development
+bundle exec fastlane sigh --development
 
-fastlane sigh -a com.krausefx.app -u username
+bundle exec fastlane sigh -a com.krausefx.app -u username
 
-fastlane action sigh
+bundle exec fastlane action sigh
 
-fastlane sigh repair
+bundle exec fastlane sigh repair
 
-fastlane sigh resign
+bundle exec fastlane sigh resign
 
-fastlane sigh repair
+bundle exec fastlane sigh repair
 
-fastlane sigh resign ./path/app.ipa \
+bundle exec fastlane sigh resign ./path/app.ipa \
   --signing_identity "iPhone Distribution: Felix Krause" \
   -p "my.mobileprovision"
 -->

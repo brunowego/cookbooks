@@ -16,10 +16,12 @@
 #### RubyGems
 
 ```sh
-# Globally
 gem install rubocop
+```
 
-# Project
+#### Bundler
+
+```sh
 bundle add rubocop
 ```
 

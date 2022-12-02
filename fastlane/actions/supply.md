@@ -10,18 +10,18 @@
 ### Commands
 
 ```sh
-fastlane supply -h
+bundle exec fastlane supply -h
 ```
 
 ### Initialize
 
 ```sh
-fastlane supply init
+bundle exec fastlane supply init
 ```
 
 ### Usage
 
 ```sh
 #
-fastlane supply
+bundle exec fastlane supply
 ```

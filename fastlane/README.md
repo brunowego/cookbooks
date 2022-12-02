@@ -42,17 +42,20 @@ https://github.com/Automattic/pocket-casts-ios/
 
 - [Xcode](/apple/xcode/README.md#cli)
 - [Ruby](/ruby/README.md)
-- [Bundler](/bundler.md)
+- [Bundler](/bundler.md#initialize)
+- [CocoaPods](/cocoapods.md#bundler)
 
 ### Installation
 
-#### RubyGems 🌟
+#### Bundler 🌟
 
 ```sh
 bundle add fastlane
 ```
 
 #### Homebrew
+
+**Tip:** Not recommended.
 
 ```sh
 brew install fastlane
@@ -63,14 +66,14 @@ brew install fastlane
 ```sh
 bundle exec fastlane -h
 # or, if installed with Homebrew
-fastlane -h
+bundle exec fastlane -h
 ```
 
 ### Initialize
 
 ```sh
 #
-fastlane init
+bundle exec fastlane init
 
 #
 mv ./fastlane ./.fastlane
@@ -95,10 +98,10 @@ EOF
 
 ```sh
 #
-fastlane list
+bundle exec fastlane list
 
 #
-fastlane run <action>
+bundle exec fastlane run <action>
 ```
 
 ### Tips
@@ -107,14 +110,14 @@ fastlane run <action>
 
 ```sh
 #
-fastlane run opt_out_usage
+bundle exec fastlane run opt_out_usage
 ```
 
 #### Generate Documentation
 
 ```sh
 #
-fastlane docs
+bundle exec fastlane docs
 ```
 
 #### Rubocop
@@ -135,14 +138,14 @@ AllCops:
 
 ```sh
 #
-fastlane env
+bundle exec fastlane env
 ```
 
 #### Enable Auto Complete
 
 ```sh
 #
-fastlane enable_auto_complete
+bundle exec fastlane enable_auto_complete
 ```
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:

@@ -41,6 +41,15 @@ https://app.pluralsight.com/library/courses/ruby-getting-started/table-of-conten
 https://app.pluralsight.com/library/courses/reading-writing-data-ruby/table-of-contents
 -->
 
+## Links
+
+- [Org. Repository](https://github.com/ruby)
+- [Main Website](https://ruby-lang.org/en/)
+
+## Docs
+
+- [Installing Ruby](https://ruby-lang.org/en/documentation/installation/)
+
 ## References
 
 - [Web Content Scrapers](https://www.ruby-toolbox.com/categories/Web_Content_Scrapers)

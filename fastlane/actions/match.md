@@ -24,21 +24,21 @@ Create git repository called `fastlane-cert-match-store` on your [Git Service](/
 ### Commands
 
 ```sh
-fastlane match -h
+bundle exec fastlane match -h
 ```
 
 ### Initialize
 
 ```sh
-fastlane match init
+bundle exec fastlane match init
 ```
 
 ### Usage
 
 ```sh
 #
-fastlane match adhoc # appstore, enterprise, development
+bundle exec fastlane match adhoc # appstore, enterprise, development
 
 #
-fastlane match nuke adhoc # appstore, enterprise, development
+bundle exec fastlane match nuke adhoc # appstore, enterprise, development
 ```

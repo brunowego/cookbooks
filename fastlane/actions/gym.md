@@ -10,19 +10,19 @@
 ### Commands
 
 ```sh
-fastlane gym -h
+bundle exec fastlane gym -h
 ```
 
 ### Initialize
 
 ```sh
 #
-fastlane gym init
+bundle exec fastlane gym init
 ```
 
 <!-- ### Usage
 
 ```sh
 #
-fastlane gym init
+bundle exec fastlane gym init
 ``` -->

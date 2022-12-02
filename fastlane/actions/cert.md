@@ -12,15 +12,15 @@
 ### Commands
 
 ```sh
-fastlane cert -h
+bundle exec fastlane cert -h
 ```
 
 ### Usage
 
 ```sh
 #
-fastlane cert
-fastlane cert -u <email>
+bundle exec fastlane cert
+bundle exec fastlane cert -u <email>
 ```
 
 ### Configuration

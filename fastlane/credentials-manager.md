@@ -10,8 +10,8 @@
 
 ```sh
 #
-fastlane fastlane-credentials add --username <email>
+bundle exec fastlane fastlane-credentials add --username <email>
 
 #
-fastlane fastlane-credentials remove --username <email>
+bundle exec fastlane fastlane-credentials remove --username <email>
 ```

@@ -10,12 +10,12 @@
 ### Commands
 
 ```sh
-fastlane pilot -h
+bundle exec fastlane pilot -h
 ```
 
 ### Usage
 
 ```sh
 #
-fastlane pilot list
+bundle exec fastlane pilot list
 ```

@@ -16,5 +16,5 @@ ls ~/.fastlane/spaceship
 
 ```sh
 #
-fastlane spaceauth -u <email>
+bundle exec fastlane spaceauth -u <email>
 ```

@@ -10,7 +10,7 @@
 
 ```sh
 #
-fastlane actions
+bundle exec fastlane actions
 ```
 
 <!--

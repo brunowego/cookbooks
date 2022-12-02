@@ -10,12 +10,12 @@
 ### Commands
 
 ```sh
-fastlane scan -h
+bundle exec fastlane scan -h
 ```
 
 ### Usage
 
 ```sh
 #
-fastlane scan
+bundle exec fastlane scan
 ```

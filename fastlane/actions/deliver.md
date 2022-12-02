@@ -10,22 +10,22 @@
 ### Commands
 
 ```sh
-fastlane deliver -h
+bundle exec fastlane deliver -h
 ```
 
 ### Initialize
 
 ```sh
 #
-fastlane deliver init
+bundle exec fastlane deliver init
 ```
 
 ### Usage
 
 ```sh
 #
-fastlane deliver download_metadata
+bundle exec fastlane deliver download_metadata
 
 #
-fastlane deliver download_screenshots
+bundle exec fastlane deliver download_screenshots
 ```

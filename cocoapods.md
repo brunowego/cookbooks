@@ -29,6 +29,12 @@ brew install cocoapods
 gem install cocoapods
 ```
 
+#### Bundler
+
+```sh
+bundler add cocoapods
+```
+
 ### Commands
 
 ```sh
