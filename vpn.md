@@ -4,11 +4,12 @@
 
 - Internet Protocol Security (IPsec)
 - Point-to-Point Protocol (PPP)
+- Point-to-Site (P2S)
 - Secure Sockets Layer (SSL)
 
 ## Tools
 
-### Client
+### VPN Client
 
 - [openfortivpn](/openfortivpn.md)
 - [OpenVPN](/openvpn.md)

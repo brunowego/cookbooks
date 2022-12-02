@@ -13,3 +13,10 @@ az extension add -n elastic
 ```sh
 az elastic -h
 ```
+
+### Usage
+
+```sh
+#
+az elastic monitor list
+```

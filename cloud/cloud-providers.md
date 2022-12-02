@@ -1,7 +1,7 @@
 # Cloud Providers
 
-##
+## Platform
 
-- [AWS](/aws.md)
-- [Google Cloud](/gcp.md)
-- [Azure](/azure.md)
+- [AWS](/aws/README.md.md)
+- [Azure](/azure/README.md.md)
+- [Google Cloud](/google-cloud/README.md)

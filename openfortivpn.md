@@ -1,8 +1,14 @@
 # openfortivpn
 
+**Keywords:** VPN Client
+
 ## Links
 
 - [Code Repository](https://github.com/adrienverge/openfortivpn)
+
+## Related
+
+- [Fortinet](https://fortinet.com/)
 
 ## CLI
 
@@ -31,30 +37,30 @@ openfortivpn -h
 
 ```sh
 # Linux
-sudo install -dm 755 -o root -g root /etc/openfortivpn/[company]
+sudo install -dm 755 -o root -g root /etc/openfortivpn/<company>
 
-cat << EOF | sudo tee /etc/openfortivpn/[company]/config
-host = [domain]
+cat << EOF | sudo tee /etc/openfortivpn/<company>/config
+host = <domain>
 port = 443
-username = [username]
-password = [password]
-trusted-cert = [hash]
+username = <username>
+password = <password>
+trusted-cert = <hash>
 EOF
 
-sudo openfortivpn -c /etc/openfortivpn/[company]/config
+sudo openfortivpn -c /etc/openfortivpn/<company>/config
 
 # Darwin
-sudo install -dm 755 -o "$USER" -g admin /usr/local/etc/openfortivpn/[company]
+sudo install -dm 755 -o "$USER" -g admin /usr/local/etc/openfortivpn/<company>
 
-cat << EOF > /usr/local/etc/openfortivpn/[company]/config
-host = [domain]
+cat << EOF > /usr/local/etc/openfortivpn/<company>/config
+host = <domain>
 port = 443
-username = [username]
-password = [password]
-trusted-cert = [hash]
+username = <username>
+password = <password>
+trusted-cert = <hash>
 EOF
 
-sudo openfortivpn -c /usr/local/etc/openfortivpn/[company]/config
+sudo openfortivpn -c /usr/local/etc/openfortivpn/<company>/config
 ```
 
 ### Issues

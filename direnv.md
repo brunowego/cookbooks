@@ -84,8 +84,13 @@ direnv reload
 
 #### Autocomplete
 
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
 ```sh
 # direnv
-command -v direnv > /dev/null && eval "$(direnv hook bash)" # if bash
-command -v direnv > /dev/null && eval "$(direnv hook zsh)" # if zsh
+command -v direnv > /dev/null && eval "$(direnv hook zsh)" # bash
+```
+
+```sh
+source ~/.zshrc
 ```

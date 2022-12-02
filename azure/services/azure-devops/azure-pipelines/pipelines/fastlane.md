@@ -7,6 +7,10 @@ https://github.com/wireapp/wire-ios/blob/develop/fastlane/Fastfile
 https://github.com/Automattic/pocket-casts-ios/blob/trunk/fastlane/Fastfile
 -->
 
+## Docs
+
+- [Azure DevOps (formerly known as: Visual Studio Team Services)](https://docs.fastlane.tools/best-practices/continuous-integration/azure-devops/)
+
 ## Configuration
 
 **Refer:** `./azure-pipelines.yml`

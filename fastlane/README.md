@@ -24,17 +24,16 @@ https://github.com/Automattic/pocket-casts-ios/
 
 ## Docs
 
+- [Continuous Integration](https://docs.fastlane.tools/best-practices/continuous-integration/)
 - Plugins
   - [Available Plugins](https://docs.fastlane.tools/plugins/available-plugins)
 - Advanced
   - [Fastfile](https://docs.fastlane.tools/advanced/Fastfile/)
-- Actions
-  - [Supply](https://docs.fastlane.tools/actions/supply/)
-  - [testflight](https://docs.fastlane.tools/actions/testflight/)
+- [Actions](./actions/README.md)
 
 ## Conferences
 
-- [fastlane Best Practices](https://www.joshholtz.com/altconf-fastlane-best-practices/)
+- [fastlane Best Practices](https://joshholtz.com/altconf-fastlane-best-practices/)
 
 ## CLI
 

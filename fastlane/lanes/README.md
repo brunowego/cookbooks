@@ -1,0 +1,20 @@
+# fastlane Lanes
+
+## Boilerplate
+
+```rb
+# frozen_string_literal: true
+
+opt_out_usage
+skip_docs
+
+default_platform(:ios)
+
+platform :ios do
+  before_all do
+    cocoapods
+  end
+
+  # ...
+end
+```

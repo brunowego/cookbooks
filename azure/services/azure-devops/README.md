@@ -1,4 +1,4 @@
-# Azure DevOps (ADO)
+# Azure DevOps (ADO) (formerly known as Visual Studio Team Services)
 
 <!--
 https://app.pluralsight.com/paths/skills/additional-devops-topics-on-microsoft-azure
