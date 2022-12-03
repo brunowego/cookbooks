@@ -62,6 +62,10 @@ Transactions Per Second (TPS)
 - [AWS Glossary](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html)
 - [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/)
 
+## Tools
+
+- [AWS Profile Manager (a.k.a. AWS Profile Switcher)](/aws-profile-manager.md)
+
 ## History
 
 - Launches first service Simple Queue Service (SQS) around 2004

@@ -1,5 +1,10 @@
 # OpenTelemetry
 
+## Links
+
+- [Org. Repository](https://github.com/open-telemetry)
+- [Main Website](https://opentelemetry.io/)
+
 ## Related
 
 - [OpenTracing](/opentracing.md)

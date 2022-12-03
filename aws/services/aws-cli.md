@@ -40,12 +40,25 @@ choco install awscli
 
 ```sh
 aws help
+
+# AWS CLI Command Syntax
+ aws <options> <command> <subcommand> <parameters>
 ```
 
-#### AWS CLI Command Syntax
+### Configuration
 
 ```sh
-aws <options> <command> <subcommand> <parameters>
+#
+aws configure set output text # json, table
+aws configure set cli_pager ''
+
+#
+aws configure \
+  --profile default
+
+#
+cat ~/.aws/config
+cat ~/.aws/credentials
 ```
 
 ### Usage
@@ -55,72 +68,43 @@ aws <options> <command> <subcommand> <parameters>
 aws configure list-profiles
 
 #
-aws configure \
-  --profile default
-
-#
-aws configure get profile.default.region
-aws configure get profile.default.output
-
-#
-aws configure set profile.default.region us-east-1
-aws configure set profile.default.output text # json, table
-
-#
 aws configure list --profile default
 
 #
 aws s3 ls
-
-#
-cat ~/.aws/config
-cat ~/.aws/credentials
 ```
 
-<!--
-#
-export mfa_serial=arn:aws:iam::<account>:mfa/<login>
-
-aws configure set profile.dev.region <your_region>
-aws configure set profile.dev.aws_access_key_id <access_key_id>
-aws configure set profile.dev.aws_secret_access_key <secret_access_key>
-aws configure set profile.dev.aws_session_token <session_token>
-
-aws configure set default.source_profile sts
-aws configure set profile.sts.mfa_serial $mfa_serial
-aws configure set profile.sts.aws_access_key_id $aws_access_key_id
-aws configure set profile.sts.aws_secret_access_key $aws_secret_access_key
-
-aws configure set profile.dev.role_arn arn:aws:iam::<organizationaccount>:role/OrganizationAccountAccessRole
-aws configure --profile <name>
-
-eval $(aws ecr get-login --no-include-email)
-
-aws ecr get-login \
-  --no-include-email \
-  --region us-east-1
--->
-
 ### Tips
+
+#### Show All Regions
+
+```sh
+#
+aws ec2 describe-regions \
+  --all-regions \
+  --output json \
+  --region 'us-east-1' | \
+    jq -r '.Regions | .[] | .RegionName + " " + .OptInStatus' | \
+      grep -v not-opted-in | cut -d ' ' -f 1
+```
 
 #### Manually Configuration
 
 ```sh
 #
-export AWS_ACCESS_KEY_ID=''
-export AWS_SECRET_ACCESS_KEY=''
+export AWS_ACCESS_KEY_ID='<access-key>'
+export AWS_SECRET_ACCESS_KEY='<secret-key>'
 
 aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID"
 aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS_KEY"
-aws configure set cli_pager ''
 ```
 
 #### Environment Access Variables
 
 ```sh
 #
-export AWS_ACCESS_KEY_ID="$(aws --profile dev configure get aws_access_key_id)"
-export AWS_SECRET_ACCESS_KEY="$(aws --profile dev configure get aws_secret_access_key)"
+export AWS_ACCESS_KEY_ID="$(aws --profile <name> configure get aws_access_key_id)"
+export AWS_SECRET_ACCESS_KEY="$(aws --profile <name> configure get aws_secret_access_key)"
 ```
 
 ### Issues
@@ -133,6 +117,8 @@ You must specify a region. You can also configure your region by running "aws co
 
 ```sh
 #
+export AWS_REGION='us-east-1'
+# or
 aws configure set default.region us-east-1
 ```
 
@@ -146,5 +132,5 @@ An error occurred (ExpiredToken) when calling the ListBuckets operation: The pro
 ```sh
 # First verify if you have already logged in AWS through CLI.
 # Or, if you selected the right profile:
-AWS_PROFILE=dev aws s3 ls
+AWS_PROFILE=<name> aws s3 ls
 ```

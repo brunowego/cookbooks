@@ -30,6 +30,10 @@ Efficient compilation, Efficient execution and Ease of programming.
 
 - [sprig - Useful template functions for Go templates](https://masterminds.github.io/sprig/date.html)
 
+## Tools
+
+- [Go Version Management (goenv)](/goenv.md)
+
 ## Terms
 
 - GOOS
