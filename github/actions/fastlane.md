@@ -13,13 +13,15 @@ ssh-keyscan github.com | pbcopy -
 
 https://docs.fastlane.tools/actions/setup_ci/
 
-if is_ci
-    puts "Running on CI!"
+**Refer:** `./.fastlane/Fastfile`
 
-    setup_ci(
-        force: true
-    )
+```ruby
+if is_ci
+  puts 'Running on CI!'
+
+  setup_ci force: true
 end
+```
 -->
 
 <!--

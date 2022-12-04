@@ -10,5 +10,3 @@ https://www.coursera.org/learn/machine-learning
 ## Terms
 
 - Principal Component Analysis (PCA)
-
-TODO

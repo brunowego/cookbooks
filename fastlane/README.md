@@ -1,5 +1,7 @@
 # fastlane
 
+**Keywords:** App Automation, Useful for Pipelines (Portability)
+
 ![fastlane](/assets/images/fastlane/fastlane.png)
 
 ## Links
