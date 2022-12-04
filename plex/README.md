@@ -4,11 +4,16 @@
 https://skybox.xyz/en/
 -->
 
-**Keywords:** UPnP/Digital Living Network Alliance (DLNA)
+**Keywords:** Streaming Media Service
 
 ## Links
 
 - [Main Website](https://plex.tv)
+
+## Glossary
+
+- Digital Living Network Alliance (DLNA)
+- Universal Plug and Play (UPnP)
 
 ## Server
 

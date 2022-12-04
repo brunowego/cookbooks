@@ -8,7 +8,7 @@
 
 ## Related
 
-- [Google Cloud SDK](/google-cloud/services/google-cloud-sdk.md)
+- [Google Cloud SDK](/google-cloud/services/sdk.md)
 
 ## CLI
 

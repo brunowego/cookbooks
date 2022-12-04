@@ -189,7 +189,7 @@ kubectl delete ns mysql --grace-period=0 --force
 
 ### Dependencies
 
-- [MySQL Client](/mysql/mysql-client.md)
+- [MySQL Client](/mysql/client.md)
 
 ### Installation
 

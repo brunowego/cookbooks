@@ -10,7 +10,7 @@ https://app.pluralsight.com/library/courses/monitoring-containerized-app-health-
 
 ## Alternatives
 
-- [Apache Superset](/apache/apache-superset.md)
+- [Apache Superset](/apache/superset.md)
 - [Datadog](https://www.datadoghq.com/)
 - [Elastic Kibana](/elastic/elastic-kibana.md)
 - [Metabase](/metabase.md)

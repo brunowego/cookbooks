@@ -2,6 +2,6 @@
 
 ## Tools
 
-- [Apache Ant](/apache/apache-ant.md)
-- [Apache Maven](/apache/apache-maven.md)
+- [Apache Ant](/apache/ant.md)
+- [Apache Maven](/apache/maven.md)
 - [Gradle](/gradle.md)

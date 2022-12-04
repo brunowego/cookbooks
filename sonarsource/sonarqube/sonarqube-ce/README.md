@@ -217,7 +217,7 @@ export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-helm upgrade sonarqube sonarqube/sonarqube \
+helm install sonarqube sonarqube/sonarqube \
   --namespace sonarqube-system \
   --version 5.0.6+370 \
   -f <(cat << EOF

@@ -53,7 +53,11 @@ https://linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 code \
   --install-extension formulahendry.auto-close-tag \
   --install-extension tht13.html-preview-vscode
+```
 
+**Configuration:**
+
+```sh
 #
 jq '."html.format.wrapAttributes" |= "force-aligned"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```

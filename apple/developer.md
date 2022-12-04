@@ -76,7 +76,14 @@
 
 ### Create Device
 
-TODO
+1. Access [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/)
+2. Devices -> Register a New Device
+3. Register a Device section
+   - Device Name: `<Name>’s iPhone`
+   - Device ID (UDID)
+   - Continue
+4. Register a New Device -> Register
+5. Registration Complete -> Done
 
 ### Get Device UDID
 

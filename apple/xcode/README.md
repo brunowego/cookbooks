@@ -132,6 +132,16 @@ xcodebuild \
 
 ### Tips
 
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension mariomatheu.syntax-project-pbxproj
+
+#
+jq '."recommendations" += ["mariomatheu.syntax-project-pbxproj"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
+
 #### Download Manual Profiles
 
 1. Xcode -> Preferences...

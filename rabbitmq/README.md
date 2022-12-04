@@ -25,7 +25,7 @@ https://stackoverflow.com/questions/11459676/delete-all-the-queues-from-rabbitmq
 
 ## Alternatives
 
-- [Apache ActiveMQ](/apache/apache-activemq.md)
+- [Apache ActiveMQ](/apache/activemq.md)
 - [AWS SQS](/aws/aws-sqs.md)
 - Azure Service Bus
 
@@ -192,7 +192,7 @@ rabbitmq-diagnostics \
 rabbitmqctl cluster_status
 
 #
-rabbitmqctl authenticate_user [username] [password]
+rabbitmqctl authenticate_user <username> <password>
 ```
 
 #### Plugins
@@ -207,11 +207,11 @@ rabbitmq-plugins \
 
 ### Tips
 
-####
+<!-- ####
 
 ```sh
 rabbitmqctl list_queues | awk '{ print $1 }' | xargs -L1 rabbitmqctl delete_queue
-```
+``` -->
 
 #### User Management
 

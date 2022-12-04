@@ -11,7 +11,7 @@ docker network create workbench \
 
 ### Dependencies
 
-- [Apache Kafka](/apache/apache-kafka.md#docker)
+- [Apache Kafka](/apache/kafka.md#docker)
 - [Confluent Kafka Connect](/confluent-kafka-connect.md#docker)
 - [Confluent Schema Registry](/confluent-schema-registry.md#docker)
 - [Confluent KSQL Server](/confluent-ksql-server.md#docker)

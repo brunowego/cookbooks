@@ -11,6 +11,8 @@ https://github.com/hivenetes/bots
 https://github.com/francis-jjk/microservices-demo
 -->
 
+**Keywords:** Full-featured Development Environment
+
 ## Links
 
 - [Code Repository](https://github.com/tilt-dev/tilt)

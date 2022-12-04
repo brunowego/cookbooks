@@ -19,7 +19,7 @@ ${{ if not(startsWith(variables['Build.SourceBranch'], 'refs/pull/'))  }}:
 
 ### Dependencies
 
-- [Azure DevOps Configuration](/azure/services/azure-devops/README.md#configuration)
+- [Azure DevOps Configuration](/azure/services/devops/README.md#configuration)
 
 ### Commands
 

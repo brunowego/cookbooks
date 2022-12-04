@@ -113,6 +113,12 @@ pkill helm
 
 ### Tips
 
+#### Remove All Repos
+
+```sh
+helm repo list | tail -n +2 | awk '{ print $1 }' | xargs helm repo remove
+```
+
 #### Force Redeploy
 
 ```sh

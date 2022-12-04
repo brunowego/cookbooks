@@ -98,7 +98,7 @@ code --install-extension esbenp.prettier-vscode
 jq '."recommendations" += ["esbenp.prettier-vscode"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
-**Settings:**
+**Configuration:**
 
 ```sh
 #

@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=fMiX5dZ9v4w
 
 ## Related
 
-- [AWS Elastic Container Service (ECS)](/aws/services/aws-ecs.md)
+- [AWS Elastic Container Service (ECS)](/aws/services/ecs.md)
 
 ## Console
 
@@ -31,7 +31,7 @@ https://www.youtube.com/watch?v=fMiX5dZ9v4w
 
 ## CLI
 
-Use [AWS Copilot CLI](/aws/services/aws-copilot-cli.md).
+Use [AWS Copilot CLI](/aws/services/copilot-cli.md).
 
 ## Solution
 

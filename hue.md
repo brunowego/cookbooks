@@ -2,7 +2,7 @@
 
 ## Alternatives
 
-- [Apache Zeppelin](/apache/apache-zeppelin.md)
+- [Apache Zeppelin](/apache/zeppelin.md)
 
 ## Helm
 

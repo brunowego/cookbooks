@@ -15,5 +15,5 @@
 - [Soda PDF / Sign PDF](https://sodapdf.com/sign-pdf/)
 
 <!--
-- [Adobe Sign](/adobe/adobe-dign.md)
+- [Adobe Sign](/adobe/dign.md)
 -->

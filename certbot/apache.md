@@ -2,7 +2,7 @@
 
 ## Related
 
-- [Apache HTTP Server (HTTPd)](/apache/apache-httpd.md)
+- [Apache HTTP Server (HTTPd)](/apache/httpd.md)
 
 ## Dependencies
 

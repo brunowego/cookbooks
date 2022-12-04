@@ -288,7 +288,7 @@ helm search repo -l bitnami/postgresql
 #
 helm install postgresql bitnami/postgresql \
   --namespace psql-system \
-  --version 12.1.2 \
+  --version 12.1.3 \
   -f <(cat << EOF
 auth:
   postgresPassword: postgres

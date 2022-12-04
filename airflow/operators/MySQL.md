@@ -41,7 +41,7 @@ with DAG('mysql_operator_testing',
 
 ## Issues
 
-#### Disable SSL Mode
+### Disable SSL Mode
 
 ```log
 MySQLdb._exceptions.OperationalError: (2026, 'SSL connection error: error:1425F102:SSL routines:ssl_choose_client_version:unsupported protocol')

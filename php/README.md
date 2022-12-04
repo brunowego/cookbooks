@@ -37,7 +37,7 @@ https://daniellockyer.com/php-flame-graphs/
 #### Homebrew
 
 ```sh
-brew install php
+brew install php # 8.x
 # brew install php@7.4
 ```
 

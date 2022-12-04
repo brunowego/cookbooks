@@ -2,5 +2,5 @@
 
 ## Solutions
 
-- [Apache Subversion (SVN)](/apache/apache-subversion.md)
+- [Apache Subversion (SVN)](/apache/subversion.md)
 - [Git](/git/README.md)

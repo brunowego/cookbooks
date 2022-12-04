@@ -20,7 +20,7 @@ https://github.com/planetscale/beam
 
 ### Dependencies
 
-- [MySQL Client](/mysql/mysql-client.md#cli)
+- [MySQL Client](/mysql/client.md#cli)
 
 ### Installation
 

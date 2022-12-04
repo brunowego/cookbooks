@@ -58,5 +58,29 @@ kbenv list local
 kbenv use <version>
 
 #
+kubectl version --short
+
+#
 kbenv uninstall <version>
+```
+
+### Tips
+
+#### Autocomplete
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# kbenv
+source <(kbenv completion zsh) # bash
+```
+
+```sh
+source ~/.zshrc
+```
+
+#### Force Usage of kbenv
+
+```sh
+brew link --overwrite kbenv
 ```

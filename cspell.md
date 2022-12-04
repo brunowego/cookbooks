@@ -112,7 +112,11 @@ code --install-extension streetsidesoftware.code-spell-checker
 
 #
 code --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
+```
 
+**Configuration:**
+
+```sh
 #
 jq '."recommendations" += ["streetsidesoftware.code-spell-checker"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
 ```

@@ -1,8 +1,15 @@
 # Dev Container
 
+**Keywords:** Full-featured Development Environment
+
 ## Links
 
-- [Main Website](https://containers.dev/)
+- [Org. Repositories](https://github.com/devcontainers)
+- [Main Website](https://containers.dev)
+
+## Related
+
+- [GitHub Codespaces](/github/github-codespaces.md)
 
 ## CLI
 
@@ -22,4 +29,34 @@ npm install -g @devcontainers/cli
 
 ```sh
 devcontainer -h
+```
+
+### Usage
+
+```sh
+#
+devcontainer build --workspace-folder ./
+
+#
+devcontainer up --workspace-folder ./
+```
+
+<!--
+#
+devcontainer features
+
+#
+devcontainer exec --workspace-folder ./
+-->
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension ms-vscode-remote.remote-containers
+
+#
+jq '."recommendations" += ["ms-vscode-remote.remote-containers"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

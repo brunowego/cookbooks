@@ -6,8 +6,8 @@
 
 ## References
 
-- [OpenSSH Client](/openssh-client.md)
-- [OpenSSH Server](/openssh-server.md)
+- [OpenSSH Client](/openssh/openssh-client.md)
+- [OpenSSH Server](/openssh/openssh-server.md)
 
 ## CLI
 

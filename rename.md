@@ -1,5 +1,9 @@
 # rename
 
+## Links
+
+- [Main Website](http://plasmasturm.org/code/rename/)
+
 ## References
 
 - [GNU sed](/gnu-sed#examples)
@@ -20,56 +24,46 @@ brew install rename
 rename
 ```
 
-### Tips
-
-#### Slugify
+### Usage
 
 ```sh
+# Slugify
 rename \
   --dry-run \
   -fvc \
   --nows \
   *
-```
 
-#### Replace (regex)
-
-```sh
-#
+# Replace (regex)
 rename \
   --dry-run \
   -v \
-  's/[from]/[to]/' \
+  's/<from>/<to>/' \
   *
 
-#
-find . \
+find ./ \
   -type f \
   -exec rename \
     --dry-run \
     -v \
-    's/[from]/[to]/' \
+    's/<from>/<to>/' \
     {} +
-```
 
-#### Replace Extension
-
-```sh
-# Option 1
-find . \
-  -name '*.[extension]' \
+# Replace Extension: Option 1
+find ./ \
+  -name '*.<extension>' \
   -print0 | \
     xargs -0 rename \
       --dry-run \
       -v \
-      's/.[from-ext]$/.[to-ext]/'
+      's/.<from-ext>$/.<to-ext>/'
 
-# Option 2
-find . \
-  -iname '*.[extension]' \
+# Replace Extension: Option 2
+find ./ \
+  -iname '*.<extension>' \
   -exec realpath {} \; | \
     rename \
       --dry-run \
       -v \
-      's/.[from-ext]$/.[to-ext]/'
+      's/.<from-ext>$/.<to-ext>/'
 ```

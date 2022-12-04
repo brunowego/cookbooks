@@ -17,7 +17,7 @@ DST Root CA X3 root
 
 ## Dependencies
 
-- [Android SDK Platform-Tools](/android/android-platform-tools.md)
+- [Android SDK Platform-Tools](/android/platform-tools.md)
 - [Frida](/frida.md)
 - [NoxPlayer](/noxplayer.md)
 - [Burp Suite Community Edition (CE)](/burp-suite-ce.md)

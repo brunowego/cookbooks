@@ -43,6 +43,8 @@ code --install-extension HookyQR.beautify
 jq '."recommendations" += ["HookyQR.beautify"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
+**Configuration:**
+
 ```sh
 jq '."[javascript]"."editor.defaultFormatter" |= "HookyQR.beautify"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```

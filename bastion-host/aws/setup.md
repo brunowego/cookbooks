@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-- [Bootstrap VPC](/aws/services/aws-vpc.md#bootstrap-vpc)
+- [Bootstrap VPC](/aws/services/vpc.md#bootstrap-vpc)
 
 ## Bootstrap
 

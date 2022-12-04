@@ -12,5 +12,11 @@ code --install-extension zhuangtongfa.Material-theme
 
 #
 jq '."recommendations" += ["zhuangtongfa.Material-theme"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+```
+
+**Configuration:**
+
+```sh
+#
 jq '."workbench.colorTheme" |= "One Dark Pro"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```

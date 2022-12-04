@@ -4,7 +4,7 @@
 
 - [Fathom](/fathom.md)
 - [GoAccess](/goaccess.md)
-- [Google Analytics](/google/google-analytics.md)
+- [Google Analytics](/google/analytics.md)
 - [Matomo](/matomo/README.md)
 - [Mixpanel](/mixpanel.md)
 - [Plausible Analytics](https://github.com/plausible/analytics)

@@ -1,20 +1,5 @@
 # fastlane
 
-<!--
-https://github.com/icyleaf/icyleaf.com/blob/master/content/posts/2016-07-11-intro-fastlane-automation-for-ios-and-android.md
-
-https://github.com/ittybittyapps/appstoreconnect-cli
--->
-
-<!--
-https://github.com/search?o=desc&q=filename%3AFastfile+%22ruby%22&s=indexed&type=Code
-
-https://github.com/rakutentech/ios-buildconfig/blob/master/fastlane/Fastfile
-https://github.com/DHBW-VS/app
-https://github.com/joreilly/GalwayBus
-https://github.com/Automattic/pocket-casts-ios/
--->
-
 ![fastlane](/assets/images/fastlane/fastlane.png)
 
 ## Links

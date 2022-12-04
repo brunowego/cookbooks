@@ -24,6 +24,8 @@ code --install-extension kiteco.kite
 jq '."recommendations" += ["kiteco.kite"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
+**Configuration:**
+
 ```sh
 jq '."kite.showWelcomeNotificationOnStartup" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```

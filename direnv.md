@@ -1,13 +1,10 @@
 # direnv
 
-<!--
-https://github.com/rubymaniac/vscode-direnv
--->
-
-**Keywords:** dotENV
+**Keywords:** Auto-load Environment Variables
 
 ## Links
 
+- [Code Repository](https://github.com/direnv/direnv)
 - [Main Website](https://direnv.net)
 
 ## CLI
@@ -42,45 +39,82 @@ direnv help
 
 ### Environment
 
-For Bash or Zsh, put something like this in your shell:
-
-Bash: `$HOME/.bashrc`
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
 # direnv
-eval "$(direnv hook bash)"
+eval "$(direnv hook zsh)" # bash
 ```
 
-ZSH: `$HOME/.zshrc`
-
 ```sh
-# direnv
-eval "$(direnv hook zsh)"
+source ~/.zshrc
 ```
 
 ### Configuration
 
 ```sh
+#
+cat << EOF > ./.envrc
+
+EOF
+
+#
 echo '/.envrc' >> ~/.gitignore_global
 ```
+
+<!--
+#
+ls -la ~/.config/direnv
+-->
 
 ### Usage
 
 ```sh
 #
-touch ./.envrc
-
-#
 direnv status
 
 #
 direnv allow ./
+direnv permit ./
+direnv grant ./
+
+#
+direnv block ./
+direnv deny ./
+direnv revoke ./
+
+#
+direnv edit
+
+#
+direnv prune
 
 #
 direnv reload
 ```
 
+<!--
+direnv fetchurl
+-->
+
 ### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension Rubymaniac.vscode-direnv
+
+#
+jq '."recommendations" += ["Rubymaniac.vscode-direnv"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+```
+
+**Configuration:**
+
+```sh
+#
+jq '."files.associations".".envrc" |= "dotenv"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+```
 
 #### Autocomplete
 

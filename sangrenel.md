@@ -19,7 +19,7 @@ https://blog.clairvoyantsoft.com/benchmarking-kafka-e7b7c289257d
 
 ### Dependencies
 
-- [Apache Kafka](/apache/apache-kafka.md)
+- [Apache Kafka](/apache/kafka.md)
 
 ### Installation
 

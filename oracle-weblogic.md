@@ -60,7 +60,7 @@ rm -fR ./properties
 
 #### 12.1.x
 
-- [Apache Ant](/apache/apache-ant.md)
+- [Apache Ant](/apache/ant.md)
 - Java SE 7
 
 ### Installation
@@ -239,7 +239,7 @@ pkill java
 
 1. Serviços
 2. Origens de Dados
-2. Novo -> Origem de Dados Genérica
+3. Novo -> Origem de Dados Genérica
    - Nome: jdbc/\[app-name]
    - Nome da JNDI: jdbc/\[app-name]
    - Tipo de Banco de Dados: MySQL

@@ -12,8 +12,9 @@ kubectl explain pods
 - [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 - [Managing Secret using kubectl](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/)
 
-## Extend
+## Tools
 
+- [kbenv](/kbenv.md)
 - [Krew](/krew.md)
 
 ## CLI

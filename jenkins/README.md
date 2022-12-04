@@ -373,11 +373,7 @@ docker volume rm jenkins-data
 
 ### Dependencies
 
-#### Homebrew
-
-```sh
-brew install --cask homebrew/cask-versions/adoptopenjdk8
-```
+- [OpenJDK](/openjdk/README.md)
 
 ### Installation
 
@@ -387,7 +383,7 @@ brew install --cask homebrew/cask-versions/adoptopenjdk8
 brew install jenkins
 ```
 
-#### WAR
+<!-- #### WAR
 
 ```sh
 #
@@ -396,7 +392,11 @@ wget 'https://get.jenkins.io/war-stable/latest/jenkins.war'
 #
 java -jar ./jenkins.war \
   --httpPort=9090
-```
+``` -->
+
+<!--
+java -jar Jenkins.war
+-->
 
 #### YUM
 
@@ -412,18 +412,27 @@ jenkins --help
 jenkins-cli help
 ```
 
-<!--
-java -jar Jenkins.war
--->
-
 ### Service
 
 ```sh
+# Homebrew
+brew services start jenkins
+
 # Systemd
 sudo systemctl enable --now jenkins
 ```
 
 ### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension ivory-lab.jenkinsfile-support
+
+#
+jq '."recommendations" += ["ivory-lab.jenkinsfile-support"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
 
 #### EditorConfig
 
@@ -433,14 +442,6 @@ cat << EOF >> ./.editorconfig
 [Jenkinsfile]
 indent_size = 4
 EOF
-```
-
-#### Visual Studio Code
-
-```sh
-code \
-  --install-extension alefragnani.jenkins-status \
-  --install-extension ivory-lab.jenkinsfile-support
 ```
 
 ## Docs

@@ -4,7 +4,7 @@
 
 ### Dependencies
 
-- [MySQL Client](/mysql/mysql-client.md)
+- [MySQL Client](/mysql/client.md)
 
 ### Commands
 

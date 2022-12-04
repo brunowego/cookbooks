@@ -102,13 +102,13 @@ Enterprise Information Systems Tier
 
 ### Build Automation Tool
 
-- [Apache Ant](/apache/apache-ant.md)
-- [Apache Maven](/apache/apache-maven.md)
+- [Apache Ant](/apache/ant.md)
+- [Apache Maven](/apache/maven.md)
 - [Gradle](/gradle.md)
 
 ### HTTP Webserver
 
-- [Apache Tomcat](/apache/apache-tomcat.md)
+- [Apache Tomcat](/apache/tomcat.md)
 - [Eclipse Jetty](/eclipse/eclipse-jetty.md)
 - [GlassFish](/glassfish.md)
 - [IBM WebSphere](/ibm_websphere.md)

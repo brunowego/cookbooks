@@ -8,20 +8,20 @@ https://linkedin.com/learning/paths/improve-your-infrastructure-automation-with-
 
 ### Infrastructure
 
-- [Terraform](/hashicorp/hashicorp-terraform.md)
-- [Packer](/hashicorp/hashicorp-packer.md)
+- [Terraform](/hashicorp/terraform.md)
+- [Packer](/hashicorp/packer.md)
 - [Vagrant](/vagrant/README.md)
 
 ### Security
 
-- [Vault](/hashicorp/hashicorp-vault.md)
-- [Boundary](/hashicorp/hashicorp-boundary.md)
+- [Vault](/hashicorp/vault.md)
+- [Boundary](/hashicorp/boundary.md)
 
 ### Networking
 
-- [Consul](/hashicorp/hashicorp-consul.md)
+- [Consul](/hashicorp/consul.md)
 
 ### Applications
 
-- [Nomad](/hashicorp/hashicorp-nomad.md)
-- [Waypoint](/hashicorp/hashicorp-waypoint.md)
+- [Nomad](/hashicorp/nomad.md)
+- [Waypoint](/hashicorp/waypoint.md)

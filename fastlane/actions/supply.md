@@ -1,5 +1,9 @@
 # supply
 
+<!--
+https://github.com/ionic-zone/ionic.zone/blob/master/_articles/fastlane/initialize-fastlane-for-your-cordova-ios-and-android-apps.md
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/fastlane/fastlane/tree/master/supply)

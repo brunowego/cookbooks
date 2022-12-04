@@ -24,6 +24,36 @@ TODO NEXT
 
 **WIP:** Currently not working as expected.
 
+### Dependencies
+
+- [PostgreSQL Client](/postgresql/postgresql-client.md#cli)
+- [PostgreSQL Server](/postgresql/postgresql-server.md#helm)
+
+```sh
+#
+kubectl port-forward \
+  --address 0.0.0.0 \
+  -n psql-system \
+  svc/postgresql \
+  5432:5432
+
+#
+PGPASSWORD='postgres' psql -h 127.0.0.1 -U postgres <<-EOSQL
+CREATE USER backstage WITH PASSWORD 'backstage';
+CREATE DATABASE backstage_plugin_catalog WITH OWNER backstage;
+GRANT ALL PRIVILEGES ON DATABASE backstage_plugin_catalog TO backstage;
+CREATE DATABASE backstage_plugin_auth WITH OWNER backstage;
+GRANT ALL PRIVILEGES ON DATABASE backstage_plugin_auth TO backstage;
+EOSQL
+
+#
+PGPASSWORD='backstage' psql \
+  -h 127.0.0.1 \
+  -U backstage \
+  -d 'backstage_plugin_catalog' \
+  -c 'SELECT version()'
+```
+
 ### References
 
 - [Values](https://github.com/deliveryhero/helm-charts/tree/master/stable/backstage#values)
@@ -40,6 +70,7 @@ helm repo update
 ```sh
 #
 kubectl create ns backstage-system
+# kubectl create ns catalog
 
 #
 helm search repo -l deliveryhero/backstage
@@ -49,16 +80,10 @@ export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-helm install backstage deliveryhero/backstage \
+helm install backstage . \
   --namespace backstage-system \
   --version 0.1.12 \
   -f <(cat << EOF
-ingress:
-  ingressClassName: nginx
-
-database:
-  create: true
-
 appConfig:
   app:
     baseUrl: http://backstage.${DOMAIN}
@@ -67,6 +92,14 @@ appConfig:
     baseUrl: http://backstage.${DOMAIN}
     cors:
       origin: http://backstage.${DOMAIN}
+    database:
+      client: pg
+      connection:
+        database: backstage_plugin_catalog
+        host: postgresql.psql-system.svc.cluster.local
+        user: backstage
+        port: 5432
+        password: backstage
   lighthouse:
     baseUrl: http://backstage.${DOMAIN}/lighthouse-api
   techdocs:
@@ -78,14 +111,6 @@ EOF
 #
 kubectl get all -n backstage-system
 ```
-
-<!--
-kubectl port-forward \
-  --address 0.0.0.0 \
-  -n backstage-system \
-  svc/backstage-backend \
-  8080:80
--->
 
 ### Status
 
@@ -103,20 +128,14 @@ kubectl logs \
   -f
 ```
 
-<!-- ### Issues -->
+### Secret
 
-<!-- ####
-
-```log
-Error: INSTALLATION FAILED: unable to build kubernetes objects from release manifest: [resource mapping not found for name: "backstage-ingress" namespace: "" from "": no matches for kind "Ingress" in version "networking.k8s.io/v1beta1"
-ensure CRDs are installed first, resource mapping not found for name: "backstage-ingress-lighthouse" namespace: "" from "": no matches for kind "Ingress" in version "networking.k8s.io/v1beta1"
-ensure CRDs are installed first]
+```sh
+kubectl get secret backstage-backend \
+  -o jsonpath='{.data.admin-password}' \
+  -n backstage-system | \
+    base64 -d; echo
 ```
-
-{{- if .Values.ingress.ingressClassName }}
-ingressClassName: {{ .Values.ingress.ingressClassName }}
-{{- end }}
--->
 
 ### Delete
 

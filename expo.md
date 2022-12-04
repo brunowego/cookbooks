@@ -16,6 +16,7 @@ https://github.com/ArcadeCity/arcade/tree/main/apps/expo
 
 ### Links
 
+- [Code Repository](https://github.com/expo/expo-cli)
 - [Docs](https://docs.expo.dev/workflow/expo-cli/)
 
 ### Installation

@@ -36,8 +36,8 @@ https://github.com/fikretsengul/flutter_advanced_boilerplate
 
 - [CocoaPods](/cocoapods.md)
 - Android SDK
-  - [CLI](/android/android-sdk/README.md#cli)
-  - [Create Device](/android/android-sdk/README.md#create-device)
+  - [CLI](/android/sdk/README.md#cli)
+  - [Create Device](/android/sdk/README.md#create-device)
 
 ### Installation
 

@@ -3,11 +3,11 @@
 ## Cloud Computing
 
 - AWS
-  - [Elastic Kubernetes Service (EKS)](/aws/services/aws-eks.md) (AWS Fargate)
+  - [Elastic Kubernetes Service (EKS)](/aws/services/eks.md) (AWS Fargate)
 - Azure
-  - [Kubernetes Service (AKS)](/azure/services/azure-aks.md)
+  - [Kubernetes Service (AKS)](/azure/services/aks.md)
 - Google
-  - [Google Kubernetes Engine (GKE)](/google-cloud/services/google-cloud-gke.md)
+  - [Google Kubernetes Engine (GKE)](/google-cloud/services/gke.md)
 
 ## Multicloud
 
@@ -16,7 +16,7 @@
 
 ## Enterprise
 
-- [Nomad](/hashicorp/hashicorp-nomad.md)
+- [Nomad](/hashicorp/nomad.md)
 - [OpenShift](/openshift.md)
 
 ## Locally

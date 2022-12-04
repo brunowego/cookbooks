@@ -69,6 +69,13 @@ docker system df -v
 
 ## Tips
 
+### SSH from Running Container
+
+```sh
+# macOS
+ssh <username>@docker.for.mac.localhost
+```
+
 ### Command-line completion
 
 ```sh

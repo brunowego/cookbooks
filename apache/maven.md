@@ -16,7 +16,7 @@ https://app.pluralsight.com/library/courses/allthetalks-session-66/table-of-cont
 ## References
 
 - [Project Object Model (POM)](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
-- Alternative for [Apache Ant](/apache/apache-ant.md)
+- Alternative for [Apache Ant](/apache/ant.md)
 
 ## Tools
 

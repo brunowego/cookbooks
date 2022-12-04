@@ -62,3 +62,11 @@ code --install-extension circleci.circleci
 #
 jq '."recommendations" += ["circleci.circleci"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
+
+### Uninstall
+
+#### Homebrew
+
+```sh
+brew uninstall circleci
+```

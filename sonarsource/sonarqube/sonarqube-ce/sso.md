@@ -10,7 +10,7 @@ https://blog.sonarsource.com/sonarqube-ldap-sso/
 
 #### Dependencies
 
-- [Azure DevOps SonarQube Extension](/azure/services/azure-devops/extensions/sonarqube.md)
+- [Azure DevOps SonarQube Extension](/azure/services/devops/extensions/sonarqube.md)
 
 #### Docs
 

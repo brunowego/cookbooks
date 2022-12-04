@@ -8,7 +8,7 @@
 
 ### Dependencies
 
-- [Azure DevOps Configuration](/azure/services/azure-devops.md#configuration)
+- [Azure DevOps Configuration](/azure/services/devops.md#configuration)
 
 ### Commands
 

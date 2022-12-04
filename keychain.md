@@ -13,6 +13,12 @@ security help
 ```sh
 # Dump
 sudo security dump-keychain /System/Library/Keychains/SystemRootCertificates.keychain
+
+# Unlock Keychain
+security \
+  -v unlock-keychain \
+  -p '<password>' \
+  ~/Library/Keychains/login.keychain-db
 ```
 
 ### Tips
@@ -23,22 +29,22 @@ sudo security dump-keychain /System/Library/Keychains/SystemRootCertificates.key
 
 ```sh
 # Test
-curl -v https://[hostname]
+curl -v https://<hostname>
 
 curl \
   --cacert ./selfsigned_certificate.pem \
   -v \
-  https://[hostname]
+  https://<hostname>
 
 # Or
 wget \
   -O - \
-  https://[hostname]
+  https://<hostname>
 
 wget \
   -O - \
   --ca-certificate=./selfsigned_certificate.pem \
-  https://[hostname]
+  https://<hostname>
 
 # Add
 sudo security add-trusted-cert -d \
@@ -47,7 +53,7 @@ sudo security add-trusted-cert -d \
   ./selfsigned_certificate.pem
 
 # Test
-curl https://[hostname]
+curl https://<hostname>
 
 # NOTE: trustAsRoot
 
@@ -57,7 +63,7 @@ openssl x509 \
   -noout \
   -subject
 
-sudo security delete-certificate -c '[hostname]'
+sudo security delete-certificate -c '<hostname>'
 ```
 
 ## Issues

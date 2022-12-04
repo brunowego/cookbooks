@@ -9,5 +9,5 @@
 
 ## Related
 
-- [Google Search / Search Operators](/google/google-search.md#search-operators)
+- [Google Search / Search Operators](/google/search.md#search-operators)
 - [Exploit Database - Google Hacking Database](https://exploit-db.com/google-hacking-database)

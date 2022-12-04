@@ -8,7 +8,7 @@
 
 ### Dependencies
 
-- [Apache Kafka](/apache/apache-kafka.md#helm)
+- [Apache Kafka](/apache/kafka.md#helm)
 
 ### Install
 
@@ -31,7 +31,7 @@ helm uninstall kafka-manager -n kafka-manager
 
 ### Dependencies
 
-- [Apache Kafka](/apache/apache-kafka.md#docker)
+- [Apache Kafka](/apache/kafka.md#docker)
 
 ### Running
 

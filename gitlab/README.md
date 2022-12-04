@@ -7,13 +7,13 @@ https://gitlab-learn.leapest.com/hw/app/courseware/208fa611-4cd5-4115-bb54-4f545
 https://docs.gitlab.com/ee/user/application_security/sast/
 -->
 
-**Keywords:** Self-Hosted Git Service
+**Keywords:** Self-Hosted Git Service, ALM
 
 ## Tools
 
-- [GitLab Community Edition (CE)](/gitlab/gitlab-ce.md)
-- [GitLab Continuous Integration (CI)](/gitlab/gitlab-ci.md)
-- [GitLab Runner](/gitlab/gitlab-runner.md)
+- [GitLab Community Edition (CE)](/gitlab/ce.md)
+- [GitLab Continuous Integration (CI)](/gitlab/ci.md)
+- [GitLab Runner](/gitlab/runner.md)
 
 <!--
 <a href="https://gitlab.com/yo/devparty/-/commits/main">

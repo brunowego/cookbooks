@@ -54,6 +54,13 @@ sudo su - "$USER"
 rbenv -h
 ```
 
+### Configuration
+
+```sh
+# Set project ruby version
+echo 'ruby-2.6.5' > ./.ruby-version
+```
+
 ### Usage
 
 ```sh
@@ -61,6 +68,7 @@ rbenv -h
 rbenv install -l
 
 # Install
+rbenv install # if have .ruby-version file
 rbenv install <version>
 
 # Versions

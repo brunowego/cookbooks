@@ -169,7 +169,11 @@ code --install-extension bradlc.vscode-tailwindcss
 
 #
 jq '."recommendations" += ["bradlc.vscode-tailwindcss"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
 
+**Configuration:**
+
+```sh
 #
 jq '."files.associations"."*.css" |= "tailwindcss"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```

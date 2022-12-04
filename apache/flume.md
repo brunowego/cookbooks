@@ -29,8 +29,8 @@ sudo sed -i 's/-Xms100m -Xmx2000m/-Xms1g -Xmx2g/g' /opt/apache-flume/conf/flume-
 
 ### Dependencies
 
-- [Apache Kafka](/apache/apache-kafka.md#docker)
-- [Apache Hadoop](/apache/apache-hadoop.md#docker)
+- [Apache Kafka](/apache/kafka.md#docker)
+- [Apache Hadoop](/apache/hadoop.md#docker)
 
 ### Network
 

@@ -12,7 +12,7 @@ https://linkedin.com/learning/aws-infrastructure-as-code-for-software-developers
 
 ## Tools
 
-- [AWS CloudFormation](/aws/services/aws-cloudformation.md)
+- [AWS CloudFormation](/aws/services/cloudformation.md)
 - [Azure Resource Manager](/azure/README.md)
 - [Crossplane](/crossplane.md)
 - [Google Cloud Deployment Manager](/google-cloud/README.md)

@@ -44,9 +44,7 @@ EOF
 
 ```sh
 jq '."files.associations"."*.pylintrc" |= "ini"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
-```
 
-```sh
 jq '."python.linting.pylintEnabled" |= true' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 

@@ -35,7 +35,7 @@ docker exec -i quarkus-postgresql psql \
   -c 'CREATE EXTENSION IF NOT EXISTS "uuid-ossp"'
 ```
 
-##
+## Configuration
 
 ```sh
 #

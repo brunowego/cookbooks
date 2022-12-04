@@ -102,9 +102,14 @@ module.exports = prettierConfig
 code --install-extension Prisma.prisma
 
 #
-jq '."[prisma]"."editor.defaultFormatter" |= "Prisma.prisma"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
-
 jq '."recommendations" += ["prisma.prisma"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
+
+**Configuration:**
+
+```sh
+#
+jq '."[prisma]"."editor.defaultFormatter" |= "Prisma.prisma"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
 ### Issues

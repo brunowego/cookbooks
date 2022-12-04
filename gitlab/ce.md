@@ -255,7 +255,7 @@ EOF
   -p 4443:443 \
   --name gitlab-ce \
   --network workbench \
-  docker.io/gitlab/gitlab-ce:13.4.4-ce.0
+  docker.io/gitlab/ce:13.4.4-ce.0
 ```
 
 > Wait! This process take a while.
@@ -269,8 +269,8 @@ sudo hostess add registry.example.com 127.0.0.1
 echo -e '[INFO]\thttp://gitlab.example.com:8080'
 ```
 
-| Login | Password |
-| --- | --- |
+| Login  | Password    |
+| ------ | ----------- |
 | `root` | `Pa$$w0rd!` |
 
 ### Remove
@@ -328,7 +328,7 @@ curl -i "PRIVATE-TOKEN: ${GITLAB_PRIVATE_TOKEN}" "https://${{GITLAB_URL}}/api/v4
 2. Your groups
 3. Select group
 4. Members
-   - Add new member to *group*
+   - Add new member to _group_
      - User: Bot
      - Access Level: Developer
      - Add to group

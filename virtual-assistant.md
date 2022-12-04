@@ -15,5 +15,5 @@
 
 - [Amazon Alexa](/amazon/amazon-alexa.md)
 - [Apple Siri](/apple/siri.md)
-- [Google Assistant](/google/google-assistant.md)
+- [Google Assistant](/google/assistant.md)
 - [Microsoft Cortana](/microsoft/cortana.md)

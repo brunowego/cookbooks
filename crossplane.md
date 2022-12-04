@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=Dw0SMLHZvXM
 ## Alternatives
 
 - [Pulumi](/pulumi.md)
-- [Terraform](/hashicorp/hashicorp-terraform.md)
+- [Terraform](/hashicorp/terraform.md)
 
 ## Guides
 
@@ -87,5 +87,3 @@ kubectl crossplane install provider crossplane/provider-azure
 ```sh
 kubectl crossplane install provider crossplane/provider-gcp
 ```
-
-

@@ -10,5 +10,5 @@ https://github.com/marcindawidziuk/Scrum-Poker-Android
 
 ## Tools
 
-- [Android Studio](/android/android-studio.md)
-- [Android SDK](/android/android-sdk/README.md)
+- [Android Studio](/android/studio.md)
+- [Android SDK](/android/sdk/README.md)

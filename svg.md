@@ -7,7 +7,7 @@
 
 ## Tips
 
-#### Visual Studio Code
+### Visual Studio Code
 
 ```sh
 #
@@ -28,6 +28,6 @@ jq '."recommendations" += ["SimonSiefke.svg-preview"]' "$PWD"/.vscode/extensions
   width="16"
   class="icon icon-arrow-down-icon"
 >
-    <use xlink:href="#arrow-down-icon"></use>
+  <use xlink:href="#arrow-down-icon"></use>
 </svg>
 ```

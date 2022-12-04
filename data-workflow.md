@@ -6,8 +6,8 @@
 
 ## Tools
 
-- [Apache Airflow](/apache/apache-airflow.md)
-- [Apache NiFi](/apache/apache-nifi.md)
+- [Apache Airflow](/apache/airflow.md)
+- [Apache NiFi](/apache/nifi.md)
 - [Dagster](/dagster.md)
 - [Prefect](/prefect.md)
 

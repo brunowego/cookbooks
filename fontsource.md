@@ -6,7 +6,7 @@ https://github.com/chrsep/grayson/blob/main/src/pages/_app.tsx
 
 ## Alternative
 
-- [Google Fonts](/google/google-fonts.md)
+- [Google Fonts](/google/fonts.md)
 
 ## Links
 

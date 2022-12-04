@@ -1,5 +1,9 @@
 # gym
 
+<!--
+build_app
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/fastlane/fastlane/tree/master/gym)

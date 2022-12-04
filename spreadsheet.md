@@ -2,7 +2,7 @@
 
 ## Softwares
 
-- [Google Sheets](/google/google-sheets.md)
+- [Google Sheets](/google/sheets.md)
 - [Microsoft Excel](/microsoft/excel.md)
 
 ## Tools
