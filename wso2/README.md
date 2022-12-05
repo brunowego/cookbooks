@@ -4,4 +4,4 @@
 
 ## Links
 
-- [Identity Server](https://wso2.com/identity-and-access-management/)
+- [Identity Server](https://wso2.com/identity-server/)

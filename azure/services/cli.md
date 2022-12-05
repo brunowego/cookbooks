@@ -45,14 +45,29 @@ cat ~/.azure/config
 
 ### Usage
 
+**Notes:** Get [Directory ID](https://portal.azure.com/#settings/directory)
+
 ```sh
 #
 az login
-# or
-az login --allow-no-subscriptions
-# or
-az login --tenant <id>
+
+# Set Directory ID
+az login \
+  --allow-no-subscriptions \
+  --tenant '<directory-id>'
 ```
+
+### Issues
+
+#### Missing Subscription
+
+```log
+(SubscriptionNotFound) The subscription '<UUID>' could not be found.
+Code: SubscriptionNotFound
+Message: The subscription '<UUID>' could not be found.
+```
+
+Make sure you have the [Azure Account](./account.md#usage) set up.
 
 ### Uninstall
 

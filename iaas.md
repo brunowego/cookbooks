@@ -7,6 +7,6 @@
 
 ##
 
-- [Google Cloud Platform (GCP)](/google-cloud/README.md)
+- [Google Cloud Platform (GCP)](/gcp/README.md)
 - [Amazon Web Services (AWS)](/aws/README.md)
 - [Azure](/azure/README.md)

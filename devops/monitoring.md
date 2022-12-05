@@ -15,7 +15,7 @@
 ### Cloud
 
 - [Amazon CloudWatch](/aws/services/cloudwatch.md)
-- [Google Operations (StackDriver)](/google-cloud/services/operations.md)
+- [Google Operations (StackDriver)](/gcp/services/operations.md)
 - [Microsoft Azure Monitor](/azure/services/monitor.md)
 
 ### Enterprise

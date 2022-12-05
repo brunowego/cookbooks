@@ -18,7 +18,7 @@
 - Gloud
   - [AWS Web Application Firewall](/aws/services/waf.md)
   - [Azure Web Application Firewall](/azure/services/firewall.md)
-  - [Google Cloud Armor Network Security](/google-cloud/services/armor.md)
+  - [Google Cloud Armor Network Security](/gcp/services/armor.md)
 - Multicloud
   - [Cloudflare Application Security](https://cloudflare.com/application-security/)
   - [ModSecurity](/modsecurity.md)

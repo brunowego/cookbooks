@@ -52,5 +52,9 @@ Single sign-on (SSO) is an authentication scheme that allows a user to log in wi
 - [Keycloak](/keycloak/README.md)
 - [Microsoft Active Directory Federation Services (ADFS)](/azure/services/adfs.md)
 - [Microsoft Azure Active Directory (AD)](/azure/services/ad.md)
-- [Okta](https://okta.com)
+- [Okta](/okta.md)
 - [Ory Hydra](/ory/hydra.md)
+
+<!--
+https://strongdm.com
+-->

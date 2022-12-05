@@ -22,17 +22,19 @@ az account -h
 
 ```sh
 #
-az account list-locations
+az account list --output table
 
 #
-az account list
-
-#
-az account set -s <subscription>
-
-#
+az account set -s '<subscription>'
 az account show
 
+#
+az account list-locations --output table
+```
+
+#### Tenants (Directory)
+
+```sh
 #
 az account tenant list
 ```
@@ -41,20 +43,24 @@ az account tenant list
 
 ```sh
 #
-az account subscription cancel
+az account subscription list | jq -r '.[] | "Name: " + .displayName + ", ID: " + .subscriptionId'
 
 #
-az account subscription enable
+az account subscription list-location \
+  --output table \
+  --id '<id>'
 
 #
-az account subscription list
+az account subscription enable --id '<id>'
 
 #
-az account subscription list-location
+az account subscription show --id '<id>'
+```
 
+<!--
 #
 az account subscription rename
 
 #
-az account subscription show
-```
+az account subscription cancel
+-->

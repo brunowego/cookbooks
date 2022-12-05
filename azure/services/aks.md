@@ -132,16 +132,6 @@ az aks nodepool upgrade \
 
 ### Issues
 
-#### Missing Subscription
-
-```log
-(SubscriptionNotFound) The subscription '<UUID>' could not be found.
-Code: SubscriptionNotFound
-Message: The subscription '<UUID>' could not be found.
-```
-
-TODO
-
 #### Missing Clusters
 
 ```log

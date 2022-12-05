@@ -23,7 +23,7 @@ https://github.com/cert-manager/cert-manager/issues/921
 - [Amazon Web Services (AWS)](/aws/README.md)
 - [Azure](/azure/README.md)
 - [Cloudflare](/cloudflare.md)
-- [Google Cloud Platform (GCP)](/google-cloud/README.md)
+- [Google Cloud Platform (GCP)](/gcp/README.md)
 - [Let's Encrypt](/letsencrypt.md)
 
 ## CLI

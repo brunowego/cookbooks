@@ -51,6 +51,7 @@ Pró-Labore
 - Letter Of Intent (LOI)
 - Monthly Recurring Revenue (MRR)
 - Operating Expenses (OpEx) / Capital Expenditure (CapEx)
+- Paid/Personal Time Off (PTO)
 - Stock Keeping Unit (SKU)
 - Training and Development (T&D)
 

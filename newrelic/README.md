@@ -139,8 +139,8 @@ newrelic apm -h
 ```sh
 #
 newrelic profiles add \
-  --profile '[name]' \
-  --apiKey '[api-key]' \
+  --profile '<name>' \
+  --apiKey '<api-key>' \
   -r 'us'
 
 #
@@ -148,12 +148,12 @@ newrelic profiles list
 
 #
 newrelic profiles default \
-  --profile '[name]'
+  --profile '<name>'
 ```
 
 <!--
 newrelic profile configure \
-  --profile '[name]'
+  --profile '<name>'
 -->
 
 ### Usage
@@ -161,7 +161,7 @@ newrelic profile configure \
 ```sh
 #
 newrelic apm application search \
-  --name '[app-name]' | \
+  --name '<app-name>' | \
     jq '.[].name'
 
 #
@@ -184,7 +184,7 @@ newrelic entity tags get \
 
 ```sh
 #
-export NEWRELIC_API_KEY='[api-key]'
+export NEWRELIC_API_KEY='<api-key>'
 export NEWRELIC_APP_ID=''
 
 curl \
@@ -198,7 +198,7 @@ curl \
 
 ```sh
 #
-export NEWRELIC_API_KEY='[api-key]'
+export NEWRELIC_API_KEY='<api-key>'
 export NEWRELIC_APM_APP_NAME=''
 
 #

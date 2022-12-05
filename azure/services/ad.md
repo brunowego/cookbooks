@@ -4,6 +4,10 @@
 
 - [Dashboard / Users](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers)
 
+## Glossary
+
+- System for Cross-Domain Identity Management (SCIM)
+
 ## CLI
 
 ### Commands
@@ -14,28 +18,12 @@ az ad -h
 
 ### Usage
 
+**Subscription:** [Configure here](./account.md#usage)
+
 ```sh
 #
-az group list
+az group list --output table
+
+#
+az ad user list --output table
 ```
-
-<!--
-#
-az ad sp create-for-rbac \
-  --role='Contributor' \
-  --scopes="/subscriptions/$(az account list | jq -r '.[] | select (.isDefault == true).id')" | \
-    jq
-
-#
-az login \
-  --service-principal \
-  -u <appId> \
-  -p <password> \
-  --tenant <tenant> | \
-    jq
-
-#
-az group create \
-  --name 'ExampleDevResourceGroup' \
-  --location 'eastus'
--->

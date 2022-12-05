@@ -14,7 +14,7 @@ gcp.credentials.file=${GCP_CREDENTIALS_PATH:/etc/credentials.json}
 
 ### Dependencies
 
-- [gke-gcloud-auth-plugin](/google-cloud/gke-gcloud-auth-plugin.md)
+- [gke-gcloud-auth-plugin](/gcp/gke-gcloud-auth-plugin.md)
 
 ### Commands
 

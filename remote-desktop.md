@@ -1,12 +1,10 @@
 # Remote Desktop
 
-<!--
-Only MacOS
--->
+**Keywords** macOS
 
 ## Alternatives
 
-- [Microsoft Remote Desktop](/microsoft/microsoft-remote-desktop.md)
+- [Microsoft Remote Desktop](/microsoft/remote-desktop.md)
 
 ## App
 

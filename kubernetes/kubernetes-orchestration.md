@@ -7,7 +7,7 @@
 - Azure
   - [Kubernetes Service (AKS)](/azure/services/aks.md)
 - Google
-  - [Google Kubernetes Engine (GKE)](/google-cloud/services/gke.md)
+  - [Google Kubernetes Engine (GKE)](/gcp/services/gke.md)
 
 ## Multicloud
 
