@@ -1,6 +1,6 @@
 # Keycloak
 
-**Keywords:** Identity Provider (IdP), Access Management
+**Keywords:** Identity Provider (IdP), IAM
 
 <!--
 https://documenter.getpostman.com/view/7294517/SzmfZHnd

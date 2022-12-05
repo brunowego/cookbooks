@@ -1,5 +1,7 @@
 # SQLite Queries
 
+## General
+
 ```sql
 -- Read
 .read [filename].db

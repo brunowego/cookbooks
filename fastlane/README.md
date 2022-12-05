@@ -1,6 +1,6 @@
 # fastlane
 
-**Keywords:** App Automation, Useful for Pipelines (Portability)
+**Keywords:** Mobile App Automation/Development, Useful for Pipelines (Portability)
 
 ![fastlane](/assets/images/fastlane/fastlane.png)
 
@@ -52,7 +52,7 @@ brew install fastlane
 ```sh
 bundle exec fastlane -h
 # or, if installed with Homebrew
-bundle exec fastlane -h
+fastlane -h
 ```
 
 ### Initialize

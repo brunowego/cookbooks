@@ -1,5 +1,9 @@
 # Market Cycle
 
+## Psychology of Market Cycles
+
+![Psychology of Market Cycles](/assets/images/trading/psychology-of-market-cycles.jpeg)
+
 ## Psychology
 
 1. Disbelief

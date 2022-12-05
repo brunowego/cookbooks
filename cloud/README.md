@@ -1,5 +1,6 @@
 # Cloud
 
-## Alternative
+## Terms
 
 - Bare-Metal
+- Cloud Lock-in

@@ -1,5 +1,7 @@
 # TrueNAS
 
+**Keywords:** NAS
+
 ## Links
 
 - [Org. Repository](https://github.com/truenas)

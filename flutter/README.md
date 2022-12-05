@@ -19,7 +19,7 @@ https://linkedin.com/learning/flutter-part-01-introduction/what-is-flutter
 https://github.com/fikretsengul/flutter_advanced_boilerplate
 -->
 
-**Keywords:** Software Development Kit
+**Keywords:** Mobile Cross Platform
 
 ## Links
 

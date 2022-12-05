@@ -4,6 +4,10 @@
 https://github.com/pixie-io/pixie
 -->
 
+## Terms
+
+- APM Index
+
 ## Solutions
 
 - [DataDog](/datadog.md)

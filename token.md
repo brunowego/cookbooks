@@ -1,7 +1,3 @@
 # Token
 
-## Tips
-
-### Generate
-
 TODO

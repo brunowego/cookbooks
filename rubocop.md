@@ -86,19 +86,6 @@ rubocop --only 'Style/StringLiterals' ./
 git add -N .; git diff --name-only | xargs rubocop
 ``` -->
 
-<!-- ####
-
-**Refer:** `./.fastlane/Fastfile`
-
-```ruby
-# frozen_string_literal: true
-
-opt_out_usage
-skip_docs
-
-# ...
-``` -->
-
 #### Visual Studio Code
 
 **Dependencies:** [Prettier](/prettier.md#visual-studio-code).

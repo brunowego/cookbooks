@@ -2,6 +2,11 @@
 
 <!--
 https://github.com/marcindawidziuk/Scrum-Poker-Android
+
+https://github.com/maddevsio/android-ci-cd
+
+com.example.app
+com.example.app.staging
 -->
 
 ## Links

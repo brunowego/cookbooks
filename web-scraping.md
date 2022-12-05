@@ -17,12 +17,22 @@ https://www.udemy.com/course/web-scraping-with-python-ruby-import-io-for-fun-pro
 
 ## Tools
 
-- Beautiful Soup
-- Matplotlib
-- Pandas
-- Requests
-- Scrapy
-- Selenium
+### PaaS
+
+- [Scraping Robot](https://scrapingrobot.com/)
+- [ScrapingAnt](https://scrapingant.com/)
+
+### Library
+
+- [Beautiful Soup](https://beautiful-soup-4.readthedocs.io)
+- [Matplotlib](https://matplotlib.org)
+- [Pandas](https://pandas.pydata.org)
+- [Requests](/requests.md)
+- [Scrapy](/scrapy.md)
+
+### Software
+
+- [Selenium](/selenium/README.md)
 
 ## References
 

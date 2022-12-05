@@ -1,6 +1,10 @@
 # commitlint
 
-## References
+<!--
+https://github.com/editablejs/editable/blob/main/.commitlintrc
+-->
+
+## Links
 
 - [Code Repository](https://github.com/conventional-changelog/commitlint)
 - [Main Website](https://commitlint.js.org/)

@@ -4,6 +4,8 @@
 https://github.com/ionic-zone/ionic.zone/blob/master/_articles/fastlane/initialize-fastlane-for-your-cordova-ios-and-android-apps.md
 -->
 
+Command line tool for updating Android apps and their metadata on the Google Play Store.
+
 ## Links
 
 - [Code Repository](https://github.com/fastlane/fastlane/tree/master/supply)

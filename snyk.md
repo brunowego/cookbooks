@@ -76,9 +76,6 @@ snyk monitor
 snyk test
 
 #
-snyk monitor
-
-#
 snyk container test ubuntu:18.04
 
 #

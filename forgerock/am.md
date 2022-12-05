@@ -1,4 +1,4 @@
-# ForgeRock Access Management
+# ForgeRock Access Management (AM)
 
 ## References
 

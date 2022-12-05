@@ -8,6 +8,7 @@ DB_USERNAME filetype:env
 
 - [direnv](/direnv.md) 🌟
 - [dotenv-cli](/dotenv/dotenv-cli.md)
+- [envo](/envo.md)
 
 ## Tips
 
