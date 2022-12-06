@@ -4,7 +4,7 @@
 
 ### Windows
 
-- [Windows Subsystem Linux (WSL)](/wsl.md)
+- [Windows Subsystem Linux (WSL)](/microsoft/windows/wsl.md)
 
 ## Installation
 

@@ -8,7 +8,7 @@ http://help.market.com.br/frente/index.html?permitir-ping-windows-10.htm
 
 - [Windows 7 ISO](https://microsoft.com/en-us/software-download/windows8ISO)
 - [Windows 10 ISO](https://microsoft.com/en-us/software-download/windows10ISO)
-- [Windows Subsystem Linux (WSL)](/wsl.md)
+- [Windows Subsystem Linux (WSL)](/microsoft/windows/wsl.md)
 
 ## Tips
 

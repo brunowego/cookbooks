@@ -1,4 +1,4 @@
-# Authentication
+# Authentication (abbreviated as authn)
 
 ## Links
 

@@ -1,4 +1,4 @@
-# Windows Subsystem Linux (WSL)
+# Windows Subsystem for Linux (WSL)
 
 <!--
 https://github.com/microsoft/wslg

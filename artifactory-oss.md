@@ -40,9 +40,9 @@ helm install artifactory-oss jfrog/artifactory-oss \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls artifactory.tls-secret \
+  --cert='/etc/ssl/certs/artifactory/root-ca.crt' \
+  --key='/etc/ssl/private/artifactory/root-ca.key' \
   -n artifactory
 ```
 
@@ -51,7 +51,7 @@ helm upgrade artifactory-oss jfrog/artifactory-oss -f <(yq m <(cat << EOF
 artifactory:
   ingress:
     tls:
-      - secretName: example.tls-secret
+      - secretName: artifactory.tls-secret
         hosts:
           - artifactory.${DOMAIN}
 EOF
@@ -64,7 +64,7 @@ EOF
 helm upgrade artifactory-oss jfrog/artifactory-oss \
   -f <(yq d <(helm get values artifactory-oss) artifactory.ingress.tls)
 
-kubectl delete secret example.tls-secret \
+kubectl delete secret artifactory.tls-secret \
   -n artifactory
 ```
 

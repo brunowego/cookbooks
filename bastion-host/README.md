@@ -1,8 +1,12 @@
-# Bastion Host (a.k.a Jumpbox)
+# Bastion Host
 
 ![Bastion Host](/assets/images/aws/bastion-host.jpg)
 
 **Keywords:** Tunneling, IAP
+
+## Related
+
+- [Jump Server (a.k.a Jump Box)](/jump-server.md)
 
 ## Glossary
 

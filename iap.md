@@ -10,7 +10,7 @@
 
 ## Solutions
 
-- [Infra](/infra.md)
+- [Infra](/infra/README.md)
 - [StrongDM](/strongdm.md)
 - [Teleport](/teleport/README.md)
 - [Warpgate](/warpgate.md)

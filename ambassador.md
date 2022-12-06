@@ -82,9 +82,9 @@ kubectl get pod -l 'app.kubernetes.io/name=ambassador' \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls ambassador.tls-secret \
+  --cert='/etc/ssl/certs/ambassador/root-ca.crt' \
+  --key='/etc/ssl/private/ambassador/root-ca.key' \
   -n ambassador
 ```
 
@@ -94,7 +94,7 @@ spec:
   tls:
     - hosts:
         - ambassador.${DOMAIN}
-      secretName: example.tls-secret
+      secretName: ambassador.tls-secret
 EOF
 ) <(kubectl get ingress ambassador -n ambassador -o yaml))
 ```
@@ -105,7 +105,7 @@ spec:
   tls:
     - hosts:
         - admin.ambassador.${DOMAIN}
-      secretName: example.tls-secret
+      secretName: ambassador.tls-secret
 EOF
 ) <(kubectl get ingress ambassador-admin -n ambassador -o yaml))
 ```
@@ -116,7 +116,7 @@ EOF
 yq d <(kubectl get ingress ambassador -n ambassador -o yaml) spec.tls | kubectl apply -f -
 yq d <(kubectl get ingress ambassador-admin -n ambassador -o yaml) spec.tls | kubectl apply -f -
 
-kubectl delete secret example.tls-secret -n ambassador
+kubectl delete secret ambassador.tls-secret -n ambassador
 ```
 
 ### Status

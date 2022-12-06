@@ -302,6 +302,14 @@ EOF
 kubectl get all -n psql-system
 ```
 
+<!--
+kubectl port-forward \
+  --address 0.0.0.0 \
+  -n psql-system \
+  svc/postgresql \
+  5432:5432
+-->
+
 ### Status
 
 ```sh

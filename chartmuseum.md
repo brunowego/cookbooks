@@ -23,9 +23,9 @@ kubectl create ns chartmuseum
 ```
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls chartmuseum.tls-secret \
+  --cert='/etc/ssl/certs/chartmuseum/root-ca.crt' \
+  --key='/etc/ssl/private/chartmuseum/root-ca.key' \
   -n chartmuseum
 ```
 
@@ -38,7 +38,7 @@ helm install chartmuseum stable/chartmuseum \
   --set "ingress.hosts[0].name=chartmuseum.${DOMAIN}" \
   --set 'ingress.hosts[0].path=/' \
   --set 'ingress.hosts[0].tls=true' \
-  --set 'ingress.hosts[0].tlsSecret=example.tls-secret'
+  --set 'ingress.hosts[0].tlsSecret=chartmuseum.tls-secret'
 ```
 
 #### API
@@ -56,21 +56,21 @@ curl -ks https://chartmuseum.${DOMAIN}/api/charts | jq .
 ##### Local
 
 ```sh
-helm repo add --ca-file /etc/ssl/certs/example/root-ca.crt example https://chartmuseum.${DOMAIN}
+helm repo add --ca-file /etc/ssl/certs/chartmuseum/root-ca.crt chartmuseum https://chartmuseum.${DOMAIN}
 helm repo update
 ```
 
 ##### Remote
 
 ```sh
-kubectl get secret example.tls-secret \
+kubectl get secret chartmuseum.tls-secret \
   -o jsonpath='{.data.tls\.crt}' \
   -n chartmuseum | \
     base64 -d > ./ca.crt
 ```
 
 ```sh
-helm repo add --ca-file ./ca.crt example https://chartmuseum.${DOMAIN}
+helm repo add --ca-file ./ca.crt chartmuseum https://chartmuseum.${DOMAIN}
 ```
 
 ```sh

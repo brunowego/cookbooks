@@ -104,7 +104,7 @@ helm search repo -l jetstack/cert-manager
 #
 helm install cert-manager jetstack/cert-manager \
   --namespace cert-system \
-  --version v1.10.0 \
+  --version v1.10.1 \
   -f <(cat << EOF
 installCRDs: true
 

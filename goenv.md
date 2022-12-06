@@ -29,38 +29,21 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 ```sh
 # goenv
 export GOENV_ROOT="$HOME/.goenv"
-export GOENV_GOPATH_PREFIX='/usr/local/go'
-export GOPATH="$HOME/.go"
-export GOBIN="$GOPATH/bin"
-export PATH="$GOENV_ROOT/bin:$GOBIN:$PATH"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
 ```
 
 ```sh
 #
 sudo su - "$USER"
-
-#
-sudo mkdir -p /usr/local/go
-sudo chown -R "$(whoami)" /usr/local/go
 ```
 
 ### Commands
 
 ```sh
 goenv help
-```
-
-### Environment
-
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
-
-```sh
-# Go Version Management (goenv)
-eval "$(goenv init -)"
-```
-
-```sh
-sudo su - "$USER"
 ```
 
 ### Usage
