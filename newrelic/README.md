@@ -66,7 +66,7 @@ export NEWRELIC_CLUSTER_NAME='<cluster-name>'
 export NEWRELIC_LICENSE_KEY='<license-key>'
 
 #
-helm upgrade newrelic-bundle newrelic/nri-bundle \
+helm install newrelic-bundle newrelic/nri-bundle \
   --namespace newrelic-system \
   --version 5.0.2 \
   -f <(cat << EOF

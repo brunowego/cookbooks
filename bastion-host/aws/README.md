@@ -24,6 +24,10 @@ https://www.youtube.com/watch?v=aOVdNAE2Jeg
 
 - [aws-security-viz](/aws-security-viz.md)
 
+## Alternative
+
+- AWS Systems Manager (SSM) / Fleet Manager
+
 ## Connect
 
 ```sh

@@ -4,6 +4,8 @@
 https://github.com/andreee94/terraform-provider-warpgate
 -->
 
+**Keywords:** Bastion Host, IAP
+
 ![Warpgate](/assets/images/warpgate/warpgate.png)
 
 ## Links
@@ -23,6 +25,7 @@ https://github.com/andreee94/terraform-provider-warpgate
 ## Glossary
 
 - Demilitarized Zone (DMZ)
+- Infrastructure Access Platform (IAP)
 - Role-Based Access Control (RBAC)
 - Two-factor authentication (2FA)
 

@@ -4,6 +4,8 @@
 https://github.com/strongdm/terraform-provider-sdm
 -->
 
+**Keywords:** Bastion Host, IAP
+
 ## Links
 
 - [Org. Repository](https://github.com/strongdm)
@@ -11,6 +13,7 @@ https://github.com/strongdm/terraform-provider-sdm
 
 ## Glossary
 
+- Infrastructure Access Platform (IAP)
 - Remote Desktop Protocol (RDP)
 - Role-Based Access Control (RBAC)
 - Secure Access Service Edge (SASE)

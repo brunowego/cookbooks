@@ -40,7 +40,7 @@ export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-helm upgrade authelia authelia/authelia \
+helm install authelia authelia/authelia \
   --namespace authelia-system \
   --version 0.8.46 \
   -f <(cat << EOF

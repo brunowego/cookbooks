@@ -57,7 +57,7 @@ export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-helm upgrade mailhog codecentric/mailhog \
+helm install mailhog codecentric/mailhog \
   --namespace mailhog-system \
   --version 5.2.1 \
   -f <(cat << EOF
