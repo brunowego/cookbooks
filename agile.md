@@ -56,3 +56,12 @@ https://www.sealights.io/software-development-metrics/10-powerful-agile-metrics-
 
 - Sprint Plan
 - Daily Scrum
+
+## Stakeholder
+
+- Communities
+- Customers
+- Employees
+- Governments
+- Investors
+- Suppliers

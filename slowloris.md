@@ -93,18 +93,6 @@ slowloris [ip-address] -s 500 --sleeptime 5 # Machine 3
 netstat -ant | grep -E ':80|:443' | wc -l
 ```
 
-### Prevent Attack with Uncomplicated Firewall (UFW)
+### Prevent Attack with Firewall
 
-```sh
-#
-sudo ufw enable
-
-#
-sudo ufw insert 1 deny from [ip-address]
-
-#
-sudo ufw status numbered
-
-#
-sudo ufw delete [number]
-```
+Select and configure an [Firewall](/firewall/README.md).

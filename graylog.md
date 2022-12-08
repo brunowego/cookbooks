@@ -37,9 +37,9 @@ helm install graylog stable/graylog \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls graylog.tls-secret \
+  --cert='/etc/ssl/certs/graylog/root-ca.crt' \
+  --key='/etc/ssl/private/graylog/root-ca.key' \
   -n graylog
 ```
 
@@ -48,7 +48,7 @@ helm upgrade graylog stable/graylog -f <(yq m <(cat << EOF
 graylog:
   ingress:
     tls:
-      - secretName: example.tls-secret
+      - secretName: graylog.tls-secret
         hosts:
           - graylog.${DOMAIN}
 EOF
@@ -60,7 +60,7 @@ EOF
 ```sh
 helm upgrade graylog stable/graylog -f <(yq d <(helm get values graylog) ingress.tls)
 
-kubectl delete secret example.tls-secret -n graylog
+kubectl delete secret graylog.tls-secret -n graylog
 ```
 
 ### Status
@@ -178,9 +178,9 @@ docker logs -f graylog | sed '/Graylog server up and running./ q'
 echo -e '[INFO]\thttp://127.0.0.1:9000'
 ```
 
-| Login | Password |
-| --- | --- |
-| `admin` | `admin` |
+| Login   | Password |
+| ------- | -------- |
+| `admin` | `admin`  |
 
 ### State
 

@@ -44,9 +44,9 @@ helm install nextcloud stable/nextcloud \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls nextcloud.tls-secret \
+  --cert='/etc/ssl/certs/nextcloud/root-ca.crt' \
+  --key='/etc/ssl/private/nextcloud/root-ca.key' \
   -n nextcloud
 ```
 
@@ -54,7 +54,7 @@ kubectl create secret tls example.tls-secret \
 helm upgrade nextcloud stable/nextcloud -f <(yq m <(cat << EOF
 ingress:
   tls:
-    - secretName: example.tls-secret
+    - secretName: nextcloud.tls-secret
       hosts:
         - nextcloud.${DOMAIN}
 EOF
@@ -66,7 +66,7 @@ EOF
 ```sh
 helm upgrade nextcloud stable/nextcloud -f <(yq d <(helm get values nextcloud) ingress.tls)
 
-kubectl delete secret example.tls-secret -n nextcloud
+kubectl delete secret nextcloud.tls-secret -n nextcloud
 ```
 
 ### Status

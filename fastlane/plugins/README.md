@@ -1,5 +1,9 @@
 # Fastlane Plugins
 
+## Docs
+
+- [Available Plugins](https://docs.fastlane.tools/plugins/available-plugins)
+
 ## CLI
 
 ### Usage

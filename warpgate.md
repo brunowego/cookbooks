@@ -6,7 +6,7 @@ https://github.com/andreee94/terraform-provider-warpgate
 
 **Keywords:** Bastion Host, IAP
 
-![Warpgate](/assets/images/warpgate/warpgate.png)
+![Warpgate](/assets/images/warpgate/diagram.png)
 
 ## Links
 

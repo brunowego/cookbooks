@@ -5,6 +5,16 @@
 - [JSON Formatter](https://jsonformatter.org/)
 - [JSON Schema Store](https://schemastore.org/json/)
 
+## Container
+
+- Binary-JSON (BJSON)
+- MessagePack
+- Plaintext
+
+## Specification
+
+- JSON:API
+
 ## Tips
 
 ### Visual Studio Code

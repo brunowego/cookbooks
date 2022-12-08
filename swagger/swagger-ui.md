@@ -44,9 +44,9 @@ helm install swagger-ui cetic/swaggerui \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls swagger-ui.tls-secret \
+  --cert='/etc/ssl/certs/swagger-ui/root-ca.crt' \
+  --key='/etc/ssl/private/swagger-ui/root-ca.key' \
   -n swagger
 ```
 
@@ -54,7 +54,7 @@ kubectl create secret tls example.tls-secret \
 helm upgrade swagger-ui cetic/swaggerui -f <(yq m <(cat << EOF
 ingress:
   tls:
-    - secretName: example.tls-secret
+    - secretName: swagger-ui.tls-secret
       hosts:
         - swagger-ui.example.com
 EOF
@@ -66,7 +66,7 @@ EOF
 ```sh
 helm upgrade swagger-ui cetic/swaggerui -f <(yq d <(helm get values swagger-ui) ingress.tls)
 
-kubectl delete secret example.tls-secret -n swagger
+kubectl delete secret swagger-ui.tls-secret -n swagger
 ```
 
 ### Status

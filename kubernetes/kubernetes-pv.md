@@ -11,8 +11,11 @@
 ## Usage
 
 ```sh
-#
-kubectl get storageclass
+# Storage Class
+kubectl get sc
+
+# Persistent Volume
+kubectl get pv
 ```
 
 ## Tips
@@ -20,20 +23,20 @@ kubectl get storageclass
 ### Disc Free
 
 ```sh
-kubectl exec [pod-name] -- df
+kubectl exec -i <pod-name> -n <namespace> -- df
 ```
 
 ### Change Persistent Volume Reclaim Policy
 
 ```sh
-kubectl patch pv [name] \
+kubectl patch pv <name> \
   -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
 ```
 
 ### Make Default
 
 ```sh
-kubectl patch storageclass [name] \
+kubectl patch storageclass <name> \
   -p '{"metadata":{"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
 ```
 

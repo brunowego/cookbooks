@@ -10,6 +10,11 @@
 
 ## Library
 
+### Dependencies
+
+- Ubuntu
+  - [Software Properties Common](/apt/software-properties-common.md#installation)
+
 ### Installation
 
 #### Homebrew

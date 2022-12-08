@@ -58,6 +58,16 @@ cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew updat
 
 ### Tips
 
+#### Brew Bundle
+
+```sh
+#
+brew bundle dump
+
+#
+brew bundle install
+```
+
 #### List Formula Installed Files
 
 ```sh

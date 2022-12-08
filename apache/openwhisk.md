@@ -67,9 +67,9 @@ kubectl create ns openwhisk
 ```
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls openwhisk.tls-secret \
+  --cert='/etc/ssl/certs/openwhisk/root-ca.crt' \
+  --key='/etc/ssl/private/openwhisk/root-ca.key' \
   -n openwhisk
 ```
 
@@ -86,7 +86,7 @@ helm install openwhisk openwhisk-deploy-kube/helm/openwhisk \
   --set whisk.ingress.domain="openwhisk.${DOMAIN}" \
   --set whisk.ingress.tls.enabled=true \
   --set whisk.ingress.tls.secretenabled=true \
-  --set whisk.ingress.tls.secretname='example.tls-secret' \
+  --set whisk.ingress.tls.secretname='openwhisk.tls-secret' \
   --set whisk.ingress.annotations."nginx\.ingress\.kubernetes\.io/proxy-body-size"=0
 ```
 

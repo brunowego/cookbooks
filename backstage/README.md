@@ -26,8 +26,8 @@ TODO NEXT
 
 ### Dependencies
 
-- [PostgreSQL Client](/postgresql/postgresql-client.md#cli)
-- [PostgreSQL Server](/postgresql/postgresql-server.md#helm)
+- [PostgreSQL Client](/postgresql/client.md#cli)
+- [PostgreSQL Server](/postgresql/server.md#helm)
 
 ```sh
 #

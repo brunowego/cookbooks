@@ -7,5 +7,5 @@ pg_pool
 
 ## References
 
-- [PostgreSQL Client](/postgresql/postgresql-client.md)
-- [PostgreSQL Server](/postgresql/postgresql-server.md)
+- [PostgreSQL Client](/postgresql/client.md)
+- [PostgreSQL Server](/postgresql/server.md)

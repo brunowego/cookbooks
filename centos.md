@@ -22,15 +22,7 @@ docker run -it --rm \
   -h centos \
   --name centos \
   --network workbench \
-  docker.io/library/centos:8.2.2004 /bin/bash
-
-# 7.x
-docker run -it --rm \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h centos \
-  --name centos \
-  --network workbench \
-  docker.io/library/centos:7.6.1810 /bin/bash
+  docker.io/library/centos:8.4.2105 /bin/bash
 
 #
 docker run -d \
@@ -65,4 +57,20 @@ kubectl run -it --rm \
   --restart Never \
   centos \
   -- /bin/bash
+```
+
+## Issues
+
+### Missing Mirror List
+
+```log
+Error: Failed to download metadata for repo 'appstream': Cannot prepare internal mirrorlist: No URLs in mirrorlist
+```
+
+```sh
+#
+sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+
+#
+sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
 ```

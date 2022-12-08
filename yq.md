@@ -7,6 +7,11 @@
 
 ## CLI
 
+### Dependencies
+
+- Ubuntu
+  - [Software Properties Common](/apt/software-properties-common.md#installation)
+
 ### Installation
 
 #### Homebrew
@@ -25,6 +30,7 @@ sudo snap install yq
 
 ```sh
 sudo add-apt-repository -y ppa:rmescandon/yq
+
 sudo apt update
 sudo apt -y install yq
 ```

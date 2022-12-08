@@ -12,11 +12,8 @@
 ## Docs
 
 - [Continuous Integration](https://docs.fastlane.tools/best-practices/continuous-integration/)
-- Plugins
-  - [Available Plugins](https://docs.fastlane.tools/plugins/available-plugins)
 - Advanced
   - [Fastfile](https://docs.fastlane.tools/advanced/Fastfile/)
-- [Actions](./actions/README.md)
 
 ## Conferences
 

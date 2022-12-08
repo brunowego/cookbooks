@@ -77,14 +77,14 @@ helm install vaultwarden sebastiangaiser/vaultwarden \
 ingress:
   enabled: true
   hosts:
-  - host: vaultwarden.${DOMAIN}
-    paths:
-    - path: /
-      pathType: Prefix
+    - host: vaultwarden.${DOMAIN}
+      paths:
+        - path: /
+          pathType: Prefix
   tls:
-  - hosts:
-    - vaultwarden.${DOMAIN}
-    secretName: vaultwarden.tls-secret
+    - hosts:
+        - vaultwarden.${DOMAIN}
+      secretName: vaultwarden.tls-secret
   ingressClassName: nginx
 EOF
 )

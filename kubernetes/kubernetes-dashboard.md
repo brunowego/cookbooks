@@ -32,9 +32,9 @@ helm install kubernetes-dashboard stable/kubernetes-dashboard \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls kubernetes-dashboard.tls-secret \
+  --cert='/etc/ssl/certs/kubernetes-dashboard/root-ca.crt' \
+  --key='/etc/ssl/private/kubernetes-dashboard/root-ca.key' \
   -n kube-system
 ```
 
@@ -42,7 +42,7 @@ kubectl create secret tls example.tls-secret \
 helm upgrade kubernetes-dashboard stable/kubernetes-dashboard -f <(yq m <(cat << EOF
 ingress:
   tls:
-    - secretName: example.tls-secret
+    - secretName: kubernetes-dashboard.tls-secret
       hosts:
         - dashboard.example.com
 EOF
@@ -54,7 +54,7 @@ EOF
 ```sh
 helm upgrade kubernetes-dashboard stable/kubernetes-dashboard -f <(yq d <(helm get values kubernetes-dashboard) ingress.tls)
 
-kubectl delete secret example.tls-secret -n kube-system
+kubectl delete secret kubernetes-dashboard.tls-secret -n kube-system
 ```
 
 ### Ingress

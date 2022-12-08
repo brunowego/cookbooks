@@ -26,6 +26,8 @@ https://github.com/datalayer-examples/vscode-extension-examples
 - [cURL](/curl.md)
 - [jq](/jq.md)
 - [moreutils](/moreutils.md)
+- Ubuntu
+  - [Software Properties Common](/apt/software-properties-common.md#installation)
 
 #### APT
 

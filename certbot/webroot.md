@@ -14,5 +14,6 @@ certbot certonly --webroot
 <!--
 certbot certonly \
   --webroot \
-  --webroot-path /var/www/static
+  --webroot-path /var/www/static \
+  --force-renewal
 -->

@@ -12,7 +12,7 @@
 ### Dependencies
 
 - [Redis](/redis/redis-cluster.md#helm)
-- [PostgreSQL](/postgresql/postgresql-server.md#helm)
+- [PostgreSQL](/postgresql/server.md#helm)
 
 ### References
 

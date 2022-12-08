@@ -43,9 +43,9 @@ helm install kubeless incubator/kubeless \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls kubeless.tls-secret \
+  --cert='/etc/ssl/certs/kubeless/root-ca.crt' \
+  --key='/etc/ssl/private/kubeless/root-ca.key' \
   -n kubeless
 ```
 
@@ -54,7 +54,7 @@ helm upgrade kubeless incubator/kubeless -f <(yq m <(cat << EOF
 ui:
   ingress:
     tls:
-      - secretName: example.tls-secret
+      - secretName: kubeless.tls-secret
         hosts:
           - kubeless.${DOMAIN}
 EOF
@@ -66,7 +66,7 @@ EOF
 ```sh
 helm upgrade kubeless incubator/kubeless -f <(yq d <(helm get values kubeless) ingress.tls)
 
-kubectl delete secret example.tls-secret -n kubeless
+kubectl delete secret kubeless.tls-secret -n kubeless
 ```
 
 ### Status

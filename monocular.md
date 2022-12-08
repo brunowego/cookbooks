@@ -21,9 +21,9 @@ kubectl create ns monocular
 ```
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls monocular.tls-secret \
+  --cert='/etc/ssl/certs/monocular/root-ca.crt' \
+  --key='/etc/ssl/private/monocular/root-ca.key' \
   -n monocular
 ```
 
@@ -31,7 +31,7 @@ kubectl create secret tls example.tls-secret \
 helm install monocular monocular/monocular \
   --namespace monocular \
   --set ingress.hosts={monocular.example.com} \
-  --set ingress.tls.secretName=example.tls-secret \
+  --set ingress.tls.secretName=monocular.tls-secret \
   --set 'sync.repos[0].name=example' \
   --set 'sync.repos[0].url=https://chartmuseum.example.com'
 ```

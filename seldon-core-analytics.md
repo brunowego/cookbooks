@@ -16,9 +16,9 @@ helm repo update
 ### Install
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls seldon.tls-secret \
+  --cert='/etc/ssl/certs/seldon/root-ca.crt' \
+  --key='/etc/ssl/private/seldon/root-ca.key' \
   -n seldon
 ```
 
@@ -48,7 +48,7 @@ spec:
   tls:
     - hosts:
         - analytics.seldon.example.com
-      secretName: example.tls-secret
+      secretName: seldon.tls-secret
 EOF
 ```
 

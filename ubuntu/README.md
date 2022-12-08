@@ -32,7 +32,7 @@ echo '5fdebc435ded46ae99136ca875afc6f05bde217be7dd018e1841924f71db46b5 *ubuntu-2
 
 #### Partition
 
-| Type |  Mount  |  Size  |
+| Type | Mount   | Size   |
 | ---- | ------- | ------ |
 | efi  |         | 650 MB |
 | swap |         | 20 GB  |

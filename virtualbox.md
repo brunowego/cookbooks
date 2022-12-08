@@ -21,8 +21,9 @@ brew install --cask virtualbox virtualbox-extension-pack
 #### YUM
 
 ```sh
-yum check-update
 sudo yum-config-manager --add-repo 'http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo'
+
+yum check-update
 sudo yum -y install VirtualBox-6.0
 ```
 

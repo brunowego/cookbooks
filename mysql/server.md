@@ -123,7 +123,7 @@ docker volume rm mysql-data
 ### Repository
 
 ```sh
-helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
 helm repo update
 ```
 
@@ -131,18 +131,33 @@ helm repo update
 
 ```sh
 #
-kubectl create ns mysql
+kubectl create ns mysql-system
+# kubectl create ns database
+
+#
+helm search repo -l bitnami/mysql
 
 #
 helm install mysql bitnami/mysql \
-  --namespace mysql \
-  --version 8.0.25 \
-  --set image.tag=5.7.34-debian-10-r56 \
-  --set auth.rootPassword=root \
-  --set auth.database=dev \
-  --set auth.username=user \
-  --set auth.password=pass
+  --namespace mysql-system \
+  --version 9.4.4 \
+  -f <(cat << EOF
+auth:
+  rootPassword: root
+  username: dev
+  password: dev
+  database: dev
+EOF
+)
 ```
+
+<!--
+kubectl port-forward \
+  --address 0.0.0.0 \
+  -n mysql-system \
+  svc/mysql \
+  3306:3306
+-->
 
 <!-- ### NGINX Ingress
 
@@ -153,20 +168,16 @@ helm upgrade nginx-ingress stable/nginx-ingress -f <(yq w <(helm get values ngin
 ### Status
 
 ```sh
-kubectl rollout status deploy/mysql -n mysql
+kubectl rollout status deploy/mysql -n mysql-system
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app=mysql' -n mysql -f
-```
-
-### DNS
-
-```sh
-dig @10.96.0.10 mysql.mysql.svc.cluster.local +short
-nslookup mysql.mysql.svc.cluster.local 10.96.0.10
+kubectl logs \
+  -l 'app=mysql' \
+  -n mysql-system \
+  -f
 ```
 
 ### Secret
@@ -174,15 +185,18 @@ nslookup mysql.mysql.svc.cluster.local 10.96.0.10
 ```sh
 kubectl get secret mysql \
   -o jsonpath='{.data.mysql-root-password}' \
-  -n mysql | \
+  -n mysql-system | \
     base64 -d; echo
 ```
 
 ### Delete
 
 ```sh
-helm uninstall mysql -n mysql
-kubectl delete ns mysql --grace-period=0 --force
+helm uninstall mysql -n mysql-system
+
+kubectl delete ns mysql-system \
+  --grace-period=0 \
+  --force
 ```
 
 ## CLI

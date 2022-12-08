@@ -9,14 +9,14 @@
 
 ## Tools
 
-### VPN Client
-
 - [openfortivpn](/openfortivpn.md)
 - [OpenVPN](/openvpn.md)
 - [Pritunl](/pritunl/README.md)
 - [strongSwan](/strongswan.md)
+- [WireGuard](/wireguard.md)
 
 <!--
+https://github.com/netbirdio/netbird
 https://tailscale.com/
 -->
 

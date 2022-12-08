@@ -4,47 +4,45 @@
 
 - [Guides](https://github.com/gravitational/teleport/tree/master/docs/pages/server-access/guides)
 
-## Configuration
+## Example
+
+### Dependencies
+
+- [Ubuntu](/ubuntu/README.md#kubectl)
+  - [Teleport CLI / APT](../README.md#apt)
+- [CentOs](/centos.md#kubectl)
+  - [Teleport CLI / YUM](../README.md#yum)
+
+### Installation
 
 ```sh
 #
-tctl users add teleport-admin --roles=editor,access --logins=root,ubuntu,ec2-user
+tctl tokens add \
+  --type node \
+  --ttl 10m
 
 #
-tsh login --proxy=teleportvm.b5pr4wd569rd.instruqt.io:443 --user=teleport-admin
-
-#
-tsh ls
-
-#
-tsh ssh root@my-first-host
-
-#
-tctl tokens add --type=node --ttl=10m
+export TELEPORT_AUTH_SERVER='<teleport-domain>:443'
+export TELEPORT_TOKEN='<token>'
+export TELEPORT_CA_PIN='<ca-pin>'
 
 #
 teleport start \
-  --roles=node \
-  --token=2198985b615ec139388aa843889fecc7 \
-  --ca-pin=sha256:ae2b157699afc590dc14f62f6f67292bb13dbd677ce2356b79cc21537fe786b1 \
-  --auth-server=10.5.3.75:3025
-
-sudo teleport start --roles=node --token=MxL9okdcwpoMNCZWrMqZ --auth-server=teleportvm.b5pr4wd569rd.instruqt.io:443
+  --roles node \
+  --auth-server "$TELEPORT_AUTH_SERVER" \
+  --token "$TELEPORT_TOKEN" \
+  --ca-pin "$TELEPORT_CA_PIN" \
+  --insecure
 ```
 
 ### Usage
 
 ```sh
 #
-tsh login \
-  --proxy <host> \
-  --user <email>
+tsh ls
 
+#
 tsh ssh <username>@<hostname>
-
-tsh ssh -o ForwardAgent=yes <username>@<hostname>
-
-tsh ssh -o AddKeysToAgent=yes <username>@<hostname>
 
 #
 tsh logout
@@ -55,7 +53,29 @@ tsh logout
 ####
 
 ```sh
+tsh ssh -o ForwardAgent=yes <username>@<hostname>
+tsh ssh -o AddKeysToAgent=yes <username>@<hostname>
+```
+
+####
+
+```sh
 ln -s /path/to/tsh /path/to/ssh
 
 ssh <username>@<hostname>
 ``` -->
+
+### Issues
+
+#### Failure to Start Node Sessions
+
+```log
+ERRO Error during temporary user cleanup: user: lookup groupname teleport-system: no such process srv/usermgmt.go:373
+```
+
+Issue with [the solution](https://github.com/gravitational/teleport/issues/18981).
+
+```sh
+#
+teleport version
+```

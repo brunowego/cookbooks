@@ -54,7 +54,7 @@ brew services start metabase
 
 ### Dependencies
 
-- [PostgreSQL Server](/postgresql/postgresql-server.md#helm)
+- [PostgreSQL Server](/postgresql/server.md#helm)
 
 ```sh
 #

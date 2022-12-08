@@ -163,22 +163,18 @@ https://www.cryptometer.io/
 CME Gaps
 -->
 
-## Terms
+## Glossary
 
 - Annual Percentage Rate (APR)
 - Annual Percentage Yield (APY)
 - Auto-Deleveraging (ADL)
-- Bull Market / Bear Market
-- Bull Trap and Bear Trap
 - Central Bank Digital Currency (CBDC)
-- Crypto Winter / Alt-coin Season
 - Decentralized Autonomous Organization (DAO)
 - Decentralized Crypto Exchanges (DEX)
 - Distributed Ledger Technology (DLT)
 - Distributed Ledger Technology (DTL)
 - Fear Of Missing Out (FOMO)
 - Fear, Uncertainty, and Doubt (FUD)
-- Fractal Expansion
 - Initial Coin Offering (ICO)
 - Initial DEX Offering (IDO)
 - Initial Exchange Offering (IEO)
@@ -186,9 +182,18 @@ CME Gaps
 - Initial NFT Offering (INO)
 - Joy of Missing Out (JOMO)
 - Long Term Holder (LTH) (Accumulation) / Short Term Holder (STH) (Capitalization)
-- Market Making / Market Makers
 - Market Value to Realized Value (MVRV) **Tip:** <= 1 long, >= 3.7 short.
 - Memorandum (MEMO)
+- Secure Asset Fund for Users (SAFU)
+- Volume Profile Visible Range (VPVR)
+
+## Terms
+
+- Bull Market / Bear Market
+- Bull Trap and Bear Trap
+- Crypto Winter / Alt-coin Season
+- Fractal Expansion
+- Market Making / Market Makers
 - No Trade Zone
 - On-chain
 - Parabolic Rally
@@ -197,10 +202,9 @@ CME Gaps
 - Proof of Reserve
 - Proof of Stake
 - Proof of Work
-- Secure Asset Fund for Users (SAFU)
 - Spread
 - Ticker Symbol
-- Volume Profile Visible Range (VPVR)
+- Zero-knowledge Proof
 - Zero-Sum Game
 
 ## Stock Market Index

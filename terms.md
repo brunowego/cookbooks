@@ -10,7 +10,6 @@
 - Assessment
 - Attention deficit hyperactivity disorder (ADHD)
 - Away From Keyboard (AFK)
-- Backend-for-Frontend (BFF)
 - Bare-metal server
 - Bloom's Taxonomy
 - Bulletin Board System (BBS)
@@ -30,6 +29,7 @@
 - Data Source Name (DSN)
 - Data Transfer Object (DTO)
 - Distributed Cloud Operating System (DC/OS)
+- Downloadable Content (DLC)
 - Early Adopter
 - Enhanced Entity–Relationship (EER)
 - Enterprise Random Password Manager (ERPM)
@@ -68,6 +68,7 @@
 - Personal Access Token (PAT)
 - Personal Identification Number (PIN)
 - Platform as a service (PaaS)
+- Question and Answer (QnA)
 - Read The Fucking Manual (RTFM)
 - Read-eval-print loop (REPL)
 - Relational Database Service (RDS)

@@ -13,12 +13,9 @@ https://www.youtube.com/watch?v=mXLrk0ipwz4
 
 ### Dependencies
 
-#### APT
-
-```sh
-sudo apt update
-sudo apt -y install curl gnupg
-```
+- Linux
+  - [cURL](/curl.md)
+  - [GNU Privacy Guard (GPG) or GNU Pretty Good Privacy (PGP)](/gnu-gpg.md)
 
 ### Installation
 
@@ -41,8 +38,9 @@ sudo apt -y install bazel
 #### YUM
 
 ```sh
-yum check-update
 sudo yum-config-manager --add-repo https://copr.fedorainfracloud.org/coprs/vbatts/bazel/repo/epel-7/vbatts-bazel-epel-7.repo
+
+yum check-update
 sudo yum -y install bazel
 ```
 

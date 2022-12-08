@@ -15,6 +15,17 @@ https://app.pluralsight.com/library/courses/big-data-ldn-session-79/table-of-con
 
 ## Helm
 
+### References
+
+- [Configuration](https://github.com/cockroachdb/helm-charts/tree/master/cockroachdb#configuration)
+
+### Repository
+
+```sh
+helm repo add cockroachdb 'https://charts.cockroachdb.com'
+helm repo update
+```
+
 ### Install
 
 ```sh
@@ -22,7 +33,7 @@ kubectl create ns cockroach
 ```
 
 ```sh
-helm install cockroachdb stable/cockroachdb \
+helm install cockroachdb cockroachdb/cockroachdb \
   --namespace cockroach \
   --set Storage=10Gi \
   --set NetworkPolicy.Enabled=true \

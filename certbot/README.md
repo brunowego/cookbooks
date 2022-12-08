@@ -13,6 +13,11 @@
 
 ## CLI
 
+### Dependencies
+
+- Ubuntu
+  - [Software Properties Common](/apt/software-properties-common.md#installation)
+
 ### Installation
 
 #### Homebrew
@@ -24,8 +29,6 @@ brew install certbot
 #### APT
 
 ```sh
-sudo apt update
-sudo DEBIAN_FRONTEND=noninteractive apt -y install software-properties-common
 sudo add-apt-repository ppa:certbot/certbot
 
 sudo apt update

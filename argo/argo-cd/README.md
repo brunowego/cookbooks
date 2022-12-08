@@ -124,9 +124,9 @@ EOF
 
 ```sh
 #
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls argo-cd.tls-secret \
+  --cert='/etc/ssl/certs/argo-cd/root-ca.crt' \
+  --key='/etc/ssl/private/argo-cd/root-ca.key' \
   -n argocd-system
 
   --set ingress.annotations."kubernetes\.io/ingress\.class"=nginx \
@@ -135,7 +135,7 @@ kubectl create secret tls example.tls-secret \
 
 #
 kubectl patch ingress argocd-server \
-  -p '{"spec":{"tls":[{"hosts":["argocd.${DOMAIN}"],"secretName":"example.tls-secret"}]}}' \
+  -p '{"spec":{"tls":[{"hosts":["argocd.${DOMAIN}"],"secretName":"argo-cd.tls-secret"}]}}' \
   -n argocd-system
 ``` -->
 

@@ -18,6 +18,7 @@ Gartner
 ### Dependencies
 
 <!-- - [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) -->
+
 - [Helm CLI](/helm.md#cli)
 
 ### Repository
@@ -66,9 +67,9 @@ helm install polyaxon polyaxon/polyaxon \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls polyaxon.tls-secret \
+  --cert='/etc/ssl/certs/polyaxon/root-ca.crt' \
+  --key='/etc/ssl/private/polyaxon/root-ca.key' \
   -n polyaxon
 ```
 
@@ -76,7 +77,7 @@ kubectl create secret tls example.tls-secret \
 helm upgrade polyaxon polyaxon/polyaxon -f <(yq m <(cat << EOF
 ingress:
   tls:
-    - secretName: example.tls-secret
+    - secretName: polyaxon.tls-secret
       hosts:
         - polyaxon.${DOMAIN}
 EOF
@@ -88,7 +89,7 @@ EOF
 ```sh
 helm upgrade polyaxon polyaxon/polyaxon -f <(yq d <(helm get values polyaxon) ingress.tls)
 
-kubectl delete secret example.tls-secret -n polyaxon
+kubectl delete secret polyaxon.tls-secret -n polyaxon
 ```
 
 ### Status
@@ -128,8 +129,8 @@ kubectl get secret polyaxon-polyaxon-secret \
     base64 -d; echo
 ```
 
-| Key | Value |
-| --- | --- |
+| Key      | Value      |
+| -------- | ---------- |
 | Database | `polyaxon` |
 | Username | `polyaxon` |
 

@@ -1,35 +1,18 @@
 # Teleport Kubernetes Service
 
+**WIP:** Currently not working as expected.
+
 ## Docs
 
 - [Guides](https://github.com/gravitational/teleport/tree/master/docs/pages/kubernetes-access/guides)
 
-## Configuration
+## Example
+
+### Permissions
 
 ```sh
 #
-tctl users add teleport-admin --roles=editor,access --logins=root,ubuntu,ec2-user
-
-#
-tctl users reset <username>
-
-#
-tsh login --user=teleport-admin
-
-#
-tsh kube ls
-
-#
-tsh kube login cookie
-
-#
-kubectl exec --stdin --tty shell-demo -- /bin/bash
-
-#
-tctl get roles/access
-
-#
-tsh status
+kubectl get role -A
 
 #
 cat << EOF | kubectl apply -f -
@@ -37,10 +20,10 @@ cat << EOF | kubectl apply -f -
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  name: dev-read
+  name: developer
 rules:
 - apiGroups:
-  - ""
+  - ''
   resources:
   - pods
   - pods/log
@@ -48,54 +31,100 @@ rules:
   - get
   - list
   - watch
-EOF
-
-#
-cat << EOF | kubectl apply -f -
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: dev-read-binding
+  name: developer-binding
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
-  name: dev-read
+  name: developer
 subjects:
 - apiGroup: rbac.authorization.k8s.io
   kind: Group
-  name: developer-read
+  name: developer
 EOF
+
+#
+kubectl get role
 
 #
 cat << EOF | tctl create -f
 ---
 kind: role
-version: v4
+version: v5
 metadata:
-  name: developer-read
+  name: developer
 spec:
   allow:
-    kubernetes_groups: ["developer-read"]
+    kubernetes_groups: ['developer']
     kubernetes_labels:
-       '*': '*'
+      '*': '*'
 EOF
 
 #
-tctl users add bob --roles=developer-read --logins=root,ubuntu,ec2-user
+tctl get role/developer
 
 #
-tsh logout --user=teleport-admin
+tctl tokens add \
+  --type node \
+  --ttl 10m
 
 #
-tsh login --user=bob
+export TELEPORT_CLUSTER_NAME='<cluster-name>'
+export TELEPORT_TOKEN='<token>'
+export TELEPORT_TUNNEL_ADDR='<tunnel-addr>'
+export TELEPORT_WEB_PROXY_ADDR='<web-proxy-addr>'
+
+#
+cat << EOF | tctl create -f
+---
+kind: trusted_cluster
+version: v2
+metadata:
+  name: $TELEPORT_CLUSTER_NAME
+spec:
+  enabled: true
+  token: $TELEPORT_TOKEN
+  tunnel_addr: $TELEPORT_TUNNEL_ADDR:3024
+  web_proxy_addr: $TELEPORT_WEB_PROXY_ADDR:3080
+  role_map:
+    - remote: '*'
+      local: ['admin']
+EOF
+
+#
+tctl get trusted_cluster
+```
+
+### Configuration
+
+```sh
+#
+tsh kube ls
+
+#
+tsh kube login <cluster-name>
+
+#
+kubectl exec -it shell-demo -- /bin/bash
+
+#
+tctl users add janedoe \
+  --roles developer \
+  --logins root,ubuntu,ec2-user
+
+#
+tsh logout
+
+#
+tsh login --user janedoe
 
 #
 kubectl get pods
+kubectl get pods -A
 
 #
-kubectl get pods --all-namespaces
-
-#
-kubectl exec --stdin --tty shell-demo -- /bin/bash
+kubectl exec -it shell-demo -- /bin/bash
 ```

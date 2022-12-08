@@ -29,9 +29,9 @@ helm install lamp stable/lamp \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls lamp.tls-secret \
+  --cert='/etc/ssl/certs/lamp/root-ca.crt' \
+  --key='/etc/ssl/private/lamp/root-ca.key' \
   -n lamp
 ```
 
@@ -39,7 +39,7 @@ kubectl create secret tls example.tls-secret \
 helm upgrade lamp stable/lamp -f <(yq m <(cat << EOF
 ingress:
   tls:
-    - secretName: example.tls-secret
+    - secretName: lamp.tls-secret
       hosts:
         - lamp.${DOMAIN}
 EOF
@@ -51,7 +51,7 @@ EOF
 ```sh
 helm upgrade lamp stable/lamp -f <(yq d <(helm get values lamp) ingress.tls)
 
-kubectl delete secret example.tls-secret -n lamp
+kubectl delete secret lamp.tls-secret -n lamp
 ```
 
 ### Status

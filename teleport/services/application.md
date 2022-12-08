@@ -80,4 +80,14 @@ spec:
     - grafana.teleport.${DOMAIN}
     secretName: teleport-grafana.tls-secret
 EOF
+
+#
+kubectl rollout restart deployment teleport-cluster -n teleport-system
+```
+
+### Usage
+
+```sh
+#
+tsh apps ls
 ```

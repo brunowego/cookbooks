@@ -774,9 +774,9 @@ helm install matomo ./ \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls matomo.tls-secret \
+  --cert='/etc/ssl/certs/matomo/root-ca.crt' \
+  --key='/etc/ssl/private/matomo/root-ca.key' \
   -n matomo
 ```
 
@@ -784,7 +784,7 @@ kubectl create secret tls example.tls-secret \
 helm upgrade matomo stable/matomo -f <(yq m <(cat << EOF
 ingress:
   tls:
-    - secretName: example.tls-secret
+    - secretName: matomo.tls-secret
       hosts:
         - matomo.${DOMAIN}
 EOF
@@ -796,7 +796,7 @@ EOF
 ```sh
 helm upgrade matomo stable/matomo -f <(yq d <(helm get values matomo) ingress.tls)
 
-kubectl delete secret example.tls-secret -n matomo
+kubectl delete secret matomo.tls-secret -n matomo
 ```
 
 ### Status

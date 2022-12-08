@@ -26,12 +26,6 @@ Uphold
 
 - [E-mail](/email/README.md)
 
-## Tools
-
-- [Mailtrap.io](https://mailtrap.io/)
-- [MailCatcher](/mailcatcher.md)
-- [MailHog](/mailhog.md)
-
 ## Glossary
 
 - Calendaring Extensions to WebDAV (CalDAV)

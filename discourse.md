@@ -1,5 +1,10 @@
 # Discourse
 
+## Links
+
+- [Code Repository](https://github.com/discourse/discourse)
+- [Main Website](https://discourse.org)
+
 ## Docker
 
 ### Network
@@ -12,6 +17,7 @@ docker network create workbench \
 ### Running
 
 ```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h redis \
@@ -19,9 +25,8 @@ docker run -d \
   --name discourse-redis \
   --network workbench \
   docker.io/library/redis:5.0.4-alpine3.9 redis-server --appendonly yes
-```
 
-```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postgres \
@@ -32,9 +37,8 @@ docker run -d \
   --name discourse-postgres \
   --network workbench \
   docker.io/library/postgres:11.2-alpine
-```
 
-```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h discourse \
@@ -59,9 +63,9 @@ docker run -d \
 echo -e '[INFO]\thttp://127.0.0.1:3000'
 ```
 
-| Login | Password |
-| --- | --- |
-| user | admin |
+| Login  | Password |
+| ------ | -------- |
+| `user` | `admin`  |
 
 ### Remove
 

@@ -4,6 +4,8 @@
 https://onurgenes.com/posts/ssl-pinning-with-alamofire
 -->
 
+**Keywords:** HTTP Networking, Swift Library
+
 ## Links
 
 - [Code Repository](https://github.com/Alamofire/Alamofire)

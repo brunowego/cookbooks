@@ -28,9 +28,9 @@ helm install docker-registry stable/docker-registry \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls docker-registry.tls-secret \
+  --cert='/etc/ssl/certs/docker-registry/root-ca.crt' \
+  --key='/etc/ssl/private/docker-registry/root-ca.key' \
   -n docker-registry
 ```
 
@@ -38,7 +38,7 @@ kubectl create secret tls example.tls-secret \
 helm upgrade docker-registry stable/docker-registry -f <(yq m <(cat << EOF
 ingress:
   tls:
-    - secretName: example.tls-secret
+    - secretName: docker-registry.tls-secret
       hosts:
         - registry.${DOMAIN}
 EOF
@@ -50,7 +50,7 @@ EOF
 ```sh
 helm upgrade docker-registry stable/docker-registry -f <(yq d <(helm get values docker-registry) ingress.tls)
 
-kubectl delete secret example.tls-secret -n docker-registry
+kubectl delete secret docker-registry.tls-secret -n docker-registry
 ```
 
 ### Status

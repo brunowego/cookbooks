@@ -1,6 +1,11 @@
 # Design
 
 <!--
+https://zitadel.com/
+https://personizely.net/
+
+https://beta.openai.com/onboarding?next=%2Foverview -> Reproduce register
+
 https://infrahq.com/
 https://double.cloud/
 https://app.bitrise.io/users/sign_up

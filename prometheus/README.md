@@ -126,9 +126,9 @@ EOF
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls prometheus.tls-secret \
+  --cert='/etc/ssl/certs/prometheus/root-ca.crt' \
+  --key='/etc/ssl/private/prometheus/root-ca.key' \
   -n prometheus-system
 ```
 
@@ -137,14 +137,14 @@ helm upgrade prometheus stable/prometheus -f <(yq m <(cat << EOF
 alertmanager:
   ingress:
     tls:
-      - secretName: example.tls-secret
+      - secretName: prometheus.tls-secret
         hosts:
           - alertmanager.${DOMAIN}
 
 server:
   ingress:
     tls:
-      - secretName: example.tls-secret
+      - secretName: prometheus.tls-secret
         hosts:
           - prometheus.${DOMAIN}
 EOF
@@ -157,7 +157,7 @@ EOF
 helm upgrade prometheus stable/prometheus -f <(yq d <(helm get values prometheus) alertmanager.ingress.tls)
 helm upgrade prometheus stable/prometheus -f <(yq d <(helm get values prometheus) server.ingress.tls)
 
-kubectl delete secret example.tls-secret \
+kubectl delete secret prometheus.tls-secret \
   -n prometheus-system
 ```
 

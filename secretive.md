@@ -8,7 +8,7 @@ Not Support: Azure DevOps (RSA)
 https://github.com/sekey/sekey
 -->
 
-**Keywords:** Secure Enclave
+**Keywords:** Secure Enclave, SSH Manager, Store SSH keys
 
 ## Links
 

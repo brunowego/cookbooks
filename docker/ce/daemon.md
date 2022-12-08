@@ -2,9 +2,12 @@
 
 ## Dependencies
 
-### Windows
+### Dependencies
 
-- [Windows Subsystem Linux (WSL)](/microsoft/windows/wsl.md)
+- Ubuntu
+  - [Software Properties Common](/apt/software-properties-common.md#installation)
+- Windows
+  - [Windows Subsystem Linux (WSL)](/microsoft/windows/wsl.md)
 
 ## Installation
 
@@ -23,9 +26,7 @@ curl -fsSL 'https://download.docker.com/linux/ubuntu/gpg' | \
   sudo apt-key add - && sudo apt-key fingerprint 0EBFCD88
 
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-```
 
-```sh
 sudo apt update
 sudo apt -y install docker-ce
 ```

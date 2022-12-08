@@ -12,6 +12,23 @@ tctl help
 
 ```sh
 tctl status
+
+#
+tctl get clusters
+tctl get users
+tctl get user/admin
+tctl get roles --format text
+tctl get locks
+
+#
+tctl auth ls
+
+#
+tctl bots ls
+
+#
+tctl get cluster_auth_preference
+tctl get session_recording_config
 ```
 
 #### Users
@@ -33,8 +50,7 @@ tctl users update \
   '<username>'
 
 #
-tctl users reset \
-  '<username>'
+tctl users reset '<username>'
 
 #
 tctl users rm '<username>'

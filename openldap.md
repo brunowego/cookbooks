@@ -135,9 +135,9 @@ kubectl create ns openldap
 ```
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls openldap.tls-secret \
+  --cert='/etc/ssl/certs/openldap/root-ca.crt' \
+  --key='/etc/ssl/private/openldap/root-ca.key' \
   -n openldap
 ```
 
@@ -148,7 +148,7 @@ helm install openldap stable/openldap \
   --set env.LDAP_ORGANISATION='Example Inc.' \
   --set env.LDAP_DOMAIN=example.com
   # --set tls.enabled=true \
-  # --set tls.secret=example.tls-secret
+  # --set tls.secret=openldap.tls-secret
 ```
 
 ### NGINX Ingress
@@ -246,5 +246,3 @@ docker rm -f openldap
 
 docker volume rm openldap-data openldap-config openldap-certs
 ```
-
-

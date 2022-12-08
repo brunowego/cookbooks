@@ -3,6 +3,8 @@
 ## Dependencies
 
 - [hadolint](/hadolint.md)
+- Ubuntu
+  - [Software Properties Common](/apt/software-properties-common.md#installation)
 
 ## Installation
 

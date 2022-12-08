@@ -12,8 +12,8 @@ man ln
 
 ```sh
 # Symbolic
-ln -s [/path/to/target] [/path/to/symlink]
+ln -s </path/to/target> </path/to/symlink>
 
 # Remove symbolic link
-unlink [/path/to/symlink]
+unlink </path/to/symlink>
 ```

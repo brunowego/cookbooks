@@ -62,14 +62,14 @@ helm install gitlab-ce gitlab/gitlab \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls gitlab-ce.tls-secret \
+  --cert='/etc/ssl/certs/gitlab-ce/root-ca.crt' \
+  --key='/etc/ssl/private/gitlab-ce/root-ca.key' \
   -n gitlab
 ```
 
 ```sh
-helm upgrade gitlab-ce gitlab/gitlab -f <(yq w <(helm get values gitlab-ce) global.ingress.tls.secretName example.tls-secret)
+helm upgrade gitlab-ce gitlab/gitlab -f <(yq w <(helm get values gitlab-ce) global.ingress.tls.secretName gitlab-ce.tls-secret)
 ```
 
 #### Remove
@@ -77,7 +77,7 @@ helm upgrade gitlab-ce gitlab/gitlab -f <(yq w <(helm get values gitlab-ce) glob
 ```sh
 helm upgrade gitlab stable/gitlab -f <(yq d <(helm get values gitlab) spec.tls)
 
-kubectl delete secret example.tls-secret -n gitlab
+kubectl delete secret gitlab-ce.tls-secret -n gitlab
 ```
 
 ### Status

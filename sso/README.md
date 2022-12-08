@@ -22,6 +22,7 @@ Single sign-on (SSO) is an authentication scheme that allows a user to log in wi
 ## Glossary
 
 - Federated Identity Management (FIM)
+- Hardware Security Module (HSM)
 - Identity and Access Management (IAM)
 - Identity Provider (IdP)
 - Lightweight Directory Access Protocol (LDAP)

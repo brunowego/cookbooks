@@ -32,9 +32,9 @@ helm install couchdb stable/couchdb \
 #### Create
 
 ```sh
-kubectl create secret tls example.tls-secret \
-  --cert='/etc/ssl/certs/example/root-ca.crt' \
-  --key='/etc/ssl/private/example/root-ca.key' \
+kubectl create secret tls couchdb.tls-secret \
+  --cert='/etc/ssl/certs/couchdb/root-ca.crt' \
+  --key='/etc/ssl/private/couchdb/root-ca.key' \
   -n couchdb
 ```
 
@@ -42,7 +42,7 @@ kubectl create secret tls example.tls-secret \
 helm upgrade couchdb stable/couchdb -f <(yq m <(cat << EOF
 ingress:
   tls:
-    - secretName: example.tls-secret
+    - secretName: couchdb.tls-secret
       hosts:
         - couchdb.${DOMAIN}
 EOF
@@ -54,7 +54,7 @@ EOF
 ```sh
 helm upgrade couchdb stable/couchdb -f <(yq d <(helm get values couchdb) ingress.tls)
 
-kubectl delete secret example.tls-secret -n couchdb
+kubectl delete secret couchdb.tls-secret -n couchdb
 ```
 
 ### Status

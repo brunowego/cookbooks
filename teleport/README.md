@@ -4,7 +4,7 @@
 https://github.com/krzwiatrzyk/lib-cluster-manager/tree/main/k8s-apps/teleport/manifests
 -->
 
-**Keywords:** Bastion Host, IAP
+**Keywords:** Bastion Host, IAP, Access Plane
 
 ## Links
 
@@ -29,7 +29,7 @@ https://github.com/krzwiatrzyk/lib-cluster-manager/tree/main/k8s-apps/teleport/m
 
 - [Arguments Reference](https://github.com/gravitational/teleport/tree/master/examples/chart/teleport-cluster#arguments-reference)
 
-## Dependencies
+### Dependencies
 
 - [Cert Manager (cert-manager)](/cert-manager/README.md)
 
@@ -55,7 +55,7 @@ export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-cat << EOF | kubectl apply \
+[[ -n "${DOMAIN}" ]] && cat << EOF | kubectl apply \
   -n teleport-system \
   -f -
 ---
@@ -97,9 +97,9 @@ data:
 EOF
 
 #
-helm upgrade teleport-cluster teleport/teleport-cluster \
+[[ -n "${DOMAIN}" ]] && helm upgrade teleport-cluster teleport/teleport-cluster \
   --namespace teleport-system \
-  --version 11.1.1 \
+  --version 11.1.2 \
   -f <(cat << EOF
 clusterName: teleport.${DOMAIN}
 
@@ -111,9 +111,8 @@ chartMode: custom
 service:
   type: ClusterIP
 
-# extraArgs:
-#   - --insecure-no-tls
-#   - --insecure
+extraArgs:
+  - --insecure
 EOF
 )
 
@@ -141,7 +140,7 @@ kubectl logs \
 
 ```sh
 #
-cat << EOF | kubectl apply \
+[[ -n "${DOMAIN}" ]] && cat << EOF | kubectl apply \
   -n teleport-system \
   -f -
 ---
@@ -203,6 +202,7 @@ kubectl get deployment ingress-nginx-controller \
 - kube.teleport.${DOMAIN}
 - tunnel.teleport.${DOMAIN}
 - ssh.teleport.${DOMAIN}
+- mysql.teleport.${DOMAIN}
 -->
 
 #### Create App User
@@ -211,27 +211,43 @@ kubectl get deployment ingress-nginx-controller \
 #
 export POD_NAME=$(kubectl get po -l app=teleport-cluster -o jsonpath='{.items[0].metadata.name}' -n teleport-system)
 
+[[ -n "${POD_NAME}" ]] && kubectl exec "$POD_NAME" \
+  -n teleport-system \
+  -- tctl get roles --format text
+
 #
-kubectl exec "$POD_NAME" \
+[[ -n "${POD_NAME}" ]] && kubectl exec "$POD_NAME" \
   -n teleport-system \
   -- tctl users add \
     --logins 'root,ubuntu,ec2-user' \
-    --roles 'editor,access' \
+    --roles 'access,auditor,editor' \
     admin
 ```
 
 ### Delete
 
 ```sh
-helm uninstall teleport \
+helm uninstall teleport-cluster \
   -n teleport-system
 
 kubectl delete ns teleport-system \
   --grace-period=0 \
   --force
+
+kubectl delete pv "$(kubectl get pv -o json | jq -r '.items[] | select(.spec.claimRef.name=="teleport-cluster") | .metadata.name')"
 ```
 
 ## CLI
+
+### Dependencies
+
+- Linux
+  - [cURL](/curl.md)
+- Ubuntu
+  - [GNU Privacy Guard (GPG) or GNU Pretty Good Privacy (PGP)](/gnu-gpg.md)
+  - [Software Properties Common](/apt/software-properties-common.md#installation)
+- CentOS
+  - [yum-utils](/yum-utils.md)
 
 ### Installation
 
@@ -239,6 +255,25 @@ kubectl delete ns teleport-system \
 
 ```sh
 brew install teleport
+```
+
+#### APT
+
+```sh
+curl 'https://deb.releases.teleport.dev/teleport-pubkey.asc' | sudo apt-key add -
+sudo add-apt-repository 'deb https://deb.releases.teleport.dev/ stable main'
+
+sudo apt update
+sudo apt -y install teleport
+```
+
+#### YUM
+
+```sh
+sudo yum-config-manager --add-repo 'https://rpm.releases.teleport.dev/teleport.repo'
+
+yum check-update
+sudo yum -y install teleport
 ```
 
 #### Chocolatey
