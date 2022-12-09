@@ -41,6 +41,10 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 export AZURE_CONFIG_DIR="$HOME/.azure"
 ```
 
+```sh
+sudo su - "$USER"
+```
+
 ### Usage
 
 ```sh

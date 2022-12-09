@@ -4,10 +4,16 @@
 https://typo3.org/article/certificate-issue-with-composer/
 -->
 
+**Keywords:** PHP Package Manager
+
 ## Links
 
 - [Code Repository](https://github.com/composer/composer)
-- [Main Website](https://getcomposer.org/)
+- [Main Website](https://getcomposer.org)
+
+## Related
+
+- [Packagist](/packagist.md)
 
 ## CLI
 

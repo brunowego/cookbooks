@@ -80,3 +80,89 @@ docker volume rm \
   discourse-postgres-data \
   discourse-redis-data
 ```
+
+## Helm
+
+**WIP:** Currently not working as expected.
+
+### References
+
+- [Parameters](https://github.com/bitnami/charts/tree/main/bitnami/discourse#parameters)
+
+### Repository
+
+```sh
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
+helm repo update
+```
+
+### Install
+
+```sh
+#
+kubectl create ns discourse-system
+# kubectl create ns forum
+
+#
+helm search repo -l bitnami/discourse
+
+#
+export KUBERNETES_IP='<kubernetes-ip>'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
+
+#
+helm upgrade discourse bitnami/discourse \
+  --namespace discourse-system \
+  --version 9.0.4 \
+  -f <(cat << EOF
+ingress:
+  enabled: true
+  ingressClassName: nginx
+  hostname: discourse.${DOMAIN}
+EOF
+)
+
+#
+kubectl get all -n discourse-system
+```
+
+### Status
+
+```sh
+kubectl rollout status deployment/discourse \
+  -n discourse-system
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app.kubernetes.io/instance=discourse,app.kubernetes.io/name=discourse' \
+  -c discourse \
+  -n discourse-system \
+  -f
+```
+
+### Secret
+
+<!--
+username: user
+-->
+
+```sh
+kubectl get secret discourse-discourse \
+  -o jsonpath='{.data.discourse-password}' \
+  -n discourse-system | \
+    base64 -d; echo
+```
+
+### Delete
+
+```sh
+helm uninstall discourse \
+  -n discourse-system
+
+kubectl delete ns discourse-system \
+  --grace-period=0 \
+  --force
+```

@@ -2,6 +2,7 @@
 
 <!--
 https://hunter.io/blog/how-to-find-someones-email-address/#1-use-an-email-lookup-tool
+https://github.com/forwardemail/email-templates
 -->
 
 ## Local Server

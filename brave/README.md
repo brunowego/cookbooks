@@ -12,6 +12,8 @@ brave://flags
 
 ## App
 
+**Tip:** If a specific site is slow, try another browser.
+
 ### Installation
 
 #### Homebrew

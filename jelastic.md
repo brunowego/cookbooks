@@ -54,3 +54,13 @@ Host gate.jelastic.saveincloud.net
     IdentityFile ~/.ssh/id_rsa.<company-name>
 EOF
 ```
+
+### Issues
+
+#### When Update Let's Encrypt Free SSL
+
+```log
+An unknown error has occurred. Please try again later
+```
+
+Verify if every domain in "Configure" are responding to `ping`.

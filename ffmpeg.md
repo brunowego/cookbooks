@@ -12,7 +12,7 @@
 #### Homebrew
 
 ```sh
-brew install ffmpeg --with-libvpx --with-libvorbis --with-fdk-aacc
+brew install ffmpeg
 ```
 
 #### APT
@@ -34,6 +34,12 @@ sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release
 sudo yum -y install ffmpeg ffmpeg-devel
 ```
 
+#### Chocolatey
+
+```sh
+choco install -y ffmpeg
+```
+
 ### Commands
 
 ```sh
@@ -45,17 +51,30 @@ ffmpeg -h
 ```sh
 # Video/Audio Info
 ffprobe -i ./video.mp4
+```
 
-# Extract JPEG
+### Tips
+
+#### Extract
+
+```sh
+# JPEG
 ffmpeg -ss 60 -i ./video.mp4 -qscale:v 4 -frames:v 1 ./output.jpg
 
-# Grab MPG from DVD
-dvdbackup  -M -i /dev/sr0 -o ~/Videos/dvd-backup
+# Audio
+ffmpeg -i ./video.mp4 -vn -c:a copy ./output.aac
 
-## Convert VOB to MPG
+# Cut
+ffmpeg -ss 00:00:05 -i ./video.mp4 -c copy -t 00:02:00 ./cut.mov
+```
+
+#### Convert
+
+```sh
+# VOB to MPG
 ffmpeg -i VTS_01_1.VOB -c:v copy -c:a copy -f dvd VTS_01_1.MPG
 
-# Convert MP4 to WebM
+# MP4 to WebM
 find ./ -name '*.mp4' -exec bash -c '$(cat << EOF
 ffmpeg \
   -i $0 \
@@ -69,17 +88,18 @@ ffmpeg \
 EOF
 )' {} \;
 
-# Extract Audio
-ffmpeg -i ./video.mp4 -vn -c:a copy ./output.aac
+# MKV to MP4
+ffmpeg -i ./output.mkv -codec copy ./output.mp4
 
-# Cut
-ffmpeg -ss 00:00:05 -i ./video.mp4 -c copy -t 00:02:00 ./cut.mov
+# Grab MPG from DVD
+dvdbackup  -M -i /dev/sr0 -o ~/Videos/dvd-backup
+```
 
+#### Miscellaneous
+
+```sh
 # Add Thumbnail
 ffmpeg -i ./video.mp4 -i ./image.png -map 1 -map 0 -c copy -disposition:0 attached_pic ./output.mp4
-
-# Convert
-ffmpeg -i ./output.mkv -codec copy ./output.mp4
 
 # FPS
 ffprobe -i ./output.mp4 -print_format json -loglevel fatal -show_streams -count_frames
@@ -98,7 +118,21 @@ ffmpeg \
   /tmp/out.jpg
 ```
 
-### Issues
+#### Generate Video for Upload Test
+
+```sh
+# Small
+ffmpeg -f lavfi -i testsrc=duration=10:size=1280x720:rate=30 ./testsrc.mpg
+ffmpeg -f lavfi -i testsrc=duration=5.3:size=qcif:rate=10 ./testsrc.mp4
+ffmpeg -f lavfi -i smptebars=duration=10:size=640x360:rate=30 ./smptebars.mp4
+ffmpeg -f lavfi -i color=c=red@0.2:duration=5:s=qcif:r=10 ./color.mp4
+ffmpeg -f lavfi -i rgbtestsrc -pix_fmt yuv420p -t 5 ./rgbtestsrc.mp4
+
+# Large
+ffmpeg -f lavfi -i testsrc=duration=600:size=3840x2160:rate=60 ./testsrc.mpg
+```
+
+<!-- ### Issues -->
 
 <!-- ####
 

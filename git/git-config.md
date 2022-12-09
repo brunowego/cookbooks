@@ -30,6 +30,8 @@ git config --global credential.helper 'cache'
 git config --global credential.helper 'osxkeychain' # Darwin
 git config --global credential.helper 'manager-core' # Windows
 
+git config --global credential.credentialStore gpg
+
 #
 git config --global push.default 'current'
 
