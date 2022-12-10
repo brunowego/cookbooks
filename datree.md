@@ -1,6 +1,6 @@
 # Datree
 
-**Keywords:** Helm Plugin, Validate Helm Chart
+**Keywords:** Helm Plugin, Kubernetes Policy Management
 
 ## Links
 
@@ -33,7 +33,10 @@ helm datree -h
 
 ```sh
 #
-helm datree test <chart-directory> -- --values ./values.yaml --set <parameter>=<value>
+helm datree test <chart-directory> \
+    -- \
+        --values ./values.yaml \
+        --set <parameter>=<value>
 ```
 
 ## CLI

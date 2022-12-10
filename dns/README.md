@@ -34,6 +34,24 @@ https://public-dns.info/
 | Alternate DNS | 76.76.19.19    | 76.223.122.150  |
 | AdGuard DNS   | 94.140.14.14   | 94.140.15.15    |
 
+## Resource Record
+
+| Name  | Description    |
+| ----- | -------------- |
+| CNAME | Canonical Name |
+| MX    | Mail Exchange  |
+
+<!--
+A
+AAAA
+NS
+PTR
+SOA
+TXT
+SPF
+SRV
+-->
+
 ## Tips
 
 ### Flush DNS Cache

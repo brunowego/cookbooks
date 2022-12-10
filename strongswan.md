@@ -1,5 +1,8 @@
 # strongSwan
 
+**Keywords:** L2TP/IPsec
+
 ## Links
 
-- [Main Website](https://strongswan.org/)
+- [Code Repository](https://github.com/strongswan/strongswan)
+- [Main Website](https://strongswan.org)

@@ -1,6 +1,6 @@
 # Unix
 
-##
+## Notes
 
 - Unix Filename Pattern Matching (fnmatch syntax)
 
@@ -13,7 +13,7 @@
 ls -i
 
 #
-stat [filename]
+stat <filename>
 
 #
 df -hi

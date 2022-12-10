@@ -3,6 +3,7 @@
 ## Links
 
 - [Main Website](https://teams.microsoft.com/)
+- [Microsoft 365](https://office.com)
 
 ## App
 
@@ -113,3 +114,13 @@ dscl . list /Users | grep -v '^_'
 #
 sudo -u root bash -c 'open /Applications/Microsoft\ Teams.app/Contents/MacOS/Teams'
 ```
+
+### Issues
+
+#### Brave's Provacy Protections
+
+```sh
+To open the web app, change your browser settings to allow third-party cookies or allow certain trusted domains.
+```
+
+If you are using Brave Browser, disable the Brave shield.

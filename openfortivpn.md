@@ -1,6 +1,6 @@
 # openfortivpn
 
-**Keywords:** VPN Client
+**Keywords:** PPP-over-SSL
 
 ## Links
 

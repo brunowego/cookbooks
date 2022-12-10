@@ -4,19 +4,44 @@
 
 - [SMTP transport example](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol#SMTP_transport_example)
 
-## Test
+## Glossary
+
+- Top-Level Domain (TLD)
+
+## Assessment
+
+```sh
+#
+export TLD='yandex.com'
+```
+
+### Test
+
+```sh
+#
+nslookup -type=mx "$TLD"
+
+#
+dig "$TLD" mx
+
+#
+nc smtp."$TLD" 25
+nc smtp."$TLD" 587
+
+#
+openssl s_client -connect smtp."$TLD":25 -starttls smtp
+openssl s_client -connect smtp."$TLD":587 -starttls smtp
+```
 
 ### Send Email
 
 ```sh
 #
-nmap -p 25,587 127.0.0.1
+nmap -p 25,587 "$TLD"
 
 #
-telnet 127.0.0.1 25
-
-#
-telnet 127.0.0.1 587
+telnet "$TLD" 25
+telnet "$TLD" 587
 ```
 
 ```txt

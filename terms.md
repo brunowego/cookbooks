@@ -90,7 +90,6 @@
 - Time-to-live (TTL)
 - To Be Decided or To Be Determined (TBD)
 - Too Long; Didn't Read (TLDR or TL;DR) / Too Rambley; Didn't Listen (TLDL or TL;DL)
-- Top-Level Domain (TLD)
 - Uniform Resource Identifier (URI)
 - Uniform Resource Locator (URL)
 - Uniform Resource Name (URN)

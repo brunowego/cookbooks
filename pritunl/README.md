@@ -1,5 +1,7 @@
 # Pritunl
 
+**Keywords:** OpenVPN, L2TP/IPsec, WireGuard
+
 ## Link
 
 - [Code Repository](https://github.com/pritunl/pritunl)

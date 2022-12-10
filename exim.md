@@ -28,8 +28,8 @@ docker run -d \
   -h mail \
   -e RELAY_HOST='smtp.gmail.com' \
   -e RELAY_PORT='587' \
-  -e RELAY_USERNAME='[username]@gmail.com' \
-  -e RELAY_PASSWORD='[password]' \
+  -e RELAY_USERNAME='<username>@gmail.com' \
+  -e RELAY_PASSWORD='<password>' \
   -p 25:25 \
   --name mail \
   docker.io/bytemark/smtp:latest
@@ -54,7 +54,7 @@ AUTH LOGIN
 ```txt
 EHLO mail.example.com
 MAIL FROM: <noreply@example.com>
-RCPT TO: <[username]@example.com>
+RCPT TO: <<username>@example.com>
 DATA
 Subject: Sending an email using exim
 

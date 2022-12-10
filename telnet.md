@@ -1,32 +1,8 @@
 # Telnet
 
-## Docker
+## Links
 
-### Running
-
-```sh
-docker run -it --rm \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h telnet \
-  --name telnet \
-  docker.io/brunowego/telnet:1.29.3-r10
-```
-
-### Remove
-
-```sh
-docker rm -f telnet
-```
-
-## Kubectl
-
-### Running
-
-```sh
-kubectl run -it \
-  telnet \
-  --image docker.io/brunowego/telnet:1.29.3-r10
-```
+- [Wikipedia](https://en.wikipedia.org/wiki/Telnet)
 
 ## CLI
 
@@ -75,5 +51,33 @@ man telnet
 
 ```sh
 #
-telnet [host] [port]
+telnet <host> <port>
+```
+
+## Docker
+
+### Running
+
+```sh
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h telnet \
+  --name telnet \
+  docker.io/brunowego/telnet:1.29.3-r10
+```
+
+### Remove
+
+```sh
+docker rm -f telnet
+```
+
+## Kubectl
+
+### Running
+
+```sh
+kubectl run -it \
+  telnet \
+  --image docker.io/brunowego/telnet:1.29.3-r10
 ```
