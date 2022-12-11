@@ -1,5 +1,56 @@
 # Jekyll
 
+## Links
+
+- [Code Repository](https://github.com/jekyll/jekyll)
+- [Main Website](https://jekyllrb.com)
+
+## CLI
+
+### Dependencies
+
+- [Bundler (RubyGems)](/rubygems/bundler.md)
+
+### Installation
+
+#### Bundler
+
+```sh
+bundle add jekyll
+```
+
+### Commands
+
+```sh
+bundle exec jekyll -h
+```
+
+### Configuration
+
+```sh
+#
+bundle add jekyll-theme-slate
+
+#
+cat << EOF >> ./.gitignore
+/_site
+/.jekyll-cache
+EOF
+```
+
+### Usage
+
+```sh
+#
+bundle exec jekyll new ./
+
+#
+bundle exec jekyll serve
+
+#
+bundle exec jekyll build
+```
+
 ## Docker
 
 ### Network

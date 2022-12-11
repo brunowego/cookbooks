@@ -27,7 +27,7 @@ helm install ./ -n netdata \
 ### Port Forward
 
 ```sh
-kubectl port-forward svc/netdata --address 0.0.0.0 19999:19999 > /dev/null &
+kubectl port-forward svc/netdata --address 0.0.0.0 19999:19999 >/dev/null &
 ```
 
 ## Delete

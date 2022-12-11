@@ -4,7 +4,7 @@
 https://artifacthub.io/packages/helm/gabe565/headscale
 -->
 
-**Keywords:** Zero Config VPN
+**Keywords:** Zero Config VPN, WireGuard
 
 ## Links
 

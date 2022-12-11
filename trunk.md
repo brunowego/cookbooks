@@ -4,6 +4,7 @@
 
 - [Org. Repository](https://github.com/trunk-io)
 - [Main Website](https://trunk.io/)
+- [Docs](https://docs.trunk.io/docs)
 
 ## CLI
 
@@ -64,6 +65,13 @@ trunk daemon
 ```
 
 ### Tips
+
+#### Git Hooks
+
+```sh
+#
+trunk git-hooks sync
+```
 
 #### Visual Studio Code
 

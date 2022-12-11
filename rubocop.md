@@ -13,12 +13,6 @@
 
 ### Installation
 
-#### RubyGems
-
-```sh
-gem install rubocop
-```
-
 #### Bundler
 
 ```sh
@@ -28,46 +22,47 @@ bundle add rubocop
 ### Commands
 
 ```sh
-rubocop -h
+bundle exec rubocop -h
 ```
 
 ### Initialize
 
 ```sh
 #
-rubocop --init
+bundle exec rubocop --init
 ```
 
 ### Configuration
 
-**Refer:** `./.rubocop.yml`
-
-```yml
+```sh
+#
+cat << EOF > ./.rubocop.yml
 ---
 AllCops:
   NewCops: enable
+EOF
 ```
 
 ### Usage
 
 ```sh
 # List targets
-rubocop -L ./
+bundle exec rubocop -L ./
 
 #
-rubocop ./
+bundle exec rubocop ./
 
 # Only lint cops
-rubocop -l ./
+bundle exec rubocop -l ./
 
 # Auto-correct
-rubocop -a ./
+bundle exec rubocop -a ./
 
 # Fix-layout
-rubocop -x ./
+bundle exec rubocop -x ./
 
 #
-rubocop --only 'Style/StringLiterals' ./
+bundle exec rubocop --only 'Style/StringLiterals' ./
 ```
 
 ### Tips

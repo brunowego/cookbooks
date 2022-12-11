@@ -24,7 +24,7 @@ TODO NEXT
 
 **WIP:** Currently not working as expected.
 
-### Dependencies
+<!-- ### Dependencies
 
 - [PostgreSQL Client](/postgresql/client.md#cli)
 - [PostgreSQL Server](/postgresql/server.md#helm)
@@ -52,16 +52,16 @@ PGPASSWORD='backstage' psql \
   -U backstage \
   -d 'backstage_plugin_catalog' \
   -c 'SELECT version()'
-```
+``` -->
 
 ### References
 
-- [Values](https://github.com/deliveryhero/helm-charts/tree/master/stable/backstage#values)
+- [Chart Repository](https://github.com/backstage/charts/blob/main/charts/backstage)
 
 ### Repository
 
 ```sh
-helm repo add deliveryhero 'https://charts.deliveryhero.io'
+helm repo add backstage 'https://backstage.github.io/charts'
 helm repo update
 ```
 
@@ -73,38 +73,21 @@ kubectl create ns backstage-system
 # kubectl create ns catalog
 
 #
-helm search repo -l deliveryhero/backstage
+helm search repo -l backstage/backstage
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-helm install backstage . \
+helm install backstage backstage/backstage \
   --namespace backstage-system \
-  --version 0.1.12 \
+  --version 0.6.2 \
   -f <(cat << EOF
-appConfig:
-  app:
-    baseUrl: http://backstage.${DOMAIN}
-    title: Backstage
-  backend:
-    baseUrl: http://backstage.${DOMAIN}
-    cors:
-      origin: http://backstage.${DOMAIN}
-    database:
-      client: pg
-      connection:
-        database: backstage_plugin_catalog
-        host: postgresql.psql-system.svc.cluster.local
-        user: backstage
-        port: 5432
-        password: backstage
-  lighthouse:
-    baseUrl: http://backstage.${DOMAIN}/lighthouse-api
-  techdocs:
-    storageUrl: http://backstage.${DOMAIN}/api/techdocs/static/docs
-    requestUrl: http://backstage.${DOMAIN}/api/techdocs
+ingress:
+  enabled: true
+  className: nginx
+  host: backstage.${DOMAIN}
 EOF
 )
 
@@ -115,7 +98,7 @@ kubectl get all -n backstage-system
 ### Status
 
 ```sh
-kubectl rollout status deploy/backstage-backend \
+kubectl rollout status deployment/backstage \
   -n backstage-system
 ```
 
@@ -128,14 +111,14 @@ kubectl logs \
   -f
 ```
 
-### Secret
+<!-- ### Secret
 
 ```sh
 kubectl get secret backstage-backend \
   -o jsonpath='{.data.admin-password}' \
   -n backstage-system | \
     base64 -d; echo
-```
+``` -->
 
 ### Delete
 

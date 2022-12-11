@@ -4,10 +4,10 @@
 
 ```sh
 # simple
-[command] > /dev/null
+[command] >/dev/null
 
 #
-[command] > /dev/null 2>&1
+[command] >/dev/null 2>&1
 ```
 
 ## Arch

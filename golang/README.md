@@ -34,11 +34,11 @@ Efficient compilation, Efficient execution and Ease of programming.
 
 - [Go Version Management (goenv)](/goenv.md)
 
-## Terms
+## Glossary
 
-- GOOS
-- GOARCH
-- CGO
+- Clang Golang (CGO)
+- Golang Architecture (GOARCH)
+- Golang Operation System (GOOS)
 
 ## Docker
 
@@ -144,7 +144,10 @@ go doc json.Decoder
 
 ```sh
 #
-code --install-extension golang.go
+code --install-extension golang.Go
+
+#
+jq '."recommendations" += ["golang.Go"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 <!--

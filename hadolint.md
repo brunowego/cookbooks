@@ -78,7 +78,7 @@ LABEL maintainer="John Doe <johndoe@example.com>"
 ```
 
 <!--
-if command -v docker > /dev/null; then
+if command -v docker >/dev/null; then
   npm run lint:docker
 fi
 -->

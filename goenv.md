@@ -2,6 +2,10 @@
 
 **Keywords:** Golang Version Manager
 
+## Links
+
+- [Code Repository](https://github.com/syndbg/goenv)
+
 ## CLI
 
 ### Installation
@@ -29,6 +33,7 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 ```sh
 # goenv
 export GOENV_ROOT="$HOME/.goenv"
+export GOENV_GOPATH_PREFIX="$HOME/.go"
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
 export PATH="$GOROOT/bin:$PATH"
@@ -60,6 +65,9 @@ goenv versions
 
 # Global
 goenv global <version>
+
+# Rehash
+goenv rehash <version>
 
 # Uninstall
 goenv uninstall -f <version>

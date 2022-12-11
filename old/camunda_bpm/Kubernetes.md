@@ -92,5 +92,5 @@ EOF
 kubectl port-forward svc/camunda-service \
   --address 0.0.0.0 \
   8080:8080 \
-    > /dev/null &
+    >/dev/null &
 ```

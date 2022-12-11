@@ -19,6 +19,11 @@ kubectl get helmrelease/<name> -n <namespace> -o yaml | \
     helm upgrade -i <release name> -f - <chart>
 -->
 
+## Links
+
+- [Code Repository](https://github.com/helm/helm)
+- [Main Website](https://helm.sh)
+
 ## Alternatives
 
 - [Kustomize](/kustomize.md)
@@ -113,12 +118,6 @@ pkill helm
 
 ### Tips
 
-#### Remove All Repos
-
-```sh
-helm repo list | tail -n +2 | awk '{ print $1 }' | xargs helm repo remove
-```
-
 #### Force Redeploy
 
 ```sh
@@ -147,16 +146,6 @@ helm plugin uninstall <name>
 #
 helm history
 ``` -->
-
-#### Clean Cache
-
-```sh
-#
-rm -fR "$(helm env HELM_REPOSITORY_CACHE)"/*
-
-#
-helm repo update
-```
 
 #### Upgrade Helm
 
@@ -514,7 +503,7 @@ sudo chmod a+w /etc/ssl/{certs,private}/example
 openssl s_client \
   -connect chartmuseum.example.com:443 \
   -showcerts \
-  -servername chartmuseum.example.com < /dev/null 2> /dev/null | \
+  -servername chartmuseum.example.com < /dev/null 2>/dev/null | \
     openssl x509 -outform PEM > /etc/ssl/certs/example/root-ca.pem
 ```
 

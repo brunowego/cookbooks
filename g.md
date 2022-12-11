@@ -38,7 +38,9 @@ sudo su - "$USER"
 
 ```sh
 mkdir -p "$GOPATH" "$GOBIN"
+
 sudo mkdir -p /usr/local/go
+
 sudo chown -R "$(whoami)" /usr/local/go
 ```
 

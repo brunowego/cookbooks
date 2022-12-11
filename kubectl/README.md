@@ -49,7 +49,7 @@ For Bash or Zsh, put something like this in your `$HOME/.zshrc`:
 
 ```sh
 # Kubernetes Control (kubectl)
-command -v kubectl > /dev/null && source <(kubectl completion zsh) # bash
+command -v kubectl >/dev/null && source <(kubectl completion zsh) # bash
 alias k=kubectl
 ```
 

@@ -36,7 +36,7 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 
 ```sh
 # Show Java Home (Darwin/Linux)
-java -XshowSettings:properties -version 2>&1 > /dev/null | grep 'java.home'
+java -XshowSettings:properties -version 2>&1 >/dev/null | grep 'java.home'
 
 # Complete Info (Darwin)
 /usr/libexec/java_home -V

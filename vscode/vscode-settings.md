@@ -71,9 +71,6 @@ jq '."workbench.editor.splitInGroupLayout" |= "vertical"' "$HOME"/.vscode/settin
 # Trim Final Newlines
 # jq '."files.trimFinalNewlines" |= true' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 
-# Exclude
-# jq '."files.exclude"."**/.git" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
-
 # Associations
 # jq '."files.associations"."*.cnf" |= "ini"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 

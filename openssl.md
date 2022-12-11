@@ -117,7 +117,7 @@ openssl s_client \
 openssl s_client \
   -connect <hostname>:443 \
   -showcerts \
-  -servername <hostname> < /dev/null 2> /dev/null | \
+  -servername <hostname> < /dev/null 2>/dev/null | \
     openssl x509 -outform PEM > <filename>.pem
 ```
 

@@ -84,7 +84,7 @@ vagrant ssh -c '[path/to/exec]'
 #### Show IP
 
 ```sh
-vagrant ssh -c 'hostname -I | cut -d " " -f 2' 2> /dev/null
+vagrant ssh -c 'hostname -I | cut -d " " -f 2' 2>/dev/null
 ```
 
 #### Debug

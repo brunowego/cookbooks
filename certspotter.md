@@ -11,7 +11,7 @@
 
 ### Installation
 
-#### Homebrew
+#### go get
 
 ```sh
 GOBIN=/usr/local/bin go install software.sslmate.com/src/certspotter/cmd/certspotter@latest

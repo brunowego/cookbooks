@@ -122,7 +122,7 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 
 ```sh
 # direnv
-command -v direnv > /dev/null && eval "$(direnv hook zsh)" # bash
+command -v direnv >/dev/null && eval "$(direnv hook zsh)" # bash
 ```
 
 ```sh

@@ -8,6 +8,10 @@
 
 - [Org. Repository](https://github.com/dependabot)
 
+## Docs
+
+- [Configuration options for the dependabot.yml file](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file)
+
 ## Configuration
 
 **Refer:** `./.github/dependabot.yml`

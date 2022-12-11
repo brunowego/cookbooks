@@ -127,6 +127,7 @@ EOF
 cat << EOF | kubectl apply \
   -n logging \
   -f -
+---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

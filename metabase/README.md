@@ -244,7 +244,7 @@ yarn build
 lein ring server
 # nohup lein ring server &
 # nohup lein ring server-headless &
-# nohup lein ring server-headless 8080 > /dev/null 2>&1 &
+# nohup lein ring server-headless 8080 >/dev/null 2>&1 &
 
 #
 rm ./metabase.db.*

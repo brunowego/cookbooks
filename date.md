@@ -17,4 +17,7 @@ man date
 ```sh
 #
 date -R
+
+#
+date +'%Y'
 ```

@@ -1,8 +1,10 @@
 # Darwin
 
-##
+## Configuration
 
+<!--
 https://vitess.io/docs/tutorials/local/
+-->
 
 ```sh
 brew install pkg-config

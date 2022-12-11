@@ -17,18 +17,6 @@ Podfile
 
 ### Installation
 
-#### Homebrew
-
-```sh
-brew install cocoapods
-```
-
-#### RubyGems
-
-```sh
-gem install cocoapods
-```
-
 #### Bundler
 
 ```sh
@@ -38,32 +26,32 @@ bundler add cocoapods
 ### Commands
 
 ```sh
-pod --help
+bundle exec pod --help
 ```
 
 ### Initialize
 
 ```sh
 #
-pod init
+bundle exec pod init
 
 #
-pod setup
+bundle exec pod setup
 ```
 
 ### Usage
 
 ```sh
 #
-pod env
+bundle exec pod env
 
 #
-pod repo list
-pod repo update
-pod repo update <name>
+bundle exec pod repo list
+bundle exec pod repo update
+bundle exec pod repo update <name>
 
 # Install Dependencies
-pod install
+bundle exec pod install
 ```
 
 <!--
@@ -87,7 +75,7 @@ You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.
 #
 rm -fR ~/.cocoapods/repos/master
 
-pod setup
+bundle exec pod setup
 ```
 
 ### Uninstall

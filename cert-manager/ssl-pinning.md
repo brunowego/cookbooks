@@ -23,7 +23,7 @@ openssl s_client \
 openssl s_client \
   -connect "$DOMAIN":443 \
   -showcerts \
-  -servername "$DOMAIN" < /dev/null 2> /dev/null | \
+  -servername "$DOMAIN" < /dev/null 2>/dev/null | \
     openssl x509 -outform DER > "$DOMAIN".der
 
 #
@@ -42,7 +42,7 @@ kubectl cert-manager renew "$K8S_SECRET_NAME"
 openssl s_client \
   -connect "$DOMAIN":443 \
   -showcerts \
-  -servername "$DOMAIN" < /dev/null 2> /dev/null | \
+  -servername "$DOMAIN" < /dev/null 2>/dev/null | \
     openssl x509 -outform DER > "$DOMAIN"-new.der
 
 #

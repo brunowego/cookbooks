@@ -256,6 +256,18 @@ jq '."search.exclude"."**/.git" |= true' "$PWD"/.vscode/settings.json | \
   sponge "$PWD"/.vscode/settings.json
 ```
 
+##### Files Exclusion
+
+```sh
+# Globally
+jq '."files.exclude"."**/.git" |= false' "$HOME"/.vscode/settings.json | \
+  sponge "$HOME"/.vscode/settings.json
+
+# Locally
+jq '."files.exclude"."**/.git" |= false' "$PWD"/.vscode/settings.json | \
+  sponge "$PWD"/.vscode/settings.json
+```
+
 ##### Recommended Extensions
 
 ```sh

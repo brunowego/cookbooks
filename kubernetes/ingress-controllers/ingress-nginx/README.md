@@ -123,6 +123,21 @@ prometheus.io/port: "10254"
 
 ### Issues
 
+#### Incompatibility on API Version
+
+```log
+Error: INSTALLATION FAILED: unable to build kubernetes objects from release manifest: [resource mapping not found for name: "<resource>" namespace: "" from "": no matches for kind "Ingress" in version "networking.k8s.io/v1beta1"
+ensure CRDs are installed first]
+```
+
+```sh
+kubectl resource-versions | grep apiextensions.k8s.io/v1beta1
+kubectl resource-versions | grep apiextensions.k8s.io/v1
+
+kubectl resource-versions | grep rbac.authorization.k8s.io/v1beta1
+kubectl resource-versions | grep rbac.authorization.k8s.io/v1
+```
+
 #### Entity Too Large
 
 ```log

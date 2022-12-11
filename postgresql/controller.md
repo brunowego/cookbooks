@@ -58,22 +58,6 @@ kubectl logs \
 
 ### Issues
 
-#### Incompatibility on API Version
-
-```log
-Error: INSTALLATION FAILED: unable to build kubernetes objects from release manifest: [resource mapping not found for name: "pgdatabases.postgresql.org" namespace: "" from "": no matches for kind "CustomResourceDefinition" in version "apiextensions.k8s.io/v1beta1"
-ensure CRDs are installed first, resource mapping not found for name: "postgres-controller" namespace: "" from "": no matches for kind "ClusterRoleBinding" in version "rbac.authorization.k8s.io/v1beta1"
-ensure CRDs are installed first]
-```
-
-```sh
-kubectl resource-versions | grep apiextensions.k8s.io/v1beta1
-kubectl resource-versions | grep apiextensions.k8s.io/v1
-
-kubectl resource-versions | grep rbac.authorization.k8s.io/v1beta1
-kubectl resource-versions | grep rbac.authorization.k8s.io/v1
-```
-
 ### Delete
 
 ```sh

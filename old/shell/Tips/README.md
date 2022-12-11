@@ -68,7 +68,7 @@ echo $$
 ## Save PID File
 
 ```sh
-[command] > /dev/null 2>&1 & echo "$!" > run.pid
+[command] >/dev/null 2>&1 & echo "$!" > run.pid
 ```
 
 ## Reload shell
@@ -124,9 +124,9 @@ fi
 
 ## Replacement Rules
 
-| | `$variable=hello` | `$variable` is unset |
-| --- | --- | --- |
-| `$variable` | hello | "" |
-| `${variable}` | hello | "" |
-| `${variable:+default}` | hello | default |
-| `${variable:-default}` | default | "" |
+|                        | `$variable=hello` | `$variable` is unset |
+| ---------------------- | ----------------- | -------------------- |
+| `$variable`            | hello             | ""                   |
+| `${variable}`          | hello             | ""                   |
+| `${variable:+default}` | hello             | default              |
+| `${variable:-default}` | default           | ""                   |

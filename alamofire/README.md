@@ -24,7 +24,7 @@ openssl s_client \
 openssl s_client \
   -connect <domain>:443 \
   -showcerts \
-  -servername <domain> < /dev/null 2> /dev/null | \
+  -servername <domain> < /dev/null 2>/dev/null | \
     openssl x509 -outform DER > <filename>.der
 ```
 

@@ -15,21 +15,21 @@
 
 ### Installation
 
-#### RubyGems
+#### Bundler
 
 ```sh
-gem install brakeman
+bundle add rubocop
 ```
 
 ### Commands
 
 ```sh
-brakeman -h
+bundle exec brakeman -h
 ```
 
 ### Usage
 
 ```sh
 #
-brakeman </path/to/ruby/app>
+bundle exec brakeman </path/to/ruby/app>
 ```

@@ -17,7 +17,7 @@ lxc -h
 <!-- ##
 
 ```sh
-vagrant ssh -c 'hostname -I | cut -d " " -f 2' 2> /dev/null
+vagrant ssh -c 'hostname -I | cut -d " " -f 2' 2>/dev/null
 ```
 
 ```sh

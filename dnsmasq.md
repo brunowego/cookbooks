@@ -110,7 +110,7 @@ dnsmasq --test
 ```
 
 ```sh
-pgrep dnsmasq > /dev/null && echo 'running' || echo 'not running'
+pgrep dnsmasq >/dev/null && echo 'running' || echo 'not running'
 ```
 
 ```sh

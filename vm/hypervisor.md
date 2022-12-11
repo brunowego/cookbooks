@@ -13,7 +13,7 @@
 ### Bare-metal Hypervisor (Type-1 / Hardware)
 
 - [KVM](/kvm.md)
-- [Microsoft Windows Server 2012 Hyper-V](/microsoft/hyper-v.md)
+- [Microsoft Hyper-V](/microsoft/hyper-v.md)
 - [Proxmox Virtual Environment (VE)](/proxmox/virtual-environment.md)
 - [Red Hat Enterprise Virtualization (RHEV)](./)
 - [VMware ESXi](https://vmware.com/products/esxi-and-esx.html)

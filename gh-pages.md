@@ -27,7 +27,7 @@ npx gh-pages -h
 gh-pages \
   -d ./dist \
   -e ./ \
-  -r 'https://github.com/[]/[repository].git'
+  -r 'https://github.com/<org-or-username>/<repository>.git'
 ```
 
 ### Tips
@@ -40,7 +40,7 @@ echo 'my.domain.com' > ./public/CNAME
 
 #
 git remote -v
-git remote add pages 'https://github.com/[]/[repository].git'
+git remote add pages 'https://github.com/<org-or-username>/<repository>.git'
 ```
 
 **Refer:** `./package.json`
@@ -59,15 +59,17 @@ For `grunt-contrib-copy` with `copy.js` task:
 ```js
 module.exports = {
   build: {
-    files: [{
-      expand: true,
-      dot: true,
-      cwd: './public',
-      dest: './dist',
-      src: 'CNAME'
-    }]
-  }
-};
+    files: [
+      {
+        expand: true,
+        dot: true,
+        cwd: './public',
+        dest: './dist',
+        src: 'CNAME',
+      },
+    ],
+  },
+}
 ```
 
 ```sh
@@ -90,5 +92,5 @@ npm run deploy
 ```sh
 | Type | Host | Value | TTL |
 | --- | --- | --- | --- |
-| CNAME | `[subdomain]` | `[username].github.io` | 600 seconds |
+| CNAME | `<subdomain>` | `<org-or-username>.github.io` | 600 seconds |
 ```

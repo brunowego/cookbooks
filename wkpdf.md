@@ -7,7 +7,7 @@
 #### RubyGems
 
 ```sh
-sudo gem install wkpdf
+gem install wkpdf
 ```
 
 ### Usage

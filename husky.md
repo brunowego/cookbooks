@@ -1,10 +1,5 @@
 # Husky
 
-## Alternatives
-
-- [pre-commit](/pre-commit.md)
-- git-hooks
-
 ## Links
 
 - [Code Repository](https://github.com/typicode/husky)

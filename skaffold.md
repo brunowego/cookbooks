@@ -95,7 +95,7 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 
 ```sh
 # Skaffold
-command -v skaffold > /dev/null && source <(skaffold completion zsh) # bash
+command -v skaffold >/dev/null && source <(skaffold completion zsh) # bash
 ```
 
 ```sh

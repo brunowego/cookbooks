@@ -4,8 +4,8 @@
 
 ### Installation
 
-#### RubyGems
+#### Bundler
 
 ```sh
-gem install mailcatcher
+bundle add mailcatcher
 ```

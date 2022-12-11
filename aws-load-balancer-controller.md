@@ -101,6 +101,7 @@ export AWS_CERTIFICATE_ARN='arn:aws:acm:us-east-1:111111111111:certificate/11111
 
 #
 cat << EOF | kubectl apply -f -
+---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

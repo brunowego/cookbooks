@@ -32,6 +32,15 @@ yum check-update
 sudo yum -y install shellcheck
 ``` -->
 
+<!-- ### Configuration
+
+```sh
+#
+cat << EOF > ./.shellcheckrc
+
+EOF
+``` -->
+
 ### Commands
 
 ```sh
@@ -54,7 +63,7 @@ shellcheck
 # shellcheck disable=SC1091
 ``` -->
 
-#### pre-commit
+<!-- #### pre-commit
 
 ```yaml
 ---
@@ -64,8 +73,8 @@ repos:
     hooks:
       - id: shellcheck
         language_version: python3.9
-        stages: [commit]
-```
+        stages: <commit>
+``` -->
 
 #### Visual Studio Code
 
@@ -88,7 +97,7 @@ Not following: ./_/husky.sh was not specified as input (see shellcheck -x). shel
 TODO
 
 <!--
-if command -v shellcheck > /dev/null; then
+if command -v shellcheck >/dev/null; then
   npm run lint:sh
 fi
 -->

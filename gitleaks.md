@@ -84,7 +84,7 @@ gitleaks protect \
 ```sh
 #
 cat << EOF >> ~/.config/git/hooks/pre-commit
-if command -v gitleaks > /dev/null; then
+if command -v gitleaks >/dev/null; then
   gitleaks protect --staged --redact -v
 fi
 

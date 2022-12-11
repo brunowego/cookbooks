@@ -1,6 +1,8 @@
 # Design
 
 <!--
+https://www.twingate.com/
+https://henkiz.twingate.com/networks
 https://zitadel.com/
 https://personizely.net/
 
