@@ -22,28 +22,28 @@ jobs:
         os: ['ubuntu-18.04']
         python-version: ['3.9']
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-      with:
-        # Disabling shallow clone is recommended for improving relevancy of reporting
-        fetch-depth: 0
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
 
-    - name: Install Python 3
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
+      - name: Install Python 3
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
 
-    - name: Install dependencies
-      env:
-        LC_ALL: C.UTF-8
-        LANG: C.UTF-8
-      run: |
-        python3 -m pip install -U pip
-        python3 -m pip install pipenv
-        pipenv install --deploy -d
+      - name: Install dependencies
+        env:
+          LC_ALL: C.UTF-8
+          LANG: C.UTF-8
+        run: |
+          python3 -m pip install -U pip
+          python3 -m pip install pipenv
+          pipenv install --deploy -d
 
-    - name: Run tests with pytest
-      run: pipenv run pytest --cov ./ --cov-report xml:./coverage.xml
+      - name: Run tests with pytest
+        run: pipenv run pytest --cov ./ --cov-report xml:./coverage.xml
 ```
 
 ## Issues

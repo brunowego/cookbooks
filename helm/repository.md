@@ -1,14 +1,23 @@
 # Helm Repository
 
-## Repo
-
-TODO
-
-<!--
-https://github.com/henkiz/helm-charts
--->
-
 ## CLI
+
+### Usage
+
+```sh
+#
+helm repo list
+
+#
+helm repo update
+
+#
+helm package ./
+
+#
+helm repo index ./ \
+  --url 'https://charts.<domain>'
+```
 
 ### Tips
 

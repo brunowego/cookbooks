@@ -45,7 +45,7 @@ choco install cura-new
 | Build Plate Adhesion | Brim Line Count            | 10            |
 | Infill               | Infill Density             | +20%          |
 | Quality              | Layer Height               | 0.16          |
-| Shell                | Wall Line Count            | 4             |
+| Shell                | Wall Line Count            | 3             |
 | Special Modes        | Arc Welder                 | Yes           |
 | Special Modes        | Print Sequence             | One at a Time |
 | Speed                | Print Speed                | 35.0 mm/s     |

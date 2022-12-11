@@ -13,6 +13,14 @@ https://github.com/editablejs/editable/blob/main/.commitlintrc
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install commitlint
+```
+
+#### NPM/Yarn
+
 ```sh
 # Using NPM
 npm install \
@@ -42,6 +50,12 @@ const commitlintRC = {
 
 module.exports = commitlintRC
 ```
+
+<!--
+.commitlintrc.yaml
+extends:
+  - '@commitlint/config-conventional'
+-->
 
 ### Tips
 

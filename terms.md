@@ -57,7 +57,6 @@
 - Monorepo
 - Network Interface Controller (NIC)
 - No News Is Good News
-- Non-Disclosure-Agreements (NDA)
 - Not safe for work (NSFW)
 - Obsessive-Compulsive Disorder (OCD)
 - On-premises (on-prem)

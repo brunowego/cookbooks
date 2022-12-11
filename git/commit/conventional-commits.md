@@ -1,5 +1,7 @@
 # Conventional Commits
 
+**Keywords:** Semantic Commit Messages
+
 ## References
 
 - [Main Website](https://conventionalcommits.org/en/)

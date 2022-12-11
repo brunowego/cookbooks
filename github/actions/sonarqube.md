@@ -22,23 +22,23 @@ jobs:
         os: ['ubuntu-18.04']
         python-version: ['3.9']
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-      with:
-        # Disabling shallow clone is recommended for improving relevancy of reporting
-        fetch-depth: 0
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
 
-    # ...
+      # ...
 
-    # FIXME: Someone is overwrite of the SonarQube binary path.
-    # https://community.sonarsource.com/t/github-action-sonarsource-sonarcloud-github-action-stopped-working/36665/4
-    - run: |
-        echo '/opt/sonar-scanner/bin' >> $GITHUB_PATH
-        echo '/opt/java/openjdk/bin' >> $GITHUB_PATH
+      # FIXME: Someone is overwrite of the SonarQube binary path.
+      # https://community.sonarsource.com/t/github-action-sonarsource-sonarcloud-github-action-stopped-working/36665/4
+      - run: |
+          echo '/opt/sonar-scanner/bin' >> $GITHUB_PATH
+          echo '/opt/java/openjdk/bin' >> $GITHUB_PATH
 
-    - name: SonarQube Scan
-      uses: sonarsource/sonarqube-scan-action@v1.0.0
-      env:
-        SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
-        SONAR_HOST_URL: ${{ secrets.SONARQUBE_HOST_URL }}
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@v1.0.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONARQUBE_HOST_URL }}
 ```

@@ -2,7 +2,6 @@
 
 <!--
 Jammer
-Non-Disclosure Agreement (NDA)
 -->
 
 ## Glossary
@@ -10,6 +9,7 @@ Non-Disclosure Agreement (NDA)
 - Computer Hacking Forensic Investigator (CHFI)
 - EXchangeable Image Format (EXIF)
 - Indicators of Compromise (IoCs)
+- Non-Disclosure Agreement (NDA)
 - Packet Capture (PCAP)
 - PCI Forensic Investigator (PFI)
 

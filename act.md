@@ -70,28 +70,32 @@ act \
   -l \
   -W ./.github/workflows/<name>.yml
 
-#
+# Draw workflows
 act -g
 
 # Run on push
 act push \
   --rm \
-  -v
+  -v \
+  -W ./.github/workflows/<name>.yml
 
 # Run on pull request
 act pull_request \
   --rm \
-  -v
+  -v \
+  -W ./.github/workflows/<name>.yml
 
 # Run on release
 act release \
   --rm \
-  -v
+  -v \
+  -W ./.github/workflows/<name>.yml
 
 # Run on workflow dispatch
 act workflow_dispatch \
   --rm \
-  -v
+  -v \
+  -W ./.github/workflows/<name>.yml
 
 # Run specific job
 act \

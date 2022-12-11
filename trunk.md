@@ -43,7 +43,7 @@ trunk whoami
 trunk config print
 
 #
-trunk check
+trunk check -a
 
 #
 trunk fmt
@@ -56,6 +56,11 @@ trunk upgrade
 
 #
 trunk plugins add <uri>
+
+#
+trunk actions list
+trunk actions run <action-name>
+trunk actions enable commitlint
 
 #
 trunk cache

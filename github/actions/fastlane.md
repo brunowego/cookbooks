@@ -44,7 +44,7 @@ jobs:
     runs-on: macOS-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Set up Ruby
         uses: actions/setup-ruby@v1

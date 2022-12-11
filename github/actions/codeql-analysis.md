@@ -42,8 +42,8 @@ jobs:
           - javascript
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
