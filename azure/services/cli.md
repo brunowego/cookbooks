@@ -43,15 +43,14 @@ az config set defaults.location=eastus
 cat ~/.azure/config
 ```
 
-### Usage
+### Authenticate
 
 **Notes:** Get [Directory ID](https://portal.azure.com/#settings/directory)
 
 ```sh
 #
 az login
-
-# Set Directory ID
+# or, set Directory ID
 az login \
   --allow-no-subscriptions \
   --tenant '<directory-id>'

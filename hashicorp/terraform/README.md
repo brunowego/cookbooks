@@ -86,6 +86,11 @@ output
 
 - [Releases](https://releases.hashicorp.com/terraform/)
 
+## Tools
+
+- [Brainboard](https://brainboard.co/)
+- [Pluralith](/pluralith.md)
+
 ## Architecture
 
 ### Phrases
@@ -324,7 +329,11 @@ code --install-extension hashicorp.terraform
 
 #
 jq '."recommendations" += ["hashicorp.terraform"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
 
+**Configuration:**
+
+```sh
 #
 jq '."[terraform]"."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 

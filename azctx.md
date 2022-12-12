@@ -45,12 +45,25 @@ export AZURE_CONFIG_DIR="$HOME/.azure"
 sudo su - "$USER"
 ```
 
-### Usage
+### Authenticate
 
 ```sh
 #
+azctx login
+```
+
+Prefer use Azure CLI [login](/azure/services/cli.md#authenticate) command.
+
+### Usage
+
+```sh
+# Current
 azctx -c
 
-#
+# Switch
 azctx
+azctx <name>
+
+# Previous subscription.
+azctx -
 ```

@@ -20,6 +20,7 @@
 ### Personal Usage
 
 - [1Password](/1password.md)
+- [KeePass](/keepass.md)
 - [LastPass](/lastpass.md)
 
 ### Corporate Usage
@@ -32,7 +33,6 @@
 - [HashiCorp Vault](/hashicorp/vault/README.md)
 
 <!--
-KeePass
 Rippling
 Keeper Password Manager
 -->

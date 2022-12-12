@@ -39,7 +39,7 @@ brew install snyk
 
 ```sh
 # DeepCode Cache ignore
-echo '/.dccache' >> ~/.gitignore_global
+echo '/.dccache' >> ./.gitignore
 ```
 
 ### Commands

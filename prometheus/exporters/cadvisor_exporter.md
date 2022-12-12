@@ -11,12 +11,12 @@
 #### Darwin Binary
 
 ```sh
+#
 curl \
   -L 'https://github.com/hipages/php-fpm_exporter/releases/download/v1.0.0/php-fpm_exporter_1.0.0_darwin_amd64' \
   -o /usr/local/bin/php-fpm_exporter
-```
 
-```sh
+#
 chmod +x /usr/local/bin/php-fpm_exporter
 ```
 
