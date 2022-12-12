@@ -105,7 +105,7 @@ kafkactl get acl
 failed to create cluster admin: kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
 ```
 
-```yaml
+```yml
 ---
 contexts:
   default:

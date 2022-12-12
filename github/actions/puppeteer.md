@@ -2,7 +2,7 @@
 
 ## Workflow
 
-```yaml
+```yml
 ---
 name: E2E Tests
 

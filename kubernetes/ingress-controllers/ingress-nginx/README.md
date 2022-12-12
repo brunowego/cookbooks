@@ -375,13 +375,13 @@ kubectl taint node \
 172.16.10.101 - - [02/Jan/2021:21:51:29 +0000] "GET / HTTP/1.1" 200 45 "-" "Wget/1.20.3 (darwin19.0.0)" 164 0.001 [default-ingress-1db0bf370dd59aa8ff284a4bd4ccdc07-80] [] 10.42.0.10:80 45 0.000 200 5334e799b3268dab31d74a5d2239702b
 ```
 
-```yaml
+```yml
 block-user-agents:
 ```
 
 #### Rate Limit
 
-```yaml
+```yml
 nginx.ingress.kubernetes.io/limit-rpm: '300'
 ```
 
@@ -441,7 +441,7 @@ kubectl delete ns ingress-nginx \
 error: error validating "STDIN": error validating data: [ValidationError(Ingress.spec.rules[0].http.paths[0].backend): unknown field "serviceName" in io.k8s.api.networking.v1.IngressBackend, ValidationError(Ingress.spec.rules[0].http.paths[0].backend): unknown field "servicePort" in io.k8s.api.networking.v1.IngressBackend]; if you choose to ignore these errors, turn validation off with --validate=false
 ```
 
-```yaml
+```yml
 ---
 # apiVersion: extensions/v1beta1
 apiVersion: networking.k8s.io/v1

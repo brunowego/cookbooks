@@ -507,7 +507,7 @@ antigen bundle django
 
 ### Manifest
 
-```yaml
+```yml
 ---
 version: '3'
 
@@ -653,7 +653,7 @@ CMD ["gunicorn", "-b", "0:5000", "-k", "eventlet", "app:app"]
 
 ### Environment
 
-***settings.py***
+**_settings.py_**
 
 ```py
 #
@@ -676,6 +676,7 @@ cat << EOF >> ./robots.txt
 Disallow: /s/
 EOF
 ```
+
 ```py
 # urls.py
 urlpatterns = (

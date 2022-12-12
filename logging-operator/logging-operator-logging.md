@@ -132,7 +132,7 @@ EOF
 default-logging-fluentbit-jl2hc fluent-bit [2021/09/10 13:11:26] [error] [output:forward:forward.0] could not write forward header
 ```
 
-```yaml
+```yml
 ---
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: Logging

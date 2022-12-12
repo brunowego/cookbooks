@@ -336,7 +336,7 @@ jq '."recommendations" += ["cschleiden.vscode-github-actions"]' "$PWD"/.vscode/e
 
 #### Concurrency
 
-```yaml
+```yml
 ---
 # ...
 

@@ -348,7 +348,7 @@ sed -i 's|extensions/v1beta1|apps/v1|g' ./lamp/templates/deployment.yaml
 
 Add code below to `./lamp/templates/deployment.yaml`:
 
-```yaml
+```yml
 ---
 spec:
   <...>

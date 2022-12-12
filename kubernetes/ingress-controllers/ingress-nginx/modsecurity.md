@@ -63,7 +63,7 @@ curl -H 'User-Agent: Mozilla/5.0' example.127.0.0.1.nip.io
 curl -H 'X-Forwarded-For: 189.6.32.51' example.127.0.0.1.nip.io
 -->
 
-<!-- ```yaml
+<!-- ```yml
 SecRequestBodyAccess On
 SecAuditEngine RelevantOnly
 SecAuditLogType Serial

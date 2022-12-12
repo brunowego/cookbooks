@@ -65,7 +65,7 @@ shellcheck
 
 <!-- #### pre-commit
 
-```yaml
+```yml
 ---
 repos:
   - repo: https://github.com/shellcheck-py/shellcheck-py

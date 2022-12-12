@@ -44,7 +44,7 @@ aws-iam-authenticator help
 
 ####
 
-```yaml
+```yml
 ---
 apiVersion: v1
 kind: ConfigMap

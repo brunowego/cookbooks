@@ -58,7 +58,7 @@ flake8
 
 #### pre-commit
 
-```yaml
+```yml
 ---
 repos:
   - repo: https://gitlab.com/pycqa/flake8

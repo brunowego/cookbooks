@@ -6,7 +6,7 @@ https://github.com/correttojs/next-monorepo/blob/main/.github/workflows/lighthou
 
 ## Workflow
 
-```yaml
+```yml
 ---
 name: Lighthouse CI
 

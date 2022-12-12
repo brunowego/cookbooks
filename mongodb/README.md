@@ -117,7 +117,7 @@ docker volume rm \
 
 ### Manifest
 
-```yaml
+```yml
 ---
 version: '3'
 

@@ -6,24 +6,24 @@
 
 ## Workflow
 
-```yaml
+```yml
 ---
 name: Continuous Integration
 
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   sync-apps:
     runs-on: ubuntu-18.04
     steps:
-    # ...
+      # ...
 
-    - uses: mstachniuk/ci-skip@v1
-      with:
-        commit-filter: '[ci skip];[CI skip];[CI-skip];[ci-skip];[CI SKIP];[CI-SKIP]'
-        commit-filter-separator: ';'
-        fail-fast: true
+      - uses: mstachniuk/ci-skip@v1
+        with:
+          commit-filter: '[ci skip];[CI skip];[CI-skip];[ci-skip];[CI SKIP];[CI-SKIP]'
+          commit-filter-separator: ';'
+          fail-fast: true
 ```

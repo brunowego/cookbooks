@@ -17,7 +17,7 @@ https://evilmartians.com/chronicles/build-images-on-github-actions-with-docker-l
 
 **Refer:** `./.github/workflows/ci.yml`
 
-```yaml
+```yml
 ---
 name: Docker Build and Push
 

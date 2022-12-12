@@ -12,7 +12,7 @@
 
 **Refer:** `./.github/workflows/codeql-analysis.yml`
 
-```yaml
+```yml
 ---
 name: CodeQL
 

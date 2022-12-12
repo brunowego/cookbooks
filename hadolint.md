@@ -32,7 +32,7 @@ sudo curl \
 
 #### pre-commit
 
-```yaml
+```yml
 ---
 repos:
   - repo: https://github.com/hadolint/hadolint

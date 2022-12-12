@@ -16,7 +16,7 @@
 
 **Refer:** `./.github/dependabot.yml`
 
-```yaml
+```yml
 ---
 version: 2
 

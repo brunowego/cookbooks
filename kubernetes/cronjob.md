@@ -6,7 +6,7 @@
 
 ## Custom Resource (CR)
 
-```yaml
+```yml
 apiVersion: batch/v1
 kind: CronJob
 metadata:
@@ -23,30 +23,30 @@ spec:
       template:
         spec:
           containers:
-          - name: my-app
-            image: gcr.io/my-corp/my-app:latest
-            imagePullPolicy: IfNotPresent
-            # command:
-            # args:
-            # env:
-            # - name: MY_ENV
-            #   value: my_value
-            # envFrom:
-            # - configMapRef:
-            #     name: my-app-configmap
-            # - secretRef:
-            #     name: my-app-secrets
-            # volumeMounts:
-            # - name: config
-            #   mountPath: /etc/config
-            #   readOnly: true
-            # resources:
-            #   requests:
-            #     cpu: 100m
-            #     memory: 30Mi
-            #   limits:
-            #     cpu: 150m
-            #     memory: 50Mi
+            - name: my-app
+              image: gcr.io/my-corp/my-app:latest
+              imagePullPolicy: IfNotPresent
+              # command:
+              # args:
+              # env:
+              # - name: MY_ENV
+              #   value: my_value
+              # envFrom:
+              # - configMapRef:
+              #     name: my-app-configmap
+              # - secretRef:
+              #     name: my-app-secrets
+              # volumeMounts:
+              # - name: config
+              #   mountPath: /etc/config
+              #   readOnly: true
+              # resources:
+              #   requests:
+              #     cpu: 100m
+              #     memory: 30Mi
+              #   limits:
+              #     cpu: 150m
+              #     memory: 50Mi
           restartPolicy: Never
           terminationGracePeriodSeconds: 5
           securityContext:

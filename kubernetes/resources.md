@@ -13,19 +13,19 @@
 
 ### Custom Resource (CR)
 
-```yaml
+```yml
 ---
 # ...
 spec:
   containers:
-  - # ...
-    resources:
-      requests:
-        cpu: 200m
-        memory: 32Mi
-      limits:
-        cpu: 250m
-        memory: 64Mi
+    - # ...
+      resources:
+        requests:
+          cpu: 200m
+          memory: 32Mi
+        limits:
+          cpu: 250m
+          memory: 64Mi
 ```
 
 ### Issues

@@ -2,7 +2,7 @@
 
 ## Environments
 
-```yaml
+```yml
 # ...
 spec:
   # ..
@@ -26,7 +26,7 @@ spec:
 
 ## Run As Root
 
-```yaml
+```yml
 # ...
 spec:
   # ...
@@ -41,7 +41,7 @@ spec:
 
 ## Image Pull Policy
 
-```yaml
+```yml
 # ...
 spec:
   # ..
@@ -56,7 +56,7 @@ spec:
 
 ## Image Pull Secrets
 
-```yaml
+```yml
 # ...
 spec:
   # ..
@@ -72,7 +72,7 @@ spec:
 
 ### StatefulSet
 
-```yaml
+```yml
 # ...
 kind: StatefulSet
 # ...
@@ -91,7 +91,7 @@ kubectl rollout restart statefulset <name>
 
 ### Deployment
 
-```yaml
+```yml
 # ...
 kind: Deployment
 # ...
@@ -112,7 +112,7 @@ kubectl rollout restart deployment <name>
 
 ### DaemonSet
 
-```yaml
+```yml
 # ...
 kind: DaemonSet
 # ...
@@ -132,7 +132,7 @@ kubectl rollout restart daemonset <name>
 
 **Docs:** [Configure Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
 
-```yaml
+```yml
 # ...
 spec:
   # ..

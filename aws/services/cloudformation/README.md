@@ -57,7 +57,7 @@ jq '."recommendations" += ["aws-scripting-guy.cform"]' "$PWD"/.vscode/extensions
 
 ### [Template Anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html)
 
-```yaml
+```yml
 ---
 AWSTemplateFormatVersion: 2010-09-09
 

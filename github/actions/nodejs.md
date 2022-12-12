@@ -2,7 +2,7 @@
 
 ## Workflow
 
-```yaml
+```yml
 name: GitHub Actions Workflow with NPM cache
 
 on: [push]

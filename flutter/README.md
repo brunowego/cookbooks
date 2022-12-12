@@ -89,14 +89,12 @@ source ~/.zshrc
 #
 flutter config --no-analytics
 
-#
+# Android
 flutter config --android-sdk "$ANDROID_SDK_ROOT"
+flutter doctor --android-licenses
 
 #
 flutter doctor -v
-
-# Licenses
-flutter doctor --android-licenses
 
 #
 flutter channel stable # master, dev, beta
@@ -110,7 +108,7 @@ flutter upgrade
 flutter downgrade
 -->
 
-### Usage
+### Bootstrap
 
 ```sh
 #
@@ -120,7 +118,11 @@ flutter create \
   --platforms android,ios \
   -t app \
   ./
+```
 
+### Usage
+
+```sh
 #
 flutter analyze
 
@@ -153,6 +155,11 @@ flutter run -d iphone
 
 #### Set SDK Version
 
+<!--
+https://github.com/flutter/flutter/issues/115904
+https://github.com/flutter/flutter/issues/95533#issuecomment-1051489232
+-->
+
 **Refer:** `./android/local.properties`
 
 ```properties
@@ -174,6 +181,37 @@ jq '."recommendations" += ["Dart-Code.flutter"]' "$PWD"/.vscode/extensions.json 
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+w: Runtime JAR files in the classpath should have the same version. These files were found in the classpath:
+    ...
+w: Some runtime JAR files in the classpath have an incompatible version. Consider removing them from the classpath
+```
+
+TODO
+
+<!-- ```sh
+#
+rm -fR ~/.gradle/caches
+
+#
+flutter clean
+
+#
+( cd android && ./gradlew clean )
+``` -->
+
+#### TBD
+
+```log
+Execution failed for task ':shared_preferences_android:generateReleaseRFile'.
+> A failure occurred while executing com.android.build.gradle.internal.res.GenerateLibraryRFileTask$GenerateLibRFileRunnable
+   > ~/.gradle/caches/transforms-3/3bcdaf5e019888e2b567be88bb46bb6f/transformed/androidx.fragment-r.txt
+```
+
+TODO
 
 #### Missing Required Android SDK Version
 

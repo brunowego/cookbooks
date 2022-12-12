@@ -8,7 +8,7 @@
 
 **Refer:** `./.github/workflows/notfoundbot.yml`
 
-```yaml
+```yml
 ---
 name: notfoundbot
 

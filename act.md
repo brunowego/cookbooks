@@ -210,7 +210,7 @@ Update your `GITHUB_TOKEN` in `.secrets` file.
 Warning: the environment variable LANG is not set!
 ```
 
-```yaml
+```yml
 ---
 jobs:
   test:

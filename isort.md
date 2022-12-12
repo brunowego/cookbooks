@@ -40,12 +40,12 @@ isort ./
 
 #### pre-commit
 
-```yaml
+```yml
 ---
 repos:
-- repo: https://github.com/pycqa/isort
-  rev: 5.9.3
-  hooks:
-  - id: isort
-    args: [--profile, black]
+  - repo: https://github.com/pycqa/isort
+    rev: 5.9.3
+    hooks:
+      - id: isort
+        args: [--profile, black]
 ```

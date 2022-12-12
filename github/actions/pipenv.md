@@ -6,7 +6,7 @@
 
 ## Workflow
 
-```yaml
+```yml
 ---
 name: Run Python Tests
 

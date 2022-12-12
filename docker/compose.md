@@ -80,7 +80,7 @@ Never use `./` at target bind volume.
 
 ### Manifest
 
-```yaml
+```yml
 ---
 version: '3'
 
@@ -97,28 +97,28 @@ services:
     container_name: as-acme
     hostname: acme
     volumes:
-    - type: volume
-      source: acme-data
-      target: /path/to/data
-    - type: volume
-      source: acme-log
-      target: /path/to/log
-    - type: bind
-      source: ./services/acme/conf.d
-      target: /path/to/conf.d
+      - type: volume
+        source: acme-data
+        target: /path/to/data
+      - type: volume
+        source: acme-log
+        target: /path/to/log
+      - type: bind
+        source: ./services/acme/conf.d
+        target: /path/to/conf.d
     env_file: ./services/acme/.env
     environment:
       no_proxy: localhost,127.0.0.1
     # command: tail -f /dev/null
     ports:
-    - target: 8080
-      published: 8080
-      protocol: tcp
+      - target: 8080
+        published: 8080
+        protocol: tcp
     networks:
-    - workbench
+      - workbench
     restart: always
     depends_on:
-    - anything
+      - anything
 
 volumes:
   acme-data:

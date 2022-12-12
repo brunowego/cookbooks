@@ -2,7 +2,7 @@
 
 <!-- ## Manifest
 
-```yaml
+```yml
 ---
 apiVersion: v1
 kind: ServiceAccount
@@ -10,7 +10,7 @@ metadata:
   name: my-sa
 ```
 
-```yaml
+```yml
 spec:
   serviceAccount: my-sa
 ``` -->

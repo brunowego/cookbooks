@@ -19,7 +19,7 @@ TODO
 
 <!-- ### Using Kustomize
 
-```yaml
+```yml
     - name: ArgoCD Overwrite Image Tag
       uses: clowdhaus/argo-cd-action/@main
       id: argocd_image_tag_overwrite
@@ -30,7 +30,7 @@ TODO
 
 <!-- ### Using Kubernetes Manifests
 
-```yaml
+```yml
 ---
 name: GitOps
 
@@ -57,7 +57,7 @@ jobs:
 
 <!-- ### Using Helm
 
-```yaml
+```yml
 ---
 name: GitOps
 

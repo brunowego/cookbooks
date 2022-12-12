@@ -10,6 +10,21 @@
 brew install --cask google-cloud-sdk
 ```
 
+#### APT
+
+```sh
+echo 'deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main' | \
+  sudo tee /etc/apt/sources.list.d/google-cloud-sdk.list
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo tee /usr/share/keyrings/cloud.google.gpg
+
+sudo apt update
+sudo apt -y install google-cloud-cli
+```
+
+<!-- #### YUM
+
+TODO -->
+
 #### Chocolatey
 
 ```sh

@@ -210,7 +210,7 @@ EOF
 docker: Error response from daemon: driver failed programming external connectivity on endpoint cilium-control-plane (62e7187ec0a8375f22adb9e83dbaa660d33a403e423f7d9aa333ba707615a9b3): Bind for 0.0.0.0:443 failed: port is already allocated.
 ```
 
-```yaml
+```yml
 ---
 # ...
 nodes:

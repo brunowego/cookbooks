@@ -1,4 +1,4 @@
-# Burp Suite Community Edition (CE)
+# PortSwigger Burp Suite Community Edition (CE)
 
 <!--
 Released 2003-06

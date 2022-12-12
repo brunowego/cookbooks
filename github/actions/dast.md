@@ -1,12 +1,23 @@
-# Action Dynamic Application Security Testing (DAST)
+# GitHub Action Dynamic Application Security Testing (DAST)
 
-<!--
-https://github.com/sudarsana-reddy/qa-maven-poj/blob/main/.github/workflows/dast-zap.yml
-https://github.com/roxsross/demo-frontend-tecno/blob/master/.github/workflows/security-dast.yml
-https://github.com/petrugiurca/owasp-zap-scan/blob/main/.github/workflows/dast.yml
-https://github.com/nithikptest/test/blob/main/.github/workflows/dast.yml
-https://github.com/cds-snc/scan-files/blob/main/.github/workflows/dast_vulnerability_scan.yml
-https://github.com/IFS4205-Group-2/IFS4205-AY2223-S1-G2-Track2Gather/blob/main/.github/workflows/DAST.yml
--->
+## Workflow
 
-TODO
+**Refer:** `./.github/workflows/notfoundbot.yml`
+
+```yml
+---
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Scan ZAP website
+    steps:
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.4.0
+        with:
+          target: 'http://ifs4205-gp02-1.comp.nus.edu.sg'
+```

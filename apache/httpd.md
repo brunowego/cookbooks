@@ -215,7 +215,7 @@ sudo systemctl restart httpd
   ```
 
 <!-- - Option 3: Using security context:
-  ```yaml
+  ```yml
   ---
   securityContext:
     capabilities:

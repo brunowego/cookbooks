@@ -18,7 +18,7 @@ kubectl describe resourcequotas -A
 
 ### Custom Resource (CR)
 
-```yaml
+```yml
 ---
 apiVersion: v1
 kind: ResourceQuota

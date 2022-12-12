@@ -6,7 +6,7 @@
 
 ## Workflow
 
-```yaml
+```yml
 ---
 name: GitHub Actions Workflow with Composer cache
 
@@ -17,19 +17,19 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-    - name: Get Composer Cache Directory
-      id: get-composer-cache-dir
-      run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+      - name: Get Composer Cache Directory
+        id: get-composer-cache-dir
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
 
-    - name: Cache Composer
-      uses: actions/cache@v2
-      id: composer-cache
-      with:
-        path: ${{ steps.get-composer-cache-dir.outputs.dir }}
-        key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
-        restore-keys: ${{ runner.os }}-composer-
+      - name: Cache Composer
+        uses: actions/cache@v2
+        id: composer-cache
+        with:
+          path: ${{ steps.get-composer-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-composer-
 
-    - name: Install composer dependencies
-      if: steps.composer-cache.outputs.cache-hit != 'true'
-      run: composer install
+      - name: Install composer dependencies
+        if: steps.composer-cache.outputs.cache-hit != 'true'
+        run: composer install
 ```

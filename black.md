@@ -19,13 +19,13 @@ EOF
 
 #### pre-commit
 
-```yaml
+```yml
 ---
 repos:
-- repo: https://github.com/ambv/black
-  rev: 21.9b0
-  hooks:
-  - id: black
-    language_version: python3.9
-    stages: [commit]
+  - repo: https://github.com/ambv/black
+    rev: 21.9b0
+    hooks:
+      - id: black
+        language_version: python3.9
+        stages: [commit]
 ```

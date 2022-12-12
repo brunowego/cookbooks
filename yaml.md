@@ -50,7 +50,7 @@ jq '."redhat.telemetry.enabled" |= false' "$HOME"/.vscode/settings.json | sponge
 
 [_Documentation_](http://yaml.org/type/merge.html)
 
-```yaml
+```yml
 ---
 projects:
   - &shared
@@ -65,7 +65,7 @@ projects:
 
 [_Documentation_](https://yaml.org/spec/1.2/spec.html#Block)
 
-```yaml
+```yml
 ---
 literal: |
   some

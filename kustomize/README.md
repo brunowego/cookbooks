@@ -121,7 +121,7 @@ export DOCKER_REPOSITORY='my-org/my-app'
 export DOCKER_TAG='latest'
 ```
 
-```yaml
+```yml
 # kustomization.yaml
 images:
   - name: <name>
@@ -141,7 +141,7 @@ kustomize edit set image <name>="${DOCKER_REGISTRY}/${DOCKER_REPOSITORY}:${DOCKE
 Error: no matches for OriginalId ~G_v1_ConfigMap|~X|my-app-metadata; no matches for CurrentId ~G_v1_ConfigMap|~X|my-app-metadata; failed to find unique target for patch ~G_v1_ConfigMap|my-app-metadata
 ```
 
-```yaml
+```yml
 resources:
 - _app_metadata.yaml
 ``` -->

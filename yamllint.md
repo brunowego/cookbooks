@@ -67,7 +67,7 @@ yamllint ./
 
 **Docs:** [Disable with comments](https://yamllint.readthedocs.io/en/stable/disable_with_comments.html).
 
-```yaml
+```yml
 # yamllint disable rule:line-length
 # yamllint disable-line rule:line-length
 ---
@@ -95,7 +95,7 @@ too few spaces before comment yamllint(comments)
 
 **Refer:** `./.yamllint.yaml`
 
-```yaml
+```yml
 ---
 extends: default
 # ...

@@ -32,7 +32,7 @@ bundle config
 bundle config --local path ./vendor/bundle
 
 #
-echo '/vendor' >> ./.gitignore
+echo '/vendor/bundle' >> ./.gitignore
 ```
 
 ### Initialize

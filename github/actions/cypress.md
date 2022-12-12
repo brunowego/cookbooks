@@ -8,7 +8,7 @@
 
 **Refer:** `./.github/workflows/cypress.yml`
 
-```yaml
+```yml
 ---
 name: Cypress E2E
 
