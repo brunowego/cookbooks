@@ -1,5 +1,10 @@
 # HashiCorp Vagrant
 
+## Links
+
+- [Code Repository](https://github.com/hashicorp/vagrant)
+- [Main Website](https://vagrantup.com/)
+
 ## CLI
 
 ### Installation
@@ -29,6 +34,12 @@ choco install -y vagrant
 vagrant -h
 ```
 
+### Initialize
+
+```sh
+vagrant init
+```
+
 ### Usage
 
 ```sh
@@ -37,22 +48,30 @@ vagrant up
 
 # Shutdown
 vagrant halt
+```
 
+### Tips
+
+#### SSH
+
+```sh
 # SSH
 vagrant ssh
 
 # IP
 vagrant ssh -c 'hostname -I | cut -d " " -f 2' 2>/dev/null
 vagrant ssh -c 'hostname -I | cut -d " " -f 2' 2>/dev/null | pbcopy # macOS
-
-# Snapshot Save
-vagrant snapshot save default [name]
-
-# Snapshot Restore
-vagrant snapshot restore [name]
 ```
 
-### Tips
+#### Snapshot
+
+```sh
+# Save
+vagrant snapshot save default <name>
+
+# Restore
+vagrant snapshot restore <name>
+```
 
 #### Visual Studio Code
 
@@ -70,15 +89,17 @@ jq '."recommendations" += ["marcostazi.VS-code-vagrantfile"]' "$PWD"/.vscode/ext
 # Using Oh My Zsh
 sed -ri 's/^plugins=\((.*)\)/plugins=\(\1 vagrant\)/g' ~/.zshrc
 
+#
 source ~/.zshrc
 
+#
 rm ~/.zcompdump*
 ```
 
 #### Execute command
 
 ```sh
-vagrant ssh -c '[path/to/exec]'
+vagrant ssh -c '<path/to/exec>'
 ```
 
 #### Show IP
@@ -91,10 +112,10 @@ vagrant ssh -c 'hostname -I | cut -d " " -f 2' 2>/dev/null
 
 ```sh
 # using environment
-VAGRANT_LOG=DEBUG vagrant [command]
+VAGRANT_LOG=DEBUG vagrant <command>
 
 # using cli
-vagrant [command] --debug
+vagrant <command> --debug
 ```
 
 ### Issues
@@ -102,7 +123,7 @@ vagrant [command] --debug
 #### System time
 
 ```log
-make: Warning: File `[filename]' has modification time XXX s in the future
+make: Warning: File `<filename>' has modification time XXX s in the future
 make: warning:  Clock skew detected.  Your build may be incomplete.
 ```
 
@@ -111,7 +132,7 @@ VBoxManage list vms
 ```
 
 ```sh
-VBoxManage guestproperty set [uuid|vmname] '/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold' 60000
+VBoxManage guestproperty set <uuid|vmname> '/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold' 60000
 ```
 
 #### Please use a provider that exists
@@ -135,7 +156,7 @@ source ~/.bashrc
 #### Force exit
 
 ```log
-An action '[name]' was attempted on the machine 'default', but another process is already executing an action on the machine. Vagrant locks each machine for access by only one process at a time. Please wait until the other Vagrant process finishes modifying this machine, then try again.
+An action '<name>' was attempted on the machine 'default', but another process is already executing an action on the machine. Vagrant locks each machine for access by only one process at a time. Please wait until the other Vagrant process finishes modifying this machine, then try again.
 If you believe this message is in error, please check the process listing for any "ruby" or "vagrant" processes and kill them. Then try again.
 ```
 

@@ -15,7 +15,7 @@ Left `⌘` Command
 #### Homebrew
 
 ```sh
-brew install --cask virtualbox virtualbox-extension-pack
+brew install --cask virtualbox
 ```
 
 #### YUM

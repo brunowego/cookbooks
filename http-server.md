@@ -7,7 +7,11 @@
 #### NPM
 
 ```sh
+# Using NPM
 npm install http-server -g
+
+# Using Yarn 1.x
+yarn global add http-server
 ```
 
 ### Commands

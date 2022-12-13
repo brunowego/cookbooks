@@ -24,6 +24,7 @@ CONFIGURE_ARGS='with-libvirt-include=/usr/local/include/libvirt with-libvirt-lib
 ## Service
 
 ```sh
+# Homebrew
 brew services start libvirt
 
 sed -i 's/#\(unix_sock_group\)/\1/g' /usr/local/etc/libvirt/libvirtd.conf
@@ -39,8 +40,8 @@ virsh -c "qemu+ssh://$(hostname)/system?socket=/usr/local/var/run/libvirt/libvir
 ## Usage
 
 ```sh
+#
 vagrant up --provider=libvirt
-
 # or
 export VAGRANT_DEFAULT_PROVIDER=libvirt
 ```

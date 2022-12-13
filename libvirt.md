@@ -1,5 +1,9 @@
 # libvirt
 
+## Links
+
+- [Main Website](https://libvirt.org/)
+
 ## CLI
 
 ### Installation
@@ -8,4 +12,11 @@
 
 ```sh
 brew install libvirt
+```
+
+### Services
+
+```sh
+# Homebrew
+brew services start libvirt
 ```

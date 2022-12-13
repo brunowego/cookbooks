@@ -1,4 +1,4 @@
-# Mozilla Firefox Developer Edition
+# Mozilla Firefox Developer Edition (DE)
 
 ## App
 

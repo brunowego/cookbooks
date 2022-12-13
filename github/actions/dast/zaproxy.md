@@ -1,4 +1,13 @@
-# GitHub Action Dynamic Application Security Testing (DAST)
+# GitHub Actions with OWASP Zed Attack Proxy (ZAP)
+
+## Links
+
+- [Code Repository](https://github.com/zaproxy/action-full-scan)
+
+<!--
+https://github.com/zaproxy/action-baseline
+https://github.com/zaproxy/action-api-scan
+-->
 
 ## Workflow
 

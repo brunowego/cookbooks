@@ -45,7 +45,7 @@ code --disable-extension ms-azuretools.vscode-docker
 ### Here document (heredoc)
 
 ```sh
-docker exec -i [container-name] /bin/sh << EOSHELL
+docker exec -i <container-name> /bin/sh << EOSHELL
 
 EOSHELL
 ```
