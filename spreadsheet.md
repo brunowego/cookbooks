@@ -20,7 +20,3 @@ code --install-extension GrapeCity.gc-excelviewer
 #
 jq '."recommendations" += ["GrapeCity.gc-excelviewer"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
-
-```sh
-code --disable-extension GrapeCity.gc-excelviewer
-```

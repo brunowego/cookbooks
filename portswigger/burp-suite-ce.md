@@ -32,9 +32,9 @@ brew install burp-suite
 
 #### Dark Theme
 
-1. Tab: User options
-2. Sub-tab: Display
-3. User Interface -> Theme: Select Dark
+1. Burp -> Settings
+2. User Interface -> Display
+3. Appearance section -> Theme: Select Dark
 
 <!--
 curl \
@@ -50,5 +50,4 @@ curl \
     --cookie-jar ./c.txt \
     -H 'Content-Type: application/json' \
     --data-binary '{"username": "admin@snyk.io", "password": "SuperSecretPassword"}' 'http:// localhost:3001/login'
-
 -->

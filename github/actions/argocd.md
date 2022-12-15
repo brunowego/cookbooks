@@ -19,7 +19,7 @@ TODO
 
 <!-- ### Using Kustomize
 
-```yml
+````yml
     - name: ArgoCD Overwrite Image Tag
       uses: clowdhaus/argo-cd-action/@main
       id: argocd_image_tag_overwrite
@@ -53,7 +53,7 @@ jobs:
       uses: clowdhaus/argo-cd-action/@main
       with:
         command: app sync go-app
-``` -->
+````
 
 <!-- ### Using Helm
 
@@ -114,8 +114,10 @@ jobs:
 
 ### Issues
 
-####
+#### TBD
 
 ```log
 Error: System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter ''using: node16' is not supported, use 'docker' or 'node12' instead.')
 ```
+
+TODO

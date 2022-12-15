@@ -1,7 +1,9 @@
 # Design
 
 <!--
-https://www.twingate.com/
+https://www.commandbar.com/
+https://stepsize.com/
+https://twingate.com/
 https://henkiz.twingate.com/networks
 https://zitadel.com/
 https://personizely.net/

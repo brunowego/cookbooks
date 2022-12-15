@@ -197,13 +197,6 @@ code './.vscode/settings.json'
 }
 ``` -->
 
-```sh
-# Darwin
-osascript -e 'quit app "Visual Studio Code"'
-
-code --disable-extension vscjava.vscode-java-pack
-```
-
 #### Get Manifest
 
 ```sh

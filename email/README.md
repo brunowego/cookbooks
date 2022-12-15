@@ -21,12 +21,14 @@ name+group@example.com
 ### Company Emails
 
 ```txt
+admin@henkiz.com
 contact@example.com
 feedback@example.com
+hi@henkiz.com
 invoices@example.com
+media@example.com
 security@example.com
 social@example.com
-media@example.com
 support@example.com
 
 info@example.com

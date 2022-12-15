@@ -29,10 +29,3 @@ jq '."recommendations" += ["kiteco.kite"]' "$PWD"/.vscode/extensions.json | spon
 ```sh
 jq '."kite.showWelcomeNotificationOnStartup" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
-
-```sh
-# Darwin
-osascript -e 'quit app "Visual Studio Code"'
-
-code --disable-extension kiteco.kite
-```

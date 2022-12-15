@@ -5,6 +5,10 @@ https://www.youtube.com/watch?v=YDijuX-MyWY
 -->
 
 <!--
+(^|^[^:]+:\/\/|[^\.]+\.)subdomain\.example\.com.*
+-->
+
+<!--
 https://app.pluralsight.com/paths/skill/web-application-scanning-with-owasp-zap
 https://app.pluralsight.com/library/courses/owasp-zap-web-app-pentesting/table-of-contents
 -->
@@ -17,12 +21,13 @@ https://app.pluralsight.com/library/courses/owasp-zap-web-app-pentesting/table-o
 - [Main Website](https://zaproxy.org/)
 - [Download](https://zaproxy.org/download/)
 
-##
+## Test Sites
 
 - [Test site for Acunetix WVS](http://testphp.vulnweb.com)
 
 ## Glossary
 
+- Hyper SQL Database (HSQLDB)
 - Web Vulnerability Scanner (WVS)
 
 ## Main Features
@@ -34,6 +39,10 @@ https://app.pluralsight.com/library/courses/owasp-zap-web-app-pentesting/table-o
 - Dynamic SSL Certificates
 
 ## App
+
+### Dependencies
+
+- [PhantomJS](/phantomjs.md)
 
 ### Installation
 

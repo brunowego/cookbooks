@@ -40,3 +40,18 @@ sudo yum install google-cloud-sdk-gke-gcloud-auth-plugin
 ```sh
 gke-gcloud-auth-plugin --help
 ```
+
+## Issues
+
+### Incompatibility with Kubectl Version
+
+```log
+W1205 10:14:27.717264   31189 gcp.go:119] WARNING: the gcp auth plugin is deprecated in v1.22+, unavailable in v1.26+; use gcloud instead.
+```
+
+```sh
+# If using kbenv
+brew link --overwrite kbenv
+# or
+kbenv use 1.23.8
+```

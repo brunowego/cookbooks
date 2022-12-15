@@ -29,6 +29,18 @@ curl -s 'https://packagecloud.io/install/repositories/ookla/speedtest-cli/script
 sudo yum -y install speedtest
 ```
 
+#### PKG
+
+```sh
+sudo pkg update
+sudo pkg install -gy libidn2 ca_root_nss
+
+cat /etc/os-release
+
+sudo pkg add 'https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-freebsd12-x86_64.pkg' # FreeBSD 12
+sudo pkg add "https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-freebsd13-x86_64.pkg" # FreeBSD 13
+```
+
 #### Chocolatey
 
 ```sh

@@ -1,5 +1,7 @@
 # kubeaudit
 
+**Keywords:** Kubernetes Audit, Security Controls
+
 ## Links
 
 - [Code Repository](https://github.com/Shopify/kubeaudit)

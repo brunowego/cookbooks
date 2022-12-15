@@ -57,7 +57,8 @@ ubuntu-16.04=ghcr.io/catthehacker/ubuntu:act-16.04
 EOP
 
 # Git ignore
-echo '/.secrets' >> ~/.gitignore_global
+echo '/.secrets' >> ./.gitignore # locally
+echo '/.secrets' >> ~/.gitignore_global # globally
 ```
 
 ### Usage

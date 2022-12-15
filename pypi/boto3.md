@@ -52,3 +52,16 @@ export AWS_S3_ENDPOINT_URL='http://127.0.0.1:9000'
 >>>
 >>> exit()
 ```
+
+#### Delete Object Versions
+
+```py
+>>> import boto3
+>>>
+>>> s3 = boto3.resource('s3')
+>>>
+>>> bucket = s3.Bucket(os.environ.get('AWS_STORAGE_BUCKET_NAME'))
+>>> bucket.object_versions.all().delete()
+>>>
+>>> exit()
+```

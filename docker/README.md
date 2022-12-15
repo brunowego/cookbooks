@@ -35,13 +35,6 @@ code --install-extension ms-azuretools.vscode-docker
 jq '."recommendations" += ["ms-azuretools.vscode-docker"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
-```sh
-# Darwin
-osascript -e 'quit app "Visual Studio Code"'
-
-code --disable-extension ms-azuretools.vscode-docker
-```
-
 ### Here document (heredoc)
 
 ```sh

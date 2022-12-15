@@ -127,7 +127,6 @@ code --list-extensions
 code --install-extension <extension>
 
 # Disable
-code --disable-extensions
 code --disable-extension <extension>
 
 # Disable GPU
@@ -139,17 +138,20 @@ code --uninstall-extension <extension>
 
 ### Tips
 
-#### Upgrade All Extensions
+#### All Extensions
 
 ```sh
+# Upgrade
 code --list-extensions | while read extension; do
   code --install-extension "$extension" --force
 done
-```
 
-#### Uninstall All Extensions
+# Disable
+code --list-extensions | while read extension; do
+  code --disable-extension "$extension" --force
+done
 
-```sh
+# Uninstall
 code --list-extensions | while read extension; do
   code --uninstall-extension "$extension" --force
 done

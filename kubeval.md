@@ -1,5 +1,9 @@
 # Kubeval
 
+_Unmaintained:_ Use [kubeconform](/kubeconform.md)
+
+**Keywords:** Kubernetes Manifests Validator
+
 ## Links
 
 - [Code Repository](https://github.com/instrumenta/kubeval)

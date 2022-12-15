@@ -13,6 +13,10 @@ Jamais coloque uma ordem com stop uma proxima da outra, a Binance irá pegar a o
 - [New Alt-coins](https://binance.com/en/altcoins/new)
 - [Announcement](https://binance.com/en/support/announcement)
 
+## Outflow
+
+- [Binance CEX](https://defillama.com/protocol/binance-cex)
+
 ## Trade
 
 - [Spot](./spot.md)
@@ -37,9 +41,10 @@ Jamais coloque uma ordem com stop uma proxima da outra, a Binance irá pegar a o
 
 - [The Words of Crypto](https://academy.binance.com/en/glossary)
 
-## Terms
+## Glossary
 
 - Bitcoin BEP2 (BTCB)
+- Centralized Exchange (CEX)
 - One-Cancels-the-Other (OCO)
 - One-Triggers-a One Cancels the-Other order (OTOCO)
 - Take Profit/Stop Loss (TP/SL)

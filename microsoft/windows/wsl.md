@@ -33,5 +33,9 @@ wsl --list --verbose
 #### Visual Studio Code
 
 ```sh
+#
 code --install-extension ms-vscode-remote.remote-wsl
+
+#
+jq '."recommendations" += ["ms-vscode-remote.remote-wsl"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

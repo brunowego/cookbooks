@@ -4,7 +4,7 @@
 
 ## Links
 
-- [Main Website](https://bignox.com/)
+- [Main Website](https://bignox.com)
 
 ## App
 
@@ -20,7 +20,7 @@ brew install --cask noxappplayer
 
 #### Root Mode
 
-1. System settings
+1. System settings (Gear icon)
 2. Check Root On
 3. Save settings
 

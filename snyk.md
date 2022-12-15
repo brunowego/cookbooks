@@ -47,11 +47,7 @@ echo '/.dccache' >> ./.gitignore
 ```sh
 #
 snyk --help
-
-#
 snyk iac --help
-
-#
 snyk code --help
 ```
 
@@ -66,15 +62,28 @@ SNYK_TOKEN='<token>' snyk auth
 snyk auth '<token>'
 ```
 
+### Configuration
+
+```sh
+#
+snyk config
+
+#
+snyk config set api='<auth-token>'
+snyk config set disable-analytics=true
+
+#
+cat ~/.config/configstore/snyk.json
+```
+
 ### Usage
 
 ```sh
 #
-snyk monitor
-
-#
 snyk test
+```
 
+<!--
 #
 snyk container test ubuntu:18.04
 
@@ -83,20 +92,20 @@ snyk iac test </path/to/iac/>
 snyk iac test </path/to/kubernetes_file.yaml>
 
 #
+snyk monitor
+
+#
 snyk code
 
 #
 snyk log4shell
 
 #
-snyk config
-
-#
 snyk policy
 
 #
 snyk ignore
-```
+-->
 
 ### Tips
 

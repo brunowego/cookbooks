@@ -202,3 +202,11 @@ Warning: Unbrewed header files were found in /usr/local/include.
 ```sh
 brew doctor `brew doctor --list-checks | grep -v stray_headers`
 ```
+
+<!-- ### Uninstall
+
+```sh
+#
+rm -fR ~/Library/{Caches,Logs}/Homebrew
+rm -fR /opt/homebrew
+``` -->

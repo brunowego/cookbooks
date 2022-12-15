@@ -4,6 +4,9 @@
 
 - [Code Repository](https://github.com/frida/frida)
 - [Main Website](https://frida.re/)
+- Docs
+  - [Android](https://frida.re/docs/android/)
+  - [iOS](https://frida.re/docs/ios/)
 
 ## CLI
 
@@ -12,7 +15,7 @@
 #### pip
 
 ```sh
-pip3 install frida frida-tools objection
+pip3 install -U frida frida-tools
 ```
 
 ### Commands

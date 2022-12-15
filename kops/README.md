@@ -1,15 +1,5 @@
 # Kubernetes Operations (kOps)
 
-<!--
-https://www.udemy.com/course/learn-devops-helm-helmfile-kubernetes-deployment/
-
-https://github.com/ryane/kubernetes-aws-vpc-kops-terraform
-
-https://medium.com/bench-engineering/deploying-kubernetes-clusters-with-kops-and-terraform-832b89250e8e
-
-https://itnext.io/aws-windows-kubernetes-nodes-with-kops-a2accb9ea483
--->
-
 **Keywords:** Kubernetes Orchestration
 
 ## Links
@@ -17,15 +7,18 @@ https://itnext.io/aws-windows-kubernetes-nodes-with-kops-a2accb9ea483
 - [Code Repository](https://github.com/kubernetes/kops)
 - [Main Website](https://kops.sigs.k8s.io/)
 - [Addons](https://kops.sigs.k8s.io/addons/)
-- [asdf kOps](/asdf/asdf-kops.md)
 
-## Guides
+## Docs
 
 - [Compatibility Matrix](https://kops.sigs.k8s.io/welcome/releases/#compatibility-matrix)
 
 ## Content
 
 - [Manage Kubernetes Clusters on AWS Using kOps](https://aws.amazon.com/blogs/compute/kubernetes-clusters-aws-kops/)
+
+## Tools
+
+- [asdf kOps](/asdf/asdf-kops.md)
 
 ## CLI
 
@@ -58,6 +51,19 @@ choco install kubernetes-kops
 kops -h
 ```
 
+### Provisioning
+
+- [Amazon Web Services (AWS)](./cloud-provider/aws.md)
+- [Azure](./cloud-provider/azure.md)
+- [Google Cloud Platform](./cloud-provider/gcp.md)
+
+### Usage
+
+```sh
+#
+kops get cluster
+```
+
 <!-- ### Environments
 
 ```sh
@@ -65,100 +71,20 @@ kops -h
 export KOPS_FEATURE_FLAGS='Spotinst,SpotinstOcean,SpotinstHybrid'
 ``` -->
 
-### Usage
-
-```sh
-#
-aws s3api create-bucket \
-  --bucket 'k8s-kops-state-store' \
-  --region 'us-east-1'
-
-#
-aws s3api put-bucket-versioning \
-  --bucket 'k8s-kops-state-store' \
-  --region 'us-east-1' \
-  --versioning-configuration 'Status=Enabled'
-
-#
-export KOPS_STATE_STORE='s3://k8s-kops-state-store'
-# Good pattern [cluster-name]-[region].k8s.local
-export KOPS_CLUSTER_NAME='dev01-us-east-1.k8s.local' # prod01, stg01, uat01
-
-#
-kops get cluster
-
-#
-ssh-keygen \
-  -q \
-  -b 4096 \
-  -C '<your-email>' \
-  -N '' \
-  -t rsa \
-  -f ~/.ssh/id_rsa."$KOPS_CLUSTER_NAME"
-
-#
-kops \
-  --name "$KOPS_CLUSTER_NAME" \
-  create cluster \
-    --admin-access '10.96.0.0/11,0.0.0.0/0' \
-    --associate-public-ip=false \
-    --authorization 'RBAC' \
-    --cloud 'aws' \
-    --cloud-labels "Cluster-Name=${KOPS_CLUSTER_NAME},Squad=SRE,Creation-Tool=kOps,Environment=Production" \
-    --kubernetes-version '1.18.15' \
-    --master-count 1 \
-    --master-size 't2.micro' \
-    --master-zones 'us-east-1b' \
-    --network-cidr '10.99.0.0/16' \
-    --networking 'calico' \
-    --node-count 3 \
-    --node-size 't2.micro' \
-    --out ./.devops/terraform \
-    --ssh-public-key "${HOME}/.ssh/id_rsa.${KOPS_CLUSTER_NAME}.pub" \
-    --target terraform \
-    --topology 'private' \
-    --zones 'us-east-1b,us-east-1c'
-
-    # --dns-zone kops.example.com
-
-#
-kops \
-  --name "$KOPS_CLUSTER_NAME" \
-  validate cluster
-
-#
-kops export kubecfg \
-  --admin
-```
-
 ### Tips
 
 #### Export Kubeconfig
 
 ```sh
 #
-kops export kubecfg \
-  --admin
-
-#
-kops export kubecfg \
-  --admin=24h
-
-#
-kops export kubecfg \
-  --admin \
-  --kubeconfig ./kubeconfig
+kops export kubecfg --admin
+kops export kubecfg --admin=24h
+kops export kubecfg --admin --kubeconfig ./kubeconfig
 ```
 
 #### Edit Cluster
 
 ```sh
-#
-export KOPS_STATE_STORE='s3://k8s-kops-state-store'
-
-#
-kops get cluster
-
 # Good pattern [cluster-name]-[region].k8s.local
 export KOPS_CLUSTER_NAME='dev01-us-east-1.k8s.local' # prod01, stg01, uat01
 
@@ -221,9 +147,6 @@ kops \
 #### Cluster Queries
 
 ```sh
-#
-export KOPS_STATE_STORE='s3://k8s-kops-state-store'
-
 # Get first cluster description
 kops get cluster \
   -o json | \
@@ -322,18 +245,6 @@ kops \
   validate cluster
 ```
 
-#### Deleting Kubernetes Cluster
-
-```sh
-#
-kops \
-  --name "$KOPS_CLUSTER_NAME" \
-  delete cluster
-
-#
-kops get cluster
-```
-
 ### Issues
 
 <!-- ####
@@ -351,9 +262,6 @@ I1118 18:00:25.978172   52998 instancegroups.go:508] Cluster did not pass valida
 ```
 
 ```sh
-#
-export KOPS_STATE_STORE='s3://k8s-kops-state-store'
-
 #
 kops get cluster \
   -o json | \

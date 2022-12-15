@@ -119,15 +119,3 @@ gcloud config configurations rename <current-name> --new-name <new-name>
 #
 gcloud config configurations activate <new-name>
 ```
-
-### Issues
-
-#### Incompatibility with Kubectl Version
-
-```log
-W1128 09:06:29.176314   17056 gcp.go:119] WARNING: the gcp auth plugin is deprecated in v1.22+, unavailable in v1.26+; use gcloud instead.
-```
-
-```sh
-kbenv use 1.23.8
-```

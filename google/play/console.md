@@ -1,13 +1,5 @@
 # Google Play Console
 
-<!--
-https://www.youtube.com/watch?v=bYDlgzhMSOQ
-
-https://www.iwantanelephant.com/blog/2020/11/17/how-to-configure-api-access-to-google-play-console/
-https://support.appmachine.com/support/solutions/articles/80000978457-authorise-an-additional-user-to-your-google-play-developer-account
-https://www.youtube.com/watch?v=EerPHwks5N0
--->
-
 ## Links
 
 - [Main Website](https://play.google.com/console)
@@ -15,13 +7,27 @@ https://www.youtube.com/watch?v=EerPHwks5N0
 
 ## Tips
 
+### Create a new account
+
+Never create a new account using a personal email. Always use a company email.
+
+<!--
+devops@example.com
+admin@example.com
+-->
+
 ### Create Service Account
 
 1. Open [Google Play Console](https://play.google.com/console)
 2. Setup -> API access
+3. Google Cloud project -> View in Google Cloud Platform
 
 ## Issues
 
-### You need the developer account owner permission
+### API access
 
-TODO
+```log
+You need the developer account owner permission
+```
+
+Only the owner of the account can create a service account.

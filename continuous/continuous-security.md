@@ -1,3 +1,5 @@
 # Continuous Security
 
-TODO
+## Terms
+
+- Continuous Security Scanning

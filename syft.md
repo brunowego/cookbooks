@@ -1,10 +1,6 @@
 # Syft
 
-<!--
-https://github.com/microsoft/sbom-tool
--->
-
-**Keywords:** SBOM
+**Keywords:** SBOM, SCA
 
 ## Links
 

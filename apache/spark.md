@@ -79,13 +79,6 @@ jq '."recommendations" += ["mshdinsight.azure-hdinsight"]' "$PWD"/.vscode/extens
 jq '."hdinsight.disableOpenSurveyLink" |= true' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
-```sh
-# Darwin
-osascript -e 'quit app "Visual Studio Code"'
-
-code --disable-extension mshdinsight.azure-hdinsight
-```
-
 ## Helm
 
 ### Install

@@ -102,13 +102,6 @@ code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 jq '."recommendations" += ["ms-kubernetes-tools.vscode-kubernetes-tools"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
-```sh
-# Darwin
-osascript -e 'quit app "Visual Studio Code"'
-
-code --disable-extension ms-kubernetes-tools.vscode-kubernetes-tools
-```
-
 ### Issues
 
 #### Persistent Volume Claims

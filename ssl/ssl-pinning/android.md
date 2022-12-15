@@ -19,8 +19,9 @@ DST Root CA X3 root
 
 - [Android SDK Platform-Tools](/android/platform-tools.md)
 - [Frida](/frida.md)
+- [objection](/objection.md)
 - [NoxPlayer](/noxplayer.md)
-- [Burp Suite Community Edition (CE)](/burp-suite-ce.md)
+- [Burp Suite Community Edition (CE)](/portswigger/burp-suite-ce.md)
 
 ## Docs
 
@@ -53,10 +54,14 @@ FRIDA_VERSION="$(curl -s https://api.github.com/repos/frida/frida/releases/lates
 
 #
 mv "./frida-server-${FRIDA_VERSION}-android-x86" ./frida-server-android-x86
-chmod +x frida-server-android-x86
+
+chmod +x ./frida-server-android-x86
 
 #
 adb push ./frida-server-android-x86 /data/local/tmp
+
+#
+adb shell ls /data/local/tmp
 ```
 
 ### Setup
@@ -66,16 +71,26 @@ adb push ./frida-server-android-x86 /data/local/tmp
 ```sh
 #
 adb shell ./data/local/tmp/frida-server-android-x86 &
+
+#
+adb shell ps | grep frida-server
 ```
 
-#### MiTM with Burp Suite CE
+#### Proxy (MiTM) with Burp Suite CE
 
-1. Open Burp Suite CE
-2. Proxy Tab -> Options
-3. Proxy Linters -> Edit Current
-4. Binding Tab -> Bind to address
+**Step 1:** Start proxy on Burp Suite CE
+
+1. Proxy tab -> Options
+2. Proxy Linters -> Edit current
+3. Binding tab -> Bind to address
    - Specific Address: Select your current IP address
    - OK
+
+**Step 2:** Configure [Manual Proxy](/noxplayer.md#proxy-manual) on NoxPlayer
+
+**Step 3:** Open browser and navigate to `http://burp`, download "CA Certificate" and install it on your device:
+
+1. Settings -> Search "Certificate" -> Install certificates -> Downloads
 
 #### SSL Unpinning
 
@@ -90,8 +105,17 @@ frida-ps -Uai
 objection -g <package-identifier> explore
 
 #
+android root disable
+android root simulate
+
+#
 android proxy set <proxy-ip> 8080
+
+#
 android sslpinning disable
+
+#
+jobs list
 ```
 
 <!--

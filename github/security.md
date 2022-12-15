@@ -1,6 +1,6 @@
 # GitHub Security
 
-## Security Policy
+## Document
 
 ```sh
 cat << EOF > ./SECURITY.md

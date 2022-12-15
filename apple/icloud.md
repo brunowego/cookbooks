@@ -9,6 +9,8 @@
 ### Shortcut Link
 
 ```sh
+ln -s "$HOME"/Library/Mobile\ Documents/com\~apple\~CloudDocs/Customers "$HOME"/Customers
+
 ln -s "$HOME"/Library/Mobile\ Documents/com\~apple\~CloudDocs/Workspace "$HOME"/Workspace
 ```
 

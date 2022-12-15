@@ -1,20 +1,26 @@
 # chaoskube
 
-## Helm
+**Keywords:** Chaos Engineering, Chaos Monkey
+
+## Links
+
+- [Code Repository](https://github.com/linki/chaoskube)
+
+<!--
+https://github.com/linki/chaoskube
+-->
+
+<!-- ## Helm
 
 ### Install
 
 ```sh
 kubectl create ns chaoskube
-```
 
-```sh
 helm install chaoskube stable/chaoskube \
   --namespace chaoskube \
   --set rbac.create=true
-```
 
-```sh
 kubectl rollout status deploy/chaoskube -n chaoskube
 ```
 
@@ -40,4 +46,4 @@ helm uninstall chaoskube \
 kubectl delete ns chaoskube \
   --grace-period=0 \
   --force
-```
+``` -->

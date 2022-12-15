@@ -2,6 +2,7 @@
 
 ## Tools
 
+- [JSON Crack](https://jsoncrack.com) 🌟
 - [JSON Formatter](https://jsonformatter.org/)
 - [JSON Schema Store](https://schemastore.org/json/)
 

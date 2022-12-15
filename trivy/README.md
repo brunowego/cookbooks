@@ -1,6 +1,6 @@
 # Trivy
 
-**Keywords:** Vulnerability Scanner, SBOM
+**Keywords:** Vulnerability Scanner, SBOM, SCA
 
 A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifacts, Suitable for CI.
 

@@ -4,7 +4,7 @@
 https://github.com/little-angry-clouds/kubernetes-binaries-managers/issues/36
 -->
 
-**Keywords:** Kubectl Version Manager
+**Keywords:** Kubernetes Version Manager
 
 ## Links
 

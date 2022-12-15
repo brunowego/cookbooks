@@ -48,6 +48,13 @@ sudo route delete 172.217.162.174 172.20.10.1
 sudo route delete 216.58.222.78/32 172.20.10.1
 ```
 
+### Change Handle
+
+1. [YouTube Studio](https://studio.youtube.com/)
+2. Customization
+3. Basic info tab
+4. Handle field
+
 ## Issues
 
 ### Proxy

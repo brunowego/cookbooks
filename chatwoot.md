@@ -2,6 +2,11 @@
 
 **Keywords:** Live chat
 
+## Links
+
+- [Code Repository](https://github.com/chatwoot/chatwoot)
+- [Main Website](https://chatwoot.com)
+
 ## Docker
 
 ### Network
@@ -43,9 +48,7 @@ docker run -d \
 
 ```sh
 docker exec chatwoot rails db:migrate
-```
 
-```sh
 echo -e '[INFO]\thttp://127.0.0.1:3000'
 ```
 
@@ -53,5 +56,6 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 
 ```sh
 docker rm -f chatwoot-postgres chatwoot
+
 docker volume rm chatwoot-postgres-data
 ```
