@@ -6,6 +6,8 @@
 
 ## CLI
 
+**Note:** Currently not working.
+
 ### Installation
 
 #### Homebrew
@@ -19,4 +21,13 @@ brew install kubenvz
 
 ```sh
 kubenvz -h
+```
+
+### Uninstall
+
+#### Homebrew
+
+```sh
+brew uninstall kubenvz
+brew untap nutellinoit/kubenvz
 ```

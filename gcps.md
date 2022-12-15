@@ -8,7 +8,7 @@
 
 ## Related
 
-- [Google Cloud SDK](/gcp/services/sdk.md)
+- [Google Cloud SDK](/gcp/README.md#cli)
 
 ## CLI
 

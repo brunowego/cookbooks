@@ -26,9 +26,15 @@ https://github.com/ora0600/hackathon-ksql
 https://github.com/fatmali/openmrs-spark
 -->
 
+<!--
+https://github.com/abhirockzz/kafka-adx-postgres-cdc-demo
+https://github.com/Azure-Samples/azure-sql-db-change-stream-debezium
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/debezium/debezium)
+- [Main Website](https://debezium.io)
 
 ## References
 

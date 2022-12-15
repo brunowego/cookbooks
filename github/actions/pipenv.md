@@ -10,7 +10,14 @@
 ---
 name: Run Python Tests
 
-on: ['pull_request', 'push']
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   test:

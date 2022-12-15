@@ -27,6 +27,12 @@ jq 'del(.credsStore)' ~/.docker/config.json | sponge ~/.docker/config.json
 docker login \
   -u 'brunowego' \
   ghcr.io
+
+#
+docker pull ghcr.io/<organization>/<image>
+
+#
+docker push ghcr.io/<organization>/<image>
 ```
 
 ## Issues
@@ -40,5 +46,5 @@ Error response from daemon: pull access denied for ghcr.io/[organization]/[image
 Access the [GitHub settings token page](https://github.com/settings/tokens) and create new one.
 
 ```sh
-docker pull ghcr.io/[organization]/[image]
+docker pull ghcr.io/<organization>/<image>
 ```

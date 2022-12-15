@@ -116,7 +116,7 @@ minikube start \
   -p minikube
 
 # Using specific Kubernetes version. Kubernetes Releases: https://kubernetes.io/releases/
-export KUBERNETES_VERSION='1.24.3'
+export KUBERNETES_VERSION='1.24.8'
 
 minikube start \
   $(echo "$MINIKUBE_START_OPTS") \

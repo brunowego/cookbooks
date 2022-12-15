@@ -11,7 +11,7 @@ https://github.com/zaproxy/action-api-scan
 
 ## Workflow
 
-**Refer:** `./.github/workflows/notfoundbot.yml`
+**Refer:** `./.github/workflows/zaproxy.yml`
 
 ```yml
 ---
@@ -22,7 +22,7 @@ on:
 
 jobs:
   zap_scan:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     name: Scan ZAP website
     steps:
       - name: ZAP Scan

@@ -53,10 +53,10 @@ ip route get 1 | awk '{print $NF;exit}' # Darwin
 ip route get 1 | awk '{print $7;exit}' # Linux
 
 #
-sudo ip addr del [addr] dev [name]
+sudo ip addr del <addr> dev <name>
 
 #
-sudo ip link delete [device]
+sudo ip link delete <device>
 ```
 
 ## Commands
@@ -87,7 +87,7 @@ ip -4 addr show dev ppp0
 ip link list
 ip route list
 
-dig +short [domain] | tail -n 1
+dig +short <domain> | tail -n 1
 
 $ ip route get x.x.x.x
 x.x.x.x dev ppp0  src x.x.x.x

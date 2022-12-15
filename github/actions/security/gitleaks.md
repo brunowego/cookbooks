@@ -2,17 +2,21 @@
 
 ## Workflow
 
-**Refer:** `./.github/workflows/notfoundbot.yml`
+**Refer:** `./.github/workflows/gitleaks.yml`
 
 ```yml
 name: gitleaks
 
-on: [push, workflow_dispatch]
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   scan:
     name: Secrets Management
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
         with:

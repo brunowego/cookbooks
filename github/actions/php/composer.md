@@ -10,7 +10,14 @@
 ---
 name: GitHub Actions Workflow with Composer cache
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   build:

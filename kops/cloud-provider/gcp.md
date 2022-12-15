@@ -1,35 +1,33 @@
 # Google Cloud Platform
 
-## Links
+## Related
+
+- [CLI](/gcp/README.md#cli)
+
+## Docs
 
 - [Getting Started with kOps on GCE](https://kops.sigs.k8s.io/getting_started/gce/)
 
-<!-- ## State Store
+## State Store
 
 ```sh
 #
-aws s3api create-bucket \
-  --bucket 'k8s-kops-state-store' \
-  --region 'us-east-1'
+export ORG_NAME='<org-name>'
 
 #
-aws s3api put-bucket-versioning \
-  --bucket 'k8s-kops-state-store' \
-  --region 'us-east-1' \
-  --versioning-configuration 'Status=Enabled'
+gsutil mb "gs://${ORG_NAME}-kops-state-store"
 
 #
-export KOPS_STATE_STORE='gs://k8s-kops-state-store'
-``` -->
+export KOPS_STATE_STORE="gs://${ORG_NAME}-kops-state-store"
+```
 
-<!-- ## Create Cluster
+## Create Cluster
 
 ```sh
-# Good pattern [cluster-name]-[region].k8s.local
-export KOPS_CLUSTER_NAME='dev01-us-east-1.k8s.local' # prod01, stg01, uat01
-
-#
-kops get cluster
+# Good pattern <env>.<region>.k8s.local
+export KOPS_CLUSTER_NAME='stg.us-central1.k8s.local' # prod, uat
+# or, <region>.<org-name>.k8s.local
+export KOPS_CLUSTER_NAME='us-central1.<org-name>.k8s.local'
 
 #
 ssh-keygen \
@@ -40,6 +38,13 @@ ssh-keygen \
   -t rsa \
   -f ~/.ssh/id_rsa."$KOPS_CLUSTER_NAME"
 
+# Using specific Kubernetes version. Kubernetes Releases: https://kubernetes.io/releases/
+export KUBERNETES_VERSION='1.24.3'
+
+#
+gcloud projects list
+export GCP_PROJECT='<project-id>'
+
 #
 kops \
   --name "$KOPS_CLUSTER_NAME" \
@@ -49,21 +54,35 @@ kops \
     --authorization 'RBAC' \
     --cloud 'gce' \
     --cloud-labels "Cluster-Name=${KOPS_CLUSTER_NAME},Squad=SRE,Creation-Tool=kOps,Environment=Production" \
-    --kubernetes-version '1.18.15' \
+    --kubernetes-version "$KUBERNETES_VERSION" \
     --master-count 1 \
-    --master-size 't2.micro' \
-    --master-zones 'us-east-1b' \
+    --master-size 'n1-standard-1' \
+    --master-zones 'us-central1-b' \
     --network-cidr '10.99.0.0/16' \
     --networking 'calico' \
     --node-count 3 \
-    --node-size 't2.micro' \
+    --node-size 'n1-standard-1' \
     --out ./.devops/terraform \
+    --project "$GCP_PROJECT" \
     --ssh-public-key "${HOME}/.ssh/id_rsa.${KOPS_CLUSTER_NAME}.pub" \
     --target terraform \
     --topology 'private' \
-    --zones 'us-east-1b,us-east-1c'
+    --zones 'us-central1-b,us-central1-c'
 
-    # --dns-zone kops.example.com
+#
+kops get cluster
+
+#
+cd ./.devops/terraform
+
+#
+terraform init
+
+#
+terraform plan
+
+#
+terraform apply
 
 #
 kops \
@@ -73,4 +92,33 @@ kops \
 #
 kops export kubecfg \
   --admin
-``` -->
+```
+
+## Delete Cluster
+
+```sh
+#
+kops \
+  --name "$KOPS_CLUSTER_NAME" \
+  delete cluster
+
+#
+aws s3api get-bucket-versioning \
+  --bucket "${ORG_NAME}-kops-state-store" \
+  --region "$AWS_REGION"
+
+#
+aws s3api delete-bucket \
+  --bucket "${ORG_NAME}-kops-state-store" \
+  --region "$AWS_REGION"
+```
+
+## Issues
+
+### Bucket Not Empty
+
+```log
+An error occurred (BucketNotEmpty) when calling the DeleteBucket operation: The bucket you tried to delete is not empty. You must delete all versions in the bucket.
+```
+
+Try [Delete Object Versions](/pypi/boto3.md#delete-object-versions).

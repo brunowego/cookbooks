@@ -272,7 +272,8 @@ jobs:
 | -------------------- | ---------------------------------- | ------------- |
 | macOS Catalina 10.15 | `macos-latest` or `macos-10.15`    | Bash          |
 | Ubuntu 16.04         | `ubuntu-16.04`                     | Bash          |
-| Ubuntu 18.04         | `ubuntu-latest` or `ubuntu-18.04`  | Bash          |
+| Ubuntu 18.04         | `ubuntu-18.04`                     | Bash          |
+| Ubuntu 22.04         | `ubuntu-latest` or `ubuntu-22.04`  | Bash          |
 | Windows Server 2019  | `windows-latest` or `windows-2019` | PowerShell    |
 
 ##### Self-Hosted Runners

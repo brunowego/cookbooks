@@ -2,8 +2,6 @@
 
 <!--
 snyk/snyk-cli:gradle-5.4
-
-https://github.com/snyk-labs/nodejs-goof
 -->
 
 **Keywords:** Vulnerability Scanner, SAST

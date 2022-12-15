@@ -1,5 +1,9 @@
 # Amazon Web Services (AWS)
 
+## Related
+
+- [CLI](/aws/README.md#cli)
+
 ## Docs
 
 - [Getting Started with kOps on AWS](https://kops.sigs.k8s.io/getting_started/aws/)

@@ -3,9 +3,14 @@
 ## Workflow
 
 ```yml
+---
 name: GitHub Actions Workflow with NPM cache
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   build:

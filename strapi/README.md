@@ -154,23 +154,23 @@ strapi uninstall <name>
 strapi generate -h
 
 #
-strapi generate policy [name]
+strapi generate policy <name>
 strapi generate policy isAuthenticated
 
 #
-strapi generate controller [name]
+strapi generate controller <name>
 
 #
-strapi generate plugin [name]
+strapi generate plugin <name>
 
 #
-strapi generate api [name]
+strapi generate api <name>
 echo 'n' | strapi generate api faq
 echo 'n' | strapi generate api post
 echo 'n' | strapi generate api product
 
 #
-strapi generate service [name]
+strapi generate service <name>
 
 #
 strapi templates:generate ./
@@ -202,8 +202,8 @@ strapi config:restore \
 ```sh
 #
 strapi admin:reset-user-password \
-  -e [email] \
-  -p [password]
+  -e <email> \
+  -p <password>
 ```
 
 ## Dockerfile

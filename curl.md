@@ -102,7 +102,7 @@ choco install -y curl
 ### Commands
 
 ```sh
-curl -h
+curl --help all
 ```
 
 ### Usage

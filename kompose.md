@@ -35,9 +35,9 @@ kompose -h
 ```sh
 #
 kompose convert \
-  -o ./.k8s/base/ \
+  -o ./.k8s/base \
   --with-kompose-annotation=false \
-  -f ./docker-compose.yaml
+  -f ./docker-compose.yml
 
 #
 kubectl apply -f .

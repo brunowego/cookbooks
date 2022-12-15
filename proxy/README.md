@@ -27,14 +27,17 @@ https://github.com/cristianoliveira/ergo
 ## Set
 
 ```sh
+#
+export PROXY_HOST='<proxy-host>'
+
 # single
-export http_proxy=<URL>
+export http_proxy="$PROXY_HOST"
 
 # multiple
 export \
-  http_proxy=<URL> \
-  https_proxy=<URL> \
-  no_proxy=localhost,127.0.0.1
+  http_proxy="$PROXY_HOST" \
+  https_proxy="$PROXY_HOST" \
+  no_proxy='localhost,127.0.0.1'
 ```
 
 - URL: `http://<username>:<password>@<host>:<port>`

@@ -227,7 +227,7 @@ elasticsearch:
 ingress:
   enabled: true
   hosts:
-  - name: sonarqube.${DOMAIN}
+    - name: sonarqube.${DOMAIN}
   ingressClassName: nginx
 
 sonarProperties:

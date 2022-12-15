@@ -19,20 +19,20 @@ gcloud projects --help
 gcloud projects list
 
 #
-gcloud projects create <name>
+gcloud projects create '<name>'
 
 #
-gcloud config set project <name>
+gcloud config set project '<name>'
 
 #
-gcloud projects describe <project-id>
+gcloud projects describe '<project-id>'
 
 #
-gcloud projects update <project-id> --name <new-name>
+gcloud projects update '<project-id>' --name '<new-name>'
 
 #
-gcloud projects delete <project-id>
+gcloud projects delete '<project-id>'
 
 #
-gcloud projects undelete <project-id>
+gcloud projects undelete '<project-id>'
 ```
