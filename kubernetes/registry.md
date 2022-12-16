@@ -79,3 +79,23 @@ kubectl rollout status daemonset/registry-aliases-hosts-update -n kube-system
 ```sh
 minikube ssh -- sudo cat /etc/hosts
 ```
+
+<!--
+kubectl create secret docker-registry docker-registry --from-literal <key>=<value>
+
+kubectl create secret docker-registry regcred \
+  --docker-server=<harbor.hao.com> \
+  --docker-username=<hao>
+  --docker-password=<xxxxx> --docker-email=<xxxx@qq.com>
+
+kubectl create secret docker-registry prte-docker-registry \
+  --docker-server='https://ghcr.io' \
+  --docker-username='<username>' \
+  --docker-password='<password>'
+
+#
+kubectl create secret generic docker-registry \
+  -n api-local \
+  --from-file=".dockerconfigjson=$HOME/.docker/config.json" \
+  --type=kubernetes.io/dockerconfigjson
+-->

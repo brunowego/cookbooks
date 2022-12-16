@@ -1,3 +1,6 @@
 # HashiCorp Waypoint
 
-TODO
+## Links
+
+- [Code Repository](https://github.com/hashicorp/waypoint)
+- [Main Website](https://waypointproject.io/)

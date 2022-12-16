@@ -49,34 +49,76 @@ node ace generate:key
 
 #
 node ace serve --watch
-
-#
-node ace build --production
-
-#
-node ace make:migration users
-node ace migration:run
-
-#
-node ace make:model User
-node ace make:controller User
-node ace make:exception BadRequest
-node ace make:validator CreateUser
-
-#
-node ace make:seeder User
-node ace db:seed
 ```
 
 <!--
-npm ci --production
-
 node ace dump:rcfile
 
 yarn add @adonisjs/lucid
 node ace configure @adonisjs/lucid
 -->
 
+#### Make
+
+```sh
+#
+node ace make:model User
+
+#
+node ace make:controller User
+
+#
+node ace make:exception BadRequest
+
+#
+node ace make:validator CreateUser
+```
+
+#### Migration
+
+```sh
+#
+node ace make:migration users
+
+#
+node ace migration:run
+```
+
+#### Seeder
+
+```sh
+#
+node ace make:seeder User
+
+#
+node ace db:seed
+```
+
+#### Production Build
+
+```sh
+#
+node ace build --production
+
+#
+cd ./build
+
+# Using NPM
+npm ci --production && \
+  npm clean cache --force
+
+# Using Yarn
+yarn install --prod --frozen-lockfile && \
+  yarn cache clean --all
+
+#
+node ./server.js
+```
+
 ## Dockerfile
 
 TODO
+
+<!--
+https://github.com/search?q=filename%3Adocker-entrypoint.sh+%22ace+migration%3Arun%22
+-->

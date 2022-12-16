@@ -37,9 +37,8 @@ boundary -h
 boundary dev \
   -login-name 'admin' \
   -password 'Pa$$w0rd!'
-```
 
-```sh
+#
 echo -e '[INFO]\thttp://127.0.0.1:9200'
 ```
 

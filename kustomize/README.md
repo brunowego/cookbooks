@@ -91,28 +91,28 @@ sudo su - "$USER"
 
 ```sh
 # Create
-kustomize create --resources ./base
+kustomize create --resources ./.k8s/base
 
 # Preview base
-kustomize build ./base | \
+kustomize build ./.k8s/base | \
   yq e -
 
 # Preview local
-kustomize build ./overlays/local |
+kustomize build ./.k8s/overlays/local |
   yq e -
 
 # Apply
-kustomize build ./overlays/local | \
+kustomize build ./.k8s/overlays/local | \
   kubectl apply -f -
 
 # Delete
-kustomize build ./overlays/local | \
+kustomize build ./.k8s/overlays/local | \
   kubectl delete -f -
 
 # Show difference
-diff <(kustomize build ./base) <(kustomize build ./overlays/local)
+diff <(kustomize build ./base) <(kustomize build ./.k8s/overlays/local)
 # or, using icdiff
-icdiff <(kustomize build ./base) <(kustomize build ./overlays/local)
+icdiff <(kustomize build ./base) <(kustomize build ./.k8s/overlays/local)
 ```
 
 ### Tips

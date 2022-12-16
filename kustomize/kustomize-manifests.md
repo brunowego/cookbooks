@@ -10,16 +10,16 @@ https://www.jetstack.io/blog/kustomize-cert-manager/
 #
 mkdir -p ./.k8s/base
 
-cat << EOF > ./.k8s/base/kustomization.yaml
+cat << EOF > ./.k8s/base/kustomization.yml
 ---
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- namespace.yaml
-- deployment.yaml
-- service.yaml
-- ingress.yaml
+- namespace.yml
+- deployment.yml
+- service.yml
+- ingress.yml
 
 configMapGenerator:
 - name: metadata
@@ -51,7 +51,7 @@ APP_HOST=my-app.127.0.0.1.nip.io
 EOF
 
 #
-cat << EOF > ./.k8s/overlays/local/kustomization.yaml
+cat << EOF > ./.k8s/overlays/local/kustomization.yml
 ---
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
@@ -73,6 +73,8 @@ configMapGenerator:
 EOF
 ```
 
+**Note:** Run [Kustomize](/kustomize/README.md#usage)
+
 <!-- ##
 
 ```yml
@@ -83,8 +85,8 @@ kind: Kustomization
 namespace: quay-enterprise
 
 resources:
-- quay-enterprise-ns.yaml
-- quay-registry-quayregistry.yaml
+- quay-enterprise-ns.yml
+- quay-registry-quayregistry.yml
 
 vars:
 - fieldref:
@@ -96,10 +98,10 @@ vars:
     name: tektoncd-install-parameters
 
 configurations:
-- kustomizeconfig.yaml
+- kustomizeconfig.yml
 ```
 
-./kustomizeconfig.yaml
+./kustomizeconfig.yml
 
 ```yml
 ---

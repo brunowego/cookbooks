@@ -21,5 +21,6 @@
 
 ## Locally
 
-- [MiniKube](/minikube.md)
+- [k3s](/k3s.md)
 - [Kubernetes in Docker (KinD)](/kind/README.md)
+- [MiniKube](/minikube.md) 🌟

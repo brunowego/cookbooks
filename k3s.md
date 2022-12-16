@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://k3s.io/)
+- [Main Website](https://k3s.io)
 
 ## CLI
 
