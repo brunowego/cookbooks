@@ -1,6 +1,6 @@
 # OpenTracing
 
-## Implementations
+## Providers
 
 - [CNCF Jaeger](/jaeger.md)
 - Datadog

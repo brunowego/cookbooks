@@ -29,7 +29,7 @@
 - [Zerotier](/zerotier.md)
 -->
 
-### Implementations
+### Providers
 
 #### Cloud Provider
 

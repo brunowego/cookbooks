@@ -8,7 +8,7 @@
 
 - Virtual Machine Monitor (VMM)
 
-## Implementations
+## Providers
 
 ### Bare-metal Hypervisor (Type-1 / Hardware)
 

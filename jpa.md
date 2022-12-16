@@ -8,7 +8,7 @@
 - [Mapping a Single Entity to Multiple Tables in JPA](https://www.baeldung.com/jpa-mapping-single-entity-to-multiple-tables)
 - [JPA - Using @OrderBy Annotation](https://www.logicbig.com/tutorials/java-ee-tutorial/jpa/order-by-annotation.html)
 
-## Implementations
+## Providers
 
 - [Hibernate](/hibernate.md)
 - [EclipseLink](/eclipselink.md)

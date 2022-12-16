@@ -5,7 +5,7 @@
 - [Code Repository](https://github.com/dotansimha/graphql-code-generator)
 - [Main Website](https://graphql-code-generator.com/)
 
-<!-- ## Implementations
+<!-- ## Providers
 
 - []() -->
 

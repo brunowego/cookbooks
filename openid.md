@@ -21,11 +21,13 @@ Impersonated
 - [Certified OpenID Connect Implementations](https://openid.net/developers/certified/)
 - [Wikipedia](https://en.wikipedia.org/wiki/OpenID)
 
-## Implementations
+## Providers
 
 - [Dex](/dex.md)
-- [Keycloak](/keycloak.md)
+- [IdentityServer](/identityserver.md)
+- [Keycloak](/keycloak/README.md)
 - [Ory Hydra](/ory-hydra.md)
+
 <!--
 - [IdentityServer](/identityserver.md)
 -->
@@ -66,10 +68,10 @@ Impersonated
 
 OpenID defines a set of standard scopes and claims:
 
-| Scope | Claims |
-| --- | --- |
-| profile | name, family_name, given_name, middle_name, nickname, preferred_username, profile, picture, website, gender, birthdate, zoneinfo, locale, and updated_at. |
-| email | email, email_verified |
-| address | address |
-| phone | phone_number, phone_number_verified |
-| offline_access | requests refresh token |
+| Scope          | Claims                                                                                                                                                    |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| profile        | name, family_name, given_name, middle_name, nickname, preferred_username, profile, picture, website, gender, birthdate, zoneinfo, locale, and updated_at. |
+| email          | email, email_verified                                                                                                                                     |
+| address        | address                                                                                                                                                   |
+| phone          | phone_number, phone_number_verified                                                                                                                       |
+| offline_access | requests refresh token                                                                                                                                    |

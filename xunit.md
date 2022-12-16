@@ -8,7 +8,7 @@
 - Test runner
 - Test result
 
-## Implementations
+## Providers
 
 - CppUnit for C++ and Java
 - NUnit for .NET

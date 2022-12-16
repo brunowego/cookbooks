@@ -1,5 +1,11 @@
 # direnv
 
+<!--
+https://github.com/hyperupcall/autoenv
+https://github.com/untitaker/quickenv
+https://github.com/Shopify/shadowenv
+-->
+
 **Keywords:** Auto-load Environment Variables
 
 ## Links
@@ -50,16 +56,36 @@ eval "$(direnv hook zsh)" # bash
 source ~/.zshrc
 ```
 
+<!--
+https://github.com/wf-tomluci/wf-lt-dotfiles/blob/main/dotfiles/.oh-my-zsh/plugins/direnv/direnv.plugin.zsh
+-->
+
 ### Configuration
 
 ```sh
 #
-cat << EOF > ./.envrc
+mkdir ~/.config/direnv
 
+#
+cat << EOF > ~/.config/direnv/direnv.toml
+[global]
+load_dotenv = true
+strict_env = true
+
+[whitelist]
+prefix = ["~/Workspace"]
+EOF
+
+#
+cat << EOF > ./.envrc
+export <ENV>=<VALUE>
 EOF
 
 #
 echo '/.envrc' >> ~/.gitignore_global
+
+#
+echo '<ENV>=<VALUE>' > ./.env
 ```
 
 <!--
@@ -94,7 +120,7 @@ direnv reload
 ```
 
 <!--
-direnv fetchurl
+direnv fetchurl <url>
 -->
 
 ### Tips

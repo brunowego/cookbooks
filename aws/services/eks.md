@@ -2,6 +2,9 @@
 
 <!--
 https://www.youtube.com/watch?v=tkYzg8HRK4o
+
+https://github.com/aws-ia/terraform-aws-eks-blueprints
+https://github.com/hashicorp/learn-terraform-provision-eks-cluster
 -->
 
 **Keywords:** Kubernetes Orchestration

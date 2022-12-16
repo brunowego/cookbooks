@@ -4,7 +4,7 @@
 
 - [Debugging DNS Resolution](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/)
 
-## Implementations
+## Providers
 
 - [CoreDNS](/coredns.md)
 - [Kube-DNS](/kube-dns.md)

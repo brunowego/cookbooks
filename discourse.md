@@ -5,6 +5,12 @@
 - [Code Repository](https://github.com/discourse/discourse)
 - [Main Website](https://discourse.org)
 
+## Who Uses
+
+- [Customers](https://discourse.org/customers)
+- More
+  - [HashiCorp](https://discuss.hashicorp.com/)
+
 ## Docker
 
 ### Network

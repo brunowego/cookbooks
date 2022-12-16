@@ -2,26 +2,41 @@
 
 ## Dependencies
 
-- [direnv](/direnv.md)
+- Optional: [direnv](/direnv.md)
+
+### Testing Resources
+
+- [PostgreSQL Server](/postgresql/server.md#docker)
+
+## Scopes (Project)
+
+```sh
+# Organization ID
+echo 'BOUNDARY_SCOPE_ID=<o_id>' >> ./.env
+
+boundary scopes list
+
+boundary scopes create \
+  -description 'Project for <Project Name>' \
+  -name '<Project Name>' \
+  -scope-id "$BOUNDARY_SCOPE_ID"
+```
 
 ## Credential
 
 ```sh
 #
-boundary scopes list -recursive
-
-#
-echo 'BOUNDARY_CREDENTIAL_SCOPE_ID=<p_id>' >> ./.envrc
+echo 'BOUNDARY_PROJECT_ID=<p_id>' >> ./.env
 
 boundary credential-stores create static \
   -description 'Scope for Local' \
   -name 'Local' \
-  -scope-id "$BOUNDARY_CREDENTIAL_SCOPE_ID"
+  -scope-id "$BOUNDARY_PROJECT_ID"
 
-boundary credential-stores list -scope-id "$BOUNDARY_CREDENTIAL_SCOPE_ID"
+boundary credential-stores list -scope-id "$BOUNDARY_PROJECT_ID"
 
 #
-echo 'BOUNDARY_CREDENTIAL_STORE_ID=<csst_id>' >> ./.envrc
+echo 'BOUNDARY_CREDENTIAL_STORE_ID=<csst_id>' >> ./.env
 
 boundary credentials list
 

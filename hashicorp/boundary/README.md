@@ -1,5 +1,11 @@
 # HashiCorp Boundary
 
+<!--
+https://github.com/janikgar/boundary-chart
+-->
+
+**Keywords:** Bastion Host, IAP, Access Plane
+
 ## Links
 
 - [Code Repository](https://github.com/hashicorp/boundary)
@@ -8,6 +14,10 @@
 - [Docs](https://developer.hashicorp.com/boundary/docs)
 
 ## CLI
+
+## Dependencies
+
+- Optional: [direnv](/direnv.md)
 
 ### Dependencies
 
@@ -38,8 +48,8 @@ boundary dev \
   -login-name 'admin' \
   -password 'Pa$$w0rd!'
 
-#
-echo -e '[INFO]\thttp://127.0.0.1:9200'
+# Create your organization
+echo -e '[INFO]\thttp://127.0.0.1:9200/scopes/global/scopes/new'
 ```
 
 ### Usage
@@ -49,7 +59,7 @@ echo -e '[INFO]\thttp://127.0.0.1:9200'
 boundary auth-methods list
 
 #
-export BOUNDARY_AUTH_METHOD_ID='ampw_1234567890'
+echo 'BOUNDARY_AUTH_METHOD_ID=ampw_1234567890' >> ./.env
 
 #
 boundary authenticate password -login-name admin

@@ -17,11 +17,8 @@
 
 ## Solutions
 
+- [HashiCorp Boundary](/hashicorp/boundary/README.md) 🌟
 - [Infra](/infra/README.md)
 - [StrongDM](/strongdm.md)
 - [Teleport](/teleport/README.md) 🌟
 - [Warpgate](/warpgate.md)
-
-<!--
-HashiCorp Boundary
--->

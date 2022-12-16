@@ -43,7 +43,7 @@ https://www.youtube.com/watch?v=o7OHogUcRmI
 - Okta
 - Keycloak
 
-## Implementations
+## Providers
 
 - [aws-cognito-react - v2](https://github.com/dbroadhurst/aws-cognito-react)
 

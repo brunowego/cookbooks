@@ -5,6 +5,11 @@
 - [Crontab Generator](https://crontab-generator.org/)
 - [Crontab.guru](https://crontab.guru/)
 
+## Tools
+
+- [Lingon X](/lingon-x.md)
+- [macron](https://github.com/OwenMelbz/macron)
+
 ## CLI
 
 ### Installation
