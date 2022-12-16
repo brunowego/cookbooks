@@ -1,3 +1,0 @@
-# HashiCorp Boundary
-
-TODO

@@ -1,6 +1,10 @@
 # Chatwoot
 
-**Keywords:** Live chat
+**Keywords:** Live chat, Customer Service
+
+<!--
+https://artifacthub.io/packages/helm/chatwoot/chatwoot
+-->
 
 ## Links
 

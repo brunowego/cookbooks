@@ -46,35 +46,35 @@ DOCKER_BUILDKIT=0 docker build ./
 
 # Daemon
 TODO
-# {"experimental":false,"features":{"buildkit":true},"insecure-registries":["[hostname]:5001","[hostname]:5001"]}%
+# {"experimental":false,"features":{"buildkit":true},"insecure-registries":["<hostname>:5001","<hostname>:5001"]}%
 ```
 
 #### Work directory
 
 ```Dockerfile
-WORKDIR /usr/src/[app-name]
+WORKDIR /usr/src/<app-name>
 ```
 
 #### Output
 
 ```Dockerfile
 RUN echo '\
-[text]\
-' > [/path/to/file]
+<text>\
+' > </path/to/file>
 ```
 
 ```Dockerfile
 RUN echo '\
-[text]\
-' | tee [/path/to/file]
+<text>\
+' | tee </path/to/file>
 ```
 
 ```Dockerfile
 RUN { \
-      echo '[text]'; \
-      echo '[text]'; \
-      echo '[text]'; \
-    } > [/path/to/file]
+      echo '<text>'; \
+      echo '<text>'; \
+      echo '<text>'; \
+    } > </path/to/file>
 ```
 
 #### Entrypoint
@@ -88,11 +88,11 @@ ENTRYPOINT ["/sbin/entrypoint.sh"]
 #### Build
 
 ```Dockerfile
-FROM [repo]/[image]:[tag] AS build
+FROM <repo>/<image>:<tag> AS build
 
 # ---
 
-FROM [repo]/[image]:[tag]
+FROM <repo>/<image>:<tag>
 
-COPY --from=build [/path/to/folder-or-file] [/path/to/destination]
+COPY --from=build </path/to/folder-or-file> </path/to/destination>
 ```

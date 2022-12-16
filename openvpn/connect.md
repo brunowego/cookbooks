@@ -2,6 +2,19 @@
 
 **Keywords:** OpenVPN Client
 
+<!--
+.ovpn
+-->
+
+<!--
+https://www.slickvpn.com/tutorials/using-openvpn-with-ubuntu-mint-network-manager/
+-->
+
+## Links
+
+- [OpenVPN 3 Client for Linux](https://openvpn.net/cloud-docs/openvpn-3-client-for-linux/)
+- [Connecting to Access Server with Linux](https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-linux/)
+
 ## App
 
 ### Dependencies
@@ -27,6 +40,15 @@ sudo curl -so /etc/apt/sources.list.d/openvpn3.list 'https://swupdate.openvpn.ne
 sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt -y install openvpn3
 ```
+
+<!-- #### YUM
+
+```sh
+yum check-update
+
+# Repo: EPEL
+sudo yum -y install openvpn3-client
+``` -->
 
 #### Chocolatey
 
