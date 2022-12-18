@@ -17,12 +17,12 @@ kubectl create secret generic keycloak-secrets \
 
 #
 kubectl run -it --rm \
-  --image docker.io/jboss/keycloak:13.0.1 \
+  --image docker.io/jboss/keycloak:16.1.1 \
   --overrides '{
   "spec": {
     "containers": [{
       "name": "keycloak",
-      "image": "docker.io/jboss/keycloak:13.0.1",
+      "image": "docker.io/jboss/keycloak:16.1.1",
       "command": ["/bin/bash"],
       "workingDir": "/opt/jboss/keycloak/bin",
       "resources": {
@@ -68,14 +68,28 @@ docker run -it --rm \
   -e KEYCLOAK_REALM='master' \
   -e KEYCLOAK_CLIENT_ID='admin-cli' \
   -e KEYCLOAK_USER='admin' \
-  -e KEYCLOAK_PASSWORD='admin' \
+  -e KEYCLOAK_PASSWORD='Pa$$w0rd!' \
   --entrypoint /opt/jboss/keycloak/bin/kcadm.sh \
   --name kcadm \
   --network workbench \
-  docker.io/jboss/keycloak:13.0.1 help
+  docker.io/jboss/keycloak:16.1.1 help
 ```
 
 ## CLI
+
+### Installation
+
+#### Darwin
+
+```sh
+#
+sudo install -dm 755 -o "$USER" -g staff /usr/local/opt/keycloak
+
+curl \
+  -L \
+  'https://github.com/keycloak/keycloak/releases/download/20.0.2/keycloak-20.0.2.tar.gz' | \
+    tar -xzC /usr/local/opt/keycloak --strip-components 1
+```
 
 ### Commands
 
@@ -83,21 +97,39 @@ docker run -it --rm \
 ./kcadm.sh help
 ```
 
-### Usage
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Keycloak
+export PATH="/usr/local/opt/keycloak/bin:$PATH"
+```
+
+```sh
+sudo su - "$USER"
+```
+
+### Configuration
 
 ```sh
 #
-export KEYCLOAK_SERVER='http://127.0.0.1:8080/auth'
-export KEYCLOAK_REALM='master'
-export KEYCLOAK_CLIENT_ID='admin-cli'
-export KEYCLOAK_USER='admin'
-export KEYCLOAK_PASSWORD='admin'
+cat << EOF >> ./.env
+KEYCLOAK_SERVER=http://127.0.0.1:8080/auth
+KEYCLOAK_MASTER_REALM=master
+KEYCLOAK_MASTER_CLIENT_ID=admin-cli
+KEYCLOAK_USER=admin
+KEYCLOAK_PASSWORD=Pa\$\$w0rd!
+KEYCLOAK_ORG_REALM
+EOF
+
+direnv allow ./
 
 #
-./kcadm.sh config credentials \
+kcadm.sh config credentials \
   --server "$KEYCLOAK_SERVER" \
-  --realm "$KEYCLOAK_REALM" \
-  --client "$KEYCLOAK_CLIENT_ID" \
+  --realm "$KEYCLOAK_MASTER_REALM" \
+  --client "$KEYCLOAK_MASTER_CLIENT_ID" \
   --user "$KEYCLOAK_USER" \
   --password "$KEYCLOAK_PASSWORD"
 
@@ -105,47 +137,118 @@ export KEYCLOAK_PASSWORD='admin'
 cat ~/.keycloak/kcadm.config
 
 #
-./kcadm.sh create realms \
-  -s realm=test \
+cat << EOF >> ./.env
+KEYCLOAK_REALM=<org-name>
+KEYCLOAK_CLIENT_ID=<software-name>
+EOF
+
+direnv allow ./
+
+#
+kcadm.sh create realms \
+  -s realm="$KEYCLOAK_REALM" \
+  -s displayName='<OrgName>' \
   -s enabled=true
 
 #
-./kcadm.sh create clients \
-  -r test \
-  -s clientId=test \
+kcadm.sh create clients \
+  -r "$KEYCLOAK_REALM" \
+  -s clientId="$KEYCLOAK_CLIENT_ID" \
   -s directAccessGrantsEnabled=true \
   -s publicClient=true \
   -s 'webOrigins=["*"]' \
   -s 'redirectUris=["*"]'
 
 #
-./kcadm.sh create users \
-  -r test \
-  -s username=admin \
+kcadm.sh create users \
+  -r "$KEYCLOAK_REALM" \
+  -s username='johndoe' \
+  -s email='johndoe@example.com' \
+  -s firstName='John' \
+  -s lastName='Doe' \
   -s enabled=true
 
 #
-./kcadm.sh set-password \
-  -r test \
-  --username admin \
-  --new-password admin
-
-#
-./kcadm.sh create components \
-  -r test \
-  -s name=uid-attribute-to-email-mapper \
-  -s providerId=user-attribute-ldap-mapper \
-  -s providerType=org.keycloak.storage.ldap.mappers.LDAPStorageMapper \
-  -s parentId=johndoe \
-  -s 'config."user.model.attribute"=["email"]' \
-  -s 'config."ldap.attribute"=["uid"]' \
-  -s 'config."read.only"=["false"]' \
-  -s 'config."always.read.value.from.ldap"=["false"]' \
-  -s 'config."is.mandatory.in.ldap"=["false"]'
-
-#
-./kcadm.sh delete realms/test
+kcadm.sh set-password \
+  -r "$KEYCLOAK_REALM" \
+  --username 'johndoe' \
+  --new-password 'Pa$$w0rd!'
 ```
+
+<!--
+./kcadm.sh create components \
+ -r test \
+ -s name=uid-attribute-to-email-mapper \
+ -s providerId=user-attribute-ldap-mapper \
+ -s providerType=org.keycloak.storage.ldap.mappers.LDAPStorageMapper \
+ -s parentId=johndoe \
+ -s 'config."user.model.attribute"=["email"]' \
+ -s 'config."ldap.attribute"=["uid"]' \
+ -s 'config."read.only"=["false"]' \
+ -s 'config."always.read.value.from.ldap"=["false"]' \
+ -s 'config."is.mandatory.in.ldap"=["false"]'
+
+./kcadm.sh delete realms/test
+-->
+
+### Testing
+
+**Dependencies:**
+
+- [cURL](/curl.md)
+- [jless](/jless.md)
+- [step](/step.md)
+- [jq](/jq.md)
+
+```sh
+#
+curl -s "http://localhost:8080/auth/realms/$KEYCLOAK_REALM" | jless
+
+# OpenID Endpoint Configuration
+curl -s "http://localhost:8080/auth/realms/$KEYCLOAK_REALM/.well-known/openid-configuration" | jless
+
+# SAML 2.0 Identity Provider Metadata
+curl -s "http://127.0.0.1:8080/auth/realms/$KEYCLOAK_REALM/protocol/saml/descriptor"
+
+# Authorization
+echo -e "[INFO]\thttp://localhost:8080/auth/realms/$KEYCLOAK_REALM/protocol/openid-connect/auth?scope=openid&response_type=code&client_id=$KEYCLOAK_CLIENT_ID&redirect_uri=https://oauth.pstmn.io/v1/callback"
+
+# User Info
+export KEYCLOAK_ACCESS_TOKEN=$(curl -s \
+  -d 'grant_type=password' \
+  -d 'username=johndoe' \
+  -d 'password=Pa$$w0rd!' \
+  -d "client_id=$KEYCLOAK_CLIENT_ID" \
+  -X POST \
+  "http://localhost:8080/auth/realms/$KEYCLOAK_REALM/protocol/openid-connect/token" | \
+    jq -r '.access_token' \
+); echo "$KEYCLOAK_ACCESS_TOKEN" | step crypto jwt inspect --insecure
+
+curl \
+  -s \
+  -H "Authorization: Bearer ${KEYCLOAK_ACCESS_TOKEN}" \
+  "http://localhost:8080/auth/realms/$KEYCLOAK_REALM/protocol/openid-connect/userinfo" | jless
+
+# End Session
+# http://localhost:8080/auth/realms/$KEYCLOAK_REALM/protocol/openid-connect/logout
+
+# JSON Web Key Set (JWKS) URI
+curl -s "http://localhost:8080/auth/realms/$KEYCLOAK_REALM/protocol/openid-connect/certs" | jless
+```
+
+<!--
+location_header=$(curl -sS -D - "${KEYCLOAK_URL}/admin/realms/${REALM}/users" \
+  -H 'Content-Type: application/json' \
+  -H "Authorization: Bearer ${ADMIN_TOKEN}" \
+  -d "{\"username\":\"user-${count}\", \"enabled\":\"true\"}" | grep -Fi 'Location:')
+
+user_id=$(echo "${location_header##*/}" | tr -d '\r')
+
+curl -sS -X PUT "${KEYCLOAK_URL}/admin/realms/${REALM}/users/${user_id}/reset-password" \
+  -H 'Content-Type: application/json' \
+  -H "Authorization: Bearer ${ADMIN_TOKEN}" \
+  -d '{"type":"password", "value":"user", "temporary":false}'
+-->
 
 ### Tips
 

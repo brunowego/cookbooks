@@ -28,6 +28,10 @@
 
 ## Docker
 
+### Links
+
+- [Using Kali Linux Docker Images](https://kali.org/docs/containers/using-kali-docker-images/)
+
 ### Network
 
 ```sh
@@ -43,7 +47,7 @@ docker run -it --rm \
   -h kali \
   --name kali \
   --network workbench \
-  docker.io/kalilinux/kali:amd64 /bin/bash
+  docker.io/kalilinux/kali-rolling:amd64 /bin/bash
 ```
 
 <!--

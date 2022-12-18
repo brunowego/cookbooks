@@ -64,6 +64,9 @@ jobs kill <job-id>
 ```
 
 <!--
+android root disable
+android root simulate
+
 android hooking search methods getRequestParams
 android hooking list class_methods <classname>
 android hooking generate simple <classname>

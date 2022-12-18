@@ -8,4 +8,7 @@ https://medium.com/everything-full-stack/streaming-data-changes-to-a-data-lake-w
 https://github.com/tikal-fuseday/delta-architecture
 -->
 
-TODO
+## Links
+
+- [Code Repository](https://github.com/delta-io/delta)
+- [Main Website](https://delta.io)

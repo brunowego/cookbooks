@@ -18,6 +18,10 @@ https://github.com/Eltion/Facebook-SSL-Pinning-Bypass
 https://security.stackexchange.com/questions/169913/ios-android-certificate-pinning-with-lets-encrypt
 -->
 
+<!--
+Examples: Twitch (unpinning), Twitter (pinning)
+-->
+
 **Keywords:** Penetration Test (a.k.a. Pentest)
 
 ## Docs

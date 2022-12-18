@@ -52,6 +52,17 @@ adb uninstall package
 
 ### Tips
 
+#### Root Access
+
+```sh
+#
+adb root
+adb remount
+
+#
+adb unroot
+```
+
 #### Logs
 
 ```sh

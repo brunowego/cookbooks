@@ -61,6 +61,8 @@ boundary auth-methods list
 #
 echo 'BOUNDARY_AUTH_METHOD_ID=ampw_1234567890' >> ./.env
 
+direnv allow ./
+
 #
 boundary authenticate password -login-name admin
 

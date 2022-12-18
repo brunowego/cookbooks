@@ -7,6 +7,7 @@
 - Docs
   - [Android](https://frida.re/docs/android/)
   - [iOS](https://frida.re/docs/ios/)
+- [CodeShare](https://codeshare.frida.re/)
 
 ## CLI
 
@@ -35,15 +36,17 @@ frida-ps -Uai
 ```
 
 <!--
+frida --codeshare sowdust/universal-android-ssl-pinning-bypass-2 -f com.example.app -U
+
 frida \
   –U \
-  –f com.siteblindado.app \
+  –f com.example.app \
   –l ./my-scrypt.js \
   --no-pause
 
 frida-dexdump -p <pid> -U
 
-frida-ps -D 458f4aa5 -a
+frida-ps -D <device-id> -a
 
 frida-trace -U -i open rock_paper_scissors
 -->

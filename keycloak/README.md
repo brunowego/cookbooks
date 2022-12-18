@@ -61,31 +61,16 @@ Red Hat WildFly (JBoss Application Server)
 
 ## Guides
 
-- [Getting Started Guide](https://www.keycloak.org/docs/latest/getting_started/)
+- [Getting Started Guide](https://keycloak.org/docs/latest/getting_started/)
 - [How to size your projects for Red Hat's single sign-on technology](https://developers.redhat.com/articles/2021/06/07/how-size-your-projects-red-hats-single-sign-technology#planning_the_performance_assessment)
 - [The Admin CLI](https://github.com/keycloak/keycloak-documentation/blob/master/server_admin/topics/admin-cli.adoc)
 - [Keycloak Performance Testsuite](https://github.com/keycloak/keycloak/tree/master/testsuite/performance)
 
-## CLI Embedded Mode
-
-```sh
-#
-[disconnected /] connect
-
-#
-[disconnected /] embed-server --server-config=standalone.xml --std-out=echo
-```
-
-```sh
-#
-(echo embed-server --server-config=standalone.xml --std-out=echo; cat myscript.cli) | jboss-cli.sh
-```
-
-<!--
-jboss-cli.sh --file=turn-off-caching.cli
--->
-
 ## Docker
+
+### Dependencies
+
+- Optional: [direnv](/direnv.md)
 
 ### Network
 
@@ -96,8 +81,43 @@ docker network create workbench \
 
 ### Running
 
+**Using PostgreSQL**
+
 ```sh
-# Using MySQL
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h postgres \
+  -e POSTGRES_USER='keycloak' \
+  -e POSTGRES_PASSWORD='keycloak' \
+  -e POSTGRES_DB='keycloak' \
+  -v keycloak-postgres-data:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  --name keycloak-postgres \
+  --network workbench \
+  docker.io/library/postgres:11.2-alpine
+
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h keycloak \
+  -e DB_VENDOR='postgres' \
+  -e DB_ADDR='keycloak-postgres' \
+  -e DB_DATABASE='keycloak' \
+  -e DB_SCHEMA='public' \
+  -e DB_USER='keycloak' \
+  -e DB_PASSWORD='keycloak' \
+  -e KEYCLOAK_USER='admin' \
+  -e KEYCLOAK_PASSWORD='Pa$$w0rd!' \
+  -p 8080:8080 \
+  -p 8443:8443 \
+  --name keycloak \
+  --network workbench \
+  docker.io/jboss/keycloak:16.1.1 \
+    -Dkeycloak.profile.feature.upload_scripts=enabled
+```
+
+**Using MySQL**
+
+```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mysql \
@@ -126,40 +146,7 @@ docker run -d \
   -p 8443:8443 \
   --name keycloak \
   --network workbench \
-  docker.io/jboss/keycloak:13.0.1 \
-    -Dkeycloak.profile.feature.upload_scripts=enabled
-```
-
-```sh
-# Using PostgreSQL
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h postgres \
-  -e POSTGRES_USER='keycloak' \
-  -e POSTGRES_PASSWORD='keycloak' \
-  -e POSTGRES_DB='keycloak' \
-  -v keycloak-postgres-data:/var/lib/postgresql/data \
-  -p 5432:5432 \
-  --name keycloak-postgres \
-  --network workbench \
-  docker.io/library/postgres:11.2-alpine
-
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h keycloak \
-  -e DB_VENDOR='postgres' \
-  -e DB_ADDR='keycloak-postgres' \
-  -e DB_DATABASE='keycloak' \
-  -e DB_SCHEMA='public' \
-  -e DB_USER='keycloak' \
-  -e DB_PASSWORD='keycloak' \
-  -e KEYCLOAK_USER='admin' \
-  -e KEYCLOAK_PASSWORD='admin' \
-  -p 8080:8080 \
-  -p 8443:8443 \
-  --name keycloak \
-  --network workbench \
-  docker.io/jboss/keycloak:13.0.1 \
+  docker.io/jboss/keycloak:16.1.1 \
     -Dkeycloak.profile.feature.upload_scripts=enabled
 ```
 
@@ -173,135 +160,32 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 echo -e '[INFO]\thttp://127.0.0.1:8080/auth/admin/'
 ```
 
-### Configuration
+### Tips
 
-```sh
-#
-export KEYCLOAK_SERVER='http://127.0.0.1:8080/auth'
-export KEYCLOAK_REALM='master'
-export KEYCLOAK_CLIENT_ID='admin-cli'
-export KEYCLOAK_USER='admin'
-export KEYCLOAK_PASSWORD='admin'
-
-#
-./kcadm.sh config credentials \
-  --server "$KEYCLOAK_SERVER" \
-  --realm "$KEYCLOAK_REALM" \
-  --client "$KEYCLOAK_CLIENT_ID" \
-  --user "$KEYCLOAK_USER" \
-  --password "$KEYCLOAK_PASSWORD"
-
-#
-./kcadm.sh create realms \
-  -s realm=test \
-  -s enabled=true
-
-#
-./kcadm.sh create clients \
-  -r test \
-  -s clientId=test \
-  -s directAccessGrantsEnabled=true \
-  -s publicClient=true \
-  -s 'webOrigins=["*"]' \
-  -s 'redirectUris=["*"]'
-
-#
-./kcadm.sh create users \
-  -r test \
-  -s username=test \
-  -s enabled=true
-
-#
-./kcadm.sh set-password \
-  -r test \
-  --username test \
-  --new-password test
-```
-
-### Testing
-
-**Dependencies:** [cURL](/curl.md), [Python3](/python/python3.md) and [jq](/jq.md)
-
-```sh
-#
-curl -i 'http://localhost:8080/auth/realms/test'
-
-# OpenID Endpoint Configuration
-curl -s 'http://localhost:8080/auth/realms/test/.well-known/openid-configuration' | \
-  python -m json.tool
-
-# SAML 2.0 Identity Provider Metadata
-curl -s 'http://127.0.0.1:8080/auth/realms/test/protocol/saml/descriptor'
-
-# Authorization
-echo -e '[INFO]\thttp://localhost:8080/auth/realms/test/protocol/openid-connect/auth?scope=openid&response_type=code&client_id=test&redirect_uri=https://oauth.pstmn.io/v1/callback'
-
-# User Info
-export KEYCLOAK_ACCESS_TOKEN=$(curl -s \
-  -d 'grant_type=password' \
-  -d 'username=test' \
-  -d 'password=test' \
-  -d 'client_id=test' \
-  -X POST \
-  'http://localhost:8080/auth/realms/test/protocol/openid-connect/token' | \
-    jq -r '.access_token' \
-); echo "$KEYCLOAK_ACCESS_TOKEN"
-
-curl \
-  -s \
-  -H "Authorization: Bearer ${KEYCLOAK_ACCESS_TOKEN}" \
-  'http://localhost:8080/auth/realms/test/protocol/openid-connect/userinfo' | \
-    jq .
-
-# End Session
-# http://localhost:8080/auth/realms/test/protocol/openid-connect/logout
-
-# JSON Web Key Set (JWKS) URI
-curl -s 'http://localhost:8080/auth/realms/test/protocol/openid-connect/certs' | \
-  python -m json.tool
-```
-
-<!--
-  location_header=$(curl -sS -D - "${KEYCLOAK_URL}/admin/realms/${REALM}/users" \
-    -H 'Content-Type: application/json' \
-    -H "Authorization: Bearer ${ADMIN_TOKEN}" \
-    -d "{\"username\":\"user-${count}\", \"enabled\":\"true\"}" | grep -Fi 'Location:')
-
-  user_id=$(echo "${location_header##*/}" | tr -d '\r')
-
-  curl -sS -X PUT "${KEYCLOAK_URL}/admin/realms/${REALM}/users/${user_id}/reset-password" \
-    -H 'Content-Type: application/json' \
-    -H "Authorization: Bearer ${ADMIN_TOKEN}" \
-    -d '{"type":"password", "value":"user", "temporary":false}'
--->
-
-### JBoss Application Server (AS) CLI
+#### JBoss Application Server (AS) CLI
 
 ```sh
 docker exec -it keycloak /opt/jboss/keycloak/bin/jboss-cli.sh
 ```
 
-### Remove
+**Embedded Mode**
 
 ```sh
-# Using MySQL
-docker rm -f \
-  keycloak-mysql \
-  keycloak
+#
+[disconnected /] connect
 
-docker volume rm \
-  keycloak-mysql-data
-
-# Using PostgreSQL
-docker rm -f \
-  keycloak-postgres \
-  keycloak
-
-docker volume rm \
-  keycloak-postgres-data
+#
+[disconnected /] embed-server --server-config=standalone.xml --std-out=echo
 ```
 
-### Tips
+```sh
+#
+(echo embed-server --server-config=standalone.xml --std-out=echo; cat myscript.cli) | jboss-cli.sh
+```
+
+<!--
+jboss-cli.sh --file=turn-off-caching.cli
+-->
 
 #### Token Exchange
 
@@ -326,6 +210,26 @@ export JAVA_OPTS_APPEND='-Dkeycloak.profile.feature.upload_scripts=enabled -Dkey
 1. Manage -> Users
 2. User -> Edit
 3. Details Tab -> Required User Actions -> Remove "Update Password"
+
+### Remove
+
+```sh
+# Using MySQL
+docker rm -f \
+  keycloak-mysql \
+  keycloak
+
+docker volume rm \
+  keycloak-mysql-data
+
+# Using PostgreSQL
+docker rm -f \
+  keycloak-postgres \
+  keycloak
+
+docker volume rm \
+  keycloak-postgres-data
+```
 
 ## Helm
 

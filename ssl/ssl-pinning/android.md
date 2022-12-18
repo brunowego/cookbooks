@@ -12,6 +12,8 @@ https://www.youtube.com/watch?v=ENyEcwLaz-A
 
 https://github.com/shroudedcode/apk-mitm
 
+https://www.youtube.com/watch?v=S8Qt1dWfPjs
+
 DST Root CA X3 root
 -->
 
@@ -20,7 +22,7 @@ DST Root CA X3 root
 - [Android SDK Platform-Tools](/android/platform-tools.md)
 - [Frida](/frida.md)
 - [objection](/objection.md)
-- [NoxPlayer](/noxplayer.md)
+- [Android Emulator](/android/emulator.md)
 - [Burp Suite Community Edition (CE)](/portswigger/burp-suite-ce.md)
 
 ## Docs
@@ -34,33 +36,35 @@ DST Root CA X3 root
 
 ## Bypass (SSL Unpinning)
 
-Make sure [NoxPlayer](/noxplayer.md) is running.
+Make sure Android Emulator is running.
 
 ### Configuration
 
-```sh
-#
-adb connect 127.0.0.1:62001
+<!--
+NoxPlayer 62001
 
+adb connect 127.0.0.1:62001
+-->
+
+```sh
 #
 adb devices -l
 
 #
-ANDROID_ARCH="$(adb shell getprop ro.product.cpu.abi)"; \
-FRIDA_VERSION="$(curl -s https://api.github.com/repos/frida/frida/releases/latest | grep tag_name | cut -d '"' -f 4)"; \
-  curl \
-    -LO "https://github.com/frida/frida/releases/download/${FRIDA_VERSION}/frida-server-${FRIDA_VERSION}-android-${ANDROID_ARCH}.xz" && \
-      unxz "./frida-server-${FRIDA_VERSION}-android-x86.xz"
+export ANDROID_ARCH="$(adb shell getprop ro.product.cpu.abi)"
+export FRIDA_VERSION="$(curl -s https://api.github.com/repos/frida/frida/releases/latest | grep tag_name | cut -d '"' -f 4)"
+
+curl \
+  -LO "https://github.com/frida/frida/releases/download/${FRIDA_VERSION}/frida-server-${FRIDA_VERSION}-android-${ANDROID_ARCH}.xz" && \
+    unxz "./frida-server-${FRIDA_VERSION}-android-${ANDROID_ARCH}.xz"
 
 #
-mv "./frida-server-${FRIDA_VERSION}-android-x86" ./frida-server-android-x86
+mv "./frida-server-${FRIDA_VERSION}-android-${ANDROID_ARCH}" /tmp/frida-server-android
 
-chmod +x ./frida-server-android-x86
-
-#
-adb push ./frida-server-android-x86 /data/local/tmp
+chmod +x /tmp/frida-server-android
 
 #
+adb push /tmp/frida-server-android /data/local/tmp
 adb shell ls /data/local/tmp
 ```
 
@@ -68,12 +72,17 @@ adb shell ls /data/local/tmp
 
 #### Run Frida Server
 
+**Note:** Not working with Android API version greater than 23.
+
 ```sh
-#
-adb shell ./data/local/tmp/frida-server-android-x86 &
+# Need root
+adb shell whoami | grep root
 
 #
-adb shell ps | grep frida-server
+adb shell ./data/local/tmp/frida-server-android &
+
+#
+adb shell ps | grep frida-server-android
 ```
 
 #### Proxy (MiTM) with Burp Suite CE
@@ -86,7 +95,7 @@ adb shell ps | grep frida-server
    - Specific Address: Select your current IP address
    - OK
 
-**Step 2:** Configure [Manual Proxy](/noxplayer.md#proxy-manual) on NoxPlayer
+**Step 2:** Configure "Manual Proxy" on Android Emulator
 
 **Step 3:** Open browser and navigate to `http://burp`, download "CA Certificate" and install it on your device:
 
@@ -100,13 +109,11 @@ frida-ls-devices
 
 #
 frida-ps -Uai
+# or
+frida-ps -aiD <id>
 
 #
-objection -g <package-identifier> explore
-
-#
-android root disable
-android root simulate
+objection -g '<package-identifier>' explore
 
 #
 android proxy set <proxy-ip> 8080
@@ -119,12 +126,64 @@ jobs list
 ```
 
 <!--
-avdmanager
+android hooking watch class <class>
+
+frida -U -f <package-identifier> -l <script.js> --no-pause
+
+objection patchapk -s <script.js> -o <output.apk> <package-identifier>
+
+sudo apt -y install apksigner zipalign
 -->
 
-### Shutdown
+#### Bypass SSL Pinning
 
 ```sh
-# Darwin
-osascript -e 'quit app "NoxAppPlayer"'
+#
+frida-ps -Uai
+
+#
+adb push ./burp.der /data/local/tmp/cert-der.crt
+
+#
+frida -U --codeshare pcipolloni/universal-android-ssl-pinning-bypass-with-frida -f com.application.zomato
+```
+
+### Issues
+
+#### SELinux Policy
+
+```sh
+Unable to load SELinux policy from the kernel: Failed to open file ?/sys/fs/selinux/policy?: Permission denied
+```
+
+Try use Android API version 23 or lower.
+
+#### TBD
+
+```log
+adb: more than one device/emulator
+```
+
+TODO
+
+#### TBD
+
+```log
+Unable to connect to the frida server: this feature requires an iOS Developer Disk Image to be mounted;
+Failed to enumerate applications: this feature requires an iOS Developer Disk Image to be mounted;
+run Xcode briefly or use ideviceimagemounter to mount one manually
+```
+
+Specify the device ID:
+
+```sh
+#
+frida-ps -aiD emulator-5554
+```
+
+### Cleanup
+
+```sh
+#
+adb disconnect 127.0.0.1:5555
 ```

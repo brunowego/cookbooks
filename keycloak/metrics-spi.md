@@ -13,7 +13,7 @@
 
 ```sh
 cat << \EOF | docker build $(echo $DOCKER_BUILD_OPTS) -t example/keycloak-metrics -
-FROM docker.io/jboss/keycloak:13.0.1
+FROM docker.io/jboss/keycloak:16.1.1
 
 RUN ( \
       cd /opt/jboss/keycloak/standalone/deployments && \

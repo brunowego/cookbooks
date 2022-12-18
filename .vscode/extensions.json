@@ -5,6 +5,7 @@
     "EditorConfig.EditorConfig",
     "redhat.vscode-yaml",
     "Tyriar.sort-lines",
-    "DavidAnson.vscode-markdownlint"
+    "DavidAnson.vscode-markdownlint",
+    "hashicorp.terraform"
   ]
 }

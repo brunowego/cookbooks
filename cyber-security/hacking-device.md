@@ -19,6 +19,6 @@ https://github.com/UberGuidoZ/Flipper
 - [Hak5 Shop](https://shop.hak5.org/products/omg-cable)
 
 <!--
-https://www.youtube.com/watch?v=Qb8Wvo9u5zE
+https://youtube.com/watch?v=Qb8Wvo9u5zE
 https://github.com/davidbombal/hak5/blob/main/omg_androidS22Ultra.txt
 -->

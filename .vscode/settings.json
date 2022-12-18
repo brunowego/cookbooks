@@ -20,6 +20,11 @@
     "editor.formatOnSave": false
   },
   "files.associations": {
-    "*.strings": "plist"
+    "*.strings": "plist",
+    "*.json.tpl": "json"
+  },
+  "[terraform]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "hashicorp.terraform"
   }
 }

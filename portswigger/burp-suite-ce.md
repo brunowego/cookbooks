@@ -60,20 +60,65 @@ sudo security add-trusted-cert -d \
 
 #### Dark Theme
 
-1. Burp -> Settings
+1. Open Burp Suite CE -> Settings
 2. User Interface -> Display
 3. Appearance section -> Theme: Select Dark
 
-<!--
-https://github.com/johto89/Some-command-for-security/tree/master
-https://github.com/merlinepedra/MEDUSA-PY/blob/master/utils/installBurpCert.sh
+#### Export CA certificate
 
-curl -s http://burp/cert -x http://127.0.0.1:8080 -o cacert.der
-openssl x509 -inform DER -in cacert.der -out cacert.pem
-export CERT_HASH=$(openssl x509 -inform PEM -subject_hash_old -in cacert.pem | head -1)
-adb root && adb remount
-adb push cacert.pem "/sdcard/${CERT_HASH}.0"
-adb shell su -c "mv /sdcard/${CERT_HASH}.0 /system/etc/security/cacerts"
-adb shell su -c "chmod 644 /system/etc/security/cacerts/${CERT_HASH}.0"
-rm -rf cacert.*
+1. Open Burp Suite CE --> Proxy -> Options tab
+2. Proxy Listeners section -> Import / export CA certificate
+3. CA Certificate -> Export: Select Certificate in DER format -> Next
+   - Choose a location to save the certificate: "~/Downloads/burp.der" -> Save
+   - Next -> Close
+
+#### Install Certificate
+
+##### Android
+
+<!--
+curl -s http://burp/cert -x http://127.0.0.1:8080 -o ./burp.der
 -->
+
+```sh
+#
+openssl x509 -inform DER -in ./burp.der -out ./burp.pem
+
+#
+export CERT_HASH="$(openssl x509 -inform PEM -subject_hash_old -in ./burp.pem | head -1)"
+
+#
+mv ./burp.pem "${CERT_HASH}.0"
+
+# Need root
+adb shell whoami | grep root
+
+#
+adb push "${CERT_HASH}.0" /system/etc/security/cacerts
+adb shell ls -la /system/etc/security/cacerts # check if permissions is the same of others
+```
+
+<!--
+adb kill-server
+-->
+
+### Issues
+
+#### Production Build
+
+```log
+adbd cannot run as root in production builds
+```
+
+Will not work on production builds (`google_apis_playstore`).
+
+#### Multiple Devices
+
+```log
+adb: unable to connect for root: more than one device/emulator
+```
+
+```sh
+adb devices
+adb disconnect
+```

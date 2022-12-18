@@ -48,6 +48,7 @@ Jamais coloque uma ordem com stop uma proxima da outra, a Binance irá pegar a o
 - One-Cancels-the-Other (OCO)
 - One-Triggers-a One Cancels the-Other order (OTOCO)
 - Take Profit/Stop Loss (TP/SL)
+- Total Value Locked (TVL)
 
 ## App
 

@@ -88,7 +88,7 @@ git commit -m "[YOUR COMMIT MESSAGE]; closes #1, closes #2, closes #3"
 echo 'DEEPSOURCE_DSN=[secret]' >> ./.env
 
 #
-direnv allow
+direnv allow ./
 
 # Keys: go, python, ruby
 deepsource report \

@@ -10,7 +10,7 @@
 
 ## Links
 
-- [Companies](https://www.slickcharts.com/sp500)
+- [Companies](https://slickcharts.com/sp500)
 
 ## Correlation
 

@@ -2,6 +2,8 @@
 
 ## App
 
+**WIP:** Currently not working as expected.
+
 ### Installation
 
 #### Homebrew

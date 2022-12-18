@@ -1,0 +1,195 @@
+# Android Emulator
+
+## Docs
+
+- [Emulator](https://developer.android.com/studio/run/emulator)
+
+## Glossary
+
+- Quick Emulator (QEMU)
+
+## Providers
+
+- [Android Studio / QEMU System Emulator](#qemu-system-emulator-x86) 🌟
+- [BlueStacks](/bluestacks.md)
+- [Genymotion](/genymotion.md)
+- [NoxPlayer](/noxplayer.md)
+
+## QEMU System Emulator (x86)
+
+### Dependencies
+
+- [Android SDK](./sdk/README.md#cli)
+
+### Install Packages
+
+```sh
+# Installed packages
+sdkmanager --list | awk '/Installed/{flag=1; next} /Available/{flag=0} flag'
+
+# List packages
+sdkmanager --list
+
+# Install packages
+sdkmanager \
+  'build-tools;25.0.0' \
+  'system-images;android-25;google_apis;x86' \
+  'platforms;android-25'
+```
+
+**Note:** Change `google_apis` to `google_apis_playstore` for production builds.
+
+### Devices
+
+```sh
+# List Devices
+avdmanager list
+
+# List AVDs
+emulator -list-avds
+# or
+avdmanager list avds
+```
+
+#### Create Device
+
+<!-- ##### Automatic
+
+```sh
+#
+echo 'no' | avdmanager create avd \
+  -k 'system-images;android-25;google_apis;x86' \
+  -n 'Pixel_4_API_25' \
+  -f
+```
+
+```sh
+#
+sed -ri '/PlayStore.enabled/ s/no/yes/' ~/.android/avd/Pixel_4_API_25.avd/config.ini
+``` -->
+
+##### Manual 🌟
+
+```sh
+#
+cat << EOF > ~/.android/avd/Pixel_4_API_25.ini
+avd.ini.encoding=UTF-8
+path=$HOME/.android/avd/Pixel_4_API_25.avd
+path.rel=avd/Pixel_4_API_25.avd
+target=android-25
+EOF
+
+#
+mkdir ~/.android/avd/Pixel_4_API_25.avd
+
+#
+( cd ~/.android/avd/Pixel_4_API_25.avd && mksdcard 512M ./sdcard.img )
+
+#
+cat << EOF > ~/.android/avd/Pixel_4_API_25.avd/config.ini
+AvdId = Pixel_4_API_25
+PlayStore.enabled = true
+abi.type = x86
+avd.ini.displayname = Pixel 4 API 25
+avd.ini.encoding = UTF-8
+disk.dataPartition.size = 6442450944
+fastboot.chosenSnapshotFile =
+fastboot.forceChosenSnapshotBoot = no
+fastboot.forceColdBoot = no
+fastboot.forceFastBoot = yes
+hw.accelerometer = yes
+hw.arc = false
+hw.audioInput = yes
+hw.battery = yes
+hw.camera.back = none
+hw.camera.front = none
+hw.cpu.arch = x86
+hw.cpu.ncore = 4
+hw.dPad = no
+hw.device.hash2 = MD5:6b5943207fe196d842659d2e43022e20
+hw.device.manufacturer = Google
+hw.device.name = pixel_4
+hw.gps = yes
+hw.gpu.enabled = yes
+hw.gpu.mode = auto
+hw.initialOrientation = Portrait
+hw.keyboard = yes
+hw.lcd.density = 440
+hw.lcd.height = 2280
+hw.lcd.width = 1080
+hw.mainKeys = no
+hw.ramSize = 1536
+hw.sdCard = yes
+hw.sensors.orientation = yes
+hw.sensors.proximity = yes
+hw.trackBall = no
+image.sysdir.1 = system-images/android-25/google_apis/x86/
+runtime.network.latency = none
+runtime.network.speed = full
+sdcard.size = 512M
+showDeviceFrame = no
+skin.dynamic = yes
+skin.name = 1080x2280
+skin.path = _no_skin
+skin.path.backup = $HOME/Library/Android/sdk/skins/pixel_4
+tag.display = Google Play
+tag.id = google_apis
+vm.heapSize = 228
+EOF
+```
+
+<!--
+userdata.img
+-->
+
+### Running
+
+```sh
+#
+emulator \
+  -writable-system \
+  -avd 'Pixel_4_API_25' \
+  -dns-server 8.8.8.8
+```
+
+<!-- ### Install ADB
+
+```sh
+# List Target
+avdmanager list target
+
+#
+adb install ./app/build/outputs/apk/debug/app-x86_64-debug.apk
+``` -->
+
+### Issues
+
+#### TBD
+
+```log
+INFO    | Critical: Failed to load https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true: The 'Access-Control-Allow-Origin' header has a value 'qrc://' that is not equal to the supplied origin. Origin 'qrc://' is therefore not allowed access. (qrc:/html/js/location-mock-web-channel.js:0, (null))
+```
+
+TODO
+
+#### Couldn't Sign In
+
+```log
+There was a problem communicating with Google server. Try again later.
+```
+
+TODO
+
+### Delete
+
+```sh
+#  packages
+sdkmanager --uninstall '<package-1>' '<package-2>' # ...
+
+#
+ls -la  ~/.android/avd
+
+#
+avdmanager delete avd \
+  -n 'Pixel_4_API_25'
+```

@@ -14,16 +14,16 @@ https://myaccount.google.com/apppasswords
 
 ## CLI
 
-### Dependencies
+<!-- **Notes:** Tested on Python3 version 3.8.14. -->
 
-On Python3 version 3.8.14.
+**WIP:** Currently not working as expected.
 
 ### Installation
 
 #### Homebrew
 
 ```sh
-pip3 install gplaydl
+pip3 install -U gplaydl==1.3.5
 ```
 
 ### Commands
@@ -44,5 +44,21 @@ gplaydl configure
 #
 gplaydl download \
   --packageId com.twitter.android \
-  --path ./apk-downloads/
+  --path ./.android/apk/downloads
 ```
+
+<!--
+gplaydl download --packageId com.teslacoilsw.launcher
+gplaydl download --packageId com.spotify.music
+gplaydl download --packageId au.com.shiftyjelly.pocketcasts
+-->
+
+### Issues
+
+#### TBD
+
+```log
+'server says: BadAuthentication'
+```
+
+TODO

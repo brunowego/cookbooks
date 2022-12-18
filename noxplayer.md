@@ -37,3 +37,12 @@ rm -fR ~/Library/Application\ Support/NoxAppPlayer/BignoxVMS/nox
 2. Wireless & networks -> Wi-Fi
 3. Press WiredSSID -> Modify network
 4. Advanced options -> Proxy Manual
+
+### Uninstall
+
+```sh
+# Homebrew
+brew uninstall --cask noxappplayer
+
+rm -fR ~/Library/Application\ Support/NoxAppPlayer
+```

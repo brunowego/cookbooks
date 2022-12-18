@@ -57,4 +57,7 @@ bat --help
 ```sh
 #
 bat <filename>
+
+#
+echo '{"bignum":1e1000}' | bat -p -l json
 ```
