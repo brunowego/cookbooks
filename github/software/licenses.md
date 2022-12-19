@@ -1,4 +1,4 @@
-# GitHub License
+# Software Licenses
 
 ## Tools
 

@@ -12,7 +12,7 @@ RUN curl -sO "https://download.newrelic.com/newrelic/java-agent/newrelic-agent/$
       unzip ./newrelic-java.zip
 
 
-FROM docker.io/jboss/keycloak:16.1.1
+FROM quay.io/keycloak/keycloak:20.0.2
 
 ENV JAVA_OPTS '-javaagent:/opt/jboss/newrelic/newrelic.jar'
 

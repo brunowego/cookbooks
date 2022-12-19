@@ -17,12 +17,12 @@ kubectl create secret generic keycloak-secrets \
 
 #
 kubectl run -it --rm \
-  --image docker.io/jboss/keycloak:16.1.1 \
+  --image quay.io/keycloak/keycloak:20.0.2 \
   --overrides '{
   "spec": {
     "containers": [{
       "name": "keycloak",
-      "image": "docker.io/jboss/keycloak:16.1.1",
+      "image": "quay.io/keycloak/keycloak:20.0.2",
       "command": ["/bin/bash"],
       "workingDir": "/opt/jboss/keycloak/bin",
       "resources": {
@@ -72,7 +72,7 @@ docker run -it --rm \
   --entrypoint /opt/jboss/keycloak/bin/kcadm.sh \
   --name kcadm \
   --network workbench \
-  docker.io/jboss/keycloak:16.1.1 help
+  quay.io/keycloak/keycloak:20.0.2 help
 ```
 
 ## CLI

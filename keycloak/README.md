@@ -28,7 +28,7 @@ https://github.com/keycloak/keycloak-operator
 
 https://codergists.com/redhat/keycloak/security/authentication/2020/01/07/getting-started-with-keycloak-on-rhel8.html
 
-https://www.cloud-iam.com/#pricing
+https://cloud-iam.com/#pricing
 
 https://github.com/Mu-Wahba/keycloak-for-production
 
@@ -43,6 +43,7 @@ Red Hat WildFly (JBoss Application Server)
 
 - [Code Repository](https://github.com/keycloak/keycloak)
 - [Awesome Keycloak](https://github.com/thomasdarimont/awesome-keycloak)
+- [Downloads](https://keycloak.org/downloads.html)
 
 ## Alternatives
 
@@ -105,14 +106,13 @@ docker run -d \
   -e DB_SCHEMA='public' \
   -e DB_USER='keycloak' \
   -e DB_PASSWORD='keycloak' \
-  -e KEYCLOAK_USER='admin' \
-  -e KEYCLOAK_PASSWORD='Pa$$w0rd!' \
+  -e KEYCLOAK_ADMIN='admin' \
+  -e KEYCLOAK_ADMIN_PASSWORD='Pa$$w0rd!' \
   -p 8080:8080 \
   -p 8443:8443 \
   --name keycloak \
   --network workbench \
-  docker.io/jboss/keycloak:16.1.1 \
-    -Dkeycloak.profile.feature.upload_scripts=enabled
+  quay.io/keycloak/keycloak:20.0.2 start-dev
 ```
 
 **Using MySQL**
@@ -140,14 +140,13 @@ docker run -d \
   -e DB_DATABASE='keycloak' \
   -e DB_USER='keycloak' \
   -e DB_PASSWORD='keycloak' \
-  -e KEYCLOAK_USER='admin' \
-  -e KEYCLOAK_PASSWORD='admin' \
+  -e KEYCLOAK_ADMIN='admin' \
+  -e KEYCLOAK_ADMIN_PASSWORD='Pa$$w0rd!' \
   -p 8080:8080 \
   -p 8443:8443 \
   --name keycloak \
   --network workbench \
-  docker.io/jboss/keycloak:16.1.1 \
-    -Dkeycloak.profile.feature.upload_scripts=enabled
+  quay.io/keycloak/keycloak:20.0.2 start-dev
 ```
 
 > Wait! This process take a while.
@@ -214,14 +213,6 @@ export JAVA_OPTS_APPEND='-Dkeycloak.profile.feature.upload_scripts=enabled -Dkey
 ### Remove
 
 ```sh
-# Using MySQL
-docker rm -f \
-  keycloak-mysql \
-  keycloak
-
-docker volume rm \
-  keycloak-mysql-data
-
 # Using PostgreSQL
 docker rm -f \
   keycloak-postgres \
@@ -229,6 +220,14 @@ docker rm -f \
 
 docker volume rm \
   keycloak-postgres-data
+
+# Using MySQL
+docker rm -f \
+  keycloak-mysql \
+  keycloak
+
+docker volume rm \
+  keycloak-mysql-data
 ```
 
 ## Helm

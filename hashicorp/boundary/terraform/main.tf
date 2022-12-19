@@ -6,9 +6,11 @@ resource "boundary_scope" "global" {
 }
 
 resource "boundary_scope" "org" {
-  name        = "Henkiz"
-  description = "Organization scope for Henkiz"
-  scope_id    = boundary_scope.global.id
+  name                     = "Henkiz"
+  description              = "Organization scope for Henkiz"
+  scope_id                 = boundary_scope.global.id
+  auto_create_admin_role   = true
+  auto_create_default_role = true
 }
 
 resource "boundary_scope" "platform" {
@@ -23,9 +25,9 @@ resource "boundary_auth_method_oidc" "keycloak" {
   name                 = "Keycloak"
   description          = "Keycloak auth method for Henkiz"
   scope_id             = boundary_scope.org.id
-  issuer               = "http://127.0.0.1:8080/auth/realms/henkiz"
+  issuer               = "http://127.0.0.1:8080/realms/henkiz"
   client_id            = "boundary"
-  client_secret        = "myGnEJWRk7zvq5hzP1nZLxzo0l70Buxg"
+  client_secret        = "E28FeAeWQ2LKAS7eod6DefGGa6ejMfHZ"
   signing_algorithms   = ["RS256"]
   api_url_prefix       = "http://127.0.0.1:9200"
   is_primary_for_scope = true
