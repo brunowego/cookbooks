@@ -7,7 +7,8 @@ https://github.com/hashicorp/learn-boundary-azure-sql-database
 ## Dependencies
 
 - Identity Provider (IdP)
-  - [Keycloak](/keycloak/terraform/README.md)
+  - [Keycloak](/keycloak/iac/README.md)
+- [HashiCorp Boundary](../README.md#cli)
 
 ## Running
 

@@ -1,4 +1,4 @@
-# Offboarding
+# Project Offboarding
 
 <!--
 https://www.bamboohr.com/hr-101-guide/chapter-4-onboarding-and-offboarding/

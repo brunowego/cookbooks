@@ -34,6 +34,20 @@ resource "boundary_auth_method_oidc" "keycloak" {
   state                = "active-public"
 }
 
+resource "boundary_credential_store_static" "static_cred_store" {
+  name        = "boundary-cred-store"
+  description = "Static boundary credential store"
+  scope_id    = boundary_scope.keycloak.id
+}
+
+resource "boundary_credential_username_password" "keycloak_static_db_creds" {
+  name                = "keycloak_static_db_creds"
+  description         = "Keycloak PostgreSQL admin credentials"
+  credential_store_id = boundary_credential_store_static.static_cred_store.id
+  username            = "keycloak"
+  password            = "keycloak"
+}
+
 resource "boundary_managed_group" "developer" {
   name           = "Developers"
   description    = "Developer team managed group linked to Keycloak"
@@ -94,8 +108,13 @@ resource "boundary_target" "db_admin" {
   scope_id                 = boundary_scope.keycloak.id
   session_connection_limit = 2
   default_port             = 5432
+
   host_source_ids = [
     boundary_host_set_static.postgresql.id
+  ]
+
+  brokered_credential_source_ids = [
+    boundary_credential_username_password.keycloak_static_db_creds.id
   ]
 }
 

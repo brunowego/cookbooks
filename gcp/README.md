@@ -1,6 +1,10 @@
 # Google Cloud Platform (GCP)
 
 <!--
+gcloud auth application-default login
+-->
+
+<!--
 Google Compute Engine (GCE)
 -->
 

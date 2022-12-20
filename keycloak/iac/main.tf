@@ -46,11 +46,21 @@ resource "keycloak_user" "johndoe" {
   }
 }
 
-resource "keycloak_user_groups" "johndoe_developer" {
+resource "keycloak_user_groups" "johndoe" {
   realm_id = keycloak_realm.org.id
   user_id  = keycloak_user.johndoe.id
 
   group_ids = [
-    keycloak_group.developer.id
+    keycloak_group.developer.id,
+    keycloak_group.dba.id
   ]
+}
+
+resource "keycloak_openid_group_membership_protocol_mapper" "group_membership_mapper" {
+  realm_id  = keycloak_realm.org.id
+  client_id = keycloak_openid_client.boundary.id
+  name      = "group-membership-mapper"
+
+  claim_name = "groups"
+  full_path  = false
 }

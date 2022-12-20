@@ -1,5 +1,7 @@
 # Kubernetes Orchestration
 
+**Keywords:** Control Plane
+
 ## Cloud Computing
 
 - AWS
@@ -13,11 +15,9 @@
 
 - [Kubernetes Operations (kOps)](/kops/README.md) 🌟
 - [Rancher](/rancher.md)
-
-## Enterprise
-
-- [Nomad](/hashicorp/nomad.md)
-- [OpenShift](/openshift.md)
+- Enterprise
+  - [Nomad](/hashicorp/nomad.md)
+  - [OpenShift](/openshift.md)
 
 ## Locally
 

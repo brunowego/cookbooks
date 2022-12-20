@@ -6,7 +6,7 @@ gcp.credentials.file=${GCP_CREDENTIALS_PATH:/etc/credentials.json}
 https://github.com/search?o=desc&q=path%3Amodules%2Fgke+filename%3Amain.tf&s=indexed&type=Code
 -->
 
-**Keywords:** Kubernetes Orchestration
+**Keywords:** Kubernetes Orchestration, Control Plane
 
 ## Docs
 
