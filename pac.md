@@ -6,15 +6,15 @@
 
 ## References
 
-- [FindProxyForURL](https://findproxyforurl.com/)
+- [FindProxyForURL](https://findproxyforurl.com)
 
 ##
 
-| OS | Path |
-| --- | --- |
-| Windows | `file:///C:/proxy.pac` |
-| Linux | `file:///home/{user}/.proxy.pac` |
-| Darwin | `file:///Users/{user}/.proxy.pac` |
+| OS      | Path                              |
+| ------- | --------------------------------- |
+| Windows | `file:///C:/proxy.pac`            |
+| Linux   | `file:///home/{user}/.proxy.pac`  |
+| Darwin  | `file:///Users/{user}/.proxy.pac` |
 
 ```sh
 open "file://$HOME/.proxy.pac"

@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://trustwallet.com/)
+- [Main Website](https://trustwallet.com)

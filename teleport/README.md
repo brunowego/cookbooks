@@ -9,7 +9,7 @@ https://github.com/krzwiatrzyk/lib-cluster-manager/tree/main/k8s-apps/teleport/m
 ## Links
 
 - [Code Repository](https://github.com/gravitational/teleport)
-- [Main Website](https://goteleport.com/)
+- [Main Website](https://goteleport.com)
 - [Docs](https://goteleport.com/docs/)
 
 ## Glossary

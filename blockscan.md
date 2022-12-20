@@ -2,5 +2,5 @@
 
 ## Links
 
-- [Main Website](https://blockscan.com/)
-- [Chat](https://chat.blockscan.com/)
+- [Main Website](https://blockscan.com)
+- [Chat](https://chat.blockscan.com)

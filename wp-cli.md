@@ -4,6 +4,10 @@
 https://linkedin.com/learning/wordpress-wp-cli/what-is-wp-cli
 -->
 
+## Links
+
+- [Main Website](https://wp-cli.org/)
+
 ## CLI
 
 ### Installation
@@ -104,7 +108,7 @@ EOF
 ) \
   --post_type='page' \
   --post_status='publish' \
-  --post_title='[Title]'
+  --post_title='<Title>'
 
 #
 wp post delete 1
@@ -134,7 +138,7 @@ wp user add-cap 2 activate_plugins
 wp plugin list
 
 #
-wp plugin install [name] --activate
+wp plugin install <name> --activate
 ```
 
 #### Theme
@@ -143,7 +147,7 @@ wp plugin install [name] --activate
 wp theme list
 
 #
-wp theme activate [name]
+wp theme activate <name>
 ```
 
 #### Package
@@ -177,9 +181,9 @@ wp menu item add-custom home 'About' / --target=about
 ##### Theme
 
 ```sh
-wp scaffold _s [name] \
-  --theme_name='[Name]' \
-  --author='[Fname Lname]'
+wp scaffold _s <name> \
+  --theme_name='<Name>' \
+  --author='<Fname Lname>'
 
 ## Tests
 wp scaffold theme-tests \
@@ -211,12 +215,12 @@ cat << EOF >> $(wp eval 'echo get_theme_file_path("functions.php") . "\n";')
 /**
  * Custom Post Types.
  */
-require get_template_directory() . '/post-types/[name].php';
+require get_template_directory() . '/post-types/<name>.php';
 
 EOF
 ```
 
-To add support for other fields, edit `./post-types/[name].php` inside current theme and change the `supports` param adding one or more of this values in array: `title`, `editor`, `thumbnail`, `excerpt`, `comments` and `custom-fields`.
+To add support for other fields, edit `./post-types/<name>.php` inside current theme and change the `supports` param adding one or more of this values in array: `title`, `editor`, `thumbnail`, `excerpt`, `comments` and `custom-fields`.
 
 ##### Taxonomy
 

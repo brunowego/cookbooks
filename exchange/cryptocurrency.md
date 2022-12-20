@@ -27,7 +27,7 @@
 - [PancakeSwap](https://pancakeswap.finance/)
 - [Pangolin](https://pangolin.exchange/)
 - [Raydium](https://raydium.io/)
-- [Sushi](https://sushi.com/)
+- [Sushi](https://sushi.com)
 - [Uniswap](https://uniswap.org/)
 
 ## Tools

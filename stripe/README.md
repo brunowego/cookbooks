@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://stripe.com/)
+- [Main Website](https://stripe.com)
 
 ## Docs
 

@@ -2,4 +2,4 @@
 
 ## Tools
 
-- [Amplitude](https://amplitude.com/)
+- [Amplitude](https://amplitude.com)

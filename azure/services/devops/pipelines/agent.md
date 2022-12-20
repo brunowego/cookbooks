@@ -63,7 +63,7 @@ choco install -y azure-pipelines-agent --params "'/Directory:c:\agent'"
 
 ### Agent Pools
 
-1. [Azure DevOps](https://dev.azure.com/)
+1. [Azure DevOps](https://dev.azure.com)
 2. Organization Settings
 3. Side-menu -> Pipelines -> Agent pools -> Default
 4. New agent

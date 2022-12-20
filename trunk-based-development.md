@@ -10,7 +10,7 @@ https://martinfowler.com/articles/branching-patterns.html
 
 ## Links
 
-- [Trunk Based Development](https://trunkbaseddevelopment.com/)
+- [Trunk Based Development](https://trunkbaseddevelopment.com)
 
 ## Guides
 

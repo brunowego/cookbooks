@@ -2,11 +2,11 @@
 
 ## Tools
 
-- [AntSignals](https://antsignals.com/)
-- [TradeBench](https://tradebench.com/)
-- [TraderSync](https://tradersync.com/)
-- [Tradervue](https://tradervue.com/)
-- [TradesViz](https://tradesviz.com/)
+- [AntSignals](https://antsignals.com)
+- [TradeBench](https://tradebench.com)
+- [TraderSync](https://tradersync.com)
+- [Tradervue](https://tradervue.com)
+- [TradesViz](https://tradesviz.com)
 
 <!--
 fixytrade.com

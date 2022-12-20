@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/Budibase/budibase)
-- [Main Website](https://budibase.com/)
+- [Main Website](https://budibase.com)
 
 ## Glossary
 

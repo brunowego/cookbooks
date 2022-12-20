@@ -18,7 +18,7 @@ https://linkedin.com/learning/google-cloud-platform-gcp-essential-training-for-d
 ## Links
 
 - [Google Cloud Pricing Calculator](https://cloud.google.com/products/calculator)
-- [Google Cloud Status Dashboard](https://status.cloud.google.com/)
+- [Google Cloud Status Dashboard](https://status.cloud.google.com)
 
 ## Tools
 
@@ -99,6 +99,9 @@ gcloud projects create <unique-name>
 
 #
 gcloud config set project <project-id>
+
+#
+gcloud compute regions list
 
 #
 gcloud config get-value compute/region

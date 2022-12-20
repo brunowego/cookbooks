@@ -6,9 +6,9 @@ https://app.pluralsight.com/paths/skills/building-graphql-apis-with-apollo
 
 ## Links
 
-- [Main Website](https://apollographql.com/)
+- [Main Website](https://apollographql.com)
 - [Docs](https://apollographql.com/docs/)
-- [Studio](https://studio.apollographql.com/)
+- [Studio](https://studio.apollographql.com)
 
 <!-- ## CLI
 

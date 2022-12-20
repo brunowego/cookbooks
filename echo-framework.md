@@ -28,4 +28,4 @@ https://subscription.packtpub.com/book/web_development/9781789139433
 ## Links
 
 - [Code Repository](https://github.com/labstack/echo)
-- [Main Website](https://echo.labstack.com/)
+- [Main Website](https://echo.labstack.com)

@@ -144,8 +144,8 @@ https://cloud.google.com/blog/products/gcp/an-example-escalation-policy-cre-life
 
 ## Tools
 
-- [BLAMELESS](https://www.blameless.com/)
-- [Gremlin](https://www.gremlin.com/)
+- [BLAMELESS](https://www.blameless.com)
+- [Gremlin](https://www.gremlin.com)
 
 ## Terms
 

@@ -98,6 +98,10 @@ kops export kubecfg \
   --admin
 ```
 
+<!--
+t3a.medium
+-->
+
 ## Delete Cluster
 
 ```sh

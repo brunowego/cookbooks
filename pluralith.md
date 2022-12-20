@@ -3,8 +3,8 @@
 ## Links
 
 - [Org. Repository](https://github.com/Pluralith)
-- [Main Website](https://pluralith.com/)
-- [Docs](https://docs.pluralith.com/)
+- [Main Website](https://pluralith.com)
+- [Docs](https://docs.pluralith.com)
 - [Download](https://pluralith.com/thanks/)
 
 ## CLI

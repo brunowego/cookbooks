@@ -26,7 +26,7 @@ https://www.linkedin.com/learning/penetration-testing-advanced-kali-linux/welcom
 ## Links
 
 - [Code Repository](https://github.com/rapid7/metasploit-framework)
-- [Main Website](https://metasploit.com/)
+- [Main Website](https://metasploit.com)
 
 ## CLI
 

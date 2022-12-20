@@ -19,7 +19,7 @@ F4F5F7
 - [Downloads](https://figma.com/downloads/)
 - [Figma Mirror](https://figma.com/mirror)
 - [Developers / API](https://figma.com/developers/api)
-- [Status Page](https://status.figma.com/)
+- [Status Page](https://status.figma.com)
 
 ## Guides
 

@@ -2,7 +2,7 @@
 
 ## Links
 
-- [TweetDeck](https://tweetdeck.twitter.com/)
+- [TweetDeck](https://tweetdeck.twitter.com)
 
 ## Tweet Research
 

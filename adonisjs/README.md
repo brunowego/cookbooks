@@ -7,7 +7,7 @@ https://github.com/CesarJrFontalvo/buen-comienzo-adonis-5/blob/main/Dockerfile
 ## Links
 
 - [Code Repository](https://github.com/adonisjs/core)
-- [Main Website](https://adonisjs.com/)
+- [Main Website](https://adonisjs.com)
 - [Docs](https://docs.adonisjs.com)
 
 ## Project

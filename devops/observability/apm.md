@@ -13,7 +13,7 @@ https://github.com/pixie-io/pixie
 - [DataDog](/datadog.md)
 - [Elastic APM](/elastic/elastic-apm.md)
 - [New Relic](/newrelic.md)
-- [Stackify](https://stackify.com/)
+- [Stackify](https://stackify.com)
 
 <!--
 - [OpenAPM](/openapm.md)

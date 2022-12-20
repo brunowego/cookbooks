@@ -9,7 +9,7 @@ https://egghead.io/blog/saas-app-with-nextjs-prisma-auth0-and-stripe
 
 ## Links
 
-- [Main Website](https://auth0.com/)
+- [Main Website](https://auth0.com)
 
 ## Guides
 

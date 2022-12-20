@@ -2,4 +2,4 @@
 
 ## Global
 
-- [ZeroHedge](https://zerohedge.com/)
+- [ZeroHedge](https://zerohedge.com)

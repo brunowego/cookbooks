@@ -97,7 +97,7 @@ Sharpe Ratio
 - US 500
 - US Tech 100
 
-### [CoinMarketCap](https://coinmarketcap.com/)
+### [CoinMarketCap](https://coinmarketcap.com)
 
 1. More Stable-coins in the Top 10
 2. Rising Volume

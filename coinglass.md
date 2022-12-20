@@ -7,7 +7,7 @@ red e0294a
 
 ## Links
 
-- [Main Website](https://coinglass.com/)
+- [Main Website](https://coinglass.com)
 
 ## Configuration
 

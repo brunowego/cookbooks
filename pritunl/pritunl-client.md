@@ -7,7 +7,7 @@ https://medium.com/@adrian_cooney/how-to-convert-pritunl-profiles-to-viscosity-f
 
 ## Links
 
-- [Main Website](https://client.pritunl.com/)
+- [Main Website](https://client.pritunl.com)
 - [Code Repository](https://github.com/pritunl/pritunl-client-electron)
 
 ## App

@@ -8,10 +8,10 @@ https://checkmarket.com/blog/csat-ces-nps-compared/
 ## References
 
 - [Customer](https://customer.io/)
-- [Qualaroo](https://qualaroo.com/)
+- [Qualaroo](https://qualaroo.com)
 - [Refiner](https://refiner.io/)
-- [SatisMeter](https://satismeter.com/)
-- [Wootric](https://wootric.com/)
+- [SatisMeter](https://satismeter.com)
+- [Wootric](https://wootric.com)
 
 <!--
 https://customer.guru/

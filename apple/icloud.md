@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://icloud.com/)
+- [Main Website](https://icloud.com)
 
 ## Tips
 

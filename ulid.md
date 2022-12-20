@@ -10,4 +10,4 @@ https://medium.com/zendesk-engineering/how-probable-are-collisions-with-ulids-mo
 
 ## Tools
 
-- [ULID Generator](https://ulidgenerator.com/)
+- [ULID Generator](https://ulidgenerator.com)

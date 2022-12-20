@@ -9,7 +9,7 @@ https://artifacthub.io/packages/helm/gabe565/headscale
 ## Links
 
 - [Code Repository](https://github.com/tailscale/tailscale)
-- [Main Website](https://tailscale.com/)
+- [Main Website](https://tailscale.com)
 
 ## Console
 

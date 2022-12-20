@@ -3,7 +3,7 @@
 <!-- ## Links
 
 - [](https://developers.facebook.com/tools/debug/)
-- [](http://debug.iframely.com/) -->
+- [](http://debug.iframely.com) -->
 
 ## Tools
 

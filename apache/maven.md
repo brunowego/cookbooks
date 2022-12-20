@@ -24,7 +24,7 @@ https://app.pluralsight.com/library/courses/allthetalks-session-66/table-of-cont
 
 ## Repositories
 
-- [Maven Repository](https://mvnrepository.com/)
+- [Maven Repository](https://mvnrepository.com)
 - [Maven Central Repository Search](https://search.maven.org/)
 
 ## CLI

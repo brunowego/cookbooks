@@ -273,7 +273,9 @@ jq '."files.exclude"."**/.git" |= false' "$PWD"/.vscode/settings.json | \
 ```sh
 code \
   --install-extension codezombiech.gitignore \
-  --install-extension sidneys1.gitconfig
+  --install-extension sidneys1.gitconfig \
+  --install-extension mhutchie.git-graph \
+  --install-extension waderyan.gitblame
 ```
 
 #### Most recent changed branch

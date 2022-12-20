@@ -8,7 +8,7 @@ https://www.udemy.com/courses/search/?src=ukw&q=openzeppelin
 ## Links
 
 - [Org. Repository](https://github.com/OpenZeppelin)
-- [Main Website](https://openzeppelin.com/)
+- [Main Website](https://openzeppelin.com)
 
 ## CLI
 

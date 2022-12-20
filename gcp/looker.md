@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://looker.com/)
+- [Main Website](https://looker.com)

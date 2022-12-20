@@ -6,7 +6,7 @@
 
 - [detect-secrets](/detect-secrets.md)
 - [git-secrets](/git-secrets.md)
-- [GitGuardian](https://gitguardian.com/)
+- [GitGuardian](https://gitguardian.com)
 - [Gitleaks](/gitleaks.md) 🌟
 - [Repo-supervisor](https://github.com/auth0/repo-supervisor)
 - [shhgit](/shhgit.md)

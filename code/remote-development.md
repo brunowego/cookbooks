@@ -13,13 +13,13 @@
 ## Solutions
 
 - [AWS Cloud9](https://aws.amazon.com/cloud9/)
-- [Codeanywhere](https://codeanywhere.com/)
+- [Codeanywhere](https://codeanywhere.com)
 - [Codenvy](https://github.com/codenvy/codenvy)
 - [Codepanel](https://codepanel.io/)
 - [CodePen](https://codepen.io/)
 - [GitPod](https://gitpod.io/)
-- [Koding](https://koding.com/)
-- [Replit](https://replit.com/)
+- [Koding](https://koding.com)
+- [Replit](https://replit.com)
 
 <!--
 https://bitrise.io/

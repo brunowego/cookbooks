@@ -11,7 +11,7 @@ https://github.com/Mobiauto/sre-interview-boilerplate
 ## Links
 
 - [Code Repository](https://github.com/pulumi/pulumi)
-- [Main Website](https://pulumi.com/)
+- [Main Website](https://pulumi.com)
 
 ## Guides
 

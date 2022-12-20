@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/Automattic/mongoose)
-- [Main Website](https://mongoosejs.com/)
+- [Main Website](https://mongoosejs.com)
 
 ## Library
 

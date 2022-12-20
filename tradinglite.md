@@ -23,9 +23,9 @@ Abra outra ordem no sentido inverso para caso o mercado venha contra sua ordem, 
 
 ## Links
 
-- [Main Website](https://tradinglite.com/)
-- [Status Page](https://status.tradinglite.com/)
-- [Feedback](https://feedback.tradinglite.com/)
+- [Main Website](https://tradinglite.com)
+- [Status Page](https://status.tradinglite.com)
+- [Feedback](https://feedback.tradinglite.com)
 
 ## Alternatives
 

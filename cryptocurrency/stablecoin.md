@@ -2,7 +2,7 @@
 
 ## Links
 
-- [The Stablecoin Index](https://stablecoinindex.com/)
+- [The Stablecoin Index](https://stablecoinindex.com)
 
 ## True Dominance
 

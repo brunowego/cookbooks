@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Dashboard](https://admin.google.com/)
+- [Dashboard](https://admin.google.com)
 
 <!-- ## Tips
 

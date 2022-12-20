@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://giphy.com/)
+- [Main Website](https://giphy.com)

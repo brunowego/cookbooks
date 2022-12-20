@@ -26,7 +26,7 @@ De-coupling
 ## References
 
 - [Jamstack Fridays!](https://jamstackfridays.dev/)
-- [Jamstack Explorers](https://explorers.netlify.com/)
+- [Jamstack Explorers](https://explorers.netlify.com)
 
 ## Meaning
 

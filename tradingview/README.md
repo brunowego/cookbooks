@@ -12,9 +12,9 @@ Settings -> Service -> Performance -> Disable hardware acceleration
 
 ## Links
 
-- [Main Website](https://tradingview.com/)
+- [Main Website](https://tradingview.com)
 - [All Markets](https://tradingview.com/markets/)
-- [Status Page](https://status.tradingview.com/)
+- [Status Page](https://status.tradingview.com)
 - [Shortcuts](https://tradingview.com/support/shortcuts/)
 - [Org. Repository](https://github.com/tradingview/)
 - [Widget](https://tradingview.com/widget/)

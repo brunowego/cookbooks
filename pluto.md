@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/FairwindsOps/pluto)
-- [Docs](https://pluto.docs.fairwinds.com/)
+- [Docs](https://pluto.docs.fairwinds.com)
 
 ## CLI
 

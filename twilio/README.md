@@ -6,7 +6,7 @@ https://github.com/fonoster/fonoster
 
 ## Links
 
-- [Main Website](https://twilio.com/)
+- [Main Website](https://twilio.com)
 
 ## CLI
 

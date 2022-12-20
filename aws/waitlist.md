@@ -2,4 +2,4 @@
 
 ## Tools
 
-- [WaitlistAPI](https://getwaitlist.com/)
+- [WaitlistAPI](https://getwaitlist.com)

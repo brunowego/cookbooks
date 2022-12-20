@@ -34,7 +34,7 @@ Jamais coloque uma ordem com stop uma proxima da outra, a Binance irá pegar a o
 ## Tools
 
 - [Binance Top LSR](https://toplsr.netlify.app/)
-- [BscScan](https://bscscan.com/)
+- [BscScan](https://bscscan.com)
 - [CoinMarketCap / Binance](https://coinmarketcap.com/exchanges/binance/)
 
 ## Guides

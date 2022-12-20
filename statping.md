@@ -5,7 +5,7 @@
 ## References
 
 - [Code Repository](https://github.com/statping/statping)
-- [Main Website](https://statping.com/)
+- [Main Website](https://statping.com)
 
 ## CLI
 

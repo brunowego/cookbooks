@@ -5,7 +5,7 @@
 ## Link
 
 - [Code Repository](https://github.com/pritunl/pritunl)
-- [Main Website](https://pritunl.com/)
+- [Main Website](https://pritunl.com)
 
 ## CLI
 

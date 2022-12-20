@@ -3,7 +3,7 @@
 ## References
 
 - [Lottie](http://airbnb.io/lottie/)
-- [LottieFiles](https://lottiefiles.com/)
+- [LottieFiles](https://lottiefiles.com)
 
 ##
 

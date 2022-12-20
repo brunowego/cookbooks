@@ -2,7 +2,7 @@
 
 ## Tools
 
-- [When2meet](https://when2meet.com/)
+- [When2meet](https://when2meet.com)
 
 ## Types
 

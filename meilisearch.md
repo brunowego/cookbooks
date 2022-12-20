@@ -14,7 +14,7 @@ https://github.com/Okampus/okampus
 ## Links
 
 - [Code Repository](https://github.com/meilisearch/meilisearch)
-- [Main Website](https://meilisearch.com/)
+- [Main Website](https://meilisearch.com)
 - [Comparison to alternatives](https://docs.meilisearch.com/learn/what_is_meilisearch/comparison_to_alternatives.html#comparison-table)
 
 ## Docker

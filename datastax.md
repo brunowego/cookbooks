@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://datastax.com/)
+- [Main Website](https://datastax.com)

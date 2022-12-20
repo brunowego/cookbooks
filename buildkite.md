@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://buildkite.com/)
+- [Main Website](https://buildkite.com)
 
 ## CLI
 

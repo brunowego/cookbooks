@@ -12,7 +12,7 @@ https://github.com/planetscale/beam
 ## Links
 
 - [Code Repository](https://github.com/planetscale/cli)
-- [Main Website](https://planetscale.com/)
+- [Main Website](https://planetscale.com)
 - [CLI](https://planetscale.com/cli)
 - [Vitess](https://planetscale.com/vitess)
 

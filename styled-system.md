@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://styled-system.com/)
+- [Main Website](https://styled-system.com)

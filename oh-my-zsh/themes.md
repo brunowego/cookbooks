@@ -1,14 +1,18 @@
 # Themes
 
+## Links
+
+- [Themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
+
 ## Dependencies
 
 - [GNU sed](/gnu-sed.md)
 
-## We Disagree (wedisagree)
+## Change Theme
 
 ```sh
 # Set theme
-sed -i '/^ZSH_THEME/ s/robbyrussell/wedisagree/' ~/.zshrc
+sed -i '/^ZSH_THEME/ s/robbyrussell/flazz/' ~/.zshrc
 
 # Reload
 source ~/.zshrc

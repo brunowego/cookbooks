@@ -41,8 +41,8 @@ Transactions Per Second (TPS)
 
 ## Console
 
-- [Globally](https://console.aws.amazon.com/)
-- [US West 2](https://us-west-2.console.aws.amazon.com/)
+- [Globally](https://console.aws.amazon.com)
+- [US West 2](https://us-west-2.console.aws.amazon.com)
 
 ## References
 
@@ -57,7 +57,7 @@ Transactions Per Second (TPS)
 
 - [AWS Free Tier](https://aws.amazon.com/free/)
 - [AWS Simple Monthly Calculator](https://calculator.s3.amazonaws.com/index.html)
-- [AWS Service Health Dashboard](https://status.aws.amazon.com/)
+- [AWS Service Health Dashboard](https://status.aws.amazon.com)
 - [AWS Pricing Calculator](https://calculator.aws/#/)
 - [AWS Glossary](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html)
 - [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/)

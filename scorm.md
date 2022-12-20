@@ -4,4 +4,4 @@
 
 ## Links
 
-- [Main Website](https://scorm.com/)
+- [Main Website](https://scorm.com)

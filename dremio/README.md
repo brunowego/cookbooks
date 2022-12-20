@@ -6,6 +6,6 @@
 
 ## References
 
-- [Documentation](https://docs.dremio.com/)
+- [Documentation](https://docs.dremio.com)
 - [Data Warehouses Explained by Dremio](https://dremio.com/what-is-a-data-warehouse/)
 - [Dremio Enterprise Edition](https://dremio.com/enterprise-edition/)

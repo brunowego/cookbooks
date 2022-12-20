@@ -2,6 +2,8 @@
 
 <!--
 https://app.pluralsight.com/paths/skills/managing-and-orchestrating-containers-with-azure-kubernetes-service-aks
+
+https://github.com/search?o=desc&q=path%3Amodules%2Faks+filename%3Amain.tf&s=indexed&type=Code
 -->
 
 **Keywords:** Kubernetes Orchestration

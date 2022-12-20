@@ -34,7 +34,7 @@ app-store-connect list-profiles
 
 <!-- ###
 
-1. [App Store Connect](https://appstoreconnect.apple.com/)
+1. [App Store Connect](https://appstoreconnect.apple.com)
 2. Users and Access -->
 
 <!--

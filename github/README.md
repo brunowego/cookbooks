@@ -22,8 +22,8 @@ https://github.community/t/picture-tag-in-markdown/149471
 
 ## References
 
-- [myOctocat](https://myoctocat.com/)
-- [GitHub Status](https://githubstatus.com/)
+- [myOctocat](https://myoctocat.com)
+- [GitHub Status](https://githubstatus.com)
 
 ## API
 
@@ -33,7 +33,7 @@ https://github.community/t/picture-tag-in-markdown/149471
 ## Tools
 
 - [GitHub social previews](https://mugshotbot.com/github)
-- [PullApprove](https://pullapprove.com/)
+- [PullApprove](https://pullapprove.com)
 
 ## Settings
 
@@ -71,7 +71,7 @@ brew install --cask github
 
 ### Links
 
-- [Main Website](https://cli.github.com/)
+- [Main Website](https://cli.github.com)
 
 ### Installation
 

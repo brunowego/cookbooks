@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://styled-components.com/)
+- [Main Website](https://styled-components.com)
 
 ## Syntax
 

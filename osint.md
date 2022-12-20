@@ -14,7 +14,7 @@ https://github.com/laramies/theHarvester
 
 ## Frameworks
 
-- [OSINT Framework](https://osintframework.com/)
+- [OSINT Framework](https://osintframework.com)
 - [Malfrat's OSINT Map](https://map.malfrats.industries/)
 
 ## Glossary

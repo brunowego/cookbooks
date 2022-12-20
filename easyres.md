@@ -4,7 +4,7 @@
 
 ## Links
 
-- [Main Website](https://easyresapp.com/)
+- [Main Website](https://easyresapp.com)
 
 ## App
 

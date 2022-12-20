@@ -20,7 +20,7 @@ https://epic-course-platform.vercel.app/
 - [Edge Functions](https://vercel.com/features/edge-functions)
 - [Previews](https://vercel.com/features/previews#checks)
 - [Examples](https://github.com/vercel/examples)
-- [Status Page](https://vercel-status.com/)
+- [Status Page](https://vercel-status.com)
 
 ## Docs
 

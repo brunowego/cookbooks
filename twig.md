@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://twig.symfony.com/)
+- [Main Website](https://twig.symfony.com)

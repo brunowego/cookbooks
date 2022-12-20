@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/gophish/gophish)
-- [Main Website](https://getgophish.com/)
+- [Main Website](https://getgophish.com)
 
 ## Docker
 

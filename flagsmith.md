@@ -12,8 +12,8 @@ https://configcat.com/
 ## Links
 
 - [Code Repository](https://github.com/Flagsmith/flagsmith)
-- [Main Website](https://flagsmith.com/)
-- [Docs](https://docs.flagsmith.com/)
+- [Main Website](https://flagsmith.com)
+- [Docs](https://docs.flagsmith.com)
 
 ## Helm
 

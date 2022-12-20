@@ -14,7 +14,7 @@ Pró-Labore
 ## Links
 
 - [500](https://500.co/)
-- [Y Combinator](https://ycombinator.com/)
+- [Y Combinator](https://ycombinator.com)
 
 ## References
 

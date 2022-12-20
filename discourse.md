@@ -9,7 +9,7 @@
 
 - [Customers](https://discourse.org/customers)
 - More
-  - [HashiCorp](https://discuss.hashicorp.com/)
+  - [HashiCorp](https://discuss.hashicorp.com)
 
 ## Docker
 

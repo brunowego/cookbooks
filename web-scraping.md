@@ -19,8 +19,8 @@ https://www.udemy.com/course/web-scraping-with-python-ruby-import-io-for-fun-pro
 
 ### PaaS
 
-- [Scraping Robot](https://scrapingrobot.com/)
-- [ScrapingAnt](https://scrapingant.com/)
+- [Scraping Robot](https://scrapingrobot.com)
+- [ScrapingAnt](https://scrapingant.com)
 
 ### Library
 

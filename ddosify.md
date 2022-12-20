@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/ddosify/ddosify)
-- [Main Website](https://ddosify.com/)
+- [Main Website](https://ddosify.com)
 
 ## CLI
 

@@ -16,7 +16,7 @@ https://linkedin.com/learning/azure-for-devops-implementing-development-processe
 
 ## Links
 
-- [Projects](https://dev.azure.com/)
+- [Projects](https://dev.azure.com)
 - [Main Website](https://azure.microsoft.com/en-us/products/devops/)
 - [Docs](https://learn.microsoft.com/en-us/cli/azure/devops?view=azure-cli-latest)
 
@@ -134,14 +134,14 @@ EOF
 
 #### Disable Repository
 
-1. [Azure DevOps](https://dev.azure.com/) -> Sidebar Menu -> Project settings
+1. [Azure DevOps](https://dev.azure.com) -> Sidebar Menu -> Project settings
 2. Repos -> Repositories
 3. All Repositories -> Select Repository -> Settings Tab
 4. Disable Repository -> Turn Off
 
 #### Force Push
 
-1. [Azure DevOps](https://dev.azure.com/) -> Sidebar Menu -> Project settings
+1. [Azure DevOps](https://dev.azure.com) -> Sidebar Menu -> Project settings
 2. Repos -> Repositories
 3. All Repositories -> Select Repository -> Security Tab -> User permissions
 4. Add User -> Select `Allow` in `Force push (rewrite history, delete branches and tags)`

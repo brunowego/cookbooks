@@ -2,9 +2,9 @@
 
 ## Tools
 
-- [Instant Username](https://instantusername.com/)
-- [Namecheckr](https://namecheckr.com/)
-- [Namechk](https://namechk.com/)
+- [Instant Username](https://instantusername.com)
+- [Namecheckr](https://namecheckr.com)
+- [Namechk](https://namechk.com)
 
 ## My
 
@@ -20,7 +20,7 @@
 - [Myspace](https://myspace.com/brunowego)
 - [Reddit](https://reddit.com/user/brunowego)
 - [SoundCloud](https://soundcloud.com/brunowego)
-- [Tumblr](https://brunowego.tumblr.com/)
+- [Tumblr](https://brunowego.tumblr.com)
 - [Twitter](https://twitter.com/brunowego)
 - [Vimeo](https://vimeo.com/brunowego)
 - [YouTube](https://youtube.com/brunowego)

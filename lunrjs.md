@@ -3,4 +3,4 @@
 ## Links
 
 - [Code Repository](https://github.com/olivernn/lunr.js)
-- [Main Website](https://lunrjs.com/)
+- [Main Website](https://lunrjs.com)

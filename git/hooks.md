@@ -6,7 +6,7 @@ https://github.com/sentenz/guide/blob/main/githooks/README.md
 
 ## Links
 
-- [Git Hooks](https://githooks.com/)
+- [Git Hooks](https://githooks.com)
 
 ## Docs
 

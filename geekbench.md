@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://geekbench.com/)
+- [Main Website](https://geekbench.com)
 
 ## App
 

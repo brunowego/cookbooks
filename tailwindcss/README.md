@@ -15,11 +15,11 @@ flowbite
 ## Links
 
 - [Code Repository](https://github.com/tailwindlabs/tailwindcss)
-- [Main Website](https://tailwindcss.com/)
+- [Main Website](https://tailwindcss.com)
 - [Docs](https://tailwindcss.com/docs)
-- [Tailwind UI](https://tailwindui.com/)
+- [Tailwind UI](https://tailwindui.com)
 - [Headless UI](https://headlessui.dev/react/menu)
-- [Heroicons](https://heroicons.com/)
+- [Heroicons](https://heroicons.com)
 - [CodePen Examples](https://codepen.io/search/pens?q=tailwind)
 
 ## Docs
@@ -30,7 +30,7 @@ flowbite
 ## Success Cases
 
 - [Himalayas](https://himalayas.app/)
-- [PlanetScale](https://planetscale.com/)
+- [PlanetScale](https://planetscale.com)
 - [Supabase](https://supabase.io/)
 
 <!--

@@ -143,12 +143,12 @@ Se você não identifica a liquidez, você é a liquidez
 
 ## Companies
 
-- [Genesis](https://genesistrading.com/)
+- [Genesis](https://genesistrading.com)
 
 ## Challenge
 
-- [FTMO](https://ftmo.com/)
-- [Traders Central Fund (TCF)](https://traderscentral.com/)
+- [FTMO](https://ftmo.com)
+- [Traders Central Fund (TCF)](https://traderscentral.com)
 
 ## Trading Sessions
 
@@ -165,7 +165,7 @@ Williams Fractals
 
 <!-- ## Tools
 
-- [Koyfin](https://app.koyfin.com/) -->
+- [Koyfin](https://app.koyfin.com) -->
 
 ## Stages
 

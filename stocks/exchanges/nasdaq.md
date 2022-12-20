@@ -9,7 +9,7 @@ US100
 ## Links
 
 - [Org. Repository](https://github.com/Nasdaq)
-- [Main Website](https://nasdaq.com/)
+- [Main Website](https://nasdaq.com)
 - [MARKETS / Holidays & Trading Hours](https://nyse.com/markets/hours-calendars)
 
 <!--

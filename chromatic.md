@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://chromatic.com/)
+- [Main Website](https://chromatic.com)
 - [Docs / CLI](https://chromatic.com/docs/cli)
 
 ## CLI

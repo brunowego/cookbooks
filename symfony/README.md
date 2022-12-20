@@ -8,7 +8,7 @@ https://symfony.com/doc/current/configuration.html#configuration-secrets
 ## Links
 
 - [Code Repository](https://github.com/symfony/symfony)
-- [Main Website](https://symfony.com/)
+- [Main Website](https://symfony.com)
 - [Symfony Releases](https://symfony.com/releases/)
 
 ## Solution

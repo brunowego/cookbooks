@@ -21,7 +21,7 @@ Devnet
 
 ## References
 
-- [DeFi Pulse](https://defipulse.com/)
+- [DeFi Pulse](https://defipulse.com)
 
 ## Programming Languages for Smart Contracts
 

@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Bcrypt-Generator.com - Online Bcrypt Hash Generator & Checker](https://bcrypt-generator.com/)
+- [Bcrypt-Generator.com - Online Bcrypt Hash Generator & Checker](https://bcrypt-generator.com)
 
 ## CLI
 

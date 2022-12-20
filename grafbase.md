@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://grafbase.com/)
+- [Main Website](https://grafbase.com)
 - [Org. Repository](https://github.com/grafbase)
 - [Examples](https://github.com/grafbase/grafbase/tree/main/examples)
 

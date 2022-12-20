@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://codeql.github.com/)
+- [Main Website](https://codeql.github.com)
 
 ## Glossary
 

@@ -7,7 +7,7 @@ https://gsuite.google.com/products/admin/
 
 ## Links
 
-- [Admin](https://admin.google.com/)
+- [Admin](https://admin.google.com)
 
 ## Guides
 

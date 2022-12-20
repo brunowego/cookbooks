@@ -2,7 +2,7 @@
 
 ## References
 
-- [Keep a Changelog](https://keepachangelog.com/)
+- [Keep a Changelog](https://keepachangelog.com)
 - [Semantic Versioning](https://semver.org/)
 
 <!--

@@ -2,5 +2,5 @@
 
 ## Platforms
 
-- [Immunefi](https://immunefi.com/)
+- [Immunefi](https://immunefi.com)
 - [OpenBugBounty](https://openbugbounty.org/)

@@ -12,9 +12,9 @@ https://linkedin.com/learning/continuous-integration-tools/building-your-ci-cd-p
 - [Azure DevOps](/azure/services/devops/README.md) / [Azure Pipelines](/azure/services/devops/azure-pipelines/README.md)
 - [GitHub](/github/README.md) / [Actions](/github/actions/README.md)
 - [Go Continuous Delivery (GoCD)](/gocd.md)
-- [Semaphore](https://semaphoreci.com/)
+- [Semaphore](https://semaphoreci.com)
 - [TeamCity](https://jetbrains.com/teamcity/)
-- [Travis CI](https://travis-ci.com/)
+- [Travis CI](https://travis-ci.com)
 
 #### Mobile
 

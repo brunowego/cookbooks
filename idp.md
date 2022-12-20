@@ -54,10 +54,10 @@ https://linkedin.com/learning/microservices-security/securing-microservices
 
 <!--
 - [AWS Cognito](/aws/aws-cognito.md)
-- [Auth0](https://auth0.com/)
+- [Auth0](https://auth0.com)
 - [Azure AD](https://azure.microsoft.com/en-us/services/active-directory/)
 - [Gluu](https://gluu.org/)
-- [Okta](https://okta.com/)
+- [Okta](https://okta.com)
 - [ORY Hydra](ory-hydra.md)
 -->
 

@@ -43,7 +43,7 @@ https://bitcoinmonthlyreturn.com/
 - [Bitcoin: Number of Active Addresses](https://studio.glassnode.com/metrics?a=BTC&m=addresses.ActiveCount)
 - [Bitnodes / Bitcoin Network Live Map](https://bitnodes.io/nodes/live-map/)
 - [Code Repository](https://github.com/bitcoin/bitcoin)
-- [FiatMarketCap / Fiat Market Capitalizations](https://fiatmarketcap.com/)
+- [FiatMarketCap / Fiat Market Capitalizations](https://fiatmarketcap.com)
 - [Total Hash Rate (TH/s)](https://blockchain.com/explorer/charts/hash-rate)
 
 ### Important
@@ -79,7 +79,7 @@ https://coingecko.com/en/public-companies-bitcoin
 - [bitaddress.org](https://bitaddress.org/)
 - [BTC Funding Rate and Predicted Funding Rate](https://coinalyze.net/bitcoin/funding-rate/)
 - [Capcoin](https://capcoin.ru/?c=COINBASE:BTCUSD,COINBASE:ETHUSD,COINBASE:LTCUSD#nav)
-- [Dollar Cost Averaging Bitcoin](https://dcabtc.com/)
+- [Dollar Cost Averaging Bitcoin](https://dcabtc.com)
 - [Quantify Crypto / Bitcoin](https://quantifycrypto.com/coins/BTC)
 
 ## Important Dates
@@ -90,12 +90,12 @@ TODO
 
 - [Bitcoin Mayer Multiple](https://stats.buybitcoinworldwide.com/mayermultiple/)
 - [Bitcoin Halving Countdown](https://coinmarketcap.com/halving/bitcoin/)
-- [Satoshis Per Person](https://satoshisperperson.com/)
+- [Satoshis Per Person](https://satoshisperperson.com)
 
 ## References
 
 - [COIN360](https://coin360.com)
-- [CoinMarketCap](https://coinmarketcap.com/)
+- [CoinMarketCap](https://coinmarketcap.com)
 - [mempool - Bitcoin Explorer](https://mempool.space/)
 
 ## Heatmap
@@ -120,7 +120,7 @@ Hash Ribbons
 
 ## Miner
 
-- [Antpool](https://antpool.com/)
+- [Antpool](https://antpool.com)
 
 ## Terms
 

@@ -70,7 +70,7 @@ Awareness, Agility and Advanced Controls - The AAA Triad Of Security
 
 ## Links
 
-- [Information Security Stack Exchange](https://security.stackexchange.com/)
+- [Information Security Stack Exchange](https://security.stackexchange.com)
 - [NIST CSRC / Glossary](https://csrc.nist.gov/glossary)
 
 ## Content
@@ -105,8 +105,8 @@ Security+
 
 ## Podcasts
 
-- [Darknet Diaries](https://darknetdiaries.com/)
-- [The Cyber Wire](https://thecyberwire.com/)
+- [Darknet Diaries](https://darknetdiaries.com)
+- [The Cyber Wire](https://thecyberwire.com)
 
 ## YouTube Channels
 
@@ -114,10 +114,10 @@ Security+
 
 ## Keep Up To Date
 
-- [Digital Attack Map](https://digitalattackmap.com/)
-- [Securelist](https://securelist.com/)
+- [Digital Attack Map](https://digitalattackmap.com)
+- [Securelist](https://securelist.com)
 - [Shodan](https://shodan.io/)
-- [Threatpost](https://threatpost.com/)
+- [Threatpost](https://threatpost.com)
 - [Wired / Security](https://wired.com/category/security/)
 
 <!--
@@ -213,7 +213,7 @@ Segurança da Informação (SI) / Information Security (IS)
 ## Learning
 
 - [Capture The Flag 101](https://ctf101.org/)
-- [Hack The Box](https://hackthebox.com/)
+- [Hack The Box](https://hackthebox.com)
 - [picoCTF](https://picoctf.org/)
 
 <!--

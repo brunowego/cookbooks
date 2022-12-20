@@ -8,4 +8,4 @@ https://app.pluralsight.com/library/courses/adobe-analytics-dynamic-tag-manageme
 
 ## Links
 
-- [Experience League](https://experienceleague.adobe.com/)
+- [Experience League](https://experienceleague.adobe.com)

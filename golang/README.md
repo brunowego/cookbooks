@@ -22,7 +22,7 @@ Efficient compilation, Efficient execution and Ease of programming.
 - [The Go Programming Language](https://golang.org/)
 - [Modules](https://github.com/golang/go/wiki/Modules)
 - [go.dev](https://go.dev/)
-- [Learn Web Programming in Go by Examples](https://gowebexamples.com/)
+- [Learn Web Programming in Go by Examples](https://gowebexamples.com)
 - [Go go-to guide](https://yourbasic.org/golang/)
 - [Golang Cheat-Sheet](https://github.com/a8m/go-lang-cheat-sheet)
 

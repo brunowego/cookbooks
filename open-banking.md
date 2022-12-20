@@ -20,7 +20,7 @@ https://dashboard.openbankingbrasil.org.br/
 
 ## References
 
-- [Open Banking Tracker](https://openbankingtracker.com/)
+- [Open Banking Tracker](https://openbankingtracker.com)
 - [Stone Open Banking](https://docs.openbank.stone.com.br/)
 
 ## Directives

@@ -5,7 +5,7 @@
 ## Links
 
 - [Code Repository](https://github.com/chaijs/chai)
-- [Main Website](https://chaijs.com/)
+- [Main Website](https://chaijs.com)
 
 ## Library
 

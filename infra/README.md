@@ -5,7 +5,7 @@
 ## Links
 
 - [Code Repository](https://github.com/infrahq/infra)
-- [Main Website](https://infrahq.com/)
+- [Main Website](https://infrahq.com)
 
 ## Glossary
 

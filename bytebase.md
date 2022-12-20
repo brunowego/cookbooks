@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/bytebase/bytebase)
-- [Demo](https://demo.bytebase.com/)
+- [Demo](https://demo.bytebase.com)
 
 ## Docker
 

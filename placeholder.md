@@ -2,4 +2,4 @@
 
 ## Resources
 
-- [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+- [JSONPlaceholder](https://jsonplaceholder.typicode.com)

@@ -21,7 +21,7 @@ https://www.youtube.com/watch?v=F8jXE-_hdfg
 - [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/ec2/index.html)
 - [VM Import/Export](https://aws.amazon.com/ec2/vm-import/)
 
-## Links
+### Pricing
 
 - [Amazon EC2 pricing](aws.amazon.com/ec2/pricing)
 - [Easy Amazon EC2 Instance Comparison](https://instances.vantage.sh/)

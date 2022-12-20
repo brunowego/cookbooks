@@ -2,7 +2,7 @@
 
 ## Tools
 
-- [Chmod Calculator](https://chmod-calculator.com/)
+- [Chmod Calculator](https://chmod-calculator.com)
 
 ## Usage
 

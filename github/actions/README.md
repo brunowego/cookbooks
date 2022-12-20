@@ -55,7 +55,7 @@ Discord: https://github.com/hacs/integration/blob/main/.github/workflows/validat
 ## Links
 
 - [GitHub Actions Virtual Environments](https://github.com/actions/virtual-environments)
-- [Learning Lab](https://lab.github.com/)
+- [Learning Lab](https://lab.github.com)
 - [Features Actions](https://github.com/features/actions)
 - [Starter Workflows](https://github.com/actions/starter-workflows)
 - [Become a GitHub Actions Hero](https://github-actions-hero.vercel.app/)

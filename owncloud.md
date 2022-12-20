@@ -6,4 +6,4 @@ nextcloud
 
 ## Links
 
-- [Main Website](https://owncloud.com/)
+- [Main Website](https://owncloud.com)

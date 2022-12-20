@@ -5,4 +5,4 @@
 ## Links
 
 - [Code Repository](https://github.com/jitsucom/jitsu)
-- [Main Website](https://jitsu.com/)
+- [Main Website](https://jitsu.com)

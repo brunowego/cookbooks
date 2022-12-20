@@ -6,4 +6,4 @@ https://www.dextools.io/app/
 
 ## Tools
 
-- [DEX Screener](https://dexscreener.com/)
+- [DEX Screener](https://dexscreener.com)

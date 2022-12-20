@@ -7,7 +7,7 @@ https://app.pluralsight.com/library/courses/big-data-ldn-session-79/table-of-con
 ## Links
 
 - [Code Repository](https://github.com/cockroachdb/cockroach)
-- [Main Website](https://cockroachlabs.com/)
+- [Main Website](https://cockroachlabs.com)
 
 ## Guides
 

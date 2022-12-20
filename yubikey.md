@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://yubico.com/)
+- [Main Website](https://yubico.com)
 
 ## Glossary
 

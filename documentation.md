@@ -2,4 +2,4 @@
 
 ## Examples
 
-- [Atlassian Documentation](https://confluence.atlassian.com/)
+- [Atlassian Documentation](https://confluence.atlassian.com)

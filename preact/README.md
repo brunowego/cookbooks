@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/preactjs/preact)
-- [Main Website](https://preactjs.com/)
+- [Main Website](https://preactjs.com)
 
 ## Guides
 

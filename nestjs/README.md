@@ -24,8 +24,8 @@ https://github.com/getlarge/ticketing
 ## Links
 
 - [Code Repository](https://github.com/nestjs/nest)
-- [Main Website](https://nestjs.com/)
-- [Docs](https://docs.nestjs.com/)
+- [Main Website](https://nestjs.com)
+- [Docs](https://docs.nestjs.com)
 
 ## Docs
 

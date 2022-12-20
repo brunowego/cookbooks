@@ -34,4 +34,4 @@ https://instatus.com/
 ## Examples
 
 - [AlienVault](https://status.alienvault.cloud/)
-- [GitHub](https://githubstatus.com/)
+- [GitHub](https://githubstatus.com)

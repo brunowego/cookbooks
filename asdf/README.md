@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/asdf-vm/asdf)
-- [Main Website](https://asdf-vm.com/)
+- [Main Website](https://asdf-vm.com)
 - [Plugin List](https://asdf-vm.com/#/plugins-all?id=plugin-list)
 
 ## Plugins

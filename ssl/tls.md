@@ -2,7 +2,7 @@
 
 ## Tools
 
-- [Test TLS](https://testtls.com/)
+- [Test TLS](https://testtls.com)
 - [CDN77 / TLS checker](https://cdn77.com/tls-test)
 
 ## Tips

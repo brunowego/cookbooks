@@ -2,7 +2,7 @@
 
 ## Tools
 
-- [Hosting Checker](https://hostingchecker.com/)
+- [Hosting Checker](https://hostingchecker.com)
 
 ### Bandwidth Calculator
 

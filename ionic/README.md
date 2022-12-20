@@ -5,7 +5,7 @@
 ## Links
 
 - [Code Repository](https://github.com/ionic-team/ionic-framework)
-- [Main Website](https://ionicframework.com/)
+- [Main Website](https://ionicframework.com)
 
 ## CLI
 

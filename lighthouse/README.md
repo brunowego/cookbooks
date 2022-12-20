@@ -9,7 +9,7 @@
 
 - [Measure page quality](https://web.dev/measure/)
 - [WebPageTest](https://webpagetest.org/)
-- [Lighthouse Metrics](https://lighthouse-metrics.com/)
+- [Lighthouse Metrics](https://lighthouse-metrics.com)
 
 ## CLI
 

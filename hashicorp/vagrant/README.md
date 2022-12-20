@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/hashicorp/vagrant)
-- [Main Website](https://vagrantup.com/)
+- [Main Website](https://vagrantup.com)
 
 ## CLI
 

@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://music.youtube.com/)
+- [Main Website](https://music.youtube.com)

@@ -5,7 +5,7 @@
 ## Links
 
 - [Code Repository](https://github.com/tryretool/retool-onpremise)
-- [Main Website](https://retool.com/)
+- [Main Website](https://retool.com)
 - [Integrations](https://retool.com/integrations/)
 
 ## Helm

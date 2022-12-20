@@ -10,8 +10,8 @@
 ## Tools
 
 - [RegEx Generator](https://retool.com/utilities/regex-generator)
-- [regex101](https://regex101.com/) 🌟
-- [RegExr](https://regexr.com/)
+- [regex101](https://regex101.com) 🌟
+- [RegExr](https://regexr.com)
 
 ## References
 

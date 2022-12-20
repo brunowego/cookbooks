@@ -8,8 +8,8 @@ https://app.pluralsight.com/guides/deploy-a-react-app-on-a-server
 
 ## Links
 
-- [Main Website](https://netlify.com/)
-- [Status Page](https://netlifystatus.com/)
+- [Main Website](https://netlify.com)
+- [Status Page](https://netlifystatus.com)
 
 ## Plugins
 

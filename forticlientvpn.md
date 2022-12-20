@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://forticlient.com/)
+- [Main Website](https://forticlient.com)
 
 ## App
 

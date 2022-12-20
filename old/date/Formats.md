@@ -2,9 +2,9 @@
 
 ## References
 
-- [NSDateFormatter](https://nsdateformatter.com/)
+- [NSDateFormatter](https://nsdateformatter.com)
 - [SiliSoftware](https://www.silisoftware.com/tools/date.php)
-- [UnixTimestamp](https://www.unixtimestamp.com/)
+- [UnixTimestamp](https://www.unixtimestamp.com)
 
 ## Text Date
 

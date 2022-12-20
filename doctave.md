@@ -3,14 +3,14 @@
 ## Links
 
 - [Org. Repository](https://github.com/Doctave)
-- [Main Website](https://doctave.com/)
+- [Main Website](https://doctave.com)
 
 ## CLI
 
 ### Links
 
 - [Code Repository](https://github.com/Doctave/doctave)
-- [Main Website](https://cli.doctave.com/)
+- [Main Website](https://cli.doctave.com)
 
 ### Installation
 

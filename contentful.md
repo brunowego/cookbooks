@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://contentful.com/)
+- [Main Website](https://contentful.com)

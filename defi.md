@@ -7,8 +7,8 @@ oasis.app/25977
 
 ## Tools
 
-- [DeFiSafety](https://defisafety.com/)
-- [DeFi Explore](https://defiexplore.com/)
+- [DeFiSafety](https://defisafety.com)
+- [DeFi Explore](https://defiexplore.com)
 
 ## Terms
 

@@ -93,7 +93,7 @@ IriusRisk
 ### Code Scanning, Alerts, and Notification of Security Anomalies
 
 - [Alerta](https://alerta.io/)
-- [Gerrit](https://gerritcodereview.com/)
+- [Gerrit](https://gerritcodereview.com)
 - [GitLab](/gitlab/README.md)
 - [ShiftLeft](https://shiftleft.io/)
 - [Snyk](/cyber-security/tools/snyk.md)
@@ -102,7 +102,7 @@ IriusRisk
 
 ### Automation: Scanning, Discovery, and Remediation of Security Defects
 
-- [StackStorm](https://stackstorm.com/)
+- [StackStorm](https://stackstorm.com)
 - [OWASP Glue](https://github.com/OWASP/glue)
 - [OWASP Zed Attack Proxy (ZAP)](https://zaproxy.org/)
 - [OWASP Dependency-Check](https://owasp.org/www-project-dependency-check/) — Build Composition Analysis

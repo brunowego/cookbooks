@@ -6,7 +6,7 @@
 
 ## Links
 
-- [Main Website](https://getemoji.com/)
+- [Main Website](https://getemoji.com)
 
 ## Tips
 

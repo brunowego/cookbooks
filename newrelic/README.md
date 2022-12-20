@@ -11,7 +11,7 @@ https://www.udemy.com/course/learn-new-relic-monitoring-and-devops-for-the-cloud
 ## Links
 
 - [Org. Repository](https://github.com/newrelic)
-- [Main Website](https://newrelic.com/)
+- [Main Website](https://newrelic.com)
 
 ## Console
 
@@ -19,7 +19,7 @@ https://www.udemy.com/course/learn-new-relic-monitoring-and-devops-for-the-cloud
 
 ## Docs
 
-- [New Relic University](https://learn.newrelic.com/)
+- [New Relic University](https://learn.newrelic.com)
 - [Get started with the New Relic CLI](https://developer.newrelic.com/automate-workflows/get-started-new-relic-cli/)
 
 ## Solutions

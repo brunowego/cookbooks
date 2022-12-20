@@ -2,7 +2,7 @@
 
 ## Tools
 
-- [What Font Is](https://whatfontis.com/)
+- [What Font Is](https://whatfontis.com)
 - [WhatTheFont!](https://myfonts.com/WhatTheFont/)
 - [Font Identifier](https://fontsquirrel.com/matcherator)
 

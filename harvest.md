@@ -9,7 +9,7 @@ https://github.com/lsv/timeharvest-cli
 ## Links
 
 - [My Accounts](https://id.getharvest.com/accounts)
-- [Main Website](https://getharvest.com/)
+- [Main Website](https://getharvest.com)
 
 ## App
 

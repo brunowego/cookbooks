@@ -2,4 +2,4 @@
 
 ## Links
 
-- [DappRadar](https://dappradar.com/)
+- [DappRadar](https://dappradar.com)

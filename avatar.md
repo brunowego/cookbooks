@@ -2,8 +2,8 @@
 
 ## Libraries
 
-- [Boring Avatars](https://boringavatars.com/)
+- [Boring Avatars](https://boringavatars.com)
 
 ## Tools
 
-- [Profile Pic Maker](https://pfpmaker.com/)
+- [Profile Pic Maker](https://pfpmaker.com)

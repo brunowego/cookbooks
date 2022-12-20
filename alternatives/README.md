@@ -25,7 +25,7 @@ https://intercom.com/
 
 ## Code Review
 
-- [Codacy](https://www.codacy.com/)
+- [Codacy](https://www.codacy.com)
 
 ## Dependency Management
 
@@ -47,7 +47,7 @@ https://intercom.com/
 
 - [1Password](/1password.md)
 - [Bitwarden](/bitwarden.md)
-- [LastPass](https://lastpass.com/)
+- [LastPass](https://lastpass.com)
 
 ## Application Performance Management (APM)
 
@@ -146,10 +146,10 @@ https://intercom.com/
 ## Draw
 
 - [diagrams.net](https://diagrams.net/)
-- [Lucidchart](https://lucidchart.com/)
+- [Lucidchart](https://lucidchart.com)
 - [Mural](https://mural.co/)
 - [OmniGraffle](https://omnigroup.com/omnigraffle)
-- [Whimsical](https://whimsical.com/)
+- [Whimsical](https://whimsical.com)
 - [XMind](https://xmind.net/)
 
 ## Analytics

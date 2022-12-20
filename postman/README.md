@@ -10,7 +10,7 @@ https://www.freecodecamp.org/news/learn-how-to-use-postman-to-test-apis/
 ## Links
 
 - [Org. Repository](https://github.com/postmanlabs)
-- [Main Website](https://postman.com/)
+- [Main Website](https://postman.com)
 
 ## Alternatives
 

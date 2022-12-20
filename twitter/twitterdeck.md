@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://tweetdeck.twitter.com/)
+- [Main Website](https://tweetdeck.twitter.com)
 
 ## App
 

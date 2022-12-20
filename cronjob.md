@@ -5,7 +5,7 @@
 - [Cronhub](https://cronhub.io/)
 - [EasyCron](https://easycron.com)
 - [GitHub Actions](https://github.com/features/actions)
-- [Pipedream](https://pipedream.com/)
+- [Pipedream](https://pipedream.com)
 - [Zeplo](https://zeplo.io/)
 
 ## Schedules

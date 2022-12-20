@@ -14,7 +14,7 @@ https://linkedin.com/learning/advanced-css-media-queries/media-queries-aren-t-ju
 
 ## Tools
 
-- [uiGradients](https://uigradients.com/)
+- [uiGradients](https://uigradients.com)
 
 <!-- https://bennettfeely.com/clippy/ -->
 

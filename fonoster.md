@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/fonoster/fonoster)
-- [Main Website](https://fonoster.com/)
+- [Main Website](https://fonoster.com)
 
 ## CLI
 

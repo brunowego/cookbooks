@@ -9,4 +9,4 @@ https://hub.docker.com/r/owasp/threat-dragon
 ## Links
 
 - [Code Repository](https://github.com/OWASP/threat-dragon)
-- [Main Website](https://threatdragon.com/)
+- [Main Website](https://threatdragon.com)

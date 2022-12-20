@@ -1,5 +1,9 @@
 # Terraform
 
+## Dependencies
+
+- [Keycloak](/keycloak/README.md#docker)
+
 ## Running
 
 ```sh

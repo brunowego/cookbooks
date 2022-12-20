@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://replit.com/)
+- [Main Website](https://replit.com)

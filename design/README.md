@@ -91,9 +91,9 @@ https://www.tidio.com/panel/register
 
 ### Patterns
 
-- [Hero Patterns](https://heropatterns.com/)
+- [Hero Patterns](https://heropatterns.com)
 
 ### Feedback
 
 - [Maze](https://maze.co/)
-- [UsabilityHub](https://usabilityhub.com/)
+- [UsabilityHub](https://usabilityhub.com)

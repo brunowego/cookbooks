@@ -4,7 +4,7 @@
 
 ## Links
 
-- [Main Website](https://presentify.compzets.com/)
+- [Main Website](https://presentify.compzets.com)
 
 ## App
 

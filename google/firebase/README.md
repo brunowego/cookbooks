@@ -11,7 +11,7 @@ https://github.com/SmartMoveSystems/keycloak-firebase-scrypt
 
 ## Links
 
-- [Main Website](https://firebase.google.com/)
+- [Main Website](https://firebase.google.com)
 
 ## Docs
 

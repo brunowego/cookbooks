@@ -3,14 +3,17 @@
 ## Guides
 
 - [Web Fundamentals - Content Security Policy](https://developers.google.com/web/fundamentals/security/csp)
-- [Content Security Policy (CSP) - Quick Reference Guide](https://content-security-policy.com/)
+- [Content Security Policy (CSP) - Quick Reference Guide](https://content-security-policy.com)
 
 ## Usage
 
 ### HTML
 
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src http://127.0.0.1:8080; script-src 'self' 'unsafe-inline' http://127.0.0.1:8080; img-src 'self' http://127.0.0.1:8080; style-src 'self'; frame-ancestors 'self'; frame-src 'self';">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; connect-src http://127.0.0.1:8080; script-src 'self' 'unsafe-inline' http://127.0.0.1:8080; img-src 'self' http://127.0.0.1:8080; style-src 'self'; frame-ancestors 'self'; frame-src 'self';"
+/>
 ```
 
 ## Issues
@@ -22,7 +25,10 @@ Uncaught EvalError: Refused to evaluate a string as JavaScript because 'unsafe-e
 ```
 
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval';">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; script-src 'self' 'unsafe-eval';"
+/>
 ```
 
 ### Unsafe Inline Script
@@ -32,7 +38,10 @@ Refused to execute inline script because it violates the following Content Secur
 ```
 
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline';">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; script-src 'self' 'unsafe-inline';"
+/>
 ```
 
 <!-- ###
@@ -51,7 +60,10 @@ Refused to load the font '<URL>' because it violates the following Content Secur
 ```
 
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' fonts.gstatic.com;">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; font-src 'self' fonts.gstatic.com;"
+/>
 ```
 
 ### External Style
@@ -61,7 +73,10 @@ Refused to load the stylesheet 'https://fonts.googleapis.com/css2?family=Poppins
 ```
 
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' *.googleapis.com;">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; style-src 'self' *.googleapis.com;"
+/>
 ```
 
 ### Unsafe Style
@@ -71,7 +86,10 @@ Refused to apply inline style because it violates the following Content Security
 ```
 
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; style-src 'self' 'unsafe-inline';"
+/>
 ```
 
 ### URL Image
@@ -81,7 +99,10 @@ Refused to load the image '<URL>' because it violates the following Content Secu
 ```
 
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' *.example.com;">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; img-src 'self' *.example.com;"
+/>
 ```
 
 ### Encoded Image
@@ -91,7 +112,10 @@ Refused to load the image 'data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.or
 ```
 
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:;">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; img-src 'self' data:;"
+/>
 ```
 
 ### Google Tag Manager
@@ -101,7 +125,10 @@ Refused to load the script 'https://www.googletagmanager.com/gtag/js?id=G-MMGHY9
 ```
 
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' *.googletagmanager.com;">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; script-src 'self' *.googletagmanager.com;"
+/>
 ```
 
 ###
@@ -111,5 +138,8 @@ Refused to connect to '<URL>' because it violates the following Content Security
 ```
 
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src *;">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; connect-src *;"
+/>
 ```

@@ -2,7 +2,7 @@
 
 ## Tools
 
-- [Excalidraw](https://excalidraw.com/)
+- [Excalidraw](https://excalidraw.com)
 - [Diagrams](https://app.diagrams.net/)
 
 <!--

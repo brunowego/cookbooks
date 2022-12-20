@@ -10,7 +10,7 @@ https://til.secretgeek.net/gitbook/use_gitbook_locally.html
 
 ## Links
 
-- [Main Website](https://gitbook.com/)
+- [Main Website](https://gitbook.com)
 
 ## CLI
 

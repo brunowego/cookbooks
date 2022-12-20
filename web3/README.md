@@ -17,7 +17,7 @@ https://github.com/yieldgate/yieldgate
 
 ## SDKs
 
-- [thirdweb](https://thirdweb.com/)
+- [thirdweb](https://thirdweb.com)
 
 ## Terms
 

@@ -8,7 +8,7 @@
 
 ## Tools
 
-- [Security Headers](https://securityheaders.com/)
+- [Security Headers](https://securityheaders.com)
 
 ## Docs
 

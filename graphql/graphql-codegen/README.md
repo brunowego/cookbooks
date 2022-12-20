@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/dotansimha/graphql-code-generator)
-- [Main Website](https://graphql-code-generator.com/)
+- [Main Website](https://graphql-code-generator.com)
 
 <!-- ## Providers
 

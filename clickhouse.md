@@ -7,7 +7,7 @@ https://github.com/datafuselabs/datafuse
 ## Links
 
 - [Code Repository](https://github.com/ClickHouse/ClickHouse)
-- [Main Website](https://clickhouse.com/)
+- [Main Website](https://clickhouse.com)
 
 ## Docker
 

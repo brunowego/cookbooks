@@ -2,7 +2,7 @@
 
 ## Link
 
-- [Main Website](https://developer.apple.com/)
+- [Main Website](https://developer.apple.com)
 
 ## Related
 

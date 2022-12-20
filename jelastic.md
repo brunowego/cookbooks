@@ -7,9 +7,9 @@ https://github.com/jelastic-jps
 ## Links
 
 - [Org. Repository](https://github.com/jelastic/)
-- [Main Website](https://jelastic.com/)
+- [Main Website](https://jelastic.com)
 - [Dashboard](https://app.jelastic.saveincloud.net/)
-- [Status Page](https://status.saveincloud.com/)
+- [Status Page](https://status.saveincloud.com)
 
 ## Docs
 

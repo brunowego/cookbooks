@@ -29,7 +29,7 @@ https://www.youtube.com/watch?v=_1xa8Bsho6A
 
 ## Tools
 
-- [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
+- [{JSON} Placeholder](https://jsonplaceholder.typicode.com)
 - Apiary
 - Swagger
 - WADL
@@ -38,8 +38,8 @@ https://www.youtube.com/watch?v=_1xa8Bsho6A
 
 ## Demo REST APIs
 
-- [GitHub API](https://api.github.com/)
-- [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
+- [GitHub API](https://api.github.com)
+- [{JSON} Placeholder](https://jsonplaceholder.typicode.com)
 - [Reqres](https://reqres.in/)
 
 ## Comparing Web API vs REST API
@@ -54,11 +54,11 @@ https://www.youtube.com/watch?v=_1xa8Bsho6A
 ## Safe or Not
 
 | HTTP method | Request has body | Safe |
-| --- | --- | --- |
-| GET | No | Yes |
-| POST | Yes | No |
-| PUT | Yes | No |
-| DELETE | Yes | No |
+| ----------- | ---------------- | ---- |
+| GET         | No               | Yes  |
+| POST        | Yes              | No   |
+| PUT         | Yes              | No   |
+| DELETE      | Yes              | No   |
 
 ### Simple and Safe Methods
 

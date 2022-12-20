@@ -5,7 +5,7 @@
 - [pytest-django](https://pytest-django.readthedocs.io/en/latest/)
 - [tox](https://tox.readthedocs.io/en/latest/)
 - [doctest](https://docs.python.org/3/library/doctest.html)
-- [Ghost Inspector](https://ghostinspector.com/)
+- [Ghost Inspector](https://ghostinspector.com)
 
 <!--
 https://django-test-plus.readthedocs.io/en/latest/

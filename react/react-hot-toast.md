@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Code Repository](https://react-hot-toast.com/)
+- [Code Repository](https://react-hot-toast.com)

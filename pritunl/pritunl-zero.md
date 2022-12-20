@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/pritunl/pritunl-zero)
-- [Main Website](https://zero.pritunl.com/)
+- [Main Website](https://zero.pritunl.com)
 
 ## Docker
 

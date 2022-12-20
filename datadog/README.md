@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://datadoghq.com/)
+- [Main Website](https://datadoghq.com)

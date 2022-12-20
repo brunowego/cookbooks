@@ -4,8 +4,8 @@
 
 ## Links
 
-- [Main Website](https://uptimerobot.com/)
-- [Status Page](https://status.uptimerobot.com/)
+- [Main Website](https://uptimerobot.com)
+- [Status Page](https://status.uptimerobot.com)
 
 ## Tools
 

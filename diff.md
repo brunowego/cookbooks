@@ -2,8 +2,8 @@
 
 ## Tools
 
-- [Diffchecker](https://diffchecker.com/)
-- [Text Compare!](https://text-compare.com/) 🌟
+- [Diffchecker](https://diffchecker.com)
+- [Text Compare!](https://text-compare.com) 🌟
 
 ## CLI
 

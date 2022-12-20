@@ -7,7 +7,7 @@
 ## Links
 
 - [Code Repository](https://github.com/kamilkisiela/graphql-config)
-- [Main Website](https://graphql-config.com/)
+- [Main Website](https://graphql-config.com)
 
 ## Library
 

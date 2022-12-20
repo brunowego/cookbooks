@@ -6,7 +6,7 @@ https://www.tradingview.com/chart/BTCUSD/YaMxVSes-Elliot-Waves-Complete-Guide-Ch
 
 ## Links
 
-- [Elliott Wave International](https://elliottwave.com/)
+- [Elliott Wave International](https://elliottwave.com)
 
 ## Educational
 

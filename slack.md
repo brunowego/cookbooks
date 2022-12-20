@@ -3,9 +3,9 @@
 ## Links
 
 - [Org. Repository](https://github.com/slackhq)
-- [Dashboard](https://app.slack.com/)
-- [Main Website](https://slack.com/)
-- [Status Page](https://status.slack.com/)
+- [Dashboard](https://app.slack.com)
+- [Main Website](https://slack.com)
+- [Status Page](https://status.slack.com)
 
 <!--
 https://slack.github.com/

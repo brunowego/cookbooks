@@ -69,7 +69,7 @@ https://app.pluralsight.com/library/courses/ux-driven-software-design/table-of-c
 
 ## Tools
 
-- [UsabilityHub](https://usabilityhub.com/)
+- [UsabilityHub](https://usabilityhub.com)
 
 ## Metrics
 

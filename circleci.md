@@ -7,7 +7,7 @@ https://github.com/search?o=desc&q=filename%3Aconfig.yml+path%3A.circleci&s=inde
 ## Links
 
 - [Org. Repository](https://github.com/circleci)
-- [Main Website](https://circleci.com/)
+- [Main Website](https://circleci.com)
 
 ## Distributions
 

@@ -2,5 +2,5 @@
 
 ## Links
 
-- [Main Website](https://thegraph.com/)
+- [Main Website](https://thegraph.com)
 - [Academy](https://thegraph.academy/)

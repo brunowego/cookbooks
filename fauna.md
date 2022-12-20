@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://fauna.com/)
+- [Main Website](https://fauna.com)
 
 ## Terms
 

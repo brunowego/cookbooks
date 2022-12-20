@@ -46,14 +46,14 @@ https://www.nasdaq.com/crypto-index
 - [Crypto Fees](https://cryptofees.info/)
 - [CryptoAlerts](https://cryptoalerts.ai/) 🌟
 - [Cryptocurrency Market Cap over time](https://blockchaincenter.net/cryptocurrency-market-cap/)
-- [DailyClose](https://dailyclose.com/) 🌟
+- [DailyClose](https://dailyclose.com) 🌟
 - [Defi Llama / Chains](https://defillama.com/chains)
 - [Messari](https://messari.io/)
-- [ScamAdviser](https://scamadviser.com/)
-- [Staking Rewards / Earn Passive Income With Crypto](https://stakingrewards.com/)
+- [ScamAdviser](https://scamadviser.com)
+- [Staking Rewards / Earn Passive Income With Crypto](https://stakingrewards.com)
 - [Stock-to-Flow Model](https://lookintobitcoin.com/charts/stock-to-flow-model/)
 - [Top Crypto Gainers And Losers Today](https://coinmarketcap.com/gainers-losers/)
-- [Web3 Security Leaderboard](https://certik.com/)
+- [Web3 Security Leaderboard](https://certik.com)
 
 <!--
 https://cryptocraft.com/
@@ -71,10 +71,10 @@ https://blockchair.com/
 
 ### News
 
-- [BeInCrypto](https://beincrypto.com/)
-- [CoinDesk](https://coindesk.com/)
+- [BeInCrypto](https://beincrypto.com)
+- [CoinDesk](https://coindesk.com)
 - [CoinTelegraph](https://cointelegraph.com)
-- [CryptoPotato](https://cryptopotato.com/)
+- [CryptoPotato](https://cryptopotato.com)
 - [Decrypt](https://decrypt.co/)
 
 ### Companies
@@ -87,7 +87,7 @@ https://blockchair.com/
 
 ### Mining
 
-- [2Miners](https://2miners.com/)
+- [2Miners](https://2miners.com)
 
 ### Compare
 
@@ -117,21 +117,21 @@ https://blockchair.com/
 
 ### Heatmap
 
-- [COIN360 / Coins](https://coin360.com/)
+- [COIN360 / Coins](https://coin360.com)
 - [COIN360 / Exchange](https://coin360.com/exchange/)
 - [TradingView / Stock Heatmap](https://tradingview.com/heatmap/stock/)
 
 ## Tools
 
 - [Quantify Crypto](https://quantifycrypto.com/terminal)
-- [Boblles](https://boblles.com/)
+- [Boblles](https://boblles.com)
 - [Coinglass / Total Liquidations](https://coinglass.com/LiquidationData)
 - [CryptoMeter.io / Total Market Liquidation](https://cryptometer.io/liquidation-data)
-- [CoinMarketCal](https://coinmarketcal.com/)
-- [CoinMarketCap](https://coinmarketcap.com/)
-- [ICO Drops](https://icodrops.com/)
-- [Is This Coin A Scam?](https://isthiscoinascam.com/)
-- [LunarCrush](https://lunarcrush.com/)
+- [CoinMarketCal](https://coinmarketcal.com)
+- [CoinMarketCap](https://coinmarketcap.com)
+- [ICO Drops](https://icodrops.com)
+- [Is This Coin A Scam?](https://isthiscoinascam.com)
+- [LunarCrush](https://lunarcrush.com)
 - [Messari](https://messari.io/)
 - [Stock Average Calculator](https://online-calculator.org/stock-average-calculator.aspx) 🌟
 <!--
@@ -152,7 +152,7 @@ https://www.cryptometer.io/
 ### Scan Check
 
 - [BSCheck](https://bscheck.eu/)
-- [BscScan](https://bscscan.com/)
+- [BscScan](https://bscscan.com)
 - [Etherscan](https://etherscan.io/)
 
 ## Futures

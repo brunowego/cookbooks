@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://sonatype.com/)
+- [Main Website](https://sonatype.com)
 
 ## Tips
 

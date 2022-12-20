@@ -16,7 +16,7 @@
 
 ### App Password
 
-1. [Google Account](https://myaccount.google.com/)
+1. [Google Account](https://myaccount.google.com)
 2. Security -> Signing in to Google
 3. App passwords
    - Select the app and device you want to generate the app password for.

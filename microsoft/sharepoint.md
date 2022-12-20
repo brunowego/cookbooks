@@ -1,5 +1,9 @@
 # Microsoft SharePoint
 
+## Links
+
+- [Main Website](https://microsoft.com/sharepoint)
+
 ## App
 
 ### Issues

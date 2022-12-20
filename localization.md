@@ -2,7 +2,7 @@
 
 ## Tools
 
-- [Crowdin](https://crowdin.com/)
+- [Crowdin](https://crowdin.com)
 
 <!--
 Transifex

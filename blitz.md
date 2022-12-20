@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/blitz-js/blitz)
-- [Main Website](https://blitzjs.com/)
+- [Main Website](https://blitzjs.com)
 
 ## CLI
 

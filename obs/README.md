@@ -3,4 +3,4 @@
 ## Links
 
 - [Org. Repository](https://github.com/obsproject)
-- [Main Website](https://obsproject.com/)
+- [Main Website](https://obsproject.com)

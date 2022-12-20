@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://visualstudio.microsoft.com/)
+- [Main Website](https://visualstudio.microsoft.com)
 
 ## App
 

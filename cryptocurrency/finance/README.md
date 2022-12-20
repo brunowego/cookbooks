@@ -2,7 +2,7 @@
 
 ## Links
 
-- [DeFi Pulse](https://defipulse.com/)
+- [DeFi Pulse](https://defipulse.com)
 - [Oasis](https://oasis.app/)
 
 ## Categories

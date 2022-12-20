@@ -6,7 +6,7 @@ https://github.com/mrbbot/miniflare
 
 ## Links
 
-- [Main Website](https://cloudflare.com/)
+- [Main Website](https://cloudflare.com)
 
 ## Docs
 

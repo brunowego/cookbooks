@@ -17,7 +17,7 @@ Prevent Toxic Environment
 
 ## Examples
 
-- [PagerDuty Postmortems](https://postmortems.pagerduty.com/)
+- [PagerDuty Postmortems](https://postmortems.pagerduty.com)
 
 <!-- ##
 

@@ -8,7 +8,7 @@ https://myaccount.google.com/lesssecureapps?pli=1 -->
 
 ### Mail Password
 
-1. [Google Account](https://myaccount.google.com/)
+1. [Google Account](https://myaccount.google.com)
 2. Security
 3. App passwords
 4. Select the app and device you want to generate the app password for.

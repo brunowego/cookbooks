@@ -23,7 +23,7 @@ https://yusufs.medium.com/practical-example-of-implementing-oauth-2-0-using-ory-
 
 ## Tools
 
-- [OpenID Connect <debugger/>](https://oidcdebugger.com/)
+- [OpenID Connect <debugger/>](https://oidcdebugger.com)
 - [JSON Web Token - Encode or Decode JWTs](https://jsonwebtoken.io/)
 
 ## Docker

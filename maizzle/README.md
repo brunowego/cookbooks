@@ -6,7 +6,7 @@ https://github.com/maizzle/starter-postmark
 
 ## Links
 
-- [Code Repository](https://maizzle.com/)
+- [Code Repository](https://maizzle.com)
 - [Docs](https://maizzle.com/docs/)
 
 ## Library

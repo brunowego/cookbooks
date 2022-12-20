@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/goreleaser/goreleaser)
-- [Main Website](https://goreleaser.com/)
+- [Main Website](https://goreleaser.com)
 
 ## CLI
 

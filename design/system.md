@@ -34,4 +34,4 @@ https://www.youtube.com/watch?v=2pBlLUE49hI
 
 ## Packages
 
-- [Untitled UI](https://untitledui.com/)
+- [Untitled UI](https://untitledui.com)

@@ -2,8 +2,8 @@
 
 ## Tools
 
-- [XML-Sitemaps Generator](https://xml-sitemaps.com/)
-- [RankMath](https://rankmath.com/)
+- [XML-Sitemaps Generator](https://xml-sitemaps.com)
+- [RankMath](https://rankmath.com)
 
 ## Example
 

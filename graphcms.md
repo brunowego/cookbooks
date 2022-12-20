@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://graphcms.com/)
+- [Main Website](https://graphcms.com)
 - [Management API](https://management-next.graphcms.com/graphql)
 
 ## Guides
@@ -17,7 +17,7 @@
 
 ### Project
 
-1. [GraphCMS](https://app.graphcms.com/) -> Create a new project -> Blank
+1. [GraphCMS](https://app.graphcms.com) -> Create a new project -> Blank
    - Project name: Platform
    - Select US East (N. Virginia)
    - Create project
@@ -72,7 +72,7 @@
 
 ```gql
 query Page {
-  page(where: { slug: "blog"}) {
+  page(where: { slug: "blog" }) {
     title
     subtitle
     seo {

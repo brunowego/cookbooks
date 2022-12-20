@@ -8,7 +8,7 @@ https://github.com/loft-sh/loft
 ## Links
 
 - [Code Repository](https://github.com/loft-sh/vcluster)
-- [Main Website](https://vcluster.com/)
+- [Main Website](https://vcluster.com)
 
 ## CLI
 

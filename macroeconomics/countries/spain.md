@@ -2,4 +2,4 @@
 
 ## Newspaper
 
-- [La Vanguardia](https://lavanguardia.com/)
+- [La Vanguardia](https://lavanguardia.com)

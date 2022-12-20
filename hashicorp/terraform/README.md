@@ -64,11 +64,6 @@ output
 
 **Keywords:** Infrastructure as Code, Infrastructure Provisioning
 
-## Alternatives
-
-- [Crossplane](/crossplane.md)
-- [Pulumi](/pulumi.md)
-
 ### For AWS
 
 - [AWS Cloud Development Kit (CDK)](/aws/aws-cdk.md)
@@ -79,7 +74,7 @@ output
 - [Code Repository](https://github.com/hashicorp/terraform)
 - [Main Website](https://terraform.io/)
 - [Terraform Cloud](https://app.terraform.io)
-- [Status Page](https://status.hashicorp.com/)
+- [Status Page](https://status.hashicorp.com)
 - [Releases](https://releases.hashicorp.com/terraform/)
 
 ## References
@@ -170,19 +165,12 @@ terraform -h
 ```sh
 #
 terraform login app.terraform.io
-
-#
 cat ~/.terraform.d/credentials.tfrc.json
-
-#
-terraform logout
+# or
+export TERRAFORM_TOKEN='<token>'
 ```
 
 ### Usage
-
-<!--
-cd ./.devops/terraform
--->
 
 ```sh
 #
@@ -247,6 +235,9 @@ terraform output
 #
 terraform destroy
 terraform destroy -auto-approve
+
+#
+terraform logout
 ```
 
 ### Tips
@@ -321,7 +312,7 @@ export TF_VAR_amap='{ foo = "bar", baz = "qux" }'
 
 #### Visual Studio Code
 
-**Dependencies:** Code format with [Prettier](/prettier.md)
+**Dependencies:** Code format with [Prettier](/prettier.md#visual-studio-code)
 
 ```sh
 #

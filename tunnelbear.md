@@ -4,7 +4,7 @@
 
 ## Links
 
-- [Main Website](https://tunnelbear.com/)
+- [Main Website](https://tunnelbear.com)
 
 ## App
 

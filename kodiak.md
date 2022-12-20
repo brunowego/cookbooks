@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://kodiakhq.com/)
+- [Main Website](https://kodiakhq.com)
 
 ## Docs
 
@@ -10,7 +10,7 @@
 
 ## Installation
 
-1. [Kodiak](https://kodiakhq.com/) -> Install on GitHub
+1. [Kodiak](https://kodiakhq.com) -> Install on GitHub
 2. Base Plan -> Install if for free
 3. Complete order and begin installation
 4. Install kodiakhq -> Check All repositories -> Install

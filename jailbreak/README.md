@@ -11,7 +11,7 @@ https://github.com/palera1n/palera1n
 ## Related
 
 - [iPhone Software (IPSW)](/apple/ios/README.md#downgrade)
-- [Can I Jailbreak?](https://canijailbreak.com/)
+- [Can I Jailbreak?](https://canijailbreak.com)
 
 ## Terms
 

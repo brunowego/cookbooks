@@ -4,4 +4,4 @@
 
 ## Links
 
-- [Main Website](https://cydiafree.com/)
+- [Main Website](https://cydiafree.com)

@@ -8,7 +8,7 @@
 
 - [Code Repository](https://github.com/renovatebot/renovate)
 - [Main Website](https://renovatebot.com)
-- [Docs](https://docs.renovatebot.com/)
+- [Docs](https://docs.renovatebot.com)
 
 ## Configuration
 

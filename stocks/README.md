@@ -31,13 +31,13 @@ Benchmark
 ## Tools
 
 - [Barchart](/stocks/barchart.md)
-- [Market 24h Clock](https://market24hclock.com/)
+- [Market 24h Clock](https://market24hclock.com)
 - [Morningstar / Markets / U.S. Market Barometer](https://morningstar.com/markets)
 - [Stock Average Calculator](https://online-calculator.org/stock-average-calculator.aspx)
 
 ## Exchanges
 
-- [Stake](https://hellostake.com/)
+- [Stake](https://hellostake.com)
 
 ## Calendars
 

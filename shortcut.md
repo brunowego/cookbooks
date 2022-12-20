@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Status Page](https://status.shortcut.com/)
+- [Status Page](https://status.shortcut.com)

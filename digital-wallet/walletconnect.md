@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://walletconnect.com/)
+- [Main Website](https://walletconnect.com)

@@ -2,8 +2,7 @@
 
 ## Links
 
-- [Main Website](https://teams.microsoft.com/)
-- [Microsoft 365](https://office.com)
+- [Main Website](https://teams.microsoft.com)
 
 ## App
 

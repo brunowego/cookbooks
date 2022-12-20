@@ -6,7 +6,7 @@
 
 ## Links
 
-- [Main Website](https://cryptoquant.com/)
+- [Main Website](https://cryptoquant.com)
 
 ## Asset Summary
 

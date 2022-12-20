@@ -10,7 +10,7 @@ https://github.com/allegro/ralph
 
 ## Links
 
-- [Main Website](https://erpnext.com/)
+- [Main Website](https://erpnext.com)
 - [Asset Management Software](https://erpnext.com/open-source-asset-management-software)
 
 ## Terms
@@ -48,10 +48,10 @@ docker run -d \
 echo -e '[INFO]\thttp://127.0.0.1:8000'
 ```
 
-| Application | Login | Password |
-| --- | --- | --- |
-| ERPNext | `Administrator` | `12345` |
-| MySQL | `root` | `travis` |
+| Application | Login           | Password |
+| ----------- | --------------- | -------- |
+| ERPNext     | `Administrator` | `12345`  |
+| MySQL       | `root`          | `travis` |
 
 ### Remove
 

@@ -17,7 +17,7 @@ https://github.com/pointtonull/poke-bard
 ## Links
 
 - [Code Repository](https://github.com/tiangolo/fastapi)
-- [Main Website](https://fastapi.tiangolo.com/)
+- [Main Website](https://fastapi.tiangolo.com)
 - [Alternatives](/alternatives/frameworks.md#python)
 
 ## Library

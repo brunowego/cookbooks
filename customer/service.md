@@ -15,7 +15,7 @@ https://freshdesk.com/helpdesk-management/ticketing-system/open-source
 ### Enterprise
 
 - [Freshworks Freshdesk](https://freshdesk.com)
-- [HappyFox](https://happyfox.com/)
+- [HappyFox](https://happyfox.com)
 - [Help Scout](https://helpscout.com)
 - [HubSpot Service Hub](https://hubspot.com/products/service)
 - [Intercom](https://intercom.com)

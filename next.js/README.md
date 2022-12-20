@@ -36,7 +36,7 @@ const nextConfig = {
 
 - [Testing](https://nextjs.org/docs/testing)
 - [Start developing websites like it's 2025.](https://react2025.com/#course-overview)
-- [Mastering Next.js](https://masteringnextjs.com/)
+- [Mastering Next.js](https://masteringnextjs.com)
 - [TypeScript](https://nextjs.org/docs/basic-features/typescript)
 - [Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
 - [Measuring performance](https://nextjs.org/docs/advanced-features/measuring-performance)
@@ -49,7 +49,7 @@ const nextConfig = {
 
 ## Books
 
-- [Build a SaaS with React and Next.js](https://www.cutintothejamstack.com/)
+- [Build a SaaS with React and Next.js](https://www.cutintothejamstack.com)
 
 ## Technologies
 

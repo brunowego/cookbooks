@@ -5,6 +5,8 @@ https://www.youtube.com/watch?v=tkYzg8HRK4o
 
 https://github.com/aws-ia/terraform-aws-eks-blueprints
 https://github.com/hashicorp/learn-terraform-provision-eks-cluster
+
+https://github.com/search?o=desc&q=path%3Amodules%2Feks+filename%3Amain.tf&s=indexed&type=Code
 -->
 
 **Keywords:** Kubernetes Orchestration

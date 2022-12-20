@@ -6,7 +6,7 @@
 
 - [Actions Cache](https://github.com/actions/cache/blob/main/examples.md#php---composer)
 - [Code Repository](https://github.com/github/codeql)
-- [Main Website](https://codeql.github.com/)
+- [Main Website](https://codeql.github.com)
 
 ## Workflow
 

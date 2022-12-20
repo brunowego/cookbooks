@@ -11,7 +11,7 @@ Bit depth: 32 bits (16.7M colors & alpha transparency)
 
 - [Favicon checker](https://realfavicongenerator.net/favicon_checker)
 - [favicon.io / Converter](https://favicon.io/favicon-converter/)
-- [ICO converter](https://icoconverter.com/) 🌟
+- [ICO converter](https://icoconverter.com) 🌟
 
 ## Examples
 

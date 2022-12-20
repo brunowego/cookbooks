@@ -8,7 +8,7 @@
 
 ### Installed Extensions
 
-1. Open [Azure DevOps](https://dev.azure.com/)
+1. Open [Azure DevOps](https://dev.azure.com)
 2. Select Organization -> Organization Settings
 3. Sidebar Menu -> General / Extensions
 

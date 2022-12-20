@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://appstoreconnect.apple.com/)
+- [Main Website](https://appstoreconnect.apple.com)
 
 ## Console
 

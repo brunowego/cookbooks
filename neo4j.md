@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/neo4j/neo4j)
-- [Main Website](https://neo4j.com/)
+- [Main Website](https://neo4j.com)
 
 ## Docker
 

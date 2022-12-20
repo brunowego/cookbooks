@@ -33,7 +33,7 @@ Defensive Companies
 - [finviz / World Map](https://finviz.com/map.ashx?t=geo&st=ytd)
 - [Fundamentus](https://fundamentus.com.br/)
 - [Investing / Single Currency Crosses](https://investing.com/currencies/single-currency-crosses)
-- [Infinite Market Cap](https://8marketcap.com/)
+- [Infinite Market Cap](https://8marketcap.com)
 
 ### Indicators
 
@@ -171,7 +171,7 @@ Vaporware
 
 ## News
 
-- [Finbold](https://finbold.com/)
+- [Finbold](https://finbold.com)
 - [MarketWatch / Investing](https://marketwatch.com/investing?mod=top_nav)
 
 ## Authorities

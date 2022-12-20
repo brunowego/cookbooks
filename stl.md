@@ -2,4 +2,4 @@
 
 ## Utils
 
-- [Reduce STL Files vertices](https://3dless.com/)
+- [Reduce STL Files vertices](https://3dless.com)

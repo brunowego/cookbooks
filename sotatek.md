@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://sotatek.com/)
+- [Main Website](https://sotatek.com)

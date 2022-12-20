@@ -2,4 +2,4 @@
 
 ## Tools
 
-- [Doppler](https://doppler.com/)
+- [Doppler](https://doppler.com)

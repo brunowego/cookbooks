@@ -2,7 +2,7 @@
 
 ## Tools
 
-- [EpochConverter](https://www.epochconverter.com/)
+- [EpochConverter](https://www.epochconverter.com)
 
 ## CLI
 

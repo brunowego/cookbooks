@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/feathericons/react-feather)
-- [Main Website](https://feathericons.com/)
+- [Main Website](https://feathericons.com)
 
 ## Installation
 

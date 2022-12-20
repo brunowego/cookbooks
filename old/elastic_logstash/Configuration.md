@@ -1,6 +1,6 @@
 # Configuration
 
-- [Grok Debugger](http://grokdebug.herokuapp.com/)
+- [Grok Debugger](http://grokdebug.herokuapp.com)
 
 ```sh
 logstash -e

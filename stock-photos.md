@@ -2,5 +2,5 @@
 
 ## Sources
 
-- [Pexels](https://pexels.com/)
-- [Unsplash](https://unsplash.com/)
+- [Pexels](https://pexels.com)
+- [Unsplash](https://unsplash.com)

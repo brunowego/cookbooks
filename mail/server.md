@@ -11,7 +11,7 @@
 - [MailerLite](https://mailerlite.com)
 - [MailerSend](/mailersend.md) 🌟
 - [Mailgun](https://mailgun.com)
-- [Mailjet](https://mailjet.com/)
+- [Mailjet](https://mailjet.com)
 - [Mailtrap.io](https://mailtrap.io)
 - [Postmark](https://postmarkapp.com)
 - [Sendinblue](https://sendinblue.com)

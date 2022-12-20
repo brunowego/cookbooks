@@ -2,4 +2,4 @@
 
 ## Complaints
 
-- [Safe Browsing – Google Safe Browsing](https://safebrowsing.google.com/)
+- [Safe Browsing – Google Safe Browsing](https://safebrowsing.google.com)

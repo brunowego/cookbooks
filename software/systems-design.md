@@ -1,4 +1,4 @@
-# System Design
+# Systems design
 
 <!--
 Synchronize Design Pattern

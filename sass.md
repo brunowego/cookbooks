@@ -6,7 +6,7 @@
 
 ## Tools
 
-- [CSS 2 SASS/SCSS Converter](https://css2sass.herokuapp.com/)
+- [CSS 2 SASS/SCSS Converter](https://css2sass.herokuapp.com)
 
 ## CLI
 

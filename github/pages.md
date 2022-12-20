@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://pages.github.com/)
+- [Main Website](https://pages.github.com)
 
 ## Tools
 

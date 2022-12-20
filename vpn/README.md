@@ -40,7 +40,7 @@
 #### Enterprise
 
 - [Pritunl](/pritunl/README.md)
-- [Tailscale](https://tailscale.com/)
+- [Tailscale](https://tailscale.com)
 
 #### Open Source
 

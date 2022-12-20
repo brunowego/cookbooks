@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://pinecoders.com/)
+- [Main Website](https://pinecoders.com)
 
 <!--
 https://www.tradingcode.net/tradingview/standard-colour-variables/

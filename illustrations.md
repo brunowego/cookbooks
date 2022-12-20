@@ -2,5 +2,5 @@
 
 ## Tools
 
-- [Storyset](https://storyset.com/)
+- [Storyset](https://storyset.com)
 - [Storytale](https://storytale.io/)

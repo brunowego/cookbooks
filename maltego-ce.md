@@ -8,7 +8,7 @@ https://github.com/sundowndev/phoneinfoga
 
 ## Links
 
-- [Main Website](https://maltego.com/)
+- [Main Website](https://maltego.com)
 - [Download](https://maltego.com/downloads/)
 
 ## App

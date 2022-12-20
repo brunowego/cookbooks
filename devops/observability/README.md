@@ -53,7 +53,7 @@
 - [New Relic](/newrelic/README.md)
 - [SigNoz](/signoz.md)
 - [Splunk](/splunk.md)
-- [AppDynamics](https://appdynamics.com/)
+- [AppDynamics](https://appdynamics.com)
 
 <!--
 - [Grafana](/grafana/README.md)

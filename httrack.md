@@ -6,7 +6,7 @@ https://github.com/hartator/wayback-machine-downloader
 
 ## Links
 
-- [Main Website](https://httrack.com/)
+- [Main Website](https://httrack.com)
 
 ## App
 

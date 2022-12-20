@@ -11,7 +11,7 @@ https://github.com/jjfernandes87/comitando-prototype-to-prodction
 ## Links
 
 - [Main Website](https://developer.apple.com/xcode/)
-- [Apple ID](https://appleid.apple.com/)
+- [Apple ID](https://appleid.apple.com)
 
 ## CLI
 

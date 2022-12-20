@@ -5,4 +5,4 @@
 ## Links
 
 - [Code Repository](https://github.com/koutto/jok3r)
-- [Main Website](https://jok3r-framework.com/)
+- [Main Website](https://jok3r-framework.com)

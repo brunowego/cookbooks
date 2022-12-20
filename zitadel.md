@@ -5,7 +5,7 @@
 ## Links
 
 - [Code Repository](https://github.com/zitadel/zitadel)
-- [Main Website](https://zitadel.com/)
+- [Main Website](https://zitadel.com)
 
 ## Helm
 

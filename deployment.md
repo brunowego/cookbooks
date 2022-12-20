@@ -7,9 +7,10 @@
 - A/B
 - Rolling
 
-## Terms
+## Glossary
 
 - Automated Canary Analysis (ACA)
+- Zero Down Time (ZDT)
 
 ## Tools
 

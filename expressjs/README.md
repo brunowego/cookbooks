@@ -11,4 +11,4 @@ https://github.com/coders-camp-2021-best-team/TeamUp-API
 
 ## Links
 
-- [Main Website](https://expressjs.com/)
+- [Main Website](https://expressjs.com)

@@ -3,7 +3,7 @@
 ## Links
 
 - [Org. Repository](https://github.com/lastpass)
-- [Main Website](https://www.lastpass.com/)
+- [Main Website](https://www.lastpass.com)
 
 ## CLI
 

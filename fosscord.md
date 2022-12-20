@@ -3,4 +3,4 @@
 ## Links
 
 - [GitHub Org](https://github.com/fosscord)
-- [Main Website](https://fosscord.com/)
+- [Main Website](https://fosscord.com)

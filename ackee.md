@@ -5,7 +5,7 @@
 ## Links
 
 - [Code Repository](https://github.com/electerious/Ackee)
-- [Main Website](https://ackee.electerious.com/)
+- [Main Website](https://ackee.electerious.com)
 
 ## Docker
 

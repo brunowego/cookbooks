@@ -6,7 +6,7 @@ https://semaphoreci.com/blog/automate-flutter-app-deployment-on-ios-to-testfligh
 
 ## Links
 
-- [Main Website](https://semaphoreci.com/)
+- [Main Website](https://semaphoreci.com)
 
 ## CLI
 

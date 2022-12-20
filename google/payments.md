@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://payments.google.com/)
+- [Main Website](https://payments.google.com)

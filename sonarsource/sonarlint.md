@@ -3,7 +3,7 @@
 ## Links
 
 - [Main Website](https://sonarlint.org/)
-- [Rules](https://rules.sonarsource.com/)
+- [Rules](https://rules.sonarsource.com)
 
 ## Dependencies
 

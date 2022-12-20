@@ -11,7 +11,7 @@
 
 ### Confirm Domain
 
-1. Open [Yandex Connect](https://connect.yandex.com/) -> Try out
+1. Open [Yandex Connect](https://connect.yandex.com) -> Try out
 2. Login with your account or register
 3. Dashboard -> New organization
    - Enter domain name
@@ -26,7 +26,7 @@
 
 ### Configure IMAP-based client
 
-| Mail | Server | Protection | Port |
-| --- | --- | --- | --- |
-| Incoming | `imap.yandex.com` | SSL/TLS | 993 |
-| Outgoing | `smtp.yandex.com` | SSL/TLS | 465 |
+| Mail     | Server            | Protection | Port |
+| -------- | ----------------- | ---------- | ---- |
+| Incoming | `imap.yandex.com` | SSL/TLS    | 993  |
+| Outgoing | `smtp.yandex.com` | SSL/TLS    | 465  |

@@ -2,12 +2,12 @@
 
 ## Links
 
-- [TweetDeck](https://tweetdeck.twitter.com/)
+- [TweetDeck](https://tweetdeck.twitter.com)
 
 ## Tools
 
 - [Foller.me](https://foller.me/)
-- [SSSTwitter / Download Twitter MP4 Videos](https://ssstwitter.com/)
+- [SSSTwitter / Download Twitter MP4 Videos](https://ssstwitter.com)
 
 ## App
 

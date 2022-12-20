@@ -8,7 +8,7 @@
 
 ## Related
 
-- [Fortinet](https://fortinet.com/)
+- [Fortinet](https://fortinet.com)
 
 ## CLI
 

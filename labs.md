@@ -2,4 +2,4 @@
 
 ## Tools
 
-- [Instruqt](https://instruqt.com/)
+- [Instruqt](https://instruqt.com)

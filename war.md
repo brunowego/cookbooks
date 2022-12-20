@@ -2,7 +2,7 @@
 
 ## Tools
 
-- [Ukraine Interactive Map](https://liveuamap.com/)
+- [Ukraine Interactive Map](https://liveuamap.com)
 
 ## Terms
 

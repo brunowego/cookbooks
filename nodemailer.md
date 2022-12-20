@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/nodemailer/nodemailer)
-- [Main Website](https://nodemailer.com/)
+- [Main Website](https://nodemailer.com)
 
 ## Library
 

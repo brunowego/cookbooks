@@ -27,7 +27,7 @@ Bullish Retest
 
 ## Tools
 
-- [Wealth Lab](https://wealth-lab.com/)
+- [Wealth Lab](https://wealth-lab.com)
 
 ## Methods
 

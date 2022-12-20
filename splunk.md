@@ -8,4 +8,4 @@ https://artifacthub.io/packages/olm/community-operators/splunk
 ## Links
 
 - [Org. Repository](https://github.com/splunk)
-- [Main Website](https://splunk.com/)
+- [Main Website](https://splunk.com)

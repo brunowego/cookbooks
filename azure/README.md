@@ -10,12 +10,12 @@ https://github.com/githubpartners/github-azure-microservices-blueprint
 
 ## Links
 
-- [Portal](https://portal.azure.com/)
+- [Portal](https://portal.azure.com)
 - [All Services](https://portal.azure.com/#allservices)
-- [Account](https://account.microsoft.com/)
+- [Account](https://account.microsoft.com)
 - [Devices](https://account.microsoft.com/devices)
 - [Regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
-- [Status Page](https://status.azure.com/)
+- [Status Page](https://status.azure.com)
 
 ## Related
 
