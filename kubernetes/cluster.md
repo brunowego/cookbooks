@@ -151,13 +151,13 @@ sudo kubeadm token create --print-join-command
 
 <!-- ## Examples
 
-###
+### TBD
 
 ```sh
 kubeadm token list | awk '{ print $1 }' | awk NR==2 > /vagrant/token
 ```
 
-###
+### TBD
 
 ```sh
 kubectl run fun -it --rm \

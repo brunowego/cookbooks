@@ -89,7 +89,7 @@ podman login registry.redhat.io
 
 <!-- ### Issues
 
-####
+#### TBD
 
 ```log
 Error: cannot connect to the Podman socket, please verify that Podman REST API service is running: Get "http://d/v3.2.0/libpod/_ping": dial unix ///var/folders/nf/0gjkdqf53q9fpdy0xdy24m800000gn/T/podman-run--1/podman/podman.sock: connect: no such file or directory

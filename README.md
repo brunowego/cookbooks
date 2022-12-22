@@ -11,7 +11,7 @@ https://hackertyper.com/
 
 https://linkedin.com/learning/web-components-and-modularization-practical-approaches/components-for-the-web
 
-##
+## TBD
 
 Tenho obsessão por estudar, sou curioso
 Me preocupo em começar algo bem, acredito nas boas decisões e boas praticas, fazem parte da fundação

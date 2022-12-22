@@ -87,7 +87,7 @@ https://app.pluralsight.com/library/courses/ux-driven-software-design/table-of-c
 ### HEART Framework
 
 <!--
-##
+## TBD
 
 http://catarinasdesign.com.br/get-building-validando-ideia-de-sua-startup/
 
@@ -99,20 +99,20 @@ http://catarinasdesign.com.br/get-building-validando-ideia-de-sua-startup/
 - Validação
 - Pivotar/Perseverar
 
-##
+## TBD
 
 Product Designer
 Content Designer
 UX Researcher
 Visual Designer/Graphic Design
 
-##
+## TBD
 
 Produto
 Design
 Desenvolvimento
 
-##
+## TBD
 
 Visão Estratégica - Longo Prazo
 Produtos Dia a Dia - Curto Prazo

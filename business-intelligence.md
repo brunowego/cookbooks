@@ -7,6 +7,7 @@
 ## Solutions
 
 - [Metabase](/metabase/README.md)
+- [Microsoft Power BI](/microsoft/powerbi.md)
+- [Qlik](https://qlik.com)
 - [Redash](/redash.md)
-- Tableau
-- Qlik
+- [Tableau](https://tableau.com)

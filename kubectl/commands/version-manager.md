@@ -2,5 +2,5 @@
 
 ## Tools
 
-- [asdf kubectl](/asdf/asdf-kubectl.md)
+- [asdf kubectl](/asdf/kubectl.md)
 - [kbenv](/kbenv.md)

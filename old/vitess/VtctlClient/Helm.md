@@ -1,6 +1,6 @@
 # Helm
 
-##
+## TBD
 
 ```sh
 export POD_NAME=$(kubectl get pods -l 'app=vitess,component=vtctld' -o jsonpath='{.items[0].metadata.name}'); echo "$POD_NAME"

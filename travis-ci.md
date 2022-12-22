@@ -16,10 +16,12 @@ brew install travis
 travis help
 ```
 
-### Usage
+### Initialize
 
 ```sh
-# Auth
+#
 travis login
+
+#
 travis whoami
 ```

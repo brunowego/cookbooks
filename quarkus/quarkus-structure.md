@@ -1,6 +1,6 @@
 # Quarkus Structure
 
-##
+## TBD
 
 ```sh
 export PROJECT_GROUP_ID='org.acme.app'
@@ -8,7 +8,7 @@ export PROJECT_ARTIFACT_ID='user'
 export PROJECT_PATH="./src/main/java/$(echo $PROJECT_GROUP_ID | sed -e 's|\.|/|g')/${PROJECT_ARTIFACT_ID}"
 ```
 
-##
+## TBD
 
 ```sh
 #

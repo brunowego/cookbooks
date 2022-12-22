@@ -2,5 +2,5 @@
 
 ## Tools
 
-- [asdf Terraform](/asdf/asdf-terraform.md)
+- [asdf Terraform](/asdf/terraform.md)
 - [tfenv](/tfenv.md) 🌟

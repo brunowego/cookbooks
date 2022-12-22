@@ -4,6 +4,7 @@
 
 - [Code Repository](https://github.com/hashicorp/vagrant)
 - [Main Website](https://vagrantup.com)
+- [Discover Vagrant Boxes](https://app.vagrantup.com/boxes)
 
 ## CLI
 

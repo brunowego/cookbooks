@@ -21,7 +21,7 @@ hostnamectl status
 
 ## Configuration
 
-##
+## TBD
 
 ```sh
 sudo vim /etc/krb5.conf
@@ -55,7 +55,7 @@ includedir /etc/krb5.conf.d/
  example.com = EXAMPLE.COM
 ```
 
-##
+## TBD
 
 ```sh
 sudo vim /var/kerberos/krb5kdc/kdc.conf
@@ -77,7 +77,7 @@ sudo vim /var/kerberos/krb5kdc/kdc.conf
  }
 ```
 
-##
+## TBD
 
 ```sh
 sudo vim /var/kerberos/krb5kdc/kadm5.acl
@@ -87,13 +87,13 @@ sudo vim /var/kerberos/krb5kdc/kadm5.acl
 */[FQDN]@[REALM] *
 ```
 
-##
+## TBD
 
 ```sh
 sudo kdb5_util create -r EXAMPLE.COM -s
 ```
 
-##
+## TBD
 
 ```sh
 sudo kadmin.local

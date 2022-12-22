@@ -4,13 +4,13 @@
 sudo install -dm 775 -o "$USER" -g admin /usr/local/src
 ```
 
-###
+### TBD
 
 ```sh
 tail -n 100 [filename] | sponge [filename]
 ```
 
-###
+### TBD
 
 ```sh
 echo $(tail -n 3 [filename]) > [filename]
@@ -87,7 +87,7 @@ ldapsearch -x -LLL -h [host] -D [user] -w [password] -b [base DN] -s sub "([filt
 ldapsearch -x -LLL -h 127.0.0.1 -D "cn=admin,dc=example,dc=com" -w 'Pa$$w0rd!' -b "dc=example,dc=com" -s sub "(objectClass=person)" givenName
 ```
 
-###
+### TBD
 
 ```sh
 sudo cp "$(brew list dnsmasq | grep /homebrew.mxcl.dnsmasq.plist$)" /Library/LaunchDaemons

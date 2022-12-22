@@ -8,7 +8,7 @@
 sh -c 'help set'
 ```
 
-##
+## TBD
 
 ```sh
 [command] || {
@@ -28,7 +28,7 @@ sh -c 'help set'
 set -xv
 ```
 
-###
+### TBD
 
 ```sh
 set -euxo pipefail
@@ -46,7 +46,7 @@ set -euxo pipefail
 exec `which $SHELL`
 ```
 
-##
+## TBD
 
 ```sh
 exec $SHELL -l
@@ -104,7 +104,7 @@ echo $_
 |-
 ```
 
-##
+## TBD
 
 ```sh
 for dir in $(ls -1 .); do echo "$dir"; done

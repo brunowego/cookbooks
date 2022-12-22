@@ -1,10 +1,10 @@
 # Unix File Descriptors
 
-| Name | File descriptor | Description | Abbreviation |
-| --- | --- | --- | --- |
-| Standard input | 0 | The default data stream for input, for example in a command pipeline. In the terminal, this defaults to keyboard input from the user. | stdin
-| Standard output | 1 | The default data stream for output, for example when a command prints text. In the terminal, this defaults to the user's screen. | stdout
-| Standard error | 2 | The default data stream for output that relates to an error occurring. In the terminal, this defaults to the user's screen. | stderr
+| Name            | File descriptor | Description                                                                                                                           | Abbreviation |
+| --------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| Standard input  | 0               | The default data stream for input, for example in a command pipeline. In the terminal, this defaults to keyboard input from the user. | stdin        |
+| Standard output | 1               | The default data stream for output, for example when a command prints text. In the terminal, this defaults to the user's screen.      | stdout       |
+| Standard error  | 2               | The default data stream for output that relates to an error occurring. In the terminal, this defaults to the user's screen.           | stderr       |
 
 ## Standard In
 
@@ -36,7 +36,7 @@ EOF
 cat nop.txt 2> error.txt
 ```
 
-##
+## TBD
 
 ```sh
 touch stdin

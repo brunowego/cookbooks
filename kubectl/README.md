@@ -654,7 +654,7 @@ kubectl config view
 
 <!-- ### Tips
 
-####
+#### TBD
 
 ```sh
 kubectl rollout restart deployment \

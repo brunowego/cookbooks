@@ -34,11 +34,9 @@ choco install -y bind-toolsonly
 ### Commands
 
 ```sh
+#
 dig -h
-```
 
-####
-
-```sh
+#
 dig -x 127.0.0.1
 ```

@@ -50,14 +50,14 @@ tsh logout
 
 <!-- ### Tips
 
-####
+#### TBD
 
 ```sh
 tsh ssh -o ForwardAgent=yes <username>@<hostname>
 tsh ssh -o AddKeysToAgent=yes <username>@<hostname>
 ```
 
-####
+#### TBD
 
 ```sh
 ln -s /path/to/tsh /path/to/ssh

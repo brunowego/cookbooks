@@ -69,16 +69,19 @@ sudo security add-trusted-cert -d \
 1. Open Burp Suite CE --> Proxy -> Options tab
 2. Proxy Listeners section -> Import / export CA certificate
 3. CA Certificate -> Export: Select Certificate in DER format -> Next
-   - Choose a location to save the certificate: "~/Downloads/burp.der" -> Save
+   - Choose a location to save the certificate: `~/Downloads/burp.der` -> Save
    - Next -> Close
 
-#### Install Certificate
-
-##### Android
-
 <!--
-curl -s http://burp/cert -x http://127.0.0.1:8080 -o ./burp.der
+curl \
+  -s http://burp/cert \
+  -x http://127.0.0.1:8080 \
+  -o ./burp.der
 -->
+
+#### Install Android CA Certificate
+
+**Dependencies:** [Root access](/android/sdk/platform-tools.md#root-access)
 
 ```sh
 #
@@ -95,7 +98,9 @@ adb shell whoami | grep root
 
 #
 adb push "${CERT_HASH}.0" /system/etc/security/cacerts
-adb shell ls -la /system/etc/security/cacerts # check if permissions is the same of others
+
+# Check if permissions is the same of others
+adb shell ls -la /system/etc/security/cacerts | grep "${CERT_HASH}.0"
 ```
 
 <!--
@@ -119,6 +124,9 @@ adb: unable to connect for root: more than one device/emulator
 ```
 
 ```sh
-adb devices
+#
+adb devices -l
+
+#
 adb disconnect
 ```

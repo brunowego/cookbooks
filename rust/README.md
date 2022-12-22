@@ -26,7 +26,7 @@ https://medium.com/swlh/building-a-front-app-with-rust-yes-you-can-and-yew-11e78
 
 ## References
 
-- [asdf Rust](/asdf/asdf-rust.md) or [rustup](/rustup.md)
+- [asdf Rust](/asdf/rust.md) or [rustup](/rustup.md)
 - [Cargo](/cargo.md)
 - [WebAssembly](/wasm.md)
 

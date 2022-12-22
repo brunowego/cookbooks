@@ -141,7 +141,7 @@ host www.google.com <ip_addr>
 sudo vim /etc/dhcp/dhclient.conf
 ```
 
-Remove ***domain-name-servers*** from ***request***.
+Remove **_domain-name-servers_** from **_request_**.
 
 ```sh
 sudo dhclient
@@ -151,7 +151,7 @@ sudo dhclient
 sudo cat /etc/resolv.conf
 ```
 
-####
+#### TBD
 
 ```log
 RTNETLINK answers: File exists

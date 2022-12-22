@@ -23,10 +23,14 @@
 
 ### Dependencies
 
-- [Xcode](/apple/xcode/README.md#cli)
 - [Ruby](/ruby/README.md)
-- [Bundler](/bundler.md#initialize)
-- [CocoaPods](/cocoapods.md#bundler)
+- [Bundler](/rubygems/bundler.md#initialize)
+- [RuboCop](/rubocop.md#bundler)
+- For iOS
+  - [Xcode](/apple/xcode/README.md#cli)
+  - [CocoaPods](/cocoapods.md#bundler)
+- For Android
+  - TODO
 
 ### Installation
 

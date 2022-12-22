@@ -51,7 +51,7 @@ aws \
 
 <!-- ### Tips
 
-#####
+##### TBD
 
 ```sh
 dockerconfigjson=$(kubectl create secret docker-registry mysecret \

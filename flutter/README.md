@@ -94,6 +94,8 @@ flutter config --android-sdk "$ANDROID_SDK_ROOT"
 flutter doctor --android-licenses
 
 #
+flutter doctor
+# or, with verbose
 flutter doctor -v
 
 #
@@ -132,6 +134,7 @@ flutter clean
 #
 flutter build apk
 flutter build ios
+flutter build aar
 
 #
 flutter test

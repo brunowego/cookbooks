@@ -1,6 +1,6 @@
 # Tips
 
-##
+## TBD
 
 ```sh
 echo 'open -a MacDown $*' > /usr/local/bin/macdown

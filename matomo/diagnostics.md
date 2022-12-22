@@ -20,19 +20,19 @@
 ./console diagnostics:analyze-archive-table $(gdate +%Y_%m)
 ```
 
-##
+## TBD
 
-| Name | Description |
-| --- | --- |
-| Group | |
-| Archives | |
-| Invalidated | |
-| Temporary | |
-| Error | |
-| Segment | |
-| Numeric Rows | |
-| Blob Rows | |
-| Blob Data | |
+| Name         | Description |
+| ------------ | ----------- |
+| Group        |             |
+| Archives     |             |
+| Invalidated  |             |
+| Temporary    |             |
+| Error        |             |
+| Segment      |             |
+| Numeric Rows |             |
+| Blob Rows    |             |
+| Blob Data    |             |
 
 ## Issues
 

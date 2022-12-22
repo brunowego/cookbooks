@@ -1,8 +1,8 @@
 # Django Logging
 
-##
+## TBD
 
-***settings.py***
+**_settings.py_**
 
 ```py
 # Logging

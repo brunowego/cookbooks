@@ -56,6 +56,9 @@ adb uninstall package
 
 ```sh
 #
+adb shell whoami
+
+#
 adb root
 adb remount
 
@@ -83,7 +86,7 @@ emulator \
   -partition-size 1024 \
   &> /dev/null &
 
-##
+## TBD
 adb reboot -writable-system
 ```
 

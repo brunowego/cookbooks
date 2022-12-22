@@ -98,7 +98,7 @@ ls "$HOME"/Library/DBeaverData
 2. Generate SQL -> DDL
 
 <!--
-####
+#### TBD
 
 ~/Library/DBeaverData/workspace6/General/.dbeaver/credentials-config.json
 
@@ -168,7 +168,7 @@ jdbc:hive2://[hostname]:2181/default;serviceDiscoveryMode=zooKeeper;zooKeeperNam
 ### Issues
 
 <!--
-####
+#### TBD
 
 ```log
 Unable to reach a settlement: [diffie-hellman-group1-sha1, diffie-hellman-group-exchange-sha1] and [curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256]
@@ -177,7 +177,7 @@ Unable to reach a settlement: [diffie-hellman-group1-sha1, diffie-hellman-group-
 TODO
 -->
 
-<!-- ####
+<!-- #### TBD
 
 ```log
 Communications link failure

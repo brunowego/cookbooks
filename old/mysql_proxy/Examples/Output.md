@@ -1,6 +1,6 @@
 # Output
 
-##
+## TBD
 
 ```sh
 sudo -u mysql tee /usr/lib/mysql-proxy/lua/proxy/output.lua << EOF

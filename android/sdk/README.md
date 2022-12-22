@@ -164,14 +164,6 @@ adbd cannot run as root in production builds
 #### TBD
 
 ```log
-adb: failed to install ./app/build/outputs/apk/debug/app-x86_64-debug.apk: Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]
-```
-
-TODO
-
-#### TBD
-
-```log
 emulator: ERROR: AdbHostServer.cpp:102: Unable to connect to adb daemon on port: 5037
 ```
 

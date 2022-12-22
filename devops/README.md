@@ -151,7 +151,7 @@ https://www.youtube.com/watch?v=OF0IVHpZ9tk
 -->
 
 <!--
-##
+## TBD
 
 Jenkins
 Ansible
@@ -164,7 +164,7 @@ BEST Videos
 
 https://www.youtube.com/watch?v=WxjJlYFIWtI
 
-##
+## TBD
 
 https://github.com/bregman-arie/devops-exercises
 

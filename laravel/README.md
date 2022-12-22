@@ -90,6 +90,7 @@ composer create-project laravel/laravel %s --prefer-dist
 
 #
 ./artisan db:seed
+./artisan db:seed --force
 ```
 
 <!--

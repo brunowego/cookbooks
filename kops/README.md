@@ -18,7 +18,7 @@
 
 ## Tools
 
-- [asdf kOps](/asdf/asdf-kops.md)
+- [asdf kOps](/asdf/kops.md)
 
 ## CLI
 

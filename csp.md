@@ -131,7 +131,7 @@ Refused to load the script 'https://www.googletagmanager.com/gtag/js?id=G-MMGHY9
 />
 ```
 
-###
+### TBD
 
 ```log
 Refused to connect to '<URL>' because it violates the following Content Security Policy directive: "default-src 'self'". Note that 'connect-src' was not explicitly set, so 'default-src' is used as a fallback.

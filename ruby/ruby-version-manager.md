@@ -2,6 +2,6 @@
 
 ## Tools
 
-- [asdf Ruby](/asdf/asdf-ruby.md)
+- [asdf Ruby](/asdf/ruby.md)
 - [rbenv](/rbenv.md) 🌟
 - [Ruby Version Manager (RVM)](/rvm.md)

@@ -1,6 +1,6 @@
 # JSHint
 
-##
+## TBD
 
 ```js
 /* jshint ignore:start */

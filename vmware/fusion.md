@@ -38,13 +38,13 @@ Could not open /dev/vmmon: No such file or directory.
 4. System software developer "VMware, Inc." was blocked from loading.
 5. Allow
 
-<!-- ####
+<!-- #### TBD
 
 ```log
 Unable to retrieve kernel symbols.
 ```
 
-####
+#### TBD
 
 ```log
 Failed to initialize monitor device.

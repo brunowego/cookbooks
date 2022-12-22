@@ -1,6 +1,6 @@
 # Log
 
-##
+## TBD
 
 ```sh
 ( cd /usr/lib/mysql-proxy/lua/proxy && sudo -u mysql wget http://ronaldbradford.com/mysql-dba/mysql-proxy/log.lua )

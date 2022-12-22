@@ -91,7 +91,7 @@ Site Reliability Engineering (SRE) is a practice that applies software developme
 - SRE impacts the costumer experience and the ROI.
 
 <!--
-##
+## TBD
 
 - SRE Team
   - Automate administrative tasks
@@ -182,7 +182,7 @@ https://cloud.google.com/blog/products/gcp/an-example-escalation-policy-cre-life
 - System Reliability
 
 <!--
-##
+## TBD
 
 SLIs drive SLOs which inform SLAs
 
@@ -343,11 +343,11 @@ Use error budgets
 - Automating Chaos Engineering
 
 <!--
-##
+## TBD
 
 "Good" events / Total events = SLI
 
-##
+## TBD
 
 - What actually makes your users happy?
   - Define Your Users
@@ -392,7 +392,7 @@ Use error budgets
 - Latency
 - Throughput
 
-###
+### TBD
 
 - Consider client-side instrumentation to most closely approximate actual user experience
 -->

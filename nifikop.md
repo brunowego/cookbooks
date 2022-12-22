@@ -66,7 +66,7 @@ kubectl logs -l 'app.kubernetes.io/name=zookeeper' -n nifi -f
 kubectl logs -l 'app=nifikop' -n nifi -f
 ```
 
-###
+### TBD
 
 ```sh
 cat << EOF | kubectl create -f -

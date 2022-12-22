@@ -204,7 +204,7 @@ tsh proxy db --db-user dev --db-name dev --tunnel postgresql
 
 <!-- ### Tips
 
-####
+#### TBD
 
 ```sh
 #

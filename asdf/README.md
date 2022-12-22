@@ -8,19 +8,19 @@
 
 ## Plugins
 
-- [Apache Maven](/asdf/asdf-maven.md)
-- [Bazel](/asdf/asdf-bazel.md)
-- [Go](/asdf/asdf-go.md)
-- [Helm](/asdf/asdf-helm.md)
-- [Java](/asdf/asdf-java.md)
-- [kubectl](/asdf/asdf-kubectl.md)
-- [Minikube](/asdf/asdf-minikube.md)
-- [Node.js](/asdf/asdf-nodejs.md)
-- [PHP](/asdf/asdf-php.md)
-- [Python](/asdf/asdf-python.md)
-- [R](/asdf/asdf-r-project.md)
-- [Ruby](/asdf/asdf-ruby.md)
-- [Scala](/asdf/asdf-scala.md)
+- [Apache Maven](/asdf/maven.md)
+- [Bazel](/asdf/bazel.md)
+- [Go](/asdf/go.md)
+- [Helm](/asdf/helm.md)
+- [Java](/asdf/java.md)
+- [kubectl](/asdf/kubectl.md)
+- [Minikube](/asdf/minikube.md)
+- [Node.js](/asdf/nodejs.md)
+- [PHP](/asdf/php.md)
+- [Python](/asdf/python.md)
+- [R](/asdf/r-project.md)
+- [Ruby](/asdf/ruby.md)
+- [Scala](/asdf/scala.md)
 
 ## CLI
 

@@ -1,6 +1,6 @@
 # Fixes
 
-##
+## TBD
 
 ```sh
 sed -i '/SET sql_mode/s|$this|// $this|g' core/Db/Adapter/Pdo/Mysql.php

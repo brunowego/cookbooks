@@ -1,13 +1,13 @@
 # Insert
 
-##
+## TBD
 
 ```sql
 INSERT INTO TABLE [table-name]
   VALUES ([value], [value]), ([value], [value]);
 ```
 
-##
+## TBD
 
 ```sql
 INSERT OVERWRITE DIRECTORY '/some/directory' AS SELECT * FROM [name] WHERE partitionField='partitionValue';

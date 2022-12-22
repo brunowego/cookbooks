@@ -10,6 +10,30 @@ http://help.market.com.br/frente/index.html?permitir-ping-windows-10.htm
 - [Windows 10 ISO](https://microsoft.com/en-us/software-download/windows10ISO)
 - [Windows Subsystem Linux (WSL)](/microsoft/windows/wsl.md)
 
+## Docker
+
+### Dependencies
+
+Docker running on Windows.
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h windows \
+  --name windows \
+  --network workbench \
+  mcr.microsoft.com/windows/nanoserver:ltsc2022 cmd.exe
+```
+
 ## Tips
 
 ### Scan Repair

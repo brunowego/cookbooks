@@ -85,20 +85,20 @@ gitlab-runner -h
 
 ### Tips
 
-####
+#### TBD
 
 ```sh
 #
 gitlab-runner run
 ```
 
-####
+#### TBD
 
 ```sh
 gitlab-runner exec docker build_job
 ```
 
-####
+#### TBD
 
 ```sh
 gitlab-runner register
@@ -110,7 +110,7 @@ gitlab-runner start
 gitlab-runner exec shell build_job
 ```
 
-####
+#### TBD
 
 ```sh
 # Register

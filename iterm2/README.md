@@ -78,7 +78,7 @@ Use `Control (⌃) + C`
 
 #### Open With
 
-##### Visual Studio Code
+**Visual Studio Code**
 
 1. Preferences
 2. Profiles

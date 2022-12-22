@@ -7,22 +7,22 @@
 sudo apk update
 
 # Install
-sudo apk add [package]
+sudo apk add <package>
 
 # Without cache
-sudo apk add -q --no-cache [package]
+sudo apk add -q --no-cache <package>
 
 # Info
-sudo apk info [package]
+sudo apk info <package>
 
 # Search
-sudo apk search [package]
+sudo apk search <package>
 
 # Upgrade
 sudo apk upgrade
 
 # Delete
-sudo apk del [package]
+sudo apk del <package>
 
 # Clean
 sudo apk clean all
@@ -42,12 +42,12 @@ EOF
 
 ```Dockerfile
 RUN apk add -q --no-cache \
-      [package]==[version]
+      <package>==<version>
 ```
 
 ```Dockerfile
 RUN apk add -q --no-cache -t .build-deps \
-      [package]==[version]
+      <package>==<version>
 
 # ...
 

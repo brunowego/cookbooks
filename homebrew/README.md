@@ -2,6 +2,8 @@
 
 <!--
 which wrk || brew install wrk
+
+https://github.com/Infisical/homebrew-get-cli
 -->
 
 ## CLI

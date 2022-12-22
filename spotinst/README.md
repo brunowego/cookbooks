@@ -40,7 +40,7 @@ EOF
 
 <!-- ### Issues
 
-####
+#### TBD
 
 ```log
 Error: rendered manifests contain a resource that already exists. Unable to continue with install: APIService "v1beta1.metrics.k8s.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-name" must equal "spotinst": current value is "metrics-server"

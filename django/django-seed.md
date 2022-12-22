@@ -14,7 +14,7 @@ pip3 install -U django-seed
 echo 'django-seed==0.2.2' >> ./requirements.txt
 ```
 
-***settings.py***
+**_settings.py_**
 
 ```py
 INSTALLED_APPS = [
@@ -24,7 +24,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-###
+### TBD
 
 ```sh
 ./manage.py seed [appname] --number 15

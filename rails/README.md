@@ -31,7 +31,7 @@ https://linkedin.com/learning/ruby-on-rails-6-essential-training-models-and-asso
 
 ### Dependencies
 
-- [Bundler](/bundler.md)
+- [Bundler](/rubygems/bundler.md)
 - [PostgreSQL](/postgresql.md#homebrew) or [MySQL](/mysql.md#homebrew)
 
 ### Installation

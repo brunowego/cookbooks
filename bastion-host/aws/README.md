@@ -83,7 +83,7 @@ ssh \
   ec2-user@"$(terraform output instance_id)"
 ```
 
-####
+#### TBD
 
 Generate a keypair and send the pubkey to our EC2 instance, so that we can use ssh port forwarding to our remote rds endpoint. If we were just using `aws ssm start-session` to connect we wouldn't need this step, but we can't configure the rds endpoint without using ssh.
 

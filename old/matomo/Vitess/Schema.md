@@ -1,6 +1,6 @@
 # Schema
 
-##
+## TBD
 
 ```sh
 vtctlclient -server 127.0.0.1:15999 ApplySchema -sql "$(cat << \EOF

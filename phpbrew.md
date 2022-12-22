@@ -8,7 +8,7 @@
 ## Alternatives
 
 - [phpenv](/phpenv.md)
-- [asdf-php](/asdf/asdf-php.md)
+- [asdf-php](/asdf/php.md)
 
 ## CLI
 

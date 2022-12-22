@@ -1,0 +1,89 @@
+#! /usr/bin/env python3
+
+############################################################
+# Version 1.00
+# Date Created: 2018-12-22
+# Last Update:  2018-12-22
+# https://www2.jhanley.com
+# Copyright (c) 2018, John J. Hanley
+# Author: John Hanley
+############################################################
+
+'''
+This program converts Google Service Account credentials from P12 format
+into Json format. The critical items to know:
+	Service Account Email address that matches the service account credentials. If this
+		is wrong, the credentials won't work (P12 or Json).
+	Project ID.
+	P12 Password.
+'''
+
+import json
+import OpenSSL.crypto
+
+# This is the output file with the generated service account credentials from P12 credentials
+json_filename = 'service-account.json'
+
+# Details on the Google Service Account. The email must match the Google Console.
+project_id = 'development-123456'
+sa_filename = 'compute-engine.p12'
+sa_password = 'notasecret'
+sa_email = 'development-123456@developer.gserviceaccount.com'
+
+# client_id is the 'Unique ID' in the Google Console under 'Service account details'
+# This value is unique per service account email
+# Optional
+
+client_id = '123456789064738430393'
+
+# pkey_id is the 'Key ID' in the Google Console under 'Service account details'
+# This value is unique per key. One serice account can have more than one key issued
+# Optional
+
+pkey_id = 'e13865c612a34567abcdef1a8753d1c6789abcdb'
+
+def load_private_key(p12_path, p12_password):
+	''' Read the private key and return as base64 encoded '''
+
+	# print('Opening:', p12_path)
+	with open(p12_path, 'rb') as f:
+		data = f.read()
+
+	# print('Loading P12 (PFX) contents:')
+	p12 = OpenSSL.crypto.load_pkcs12(data, p12_password)
+
+	# Dump the Private Key in PKCS#1 PEM format
+	key = OpenSSL.crypto.dump_privatekey(
+			OpenSSL.crypto.FILETYPE_PEM,
+			p12.get_privatekey())
+
+	# return the private key
+	return key
+
+def my_encode(s):
+	''' This routine encodes the Json 'client_x509_cert_url' '''
+	# Replace @ with %40
+	return s.replace('@', '%40')
+
+# Generate the cert_url
+cert_url = 'https://www.googleapis.com/robot/v1/metadata/x509/' + sa_email
+
+# Load the private key from P12
+pkey = load_private_key(sa_filename, sa_password)
+
+# Json that will be writting to json_filename
+sa = {
+	"type": "service_account",
+	"project_id": project_id,
+	"private_key_id": pkey_id,
+	"private_key": pkey.decode('utf-8'),
+	"client_email": sa_email,
+	"client_id": client_id,
+	"auth_uri": "https://accounts.google.com/o/oauth2/auth",
+	"token_uri": "https://oauth2.googleapis.com/token",
+	"auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+	"client_x509_cert_url": my_encode(cert_url)
+}
+
+with open(json_filename, 'w') as outfile:
+	json.dump(sa, outfile, indent=2)

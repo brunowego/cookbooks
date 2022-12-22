@@ -41,12 +41,3 @@ chmod +x /usr/local/bin/raccoon
 ```sh
 raccoon
 ```
-
-<!-- ### Usage
-
-```sh
-adb install ~/.raccoon/content/apps/<class-name>
-
-#
-adb uninstall <package-name>
-```

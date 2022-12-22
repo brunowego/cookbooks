@@ -7,5 +7,6 @@
 - [Basecamp](https://basecamp.com/)
 - [ClickUp](https://clickup.com/)
 - [Helpjuice](https://helpjuice.com/)
+- [JetBrains YouTrack](https://jetbrains.com/youtrack)
 - [Microsoft SharePoint](/microsoft/sharepoint.md)
 - [Nuclino](https://nuclino.com/)

@@ -8,7 +8,7 @@ SET hive.exec.max.dynamic.partitions.pernode = 1000;
 SET hive.enforce.bucketing = true;
 ```
 
-##
+## TBD
 
 TODO
 

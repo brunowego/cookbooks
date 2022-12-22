@@ -2,7 +2,7 @@
 
 ## CLI
 
-**Note:** Prefer to install using [asdf-docker-compose](/asdf/asdf-docker-compose.md).
+**Note:** Prefer to install using [asdf-docker-compose](/asdf/docker-compose.md).
 
 ### Installation
 

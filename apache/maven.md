@@ -398,7 +398,7 @@ proxychains wget http://hostname/repo/[groupId]/[artifactId]/[version].jar
 
 Try, at first time, not use [ProxyChains-NG](/proxychains-ng.md).
 
-####
+#### TBD
 
 ```log
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-dependency-plugin:2.4:get (default-cli) on project big-plataforma-api: Couldn't download artifact: Unable to get dependency information for org.codehaus.sonar:sonar:jar:4.2: Failed to retrieve POM for org.codehaus.sonar:sonar:jar:4.2: Could not transfer artifact org.codehaus.sonar:sonar:pom:4.2 from/to central (http://repo.maven.apache.org/maven2): Failed to transfer file: http://repo.maven.apache.org/maven2/org/codehaus/sonar/sonar/4.2/sonar-4.2.pom. Return code is: 501, ReasonPhrase:HTTPS Required.
@@ -487,6 +487,9 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 ```sh
 # Apache Maven
 export MAVEN_OPTS="$MAVEN_OPTS -Djavax.net.ssl.trustStore=$JAVA_HOME/lib/security/cacerts"
+
+# Gradle
+export GRADLE_OPTS="$GRADLE_OPTS -Djavax.net.ssl.trustStore=$JAVA_HOME/lib/security/cacerts"
 ```
 
 <!--
@@ -494,7 +497,7 @@ export MAVEN_OPTS="$MAVEN_OPTS -Djavax.net.ssl.trustStore=$JAVA_HOME/lib/securit
 -Djavax.net.ssl.trustStorePassword=changeit
 -->
 
-####
+#### TBD
 
 ```log
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project [project-name]: Fatal error compiling: invalid target release: 1.8 -> [Help 1]

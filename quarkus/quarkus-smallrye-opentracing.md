@@ -1,6 +1,6 @@
 # Quarkus SmallRye OpenTracing
 
-##
+## TBD
 
 ```sh
 #
@@ -20,7 +20,7 @@ quarkus.jaeger.endpoint = http://localhost:14268/api/traces
 echo -e '[INFO]\thttp://127.0.0.1:16686'
 ```
 
-##
+## TBD
 
 ```xml
 <properties>

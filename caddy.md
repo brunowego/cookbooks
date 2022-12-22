@@ -113,7 +113,7 @@ sudo systemctl enable --now caddy
 sudo install -dm 775 -o "$USER" -g admin /var/www/html
 sudo install -dm 775 -o root -g admin /var/log/caddy
 
-##
+## TBD
 sudo tee -a /usr/local/etc/Caddyfile << EOF
 :8080 {
   root /var/www/html
@@ -124,7 +124,7 @@ sudo tee -a /usr/local/etc/Caddyfile << EOF
 }
 EOF
 
-##
+## TBD
 sudo tee -a /usr/local/etc/Caddyfile << EOF
 example.local:8443 {
   <...>

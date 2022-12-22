@@ -24,6 +24,13 @@
 ./gradlew clean
 
 #
+./gradlew check
+
+#
+./gradlew test
+
+#
+./gradlew build
 ./gradlew build -Dbuild.linux=true
 ./gradlew build -Dbuild.macos=true
 ```
@@ -55,6 +62,23 @@ choco install -y gradle
 gradle -h
 ```
 
+### Initialize
+
+```sh
+#
+gradle init
+```
+
+**Options**
+
+1. Select type of project to generate: `application`
+2. Select implementation language: `Kotlin`
+3. Split functionality across multiple subprojects?: `no`
+4. Select build script DSL: `Kotlin`
+5. Generate build using new APIs and behavior (some features may change in the next minor release)? `no`
+6. Project name (default: app): `app`
+7. Source package (default: app): `com.example.app`
+
 ### Usage
 
 ```sh
@@ -71,7 +95,21 @@ gradle build
 gradle run
 ```
 
+<!--
+gradle wrapper
+-->
+
 ### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension vscjava.vscode-gradle
+
+#
+jq '."recommendations" += ["vscjava.vscode-gradle"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
 
 #### EditorConfig
 
@@ -173,9 +211,26 @@ After finish, remove.
 rm -r ~/.gradle
 ```
 
-### Issues
+### Uninstall
 
-#### TBD
+```sh
+# Homebrew
+brew uninstall gradle
+
+rm -fR ~/.gradle
+```
+
+## Issues
+
+### TBD
+
+```log
+Unable to make field private final java.lang.String java.io.File.path accessible: module java.base does not "opens java.io" to unnamed module @a67d012
+```
+
+TODO
+
+### TBD
 
 ```log
 org.gradle.api.GradleScriptException: A problem occurred evaluating project ':app'.
@@ -186,19 +241,10 @@ Caused by: java.lang.NullPointerException: Cannot invoke method split() on null 
 
 TODO
 
-#### TBD
+### TBD
 
 ```log
 The server may not support the client's requested TLS protocol versions: (TLSv1.2). You may need to configure the client to allow other protocols to be used. See: https://docs.gradle.org/7.6-rc-4/userguide/build_environment.html#gradle_system_properties
 ```
 
 TODO
-
-### Uninstall
-
-```sh
-# Homebrew
-brew uninstall gradle
-
-rm -fR ~/.gradle
-```

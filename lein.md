@@ -45,14 +45,6 @@ lein repl
 pkill java
 ```
 
-<!-- ### Tips
-
-####
-
-```sh
-
-``` -->
-
 ### Issues
 
 #### Behind Corporate Proxy

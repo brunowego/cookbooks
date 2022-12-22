@@ -46,6 +46,16 @@ aws rds describe-db-instances --output table
 
 ### Tips
 
+#### Identifying and enumerating exposed RDS instances using Nmap
+
+```sh
+#
+sudo nmap -sS -v -Pn <rds-address>
+
+#
+sudo nmap -sS -A -vv -Pn -sV -p 3306 <rds-address>
+```
+
 #### All Regions Running RDS
 
 ```sh

@@ -8,8 +8,8 @@
 
 ## Artifacts
 
-- Android Package (APK)
-- iOS App Store Package (IPA)
+- [Android Package (APK)](/android/apk.md)
+- [iOS App Store Package (IPA)](/apple/ios/ipa.md)
 
 ## Tips
 

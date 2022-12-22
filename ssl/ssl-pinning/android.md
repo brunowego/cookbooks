@@ -22,8 +22,9 @@ DST Root CA X3 root
 - [Android SDK Platform-Tools](/android/platform-tools.md)
 - [Frida](/frida.md)
 - [objection](/objection.md)
-- [Android Emulator](/android/emulator.md)
+- [Android Emulator](/android/emulator/README.md#qemu-system-emulator)
 - [Burp Suite Community Edition (CE)](/portswigger/burp-suite-ce.md)
+  - Install ["CA Certificate"](/portswigger/burp-suite-ce.md#install-android-ca-certificate) on Android Emulator
 
 ## Docs
 
@@ -32,6 +33,7 @@ DST Root CA X3 root
 
 ## Glossary
 
+- Android Package (APK)
 - Man-in-the-Middle (MitM)
 
 ## Bypass (SSL Unpinning)
@@ -39,12 +41,6 @@ DST Root CA X3 root
 Make sure Android Emulator is running.
 
 ### Configuration
-
-<!--
-NoxPlayer 62001
-
-adb connect 127.0.0.1:62001
--->
 
 ```sh
 #
@@ -60,7 +56,6 @@ curl \
 
 #
 mv "./frida-server-${FRIDA_VERSION}-android-${ANDROID_ARCH}" /tmp/frida-server-android
-
 chmod +x /tmp/frida-server-android
 
 #
@@ -68,11 +63,20 @@ adb push /tmp/frida-server-android /data/local/tmp
 adb shell ls /data/local/tmp
 ```
 
+### Install APK
+
+```sh
+#
+adb install </path/to/file.apk>
+```
+
 ### Setup
 
 #### Run Frida Server
 
 **Note:** Not working with Android API version greater than 23.
+
+**Dependencies:** [Root access](/android/sdk/platform-tools.md#root-access)
 
 ```sh
 # Need root
@@ -140,6 +144,8 @@ sudo apt -y install apksigner zipalign
 ```sh
 #
 frida-ps -Uai
+# or
+frida-ps -aiD <id>
 
 #
 adb push ./burp.der /data/local/tmp/cert-der.crt
@@ -150,21 +156,43 @@ frida -U --codeshare pcipolloni/universal-android-ssl-pinning-bypass-with-frida 
 
 ### Issues
 
-#### SELinux Policy
+#### Device Not Connected
+
+```log
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+adb: device offline
+```
 
 ```sh
+#
+adb connect 127.0.0.1:5555
+
+# for NoxPlayer
+adb connect 127.0.0.1:62001
+```
+
+#### SELinux Policy
+
+```log
 Unable to load SELinux policy from the kernel: Failed to open file ?/sys/fs/selinux/policy?: Permission denied
 ```
 
 Try use Android API version 23 or lower.
 
-#### TBD
+#### Multiple Devices Connected
 
 ```log
 adb: more than one device/emulator
 ```
 
-TODO
+```sh
+#
+adb devices -l
+
+#
+adb disconnect
+```
 
 #### TBD
 
@@ -184,6 +212,14 @@ frida-ps -aiD emulator-5554
 ### Cleanup
 
 ```sh
+#
+frida-ps -Uai
+# or
+frida-ps -aiD <id>
+
+#
+adb uninstall <package-identifier>
+
 #
 adb disconnect 127.0.0.1:5555
 ```

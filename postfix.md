@@ -83,7 +83,7 @@ sudo postmap /etc/postfix/sasl_passwd
 
 ### Test
 
-####
+#### TBD
 
 ```sh
 echo "body of your email" | mail -s "This is a Subject" -a "From: you@example.com" recipient@elsewhere.com

@@ -16,6 +16,13 @@ https://github.com/VMadalin/kotlin-sample-app
 https://github.com/material-components/material-components-android-examples
 -->
 
+**Keywords:** Programming Language
+
+## Tools
+
+- Version Manager
+  - [asdf Kotlin](/asdf/kotlin.md)
+
 ## CLI
 
 ### Installation
@@ -43,6 +50,8 @@ kotlin
 
 #### Visual Studio Code
 
+**Dependencies:** Code format with [Prettier](/prettier.md#visual-studio-code)
+
 ```sh
 #
 code --install-extension fwcd.kotlin
@@ -51,12 +60,20 @@ code --install-extension fwcd.kotlin
 jq '."recommendations" += ["fwcd.kotlin"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
+**Configuration:**
+
+```sh
+#
+jq '."[kotlin]"."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+jq '."[kotlin]"."editor.defaultFormatter" |= "fwcd.kotlin"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+```
+
 #### EditorConfig
 
 ```sh
 cat << EOF >> ./.editorconfig
 
-[*.kt]
+[*.{kt,kts}]
 indent_size = 4
 EOF
 ```

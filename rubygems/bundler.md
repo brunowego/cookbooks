@@ -22,19 +22,6 @@ gem install bundler -n /usr/local/bin
 bundler -h
 ```
 
-### Configuration
-
-```sh
-#
-bundle config
-
-#
-bundle config --local path ./vendor/bundle
-
-#
-echo '/vendor/bundle' >> ./.gitignore
-```
-
 ### Initialize
 
 ```sh
@@ -49,6 +36,19 @@ EOF
 
 #
 bundle install
+```
+
+### Configuration
+
+```sh
+#
+bundle config
+
+#
+bundle config --local path ./vendor/bundle
+
+#
+echo '/vendor/bundle' >> ./.gitignore
 ```
 
 ### Usage

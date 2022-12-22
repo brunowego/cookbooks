@@ -8,7 +8,7 @@
 
 - [FindProxyForURL](https://findproxyforurl.com)
 
-##
+## TBD
 
 | OS      | Path                              |
 | ------- | --------------------------------- |
@@ -68,7 +68,7 @@ function FindProxyForURL(url, host) {
 EOF
 ```
 
-##
+## TBD
 
 ```sh
 # Linux

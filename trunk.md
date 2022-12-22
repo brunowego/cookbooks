@@ -80,7 +80,7 @@ trunk git-hooks sync
 
 #### Visual Studio Code
 
-**Requirements:** Remove [Linter](/linter.md)
+**Requirements:** Remove [Linter](/linter.md) extension.
 
 ```sh
 #

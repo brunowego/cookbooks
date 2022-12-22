@@ -28,3 +28,13 @@ sudo apt -y install ./session-manager-plugin.deb && rm ./session-manager-plugin.
 ```sh
 choco install -y awscli-session-manager
 ```
+
+## Issues
+
+### Missing SessionManagerPlugin
+
+```log
+SessionManagerPlugin is not found. Please refer to SessionManager Documentation here: http://docs.aws.amazon.com/console/systems-manager/session-manager-plugin-not-found
+```
+
+Just install the plugin AWS Session Manager Plugin.

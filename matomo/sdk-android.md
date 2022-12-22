@@ -7,9 +7,13 @@
 
 ## App Example
 
+### Clone
+
 ```sh
 git clone https://github.com/matomo-org/matomo-sdk-android.git matomo-sdk-android && cd "$_"
 ```
+
+### Build
 
 ```sh
 #

@@ -7,10 +7,6 @@ https://web.dev/same-site-same-origin/
 https://github.com/kubernetes/ingress-nginx/tree/main/deploy/grafana/dashboards
 -->
 
-## Alternatives
-
-- [Traefik](/traefik.md)
-
 ## Links
 
 - [Main Website](https://kubernetes.github.io/ingress-nginx/)

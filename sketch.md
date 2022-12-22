@@ -31,7 +31,15 @@ https://download.sketch.com/sketch-72.4-124482.zip
    - Column With: 81px
 
 <!--
-###
+### TBD
 
 .5*162*3.14
 -->
+
+## Tips
+
+### Find Figma Files
+
+```sh
+find ./ -name '*.sketch' -type f
+```

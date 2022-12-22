@@ -2,16 +2,16 @@
 
 ## Library
 
-###
+### TBD
 
 ```js
 module.exports = {
   options: {
     data: {
-      require: require
-    }
-  }
-};
+      require: require,
+    },
+  },
+}
 ```
 
 ```pug
