@@ -543,20 +543,18 @@ Error: configmaps is forbidden: User "system:serviceaccount:kube-system:default"
 ```
 
 ```sh
+#
 kubectl create serviceaccount tiller -n kube-system
-```
 
-```sh
+#
 kubectl create clusterrolebinding tiller-cluster-rule \
   --clusterrole=cluster-admin \
   --serviceaccount=kube-system:tiller
-```
 
-```sh
+#
 kubectl patch deploy -n kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
-```
 
-```sh
+#
 helm init \
   --service-account tiller \
   --upgrade
@@ -568,5 +566,6 @@ helm init \
 helm reset --force
 
 kubectl delete clusterrolebinding tiller-cluster-rule
+
 kubectl delete serviceaccount tiller -n kube-system
 ```

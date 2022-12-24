@@ -4,9 +4,7 @@
 https://www.datarevenue.com/en-blog/airflow-vs-luigi-vs-argo-vs-mlflow-vs-kubeflow
 -->
 
-## Alternatives
-
-- [Apache Airflow](/apache/airflow.md)
+**Keywords:** Data Workflow
 
 ## Links
 

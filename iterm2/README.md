@@ -64,6 +64,14 @@ Broadcast Input.Toggle Broadcast Input to Current Session'" ~/Library/Preference
 
 ### Tips
 
+#### Backup Folders
+
+```sh
+# MacOS
+ls "$HOME"/Library/Application\ Support/iTerm2
+ls "$HOME"/Library/Preferences/com.googlecode.iterm2.*
+```
+
 #### Stop Process
 
 **Note:** Never use `Control (⌃) + Z` (suspend)

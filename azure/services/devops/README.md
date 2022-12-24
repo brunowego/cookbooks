@@ -63,7 +63,12 @@ az devops configure \
     organization='https://dev.azure.com/<organization>'
 
 #
-az devops project list
+az devops project list \
+  -o tsv \
+  --query 'value[].name'
+
+az devops project list | \
+  jq -r '.value | length'
 
 #
 az devops configure \
@@ -145,15 +150,6 @@ EOF
 2. Repos -> Repositories
 3. All Repositories -> Select Repository -> Security Tab -> User permissions
 4. Add User -> Select `Allow` in `Force push (rewrite history, delete branches and tags)`
-
-#### List Projects from Organization
-
-```sh
-#
-az devops project list \
-  -o tsv \
-  --query 'value[].name'
-```
 
 #### Clone Repos from a Project
 

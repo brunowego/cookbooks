@@ -1,5 +1,9 @@
 # RightFont
 
+## Links
+
+- [Code Repository](https://rightfontapp.com)
+
 ## App
 
 ### Installation

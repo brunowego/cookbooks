@@ -38,6 +38,12 @@ Elvish
 
 ## Tips
 
+### Installed Shells
+
+```sh
+cat /etc/shells
+```
+
 ### Ensure Environment Variable Are Set
 
 ```sh

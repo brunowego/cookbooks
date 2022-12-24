@@ -19,6 +19,20 @@ https://www.youtube.com/watch?v=CmamCFSrNzs
 ## Docs
 
 - [Azure Pipelines agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser#install)
+- [Microsoft-hosted agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml)
+
+## Runners
+
+| Virtual Environment                         | YAML Workflow Label                | Default Shell |
+| ------------------------------------------- | ---------------------------------- | ------------- |
+| macOS X Catalina 10.15                      | `macOS-10.15`                      | Bash          |
+| macOS 11 Big Sur                            | `macOS-11`                         | Bash          |
+| macOS 12 Monterey                           | `macOS-12`                         | Bash          |
+| Ubuntu 18.04                                | `ubuntu-18.04`                     | Bash          |
+| Ubuntu 20.04                                | `ubuntu-20.04`                     | Bash          |
+| Ubuntu 22.04                                | `ubuntu-22.04`                     | Bash          |
+| Windows Server 2019 with Visual Studio 2019 | `windows-2019`                     | PowerShell    |
+| Windows Server 2022 with Visual Studio 2022 | `windows-latest` or `windows-2022` | PowerShell    |
 
 <!-- ## Docker
 

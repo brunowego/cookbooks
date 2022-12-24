@@ -5,7 +5,7 @@
 ## Links
 
 - [Code Repository](https://github.com/pocketbase/pocketbase)
-- [Main Website](https://pocketbase.io/)
+- [Main Website](https://pocketbase.io)
 
 ## CLI
 

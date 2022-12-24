@@ -422,10 +422,12 @@ phpbrew -d install \
   +openssl=shared
 ```
 
-<!-- # Darwin
+<!--
+# Darwin
 export PKG_CONFIG_PATH="$(brew --cellar openssl)/$(brew info --json openssl | jq -r '.[0].installed[0].version')/lib/pkgconfig:$PKG_CONFIG_PATH"
 # Or
-export PKG_CONFIG_PATH="/usr/local/Cellar/openssl/1.0.2t/lib/pkgconfig:$PKG_CONFIG_PATH" -->
+export PKG_CONFIG_PATH="/usr/local/Cellar/openssl/1.0.2t/lib/pkgconfig:$PKG_CONFIG_PATH"
+-->
 
 #### Missing Oniguruma
 

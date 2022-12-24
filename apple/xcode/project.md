@@ -31,3 +31,11 @@ Unable to load contents of file list: '/Target Support Files/Pods-<Name>/Pods-<N
 ```sh
 bundle exec pod install
 ```
+
+### TBD
+
+```log
+The operation couldn't be completed. Operation not permitted.
+```
+
+TODO

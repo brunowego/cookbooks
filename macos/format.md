@@ -10,17 +10,13 @@ Remove your device from "Find My".
 #
 ls /Volumes
 
-# Mojave
-sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia \
-  --volume /Volumes/<MyVolume>
-
-# Catalina
-sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia \
-  --volume /Volumes/<MyVolume>
-
 # Ventura
+sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --help
+
 sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia \
-  --volume /Volumes/<MyVolume>
+  --volume /Volumes/<MyVolume> \
+  --nointeraction \
+  --downloadassets
 ```
 
 Reboot and press Option (⌥).

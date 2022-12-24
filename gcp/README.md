@@ -30,6 +30,10 @@ https://linkedin.com/learning/google-cloud-platform-gcp-essential-training-for-d
 
 ## CLI
 
+### Links
+
+- [Main Website](https://cloud.google.com/cli)
+
 ### Installation
 
 #### Homebrew

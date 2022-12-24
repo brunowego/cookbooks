@@ -1,5 +1,26 @@
 # n8n
 
+<!--
+https://artifacthub.io/packages/search?ts_query_web=n8n&sort=relevance&page=1
+-->
+
+**Keywords:** Data Workflow, Low-code
+
+## Links
+
+- [Code Repository](https://github.com/n8n-io/n8n)
+- [Main Website](https://n8n.io)
+
+## App
+
+### Installation
+
+#### macOS
+
+```sh
+open https://downloads.n8n.io/file/n8n-downloads/n8n-mac.zip
+```
+
 ## Docker
 
 ### Network
@@ -52,5 +73,6 @@ echo -e '[INFO]\thttp://127.0.0.1:5678'
 
 ```sh
 docker rm -f n8n-postgres n8n
+
 docker volume rm n8n-postgres-data
 ```

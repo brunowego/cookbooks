@@ -8,6 +8,10 @@ https://github.com/search?o=desc&q=path%3Amodules%2Fgke+filename%3Amain.tf&s=ind
 
 **Keywords:** Kubernetes Orchestration, Control Plane
 
+## Console
+
+- [Kubernetes clusters](https://console.cloud.google.com/kubernetes/list/overview)
+
 ## Docs
 
 - [Get started using the Google Cloud CLI (GKE)](https://cloud.google.com/binary-authorization/docs/getting-started-cli)
@@ -64,4 +68,22 @@ gcloud container clusters list
 #
 gcloud container clusters get-credentials '<cluster-name>' \
   --zone '<location>'
+```
+
+#### TBD
+
+```log
+error: failed to create clusterrolebinding: clusterrolebindings.rbac.authorization.k8s.io is forbidden: User "brunowego@gmail.com" cannot create resource "clusterrolebindings" in API group "rbac.authorization.k8s.io" at the cluster scope: requires one of ["container.clusterRoleBindings.create"] permission(s).
+```
+
+TODO
+
+```sh
+#
+gcloud config list
+
+#
+kubectl create clusterrolebinding cluster-admin-binding \
+  --clusterrole=cluster-admin \
+  --user=$(gcloud config get-value core/account)
 ```

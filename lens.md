@@ -71,3 +71,62 @@ Metrics not available at the moment
 ```
 
 Install Prometheus Stack, Kube-State-Metrics (KSM) and Node Exporter.
+
+#### TBD
+
+```log
+Metrics are not available due to missing or invalid Prometheus configuration.
+```
+
+```sh
+kubectl logs \
+  -l 'name=prometheus' \
+  -n lens-metrics \
+  -f
+```
+
+```log
+level=error ts=2022-12-23T10:34:50.063Z caller=klog.go:116 component=k8s_client_runtime func=ErrorDepth msg="pkg/mod/k8s.io/client-go@v0.21.0/tools/cache/reflector.go:167: Failed to watch *v1.Pod: failed to list *v1.Pod: pods is forbidden: User \"system:serviceaccount:lens-metrics:prometheus\" cannot list resource \"pods\" in API group \"\" in the namespace \"lens-metrics\""
+```
+
+```sh
+#
+cat << EOF | kubectl apply -f -
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  labels:
+    app.kubernetes.io/created-by: resource-stack
+    app.kubernetes.io/managed-by: Lens
+    app.kubernetes.io/name: lens-metrics
+  name: lens-prometheus
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: lens-prometheus
+subjects:
+- kind: ServiceAccount
+  name: prometheus
+  namespace: lens-metrics
+EOF
+
+#
+cat << EOF | kubectl apply -f -
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  labels:
+    app.kubernetes.io/created-by: resource-stack
+    app.kubernetes.io/managed-by: Lens
+    app.kubernetes.io/name: lens-metrics
+  name: lens-prometheus
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: lens-prometheus
+subjects:
+- kind: ServiceAccount
+  name: prometheus
+  namespace: lens-metrics
+EOF
+```

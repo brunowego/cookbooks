@@ -1,12 +1,20 @@
 # AWS Elastic Kubernetes Service (EKS)
 
 <!--
-https://www.youtube.com/watch?v=tkYzg8HRK4o
-
-https://github.com/aws-ia/terraform-aws-eks-blueprints
-https://github.com/hashicorp/learn-terraform-provision-eks-cluster
-
-https://github.com/search?o=desc&q=path%3Amodules%2Feks+filename%3Amain.tf&s=indexed&type=Code
+https://github.com/commitdev/terraform-aws-zero/tree/main/modules
+https://github.com/brayest/argocd-example/tree/main/modules
+https://github.com/chi07/terraform-aws-multiple-environments/tree/master/modules
+https://github.com/sobankhan12/eks-testing/tree/master/modules
+https://github.com/izner32/aws-iac-terraform/tree/master/modules
+https://github.com/maheshglm/aws-infra/tree/main/modules
+https://github.com/skamalj/aws-terraform/tree/master/modules
+https://github.com/arenaml/arena-terraform/tree/master/modules
+https://github.com/sungjunyoung/terraform/tree/master/modules
+https://github.com/sandeept1986/terraform-aws/tree/Master/Modules
+https://github.com/zeabix-cloud-native/nocnoc-iac/tree/main/modules
+https://github.com/tjrohweder/terraform-aws/tree/master/modules
+https://github.com/alexey-berdyugin/opsfleet-test-terraform/tree/master/modules
+https://github.com/ragul28/gitlab-runner-k8s/tree/master/modules
 -->
 
 **Keywords:** Kubernetes Orchestration, Control Plane
@@ -31,12 +39,12 @@ aws eks help
 
 ```sh
 #
-aws eks list-clusters
+aws eks list-clusters -region us-east-1
 ```
 
 <!--
 #
-for CLUSTER in $(aws eks list-clusters | cut -f 2 -d $'\t'); do
+for CLUSTER in $(aws eks list-clusters -region us-east-1 | cut -f 2 -d $'\t'); do
   aws eks \
     --region us-east-1 \
     update-kubeconfig \
@@ -59,3 +67,15 @@ do
     --no-cli-pager
 done
 ``` -->
+
+### Issues
+
+#### Wrong Schema in Kube Config
+
+```log
+'NoneType' object is not iterable
+```
+
+```sh
+rm "$HOME"/.kube/config
+```

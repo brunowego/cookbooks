@@ -1,5 +1,9 @@
 # GNU Privacy Guard (GnuPG / GPG) or GNU Pretty Good Privacy (PGP)
 
+<!--
+https://github.com/miccal/personal-files/blob/master/README.md#pass
+-->
+
 ## CLI
 
 ### Installation
@@ -46,6 +50,14 @@ gpg --list-secret-keys
 ```
 
 ### Tips
+
+#### Unsafe Permissions
+
+**Warning:** Unsafe permissions on home dir `~/.gnupg`.
+
+```sh
+chmod 700 ~/.gnupg
+```
 
 #### Gen Key
 

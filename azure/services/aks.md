@@ -4,6 +4,15 @@
 https://app.pluralsight.com/paths/skills/managing-and-orchestrating-containers-with-azure-kubernetes-service-aks
 
 https://github.com/search?o=desc&q=path%3Amodules%2Faks+filename%3Amain.tf&s=indexed&type=Code
+
+https://github.com/jstarman/aks-bootstrap/tree/main/modules
+https://github.com/GimhanDissanayake/terraform-azure/tree/main/modules
+https://github.com/ghdo-canuto/envolve/tree/main/modules
+https://github.com/kabirajpratihari/iac-terraform-promotion/tree/main/modules
+https://github.com/jstarman/aks-bootstrap/tree/main/modules
+https://github.com/nicksc423/azure-infrastructure/tree/7a6d8db12b6814315d4c6dc172d169cf388409de/modules
+https://github.com/nicksc423/azure-infrastructure/tree/main/modules
+https://github.com/OiMoulder/Terraform-Azure-Kubernetes/tree/main/modules
 -->
 
 **Keywords:** Kubernetes Orchestration, Control Plane

@@ -14,8 +14,13 @@ Public: 172.x.x.x
 ### IP Info
 
 ```sh
+#
 curl ipinfo.io/<ip>
 ```
+
+<!--
+curl -H 'Host: ipinfo.io' <ip>/json
+-->
 
 ### My IP Address
 

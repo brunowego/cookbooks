@@ -7,12 +7,7 @@
 ### Dependencies
 
 - [phpize](/phpize.md)
-
-#### Homebrew
-
-```sh
-brew install libiconv
-```
+- [libiconv](/libiconv.md)
 
 ### Installation
 
@@ -24,7 +19,7 @@ phpbrew -d ext install \
   --downloader=wget \
   iconv \
   -- \
-    --with-iconv=$(brew --prefix libiconv)
+    --with-iconv="$(brew --prefix libiconv)"
 
 # Linux
 phpbrew -d ext install \
@@ -41,3 +36,13 @@ php -m | grep iconv
 #
 php -i | grep '^iconv$' -A 9
 ```
+
+### Issues
+
+#### TBD
+
+```log
+Error: Command failed: ./configure '--with-php-config=~/.phpbrew/php/8.1-dev/bin/php-config' returns: checking for libiconv... no
+```
+
+TODO
