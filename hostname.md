@@ -41,7 +41,7 @@ sudo cat /etc/hostname
 hostname -I
 
 # Set
-sudo hostnamectl set-hostname [name]
+sudo hostnamectl set-hostname <name>
 hostnamectl status
 sudo su - "$USER"
 ```

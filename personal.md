@@ -1,7 +1,19 @@
-# Backup Personal
+# Personal
 
 <!--
 GnuPG
+-->
+
+<!--
+Ally
+Axel
+Apex
+Atom
+-->
+
+<!--
+Ada
+Nuls
 -->
 
 ## Folders

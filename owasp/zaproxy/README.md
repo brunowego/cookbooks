@@ -133,7 +133,7 @@ docker run -it --rm \
   --name zaproxy \
   --network workbench \
   docker.io/owasp/zap2docker-stable:2.12.0 zap-full-scan.py \
-    -t 'https://qa.us.dellexpertprogram.com' \
+    -t 'https://example.com' \
     -c ./.zap/rules.tsv \
     -r ./.zap/reports/results.html \
     -w ./.zap/reports/results.md \

@@ -6,6 +6,8 @@
     "redhat.vscode-yaml",
     "Tyriar.sort-lines",
     "DavidAnson.vscode-markdownlint",
-    "hashicorp.terraform"
+    "hashicorp.terraform",
+    "bierner.markdown-mermaid",
+    "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
   ]
 }

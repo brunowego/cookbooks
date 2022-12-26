@@ -1,6 +1,6 @@
 # Infisical
 
-**Keywords:** E2EE
+**Keywords:** Secrets Manager, E2EE
 
 ## Links
 

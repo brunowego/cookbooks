@@ -9,6 +9,8 @@ https://app.pluralsight.com/library/courses/managing-hashicorp-vault/table-of-co
 https://developer.hashicorp.com/vault/tutorials/auth-methods/oidc-auth
 -->
 
+**Keywords:** Secrets Manager
+
 ## Links
 
 - [Code Repository](https://github.com/hashicorp/vault)

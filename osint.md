@@ -6,6 +6,8 @@ IPTV: https://torrentfreak.com/how-investigators-use-osint-to-track-down-iptv-pi
 https://www.youtube.com/watch?v=qwA6MmbeGNo
 
 https://github.com/laramies/theHarvester
+
+https://github.com/blacklanternsecurity/bbot
 -->
 
 ## Links

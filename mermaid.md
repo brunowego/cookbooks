@@ -39,13 +39,10 @@ stateDiagram
 ```sh
 #
 code --install-extension bierner.markdown-mermaid
+code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
 
 #
 jq '."recommendations" += ["bierner.markdown-mermaid"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 
-#
-code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
-
-#
 jq '."recommendations" += ["bpruitt-goddard.mermaid-markdown-syntax-highlighting"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

@@ -2,10 +2,6 @@
 
 **Keywords:** Java Version Manager
 
-## Alternatives
-
-- [SDKMAN!](/sdkman.md)
-
 ## Links
 
 - [Code Repository](https://github.com/shyiko/jabba)
@@ -14,15 +10,10 @@
 
 ### Dependencies
 
-- [OpenJDK JRE - Java Runtime Environment](/openjdk-jre.md)
+- Linux
+  - [OpenJDK JRE - Java Runtime Environment](/openjdk/jre.md)
 
 ### Installation
-
-#### Homebrew
-
-```sh
-brew install jabba
-```
 
 #### Unix-like
 
@@ -40,11 +31,8 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 ```sh
 # jabba
 source "$HOME/.jabba/jabba.sh"
-[ -e './.jabbarc' ] && jabba use &>/dev/null
 
-# if test -e './.jabbarc'; then
-#   jabba use &>/dev/null
-# fi
+[ -e './.jabbarc' ] && jabba use &>/dev/null
 ```
 
 ```sh

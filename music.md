@@ -1,7 +1,5 @@
 # Music
 
-TODO
-
 <!--
 Glass Animals - Heat Waves
 Måneskin - I Wanna Be Your Slave
@@ -10,3 +8,7 @@ Sub Urban - Cradles
 Tones and I - Dance Monkey
 Oliver Tree - Life Goes On
 -->
+
+## Tools
+
+- [DistroKid](https://distrokid.com/)

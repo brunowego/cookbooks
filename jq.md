@@ -41,7 +41,7 @@ choco install -y jq
 
 #### RPM
 
-- [RPM resource jq(x86-64)](https://rpmfind.net/linux/rpm2html/search.php?query=jq(x86-64))
+- [RPM resource jq(x86-64)](<https://rpmfind.net/linux/rpm2html/search.php?query=jq(x86-64)>)
 
 ```sh
 curl -LO 'https://rpmfind.net/linux/opensuse/tumbleweed/repo/oss/x86_64/libjq1-1.6-2.4.x86_64.rpm'
@@ -57,15 +57,15 @@ sudo rpm -vi './jq-1.6-2.4.x86_64.rpm && rm -f jq-1.6-2.4.x86_64.rpm'
 
 ```sh
 # Length
-jq length [filename]
-jq -r '.users | length' [filename]
+jq length <filename>
+jq -r '.users | length' <filename>
 
 # Single line
-jq '.example.email |= "jdoe@example.com"' [filename] | sponge [filename]
+jq '.example.email |= "jdoe@example.com"' <filename> | sponge <filename>
 
 # Multiple lines
-jq '.example.name |= "John Doe"' jq '.example.email |= "jdoe@example.com"' [filename] | sponge [filename]
+jq '.example.name |= "John Doe"' jq '.example.email |= "jdoe@example.com"' <filename> | sponge <filename>
 
 # Remove
-jq 'del(.example.name, .example.email)' [filename] | sponge [filename]
+jq 'del(.example.name, .example.email)' <filename> | sponge <filename>
 ```

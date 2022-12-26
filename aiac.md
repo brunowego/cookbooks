@@ -1,5 +1,7 @@
 # Artificial Intelligence Infrastructure-as-Code Generator (AIAC)
 
+**Keywords:** ChatGPT
+
 ## Links
 
 - [Code Repository](https://github.com/gofireflyio/aiac)
