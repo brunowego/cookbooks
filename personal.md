@@ -56,6 +56,10 @@ ln -s /Volumes/Workspace "$HOME"/Workspace
 ```
 
 <!--
+git config for workflow
+-->
+
+<!--
 https://www.youtube.com/watch?v=Z-0g_aJL5Fw
 
 https://www.youtube.com/watch?v=FowJZqVggCU

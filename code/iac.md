@@ -12,12 +12,14 @@ https://linkedin.com/learning/aws-infrastructure-as-code-for-software-developers
 
 ## Tools
 
-- [AWS CloudFormation](/aws/services/cloudformation.md)
-- [Azure Resource Manager](/azure/README.md)
-- [Crossplane](/crossplane.md)
-- [Google Cloud Deployment Manager](/gcp/README.md)
-- [Pulumi](/pulumi.md)
-- [Terraform](/hashicorp/terraform/README.md)
+- Cloud Computing
+  - [AWS CloudFormation](/aws/services/cloudformation.md)
+  - [Azure Resource Manager](/azure/README.md)
+  - [Google Cloud Deployment Manager](/gcp/README.md)
+- Enterprise
+  - [Crossplane](/crossplane.md)
+  - [Pulumi](/pulumi.md)
+  - [Terraform](/hashicorp/terraform/README.md) 🌟
 
 ### Configuration Management
 

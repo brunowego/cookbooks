@@ -389,6 +389,16 @@ git config --global user.useconfigonly true
 
 ### Issues
 
+#### Allow Unrelated Histories
+
+```log
+fatal: refusing to merge unrelated histories
+```
+
+```sh
+git pull origin master --allow-unrelated-histories
+```
+
 <!-- #### Host Resolve
 
 ```log

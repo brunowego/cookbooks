@@ -1,4 +1,4 @@
-# WPScan
+# WordPress Security Scanner (WPScan)
 
 ## Links
 

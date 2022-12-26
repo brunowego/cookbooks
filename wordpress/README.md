@@ -1,6 +1,10 @@
 # WordPress
 
 <!--
+https://closte.com/
+-->
+
+<!--
 https://linkedin.com/learning/paths/become-an-advanced-wordpress-developer
 
 https://snipcart.com/blog/reactjs-wordpress-rest-api-example

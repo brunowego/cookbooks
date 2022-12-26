@@ -30,3 +30,11 @@ https://app.pluralsight.com/library/courses/microsoft-azure-security-privacy-con
 ```sh
 az security -h
 ```
+
+<!-- ### Usage
+
+```sh
+#
+az security secure-score-controls list
+az security secure-score-controls list_by_score -n 'ascScore'
+``` -->
