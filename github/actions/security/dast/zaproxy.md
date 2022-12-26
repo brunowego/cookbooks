@@ -17,16 +17,21 @@ https://github.com/zaproxy/action-api-scan
 ---
 on:
   schedule:
-    - cron: '0 1 * * *'
+    - cron: 0 3 * * 0 # https://crontab.guru/#0_3_*_*_0
   workflow_dispatch:
 
 jobs:
   zap_scan:
     runs-on: ubuntu-22.04
-    name: Scan ZAP website
+    name: Scan public website
     steps:
       - name: ZAP Scan
         uses: zaproxy/action-full-scan@v0.4.0
         with:
-          target: 'http://ifs4205-gp02-1.comp.nus.edu.sg'
+          issue_title: Vulnerability Scan Results
+          token: ${{ secrets.GITHUB_TOKEN }}
+          docker_name: owasp/zap2docker-stable
+          target: http://example.com
+          rules_file_name: ./.zap/rules.tsv
+          cmd_options: '-a'
 ```

@@ -90,7 +90,7 @@ echo '#! /bin/bash\n' > ~/.config/git/hooks/pre-commit
 git config --get core.hookspath
 ```
 
-### TBD
+### Custom Config
 
 ```sh
 #

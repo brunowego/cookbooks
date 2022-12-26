@@ -29,13 +29,10 @@ curl \
 
 ### Environment
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+**Dependency:** [alias](/shell/alias.md)
 
 ```sh
-# Prevent Mistakes
-alias rm='rmtrash'
-```
+echo "alias rm='rmtrash'" >> ~/.aliases
 
-```sh
-sudo su - "$USER"
+source ~/.zshrc
 ```

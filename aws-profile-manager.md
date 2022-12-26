@@ -24,14 +24,11 @@ aws-profile-manager --help
 
 ### Environment
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+**Dependency:** [alias](/shell/alias.md)
 
 ```sh
-# AWS Profile Manager
-alias apm='aws-profile-manager'
-```
+echo "alias apm='aws-profile-manager'" >> ~/.aliases
 
-```sh
 source ~/.zshrc
 ```
 

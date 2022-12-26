@@ -22,14 +22,11 @@ choco install bat
 
 ### Environment
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+**Dependency:** [alias](/shell/alias.md)
 
 ```sh
-# bat
-alias cat='bat'
-```
+echo "alias cat='bat'" >> ~/.aliases
 
-```sh
 source ~/.zshrc
 ```
 

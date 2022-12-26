@@ -78,21 +78,20 @@ docker run -d \
   --name zaproxy \
   --network workbench \
   docker.io/owasp/zap2docker-stable:2.12.0 zap.sh -h
+
+# Full Scan
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h zaproxy \
+  --name zaproxy \
+  --network workbench \
+  docker.io/owasp/zap2docker-stable:2.12.0 zap-full-scan.py -h
 ```
 
 ### Running
 
 ```sh
 #
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h zaproxy \
-  -p 8080:8080 \
-  --name zaproxy \
-  --network workbench \
-  docker.io/owasp/zap2docker-stable:2.12.0 zap-webswing.sh
-
-# or
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h zaproxy \
@@ -106,15 +105,6 @@ docker run -d \
     -config 'api.addrs.addr.regex=true' \
     -host '0.0.0.0' \
     -port 8080
-
-#
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h zaproxy \
-  -p 8080:8080 \
-  --name zaproxy \
-  --network workbench \
-  docker.io/owasp/zap2docker-stable:2.12.0 zap-webswing.sh
 ```
 
 ```sh
@@ -125,7 +115,15 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 
 ```sh
 #
-mkdir ./zaproxy-workspace && cd "$_"
+mkdir -p ./.zap/reports
+
+#
+cat << EOF > ./.zap/rules.tsv
+10015	IGNORE	(Incomplete or No Cache-control and Pragma HTTP Header Set)
+10027	IGNORE	(Information Disclosure - Suspicious Comments)
+10104	IGNORE	(User Agent Fuzzer)
+10109	IGNORE	(Modern Web Application)
+EOF
 
 #
 docker run -it --rm \
@@ -135,12 +133,28 @@ docker run -it --rm \
   --name zaproxy \
   --network workbench \
   docker.io/owasp/zap2docker-stable:2.12.0 zap-full-scan.py \
-    -t 'http://testphp.vulnweb.com' \
-    -r ./report_html.html \
-    -w ./report_md.md \
-    -J ./report_json.json \
+    -t 'https://qa.us.dellexpertprogram.com' \
+    -c ./.zap/rules.tsv \
+    -r ./.zap/reports/results.html \
+    -w ./.zap/reports/results.md \
+    -J ./.zap/reports/results.json \
     -d
 ```
+
+<!--
+#### Web Swing
+
+```sh
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h zaproxy \
+  -p 8080:8080 \
+  --name zaproxy \
+  --network workbench \
+  docker.io/owasp/zap2docker-stable:2.12.0 zap-webswing.sh
+```
+-->
 
 ### Remove
 

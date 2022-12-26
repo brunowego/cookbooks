@@ -284,15 +284,14 @@ choco install -y teleport-tsh
 
 ### Environment
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+**Dependency:** [alias](/shell/alias.md)
 
 ```sh
-# Teleport
+cat << EOF >> ~/.aliases
 alias tctl='tctl --insecure'
 alias tsh='tsh --insecure'
-```
+EOF
 
-```sh
 source ~/.zshrc
 ```
 

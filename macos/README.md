@@ -25,6 +25,10 @@ Macintosh SSD
 https://eshop.macsales.com/guides/Mac_OS_X_Compatibility
 -->
 
+## Apps
+
+- Activity Monitor
+
 ## Commands
 
 ```sh

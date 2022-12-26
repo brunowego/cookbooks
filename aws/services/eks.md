@@ -39,20 +39,16 @@ aws eks help
 
 ```sh
 #
-aws eks list-clusters -region us-east-1
+aws eks list-clusters --region us-east-1
+
+#
+aws eks \
+  --region us-east-1 \
+  update-kubeconfig \
+  --name '<cluster-name>'
 ```
 
-<!--
-#
-for CLUSTER in $(aws eks list-clusters -region us-east-1 | cut -f 2 -d $'\t'); do
-  aws eks \
-    --region us-east-1 \
-    update-kubeconfig \
-    --name "$CLUSTER"
-done
--->
-
-<!-- ### Tips
+### Tips
 
 #### All Regions Running EKS
 
@@ -65,6 +61,18 @@ do
     --query 'not_null(clusters[])' \
     --region "$AWS_REGION" \
     --no-cli-pager
+done
+```
+
+<!-- #### Add All Clusters to Kube Config
+
+```sh
+#
+for CLUSTER in $(aws eks list-clusters --region us-east-1 | cut -f 2 -d $'\t'); do
+  aws eks \
+    --region us-east-1 \
+    update-kubeconfig \
+    --name "$CLUSTER"
 done
 ``` -->
 

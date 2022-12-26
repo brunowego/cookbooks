@@ -26,7 +26,10 @@ https://medium.com/swlh/building-a-front-app-with-rust-yes-you-can-and-yew-11e78
 
 ## References
 
+<!--
 - [asdf Rust](/asdf/rust.md) or [rustup](/rustup.md)
+-->
+
 - [Cargo](/cargo.md)
 - [WebAssembly](/wasm.md)
 
@@ -61,6 +64,19 @@ yum check-update
 
 # Repo: EPEL
 sudo yum -y install rust
+```
+
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+```
+
+```sh
+sudo su - "$USER"
 ```
 
 ### Commands

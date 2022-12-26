@@ -11,5 +11,5 @@
 #### MAS
 
 ```sh
-mass install 1354318707
+mas install 1354318707
 ```

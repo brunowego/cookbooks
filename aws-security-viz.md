@@ -31,14 +31,11 @@ aws_security_viz -h
 
 ### Environment
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+**Dependency:** [alias](/shell/alias.md)
 
 ```sh
-# AWS Profile Manager
-alias asv='aws_security_viz'
-```
+echo "alias asv='aws_security_viz'" >> ~/.aliases
 
-```sh
 source ~/.zshrc
 ```
 

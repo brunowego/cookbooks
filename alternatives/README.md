@@ -49,14 +49,6 @@ https://intercom.com/
 - [Bitwarden](/bitwarden.md)
 - [LastPass](https://lastpass.com)
 
-## Application Performance Management (APM)
-
-- [Datadog](/datadog.md)
-- [Dynatrace](/dynatrace.md)
-- [New Relic](/newrelic/README.md)
-- [Splunk](/splunk.md)
-<!-- - [Nagios](/nagios.md) -->
-
 ## Local Kubernetes
 
 - [k3d](/k3d.md)

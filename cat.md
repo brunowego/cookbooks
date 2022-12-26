@@ -4,7 +4,11 @@
 
 - [Unix shells](https://en.wikipedia.org/wiki/Here_document#Unix_shells)
 
-## Commands
+## CLI
+
+**Note:** Utilize [bat](/bat.md) instead.
+
+### Commands
 
 ```sh
 man cat

@@ -4,7 +4,7 @@
 
 ### Dependencies
 
-- [Rust](/rust.md)
+- [Rust](/rust/README.md)
 
 ### Installation
 

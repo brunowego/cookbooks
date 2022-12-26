@@ -27,6 +27,12 @@ sudo curl \
 sudo chmod +x /usr/local/bin/{kubectx,kubens}
 ```
 
+#### Chocolatey
+
+```sh
+choco install -y kubectx
+```
+
 ### Commands
 
 ```sh

@@ -8,6 +8,10 @@
 
 ## CLI
 
+### Dependencies
+
+- [Oracle VM VirtualBox](/oracle/virtualbox.md)
+
 ### Installation
 
 #### Homebrew

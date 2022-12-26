@@ -22,6 +22,11 @@
   - [Oracle VM VirtualBox](/virtualbox.md)
   - [Parallels](/parallels.md)
 
+<!--
+- Docker Machine
+  - [Docker Machine Driver Hyperkit](/docker-machine/driver-hyperkit.md)
+-->
+
 ### Installation
 
 #### Homebrew
@@ -99,6 +104,9 @@ minikube config set vm-driver 'virtualbox'
 
 # Parallels (Darwin only)
 minikube config set vm-driver 'parallels'
+
+#
+minikube config view
 ```
 
 ### Commands
@@ -254,6 +262,40 @@ sudo route \
 ```log
 Unable to start VM. Please investigate and run 'minikube delete' if possible: creating host: create: precreate: Parallels Desktop edition could not be fetched!
 ``` -->
+
+#### TBD
+
+```log
+StartHost failed, but will try again: creating host: create: Error creating machine: Error in driver during machine creation: IP address never found in dhcp leases file Temporary error: could not find an IP address for <mac-address>
+```
+
+TODO
+
+#### TBD
+
+```log
+StartHost failed, but will try again: creating host: create: Error creating machine: Error in driver during machine creation: IP address never found in dhcp leases file Temporary error: open /var/db/dhcpd_leases: no such file or directory
+```
+
+TODO
+
+<!--
+sudo vi /var/db/dhcpd_leases
+-->
+
+#### TBD
+
+```log
+Unable to load cached images: loading cached images: stat /Users/brunowego/.minikube/cache/images/amd64/k8s.gcr.io/etcd_3.5.3-0: no such file or directory
+```
+
+TODO
+
+<!--
+minikube start
+  ...
+  --image-mirror-country cn
+-->
 
 #### DHCP Client Lease DB
 

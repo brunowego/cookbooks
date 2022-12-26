@@ -112,7 +112,7 @@ choco install awscli
 aws help
 
 # AWS CLI Command Syntax
- aws <options> <command> <subcommand> <parameters>
+aws <options> <command> <subcommand> <parameters>
 ```
 
 ### Configuration

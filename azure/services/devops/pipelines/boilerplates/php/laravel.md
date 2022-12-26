@@ -12,32 +12,27 @@ https://github.com/marketredesign/mrd-auth0-laravel/blob/develop/azure-pipelines
 **Refer:** `./azure-pipelines.yml`
 
 ```yml
+# yamllint disable rule:line-length
 ---
 trigger:
-  - main
-
-pool:
-  vmImage: ubuntu-22.04
-
-steps:
-  # ...
-
-  # TODO
-
-  # ...
-```
-
-```yml
-trigger:
-  - master
-  - release
+  branches:
+    include:
+      - feature/*
+      - fix/*
+      - master
+      - staging
+      - develop
 
 variables:
-  vmImageName: 'ubuntu-22.04'
+  # azureSubscription: subscription-id
+  # webAppName: web-app-name
+  vmImageName: ubuntu-22.04
+  # environmentName: environment-name
+  rootFolder: $(System.DefaultWorkingDirectory)
 
 stages:
   - stage: Build
-    displayName: Build Stage
+    displayName: Build stage
     variables:
       phpVersion: '8.1'
     jobs:
@@ -51,73 +46,44 @@ stages:
               sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
               sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
               sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
-              sudo apt-get install php$(phpVersion)-imagick php$(phpVersion)-bcmath php$(phpVersion)-mbstring php$(phpVersion)-curl php$(phpVersion)-gd php$(phpVersion)-zip php$(phpVersion)-dom
               php -version
-            displayName: 'Use PHP version $(phpVersion)'
+            workingDirectory: $(rootFolder)
+            displayName: Use PHP version $(phpVersion)
 
-          - script: |
-              curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-              sudo apt-get install -y build-essential debconf-utils nodejs
-            displayName: 'Installing System Dependencies'
+          - script: composer install --no-interaction --prefer-dist
+            workingDirectory: $(rootFolder)
+            displayName: Composer install
 
-          - script: |
-              sudo apt-get -y remove composer
-              sudo wget https://getcomposer.org/composer.phar -O /usr/local/bin/composer
-              sudo chmod +x /usr/local/bin/composer
-              export PATH=$PATH:~/usr/local/bin/
-              sudo composer self-update
-              composer --version
-              composer install --no-interaction --prefer-dist --no-suggest
-            displayName: 'Installing Package Dependencies'
+          # - task: ArchiveFiles@2
+          #   displayName: Archive files
+          #   inputs:
+          #     rootFolderOrFile: $(rootFolder)
+          #     includeRootFolder: false
+          #     archiveType: zip
+          #     archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+          #     replaceExistingArchive: true
 
-          - script: |
-              touch database/database.sqlite
-              cp .env.example .env
-              sed -i 's/DB_CONNECTION=mysql/DB_CONNECTION=sqlite/gi' .env
-              sed -i 's/DB_DATABASE=laravel/#DB_DATABASE=laravel/gi' .env
-              sed '/DB_CONNECTION=sqlite/ a DB_FOREIGN_KEYS=false' .env
-            displayName: 'Setting Up Application Environment'
+          # - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+          #   displayName: Upload package
+          #   artifact: drop
 
-          - script: |
-              php artisan key:generate
-              php artisan migrate --force --seed
-            displayName: 'Running Migrations'
-
-          - script: |
-              sudo npm i -g npm
-              sudo chown -R vsts:vsts ~/.npm
-              sudo chown -R vsts:vsts ~/.config
-              npm install
-              npm run production
-              node -v
-            displayName: 'Generating build assets'
-
-          - script: vendor/bin/phpunit --testdox --verbose --log-junit tests/Results/TEST-phpunit-junit.xml
-            displayName: 'Running Unit Test'
-
-          - task: PublishTestResults@2
-            inputs:
-              testRunner: 'JUnit'
-              testResultsFiles: '**/TEST-*.xml'
-              searchFolder: '$(System.DefaultWorkingDirectory)/tests/Results'
-              mergeTestResults: false
-            condition: always()
-
-  - stage: DeployRelease
-    displayName: Deploy Release Stage
-    dependsOn: Build
-    condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/release'))
-    jobs:
-      - job: DeployReleaseJob
-        pool:
-          vmImage: $(vmImageName)
-        steps:
-          - script: echo Release
-          - task: SSH@0
-            inputs:
-              sshEndpoint: 'DEN-US-PORTAL Homolog'
-              runOptions: 'commands'
-              commands: './deploy.sh || true'
-              failOnStdErr: false
-              readyTimeout: '90000'
+  # - stage: Deploy
+  #   displayName: Deploy Web App
+  #   dependsOn: Build
+  #   condition: succeeded()
+  #   jobs:
+  #     - deployment: DeploymentJob
+  #       pool:
+  #         vmImage: $(vmImageName)
+  #       environment: $(environmentName)
+  #       strategy:
+  #         runOnce:
+  #           deploy:
+  #             steps:
+  #               - task: AzureWebApp@1
+  #                 displayName: Deploy Azure Web App
+  #                 inputs:
+  #                   azureSubscription: $(azureSubscription)
+  #                   appName: $(webAppName)
+  #                   package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
 ```

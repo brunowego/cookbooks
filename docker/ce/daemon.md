@@ -2,8 +2,6 @@
 
 ## Dependencies
 
-### Dependencies
-
 - Ubuntu
   - [Software Properties Common](/apt/software-properties-common.md#installation)
 - Windows

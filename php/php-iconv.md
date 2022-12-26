@@ -39,10 +39,16 @@ php -i | grep '^iconv$' -A 9
 
 ### Issues
 
-#### TBD
+#### Missing iconv
 
 ```log
+configure: error: Please specify the install prefix of iconv with --with-iconv=<DIR>
 Error: Command failed: ./configure '--with-php-config=~/.phpbrew/php/8.1-dev/bin/php-config' returns: checking for libiconv... no
 ```
 
-TODO
+```sh
+phpbrew -d install \
+  <...> \
+  # Homebrew
+  +iconv="$(brew --prefix libiconv)"
+```

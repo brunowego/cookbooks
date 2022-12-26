@@ -39,17 +39,40 @@ curl -L 'https://phar.phpunit.de/phpunit.phar' -o /usr/local/bin/phpunit && \
 phpunit -h
 ```
 
-### Configuration
+<!-- ### Configuration
 
 ```sh
 # Git ignore
 echo '.phpunit.result.cache' >> ~/.gitignore_global
-```
+``` -->
 
 ### Usage
 
 ```sh
 phpunit \
-  --verbose \
+  -v \
   --debug
+```
+
+## Library
+
+### Commands
+
+```sh
+./vendor/bin/phpunit -h
+```
+
+### Configuration
+
+```sh
+echo '/phpunit.report.xml' >> ./.gitignore
+```
+
+### Usage
+
+```sh
+./vendor/bin/phpunit \
+ --log-junit ./phpunit.report.xml \
+ -v \
+ --testdox
 ```
