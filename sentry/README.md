@@ -303,7 +303,7 @@ kubectl scale deployment sentry-snuba-outcomes-consumer \
   --execute
 ```
 
-###### Active Consumers Stop
+###### Active Consumers Stop 1
 
 ```sh
 #
@@ -340,7 +340,7 @@ kubectl scale deployment sentry-post-process-forward \
   --execute
 ```
 
-###### Active Consumers Stop
+###### Active Consumers Stop 2
 
 ```sh
 #
@@ -562,7 +562,6 @@ kubectl describe pod sentry-sentry-redis-master-0
 tag:kubernetes.io/created-for/pvc/name : redis-data-sentry-sentry-redis-master-0
 
 kubectl describe pod sentry-sentry-redis-slave-0
-
 
 kubectl describe pod sentry-sentry-redis-slave-1
 ``` -->

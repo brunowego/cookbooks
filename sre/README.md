@@ -138,14 +138,14 @@ https://cloud.google.com/blog/products/gcp/applying-the-escalation-policy-cre-li
 https://cloud.google.com/blog/products/gcp/an-example-escalation-policy-cre-life-lessons
 -->
 
-## Content
+## Articles
 
 - [How Complex Systems Fail](https://how.complexsystems.fail/)
 
 ## Tools
 
-- [BLAMELESS](https://www.blameless.com)
-- [Gremlin](https://www.gremlin.com)
+- [BLAMELESS](https://blameless.com)
+- [Gremlin](https://gremlin.com)
 
 ## Terms
 
@@ -259,20 +259,17 @@ Use error budgets
 
 ## Principles
 
-1. SRE needs Service Level Objectives (SLO), with consequences.
-2. SREs have time to make tomorrow better than today.
-
-- SLOs and Error Budgets are the first step.
-- The next step is staffing an SRE role.
-- Real responsibility.
-- Once you have SREs: make sure they know that their job is not to suffer under operation load, but to make each day brighter.
-- "Brighter" might mean different things: It depends on what your SREs find most useful to do.
-
-3. SRE teams have the ability to regulate their workload.
-
-- Your teams need to be able to prioritize and do the work.
-- Each new system to maintain has a human cost.
-- Must be abre to push-back on unreliable practices and systems.
+- SRE needs Service Level Objectives (SLO), with consequences
+- SREs have time to make tomorrow better than today
+  - SLOs and Error Budgets are the first step.
+  - The next step is staffing an SRE role.
+  - Real responsibility.
+  - Once you have SREs: make sure they know that their job is not to suffer under operation load, but to make each day brighter.
+  - "Brighter" might mean different things: It depends on what your SREs find most useful to do.
+- SRE teams have the ability to regulate their workload.
+  - Your teams need to be able to prioritize and do the work.
+  - Each new system to maintain has a human cost.
+  - Must be abre to push-back on unreliable practices and systems.
 
 ## Troubleshooting
 

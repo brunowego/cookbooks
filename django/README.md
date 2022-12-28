@@ -412,7 +412,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 cat << EOF > ./polls/views.py
 from django.http import HttpResponse
 
-
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
 EOF
@@ -421,7 +420,6 @@ EOF
 cat << EOF > ./polls/urls.py
 from django.urls import path
 from . import views
-
 
 urlpatterns = [
     path('', views.index, name='index'),

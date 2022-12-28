@@ -1,4 +1,4 @@
-# What happens when...
+# What happens when
 
 ## Links
 

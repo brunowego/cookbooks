@@ -1,6 +1,6 @@
-## Themes
+# Themes
 
-### Configuration
+## Configuration
 
 **_Dependencies:_** [GNU Wget](/gnu-wget.md) and Vim.
 
@@ -9,11 +9,11 @@
 mkdir -p ~/.vim/{colors,autoload}
 ```
 
-### Colors
+## Colors
 
 **Note:** The latest version of Vim has a built-in theme.
 
-##### Monokai
+### Monokai
 
 ```sh
 # Download
@@ -23,7 +23,7 @@ wget 'https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monoka
 echo -e 'syntax enable\ncolorscheme monokai' >> ~/.vimrc
 ```
 
-##### OneHalfDark
+### OneHalfDark
 
 ```sh
 # Download
@@ -33,7 +33,7 @@ wget 'https://raw.githubusercontent.com/sonph/onehalf/master/vim/colors/onehalfd
 echo -e 'syntax enable\ncolorscheme onehalfdark' >> ~/.vimrc
 ```
 
-##### OneDark
+### OneDark
 
 ```sh
 # Download

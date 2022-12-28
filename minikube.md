@@ -263,7 +263,7 @@ sudo route \
 Unable to start VM. Please investigate and run 'minikube delete' if possible: creating host: create: precreate: Parallels Desktop edition could not be fetched!
 ``` -->
 
-#### TBD
+#### TBD1
 
 ```log
 StartHost failed, but will try again: creating host: create: Error creating machine: Error in driver during machine creation: IP address never found in dhcp leases file Temporary error: could not find an IP address for <mac-address>
@@ -271,7 +271,7 @@ StartHost failed, but will try again: creating host: create: Error creating mach
 
 TODO
 
-#### TBD
+#### TBD2
 
 ```log
 StartHost failed, but will try again: creating host: create: Error creating machine: Error in driver during machine creation: IP address never found in dhcp leases file Temporary error: open /var/db/dhcpd_leases: no such file or directory
@@ -283,7 +283,7 @@ TODO
 sudo vi /var/db/dhcpd_leases
 -->
 
-#### TBD
+#### TBD3
 
 ```log
 Unable to load cached images: loading cached images: stat /Users/brunowego/.minikube/cache/images/amd64/k8s.gcr.io/etcd_3.5.3-0: no such file or directory

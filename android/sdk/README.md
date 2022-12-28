@@ -131,7 +131,7 @@ Caused by: java.lang.ClassNotFoundException: javax.xml.bind.annotation.XmlSchema
 2. Network
 3. Verify Services
 
-#### TBD
+#### TBD1
 
 ```log
 Warning: java.net.ConnectException: Operation timed out (Connection timed out)
@@ -162,7 +162,7 @@ adbd cannot run as root in production builds
 6. Select: Nougat (Google APIs) -> Next
 7. Finish
 
-#### TBD
+#### TBD2
 
 ```log
 emulator: ERROR: AdbHostServer.cpp:102: Unable to connect to adb daemon on port: 5037
@@ -170,7 +170,7 @@ emulator: ERROR: AdbHostServer.cpp:102: Unable to connect to adb daemon on port:
 
 TODO
 
-#### TBD
+#### TBD3
 
 ```log
 Out of memory: Java heap space.
@@ -181,7 +181,7 @@ Please assign more memory to Gradle in the project's gradle.properties file.
 echo 'org.gradle.jvmargs=-Xmx4096m' >> ./gradle.properties
 ```
 
-#### TBD
+#### TBD4
 
 ```sh
 Execution failed for task ':app:validateSigningRelease'.

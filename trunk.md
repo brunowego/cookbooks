@@ -26,6 +26,10 @@ trunk -h
 
 ```sh
 #
+trunk login
+trunk whoami
+
+#
 trunk init
 
 #
@@ -35,10 +39,6 @@ trunk install
 ### Usage
 
 ```sh
-#
-trunk login
-trunk whoami
-
 #
 trunk config print
 
