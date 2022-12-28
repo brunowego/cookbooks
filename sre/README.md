@@ -186,7 +186,6 @@ https://cloud.google.com/blog/products/gcp/an-example-escalation-policy-cre-life
 
 SLIs drive SLOs which inform SLAs
 
-
 ## Service Matrix
 
 Frequency

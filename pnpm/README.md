@@ -39,7 +39,7 @@ pnpm init
 pnpm install
 
 #
-pnpm dev
+pnpm <command>
 ```
 
 <!--

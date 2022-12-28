@@ -11,7 +11,7 @@
 
 ## Providers
 
-- [Android Studio / QEMU System Emulator](#qemu-system-emulator-x86) 🌟
+- [Android Studio / QEMU System Emulator](#qemu-system-emulator) 🌟
 - [BlueStacks](/bluestacks.md)
 - [Genymotion](/genymotion.md)
 - [NoxPlayer](/noxplayer.md)

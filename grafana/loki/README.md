@@ -6,6 +6,7 @@ https://medium.com/nerd-for-tech/logging-at-scale-in-kubernetes-using-grafana-lo
 
 ## Links
 
+- [Code Repository](https://github.com/grafana/loki)
 - [Main Website](https://grafana.com/oss/loki/)
 
 ## Videos
@@ -16,7 +17,7 @@ https://medium.com/nerd-for-tech/logging-at-scale-in-kubernetes-using-grafana-lo
 
 ### References
 
-- [Chart Repository](https://github.com/grafana/helm-charts/tree/main/charts/loki)
+- [Helm Repository](https://github.com/grafana/loki/tree/main/production/helm/loki)
 
 ### Repository
 
@@ -25,38 +26,41 @@ helm repo add grafana 'https://grafana.github.io/helm-charts'
 helm repo update
 ```
 
-### Dependencies
-
-- Assuming there is already a `logging-system` namespace.
-
 ### Install
 
 ```sh
+#
+kubectl create ns logging-system
+# kubectl create ns logging
+
+#
+helm search repo -l grafana/loki
+
 #
 export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-helm install loki grafana/loki \
+helm upgrade loki grafana/loki \
   --namespace logging-system \
-  --version 2.6.0 \
+  --version 3.8.0 \
   -f <(cat << EOF
+write:
+  replicas: 1
+
+read:
+  replicas: 1
+
 ingress:
   enabled: true
+  ingressClassName: nginx
   hosts:
-  - host: loki.${DOMAIN}
-    paths:
-    - /
-
-persistence:
-  enabled: true
-
-replicas: 1
+  - loki.${DOMAIN}
 EOF
 )
 ```
 
-### Configuration
+<!-- ### Configuration
 
 ```sh
 #
@@ -128,12 +132,12 @@ config:
     shared_store: filesystem
 EOF
 ))
-```
+``` -->
 
 ### Status
 
 ```sh
-kubectl rollout status statefulset/loki \
+kubectl rollout status statefulset/loki-write \
   -n logging-system
 ```
 
@@ -141,24 +145,24 @@ kubectl rollout status statefulset/loki \
 
 ```sh
 kubectl logs \
-  -l 'release=loki' \
+  -l 'app.kubernetes.io/component=write,app.kubernetes.io/instance=loki' \
   -n logging-system \
   -f
 ```
 
-### Validation
+<!-- ### Validation
 
 ```sh
 #
 kubectl run -it --rm \
   logcli \
-  --image docker.io/grafana/logcli:main-236ed18-amd64 \
+  --image docker.io/grafana/logcli:main-0f139e2-arm64 \
   --env LOKI_ADDR='http://loki-headless.logging-system:3100' \
   --restart 'Never' \
   -- labels
-```
+``` -->
 
-### Graph
+<!-- ### Graph
 
 **Dependencies:** [kubectl-graph](/kubectl/kubectl-graph.md), [Cypher Shell](/cypher-shell.md), [Neo4j](/neo4j.md#docker)
 
@@ -169,7 +173,7 @@ kubectl graph all \
     cypher-shell \
       -u neo4j \
       -p 'Pa$$w0rd!'
-```
+``` -->
 
 ### Delete
 
@@ -197,3 +201,37 @@ brew install loki
 ```sh
 loki -h
 ```
+
+### Configuration
+
+```sh
+#
+cat << EOF > ./config.yaml
+auth_enabled: false
+EOF
+```
+
+### Usage
+
+```sh
+#
+export LOKI_ADDR="http://loki.${DOMAIN}"
+
+#
+loki labels
+```
+
+<!-- ### Issues
+
+#### TBD
+
+```log
+failed parsing config: config.yaml,config/config.yaml does not exist, set config.file for custom config path
+```
+
+TODO
+
+```sh
+#
+loki -version
+``` -->

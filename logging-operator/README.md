@@ -4,6 +4,9 @@
 
 - [Code Repository](https://github.com/banzaicloud/logging-operator)
 - [Main Website](https://banzaicloud.com/products/logging-operator/)
+
+## Extend
+
 - [Grafana Dashboard](https://grafana.com/grafana/dashboards/7752)
 - [Logging Extensions](https://banzaicloud.com/docs/one-eye/logging-extensions/)
 
@@ -39,26 +42,16 @@ helm repo update
 ```sh
 #
 kubectl create ns logging-system
+# kubectl create ns logging
+
+#
+helm search repo -l banzaicloud-stable/logging-operator
 
 #
 helm install logging-operator banzaicloud-stable/logging-operator \
   --namespace logging-system \
-  --version 3.14.2 \
-  -f <(cat << EOF
-resources:
-  requests:
-    cpu: 100m
-    memory: 128Mi
-  limits:
-    cpu: 150m
-    memory: 256Mi
-EOF
-)
+  --version 3.17.10
 ```
-
-<!--
-createCustomResource: true
--->
 
 ### Prometheus Stack
 

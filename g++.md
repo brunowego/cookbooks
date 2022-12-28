@@ -1,6 +1,6 @@
 # g++
 
-### Related
+## Related
 
 - [GCC, the GNU Compiler Collection (gcc)](/gcc.md)
 

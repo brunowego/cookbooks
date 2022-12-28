@@ -23,7 +23,7 @@ https://blog.sentry.io/2018/07/17/source-code-fetching
 #### Dependencies
 
 - [Python 2](/python2.md)
-- [PostgreSQL](/postgresql.md)
+- [PostgreSQL](/postgresql/server.md)
 - [Redis](/redis.md)
 
 #### pip

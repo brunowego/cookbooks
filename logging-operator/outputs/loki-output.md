@@ -12,67 +12,6 @@
 
 ## Installation
 
-### Namespace-wide
-
-```sh
-#
-kubens '[ns-name]'
-
-#
-cat << EOF | kubectl apply \
-  -f -
-apiVersion: logging.banzaicloud.io/v1beta1
-kind: Output
-metadata:
-  name: loki-output
-spec:
-  loki:
-    url: http://loki-headless.logging-system:3100
-    buffer:
-      timekey: 1m
-      timekey_wait: 30s
-      timekey_use_utc: true
-    configure_kubernetes_labels: true
-EOF
-
-#
-kubectl get pods --show-labels
-
-#
-cat << \EOF | kubectl apply \
-  -f -
-apiVersion: logging.banzaicloud.io/v1beta1
-kind: Flow
-metadata:
-  name: my-app-flow
-spec:
-  localOutputRefs:
-  - loki-output
-  filters:
-  - tag_normaliser:
-      format: ${namespace_name}.${pod_name}.${container_name}
-  - parser:
-      remove_key_name_field: true
-      reserve_data: true
-      parse:
-        type: none
-  match:
-  - select: {}
-EOF
-
-#
-kubectl get output
-kubectl get flow
-```
-
-#### Delete
-
-```sh
-#
-kubectl delete flow my-app-flow
-kubectl delete output loki-output
-```
-
 ### Cluster-wide
 
 ```sh
@@ -86,7 +25,7 @@ metadata:
   name: loki-output
 spec:
   loki:
-    url: http://loki-headless.logging-system:3100
+    url: http://loki-write-headless.logging-system:3100
     buffer:
       timekey: 1m
       timekey_wait: 30s
@@ -95,7 +34,8 @@ spec:
 EOF
 
 #
-kubectl get ns
+kubectl get clusteroutput \
+  -n logging-system
 
 #
 cat << \EOF | kubectl apply \
@@ -107,25 +47,25 @@ metadata:
   name: my-app-flow
 spec:
   globalOutputRefs:
-  - loki-output
+    - loki-output
   filters:
-  - tag_normaliser:
-      format: ${namespace_name}.${pod_name}.${container_name}
-  - parser:
-      remove_key_name_field: true
-      reserve_data: true
-      parse:
-        type: none
+    - tag_normaliser:
+        format: ${namespace_name}.${pod_name}.${container_name}
+    - parser:
+        remove_key_name_field: true
+        reserve_data: true
+        parse:
+          type: none
   match:
-  # - exclude:
-  #     namespaces:
-  #     - default
-  #     - logging-system
-  - select: {}
+    # - exclude:
+    #     namespaces:
+    #     - default
+    #     - logging-system
+    - select: {}
 EOF
 
 #
-kubectl get clusteroutput,clusterflow \
+kubectl get clusterflow \
   -n logging-system
 ```
 
@@ -139,4 +79,68 @@ kubectl delete clusterflow my-app-flow \
 #
 kubectl delete clusteroutput loki-output \
   -n logging-system
+```
+
+### Namespace-wide
+
+```sh
+#
+kubens 'default'
+
+#
+cat << EOF | kubectl apply \
+  -f -
+apiVersion: logging.banzaicloud.io/v1beta1
+kind: Output
+metadata:
+  name: logging-demo-loki-output
+spec:
+  loki:
+    url: http://loki-write-headless.logging-system:3100
+    buffer:
+      timekey: 1m
+      timekey_wait: 30s
+      timekey_use_utc: true
+    configure_kubernetes_labels: true
+EOF
+
+#
+cat << \EOF | kubectl apply \
+  -f -
+apiVersion: logging.banzaicloud.io/v1beta1
+kind: Flow
+metadata:
+  name: logging-demo-flow
+spec:
+  localOutputRefs:
+    - logging-demo-loki-output
+  filters:
+    - tag_normaliser:
+        format: ${namespace_name}.${pod_name}.${container_name}
+    - parser:
+        remove_key_name_field: true
+        reserve_data: true
+        parse:
+          type: none
+  match:
+    - select: {}
+EOF
+
+#
+kubectl get output,flow
+
+#
+kubectl logs \
+  -l 'app.kubernetes.io/component=write,app.kubernetes.io/instance=loki' \
+  -n logging-system \
+  -f
+```
+
+#### Delete
+
+```sh
+#
+kubectl delete flow my-app-flow
+
+kubectl delete output loki-output
 ```

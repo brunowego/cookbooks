@@ -151,7 +151,7 @@ kubectl version --short
 #### Dependencies
 
 - Ingress Controller
-  - [NGINX](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm)
+  - [NGINX](/nginx/ingress-controller/README.md#helm)
 
 ### Usage
 

@@ -82,7 +82,7 @@ lens://app/extensions/install/lens-certificate-info
 
 ### Dependencies
 
-- [NGINX Ingress Controller](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm)
+- [NGINX Ingress Controller](/nginx/ingress-controller/README.md#helm)
 
 ### Repository
 

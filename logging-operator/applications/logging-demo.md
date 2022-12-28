@@ -16,9 +16,13 @@ helm repo update
 ### Install
 
 ```sh
+#
+helm search repo -l banzaicloud-stable/logging-demo
+
+#
 helm install logging-demo banzaicloud-stable/logging-demo \
   --namespace default \
-  --version 3.14.2 \
+  --version 3.17.10 \
   -f <(cat << EOF
 loggingOperator:
   controlNamespace: logging-system

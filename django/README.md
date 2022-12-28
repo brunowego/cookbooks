@@ -91,7 +91,7 @@ django-opentracing
 ### Dependencies
 
 - [Virtualenv](/virtualenv.md)
-- [PostgreSQL](/postgresql.md)
+- [PostgreSQL](/postgresql/server.md)
 
 ### Installation
 
@@ -209,7 +209,7 @@ DATABASES = {
 
 ##### PostgreSQL
 
-- [PostgreSQL](/postgresql.md#docker)
+- [PostgreSQL](/postgresql/server.md#docker)
 
 ```sh
 #

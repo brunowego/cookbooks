@@ -14,6 +14,12 @@
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install make
+```
+
 #### APT
 
 ```sh

@@ -7,6 +7,8 @@ https://developers.cardano.org/
 https://github.com/AmruthPillai/Reactive-Resume/tree/main/docs
 -->
 
+**Keywords:** Documentation
+
 ## Links
 
 - [Code Repository](https://github.com/facebook/docusaurus)
@@ -18,5 +20,5 @@ https://github.com/AmruthPillai/Reactive-Resume/tree/main/docs
 
 ```sh
 #
-npx @docusaurus/init@latest init [name] classic
+npx @docusaurus/init@latest init <name> classic
 ```

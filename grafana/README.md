@@ -159,18 +159,18 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 #
 helm install grafana grafana/grafana \
   --namespace grafana-system \
-  --version 6.45.1 \
+  --version 6.48.2 \
   -f <(cat << EOF
 adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
 
 ingress:
   enabled: true
   hosts:
-  - grafana.${DOMAIN}
+    - grafana.${DOMAIN}
   ingressClassName: nginx
 
 plugins:
-- grafana-piechart-panel
+  - grafana-piechart-panel
 EOF
 )
 ```

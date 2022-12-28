@@ -43,12 +43,6 @@ sudo zypper install -y git-core curl tar gzip make gcc-c++ libffi-devel libopens
 
 ### Installation
 
-#### Homebrew
-
-```sh
-brew install pyenv
-```
-
 #### Unix-like
 
 ##### Using Git
@@ -81,7 +75,6 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-
 eval "$(pyenv init --path)"
 ```
 

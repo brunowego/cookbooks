@@ -33,13 +33,6 @@ brew tap snyk/tap
 brew install snyk
 ```
 
-### Configuration
-
-```sh
-# DeepCode Cache ignore
-echo '/.dccache' >> ./.gitignore
-```
-
 ### Commands
 
 ```sh
@@ -58,6 +51,11 @@ snyk auth
 SNYK_TOKEN='<token>' snyk auth
 # or, using token
 snyk auth '<token>'
+# or, set API token
+snyk config set api='<auth-token>'
+
+# DeepCode Cache ignore
+echo '/.dccache' >> ./.gitignore
 ```
 
 ### Configuration
@@ -67,7 +65,6 @@ snyk auth '<token>'
 snyk config
 
 #
-snyk config set api='<auth-token>'
 snyk config set disable-analytics=true
 
 #

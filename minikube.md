@@ -184,8 +184,8 @@ minikube addons list
 
 ##### NGINX Ingress Controller
 
-1. [Using Helm](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm)
-2. [Using Build-in](/kubernetes/ingress-controllers/ingress-nginx/README.md#minikube)
+1. [Using Helm](/nginx/ingress-controller/README.md#helm)
+2. [Using Build-in](/nginx/ingress-controller/README.md#minikube)
 
 #### Mount
 

@@ -1,0 +1,7 @@
+---
+default: true
+no-hard-tabs: false
+line-length: false
+
+no-duplicate-heading:
+  siblings_only: true

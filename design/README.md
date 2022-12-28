@@ -2,7 +2,7 @@
 
 <!--
 https://cycode.com
-https://www.commandbar.com/
+https://commandbar.com/
 https://stepsize.com/
 https://twingate.com/
 https://henkiz.twingate.com/networks
@@ -73,7 +73,7 @@ login
 https://cal.com/signup
 https://app.s.unit.sh/signup
 https://signup.corellium.com/
-https://www.tidio.com/panel/register
+https://tidio.com/panel/register
 -->
 
 ## Links

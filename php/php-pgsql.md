@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-- [PostgreSQL](/postgresql.md)
+- [PostgreSQL](/postgresql/server.md)
 
 ## Installation
 

@@ -2,8 +2,8 @@
 
 ## Glossary
 
-- Instituição de pagamento (IP)
+- Payment Institution (PI)
 
-<!--
-Backoffice
--->
+### Portuguese
+
+- Instituição de Pagamento (IP)

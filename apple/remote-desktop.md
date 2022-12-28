@@ -1,4 +1,4 @@
-# Remote Desktop
+# Apple Remote Desktop
 
 **Keywords** macOS
 

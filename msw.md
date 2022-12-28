@@ -1,5 +1,9 @@
 # Mock Service Worker (MSW)
 
+<!--
+https://github.com/search?o=desc&q=filename%3Apackage.json+%22next%22+%22msw%22+%22typescript%22+path%3Aapps&s=indexed&type=Code
+-->
+
 **Keywords:** Mocking
 
 ## Links

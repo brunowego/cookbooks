@@ -1,5 +1,9 @@
 # Playwright
 
+<!--
+https://github.com/allmycal/allmycal.com/tree/main/apps/web/playwright
+-->
+
 **Keywords:** End-to-End (E2E), Integration
 
 ## Alternatives

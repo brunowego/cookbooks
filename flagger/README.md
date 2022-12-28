@@ -36,7 +36,7 @@ kubectl apply -f 'https://raw.githubusercontent.com/fluxcd/flagger/main/artifact
 
 #### NGINX Ingress Controller
 
-**Dependencies:** [NGINX Ingress Controller](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm) and [Prometheus](/prometheus/README.md#helm)
+**Dependencies:** [NGINX Ingress Controller](/nginx/ingress-controller/README.md#helm) and [Prometheus](/prometheus/README.md#helm)
 
 ```sh
 #

@@ -4,15 +4,9 @@
 
 ### Dependencies
 
-- [PostgreSQL](/postgresql.md#Docker)
-- [Python 3](/python3.md#Docker)
-
-#### APK
-
-```sh
-sudo apk update
-sudo apk add postgresql-dev g++ python3-dev
-```
+- [Python Development](/python/dev.md)
+- [g++](/g++.md)
+- [PostgreSQL Client](/postgresql/client.md#cli)
 
 ### Installation
 
@@ -41,6 +35,14 @@ echo 'psycopg2-binary==2.8.6' >> ./requirements.txt
 ```
 
 ### Issues
+
+#### Missing Library
+
+```log
+Error: pg_config executable not found.
+```
+
+Just install [PostgreSQL Develop](/postgresql/dev.md#library) library.
 
 #### Python Headers
 

@@ -10,7 +10,8 @@
 ### Dependencies
 
 - [OpenJDK](/openjdk.md) (v8)
-- [Kernel-based Virtual Machine (KVM)](/kvm.md)
+- Linux
+  - [Kernel-based Virtual Machine (KVM)](/kvm.md)
 
 ### Installation
 

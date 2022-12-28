@@ -19,7 +19,7 @@ https://github.com/rancher-sandbox/rancher-desktop
 
 ### Dependencies
 
-- [NGINX Ingress Controller](/kubernetes/ingress-controllers/ingress-nginx/README.md#helm)
+- [NGINX Ingress Controller](/nginx/ingress-controller/README.md#helm)
 - [cert-manager](/cert-manager/README.md#helm)
 
 ### Repository

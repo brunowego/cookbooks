@@ -1,11 +1,5 @@
 # Grafana Loki Stack
 
-<!--
-https://grafana.github.io/loki/charts/
-
-helm3 upgrade --install loki -n logging --create-namespace grafana/loki-stack --version 2.4.1 --set grafana.enabled=true
--->
-
 ## Links
 
 - [Code Repository](https://github.com/grafana/helm-charts/tree/main/charts/loki-stack)
@@ -24,16 +18,19 @@ helm repo add grafana 'https://grafana.github.io/helm-charts'
 helm repo update
 ```
 
-### Dependencies
-
-- Assuming there is already a `logging` namespace.
-
 ### Install
 
 ```sh
+#
+kubectl create ns logging-system
+# kubectl create ns logging
+
+#
+helm search repo -l grafana/loki-stack
+
 # Loki Stack (Loki, Promtail, Grafana)
 helm install loki-stack grafana/loki-stack \
-  --namespace logging \
+  --namespace logging-system \
   --version 2.4.1 \
   -f <(cat << EOF
 grafana:
@@ -43,7 +40,7 @@ EOF
 
 # Loki, Fluent Bit, Grafana
 helm install loki-stack grafana/loki-stack \
-  --namespace logging \
+  --namespace logging-system \
   --version 2.4.1 \
   -f <(cat << EOF
 grafana:
@@ -62,7 +59,7 @@ EOF
 
 ```sh
 kubectl rollout status deploy/loki-grafana \
-  -n logging
+  -n logging-system
 ```
 
 ### Logs
@@ -70,7 +67,7 @@ kubectl rollout status deploy/loki-grafana \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/instance=loki' \
-  -n logging \
+  -n logging-system \
   -f
 ```
 
@@ -79,12 +76,12 @@ kubectl logs \
 ```sh
 kubectl get secret loki-grafana \
   -o=jsonpath='{.data.admin-user}' \
-  -n logging | \
+  -n logging-system | \
     base64 -d; echo
 
 kubectl get secret loki-grafana \
   -o=jsonpath='{.data.admin-password}' \
-  -n logging | \
+  -n logging-system | \
     base64 -d; echo
 ```
 
@@ -92,14 +89,16 @@ kubectl get secret loki-grafana \
 
 ```sh
 kubectl port-forward svc/loki-grafana 3000:80 \
-  -n logging
+  -n logging-system
 ```
-
-<!-- {namespace="logging"} -->
 
 ### Delete
 
 ```sh
-helm uninstall loki-stack \
-  -n logging
+helm uninstall logging \
+  -n logging-system
+
+kubectl delete ns logging-system \
+  --grace-period=0 \
+  --force
 ```

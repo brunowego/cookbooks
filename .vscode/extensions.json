@@ -8,6 +8,7 @@
     "DavidAnson.vscode-markdownlint",
     "hashicorp.terraform",
     "bierner.markdown-mermaid",
-    "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
+    "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+    "snyk-security.snyk-vulnerability-scanner"
   ]
 }
