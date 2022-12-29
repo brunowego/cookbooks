@@ -73,6 +73,7 @@ flutter -h
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
+# Flutter
 # For Brave Browse
 export CHROME_EXECUTABLE='/Applications/Brave Browser.app/Contents/MacOS/Brave Browser'
 # or, Brave Browser Dev
@@ -94,15 +95,18 @@ flutter config --android-sdk "$ANDROID_SDK_ROOT"
 flutter doctor --android-licenses
 
 #
+flutter channel stable # master, dev, beta
+
+#
 flutter doctor
 # or, with verbose
 flutter doctor -v
 
 #
-flutter channel stable # master, dev, beta
+flutter upgrade
 
 #
-flutter upgrade
+cat ~/.flutter
 ```
 
 <!--

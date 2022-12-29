@@ -43,12 +43,6 @@ https://intercom.com/
 - [trafshow](/trafshow.md)
 - [vnStat](/vnstat.md)
 
-## Password Management
-
-- [1Password](/1password.md)
-- [Bitwarden](/bitwarden.md)
-- [LastPass](https://lastpass.com)
-
 ## Local Kubernetes
 
 - [k3d](/k3d.md)
@@ -109,7 +103,7 @@ https://intercom.com/
 ## Golang Debugger
 
 - [Delve](/delve.md)
-- [GNU Debugger (GDB)](/gnu-gdb.md)
+- [GNU Debugger (GDB)](/gnu/gdb.md)
 
 ## Data Collection
 

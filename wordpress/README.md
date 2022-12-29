@@ -265,7 +265,7 @@ docker volume rm wordpress-mysql-data wordpress-data wordpress-nginx-conf
 ### Dependencies
 
 - [WP-CLI](/wp-cli.md)
-- [GNU Wget](/gnu-wget.md)
+- [GNU Wget](/gnu/wget.md)
 - PHP
   - [PHP FastCGI Process Manager (FPM)](/php-fpm.md)
 - Database

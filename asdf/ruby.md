@@ -2,8 +2,8 @@
 
 ## Dependencies
 
-- [GNU Core Utilities](/gnu-coreutils.md)
-- [GNU Pretty Good Privacy (PGP)](/gnu-pg.md)
+- [GNU Core Utilities](/gnu/coreutils.md)
+- [GNU Pretty Good Privacy (PGP)](/gnu/pg.md)
 
 ## Installation
 

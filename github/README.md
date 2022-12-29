@@ -104,14 +104,6 @@ gh repo create \
   --public
 ```
 
-### Tips
-
-#### Clone All Repos
-
-```sh
-gh repo list [owner] --limit 1000 | awk '{print $1; }' | xargs -L1 gh repo clone
-```
-
 ## Tips
 
 ### Clone with GitHub Token

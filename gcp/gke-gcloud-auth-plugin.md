@@ -8,7 +8,7 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 - Ubuntu
   - [cURL](/curl.md)
-  - [GNU Privacy Guard (GnuPG / GPG) or GNU Pretty Good Privacy (PGP)](/gnu-pg.md)
+  - [GNU Privacy Guard (GnuPG / GPG) or GNU Pretty Good Privacy (PGP)](/gnu/pg.md)
 
 ## Installation
 

@@ -8,4 +8,4 @@
 Error: Command failed: phpize
 ```
 
-Just install [GNU Autoconf](/gnu-autoconf.md).
+Just install [GNU Autoconf](/gnu/autoconf.md).

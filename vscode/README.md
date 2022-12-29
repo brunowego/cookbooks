@@ -85,6 +85,10 @@ ln -s "$HOME"/Library/Application\ Support/Code/User/settings.json "$HOME"/.vsco
 
 ## CLI
 
+<!--
+ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
+-->
+
 ### Installation
 
 Comes with application installation.

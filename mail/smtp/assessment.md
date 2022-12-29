@@ -1,35 +1,11 @@
-# Simple Mail Transfer Protocol (SMTP)
+# SMTP Assessment
 
-<!--
-https://github.com/hideckies/exploit-notes/blob/main/src/exploit/SMTP-Pentesting.md
--->
-
-## References
-
-- [SMTP transport example](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol#SMTP_transport_example)
-
-## Glossary
-
-- Top-Level Domain (TLD)
-
-## Connections
-
-| Port | Security    |
-| ---- | ----------- |
-| 25   | Unencrypted |
-| 465  | SSL         |
-| 587  | TLS         |
-
-## Assessment
+## Testing
 
 ```sh
 #
 export TLD='sendgrid.net'
-```
 
-### Test
-
-```sh
 #
 nslookup -type=mx "$TLD"
 # or

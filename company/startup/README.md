@@ -33,6 +33,7 @@ Pró-Labore
 - Annual Recurring Revenue (ARR)
 - Average Ticket Price (ATP)
 - Business Development (BizDev)
+- Business Partner (BP)
 - Central Standard Time (CST)
 - Cost Per Thousand (CPM)
 - Costumer Success (CS)

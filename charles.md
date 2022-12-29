@@ -41,6 +41,22 @@ sudo yum -y install charles-proxy
 
 ### Tips
 
+#### Proxy on Terminal
+
+```sh
+#
+export PROXY_HOST='127.0.0.1:8888'
+
+# single
+export http_proxy="$PROXY_HOST"
+
+# multiple
+export \
+  http_proxy="$PROXY_HOST" \
+  https_proxy="$PROXY_HOST" \
+  no_proxy='localhost,127.0.0.1'
+```
+
 #### Add CLI
 
 ```sh

@@ -39,6 +39,8 @@ choco install -y androidstudio
 ```sh
 # Darwin
 open -a /Applications/Android\ Studio.app
+# or, open project
+open -a /Applications/Android\ Studio.app ./
 ```
 
 #### Wizard
@@ -110,8 +112,6 @@ This does not match the IDE setting (controlled by property "idea.case.sensitive
 ```sh
 echo 'idea.case.sensitive.fs=true' >> /Applications/Android\ Studio.app/Contents/bin/idea.properties
 ```
-
-### Issues
 
 #### Insufficient Storage
 

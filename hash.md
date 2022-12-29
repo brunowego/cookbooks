@@ -19,7 +19,7 @@
 
 ## Generate
 
-**Dependencies:** [GNU Core Utilities](/gnu-coreutils.md)
+**Dependencies:** [GNU Core Utilities](/gnu/coreutils.md)
 
 ```sh
 #

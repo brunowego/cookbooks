@@ -849,9 +849,9 @@ kubectl delete ns matomo --grace-period=0 --force
 
 ### Dependencies
 
-- [GNU Wget](/gnu-wget.md)
+- [GNU Wget](/gnu/wget.md)
 - [PHP](/php.md) and [PHP-FPM](/php-fpm#configuration)
-- [GNU time](/gnu-time.md)
+- [GNU time](/gnu/time.md)
 - [MySQL](/mysql.md)
 - [Apache HTTP Server (HTTPd)](/apache/httpd.md) or [NGINX](/nginx.md)
 

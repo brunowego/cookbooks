@@ -24,7 +24,7 @@
 #### Linux Library
 
 - [cURL](/curl.md)
-- [GNU Tar](/gnu-tar.md)
+- [GNU Tar](/gnu/tar.md)
 
 ### Installation
 

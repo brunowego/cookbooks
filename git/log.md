@@ -1,15 +1,29 @@
 # Git Log
 
-## Tips
-
-### Get Git Authors
+## Usage
 
 ```sh
-# Emails
-git log --pretty=format:'%h %ce %ae'
+# Authors
+git log | grep Author: | sort -u
 
 # Names
 git shortlog -s | cut -c8-
-# or
-git shortlog -s -n --all --no-merges
 ```
+
+## Tips
+
+### Scan Projects
+
+```sh
+#
+find . \
+  -type d \
+  -name '.git' \
+  -exec bash \
+  -c 'cd $(dirname "{}"); git log | grep Author: | sort -u' \;
+```
+
+<!--
+https://dedupelist.com/#startresults
+https://textfixer.com/tools/remove-duplicate-lines.php
+-->

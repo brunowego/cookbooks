@@ -15,6 +15,15 @@
 
 ### Installation
 
+#### Using Android Studio 🌟
+
+1. Tools -> SDK Manager
+2. Tab: SDK Tools
+   - Check "Show Package Details"
+3. Expand "Android SDK Command-line Tools (latest)"
+   - Check "Android SDK Command-line Tools (latest)"
+   - Click: Apply
+
 #### Homebrew
 
 ```sh
@@ -27,31 +36,9 @@ brew install --cask android-sdk
 choco install -y android-sdk
 ```
 
-#### Using Android Studio 🌟
-
-1. Tools -> SDK Manager
-2. Tab: SDK Tools
-   - Check "Show Package Details"
-3. Expand "Android SDK Command-line Tools (latest)"
-   - Check "Android SDK Command-line Tools (latest)"
-   - Click: Apply
-
 ### Environment
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
-
-#### Using Homebrew
-
-```sh
-# Android SDK
-export ANDROID_HOME='/usr/local/share/android-sdk'
-export ANDROID_SDK_ROOT="$ANDROID_HOME"
-export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
-```
-
-```sh
-sudo su - "$USER"
-```
 
 #### Using Android Studio
 
@@ -61,6 +48,19 @@ export ANDROID_HOME="$HOME/Library/Android/sdk" # for Homebrew
 # export ANDROID_HOME="$HOME"/Android/Sdk # for Linux
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
 export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH"
+```
+
+```sh
+sudo su - "$USER"
+```
+
+#### Using Homebrew
+
+```sh
+# Android SDK
+export ANDROID_HOME='/usr/local/share/android-sdk'
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
 ```
 
 ```sh
@@ -94,6 +94,27 @@ adb shell getprop
 
 ### Issues
 
+#### TBD
+
+```log
+avb_ops_user.cpp:217: ERROR: Error writing data.
+avb_user_verity.c:205: ERROR: Error writing to partition 'vbmeta'
+Skipping /system for remount
+[liblp]bool android::fs_mgr::WritePrimaryMetadata(int, const android::fs_mgr::LpMetadata &, uint32_t, const std::string &, const std::function<bool (int, const std::string &)> &) write 740 bytes failed: Operation not permitted
+[libfs_mgr]add partition scratch
+[liblp]bool android::fs_mgr::WritePrimaryMetadata(int, const android::fs_mgr::LpMetadata &, uint32_t, const std::string &, const std::function<bool (int, const std::string &)> &) write 740 bytes failed: Operation not permitted
+[libfs_mgr]add partition scratch
+[liblp]bool android::fs_mgr::WritePrimaryMetadata(int, const android::fs_mgr::LpMetadata &, uint32_t, const std::string &, const std::function<bool (int, const std::string &)> &) write 740 bytes failed: Operation not permitted
+[libfs_mgr]add partition scratch
+Can not mount overlayfs for partitions: No such file or directory
+failed to remount partition dev:/dev/block/dm-3 mnt:/vendor: Permission denied
+failed to remount partition dev:/dev/block/dm-2 mnt:/product: Permission denied
+failed to remount partition dev:/dev/block/dm-1 mnt:/system_ext: Permission denied
+remount failed
+```
+
+TODO
+
 #### Missing Android Home Binary Files
 
 ```log
@@ -125,11 +146,14 @@ Caused by: java.lang.ClassNotFoundException: javax.xml.bind.annotation.XmlSchema
 	...
 ```
 
-**macOS:**
+**Option 1:**
 
-1. System Preferences
-2. Network
-3. Verify Services
+- macOS
+  1. System Preferences
+  2. Network
+  3. Verify Services
+
+**Option 2:** `jabba alias default openjdk@1.9.0`
 
 #### TBD1
 
@@ -218,6 +242,29 @@ storeFile=release.keystore
 storePassword=PASSWORD2
 
 EOF
+```
+
+#### Invalid Certificate (PKIX)
+
+```log
+Warning: Failed to download any source lists!
+Warning: IO exception while downloading manifest
+Warning: IO exception while downloading manifest
+Warning: Still waiting for package manifests to be fetched remotely.
+```
+
+```sh
+#
+sdkmanager --list --verbose
+```
+
+```log
+Info: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+```
+
+```sh
+# Try
+jabba use openjdk@1.17.0
 ```
 
 ### Uninstall

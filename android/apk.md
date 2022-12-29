@@ -3,7 +3,7 @@
 ## Tools
 
 - APK Downloader
-  - [APK Tools](https://apk.tools/)
+  - [APK Tools](https://apk.tools) 🌟
   - [APKPure](https://apkpure.com)
   - [GooglePlay](/googleplay.md)
   - [gplaydl](/gplaydl.md)

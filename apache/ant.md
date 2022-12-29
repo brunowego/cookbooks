@@ -4,7 +4,7 @@
 
 ## References
 
-- Replacement for [GNU Make](/gnu-make.md)
+- Replacement for [GNU Make](/gnu/make.md)
 
 ## CLI
 

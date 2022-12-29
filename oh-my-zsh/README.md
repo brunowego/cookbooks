@@ -10,10 +10,10 @@ https://github.com/superbrothers/zsh-kubectl-prompt
 
 - [Z shell (Zsh)](/zsh.md)
 - [Git](/git/README.md)
-- [GNU Sed](/gnu-sed.md)
+- [GNU Sed](/gnu/sed.md)
 - Download Method
   - [cURL](/curl.md)
-  - [GNU Wget](/gnu-wget.md)
+  - [GNU Wget](/gnu/wget.md)
 
 ### Extend
 

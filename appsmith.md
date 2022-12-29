@@ -2,10 +2,6 @@
 
 **Keywords:** LCDP
 
-## Glossary
-
-- Low-Code Development Platform (LCDP)
-
 ## Links
 
 - [Code Repository](https://github.com/appsmithorg/appsmith)

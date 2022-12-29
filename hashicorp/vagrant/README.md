@@ -51,6 +51,9 @@ vagrant init
 # Start
 vagrant up
 
+#
+vagrant upload </path/to/file> </path/to/destination>
+
 # Shutdown
 vagrant halt
 ```

@@ -20,7 +20,7 @@ Stores, retrieves, generates, and synchronizes passwords securely.
 
 ### Dependencies
 
-- [GNU Privacy Guard (GnuPG / GPG) or GNU Pretty Good Privacy (PGP)](/gnu-pg.md)
+- [GNU Privacy Guard (GnuPG / GPG) or GNU Pretty Good Privacy (PGP)](/gnu/pg.md)
 
 ### Installation
 
@@ -45,7 +45,7 @@ man pass
 
 ### Initialize
 
-**Dependency:** [GnuPG / Gen Key](/gnu-pg.md#gen-key)
+**Dependency:** [GnuPG / Gen Key](/gnu/pg.md#gen-key)
 
 ```sh
 #

@@ -2,7 +2,7 @@
 
 ## References
 
-- [GNU Gettext](/gnu-gettext.md)
+- [GNU Gettext](/gnu/gettext.md)
 
 ## App
 

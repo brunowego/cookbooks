@@ -2,7 +2,7 @@
 
 ## Configuration
 
-**_Dependencies:_** [GNU Wget](/gnu-wget.md) and Vim.
+**_Dependencies:_** [GNU Wget](/gnu/wget.md) and Vim.
 
 ```sh
 #

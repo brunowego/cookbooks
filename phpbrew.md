@@ -23,7 +23,7 @@
 - [libxml2](/libxml2.md)
 - [BZip2](/bzip2.md)
 - [libzip](/libzip.md)
-- [GNU Wget](/gnu-wget.md)
+- [GNU Wget](/gnu/wget.md)
 - [OpenSSL](/openssl.md) (v1.1)
 - [mhash](/mhash.md)
 

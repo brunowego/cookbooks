@@ -6,7 +6,7 @@
 
 ## Dependencies
 
-- [GNU sed](/gnu-sed.md)
+- [GNU sed](/gnu/sed.md)
 
 ## Change Theme
 

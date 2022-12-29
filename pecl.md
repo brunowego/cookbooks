@@ -93,4 +93,4 @@ Cannot find autoconf. Please check your autoconf installation and the
 $PHP_AUTOCONF environment variable. Then, rerun this script.
 ```
 
-Install [GNU Autoconf](/gnu-autoconf.md)
+Install [GNU Autoconf](/gnu/autoconf.md)

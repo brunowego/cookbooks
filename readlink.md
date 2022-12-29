@@ -4,7 +4,7 @@
 
 ### Dependencies
 
-- [GNU Core Utilities](/gnu-coreutils.md)
+- [GNU Core Utilities](/gnu/coreutils.md)
 
 ### Usage
 

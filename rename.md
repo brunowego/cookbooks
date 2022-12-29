@@ -6,7 +6,7 @@
 
 ## References
 
-- [GNU sed](/gnu-sed#examples)
+- [GNU sed](/gnu/sed#examples)
 
 ## CLI
 

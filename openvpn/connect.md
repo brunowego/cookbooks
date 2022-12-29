@@ -14,6 +14,9 @@ https://www.slickvpn.com/tutorials/using-openvpn-with-ubuntu-mint-network-manage
 
 - [OpenVPN 3 Client for Linux](https://openvpn.net/cloud-docs/openvpn-3-client-for-linux/)
 - [Connecting to Access Server with Linux](https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-linux/)
+- Download
+  - [OpenVPN Connect for Windows](https://openvpn.net/client-connect-vpn-for-windows)
+  - [OpenVPN Connect for Windows](https://openvpn.net/client-connect-vpn-for-mac-os)
 
 ## App
 
@@ -21,7 +24,7 @@ https://www.slickvpn.com/tutorials/using-openvpn-with-ubuntu-mint-network-manage
 
 - Ubuntu- Ubuntu
   - [cURL](/curl.md)
-  - [GNU Privacy Guard (GnuPG / GPG) or GNU Pretty Good Privacy (PGP)](/gnu-pg.md)
+  - [GNU Privacy Guard (GnuPG / GPG) or GNU Pretty Good Privacy (PGP)](/gnu/pg.md)
 
 ### Installation
 
@@ -55,3 +58,39 @@ sudo yum -y install openvpn3-client
 ```sh
 choco install -y openvpn-connect
 ```
+
+### Usage
+
+#### Linux
+
+```sh
+#
+openvpn3 config-import --config <filename>.ovpn
+
+#
+openvpn3 configs-list
+
+#
+openvpn3 session-start --config-path /net/openvpn/v3/configuration/<profile>
+
+#
+openvpn3 sessions-list
+```
+
+### Issues
+
+#### TBD
+
+```log
+session-start: ** ERROR ** User authentication failed
+```
+
+TODO
+
+#### TBD
+
+```log
+Options error: Unrecognized option or missing or extra parameter(s) in <filename>.ovpn:4: data-ciphers (2.4.4)
+```
+
+TODO

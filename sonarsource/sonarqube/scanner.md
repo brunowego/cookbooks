@@ -22,7 +22,7 @@ https://github.com/Stashchenko/sonarqube/blob/dc356fb8550c1c8605ae49c5c10a2b0e53
 
 #### Unix-like
 
-- [GNU Wget](/gnu-wget.md)
+- [GNU Wget](/gnu/wget.md)
 - [UnZip](/unzip.md)
 
 ### Installation

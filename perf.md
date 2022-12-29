@@ -8,7 +8,7 @@
 
 ## Alternatives
 
-- [GNU Debugger (gdb)](/gnu-debugger.md)
+- [GNU Debugger (gdb)](/gnu/debugger.md)
 
 ## Books
 

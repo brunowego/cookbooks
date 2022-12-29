@@ -24,7 +24,6 @@ brew help
 
 ```sh
 #
-brew analytics
 brew analytics off
 ```
 

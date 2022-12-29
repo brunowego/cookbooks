@@ -56,15 +56,4 @@ dig <domain> -t txt
 
 #
 dig <domain> A +short
-
-#
-dig _dmarc.<domain> txt +noall +answer +short
-
-#
-dig +nocmd <domain> txt +multiline +noall +answer | awk -F '"' '/spf/{print $2}'
 ```
-
-<!--
-#
-dig default._domainkey.<domain> txt +nocmd +short | awk -F '"|;|=|\\\\' '{print $9$11}'
--->

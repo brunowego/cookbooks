@@ -20,7 +20,7 @@ https://github.com/bridgecrewio/checkov
 - **SAST:** [SonarQube](/sonarsource/sonarqube-ce.md), [Snyk Code](/cyber-security/tools/snyk.md)
 - **DAST:** [Burp Suite Community Edition (CE)](/cyber-security/tools/portswigger/burp-suite-ce.md), [OWASP Zed Attack Proxy (ZAP)](/cyber-security/tools/zaproxy.md)
 - **Packet Analyzer:** [Wireshark](/cyber-security/tools/wireshark.md)
-- **Network Scanner:** [Network Mapper (Nmap)](/nmap.md), [GNU Netcat](/gnu-netcat.md)
+- **Network Scanner:** [Network Mapper (Nmap)](/nmap.md), [GNU Netcat](/gnu/netcat.md)
 - **Middle Attack:** [Ettercap](/cyber-security/tools/ettercap.md)
 - **Penetration Test:** [Metasploit Framework](/metasploit-framework/README.md)
 - **SQL injection:** [sqlmap](/cyber-security/tools/sqlmap.md)

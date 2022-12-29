@@ -244,7 +244,7 @@ kubectl delete pv "$(kubectl get pv -o json | jq -r '.items[] | select(.spec.cla
 - Linux
   - [cURL](/curl.md)
 - Ubuntu
-  - [GNU Privacy Guard (GPG) or GNU Pretty Good Privacy (PGP)](/gnu-pg.md)
+  - [GNU Privacy Guard (GPG) or GNU Pretty Good Privacy (PGP)](/gnu/pg.md)
   - [Software Properties Common](/apt/software-properties-common.md#installation)
 - CentOS
   - [yum-utils](/yum-utils.md)

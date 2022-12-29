@@ -20,7 +20,7 @@ brew install stern
 
 ##### Dependencies
 
-- [GNU Tar](/gnu-tar.md)
+- [GNU Tar](/gnu/tar.md)
 
 ##### Installation
 

@@ -2,7 +2,7 @@
 
 ## Alternatives
 
-- [GNU Screen](/gnu-screen.md)
+- [GNU Screen](/gnu/screen.md)
 
 ## Links
 

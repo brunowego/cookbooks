@@ -75,6 +75,7 @@ Meta Selic / Taxa Selic
 - Depósito Interfinanceiro (DI) / Interbank Deposit (DI)
 - Sistema Especial de Liquidação e de Custódia (SELIC)
 - Sociedade Anônima (S.A.)
+- Classificação Nacional de Atividades Econômica (CNAE)
 
 ## Terms
 

@@ -5,8 +5,8 @@
 ### Dependencies
 
 - [OpenSSL](/openssl.md#cli) (v1.1)
-- [GNU Readline](/gnu-readline.md)
-- [GNU Multiple Precision (GMP)](/gnu-gmp.md)
+- [GNU Readline](/gnu/readline.md)
+- [GNU Multiple Precision (GMP)](/gnu/gmp.md)
 
 ### Installation
 

@@ -112,7 +112,7 @@ nping -h
 
 ### Usage
 
-**Tips:** Prefer use [GNU Netcat](/gnu-netcat.md) to test ports.
+**Tips:** Prefer use [GNU Netcat](/gnu/netcat.md) to test ports.
 
 ```sh
 # Operation system

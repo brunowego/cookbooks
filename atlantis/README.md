@@ -137,7 +137,7 @@ brew install atlantis
 
 ##### Dependencies
 
-- [GNU Wget](/gnu-wget.md)
+- [GNU Wget](/gnu/wget.md)
 - [UnZip](/unzip.md)
 
 ##### Install

@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=mXLrk0ipwz4
 
 - Linux
   - [cURL](/curl.md)
-  - [GNU Privacy Guard (GPG) or GNU Pretty Good Privacy (PGP)](/gnu-pg.md)
+  - [GNU Privacy Guard (GPG) or GNU Pretty Good Privacy (PGP)](/gnu/pg.md)
 
 ### Installation
 
