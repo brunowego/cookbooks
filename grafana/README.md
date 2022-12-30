@@ -280,7 +280,7 @@ grafana-server -h
 
 ```sh
 #
-grafana-cli --insecure plugins install [name]
+grafana-cli --insecure plugins install <name>
 
 #
 service grafana-server restart

@@ -11,9 +11,11 @@ https://public-dns.info/
 
 ## Tools
 
-- [Google Public DNS](https://dns.google/)
-- [nip.io - Dead simple wildcard DNS for any IP Address](https://nip.io/)
-<!-- xip.io -->
+- [Google Public DNS](https://dns.google)
+- Local
+  - [nip.io](https://nip.io)
+  - [sslip.io](https://sslip.io)
+  - [local.gd](https://local.gd)
 
 ### Propagation Check
 

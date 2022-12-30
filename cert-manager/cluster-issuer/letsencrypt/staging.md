@@ -18,13 +18,13 @@ cat << EOF | kubectl apply \
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
-  name: letsencrypt-local
+  name: letsencrypt-staging
 spec:
   acme:
     server: https://acme-staging-v02.api.letsencrypt.org/directory
     email: ${EMAIL}
     privateKeySecretRef:
-      name: letsencrypt-local
+      name: letsencrypt-staging
     solvers:
       - http01:
           ingress:
@@ -35,7 +35,7 @@ spec:
 EOF
 
 #
-kubectl describe clusterissuer letsencrypt-local | \
+kubectl describe clusterissuer letsencrypt-staging | \
   kubectl neat
 ```
 
@@ -43,11 +43,24 @@ kubectl describe clusterissuer letsencrypt-local | \
 
 ```sh
 #
+kubectl get ingress -A
+
+#
 kubectl annotate ingress \
   <ingress-name> \
-  cert-manager.io/cluster-issuer='letsencrypt-local' \
+  cert-manager.io/cluster-issuer='letsencrypt-staging' \
   -n <namespace>
 
 #
 kubectl get clusterissuer,certificates,certificaterequest,order,challenge -A
 ```
+
+## Issues
+
+### Invalid Solver Configuration
+
+```log
+Failed to determine a valid solver configuration for the set of domains on the Order: no configured challenge solvers can be used for this challenge
+```
+
+Change domain in `dnsNames`, ex.: `grafana.${DOMAIN}`.

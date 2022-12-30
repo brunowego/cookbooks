@@ -115,19 +115,22 @@ echo -n 'Pa$$w0rd!' | openssl md5
 
 ```sh
 #
-export DOMAIN='<domain>'
+export HOSTNAME='<host>'
 
 # List certs
 openssl s_client \
-  -connect "$DOMAIN":443 \
+  -connect "$HOSTNAME":443 \
   -showcerts
 
 # Export
 openssl s_client \
-  -connect "$DOMAIN":443 \
+  -connect "$HOSTNAME":443 \
   -showcerts \
-  -servername "$DOMAIN" < /dev/null 2>/dev/null | \
-    openssl x509 -outform DER > "$DOMAIN".der
+  -servername "$HOSTNAME" < /dev/null 2>/dev/null | \
+    openssl x509 -outform DER > "$HOSTNAME".der
+
+# Convert to PEM
+openssl x509 -inform DER -in "$HOSTNAME".der -out "$HOSTNAME".pem
 ```
 
 #### SSL Certificate Diff
@@ -137,13 +140,21 @@ openssl s_client \
 ```sh
 #
 openssl s_client \
-  -connect "$DOMAIN":443 \
+  -connect "$HOSTNAME":443 \
   -showcerts \
-  -servername "$DOMAIN" < /dev/null 2>/dev/null | \
-    openssl x509 -outform DER > "$DOMAIN"-new.der
+  -servername "$HOSTNAME" < /dev/null 2>/dev/null | \
+    openssl x509 -outform DER > "$HOSTNAME"-new.der
+
+# Convert to PEM
+openssl x509 -inform DER -in "$HOSTNAME"-new.der -out "$HOSTNAME"-new.pem
 
 #
-diff -e "$DOMAIN".der "$DOMAIN"-new.der > ./diff.txt
+diff -e "$HOSTNAME".der "$HOSTNAME"-new.der
+# or
+diff -y <(xxd "$HOSTNAME".der) <(xxd "$HOSTNAME"-new.der)
+
+#
+diff -e "$HOSTNAME".pem "$HOSTNAME"-new.pem
 ```
 
 #### Generate Self-signed Certificate
@@ -252,7 +263,7 @@ openssl x509 \
 ```sh
 curl '<url>' | \
   grep -o '<a href=".*\.der">' | \
-    sed -n 's|.*href="\([^"]*\).*|<domain>\1|p' | \
+    sed -n 's|.*href="\([^"]*\).*|<host>\1|p' | \
       parallel -N 5 wget -
 
 for cert in $(ls -1 *.der); do

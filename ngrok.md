@@ -43,7 +43,14 @@ brew install --cask ngrok
 Access [ngrok dashboard](https://dashboard.ngrok.com) and copy authtoken.
 
 ```sh
-ngrok config add-authtoken [token]
+#
+ngrok config add-authtoken <token>
+
+#
+cat ~/Library/Application\ Support/ngrok/ngrok.yml
+
+#
+ngrok diagnose
 ```
 
 ### Commands
@@ -72,6 +79,6 @@ ngrok tcp 22
 
 ```sh
 ssh \
-  -p [port] \
-  [username]@[int].tcp.ngrok.io
+  -p <port> \
+  <username>@<int>.tcp.ngrok.io
 ```
