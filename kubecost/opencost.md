@@ -9,4 +9,4 @@
 
 - [Kubectl cost queries](https://opencost.io/docs/kubectl-cost)
 
-<!-- - [](/kubectl/kubectl-cost.md) -->
+<!-- - [](/kubectl/commands/cost.md) -->

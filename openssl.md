@@ -107,21 +107,44 @@ openssl version -a
 
 # Generate MD5 password
 echo -n 'Pa$$w0rd!' | openssl md5
+```
+
+### Tips
+
+#### Export SSL Certificate
+
+```sh
+#
+export DOMAIN='<domain>'
 
 # List certs
 openssl s_client \
-  -connect <hostname>:443 \
+  -connect "$DOMAIN":443 \
   -showcerts
 
 # Export
 openssl s_client \
-  -connect <hostname>:443 \
+  -connect "$DOMAIN":443 \
   -showcerts \
-  -servername <hostname> < /dev/null 2>/dev/null | \
-    openssl x509 -outform PEM > <filename>.pem
+  -servername "$DOMAIN" < /dev/null 2>/dev/null | \
+    openssl x509 -outform DER > "$DOMAIN".der
 ```
 
-### Tips
+#### SSL Certificate Diff
+
+**Dependencies:** [Export SSL Certificate](#export-ssl-certificate) and [diff](/diff.md)
+
+```sh
+#
+openssl s_client \
+  -connect "$DOMAIN":443 \
+  -showcerts \
+  -servername "$DOMAIN" < /dev/null 2>/dev/null | \
+    openssl x509 -outform DER > "$DOMAIN"-new.der
+
+#
+diff -e "$DOMAIN".der "$DOMAIN"-new.der > ./diff.txt
+```
 
 #### Generate Self-signed Certificate
 

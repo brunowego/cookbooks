@@ -12,6 +12,8 @@ https://www.youtube.com/watch?v=mWlPNrCgVdE&t=128s
 https://www.youtube.com/watch?v=jI4K7L-LI58&t=823s
 -->
 
+**Keywords:** Authorization
+
 ## References
 
 - [How it Works](https://casbin.org/docs/en/how-it-works)

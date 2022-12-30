@@ -19,19 +19,19 @@ spec:
     privateKeySecretRef:
       name: letsencrypt-issuer
     solvers:
-    - http01:
-        ingress:
-          class: nginx
-    - selector:
-        dnsZones:
-        - <domain.com>
-      dns01:
-        route53:
-          region: eu-east-1
-          accessKeyID: <access-key-id>
-          secretAccessKeySecretRef:
-            name: cert-manager-aws-route53
-            key: AWS_SECRET_ACCESS_KEY
+      - http01:
+          ingress:
+            class: nginx
+      - selector:
+          dnsZones:
+            - <domain.com>
+        dns01:
+          route53:
+            region: eu-east-1
+            accessKeyID: <access-key-id>
+            secretAccessKeySecretRef:
+              name: cert-manager-aws-route53
+              key: AWS_SECRET_ACCESS_KEY
 EOF
 
 #

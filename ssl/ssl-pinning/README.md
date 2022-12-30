@@ -63,35 +63,4 @@ Examples: Twitch (unpinning), Twitter (pinning)
 ## SSL Unpinning
 
 - [Android](./android.md)
-
-<!-- ## Tips -->
-
-<!-- ### Cert Manager -->
-
-<!--
-https://github.com/cert-manager/cert-manager/issues/2402
-https://github.com/cert-manager/cert-manager/issues/2239
-https://github.com/cert-manager/cert-manager/issues/3954
--->
-
-<!-- ```sh
-#
-kubectl get certificate
-```
-
-```yml
----
-apiVersion: cert-manager.io/v1
-kind: Certificate
-metadata:
-  name: letsencrypt-cert
-spec:
-  dnsNames:
-    - 'example.com'
-    - '*.example.com'
-  secretName: letsencrypt-cert-secret
-  issuerRef:
-    name: example-letsencrypt
-  privateKey:
-    rotationPolicy: Never
-``` -->
+- [iOS](./ios.md)

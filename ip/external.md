@@ -1,8 +1,8 @@
-# IP External (Public)
+# External IP (Public)
 
 ## References
 
-- [Open Ports](https://www.yougetsignal.com/tools/open-ports/)
+- [Open Ports](https://yougetsignal.com/tools/open-ports/)
 
 ## Tests
 

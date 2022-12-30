@@ -22,6 +22,12 @@ https://linkedin.com/learning/node-js-essential-training-3/learn-the-node-js-fun
 
 - [Node version management (n)](/n.md)
 
+## Package Manager
+
+- [Node Package Manager (NPM)](/npm/README.md)
+- [Performant NPM (pnpm)](/pnpm/README.md)
+- [Yarn](/yarn/README.md)
+
 ## Docker
 
 ### Running

@@ -18,6 +18,10 @@ https://www.slickvpn.com/tutorials/using-openvpn-with-ubuntu-mint-network-manage
   - [OpenVPN Connect for Windows](https://openvpn.net/client-connect-vpn-for-windows)
   - [OpenVPN Connect for Windows](https://openvpn.net/client-connect-vpn-for-mac-os)
 
+## Glossary
+
+- Cool Other Package Repo (COPR)
+
 ## App
 
 ### Dependencies
@@ -44,14 +48,17 @@ sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt -y install openvpn3
 ```
 
-<!-- #### YUM
+#### YUM
 
 ```sh
 yum check-update
 
-# Repo: EPEL
+sudo yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+sudo yum -y install yum-plugin-copr
+sudo yum -y copr enable dsommers/openvpn3
+
 sudo yum -y install openvpn3-client
-``` -->
+```
 
 #### Chocolatey
 
@@ -75,6 +82,11 @@ openvpn3 session-start --config-path /net/openvpn/v3/configuration/<profile>
 
 #
 openvpn3 sessions-list
+
+#
+openvpn3 session-manage \
+  --disconnect \
+  --config-path /net/openvpn/v3/configuration/<profile>
 ```
 
 ### Issues

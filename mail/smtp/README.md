@@ -12,6 +12,11 @@ https://github.com/hideckies/exploit-notes/blob/main/src/exploit/SMTP-Pentesting
 
 - Top-Level Domain (TLD)
 
+## Local Server
+
+- [MailHog](/mailhog.md) 🌟
+- [MailCatcher](/mailcatcher.md)
+
 ## Connections
 
 | Port | Security    |

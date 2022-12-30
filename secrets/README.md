@@ -8,6 +8,8 @@
 
 - [Encryption Key Generator](https://allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx) - Security Level: `256-bit`
 - [Generate Secret](https://generate-secret.vercel.app/32)
+- [dotENV](/dotenv/README.md)
+- [redactr](/redactr.md)
 
 ## Glossary
 
@@ -17,11 +19,6 @@
 
 - Obfuscate Secrets
 - Redact Secrets
-
-## Tools
-
-- [dotENV](/dotenv/README.md)
-- [redactr](/redactr.md)
 
 ## Tips
 

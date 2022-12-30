@@ -1,13 +1,50 @@
 # Budibase
 
+**Keywords:** Low-Code
+
 ## Links
 
 - [Code Repository](https://github.com/Budibase/budibase)
 - [Main Website](https://budibase.com)
 
-## Glossary
+## Docker
 
-- Low-Code Development Platform (LCDP)
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h budibase \
+  -v budibase-data:/data \
+  -p 8080:80 \
+  -p 8443:443 \
+  -p 9100:9100 \
+  --name budibase \
+  --network workbench \
+  docker.io/budibase/budibase:v2.2.3
+```
+
+> Wait! This process take a while.
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:8080'
+```
+
+### Remove
+
+```sh
+docker rm -f budibase
+
+docker volume rm budibase-data
+```
 
 ## Helm
 

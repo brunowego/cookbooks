@@ -5,11 +5,6 @@ https://hunter.io/blog/how-to-find-someones-email-address/#1-use-an-email-lookup
 https://github.com/forwardemail/email-templates
 -->
 
-## Local Server
-
-- [MailHog](/mailhog.md)
-- [MailCatcher](/mailcatcher.md)
-
 ## Tips
 
 ### Email Subaddressing (a.k.a. Plus Sign (+) Trick)

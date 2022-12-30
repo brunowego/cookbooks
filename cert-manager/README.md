@@ -128,6 +128,14 @@ kubectl rollout status deploy/cert-manager \
   -n cert-system
 ```
 
+### Usage
+
+```sh
+#
+kubectl get clusterissuer -o yaml | \
+  kubectl neat
+```
+
 ### Delete
 
 ```sh

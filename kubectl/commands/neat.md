@@ -22,8 +22,8 @@ kubectl neat -h
 
 ```sh
 #
-kubectl get pod '[pod-name]' \
-  -n '[namespace]'
+kubectl get pod '<pod-name>' \
+  -n '<namespace>'
   -o yaml | \
     kubectl neat
 ```

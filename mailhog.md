@@ -127,6 +127,7 @@ kubectl logs -l 'app.kubernetes.io/name=mailhog' -n mailhog -f
 
 ```sh
 helm uninstall mailhog -n mailhog
+
 kubectl delete ns mailhog --grace-period=0 --force
 ```
 

@@ -5,6 +5,7 @@
 | Environment | Issuer Name           |
 | ----------- | --------------------- |
 | Default     | `letsencrypt-issuer`  |
+| Local       | `letsencrypt-local`   |
 | Testing     | `letsencrypt-testing` |
 | Staging     | `letsencrypt-staging` |
 | Production  | `letsencrypt-prod`    |

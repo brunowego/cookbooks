@@ -50,6 +50,12 @@ W1205 10:14:27.717264   31189 gcp.go:119] WARNING: the gcp auth plugin is deprec
 ```
 
 ```sh
+#
+kubectl version --short
+
+#
+ls -la "$(where kubectl)"
+
 # If using kbenv
 brew link --overwrite kbenv
 # or

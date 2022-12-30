@@ -10,31 +10,14 @@ https://onurgenes.com/posts/ssl-pinning-with-alamofire
 
 - [Code Repository](https://github.com/Alamofire/Alamofire)
 
-## Tips
-
-### Prevent SSL Pinning
-
-```sh
-# List certs
-openssl s_client \
-  -connect <domain>:443 \
-  -showcerts
-
-# Export
-openssl s_client \
-  -connect <domain>:443 \
-  -showcerts \
-  -servername <domain> < /dev/null 2>/dev/null | \
-    openssl x509 -outform DER > <filename>.der
-```
-
 <!--
 CER
 DER
 PEM
 -->
 
-<!-- ```swift
+<!--
+```swift
 let sessionManager: SessionManager = {
   let serverTrustPolicies: [String: ServerTrustPolicy] = [
     "<domain>": .pinCertificates(
@@ -60,4 +43,5 @@ sessionManager.request("https://<domain>").responseString { dataResponse in
     }
   }
 }
-``` -->
+```
+-->

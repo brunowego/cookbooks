@@ -146,8 +146,7 @@ helm repo update
 
 ```sh
 #
-kubectl create ns grafana-system
-# kubectl create ns monitor
+kubectl create ns monitoring
 
 #
 helm search repo -l grafana/grafana
@@ -158,7 +157,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install grafana grafana/grafana \
-  --namespace grafana-system \
+  --namespace monitoring \
   --version 6.48.2 \
   -f <(cat << EOF
 adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
@@ -175,11 +174,30 @@ EOF
 )
 ```
 
+### TLS
+
+**Dependencies:** [cert-manager](/cert-manager/cluster-issuer/letsencrypt/local.md)
+
+```sh
+#
+helm upgrade grafana grafana/grafana \
+  -n monitoring \
+  --version 6.48.2 \
+  -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values grafana -o yaml -n monitoring) <(cat << EOF
+ingress:
+  tls:
+    - secretName: grafana.tls-secret
+      hosts:
+        - grafana.${DOMAIN}
+EOF
+))
+```
+
 ### Status
 
 ```sh
 kubectl rollout status deploy/grafana \
-  -n grafana-system
+  -n monitoring
 ```
 
 ### Logs
@@ -187,7 +205,7 @@ kubectl rollout status deploy/grafana \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/instance=grafana' \
-  -n grafana-system \
+  -n monitoring \
   -f
 ```
 
@@ -196,7 +214,7 @@ kubectl logs \
 ```sh
 kubectl get secret grafana \
   -o jsonpath='{.data.admin-password}' \
-  -n grafana-system | \
+  -n monitoring | \
     base64 -d; echo
 ```
 
@@ -204,7 +222,7 @@ kubectl get secret grafana \
 
 ```sh
 helm uninstall grafana \
-  -n grafana-system
+  -n monitoring
 ```
 
 ## CLI

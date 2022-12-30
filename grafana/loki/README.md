@@ -164,7 +164,7 @@ kubectl run -it --rm \
 
 <!-- ### Graph
 
-**Dependencies:** [kubectl-graph](/kubectl/kubectl-graph.md), [Cypher Shell](/cypher-shell.md), [Neo4j](/neo4j.md#docker)
+**Dependencies:** [kubectl-graph](/kubectl/commands/graph.md), [Cypher Shell](/cypher-shell.md), [Neo4j](/neo4j.md#docker)
 
 ```sh
 kubectl graph all \

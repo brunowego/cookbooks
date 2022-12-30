@@ -32,12 +32,22 @@ aws \
 
 #
 aws ses verify-email-identity \
-  --email-address [email]
+  --email-address <email>
+```
+
+### Tips
+
+#### Send
+
+```sh
+#
+export AWS_ACCESS_KEY_ID='<access-key>'
+export AWS_SECRET_ACCESS_KEY='<secret-key>'
 
 #
 aws ses send-email \
-  --from [mail] \
-  --to [mail] \
+  --from <mail> \
+  --to <mail> \
   --subject 'Test' \
   --text 'Hello, this is test email from AWS SES service.' \
   --region us-east-1

@@ -33,6 +33,12 @@ brew tap snyk/tap
 brew install snyk
 ```
 
+#### Chocolatey
+
+```sh
+choco install snyk
+```
+
 ### Commands
 
 ```sh
@@ -112,4 +118,10 @@ code --install-extension snyk-security.snyk-vulnerability-scanner
 
 #
 jq '."recommendations" += ["snyk-security.snyk-vulnerability-scanner"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
+
+**Configuration:**
+
+```sh
+jq '."snyk.trustedFolders" = ["/Volumes/Workspace/Repositories/github.com"]' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```

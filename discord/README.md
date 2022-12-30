@@ -6,6 +6,7 @@ https://github.com/hanaui-git/ZeroDiscord
 
 ## Links
 
+- [Org. Repository](https://github.com/discord)
 - [Main Website](https://discord.com)
 - [Status Page](https://discordstatus.com)
 
@@ -20,6 +21,7 @@ https://github.com/hanaui-git/ZeroDiscord
 ## Tools
 
 - [Discord Webhook Tester](https://disforge.com/tool/webhook-tester)
+- [Embed Visualizer](https://leovoel.github.io/embed-visualizer/)
 
 ## App
 

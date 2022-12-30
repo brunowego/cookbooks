@@ -13,3 +13,7 @@ https://www.udemy.com/course/microfrontend-course/
 ## Links
 
 - [Micro Frontends - extending the microservice idea to frontend development](https://micro-frontends.org/)
+
+## Examples
+
+- [Next.js](https://github.com/ekaone/microfrontends)

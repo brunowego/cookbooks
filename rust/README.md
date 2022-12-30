@@ -1,28 +1,25 @@
 # Rust
 
 <!--
-https://crates.io/
+.rs
+.rlib
 
-https://app.pluralsight.com/library/courses/fundamentals-rust/
+https://github.com/search?o=desc&q=filename%3ACargo.toml+path%3Aapps&s=indexed&type=Code
+-->
 
-https://github.com/codelabsab/foodify
-
-https://linkedin.com/learning/rust-essential-training/learn-rust-programming
-
-https://github.com/pat-St/cms-container/tree/master
-
-https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/rust.html
-
-https://linkedin.com/learning/first-look-rust/welcome
-https://pragprog.com/titles/hwrust/hands-on-rust/
-
-https://dev.to/davidedelpapa/yew-tutorial-01-introduction-13ce
-https://medium.com/swlh/building-a-front-app-with-rust-yes-you-can-and-yew-11e7835d768f
+<!--
+https://github.com/bkonkle/rust-example-caster-api
+https://github.com/aerox0/rust-tweeter
+https://github.com/ddanielsantos/rust-commerce
 -->
 
 ## Links
 
+- [Code Repository](https://github.com/rust-lang/rust)
+- [Main Website](https://rust-lang.org/)
 - [Awesome Alternatives in Rust](https://github.com/TaKO8Ki/awesome-alternatives-in-rust)
+- Rust Package Registry
+  - [crates.io](https://crates.io)
 
 ## References
 

@@ -1,8 +1,6 @@
 # Performant NPM (pnpm)
 
-<!--
-https://www.youtube.com/watch?v=uJqqddyzN3s
--->
+**Keywords:** Node.js Package Manager
 
 ## Links
 
@@ -17,6 +15,12 @@ https://www.youtube.com/watch?v=uJqqddyzN3s
 
 ```sh
 brew install pnpm
+```
+
+#### Chocolatey
+
+```sh
+choco install -y pnpm
 ```
 
 ### Commands

@@ -5,6 +5,7 @@
 - [Org. Repository](https://github.com/sendgrid)
 - [Main Website](https://sendgrid.com)
 - [Dashboard](https://app.sendgrid.com)
+- [Status Page](https://status.sendgrid.com)
 
 ## Docs
 
