@@ -2,6 +2,7 @@
 
 <!--
 https://github.com/lsv/timeharvest-cli
+https://github.com/kgajera/hrvst-cli
 -->
 
 **Keywords:** Time Tracking

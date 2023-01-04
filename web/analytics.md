@@ -11,3 +11,7 @@
 - [Plausible Analytics](https://github.com/plausible/analytics)
 - [PostHog](/posthog.md)
 - [umami](https://github.com/mikecao/umami)
+
+<!--
+https://github.com/usebud/bud
+-->

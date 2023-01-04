@@ -31,7 +31,7 @@ https://github.com/krzwiatrzyk/lib-cluster-manager/tree/main/k8s-apps/teleport/m
 
 ### Dependencies
 
-- [Cert Manager (cert-manager)](/cert-manager/README.md)
+- [Cert Manager (cert-manager)](/cert-manager/README.md#helm)
 
 ### Repository
 
@@ -97,7 +97,7 @@ data:
 EOF
 
 #
-[[ -n "${DOMAIN}" ]] && helm upgrade teleport-cluster teleport/teleport-cluster \
+[[ -n "${DOMAIN}" ]] && helm install teleport-cluster teleport/teleport-cluster \
   --namespace teleport-system \
   --version 11.1.2 \
   -f <(cat << EOF

@@ -24,21 +24,3 @@ https://github.com/hideckies/exploit-notes/blob/main/src/exploit/SMTP-Pentesting
 | 25   | Unencrypted |
 | 465  | SSL         |
 | 587  | TLS         |
-
-## Configuration
-
-### DNS
-
-```sh
-#
-export DOMAIN='<domain>'
-
-#
-dig _dmarc."$DOMAIN" txt +noall +answer +short
-
-#
-dig +nocmd "$DOMAIN" txt +multiline +noall +answer | awk -F '"' '/spf/{print $2}'
-
-#
-dig default._domainkey."$DOMAIN" txt +nocmd +short | awk -F '"|;|=|\\\\' '{print $9$11}'
-```

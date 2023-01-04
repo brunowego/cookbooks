@@ -14,6 +14,10 @@ https://linkedin.com/learning/database-foundations-administration-8375189/admini
 
 - [Scaling Databases](https://roadmap.sh/guides/scaling-databases)
 
+## Tools
+
+- [Database Markup Language (DBML)](/dbml.md)
+
 ## Glossary
 
 - Not Only SQL (NoSQL)

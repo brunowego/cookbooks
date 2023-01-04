@@ -7,6 +7,7 @@ https://app.pluralsight.com/paths/skill/blue-team-tools
 https://app.pluralsight.com/paths/skill/red-team-tools
 https://app.pluralsight.com/library/courses/purple-teaming-big-picture/table-of-contents
 
+https://github.com/A-poc/RedTeam-Tools
 -->
 
 ## Links

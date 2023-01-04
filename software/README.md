@@ -16,3 +16,10 @@ https://github.com/vegaprotocol/specs
 Learning Management System (LMS)
 Applicant Tracking System (ATS)
 -->
+
+## Architecture
+
+- Monolithic
+- Multitier
+  - 3 Tiers (Presentation, Application, Data)
+- Microservices

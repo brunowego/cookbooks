@@ -52,5 +52,5 @@ lsof -h
 lsof -iTCP -sTCP:LISTEN -n -P
 
 #
-lsof -ti :[port]
+lsof -ti :<port>
 ```

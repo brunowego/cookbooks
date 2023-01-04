@@ -1,6 +1,14 @@
 # Minecraft Server
 
+## Links
+
+- [Download](https://minecraft.net/download/server)
+
 ## Docker
+
+### Links
+
+- [Code Repository](https://github.com/itzg/docker-minecraft-server)
 
 ### Network
 
@@ -12,18 +20,23 @@ docker network create workbench \
 ### Running
 
 ```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h minecraft \
+  -v minecraft-data:/data \
   -e EULA=TRUE \
-  -e VERSION=1.16.2 \
+  -e VERSION=1.19 \
+  -e MAX_PLAYERS=5 \
+  -e TYPE=PAPER \
+  -e DIFFICULTY=normal \
+  -e JVM_DD_OPTS=disable.watchdog:true \
   -p 25565:25565 \
   --name minecraft-server \
   --network workbench \
   docker.io/itzg/minecraft-server:latest
-```
 
-```sh
+#
 docker logs -f minecraft-server
 ```
 
@@ -31,6 +44,8 @@ docker logs -f minecraft-server
 
 ```sh
 docker rm -f minecraft-server
+
+docker volume rm minecraft-data
 ```
 
 ## CLI

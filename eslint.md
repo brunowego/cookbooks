@@ -14,6 +14,9 @@ npm install @types/eslint eslint --save-dev
 
 # Using Yarn
 yarn add @types/eslint eslint --dev
+
+# Usong pnpm
+pnpm add @types/eslint eslint -D
 ```
 
 ### Configuration

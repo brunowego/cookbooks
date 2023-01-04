@@ -1,5 +1,9 @@
 # Performant NPM (pnpm)
 
+<!--
+https://github.com/antribute/open-source
+-->
+
 **Keywords:** Node.js Package Manager
 
 ## Links

@@ -1,6 +1,10 @@
 # Brazil
 
 <!--
+https://www.bcb.gov.br/conversao
+-->
+
+<!--
 Explicações
 
 DI Futuros -> https://www.youtube.com/watch?v=2HbUDsMil7k

@@ -1,5 +1,13 @@
 # TurboRepo
 
+<!-- ##
+
+```sh
+npm init
+
+npx create-turbo@latest
+``` -->
+
 ## Structure
 
 <!--
@@ -65,7 +73,7 @@ echo '/.env*' >> ./apps/landing/.gitignore
 
 ```json
 {
-  "$schema": "https://turborepo.org/schema.json",
+  "$schema": "https://turbo.build/schema.json",
   // "globalDependencies": ["./apps/landing/.env"],
   "pipeline": {
     "dev": {

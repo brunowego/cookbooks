@@ -1,12 +1,17 @@
 # Microsoft SQL Server
 
+<!--
+https://balta.io/blog/sql-server-docker
+https://github.com/Microsoft/mssql-scripter
+-->
+
 ## Links
 
 - [Docker Hub](https://hub.docker.com/_/microsoft-mssql-server)
 
 ## Docs
 
-- [Quickstart: Run SQL Server container images with Docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-bash)
+- [Quickstart: Run SQL Server container images with Docker](https://docs.microsoft.com/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-bash)
 
 ## Docker
 
@@ -30,12 +35,23 @@ docker run -d \
   -p 1433:1433 \
   --name mssql-server \
   --network workbench \
-  mcr.microsoft.com/mssql/server:2019-latest
+  mcr.microsoft.com/mssql/server:2022-latest
 ```
 
-| Login | Password |
-| --- | --- |
-| `sa` | `Pa$$w0rd!` |
+| Login | Password    |
+| ----- | ----------- |
+| `sa`  | `Pa$$w0rd!` |
+
+### Usage
+
+```sh
+#
+docker exec -i mssql-server /opt/mssql-tools/bin/sqlcmd \
+  -S 127.0.0.1 \
+  -U sa \
+  -P 'Pa$$w0rd!' \
+  -Q 'CREATE DATABASE example'
+```
 
 ### Remove
 

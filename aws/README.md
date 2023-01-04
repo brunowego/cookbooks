@@ -124,7 +124,7 @@ aws configure set cli_pager ''
 
 #
 aws configure \
-  --profile default
+--profile default
 
 #
 cat ~/.aws/config

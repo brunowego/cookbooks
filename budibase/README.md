@@ -48,24 +48,22 @@ docker volume rm budibase-data
 
 ## Helm
 
-**WIP:** Currently not working as expected.
-
 ### References
 
 - [Chart Repository](https://github.com/Budibase/budibase/tree/develop/charts/budibase)
 
-### Repository
+<!-- ### Repository
 
 ```sh
 helm repo add bitnami 'https://charts.bitnami.com/bitnami'
 helm repo update
-```
+``` -->
 
 ### Install
 
 ```sh
 #
-kubectl create ns budibase-system
+kubectl create ns budibase
 # kubectl create ns lowcode
 
 #
@@ -76,8 +74,8 @@ export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-helm install budibase ./ \
-  --namespace budibase-system \
+helm upgrade budibase ./ \
+  --namespace budibase \
   -f <(cat << EOF
 ingress:
   nginx: false
@@ -93,36 +91,60 @@ ingress:
               name: proxy-service
               port:
                 number: 10000
+
+# services:
+#   budibaseVersion: v2.2.3
+
+  # proxy:
+  #   resolver: kube-dns.kube-system.svc.cluster.local
 EOF
 )
 
 #
-kubectl get all -n budibase-system
+kubectl get all -n budibase
+```
+
+```sh
+kubectl port-forward \
+  --address 0.0.0.0 \
+  service/proxy-service \
+  10000:10000 \
+  -n budibase
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deployment/app-service \
-  -n budibase-system
+kubectl rollout status deployment/proxy-service \
+  -n budibase
 ```
 
 ### Logs
 
 ```sh
 kubectl logs \
-  -l 'io.kompose.service=app-service' \
-  -n budibase-system \
+  -l 'app.kubernetes.io/name=budibase-proxy' \
+  -n budibase \
   -f
 ```
+
+### Issues
+
+#### TBD
+
+```log
+2023/01/03 16:57:40 [error] 25#25: recv() failed (111: Connection refused) while resolving, resolver: 127.0.0.11:53
+```
+
+TODO
 
 ### Delete
 
 ```sh
 helm uninstall budibase \
-  -n budibase-system
+  -n budibase
 
-kubectl delete ns budibase-system \
+kubectl delete ns budibase \
   --grace-period=0 \
   --force
 ```

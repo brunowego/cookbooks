@@ -30,7 +30,7 @@ cfn-lint -h
 
 ```sh
 #
-cfn-lint ./[filename]
+cfn-lint ./<filename>
 ```
 
 ### Tips

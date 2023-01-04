@@ -3,7 +3,7 @@
 ## Workflows
 
 - [Git-flow](/git-flow.md)
-- [GitHub Flow](/github/github-flow.md)
+- [GitHub Flow](/github/flow.md)
 - [Trunk-Based Development (TBD)](/trunk-based-development.md)
 
 ## Configuration

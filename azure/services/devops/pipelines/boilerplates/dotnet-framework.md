@@ -1,4 +1,4 @@
-# dotNET Framework Pipeline
+# .NET Framework Pipeline
 
 ## Docs
 

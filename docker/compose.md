@@ -30,6 +30,19 @@ sudo curl \
 choco install -y docker-compose
 ```
 
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Docker Compose
+export COMPOSE_DOCKER_CLI_BUILD=0
+```
+
+```sh
+sudo su - "$USER"
+```
+
 ### Commands
 
 ```sh
@@ -44,13 +57,6 @@ docker-compose config
 ```
 
 ### Tips
-
-#### BuildKit
-
-```sh
-# Environment
-COMPOSE_DOCKER_CLI_BUILD=1 docker-compose build
-```
 
 #### Command-line completion
 

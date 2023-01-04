@@ -14,6 +14,9 @@ npx create-next-app@latest -h
 
 # Using Yarn
 yarn create next-app -h
+
+# Using pnpm
+pnpm create next-app -h
 ```
 
 ### Bootstrap
@@ -28,6 +31,12 @@ npx create-next-app@latest \
 
 # Using Yarn
 yarn create next-app \
+  --ts \
+  [app-name] && \
+    "$_"
+
+# Using pnpm
+pnpm create next-app \
   --ts \
   [app-name] && \
     "$_"

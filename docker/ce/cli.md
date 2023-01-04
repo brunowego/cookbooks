@@ -56,6 +56,19 @@ sudo zypper install -y docker-ce-cli
 choco install -y docker-cli
 ```
 
+## Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Docker CE
+export DOCKER_BUILDKIT=0
+```
+
+```sh
+sudo su - "$USER"
+```
+
 ## Commands
 
 ```sh

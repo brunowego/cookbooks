@@ -92,7 +92,7 @@ nest new \
   -l TypeScript \
   -p yarn \
   --strict \
-  [api-name]
+  <api-name>
 ```
 
 ### Usage

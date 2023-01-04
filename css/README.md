@@ -5,6 +5,10 @@ https://develoger.com/how-to-obfuscate-css-class-names-with-react-and-webpack-20
 https://linkedin.com/learning/advanced-css-media-queries/media-queries-aren-t-just-screen-size-queries
 -->
 
+## Links
+
+- [Wikipedia](https://en.wikipedia.org/wiki/CSS)
+
 ## References
 
 - [Aspect Ratio](https://w3schools.com/howto/howto_css_aspect_ratio.asp)
@@ -22,10 +26,16 @@ https://linkedin.com/learning/advanced-css-media-queries/media-queries-aren-t-ju
 
 - [Learn CSS](https://web.dev/learn/css/)
 
-## Methodologies
+## Methodology
 
-- Inverted Triangle CSS (ITCSS)
-- Block Element Modifier (BEM)
+- [Atomic CSS](./acss.md)
+- [Block Element Modifier (BEM)](./bem.md)
+- [Object-oriented CSS (OOCSS)](./)
+- [Scalable and Modular Architecture for CSS (SMACSS)](./)
+
+## Modular Architecture
+
+- [Inverted Triangle CSS (ITCSS)](./itcss.md)
 
 ## Libraries
 

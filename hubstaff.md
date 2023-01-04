@@ -3,6 +3,7 @@
 ## Links
 
 - [Main Website](https://hubstaff.com)
+- [Dashboard](https://app.hubstaff.com/dashboard)
 
 ## Apps
 

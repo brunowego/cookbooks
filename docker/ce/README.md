@@ -38,17 +38,6 @@ Missing file
 
 ### Tips
 
-#### Build Kit
-
-```sh
-# CLI
-DOCKER_BUILDKIT=0 docker build ./
-
-# Daemon
-TODO
-# {"experimental":false,"features":{"buildkit":true},"insecure-registries":["<hostname>:5001","<hostname>:5001"]}%
-```
-
 #### Work directory
 
 ```Dockerfile

@@ -1,4 +1,4 @@
-# SonarQube dotNET Plugin
+# SonarQube .NET Plugin
 
 ## Links
 

@@ -13,9 +13,10 @@ https://public-dns.info/
 
 - [Google Public DNS](https://dns.google)
 - Local
-  - [nip.io](https://nip.io)
-  - [sslip.io](https://sslip.io)
   - [local.gd](https://local.gd)
+  - [localtest.me](https://localtest.me) 🌟
+  - [nip.io](https://nip.io) 🌟
+  - [sslip.io](https://sslip.io)
 
 ### Propagation Check
 

@@ -26,7 +26,13 @@ curl -LO 'https://github.com/wagoodman/dive/releases/download/v0.6.0/dive_0.6.0_
 sudo rpm -i ./dive_0.6.0_linux_amd64.rpm && rm ./dive_0.6.0_linux_amd64.rpm
 ```
 
-## Configuration
+#### Chocolatey
+
+```sh
+choco install -y dive
+```
+
+### Configuration
 
 ```sh
 # Git ignore
@@ -36,5 +42,5 @@ echo '/dive.log' >> ~/.gitignore_global
 ### Commands
 
 ```sh
-dive [image]
+dive <image>
 ```

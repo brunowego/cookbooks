@@ -37,12 +37,6 @@ yum check-update
 sudo yum -y install direnv
 ```
 
-### Commands
-
-```sh
-direnv help
-```
-
 ### Environment
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
@@ -55,10 +49,6 @@ eval "$(direnv hook zsh)" # bash
 ```sh
 source ~/.zshrc
 ```
-
-<!--
-https://github.com/wf-tomluci/wf-lt-dotfiles/blob/main/dotfiles/.oh-my-zsh/plugins/direnv/direnv.plugin.zsh
--->
 
 ### Configuration
 
@@ -73,24 +63,21 @@ load_dotenv = true
 strict_env = true
 
 [whitelist]
-prefix = ["~/Workspace"]
-EOF
-
-#
-cat << EOF > ./.envrc
-export <ENV>=<VALUE>
+prefix = ["$HOME/Workspace"]
 EOF
 
 #
 echo '/.envrc' >> ~/.gitignore_global
+```
 
-#
-echo '<ENV>=<VALUE>' > ./.env
+### Commands
+
+```sh
+direnv help
 ```
 
 <!--
-#
-ls -la ~/.config/direnv
+https://github.com/wf-tomluci/wf-lt-dotfiles/blob/main/dotfiles/.oh-my-zsh/plugins/direnv/direnv.plugin.zsh
 -->
 
 ### Usage
@@ -124,6 +111,18 @@ direnv fetchurl <url>
 -->
 
 ### Tips
+
+#### Project Environment Variables
+
+```sh
+#
+cat << EOF > ./.envrc
+export <ENV>=<VALUE>
+EOF
+
+#
+echo '<ENV>=<VALUE>' > ./.env
+```
 
 #### Visual Studio Code
 

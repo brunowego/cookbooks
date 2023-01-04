@@ -15,10 +15,7 @@
 
 ## Run cURL with SSL Pinning
 
-<!--
-https://everything.curl.dev/usingcurl/tls/pinning
-https://cert.ist
--->
+**Docs:** [Certificate pinning](https://everything.curl.dev/usingcurl/tls/pinning)
 
 ```sh
 #

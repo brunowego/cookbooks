@@ -30,6 +30,16 @@ Pró-Labore
 
 ## Glossary
 
+<!--
+Customer Experience (CX)
+Time to Resolution (TtR)
+First Contact Resolution (FCR)
+Quality Assurance (QA)
+Cost to Serve (CtS)
+Workforce Management (WFM)
+Key Performance Indicator (KPI)
+-->
+
 - Annual Recurring Revenue (ARR)
 - Average Ticket Price (ATP)
 - Business Development (BizDev)

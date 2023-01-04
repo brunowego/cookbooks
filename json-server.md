@@ -8,9 +8,8 @@ https://blog.logrocket.com/how-to-bootstrap-your-project-with-json-server/
 
 ### Installation
 
-#### NPM
-
 ```sh
+# Using NPM
 npm install json-server -g
 ```
 
@@ -34,7 +33,7 @@ json-server \
 }
 EOF
 ) \
-  ./[name].json
+  ./<name>.json
 
 #
 cat << EOF > ./json-server.json
@@ -48,11 +47,11 @@ EOF
 
 json-server \
   -c ./json-server.json \
-  ./[name].json
+  ./<name>.json
 
 #
 json-server \
   -c ./json-server.json \
-  ./[name].json \
+  ./<name>.json \
   -m ./middlewares.js
 ```
