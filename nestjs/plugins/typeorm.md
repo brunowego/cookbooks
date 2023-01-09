@@ -30,7 +30,11 @@ import { TypeOrmModule } from '@nestjs/typeorm'
 // ...
 
 @Module({
-  imports: [TypeOrmModule.forFeature([/* ... */])],
+  imports: [
+    TypeOrmModule.forFeature([
+      /* ... */
+    ]),
+  ],
   // ...
 })
 export class UserModule {}
@@ -39,6 +43,7 @@ export class UserModule {}
 **Refer:** `./ormconfig.ts`
 
 ```ts
+
 ```
 
 **Refer:** `./package.json`

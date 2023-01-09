@@ -151,7 +151,7 @@ docker run -d \
   -p 9001:9001 \
   --name minio \
   --network workbench \
-  docker.io/minio/minio:RELEASE.2021-09-18T18-09-59Z server /data --console-address ':9001'
+  docker.io/minio/minio:RELEASE.2023-01-02T09-40-09Z server /data --console-address ':9001'
 ```
 
 ```sh

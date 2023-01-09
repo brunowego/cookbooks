@@ -42,6 +42,13 @@ aws ec2 help
 
 <!--
 aws ec2 describe-vpcs --query 'Vpcs[].VpcId'
+
+aws ec2 describe-vpcs \
+  --region us-east-1 \
+  --filters Name=tag:Name,Values=Kubernetes \
+  --query Vpcs[].VpcId | \
+    grep -i vpc | \
+      cut -f 1
 -->
 
 ```sh

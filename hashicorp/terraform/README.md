@@ -187,7 +187,9 @@ terraform refresh
 
 #
 terraform init ./
+# or
 terraform init ./ -upgrade
+# or
 terraform init \
   -backend-config key=./terraform.tfstate \
   ./
@@ -214,6 +216,7 @@ terraform plan \
 
 #
 terraform plan -var '<variable>=<value>'
+terraform plan -target '<module>'
 
 #
 terraform apply
@@ -222,6 +225,7 @@ terraform apply ./dev.tfplan
 
 #
 terraform state list
+terraform state show '<module>'
 
 # REPL
 terraform console
@@ -347,7 +351,7 @@ Providers cannot be configured within modules using count, for_each or depends_o
 ```
 
 ```sh
-terraform plan -target module.<name>
+terraform plan -target 'module.<name>'
 ``` -->
 
 <!-- ####

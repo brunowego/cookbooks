@@ -82,5 +82,5 @@ source ~/.zshrc
 #### Force Usage of kbenv
 
 ```sh
-brew link --overwrite kbenv
+brew unlink kbenv && brew link --overwrite kbenv
 ```

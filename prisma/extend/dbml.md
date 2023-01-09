@@ -13,6 +13,9 @@
 ```sh
 # Using Yarn
 yarn add prisma-dbml-generator --dev
+
+# Using pnpm
+pnpm add prisma-dbml-generator -D
 ```
 
 ## Configuration

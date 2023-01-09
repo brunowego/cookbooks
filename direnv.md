@@ -76,10 +76,6 @@ echo '/.envrc' >> ~/.gitignore_global
 direnv help
 ```
 
-<!--
-https://github.com/wf-tomluci/wf-lt-dotfiles/blob/main/dotfiles/.oh-my-zsh/plugins/direnv/direnv.plugin.zsh
--->
-
 ### Usage
 
 ```sh

@@ -15,16 +15,16 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ```sh
 # Upgrade
-choco upgrade [package]
+choco upgrade <package>
 
 # Search
-choco search [package]
+choco search <package>
 
 # Install
-choco install -y [package]
+choco install -y <package>
 
 # Uninstall
-choco uninstall [package]
+choco uninstall <package>
 
 # List
 choco list

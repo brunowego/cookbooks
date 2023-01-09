@@ -1,6 +1,10 @@
 # Github Actions
 
 <!--
+- run: echo '${{ toJSON(github) }}'
+-->
+
+<!--
 https://github.com/search?q=path%3A.github%2Fworkflows+filename%3A.yml
 -->
 

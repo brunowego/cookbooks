@@ -14,6 +14,7 @@ https://artifacthub.io/packages/helm/gabe565/headscale
 ## Console
 
 - [Machines](https://login.tailscale.com/admin/machines)
+- [Users](https://login.tailscale.com/admin/users)
 
 ## App
 

@@ -36,9 +36,7 @@ done
 
 ```sh
 kubectl get pv
-```
 
-```sh
 kubectl describe pv/pv0001
 ```
 
@@ -46,8 +44,6 @@ kubectl describe pv/pv0001
 
 ```sh
 kubectl label nodes/node1 diskType=ssd
-```
 
-```sh
 kubectl get nodes --show-labels
 ```

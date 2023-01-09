@@ -186,15 +186,19 @@ docker network create workbench \
 ```sh
 docker run -d \
   -h couchdb \
-  -e COUCHDB_USER=admin \
+  -v couchdb-data:/opt/couchdb/data \
+  -e COUCHDB_USER='admin' \
   -e COUCHDB_PASSWORD='Pa$$w0rd!' \
   -p 5984:5984 \
   --name couchdb \
-  apache/couchdb:2.3
+  --network workbench \
+  docker.io/apache/couchdb:3.3.0
 ```
 
 ### Remove
 
 ```sh
 docker rm -f couchdb
+
+docker volume rm couchdb-data
 ```

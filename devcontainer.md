@@ -6,6 +6,10 @@
 
 - [Org. Repositories](https://github.com/devcontainers)
 - [Main Website](https://containers.dev)
+- Docs
+  - [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
+  - [Create a Dev Container](https://code.visualstudio.com/docs/devcontainers/create-dev-container)
+  - [Specification](https://containers.dev/implementors/json_reference/)
 
 ## Related
 
@@ -19,10 +23,12 @@
 
 ### Installation
 
-#### NPM
-
 ```sh
-npm install -g @devcontainers/cli
+# Using NPM
+npm install @devcontainers/cli -g
+
+# Using Yarn
+yarn global add @devcontainers/cli
 ```
 
 ### Commands
@@ -31,22 +37,24 @@ npm install -g @devcontainers/cli
 devcontainer -h
 ```
 
-### Usage
+<!-- ### Usage
 
 ```sh
-#
-devcontainer build --workspace-folder ./
 
-#
-devcontainer up --workspace-folder ./
-```
+``` -->
 
 <!--
+#
+devcontainer build
+
+#
+devcontainer up
+
 #
 devcontainer features
 
 #
-devcontainer exec --workspace-folder ./
+devcontainer exec
 -->
 
 ### Tips
@@ -60,3 +68,8 @@ code --install-extension ms-vscode-remote.remote-containers
 #
 jq '."recommendations" += ["ms-vscode-remote.remote-containers"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
+
+1. Press `Command (⌘)` + `Shift (⇧)` + `P`
+2. Select `>Dev Containers: Add Dev Container Configuration Files...`
+3. Type `Ubuntu` -> Select `jammy`
+4. Select features -> OK

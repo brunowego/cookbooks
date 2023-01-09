@@ -13,7 +13,7 @@
 
 ### References
 
-- [Helm Chart](https://github.com/kubernetes-sigs/aws-load-balancer-controller/tree/main/helm/aws-load-balancer-controller)
+- [Configuration](https://github.com/kubernetes-sigs/aws-load-balancer-controller/tree/main/helm/aws-load-balancer-controller#configuration)
 
 ### Repository
 
@@ -22,28 +22,77 @@ helm repo add eks 'https://aws.github.io/eks-charts'
 helm repo update
 ```
 
+### Dependencies
+
+- [eksctl](/eksctl.md)
+
+#### Service Account
+
+```sh
+#
+export AWS_EKS_CLUSTER_NAME='develop.my-cluster.k8s.local'
+
+#
+eksctl utils associate-iam-oidc-provider \
+  --region us-east-1 \
+  --cluster "$AWS_EKS_CLUSTER_NAME" \
+  --approve
+
+#
+curl \
+  -o /tmp/iam-policy.json \
+  https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
+
+#
+aws iam create-policy \
+  --policy-name 'AWSLoadBalancerControllerIAMPolicy' \
+  --policy-document file:///tmp/iam-policy.json
+
+#
+export AWS_ACCOUNT_ID="$(aws sts get-caller-identity --query Account --output text)"
+
+#
+eksctl create iamserviceaccount \
+  --cluster "$AWS_EKS_CLUSTER_NAME" \
+  --namespace kube-system \
+  --name aws-load-balancer-controller \
+  --role-name 'AmazonEKSLoadBalancerControllerRole' \
+  --attach-policy-arn "arn:aws:iam::${AWS_ACCOUNT_ID}:policy/AWSLoadBalancerControllerIAMPolicy" \
+  --override-existing-serviceaccounts \
+  --approve
+
+#
+eksctl get iamserviceaccount \
+  --cluster "$AWS_EKS_CLUSTER_NAME" \
+  --name aws-load-balancer-controller \
+  --namespace kube-system
+```
+
 ### Install
+
+<!--
+https://github.com/awsdocs/amazon-eks-user-guide/blob/master/doc_source/aws-load-balancer-controller.md
+-->
 
 ```sh
 #
 kubectl apply -k 'github.com/aws/eks-charts/stable/aws-load-balancer-controller//crds?ref=master'
 
 #
-export VPC_ID="$( \
-aws ec2 describe-vpcs \
-  --region us-east-1 \
-  --filters Name=tag:Name,Values=Kubernetes \
-  --query Vpcs[].VpcId | \
-    grep -i vpc | \
-      cut -f 1 \
-)"
+export CLUSTER_NAME='develop.my-cluster.k8s.local'
+
+#
+export VPC_ID=''
+
+#
+helm search repo -l eks/aws-load-balancer-controller
 
 #
 helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
   --namespace kube-system \
-  --version 1.2.11 \
+  --version 1.4.6 \
   -f <(cat << EOF
-clusterName: develop.my-cluster.k8s.local
+clusterName: $CLUSTER_NAME
 
 serviceAccount:
   create: false
@@ -54,41 +103,40 @@ region: us-east-1
 vpcId: $VPC_ID
 EOF
 )
+
+#
+kubectl get all -n kube-system
 ```
 
-<!--
-https://github.com/awsdocs/amazon-eks-user-guide/blob/d2fc8ae4d9e913bcec253099e157ed73a96234a3/doc_source/aws-load-balancer-controller.md
-
-eksctl utils associate-iam-oidc-provider --region eu-west-1 --cluster esleCluster --approve --profile ddmdavid
-
-curl -o iam-policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.2.1/docs/install/iam_policy.json
-
-aws iam create-policy --policy-name AWSLoadBalancerControllerIAMPolicy --policy-document file://iam-policy.json --profile ddmdavid
-
-eksctl create iamserviceaccount --cluster=esleCluster --namespace=kube-system --name=aws-load-balancer-controller --attach-policy-arn=arn:aws:iam::130767921673:policy/AWSLoadBalancerControllerIAMPolicy --override-existing-serviceaccounts --approve --profile ddmdavid --region eu-west-1
-
-helm repo add eks https://aws.github.io/eks-charts
-
-kubectl apply -k "github.com/aws/eks-charts/stable/aws-load-balancer-controller//crds?ref=master"
-
-helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n kube-system --set clusterName=esleCluster --set serviceAccount.create=false --set serviceAccount.name=aws-load-balancer-controller
--->
-
-<!-- ### Status
+### Status
 
 ```sh
-kubectl rollout status deploy/grafana \
+#
+kubectl get serviceaccount aws-load-balancer-controller \
   -n kube-system
-``` -->
 
-<!-- ### Logs
+#
+kubectl describe replicaset \
+  -l app.kubernetes.io/instance=aws-load-balancer-controller \
+  -n kube-system
+
+#
+kubectl rollout restart deployment aws-load-balancer-controller \
+  -n kube-system
+
+#
+kubectl rollout status deploy/aws-load-balancer-controller \
+  -n kube-system
+```
+
+### Logs
 
 ```sh
 kubectl logs \
-  -l 'app.kubernetes.io/instance=grafana' \
+  -l 'app.kubernetes.io/instance=aws-load-balancer-controller' \
   -n kube-system \
   -f
-``` -->
+```
 
 ### Ingress
 
@@ -145,6 +193,14 @@ https://console.aws.amazon.com/wafv2/homev2/web-acls?region=us-east-1
 
 ### Issues
 
+#### TBD
+
+```log
+Error: getting iamserviceaccounts: no output "Role1" in stack "eksctl-<cluster-name>-addon-iamserviceaccount-kube-system-aws-load-balancer-controller"
+```
+
+TODO
+
 #### Missing Target Type
 
 ```log
@@ -164,6 +220,13 @@ TODO -->
 ### Delete
 
 ```sh
+#
 helm uninstall aws-load-balancer-controller \
   -n kube-system
+
+#
+eksctl delete iamserviceaccount \
+  --cluster "$AWS_EKS_CLUSTER_NAME" \
+  --namespace kube-system \
+  --name aws-load-balancer-controller
 ```

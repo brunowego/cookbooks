@@ -80,6 +80,16 @@ Metrics are not available due to missing or invalid Prometheus configuration.
 
 ```sh
 kubectl logs \
+  -l 'name=kube-state-metrics' \
+  -n lens-metrics \
+  -f
+
+kubectl logs \
+  -l 'name=node-exporter' \
+  -n lens-metrics \
+  -f
+
+kubectl logs \
   -l 'name=prometheus' \
   -n lens-metrics \
   -f
@@ -90,26 +100,6 @@ level=error ts=2022-12-23T10:34:50.063Z caller=klog.go:116 component=k8s_client_
 ```
 
 ```sh
-#
-cat << EOF | kubectl apply -f -
-apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRoleBinding
-metadata:
-  labels:
-    app.kubernetes.io/created-by: resource-stack
-    app.kubernetes.io/managed-by: Lens
-    app.kubernetes.io/name: lens-metrics
-  name: lens-prometheus
-roleRef:
-  apiGroup: rbac.authorization.k8s.io
-  kind: ClusterRole
-  name: lens-prometheus
-subjects:
-- kind: ServiceAccount
-  name: prometheus
-  namespace: lens-metrics
-EOF
-
 #
 cat << EOF | kubectl apply -f -
 apiVersion: rbac.authorization.k8s.io/v1

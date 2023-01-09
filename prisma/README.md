@@ -34,6 +34,10 @@ npm install prisma --save-dev
 # Using Yarn
 yarn add @prisma/client
 yarn add prisma --dev
+
+# Using pnpm
+pnpm add @prisma/client
+pnpm add prisma -D
 ```
 
 ### Initialize
@@ -114,6 +118,18 @@ jq '."[prisma]"."editor.defaultFormatter" |= "Prisma.prisma"' "$PWD"/.vscode/set
 
 ### Issues
 
+#### Wrong Encryption
+
+```log
+Error opening a TLS connection: The TLS settings didn't allow the connection to be established. Please review your connection string. (error: error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed:ssl/statem/statem_clnt.c:1921: (unable to get local issuer certificate))
+```
+
+Set `encrypt` to `DANGER_PLAINTEXT`:
+
+```env
+DATABASE_URL=sqlserver://<host>:1433;database=<databsae>;user=<username>;password=<password>;encrypt=DANGER_PLAINTEXT
+```
+
 #### Missing `node_modules` Binary Path
 
 ```log
@@ -175,7 +191,6 @@ npx prisma generate
 
 #
 npx prisma db seed
-yarn db:seed
 
 #
 npx prisma migrate dev --name 'init'
@@ -187,4 +202,8 @@ npx prisma migrate deploy
 
 #
 npx prisma studio
+
+#
+echo 'USE develop; DROP DATABASE <db-name>;' | \
+  npx prisma db execute --stdin
 ```

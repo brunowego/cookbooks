@@ -25,27 +25,37 @@ helm repo update
 helm search repo -l cilium/cilium
 
 #
-helm install cilium cilium/cilium \
+helm upgrade cilium cilium/cilium \
   --namespace kube-system \
-  --version 1.12.3 \
+  --version 1.12.5 \
   -f <(cat << EOF
+aksbyocni:
+  enabled: true
+
+# eni:
+#   enabled: true
+
+# externalIPs:
+#   enabled: true
+
+# nodePort:
+#   enabled: true
+
+# hostPort:
+#   enabled: true
+
+# image:
+#   pullPolicy: IfNotPresent
+
+# ipam:
+#   # mode: eni
+#   mode: kubernetes
+
 nodeinit:
   enabled: true
 
-externalIPs:
-  enabled: true
-
-nodePort:
-  enabled: true
-
-hostPort:
-  enabled: true
-
-image:
-  pullPolicy: IfNotPresent
-
-ipam:
-  mode: kubernetes
+global:
+  kubeProxyReplacement: strict
 EOF
 )
 
@@ -108,6 +118,14 @@ kubectl exec "$NODE1_CILIUM_POD" \
 
 ### Issues
 
+#### TBD
+
+```log
+level=fatal msg="cluster-pool allocator is not supported by this version of cilium-operator-aws" subsys=cilium-operator-aws
+```
+
+TODO
+
 #### Outdated Kernel
 
 ```sh
@@ -119,7 +137,7 @@ cilium-2mcjx cilium-agent level=fatal msg="BPF NodePort services needs kernel 4.
 kubectl get nodes
 
 #
-kubectl node_shell [node-name] -- uname -r
+kubectl node_shell <node-name> -- uname -r
 ```
 
 **Note:** If using kOps, check the AWS AMI used by kOps Instance Group (IG).

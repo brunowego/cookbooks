@@ -12,6 +12,10 @@ https://medium.com/swlh/use-the-source-redis-internal-tricks-5a8b735b9ef0
 
 - [twemproxy (a.k.a nutcracker)](/twemproxy.md)
 
+## Tools
+
+- [DBeaver Community](/dbeaver/README.md)
+
 ## Docker
 
 ### Network
@@ -31,7 +35,7 @@ docker run -d \
   -p 6379:6379 \
   --name redis \
   --network workbench \
-  docker.io/library/redis:5.0.5-alpine3.9
+  docker.io/library/redis:7.0.7
 
 # With auth
 docker run -d \
@@ -43,7 +47,7 @@ docker run -d \
   --name redis \
   --network workbench \
   --entrypoint /bin/sh \
-  docker.io/library/redis:5.0.5-alpine3.9 -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
+  docker.io/library/redis:7.0.7 -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
 ```
 
 ```env

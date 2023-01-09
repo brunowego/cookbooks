@@ -59,7 +59,7 @@ helm repo update
 
 ```sh
 #
-kubectl create ns vaultwarden-system
+kubectl create ns vaultwarden
 # kubectl create ns security
 
 #
@@ -71,7 +71,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install vaultwarden sebastiangaiser/vaultwarden \
-  --namespace vaultwarden-system \
+  --namespace vaultwarden \
   --version 0.8.3 \
   -f <(cat << EOF
 ingress:
@@ -90,14 +90,14 @@ EOF
 )
 
 #
-kubectl get all -n vaultwarden-system
+kubectl get all -n vaultwarden
 ```
 
 ### Status
 
 ```sh
 kubectl rollout status deployment/vaultwarden \
-  -n vaultwarden-system
+  -n vaultwarden
 ```
 
 ### Logs
@@ -105,7 +105,7 @@ kubectl rollout status deployment/vaultwarden \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/name=vaultwarden' \
-  -n vaultwarden-system \
+  -n vaultwarden \
   -f
 ```
 
@@ -113,9 +113,9 @@ kubectl logs \
 
 ```sh
 helm uninstall vaultwarden \
-  -n vaultwarden-system
+  -n vaultwarden
 
-kubectl delete ns vaultwarden-system \
+kubectl delete ns vaultwarden \
   --grace-period=0 \
   --force
 ```

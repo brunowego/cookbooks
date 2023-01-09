@@ -94,7 +94,7 @@ gcloud config set disable_usage_reporting false
 gcloud config configurations list
 
 #
-ls ~/.config/gcloud/configurations
+ls ~/.config/gcloud
 
 #
 gcloud config get-value core/account
@@ -159,6 +159,19 @@ gcloud config configurations activate <new-name>
 ```
 
 ### Issues
+
+#### Missing Application Default Login
+
+```sh
+│ Error: Invalid provider configuration
+│
+│ Provider "registry.terraform.io/hashicorp/google" requires explicit configuration. Add a provider block to the root module and configure the provider's required arguments as described in the provider
+│ documentation.
+```
+
+```sh
+gcloud auth application-default login
+```
 
 #### TBD
 

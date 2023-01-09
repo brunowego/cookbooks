@@ -207,14 +207,17 @@ helm repo update
 
 ```sh
 #
+kubectl create ns ingress-nginx
+
+#
 helm search repo -l ingress-nginx/ingress-nginx
 
 # Only for minikube
+kubectl get nodes --show-labels
 kubectl label node minikube ingress-ready=true
 
 #
 helm install ingress-controller ingress-nginx/ingress-nginx \
-  --create-namespace \
   --namespace ingress-nginx \
   --version 4.4.0 \
   -f <(cat << EOF
@@ -333,6 +336,14 @@ minikube tunnel
 ``` -->
 
 ### Issues
+
+#### TBD
+
+```log
+Warning  FailedScheduling  3m11s (x2 over 8m37s)  default-scheduler  0/2 nodes are available: 1 Too many pods, 1 node(s) had untolerated taint {market: spot}. preemption: 0/2 nodes are available: 1 No preemption victims found for incoming pod, 1 Preemption is not helpful for scheduling.
+```
+
+TODO
 
 #### Missing Un-taint Node
 

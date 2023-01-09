@@ -1,5 +1,10 @@
 # Bank
 
+## Glossary
+
+- Banking as a Service (BaaS)
+- Payment Service Provider (PSP)
+
 ## Global
 
 - Bank of America (BofA)

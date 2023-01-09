@@ -1,6 +1,6 @@
-# AWS Load Balancer (LB)
+# AWS Load Balancer
 
-## Terms
+## Glossary
 
 - Application Load Balancer (ALB)
 - Classic Load Balancer (CLB)

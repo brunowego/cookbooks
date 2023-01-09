@@ -33,4 +33,7 @@ dbdocs build ./db/dbml/schema.dbml
 
 #
 dbdocs password
+
+#
+dbdocs remove '<name>'
 ```

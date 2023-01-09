@@ -18,10 +18,6 @@
 brew install --cask dbeaver-enterprise
 ```
 
-<!-- #### PKG
-
-https://dbeaver.com/files/6.3.0/dbeaver-ee-6.3.0-installer.pkg -->
-
 #### DMG
 
 ##### 6.3.0
@@ -38,6 +34,10 @@ cp -R /Volumes/DBeaverEE/DBeaverEE.app /Applications
 #
 hdiutil detach /Volumes/DBeaverEE
 ```
+
+<!--
+open /Applications/DBeaverEE.app
+-->
 
 #### RPM
 

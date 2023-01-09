@@ -22,40 +22,82 @@
 
 ### References
 
-- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/external-dns)
+- [Configuration](https://github.com/kubernetes-sigs/external-dns/tree/master/charts/external-dns#configuration)
 
 ### Repository
 
 ```sh
-helm repo add bitnami 'https://charts.bitnami.com/bitnami'
+helm repo add external-dns 'https://kubernetes-sigs.github.io/external-dns'
 helm repo update
 ```
 
-### Dependencies
+<!-- ### Dependencies
 
-- [etcd (Bitnami)](/etcd.md) or [etcd Operator](/etcd-operator.md)
-
-#### Provider
-
-##### CoreDNS
-
-- [CoreDNS](/coredns.md)
-
-<!-- ##### AWS
-
-TODO -->
+- [etcd (Bitnami)](/etcd.md) or [etcd Operator](/etcd-operator.md) -->
 
 ### Install
 
+<!-- **Dependencies:** [CoreDNS](/coredns.md)
+
 ```sh
+#
+helm search repo -l external-dns/external-dns
+
+#
+export KUBERNETES_IP='<kubernetes-ip>'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
+
+#
 helm install external-dns bitnami/external-dns \
   --namespace kube-system \
-  --version 5.2.1 \
+  --version 1.12.0\
   -f <(cat << EOF
 provider: coredns
 
 coredns:
   etcdEndpoints: http://etcd-cluster.kube-system.svc.cluster.local:2379
+EOF
+)
+``` -->
+
+#### Cloudflare
+
+<!--
+https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/cloudflare.md
+-->
+
+**Dependencies:** [Cloudflare](/cloudflare/README.md)
+
+```sh
+#
+helm search repo -l external-dns/external-dns
+
+#
+export DOMAIN='example.com'
+# export CF_API_TOKEN='<api-token>'
+export CF_API_KEY='<api-key>'
+export CF_API_EMAIL='<email>'
+
+#
+helm install external-dns external-dns/external-dns \
+  --namespace kube-system \
+  --version 1.12.0 \
+  -f <(cat << EOF
+env:
+  # - name: CF_API_TOKEN
+  #   value: $CF_API_TOKEN
+  - name: CF_API_KEY
+    value: $CF_API_KEY
+  - name: CF_API_EMAIL
+    value: $CF_API_EMAIL
+
+domainFilters:
+  - $DOMAIN
+
+provider: cloudflare
+
+extraArgs:
+  - --cloudflare-proxied
 EOF
 )
 ```
@@ -78,47 +120,63 @@ kubectl logs \
 
 ### Test
 
-#### Running
+<!--
+https://tech.serhatteker.com/post/2021-08/kubernetes-ingress-ssl-dns-cloudflare/
+-->
 
 ```sh
-kubectl run nginx \
-  --generator=run-pod/v1 \
-  --image=nginx:latest \
-  --replicas=1 \
-  --port=80
+#
+export DOMAIN='example.com'
 
-kubectl expose pod/nginx \
-  --port=80 \
-  --target-port=80 \
-  --type=LoadBalancer
-```
+#
+cat << EOF | kubectl apply -f -
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - image: docker.io/library/nginx:latest
+        name: nginx
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: nginx.${DOMAIN}
+    external-dns.alpha.kubernetes.io/ttl: '120'
+spec:
+  selector:
+    app: nginx
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+EOF
 
-#### Annotations
-
-```sh
-kubectl annotate service nginx 'external-dns.alpha.kubernetes.io/hostname=nginx.example.com.'
-kubectl annotate service nginx 'external-dns.alpha.kubernetes.io/ttl=10'
-```
-
-```sh
+#
 kubectl get service nginx -o yaml
-```
 
-#### DNS
-
-```sh
-dig @10.96.0.10 nginx.example.com +short
-
-nslookup nginx.example.com 10.96.0.10
-```
-
-#### Delete
-
-```sh
+#
 kubectl delete service/nginx
-
-kubectl delete pod/nginx
+kubectl delete deployment/nginx
 ```
+
+<!--
+kubectl annotate service nginx 'external-dns.alpha.kubernetes.io/cloudflare-proxied=true'
+-->
 
 ### Tips
 
@@ -210,11 +268,29 @@ EOF
 - [Are other Ingress Controllers supported?](https://github.com/kubernetes-incubator/external-dns/blob/master/docs/faq.md#user-content-are-other-ingress-controllers-supported)
 
 ```sh
-kubectl annotate ingress myapp 'external-dns.alpha.kubernetes.io/target=myapp.example.com' -n kube-monitor
-kubectl annotate ingress myapp 'external-dns.alpha.kubernetes.io/ttl=10' -n kube-monitor
+#
+kubens <namespace>
+
+export DOMAIN='example.com'
+export SUBDOMAIN='<subdomain>'
+export INGRESS_NAME='<name>'
+
+#
+kubectl annotate ingress "$INGRESS_NAME" "external-dns.alpha.kubernetes.io/target=$SUBDOMAIN.$DOMAIN"
+kubectl annotate ingress "$INGRESS_NAME" 'external-dns.alpha.kubernetes.io/ttl=120'
 ```
 
 ### Issues
+
+#### Wrong Environment Variable
+
+```log
+time="2023-01-05T15:27:17Z" level=error msg="Invalid request headers (6003)"
+```
+
+**Related:** [Issue 342](https://github.com/kubernetes-sigs/external-dns/issues/342)
+
+Instead of use `CF_API_KEY` change to `CF_API_TOKEN`.
 
 #### Wrong Endpoint
 

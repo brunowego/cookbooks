@@ -1,11 +1,9 @@
 # Windows Subsystem for Linux (WSL)
 
-<!--
-https://github.com/microsoft/wslg
--->
-
 ## References
 
+- [Code Repository](https://github.com/microsoft/wslg)
+- [Main Website](https://aka.ms/wsl)
 - [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl)
 
 ## CLI
@@ -22,10 +20,10 @@ choco install -y wsl2
 
 ```sh
 #
-wsl --install
+wsl --list --online
 
 #
-wsl --list --verbose
+wsl --install <name>
 ```
 
 ### Tips

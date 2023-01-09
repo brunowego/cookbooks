@@ -11,6 +11,9 @@ kubectl auth -h
 ```sh
 #
 kubectl auth can-i --list
+
+#
+kubectl auth can-i '*' '*'
 ```
 
 <!-- #

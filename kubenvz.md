@@ -1,5 +1,7 @@
 # Kubenvz
 
+**Keywords:** Deprecated
+
 ## Links
 
 - [Code Repository](https://github.com/nutellinoit/kubenvz)

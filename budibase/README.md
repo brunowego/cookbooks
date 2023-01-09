@@ -22,15 +22,70 @@ docker network create workbench \
 #
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
+  -h minio \
+  -e MINIO_ROOT_USER='budibase' \
+  -e MINIO_ROOT_PASSWORD='budibase' \
+  -v budibase-minio-data:/data \
+  -p 9000:9000 \
+  -p 9001:9001 \
+  --name budibase-minio \
+  --network workbench \
+  docker.io/minio/minio:RELEASE.2023-01-02T09-40-09Z server /data --console-address ':9001'
+
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h redis \
+  -e REDIS_PASSWORD='budibase' \
+  -v budibase-redis-data:/data \
+  -p 6379:6379 \
+  --name budibase-redis \
+  --network workbench \
+  --entrypoint /bin/sh \
+  docker.io/library/redis:7.0.7 -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
+
+#
+docker run -d \
+  -h couchdb \
+  -v budibase-couchdb-data:/opt/couchdb/data \
+  -e COUCHDB_USER='budibase' \
+  -e COUCHDB_PASSWORD='budibase' \
+  -p 5984:5984 \
+  --name budibase-couchdb \
+  --network workbench \
+  docker.io/apache/couchdb:3.3.0
+
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h budibase \
   -v budibase-data:/data \
+  -v budibase-data-couchdb:/opt/couchdb/data \
+  -e SELF_HOSTED='1' \
+  -e MINIO_ROOT_USER='budibase' \
+  -e MINIO_ROOT_PASSWORD='budibase' \
+  -e MINIO_URL='http://budibase-minio:9000' \
+  -e REDIS_PASSWORD='budibase' \
+  -e REDIS_URL='budibase-redis:6379' \
+  -e COUCHDB_USER='budibase' \
+  -e COUCHDB_PASSWORD='budibase' \
+  -e COUCH_DB_URL='http://budibase:budibase@budibase-couchdb:5984' \
+  -e JWT_SECRET='S3cr3t_K#Key' \
+  -e INTERNAL_API_KEY='S3cr3t_K#Key' \
+  -e ENABLE_ANALYTICS='true' \
+  -e BB_ADMIN_USER_EMAIL='johndoe@example.com' \
+  -e BB_ADMIN_USER_PASSWORD='Pa$$w0rd!' \
   -p 8080:80 \
   -p 8443:443 \
   -p 9100:9100 \
   --name budibase \
   --network workbench \
-  docker.io/budibase/budibase:v2.2.3
+  docker.io/budibase/budibase:v2.2.9
 ```
+
+<!--
+SENTRY_DSN:
+-->
 
 > Wait! This process take a while.
 
@@ -38,12 +93,27 @@ docker run -d \
 echo -e '[INFO]\thttp://127.0.0.1:8080'
 ```
 
+### Logs
+
+```sh
+docker logs -f budibase
+```
+
 ### Remove
 
 ```sh
-docker rm -f budibase
+docker rm -f \
+  budibase-minio \
+  budibase-redis \
+  budibase-couchdb \
+  budibase
 
-docker volume rm budibase-data
+docker volume rm \
+  budibase-minio-data \
+  budibase-redis-data \
+  budibase-couchdb-data \
+  budibase-data \
+  budibase-data-couchdb
 ```
 
 ## Helm

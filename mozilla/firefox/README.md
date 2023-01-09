@@ -15,6 +15,12 @@
 - [Temporary Containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/)
 - [Wappalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/)
 
+<!--
+- [HTTPS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/)
+- [Server IP](https://addons.mozilla.org/en-US/firefox/addon/server-ip/)
+- [SVG Export](https://addons.mozilla.org/en-US/firefox/addon/svg-export/)
+-->
+
 ## Alternatives
 
 - [Mozilla Firefox Developer Edition](/mozilla/mozilla-firefox-developer-edition.md)

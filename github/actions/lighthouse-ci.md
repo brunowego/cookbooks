@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
