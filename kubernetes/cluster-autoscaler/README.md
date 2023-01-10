@@ -33,22 +33,25 @@ helm install cluster-autoscaler autoscaler/cluster-autoscaler \
   --version 9.21.1 \
   -f <(cat << EOF
 autoDiscovery:
-  clusterName: develop.my-cluster.k8s.local
+  clusterName: lb-internal01
 
 awsRegion: us-east-1
 
 cloudProvider: aws
 
-podAnnotations:
-  cluster-autoscaler.kubernetes.io/safe-to-evict: 'false'
-  prometheus.io/scrape: 'true'
-  prometheus.io/port: '8085'
+extraArgs:
+  balance-similar-node-groups: true
+  skip-nodes-with-local-storage: false
 
-tolerations:
-  - effect: NoSchedule
-    key: node-role.kubernetes.io/master
-  - operator: Exists
-    key: CriticalAddonsOnly
+rbac:
+  serviceAccount:
+    annotations:
+      eks.amazonaws.com/role-arn: arn:aws:iam::333449929724:role/cluster-autoscaler20230108215228644000000002
+    create: true
+    name: cluster-autoscaler
+
+securityContext:
+  fsGroup: 65534
 EOF
 )
 ```
@@ -74,7 +77,7 @@ kubectl logs \
 #### TBD
 
 ```log
-F0109 00:30:56.623590       1 aws_cloud_provider.go:369] Failed to generate AWS EC2 Instance Types: WebIdentityErr: failed to retrieve credentials
+F0110 10:00:58.726892       1 aws_cloud_provider.go:369] Failed to generate AWS EC2 Instance Types: WebIdentityErr: failed to retrieve credentials
 ```
 
 TODO

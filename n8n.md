@@ -15,11 +15,10 @@ https://artifacthub.io/packages/search?ts_query_web=n8n&sort=relevance&page=1
 
 ### Installation
 
-#### macOS
+#### Zip File
 
-```sh
-open https://downloads.n8n.io/file/n8n-downloads/n8n-mac.zip
-```
+- [macOS](https://downloads.n8n.io/file/n8n-downloads/n8n-mac.zip)
+- [Windows](https://downloads.n8n.io/file/n8n-downloads/n8n-win.zip)
 
 ## Docker
 
@@ -36,33 +35,31 @@ docker network create workbench \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postgres \
-  -e POSTGRES_USER=n8n \
-  -e POSTGRES_PASSWORD=n8n \
-  -e POSTGRES_DB=n8n \
+  -e POSTGRES_USER='n8n' \
+  -e POSTGRES_PASSWORD='n8n' \
+  -e POSTGRES_DB='n8n' \
   -v n8n-postgres-data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --name n8n-postgres \
   --network workbench \
   docker.io/library/postgres:11.2-alpine
-```
 
-```sh
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h n8n \
-  -e N8N_BASIC_AUTH_ACTIVE=true \
-  -e N8N_BASIC_AUTH_USER=admin \
-  -e N8N_BASIC_AUTH_PASSWORD=admin \
-  -e DB_TYPE=postgresdb \
-  -e DB_POSTGRESDB_HOST=n8n-postgres \
-  -e DB_POSTGRESDB_PORT=5432 \
-  -e DB_POSTGRESDB_USER=n8n \
-  -e DB_POSTGRESDB_PASSWORD=n8n \
-  -e DB_POSTGRESDB_DATABASE=n8n \
+  -e N8N_BASIC_AUTH_ACTIVE='true' \
+  -e N8N_BASIC_AUTH_USER='admin' \
+  -e N8N_BASIC_AUTH_PASSWORD='admin' \
+  -e DB_TYPE='postgresdb' \
+  -e DB_POSTGRESDB_HOST='n8n-postgres' \
+  -e DB_POSTGRESDB_PORT='5432' \
+  -e DB_POSTGRESDB_USER='n8n' \
+  -e DB_POSTGRESDB_PASSWORD='n8n' \
+  -e DB_POSTGRESDB_DATABASE='n8n' \
   -p 5678:5678 \
   --name n8n \
   --network workbench \
-  docker.io/n8nio/n8n:0.37.0
+  docker.io/n8nio/n8n:0.210.2
 ```
 
 ```sh

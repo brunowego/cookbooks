@@ -1,0 +1,28 @@
+{
+  "name": "Ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "settings": {
+    "terminal.integrated.profiles.linux": {
+      "zsh": {
+        "path": "/bin/zsh"
+      }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "shuworks.vscode-table-formatter",
+        "EditorConfig.EditorConfig",
+        "redhat.vscode-yaml",
+        "Tyriar.sort-lines",
+        "DavidAnson.vscode-markdownlint",
+        "bierner.markdown-mermaid"
+      ]
+    }
+  }
+}

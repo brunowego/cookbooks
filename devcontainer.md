@@ -31,6 +31,32 @@ npm install @devcontainers/cli -g
 yarn global add @devcontainers/cli
 ```
 
+### Configuration
+
+```sh
+#
+mkdir ./.devcontainer
+
+#
+cat << EOF > ./.devcontainer/devcontainer.json
+{
+  "name": "Ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "settings": {
+    "terminal.integrated.profiles.linux": {
+      "zsh": {
+        "path": "/bin/zsh"
+      }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh"
+  }
+}
+EOF
+```
+
 ### Commands
 
 ```sh
