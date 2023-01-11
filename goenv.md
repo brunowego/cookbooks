@@ -10,12 +10,6 @@
 
 ### Installation
 
-#### Homebrew
-
-```sh
-brew install goenv
-```
-
 #### Unix-like
 
 **Dependencies:** [Git](/git.md)
@@ -68,6 +62,9 @@ goenv global <version>
 
 # Rehash
 goenv rehash <version>
+
+# Check version
+go version
 
 # Uninstall
 goenv uninstall -f <version>

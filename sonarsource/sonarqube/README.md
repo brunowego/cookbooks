@@ -10,6 +10,6 @@ https://github.com/taptap/sonarqube-badges
 
 ## Editions
 
-- [Community Edition](./sonarqube-ce/README.md)
+- [Community Edition](./ce/README.md)
 - [Developer Edition](https://sonarqube.org/developer-edition/)
 - [Enterprise Edition](https://sonarqube.org/enterprise-edition/)

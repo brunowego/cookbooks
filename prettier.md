@@ -23,6 +23,9 @@ npm install @types/prettier prettier --save-dev
 
 # Using Yarn
 yarn add @types/prettier prettier --dev
+
+# Using pnpm
+pnpm add @types/prettier prettier -D
 ```
 
 ### Configuration
@@ -37,6 +40,12 @@ EOF
 cat << EOF > ./.prettierignore
 /package.json
 /yarn.lock
+EOF
+
+# Using pnpm
+cat << EOF > ./.prettierignore
+/package.json
+/pnpm-lock.yaml
 EOF
 ```
 

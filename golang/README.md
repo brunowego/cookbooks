@@ -125,11 +125,11 @@ go list '...'
 go tool dist list
 
 #
-go run ./main.go
+go run ./<filename>.go
 go run example.com/m
 
 #
-go build ./main.go
+go build ./<filename>.go
 
 #
 go doc json
@@ -137,6 +137,19 @@ go doc json.Decoder
 ```
 
 ### Tips
+
+#### Clean Cache
+
+```sh
+#
+go env GOCACHE
+
+#
+du -hs $(go env GOCACHE)
+
+#
+go clean --cache
+```
 
 #### Visual Studio Code
 
@@ -248,6 +261,14 @@ antigen bundle golang
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+compile: version "go1.19.3" does not match go tool version "go1.18.8"
+```
+
+TODO
 
 #### Read-only File System
 

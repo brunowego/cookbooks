@@ -196,6 +196,19 @@ https://console.aws.amazon.com/wafv2/homev2/web-acls?region=us-east-1
 #### TBD
 
 ```log
+{"level":"error","ts":1673375095.3133678,"logger":"controller.service","msg":"Reconciler error","name":"ingress-controller-ingress-nginx-controller","namespace":"ingress-nginx","error":"TargetGroupNotFound: Target groups 'arn:aws:elasticloadbalancing:us-east-1:<account-id>:targetgroup/k8s-ingressn-ingressc-87ad2878ab/b3e57153d585bed4' not found\n\tstatus code: 400, request id: d71a12c7-a455-423f-bc30-b66de0265e1c"}
+```
+
+TODO
+
+```sh
+#
+kubectl get targetgroupbinding -A
+```
+
+#### TBD
+
+```log
 Error: getting iamserviceaccounts: no output "Role1" in stack "eksctl-<cluster-name>-addon-iamserviceaccount-kube-system-aws-load-balancer-controller"
 ```
 

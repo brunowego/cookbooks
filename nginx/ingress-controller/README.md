@@ -340,6 +340,34 @@ minikube tunnel
 #### TBD
 
 ```log
+│ Error: pre-upgrade hooks failed: Delete "https://C28995CC23A40E72216A3F98B22234AB.gr7.us-east-1.eks.amazonaws.com/api/v1/namespaces/ingress-nginx/serviceaccounts/ingress-controller-ingress-nginx-admission": dial tcp [64:ff9b::34cb:deb6]:443: i/o timeout
+```
+
+TODO
+
+#### TBD
+
+```log
+│ Error: post-upgrade hooks failed: unable to build kubernetes object for deleting hook ingress-nginx/templates/admission-webhooks/job-patch/clusterrole.yaml: unable to recognize "": Get "https://C28995CC23A40E72216A3F98B22234AB.gr7.us-east-1.eks.amazonaws.com/api?timeout=32s": dial tcp [64:ff9b::34cb:deb6]:443: i/o timeout
+```
+
+TODO
+
+#### TBD
+
+```log
+Failed to pull image "registry.k8s.io/ingress-nginx/kube-webhook-certgen:v20220916-gd32f8c343@sha256:39c5b2e3310dc4264d638ad28d9d1d96c4cbb2b2dcfb52368fe4e3c63f61e10f": rpc error: code = Unknown desc = failed to pull and unpack image "registry.k8s.io/ingress-nginx/kube-webhook-certgen@sha256:39c5b2e3310dc4264d638ad28d9d1d96c4cbb2b2dcfb52368fe4e3c63f61e10f": failed to resolve reference "registry.k8s.io/ingress-nginx/kube-webhook-certgen@sha256:39c5b2e3310dc4264d638ad28d9d1d96c4cbb2b2dcfb52368fe4e3c63f61e10f": failed to do request: Head "https://registry.k8s.io/v2/ingress-nginx/kube-webhook-certgen/manifests/sha256:39c5b2e3310dc4264d638ad28d9d1d96c4cbb2b2dcfb52368fe4e3c63f61e10f": dial tcp: lookup registry.k8s.io on 10.0.0.2:53: read udp 10.0.2.211:45465->10.0.0.2:53: i/o timeout
+```
+
+<!--
+https://kubernetes.github.io/ingress-nginx/troubleshooting/#image-related-issues-faced-on-nginx-425-or-other-versions-helm-chart-versions
+-->
+
+TODO
+
+#### TBD
+
+```log
 Warning  FailedScheduling  3m11s (x2 over 8m37s)  default-scheduler  0/2 nodes are available: 1 Too many pods, 1 node(s) had untolerated taint {market: spot}. preemption: 0/2 nodes are available: 1 No preemption victims found for incoming pod, 1 Preemption is not helpful for scheduling.
 ```
 

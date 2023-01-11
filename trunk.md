@@ -26,11 +26,11 @@ trunk -h
 
 ```sh
 #
-trunk login
-trunk whoami
+trunk init
 
 #
-trunk init
+trunk login
+trunk whoami
 
 #
 trunk install

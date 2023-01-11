@@ -35,7 +35,11 @@ helm install cluster-autoscaler autoscaler/cluster-autoscaler \
 autoDiscovery:
   clusterName: lb-internal01
 
+awsAccessKeyID:
+
 awsRegion: us-east-1
+
+awsSecretAccessKey:
 
 cloudProvider: aws
 
@@ -78,6 +82,14 @@ kubectl logs \
 
 ```log
 F0110 10:00:58.726892       1 aws_cloud_provider.go:369] Failed to generate AWS EC2 Instance Types: WebIdentityErr: failed to retrieve credentials
+```
+
+TODO
+
+#### TBD
+
+```log
+E0110 12:56:26.742792       1 aws_manager.go:258] Failed to regenerate ASG cache: cannot autodiscover ASGs: WebIdentityErr: failed to retrieve credentials
 ```
 
 TODO
