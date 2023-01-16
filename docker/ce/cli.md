@@ -223,7 +223,7 @@ Error response from daemon: Get http://hostname/v2/: net/http: request canceled 
 Run with proxy environment variables.
 
 <!-- ```sh
-# Perhaps using wrong user:password at proxy. After change, restart docker daemon.
+# Perhaps using wrong <user>:<pass> at proxy. After change, restart docker daemon.
 cat /etc/sysconfig/docker
 ``` -->
 

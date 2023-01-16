@@ -15,7 +15,7 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postfix \
   -e MAILDOMAIN='mail.example.com' \
-  -e SMTP_USER='user:pass' \
+  -e SMTP_USER='<user>:<pass>' \
   -p 25:25 \
   --name postfix \
   docker.io/catatnight/postfix:latest

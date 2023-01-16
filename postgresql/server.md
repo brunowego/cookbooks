@@ -159,8 +159,8 @@ docker network create workbench \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postgresql \
-  -e POSTGRES_USER='user' \
-  -e POSTGRES_PASSWORD='pass' \
+  -e POSTGRES_USER='dev' \
+  -e POSTGRES_PASSWORD='dev' \
   -e POSTGRES_DB='dev' \
   -v postgresql-data:/var/lib/postgresql/data \
   -p 5432:5432 \
@@ -172,8 +172,8 @@ docker run -d \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postgresql \
-  -e POSTGRES_USER='user' \
-  -e POSTGRES_PASSWORD='pass' \
+  -e POSTGRES_USER='dev' \
+  -e POSTGRES_PASSWORD='dev' \
   -e POSTGRES_DB='dev' \
   -v postgresql-data:/var/lib/postgresql/data \
   -p 5432:5432 \
@@ -185,8 +185,8 @@ docker run -d \
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postgresql \
-  -e POSTGRES_USER='user' \
-  -e POSTGRES_PASSWORD='pass' \
+  -e POSTGRES_USER='dev' \
+  -e POSTGRES_PASSWORD='dev' \
   -e POSTGRES_DB='dev' \
   -v postgresql-data:/var/lib/postgresql/data \
   -p 5432:5432 \
@@ -200,7 +200,7 @@ sudo hostess add postgresql 127.0.0.1
 ```
 
 ```env
-DATABASE_URL=postgresql://user:pass@127.0.0.1:5432/dev
+DATABASE_URL=postgresql://dev:dev@127.0.0.1:5432/dev
 ```
 
 ### Query
@@ -283,11 +283,13 @@ kubectl create ns psql-system
 # kubectl create ns database
 
 #
+kubens psql-system
+
+#
 helm search repo -l bitnami/postgresql
 
 #
 helm install postgresql bitnami/postgresql \
-  --namespace psql-system \
   --version 12.1.3 \
   -f <(cat << EOF
 auth:
@@ -299,13 +301,12 @@ EOF
 )
 
 #
-kubectl get all -n psql-system
+kubectl get all
 ```
 
 <!--
 kubectl port-forward \
   --address 0.0.0.0 \
-  -n psql-system \
   svc/postgresql \
   5432:5432
 -->

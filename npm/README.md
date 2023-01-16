@@ -154,7 +154,7 @@ npm install -g npm@6.14.15
 #### iCloud No Sync
 
 ```sh
-find ./ -name node_modules -exec touch {}/.nosync \;
+find . -name node_modules -exec touch {}/.nosync \;
 ```
 
 #### Run Commands

@@ -21,7 +21,7 @@ go help mod
 #
 go mod init
 # or
-go mod init github.com/[organization|username]/[repository]
+go mod init github.com/<owner>/<repository>
 
 #
 go mod tidy
@@ -44,7 +44,7 @@ mkdir -p {cmd,internal}
 
 ```sh
 #
-go mod init github.com/[organization|username]/[repository]
+go mod init github.com/<owner>/<repository>
 
 #
 go mod tidy

@@ -48,3 +48,19 @@ Access the [GitHub settings token page](https://github.com/settings/tokens) and 
 ```sh
 docker pull ghcr.io/<organization>/<image>
 ```
+
+### TBD
+
+```log
+denied: permission_denied: `<org>` forbids access via a personal access token (classic). Please use a GitHub App, OAuth App, or a personal access token with fine-grained permissions.
+```
+
+TODO
+
+### TBD
+
+```log
+denied: permission_denied: The token provided does not match expected scopes.
+```
+
+TODO

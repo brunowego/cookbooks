@@ -1,7 +1,7 @@
 # n8n
 
 <!--
-https://artifacthub.io/packages/search?ts_query_web=n8n&sort=relevance&page=1
+https://github.com/8gears/n8n-helm-chart
 -->
 
 **Keywords:** Data Workflow, Low-code
@@ -72,4 +72,92 @@ echo -e '[INFO]\thttp://127.0.0.1:5678'
 docker rm -f n8n-postgres n8n
 
 docker volume rm n8n-postgres-data
+```
+
+## Helm
+
+### Dependencies
+
+- Database
+  - [PostgreSQL](/postgresql/server.md#helm) (local)
+
+<!-- - Session
+  - [Redis](/redis/cluster.md#helm) -->
+
+### References
+
+- [Configuration](https://github.com/8gears/n8n-helm-chart#configuration)
+
+### Repository
+
+```sh
+helm repo add open-8gears 'https://8gears.container-registry.com/chartrepo/library'
+helm repo update
+```
+
+### Install
+
+```sh
+#
+kubectl create ns n8n-system
+# kubectl create ns workflow
+
+#
+helm search repo -l open-8gears/n8n
+
+#
+export KUBERNETES_IP='<kubernetes-ip>'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
+
+#
+helm upgrade n8n open-8gears/n8n \
+  --namespace n8n-system \
+  --version 0.8.0 \
+  -f <(cat << EOF
+n8n:
+  encryption_key: S3cr3t_K#Key
+
+config:
+  database:
+    type: postgresdb
+    postgresdb:
+      host: postgresql.psql-system.svc
+
+secret:
+  database:
+    postgresdb:
+      database: n8n
+      user: n8n
+      password: n8n
+
+ingress:
+  enabled: true
+  hosts:
+    - host: n8n.${DOMAIN}
+      paths: ['/']
+EOF
+)
+
+#
+kubectl get all -n n8n-system
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app.kubernetes.io/instance=n8n' \
+  -n n8n-system \
+  -f
+```
+
+### Delete
+
+```sh
+helm uninstall n8n \
+  -n n8n-system
+
+kubectl delete ns n8n-system \
+  --grace-period=0 \
+  --force
 ```

@@ -2,6 +2,7 @@
 
 ## Links
 
+- [All](https://github.com/codespaces)
 - [Main Website](https://github.com/features/codespaces)
 - [Docs](https://docs.github.com/en/codespaces)
 

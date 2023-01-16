@@ -84,8 +84,8 @@ docker run -d \
   -v mongodb-data:/data/db \
   -v mongodb-configdb:/data/configdb \
   -e MONGO_INITDB_DATABASE='dev' \
-  -e MONGO_INITDB_ROOT_USERNAME='user' \
-  -e MONGO_INITDB_ROOT_PASSWORD='pass' \
+  -e MONGO_INITDB_ROOT_USERNAME='dev' \
+  -e MONGO_INITDB_ROOT_PASSWORD='dev' \
   -p 27017:27017 \
   --name mongodb \
   --network workbench \
@@ -93,7 +93,7 @@ docker run -d \
 ```
 
 <!--
-MONGODB_URI='mongodb+srv://user:pass@127.0.0.1:27017/dev'
+MONGODB_URI='mongodb+srv://dev:dev@127.0.0.1:27017/dev'
 -->
 
 ### Client

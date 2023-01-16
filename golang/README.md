@@ -233,8 +233,8 @@ GOARCH=amd64 \
   go build \
     -a \
     -installsuffix cgo \
-    -o [binary] \
-    ./cmd/[name].go
+    -o <binary> \
+    ./cmd/<name>.go
 ```
 
 #### Linking
@@ -242,15 +242,15 @@ GOARCH=amd64 \
 ```sh
 # Static
 CGO_ENABLED=0 \
-  go build -o [binary]
+  go build -o <binary>
 
-ldd [binary]
+ldd <binary>
 
 # Dynamic
 CGO_ENABLED=1 \
-  go build -o [binary]
+  go build -o <binary>
 
-ldd [binary]
+ldd <binary>
 ```
 
 #### Command-line completion

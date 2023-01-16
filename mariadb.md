@@ -21,8 +21,8 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mariadb \
   -e MARIADB_ROOT_PASSWORD='root' \
-  -e MARIADB_USER='user' \
-  -e MARIADB_PASSWORD='pass' \
+  -e MARIADB_USER='dev' \
+  -e MARIADB_PASSWORD='dev' \
   -e MARIADB_DATABASE='dev' \
   -v mariadb-data:/var/lib/mysql \
   -p 3306:3306 \

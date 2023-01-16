@@ -23,6 +23,12 @@ curl -L 'https://github.com/go-task/task/releases/download/v3.4.3/task_linux_amd
   tar -xzC /usr/local/bin task
 ```
 
+#### Chocolatey
+
+```sh
+choco install -y go-task
+```
+
 ### Commands
 
 ```sh

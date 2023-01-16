@@ -64,7 +64,7 @@ source ~/.zshrc
 #### Remove Creation Timestamp
 
 ```sh
-find ./.k8s \
+find ..k8s \
   -type f \
   -iname \*.yaml \
   -exec sed -i '/creationTimestamp: null/d' {} \;
@@ -73,7 +73,7 @@ find ./.k8s \
 #### Remove Status
 
 ```sh
-find ./.k8s \
+find ..k8s \
   -type f \
   -iname \*.yaml \
   -exec sed -i '/status: /d' {} \;

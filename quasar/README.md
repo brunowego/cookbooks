@@ -5,7 +5,7 @@
 - [Code Repository](https://github.com/quasarframework/quasar)
 - [Main Website](https://quasar.dev)
 
-## CLI
+## Project
 
 ### Installation
 

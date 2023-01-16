@@ -88,6 +88,20 @@ jq '."recommendations" += ["timonwong.shellcheck"]' "$PWD"/.vscode/extensions.js
 
 ### Issues
 
+#### Dinfferent Syntax in POSIX
+
+```log
+In POSIX sh, [[ ]] is undefined
+```
+
+```sh
+#! /bin/sh
+
+if [ "${RUN_MIGRATION}" = "1" ]; then
+  # ...
+fi
+```
+
 #### TBD
 
 ```log

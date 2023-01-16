@@ -128,7 +128,10 @@ kubectl rollout status deploy/ambassador -n ambassador
 ### Logs
 
 ```sh
-kubectl logs -l 'app.kubernetes.io/name=ambassador' -n ambassador -f
+kubectl logs \
+  -l 'app.kubernetes.io/name=ambassador' \
+  -n ambassador \
+  -f
 ```
 
 ### Web UI

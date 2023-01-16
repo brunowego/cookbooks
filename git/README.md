@@ -345,8 +345,8 @@ git describe --tags | cut -d - -f 1 | sed 's/^v//'
 #### Orphan Branch
 
 ```sh
+#
 git checkout --orphan <branch>
-git rm -r ./
 ```
 
 #### Developer Certificate of Origin (DCO)
@@ -374,8 +374,9 @@ git clone --no-checkout <repo>
 git checkout --orphan gh-pages
 
 #
-git rm -r ./
 git clean -fdx
+
+#
 git push origin gh-pages
 ```
 
@@ -388,6 +389,46 @@ git config --global user.useconfigonly true
 ``` -->
 
 ### Issues
+
+#### TBD
+
+```log
+error: cannot lock ref 'refs/remotes/origin/Feat/HAB-337': unable to resolve reference 'refs/remotes/origin/Feat/HAB-337'
+```
+
+TODO
+
+<!-- ```sh
+rm ./.git/refs/remotes/origin/Feat/HAB-337
+
+git fetch
+
+git pull
+``` -->
+
+#### Missing Logs Directory
+
+```log
+error: cannot update the ref 'refs/remotes/origin/Feat/HAB-357': unable to create directory for '.git/logs/refs/remotes/origin/Feat/HAB-357': No such file or directory
+```
+
+```sh
+mkdir ./.git/logs/refs/remotes/origin/Feat/HAB-357
+```
+
+#### Broken Reference
+
+```log
+error: cannot lock ref 'refs/remotes/origin/fix/dbml': 'refs/remotes/origin/fix' exists; cannot create 'refs/remotes/origin/fix/dbml'
+```
+
+```sh
+git remote prune origin
+```
+
+<!--
+git update-ref -d refs/tags
+-->
 
 #### Allow Unrelated Histories
 

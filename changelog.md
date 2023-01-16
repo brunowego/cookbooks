@@ -7,4 +7,6 @@
 
 <!--
 CHANGELOG.md
+
+https://github.com/olivierlacan/keep-a-changelog
 -->

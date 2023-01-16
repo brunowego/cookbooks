@@ -44,7 +44,7 @@ npx vue-cli-service -h
 
 ```sh
 # Create Application (Needs globally installation)
-npx vue create [my-app]
+npx vue create <my-app>
 
 #
 npx vue info
@@ -56,7 +56,7 @@ npx vue serve
 npx vue build
 
 #
-npx vue add [plugin]
+npx vue add <plugin>
 
 #
 npx vue ui
@@ -80,8 +80,12 @@ npx vue-cli-service lint
 
 ```sh
 #
-code --install-extension octref.vetur
+code --install-extension Vue.volar
+
+code --install-extension Vue.vscode-typescript-vue-plugin
 
 #
-jq '."recommendations" += ["octref.vetur"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+jq '."recommendations" += ["Vue.volar"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+
+jq '."recommendations" += ["Vue.vscode-typescript-vue-plugin"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

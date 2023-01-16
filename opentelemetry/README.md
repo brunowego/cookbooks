@@ -5,6 +5,10 @@
 - [Org. Repository](https://github.com/open-telemetry)
 - [Main Website](https://opentelemetry.io/)
 
+## Glossary
+
+- OpenTelemetry Protocol (OTLP)
+
 ## Related
 
 - [OpenTracing](/opentracing.md)

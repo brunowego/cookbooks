@@ -199,8 +199,8 @@ DATABASES = {
         'CLIENT': {
             'host': 'mongodb',
             'port': 27017,
-            'username': 'user',
-            'password': 'pass',
+            'username': 'dev',
+            'password': 'dev',
             'authMechanism': 'SCRAM-SHA-1',
         },
     }
@@ -228,8 +228,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dev',
-        'USER': 'user',
-        'PASSWORD': 'pass',
+        'USER': 'dev',
+        'PASSWORD': 'dev',
         'HOST': 'postgresql',
         'PORT': '5432',
     }

@@ -75,7 +75,7 @@ ffmpeg -ss 00:00:05 -i ./video.mp4 -c copy -t 00:02:00 ./cut.mov
 ffmpeg -i VTS_01_1.VOB -c:v copy -c:a copy -f dvd VTS_01_1.MPG
 
 # MP4 to WebM
-find ./ -name '*.mp4' -exec bash -c '$(cat << EOF
+find . -name '*.mp4' -exec bash -c '$(cat << EOF
 ffmpeg \
   -i $0 \
   -vf scale=720:-1 \

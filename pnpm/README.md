@@ -80,3 +80,13 @@ pnpx <command>
   // ...
 }
 ```
+
+### Issues
+
+#### TBD
+
+```log
+ ERR_PNPM_PREPARE_PKG_FAILURE  Command failed with exit code 1: npm install
+```
+
+TODO

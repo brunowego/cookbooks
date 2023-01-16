@@ -54,7 +54,7 @@ kubeval -h
 kubeval \
   --force-color \
   --strict \
-  [filename]
+  <filename>
 
 #
 kubeval \
@@ -63,7 +63,7 @@ kubeval \
   --skip-kinds 'ClusterConfig,CustomResourceDefinition' \
   --force-color \
   --strict \
-  [filename]
+  <filename>
 
 #
 helm template . | \
@@ -84,8 +84,6 @@ kustomize build ./base | \
 
 ```log
 ERR  - stdin: Failed initializing schema https://kubernetesjsonschema.dev/master-standalone-strict/prometheusrule-monitoring-v1.json: Could not read schema from HTTP, response status is 404 Not Found
-
-ERR  - stdin: Failed initializing schema https://kubernetesjsonschema.dev/master-standalone-strict/servicemonitor-monitoring-v1.json: Could not read schema from HTTP, response status is 404 Not Found
 ```
 
 ```sh
@@ -93,5 +91,5 @@ kubeval \
   --skip-kinds 'PrometheusRule,ServiceMonitor' \
   --force-color \
   --strict \
-  [filename]
+  <filename>
 ```

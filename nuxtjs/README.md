@@ -5,7 +5,7 @@
 - [Code Repository](https://github.com/nuxt/nuxt.js)
 - [Main Website](https://nuxtjs.org/)
 
-## CLI
+## Project
 
 ### Initialize
 

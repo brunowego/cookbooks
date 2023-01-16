@@ -114,10 +114,10 @@ eksctl get iamidentitymapping \
 ```
 
 <!--
+Add `create_aws_auth_configmap = true` to `module "eks"`.
+
 https://github.com/terraform-aws-modules/terraform-aws-eks/issues/2007
 -->
-
-TODO
 
 ```sh
 #
@@ -134,17 +134,3 @@ terraform state rm 'module.eks.module.eks.kubernetes_config_map_v1_data.aws_auth
 ```
 
 TODO
-
-### TBD
-
-```log
-│ Error: The configmap "aws-auth" does not exist
-│
-│   with module.eks.module.eks.kubernetes_config_map_v1_data.aws_auth[0],
-│   on .terraform/modules/eks.eks/main.tf line 527, in resource "kubernetes_config_map_v1_data" "aws_auth":
-│  527: resource "kubernetes_config_map_v1_data" "aws_auth" {
-```
-
-TODO
-
-Add `create_aws_auth_configmap = true` to `module "eks"`.

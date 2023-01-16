@@ -44,6 +44,7 @@ trunk config print
 
 #
 trunk check -a
+trunk check -ay
 
 #
 trunk fmt

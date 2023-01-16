@@ -13,18 +13,16 @@ git rm -r --cached <name>
 cd <destination> && git pull
 
 # Update all submodules
-git submodule foreach git pull origin master
+git submodule foreach git pull origin main
 
 # Close with submodules
 git clone --recursive <repo>
-
-git submodule foreach git checkout master
 git submodule foreach git checkout main
 
 # Get submodules from cloned repo
 git submodule update --init --recursive
-git submodule foreach git pull origin master
-git submodule foreach git checkout master
+git submodule foreach git pull origin main
+git submodule foreach git checkout main
 
 # Sync
 git submodule sync --recursive

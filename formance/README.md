@@ -2,13 +2,14 @@
 
 ## Links
 
+- [Code Repository](https://github.com/formancehq/stack)
 - [Main Website](https://formance.com)
 
 ## CLI
 
 ### Links
 
-- [Code Repository](https://github.com/formancehq/stack)
+- [Code Repository](https://github.com/formancehq/fctl)
 
 ### Installation
 
@@ -33,6 +34,9 @@ fctl login
 
 #
 cat ~/.formance/fctl.config
+
+#
+fctl cloud me info
 ```
 
 ### Usage
@@ -43,31 +47,32 @@ fctl stack create foobar
 
 #
 fctl ledger send world foo 100 EUR/2 --ledger demo
+fctl ledger stats
 
 #
 fctl ui
 
-# #
-# cat << EOF | fctl ledger transactions num
-# send [COIN 100] (
-#   source = @world
-#   destination = @centralbank
-# )
-# EOF
-```
+#
+fctl auth clients list
 
-<!--  
-auth        Auth server management
-cloud       Cloud management
-ledger      Ledger management
-payments    Payments management
-profiles    Profiles management
-prompt      Start a prompt
-search      Search in all services
-stack       Manage your stack
-ui          Open UI
-webhooks    Webhooks management
--->
+#
+fctl auth users list
+
+#
+fctl cloud
+
+#
+fctl payments connectors install
+
+#
+fctl profiles list
+
+#
+fctl prompt
+
+#
+fctl webhooks list
+```
 
 ### Tips
 
@@ -83,4 +88,3 @@ source <(fctl completion zsh) # bash
 ```sh
 source ~/.zshrc
 ```
-

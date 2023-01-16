@@ -17,6 +17,8 @@ kind: Kustomization
 
 resources:
 - namespace.yml
+# - configmap.yml
+# - secrets.yml
 - deployment.yml
 - service.yml
 - ingress.yml

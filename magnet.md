@@ -1,5 +1,10 @@
 # Magnet
 
+<!--
+Rectangle
+https://rectangleapp.com
+-->
+
 ## App
 
 ### Installation

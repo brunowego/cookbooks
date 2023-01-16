@@ -47,8 +47,12 @@ docker run -d \
   --name redis \
   --network workbench \
   --entrypoint /bin/sh \
-  docker.io/library/redis:7.0.7 -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
+  docker.io/library/redis:7.0.7 -c 'redis-server --requirepass ${REDIS_PASSWORD}'
 ```
+
+<!--
+--appendonly yes
+-->
 
 ```env
 #

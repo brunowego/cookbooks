@@ -41,5 +41,5 @@ https://download.sketch.com/sketch-72.4-124482.zip
 ### Find Figma Files
 
 ```sh
-find ./ -name '*.sketch' -type f
+find . -name '*.sketch' -type f
 ```

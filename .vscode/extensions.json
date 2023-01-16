@@ -9,6 +9,7 @@
     "hashicorp.terraform",
     "bierner.markdown-mermaid",
     "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
-    "snyk-security.snyk-vulnerability-scanner"
+    "snyk-security.snyk-vulnerability-scanner",
+    "esbenp.prettier-vscode"
   ]
 }

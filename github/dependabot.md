@@ -35,6 +35,13 @@ updates:
       - dependencies
 ```
 
+<!--
+  - package-ecosystem: gitsubmodule
+    directory: /
+    schedule:
+      interval: daily
+-->
+
 ### Label Creation
 
 1. Issues -> Labels

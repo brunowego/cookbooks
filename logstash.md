@@ -26,9 +26,9 @@ docker run -d \
 echo -e '[INFO]\thttp://127.0.0.1:3000'
 ```
 
-| Login | Password |
-| --- | --- |
-| `admin` | `admin` |
+| Login   | Password |
+| ------- | -------- |
+| `admin` | `admin`  |
 
 ### Shell
 
@@ -86,8 +86,8 @@ docker run -d \
   -h mongo \
   -v mongo-data:/data/db \
   -v mongo-configdb:/data/configdb \
-  -e MONGO_INITDB_ROOT_USERNAME='user' \
-  -e MONGO_INITDB_ROOT_PASSWORD='pass' \
+  -e MONGO_INITDB_ROOT_USERNAME='dev' \
+  -e MONGO_INITDB_ROOT_PASSWORD='dev' \
   -p 27017:27017 \
   --name mongo \
   --network workbench \

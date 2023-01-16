@@ -58,7 +58,9 @@ jq '."workbench.sideBar.location" |= "right"' "$HOME"/.vscode/settings.json | sp
 # Open Side by Side Direction
 jq '."workbench.editor.openSideBySideDirection" |= "down"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 jq '."workbench.editor.splitInGroupLayout" |= "vertical"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+```
 
+<!--
 # Auto Save
 # jq '."files.autoSave" |= "afterDelay"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 
@@ -82,4 +84,4 @@ jq '."workbench.editor.splitInGroupLayout" |= "vertical"' "$HOME"/.vscode/settin
 
 # Tab Size
 # jq '."editor.tabSize" |= 2' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
-```
+-->

@@ -96,7 +96,6 @@ helm repo update
 ```sh
 #
 kubectl create ns cert-system
-# kubectl create ns security
 
 #
 helm search repo -l jetstack/cert-manager
@@ -104,7 +103,7 @@ helm search repo -l jetstack/cert-manager
 #
 helm install cert-manager jetstack/cert-manager \
   --namespace cert-system \
-  --version v1.10.1 \
+  --version v1.11.0 \
   -f <(cat << EOF
 installCRDs: true
 

@@ -218,7 +218,7 @@ code --install-extension technosophos.vscode-helm
 jq '."recommendations" += ["technosophos.vscode-helm"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
-#### Delete All
+#### Delete All Deployed Helms
 
 ```sh
 helm uninstall $(helm ls --all --short) -n $(helm ls --all --short)

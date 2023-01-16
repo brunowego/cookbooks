@@ -38,7 +38,7 @@ jobs:
           kubeval: v0.16.1
           command: |
             echo 'Run kubeval'
-            for ENV in `find ./.k8s/overlays -type d | awk 'NR > 1'`; do
+            for ENV in `find ..k8s/overlays -type d | awk 'NR > 1'`; do
               echo "Validating: $ENV"
               kustomize build "$ENV" | \
                 kubeval --skip-kinds 'ExternalSecret,Ingress'

@@ -22,7 +22,7 @@ echo 'PyMySQL==0.10.1' >> ./requirements.txt
 ```py
 >>> import pymysql
 >>>
->>> conn = pymysql.connect(user='user', password='pass', host='127.0.0.1')
+>>> conn = pymysql.connect(user='dev', password='dev', host='127.0.0.1')
 >>>
 >>> cur = conn.cursor()
 >>> cur.execute('SELECT CURRENT_TIMESTAMP')

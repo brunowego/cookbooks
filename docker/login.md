@@ -1,4 +1,4 @@
-# Login
+# Docker Login
 
 ## Credential Helper
 
@@ -15,14 +15,13 @@ brew install docker-credential-helper
 #### Homebrew
 
 ```sh
+#
 mkdir -p ~/.docker
-```
 
-```sh
+#
 [[ -f ~/.docker/config.json ]] || echo '{}' >> ~/.docker/config.json
-```
 
-```sh
+#
 jq ".credsStore |= \"osxkeychain\"" ~/.docker/config.json | sponge ~/.docker/config.json
 ```
 
@@ -36,6 +35,6 @@ jq 'del(.credsStore)' ~/.docker/config.json | sponge ~/.docker/config.json
 
 #
 docker login \
-  -u [username] \
-  [hostname]:5000
+  -u <username> \
+  <hostname>:5000
 ```

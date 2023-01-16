@@ -5,6 +5,10 @@ https://app.pluralsight.com/course-player?courseId=a609cb66-9343-41bd-87e3-a8351
 https://app.pluralsight.com/library/courses/postman-fundamentals/table-of-contents
 https://www.linkedin.com/learning/postman-essential-training
 https://www.freecodecamp.org/news/learn-how-to-use-postman-to-test-apis/
+
+https://<name>.postman.co
+https://postman.com/<name>
+https://<name>.postman.co/settings/team/custom-domains
 -->
 
 ## Links

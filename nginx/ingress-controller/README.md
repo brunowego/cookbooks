@@ -119,6 +119,20 @@ prometheus.io/port: "10254"
 
 ### Issues
 
+#### Missing Root Path
+
+```log
+Error: INSTALLATION FAILED: unable to build kubernetes objects from release manifest: error validating "": error validating data: ValidationError(Ingress.spec.rules[0].http): missing required field "paths" in io.k8s.api.networking.v1.HTTPIngressRuleValue
+```
+
+```yml
+ingress:
+  enabled: true
+  hosts:
+    - host: n8n.${DOMAIN}
+      paths: ['/'] # add this
+```
+
 #### Incompatibility on API Version
 
 ```log

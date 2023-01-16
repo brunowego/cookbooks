@@ -41,7 +41,7 @@ rename \
   's/<from>/<to>/' \
   *
 
-find ./ \
+find . \
   -type f \
   -exec rename \
     --dry-run \
@@ -50,7 +50,7 @@ find ./ \
     {} +
 
 # Replace Extension: Option 1
-find ./ \
+find . \
   -name '*.<extension>' \
   -print0 | \
     xargs -0 rename \
@@ -59,7 +59,7 @@ find ./ \
       's/.<from-ext>$/.<to-ext>/'
 
 # Replace Extension: Option 2
-find ./ \
+find . \
   -iname '*.<extension>' \
   -exec realpath {} \; | \
     rename \

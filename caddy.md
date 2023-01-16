@@ -1,5 +1,12 @@
 # Caddy
 
+**Keywords:** Reverse Proxy
+
+## Links
+
+- [Main Website](https://caddyserver.com)
+- [Docs](https://caddyserver.com/docs)
+
 ## Docker
 
 ### Build
@@ -103,6 +110,16 @@ brew services start caddy
 sudo systemctl enable --now caddy
 ```
 
+### Usage
+
+```sh
+#
+caddy reverse-proxy --from :8080 --to :8081
+
+#
+caddy reverse-proxy --to :8081
+```
+
 ### Tips
 
 <!-- #### Configuration
@@ -164,12 +181,6 @@ caddy \
   -email admin@example.com \
   -host app.example.com \
   -root /var/www/html
-
-#
-caddy reverse-proxy \
-  --from http://127.0.0.1:8080 \
-  --insecure \
-  --to 127.0.0.1:8081
 ``` -->
 
 #### Visual Studio Code

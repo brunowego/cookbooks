@@ -15,7 +15,7 @@ spec:
   acme:
     # server: https://acme-staging-v02.api.letsencrypt.org/directory
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: <email>
+    email: devops@example.com
     privateKeySecretRef:
       name: letsencrypt-issuer
     solvers:

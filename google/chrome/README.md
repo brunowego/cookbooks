@@ -70,7 +70,19 @@ choco install -y googlechrome
 ln -s /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome /usr/local/bin/chrome
 ```
 
+### Shortcuts
+
+| Description     | Shortcut                           |
+| --------------- | ---------------------------------- |
+| Developer Tools | `Command (⌘)` + `Option (⌥)` + `J` |
+
 ### Tips
+
+#### Cleaning HTTPS 301 Redirect
+
+1. Open "More Tools -> Developer Tools"
+2. Hold the "Refress" button
+3. Select "Empty Cache and Hard Reload"
 
 #### Incognito
 
@@ -78,3 +90,18 @@ ln -s /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome /usr/local/
 # Darwin
 open -a /Applications/Google\ Chrome.app --args --incognito
 ```
+
+<!--
+NET::ERR_CERT_AUTHORITY_INVALID
+
+chrome://settings/security?q=enhanced
+
+chrome://flags/
+Insecure origins treated as secure
+Allow invalid certificates for resources loaded from localhost.
+
+/Applications/Google\ Chrome\ Dev.app/Contents/MacOS/Google\ Chrome\ Dev \
+  --ignore-certificate-errors \
+  --ignore-urlfetcher-cert-requests \
+  --allow-insecure-localhost
+-->

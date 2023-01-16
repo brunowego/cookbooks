@@ -4,7 +4,7 @@
 
 - [Main Website](https://nextjs.org/docs/api-reference/create-next-app)
 
-## CLI
+## Project
 
 ### Commands
 

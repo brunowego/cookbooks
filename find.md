@@ -21,16 +21,22 @@ man find
 pkill find
 
 # Wildcard
-find ./ -name \*.<extension>
+find . -name \*.<extension>
 ```
 
 ## Tips
+
+### Find files where filename ends with space
+
+```sh
+find . -type f -name '* '
+```
 
 ### Find Folder
 
 ```sh
 #
-find ./ \
+find . \
   -name '<name>' \
   -type d \
   -maxdepth 2
@@ -40,7 +46,7 @@ find ./ \
 
 ```sh
 #
-find ./ \
+find . \
   -type f \
   -not -path '*node_modules*' | \
     grep -oE '\.(\w+)$' | \
@@ -51,10 +57,10 @@ find ./ \
 
 ```sh
 #
-find ./ -name '*.<extension>' -type f
+find . -name '*.<extension>' -type f
 
 #
-find ./ -name '*.<extension>' -type f -delete
+find . -name '*.<extension>' -type f -delete
 ```
 
 ### Run in all subdirectories
@@ -66,7 +72,7 @@ find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c 'cd "{}" && [command]' 
 ### Move all files from subfolders to parent folder
 
 ```sh
-find ./ -mindepth 2 -type f -print -exec mv {} ./ \;
+find . -mindepth 2 -type f -print -exec mv {} ./ \;
 ```
 
 <!-- ###

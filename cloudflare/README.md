@@ -2,6 +2,8 @@
 
 <!--
 https://github.com/mrbbot/miniflare
+
+https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/cloudflare.md
 -->
 
 **Keywords:** CDN, DDoS Mitigation

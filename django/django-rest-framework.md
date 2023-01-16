@@ -46,7 +46,7 @@ REST_FRAMEWORK = {
 ```sh
 curl \
   -H 'Accept: application/json; indent=4' \
-  -u admin:password \
+  -u <user>:<pass> \
   http://127.0.0.1:8000/users/
 ```
 

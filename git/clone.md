@@ -15,7 +15,11 @@ git clone <repo> </path/to/folder> && cd "$_"
 ### Specific Branch
 
 ```sh
-git clone --branch <branch> --single-branch --depth <depth> <repo>
+git clone \
+  --branch <branch> \
+  --single-branch \
+  --depth <depth> \
+  <repo>
 ```
 
 | Param     | Value |
@@ -40,5 +44,7 @@ git clone <repo> ./
 **Dependencies:** [GitHub CLI](/github/README.md#cli)
 
 ```sh
-gh repo list <owner> --limit 1000 | awk '{print $1; }' | xargs -L1 gh repo clone
+gh repo list <owner> --limit 1000 | \
+  awk '{print $1; }' | \
+    xargs -L1 gh repo clone
 ```

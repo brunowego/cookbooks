@@ -174,6 +174,14 @@ EOF
 )
 ```
 
+<!--
+kubectl port-forward \
+  --address 0.0.0.0 \
+  -n monitoring \
+  svc/monitoring-grafana \
+  8080:80
+-->
+
 ### TLS
 
 **Dependencies:** [cert-manager](/cert-manager/cluster-issuer/letsencrypt/local.md)

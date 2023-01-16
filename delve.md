@@ -18,6 +18,12 @@ https://app.pluralsight.com/library/courses/go-delve-debugging-applications/
 brew install delve
 ```
 
+#### go get
+
+```sh
+GOBIN=/usr/local/bin go install github.com/go-delve/delve/cmd/dlv@latest
+```
+
 ### Commands
 
 ```sh
@@ -29,7 +35,9 @@ dlv -h
 ```sh
 #
 dlv debug
+```
 
+<!--
 #
 dlv \
   --listen :2345 \
@@ -37,5 +45,11 @@ dlv \
   --log-dest ./log.txt \
   --api-version 2 \
   --accept-multiclient \
-  exec ./[binary]
-```
+  exec ./<binary>
+
+dlv -proc path/to/program
+
+dlv -run
+
+sudo dlv -pid 44839
+-->

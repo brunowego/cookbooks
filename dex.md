@@ -20,7 +20,7 @@ https://aws.amazon.com/blogs/containers/using-dex-dex-k8s-authenticator-to-authe
 ## Links
 
 - [Code Repository](https://github.com/dexidp/dex)
-- [Main Website](https://github.com/dexidp/dex)
+- [Main Website](https://dexidp.io)
 
 ## Guides
 
@@ -97,7 +97,7 @@ docker run -d \
   -p 5556:5556 \
   --name dex \
   --network workbench \
-  docker.io/dexidp/dex:v2.28.1 dex serve /etc/dex/cfg/config.yml
+  docker.io/dexidp/dex:v2.35.0 dex serve /etc/dex/cfg/config.yml
 ```
 
 ### Testing
