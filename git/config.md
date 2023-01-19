@@ -97,7 +97,7 @@ git config --get core.hookspath
 tee /path/to/org/.gitconfig << EOF
 [user]
 	name = <Name>
-	email = <name@example.com>
+	email = <name@domain.tld>
 EOF
 
 #

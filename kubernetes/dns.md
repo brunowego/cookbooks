@@ -21,7 +21,7 @@ kubectl run dnstools -it --rm \
 ```
 
 ```sh
-dig @10.96.0.10 nginx.example.com +short
+dig @10.96.0.10 nginx.domain.tld +short
 ```
 
 <!-- ### minikube Hosts
@@ -31,5 +31,5 @@ minikube ssh -- sudo cat /etc/hosts
 ```
 
 ```sh
-minikube ssh -- 'sudo /usr/bin/sh -c "echo -e \"127.0.0.1\tsubdomain.example.com\" >> /etc/hosts"'
+minikube ssh -- 'sudo /usr/bin/sh -c "echo -e \"127.0.0.1\tsubdomain.domain.tld\" >> /etc/hosts"'
 ``` -->

@@ -37,7 +37,7 @@ go mod verify
 #### Structure
 
 ```sh
-mkdir -p {cmd,internal}
+mkdir -p {cmd,internal,pkg}
 ```
 
 #### Migration

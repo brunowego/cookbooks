@@ -58,7 +58,7 @@ quarkus.http.root-path = /api
 
 ```ini
 quarkus.http.cors = true
-quarkus.http.cors.origins = http://localhost:3000,https://example.com
+quarkus.http.cors.origins = http://localhost:3000,https://domain.tld
 ```
 
 ## OIDC Configuration

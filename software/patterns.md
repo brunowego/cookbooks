@@ -23,9 +23,9 @@ The Stack Exchange Team
 
 1. Don't have a Developer Account? Sign up
 2. Register
-   - Email: john@example.com
+   - Email: john@domain.tld
    - Send PIN to email
-     - The PIN was sent to [john@example.com](mailto:john@example.com)
+     - The PIN was sent to [john@domain.tld](mailto:john@domain.tld)
 3. Verify PIN
    - (Email) Here is the pin that you requested: HW5Y76
    - Please enter Pin (60s): HW5Y76
@@ -42,34 +42,34 @@ The Stack Exchange Team
 
 ```txt
 #
-https://example.com/en
-https://ny.example.com/en
-https://sp.example.com.br
+https://domain.tld/en
+https://ny.domain.tld/en
+https://sp.domain.tld.br
 
 #
-https://status.example.com
+https://status.domain.tld
 
 #
-https://brand.example.com
-https://example.com/brand
+https://brand.domain.tld
+https://domain.tld/brand
 
 #
-news@reply.example.com
+news@reply.domain.tld
 
 #
-mail.example.com/[hash]
+mail.domain.tld/[hash]
 
 #
-https://example.com/cart
-https://example.com/checkout/[hash]/review_order
-https://example.com/checkout/[hash]/payment_method
+https://domain.tld/cart
+https://domain.tld/checkout/[hash]/review_order
+https://domain.tld/checkout/[hash]/payment_method
 
 #
-https://example.com/@[username]
-https://example.com/u/[username]
+https://domain.tld/@[username]
+https://domain.tld/u/[username]
 
 #
-https://example.com/exit?url=https%3A%2F%2Fexample.com
+https://domain.tld/exit?url=https%3A%2F%2Fdomain.tld
 ```
 
 ## Sign-up

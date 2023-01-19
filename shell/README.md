@@ -1,9 +1,6 @@
 # Shell
 
 <!--
-exit 0
-exit 1
-
 https://app.pluralsight.com/paths/skill/shell-scripting-with-bash-and-z-shell
 https://app.pluralsight.com/paths/skill/using-bash-and-z-shell
 
@@ -37,6 +34,10 @@ Elvish
 -->
 
 ## Tips
+
+### Exit 0 and Exit 1
+
+![Preview](/assets/images/shell/exito-and-exit-1.jpg)
 
 ### Installed Shells
 
@@ -92,7 +93,7 @@ EOF
 
 ```sh
 #
-for ((i=100; i<200; i+=1)); do nmap -p 22 "sub$i.example.com"; done
+for ((i=100; i<200; i+=1)); do nmap -p 22 "sub$i.domain.tld"; done
 ``` -->
 
 ### Server Status Using Shell Script

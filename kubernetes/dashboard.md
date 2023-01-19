@@ -18,7 +18,7 @@
 helm install kubernetes-dashboard stable/kubernetes-dashboard \
   --namespace kube-system \
   --set ingress.enabled=true \
-  --set ingress.hosts={dashboard.example.com} \
+  --set ingress.hosts={dashboard.domain.tld} \
   --set rbac.clusterAdminRole=true \
   --set serviceAccount.create=true
 ```
@@ -44,7 +44,7 @@ ingress:
   tls:
     - secretName: kubernetes-dashboard.tls-secret
       hosts:
-        - dashboard.example.com
+        - dashboard.domain.tld
 EOF
 ) <(helm get values kubernetes-dashboard))
 ```
@@ -65,7 +65,7 @@ kubectl delete secret kubernetes-dashboard.tls-secret -n kube-system
 helm upgrade kubernetes-dashboard stable/kubernetes-dashboard -f <(yq m <(cat << EOF
 ingress:
   annotations:
-    kubernetes.io/ingress.class: nginx
+    kubernetes.io/ingress.class: external-nginx
     nginx.ingress.kubernetes.io/force-ssl-redirect: 'true'
     nginx.ingress.kubernetes.io/backend-protocol: HTTPS
 EOF
@@ -106,8 +106,8 @@ nslookup kubernetes-dashboard.kube-system.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 dashboard.example.com +short
-nslookup dashboard.example.com 10.96.0.10
+dig @10.96.0.10 dashboard.domain.tld +short
+nslookup dashboard.domain.tld 10.96.0.10
 ```
 
 ### Secrets

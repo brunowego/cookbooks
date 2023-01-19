@@ -27,7 +27,7 @@ git clone 'https://github.com/Cloud-CV/EvalAI.git' evalai && cd "$_"
 ### Running
 
 ```sh
-docker-compose up --build
+docker compose up --build
 ```
 
 ```sh
@@ -41,10 +41,10 @@ echo -e '[INFO]\thttp://127.0.0.1:8888'
 echo -e '[INFO]\thttp://127.0.0.1:4200'
 ```
 
-| Login | Password |
-| --- | --- |
-| `admin` | `password` |
-| `host` | `password` |
+| Login         | Password   |
+| ------------- | ---------- |
+| `admin`       | `password` |
+| `host`        | `password` |
 | `participant` | `password` |
 
 ## Docker Swarm
@@ -76,10 +76,10 @@ echo -e "[INFO]\thttp://$(docker-machine ip manager1):8888"
 echo -e "[INFO]\thttp://$(docker-machine ip manager1):4200"
 ```
 
-| Login | Password |
-| --- | --- |
-| `admin` | `password` |
-| `host` | `password` |
+| Login         | Password   |
+| ------------- | ---------- |
+| `admin`       | `password` |
+| `host`        | `password` |
 | `participant` | `password` |
 
 ### Remove
@@ -98,7 +98,7 @@ git clone https://github.com/Cloud-CV/EvalAI.git evalai && cd "$_"
 
 ### Environment
 
-***pyenv***
+**_pyenv_**
 
 ```sh
 pyenv install 3.6.12
@@ -108,7 +108,7 @@ eval "$(pyenv init -)"
 pyenv local 3.6.12
 ```
 
-***Virtualenv***
+**_Virtualenv_**
 
 ```sh
 pip3 install -U virtualenv
@@ -118,7 +118,7 @@ virtualenv ./.venv
 source ./.venv/bin/activate
 ```
 
-***PostgreSQL***
+**_PostgreSQL_**
 
 ```sh
 #
@@ -139,7 +139,7 @@ docker run -d \
   docker.io/library/postgres:11.2-alpine
 ```
 
-***Environment Variables***
+**_Environment Variables_**
 
 ```sh
 export SECRET_KEY='S3cr3t_K#Key'

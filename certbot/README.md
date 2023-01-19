@@ -58,7 +58,7 @@ sudo mkdir -p {/etc,/var/{lib,log}}/letsencrypt
 sudo chown -R "$(whoami)" {/etc,/var/{lib,log}}/letsencrypt
 
 cat << EOF > /etc/letsencrypt/cli.ini
-domains = <example.com>, <www.example.com>
+domains = <domain.tld>, <www.domain.tld>
 authenticator = manual # standalone
 email = <email>
 EOF
@@ -112,7 +112,7 @@ certbot delete
 ```
 
 <!--
-ls /etc/letsencrypt/live/<example.com>
+ls /etc/letsencrypt/live/<domain.tld>
 -->
 
 ### Tips

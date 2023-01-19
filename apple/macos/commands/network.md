@@ -20,4 +20,4 @@
 - `192.168.0.1`: A single host
 - `192.168.1.0/24`: The `192.168.1` subnet
 - `10.0.0.0/16`: The `10.0` subnet
-- `*.example.com`: Any subdomain that ends with `example.com`
+- `*.domain.tld`: Any subdomain that ends with `domain.tld`

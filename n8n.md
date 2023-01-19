@@ -142,6 +142,20 @@ EOF
 kubectl get all -n n8n-system
 ```
 
+<!--
+NODE_ENV: production
+GENERIC_TIMEZONE: America/Sao_Paulo
+
+N8N_SMTP_HOST=smtp.gmail.com
+N8N_SMTP_PORT=587
+N8N_SMTP_SSL='false'
+N8N_SMTP_USER=
+N8N_SMTP_PASS=
+N8N_SMTP_SENDER=no-reply@domain.tld
+
+N8N_EDITOR_BASE_URL: https://n8n.domain.tld
+-->
+
 ### Logs
 
 ```sh
@@ -150,6 +164,20 @@ kubectl logs \
   -n n8n-system \
   -f
 ```
+
+### Issues
+
+#### Disable SMTP SSL
+
+```log
+There is a problem with your SMTP setup! 140548125915520:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:../deps/openssl/openssl/ssl/record/ssl3_record.c:331:
+```
+
+<!--
+https://github.com/n8n-io/n8n/issues/3297
+-->
+
+Set `N8N_SMTP_SSL` to `false`.
 
 ### Delete
 

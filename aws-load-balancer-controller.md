@@ -112,6 +112,9 @@ kubectl get all -n kube-system
 
 ```sh
 #
+kubectl get ingressclass
+
+#
 kubectl get serviceaccount aws-load-balancer-controller \
   -n kube-system
 
@@ -163,7 +166,7 @@ metadata:
     alb.ingress.kubernetes.io/wafv2-acl-arn: $AWS_WAF_ACL_ARN
 spec:
   rules:
-  - host: my-app.example.com
+  - host: my-app.domain.tld
     http:
       paths:
       - backend:

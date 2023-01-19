@@ -15,8 +15,9 @@ helm repo update
 helm package ./
 
 #
-helm repo index ./ \
-  --url 'https://charts.<domain>'
+helm repo index \
+  --url 'https://charts.<domain>' \
+  ./
 ```
 
 ### Tips

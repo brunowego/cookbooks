@@ -31,20 +31,20 @@ sudo mkdir -p /etc/security/keytabs
 ### Realm
 
 ```sh
-sudo sed -i '/\[libdefaults\]/a \ default_realm = [EXAMPLE.COM]' /etc/krb5.conf
+sudo sed -i '/\[libdefaults\]/a \ default_realm = [DOMAIN.TLD]' /etc/krb5.conf
 ```
 
 ```sh
 sudo tee -a /etc/krb5.conf << EOF
 [realms]
- [EXAMPLE.COM] = {
-  kdc = [kdc.example.com]
-  admin_server = [kdc.example.com]
+ [DOMAIN.TLD] = {
+  kdc = [kdc.domain.tld]
+  admin_server = [kdc.domain.tld]
  }
 
 [domain_realm]
- [.example.com] = [EXAMPLE.COM]
- [example.com] = [EXAMPLE.COM]
+ [.domain.tld] = [DOMAIN.TLD]
+ [domain.tld] = [DOMAIN.TLD]
 
 EOF
 ```

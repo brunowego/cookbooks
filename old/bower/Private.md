@@ -8,7 +8,7 @@ touch .bowerrc || exit
 
 ```json
 {
-  "registry": "https://bower.example.com:5678"
+  "registry": "https://bower.domain.tld:5678"
 }
 ```
 

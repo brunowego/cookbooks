@@ -30,7 +30,7 @@ sudo vim /etc/ssh/ssh_config
 ```
 
 ```sh
-Host *.example.com
+Host *.domain.tld
   GSSAPIAuthentication yes
   GSSAPIDelegateCredentials yes
 ```

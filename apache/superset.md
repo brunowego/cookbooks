@@ -18,7 +18,7 @@ docker run -d \
   -v superset-redis-data:/data \
   --name superset-redis \
   --network workbench \
-  docker.io/library/redis:5.0.4-alpine3.9 redis-server --appendonly yes
+  docker.io/library/redis:5.0.4-alpine3.9 redis-server
 ```
 
 ```sh

@@ -2,6 +2,7 @@
 
 <!--
 https://github.com/roddhjav/pass-import
+https://github.com/tadfisher/pass-otp
 -->
 
 **Keywords:** Password Manager

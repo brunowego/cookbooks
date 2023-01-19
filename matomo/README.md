@@ -1181,7 +1181,7 @@ docker run -d \
   -v redis-data:/data \
   -p 6379:6379 \
   --name matomo-redis \
-  docker.io/library/redis:5.0.5-alpine3.9 /bin/sh -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
+  docker.io/library/redis:5.0.5-alpine3.9 /bin/sh -c 'redis-server --requirepass ${REDIS_PASSWORD}'
 ```
 
 ```sh
@@ -1619,7 +1619,7 @@ rm -fR /usr/src/matomo
   <p>
     <img
       referrerpolicy="no-referrer-when-downgrade"
-      src="//matomo.example.com/matomo.php?idsite=1&amp;rec=1"
+      src="//matomo.domain.tld/matomo.php?idsite=1&amp;rec=1"
       style="border:0"
       alt=""
     />

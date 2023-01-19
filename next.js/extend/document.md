@@ -12,7 +12,7 @@ class AppDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="canonical" href="https://example.com" />
+          <link rel="canonical" href="https://domain.tld" />
         </Head>
         <body>
           <Main />

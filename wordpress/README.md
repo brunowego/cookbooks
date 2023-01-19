@@ -225,7 +225,7 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
    - Username: `admin`
    - Password: `Pa$$w0rd!`
    - Confirm Password: (Check) Confirm use of weak password
-   - Your Email: `admin@example.com`
+   - Your Email: `admin@domain.tld`
    - Install WordPress
 3. Success! -> Log In
 
@@ -321,7 +321,7 @@ wp core install \
   --url='127.0.0.1:8080' \
   --title='Example' \
   --admin_user='admin' \
-  --admin_email='admin@example.com' \
+  --admin_email='admin@domain.tld' \
   --admin_password='Pa$$w0rd!'
 
 #

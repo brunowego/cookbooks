@@ -1,8 +1,11 @@
 # Mockoon
 
-## Documentation
+**Keywords:** Mocking
 
-- [CORS](https://mockoon.com/docs/latest/cors/)
+## Links
+
+- Docs
+  - [CORS](https://mockoon.com/docs/latest/cors/)
 
 ## App
 

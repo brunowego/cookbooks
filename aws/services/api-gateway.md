@@ -1,4 +1,6 @@
-# AWS Api Gateway
+# AWS API Gateway
+
+**Keywords:** API Gateway
 
 ## CLI
 

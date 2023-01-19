@@ -41,7 +41,7 @@ docker run -d \
   -v peertube-redis-data:/data \
   --name peertube-redis \
   --network workbench \
-  docker.io/library/redis:5.0.4-alpine3.9 redis-server --appendonly yes
+  docker.io/library/redis:5.0.4-alpine3.9 redis-server
 ```
 
 ```sh
@@ -94,7 +94,6 @@ echo -e '[INFO]\thttp://127.0.0.1:9000'
 ```
 
 $ sudo -u peertube NODE_CONFIG_DIR=/var/www/peertube/config NODE_ENV=production npm run reset-password -- -u target_username
-
 
 ### Shell
 

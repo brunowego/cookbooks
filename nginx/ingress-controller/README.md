@@ -77,7 +77,7 @@ curl \
   -X OPTIONS \
   -H 'Access-Control-Request-Method: GET' \
   -H 'Origin: http://localhost' \
-  http://example.com
+  http://domain.tld
 ```
 
 <!-- ```sh
@@ -90,7 +90,7 @@ kubectl annotate ingress \
 #
 kubectl annotate ingress \
   [ingress-name] \
-  'nginx.ingress.kubernetes.io/cors-allow-origin="https://admin.example.com"' \
+  'nginx.ingress.kubernetes.io/cors-allow-origin="https://admin.domain.tld"' \
   -n <namespace>
 
 #
@@ -204,6 +204,13 @@ minikube addons -p minikube enable ingress-dns
 minikube addons -p minikube disable ingress-dns
 -->
 
+<!--
+kubectl get ingressclass nginx -o json | \
+  jq '.metadata.name = "nginx"' | \
+    kubectl apply -f - && \
+      kubectl delete ingressclass nginx
+-->
+
 ## Helm
 
 ### References
@@ -236,6 +243,8 @@ helm install ingress-controller ingress-nginx/ingress-nginx \
   --version 4.4.0 \
   -f <(cat << EOF
 controller:
+  ingressClass: nginx
+
   nodeSelector:
     ingress-ready: 'true'
     kubernetes.io/os: linux

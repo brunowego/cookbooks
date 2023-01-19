@@ -1,7 +1,7 @@
 # fastlane dotENV
 
 <!--
-Apple ID -> fastlane@example.com
+Apple ID -> fastlane@domain.tld
 
 https://github.com/matijagrcic/react-native/blob/main/Fastlane.md
 -->

@@ -38,7 +38,7 @@ metadata:
   namespace: seldon
 spec:
   rules:
-    - host: analytics.seldon.example.com
+    - host: analytics.seldon.domain.tld
       http:
         paths:
           - backend:
@@ -47,7 +47,7 @@ spec:
             path: /
   tls:
     - hosts:
-        - analytics.seldon.example.com
+        - analytics.seldon.domain.tld
       secretName: seldon.tls-secret
 EOF
 ```

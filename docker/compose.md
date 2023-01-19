@@ -11,7 +11,7 @@
 ```sh
 curl \
   -L "https://github.com/docker/compose/releases/download/$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep tag_name | cut -d '"' -f 4)/docker-compose-Darwin-x86_64" \
-  -o /usr/local/bin/docker-compose && \
+  -o /usr/local/bin/docker compose && \
     chmod +x /usr/local/bin/docker-compose
 ```
 
@@ -20,7 +20,7 @@ curl \
 ```sh
 sudo curl \
   -L "https://github.com/docker/compose/releases/download/$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep tag_name | cut -d '"' -f 4)/docker-compose-Linux-x86_64" \
-  -o /usr/local/bin/docker-compose && \
+  -o /usr/local/bin/docker compose && \
     sudo chmod +x /usr/local/bin/docker-compose
 ```
 
@@ -46,14 +46,14 @@ sudo su - "$USER"
 ### Commands
 
 ```sh
-docker-compose help
+docker compose help
 ```
 
 ### Usage
 
 ```sh
 #
-docker-compose config
+docker compose config
 ```
 
 ### Tips

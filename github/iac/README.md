@@ -1,5 +1,10 @@
 # GitHub IaC
 
+<!--
+https://github.com/osinfra-io/github-organization-management/tree/194f18bb16dc74a3494cae66a2771cd09a6903c9
+https://github.com/Flaconi/terraform-github-organization
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/integrations/terraform-provider-github)

@@ -28,12 +28,12 @@ ab -h
 ab \
   -n 1000 \
   -c 100 \
-  https://example.com
+  https://domain.tld
 
 #
 ab \
   -n 2000 \
   -c 30 \
   -T application/json \
-  https://example.com
+  https://domain.tld
 ```

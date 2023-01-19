@@ -19,7 +19,7 @@ build_job:
   variables:
     GIT_SUBMODULE_STRATEGY: recursive
   script:
-    - docker-compose -f ./docker-compose.yml build
+    - docker compose -f ./docker-compose.yml build
   only:
     - develop
 
@@ -28,7 +28,7 @@ push_job:
   before_script:
     - echo ${CI_JOB_TOKEN} | docker login -u gitlab-ci-token --password-stdin ${CI_REGISTRY}
   script:
-    - docker-compose -f ./docker-compose.yml push
+    - docker compose -f ./docker-compose.yml push
   only:
     - develop
   dependencies:

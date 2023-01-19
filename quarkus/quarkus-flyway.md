@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS users (
     email VARCHAR(255) NOT NULL
 );
 
-INSERT INTO users (id, email) VALUES (uuid_generate_v4(), 'admin@example.com');
+INSERT INTO users (id, email) VALUES (uuid_generate_v4(), 'admin@domain.tld');
 EOF
 
 #

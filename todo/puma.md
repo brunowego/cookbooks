@@ -44,7 +44,7 @@ server {
 
 	root /home/deploy/[appname]/public;
 
-	server_name [example.com];
+	server_name [domain.tld];
 
 	try_files $uri/index.html $uri @app;
 
@@ -68,7 +68,7 @@ server {
 	listen 80;
 	listen [::]:80;
 
-	server_name [example.com];
+	server_name [domain.tld];
 
 	return 302 https://$server_name$request_uri;
 }
@@ -79,7 +79,7 @@ server {
 
 	root /home/deploy/[appname]/public;
 
-	server_name [example.com];
+	server_name [domain.tld];
 
 	try_files $uri/index.html $uri @app;
 

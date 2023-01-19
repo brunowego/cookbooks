@@ -55,7 +55,7 @@ sudo mkdir -p /usr/local/etc/dnsmasq.d
 ```
 
 ```sh
-sudo bash -c 'echo "address=/.example.com/[ip]" > /usr/local/etc/dnsmasq.d/example.conf'
+sudo bash -c 'echo "address=/.domain.tld/[ip]" > /usr/local/etc/dnsmasq.d/example.conf'
 ```
 
 ```sh
@@ -92,7 +92,7 @@ sudo mkdir -p /etc/resolver
 ```
 
 ```sh
-sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/example.com'
+sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/domain.tld'
 ```
 
 ```sh
@@ -114,10 +114,10 @@ pgrep dnsmasq >/dev/null && echo 'running' || echo 'not running'
 ```
 
 ```sh
-dig this.is.a.example.com @127.0.0.1
+dig this.is.a.domain.tld @127.0.0.1
 ```
 
 ```sh
 ping -c 1 google.com
-ping -c 1 this.is.a.example.com
+ping -c 1 this.is.a.domain.tld
 ```

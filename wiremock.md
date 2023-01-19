@@ -1,5 +1,11 @@
 # WireMock
 
+<!--
+Language: Java
+-->
+
+**Keywords:** Mocking, OAS
+
 ## Links
 
 - [Code Repository](https://github.com/wiremock/wiremock)

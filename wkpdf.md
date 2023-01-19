@@ -14,7 +14,7 @@ gem install wkpdf
 
 ```sh
 wkpdf \
-  --source http://www.example.com \
+  --source http://www.domain.tld \
   --margins 15 \
   --output ./example.pdf
 ```

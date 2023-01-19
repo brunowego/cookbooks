@@ -1,9 +1,5 @@
 # KrakenD
 
-<!--
-TODO
--->
-
 **Keywords:** API Gateway
 
 ## Links

@@ -61,13 +61,13 @@ tar --help
 #### Check type
 
 ```sh
-file [filename]
+file <filename>
 ```
 
 #### Compress gzip
 
 ```sh
-tar -czvf [filename].tar.gz [/path/to/directory-or-file]
+tar -czvf <filename>.tar.gz </path/to/directory-or-file>
 ```
 
 ### Issues
@@ -80,9 +80,9 @@ tar: Exiting with failure status due to previous errors
 
 ```sh
 tar \
-  -czf [filename].tar.gz \
+  -czf <filename>.tar.gz \
   --exclude='/path/to/folder-or-file' \
-  [/path/to/directory-or-file]
+  </path/to/directory-or-file>
 ```
 
 ```sh

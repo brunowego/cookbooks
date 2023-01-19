@@ -3,5 +3,5 @@
 ## TBD
 
 ```sh
-xdg-open 'http://example.com' || open 'http://example.com' || echo -e '[INFO]\thttp://example.com'
+xdg-open 'http://domain.tld' || open 'http://domain.tld' || echo -e '[INFO]\thttp://domain.tld'
 ```

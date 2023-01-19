@@ -40,11 +40,12 @@ docker run -d \
    ```
 
    | Username | Password |
-   | --- | --- |
-   | `admin` | `12345` |
+   | -------- | -------- |
+   | `admin`  | `12345`  |
 
 2. Domains -> Add Domain
-   - Name: `example.com`
+
+   - Name: `domain.tld`
    - IMAP -> Server: `mailserver`
    - SMTP -> Server: `mailserver`
    - Test

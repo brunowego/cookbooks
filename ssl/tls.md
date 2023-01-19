@@ -21,7 +21,7 @@
 
 ```sh
 #
-curl --cert-status https://example.com
+curl --cert-status https://domain.tld
 ```
 
 <!-- ### TLS Versions

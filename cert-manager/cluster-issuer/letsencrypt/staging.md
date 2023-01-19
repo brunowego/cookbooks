@@ -28,7 +28,7 @@ spec:
     solvers:
       - http01:
           ingress:
-            class: nginx
+            class: external-nginx
         selector:
           dnsNames:
             - ${DOMAIN}

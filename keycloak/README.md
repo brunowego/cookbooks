@@ -394,7 +394,7 @@ kubectl delete ns keycloak \
 
 1. Manage -> Users -> Add user
    - Username: johndoe
-   - Email: johndoe@example.com
+   - Email: johndoe@domain.tld
    - Email Verified: Check ON
    - Save
 2. Credentials Tab -> Set Password Section

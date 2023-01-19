@@ -31,29 +31,29 @@ dig -h
 
 ```sh
 #
-dig <domain>
+export DOMAIN='domain.tld'
 
 #
-dig <domain> +short
+dig "$DOMAIN" +short
 
 #
-dig <domain> NS
+dig "$DOMAIN" +short NS
+# DNS Google
+dig @8.8.8.8 "$DOMAIN" +short NS
+# DNS Quad9
+dig @9.9.9.9 "$DOMAIN" +short NS
+# DNS Cloudflare
+dig @1.1.1.1 "$DOMAIN" +short NS
 
 #
-dig <domain> CNAME
+dig grafana."$DOMAIN" +short CNAME
 
 #
-dig @8.8.8.8 <domain>
+dig "$DOMAIN" +short MX
 
 #
-dig -x 8.8.8.8
+dig "$DOMAIN" +short -t txt
 
 #
-dig <domain> MX
-
-#
-dig <domain> -t txt
-
-#
-dig <domain> A +short
+dig "$DOMAIN" +short A
 ```

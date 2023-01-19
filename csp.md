@@ -101,14 +101,14 @@ Refused to load the image '<URL>' because it violates the following Content Secu
 ```html
 <meta
   http-equiv="Content-Security-Policy"
-  content="default-src 'self'; img-src 'self' *.example.com;"
+  content="default-src 'self'; img-src 'self' *.domain.tld;"
 />
 ```
 
 ### Encoded Image
 
 ```log
-Refused to load the image 'data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27469%27%20height=%27409%27/%3e' because it violates the following Content Security Policy directive: "img-src 'self' *.example.com".
+Refused to load the image 'data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27469%27%20height=%27409%27/%3e' because it violates the following Content Security Policy directive: "img-src 'self' *.domain.tld".
 ```
 
 ```html

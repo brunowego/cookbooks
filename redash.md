@@ -25,7 +25,7 @@ docker run -d \
   -v redash-redis-data:/data \
   -p 6379:6379 \
   --name redash-redis \
-  docker.io/library/redis:5.0.5-alpine3.9 redis-server --appendonly yes
+  docker.io/library/redis:5.0.5-alpine3.9 redis-server
 ```
 
 ```sh
@@ -81,7 +81,7 @@ docker exec redash-server /app/bin/docker-entrypoint create_db
 docker exec redash-server /app/bin/docker-entrypoint manage users create_root \
   --org Example \
   --password 'Pa$$w0rd!' \
-  admin@example.com \
+  admin@domain.tld \
   admin
 ```
 
@@ -89,9 +89,9 @@ docker exec redash-server /app/bin/docker-entrypoint manage users create_root \
 echo -e '[INFO]\thttp://127.0.0.1:5000'
 ```
 
-| Login               | Password    |
-| ------------------- | ----------- |
-| `admin@example.com` | `Pa$$w0rd!` |
+| Login              | Password    |
+| ------------------ | ----------- |
+| `admin@domain.tld` | `Pa$$w0rd!` |
 
 ### Remove
 

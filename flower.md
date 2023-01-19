@@ -52,7 +52,7 @@ docker run -d \
   --name redis \
   --network workbench \
   --entrypoint /bin/sh \
-  docker.io/library/redis:5.0.5-alpine3.9 -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
+  docker.io/library/redis:5.0.5-alpine3.9 -c 'redis-server --requirepass ${REDIS_PASSWORD}'
 
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \

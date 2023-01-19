@@ -55,7 +55,7 @@ Strict-Transport-Security: The connection to the site is untrustworthy, so the s
 ```
 
 ```sh
-curl -I 'https://example.com' | \
+curl -I 'https://domain.tld' | \
   grep -i 'Strict-Transport-Security'
 ```
 
@@ -73,11 +73,11 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains
 ### X Content Type Options
 
 ```log
-The resource from “https://example.com/static/css/app.css” was blocked due to MIME type (“text/html”) mismatch (X-Content-Type-Options: nosniff).
+The resource from “https://domain.tld/static/css/app.css” was blocked due to MIME type (“text/html”) mismatch (X-Content-Type-Options: nosniff).
 ```
 
 ```sh
-curl -I 'https://example.com' | \
+curl -I 'https://domain.tld' | \
   grep -i 'X-Content-Type-Options'
 ```
 

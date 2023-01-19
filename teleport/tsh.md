@@ -48,7 +48,7 @@ tsh request review \
   --reason='you seem sus' \
   094fc0f3-e5ab-47c5-816e-09326735a899
 
-tsh scp some-file.ext server.example.com:
+tsh scp some-file.ext server.domain.tld:
 -->
 
 <!-- ## Tips

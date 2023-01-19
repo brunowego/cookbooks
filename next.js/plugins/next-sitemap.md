@@ -45,7 +45,7 @@ module.exports = NextSitemapConfig
 
 ```sh
 #
-echo 'NEXT_PUBLIC_SITE_URL=https://example.com' >> ./.env
+echo 'NEXT_PUBLIC_SITE_URL=https://domain.tld' >> ./.env
 
 #
 cat << EOF >> ./.gitignore

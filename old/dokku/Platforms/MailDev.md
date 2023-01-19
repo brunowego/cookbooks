@@ -3,7 +3,7 @@
 ```sh
 git clone git@github.com:yvess/docker-maildev.git maildev
 cd maildev
-git remote add dokku dokku@example.com:maildev
+git remote add dokku dokku@domain.tld:maildev
 git push dokku master
 ```
 

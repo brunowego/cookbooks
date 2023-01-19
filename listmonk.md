@@ -64,7 +64,7 @@ docker run -d \
   docker.io/listmonk/listmonk:v0.9.0-beta /bin/sh -c 'yes | ./listmonk --install && ./listmonk'
 ```
 
-<!-- -e LISTMONK_app__from_email='noreply <noreply@example.com>' \
+<!-- -e LISTMONK_app__from_email='noreply <noreply@domain.tld>' \
 -e LISTMONK_smtp__my0__enabled='true' \
 -e LISTMONK_smtp__my0__host='listmonk-mailhog' \
 -e LISTMONK_smtp__my0__port='1025' \
@@ -84,9 +84,9 @@ LISTMONK_smtp__smtp_main__password -->
 echo -e '[INFO]\thttp://127.0.0.1:9000'
 ```
 
-| Login | Password |
-| --- | --- |
-| `admin` | `admin` |
+| Login   | Password |
+| ------- | -------- |
+| `admin` | `admin`  |
 
 ### Remove
 
@@ -207,9 +207,9 @@ make run-frontend
 echo -e '[INFO]\thttp://127.0.0.1:9000'
 ```
 
-| Login | Password |
-| --- | --- |
-| `admin` | `admin` |
+| Login   | Password |
+| ------- | -------- |
+| `admin` | `admin`  |
 
 <!--
 LISTMONK_smtp__my0__enabled=true \

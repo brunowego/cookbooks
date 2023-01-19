@@ -136,7 +136,7 @@ helm install sentry sentry/sentry \
   --version 17.8.0 \
   -f <(cat << EOF
 user:
-  email: admin@example.com
+  email: admin@domain.tld
   password: Pa\$\$w0rd!
 
 ingress:
@@ -430,7 +430,7 @@ docker run -d \
   -v sentry-redis-data:/data \
   --name sentry-redis \
   --network workbench \
-  docker.io/library/redis:5.0.5-alpine3.9 /bin/sh -c 'redis-server --appendonly yes --requirepass $REDIS_PASSWORD'
+  docker.io/library/redis:5.0.5-alpine3.9 /bin/sh -c 'redis-server --requirepass $REDIS_PASSWORD'
 
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
@@ -454,10 +454,10 @@ docker run -d \
   -e SENTRY_REDIS_DB='0' \
   -e SENTRY_MEMCACHED_HOST='sentry-memcached' \
   -e SENTRY_MEMCACHED_PORT='11211' \
-  -e SENTRY_SERVER_EMAIL='noreply@example.com' \
-  -e SENTRY_EMAIL_HOST='smtp.example.com' \
+  -e SENTRY_SERVER_EMAIL='noreply@domain.tld' \
+  -e SENTRY_EMAIL_HOST='smtp.domain.tld' \
   -e SENTRY_EMAIL_PORT='587' \
-  -e SENTRY_EMAIL_USER='noreply@example.com' \
+  -e SENTRY_EMAIL_USER='noreply@domain.tld' \
   -e SENTRY_EMAIL_PASSWORD='Pa$$w0rd!' \
   -e SENTRY_EMAIL_USE_TLS='true' \
   -e SENTRY_SECRET_KEY='hbUaAougOvKIVOvF4v5cMUzYk1uzIi6C2Ch1SAabJT8xRmIuUEQ4AQWfVe7FiPZ10mAzDt4$' \
@@ -471,7 +471,7 @@ docker run -d \
 docker exec sentry sentry upgrade --noinput
 
 docker exec sentry sentry createuser \
-  --email='admin@example.com' \
+  --email='admin@domain.tld' \
   --password='Pa$$w0rd!' \
   --no-input \
   --superuser
@@ -544,7 +544,7 @@ git clone https://github.com/getsentry/onpremise.git onpremise && cd "$_"
 ./install.sh
 
 #
-docker-compose up -d
+docker compose up -d
 
 #
 echo -e '[INFO]\thttp://127.0.0.1:9000'

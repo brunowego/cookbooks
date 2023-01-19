@@ -64,7 +64,7 @@ echo -n '<password>' | openssl base64
 ```
 
 ```txt
-MAIL FROM: <noreply@example.com>
+MAIL FROM: <noreply@domain.tld>
 RCPT TO: <<username>@gmail.com>
 DATA
 Subject: Sending an email using telnet

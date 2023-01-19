@@ -23,7 +23,39 @@ kubectl get challenges
 kubectl describe challenge <name>
 ```
 
-<!-- ## Issues -->
+## Issues
+
+###
+
+```log
+<namespace> cm-acme-http-solver-t9djk <none> grafana.domain.tld <name>.elb.us-east-1.amazonaws.com 80 9s
+```
+
+```sh
+#
+kubens <namespace>
+
+#
+kubectl get ingress
+
+#
+kubectl get certificates -o wide
+
+#
+kubectl cert-manager status certificate '<cert-name>'
+
+#
+kubectl get certificaterequest
+
+#
+kubectl delete certificaterequest '<cert-req-id>'
+
+#
+kubectl cert-manager renew '<cert-name>'
+
+#
+kubectl describe certificaterequest '<cert-req-id>'
+```
 
 <!-- ####
 

@@ -1,0 +1,208 @@
+---
+version: '3'
+
+services:
+  minio:
+    image: docker.io/minio/minio:RELEASE.2023-01-02T09-40-09Z
+    container_name: budibase-minio
+    hostname: minio
+    volumes:
+      - type: volume
+        source: budibase-minio-data
+        target: /data
+    environment:
+      MINIO_ROOT_USER:
+      MINIO_ROOT_PASSWORD:
+      MINIO_BROWSER: off
+    command: server /data --console-address ':9001'
+    ports:
+      - target: 9000
+        published: 9000
+        protocol: tcp
+      - target: 9001
+        published: 9001
+        protocol: tcp
+    networks:
+      - workbench
+    restart: unless-stopped
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:9000/minio/health/live']
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  redis:
+    image: docker.io/library/redis:7.0.7
+    container_name: budibase-redis
+    hostname: redis
+    volumes:
+      - type: volume
+        source: budibase-redis-data
+        target: /data
+    environment:
+      REDIS_PASSWORD: budibase
+    entrypoint: /bin/sh
+    command: -c 'redis-server --requirepass $${REDIS_PASSWORD}'
+    ports:
+      - target: 6379
+        published: 6379
+        protocol: tcp
+    networks:
+      - workbench
+    restart: unless-stopped
+
+  couchdb:
+    image: docker.io/apache/couchdb:3.3.0
+    container_name: budibase-couchdb
+    hostname: couchdb
+    volumes:
+      - type: volume
+        source: budibase-couchdb-data
+        target: /opt/couchdb/data
+    environment:
+      COUCHDB_USER:
+      COUCHDB_PASSWORD:
+    ports:
+      - target: 5984
+        published: 5984
+        protocol: tcp
+    networks:
+      - workbench
+    restart: unless-stopped
+
+  couchdb-init:
+    image: docker.io/curlimages/curl:7.76.1
+    environment:
+      PUT_CALL: curl -su $COUCHDB_USER:$COUCHDB_PASSWORD -X PUT couchdb:5984
+    command:
+      [
+        'sh',
+        '-c',
+        'sleep 10 && $${PUT_CALL}/_users && $${PUT_CALL}/_replicator',
+      ]
+    networks:
+      - workbench
+    depends_on:
+      - couchdb
+
+  worker:
+    image: docker.io/budibase/worker:v2.2.20
+    container_name: budibase-worker
+    hostname: worker
+    environment:
+      SELF_HOSTED: 1
+      PORT: 4003
+      CLUSTER_PORT:
+      JWT_SECRET:
+      MINIO_ACCESS_KEY: ${MINIO_ROOT_USER}
+      MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD}
+      MINIO_URL: http://minio:9000
+      APPS_URL: http://app:4002
+      COUCH_DB_URL: http://${COUCHDB_USER}:${COUCHDB_PASSWORD}@couchdb:5984
+      INTERNAL_API_KEY:
+      REDIS_URL: redis:6379
+      REDIS_PASSWORD:
+    networks:
+      - workbench
+    restart: unless-stopped
+    depends_on:
+      - redis
+      - minio
+      - couchdb-init
+
+  app:
+    image: docker.io/budibase/apps:v2.2.20
+    container_name: budibase-app
+    hostname: app
+    # volumes:
+    #   - type: volume
+    #     source: budibase-plugins
+    #     target: /plugins
+    environment:
+      SELF_HOSTED: 1
+      COUCH_DB_URL: http://${COUCHDB_USER}:${COUCHDB_PASSWORD}@couchdb:5984
+      WORKER_URL: http://worker:4003
+      MINIO_URL: http://minio:9000
+      MINIO_ACCESS_KEY: ${MINIO_ROOT_USER}
+      MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD}
+      INTERNAL_API_KEY:
+      BUDIBASE_ENVIRONMENT:
+      PORT: 4002
+      JWT_SECRET:
+      LOG_LEVEL: info
+      SENTRY_DSN: https://a34ae347621946bf8acded18e5b7d4b8@o420233.ingest.sentry.io/5338131
+      ENABLE_ANALYTICS: true
+      REDIS_URL: redis:6379
+      REDIS_PASSWORD:
+      BB_ADMIN_USER_EMAIL:
+      BB_ADMIN_USER_PASSWORD:
+      PLUGINS_DIR:
+    networks:
+      - workbench
+    restart: unless-stopped
+    depends_on:
+      - redis
+      - worker
+
+  watchtower:
+    image: docker.io/containrrr/watchtower:1.5.1
+    container_name: budibase-watchtower
+    hostname: watchtower
+    volumes:
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+    environment:
+      WATCHTOWER_HTTP_API: true
+      WATCHTOWER_HTTP_API_TOKEN: budibase
+      WATCHTOWER_CLEANUP: true
+    command: --debug --http-api-update bbapps bbworker bbproxy
+    networks:
+      - workbench
+    restart: always
+    labels:
+      com.centurylinklabs.watchtower.enable: false
+
+  proxy:
+    image: docker.io/budibase/proxy:v2.2.20
+    container_name: budibase-proxy
+    hostname: proxy
+    # volumes:
+    #   - type: volume
+    #     source: budibase-plugins
+    #     target: /plugins
+    environment:
+      PROXY_RATE_LIMIT_WEBHOOKS_PER_SECOND: 10
+      PROXY_RATE_LIMIT_API_PER_SECOND: 20
+      APPS_UPSTREAM_URL: http://app:4002
+      WORKER_UPSTREAM_URL: http://worker:4003
+      MINIO_UPSTREAM_URL: http://minio:9000
+      COUCHDB_UPSTREAM_URL: http://couchdb:5984
+      WATCHTOWER_UPSTREAM_URL: http://watchtower:8080
+      RESOLVER: 127.0.0.11
+    ports:
+      - target: 10000
+        published: ${CLUSTER_PORT}
+        protocol: tcp
+    networks:
+      - workbench
+    restart: unless-stopped
+    depends_on:
+      - minio
+      - worker
+      - app
+      - couchdb
+
+volumes:
+  budibase-minio-data:
+    driver: local
+  budibase-redis-data:
+    driver: local
+  budibase-couchdb-data:
+    driver: local
+  # budibase-plugins:
+  #   driver: local
+
+networks:
+  workbench:
+    name: workbench

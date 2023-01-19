@@ -21,5 +21,5 @@ javac InstallCert.java
 ```
 
 ```sh
-java InstallCert subdomain.example.com:443
+java InstallCert subdomain.domain.tld:443
 ```

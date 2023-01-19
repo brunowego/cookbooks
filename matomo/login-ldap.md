@@ -7,7 +7,7 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h openldap \
   -e LDAP_ORGANISATION='Example Inc.' \
-  -e LDAP_DOMAIN='example.com' \
+  -e LDAP_DOMAIN='domain.tld' \
   -e LDAP_ADMIN_PASSWORD='admin' \
   -e LDAP_CONFIG_PASSWORD='config' \
   -e LDAP_READONLY_USER='true' \
@@ -49,7 +49,7 @@ homeDirectory: /home/johndoe
 sn: John Doe
 uid: johndoe
 uidNumber: 20001
-email: jdoe@example.com
+email: jdoe@domain.tld
 givenName: John Doe
 loginShell: /bin/bash
 userPassword: $(slappasswd -h {SSHA} -s johndoe)
@@ -99,9 +99,9 @@ MATOMO_PLUGIN_VERSION="$(curl -s https://api.github.com/repos/matomo-org/plugin-
 echo -e '[INFO]\thttp://127.0.0.1:3000'
 ```
 
-| Login | Password |
-| --- | --- |
-| johndoe | johndoe |
+| Login   | Password |
+| ------- | -------- |
+| johndoe | johndoe  |
 
 ## Remove
 

@@ -4,7 +4,7 @@
 
 ```gql
 mutation CreateUser {
-  createUser(input: { email: "admin@example.com", username: "admin" }) {
+  createUser(input: { email: "admin@domain.tld", username: "admin" }) {
     id
   }
 }
@@ -27,7 +27,9 @@ query GetUser {
 }
 
 mutation EditUser {
-  editUser(input: { id: "0f591484-fd1d-4aba-a3c4-5bf1f8cd5351", username: "superuser" }) {
+  editUser(
+    input: { id: "0f591484-fd1d-4aba-a3c4-5bf1f8cd5351", username: "superuser" }
+  ) {
     username
   }
 }
@@ -41,13 +43,13 @@ mutation DeleteUser {
 
 ```gql
 query allSchemaTypes {
-    __schema {
-        types {
-            name
-            kind
-            description
-        }
+  __schema {
+    types {
+      name
+      kind
+      description
     }
+  }
 }
 
 query availableQueries {

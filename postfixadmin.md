@@ -26,7 +26,7 @@ docker run -d \
   -v redis-data:/data \
   -p 6379:6379 \
   --name postfix-redis \
-  docker.io/library/redis:5.0.5-alpine3.9 /bin/sh -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
+  docker.io/library/redis:5.0.5-alpine3.9 /bin/sh -c 'redis-server --requirepass ${REDIS_PASSWORD}'
 ```
 
 ```sh
@@ -43,7 +43,7 @@ docker run -d \
   -e REDIS_PORT='6379' \
   -e REDIS_PASS='postfix' \
   -e RSPAMD_PASSWORD='Pa$$w0rd!' \
-  -e DOMAIN='example.com' \
+  -e DOMAIN='domain.tld' \
   -p 25:25 \
   -p 143:143 \
   --name mailserver \
@@ -84,7 +84,7 @@ docker run -d \
 
    - Create superadmin account
      - Setup password: `s3cr3t`
-     - Admin: `admin@example.com`
+     - Admin: `admin@domain.tld`
      - Password: `s3cr3t`
      - Password (again): `s3cr3t`
      - Add Admin
@@ -96,7 +96,7 @@ docker run -d \
    ```
 
 3. Domain List -> New Domain -> Add a new domain
-   - Domain: `example.com`
+   - Domain: `domain.tld`
    - Add Domain
 4. Virtual List -> Add Mailbox -> Create a new mailbox for your domain.
    - Username: `contact`
@@ -105,7 +105,7 @@ docker run -d \
    - Name: Contact
    - Add Mailbox
 5. Send Email
-   - To: `contact@example.com`
+   - To: `contact@domain.tld`
    - Send Message
 
 ### Remove

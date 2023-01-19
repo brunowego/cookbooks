@@ -76,11 +76,11 @@ staticClients:
 enablePasswordDB: true
 
 staticPasswords:
-- email: 'admin@example.com'
+- email: 'admin@domain.tld'
   hash: '$2y$12$qX2CkazdjkulycmgtNCqUuO.amWBC.FY8w85YeAlD/ywzXOAog2SO'
   username: 'admin'
   userID: '168855e4-cc6d-11eb-b8bc-0242ac130003'
-- email: 'johndoe@example.com'
+- email: 'johndoe@domain.tld'
   hash: '$2y$12$5NwpL8iCI0IUuDBl94UEteTxQ7V0uJlkMILuHlWacSapgyrsrTZBm'
   username: 'johndoe'
   userID: '5785145e-cc49-413f-a867-a18870c96882'
@@ -115,7 +115,7 @@ curl -s 'http://localhost:5556/keys' | python -m json.tool
 #
 export DEX_ACCESS_TOKEN=$(curl -s \
   -d 'grant_type=password' \
-  -d 'username=admin@example.com' \
+  -d 'username=admin@domain.tld' \
   -d 'password=password' \
   -d 'scope=openid' \
   -d 'client_id=postman' \

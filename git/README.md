@@ -295,11 +295,12 @@ git for-each-ref \
 #### Run Subdirectories
 
 ```sh
-# Push
-find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c 'cd "{}" && echo -e "\033[1mPROJECT_PATH\033[0m $(pwd)" && git push' \;
-
-# Pull
-find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c 'cd "{}" && echo -e "\033[1mPROJECT_PATH\033[0m $(pwd)" && git pull' \;
+#
+find . \
+  -type d \
+  -name '.git' \
+  -exec bash \
+  -c 'cd $(dirname "{}"); git pull' \;
 ```
 
 <!-- ####
@@ -443,7 +444,7 @@ git pull origin master --allow-unrelated-histories
 <!-- #### Host Resolve
 
 ```log
-fatal: unable to access 'https://example.com/organization/repository.git/': Could not resolve host: <hostname>
+fatal: unable to access 'https://domain.tld/organization/repository.git/': Could not resolve host: <hostname>
 ```
 
 TODO -->
@@ -510,7 +511,7 @@ export GIT_EDITOR=vim
 
 ```log
 error: src refspec project does not match any.
-error: failed to push some refs to 'project@example.com:project'
+error: failed to push some refs to 'project@domain.tld:project'
 ```
 
 ```sh

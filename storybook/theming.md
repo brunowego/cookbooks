@@ -25,9 +25,9 @@ import { themes } from '@storybook/theming'
 addons.setConfig({
   theme: {
     ...themes.dark,
-    brandImage: 'https://example.com/icon.svg',
+    brandImage: 'https://domain.tld/icon.svg',
     brandTitle: 'Example Components',
-    brandUrl: 'https://example.com',
+    brandUrl: 'https://domain.tld',
   },
 })
 ```
@@ -40,17 +40,17 @@ addons.setConfig({
   content="The starting point for working with Boxfeed UI Library. A place that holds the documentation, and showcases different use scenarios of our UI components."
 />
 <meta name="robots" content="noindex" />
-<link rel="canonical" href="https://example.com" />
+<link rel="canonical" href="https://domain.tld" />
 <link
   rel="shortcut icon"
   type="image/png"
-  href="https://example.com/images/favicon/dark.png"
+  href="https://domain.tld/images/favicon/dark.png"
   media="(prefers-color-scheme: dark)"
 />
 <link
   rel="shortcut icon"
   type="image/png"
-  href="https://example.com/images/favicon/light.png"
+  href="https://domain.tld/images/favicon/light.png"
   media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
 />
 ```

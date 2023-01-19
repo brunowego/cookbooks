@@ -130,7 +130,7 @@ composer config repo.packagist.org false
 composer config -l | grep repositories.packagist.org.url
 
 # Set Repo
-composer config repo.packagist composer https://packages.example.com
+composer config repo.packagist composer https://packages.domain.tld
 
 #
 composer config secure-http false
@@ -264,7 +264,7 @@ composer clear-cache
 
 composer config -g repo.packagist false
 
-composer config -g repo.packagist composer https://packages.example.com
+composer config -g repo.packagist composer https://packages.domain.tld
 ```
 
 ```json

@@ -38,22 +38,22 @@ testssl.sh --help
 
 ```sh
 #
-testssl.sh https://example.com
+testssl.sh https://domain.tld
 
 # HTML
-testssl.sh --html https://example.com
+testssl.sh --html https://domain.tld
 
 # PFS
-testssl.sh --pfs https://example.com
+testssl.sh --pfs https://domain.tld
 
 # HTTP Headers
-testssl.sh --headers https://example.com
+testssl.sh --headers https://domain.tld
 
 #
-testssl.sh --client-simulation https://example.com
+testssl.sh --client-simulation https://domain.tld
 
 #
-testssl.sh --vulnerable https://example.com
+testssl.sh --vulnerable https://domain.tld
 
 #
 testssl.sh \
@@ -62,7 +62,7 @@ testssl.sh \
   --std \
   --protocols \
   --headers \
-  https://example.com
+  https://domain.tld
 ```
 
 ### Issues

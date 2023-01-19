@@ -19,8 +19,8 @@ kubectl get cm coredns -n kube-system -o yaml
 ```sh
 yq w <(kubectl get cm coredns -n kube-system -o yaml) data.Corefile "$(cat << EOF
 $(kubectl get cm coredns -n kube-system -o yaml | yq r - data.Corefile)
-example.com {
-    etcd example.com {
+domain.tld {
+    etcd domain.tld {
         stubzones
         path /skydns
         endpoint http://etcd-cluster.kube-system.svc.cluster.local:2379
@@ -90,10 +90,10 @@ exit
 ```
 
 ```sh
-dig @10.96.0.10 A test.example.com +short
-dig -t AAAA @10.96.0.10 test.example.com +short
-dig -t CNAME @10.96.0.10 test.example.com +short
-dig -t SRV @10.96.0.10 test.example.com +short
+dig @10.96.0.10 A test.domain.tld +short
+dig -t AAAA @10.96.0.10 test.domain.tld +short
+dig -t CNAME @10.96.0.10 test.domain.tld +short
+dig -t SRV @10.96.0.10 test.domain.tld +short
 ```
 
 ## Helm

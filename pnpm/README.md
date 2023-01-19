@@ -37,6 +37,16 @@ npx pnpm -h
 pnpm -h
 ```
 
+### Configuration
+
+```sh
+#
+pnpm config set save-prefix '~'
+
+#
+pnpm config list
+```
+
 ### Usage
 
 ```sh

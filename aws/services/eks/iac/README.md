@@ -8,7 +8,7 @@ https://antonputra.com/amazon/create-eks-cluster-using-terraform-modules/
 
 ```sh
 #
-export DOMAIN='example.com'
+export DOMAIN='domain.tld'
 
 #
 kubens '<nemaspace>'
@@ -103,7 +103,7 @@ eksctl get iamidentitymapping \
   -r us-east-1
 ```
 
-### TBD
+### Wrong Values on State
 
 ```log
 │ Error: Get "http://localhost/api/v1/namespaces/kube-system/configmaps/aws-auth": dial tcp [::1]:80: connect: connection refused
@@ -121,10 +121,14 @@ https://github.com/terraform-aws-modules/terraform-aws-eks/issues/2007
 
 ```sh
 #
+terraform state list
+
+# For AWS
 terraform state show 'module.eks.module.eks.aws_eks_cluster.this[0]'
+terraform state rm 'module.eks.module.eks.kubernetes_config_map_v1_data.aws_auth[0]'
 
 #
-terraform state rm 'module.eks.module.eks.kubernetes_config_map_v1_data.aws_auth[0]'
+terraform state list | xargs -n 1 terraform state show
 ```
 
 ### TBD

@@ -34,7 +34,7 @@ docker run -it --rm \
   -h dastardly \
   -u $(id -u) \
   -v $(pwd):/dastardly \
-  -e DASTARDLY_TARGET_URL='https://example.com' \
+  -e DASTARDLY_TARGET_URL='https://domain.tld' \
   -e DASTARDLY_OUTPUT_FILE='/dastardly/dastardly-report.xml' \
   --name dastardly \
   --network workbench \

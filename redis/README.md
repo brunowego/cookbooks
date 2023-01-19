@@ -156,8 +156,8 @@ redis-cli -h
 redis-cli \
   -h 127.0.0.1 \
   -p 6379 \
-  -u [username] \
-  -a [password] \
+  -u <username> \
+  -a <password> \
   INFO | \
     grep '^redis_version'
 ```
@@ -408,7 +408,7 @@ spec:
       - args:
         - /bin/sh
         - -c
-        - redis-server --appendonly yes --requirepass $${REDIS_PASSWORD}
+        - redis-server --requirepass $${REDIS_PASSWORD}
         env:
         - name: REDIS_PASSWORD
           value: admin

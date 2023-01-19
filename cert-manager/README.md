@@ -135,6 +135,25 @@ kubectl get clusterissuer -o yaml | \
   kubectl neat
 ```
 
+### Logs
+
+```sh
+#
+kubectl logs -l 'app.kubernetes.io/component=controller' \
+  -n cert-system \
+  -f
+
+#
+kubectl logs -l 'app.kubernetes.io/component=cainjector' \
+  -n cert-system \
+  -f
+
+#
+kubectl logs -l 'app.kubernetes.io/component=webhook' \
+  -n cert-system \
+  -f
+```
+
 ### Delete
 
 ```sh

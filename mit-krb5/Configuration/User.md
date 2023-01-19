@@ -16,8 +16,8 @@ sudo useradd user1
 ```sh
 sudo kadmin.local
 
-kadmin.local:  addprinc -randkey host/kdc.example.com
-kadmin.local:  ktadd host/kdc.example.com
+kadmin.local:  addprinc -randkey host/kdc.domain.tld
+kadmin.local:  ktadd host/kdc.domain.tld
 kadmin.local:  exit
 ```
 
@@ -41,5 +41,5 @@ kdestroy
 ## Test
 
 ```sh
-ssh -v kdc.example.com
+ssh -v kdc.domain.tld
 ```

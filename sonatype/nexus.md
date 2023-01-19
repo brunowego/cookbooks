@@ -101,7 +101,7 @@ kubectl create secret docker-registry nxrm-oss-regcred \
   --docker-server='https://registry.${DOMAIN}' \
   --docker-username='admin' \
   --docker-password='[password]' \
-  --docker-email='admin@example.com' \
+  --docker-email='admin@domain.tld' \
   -n default
 ```
 

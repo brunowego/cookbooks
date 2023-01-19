@@ -12,8 +12,8 @@
 Never create a new account using a personal email. Always use a company email.
 
 <!--
-devops@example.com
-admin@example.com
+devops@domain.tld
+admin@domain.tld
 -->
 
 ### Create Service Account

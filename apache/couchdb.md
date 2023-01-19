@@ -1,5 +1,10 @@
 # Apache CouchDB
 
+## Links
+
+- [Code Repository](https://github.com/apache/couchdb)
+- [Main Website](https://couchdb.apache.org)
+
 ## References
 
 - [Fauxton Visual Guide](https://couchdb.apache.org/fauxton-visual-guide/index.html)
@@ -185,6 +190,7 @@ docker network create workbench \
 
 ```sh
 docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h couchdb \
   -v couchdb-data:/opt/couchdb/data \
   -e COUCHDB_USER='admin' \
@@ -193,6 +199,22 @@ docker run -d \
   --name couchdb \
   --network workbench \
   docker.io/apache/couchdb:3.3.0
+```
+
+### Issues
+
+#### Missing Tables
+
+```log
+budibase-couchdb  | [notice] 2023-01-17T19:43:37.003430Z nonode@nohost <0.404.0> -------- Missing system database _users
+```
+
+```sh
+export COUCH_DB_USER='admin'
+export COUCH_DB_PASSWORD='Pa$$w0rd!'
+
+curl -u "$COUCH_DB_USER":"$COUCH_DB_PASSWORD" -X PUT 127.0.0.1:5984/_users
+curl -u "$COUCH_DB_USER":"$COUCH_DB_PASSWORD" -X PUT 127.0.0.1:5984/_replicator
 ```
 
 ### Remove

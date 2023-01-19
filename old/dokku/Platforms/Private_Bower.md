@@ -29,7 +29,7 @@ touch bowerConfig.json || exit
       "cacheDirectory": "/home/private-bower/data/gitRepoCache",
       "host": "0.0.0.0",
       "port": 6789,
-      "publicAccessURL" : "<bower_url>:6789",
+      "publicAccessURL": "<bower_url>:6789",
       "refreshTimeout": 10
     },
     "svn": {
@@ -37,21 +37,21 @@ touch bowerConfig.json || exit
       "cacheDirectory": "/home/private-bower/data/svnRepoCache",
       "host": "0.0.0.0",
       "port": 7891,
-      "publicAccessURL" : "<bower_url>:7891",
+      "publicAccessURL": "<bower_url>:7891",
       "refreshTimeout": 10
     }
   },
-  "proxySettings" : {
+  "proxySettings": {
     "enabled": false,
     "host": "proxy",
     "username": "name",
-    "password" : "pass",
+    "password": "pass",
     "port": 8080,
     "tunnel": false
   },
-  "log4js" : {
+  "log4js": {
     "enabled": false,
-    "configPath" : "log4js.conf.json"
+    "configPath": "log4js.conf.json"
   }
 }
 ```
@@ -110,7 +110,7 @@ git push dokku master
 ##### Dokku
 
 ```sh
-dokku config:set bower BOWER_URL=bower.example.com
+dokku config:set bower BOWER_URL=bower.domain.tld
 
 dokku volume:create bower /home/private-bower/data
 dokku volume:link bower bower
@@ -124,6 +124,6 @@ touch .bowerrc || exit
 
 ```json
 {
-  "registry": "http://bower.example.com"
+  "registry": "http://bower.domain.tld"
 }
 ```

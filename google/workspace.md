@@ -11,4 +11,5 @@ https://gsuite.google.com/products/admin/
 
 ## Guides
 
+- [Gmail sending limits in Google Workspace](https://support.google.com/a/answer/166852)
 - [MX record values](https://support.google.com/a/answer/174125?hl=en)

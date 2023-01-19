@@ -30,7 +30,7 @@ docker run -d \
   -v discourse-redis-data:/data \
   --name discourse-redis \
   --network workbench \
-  docker.io/library/redis:5.0.4-alpine3.9 redis-server --appendonly yes
+  docker.io/library/redis:5.0.4-alpine3.9 redis-server
 
 #
 docker run -d \

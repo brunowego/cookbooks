@@ -21,5 +21,5 @@ curl -L "https://github.com/MichalHecko/SSLPoke/releases/download/$(curl -s http
 ### Usage
 
 ```sh
-java -jar "${JAVA_HOME}/lib/sslpoke.jar" subdomain.example.com 443
+java -jar "${JAVA_HOME}/lib/sslpoke.jar" subdomain.domain.tld 443
 ```

@@ -7,7 +7,7 @@
 ## Installation
 
 ```sh
-asdf plugin-add docker-compose 'https://github.com/virtualstaticvoid/asdf-docker-compose.git'
+asdf plugin-add docker compose 'https://github.com/virtualstaticvoid/asdf-docker-compose.git'
 ```
 
 ## Usage
@@ -17,14 +17,14 @@ asdf plugin-add docker-compose 'https://github.com/virtualstaticvoid/asdf-docker
 asdf list-all docker-compose
 
 #
-asdf install docker-compose <version>
+asdf install docker compose <version>
 
 #
-asdf global docker-compose <version>
+asdf global docker compose <version>
 
 #
 asdf list docker-compose
 
 #
-asdf reshim docker-compose <version>
+asdf reshim docker compose <version>
 ```

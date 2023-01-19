@@ -3,7 +3,7 @@
 ## Cannot locate default realm
 
 ```sh
-sudo sed -i '/\[libdefaults\]/a \ default_realm = [EXAMPLE.COM]' /etc/krb5.conf
+sudo sed -i '/\[libdefaults\]/a \ default_realm = [DOMAIN.TLD]' /etc/krb5.conf
 ```
 
 ## Invalid UID in persistent keyring name
@@ -28,8 +28,8 @@ Edit file `/etc/krb5.conf` or another one in `/etc/krb5.conf.d` folder and add/c
 
 ```conf
 [domain_realm]
- .example.com = EXAMPLE.COM
- example.com = EXAMPLE.COM
+ .domain.tld = domain.tld
+ domain.tld = domain.tld
 ```
 
 ## Keytab contains no suitable keys for host

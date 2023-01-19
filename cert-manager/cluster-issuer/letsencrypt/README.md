@@ -15,7 +15,7 @@
 ### DNS Problem
 
 ```log
-Error accepting authorization: acme: authorization error for <example.com>: 400 urn:ietf:params:acme:error:dns: During secondary validation: DNS problem: query timed out looking up TXT for _acme-challenge.<example.com>
+Error accepting authorization: acme: authorization error for <domain.tld>: 400 urn:ietf:params:acme:error:dns: During secondary validation: DNS problem: query timed out looking up TXT for _acme-challenge.<domain.tld>
 ```
 
 ```sh

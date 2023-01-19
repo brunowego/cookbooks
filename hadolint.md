@@ -74,7 +74,7 @@ RUN pip3 install /usr/src/packages/<package-version>.tar.gz
 ```
 
 ```Dockerfile
-LABEL maintainer="John Doe <johndoe@example.com>"
+LABEL maintainer="John Doe <johndoe@domain.tld>"
 ```
 
 <!--

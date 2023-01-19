@@ -1,6 +1,6 @@
 # Apache APISIX
 
-**Keywords:** Cloud-Native API Gateway
+**Keywords:** API Gateway
 
 ## Links
 

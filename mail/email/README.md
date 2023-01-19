@@ -10,29 +10,31 @@ https://github.com/forwardemail/email-templates
 ### Email Subaddressing (a.k.a. Plus Sign (+) Trick)
 
 ```txt
-name+group@example.com
+name+group@domain.tld
 ```
 
 ### Company Emails
 
 ```txt
-admin@henkiz.com
-contact@example.com
-feedback@example.com
-hi@henkiz.com
-invoices@example.com
-media@example.com
-security@example.com
-social@example.com
-support@example.com
-
-info@example.com
-press@example.com
-
-sales@example.com
-
-buyers@example.com
-sellers@example.com
-
-employees@example.com
+admin
+billing
+contact
+devops
+feedback
+hi
+info
+legal
+media
+press
+sales
+security
+social
+support
 ```
+
+<!--
+buyers
+employees
+invoices
+sellers
+-->

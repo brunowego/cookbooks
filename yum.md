@@ -133,7 +133,7 @@ yum repolist
 sudo sed -ie '/^enabled=/ s/1/0/g' /etc/yum/pluginconf.d/fastestmirror.conf
 
 # Exclude
-sudo sed -i 's/^#exclude=.*/exclude=centos.example.com/' /etc/yum/pluginconf.d/fastestmirror.conf
+sudo sed -i 's/^#exclude=.*/exclude=centos.domain.tld/' /etc/yum/pluginconf.d/fastestmirror.conf
 
 # Include only
 sudo sed -i 's/^#include_only=.*/include_only=.com/' /etc/yum/pluginconf.d/fastestmirror.conf

@@ -1,9 +1,5 @@
 # Code Owners
 
-<!--
-
--->
-
 ## Links
 
 - [About code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
@@ -11,7 +7,7 @@
 ## Configuration
 
 ```sh
-cat << EOF > ./CODEOWNERS
+cat << EOF > ./.github/CODEOWNERS
 * @henkiz/devops
 EOF
 ```

@@ -104,11 +104,11 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 5. Super User
    - Super user login: `admin`
    - Password and Password (repeat): `Pa$$w0rd!`
-   - Email: `admin@example.com`
+   - Email: `admin@domain.tld`
    - Next
 6. Setup a Website
    - Website name: `Example`
-   - Website URL: `http://example.com`
+   - Website URL: `http://domain.tld`
    - Website time zone:
    - Next
 7. Tracking code for Example -> Next

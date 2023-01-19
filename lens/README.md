@@ -51,17 +51,6 @@ DEBUG=true /Applications/Lens.app/Contents/MacOS/Lens
 3. Catalog -> Categories -> Clusters
 4. Clusters -> Cluster Name -> Add to Hotbar
 
-#### Lens Metrics
-
-1. Cluster -> Settings
-2. Settings -> Extensions -> Lens Metrics
-
-A namespace called `lens-metrics` will be created with the selected features enabled.
-
-- Prometheus Stack
-- Kube-State-Metrics (KSM)
-- Node Exporter
-
 ### Issues
 
 #### Missing Metrics

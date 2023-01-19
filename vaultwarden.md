@@ -1,5 +1,10 @@
 # Vaultwarden
 
+<!--
+Infrastructure
+Platform
+-->
+
 **Keywords:** Unofficial Bitwarden
 
 ## Links
@@ -63,6 +68,9 @@ kubectl create ns vaultwarden
 # kubectl create ns security
 
 #
+kubens vaultwarden
+
+#
 helm search repo -l sebastiangaiser/vaultwarden
 
 #
@@ -71,11 +79,11 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install vaultwarden sebastiangaiser/vaultwarden \
-  --namespace vaultwarden \
-  --version 0.8.3 \
+  --version 0.8.4 \
   -f <(cat << EOF
 ingress:
   enabled: true
+  className: nginx
   hosts:
     - host: vaultwarden.${DOMAIN}
       paths:
@@ -85,19 +93,17 @@ ingress:
     - hosts:
         - vaultwarden.${DOMAIN}
       secretName: vaultwarden.tls-secret
-  ingressClassName: nginx
 EOF
 )
 
 #
-kubectl get all -n vaultwarden
+kubectl get all
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deployment/vaultwarden \
-  -n vaultwarden
+kubectl rollout status deployment/vaultwarden
 ```
 
 ### Logs
@@ -105,15 +111,13 @@ kubectl rollout status deployment/vaultwarden \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/name=vaultwarden' \
-  -n vaultwarden \
   -f
 ```
 
 ### Delete
 
 ```sh
-helm uninstall vaultwarden \
-  -n vaultwarden
+helm uninstall vaultwarden
 
 kubectl delete ns vaultwarden \
   --grace-period=0 \

@@ -56,7 +56,7 @@ docker run -d \
   -e GF_AUTH_GOOGLE_SCOPES='https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email' \
   -e GF_AUTH_GOOGLE_AUTH_URL='https://accounts.google.com/o/oauth2/auth' \
   -e GF_AUTH_GOOGLE_TOKEN_URL='https://accounts.google.com/o/oauth2/token' \
-  -e GF_AUTH_GOOGLE_ALLOWED_DOMAINS='example.com' \
+  -e GF_AUTH_GOOGLE_ALLOWED_DOMAINS='domain.tld' \
   -e GF_AUTH_GOOGLE_ALLOW_SIGN_UP='true' \
   -e GF_INSTALL_PLUGINS='grafana-clock-panel, grafana-simple-json-datasource, grafana-piechart-panel' \
   -p 3000:3000 \
@@ -74,7 +74,7 @@ docker run -d \
   -e GF_SMTP_HOST='smtp.gmail.com:587' \
   -e GF_SMTP_USER='[email]' \
   -e GF_SMTP_PASSWORD='[password]' \
-  -e GF_SMTP_FROM_ADDRESS='[example.com]' \
+  -e GF_SMTP_FROM_ADDRESS='[domain.tld]' \
   -e GF_SMTP_FROM_NAME='[From Name]' \
   -e GF_INSTALL_PLUGINS='grafana-clock-panel, grafana-simple-json-datasource, grafana-piechart-panel' \
   -p 3000:3000 \

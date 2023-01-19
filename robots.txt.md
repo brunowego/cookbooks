@@ -39,19 +39,19 @@ EOF
 
 ### WordPress
 
-**_example.com_**
+**_domain.tld_**
 
 ```txt
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://domain.tld/sitemap.xml
 ```
 
 ### Application
 
-**_app.example.com_**
+**_app.domain.tld_**
 
 ```txt
 # http://robotstxt.org
@@ -62,5 +62,5 @@ Allow: /register
 Allow: /password
 Disallow: /
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://domain.tld/sitemap.xml
 ```

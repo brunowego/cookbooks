@@ -228,12 +228,12 @@ helm uninstall $(helm ls --all --short) -n $(helm ls --all --short)
 
 ```sh
 # Prefix Image with Registry
-helm inspect values <repo>/<name> | sed 's|repo/image|registry.example.com/repo/image|'
+helm inspect values <repo>/<name> | sed 's|repo/image|registry.domain.tld/repo/image|'
 
 # When install
 helm install <name> <repo>/<name> \
   --namespace <namespace> \
-  -f <(helm inspect values <repo>/<name> | sed 's|repo/image|registry.example.com/repo/image|')
+  -f <(helm inspect values <repo>/<name> | sed 's|repo/image|registry.domain.tld/repo/image|')
 ```
 
 <!-- ####
@@ -459,6 +459,20 @@ kubectl logs -l 'app=helm,name=tiller' -n kube-system -f
 
 ### Issues
 
+#### Missing Resource Kind
+
+```log
+Error: UPGRADE FAILED: error validating "": error validating data: [apiVersion not set, kind not set]
+```
+
+```sh
+#
+helm template ./ | \
+  kubeval \
+    --force-color \
+    --strict
+```
+
 #### Upgrade Operation in Progress
 
 ```log
@@ -488,7 +502,7 @@ Run Helm serve.
 #### Self-signed Certificate
 
 ```log
-Error: Looks like "https://chartmuseum.example.com" is not a valid chart repository or cannot be reached: Get https://chartmuseum.example.com/index.yaml: x509: certificate signed by unknown authority
+Error: Looks like "https://chartmuseum.domain.tld" is not a valid chart repository or cannot be reached: Get https://chartmuseum.domain.tld/index.yaml: x509: certificate signed by unknown authority
 ```
 
 ```sh
@@ -501,14 +515,14 @@ sudo chmod a+w /etc/ssl/{certs,private}/example
 
 ```sh
 openssl s_client \
-  -connect chartmuseum.example.com:443 \
+  -connect chartmuseum.domain.tld:443 \
   -showcerts \
-  -servername chartmuseum.example.com < /dev/null 2>/dev/null | \
+  -servername chartmuseum.domain.tld < /dev/null 2>/dev/null | \
     openssl x509 -outform PEM > /etc/ssl/certs/example/root-ca.pem
 ```
 
 ```sh
-helm repo add --ca-file /etc/ssl/certs/example/root-ca.pem example https://chartmuseum.example.com
+helm repo add --ca-file /etc/ssl/certs/example/root-ca.pem example https://chartmuseum.domain.tld
 ```
 
 <!-- #### Transport Closing

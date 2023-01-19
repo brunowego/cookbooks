@@ -9,7 +9,7 @@ export const USERS: {
   rates: Prisma.JsonArray
 }[] = [
   {
-    email: 'admin@example.com',
+    email: 'admin@domain.tld',
     username: 'admin',
     rates: ['0.045196', '0.045174'],
   },
@@ -129,10 +129,12 @@ export const posts: Pick<Post, 'title' | 'slug' | 'body'>[] = [...Array(10)]
 import { Tag } from '@prisma/client'
 import { faker } from '@faker-js/faker'
 
-export const tags: Pick<Tag, 'name' | 'colorCode'>[] = [...Array(10)].map((_) => ({
-  name: faker.commerce.product(),
-  colorCode: faker.internet.color().replace('#', ''),
-}))
+export const tags: Pick<Tag, 'name' | 'colorCode'>[] = [...Array(10)].map(
+  (_) => ({
+    name: faker.commerce.product(),
+    colorCode: faker.internet.color().replace('#', ''),
+  })
+)
 ```
 
 **Refer:** `./db/prisma/helpers/index.ts`:
@@ -260,9 +262,9 @@ if (process.env.NODE_ENV !== 'production') global.prisma = prisma
   // ...
   "scripts": {
     "db:seed": "ts-node ./db/prisma/tasks/seed.ts",
-    "db:reset": "ts-node ./db/prisma/tasks/reset.ts",
+    "db:reset": "ts-node ./db/prisma/tasks/reset.ts"
     // ...
-  },
+  }
   // ...
 }
 ```
@@ -276,7 +278,7 @@ if (process.env.NODE_ENV !== 'production') global.prisma = prisma
     "compilerOptions": {
       "module": "commonjs"
     }
-  },
+  }
   // ...
 }
 ```

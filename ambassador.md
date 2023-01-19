@@ -1,5 +1,15 @@
 # Ambassador
 
+**Keywords:** API Gateway
+
+## Links
+
+- [Main Website](https://getambassador.io)
+
+<!--
+https://github.com/emissary-ingress/emissary
+-->
+
 ## Helm
 
 ### References
@@ -39,9 +49,7 @@ spec:
           servicePort: 80
         path: /
 EOF
-```
 
-```sh
 cat << EOF | kubectl apply -f -
 apiVersion: extensions/v1beta1
 kind: Ingress
@@ -82,13 +90,13 @@ kubectl get pod -l 'app.kubernetes.io/name=ambassador' \
 #### Create
 
 ```sh
+#
 kubectl create secret tls ambassador.tls-secret \
   --cert='/etc/ssl/certs/ambassador/root-ca.crt' \
   --key='/etc/ssl/private/ambassador/root-ca.key' \
   -n ambassador
-```
 
-```sh
+#
 kubectl apply -f <(yq m <(cat << EOF
 spec:
   tls:
@@ -97,9 +105,8 @@ spec:
       secretName: ambassador.tls-secret
 EOF
 ) <(kubectl get ingress ambassador -n ambassador -o yaml))
-```
 
-```sh
+#
 kubectl apply -f <(yq m <(cat << EOF
 spec:
   tls:

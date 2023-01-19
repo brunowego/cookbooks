@@ -15,13 +15,13 @@ spec:
   acme:
     # server: https://acme-staging-v02.api.letsencrypt.org/directory
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: devops@example.com
+    email: devops@domain.tld
     privateKeySecretRef:
       name: letsencrypt-issuer
     solvers:
       - http01:
           ingress:
-            class: nginx
+            class: external-nginx
       - selector:
           dnsZones:
             - <domain.com>

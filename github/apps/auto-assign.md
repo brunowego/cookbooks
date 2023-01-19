@@ -18,18 +18,17 @@
 cat << EOF > ./.github/auto_assign.yml
 ---
 # yamllint disable-line rule:quoted-strings
-addAssignees: 'author'
+addAssignees: "author"
 
 addReviewers: true
 
 reviewers:
-- org/teamReviewerA
-- org/teamReviewerB
-- /teamReviewerC
+  - <org>/<team>
+  - <username>
 
 numberOfReviewers: 1
 
 skipKeywords:
-- wip
+  - wip
 EOF
 ```

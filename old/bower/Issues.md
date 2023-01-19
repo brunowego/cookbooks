@@ -26,7 +26,7 @@ npm uninstall -g bower && npm update decompress-zip && npm install bower -g
 ## EINVRES
 
 ```log
-bower EINVRES Request to http://example.com/packages/package failed with 403
+bower EINVRES Request to http://domain.tld/packages/package failed with 403
 ```
 
 ```sh

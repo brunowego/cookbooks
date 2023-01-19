@@ -3,7 +3,7 @@
 ```sh
 git clone git@github.com:keyvanfatehi/docker-sinopia.git sinopia
 cd sinopia
-git remote add dokku dokku@example.com:sinopia
+git remote add dokku dokku@domain.tld:sinopia
 git push dokku master
 ```
 

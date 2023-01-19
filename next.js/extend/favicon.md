@@ -54,7 +54,7 @@ const nextConfig = {
     return [
       {
         source: '/favicon.ico',
-        destination: 'https://example.com/favicon.ico',
+        destination: 'https://domain.tld/favicon.ico',
       },
     ]
   },

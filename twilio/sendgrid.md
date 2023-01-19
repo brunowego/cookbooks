@@ -41,6 +41,7 @@ twilio email set
 
 <!--
 server: smtp.sendgrid.net
-port: 25
+port: 587
 username: apikey
+password: SG.someactualkey
 -->

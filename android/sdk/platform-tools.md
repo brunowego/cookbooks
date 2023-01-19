@@ -130,7 +130,7 @@ adb shell ls /system/etc/security/cacerts
 ```
 
 ```sh
-export CERT_PATH='/etc/ssl/certs/example.com/ca/rootCA.pem'
+export CERT_PATH='/etc/ssl/certs/domain.tld/ca/rootCA.pem'
 export CERT_HASH="$(openssl x509 -inform PEM -in "$CERT_PATH" -subject_hash_old | head -n 1)"
 
 adb push "$CERT_PATH" "/system/etc/security/cacerts/$CERT_HASH.0"
@@ -142,7 +142,7 @@ adb reboot
 
 ```sh
 adb push \
-  /etc/ssl/certs/example.com/ca/rootCA.pem \
+  /etc/ssl/certs/domain.tld/ca/rootCA.pem \
   /sdcard/rootCA.pem
 ```
 

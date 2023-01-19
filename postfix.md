@@ -14,7 +14,7 @@ https://www.linode.com/docs/email/postfix/postfix-smtp-debian7/
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postfix \
-  -e MAILDOMAIN='mail.example.com' \
+  -e MAILDOMAIN='mail.domain.tld' \
   -e SMTP_USER='<user>:<pass>' \
   -p 25:25 \
   --name postfix \
@@ -38,8 +38,8 @@ sudo apt update
 
 (cat << EOF
 postfix postfix/main_mailer_type string "Internet Site"
-postfix postfix/mailname string HOSTNAME.EXAMPLE.COM
-postfix postfix/root_address string ROOTMAIL@EXAMPLE.COM
+postfix postfix/mailname string HOSTNAME.domain.tld
+postfix postfix/root_address string ROOTMAIL@domain.tld
 postfix postfix/myhostname string 0.0.0.0/0
 postfix postfix/mynetworks string 0.0.0.0/0
 EOF
@@ -69,13 +69,13 @@ sudo systemctl enable --now postfix
 ```sh
 # Hostname
 ## CentOS
-sudo sed -i '/^#myhostname = virtual.domain.tld/a myhostname = example.com' /etc/postfix/main.cf
+sudo sed -i '/^#myhostname = virtual.domain.tld/a myhostname = domain.tld' /etc/postfix/main.cf
 
 ## Ubuntu
-sudo sed -ie '/^myhostname =/ s/= .*/= example.com/' /etc/postfix/main.cf
+sudo sed -ie '/^myhostname =/ s/= .*/= domain.tld/' /etc/postfix/main.cf
 
 #
-echo 'admin@example.com admin:admin' | sudo tee /etc/postfix/sasl_passwd
+echo 'admin@domain.tld admin:admin' | sudo tee /etc/postfix/sasl_passwd
 
 #
 sudo postmap /etc/postfix/sasl_passwd
@@ -86,7 +86,7 @@ sudo postmap /etc/postfix/sasl_passwd
 #### TBD
 
 ```sh
-echo "body of your email" | mail -s "This is a Subject" -a "From: you@example.com" recipient@elsewhere.com
+echo "body of your email" | mail -s "This is a Subject" -a "From: you@domain.tld" recipient@elsewhere.com
 ```
 
 #### Send Email
@@ -96,9 +96,9 @@ telnet '127.0.0.1' 25
 ```
 
 ```txt
-EHLO example.com
-MAIL FROM: <fromuser@example.com>
-RCPT TO: <touser@example.com>
+EHLO domain.tld
+MAIL FROM: <fromuser@domain.tld>
+RCPT TO: <touser@domain.tld>
 DATA
 Subject: Sending an email using telnet
 

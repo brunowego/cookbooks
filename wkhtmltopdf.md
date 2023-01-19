@@ -32,5 +32,5 @@ sudo ln -s /usr/bin/wkhtmltopdf.sh /usr/local/bin/wkhtmltopdf
 ### Usage
 
 ```sh
-wkhtmltopdf http://www.example.com example.pdf
+wkhtmltopdf http://www.domain.tld example.pdf
 ```

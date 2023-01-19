@@ -17,5 +17,5 @@ git clone https://github.com/Azure/Stormspotter && cd "$_"
 
 ```sh
 #
-docker-compose up
+docker compose up
 ```

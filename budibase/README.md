@@ -6,6 +6,8 @@
 
 - [Code Repository](https://github.com/Budibase/budibase)
 - [Main Website](https://budibase.com)
+- Docs
+  - [SSO with Google](https://docs.budibase.com/docs/sso-with-google)
 
 ## Docker
 
@@ -42,7 +44,7 @@ docker run -d \
   --name budibase-redis \
   --network workbench \
   --entrypoint /bin/sh \
-  docker.io/library/redis:7.0.7 -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
+  docker.io/library/redis:7.0.7 -c 'redis-server --requirepass ${REDIS_PASSWORD}'
 
 #
 docker run -d \
@@ -73,7 +75,7 @@ docker run -d \
   -e JWT_SECRET='S3cr3t_K#Key' \
   -e INTERNAL_API_KEY='S3cr3t_K#Key' \
   -e ENABLE_ANALYTICS='true' \
-  -e BB_ADMIN_USER_EMAIL='johndoe@example.com' \
+  -e BB_ADMIN_USER_EMAIL='johndoe@domain.tld' \
   -e BB_ADMIN_USER_PASSWORD='Pa$$w0rd!' \
   -p 8080:80 \
   -p 8443:443 \
@@ -116,18 +118,32 @@ docker volume rm \
   budibase-data-couchdb
 ```
 
+## Docker Compose
+
+```sh
+#
+export COMPOSE_DOCKER_CLI_BUILD=0
+
+#
+docker compose config
+
+#
+docker compose up
+docker compose down
+```
+
 ## Helm
 
 ### References
 
 - [Chart Repository](https://github.com/Budibase/budibase/tree/develop/charts/budibase)
 
-<!-- ### Repository
+### Repository
 
 ```sh
-helm repo add bitnami 'https://charts.bitnami.com/bitnami'
+helm repo add budibase 'https://budibase.github.io/budibase'
 helm repo update
-``` -->
+```
 
 ### Install
 
@@ -137,20 +153,22 @@ kubectl create ns budibase
 # kubectl create ns lowcode
 
 #
-git clone https://github.com/Budibase/budibase.git && cd ./budibase/charts/budibase
+kubens budibase
+
+#
+helm search repo -l budibase/budibase
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-helm upgrade budibase ./ \
-  --namespace budibase \
+helm upgrade budibase budibase/budibase \
+--version 0.2.11 \
   -f <(cat << EOF
 ingress:
-  nginx: false
+  enabled: true
   className: nginx
-  annotations: []
   hosts:
     - host: budibase.${DOMAIN}
       paths:
@@ -161,26 +179,20 @@ ingress:
               name: proxy-service
               port:
                 number: 10000
-
-# services:
-#   budibaseVersion: v2.2.3
-
-  # proxy:
-  #   resolver: kube-dns.kube-system.svc.cluster.local
 EOF
 )
 
 #
-kubectl get all -n budibase
+kubectl get all
 ```
 
-```sh
+<!-- ```sh
 kubectl port-forward \
   --address 0.0.0.0 \
   service/proxy-service \
   10000:10000 \
   -n budibase
-```
+``` -->
 
 ### Status
 
@@ -192,6 +204,13 @@ kubectl rollout status deployment/proxy-service \
 ### Logs
 
 ```sh
+#
+kubectl logs \
+  -l 'com.budibase.service=app' \
+  -n budibase \
+  -f
+
+#
 kubectl logs \
   -l 'app.kubernetes.io/name=budibase-proxy' \
   -n budibase \
@@ -199,6 +218,14 @@ kubectl logs \
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+│ Error: Ingress.extensions "budibase-budibase" is invalid: annotations.kubernetes.io/ingress.class: Invalid value: "nginx": can not be set when the class field is also set
+```
+
+TODO
 
 #### TBD
 

@@ -14,7 +14,7 @@
 2. Developer settings -> GitHub Apps
 3. New GitHub App
    - GitHub App name: Actions Runner Controller (ARC)
-   - Homepage URL: `https://example.com`
+   - Homepage URL: `https://domain.tld`
    - Webhook -> Uncheck "Active"
    - Permissions / Repository permissions -> Actions: Read-only, Administration: Read and write
    - Create GitHub App

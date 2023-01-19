@@ -18,14 +18,14 @@ docker volume create docker-mailserver-logs
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mail \
-  --domainname example.com \
+  --domainname domain.tld \
   -v docker-mailserver-data:/var/mail \
   -v docker-mailserver-state:/var/mail-state \
   -v docker-mailserver-logs:/var/log/mail \
-  -e OVERRIDE_HOSTNAME='mail.example.com' \
+  -e OVERRIDE_HOSTNAME='mail.domain.tld' \
   -e DMS_DEBUG='0' \
   -e ONE_DIR='0' \
-  -e POSTMASTER_ADDRESS='postmaster@example.com' \
+  -e POSTMASTER_ADDRESS='postmaster@domain.tld' \
   -e ENABLE_CLAMAV='0' \
   -e ENABLE_FAIL2BAN='0' \
   -e ENABLE_MANAGESIEVE='' \
@@ -44,7 +44,7 @@ docker run -d \
 
 ```sh
 docker exec -i \
-  -e MAIL_USER='admin@example.com' \
+  -e MAIL_USER='admin@domain.tld' \
   -e MAIL_PASS='Pa$$w0rd!' \
   docker-mailserver /bin/sh << \EOSHELL
 mkdir -p /tmp/docker-mailserver
@@ -57,13 +57,13 @@ EOSHELL
 docker restart docker-mailserver
 ```
 
-| Port | Description |
-| --- | --- |
-| `25` | Receiving email from other mailservers |
+| Port         | Description                              |
+| ------------ | ---------------------------------------- |
+| `25`         | Receiving email from other mailservers   |
 | `465`, `587` | SSL & TLS Client email submission (SMTP) |
-| `143`, `993` | StartTLS & TLS/SSL IMAP client |
-| `110`, `995` | POP3 & TLS/SSL POP3 client |
-| `4190` | Manage Sieve port |
+| `143`, `993` | StartTLS & TLS/SSL IMAP client           |
+| `110`, `995` | POP3 & TLS/SSL POP3 client               |
+| `4190`       | Manage Sieve port                        |
 
 ## Remove
 
@@ -87,9 +87,9 @@ openssl s_client \
 ```
 
 ```txt
-EHLO mail.example.com
-MAIL FROM: <fromuser@example.com>
-RCPT TO: <touser@example.com>
+EHLO mail.domain.tld
+MAIL FROM: <fromuser@domain.tld>
+RCPT TO: <touser@domain.tld>
 DATA
 Subject: Sending an email using telnet
 

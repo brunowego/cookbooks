@@ -4,12 +4,12 @@
 
 - [Landing page](https://probot.github.io/apps/dco/)
 
-## Commands
+## Usage
 
 ```sh
+#
 git commit --amend --signoff
-```
 
-```sh
-git push --force-with-lease origin [branch]
+#
+git push --force-with-lease origin <branch>
 ```
