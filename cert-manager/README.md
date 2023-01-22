@@ -98,11 +98,13 @@ helm repo update
 kubectl create ns cert-system
 
 #
+kubens cert-system
+
+#
 helm search repo -l jetstack/cert-manager
 
 #
 helm install cert-manager jetstack/cert-manager \
-  --namespace cert-system \
   --version v1.11.0 \
   -f <(cat << EOF
 installCRDs: true
@@ -117,14 +119,13 @@ EOF
 )
 
 #
-kubectl get all -n cert-system
+kubectl get all
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/cert-manager \
-  -n cert-system
+kubectl rollout status deploy/cert-manager
 ```
 
 ### Usage
@@ -139,18 +140,18 @@ kubectl get clusterissuer -o yaml | \
 
 ```sh
 #
-kubectl logs -l 'app.kubernetes.io/component=controller' \
-  -n cert-system \
+kubectl logs \
+  -l 'app.kubernetes.io/component=controller' \
   -f
 
 #
-kubectl logs -l 'app.kubernetes.io/component=cainjector' \
-  -n cert-system \
+kubectl logs \
+  -l 'app.kubernetes.io/component=cainjector' \
   -f
 
 #
-kubectl logs -l 'app.kubernetes.io/component=webhook' \
-  -n cert-system \
+kubectl logs \
+  -l 'app.kubernetes.io/component=webhook' \
   -f
 ```
 

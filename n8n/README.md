@@ -10,6 +10,9 @@ https://github.com/8gears/n8n-helm-chart
 
 - [Code Repository](https://github.com/n8n-io/n8n)
 - [Main Website](https://n8n.io)
+- Docs
+  - [API](https://docs.n8n.io/api/)
+  - [API Reference](https://docs.n8n.io/api/api-reference/)
 
 ## App
 
@@ -59,7 +62,7 @@ docker run -d \
   -p 5678:5678 \
   --name n8n \
   --network workbench \
-  docker.io/n8nio/n8n:0.210.2
+  docker.io/n8nio/n8n:0.212.0
 ```
 
 ```sh
@@ -72,6 +75,28 @@ echo -e '[INFO]\thttp://127.0.0.1:5678'
 docker rm -f n8n-postgres n8n
 
 docker volume rm n8n-postgres-data
+```
+
+## Docker Compose
+
+### Links
+
+- [Server setups](https://docs.n8n.io/hosting/installation/server-setups/docker-compose/)
+
+### Usage
+
+```sh
+#
+cd ./n8n
+
+#
+docker compose config
+
+#
+docker compose up
+
+#
+docker compose down
 ```
 
 ## Helm

@@ -7,26 +7,23 @@
 ## Configuration
 
 ```sh
+#
+mkdir -p ./.github
+
+#
 cat << EOF > ./.github/CODEOWNERS
-* @henkiz/devops
+* @<owner>/<team>
 EOF
 ```
 
 <!--
-/.github @henkiz/devops
-/.vscode @henkiz/devops
-/chats/ @henkiz/devops
-/docs @henkiz/devops
--->
-
-<!--
-business -> bizops
-finance -> finops
-design -> desops
-develop -> devops
-data -> dataops
-security -> secops
-marketing strategy -> msops
+business
+finance
+design
+develop s
+data
+security
+marketing strategy
 -->
 
 ## Tips

@@ -1,0 +1,139 @@
+---
+version: '3'
+
+x-shared: &shared
+  image: docker.io/n8nio/n8n:0.212.0
+  hostname: n8n
+  environment:
+    # General
+    NODE_ENV:
+    GENERIC_TIMEZONE:
+
+    # DOMAIN_NAME=example.com
+    # SUBDOMAIN=n8n
+
+    # Queue
+    EXECUTIONS_MODE:
+    QUEUE_BULL_REDIS_HOST:
+    QUEUE_HEALTH_CHECK_ACTIVE:
+
+    # Auth
+    N8N_BASIC_AUTH_ACTIVE:
+    N8N_BASIC_AUTH_USER:
+    N8N_BASIC_AUTH_PASSWORD:
+
+    # SMTP
+    N8N_SMTP_HOST:
+    N8N_SMTP_PORT:
+    N8N_SMTP_SSL:
+    N8N_SMTP_USER:
+    N8N_SMTP_PASS:
+    N8N_SMTP_SENDER:
+
+    # Database
+    DB_TYPE:
+    DB_POSTGRESDB_HOST: ${POSTGRES_HOST}
+    DB_POSTGRESDB_PORT: ${POSTGRES_PORT}
+    DB_POSTGRESDB_DATABASE: ${POSTGRES_DB}
+    DB_POSTGRESDB_USER: ${POSTGRES_USER}
+    DB_POSTGRESDB_PASSWORD: ${POSTGRES_PASSWORD}
+  networks:
+    - workbench
+  restart: always
+  depends_on:
+    postgres:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+
+services:
+  mailhog:
+    image: docker.io/mailhog/mailhog:v1.0.1
+    container_name: n8n-mailhog
+    hostname: mailhog
+    ports:
+      - target: 1025
+        published: 1025
+        protocol: tcp
+      - target: 8025
+        published: 8025
+        protocol: tcp
+    networks:
+      - workbench
+    restart: always
+
+  postgres:
+    image: docker.io/library/postgres:11.2-alpine
+    container_name: n8n-postgres
+    hostname: postgres
+    volumes:
+      - type: volume
+        source: postgres-data
+        target: /var/lib/postgresql/data
+    environment:
+      POSTGRES_DB:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+    ports:
+      - target: 6379
+        published: 6379
+        protocol: tcp
+    networks:
+      - workbench
+    restart: always
+    healthcheck:
+      test:
+        [
+          'CMD-SHELL',
+          'pg_isready -h localhost -U ${POSTGRES_USER} -d ${POSTGRES_DB}',
+        ]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  redis:
+    image: docker.io/library/redis:7.0.8
+    container_name: n8n-redis
+    hostname: redis
+    volumes:
+      - type: volume
+        source: redis-data
+        target: /data
+    # ports:
+    #   - target: 6379
+    #     published: 6379
+    #     protocol: tcp
+    networks:
+      - workbench
+    restart: always
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  n8n:
+    <<: *shared
+    container_name: n8n
+    command: /bin/sh -c 'n8n start --tunnel'
+    ports:
+      - target: 5678
+        published: 8080
+        protocol: tcp
+
+  n8n-worker:
+    <<: *shared
+    container_name: n8n-worker
+    command: /bin/sh -c 'sleep 5; n8n worker'
+    depends_on:
+      - n8n
+
+volumes:
+  postgres-data:
+    driver: local
+  redis-data:
+    driver: local
+
+networks:
+  workbench:
+    name: workbench

@@ -3,7 +3,7 @@
 ## Links
 
 - [Org. Repository](https://github.com/trunk-io)
-- [Main Website](https://trunk.io/)
+- [Main Website](https://trunk.io)
 - [Docs](https://docs.trunk.io/docs)
 
 ## CLI

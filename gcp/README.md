@@ -18,6 +18,7 @@ https://linkedin.com/learning/google-cloud-platform-gcp-essential-training-for-d
 
 - [Dashboard](https://console.cloud.google.com/home/dashboard)
 - [OAuth Consent Screen](https://console.cloud.google.com/apis/credentials/consent/edit)
+- [Credentials](https://console.cloud.google.com/apis/credentials)
 
 ## Links
 

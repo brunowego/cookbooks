@@ -104,6 +104,25 @@ jq '."recommendations" += ["ms-kubernetes-tools.vscode-kubernetes-tools"]' "$PWD
 
 ### Issues
 
+#### Error Image Pull
+
+```log
+Failed to pull image "opensearchproject/opensearch:2.4.1": rpc error: code = Unknown desc = context deadline exceeded
+```
+
+```log
+Error: ErrImagePull
+Error: ImagePullBackOff
+```
+
+```sh
+#
+kubectl get events
+
+# Workaround for minikube
+minikube ssh docker pull opensearchproject/opensearch:2.4.1
+```
+
 #### Persistent Volume Claims
 
 ```log

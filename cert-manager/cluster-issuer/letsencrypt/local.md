@@ -8,8 +8,6 @@ kubectl get clusterissuer -o wide
 
 #
 export EMAIL='<email>'
-export KUBERNETES_IP='<kubernetes-ip>'
-export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 cat << EOF | kubectl apply \
@@ -29,9 +27,6 @@ spec:
       - http01:
           ingress:
             class: nginx
-        selector:
-          dnsNames:
-            - ${DOMAIN}
 EOF
 
 #

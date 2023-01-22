@@ -1,10 +1,12 @@
 # Changesets
 
-<!--
-https://github.com/editablejs/editable/tree/main/.changeset
--->
-
 **Keywords:** Monorepo Versioning, Multi-Package Repository
+
+<!--
+"changeset": "changeset",
+"version-packages": "changeset version",
+"release": "turbo run build --filter=packages/docs && changeset publish"
+-->
 
 ## Links
 
@@ -24,6 +26,9 @@ npm install @changesets/cli --save-dev
 
 # Using Yarn
 yarn add @changesets/cli --dev
+
+# Using pnpm
+pnpm add @changesets/cli -D
 ```
 
 ### Initialize
@@ -31,4 +36,7 @@ yarn add @changesets/cli --dev
 ```sh
 # Using Yarn
 yarn changeset init
+
+# Using pnpm
+pnpm changeset init
 ```

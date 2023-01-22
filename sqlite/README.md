@@ -4,6 +4,24 @@
 
 - [Main Website](https://sqlite.org)
 
+## Library
+
+### Installation
+
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install libsqlite3-dev
+```
+
+#### APK
+
+```sh
+sudo apk update
+sudo apk add sqlite-dev
+```
+
 ## CLI
 
 ### Installation

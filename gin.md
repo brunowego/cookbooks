@@ -9,4 +9,11 @@ https://www.udemy.com/course/building-restful-apis-with-go/
 
 - [Code Repository](https://github.com/gin-gonic/gin)
 - [Main Website](https://gin-gonic.com)
-- [Alternatives](/alternatives.md#golang-frameworks)
+
+## Package
+
+### Installation
+
+```sh
+go get -u github.com/gin-gonic/gin
+```

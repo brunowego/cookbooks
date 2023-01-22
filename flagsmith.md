@@ -1,12 +1,5 @@
 # Flagsmith
 
-<!--
-https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/
-
-https://github.com/growthbook/growthbook
-https://configcat.com/
--->
-
 **Keywords:** Feature Toggle, Feature Flag
 
 ## Links
@@ -32,7 +25,13 @@ helm repo update
 
 ```sh
 #
-kubectl create ns flagsmith-system
+kubectl create ns flagsmith
+
+#
+kubens flagsmith
+
+#
+helm search repo -l flagsmith
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
@@ -40,29 +39,15 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install flagsmith flagsmith/flagsmith \
-  --namespace flagsmith-system \
-  --version 0.4.0 \
+  --version 0.15.0 \
   -f <(cat << EOF
-api:
-  limits:
-    cpu: 500m
-    memory: 500Mi
-  requests:
-    cpu: 300m
-    memory: 300Mi
-frontend:
-  limits:
-    cpu: 500m
-    memory: 500Mi
-  requests:
-    cpu: 300m
-    memory: 300Mi
 ingress:
   frontend:
     enabled: true
     hosts:
     - host: flagsmith.${DOMAIN}
       paths: ['/']
+
   api:
     enabled: true
     hosts:
@@ -75,24 +60,26 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status deploy/flagsmith \
-  -n flagsmith-system
+kubectl rollout status deploy/flagsmith
 ```
 
 ### Logs
 
 ```sh
 kubectl logs \
-  -l 'app.kubernetes.io/instance=flagsmith' \
-  -n flagsmith-system \
+  -l 'app.kubernetes.io/component=api' \
+  -c flagsmith-api \
+  -f
+
+kubectl logs \
+  -l 'app.kubernetes.io/component=frontend' \
   -f
 ```
 
 ### Delete
 
 ```sh
-helm uninstall flagsmith \
-  -n flagsmith-system
+helm uninstall flagsmith
 
-kubectl delete ns flagsmith-system
+kubectl delete ns flagsmith
 ```

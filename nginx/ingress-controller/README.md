@@ -231,22 +231,20 @@ helm repo update
 kubectl create ns ingress-nginx
 
 #
-helm search repo -l ingress-nginx/ingress-nginx
-
-# Only for minikube
-kubectl get nodes --show-labels
-kubectl label node minikube ingress-ready=true
+kubens ingress-nginx
 
 #
-helm install ingress-controller ingress-nginx/ingress-nginx \
-  --namespace ingress-nginx \
-  --version 4.4.0 \
+helm search repo -l ingress-nginx/ingress-nginx
+
+#
+helm upgrade ingress-controller ingress-nginx/ingress-nginx \
+  --version 4.4.2 \
   -f <(cat << EOF
 controller:
   ingressClass: nginx
 
   nodeSelector:
-    ingress-ready: 'true'
+    # ingress-ready: 'true'
     kubernetes.io/os: linux
 
   service:
@@ -255,21 +253,26 @@ EOF
 )
 
 #
-helm status ingress-controller -n ingress-nginx
+kubectl get all
 ```
+
+<!--
+kubectl get nodes --show-labels
+kubectl label node minikube ingress-ready=true
+-->
 
 ### Bare-metal (minikube)
 
 ```sh
 #
 helm upgrade ingress-controller ingress-nginx/ingress-nginx \
-  --namespace ingress-nginx \
-  -f <(yq m <(cat << EOF
+  --version 4.4.2 \
+  -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values ingress-controller) <(cat << \EOF
 controller:
   hostNetwork: true
   reportNodeInternalIp: true
 EOF
-) <(helm get values ingress-controller --namespace ingress-nginx))
+))
 ```
 
 ### Prometheus Stack
@@ -284,7 +287,6 @@ kubectl get prometheus \
 
 #
 helm upgrade ingress-controller ingress-nginx/ingress-nginx \
-  --namespace ingress-nginx \
   -f <(yq m <(cat << EOF
 controller:
   podAnnotations:
@@ -307,7 +309,6 @@ EOF
 ```sh
 #
 helm upgrade ingress-controller ingress-nginx/ingress-nginx \
-  --namespace ingress-nginx \
   -f <(yq m <(cat << EOF
 controller:
   maxmindLicenseKey: 'DfoSiRTipW5IyLUR'
@@ -318,15 +319,14 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status deploy/ingress-controller-ingress-nginx-controller \
-  -n ingress-nginx
+kubectl rollout status deploy/ingress-controller-ingress-nginx-controller
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app.kubernetes.io/instance=ingress-controller' \
-  -n ingress-nginx \
+kubectl logs \
+  -l 'app.kubernetes.io/instance=ingress-controller' \
   -f
 ```
 
@@ -335,8 +335,7 @@ kubectl logs -l 'app.kubernetes.io/instance=ingress-controller' \
 #### K8s Manifests
 
 ```sh
-helm get manifest ingress-controller \
-  -n ingress-nginx
+helm get manifest ingress-controller
 ```
 
 <!-- #### HTTP Strict Transport Security (HSTS)
@@ -483,8 +482,7 @@ EOF
 ### Delete
 
 ```sh
-helm uninstall ingress-controller \
-  -n ingress-nginx
+helm uninstall ingress-controller
 
 kubectl delete ns ingress-nginx \
   --grace-period=0 \

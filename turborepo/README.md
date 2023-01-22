@@ -36,6 +36,9 @@ yarn global add turbo
 
 # Using Yarn >= 2.x
 yarn dlx turbo
+
+# Using pnpm
+pnpm add turbo -D
 ```
 
 ### Commands
@@ -62,7 +65,7 @@ turbo unlink
 turbo run build
 turbo run build --force
 turbo run build --graph
-turbo run build --scope [@package/name]
+turbo run build --scope <@package/name>
 ```
 
 ## Library
@@ -138,6 +141,18 @@ mkdir -p ./{apps/landing,packages}
 ```
 
 TODO
+
+### Run Without Daemon
+
+```log
+WARNING  failed to contact turbod. Continuing in standalone mode: connection to turbo daemon process failed. Please ensure the following: ...
+```
+
+```sh
+yarn turbo daemon status
+```
+
+Add `--no-daemon` parameter to `turbo run`.
 
 ### Missing Package Manager
 

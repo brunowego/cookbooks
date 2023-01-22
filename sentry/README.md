@@ -14,7 +14,9 @@ https://blog.sentry.io/2018/07/17/source-code-fetching
 
 - [Code Repository](https://github.com/getsentry/sentry)
 - [Main Website](https://sentry.io)
-- [Troubleshooting](https://develop.sentry.dev/self-hosted/troubleshooting/)
+- Develop
+  - [Troubleshooting](https://develop.sentry.dev/self-hosted/troubleshooting/)
+  - [Environment](https://develop.sentry.dev/environment/)
 
 ## CLI
 
@@ -464,7 +466,7 @@ docker run -d \
   -p 9000:9000 \
   --name sentry \
   --network workbench \
-  docker.io/getsentry/sentry:20.11.1-py3
+  docker.io/getsentry/sentry:23.1.0
 ```
 
 ```sh

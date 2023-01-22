@@ -28,9 +28,16 @@ go mod tidy
 
 #
 go mod verify
-```
 
-<!-- go mod vendor -->
+#
+go mod why
+
+#
+go mod graph
+
+#
+go mod vendor
+```
 
 ### Tips
 

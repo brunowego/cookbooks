@@ -155,7 +155,6 @@ docker network create workbench \
 ### Running
 
 ```sh
-# 9.x
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postgresql \
@@ -166,33 +165,7 @@ docker run -d \
   -p 5432:5432 \
   --name postgresql \
   --network workbench \
-  docker.io/library/postgres:9.6-alpine
-
-# 11.x
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h postgresql \
-  -e POSTGRES_USER='dev' \
-  -e POSTGRES_PASSWORD='dev' \
-  -e POSTGRES_DB='dev' \
-  -v postgresql-data:/var/lib/postgresql/data \
-  -p 5432:5432 \
-  --name postgresql \
-  --network workbench \
-  docker.io/library/postgres:11.2-alpine
-
-# 12.x
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h postgresql \
-  -e POSTGRES_USER='dev' \
-  -e POSTGRES_PASSWORD='dev' \
-  -e POSTGRES_DB='dev' \
-  -v postgresql-data:/var/lib/postgresql/data \
-  -p 5432:5432 \
-  --name postgresql \
-  --network workbench \
-  docker.io/library/postgres:12.6-alpine
+  docker.io/library/postgres:15.1-alpine
 ```
 
 ```sh

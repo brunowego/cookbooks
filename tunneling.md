@@ -12,5 +12,5 @@
 - [ngrok](/ngrok.md) 🌟
 
 <!--
-http://localhost.run/
+http://localhost.run
 -->

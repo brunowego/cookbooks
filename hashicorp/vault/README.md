@@ -9,6 +9,10 @@ https://app.pluralsight.com/library/courses/managing-hashicorp-vault/table-of-co
 https://developer.hashicorp.com/vault/tutorials/auth-methods/oidc-auth
 -->
 
+<!--
+vault secrets enable aws
+-->
+
 **Keywords:** Secrets Manager
 
 ## Links
@@ -125,6 +129,9 @@ kubectl create ns vault-system
 # kubectl create ns security
 
 #
+kubens vault-system
+
+#
 helm search repo -l hashicorp/vault
 
 #
@@ -133,8 +140,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install vault hashicorp/vault \
-  --namespace vault-system \
-  --version 0.22.1 \
+  --version 0.23.0 \
   -f <(cat << EOF
 injector:
   affinity: null
@@ -142,32 +148,11 @@ injector:
 server:
   ingress:
     enabled: true
+    ingressClassName: nginx
     hosts:
     - host: vault.${DOMAIN}
 
   affinity: null
-
-  # ha:
-  #   enabled: true
-  #   raft:
-  #     enabled: true
-  #   config: |
-  #     ui = true
-
-  #     listener "tcp" {
-  #       tls_disable = 1
-  #       address = "[::]:8200"
-  #       cluster_address = "[::]:8201"
-  #     }
-
-  #     storage "consul" {
-  #       path = "vault"
-  #       address = "consul-consul-server.consul-system:8500"
-  #     }
-
-  #     service_registration "kubernetes" {}
-  #   disruptionBudget:
-  #     maxUnavailable: 1
 
 ui:
   enabled: true
@@ -175,20 +160,20 @@ EOF
 )
 
 #
-kubectl get all -n vault-system
+kubectl get all
 ```
 
 ### Unseal
 
 ```sh
 # Save Unseal Keys and Initial Root Token
-kubectl exec -it vault-0 -n vault-system -- vault operator init
+kubectl exec -it vault-0 -- vault operator init
 
 # Repeat this process 3 times with different unseal keys
-kubectl exec -it vault-0 -n vault-system -- vault operator unseal
+kubectl exec -it vault-0 -- vault operator unseal
 
 # Check if everything is ok
-kubectl exec -it vault-0 -n vault-system -- vault status
+kubectl exec -it vault-0 -- vault status
 ```
 
 <!-- ### Prometheus Stack
@@ -215,8 +200,7 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status deploy/vault-agent-injector \
-  -n vault-system
+kubectl rollout status deploy/vault-agent-injector
 ```
 
 ### Logs
@@ -224,12 +208,10 @@ kubectl rollout status deploy/vault-agent-injector \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/name=vault-agent-injector' \
-  -n vault-system \
   -f
 
 kubectl logs \
   -l 'app.kubernetes.io/name=vault' \
-  -n vault-system \
   -f
 ```
 
@@ -239,16 +221,14 @@ kubectl logs \
 export VAULT_SECRET_NAME=$(kubectl get sa vault -o jsonpath="{.secrets[*]['name']}" -n vault-system)
 
 kubectl get secret "$VAULT_SECRET_NAME" \
-  -o jsonpath='{.data.token}' \
-  -n vault-system | \
+  -o jsonpath='{.data.token}' | \
     base64 -d; echo
 ```
 
 ### Delete
 
 ```sh
-helm uninstall vault \
-  -n vault-system
+helm uninstall vault
 
 kubectl delete ns vault-system \
   --grace-period=0 \

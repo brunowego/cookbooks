@@ -149,6 +149,9 @@ helm repo update
 kubectl create ns monitoring
 
 #
+kubens monitoring
+
+#
 helm search repo -l grafana/grafana
 
 #
@@ -157,8 +160,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install grafana grafana/grafana \
-  --namespace monitoring \
-  --version 6.48.2 \
+  --version 6.50.1 \
   -f <(cat << EOF
 adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
 
@@ -177,7 +179,6 @@ EOF
 <!--
 kubectl port-forward \
   --address 0.0.0.0 \
-  -n monitoring \
   svc/monitoring-grafana \
   8080:80
 -->
@@ -189,7 +190,6 @@ kubectl port-forward \
 ```sh
 #
 helm upgrade grafana grafana/grafana \
-  -n monitoring \
   --version 6.48.2 \
   -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values grafana -o yaml -n monitoring) <(cat << EOF
 ingress:
@@ -204,8 +204,7 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status deploy/grafana \
-  -n monitoring
+kubectl rollout status deploy/grafana
 ```
 
 ### Logs
@@ -213,7 +212,6 @@ kubectl rollout status deploy/grafana \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/instance=grafana' \
-  -n monitoring \
   -f
 ```
 
@@ -221,16 +219,14 @@ kubectl logs \
 
 ```sh
 kubectl get secret grafana \
-  -o jsonpath='{.data.admin-password}' \
-  -n monitoring | \
+  -o jsonpath='{.data.admin-password}' | \
     base64 -d; echo
 ```
 
 ### Delete
 
 ```sh
-helm uninstall grafana \
-  -n monitoring
+helm uninstall grafana
 ```
 
 ## CLI

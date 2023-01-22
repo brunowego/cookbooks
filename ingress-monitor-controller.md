@@ -7,6 +7,16 @@
 - [Code Repository](https://github.com/stakater/IngressMonitorController)
 - [Supported Uptime Checkers](https://github.com/stakater/IngressMonitorController#supported-uptime-checkers)
 
+## Supported Uptime Checkers
+
+- [Google Cloud Uptime Checks]()
+- [Microsoft Application Insights]()
+- [Pingdom](https://pingdom.com)
+- [StatusCake](https://statuscake.com)
+- [Updown](https://updown.io)
+- [Uptime](https://uptime.com)
+- [UptimeRobot](/uptimerobot/README.md)
+
 ## Helm
 
 ### References

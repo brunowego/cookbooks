@@ -71,5 +71,6 @@ ls -la "$(where kubectl)"
 # If using kbenv
 brew unlink kbenv && brew link --overwrite kbenv
 # or
-kbenv use 1.23.8
+kbenv list local
+kbenv use <version>
 ```

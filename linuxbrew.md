@@ -19,6 +19,12 @@ sudo yum -y install curl git
 sudo yum -y groupinstall 'Development Tools'
 ```
 
+<!--
+#### APK
+
+build-base
+-->
+
 ### Installation
 
 ```sh

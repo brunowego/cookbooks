@@ -4,6 +4,10 @@
 https://blog.logrocket.com/how-to-bootstrap-your-project-with-json-server/
 -->
 
+## Links
+
+- [Code Repository](https://github.com/typicode/json-server)
+
 ## CLI
 
 ### Installation
@@ -11,6 +15,9 @@ https://blog.logrocket.com/how-to-bootstrap-your-project-with-json-server/
 ```sh
 # Using NPM
 npm install json-server -g
+
+# Using Yarn
+yarn global add json-server
 ```
 
 ### Commands

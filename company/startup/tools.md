@@ -18,6 +18,7 @@
 - GitOps: ArgoCD
 - Low-code: Budibase
 - Mail Server: SendGrid
+- Password Management: Vaultwarden
 - Pipeline (CI/CD): GitHub Actions
 - Timesheet: Hubstaff
 - VPN: Surfshark

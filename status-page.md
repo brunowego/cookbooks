@@ -1,15 +1,5 @@
 # Status Page
 
-<!--
-https://status.tradinglite.com/
-
-https://updown.io/
-https://github.com/TwinProduction/gatus
-https://stackstatus.net/
-https://status.fastly.com/
-https://github.com/louislam/uptime-kuma
--->
-
 ## Glossary
 
 - Error Budget
@@ -20,18 +10,17 @@ https://github.com/louislam/uptime-kuma
 ## Tools
 
 - [Atlassian Statuspage](/atlassian/atlassian-statuspage.md)
+- [Better Stack](https://betterstack.com)
 - [Cachet](/cachet.md)
+- [Instatus](https://instatus.com)
 - [Statping](/statping.md)
+- [StatsD](https://github.com/statsd/statsd)
 - [Statusfy](/statusfy.md)
 - [Uptime Kuma](/uptime-kuma.md)
 - [UptimeRobot](/uptimerobot/README.md) 🌟
 
-<!--
-https://github.com/statsd/statsd
-https://instatus.com/
--->
-
 ## Examples
 
-- [AlienVault](https://status.alienvault.cloud/)
+- [AlienVault](https://status.alienvault.cloud)
 - [GitHub](https://githubstatus.com)
+- [Twingate](https://status.twingate.com)

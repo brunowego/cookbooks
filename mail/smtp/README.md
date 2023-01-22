@@ -31,6 +31,13 @@ https://github.com/hideckies/exploit-notes/blob/main/src/exploit/SMTP-Pentesting
 - [MailCatcher](/mailcatcher.md)
 - [MailHog](/mailhog.md) 🌟
 
+<!--
+https://github.com/docker-mailserver/docker-mailserver
+https://github.com/Mailu/Mailu
+https://github.com/jfoucher/Mailocal
+https://github.com/samirdjelal/mail-dev
+-->
+
 ## Connections
 
 | Port | Security    |

@@ -1,10 +1,15 @@
 # Gitpod
 
+<!--
+https://www.gitpod.io/community-license
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/gitpod-io/gitpod)
 - [Main Website](https://gitpod.io/)
 - [Browser Extension](https://gitpod.io/docs/browser-extension/)
+- [Docs](https://gitpod.io/docs)
 
 <!--
 gitpod.gitpod-desktop

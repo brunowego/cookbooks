@@ -1,31 +1,20 @@
 # Images
 
-## List Images
+## Usage
 
 ```sh
+# List Images
 docker images -q
-```
 
-## Remove
+# Remove
+docker rmi <image>
 
-```sh
-docker rmi [image]
-```
-
-### Remove All Images
-
-```sh
+# Remove All Images
 docker rmi $(docker images -q)
-```
 
-#### Filter
-
-```sh
+# Filter
 docker rmi $(docker images -q --no-trunc --filter "dangling=true")
-```
 
-### Remove Untagged Images
-
-```sh
-docker rmi $(docker images | grep 'none' | awk '/ / { print $3 }')
+# Remove Untagged Images
+docker rmi $(docker images | grep 'none' | awk '/ / { print $3 }') -f
 ```

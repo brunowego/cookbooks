@@ -2,11 +2,77 @@
 
 ## Links
 
+- [Code Repository](https://github.com/external-secrets/external-secrets)
 - [Main Website](https://external-secrets.io)
+- Docs
+  - [Provider](https://external-secrets.io/main/provider/aws-secrets-manager/)
 
-## API Types
+## Glossary
 
-- ExternalSecret
-- SecretStore
-- ClusterSecretStore
-- ClusterExternalSecret
+- External Secrets Operator (ESO)
+
+## Helm
+
+### References
+
+- [Values](https://github.com/external-secrets/external-secrets/tree/main/deploy/charts/external-secrets#values)
+
+### Repository
+
+```sh
+helm repo add external-secrets 'https://charts.external-secrets.io'
+helm repo update
+```
+
+### Install
+
+```sh
+#
+kubectl create ns eso-system
+# kubectl create ns security
+
+#
+kubens eso-system
+
+#
+helm search repo -l external-secrets/external-secrets
+
+#
+helm install external-secrets external-secrets/external-secrets \
+  --version 0.7.2
+
+#
+kubectl get all
+```
+
+### Status
+
+```sh
+kubectl rollout status deployment/external-secrets
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app.kubernetes.io/name=external-secrets' \
+  -f
+
+kubectl logs \
+  -l 'app.kubernetes.io/name=external-secrets-cert-controller' \
+  -f
+
+kubectl logs \
+  -l 'app.kubernetes.io/name=external-secrets-webhook' \
+  -f
+```
+
+### Delete
+
+```sh
+helm uninstall external-secrets
+
+kubectl delete ns eso-system \
+  --grace-period=0 \
+  --force
+```

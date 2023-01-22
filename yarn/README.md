@@ -14,12 +14,6 @@
 npm install -g yarn
 ```
 
-#### Homebrew
-
-```sh
-brew install yarn
-```
-
 #### APT
 
 ```sh
@@ -203,6 +197,28 @@ rm ~/.zcompdump*
 ```
 
 ### Issues
+
+#### Enable Immutable Installs
+
+```log
+#10 2.438 ➤ YN0028: │ The lockfile would have been modified by this install, which is explicitly forbidden.
+```
+
+```sh
+yarn config --why
+
+yarn config get enableImmutableInstalls
+```
+
+#### Un-updated Lockfile
+
+```log
+error Your lockfile needs to be updated, but yarn was run with `--frozen-lockfile`.
+```
+
+```sh
+yarn check --integrity
+```
 
 #### Missing Yarn Module
 

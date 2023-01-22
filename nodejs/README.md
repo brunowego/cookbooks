@@ -154,8 +154,8 @@ kill -9 $(ps aux | grep node | grep -v grep | awk '{print $2}')
 {
   // ...
   "engines": {
-    "node": ">=14 <15",
-    "npm": ">=6 <7"
+    "node": ">=18 <19",
+    "npm": ">=8 <9"
   }
 }
 ```

@@ -39,7 +39,4 @@ Run [Clean Cache](#clean-cache).
 ```sh
 #
 rm -fR "$(helm env HELM_REPOSITORY_CACHE)"/*
-
-#
-helm repo update
 ```

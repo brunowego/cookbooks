@@ -25,7 +25,7 @@ kubectl describe challenge <name>
 
 ## Issues
 
-###
+### TBD
 
 ```log
 <namespace> cm-acme-http-solver-t9djk <none> grafana.domain.tld <name>.elb.us-east-1.amazonaws.com 80 9s

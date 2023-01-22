@@ -17,6 +17,7 @@ yarn set version stable # berry
 
 #
 yarn config set defaultSemverRangePrefix '~'
+yarn config set enableImmutableInstalls true
 
 #
 yarn install
@@ -28,7 +29,7 @@ cat << EOF >> ./.gitattributes
 EOF
 ```
 
-### Using Node Modules
+### Using Node Modules 🌟
 
 ```sh
 #
