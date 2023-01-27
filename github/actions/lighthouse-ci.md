@@ -19,7 +19,7 @@ on:
 jobs:
   test:
     name: Test
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout code
@@ -48,7 +48,7 @@ jobs:
 
 ```sh
 act \
-  -P ubuntu-18.04=docker.io/catthehacker/ubuntu:js-18.04-dev \
+  -P ubuntu-22.04=docker.io/catthehacker/ubuntu:js-18.04-dev \
   -j test \
   -W ./.github/workflows/lighthouse-ci.yml \
   -v

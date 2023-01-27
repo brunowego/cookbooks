@@ -19,6 +19,8 @@ https://github.community/t/picture-tag-in-markdown/149471
 - [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
 - [Bug Report](https://support.github.com/contact/bug-report)
 - [Pricing Calculator](https://github.com/pricing/calculator)
+- Docs
+  - [Installation](https://cli.github.com/manual/installation)
 
 ## References
 
@@ -72,6 +74,7 @@ brew install --cask github
 ### Links
 
 - [Main Website](https://cli.github.com)
+- [Docs](https://cli.github.com/manual/)
 
 ### Installation
 
@@ -79,6 +82,25 @@ brew install --cask github
 
 ```sh
 brew install gh
+```
+
+#### APT
+
+**Dependencies:** [GNU Privacy Guard (GnuPG / GPG)](/gnu/pg.md) and [Software Properties Common](/apt/software-properties-common.md)
+
+```sh
+sudo apt-key adv --keyserver 'keyserver.ubuntu.com' --recv-key 'C99B11DEB97541F0'
+sudo apt-add-repository 'https://cli.github.com/packages'
+
+sudo apt update
+sudo apt install gh
+```
+
+#### Scoop
+
+```sh
+scoop bucket add github-gh 'https://github.com/cli/scoop-gh.git'
+scoop install gh
 ```
 
 #### Chocolatey

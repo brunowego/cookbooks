@@ -64,36 +64,33 @@ docker network create workbench \
 ### Running
 
 ```sh
-# 20.x
+#
 docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
   -h ubuntu \
   --name ubuntu \
   --network workbench \
-  docker.io/library/ubuntu:20.04 /bin/bash
-
-# 18.x
-docker run -it --rm \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h ubuntu \
-  --name ubuntu \
-  --network workbench \
-  docker.io/library/ubuntu:18.04 /bin/bash
-
-# 16.x
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h ubuntu \
-  --name ubuntu \
-  --network workbench \
-  --privileged \
-  docker.io/library/ubuntu:16.04 /sbin/init
+  docker.io/library/ubuntu:22.04 /bin/bash
 
 #
 docker exec -it ubuntu /bin/bash
 
 # Remove
 docker rm -f ubuntu
+```
+
+#### Work Directory
+
+```sh
+#
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h ubuntu \
+  --name ubuntu \
+  -v "$(pwd)":/usr/src/app \
+  -w /usr/src/app \
+  --network workbench \
+  docker.io/library/ubuntu:22.04 /bin/bash
 ```
 
 ## Tips

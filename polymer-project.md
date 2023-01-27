@@ -4,8 +4,6 @@
 
 ### Installation
 
-#### YARN
-
 ```sh
 # Using Yarn 1.x
 yarn global add polymer-cli

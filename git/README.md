@@ -33,11 +33,11 @@ Version 2.31
 brew install git
 ```
 
-#### Zypper
+#### APT
 
 ```sh
-sudo zypper refresh
-sudo zypper install -y git-core
+sudo apt update
+sudo apt -y install git
 ```
 
 #### YUM
@@ -47,18 +47,18 @@ yum check-update
 sudo yum -y install git
 ```
 
-#### APT
-
-```sh
-sudo apt update
-sudo apt -y install git
-```
-
 #### APK
 
 ```sh
 sudo apk update
 sudo apk add git
+```
+
+#### Zypper
+
+```sh
+sudo zypper refresh
+sudo zypper install -y git-core
 ```
 
 #### Chocolatey
@@ -290,17 +290,6 @@ git for-each-ref --sort=committerdate refs/heads/ --format='%(committerdate:shor
 git for-each-ref \
   --sort=-committerdate refs/heads/ \
   --format='%(committerdate:short) %(authorname) %(refname:short)'
-```
-
-#### Run Subdirectories
-
-```sh
-#
-find . \
-  -type d \
-  -name '.git' \
-  -exec bash \
-  -c 'cd $(dirname "{}"); git pull' \;
 ```
 
 <!-- ####

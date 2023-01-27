@@ -1,4 +1,4 @@
-# Go Modules
+# Go Modules (mod)
 
 <!--
 https://app.pluralsight.com/library/courses/exploring-go-modules/
@@ -37,6 +37,18 @@ go mod graph
 
 #
 go mod vendor
+```
+
+### Extend
+
+#### With Trunk
+
+```sh
+# Runs go mod tidy when changes are detected to go.mod
+trunk actions enable go-mod-tidy
+
+# Runs go mod tidy followed by go mod vendor
+trunk actions enable go-mod-tidy-vendor
 ```
 
 ### Tips

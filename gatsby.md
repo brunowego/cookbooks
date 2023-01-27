@@ -41,23 +41,12 @@ docker rm -f gatsby
 
 ### Installation
 
-#### Homebrew
-
 ```sh
-brew install gatsby-cli
-```
+# Using NPM
+npm install gatsby-cli -g
 
-#### YARN
-
-```sh
 # Using Yarn 1.x
 yarn global add gatsby-cli
-```
-
-#### NPM
-
-```sh
-npm install gatsby-cli -g
 ```
 
 ### Configuration

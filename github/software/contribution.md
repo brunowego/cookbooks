@@ -1,13 +1,10 @@
 # Software Contribution
 
-<!--
-https://github.com/DA0-DA0/dao-dao-ui/blob/development/CONTRIBUTING.md
--->
+## Docs
 
-TODO
-
-<!--
+```sh
+#
 cat << EOF > ./CONTRIBUTING.md
 
 EOF
--->
+```

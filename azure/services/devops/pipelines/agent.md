@@ -28,7 +28,7 @@ https://www.youtube.com/watch?v=CmamCFSrNzs
 | macOS X Catalina 10.15                      | `macOS-10.15`                      | Bash          |
 | macOS 11 Big Sur                            | `macOS-11`                         | Bash          |
 | macOS 12 Monterey                           | `macOS-12`                         | Bash          |
-| Ubuntu 18.04                                | `ubuntu-18.04`                     | Bash          |
+| Ubuntu 18.04                                | `ubuntu-22.04`                     | Bash          |
 | Ubuntu 20.04                                | `ubuntu-20.04`                     | Bash          |
 | Ubuntu 22.04                                | `ubuntu-22.04`                     | Bash          |
 | Windows Server 2019 with Visual Studio 2019 | `windows-2019`                     | PowerShell    |

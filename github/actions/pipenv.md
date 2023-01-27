@@ -26,7 +26,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ['ubuntu-18.04']
+        os: ['ubuntu-22.04']
         python-version: ['3.9']
     steps:
       - name: Checkout code
@@ -58,17 +58,17 @@ jobs:
 ### Missing Cache Service URL
 
 ```log
-[CI/pytest ("ubuntu-18.04", "3.9")]   💬  ::debug::getCacheEntry - Attempt 1 of 2 failed with error: Cache Service Url not found, unable to restore cache.
-[CI/pytest ("ubuntu-18.04", "3.9")]   💬  ::debug::getCacheEntry - Attempt 2 of 2 failed with error: Cache Service Url not found, unable to restore cache.
+[CI/pytest ("ubuntu-22.04", "3.9")]   💬  ::debug::getCacheEntry - Attempt 1 of 2 failed with error: Cache Service Url not found, unable to restore cache.
+[CI/pytest ("ubuntu-22.04", "3.9")]   💬  ::debug::getCacheEntry - Attempt 2 of 2 failed with error: Cache Service Url not found, unable to restore cache.
 | [warning]getCacheEntry failed: Cache Service Url not found, unable to restore cache.
-[CI/pytest ("ubuntu-18.04", "3.9")]   ⚙  ::set-output:: cache-hit=false
+[CI/pytest ("ubuntu-22.04", "3.9")]   ⚙  ::set-output:: cache-hit=false
 ```
 
 TODO
 
 <!-- jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     steps:
     - name: Cache pipenv
       id: cache-pipenv

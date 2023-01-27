@@ -1,18 +1,10 @@
 # Kustomize
 
-<!--
-https://github.com/L-U-C-K-Y/kustomize-with-multiple-envs
-https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
--->
-
 ## Links
 
-- [Main Website](https://kustomize.io/)
+- [Code Repository](https://github.com/kubernetes-sigs/kustomize)
+- [Main Website](https://kustomize.io)
 - [Declarative Management of Kubernetes Objects Using Kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/)
-
-## Alternatives
-
-- [Helm](/helm.md)
 
 ## Tools
 
@@ -87,7 +79,7 @@ sudo su - "$USER"
 
 ### Usage
 
-**Environments:** local, dev, qa, stg, prod.
+**Environments:** `local`, `dev`, `qa`, `stg` and `prod`.
 
 ```sh
 # Create
@@ -121,20 +113,24 @@ icdiff <(kustomize build ./base) <(kustomize build ./.k8s/overlays/local)
 
 ```sh
 export DOCKER_REGISTRY='docker.io' # ghcr.io
-export DOCKER_REPOSITORY='my-org/my-app'
+export DOCKER_REPOSITORY='<owner>/<repo>'
 export DOCKER_TAG='latest'
 ```
 
+**Refer:** `./.k8s/base/kustomization.yml`
+
 ```yml
-# kustomization.yaml
+---
+# ...
+
 images:
-  - name: <name>
+  - name: <owner>-<repo>
     newName: $DOCKER_REGISTRY/$DOCKER_REPOSITORY
     newTag: $DOCKER_TAG
 ```
 
 ```sh
-kustomize edit set image <name>="${DOCKER_REGISTRY}/${DOCKER_REPOSITORY}:${DOCKER_TAG}"
+( cd ./.k8s/base && kustomize edit set image '<owner>-<repo>'="${DOCKER_REGISTRY}/${DOCKER_REPOSITORY}:${DOCKER_TAG}" )
 ```
 
 <!-- ### Issues

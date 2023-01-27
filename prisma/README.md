@@ -2,6 +2,11 @@
 
 **Keywords:** ORM
 
+<!--
+https://github.com/charmverse/app.charmverse.io/blob/main/prisma/schema.prisma
+https://github.com/podkrepi-bg/api/tree/master/db/seed
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/prisma/prisma)
@@ -207,3 +212,16 @@ npx prisma studio
 echo 'USE develop; DROP DATABASE <db-name>;' | \
   npx prisma db execute --stdin
 ```
+
+<!--
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["multiSchema"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  schemas  = ["accounts", "connectors", "payments", "tasks"]
+}
+-->

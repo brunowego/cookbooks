@@ -122,7 +122,7 @@ services:
         protocol: tcp
     networks:
       - workbench
-    restart: always
+    restart: unless-stopped # always
     depends_on:
       - anything
 

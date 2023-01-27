@@ -6,6 +6,7 @@
 
 <!-- markdownlint-disable MD010 -->
 <!-- markdownlint-disable MD010 MD038 -->
+<!-- markdownlint-disable first-line-heading -->
 
 ## Tips
 

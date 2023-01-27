@@ -53,7 +53,7 @@ cat << EOP > ~/.actrc
 -P ubuntu-latest=ghcr.io/catthehacker/ubuntu:act-latest
 -P ubuntu-22.04=ghcr.io/catthehacker/ubuntu:act-22.04
 -P ubuntu-20.04=ghcr.io/catthehacker/ubuntu:act-20.04
--P ubuntu-18.04=ghcr.io/catthehacker/ubuntu:act-18.04
+-P ubuntu-22.04=ghcr.io/catthehacker/ubuntu:act-18.04
 ubuntu-16.04=ghcr.io/catthehacker/ubuntu:act-16.04
 EOP
 

@@ -2,17 +2,16 @@
 
 ## Links
 
-- [Main Website](https://mermaid-js.github.io/mermaid)
-
-## Tools
-
-- [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/)
+- [Main Website](https://mermaid.js.org/)
+- [Live Editor](https://mermaid.live)
 
 ## Posts
 
 - [GitHub / Include diagrams in your Markdown files with Mermaid](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/)
 
-## Using
+## Syntax
+
+### Using
 
 ```mermaid
 graph TD;
@@ -32,17 +31,34 @@ stateDiagram
   Crash --> [*]
 ```
 
-## Tips
+### Tips
 
-### Visual Studio Code
+#### Visual Studio Code
 
 ```sh
 #
 code --install-extension bierner.markdown-mermaid
-code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
 
 #
 jq '."recommendations" += ["bierner.markdown-mermaid"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
+
+<!--
+code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
 
 jq '."recommendations" += ["bpruitt-goddard.mermaid-markdown-syntax-highlighting"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+-->
+
+## CLI
+
+### Links
+
+- [Code Repository](https://github.com/mermaid-js/mermaid-cli)
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install mermaid-cli
 ```

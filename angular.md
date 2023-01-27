@@ -16,16 +16,9 @@ https://linkedin.com/learning/angular-building-an-interface/building-an-interfac
 
 ### Installation
 
-#### NPM
-
 ```sh
+# Using NPM
 npm install @angular/cli -g
-```
-
-#### Homebrew
-
-```sh
-brew install angular-cli
 ```
 
 ### Commands

@@ -19,8 +19,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Use Node.js 14
-        uses: actions/setup-node@v2
+      - name: Setup Node.js 14
+        uses: actions/setup-node@v3
         env:
           PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
         with:

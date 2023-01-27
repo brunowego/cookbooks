@@ -15,16 +15,12 @@ https://github.com/antribute/open-source
 
 ### Installation
 
-#### Homebrew
-
 ```sh
-brew install pnpm
-```
+# Using NPM
+npm install pnpm -g
 
-#### Chocolatey
-
-```sh
-choco install -y pnpm
+# Using Yarn
+yarn global add pnpm
 ```
 
 ### Commands
@@ -35,6 +31,22 @@ npx pnpm -h
 
 # Using Local
 pnpm -h
+```
+
+### Environment
+
+#### macOS
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Performant NPM (pnpm)
+export PNPM_HOME="$HOME/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+```
+
+```sh
+source ~/.zshrc
 ```
 
 ### Configuration
@@ -58,6 +70,9 @@ pnpm install
 
 #
 pnpm <command>
+
+# Clean cache
+pnpm store prune
 ```
 
 <!--
@@ -78,6 +93,23 @@ pnpx <command>
 ```
 
 ### Tips
+
+#### Git Attributes
+
+Add [text rules](/gitattributes.md#text)
+
+```sh
+cat << EOF >> ./.gitattributes
+/pnpm-lock.yaml -diff
+/pnpm-lock.yaml linguist-generated=true
+EOF
+```
+
+#### Upgrade
+
+```sh
+pnpm add -g pnpm
+```
 
 #### Add Type Module
 

@@ -1,10 +1,5 @@
 # Linux Container Daemon (LXD)
 
-## Alternatives
-
-- [cri-o](/cri-o.md)
-- [Podman](/podman.md)
-
 ## CLI
 
 ### Installation
@@ -33,7 +28,7 @@ https://github.com/justmeandopensource/kubernetes/tree/master/lxd-provisioning
 <!-- # LXD
 
 ```sh
-axel -n 8 http://cdimage.ubuntu.com/ubuntu/releases/bionic/release/ubuntu-18.04.2-server-amd64.iso
+axel -n 8 http://cdimage.ubuntu.com/ubuntu/releases/bionic/release/ubuntu-22.04.2-server-amd64.iso
 ```
 
 ```sh

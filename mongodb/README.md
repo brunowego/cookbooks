@@ -13,7 +13,7 @@ https://linkedin.com/learning/learning-mongodb/
 
 ### References
 
-- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/mongodb)
+- [Parameters](https://github.com/bitnami/charts/tree/main/bitnami/mongodb#parameters)
 
 ### Repository
 
@@ -25,13 +25,18 @@ helm repo update
 ### Install
 
 ```sh
+#
 kubectl create ns mongodb
-```
 
-```sh
+#
+kubens mongodb
+
+#
+helm search repo -l bitnami/mongodb
+
+#
 helm install mongo bitnami/mongodb \
-  --namespace mongodb \
-  --version 10.23.0 \
+  --version 13.6.4 \
   -f <(cat << EOF
 auth:
   rootPassword: root
@@ -43,23 +48,20 @@ EOF
 
 ```sh
 kubectl get secret mongo-mongodb \
-  -o jsonpath='{.data.mongodb-root-password}' \
-  -n mongodb | \
+  -o jsonpath='{.data.mongodb-root-password}' | \
     base64 -d; echo
 ```
 
 ### Port Forward
 
 ```sh
-kubectl port-forward svc/mongo-mongodb 27017:27017 \
-  --namespace mongodb
+kubectl port-forward svc/mongo-mongodb 27017:27017
 ```
 
 ### Delete
 
 ```sh
-helm uninstall mongo \
-  -n mongodb
+helm uninstall mongo
 
 kubectl delete ns mongodb \
   --grace-period=0 \

@@ -38,3 +38,11 @@ sudo apk add git-lfs
 ```sh
 man git-lfs
 ```
+
+### Extend
+
+#### With Trunk
+
+```sh
+trunk actions enable git-lfs
+```

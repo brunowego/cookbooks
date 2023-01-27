@@ -26,7 +26,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ['ubuntu-18.04']
+        os: ['ubuntu-22.04']
         python-version: ['3.9']
     steps:
       - name: Checkout code

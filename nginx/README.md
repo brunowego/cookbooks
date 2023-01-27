@@ -268,10 +268,16 @@ location / {
 
 ```sh
 #
-code --install-extension shanoor.vscode-nginx
+code --install-extension ahmadalli.vscode-nginx-conf
 
 #
-jq '."recommendations" += ["shanoor.vscode-nginx"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+jq '."recommendations" += ["ahmadalli.vscode-nginx-conf"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
+
+**Configuration:**
+
+```sh
+jq '."[nginx]"."editor.defaultFormatter" |= "ahmadalli.vscode-nginx-conf"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
 #### EditorConfig

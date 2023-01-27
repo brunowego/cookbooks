@@ -8,6 +8,8 @@
 
 ### Absolute Import
 
+**Refer:** `./tsconfig.json`
+
 ```json
 {
   "compilerOptions": {
@@ -18,6 +20,29 @@
   }
 }
 ```
+
+<!-- ###
+
+```sh
+pnpm add ts-node tsconfig-paths -D
+```
+
+```json
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/db/*": ["./db/*"],
+      "@/src/*": ["./src/*"]
+    }
+  },
+  "include": ["./db/**/*.ts", "./src/**/*.ts"],
+  "exclude": ["./node_modules"]
+}
+``` -->
 
 ## Issues
 

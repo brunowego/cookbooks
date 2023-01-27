@@ -9,6 +9,8 @@
 
 <!--
 https://slack.github.com/
+
+https://<owner>.slack.com/admin
 -->
 
 ## App

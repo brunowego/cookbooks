@@ -27,3 +27,9 @@
 - sqlx
 - stuffbin
 - Viper
+
+<!--
+https://github.com/spf13/cobra
+https://github.com/zitadel/oidc
+https://github.com/cespare/reflex
+-->

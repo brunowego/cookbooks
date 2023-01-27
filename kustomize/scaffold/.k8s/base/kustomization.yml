@@ -1,0 +1,27 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - deployment.yml
+  - service.yml
+  - ingress.yml
+
+configMapGenerator:
+  - name: metadata
+
+vars:
+  - name: APP_ENV
+    objref:
+      kind: ConfigMap
+      name: metadata
+      apiVersion: v1
+    fieldref:
+      fieldpath: data.APP_ENV
+  - name: APP_HOST
+    objref:
+      kind: ConfigMap
+      name: metadata
+      apiVersion: v1
+    fieldref:
+      fieldpath: data.APP_HOST

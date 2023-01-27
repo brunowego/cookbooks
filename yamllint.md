@@ -44,6 +44,8 @@ extends: default
 #   **/.yarn/**/*
 #   **/node_modules/**/*
 rules:
+  line-length:
+    max: 100
   indentation:
     spaces: 2
     indent-sequences: consistent

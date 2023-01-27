@@ -94,6 +94,13 @@ Transactions Per Second (TPS)
 brew install awscli
 ```
 
+#### APT
+
+```sh
+sudo apt update
+sudo DEBIAN_FRONTEND=noninteractive apt -y install awscli
+```
+
 #### pip
 
 ```sh

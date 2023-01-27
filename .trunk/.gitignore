@@ -1,5 +1,7 @@
-/actions
-/logs
-/notifications
-/out
-/plugins
+*out
+*logs
+*actions
+*notifications
+plugins
+user_trunk.yaml
+user.yaml

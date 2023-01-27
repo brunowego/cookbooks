@@ -269,14 +269,14 @@ TODO
 ```yml
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
 ```
 
 | Virtual Environment  | YAML Workflow Label                | Default Shell |
 | -------------------- | ---------------------------------- | ------------- |
 | macOS Catalina 10.15 | `macos-latest` or `macos-10.15`    | Bash          |
 | Ubuntu 16.04         | `ubuntu-16.04`                     | Bash          |
-| Ubuntu 18.04         | `ubuntu-18.04`                     | Bash          |
+| Ubuntu 18.04         | `ubuntu-22.04`                     | Bash          |
 | Ubuntu 22.04         | `ubuntu-latest` or `ubuntu-22.04`  | Bash          |
 | Windows Server 2019  | `windows-latest` or `windows-2019` | PowerShell    |
 
@@ -390,6 +390,14 @@ gh run watch
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+#21 ERROR: failed to push ghcr.io/<owner>/<repo>:7762679088d2: unexpected status: 403 Forbidden
+```
+
+TODO
 
 #### Missing Workflow Scope
 

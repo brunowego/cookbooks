@@ -7,7 +7,7 @@ https://github.com/editablejs/editable/blob/main/.commitlintrc
 ## Links
 
 - [Code Repository](https://github.com/conventional-changelog/commitlint)
-- [Main Website](https://commitlint.js.org/)
+- [Main Website](https://commitlint.js.org)
 
 ## Library
 
@@ -51,15 +51,16 @@ const commitlintRC = {
 module.exports = commitlintRC
 ```
 
-<!--
-.commitlintrc.yaml
-extends:
-  - '@commitlint/config-conventional'
--->
+### Extend
 
-### Tips
+#### With Trunk
 
-#### Using with Husky
+```sh
+#
+trunk actions enable commitlint
+```
+
+#### With Husky
 
 ```sh
 # Using NPM
@@ -69,6 +70,18 @@ npx husky install
 # Using Yarn
 yarn husky add ./.husky/commit-msg 'yarn commitlint --edit "$1"'
 yarn husky install
+```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension joshbolduc.commitlint
+
+#
+jq '."recommendations" += ["joshbolduc.commitlint"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 ### Issues

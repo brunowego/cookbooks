@@ -19,3 +19,9 @@
 - Vendor Neutral
 - API
 - Framework/Libraries
+
+<!--
+https://artifacthub.io/packages/helm/opentelemetry-helm/opentelemetry-operator
+
+https://artifacthub.io/packages/helm/opentelemetry-helm/opentelemetry-collector
+-->

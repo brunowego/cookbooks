@@ -1,5 +1,9 @@
 # TSConfig
 
+<!--
+pnpm add typescript -D
+-->
+
 ## Configuration
 
 **Refer:** `./tsconfig.base.json`
@@ -41,4 +45,9 @@
   "include": ["./next-env.d.ts", "./src/**/*.ts", "./src/**/*.tsx"],
   "exclude": ["./node_modules"]
 }
+```
+
+```sh
+#
+./node_modules/.bin/ts-node --showConfig
 ```

@@ -4,9 +4,10 @@
 
 - [How does the internet work?](https://roadmap.sh/guides/what-is-internet)
 
-## Terms
+## Glossary
 
 - Internet Engineering Task Force (IETF)
+- Internet Service Provider (ISP)
 
 ## CIDR Blocks
 

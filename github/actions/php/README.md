@@ -26,6 +26,6 @@ act -P ubuntu-latest=shivammathur/node:latest
 # For runs-on: ubuntu-20.04
 act -P ubuntu-20.04=shivammathur/node:2004
 
-# For runs-on: ubuntu-18.04
-act -P ubuntu-18.04=shivammathur/node:1804
+# For runs-on: ubuntu-22.04
+act -P ubuntu-22.04=shivammathur/node:1804
 ```

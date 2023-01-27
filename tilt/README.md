@@ -1,26 +1,17 @@
 # Tilt
 
 <!--
-https://github.com/eniblock/vault
-https://github.com/eniblock/keycloak
-https://github.com/companieshouse/psc-filing-api/tree/main
+https://github.com/search?o=desc&q=filename%3ATiltfile+%22.k8s%22+path%3A%2F&s=indexed&type=Code
 
-https://github.com/tadoku/tadoku
-https://github.com/whslabs/tilt-jenkins
-https://github.com/hivenetes/bots
-https://github.com/francis-jjk/microservices-demo
+https://github.com/whs-dot-hk/tilt-jenkins/blob/master/Tiltfile
 -->
 
-**Keywords:** Full-featured Development Environment
+**Keywords:** k3d
 
 ## Links
 
 - [Code Repository](https://github.com/tilt-dev/tilt)
 - [Main Website](https://tilt.dev/)
-
-## Included
-
-- [k3d](/k3d.md)
 
 ## CLI
 

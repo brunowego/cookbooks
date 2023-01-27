@@ -1,5 +1,9 @@
 # Zero Trust Architecture (ZTA)
 
+<!--
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf
+-->
+
 **Keywords:** Security
 
 Never trust, always verify!

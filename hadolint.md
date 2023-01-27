@@ -65,6 +65,18 @@ jq ".\"hadolint.hadolintPath\" |= \"$(which hadolint)\"" "$HOME"/.vscode/setting
 RUN pip3 install /usr/src/packages/<package-version>.tar.gz
 ```
 
+### Extend
+
+#### With Trunk
+
+```sh
+#
+trunk check enable hadolint@2.11.0
+
+#
+trunk check --filter hadolint -v <path/to/dockerfile>
+```
+
 ### Issues
 
 #### Deprecated Maintainer

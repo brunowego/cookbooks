@@ -7,6 +7,7 @@
 - [Actions Cache](https://github.com/actions/cache/blob/main/examples.md#php---composer)
 - [Code Repository](https://github.com/github/codeql)
 - [Main Website](https://codeql.github.com)
+- [Supported languages and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/)
 
 ## Workflow
 
@@ -14,7 +15,7 @@
 
 ```yml
 ---
-name: CodeQL
+name: CodeQL Analysis
 
 on:
   push:
@@ -24,12 +25,12 @@ on:
     branches:
       - main
   schedule:
-    - cron: 0 0 * * * # https://crontab.guru/#0_0_*_*_*
+    - cron: 0 3 * * 0 # https://crontab.guru/#0_3_*_*_0
 
 jobs:
   analyze:
     name: Analyze
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     permissions:
       actions: read
       contents: read
@@ -57,6 +58,8 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
+        with:
+          category: /language:${{matrix.language}}
 ```
 
 ## Issues

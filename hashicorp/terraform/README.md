@@ -1,6 +1,10 @@
 # HashiCorp Terraform
 
 <!--
+registry.terraform.io
+-->
+
+<!--
 sensitive = true
 
 https://github.com/im2nguyen/rover
@@ -124,9 +128,9 @@ output
 #### APT
 
 - [cURL](/curl.md)
-- [GNU Privacy Guard](/gnupg.md)
+- [GNU Privacy Guard](/gnu/pg.md)
 - [lsb-release](/lsb-release.md)
-- [software-properties-common](/software-properties-common.md)
+- [software-properties-common](/apt/software-properties-common.md)
 
 ### Installation
 

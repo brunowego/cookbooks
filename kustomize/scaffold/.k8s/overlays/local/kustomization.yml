@@ -1,0 +1,18 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+commonLabels:
+  io.my-org.app: my-app
+
+namePrefix: my-app-
+namespace: my-app
+
+bases:
+- ../../base
+
+configMapGenerator:
+- behavior: merge
+  envs:
+  - .env
+  name: metadata

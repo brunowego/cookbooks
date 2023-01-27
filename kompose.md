@@ -24,6 +24,12 @@ curl \
     sudo chmod +x /usr/local/bin/kompose
 ```
 
+#### Chocolatey
+
+```sh
+choco install kustomize
+```
+
 ### Commands
 
 ```sh

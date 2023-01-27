@@ -23,7 +23,7 @@ on:
 jobs:
   cypress:
     name: Run Cypress
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     permissions:
       actions: read
       contents: read

@@ -23,12 +23,12 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Trunk Check
+      - name: Trunk check
         uses: trunk-io/trunk-action@v1
         with:
           check-mode: all

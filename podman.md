@@ -1,11 +1,9 @@
 # Podman
 
-**Keywords:** Full-featured Development Environment
-
 ## Links
 
 - [Code Repository](https://github.com/containers/podman)
-- [Main Website](https://podman.io/)
+- [Main Website](https://podman.io)
 
 ## Guides
 

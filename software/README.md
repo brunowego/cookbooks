@@ -2,6 +2,9 @@
 
 <!--
 https://github.com/vegaprotocol/specs
+
+Bottleneck
+Leading zero
 -->
 
 ## Newsletter

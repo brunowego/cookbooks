@@ -4,23 +4,12 @@
 
 ### Installating
 
-#### NPM
-
 ```sh
+# Using NPM
 npm install sort-package-json -g
-```
 
-#### Yarn
-
-```sh
 # Using Yarn 1.x
 yarn global add sort-package-json
-```
-
-#### NPX
-
-```sh
-npx sort-package-json
 ```
 
 ### Usage
@@ -28,4 +17,6 @@ npx sort-package-json
 ```sh
 #
 sort-package-json
+# or
+npx sort-package-json
 ```

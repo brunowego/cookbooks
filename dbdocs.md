@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://dbdocs.io/)
+- [Main Website](https://dbdocs.io)
 
 ## CLi
 

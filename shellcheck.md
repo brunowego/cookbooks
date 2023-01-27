@@ -2,9 +2,9 @@
 
 **Keywords:** Shell linter
 
-## References
+## Links
 
-- [ShellCheck](https://www.shellcheck.net/)
+- [Main Website](https://shellcheck.net/)
 
 ## CLI
 

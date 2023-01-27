@@ -26,5 +26,5 @@ export $(sed 's/[[:blank:]]//g; /^#/d' ./.env | xargs)
 code --install-extension mikestead.dotenv
 
 #
-jq '."recommendations" += ["mikestead.dotenv"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+jq '."recommendations" += ["mikestead.dotenv"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
