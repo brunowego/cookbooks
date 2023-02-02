@@ -2,7 +2,7 @@
 
 ## References
 
-- [Syntax](https://en.wikipedia.org/wiki/Tail_(Unix)#Syntax)
+- [Syntax](<https://en.wikipedia.org/wiki/Tail_(Unix)#Syntax>)
 
 ## Commands
 

@@ -18,14 +18,14 @@ https://github.com/weisurya/kafka-playground-python/blob/master/docker-compose.y
 
 ### Serialization Formats
 
-| Name | Binary | Human-readable | Schema/IDL | Description |
-| --- | --- | --- | --- | --- |
-| JSON | No | Yes | JSON Schema | Easy, no learning curve, extremely common |
-| XML | No | Yes | XML Schema | - |
-| YAML | No | Yes | No | - |
-| AVRO | Yes | No | JSON Schema | First class support using Schema Registry |
-| Protobuf | Yes | No | IDL | Highly efficient (gRPC) |
-| Thrift | Yes | No | IDL | Twitter Finagle, Apache Cassandra |
+| Name     | Binary | Human-readable | Schema/IDL  | Description                               |
+| -------- | ------ | -------------- | ----------- | ----------------------------------------- |
+| JSON     | No     | Yes            | JSON Schema | Easy, no learning curve, extremely common |
+| XML      | No     | Yes            | XML Schema  | -                                         |
+| YAML     | No     | Yes            | No          | -                                         |
+| AVRO     | Yes    | No             | JSON Schema | First class support using Schema Registry |
+| Protobuf | Yes    | No             | IDL         | Highly efficient (gRPC)                   |
+| Thrift   | Yes    | No             | IDL         | Twitter Finagle, Apache Cassandra         |
 
 ## Docker
 

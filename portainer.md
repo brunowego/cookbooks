@@ -27,9 +27,9 @@ docker run -d \
 echo -e '[INFO]\thttp://127.0.0.1:9000'
 ```
 
-| Login | Password |
-| --- | --- |
-| `admin` |  |
+| Login   | Password |
+| ------- | -------- |
+| `admin` |          |
 
 ### Remove
 

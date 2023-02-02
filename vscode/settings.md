@@ -61,6 +61,12 @@ jq '."workbench.editor.splitInGroupLayout" |= "vertical"' "$HOME"/.vscode/settin
 ```
 
 <!--
+"files.exclude": {
+  "**/.git": false
+},
+-->
+
+<!--
 # Auto Save
 # jq '."files.autoSave" |= "afterDelay"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 

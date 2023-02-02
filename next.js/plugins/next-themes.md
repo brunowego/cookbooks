@@ -21,7 +21,7 @@ yarn add next-themes
 
 ```tsx
 import type { AppProps } from 'next/app'
-import { ThemeProvider } from 'next-themes';
+import { ThemeProvider } from 'next-themes'
 
 function App({ Component, pageProps }: AppProps) {
   return (

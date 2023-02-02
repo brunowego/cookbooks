@@ -61,12 +61,12 @@ export default makeSource({
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@/contentlayer/generated": ["./.contentlayer/generated"],
+      "@/contentlayer/generated": ["./.contentlayer/generated"]
       // ...
     }
   },
   "include": [
-    "./.contentlayer/generated",
+    "./.contentlayer/generated"
     // ...
   ]
 }

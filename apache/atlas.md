@@ -100,9 +100,9 @@ docker restart atlas
 echo -e '[INFO]\thttp://127.0.0.1:21000'
 ```
 
-| Login | Password |
-| --- | --- |
-| `admin` | `admin` |
+| Login   | Password |
+| ------- | -------- |
+| `admin` | `admin`  |
 
 ### Remove
 

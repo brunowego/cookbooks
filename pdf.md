@@ -4,6 +4,10 @@
 https://github.com/jonaslejon/malicious-pdf
 -->
 
+## Tools
+
+- [Adobe Acrobat Reader](/adobe/acrobat-reader.md)
+
 ## Tips
 
 ### Git Attributes
@@ -17,7 +21,7 @@ EOF
 ### JPEG to PDF
 
 ```sh
-convert [filename].jpg -auto-orient [filename].pdf
+convert <filename>.jpg -auto-orient <filename>.pdf
 ```
 
 ### Visual Studio Code

@@ -80,7 +80,7 @@ yamllint ./
 
 #### Visual Studio Code
 
-**Dependencies:** [yamllint CLI](#cli) [Linter](/linter.md#visual-studio-code) and [Prettier](/prettier.md#visual-studio-code)
+**Dependencies:** [yamllint CLI](#cli) [Prettier](/prettier.md#visual-studio-code)
 
 ```sh
 #

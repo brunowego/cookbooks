@@ -23,8 +23,8 @@
 
 ## Classes
 
-| Package | Description |
-| --- | --- |
-| `jackson.core` | Core part of Jackson that defines Streaming API |
-| `jackson.databind` | Converts JSON to and from POJO (Plain Old Java Object) |
+| Package              | Description                                              |
+| -------------------- | -------------------------------------------------------- |
+| `jackson.core`       | Core part of Jackson that defines Streaming API          |
+| `jackson.databind`   | Converts JSON to and from POJO (Plain Old Java Object)   |
 | `jackson.annotation` | Annotations which make it easy to parse JSON efficiently |

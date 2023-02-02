@@ -110,7 +110,7 @@ ruby --version | head -1
 
 #### Visual Studio Code
 
-**Dependencies:** [Linter](/linter.md#visual-studio-code) and [Prettier](/prettier.md#visual-studio-code)
+**Dependencies:** [Prettier](/prettier.md#visual-studio-code)
 
 ```sh
 #

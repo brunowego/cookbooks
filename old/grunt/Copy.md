@@ -5,7 +5,7 @@ npm install grunt-contrib-copy --save-dev
 ```
 
 ```js
-grunt.loadNpmTasks('grunt-contrib-copy');
+grunt.loadNpmTasks('grunt-contrib-copy')
 ```
 
 ```js

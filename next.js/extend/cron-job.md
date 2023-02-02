@@ -14,7 +14,7 @@ name: Cron - Downgrade Users
 
 on:
   schedule:
-    - cron: "0,15,30,45 * * * *" # https://crontab.guru/#0,15,30,45_*_*_*_*
+    - cron: '0,15,30,45 * * * *' # https://crontab.guru/#0,15,30,45_*_*_*_*
 
 jobs:
   cron:
@@ -76,17 +76,24 @@ import prisma from '@/lib/prisma'
 import dayjs from 'dayjs'
 import { TRIAL_LIMIT_DAYS } from '@/constants'
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const apiKey = req.headers.authorization || req.query.apiKey
 
   if (process.env.API_SECRET_KEY !== apiKey) {
-    res.status(StatusCodes.UNAUTHORIZED).json({ message: ReasonPhrases.UNAUTHORIZED })
+    res
+      .status(StatusCodes.UNAUTHORIZED)
+      .json({ message: ReasonPhrases.UNAUTHORIZED })
 
     return
   }
 
   if (req.method !== 'POST') {
-    res.status(StatusCodes.METHOD_NOT_ALLOWED).json({ message: ReasonPhrases.METHOD_NOT_ALLOWED })
+    res
+      .status(StatusCodes.METHOD_NOT_ALLOWED)
+      .json({ message: ReasonPhrases.METHOD_NOT_ALLOWED })
 
     return
   }

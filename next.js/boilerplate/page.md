@@ -8,17 +8,11 @@ import Head from 'next/head'
 export default function Home() {
   return (
     <>
-      <Head>
-        {/* ... */}
-      </Head>
+      <Head>{/* ... */}</Head>
 
-      <main>
-        {/* ... */}
-      </main>
+      <main>{/* ... */}</main>
 
-      <footer>
-        {/* ... */}
-      </footer>
+      <footer>{/* ... */}</footer>
     </>
   )
 }

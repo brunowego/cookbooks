@@ -1,9 +1,9 @@
 ---
 name: Feature request
 about: Suggest a feature or idea
-title: ""
+title: ''
 labels: feature
-assignees: ""
+assignees: ''
 ---
 
 ### Is your proposal related to a problem?

@@ -50,6 +50,6 @@ sudo ln -s /opt/ApacheDirectoryStudio/ApacheDirectoryStudio /usr/local/bin/Apach
 1. Type "Search Name"
 2. Select "Connection"
 3. Browse "Search Base"
-4. Filter "(uid=*)"
+4. Filter "(uid=\*)"
 5. Check "Scope -> Subtree"
 6. Apply and Close

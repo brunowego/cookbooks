@@ -3,6 +3,8 @@
 <!--
 https://blog.sentry.io/2018/07/17/source-code-fetching
 
+https://www.figma.com/file/NFOla85HaxGxbg6O1AdSWw/Color-System?t=XmKOcZHKw09kUquB-0
+
 - operations
 - desktop
 - web-frontend
@@ -17,6 +19,7 @@ https://blog.sentry.io/2018/07/17/source-code-fetching
 - Develop
   - [Troubleshooting](https://develop.sentry.dev/self-hosted/troubleshooting/)
   - [Environment](https://develop.sentry.dev/environment/)
+  - [Storybook](https://storybook.sentry.dev)
 
 ## CLI
 
@@ -122,8 +125,11 @@ helm repo update
 
 ```sh
 #
-kubectl create ns sentry-system
+kubectl create ns sentry
 # kubectl create ns tracking
+
+#
+kubens sentry
 
 #
 helm search repo -l sentry/sentry
@@ -134,21 +140,54 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install sentry sentry/sentry \
-  --namespace sentry-system \
   --version 17.8.0 \
   -f <(cat << EOF
 user:
-  email: admin@domain.tld
-  password: Pa\$\$w0rd!
+  create: false
+
+sentry:
+  worker:
+    replicas: 1
+
+nginx:
+  enabled: false
+
+hooks:
+  activeDeadlineSeconds: 1200
 
 ingress:
   enabled: true
+  ingressClassName: nginx
   hostname: sentry.${DOMAIN}
+
+clickhouse:
+  clickhouse:
+    replicas: 1
+
+zookeeper:
+  replicaCount: 1
+
+kafka:
+  replicaCount: 1
+
+redis:
+  replica:
+    replicaCount: 1
+
+rabbitmq:
+  replicaCount: 1
 EOF
 ) \
   --timeout 15m \
   --wait
 ```
+
+<!--
+kubectl port-forward \
+  --address 0.0.0.0 \
+  svc/sentry-web \
+  9000:9000
+-->
 
 ### Prometheus Stack
 
@@ -162,7 +201,6 @@ kubectl get prometheus \
 
 #
 helm upgrade sentry sentry/sentry \
-  --namespace sentry-system \
   -f <(yq m <(cat << EOF
 metrics:
   enabled: true
@@ -171,14 +209,13 @@ metrics:
     additionalLabels:
       release: prometheus-stack
 EOF
-) <(helm get values sentry --namespace sentry-system))
+) <(helm get values sentry))
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/sentry-web \
-  -n sentry-system
+kubectl rollout status deploy/sentry-web
 ```
 
 ### Logs
@@ -186,17 +223,22 @@ kubectl rollout status deploy/sentry-web \
 ```sh
 kubectl logs \
   -l 'app=sentry,role=web' \
-  -n sentry-system \
   -f
 
 kubectl logs \
   -l 'app=sentry,role=worker' \
-  -n sentry-system \
   -f
 
 kubectl logs \
   -l 'app=sentry,role=cron' \
-  -n sentry-system \
+  -f
+
+kubectl logs \
+  -l 'app=sentry,role=snuba-api' \
+  -f
+
+kubectl logs \
+  -l 'app.kubernetes.io/component=kafka' \
   -f
 ```
 
@@ -205,6 +247,21 @@ kubectl logs \
 ```sh
 #
 echo -e "[INFO]\thttp://sentry.${DOMAIN}"
+```
+
+### Tips
+
+#### Create User
+
+```sh
+kubectl exec -it \
+  $(kubectl get pod -l 'release=sentry,role=web' -o jsonpath='{.items[0].metadata.name}') \
+  -- \
+    sentry createuser \
+      --email='bruno.batista@domain.tld' \
+      --password='Pa$$w0rd!' \
+      --no-input \
+      --superuser
 ```
 
 ### Issues
@@ -258,23 +315,19 @@ kubectl exec -it sentry-kafka-0 -- /bin/bash
 ```sh
 #
 kubectl scale deployment sentry-snuba-consumer \
-  --replicas 0 \
-  -n sentry
+  --replicas 0
 
 #
 kubectl scale deployment sentry-ingest-consumer \
-  --replicas 0 \
-  -n sentry
+  --replicas 0
 
 #
 kubectl scale deployment sentry-sessions-consumer \
-  --replicas 0 \
-  -n sentry
+  --replicas 0
 
 #
 kubectl scale deployment sentry-snuba-outcomes-consumer \
-  --replicas 0 \
-  -n sentry
+  --replicas 0
 ```
 
 ##### Snuba Post Processor
@@ -394,10 +447,9 @@ kubectl delete pod sentry-sentry-redis-slave-0 \
 ### Delete
 
 ```sh
-helm uninstall sentry \
-  -n sentry-system
+helm uninstall sentry
 
-kubectl delete ns sentry-system \
+kubectl delete ns sentry \
   --grace-period=0 \
   --force
 ```

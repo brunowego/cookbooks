@@ -93,5 +93,5 @@ import { Meta } from '@storybook/addon-docs'
 
 # Web Component Library
 
-This library provides a foundation for UI development in our [Platform](https://github.com/london-bridge/platform). It implements a set of solid UI components that are composable, performant, accessible and well-tested, while also satisfying the UX and UI design requirements of the London Bridge Design System.
+This library provides a foundation for UI development in our [Platform](https://github.com/<owner>/platform). It implements a set of solid UI components that are composable, performant, accessible and well-tested, while also satisfying the UX and UI design requirements of the ACME Design System.
 ```

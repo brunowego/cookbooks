@@ -17,7 +17,6 @@ yarn add hamburger-react
 ## Configuration
 
 ```tsx
-import { Cross as Hamburger } from 'hamburger-react';
-
-<Hamburger size={20} toggled={isMenuOpen} />
+import { Cross as Hamburger } from 'hamburger-react'
+;<Hamburger size={20} toggled={isMenuOpen} />
 ```

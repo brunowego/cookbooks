@@ -26,19 +26,19 @@ pnpm create next-app -h
 npx create-next-app@latest \
   --ts \
   --use-npm \
-  [app-name] && \
+  <app-name> && \
     "$_"
 
 # Using Yarn
 yarn create next-app \
   --ts \
-  [app-name] && \
+  <app-name> && \
     "$_"
 
 # Using pnpm
 pnpm create next-app \
   --ts \
-  [app-name] && \
+  <app-name> && \
     "$_"
 ```
 
@@ -50,14 +50,14 @@ npx create-next-app@latest \
   --ts \
   --use-npm \
   -e with-tailwindcss \
-  [app-name] && \
+  <app-name> && \
     "$_"
 
 # Using Yarn
 yarn create next-app \
   --ts \
   -e with-tailwindcss \
-  [app-name] && \
+  <app-name> && \
     "$_"
 ```
 
@@ -69,9 +69,6 @@ mkdir -p ./src/{assets/images,config,constants,contexts,components,hooks,layouts
 
 #
 mkdir -p ./test/{e2e,unit}
-
-#
-mv ./{pages,styles} ./src
 
 # Git Ignore
 cat << EOF >> ./.gitignore

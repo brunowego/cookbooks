@@ -2,10 +2,10 @@
 
 ## Ports
 
-| Service | Port |
-| --- | --- |
-| KDC | 88 |
-| Admin Server | 749 |
+| Service      | Port |
+| ------------ | ---- |
+| KDC          | 88   |
+| Admin Server | 749  |
 
 ## CLI
 

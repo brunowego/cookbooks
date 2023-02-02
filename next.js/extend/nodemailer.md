@@ -23,6 +23,7 @@ yarn add @types/nodemailer --dev
 **Refer:** `./src/lib/mailer.ts`
 
 ```ts
+
 ```
 
 <!--

@@ -37,11 +37,11 @@
    - Check Knife offset:
    - Set offset
 
-| Degree | Offset | Color |
-| --- | --- | --- |
-| 30° | 0.025cm | Yellow |
-| 45° | 0.035cm | Red |
-| 60° | 0.050cm | Blue |
+| Degree | Offset  | Color  |
+| ------ | ------- | ------ |
+| 30°    | 0.025cm | Yellow |
+| 45°    | 0.035cm | Red    |
+| 60°    | 0.050cm | Blue   |
 
 ### Tool Offset
 

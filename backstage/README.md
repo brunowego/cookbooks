@@ -43,12 +43,12 @@ npx @backstage/create-app \
   --skip-install
 ```
 
-### Usage
+<!-- ### Usage
 
 ```sh
-#
+# U
 yarn backstage-cli create
-```
+``` -->
 
 ## Helm
 

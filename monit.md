@@ -26,9 +26,9 @@ docker run -d \
 echo -e '[INFO]\thttp://127.0.0.1:2812'
 ```
 
-| Login | Password |
-| --- | --- |
-| `admin` | `monit` |
+| Login   | Password |
+| ------- | -------- |
+| `admin` | `monit`  |
 
 ### Remove
 
@@ -74,6 +74,6 @@ monit -I -c ~/.monitrc
 echo -e '[INFO]\thttp://localhost:2812'
 ```
 
-| Login | Password |
-| --- | --- |
-| `admin` | `monit` |
+| Login   | Password |
+| ------- | -------- |
+| `admin` | `monit`  |

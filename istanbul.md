@@ -24,7 +24,7 @@ echo '/coverage-cypress' >> ./.gitignore
 ```json
 {
   // "all": true,
-  "report-dir": "./coverage-cypress",
+  "report-dir": "./coverage-cypress"
   // "check-coverage": true,
   // "branches": 0,
   // "lines": 5,

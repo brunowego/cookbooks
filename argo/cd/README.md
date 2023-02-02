@@ -14,11 +14,13 @@ https://www.udemy.com/course/hands-on-guide-to-argo-workflows-on-kubernetes/
 - [Code Repository](https://github.com/argoproj/argo-cd)
 - [Main Website](https://argoproj.github.io/)
 - [Terraform Provider for ArgoCD](https://github.com/oboukili/terraform-provider-argocd)
+- Docs
+  - [Git Webhook Configuration](https://argo-cd.readthedocs.io/en/stable/operator-manual/webhook/)
+  - [SSO](https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/#sso)
+  - [Status Badge](https://argo-cd.readthedocs.io/en/stable/user-guide/status-badge/)
 
 ## Guides
 
-- [Status Badge](https://argoproj.github.io/argo-cd/user-guide/status-badge/)
-- [Git Webhook Configuration](https://argoproj.github.io/argo-cd/operator-manual/webhook/)
 - [Ingress Configuration](https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/ingress.md)
 
 ## Custom Resource (CR)
@@ -75,10 +77,6 @@ kubectl delete ns argo
 
 - [Parameters](https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd#general-parameters)
 
-### Dependencies
-
-- [NGINX Ingress](/nginx-ingress.md)
-
 ### Repository
 
 ```sh
@@ -90,8 +88,11 @@ helm repo update
 
 ```sh
 #
-kubectl create ns argocd-system
-# kubectl create ns pipeline
+kubectl create ns argocd
+# kubectl create ns gitops
+
+#
+kubens argocd
 
 #
 helm search repo -l argo/argo-cd
@@ -102,48 +103,33 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install argo-cd argo/argo-cd \
-  --namespace argocd-system \
-  --version 5.14.1 \
+  --version 5.19.11 \
   -f <(cat << EOF
-server:
-  extraArgs:
-  - --insecure
+configs:
+  params:
+    server.insecure: true
 
+server:
   ingress:
     enabled: true
     ingressClassName: nginx
     hosts:
-    - argocd.${DOMAIN}
+      - argocd.${DOMAIN}
 EOF
 )
 ```
 
-<!-- ####
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-```sh
-#
-kubectl create secret tls argo-cd.tls-secret \
-  --cert='/etc/ssl/certs/argo-cd/root-ca.crt' \
-  --key='/etc/ssl/private/argo-cd/root-ca.key' \
-  -n argocd-system
-
-  --set ingress.annotations."kubernetes\.io/ingress\.class"=nginx \
-  --set-string ingress.annotations."nginx\.ingress\.kubernetes\.io/force-ssl-redirect"=true \
-  --set ingress.annotations."nginx\.ingress\.kubernetes\.io/backend-protocol"='HTTPS' \
-
-#
-kubectl patch ingress argocd-server \
-  -p '{"spec":{"tls":[{"hosts":["argocd.${DOMAIN}"],"secretName":"argo-cd.tls-secret"}]}}' \
-  -n argocd-system
-``` -->
+<!--
+kubectl port-forward \
+  --address 0.0.0.0 \
+  svc/argo-cd-argocd-server \
+  8080:80
+-->
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/argo-cd-argocd-server \
-  -n argocd-system
+kubectl rollout status deploy/argo-cd-argocd-server
 ```
 
 ### Logs
@@ -151,7 +137,6 @@ kubectl rollout status deploy/argo-cd-argocd-server \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/instance=argo-cd' \
-  -n argocd-system \
   --max-log-requests 7 \
   -f
 ```
@@ -163,26 +148,66 @@ username: admin
 -->
 
 ```sh
+#
 kubectl get secret argocd-initial-admin-secret \
-  -o jsonpath='{.data.password}' \
-  -n argocd-system | \
+  -o jsonpath='{.data.password}' | \
     base64 -d; echo
 ```
+
+### Issues
+
+#### Too Many Redirects
+
+<!--
+https://pet2cattle.com/2022/03/argocd-redirect-loop
+-->
+
+```log
+curl: (47) Maximum (50) redirects followed
+```
+
+TODO
+
+```sh
+#
+curl -I argocd.domain.tld
+```
+
+```yml
+server:
+  ingress:
+    # ...
+
+    annotations:
+      nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+
+    https: true
+```
+
+#### TBD
+
+```log
+time="2023-01-28T19:16:15Z" level=info msg="finished unary call with code Unauthenticated" error="rpc error: code = Unauthenticated desc = no session information" grpc.code=Unauthenticated grpc.method=List grpc.service=cluster.ClusterService grpc.start_time="2023-01-28T19:16:15Z" grpc.time_ms=7.078 span.kind=server system=grpc
+time="2023-01-28T19:16:15Z" level=info msg="finished unary call with code Unauthenticated" error="rpc error: code = Unauthenticated desc = no session information" grpc.code=Unauthenticated grpc.method=List grpc.service=application.ApplicationService grpc.start_time="2023-01-28T19:16:15Z" grpc.time_ms=7.344 span.kind=server system=grpc
+```
+
+TODO
 
 ### Delete
 
 ```sh
-helm uninstall argo-cd \
-  -n argocd-system
+helm uninstall argo-cd
 
 kubectl delete ns argocd \
   --grace-period=0 \
   --force
+```
 
+<!--
 kubectl get crd -o json | \
   jq -r '.items[] | select(.spec.group | contains("argoproj.io")) | .metadata.name' | \
     xargs -n 1 kubectl delete crd
-```
+-->
 
 ## CLI
 
@@ -239,13 +264,15 @@ argocd login \
 
 #
 argocd context
-argocd context 127.0.0.1:8443
-argocd context [domain]
+argocd context <domain>
 ```
 
 #### Account
 
 ```sh
+#
+argocd account list
+
 #
 argocd account get-user-info
 
@@ -253,12 +280,12 @@ argocd account get-user-info
 argocd account update-password
 
 #
-argocd account list
-
-#
 argocd account can-i sync applications '*'
 argocd account can-i update projects 'default'
 argocd account can-i create clusters '*'
+
+#
+argocd account generate-token
 ```
 
 #### Cluster
@@ -299,47 +326,50 @@ argocd repo list
 argocd app list
 
 #
-kubectl create ns [namespace]
+kubectl create ns <namespace>
 
-# Using
-
-## Kustomize
+# Using Kustomize
 argocd app create \
-  '[app-name]' \
-  --repo '[git-repo]' \
+  '<app-name>' \
+  --repo '<git-repo>' \
   --path ./k8s/overlays/local \
-  --dest-namespace '[namespace]' \
+  --dest-namespace '<namespace>' \
   --dest-server 'https://kubernetes.default.svc'
 
-argocd app set '[app-name]' \
+argocd app set '<app-name>' \
   --kustomize-image "$DOCKER_REGISTRY/$DOCKER_REPOSITORY:$DOCKER_TAG"
 
-## Or, Helm
-argocd app create '[app-name]' \
-  --repo '[git-repo]' \
+# Using Helm
+argocd app create '<app-name>' \
+  --repo '<git-repo>' \
   --path helm-guestbook \
-  --dest-namespace '[namespace]' \
+  --dest-namespace '<namespace>' \
   --dest-server 'https://kubernetes.default.svc'
   --helm-set replicaCount=2
 
-argocd app set '[app-name]' \
+argocd app set '<app-name>' \
   -p "$DOCKER_REGISTRY/$DOCKER_REPOSITORY=$DOCKER_REGISTRY/$DOCKER_REPOSITORY:$DOCKER_TAG"
 
 #
-argocd app sync '[app-name]' \
+argocd app sync '<app-name>' \
   --prune
 
 #
-argocd app wait '[app-name]'
+argocd app wait '<app-name>'
 
 #
-argocd app history '[app-name]'
+argocd app history '<app-name>'
 
 #
-argocd app delete '[app-name]'
+argocd app delete '<app-name>'
 ```
 
 ### Tips
+
+#### GnuPG Public Key
+
+1. Settings
+2. GnuPG keys -> ADD GNUPG KEY
 
 #### Enable Status Badge
 
@@ -353,6 +383,14 @@ kubectl patch configmap argocd-cm \
 > More details about Status Badge [here](https://argoproj.github.io/argo-cd/user-guide/status-badge/).
 
 ### Issues
+
+#### TBD
+
+```log
+Unable to create application: application spec for storybook is invalid: InvalidSpecError: application destination {https://kubernetes.default.svc platform} is not permitted in project 'storybook'
+```
+
+TODO
 
 #### Known Hosts Key Mismatch
 

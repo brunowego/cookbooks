@@ -55,11 +55,11 @@
 
 ### Pattern
 
-| Name | Description |
-| --- | --- |
-| Given | Specify prerequisites |
-| When | Describe the action to take |
-| Then | Describe the expected result |
+| Name  | Description                  |
+| ----- | ---------------------------- |
+| Given | Specify prerequisites        |
+| When  | Describe the action to take  |
+| Then  | Describe the expected result |
 
 ## DSL
 

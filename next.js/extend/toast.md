@@ -19,7 +19,10 @@ const style = {
   boxShadow: 'none',
 }
 
-export default function showToast(message: string, variant: 'success' | 'warning' | 'error') {
+export default function showToast(
+  message: string,
+  variant: 'success' | 'warning' | 'error'
+) {
   switch (variant) {
     case 'success':
       toast.success(message, {
@@ -79,7 +82,7 @@ export default App
 import showToast from '@/lib/notification'
 
 // ...
-<button
+;<button
   className="bg-green-600 py-2 px-5 text-white"
   onClick={() => {
     showToast('Successfully toasted!', 'success')

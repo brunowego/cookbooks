@@ -7,13 +7,13 @@ The required version to make it work is 14.2.
 1. Close Photoshop CC
 2. Create an empty text file and name it "generator.json"
 3. Copy and paste inside this line of code:
-    ```json
-      {
-        "generator-assets":  {
-        "svg-enabled": true
-        }
-      }
-    ```
+   ```json
+   {
+     "generator-assets": {
+       "svg-enabled": true
+     }
+   }
+   ```
 4. Save this file generator.json in your user home folder.
 5. Open Photoshop CC and a PSD file.
 6. Activate Generator (File > Generate > Image assets).

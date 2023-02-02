@@ -17,9 +17,7 @@ autoprefixer
 ```json
 {
   // ...
-  "browserslist": [
-    "defaults"
-  ]
+  "browserslist": ["defaults"]
 }
 ```
 

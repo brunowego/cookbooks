@@ -14,6 +14,7 @@ https://github.com/wfp/designsystem
 
 - [Code Repository](https://github.com/storybookjs/storybook)
 - [Main Website](https://storybook.js.org)
+- [Projects that use Storybook](https://storybook.js.org/showcase/projects)
 - Docs
   - [Intro to Storybook](https://storybook.js.org/tutorials/intro-to-storybook/)
 - Blog

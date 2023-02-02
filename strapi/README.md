@@ -213,8 +213,7 @@ FROM docker.io/strapi/base:14-alpine
 
 WORKDIR /usr/src/app
 
-COPY ./package.json ./
-COPY ./yarn.lock ./
+COPY ./package.json ./yarn.lock ./
 
 RUN yarn install && \
       yarn cache clean

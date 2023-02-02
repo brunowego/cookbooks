@@ -90,29 +90,29 @@ nohup kubectl proxy \
 kill -9 "$(lsof -nPi tcp:8001 | grep LISTEN | awk '{print $2}')"
 
 # Copy
-kubectl cp ./path/to/folder/or/file [namespace]/[podname]:/path/to/where/save
+kubectl cp ./path/to/folder/or/file <namespace>/[podname]:/path/to/where/save
 
 #
 kubectl get pod -A
-kubectl get pod -n [namespace]
+kubectl get pod -n <namespace>
 
 # Verbosity
 kubectl get pods -v 6
 
 #
-kubectl describe pod -l 'app=[appname]' -n [namespace]
+kubectl describe pod -l 'app=[appname]' -n <namespace>
 
 #
 kubectl logs \
   -l 'app=[appname]' \
   -c [container] \
-  -n [namespace] \
+  -n <namespace> \
   -f
 
 kubectl
   --context '[cluster-name]' \
   logs \
-    -n '[namespace]' \
+    -n '<namespace>' \
     '[pod-name]'
     -f
 ```
@@ -129,29 +129,29 @@ kubectl get cm \
 
 ```sh
 # List
-kubectl get secrets -n [namespace]
+kubectl get secrets -n <namespace>
 
 # Create
 # TODO
 
 # Describe
 kubectl describe secret [secret-name] \
-  -n [namespace]
+  -n <namespace>
 
 # Get Data
 kubectl get secret [secret-name] \
   -o jsonpath='{.data}' \
-  -n [namespace] | \
+  -n <namespace> | \
     jq .
 
 kubectl get secret [secret-name] \
   --template={{.data.bar}} \
-  -n [namespace] | \
+  -n <namespace> | \
     base64 -d
 
 # Delete
 kubectl delete secret [secret-name] \
-  -n [namespace]
+  -n <namespace>
 ```
 
 ### Tips
@@ -212,7 +212,7 @@ kubectl get pod -A -o yaml | \
 
 <!--
 cat << EOF | kubectl apply \
-  -n [namespace] \
+  -n <namespace> \
   -f -
 apiVersion: v1
 kind: Secret
@@ -250,15 +250,15 @@ kubectl get nodes -o wide | grep [ip-address]
 ```sh
 #
 kubectl rollout restart deploy \
-  -n [namespace]
+  -n <namespace>
 
 #
 kubectl rollout restart stateful \
-  -n [namespace]
+  -n <namespace>
 
 #
 kubectl rollout restart daemonset \
-  -n [namespace]
+  -n <namespace>
 ```
 
 #### Get Cluster Server URL
@@ -326,7 +326,7 @@ kubectl get deployments | \
 <!-- ####
 
 ```sh
-kubectl patch cronjobs [name] \
+kubectl patch cronjobs <name> \
   -p '{"spec":{"suspend":true}}'
 ``` -->
 
@@ -362,8 +362,8 @@ curl \
 
 ```sh
 kubectl exec -it \
-  [pod] \
-  -c [name] \
+  <pod> \
+  -c <name> \
   -- /bin/bash
 ``` -->
 
@@ -373,14 +373,14 @@ kubectl exec -it \
 #
 kubectl rollout restart \
   deployment \
-  -n [namespace] \
-  [name]
+  -n <namespace> \
+  <name>
 
 #
 kubectl scale deployment \
   --replicas 0 \
-  $(kubectl get deployment -l 'app=[appname]' -o jsonpath='{.items[0].metadata.name}' -n [namespace]) \
-  -n [namespace]
+  $(kubectl get deployment -l 'app=<appname>' -o jsonpath='{.items[0].metadata.name}' -n <namespace>) \
+  -n <namespace>
 ```
 
 #### Config
@@ -389,7 +389,7 @@ kubectl scale deployment \
 #
 kubectl config set-context \
   --current \
-  --namespace [namespace]
+  --namespace <namespace>
 ```
 
 #### Scale
@@ -398,14 +398,14 @@ kubectl config set-context \
 # Deployment
 kubectl scale \
   --replicas=2 \
-  -n '[namespace]' \
-  deploy/[name]
+  -n '<namespace>' \
+  deploy/<name>
 
 # ReplicaSet
 kubectl scale \
   --replicas=2 \
-  -n '[namespace]' \
-  rs/[name]
+  -n '<namespace>' \
+  rs/<name>
 ```
 
 #### Edit
@@ -413,32 +413,32 @@ kubectl scale \
 ```sh
 #
 kubectl get deploy \
-  -n '[namespace]'
+  -n '<namespace>'
 
 kubectl edit \
-  -n '[namespace]' \
-  deploy/[name]
+  -n '<namespace>' \
+  deploy/<name>
 
 #
 kubectl get hpa \
-  -n '[namespace]'
+  -n '<namespace>'
 
 kubectl edit  \
-  -n '[namespace]' \
-  hpa/[name]
+  -n '<namespace>' \
+  hpa/<name>
 ```
 
 <!-- ```sh
 kubectl exec -it \
-  $(kubectl get pod -l 'app=[appname]' -o jsonpath='{.items[0].metadata.name}' -n [namespace]) \
-  -n [namespace] \
+  $(kubectl get pod -l 'app=<appname>' -o jsonpath='{.items[0].metadata.name}' -n <namespace>) \
+  -n <namespace> \
   -- /bin/sh -c 'kill 1'
 ``` -->
 
 <!-- ####
 
 ```sh
-kubectl get pod [name] -n [namespace] -o yaml | \
+kubectl get pod <name> -n <namespace> -o yaml | \
   sed 's/restartPolicy: Always/restartPolicy: Never/' | \
     kubectl apply -f -
 ``` -->
@@ -450,7 +450,7 @@ kubectl get pod [name] -n [namespace] -o yaml | \
 kubectl proxy --port=8080 &
 
 #
-export NS=[namespace]
+export NS=<namespace>
 
 #
 kubectl create ns "$NS" --dry-run -o json > /tmp/ns.json
@@ -489,10 +489,10 @@ EOF
 #### Force Delete
 
 ```sh
-kubectl delete pod [name] \
+kubectl delete pod <name> \
   --grace-period=0 \
   --force \
-  -n [namespace]
+  -n <namespace>
 ```
 
 #### Terminating
@@ -501,13 +501,13 @@ kubectl delete pod [name] \
 
 ```sh
 #
-kubectl patch pvc [name] \
+kubectl patch pvc <name> \
   -p '{"metadata":{"finalizers":null}}' \
-  -n [namespace]
+  -n <namespace>
 
 #
-kubectl delete pvc [name] \
-  -n [namespace] \
+kubectl delete pvc <name> \
+  -n <namespace> \
   --grace-period 0 \
   --force
 ```
@@ -565,10 +565,10 @@ for ns in `kubectl get ns --field-selector status.phase=Terminating -o name | cu
 ```
 
 <!--
-kubectl get namespace "[namespace]" -o json | \
+kubectl get namespace "<namespace>" -o json | \
   tr -d "\n" | \
     sed "s/\"finalizers\": \[[^]]\+\]/\"finalizers\": []/" | \
-      kubectl replace --raw /api/v1/namespaces/[namespace]/finalize -f -
+      kubectl replace --raw /api/v1/namespaces/<namespace>/finalize -f -
 -->
 
 <!-- ###
@@ -609,9 +609,9 @@ kubectl get cm coredns \
 #### Certificate from Namespace
 
 ```sh
-kubectl get secret $(kubectl get secrets -n [namespace] | grep 'default-token' | cut -d ' ' -f 1) \
+kubectl get secret $(kubectl get secrets -n <namespace> | grep 'default-token' | cut -d ' ' -f 1) \
   -o jsonpath='{.data.ca\.crt}' \
-  -n [namespace] | \
+  -n <namespace> | \
     base64 -d > ./ca.crt
 ```
 
@@ -659,7 +659,7 @@ kubectl config view
 
 ```sh
 kubectl rollout restart deployment \
-  -n [namespace] \
+  -n <namespace> \
   [...services]
 ``` -->
 
@@ -813,15 +813,15 @@ kubectl config view
 ~/.kube/config
 
 #
-kubectx [vendor]-[env]
+kubectx <context-name>
 
 #
-kubectl get pod -n [namespace]
+kubectl get pod -n <namespace>
 
 #
 kubectl exec -it \
-  $(kubectl get pod -l 'app=[app-name]' -o jsonpath='{.items[0].metadata.name}' -n [namespace]) \
-  -n [namespace] \
+  $(kubectl get pod -l 'app=[app-name]' -o jsonpath='{.items[0].metadata.name}' -n <namespace>) \
+  -n <namespace> \
   -- /bin/sh
 ```
 

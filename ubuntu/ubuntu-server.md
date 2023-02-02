@@ -18,15 +18,15 @@ echo 'f8e3086f3cea0fb3fefb29937ab5ed9d19e767079633960ccb50e76153effc98 *ubuntu-2
 
 ### Partition
 
-| Type |    Mount     |  Size  |
-| ---- | ------------ | ------ |
-| efi  |              | 512 MB |
-| swap |              | 30 GB  |
-| ext4 | `/`          | 20 GB  |
-| ext4 | `/boot`      | 1 GB   |
-| ext4 | `/home`      | 20 GB  |
-| ext4 | `/srv`       | 20 GB  |
-| ext4 | `/usr`       | 30 GB  |
-| ext4 | `/var`       | 20 GB  |
-| ext4 | `/var/lib`   | 20 GB  |
-| ext4 | `/opt`       | 25 GB  |
+| Type | Mount      | Size   |
+| ---- | ---------- | ------ |
+| efi  |            | 512 MB |
+| swap |            | 30 GB  |
+| ext4 | `/`        | 20 GB  |
+| ext4 | `/boot`    | 1 GB   |
+| ext4 | `/home`    | 20 GB  |
+| ext4 | `/srv`     | 20 GB  |
+| ext4 | `/usr`     | 30 GB  |
+| ext4 | `/var`     | 20 GB  |
+| ext4 | `/var/lib` | 20 GB  |
+| ext4 | `/opt`     | 25 GB  |

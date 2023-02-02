@@ -40,6 +40,12 @@ docker run -it --rm \
   docker.io/library/node:13.5.0-alpine /bin/sh
 ```
 
+## Dockerfile
+
+```Dockerfile
+FROM docker.io/library/node:18.12-alpine
+```
+
 ## CLI
 
 ### Installation

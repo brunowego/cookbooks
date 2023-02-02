@@ -14,7 +14,7 @@ pip3 install -U django-environ
 echo 'django-environ==0.4.5' >> ./requirements.txt
 ```
 
-***settings.py***
+**_settings.py_**
 
 ```py
 from environ import Env, Path

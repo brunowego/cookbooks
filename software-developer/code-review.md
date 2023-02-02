@@ -25,8 +25,8 @@
 
 ## Personas
 
-- A *Reviewee* is the subject of your review, or the person(s) who the questions are about.
-- A *Reviewer* is the person completing the review, or the person(s) answering the questions.
+- A _Reviewee_ is the subject of your review, or the person(s) who the questions are about.
+- A _Reviewer_ is the person completing the review, or the person(s) answering the questions.
 
 ## Downsides of Big PRs
 

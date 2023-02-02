@@ -31,7 +31,7 @@ yarn global add preact-cli
 
 ```sh
 #
-npx preact-cli create typescript [app-name]
+npx preact-cli create typescript <app-name>
 ```
 
 ### Issues

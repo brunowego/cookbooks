@@ -27,11 +27,11 @@
 
 #### Laminas
 
-| Degree | Description |
-| --- | --- |
-| 30° | insofilme, tecidos, powerfilme |
-| 45° | vinil adesivo, papel até 300g, materiais gramatura mediana |
-| 60° | material grosso, eva, feltro, couro, papel parana |
+| Degree | Description                                                |
+| ------ | ---------------------------------------------------------- |
+| 30°    | insofilme, tecidos, powerfilme                             |
+| 45°    | vinil adesivo, papel até 300g, materiais gramatura mediana |
+| 60°    | material grosso, eva, feltro, couro, papel parana          |
 
 ## Flexi Foison PRO Edition 19
 
@@ -39,31 +39,31 @@
 
 **Kraft Paper 300g/m2**
 
-| Type | Weight | Speed | Weight |
-| --- | --- | --- | --- |
-| Cut | 4 | 400 | 75 |
-| Crease | Thin Tip | 400 | 180 |
+| Type   | Weight   | Speed | Weight |
+| ------ | -------- | ----- | ------ |
+| Cut    | 4        | 400   | 75     |
+| Crease | Thin Tip | 400   | 180    |
 
 **Relux Paper 180g/m2**
 
-| Type | Weight | Speed | Weight |
-| --- | --- | --- | --- |
-| Cut | 2 | 400 | 100 |
-| Crease | Thin Tip | 400 | 180 |
+| Type   | Weight   | Speed | Weight |
+| ------ | -------- | ----- | ------ |
+| Cut    | 2        | 400   | 100    |
+| Crease | Thin Tip | 400   | 180    |
 
 **Perolado Paper 120g/m2**
 
-| Type | Weight | Speed | Weight |
-| --- | --- | --- | --- |
-| Cut | 2 | 400 | 100 |
-| Crease | Thin Tip | 400 | 180 |
+| Type   | Weight   | Speed | Weight |
+| ------ | -------- | ----- | ------ |
+| Cut    | 2        | 400   | 100    |
+| Crease | Thin Tip | 400   | 180    |
 
 **Color Plus Paper 180g/m2**
 
-| Type | Weight | Speed | Weight |
-| --- | --- | --- | --- |
-| Cut | 2 | 400 | 100 |
-| Crease | Thin Tip | 400 | 180/220 |
+| Type   | Weight   | Speed | Weight  |
+| ------ | -------- | ----- | ------- |
+| Cut    | 2        | 400   | 100     |
+| Crease | Thin Tip | 400   | 180/220 |
 
 <!-- EVA
 Papel cartão

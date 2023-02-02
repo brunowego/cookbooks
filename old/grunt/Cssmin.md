@@ -5,7 +5,7 @@ npm install grunt-contrib-cssmin --save-dev
 ```
 
 ```js
-grunt.loadNpmTasks('grunt-contrib-cssmin');
+grunt.loadNpmTasks('grunt-contrib-cssmin')
 ```
 
 ```js

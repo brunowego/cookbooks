@@ -51,6 +51,10 @@ const commitlintRC = {
 module.exports = commitlintRC
 ```
 
+```sh
+echo '!/.commitlintrc.cjs' >> ./.eslintignore
+```
+
 ### Extend
 
 #### With Trunk
@@ -58,6 +62,9 @@ module.exports = commitlintRC
 ```sh
 #
 trunk actions enable commitlint
+
+#
+trunk actions run commitlint
 ```
 
 #### With Husky

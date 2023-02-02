@@ -75,8 +75,8 @@ jest-image-snapshot
 - Identify Cost of Automation
 
 | Scenario | Value | Risk | Cost | Total |
-| --- | --- | --- | --- | --- |
-| Name | X | X | X | X |
+| -------- | ----- | ---- | ---- | ----- |
+| Name     | X     | X    | X    | X     |
 
 **Range:** Consider use 1 to 5.
 
@@ -97,8 +97,8 @@ TODO -->
 
 ### Mocking
 
-| Language | Frameworks |
-| --- | --- |
-| C# (.NET) | JustMock |
-| Java | EasyMock, jMock and Mockito |
-| Python | unittest.mock |
+| Language  | Frameworks                  |
+| --------- | --------------------------- |
+| C# (.NET) | JustMock                    |
+| Java      | EasyMock, jMock and Mockito |
+| Python    | unittest.mock               |

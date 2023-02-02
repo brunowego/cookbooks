@@ -20,7 +20,7 @@
    - Create GitHub App
 4. General tab / Private keys -> Generate a private key
 5. Install App tab / Install
-   - Repository access -> Only select repositories
+   - Repository access -> All repositories
    - Save
 
 ### References
@@ -56,6 +56,11 @@ kubectl create secret generic controller-manager \
   --from-file=github_app_private_key="$GITHUB_APP_PRIVATE_KEY"
 
 #
+kubectl get secret controller-manager \
+  -o json | \
+    jq '.data | map_values(@base64d)'
+
+#
 helm search repo -l actions-runner-controller/actions-runner-controller
 
 #
@@ -76,9 +81,23 @@ kubectl rollout status deployment/actions-runner-controller
 
 ```sh
 kubectl logs \
-  -l 'app.kubernetes.io/instance=actions-runner-controller'
+  -l 'app.kubernetes.io/instance=actions-runner-controller' \
   -f
 ```
+
+### Issues
+
+#### TBD
+
+```log
+2023-01-28T20:53:45Z    ERROR   runner  Failed to get new registration token    {"runner": "k8s-runners-7xfdj-bf9jx", "error": "failed to create registration token: POST https://api.github.com/orgs/<owner>/actions/runners/registration-token: 403 Resource not accessible by integration []"}
+```
+
+TODO
+
+<!--
+https://github.com/organizations/<owner>/settings/installations
+-->
 
 ### Delete
 

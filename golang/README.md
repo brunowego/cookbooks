@@ -262,13 +262,22 @@ antigen bundle golang
 
 ### Issues
 
-#### TBD
+#### Different Version of `GOROOT`
 
 ```log
-compile: version "go1.19.3" does not match go tool version "go1.18.8"
+compile: version "go1.19.4" does not match go tool version "go1.19.5"
 ```
 
-TODO
+```sh
+#
+echo "$GOROOT"
+
+#
+go version
+
+# Workaround
+brew uninstall --ignore-dependencies go
+```
 
 #### Read-only File System
 

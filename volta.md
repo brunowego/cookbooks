@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/volta-cli/volta)
-- [Main Website](https://github.com/volta-cli/volta)
+- [Main Website](https://volta.sh)
 
 ## CLI
 

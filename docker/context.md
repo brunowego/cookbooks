@@ -6,7 +6,7 @@
 
 ## Dependencies
 
-***Run on remote***
+**_Run on remote_**
 
 ```sh
 docker version
@@ -20,7 +20,7 @@ docker context --help
 
 ## Usage
 
-| Target Environment | Context Name |         API Endpoint          |
+| Target Environment | Context Name | API Endpoint                  |
 | ------------------ | ------------ | ----------------------------- |
 | Local Host         | `default`    | `unix:///var/run/docker.sock` |
 | Remote Host        | `remote`     | `ssh://user@remotemachine`    |

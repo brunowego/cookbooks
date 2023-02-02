@@ -16,6 +16,6 @@ module.exports = {
       css: './src/styles/tailwind.css',
       config: './tailwind.config.cjs',
     },
-  }
+  },
 }
 ```

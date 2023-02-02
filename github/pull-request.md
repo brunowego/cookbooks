@@ -1,5 +1,9 @@
 # GitHub Pull Request
 
+## Articles
+
+- [Avoiding LGTM PR Cultures](https://alisterbscott.com/2018/07/11/avoiding-lgtm-pr-cultures/)
+
 ## Template
 
 **Refer:** `./.github/PULL_REQUEST_TEMPLATE.md`

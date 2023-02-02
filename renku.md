@@ -76,14 +76,14 @@ helm test renku
 xdg-open "http://$(minikube ip)" || open "http://$(minikube ip)" || echo -e "[INFO]\thttp://$(minikube ip)"
 ```
 
-| Login | Password |
-| --- | --- |
-| demo | demo |
-| `admin` | `admin` |
+| Login   | Password |
+| ------- | -------- |
+| demo    | demo     |
+| `admin` | `admin`  |
 
-| Endpoint | Description |
-| --- | --- |
-| `/` | Renku web UI |
-| `/auth` | Keycloak, identity manager |
-| `/auth/admin/` | Keycloak admin console |
-| `/gitlab` | GitLab |
+| Endpoint       | Description                |
+| -------------- | -------------------------- |
+| `/`            | Renku web UI               |
+| `/auth`        | Keycloak, identity manager |
+| `/auth/admin/` | Keycloak admin console     |
+| `/gitlab`      | GitLab                     |

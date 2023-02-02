@@ -2,8 +2,8 @@
 
 ## Metrics
 
-| Type | Specification | Implementation | Implementation Query |
-| --- | --- | --- | --- |
+| Type    | Specification   | Implementation                               | Implementation Query                                                                                                          |
+| ------- | --------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | Latency | Requests <500ms | Load balancer metrics scraped via Prometheus | `load_balancer_response_time_buckets{le="0.5", host="api"}` / ignoring (le) (`load_balancer_response_time_count{host="api"}`) |
 
 ## Common SLI Definitions

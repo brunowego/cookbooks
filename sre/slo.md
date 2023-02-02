@@ -35,9 +35,9 @@ SLI + Threshold + Time window = SLO
 
 ## Metrics
 
-| SLI | Threshold | Time Window | SLO |
-| -- | -- | -- | -- |
-| API requests <500ms | 90% | 30 day (rolling) | 90% of requests to the API should take fewer than 500 milliseconds over a 30-day period |
+| SLI                 | Threshold | Time Window      | SLO                                                                                     |
+| ------------------- | --------- | ---------------- | --------------------------------------------------------------------------------------- |
+| API requests <500ms | 90%       | 30 day (rolling) | 90% of requests to the API should take fewer than 500 milliseconds over a 30-day period |
 
 ## API Metrics
 

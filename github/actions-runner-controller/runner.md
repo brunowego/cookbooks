@@ -25,6 +25,7 @@ spec:
   # organization: $GITHUB_OWNER
   repository: $GITHUB_OWNER/$GITHUB_REPO
   labels:
+    - self-hosted
     - my-custom-runner
   env: []
 EOF
@@ -51,10 +52,10 @@ metadata:
 spec:
   template:
     spec:
-      # organization: $GITHUB_OWNER
-      repository: $GITHUB_OWNER/$GITHUB_REPO
+      organization: $GITHUB_OWNER
+      # repository: $GITHUB_OWNER/$GITHUB_REPO
       labels:
-        - my-custom-runner
+        - self-hosted
       env: []
 EOF
 
@@ -64,10 +65,10 @@ kubectl logs \
   -l 'actions-runner-controller/inject-registration-token=true' \
   -f
 
-kubectl delete runner k8s-runners
+kubectl delete runnerdeployment k8s-runners
 ```
 
-<!-- ### Horizontal Runner Autoscaler
+### Horizontal Runner Autoscaler
 
 ```sh
 #
@@ -79,6 +80,7 @@ metadata:
   name: k8s-runners-autoscaler
 spec:
   scaleTargetRef:
+    kind: RunnerDeployment
     name: k8s-runners
   scaleDownDelaySecondsAfterScaleOut: 300
   minReplicas: 1
@@ -86,17 +88,17 @@ spec:
   metrics:
     - type: TotalNumberOfQueuedAndInProgressWorkflowRuns
       repositoryNames:
-        - $GITHUB_OWNER/$GITHUB_REPO
+        - $GITHUB_REPO
 EOF
 
-kubectl get k8s-runners-autoscaler
+kubectl get horizontalrunnerautoscaler
 
 kubectl logs \
   -l 'actions-runner-controller/inject-registration-token=true' \
   -f
 
-kubectl delete runner k8s-runners-autoscaler
-``` -->
+kubectl delete horizontalrunnerautoscaler k8s-runners-autoscaler
+```
 
 ## Workflow
 

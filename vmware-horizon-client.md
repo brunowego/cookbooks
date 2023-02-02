@@ -14,4 +14,4 @@ brew install --cask vmware-horizon-client
 
 #### New Connection
 
-***Uncheck:*** Always connect at launch
+**_Uncheck:_** Always connect at launch

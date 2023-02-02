@@ -5,7 +5,7 @@ npm install grunt-gitinfo -g
 ```
 
 ```js
-grunt.loadNpmTasks('grunt-gitinfo');
+grunt.loadNpmTasks('grunt-gitinfo')
 ```
 
 ```js

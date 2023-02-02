@@ -49,12 +49,12 @@ echo 'extension=PDFNetPHP.so' >> "$(php -i | grep -oE /.+/php.ini)"
 
 ```json
 {
+  // ...
+  "autoload": {
     // ...
-    "autoload": {
-        // ...
-        "files": ["/opt/PDFNetWrappers-master/PDFNetC/Lib/PDFNetPHP.php"]
-    },
-    // ...
+    "files": ["/opt/PDFNetWrappers-master/PDFNetC/Lib/PDFNetPHP.php"]
+  }
+  // ...
 }
 ```
 

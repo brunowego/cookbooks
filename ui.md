@@ -15,4 +15,3 @@ https://clay.global/
 - [The Bézier Game](https://bezier.method.ac/)
 
 ## Metrics
-

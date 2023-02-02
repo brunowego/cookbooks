@@ -2,7 +2,7 @@
 
 ## References
 
-- [Usage](https://en.wikipedia.org/wiki/Sleep_(command)#Usage)
+- [Usage](<https://en.wikipedia.org/wiki/Sleep_(command)#Usage>)
 
 ## Commands
 

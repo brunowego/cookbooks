@@ -19,6 +19,10 @@
 - [Uptime Kuma](/uptime-kuma.md)
 - [UptimeRobot](/uptimerobot/README.md) 🌟
 
+<!--
+https://status.trunk.io/
+-->
+
 ## Examples
 
 - [AlienVault](https://status.alienvault.cloud)

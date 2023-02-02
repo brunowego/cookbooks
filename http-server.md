@@ -12,6 +12,9 @@ npm install http-server -g
 
 # Using Yarn 1.x
 yarn global add http-server
+
+# Using Yarn 1.x
+pnpm add http-server -d
 ```
 
 ### Commands

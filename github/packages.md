@@ -17,13 +17,19 @@ https://github.com/github/roadmap/issues/93
 - NuGet
 - RubyGems
 
-## Docker
+## Credentials
 
 ```sh
 #
+docker-credential-desktop list
+docker-credential-osxkeychain list
+
+# Logout
 jq 'del(.credsStore)' ~/.docker/config.json | sponge ~/.docker/config.json
 
-#
+docker logout ghcr.io
+
+# Login
 docker login \
   -u 'brunowego' \
   ghcr.io
@@ -31,9 +37,31 @@ docker login \
 #
 docker pull ghcr.io/<organization>/<image>
 
-#
 docker push ghcr.io/<organization>/<image>
 ```
+
+<!-- ```sh
+echo -n '<username>:<password>' | base64
+
+jq '.auths["ghcr.io"].auth'
+
+jq
+{
+  "auths": {
+    "ghcr.io": {
+      "auth": ""
+    }
+  }
+}
+``` -->
+
+<!--
+docker \
+  --config ./ \
+  login \
+    -u "brunowego" \
+    ghcr.io
+-->
 
 ## Issues
 

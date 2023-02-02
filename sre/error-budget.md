@@ -8,12 +8,12 @@ SLI = [Good events / Valid events] x 100
 
 ## Uptime
 
-| Time Frame | 99% Uptime | 99.9% Uptime | 99.95% Uptime | 99.99% Uptime |
-| --- | --- | --- | --- | --- |
-| Daily | 14m 24s | 1m 26s | 43s | 9s |
-| Weekly | 1h 40m 48s | 10m 5s | 5m 3s | 1m 1s |
-| Monthly | 7h 18m 18s | 43m 50s | 21m 55s | 4m 23s |
-| Yearly | 3d 15h 39m 30s | 8h 45m 57s | 4m 22m 59s | 52m 36s |
+| Time Frame | 99% Uptime     | 99.9% Uptime | 99.95% Uptime | 99.99% Uptime |
+| ---------- | -------------- | ------------ | ------------- | ------------- |
+| Daily      | 14m 24s        | 1m 26s       | 43s           | 9s            |
+| Weekly     | 1h 40m 48s     | 10m 5s       | 5m 3s         | 1m 1s         |
+| Monthly    | 7h 18m 18s     | 43m 50s      | 21m 55s       | 4m 23s        |
+| Yearly     | 3d 15h 39m 30s | 8h 45m 57s   | 4m 22m 59s    | 52m 36s       |
 
 ## Principles
 
@@ -85,4 +85,3 @@ Until the application is again meeting its SLO and has some Error Budget:
 - The error budget is the gap between perfect reliability and our SLO.
 - This is a budget to be spent.
 - Given an uptime SLO of 99.9%, after a 20 minute outage you still have 23 minutes of budget remaining for the month!
-

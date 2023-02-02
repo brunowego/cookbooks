@@ -100,7 +100,7 @@ npx lerna add [module-1] \
 ```json
 {
   "scripts": {
-    "postinstall": "lerna bootstrap",
+    "postinstall": "lerna bootstrap"
   }
 }
 ```

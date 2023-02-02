@@ -33,6 +33,19 @@ updates:
       prefix-development: chore
     labels:
       - dependencies
+
+- package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+    allow:
+      - dependency-type: direct
+    versioning-strategy: increase
+    commit-message:
+      prefix: deps
+      prefix-development: chore
+    labels:
+      - dependencies
 ```
 
 <!--

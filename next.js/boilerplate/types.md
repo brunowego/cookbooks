@@ -8,10 +8,10 @@
 import { UserRole } from '@/constants'
 
 export interface IAuthInterface {
-  role?: UserRole;
-  authenticatedRedirect?: string;
-  children?: any;
-  ScreenLoader?: React.ReactNode;
+  role?: UserRole
+  authenticatedRedirect?: string
+  children?: any
+  ScreenLoader?: React.ReactNode
 }
 ```
 
@@ -19,7 +19,7 @@ export interface IAuthInterface {
 
 ```ts
 export default interface IUser {
-  name: string;
-  email: string;
+  name: string
+  email: string
 }
 ```

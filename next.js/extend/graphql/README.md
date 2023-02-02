@@ -16,7 +16,7 @@ yarn add @graphql-codegen/cli @graphql-codegen/typescript @graphql-codegen/types
 ```json
 {
   "scripts": {
-    "codegen": "graphql-codegen --config ./codegen.yml",
+    "codegen": "graphql-codegen --config ./codegen.yml"
     // ...
   }
 }

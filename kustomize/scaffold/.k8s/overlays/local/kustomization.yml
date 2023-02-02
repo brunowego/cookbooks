@@ -9,10 +9,10 @@ namePrefix: my-app-
 namespace: my-app
 
 bases:
-- ../../base
+  - ../../base
 
 configMapGenerator:
-- behavior: merge
-  envs:
-  - .env
-  name: metadata
+  - behavior: merge
+    envs:
+      - .env
+    name: metadata

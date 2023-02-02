@@ -277,7 +277,7 @@ jq '."recommendations" += ["ahmadalli.vscode-nginx-conf"]' "$PWD"/.vscode/extens
 **Configuration:**
 
 ```sh
-jq '."[nginx]"."editor.defaultFormatter" |= "ahmadalli.vscode-nginx-conf"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+jq '."[nginx]"."editor.defaultFormatter" |= "ahmadalli.vscode-nginx-conf"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
 #### EditorConfig

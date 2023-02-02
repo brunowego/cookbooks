@@ -61,7 +61,7 @@ resource "kubernetes_manifest" "this" {
     spec = {
       acme = {
         server = "https://acme-v02.api.letsencrypt.org/directory"
-        email  = "devops@londonbridge.dev"
+        email  = "devops@domain.tld"
 
         privateKeySecretRef = {
           name = "letsencrypt-issuer"

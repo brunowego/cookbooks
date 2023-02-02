@@ -491,10 +491,10 @@ php -i | grep '\--enable-fpm'
 
 #### Improve Memory Limit
 
-| Parameter | Value |
-| --- | --- |
-| `php_admin_value[memory_limit]` | `8G` |
-| `php_value[memory_limit]` | `8G` |
+| Parameter                       | Value |
+| ------------------------------- | ----- |
+| `php_admin_value[memory_limit]` | `8G`  |
+| `php_value[memory_limit]`       | `8G`  |
 
 ```sh
 sudo sed -i '/^;php_admin_value\[memory_limit\]/ s/^;//' "$PHP_FPM_CONF_DIR/www.conf"

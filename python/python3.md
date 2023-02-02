@@ -221,7 +221,7 @@ python3 \
   3000
 
 #
-python3 -B -m [module-name]
+python3 -B -m <module-name>
 ```
 
 ### REPL

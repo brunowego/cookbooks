@@ -106,7 +106,6 @@ jabba alias default system@11.0.11
    - Accept the terms
    - Click in Download button
 
-
 ```sh
 # Darwin
 hdiutil attach ~/Downloads/jdk-14.0.2_osx-x64_bin.dmg -mountpoint /Volumes/JDK\ 14.0.2

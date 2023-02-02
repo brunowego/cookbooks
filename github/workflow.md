@@ -10,3 +10,13 @@
 #
 gh workflow list
 ```
+
+<!--
+workflow_run:
+  workflows:
+    - Static Code Analysis
+  branches:
+    - main
+  types:
+    - completed
+-->

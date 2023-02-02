@@ -2,7 +2,7 @@
 
 ## References
 
-- [Usage example](https://en.wikipedia.org/wiki/Echo_(command)#Usage_example)
+- [Usage example](<https://en.wikipedia.org/wiki/Echo_(command)#Usage_example>)
 
 ## Commands
 

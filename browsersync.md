@@ -10,8 +10,8 @@
 module.exports = {
   options: {
     // ...
-    ghostMode: false
+    ghostMode: false,
   },
   // ...
-};
+}
 ```

@@ -13,6 +13,6 @@
 
 ## Shortcuts
 
-| OS | Description | Shortcut |
-| --- | --- | --- |
+| OS     | Description     | Shortcut            |
+| ------ | --------------- | ------------------- |
 | Darwin | Load all fields | Command + Shift + L |

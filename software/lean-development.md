@@ -179,5 +179,4 @@ A measure of how efficiently value moves through an organization's process and i
 
 A = Avg. Active Time, I = Avg. Inactive Time, and T = Avg. Total Time
 
-(A / T) * 100
-
+(A / T) \* 100

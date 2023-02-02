@@ -5,7 +5,7 @@ npm install grunt-contrib-compress --save-dev
 ```
 
 ```js
-grunt.loadNpmTasks('grunt-contrib-compress');
+grunt.loadNpmTasks('grunt-contrib-compress')
 ```
 
 ```js

@@ -56,12 +56,12 @@ docker run -d \
 echo -e '[INFO]\thttp://127.0.0.1:8080'
 ```
 
-| Type | Login | Password |
-| --- | --- | --- |
-| Super Administrator | `glpi` | `glpi` |
-| Technical | `tech` | `tech` |
-| Help desk | `post-only` | `postonly` |
-| Normal | `normal` | `normal` |
+| Type                | Login       | Password   |
+| ------------------- | ----------- | ---------- |
+| Super Administrator | `glpi`      | `glpi`     |
+| Technical           | `tech`      | `tech`     |
+| Help desk           | `post-only` | `postonly` |
+| Normal              | `normal`    | `normal`   |
 
 ### Remove
 

@@ -1,6 +1,6 @@
 # Tips
 
-## [Shebang (Unix)](https://en.wikipedia.org/wiki/Shebang_(Unix))
+## [Shebang (Unix)](<https://en.wikipedia.org/wiki/Shebang_(Unix)>)
 
 ```sh
 #! /usr/bin/env python3

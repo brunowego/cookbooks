@@ -47,7 +47,9 @@ const validationSchema = Joi.object({
   TZ: Joi.string().default('UTC'),
   PORT: Joi.number().default(3000),
   SECRET_KEY: Joi.string().required(),
-  NODE_ENV: Joi.string().valid('development', 'production').default('development'),
+  NODE_ENV: Joi.string()
+    .valid('development', 'production')
+    .default('development'),
 
   // URLs
   PUBLIC_URL: Joi.string().default('http://localhost:3000'),

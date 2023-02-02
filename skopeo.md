@@ -92,4 +92,3 @@ FATA[0012] authenticating creds for "ghcr.io": Requesting bear token: invalid st
 ```
 
 Try create a new one [token](https://github.com/settings/tokens).
-

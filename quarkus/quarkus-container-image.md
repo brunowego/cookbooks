@@ -16,7 +16,6 @@ mvn quarkus:add-extension \
   -Dextensions='container-image-s2i'
 ```
 
-
 ## Jib
 
 ```sh

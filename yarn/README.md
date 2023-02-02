@@ -263,3 +263,24 @@ yarn explain peer-requirements [hash]
 ```
 
 TODO
+
+<!-- ## Dockerfile
+
+```Dockerfile
+FROM docker.io/library/node:18.12-alpine
+
+WORKDIR /usr/src/app
+
+COPY ./package.json ./yarn.lock ./
+
+RUN yarn install && \
+      yarn cache clean
+
+COPY ./ ./
+
+RUN yarn build
+
+EXPOSE 3000
+
+CMD ["yarn", "build"]
+``` -->

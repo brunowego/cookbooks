@@ -5,7 +5,7 @@ npm install grunt-contrib-clean --save-dev
 ```
 
 ```js
-grunt.loadNpmTasks('grunt-contrib-clean');
+grunt.loadNpmTasks('grunt-contrib-clean')
 ```
 
 ```js

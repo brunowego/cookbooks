@@ -78,8 +78,8 @@ WHERE
 GROUP BY 1 ORDER BY 2 DESC;
 ```
 
-<!-- ```sql
---
+## <!-- ```sql
+
 create table dba.lista_connection_per_db
 (
 HORA TIMESTAMP,
@@ -90,28 +90,31 @@ CONNECTIONS INTEGER
 --
 create view dba.lista_connection_per_db as
 SELECT
-    CURRENT_TIMESTAMP AS HORA,
-    DB.SCHEMA_NAME AS DB,
-    COALESCE(CONN.QTD_CONN,0) AS CONNECTIONS
+CURRENT_TIMESTAMP AS HORA,
+DB.SCHEMA_NAME AS DB,
+COALESCE(CONN.QTD_CONN,0) AS CONNECTIONS
 FROM INFORMATION_SCHEMA.SCHEMATA DB
 LEFT JOIN (
-    SELECT
-        DB,
-        COUNT(*) AS 'QTD_CONN'
-    FROM
-        INFORMATION_SCHEMA.PROCESSLIST
-    GROUP BY 1
-    ) CONN ON DB.SCHEMA_NAME = CONN.DB
+SELECT
+DB,
+COUNT(\*) AS 'QTD_CONN'
+FROM
+INFORMATION_SCHEMA.PROCESSLIST
+GROUP BY 1
+) CONN ON DB.SCHEMA_NAME = CONN.DB
 -- WHERE DB.SCHEMA_NAME IN ('autobots','geti','gestaoinfra','colabore','convenio2','central','designx','dirco2','dirco2','fbb','gecin','gesitbdh','gprom2','gprom2','homolog','autobots','pgi2','pgpti','portalgeint','progrid','prolid','sisredex','storage2','transparencia')
 ORDER BY 2;
 
 -- Lista conexões por origem
 SELECT
-    SUBSTRING_INDEX(host, ':', 1) as host,
-    COUNT(*) AS 'QTD_CONN'
+SUBSTRING_INDEX(host, ':', 1) as host,
+COUNT(\*) AS 'QTD_CONN'
 FROM
-    information_schema.processlist
+information_schema.processlist
 where SUBSTRING_INDEX(host, ':', 1) = '172.20.0.226'
 GROUP BY 1
 ORDER BY 2 DESC;
-``` -->
+
+```-->
+
+```

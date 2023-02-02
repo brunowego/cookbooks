@@ -73,7 +73,7 @@ After install the missing font, just the "Reload Tab".
 - Flow
 - Marketing
 - Research
-- User Interface (Desktop/Tablet/Mobile/Mail)
+- User Interface (for Desktop/Tablet/Mobile/Mail)
 
 ## Issues
 

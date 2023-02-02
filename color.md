@@ -28,7 +28,7 @@ https://tailwindshades.com/
 - [Accessible color palette builder](https://toolness.github.io/accessible-color-matrix/)
 - [Chroma.js Color Palette Helper](http://vis4.net/palettes/)
 - [ColorBox](http://colorbox.io/)
-- [CopyPalette](https://copypalette.app/)
+- [CopyPalette](https://copypalette.app/) 🌟
 - [Deep learning color generator](https://colors.eva.design/)
 - [Hue The Color](https://eboye.github.io/huethecolor/)
 - [Leonardo](https://leonardocolor.io/)
@@ -39,7 +39,7 @@ https://tailwindshades.com/
 - [Material Design Theme & Palette Color Generator](http://mcg.mbitson.com)
 - [Palx](https://palx.jxnblk.com)
 - [Sass Color Generator](http://scg.ar-ch.org/)
-- [Tailwind Shades](https://tailwindshades.com)
+- [Tailwind Shades](https://tailwindshades.com) 🌟
 
 ### Contrast Checker
 

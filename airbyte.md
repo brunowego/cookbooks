@@ -3,4 +3,4 @@
 ## Links
 
 - [Code Repository](https://github.com/airbytehq/airbyte)
-- [Main Website](https://airbyte.io/)
+- [Main Website](https://airbyte.io)

@@ -137,9 +137,7 @@ class AppDocument extends Document {
   render() {
     return (
       <Html lang={this.props.locale}>
-        <Head>
-          {/* ... */}
-        </Head>
+        <Head>{/* ... */}</Head>
         <body>
           <Main />
           <NextScript />

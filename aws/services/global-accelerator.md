@@ -1,4 +1,4 @@
-#  AWS Global Accelerator (GA)
+# AWS Global Accelerator (GA)
 
 ## Links
 

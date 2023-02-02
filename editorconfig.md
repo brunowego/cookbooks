@@ -31,7 +31,16 @@ EOF
 
 #### Visual Studio Code
 
-**Recommended:** [Linter](/linter.md#visual-studio-code) and [Prettier](/prettier.md#visual-studio-code)
+**Recommended:** [Prettier](/prettier.md#visual-studio-code)
+
+```sh
+#
+mkdir "$PWD"/.vscode
+
+#
+echo '{}' > "$PWD"/.vscode/extensions.json
+echo '{}' > "$PWD"/.vscode/settings.json
+```
 
 ```sh
 #

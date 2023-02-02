@@ -146,6 +146,7 @@ TODO
 
 ```log
 WARNING  failed to contact turbod. Continuing in standalone mode: connection to turbo daemon process failed. Please ensure the following: ...
+You can also run without the daemon process by passing --no-daemon
 ```
 
 ```sh
@@ -163,3 +164,7 @@ Add `--no-daemon` parameter to `turbo run`.
 ```sh
 npx @turbo/codemod add-package-manager
 ```
+
+<!-- ## Dockerfile
+
+https://turbo.build/repo/docs/handbook/deploying-with-docker -->

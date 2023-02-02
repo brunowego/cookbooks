@@ -28,6 +28,9 @@ Bit depth: 32 bits (16.7M colors & alpha transparency)
 <!-- PNG: https://caniuse.com/link-icon-png  -->
 <link rel="icon" type="image/png" href="/favicon.png" />
 
+<!-- SVG+XML -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
 <!-- Prefers Color Scheme -->
 <link
   rel="shortcut icon"

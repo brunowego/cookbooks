@@ -12,11 +12,14 @@ npm install @storybook/addons @storybook/theming --save-dev
 
 # Using Yarn
 yarn add @storybook/addons @storybook/theming --dev
+
+# Using pnpm
+pnpm add @storybook/addons @storybook/theming -D
 ```
 
 ## Configuration
 
-**Refer:** `./.storybook/manager.js`
+**Refer:** `./.storybook/manager.cjs`
 
 ```js
 import { addons } from '@storybook/addons'
@@ -26,7 +29,7 @@ addons.setConfig({
   theme: {
     ...themes.dark,
     brandImage: 'https://domain.tld/icon.svg',
-    brandTitle: 'Example Components',
+    brandTitle: 'Acme Corp.',
     brandUrl: 'https://domain.tld',
   },
 })

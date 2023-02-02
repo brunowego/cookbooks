@@ -242,7 +242,7 @@ INFO[0008] 2021/05/26 21:20:13 http2: Transport failed to get client conn for re
 ```js
 export let options = {
   // ...
-  noUsageReport: true
+  noUsageReport: true,
 }
 ```
 

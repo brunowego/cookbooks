@@ -39,11 +39,11 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 echo -e '[INFO]\thttp://127.0.0.1:8080'
 ```
 
-| Application | Login | Password |
-| --- | --- | --- |
-| Grafana | `admin` | `pgwatch2admin` |
-| pgwatch2 | `pgwatch2` | `pgwatch2admin` |
-| InfluxDB | `root` | `root` |
+| Application | Login      | Password        |
+| ----------- | ---------- | --------------- |
+| Grafana     | `admin`    | `pgwatch2admin` |
+| pgwatch2    | `pgwatch2` | `pgwatch2admin` |
+| InfluxDB    | `root`     | `root`          |
 
 ### Tips
 

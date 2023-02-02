@@ -147,14 +147,14 @@ sentry-cli releases finalize '[release]'
 
 #### Configuration
 
-***Data Source Name (DSN)***
+**_Data Source Name (DSN)_**
 
 ```ini
 [auth]
 dsn = <dsn>
 ```
 
-***Log Level***
+**_Log Level_**
 
 ```ini
 [log]
@@ -165,7 +165,7 @@ level = debug
 
 Try check network issues using [tcpdump](/tcpdump.md#usage) on port `443`.
 
-***manage.py***
+**_manage.py_**
 
 ```py
 import logging

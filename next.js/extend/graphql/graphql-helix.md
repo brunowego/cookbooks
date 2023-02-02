@@ -30,7 +30,9 @@ import { Context, createGraphQLContext } from '@/graphql/builder'
 import { schema } from '@/graphql'
 
 function getGraphQLCode(error: Error & { code?: number }) {
-  return error?.code ?? error?.name === 'NotFoundError' ? StatusCodes.NOT_FOUND : null
+  return error?.code ?? error?.name === 'NotFoundError'
+    ? StatusCodes.NOT_FOUND
+    : null
 }
 
 function formatResult(result: ExecutionResult) {
@@ -161,7 +163,8 @@ function writeSchema(schema: GraphQLSchema) {
   const schemaAsString = printSchema(lexicographicSortSchema(schema))
   const schemaPath = path.join(process.cwd(), 'src/graphql/schema.graphql')
 
-  const existingSchema = fs.existsSync(schemaPath) && fs.readFileSync(schemaPath, 'utf-8')
+  const existingSchema =
+    fs.existsSync(schemaPath) && fs.readFileSync(schemaPath, 'utf-8')
 
   if (existingSchema !== schemaAsString) {
     fs.writeFileSync(schemaPath, schemaAsString)

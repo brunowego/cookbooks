@@ -5,7 +5,7 @@ npm install grunt-version --save-dev
 ```
 
 ```js
-grunt.loadNpmTasks('grunt-version');
+grunt.loadNpmTasks('grunt-version')
 ```
 
 ```js

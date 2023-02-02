@@ -44,7 +44,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - name: Get Short SHA
+      - name: Get short SHA
         id: sha
         run: echo "::set-output name=sha12::$(echo ${GITHUB_SHA} | cut -c 1-12)"
 

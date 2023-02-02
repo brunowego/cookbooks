@@ -5,7 +5,7 @@ npm install grunt-git --save-dev
 ```
 
 ```js
-grunt.loadNpmTasks('grunt-git');
+grunt.loadNpmTasks('grunt-git')
 ```
 
 ```js

@@ -7,7 +7,7 @@
 
 ## Types
 
-|          Case Type          |     Example      |
+| Case Type                   | Example          |
 | --------------------------- | ---------------- |
 | Original Variable as String | some awesome var |
 | Camel Case                  | someAwesomeVar   |

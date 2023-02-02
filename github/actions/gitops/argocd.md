@@ -20,7 +20,7 @@ TODO
 <!-- ### Using Kustomize
 
 ````yml
-    - name: ArgoCD Overwrite Image Tag
+    - name: ArgoCD Overwrite Image Tagco
       uses: clowdhaus/argo-cd-action/@main
       id: argocd_image_tag_overwrite
       with:

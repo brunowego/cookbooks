@@ -32,7 +32,7 @@ yarn add @remix-run/dev --dev
   "scripts": {
     "postinstall": "remix setup node",
     "dev": "remix-serve build",
-    "build:remix": "remix build",
+    "build:remix": "remix build"
     // ...
   }
 }

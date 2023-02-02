@@ -16,12 +16,12 @@ https://github.com/dabsterindia/LABs/blob/70ea27231800c4be26575391407bae7985b4ea
 
 ## Services
 
-| Platform | Address |
-| --- | --- |
-| Apache Hadoop WebHDFS (HDFS) | https://knox.hortonworks.com:8443/gateway/default/webhdfs/ |
-| Apache Hadoop YARN Resource Manager | https://knox.hortonworks.com:8443/gateway/default/yarn/ |
-| Apache Hadoop YARN UI | https://knox.hortonworks.com:8443/gateway/default/yarn/ |
-| Apache Solr | https://knox.hortonworks.com:8443/gateway/default/solr/ |
+| Platform                            | Address                                                    |
+| ----------------------------------- | ---------------------------------------------------------- |
+| Apache Hadoop WebHDFS (HDFS)        | https://knox.hortonworks.com:8443/gateway/default/webhdfs/ |
+| Apache Hadoop YARN Resource Manager | https://knox.hortonworks.com:8443/gateway/default/yarn/    |
+| Apache Hadoop YARN UI               | https://knox.hortonworks.com:8443/gateway/default/yarn/    |
+| Apache Solr                         | https://knox.hortonworks.com:8443/gateway/default/solr/    |
 
 ```sh
 #

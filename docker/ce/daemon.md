@@ -99,6 +99,14 @@ sudo groupdel docker
 
 ## Issues
 
+### TBD
+
+```log
+sudo: unable to resolve host ubuntu: Name or service not known
+```
+
+TODO
+
 ### Docker CLI Already Installed
 
 ```log

@@ -7,7 +7,7 @@
 
 ## Frontend
 
-- JavaScript Library / [React](https://reactjs.org/)
+- JavaScript Library / [React](https://reactjs.org)
 - Program Language / [TypeScript](https://typescriptlang.org/) (Run on Node.js)
 - API Language / [GraphQL](https://graphql.org/) and REST
 - Web Framework / [Next.js](https://nextjs.org)
@@ -23,7 +23,7 @@
     - [TypeScript](https://typescriptlang.org/) (Run on Node.js)
   - Web Framework
     - Golang / [chi](https://go-chi.io)
-    - TypeScript / [Nest.js](https://nestjs.com/)
+    - TypeScript / [Nest.js](https://nestjs.com)
 - Test Suit / **TBD**
 
 ## Storage

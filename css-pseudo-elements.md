@@ -2,9 +2,9 @@
 
 ## References
 
-* https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
-* http://msdn.microsoft.com/en-us/library/windows/apps/hh767361.aspx
-* http://realworldvalidator.com/css/pseudoelements
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+- http://msdn.microsoft.com/en-us/library/windows/apps/hh767361.aspx
+- http://realworldvalidator.com/css/pseudoelements
 
 ## Styling native elements
 
@@ -15,7 +15,7 @@ video::webkit-media-controls-timeline {
   background-color: lime;
 }
 
-video /deep/ input[type=range] {
+video /deep/ input[type='range'] {
   background-color: lime;
 }
 ```
@@ -270,7 +270,7 @@ input[type=button]::-moz-focus-inner
 
 ## placeholder Attribute
 
-WebKit and Gecko provide a placeholder pseudo-element. *Note: Gecko switched from the pseudo-class `:-moz-placeholder` to the pseudo-element `::-moz-placeholder` in Firefox 19.*
+WebKit and Gecko provide a placeholder pseudo-element. _Note: Gecko switched from the pseudo-class `:-moz-placeholder` to the pseudo-element `::-moz-placeholder` in Firefox 19._
 
 ```css
 ::-moz-placeholder
@@ -285,7 +285,7 @@ WebKit and Gecko provide a placeholder pseudo-element. *Note: Gecko switched fro
 WebKit provides a pseudo-element that can be used to customize the dropdown that a keygen element uses.
 
 ```css
-::-webkit-keygen-select
+::-webkit-keygen-select ;
 ```
 
 ## &lt;input&gt;
@@ -373,7 +373,7 @@ meter:-moz-meter-sub-sub-optimum::-moz-meter-bar
 On Mac OS X, WebKit provides multiple built-in appearances for `<meter>`.
 
 ```css
- /* Default */
+/* Default */
 -webkit-appearance: continuous-capacity-level-indicator;
 -webkit-appearance: discrete-capacity-level-indicator;
 -webkit-appearance: relevancy-level-indicator;
@@ -410,7 +410,7 @@ textarea::-webkit-input-placeholder
 textarea::-moz-placeholder
 ```
 
-*Note: Adding `display: none` to `::-webkit-resizer` doesn't actually prevent the user from resizing the textarea, it just hides the control. If you want to disable resizing in textarea use this.*
+_Note: Adding `display: none` to `::-webkit-resizer` doesn't actually prevent the user from resizing the textarea, it just hides the control. If you want to disable resizing in textarea use this._
 
 ```css
 textarea {
@@ -742,7 +742,7 @@ Custom Scrollbars in WebKit.
 
 ## Form validation message-bubbe
 
-*Note: Chrome 28 removed support for these pseudo-elements*
+_Note: Chrome 28 removed support for these pseudo-elements_
 
 ```css
 ::-webkit-validation-bubble

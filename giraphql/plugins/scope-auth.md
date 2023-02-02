@@ -50,7 +50,7 @@ export const builder = new SchemaBuilder<{
     user: !!session,
     unauthenticated: !session,
     staff: !!session?.isStaff,
-  })
+  }),
 })
 
 builder.mutationType({

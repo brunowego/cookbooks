@@ -2,6 +2,10 @@
 
 ## Credential Helper
 
+### Links
+
+- [Code Repository](https://github.com/docker/docker-credential-helpers)
+
 ### Installation
 
 #### Homebrew
@@ -10,17 +14,34 @@
 brew install docker-credential-helper
 ```
 
+### Commands
+
+```sh
+docker-credential-desktop -h
+```
+
+### Usage
+
+```sh
+#
+docker-credential-desktop list
+
+#
+docker-credential-ecr-login list
+
+#
+docker-credential-osxkeychain list
+```
+
+<!--
+docker-credential-gcloud
+-->
+
 ### Configuration
 
 #### Homebrew
 
 ```sh
-#
-mkdir -p ~/.docker
-
-#
-[[ -f ~/.docker/config.json ]] || echo '{}' >> ~/.docker/config.json
-
 #
 jq ".credsStore |= \"osxkeychain\"" ~/.docker/config.json | sponge ~/.docker/config.json
 ```

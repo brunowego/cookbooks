@@ -31,7 +31,9 @@ function App({ Component, pageProps }: AppProps) {
       <QueryClientProvider client={queryClient}>
         <Component {...pageProps} />
 
-        {process.env.NODE_ENV !== 'production' && <ReactQueryDevtools initialIsOpen={false} />}
+        {process.env.NODE_ENV !== 'production' && (
+          <ReactQueryDevtools initialIsOpen={false} />
+        )}
       </QueryClientProvider>
     </>
   )

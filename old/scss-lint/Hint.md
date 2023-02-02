@@ -7,7 +7,7 @@ touch .scss-lint.yml || exit
 ```yml
 # Default application configuration that all configurations inherit from.
 
-scss_files: "**/*.scss"
+scss_files: '**/*.scss'
 
 linters:
   BangFormat:
@@ -107,22 +107,137 @@ linters:
 
   PropertyUnits:
     enabled: true
-    global:
-      [
-        'ch', 'em', 'ex', 'rem',                 # Font-relative lengths
-        'cm', 'in', 'mm', 'pc', 'pt', 'px', 'q', # Absolute lengths
-        'vh', 'vw', 'vmin', 'vmax',              # Viewport-percentage lengths
-        'deg', 'grad', 'rad', 'turn',            # Angle
-        'ms', 's',                               # Duration
-        'Hz', 'kHz',                             # Frequency
-        'dpi', 'dpcm', 'dppx',                   # Resolution
-        '%',                                     # Other
+    global: [
+        'ch',
+        'em',
+        'ex',
+        'rem', # Font-relative lengths
+        'cm',
+        'in',
+        'mm',
+        'pc',
+        'pt',
+        'px',
+        'q', # Absolute lengths
+        'vh',
+        'vw',
+        'vmin',
+        'vmax', # Viewport-percentage lengths
+        'deg',
+        'grad',
+        'rad',
+        'turn', # Angle
+        'ms',
+        's', # Duration
+        'Hz',
+        'kHz', # Frequency
+        'dpi',
+        'dpcm',
+        'dppx', # Resolution
+        '%', # Other
       ]
     properties: {}
 
   PropertySortOrder:
     enabled: true
-    order: ["position", "top", "right", "bottom", "left", "z-index", "display", "visibility", "overflow", "overflow-x", "overflow-y", "float", "clear", "table-layout", "border-collapse", "empty-cells", "box-sizing", "width", "min-width", "max-width", "height", "min-height", "max-height", "margin", "margin-top", "margin-right", "margin-bottom", "margin-left", "padding", "padding-top", "padding-right", "padding-bottom", "padding-left", "border", "border-width", "border-style", "border-color", "border-radius", "border-top", "border-top-width", "border-top-style", "border-top-color", "border-right", "border-right-width", "border-right-style", "border-right-color", "border-bottom", "border-bottom-width", "border-bottom-style", "border-bottom-color", "border-left", "border-left-width", "border-left-style", "border-left-color", "border-top-left-radius", "border-top-right-radius", "border-bottom-right-radius", "border-bottom-left-radius", "white-space", "content", "background", "background-color", "background-image", "background-repeat", "background-attachment", "background-position", "background-size", "opacity", "color", "font", "font-family", "font-size", "font-weight", "font-style", "font-variant", "letter-spacing", "line-height", "list-style", "list-style-type", "list-style-position", "list-style-image", "outline", "outline-width", "outline-style", "outline-color", "text-align", "text-decoration", "text-indent", "text-transform", "text-shadow", "animation", "transform", "transition", "box-shadow", "cursor"]
+    order:
+      [
+        'position',
+        'top',
+        'right',
+        'bottom',
+        'left',
+        'z-index',
+        'display',
+        'visibility',
+        'overflow',
+        'overflow-x',
+        'overflow-y',
+        'float',
+        'clear',
+        'table-layout',
+        'border-collapse',
+        'empty-cells',
+        'box-sizing',
+        'width',
+        'min-width',
+        'max-width',
+        'height',
+        'min-height',
+        'max-height',
+        'margin',
+        'margin-top',
+        'margin-right',
+        'margin-bottom',
+        'margin-left',
+        'padding',
+        'padding-top',
+        'padding-right',
+        'padding-bottom',
+        'padding-left',
+        'border',
+        'border-width',
+        'border-style',
+        'border-color',
+        'border-radius',
+        'border-top',
+        'border-top-width',
+        'border-top-style',
+        'border-top-color',
+        'border-right',
+        'border-right-width',
+        'border-right-style',
+        'border-right-color',
+        'border-bottom',
+        'border-bottom-width',
+        'border-bottom-style',
+        'border-bottom-color',
+        'border-left',
+        'border-left-width',
+        'border-left-style',
+        'border-left-color',
+        'border-top-left-radius',
+        'border-top-right-radius',
+        'border-bottom-right-radius',
+        'border-bottom-left-radius',
+        'white-space',
+        'content',
+        'background',
+        'background-color',
+        'background-image',
+        'background-repeat',
+        'background-attachment',
+        'background-position',
+        'background-size',
+        'opacity',
+        'color',
+        'font',
+        'font-family',
+        'font-size',
+        'font-weight',
+        'font-style',
+        'font-variant',
+        'letter-spacing',
+        'line-height',
+        'list-style',
+        'list-style-type',
+        'list-style-position',
+        'list-style-image',
+        'outline',
+        'outline-width',
+        'outline-style',
+        'outline-color',
+        'text-align',
+        'text-decoration',
+        'text-indent',
+        'text-transform',
+        'text-shadow',
+        'animation',
+        'transform',
+        'transition',
+        'box-shadow',
+        'cursor',
+      ]
     ignore_unspecified: false
     separate_groups: false
 
