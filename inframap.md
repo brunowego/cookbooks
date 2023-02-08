@@ -32,16 +32,16 @@ inframap -h
 
 ### Usage
 
-```sh
+<!-- ```sh
 #
 inframap generate \
-  --tfstate ./terraform.tfstate | \
+  --tfstate ./.terraform/terraform.tfstate | \
     dot -Tpng > ./graph.png
 
 #
-inframap generate ./modules/<name>/main.tf | \
+inframap generate ./main.tf | \
   dot -Tpng > ./graph.png
-```
+``` -->
 
 #### Remotely
 
@@ -50,7 +50,9 @@ inframap generate ./modules/<name>/main.tf | \
 terraform state pull | \
   inframap generate | \
     dot -Tpng > ./graph.png
+```
 
+<!--
 #
 aws s3 cp s3://path/to/terraform.tfstate - | \
   inframap generate | \
@@ -64,9 +66,8 @@ az storage fs file download \
   --destination /dev/stdout | \
     inframap generate | \
       dot -Tpng > ./graph.png
-```
 
-<!--
+#
 gsutil cat gs://path/to/terraform.tfstate | \
   inframap generate | \
     dot -Tpng > ./graph.png

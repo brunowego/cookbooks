@@ -2,6 +2,10 @@
 
 **Keywords:** Full-featured Development Environment
 
+<!--
+> Remote: Install Local Extensions in 'Dev Container: <name>'
+-->
+
 ## Links
 
 - [Org. Repositories](https://github.com/devcontainers)

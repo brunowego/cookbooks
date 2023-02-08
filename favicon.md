@@ -41,7 +41,7 @@ Bit depth: 32 bits (16.7M colors & alpha transparency)
 <link
   rel="shortcut icon"
   type="image/png"
-  href="/favicon-light.png"
+  href="/favicon.png"
   media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
 />
 ```
@@ -53,6 +53,7 @@ Bit depth: 32 bits (16.7M colors & alpha transparency)
 **Dependencies:** [ImageMagick](/imagemagick.md)
 
 ```sh
+#
 convert \
   -resize x32 \
   -gravity center \
@@ -63,6 +64,7 @@ convert \
   -background transparent \
   ./favicon.ico
 
+#
 convert ./favicon.png \
   -background white \
   \( -clone 0 -resize 32x32 -extent 32x32 \) \

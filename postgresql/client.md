@@ -163,7 +163,7 @@ pg_dump \
   -h 127.0.0.1 \
   -U postgres \
   -n public \
-  > dump.sql
+  > ./dump.sql
 
 ## DDL
 pg_dump \
@@ -172,7 +172,7 @@ pg_dump \
   -U postgres \
   -n public \
   --schema-only \
-  > ddl.sql
+  > ./dump-ddl.sql
 
 ## DML
 pg_dump \
@@ -182,14 +182,14 @@ pg_dump \
   -n public \
   --data-only \
   --column-inserts \
-  > dml.sql
+  > ./dump-dml.sql
 
 # Import
 psql \
   -d [db-name] \
   -h 127.0.0.1 \
   -U postgres \
-  < dump.sql
+  < ./dump.sql
 ```
 
 ### Tips

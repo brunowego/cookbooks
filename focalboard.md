@@ -5,6 +5,20 @@
 - [Code Repository](https://github.com/mattermost/focalboard)
 - [Main Website](https://focalboard.com)
 
+## App
+
+<!--
+https://www.focalboard.com/download/personal-edition/desktop/
+-->
+
+### Installation
+
+#### MAS
+
+```sh
+mas install 1556908618
+```
+
 ## Helm
 
 ### References
@@ -25,13 +39,18 @@ helm repo update
 kubectl create ns focalboard
 
 #
+kubens focalboard
+
+#
+helm search repo -l mattermost/focalboard
+
+#
 export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install focalboard mattermost/focalboard \
-  --namespace focalboard \
-  --version 0.4.0 \
+  --version 0.5.0 \
   -f <(cat << EOF
 ingress:
   enabled: true
@@ -39,19 +58,6 @@ ingress:
   - host: focalboard.${DOMAIN}
     paths:
       - path: /
-
-persistence:
-  enabled: true
-  accessMode: ReadWriteOnce
-  size: 8Gi
-
-resources:
-  requests:
-    cpu: 100m
-    memory: 128Mi
-  limits:
-    cpu: 150m
-    memory: 256Mi
 EOF
 )
 ```
@@ -65,8 +71,7 @@ kubectl set env deployment/focalboard FOCALBOARD_PORT=8000
 ### Status
 
 ```sh
-kubectl rollout status deploy/focalboard \
-  -n focalboard
+kubectl rollout status deploy/focalboard
 ```
 
 ### Logs
@@ -74,15 +79,13 @@ kubectl rollout status deploy/focalboard \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/instance=focalboard' \
-  -n focalboard \
   -f
 ```
 
 ### Delete
 
 ```sh
-helm uninstall focalboard \
-  -n focalboard
+helm uninstall focalboard
 
 kubectl delete ns focalboard \
   --grace-period=0 \

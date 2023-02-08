@@ -22,7 +22,7 @@ class AppDocument extends Document {
           <link
             rel="shortcut icon"
             type="image/png"
-            href="/favicon-light.png"
+            href="/favicon.png"
             media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
           />
         </Head>

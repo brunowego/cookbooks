@@ -14,6 +14,8 @@ https://app.pluralsight.com/library/courses/scraping-dynamic-web-pages-python-se
 https://linkedin.com/learning/search?categoryIds=ALL&contentBy=ALL&continuingEducationUnits=ALL&difficultyLevel=ALL&durations=ALL&entityType=COURSE&keywords=Selenium&language=en_US&learningCategoryIds=ALL&purchaseModel=ALL&software=ALL&sortBy=RELEVANCE&spellcheck=true
 -->
 
+**Keywords:** Functional Test
+
 ## Links
 
 - [Code Repository](https://github.com/SeleniumHQ/selenium)

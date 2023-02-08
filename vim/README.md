@@ -109,3 +109,17 @@ vim ./[filename]
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 ```
+
+### Issues
+
+#### TBD
+
+```log
+E45: 'readonly' option is set (add ! to override)
+```
+
+<!--
+:w !sudo tee %
+-->
+
+TODO

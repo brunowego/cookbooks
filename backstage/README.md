@@ -12,7 +12,7 @@ https://github.com/backstage/backstage/blob/master/docs/auth/index.md#adding-the
 - [Code Repository](https://github.com/backstage/backstage)
 - [Main Website](https://backstage.io/)
 - [Demo](https://demo.backstage.io/)
-- [Learn](https://backstage.spotify.com/learn/)
+- [Spotify / Learn](https://backstage.spotify.com/learn/)
 - Docs
   - [Backstage Software Catalog](https://backstage.io/docs/features/software-catalog/software-catalog-overview)
   - [TechDocs Documentation](https://backstage.io/docs/features/techdocs/techdocs-overview)

@@ -187,6 +187,11 @@ kubectl port-forward \
   --address 0.0.0.0 \
   svc/sentry-web \
   9000:9000
+
+kubectl port-forward \
+  --address 0.0.0.0 \
+  svc/sentry-sentry-postgresql \
+  5432:5432
 -->
 
 ### Prometheus Stack
@@ -247,6 +252,14 @@ kubectl logs \
 ```sh
 #
 echo -e "[INFO]\thttp://sentry.${DOMAIN}"
+```
+
+### Secrets
+
+```sh
+kubectl get secret sentry-sentry-postgresql \
+  -o jsonpath='{.data.postgresql-password}' | \
+    base64 -d; echo
 ```
 
 ### Tips

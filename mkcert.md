@@ -8,36 +8,26 @@
 
 ## CLI
 
+### Dependencies
+
+**Note:** If you use Firefox. You need to install [Network Security Services (NSS)](/nss.md) to use `mkcert` with Firefox.
+
 ### Installation
 
 #### Homebrew
 
 ```sh
 brew install mkcert
-
-# If you use Firefox
-brew install nss
 ```
 
-#### APT
+#### Linux Binary
 
 ```sh
-sudo apt update
-sudo apt -y install libnss3-tools
-```
-
-#### YUM
-
-```sh
-yum check-update
-sudo yum -y install nss-tools
-```
-
-#### Zypper
-
-```sh
-sudo zypper refresh
-sudo zypper install -y mozilla-nss-tools
+MKCERT_VERSION="$(curl -s https://api.github.com/repos/FiloSottile/mkcert/releases/latest | grep tag_name | cut -d '"' -f 4 | tr -d 'v')"; \
+  curl -L \
+    "https://github.com/FiloSottile/mkcert/releases/download/v${MKCERT_VERSION}/mkcert-v${MKCERT_VERSION}-linux-amd64" \
+    -o /usr/local/bin/mkcert && \
+      chmod +x /usr/local/bin/mkcert
 ```
 
 #### Chocolatey

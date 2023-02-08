@@ -73,6 +73,9 @@ pnpm <command>
 
 # Clean cache
 pnpm store prune
+
+#
+pnpm prune
 ```
 
 <!--
@@ -93,6 +96,22 @@ pnpx <command>
 ```
 
 ### Tips
+
+#### Add Pre-Post Scripts
+
+```sh
+echo 'enable-pre-post-scripts=true' >> ./.npmrc
+```
+
+#### Update
+
+```sh
+#
+pnpm up
+
+#
+pnpm up --latest
+```
 
 #### Git Attributes
 
@@ -132,3 +151,11 @@ pnpm add -g pnpm
 ```
 
 TODO
+
+## Dockerfile
+
+```Dockerfile
+FROM docker.io/library/node:18.12.1
+
+RUN corepack enable pnpm
+```

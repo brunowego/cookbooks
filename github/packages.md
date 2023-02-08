@@ -30,8 +30,10 @@ jq 'del(.credsStore)' ~/.docker/config.json | sponge ~/.docker/config.json
 docker logout ghcr.io
 
 # Login
+export GITHUB_USERNAME='brunowego'
+
 docker login \
-  -u 'brunowego' \
+  -u "$GITHUB_USERNAME" \
   ghcr.io
 
 #
@@ -64,6 +66,18 @@ docker \
 -->
 
 ## Issues
+
+###
+
+```log
+Error response from daemon: denied
+```
+
+<!--
+https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
+-->
+
+TODO
 
 ### Token Issue
 

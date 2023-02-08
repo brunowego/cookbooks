@@ -13,12 +13,17 @@ https://app.pluralsight.com/library/courses/codemash-session-01/table-of-content
 
 **Keywords:** End-to-End (E2E), Integration
 
-## Alternatives
+## Links
 
-- [Selenium](/selenium/README.md)
-- [Playwright](/playwright.md)
+- [Org. Repository](https://github.com/cypress-io)
+- [Main Website](https://cypress.io)
+- [Docs](https://docs.cypress.io)
 
 ## Library
+
+### Links
+
+- [Code Repository](https://github.com/cypress-io/cypress)
 
 ### Installation
 
@@ -147,3 +152,9 @@ npx cypress run --browser firefox
 #
 npx cypress open
 ```
+
+## App
+
+### Links
+
+- [Main Website](https://cypress.io/app/)

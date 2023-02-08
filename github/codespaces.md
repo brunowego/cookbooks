@@ -49,3 +49,15 @@ gh codespace list
 #
 gh codespace ssh -c <name>
 ```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension GitHub.codespaces
+
+#
+jq '."recommendations" += ["GitHub.codespaces"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```

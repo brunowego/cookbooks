@@ -63,3 +63,77 @@ docker rm -f chatwoot-postgres chatwoot
 
 docker volume rm chatwoot-postgres-data
 ```
+
+## Helm
+
+### References
+
+- [Parameters](https://github.com/chatwoot/charts/tree/main/charts/chatwoot#parameters)
+
+### Repository
+
+```sh
+helm repo add chatwoot 'https://chatwoot.github.io/charts'
+helm repo update
+```
+
+### Install
+
+```sh
+#
+kubectl create ns chatwoot
+
+#
+kubens chatwoot
+
+#
+helm search repo -l chatwoot/chatwoot
+
+#
+export KUBERNETES_IP='<kubernetes-ip>'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
+
+#
+helm install chatwoot chatwoot/chatwoot \
+  --version 1.0.13 \
+  -f <(cat << EOF
+ingress:
+  enabled: true
+  ingressClassName: nginx
+  hosts:
+    - host: chatwoot.${DOMAIN}
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: chatwoot
+              port:
+                number: 3000
+EOF
+)
+```
+
+### Status
+
+```sh
+kubectl rollout status deploy/chatwoot
+```
+
+### Logs
+
+```sh
+kubectl logs \
+  -l 'app.kubernetes.io/instance=chatwoot' \
+  -f
+```
+
+### Delete
+
+```sh
+helm uninstall chatwoot
+
+kubectl delete ns chatwoot \
+  --grace-period=0 \
+  --force
+```

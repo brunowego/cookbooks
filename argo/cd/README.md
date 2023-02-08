@@ -255,16 +255,18 @@ argocd -h
 #
 export ARGOCD_SERVER='127.0.0.1:8080'
 export ARGOCD_OPTS='--grpc-web --insecure'
+export ARGOCD_USER='<username>'
+export ARGOCD_PASS='<password>'
 
 #
 argocd login \
-  --username '<username>' \
-  --password '<password>' \
+  --username "$ARGOCD_USER" \
+  --password "$ARGOCD_PASS" \
   "$ARGOCD_SERVER"
 
 #
 argocd context
-argocd context <domain>
+argocd context '<domain>'
 ```
 
 #### Account
@@ -317,51 +319,6 @@ argocd proj list
 ```sh
 #
 argocd repo list
-```
-
-#### Applications
-
-```sh
-#
-argocd app list
-
-#
-kubectl create ns <namespace>
-
-# Using Kustomize
-argocd app create \
-  '<app-name>' \
-  --repo '<git-repo>' \
-  --path ./k8s/overlays/local \
-  --dest-namespace '<namespace>' \
-  --dest-server 'https://kubernetes.default.svc'
-
-argocd app set '<app-name>' \
-  --kustomize-image "$DOCKER_REGISTRY/$DOCKER_REPOSITORY:$DOCKER_TAG"
-
-# Using Helm
-argocd app create '<app-name>' \
-  --repo '<git-repo>' \
-  --path helm-guestbook \
-  --dest-namespace '<namespace>' \
-  --dest-server 'https://kubernetes.default.svc'
-  --helm-set replicaCount=2
-
-argocd app set '<app-name>' \
-  -p "$DOCKER_REGISTRY/$DOCKER_REPOSITORY=$DOCKER_REGISTRY/$DOCKER_REPOSITORY:$DOCKER_TAG"
-
-#
-argocd app sync '<app-name>' \
-  --prune
-
-#
-argocd app wait '<app-name>'
-
-#
-argocd app history '<app-name>'
-
-#
-argocd app delete '<app-name>'
 ```
 
 ### Tips

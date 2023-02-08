@@ -6,11 +6,6 @@ https://github.com/allmycal/allmycal.com/tree/main/apps/web/playwright
 
 **Keywords:** End-to-End (E2E), Integration
 
-## Alternatives
-
-- [Selenium](/selenium/README.md)
-- [Cypress](/cypress/README.md)
-
 ## Links
 
 - [Code Repository](https://github.com/microsoft/playwright)

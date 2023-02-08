@@ -4,6 +4,11 @@
 
 - [Docs](https://backstage.io/docs/auth/google/provider)
 
+## Dependencies
+
+- Google Cloud / Console / API & Services
+  - [Credentials](/gcp/services/apis/credentials.md)
+
 ## Issues
 
 ### TBD

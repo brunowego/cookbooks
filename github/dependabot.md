@@ -65,13 +65,18 @@ updates:
 
 ## Tips
 
-### Comments
+### Helpful Commands
 
-```txt
-@dependabot rebase
-
-@dependabot ignore this dependency
-
-@dependabot ignore this minor version
-@dependabot ignore this major version
-```
+| Command                                 | Description                                                              |
+| --------------------------------------- | ------------------------------------------------------------------------ |
+| `@dependabot cancel merge`              | Cancel a merge                                                           |
+| `@dependabot close`                     | Close the PR and Dependabot will not recreate the same PR                |
+| `@dependabot ignore`                    | Close the PR and stop depdendabot on this repository                     |
+| `@dependabot ignore this dependency`    |                                                                          |
+| `@dependabot ignore this minor version` | Close the PR and Dependabot will not recreate PRs for this minor version |
+| `@dependabot ignore this major version` | Close the PR and Dependabot will not recreate PRs for this major version |
+| `@dependabot merge`                     | Merge the pull after CI tests                                            |
+| `@dependabot rebase`                    | Rebase the PR                                                            |
+| `@dependabot recreate`                  | Force recreate the PR                                                    |
+| `@dependabot reopen`                    | Reopen the closed PR                                                     |
+| `@dependabot squash and merge`          | Squash and merge after CI tests                                          |

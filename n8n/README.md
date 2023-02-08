@@ -1,15 +1,18 @@
 # n8n
 
 <!--
-https://github.com/8gears/n8n-helm-chart
+https://autotic.com.br/curso-intensivo-de-n8n/
+https://promovaweb.com/n8n/courses/n8n99-setup-avancado-e-configuracoes-do-n8n/lesson/3fcf3536-db20-478a-886e-65e24d8700cb
+https://autotic.com.br/curso-intensivo-de-n8n/
 -->
 
-**Keywords:** Data Workflow, Low-code
+**Keywords:** Data Workflow, Low-code, BPM
 
 ## Links
 
 - [Code Repository](https://github.com/n8n-io/n8n)
 - [Main Website](https://n8n.io)
+- [Integrations](https://n8n.io/integrations/)
 - Docs
   - [API](https://docs.n8n.io/api/)
   - [API Reference](https://docs.n8n.io/api/api-reference/)

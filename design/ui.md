@@ -13,5 +13,3 @@ https://clay.global/
 ## Learning
 
 - [The Bézier Game](https://bezier.method.ac/)
-
-## Metrics

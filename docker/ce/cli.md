@@ -175,12 +175,12 @@ EOF
 #
 docker run -i --rm \
   ...
-  [repo] /bin/sh -c '[command]'
+  <repo> /bin/sh -c '[command]'
 
 #
 docker run -i --rm \
   ...
-  [repo] /bin/sh << \EOSHELL
+  <repo> /bin/sh << \EOSHELL
 
 EOSHELL
 ```

@@ -100,7 +100,7 @@ jq '."recommendations" += ["joshbolduc.commitlint"]' "$PWD"/.vscode/extensions.j
   0:0  warning  File ignored by default.  Use a negated ignore pattern (like "--ignore-pattern '!<relative/path/to/filename>'") to override
 ```
 
-Add updated `.eslintignore` to staged files.
+Add updated `./.eslintignore` to staged files.
 
 ## CLI
 

@@ -217,6 +217,7 @@ error Your lockfile needs to be updated, but yarn was run with `--frozen-lockfil
 ```
 
 ```sh
+# Yarn <= v1
 yarn check --integrity
 ```
 

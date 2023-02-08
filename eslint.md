@@ -132,6 +132,11 @@ Parsing error: The keyword 'const' is reserved eslint
  * @type { import('@types/eslint').Linter.Config }
  */
 const eslintRC = {
+  // Option 1
+  parserOptions: {
+    ecmaVersion: 'latest',
+  },
+  // Option 2
   env: {
     es6: true,
   },

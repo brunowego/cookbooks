@@ -12,6 +12,8 @@ https://linkedin.com/learning/node-js-essential-training-3/learn-the-node-js-fun
 - [Community Website](https://npm.community)
 - [Releases](https://nodejs.org/en/about/releases/)
 - [Status Page](https://status.npmjs.org/)
+- API
+  - [Corepack](https://nodejs.org/api/corepack.html)
 
 ## Guides
 

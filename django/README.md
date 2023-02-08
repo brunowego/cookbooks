@@ -666,6 +666,12 @@ DEBUG = os.getenv('DJANGO_ENV') != 'production'
 
 ### Tips
 
+#### Get Version
+
+```sh
+python -c 'import django; print(django.get_version())'
+```
+
 #### Security
 
 ```sh

@@ -20,7 +20,7 @@ Fibonacci
 - Backlog
 - To do
 - In progress
-- In hold
+- On hold
 - Review in progress
 - Reviewer approved
 - Done

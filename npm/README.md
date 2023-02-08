@@ -119,18 +119,14 @@ find . -name 'node_modules' -type d -prune -exec trash '{}' +
 
 #### Visual Studio Code
 
-##### Exclude from Files
-
 ```sh
-jq '."files.exclude"."./**/node_modules" |= true' "$PWD"/.vscode/settings.json | \
-  sponge "$PWD"/.vscode/settings.json
-```
+# Exclude from Files
+jq '."files.exclude"."./**/node_modules" |= true' "$HOME"/.vscode/settings.json | \
+  sponge "$HOME"/.vscode/settings.json
 
-##### Exclude from Search
-
-```sh
-jq '."search.exclude"."**/node_modules" |= true' "$PWD"/.vscode/settings.json | \
-  sponge "$PWD"/.vscode/settings.json
+# Exclude from Search
+jq '."search.exclude"."**/node_modules" |= true' "$HOME"/.vscode/settings.json | \
+  sponge "$HOME"/.vscode/settings.json
 ```
 
 #### Inherit Node Environment

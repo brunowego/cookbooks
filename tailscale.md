@@ -38,6 +38,10 @@ mas install 1475387142
 brew install tailscale
 ```
 
+<!-- #### APT
+
+https://tailscale.com/download/linux/ubuntu-2204 -->
+
 ### Commands
 
 ```sh

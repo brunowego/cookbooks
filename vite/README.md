@@ -16,6 +16,18 @@ https://github.com/satyatiwar/satyam
 - [Main Website](https://vitejs.dev)
 - [Configuring Vite](https://vitejs.dev/config/)
 
+## Related
+
+- [Rollup](/rollup.md)
+
+## Glossary
+
+- Hot Module Replacement (HMR)
+
+## Tools
+
+- [Vite Rollup Plugins](https://vite-rollup-plugins.patak.dev)
+
 ## Project
 
 ### Templates
@@ -48,17 +60,25 @@ pnpm create vite
 pnpm create vite <name> --template <name>
 ```
 
-<!-- ### Issues
+### Issues
 
-####
+#### Max Old Space Size
+
+```log
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+```
+
+```sh
+export NODE_OPTIONS='--max-old-space-size=2048'
+```
+
+#### TBD
 
 ```log
 Cannot find module './App.vue' or its corresponding type declarations. ts(2307)
 ```
 
-```sh
-
-``` -->
+TODO
 
 <!-- ## Dockerfile
 

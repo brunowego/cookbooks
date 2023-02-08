@@ -66,3 +66,17 @@ source <(colima completion zsh) # bash
 ```sh
 source ~/.zshrc
 ```
+
+### Issues
+
+#### TBD
+
+```log
+docker: Error response from daemon: invalid mount config for type "bind": bind source path does not exist
+```
+
+<!--
+https://github.com/abiosoft/colima/issues/406
+-->
+
+TODO

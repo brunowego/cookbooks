@@ -9,6 +9,8 @@ https://angel.co/
 https://linktr.ee/
 
 Pró-Labore
+
+Layoff
 -->
 
 ## Links
@@ -107,6 +109,17 @@ Key Performance Indicator (KPI)
 
 - Equity or Salary
 - Stock-Based Compensation
+
+## Roles
+
+- Designer
+- Engineer
+- Product Manager
+- Project Manager
+- Quality Assurance (QA)
+- Scrum Master
+- Technical Lead
+- Solution Architect
 
 ## Types
 

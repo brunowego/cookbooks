@@ -20,7 +20,7 @@ jq '."recommendations" += ["kamikillerto.vscode-colorize"]' "$PWD"/.vscode/exten
 
 ```sh
 #
-jq '."colorize.languages" += ["typescript"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+jq '."colorize.languages" += ["typescript"]' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 
-jq '."colorize.languages" += ["typescriptreact"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+jq '."colorize.languages" += ["typescriptreact"]' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```

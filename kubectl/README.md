@@ -668,6 +668,14 @@ kubectl rollout restart deployment \
 #### TBD
 
 ```log
+Warning: resource applications/backstage is missing the kubectl.kubernetes.io/last-applied-configuration annotation which is required by kubectl apply. kubectl apply should only be used on resources created declaratively by either kubectl create --save-config or kubectl apply. The missing annotation will be patched automatically.
+```
+
+TODO
+
+#### TBD
+
+```log
 Warning  FailedCreatePodSandBox  55s (x13 over 69s)  kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to start sandbox container for pod "my-app-worker-amqp-system-user-data-import-parser-7b445867xjs6": Error response from daemon: OCI runtime create failed: container_linux.go:349: starting container process caused "process_linux.go:319: getting the final child's pid from pipe caused \"EOF\"": unknown
 ```
 

@@ -35,6 +35,9 @@ trunk -h
 trunk init
 
 #
+trunk config share
+
+#
 trunk login
 trunk whoami
 

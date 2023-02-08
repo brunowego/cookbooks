@@ -5,6 +5,7 @@
 - [Ambassador API Gateway](/ambassador.md)
 - [Apache APISIX](/apache/apisix.md)
 - [AWS API Gateway](/aws/services/api-gateway.md)
+- [Azure API Management](/azure/services/api-management.md)
 - [Kong](/kong/README.md)
 - [KrakenD](/krakend.md)
 - [Tyk](/tyk.md)
