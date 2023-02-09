@@ -11,6 +11,9 @@
 ## Installation
 
 ```sh
+# Using NPM
+npm install prisma-dbml-generator -D
+
 # Using Yarn
 yarn add prisma-dbml-generator --dev
 
@@ -36,7 +39,6 @@ generator dbml {
 ```sh
 #
 npx prisma generate
-yarn dlx prisma generate
 ```
 
 ### Missing `node_modules` Binary Path

@@ -212,16 +212,3 @@ npx prisma studio
 echo 'USE develop; DROP DATABASE <db-name>;' | \
   npx prisma db execute --stdin
 ```
-
-<!--
-generator client {
-  provider        = "prisma-client-js"
-  previewFeatures = ["multiSchema"]
-}
-
-datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
-  schemas  = ["accounts", "connectors", "payments", "tasks"]
-}
--->

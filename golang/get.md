@@ -2,7 +2,7 @@
 
 ## Issues
 
-### TBD
+### Private Repository
 
 ```log
 go: module github.com/<owner>/<repo>: git ls-remote -q origin in /Users/brunowego/.go/1.19.4/pkg/mod/cache/vcs/d271f198b1b321188ae506a8fd2450d845784acd90fa2732f8d6ea40291c6b4a: exit status 128:
@@ -13,12 +13,14 @@ go: module github.com/<owner>/<repo>: git ls-remote -q origin in /Users/brunoweg
   and the repository exists.
 ```
 
-TODO
-
-<!--
+```sh
+#
 go env -w GOPRIVATE='github.com/<owner>'
 
+#
 go get -x -v github.com/<owner>/<repo>
+```
 
+<!--
 cat ~/.netrc
 -->

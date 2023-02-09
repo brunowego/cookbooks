@@ -1,11 +1,12 @@
 # Svix
 
-**Keywords:** Webhooks
+**Keywords:** Webhook Orchestration
 
 ## Links
 
 - [Code Repository](https://github.com/svix/svix-webhooks/)
 - [Main Website](https://svix.com)
+- [Dashboard](https://dashboard.svix.com)
 - [Status Page](https://status.svix.com)
 
 ## Docker
@@ -93,11 +94,21 @@ scoop install svix
 svix -h
 ```
 
-<!-- ### Usage
+<!-- ### Configuration
 
 ```sh
 #
 svix login
+
+#
+cat ~/.config/svix/config.toml
+``` -->
+
+<!-- ### Usage
+
+```sh
+#
+svix listen http://localhost:8071/webhook
 
 #
 echo '{ "name": "demo" }' | svix application create
