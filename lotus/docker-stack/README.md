@@ -4,7 +4,7 @@
 
 ```sh
 #
-git clone https://github.com/uselotus/lotus.git && cd "$_"
+git clone https://github.com/uselotus/lotus lotus && cd "$_"
 
 #
 chmod 755 ./scripts/self-host.sh

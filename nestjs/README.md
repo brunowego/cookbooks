@@ -21,6 +21,10 @@ https://github.com/saadjhk/binance-day-trader
 https://github.com/getlarge/ticketing
 -->
 
+<!--
+nest-env.d.ts
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/nestjs/nest)
@@ -39,6 +43,9 @@ https://github.com/getlarge/ticketing
 ```sh
 # Using Yarn
 yarn add @nestjs/cli --dev
+
+# Using pnpm
+pnpm add @nestjs/cli -D
 ```
 
 <!-- ### Issues
@@ -80,17 +87,17 @@ npm install -g @nestjs/cli
 ### Commands
 
 ```sh
-nest -h
+npx @nestjs/cli -h
 ```
 
 ### Bootstrap
 
 ```sh
 #
-nest new \
+npx @nestjs/cli new \
   -gs \
   -l TypeScript \
-  -p yarn \
+  -p pnpm \
   --strict \
   <api-name>
 ```
@@ -99,7 +106,7 @@ nest new \
 
 ```sh
 #
-nest info
+npx @nestjs/cli info
 ```
 
 <!--

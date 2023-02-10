@@ -6,7 +6,7 @@
 
 ## Related
 
-- [Database Markup Language (DBML)](/dbml.md)
+- [Database Markup Language (DBML)](/dbdocs/dbml.md)
 
 ## Installation
 

@@ -35,9 +35,6 @@ trunk -h
 trunk init
 
 #
-trunk config share
-
-#
 trunk login
 trunk whoami
 
@@ -54,7 +51,6 @@ trunk upgrade
 #
 trunk config print
 
-#
 trunk config share
 trunk config hide
 ```

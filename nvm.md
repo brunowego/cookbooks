@@ -1,4 +1,4 @@
-# Node Version Manager
+# Node Version Manager (nvm)
 
 ## CLI
 
