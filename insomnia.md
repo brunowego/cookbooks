@@ -1,5 +1,9 @@
 # Insomnia
 
+## Links
+
+- [Code Repository](https://github.com/Kong/insomnia)
+
 ## App
 
 ### Installation

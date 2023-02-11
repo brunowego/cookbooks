@@ -1,40 +1,27 @@
 # Jest
 
-<!--
-jest-sonar-reporter
--->
-
 **Keywords:** Assertion Library, Unit Testing
 
-<!--
-https://github.com/correttojs/next-monorepo/tree/main/.jest
+## Links
 
-vscode-jest
+- [Code Repository](https://github.com/facebook/jest)
+- [Main Website](https://jestjs.io)
+- Docs
+  - [Configuring Jest](https://jestjs.io/docs/configuration)
 
-"test": "jest",
-"test:watch": "jest --watch",
-"test:cov": "jest --coverage",
-"test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-"test:e2e": "jest --config ./test/jest-e2e.json"
+## CLI
 
-"test": "yarn test:web && yarn test:wcl && yarn test:api",
-"test:api": "jest -c jest.config.api.js",
-"test:wcl": "jest -c jest.config.wcl.js",
-"test:web": "jest -c jest.config.web.js",
--->
+### Commands
 
-TODO
-
-<!--
 ```sh
-cat << EOF > ./jest.config.js
-module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-}
-EOF
+npx jest -h
 ```
--->
+
+### Initialize
+
+```sh
+npx jest --init
+```
 
 ## Library
 
@@ -44,11 +31,6 @@ EOF
 # Using Yarn
 yarn add @types/jest jest ts-jest --dev
 ```
-
-<!--
-ts-jest
-eslint-plugin-jest
--->
 
 ### Configuration
 
@@ -60,69 +42,77 @@ eslint-plugin-jest
     // ...
     "test": "jest",
     "test:watch": "jest --watch",
-    "coverage": "jest --collect-coverage"
+    "test:cov": "jest --collect-coverage"
     // ...
   }
 }
 ```
 
-<!-- **Refer:** `./jest.config.ts`
-
-```js
-const nextJest = require("next/jest");
-
-const createJestConfig = nextJest({
-  dir: "./",
-});
-
-const customJestConfig = {
-  setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
-  moduleNameMapper: {
-    "^@/components/(.*)$": "<rootDir>/src/components/$1",
-    "^@/pages/(.*)$": "<rootDir>/src/pages/$1",
-  },
-  testEnvironment: "jest-environment-jsdom",
-};
-
-module.exports = createJestConfig(customJestConfig);
-``` -->
-
-**Refer:** `./jest.setup.ts`
+**Refer:** `./jest.config.ts`
 
 ```ts
-import { server } from './src/mocks/server.js'
+import type { Config } from 'jest'
 
-beforeAll(() => server.listen())
-
-afterEach(() => server.resetHandlers())
-
-afterAll(() => server.close())
-```
-
-### Extend With
-
-#### Eslint
-
-```sh
-# Using NPM
-npm install eslint-plugin-jest --save-dev
-
-# Using Yarn
-yarn add eslint-plugin-jest --dev
-```
-
-**Refer:** `./.eslintrc.cjs`
-
-```cjs
-/**
- * @type { import('@types/eslint').Linter.Config }
- */
-const eslintRC = {
-  plugins: [
-    // ...
-    'jest',
-  ],
+const config: Config = {
+  verbose: true,
 }
 
-module.exports = eslintRC
+export default config
 ```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension Orta.vscode-jest
+
+#
+jq '."recommendations" += ["Orta.vscode-jest"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
+
+### Issues
+
+#### Missing Module Mapper
+
+```log
+Cannot find module '@/app.controller' from 'app.controller.spec.ts'
+```
+
+**Refer:** `./tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    // ...
+    "resolveJsonModule": true,
+    // ...
+  }
+}
+```
+
+**Refer:** `./jest.config.ts`
+
+```ts
+import type { Config } from 'jest'
+import { pathsToModuleNameMapper } from 'ts-jest'
+import { compilerOptions } from './tsconfig.json'
+
+const config: Config = {
+  // ...
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+    prefix: '<rootDir>/../../',
+  }),
+}
+
+export default config
+```
+
+#### TBD
+
+```log
+SyntaxError: Cannot use import statement outside a module
+```
+
+TODO

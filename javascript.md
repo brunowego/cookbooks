@@ -19,11 +19,6 @@ https://linkedin.com/learning/javascript-web-form-programming/building-modern-we
 
 - Immediately Invoked Function Expression (IIFE)
 
-## Testing
-
-- JSUnit
-- Mocha
-
 ## Tips
 
 ### Debugger

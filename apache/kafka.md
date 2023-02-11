@@ -1,5 +1,7 @@
 # Apache Kafka
 
+**Keywords:** Messaging System
+
 ## Links
 
 - [Code Repository](https://github.com/apache/kafka)

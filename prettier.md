@@ -101,6 +101,11 @@ module.exports = eslintRC
 
 ```sh
 #
+echo '{}' > "$PWD"/.vscode/settings.json
+```
+
+```sh
+#
 code --install-extension esbenp.prettier-vscode
 
 #

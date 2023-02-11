@@ -4,27 +4,6 @@
 https://github.com/search?o=desc&q=filename%3Apackage.json+%22nestjs%22+path%3Aapps&s=indexed&type=Code
 -->
 
-<!--
-https://github.com/lobor/prycto
-https://github.com/novuhq/novu/tree/main/apps/api
-https://github.com/NikhilCodes/dysonsh/tree/dev/apps/api
-
-https://github.com/tkssharma/nestjs-advance-course
-
-https://github.com/rayzrchen/star-app/tree/main/src
-https://github.com/choewy/nest-js-lecture/tree/master/src
-https://github.com/line/abc-user-feedback
-https://github.com/DavidBarcenas/food-delivery-backend
-https://github.com/qin-todo-teamJ4/qin-todo
-
-https://github.com/saadjhk/binance-day-trader
-https://github.com/getlarge/ticketing
--->
-
-<!--
-nest-env.d.ts
--->
-
 ## Links
 
 - [Code Repository](https://github.com/nestjs/nest)
@@ -74,6 +53,8 @@ TypeError: Cannot set property metadata of #<Repository> which has only a getter
 
 ```sh
 # Using NPX
+npx nest -h
+# or
 npx @nestjs/cli -h
 ```
 
@@ -87,96 +68,16 @@ npm install -g @nestjs/cli
 ### Commands
 
 ```sh
-npx @nestjs/cli -h
-```
-
-### Bootstrap
-
-```sh
-#
-npx @nestjs/cli new \
-  -gs \
-  -l TypeScript \
-  -p pnpm \
-  --strict \
-  <api-name>
+npx nest -h
 ```
 
 ### Usage
 
 ```sh
 #
-npx @nestjs/cli info
+npx nest info
+
+#
+npx nest generate -h
+npx nest g class config
 ```
-
-<!--
-#
-nest generate application
-
-#
-nest generate class
-
-#
-nest generate configuration
-
-#
-nest generate controller
-
-#
-nest generate decorator
-
-#
-nest generate filter
-
-#
-nest generate gateway
-
-#
-nest generate guard
-
-#
-nest generate interceptor
-
-#
-nest generate interface
-
-#
-nest generate middleware
-
-#
-nest generate module
-
-#
-nest generate pipe
-
-#
-nest generate provider
-
-#
-nest generate resolver
-
-#
-nest generate service
-
-#
-nest generate library
-
-#
-nest generate sub-app
-
-#
-nest generate resource
--->
-
-<!--
-@nestjs/apollo
-@nestjs/axios
-@nestjs/common
-@nestjs/config
-@nestjs/core
-@nestjs/graphql
-@nestjs/platform-express
-@nestjs/swagger
-@nestjs/terminus
-@nestjs/throttler
--->

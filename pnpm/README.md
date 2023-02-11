@@ -97,6 +97,12 @@ pnpx <command>
 
 ### Tips
 
+#### Autocomplete
+
+```sh
+pnpm install-completion zsh
+```
+
 #### Add Pre-Post Scripts
 
 ```sh

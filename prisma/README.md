@@ -13,11 +13,15 @@ https://github.com/podkrepi-bg/api/tree/master/db/seed
 - [Main Website](https://prisma.io/)
 - [Prisma Data Platform](https://cloud.prisma.io/)
 - [Ask Me Anything](https://ama-prisma.vercel.app/)
-- [Example projects](https://prisma.io/docs/about/prisma/example-projects)
 
-## Guides
+## Docs
 
 - [Concepts / Components / Prisma Data Platform](https://prisma.io/docs/concepts/components/prisma-data-platform)
+- [Guides / Database / Multi-schema](https://prisma.io/docs/guides/database/multi-schema)
+
+<!--
+- [Example projects](https://prisma.io/docs/about/prisma/example-projects)
+-->
 
 ## Terms
 

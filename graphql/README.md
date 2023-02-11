@@ -58,6 +58,11 @@ https://www.youtube.com/watch?v=QrEOvHdH2Cg
 - Operation Name
 - Variables
 
+## Tools
+
+- [GraphQL IDE](https://github.com/graphql/graphiql)
+- [Hoppscotch](/hoppscotch/README.md)
+
 ## Library
 
 ### Installation

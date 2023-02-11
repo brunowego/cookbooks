@@ -1,4 +1,8 @@
-# mermaid
+# Mermaid
+
+<!--
+4 spaces
+-->
 
 ## Links
 
@@ -61,4 +65,35 @@ jq '."recommendations" += ["bpruitt-goddard.mermaid-markdown-syntax-highlighting
 
 ```sh
 brew install mermaid-cli
+```
+
+### Commands
+
+```sh
+mmdc -h
+```
+
+### Usage
+
+```sh
+#
+mmdc \
+  -t neutral \
+  -i ./<filename>.mmd \
+  -o ./<filename>.svg \
+  -b white
+```
+
+### Tips
+
+#### Using with Docs
+
+**Refer:** `./package.json`
+
+```json
+{
+  "scripts": {
+    "docs:architecture": "mmdc -t neutral -i ./docs/architecture.mmd -o ./docs/assets/images/architecture.svg -b white"
+  }
+}
 ```

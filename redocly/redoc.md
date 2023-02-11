@@ -9,10 +9,7 @@ https://github.com/osscameroon/prolang-api/blob/main/frontend/pages/documentatio
 ## Links
 
 - [Code Repository](https://github.com/Redocly/redoc)
-- [Main Website](https://redocly.com)
 - [Demo](https://redocly.github.io/redoc)
-- [Application](https://app.redocly.com)
-- [API Reference](https://api-reference.rebilly.com)
 
 ## CLI
 
@@ -22,17 +19,54 @@ https://github.com/osscameroon/prolang-api/blob/main/frontend/pages/documentatio
 npx redoc-cli -h
 ```
 
+### Installation
+
+```sh
+# Using pnpm
+pnpm add redoc-cli -D
+```
+
 <!-- ### Usage
 
 ```sh
 #
-redoc-cli serve
+redoc-cli lint ./openapi.json
 
 #
-redoc-cli build
+redoc-cli serve ./openapi.json
+
+#
+redoc-cli build ./openapi.json
 
 #
 redoc-cli bundle
+``` -->
+
+<!-- **Refer** `./.redocly.yaml`
+
+```yml
+---
+lint:
+  extends:
+    - recommended # This is the default (and built in) configuration. If it is too strict, try `minimal`.
+
+  rules:
+    no-sibling-refs:
+      severity: error
+
+    no-unused-components:
+      severity: error
+
+    boolean-parameter-prefixes:
+      severity: error
+      prefixes: ['should', 'is', 'has']
+
+  referenceDocs:
+    pagination: section
+    showConsole: true
+    theme:
+      menu:
+        backgroundColor: '#ffffff'
 ``` -->
 
 ## Docker

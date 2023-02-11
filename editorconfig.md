@@ -39,7 +39,6 @@ mkdir "$PWD"/.vscode
 
 #
 echo '{}' > "$PWD"/.vscode/extensions.json
-echo '{}' > "$PWD"/.vscode/settings.json
 ```
 
 ```sh

@@ -7,7 +7,7 @@
 ```json
 {
   "scripts": {
-    "jest:integration": "jest -c tests/integration/jest.config.js",
+    "jest:integration": "jest -c ./tests/integration/jest.config.js",
     "test:integration": "start-server-and-test storybook http-get://localhost:6006 jest:integration"
   }
 }
