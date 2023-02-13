@@ -12,8 +12,8 @@ flowchart LR
     classDef app fill:#f7e081,stroke:#333,stroke-width:1px
 
 %% defining entities
-    FE[React app]
-    LB[Nginx proxy]
+    FE[Frontend]
+    LB[Ingress Controller]
     A[Auth API]
     A-M[(Mongo)]
     T[Tickets API]
@@ -25,19 +25,19 @@ flowchart LR
     St[Stripe]
     E[Expiration API]
     E-R[(Redis)]
-    NATS[NATS streaming server]
+    SS[Streaming Server]
 
 %% assigning styles to entities
     %%AS,OS,ES,TS,PS:::service
     %%class A,T,O,E,P,FE app;
 
-%%click A "http://www.github.com/getlarge/ticketing/apps/auth" _blank
+%%click A "https://github.com/brunowego/boilerplates" _blank
 
 %% flow
     FE -->|HTTP| LB
     FE -->|HTTP| St <-->|HTTP| PS
     LB --->|HTTP| AS & TS & OS & PS
-    NATS <-.->|HTTP| TS & OS & ES & PS
+    SS <-.->|HTTP| TS & OS & ES & PS
     subgraph AS [Auth service]
     direction LR
     A --> A-M
@@ -59,3 +59,9 @@ flowchart LR
     P --> P-M
     end
 ```
+
+### Table of Contents
+
+- Frontend: React App
+- Ingress Controller: NGINX
+- Streaming Server: NATS

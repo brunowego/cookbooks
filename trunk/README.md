@@ -75,7 +75,7 @@ trunk upgrade
 trunk plugins add <uri>
 
 #
-trunk cache
+trunk cache clean
 
 #
 trunk daemon

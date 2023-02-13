@@ -2,6 +2,160 @@
 
 **Keywords:** API Gateway
 
+<!--
+curl https://raw.githubusercontent.com/Kong/kong/master/kong.conf.default -o kong.conf.default
+-->
+
+## Links
+
+- [Code Repository](https://github.com/Kong/kong)
+- [Main Website](https://konghq.com)
+- [Plugin Hub](https://docs.konghq.com/hub/)
+
+## CLI
+
+### Links
+
+- Docs
+  - [CLI Reference](https://docs.konghq.com/gateway/latest/reference/cli/)
+  - [Configuration Reference for Kong Gateway](https://docs.konghq.com/gateway/latest/reference/configuration/)
+
+### Installation
+
+#### Homebrew
+
+**WIP:** Currently not working as expected.
+
+```sh
+brew unlink md5sha1sum
+
+brew tap kong/kong
+brew install kong
+```
+
+<!-- ### Commands -->
+
+<!-- ### Usage
+
+```sh
+#
+
+``` -->
+
+<!--
+kong prepare
+kong migrations up
+kong config init
+kong reload
+kong start --conf /path/to/kong.conf
+kong start
+kong restart
+kong stop
+kong check <path/to/kong.conf>
+-->
+
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h postgres \
+  -e POSTGRES_USER='kong' \
+  -e POSTGRES_PASSWORD='kong' \
+  -e POSTGRES_DB='kong' \
+  -v kong-postgres-data:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  --name kong-postgres \
+  --network workbench \
+  docker.io/library/postgres:11.2-alpine
+
+#
+docker run -i --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -e KONG_PG_HOST='kong-postgres' \
+  -e KONG_PG_USER='kong' \
+  -e KONG_PG_PASSWORD='kong' \
+  -e KONG_PG_DATABASE='kong' \
+  --name kong-migrations \
+  --network workbench \
+  docker.io/library/kong:3.1.1-alpine kong migrations bootstrap
+
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h kong \
+  -e KONG_PG_HOST='kong-postgres' \
+  -e KONG_PG_USER='kong' \
+  -e KONG_PG_PASSWORD='kong' \
+  -e KONG_PG_DATABASE='kong' \
+  -e KONG_ADMIN_LISTEN='0.0.0.0:8001' \
+  -p 8000:8000 \
+  -p 8001:8001 \
+  -p 8443:8443 \
+  -p 8444:8444 \
+  --name kong \
+  --network workbench \
+  docker.io/library/kong:3.1.1-alpine
+```
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:8001/services'
+```
+
+### Remove
+
+```sh
+docker rm -f kong-postgres kong
+
+docker volume rm kong-postgres-data
+```
+
+## Docker (DB-less)
+
+### Links
+
+- Docs
+  - [DB-less and Declarative Configuration](https://docs.konghq.com/gateway/latest/production/deployment-topologies/db-less-and-declarative-config/)
+
+```sh
+#
+cat << EOF > ./kong.yml
+
+EOF
+
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h kong \
+  -e KONG_DATABASE='off' \
+  -e KONG_DECLARATIVE_CONFIG='/usr/local/kong/declarative/kong.yml' \
+  -e KONG_PROXY_LISTEN='0.0.0.0:8000' \
+  -e KONG_PROXY_LISTEN_SSL='0.0.0.0:8443' \
+  -e KONG_ADMIN_LISTEN='0.0.0.0:8001' \
+  -e KONG_PROXY_ACCESS_LOG='/dev/stdout' \
+  -e KONG_PROXY_ERROR_LOG='/dev/stderr' \
+  -e KONG_ADMIN_ACCESS_LOG='/dev/stdout' \
+  -e KONG_ADMIN_ERROR_LOG='/dev/stderr' \
+  -e KONG_LOG_LEVEL='debug' \
+  -v "$PWD"/kong.yml:/usr/local/kong/declarative/kong.yml \
+  -p 8000:8000 \
+  -p 8001:8001 \
+  -p 8443:8443 \
+  --name kong \
+  --network workbench \
+  docker.io/library/kong:3.1.1-alpine kong start
+```
+
 ## Helm
 
 **WIP:** Currently not working as expected.
@@ -152,71 +306,4 @@ helm uninstall kong \
 kubectl delete ns kong-system \
   --grace-period=0 \
   --force
-```
-
-## Docker
-
-### Network
-
-```sh
-docker network create workbench \
-  --subnet 10.1.1.0/24
-```
-
-### Running
-
-```sh
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h postgres \
-  -e POSTGRES_USER=kong \
-  -e POSTGRES_PASSWORD=kong \
-  -e POSTGRES_DB=kong \
-  -v kong-postgres-data:/var/lib/postgresql/data \
-  -p 5432:5432 \
-  --name kong-postgres \
-  --network workbench \
-  docker.io/library/postgres:11.2-alpine
-```
-
-```sh
-docker run -i --rm \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -e KONG_PG_HOST=kong-postgres \
-  -e KONG_PG_USER=kong \
-  -e KONG_PG_PASSWORD=kong \
-  -e KONG_PG_DATABASE=kong \
-  --name kong-migrations \
-  --network workbench \
-  docker.io/library/kong:1.1.2-alpine kong migrations bootstrap
-```
-
-```sh
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h kong \
-  -e KONG_PG_HOST=kong-postgres \
-  -e KONG_PG_USER=kong \
-  -e KONG_PG_PASSWORD=kong \
-  -e KONG_PG_DATABASE=kong \
-  -e KONG_ADMIN_LISTEN=0.0.0.0:8001 \
-  -p 8000:8000 \
-  -p 8001:8001 \
-  -p 8443:8443 \
-  -p 8444:8444 \
-  --name kong \
-  --network workbench \
-  docker.io/library/kong:1.1.2-alpine
-```
-
-```sh
-echo -e '[INFO]\thttp://127.0.0.1:8001'
-```
-
-### Remove
-
-```sh
-docker rm -f kong-postgres kong
-
-docker volume rm kong-postgres-data
 ```

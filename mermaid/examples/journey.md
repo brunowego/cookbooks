@@ -8,7 +8,7 @@
 
 ```mermaid
 journey
-    title Exchanging tickets online
+    title Exchanging Tickets
     section Register
         Create a user: 3: Seller, Buyer
         Signin : 3: Seller

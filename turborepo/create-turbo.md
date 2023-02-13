@@ -14,12 +14,6 @@ npx create-turbo@latest -h
 ## Usage
 
 ```sh
-#
-npx create-turbo@latest \
-  --no-install \
-  ./<app-name> && \
-    cd "$_"
-
 # Use pnpm
 npx create-turbo@latest \
   --use-pnpm \

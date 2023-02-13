@@ -20,6 +20,10 @@ https://github.com/satyatiwar/satyam
 
 - [Rollup](/rollup.md)
 
+<!--
+esbuild
+-->
+
 ## Glossary
 
 - Hot Module Replacement (HMR)

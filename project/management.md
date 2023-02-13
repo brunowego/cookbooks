@@ -12,7 +12,8 @@
 - [Microsoft SharePoint](/microsoft/sharepoint.md)
 - [Notion](/notion.md)
 - [Nuclino](https://nuclino.com)
-- [Zenhub](https://zenhub.com)
+- [Redmine](/redmine.md)
+- [Zenhub](https://zenhub.com) 🌟
 
 <!--
 Taiga

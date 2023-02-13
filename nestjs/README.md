@@ -10,6 +10,10 @@ https://github.com/search?o=desc&q=filename%3Apackage.json+%22nestjs%22+path%3Aa
 - [Main Website](https://nestjs.com)
 - [Docs](https://docs.nestjs.com)
 
+<!--
+https://github.com/nestjs/nest/issues/1006
+-->
+
 ## Docs
 
 - [Configuration](https://docs.nestjs.com/techniques/configuration)

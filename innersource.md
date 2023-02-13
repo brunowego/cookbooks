@@ -2,7 +2,11 @@
 
 ## Links
 
-- [InnerSource Commons](https://innersourcecommons.org/)
+- [InnerSource Commons](https://innersourcecommons.org)
+
+## Articles
+
+- [GitHub / An introduction to innersource](https://resources.github.com/innersource/fundamentals/)
 
 ## Adopting an InnerSource Culture
 

@@ -55,6 +55,14 @@ kubectl auth can-i --list
 
 ### Issues
 
+#### TBD
+
+```log
+Error: google-github-actions/get-gke-credentials failed with: required "container.clusters.get" permission(s) for "projects/<name>/locations/<location>/clusters/<name>".
+```
+
+TODO
+
 #### Missing Authentication
 
 ```log
