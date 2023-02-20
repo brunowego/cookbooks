@@ -4,10 +4,22 @@
 
 ### Installation
 
+#### Homebrew
+
+```sh
+brew install mkdocs
+```
+
 #### pip
 
 ```sh
-pip install mkdocs
+pip3 install -U mkdocs
+```
+
+### Commands
+
+```sh
+mkdocs -h
 ```
 
 ### Usage

@@ -2,6 +2,9 @@
 
 <!--
 https://github.com/BackendWorks/nestjs-microservices
+
+https://www.youtube.com/watch?v=JJEKPqSlXvk
+https://www.youtube.com/watch?v=xlGNn3vJ-lQ
 -->
 
 <!--

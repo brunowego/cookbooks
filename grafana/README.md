@@ -146,10 +146,11 @@ helm repo update
 
 ```sh
 #
-kubectl create ns monitoring
+kubectl create ns grafana
+# kubectl create ns monitoring
 
 #
-kubens monitoring
+kubens grafana
 
 #
 helm search repo -l grafana/grafana
@@ -227,6 +228,10 @@ kubectl get secret grafana \
 
 ```sh
 helm uninstall grafana
+
+kubectl delete ns grafana \
+  --grace-period=0 \
+  --force
 ```
 
 ## CLI

@@ -8,9 +8,8 @@ yarn upgrade-interactive
 
 ### Installation
 
-#### NPM
-
 ```sh
+# Using NPM
 npm install npm-check-updates -g
 ```
 

@@ -54,3 +54,7 @@ op -h
 #
 op signin <example>
 ```
+
+<!--
+op inject -i app-config.1password.yaml.tpl -o app-config-credentials.yaml
+-->

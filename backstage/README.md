@@ -3,20 +3,32 @@
 **Keywords:** Developer Portal, Software Catalog
 
 <!--
-https://github.com/backstage/backstage/tree/master/docs/auth
-https://github.com/backstage/backstage/blob/master/docs/auth/index.md#adding-the-provider-to-the-sign-in-page
+https://github.com/search?o=desc&q=path%3Apackages%2Fbackend+%22backstage-cli%22+filename%3Apackage.json&s=indexed&type=Code
+-->
+
+<!--
+https://github.com/devxp-tech/backstage
+https://github.com/backstage/software-templates
 -->
 
 ## Links
 
 - [Code Repository](https://github.com/backstage/backstage)
 - [Main Website](https://backstage.io/)
-- [Demo](https://demo.backstage.io/)
 - [Spotify / Learn](https://backstage.spotify.com/learn/)
 - Docs
   - [Backstage Software Catalog](https://backstage.io/docs/features/software-catalog/software-catalog-overview)
   - [TechDocs Documentation](https://backstage.io/docs/features/techdocs/techdocs-overview)
   - [Backstage Software Templates](https://backstage.io/docs/features/software-templates/software-templates-index)
+
+<!-- ##
+
+https://roadie.io/ -->
+
+## Demos
+
+- [Backstage](https://demo.backstage.io)
+- [Open edX](https://github.com/openedx/openedx-backstage)
 
 ## Configuration
 
@@ -49,6 +61,76 @@ npx @backstage/create-app \
 # U
 yarn backstage-cli create
 ``` -->
+
+<!-- backstage-cli clean
+package clean -->
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension Intility.vscode-backstage
+
+#
+jq '."recommendations" += ["Intility.vscode-backstage"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
+
+**Shortcut:** `Shift (⇧) + N`
+
+### Issues
+
+#### TBD
+
+```log
+backend:dev: 2023-02-17T09:33:32.879Z backstage error Request failed with status 500 Missing index for techdocs. This could be because the index hasn't been created yet or there was a problem during index creation. type=errorHandler name=MissingIndexError cause=undefined stack=MissingIndexError: Missing index for techdocs. This could be because the index hasn't been created yet or there was a problem during index creation.
+```
+
+TODO
+
+#### TBD
+
+```log
+5error: Failed to build the docs page: Failed to generate docs from /var/folders/p_/l3lkz0q96wl948j7twxnm1pw0000gn/T/backstage-AO2i9G into /private/var/folders/p_/l3lkz0q96wl948j7twxnm1pw0000gn/T/techdocs-tmp-sfmi0L; caused by Error: This operation requires Docker. Docker does not appear to be available. Docker.ping() failed with; caused by Error: connect ENOENT /var/run/docker.sock {"timestamp":"2023-02-17T08:56:41.434Z"}
+```
+
+```yaml
+techdocs:
+  builder: local
+  generator:
+    runIn: local
+  publisher:
+    type: local
+```
+
+#### TBD
+
+```log
+7ERROR    -  Config value 'markdown_extensions': Failed to load extension 'markdown_inline_mermaid'.8ModuleNotFoundError: No module named 'markdown_inline_mermaid'
+```
+
+TODO
+
+#### TBD
+
+```log
+5error: Failed to build the docs page: Failed to generate docs from /var/folders/p_/l3lkz0q96wl948j7twxnm1pw0000gn/T/backstage-JlQkER into /private/var/folders/p_/l3lkz0q96wl948j7twxnm1pw0000gn/T/techdocs-tmp-KiOw71; caused by Error: spawn mkdocs ENOENT {"timestamp":"2023-02-17T09:01:04.991Z"}
+```
+
+Missing mkdocs in your PATH. Please install it and try again.
+
+<!--
+pip3 install -U mkdocs-techdocs-core
+-->
+
+#### TBD
+
+```log
+7ERROR    -  Config value 'docs_dir': The path '/private/var/folders/p_/l3lkz0q96wl948j7twxnm1pw0000gn/T/backstage-WR7RRy/docs' isn't an existing directory.
+```
+
+TODO
 
 ## Helm
 

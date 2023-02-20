@@ -61,11 +61,17 @@ jq '."recommendations" += ["bpruitt-goddard.mermaid-markdown-syntax-highlighting
 
 ### Installation
 
-#### Homebrew
-
 ```sh
-brew install mermaid-cli
+# Using npm
+npm install @mermaid-js/mermaid-cli -g
+
+# Using Yarn
+yarn global add @mermaid-js/mermaid-cli
 ```
+
+<!--
+brew install mermaid-cli
+-->
 
 ### Commands
 
@@ -97,3 +103,13 @@ mmdc \
   }
 }
 ```
+
+### Issues
+
+#### Missing CLI
+
+```log
+Error : [Errno 2] No such file or directory: 'mmdc'
+```
+
+Just install Mermaid CLI globally.

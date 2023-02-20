@@ -51,6 +51,22 @@ kubectl cert-manager renew '<cert-name>'
 
 ## Isseus
 
+### Service Not Working
+
+```log
+Not ready: the cert-manager webhook service is not created yet
+```
+
+```sh
+#
+kubens cert-system
+
+#
+kubectl rollout restart deploy
+```
+
+If not works, try delete the Helm Chart and reinstall.
+
 ### TBD
 
 ```log

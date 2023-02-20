@@ -212,7 +212,7 @@ git fetch --all
 git diff <tag>
 
 #
-git diff <tag> -- [path/to/file]
+git diff <tag> -- <path/to/file>
 
 #
 git difftool tags/<FIRST TAG>:<FILE PATH> tags/<SECOND TAG>:<FILE PATH>
@@ -236,13 +236,21 @@ git remote set-url origin <url>
 
 ```sh
 # Creating a branch from a commit
-git branch [branch-name] <hash>
+git branch <branch-name> <hash>
 
 # Creating a branch from a tag
-git branch [branch-name] [tag-name]
+git branch <branch-name> <tag-name>
 ```
 
 #### Visual Studio Code
+
+```sh
+#
+code --install-extension mhutchie.git-graph
+
+#
+jq '."recommendations" += ["mhutchie.git-graph"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+```
 
 ##### Search Exclusion
 
@@ -266,16 +274,6 @@ jq '."files.exclude"."**/.git" |= false' "$HOME"/.vscode/settings.json | \
 # Locally
 jq '."files.exclude"."**/.git" |= false' "$PWD"/.vscode/settings.json | \
   sponge "$PWD"/.vscode/settings.json
-```
-
-##### Recommended Extensions
-
-```sh
-code \
-  --install-extension codezombiech.gitignore \
-  --install-extension sidneys1.gitconfig \
-  --install-extension mhutchie.git-graph \
-  --install-extension waderyan.gitblame
 ```
 
 #### Most recent changed branch

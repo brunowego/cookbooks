@@ -1,12 +1,28 @@
 # n8n
 
 <!--
+https://github.com/search?l=JSON&o=desc&q=filename%3A.json+%22pinData%22+%22+connections%22+%22versionId%22+%22nodes%22&s=indexed&type=Code
+-->
+
+<!--
+https://github.com/jrCleber/n8n-codechat-wapi
+-->
+
+<!--
+https://github.com/kazitcin/n8n/tree/main/workflows
+
+https://github.com/GustavoFLuz/n8n-workflow-backup/tree/main/workflows
+https://github.com/TheBoatyMcBoatFace/reinhardt-backups/tree/main/workflows
+https://github.com/besteetorn/n8n-backups/tree/main/workflows
+-->
+
+<!--
 https://autotic.com.br/curso-intensivo-de-n8n/
 https://promovaweb.com/n8n/courses/n8n99-setup-avancado-e-configuracoes-do-n8n/lesson/3fcf3536-db20-478a-886e-65e24d8700cb
 https://autotic.com.br/curso-intensivo-de-n8n/
 -->
 
-**Keywords:** Data Workflow, Low-code, BPM
+**Keywords:** Data Workflow, Low-code, BPM, iPaaS
 
 ## Links
 
@@ -25,6 +41,21 @@ https://autotic.com.br/curso-intensivo-de-n8n/
 
 - [macOS](https://downloads.n8n.io/file/n8n-downloads/n8n-mac.zip)
 - [Windows](https://downloads.n8n.io/file/n8n-downloads/n8n-win.zip)
+
+## CLI
+
+### Commands
+
+```sh
+npx n8n -h
+```
+
+<!-- ### Usage
+
+```sh
+#
+n8n start --tunnel
+``` -->
 
 ## Docker
 
@@ -65,8 +96,12 @@ docker run -d \
   -p 5678:5678 \
   --name n8n \
   --network workbench \
-  docker.io/n8nio/n8n:0.212.0
+  docker.io/n8nio/n8n:0.215.1
 ```
+
+<!--
+https://hub.docker.com/r/n8nio/n8n
+-->
 
 ```sh
 echo -e '[INFO]\thttp://127.0.0.1:5678'
@@ -217,3 +252,25 @@ kubectl delete ns n8n-system \
   --grace-period=0 \
   --force
 ```
+
+## Issues
+
+### TBD
+
+```log
+NodeOperationError: Forbidden - perhaps check your credentials? (item 0)
+```
+
+TODO
+
+<!--
+https://console.cloud.google.com/apis/library/gmail.googleapis.com?project=budibase-375113
+-->
+
+### TBD
+
+```log
+NodeOperationError: Precondition check failed. (item 0)
+```
+
+TODO

@@ -3,7 +3,5 @@
 ## Libraries
 
 - [Boring Avatars](https://boringavatars.com)
-
-## Tools
-
+- [DiceBear](/dicebear.md)
 - [Profile Pic Maker](https://pfpmaker.com)

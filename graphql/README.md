@@ -3,8 +3,6 @@
 **Keywords:** REST Alternative
 
 <!--
-https://github.com/hoppscotch/hoppscotch
-
 Underfitting and Overfitting
 
 Playground

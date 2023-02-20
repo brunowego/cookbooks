@@ -1,7 +1,7 @@
 # Kroki
 
 <!--
-https://artifacthub.io/packages/search?ts_query_web=Kroki&sort=relevance&page=1
+https://artifacthub.io/packages/helm/cowboysysop/kroki
 -->
 
 **Keywords:** Diagram

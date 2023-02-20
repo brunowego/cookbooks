@@ -36,8 +36,6 @@ EOF
 ```sh
 #
 mkdir "$PWD"/.vscode
-
-#
 echo '{}' > "$PWD"/.vscode/extensions.json
 ```
 

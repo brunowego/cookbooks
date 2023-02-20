@@ -203,9 +203,7 @@ helm get values '<name>' \
 <!-- ####
 
 ```sh
-helm template codecentric/keycloak \
-  -n keycloak \
-    > ./manifest.yaml
+helm template <repo>/<chart> > ./manifest.yaml
 ``` -->
 
 #### Visual Studio Code

@@ -1,0 +1,552 @@
+---
+# Source: openproject/charts/postgresql/templates/common.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: release-name-postgresql-credentials
+  labels:
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: postgresql
+    app.kubernetes.io/version: 14.6.0
+    helm-revision: "1"
+    helm.sh/chart: postgresql-11.0.22
+stringData:
+  postgresql-password: 'testpass'
+  postgresql-postgres-password: 'testroot'
+---
+# Source: openproject/templates/common.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  labels:
+    helm.sh/chart: openproject-3.0.23
+    app.kubernetes.io/name: openproject
+    app.kubernetes.io/instance: release-name
+    helm-revision: "1"
+    app.kubernetes.io/version: "12.4.3"
+    app.kubernetes.io/managed-by: Helm
+  name: dbcreds
+data:
+  postgresql-password: "SlZmWmJ0OEZpOGJmTzhRNDNUZWxKV3BIQkZGbGN3bnFGeWVhS0MyckVYcTU3ZG1YcUY="
+  postgresql-postgres-password: "elVlSEJEV0V2ODFqQlpZUEdzdEhOTEZBZ3ZzbUdwS3VldlhibzdwNXVEdHFWZ0ZjUlk="
+  url: "cG9zdGdyZXNxbDovL29wZW5wcm9qZWN0OkpWZlpidDhGaThiZk84UTQzVGVsSldwSEJGRmxjd25xRnllYUtDMnJFWHE1N2RtWHFGQHJlbGVhc2UtbmFtZS1wb3N0Z3Jlc3FsOjU0MzIvb3BlbnByb2plY3Q="
+  url-noql: "cG9zdGdyZXM6Ly9vcGVucHJvamVjdDpKVmZaYnQ4Rmk4YmZPOFE0M1RlbEpXcEhCRkZsY3ducUZ5ZWFLQzJyRVhxNTdkbVhxRkByZWxlYXNlLW5hbWUtcG9zdGdyZXNxbDo1NDMyL29wZW5wcm9qZWN0"
+  urlnossl: "cG9zdGdyZXNxbDovL29wZW5wcm9qZWN0OkpWZlpidDhGaThiZk84UTQzVGVsSldwSEJGRmxjd25xRnllYUtDMnJFWHE1N2RtWHFGQHJlbGVhc2UtbmFtZS1wb3N0Z3Jlc3FsOjU0MzIvb3BlbnByb2plY3Q/c3NsbW9kZT1kaXNhYmxl"
+  plainporthost: "cmVsZWFzZS1uYW1lLXBvc3RncmVzcWw="
+  plainhost: "cmVsZWFzZS1uYW1lLXBvc3RncmVzcWw="
+  jdbc: "amRiYzpwb3N0Z3Jlc3FsOi8vcmVsZWFzZS1uYW1lLXBvc3RncmVzcWw6NTQzMi9vcGVucHJvamVjdA=="
+type: Opaque
+---
+# Source: openproject/templates/common.yaml
+apiVersion: v1
+kind: Secret
+type: Opaque
+metadata:
+  name: openproject-secrets
+data:
+  SECRET_KEY_BASE: TEVyVUlNZ3JuQ0VheG1vRW5sSDBzSlpna0lhcWJWYTQ=
+---
+# Source: openproject/templates/common.yaml
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: release-name-openproject-assets
+  labels:
+    helm.sh/chart: openproject-3.0.23
+    app.kubernetes.io/name: openproject
+    app.kubernetes.io/instance: release-name
+    helm-revision: "1"
+    app.kubernetes.io/version: "12.4.3"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  accessModes:
+    - "ReadWriteOnce"
+  resources:
+    requests:
+      storage: "999Gi"
+---
+# Source: openproject/charts/postgresql/templates/common.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: release-name-postgresql
+  labels:
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: postgresql
+    app.kubernetes.io/version: 14.6.0
+    helm-revision: "1"
+    helm.sh/chart: postgresql-11.0.22
+  annotations:
+spec:
+  type: ClusterIP
+  ipFamilyPolicy: SingleStack
+  
+  ports:
+  - port: 5432
+    targetPort: 5432
+    protocol: TCP
+    name: main
+  selector:
+    app.kubernetes.io/name: postgresql
+    app.kubernetes.io/instance: release-name
+---
+# Source: openproject/templates/common.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: release-name-openproject
+  labels:
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: openproject
+    app.kubernetes.io/version: 12.4.3
+    helm-revision: "1"
+    helm.sh/chart: openproject-3.0.23
+  annotations:
+spec:
+  type: ClusterIP
+  ipFamilyPolicy: SingleStack
+  
+  ports:
+  - port: 10290
+    targetPort: 80
+    protocol: TCP
+    name: main
+  selector:
+    app.kubernetes.io/name: openproject
+    app.kubernetes.io/instance: release-name
+---
+# Source: openproject/templates/common.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: release-name-openproject
+  labels:
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: openproject
+    app.kubernetes.io/version: 12.4.3
+    helm-revision: "1"
+    helm.sh/chart: openproject-3.0.23
+  annotations:
+    rollme: IMsJt
+spec:
+  revisionHistoryLimit: 3
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: openproject
+      app.kubernetes.io/instance: release-name
+  template:
+    metadata:
+      annotations:
+        
+      labels:
+        app.kubernetes.io/name: openproject
+        app.kubernetes.io/instance: release-name
+    spec:
+      
+        
+      serviceAccountName: default
+      securityContext:
+          
+        fsGroup: 568
+        fsGroupChangePolicy: OnRootMismatch
+        runAsGroup: 0
+        runAsUser: 0
+        supplementalGroups:
+        - 568
+      dnsPolicy: ClusterFirst
+      dnsConfig:
+        options:
+          
+          - name: ndots
+            value: "1"
+      enableServiceLinks: false
+      terminationGracePeriodSeconds: 10
+      initContainers:
+        
+        - name: db-wait
+          image: tccr.io/truecharts/ubuntu:jammy-20221101@sha256:4b9475e08c5180d4e7417dc6a18a26dcce7691e4311e5353dbb952645c5ff43f
+          securityContext:
+            runAsUser: 568
+            runAsGroup: 568
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true
+          resources:
+            limits:
+              cpu: 4000m
+              memory: 8Gi
+            requests:
+              cpu: 10m
+              memory: 50Mi
+          env:
+          command:
+            - "/bin/sh"
+            - "-c"
+            - |
+              /bin/bash <<'EOF'
+              echo "Executing DB waits..."
+              until
+                pg_isready -U openproject -h release-name-postgresql
+                do sleep 2
+              done
+              EOF
+      containers:
+        - name: release-name-openproject
+          image: tccr.io/truecharts/openproject:12.4.3@sha256:6f68718f868d9c477340bcdc7c986fec82198318002dc7bd6e34fa11f97abe31
+          imagePullPolicy: IfNotPresent
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              add: []
+              drop: []
+            privileged: false
+            readOnlyRootFilesystem: false
+            runAsNonRoot: false
+        
+          env:
+            - name: PUID
+              value: "568"
+            - name: USER_ID
+              value: "568"
+            - name: UID
+              value: "568"
+            - name: UMASK
+              value: "2"
+            - name: UMASK_SET
+              value: "2"
+            - name: PGID
+              value: "568"
+            - name: GROUP_ID
+              value: "568"
+            - name: GID
+              value: "568"
+            - name: NVIDIA_VISIBLE_DEVICES
+              value: "void"
+            - name: TZ
+              value: "UTC"
+            - name: "DATABASE_URL"
+              valueFrom:
+                secretKeyRef:
+                  key: url-noql
+                  name: dbcreds
+            - name: "SECRET_KEY_BASE"
+              valueFrom:
+                secretKeyRef:
+                  key: SECRET_KEY_BASE
+                  name: openproject-secrets
+          envFrom:
+          ports:
+            - name: main
+              containerPort: 80
+              protocol: TCP
+          volumeMounts:
+            
+            - mountPath: /var/openproject/assets
+              name: assets
+            - mountPath: /shared
+              name: shared
+            - mountPath: /dev/shm
+              name: shm
+            - mountPath: /tmp
+              name: temp
+            - mountPath: /var/logs
+              name: varlogs
+          livenessProbe:
+            tcpSocket:
+              port: 80
+            initialDelaySeconds: 10
+            failureThreshold: 5
+            timeoutSeconds: 5
+            periodSeconds: 10
+          readinessProbe:
+            tcpSocket:
+              port: 80
+            initialDelaySeconds: 10
+            failureThreshold: 5
+            timeoutSeconds: 5
+            periodSeconds: 10
+          startupProbe:
+            tcpSocket:
+              port: 80
+            initialDelaySeconds: 10
+            failureThreshold: 60
+            timeoutSeconds: 2
+            periodSeconds: 5
+          
+          resources:
+            limits:
+              cpu: 4000m
+              memory: 8Gi
+            requests:
+              cpu: 10m
+              memory: 50Mi
+      volumes:
+        - name: assets
+          persistentVolumeClaim:
+            claimName: release-name-openproject-assets
+        - name: shared
+          emptyDir:
+            {}
+        - name: shm
+          emptyDir:
+            medium: Memory
+        - name: temp
+          emptyDir:
+            {}
+        - name: varlogs
+          emptyDir:
+            {}
+---
+# Source: openproject/charts/postgresql/templates/common.yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: release-name-postgresql
+  labels:
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: postgresql
+    app.kubernetes.io/version: 14.6.0
+    helm-revision: "1"
+    helm.sh/chart: postgresql-11.0.22
+  annotations:
+    rollme: 2aTYj
+spec:
+  revisionHistoryLimit: 3
+  replicas: 1
+  updateStrategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: postgresql
+      app.kubernetes.io/instance: release-name
+  serviceName: release-name-postgresql
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: postgresql
+        app.kubernetes.io/instance: release-name
+    spec:
+      
+        
+      serviceAccountName: default
+      securityContext:
+          
+        fsGroup: 568
+        fsGroupChangePolicy: OnRootMismatch
+        runAsGroup: 0
+        runAsUser: 568
+        supplementalGroups:
+        - 568
+      dnsPolicy: ClusterFirst
+      dnsConfig:
+        options:
+          
+          - name: ndots
+            value: "1"
+      enableServiceLinks: false
+      terminationGracePeriodSeconds: 10
+      initContainers:
+        
+      containers:
+        - name: release-name-postgresql
+          image: tccr.io/truecharts/postgresql:14.6.0@sha256:101b616f2cd0d4d3c1963ecdffd5ffc5704f202967288e718f7aa2ae526600bc
+          imagePullPolicy: IfNotPresent
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              add: []
+              drop: []
+            privileged: false
+            readOnlyRootFilesystem: false
+            runAsNonRoot: true
+        
+          env:
+            - name: UMASK
+              value: "2"
+            - name: UMASK_SET
+              value: "2"
+            - name: S6_READ_ONLY_ROOT
+              value: "1"
+            - name: NVIDIA_VISIBLE_DEVICES
+              value: "void"
+            - name: TZ
+              value: "UTC"
+            - name: "POSTGRESQL_POSTGRES_PASSWORD"
+              valueFrom:
+                secretKeyRef:
+                  key: postgresql-postgres-password
+                  name: 'dbcreds'
+            - name: "POSTGRES_DB"
+              value: "openproject"
+            - name: "POSTGRES_PASSWORD"
+              valueFrom:
+                secretKeyRef:
+                  key: postgresql-password
+                  name: 'dbcreds'
+            - name: "POSTGRES_USER"
+              value: "openproject"
+          envFrom:
+          ports:
+            - name: main
+              containerPort: 5432
+              protocol: TCP
+          volumeMounts:
+            
+            - mountPath: /shared
+              name: shared
+            - mountPath: /dev/shm
+              name: shm
+            - mountPath: /tmp
+              name: temp
+            - mountPath: /var/logs
+              name: varlogs
+            - mountPath: /bitnami/postgresql
+              name: db
+          livenessProbe:
+            exec:
+              command:
+              - sh
+              - -c
+              - until pg_isready -U ${POSTGRES_USER} -h localhost; do sleep 2 ; done
+            failureThreshold: 5
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 5
+          readinessProbe:
+            exec:
+              command:
+              - sh
+              - -c
+              - until pg_isready -U ${POSTGRES_USER} -h localhost; do sleep 2 ; done
+            failureThreshold: 5
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 5
+          startupProbe:
+            exec:
+              command:
+              - sh
+              - -c
+              - until pg_isready -U ${POSTGRES_USER} -h localhost; do sleep 2 ; done
+            failureThreshold: 60
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            timeoutSeconds: 2
+          
+          resources:
+            limits:
+              cpu: 4000m
+              memory: 8Gi
+            requests:
+              cpu: 10m
+              memory: 50Mi
+      volumes:
+        - name: shared
+          emptyDir:
+            {}
+        - name: shm
+          emptyDir:
+            medium: Memory
+        - name: temp
+          emptyDir:
+            {}
+        - name: varlogs
+          emptyDir:
+            {}
+  volumeClaimTemplates:
+    - metadata:
+        name: db
+      spec:
+        accessModes:
+          - "ReadWriteOnce"
+        resources:
+          requests:
+            storage: "999Gi"
+---
+# Source: openproject/templates/common.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: release-name-openproject-manifests
+  namespace: openproject
+  annotations:
+    "helm.sh/hook": pre-install, pre-upgrade
+    "helm.sh/hook-weight": "-7"
+    "helm.sh/hook-delete-policy": hook-succeeded,before-hook-creation
+---
+# Source: openproject/templates/common.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: release-name-openproject-manifests
+  annotations:
+    "helm.sh/hook": pre-install, pre-upgrade
+    "helm.sh/hook-weight": "-7"
+    "helm.sh/hook-delete-policy": hook-succeeded,before-hook-creation
+rules:
+  - apiGroups:  ["*"]
+    resources:  ["*"]
+    verbs:  ["*"]
+---
+# Source: openproject/templates/common.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: release-name-openproject-manifests
+  annotations:
+    "helm.sh/hook": pre-install, pre-upgrade
+    "helm.sh/hook-weight": "-7"
+    "helm.sh/hook-delete-policy": hook-succeeded,before-hook-creation
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: release-name-openproject-manifests
+subjects:
+  - kind: ServiceAccount
+    name: release-name-openproject-manifests
+    namespace: openproject
+---
+# Source: openproject/templates/common.yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  namespace: openproject
+  name: release-name-openproject-manifests
+  annotations:
+    "helm.sh/hook": pre-install, pre-upgrade
+    "helm.sh/hook-weight": "-6"
+    "helm.sh/hook-delete-policy": hook-succeeded,before-hook-creation
+spec:
+  template:
+    spec:
+      serviceAccountName: release-name-openproject-manifests
+      containers:
+        - name: release-name-openproject-manifests
+          image: tccr.io/truecharts/kubectl:v1.26.0@sha256:6d6e0e50f28b961ed1c1c6a9c140553238641591fbdc9ac7c1a348636f78c552
+          securityContext:
+            runAsUser: 568
+            runAsGroup: 568
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true
+          command:
+            - "/bin/sh"
+            - "-c"
+            - |
+              /bin/sh <<'EOF'
+              echo "installing manifests..."
+              kubectl apply --server-side --force-conflicts -k https://github.com/truecharts/manifests/manifests  || echo "Manifest application failed..."
+              EOF
+          volumeMounts:
+            - name: release-name-openproject-manifests-temp
+              mountPath: /tmp
+      restartPolicy: Never
+      volumes:
+        - name: release-name-openproject-manifests-temp
+          emptyDir: {}
