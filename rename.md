@@ -26,6 +26,10 @@ rename
 
 ### Usage
 
+<!--
+rename -f 'y/A-Z/a-z/' *
+-->
+
 ```sh
 # Slugify
 rename \

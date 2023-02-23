@@ -1,9 +1,11 @@
 # Pipenv
 
-## Alternatives
+**Keywords:** Python Package Manager
 
-- [Poetry](/poetry.md)
-- [Python Package Index (PIP3)](/pip3.md)
+## Links
+
+- [Code Repository](https://github.com/pypa/pipenv)
+- [Main Website](https://pipenv.pypa.io/en/latest/)
 
 ## CLI
 
@@ -49,7 +51,7 @@ verify_ssl = true
 [packages]
 
 [requires]
-python_version = "3.9"
+python_version = "3.11"
 EOF
 ```
 
@@ -58,9 +60,8 @@ EOF
 ```sh
 #
 pipenv install
-
-#
-pipenv install [package]
+pipenv install <package>
+pipenv install --system <package>
 
 #
 pipenv lock
@@ -87,12 +88,6 @@ pipenv check
 
 ### Tips
 
-#### System Install
-
-```sh
-pipenv install --system
-```
-
 #### Remove Virtualenv
 
 ```sh
@@ -108,7 +103,7 @@ pipenv --rm
 **Dependencies:** [Tom's Obvious, Minimal Language (TOML)](/toml.md)
 
 ```sh
-jq '."files.associations"."Pipenv" |= "toml"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+jq '."files.associations"."Pipenv" |= "toml"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
 #### Completion

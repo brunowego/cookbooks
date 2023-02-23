@@ -126,12 +126,9 @@ jq '."recommendations" += ["streetsidesoftware.code-spell-checker"]' "$HOME"/.vs
 jq '."cSpell.language" |= "en"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 # English + Portuguese
 jq '."cSpell.language" |= "en,pt,pt_BR"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
-
-#
-jq '."cSpell.diagnosticLevel" |= "Hint"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
 ```sh
-# Disable
+#
 jq '."cSpell.diagnosticLevel" |= "Hint"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```

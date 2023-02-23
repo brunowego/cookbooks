@@ -2,6 +2,8 @@
 
 <!--
 https://writer.mintlify.com/
+
+https://docs.uselotus.io/overview/why-lotus
 -->
 
 **Keywords:** Documentation as Code

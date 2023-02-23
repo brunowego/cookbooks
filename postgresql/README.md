@@ -9,3 +9,7 @@ pg_pool
 
 - [PostgreSQL Client](/postgresql/client.md)
 - [PostgreSQL Server](/postgresql/server.md)
+
+## Glossary
+
+- Generalized Inverted Index (GIN)

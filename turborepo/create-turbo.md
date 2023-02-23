@@ -15,7 +15,7 @@ npx create-turbo@latest -h
 
 ```sh
 # Use pnpm
-npx create-turbo@latest \
+pnpx create-turbo@latest \
   --use-pnpm \
   --no-install \
   ./<app-name> && \

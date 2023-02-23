@@ -57,6 +57,9 @@ npx prisma init --datasource-provider postgresql
 
 #
 yarn dlx prisma init --datasource-provider postgresql
+
+#
+pnpx prisma init --datasource-provider postgresql
 ```
 
 ### Configuration
@@ -71,12 +74,24 @@ mkdir -p ./db && mv ./prisma ./db/prisma
 ```json
 {
   // ...
+  "scripts": {
+    "db:validate": "prisma validate",
+    "db:generate": "prisma generate",
+    "db:generate:watch": "pnpm db:generate --watch",
+    "db:push": "prisma db push --skip-generate",
+  },
+  // ...
   "prisma": {
     "schema": "./db/prisma/schema.prisma"
   }
   // ...
 }
 ```
+
+<!--
+"db:dev": "prisma migrate dev",
+"db:migrate": "env-cmd -f .env.production.local prisma migrate deploy",
+-->
 
 ### Extend With
 
@@ -90,6 +105,9 @@ npm install prettier-plugin-prisma --save-dev
 
 # Using Yarn
 yarn add prettier-plugin-prisma --dev
+
+# Using pnpm
+pnpm add prettier-plugin-prisma -D
 ```
 
 **Refer:** `./prettier.config.cjs`

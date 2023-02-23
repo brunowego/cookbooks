@@ -1,5 +1,7 @@
 # Python Package Index (PIP3)
 
+**Keywords:** Python Package Manager
+
 ## References
 
 - [Configuration](https://pip.pypa.io/en/stable/user_guide/#configuration)

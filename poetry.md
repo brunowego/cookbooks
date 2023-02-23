@@ -1,5 +1,7 @@
 # Poetry
 
+**Keywords:** Python Package Manager
+
 ## References
 
 - [Doc](https://poetry.eustace.io/docs/)

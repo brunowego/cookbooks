@@ -1,2 +1,5 @@
 {
+  "recommendations": [
+    "ms-python.vscode-pylance"
+  ]
 }

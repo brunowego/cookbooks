@@ -34,6 +34,10 @@ https://linkedin.com/learning/python-automation-and-testing/welcome
 whl means wheels
 -->
 
+## Links
+
+- [Main Website](https://python.org)
+
 ## References
 
 - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
@@ -282,30 +286,6 @@ antigen bundle python
 ```sh
 ln -s /usr/bin/python3 /usr/bin/python
 ``` -->
-
-#### Visual Studio Code
-
-**_Dependencies_**: [Pylint](/pylint.md)
-
-```sh
-#
-code --install-extension ms-python.python
-
-#
-jq '."recommendations" += ["ms-python.python"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
-```
-
-```sh
-#
-code --install-extension ms-python.vscode-pylance
-
-#
-jq '."recommendations" += ["ms-python.vscode-pylance"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
-
-#
-jq '."python.languageServer" |= "Pylance"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
-# jq '."python.showStartPage" |= false' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
-```
 
 #### Warnings
 

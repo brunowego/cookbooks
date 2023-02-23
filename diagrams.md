@@ -12,17 +12,16 @@ https://github.com/patrickchugh/terravision
 
 - [Code Repository](https://github.com/mingrammer/diagrams)
 - [Main Website](https://diagrams.mingrammer.com)
+- [Examples](https://diagrams.mingrammer.com/docs/getting-started/examples)
 
-<!-- ## Library
+## Library
 
 ### Installation
 
 ```sh
+#
 pip3 install -U diagrams
+
+#
+pipenv install -d diagrams
 ```
-
-### Usage
-
-```sh
-terraform graph | diagrams --terraform -o ./graph.png
-``` -->

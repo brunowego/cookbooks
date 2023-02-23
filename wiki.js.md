@@ -1,5 +1,10 @@
 # Wiki.js
 
+## Links
+
+- [Code Repository](https://github.com/Requarks/wiki)
+- [Main Website](https://js.wiki)
+
 ## Docker
 
 ### Network

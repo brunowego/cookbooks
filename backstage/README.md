@@ -14,16 +14,13 @@ https://github.com/backstage/software-templates
 ## Links
 
 - [Code Repository](https://github.com/backstage/backstage)
-- [Main Website](https://backstage.io/)
+- [Main Website](https://backstage.io)
+- [Plugin](./plugins/README.md)
 - [Spotify / Learn](https://backstage.spotify.com/learn/)
 - Docs
   - [Backstage Software Catalog](https://backstage.io/docs/features/software-catalog/software-catalog-overview)
   - [TechDocs Documentation](https://backstage.io/docs/features/techdocs/techdocs-overview)
   - [Backstage Software Templates](https://backstage.io/docs/features/software-templates/software-templates-index)
-
-<!-- ##
-
-https://roadie.io/ -->
 
 ## Demos
 

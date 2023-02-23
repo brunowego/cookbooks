@@ -6,6 +6,31 @@
 
 ## Configuration
 
+<!--
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Next.js",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": ["src", "next-env.d.ts"],
+  "exclude": ["node_modules"]
+}
+-->
+
 ### Absolute Import
 
 **Refer:** `./tsconfig.json`
@@ -13,6 +38,7 @@
 ```json
 {
   "compilerOptions": {
+    // ...
     "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"]

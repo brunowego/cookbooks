@@ -30,9 +30,17 @@ pnpx @nestjs/cli new \
   -l TypeScript \
   -p pnpm \
   --strict \
-  ./<api-name>
+  ./<api-name> && \
+    "$_"
 ```
 
-### Boilerplate
+#### Using Boilerplate
 
-- [NestJS Base](https://github.com/brunowego/boilerplates/tree/nestjs-base)
+```sh
+#
+git clone \
+  --branch nestjs-base \
+  https://github.com/brunowego/boilerplates.git \
+  nestjs-base && \
+    cd "$_"
+```

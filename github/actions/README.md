@@ -374,6 +374,7 @@ gh run rerun
 
 #
 gh workflow list
+gh workflow list -R <org>/<repo>
 
 #
 gh workflow view
@@ -387,6 +388,28 @@ gh workflow run '<workflow-name>' \
 
 #
 gh run watch
+```
+
+### Tips
+
+<!-- ####
+
+```sh
+gh api repos/${REPO}/actions/runs/${run_id}/rerun -X POST
+``` -->
+
+#### Remove Failed Workflows
+
+```sh
+#
+export OWNER='<owner>'
+export REPO='<repo>'
+export WORKFLOW='<name>'
+
+#
+gh api "repos/$OWNER/$REPO/actions/workflows/$WORKFLOW/runs" \
+  -q '.workflow_runs[] | select(.conclusion == "failure") | "\(.id)"' | \
+    xargs -n 1 -I % gh api "repos/$OWNER/$REPO/actions/runs/%" -X DELETE --silent
 ```
 
 ### Issues
