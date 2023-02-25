@@ -83,6 +83,8 @@ Or:
 ```sh
 # MacOS
 ls "$HOME"/Library/DBeaverData
+
+cat "$HOME"/Library/DBeaverData/workspace6/General/.dbeaver/data-sources.json | gh gist create - -f dbeaver-data-sources.json
 ```
 
 #### SQL Formatting: Upper Case

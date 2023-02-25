@@ -67,10 +67,10 @@ docker \
 
 ## Issues
 
-###
+### TBD
 
 ```log
-Error response from daemon: denied
+Error response from daemon: Get "https://ghcr.io/v2/": denied: denied
 ```
 
 <!--

@@ -27,6 +27,9 @@ docker run -d \
   --name elsaworkflows \
   --network workbench \
   docker.io/elsaworkflows/elsa-dashboard-and-server:latest
+
+# Open
+echo -e '[INFO]\thttp://127.0.0.1:13000'
 ```
 
 ### Remove

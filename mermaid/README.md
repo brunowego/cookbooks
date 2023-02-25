@@ -106,6 +106,13 @@ mmdc \
 
 ### Issues
 
+#### TBD
+
+```log
+Error: Failed to launch the browser process!
+[0224/192533.442744:FATAL:zygote_host_impl_linux.cc(117)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/main/docs/linux/suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+```
+
 #### Missing CLI
 
 ```log

@@ -4,6 +4,8 @@
 
 <!--
 > Remote: Install Local Extensions in 'Dev Container: <name>'
+
+https://github.com/microsoft/vscode-dev-containers/tree/main/container-templates
 -->
 
 ## Links
