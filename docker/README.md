@@ -35,6 +35,12 @@ code --install-extension ms-azuretools.vscode-docker
 jq '."recommendations" += ["ms-azuretools.vscode-docker"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
+**Configuration:**
+
+```sh
+jq '."[dockerfile]"."editor.defaultFormatter" |= "ms-azuretools.vscode-docker"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+```
+
 ### Here document (heredoc)
 
 ```sh

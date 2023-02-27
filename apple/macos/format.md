@@ -2,7 +2,7 @@
 
 ## Disable Activation Lock
 
-Remove your device from "Find My".
+Remove your device from [Find My](https://icloud.com/find/).
 
 ## Make Bootable USB
 

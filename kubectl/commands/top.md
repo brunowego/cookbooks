@@ -6,7 +6,7 @@
 
 ## Dependencies
 
-- [Kubernetes Metrics Server](/kubernetes/kubernetes-metrics-server.md)
+- [Metrics Server](/metrics-server.md)
 
 ## Usage
 
@@ -15,10 +15,11 @@
 kubectl top nodes
 
 #
+kubectl top pods
 kubectl top pods --containers
 
-kubectl top pod '[pod-name]' \
-  -n '[namespace]'
+kubectl top pod '<pod-name>' \
+  -n '<namespace>'
 ```
 
 ## Tips
@@ -26,14 +27,18 @@ kubectl top pod '[pod-name]' \
 ### Filter
 
 ```sh
-kubectl grep pods [pod-name] --no-headers | \
+#
+export POD_NAME='<pod-name>'
+
+#
+kubectl grep pods "$POD_NAME" --no-headers | \
   awk '{print $2}' | \
     xargs -n 1 command kubectl top pods --no-headers
 ```
 
 ## Issues
 
-### Missing Kubernetes Metrics Server
+### Missing Metrics Server
 
 ```log
 Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
@@ -44,4 +49,4 @@ Error from server (NotFound): the server could not find the requested resource (
 kubectl describe apiservice v1beta1.metrics.k8s.io
 ```
 
-Install [Kubernetes Metrics Server](/kubernetes/kubernetes-metrics-server.md)
+Just install Metrics Server.

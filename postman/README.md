@@ -11,14 +11,12 @@ https://postman.com/<name>
 https://<name>.postman.co/settings/team/custom-domains
 -->
 
+**Keywords:** API Platform
+
 ## Links
 
 - [Org. Repository](https://github.com/postmanlabs)
 - [Main Website](https://postman.com)
-
-## Alternatives
-
-- [SoapUI](/soapui.md)
 
 ## Guides
 

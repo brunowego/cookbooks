@@ -80,8 +80,8 @@ choco install -y minikube
 minikube config list
 
 #
-minikube config set cpus 4
-minikube config set memory 8192
+minikube config set cpus 6
+minikube config set memory 12288
 minikube config set disk-size 40g
 
 #

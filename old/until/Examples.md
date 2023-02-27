@@ -3,14 +3,14 @@
 ## TBD
 
 ```sh
-until [condition]
+until <condition>
 do
-  [command]
+  <command>
 done
 ```
 
 ## TBD
 
 ```sh
-until [condition]; do [command]; done
+until <condition>; do <command>; done
 ```

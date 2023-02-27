@@ -20,15 +20,18 @@ git config --global user.email '<email>'
 #
 git config --global core.editor 'vim'
 
-#
-git config --global core.excludesfile '~/.gitignore_global' # Unix-like
-git config --global core.excludesfile "%USERPROFILE%\.gitignore_global" # windows
+# Unix-like
+git config --global core.excludesfile '~/.gitignore_global'
+# Windows
+git config --global core.excludesfile "%USERPROFILE%\.gitignore_global"
 
 #
 git config --global credential.helper 'store'
 git config --global credential.helper 'cache'
-git config --global credential.helper 'osxkeychain' # Darwin
-git config --global credential.helper 'manager-core' # Windows
+# Darwin
+git config --global credential.helper 'osxkeychain'
+# Windows
+git config --global credential.helper 'manager-core'
 
 git config --global credential.credentialStore gpg
 

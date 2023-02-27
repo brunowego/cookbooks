@@ -115,29 +115,14 @@ cat "$HOME"/.vscode/settings.json
 # Show status
 code -s
 
-# Open without extensions
-code ./ --disable-extensions
-
 #
 code ./<filename>
 
 # Open current
 code ./
 
-# List installed
-code --list-extensions
-
-# Install extension
-code --install-extension <extension>
-
-# Disable
-code --disable-extension <extension>
-
 # Disable GPU
 code --disable-gpu
-
-# Uninstall
-code --uninstall-extension <extension>
 ```
 
 ### Tips
@@ -149,25 +134,6 @@ code --uninstall-extension <extension>
 1. View -> Output
 2. Clear Output (`Command (⌘) + Shift (⇧) + P` -> `View: Clear Output`)
 3. File -> Save (`Command (⌘) + S`)
-
-#### All Extensions
-
-```sh
-# Upgrade
-code --list-extensions | while read extension; do
-  code --install-extension "$extension" --force
-done
-
-# Disable
-code --list-extensions | while read extension; do
-  code --disable-extension "$extension" --force
-done
-
-# Uninstall
-code --list-extensions | while read extension; do
-  code --uninstall-extension "$extension" --force
-done
-```
 
 #### Unsaved Files
 

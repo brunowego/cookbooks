@@ -26,8 +26,15 @@ helm repo update
 
 ```sh
 #
-kubectl create ns metrics
+kubectl create ns prometheus
 # kubectl create ns metrics
+# kubectl create ns observability
+
+#
+kubens prometheus
+
+#
+helm search repo -l prometheus-community/kube-prometheus-stack
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
@@ -35,29 +42,52 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install prometheus-stack prometheus-community/kube-prometheus-stack \
-  --namespace metrics \
-  --version 17.0.2 \
+  --version 45.3.0 \
   -f <(cat << EOF
 alertmanager:
-  ingress:
-    enabled: true
-    hosts:
-    - alertmanager.${DOMAIN}
-    pathType: Prefix
+  enabled: false
+  # ingress:
+  #   enabled: true
+  #   hosts:
+  #     - alertmanager.${DOMAIN}
+  #   pathType: Prefix
 
 grafana:
-  adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
-  ingress:
-    enabled: true
-    hosts:
-    - grafana.${DOMAIN}
+  enabled: false
+  # adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
+  # ingress:
+  #   enabled: true
+  #   hosts:
+  #     - grafana.${DOMAIN}
 
-prometheus:
-  ingress:
-    enabled: true
-    hosts:
-    - prometheus.${DOMAIN}
-    pathType: Prefix
+# prometheus:
+#   prometheusSpec:
+#      hostNetwork: true
+#   ingress:
+#     enabled: true
+#     hosts:
+#       - prometheus.${DOMAIN}
+#     pathType: Prefix
+
+# kubelet:
+#   serviceMonitor:
+#     metricRelabelings:
+#       - action: replace
+#         sourceLabels:
+#           - node
+#         targetLabel: instance
+
+# prometheus-node-exporter:
+#   hostNetwork: true
+#   prometheus:
+#     monitor:
+#       metricRelabelings:
+#         - action: replace
+#           regex: (.*)
+#           replacement: \$1
+#           sourceLabels:
+#             - __meta_kubernetes_pod_node_name
+#           targetLabel: kubernetes_node
 EOF
 )
 ```
@@ -65,53 +95,49 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status deploy/prometheus-kube-prometheus-operator \
-  -n metrics
+kubectl rollout status deploy/prometheus-stack-kube-prom-operator
 ```
 
 ### Logs
 
 ```sh
 kubectl logs \
-  -l 'release=prometheus' \
-  -n metrics \
-  --max-log-requests 10 \
+  -l 'app.kubernetes.io/instance=prometheus-stack-kube-prom-prometheus' \
   -f
 ```
 
-### Secret
+<!-- ### Secret
 
 ```sh
 #
 kubectl get secret prometheus-stack-grafana \
-  -o jsonpath='{.data.admin-password}' \
-  -n metrics | \
+  -o jsonpath='{.data.admin-password}' | \
     base64 -d; echo
-```
+``` -->
 
 ### Port Forward
 
 ```sh
 #
-kubectl port-forward svc/prometheus-stack-kube-prom-prometheus \
-  -n metrics \
-  9090:9090
+kubectl port-forward svc/prometheus-operated 9090:9090
 
 #
 echo -e '[INFO]\thttp://127.0.0.1:9090'
 
 #
-kubectl port-forward svc/prometheus-stack-kube-prom-alertmanager \
-  -n metrics \
-  9093:9093
+kubectl port-forward svc/prometheus-stack-kube-prom-prometheus 9090:9090
+
+#
+echo -e '[INFO]\thttp://127.0.0.1:9090'
+
+#
+kubectl port-forward svc/prometheus-stack-kube-prom-alertmanager 9093:9093
 
 #
 echo -e '[INFO]\thttp://127.0.0.1:9093'
 
 #
-kubectl port-forward svc/prometheus-stack-grafana \
-  -n metrics \
-  8080:80
+kubectl port-forward svc/prometheus-stack-grafana 8080:80
 
 #
 echo -e '[INFO]\thttp://127.0.0.1:8080'
@@ -137,17 +163,15 @@ echo -e "[INFO]\thttp://grafana.${DOMAIN}"
 ```sh
 # Backup
 kubectl cp \
-  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/name=grafana -n metrics):/var/lib/grafana/grafana.db \
+  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/name=grafana):/var/lib/grafana/grafana.db \
   "$PWD"/grafana.db \
-  -c grafana \
-  -n metrics
+  -c grafana
 
 # Restore
 kubectl cp \
   "$PWD"/grafana.db \
-  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/name=grafana -n metrics):/var/lib/grafana/grafana.db \
-  -c grafana \
-  -n metrics
+  $(kubectl get pods -o jsonpath='{.items[0].metadata.name}' -l app.kubernetes.io/name=grafana):/var/lib/grafana/grafana.db \
+  -c grafana
 ```
 
 #### External Exporter
@@ -199,8 +223,7 @@ EOF
 ```sh
 #
 kubectl get prometheus \
-  -o jsonpath='{.items[*].spec.serviceMonitorSelector}' \
-  -n metrics
+  -o jsonpath='{.items[*].spec.serviceMonitorSelector}'
 
 #
 cat << EOF | kubectl apply -f -
@@ -237,19 +260,16 @@ echo -e "[INFO]\thttp://prometheus.${DOMAIN}/config"
 ```sh
 #
 kubectl patch svc prometheus-stack-kube-prom-prometheus \
-  -p '{"spec":{"type":"LoadBalancer"}}' \
-  -n metrics
+  -p '{"spec":{"type":"LoadBalancer"}}'
 
 #
 kubectl annotate svc prometheus-stack-kube-prom-prometheus \
   service.beta.kubernetes.io/aws-load-balancer-internal='true' \
   service.beta.kubernetes.io/aws-load-balancer-type='nlb' \
-  external-dns.alpha.kubernetes.io/hostname='prometheus.domain.tld' \
-  -n metrics
+  external-dns.alpha.kubernetes.io/hostname='prometheus.domain.tld'
 
 #
-kubectl get service prometheus-stack-kube-prom-prometheus \
-  -n metrics
+kubectl get service prometheus-stack-kube-prom-prometheus
 ```
 
 ### Alerts
@@ -286,8 +306,7 @@ Error: UPGRADE FAILED: cannot patch "prometheus-kube-prometheus-prometheus" with
 ```
 
 ```sh
-kubectl delete service prometheus-kube-prometheus-prometheus \
-  -n metrics
+kubectl delete service prometheus-kube-prometheus-prometheus
 ```
 
 #### Timeout with ELB
@@ -299,7 +318,6 @@ helm.go:81: [debug] Get "https://mycluster.elb.us-east-1.amazonaws.com/apis/apps
 
 ```sh
 helm install prometheus-stack prometheus-community/kube-prometheus-stack \
-  -n metrics \
   --version 16.12.0
   --timeout 30m \
   --wait \
@@ -309,10 +327,9 @@ helm install prometheus-stack prometheus-community/kube-prometheus-stack \
 ### Delete
 
 ```sh
-helm uninstall prometheus-stack \
-  -n metrics
+helm uninstall prometheus-stack
 
-kubectl delete ns metrics \
+kubectl delete ns prometheus \
   --grace-period=0 \
   --force
 ```

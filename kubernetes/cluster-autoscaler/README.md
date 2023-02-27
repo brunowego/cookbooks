@@ -25,15 +25,17 @@ helm repo update
 
 ```sh
 #
+kubens kube-system
+
+#
 helm search repo -l autoscaler/cluster-autoscaler
 
 #
 helm install cluster-autoscaler autoscaler/cluster-autoscaler \
-  --namespace kube-system \
   --version 9.21.1 \
   -f <(cat << EOF
 autoDiscovery:
-  clusterName: lb-internal01
+  clusterName: org-internal01
 
 awsAccessKeyID:
 
@@ -50,7 +52,7 @@ extraArgs:
 rbac:
   serviceAccount:
     annotations:
-      eks.amazonaws.com/role-arn: arn:aws:iam::333449929724:role/cluster-autoscaler20230108215228644000000002
+      eks.amazonaws.com/role-arn: arn:aws:iam::<account-id>:role/<id>
     create: true
     name: cluster-autoscaler
 
@@ -63,8 +65,7 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status deployment/cluster-autoscaler-aws-cluster-autoscaler \
-  -n kube-system
+kubectl rollout status deployment/cluster-autoscaler-aws-cluster-autoscaler
 ```
 
 ### Logs
@@ -72,7 +73,6 @@ kubectl rollout status deployment/cluster-autoscaler-aws-cluster-autoscaler \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/instance=cluster-autoscaler' \
-  -n kube-system \
   -f
 ```
 
@@ -105,12 +105,10 @@ TODO
 ### Delete
 
 ```sh
-helm uninstall cluster-autoscaler \
-  -n kube-system
+helm uninstall cluster-autoscaler
 ```
 
 <!--
 kubectl annotate deployment.apps/cluster-autoscaler \
-  cluster-autoscaler.kubernetes.io/safe-to-evict="false" \
-  -n kube-system
+  cluster-autoscaler.kubernetes.io/safe-to-evict="false"
 -->

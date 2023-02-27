@@ -11,6 +11,9 @@
 brew uninstall --cask google-chrome
 
 #
+brew tap homebrew/cask-versions
+
+#
 brew install \
   --cask \
   --appdir='/Applications' \

@@ -15,10 +15,11 @@ kubectl explain pods
 
 ## Tools
 
-- [kbenv](/kbenv.md)
 - [Krew](/krew.md)
 
 ## CLI
+
+**Prefer:** [Kubectl Version Manager](./version-manager.md)
 
 ### Installation
 
@@ -90,7 +91,7 @@ nohup kubectl proxy \
 kill -9 "$(lsof -nPi tcp:8001 | grep LISTEN | awk '{print $2}')"
 
 # Copy
-kubectl cp ./path/to/folder/or/file <namespace>/[podname]:/path/to/where/save
+kubectl cp ./path/to/folder/or/file <namespace>/<podname>:/path/to/where/save
 
 #
 kubectl get pod -A
@@ -100,20 +101,20 @@ kubectl get pod -n <namespace>
 kubectl get pods -v 6
 
 #
-kubectl describe pod -l 'app=[appname]' -n <namespace>
+kubectl describe pod -l 'app=<appname>' -n <namespace>
 
 #
 kubectl logs \
-  -l 'app=[appname]' \
-  -c [container] \
+  -l 'app=<appname>' \
+  -c <container> \
   -n <namespace> \
   -f
 
 kubectl
-  --context '[cluster-name]' \
+  --context '<cluster-name>' \
   logs \
     -n '<namespace>' \
-    '[pod-name]'
+    '<pod-name>'
     -f
 ```
 
@@ -135,22 +136,22 @@ kubectl get secrets -n <namespace>
 # TODO
 
 # Describe
-kubectl describe secret [secret-name] \
+kubectl describe secret <secret-name> \
   -n <namespace>
 
 # Get Data
-kubectl get secret [secret-name] \
+kubectl get secret <secret-name> \
   -o jsonpath='{.data}' \
   -n <namespace> | \
     jq .
 
-kubectl get secret [secret-name] \
+kubectl get secret <secret-name> \
   --template={{.data.bar}} \
   -n <namespace> | \
     base64 -d
 
 # Delete
-kubectl delete secret [secret-name] \
+kubectl delete secret <secret-name> \
   -n <namespace>
 ```
 
@@ -185,7 +186,7 @@ gh gist view <hash> > ~/.kube/config
 kubectl get pods -A | awk '$5>0'
 
 #
-kubens [ns-name]
+kubens <ns-name>
 
 kubectl get pods --no-headers | \
   awk '$4>0' | \
@@ -235,14 +236,14 @@ kubectl create secret generic docker-registry \
 
 ```sh
 #
-kubectl get pods -A -o wide | grep [ip-address]
+kubectl get pods -A -o wide | grep <ip-address>
 ```
 
 #### Filter Nodes by IP
 
 ```sh
 #
-kubectl get nodes -o wide | grep [ip-address]
+kubectl get nodes -o wide | grep <ip-address>
 ```
 
 #### Rollout Restart Namespace
@@ -281,22 +282,22 @@ kubectl config view \
 
 ```sh
 # Single
-kubectl exec [pod-name] \
+kubectl exec <pod-name> \
   -- printenv
 
 # Multiple
 kubectl get pods | \
-  grep [text] | \
+  grep <text> | \
     awk '{print $1}' | \
       xargs -I '{}' kubectl exec '{}' -- printenv | \
-        grep [ENV_NAME]
+        grep <ENV_NAME>
 ```
 
 #### Delete Problematic Pod
 
 ```sh
 #
-kubens '[ns-name]'
+kubens '<ns-name>'
 
 #
 kubectl delete pod $(kubectl get pods | awk '$3 == "CrashLoopBackOff" {print $1}')
@@ -309,7 +310,7 @@ kubectl delete pod $(kubectl get pods | awk '$3 == "Error" {print $1}')
 
 ```sh
 kubectl get deployments | \
-  grep [text] | \
+  grep <text> | \
     awk '{print $1}' | \
       xargs kubectl delete deploy
 ```
@@ -318,7 +319,7 @@ kubectl get deployments | \
 
 ```sh
 kubectl get deployments | \
-  grep [text] | \
+  grep <text> | \
     awk '{print $1}' | \
       xargs kubectl rollout restart deployment
 ```
@@ -516,7 +517,7 @@ kubectl delete pvc <name> \
 
 ```sh
 #
-kubens '[ns-name]'
+kubens '<ns-name>'
 
 #
 export KUBERNETES_PODE_NAME=''
@@ -621,7 +622,7 @@ kubectl get secret $(kubectl get secrets -n <namespace> | grep 'default-token' |
 
 ```sh
 # Remote
-scp -q '[username]@[hostname]:~/.kube/config' /dev/stdout | yq r -
+scp -q '<username>@<hostname>:~/.kube/config' /dev/stdout | yq r -
 
 # Vagrant
 vagrant ssh -c 'cat ~/.kube/config'
@@ -631,14 +632,14 @@ vagrant ssh -c 'cat ~/.kube/config'
 
 ```sh
 # Remote Host
-scp -q '[username]@[hostname]:~/.kube/config' /dev/stdout > /tmp/config
+scp -q '<username>@<hostname>:~/.kube/config' /dev/stdout > /tmp/config
 
 # Vagrant
 vagrant ssh -c 'cat ~/.kube/config' | tee /tmp/config
 ```
 
 ```sh
-sed -i 's/kubernetes/[new-name]/' /tmp/config
+sed -i 's/kubernetes/<new-name>/' /tmp/config
 ```
 
 ```sh
@@ -753,7 +754,7 @@ TODO -->
 #### Proxy
 
 ```log
-proxyconnect tcp: dial tcp [ip]:3128: i/o timeout
+proxyconnect tcp: dial tcp <ip>:3128: i/o timeout
 ```
 
 ```sh
@@ -828,7 +829,7 @@ kubectl get pod -n <namespace>
 
 #
 kubectl exec -it \
-  $(kubectl get pod -l 'app=[app-name]' -o jsonpath='{.items[0].metadata.name}' -n <namespace>) \
+  $(kubectl get pod -l 'app=<app-name>' -o jsonpath='{.items[0].metadata.name}' -n <namespace>) \
   -n <namespace> \
   -- /bin/sh
 ```

@@ -35,6 +35,9 @@ Nuls
 - [SSH Config Connections](/ssh/README.md#backup-folder)
 - [SwitchHosts!](/switchhosts.md)
 - [Ultimaker Cura](/ultimaker-cura.md)
+- [AWS](/aws/README.md#backup-credentials)
+- VSCode
+  - [Project Manager](/vscode/extensions/project-manager.md)
 
 ## License Deactivate
 

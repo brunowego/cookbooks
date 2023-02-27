@@ -1,5 +1,7 @@
 {
   "recommendations": [
-    "ms-python.vscode-pylance"
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "alefragnani.project-manager"
   ]
 }

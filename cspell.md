@@ -1,6 +1,6 @@
 # CSpell (a.k.a. spellcheck)
 
-**Keywords:** Spell Checker
+**Keywords:** Spell Checker, Language Linter
 
 <!--
 https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/fullstack
@@ -110,7 +110,6 @@ touch ./.cspell/usernames.txt
 #
 code --install-extension streetsidesoftware.code-spell-checker
 
-#
 code --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
 ```
 
@@ -119,6 +118,8 @@ code --install-extension streetsidesoftware.code-spell-checker-portuguese-brazil
 ```sh
 #
 jq '."recommendations" += ["streetsidesoftware.code-spell-checker"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+
+jq '."recommendations" += ["streetsidesoftware.code-spell-checker-portuguese-brazilian"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
 ```
 
 ```sh

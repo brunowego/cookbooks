@@ -39,7 +39,7 @@ repos:
     rev: v2.7.0
     hooks:
       - id: hadolint
-        stages: [commit]
+        stages: <commit>
 ```
 
 #### Visual Studio Code
@@ -74,7 +74,7 @@ RUN pip3 install /usr/src/packages/<package-version>.tar.gz
 trunk check enable hadolint@2.11.0
 
 #
-trunk check --filter hadolint -v <path/to/dockerfile>
+trunk check --filter hadolint -v <./path/to/dockerfile>
 ```
 
 ### Issues

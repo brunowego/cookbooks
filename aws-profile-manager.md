@@ -27,8 +27,10 @@ aws-profile-manager --help
 **Dependency:** [alias](/shell/alias.md)
 
 ```sh
+#
 echo "alias apm='aws-profile-manager'" >> ~/.aliases
 
+#
 source ~/.zshrc
 ```
 
@@ -42,15 +44,15 @@ apm profile-current
 apm profile-list
 
 #
-export AWS_PROFILE_NAME=''
-export AWS_ACCESS_KEY_ID=''
-export AWS_SECRET_ACCESS_KEY=''
+export AWS_PROFILE_NAME='<name>'
+export AWS_ACCESS_KEY_ID='<access-key>'
+export AWS_SECRET_ACCESS_KEY='<secret-key>'
 
 #
 apm profile-add \
   --aws-profile-name "$AWS_PROFILE_NAME" \
   --aws-access-key-id "$AWS_ACCESS_KEY_ID" \
-  --aws-secret-access-key "$AWS_SECRET_ACCESS_KEY" \
+  --aws-secret-access-key "$AWS_SECRET_ACCESS_KEY"
 
 #
 apm profile-switch

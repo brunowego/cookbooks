@@ -1,5 +1,7 @@
 # Insomnia
 
+**Keywords:** API Platform
+
 ## Links
 
 - [Code Repository](https://github.com/Kong/insomnia)

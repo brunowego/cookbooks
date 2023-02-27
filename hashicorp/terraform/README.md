@@ -87,7 +87,7 @@ output
 
 ## Tools
 
-- [Brainboard](https://brainboard.co/)
+- [Brainboard](https://brainboard.co)
 - [Pluralith](/pluralith.md)
 
 ## Architecture
@@ -133,6 +133,8 @@ output
 - [software-properties-common](/apt/software-properties-common.md)
 
 ### Installation
+
+**Refer:** [Terraform Version Manager](./version-manager.md)
 
 #### Homebrew
 

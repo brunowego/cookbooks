@@ -126,22 +126,45 @@ jq '."recommendations" += ["Trunk.io"]' "$PWD"/.vscode/extensions.json | sponge 
 
 ### Issues
 
-#### OS Incompatibility with hadolint
+#### Stopped Trunk on VS Code
 
 ```log
-[1]    10038 segmentation fault  ~/.cache/trunk/tools/hadolint/2.12.0-*/hadolint -v
+Trunk: Stopped
+```
+
+#### Missing Dependencies (FAILURES)
+
+```log
+Some tools failed to run. You can open the details yaml files for more information.
 ```
 
 ```sh
 #
+cat ./.trunk/out/*.yaml
+
+#
+pnpm install
+```
+
+#### OS Incompatibility with hadolint
+
+**Dependencies:** [Haskell Dockerfile Linter (hadolint)](/hadolint.md#cli)
+
+```log
+[1]    21954 segmentation fault  ~/.cache/trunk/tools/hadolint/2.12.0-6fb771cd5a9da2dc321dc5681d8188c6/hadolint
+```
+
+```sh
+# Darwin
 rm -fR ~/.cache/trunk/tools/hadolint
 
-#
 trunk install
 
-#
-rm ~/.cache/trunk/tools/hadolint/2.12.0-*/hadolint
+~/.cache/trunk/tools/hadolint/2.12.0-6fb771cd5a9da2dc321dc5681d8188c6/hadolint -v
 
-#
-cp $(brew --prefix hadolint)/bin/hadolint ~/.cache/trunk/tools/hadolint/2.12.0-*/
+rm ~/.cache/trunk/tools/hadolint/2.12.0-6fb771cd5a9da2dc321dc5681d8188c6/hadolint
+
+cp $(brew --prefix hadolint)/bin/hadolint ~/.cache/trunk/tools/hadolint/2.12.0-6fb771cd5a9da2dc321dc5681d8188c6
+
+ps aux | grep trunk
 ```

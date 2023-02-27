@@ -131,7 +131,7 @@ aws configure set cli_pager ''
 
 #
 aws configure \
---profile default
+  --profile default
 
 #
 cat ~/.aws/config
@@ -152,6 +152,12 @@ aws s3 ls
 ```
 
 ### Tips
+
+#### Backup Credentials
+
+```sh
+cat ~/.aws/credentials | gh gist create - -f aws-credentials
+```
 
 #### Show All Regions
 

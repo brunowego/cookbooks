@@ -12,7 +12,7 @@ ls -la
 # Human readable
 ls -lh
 
-# Almost all
+# Only names
 ls -A1
 
 # Only folders

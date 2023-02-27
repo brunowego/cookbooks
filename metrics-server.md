@@ -3,6 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/kubernetes-sigs/metrics-server)
+- [Docs](https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-metrics-pipeline/)
 
 ## Custom Resource (CR)
 
@@ -47,28 +48,34 @@ minikube addons -p minikube disable metrics-server
 
 ### References
 
-- [Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/metrics-server)
+- [Configuration](https://github.com/kubernetes-sigs/metrics-server/tree/master/charts/metrics-server#configuration)
 
 ### Repository
 
 ```sh
-helm repo add bitnami 'https://charts.bitnami.com/bitnami'
+helm repo add metrics-server 'https://kubernetes-sigs.github.io/metrics-server'
 helm repo update
 ```
 
 ### Install
 
 ```sh
-helm install metrics-server bitnami/metrics-server \
-  --namespace kube-system \
-  --version 5.10.11 \
-  -f <(cat << EOF
-apiService:
-  create: true
+#
+kubens kube-system
 
-extraArgs:
-  kubelet-insecure-tls: true
-  kubelet-preferred-address-types: InternalIP
+#
+helm search repo -l metrics-server/metrics-server
+
+#
+helm upgrade metrics-server metrics-server/metrics-server \
+  --version 3.8.3 \
+  -f <(cat << EOF
+defaultArgs:
+  - --cert-dir=/tmp
+  - --kubelet-insecure-tls=true
+  - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+  - --kubelet-use-node-status-port
+  - --metric-resolution=15s
 EOF
 )
 ```
@@ -76,8 +83,7 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status deploy/metrics-server \
-  -n kube-system
+kubectl rollout status deploy/metrics-server
 ```
 
 ### Logs
@@ -85,7 +91,6 @@ kubectl rollout status deploy/metrics-server \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/name=metrics-server' \
-  -n kube-system \
   -f
 ```
 
@@ -119,16 +124,23 @@ Need uninstall the current version before install another.
 ### Delete
 
 ```sh
-helm uninstall metrics-server \
-  -n kube-system
+helm uninstall metrics-server
 ```
 
 ## Issues
 
+### TBD
+
+```log
+I0225 23:11:30.629823       1 server.go:187] "Failed probe" probe="metric-storage-ready" err="no metrics to serve"
+```
+
+TODO
+
 ### No Metrics
 
 ```log
-metrics-server-7587f475f6-s8dwl metrics-server E1203 12:52:22.174613       1 reststorage.go:144] unable to fetch pod metrics for pod [my-company]/[my-app]-b68f4599zmrz: no metrics known for pod
+metrics-server-7587f475f6-s8dwl metrics-server E1203 12:52:22.174613       1 reststorage.go:144] unable to fetch pod metrics for pod <my-company>/<my-app>-b68f4599zmrz: no metrics known for pod
 ```
 
 TODO

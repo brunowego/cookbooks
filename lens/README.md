@@ -28,12 +28,12 @@ brew install --cask lens
 choco install -y lens
 ```
 
-### Extensions
+<!-- ### Extensions
 
 ```sh
 #
 ls ~/.k8slens/extensions
-```
+``` -->
 
 ### Tips
 
@@ -53,13 +53,47 @@ DEBUG=true /Applications/Lens.app/Contents/MacOS/Lens
 
 ### Issues
 
-#### Missing Metrics
+<!-- #### Missing Metrics
 
 ```log
 Metrics not available at the moment
 ```
 
-Install Prometheus Stack, Kube-State-Metrics (KSM) and Node Exporter.
+Install Prometheus Stack, Kube-State-Metrics (KSM) and Node Exporter. -->
+
+#### TBD
+
+```log
+warn:    ┏ [METRICS-ROUTE]: failed to get metrics for clusterId=beabbe9cc34d9e909fc4b0c4db73a9ea: Metrics not available +150ms
+warn:    ┃ [ 1] Error: Metrics not available
+warn:    ┃ [ 2]     ...
+warn:    ┃ [60] Cause: Error: socket hang up
+warn:    ┃ [61]     ...
+```
+
+<!--
+https://github.com/lensapp/lens/issues/5047#issuecomment-1073259845
+-->
+
+TODO
+
+```sh
+#
+kubectl get --raw /metrics
+
+#
+kubectl proxy
+
+#
+curl \
+  -X POST \
+  'http://127.0.0.1:8001/api/v1/namespaces/lens-metrics/services/prometheus:80/proxy/api/v1/query_range' \
+  --form 'query="sum (node_memory_MemTotal_bytes - (node_memory_MemFree_bytes + node_memory_Buffers_bytes + node_memory_Cached_bytes)) by (kubernetes_node)"' \
+  --form 'start=1677418992' \
+  --form 'end=1677422592' \
+  --form 'step=60' | \
+    jq
+```
 
 #### TBD
 
@@ -67,45 +101,4 @@ Install Prometheus Stack, Kube-State-Metrics (KSM) and Node Exporter.
 Metrics are not available due to missing or invalid Prometheus configuration.
 ```
 
-```sh
-kubectl logs \
-  -l 'name=kube-state-metrics' \
-  -n lens-metrics \
-  -f
-
-kubectl logs \
-  -l 'name=node-exporter' \
-  -n lens-metrics \
-  -f
-
-kubectl logs \
-  -l 'name=prometheus' \
-  -n lens-metrics \
-  -f
-```
-
-```log
-level=error ts=2022-12-23T10:34:50.063Z caller=klog.go:116 component=k8s_client_runtime func=ErrorDepth msg="pkg/mod/k8s.io/client-go@v0.21.0/tools/cache/reflector.go:167: Failed to watch *v1.Pod: failed to list *v1.Pod: pods is forbidden: User \"system:serviceaccount:lens-metrics:prometheus\" cannot list resource \"pods\" in API group \"\" in the namespace \"lens-metrics\""
-```
-
-```sh
-#
-cat << EOF | kubectl apply -f -
-apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRoleBinding
-metadata:
-  labels:
-    app.kubernetes.io/created-by: resource-stack
-    app.kubernetes.io/managed-by: Lens
-    app.kubernetes.io/name: lens-metrics
-  name: lens-prometheus
-roleRef:
-  apiGroup: rbac.authorization.k8s.io
-  kind: ClusterRole
-  name: lens-prometheus
-subjects:
-- kind: ServiceAccount
-  name: prometheus
-  namespace: lens-metrics
-EOF
-```
+TODO

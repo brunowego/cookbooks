@@ -28,6 +28,8 @@ git clone --depth 1 'https://github.com/tfutils/tfenv.git' ~/.tfenv
 
 ### Environment
 
+**Only:** For Unix-like installation.
+
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
 ```sh
@@ -55,6 +57,7 @@ echo '1.3.5' > ./.terraform-version
 tfenv list-remote
 
 #
+tfenv install
 tfenv install <version>
 
 #

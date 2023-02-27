@@ -1,8 +1,8 @@
 # Thunder Client
 
-<!--
-https://www.youtube.com/watch?v=AbCTlemwZ1k
--->
+## Links
+
+- [Code Repository](https://github.com/rangav/thunder-client-support)
 
 ## Tips
 
