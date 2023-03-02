@@ -18,6 +18,7 @@ https://app.pluralsight.com/library/courses/gdpr-executive-briefing/table-of-con
 ## Countries
 
 - Brazil: [Lei Geral de Proteção de Dados Pessoais (LGPD)](https://en.wikipedia.org/wiki/General_Personal_Data_Protection_Law)
+- Portugal: Regulamento Geral sobre a Proteção de Dados (RGPD) (UE)
 
 ## Requirements
 
@@ -35,7 +36,7 @@ https://app.pluralsight.com/library/courses/gdpr-executive-briefing/table-of-con
 
 ## Tools
 
-- [Securiti Data Controls Cloud](https://securiti.ai/)
+- [Securiti Data Controls Cloud](https://securiti.ai)
 
 <!--
 https://securiti.ai/solutions/

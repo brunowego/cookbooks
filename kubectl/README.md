@@ -616,7 +616,7 @@ kubectl get secret $(kubectl get secrets -n <namespace> | grep 'default-token' |
     base64 -d > ./ca.crt
 ```
 
-#### Config
+#### Kube Config
 
 ##### Read
 

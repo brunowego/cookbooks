@@ -45,6 +45,15 @@ https://www.youtube.com/watch?v=QrEOvHdH2Cg
 
 - Schema Definition Language (SDL)
 
+## Approach
+
+- Code-Only or Code-first
+- Schema-first or SDL-first
+
+## Glossary
+
+- Schema Definition Language (SDL)
+
 ## Specification
 
 ### Core Concepts

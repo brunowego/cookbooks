@@ -1,0 +1,139 @@
+---
+version: '3.8'
+
+services:
+  db:
+    image: docker.io/library/postgres:14.0-alpine
+    container_name: lago-db
+    environment:
+      POSTGRES_DB:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+      PGDATA: /data/postgres
+    volumes:
+      - lago-postgres-data:/data/postgres
+    ports:
+      - 5432:5432
+    restart: unless-stopped
+
+  redis:
+    image: docker.io/library/redis:6.2-alpine
+    container_name: lago-redis
+    command: --port 6379
+    volumes:
+      - lago-redis-data:/data
+    ports:
+      - 6379:6379
+    restart: unless-stopped
+
+  api:
+    image: getlago/api:v0.24.0-beta
+    container_name: lago-api
+    environment:
+      LAGO_API_URL: $LAGO_API_URL
+      DATABASE_URL:
+      REDIS_URL:
+      REDIS_PASSWORD:
+      SECRET_KEY_BASE:
+      RAILS_ENV: $APP_ENV
+      RAILS_LOG_TO_STDOUT: $LAGO_RAILS_STDOUT
+      SENTRY_DSN:
+      LAGO_FRONT_URL:
+      LAGO_RSA_PRIVATE_KEY:
+      LAGO_SIDEKIQ_WEB:
+      RSA_PRIVATE_KEY: $LAGO_RSA_PRIVATE_KEY
+      ENCRYPTION_PRIMARY_KEY: $LAGO_ENCRYPTION_PRIMARY_KEY
+      ENCRYPTION_DETERMINISTIC_KEY: $LAGO_ENCRYPTION_DETERMINISTIC_KEY
+      ENCRYPTION_KEY_DERIVATION_SALT: $LAGO_ENCRYPTION_KEY_DERIVATION_SALT
+      LAGO_USE_AWS_S3:
+      LAGO_USE_GCS:
+      LAGO_PDF_URL:
+      LAGO_REDIS_CACHE_URL: $REDIS_URL
+      LAGO_REDIS_CACHE_PASSWORD:
+      LAGO_DISABLE_SEGMENT:
+      LAGO_OAUTH_PROXY_URL:
+      LAGO_LICENSE:
+    volumes:
+      - lago-storage-data:/app/storage
+    command: [./scripts/start.sh]
+    ports:
+      - ${API_PORT:-3000}:3000
+    restart: unless-stopped
+    depends_on:
+      - db
+      - redis
+
+  api-worker:
+    container_name: lago-worker
+    image: getlago/api:v0.24.0-beta
+    restart: unless-stopped
+    depends_on:
+      - api
+    command: [./scripts/start.worker.sh]
+    environment:
+      LAGO_API_URL: $LAGO_API_URL
+      DATABASE_URL:
+      REDIS_URL:
+      REDIS_PASSWORD:
+      SECRET_KEY_BASE:
+      RAILS_ENV: $APP_ENV
+      RAILS_LOG_TO_STDOUT: $LAGO_RAILS_STDOUT
+      SENTRY_DSN:
+      LAGO_RSA_PRIVATE_KEY:
+      RSA_PRIVATE_KEY: $LAGO_RSA_PRIVATE_KEY
+      ENCRYPTION_PRIMARY_KEY: $LAGO_ENCRYPTION_PRIMARY_KEY
+      ENCRYPTION_DETERMINISTIC_KEY: $LAGO_ENCRYPTION_DETERMINISTIC_KEY
+      ENCRYPTION_KEY_DERIVATION_SALT: $LAGO_ENCRYPTION_KEY_DERIVATION_SALT
+      LAGO_USE_AWS_S3:
+      LAGO_USE_GCS:
+      LAGO_PDF_URL:
+      LAGO_REDIS_CACHE_URL: $REDIS_URL
+      LAGO_REDIS_CACHE_PASSWORD:
+      LAGO_DISABLE_SEGMENT:
+    volumes:
+      - lago-storage-data:/app/storage
+
+  api-clock:
+    container_name: lago-clock
+    image: getlago/api:v0.24.0-beta
+    restart: unless-stopped
+    depends_on:
+      - api
+    command: [./scripts/start.clock.sh]
+    environment:
+      LAGO_API_URL:
+      DATABASE_URL:
+      REDIS_URL:
+      REDIS_PASSWORD:
+      SECRET_KEY_BASE:
+      RAILS_ENV: $APP_ENV
+      RAILS_LOG_TO_STDOUT: $LAGO_RAILS_STDOUT
+      SENTRY_DSN:
+      LAGO_RSA_PRIVATE_KEY:
+      RSA_PRIVATE_KEY: $LAGO_RSA_PRIVATE_KEY
+      ENCRYPTION_PRIMARY_KEY: $LAGO_ENCRYPTION_PRIMARY_KEY
+      ENCRYPTION_DETERMINISTIC_KEY: $LAGO_ENCRYPTION_DETERMINISTIC_KEY
+      ENCRYPTION_KEY_DERIVATION_SALT: $LAGO_ENCRYPTION_KEY_DERIVATION_SALT
+
+  front:
+    image: getlago/front:v0.24.0-beta
+    container_name: lago-front
+    environment:
+      API_URL: $LAGO_API_URL
+      APP_ENV:
+      CODEGEN_API: $LAGO_API_URL
+      LAGO_DISABLE_SIGNUP:
+      LAGO_OAUTH_PROXY_URL:
+    ports:
+      - 8080:80
+    restart: unless-stopped
+    depends_on:
+      - api
+
+  pdf:
+    image: getlago/lago-gotenberg:7
+
+volumes:
+  lago-postgres-data:
+  lago-redis-data:
+  lago-storage-data:

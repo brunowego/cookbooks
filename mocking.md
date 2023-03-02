@@ -1,5 +1,10 @@
 # Mocking
 
+## Related
+
+- Stubbing
+- Faking
+
 ## Glossary
 
 - OpenAPI Specification (OAS)

@@ -11,7 +11,8 @@ https://github.com/dailydotdev/daily-api
 
 ## Links
 
-- [Main Website](https://fastify.io/)
+- [Code Repository](https://github.com/fastify/fastify)
+- [Main Website](https://fastify.io)
 
 <!--
 "fastify": "3.27.2",

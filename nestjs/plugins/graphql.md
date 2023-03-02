@@ -9,9 +9,13 @@ https://github.com/odroe/socfony/
 https://github.com/island-is/island.is
 -->
 
+## Links
+
+- [Docs](https://docs.nestjs.com/graphql/quick-start)
+
 ## Installation
 
 ```sh
-# Using Yarn
-yarn add @nestjs/graphql
+# Using pnpm
+pnpm add @nestjs/graphql graphql
 ```

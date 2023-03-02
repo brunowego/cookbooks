@@ -36,6 +36,10 @@ Evite padrões graficos muito bem definidos, smart-money opera contra
 Se você não identifica a liquidez, você é a liquidez
 -->
 
+## Tools
+
+- [TradingView](/tradingview/README.md)
+
 ## Terms
 
 - 1 minute (M1) / 15 minute (M15) / 1 hour (H1) / 4 hour (H4)

@@ -20,9 +20,35 @@ Learning Management System (LMS)
 Applicant Tracking System (ATS)
 -->
 
-## Architecture
+## Architectural Pattern
 
-- Monolithic
-- Multitier
+- Layered
+- Client-Server
+- Master-Slave
+- Pipe-Filter
+- Broker
+- Peer-to-Peer
+- Event-bus
+- Model-View-Controller (MVC)
+- Blackboard
+- Interpreter
+
+## Design Pattern
+
+- Monolithic Application
+- Multitier (N-Tier or Multi-Layered)
   - 3 Tiers (Presentation, Application, Data)
-- Microservices
+- Services
+  - (Macro) Services
+  - Miniservices
+  - Microservices
+- Serverless Functions
+
+![Multigrained](/assets/images/software/multigrained.png)
+
+<!--
+https://thenewstack.io/miniservices-a-realistic-alternative-to-microservices/
+https://hiq.fi/en/blog/miniservice-or-microservice/
+https://tweedegolf.nl/en/blog/32/from-monolith-to-miniservice
+https://dzone.com/articles/micro-service-mini-service-and-macro-service
+-->

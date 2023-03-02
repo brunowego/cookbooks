@@ -8,6 +8,7 @@ https://gsuite.google.com/products/admin/
 ## Links
 
 - [Admin](https://admin.google.com)
+- [Status Page](https://google.com/appsstatus/dashboard/)
 
 ## Guides
 

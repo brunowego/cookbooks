@@ -14,9 +14,7 @@ https://linkedin.com/learning/microservices-security/securing-microservices
 
 ## Glossary
 
-- Command Query Responsibility Segregation (CQRS)
 - Domain Driven Design (DDD)
-- Event Sourcing (ES)
 - Event-Driven Architecture (EDA)
 
 ## Articles
@@ -27,8 +25,21 @@ https://linkedin.com/learning/microservices-security/securing-microservices
 
 ### SOLID Principles
 
-- S: Single-responsiblity Principle
+- S: Single-responsibility Principle
 - O: Open-closed Principle
 - L: Liskov Substitution Principle
 - I: Interface Segregation Principle
 - D: Dependency Inversion Principle
+
+### Design Pattern
+
+- API Gateway
+- Backend for Frontend (BFF)
+- Circuit Breaker
+- Consumer-Driven Contract (CDC)
+- Command Query Responsibility Segregation (CQRS)
+- Database per Microservice
+- Event Sourcing (ES)
+- Externalized Configuration
+- Saga
+- Strangler

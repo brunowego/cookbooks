@@ -13,6 +13,8 @@ https://github.com/ShubhamTatvamasi/openproject/blob/61421a20de93cb5f7d3670ab4d2
 
 <!--
 https://openproject.org/docs/system-admin-guide/integrations/github-integration/
+
+https://<org-name>.openproject.com/projects/
 -->
 
 ## Helm

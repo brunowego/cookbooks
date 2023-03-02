@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-- [Kustomize](https://kustomize.io/)
+- [Kustomize](https://kustomize.io)
 
 ## Usage
 

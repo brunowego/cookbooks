@@ -63,7 +63,7 @@ load_dotenv = true
 strict_env = true
 
 [whitelist]
-prefix = ["$HOME/Workspace"]
+prefix = ["/absolute/path/to/folder"]
 EOF
 
 #

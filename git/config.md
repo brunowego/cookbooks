@@ -161,16 +161,6 @@ git config --global url.'https://'.insteadOf git://
 
 ## Issues
 
-<!-- ### TBD
-
-```log
-
-```
-
-```sh
-git branch --set-upstream-to=origin/<branch> <branch>
-``` -->
-
 ### Missing Proxy
 
 ```log

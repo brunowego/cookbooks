@@ -1,9 +1,11 @@
 # chflags
 
-```sh
-chflags hidden [/path/to/file]
-```
+## Usage
 
 ```sh
-chflags nohidden [/path/to/file]
+#
+chflags hidden </path/to/file>
+
+#
+chflags nohidden </path/to/file>
 ```

@@ -93,6 +93,11 @@ ingress:
     - hosts:
         - vaultwarden.${DOMAIN}
       secretName: vaultwarden.tls-secret
+
+persistence:
+  enabled: true
+  accessMode: ReadWriteOnce
+  size: 1Gi
 EOF
 )
 

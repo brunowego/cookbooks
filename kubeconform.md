@@ -34,3 +34,9 @@ kubeconform -h
 #
 kubeconform <filename.yml>
 ```
+
+<!--
+# Validate
+kustomize build ./.k8s/overlays/internal | \
+  kubeconform -summary
+-->

@@ -10,6 +10,8 @@ https://github.com/antribute/open-source
 
 - [Code Repository](https://github.com/pnpm/pnpm)
 - [Main Website](https://pnpm.io/)
+- Docs
+  - [Scripts](https://pnpm.io/scripts)
 
 ## CLI
 
@@ -67,6 +69,10 @@ pnpm init
 
 #
 pnpm install
+pnpm install </absolute/path/to/folder>
+
+#
+pnpm link </absolute/path/to/folder>
 
 #
 pnpm <command>
