@@ -13,6 +13,8 @@
 
 ### Visual Studio Code
 
+**Dependencies:** [OpenJDK Java Runtime Environment (JRE) 11+](/openjdk/jre.md).
+
 ```sh
 #
 code --install-extension SonarSource.sonarlint-vscode

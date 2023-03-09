@@ -8,15 +8,10 @@
 
 ### Installation
 
-#### NPM
-
 ```sh
+# Using NPM
 npm install dotenv-cli -g
-```
 
-#### Yarn
-
-```sh
 # Using Yarn 1.x
 yarn global add dotenv-cli
 ```
@@ -30,5 +25,6 @@ dotenv -h
 ### Running
 
 ```sh
+#
 dotenv -- <command>
 ```

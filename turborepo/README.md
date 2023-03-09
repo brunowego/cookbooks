@@ -137,6 +137,14 @@ mkdir -p ./{apps/landing,packages}
 ### TBD
 
 ```log
+ERROR  run failed: Failed to add workspace "@org/ui" from apps/storybook, it already exists at packages/user-interface
+```
+
+TODO
+
+### TBD
+
+```log
 [ERROR] invalid scope: No packages found matching the provided scope pattern.
 ```
 

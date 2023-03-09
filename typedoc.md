@@ -1,5 +1,9 @@
 # TypeDoc
 
+<!--
+https://www.npmjs.com/package/typedoc-plugin-coverage
+-->
+
 **Keywords:** TypeScript Documentation Generator
 
 ## Links

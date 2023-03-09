@@ -8,7 +8,7 @@
 
 ### Dependencies
 
-- [OpenJDK](/openjdk.md)
+- [OpenJDK](/openjdk/README.md)
 
 ### Installation
 

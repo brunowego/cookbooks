@@ -326,6 +326,7 @@ kubectl rollout status deploy/ingress-controller-ingress-nginx-controller
 
 ```sh
 kubectl logs \
+  -n ingress-nginx \
   -l 'app.kubernetes.io/instance=ingress-controller' \
   -f
 ```
@@ -358,6 +359,22 @@ minikube tunnel
 ``` -->
 
 ### Issues
+
+#### TBD
+
+```log
+502 Bad Gateway
+```
+
+TODO
+
+#### TBD
+
+```log
+504 Gateway Time-out
+```
+
+TODO
 
 #### TBD
 

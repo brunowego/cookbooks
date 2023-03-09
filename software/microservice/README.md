@@ -1,6 +1,8 @@
 # Microservice
 
 <!--
+https://medium.com/@marcelomg21/distribuindo-mon%C3%B3litos-soa-macro-mini-micro-e-nano-servi%C3%A7os-8057b9d4cf81
+
 https://app.pluralsight.com/paths/skills/microservices-architecture
 
 https://www.youtube.com/watch?v=j6ow-UemzBc

@@ -28,7 +28,6 @@ patches:
       kind: Ingress
       name: web
 
-
 .k8s/overlays/internal/patches/ingress_patch.yml
 
 ---

@@ -9,6 +9,9 @@
 ## Usage
 
 ```sh
+#
+kubectl get issuers
+
 # Certificates
 kubectl get certificates -o wide
 kubectl describe certificate <name>

@@ -44,8 +44,11 @@ helm repo update
 
 ```sh
 #
-kubectl create ns teleport-system
+kubectl create ns teleport
 # kubectl create ns security
+
+#
+kubens teleport
 
 #
 helm search repo -l teleport/teleport-cluster
@@ -56,7 +59,6 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 [[ -n "${DOMAIN}" ]] && cat << EOF | kubectl apply \
-  -n teleport-system \
   -f -
 ---
 apiVersion: v1
@@ -117,7 +119,7 @@ EOF
 )
 
 #
-kubectl get all -n teleport-system
+kubectl get all
 ```
 
 ### Status

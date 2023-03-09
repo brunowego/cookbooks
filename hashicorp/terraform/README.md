@@ -350,7 +350,7 @@ https://www.youtube.com/watch?v=uFaMUS6Z9fI
 
 ### Issues
 
-####
+#### TBD
 
 ```log
 │ Error: Required token could not be found
@@ -358,6 +358,8 @@ https://www.youtube.com/watch?v=uFaMUS6Z9fI
 │ Run the following command to generate a token for app.terraform.io:
 │     terraform login
 ```
+
+TODO
 
 <!-- ####
 

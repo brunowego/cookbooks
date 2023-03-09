@@ -1,5 +1,9 @@
 # Compodoc
 
+<!--
+tsconfig.compodoc.json
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/compodoc/compodoc)
@@ -37,6 +41,6 @@ pnpm add @compodoc/compodoc -D
 {
   "tsconfig": "./tsconfig.json",
   "output": "./docs",
-  "name": "@<org>/<repo>",
+  "name": "@<org>/<repo>"
 }
 ```

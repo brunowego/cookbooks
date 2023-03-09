@@ -44,7 +44,11 @@ git clone <repo> ./
 **Dependencies:** [GitHub CLI](/github/README.md#cli)
 
 ```sh
-gh repo list <owner> --limit 1000 | \
+#
+export OWNER='<owner>'
+
+#
+gh repo list "$OWNER" --limit 1000 | \
   awk '{print $1; }' | \
     xargs -L1 gh repo clone
 ```

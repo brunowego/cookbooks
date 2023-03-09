@@ -17,8 +17,8 @@ https://github.com/gajus/eslint-plugin-jsdoc
 
 ```sh
 #
-code --install-extension lllllllqw.jsdoc
+code --install-extension dalirnet.doctypes
 
 #
-jq '."recommendations" += ["lllllllqw.jsdoc"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+jq '."recommendations" += ["dalirnet.doctypes"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

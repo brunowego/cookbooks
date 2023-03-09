@@ -390,6 +390,10 @@ gh workflow run '<workflow-name>' \
 gh run watch
 ```
 
+<!--
+gh secret list --app dependabot
+-->
+
 ### Tips
 
 <!-- ####
@@ -404,7 +408,7 @@ gh api repos/${REPO}/actions/runs/${run_id}/rerun -X POST
 #
 export OWNER='<owner>'
 export REPO='<repo>'
-export WORKFLOW='<name>'
+export WORKFLOW='<name>.yml'
 
 #
 gh api "repos/$OWNER/$REPO/actions/workflows/$WORKFLOW/runs" \

@@ -741,6 +741,17 @@ AWS_PROFILE=dev kubectl version --short
 AWS_PROFILE=dev aws sts get-caller-identity
 ``` -->
 
+#### Missing Proper JSON Output Format
+
+```log
+Unable to connect to the server: getting credentials: decoding stdout: couldn't get version/kind; json parse error: json: cannot unmarshal string into Go value of type struct { APIVersion string "json:\"apiVersion,omitempty\""; Kind string "json:\"kind,omitempty\"" }
+```
+
+```sh
+#
+aws configure set output json
+```
+
 <!-- ####
 
 ```log

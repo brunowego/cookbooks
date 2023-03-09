@@ -1,12 +1,10 @@
 # Cypress
 
 <!--
-https://github.com/samisbakedham/interface/tree/main/cypress
-
 https://linkedin.com/learning/end-to-end-javascript-testing-with-cypress-io/test-automation-with-javascript
+
 https://app.pluralsight.com/library/courses/cypress-end-to-end-javascript-testing/table-of-contents
 https://app.pluralsight.com/library/courses/vue-cypress-end-to-end-testing/table-of-contents
-
 https://app.pluralsight.com/library/courses/js-friends-session-02/table-of-contents
 https://app.pluralsight.com/library/courses/codemash-session-01/table-of-contents
 -->
@@ -33,13 +31,16 @@ npm install cypress --save-dev
 
 # Using Yarn
 yarn add cypress --dev
+
+# Using pnpm
+pnpm add cypress -D
 ```
 
 ### Structure
 
 ```sh
 #
-mkdir -p ./.cypress/fixtures,integration/{components,pages},plugins,support}
+mkdir -p ./.cypress/{fixtures,integration/{components,pages},plugins,support}
 
 #
 echo '/.cypress/artifacts' >> ./.gitignore

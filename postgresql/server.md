@@ -252,11 +252,11 @@ helm repo update
 
 ```sh
 #
-kubectl create ns psql-system
+kubectl create ns postgresql
 # kubectl create ns database
 
 #
-kubens psql-system
+kubens postgresql
 
 #
 helm search repo -l bitnami/postgresql
@@ -287,8 +287,7 @@ kubectl port-forward \
 ### Status
 
 ```sh
-kubectl rollout status statefulset/postgresql \
-  -n psql-system
+kubectl rollout status statefulset/postgresql
 ```
 
 ### Logs
@@ -296,7 +295,6 @@ kubectl rollout status statefulset/postgresql \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/name=postgresql' \
-  -n psql-system \
   -f
 ```
 
@@ -304,23 +302,20 @@ kubectl logs \
 
 ```sh
 kubectl get secret postgresql \
-  -o jsonpath='{.data.postgres-password}' \
-  -n psql-system | \
+  -o jsonpath='{.data.postgres-password}' | \
     base64 -d; echo
 
 kubectl get secret postgresql \
-  -o jsonpath='{.data.password}' \
-  -n psql-system | \
+  -o jsonpath='{.data.password}' | \
     base64 -d; echo
 ```
 
 ### Delete
 
 ```sh
-helm uninstall postgresql \
-  -n psql-system
+helm uninstall postgresql
 
-kubectl delete ns psql-system \
+kubectl delete ns postgresql \
   --grace-period=0 \
   --force
 ```

@@ -206,7 +206,7 @@ helm repo update
 
 ```sh
 #
-kubectl create ns sonarqube-system
+kubectl create ns sonarqube
 # kubectl create ns quality-gate
 
 #
@@ -218,8 +218,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install sonarqube sonarqube/sonarqube \
-  --namespace sonarqube-system \
-  --version 5.0.6+370 \
+  --version 8.0.0+463 \
   -f <(cat << EOF
 elasticsearch:
   bootstrapChecks: false
@@ -230,6 +229,10 @@ ingress:
     - name: sonarqube.${DOMAIN}
   ingressClassName: nginx
 
+plugins:
+  install:
+    - https://github.com/sbaudoin/sonar-yaml/releases/download/v1.7.0/sonar-yaml-plugin-1.7.0.jar
+
 sonarProperties:
   email.from: noreply@sonarqube.${DOMAIN}
   email.smtp_host.secured: mailhog.mailhog-system.svc.cluster.local
@@ -238,13 +241,12 @@ EOF
 )
 
 #
-kubectl get all -n sonarqube-system
+kubectl get all
 ```
 
 <!--
 kubectl port-forward \
   --address 0.0.0.0 \
-  -n sonarqube-system \
   svc/sonarqube-sonarqube \
   8080:9000
 -->
@@ -257,7 +259,6 @@ export SONARQUBE_HELM_CHART_VERSION='5.0.6+370'
 
 #
 helm upgrade sonarqube sonarqube/sonarqube \
-  -n sonarqube-system \
   --version "$SONARQUBE_HELM_CHART_VERSION" \
   -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values sonarqube -o yaml -n sonarqube-system) <(cat << \EOF
 plugins:
@@ -270,8 +271,7 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status statefulset/sonarqube-sonarqube \
-  -n sonarqube-system
+kubectl rollout status statefulset/sonarqube-sonarqube
 ```
 
 ### Logs
@@ -279,7 +279,6 @@ kubectl rollout status statefulset/sonarqube-sonarqube \
 ```sh
 kubectl logs \
   -l 'app=sonarqube' \
-  -n sonarqube-system \
   -f
 ```
 
@@ -311,8 +310,7 @@ kubectl rollout restart statefulset sonarqube-sonarqube -n sonarqube-system
 ### Delete
 
 ```sh
-helm uninstall sonarqube \
-  -n sonarqube-system
+helm uninstall sonarqube
 
 kubectl delete ns sonarqube-system \
   --grace-period=0 \

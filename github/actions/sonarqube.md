@@ -44,8 +44,16 @@ jobs:
           echo '/opt/java/openjdk/bin' >> $GITHUB_PATH
 
       - name: SonarQube Scan
-        uses: sonarsource/sonarqube-scan-action@v1.0.0
+        uses: sonarsource/sonarqube-scan-action@v1.2.0
         env:
           SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONARQUBE_HOST_URL }}
 ```
+
+<!--
+      - uses: sonarsource/sonarqube-quality-gate-action@master
+        timeout-minutes: 5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+-->

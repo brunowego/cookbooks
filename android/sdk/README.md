@@ -9,7 +9,7 @@
 
 ### Dependencies
 
-- [OpenJDK](/openjdk.md) (v8)
+- [OpenJDK](/openjdk/README.md) (v8)
 - Linux
   - [Kernel-based Virtual Machine (KVM)](/kvm.md)
 
@@ -170,7 +170,7 @@ Exception in thread "main" java.lang.NoClassDefFoundError: javax/xml/bind/annota
 	...
 ```
 
-[Switch to OpenJDK 8](/openjdk.md#environment).
+[Switch to OpenJDK 8](/openjdk/README.md#environment).
 
 #### Device with API
 

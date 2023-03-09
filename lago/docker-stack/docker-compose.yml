@@ -12,8 +12,6 @@ services:
       PGDATA: /data/postgres
     volumes:
       - lago-postgres-data:/data/postgres
-    ports:
-      - 5432:5432
     restart: unless-stopped
 
   redis:
@@ -22,8 +20,6 @@ services:
     command: --port 6379
     volumes:
       - lago-redis-data:/data
-    ports:
-      - 6379:6379
     restart: unless-stopped
 
   api:

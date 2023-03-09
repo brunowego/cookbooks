@@ -18,3 +18,9 @@ https://docs.livekit.io/
 https://liveblocks.io/docs
 https://develop.sentry.dev | Gatsby
 -->
+
+<!--
+Golang -> Godoc (revive)
+Python -> Docstrings
+Java -> JavaDoc
+-->

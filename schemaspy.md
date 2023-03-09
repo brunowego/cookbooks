@@ -71,7 +71,7 @@ docker rm -f schemaspy
 
 ### Dependencies
 
-- [OpenJDK](/openjdk.md)
+- [OpenJDK](/openjdk/README.md)
 - [Graphviz](/graphviz.md)
 
 ### Installation

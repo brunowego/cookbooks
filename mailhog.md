@@ -46,8 +46,11 @@ helm repo update
 
 ```sh
 #
-kubectl create ns mailhog-system
+kubectl create ns mailhog
 # kubectl create ns mailing
+
+#
+kubens mailhog
 
 #
 helm search repo -l codecentric/mailhog
@@ -58,8 +61,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install mailhog codecentric/mailhog \
-  --namespace mailhog-system \
-  --version 5.2.1 \
+  --version 5.2.3 \
   -f <(cat << EOF
 auth:
   enabled: true
@@ -77,56 +79,60 @@ EOF
 )
 
 #
-kubectl get all -n sonarqube-system
+kubectl get all
 ```
 
 ### NGINX Ingress
+
+#### Using Helm Chart
 
 ```sh
 # Helm
 helm upgrade nginx-ingress stable/nginx-ingress -f <(yq w <(helm get values nginx-ingress) tcp.1025 mailhog/mailhog:1025)
 
-## Delete
+# Delete
 # TODO
+```
 
+#### Using Minikube Addon
+
+```sh
 # Minikube
 kubectl patch configmap tcp-services \
-  -p '{"data":{"1025":"mailhog/mailhog:1025"}}' \
-  -n kube-system
+  -p '{"data":{"1025":"mailhog/mailhog:1025"}}'
 
 kubectl patch deployment nginx-ingress-controller \
   --type 'json' \
   -p '[{"op": "add", "path": "/spec/template/spec/containers/0/ports", "value": [{"hostPort": 1025, "containerPort": 1025}]}]' \
-  -n kube-system
 
-## Delete
+# Delete
 kubectl patch configmap tcp-services \
   --type 'json' \
-  -p '[{"op": "remove", "path": "/data/1025"}]' \
-  -n kube-system
+  -p '[{"op": "remove", "path": "/data/1025"}]'
 
 kubectl patch deployment nginx-ingress-controller \
   --type 'json' \
-  -p '[{"op": "remove", "path": "/spec/template/spec/containers/0/ports", "value": [{"hostPort": 1025, "containerPort": 1025}]}]' \
-  -n kube-system
+  -p '[{"op": "remove", "path": "/spec/template/spec/containers/0/ports", "value": [{"hostPort": 1025, "containerPort": 1025}]}]'
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/mailhog -n mailhog
+kubectl rollout status deploy/mailhog
 ```
 
 ### Logs
 
 ```sh
-kubectl logs -l 'app.kubernetes.io/name=mailhog' -n mailhog -f
+kubectl logs \
+  -l 'app.kubernetes.io/name=mailhog' \
+  -f
 ```
 
 ### Delete
 
 ```sh
-helm uninstall mailhog -n mailhog
+helm uninstall mailhog
 
 kubectl delete ns mailhog --grace-period=0 --force
 ```

@@ -220,6 +220,7 @@ kubectl rollout status deployment/backstage
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/instance=backstage' \
+  -n backstage \
   -f
 ```
 

@@ -3,6 +3,8 @@
 **Keywords:** ORM
 
 <!--
+PRISMA_CLI_BINARY_TARGETS='debian-openssl-3.0.x'
+
 https://github.com/charmverse/app.charmverse.io/blob/main/prisma/schema.prisma
 https://github.com/podkrepi-bg/api/tree/master/db/seed
 -->
@@ -19,9 +21,10 @@ https://github.com/podkrepi-bg/api/tree/master/db/seed
 - [Concepts / Components / Prisma Data Platform](https://prisma.io/docs/concepts/components/prisma-data-platform)
 - [Guides / Database / Multi-schema](https://prisma.io/docs/guides/database/multi-schema)
 
-<!--
+### Guides
+
 - [Example projects](https://prisma.io/docs/about/prisma/example-projects)
--->
+  - [Code Repository](https://github.com/prisma/prisma-examples/tree/latest)
 
 ## Terms
 
@@ -78,7 +81,7 @@ mkdir -p ./db && mv ./prisma ./db/prisma
     "db:validate": "prisma validate",
     "db:generate": "prisma generate",
     "db:generate:watch": "pnpm db:generate --watch",
-    "db:push": "prisma db push --skip-generate",
+    "db:push": "prisma db push --skip-generate"
   },
   // ...
   "prisma": {
