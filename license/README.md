@@ -1,3 +1,9 @@
 # License
 
 TODO
+
+<!--
+MIT
+UNLICENSED
+COPYRIGHT
+-->

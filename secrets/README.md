@@ -24,13 +24,14 @@
 
 ### Generate
 
+- [Using Base64](/base64.md#generate-secrets)
+
+**Or:**
+
 ```sh
 #
 export LC_CTYPE=C; cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1
 
 #
 head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1
-
-#
-date +%s | sha256sum | base64 | head -c 32; echo
 ```

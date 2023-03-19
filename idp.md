@@ -30,9 +30,9 @@ https://linkedin.com/learning/microservices-security/securing-microservices
 
 ## Protocols
 
-- Open Authorization (OAuth)
-- OpenID Connect (OIDC)
-- Security Assertion Markup Language (SAML)
+- [Open Authorization (OAuth)](/oauth.md)
+- [OpenID Connect (OIDC)](/oidc.md)
+- [Security Assertion Markup Language (SAML)](/saml.md)
 
 <!-- ## Concepts
 

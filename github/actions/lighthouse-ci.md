@@ -24,8 +24,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        # with:
+        #   fetch-depth: 0
 
       - name: Use Node.js 14
         uses: actions/setup-node@v2

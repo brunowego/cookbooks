@@ -1,4 +1,4 @@
-# AWS Route 53
+# Production
 
 ## Cluster Issuer
 
@@ -10,7 +10,7 @@ cat << EOF | kubectl apply \
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
-  name: letsencrypt-issuer
+  name: letsencrypt-issuer # or letsencrypt-prod
 spec:
   acme:
     # server: https://acme-staging-v02.api.letsencrypt.org/directory

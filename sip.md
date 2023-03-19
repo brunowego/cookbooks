@@ -16,6 +16,8 @@ brew install --cask sip
 
 #### DMG
 
+##### v2.5.4
+
 ```sh
 #
 hdiutil attach https://sipapp.fra1.digitaloceanspaces.com/updates/v2/sip-2.5.4.dmg \

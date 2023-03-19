@@ -59,7 +59,7 @@ mkdir ~/.config/direnv
 #
 cat << EOF > ~/.config/direnv/direnv.toml
 [global]
-load_dotenv = true
+# load_dotenv = true
 strict_env = true
 
 [whitelist]

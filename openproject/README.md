@@ -24,7 +24,6 @@ https://<org-name>.openproject.com/projects/
 ### Dependencies
 
 - [Cert Manager (cert-manager)](/cert-manager/README.md#helm)
-  - [Self Signed](/cert-manager/cluster-issuer/self-signed.md)
 
 ### References
 

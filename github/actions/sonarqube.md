@@ -31,9 +31,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
+        # with:
+        #   # Disabling shallow clone is recommended for improving relevancy of reporting
+        #   fetch-depth: 0
 
       # ...
 

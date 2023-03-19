@@ -19,8 +19,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        # with:
+        #   fetch-depth: 0
 
       - uses: gitleaks/gitleaks-action@v2
         env:

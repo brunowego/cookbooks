@@ -1,5 +1,9 @@
 # Testing
 
+## Glossary
+
+- Graphical User Interface (GUI)
+
 ## Types
 
 - Unit Tests
@@ -94,6 +98,10 @@ TODO -->
 - [AssertJ](https://assertj.github.io/doc/) for Java
 - [Hamcrest](http://hamcrest.org/) for multiple languages
 - [Truth](https://github.com/google/truth) for Java and Android
+
+### Languages
+
+- [Node.js](/nodejs/testing.md)
 
 ### Mocking
 

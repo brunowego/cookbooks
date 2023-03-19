@@ -18,13 +18,13 @@ cat << EOF | kubectl apply \
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
-  name: letsencrypt-staging
+  name: letsencrypt-issuer # or letsencrypt-staging
 spec:
   acme:
     server: https://acme-staging-v02.api.letsencrypt.org/directory
     email: ${EMAIL}
     privateKeySecretRef:
-      name: letsencrypt-staging
+      name: letsencrypt-issuer
     solvers:
       - http01:
           ingress:
@@ -35,7 +35,7 @@ spec:
 EOF
 
 #
-kubectl describe clusterissuer letsencrypt-staging | \
+kubectl describe clusterissuer letsencrypt-issuer | \
   kubectl neat
 ```
 
@@ -48,7 +48,7 @@ kubectl get ingress -A
 #
 kubectl annotate ingress \
   <ingress-name> \
-  cert-manager.io/cluster-issuer='letsencrypt-staging' \
+  cert-manager.io/cluster-issuer='letsencrypt-issuer' \
   -n <namespace>
 
 #

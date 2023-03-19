@@ -27,4 +27,7 @@ mkdocs -h
 ```sh
 #
 mkdocs serve
+
+#
+mkdocs build
 ```

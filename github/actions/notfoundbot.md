@@ -28,8 +28,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        # with:
+        #   fetch-depth: 0
 
       - name: Fix links
         uses: tmcw/notfoundbot@v2.0.2

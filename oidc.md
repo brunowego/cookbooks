@@ -9,11 +9,13 @@ https://www.netiq.com/documentation/access-manager-45/pdfdoc/performance-and-siz
 Impersonated
 -->
 
+<!--
+Client
+
+https://github.com/AxaGuilDEv/react-oidc
+-->
+
 **Keywords:** Identity Provider (IdP)
-
-## Alternative
-
-- [Security Assertion Markup Language (SAML)](/saml.md)
 
 ## Links
 
@@ -21,9 +23,21 @@ Impersonated
 - [Certified OpenID Connect Implementations](https://openid.net/developers/certified/)
 - [Wikipedia](https://en.wikipedia.org/wiki/OpenID)
 
+## Debugger
+
+- [OpenID Connect \<debugger/\>](https://oidcdebugger.com)
+- [OpenID Connect Playground](https://openidconnect.net) 🌟
+
+<!--
+https://developers.onelogin.com/blog/openidconnect-inspector
+https://developers.onelogin.com/openid-connect/inspector
+
+https://medium.com/application-security/openid-connect-tester-for-developers-63427324faea
+-->
+
 ## Providers
 
-- [Dex](/dex.md)
+- [Dex](/dex/README.md)
 - [IdentityServer](/identityserver.md)
 - [Keycloak](/keycloak/README.md)
 - [Ory Hydra](/ory-hydra.md)

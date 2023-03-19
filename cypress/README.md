@@ -9,13 +9,18 @@ https://app.pluralsight.com/library/courses/js-friends-session-02/table-of-conte
 https://app.pluralsight.com/library/courses/codemash-session-01/table-of-contents
 -->
 
-**Keywords:** End-to-End (E2E), Integration
+**Keywords:** E2E, Integration
 
 ## Links
 
 - [Org. Repository](https://github.com/cypress-io)
 - [Main Website](https://cypress.io)
 - [Docs](https://docs.cypress.io)
+
+## Glossary
+
+- End-to-End (E2E)
+- Robotic Process Automation (RPA)
 
 ## Library
 

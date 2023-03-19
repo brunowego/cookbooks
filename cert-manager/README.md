@@ -130,10 +130,11 @@ kubectl rollout status deploy/cert-manager
 
 ### Usage
 
+First, add [an issuer](./cluster-issuer/README.md).
+
 ```sh
 #
-kubectl get clusterissuer -o yaml | \
-  kubectl neat
+kubectl get clusterissuer -o json | jq -r '.items[].metadata.name'
 ```
 
 ### Logs

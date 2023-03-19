@@ -1,5 +1,7 @@
 # Plain Text
 
+**Keywords:** Copy Paste Cleaner, Clipboard Cleaner
+
 ## App
 
 ### Installation

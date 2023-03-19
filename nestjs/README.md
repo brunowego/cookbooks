@@ -1,6 +1,8 @@
 # NestJS
 
 <!--
+nest start -w --preserveWatchOutput
+
 https://github.com/search?o=desc&q=filename%3Apackage.json+%22nestjs%22+path%3Aapps&s=indexed&type=Code
 -->
 

@@ -210,6 +210,20 @@ minikube stop -p minikube && \
 
 ### Tips
 
+<!-- ####
+
+```sh
+#
+minikube start \
+  $(echo "$MINIKUBE_START_OPTS") \
+  -p minikube \
+  --container-runtime docker \
+  --vm=true
+
+#
+eval $(minikube -p minikube docker-env)
+``` -->
+
 #### Added or Update Kube Config
 
 ```sh

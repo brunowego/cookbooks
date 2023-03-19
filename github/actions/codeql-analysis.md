@@ -45,8 +45,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        # with:
+        #   fetch-depth: 0
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2

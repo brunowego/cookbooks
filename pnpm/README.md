@@ -2,6 +2,8 @@
 
 <!--
 https://github.com/antribute/open-source
+
+shared-workspace-lockfile=false
 -->
 
 **Keywords:** Node.js Package Manager

@@ -9,6 +9,8 @@ https://github.com/search?o=desc&q=path%3Apackages%2Fbackend+%22backstage-cli%22
 <!--
 https://github.com/devxp-tech/backstage
 https://github.com/backstage/software-templates
+
+https://roadie.io/blog/backstage-monorepo-guide/
 -->
 
 ## Links

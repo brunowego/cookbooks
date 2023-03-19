@@ -106,9 +106,21 @@ code --install-extension ms-vscode-remote.remote-containers
 jq '."recommendations" += ["ms-vscode-remote.remote-containers"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
-**Bootstrap**
+#### Bootstrap
 
 1. Press `Command (⌘)` + `Shift (⇧)` + `P`
 2. Select `>Dev Containers: Add Dev Container Configuration Files...`
 3. Type `Ubuntu` -> Select `jammy`
 4. Select features -> OK
+
+### Issues
+
+#### Missing Ignored File
+
+```log
+Command 'Dev Containers: Reopen in Container' resulted in an error
+
+Command failed: /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin) --ms-enable-electron-run-as-node /Users/brunowego/.vscode/extensions/ms-vscode-remote.remote-containers-0.282.0/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder </path/to/project> --log-level debug --log-format json --config </path/to/project>/.devcontainer/devcontainer.json --include-merged-configuration --mount-workspace-git-root true
+```
+
+Check logs for missing ignored files.

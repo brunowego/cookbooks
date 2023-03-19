@@ -39,3 +39,23 @@ npx graphql-codegen help
 # Using Yarn
 yarn dlx graphql-codegen help
 ```
+
+### Issues
+
+#### TBD
+
+```log
+Invalid Codegen Configuration!
+  Please make sure that your codegen config file contains either the "schema" field
+  or every generated file has its own "schema" field.
+  It should looks like that:
+  schema:
+  - my-schema.graphql
+  or:
+  generates:
+  path/to/output:
+  schema: my-schema.graphql
+◼ Generate outputs
+```
+
+TODO

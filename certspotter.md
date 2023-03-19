@@ -11,7 +11,7 @@
 
 ### Installation
 
-#### go get
+#### go install
 
 ```sh
 GOBIN=/usr/local/bin go install software.sslmate.com/src/certspotter/cmd/certspotter@latest
