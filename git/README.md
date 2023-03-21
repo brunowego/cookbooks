@@ -330,13 +330,6 @@ git describe --tags | sed 's/^v//'
 git describe --tags | cut -d - -f 1 | sed 's/^v//'
 ```
 
-#### Orphan Branch
-
-```sh
-#
-git checkout --orphan <branch>
-```
-
 #### Developer Certificate of Origin (DCO)
 
 - [Reference](https://github.com/apps/dco)

@@ -7,7 +7,9 @@
 ```sh
 # Darwin
 sudo networksetup -listallhardwareports
+
 networksetup -getinfo '[hardware-port]' # Thunderbolt Ethernet, Wi-Fi
+
 sudo networksetup -setv6off '[hardware-port]' # Thunderbolt Ethernet, Wi-Fi
 ```
 

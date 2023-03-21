@@ -6,11 +6,10 @@
 - [Dashboard](https://app.slack.com)
 - [Main Website](https://slack.com)
 - [Status Page](https://status.slack.com)
+- [Workspace Admin](https://my-org.slack.com/admin)
 
 <!--
 https://slack.github.com/
-
-https://<owner>.slack.com/admin
 -->
 
 ## App

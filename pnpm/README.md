@@ -81,12 +81,11 @@ pnpm <command>
 
 # Clean cache
 pnpm store prune
-
-#
-pnpm prune
 ```
 
 <!--
+pnpm prune
+
 pnpm --filter <package-name> <command>
 
 pnpm add --filter shared-ui typescript -D

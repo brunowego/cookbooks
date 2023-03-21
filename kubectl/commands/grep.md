@@ -32,7 +32,7 @@ kubectl grep pods -A apiserver -o wide
 ### Batch Deletion
 
 ```sh
-kubectl grep pod [name] | \
+kubectl grep pod <name> | \
   awk '{print $2}' | \
     xargs kubectl delete pod
 ```

@@ -140,7 +140,7 @@ docker run -d \
   -p 5556:5556 \
   --name dex \
   --network workbench \
-  docker.io/dexidp/dex:v2.35.0 dex serve /etc/dex/cfg/config.yml
+  docker.io/dexidp/dex:v2.35.3 dex serve /etc/dex/cfg/config.yml
 ```
 
 ### Testing
@@ -380,6 +380,24 @@ curl \
 ```
 
 ## Issues
+
+### Missing IPv6 Support
+
+```log
+connect ECONNREFUSED ::1:5556
+```
+
+```sh
+#
+telnet ::1 5556
+
+#
+lsof -nP -iTCP:'5556' | grep LISTEN
+```
+
+<!--
+Colima not have IPv6 support.
+-->
 
 ### TBD
 

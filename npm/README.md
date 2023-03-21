@@ -93,7 +93,13 @@ npm ci
 
 ### Tips
 
-#### Move `node_modules` to Trash
+#### Delete Node Modules
+
+```sh
+find . -name 'node_modules' -type d -prune -exec rm -fR '{}' +
+```
+
+##### Move `node_modules` to Trash
 
 **Dependencies:** [trash](/trash.md)
 

@@ -1,5 +1,12 @@
 # Git Checkout
 
+## Usage
+
+```sh
+# Orphan Branch
+git checkout --orphan <branch>
+```
+
 ## Tips
 
 ### Checkout Main Branch
