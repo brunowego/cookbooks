@@ -24,7 +24,7 @@ pnpx @nestjs/cli new -h
 ### Bootstrap
 
 ```sh
-#
+# Using pnpm
 pnpx @nestjs/cli new \
   -gs \
   -l TypeScript \

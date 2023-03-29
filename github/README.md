@@ -26,6 +26,7 @@ https://github.community/t/picture-tag-in-markdown/149471
 
 - [myOctocat](https://myoctocat.com)
 - [GitHub Status](https://githubstatus.com)
+- [Twitter](https://twitter.com/githubstatus)
 
 ## API
 

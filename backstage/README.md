@@ -11,6 +11,8 @@ https://github.com/devxp-tech/backstage
 https://github.com/backstage/software-templates
 
 https://roadie.io/blog/backstage-monorepo-guide/
+
+https://github.com/thefrontside/playhouse
 -->
 
 ## Links

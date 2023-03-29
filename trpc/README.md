@@ -1,4 +1,4 @@
-# tRPC
+# TypeScript Remote Procedure Call (tRPC)
 
 <!--
 https://github.com/PatrickWatson887/Cognitive-Sports-Therapy
@@ -19,7 +19,7 @@ https://github.com/sachinraja/trpc-playground
 ## Links
 
 - [Code Repository](https://github.com/trpc/trpc)
-- [Main Website](https://trpc.io/)
+- [Main Website](https://trpc.io)
 
 ## Docs
 

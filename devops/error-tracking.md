@@ -11,4 +11,5 @@
 <!--
 https://glitchtip.com/
 https://logrocket.com/
+https://highlight.io/
 -->

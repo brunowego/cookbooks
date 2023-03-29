@@ -19,15 +19,6 @@ https://github.com/nambuntu/reactive-programming-performance/tree/master
 
 - [Main Website](https://jmeter.apache.org/)
 
-## Alternatives
-
-- [Artillery](/artillery.md)
-- [bombardier](/bombardier.md)
-- [Gatling](/gatling.md)
-- [K6](/k6.md)
-- [Locust](/locust.md)
-- Loadmill
-
 ## Guides
 
 - [Dashboard generator](https://jmeter.apache.org/devguide-dashboard.html)

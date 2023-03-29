@@ -9,41 +9,25 @@
 **Refer:** `./.github/PULL_REQUEST_TEMPLATE.md`
 
 ```md
-## What does this PR do?
+## Description
 
-<!--
-Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
--->
+[Description of the changes made in this PR.]
 
-Fixes # (issue)
+## Related Issue(s)
 
-## Type of change
+[Links to any related issues or tickets.]
 
-<!--
-Please delete options that are not relevant.
--->
+## Checklist
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
+Please check the following before submitting your PR:
 
-## How should this be tested?
+- [ ] Code has been tested locally and works as expected.
+- [ ] All code is formatted and styled according to the project's guidelines.
+- [ ] All relevant documentation has been updated or added.
+- [ ] All tests related to the changes have passed.
+- [ ] Any new dependencies have been added to the project's documentation.
 
-<!--
-Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
--->
+## Additional Notes
 
-- [ ] Test A
-- [ ] Test B
-
-## Checklist:
-
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code and corrected any misspellings
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
+[Add any additional notes or comments here.]
 ```

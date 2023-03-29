@@ -1,6 +1,7 @@
 # Docusaurus
 
 <!--
+https://github.com/logto-io/docs
 https://github.com/subsquid/docs
 https://github.com/revoltchat/documentation
 https://developers.cardano.org/

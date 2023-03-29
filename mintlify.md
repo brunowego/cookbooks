@@ -2,8 +2,8 @@
 
 <!--
 https://writer.mintlify.com/
-
 https://docs.uselotus.io/overview/why-lotus
+https://flipt.io/docs/
 -->
 
 **Keywords:** Documentation as Code
@@ -25,6 +25,9 @@ npm install mintlify -g
 ### Usage
 
 ```sh
+#
+mintlify install
+
 #
 mintlify dev
 ```

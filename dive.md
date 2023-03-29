@@ -1,6 +1,6 @@
 # dive
 
-**Keywords:** Inspect Docker Image
+**Keywords:** Inspect Docker Image, Docker Size
 
 ## CLI
 

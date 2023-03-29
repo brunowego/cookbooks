@@ -34,7 +34,10 @@ stripe login
 
 <!--
 #
-stripe listen -f http://localhost:3000/api/webhooks
+stripe listen --forward-to localhost:3000/api/webhooks/stripe
+
+#
+stripe listen -f http://localhost:3000/api/webhooks/
 
 #
 stripe listen -f http://localhost:52384/api/payments/completed/webhook

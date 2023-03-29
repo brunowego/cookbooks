@@ -3,6 +3,8 @@
 <!--
 https://github.com/Okampus/okampus/tree/dev/apps/strapi
 
+https://github.com/SocialGouv/mda/tree/main/packages/strapi-types
+
 Port 1337
 -->
 

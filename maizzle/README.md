@@ -1,7 +1,10 @@
 # Maizzle
 
+**Keywords:** HTML Emails
+
 <!--
 https://github.com/maizzle/starter-postmark
+https://github.com/productdevbook/full-stack-monorepo/tree/main/apps/email
 -->
 
 ## Links

@@ -7,7 +7,7 @@ DB_USERNAME filetype:env
 ## Tools
 
 - [direnv](/direnv.md) 🌟
-- [dotenv-cli](/dotenv/dotenv-cli.md)
+- [dotenv-cli](/dotenv/cli.md)
 - [envo](/envo.md)
 
 ## Tips

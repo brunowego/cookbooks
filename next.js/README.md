@@ -15,7 +15,7 @@ https://github.com/makeplane/plane
 -->
 
 <!--
-https://github.com/search?o=desc&q=filename%3Apackage.json+%22next%22+%22tailwindcss%22+%22typescript%22+path%3Aapps&s=indexed&type=Code
+https://github.com/search?o=desc&q=path%3Apackage.json+%22next%22+%22tailwindcss%22+%22typescript%22+path%3Aapps&s=indexed&type=code
 -->
 
 <!--

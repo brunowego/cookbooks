@@ -1,5 +1,10 @@
 # Design
 
+<!--
+https://superlogica.com/
+https://rechain.co/
+-->
+
 ## Links
 
 - [Designer Slack Communities](https://designerslack.community/)
@@ -27,7 +32,7 @@
 https://saas-ui.dev/
 https://light.so/home
 https://comfortdelgro.github.io/compass-design/design/colors
-https://www.javaistic.ml/
+https://javaistic.ml/
 https://prepo.io/
 https://risedle.com/
 https://app.daily.dev/search

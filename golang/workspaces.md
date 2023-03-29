@@ -1,5 +1,9 @@
 # Golang Workspaces
 
+<!--
+./go.work
+-->
+
 ## Links
 
 - Blog
@@ -15,7 +19,7 @@ go help work
 
 ```sh
 #
-go work init ./
+go work init </path/to/app>
 
 #
 go work use </path/to/app>

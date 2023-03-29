@@ -42,7 +42,7 @@ open "http://localhost:6060/pkg/$(go list -m)"
 
 ```sh
 #
-export PKG='github.com/london-bridge/auth'
+export PKG='github.com/<owner>/<name>'
 
 #
 godoc -http=:6060

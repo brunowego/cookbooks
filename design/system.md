@@ -34,4 +34,5 @@ https://www.youtube.com/watch?v=2pBlLUE49hI
 
 ## Packages
 
+- [Stratis UI](https://stratisui.com)
 - [Untitled UI](https://untitledui.com)

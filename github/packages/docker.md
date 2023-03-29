@@ -1,6 +1,15 @@
 # GitHub Packages Docker
 
-TODO
+## Usage
+
+```sh
+# Login
+export GITHUB_USERNAME='brunowego'
+
+docker login \
+  -u "$GITHUB_USERNAME" \
+  ghcr.io
+```
 
 <!-- ## Credentials -->
 
@@ -13,13 +22,6 @@ docker-credential-osxkeychain list
 jq 'del(.credsStore)' ~/.docker/config.json | sponge ~/.docker/config.json
 
 docker logout ghcr.io
-
-# Login
-export GITHUB_USERNAME='brunowego'
-
-docker login \
-  -u "$GITHUB_USERNAME" \
-  ghcr.io
 
 #
 docker pull ghcr.io/<organization>/<image>

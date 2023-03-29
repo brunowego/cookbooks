@@ -1,5 +1,9 @@
 # Disc Free (df)
 
+## Related
+
+- [Disc Usage (du)](/du.md)
+
 ## CLI
 
 ### Usage

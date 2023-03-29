@@ -11,10 +11,6 @@ https://github.com/ONSdigital/blaise-cawi-load-tests/tree/main
 
 - [Code Repository](https://github.com/locustio/locust)
 
-## Alternatives
-
-- [K6](/k6.md)
-
 ## Guides
 
 - [Distributed load generation](https://docs.locust.io/en/stable/running-locust-distributed.html)

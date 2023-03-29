@@ -9,65 +9,6 @@ https://linkedin.com/learning/learning-mongodb/
 
 - [MongoDB ObjectId ↔ Timestamp Converter](https://steveridout.github.io/mongo-object-time/)
 
-## Helm
-
-### References
-
-- [Parameters](https://github.com/bitnami/charts/tree/main/bitnami/mongodb#parameters)
-
-### Repository
-
-```sh
-helm repo add bitnami 'https://charts.bitnami.com/bitnami'
-helm repo update
-```
-
-### Install
-
-```sh
-#
-kubectl create ns mongodb
-
-#
-kubens mongodb
-
-#
-helm search repo -l bitnami/mongodb
-
-#
-helm install mongo bitnami/mongodb \
-  --version 13.6.4 \
-  -f <(cat << EOF
-auth:
-  rootPassword: root
-EOF
-)
-```
-
-### Secrets
-
-```sh
-kubectl get secret mongo-mongodb \
-  -o jsonpath='{.data.mongodb-root-password}' | \
-    base64 -d; echo
-```
-
-### Port Forward
-
-```sh
-kubectl port-forward svc/mongo-mongodb 27017:27017
-```
-
-### Delete
-
-```sh
-helm uninstall mongo
-
-kubectl delete ns mongodb \
-  --grace-period=0 \
-  --force
-```
-
 ## Docker
 
 ### Network
@@ -80,6 +21,19 @@ docker network create workbench \
 ### Running
 
 ```sh
+# Without User and Password
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h mongodb \
+  -v mongodb-data:/data/db \
+  -v mongodb-configdb:/data/configdb \
+  -e MONGO_INITDB_DATABASE='dev' \
+  -p 27017:27017 \
+  --name mongodb \
+  --network workbench \
+  docker.io/library/mongo:4.4.6
+
+# With User and Password
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mongodb \
@@ -211,4 +165,63 @@ mongo admin --eval "db.shutdownServer()"
 mongo [db-name] <<-EOSQL
 [commands]
 EOSQL
+```
+
+## Helm
+
+### References
+
+- [Parameters](https://github.com/bitnami/charts/tree/main/bitnami/mongodb#parameters)
+
+### Repository
+
+```sh
+helm repo add bitnami 'https://charts.bitnami.com/bitnami'
+helm repo update
+```
+
+### Install
+
+```sh
+#
+kubectl create ns mongodb
+
+#
+kubens mongodb
+
+#
+helm search repo -l bitnami/mongodb
+
+#
+helm install mongo bitnami/mongodb \
+  --version 13.6.4 \
+  -f <(cat << EOF
+auth:
+  rootPassword: root
+EOF
+)
+```
+
+### Secrets
+
+```sh
+kubectl get secret mongo-mongodb \
+  -o jsonpath='{.data.mongodb-root-password}' | \
+    base64 -d; echo
+```
+
+### Port Forward
+
+```sh
+kubectl port-forward svc/mongo-mongodb 27017:27017
+```
+
+### Delete
+
+```sh
+helm uninstall mongo
+
+kubectl delete ns mongodb \
+  --grace-period=0 \
+  --force
 ```

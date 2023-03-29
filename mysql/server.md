@@ -25,8 +25,8 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mysql \
   -e MYSQL_ROOT_PASSWORD='root' \
-  -e MYSQL_USER='user' \
-  -e MYSQL_PASSWORD='pass' \
+  -e MYSQL_USER='dev' \
+  -e MYSQL_PASSWORD='dev' \
   -e MYSQL_DATABASE='dev' \
   -v mysql-data:/var/lib/mysql \
   -p 3306:3306 \
@@ -39,8 +39,8 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mysql \
   -e MYSQL_ROOT_PASSWORD='root' \
-  -e MYSQL_USER='user' \
-  -e MYSQL_PASSWORD='pass' \
+  -e MYSQL_USER='dev' \
+  -e MYSQL_PASSWORD='dev' \
   -e MYSQL_DATABASE='dev' \
   -v mysql-data:/var/lib/mysql \
   -p 3306:3306 \

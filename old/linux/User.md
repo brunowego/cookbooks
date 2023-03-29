@@ -15,25 +15,25 @@ users
 ## Add
 
 ```sh
-sudo useradd [username]
+sudo useradd <username>
 ```
 
 ## Password
 
 ```sh
-sudo passwd [username]
+sudo passwd <username>
 ```
 
 ## Delete
 
 ```sh
-sudo userdel [username]
+sudo userdel <username>
 ```
 
 ### Home Folder
 
 ```sh
-sudo rm -r /home/[username]
+sudo rm -r /home/<username>
 ```
 
 ## Details

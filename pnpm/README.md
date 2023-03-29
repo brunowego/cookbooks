@@ -4,6 +4,10 @@
 https://github.com/antribute/open-source
 
 shared-workspace-lockfile=false
+engine-strict=true
+auto-install-peers=true
+shamefully-hoist=true
+dedupe-peer-dependents=true
 -->
 
 **Keywords:** Node.js Package Manager
@@ -84,8 +88,6 @@ pnpm store prune
 ```
 
 <!--
-pnpm prune
-
 pnpm --filter <package-name> <command>
 
 pnpm add --filter shared-ui typescript -D

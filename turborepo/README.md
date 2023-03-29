@@ -47,6 +47,9 @@ pnpm add turbo -D
 # Using NPX
 npx turbo -h
 
+# Using pnpm
+pnpm dlx turbo -h
+
 # Using Local
 turbo -h
 ```

@@ -30,6 +30,10 @@ Layoff
 - [Headway](https://headwayapp.co/)
 - [Rewind & Capture / Brand Grader](https://rewindandcapture.com/brand-grader/)
 
+## Terms
+
+- State of the art
+
 ## Glossary
 
 <!--

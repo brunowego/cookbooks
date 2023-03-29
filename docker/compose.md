@@ -143,6 +143,7 @@ networks:
 
 ```sh
 #
+echo 'COMPOSE_PROJECT_NAME=my-project' >> ./.env
 echo 'DOCKER_NETWORK_SUBNET=10.1.1.0/24' >> ./.env
 echo 'DOCKER_NETWORK_SUBNET=10.1.1.0/24' >> ./.example.env
 echo '/.env' >> ./.gitignore

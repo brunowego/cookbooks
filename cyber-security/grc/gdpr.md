@@ -30,6 +30,10 @@ https://app.pluralsight.com/library/courses/gdpr-executive-briefing/table-of-con
 - Data Protection Officer (DPO)
 - Data Protection Officer as a Service (DPOaaS)
 
+## Terms
+
+- Privacy by Design / Privacy by Default
+
 ## DPAs
 
 - [Brazil / Autoridade Nacional de Proteção de Dados](https://gov.br/anpd)
@@ -37,7 +41,3 @@ https://app.pluralsight.com/library/courses/gdpr-executive-briefing/table-of-con
 ## Tools
 
 - [Securiti Data Controls Cloud](https://securiti.ai)
-
-<!--
-https://securiti.ai/solutions/
--->
