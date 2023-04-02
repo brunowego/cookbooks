@@ -2,7 +2,7 @@
 
 ## Links
 
-- [test-cors.org](https://test-cors.org/)
+- [test-cors.org](https://test-cors.org)
 
 ## References
 

@@ -31,7 +31,7 @@ docker run -d \
   -p 27017:27017 \
   --name mongodb \
   --network workbench \
-  docker.io/library/mongo:4.4.6
+  docker.io/library/mongo:5.0.15
 
 # With User and Password
 docker run -d \
@@ -39,24 +39,43 @@ docker run -d \
   -h mongodb \
   -v mongodb-data:/data/db \
   -v mongodb-configdb:/data/configdb \
+  -e MONGO_INITDB_ROOT_USERNAME='root' \
+  -e MONGO_INITDB_ROOT_PASSWORD='root' \
   -e MONGO_INITDB_DATABASE='dev' \
-  -e MONGO_INITDB_ROOT_USERNAME='dev' \
-  -e MONGO_INITDB_ROOT_PASSWORD='dev' \
   -p 27017:27017 \
   --name mongodb \
   --network workbench \
-  docker.io/library/mongo:4.4.6
+  docker.io/library/mongo:5.0.15
+
+# With Replica Set
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h mongodb \
+  -v mongodb-data:/data/db \
+  -v mongodb-configdb:/data/configdb \
+  -p 27017:27017 \
+  --name mongodb \
+  --network workbench \
+  docker.io/library/mongo:5.0.15 mongod --replSet rs0
+
+docker exec mongodb mongosh --eval 'rs.initiate({_id: "rs0", members: [{_id: 0, host: "localhost:27017"}]})'
 ```
 
 <!--
-MONGODB_URI='mongodb+srv://dev:dev@127.0.0.1:27017/dev'
+MONGODB_URI=mongodb+srv://root:root@127.0.0.1:27017/dev
+
+DATABASE_URL=mongodb+srv://dev:dev@127.0.0.1/dev
+DATABASE_URL=mongodb://root:root@127.0.0.1:27017/dev?authSource=admin&replicaSet=rs0
+
+readPreference=primary
+ssl=false
 -->
 
 ### Client
 
 ```sh
 docker run -it --rm \
-  docker.io/library/mongo:4.4.6 mongo -h
+  docker.io/library/mongo:5.0.15 mongo -h
 ```
 
 ### Remove
@@ -79,8 +98,7 @@ version: '3'
 
 services:
   mongodb:
-    image: docker.io/library/mongo:4.4.6
-    container_name: mongodb
+    image: docker.io/library/mongo:5.0.15
     hostname: mongodb
     volumes:
       - type: volume
@@ -90,14 +108,13 @@ services:
         source: mongodb-configdb
         target: /data/configdb
     environment:
-      MONGO_INITDB_ROOT_USERNAME: user
-      MONGO_INITDB_ROOT_PASSWORD: pass
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_DATABASE: dev
     ports:
       - target: 27017
-        published: 27017
+        published: $MONGODB_PORT
         protocol: tcp
-    networks:
-      - workbench
     restart: always
 
 volumes:
@@ -105,11 +122,6 @@ volumes:
     driver: local
   mongodb-configdb:
     driver: local
-
-networks:
-  workbench:
-    name: workbench
-    external: true
 ```
 
 ## CLI
@@ -225,3 +237,15 @@ kubectl delete ns mongodb \
   --grace-period=0 \
   --force
 ```
+
+## Issues
+
+### Missing Mechanism and Source
+
+```log
+Command failed with error 13 (Unauthorized): 'command listCollections requires authentication' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "command listCollections requires authentication", "code": 13, "codeName": "Unauthorized"}
+```
+
+**DBeaver:**
+
+Set "Mechanism" to `SCRAM-SHA-1` and "Source" to `admin`.

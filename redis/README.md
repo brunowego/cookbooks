@@ -88,6 +88,32 @@ docker rm -f redis
 docker volume rm redis-data
 ```
 
+## Docker Compose
+
+### Manifest
+
+```yml
+---
+version: '3'
+
+services:
+  redis:
+    image: docker.io/library/redis:7.0.8
+    volumes:
+      - type: volume
+        source: redis-data
+        target: /data
+    ports:
+      - target: 6379
+        published: $REDIS_PORT
+        protocol: tcp
+    restart: unless-stopped
+
+volumes:
+  redis-data:
+    driver: local
+```
+
 ## CLI
 
 ### Installation

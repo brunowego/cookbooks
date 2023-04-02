@@ -47,6 +47,10 @@
 }
 ```
 
+```sh
+ts-node --showConfig
+```
+
 <!-- ###
 
 ```sh

@@ -16,6 +16,10 @@ yarn workspaces list
 yarn workspace <workspace> add <package> --dev
 ```
 
+<!--
+yarn workspace <package> <script>
+-->
+
 ## Issues
 
 ### Missing Version

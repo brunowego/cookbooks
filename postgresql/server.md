@@ -235,6 +235,36 @@ docker rm -f postgresql
 docker volume rm postgresql-data
 ```
 
+## Docker Compose
+
+### Manifest
+
+```yml
+---
+version: '3'
+
+services:
+  postgres:
+    image: docker.io/library/postgres:15.1-alpine
+    volumes:
+      - type: volume
+        source: postgresql-data
+        target: /var/lib/postgresql/data
+    environment:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+      POSTGRES_DB:
+    ports:
+      - target: 5432
+        published: $POSTGRES_PORT
+        protocol: tcp
+    restart: unless-stopped
+
+volumes:
+  postgresql-data:
+    driver: local
+```
+
 ## Helm
 
 ### References

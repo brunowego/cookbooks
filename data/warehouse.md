@@ -10,3 +10,9 @@
 - Amazon Redshift
 - Google BigQuery
 - Snowflake
+
+<!--
+Apache Druid
+Presto
+https://delta.io
+-->

@@ -25,15 +25,13 @@ Confidence
 6. Visibility and Transparency — Keep it Open
 7. Respect for User Privacy — Keep it User-Centric
 
-<!--
-Tratado de Privacidade e Proteção de Dados (por Bruno Bioni)
+## Privacy and Data Protection Treaty (by Bruno Bioni)
 
-- Minimizar — Dados coletados devem ser os minimos possiveis;
-- Esconder — Dados e sua inter-relagajo não devem ser publicizados;
-- Separar — O processamento deve ocorrer em compartimentos separados sempre que possivel;
-- Agregar — Dados devem ser processado com alto nivel de agregagiao e corn o minim° de detalhes;
-- Informar — Transparencia sujeitos devem ser informados do processamento de suas informaceies;
-- Controlar — Controle sobre a coleta e tratamento de dados aos titulares;
-- Fiscalizar e aplicar as leis — Politicas de privacidade devem estar conectadas corn as exigencias legais e podem ser fiscalizadas;
-- Demonstrar — Controladores devem poder demonstrar o respeito as politicas de privacidade e aos requisitos legais;
--->
+- Minimize — Data collected should be as minimal as possible
+- Hide — Data and their interrelation must not be made public
+- Separate — Processing should take place in separate compartments whenever possible
+- Aggregate — Data must be processed with a high level of aggregation and with a minimum of detail
+- Inform — Transparency subjects must be informed of the processing of their information
+- Control — Control over the collection and processing of data to holders
+- Enforce and enforce laws — Privacy policies must be connected with legal requirements and can be enforced
+- Demonstrate — Controllers must be able to demonstrate respect for privacy policies and legal requirements

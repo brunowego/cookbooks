@@ -1,5 +1,10 @@
 # MailDev
 
+## Links
+
+- [Code Repository](https://github.com/maildev/maildev)
+- [Main Website](https://maildev.github.io/maildev/)
+
 ## CLI
 
 ### Installation

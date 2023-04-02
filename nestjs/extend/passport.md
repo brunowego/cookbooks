@@ -3,9 +3,6 @@
 TODO
 
 <!--
-https://github.com/codewithmecoder/crud_nestjs_prisma_postgres_passport_jwt
-https://snyk.io/advisor/npm-package/@nestjs/passport/example
-
 # .env
 SECRET_KEY='S3cr3t_K#Key'
 

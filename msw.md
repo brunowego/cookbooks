@@ -32,7 +32,10 @@ yarn add msw --dev
 ### Commands
 
 ```sh
+#
 npx msw -h
+
+#
 yarn dlx msw -h
 ```
 
