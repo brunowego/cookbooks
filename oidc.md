@@ -42,10 +42,6 @@ https://medium.com/application-security/openid-connect-tester-for-developers-634
 - [Keycloak](/keycloak/README.md)
 - [Ory Hydra](/ory-hydra.md)
 
-<!--
-- [IdentityServer](/identityserver.md)
--->
-
 <!-- ##
 
 - JWT Token

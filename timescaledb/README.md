@@ -1,5 +1,7 @@
 # TimescaleDB
 
+**Keywords:** Time Series Database
+
 ## Links
 
 - [Code Repository](https://github.com/timescale/timescaledb)

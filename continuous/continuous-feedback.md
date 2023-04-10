@@ -1,7 +1,0 @@
-# Continuous Feedback
-
-<!-- ##
-
-- ChatOps -->
-
-TODO

@@ -1,4 +1,8 @@
-# Telemetry
+# Tracing
+
+## Terms
+
+- Telemetry
 
 ## Tools
 

@@ -16,13 +16,14 @@ npm install dotenv-cli -g
 yarn global add dotenv-cli
 ```
 
-### Usage
+### Commands
 
 ```sh
+# Using local
 dotenv -h
 ```
 
-### Running
+### Usage
 
 ```sh
 #

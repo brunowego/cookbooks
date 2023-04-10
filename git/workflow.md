@@ -18,3 +18,8 @@ git config --global init.defaultBranch 'main'
 # Trunk-Based Development (TBD)
 git config --global init.defaultBranch 'trunk' # or, main
 ```
+
+<!--
+Scaled Trunk Based Development
+Feature-based Development
+-->

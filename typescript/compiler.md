@@ -5,6 +5,10 @@
 ### Commands
 
 ```sh
+# Using NPX
+npx tsc -h
+
+# Using local
 tsc -h
 ```
 
@@ -13,4 +17,6 @@ tsc -h
 ```sh
 #
 tsc -p ./tsconfig.json --showConfig
+# or
+tsc -p ./tsconfig.build.json --showConfig
 ```

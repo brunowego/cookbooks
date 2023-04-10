@@ -9,6 +9,11 @@ https://configr.com/blog/medo-de-bi-pelo-alto-investimento-conheca-o-metabase/
 
 **Keywords:** Business Intelligence
 
+## Links
+
+- [Code Repository](https://github.com/metabase/metabase)
+- [Main Website](https://metabase.com)
+
 ## Supported Databases
 
 - Amazon Redshift

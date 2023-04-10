@@ -28,21 +28,25 @@ dbml2sql -h
 
 ### Usage
 
+<!--
+--mysql
+--mssql
+-->
+
+#### DBML to SQL
+
 ```sh
 #
 dbml2sql ./schema.dbml \
   --postgres \
   -o ./schema.sql
+```
 
-#
-dbml2sql ./schema.dbml \
-  --mysql \
-  -o ./schema.sql
+#### SQL to DBML
 
+```sh
 #
-dbml2sql ./schema.dbml \
-  --mssql \
-  -o ./schema.sql
+sql2dbml ./dump.sql --postgres
 ```
 
 ## Tips

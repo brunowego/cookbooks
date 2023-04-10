@@ -203,6 +203,14 @@ echo '/out' >> ./.gitignore
 #### TBD
 
 ```log
+0:0  high  Parsing error: Cannot find module 'next/babel' ↵ Require stack: ↵
+```
+
+TODO
+
+#### TBD
+
+```log
 Error: Image is missing required "src" property. Make sure you pass "src" in props to the `next/image` component. Received: {}
 ```
 

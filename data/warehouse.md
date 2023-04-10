@@ -13,6 +13,8 @@
 
 <!--
 Apache Druid
+ClickHouse
 Presto
+
 https://delta.io
 -->

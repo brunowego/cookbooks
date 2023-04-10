@@ -1,5 +1,9 @@
 # Web Analytics
 
+## Terms
+
+- Online Transaction Processing (OLTP) / Online Analytical Processing (OLAP)
+
 ## Tools
 
 - [Ackee](/ackee.md)

@@ -23,6 +23,10 @@ https://linkedin.com/learning/microservices-security/securing-microservices
 
 - [Stupid Simple Service Mesh — What, When, Why](https://itnext.io/stupid-simple-service-mesh-what-when-why-e9be9e5f4d41)
 
+## Videos
+
+- [What Are Microservices Really All About? (And When Not To Use It)](https://youtube.com/watch?v=lTAcCNbJ7KE&t=11s)
+
 ## Design
 
 ### SOLID Principles
@@ -45,3 +49,9 @@ https://linkedin.com/learning/microservices-security/securing-microservices
 - Externalized Configuration
 - Saga
 - Strangler
+
+## Surface Areas
+
+- Remote Procedure Call (RPC)
+- Event Streaming
+- Message Brokers

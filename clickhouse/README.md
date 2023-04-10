@@ -2,6 +2,12 @@
 
 <!--
 https://github.com/datafuselabs/datafuse
+
+https://artifacthub.io/packages/helm/open-8gears/clickhouse
+
+https://github.com/search?q=path%3Apackage.json+%22clickhouse%22+%22nestjs%22&type=code
+
+https://github.com/depyronick/nestjs-clickhouse
 -->
 
 ## Links
@@ -10,6 +16,13 @@ https://github.com/datafuselabs/datafuse
 - [Main Website](https://clickhouse.com)
 
 ## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
 
 ### Running
 
@@ -23,8 +36,9 @@ docker run -d \
   -p 9000:9000 \
   -p 9009:9009 \
   --name clickhouse \
+  --network workbench \
   --ulimit nofile=262144:262144 \
-  docker.io/yandex/clickhouse-server:19.16
+  docker.io/clickhouse/clickhouse-server:23.2.5
 ```
 
 ```sh

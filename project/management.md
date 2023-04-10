@@ -7,6 +7,7 @@
 - [Basecamp](https://basecamp.com)
 - [ClickUp](https://clickup.com)
 - [Focalboard](/focalboard.md)
+- [GitHub Projects](https://docs.github.com/en/issues/organizing-your-work-with-project-boards) 🌟
 - [Helpjuice](https://helpjuice.com)
 - [JetBrains YouTrack](https://jetbrains.com/youtrack)
 - [Microsoft SharePoint](/microsoft/sharepoint.md)
@@ -16,5 +17,8 @@
 - [Zenhub](https://zenhub.com) 🌟
 
 <!--
+https://slite.com
+https://meistertask.com
+
 Taiga
 -->

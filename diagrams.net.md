@@ -6,6 +6,8 @@ Extension .drawio
 filename:.drawio.png
 -->
 
+**Keywords:** Diagram as Code
+
 ## Links
 
 - [Main Website](https://diagrams.net)

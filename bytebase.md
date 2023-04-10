@@ -40,3 +40,7 @@ docker rm -f bytebase
 
 docker volume rm bytebase-data
 ```
+
+<!--
+https://artifacthub.io/packages/helm/bytebase/bytebase
+-->

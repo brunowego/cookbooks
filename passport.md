@@ -1,9 +1,6 @@
 # Passport
 
-## Glossary
+## Links
 
-- International Air Transport Association (IATA)
-
-## Tools
-
-- [Passport Index](https://passportindex.org)
+- [Code Repository](https://github.com/jaredhanson/passport)
+- [Main Website](https://passportjs.org)

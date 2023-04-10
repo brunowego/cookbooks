@@ -3,19 +3,19 @@
 ## Create
 
 ```sh
-docker network create [name]
+docker network create <name>
 ```
 
 ### With subnet
 
 ```sh
-docker network create --subnet=[IP]/16 [name]
+docker network create --subnet=<ip>/16 <name>
 ```
 
 ### With driver
 
 ```sh
-docker network create --driver [driver_name] [name]
+docker network create --driver <driver_name> <name>
 ```
 
 - [Network drivers](https://docs.docker.com/network/#network-drivers)

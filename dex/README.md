@@ -208,11 +208,6 @@ export USER_NAME='admin'
 export USER_ID='168855e4-cc6d-11eb-b8bc-0242ac130003' # UUID
 
 #
-export GOOGLE_CLIENT_ID='<google-client-id>'
-export GOOGLE_CLIENT_SECRET='<google-client-secret>'
-export GOOGLE_HOSTED_DOMAIN='<google-hosted-domain>'
-
-#
 helm install dex dex/dex \
   --version 0.13.0 \
   -f <(cat << EOF
@@ -229,16 +224,6 @@ config:
     http: 0.0.0.0:5556
 
   connectors: []
-  # connectors:
-  #   - type: google
-  #     id: google
-  #     name: Google
-  #     config:
-  #       clientID: $GOOGLE_CLIENT_ID
-  #       clientSecret: $GOOGLE_CLIENT_SECRET
-  #       redirectURI: https://auth.${DOMAIN}/callback
-  #       hostedDomains:
-  #         - $GOOGLE_HOSTED_DOMAIN
 
   oauth2:
     responseTypes:

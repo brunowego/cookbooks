@@ -24,6 +24,12 @@ yarn global add npkill
 ```sh
 # Using NPX
 npx npkill -h
+
+# Using pnpm
+pnpm dlx npkill -h
+
+# Using local
+npkill -h
 ```
 
 ### Usage

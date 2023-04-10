@@ -1,8 +1,9 @@
 # Git Commit
 
-## Docs
+## Guidelines
 
 - [Semantic Commit Messages](https://sparkbox.com/foundry/semantic_commit_messages)
+- [EU System](https://ec.europa.eu/component-library/v1.15.0/eu/docs/conventions/git/)
 
 ## Tools
 

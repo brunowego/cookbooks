@@ -1,5 +1,7 @@
 # docopt
 
+**Keywords:** CLI Description Language
+
 ## Links
 
 - [Code Repository](https://github.com/docopt/docopt.go)

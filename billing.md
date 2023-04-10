@@ -1,10 +1,16 @@
 # Billing
 
-TODO
-
 <!--
-https://github.com/uselotus/lotus
-https://github.com/getlago/lago
-
 chargebee.com
 -->
+
+## Terms
+
+- Smart Billing
+
+## Tools
+
+### Open Source
+
+- [Lago](https://github.com/getlago/lago)
+- [Lotus](https://github.com/uselotus/lotus)

@@ -15,10 +15,14 @@ https://c4model.com
 
 - [Feature Toggles (a.k.a. Feature Flags)](/feature-toggles.md)
 
-## Terms
+## Glossary
 
 - Don't Repeat Yourself (DRY)
 - Domain-Specific Language (DSL)
+
+## Terms
+
+- Solution Architecture
 
 <!--
 ## Bootstrap

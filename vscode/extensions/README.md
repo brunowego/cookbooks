@@ -19,23 +19,23 @@ code --disable-extension <extension>
 code --uninstall-extension <extension>
 ```
 
-## Tips
+<!-- ## Tips -->
 
-### All Extensions
+<!-- ### All Extensions
 
 ```sh
 # Upgrade
-code --list-extensions | while read extension; do
-  code --install-extension "$extension" --force
+code --list-extensions | while read EXTENSION; do
+  code --install-extension "$EXTENSION" --force
 done
 
 # Disable
-code --list-extensions | while read extension; do
-  code --disable-extension "$extension" --force
+code --list-extensions | while read EXTENSION; do
+  code --disable-extension "$EXTENSION" --force
 done
 
 # Uninstall
-code --list-extensions | while read extension; do
+code --list-extensions | while read EXTENSION; do
   code --uninstall-extension "$extension" --force
 done
-```
+``` -->
