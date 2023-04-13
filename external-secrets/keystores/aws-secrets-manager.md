@@ -74,8 +74,10 @@ spec:
     name: app-secret
     creationPolicy: Owner
   dataFrom:
-  - extract:
-      key: db-credentials-secret
+    - extract:
+        key: /my-app/prd/secrets
+        name: DATABASE_URL
+        property: DATABASE_URL
 EOF
 
 #

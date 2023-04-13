@@ -1,5 +1,7 @@
 # Kubectl Logs
 
+**Keywords:** Kubernetes, Log Tailing
+
 ## Usage
 
 ```sh
@@ -14,3 +16,9 @@ kubectl logs \
   -l '<labels>' \
   --tail 50
 ```
+
+## Tips
+
+### Alternative
+
+Prefer use [stern](/stern.md) instead of `kubectl logs -f` for log tailing.

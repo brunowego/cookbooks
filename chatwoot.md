@@ -23,6 +23,7 @@ docker network create workbench \
 ### Running
 
 ```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h postgres \
@@ -34,9 +35,8 @@ docker run -d \
   --name chatwoot-postgres \
   --network workbench \
   docker.io/library/postgres:11.2-alpine
-```
 
-```sh
+#
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h chatwoot \

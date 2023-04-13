@@ -1,0 +1,47 @@
+version: '3.9'
+
+services:
+  redis:
+    image: docker.io/library/redis:7.0.8
+    volumes:
+      - type: volume
+        source: redis-data
+        target: /data
+    ports:
+      - target: 6379
+        published: $REDIS_PORT
+        protocol: tcp
+    restart: unless-stopped
+
+  postgres:
+    image: docker.io/library/postgres:15.1-alpine
+    volumes:
+      - type: volume
+        source: postgresql-data
+        target: /var/lib/postgresql/data
+    environment:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+      POSTGRES_DB:
+    ports:
+      - target: 5432
+        published: $POSTGRES_PORT
+        protocol: tcp
+    restart: unless-stopped
+
+  # app:
+  #   image: docker.io/basetool/basetool:latest
+  #   environment:
+  #     DATABASE_URL:
+  #   ports:
+  #     - 7654:7654
+  #     - 3000:3000
+  #   links:
+  #     - redis
+  #     - postgres
+
+volumes:
+  redis-data:
+    driver: local
+  postgresql-data:
+    driver: local

@@ -34,4 +34,7 @@ export LC_CTYPE=C; cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 
 
 #
 head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1
+
+#
+openssl rand -hex 32
 ```

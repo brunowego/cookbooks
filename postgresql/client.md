@@ -130,36 +130,36 @@ psql -c "ALTER USER postgres WITH PASSWORD 'postgres'"
 sudo -u "$USER" createuser --interactive
 
 ## Drop
-sudo -u "$USER" dropuser [name]
+sudo -u "$USER" dropuser <name>
 
 # Database
 ## Create
-sudo -u "$USER" createdb [database]
+sudo -u "$USER" createdb <database>
 
 ## Drop
-sudo -u "$USER" dropdb [database]
+sudo -u "$USER" dropdb <database>
 
 # Queries
-sudo -u "$USER" psql -c '[command]'
+sudo -u "$USER" psql -c '<command>'
 
 # Or, with Here document
 sudo -u "$USER" psql <<-EOSQL
-[sql]
+<sql>
 EOSQL
 
 #
 PGPASSWORD="${POSTGRES_PASSWORD}" psql \
-  -h [hostname] \
+  -h <hostname> \
   -p 5432 \
-  -U [username] \
-  -d [db-name] \
+  -U <username> \
+  -d <db-name> \
   -c '\dt'
 
 # SELECT version();
 
 # Dump
 pg_dump \
-  -d [db-name] \
+  -d <db-name> \
   -h 127.0.0.1 \
   -U postgres \
   -n public \
@@ -167,7 +167,7 @@ pg_dump \
 
 ## DDL
 pg_dump \
-  -d [db-name] \
+  -d <db-name> \
   -h 127.0.0.1 \
   -U postgres \
   -n public \
@@ -176,7 +176,7 @@ pg_dump \
 
 ## DML
 pg_dump \
-  -d [db-name] \
+  -d <db-name> \
   -h 127.0.0.1 \
   -U postgres \
   -n public \
@@ -186,7 +186,7 @@ pg_dump \
 
 # Import
 psql \
-  -d [db-name] \
+  -d <db-name> \
   -h 127.0.0.1 \
   -U postgres \
   < ./dump.sql
@@ -202,10 +202,10 @@ set -e
 
 POSTGRES="PGPASSWORD=${POSTGRES_PASSWORD} psql -U postgres"
 
-echo 'Creating [scope]: [name]'
+echo 'Creating <scope>: <name>'
 
 $POSTGRES <<-EOSQL
-[sql]
+<sql>
 EOSQL
 ```
 
@@ -266,17 +266,17 @@ lsof -i :5432
 #### Truncate
 
 ```sql
-TRUNCATE public."[table]" CASCADE;
+TRUNCATE public."<table>" CASCADE;
 ```
 
 #### SSH Tunnel
 
 ```sh
 ssh \
-  -p [port] \
+  -p <port> \
   -N \
-  -L 5432:[hostname]:5432 \
-  [username]@[hostname]
+  -L 5432:<hostname>:5432 \
+  <username>@<hostname>
 
 psql \
   -h 127.0.0.1 \
@@ -288,27 +288,27 @@ psql \
 <!-- ####
 
 ```log
-ERROR: permission denied for table [table-name]
+ERROR: permission denied for table <table-name>
 ```
 
 ```sh
 # One table
-psql -c "GRANT ALL PRIVILEGES ON TABLE [table-name] TO [user-name]"
+psql -c "GRANT ALL PRIVILEGES ON TABLE <table-name> TO <user-name>"
 
 # All tables of schema
-psql -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA [schema-name] TO [user-name]"
+psql -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA <schema-name> TO <user-name>"
 ``` -->
 
 <!-- ####
 
 ```log
-ERROR: permission denied for sequence [seq-name]
+ERROR: permission denied for sequence <seq-name>
 ```
 
 ```sh
-psql -c "GRANT USAGE, SELECT ON SEQUENCE [seq-name] TO [user-name]"
+psql -c "GRANT USAGE, SELECT ON SEQUENCE <seq-name> TO <user-name>"
 
-psql -c "GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA [schema-name] TO [user-name]"
+psql -c "GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA <schema-name> TO <user-name>"
 ``` -->
 
 ### Logs
@@ -327,7 +327,10 @@ sudo tail -f /var/lib/pgsql/data/pg_log/postgresql-Thu.log
 ```sh
 # Homebrew
 brew services stop postgresql
+
 brew uninstall postgres
+
 rm -fR /usr/local/var/postgres
+
 rm /usr/local/var/log/postgres.log
 ```

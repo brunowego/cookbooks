@@ -21,6 +21,10 @@ https://www.figma.com/file/NFOla85HaxGxbg6O1AdSWw/Color-System?t=XmKOcZHKw09kUqu
   - [Environment](https://develop.sentry.dev/environment/)
   - [Storybook](https://storybook.sentry.dev)
 
+## Glossary
+
+- Data Source Name (DSN)
+
 ## CLI
 
 ### Installation

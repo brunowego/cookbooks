@@ -6,7 +6,7 @@
 - [New Relic / Errors Inbox](/newrelic/errors-inbox.md)
 - [Raygun](https://raygun.com/platform/crash-reporting)
 - [Rollbar](https://rollbar.com)
-- [Sentry](/sentry/README.md)
+- [Sentry](/sentry/README.md) 🌟
 
 <!--
 https://glitchtip.com/

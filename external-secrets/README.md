@@ -67,6 +67,16 @@ kubectl logs \
   -f
 ```
 
+### Issues
+
+#### TBD
+
+```log
+Warning  UpdateFailed  1s (x5 over 91s)  external-secrets  unable to unmarshal secret /my-app/stg/secrets: invalid character 'p' looking for beginning of value
+```
+
+TODO
+
 ### Delete
 
 ```sh

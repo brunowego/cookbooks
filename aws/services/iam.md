@@ -23,6 +23,10 @@ https://blog.kasten.io/hands-on-deploying-kubernetes-with-terraform?utm_term=&ut
 - [Switching to an IAM role (AWS CLI)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-cli.html)
 - [IAM tutorial: Delegate access across AWS accounts using IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html)
 
+## Glossary
+
+- IAM Roles for Service Accounts (IRSA)
+
 ## Authentication
 
 - AWS CLI

@@ -17,7 +17,12 @@ spec:
                 fieldRef:
                   apiVersion: v1
                   fieldPath: metadata.namespace
-            - name: MY_ENV
+            - name: MY_ENV1
+              valueFrom:
+                configMapKeyRef:
+                  name: my-config-name
+                  key: my-config-key
+            - name: MY_ENV2
               valueFrom:
                 secretKeyRef:
                   name: my-secret-name

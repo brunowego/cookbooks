@@ -12,6 +12,10 @@ DOCKER_REPOSITORY:
 DOCKER_TAG:
 -->
 
+<!--
+host.docker.internal
+-->
+
 ## Alternatives
 
 - OpenVZ

@@ -1,6 +1,6 @@
 # Infisical
 
-**Keywords:** Secrets Manager, E2EE
+**Keywords:** Secrets Manager, E2EE, SecretOps
 
 ## Links
 
