@@ -5,4 +5,4 @@
 ## Links
 
 - [Main Website](https://ycombinator.com/)
-- [Startup Directory](https://ycombinator.com/companies?tags=Open%20Source)
+- [Startup Directory](https://ycombinator.com/companies)

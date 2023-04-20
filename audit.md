@@ -1,5 +1,9 @@
 # Audit
 
+<!--
+https://github.com/search?q=path%3Asrc+path%3Aaudit%2Faudit.module.ts&type=code
+-->
+
 ## Glossary
 
 - Audit Management System (AMS)

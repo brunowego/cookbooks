@@ -6,6 +6,47 @@
 - [Main Website](https://trunk.io)
 - [Docs](https://docs.trunk.io/docs)
 
+## Library
+
+### Installation
+
+```sh
+# Using NPM
+npm install @trunkio/launcher -d
+
+# Using pnpm
+pnpm add @trunkio/launcher -D
+```
+
+### Configuration
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "scripts": {
+    // ...
+    "lint": "trunk check --ci"
+  }
+  // ...
+}
+```
+
+### Tips
+
+#### Visual Studio Code
+
+**Requirements:** Remove [Linter](/linter.md) extension.
+
+```sh
+#
+code --install-extension Trunk.io
+
+#
+jq '."recommendations" += ["Trunk.io"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
+
 ## CLI
 
 ### Installation
@@ -112,18 +153,6 @@ git config --get core.hookspath
 git config --unset core.hooksPath
 ```
 
-#### Visual Studio Code
-
-**Requirements:** Remove [Linter](/linter.md) extension.
-
-```sh
-#
-code --install-extension Trunk.io
-
-#
-jq '."recommendations" += ["Trunk.io"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
-```
-
 ### Issues
 
 #### Stopped Trunk on VS Code
@@ -131,6 +160,8 @@ jq '."recommendations" += ["Trunk.io"]' "$PWD"/.vscode/extensions.json | sponge 
 ```log
 Trunk: Stopped
 ```
+
+TODO
 
 #### Missing Dependencies (FAILURES)
 

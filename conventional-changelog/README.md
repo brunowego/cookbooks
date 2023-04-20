@@ -6,4 +6,4 @@
 
 ## Related
 
-- [Conventional Commits](/conventional-commits.md)
+- [Conventional Commits](/git/commit/conventional-commits.md)

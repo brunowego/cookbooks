@@ -23,7 +23,7 @@ docker run -d \
   -h pihole \
   -v pihole-config:/etc/pihole \
   -v pihole-dnsmasq-config:/etc/dnsmasq.d \
-  -e TZ='America/Sao_Paulo' \
+  -e TZ='UTC' \
   -e WEBPASSWORD='Pa$$w0rd!' \
   -p 53:53/tcp \
   -p 53:53/udp \

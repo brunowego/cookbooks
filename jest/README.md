@@ -86,7 +86,7 @@ Cannot find module '@/app.controller' from 'app.controller.spec.ts'
 {
   "compilerOptions": {
     // ...
-    "resolveJsonModule": true,
+    "resolveJsonModule": true
     // ...
   }
 }

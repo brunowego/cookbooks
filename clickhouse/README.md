@@ -1,6 +1,16 @@
 # ClickHouse
 
 <!--
+Using:
+
+https://github.com/plausible/analytics
+https://github.com/mprove-io/mprove
+https://github.com/traceo-dev/traceo
+https://github.com/lidofinance/ethereum-validators-monitoring
+https://github.com/Treasury-research/nestjs-clickhouse
+-->
+
+<!--
 https://github.com/datafuselabs/datafuse
 
 https://artifacthub.io/packages/helm/open-8gears/clickhouse

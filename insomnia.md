@@ -1,5 +1,9 @@
 # Insomnia
 
+<!--
+TODO: import from swagger
+-->
+
 **Keywords:** API Platform
 
 ## Links

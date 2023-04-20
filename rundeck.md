@@ -18,7 +18,7 @@ docker run -d \
   -e POSTGRES_USER='rundeck' \
   -e POSTGRES_PASSWORD='rundeck' \
   -e POSTGRES_DB='rundeck' \
-  -e TZ='America/Sao_Paulo' \
+  -e TZ='UTC' \
   -v rundeck-postgres-data:/var/lib/postgresql/data \
   -v /etc/localtime:/etc/localtime:ro \
   -p 5432:5432 \
@@ -37,7 +37,7 @@ docker run -d \
   -e RUNDECK_DATABASE_DRIVER='org.postgresql.Driver' \
   -e RUNDECK_DATABASE_USERNAME='rundeck' \
   -e RUNDECK_DATABASE_PASSWORD='rundeck' \
-  -e TZ='America/Sao_Paulo' \
+  -e TZ='UTC' \
   -v rundeck-config:/home/rundeck/server/config \
   -v rundeck-data:/home/rundeck/server/data \
   -v /etc/localtime:/etc/localtime:ro \

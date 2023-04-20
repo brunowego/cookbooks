@@ -65,7 +65,7 @@ docker run -d \
   -e SEMAPHORE_ADMIN_NAME='Admin' \
   -e SEMAPHORE_ADMIN_EMAIL='admin@localhost' \
   -e SEMAPHORE_WEB_ROOT='http://0.0.0.0:3000' \
-  -e TZ='America/Sao_Paulo' \
+  -e TZ='UTC' \
   -v /etc/localtime:/etc/localtime:ro \
   -p 3000:3000 \
   --name semaphore \

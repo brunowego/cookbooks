@@ -44,13 +44,6 @@ softwareupdate --all --install --force
 
 ## Configuration
 
-### Desktop Services Store
-
-```sh
-# Git ignore
-echo '/**/.DS_Store' >> ~/.gitignore_global
-```
-
 ### Desktop & Documents Folder
 
 1. System Preferences

@@ -17,7 +17,7 @@ docker run -d \
   -h activemq \
   -v activemq-config:/opt/activemq/conf \
   -v activemq-data:/opt/activemq/data \
-  -e TZ='America/Sao_Paulo' \
+  -e TZ='UTC' \
   -p 8161:8161 \
   -p 61616:61616 \
   --name activemq \

@@ -57,7 +57,7 @@ cloudflared tunnel create <name>
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h cloudflared \
-  -e TZ='America/Sao_Paulo' \
+  -e TZ='UTC' \
   -e TUNNEL_DNS_UPSTREAM='https://1.0.0.1/dns-query,https://1.1.1.1/dns-query' \
   -e TUNNEL_DNS_ADDRESS='0.0.0.0' \
   -e TUNNEL_DNS_PORT='5053' \

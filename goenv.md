@@ -30,7 +30,7 @@ export GOENV_ROOT="$HOME/.goenv"
 export GOENV_GOPATH_PREFIX="$HOME/.go"
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
-export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOROOT/bin"
 export PATH="$PATH:$GOPATH/bin"
 ```
 

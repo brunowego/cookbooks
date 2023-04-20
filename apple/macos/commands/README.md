@@ -18,12 +18,6 @@ Opening a new terminal in any folder is not enabled by default under Mac OS X. H
 
 Now you can open a terminal in any folder from Finder.
 
-### Find and remove .DS_Store files
-
-```sh
-find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
-```
-
 ### Prevent Accidents
 
 ```sh

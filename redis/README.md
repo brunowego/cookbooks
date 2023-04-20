@@ -250,33 +250,23 @@ helm repo update
 ```sh
 #
 kubectl create ns redis
+# kubectl create ns session
+
+#
+kubens redis
+
+#
+helm search repo -l bitnami/redis
 
 #
 helm install redis bitnami/redis \
-  --namespace redis \
-  --version 15.6.4 \
+  --version 17.9.4 \
   -f <(cat << EOF
 auth:
   password: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
 
-master:
-  resources:
-    limits:
-      cpu: 250m
-      memory: 256Mi
-    requests:
-      cpu: 250m
-      memory: 256Mi
-
 replica:
   replicaCount: 1
-  resources:
-    limits:
-      cpu: 250m
-      memory: 256Mi
-    requests:
-      cpu: 250m
-      memory: 256Mi
 EOF
 )
 ```
@@ -284,8 +274,7 @@ EOF
 ### Status
 
 ```sh
-kubectl rollout status statefulset/redis-master \
-  -n redis
+kubectl rollout status statefulset/redis-master
 ```
 
 ### Logs
@@ -293,7 +282,6 @@ kubectl rollout status statefulset/redis-master \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/instance=redis' \
-  -n redis \
   -f
 ```
 
@@ -301,8 +289,7 @@ kubectl logs \
 
 ```sh
 kubectl get secret redis \
-  -o jsonpath='{.data.redis-password}' \
-  -n redis | \
+  -o jsonpath='{.data.redis-password}' | \
     base64 -d; echo
 ```
 
@@ -311,14 +298,13 @@ kubectl get secret redis \
 ```sh
 kubectl port-forward \
   --address 0.0.0.0 \
-  -n redis \
   svc/redis-headless \
   6379:6379
 
 redis-cli \
   -h 127.0.0.1 \
   -p 6379 \
-  -a "$(kubectl get secret redis -o jsonpath='{.data.redis-password}' -n redis | base64 -d)" \
+  -a "$(kubectl get secret redis -o jsonpath='{.data.redis-password}' | base64 -d)" \
   INFO | \
     grep '^redis_version'
 ```
@@ -376,8 +362,7 @@ kubectl get pvc redis-data-polyaxon-redis-slave-1 -o yaml -n polyaxon | \
 ### Delete
 
 ```sh
-helm uninstall redis \
-  -n redis
+helm uninstall redis
 
 kubectl delete ns redis \
   --grace-period=0 \

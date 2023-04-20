@@ -37,6 +37,8 @@ Logtail
 Sematext
 SignalIFX
 Sumo Logic
+
+https://chartbrew.com/
 -->
 
 ### Self-Hosted

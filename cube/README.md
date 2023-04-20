@@ -1,5 +1,7 @@
 # Cube
 
+**Keywords:** Metrics API
+
 ## Links
 
 - [Code Repository](https://github.com/cube-js/cube)
@@ -23,6 +25,7 @@ docker run -d \
   -v cube-config:/cube/conf \
   -e CUBEJS_DEV_MODE='true' \
   -p 4000:4000 \
+  -p 15432:15432 \
   --name cube \
   --network workbench \
   docker.io/cubejs/cube:v0.32

@@ -1,4 +1,4 @@
-# Privacy
+# Data Privacy
 
 <!--
 https://www.youtube.com/watch?v=U17hPQoVCpU
@@ -35,3 +35,7 @@ Confidence
 - Control — Control over the collection and processing of data to holders
 - Enforce and enforce laws — Privacy policies must be connected with legal requirements and can be enforced
 - Demonstrate — Controllers must be able to demonstrate respect for privacy policies and legal requirements
+
+## Tools
+
+- [Monoid](https://monoid.co)

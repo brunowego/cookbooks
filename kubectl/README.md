@@ -540,6 +540,14 @@ kubectl delete pod "$KUBERNETES_PODE_NAME" \
 ###### Remove Terminating Pods
 
 ```sh
+# Single namespace
+kubens <namespace>
+
+kubectl get pods | \
+  awk '{if ($3=="Terminating") print "kubectl delete pod "$1" --force --grace-period=0 ";}' | \
+    sh
+
+# All namespaces
 kubectl get pods -A | \
   awk '{if ($4=="Terminating") print "kubectl delete pod " $2 " -n " $1 " --force --grace-period=0 ";}' | \
     sh
@@ -548,6 +556,7 @@ kubectl get pods -A | \
 ###### Remove Error Pods
 
 ```sh
+# All namespaces
 kubectl get pods -A | \
   awk '{if ($4=="Error") print "kubectl delete pod " $2 " -n " $1 " --force --grace-period=0 ";}' | \
     sh

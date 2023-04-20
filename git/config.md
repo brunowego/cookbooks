@@ -26,16 +26,6 @@ git config --global core.excludesfile '~/.gitignore_global'
 git config --global core.excludesfile "%USERPROFILE%\.gitignore_global"
 
 #
-git config --global credential.helper 'store'
-git config --global credential.helper 'cache'
-# Darwin
-git config --global credential.helper 'osxkeychain'
-# Windows
-git config --global credential.helper 'manager-core'
-
-git config --global credential.credentialStore gpg
-
-#
 git config --global push.default 'current'
 
 #

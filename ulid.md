@@ -11,3 +11,29 @@ https://medium.com/zendesk-engineering/how-probable-are-collisions-with-ulids-mo
 ## Tools
 
 - [ULID Generator](https://ulidgenerator.com)
+
+## CLI
+
+### Installation
+
+#### go install
+
+```sh
+GOBIN=/usr/local/bin go install github.com/oklog/ulid/v2/cmd/ulid@latest
+```
+
+### Commands
+
+```sh
+ulid -h
+```
+
+### Usage
+
+```sh
+#
+ulid
+
+#
+ulid -z
+```

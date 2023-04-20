@@ -34,7 +34,7 @@ docker run -d \
 ```
 
 <!--
-TZ=America/Chicago
+TZ=UTC
 -->
 
 ```sh

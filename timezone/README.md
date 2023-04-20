@@ -7,6 +7,8 @@
 - [IANA TZ Database (e.g. America/Sao_Paulo)](https://en.wikipedia.org/wiki/Tz_database)
 
 <!--
+UTC
+
 America/Sao_Paulo
 America/New_York
 

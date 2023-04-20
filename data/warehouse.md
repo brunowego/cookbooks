@@ -1,15 +1,11 @@
 # Data Warehouse
 
-## References
-
-- [Data Lake](/data-lake.md)
-
 ## Tools
 
 - [Apache Hive](/apache/hive.md)
-- Amazon Redshift
-- Google BigQuery
-- Snowflake
+- [AWS Redshift](/aws/services/redshift.md)
+- [Google BigQuery](/google/bigquery.md)
+- [Snowflake](/snowflake.md)
 
 <!--
 Apache Druid

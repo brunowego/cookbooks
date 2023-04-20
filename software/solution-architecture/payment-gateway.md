@@ -2,6 +2,8 @@
 
 <!--
 https://epayments.developer-ingenico.com/payment-product/mastercard/process-flows
+
+https://www.uber.com/en-BR/blog/money-scale-strong-data/
 -->
 
 ## Terms

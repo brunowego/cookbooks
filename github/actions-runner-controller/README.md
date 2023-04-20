@@ -3,6 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/actions/actions-runner-controller)
+- [Troubleshooting](https://github.com/actions/actions-runner-controller/blob/master/TROUBLESHOOTING.md?plain=1)
 
 ## Helm
 
@@ -86,6 +87,43 @@ kubectl logs \
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+2023-04-17T11:33:17Z    ERROR   Reconciler error        {"controller": "runner-controller", "controllerGroup": "actions.summerwind.dev", "controllerKind": "Runner", "Runner": {"name":"k8s-runners-4mngk-kcstr","namespace":"pipeline"}, "namespace": "pipeline", "name": "k8s-runners-4mngk-kcstr", "reconcileID": "eeea0ade-9d51-4e8a-a82d-0bebf7fd4b6b", "error": "Internal error occurred: failed calling webhook \"mutate.runner.actions.summerwind.dev\": failed to call webhook: Post \"https://actions-runner-controller-webhook.pipeline.svc:443/mutate-actions-summerwind-dev-v1alpha1-runner?timeout=10s\": x509: certificate has expired or is not yet valid: current time 2023-04-17T11:33:17Z is after 2023-04-16T20:41:06Z"}
+```
+
+TODO
+
+<!--
+kubectl delete deployments.apps actions-runner-controller
+
+helm upgrade actions-runner-controller actions-runner-controller/actions-runner-controller \                       130 ↵
+  --version 0.22.0
+-->
+
+#### TBD
+
+TODO
+
+```sh
+kubectl scale deployment actions-runner-controller --replicas 0
+
+kubectl patch pod <pod-name> \
+  -p '{"metadata":{"finalizers":[]}}' \
+  --type='merge'
+
+kubectl get pods | \
+  awk '{if ($3=="NotReady") print "kubectl delete pod "$1" --force --grace-period=0 ";}' | \
+    sh
+
+kubectl scale deployment actions-runner-controller --replicas 1
+
+kubectl logs \
+  -l 'app.kubernetes.io/instance=actions-runner-controller' \
+  -f
+```
 
 #### TBD
 

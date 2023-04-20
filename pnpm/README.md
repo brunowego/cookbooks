@@ -124,8 +124,10 @@ echo 'enable-pre-post-scripts=true' >> ./.npmrc
 #
 pnpm up
 
-#
-pnpm up --latest
+# Latest
+pnpm up -L
+# with Recursive
+pnpm up -Lr
 ```
 
 #### Git Attributes
