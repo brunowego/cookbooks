@@ -20,7 +20,7 @@ cat << EOF > ./.rest
 
 ### Health check
 
-GET {{baseUrl}}/health-check HTTP/1.1
+GET {{baseUrl}}/_healthcheck HTTP/1.1
 Content-Type: {{contentType}}
 
 ### Add comment

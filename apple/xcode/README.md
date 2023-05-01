@@ -224,3 +224,13 @@ error: No profiles for 'xxx.xxx.xxx.xxx.xxx' were found: Xcode couldn't find any
 ```
 
 TODO -->
+
+<!-- #### TBD
+
+```log
+Simulator cannot launch due to missing dependencies.
+
+Simulator requires additional components, but installation failed because Xcode's license has not been agreed to.  Please launch Xcode to view the license agreement and complete installation.
+```
+
+TODO -->

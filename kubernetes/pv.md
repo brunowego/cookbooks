@@ -51,3 +51,14 @@ Warning  FailedAttachVolume  34s   attachdetach-controller  Multi-Attach error f
 1. Access [Elastic Block Store - Volumes](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Volumes:sort=desc:createTime)
 2. Filter by `tag:kubernetes.io/created-for/pvc/name :`
 3. Select -> Actions -> Detach Volume
+
+### TBD
+
+```log
+initdb: error: directory "/var/lib/postgresql/data" exists but is not empty
+initdb: detail: It contains a lost+found directory, perhaps due to it being a mount point.
+initdb: hint: Using a mount point directly as the data directory is not recommended.
+Create a subdirectory under the mount point.
+```
+
+TODO

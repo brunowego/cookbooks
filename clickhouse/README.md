@@ -1,6 +1,10 @@
 # ClickHouse
 
+**Keywords:** OLAP
+
 <!--
+https://arctype.com
+
 Using:
 
 https://github.com/plausible/analytics

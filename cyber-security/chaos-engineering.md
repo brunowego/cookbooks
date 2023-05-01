@@ -33,7 +33,7 @@ https://github.com/spinnaker/swabbie
 
 ## Content
 
-- [Principles of Chaos Engineering](https://principlesofchaos.org/)
+- [Principles of Chaos Engineering](https://principlesofchaos.org)
 
 ## Tools
 

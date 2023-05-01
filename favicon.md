@@ -5,6 +5,8 @@ https://github.com/tailwindlabs/tailwindcss.com/tree/master/public/favicons
 
 Sizes: 32x32, 48x48
 Bit depth: 32 bits (16.7M colors & alpha transparency)
+
+https://icon.horse
 -->
 
 ## Tools

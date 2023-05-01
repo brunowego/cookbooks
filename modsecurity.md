@@ -21,3 +21,9 @@ https://systemweakness.com/nginx-ingress-waf-with-modsecurity-from-zero-to-hero-
 ## Glossary
 
 - Core Rule Set (CRS)
+
+<!--
+403
+Forbidden
+Access to this resource on the server is denied!
+-->

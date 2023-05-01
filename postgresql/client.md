@@ -248,7 +248,7 @@ CREATE DATABASE nome_do_banco ENCODING 'ISO-8859-1' LC_CTYPE 'pt_BR.ISO-8859-1' 
 
 ```sh
 # Export database
-postgres pg_dump --encoding utf8 main -f main.sql
+postgres pg_dump --encoding utf8 main -f ./main.sql
 
 # Create a new database
 createdb -E utf8 newMmain

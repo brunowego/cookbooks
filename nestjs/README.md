@@ -33,9 +33,9 @@ yarn add @nestjs/cli --dev
 pnpm add @nestjs/cli -D
 ```
 
-<!-- ### Issues
+### Issues
 
-#### TBD
+<!-- #### TBD
 
 ```log
 ERROR [ExceptionHandler] Cannot set property metadata of #<Repository> which has only a getter
@@ -52,6 +52,22 @@ TypeError: Cannot set property metadata of #<Repository> which has only a getter
   }
 }
 ``` -->
+
+#### TBD
+
+```log
+SyntaxError: Cannot use import statement outside a module
+```
+
+TODO
+
+#### TBD
+
+```log
+SyntaxError: Unexpected token 'export'
+```
+
+TODO
 
 ## CLI
 

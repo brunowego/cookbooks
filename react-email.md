@@ -27,6 +27,16 @@ pnpm create email -h
 pnpm create email ./
 ```
 
+### Usage
+
+```sh
+#
+NODE_DEBUG=preview-email email dev -d ./src/templates -p 8000
+
+#
+email export -d ./src/templates
+```
+
 ### Issues
 
 #### Command Not Found

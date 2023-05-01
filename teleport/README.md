@@ -101,7 +101,7 @@ EOF
 #
 [[ -n "${DOMAIN}" ]] && helm install teleport-cluster teleport/teleport-cluster \
   --namespace teleport-system \
-  --version 11.1.2 \
+  --version 12.2.4 \
   -f <(cat << EOF
 clusterName: teleport.${DOMAIN}
 

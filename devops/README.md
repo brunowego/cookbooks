@@ -1,6 +1,9 @@
 # DevOps
 
 <!--
+https://www.atlassian.com/devops
+https://www.dynatrace.com/resources/ebooks/devops/
+
 https://netflixtechblog.com/full-cycle-developers-at-netflix-a08c31f83249
 
 https://www.google.com/search?client=firefox-b-d&q=PCI+vs+SOX

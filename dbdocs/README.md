@@ -16,9 +16,6 @@
 ```sh
 # Using NPM
 npm install -g dbdocs
-
-# Using Yarn
-yarn global add dbdocs
 ```
 
 ### Commands

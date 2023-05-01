@@ -1,5 +1,20 @@
 # Passport
 
+<!--
+https://github.com/ahmetuysal/nest-hackathon-starter
+
+https://github.com/garageScript/c0d3-app
+https://github.com/desc-team/desc/
+https://github.com/Maison-Hochard/helpr-api/blob/master/prisma/schema.prisma
+https://github.com/paulin-crtn/sublizz-nest
+https://github.com/sopanatx/nestjs-graphql-prisma-template
+-->
+
+<!--
+PAST
+https://github.com/belyaev-dev/hackaton-backend
+-->
+
 ## Library
 
 TODO

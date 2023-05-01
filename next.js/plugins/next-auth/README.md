@@ -32,6 +32,10 @@ npm install @types/next-auth --save-dev
 # With Yarn
 yarn add next-auth
 yarn add @types/next-auth --dev
+
+# With pnpm
+pnpm add next-auth
+pnpm add @types/next-auth -D
 ```
 
 ### Issues

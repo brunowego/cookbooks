@@ -14,6 +14,8 @@ https://github.com/hideckies/exploit-notes/blob/main/src/exploit/SMTP-Pentesting
 
 ## Tools
 
+### Enterprise
+
 - [Amazon Simple Email Service (SES)](/aws/services/ses.md)
 - [Mailchimp / Mandrill](https://mandrillapp.com)
 - [MailerLite](https://mailerlite.com)
@@ -37,6 +39,10 @@ https://github.com/Mailu/Mailu
 https://github.com/jfoucher/Mailocal
 https://github.com/samirdjelal/mail-dev
 -->
+
+### Testing
+
+- [Ethereal Email](/ethereal.md)
 
 ## Connections
 

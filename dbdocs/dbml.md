@@ -5,7 +5,7 @@
 ## Links
 
 - [Code Repository](https://github.com/holistics/dbml)
-- [Main Website](https://dbml.org)
+- [Main Website](https://dbml.dbdiagram.io)
 
 ## CLI
 

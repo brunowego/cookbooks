@@ -44,6 +44,29 @@ code --install-extension hediet.vscode-drawio
 jq '."recommendations" += ["hediet.vscode-drawio"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
+### Issues
+
+#### TBD
+
+```log
+Error loading file
+Not a diagram file
+```
+
+TODO
+
+#### TBD
+
+```log
+Text is not SVG - cannot display
+```
+
+TODO
+
+<!--
+https://www.diagrams.net/doc/faq/svg-export-text-problems
+-->
+
 ## Docker
 
 ### Network
