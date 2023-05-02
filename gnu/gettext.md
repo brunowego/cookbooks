@@ -1,4 +1,4 @@
-# GNU Gettext
+# GNU gettext
 
 ## Links
 

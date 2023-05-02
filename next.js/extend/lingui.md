@@ -1,4 +1,4 @@
-# LinguiJS
+# Lingui
 
 <!--
 https://github.com/vercel/examples/tree/main/edge-functions/i18n
@@ -12,7 +12,7 @@ https://github.com/sushiswap/sushiswap-interface/blob/master/.github/workflows/t
 
 ## Dependencies
 
-- [LiquiJS](/linguijs.md#library)
+- [Liqui](/lingui.md#library)
 
 ## Configuration
 
@@ -26,7 +26,7 @@ cat << EOF > ./.babelrc
 EOF
 
 #
-echo '/src/locales/*.js' >> ./.gitignore
+echo '/src/locales/*/*.js' >> ./.gitignore
 ```
 
 **Refer:** `./lingui.config.js`
@@ -131,13 +131,13 @@ import { Trans } from '@lingui/macro'
 **Refer:** `./src/pages/_document.tsx`
 
 ```tsx
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 
-class AppDocument extends Document {
+class Document extends NextDocument {
   render() {
     return (
       <Html lang={this.props.locale}>
-        <Head>{/* ... */}</Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
@@ -147,7 +147,7 @@ class AppDocument extends Document {
   }
 }
 
-export default AppDocument
+export default Document
 ```
 
 ## Issues
@@ -159,10 +159,15 @@ I18nProvider did not render. A call to i18n.activate still needs to happen or fo
 ```
 
 ```tsx
-{
-  /* ... */
-}
-;<I18nProvider i18n={i18n} forceRenderOnLocaleChange={false}>
+<I18nProvider i18n={i18n} forceRenderOnLocaleChange={false}>
   {/* ... */}
 </I18nProvider>
 ```
+
+### TBD
+
+```log
+I18nProvider rendered `null`. A call to `i18n.activate` needs to happen in order for translations to be activated and for the I18nProvider to render.This is not an error but an informational message logged only in development.
+```
+
+TODO

@@ -1,9 +1,13 @@
-# LinguiJS
+# Lingui
 
 ## Links
 
 - [Code Repository](https://github.com/lingui/js-lingui)
-- [Main Website](https://lingui.js.org/)
+- [Main Website](https://lingui.dev)
+
+## References
+
+- [GNU Gettext](/gnu/gettext.md)
 
 ## Library
 
@@ -35,6 +39,7 @@ yarn add @babel/core babel-plugin-macros @lingui/cli --dev
     "lingui": "yarn lingui:extract; yarn lingui:compile",
     "lingui:extract": "cross-env NODE_ENV='development' lingui extract --clean",
     "lingui:compile": "lingui compile --strict"
+  }
 }
 ```
 
@@ -44,8 +49,8 @@ yarn add @babel/core babel-plugin-macros @lingui/cli --dev
 const linguiConfig = {
   catalogs: [
     {
-      path: '<rootDir>/src/locales/{locale}',
-      include: ['<rootDir>/src'],
+      path: '<rootDir>/src/locales/{locale}/messages',
+      include: ['<rootDir>/src/pages'],
     },
   ],
   compileNamespace: 'cjs',

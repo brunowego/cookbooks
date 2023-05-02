@@ -65,7 +65,7 @@ https://appsignal.com/
 
 ## UI Kit
 
-- [Flowbite](https://flowbite.com)
+- [Flowbite](/flowbite.md)
 - [Headless UI](https://headlessui.com)
 - [HyperUI](https://hyperui.dev)
 - [Myna UI](https://mynaui.com)
