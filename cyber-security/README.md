@@ -95,7 +95,7 @@ https://tinfoleak.com/
 <!--
 COBIT
 ITIL
-ISO 27001 Foundation
+ISO/IEC 27001 Foundation
 Security+
 -->
 

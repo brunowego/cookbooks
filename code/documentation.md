@@ -7,7 +7,7 @@
 ## Tools
 
 - [docsify](https://docsify.js.org)
-- [Docusaurus](/docusaurus.md)
+- [Docusaurus](/docusaurus.md) 🌟
 - [GitBook](https://gitbook.com)
 - [Mintlify](/mintlify.md)
 - [MkDocs](https://mkdocs.org)

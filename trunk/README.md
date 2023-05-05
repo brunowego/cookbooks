@@ -155,6 +155,14 @@ git config --unset core.hooksPath
 
 ### Issues
 
+#### Blocked Push
+
+```log
+✖ Push blocked by failing hook 'trunk-check-pre-push'
+```
+
+TODO
+
 #### Stopped Trunk on VS Code
 
 ```log

@@ -35,6 +35,22 @@ pnpm add @nestjs/cli -D
 
 ### Issues
 
+#### Missing Strict Property Initialization
+
+```log
+Property 'email' has no initializer and is not definitely assigned in the constructor
+```
+
+```json
+{
+  // ...
+  "compilerOptions": {
+    // ...
+    "strictPropertyInitialization": false
+  }
+}
+```
+
 <!-- #### TBD
 
 ```log

@@ -17,6 +17,21 @@ https://rechain.co/
 - Lean Product Design
 - UI & Design System
 
+## Methodology Process
+
+- [Design Sprint](./sprint.md)
+- [Design Thinking](./thinking.md)
+
+### When Use
+
+|                 | Design Thinking | Design Sprint |
+| --------------- | --------------- | ------------- |
+| Big Challenge   | Yes             | No            |
+| Big Changes     | Yes             | No            |
+| No D.T. Culture | No              | Yes           |
+| Few Resources   | No              | Yes           |
+| Need Focus      | No              | Yes           |
+
 ## Tools
 
 ### Patterns

@@ -1,5 +1,6 @@
 {
 	"devDependencies": {
 		"@commitlint/config-conventional": "^17.4.2"
-	}
+	},
+	"packageManager": "yarn@3.5.1"
 }

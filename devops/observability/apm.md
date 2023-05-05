@@ -11,10 +11,10 @@ https://github.com/pixie-io/pixie
 ## Solutions
 
 - [Apache Skywalking](/apache/skywalking.md)
-- [DataDog](/datadog/README.md)
+- [DataDog](/datadog/README.md) 🌟
 - [Dynatrace](/dynatrace.md)
 - [Elastic APM](/elastic/elastic-apm.md)
-- [New Relic](/newrelic/README.md)
+- [New Relic](/newrelic/README.md) 🌟
 - [Splunk](/splunk.md)
 - [Stackify](https://stackify.com)
 

@@ -24,6 +24,11 @@ https://c4model.com
 
 - Solution Architecture
 
+## Architecture Pattern
+
+- [Jamstack (p.s.a. JAMStack) (JAM means: JavaScript, API's, Markup)](/jamstack/README.md)
+- [MACH Alliance](/machalliance.md)
+
 <!--
 ## Bootstrap
 

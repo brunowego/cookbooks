@@ -1,16 +1,10 @@
 # AWS Simple Queue Service (SQS)
 
+**Keywords:** Messaging System
+
 <!--
 https://app.pluralsight.com/library/courses/message-queuing-amazon-sqs/table-of-contents
 -->
-
-## Alternatives
-
-- [ElasticMQ](/elasticmq.md)
-- Redis
-- Apache Kafka
-- RabbitMQ
-- ActiveMQ
 
 ## Links
 

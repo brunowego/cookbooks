@@ -1,23 +1,29 @@
 # Newman
 
+<!--
+https://github.com/stonith404/pingvin-share/blob/main/backend/test/newman-system-tests.json
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/postmanlabs/newman)
+
+## Package
+
+### Installation
+
+```sh
+# Using pnpm
+pnpm add newman -D
+```
 
 ## CLI
 
 ### Installation
 
-#### Homebrew
-
 ```sh
-brew install newman
-```
-
-#### NPM
-
-```sh
-npm install -g newman
+# Using NPM
+npm install newman -g
 ```
 
 ### Commands
@@ -33,7 +39,7 @@ newman -h
 mkdir -p ./.postman
 
 #
-touch ./.postman/[my-app].postman_collection.json
+touch ./.postman/<app-name>.postman_collection.json
 touch ./.postman/env.dev.json
 ```
 
@@ -44,5 +50,5 @@ touch ./.postman/env.dev.json
 newman run \
   -e ./.postman/env.dev.json \
   -r html,cli,json,junit \
-  ./.postman/[my-app].postman_collection.json
+  ./.postman/<app-name>.postman_collection.json
 ```

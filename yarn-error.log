@@ -1,0 +1,35 @@
+Arguments: 
+  /usr/local/bin/node /Volumes/Workspace/Repositories/github.com/brunowego/cookbooks/.yarn/releases/yarn-1.22.19.cjs set version 3.x
+
+PATH: 
+  /Users/brunowego/.pyenv/shims:/Users/brunowego/.pyenv/bin:/Users/brunowego/.jabba/jdk/openjdk@1.11.0/Contents/Home/bin:/Users/brunowego/.jabba/jdk/openjdk@1.11.0/Contents/Home/bin:/Users/brunowego/.docker/bin:/Users/brunowego/.goenv/versions/1.19.6/bin:/Users/brunowego/.goenv/bin:/usr/local/opt/gnu-sed/libexec/gnubin:/Users/brunowego/.orbstack/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/brunowego/.pyenv/bin:/Users/brunowego/.docker/bin:/Users/brunowego/.goenv/versions/1.19.6/bin:/Users/brunowego/.goenv/bin:/usr/local/opt/gnu-sed/libexec/gnubin:/Users/brunowego/.orbstack/bin:/Users/brunowego/.goenv/shims:/Users/brunowego/.go/1.19.6/bin:/Users/brunowego/.krew/bin:/Users/brunowego/.cache/trunk/launcher:/Users/brunowego/.go/1.19.6/bin:/Users/brunowego/.krew/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: Release not found: 3.x
+      at /Volumes/Workspace/Repositories/github.com/brunowego/cookbooks/.yarn/releases/yarn-1.22.19.cjs:94385:17
+      at Generator.next (<anonymous>)
+      at step (/Volumes/Workspace/Repositories/github.com/brunowego/cookbooks/.yarn/releases/yarn-1.22.19.cjs:310:30)
+      at /Volumes/Workspace/Repositories/github.com/brunowego/cookbooks/.yarn/releases/yarn-1.22.19.cjs:321:13
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+npm manifest: 
+  {
+  	"devDependencies": {
+  		"@commitlint/config-conventional": "^17.4.2"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

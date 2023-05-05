@@ -23,12 +23,6 @@ https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq
 https://stackoverflow.com/questions/11459676/delete-all-the-queues-from-rabbitmq
 -->
 
-## Alternatives
-
-- [Apache ActiveMQ](/apache/activemq.md)
-- [AWS SQS](/aws/aws-sqs.md)
-- Azure Service Bus
-
 ## Glossary
 
 - Remote Procedure Call (RPC)

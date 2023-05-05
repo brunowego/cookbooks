@@ -1,4 +1,4 @@
-# vue-devtools
+# Vue Devtools
 
 ## Links
 

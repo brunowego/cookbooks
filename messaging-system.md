@@ -16,3 +16,8 @@
 - [NATS](/nats.md)
 - [RabbitMQ](/rabbitmq/README.md) 🌟
 - [ZeroMQ (a.k.a zmq)](/zeromq.md)
+
+<!--
+- [ElasticMQ](/elasticmq.md)
+- Redis
+-->

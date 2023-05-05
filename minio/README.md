@@ -165,3 +165,38 @@ docker rm -f minio
 
 docker volume rm minio-data
 ```
+
+## Docker Compose
+
+### Manifest
+
+```yml
+---
+version: '3'
+
+services:
+  minio:
+    image: docker.io/minio/minio:RELEASE.2023-01-02T09-40-09Z
+    volumes:
+      - type: volume
+        source: minio-data
+        target: /data
+    environment:
+      MINIO_ROOT_USER:
+      MINIO_ROOT_PASSWORD:
+    command: server /data --console-address ':9001'
+    ports:
+      - target: 9000
+        published: $MINIO_PORT
+        protocol: tcp
+      - target: 9001
+        published: $MINIO_WEB_PORT
+        protocol: tcp
+    networks:
+      - workbench
+    restart: unless-stopped
+
+volumes:
+  minio-data:
+    driver: local
+```

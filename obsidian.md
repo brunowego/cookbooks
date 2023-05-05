@@ -1,9 +1,11 @@
 # Obsidian
 
+**Keywords:** Knowledge Base
+
 ## Links
 
 - [Org. Repository](https://github.com/obsidianmd)
-- [Main Website](https://obsidian.md/)
+- [Main Website](https://obsidian.md)
 
 ## App
 

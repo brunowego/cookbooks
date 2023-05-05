@@ -1,0 +1,83 @@
+---
+version: '3'
+
+services:
+  redis:
+    image: docker.io/library/redis:7.0.8
+    volumes:
+      - type: volume
+        source: redis-data
+        target: /data
+    ports:
+      - target: 6379
+        published: $REDIS_PORT
+        protocol: tcp
+    networks:
+      - workbench
+    restart: unless-stopped
+
+  postgres:
+    image: docker.io/library/postgres:15.1-alpine
+    volumes:
+      - type: volume
+        source: postgresql-data
+        target: /var/lib/postgresql/data
+    environment:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+      POSTGRES_DB:
+    ports:
+      - target: 5432
+        published: $POSTGRES_PORT
+        protocol: tcp
+    networks:
+      - workbench
+    restart: unless-stopped
+
+  minio:
+    image: docker.io/minio/minio:RELEASE.2023-01-02T09-40-09Z
+    volumes:
+      - type: volume
+        source: minio-data
+        target: /data
+    environment:
+      MINIO_ROOT_USER:
+      MINIO_ROOT_PASSWORD:
+    command: server /data --console-address ':9001'
+    ports:
+      - target: 9000
+        published: $MINIO_PORT
+        protocol: tcp
+      - target: 9001
+        published: $MINIO_WEB_PORT
+        protocol: tcp
+    networks:
+      - workbench
+    restart: unless-stopped
+
+  outline:
+    image: docker.io/outlinewiki/outline:0.66.1
+    env_file: ./.env
+    ports:
+      - target: 3000
+        published: $OUTLINE_PORT
+        protocol: tcp
+    depends_on:
+      - redis
+      - postgres
+      - minio
+    networks:
+      - workbench
+    restart: unless-stopped
+
+volumes:
+  redis-data:
+    driver: local
+  postgresql-data:
+    driver: local
+  minio-data:
+    driver: local
+
+networks:
+  workbench:
+    name: workbench

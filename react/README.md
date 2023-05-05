@@ -105,8 +105,16 @@ rafce
 ### TBD
 
 ```log
+Warning: Encountered two children with the same key, ``. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+```
+
+### Encountered Two Children with the Same Key
+
+```log
 This JSX tag's 'children' prop expects a single child of type 'ReactChildren', but multiple children were provided. ts(2746)
 ```
+
+Solution [here](https://sentry.io/answers/defining-proper-key-in-props/).
 
 ### TBD
 

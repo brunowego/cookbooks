@@ -2,7 +2,7 @@
 
 ## Glossary
 
-- Man-In-The-Middle (MITM)
+- Man-in-The-Middle (MiTM)
 
 ## Attacks Types
 
@@ -11,7 +11,7 @@
 - Email and Spam
 - Instant Messaging
 - Key Loggers
-- MITM Phishing
+- MiTM Phishing
 - Phone Phishing
 - Search Engine
 - Session Hacking

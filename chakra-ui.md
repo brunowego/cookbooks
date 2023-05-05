@@ -1,5 +1,7 @@
 # Chakra UI
 
+**Keywords:** UI Library
+
 ## Links
 
 - [Code Repository](https://github.com/chakra-ui/chakra-ui)

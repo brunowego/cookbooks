@@ -12,6 +12,10 @@
 - [Ghost](https://ghost.org/)
 - [Contentful](https://contentful.com)
 
+<!--
+https://github.com/gobeam/truthy
+-->
+
 ### Git-based CMS
 
 - [Prose](https://prose.io)
