@@ -11,6 +11,7 @@ service-schema.json
 
 ## Tools
 
+- [YAML Path Finder](https://yaml.vercel.app)
 - [YAMLlint](/yamllint.md)
 
 ## Guides

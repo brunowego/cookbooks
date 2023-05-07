@@ -14,7 +14,7 @@
 - [Android Studio / QEMU System Emulator](#qemu-system-emulator) 🌟
 - [BlueStacks](/bluestacks.md)
 - [Genymotion](/genymotion.md)
-- [NoxPlayer](/noxplayer.md)
+- [NoxPlayer](/noxplayer.md) 🌟
 
 ## QEMU System Emulator
 

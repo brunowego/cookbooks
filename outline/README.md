@@ -44,8 +44,24 @@ kubens outline
 helm search repo -l truecharts/outline
 
 #
-helm install outline truecharts/outline \
-  --version 7.0.11
+helm show values truecharts/outline \
+  --version 7.0.12
+
+#
+export KUBERNETES_IP='<kubernetes-ip>'
+export DOMAIN="${KUBERNETES_IP}.nip.io"
+
+#
+export GOOGLE_CLIENT_ID='<google-client-id>'
+export GOOGLE_CLIENT_SECRET='<google-client-secret>'
+
+#
+helm upgrade outline truecharts/outline \
+  --version 7.0.12 \
+  --set workload.main.podSpec.containers.main.env.URL="http://outline.${DOMAIN}" \
+  --set workload.main.podSpec.containers.main.env.GOOGLE_CLIENT_ID="$GOOGLE_CLIENT_ID" \
+  --set workload.main.podSpec.containers.main.env.GOOGLE_CLIENT_SECRET="$GOOGLE_CLIENT_SECRET" \
+  --set workload.main.podSpec.containers.main.env.PDF_EXPORT_ENABLED=true
 ```
 
 <!--
@@ -54,6 +70,32 @@ kubectl port-forward \
   svc/outline \
   10196:10196
 -->
+
+### Ingress
+
+```sh
+#
+cat << EOF | kubectl apply -f -
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: outline
+  namespace: outline
+spec:
+  rules:
+  - host: outline.${DOMAIN}
+    http:
+      paths:
+      - backend:
+          service:
+            name: outline
+            port:
+              number: 10196
+        path: /
+        pathType: Prefix
+EOF
+```
 
 ### Status
 
@@ -65,7 +107,7 @@ kubectl rollout status deploy/outline
 
 ```sh
 kubectl logs \
-  -l 'app.kubernetes.io/instance=outline' \
+  -l 'app.kubernetes.io/name=outline' \
   -f
 ```
 
