@@ -96,6 +96,15 @@ mkdir -p ./db && mv ./prisma ./db/prisma
 "db:migrate": "env-cmd -f .env.production.local prisma migrate deploy",
 -->
 
+### Using
+
+```sh
+# With pnpm
+pnpm db:push
+# or
+pnpm run db:push -- --accept-data-loss
+```
+
 ### Extend With
 
 #### Prettier

@@ -3,7 +3,8 @@
 ## Links
 
 - [Org. Repository](https://github.com/open-telemetry)
-- [Main Website](https://opentelemetry.io/)
+- [Main Website](https://opentelemetry.io)
+- [Vendors](https://opentelemetry.io/ecosystem/vendors)
 
 ## Glossary
 
