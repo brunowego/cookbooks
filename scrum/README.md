@@ -6,7 +6,8 @@
 
 ## Tools
 
+- [Planning Poker Online](https://planningpokeronline.com) 🌟
+- [Pointing Poker](http://pointing.poker)
 - [Pointing Poker](https://pointingpoker.com)
-- [Pointing Poker](http://pointing.poker/)
-- [Scrumpoker Online](https://scrumpoker.online/)
-- [Scrum Pointing Poker](https://poker.marcin.uk/)
+- [Scrum Pointing Poker](https://poker.marcin.uk)
+- [Scrumpoker Online](https://scrumpoker.online)

@@ -157,6 +157,14 @@ jq '."[prisma]"."editor.defaultFormatter" |= "Prisma.prisma"' "$PWD"/.vscode/set
 
 ### Issues
 
+### TBD
+
+```log
+error TS2339: Property 'user' does not exist on type 'PrismaService'.
+```
+
+Try clean dist (build) folders and rebuild.
+
 #### Wrong Encryption
 
 ```log

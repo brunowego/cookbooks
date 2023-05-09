@@ -32,7 +32,7 @@ export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-kubectl edit configmap teleport-cluster -n teleport-system
+kubectl edit configmap teleport-cluster -n teleport
 ```
 
 ```yml
@@ -74,7 +74,7 @@ data:
 ```
 
 ```sh
-kubectl rollout restart deployment teleport-cluster -n teleport-system
+kubectl rollout restart deployment teleport-cluster -n teleport
 ```
 
 ### Permissions

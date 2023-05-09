@@ -70,7 +70,7 @@ ssh <username>@<hostname>
 #### Failure to Start Node Sessions
 
 ```log
-ERRO Error during temporary user cleanup: user: lookup groupname teleport-system: no such process srv/usermgmt.go:373
+ERRO Error during temporary user cleanup: user: lookup groupname teleport: no such process srv/usermgmt.go:373
 ```
 
 Issue with [the solution](https://github.com/gravitational/teleport/issues/18981).

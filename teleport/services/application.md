@@ -8,6 +8,7 @@ https://github.com/jefferyb/k8s-teleport/blob/main/README.md
 
 - [Code Repository / Guides](https://github.com/gravitational/teleport/tree/master/docs/pages/application-access/guides)
 - [Web Application Access](https://goteleport.com/docs/application-access/guides/connecting-apps/)
+- [TCP Application Access (Preview)](https://goteleport.com/docs/application-access/guides/tcp/)
 
 ## Example
 
@@ -19,11 +20,14 @@ https://github.com/jefferyb/k8s-teleport/blob/main/README.md
 
 ```sh
 #
+kubens teleport
+
+#
 export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-kubectl edit configmap teleport-cluster -n teleport-system
+kubectl edit configmap teleport-cluster-proxy
 ```
 
 ```yml
@@ -37,7 +41,7 @@ data:
       # debug_app: true
       apps:
         - name: grafana
-          uri: http://grafana.grafana-system.svc
+          uri: http://grafana.grafana.svc
           public_addr: grafana.teleport.${DOMAIN}
           labels:
             env: prod
@@ -47,12 +51,33 @@ data:
               period: 21s
 ```
 
+```sh
+#
+kubectl rollout restart deployment teleport-cluster-proxy
+
+#
+kubectl logs \
+  -l 'app.kubernetes.io/component=proxy' \
+  -f
+
+#
+tsh login --proxy "teleport.${DOMAIN}" --user admin --insecure
+
+#
+tctl status --insecure
+
+#
+tctl apps ls --insecure
+```
+
 ### Ingress
 
 ```sh
 #
+kubens teleport
+
+#
 cat << EOF | kubectl apply \
-  -n teleport-system \
   -f -
 ---
 apiVersion: networking.k8s.io/v1
@@ -82,7 +107,7 @@ spec:
 EOF
 
 #
-kubectl rollout restart deployment teleport-cluster -n teleport-system
+kubectl rollout restart deployment teleport-cluster -n teleport
 ```
 
 ### Usage

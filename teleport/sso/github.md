@@ -25,7 +25,7 @@ https://goteleport.com/docs/deploy-a-cluster/helm-deployments/kubernetes-cluster
 tctl get cluster_auth_preference
 
 #
-export POD_NAME=$(kubectl get po -l app=teleport-cluster -o jsonpath='{.items[0].metadata.name}' -n teleport-system)
+export POD_NAME=$(kubectl get po -l app=teleport-cluster -o jsonpath='{.items[0].metadata.name}' -n teleport)
 export GITHUB_CLIENT_ID='<client-id>'
 export GITHUB_CLIENT_SECRET='<client-secret>'
 export GITHUB_ORG_NAME='<org-name>'
@@ -34,7 +34,7 @@ export TELEPORT_DOMAIN='<teleport-domain>'
 #
 cat << EOF | kubectl exec \
   -i "$POD_NAME" \
-  -n teleport-system \
+  -n teleport \
     -- tctl create -f
 ---
 kind: github

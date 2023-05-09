@@ -20,7 +20,7 @@ metadata:
 spec:
   acme:
     server: https://acme-staging-v02.api.letsencrypt.org/directory
-    email: ${EMAIL}
+    email: $EMAIL
     privateKeySecretRef:
       name: letsencrypt-issuer
     solvers:

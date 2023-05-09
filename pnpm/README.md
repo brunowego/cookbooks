@@ -57,16 +57,6 @@ export PATH="$PNPM_HOME:$PATH"
 source ~/.zshrc
 ```
 
-### Configuration
-
-```sh
-#
-pnpm config set save-prefix '~'
-
-#
-pnpm config list
-```
-
 ### Usage
 
 ```sh

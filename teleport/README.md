@@ -45,70 +45,26 @@ helm repo update
 ```sh
 #
 kubectl create ns teleport
-# kubectl create ns security
+# kubectl create ns security-gate
 
 #
 kubens teleport
 
 #
-helm search repo -l teleport/teleport-cluster
+helm search repo -l teleport/teleport
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-[[ -n "${DOMAIN}" ]] && cat << EOF | kubectl apply \
-  -f -
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: teleport-cluster
-data:
-  teleport.yaml: |
-    teleport:
-      log:
-        severity: INFO
-        output: stderr
-        format:
-          output: text
-          extra_fields:
-            - timestamp
-            - level
-            - component
-            - caller
-    auth_service:
-      enabled: true
-      cluster_name: teleport.${DOMAIN}
-      authentication:
-        type: local
-        local_auth: true
-        second_factor: 'off'
-    kubernetes_service:
-      enabled: true
-      listen_addr: 0.0.0.0:3027
-      kube_cluster_name: teleport.${DOMAIN}
-    proxy_service:
-      public_addr: teleport.${DOMAIN}:443
-      kube_listen_addr: 0.0.0.0:3026
-      mysql_listen_addr: 0.0.0.0:3036
-      enabled: true
-    ssh_service:
-      enabled: false
-EOF
-
-#
 [[ -n "${DOMAIN}" ]] && helm install teleport-cluster teleport/teleport-cluster \
-  --namespace teleport-system \
-  --version 12.2.4 \
+  --version 13.0.0 \
   -f <(cat << EOF
 clusterName: teleport.${DOMAIN}
 
 authentication:
   secondFactor: 'off'
-
-chartMode: custom
 
 service:
   type: ClusterIP
@@ -125,16 +81,14 @@ kubectl get all
 ### Status
 
 ```sh
-kubectl rollout status deployment/teleport-cluster \
-  -n teleport-system
+kubectl rollout status deployment teleport-cluster-auth
 ```
 
 ### Logs
 
 ```sh
 kubectl logs \
-  -l 'app=teleport-cluster' \
-  -n teleport-system \
+  -l 'app.kubernetes.io/component=auth' \
   -f
 ```
 
@@ -143,7 +97,6 @@ kubectl logs \
 ```sh
 #
 [[ -n "${DOMAIN}" ]] && cat << EOF | kubectl apply \
-  -n teleport-system \
   -f -
 ---
 apiVersion: networking.k8s.io/v1
@@ -179,6 +132,23 @@ EOF
 curl -k "https://teleport.${DOMAIN}/webapi/ping"
 ```
 
+#### Create App User
+
+```sh
+#
+export POD_NAME=$(kubectl get po -l app.kubernetes.io/component=auth -o jsonpath='{.items[0].metadata.name}')
+
+[[ -n "${POD_NAME}" ]] && kubectl exec "$POD_NAME" \
+  -- tctl get roles --format text
+
+#
+[[ -n "${POD_NAME}" ]] && kubectl exec "$POD_NAME" \
+  -- tctl users add \
+    --logins 'root,ubuntu,ec2-user' \
+    --roles 'access,auditor,editor' \
+    admin
+```
+
 #### TCP Ingress Route
 
 | Service     | Port |
@@ -189,8 +159,15 @@ curl -k "https://teleport.${DOMAIN}/webapi/ping"
 | MySQL Proxy | 3036 |
 
 ```sh
+#
+kubectl get configmap tcp-services -n ingress-nginx
+
+#
+export NAMESPACE="$(kubens -c)"
+
+#
 kubectl patch configmap tcp-services \
-  -p '{"data":{"3023":"teleport-system/teleport-cluster:3023","3026":"teleport-system/teleport-cluster:3026","3024":"teleport-system/teleport-cluster:3024","3036":"teleport-system/teleport-cluster:3036"}}' \
+  -p '{"data":{"3023":"'$NAMESPACE'/teleport-cluster:3023","3026":"'$NAMESPACE'/teleport-cluster:3026","3024":"'$NAMESPACE'/teleport-cluster:3024","3036":"'$NAMESPACE'/teleport-cluster:3036"}}' \
   -n ingress-nginx
 
 kubectl get deployment ingress-nginx-controller \
@@ -207,32 +184,12 @@ kubectl get deployment ingress-nginx-controller \
 - mysql.teleport.${DOMAIN}
 -->
 
-#### Create App User
-
-```sh
-#
-export POD_NAME=$(kubectl get po -l app=teleport-cluster -o jsonpath='{.items[0].metadata.name}' -n teleport-system)
-
-[[ -n "${POD_NAME}" ]] && kubectl exec "$POD_NAME" \
-  -n teleport-system \
-  -- tctl get roles --format text
-
-#
-[[ -n "${POD_NAME}" ]] && kubectl exec "$POD_NAME" \
-  -n teleport-system \
-  -- tctl users add \
-    --logins 'root,ubuntu,ec2-user' \
-    --roles 'access,auditor,editor' \
-    admin
-```
-
 ### Delete
 
 ```sh
-helm uninstall teleport-cluster \
-  -n teleport-system
+helm uninstall teleport-cluster
 
-kubectl delete ns teleport-system \
+kubectl delete ns teleport \
   --grace-period=0 \
   --force
 

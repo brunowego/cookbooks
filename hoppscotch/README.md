@@ -10,6 +10,9 @@ https://artifacthub.io/packages/helm/deliveryhero/hoppscotch
 
 - [Code Repository](https://github.com/hoppscotch/hoppscotch)
 - [Main Website](https://hoppscotch.io)
+- Browser Extension
+  - [Google Chrome](https://chrome.google.com/webstore/detail/hoppscotch-browser-extens/amknoiejhlmhancpahfcfcfhllgkpbld?hl=en)
+  - [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/hoppscotch/)
 
 ## Docker
 
@@ -46,3 +49,10 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 ```sh
 docker rm -f hoppscotch
 ```
+
+## Tips
+
+### Developers
+
+- Users
+  - [Delete a user](https://getoutline.com/developers#tag/Users/paths/~1users.delete/post)

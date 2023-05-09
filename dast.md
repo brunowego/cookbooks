@@ -26,6 +26,7 @@ https://analysis-tools.dev/
 - [OWASP Zed Attack Proxy (ZAP)](/cyber-security/tools/zaproxy.md)
 - [PortSwigger Dastardly](/portswigger/dastardly.md)
 - [SOOS](https://soos.io)
+- [StackHawk](https://stackhawk.com)
 
 <!--
 http://testphp.vulnweb.com/
