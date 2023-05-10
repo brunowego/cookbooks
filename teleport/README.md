@@ -11,6 +11,7 @@ https://github.com/krzwiatrzyk/lib-cluster-manager/tree/main/k8s-apps/teleport/m
 - [Code Repository](https://github.com/gravitational/teleport)
 - [Main Website](https://goteleport.com)
 - [Docs](https://goteleport.com/docs/)
+  - [Teleport Configuration Reference](https://goteleport.com/docs/reference/config/)
 
 ## Glossary
 
@@ -51,7 +52,7 @@ kubectl create ns teleport
 kubens teleport
 
 #
-helm search repo -l teleport/teleport
+helm search repo -l teleport/teleport-cluster
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
@@ -138,6 +139,7 @@ curl -k "https://teleport.${DOMAIN}/webapi/ping"
 #
 export POD_NAME=$(kubectl get po -l app.kubernetes.io/component=auth -o jsonpath='{.items[0].metadata.name}')
 
+#
 [[ -n "${POD_NAME}" ]] && kubectl exec "$POD_NAME" \
   -- tctl get roles --format text
 
@@ -160,7 +162,7 @@ export POD_NAME=$(kubectl get po -l app.kubernetes.io/component=auth -o jsonpath
 
 ```sh
 #
-kubectl get configmap tcp-services -n ingress-nginx
+nmap "$(minikube ip)" -p 3023,3024,3026,3036
 
 #
 export NAMESPACE="$(kubens -c)"
@@ -170,6 +172,7 @@ kubectl patch configmap tcp-services \
   -p '{"data":{"3023":"'$NAMESPACE'/teleport-cluster:3023","3026":"'$NAMESPACE'/teleport-cluster:3026","3024":"'$NAMESPACE'/teleport-cluster:3024","3036":"'$NAMESPACE'/teleport-cluster:3036"}}' \
   -n ingress-nginx
 
+#
 kubectl get deployment ingress-nginx-controller \
   -o json \
   -n ingress-nginx | \
@@ -183,6 +186,12 @@ kubectl get deployment ingress-nginx-controller \
 - ssh.teleport.${DOMAIN}
 - mysql.teleport.${DOMAIN}
 -->
+
+### Next Steps
+
+- [Teleport Kube Agent](./kube-agent.md#helm)
+- Services
+  - [Teleport Application Service](./services/application.md)
 
 ### Delete
 
@@ -262,6 +271,10 @@ TELEPORT_CONFIG_FILE=$HOME/.config/teleport/teleport.yaml
 
 ```sh
 teleport -h
+
+tsh -h
+
+tctl -h
 ```
 
 ### Configuration

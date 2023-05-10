@@ -7,68 +7,16 @@ https://github.com/jefferyb/k8s-teleport/blob/main/README.md
 ## Docs
 
 - [Code Repository / Guides](https://github.com/gravitational/teleport/tree/master/docs/pages/application-access/guides)
-- [Web Application Access](https://goteleport.com/docs/application-access/guides/connecting-apps/)
-- [TCP Application Access (Preview)](https://goteleport.com/docs/application-access/guides/tcp/)
+- Docs
+  - [Web Application Access](https://goteleport.com/docs/application-access/guides/connecting-apps/)
+  - [TCP Application Access (Preview)](https://goteleport.com/docs/application-access/guides/tcp/)
+  - [Teleport Configuration Reference](https://goteleport.com/docs/reference/config/)
 
 ## Example
 
 ### Dependencies
 
 - [Grafana](/grafana/README.md#helm)
-
-### Configuration
-
-```sh
-#
-kubens teleport
-
-#
-export KUBERNETES_IP='<kubernetes-ip>'
-export DOMAIN="${KUBERNETES_IP}.nip.io"
-
-#
-kubectl edit configmap teleport-cluster-proxy
-```
-
-```yml
----
-# ...
-data:
-  teleport.yaml: |
-    # ...
-    app_service:
-      enabled: true
-      # debug_app: true
-      apps:
-        - name: grafana
-          uri: http://grafana.grafana.svc
-          public_addr: grafana.teleport.${DOMAIN}
-          labels:
-            env: prod
-          commands:
-            - name: os
-              command: ['/usr/bin/uname']
-              period: 21s
-```
-
-```sh
-#
-kubectl rollout restart deployment teleport-cluster-proxy
-
-#
-kubectl logs \
-  -l 'app.kubernetes.io/component=proxy' \
-  -f
-
-#
-tsh login --proxy "teleport.${DOMAIN}" --user admin --insecure
-
-#
-tctl status --insecure
-
-#
-tctl apps ls --insecure
-```
 
 ### Ingress
 
@@ -105,14 +53,43 @@ spec:
     - grafana.teleport.${DOMAIN}
     secretName: teleport-grafana.tls-secret
 EOF
-
-#
-kubectl rollout restart deployment teleport-cluster -n teleport
 ```
 
-### Usage
+### Issues
+
+#### TBD
+
+```log
+config: when app_service is enabled, proxy_server must be specified instead of auth_server
+```
+
+TODO
+
+#### TBD
+
+```log
+ERROR: proxy_server can not be specified when proxy service is enabled
+```
+
+TODO
+
+### TBD
+
+```log
+config: auth_server or proxy_server is required
+```
+
+TODO
+
+### TBD
+
+```log
+2023-05-09T19:58:12Z ERRO [PROC:1]    App failed to establish connection to cluster: node "teleport-cluster-proxy-788b869646-pjt56" [d2a492a6-4f2f-4b10-a0b4-c9c8cf1c96d6] can not join the cluster, the token does not allow "App" role. pid:7.1 service/connect.go:119
+```
+
+TODO
 
 ```sh
 #
-tsh apps ls
+tctl tokens ls --insecure
 ```

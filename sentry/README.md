@@ -16,6 +16,7 @@ https://www.figma.com/file/NFOla85HaxGxbg6O1AdSWw/Color-System?t=XmKOcZHKw09kUqu
 
 - [Code Repository](https://github.com/getsentry/sentry)
 - [Main Website](https://sentry.io)
+- [Status Page](https://status.sentry.io)
 - Develop
   - [Troubleshooting](https://develop.sentry.dev/self-hosted/troubleshooting/)
   - [Environment](https://develop.sentry.dev/environment/)

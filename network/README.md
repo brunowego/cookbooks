@@ -18,7 +18,7 @@ ZTE Long Term Evolution (LTE)
 
 - [List of TCP and UDP port numbers](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
 
-# Troubleshooting
+## Troubleshooting
 
 <!--
 https://kinsta.com/knowledgebase/dns-server-not-responding/
