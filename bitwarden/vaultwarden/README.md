@@ -10,6 +10,7 @@ Platform
 ## Links
 
 - [Code Repository](https://github.com/dani-garcia/vaultwarden)
+- [Wiki](https://github.com/dani-garcia/vaultwarden/wiki)
 
 ## Docker
 
@@ -128,3 +129,11 @@ kubectl delete ns vaultwarden \
   --grace-period=0 \
   --force
 ```
+
+## Tips
+
+### API Key
+
+1. Account settings
+2. Security -> Keys
+3. API Key -> View API Key
