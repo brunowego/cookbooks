@@ -9,8 +9,8 @@
 
 ## Supported Uptime Checkers
 
-- [Google Cloud Uptime Checks]()
-- [Microsoft Application Insights]()
+- Google Cloud Uptime Checks
+- Microsoft Application Insights
 - [Pingdom](https://pingdom.com)
 - [StatusCake](https://statuscake.com)
 - [Updown](https://updown.io)

@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=F8jXE-_hdfg
 ### Pricing
 
 - [Amazon EC2 pricing](aws.amazon.com/ec2/pricing)
-- [Easy Amazon EC2 Instance Comparison](https://instances.vantage.sh/)
+- [Easy Amazon EC2 Instance Comparison](https://instances.vantage.sh)
 
 ## CLI
 

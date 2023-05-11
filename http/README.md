@@ -11,8 +11,6 @@ https://geekflare.com/http-header-implementation/
 ## References
 
 - [Message Headers](https://www.iana.org/assignments/message-headers/message-headers.xhtml)
-- [HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
-- [HTTP Status Codes](https://httpstatuses.com)
 
 ## Tools
 

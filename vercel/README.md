@@ -25,8 +25,8 @@ https://epic-course-platform.vercel.app/
 ## Docs
 
 - [Limits](https://vercel.com/docs/concepts/limits/overview)
-- [Fair Use Policy](https://vercel.com/docs/concepts/limits/fair-use-policy)
-- [Monorepos](https://vercel.com/docs/concepts/git/monorepos)
+  - [Fair Use Policy](https://vercel.com/docs/concepts/limits/fair-use-policy)
+- [Supported Frameworks on Vercel](https://vercel.com/docs/frameworks)
 
 ## Guides
 

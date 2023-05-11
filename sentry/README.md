@@ -10,7 +10,7 @@ https://www.figma.com/file/NFOla85HaxGxbg6O1AdSWw/Color-System?t=XmKOcZHKw09kUqu
 - web-frontend
 -->
 
-**Keyword:** Error Tracking
+**Keyword:** Error Tracking, Unexpected Error Tracking
 
 ## Links
 
