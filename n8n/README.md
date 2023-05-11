@@ -178,7 +178,7 @@ helm upgrade n8n open-8gears/n8n \
   --version 0.8.0 \
   -f <(cat << EOF
 n8n:
-  encryption_key: S3cr3t_K#Key
+  encryption_key: S3cr3t_K@Key
 
 config:
   database:

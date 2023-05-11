@@ -21,7 +21,7 @@ TODO
 
 <!--
 # .env
-SECRET_KEY='S3cr3t_K#Key'
+SECRET_KEY='S3cr3t_K@Key'
 
 # src/common/constants/env.ts
 export const SECRET_KEY = process.env.SECRET_KEY

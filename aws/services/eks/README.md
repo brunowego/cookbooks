@@ -2,6 +2,12 @@
 
 **Keywords:** Kubernetes Orchestration, Control Plane
 
+<!--
+Selector
+
+app.kubernetes.io/part-of: ingress-nginx
+-->
+
 ## Console
 
 - [Clusters](https://console.aws.amazon.com/eks/home#/clusters)

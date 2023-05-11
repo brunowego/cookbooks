@@ -25,6 +25,9 @@ https://thomasbandt.com/architecture-decision-records
 
 - Architectural Decision (AD)
 - Architecturally Significant Requirement (ASR)
+- Architecturally-Significant Requirement (ASR)
+- Architecture Decision Log (ADL)
+- Architecture Knowledge Management (AKM)
 
 ## Tools
 
@@ -43,3 +46,10 @@ https://github.com/huifenqi/arch/tree/master/decisions
 https://github.com/alextanhongpin/architecture-decision-records
 https://github.com/arachne-framework/architecture
 -->
+
+## Categories
+
+- Operating Model (OPM)
+- Infrastructure (INF)
+- Microservice Design (MSD)
+- Microservice Engineering (MSE)

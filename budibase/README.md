@@ -72,8 +72,8 @@ docker run -d \
   -e COUCHDB_USER='budibase' \
   -e COUCHDB_PASSWORD='budibase' \
   -e COUCH_DB_URL='http://budibase:budibase@budibase-couchdb:5984' \
-  -e JWT_SECRET='S3cr3t_K#Key' \
-  -e INTERNAL_API_KEY='S3cr3t_K#Key' \
+  -e JWT_SECRET='S3cr3t_K@Key' \
+  -e INTERNAL_API_KEY='S3cr3t_K@Key' \
   -e ENABLE_ANALYTICS='true' \
   -e BB_ADMIN_USER_EMAIL='johndoe@domain.tld' \
   -e BB_ADMIN_USER_PASSWORD='Pa$$w0rd!' \
