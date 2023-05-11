@@ -29,6 +29,7 @@ https://thomasbandt.com/architecture-decision-records
 ## Tools
 
 - [ADR Manager](https://adr.github.io/adr-manager)
+- [log4brains](/log4brains.md)
 
 ## Examples
 

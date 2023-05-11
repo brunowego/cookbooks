@@ -1,8 +1,11 @@
 # Software Requirements
 
-## Glossary
+## Architecture
 
+- Active communication of ideals and synchronization
 - Architectural Decision Record (ADR)
+- C4-model
+- Tech Radar
 
 ## Types
 

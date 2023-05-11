@@ -24,7 +24,7 @@ adr help
 
 ```sh
 #
-adr init doc/architecture/decisions
+adr init ./docs/architecture/decisions
 
 #
 adr new Implement as Unix shell scripts
