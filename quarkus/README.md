@@ -183,6 +183,10 @@ https://github.com/quarkusio/quarkus/blob/master/docs/src/main/asciidoc/cli-tool
 
 ## CLI
 
+<!--
+https://github.com/quarkusio/quarkus/wiki/Bill's-Quarkus-CLI-Scenarios
+-->
+
 ### Dependencies
 
 - [Apache Maven](/apache/apache_maven.md)

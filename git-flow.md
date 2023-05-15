@@ -6,12 +6,12 @@
 
 - [Main Website](https://jeffkreeftmeijer.com/git-flow/)
 
-<!--
-master
-develop
-feature
-release
--->
+## Branches
+
+- `main` (or `master`)
+- `develop`
+- `feature`
+- `release`
 
 ## Guides
 

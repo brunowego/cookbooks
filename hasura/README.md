@@ -5,6 +5,8 @@
 - [Main Website](https://hasura.io)
 - [Docs](https://hasura.io/docs)
 - [Learn](https://hasura.io/learn)
+- GraphQL
+  - [Databases](https://hasura.io/graphql/database/)
 
 ## CLI
 

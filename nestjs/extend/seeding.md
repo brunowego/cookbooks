@@ -1,4 +1,4 @@
-# Seeding
+# Extend with Seeding
 
 <!--
 typeorm-seeding

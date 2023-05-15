@@ -1,4 +1,4 @@
-# Vitest
+# Extend with Vitest
 
 <!--
 https://github.com/cuixueshe/dida/search?q=vitest

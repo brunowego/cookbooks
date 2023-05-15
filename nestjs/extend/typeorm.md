@@ -1,4 +1,4 @@
-# TypeOrm
+# Extend with TypeOrm
 
 TODO
 

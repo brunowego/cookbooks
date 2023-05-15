@@ -58,6 +58,10 @@ https://github.com/arachne-framework/architecture
 - Microservice Engineering (MSE)
 
 <!--
+Cypress
+
+https://github.com/nordeck/matrix-widget-toolkit/blob/main/docs/adrs/adr006-e2e-testing.md
+
 Storybook
 
 https://github.com/kbase/ui-refresh-test/blob/main/docs/adrs/0002-storybook.md?plain=1

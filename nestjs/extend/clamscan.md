@@ -1,4 +1,4 @@
-# Clamscan
+# Extend with Clamscan
 
 TODO
 

@@ -1,4 +1,4 @@
-# Passport
+# Extend with Passport
 
 <!--
 https://github.com/ahmetuysal/nest-hackathon-starter

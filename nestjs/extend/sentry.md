@@ -1,4 +1,4 @@
-# Sentry
+# Extend with Sentry
 
 TODO
 

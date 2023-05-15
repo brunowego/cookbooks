@@ -1,4 +1,4 @@
-# API Key
+# Extend with API Key
 
 <!--
 https://www.stewright.me/2021/03/add-header-api-key-to-nestjs-rest-api/

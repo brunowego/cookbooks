@@ -2,7 +2,7 @@
 
 ## Types
 
-- A/B Testing
-- Blue/Green Deployments
-- Canary Releases
-- Rolling Deployment
+- [A/B Testing](./ab-testing.md)
+- [Blue/Green Deployments](./blue-green-deployments.md)
+- [Canary Releases](./canary-releases.md)
+- [Rolling Deployment](./rolling-deployment.md)
