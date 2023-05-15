@@ -1,7 +1,9 @@
 # Architectural Decision Record (ADR)
 
 <!--
-https://docs.devland.is/technical-overview/adr/0007-viskuausan-static-site-generator
+https://github.com/search?q=path%3Adecisions+path%3A.md&type=code
+
+https://github.com/search?q=path%3Adocs%2Fadrs+path%3A.md&type=code
 -->
 
 ## Links
@@ -28,6 +30,7 @@ https://thomasbandt.com/architecture-decision-records
 - Architecturally-Significant Requirement (ASR)
 - Architecture Decision Log (ADL)
 - Architecture Knowledge Management (AKM)
+- Lightweight Architecture Decision Records (LADR)
 
 ## Tools
 
@@ -53,3 +56,18 @@ https://github.com/arachne-framework/architecture
 - Infrastructure (INF)
 - Microservice Design (MSD)
 - Microservice Engineering (MSE)
+
+<!--
+Storybook
+
+https://github.com/kbase/ui-refresh-test/blob/main/docs/adrs/0002-storybook.md?plain=1
+https://github.com/usdigitalresponse/usdr-gost/blob/_staging/docs/decisions/0002-use-storybook-to-visualize-component-states.md?plain=1
+
+React
+
+https://github.com/usdigitalresponse/usdr-gost/blob/_staging/docs/decisions/0003-use-react-for-frontend-development.md
+
+Forms
+
+https://github.com/kbase/ui-refresh-test/blob/main/docs/adrs/0003-forms.md
+-->

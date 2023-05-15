@@ -20,11 +20,17 @@ brew install mas
 mas help
 ```
 
+### Configuration
+
+```sh
+mas signin
+```
+
 ### Usage
 
 ```sh
 # List
-mas list
+mas listmas install 1085114709
 
 # Current User
 mas account
@@ -35,7 +41,7 @@ mas outdated
 
 ### Issues
 
-#### Re-download Unavailable with This Apple ID
+#### Redownload Unavailable with This Apple ID
 
 ```log
 This redownload is not available for this Apple ID either because it was bought by a different user or the item was refunded or cancelled.

@@ -56,6 +56,10 @@ queuing.payments
 
 - [Kafka Listeners - Explained](https://rmoff.net/2018/08/02/kafka-listeners-explained/)
 
+## Videos
+
+- [System Design: Why is Kafka fast?](https://youtube.com/watch?v=UNUz1-msbOM)
+
 ## Tools
 
 - [Kafka Manager](/kafka/kafka-manager.md)

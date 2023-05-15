@@ -1,5 +1,7 @@
 # Chatbot
 
+**Keywords:** Artificial Intelligence
+
 <!--
 https://landbot.io/
 https://github.com/acheong08/ChatGPT
@@ -13,3 +15,8 @@ https://github.com/m1guelpf/chatgpt-telegram
 ## Glossary
 
 - Generative Pre-trained Transformer (GPT)
+
+## Platforms
+
+- [Google Bard](https://bard.google.com/)
+- [OpenAI ChatGPT](/openai/chatgpt.md)

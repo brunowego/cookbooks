@@ -1,14 +1,10 @@
 # Hasura
 
-<!--
-https://github.com/platyplus/platyplus/tree/master/charts/hasura
-https://github.com/ktarou2022/next-hasur/blob/main/package.json
--->
-
 ## Links
 
-- [Main Website](https://hasura.io/)
-- [Docs](https://hasura.io/docs/latest/graphql/core/index.html)
+- [Main Website](https://hasura.io)
+- [Docs](https://hasura.io/docs)
+- [Learn](https://hasura.io/learn)
 
 ## CLI
 

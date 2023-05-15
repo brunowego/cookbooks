@@ -1,10 +1,10 @@
-# Zero Trust Architecture (ZTA)
+# Zero Trust
 
 <!--
 https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf
 -->
 
-**Keywords:** Security
+**Keywords:** Security Model
 
 Never trust, always verify!
 
@@ -24,6 +24,7 @@ https://app.pluralsight.com/course-player?clipId=cf1dd829-168e-454b-b448-eb576a9
 - Multi-Factor Authentication (MFA)
 - Policy-Based Access Control (PBAC)
 - Role-Based Access Control (RBAC)
+- Zero Trust Architecture (ZTA)
 
 ## Terms
 
