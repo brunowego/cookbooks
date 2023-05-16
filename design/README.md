@@ -7,7 +7,7 @@ https://rechain.co/
 
 ## Links
 
-- [Designer Slack Communities](https://designerslack.community/)
+- [Designer Slack Communities](https://designerslack.community)
 
 ## Terms
 

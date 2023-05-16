@@ -14,7 +14,7 @@ A low-code development platform provides a development environment used to creat
   - [Appsmith](/appsmith/README.md)
   - [Budibase](/budibase/README.md)
   - [Node-RED](https://github.com/node-red/node-red)
-  - [Retool](/retool.md)
+  - [Retool](/retool/README.md)
   - [ToolJet](https://github.com/ToolJet/ToolJet)
 
 <!--

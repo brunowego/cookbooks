@@ -5,6 +5,8 @@
 - [Org. Repository](https://github.com/bacen)
 - [PIX](https://bcb.gov.br/estabilidadefinanceira/pix)
   - [DICT](https://bcb.gov.br/content/estabilidadefinanceira/pix/API-DICT.html)
+- [Main Website](https://bcb.gov.br)
+- [Conversor de Moedas](https://bcb.gov.br/conversao)
 
 ## Glossary
 
@@ -12,6 +14,6 @@
 - Diretório de Identificadores de Contas Transacionais (DICT)
 - Sistema de Pagamentos Brasileiro (SPB)
 
-<!--
-https://www.bcb.gov.br/pom/spb/estatistica/port/ASTR003.pdf
--->
+## Files
+
+- [Departamento de Operações Bancárias e de Sistema de Pagamentos - Deban](https://bcb.gov.br/pom/spb/estatistica/port/ASTR003.pdf)

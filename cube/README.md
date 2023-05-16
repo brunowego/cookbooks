@@ -1,11 +1,13 @@
 # Cube
 
-**Keywords:** Metrics API
+**Keywords:** Metrics API, Semantic Layer
 
 ## Links
 
 - [Code Repository](https://github.com/cube-js/cube)
 - [Main Website](https://cube.dev)
+- Blog
+  - [Open source Looker alternative with Cube and Apache Superset](https://cube.dev/blog/open-source-looker-alternative)
 
 ## Docker
 

@@ -1,10 +1,6 @@
 # Brazil
 
 <!--
-https://www.bcb.gov.br/conversao
--->
-
-<!--
 Explicações
 
 DI Futuros -> https://www.youtube.com/watch?v=2HbUDsMil7k
@@ -74,15 +70,25 @@ Meta Selic / Taxa Selic
 - Banco Nacional de Desenvolvimento Econômico e Social (BNDES)
 - Bank Deposit Certificate (CDB)
 - Certificado de Depósito Interbancário (CDI)
+- Certificado de Recebíveis Imobiliários (CRI)
+- Classificação Nacional de Atividades Econômica (CNAE)
 - Comissão de Valores Mobiliários (CVM)
 - Comitê de Política Monetária (Copom)
 - Depósito Interfinanceiro (DI) / Interbank Deposit (DI)
+- Fundos Imobiliários (FII)
+- Índice Nacional de Preços ao Consumidor Amplo (IPCA)
+- Instituto Brasileiro de Opinião Pública e Estatística (IBOPE)
+- iShares: Collection of ETFs managed by BlackRock
+- Morgan Stanley Capital International (MSCI)
+- Preço de Paridade Internacional (PPI)
 - Sistema Especial de Liquidação e de Custódia (SELIC)
 - Sociedade Anônima (S.A.)
-- Classificação Nacional de Atividades Econômica (CNAE)
+- Tribunal Superior Eleitoral (TSE)
+- World Equity Benchmark Shares (WEBS)
 
 ## Terms
 
+- Diáspora Brasileira
 - Tripé Macroeconômico (Câmbio Flutuante, Metas de Inflação, Superávit Fiscal)
 
 ## Conselho Monetário Nacional
@@ -127,22 +133,6 @@ https://www.youtube.com/watch?v=Nk1LG5Fi9Uk
 ## Agencies
 
 - Brazilian Institute of Geography and Statistics (BIGS) / Instituto Brasileiro de Geografia e Estatística (IBGE)
-
-## Glossary
-
-- Certificado de Recebíveis Imobiliários (CRI)
-- Fundos Imobiliários (FII)
-- Índice Nacional de Preços ao Consumidor Amplo (IPCA)
-- Instituto Brasileiro de Opinião Pública e Estatística (IBOPE)
-- iShares: Collection of ETFs managed by BlackRock
-- Morgan Stanley Capital International (MSCI)
-- Preço de Paridade Internacional (PPI)
-- Tribunal Superior Eleitoral (TSE)
-- World Equity Benchmark Shares (WEBS)
-
-## Terms
-
-- Diáspora Brasileira
 
 ## Exchange-Traded Fund (ETF)
 

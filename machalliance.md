@@ -8,7 +8,7 @@
 
 ## Videos
 
-- [Discover Sitecore / What is MACH Architecture?](https://www.youtube.com/watch?v=lgRsAwxrw9Q)
+- [Discover Sitecore / What is MACH Architecture?](https://youtube.com/watch?v=lgRsAwxrw9Q)
 
 ## Glossary
 

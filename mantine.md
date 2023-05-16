@@ -1,5 +1,9 @@
 # Mantine
 
+<!--
+https://github.com/paralect/ship
+-->
+
 **Keywords:** UI Library
 
 ## Links

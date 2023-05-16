@@ -4,6 +4,7 @@
 
 - [Code Repository](https://github.com/resendlabs/react-email)
 - [Main Website](https://react.email)
+- [Examples](https://react.email/examples)
 
 ## Scaffold
 

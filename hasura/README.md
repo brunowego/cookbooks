@@ -7,6 +7,8 @@
 - [Learn](https://hasura.io/learn)
 - GraphQL
   - [Databases](https://hasura.io/graphql/database/)
+- Blog
+  - [Build Fullstack Apps with NestJS, Hasura, and GraphQL APIs](https://hasura.io/blog/build-fullstack-apps-nestjs-hasura-graphql-api/)
 
 ## CLI
 

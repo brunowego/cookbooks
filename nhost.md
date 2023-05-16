@@ -4,6 +4,9 @@
 https://github.com/usagizmo/nextjs-template
 -->
 
+**Keywords:** GraphQL, Firebase Alternative
+
 ## Links
 
-- [Main Website](https://nhost.io/)
+- [Code Repository](https://github.com/nhost/nhost)
+- [Main Website](https://nhost.io)
