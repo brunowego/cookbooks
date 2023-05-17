@@ -1,5 +1,7 @@
 # AWS Athena
 
+**Keywords:** Query Engine
+
 **TL;DR;**
 
 Athena is Presto + S3. Presto is a distributed SQL query engine for big data.

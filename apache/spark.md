@@ -104,6 +104,7 @@ helm install spark stable/spark \
 
 ```sh
 helm uninstall spark -n spark
+
 kubectl delete ns spark --grace-period=0 --force
 ```
 

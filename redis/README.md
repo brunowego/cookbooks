@@ -4,6 +4,8 @@
 https://medium.com/swlh/use-the-source-redis-internal-tricks-5a8b735b9ef0
 -->
 
+**Keywords:** Distributed Cache
+
 ## Links
 
 - [Main Website](https://redis.io/)

@@ -1,4 +1,4 @@
-# OpenTelemetry
+# OpenTelemetry (OTEL)
 
 ## Links
 

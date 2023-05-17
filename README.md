@@ -1,6 +1,8 @@
 # Cookbooks
 
 <!--
+Feynman Technique
+
 Prefix vs Suffix
 
 https://hackertyper.com/

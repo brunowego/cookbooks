@@ -14,11 +14,16 @@ https://basecase.vc/blog/headless-bi
 
 ## Tools
 
+### Enterprise
+
 - [AtScale](https://atscale.com)
-- [Cube](/cube/README.md) 🌟
 - [GoodData](https://gooddata.com)
 - [Google Cloud Looker](/gcp/looker.md)
 - [Kyligence](https://kyligence.io)
+
+### Open Source
+
+- [Cube](/cube/README.md) 🌟
 
 ## Terms
 

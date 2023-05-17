@@ -4,6 +4,10 @@
 https://app.pluralsight.com/library/courses/scaling-python-data-applications-dask/table-of-contents
 -->
 
+## Links
+
+- [Main Website](https://dask.org)
+
 ## Helm
 
 ### Install
@@ -66,5 +70,6 @@ EOF
 
 ```sh
 helm uninstall dask -n dask
+
 kubectl delete ns dask --grace-period=0 --force
 ```

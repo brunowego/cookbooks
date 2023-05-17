@@ -266,7 +266,7 @@ velero -h
 
 ```sh
 #
-velero client config set namespace=[namespace]
+velero client config set namespace=<namespace>
 
 #
 velero client config set features=EnableCSI
@@ -293,32 +293,32 @@ velero schedule describe hourly
 
 ```sh
 #
-velero backup create [backup-name] \
-  --include-namespaces [namespace] \
+velero backup create <backup-name> \
+  --include-namespaces <namespace> \
   --storage-location aws
 
 #
 velero backup get
-velero backup get [backup-name]
+velero backup get <backup-name>
 
 #
 kubectl get backups.velero.io \
   -n velero
 
 #
-velero backup describe [backup-name] \
+velero backup describe <backup-name> \
   --details
 
 #
-velero backup logs [backup-name]
+velero backup logs <backup-name>
 ```
 
 ```sh
 #
 velero backup-location create secondary \
   --provider aws \
-  --bucket [secondary-bucket-name] \
-  --region [region-name]
+  --bucket <secondary-bucket-name> \
+  --region <region-name>
 ```
 
 #### Restore
@@ -326,6 +326,6 @@ velero backup-location create secondary \
 ```sh
 #
 velero restore create \
-  --from-backup [before-test-1] \
-  --include-namespaces [namespace]
+  --from-backup <before-test-1> \
+  --include-namespaces <namespace>
 ```

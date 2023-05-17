@@ -4,6 +4,7 @@
 
 - [Code Repository](https://github.com/actions/actions-runner-controller)
 - [Troubleshooting](https://github.com/actions/actions-runner-controller/blob/master/TROUBLESHOOTING.md?plain=1)
+- [ADRs](https://github.com/actions/actions-runner-controller/tree/master/docs/adrs)
 
 ## Helm
 

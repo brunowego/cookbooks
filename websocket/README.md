@@ -2,7 +2,11 @@
 
 <!--
 https://github.com/novuhq/novu/tree/main/apps/ws
+
+wss://xyz.tld
 -->
+
+**Keywords:** Realtime
 
 ## Pub/Sub Providers
 

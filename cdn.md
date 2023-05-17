@@ -1,5 +1,7 @@
 # Content Delivery Network (CDN)
 
+**Keywords:** Static Data
+
 ## Providers
 
 ### Enterprise

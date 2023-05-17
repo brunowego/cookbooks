@@ -8,3 +8,9 @@
 ## Terms
 
 - Financial-grade API (FAPI)
+
+## Types
+
+- SQL API
+- REST API
+- GraphQL API
