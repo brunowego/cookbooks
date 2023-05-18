@@ -12,7 +12,8 @@
 
 ```sh
 #
-kubectl top nodes
+kubectl get nodes --show-labels
+kubectl top nodes -l <label>
 
 #
 kubectl top pods

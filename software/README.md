@@ -7,6 +7,10 @@ Bottleneck
 Leading zero
 -->
 
+## Glossary
+
+- Foreign Function Interface (FFI)
+
 ## Newsletter
 
 - [listmonk](/listmonk.md)

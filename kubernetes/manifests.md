@@ -137,6 +137,8 @@ kubectl rollout restart daemonset <name>
 
 **Docs:** [Configure Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
 
+### Readiness Probe
+
 ```yml
 # ...
 spec:
@@ -145,15 +147,26 @@ spec:
     # ...
     spec:
       containers:
-      - # ...
-        livenessProbe:
-          exec:
-            command:
-            - cat
-            - /tmp/healthy
-          initialDelaySeconds: 5
-          periodSeconds: 5
+        - # ...
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: 8080
+              # httpHeaders:
+              #   - name: Custom-Header
+              #     value: Awesome
+            # tcpSocket:
+            #   port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            timeoutSeconds: 10
+            failureThreshold: 3
+            successThreshold: 1
+```
 
+### Liveness Probe
+
+```yml
 # ...
 spec:
   # ..
@@ -161,33 +174,23 @@ spec:
     # ...
     spec:
       containers:
-      - # ...
-        livenessProbe:
-          httpGet:
-            path: /healthz
-            port: 8080
-            httpHeaders:
-            - name: Custom-Header
-              value: Awesome
-          initialDelaySeconds: 3
-          periodSeconds: 3
-
-# ...
-spec:
-  # ..
-  template:
-    # ...
-    spec:
-      containers:
-      - # ...
-        readinessProbe:
-          tcpSocket:
-            port: 8080
-          initialDelaySeconds: 5
-          periodSeconds: 10
-        livenessProbe:
-          tcpSocket:
-            port: 8080
-          initialDelaySeconds: 15
-          periodSeconds: 20
+        - # ...
+          livenessProbe:
+            httpGet:
+              path: /livez
+              port: 8080
+              # httpHeaders:
+              #   - name: Custom-Header
+              #     value: Awesome
+            # tcpSocket:
+            #   port: 8080
+            # exec:
+            #   command:
+            #     - cat
+            #     - /tmp/healthy
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            timeoutSeconds: 10
+            failureThreshold: 3
+            successThreshold: 1
 ```

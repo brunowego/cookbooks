@@ -2,6 +2,10 @@
 
 A contract with users that includes the consequences of meeting or missing service-level objectives.
 
+## Links
+
+- [AWS / Amazon API Gateway Service Level Agreement](https://aws.amazon.com/api-gateway/sla/)
+
 ## Good To Know
 
 - SREs are not involved in setting SLAs

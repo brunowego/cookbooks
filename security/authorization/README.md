@@ -1,6 +1,6 @@
 # Authorization (authz)
 
-## Access Control
+## Access Control Types
 
 - Access-Control List (ACL)
 - Attribute-Based Access Control (ABAC)

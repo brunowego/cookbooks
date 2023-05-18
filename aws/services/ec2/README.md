@@ -14,6 +14,10 @@ https://www.youtube.com/watch?v=F8jXE-_hdfg
   - [Key pairs](https://console.aws.amazon.com/ec2/home#KeyPairs:)
 - [Global View / Region explorer](https://console.aws.amazon.com/ec2globalview/home?skipRegion=true#)
 
+## Glossary
+
+- Auto Scaling Groups (ASGs)
+
 ## Guides
 
 - [Amazon Machine Images (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)

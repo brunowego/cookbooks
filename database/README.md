@@ -18,6 +18,10 @@ https://linkedin.com/learning/database-foundations-administration-8375189/admini
 
 - [Database Markup Language (DBML)](/dbml.md)
 
+## Articles
+
+- [ByteByteGo / Key Steps in the Database Selection Process](https://blog.bytebytego.com/p/key-steps-in-the-database-selection)
+
 ## Glossary
 
 - Data definition language (DDL)

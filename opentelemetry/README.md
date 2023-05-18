@@ -1,4 +1,4 @@
-# OpenTelemetry (OTEL)
+# OpenTelemetry (OTEL) (Old OpenCensus and OpenTracing)
 
 ## Links
 
@@ -13,6 +13,7 @@
 ## Related
 
 - [OpenTracing](/opentracing.md)
+- [OpenCensus](https://opencensus.io)
 
 ## Basic
 

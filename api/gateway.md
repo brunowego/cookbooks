@@ -6,10 +6,7 @@
 
 - [AWS API Gateway](/aws/services/api-gateway.md)
 - [Azure API Management](/azure/services/api-management.md)
-
-<!--
-TODO GCP
--->
+- [Google Cloud API Gateway](/gcp/services/api-gateway.md)
 
 ### Open Source
 

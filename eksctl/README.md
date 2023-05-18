@@ -5,7 +5,8 @@
 ## Links
 
 - [Code Repository](https://github.com/weaveworks/eksctl)
-- [Main Website](https://eksctl.io/)
+- [Main Website](https://eksctl.io)
+- [Docs](https://eksctl.io/introduction)
 
 ## CLI
 
@@ -40,7 +41,10 @@ eksctl info
 eksctl get clusters
 
 #
-eksctl get nodegroup --cluster <name>
+eksctl get nodegroup \
+  --cluster <name> \
+  -o json | \
+    jq -r '.[].Name'
 
 #
 eksctl delete nodegroup \

@@ -21,6 +21,10 @@ https://github.com/search?q=path%3Adocs%2Fadrs+path%3A.md&type=code
 <!--
 https://timsommer.be/architectural-decision-record
 https://thomasbandt.com/architecture-decision-records
+
+https://github.com/NERC-CEH/datalab/tree/master/architecture/decisions
+https://github.com/transcom/mymove-docs/tree/main/docs/adrs
+https://github.com/gmrabian/managed-care-review/tree/main/docs/ADRs
 -->
 
 ## Glossary

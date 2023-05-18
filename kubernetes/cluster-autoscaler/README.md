@@ -102,6 +102,14 @@ pod didn't trigger scale-up (it wouldn't fit if a new node is added): 2 node(s) 
 
 TODO
 
+#### Not Trigger Scale Up
+
+```log
+Normal   NotTriggerScaleUp  56s   cluster-autoscaler  pod didn't trigger scale-up: 3 node(s) didn't match Pod's node affinity/selector, 1 node(s) had volume node affinity conflict
+```
+
+Try scale node group to 3 nodes.
+
 ### Delete
 
 ```sh

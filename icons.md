@@ -21,7 +21,8 @@
 ## Libraries
 
 - [Feather](https://feathericons.com)
-- [Simple Icons](https://simpleicons.org/)
+- [Simple Icons](https://simpleicons.org)
+- [Tabler Icons](https://tabler-icons.io)
 
 ## References
 
