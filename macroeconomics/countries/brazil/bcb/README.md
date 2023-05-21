@@ -7,6 +7,7 @@
   - [DICT](https://bcb.gov.br/content/estabilidadefinanceira/pix/API-DICT.html)
 - [Main Website](https://bcb.gov.br)
 - [Conversor de Moedas](https://bcb.gov.br/conversao)
+- [Cotações e Boletins](https://bcb.gov.br/estabilidadefinanceira/historicocotacoes)
 
 ## Glossary
 

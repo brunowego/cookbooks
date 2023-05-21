@@ -34,6 +34,9 @@ https://www.datadoghq.com/blog/postgresql-monitoring-tools/
 ### Common
 
 ```sql
+-- Show config file location
+SHOW config_file;
+
 -- Show version
 SELECT version();
 SHOW server_version;

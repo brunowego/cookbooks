@@ -26,18 +26,14 @@ ddosify -h
 
 ```sh
 #
-ddosify -t [URL]
-
-#
 ddosify \
-  -t [URL] \
-  -n 1000 \
-  -d 20 \
-  -p HTTPS \
-  -m PUT \
-  -T 7 \
-  -P http://proxy_server.com:80
-
-#
-ddosify -config ./config_examples/config.json
+  -T 5 \
+  -d 10 \
+  -m GET \
+  -n 100 \
+  -t http://127.0.0.1:8000
 ```
+
+<!--
+ddosify -config ./config_examples/config.json
+-->

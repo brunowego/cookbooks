@@ -1,18 +1,23 @@
 # Data Warehouse
 
-## Tools
+## Implementations
+
+### Enterprise
+
+- [AWS Redshift](/aws/services/redshift.md)
+- [Databricks](/databricks.md)
+
+<!--
+- [Google BigQuery](/google/bigquery.md)
+-->
+
+### Open Source
 
 - [Apache Hive](/apache/hive.md)
-- [AWS Redshift](/aws/services/redshift.md)
 - [ClickHouse](/clickhouse/README.md) 🌟
-- [Databricks](/databricks.md)
-- [Google BigQuery](/google/bigquery.md)
 - [Snowflake](/snowflake.md)
 
 <!--
+- [Apache Doris](/apache/doris.md)
 Apache Druid
-ClickHouse
-Presto
-
-https://delta.io
 -->

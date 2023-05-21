@@ -7,3 +7,13 @@
 ## Mitigation Tools
 
 - [Cloudflare](/cloudflare/README.md)
+
+## Tools
+
+- [Ddosify](/ddosify.md) 🌟
+- [SlowHTTPTest](/slowhttptest.md)
+- [Slowloris](/slopwloris.md)
+
+<!--
+torshammer
+-->

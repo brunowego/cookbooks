@@ -1,7 +1,10 @@
 # Security Information and Event Management (SIEM)
 
-<!--
-https://github.com/matanolabs/matano
--->
+## Glossary
 
-TODO
+- Extended Detection and Response (XDR)
+
+## Implementations
+
+- [Matano](/matano.md)
+- [Wazuh](/wazuh.md)

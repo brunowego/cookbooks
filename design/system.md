@@ -36,3 +36,7 @@ https://www.youtube.com/watch?v=2pBlLUE49hI
 
 - [Stratis UI](https://stratisui.com)
 - [Untitled UI](https://untitledui.com)
+
+## Conferences
+
+- [The Future of Design Systems](https://intodesignsystems.com/)

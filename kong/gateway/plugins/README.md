@@ -1,6 +1,8 @@
 # Kong Gateway Plugins
 
-TODO
+## Links
+
+- [Plugin Hub](https://docs.konghq.com/hub/)
 
 <!--
 https://github.com/mihai-constantin/ACS/blob/master/IDP/Laborator/lab06/kong/kong-plugins.yml

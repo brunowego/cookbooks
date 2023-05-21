@@ -1,5 +1,7 @@
 # Apache Hive
 
+**Keywords:** Data Warehouse
+
 ## References
 
 - [HiveQL](https://cwiki.apache.org/confluence/display/Hive/LanguageManual)

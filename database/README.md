@@ -24,7 +24,7 @@ https://linkedin.com/learning/database-foundations-administration-8375189/admini
 
 ## Glossary
 
-- Data definition language (DDL)
+- Data Definition Language (DDL)
 - Data Manipulation Language (DML)
 - Not Only SQL (NoSQL)
 - Relational Database Management System (RDBMS)

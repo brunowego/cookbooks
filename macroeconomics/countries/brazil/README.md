@@ -7,6 +7,10 @@ DI Futuros -> https://www.youtube.com/watch?v=2HbUDsMil7k
 -->
 
 <!--
+https://www.b3.com.br/pt_br/solucoes/plataformas/puma-trading-system/para-participantes-e-traders/horario-de-negociacao/cambio/
+-->
+
+<!--
 Réis
 Cruzeiro
 Cruzeiro Novo

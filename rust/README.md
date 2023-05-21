@@ -1,6 +1,8 @@
 # Rust
 
 <!--
+https://www.youtube.com/watch?v=lzKeecy4OmQ
+
 .rs
 .rlib
 

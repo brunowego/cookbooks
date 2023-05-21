@@ -9,7 +9,6 @@ curl https://raw.githubusercontent.com/Kong/kong/master/kong.conf.default -o kon
 ## Links
 
 - [Docs](https://docs.konghq.com/gateway/latest/)
-- [Plugin Hub](https://docs.konghq.com/hub/)
 
 ## CLI
 
@@ -116,7 +115,24 @@ docker volume rm kong-postgres-data
 ```sh
 #
 cat << EOF > ./kong.yml
+---
+_format_version: '3.0'
+_transform: true
 
+services:
+  - name: my-service
+    url: https://example.com
+    plugins:
+      - name: key-auth
+    routes:
+      - name: my-route
+        paths:
+          - /
+
+consumers:
+  - username: my-user
+    keyauth_credentials:
+      - key: my-key
 EOF
 
 #
@@ -140,6 +156,70 @@ docker run -d \
   --name kong \
   --network workbench \
   docker.io/library/kong:3.2.2-alpine kong start
+```
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:8001/services'
+```
+
+## Docker Compose
+
+### Manifest
+
+```yml
+---
+version: '3'
+
+x-kong: &kong
+  image: docker.io/library/kong:3.2.2-alpine
+  environment: &kong-environment
+    KONG_PG_HOST: kong-postgres
+    KONG_PG_USER: kong
+    KONG_PG_PASSWORD: kong
+    KONG_PG_DATABASE: kong
+    KONG_ADMIN_LISTEN: 0.0.0.0:8001
+
+services:
+  kong-postgres:
+    image: docker.io/library/postgres:15.1-alpine
+    volumes:
+      - type: volume
+        source: kong-postgresql-data
+        target: /var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: kong
+      POSTGRES_PASSWORD: kong
+      POSTGRES_DB: kong
+    restart: unless-stopped
+
+  kong-migrations:
+    <<: *kong
+    command: kong migrations bootstrap
+    restart: on-failure
+    depends_on:
+      - kong-postgres
+
+  kong-migrations-up:
+    <<: *kong
+    command: kong migrations up && kong migrations finish
+    restart: on-failure
+    depends_on:
+      - kong-migrations
+
+  kong:
+    <<: *kong
+    ports:
+      - target: 8001
+        published: $KONG_PORT
+        protocol: tcp
+    restart: unless-stopped
+    depends_on:
+      - kong-postgres
+      - kong-migrations-up
+
+volumes:
+  kong-postgresql-data:
+    driver: local
 ```
 
 ## Helm
@@ -292,3 +372,18 @@ kubectl delete ns kong \
   --grace-period=0 \
   --force
 ```
+
+## Issues
+
+### Inaccessible Host
+
+```log
+An invalid response was received from the upstream server
+```
+
+```sh
+#
+curl -I http://127.0.0.1:8000
+```
+
+Try change in `url` everything from `127.0.0.1` to `host.docker.internal`.

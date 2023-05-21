@@ -2,7 +2,7 @@
 
 <!-- ```sh
 #
-cat << EOF >> ./.devops/terraform/.gitignore
+cat << EOF >> ./.infra/terraform/.gitignore
 /.terraform
 /terraform.tfstate.d
 /*.tfplan
@@ -17,32 +17,36 @@ terraform.tfvars.example
 
 ## Structure
 
-````sh
+```sh
 #
-mkdir -p ./.devops/terraform/{modules,policies,vars}
+mkdir -p ./.infra/terraform/{modules,policies,vars}
 
 #
-cat << \EOF > ./.devops/terraform/.gitignore
+cat << EOF > ./.infra/terraform/.gitignore
 /.terraform
 /.terraform.lock.hcl
 EOF
 
 #
-cat << \EOF > ./.devops/terraform/locals.tf
+echo '1.3.5' > ./.infra/terraform/.terraform-version
+
+#
+cat << EOF > ./.infra/terraform/locals.tf
 locals {
   tags = {
-    app_name   = var.app_name,
-    app_env    = var.app_env,
     managed-by = "terraform"
   }
 }
 EOF
 
 #
-cat << \EOF > ./.devops/terraform/main.tf
+cat << EOF > ./.infra/terraform/main.tf
 terraform {
+  # backend "local" {}
+
   backend "remote" {
     organization = "my-company"
+
     workspaces {
       prefix = "<project>-<app-name>-<region>-"
     }
@@ -51,44 +55,51 @@ terraform {
 EOF
 
 #
-cat << \EOF > ./.devops/terraform/outputs.tf
+cat << EOF > ./.infra/terraform/outputs.tf
 
 EOF
 
 #
-cat << \EOF > ./.devops/terraform/provider.tf
-provider "aws" {
-  region = var.aws_region
-}
+cat << EOF > ./.infra/terraform/provider.tf
+# provider "aws" {
+#   region = var.aws_region
+# }
 EOF
 
 #
-cat << \EOF > ./.devops/terraform/variables.tf
+cat << EOF > ./.infra/terraform/variables.tf
 
 EOF
 
 #
-cat << EOF > ./.devops/terraform/versions.tf
+cat << EOF > ./.infra/terraform/versions.tf
 terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.46"
-    }
-  }
-  required_version = "~> 1.3.4"
+  # required_providers {
+  #   aws = {
+  #     source  = "hashicorp/aws"
+  #     version = "~> 3.46"
+  #   }
+  # }
+
+  required_version = "~> 1.3.5"
 }
 EOF
+```
 
+```sh
 #
-cat << \EOF > ./.devops/terraform/README.md
+cat << EOF > ./.infra/terraform/README.md
 # Terraform
 
 ## Running
 
-```sh
+TBD
+EOF
+```
+
+<!--
 #
-cd ./.devops/terraform
+cd ./.infra/terraform
 
 #
 terraform init
@@ -116,9 +127,7 @@ terraform state list
 
 #
 terraform output
-```
-EOF
-````
+-->
 
 ## Tips
 
@@ -134,4 +143,8 @@ resource "..." "..." {
     ]
   }
 }
+```
+
+```
+
 ```

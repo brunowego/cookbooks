@@ -1,5 +1,7 @@
 # ChatGPT
 
+**Keywords:** Artificial Intelligence
+
 <!--
 https://github.com/webwhiz-ai/webwhiz
 -->

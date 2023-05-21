@@ -39,9 +39,11 @@ twilio email send
 twilio email set
 ``` -->
 
-<!--
-server: smtp.sendgrid.net
-port: 587
-username: apikey
-password: SG.someactualkey
--->
+## Tips
+
+### SMTP Configuration
+
+- Server: `smtp.sendgrid.net`
+- Port: `587`
+- Username: `apikey`
+- Password: `SG.someactualkey`

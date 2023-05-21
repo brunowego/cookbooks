@@ -1,6 +1,6 @@
 # ClickHouse
 
-**Keywords:** OLAP
+**Keywords:** OLAP, Data Warehouse
 
 <!--
 https://arctype.com

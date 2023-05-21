@@ -4,4 +4,11 @@
 https://www.ycombinator.com/companies/ballerine
 -->
 
-TODO
+## Glossary
+
+- Identity Verification (IDV)
+- Know Your Business (KYB)
+
+## Implementations
+
+- [Ballerine](/ballerine.md)

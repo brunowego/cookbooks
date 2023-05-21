@@ -254,6 +254,7 @@ services:
       POSTGRES_USER:
       POSTGRES_PASSWORD:
       POSTGRES_DB:
+    # command: ['postgres', '-c', 'log_statement=all']
     ports:
       - target: 5432
         published: $POSTGRES_PORT

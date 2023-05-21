@@ -4,19 +4,21 @@
 https://github.com/ElektronPlus/school-website
 https://github.com/Okampus/okampus
 https://github.com/Console45/nest-meilisearch
+
+https://github.com/meilisearch/meilisearch-kubernetes/tree/main/charts/meilisearch
 -->
 
-## Alternatives
-
-- Algolia
-- Typesense
-- Elasticsearch
+**Keywords:** Search Engine
 
 ## Links
 
 - [Code Repository](https://github.com/meilisearch/meilisearch)
 - [Main Website](https://meilisearch.com)
 - [Comparison to alternatives](https://docs.meilisearch.com/learn/what_is_meilisearch/comparison_to_alternatives.html#comparison-table)
+
+## Tools
+
+- [Airbyte / Open-source ETL to MeiliSearch](https://airbyte.com/connectors/meilisearch)
 
 ## Docker
 

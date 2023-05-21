@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://keybase.io/)
+- [Main Website](https://keybase.io)
 
 ## App
 

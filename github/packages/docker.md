@@ -54,6 +54,14 @@ docker \
 
 <!-- ## Issues
 
+### TBD
+
+```log
+docker: Error response from daemon: Head "https://ghcr.io/v2/cerbos/cerbos/manifests/0.26.0": denied: denied.
+```
+
+TODO
+
 ### Token Issue
 
 ```log

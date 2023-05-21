@@ -17,29 +17,29 @@ man find
 ## Usage
 
 ```sh
-# Kill Process
-pkill find
+# Find file with name
+find . -type f -name '<filename>'
 
-# Wildcard
+# Find files where filename ends with space
+find . -type f -name '* '
+
+# Find Folder
+find . \
+  -name '<name>' \
+  -type d \
+  -maxdepth 2
+
+# With Wildcard
 find . -name \*.<extension>
 ```
 
 ## Tips
 
-### Find files where filename ends with space
+### Kill Process
 
 ```sh
-find . -type f -name '* '
-```
-
-### Find Folder
-
-```sh
-#
-find . \
-  -name '<name>' \
-  -type d \
-  -maxdepth 2
+# Kill Process
+pkill find
 ```
 
 ### TBD

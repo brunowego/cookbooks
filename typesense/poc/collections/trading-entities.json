@@ -1,0 +1,32 @@
+{
+  "name": "trading-entities",
+  "fields": [
+    { "name": "type", "type": "string", "facet": true },
+    { "name": "type_rank", "type": "int32" },
+    { "name": "name", "type": "string" },
+    { "name": "description", "type": "string" },
+    { "name": "blockchain", "type": "string", "facet": true },
+    { "name": "exchange", "type": "string", "facet": true },
+    {
+      "name": "exchange_type",
+      "type": "string",
+      "optional": true,
+      "index": false
+    },
+    { "name": "smart_contract_addresses", "type": "string[]" },
+    { "name": "token_tickers", "type": "string[]", "optional": true },
+    { "name": "token_names", "type": "string[]", "optional": true },
+    {
+      "name": "quality_factors",
+      "type": "string[]",
+      "optional": true,
+      "index": false
+    },
+    { "name": "volume_24h", "type": "float", "optional": true },
+    { "name": "liquidity", "type": "float", "optional": true },
+    { "name": "price_change_24h", "type": "float", "optional": true },
+    { "name": "price_usd_latest", "type": "float", "optional": true },
+    { "name": "pool_swap_fee", "type": "float", "optional": true },
+    { "name": "url_path", "type": "string", "optional": true, "index": false }
+  ]
+}

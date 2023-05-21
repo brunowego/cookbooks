@@ -6,6 +6,11 @@ Synchronize Design Pattern
 https://github.com/donnemartin/system-design-primer
 -->
 
+## Learn
+
+- [ByteByteGo](https://bytebytego.com)
+  - [Blog](https://blog.bytebytego.com/)
+
 ## Tool Types
 
 - System Flow Chart

@@ -1,46 +1,28 @@
 # Open Policy Agent (OPA)
 
-<!--
-https://github.com/infra-as-code-workshop/opa
+**Keywords:** Policy Management, PaC, AuthZ
 
-https://www.youtube.com/watch?v=AfTuzonH93U
-https://www.youtube.com/watch?v=ijQdHy4XQCU
-https://www.youtube.com/watch?v=Vdy26oA3py8
-https://www.youtube.com/watch?v=RDWndems-sk
-https://www.youtube.com/watch?v=Uj2N9S58GLU
-https://www.youtube.com/watch?v=ijQdHy4XQCU
-https://www.youtube.com/watch?v=14lGc7xMAe4
-https://www.youtube.com/watch?v=ggMyp3TEc34
-https://www.youtube.com/watch?v=Lca5u_ODS5s
-https://www.youtube.com/watch?v=OjAOzgwRVlU
-https://www.youtube.com/watch?v=xMm0w_ws2SQ
-https://www.youtube.com/watch?v=u1KUft3fsCk
-
-https://thenewstack.io/getting-open-policy-agent-up-and-running/
-
-https://github.com/onelittlenightmusic/opa-up-and-running/blob/bb36c25042375612e04bffb896781e0fe6c9b374/README.md
-
-https://github.com/onelittlenightmusic/zenn-articles/blob/356877d986f8324d19e603608ffe2b9fb90c698b/articles/e9f50f7d6e40cc0f0830.md
-
-https://github.com/pbnj/pbnj.github.io/blob/6b68214fb58f1ec46e91a4d611e7e3b928acf563/blog/unit-test-your-configuration-files.md
--->
-
-**Keywords:** Policy Management
+![OPA Demo Overview](/assets/images/open-policy-agent/opa-demo-overview.png)
 
 ## Links
 
 - [Code Repository](https://github.com/open-policy-agent/opa)
-- [Main Website](https://openpolicyagent.org/)
-- [The Rego Playground](https://play.openpolicyagent.org/)
+- [Main Website](https://openpolicyagent.org)
+- [The Rego Playground](https://play.openpolicyagent.org)
+- [Docs](https://openpolicyagent.org/docs)
+  - [REST API](https://openpolicyagent.org/docs/latest/rest-api/)
 
 ## Guides
 
 - [Policy Language](https://openpolicyagent.org/docs/latest/policy-language/)
 - [Kafka](https://openpolicyagent.org/docs/latest/kafka-authorization/)
+- [Authorization in microservices with Open Policy Agent, NodeJs, and ReactJs - Backend](https://pongzt.com/post/opa-nodejs/)
 
-## Terms
+## Glossary
 
+- General-purpose Policy Engine (GPE)
 - Policy-as-Code (PaC)
+- Unified Policy Enforcement (UPE)
 
 ## CLI
 
