@@ -1,5 +1,7 @@
 # Gatling
 
+**Keywords:** Load Testing
+
 ## Links
 
 - [Code Repository](https://github.com/gatling/gatling)

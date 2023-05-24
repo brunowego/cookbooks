@@ -6,10 +6,6 @@
 helm3 repo add jaegertracing https://jaegertracing.github.io/helm-charts
 -->
 
-## Alternatives
-
-- [Zipkin](/zipkin.md)
-
 ## Host
 
 ### Installation

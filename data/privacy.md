@@ -38,4 +38,4 @@ Confidence
 
 ## Tools
 
-- [Monoid](https://monoid.co)
+- [Monoid](/nanoid.md)

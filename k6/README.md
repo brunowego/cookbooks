@@ -1,108 +1,34 @@
 # K6
 
+**Keywords:** Load Testing
+
 <!--
-https://github.com/mostafa/xk6-kafka
-https://github.com/corunet/kloadgen
+#
+TRADER_URL := http://trader.ptcg.10oz.tw
+k6 run -e TRADER_URL=$(TRADER_URL) create_order.js
 
-https://github.com/k6io/docs/blob/edb534e78340799a7082544c79cdc644f88e369e/src/data/markdown/translated-guides/en/04%20Results%20visualization/01%20Amazon%20CloudWatch.md
-
-https://github.com/k6io/operator
-https://k6.io/blog/running-distributed-tests-on-k8s/
-
-https://github.com/2color/ama-prisma/blob/main/loadtest.js
-
-HTML Report
+https://github.com/jlobo/stress/blob/main/v1/src/libs/DAuthClientSetError.js
+https://github.com/typesense/showcase-songs-search/blob/master/scripts/benchmarking/README.md
+https://github.com/firebend/auto-crud/blob/main/Firebend.AutoCrud.Web.Sample.LoadTest/src/scripts/soak.test.js
+https://github.com/kyma-project/kyma/blob/main/tests/perf/components/istio/istio.js
+https://github.com/shortcut/cloud-native-templates/blob/main/ops/k6/crr.js
+https://github.com/SamGreig/derekrose-perf-testing/blob/main/src/steps.js
+https://github.com/satheeshpandianj/VolvoCars/blob/main/scripts/WorkloadMix.js
+https://github.com/chrispsheehan/PerformanceTestFramework/blob/main/src/crocs.ts
+https://github.com/irvanster/k6-loadtesting/blob/main/script.js
+https://github.com/HomoEfficio/dev-tips/blob/master/LoadTest-K6-InfluxDB-Grafana.md
+https://github.com/arunk2493/k6performancetesting/blob/main/grafana_dashboard.json
 -->
-
-**Keywords:** Benchmark
-
-## Alternatives
-
-- [Locust](/locust.md)
-
-## Guides
-
-- [Installation](https://k6.io/docs/getting-started/installation/)
-- [Running large tests](https://k6.io/docs/testing-guides/running-large-tests/)
-- [Ecosystem Explore](https://k6.io/docs/ecosystem/)
-- [Results output - External outputs](https://k6.io/docs/getting-started/results-output/#external-outputs)
 
 ## Links
 
-- [Demo website for load testing](https://test.k6.io/)
-
-## Docker
-
-### Network
-
-```sh
-docker network create workbench \
-  --subnet 10.1.1.0/24
-```
-
-### Running
-
-```sh
-docker run -d \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h k6 \
-  --name k6 \
-  --network workbench \
-  docker.io/loadimpact/k6:0.32.0 run \
-    --vus 100 \
-    --duration 1s \
-    --summary-export ./script.json \
-    ./script.js
-```
-
-### Remove
-
-```sh
-docker rm -f k6
-```
-
-<!-- ## Library
-
-### Installation
-
-```sh
-npm install -D @types/k6 typescript
-```
-
-### Configuration
-
-```sh
-#
-mkdir -p ./test/stress
-```
-
-**Refer:** `./package.json`
-
-```json
-{
-  // ...
-  "scripts": {
-    "stress": "k6 run ./test/stress/index.ts",
-    "stress:monitor": "k6 run --out influxdb=http://localhost:8086/dempk6db --out json=./stress.json ./test/stress/index.ts"
-  }
-}
-```
-
-```sh
-#
-cat << EOF > ./test/stress/index.ts
-import http from "k6/http";
-import { check } from "k6";
-
-export default function() {
-  let res = http.get("https://test.loadimpact.com/");
-
-  check(res, {
-    "is status 200": r => r.status === 200
-  });
-};
-EOF
-``` -->
+- [Main Website](https://k6.io)
+- [Demo website for load testing](https://test.k6.io)
+- [Docs](https://k6.io/docs)
+  - [Installation](https://k6.io/docs/getting-started/installation/)
+  - [Running large tests](https://k6.io/docs/testing-guides/running-large-tests/)
+  - [Ecosystem Explore](https://k6.io/docs/ecosystem/)
+  - [Results output - External outputs](https://k6.io/docs/getting-started/results-output/#external-outputs)
 
 ## CLI
 
@@ -152,54 +78,49 @@ k6 -h
 mkdir -p ./test/stress
 ```
 
-```sh
-#
-cat << EOF > ./test/stress/index.ts
-import http from "k6/http";
-import { check } from "k6";
+**Refer:** `./test/stress/index.ts`
 
-export default function() {
-  let res = http.get("https://test.loadimpact.com/");
+```ts
+import http from 'k6/http'
+import { check } from 'k6'
+
+export let options = {
+  vus: 1,
+  vusMax: 10,
+  duration: '10m',
+}
+
+export default function () {
+  let res = http.get('http://127.0.0.1:3000')
 
   check(res, {
-    "is status 200": r => r.status === 200
-  });
-};
+    'is status 200': (r) => r.status === 200,
+  })
+}
 EOF
 ```
 
 ```sh
 #
 k6 run \
-  --vus 100 \
-  --duration 1s \
-  --summary-export ./script.json \
+  --out influxdb=http://127.0.0.1:8086/k6 \
   ./test/stress/index.ts
 
 #
-k6 run \
-  # ..
-  --out influxdb=http://localhost:8086/db0 \
-  ./test/stress/index.ts
+k6 status
+
+#
+k6 pause
+
+#
+k6 resume
+
+#
+k6 scale --vus 10
+
+#
+k6 stats
 ```
-
-<!--
-#
-TRADER_URL := http://trader.ptcg.10oz.tw
-k6 run -e TRADER_URL=$(TRADER_URL) create_order.js
-
-https://github.com/jlobo/stress/blob/main/v1/src/libs/DAuthClientSetError.js
-https://github.com/typesense/showcase-songs-search/blob/master/scripts/benchmarking/README.md
-https://github.com/firebend/auto-crud/blob/main/Firebend.AutoCrud.Web.Sample.LoadTest/src/scripts/soak.test.js
-https://github.com/kyma-project/kyma/blob/main/tests/perf/components/istio/istio.js
-https://github.com/shortcut/cloud-native-templates/blob/main/ops/k6/crr.js
-https://github.com/SamGreig/derekrose-perf-testing/blob/main/src/steps.js
-https://github.com/satheeshpandianj/VolvoCars/blob/main/scripts/WorkloadMix.js
-https://github.com/chrispsheehan/PerformanceTestFramework/blob/main/src/crocs.ts
-https://github.com/irvanster/k6-loadtesting/blob/main/script.js
-https://github.com/HomoEfficio/dev-tips/blob/master/LoadTest-K6-InfluxDB-Grafana.md
-https://github.com/arunk2493/k6performancetesting/blob/main/grafana_dashboard.json
--->
 
 ### Tips
 
@@ -265,3 +186,81 @@ WARN[0001] Request Failed error="Post \"http://localhost:8080/api/v1/widget\": w
 ```log
 WARN[0001] Request Failed error="Post \"http://localhost:8080/api/v1/widget\": read tcp 127.0.0.1:52259->127.0.0.1:8080: read: connection reset by peer"
 ``` -->
+
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h k6 \
+  --name k6 \
+  --network workbench \
+  docker.io/loadimpact/k6:0.44.1 run \
+    --vus 100 \
+    --duration 1s \
+    --summary-export ./script.json \
+    ./script.js
+```
+
+### Remove
+
+```sh
+docker rm -f k6
+```
+
+## Library
+
+### Dependecies
+
+- [InfluxDB](/influxdb/README.md)
+
+### Installation
+
+```sh
+# Using pnpm
+pnpm add @types/k6 typescript -D
+```
+
+### Configuration
+
+```sh
+#
+mkdir -p ./test/stress
+```
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "scripts": {
+    // ...
+    "stress": "k6 run ./test/stress/index.ts",
+    "stress:monitor": "k6 run -o influxdb=http://localhost:8086/k6 ./test/stress/index.ts"
+  }
+}
+```
+
+**Refer:** `./test/stress/index.ts`
+
+```ts
+import http from 'k6/http'
+import { check } from 'k6'
+
+export default function () {
+  let res = http.get('http://127.0.0.1:3000')
+
+  check(res, {
+    'is status 200': (r) => r.status === 200,
+  })
+}
+```

@@ -1,6 +1,6 @@
 # Matano
 
-**Keywords:** Security Lake Platform, SIEM
+**Keywords:** Security Lake, SIEM, Zero-ops Security Log
 
 ## Links
 

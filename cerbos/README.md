@@ -6,11 +6,34 @@
 
 - [Code Repository](https://github.com/cerbos/cerbos)
 - [Main Website](https://cerbos.dev)
+- [Docs](https://docs.cerbos.dev)
+  - Configuration / Storage / [Postgres Driver](https://docs.cerbos.dev/cerbos/latest/configuration/storage.html#postgres)
 
-<!--
-https://cerbos.dev/ecosystem/nestjs
-https://github.com/cerbos/nestjs-cerbos
--->
+## CLO
+
+### Installation
+
+#### Darwin Binary
+
+```sh
+CERBOS_VERSION="$(curl -s https://api.github.com/repos/cerbos/cerbos/releases/latest | grep tag_name | cut -d '"' -f 4 | tr -d 'v')"; \
+  curl -L \
+    "https://github.com/cerbos/cerbos/releases/download/v${CERBOS_VERSION}/cerbos_${CERBOS_VERSION}_Darwin_x86_64.tar.gz" | \
+      tar -xzC /usr/local/bin cerbos
+```
+
+### Commands
+
+```sh
+cerbos -h
+```
+
+<!-- ### Usage
+
+```sh
+#
+cerbos
+``` -->
 
 ## Docker
 

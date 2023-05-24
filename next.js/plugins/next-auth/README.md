@@ -43,6 +43,17 @@ pnpm add @types/next-auth -D
 #### TBD
 
 ```log
+[next-auth][error][SESSION_ERROR]
+@acme/web:dev: https://next-auth.js.org/errors#session_error Cannot read properties of undefined (reading 'session') TypeError: Cannot read properties of undefined (reading 'session')
+
+@acme/web:dev: [next-auth][error][adapter_error_getSessionAndUser]
+@acme/web:dev: https://next-auth.js.org/errors#adapter_error_getsessionanduser Cannot read properties of undefined (reading 'session') {
+@acme/web:dev:   message: "Cannot read properties of undefined (reading 'session')",
+```
+
+#### TBD
+
+```log
 This expression is not callable. Type 'typeof import("/")' has no call signatures. ts(2349)
 ```
 

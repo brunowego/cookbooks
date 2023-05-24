@@ -1,5 +1,7 @@
 # bombardier
 
+**Keywords:** Load Testing
+
 ## CLI
 
 ### Installation

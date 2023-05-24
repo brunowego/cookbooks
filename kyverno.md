@@ -5,7 +5,7 @@
 ## Links
 
 - [Code Repository](https://github.com/kyverno/kyverno)
-- [Main Website](https://kyverno.io/)
+- [Main Website](https://kyverno.io)
 
 ## Helm
 

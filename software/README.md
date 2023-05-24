@@ -10,6 +10,7 @@ Leading zero
 ## Glossary
 
 - Foreign Function Interface (FFI)
+- Point-of-Sale (PoS)
 
 ## Newsletter
 

@@ -9,6 +9,8 @@ https://github.com/ArcadeCity/arcade/blob/main/apps/relay/artillery.yml
 https://github.com/ergon/airlock-minikube-example/tree/main/apps/artillery
 -->
 
+**Keywords:** Load Testing
+
 ## Links
 
 - [Code Repository](https://github.com/artilleryio/artillery)
@@ -26,19 +28,6 @@ https://github.com/ergon/airlock-minikube-example/tree/main/apps/artillery
 npm install -g artillery
 ```
 
-### Plugins
-
-```sh
-#
-npm install -g artillery-plugin-publish-metrics
-
-#
-npm install -g artillery-plugin-expect
-
-#
-npm install -g artillery-plugin-http-ssl
-```
-
 ### Usage
 
 ```sh
@@ -48,6 +37,8 @@ artillery run \
   ./artillery-conf.yml
 
 #
+export HOSTNAME=''
+
 artillery report \
   -o report-${HOSTNAME}.html \
   ./report.json

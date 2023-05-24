@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/open-policy-agent/conftest)
-- [Main Website](https://conftest.dev/)
+- [Main Website](https://conftest.dev)
 
 ## Related
 

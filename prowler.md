@@ -1,6 +1,6 @@
 # Prowler
 
-**Keywords:** AWS Security Tool
+**Keywords:** Security Compliance
 
 ## Links
 
@@ -10,15 +10,40 @@
 
 - [CIS Amazon Web Services Foundations](https://d0.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf)
 
+## Compliance Standards
+
+- AWS Foundational Technical Review (FTR)
+- Center for Internet Security (CIS)
+- Federal Financial Institutions Examination Council (FFIEC)
+- General Data Protection Regulation (GDPR)
+- Health Insurance Portability and Accountability Act (HIPAA)
+- ISO/IEC 27001
+- National Security Framework (ENS)
+- Payment Card Industry Data Security Standard (PCI DSS)
+- Security Operations Center (SOC) 2
+
 ## CLI
 
 ### Requirements
 
-- [AWS Command Line Interface (CLI)](/aws/aws-cli.md)
-- [detect-secrets](/detect-secrets.md)
-- [jq](/jq.md)
+- Unix-like Only
+  - [AWS Command Line Interface (CLI)](/aws/aws-cli.md)
+  - [detect-secrets](/detect-secrets.md)
+  - [jq](/jq.md)
 
 ### Installation
+
+#### Homebrew
+
+```sh
+brew install prowler
+```
+
+#### pip
+
+```sh
+pip3 install prowler
+```
 
 #### Unix-like
 
@@ -28,7 +53,7 @@ sudo curl -L 'https://github.com/prowler-cloud/prowler/archive/refs/tags/2.12.0.
     sudo ln -s /opt/prowler-2.12.0 /opt/prowler
 ```
 
-### Environment
+### Environment (Unix-like Only)
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
@@ -45,17 +70,15 @@ sudo su - "$USER"
 
 ```sh
 prowler -h
+prowler <provider> -h
 ```
 
 ### Usage
 
 ```sh
 #
-prowler \
-  -p custom-profile \
-  -r us-east-1
+prowler <provider> # aws, azure, gcp
 
 #
-prowler \
-  -c check310
+prowler <provider> -M html
 ```

@@ -1,10 +1,10 @@
 # Kong Gateway
 
 <!--
-curl https://raw.githubusercontent.com/Kong/kong/master/kong.conf.default -o kong.conf.default
+curl https://raw.githubusercontent.com/Kong/kong/master/kong.conf.default -o kong.conf
 -->
 
-**Keywords:** API Gateway
+**Keywords:** API Gateway, Ingress Controller
 
 ## Links
 
@@ -224,12 +224,6 @@ volumes:
 
 ## Helm
 
-**WIP:** Currently not working as expected.
-
-<!--
-https://github.com/sigreen/install-kong-gw-azr-aks/blob/main/values/values-dns.yml
--->
-
 ### References
 
 - [Configuration](https://github.com/Kong/charts/tree/main/charts/kong#configuration)
@@ -260,88 +254,36 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install kong kong/kong \
-  --version 2.21.0 \
+  --version 2.22.0 \
   -f <(cat << EOF
-env:
-  database: postgres
-  pg_password: kong
-  # pg_host: postgres-postgresql
-  # pg_port: 5432
-  # pg_database: postgres
-  # pg_user: kong
-  # pg_password:
-  #   valueFrom:
-  #     secretKeyRef:
-  #       name: postgres-postgresql
-  #       key: postgres-password
-  # proxy_url: http://localhost:8000
-  # admin_gui_url: http://manager.localhost:8000
-  # admin_api_uri: http://api.manager.localhost:8000
-  # admin_session_conf:
-  #   valueFrom:
-  #     secretKeyRef:
-  #       name: kong-session-config
-  #       key: admin_gui_session_conf
-  # portal: on
-  # portal_auth: basic-auth
-  # portal_auto_approve: on
-  # portal_gui_host: portal.localhost:8000
-  # portal_api_url: http://kong-kong-admin.kong.svc.cluster.local:8001
-  # portal_gui_protocol: http
-  # portal_session_conf:
-  #   valueFrom:
-  #     secretKeyRef:
-  #       name: kong-session-config
-  #       key: portal_session_conf
-  # enforce_rbac: on
-  # password:
-  #   valueFrom:
-  #     secretKeyRef:
-  #       name: kong-enterprise-superuser-password
-  #       key: password
-
-# ingressController:
-
-postgresql:
-  enabled: true
-  auth:
-    postgresPassword: root
-    database: kong
-    username: kong
-    password: kong
-
-admin:
-  enabled: true
-  http:
-    enabled: true
-  ingress:
-    enabled: true
-    ingressClassName: kong
-    hostname: api.manager.kong.${DOMAIN}
-
 proxy:
-  ingress:
-    enabled: true
-    ingressClassName: kong
-    hostname: kong.${DOMAIN}
+  type: ClusterIP
 
-manager:
-  ingress:
-    enabled: true
-    ingressClassName: kong
-    hostname: manager.kong.${DOMAIN}
+  tls:
+    enabled: false
 
-portal:
   ingress:
     enabled: true
-    ingressClassName: kong
-    hostname: portal.kong.${DOMAIN}
+    ingressClassName: nginx
+    hostname: myapp.${DOMAIN}
+    # annotations:
+    #   cert-manager.io/cluster-issuer: letsencrypt-issuer
+    # tls: kong-proxy.tls-secret
 
-portalapi:
-  ingress:
-    enabled: true
-    ingressClassName: kong
-    hostname: api.portal.kong.${DOMAIN}
+dblessConfig:
+  config: |
+    _format_version: '3.0'
+
+    services:
+      - name: example
+        url: http://example.com
+        routes:
+          - name: root
+            paths:
+              - /
+
+ingressController:
+  enabled: false
 EOF
 )
 
@@ -349,19 +291,26 @@ EOF
 kubectl get all
 ```
 
+<!--
+kubectl port-forward \
+  --address 0.0.0.0 \
+  svc/kong-kong-proxy \
+  8080:80
+-->
+
 ### Status
 
 ```sh
 kubectl rollout status deployment/kong-kong
 ```
 
-<!-- ### Logs
+### Logs
 
 ```sh
 kubectl logs \
-  -l 'app.kubernetes.io/name=kong' \
+  -l 'app.kubernetes.io/instance=kong' \
   -f
-``` -->
+```
 
 ### Delete
 
@@ -374,6 +323,24 @@ kubectl delete ns kong \
 ```
 
 ## Issues
+
+### Proxy TLS Issue
+
+```log
+400 Bad Request
+The plain HTTP request was sent to HTTPS port
+```
+
+Disable Proxy TLS:
+
+```yml
+# ...
+proxy:
+  # ...
+
+  tls:
+    enabled: false
+```
 
 ### Inaccessible Host
 

@@ -15,24 +15,20 @@ Layoff
 
 ## Links
 
-- [500](https://500.co/)
+- [500](https://500.co)
 - [Y Combinator](https://ycombinator.com)
 
 ## References
 
-- [AcquiredBy](https://acquiredby.co/)
+- [AcquiredBy](https://acquiredby.co)
 - [Awesome CTO](https://github.com/kuchin/awesome-cto)
 - [Google for Startups / Start](https://startup.google.com/start/)
 - [Why ‘Winner Takes All’ Startups Leave Everyone Behind](https://marker.medium.com/why-winner-takes-all-leaves-everyone-behind-19bd756e1610)
 
 ## Tools
 
-- [Headway](https://headwayapp.co/)
-- [Rewind & Capture / Brand Grader](https://rewindandcapture.com/brand-grader/)
-
-## Terms
-
-- State of the art
+- [Headway](https://headwayapp.co)
+- [Rewind & Capture / Brand Grader](https://rewindandcapture.com/brand-grader)
 
 ## Glossary
 
@@ -103,6 +99,7 @@ Key Performance Indicator (KPI)
 - Skin In The Game
 - Soft Skills
 - Spread
+- State of the art
 - Stock Option
 - Turn Around
 - Underfunding

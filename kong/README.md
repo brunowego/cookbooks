@@ -9,4 +9,4 @@
 
 ## Products
 
-- [Kong Gateway OSS](./gateway-oss/README.md)
+- [Kong Gateway OSS](./gateway/README.md)

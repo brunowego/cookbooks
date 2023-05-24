@@ -12,11 +12,7 @@ https://public-dns.info/
 ## Tools
 
 - [Google Public DNS](https://dns.google)
-- Local
-  - [local.gd](https://local.gd)
-  - [localtest.me](https://localtest.me) 🌟
-  - [nip.io](https://nip.io) 🌟
-  - [sslip.io](https://sslip.io)
+- [localhost](/localhost.md#tools)
 
 ### Propagation Check
 

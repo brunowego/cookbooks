@@ -51,7 +51,7 @@
 - [Datadog](/datadog.md)
 - [Dynatrace](/dynatrace.md)
 - [New Relic](/newrelic/README.md)
-- [SigNoz](/signoz.md)
+- [SigNoz](/signoz/README.md)
 - [Splunk](/splunk.md)
 - [AppDynamics](https://appdynamics.com)
 

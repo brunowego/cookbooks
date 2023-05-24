@@ -80,7 +80,7 @@ psql -h 127.0.0.1 -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE metabase TO m
 ### Repository
 
 ```sh
-helm repo add pmint93 'https://pmint93.github.io/helm-charts'
+helm repo add deliveryhero 'https://charts.deliveryhero.io'
 helm repo update
 ```
 
@@ -89,28 +89,23 @@ helm repo update
 ```sh
 #
 kubectl create ns metabase
+# kubectl create ns analytics
+
+#
+kubens metabase
+
+#
+helm search repo -l deliveryhero/metabase
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
 export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
-helm install metabase pmint93/metabase \
-  --namespace metabase \
-  --version 1.3.0 \
+helm install metabase deliveryhero/metabase \
+  --version 0.14.3 \
   -f <(cat << EOF
-database:
-  type: postgres
-  host: postgresql-headless.postgresql
-  port: 5432
-  dbname: metabase
-  username: metabase
-  password: metabase
 
-ingress:
-  enabled: true
-  hosts:
-  - metabase.${DOMAIN}
 EOF
 )
 ```

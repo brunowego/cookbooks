@@ -1,8 +1,9 @@
 # Design
 
 <!--
-https://superlogica.com/
-https://rechain.co/
+https://superlogica.com
+https://rechain.co
+https://specifyapp.com
 -->
 
 ## Links

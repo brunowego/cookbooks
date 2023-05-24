@@ -7,6 +7,8 @@ https://artifacthub.io/packages/helm/deliveryhero/locust
 https://github.com/ONSdigital/blaise-cawi-load-tests/tree/main
 -->
 
+**Keywords:** Load Testing
+
 ## Links
 
 - [Code Repository](https://github.com/locustio/locust)

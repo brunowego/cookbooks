@@ -27,7 +27,7 @@ Low Coupling, High Cohesion
 
 ## Videos
 
-- [What Are Microservices Really All About? (And When Not To Use It)](https://youtube.com/watch?v=lTAcCNbJ7KE&t=11s)
+- [What Are Microservices Really All About? (And When Not To Use It)](https://youtube.com/watch?v=lTAcCNbJ7KE)
 
 ## Design
 
