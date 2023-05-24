@@ -10,7 +10,7 @@ cat << EOF | kubectl apply -f -
 apiVersion: v1
 data:
   registryAliases: >-
-    domain.tld
+    xyz.tld
   registrySvc: registry.kube-system.svc.cluster.local
 kind: ConfigMap
 metadata:

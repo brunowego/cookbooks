@@ -31,7 +31,7 @@ jobs:
           issue_title: Vulnerability Scan Results
           token: ${{ secrets.GITHUB_TOKEN }}
           docker_name: owasp/zap2docker-stable
-          target: http://domain.tld
+          target: http://xyz.tld
           rules_file_name: ./.zap/rules.tsv
           cmd_options: '-a'
 ```

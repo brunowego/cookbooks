@@ -136,7 +136,7 @@ docker exec -i alertmanager /bin/sh << EOSHELL
 cat << EOF > /etc/alertmanager/alertmanager.yml
 global:
   smtp_smarthost: mailhog:1025
-  smtp_from: Alertmanager <alertmanager@domain.tld>
+  smtp_from: Alertmanager <alertmanager@xyz.tld>
   smtp_require_tls: false
 
 templates:
@@ -162,7 +162,7 @@ route:
 receivers:
 - name: default_receiver
   email_configs:
-  - to: admin@domain.tld
+  - to: admin@xyz.tld
     send_resolved: true
 
 - name: discord_webhook

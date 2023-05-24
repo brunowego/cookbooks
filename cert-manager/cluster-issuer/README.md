@@ -33,7 +33,7 @@ kubectl describe challenge <name>
 ### TBD
 
 ```log
-<namespace> cm-acme-http-solver-t9djk <none> grafana.domain.tld <name>.elb.us-east-1.amazonaws.com 80 9s
+<namespace> cm-acme-http-solver-t9djk <none> grafana.xyz.tld <name>.elb.us-east-1.amazonaws.com 80 9s
 ```
 
 ```sh

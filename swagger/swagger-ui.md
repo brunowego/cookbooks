@@ -32,7 +32,7 @@ helm install swagger-ui cetic/swaggerui \
   --namespace swagger \
   --set service.type=ClusterIP \
   --set ingress.enabled=true \
-  --set ingress.hosts={swagger-ui.domain.tld}
+  --set ingress.hosts={swagger-ui.xyz.tld}
 ```
 
 ### SSL
@@ -56,7 +56,7 @@ ingress:
   tls:
     - secretName: swagger-ui.tls-secret
       hosts:
-        - swagger-ui.domain.tld
+        - swagger-ui.xyz.tld
 EOF
 ) <(helm get values swagger-ui))
 ```
@@ -91,8 +91,8 @@ nslookup swagger-ui-swaggerui.swagger.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 swagger-ui.domain.tld +short
-nslookup swagger-ui.domain.tld 10.96.0.10
+dig @10.96.0.10 swagger-ui.xyz.tld +short
+nslookup swagger-ui.xyz.tld 10.96.0.10
 ```
 
 ### Delete

@@ -45,7 +45,7 @@ docker run -d \
 
 2. Domains -> Add Domain
 
-   - Name: `domain.tld`
+   - Name: `xyz.tld`
    - IMAP -> Server: `mailserver`
    - SMTP -> Server: `mailserver`
    - Test

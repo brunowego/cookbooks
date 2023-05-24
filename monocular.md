@@ -30,10 +30,10 @@ kubectl create secret tls monocular.tls-secret \
 ```sh
 helm install monocular monocular/monocular \
   --namespace monocular \
-  --set ingress.hosts={monocular.domain.tld} \
+  --set ingress.hosts={monocular.xyz.tld} \
   --set ingress.tls.secretName=monocular.tls-secret \
   --set 'sync.repos[0].name=example' \
-  --set 'sync.repos[0].url=https://chartmuseum.domain.tld'
+  --set 'sync.repos[0].url=https://chartmuseum.xyz.tld'
 ```
 
 ### Status
@@ -49,7 +49,7 @@ helm upgrade monocular monocular/monocular -f <(yq m <(cat << EOF
 sync:
   repos:
     - name: example
-      url: https://chartmuseum.domain.tld
+      url: https://chartmuseum.xyz.tld
       schedule: '*/5 * * * *'
 EOF
 ) <(helm get values monocular))

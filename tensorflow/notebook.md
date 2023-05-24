@@ -24,7 +24,7 @@ metadata:
   namespace: tensorflow-notebook
 spec:
   rules:
-  - host: tensorboard.domain.tld
+  - host: tensorboard.xyz.tld
     http:
       paths:
       - backend:
@@ -43,7 +43,7 @@ metadata:
   namespace: tensorflow-notebook
 spec:
   rules:
-  - host: jupyter.domain.tld
+  - host: jupyter.xyz.tld
     http:
       paths:
       - backend:

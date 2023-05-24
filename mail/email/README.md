@@ -10,7 +10,7 @@ https://github.com/forwardemail/email-templates
 ### Email Subaddressing (a.k.a. Plus Sign (+) Trick)
 
 ```txt
-name+group@domain.tld
+name+group@xyz.tld
 ```
 
 ### Company Emails

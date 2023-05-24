@@ -7,7 +7,7 @@ Use this installation with [Dokku Alternative](https://github.com/dokku-alt/dokk
 ```sh
 git clone https://github.com/sameersbn/docker-gitlab.git gitlab
 cd gitlab
-git remote add dokku dokku@domain.tld:gitlab
+git remote add dokku dokku@xyz.tld:gitlab
 git push dokku master
 ```
 
@@ -53,8 +53,8 @@ REDIS_PORT=6379
 dokku config:set gitlab GITLAB_PORT=80 \
 GITLAB_SSH_PORT=22 \
 GITLAB_HOST=gitlab \
-GITLAB_EMAIL=gitlab@domain.tld \
-GITLAB_SUPPORT=support@domain.tld
+GITLAB_EMAIL=gitlab@xyz.tld \
+GITLAB_SUPPORT=support@xyz.tld
 ```
 
 ### SMTP
@@ -96,7 +96,7 @@ dokku config gitlab
 
 ## Login
 
-Open `gitlab.domain.tld`:
+Open `gitlab.xyz.tld`:
 
 ```md
 User: root

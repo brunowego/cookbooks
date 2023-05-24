@@ -6,13 +6,13 @@
 
 ```sh
 sudo tee -a /etc/hosts << EOF
-[IP] kdc.domain.tld
-[IP] client.domain.tld
+[IP] kdc.xyz.tld
+[IP] client.xyz.tld
 EOF
 ```
 
 ```sh
-sudo hostnamectl set-hostname kdc.domain.tld
+sudo hostnamectl set-hostname kdc.xyz.tld
 ```
 
 ```sh
@@ -41,18 +41,18 @@ includedir /etc/krb5.conf.d/
  renew_lifetime = 7d
  forwardable = true
  rdns = false
- default_realm = domain.tld
+ default_realm = xyz.tld
  default_ccache_name = KEYRING:persistent:%{uid}
 
 [realms]
- DOMAIN.TLD = {
-  kdc = kdc.domain.tld
-  admin_server = kdc.domain.tld
+ xyz.tld = {
+  kdc = kdc.xyz.tld
+  admin_server = kdc.xyz.tld
  }
 
 [domain_realm]
- .domain.tld = domain.tld
- domain.tld = domain.tld
+ .xyz.tld = xyz.tld
+ xyz.tld = xyz.tld
 ```
 
 ## TBD
@@ -67,7 +67,7 @@ sudo vim /var/kerberos/krb5kdc/kdc.conf
  kdc_tcp_ports = 88
 
 [realms]
- DOMAIN.TLD = {
+ xyz.tld = {
   # master_key_type = aes256-cts
   default_principle_flags = +preauth
   acl_file = /var/kerberos/krb5kdc/kadm5.acl
@@ -90,7 +90,7 @@ sudo vim /var/kerberos/krb5kdc/kadm5.acl
 ## TBD
 
 ```sh
-sudo kdb5_util create -r DOMAIN.TLD -s
+sudo kdb5_util create -r xyz.tld -s
 ```
 
 ## TBD
@@ -120,13 +120,13 @@ sudo systemctl enable --now kadmin
 
 ```sh
 sudo tee -a /etc/hosts << EOF
-[IP] client.domain.tld
-[IP] kdc.domain.tld
+[IP] client.xyz.tld
+[IP] kdc.xyz.tld
 EOF
 ```
 
 ```sh
-sudo hostnamectl set-hostname client.domain.tld
+sudo hostnamectl set-hostname client.xyz.tld
 ```
 
 ```sh
@@ -138,8 +138,8 @@ hostnamectl status
 ```sh
 sudo kadmin
 
-kadmin:  addprinc -randkey host/client.domain.tld
-kadmin:  ktadd host/client.domain.tld
+kadmin:  addprinc -randkey host/client.xyz.tld
+kadmin:  ktadd host/client.xyz.tld
 kadmin:  exit
 ```
 

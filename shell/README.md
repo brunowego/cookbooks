@@ -93,7 +93,7 @@ EOF
 
 ```sh
 #
-for ((i=100; i<200; i+=1)); do nmap -p 22 "sub$i.domain.tld"; done
+for ((i=100; i<200; i+=1)); do nmap -p 22 "sub$i.xyz.tld"; done
 ``` -->
 
 ### Server Status Using Shell Script

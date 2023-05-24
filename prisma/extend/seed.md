@@ -9,7 +9,7 @@ export const USERS: {
   rates: Prisma.JsonArray
 }[] = [
   {
-    email: 'admin@domain.tld',
+    email: 'admin@xyz.tld',
     username: 'admin',
     rates: ['0.045196', '0.045174'],
   },

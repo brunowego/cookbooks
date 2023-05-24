@@ -77,7 +77,7 @@ curl \
   -X OPTIONS \
   -H 'Access-Control-Request-Method: GET' \
   -H 'Origin: http://localhost' \
-  http://domain.tld
+  http://xyz.tld
 ```
 
 <!-- ```sh
@@ -90,7 +90,7 @@ kubectl annotate ingress \
 #
 kubectl annotate ingress \
   [ingress-name] \
-  'nginx.ingress.kubernetes.io/cors-allow-origin="https://admin.domain.tld"' \
+  'nginx.ingress.kubernetes.io/cors-allow-origin="https://admin.xyz.tld"' \
   -n <namespace>
 
 #

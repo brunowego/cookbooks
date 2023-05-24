@@ -24,7 +24,7 @@ helm install jupyterhub jupyterhub/jupyterhub \
   --namespace jupyterhub \
   --set proxy.secretToken="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
   --set ingress.enabled=true \
-  --set ingress.hosts={jupyterhub.domain.tld}
+  --set ingress.hosts={jupyterhub.xyz.tld}
 ```
 
 | Login | Password |

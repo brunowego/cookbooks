@@ -37,7 +37,7 @@ cat << EOF > /etc/telegraf/telegraf.conf
   debug = true
 
 [[inputs.x509_cert]]
-  sources = ["https://domain.tld:443"]
+  sources = ["https://xyz.tld:443"]
 
 [[outputs.influxdb]]
   urls = ["http://example-influxdb:8086"]

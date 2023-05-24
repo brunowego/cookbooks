@@ -71,7 +71,7 @@ strapi new ./ \
 strapi admin:create-user \
   -f 'John' \
   -l 'Doe' \
-  -e 'johndoe@domain.tld' \
+  -e 'johndoe@xyz.tld' \
   -p 'Pa$$w0rd!'
 
 #

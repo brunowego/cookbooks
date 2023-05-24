@@ -14,7 +14,7 @@ version: v2
 metadata:
   name: okta
 spec:
-  acs: https://tele.domain.tld/v1/webapi/saml/acs
+  acs: https://tele.xyz.tld/v1/webapi/saml/acs
   attributes_to_roles:
   - {name: "groups", value: "okta-admin", roles: ["access"]}
   entity_descriptor: |

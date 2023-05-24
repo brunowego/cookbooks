@@ -37,5 +37,5 @@ mkdir ~/.certspotter
 
 ```sh
 #
-echo 'https://domain.tld' | certspotter -watchlist -
+echo 'https://xyz.tld' | certspotter -watchlist -
 ```

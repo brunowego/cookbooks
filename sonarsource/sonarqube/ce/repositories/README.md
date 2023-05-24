@@ -10,12 +10,12 @@
 
 1. Organization > Settings > Developer settings > GitHub Apps > New GitHub App
 
-   | Parameter       | Value                          |
-   | --------------- | ------------------------------ |
-   | GitHub App name | `Quality Gate (SonarQube)`     |
-   | Homepage URL    | `https://sonarqube.org`        |
-   | Callback URL    | `https://sonarqube.domain.tld` |
-   | Webhook URL     | `https://sonarqube.domain.tld` |
+   | Parameter       | Value                       |
+   | --------------- | --------------------------- |
+   | GitHub App name | `Quality Gate (SonarQube)`  |
+   | Homepage URL    | `https://sonarqube.org`     |
+   | Callback URL    | `https://sonarqube.xyz.tld` |
+   | Webhook URL     | `https://sonarqube.xyz.tld` |
 
 2. Create GitHub App
 3. Sidebar > Permissions & events

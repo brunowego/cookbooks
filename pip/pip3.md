@@ -119,12 +119,12 @@ export PIP_CONFIG_FILE="$HOME/.config/pip/pip.conf"
 ```sh
 cat << EOF > "$PIP_CONFIG_FILE"
 [global]
-index-url = https://mirror.domain.tld/simple
+index-url = https://mirror.xyz.tld/simple
 extra-index-url = https://mirror.example.org/simple
 
 [install]
 trusted-host =
-  mirror.domain.tld
+  mirror.xyz.tld
   mirror.example.org
 
 EOF

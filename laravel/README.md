@@ -139,7 +139,7 @@ rm ~/.zcompdump*
 ```php
 >>> $user = new App\User();
 >>> $user->password = Hash::make('Pa$$w0rd!');
->>> $user->email = 'user@domain.tld';
+>>> $user->email = 'user@xyz.tld';
 >>> $user->name = 'John Doe';
 >>> $user->username = 'johndoe';
 >>> $user->save();

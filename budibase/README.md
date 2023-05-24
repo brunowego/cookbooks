@@ -75,7 +75,7 @@ docker run -d \
   -e JWT_SECRET='S3cr3t_K@Key' \
   -e INTERNAL_API_KEY='S3cr3t_K@Key' \
   -e ENABLE_ANALYTICS='true' \
-  -e BB_ADMIN_USER_EMAIL='johndoe@domain.tld' \
+  -e BB_ADMIN_USER_EMAIL='johndoe@xyz.tld' \
   -e BB_ADMIN_USER_PASSWORD='Pa$$w0rd!' \
   -p 8080:80 \
   -p 8443:443 \

@@ -56,9 +56,9 @@ telnet 127.0.0.1 1025
 ```
 
 ```txt
-EHLO relay.domain.tld
-MAIL FROM: <fromuser@domain.tld>
-RCPT TO: <touser@domain.tld>
+EHLO relay.xyz.tld
+MAIL FROM: <fromuser@xyz.tld>
+RCPT TO: <touser@xyz.tld>
 DATA
 Subject: Sending an email using telnet
 

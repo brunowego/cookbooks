@@ -62,7 +62,7 @@ cat << EOF > /opt/gophish/config.json
 	"db_name": "mysql",
   "db_path": "gophish:gophish@(gophish-mysql:3306)/gophish?charset=utf8&parseTime=True&loc=UTC",
 	"migrations_prefix": "db/db_",
-	"contact_address": "admin@domain.tld",
+	"contact_address": "admin@xyz.tld",
 	"logging": {
 		"filename": "",
 		"level": ""

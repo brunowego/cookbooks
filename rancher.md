@@ -195,15 +195,15 @@ rancher login \
 <!-- ### Host Resolve
 
 ```log
-INFO: Using resolv.conf: nameserver 10.254.1.134 nameserver 172.17.10.57 nameserver 10.8.4.1 search domain.tld
-ERROR: https://rancher.domain.tld/ping is not accessible (Could not resolve host: rancher.domain.tld)
+INFO: Using resolv.conf: nameserver 10.254.1.134 nameserver 172.17.10.57 nameserver 10.8.4.1 search xyz.tld
+ERROR: https://rancher.xyz.tld/ping is not accessible (Could not resolve host: rancher.xyz.tld)
 ```
 
 ```sh
 # sudo vim /etc/resolv.conf
 # search rancher.rancher-system.svc.cluster.local rancher-system.svc.cluster.local svc.cluster.local cluster.local
 
-sudo hostess add rancher.domain.tld 10.254.1.88
+sudo hostess add rancher.xyz.tld 10.254.1.88
 
 sudo systemctl restart kubelet
 

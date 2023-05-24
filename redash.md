@@ -81,7 +81,7 @@ docker exec redash-server /app/bin/docker-entrypoint create_db
 docker exec redash-server /app/bin/docker-entrypoint manage users create_root \
   --org Example \
   --password 'Pa$$w0rd!' \
-  admin@domain.tld \
+  admin@xyz.tld \
   admin
 ```
 
@@ -89,9 +89,9 @@ docker exec redash-server /app/bin/docker-entrypoint manage users create_root \
 echo -e '[INFO]\thttp://127.0.0.1:5000'
 ```
 
-| Login              | Password    |
-| ------------------ | ----------- |
-| `admin@domain.tld` | `Pa$$w0rd!` |
+| Login           | Password    |
+| --------------- | ----------- |
+| `admin@xyz.tld` | `Pa$$w0rd!` |
 
 ### Remove
 

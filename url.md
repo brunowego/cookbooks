@@ -7,8 +7,8 @@
 
 ## URL + URN = URI
 
-| Name                        | Abbr. | Example                                   |
-| --------------------------- | ----- | ----------------------------------------- |
-| Uniform Resource Identifier | URI   | `https://domain.tld/user/john.html#posts` |
-| Uniform Resource Name       | URN   | `domain.tld/user/john.html#posts`         |
-| Uniform Resource Locator    | URL   | `https://domain.tld/user/john.html`       |
+| Name                        | Abbr. | Example                                |
+| --------------------------- | ----- | -------------------------------------- |
+| Uniform Resource Identifier | URI   | `https://xyz.tld/user/john.html#posts` |
+| Uniform Resource Name       | URN   | `xyz.tld/user/john.html#posts`         |
+| Uniform Resource Locator    | URL   | `https://xyz.tld/user/john.html`       |

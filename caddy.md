@@ -146,7 +146,7 @@ sudo tee -a /usr/local/etc/Caddyfile << EOF
 example.local:8443 {
   <...>
   tls self_signed
-  # tls /etc/ssl/certs/domain.tld/server/server.pem /etc/ssl/certs/domain.tld/server/server.key
+  # tls /etc/ssl/certs/xyz.tld/server/server.pem /etc/ssl/certs/xyz.tld/server/server.key
 }
 EOF
 
@@ -165,11 +165,11 @@ sudo systemctl restart caddy
 
 ```sh
 #
-sudo hostess add app.domain.tld 127.0.0.1
+sudo hostess add app.xyz.tld 127.0.0.1
 
 #
 caddy -conf <(cat << EOF
-  app.domain.tld
+  app.xyz.tld
   root /var/www/html
   tls off
 EOF
@@ -178,8 +178,8 @@ EOF
 # SSL with Let's Encrypt
 caddy \
   -agree \
-  -email admin@domain.tld \
-  -host app.domain.tld \
+  -email admin@xyz.tld \
+  -host app.xyz.tld \
   -root /var/www/html
 ``` -->
 
@@ -207,7 +207,7 @@ cat << EOF > /usr/local/etc/Caddyfile
 
   gzip
 
-  tls admin@domain.tld
+  tls admin@xyz.tld
 }
 EOF
 ```

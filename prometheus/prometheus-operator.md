@@ -266,7 +266,7 @@ kubectl patch svc prometheus-stack-kube-prom-prometheus \
 kubectl annotate svc prometheus-stack-kube-prom-prometheus \
   service.beta.kubernetes.io/aws-load-balancer-internal='true' \
   service.beta.kubernetes.io/aws-load-balancer-type='nlb' \
-  external-dns.alpha.kubernetes.io/hostname='prometheus.domain.tld'
+  external-dns.alpha.kubernetes.io/hostname='prometheus.xyz.tld'
 
 #
 kubectl get service prometheus-stack-kube-prom-prometheus

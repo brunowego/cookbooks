@@ -170,7 +170,7 @@ TODO
 
 ```sh
 #
-curl -I argocd.domain.tld
+curl -I argocd.xyz.tld
 ```
 
 ```yml
@@ -355,7 +355,7 @@ TODO
 FATA[0001] rpc error: code = InvalidArgument desc = application spec is invalid: InvalidSpecError: repository not accessible: ssh: handshake failed: knownhosts: key mismatch
 ```
 
-- [ArgoCD Repositories](https://argocd.domain.tld/settings/repos)
+- [ArgoCD Repositories](https://argocd.xyz.tld/settings/repos)
 - [GitHub's SSH key fingerprints](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints)
 
 ```sh

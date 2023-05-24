@@ -102,7 +102,7 @@ sudo mkdir -p /etc/drone
 sudo vim /etc/drone/dronerc
 
 REMOTE_DRIVER=gitlab
-REMOTE_CONFIG=http://gitlab.domain.tld?client_id=[client]&client_secret=[secret]
+REMOTE_CONFIG=http://gitlab.xyz.tld?client_id=[client]&client_secret=[secret]
 ```
 
 ```sh

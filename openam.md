@@ -8,7 +8,7 @@ https://github.com/timhberry/openam-flask-decorator/blob/master/routes.py
 <!--
 import openam
 
-am = openam.Openam(openam_url="https://domain.tld/sso/oauth2/authorize")
+am = openam.Openam(openam_url="https://xyz.tld/sso/oauth2/authorize")
 am.authenticate(username="username", password="password")
 am.logout()
 -->

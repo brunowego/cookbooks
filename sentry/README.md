@@ -276,7 +276,7 @@ kubectl exec -it \
   $(kubectl get pod -l 'release=sentry,role=web' -o jsonpath='{.items[0].metadata.name}') \
   -- \
     sentry createuser \
-      --email='bruno.batista@domain.tld' \
+      --email='bruno.batista@xyz.tld' \
       --password='Pa$$w0rd!' \
       --no-input \
       --superuser
@@ -526,10 +526,10 @@ docker run -d \
   -e SENTRY_REDIS_DB='0' \
   -e SENTRY_MEMCACHED_HOST='sentry-memcached' \
   -e SENTRY_MEMCACHED_PORT='11211' \
-  -e SENTRY_SERVER_EMAIL='noreply@domain.tld' \
-  -e SENTRY_EMAIL_HOST='smtp.domain.tld' \
+  -e SENTRY_SERVER_EMAIL='noreply@xyz.tld' \
+  -e SENTRY_EMAIL_HOST='smtp.xyz.tld' \
   -e SENTRY_EMAIL_PORT='587' \
-  -e SENTRY_EMAIL_USER='noreply@domain.tld' \
+  -e SENTRY_EMAIL_USER='noreply@xyz.tld' \
   -e SENTRY_EMAIL_PASSWORD='Pa$$w0rd!' \
   -e SENTRY_EMAIL_USE_TLS='true' \
   -e SENTRY_SECRET_KEY='hbUaAougOvKIVOvF4v5cMUzYk1uzIi6C2Ch1SAabJT8xRmIuUEQ4AQWfVe7FiPZ10mAzDt4$' \
@@ -543,7 +543,7 @@ docker run -d \
 docker exec sentry sentry upgrade --noinput
 
 docker exec sentry sentry createuser \
-  --email='admin@domain.tld' \
+  --email='admin@xyz.tld' \
   --password='Pa$$w0rd!' \
   --no-input \
   --superuser

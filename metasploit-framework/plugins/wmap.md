@@ -20,7 +20,7 @@ help
 wmap_sites -l
 
 #
-wmap_sites -a https://domain.tld
+wmap_sites -a https://xyz.tld
 
 #
 wmap_targets -d <id>

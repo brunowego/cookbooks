@@ -93,17 +93,17 @@ sudo mkdir -p /etc/security/keytabs
 ```sh
 sudo tee -a /etc/krb5.conf.d/[domain].conf << EOF
 [libdefaults]
- default_realm = domain.tld
+ default_realm = xyz.tld
 
 [realms]
- DOMAIN.TLD = {
-  kdc = kdc.domain.tld
-  admin_server = kdc.domain.tld
+ xyz.tld = {
+  kdc = kdc.xyz.tld
+  admin_server = kdc.xyz.tld
  }
 
 [domain_realm]
- .domain.tld = domain.tld
- domain.tld = domain.tld
+ .xyz.tld = xyz.tld
+ xyz.tld = xyz.tld
 EOF
 ```
 

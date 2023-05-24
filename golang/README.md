@@ -124,7 +124,7 @@ go tool dist list
 
 #
 go run ./<filename>.go
-go run domain.tld/m
+go run xyz.tld/m
 
 #
 go build ./<filename>.go

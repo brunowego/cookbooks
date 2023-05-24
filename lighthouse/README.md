@@ -47,15 +47,15 @@ lighthouse --help
 
 ```sh
 #
-lighthouse http://domain.tld \
+lighthouse http://xyz.tld \
   -G
 
 #
-lighthouse http://domain.tld \
+lighthouse http://xyz.tld \
   -A
 
 #
-lighthouse http://domain.tld \
+lighthouse http://xyz.tld \
   -GA
 
 #

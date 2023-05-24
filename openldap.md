@@ -99,7 +99,7 @@ homeDirectory: /home/johndoe
 sn: John Doe
 uid: johndoe
 uidNumber: 20001
-email: jdoe@domain.tld
+email: jdoe@xyz.tld
 givenName: John Doe
 loginShell: /bin/bash
 userPassword: {SSHA}NmsaBz0PaHz5WiabxIqxaSBsybxKFfph
@@ -146,7 +146,7 @@ helm install openldap stable/openldap \
   --namespace openldap \
   --set image.tag=1.2.5 \
   --set env.LDAP_ORGANISATION='Example Inc.' \
-  --set env.LDAP_DOMAIN=domain.tld
+  --set env.LDAP_DOMAIN=xyz.tld
   # --set tls.enabled=true \
   # --set tls.secret=openldap.tls-secret
 ```
@@ -205,7 +205,7 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h openldap \
   -e LDAP_ORGANISATION='Example Inc.' \
-  -e LDAP_DOMAIN='domain.tld' \
+  -e LDAP_DOMAIN='xyz.tld' \
   -e LDAP_ADMIN_PASSWORD='admin' \
   -e LDAP_CONFIG_PASSWORD='config' \
   -e LDAP_READONLY_USER='true' \

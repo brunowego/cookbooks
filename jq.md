@@ -61,10 +61,10 @@ jq length <filename>
 jq -r '.users | length' <filename>
 
 # Single line
-jq '.example.email |= "jdoe@domain.tld"' <filename> | sponge <filename>
+jq '.example.email |= "jdoe@xyz.tld"' <filename> | sponge <filename>
 
 # Multiple lines
-jq '.example.name |= "John Doe"' jq '.example.email |= "jdoe@domain.tld"' <filename> | sponge <filename>
+jq '.example.name |= "John Doe"' jq '.example.email |= "jdoe@xyz.tld"' <filename> | sponge <filename>
 
 # Remove
 jq 'del(.example.name, .example.email)' <filename> | sponge <filename>

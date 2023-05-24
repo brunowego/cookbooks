@@ -31,7 +31,7 @@ sudo sed -i '57,60 s/^#//' /opt/apache-druid/conf/druid/_common/common.runtime.p
 ```
 
 ```sh
-sudo sed -i '/^druid.metadata.storage.connector.connectURI/s|jdbc:mysql://db.domain.tld:3306/druid|jdbc:mysql://127.0.0.1:3306/druid|g' /opt/apache-druid/conf/druid/_common/common.runtime.properties
+sudo sed -i '/^druid.metadata.storage.connector.connectURI/s|jdbc:mysql://db.xyz.tld:3306/druid|jdbc:mysql://127.0.0.1:3306/druid|g' /opt/apache-druid/conf/druid/_common/common.runtime.properties
 ```
 
 ```sh

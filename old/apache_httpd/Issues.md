@@ -3,7 +3,7 @@
 ## Cross-Origin Resource Sharing
 
 ```log
-Font from origin 'http://domain.tld' has been blocked from loading by Cross-Origin Resource Sharing policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://domain.tld' is therefore not allowed access.
+Font from origin 'http://xyz.tld' has been blocked from loading by Cross-Origin Resource Sharing policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://xyz.tld' is therefore not allowed access.
 ```
 
 ```sh

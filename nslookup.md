@@ -21,26 +21,26 @@ man nslookup
 
 ```sh
 # Find A record
-nslookup domain.tld
+nslookup xyz.tld
 
 # Find NS records
-nslookup -type=ns domain.tld
+nslookup -type=ns xyz.tld
 
 # Find SOA records
-nslookup -type=soa domain.tld
+nslookup -type=soa xyz.tld
 
 # Find MX records
-nslookup -query=mx domain.tld
+nslookup -query=mx xyz.tld
 
 # Find all available DNS
-nslookup -type=any domain.tld
+nslookup -type=any xyz.tld
 
 # Set port to connect
-nslookup -port=56 domain.tld
+nslookup -port=56 xyz.tld
 
 # Set timeout interval
-nslookup -timeout=20 domain.tld
+nslookup -timeout=20 xyz.tld
 
 # Debug
-nslookup -debug domain.tld
+nslookup -debug xyz.tld
 ```

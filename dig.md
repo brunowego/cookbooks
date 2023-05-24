@@ -31,7 +31,7 @@ dig -h
 
 ```sh
 #
-export DOMAIN='domain.tld'
+export DOMAIN='xyz.tld'
 
 #
 dig "$DOMAIN" +short

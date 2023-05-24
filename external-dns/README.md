@@ -73,7 +73,7 @@ https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/cloud
 helm search repo -l external-dns/external-dns
 
 #
-export DOMAIN='domain.tld'
+export DOMAIN='xyz.tld'
 # export CF_API_TOKEN='<api-token>'
 export CF_API_KEY='<api-key>'
 export CF_API_EMAIL='<email>'
@@ -126,7 +126,7 @@ https://tech.serhatteker.com/post/2021-08/kubernetes-ingress-ssl-dns-cloudflare/
 
 ```sh
 #
-export DOMAIN='domain.tld'
+export DOMAIN='xyz.tld'
 
 #
 cat << EOF | kubectl apply -f -
@@ -271,7 +271,7 @@ EOF
 #
 kubens <namespace>
 
-export DOMAIN='domain.tld'
+export DOMAIN='xyz.tld'
 export SUBDOMAIN='<subdomain>'
 export INGRESS_NAME='<name>'
 
@@ -285,8 +285,8 @@ kubectl annotate ingress "$INGRESS_NAME" 'external-dns.alpha.kubernetes.io/ttl=1
 #### TBD
 
 ```log
-time="2023-01-17T01:53:33Z" level=error msg="Failure in zone domain.tld. [Id: /hostedzone/Z0452713392NDA7C5SB4P]"
-time="2023-01-17T01:53:33Z" level=error msg="InvalidChangeBatch: [RRSet of type TXT with DNS name grafana.domain.tld. is not permitted because a conflicting RRSet of type CNAME with the same DNS name already exists in zone domain.tld., RRSet of type TXT with DNS name n8n.domain.tld. is not permitted because a conflicting RRSet of type CNAME with the same DNS name already exists in zone domain.tld.]\n\tstatus code: 400, request id: <UUID>"
+time="2023-01-17T01:53:33Z" level=error msg="Failure in zone xyz.tld. [Id: /hostedzone/Z0452713392NDA7C5SB4P]"
+time="2023-01-17T01:53:33Z" level=error msg="InvalidChangeBatch: [RRSet of type TXT with DNS name grafana.xyz.tld. is not permitted because a conflicting RRSet of type CNAME with the same DNS name already exists in zone xyz.tld., RRSet of type TXT with DNS name n8n.xyz.tld. is not permitted because a conflicting RRSet of type CNAME with the same DNS name already exists in zone xyz.tld.]\n\tstatus code: 400, request id: <UUID>"
 time="2023-01-17T01:53:33Z" level=error msg="failed to submit all changes for the following zones: [/hostedzone/Z0452713392NDA7C5SB4P]"
 ```
 

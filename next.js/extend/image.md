@@ -15,7 +15,7 @@
 const nextConfig = {
   // ...
   images: {
-    domains: ['assets.domain.tld'],
+    domains: ['assets.xyz.tld'],
   },
 }
 

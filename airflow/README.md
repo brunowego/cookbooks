@@ -81,7 +81,7 @@ airflow:
   - username: admin
     password: admin
     role: Admin
-    email: admin@domain.tld
+    email: admin@xyz.tld
     firstName: admin
     lastName: admin
 

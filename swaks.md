@@ -18,9 +18,9 @@ swaks --help
 
 ```sh
 swaks \
-  -f fromuser@domain.tld \
-  -t touser@domain.tld \
-  -s domain.tld \
+  -f fromuser@xyz.tld \
+  -t touser@xyz.tld \
+  -s xyz.tld \
   -p 587 \
   --auth-user [email] \
   --auth-pass [password]

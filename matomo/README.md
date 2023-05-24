@@ -1619,7 +1619,7 @@ rm -fR /usr/src/matomo
   <p>
     <img
       referrerpolicy="no-referrer-when-downgrade"
-      src="//matomo.domain.tld/matomo.php?idsite=1&amp;rec=1"
+      src="//matomo.xyz.tld/matomo.php?idsite=1&amp;rec=1"
       style="border:0"
       alt=""
     />

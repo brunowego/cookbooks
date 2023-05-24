@@ -61,11 +61,11 @@ git config http.sslVerify false
 ```
 
 ```sh
-git remote add origin "https://gitlab.domain.tld/[username]/flux-get-started.git"
+git remote add origin "https://gitlab.xyz.tld/[username]/flux-get-started.git"
 ```
 
 ```sh
-sed -i "s|github.com/weaveworks/flux-get-started|gitlab.domain.tld/[username]/flux-get-started|" ./releases/ghost.yaml
+sed -i "s|github.com/weaveworks/flux-get-started|gitlab.xyz.tld/[username]/flux-get-started|" ./releases/ghost.yaml
 ```
 
 ```sh
@@ -94,10 +94,10 @@ helm install flux fluxcd/flux \
   --namespace flux \
   --set helmOperator.create=true \
   --set helmOperator.createCRD=false \
-  --set git.url='git@gitlab.domain.tld:[username]/flux-get-started' \
+  --set git.url='git@gitlab.xyz.tld:[username]/flux-get-started' \
   --set git.user='John Doe' \
-  --set git.email='jdoe@domain.tld' \
-  --set-string ssh.known_hosts="$(ssh-keyscan gitlab.domain.tld 2>/dev/null)"
+  --set git.email='jdoe@xyz.tld' \
+  --set-string ssh.known_hosts="$(ssh-keyscan gitlab.xyz.tld 2>/dev/null)"
 ```
 
 ### Status
@@ -117,7 +117,7 @@ fluxctl identity --k8s-fwd-ns flux
 ```
 
 ```sh
-echo -e '[INFO]\thttps://gitlab.domain.tld/[username]/flux-get-started/-/settings/repository'
+echo -e '[INFO]\thttps://gitlab.xyz.tld/[username]/flux-get-started/-/settings/repository'
 ```
 
 ### Logs

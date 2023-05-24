@@ -226,12 +226,12 @@ helm uninstall $(helm ls --all --short) -n $(helm ls --all --short)
 
 ```sh
 # Prefix Image with Registry
-helm inspect values <repo>/<name> | sed 's|repo/image|registry.domain.tld/repo/image|'
+helm inspect values <repo>/<name> | sed 's|repo/image|registry.xyz.tld/repo/image|'
 
 # When install
 helm install <name> <repo>/<name> \
   --namespace <namespace> \
-  -f <(helm inspect values <repo>/<name> | sed 's|repo/image|registry.domain.tld/repo/image|')
+  -f <(helm inspect values <repo>/<name> | sed 's|repo/image|registry.xyz.tld/repo/image|')
 ```
 
 <!-- ####
@@ -500,7 +500,7 @@ Run Helm serve.
 #### Self-signed Certificate
 
 ```log
-Error: Looks like "https://chartmuseum.domain.tld" is not a valid chart repository or cannot be reached: Get https://chartmuseum.domain.tld/index.yaml: x509: certificate signed by unknown authority
+Error: Looks like "https://chartmuseum.xyz.tld" is not a valid chart repository or cannot be reached: Get https://chartmuseum.xyz.tld/index.yaml: x509: certificate signed by unknown authority
 ```
 
 ```sh
@@ -513,14 +513,14 @@ sudo chmod a+w /etc/ssl/{certs,private}/example
 
 ```sh
 openssl s_client \
-  -connect chartmuseum.domain.tld:443 \
+  -connect chartmuseum.xyz.tld:443 \
   -showcerts \
-  -servername chartmuseum.domain.tld < /dev/null 2>/dev/null | \
+  -servername chartmuseum.xyz.tld < /dev/null 2>/dev/null | \
     openssl x509 -outform PEM > /etc/ssl/certs/example/root-ca.pem
 ```
 
 ```sh
-helm repo add --ca-file /etc/ssl/certs/example/root-ca.pem example https://chartmuseum.domain.tld
+helm repo add --ca-file /etc/ssl/certs/example/root-ca.pem example https://chartmuseum.xyz.tld
 ```
 
 <!-- #### Transport Closing

@@ -12,7 +12,7 @@
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h runner \
-  -v /etc/ssl/certs/domain.tld/server:/etc/gitlab-runner/ssl \
+  -v /etc/ssl/certs/xyz.tld/server:/etc/gitlab-runner/ssl \
   -v gitlab-runner-data:/home/gitlab-runner\
   -v gitlab-runner-config:/etc/gitlab-runner \
   -v /var/run/docker.sock:/var/run/docker.sock:ro \
@@ -34,7 +34,7 @@ docker exec -i gitlab-runner gitlab-runner register \
   --docker-volumes '/var/run/docker.sock:/var/run/docker.sock' \
   --docker-network-mode bridge \
   --tls-ca-file /etc/gitlab-runner/ssl/server.pem \
-  --docker-extra-hosts=gitlab.domain.tld:$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' gitlab-ce)
+  --docker-extra-hosts=gitlab.xyz.tld:$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' gitlab-ce)
 ```
 
 ```sh
@@ -54,7 +54,7 @@ docker volume rm gitlab-runner-data gitlab-runner-config
 #### Missing hostname in certificate
 
 ```log
-ERROR: Registering runner... failed                 runner=t0ken status=couldn't execute POST against https://gitlab-ce/api/v4/runners: Post https://gitlab-ce/api/v4/runners: x509: certificate is valid for domain.tld, *.domain.tld, localhost, not gitlab-ce
+ERROR: Registering runner... failed                 runner=t0ken status=couldn't execute POST against https://gitlab-ce/api/v4/runners: Post https://gitlab-ce/api/v4/runners: x509: certificate is valid for xyz.tld, *.xyz.tld, localhost, not gitlab-ce
 ```
 
 Add `gitlab-ce` to `mkcert`.

@@ -5,11 +5,11 @@
 ### Trusted Origins
 
 ```log
-CSRF Failed: Referer checking failed - https://sentry.domain.tld/organizations/example/projects/new/ does not match any trusted origins.
+CSRF Failed: Referer checking failed - https://sentry.xyz.tld/organizations/example/projects/new/ does not match any trusted origins.
 ```
 
 ```py
-CSRF_TRUSTED_ORIGINS = ['domain.tld']
+CSRF_TRUSTED_ORIGINS = ['xyz.tld']
 # or
 CSRF_TRUSTED_ORIGINS = list(filter(None, os.environ.get('CSRF_TRUSTED_ORIGINS', '').split(' ')))
 ```

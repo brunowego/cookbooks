@@ -10,7 +10,7 @@ cache_dir ufs /var/spool/squid3 100 16 256
 ```
 
 ```sh
-git remote add dokku dokku@domain.tld:squid
+git remote add dokku dokku@xyz.tld:squid
 git push dokku master
 ```
 

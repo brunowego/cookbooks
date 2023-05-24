@@ -18,14 +18,14 @@ docker volume create docker-mailserver-logs
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h mail \
-  --domainname domain.tld \
+  --domainname xyz.tld \
   -v docker-mailserver-data:/var/mail \
   -v docker-mailserver-state:/var/mail-state \
   -v docker-mailserver-logs:/var/log/mail \
-  -e OVERRIDE_HOSTNAME='mail.domain.tld' \
+  -e OVERRIDE_HOSTNAME='mail.xyz.tld' \
   -e DMS_DEBUG='0' \
   -e ONE_DIR='0' \
-  -e POSTMASTER_ADDRESS='postmaster@domain.tld' \
+  -e POSTMASTER_ADDRESS='postmaster@xyz.tld' \
   -e ENABLE_CLAMAV='0' \
   -e ENABLE_FAIL2BAN='0' \
   -e ENABLE_MANAGESIEVE='' \
@@ -44,7 +44,7 @@ docker run -d \
 
 ```sh
 docker exec -i \
-  -e MAIL_USER='admin@domain.tld' \
+  -e MAIL_USER='admin@xyz.tld' \
   -e MAIL_PASS='Pa$$w0rd!' \
   docker-mailserver /bin/sh << \EOSHELL
 mkdir -p /tmp/docker-mailserver
@@ -87,9 +87,9 @@ openssl s_client \
 ```
 
 ```txt
-EHLO mail.domain.tld
-MAIL FROM: <fromuser@domain.tld>
-RCPT TO: <touser@domain.tld>
+EHLO mail.xyz.tld
+MAIL FROM: <fromuser@xyz.tld>
+RCPT TO: <touser@xyz.tld>
 DATA
 Subject: Sending an email using telnet
 

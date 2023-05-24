@@ -182,9 +182,9 @@ telnet "mailhog.${DOMAIN}" 1025
 ```
 
 ```txt
-EHLO domain.tld
-MAIL FROM: <fromuser@domain.tld>
-RCPT TO: <touser@domain.tld>
+EHLO xyz.tld
+MAIL FROM: <fromuser@xyz.tld>
+RCPT TO: <touser@xyz.tld>
 DATA
 Subject: Sending an email using telnet
 

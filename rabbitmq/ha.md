@@ -16,7 +16,7 @@ kubectl create ns rabbitmq-ha
 helm install rabbitmq-ha stable/rabbitmq-ha \
   --namespace rabbitmq-ha \
   --set ingress.enabled=true \
-  --set ingress.hostName=rabbitmq.domain.tld
+  --set ingress.hostName=rabbitmq.xyz.tld
 ```
 
 ### Logs
@@ -38,8 +38,8 @@ nslookup rabbitmq-ha.rabbitmq-ha.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 rabbitmq.domain.tld +short
-nslookup rabbitmq.domain.tld 10.96.0.10
+dig @10.96.0.10 rabbitmq.xyz.tld +short
+nslookup rabbitmq.xyz.tld 10.96.0.10
 ```
 
 ### Secret

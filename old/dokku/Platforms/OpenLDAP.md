@@ -9,7 +9,7 @@ git push dokku master
 
 ```sh
 dokku config:set openldap SLAPD_PASSWORD=admin \
-SLAPD_DOMAIN=ldap.domain.tld
+SLAPD_DOMAIN=ldap.xyz.tld
 
 dokku config openldap
 
@@ -17,7 +17,7 @@ dokku bind:create openldap 389
 ```
 
 ```ini
-Host: ldap.domain.tld
+Host: ldap.xyz.tld
 Base DN: dc=ldap,dc=example,dc=com
 
 User DN: cn=admin,dc=ldap,dc=example,dc=com

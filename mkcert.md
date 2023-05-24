@@ -46,25 +46,25 @@ mkcert -help
 
 ```sh
 # Darwin
-sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/domain.tld
+sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/xyz.tld
 
 # Linux
-sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/domain.tld
+sudo install -dm 755 -o "$USER" -g staff /etc/ssl/certs/xyz.tld
 
 #
-mkdir -p /etc/ssl/certs/domain.tld/{ca,server,client}
+mkdir -p /etc/ssl/certs/xyz.tld/{ca,server,client}
 
 #
-CAROOT=/etc/ssl/certs/domain.tld/ca \
+CAROOT=/etc/ssl/certs/xyz.tld/ca \
   mkcert -install
 
 #
-CAROOT=/etc/ssl/certs/domain.tld/ca \
+CAROOT=/etc/ssl/certs/xyz.tld/ca \
   mkcert \
-    -cert-file /etc/ssl/certs/domain.tld/server/server.pem \
-    -key-file /etc/ssl/certs/domain.tld/server/server.key \
-    domain.tld \
-    '*.domain.tld' \
+    -cert-file /etc/ssl/certs/xyz.tld/server/server.pem \
+    -key-file /etc/ssl/certs/xyz.tld/server/server.key \
+    xyz.tld \
+    '*.xyz.tld' \
     $(ip route get 1 | awk '{print $NF;exit}') \
     localhost \
     127.0.0.1 \
@@ -72,7 +72,7 @@ CAROOT=/etc/ssl/certs/domain.tld/ca \
 ```
 
 ```sh
-sudo hostess add app.domain.tld 127.0.0.1
+sudo hostess add app.xyz.tld 127.0.0.1
 ```
 
 ### Tips
@@ -82,8 +82,8 @@ sudo hostess add app.domain.tld 127.0.0.1
 ```sh
 http-server \
   -S \
-  -C /etc/ssl/certs/domain.tld/server/server.pem \
-  -K /etc/ssl/certs/domain.tld/server/server.key
+  -C /etc/ssl/certs/xyz.tld/server/server.pem \
+  -K /etc/ssl/certs/xyz.tld/server/server.key
 ```
 
 <!-- #### mitmproxy
@@ -93,16 +93,16 @@ mitmdump \
   -p 443 \
   --mode reverse:http://127.0.0.1:8000 \
   --no-http2 \
-  --certs /etc/ssl/certs/domain.tld/server/server.pem
+  --certs /etc/ssl/certs/xyz.tld/server/server.pem
 ``` -->
 
 #### Caddy
 
 ```sh
 caddy -conf <(cat << EOF
-  app.domain.tld
+  app.xyz.tld
   root /var/www/html
-  tls /etc/ssl/certs/domain.tld/server/server.pem /etc/ssl/certs/domain.tld/server/server.key
+  tls /etc/ssl/certs/xyz.tld/server/server.pem /etc/ssl/certs/xyz.tld/server/server.key
 EOF
 )
 ```
@@ -111,13 +111,13 @@ EOF
 docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
   -h curl \
-  -v /etc/ssl/certs/domain.tld:/etc/ssl/certs/domain.tld \
-  --add-host app.domain.tld:"$(ip route get 1 | awk '{print $NF;exit}')" \
+  -v /etc/ssl/certs/xyz.tld:/etc/ssl/certs/xyz.tld \
+  --add-host app.xyz.tld:"$(ip route get 1 | awk '{print $NF;exit}')" \
   --name curl \
   docker.io/curlimages/curl:7.67.0 \
-    --cacert /etc/ssl/certs/domain.tld/ca/rootCA.pem \
-    --cert /etc/ssl/certs/domain.tld/client/client.pem \
-    --key /etc/ssl/certs/domain.tld/client/client.key \
+    --cacert /etc/ssl/certs/xyz.tld/ca/rootCA.pem \
+    --cert /etc/ssl/certs/xyz.tld/client/client.pem \
+    --key /etc/ssl/certs/xyz.tld/client/client.key \
     -v \
-    https://app.domain.tld:2015
+    https://app.xyz.tld:2015
 ```

@@ -4,7 +4,7 @@
 
 ```gql
 mutation CreateUser {
-  createUser(input: { email: "admin@domain.tld", username: "admin" }) {
+  createUser(input: { email: "admin@xyz.tld", username: "admin" }) {
     id
   }
 }

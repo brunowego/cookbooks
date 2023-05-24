@@ -20,7 +20,7 @@ EXPOSE 53/udp 80/tcp
 ```
 
 ```sh
-git remote add dokku dokku@domain.tld:webmin
+git remote add dokku dokku@xyz.tld:webmin
 git push dokku master
 ```
 
@@ -52,8 +52,8 @@ Servers > BIND DNS Server > Create master zone
 ```txt
 Zone type: Reverse (Addresses to Names)
 Domain name / Network: 172.17.42.1
-Master server: ns.domain.tld
-Email address: admin@domain.tld
+Master server: ns.xyz.tld
+Email address: admin@xyz.tld
 ```
 
 #### Domain
@@ -64,9 +64,9 @@ Servers > BIND DNS Server > Create master zone
 
 ```txt
 Zone type: Forward (Names to Addresses)
-Domain name / Network: domain.tld
-Master server: ns.domain.tld
-Email address: admin@domain.tld
+Domain name / Network: xyz.tld
+Master server: ns.xyz.tld
+Email address: admin@xyz.tld
 ```
 
 Address
@@ -80,7 +80,7 @@ Name Alias
 
 ```txt
 Name: www
-Real Name: domain.tld
+Real Name: xyz.tld
 ```
 
 Apply Configuration

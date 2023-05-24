@@ -40,7 +40,7 @@ EOF
 FLASK_ENV=development flask run
 
 #
-sudo hostess add app.domain.tld 127.0.0.1
+sudo hostess add app.xyz.tld 127.0.0.1
 ```
 
 ```sh
@@ -51,7 +51,7 @@ npm install axios
 cat << EOF > ./app.js
 const axios = require('axios');
 
-axios.get('http://app.domain.tld:5000')
+axios.get('http://app.xyz.tld:5000')
   .then(response => console.log(response))
   .catch(error => console.log(error));
 EOF

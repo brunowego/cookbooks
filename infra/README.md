@@ -139,15 +139,15 @@ server:
 
   config:
     grants:
-      - user: admin@domain.tld
+      - user: admin@xyz.tld
         role: admin
         resource: infra
-      - user: admin@domain.tld
+      - user: admin@xyz.tld
         role: edit
         resource: kubernetes.minikube
 
     users:
-      - name: admin@domain.tld
+      - name: admin@xyz.tld
         password: admin
 EOF
 )

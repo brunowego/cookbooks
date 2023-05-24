@@ -43,7 +43,7 @@ docker run -d \
   -e REDIS_PORT='6379' \
   -e REDIS_PASS='postfix' \
   -e RSPAMD_PASSWORD='Pa$$w0rd!' \
-  -e DOMAIN='domain.tld' \
+  -e DOMAIN='xyz.tld' \
   -p 25:25 \
   -p 143:143 \
   --name mailserver \
@@ -84,7 +84,7 @@ docker run -d \
 
    - Create superadmin account
      - Setup password: `s3cr3t`
-     - Admin: `admin@domain.tld`
+     - Admin: `admin@xyz.tld`
      - Password: `s3cr3t`
      - Password (again): `s3cr3t`
      - Add Admin
@@ -96,7 +96,7 @@ docker run -d \
    ```
 
 3. Domain List -> New Domain -> Add a new domain
-   - Domain: `domain.tld`
+   - Domain: `xyz.tld`
    - Add Domain
 4. Virtual List -> Add Mailbox -> Create a new mailbox for your domain.
    - Username: `contact`
@@ -105,7 +105,7 @@ docker run -d \
    - Name: Contact
    - Add Mailbox
 5. Send Email
-   - To: `contact@domain.tld`
+   - To: `contact@xyz.tld`
    - Send Message
 
 ### Remove

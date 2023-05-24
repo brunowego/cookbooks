@@ -215,8 +215,8 @@ docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h gitlab \
   -e GITLAB_OMNIBUS_CONFIG="$(cat << \EOF
-external_url 'https://gitlab.domain.tld'
-registry_external_url 'https://registry.domain.tld'
+external_url 'https://gitlab.xyz.tld'
+registry_external_url 'https://registry.xyz.tld'
 
 letsencrypt['enable'] = false
 
@@ -245,7 +245,7 @@ gitlab_rails['db_password'] = 'gitlab'
 gitlab_rails['db_database'] = 'gitlab'
 EOF
 )" \
-  -v /etc/ssl/certs/domain.tld/server:/etc/gitlab/ssl \
+  -v /etc/ssl/certs/xyz.tld/server:/etc/gitlab/ssl \
   -v gitlab-config:/etc/gitlab \
   -v gitlab-logs:/var/log/gitlab \
   -v gitlab-data:/var/opt/gitlab \
@@ -262,11 +262,11 @@ EOF
 
 ```sh
 #
-sudo hostess add gitlab.domain.tld 127.0.0.1
-sudo hostess add registry.domain.tld 127.0.0.1
+sudo hostess add gitlab.xyz.tld 127.0.0.1
+sudo hostess add registry.xyz.tld 127.0.0.1
 
 #
-echo -e '[INFO]\thttp://gitlab.domain.tld:8080'
+echo -e '[INFO]\thttp://gitlab.xyz.tld:8080'
 ```
 
 | Login  | Password    |
@@ -303,7 +303,7 @@ curl -i "PRIVATE-TOKEN: ${GITLAB_PRIVATE_TOKEN}" "https://${{GITLAB_URL}}/api/v4
    - Account
      - Name: Bot
      - Username: bot
-     - Email: bot@domain.tld
+     - Email: bot@xyz.tld
    - Access
      - Projects limit: 0
      - Uncheck: Can create group
@@ -347,7 +347,7 @@ curl -i "PRIVATE-TOKEN: ${GITLAB_PRIVATE_TOKEN}" "https://${{GITLAB_URL}}/api/v4
 #
 export GITLAB_PRIVATE_TOKEN='xyz'
 export GITLAB_PROJECT_ID='123'
-export GITLAB_DOMAIN='gitlab.domain.tld'
+export GITLAB_DOMAIN='gitlab.xyz.tld'
 
 #
 curl \
@@ -377,7 +377,7 @@ sudo yum -y install perl-Text-CSV perl-Crypt-SSLeay
 wget https://gitlab.com/emobix/get-all-gitlab-issues-as-csv/-/raw/master/get-all-project-issues.pl
 
 #
-sed -i 's|gitlab.com|gitlab.domain.tld|' ./get-all-project-issues.pl
+sed -i 's|gitlab.com|gitlab.xyz.tld|' ./get-all-project-issues.pl
 
 # FIX for Darwin
 sed -i 's|/usr/bin/perl|/usr/local/bin/perl|' ./get-all-project-issues.pl

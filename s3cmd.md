@@ -21,8 +21,8 @@ brew install s3cmd
 ```sh
 cat << EOF > ~/.s3cfg
 [default]
-host_base = https://minio.domain.tld
-host_bucket = https://minio.domain.tld
+host_base = https://minio.xyz.tld
+host_bucket = https://minio.xyz.tld
 use_https = True
 
 access_key = [access-key]

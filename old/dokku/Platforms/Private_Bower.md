@@ -110,7 +110,7 @@ git push dokku master
 ##### Dokku
 
 ```sh
-dokku config:set bower BOWER_URL=bower.domain.tld
+dokku config:set bower BOWER_URL=bower.xyz.tld
 
 dokku volume:create bower /home/private-bower/data
 dokku volume:link bower bower
@@ -124,6 +124,6 @@ touch .bowerrc || exit
 
 ```json
 {
-  "registry": "http://bower.domain.tld"
+  "registry": "http://bower.xyz.tld"
 }
 ```

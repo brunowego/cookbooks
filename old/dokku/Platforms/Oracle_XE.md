@@ -3,7 +3,7 @@
 ```sh
 git clone git@github.com:MaksymBilenko/docker-oracle-xe-11g.git oracle
 cd oracle
-git remote add dokku dokku@domain.tld:oracle
+git remote add dokku dokku@xyz.tld:oracle
 git push dokku master
 ```
 

@@ -35,7 +35,7 @@ resource "keycloak_group" "dba" {
 resource "keycloak_user" "johndoe" {
   realm_id       = keycloak_realm.org.id
   username       = "johndoe"
-  email          = "johndoe@domain.tld"
+  email          = "johndoe@xyz.tld"
   first_name     = "John"
   last_name      = "Doe"
   email_verified = true

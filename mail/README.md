@@ -21,11 +21,11 @@ mail
 ### Test
 
 ```sh
-echo 'Hello, this is an email sent by using the mail command. Your friend, Me!' | mail -s 'Sending an email using mail' touser@domain.tld
+echo 'Hello, this is an email sent by using the mail command. Your friend, Me!' | mail -s 'Sending an email using mail' touser@xyz.tld
 ```
 
 ```sh
-cat << EOMAIL | mail -s 'Sending an email using mail' touser@domain.tld
+cat << EOMAIL | mail -s 'Sending an email using mail' touser@xyz.tld
 Hello, This is an email sent by using the mail command.
 
 Your friend,

@@ -166,7 +166,7 @@ metadata:
     alb.ingress.kubernetes.io/wafv2-acl-arn: $AWS_WAF_ACL_ARN
 spec:
   rules:
-  - host: my-app.domain.tld
+  - host: my-app.xyz.tld
     http:
       paths:
       - backend:

@@ -25,7 +25,7 @@ EXPOSE 8080
 git init
 git add ./
 git commit -m "Initial commit"
-git remote add dokku dokku@domain.tld:jenkins
+git remote add dokku dokku@xyz.tld:jenkins
 git push dokku master
 ```
 

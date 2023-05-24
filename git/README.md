@@ -424,7 +424,7 @@ git pull origin master --allow-unrelated-histories
 <!-- #### Host Resolve
 
 ```log
-fatal: unable to access 'https://domain.tld/organization/repository.git/': Could not resolve host: <hostname>
+fatal: unable to access 'https://xyz.tld/organization/repository.git/': Could not resolve host: <hostname>
 ```
 
 TODO -->
@@ -491,7 +491,7 @@ export GIT_EDITOR=vim
 
 ```log
 error: src refspec project does not match any.
-error: failed to push some refs to 'project@domain.tld:project'
+error: failed to push some refs to 'project@xyz.tld:project'
 ```
 
 ```sh

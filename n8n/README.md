@@ -214,9 +214,9 @@ N8N_SMTP_PORT=587
 N8N_SMTP_SSL='false'
 N8N_SMTP_USER=
 N8N_SMTP_PASS=
-N8N_SMTP_SENDER=no-reply@domain.tld
+N8N_SMTP_SENDER=no-reply@xyz.tld
 
-N8N_EDITOR_BASE_URL: https://n8n.domain.tld
+N8N_EDITOR_BASE_URL: https://n8n.xyz.tld
 -->
 
 ### Logs

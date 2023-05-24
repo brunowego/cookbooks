@@ -149,7 +149,7 @@ Add to `./app/src/main/res/xml/network_security_config.xml`:
 <network-security-config>
     <...>
     <domain-config cleartextTrafficPermitted="true">
-        <domain includeSubdomains="true">app.domain.tld</domain>
+        <domain includeSubdomains="true">app.xyz.tld</domain>
         <trust-anchors>
             <certificates src="user" />
         </trust-anchors>

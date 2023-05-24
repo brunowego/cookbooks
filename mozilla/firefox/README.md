@@ -115,8 +115,8 @@ firefox --search [text]
 firefox --safe-mode
 
 #
-firefox --headless --screenshot {{path/to/output_file.png}} {{https://domain.tld/}}
+firefox --headless --screenshot {{path/to/output_file.png}} {{https://xyz.tld/}}
 
 #
-firefox --profile {{path/to/directory}} {{https://domain.tld/}}
+firefox --profile {{path/to/directory}} {{https://xyz.tld/}}
 ```

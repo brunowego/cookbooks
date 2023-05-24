@@ -31,7 +31,7 @@ export const defaultSeoProps: DefaultSeoProps = {
   // title: 'Page Title',
   defaultTitle: 'Company — Slogan',
   description: 'A short description goes here.',
-  canonical: 'https://domain.tld',
+  canonical: 'https://xyz.tld',
 }
 ```
 

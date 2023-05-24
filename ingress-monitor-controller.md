@@ -122,7 +122,7 @@ metadata:
   name: app
 spec:
   forceHttps: true
-  url: https://app.domain.tld
+  url: https://app.xyz.tld
   uptimeRobotConfig:
     interval: 60
     alertContacts: "[alert-contact]"

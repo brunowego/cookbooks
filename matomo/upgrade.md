@@ -77,12 +77,12 @@ const puppeteer = require('/usr/local/lib/node_modules/puppeteer');
   await page.$eval('#login-0', el => el.value = 'admin');
   await page.$eval('#password-0', el => el.value = 'Pa$$w0rd!');
   await page.$eval('#password_bis-0', el => el.value = 'Pa$$w0rd!');
-  await page.$eval('#email-0', el => el.value = 'admin@domain.tld');
+  await page.$eval('#email-0', el => el.value = 'admin@xyz.tld');
   await page.$eval('#submit-0', el => el.click());
 
   //
   await page.$eval('#siteName-0', el => el.value = 'Example');
-  await page.$eval('#url-0', el => el.value = 'http://domain.tld');
+  await page.$eval('#url-0', el => el.value = 'http://xyz.tld');
   await page.select('#timezone-0', 'America/Sao_Paulo');
   await page.$eval('#submit-0', el => el.click());
 

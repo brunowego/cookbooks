@@ -168,8 +168,8 @@ openssl req \
   -out '/etc/ssl/certs/example/root-ca.crt' \
   -nodes \
   -keyout '/etc/ssl/private/example/root-ca.key' \
-  -config <(cat $(openssl version -d | awk '{print $NF}' | tr -d '"')/openssl.cnf <(printf '\n[ san ]\nsubjectAltName=DNS:domain.tld,DNS:*.domain.tld')) \
-  -subj '/C=BR/ST=Sao Paulo/L=Sao Paulo/O=Example Inc./OU=IT Department/CN=*.domain.tld' \
+  -config <(cat $(openssl version -d | awk '{print $NF}' | tr -d '"')/openssl.cnf <(printf '\n[ san ]\nsubjectAltName=DNS:xyz.tld,DNS:*.xyz.tld')) \
+  -subj '/C=BR/ST=Sao Paulo/L=Sao Paulo/O=Example Inc./OU=IT Department/CN=*.xyz.tld' \
   -newkey rsa:2048 \
   -x509 \
   -sha256 \

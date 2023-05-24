@@ -39,10 +39,10 @@ patches:
   value: external-nginx
 - op: replace
   path: /spec/rules/0/host
-  value: storybook.domain.tld
+  value: storybook.xyz.tld
 - op: add
   path: /spec/tls/0/hosts/0
-  value: storybook.domain.tld
+  value: storybook.xyz.tld
 - op: add
   path: /spec/tls/0/secretName
   value: storybook.tls-secret

@@ -201,7 +201,7 @@ Kubernetes PVCs resizing only allows to expand volumes, not to decrease them. If
 #### Git SSL no Verify
 
 ```log
-stderr: fatal: unable to access 'https://gitlab.domain.tld/[group]/[project].git/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+stderr: fatal: unable to access 'https://gitlab.xyz.tld/[group]/[project].git/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
 ```
 
 1. Manage Jenkins
@@ -225,7 +225,7 @@ kubectl exec -it \
 
 ```log
 stderr: remote: The project you were looking for could not be found.
-fatal: repository 'https://gitlab.domain.tld/[group]/[project].git/' not found
+fatal: repository 'https://gitlab.xyz.tld/[group]/[project].git/' not found
 ```
 
 Try add user to group.
@@ -241,25 +241,25 @@ Url is blocked: Host cannot be resolved or invalid
 3. Network
 4. Outbound requests
 5. Whitelist to allow requests to the local network from hooks and services
-   - Add: jenkins.domain.tld
+   - Add: jenkins.xyz.tld
 
 #### Unknown Host Exception
 
 ##### Nexus
 
 ```log
-java.net.UnknownHostException: nexus.domain.tld: Temporary failure in name resolution
+java.net.UnknownHostException: nexus.xyz.tld: Temporary failure in name resolution
 ```
 
-Add [https://nexus.domain.tld](https://nexus.domain.tld) to [CoreDNS](/coredns.md).
+Add [https://nexus.xyz.tld](https://nexus.xyz.tld) to [CoreDNS](/coredns.md).
 
 ##### GitLab CE
 
 ```log
-Client error: gitlab.domain.tld: Temporary failure in name resolution
+Client error: gitlab.xyz.tld: Temporary failure in name resolution
 ```
 
-Add [https://gitlab.domain.tld](https://gitlab.domain.tld) to [CoreDNS](/coredns.md).
+Add [https://gitlab.xyz.tld](https://gitlab.xyz.tld) to [CoreDNS](/coredns.md).
 
 ##### Jenkins
 
@@ -267,7 +267,7 @@ Add [https://gitlab.domain.tld](https://gitlab.domain.tld) to [CoreDNS](/coredns
 Url is blocked: Host cannot be resolved or invalid
 ```
 
-Add [https://jenkins.domain.tld](https://jenkins.domain.tld) to [CoreDNS](/coredns.md).
+Add [https://jenkins.xyz.tld](https://jenkins.xyz.tld) to [CoreDNS](/coredns.md).
 
 #### Sun Cert Path Builder Exception
 
@@ -313,7 +313,7 @@ kubectl exec -it \
 #### SSL Peer Unverified Exception
 
 ```log
-javax.net.ssl.SSLPeerUnverifiedException: Certificate for <subdomain.domain.tld> doesn't match any of the subject alternative names: []
+javax.net.ssl.SSLPeerUnverifiedException: Certificate for <subdomain.xyz.tld> doesn't match any of the subject alternative names: []
 ```
 
 ```sh
@@ -470,12 +470,12 @@ EOF
 2. Configure System
 3. Gitlab -> GitLab connections
    - Connection name: GitLab CE Example
-   - Gitlab host URL: [https://gitlab.domain.tld](https://gitlab.domain.tld)
+   - Gitlab host URL: [https://gitlab.xyz.tld](https://gitlab.xyz.tld)
    - Credentials: Add -> [Jenkins](https://github.com/jenkinsci/gitlab-plugin#jenkins-to-gitlab-authentication)
      - Domain: Global credentials (unrestricted)
      - Kind: GitLab API token
      - Scope: Global (Jenkins, nodes, items, all child items, etc)
-     - API token: Create on [https://gitlab.domain.tld/profile/personal_access_tokens](https://gitlab.domain.tld/profile/personal_access_tokens)
+     - API token: Create on [https://gitlab.xyz.tld/profile/personal_access_tokens](https://gitlab.xyz.tld/profile/personal_access_tokens)
        - Name: jenkins
        - Scopes: api
      - ID: gitlab-ce-token
@@ -543,7 +543,7 @@ Access GitLab project:
    - (Select) Nexus Repository Manager 3.x Server
    - Display Name: NXRM OSS Example
    - Server ID: nxrm-oss-example
-   - Server URL: [https://nexus.domain.tld](https://nexus.domain.tld)
+   - Server URL: [https://nexus.xyz.tld](https://nexus.xyz.tld)
    - Credentials: Add -> Jenkins
      - Domain: Global credentials (unrestricted)
      - Kind: Username with password

@@ -8,7 +8,7 @@ https://antonputra.com/amazon/create-eks-cluster-using-terraform-modules/
 
 ```sh
 #
-export DOMAIN='domain.tld'
+export DOMAIN='xyz.tld'
 
 #
 kubens '<nemaspace>'

@@ -58,6 +58,6 @@ variable "cloudflare_email" {
 variable "cloudflare_zone_name" {
   description = "The Cloudflare zone name to use for authentication"
   type        = string
-  default     = "domain.tld"
+  default     = "xyz.tld"
 }
 ```

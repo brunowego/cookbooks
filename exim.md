@@ -52,9 +52,9 @@ telnet 127.0.0.1 25
 AUTH LOGIN
 
 ```txt
-EHLO mail.domain.tld
-MAIL FROM: <noreply@domain.tld>
-RCPT TO: <<username>@domain.tld>
+EHLO mail.xyz.tld
+MAIL FROM: <noreply@xyz.tld>
+RCPT TO: <<username>@xyz.tld>
 DATA
 Subject: Sending an email using exim
 

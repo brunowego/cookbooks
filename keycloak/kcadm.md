@@ -163,7 +163,7 @@ kcadm.sh create clients \
 kcadm.sh create users \
   -r "$KEYCLOAK_REALM" \
   -s username='johndoe' \
-  -s email='johndoe@domain.tld' \
+  -s email='johndoe@xyz.tld' \
   -s firstName='John' \
   -s lastName='Doe' \
   -s enabled=true

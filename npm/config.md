@@ -11,7 +11,7 @@ npm config set save-prefix '~'
 npm config get save-prefix
 
 # Registry
-npm config set registry 'https://registry.domain.tld/'
+npm config set registry 'https://registry.xyz.tld/'
 npm config get registry
 
 # License

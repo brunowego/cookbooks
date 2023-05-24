@@ -80,7 +80,7 @@ export OIDC_CLIENT_NAME='OpenID Connect Playground'
 export OIDC_CLIENT_SECRET='OTFhZjUxOGVlMmJkMzcxYzA1'
 
 #
-export USER_EMAIL='admin@domain.tld'
+export USER_EMAIL='admin@xyz.tld'
 export USER_HASH="$(bcrypt-tool hash 'Pa$$w0rd!')"
 export USER_NAME='admin'
 export USER_ID='168855e4-cc6d-11eb-b8bc-0242ac130003' # UUID
@@ -202,7 +202,7 @@ export OIDC_CLIENT_NAME='OpenID Connect Playground'
 export OIDC_CLIENT_SECRET='OTFhZjUxOGVlMmJkMzcxYzA1'
 
 #
-export USER_EMAIL='admin@domain.tld'
+export USER_EMAIL='admin@xyz.tld'
 export USER_HASH="$(bcrypt-tool hash 'Pa$$w0rd!')"
 export USER_NAME='admin'
 export USER_ID='168855e4-cc6d-11eb-b8bc-0242ac130003' # UUID
@@ -336,7 +336,7 @@ curl -s "${DEX_URL}/.well-known/openid-configuration" | jq '.jwks_uri'
 #
 export DEX_ACCESS_TOKEN=$(curl -s \
   -d 'grant_type=password' \
-  -d 'username=admin@domain.tld' \
+  -d 'username=admin@xyz.tld' \
   -d 'password=password' \
   -d 'scope=openid' \
   -d 'client_id=postman' \

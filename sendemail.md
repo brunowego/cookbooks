@@ -39,7 +39,7 @@ Me!
 EOF
 
 sendemail \
-  -f 'noreply@domain.tld' \
+  -f 'noreply@xyz.tld' \
   -t '[receiver]@[domain.com]' \
   -u 'Sending an email using sendemail' \
   -s 'smtp.gmail.com:587' \
@@ -57,7 +57,7 @@ Your friend,
 Me!
 EOF | \
   sendemail \
-    -f 'noreply@domain.tld' \
+    -f 'noreply@xyz.tld' \
     -t '[receiver]@[domain.com]' \
     -u 'Sending an email using sendemail' \
     -s 'smtp.gmail.com:587' \

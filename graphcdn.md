@@ -12,7 +12,7 @@ npx graphcdn push
 #
 cat << EOF > ./graphcdn.yml
 name: devparty
-originUrl: 'https://domain.tld/api/graphql'
+originUrl: 'https://xyz.tld/api/graphql'
 scopes:
   AUTHENTICATED: 'cookie:devparty_session|header:authorization'
 rules:
@@ -43,7 +43,7 @@ rules:
   swr: 900
   scope: AUTHENTICATED
   description: Cache Frequent queries
-schema: 'https://domain.tld/api/graphql'
+schema: 'https://xyz.tld/api/graphql'
 passThroughOnly: false
 rootTypeNames:
   query: Query

@@ -252,13 +252,13 @@ DATABASES = {
 # 2.x
 ./manage.py createsuperuser \
   --username admin \
-  --email admin@domain.tld
+  --email admin@xyz.tld
 
 # 3.x
 DJANGO_SUPERUSER_PASSWORD='Pa$$w0rd!' ./manage.py createsuperuser \
   --no-input \
   --username admin \
-  --email admin@domain.tld
+  --email admin@xyz.tld
 ```
 
 #### Running
@@ -606,8 +606,8 @@ fi
 
 # Create superuser
 # if [[ "$CREATE_SUPERUSER" = "1" ]]; then
-#     ./manage.py add_admin_user -u admin -p admin -e admin@domain.tld
-#     echo "Admin user created with credentials admin:admin (email: admin@domain.tld)"
+#     ./manage.py add_admin_user -u admin -p admin -e admin@xyz.tld
+#     echo "Admin user created with credentials admin:admin (email: admin@xyz.tld)"
 # fi
 
 # Start server

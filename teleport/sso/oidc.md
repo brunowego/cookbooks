@@ -24,5 +24,5 @@ spec:
   issuer_url: https://<issuer-url>
   scope: [<scope value>]
   claims_to_roles:
-    - {claim: "hd", value: "domain.tld", roles: ["editor"]}
+    - {claim: "hd", value: "xyz.tld", roles: ["editor"]}
 -->

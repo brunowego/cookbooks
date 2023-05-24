@@ -22,7 +22,7 @@ helm install pachyderm stable/pachyderm \
   --set s3.accessKey='minio' \
   --set s3.secretKey='minio123' \
   --set s3.bucketName=pachyderm \
-  --set s3.endpoint=minio.domain.tld
+  --set s3.endpoint=minio.xyz.tld
 ```
 
 ```sh

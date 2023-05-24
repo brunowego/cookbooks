@@ -13,7 +13,7 @@
 import Link from 'next/link'
 
 return (
-  <Link href="https://domain.tld" passHref>
+  <Link href="https://xyz.tld" passHref>
     <a target="_blank" rel="noopener noreferrer">
       Text
     </a>
@@ -28,7 +28,7 @@ import Image from 'next/image'
 
 return (
   <Image
-    src="https://assets.domain.tld/images/logomark.svg"
+    src="https://assets.xyz.tld/images/logomark.svg"
     alt="Company Logomark"
     width={88}
     height={88}

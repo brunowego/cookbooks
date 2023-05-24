@@ -25,5 +25,5 @@ man sendmail
 ## Test
 
 ```sh
-echo 'Subject: Sending an email using sendmail' | sendmail -v touser@domain.tld
+echo 'Subject: Sending an email using sendmail' | sendmail -v touser@xyz.tld
 ```

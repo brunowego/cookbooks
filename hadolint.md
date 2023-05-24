@@ -86,7 +86,7 @@ trunk check --filter hadolint -v <./path/to/dockerfile>
 ```
 
 ```Dockerfile
-LABEL maintainer="John Doe <johndoe@domain.tld>"
+LABEL maintainer="John Doe <johndoe@xyz.tld>"
 ```
 
 <!--

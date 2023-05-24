@@ -51,7 +51,7 @@ server {
 
 	index index.html;
 
-	server_name [domain.tld];
+	server_name [xyz.tld];
 
 	passenger_enabled on;
 	rails_env production;
@@ -71,7 +71,7 @@ server {
 	listen 80;
 	listen [::]:80;
 
-	server_name [domain.tld];
+	server_name [xyz.tld];
 
 	return 302 https://$server_name$request_uri;
 }
@@ -82,7 +82,7 @@ server {
 
 	root /home/deploy/[appname]/public;
 
-	server_name [domain.tld];
+	server_name [xyz.tld];
 
 	passenger_enabled on;
 	rails_env production;
