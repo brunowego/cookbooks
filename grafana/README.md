@@ -171,8 +171,8 @@ ingress:
     - grafana.${DOMAIN}
   ingressClassName: nginx
 
-plugins:
-  - grafana-piechart-panel
+# plugins:
+#   - grafana-piechart-panel
 EOF
 )
 ```
@@ -183,24 +183,6 @@ kubectl port-forward \
   svc/monitoring-grafana \
   8080:80
 -->
-
-### TLS
-
-**Dependencies:** [cert-manager](/cert-manager/cluster-issuer/letsencrypt/local.md)
-
-```sh
-#
-helm upgrade grafana grafana/grafana \
-  --version 6.48.2 \
-  -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values grafana -o yaml -n monitoring) <(cat << EOF
-ingress:
-  tls:
-    - secretName: grafana.tls-secret
-      hosts:
-        - grafana.${DOMAIN}
-EOF
-))
-```
 
 ### Status
 

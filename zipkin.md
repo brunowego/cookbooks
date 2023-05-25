@@ -2,9 +2,9 @@
 
 **Keywords:** Distributed Tracing System
 
-## Alternatives
+## Links
 
-- [Jaeger](/jaeger.md)
+- [Main Website](https://zipkin.io)
 
 ## References
 

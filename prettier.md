@@ -149,3 +149,17 @@ npx prettier --write ./**/*.{css,json,md,mjs,tsx}
 # Using Homebrew
 brew install prettier
 ```
+
+## Issues
+
+### TBD
+
+```log
+["ERROR" - 10:16:25 AM] Failed to resolve a parser, skipping file. If you registered a custom file extension, be sure to configure the parser.
+```
+
+<!--
+https://stackoverflow.com/questions/75542637/prettier-throws-error-failed-to-resolve-a-parser
+-->
+
+TODO

@@ -23,6 +23,7 @@ https://github.com/pixie-io/pixie
 
 - [Apache Skywalking](/apache/skywalking.md)
 - [SigNoz](/signoz/README.md)
+- [Uptrace](/uptrace.md)
 
 <!--
 - [OpenAPM](/openapm.md)

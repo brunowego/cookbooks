@@ -55,7 +55,7 @@ brew services start metabase
 
 ### References
 
-- [Helm Chart](https://github.com/pmint93/helm-charts/tree/master/charts/metabase)
+- [Values](https://github.com/deliveryhero/helm-charts/tree/master/stable/metabase#values)
 
 ### Dependencies
 
@@ -63,12 +63,9 @@ brew services start metabase
 
 ```sh
 #
-kubectl proxy
-
-#
 kubectl port-forward \
   -n postgresql \
-  svc/postgresql-headless \
+  svc/postgresql \
   5432:5432
 
 #
@@ -105,7 +102,15 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 helm install metabase deliveryhero/metabase \
   --version 0.14.3 \
   -f <(cat << EOF
+database:
+  type: postgres
+  connectionURI: postgres://metabase:metabase@postgresql.postgresql.svc:5432/metabase
 
+ingress:
+  enabled: true
+  ingressClassName: nginx
+  hosts:
+    - metabase.${DOMAIN}
 EOF
 )
 ```

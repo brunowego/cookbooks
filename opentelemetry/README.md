@@ -1,4 +1,4 @@
-# OpenTelemetry (OTEL) (Old OpenCensus and OpenTracing)
+# OpenTelemetry (OTel) (Old OpenCensus and OpenTracing)
 
 ## Links
 
@@ -24,6 +24,5 @@
 
 <!--
 https://artifacthub.io/packages/helm/opentelemetry-helm/opentelemetry-operator
-
 https://artifacthub.io/packages/helm/opentelemetry-helm/opentelemetry-collector
 -->

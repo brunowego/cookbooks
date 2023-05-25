@@ -6,7 +6,7 @@
 
 ## Dependencies
 
-- [Kubecost](/kubecost/README.md#helm)
+- [Kubecost](/kubecost/README.md#helm) or [OpenCost](/opencost.md#helm)
 
 ## Installation
 
@@ -27,7 +27,7 @@ kubectl cost -h
 ```sh
 #
 kubectl cost namespace \
-  -N kubecost-system \
+  -N kubecost \
   -A
 ```
 
@@ -43,7 +43,7 @@ kubectl cost namespace \
   --show-memory \
   --show-efficiency=false
 
-kubectl cost namespace -N kubecost-system --window 5d
+kubectl cost namespace -N kubecost --window 5d
 
 #
 kubectl cost namespace \

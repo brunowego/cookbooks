@@ -47,6 +47,12 @@ aws ssm get-parameters-by-path --path '</app/path>'
 
 #### Start Session
 
+<!--
+INSTANCE_ID=$(aws ssm get-parameter --query 'Parameter.Value' --output text --name '/sample-cdk-AuroraServerlessV2/BastionHostEc2InstanceId')
+
+instance-id -> Bastion Host
+-->
+
 ```sh
 #
 aws ssm start-session \

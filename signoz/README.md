@@ -27,7 +27,7 @@ helm repo update
 ```sh
 #
 kubectl create ns signoz
-# kubectl create ns apm
+# kubectl create ns observability
 
 #
 kubens signoz
@@ -47,15 +47,33 @@ frontend:
   ingress:
     enabled: true
     className: nginx
+    # annotations:
+    #   cert-manager.io/cluster-issuer: letsencrypt-issuer
     hosts:
       - host: signoz.${DOMAIN}
         paths:
           - path: /
             pathType: ImplementationSpecific
             port: 3301
+    # tls:
+    #   - secretName: signoz.tls-secret
+    #     hosts:
+    #       - signoz.${DOMAIN}
 EOF
 )
 ```
+
+<!--
+kubectl port-forward \
+  --address 0.0.0.0 \
+  svc/signoz-otel-collector \
+  4317:4317
+
+kubectl port-forward \
+  --address 0.0.0.0 \
+  svc/signoz-otel-collector \
+  4318:4318
+-->
 
 ### Status
 

@@ -161,6 +161,12 @@ code --install-extension golang.Go
 jq '."recommendations" += ["golang.Go"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
+**Configuration:**
+
+```sh
+jq '."[go]"."editor.defaultFormatter" |= "golang.go"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+```
+
 <!--
 "go.useLanguageServer": false,
 "go.languageServerExperimentalFeatures": {

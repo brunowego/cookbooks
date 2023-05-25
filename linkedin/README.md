@@ -1,5 +1,9 @@
 # LinkedIn
 
+<!--
+1584/396 pixels
+-->
+
 ## Links
 
 - [Following](https://linkedin.com/feed/following/)

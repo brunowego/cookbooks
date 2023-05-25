@@ -78,8 +78,11 @@ helm repo update
 
 ```sh
 #
-kubectl create ns prometheus-system
+kubectl create ns prometheus
 # kubectl create ns metrics
+
+#
+kubens prometheus
 
 #
 helm search repo -l prometheus-community/prometheus
@@ -90,65 +93,30 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install prometheus prometheus-community/prometheus \
-  --namespace prometheus-system \
   --version 15.18.0 \
   -f <(cat << EOF
 alertmanager:
   ingress:
-    enabled: true
+    enabled: false
     ingressClassName: nginx
     hosts:
-    - alertmanager.${DOMAIN}
+      - alertmanager.${DOMAIN}
 
 server:
   ingress:
-    enabled: true
+    enabled: false
     ingressClassName: nginx
     hosts:
-    - prometheus.${DOMAIN}
+      - prometheus.${DOMAIN}
 
 pushgateway:
   ingress:
-    enabled: true
+    enabled: false
     ingressClassName: nginx
     hosts:
-    - pushgateway.${DOMAIN}
+      - pushgateway.${DOMAIN}
 EOF
 )
-```
-
-### SSL
-
-#### Dependencies
-
-- [Kubernetes TLS Secret](/k8s-tls-secret.md)
-
-#### Create
-
-```sh
-kubectl create secret tls prometheus.tls-secret \
-  --cert='/etc/ssl/certs/prometheus/root-ca.crt' \
-  --key='/etc/ssl/private/prometheus/root-ca.key' \
-  -n prometheus-system
-```
-
-```sh
-helm upgrade prometheus stable/prometheus -f <(yq m <(cat << EOF
-alertmanager:
-  ingress:
-    tls:
-      - secretName: prometheus.tls-secret
-        hosts:
-          - alertmanager.${DOMAIN}
-
-server:
-  ingress:
-    tls:
-      - secretName: prometheus.tls-secret
-        hosts:
-          - prometheus.${DOMAIN}
-EOF
-) <(helm get values prometheus))
 ```
 
 #### Remove
@@ -157,15 +125,13 @@ EOF
 helm upgrade prometheus stable/prometheus -f <(yq d <(helm get values prometheus) alertmanager.ingress.tls)
 helm upgrade prometheus stable/prometheus -f <(yq d <(helm get values prometheus) server.ingress.tls)
 
-kubectl delete secret prometheus.tls-secret \
-  -n prometheus-system
+kubectl delete secret prometheus.tls-secret
 ```
 
 ### Status
 
 ```sh
-kubectl rollout status deploy/prometheus-server \
-  -n prometheus-system
+kubectl rollout status deploy/prometheus-server
 ```
 
 ### Logs
@@ -174,19 +140,31 @@ kubectl rollout status deploy/prometheus-server \
 kubectl logs \
   -l 'app=prometheus,component=server' \
   -c prometheus-server \
-  -n prometheus-system \
   -f
+```
+
+### Issues
+
+#### TBD
+
+```log
+Error: INSTALLATION FAILED: rendered manifests contain a resource that already exists. Unable to continue with install: ClusterRole "prometheus-kube-state-metrics" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "metrics": current value is "lens-metrics"
+```
+
+```sh
+#
+kubectl delete clusterrole prometheus-kube-state-metrics
+kubectl delete clusterrolebinding prometheus-kube-state-metrics
 ```
 
 ### Delete
 
 ```sh
 #
-helm uninstall prometheus \
-  -n prometheus-system
+helm uninstall prometheus
 
 #
-kubectl delete ns prometheus-system \
+kubectl delete ns prometheus \
   --grace-period=0 \
   --force
 ```
