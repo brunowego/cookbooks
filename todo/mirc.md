@@ -1,3 +1,0 @@
-# mIRC
-
-TODO

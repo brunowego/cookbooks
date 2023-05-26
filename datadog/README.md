@@ -5,6 +5,8 @@
 - [Main Website](https://datadoghq.com)
 - [Dashboard](https://app.datadoghq.com)
   - [Application Keys](https://app.datadoghq.com/personal-settings/application-keys)
+- [Docs](https://docs.datadoghq.com)
+  - [OpenTelemetry in Datadog](https://docs.datadoghq.com/opentelemetry/)
 
 <!--
 https://artifacthub.io/packages/helm/datadog/datadog-operator

@@ -19,6 +19,38 @@
 
 ## Docker Compose
 
+**Refer:** `./config/otelcol/otel-collector.yml`
+
+```yml
+---
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+
+processors:
+  batch:
+
+exporters:
+  logging:
+    verbosity: detailed
+    sampling_initial: 5
+  jaeger:
+    endpoint: jaeger:14250
+    tls:
+      insecure: true
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [logging, jaeger]
+```
+
+**Refer:** `./docker-compose.yml`
+
 ```yml
 ---
 version: '3'
@@ -35,9 +67,6 @@ services:
       - target: 4317
         published: 4317
         protocol: tcp
-      # - target: 4318
-      #   published: 4318
-      #   protocol: tcp
     restart: unless-stopped
 
   jaeger:

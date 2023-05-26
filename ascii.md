@@ -2,6 +2,16 @@
 
 <!--
 —
+
+¯\_(ツ)_/¯
+
+(｡◕‿◕｡)
+
+ʘ‿ʘ
+
+ಠ_ಠ
+
+https://wprock.fr/en/t/kaomoji/
 -->
 
 ## Links

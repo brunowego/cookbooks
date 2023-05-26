@@ -8,10 +8,7 @@
 
 ```sh
 #
-export AUTH_USERNAME='<username>'
-
-#
-htpasswd -c auth "$AUTH_USERNAME"
+htpasswd -c auth '<auth-username>'
 
 #
 kubectl create secret generic basic-auth --from-file=auth
@@ -28,6 +25,6 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/auth-type: basic
     nginx.ingress.kubernetes.io/auth-secret: basic-auth
-    nginx.ingress.kubernetes.io/auth-realm: 'Authentication Required - $AUTH_USERNAME'
+    nginx.ingress.kubernetes.io/auth-realm: Authentication Required
 # ...
 ```

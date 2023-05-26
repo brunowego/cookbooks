@@ -64,11 +64,13 @@ EOF
 ```
 
 <!--
+# gRPC
 kubectl port-forward \
   --address 0.0.0.0 \
   svc/signoz-otel-collector \
   4317:4317
 
+# HTTP
 kubectl port-forward \
   --address 0.0.0.0 \
   svc/signoz-otel-collector \

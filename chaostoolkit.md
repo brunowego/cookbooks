@@ -9,7 +9,7 @@
 
 ## Links
 
-- [Main Website](http://chaostoolkit.org/)
+- [Main Website](http://chaostoolkit.org)
 
 ## CLI
 

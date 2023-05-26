@@ -48,15 +48,15 @@
 
 ## Tools
 
+### Enterprise
+
+- [AppDynamics](https://appdynamics.com)
+- [Axiom](https://axiom.co)
 - [Datadog](/datadog.md)
 - [Dynatrace](/dynatrace.md)
 - [New Relic](/newrelic/README.md)
-- [SigNoz](/signoz/README.md)
 - [Splunk](/splunk.md)
-- [AppDynamics](https://appdynamics.com)
 
-<!--
-- [Grafana](/grafana/README.md)
+### Open Source
 
-https://axiom.co
--->
+- [SigNoz](/signoz/README.md) 🌟

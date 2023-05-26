@@ -12,6 +12,8 @@ https://www.udemy.com/course/learn-new-relic-monitoring-and-devops-for-the-cloud
 
 - [Org. Repository](https://github.com/newrelic)
 - [Main Website](https://newrelic.com)
+- [Docs](https://docs.newrelic.com)
+  - [Introduction to OpenTelemetry with New Relic](https://docs.newrelic.com/docs/more-integrations/open-source-telemetry-integrations/opentelemetry/opentelemetry-introduction/)
 
 ## Console
 

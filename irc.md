@@ -2,19 +2,25 @@
 
 ## Clients
 
-- [mIRC](/todo/mirc.md)
+- [mIRC](/mirc.md)
+- [Textual](/textual.md)
+
+<!--
+LimeChat
+mas install 414030210
+-->
 
 ## Commands
 
 ```sh
 # Connect
-/server [server]
+/server <server>
 
 # Channel
-/join [channel]
+/join <channel>
 
 # List (search)
-/list [*keyword*]
+/list <*keyword*>
 
 # Clear
 /clear
@@ -34,16 +40,16 @@
 
 ```sh
 # Nick
-/nick [nickname]
+/nick <nickname>
 
 # Register
-/msg NickServ REGISTER [password] [email]
+/msg NickServ REGISTER <password> <email>
 
 # Change Password
-/msg NickServ SET PASSWORD [password]
+/msg NickServ SET PASSWORD <password>
 
 # Change Email
-/msg NickServ SET EMAIL [email]
+/msg NickServ SET EMAIL <email>
 
 # Status
 /msg NickServ STATUS
@@ -52,7 +58,7 @@
 /msg NickServ INFO
 
 # Login
-/msg NickServ IDENTIFY [nickname] [password]
+/msg NickServ IDENTIFY <nickname> <password>
 
 # Logout
 /msg NickServ LOGOUT
@@ -65,16 +71,16 @@
 
 ```sh
 # Register
-/msg ChanServ REGISTER [\#channel]
+/msg ChanServ REGISTER <\#channel>
 
 # Operator
-/msg ChanServ OP [\#channel]
+/msg ChanServ OP <\#channel>
 
 # User
-/msg ChanServ OP [\#channel] [nickname]
+/msg ChanServ OP <\#channel> <nickname>
 
 # Flags
-/msg ChanServ FLAGS [\#channel] [nickname] +oO
+/msg ChanServ FLAGS <\#channel> <nickname> +oO
 
 # Help
 /msg ChanServ HELP

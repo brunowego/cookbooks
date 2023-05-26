@@ -9,22 +9,23 @@
 
 ## Tools
 
+### Enterprise
+
 - [Atlassian Statuspage](/atlassian/atlassian-statuspage.md)
 - [Better Stack](https://betterstack.com)
-- [Cachet](/cachet.md)
 - [Instatus](https://instatus.com)
+- [UptimeRobot](/uptimerobot/README.md) 🌟
+
+### Open Source
+
+- [Cachet](/cachet.md)
 - [Statping](/statping.md)
 - [StatsD](https://github.com/statsd/statsd)
 - [Statusfy](/statusfy.md)
+- [Upptime](/upptime.md) 🌟
 - [Uptime Kuma](/uptime-kuma.md)
-- [UptimeRobot](/uptimerobot/README.md) 🌟
 
 <!--
-https://status.trunk.io/
+https://github.com/cstate/cstate
+https://github.com/TwiN/gatus
 -->
-
-## Examples
-
-- [AlienVault](https://status.alienvault.cloud)
-- [GitHub](https://githubstatus.com)
-- [Twingate](https://status.twingate.com)

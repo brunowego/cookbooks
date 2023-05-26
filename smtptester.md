@@ -1,5 +1,7 @@
 # SMTP Tester
 
+**Keywords:** Payed Solution
+
 ## App
 
 ### Installation

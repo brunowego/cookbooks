@@ -6,18 +6,16 @@
 
 - [Atlassian Confluence](/atlassian/confluence.md)
 - [Notion](/notion.md)
+- [Slite](https://slite.com)
 
 ### Open Source
 
+- [BookStack](https://bookstackapp.com)
 - [Focalboard](/focalboard.md)
+- [MediaWiki](/mediawiki.md)
 - [Obsidian](/obsidian.md)
 - [Outline](/outline.md)
 
 <!--
-Help Scout
-MediaWiki
-
-https://getoutline.com
-https://slite.com
-https://dendron.so
+https://www.dendron.so/
 -->
