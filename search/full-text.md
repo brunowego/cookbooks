@@ -6,7 +6,7 @@
 
 ## Implementations
 
-### Enterprise
+### Managed
 
 - [Algolia](https://algolia.com)
 - [AWS OpenSearch Service](/aws/services/opensearch-service.md)

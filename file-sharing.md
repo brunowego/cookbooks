@@ -2,7 +2,7 @@
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [WeTransfer](https://wetransfer.com)
 

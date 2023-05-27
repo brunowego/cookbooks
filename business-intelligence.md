@@ -7,7 +7,7 @@
 
 ## Solutions
 
-### Enterprise
+### Managed
 
 - [Google Looker](/gcp/looker.md)
 - [Holistics](https://holistics.io)

@@ -18,7 +18,7 @@
 - [Google Operations (StackDriver)](/gcp/services/operations.md)
 - [Microsoft Azure Monitor](/azure/services/monitor.md)
 
-### Enterprise
+### Managed
 
 - [Datadog](/datadog/README.md)
 - [New Relic](/newrelic/README.md)

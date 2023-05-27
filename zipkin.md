@@ -4,10 +4,8 @@
 
 ## Links
 
+- [Code Repository](https://github.com/openzipkin/zipkin)
 - [Main Website](https://zipkin.io)
-
-## References
-
 - [Quickstart](https://zipkin.io/pages/quickstart.html)
 
 ## Docker

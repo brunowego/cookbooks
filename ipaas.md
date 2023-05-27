@@ -2,7 +2,7 @@
 
 ## Implementation
 
-### Enterprise
+### Managed
 
 - [Zapier](https://zapier.com)
 

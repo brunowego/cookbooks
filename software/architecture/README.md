@@ -13,6 +13,7 @@ https://c4model.com
 
 ## References
 
+- [Architecture Framework](./framework.md)
 - [Feature Toggles (a.k.a. Feature Flags)](/feature-toggles.md)
 
 ## Glossary

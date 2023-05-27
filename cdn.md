@@ -4,7 +4,7 @@
 
 ## Providers
 
-### Enterprise
+### Managed
 
 - [Akamai CDN](https://akamai.com)
 - [Amazon CloudFront](/aws/services/cloudfront.md)

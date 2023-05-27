@@ -10,7 +10,7 @@ https://github.com/pixie-io/pixie
 
 ## Implementations
 
-### Enterprise
+### Managed
 
 - [DataDog](/datadog/README.md) 🌟
 - [Dynatrace](/dynatrace.md)

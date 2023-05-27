@@ -6,7 +6,7 @@ https://linkedin.com/learning/continuous-integration-tools/building-your-ci-cd-p
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [Atlassian](/atlassian/README.md) / [Bamboo](/atlassian/atlassian-bamboo.md)
 - [Azure DevOps](/azure/services/devops/README.md) / [Azure Pipelines](/azure/services/devops/azure-pipelines/README.md)

@@ -12,7 +12,7 @@ https://freshdesk.com/helpdesk-management/ticketing-system/open-source
 
 ## Solutions
 
-### Enterprise
+### Managed
 
 - [Freshworks Freshdesk](https://freshdesk.com)
 - [HappyFox](https://happyfox.com)

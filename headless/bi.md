@@ -14,7 +14,7 @@ https://basecase.vc/blog/headless-bi
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [AtScale](https://atscale.com)
 - [GoodData](https://gooddata.com)

@@ -11,7 +11,7 @@
 
 ## Implementations
 
-### Enterprise
+### Managed
 
 - [AWS Data Pipeline](/aws/services/datapipeline.md)
 

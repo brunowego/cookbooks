@@ -46,7 +46,7 @@ Mitigate Conflicts
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [Ondato](https://ondato.com)
 - [Onfido](https://onfido.com)

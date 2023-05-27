@@ -10,7 +10,7 @@ Database -> Extract -> Transform (Aggregation -> Normalization) -> Load -> Data 
 
 ## Implementations
 
-### Enterprise
+### Managed
 
 - [AWS Redshift](/aws/services/redshift.md)
 - [Databricks](/databricks.md)

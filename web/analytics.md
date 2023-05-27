@@ -5,16 +5,35 @@
 - California Consumer Privacy Act (CCPA)
 - General Data Protection Regulation (GPDR)
 - Online Transaction Processing (OLTP) / Online Analytical Processing (OLAP)
+- Personally Identifiable Information (PII)
+- Privacy and Electronic Communications (PECR)
+
+<!--
+ePrivacy
+Agg. Data
+-->
 
 ## Tools
 
-- [Ackee](/ackee.md)
+### Managed
+
+- [Beam Analytics](https://beamanalytics.io)
 - [Cloudflare Web Analytics](/cloudflare/web-analytics.md)
+- [Google Analytics](/google/analytics.md) 🌟
+- [Mixpanel](/mixpanel.md)
+
+<!--
+https://pirsch.io
+https://simpleanalytics.com
+https://gosquared.com
+-->
+
+### Open Source
+
+- [Ackee](/ackee.md)
 - [Fathom](/fathom.md)
 - [GoAccess](/goaccess.md)
-- [Google Analytics](/google/analytics.md) 🌟
 - [Matomo](/matomo/README.md) 🌟
-- [Mixpanel](/mixpanel.md)
 - [Plausible Analytics](/plausible-analytics.md)
 - [PostHog](/posthog.md)
 - [umami](https://github.com/mikecao/umami)

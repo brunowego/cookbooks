@@ -37,7 +37,7 @@
 - [Azure VPN Gateway](/azure/services/vpn-gateway.md)
 - [Google Cloud VPN](/gcp/services/vpn.md)
 
-#### Enterprise
+#### Managed
 
 - [Pritunl](/pritunl/README.md)
 - [Tailscale](https://tailscale.com)

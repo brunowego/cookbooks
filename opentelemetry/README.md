@@ -1,5 +1,7 @@
 # OpenTelemetry (OTel) (Old OpenCensus and OpenTracing)
 
+**Keywords:** Standard Instrumentation
+
 ## Links
 
 - [Org. Repository](https://github.com/open-telemetry)

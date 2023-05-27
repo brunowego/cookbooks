@@ -33,7 +33,7 @@ helm repo update
 ```sh
 #
 kubectl create ns weblate
-# kubectl create ns i18n
+# kubectl create ns translate
 
 #
 kubens weblate

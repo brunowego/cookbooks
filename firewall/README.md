@@ -20,7 +20,7 @@
 
 ## Software
 
-### Enterprise
+### Managed
 
 - Check Point Next Generation Firewalls (NGFWs)
 - Comodo Firewall

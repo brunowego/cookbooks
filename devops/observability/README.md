@@ -48,7 +48,7 @@
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [AppDynamics](https://appdynamics.com)
 - [Axiom](https://axiom.co)

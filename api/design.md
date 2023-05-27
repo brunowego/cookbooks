@@ -18,7 +18,7 @@ https://medium.com/@kplaube/api-first-process-and-tools-b16ae90d2a5c
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [Stoplight](https://stoplight.io)
 - [Postman](/postman/README.md)

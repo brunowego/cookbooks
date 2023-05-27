@@ -14,7 +14,7 @@ https://github.com/hideckies/exploit-notes/blob/main/src/exploit/SMTP-Pentesting
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [Amazon Simple Email Service (SES)](/aws/services/ses.md)
 - [Mailchimp / Mandrill](https://mandrillapp.com)

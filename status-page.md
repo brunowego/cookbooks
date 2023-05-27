@@ -9,7 +9,7 @@
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [Atlassian Statuspage](/atlassian/atlassian-statuspage.md)
 - [Better Stack](https://betterstack.com)

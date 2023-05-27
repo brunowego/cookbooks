@@ -10,7 +10,7 @@ https://idwall.co/
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [Adobe Sign](/adobe/dign.md)
 - [Clicksign](https://clicksign.com/)

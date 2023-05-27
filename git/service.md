@@ -2,7 +2,7 @@
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [AWS CodeCommit](/aws/services/codecommit.md)
 - [Atlassian Bitbucket](/atlassian/atlassian-bitbucket.md)

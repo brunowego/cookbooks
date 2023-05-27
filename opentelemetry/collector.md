@@ -19,7 +19,7 @@
 
 ## Docker Compose
 
-**Refer:** `./config/otelcol/otel-collector.yml`
+**Refer:** `./config/otelcol/config.yml`
 
 ```yml
 ---
@@ -58,10 +58,9 @@ version: '3'
 services:
   otelcol:
     image: docker.io/otel/opentelemetry-collector:0.78.0
-    container_name: boilerplate-otelcol
     volumes:
       - type: bind
-        source: ./config/otelcol/otel-collector.yml
+        source: ./config/otelcol/config.yml
         target: /etc/otelcol-contrib/config.yaml
     ports:
       - target: 4317

@@ -8,7 +8,7 @@
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [Deepnote](https://deepnote.com)
 - [Google Colab](https://colab.research.google.com)

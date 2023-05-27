@@ -11,7 +11,7 @@
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [Informatica](https://informatica.com)
 - [Talend](https://talend.com)

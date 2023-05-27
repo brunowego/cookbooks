@@ -2,7 +2,7 @@
 
 ## Tools
 
-### Enterprise
+### Managed
 
 - [Atlassian Confluence](/atlassian/confluence.md)
 - [Notion](/notion.md)
