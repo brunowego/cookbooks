@@ -1,27 +1,16 @@
-# K6
+# Grafana K6
+
+<!--
+https://github.com/maximilianoalves/k6-arch-example
+
+https://github.com/pagopa/pdv-load-tests/blob/main/src/01-put-tokens.js
+-->
 
 **Keywords:** Load Testing
 
-<!--
-#
-TRADER_URL := http://trader.ptcg.10oz.tw
-k6 run -e TRADER_URL=$(TRADER_URL) create_order.js
-
-https://github.com/jlobo/stress/blob/main/v1/src/libs/DAuthClientSetError.js
-https://github.com/typesense/showcase-songs-search/blob/master/scripts/benchmarking/README.md
-https://github.com/firebend/auto-crud/blob/main/Firebend.AutoCrud.Web.Sample.LoadTest/src/scripts/soak.test.js
-https://github.com/kyma-project/kyma/blob/main/tests/perf/components/istio/istio.js
-https://github.com/shortcut/cloud-native-templates/blob/main/ops/k6/crr.js
-https://github.com/SamGreig/derekrose-perf-testing/blob/main/src/steps.js
-https://github.com/satheeshpandianj/VolvoCars/blob/main/scripts/WorkloadMix.js
-https://github.com/chrispsheehan/PerformanceTestFramework/blob/main/src/crocs.ts
-https://github.com/irvanster/k6-loadtesting/blob/main/script.js
-https://github.com/HomoEfficio/dev-tips/blob/master/LoadTest-K6-InfluxDB-Grafana.md
-https://github.com/arunk2493/k6performancetesting/blob/main/grafana_dashboard.json
--->
-
 ## Links
 
+- [Code Repository](https://github.com/grafana/k6)
 - [Main Website](https://k6.io)
 - [Demo website for load testing](https://test.k6.io)
 - [Docs](https://k6.io/docs)
@@ -29,6 +18,10 @@ https://github.com/arunk2493/k6performancetesting/blob/main/grafana_dashboard.js
   - [Running large tests](https://k6.io/docs/testing-guides/running-large-tests/)
   - [Ecosystem Explore](https://k6.io/docs/ecosystem/)
   - [Results output - External outputs](https://k6.io/docs/getting-started/results-output/#external-outputs)
+
+## Glossary
+
+- Test Development Kit
 
 ## CLI
 
@@ -71,7 +64,38 @@ choco install k6
 k6 -h
 ```
 
+### Configuration
+
+```sh
+#
+k6 login cloud
+
+#
+cat ~/Library/Application\ Support/loadimpact/k6/config.json
+```
+
 ### Usage
+
+```sh
+#
+k6 status
+
+#
+k6 pause
+
+#
+k6 resume
+
+#
+k6 scale --vus 10
+
+#
+k6 stats
+```
+
+### Tips
+
+#### Running Script
 
 ```sh
 #
@@ -103,26 +127,9 @@ EOF
 ```sh
 #
 k6 run \
-  --out influxdb=http://127.0.0.1:8086/k6 \
+  -o influxdb=http://127.0.0.1:8086/k6 \
   ./test/stress/index.ts
-
-#
-k6 status
-
-#
-k6 pause
-
-#
-k6 resume
-
-#
-k6 scale --vus 10
-
-#
-k6 stats
 ```
-
-### Tips
 
 #### Output
 

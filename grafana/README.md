@@ -206,6 +206,44 @@ kubectl get secret grafana \
     base64 -d; echo
 ```
 
+### Vertical Pod Autoscaler (VPA)
+
+```sh
+#
+kubens grafana
+
+#
+kubectl get deploy
+
+#
+cat << EOF | kubectl apply -f -
+---
+apiVersion: autoscaling.k8s.io/v1
+kind: VerticalPodAutoscaler
+metadata:
+  name: grafana
+spec:
+  targetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: grafana
+  resourcePolicy:
+    containerPolicies:
+      - containerName: '*'
+        minAllowed:
+          cpu: 10m
+          memory: 50Mi
+        maxAllowed:
+          cpu: 1
+          memory: 500Mi
+        controlledResources: ["cpu", "memory"]
+EOF
+
+#
+kubectl get vpa
+kubectl describe vpa grafana
+```
+
 ### Delete
 
 ```sh

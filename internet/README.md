@@ -17,3 +17,7 @@
 <!-- 127.0.0.0-127.255.255.255 -->
 <!-- 127.0.0.0 wire address -->
 <!-- 127.0.0.1 localhost loopback -->
+
+## Tools
+
+- [Speed Test](/speed-test.md)

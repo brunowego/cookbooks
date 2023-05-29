@@ -2,6 +2,7 @@
 
 <!--
 https://github.com/subsquid/docs
+https://github.com/strapi/documentation
 
 https://github.com/logto-io/docs
 https://github.com/revoltchat/documentation

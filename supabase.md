@@ -1,22 +1,16 @@
 # Supabase
 
 <!--
-https://www.kronic.dev/blog/supabase-relationships
-
 "db:start": "supabase start",
 "db:stop": "supabase stop",
 -->
 
-**Keywords:** Firebase alternative
-
-## Alternatives
-
-- [PlanetScale](/planetscale.md)
+**Keywords:** Firebase Alternative
 
 ## Links
 
 - [Code Repository](https://github.com/supabase/supabase)
-- [Main Website](https://supabase.io/)
+- [Main Website](https://supabase.io)
 
 ## CLI
 

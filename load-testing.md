@@ -14,7 +14,7 @@
 - [Artillery](/artillery/README.md) 🌟
 - [bombardier](/bombardier.md)
 - [Gatling](/gatling.md)
-- [K6](/k6/README.md) 🌟
+- [K6](/grafana/k6/README.md) 🌟
 - [Locust](/locust.md)
 
 <!--

@@ -5,6 +5,18 @@
 - [Code Repository](https://github.com/kubernetes-sigs/metrics-server)
 - [Docs](https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-metrics-pipeline/)
 
+## Minikube
+
+### Addons
+
+```sh
+# Enable
+minikube addons -p minikube enable metrics-server
+
+# Disable
+minikube addons -p minikube disable metrics-server
+```
+
 ## Custom Resource (CR)
 
 ### Install
@@ -30,18 +42,6 @@ kubectl patch deployment metrics-server \
 ```sh
 kubectl delete \
   -f "https://github.com/kubernetes-sigs/metrics-server/releases/download/v${METRICS_SERVER_VERSION}/components.yaml"
-```
-
-## Minikube
-
-### Addons
-
-```sh
-# Enable
-minikube addons -p minikube enable metrics-server
-
-# Disable
-minikube addons -p minikube disable metrics-server
 ```
 
 ## Helm

@@ -7,7 +7,7 @@
 git remote -v
 
 # Set URL
-git remote set-url origin [repo]
+git remote set-url origin <repo>
 
 # Remove
 git remote rm origin

@@ -1,4 +1,4 @@
-# Internet Speed Test
+# Speed Test
 
 ## CLI
 

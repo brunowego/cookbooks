@@ -6,7 +6,7 @@
 
 ## Dependencies
 
-- [Metrics Server](/metrics-server.md)
+- [Metrics Server](/kubernetes/metrics-server.md)
 
 ## Usage
 

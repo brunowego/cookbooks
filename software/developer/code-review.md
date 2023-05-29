@@ -2,6 +2,12 @@
 
 **Keywords:** Culture
 
+## Tools
+
+### Automated
+
+- [Reviewdog](/reviewdog.md)
+
 ## Benefits
 
 - Catch bugs

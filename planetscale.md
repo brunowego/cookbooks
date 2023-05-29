@@ -5,10 +5,6 @@ https://github.com/planetscale/integrations/tree/main/vercel/nextjs-example
 https://github.com/planetscale/beam
 -->
 
-## Alternatives
-
-- [Supabase](/supabase.md)
-
 ## Links
 
 - [Code Repository](https://github.com/planetscale/cli)

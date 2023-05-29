@@ -1,13 +1,7 @@
 # Tailwind CSS
 
 <!--
-https://twind.dev
-https://github.com/MathiasGilson/tailwind-styled-component
-
-https://preline.co
-
-mui
-flowbite
+https://github.com/search?q=path%3Aapps+path%3Apackage.json+%22next+dev%22+%22tailwindcss%22&type=code
 -->
 
 **Keywords:** CSS framework
@@ -35,34 +29,6 @@ flowbite
 - [PlanetScale](https://planetscale.com)
 - [Supabase](https://supabase.io/)
 
-<!--
-https://betterstack.com/
-https://panelbear.com/
-https://sprig.com/
-https://splitbee.io/
-https://kontist.com/
-https://fnatic.com/
-https://flipsidecrypto.xyz/
-https://coastpay.com/
-https://stint.co/
-https://hellolanding.com/
-https://metafy.gg/
-https://hellonext.co/
-https://snapshot.org/
-
-https://flipsidecrypto.xyz/
-https://app.splitbee.io/
-https://planetscale.com/
-https://metafy.gg/
-https://snapshot.org/
-https://coinbase.com/price/torn
-https://zapper.fi/
-https://datamish.com/
-
-https://betterstack.com/better-uptime
-https://appsignal.com/
--->
-
 ## UI Kit
 
 - [Flowbite](/flowbite.md)
@@ -72,13 +38,16 @@ https://appsignal.com/
 - [Sail UI](https://sailui.github.io/ui/)
 
 <!--
-https://tailgrids.com/
-https://daisyui.com/
+https://preline.co
 -->
 
 ## Useful
 
 - [Figma Kit for TailwindCSS](https://github.com/ecklf/tailwindcss-figma-kit)
+
+## Tools
+
+- [DivMagic](/divmagic.md)
 
 ## CLI
 
@@ -114,6 +83,9 @@ npm install @types/tailwindcss tailwindcss postcss autoprefixer --save-dev
 
 # Using Yarn
 yarn add @types/tailwindcss tailwindcss postcss autoprefixer --dev
+
+# Using pnpm
+pnpm add @types/tailwindcss tailwindcss postcss autoprefixer -D
 ```
 
 ### Bootstrap

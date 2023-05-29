@@ -32,7 +32,7 @@ helm search repo -l autoscaler/cluster-autoscaler
 
 #
 helm install cluster-autoscaler autoscaler/cluster-autoscaler \
-  --version 9.21.1 \
+  --version 9.29.0 \
   -f <(cat << EOF
 autoDiscovery:
   clusterName: org-internal01
