@@ -4,11 +4,10 @@
 
 - [Main Website](https://machalliance.org)
 
-## Other
-
 ## Videos
 
 - [Discover Sitecore / What is MACH Architecture?](https://youtube.com/watch?v=lgRsAwxrw9Q)
+- [Understand What MACH Architecture Is and Its Benefits](https://youtube.com/watch?v=Wk5Ln_WRKTE)
 
 ## Glossary
 

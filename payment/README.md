@@ -7,6 +7,12 @@ https://docs.malga.io
 https://dev.iugu.com/docs
 https://docs.yampi.com.br
 https://docs.transfeera.dev
+
+https://github.com/jeny3g/paymee-pix-payments-node-nestjs
+https://github.com/dsperax/pix-payment
+https://github.com/VictorMagalhaesSales/microsservices-banks-parent
+https://github.com/ivanmds/POC_EVENT_DRIVEN
+https://github.com/tracontecnologia/ondw-2-server
 -->
 
 ## Articles

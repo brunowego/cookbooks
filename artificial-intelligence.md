@@ -9,4 +9,5 @@
 
 <!--
 https://anthropic.com
+https://midjourney.com
 -->

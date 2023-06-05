@@ -188,6 +188,10 @@ Install [cross-env](/cross-env.md)
 sed -i "s/\(next dev\)/cross-env NODE_OPTIONS='--inspect' \1/g" ./package.json
 ```
 
+<!--
+chrome://inspect
+-->
+
 #### Next.js Export
 
 ```sh

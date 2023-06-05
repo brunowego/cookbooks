@@ -15,8 +15,3 @@ https://github.com/m1guelpf/chatgpt-telegram
 ## Glossary
 
 - Generative Pre-trained Transformer (GPT)
-
-## Platforms
-
-- [Google Bard](https://bard.google.com/)
-- [OpenAI ChatGPT](/openai/chatgpt.md)

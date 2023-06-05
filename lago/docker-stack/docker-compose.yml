@@ -2,34 +2,39 @@
 version: '3.8'
 
 services:
-  db:
-    image: docker.io/library/postgres:14.0-alpine
-    container_name: lago-db
+  lago-postgres:
+    image: docker.io/library/postgres:15.1-alpine
+    container_name: boilerplate-lago-postgres
+    volumes:
+      - type: volume
+        source: lago-postgresql-data
+        target: /var/lib/postgresql/data
     environment:
-      POSTGRES_DB:
-      POSTGRES_USER:
-      POSTGRES_PASSWORD:
-      PGDATA: /data/postgres
-    volumes:
-      - lago-postgres-data:/data/postgres
+      POSTGRES_USER: lago
+      POSTGRES_PASSWORD: lago
+      POSTGRES_DB: lago
     restart: unless-stopped
 
-  redis:
-    image: docker.io/library/redis:6.2-alpine
-    container_name: lago-redis
-    command: --port 6379
+  lago-redis:
+    image: docker.io/library/redis:7.0.8-alpine
+    container_name: boilerplate-lago-redis
     volumes:
-      - lago-redis-data:/data
+      - type: volume
+        source: lago-redis-data
+        target: /data
     restart: unless-stopped
 
-  api:
-    image: getlago/api:v0.24.0-beta
-    container_name: lago-api
+  lago-api:
+    image: docker.io/getlago/api:v0.34.0-beta
+    container_name: boilerplate-lago-api
+    volumes:
+      - type: volume
+        source: lago-api-data
+        target: /app/storage
     environment:
       LAGO_API_URL: $LAGO_API_URL
       DATABASE_URL:
       REDIS_URL:
-      REDIS_PASSWORD:
       SECRET_KEY_BASE:
       RAILS_ENV: $APP_ENV
       RAILS_LOG_TO_STDOUT: $LAGO_RAILS_STDOUT
@@ -48,29 +53,28 @@ services:
       LAGO_REDIS_CACHE_PASSWORD:
       LAGO_DISABLE_SEGMENT:
       LAGO_OAUTH_PROXY_URL:
-      LAGO_LICENSE:
-    volumes:
-      - lago-storage-data:/app/storage
+      # LAGO_LICENSE:
     command: [./scripts/start.sh]
     ports:
-      - ${API_PORT:-3000}:3000
+      - target: 3000
+        published: 3000
+        protocol: tcp
     restart: unless-stopped
     depends_on:
-      - db
-      - redis
+      - lago-postgres
+      - lago-redis
 
-  api-worker:
-    container_name: lago-worker
-    image: getlago/api:v0.24.0-beta
-    restart: unless-stopped
-    depends_on:
-      - api
-    command: [./scripts/start.worker.sh]
+  lago-worker:
+    image: docker.io/getlago/api:v0.34.0-beta
+    container_name: boilerplate-lago-worker
+    volumes:
+      - type: volume
+        source: lago-worker-data
+        target: /app/storage
     environment:
       LAGO_API_URL: $LAGO_API_URL
       DATABASE_URL:
       REDIS_URL:
-      REDIS_PASSWORD:
       SECRET_KEY_BASE:
       RAILS_ENV: $APP_ENV
       RAILS_LOG_TO_STDOUT: $LAGO_RAILS_STDOUT
@@ -86,21 +90,18 @@ services:
       LAGO_REDIS_CACHE_URL: $REDIS_URL
       LAGO_REDIS_CACHE_PASSWORD:
       LAGO_DISABLE_SEGMENT:
-    volumes:
-      - lago-storage-data:/app/storage
-
-  api-clock:
-    container_name: lago-clock
-    image: getlago/api:v0.24.0-beta
+    command: [./scripts/start.worker.sh]
     restart: unless-stopped
     depends_on:
-      - api
-    command: [./scripts/start.clock.sh]
+      - lago-api
+
+  lago-clock:
+    image: docker.io/getlago/api:v0.34.0-beta
+    container_name: boilerplate-lago-clock
     environment:
       LAGO_API_URL:
       DATABASE_URL:
       REDIS_URL:
-      REDIS_PASSWORD:
       SECRET_KEY_BASE:
       RAILS_ENV: $APP_ENV
       RAILS_LOG_TO_STDOUT: $LAGO_RAILS_STDOUT
@@ -110,10 +111,14 @@ services:
       ENCRYPTION_PRIMARY_KEY: $LAGO_ENCRYPTION_PRIMARY_KEY
       ENCRYPTION_DETERMINISTIC_KEY: $LAGO_ENCRYPTION_DETERMINISTIC_KEY
       ENCRYPTION_KEY_DERIVATION_SALT: $LAGO_ENCRYPTION_KEY_DERIVATION_SALT
+    command: [./scripts/start.clock.sh]
+    restart: unless-stopped
+    depends_on:
+      - lago-api
 
-  front:
-    image: getlago/front:v0.24.0-beta
-    container_name: lago-front
+  lago-front:
+    image: docker.io/getlago/front:v0.34.0-beta
+    container_name: boilerplate-lago-front
     environment:
       API_URL: $LAGO_API_URL
       APP_ENV:
@@ -121,15 +126,24 @@ services:
       LAGO_DISABLE_SIGNUP:
       LAGO_OAUTH_PROXY_URL:
     ports:
-      - 8080:80
+      - target: 80
+        published: 8080
+        protocol: tcp
     restart: unless-stopped
     depends_on:
-      - api
+      - lago-api
 
-  pdf:
-    image: getlago/lago-gotenberg:7
+  lago-pdf:
+    image: docker.io/getlago/lago-gotenberg:7
+    container_name: boilerplate-lago-pdf
+    restart: unless-stopped
 
 volumes:
-  lago-postgres-data:
+  lago-postgresql-data:
+    driver: local
   lago-redis-data:
-  lago-storage-data:
+    driver: local
+  lago-api-data:
+    driver: local
+  lago-worker-data:
+    driver: local

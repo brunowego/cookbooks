@@ -17,5 +17,6 @@
 - [Outline](/outline.md)
 
 <!--
-https://www.dendron.so/
+https://github.com/logseq/logseq
+https://dendron.so
 -->

@@ -9,6 +9,44 @@ https://github.com/redpanda-data/documentation/blob/dev/docs/get-started/quick-s
 - [Code Repository](https://github.com/redpanda-data/redpanda)
 - [Main Website](https://redpanda.com)
 
+## Articles
+
+- [Redpanda vs Kafka vs Confluent](https://confluent.io/redpanda-vs-kafka-vs-confluent/)
+
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew tap redpanda-data/tap
+brew install redpanda
+```
+
+### Commands
+
+```sh
+rpk -h
+rpk redpanda -h
+```
+
+<!-- ### Usage
+
+```sh
+#
+rpk container start -n 3
+rpk container stop
+
+#
+rpk redpanda start \
+  --advertise-kafka-addr redpanda:9092 \
+  --advertise-pandaproxy-addr redpanda:8082 \
+  --check=false \
+  --kafka-addr 0.0.0.0:9092 \
+  --pandaproxy-addr 0.0.0.0:8082
+``` -->
+
 ## Helm
 
 ### References

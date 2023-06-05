@@ -10,6 +10,10 @@ https://www.udemy.com/courses/search/?src=ukw&q=openzeppelin
 - [Org. Repository](https://github.com/OpenZeppelin)
 - [Main Website](https://openzeppelin.com)
 
+## Terms
+
+- Upgradable Smart Contracts
+
 ## CLI
 
 ### Installation

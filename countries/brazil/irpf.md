@@ -12,14 +12,14 @@ https://www.youtube.com/watch?v=cJxNSXgPVsc
 
 ### Dependencies
 
-- [Java](/java.md)
+- [Java](/java/README.md)
 
 ### Installation
 
 #### Homebrew
 
 ```sh
-brew install --cask irpf2021
+brew install --cask irpf2023
 ```
 
 ## Tips

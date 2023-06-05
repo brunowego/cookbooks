@@ -9,6 +9,9 @@
 ## Installation
 
 ```sh
-#
+# Locally
+xk6 build --output ./bin/k6 --with github.com/grafana/xk6-browser
+
+# Globally
 xk6 build --output /usr/local/bin/k6 --with github.com/grafana/xk6-browser
 ```

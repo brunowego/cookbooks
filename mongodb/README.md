@@ -9,6 +9,11 @@ https://linkedin.com/learning/learning-mongodb/
 
 - [MongoDB ObjectId ↔ Timestamp Converter](https://steveridout.github.io/mongo-object-time/)
 
+## Tools
+
+- [MongoDB Compass](./compass.md) 🌟
+- [Robo 3T (formerly Robomongo)](/robomongo.md)
+
 ## Docker
 
 ### Network
@@ -99,7 +104,6 @@ version: '3'
 services:
   mongodb:
     image: docker.io/library/mongo:5.0.15
-    hostname: mongodb
     volumes:
       - type: volume
         source: mongodb-data
@@ -153,11 +157,11 @@ mongo -h
 ```sh
 # Database Authentication
 mongo \
-  --host [hostname] \
+  --host <hostname> \
   --port 27017 \
-  -u [username] \
-  -p [password] \
-  --authenticationDatabase [db-name]
+  -u <username> \
+  -p <password> \
+  --authenticationDatabase <db-name>
 
 #
 mongo topic --eval 'rs.status()'
@@ -174,7 +178,7 @@ mongo --eval 'printjson(db.serverStatus())'
 mongo admin --eval "db.shutdownServer()"
 
 # Heredoc
-mongo [db-name] <<-EOSQL
+mongo <db-name> <<-EOSQL
 [commands]
 EOSQL
 ```
@@ -239,6 +243,14 @@ kubectl delete ns mongodb \
 ```
 
 ## Issues
+
+### TBD
+
+```log
+BadValue: security.keyFile is required when authorization is enabled with replica sets
+```
+
+TODO
 
 ### Missing Mechanism and Source
 

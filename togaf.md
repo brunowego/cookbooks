@@ -1,5 +1,7 @@
 # The Open Group Architecture Framework (TOGAF)
 
+**Keywords:** Architecture Framework
+
 ## Links
 
 - [Main Website](https://opengroup.org/togaf)

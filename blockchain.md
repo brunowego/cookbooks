@@ -23,6 +23,10 @@ Devnet
 
 - [DeFi Pulse](https://defipulse.com)
 
+## Glossary
+
+- Distributed Ledger Technology (DLT)
+
 ## Programming Languages for Smart Contracts
 
 - C++
@@ -43,4 +47,8 @@ Devnet
 - Layer 0
 - Layer 1
 - Layer 2
+-->
+
+<!--
+Light Nodes, Full Nodes, and Masternodes
 -->

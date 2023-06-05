@@ -1,5 +1,37 @@
 # Redpanda Console
 
+## Links
+
+- [Code Repository](https://github.com/redpanda-data/console)
+
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h redpanda-console \
+  -p 8080:8080 \
+  --name redpanda-console \
+  --network workbench \
+  docker.io/redpandadata/console:v2.2.4
+```
+
+### Remove
+
+```sh
+docker rm -f redpanda-console
+```
+
 ## Helm
 
 ### Dependencies

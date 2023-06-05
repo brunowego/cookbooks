@@ -11,3 +11,7 @@
 - [Pointing Poker](https://pointingpoker.com)
 - [Scrum Pointing Poker](https://poker.marcin.uk)
 - [Scrumpoker Online](https://scrumpoker.online)
+
+<!--
+Daily Scrum
+-->

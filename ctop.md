@@ -1,17 +1,6 @@
 # ctop
 
-## Docker
-
-### Running
-
-```sh
-docker run -it --rm \
-  $(echo "$DOCKER_RUN_OPTS") \
-  -h ctop \
-  -v /var/run/docker.sock:/var/run/docker.sock:ro \
-  --name ctop \
-  quay.io/vektorlab/ctop:latest
-```
+**Keywords:** Container Metrics
 
 ## CLI
 
@@ -37,4 +26,24 @@ sudo chmod +x /usr/local/bin/ctop
 
 ```sh
 ctop -h
+```
+
+### Usage
+
+```sh
+#
+ctop
+```
+
+## Docker
+
+### Running
+
+```sh
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h ctop \
+  -v /var/run/docker.sock:/var/run/docker.sock:ro \
+  --name ctop \
+  quay.io/vektorlab/ctop:latest
 ```

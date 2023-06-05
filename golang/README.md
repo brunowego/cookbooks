@@ -15,16 +15,17 @@ Efficient compilation, Efficient execution and Ease of programming.
 
 ## References
 
+- [Go (programming language)](<https://en.wikipedia.org/wiki/Go_(programming_language)>)
+- [Go go-to guide](https://yourbasic.org/golang/)
+- [Go Project Structure](https://github.com/PerimeterX/go-project-structure)
+- [go.dev](https://go.dev/)
+- [Golang Cheat-Sheet](https://github.com/a8m/go-lang-cheat-sheet)
 - [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson)
+- [Learn Web Programming in Go by Examples](https://gowebexamples.com)
+- [Modules](https://github.com/golang/go/wiki/Modules)
 - [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike)
 - [Robert Griesemer](https://en.wikipedia.org/wiki/Robert_Griesemer)
-- [Go (programming language)](<https://en.wikipedia.org/wiki/Go_(programming_language)>)
 - [The Go Programming Language](https://golang.org/)
-- [Modules](https://github.com/golang/go/wiki/Modules)
-- [go.dev](https://go.dev/)
-- [Learn Web Programming in Go by Examples](https://gowebexamples.com)
-- [Go go-to guide](https://yourbasic.org/golang/)
-- [Golang Cheat-Sheet](https://github.com/a8m/go-lang-cheat-sheet)
 
 ## Libraries
 
@@ -46,7 +47,7 @@ docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
   -h golang \
   --name golang \
-  docker.io/library/golang:1.13.5
+  docker.io/library/golang:1.19.6
 ```
 
 ## CLI

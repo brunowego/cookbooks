@@ -26,17 +26,17 @@ mongosh -h
 ### Usage
 
 ```sh
-#
+# Parameterized
 mongosh \
   -u root \
   -p root \
   --authenticationDatabase admin \
   mongodb://127.0.0.1:27017
 
-#
+# Single string
 mongosh 'mongodb://root:root@127.0.0.1:27017?authSource=admin'
 
-#
+# Without authorization
 mongosh 'mongodb://127.0.0.1:27017?authSource=admin'
 ```
 
@@ -44,6 +44,8 @@ mongosh 'mongodb://127.0.0.1:27017?authSource=admin'
 
 ```mongodb
 use dev
+
+rs.initiate({ _id: 'rs0', members: [{ _id: 0, host: '127.0.0.1:27017' }] });
 
 rs.status();
 
@@ -53,6 +55,23 @@ db.tempcollection.find();
 
 exit
 ```
+
+<!--
+rs.reconfig({ _id: 'rs0', members: [{ _id: 0, host: 'localhost:27017' }] }, { force: true })
+
+db.getSiblingDB('admin').auth(
+  process.env.MONGO_INITDB_ROOT_USERNAME,
+  process.env.MONGO_INITDB_ROOT_PASSWORD
+)
+
+db = db.getSiblingDB(_getEnv('MONGO_INITDB_DATABASE'))
+
+db.createUser({
+  user: _getEnv('MONGO_USERNAME'),
+  pwd: _getEnv('MONGO_PASSWORD'),
+  roles: ['readWrite'],
+})
+-->
 
 <!--
 retryWrites=true

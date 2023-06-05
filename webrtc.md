@@ -12,10 +12,14 @@ https://github.com/LookLukeLemon/voom
 ## Terms
 
 - Interactive Connectivity Establishment (ICE)
-- Session Traversal Utilities for NAT (STUN)
-- Network Address Translation (NAT)
-- Traversal Using Relays around NAT (TURN)
-- Session Description Protocol (SDP)
-- Selective Forwarding Unit (SFU)
-- Peer-to-Peer (P2P)
 - Multipoint Control Unit (MCU)
+- Network Address Translation (NAT)
+- Peer-to-Peer (P2P)
+- Selective Forwarding Unit (SFU)
+- Session Description Protocol (SDP)
+- Session Traversal Utilities for NAT (STUN)
+- Traversal Using Relays around NAT (TURN)
+
+## Tools
+
+- [Jitsi](/jitsi/README.md)

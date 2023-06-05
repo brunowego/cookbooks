@@ -74,6 +74,16 @@ k6 login cloud
 cat ~/Library/Application\ Support/loadimpact/k6/config.json
 ```
 
+#### Output
+
+- Apache Kafka
+- CSV
+- Datadog
+- InfluxDB
+- JSON
+- Load Impact Cloud Platform
+- StatsD
+
 ### Usage
 
 ```sh
@@ -92,54 +102,6 @@ k6 scale --vus 10
 #
 k6 stats
 ```
-
-### Tips
-
-#### Running Script
-
-```sh
-#
-mkdir -p ./test/stress
-```
-
-**Refer:** `./test/stress/index.ts`
-
-```ts
-import http from 'k6/http'
-import { check } from 'k6'
-
-export let options = {
-  vus: 1,
-  vusMax: 10,
-  duration: '10m',
-}
-
-export default function () {
-  let res = http.get('http://127.0.0.1:3000')
-
-  check(res, {
-    'is status 200': (r) => r.status === 200,
-  })
-}
-EOF
-```
-
-```sh
-#
-k6 run \
-  -o influxdb=http://127.0.0.1:8086/k6 \
-  ./test/stress/index.ts
-```
-
-#### Output
-
-- Apache Kafka
-- CSV
-- Datadog
-- InfluxDB
-- JSON
-- Load Impact Cloud Platform
-- StatsD
 
 ### Issues
 
@@ -222,52 +184,4 @@ docker run -d \
 
 ```sh
 docker rm -f k6
-```
-
-## Library
-
-### Dependecies
-
-- [InfluxDB](/influxdb/README.md)
-
-### Installation
-
-```sh
-# Using pnpm
-pnpm add @types/k6 typescript -D
-```
-
-### Configuration
-
-```sh
-#
-mkdir -p ./test/stress
-```
-
-**Refer:** `./package.json`
-
-```json
-{
-  // ...
-  "scripts": {
-    // ...
-    "stress": "k6 run ./test/stress/index.ts",
-    "stress:monitor": "k6 run -o influxdb=http://localhost:8086/k6 ./test/stress/index.ts"
-  }
-}
-```
-
-**Refer:** `./test/stress/index.ts`
-
-```ts
-import http from 'k6/http'
-import { check } from 'k6'
-
-export default function () {
-  let res = http.get('http://127.0.0.1:3000')
-
-  check(res, {
-    'is status 200': (r) => r.status === 200,
-  })
-}
 ```

@@ -1,50 +1,6 @@
-# Debezium
-
-<!--
-https://github.com/dskora-rdi/delivery-tracking
-https://github.com/andreformento/debezium-tutorial
-https://github.com/renardeinside/vogel
-https://github.com/viniciusilveira/debezium-poc
-https://github.com/MagicBowen/microservice/tree/master/examples/debezium
-https://github.com/salimTutuncu/debezium-postgres
-https://github.com/dvfeinblum/postgrezium
-https://github.com/xtfs/debezium_kafka
-https://github.com/emmanuelneri/database-stream-changes
-https://github.com/juliuskrah/keycloak-cdc
-https://github.com/vianhazman/bus-tracking-producer
-https://github.com/dskora/kafka-predictive-streams-example
-https://github.com/sohangp/outbox-pattern
-https://github.com/SIGLUS/openlmis-ref-reporting
-https://github.com/EddyAnalytics/eddy-kafka-graphql-bridge
-https://github.com/visionsws/vicente-learning/blob/master/docs/%E4%B8%AD%E9%97%B4%E4%BB%B6/kafka%20connect.md
-https://medium.com/@tilakpatidar/streaming-data-from-postgresql-to-kafka-using-debezium-a14a2644906d
-https://github.com/singaretti/kafka-debezium-google-cloud
-https://medium.com/swlh/change-data-capture-cdc-with-embedded-debezium-and-springboot-6f10cd33d8ec?
-https://github.com/YotpoLtd/metorikku/blob/master/e2e/cdc/docker-compose.yml
-https://github.com/anzy-sg/debezium-hands-on-labs
-https://github.com/ora0600/hackathon-ksql
-https://github.com/fatmali/openmrs-spark
--->
-
-<!--
-https://github.com/abhirockzz/kafka-adx-postgres-cdc-demo
-https://github.com/Azure-Samples/azure-sql-db-change-stream-debezium
--->
-
-## Links
-
-- [Code Repository](https://github.com/debezium/debezium)
-- [Main Website](https://debezium.io)
-
-## References
-
-- [Change-Data-Capture (CDC)](/cdc.md)
-- [Debezium Examples](https://github.com/debezium/debezium-examples)
-- [PostgreSQL Debezium KSQL Elasticsearch](https://github.com/confluentinc/examples/tree/5.3.1-post/postgres-debezium-ksql-elasticsearch)
+# MySQL
 
 ## Docker
-
-<!-- https://github.com/andreformento/debezium-tutorial/search?utf8=%E2%9C%93&q=dbserver1&type= -->
 
 ### Network
 

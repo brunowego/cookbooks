@@ -117,10 +117,15 @@ trunk upgrade
 trunk plugins add <uri>
 
 #
-trunk cache clean
+trunk cache prune
+trunk cache clean --all
+
+ls ~/.cache/trunk
 
 #
-trunk daemon
+trunk daemon launch
+trunk daemon status
+trunk daemon shutdown
 ```
 
 ### Tips
@@ -170,7 +175,8 @@ TODO
 Trunk: Stopped
 ```
 
-TODO
+- Option 1: Try remove `~/.cache/trunk`
+- Option 2: Try remove `./.trunk` and re-initialize `trunk init`
 
 #### Missing Dependencies (FAILURES)
 
@@ -208,3 +214,9 @@ cp $(brew --prefix hadolint)/bin/hadolint ~/.cache/trunk/tools/hadolint/2.12.0-6
 
 ps aux | grep trunk
 ```
+
+## Issues
+
+### Stopped Trunk
+
+TBD

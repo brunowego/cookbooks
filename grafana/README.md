@@ -42,7 +42,7 @@ docker run -d \
   -p 3000:3000 \
   --name grafana \
   --network workbench \
-  docker.io/grafana/grafana:8.5.5
+  docker.io/grafana/grafana:9.5.2
 
 # Using Google SSO
 docker run -d \
@@ -62,7 +62,7 @@ docker run -d \
   -p 3000:3000 \
   --name grafana \
   --network workbench \
-  docker.io/grafana/grafana:8.5.5
+  docker.io/grafana/grafana:9.5.2
 
 # Using SMTP
 docker run -d \
@@ -80,7 +80,7 @@ docker run -d \
   -p 3000:3000 \
   --name grafana \
   --network workbench \
-  docker.io/grafana/grafana:8.5.5
+  docker.io/grafana/grafana:9.5.2
 ```
 
 <!-- ```sh
@@ -127,6 +127,42 @@ docker restart grafana
 docker rm -f grafana
 
 docker volume rm grafana-config grafana-data
+```
+
+## Docker Compose
+
+### Manifest
+
+```yml
+---
+version: '3'
+
+services:
+  grafana:
+    image: docker.io/grafana/grafana:9.5.2
+    container_name: boilerplate-grafana
+    volumes:
+      - type: volume
+        source: grafana-config
+        target: /etc/grafana
+      - type: volume
+        source: grafana-data
+        target: /var/lib/grafana
+    environment:
+      # GF_INSTALL_PLUGINS: grafana-clock-panel, grafana-simple-json-datasource, grafana-piechart-panel
+      GF_AUTH_BASIC_ENABLED: false
+      GF_AUTH_ANONYMOUS_ENABLED: true
+    ports:
+      - target: 3000
+        published: $GRAFANA_PORT
+        protocol: tcp
+    restart: unless-stopped
+
+volumes:
+  grafana-config:
+    driver: local
+  grafana-data:
+    driver: local
 ```
 
 ## Helm

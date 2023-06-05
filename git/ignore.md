@@ -1,8 +1,10 @@
 # Git Ignore
 
-<!-- ## Tips
+## Tips
 
-###
- -->
+### Exception
 
-TODO
+```gitignore
+/bin/*
+!/bin/.gitkeep
+```

@@ -19,3 +19,7 @@
 ### Open Source
 
 - [Jupyter Notebook](/jupyter/notebook.md) 🌟
+
+<!--
+https://wix-incubator.github.io/quix/
+-->

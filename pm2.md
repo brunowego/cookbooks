@@ -4,26 +4,33 @@
 https://github.com/ahmadyusri/booking-app-nodejs/blob/master/etc/docker-entrypoint-app.sh
 -->
 
+**Keywords:** Daemon Process Manager
+
 ## Links
 
 - [Code Repository](https://github.com/Unitech/pm2)
-- [Main Website](https://pm2.keymetrics.io/)
+- [Main Website](https://pm2.keymetrics.io)
 
 ## References
 
 - [Cheatsheet](https://devhints.io/pm2)
 - [Log management](https://pm2.keymetrics.io/docs/usage/log-management/)
 
+## Library
+
+### Installation
+
+```sh
+# With pnpm
+pnpm add pm2 -D
+```
+
 ## CLI
 
 ### Installation
 
-#### NPM
-
 ```sh
-npm install pm2
-
-# globally
+# With NPM
 npm install pm2 -g
 ```
 
@@ -37,21 +44,21 @@ pm2 -h
 
 ```sh
 # Running app
-pm2 start app.js
+pm2 start ./app.js
 
 #
-pm2 start api.js -i [process]
+pm2 start ./api.js -i <process>
 
 # List running apps
 pm2 list
 
 #
-pm2 stop [app_name]
-pm2 restart [app_name]
-pm2 delete [app_name]
+pm2 stop <app-name>
+pm2 restart <app-name>
+pm2 delete <app-name>
 
 # View details
-pm2 describe [app_name]
+pm2 describe <app-name>
 
 # Monitoring
 pm2 monit
@@ -61,7 +68,7 @@ pm2 reload all --update-env
 
 #
 pm2 logs
-pm2 logs [app_name]
+pm2 logs <app-name>
 pm2 logs --json
 pm2 logs --format
 
@@ -77,16 +84,16 @@ pm2 save
 pm2 unstartup
 
 #
-pm2 install [module_name]
+pm2 install <module_name>
 
 #
 pm2 update
 
 #
-pm2 reset [app_name]
+pm2 reset <app-name>
 
 #
-pm2 scale [app_name] 10
+pm2 scale <app-name> 10
 
 #
 pm2 save
@@ -103,16 +110,16 @@ pm2 generate
 #### Read Logs
 
 ```sh
-tail -f "$HOME"/.pm2/logs/[app-name]-error.log
-tail -f "$HOME"/.pm2/logs/[app-name]-out.log
+tail -f "$HOME"/.pm2/logs/<app-name>-error.log
+tail -f "$HOME"/.pm2/logs/<app-name>-out.log
 
 # Put it over HTTP server
 ( cd "$HOME"/.pm2/logs; python -m SimpleHTTPServer 8000 ) # Python v2.x
 ( cd "$HOME"/.pm2/logs; python -m http.server 8000 ) # Python v3.x
 
 #
-watch -n 2 'curl [domain]:8000/[app-name]-error.log'
-watch -n 2 'curl [domain]:8000/[app-name]-out.log'
+watch -n 2 'curl <domain>:8000/<app-name>-error.log'
+watch -n 2 'curl <domain>:8000/<app-name>-out.log'
 ```
 
 ## Docker

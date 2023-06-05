@@ -52,8 +52,8 @@ Mercado Regulado de Carbono (MRC) 99% of the market (influencia de governo, expi
 
 ## Market Types
 
-- Compliance Carbon Market (CCM)
-- Voluntary Carbon Market (VCM)
+- Compliance Carbon Market (CCM) (99%)
+- Voluntary Carbon Market (VCM) (1%)
 
 ## Conferences
 

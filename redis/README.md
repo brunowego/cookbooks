@@ -100,7 +100,7 @@ version: '3'
 
 services:
   redis:
-    image: docker.io/library/redis:7.0.8
+    image: docker.io/library/redis:7.0.8-alpine
     volumes:
       - type: volume
         source: redis-data

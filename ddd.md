@@ -8,4 +8,6 @@ https://app.pluralsight.com/library/courses/fundamentals-domain-driven-design/
 https://github.com/heynickc/awesome-ddd
 -->
 
-TODO
+## Links
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Domain-driven_design)

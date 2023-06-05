@@ -7,6 +7,10 @@ API use Polling to get data from the server.
 Webhook use Pushing to send data to the server.
 -->
 
+## Videos
+
+- [What Is A Webhook - Why Is It Key To Headless Architectures?](https://youtube.com/watch?v=Mfzucn4f9Xk)
+
 ## Tools
 
 - [Webhook.site](https://webhook.site)

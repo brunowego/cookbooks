@@ -1,6 +1,12 @@
 # InnerSource Culture
 
+**Keywords:** Practice
+
 ## Links
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Inner_source)
+
+## Related
 
 - [InnerSource Commons](https://innersourcecommons.org)
 
@@ -10,7 +16,7 @@
 
 ## Adopting an InnerSource Culture
 
-- Open collaboration encourages more contributions.
-- Developers don't always have to start from scratch.
-- Transparent decision-making builds process, trust, and alignment.
-- Higher quality development and better documentation.
+- Open collaboration encourages more contributions
+- Developers don't always have to start from scratch
+- Transparent decision-making builds process, trust, and alignment
+- Higher quality development and better documentation

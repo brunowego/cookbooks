@@ -3,6 +3,8 @@
 ## Show
 
 ```sql
+SHOW DATABASES
+use <database>
 SHOW MEASUREMENTS
 ```
 

@@ -7,12 +7,17 @@
 
 ## CLI
 
+### Links
+
+- [Docs](https://docs.influxdata.com)
+  - [CLI / v2.7](https://docs.influxdata.com/influxdb/v2.7/reference/cli/influx/)
+
 ### Installation
 
 #### Homebrew
 
 ```sh
-brew install influxdb
+brew install influxdb-cli
 ```
 
 ### Commands
@@ -31,8 +36,7 @@ version: '3'
 
 services:
   influxdb:
-    image: docker.io/library/influxdb:1.8.10-alpine
-    container_name: boilerplate-influxdb
+    image: docker.io/library/influxdb:2.7-alpine
     volumes:
       - type: volume
         source: influxdb-data

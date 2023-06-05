@@ -137,6 +137,22 @@ mkdir -p ./{apps/landing,packages}
 
 ## Issues
 
+### Missing Global Env
+
+```log
+ 25:12  high  NODE_ENV is not listed as a dependency in turbo.json  eslint/turbo/no-undeclared-env-vars
+```
+
+**Refer:** `./turbo.json`
+
+```json
+{
+  // ...
+  "globalEnv": ["NODE_ENV"]
+  // ...
+}
+```
+
 ### TBD
 
 ```log
