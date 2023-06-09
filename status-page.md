@@ -11,7 +11,7 @@
 
 ### Managed
 
-- [Atlassian Statuspage](/atlassian/atlassian-statuspage.md)
+- [Atlassian Statuspage](/atlassian/statuspage.md)
 - [Better Stack](https://betterstack.com)
 - [Instatus](https://instatus.com)
 - [UptimeRobot](/uptimerobot/README.md) 🌟

@@ -1,5 +1,9 @@
 # Cadastro Nacional de Pessoa Jurídica (CNPJ)
 
+<!--
+https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp
+-->
+
 ## Terms
 
 - Bureau de Dados

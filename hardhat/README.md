@@ -14,20 +14,18 @@ zerion.io
 
 https://github.com/gakonst/foundry
 https://github.com/AcalaNetwork/hardhat-tutorials
-
-https://www.udemy.com/course/blockchain-build-a-dapp-using-solidity-hardhat-and-react/
 -->
 
 ## Links
 
-- [Code Repository](https://github.com/nomiclabs/hardhat)
+- [Code Repository](https://github.com/NomicFoundation/hardhat)
 - [Main Website](https://hardhat.org/)
 - [Plugins](https://hardhat.org/plugins/)
 - [Configuration](https://hardhat.org/hardhat-runner/docs/config)
 
 ## References
 
-- [Solidity support](https://hardhat.org/reference/solidity-support.html)
+- [Solidity Support](https://hardhat.org/reference/solidity-support.html)
 
 ## CLI
 

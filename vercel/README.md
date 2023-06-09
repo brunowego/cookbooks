@@ -114,6 +114,7 @@ vercel certs ls
 
 #
 vercel env ls
+vercel env pull --environment development
 
 #
 vercel secrets ls

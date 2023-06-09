@@ -192,6 +192,24 @@ export AWS_SECRET_ACCESS_KEY="$(aws --profile <name> configure get aws_secret_ac
 
 ### Issues
 
+#### Open SSL Library
+
+```log
+AttributeError: module 'lib' has no attribute 'X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT'
+```
+
+<!--
+https://github.com/aws/aws-cli/issues/7942
+-->
+
+```sh
+#
+aws --version
+
+#
+pip3 install pyOpenSSL==23.1.0
+```
+
 #### Missing Default Region
 
 ```log

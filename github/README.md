@@ -21,6 +21,8 @@ https://github.community/t/picture-tag-in-markdown/149471
 - [Pricing Calculator](https://github.com/pricing/calculator)
 - Docs
   - [Installation](https://cli.github.com/manual/installation)
+- Settings
+  - [Appearance](https://github.com/settings/appearance)
 
 ## References
 

@@ -11,7 +11,7 @@ https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/cloud
 ## Links
 
 - [Main Website](https://cloudflare.com)
-- [Dashboard](https://dash.cloudflare.com/)
+- [Dashboard](https://dash.cloudflare.com)
 
 ## Docs
 

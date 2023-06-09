@@ -41,7 +41,20 @@ Mercado Regulado de Carbono (MRC) 99% of the market (influencia de governo, expi
 - Digital Carbon Market (DCM)
 - Emissions Trading Scheme (ETS)
 - Environmental, Social, and Corporate Governance (ESG)
+- Reducing Emissions from Deforestation in Developing Countries (REDD)
 - Regenerative Finance (ReFi)
+
+<!--
+Cédula de Produto Rural Verde (CPR Verde)
+Impacto Positivo (Net Positive)
+Taskforce on Nature-related Financial Disclosure (TNFD)
+Conselho Empresarial Brasileiro para o Desenvolvimento Sustentável (CEBDS)
+Nature's Services (Serviços Ambientais)
+Crédito de Biodiversidade
+Verde Collateral
+
+https://www.bndes.gov.br/wps/portal/site/home/mercado-de-capitais/creditos-de-carbono
+-->
 
 ## Terms
 

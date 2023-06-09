@@ -1,11 +1,7 @@
 # Design
 
 <!--
-https://superlogica.com
-https://rechain.co
-https://specifyapp.com
-
-https://intercom.com/drlp/business-growth-sb
+https://gist.github.com/brunowego/6d73ada7fafa3531dcf34681e3ec98e2
 -->
 
 ## Links

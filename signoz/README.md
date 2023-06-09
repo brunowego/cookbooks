@@ -9,6 +9,10 @@
 - [Docs](https://signoz.io/docs)
   - [Deploying with Helm directly](https://signoz.io/docs/install/kubernetes/others/)
 
+## Related
+
+- [OpenTelemetry Collector](/opentelemetry/collector.md)
+
 ## Helm
 
 ### References

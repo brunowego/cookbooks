@@ -102,10 +102,10 @@ mkdir -p ./{apps/landing,packages}
   "scripts": {
     // ...
     "dev": "turbo run dev --parallel",
-    "build": "turbo run build",
-    "start": "turbo run start",
     "lint": "turbo run lint",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "build": "turbo run build",
+    "start": "turbo run start"
   }
 }
 ```
@@ -117,20 +117,13 @@ mkdir -p ./{apps/landing,packages}
   "$schema": "https://turborepo.org/schema.json",
   "pipeline": {
     "dev": {
-      "cache": false
+      "cache": false,
+      "persistent": true
     },
-    "lint": {
-      "outputs": []
-    },
-    "test": {
-      "outputs": []
-    },
-    "build": {
-      "outputs": []
-    },
-    "start": {
-      "outputs": []
-    }
+    "lint": {},
+    "test": {},
+    "build": {},
+    "start": {}
   }
 }
 ```

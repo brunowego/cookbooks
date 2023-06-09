@@ -32,6 +32,52 @@ docker run -d \
 docker rm -f redpanda-console
 ```
 
+## Docker Compose
+
+### Configuration
+
+**Refer:** `./config/redpanda-console/config.yml`
+
+```yml
+---
+# kafka:
+#   brokers: ['redpanda:9092']
+#   clientId: console
+#   schemaRegistry:
+#     enabled: true
+#     urls: ['http://redpanda:8081']
+
+# redpanda:
+#   adminApi:
+#     enabled: true
+#     urls: ['http://redpanda:9644']
+```
+
+### Manifest
+
+```yml
+---
+version: '3'
+
+services:
+  # ...
+
+  redpanda-console:
+    image: docker.io/redpandadata/console:v2.2.4
+    container_name: boilerplate-redpanda-console
+    volumes:
+      - type: bind
+        source: ./config/redpanda-console/config.yml
+        target: /app/config.yml
+    environment:
+      CONFIG_FILEPATH: /app/config.yml
+    ports:
+      - target: 8080
+        published: 8080
+        protocol: tcp
+    restart: unless-stopped
+```
+
 ## Helm
 
 ### Dependencies

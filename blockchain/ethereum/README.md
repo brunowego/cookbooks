@@ -11,7 +11,9 @@ https://github.com/scaffold-eth/scaffold-eth
 
 https://www.casadocodigo.com.br/products/livro-blockchain-ethereum
 
-https://bordel.wtf/
+https://bordel.wtf
+
+https://app.pluralsight.com/library/courses/blockchain-ethereum-developing-applications/table-of-contents
 -->
 
 ## Links

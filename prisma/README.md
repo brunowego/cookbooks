@@ -26,6 +26,10 @@ https://github.com/podkrepi-bg/api/tree/master/db/seed
 - [Example projects](https://prisma.io/docs/about/prisma/example-projects)
   - [Code Repository](https://github.com/prisma/prisma-examples/tree/latest)
 
+## Tools
+
+- [Prisma Schema Builder](https://github.com/albingroen/prismabuilder.io)
+
 ## Terms
 
 - Schema Definition Language (SDL)

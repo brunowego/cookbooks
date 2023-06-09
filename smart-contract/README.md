@@ -32,7 +32,7 @@ https://github.com/trufflesuite/truffle
 - ERC-20
 - ERC-721 (NFT)
 
-## Proof Types
+## Consensus Mechanisms
 
 - Proof of Authority (PoA)
 - Proof of Reserve (PoR)

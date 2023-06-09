@@ -25,7 +25,13 @@ Devnet
 
 ## Glossary
 
+- Blockchain-as-a-Service (BaaS)
+- Decentralized Application (dApp)
+- Decentralized Autonomous Organization (DAO)
+- Decentralized Finance (DeFi)
 - Distributed Ledger Technology (DLT)
+- Know Your Transaction (KYT)
+- Transactions Per Second (TPS)
 
 ## Programming Languages for Smart Contracts
 

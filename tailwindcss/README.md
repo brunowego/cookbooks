@@ -1,9 +1,5 @@
 # Tailwind CSS
 
-<!--
-https://github.com/search?q=path%3Aapps+path%3Apackage.json+%22next+dev%22+%22tailwindcss%22&type=code
--->
-
 **Keywords:** CSS framework
 
 <!-- TODO: Lint not working with VS Code -->
@@ -173,7 +169,8 @@ jq '."files.associations"."*.css" |= "tailwindcss"' "$PWD"/.vscode/settings.json
 Unknown at rule @tailwind css(unknownAtRules)
 ```
 
-Just install [Visual Studio Code Extension](/postcss.md#visual-studio-code).
+- Option 1: Install [Tailwind CSS Extension](#visual-studio-code)
+- Option 2: Install [PostCSS Visual Extension](/postcss.md#visual-studio-code)
 
 #### TBD
 

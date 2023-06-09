@@ -4,7 +4,7 @@
 
 - [AvePDF](https://avepdf.com/esign-pdf)
 - [DigiSigner](https://digisigner.com/free-electronic-signature)
-- [DocuSign](https://docusign.com/esignature/esign-pdf-free)
+- [DocuSign](https://docusign.com/esignature/esign-pdf-free) 🌟
 - [iLovePDF](https://ilovepdf.com/sign-pdf)
 - [Sejda](https://sejda.com/sign-pdf)
 - [Smallpdf.com](https://smallpdf.com/sign-pdf)

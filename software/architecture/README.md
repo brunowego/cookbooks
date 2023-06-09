@@ -23,6 +23,7 @@ https://c4model.com
 
 ## Terms
 
+- Change Management / Gestão da Mudança (GMUD)
 - Solution Architecture
 
 ## Architecture Pattern

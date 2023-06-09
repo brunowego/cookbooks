@@ -16,6 +16,8 @@ Structure
 
 https://github.com/darenmalfait/daren.be/blob/main/.github/workflows/release-studio.yml
 https://github.com/darenmalfait/daren.be/tree/main/studio
+
+https://github.com/jopesh/homepage/tree/main/studio
 -->
 
 **Keywords:** [Headless CMS](/headless-cms.md)

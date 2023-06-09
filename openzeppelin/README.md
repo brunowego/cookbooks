@@ -2,7 +2,6 @@
 
 <!--
 https://github.com/eternaexchange/contract
-https://www.udemy.com/courses/search/?src=ukw&q=openzeppelin
 -->
 
 ## Links
