@@ -5,6 +5,11 @@ https://www.gov.br/economia/pt-br/assuntos/noticias/2022/maio/governo-federal-ed
 -->
 
 <!--
+# Crypto
+https://betacarbon.com
+https://mco2token.moss.earth
+https://cct.co
+
 # Platforms
 
 https://gosupercritical.com

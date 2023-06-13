@@ -1,5 +1,9 @@
 # Lingui
 
+<!--
+pnpm add @lingui/conf -D
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/lingui/js-lingui)
@@ -16,11 +20,15 @@
 ```sh
 # Using NPM
 npm install @lingui/core @lingui/loader @lingui/macro @lingui/react
-npm install @babel/core babel-plugin-macros @lingui/cli --save-dev
+npm install @babel/core babel-plugin-macros @lingui/cli @lingui/conf --save-dev
 
 # Using Yarn
 yarn add @lingui/core @lingui/loader @lingui/macro @lingui/react
-yarn add @babel/core babel-plugin-macros @lingui/cli --dev
+yarn add @babel/core babel-plugin-macros @lingui/cli @lingui/conf --dev
+
+# Using pnpm
+pnpm add @lingui/core @lingui/loader @lingui/macro @lingui/react
+pnpm add @babel/core babel-plugin-macros @lingui/cli @lingui/conf -D
 ```
 
 <!--
@@ -34,10 +42,11 @@ yarn add @babel/core babel-plugin-macros @lingui/cli --dev
 ```json
 {
   "scripts": {
-    // "prebuild": "yarn lingui",
+    // "prebuild": "npm run lingui",
     // "build": "",
-    "lingui": "yarn lingui:extract; yarn lingui:compile",
-    "lingui:extract": "cross-env NODE_ENV='development' lingui extract --clean",
+    "lingui": "npm run lingui:extract; npm run lingui:compile",
+    // "lingui:extract": "cross-env NODE_ENV='development' lingui extract --clean",
+    "lingui:extract": "lingui extract --clean",
     "lingui:compile": "lingui compile --strict"
   }
 }
@@ -46,7 +55,9 @@ yarn add @babel/core babel-plugin-macros @lingui/cli --dev
 **Refer:** `./lingui.config.ts`
 
 ```js
-const linguiConfig = {
+import type { LinguiConfig } from '@lingui/conf'
+
+const config: LinguiConfig = {
   catalogs: [
     {
       path: '<rootDir>/src/locales/{locale}/messages',
@@ -69,7 +80,7 @@ const linguiConfig = {
   pseudoLocale: 'pseudo',
 }
 
-export default linguiConfig
+export default config
 ```
 
 ## CLI

@@ -5,6 +5,7 @@
 - [Wikipedia](https://en.wikipedia.org/wiki/Brand)
 
 <!--
-busca.inpi.gov.br
+https://busca.inpi.gov.br/pePI/
+
 https://servicosonline.inpi.pt/pesquisas/main/marcas.jsp?lang=PT
 -->

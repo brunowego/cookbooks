@@ -32,10 +32,13 @@ echo '/src/locales/*/*.js' >> ./.gitignore
 **Refer:** `./lingui.config.js`
 
 ```js
+/**
+ * @type { import('@lingui/conf').LinguiConfig }
+ */
 const linguiConfig = {
   catalogs: [
     {
-      path: '<rootDir>/src/locales/{locale}',
+      path: '<rootDir>/src/locales/{locale}/messages',
       include: ['<rootDir>/src/components', '<rootDir>/src/pages'],
     },
   ],
@@ -63,7 +66,7 @@ module.exports = linguiConfig
 ```mjs
 import linguiConfig from './lingui.config.js'
 
-const { locales, sourceLocale } = linguiConfig
+const { locales, sourceLocale: defaultLocale } = linguiConfig
 
 /**
  * @type { import('next').NextConfig }
@@ -74,7 +77,7 @@ const nextConfig = {
   i18n: {
     localeDetection: true,
     locales,
-    defaultLocale: sourceLocale,
+    defaultLocale,
   },
   webpack: (config) => {
     config.module.rules.push({
@@ -103,7 +106,7 @@ function App({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     async function load(lang: any) {
-      const { messages } = await import(`../locales/${lang}.po`)
+      const { messages } = await import(`../locales/${lang}/messages.po`)
 
       i18n.load(lang, messages)
       i18n.activate(lang)
@@ -138,8 +141,10 @@ class Document extends NextDocument {
     return (
       <Html lang={this.props.locale}>
         <Head />
+
         <body>
           <Main />
+
           <NextScript />
         </body>
       </Html>
@@ -151,6 +156,29 @@ export default Document
 ```
 
 ## Issues
+
+### Missing Babel
+
+```log
+Module not found: Can't resolve 'fs'
+```
+
+Try create `.babelrc` file with the following content:
+
+```json
+{
+  "presets": ["next/babel"],
+  "plugins": ["macros"]
+}
+```
+
+### Missing I18n Provider
+
+```log
+Error: useLingui hook was used without I18nProvider.
+```
+
+Missing `I18nProvider` component on `./src/pages/_app.tsx`.
 
 ### Force Render On Locale Change
 
@@ -168,6 +196,28 @@ I18nProvider did not render. A call to i18n.activate still needs to happen or fo
 
 ```log
 I18nProvider rendered `null`. A call to `i18n.activate` needs to happen in order for translations to be activated and for the I18nProvider to render.This is not an error but an informational message logged only in development.
+```
+
+TODO
+
+### TBD
+
+```log
+Invalid dependencies have been reported by plugins or loaders for this module. All reported dependencies need to be absolute paths.
+Invalid dependencies may lead to broken watching and caching.
+As best effort we try to convert all invalid values to absolute paths and converting globs into context dependencies, but this is deprecated behavior.
+Loaders: Pass absolute paths to this.addDependency (existing files), this.addMissingDependency (not existing files), and this.addContextDependency (directories).
+Plugins: Pass absolute paths to fileDependencies (existing files), missingDependencies (not existing files), and contextDependencies (directories).
+Globs: They are not supported. Pass absolute path to the directory as context dependencies.
+The following invalid values have been reported:
+ * "src/locales/en/messages.po"
+@acme/web:dev:
+Import trace for requested module:
+./src/locales/es/messages.po
+./src/locales/ lazy ^\.\/.*\/messages\.po$ referencedExports: messages namespace object
+./src/pages/_app.tsx
+@acme/web:dev:
+./src/locales/pseudo/messages.po
 ```
 
 TODO

@@ -1,6 +1,6 @@
 # Weblate
 
-**Keywords:** Translation
+**Keywords:** Translation System
 
 ## Links
 

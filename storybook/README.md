@@ -1,16 +1,5 @@
 # Storybook
 
-<!--
-Exemples
-
-https://github.com/onfido/castor
-https://github.com/getflip/swirl
-https://github.com/Vizzuality/front-end-scaffold
-https://github.com/prisma/lens
-https://github.com/creativecommons/vocabulary
-https://github.com/wfp/designsystem
--->
-
 ## Links
 
 - [Code Repository](https://github.com/storybookjs/storybook)

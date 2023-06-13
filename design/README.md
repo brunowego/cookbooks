@@ -2,6 +2,9 @@
 
 <!--
 https://gist.github.com/brunowego/6d73ada7fafa3531dcf34681e3ec98e2
+
+https://li.fi/sdk/
+https://developer-portfolio.zakariabenali.me/
 -->
 
 ## Links

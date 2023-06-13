@@ -4,6 +4,8 @@
 
 - [Org. Repository](https://github.com/mailersend/)
 - [Main Website](https://mailersend.com)
+- Help
+  - [How to send emails via SMTP with MailerSend](https://mailersend.com/help/smtp-relay)
 
 ## Docs
 

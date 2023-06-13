@@ -8,18 +8,25 @@
 
 ## Bootstrap
 
-```sh
+<!--
 pnpm config set auto-install-peers true
 pnpm config set legacy-peer-deps true
+-->
 
+```sh
+#
 pnpx sb init \
   -s \
   -p tsx \
   --type react \
   -b @storybook/builder-vite
+```
 
+<!--
+#
 pnpm add react react-dom prop-types
 
+#
 pnpm add \
   @mdx-js/react@1 \
   @storybook/addon-backgrounds \
@@ -34,7 +41,7 @@ pnpm add \
   dotenv-cli \
   vite \
   -D
-```
+-->
 
 ## Configuration
 
@@ -67,6 +74,30 @@ pnpm storybook:build
 ```
 
 ## Issues
+
+### TBD
+
+```log
+Module "path" has been externalized for browser compatibility. Cannot access "path.join" in client code.  See http://vitejs.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+```
+
+TODO
+
+### TBD
+
+```log
+__dirname is not defined
+```
+
+TODO
+
+### TBD
+
+```log
+Cannot read properties of undefined (reading 'fonts')
+```
+
+TODO
 
 ### MDX2: Can't resolve @mdx-js/react
 

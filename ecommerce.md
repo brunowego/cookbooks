@@ -7,3 +7,9 @@
 <!--
 https://www.udemy.com/course/starting-an-ecommerce-business-in-pakistan/
 -->
+
+## Platforms
+
+- Magento
+- Shopify
+- WooCommerce

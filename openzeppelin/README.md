@@ -8,6 +8,7 @@ https://github.com/eternaexchange/contract
 
 - [Org. Repository](https://github.com/OpenZeppelin)
 - [Main Website](https://openzeppelin.com)
+- [Contracts Wizard](https://wizard.openzeppelin.com)
 
 ## Terms
 
