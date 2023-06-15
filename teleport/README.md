@@ -60,7 +60,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 [[ -n "${DOMAIN}" ]] && helm install teleport-cluster teleport/teleport-cluster \
-  --version 13.0.0 \
+  --version 13.1.0 \
   -f <(cat << EOF
 clusterName: teleport.${DOMAIN}
 
@@ -130,10 +130,10 @@ spec:
 EOF
 
 #
-curl -k "https://teleport.${DOMAIN}/webapi/ping"
+curl -sk "https://teleport.${DOMAIN}/webapi/ping" | jq .
 ```
 
-#### Create App User
+### Create App User
 
 ```sh
 #
@@ -151,7 +151,9 @@ export POD_NAME=$(kubectl get po -l app.kubernetes.io/component=auth -o jsonpath
     admin
 ```
 
-#### TCP Ingress Route
+### Ingress Route
+
+#### Option 1: Using TCP
 
 | Service     | Port |
 | ----------- | ---- |
@@ -180,18 +182,107 @@ kubectl get deployment ingress-nginx-controller \
       kubectl apply -f -
 ```
 
-<!--
-- kube.teleport.${DOMAIN}
-- tunnel.teleport.${DOMAIN}
-- ssh.teleport.${DOMAIN}
-- mysql.teleport.${DOMAIN}
--->
+#### Option 2: Using Multiplex
+
+```sh
+#
+kubens teleport
+
+#
+export TELEPORT_HELM_CHART_VERSION='13.1.0'
+
+#
+helm upgrade teleport-cluster teleport/teleport-cluster \
+  --version "$TELEPORT_HELM_CHART_VERSION" \
+  -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values teleport-cluster -o yaml) <(cat << EOF
+proxyListenerMode: multiplex
+EOF
+))
+
+#
+helm get values teleport-cluster -o yaml
+
+#
+curl -sk "https://teleport.${DOMAIN}/webapi/ping" | jq .
+```
+
+#### Option 3: Using Domain
+
+> Note: Currently Not Working
+
+| Service     | Host                        |
+| ----------- | --------------------------- |
+| SSH Proxy   | `ssh.teleport.${DOMAIN}`    |
+| Kubernetes  | `kube.teleport.${DOMAIN}`   |
+| SSH Tunnel  | `tunnel.teleport.${DOMAIN}` |
+| MySQL Proxy | `mysql.teleport.${DOMAIN}`  |
+
+```sh
+#
+kubens teleport
+
+#
+[[ -n "${DOMAIN}" ]] && cat << EOF | kubectl apply \
+  -f -
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: teleport-cluster-ssh
+  annotations:
+    app.kubernetes.io/name: teleport-cluster-ssh
+    cert-manager.io/cluster-issuer: letsencrypt-issuer
+    nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+      - ssh.teleport.${DOMAIN}
+    secretName: teleport-ssh.tls-secret
+  rules:
+    - host: ssh.teleport.${DOMAIN}
+      http:
+        paths:
+        - backend:
+            service:
+              name: teleport-cluster
+              port:
+                number: 3023
+          path: /
+          pathType: Prefix
+EOF
+
+#
+export TELEPORT_HELM_CHART_VERSION='13.1.0'
+
+#
+helm upgrade teleport-cluster teleport/teleport-cluster \
+  --version "$TELEPORT_HELM_CHART_VERSION" \
+  -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values teleport-cluster -o yaml) <(cat << EOF
+sshPublicAddr:
+  - ssh.teleport.${DOMAIN}:443
+EOF
+))
+
+#
+curl -sk "https://teleport.${DOMAIN}/webapi/ping" | jq .
+```
 
 ### Next Steps
 
 - [Teleport Kube Agent](./kube-agent.md#helm)
 - Services
   - [Teleport Application Service](./services/application.md)
+
+### Issues
+
+#### TBD
+
+```log
+ERROR: Unable to connect to ssh proxy at ssh.teleport.192.168.64.46.nip.io:443. Confirm connectivity and availability. Error: ssh: handshake failed: ssh: overflow reading version string
+```
+
+TODO
 
 ### Delete
 

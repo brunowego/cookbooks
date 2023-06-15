@@ -6,7 +6,7 @@ https://github.com/gravitational/teleport/tree/master/examples/chart
 
 ## Helm
 
-## Docs
+### Docs
 
 - [Joining Services via Kubernetes ServiceAccount Token](https://goteleport.com/docs/management/join-services-to-your-cluster/kubernetes/)
 
@@ -29,9 +29,6 @@ https://goteleport.com/docs/management/join-services-to-your-cluster/join-token/
 kubens teleport
 
 #
-helm search repo -l teleport/teleport-kube-agent
-
-#
 cat << EOF | kubectl exec -i deployment/teleport-cluster-auth -- tctl create -f
 ---
 kind: token
@@ -49,7 +46,10 @@ spec:
 EOF
 
 #
-kubectl exec -i deployment/teleport-cluster-auth tctl get token/kubernetes-token
+kubectl exec deployment/teleport-cluster-auth -- tctl get token/kubernetes-token
+
+#
+helm search repo -l teleport/teleport-kube-agent
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
@@ -57,7 +57,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install teleport-app-service teleport/teleport-kube-agent \
-  --version 13.0.0 \
+  --version 13.1.1 \
   -f <(cat << EOF
 proxyAddr: teleport.${DOMAIN}:443
 
@@ -76,6 +76,9 @@ apps:
 insecureSkipProxyTLSVerify: true
 EOF
 )
+
+#
+kubectl rollout status statefulset teleport-app-service
 
 #
 tsh login --proxy "teleport.${DOMAIN}" --user admin --insecure

@@ -38,20 +38,20 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: grafana.teleport.${DOMAIN}
-    http:
-      paths:
-      - backend:
-          service:
-            name: teleport-cluster
-            port:
-              number: 443
-        path: /
-        pathType: Prefix
+    - host: grafana.teleport.${DOMAIN}
+      http:
+        paths:
+        - backend:
+            service:
+              name: teleport-cluster
+              port:
+                number: 443
+          path: /
+          pathType: Prefix
   tls:
-  - hosts:
-    - grafana.teleport.${DOMAIN}
-    secretName: teleport-grafana.tls-secret
+    - hosts:
+        - grafana.teleport.${DOMAIN}
+      secretName: teleport-grafana.tls-secret
 EOF
 ```
 

@@ -14,7 +14,9 @@ https://github.com/search?q=path%3Aapps+path%3Apackage.json+content%3Atailwindcs
 - [Better Stack](https://betterstack.com)
 
 <!--
+https://staze.com
 https://ghost.org
+https://timescale.com
 
 https://parca.dev
 https://liveblocks.io

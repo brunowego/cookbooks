@@ -197,7 +197,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install grafana grafana/grafana \
-  --version 6.50.1 \
+  --version 6.57.2 \
   -f <(cat << EOF
 adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
 

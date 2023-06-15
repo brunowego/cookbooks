@@ -4,6 +4,8 @@
 https://github.com/vercel/examples/tree/main/edge-functions/i18n
 
 https://github.com/sushiswap/sushiswap-interface/blob/master/.github/workflows/translations.yaml
+
+https://bravo-kernel.com/blog/2023/05/how-to-build-a-fully-internationalized-nextjs-application-using-lingui-v4
 -->
 
 ## Links
@@ -195,7 +197,7 @@ I18nProvider did not render. A call to i18n.activate still needs to happen or fo
 ### TBD
 
 ```log
-I18nProvider rendered `null`. A call to `i18n.activate` needs to happen in order for translations to be activated and for the I18nProvider to render.This is not an error but an informational message logged only in development.
+I18nProvider rendered `null`. A call to `i18n.activate` needs to happen in order for translations to be activated and for the I18nProvider to render. This is not an error but an informational message logged only in development.
 ```
 
 TODO
@@ -204,20 +206,6 @@ TODO
 
 ```log
 Invalid dependencies have been reported by plugins or loaders for this module. All reported dependencies need to be absolute paths.
-Invalid dependencies may lead to broken watching and caching.
-As best effort we try to convert all invalid values to absolute paths and converting globs into context dependencies, but this is deprecated behavior.
-Loaders: Pass absolute paths to this.addDependency (existing files), this.addMissingDependency (not existing files), and this.addContextDependency (directories).
-Plugins: Pass absolute paths to fileDependencies (existing files), missingDependencies (not existing files), and contextDependencies (directories).
-Globs: They are not supported. Pass absolute path to the directory as context dependencies.
-The following invalid values have been reported:
- * "src/locales/en/messages.po"
-@acme/web:dev:
-Import trace for requested module:
-./src/locales/es/messages.po
-./src/locales/ lazy ^\.\/.*\/messages\.po$ referencedExports: messages namespace object
-./src/pages/_app.tsx
-@acme/web:dev:
-./src/locales/pseudo/messages.po
 ```
 
 TODO

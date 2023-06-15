@@ -4,6 +4,16 @@
 
 - [Download](https://goteleport.com/download)
 
+## App
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install --cask teleport-connect
+```
+
 ## Issues
 
 ### Not Trusted Certificate

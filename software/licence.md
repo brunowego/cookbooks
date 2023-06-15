@@ -1,6 +1,4 @@
-# Digital Key
-
-**Keywords:** Software License
+# Software Licence
 
 ## Marketplace
 
