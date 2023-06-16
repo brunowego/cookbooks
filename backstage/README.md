@@ -238,6 +238,14 @@ kubectl get secret backstage-postgresql \
 
 ### Issues
 
+### TBD
+
+```log
+Login failed; caused by Error: Login failed, this email <username>@<domain> does not belong to the expected domain
+```
+
+TODO
+
 #### TBD
 
 ```log

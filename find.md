@@ -35,6 +35,12 @@ find . -name \*.<extension>
 
 ## Tips
 
+### Search Text on Files
+
+```sh
+find . -name '<filename>' -exec grep -i '<text>' {} \; -print
+```
+
 ### Kill Process
 
 ```sh

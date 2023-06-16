@@ -6,12 +6,25 @@
 
 ## Links
 
-- [Main Website](https://mermaid.js.org/)
+- [Main Website](https://mermaid.js.org)
 - [Live Editor](https://mermaid.live)
 
 ## Posts
 
 - [GitHub / Include diagrams in your Markdown files with Mermaid](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/)
+
+<!-- ##
+
+|     |             |
+| --- | ----------- |
+|     | `L[Text]`   |
+|     | `L{Text}`   |
+|     | `L(Text)`   |
+|     | `L((Text))` | -->
+
+<!--
+|Text| L[Text]
+-->
 
 ## Syntax
 

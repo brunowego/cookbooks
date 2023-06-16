@@ -241,16 +241,6 @@ python3
 
 ### Tips
 
-#### EditorConfig
-
-```sh
-cat << EOF > ./.editorconfig
-[*.py]
-indent_size = 4
-
-EOF
-```
-
 #### Setuptools
 
 ```sh

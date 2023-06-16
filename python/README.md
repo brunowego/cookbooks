@@ -21,6 +21,16 @@ https://linkedin.com/learning/data-science-foundations-data-mining-in-python/pyt
 
 ## Tips
 
+### EditorConfig
+
+```sh
+cat << EOF > ./.editorconfig
+[*.py]
+indent_size = 4
+
+EOF
+```
+
 ### Visual Studio Code
 
 **_Dependencies_**: [Pylint](/pylint.md)
