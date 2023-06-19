@@ -14,6 +14,21 @@
 - [Code Repository](https://github.com/Pluralith/pluralith-cli)
 - [Docs](https://docs.pluralith.com/docs/category/cli-commands)
 
+### Installation
+
+<!-- #### Homebrew
+
+```sh
+brew tap pluralith/pluralith https://github.com/Pluralith/pluralith-homebrew-tap
+brew install pluralith
+``` -->
+
+#### Darwin Binary
+
+```sh
+wget -O /usr/local/bin/pluralith https://github.com/Pluralith/pluralith-cli/releases/download/v0.2.2/pluralith_cli_darwin_amd64_v0.2.2 && chmod +x /usr/local/bin/pluralith
+```
+
 ### Commands
 
 ```sh

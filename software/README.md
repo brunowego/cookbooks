@@ -16,6 +16,10 @@ Leading zero
 
 - [listmonk](/listmonk.md)
 
+## Approaches
+
+- You Build It, You Run It
+
 ## Schedule
 
 - [Calendso (Calendly alternative)](https://github.com/calendso/calendso)

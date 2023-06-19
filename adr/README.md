@@ -6,6 +6,8 @@ https://github.com/search?q=path%3Adecisions+path%3A.md&type=code
 https://github.com/search?q=path%3Adocs%2Fadrs+path%3A.md&type=code
 -->
 
+**Keywords:** Methodology, Approaches
+
 ## Links
 
 - [Main Website](https://adr.github.io)

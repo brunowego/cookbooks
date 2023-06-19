@@ -18,7 +18,8 @@
 
 ## Companies
 
-- [Porsche](https://github.com/porsche-design-system/porsche-design-system)
+- [Elastic UI Framework](https://github.com/elastic/eui)
+- [Porsche Design System](https://github.com/porsche-design-system/porsche-design-system)
 
 <!--
 https://github.com/coingaming/moon-design

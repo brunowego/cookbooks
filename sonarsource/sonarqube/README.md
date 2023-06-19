@@ -8,6 +8,8 @@ https://github.com/tynn/sonar-badge-proxy
 https://github.com/taptap/sonarqube-badges
 -->
 
+**Keywords:** SAST, Code Quality, Continuous Inspection
+
 ## Editions
 
 - [Community Edition](./ce/README.md)

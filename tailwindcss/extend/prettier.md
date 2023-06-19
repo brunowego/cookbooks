@@ -8,10 +8,13 @@
 
 ```sh
 # Using NPM
-npm install prettier-plugin-tailwindcss --save-dev
+npm install prettier prettier-plugin-tailwindcss --save-dev
 
 # Using Yarn
-yarn add prettier-plugin-tailwindcss --dev
+yarn add prettier prettier-plugin-tailwindcss --dev
+
+# Using pnpm
+pnpm add prettier prettier-plugin-tailwindcss -D
 ```
 
 ## Configuration
@@ -23,7 +26,7 @@ yarn add prettier-plugin-tailwindcss --dev
  * @type { import('prettier').Options }
  */
 const prettierConfig = {
-  // ...
+  // ...require('../../prettier.config.cjs'),
   plugins: [require('prettier-plugin-tailwindcss')],
   tailwindConfig: './tailwind.config.cjs',
 }

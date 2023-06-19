@@ -13,7 +13,7 @@
 
 ### Non-profit
 
-- [Let's Encrypt](/letsencrypt.md)
+- [Let's Encrypt](/lets-encrypt.md)
 
 ### For-profit
 

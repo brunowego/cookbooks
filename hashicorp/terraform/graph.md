@@ -16,5 +16,5 @@ terraform graph
 
 #
 terraform graph -type=plan | dot -Tpng > ./graph.png
-terraform graph -type=plan | dot -Tsvg > ./graph.png
+terraform graph -type=plan | dot -Tsvg > ./graph.svg
 ```

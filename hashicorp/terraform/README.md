@@ -171,10 +171,13 @@ terraform -h
 ```sh
 #
 terraform login app.terraform.io
+
 cat ~/.terraform.d/credentials.tfrc.json
-# or
-export TERRAFORM_TOKEN='<token>'
 ```
+
+<!--
+export TERRAFORM_TOKEN='<token>'
+-->
 
 ### Usage
 

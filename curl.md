@@ -200,6 +200,17 @@ ldd `which curl` | grep -E '(ssl|crypto)'
 
 ### Issues
 
+#### Missing Symbols
+
+```log
+Error relocating /usr/bin/curl: curl_easy_nextheader: symbol not found
+Error relocating /usr/bin/curl: curl_easy_header: symbol not found
+```
+
+```sh
+apk upgrade
+```
+
 <!-- ####
 
 ```log

@@ -63,6 +63,14 @@ ln -s /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome /usr/local/
 
 ### Tips
 
+<!-- ####
+
+```sh
+open -a 'Google Chrome' --args --incognito
+
+open -a 'Google Chrome' --args --ssl-version-min=tls1
+``` -->
+
 #### Cleaning HTTPS 301 Redirect
 
 1. Open "More Tools -> Developer Tools"

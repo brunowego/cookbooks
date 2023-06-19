@@ -12,6 +12,9 @@ npm install @svgr/webpack --save-dev
 
 # Using Yarn
 yarn add @svgr/webpack --dev
+
+# Using pnpm
+pnpm add @svgr/webpack -D
 ```
 
 ## Configuration
@@ -25,24 +28,29 @@ yarn add @svgr/webpack --dev
 const nextConfig = {
   // ...
   webpack: (config) => {
+    // config.module.rules.push({
+    //   test: /\.svg$/i,
+    //   issuer: /\.tsx?$/,
+    //   use: [
+    //     {
+    //       loader: '@svgr/webpack',
+    //       options: {
+    //         svgoConfig: {
+    //           plugins: [
+    //             {
+    //               name: 'removeViewBox',
+    //               active: false,
+    //             },
+    //           ],
+    //         },
+    //       },
+    //     },
+    //   ],
+    // })
+
     config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.tsx?$/,
-      use: [
-        {
-          loader: '@svgr/webpack',
-          options: {
-            svgoConfig: {
-              plugins: [
-                {
-                  name: 'removeViewBox',
-                  active: false,
-                },
-              ],
-            },
-          },
-        },
-      ],
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
     })
 
     return config

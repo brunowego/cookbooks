@@ -7,6 +7,8 @@ https://www.linkedin.com/learning/serverless-architecture
 https://egghead.io/blog/saas-app-with-nextjs-prisma-auth0-and-stripe
 -->
 
+**Keywords:** AuthN
+
 ## Links
 
 - [Main Website](https://auth0.com)

@@ -204,6 +204,15 @@ echo '/out' >> ./.gitignore
 
 ### Issues
 
+#### Link Inside Link
+
+```log
+Error: Hydration failed because the initial UI does not match what was rendered on the server.
+Warning: Expected server HTML to contain a matching <div> in <a>.
+```
+
+Have a link `<a />` inside link `<a />`.
+
 #### Incompatibility with PNPM, Turborepo and Standalone
 
 ```log
@@ -237,17 +246,15 @@ Your tsconfig.json extends another configuration, which means we cannot add the 
 
 TODO
 
-#### TBD
+#### Missing Next.js
 
 ```log
 0:0  high  Parsing error: Cannot find module 'next/babel' ↵ Require stack: ↵
 ```
 
-TODO
-
-<!-- ```sh
+```sh
 pnpm add next -D --filter eslint-config-custom
-``` -->
+```
 
 #### TBD
 

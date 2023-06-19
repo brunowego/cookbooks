@@ -1,5 +1,7 @@
 # Trunk
 
+**Keywords:** Developer Experience (DevEx)
+
 ## Links
 
 - [Org. Repository](https://github.com/trunk-io)

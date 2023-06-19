@@ -7,7 +7,9 @@ https://docs.malga.io
 https://dev.iugu.com/docs
 https://docs.yampi.com.br
 https://docs.transfeera.dev
+https://docs.dlocal.com
 
+https://github.com/dlocal
 https://github.com/jeny3g/paymee-pix-payments-node-nestjs
 https://github.com/dsperax/pix-payment
 https://github.com/VictorMagalhaesSales/microsservices-banks-parent

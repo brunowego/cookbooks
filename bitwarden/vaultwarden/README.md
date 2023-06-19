@@ -5,7 +5,7 @@ Infrastructure
 Platform
 -->
 
-**Keywords:** Unofficial Bitwarden
+**Keywords:** Unofficial Bitwarden, Password Management
 
 ## Links
 

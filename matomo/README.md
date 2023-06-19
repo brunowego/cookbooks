@@ -1,4 +1,4 @@
-# Matomo (A.k.a Piwik)
+# Matomo (formely Piwik)
 
 <!--
 https://xdeb.org/post/2020/01/14/content-security-policy-headers-when-using-matomo-or-google-analytics/

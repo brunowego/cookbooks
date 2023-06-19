@@ -9,3 +9,14 @@ Security protocol used to secure data between two machines using encryption.
 ## Related
 
 - [OpenSSL](/openssl.md)
+
+## Environment Recommendations
+
+- Local Development:
+  - [mkcert](/mkcert.md)
+- Staging:
+  - [Let's Encrypt](/lets-encrypt/README.md)
+- Production:
+  - [Let's Encrypt](/lets-encrypt/README.md)
+  - [AWS Certificate Manager (ACM)](/aws/services/acm.md)
+  - [Cloudflare](https://cloudflare.com/ssl)

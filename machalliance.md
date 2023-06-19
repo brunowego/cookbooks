@@ -1,5 +1,7 @@
 # MACH Alliance
 
+**Keywords:** Market Standards
+
 ## Links
 
 - [Main Website](https://machalliance.org)

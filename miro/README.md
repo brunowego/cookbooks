@@ -1,9 +1,15 @@
 # Miro
 
 <!--
-https://www.youtube.com/watch?v=pULLAEmhSho
+https://youtube.com/watch?v=pULLAEmhSho
+
 https://go.miro.com/your-new-plan-webinar-recording
 -->
+
+## Links
+
+- [Main Website](https://miro.com)
+  - [Mind Map](https://miro.com/mind-map)
 
 ## App
 

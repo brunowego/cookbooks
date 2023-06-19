@@ -24,7 +24,7 @@ https://github.com/cert-manager/cert-manager/issues/921
 - [Azure](/azure/README.md)
 - [Cloudflare](/cloudflare.md)
 - [Google Cloud Platform (GCP)](/gcp/README.md)
-- [Let's Encrypt](/letsencrypt.md)
+- [Let's Encrypt](/lets-encrypt.md)
 
 ## CLI
 
