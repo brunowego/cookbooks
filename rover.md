@@ -41,9 +41,6 @@ rover
 
 #
 rover -standalone
-
-#
-rover -workingDir ./modules/eks
 ```
 
 <!--

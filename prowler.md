@@ -1,6 +1,6 @@
 # Prowler
 
-**Keywords:** Security Compliance
+**Keywords:** Security Compliance, AWS Assessment
 
 ## Links
 

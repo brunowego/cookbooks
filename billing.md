@@ -10,6 +10,10 @@ chargebee.com
 
 ## Tools
 
+### Managed
+
+- [Zuora](https://zuora.com)
+
 ### Open Source
 
 - [Lago](https://github.com/getlago/lago)

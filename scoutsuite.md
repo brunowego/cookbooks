@@ -2,6 +2,10 @@
 
 **Keywords:** Security Audit
 
+## Links
+
+- [Code Repository](https://github.com/nccgroup/ScoutSuite)
+
 ## Glossary
 
 - Center for Internet Security (CIS)

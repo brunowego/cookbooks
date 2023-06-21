@@ -1,5 +1,7 @@
 # Apache Superset
 
+**Keywords:** Monitoring
+
 ## Links
 
 - [Main Website](https://superset.apache.org)

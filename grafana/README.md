@@ -8,14 +8,6 @@ https://linkedin.com/learning/kubernetes-monitoring-with-prometheus/prometheus-m
 https://app.pluralsight.com/library/courses/monitoring-containerized-app-health-docker/table-of-contents
 -->
 
-## Alternatives
-
-- [Apache Superset](/apache/superset.md)
-- [Datadog](https://www.datadoghq.com)
-- [Elastic Kibana](/elastic/elastic-kibana.md)
-- [Metabase](/metabase.md)
-- [Redash](/redash.md)
-
 ## References
 
 - [Druid Datasource](https://grafana.com/grafana/plugins/abhisant-druid-datasource)

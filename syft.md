@@ -29,3 +29,7 @@ syft -h
 #
 syft packages alpine:latest
 ```
+
+<!--
+syft <image> --scope all-layers -o spdx-json > ./output.json
+-->

@@ -1,3 +1,0 @@
-# Solution Architecture
-
-TODO

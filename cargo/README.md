@@ -28,7 +28,15 @@ yum check-update
 sudo yum -y install cargo
 ```
 
-<!--
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
 # Cargo
 export PATH="$HOME/.cargo/bin:$PATH"
--->
+```
+
+```sh
+sudo su - "$USER"
+```

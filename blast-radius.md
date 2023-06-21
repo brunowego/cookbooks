@@ -11,13 +11,22 @@
 
 ## CLI
 
+### Dependencies
+
+- [Graphviz](/graphviz.md)
+
 ### Installation
 
 ### pip
 
 ```sh
+#
 pip3 install -U blastradius
 ```
+
+<!--
+https://github.com/Ianyliu/blast-radius-fork/tree/main
+-->
 
 ### Commands
 
@@ -37,6 +46,14 @@ BLAST_RADIUS_PORT=8080 blast-radius --serve .
 ```
 
 ### Issues
+
+### TBD
+
+```log
+ERROR: Cannot install Flask, blastradius and blastradius==0.1.25 because these package versions have conflicting dependencies.
+```
+
+TBD
 
 #### TBD
 

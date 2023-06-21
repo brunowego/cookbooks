@@ -5,23 +5,28 @@ https://linkedin.com/learning/kubernetes-monitoring-with-prometheus/prometheus-m
 https://github.com/jacksontj/promxy
 -->
 
-**Keywords:** Metrics
+**Keywords:** Metrics, Alerting, Monitoring System
 
-## Guides
+## Links
+
+- [Org. Repository](https://github.com/prometheus)
+- [Main Website](https://prometheus.io)
+- [Service Discovery (SD)](https://github.com/prometheus/prometheus/tree/main/discovery)
+
+## Docs
 
 - [Metric types](https://prometheus.io/docs/concepts/metric_types/)
-- [Service Discovery (SD)](https://github.com/prometheus/prometheus/tree/main/discovery)
 - [Integrations](https://prometheus.io/docs/operating/integrations/)
 - [Template Examples](https://prometheus.io/docs/prometheus/latest/configuration/template_examples/)
+- [Awesome Prometheus Alerts](https://awesome-prometheus-alerts.grep.to/rules.html)
+
+## Tools
+
+- [Routing tree editor](https://prometheus.io/webtools/alerting/routing-tree-editor/)
 
 ## Plugins
 
 - [Mozilla Firefox - Prometheus Formatter](https://addons.mozilla.org/en-US/firefox/addon/prometheus-formatter/)
-
-## Links
-
-- [Awesome Prometheus Alerts](https://awesome-prometheus-alerts.grep.to/rules.html)
-- [Routing tree editor](https://prometheus.io/webtools/alerting/routing-tree-editor/)
 
 ## Docker
 

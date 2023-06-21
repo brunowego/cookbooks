@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://aws.amazon.com/cloudtrail/)
+- [Main Website](https://aws.amazon.com/cloudtrail)
 
 ## Console
 

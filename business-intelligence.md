@@ -16,6 +16,10 @@
 - [Tableau](https://tableau.com)
 - [ThoughtSpot](https://thoughtspot.com)
 
+<!--
+https://sisense.com
+-->
+
 ### Open Source
 
 - [Apache Superset](/apache/superset.md)

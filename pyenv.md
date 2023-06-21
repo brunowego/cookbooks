@@ -118,6 +118,9 @@ pyenv local <version>
 pyenv global <version>
 
 #
+python --version
+
+#
 pyenv uninstall -f <version>
 ```
 
