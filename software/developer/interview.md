@@ -88,6 +88,16 @@ https://www.youtube.com/watch?v=Fws57ECYbo4
 
 - [Awesome Interviews](https://github.com/DopplerHQ/awesome-interview-questions)
 
+## Glossary
+
+- Situation, Task, Action, Result (STAR)
+
+## Interview Structure
+
+- Interview may be single 1 hour session of multiple sessions totaling 5 hours
+- STAR Questions
+- Coding Cha
+
 ## Algorithms
 
 - Binary Search

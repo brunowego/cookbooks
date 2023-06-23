@@ -5,9 +5,9 @@
 - [Code Repository](https://github.com/kubernetes-sigs/metrics-server)
 - [Docs](https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-metrics-pipeline/)
 
-## Minikube
+## minikube
 
-### Addons
+### Installation
 
 ```sh
 # Enable

@@ -6,6 +6,47 @@
 - [Bare-metal considerations](https://github.com/kubernetes/ingress-nginx/blob/master/docs/deploy/baremetal.md)
 - [Configuration](https://github.com/helm/charts/tree/master/stable/metallb#configuration)
 
+## minikube
+
+### Installation
+
+```sh
+# Enable
+minikube addons -p minikube enable metallb
+
+# Disable
+minikube addons -p minikube disable metallb
+```
+
+### Configuration
+
+```sh
+#
+kubectl get configmap config -n metallb-system -o yaml
+
+#
+export BASE_IP="$(minikube ip | cut -d '.' -f 1-3)"
+export START_IP="${BASE_IP}.150"
+export END_IP="${BASE_IP}.175"
+
+#
+cat << EOF | kubectl apply -f -
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config
+  namespace: metallb-system
+data:
+  config: |
+    address-pools:
+      - name: default
+        protocol: layer2
+        addresses:
+          - ${START_IP}-${END_IP}
+EOF
+```
+
 ## Custom Resource (CR)
 
 ### Install
@@ -100,5 +141,6 @@ kubectl get services -A
 kubectl delete configmap metallb-config -n metallb-system
 
 helm uninstall metallb -n metallb
+
 kubectl delete ns metallb-system --grace-period=0 --force
 ```

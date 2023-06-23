@@ -4,7 +4,7 @@
 
 - [Code Repository](https://github.com/kubernetes-sigs/krew)
 - [Main Website](https://krew.sigs.k8s.io/)
-- [Plugins](https://krew.sigs.k8s.io/plugins/)
+- [Plugins](https://krew.sigs.k8s.io/plugins)
 
 ## CLI
 

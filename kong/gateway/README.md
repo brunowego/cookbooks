@@ -222,7 +222,11 @@ volumes:
     driver: local
 ```
 
-## Helm
+## Helm (DB-less)
+
+## Dependencies
+
+- [NGINX Ingress Controller](/nginx/ingress-controller/README.md)
 
 ### References
 
@@ -239,11 +243,11 @@ helm repo update
 
 ```sh
 #
-kubectl create ns kong
+kubectl create ns kong-system
 # kubectl create ns api-gateway
 
 #
-kubens kong
+kubens kong-system
 
 #
 helm search repo -l kong/kong
@@ -254,7 +258,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install kong kong/kong \
-  --version 2.22.0 \
+  --version 2.23.0 \
   -f <(cat << EOF
 proxy:
   type: ClusterIP
@@ -265,22 +269,10 @@ proxy:
   ingress:
     enabled: true
     ingressClassName: nginx
-    hostname: myapp.${DOMAIN}
+    hostname: web.${DOMAIN}
     # annotations:
     #   cert-manager.io/cluster-issuer: letsencrypt-issuer
     # tls: kong-proxy.tls-secret
-
-dblessConfig:
-  config: |
-    _format_version: '3.0'
-
-    services:
-      - name: example
-        url: http://example.com
-        routes:
-          - name: root
-            paths:
-              - /
 
 ingressController:
   enabled: false
@@ -312,12 +304,37 @@ kubectl logs \
   -f
 ```
 
+### Configuration
+
+```sh
+#
+export KONG_HELM_CHART_VERSION='2.23.0'
+
+#
+helm upgrade kong kong/kong \
+  --version "$KONG_HELM_CHART_VERSION" \
+  -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values kong -o yaml) <(cat << EOF
+dblessConfig:
+  config: |
+    _format_version: '3.0'
+
+    services:
+      - name: example
+        url: http://example.com
+        routes:
+          - name: root
+            paths:
+              - /
+EOF
+))
+```
+
 ### Delete
 
 ```sh
 helm uninstall kong
 
-kubectl delete ns kong \
+kubectl delete ns kong-system \
   --grace-period=0 \
   --force
 ```

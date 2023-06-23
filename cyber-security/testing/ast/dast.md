@@ -23,6 +23,7 @@ https://analysis-tools.dev/
 ## Tools
 
 - [Multiple target ZAP Scanning (mzap)](/mzap.md)
+- [Open Vulnerability Assessment Scanner (OpenVAS) Scanner](/openvas-scanner.md)
 - [OWASP Zed Attack Proxy (ZAP)](/cyber-security/tools/zaproxy.md)
 - [PortSwigger Dastardly](/portswigger/dastardly.md)
 - [SOOS](https://soos.io)

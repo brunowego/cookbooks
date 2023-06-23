@@ -11,10 +11,6 @@ https://mco2token.moss.earth
 https://cct.co
 
 # Platforms
-
-https://gosupercritical.com
-https://puro.earth
-https://watershed.com
 https://pond.foundation
 https://climateneutral.org
 -->
@@ -98,11 +94,8 @@ TODO
 
 <!--
 https://youtube.com/watch?v=AQ93OpCBT-0
--->
-
-<!--
-https://www.youtube.com/watch?v=jgzXB-TiQx8
-https://www.youtube.com/watch?v=weX9gqb1M_s
+https://youtube.com/watch?v=jgzXB-TiQx8
+https://youtube.com/watch?v=weX9gqb1M_s
 -->
 
 ## Marketplace
@@ -111,6 +104,21 @@ https://www.youtube.com/watch?v=weX9gqb1M_s
 - [Carbonmark](https://carbonmark.com/projects)
 - [ClimateTrade](https://market.climatetrade.com/results)
 - [Pledge](https://pledge.io)
+
+<!--
+https://puro.earth
+https://klimate.co
+https://southpole.com
+https://frontierclimate.com
+https://watershed.com
+https://gosupercritical.com
+https://carbonx.world
+https://pachama.com
+https://nori.com
+https://patch.io
+https://onetribeglobal.com
+https://klimate.co
+-->
 
 ### Carbon Offsets
 

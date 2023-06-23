@@ -187,9 +187,9 @@ kubectl delete \
   -f 'https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml'
 ```
 
-## Minikube
+## minikube
 
-### Addons
+### Installation
 
 ```sh
 # Enable
@@ -346,7 +346,7 @@ nginx.ingress.kubernetes.io/server-snippet: |
   add_header Strict-Transport-Security "max-age=63072000; includeSubDomains" always;
 ``` -->
 
-<!-- #### Minikube Tunnel
+<!-- #### minikube Tunnel
 
 ```log
 ; (1 server found)

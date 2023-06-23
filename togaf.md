@@ -8,14 +8,10 @@
 - [Wikipedia](https://en.wikipedia.org/wiki/The_Open_Group_Architecture_Framework)
 
 <!--
-https://www.udemy.com/course/togaf-92-foundation-for-effective-enterprise-architecture/
-
-https://www.udemy.com/course/togaf-part1/
-https://www.udemy.com/course/togaf-training-part2/
-
-https://www.udemy.com/course/togaf-on-one-page/
-
-https://www.udemy.com/course/certificacao-togaf-foundation-ptbr-paulo/
-
-https://www.udemy.com/course/arquitetura-corporativa-com-togaf-91-o-que-e/
+https://udemy.com/course/togaf-92-foundation-for-effective-enterprise-architecture/
+https://udemy.com/course/togaf-part1/
+https://udemy.com/course/togaf-training-part2/
+https://udemy.com/course/togaf-on-one-page/
+https://udemy.com/course/certificacao-togaf-foundation-ptbr-paulo/
+https://udemy.com/course/arquitetura-corporativa-com-togaf-91-o-que-e/
 -->

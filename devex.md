@@ -1,3 +1,5 @@
 # Developer Experience (DevEx)
 
-TODO
+## Glossary
+
+- Software Development Life Cycle (SDLC)

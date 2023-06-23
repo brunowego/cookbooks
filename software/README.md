@@ -56,6 +56,8 @@ Applicant Tracking System (ATS)
 ![Multigrained](/assets/images/software/multigrained.png)
 
 <!--
+https://github.com/Mu-Ahmad/ead_notes/blob/main/N-Tier%20Architecture.md
+
 https://thenewstack.io/miniservices-a-realistic-alternative-to-microservices/
 https://hiq.fi/en/blog/miniservice-or-microservice/
 https://tweedegolf.nl/en/blog/32/from-monolith-to-miniservice

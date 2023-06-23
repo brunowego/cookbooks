@@ -53,15 +53,22 @@ Ops -> IT Operations / Application Delivery
 - [Time Management for System Administrators: Stop Working Late and Start Working Smart](https://www.amazon.com/Time-Management-System-Administrators-Working/)
 - [Pragmatic Thinking and Learning: Refactor Your Wetware (Pragmatic Programmers)](https://www.amazon.com/Pragmatic-Thinking-Learning-Refactor-Programmers/)
 
-## Terms
+## Similar Names
 
-- Payment Card Industry Data Security Standard (PCI DSS)
-- Sarbanes Oxley (SOX)
-- System Development Life Cycle (SDLC)
-- You Build It, You Run It (YBI/YRI)
+- Production Engineer
+- System Development Engineer
+- Developer Productivity SWE
+
+## Glossary
+
 - Complex Adaptive System (CAS)
+- Payment Card Industry Data Security Standard (PCI DSS)
 - Recovery Point Objetive (RPO)
 - Recovery Time Objective (RTO)
+- Sarbanes Oxley (SOX)
+- Software Engineer (SWE)
+- System Development Life Cycle (SDLC)
+- You Build It, You Run It (YBI/YRI)
 
 ## Topics
 

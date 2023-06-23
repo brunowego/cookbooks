@@ -1,4 +1,22 @@
-# Software Requirements
+# Product Requirements Document (PRD)
+
+<!--
+https://udemy.com/courses/search/?src=ukw&q=Product+Requirements+Document
+-->
+
+## Articles
+
+- [Atlassian / Product requirements documents, downsized](https://atlassian.com/agile/product-management/requirements)
+
+## Templates
+
+- [Mural / Product requirements document (PRD) template](https://mural.co/templates/product-requirements-document)
+- [Notion / Product requirement document (PRD)](https://notion.so/templates/product-requirement-document-prd)
+- [Slite / How to write a Product Requirements Document (PRD) - Full Guide](https://slite.com/learn/product-requirements-document)
+
+## Glossary
+
+- Marketing Requirements Document (MRD)
 
 ## Architecture
 
@@ -21,7 +39,7 @@ Requisitos Não Funcionais
 -->
 
 <!--
-https://www.mestresdaweb.com.br/tecnologias/requisitos-funcionais-e-nao-funcionais-o-que-sao
+https://mestresdaweb.com.br/tecnologias/requisitos-funcionais-e-nao-funcionais-o-que-sao
 
 https://altexsoft.com/blog/non-functional-requirements/
 -->
