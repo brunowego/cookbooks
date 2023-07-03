@@ -17,3 +17,13 @@ TODO
 <!--
 Add `owner` role
 -->
+
+### Missing Authorized Redirect URIs
+
+```log
+Access blocked: This app’s request is invalid
+...
+Error 400: redirect_uri_mismatch
+```
+
+Add "Authorized redirect URIs" in "Client ID for Web application" section.

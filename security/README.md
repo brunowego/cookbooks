@@ -29,3 +29,17 @@ https://github.com/cloudtostreet/policies
 
 https://github.com/sidneiweber/website/blob/main/content/posts/seguranca-da-informacao-o-que-preciso-saber.md
 -->
+
+## Frameworks
+
+- AWS Foundational Technical Review (FTR)
+- FedRAMP
+- ISO 27001:2022
+- ISO 27017
+- Minimum Viable Secure Product (MVSP)
+- NIST 800-171
+- NIST 800-53
+- NIST CSF
+- Open Finance Data Security Standard (OFDSS)
+- PCI-DSS
+- SOC 2

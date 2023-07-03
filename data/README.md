@@ -14,7 +14,7 @@ Leading zero
 
 ## Videos
 
-- [Database vs Data Warehouse vs Data Lake | What is the Difference?](https://www.youtube.com/watch?v=-bSkREem8dM)
+- [Database vs Data Warehouse vs Data Lake | What is the Difference?](https://youtube.com/watch?v=-bSkREem8dM)
 
 ## Glossary
 

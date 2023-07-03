@@ -1,5 +1,9 @@
 # Tailwind CSS
 
+<!--
+https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atailwindcss&type=code
+-->
+
 **Keywords:** CSS framework
 
 <!-- TODO: Lint not working with VS Code -->
@@ -44,6 +48,7 @@ https://preline.co
 ## Tools
 
 - [DivMagic](/divmagic.md)
+- [tailwindpdf](/tailwindpdf.md)
 
 ## CLI
 

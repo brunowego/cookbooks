@@ -23,25 +23,29 @@ kubectl proxy
 
 ```sh
 #
-export KUBERNETES_NAMESPACE=''
+export KUBERNETES_KIND='namespaces'
+export KUBERNETES_NAME=''
 
 #
-kubectl get ns "$KUBERNETES_NAMESPACE" -o json | \
+kubectl get "$KUBERNETES_KIND" "$KUBERNETES_NAME" -o json | \
   jq '.spec.finalizers=[]' | \
     curl \
       -X PUT \
       -H 'Content-Type: application/json' \
       --data @- \
-      "http://localhost:8001/api/v1/namespaces/${KUBERNETES_NAMESPACE}/finalize"
+      "http://localhost:8001/api/v1/${KUBERNETES_KIND}/${KUBERNETES_NAME}/finalize"
 ```
 
 #### Batch
 
 ```sh
 #
+export KUBERNETES_KIND='namespaces'
+
+#
 kubectl get ns \
   --field-selector status.phase=Terminating \
   --no-headers | \
     awk '{print $1}' | \
-      xargs -I '{}' -- sh -c 'kubectl get ns "{}" -o json | jq ".spec.finalizers=[]" | curl -X PUT -H "Content-Type: application/json" --data @- "http://localhost:8001/api/v1/namespaces/{}/finalize"'
+      xargs -I '{}' -- sh -c 'kubectl get ns "{}" -o json | jq ".spec.finalizers=[]" | curl -X PUT -H "Content-Type: application/json" --data @- "http://localhost:8001/api/v1/${KUBERNETES_KIND}/{}/finalize"'
 ```

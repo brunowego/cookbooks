@@ -161,6 +161,14 @@ jq '."[prisma]"."editor.defaultFormatter" |= "Prisma.prisma"' "$PWD"/.vscode/set
 
 ### Issues
 
+### Unnecessary Declaration Property
+
+```log
+@acme/api:dev: src/modules/user/user.service.ts:14:9 - error TS2742: The inferred type of 'list' cannot be named without a reference to '../../../../../packages/db/node_modules/@prisma/client/runtime'. This is likely not portable. A type annotation is necessary.
+```
+
+Remove `"declaration": true` and `"declarationMap": true` in `./tsconfig.json`.
+
 ### TBD
 
 ```log

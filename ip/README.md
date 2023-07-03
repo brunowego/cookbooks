@@ -14,19 +14,23 @@ Public: 172.x.x.x
 ### IP Info
 
 ```sh
-#
-curl ipinfo.io/<ip>
+curl https://ipinfo.io/<ip>
 ```
 
 <!--
 curl -H 'Host: ipinfo.io' <ip>/json
 -->
 
+### IP Geolocation and Currency Converter APIs
+
+```sh
+curl -s http://geoplugin.net/json.gp | jq .
+```
+
 ### My IP Address
 
 ```sh
-curl -s httpbin.org/ip | \
-  jq -r '.origin'
+curl -s https://httpbin.org/ip | jq -r '.origin'
 ```
 
 ### Node.js REPL

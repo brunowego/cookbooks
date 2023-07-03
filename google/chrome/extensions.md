@@ -11,6 +11,7 @@
 - [Global Speed](https://chrome.google.com/webstore/detail/global-speed/jpbjcnkcffbooppibceonlgknpkniiff?hl=en)
 - [HTTPS Everywhere](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp?hl=en)
 - [Locale Switcher](https://chrome.google.com/webstore/detail/locale-switcher/kngfjpghaokedippaapkfihdlmmlafcc/)
+- [LocalStorage Manager](https://chrome.google.com/webstore/detail/localstorage-manager/fkhoimdhngkiicbjobkinobjkoefhkap/related)
 - [Prometheus Formatter](https://chrome.google.com/webstore/detail/prometheus-formatter/jhfbpphccndhifmpfbnpobpclhedckbb?hl=en)
 - [Proxy Switcher and Manager](https://chrome.google.com/webstore/detail/proxy-switcher-and-manage/onnfghpihccifgojkpnnncpagjcdbjod?hl=en)
 - [Tactiq: GPT meeting summary](https://chrome.google.com/webstore/detail/tactiq-gpt-meeting-summar/fggkaccpbmombhnjkjokndojfgagejfb?utm_source=google-meet&utm_medium=in-meeting-chat-notification&utm_campaign=product)

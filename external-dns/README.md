@@ -180,6 +180,10 @@ kubectl annotate service nginx 'external-dns.alpha.kubernetes.io/cloudflare-prox
 
 ### Tips
 
+<!-- #### A Record
+
+For root domain, need create manually on Route R53. -->
+
 <!-- ####
 
 Identity and Access Management (IAM) -> Policies -> external-dns

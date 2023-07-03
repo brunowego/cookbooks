@@ -3,4 +3,4 @@
 ## References
 
 - [Airbyte](/airbyte.md)
-- [Debezium](/debezium.md)
+- [Debezium](/debezium/README.md)

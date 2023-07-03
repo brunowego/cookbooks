@@ -158,7 +158,18 @@ curl https://<hostname> \
 
 ### Tips
 
-### Progress Bar
+<!-- #### Verbs
+
+```sh
+curl --head https://127.0.0.1:3000
+
+curl https://api.localtest.me
+   -X OPTIONS
+   -H 'Access-Control-Request-Method: POST'
+   -H 'Origin: https://admin.localtest.me'
+``` -->
+
+#### Progress Bar
 
 ```sh
 curl \
@@ -199,6 +210,14 @@ ldd `which curl` | grep -E '(ssl|crypto)'
 ```
 
 ### Issues
+
+<!-- #### TBD
+
+```log
+Access to XMLHttpRequest at 'http://api.localtest.me' from origin 'http://control.localtest.me' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+```
+
+Enable CORS on API server. -->
 
 #### Missing Symbols
 

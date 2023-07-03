@@ -119,6 +119,14 @@ prometheus.io/port: "10254"
 
 ### Issues
 
+#### TBD
+
+```log
+ERR_TOO_MANY_REDIRECTS
+```
+
+TODO
+
 #### Missing Root Path
 
 ```log

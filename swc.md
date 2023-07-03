@@ -1,11 +1,15 @@
-# Speedy Web Compiler (swc)
+# Speedy Web Compiler (SWC)
 
-**Keywords:** Alternative to tsc
+<!--
+https://github.com/lingui/swc-plugin
+-->
 
 ## Links
 
 - [Code Repository](https://github.com/swc-project/swc)
-- [Main Website](https://swc.rs/)
+- [Main Website](https://swc.rs)
+- Docs
+  - [Benchmarks](https://swc.rs/docs/benchmarks)
 
 <!--
 ## TBD

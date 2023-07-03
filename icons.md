@@ -24,6 +24,11 @@
 - [Simple Icons](https://simpleicons.org)
 - [Tabler Icons](https://tabler-icons.io)
 
+<!--
+https://github.com/stephenway/react-flagkit
+https://flagpack.xyz/docs/development/react
+-->
+
 ## References
 
 - [The Noun Project](https://thenounproject.com)

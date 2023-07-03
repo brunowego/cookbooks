@@ -1,5 +1,9 @@
 # AWS Elastic MapReduce (EMR)
 
+## Links
+
+- [Main Website](https://aws.amazon.com/emr/)
+
 ## Alternatives
 
 - Hadoop

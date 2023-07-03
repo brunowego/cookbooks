@@ -36,6 +36,10 @@ Mercado Voluntario de Carbono (MVC) 1% of the market
 Mercado Regulado de Carbono (MRC) 99% of the market (influencia de governo, expira)
 -->
 
+## Life of a Carbon Credit
+
+![Carbon Credit Lifecycle Infographic Scale](/assets/images/carbon/carbon-credit-lifecycle-infographic-scaled.jpg)
+
 ## Glossary
 
 - Carbon Capture and Storage (CCS)
@@ -44,6 +48,8 @@ Mercado Regulado de Carbono (MRC) 99% of the market (influencia de governo, expi
 - Environmental, Social, and Corporate Governance (ESG)
 - Reducing Emissions from Deforestation in Developing Countries (REDD)
 - Regenerative Finance (ReFi)
+- Sustainable Development Goal (SDG)
+- Verified Carbon Standard (VCS)
 
 <!--
 Cédula de Produto Rural Verde (CPR Verde)
@@ -73,17 +79,6 @@ https://www.bndes.gov.br/wps/portal/site/home/mercado-de-capitais/creditos-de-ca
 
 - Conference of the Parties (CoP)
 
-<!--
-## Due Diligence
-
-- Verified Carbon Standard (VCS)
--->
-
-<!--
-https://verra.org
-https://ethos.org.br
--->
-
 ## Articles
 
 - [Digital Carbon Market and Regenerative Finance (ReFi): Terminologies and Key Terms](https://mentholprotocol.com/blog/digital-carbon-market-terminologies-and-key-terms)
@@ -100,30 +95,11 @@ https://youtube.com/watch?v=weX9gqb1M_s
 
 ## Marketplace
 
-- [Abatable](https://abatable.com/buy-carbon-credits)
-- [Carbonmark](https://carbonmark.com/projects)
-- [ClimateTrade](https://market.climatetrade.com/results)
-- [Pledge](https://pledge.io)
-
 <!--
-https://puro.earth
-https://klimate.co
-https://southpole.com
-https://frontierclimate.com
-https://watershed.com
-https://gosupercritical.com
-https://carbonx.world
-https://pachama.com
-https://nori.com
-https://patch.io
-https://onetribeglobal.com
-https://klimate.co
+https://ethos.org.br
 -->
 
-### Carbon Offsets
-
-- [Climeworks](https://climeworks.com)
-- [Cool Effect](https://cooleffect.org)
-- [FiniteCarbon](https://finitecarbon.com)
-- [South Pole](https://southpole.com)
-- [Terrapass](https://terrapass.com)
+- [Abatable](https://abatable.com)
+- [Carbonmark](https://carbonmark.com)
+- [Pachama](https://pachama.com)
+- [Patch](https://patch.io)

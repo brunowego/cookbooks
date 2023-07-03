@@ -29,6 +29,9 @@ npm install pnpm -g
 
 # Using Yarn
 yarn global add pnpm
+
+# Using Corepack
+corepack prepare pnpm@latest --activate
 ```
 
 ### Commands
@@ -41,7 +44,7 @@ npx pnpm -h
 pnpm -h
 ```
 
-### Environment
+<!-- ### Environment
 
 #### macOS
 
@@ -55,7 +58,7 @@ export PATH="$PNPM_HOME:$PATH"
 
 ```sh
 source ~/.zshrc
-```
+``` -->
 
 ### Usage
 
@@ -95,6 +98,16 @@ pnpx <command>
 ```
 
 ### Tips
+
+#### Corepack
+
+```sh
+#
+corepack enable
+
+#
+corepack prepare pnpm@7.33.0 --activate
+```
 
 #### Autocomplete
 
@@ -151,6 +164,36 @@ pnpm add -g pnpm
 
 ### Issues
 
+#### Auto Install Peers Param Mismatch
+
+```log
+ERR_PNPM_LOCKFILE_CONFIG_MISMATCH  Cannot proceed with the frozen installation. The current "settings.autoInstallPeers" configuration doesn't match the value found in the lockfile
+```
+
+<!-- https://github.com/pnpm/pnpm/issues/6649 -->
+
+```sh
+cat ./.npmrc
+cat ./pnpm-lock.yaml
+```
+
+#### Update Package Manager
+
+```log
+ERROR  [...] is an invalid relative dependency path
+```
+
+<!-- https://github.com/pnpm/pnpm/issues/6504 -->
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "packageManager": "pnpm@7.33.0"
+}
+```
+
 #### TBD
 
 ```log
@@ -166,3 +209,7 @@ FROM docker.io/library/node:18.12.1
 
 RUN corepack enable pnpm
 ```
+
+<!--
+corepack prepare pnpm@8.6.3 --activate
+-->

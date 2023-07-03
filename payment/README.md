@@ -23,3 +23,12 @@ https://github.com/tracontecnologia/ondw-2-server
   - [Payment System](https://blog.bytebytego.com/p/payment-system)
   - [Payment Security](https://blog.bytebytego.com/p/payment-security)
   - [How to learn payments?](https://blog.bytebytego.com/p/how-to-learn-payments)
+
+## Terms
+
+- Seamless Payment
+- Borderless Payment
+
+## Standards
+
+- ISO20022

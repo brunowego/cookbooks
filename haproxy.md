@@ -20,7 +20,10 @@ haproxy.cfg
 ### Remove
 
 ```sh
+#
 docker rm -f haproxy
+
+#
 docker volume rm haproxy-config
 ```
 

@@ -4,22 +4,15 @@
 https://github.com/ilkeraltin/react-ssr-news
 
 https://medium.com/swlh/server-side-rendering-ssr-with-react-and-flask-47e589e1051f
-https://www.toptal.com/front-end/client-side-vs-server-side-pre-rendering
+https://toptal.com/front-end/client-side-vs-server-side-pre-rendering
 -->
 
-<!-- ##
+## Articles
 
-- [Next.js](/nextjs.md) -->
+- [Static Site Generation vs Server-side Rendering vs Client-side Rendering](https://hackingnote.com/en/versus/ssg-vs-ssr-vs-csr)
 
-<!-- ##
+## Glossary
 
-- Server Side Rendering
-- Client Side Rendering
-- Static Site Generation -->
-
-<!-- ##
-
-- Micro Frontends
-- Edge Side Includes -->
-
-TODO
+- Client-Side Rendering (CSR)
+- Server-Side Rendering (SSR)
+- Static-Site Generation (SSG)

@@ -113,20 +113,20 @@ metadata:
 spec:
   ingressClassName: nginx
   tls:
-  - hosts:
-      - teleport.${DOMAIN}
-    secretName: teleport.tls-secret
+    - hosts:
+        - teleport.${DOMAIN}
+      secretName: teleport.tls-secret
   rules:
     - host: teleport.${DOMAIN}
       http:
         paths:
-        - backend:
-            service:
-              name: teleport-cluster
-              port:
-                number: 443
-          path: /
-          pathType: Prefix
+          - backend:
+              service:
+                name: teleport-cluster
+                port:
+                  number: 443
+            path: /
+            pathType: Prefix
 EOF
 
 #
@@ -275,6 +275,64 @@ curl -sk "https://teleport.${DOMAIN}/webapi/ping" | jq .
   - [Teleport Application Service](./services/application.md)
 
 ### Issues
+
+<!-- #### TBD
+
+```log
+ERR_TOO_MANY_REDIRECTS
+```
+
+```
+# Bad
+http://xyz.tld:443
+
+# Good
+https://xyz.tld:443
+``` -->
+
+#### Insecure SSL Certificate
+
+```log
+Internal Server Error
+```
+
+Edit values of `teleport-kube-agent` and the `headers`:
+
+```yml
+apps:
+  # ...
+  - name: grafana
+    insecure_skip_verify: true
+```
+
+#### Missing Host and Origin Headers
+
+```log
+Permission Denied
+CSRF verification failed. Request aborted.
+```
+
+<!--
+https://github.com/WeblateOrg/weblate/issues/5936
+-->
+
+<!--
+CsrfViewMiddleware
+csrfmiddlewaretoken
+-->
+
+Edit values of `teleport-kube-agent` and the `headers`:
+
+```yml
+---
+apps:
+  # ...
+  - name: grafana
+    rewrite:
+      headers:
+        - 'Host: grafana.xyz.tld'
+        - 'Origin: https://grafana.xyz.tld'
+```
 
 #### TBD
 

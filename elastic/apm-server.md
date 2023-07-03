@@ -1,5 +1,9 @@
 # Elastic APM Server
 
+## Glossary
+
+- Application Performance Monitoring (APM)
+
 ## Links
 
 - [Code Repository](https://github.com/elastic/apm)

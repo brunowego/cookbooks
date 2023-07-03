@@ -1,27 +1,20 @@
 # TypeScript Remote Procedure Call (tRPC)
 
 <!--
-https://github.com/zeno-oss/zeno
-https://github.com/PatrickWatson887/Cognitive-Sports-Therapy
-https://github.com/wmalarski/trpc-expo-kitchen-sink
-https://github.com/opentestimonials/opentestimonials
+https://github.com/search?q=path%3Apackage.json+content%3Atrpc+content%3Anext&type=code
 
-https://dev.to/franciscomendes10866/build-a-full-stack-app-with-nextjs-tailwind-trpc-and-prisma-orm-4ail
-https://www.brockherion.dev/blog/posts/stop-building-rest-apis-for-your-next-apps/
-https://www.learnwithjason.dev/let-s-learn-trpc
-
-https://github.com/maxs-rose/secrets
-
-Zod
-
-https://github.com/sachinraja/trpc-playground
+https://github.com/hearkus/hearkus/tree/trunk/packages/trpc-router
+https://github.com/echobind/bisonapp
+https://github.com/juliusmarminge/acme-corp/tree/main
 -->
 
 ## Links
 
 - [Code Repository](https://github.com/trpc/trpc)
 - [Main Website](https://trpc.io)
+- Docs
+  - [Usage with Next.js](https://trpc.io/docs/nextjs)
 
 ## Docs
 
-- [Usage with Next.js](https://trpc.io/docs/nextjs)
+- [Learn With Jason / Let's Learn tRPC!](https://learnwithjason.dev/let-s-learn-trpc)

@@ -1,16 +1,12 @@
 # Lingui
 
-<!--
-https://github.com/vercel/examples/tree/main/edge-functions/i18n
-
-https://github.com/sushiswap/sushiswap-interface/blob/master/.github/workflows/translations.yaml
-
-https://bravo-kernel.com/blog/2023/05/how-to-build-a-fully-internationalized-nextjs-application-using-lingui-v4
--->
-
 ## Links
 
 - [Next.js / Internationalized Routing](https://nextjs.org/docs/advanced-features/i18n-routing)
+
+## Articles
+
+- [Bravo Kernel / How to build a fully internationalized Nextjs application using Lingui v4](https://bravo-kernel.com/blog/2023/05/how-to-build-a-fully-internationalized-nextjs-application-using-lingui-v4)
 
 ## Dependencies
 
@@ -158,6 +154,14 @@ export default Document
 ```
 
 ## Issues
+
+### TBD
+
+```log
+Error: Text content does not match server-rendered HTML.
+```
+
+TODO
 
 ### Missing Babel
 

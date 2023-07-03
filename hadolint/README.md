@@ -1,5 +1,9 @@
 # Haskell Dockerfile Linter (hadolint)
 
+## Links
+
+- [Code Repository](https://github.com/hadolint/hadolint)
+
 ## CLI
 
 ### Installation
@@ -7,6 +11,7 @@
 #### Homebrew
 
 ```sh
+# 2.12.0
 brew install hadolint
 ```
 
@@ -26,6 +31,12 @@ sudo curl \
   -L "https://github.com/hadolint/hadolint/releases/download/$(curl -s https://api.github.com/repos/hadolint/hadolint/releases/latest | grep tag_name | cut -d '"' -f 4)/hadolint-Linux-x86_64" \
   -o /usr/local/bin/hadolint && \
     sudo chmod +x /usr/local/bin/hadolint
+```
+
+### Commands
+
+```sh
+hadolint --help
 ```
 
 ### Tips
@@ -58,26 +69,22 @@ jq '."recommendations" += ["exiasr.hadolint"]' "$PWD"/.vscode/extensions.json | 
 jq ".\"hadolint.hadolintPath\" |= \"$(which hadolint)\"" "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 ```
 
-### Ignore
+#### Ignore
 
 ```Dockerfile
 # hadolint ignore=DL3013
 RUN pip3 install /usr/src/packages/<package-version>.tar.gz
 ```
 
-### Extend
+### Issues
 
-#### With Trunk
+#### TBD
 
-```sh
-#
-trunk check enable hadolint@2.11.0
-
-#
-trunk check --filter hadolint -v <./path/to/dockerfile>
+```log
+[1]    5029 segmentation fault  hadolint --help
 ```
 
-### Issues
+TODO
 
 #### Deprecated Maintainer
 
@@ -94,3 +101,12 @@ if command -v docker >/dev/null; then
   npm run lint:docker
 fi
 -->
+
+## Docker
+
+### Running
+
+```sh
+#
+docker run -i --rm docker.io/hadolint/hadolint:2.12.0 < ./Dockerfile
+```

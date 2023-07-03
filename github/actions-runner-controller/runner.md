@@ -30,12 +30,15 @@ spec:
   env: []
 EOF
 
+#
 kubectl get runner
 
+#
 kubectl logs \
   -l 'actions-runner-controller/inject-registration-token=true' \
   -f
 
+#
 kubectl delete runner k8s-single-runner
 ```
 
@@ -59,12 +62,15 @@ spec:
       env: []
 EOF
 
+#
 kubectl get runnerdeployment
 
+#
 kubectl logs \
   -l 'actions-runner-controller/inject-registration-token=true' \
   -f
 
+#
 kubectl delete runnerdeployment k8s-runners
 ```
 
@@ -91,12 +97,15 @@ spec:
         - $GITHUB_REPO
 EOF
 
+#
 kubectl get horizontalrunnerautoscaler
 
+#
 kubectl logs \
   -l 'actions-runner-controller/inject-registration-token=true' \
   -f
 
+#
 kubectl delete horizontalrunnerautoscaler k8s-runners-autoscaler
 ```
 

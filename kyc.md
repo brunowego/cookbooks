@@ -8,6 +8,7 @@ https://www.ycombinator.com/companies/ballerine
 
 - Identity Verification (IDV)
 - Know Your Business (KYB)
+- Know Your Transaction (KYT)
 
 ## Implementations
 

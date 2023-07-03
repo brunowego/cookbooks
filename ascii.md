@@ -20,6 +20,13 @@ https://symbols-search.vercel.app
 https://wprock.fr/en/t/kaomoji/
 -->
 
+<!--
+├───
+└───
+
+https://www.w3.org/TR/xml-entity-names/025.html
+-->
+
 ## Links
 
 - [HTML Arrows](https://toptal.com/designers/htmlarrows/)

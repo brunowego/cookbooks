@@ -87,6 +87,16 @@ kubectl logs \
   -f
 ```
 
+### Tips
+
+#### Terminating Finalizer
+
+```sh
+kubectl patch pod <pod-name> \
+  -p '{"metadata":{"finalizers":[]}}' \
+  --type='merge'
+```
+
 ### Issues
 
 #### TBD

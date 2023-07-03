@@ -1,6 +1,6 @@
 # Poppler
 
-**Keywords:** Merge PDF
+**Keywords:** Merge PDF, Separate PDF
 
 ## Links
 
@@ -20,6 +20,7 @@ brew install poppler
 
 ```sh
 pdfunite -h
+pdfseparate -h
 ```
 
 ### Usage
@@ -27,4 +28,7 @@ pdfunite -h
 ```sh
 #
 pdfunite ./in.pdf ./in.pdf ./in.pdf ./out.pdf
+
+#
+pdfseparate ./<filename>.pdf %d.pdf
 ```

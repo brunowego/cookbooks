@@ -14,6 +14,32 @@ https://github.com/search?q=path%3Aapps+path%3Apackage.json+content%3Atailwindcs
 - [Better Stack](https://betterstack.com)
 
 <!--
+https://read.cv/open-roles 🌟
+https://posts.cv/
+-->
+
+<!--
+https://datocms.com/blog/how-to-generate-typescript-types-from-graphql
+
+https://k2carbon.co
+-->
+
+<!--
+https://youtube.com/watch?v=7fLBCzGsyWc
+-->
+
+<!--
+Portfolio
+
+https://kentcdodds.com
+-->
+
+<!--
+https://juicebox.money
+https://logsnag.com
+https://app.logsnag.com
+https://fintory.com
+https://enso.org
 https://helicone.ai
 https://tbh.studiovoila.com
 https://cloud.tailwarden.com

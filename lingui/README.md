@@ -1,13 +1,20 @@
 # Lingui
 
 <!--
-pnpm add @lingui/conf -D
+https://github.com/lensterxyz/lenster 🌟
+https://github.com/alt3/rank-my-wallet
+https://github.com/bravo-kernel/lingui-v4-app
 -->
 
 ## Links
 
 - [Code Repository](https://github.com/lingui/js-lingui)
 - [Main Website](https://lingui.dev)
+
+## Examples
+
+- [Next.js with Babel](https://github.com/lingui/js-lingui/tree/main/examples/nextjs-babel)
+- [Next.js with SWC](https://github.com/lingui/js-lingui/tree/main/examples/nextjs-swc)
 
 ## References
 
@@ -47,7 +54,7 @@ pnpm add @babel/core babel-plugin-macros @lingui/cli @lingui/conf -D
     "lingui": "npm run lingui:extract; npm run lingui:compile",
     // "lingui:extract": "cross-env NODE_ENV='development' lingui extract --clean",
     "lingui:extract": "lingui extract --clean",
-    "lingui:compile": "lingui compile --strict"
+    "lingui:compile": "lingui compile"
   }
 }
 ```
@@ -61,22 +68,22 @@ const config: LinguiConfig = {
   catalogs: [
     {
       path: '<rootDir>/src/locales/{locale}/messages',
-      include: ['<rootDir>/src/pages'],
+      include: ['<rootDir>/src/components', '<rootDir>/src/pages'],
     },
   ],
   compileNamespace: 'cjs',
   fallbackLocales: {
-    default: 'en-US',
+    default: 'en_US',
   },
   format: 'po',
   formatOptions: {
     lineNumbers: false,
   },
-  locales: ['en-US', 'es-ES', 'pt-BR', 'pseudo'],
+  locales: ['en_US', 'es_ES', 'pt_BR', 'pseudo'],
   orderBy: 'messageId',
   rootDir: './',
   runtimeConfigModule: ['@lingui/core', 'i18n'],
-  sourceLocale: 'en-US',
+  sourceLocale: 'en_US',
   pseudoLocale: 'pseudo',
 }
 

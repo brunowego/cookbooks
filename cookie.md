@@ -1,7 +1,7 @@
-# Cookies
+# Cookie
 
 <!--
-https://avocode.com/
+https://avocode.com
 
 We use Cookies to ensure that we give you the best experience on our website. Read our Privacy Policy.
 -->
@@ -15,6 +15,13 @@ We use Cookies to ensure that we give you the best experience on our website. Re
 
 ## Tools
 
-- [Cookie Consent](https://github.com/orestbida/cookieconsent)
 - [Cookie Database](https://cookiedatabase.org)
+
+### Compliance
+
+- [Cookie Consent](/cookieconsent.md)
 - [Cookiebot](https://cookiebot.com)
+
+<!--
+- [Cookie Consent](https://github.com/osano/cookieconsent)
+-->

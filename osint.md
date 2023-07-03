@@ -30,6 +30,8 @@ https://defastra.com/
 - Reverse Image Search
 - Information Gathering
 
-## Information Gathering Tools
+## Information Gathering
+
+### Tools
 
 - [Maltego Community Edition (CE)](/cyber-security/tools/maltego-ce.md)

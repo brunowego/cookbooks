@@ -18,6 +18,10 @@ Layoff
 - [500](https://500.co)
 - [Y Combinator](https://ycombinator.com)
 
+## Jobs
+
+- [Y Combinator's Work at a Startup](https://workatastartup.com)
+
 ## References
 
 - [AcquiredBy](https://acquiredby.co)
@@ -53,6 +57,7 @@ Key Performance Indicator (KPI)
 - Customer Lifetime Value (CLV or often CLTV)
 - Customer Lifetime Value (LTV)
 - Data Processing Agreement (DPA)
+- Depending on Experience (DoE)
 - Developer Relations (DevRel)
 - Due Diligence (DD)
 - Earnings Before Interest and Taxes (EBIT)
@@ -68,7 +73,10 @@ Key Performance Indicator (KPI)
 - Monthly Recurring Revenue (MRR)
 - Operating Expenses (OpEx) / Capital Expenditure (CapEx)
 - Paid/Personal Time Off (PTO)
-- Request For Discussion (RFD)
+- Proof of Concept (PoC)
+- Request for Discussion (RfD)
+- Request for Proposal (RfP)
+- Requests for Information (RfI)
 - Stock Keeping Unit (SKU)
 - Training and Development (T&D)
 - Work From Home (WFH)

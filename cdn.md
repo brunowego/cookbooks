@@ -10,3 +10,4 @@
 - [Amazon CloudFront](/aws/services/cloudfront.md)
 - [Azure CDN](/azure/services/cdn.md)
 - [Cloudflare](https://cloudflare.com)
+- [Cloudinary](/cloudinary.md)

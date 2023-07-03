@@ -16,6 +16,8 @@ https://app.pluralsight.com/library/courses/codemash-session-01/table-of-content
 - [Org. Repository](https://github.com/cypress-io)
 - [Main Website](https://cypress.io)
 - [Docs](https://docs.cypress.io)
+- Examples
+  - [Real World App](https://github.com/cypress-io/cypress-realworld-app)
 
 ## Glossary
 

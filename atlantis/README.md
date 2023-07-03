@@ -222,7 +222,14 @@ helm repo update
 
 ```sh
 #
-kubectl create ns atlantis-system
+kubectl create ns atlantis
+# kubectl create ns automation
+
+#
+kubens atlantis
+
+#
+helm search repo -l runatlantis/atlantis
 
 #
 export KUBERNETES_IP='<kubernetes-ip>'
@@ -230,10 +237,9 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install atlantis runatlantis/atlantis \
-  --namespace atlantis-system \
-  --version 3.14.0 \
+  --version 4.13.1 \
   -f <(cat << EOF
-orgWhitelist: github.com/[org-name]/*
+orgWhitelist: github.com/<org-name>/*
 
 github:
   user: <username>
@@ -243,7 +249,7 @@ github:
 ingress:
   host: atlantis.$DOMAIN
   path:
-  - /
+    - /
 EOF
 )
 ```
@@ -251,8 +257,7 @@ EOF
 <!-- ### Status
 
 ```sh
-kubectl rollout status deploy/atlantis \
-  -n atlantis-system
+kubectl rollout status deploy/atlantis
 ```
 
 ### Logs
@@ -260,7 +265,6 @@ kubectl rollout status deploy/atlantis \
 ```sh
 kubectl logs \
   -l 'app.kubernetes.io/name=atlantis' \
-  -n atlantis-system \
   -f
 ``` -->
 
@@ -281,13 +285,11 @@ http://atlantis.${DOMAIN}/events
 <!--
 #
 kubectl get secret atlantis-tf-envs \
-  -n atlantis-system \
   -o json | \
     jq '.data | map_values(@base64d)'
 
 #
 kubectl get secret google-credentials \
-  -n atlantis-system \
   -o json | \
     jq '.data | map_values(@base64d)'
 -->
@@ -295,10 +297,9 @@ kubectl get secret google-credentials \
 ### Delete
 
 ```sh
-helm uninstall atlantis \
-  -n atlantis-system
+helm uninstall atlantis
 
-kubectl delete ns atlantis-system \
+kubectl delete ns atlantis \
   --grace-period=0 \
   --force
 ```

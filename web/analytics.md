@@ -13,6 +13,14 @@ ePrivacy
 Agg. Data
 -->
 
+## Business Objectives
+
+- Generate Leads: Analyze visitor metrics and attract new customers
+- Drive Online Sales: Analyze purchase behavior and get more sales
+- Raise Brand Awareness: Spread the word about your business
+- Examine User Behavior: Learn how people use your site or app
+- Get Baseline Reports: Multiple types of reports (this option can't be combined with other options)
+
 ## Tools
 
 ### Managed

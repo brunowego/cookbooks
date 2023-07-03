@@ -95,11 +95,13 @@ npx next telemetry disable
 
 ```sh
 #
+npm run dev
+# or
 npx next dev -p 3000
 # or
 PORT=3000 npx next dev
 # or
-npm run dev
+npx next dev -p ${PORT:-3000}
 
 #
 npx next lint

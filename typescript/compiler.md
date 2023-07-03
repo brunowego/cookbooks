@@ -1,4 +1,4 @@
-# TypeScript Compiler
+# TypeScript Compiler (tsc)
 
 ## CLI
 

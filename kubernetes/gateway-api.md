@@ -10,5 +10,5 @@
 ### Installation
 
 ```sh
-kubectl kustomize 'https://github.com/kubernetes-sigs/gateway-api/config/crd?ref=v0.6.1' | kubectl apply -f -
+kubectl kustomize 'https://github.com/kubernetes-sigs/gateway-api/config/crd?ref=v0.7.1' | kubectl apply -f -
 ```

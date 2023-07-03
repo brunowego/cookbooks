@@ -28,5 +28,6 @@ Git: You have not concluded your merge (MERGE_HEAD exists).
 ```
 
 ```sh
+#
 git merge --continue
 ```

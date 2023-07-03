@@ -100,7 +100,7 @@ spec:
       kind: HTTPRoute
       namespace: default
   to:
-    - group: ""
+    - group: ''
       kind: Service
 EOF
 

@@ -1,5 +1,7 @@
 # Chainguard
 
+**Keywords:** Supply Chain
+
 ## Links
 
 - [Org. Repository](https://github.com/chainguard-images)

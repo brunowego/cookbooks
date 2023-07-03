@@ -29,6 +29,10 @@ https://app.pluralsight.com/library/courses/security-compliance-big-picture/tabl
 
 ## Tools
 
+### Managed
+
+- [Vanta](https://vanta.com)
+
 ### Open Source
 
 - [Prowler](/prowler.md)

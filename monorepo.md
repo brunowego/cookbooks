@@ -4,6 +4,8 @@
 https://monorepo.tools/
 -->
 
+**Keyword:** Strategy
+
 ## Terms
 
 - Poly-repo (a.k.a multi-repo)

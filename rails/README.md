@@ -23,6 +23,10 @@ https://linkedin.com/learning/ruby-on-rails-6-essential-training/faster-better-l
 https://linkedin.com/learning/ruby-on-rails-6-essential-training-models-and-associations/let-activerecord-objects-manage-your-data
 -->
 
+<!--
+This website is under heavy load (queue full)
+-->
+
 ## Plugins
 
 - [Rails ERD](https://voormedia.github.io/rails-erd/install.html#generate)

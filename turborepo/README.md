@@ -71,6 +71,20 @@ turbo run build --graph
 turbo run build --scope <@package/name>
 ```
 
+### Issues
+
+#### Unsupported Lockfile Version
+
+```log
+Turbo error: Failed to encode pruned lockfile: Unable to generate pnpm-lock.yaml with lockfileVersion: 6.1. Supported lockfile versions are [5.3 5.4 6.0]
+```
+
+<!--
+https://github.com/vercel/turbo/issues/5117
+-->
+
+Pump `turbo` to `>=1.10.3`.
+
 ## Library
 
 ### Installation

@@ -32,21 +32,13 @@ pnpm add @types/prettier prettier -D
 
 ```sh
 # Using NPM
-cat << EOF > ./.prettierignore
-/package*.json
-EOF
+echo '/package-lock.json' > ./.prettierignore
 
 # Using Yarn
-cat << EOF > ./.prettierignore
-/package.json
-/yarn.lock
-EOF
+echo '/yarn.lock' > ./.prettierignore
 
 # Using pnpm
-cat << EOF > ./.prettierignore
-/package.json
-/pnpm-lock.yaml
-EOF
+echo '/pnpm-lock.yaml' > ./.prettierignore
 ```
 
 **Refer:** `./prettier.config.cjs`

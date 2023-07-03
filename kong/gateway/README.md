@@ -224,7 +224,7 @@ volumes:
 
 ## Helm (DB-less)
 
-## Dependencies
+### Dependencies
 
 - [NGINX Ingress Controller](/nginx/ingress-controller/README.md)
 
@@ -321,6 +321,8 @@ dblessConfig:
     services:
       - name: example
         url: http://example.com
+        # host: example.com
+        # port: 80
         routes:
           - name: root
             paths:

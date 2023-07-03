@@ -1,6 +1,12 @@
 # Cryptocurrency
 
 <!--
+£
+€
+$
+-->
+
+<!--
 https://youtu.be/07_iTh6CCuc
 https://youtu.be/zYBNB7YfHzY
 https://youtu.be/vH0euUAveVk

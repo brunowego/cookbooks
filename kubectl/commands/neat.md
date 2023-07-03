@@ -1,5 +1,7 @@
 # kubectl-neat
 
+**Keywords:** Clean Up Output
+
 ## Links
 
 - [Code Repository](https://github.com/itaysk/kubectl-neat)
