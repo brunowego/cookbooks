@@ -3,6 +3,7 @@
 ## Links
 
 - [Main Website](https://openai.com)
+- [Status Page](https://status.openai.com)
 
 ## Account
 

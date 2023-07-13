@@ -2,6 +2,8 @@
 
 <!--
 vk
+
+TTF, OTF, WOFF, EOT & SVG
 -->
 
 ## Tools
@@ -13,6 +15,15 @@ vk
 ### CDN
 
 - [CDNFonts](https://cdnfonts.com)
+
+## Marketplace
+
+- [Adobe Fonts](https://fonts.adobe.com)
+- [Google Fonts](https://fonts.google.com)
+
+<!--
+https://fontspring.com
+-->
 
 ## Tips
 
@@ -35,3 +46,9 @@ vk
 - 700 Bold
 - 800 Heavy, Black, Extra-bold
 - 900 Ultra-black, Extra-black, Ultra-bold, Heavy-black, Fat, Poster
+
+## Families
+
+### Open Source
+
+- [Cal Sans](https://github.com/calcom/font)

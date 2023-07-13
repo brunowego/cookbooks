@@ -1,10 +1,16 @@
 # Tailwind CSS
 
 <!--
+Colors
+
+https://github.com/medusajs/medusa/blob/develop/www/docs/tailwind.config.js
+-->
+
+<!--
 https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atailwindcss&type=code
 -->
 
-**Keywords:** CSS framework
+**Keywords:** CSS framework, Utility-first
 
 <!-- TODO: Lint not working with VS Code -->
 
@@ -25,7 +31,7 @@ https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atai
 
 ## Success Cases
 
-- [Himalayas](https://himalayas.app/)
+- [Himalayas](https://himalayas.app)
 - [PlanetScale](https://planetscale.com)
 - [Supabase](https://supabase.io/)
 
@@ -48,6 +54,7 @@ https://preline.co
 ## Tools
 
 - [DivMagic](/divmagic.md)
+- [Tailwind Color Palette](https://tailwindcolor.com)
 - [tailwindpdf](/tailwindpdf.md)
 
 ## CLI

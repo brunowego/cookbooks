@@ -25,6 +25,7 @@ https://github.com/Mobiauto/sre-interview-boilerplate
 #### Homebrew
 
 ```sh
+brew tap pulumi/tap
 brew install pulumi
 ```
 

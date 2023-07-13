@@ -106,7 +106,7 @@ spec:
     type: RollingUpdate
     rollingUpdate:
       maxSurge: 1
-      maxUnavailable: 1
+      maxUnavailable: 0 # can be 1, if more than one replica
       # maxSurge: 50%
       # maxUnavailable: 20%
 ```

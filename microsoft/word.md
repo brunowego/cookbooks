@@ -1,5 +1,9 @@
 # Microsoft Word
 
+## Links
+
+- [Web](https://office.com/launch/word)
+
 ## App
 
 ### Installation

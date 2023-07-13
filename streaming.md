@@ -2,4 +2,9 @@
 
 ## Platforms
 
-- [Pluto TV](https://pluto.tv/)
+- [Pluto TV](https://pluto.tv)
+- [Netflix]()
+
+<!--
+https://www.netflix.com/tudum/top10
+-->

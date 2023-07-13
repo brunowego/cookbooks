@@ -1,4 +1,4 @@
-# Markdown Architectural Decision Records (MADR)
+# Markdown Any/Architecture Decision Record (MADR)
 
 ## Links
 

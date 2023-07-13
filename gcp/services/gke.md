@@ -8,6 +8,10 @@ https://github.com/search?o=desc&q=path%3Amodules%2Fgke+filename%3Amain.tf&s=ind
 
 **Keywords:** Kubernetes Orchestration, Control Plane
 
+## Links
+
+- [Main Website](https://cloud.google.com/kubernetes-engine)
+
 ## Console
 
 - [Kubernetes clusters](https://console.cloud.google.com/kubernetes/list/overview)
@@ -54,6 +58,18 @@ kubectl auth can-i --list
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+Message:      Pod was terminated in response to imminent node shutdown.
+```
+
+<!--
+https://medium.com/mediamarktsaturn-tech-blog/dealing-with-terminated-pods-in-gke-clusters-using-non-standard-provisioning-models-29950281a75
+-->
+
+TODO
 
 #### TBD
 

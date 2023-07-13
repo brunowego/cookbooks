@@ -26,6 +26,7 @@
 - [Uptime Kuma](/uptime-kuma.md)
 
 <!--
+https://github.com/mxkaske/openstatus
 https://github.com/cstate/cstate
 https://github.com/TwiN/gatus
 -->

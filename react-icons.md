@@ -1,5 +1,7 @@
 # React Icons
 
+**Keywords:** SVG Icons
+
 ## Links
 
 - [Code Repository](https://github.com/react-icons/react-icons)

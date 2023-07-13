@@ -18,10 +18,6 @@ Layoff
 - [500](https://500.co)
 - [Y Combinator](https://ycombinator.com)
 
-## Jobs
-
-- [Y Combinator's Work at a Startup](https://workatastartup.com)
-
 ## References
 
 - [AcquiredBy](https://acquiredby.co)

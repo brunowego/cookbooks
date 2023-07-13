@@ -10,6 +10,7 @@ https://go.miro.com/your-new-plan-webinar-recording
 
 - [Main Website](https://miro.com)
   - [Mind Map](https://miro.com/mind-map)
+- [Dashboard](https://miro.com/app/dashboard)
 
 ## App
 

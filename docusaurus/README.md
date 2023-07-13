@@ -1,6 +1,7 @@
 # Docusaurus
 
 <!--
+https://github.com/thirdweb-dev/docs
 https://github.com/subsquid/docs
 https://github.com/strapi/documentation
 

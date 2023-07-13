@@ -7,6 +7,7 @@
 ### Automated
 
 - [Reviewdog](/reviewdog.md)
+- [What The Diff](https://whatthediff.ai)
 
 ## Benefits
 

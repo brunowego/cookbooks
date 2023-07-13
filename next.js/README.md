@@ -66,6 +66,7 @@ const nextConfig = {
 <!-- - Client-Side Rendering (CSR) -->
 
 - Incremental Static Regeneration (ISR)
+- React Server Components (RSC)
 - Server-Side Rendering (SSR)
 - Static Site Generation (SSG)
 

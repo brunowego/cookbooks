@@ -11,6 +11,8 @@
 
 - [Code Repository](https://github.com/supabase/supabase)
 - [Main Website](https://supabase.io)
+- Dashboard
+  - [Projects](https://supabase.com/dashboard/projects)
 
 ## CLI
 
@@ -33,9 +35,18 @@ brew install supabase
 supabase -h
 ```
 
-<!-- ### Usage
+### Usage
 
 ```sh
 #
-supabase
-``` -->
+supabase login
+
+#
+supabase projects list
+
+#
+supabase init
+
+#
+supabase start
+```

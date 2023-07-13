@@ -9,11 +9,6 @@ https://intercom.com/
 
 - [Awesome Open-Source Alternatives to SaaS](https://github.com/RunaCapital/awesome-oss-alternatives)
 
-## Project Management
-
-- [Trello](https://trello.com)
-- [Jira](https://atlassian.com/software/jira)
-
 ## Monitoring
 
 - [Sentry](https://sentry.io)

@@ -31,6 +31,7 @@ https://tailwindshades.com/
 - [CopyPalette](https://copypalette.app/) 🌟
 - [Deep learning color generator](https://colors.eva.design/)
 - [Hue The Color](https://eboye.github.io/huethecolor/)
+- [Huey / Color Palette Generator](https://huey.design)
 - [Leonardo](https://leonardocolor.io/)
 - [Material Color Generator (Auchri)](https://auchri.github.io/MaterialColorGenerator/)
 - [Material color generator (Rekire)](https://rekire.github.io/MaterialColorGenerator/)
@@ -40,6 +41,11 @@ https://tailwindshades.com/
 - [Palx](https://palx.jxnblk.com)
 - [Sass Color Generator](http://scg.ar-ch.org/)
 - [Tailwind Shades](https://tailwindshades.com) 🌟
+
+### Lighten & Darken
+
+- [COLORS.tools / Lighten & Darken](https://colors.tools/lighten-and-darken) 🌟
+- [COLORS.tools / Tints & Shades](https://colors.tools/tints-and-shades/) 🌟
 
 ### Contrast Checker
 

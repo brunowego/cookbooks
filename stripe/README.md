@@ -34,6 +34,7 @@ stripe login
 
 <!--
 #
+stripe listen --forward-to localhost:4242/webhook
 stripe listen --forward-to localhost:3000/api/webhooks/stripe
 
 #
@@ -46,6 +47,9 @@ stripe listen -f http://localhost:52384/api/payments/failed/webhook
 
 #
 stripe customers create
+
+#
+stripe trigger payment_intent.succeeded
 -->
 
 ## Python Library

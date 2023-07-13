@@ -1,0 +1,244 @@
+<meta name="language" content="en" />
+
+<meta
+  name="description"
+  content="We utilize the power of Storybook to provide comprehensive documentation for our design system."
+/>
+<meta
+  name="keywords"
+  content="React, React components, React component library, Vite, Storybook"
+/>
+
+<meta name="author" content="ACME" />
+<meta name="copyright" content="ACME" />
+
+<meta name="rating" content="general" />
+<meta name="rating" content="safe for kids" />
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
+<meta name="revisit-after" content="3 days" />
+
+<meta
+  name="theme-color"
+  content="#FFFFFF"
+  media="(prefers-color-scheme: light)"
+/>
+<meta
+  name="theme-color"
+  content="#000000"
+  media="(prefers-color-scheme: dark)"
+/>
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://storybook.acme.com" />
+<meta property="og:title" content="Storybook — ACME" />
+<meta
+  property="og:description"
+  content="We utilize the power of Storybook to provide comprehensive documentation for our design system."
+/>
+<meta
+  property="og:image"
+  content="https://assets.acme.com/images/seo/og-dark.png"
+  key="og image"
+/>
+
+<meta property="twitter:url" content="https://storybook.acme.com" />
+<meta property="twitter:title" content="Storybook — ACME" />
+<meta
+  property="twitter:description"
+  content="We utilize the power of Storybook to provide comprehensive documentation for our design system."
+/>
+<meta property="twitter:card" content="summary_large_image" />
+<meta
+  property="twitter:image"
+  content="https://assets.acme.com/images/seo/og-dark.png"
+  key="tw image"
+/>
+
+<link rel="manifest" href="/manifest.json" />
+
+<link
+  rel="icon"
+  href="https://assets.acme.com/images/icon/favicon.svg"
+  key="favicon"
+/>
+<link
+  rel="icon"
+  href="https://assets.acme.com/images/icon/favicon.svg"
+  color="#FFFFFF"
+  key="hex favicon"
+/>
+<link
+  rel="apple-touch-icon"
+  href="https://assets.acme.com/images/icon/apple-touch-icon-dark.png"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+
+<style>
+  * {
+    line-height: 1.5 !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    text-size-adjust: 100% !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    accent-color: #8d71ff !important;
+    scroll-behavior: smooth !important;
+  }
+
+  *::selection {
+    color: #ffffff !important;
+    background-color: #8d71ff !important;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input[type='checkbox']:focus-visible,
+  input[type='radio']:focus-visible,
+  input[type='range']:focus-visible {
+    outline-width: 2px !important;
+    outline-color: #8d71ff !important;
+  }
+
+  html {
+    color-scheme: light !important;
+  }
+
+  body {
+    background: #ffffff !important;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg,
+  iframe {
+    user-select: none !important;
+  }
+
+  textarea {
+    min-height: 2rem !important;
+    resize: vertical !important;
+  }
+
+  textarea::-webkit-resizer {
+    display: none !important;
+  }
+
+  a:hover,
+  .sidebar-item[data-selected='false']:focus,
+  .sidebar-item[data-nodetype='component']:focus,
+  .sidebar-item[data-nodetype='group']:focus {
+    background: none !important;
+  }
+
+  div[role='main'] > div {
+    border-radius: 0 !important;
+  }
+
+  .sidebar-header a {
+    margin: 0.625rem 0 !important;
+  }
+
+  .sidebar-item {
+    padding-top: 0.625em !important;
+    padding-bottom: 0.625rem !important;
+    display: flex !important;
+    align-items: center !important;
+    font-size: 0.75rem !important;
+  }
+
+  .sidebar-item > span,
+  .sidebar-item > svg {
+    margin-top: 0 !important;
+    margin-right: 0.5rem !important;
+  }
+
+  .sidebar-svg-icon,
+  .sidebar-item svg {
+    width: 1rem !important;
+    height: 1rem !important;
+    color: inherit !important;
+  }
+
+  .tabbutton-active {
+    border-bottom-color: #8d71ff !important;
+  }
+
+  #storybook-explorer-searchfield {
+    border-radius: 0.5rem !important;
+  }
+
+  #root {
+    isolation: isolate !important;
+  }
+
+  #list-item-shortcuts {
+    border-bottom: 1px solid #e5e5e5 !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      scroll-behavior: auto !important;
+    }
+  }
+
+  @media (hover: hover) {
+    .sidebar-item[data-nodetype='component']:hover,
+    .sidebar-item[data-nodetype='group']:hover,
+    .sidebar-item[data-nodetype='document']:hover,
+    .sidebar-item[data-nodetype='story']:hover {
+      background: rgba(141, 113, 255, 0.12) !important;
+    }
+
+    .sidebar-item[data-selected='true']:hover {
+      background: #8d71ff !important;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark !important;
+    }
+
+    body {
+      background: #000000 !important;
+    }
+
+    #list-item-shortcuts {
+      border-bottom: 1px solid #2c2c2c !important;
+    }
+  }
+</style>
+
+<script>
+  ;(function (w, d, s, l, i) {
+    w[l] = w[l] || []
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : ''
+    j.async = true
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+    f.parentNode.insertBefore(j, f)
+  })(window, document, 'script', 'dataLayer', 'GTM-55F8HXB')
+</script>
+
+<body>
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-55F8HXB"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe>
+  </noscript>
+</body>

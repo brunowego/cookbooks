@@ -6,12 +6,17 @@
 
 ## Terms
 
+## Project Management
+
 - Kick-off Meeting
 
 ## Tools
 
+### Managed
+
 - [Asana](https://asana.com)
 - [Atlassian Confluence](/atlassian/confluence.md)
+- [Atlassian Jira](https://atlassian.com/software/jira)
 - [Basecamp](https://basecamp.com)
 - [ClickUp](https://clickup.com)
 - [Focalboard](/focalboard.md)
@@ -21,12 +26,19 @@
 - [Microsoft SharePoint](/microsoft/sharepoint.md)
 - [Notion](/notion.md)
 - [Nuclino](https://nuclino.com)
-- [Redmine](/redmine.md)
+- [Trello](https://trello.com)
 - [Zenhub](https://zenhub.com) 🌟
 
 <!--
 https://slite.com
 https://meistertask.com
+-->
+
+### Open Source
+
+- [Redmine](/redmine.md)
+
+<!--
 https://taiga.io
 -->
 

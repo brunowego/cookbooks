@@ -3,8 +3,10 @@
 ## Links
 
 - [Org. Repository](https://github.com/godaddy)
-- [Products](https://account.godaddy.com/products)
 - [Contact Us](https://godaddy.com/help/contact-us)
+- Account
+  - [Products](https://account.godaddy.com/products)
+  - [Domain Portfolio](https://dcc.godaddy.com/control/portfolio)
 
 ## DNS
 

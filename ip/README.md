@@ -11,6 +11,13 @@ Public: 172.x.x.x
 
 ## Tips
 
+### Local IP
+
+```sh
+# Darwin
+ipconfig getifaddr en0
+```
+
 ### IP Info
 
 ```sh

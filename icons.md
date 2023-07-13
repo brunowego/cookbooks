@@ -25,6 +25,8 @@
 - [Tabler Icons](https://tabler-icons.io)
 
 <!--
+https://svgl.vercel.app/
+
 https://github.com/stephenway/react-flagkit
 https://flagpack.xyz/docs/development/react
 -->

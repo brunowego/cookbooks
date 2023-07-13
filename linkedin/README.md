@@ -1,14 +1,15 @@
 # LinkedIn
 
 <!--
-1584/396 pixels
+https://linkedin.com/help/linkedin/answer/a563309/image-specifications-for-your-linkedin-pages-and-career-pages?lang=en
 -->
 
 ## Links
 
 - [Following](https://linkedin.com/feed/following/)
 - [Social Selling Index (SSI)](https://linkedin.com/sales/ssi)
-- [Invitation Sent](https://linkedin.com/mynetwork/invitation-manager/sent/)
+- My Network
+  - [Invitation Sent](https://linkedin.com/mynetwork/invitation-manager/sent/)
 
 ## Tips
 

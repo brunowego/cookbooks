@@ -10,9 +10,3 @@ https://toptal.com/front-end/client-side-vs-server-side-pre-rendering
 ## Articles
 
 - [Static Site Generation vs Server-side Rendering vs Client-side Rendering](https://hackingnote.com/en/versus/ssg-vs-ssr-vs-csr)
-
-## Glossary
-
-- Client-Side Rendering (CSR)
-- Server-Side Rendering (SSR)
-- Static-Site Generation (SSG)
