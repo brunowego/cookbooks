@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://fly.io/)
+- [Main Website](https://fly.io)
 
 ## CLI
 

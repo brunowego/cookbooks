@@ -1,4 +1,4 @@
-# Icons
+# Icon
 
 <!-- ##
 
@@ -17,6 +17,10 @@
 ## Types
 
 - Duotone
+
+## Tools
+
+- [Prepo](/prepo.md)
 
 ## Libraries
 

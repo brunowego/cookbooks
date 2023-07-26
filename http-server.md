@@ -1,5 +1,18 @@
 # http-server
 
+## Library
+
+### Installation
+
+```sh
+# Using pnpm
+pnpm add http-server -D
+```
+
+### Configuration
+
+**Refer:** `./package.json`
+
 ## CLI
 
 ### Installation

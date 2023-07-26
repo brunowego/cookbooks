@@ -1,6 +1,6 @@
-# E-mail Signature
+# Email Signature Template
 
-## Template
+## HTML
 
 ```html
 <table

@@ -6,10 +6,14 @@ Synchronize Design Pattern
 https://github.com/donnemartin/system-design-primer
 -->
 
+## References
+
+- [The System Design Primer](https://github.com/donnemartin/system-design-primer)
+
 ## Learn
 
 - [ByteByteGo](https://bytebytego.com)
-  - [Blog](https://blog.bytebytego.com/)
+  - [Blog](https://blog.bytebytego.com)
 
 ## Tool Types
 

@@ -39,3 +39,7 @@ Confidence
 ## Tools
 
 - [Monoid](/nanoid.md)
+
+<!--
+https://ethyca.com
+-->

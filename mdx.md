@@ -1,5 +1,9 @@
 # MDX
 
+<!--
+<pre>{JSON.stringify(<variable>, null, 2)}</pre>
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/mdx-js/mdx/)

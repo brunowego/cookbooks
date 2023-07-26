@@ -4,6 +4,12 @@
 https://linkedin.com/help/linkedin/answer/a563309/image-specifications-for-your-linkedin-pages-and-career-pages?lang=en
 -->
 
+<!--
+kubernetes AND devops AND aws
+
+Latin America
+-->
+
 ## Links
 
 - [Following](https://linkedin.com/feed/following/)

@@ -28,6 +28,10 @@ https://github.com/hideckies/exploit-notes/blob/main/src/exploit/SMTP-Pentesting
 - [SparkPost](https://sparkpost.com)
 - [Twilio SendGrid](/twilio/sendgrid.md) 🌟
 
+<!--
+https://resend.com
+-->
+
 ### Self-hosted
 
 - [MailCatcher](/mailcatcher.md)

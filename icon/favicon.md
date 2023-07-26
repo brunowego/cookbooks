@@ -2,18 +2,25 @@
 
 <!--
 https://github.com/tailwindlabs/tailwindcss.com/tree/master/public/favicons
-
-Sizes: 32x32, 48x48
-Bit depth: 32 bits (16.7M colors & alpha transparency)
-
 https://icon.horse
 -->
 
 ## Tools
 
-- [Favicon checker](https://realfavicongenerator.net/favicon_checker)
-- [favicon.io / Converter](https://favicon.io/favicon-converter/)
-- [ICO converter](https://icoconverter.com) 🌟
+- Checker
+  - [Favicon checker](https://realfavicongenerator.net/favicon_checker)
+- Converter
+  - [favicon.io / Converter](https://favicon.io/favicon-converter/)
+  - [ICO converter](https://icoconverter.com) 🌟
+
+<!--
+https://www.google.com/s2/favicons?domain=https://github.com
+
+ICO converter
+
+Sizes: 32x32
+Bit depth: 32 bits (16.7M colors & alpha transparency)
+-->
 
 ## Examples
 

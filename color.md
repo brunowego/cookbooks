@@ -42,14 +42,28 @@ https://tailwindshades.com/
 - [Sass Color Generator](http://scg.ar-ch.org/)
 - [Tailwind Shades](https://tailwindshades.com) 🌟
 
+<!--
+https://uicolors.app
+https://tints.dev
+-->
+
 ### Lighten & Darken
 
 - [COLORS.tools / Lighten & Darken](https://colors.tools/lighten-and-darken) 🌟
-- [COLORS.tools / Tints & Shades](https://colors.tools/tints-and-shades/) 🌟
+
+### Tints & Shades
+
+- [COLORS.tools / Tints & Shades](https://colors.tools/tints-and-shades/)
+- [Noel Delgado / Shadowlord & Tints and Shades Generator Tool](https://noeldelgado.github.io/shadowlord) 🌟
+- [Shade Generator](https://shadegenerator.com)
+
+<!--
+https://maketintsandshades.com
+-->
 
 ### Contrast Checker
 
-- [Colour Contrast Checker](https://colourcontrast.cc/) 🌟
+- [Colour Contrast Checker](https://colourcontrast.cc) 🌟
 - [Coolors / Color Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5)
 - [WCAG / Contrast Checker](https://contrastchecker.com)
 - [WebAIM / Contrast Checker](https://webaim.org/resources/contrastchecker/)

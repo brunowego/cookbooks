@@ -12,8 +12,18 @@ https://github.com/search?q=path%3Aapps+path%3Apackage.json+content%3Atailwindcs
 
 - [AppSignal](https://appsignal.com)
 - [Better Stack](https://betterstack.com)
+- [Netflix Global Top 10](https://netflix.com/tudum/top10)
 
 <!--
+https://omise.co
+-->
+
+<!--
+https://raster.app
+https://upstash.com
+https://productlane.com
+https://illacloud.com
+https://highstorm.app
 https://airplane.dev
 https://tremor.so
 https://plane.so
@@ -36,16 +46,6 @@ https://windmill.dev
 https://speedybrand.io/settings/subscription
 https://read.cv/open-roles 🌟
 https://posts.cv
--->
-
-<!--
-https://datocms.com/blog/how-to-generate-typescript-types-from-graphql
-
-https://k2carbon.co
--->
-
-<!--
-https://youtube.com/watch?v=7fLBCzGsyWc
 -->
 
 <!--
@@ -138,17 +138,55 @@ https://app.logsnag.com/auth/sign-in
 https://cloud.tailwarden.com/sign-in
 https://auth.planetscale.com/sign-in
 
-Admin
+Pricing
 
+https://raster.app/pricing
+
+Dashboard
+
+https://app.plane.so
+https://app.logsnag.com/dashboard
+https://cloud.tailwarden.com
+https://liveblocks.io/dashboard
+https://planetfall.io/brunowego/endpoints
+https://railway.app/dashboard
+https://app.frigade.com
+https://app.attio.com
+https://supabase.com/dashboard
+https://highstorm.app/overview
+https://helicone.ai/dashboard
+https://resend.com/overview
+https://app.airplane.dev
 https://app.planetscale.com/settings/account
 https://himalayas.app/recruit/details
+https://productlane.com/insights
+
+Settings
+
+https://himalayas.app/recruit/details
+https://resend.com/settings
+https://railway.app/account
+https://cloud.tailwarden.com/workspace/settings/
+https://app.plane.so/splendal/me/profile
 
 Roadmap
 
+https://app.plane.so
 https://regels.overheid.nl/roadmap
 https://spacedrive.com/roadmap
 https://feltlabs.ai
 https://qwiz.party
-https://www.helicone.ai/roadmap
+https://helicone.ai/roadmap
 https://qwiz.party (mantine)
+
+Onboarding
+
+https://app.attio.com/welcome/workspace-details
+https://app.formbricks.com/onboarding
+https://app.techfx.com.br/onboarding/partner
+https://app.boords.com/welcome
+
+Blog
+
+https://datocms.com/blog/how-to-generate-typescript-types-from-graphql
 -->

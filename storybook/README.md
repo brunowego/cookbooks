@@ -1,5 +1,15 @@
 # Storybook
 
+<!--
+{Object.entries(resolveConfig(tailwindConfig).theme.colors).map(([key, value]) => (
+    <ColorItem
+      key={key + value}
+      title={key}
+      colors={typeof value === 'string' ? [value] : value}
+      subtitle=""/>
+  ))}
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/storybookjs/storybook)
@@ -10,6 +20,15 @@
 - Blog
   - [How to automate UI tests with Github Actions](https://storybook.js.org/blog/how-to-automate-ui-tests-with-github-actions/)
 
+## Showcase
+
+- [Supabase](https://unruffled-hoover-de9320.netlify.app)
+
+<!--
+https://github.com/highlight/highlight/tree/main/packages/ui
+https://github.com/ballerine-io/ballerine/tree/dev/packages/ui
+-->
+
 ## CLI
 
 ### Installation
@@ -17,12 +36,6 @@
 ```sh
 # Using NPM
 npm install @storybook/cli -g
-
-# Using Yarn 1.x
-yarn global add @storybook/cli
-
-# Using pnpm
-pnpm add @storybook/cli -g
 ```
 
 <!--

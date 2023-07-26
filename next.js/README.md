@@ -207,6 +207,14 @@ echo '/out' >> ./.gitignore
 
 ### Issues
 
+#### Browser Extension Issue
+
+```log
+Warning: Extra attributes from the server: data-atm-ext-installed
+```
+
+Normally caused by a Browser Extension.
+
 #### Link Inside Link
 
 ```log

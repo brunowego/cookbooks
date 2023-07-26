@@ -11,3 +11,7 @@ https://github.com/moov-io/awesome-fintech
 ### Portuguese
 
 - Instituição de Pagamento (IP)
+
+## Platforms
+
+- [Plaid](https://plaid.com)

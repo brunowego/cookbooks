@@ -4,6 +4,12 @@
 enabled: process.env.NODE_ENV !== 'development',
 -->
 
+<!--
+Refer: src/app/layout.tsx
+
+throw new Error('Sentry Example API Route Error')
+-->
+
 ## Installation
 
 ```sh
@@ -172,3 +178,13 @@ SENTRY_DSN=
 SENTRY_AUTH_TOKEN=
 EOF
 ```
+
+## Issues
+
+### TBD
+
+```log
+ReferenceError: wpforms is not defined
+```
+
+TODO

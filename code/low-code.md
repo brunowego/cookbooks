@@ -25,7 +25,6 @@ https://github.com/illacloud/illa-builder
 https://github.com/alibaba/lowcode-engine
 https://github.com/rowyio/rowy
 https://github.com/nocobase/nocobase
-https://github.com/illacloud/illa-builder
 https://github.com/vercel/platforms
 https://github.com/lowdefy/lowdefy
 https://github.com/claimed-framework/component-library

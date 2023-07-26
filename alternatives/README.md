@@ -132,9 +132,3 @@ https://intercom.com/
 - [OmniGraffle](https://omnigroup.com/omnigraffle)
 - [Whimsical](https://whimsical.com)
 - [XMind](https://xmind.net/)
-
-## Analytics
-
-- Google Analytics
-- Matomo
-- PostHog

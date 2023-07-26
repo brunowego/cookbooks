@@ -12,7 +12,7 @@
 
 - [Ddosify](/ddosify.md) 🌟
 - [SlowHTTPTest](/slowhttptest.md)
-- [Slowloris](/slopwloris.md)
+- [Slowloris](/slowloris.md)
 
 <!--
 torshammer

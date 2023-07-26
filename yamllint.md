@@ -44,8 +44,8 @@ extends: default
 #   **/.yarn/**/*
 #   **/node_modules/**/*
 rules:
-  line-length:
-    max: 100
+  # line-length:
+  #   max: 100
   indentation:
     spaces: 2
     indent-sequences: consistent
@@ -54,7 +54,7 @@ rules:
     required: only-when-needed
   truthy:
     # Allowing 'on' due to: https://github.com/adrienverge/yamllint/issues/158
-    allowed-values: ['true', 'false', 'yes', 'no', 'on']
+    # allowed-values: ['true', 'false', 'yes', 'no', 'on']
 EOF
 ```
 

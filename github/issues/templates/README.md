@@ -1,6 +1,8 @@
 # GitHub Issue Template
 
 <!--
+https://github.com/webdevcody/code-racer/tree/main/.github/ISSUE_TEMPLATE
+
 https://github.com/tailwindlabs/tailwindcss/blob/master/.github/ISSUE_TEMPLATE/config.yml
 -->
 

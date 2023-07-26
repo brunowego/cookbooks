@@ -12,6 +12,7 @@
 - Testing
 - Integration
 - Staging
+- Pre-prod (Stakeholders, QA, PO, PM, etc.)
 - Production
 
 ## Requirements Checklist

@@ -1,8 +1,15 @@
 # Lottie
 
+<!--
+https://app.infisical.com
+-->
+
+## Links
+
+- [Main Website](https://airbnb.design/lottie)
+
 ## References
 
-- [Lottie](http://airbnb.io/lottie/)
 - [LottieFiles](https://lottiefiles.com)
 
 ## TBD

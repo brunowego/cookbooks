@@ -99,6 +99,19 @@ pnpx <command>
 
 ### Tips
 
+#### Fix Vulnerabilities
+
+```sh
+#
+pnpm audit
+
+#
+pnpm audit --fix
+
+#
+pnpm install
+```
+
 #### Corepack
 
 ```sh

@@ -12,6 +12,10 @@ https://youtube.com/watch?v=i6j2hT7ox0c
 
 - Monthly Active Users (MAU)
 
+## Videos
+
+- [What is the "best way" to develop software applications?](https://youtube.com/watch?v=oNmcX6Gozg0)
+
 ## Standards
 
 - [OpenFeature](/openfeature.md)

@@ -4,6 +4,13 @@
 https://github.com/hanaui-git/ZeroDiscord
 -->
 
+<!--
+#bugs
+#feature-requests
+#general
+#getting-started
+-->
+
 ## Links
 
 - [Org. Repository](https://github.com/discord)
@@ -40,6 +47,15 @@ choco install -y discord
 ```
 
 ## Tips
+
+### Subdomain
+
+Add New DNS Record:
+
+- Type: `CNAME`
+- Name: `discord`
+- Value: `discord.gg.opts-slash.<INVITE-CODE>.redirect.center`
+- TTL: 1 Hour
 
 ### Disable Embeds and Link Previews
 

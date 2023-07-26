@@ -4,6 +4,21 @@
 https://github.com/hackability-dev/space.hackability.it
 -->
 
+<!--
+Scaffold
+
+https://github.com/vercel/platforms
+https://github.com/sadmann7/skateshop
+https://github.com/makeplane/plane
+https://github.com/juliusmarminge/acme-corp
+
+https://github.com/unkeyed/unkey
+https://github.com/ixahmedxi/noodle
+https://github.com/chronark/highstorm
+https://github.com/BloopAI/bloop
+https://github.com/openstatusHQ/openstatus
+-->
+
 ## Links
 
 - [Main Website](https://nextjs.org/docs/api-reference/create-next-app)

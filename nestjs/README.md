@@ -3,7 +3,9 @@
 <!--
 nest start -w --preserveWatchOutput
 
-https://github.com/search?o=desc&q=path%3Apackage.json+%22nestjs%22+path%3Aapps&s=indexed&type=code
+https://github.com/search?o=desc&q=path%3Apackage.json+path%3Aapps+content%3Anestjs&s=indexed&type=code
+
+https://github.com/search?o=desc&q=path%3Asrc%2Fmodules+content%3Anestjs&s=indexed&type=code
 -->
 
 ## Links

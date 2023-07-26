@@ -10,8 +10,8 @@
 
 ```sh
 #
-code --install-extension bungcip.better-toml
+code --install-extension tamasfe.even-better-toml
 
 #
-jq '."recommendations" += ["bungcip.better-toml"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+jq '."recommendations" += ["tamasfe.even-better-toml"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```

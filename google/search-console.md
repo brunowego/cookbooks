@@ -1,7 +1,8 @@
 # Google Search Console
 
-## References
+## Links
 
 - [Dashboard](https://search.google.com/search-console)
-- [Rich Results Test](https://search.google.com/test/rich-results)
-- [Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
+- Test
+  - [Rich Results Test](https://search.google.com/test/rich-results)
+  - [Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)

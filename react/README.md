@@ -102,6 +102,24 @@ rafce
 
 ## Issues
 
+### Missing Use Effect
+
+```log
+Warning: Cannot update a component (`I18nProvider`) while rendering a different component (`LanguageProvider`). To locate the bad setState() call inside `LanguageProvider`, follow the stack trace as described in https://reactjs.org/link/setstate-in-render
+```
+
+```tsx
+import { useEffect } from 'react'
+
+export function LanguageProvider() {
+  useEffect(() => {
+    // ...
+  }, [])
+
+  // ...
+}
+```
+
 ### TBD
 
 ```log

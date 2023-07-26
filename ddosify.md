@@ -16,11 +16,11 @@ brew tap ddosify/tap
 brew install ddosify
 ```
 
-<!-- ### Commands
+### Commands
 
 ```sh
 ddosify -h
-``` -->
+```
 
 ### Usage
 
@@ -28,10 +28,10 @@ ddosify -h
 #
 ddosify \
   -T 5 \
-  -d 10 \
+  -d 60 \
   -m GET \
-  -n 100 \
-  -t http://127.0.0.1:8000
+  -n 500 \
+  -t http://127.0.0.1:3000/api/trpc/waitlist.addEmailToWaitList?batch=1
 ```
 
 <!--

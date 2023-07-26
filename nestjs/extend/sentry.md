@@ -3,6 +3,8 @@
 TODO
 
 <!--
+https://github.com/dotabod/frontend/blob/master/src/components/SentrySession.tsx
+
 https://github.com/lidofinance/polygon-validators-monitoring/blob/develop/src/main.ts
 
 https://github.com/UniqueNetwork/unique-marketplace-checkout-api/tree/main/src/utils/sentry

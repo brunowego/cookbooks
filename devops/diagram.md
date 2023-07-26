@@ -21,6 +21,10 @@ https://github.com/theztd/startup-infra-docker
 
 ## Tools
 
+### Managed
+
+- [Eraser](https://eraser.io)
+
 <!--
 https://microsoft.com/en-ca/microsoft-365/visio/flowchart-software
 https://lucidchart.com/pages/solutions/engineering

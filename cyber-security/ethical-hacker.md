@@ -22,6 +22,10 @@ https://github.com/Z4nzu/hackingtool
 
 **Keywords:** Red Team
 
+## Links
+
+- [Web Hacker's Weapons](https://github.com/hahwul/WebHackersWeapons)
+
 ## Terms
 
 - Nation-State Hackers

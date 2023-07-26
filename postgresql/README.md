@@ -16,3 +16,9 @@ https://github.com/postgres/postgres/blob/master/src/backend/utils/misc/postgres
 ## Glossary
 
 - Generalized Inverted Index (GIN)
+
+## Managed
+
+- [PlanetScale](/planetscale.md)
+- [Supabase](/supabase.md)
+- [Vercel Postgres](https://vercel.com/storage/postgres) 🌟

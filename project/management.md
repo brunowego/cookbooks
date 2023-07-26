@@ -30,12 +30,14 @@
 - [Zenhub](https://zenhub.com) 🌟
 
 <!--
+https://linear.app
 https://slite.com
 https://meistertask.com
 -->
 
 ### Open Source
 
+- [Plane](https://plane.so)
 - [Redmine](/redmine.md)
 
 <!--

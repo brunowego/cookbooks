@@ -1,6 +1,8 @@
 # GitHub
 
 <!--
+https://education.github.com/benefits?type=student
+
 https://github.com/revoltchat/.github
 https://github.com/chdsbd/kodiak
 

@@ -129,6 +129,12 @@ declare namespace NodeJS {
 #### Missing Module Declaration for SVG
 
 ```log
+Cannot find module '@/assets/images/logo.svg' or its corresponding type declarations. ts(2307)
+```
+
+TODO
+
+```log
 Cannot find module '@/assets/images/logo.svg?url' or its corresponding type declarations. ts(2307)
 ```
 

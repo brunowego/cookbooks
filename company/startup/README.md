@@ -18,6 +18,10 @@ Layoff
 - [500](https://500.co)
 - [Y Combinator](https://ycombinator.com)
 
+## Docs
+
+- [Google for Startups / Building your MVP](https://startup.google.com/start/building-your-mvp/)
+
 ## References
 
 - [AcquiredBy](https://acquiredby.co)
@@ -114,6 +118,16 @@ Key Performance Indicator (KPI)
 
 - Equity or Salary
 - Stock-Based Compensation
+- Solo-founder / Co-founder
+
+## Idea Validation
+
+- Customer conversations
+- Market research
+- Surveys
+- Landing page experiments
+- Feedback from users on a product
+- MVP
 
 ## Roles
 

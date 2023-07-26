@@ -3,10 +3,20 @@
 ## Links
 
 - Docs
-  - [Introduction to Storybook for React](https://storybook.js.org/docs/react/)
-  - [Storybook for Vite](https://storybook.js.org/blog/storybook-for-vite/)
+  - [Introduction to Storybook for React](https://storybook.js.org/docs/react)
+  - [Storybook for Vite](https://storybook.js.org/blog/storybook-for-vite)
+
+## Dependencies
+
+- [Storybook CLI](../README.md#cli)
 
 ## Bootstrap
+
+<!--
+export NODE_OPTIONS=--openssl-legacy-provider
+
+echo 'shamefully-hoist = true' >> ./.npmrc
+-->
 
 <!--
 pnpm config set auto-install-peers true
@@ -15,11 +25,17 @@ pnpm config set legacy-peer-deps true
 
 ```sh
 #
-pnpx sb init \
+pnpm dlx storybook@latest init \
   -s \
   -p tsx \
   --type react \
   -b @storybook/builder-vite
+
+#
+pnpm dlx storybook@latest init \
+  -s \
+  -p tsx \
+  --type nextjs
 ```
 
 <!--

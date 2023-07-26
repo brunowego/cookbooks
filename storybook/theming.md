@@ -19,7 +19,7 @@ pnpm add @storybook/addons @storybook/theming -D
 
 ## Configuration
 
-**Refer:** `./.storybook/manager.cjs`
+**Refer:** `./.storybook/manager.ts`
 
 ```js
 import { addons } from '@storybook/addons'

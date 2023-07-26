@@ -1,5 +1,14 @@
 # Locale
 
+## Tools
+
+- [GTranslate / Detect Browser Language](https://gtranslate.io/detect-browser-language)
+- [LocalPlanet / Your Browser Information](https://localeplanet.com/support/browser.html)
+
+## Glossary
+
+- Common Locale Data Repository (CLDR)
+
 ## CLI
 
 ### Environment

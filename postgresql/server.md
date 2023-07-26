@@ -251,9 +251,9 @@ services:
         source: postgresql-data
         target: /var/lib/postgresql/data
     environment:
+      POSTGRES_DB:
       POSTGRES_USER:
       POSTGRES_PASSWORD:
-      POSTGRES_DB:
     # command: ['postgres', '-c', 'log_statement=all']
     ports:
       - target: 5432

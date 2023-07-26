@@ -1,10 +1,40 @@
 # Rome
 
+<!--
+Rome is designed to replace Babel, ESLint, webpack, Prettier, Jest, and others.
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/rome/tools)
 - [Main Website](https://rome.tools)
 - [Docs](https://docs.rome.tools)
+
+## Library
+
+### Installation
+
+```sh
+# Using pnpm
+pnpm add rome -D
+```
+
+### Configuration
+
+```json
+{
+  // ...
+  "scripts": {
+    "lint": "rome check",
+    "format": "rome format"
+  }
+}
+```
+
+<!--
+pnpm rome check . --apply-suggested
+pnpm rome format . --write
+-->
 
 ## CLI
 
@@ -14,30 +44,41 @@
 npx rome -h
 ```
 
-### Configuration
+### Initialize
 
-<!--
+```sh
+#
+npx rome init
+```
+
+#### Configuration
+
+**Refer:** `./rome.json`
+
+```json
 {
-  "javascript": {
-    "formatter": {
-      "semicolons": "asNeeded",
-      "quoteStyle": "single"
-    }
-  },
+  // ...
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
     "indentSize": 2,
     "lineWidth": 100
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true
+  }
+  // "linter": { ... }
+}
+```
+
+```json
+{
+  // ...
+  "javascript": {
+    "formatter": {
+      "semicolons": "asNeeded",
+      "quoteStyle": "single"
     }
   }
 }
--->
+```
 
 ### Tips
 
@@ -49,4 +90,19 @@ code --install-extension rome.rome
 
 #
 jq '."recommendations" += ["rome.rome"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
+
+**Configuration:**
+
+```sh
+#
+echo '{}' > "$PWD"/.vscode/settings.json
+```
+
+```sh
+#
+jq '."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+
+#
+jq '."editor.defaultFormatter" |= "rome.rome"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```

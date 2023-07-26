@@ -8,6 +8,7 @@
 - [Main Website](https://trunk.io)
 - [Docs](https://docs.trunk.io/docs)
 - [Status Page](https://status.trunk.io)
+- [Plugins Repository](https://github.com/trunk-io/plugins)
 
 ## Library
 
@@ -30,7 +31,8 @@ pnpm add @trunkio/launcher -D
   // ...
   "scripts": {
     // ...
-    "lint": "trunk check --ci"
+    "lint": "trunk check",
+    "format": "trunk fmt"
   }
   // ...
 }

@@ -23,14 +23,14 @@ git rebase --continue
 ## Rewriting Commit Messages
 
 ```sh
+# Get hash of commit to modify
 git log --oneline
+
+#
+git rebase -i <hash>
 ```
 
 Modify `pick` to `reword`:
-
-```sh
-git rebase -i HEAD~3
-```
 
 ## Inject Commit Between Commits
 

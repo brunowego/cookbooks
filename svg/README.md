@@ -8,6 +8,7 @@
 ## Tools
 
 - [SVG Artista](https://svgartista.net)
+- [SVG Minifier](https://svgminify.com)
 
 ## Tips
 

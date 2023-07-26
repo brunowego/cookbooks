@@ -6,10 +6,15 @@ https://github.com/alt3/rank-my-wallet
 https://github.com/bravo-kernel/lingui-v4-app
 -->
 
+<!--
+https://github.com/MantaDEX/manta-dex/blob/develop/scripts/gpt-trans-locales.ts
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/lingui/js-lingui)
 - [Main Website](https://lingui.dev)
+- [Examples Repository](https://github.com/lingui/js-lingui/tree/main/examples)
 
 ## Examples
 

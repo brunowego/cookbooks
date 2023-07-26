@@ -27,8 +27,12 @@ xcrun simctl list devices 'iPhone 11 Pro Max'
 #
 xcrun simctl create <name> <device-type-id> <runtime-id>
 # Example
-xcrun simctl create 'iPhone 11 Pro Max' 'com.apple.CoreSimulator.SimDeviceType.iPhone-11-Pro-Max' 'com.apple.CoreSimulator.SimRuntime.iOS-16-2'
+xcrun simctl create 'iPhone 11 Pro Max' 'com.apple.CoreSimulator.SimDeviceType.iPhone-11-Pro-Max' 'com.apple.CoreSimulator.SimRuntime.iOS-16-4'
 ```
+
+<!--
+-AppleLanguages '(pt-BR)' -AppleLocale 'pt_BR'
+-->
 
 #### Boot
 
