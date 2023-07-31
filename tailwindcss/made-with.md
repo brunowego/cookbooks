@@ -15,10 +15,17 @@ https://github.com/search?q=path%3Aapps+path%3Apackage.json+content%3Atailwindcs
 - [Netflix Global Top 10](https://netflix.com/tudum/top10)
 
 <!--
+https://app.greenhouse.io/users/sign_in
+https://console.qovery.com/onboarding/project
+
 https://omise.co
+https://unikorns.agency
 -->
 
 <!--
+https://proofserve.com
+https://paraform.com
+https://wellfound.com
 https://raster.app
 https://upstash.com
 https://productlane.com
@@ -161,6 +168,16 @@ https://app.planetscale.com/settings/account
 https://himalayas.app/recruit/details
 https://productlane.com/insights
 
+Event
+
+https://maven.com/maven-engineering/startup-engineering
+https://apps.shopify.com/instafeed
+
+Company
+
+https://wellfound.com/company/prosper-marketplace-3
+https://himalayas.app/companies/hustlewing/tech-stack
+
 Settings
 
 https://himalayas.app/recruit/details
@@ -181,6 +198,7 @@ https://qwiz.party (mantine)
 
 Onboarding
 
+https://proofserve.com/get-started
 https://app.attio.com/welcome/workspace-details
 https://app.formbricks.com/onboarding
 https://app.techfx.com.br/onboarding/partner

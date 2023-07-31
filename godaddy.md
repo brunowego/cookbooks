@@ -4,6 +4,7 @@
 
 - [Org. Repository](https://github.com/godaddy)
 - [Contact Us](https://godaddy.com/help/contact-us)
+- [Status Page](https://status.godaddy.com)
 - Account
   - [Products](https://account.godaddy.com/products)
   - [Domain Portfolio](https://dcc.godaddy.com/control/portfolio)

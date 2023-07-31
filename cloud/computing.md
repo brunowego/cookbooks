@@ -8,6 +8,14 @@ https://linkedin.com/learning/paths/become-a-cloud-developer
 https://github.com/madebygps/self-taught-guide-to-cloud-computing
 -->
 
+## Questions
+
+### What is cloud computing?
+
+- Cloud computing is the on-demand delivery of services such as compute and storage over the Internet with pay-as-you-go pricing.
+- Simply put, instead of buying a physical server or a computer, you can lease it!
+- You can leverage compute power, storage, and databases, on an as-needed basis from a cloud provider like Amazon Web Services (AWS).
+
 ## Vendors
 
 - Amazon Web Services (AWS)

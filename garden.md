@@ -5,6 +5,8 @@ https://github.com/codelabsab/foodify
 ./garden.yml
 -->
 
+**Keywords:** DevOps Workflow
+
 ## Links
 
 - [Code Repository](https://github.com/garden-io/garden)

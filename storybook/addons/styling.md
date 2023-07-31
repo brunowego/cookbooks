@@ -80,7 +80,7 @@ postcss.config.cjs
 const { join } = require('path')
 
 /**
- * @type { import('prettier').Options }
+ * @type { import('postcss').ProcessOptions }
  */
 const postcssConfig = {
   plugins: {

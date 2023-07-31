@@ -2,6 +2,10 @@
 
 **Note:** Formatter for `className` in TSX files and `@apply` in CSS files.
 
+## Links
+
+- [Code Repository](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
+
 ## Installation
 
 - [Dependency](/prettier.md#library)

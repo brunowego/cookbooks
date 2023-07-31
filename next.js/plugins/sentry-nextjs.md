@@ -181,6 +181,14 @@ EOF
 
 ## Issues
 
+### Missing Auth Token Environment Variable
+
+```log
+error - No Sentry auth token configured. Source maps will not be uploaded.
+```
+
+Missing `SENTRY_AUTH_TOKEN` environment variable.
+
 ### TBD
 
 ```log

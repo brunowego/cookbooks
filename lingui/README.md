@@ -1,6 +1,10 @@
 # Lingui
 
 <!--
+https://github.com/thekip/nextjs-lingui-rsc-poc
+-->
+
+<!--
 https://github.com/lensterxyz/lenster 🌟
 https://github.com/alt3/rank-my-wallet
 https://github.com/bravo-kernel/lingui-v4-app

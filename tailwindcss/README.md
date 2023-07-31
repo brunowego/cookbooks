@@ -18,11 +18,9 @@ https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atai
 
 - [Code Repository](https://github.com/tailwindlabs/tailwindcss)
 - [Main Website](https://tailwindcss.com)
-- [Docs](https://tailwindcss.com/docs)
-- [Tailwind UI](https://tailwindui.com)
-- [Headless UI](https://headlessui.dev/react/menu)
-- [Heroicons](https://heroicons.com)
-- [CodePen Examples](https://codepen.io/search/pens?q=tailwind)
+- [Docs](https://tailwindcss.com/docs)c
+- Examples
+  - [CodePen](https://codepen.io/search/pens?q=tailwind)
 
 ## Docs
 
@@ -35,17 +33,18 @@ https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atai
 - [PlanetScale](https://planetscale.com)
 - [Supabase](https://supabase.io/)
 
-## UI Kit
+<!-- ## UI Kit -->
 
+## UI Components
+
+- [daisyUI](https://daisyui.com)
 - [Flowbite](/flowbite.md)
-- [Headless UI](https://headlessui.com)
+- [Headless UI](/headlessui.md) 🌟
 - [HyperUI](https://hyperui.dev)
 - [Myna UI](https://mynaui.com)
-- [Sail UI](https://sailui.github.io/ui/)
-
-<!--
-https://preline.co
--->
+- [Preline](https://preline.co)
+- [Sail UI](https://sailui.github.io/ui)
+- [Tailwind UI](https://tailwindui.com)
 
 ## Useful
 
@@ -102,7 +101,7 @@ pnpm add @types/tailwindcss tailwindcss postcss autoprefixer -D
 
 ```cjs
 /**
- * @type { import('prettier').Options }
+ * @type { import('postcss').ProcessOptions }
  */
 const postcssConfig = {
   plugins: {

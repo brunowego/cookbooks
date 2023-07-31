@@ -20,6 +20,13 @@
 | Primary Key   |            |          | Yes      |
 | Foreign Key   |            |          | Yes      |
 
+<!-- ##
+
+- Inmon
+- Kimball
+- Data Vault
+- One-big-table -->
+
 ## Types
 
 ### Conceptual

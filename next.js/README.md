@@ -1,8 +1,11 @@
 # Next.js
 
 <!--
-v13 / App feature
+export const revalidate = 1
+export const revalidate = 60 * 15 // 15 minutes
+-->
 
+<!--
 https://blog.logrocket.com/next-js-13-new-app-directory/
 
 https://github.com/starknet-io/starknet-website/tree/dev/src/app

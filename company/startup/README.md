@@ -13,6 +13,13 @@ Pró-Labore
 Layoff
 -->
 
+<!--
+Generalist Engineer
+Generalist Software Engineer
+Start-up Specialist
+Founding Engineer
+-->
+
 ## Links
 
 - [500](https://500.co)
@@ -46,6 +53,7 @@ Workforce Management (WFM)
 Key Performance Indicator (KPI)
 -->
 
+- Accounts Payable (AP) / Accounts Receivable (AR)
 - Annual Recurring Revenue (ARR)
 - Average Ticket Price (ATP)
 - Business Development (BizDev)
@@ -119,6 +127,18 @@ Key Performance Indicator (KPI)
 - Equity or Salary
 - Stock-Based Compensation
 - Solo-founder / Co-founder
+
+## Business Model
+
+- Business to Business (B2B)
+- Business to Consumer (B2C)
+- Business to Business to Consumer (B2B2C)
+- eCommerce
+- Marketplace
+- Retail
+- Service
+- Software as a Service (SaaS)
+- Subscription
 
 ## Idea Validation
 

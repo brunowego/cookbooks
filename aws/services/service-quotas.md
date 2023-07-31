@@ -1,5 +1,13 @@
 # AWS Service Quotas
 
+**Keywords:** Limits
+
+## Links
+
+- [Console](https://us-east-1.console.aws.amazon.com/servicequotas/home/)
+- AWS Services
+  - [EC2](https://us-east-1.console.aws.amazon.com/servicequotas/home/services/ec2/quotas)
+
 ## Guides
 
 - [What is Service Quotas?](https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html)

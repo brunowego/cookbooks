@@ -33,6 +33,10 @@ https://epic-course-platform.vercel.app/
 - [Prevent Uploading Source Paths with .vercelignore on Vercel](https://vercel.com/guides/prevent-uploading-sourcepaths-with-vercelignore)
 - [How do I use the "Ignored Build Step" field on Vercel?](https://vercel.com/support/articles/how-do-i-use-the-ignored-build-step-field-on-vercel)
 
+## Utils
+
+- [Environment Variables](https://vevd.vercel.app)
+
 ## Terms
 
 - AV1 Image File Format (AVIF)

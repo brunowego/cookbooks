@@ -46,21 +46,22 @@ Transactions Per Second (TPS)
 
 ## References
 
-- [Open Source AWS Security Tools](https://asecure.cloud/tools/)
 - [Amazon Personalize Pricing](https://aws.amazon.com/personalize/pricing/)
-- [Regions and Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
-- [AWS Exam Scheduling](https://certmetrics.com/amazon/candidate/exam_scheduling.aspx)
 - [Awesome List](https://github.com/donnemartin/awesome-aws)
+- [AWS Exam Scheduling](https://certmetrics.com/amazon/candidate/exam_scheduling.aspx)
+- [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
 - [AWS Post-Event Summaries](https://aws.amazon.com/premiumsupport/technology/pes/)
+- [Open Source AWS Security Tools](https://asecure.cloud/tools/)
+- [Regions and Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
 
 ## Links
 
-- [AWS Free Tier](https://aws.amazon.com/free/)
-- [AWS Simple Monthly Calculator](https://calculator.s3.amazonaws.com/index.html)
-- [AWS Service Health Dashboard](https://status.aws.amazon.com)
-- [AWS Pricing Calculator](https://calculator.aws/#/)
-- [AWS Glossary](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html)
 - [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/)
+- [AWS Free Tier](https://aws.amazon.com/free) 🌟
+- [AWS Glossary](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html)
+- [AWS Pricing Calculator](https://calculator.aws/#/)
+- [AWS Service Health Dashboard](https://status.aws.amazon.com)
+- [AWS Simple Monthly Calculator](https://calculator.s3.amazonaws.com/index.html)
 
 ## Tools
 
