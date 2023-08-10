@@ -18,51 +18,27 @@ https://c4model.com
 
 ## Glossary
 
-- Don't Repeat Yourself (DRY)
+- Architecture Decision Records (ADRs)
 - Domain-Specific Language (DSL)
+- Don't Repeat Yourself (DRY)
 
 ## Terms
 
 - Change Management / Gestão da Mudança (GMUD)
 - Solution Architecture
 
-## Architecture Pattern
+## Patterns
 
 - [Jamstack (p.s.a. JAMStack) (JAM means: JavaScript, API's, Markup)](/jamstack/README.md)
 - [MACH Alliance](/machalliance.md)
 
-<!--
-## Bootstrap
+## Architectures
 
-### Node.js
-
-- README
-- EditorConfig
-- Security Policy
-- Yarn (>= 2) Init
-- Prettier
-- Linters (yamllint, ESLint, shellcheck)
-- Husky (commitlint, lint-staged)
-- TurboRepo
-- Next.js
-- Vercel
-- GitHub
-  - Workflows (codeql-analysis, notfoundbot)
--->
+- Clean Architecture
+- Event-Driven Architecture (EDA)
+- Hexagonal Architecture (a.k.a. Ports and Adapters)
+- Onion Architecture
 
 <!--
-changeset
--->
-
-<!--
-- DeepSource
-- dependabot
--->
-
-<!--
-opencollective
-cofundable
-
----
-Architecture Decision Records (ADRs)
+Multitier Architecture
 -->

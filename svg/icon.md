@@ -11,7 +11,7 @@
 
 ## Libraries
 
-- [Flaticon](https://flaticon.com)
+- [Flaticon](https://flaticon.com) 🌟
 - [Heroicons](https://heroicons.com)
 - [Hugeicons Pro](https://hugeicons.pro)
 - [Lucide](/lucide.md)

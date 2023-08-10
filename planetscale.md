@@ -5,14 +5,20 @@ https://github.com/planetscale/integrations/tree/main/vercel/nextjs-example
 https://github.com/planetscale/beam
 -->
 
+**Keywords:** Serverless MySQL Platform
+
 ## Links
 
 - [Code Repository](https://github.com/planetscale/cli)
 - [Main Website](https://planetscale.com)
-- [CLI](https://planetscale.com/cli)
 - [Vitess](https://planetscale.com/vitess)
+- [Dashboard](https://app.planetscale.com)
 
 ## CLI
+
+### Links
+
+- [Main Website](https://planetscale.com/cli)
 
 ### Dependencies
 
@@ -33,30 +39,49 @@ brew install pscale
 pscale -h
 ```
 
-### Usage
+### Configuration
 
 ```sh
 #
 pscale auth login
+```
+
+### Usage
+
+```sh
+#
+pscale database list
 
 #
-pscale database create [db-name]
-pscale branch create [db-name] initial-setup
-pscale branch create [db-name] shadow
-pscale branch list
+pscale branch list <db-name>
 
 #
-pscale shell [db-name] main
+pscale backup list <db-name> <branch-name>
+
+#
+pscale database dump <db-name> <branch-name> <backup-id>
+```
+
+<!--
+#
+pscale database create <db-name>
+
+#
+pscale branch create <db-name> initial-setup
+pscale branch create <db-name> shadow
+
+#
+pscale shell <db-name> main
 > SHOW TABLES;
 > SELECT * FROM _prisma_migrations;
 
 #
-pscale connect [db-name] initial-setup --port 3309
-pscale connect [db-name] shadow --port 3310
+pscale connect <db-name> initial-setup --port 3309
+pscale connect <db-name> shadow --port 3310
 
 #
-pscale deploy-request create [db-name] initial-setup
-```
+pscale deploy-request create <db-name> initial-setup
+-->
 
 ### Docs
 

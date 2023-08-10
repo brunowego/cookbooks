@@ -1,5 +1,9 @@
 # Carbon Market
 
+<!--
+https://ctxglobal.com
+-->
+
 ## Links
 
 - [Wikipedia: Carbon offsets and credits](https://en.wikipedia.org/wiki/Carbon_offsets_and_credits)
@@ -26,7 +30,7 @@ https://legallandbrazil.com
 <!--
 ## Climate Platform
 
-https://watershed.com/
+https://watershed.com
 -->
 
 <!--

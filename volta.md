@@ -1,5 +1,7 @@
 # Volta
 
+**Keywords:** Node.js Version Manager
+
 ## Links
 
 - [Code Repository](https://github.com/volta-cli/volta)
@@ -13,4 +15,20 @@
 
 ```sh
 brew install volta
+```
+
+### Commands
+
+```sh
+volta -h
+```
+
+### Usage
+
+```sh
+#
+volta list
+
+#
+volta install node
 ```

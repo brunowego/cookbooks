@@ -5,7 +5,7 @@
 ## Links
 
 - [npm trends](https://npmtrends.com/git-hooks-vs-husky-vs-pre-commit)
-- [Status Page](https://status.npmjs.org/)
+- [Status Page](https://status.npmjs.org)
 
 ## CLI
 

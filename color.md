@@ -61,10 +61,24 @@ https://tints.dev
 https://maketintsandshades.com
 -->
 
+### Gradient Generator
+
+- [ColorDesigner / Gradient Generator](https://colordesigner.io/gradient-generator)
+- [ColorKit / Gradient Palette](https://colorkit.co/gradient-palette)
+- [Coolors / Gradient Palette](https://coolors.co/gradient-palette) 🌟
+
+### Converter
+
+- [Colorffy / HEX to HSL](https://colorffy.com/color-converter/hex-to-hsl)
+- [ConvertAColor](https://convertacolor.com) 🌟
+- [EasyRetro / HEX to HSL](https://easyretro.io/tools/hex-to-hsl)
+
 ### Contrast Checker
 
+- [Atmos / Contrast checker](https://atmos.style/contrast-checker)
 - [Colour Contrast Checker](https://colourcontrast.cc) 🌟
 - [Coolors / Color Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5)
+- [SiegeMedia / Contrast Ratio](https://siegemedia.com/contrast-ratio) (HSL)
 - [WCAG / Contrast Checker](https://contrastchecker.com)
 - [WebAIM / Contrast Checker](https://webaim.org/resources/contrastchecker/)
 

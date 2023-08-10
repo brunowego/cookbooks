@@ -1,5 +1,9 @@
 # 1Password
 
+<!--
+data-1p-ignore
+-->
+
 ## Links
 
 - [Main Website](https://1password.com)

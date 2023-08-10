@@ -3,6 +3,12 @@
 ## Links
 
 - [Main Website](https://stripe.com)
+- [Dashboard](https://dashboard.stripe.com)
+  - [API keys](https://dashboard.stripe.com/test/apikeys)
+  - [Webhooks](https://dashboard.stripe.com/test/webhooks/create?endpoint_location=local)
+  - [Products](https://dashboard.stripe.com/test/products)
+- Docs
+  - [Testing](https://stripe.com/docs/testing)
 
 ## Docs
 

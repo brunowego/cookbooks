@@ -4,6 +4,10 @@
 https://app.pluralsight.com/library/courses/automating-kubernetes-deployments-gitops-workflow/table-of-contents
 -->
 
+<!--
+Pull-Based vs. Push-Based
+-->
+
 GitOps is an operating model pattern for cloud native applications & Kubernetes storing application & declarative infrastructure code in Git as the source of truth used for automated continuous delivery.
 
 ## Links

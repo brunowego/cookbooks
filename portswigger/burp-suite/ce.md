@@ -30,6 +30,8 @@ brew install burp-suite
 
 ### Certificate
 
+**Dependencies:** [iproute2](/iproute2.md)
+
 ```sh
 # Darwin
 export PROXY_HOST="http://$(ip route get 1 | awk '{print $NF;exit}'):8080"
@@ -39,7 +41,7 @@ export PROXY_HOST="http://$(ip route get 1 | awk '{print $NF;exit}'):8080"
 #
 curl \
   -ks \
-  -o /tmp/burp.der \
+  -o ./burp.der \
   -x "$PROXY_HOST" \
   http://burp/cert
 
@@ -47,7 +49,8 @@ curl \
 sudo security add-trusted-cert -d \
   -r trustRoot \
   -k /Library/Keychains/System.keychain \
-  /tmp/burp.der
+  ./burp.der
+
 # or, Windows/Linux
 # TODO
 ```
@@ -66,8 +69,8 @@ sudo security add-trusted-cert -d \
 
 #### Export CA certificate
 
-1. Open Burp Suite CE --> Proxy -> Options tab
-2. Proxy Listeners section -> Import / export CA certificate
+1. Open Burp Suite CE -> Proxy -> Proxy settings tab
+2. Tools / Proxy -> Proxy Listeners section -> Import / export CA certificate
 3. CA Certificate -> Export: Select Certificate in DER format -> Next
    - Choose a location to save the certificate: `~/Downloads/burp.der` -> Save
    - Next -> Close

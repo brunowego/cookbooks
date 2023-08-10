@@ -2,6 +2,7 @@
 
 <!--
 https://github.com/golang-standards/project-layout
+https://github.com/bxcodec/go-clean-arch
 -->
 
 Efficient compilation, Efficient execution and Ease of programming.

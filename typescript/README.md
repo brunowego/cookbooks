@@ -20,6 +20,10 @@ https://linkedin.com/learning/typescript-upgrades-and-features/
 https://linkedin.com/learning/typescript-for-node-js-developers/
 -->
 
+<!--
+// @ts-expect-error debouncedValue is not React.ChangeEvent<HTMLInputElement>
+-->
+
 ## References
 
 - [Basic Types](https://www.typescriptlang.org/docs/handbook/basic-types.html)

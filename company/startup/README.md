@@ -60,6 +60,7 @@ Key Performance Indicator (KPI)
 - Business Partner (BP)
 - Central Standard Time (CST)
 - Cost Per Thousand (CPM)
+- Cost to Company (CTC)
 - Costumer Success (CS)
 - Customer Acquisition Cost (CAC)
 - Customer Lifetime Value (CLV or often CLTV)
@@ -70,6 +71,7 @@ Key Performance Indicator (KPI)
 - Due Diligence (DD)
 - Earnings Before Interest and Taxes (EBIT)
 - Earnings Before Interest, Taxes, Depreciation, and Amortization (EBITDA)
+- Employee Stock Ownership Plan (ESOP)
 - Environmental, Social and Corporate Governance (ESG)
 - Exchange-Traded Fund (ETF)
 - Exit to Community (E2C)
@@ -85,8 +87,11 @@ Key Performance Indicator (KPI)
 - Request for Discussion (RfD)
 - Request for Proposal (RfP)
 - Requests for Information (RfI)
+- Small and Midsize Business (SMB)
+- Stock Keeping Unit (SKU)
 - Stock Keeping Unit (SKU)
 - Training and Development (T&D)
+- Universal Product Code (UPC)
 - Work From Home (WFH)
 
 ## Terms
@@ -173,3 +178,19 @@ Key Performance Indicator (KPI)
 - WeCrashed
 - The Dropout
 - Super Pumped
+
+## Phases
+
+1. Early Idea / Early-Stage
+2. Researched Idea
+3. Mockups
+4. Early Prototype
+5. MVP
+6. Beta
+7. Later-Stage
+
+<!--
+https://trueup.io/early-stage-startups
+
+https://workatastartup.com/companies?companySize=seed&companyStage=seed&demographic=any&hasEquity=any&hasSalary=any&industry=any&interviewProcess=any&jobType=any&layout=list-compact&remote=yes&sortBy=company_created_desc&tab=any&usVisaNotRequired=true
+-->

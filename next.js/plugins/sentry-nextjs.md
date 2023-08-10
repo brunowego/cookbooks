@@ -181,6 +181,37 @@ EOF
 
 ## Issues
 
+### Source Maps Not Uploaded
+
+```log
+It looks like you're creating, but not uploading your source maps. Read our docs for troubleshooting help.
+```
+
+```js
+// ...
+const nextConfig = {
+  // ...
+  sentry: {
+    widenClientFileUpload: true,
+    // ...
+  }
+}
+// ...
+```
+
+### Source Map File Doesn't Exist
+
+```log
+Sentry couldn't fetch the source map file for this event. Read our docs for troubleshooting help.
+```
+
+<!--
+https://docs.sentry.io/platforms/javascript/guides/nextjs/sourcemaps/
+https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
+-->
+
+TODO
+
 ### Missing Auth Token Environment Variable
 
 ```log

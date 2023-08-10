@@ -13,7 +13,7 @@
 
 - [Atlassian Statuspage](/atlassian/statuspage.md)
 - [Better Stack](https://betterstack.com)
-- [Instatus](https://instatus.com)
+- [Instatus](https://instatus.com) 🌟
 - [UptimeRobot](/uptimerobot/README.md) 🌟
 
 ### Open Source

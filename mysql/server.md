@@ -114,6 +114,39 @@ docker rm -f mysql
 docker volume rm mysql-data
 ```
 
+## Docker Compose
+
+### Manifest
+
+```yml
+---
+version: '3'
+
+services:
+  mysql:
+    image: docker.io/library/mysql:8.0
+    hostname: mysql
+    volumes:
+      - type: volume
+        source: mysql-data
+        target: /var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_DATABASE:
+      MYSQL_USER:
+      MYSQL_PASSWORD:
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - target: 3306
+        published: $MYSQL_PORT
+        protocol: tcp
+    restart: unless-stopped
+
+volumes:
+  mysql-data:
+    driver: local
+```
+
 ## Helm
 
 ### References

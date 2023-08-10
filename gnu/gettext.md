@@ -1,5 +1,7 @@
 # GNU gettext
 
+**Keywords:** Portable Object
+
 ## Links
 
 - [Main Website](https://gnu.org/software/gettext/)

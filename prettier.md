@@ -50,6 +50,7 @@ echo '/pnpm-lock.yaml' > ./.prettierignore
 const prettierConfig = {
   semi: false,
   singleQuote: true,
+  // jsxSingleQuote: true,
 }
 
 module.exports = prettierConfig
