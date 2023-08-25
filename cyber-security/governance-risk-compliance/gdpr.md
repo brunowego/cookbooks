@@ -11,6 +11,10 @@ https://app.pluralsight.com/library/courses/state-of-gdpr/table-of-contents
 https://app.pluralsight.com/library/courses/gdpr-executive-briefing/table-of-contents
 -->
 
+<!--
+https://langdock.com
+-->
+
 ## Links
 
 - [National Data Protection Authority](https://en.wikipedia.org/wiki/National_data_protection_authority)

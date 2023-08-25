@@ -4,6 +4,6 @@
 
 - Hypervisor
 
-## Alternatives
+## Solutions
 
-- Dedicated Host
+- [OpenShift](/openshift.md)

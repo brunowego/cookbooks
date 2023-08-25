@@ -17,16 +17,24 @@
 
 ## Tools
 
-### Personal Usage
+### Managed
 
 - [1Password](/1password.md)
+- [Bitwarden](/bitwarden.md)
 - [KeePass](/keepass.md)
 - [LastPass](/lastpass.md)
 
-### Corporate Usage
+### Open Source
 
-- [Bitwarden](/bitwarden.md)
 - [Passbolt Community Edition (CE)](/passbolt-ce.md)
+- [Vaultwarden](/bitwarden/vaultwarden/README.md)
+
+<!--
+https://github.com/authpass/authpass
+https://github.com/keeweb/keeweb
+https://github.com/lesspass/lesspass
+https://github.com/padloc/padloc
+-->
 
 ## Secret Store
 

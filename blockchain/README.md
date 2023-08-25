@@ -13,7 +13,7 @@ https://app.pluralsight.com/library/courses/aws-blockchain-ethereum-deploying-te
 https://app.pluralsight.com/library/courses/surveying-blockchain-technologies-enterprise/table-of-contents
 https://app.pluralsight.com/library/courses/pluralsight-live-2020-blockchain-decision-substrate/table-of-contents
 
-https://www.linkedin.com/learning/search?keywords=Blockchain
+https://linkedin.com/learning/search?keywords=Blockchain
 
 Mainnet
 Devnet

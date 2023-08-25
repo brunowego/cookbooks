@@ -1,5 +1,9 @@
 # Open Policy Agent (OPA)
 
+<!--
+https://opal.ac
+-->
+
 **Keywords:** Policy Management, PaC, AuthZ
 
 ![OPA Demo Overview](/assets/images/open-policy-agent/opa-demo-overview.png)

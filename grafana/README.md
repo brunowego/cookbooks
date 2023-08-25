@@ -1,6 +1,6 @@
 # Grafana
 
-**Keyword:** Monitoring
+**Keyword:** Monitoring, Open Observability Platform
 
 <!--
 https://linkedin.com/learning/graphite-and-grafana-visualizing-application-performance/monitoring-and-visualizing-system-performance

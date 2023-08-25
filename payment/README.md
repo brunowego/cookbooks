@@ -32,3 +32,8 @@ https://github.com/tracontecnologia/ondw-2-server
 ## Standards
 
 - ISO20022
+
+## Payment System Platform
+
+- [Lemon Squeezy](https://lemonsqueezy.com)
+- [Paypal](https://paypal.com)

@@ -10,6 +10,10 @@ https://github.com/medusajs/medusa/blob/develop/www/docs/tailwind.config.js
 https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atailwindcss&type=code
 -->
 
+<!--
+https://tailbits.com
+-->
+
 **Keywords:** CSS framework, Utility-first
 
 <!-- TODO: Lint not working with VS Code -->
@@ -52,6 +56,10 @@ https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atai
 
 ## Tools
 
+- Converter
+  - [Lembdadev / CSS to TailwindCSS Converter](https://lembdadev.com/css-to-tailwind-converter)
+  - [Transform / CSS to TailwindCSS](https://transform.tools/css-to-tailwind)
+  - [TailwindCSS Converter / Convert Css To Tailwind](https://tailwind-converter.netlify.app)
 - [DivMagic](/divmagic.md)
 - [Tailwind Color Palette](https://tailwindcolor.com)
 - [tailwindpdf](/tailwindpdf.md)

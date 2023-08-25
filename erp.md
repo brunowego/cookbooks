@@ -1,9 +1,31 @@
 # Enterprise Resource Planning (ERP)
 
-<!--
-https://github.com/frappe/erpnext
+## Glossary
 
-https://tiny.com.br
--->
+- Customer Relationship Management (CRM)
+- Human Resource Management (HRM)
+- IT Service Management (ITSM)
+
+## Platforms
+
+### Managed
+
+- [Linx](https://linx.com.br)
+- [SAP](https://sap.com)
+- [Tiny](https://tiny.com.br)
+- [TOTVS](https://totvs.com)
+
+### Open Source
 
 TODO
+
+<!--
+https://github.com/idurar/idurar-erp-crm
+https://github.com/odoo/odoo
+https://github.com/frappe/erpnext
+https://github.com/akaunting/akaunting
+https://github.com/grocy/grocy
+https://github.com/Dolibarr/dolibarr
+https://github.com/metasfresh/metasfresh
+https://github.com/ever-co/ever-gauzy
+-->

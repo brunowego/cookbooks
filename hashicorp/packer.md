@@ -4,6 +4,12 @@
 https://linkedin.com/learning/learning-hashicorp-packer/stop-manually-creating-images-and-start-using-packer
 -->
 
+**Keywords:** Machine Image
+
+<!--
+EC2, Vagrant
+-->
+
 ## CLI
 
 ### Installation

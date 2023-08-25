@@ -38,7 +38,7 @@ const nextConfig = {
 ## Links
 
 - [Code Repository](https://github.com/vercel/next.js)
-- [Main Website](https://nextjs.org/)
+- [Main Website](https://nextjs.org)
 - [Awesome Next.js](https://github.com/unicodeveloper/awesome-nextjs)
 
 ## Utils

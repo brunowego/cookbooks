@@ -8,6 +8,6 @@ https://github.com/frappe/hrms
 https://github.com/adevait/hrm
 -->
 
-## Terms
+## Glossary
 
 - Applicant Tracking System (ATS)

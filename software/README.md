@@ -63,3 +63,8 @@ https://hiq.fi/en/blog/miniservice-or-microservice/
 https://tweedegolf.nl/en/blog/32/from-monolith-to-miniservice
 https://dzone.com/articles/micro-service-mini-service-and-macro-service
 -->
+
+## House
+
+- [GFT](https://gft.com)
+- [The Software House](https://tsh.io)

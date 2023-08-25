@@ -14,3 +14,7 @@
 <!--
 T10Y2Y
 -->
+
+## Terms
+
+- Nolan Chart / Diagrama de Nolan (pt-br)

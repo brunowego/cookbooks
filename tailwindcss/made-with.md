@@ -27,10 +27,6 @@ https://ui8.net/ui8/products/brainwave-ai-ui-design-kit
 https://ui8.net/ui8/products/synapse-ai-ui-kit
 -->
 
-### Open Source
-
-- [Supabase](https://supabase.com)
-
 <!--
 404
 
@@ -50,11 +46,13 @@ https://himalayas.app/jobs
 
 Profile
 
+https://escavador.com/nomes/francisco-carvalho-rodrigues-6221b0ac69
 https://himalayas.app/companies/coinbase
 https://toolfinder.co/tools/evernote
 
 Login
 
+https://landingfolio.com/auth/signup
 https://app.prefect.cloud/auth/login
 https://app.boords.com/login
 https://app.writesonic.com/signup
@@ -133,6 +131,10 @@ https://app.formbricks.com/onboarding
 https://app.techfx.com.br/onboarding/partner
 https://app.boords.com/welcome
 
+Progress
+
+https://rekrabice.cz
+
 Blog
 
 https://datocms.com/blog/how-to-generate-typescript-types-from-graphql
@@ -145,4 +147,23 @@ https://web-website.vercel.app
 Code
 
 https://auth.planetscale.com/oauth/device?user_code=NS8EY1DU
+
+Developer
+
+https://dev.aurora.dev
+
+Careers
+
+https://railway.app/careers
+https://metafy.gg/careers
+https://planetscale.com/careers
+https://artillery.io/careers
+https://sprig.com/careers
+https://www.timescale.com/careers
+https://coastpay.com/careers/
+https://attio.com/careers
+https://neon.tech/careers
+https://moderntreasury.com/careers
+https://proofserve.com/careers
+https://raster.app/careers
 -->

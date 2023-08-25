@@ -1,6 +1,10 @@
 # Apache Fineract
 
-**Keywords:** Microfinance Platform
+<!--
+https://github.com/openMF/community-app
+-->
+
+**Keywords:** Microfinance Platform, Loan Servicing
 
 ## Links
 

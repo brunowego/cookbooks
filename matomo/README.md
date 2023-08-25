@@ -66,29 +66,29 @@ docker run -d \
   -p 3306:3306 \
   --name matomo-mysql \
   --network workbench \
-  docker.io/library/mysql:5.7.19
+  docker.io/library/mysql:8.0 \
+    --default-authentication-plugin=mysql_native_password
 
 #
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
   -h matomo \
-  -e VIRTUAL_HOST='matomo.127.0.0.1.nip.io' \
+  -e VIRTUAL_HOST='matomo.localtest.me' \
   -e MATOMO_DATABASE_HOST='matomo-mysql' \
   -e MATOMO_DATABASE_USERNAME='matomo' \
   -e MATOMO_DATABASE_PASSWORD='matomo' \
   -e MATOMO_DATABASE_ADAPTER='MYSQLI' \
   -e MATOMO_DATABASE_DBNAME='matomo_dev' \
-  -e MATOMO_DATABASE_TABLES_PREFIX='matomodev_' \
   -v matomo-data:/var/www/html \
   -p 8080:80 \
   --name matomo \
   --network workbench \
-  docker.io/library/matomo:4.4.1-apache
+  docker.io/library/matomo:4.15.1-apache
 ```
 
 ```sh
 # Open
-echo -e '[INFO]\thttp://matomo.127.0.0.1.nip.io:8080'
+echo -e '[INFO]\thttp://matomo.localtest.me:8080'
 ```
 
 #### NGINX with PHP-FPM
@@ -312,8 +312,8 @@ curl \
   -d h=10 \
   -d m=43 \
   -d s=35 \
-  -d url=http://test.127.0.0.1.nip.io:3000/ \
-  -d urlref=http://test.127.0.0.1.nip.io:3000/test.html \
+  -d url=http://test.localtest.me:3000/ \
+  -d urlref=http://test.localtest.me:3000/test.html \
   -d uid=brunowego \
   -d _id=e8bb2742a5d2a568 \
   -d _idn=0 \
@@ -328,7 +328,7 @@ curl \
   -d pf_dm1=36 \
   -X POST \
   -v \
-  http://matomo.127.0.0.1.nip.io:8080/matomo.php
+  http://matomo.localtest.me:8080/matomo.php
 ```
 
 #### Get Last Insert ID
