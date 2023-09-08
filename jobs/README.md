@@ -9,6 +9,8 @@ https://weworkremotely.com
 
 <!--
 https://wellfound.com/jobs
+
+https://join.com/companies/fintory
 -->
 
 ## Terms

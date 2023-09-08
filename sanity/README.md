@@ -20,12 +20,12 @@ https://github.com/darenmalfait/daren.be/tree/main/studio
 https://github.com/jopesh/homepage/tree/main/studio
 -->
 
-**Keywords:** [Headless CMS](/headless-cms.md)
+**Keywords:** Headless CMS
 
 ## Links
 
 - [Code Repository](https://github.com/sanity-io/sanity)
-- [Main Website](https://sanity.io/)
+- [Main Website](https://sanity.io)
 
 ## Docs
 

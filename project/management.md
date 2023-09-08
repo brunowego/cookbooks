@@ -37,7 +37,7 @@ https://meistertask.com
 
 ### Open Source
 
-- [Plane](https://plane.so)
+- [Plane](https://plane.so) 🌟
 - [Redmine](/redmine.md)
 
 <!--

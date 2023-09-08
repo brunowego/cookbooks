@@ -41,7 +41,7 @@ https://youtube.com/watch?v=i6j2hT7ox0c
 - [Petri](https://github.com/wix-incubator/petri)
 - [PostHog](/posthog.md)
 - [Togglz](https://github.com/togglz/togglz)
-- [Unleash](https://github.com/Unleash/unleash)
+- [Unleash](https://github.com/Unleash/unleash) 🌟
 
 <!--
 https://github.com/tryabby/abby

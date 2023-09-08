@@ -1,5 +1,9 @@
 # GoDaddy
 
+<!--
+https://sso.godaddy.com/access?hbi_code=1
+-->
+
 ## Links
 
 - [Org. Repository](https://github.com/godaddy)

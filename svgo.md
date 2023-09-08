@@ -6,6 +6,18 @@
 
 ## CLI
 
+### Installation
+
+```sh
+npm install svgo -g
+```
+
+### Commands
+
+```sh
+svgo -h
+```
+
 <!-- ### Configuration
 
 **Refer:** `./svgo.config.js`
@@ -27,6 +39,14 @@ module.exports = {
 }
 ```
  -->
+
+### Usage
+
+```sh
+#
+svgo ./
+```
+
 
 ## Tips
 

@@ -20,7 +20,7 @@
 ### Managed
 
 - [1Password](/1password.md)
-- [Bitwarden](/bitwarden.md)
+- [Bitwarden](/bitwarden/README.md)
 - [KeePass](/keepass.md)
 - [LastPass](/lastpass.md)
 

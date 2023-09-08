@@ -61,11 +61,13 @@ https://tints.dev
 https://maketintsandshades.com
 -->
 
-### Gradient Generator
+### Palette Generator
 
 - [ColorDesigner / Gradient Generator](https://colordesigner.io/gradient-generator)
 - [ColorKit / Gradient Palette](https://colorkit.co/gradient-palette)
 - [Coolors / Gradient Palette](https://coolors.co/gradient-palette) 🌟
+- [Grayscale Design / Color Palette Generator](https://grayscale.design/app)
+- [tints.dev / Palette Generator](https://tints.dev) 🌟
 
 ### Converter
 

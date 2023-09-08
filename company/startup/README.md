@@ -41,6 +41,11 @@ Founding Engineer
 - [Headway](https://headwayapp.co)
 - [Rewind & Capture / Brand Grader](https://rewindandcapture.com/brand-grader)
 
+## Videos
+
+- [How to Build a Product that Scales into a Company](https://youtube.com/watch?v=r-98YRAF1dY)
+- [Value Props: Create a Product People Will Actually Buy](https://youtube.com/watch?v=q8d9uuO1Cf4)
+
 ## Glossary
 
 <!--

@@ -15,14 +15,17 @@
 - [Tiny](https://tiny.com.br)
 - [TOTVS](https://totvs.com)
 
+<!--
+https://jestor.com
+-->
+
 ### Open Source
 
-TODO
+- [Odoo](https://github.com/odoo/odoo)
+- [ERPNext](https://github.com/frappe/erpnext)
 
 <!--
 https://github.com/idurar/idurar-erp-crm
-https://github.com/odoo/odoo
-https://github.com/frappe/erpnext
 https://github.com/akaunting/akaunting
 https://github.com/grocy/grocy
 https://github.com/Dolibarr/dolibarr

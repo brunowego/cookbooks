@@ -4,7 +4,7 @@
 https://free-for.dev
 -->
 
-**Keywords:** Startups
+**Keywords:** Startup Accelerator
 
 ## Links
 

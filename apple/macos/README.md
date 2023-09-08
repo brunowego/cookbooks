@@ -1,6 +1,12 @@
 # macOS (a.k.a. Darwin)
 
 <!--
+Catalina
+
+https://apps.apple.com/br/app/macos-catalina/id1466841314?l=en-GB&mt=12
+
+---
+
 https://matthewhoelter.com/2019/06/03/flush-and-reset-dns-cache-on-macos.html
 
 sudo spctl --master-disable

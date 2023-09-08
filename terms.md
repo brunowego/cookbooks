@@ -44,7 +44,7 @@
 - Identity Provider (IdP)
 - In My Opinion (IMO)
 - Individual Development Plan (IDP)
-- Individual Development Plan (IDP)]
+- Individual Development Plan (IDP)
 - Infrastructure as a service (IaaS)
 - Initial Public Offering (IPO)
 - Key Performance Indicators (KPI)

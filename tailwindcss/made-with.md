@@ -28,6 +28,16 @@ https://ui8.net/ui8/products/synapse-ai-ui-kit
 -->
 
 <!--
+About
+
+https://timescale.com/about
+https://proofserve.com/for-process-serving-companies
+https://proofserve.com/for-individuals
+https://infisical.com/infisical-heroes
+https://railway.app/about
+https://plane.so/about
+https://juicebox.money/about
+
 404
 
 https://phpsandbox.io/test
@@ -39,6 +49,7 @@ https://infisical.com/test
 Help Center
 
 https://chatwoot.com/help-center
+https://paraform.com/help
 
 Search
 
@@ -66,7 +77,11 @@ https://auth.planetscale.com/sign-in
 
 Pricing
 
+https://infisical.com/pricing
+https://liveblocks.io/pricing
 https://raster.app/pricing
+https://railway.app/pricing
+https://helicone.ai/pricing
 
 Placeholder
 
@@ -94,6 +109,8 @@ https://productlane.com/insights
 
 Event
 
+https://proofserve.com/events
+https://fi.co/event/startup-legal-investment-in-silicon-valley-in-person-ama.
 https://maven.com/maven-engineering/startup-engineering
 https://apps.shopify.com/instafeed
 
@@ -137,12 +154,16 @@ https://rekrabice.cz
 
 Blog
 
+https://helicone.ai/blog
+https://supabase.com/blog
+https://clearbit.com/blog
+https://aurora.dev/blog
 https://datocms.com/blog/how-to-generate-typescript-types-from-graphql
+https://upstash.com/blog/session-store-with-clerk
 
 Footer
 
-https://humanloop.com
-https://web-website.vercel.app
+
 
 Code
 
@@ -159,11 +180,30 @@ https://metafy.gg/careers
 https://planetscale.com/careers
 https://artillery.io/careers
 https://sprig.com/careers
-https://www.timescale.com/careers
+https://timescale.com/careers
 https://coastpay.com/careers/
 https://attio.com/careers
 https://neon.tech/careers
 https://moderntreasury.com/careers
 https://proofserve.com/careers
 https://raster.app/careers
+
+Changelog
+
+https://supabase.com/changelog
+https://artillery.io/changelog
+https://tremor.so/changelog
+https://plane.so/changelog
+
+Demo
+
+https://oneuptime.com/enterprise/demo
+
+Legal
+
+https://clearbit.com/trust
+
+Support
+
+https://founderinstitute.freshdesk.com/en/support/home
 -->

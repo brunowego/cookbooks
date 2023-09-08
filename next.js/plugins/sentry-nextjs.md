@@ -227,3 +227,11 @@ ReferenceError: wpforms is not defined
 ```
 
 TODO
+
+### TBD
+
+```log
+SyntaxError: Named export 'withSentryConfig' not found. The requested module '@sentry/nextjs' is a CommonJS module, which may not support all module.exports as named exports.
+```
+
+TODO

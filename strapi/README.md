@@ -8,12 +8,12 @@ https://github.com/SocialGouv/mda/tree/main/packages/strapi-types
 Port 1337
 -->
 
-**Keywords:** [Headless CMS](/headless-cms.md)
+**Keywords:** Headless CMS
 
 ## Links
 
 - [Code Repository](https://github.com/strapi/strapi)
-- [Main Website](https://strapi.io/)
+- [Main Website](https://strapi.io)
 - [Command Line Interface (CLI)](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html)
 - [Plugins](https://docs.strapi.io/developer-docs/latest/plugins/plugins-intro.html)
 
