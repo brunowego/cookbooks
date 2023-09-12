@@ -4,11 +4,11 @@
 https://github.com/search?q=path%3Aapps+path%3Apackage.json+content%3Atailwindcss&type=code
 -->
 
-## Links
+## Portals
 
 - [Made with TailwindCSS](https://madewithtailwindcss.com)
 
-## Portals
+## Examples
 
 - [AppSignal](https://appsignal.com)
 - [Better Stack](https://betterstack.com)
@@ -77,6 +77,7 @@ https://auth.planetscale.com/sign-in
 
 Pricing
 
+https://obsidian.md/pricing
 https://infisical.com/pricing
 https://liveblocks.io/pricing
 https://raster.app/pricing
@@ -163,7 +164,7 @@ https://upstash.com/blog/session-store-with-clerk
 
 Footer
 
-
+https://obsidian.md
 
 Code
 

@@ -44,9 +44,17 @@ dbml2sql ./schema.dbml \
 
 #### SQL to DBML
 
+**Dependencies:** [Dump DDL](/postgresql/client.md#data-definition-language-ddl)
+
+<!--  Remove "ALTER ..." -->
+
 ```sh
 #
-sql2dbml ./dump.sql --postgres
+sql2dbml ./dump-ddl.sql --postgres
+sql2dbml ./dump-ddl.sql --postgres > ./schema.dbml
+
+#
+cat ./schema.dbml
 ```
 
 ## Tips

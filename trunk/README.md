@@ -88,6 +88,7 @@ trunk whoami
 trunk install
 
 #
+trunk upgrade --dry-run
 trunk upgrade
 ```
 
@@ -113,9 +114,6 @@ trunk fmt
 
 #
 trunk merge
-
-#
-trunk upgrade
 
 #
 trunk plugins add <uri>

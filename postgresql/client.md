@@ -156,16 +156,26 @@ PGPASSWORD="${POSTGRES_PASSWORD}" psql \
   -c '\dt'
 
 # SELECT version();
+```
 
-# Dump
+### Tips
+
+#### Dump
+
+```sh
+#
 pg_dump \
   -d <db-name> \
   -h 127.0.0.1 \
   -U postgres \
   -n public \
   > ./dump.sql
+```
 
-## DDL
+##### Data Definition Language (DDL)
+
+```sh
+#
 pg_dump \
   -d <db-name> \
   -h 127.0.0.1 \
@@ -173,8 +183,12 @@ pg_dump \
   -n public \
   --schema-only \
   > ./dump-ddl.sql
+```
 
-## DML
+##### Data Manipulation Language (DML)
+
+```sh
+#
 pg_dump \
   -d <db-name> \
   -h 127.0.0.1 \
@@ -183,16 +197,18 @@ pg_dump \
   --data-only \
   --column-inserts \
   > ./dump-dml.sql
+```
 
-# Import
+#### Import
+
+```sh
+#
 psql \
   -d <db-name> \
   -h 127.0.0.1 \
   -U postgres \
   < ./dump.sql
 ```
-
-### Tips
 
 #### Shell
 

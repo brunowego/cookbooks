@@ -1,5 +1,9 @@
 # Brand
 
+<!--
+https://vectorlogo.zone
+-->
+
 ## Links
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Brand)

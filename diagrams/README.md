@@ -1,33 +1,15 @@
 # Diagrams
 
-<!--
-https://github.com/cycloidio/inframap
-https://github.com/semnil/tfdiagrams
-https://github.com/patrickchugh/terravision
--->
+## Terms
 
-**Keywords:** Diagram as Code
+- Design Docs
 
-## Links
+## Glossary
 
-- [Code Repository](https://github.com/mingrammer/diagrams)
-- [Main Website](https://diagrams.mingrammer.com)
-- [Examples](https://diagrams.mingrammer.com/docs/getting-started/examples)
+- Domain-Specific Language (DSL)
 
-## Library
+## Tools
 
-### Installation
+### Managed
 
-```sh
-#
-pip3 install -U diagrams
-
-#
-pipenv install -d diagrams
-```
-
-<!-- ### Usage
-
-```sh
-
-``` -->
+- [Mermaid Chart](https://mermaidchart.com)

@@ -1,11 +1,5 @@
 # Social Networks
 
-<!--
-<username>hq
-<username>inc
-be<username>
--->
-
 ## Tools
 
 - [Instant Username](https://instantusername.com)

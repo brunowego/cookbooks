@@ -5,6 +5,7 @@
 ### Managed
 
 - [Atlassian Confluence](/atlassian/confluence.md)
+- [GitBook](/gitbook.md) 🌟
 - [Notion](/notion.md)
 - [Slite](https://slite.com)
 
@@ -19,4 +20,10 @@
 <!--
 https://github.com/logseq/logseq
 https://dendron.so
+https://github.com/joemccann/dillinger
+https://boostnote.io
+https://notable.app
+https://inkdrop.app
+https://github.com/GitJournal/GitJournal
+https://github.com/foambubble/foam
 -->

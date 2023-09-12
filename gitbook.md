@@ -36,3 +36,9 @@ gitbook-cli ls-remote
 gitbook-cli fetch <version>
 gitbook-cli fetch latest
 ```
+
+<!--
+GITBOOK-{change_request_number}: {change_request_subject}
+
+docs(gitbook): [{change_request_number}] {change_request_subject}
+-->

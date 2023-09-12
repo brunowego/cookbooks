@@ -8,10 +8,17 @@ https://github.com/allegro/ralph
 
 - [GLPi (acronym: French: Gestionnaire Libre de Parc Informatique, or "Free IT Equipment Manager" in English)](/glpi.md)
 
+## References
+
+- [ERPGulf](https://cloud.erpgulf.com)
+
 ## Links
 
 - [Main Website](https://erpnext.com)
+- [Code Repository](https://github.com/frappe/erpnext)
 - [Asset Management Software](https://erpnext.com/open-source-asset-management-software)
+- [Docs](https://docs.erpnext.com)
+  - [Flow Chart](https://docs.erpnext.com/docs/user/manual/en/key-workflows)
 
 ## Terms
 
@@ -52,6 +59,16 @@ echo -e '[INFO]\thttp://127.0.0.1:8000'
 | ----------- | --------------- | -------- |
 | ERPNext     | `Administrator` | `12345`  |
 | MySQL       | `root`          | `travis` |
+
+### Issues
+
+#### Host not Allowed
+
+```log
+null,  message from server: "Host '10.1.1.1' is not allowed to connect to this MariaDB server"
+```
+
+TODO
 
 ### Remove
 

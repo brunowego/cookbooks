@@ -35,8 +35,12 @@ https://c4model.com
 ## Architectures
 
 - Clean Architecture
+- Client-Server Architecture
 - Event-Driven Architecture (EDA)
 - Hexagonal Architecture (a.k.a. Ports and Adapters)
+- Layered Architecture
+- Microkernel Architecture
+- Microservices Architecture
 - Onion Architecture
 
 <!--

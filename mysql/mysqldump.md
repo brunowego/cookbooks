@@ -36,7 +36,22 @@ pv /path/to/dump.sql | \
 
 ### Tips
 
-#### Export Only Data
+#### Data Definition Language (DDL)
+
+```sh
+#
+mysqldump \
+  -c \
+  -t \
+  -h 127.0.0.1 \
+  -P 3306 \
+  -u root \
+  -p'root' \
+  --no-data \
+  > "./dump-schema-only-$(date -u '+%Y.%m.%d-%H%M').sql"
+```
+
+#### Data Manipulation Language (DML)
 
 ```sh
 #

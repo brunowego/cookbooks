@@ -44,7 +44,6 @@ https://tailwindshades.com/
 
 <!--
 https://uicolors.app
-https://tints.dev
 -->
 
 ### Lighten & Darken

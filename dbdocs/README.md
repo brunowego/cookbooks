@@ -3,6 +3,8 @@
 ## Links
 
 - [Main Website](https://dbdocs.io)
+- FAQ
+  - [How to change email address?](https://dbdiagram.io/docs/faqs/change-email)
 
 ## Tools
 
@@ -28,6 +30,7 @@ dbdocs --help
 
 ```sh
 dbdocs login
+
 #
 dbdocs logout
 ```
@@ -39,10 +42,10 @@ dbdocs logout
 dbdocs ls
 
 #
-dbdocs validate ./<filename>.dbml
+dbdocs validate ./schema.dbml
 
 #
-dbdocs build ./<filename>.dbml
+dbdocs build ./schema.dbml
 
 #
 dbdocs password \

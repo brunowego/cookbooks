@@ -45,3 +45,14 @@ https://play.tailwindcss.com/QRztBTU00w
 
 https://play.tailwindcss.com/M0NSRhrexT
 https://play.tailwindcss.com/QyO5npYfmD
+
+
+# HR
+
+<div className='my-8 inline-flex items-center'>
+  <hr className='h-1 w-64 rounded border-0 bg-brand-100' />
+
+  <div className='absolute left-1/2 -translate-x-1/2 bg-white px-4'>
+    <Icons.quotes className='h-4 w-4 text-brand-400' />
+  </div>
+</div>

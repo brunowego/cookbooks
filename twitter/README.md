@@ -34,6 +34,26 @@ sudo mas uninstall 1482454543
 
 ## Issues
 
+### Suspended Account
+
+```log
+Your account is suspended and is not permitted to perform this action.
+```
+
+<!--
+https://help.twitter.com/en/managing-your-account/suspended-twitter-accounts
+-->
+
+TODO
+
+<!-- ###
+
+```log
+Your avatar failed to update because some media didn’t upload
+```
+
+TODO -->
+
 ### Unable to Login
 
 ```log
