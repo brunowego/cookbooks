@@ -164,7 +164,7 @@ https://upstash.com/blog/session-store-with-clerk
 
 Footer
 
-https://obsidian.md
+
 
 Code
 

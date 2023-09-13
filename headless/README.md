@@ -1,0 +1,5 @@
+# Headless
+
+## Terms
+
+- Headless-first

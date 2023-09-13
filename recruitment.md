@@ -16,6 +16,7 @@ https://homerun.co
 ## Glossary
 
 - Applicant Tracking System (ATS)
+- Human Resources Management System (HRMS)
 
 ## Platforms
 

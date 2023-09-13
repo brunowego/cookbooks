@@ -17,6 +17,7 @@ curl \
 ### Usage
 
 ```sh
+#
 java -Djdk.util.jar.enableMultiRelease=false -jar ./structurizr-lite.war ./
 
 echo -e '[INFO]\thttp://127.0.0.1:8080'

@@ -56,3 +56,10 @@ https://play.tailwindcss.com/QyO5npYfmD
     <Icons.quotes className='h-4 w-4 text-brand-400' />
   </div>
 </div>
+
+#
+
+<img
+  src='https://assets-global.website-files.com/62accdf355fe893acae40dff/638cbb787903a608439793b9_dots.svg'
+  className='absolute left-1/2 w-[2240px] max-w-none -translate-x-1/2'
+/>

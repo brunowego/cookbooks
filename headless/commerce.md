@@ -21,7 +21,7 @@
 - [Spryker](https://spryker.com)
 - [Swell](https://swell.is)
 - [Commerce Layer](/commercelayer.md)
-- [Fabric](https://fabric.inc)
+- [Fabric](/fabric.md)
 
 ### Open Source
 
