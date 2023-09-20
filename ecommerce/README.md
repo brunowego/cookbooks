@@ -30,7 +30,11 @@ https://castleit.io
 - [PrestaShop](https://prestashop.com)
 
 <!--
+Ecwid
+Drupal Commerce / Ubercart
 OpenCart
+Easy Digital
+Virtuemart
 
 https://github.com/medusajs/medusa
 https://github.com/saleor/saleor

@@ -4,6 +4,7 @@ TODO
 
 <!--
 https://rarbgget.org
-https://solidtorrents.to/
-https://torrentfreak.com/how-to-create-a-torrent/
+https://solidtorrents.to
+https://torrentfreak.com/how-to-create-a-torrent
+https://rutracker.net
 -->

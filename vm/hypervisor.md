@@ -32,7 +32,7 @@
 - [HyperKit](/hyperkit.md)
 - [Oracle VM Server for x86](https://oracle.com/virtualization/technologies/vm/)
 - [Oracle VM VirtualBox](/virtualbox.md)
-- [Parallels Desktop](/parallels/README.md)
+- [Parallels Desktop](/parallels/README.md) 🌟
 - [VMware Fusion](/vmware/fusion.md)
 
 <!--

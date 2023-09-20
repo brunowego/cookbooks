@@ -6,26 +6,30 @@
 - Product Information Management (PIM)
 - Stock-Keeping Unit (SKU)
 
-## Platforms
+## Commerce Providers (Storefront)
 
 ### Managed
 
 - [BigCommerce](https://bigcommerce.com)
+- [Commerce Layer](/commercelayer.md)
 - [Commercetools](https://commercetools.com)
+- [Fabric](/fabric.md)
 - [Infosys Equinox](https://infosysequinox.com)
 - [Magento (Adobe Commerce)](https://magento.com)
 - [Nacelle](https://nacelle.com)
 - [OROCommerce](https://oroinc.com/b2b-ecommerce)
 - [Salesforce Commerce Cloud](https://salesforce.com/products/commerce/)
 - [Shopify](https://shopify.com)
+- [Shopware](https://shopware.com)
 - [Spryker](https://spryker.com)
 - [Swell](https://swell.is)
-- [Commerce Layer](/commercelayer.md)
-- [Fabric](/fabric.md)
+- [Umbraco](https://umbraco.com/products/add-ons/commerce)
+- [Wix Stores](https://wix.com/app-market/wix-stores)
 
 ### Open Source
 
-- [Saleor](https://saleor.io)
+- [MedusaJS](/medusajs/README.md)
+- [Saleor](/saleor/README.md)
 
 <!--
 https://github.com/spree/spree

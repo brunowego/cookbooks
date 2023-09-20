@@ -37,3 +37,8 @@ https://github.com/tracontecnologia/ondw-2-server
 
 - [Lemon Squeezy](https://lemonsqueezy.com)
 - [Paypal](https://paypal.com)
+
+<!--
+Africa
+https://paystack.com
+-->

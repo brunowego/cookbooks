@@ -5,6 +5,11 @@ workspace.dsl
 structurizr.properties
 -->
 
+<!--
+Could you propose me an architecture of Internet Banking System in Structurizr DSL?
+Could you propose me an architecture of Enterprise Resource Planning System in Structurizr DSL?
+-->
+
 **Keywords:** C4 model, Docs as Code
 
 ## Links

@@ -1,5 +1,8 @@
 # News
 
-## Global
+## Newspaper
 
-- [ZeroHedge](https://zerohedge.com)
+- Argentina
+  - [Clarín](https://clarin.com)
+- Brazil
+  - [G1](https://g1.globo.com)

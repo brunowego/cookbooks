@@ -21,7 +21,7 @@
 
 ### Open Source
 
-- [Cerbos](/cerbos/README.md)
+- [Cerbos](/cerbos/README.md) 🌟
 - [Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
 - [Kyverno](/kyverno.md)
 - [Open Policy Agent (OPA)](/open-policy-agent/README.md)

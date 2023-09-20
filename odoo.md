@@ -5,6 +5,15 @@
 - [Code Repository](https://github.com/odoo/odoo)
 - [Main Website](https://odoo.com)
 
+## References
+
+- [Odoo Data Model](https://soft-builder.com/en/docs/Odoo/index.html)
+
+<!--
+https://odoo.com/documentation/15.0/developer/tutorials/getting_started/01_architecture.html
+https://erpsolutions.oodles.io/blog/odoo-architecture-technical-deployment/
+-->
+
 ## Docker
 
 ### Network

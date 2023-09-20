@@ -1,5 +1,9 @@
 # Google Fonts
 
+<!--
+https://fonts.google.com/specimen/Syne
+-->
+
 ## Alternative
 
 - [Fontsource](/fontsource.md)

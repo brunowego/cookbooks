@@ -4,6 +4,10 @@
 https://linkedin.com/learning/learning-sql-programming-8382385/learning-sql-programming
 -->
 
+<!--
+Could you propose me an database modeling of Enterprise Resource Planning System in SQL?
+-->
+
 ## Glossary
 
 - Relational Database Access (RDA)

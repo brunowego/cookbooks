@@ -14,21 +14,34 @@ https://github.com/pimcore/pimcore
 - Human Resource Management (HRM)
 - IT Service Management (ITSM)
 - Stock Keeping Unit (SKU)
+- Supply Chain Management (SCM)
+
+## Videos
+
+- [What is Enterprise Resource Planning (ERP) Software?](https://youtube.com/watch?v=Da1hUqzoiAo)
 
 ## Modules
 
-- Accounting / Finance
+- Accounting / Finance Resource Management (FRM)
 - Analytics & Reporting
 - Customer Relationship Management (CRM) & Sales
 - eCommerce / Point of Sale (POS)
 - Human Resource Management (HRM)
 - Inventory Management
+- Supply Chain Management (SCM)
 - Job Costing
 - Manufacturing
 - Material Requirements Planning (MRP)
 - Project Management
 - Purchasing
 - Services
+
+<!-- ## Database
+
+- Payments
+- Financial
+- Sales Data
+- Inventory -->
 
 ## Platforms
 
@@ -55,6 +68,9 @@ https://anymarket.com.br
 - [Odoo](https://github.com/odoo/odoo)
 
 <!--
+https://tryton.org
+https://ofbiz.apache.org
+https://ledgersmb.org
 https://github.com/idurar/idurar-erp-crm
 https://github.com/akaunting/akaunting
 https://github.com/grocy/grocy
