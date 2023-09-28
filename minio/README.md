@@ -170,13 +170,29 @@ docker volume rm minio-data
 
 ### Manifest
 
+**Refer:** `./.env`
+
+```env
+MINIO_PORT=9002
+MINIO_WEB_PORT=9001
+MINIO_ROOT_USER=minio
+MINIO_ROOT_PASSWORD=minio123
+
+MINIO_ENDPOINT=http://127.0.0.1:$MINIO_PORT
+MINIO_BUCKET=medusa
+MINIO_ACCESS_KEY=
+MINIO_SECRET_KEY=
+```
+
+**Refer:** `./docker-compose.yml`
+
 ```yml
 ---
 version: '3'
 
 services:
   minio:
-    image: docker.io/minio/minio:RELEASE.2023-01-02T09-40-09Z
+    image: docker.io/minio/minio:RELEASE.2023-09-23T03-47-50Z
     volumes:
       - type: volume
         source: minio-data
@@ -192,8 +208,6 @@ services:
       - target: 9001
         published: $MINIO_WEB_PORT
         protocol: tcp
-    networks:
-      - workbench
     restart: unless-stopped
 
 volumes:

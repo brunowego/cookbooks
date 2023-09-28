@@ -26,6 +26,16 @@ docker network create workbench \
 #
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
+  -h redis \
+  -v medusa-redis-data:/data \
+  -p 6379:6379 \
+  --name medusa-redis \
+  --network workbench \
+  docker.io/library/redis:7.0.8
+
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
   -h postgresql \
   -e POSTGRES_USER='medusa' \
   -e POSTGRES_PASSWORD='medusa' \
@@ -39,29 +49,62 @@ docker run -d \
 
 ## Usage
 
+**Note:** pnpm is not supported yet.
+
 ```sh
 #
-mkdir ./<store-name> && cd "$_"
+mkdir ./app && cd "$_"
 
 #
 npx create-medusa-app@latest \
   --seed \
   --db-url 'postgres://medusa:medusa@127.0.0.1:5432/medusa' \
+  --no-browser \
   ./
 
 # With Next.js Starter
 npx create-medusa-app@latest \
   --seed \
   --db-url 'postgres://medusa:medusa@127.0.0.1:5432/medusa' \
+  --no-browser \
   --with-nextjs-starter \
   ./
 ```
 
-<!--
-redis_url
-jwt_secret
-cookie_secret
--->
+## Configuration
+
+**Refer:** `./.env` (app)
+
+```env
+OPEN_BROWSER=false
+
+JWT_SECRET=S3cr3t_K@Key
+COOKIE_SECRET=S3cr3t_K@Key
+```
+
+## Extend
+
+- [Redis](./extend/redis.md) (Event Bus and Cache Service)
+- Notification Provider
+  - [Nodemailer](./extend/nodemailer.md)
+  - [SendGrid](./extend/sendgrid.md)
+  - [SMTP](./extend/smtp.md)
+
+## Running
+
+```sh
+#
+cd ./app
+
+#
+medusa migrations run
+
+#
+medusa seed -f ./data/seed.json
+
+#
+yarn dev
+```
 
 ## Services
 
@@ -72,7 +115,7 @@ cookie_secret
 ## Remove
 
 ```sh
-docker rm -f medusa-postgresql
+docker rm -f medusa-redis medusa-postgresql
 
-docker volume rm medusa-postgresql-data
+docker volume rm medusa-redis-data medusa-postgresql-data
 ```

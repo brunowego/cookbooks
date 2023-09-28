@@ -44,7 +44,7 @@ docker run -d \
   -p 7700:7700 \
   --name meilisearch \
   --network workbench \
-  docker.io/getmeili/meilisearch:v0.28.1
+  docker.io/getmeili/meilisearch:v1.4.0
 ```
 
 <!--
@@ -61,4 +61,46 @@ echo -e '[INFO]\thttp://127.0.0.1:7700'
 docker rm -f meilisearch
 
 docker volume rm meilisearch-data
+```
+
+## Docker Compose
+
+**Refer:** `./.env`
+
+```env
+MEILI_HTTP_PORT=7700
+MEILI_HTTP_ADDR=0.0.0.0:$MEILI_HTTP_PORT
+MEILI_MASTER_KEY=masterKey
+MEILI_ENV=development
+MEILI_NO_ANALYTICS=true
+```
+
+**Refer:** `./docker-compose.yml`
+
+```yml
+---
+version: '3'
+
+services:
+  meilisearch:
+    image: docker.io/getmeili/meilisearch:v1.4.0
+    hostname: meilisearch
+    volumes:
+      - type: volume
+        source: meilisearch-data
+        target: /meili_data
+    environment:
+      MEILI_HTTP_ADDR:
+      MEILI_MASTER_KEY:
+      MEILI_ENV:
+      MEILI_NO_ANALYTICS:
+    ports:
+      - target: 7700
+        published: $MEILI_HTTP_PORT
+        protocol: tcp
+    restart: unless-stopped
+
+volumes:
+  meilisearch-data:
+    driver: local
 ```

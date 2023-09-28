@@ -54,6 +54,9 @@ yarn init -yp; yarn
 **Warning:** Before continue check the currently version, running `yarn --version`.
 
 ```sh
+#
+yarn policies set-version 3.6.3
+
 # Git ignore
 echo '/yarn-error.log' >> ~/.gitignore_global
 ```
@@ -93,6 +96,9 @@ yarn config set --home defaultSemverRangePrefix '~'
 # Telemetry
 yarn config set --home enableTelemetry 0
 
+#
+yarn config set --home nodeLinker 'node-modules'
+
 # License
 # TODO
 ```
@@ -124,8 +130,14 @@ yarn global list # show globally installed packages
 # TODO
 
 #
-yarn upgrade --latest
+yarn up -R '**'
 ```
+
+<!--
+#
+yarn upgrade --latest
+yarn upgrade-interactive --latest
+-->
 
 <!--
 yarn --cwd `yarn global dir` list

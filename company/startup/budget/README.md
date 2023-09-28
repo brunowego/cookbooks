@@ -14,9 +14,10 @@ https://etsy.com/uk/listing/1521383832/budget-spreadsheet-for-personal-finance
 
 ## Terms
 
+- Budget Forecast
 - Budget Plan / Business Plan
 - Budget Projection / Financial Projection
-- Budget Forecast
+- Startup Expenses
 
 <!--
 ## Tools

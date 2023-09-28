@@ -2,6 +2,10 @@
 
 **Keywords:** Spreadsheet
 
+## Links
+
+- [Microsoft 365 / Excel](https://office.com/launch/excel)
+
 ## App
 
 ### Installation

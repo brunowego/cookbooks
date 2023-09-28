@@ -8,7 +8,7 @@
 
 ### Open Source
 
-- [Akeneo](https://akeneo.com)
+- [Akeneo PIM Community Edition (CE)](/akeneo/pim-ce.md)
 
 <!--
 https://github.com/atrocore/atropim

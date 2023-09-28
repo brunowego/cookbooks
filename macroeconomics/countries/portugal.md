@@ -11,3 +11,7 @@
 - Número de Identificação de Pessoa Coletiva (NIPC)
 - Número de Identificação Fiscal (NIF)
 - Sistema Informação da Classificação Portuguesa de Atividades Económicas (SICAE)
+
+## Tools
+
+- [Gerador de NIFs](https://nif.marcosantos.me)

@@ -10,6 +10,7 @@ https://www.npmjs.com/package/typedoc-plugin-coverage
 
 - [Code Repository](https://github.com/TypeStrong/typedoc)
 - [Main Website](https://typedoc.org)
+- [Example](https://typedoc.org/example)
 
 ## CLI
 
@@ -19,3 +20,10 @@ https://www.npmjs.com/package/typedoc-plugin-coverage
 #
 npx typedoc --out ./docs/api ./src/index.ts
 ```
+
+<!--
+typedoc.entities.js
+typedoc.js
+typedoc.js-client.js
+typedoc.services.js
+-->

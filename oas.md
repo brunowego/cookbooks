@@ -2,6 +2,4 @@
 
 ## References
 
-- [OpenAPI Specification](https://swagger.io/specification/)
-
-TODO
+- [OpenAPI Specification](https://swagger.io/specification)

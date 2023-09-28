@@ -33,7 +33,7 @@ https://github.com/hideckies/exploit-notes/blob/main/src/exploit/SMTP-Pentesting
 
 - [MailCatcher](/mailcatcher.md)
 - [MailHog](/mailhog.md) 🌟
-- [Mailpit](/mailpit.md)
+- [Mailpit](/mailpit.md) 🌟
 
 <!--
 https://github.com/docker-mailserver/docker-mailserver

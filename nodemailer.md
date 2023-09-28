@@ -5,7 +5,9 @@
 - [Code Repository](https://github.com/nodemailer/nodemailer)
 - [Main Website](https://nodemailer.com)
 - Docs
-  - [Testing SMTP](https://nodemailer.com/smtp/testing/)
+  - [SMTP Transport](https://nodemailer.com/smtp)
+    - [Testing SMTP](https://nodemailer.com/smtp/testing)
+  - [Other Transports](https://nodemailer.com/transports)
 
 ## Library
 

@@ -24,6 +24,9 @@ ncu -h
 ```sh
 #
 ncu -u
+
+#
+ncu --deep -u
 ```
 
 ## Library

@@ -18,7 +18,9 @@ hdiutil attach 'https://sketchup.com/sketchup/SketchUpPro-dmg' \
   -mountpoint /Volumes/SketchUpPro
 
 #
-cp -R /Volumes/SketchUpPro/SketchUp\ 2022 /Applications
+ls /Volumes/SketchUpPro
+
+cp -R /Volumes/SketchUpPro/SketchUp\ 2023 /Applications
 
 #
 hdiutil detach /Volumes/SketchUpPro

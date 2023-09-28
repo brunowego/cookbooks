@@ -2,6 +2,7 @@
 
 ## Links
 
+- [Org. Repository](https://github.com/heroku)
 - [Main Website](https://heroku.com)
 - [Status Page](https://status.heroku.com)
 
@@ -16,7 +17,13 @@ brew tap heroku/brew
 brew install heroku
 ```
 
-### Usage
+### Configuration
+
+```sh
+heroku login
+```
+
+<!-- ### Usage
 
 ```sh
 #
@@ -40,4 +47,4 @@ heroku logs --tail --app APP
 cat << EOF > ./Procfile
 # ...
 EOF
-```
+``` -->

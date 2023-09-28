@@ -8,6 +8,10 @@ https://medium.com/@robert.broeckelmann/saml2-vs-jwt-understanding-oauth2-4abde9
 https://security.stackexchange.com/questions/82587/what-are-the-differences-between-json-web-tokens-saml-and-oauth-2
 -->
 
+<!--
+https://github.com/boxyhq/jackson
+-->
+
 ## Links
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language)

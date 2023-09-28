@@ -3,8 +3,8 @@
 ## Links
 
 - [Code Repository](https://github.com/errata-ai/vale)
-- [Main Website](https://vale.sh/)
-- [Config Generator](https://vale.sh/generator/)
+- [Main Website](https://vale.sh)
+- [Config Generator](https://vale.sh/generator)
 
 ## Related
 

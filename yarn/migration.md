@@ -14,6 +14,7 @@ yarn init -yp; yarn
 
 #
 yarn set version stable # berry
+# yarn set version 3.0.2
 
 #
 yarn config set defaultSemverRangePrefix '~'
@@ -29,7 +30,7 @@ cat << EOF >> ./.gitattributes
 EOF
 ```
 
-### Using Node Modules 🌟
+### Using Node Modules
 
 ```sh
 #
@@ -44,6 +45,9 @@ cat << EOF >> ./.gitignore
 !/.yarn/sdks
 !/.yarn/versions
 EOF
+
+#
+yarn install
 ```
 
 ### Using Plug’n’Play (PnP)
@@ -62,6 +66,9 @@ cat << EOF >> ./.gitignore
 !/.yarn/versions
 /.pnp.*
 EOF
+
+#
+yarn install
 ```
 
 #### Remnants of `node_modules` folder

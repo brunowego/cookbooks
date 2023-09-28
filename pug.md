@@ -7,3 +7,11 @@
 ## Tools
 
 - [HTML to JADE/PUG](https://html2jade.org/)
+
+## Tips
+
+### Dump
+
+```pug
+code !{JSON.stringify(data)}
+```

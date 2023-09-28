@@ -6,6 +6,8 @@ https://www.arquiteturasustentavel.arq.br/curso-tecnico-em-tijolo-ecologico/?src
 
 <!--
 Junta a prumo
+
+Croqui
 -->
 
 ## Terms

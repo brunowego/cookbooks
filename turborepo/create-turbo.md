@@ -14,6 +14,13 @@ npx create-turbo@latest -h
 ## Usage
 
 ```sh
+# Use Yarn
+yarn --version # >= 3.0.0
+
+yarn dlx create-turbo@latest \
+  ./<app-name> && \
+    cd "$_"
+
 # Use pnpm
 pnpx create-turbo@latest \
   ./<app-name> && \
@@ -28,20 +35,13 @@ pnpx create-turbo@latest \
 Error: Qualified path resolution failed - none of those files can be found on the disk.
 ```
 
-```sh
-#
-yarn config set nodeLinker node-modules
+Follow this [Using Node Modules](/yarn/migration.md#using-node-modules).
 
-#
-yamllint ./
-
+<!--
 #
 sed -i '1s;^;/**/node_modules\n;' ./.gitignore
 sed -i '/\/.pnp.*/d' ./.gitignore
-
-#
-yarn install
-```
+-->
 
 #### Remnants of Plug’n’Play (PnP)
 

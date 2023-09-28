@@ -23,6 +23,10 @@ https://analistamodelosdenegocios.com.br/o-que-e-o-business-model-canvas/
 - [Miro / Business Case Template](https://miro.com/templates/business-case)
 - [Miro / Business Model Canvas Template](https://miro.com/templates/business-model-canvas)
 
+<!--
+https://tailwindcomponents.com/component/business-model-canvas
+-->
+
 ## Videos
 
 - [HOW TO MAKE BUSINESS MODEL CANVAS (in 9 Practical Steps)](https://youtube.com/watch?v=CbXiaCxagIY&t=1s) (Portuguese)

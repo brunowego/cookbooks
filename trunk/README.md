@@ -19,10 +19,18 @@
 npm install @trunkio/launcher -d
 
 # Using pnpm
+yarn add @trunkio/launcher -D
+
+# Using pnpm
 pnpm add @trunkio/launcher -D
 ```
 
 ### Configuration
+
+```sh
+#
+trunk config share
+```
 
 **Refer:** `./package.json`
 

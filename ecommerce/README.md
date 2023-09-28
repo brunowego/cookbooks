@@ -30,6 +30,7 @@ https://castleit.io
 - [PrestaShop](https://prestashop.com)
 
 <!--
+https://snipcart.com
 Ecwid
 Drupal Commerce / Ubercart
 OpenCart

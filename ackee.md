@@ -49,5 +49,6 @@ echo -e '[INFO]\thttp://127.0.0.1:3000'
 
 ```sh
 docker rm -f ackee-mongo ackee
+
 docker volume rm ackee-mongo-data
 ```

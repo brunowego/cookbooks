@@ -8,8 +8,8 @@ https://github.com/ArcadeCity/arcade/tree/main/apps/expo
 ## Links
 
 - [Code Repository](https://github.com/expo/expo)
-- [Main Website](https://expo.dev/)
-- [Docs](https://docs.expo.dev/)
+- [Main Website](https://expo.dev)
+- [Docs](https://docs.expo.dev)
 - [Expo Go](https://expo.dev/client)
 
 ## CLI

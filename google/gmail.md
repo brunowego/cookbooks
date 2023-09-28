@@ -8,6 +8,10 @@ https://myaccount.google.com/lesssecureapps?pli=1 -->
 
 ### Mail Password
 
+<!--
+https://support.google.com/accounts/answer/185833?hl=en
+-->
+
 1. [Google Account](https://myaccount.google.com)
 2. Security
 3. App passwords
