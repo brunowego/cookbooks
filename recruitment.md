@@ -26,6 +26,7 @@ https://homerun.co
 - [Otta](https://otta.com)
 
 <!--
+https://quickin.io
 https://manatal.com
 https://resumematcher.fyi
 https://rooster.org

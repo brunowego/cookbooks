@@ -10,7 +10,8 @@
 
 ### Managed
 
-- [Datadog Cloud SIEM](https://datadoghq.com/product/cloud-siem/)
+- [GCP Chronicle SIEM](https://cloud.google.com/chronicle-siem)
+- [Datadog Cloud SIEM](https://datadoghq.com/product/cloud-siem)
 
 ### Open Source
 

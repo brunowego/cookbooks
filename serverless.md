@@ -1,4 +1,4 @@
-# serverless
+# Serverless Framework
 
 <!--
 https://github.com/serverless-nextjs/serverless-next.js

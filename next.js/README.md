@@ -64,6 +64,10 @@ const nextConfig = {
 
 - [Build a SaaS with React and Next.js](https://www.cutintothejamstack.com)
 
+## Videos
+
+- [Nest JS Backend API | Full Developer Course By Voxmind](https://youtube.com/watch?v=KkKiSN_yzdI) (9:30 hours)
+
 ## Technologies
 
 <!-- - Client-Side Rendering (CSR) -->

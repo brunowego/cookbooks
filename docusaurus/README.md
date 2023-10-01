@@ -20,7 +20,7 @@ https://github.com/medusajs/medusa/tree/develop/www/docs 🌟
 ## Links
 
 - [Code Repository](https://github.com/facebook/docusaurus)
-- [Main Website](https://docusaurus.io/)
+- [Main Website](https://docusaurus.io)
 
 ## CLI
 

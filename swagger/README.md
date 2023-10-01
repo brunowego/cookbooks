@@ -7,6 +7,8 @@ https://github.com/Redocly/redoc
 "Swagger UI" site:.com
 -->
 
+**Keywords:** Contract-first
+
 ## Alternatives
 
 - [Apiary](https://apiary.io/)

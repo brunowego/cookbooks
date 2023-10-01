@@ -16,11 +16,6 @@
 - [Svelte](/svelte.md)
 - [Vite](/vite/README.md)
 
-## ORM
-
-- [Prisma](/prisma/README.md)
-- [TypeORM](/typeorm.md)
-
 ## Golang
 
 - [Beego](https://github.com/beego/beego)

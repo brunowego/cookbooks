@@ -108,16 +108,17 @@ npm install -g @nestjs/cli
 ### Commands
 
 ```sh
-npx nest -h
+nest -h
 ```
 
 ### Usage
 
 ```sh
 #
-npx nest info
+nest info
 
 #
-npx nest generate -h
-npx nest g class config
+nest generate -h
+#
+nest g class config
 ```

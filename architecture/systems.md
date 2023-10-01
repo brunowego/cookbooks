@@ -26,7 +26,7 @@ https://softwarearchitecture.tools
 
 - [CloudSkew](https://cloudskew.com)
 - [Diagrams.net (formerly draw.io)](/diagrams.net.md)
-- [Excalidraw](https://excalidraw.com)
+- [Excalidraw](https://excalidraw.com) 🌟
 - [Gliffy](https://gliffy.com)
 - [Lucidchart / Architecture diagram software](https://lucidchart.com/pages/landing/architecture-diagram-software)
 - [Miro](https://miro.com)
@@ -34,6 +34,7 @@ https://softwarearchitecture.tools
 - [tldraw](https://tldraw.com)
 
 <!--
+https://whimsical.com
 Visio
 -->
 

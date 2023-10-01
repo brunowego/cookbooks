@@ -39,6 +39,13 @@ Requisitos Não Funcionais
 -->
 
 <!--
+## Videos
+
+- [Cuidados Com Os Contratos de Desenvolvimentos de Softwares | Juridioque](https://youtube.com/watch?v=Z77idcESY9M)
+- [DEV Precificando Projeto tipo Netflix (bem simples)](https://youtube.com/watch?v=Y2WfzFozf8M)
+-->
+
+<!--
 https://mestresdaweb.com.br/tecnologias/requisitos-funcionais-e-nao-funcionais-o-que-sao
 
 https://altexsoft.com/blog/non-functional-requirements/

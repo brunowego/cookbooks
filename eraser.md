@@ -2,7 +2,8 @@
 
 ## Links
 
-- [Eraser](https://eraser.io)
+- [Main Website](https://eraser.io)
+- [Icons](https://docs.eraser.io/docs/icons)
 
 <!--
 ⚓️ Architecture
