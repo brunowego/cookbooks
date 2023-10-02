@@ -20,6 +20,8 @@ https://github.com/superbrothers/zsh-kubectl-prompt
 - [Themes](/oh-my-zsh/themes.md)
 - [Plugins](/oh-my-zsh/plugins.md)
 - [Custom](/oh-my-zsh/custom.md)
+- More
+  - [Hostname](/hostname.md)
 
 ### Installation
 

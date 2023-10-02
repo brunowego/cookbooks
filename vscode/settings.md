@@ -11,23 +11,6 @@
   }
 -->
 
-## Key Bindings
-
-<!--
-https://github.com/Microsoft/vscode/issues/4504
--->
-
-```sh
-#
-cat "$HOME"/Library/Application\ Support/Code/User/keybindings.json
-
-#
-echo '[]' > "$HOME"/Library/Application\ Support/Code/User/keybindings.json
-
-#
-jq '.[.| length] |= . + {"key": "ctrl+cmd+k","command": "workbench.output.action.clearOutput"}' "$HOME"/Library/Application\ Support/Code/User/keybindings.json | sponge "$HOME"/Library/Application\ Support/Code/User/keybindings.json
-```
-
 ## Configuration
 
 ```sh
@@ -91,3 +74,20 @@ jq '."workbench.editor.splitInGroupLayout" |= "vertical"' "$HOME"/.vscode/settin
 # Tab Size
 # jq '."editor.tabSize" |= 2' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 -->
+
+## Key Bindings
+
+<!--
+https://github.com/Microsoft/vscode/issues/4504
+-->
+
+```sh
+#
+cat "$HOME"/Library/Application\ Support/Code/User/keybindings.json
+
+#
+echo '[]' > "$HOME"/Library/Application\ Support/Code/User/keybindings.json
+
+#
+jq '.[.| length] |= . + {"key": "ctrl+cmd+k","command": "workbench.output.action.clearOutput"}' "$HOME"/Library/Application\ Support/Code/User/keybindings.json | sponge "$HOME"/Library/Application\ Support/Code/User/keybindings.json
+```

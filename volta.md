@@ -9,6 +9,10 @@
 
 ## CLI
 
+### Dependencies
+
+- [OpenSSL](/openssl.md) (Version 1.1)
+
 ### Installation
 
 #### Homebrew
@@ -23,12 +27,62 @@ brew install volta
 volta -h
 ```
 
+### Environment
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Volta
+export PATH="$PATH:$HOME/.volta/bin"
+```
+
+```sh
+source ~/.zshrc
+```
+
+### Configuration
+
+```sh
+#
+volta setup
+```
+
 ### Usage
 
 ```sh
 #
-volta list
+volta install <tool>@<version>
+
+volta install node@lts
+volta install pnpm
+volta install yarn@1
 
 #
-volta install node
+volta list
+volta list <tool>
+
+#
+volta pin <tool>
+
+#
+volta which <tool>
+volta which yarn@1
+
+# REPL
+volta run <tool>
 ```
+
+<!-- ### Tips
+
+#### Autocomplete
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# Volta
+source <(volta completions zsh) # bash
+```
+
+```sh
+source ~/.zshrc
+``` -->

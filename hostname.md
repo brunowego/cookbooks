@@ -23,7 +23,7 @@ scutil --get HostName
 scutil --get LocalHostName
 
 # Set
-sudo scutil --set ComputerName 'John’s MacBook Pro'
+sudo scutil --set ComputerName "John's MacBook Pro"
 sudo scutil --set HostName 'john.macbook.pro'
 sudo scutil --set LocalHostName 'John-MacBook-Pro'
 

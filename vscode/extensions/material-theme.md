@@ -1,6 +1,6 @@
 # Visual Studio Code Theme
 
-## Extend
+## Dependencies
 
 - [Fira Code Font](/fira-code-font.md)
 

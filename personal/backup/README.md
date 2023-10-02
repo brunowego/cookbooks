@@ -26,7 +26,6 @@ Nuls
 
 ## Software Content
 
-- [Brave Browser](/brave/README.md#backup-folders)
 - [DBeaver](/dbeaver/README.md#backup-folders)
 - [IRPF](/countries/brazil/irpf.md)
 - [Paste](/paste.md)

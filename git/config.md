@@ -18,6 +18,9 @@ git config --global user.name '<Name>'
 git config --global user.email '<email>'
 
 #
+git config --global init.defaultBranch 'main'
+
+#
 git config --global core.editor 'vim'
 
 # Unix-like
