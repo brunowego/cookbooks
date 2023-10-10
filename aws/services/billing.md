@@ -10,7 +10,39 @@ https://s3-us-west-2.amazonaws.com/map-2.0-customer-documentation/html/latest/en
 - Billing
   - [Bills](https://console.aws.amazon.com/billing/home#/bills)
 
+## Glossary
+
+- Month To Date (MTD)
+- Simple Notification Service (SNS)
+
 ## Tips
+
+### Billing Alarm
+
+1. Go to [CloudWatch](https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1#home:) -> Alarms -> Billing
+2. Create alarm
+   - Step 1 - Specify metric and conditions
+     - Namespace: AWS/Billing
+     - Metric name: EstimatedCharges
+     - Currency: USD
+     - Statistic: Maximum
+     - Period: 6 hours
+     - Conditions:
+       - Threshold type: Static
+       - Whenever EstimatedCharges is...: Greater
+       - than…: 10 USD
+   - Step 2 - Notification
+     - Alarm state trigger: In alarm
+     - Send a notification to the following SNS topic: Create new topic
+     - Create a new topic…: BillingAlarm
+     - Create topic
+     - Next
+   - Step 3 - Add name and description
+     - Alarm name: Billing Alarm
+     - Alarm description: Send me an email if my bill goes over $10.
+     - Next
+   - Step 4 - Preview and create
+     - Create alarm
 
 ### Create MAP & CUR
 

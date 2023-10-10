@@ -1,9 +1,8 @@
 # AWS Lambda
 
-<!--
-https://github.com/JannikWempe/inline-comments/blob/main/apps/api/src/lib/lambda.ts
-https://github.com/squaaat/raemian
+**Keywords:** Serverless Function
 
+<!--
 https://app.pluralsight.com/library/courses/introduction-aws-lambda/table-of-contents
 https://app.pluralsight.com/library/courses/aws-developer-lambda-deep-dive/table-of-contents
 https://app.pluralsight.com/library/courses/aws-developer-introduction-aws-lambda/table-of-contents
@@ -30,9 +29,9 @@ https://linkedin.com/learning/developing-aws-lambda-functions-with-kotlin/welcom
 execute-api.eu-west-1.amazonaws.com
 -->
 
-## Alternatives
+## Links
 
-- Serverless
+- [Console](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1)
 
 ## CLI
 
@@ -46,5 +45,5 @@ aws lambda help
 
 ```sh
 #
-aws lambda
+aws lambda list-functions
 ``` -->

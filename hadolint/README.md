@@ -81,8 +81,20 @@ RUN pip3 install /usr/src/packages/<package-version>.tar.gz
 #### TBD
 
 ```log
-[1]    5029 segmentation fault  hadolint --help
+[1]    50091 segmentation fault  hadolint
 ```
+
+<!--
+https://github.com/hadolint/hadolint/issues/897
+-->
+
+<!--
+where hadolint
+
+rm ./.trunk/tools/hadolint
+
+hadolint@2.12.1-beta
+-->
 
 TODO
 

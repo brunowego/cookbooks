@@ -10,5 +10,5 @@ pnpm config list
 pnpm config set --global update-notifier false
 
 #
-pnpm config set save-prefix '~'
+pnpm config set --local save-prefix '~'
 ```

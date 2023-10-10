@@ -68,7 +68,6 @@ medusa telemetry --disable
 medusa migrations run
 
 #
-medusa seed
 medusa seed -f ./data/seed.json
 
 #

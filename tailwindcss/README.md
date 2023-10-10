@@ -1,6 +1,18 @@
 # Tailwind CSS
 
 <!--
+default
+neutral
+primary
+secondary
+accent
+warning
+error
+success
+info
+-->
+
+<!--
 Colors
 
 https://github.com/medusajs/medusa/blob/develop/www/docs/tailwind.config.js

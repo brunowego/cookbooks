@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/framer/motion)
-- [Main Website](https://framer.com/motion/)
+- [Main Website](https://framer.com/motion)
 
 ## Installation
 

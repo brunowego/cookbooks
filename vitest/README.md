@@ -1,5 +1,7 @@
 # Vitest
 
+**Keywords:** Jest Compatible
+
 ## Links
 
 - [Code Repository](https://github.com/vitest-dev/vitest)

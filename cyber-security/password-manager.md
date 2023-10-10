@@ -24,6 +24,10 @@
 - [KeePass](/keepass.md)
 - [LastPass](/lastpass.md)
 
+<!--
+https://cloaked.app
+-->
+
 ### Open Source
 
 - [Passbolt Community Edition (CE)](/passbolt-ce.md)

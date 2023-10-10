@@ -5,6 +5,9 @@ https://github.com/vegaprotocol/specs
 
 Bottleneck
 Leading zero
+
+fmgmt -> File Management
+pmgmt -> Project Management
 -->
 
 ## Glossary

@@ -36,7 +36,7 @@ echo '[pre-commit] Doing something...'
 EOF
 
 #
-git config core.hooksPath ./.githooks
+git config --local core.hooksPath ./.githooks
 ```
 
 <!--

@@ -1,5 +1,9 @@
 # Headless Commerce
 
+<!--
+https://blazity.com/services/headless-ecommerce-solutions
+-->
+
 ## Glossary
 
 - Order Management System (OMS)
@@ -25,6 +29,10 @@
 - [Swell](https://swell.is)
 - [Umbraco](https://umbraco.com/products/add-ons/commerce)
 - [Wix Stores](https://wix.com/app-market/wix-stores)
+
+<!--
+https://vtex.com
+-->
 
 ### Open Source
 

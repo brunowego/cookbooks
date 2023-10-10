@@ -27,3 +27,13 @@ git commit -nm '<message>'
 ```sh
 git commit --date 'Wed Feb 16 14:00 2037 +0100'
 ```
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension donjayamanne.githistory
+
+#
+jq '."recommendations" += ["donjayamanne.githistory"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+```

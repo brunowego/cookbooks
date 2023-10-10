@@ -8,6 +8,27 @@ https://github.com/entropitor/dotenv-cli/issues/37
 
 - [Code Repository](https://github.com/entropitor/dotenv-cli)
 
+## Library
+
+### Installation
+
+```sh
+# Using pnpm
+pnpm add dotenv-cli -D
+```
+
+### Configration
+
+**Refer:** `./package.json`
+
+```json
+{
+  "scripts": {
+    "<command>": "dotenv -- <command>"
+  }
+}
+```
+
 ## CLI
 
 ### Installation

@@ -15,7 +15,8 @@ Wait Condition
 
 ## Links
 
-- [AWS Console / CloudFormation / Stacks](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks?filteringStatus=active&filteringText=&viewNested=true&hideStacks=false)
+- Console
+  - [CloudFormation / Stacks](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks?filteringStatus=active&filteringText=&viewNested=true&hideStacks=false)
 
 ## Guides
 

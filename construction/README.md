@@ -1,6 +1,8 @@
 # Construction
 
 <!--
+https://www.nelsonkon.com.br/casa-na-praia-brava/
+
 https://www.arquiteturasustentavel.arq.br/curso-tecnico-em-tijolo-ecologico/?src=yt0405
 -->
 
@@ -8,6 +10,20 @@ https://www.arquiteturasustentavel.arq.br/curso-tecnico-em-tijolo-ecologico/?src
 Junta a prumo
 
 Croqui
+-->
+
+<!--
+70cm profundidade
+
+3,5m (altura) x 25cm (diametro) | 14/16 cm
+
+não colocar cimento no fundo
+
+https://www.youtube.com/watch?v=V0wXq8mSKBg
+
+altura 1,70m gancho
+
+https://www.youtube.com/watch?v=MWl6ePr1_co
 -->
 
 ## Terms

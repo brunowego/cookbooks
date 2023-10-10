@@ -17,15 +17,19 @@
 
 ### Installation
 
+<!--
+v2.8.8
+-->
+
 ```sh
 # Using NPM
-npm install @types/prettier prettier --save-dev
+npm install prettier --save-dev
 
 # Using Yarn
-yarn add @types/prettier prettier --dev
+yarn add prettier --dev
 
 # Using pnpm
-pnpm add @types/prettier prettier -D
+pnpm add prettier -D
 ```
 
 ### Configuration
@@ -91,6 +95,10 @@ module.exports = eslintRC
 #### Visual Studio Code
 
 **Dependencies:** Prettier CLI.
+
+<!--
+v9.14.0
+-->
 
 ```sh
 #

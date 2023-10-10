@@ -4,6 +4,11 @@
 
 - MongoDB
 
+## Links
+
+- Console
+  - [Tables](https://us-east-1.console.aws.amazon.com/dynamodbv2/home?region=us-east-1#tables)
+
 ## CLI
 
 ### Commands

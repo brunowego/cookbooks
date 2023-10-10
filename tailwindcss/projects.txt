@@ -1,5 +1,7 @@
 Non-TailwindCSS
 
+https://sst-software.nl/en/method
+https://dribbble.com (first, logout)
 https://framerbite.com
 https://skipso.com
 https://swan.io
@@ -7,6 +9,7 @@ https://flyingpress.com
 https://yonder.app
 https://getlog.co
 https://indiemaker.space
+https://paytient.com
 
 Theme
 
@@ -48,6 +51,10 @@ https://artillery.io
 
 Need test
 
+https://codedamn.com
+https://baselime.io
+https://hyperdx.io
+https://modernfullstack.com
 https://tailus.io
 https://case.wearekiwa.co
 https://themewagon.github.io/pinwheel

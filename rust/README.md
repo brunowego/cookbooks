@@ -20,7 +20,7 @@ https://github.com/ddanielsantos/rust-commerce
 ## Links
 
 - [Code Repository](https://github.com/rust-lang/rust)
-- [Main Website](https://rust-lang.org/)
+- [Main Website](https://rust-lang.org)
 - [Awesome Alternatives in Rust](https://github.com/TaKO8Ki/awesome-alternatives-in-rust)
 - Rust Package Registry
   - [crates.io](https://crates.io)

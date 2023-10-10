@@ -1,7 +1,8 @@
 # Google Fonts
 
 <!--
-https://fonts.google.com/specimen/Syne
+Syne
+Archivo
 -->
 
 ## Alternative

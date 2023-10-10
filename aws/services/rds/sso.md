@@ -2,13 +2,4 @@
 
 ## Docs
 
-- [DBeaver Documentation / AWS SSO](https://dbeaver.com/docs/wiki/AWS-SSO/)
-
-## CLI
-
-### Usage
-
-```sh
-#
-aws configure sso
-```
+- [DBeaver Documentation / AWS SSO](https://dbeaver.com/docs/wiki/AWS-SSO)

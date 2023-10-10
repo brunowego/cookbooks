@@ -42,6 +42,9 @@ git config --global merge.tool 'value' # Use `vimdiff`
 
 # Branch
 git config --global branch.autosetupmerge 'always'
+
+#
+git push --set-upstream origin develop
 ```
 
 <!--

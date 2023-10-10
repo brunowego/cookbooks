@@ -1,5 +1,4 @@
 {
-  "python.languageServer": "Pylance",
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

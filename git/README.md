@@ -371,6 +371,18 @@ git config --global user.useconfigonly true
 
 ### Issues
 
+#### Credentials
+
+```log
+Missing or invalid credentials.
+```
+
+TODO
+
+<!--
+Try use Terminar/iTerm
+-->
+
 #### TBD
 
 ```log

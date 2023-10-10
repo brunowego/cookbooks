@@ -43,7 +43,7 @@ email export -d ./src/templates
 #### Command Not Found
 
 ```log
-sh: next: command not found
+/bin/sh: next: command not found
 ```
 
 **Refer:** `./pnpm-workspace.yaml`

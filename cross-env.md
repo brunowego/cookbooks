@@ -12,6 +12,9 @@ npm install cross-env --save-dev
 
 # Using Yarn
 yarn add cross-env --dev
+
+#
+pnpm add cross-env -D
 ```
 
 ### Configuration

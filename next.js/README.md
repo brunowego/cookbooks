@@ -120,6 +120,12 @@ npx next buld
 
 ### Tips
 
+#### VS Code Files Exclude
+
+```sh
+jq '."search.exclude"."**/.next" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+```
+
 #### Move `.next` to Trash
 
 **Dependencies:** [trash](/trash.md)

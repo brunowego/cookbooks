@@ -67,6 +67,10 @@ Transactions Per Second (TPS)
 
 - [AWS Profile Manager (a.k.a. AWS Profile Switcher)](/aws-profile-manager.md)
 
+<!--
+https://github.com/johnnyopao/awsp
+-->
+
 ## History
 
 - Launches first service Simple Queue Service (SQS) around 2004

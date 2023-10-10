@@ -1,6 +1,6 @@
 # AWS Amplify
 
-**Keywords:** Framework
+**Keywords:** Serverless Framework
 
 ## TL;DR
 
