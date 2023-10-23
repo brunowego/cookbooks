@@ -32,8 +32,10 @@ git commit --date 'Wed Feb 16 14:00 2037 +0100'
 
 ```sh
 #
-code --install-extension donjayamanne.githistory
+code --install-extension mhutchie.git-graph
+# code --install-extension donjayamanne.githistory
 
 #
-jq '."recommendations" += ["donjayamanne.githistory"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+jq '."recommendations" += ["mhutchie.git-graph"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+# jq '."recommendations" += ["donjayamanne.githistory"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
 ```

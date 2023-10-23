@@ -8,8 +8,9 @@
 
 ### Open Source
 
-- [Snapdrop](https://snapdrop.net/) - [Code Repository](https://github.com/RobinLinus/snapdrop)
+- [Snapdrop](https://snapdrop.net) - [Code Repository](https://github.com/RobinLinus/snapdrop)
 
 <!--
+https://github.com/mifi/ezshare
 https://github.com/stonith404/pingvin-share
 -->

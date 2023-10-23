@@ -31,7 +31,7 @@ EOF
 
 #### Visual Studio Code
 
-**Recommended:** [Prettier](/prettier.md#visual-studio-code)
+**Recommended:** [Prettier](/prettier.md#visual-studio-code) and [ESLint](/eslint/README.md#visual-studio-code)
 
 ```sh
 #

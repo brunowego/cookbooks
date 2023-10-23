@@ -8,6 +8,12 @@ https://github.com/sorensenNiels/turborepo-tutorial
 npx @turbo/codemod add-package-manager --force
 -->
 
+<!--
+apps
+packages
+tooling
+-->
+
 ## Alternatives
 
 - [Monorepo Tools](/monorepo.md#tools)
@@ -143,6 +149,14 @@ mkdir -p ./{apps/landing,packages}
 ```
 
 ## Issues
+
+### TBD
+
+```log
+Error: '@acme/web' should be listed in the project's dependencies. Run 'npm i -S @acme/web' to add it  import/no-extraneous-dependencies
+```
+
+TODO
 
 ### Missing Global Env
 

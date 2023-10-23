@@ -6,14 +6,14 @@
 2. General
    - Build & Development Settings
      - Build Command:
-       - Using NPM: `cd ../../ && npx turbo run build --include-dependencies --no-deps --scope=@<package>/landing`
-       - Using Yarn: `cd ../../ && yarn turbo run build --include-dependencies --no-deps --scope=@<package>/landing`
-       - Using pnpm: `cd ../../ && pnpm turbo run build --include-dependencies --no-deps --scope=@<package>/landing`
+       - Using NPM: `cd ../../ && npx turbo run build --include-dependencies --no-deps --scope=@<package>/<name>`
+       - Using Yarn: `cd ../../ && yarn turbo run build --include-dependencies --no-deps --scope=@<package>/<name>`
+       - Using pnpm: `cd ../../ && pnpm turbo run build --include-dependencies --no-deps --scope=@<package>/<name>`
      - Install Command:
        - Using NPM: `npm install --prefix ../../`
        - Using Yarn: `yarn install --cwd ../../`
        - Using pnpm: `pnpm install --prefix ../../`
-   - Root Directory: `apps/landing`
+   - Root Directory: `apps/<name>`
 3. Environment Variables -> Add New
    - Name: `ENABLE_ROOT_PATH_BUILD_CACHE`
    - Value: `1`

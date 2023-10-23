@@ -1,6 +1,11 @@
 # Pulumi
 
 <!--
+https://github.com/thedatasnok/datasnokV3
+https://github.com/synoet/codelaunch
+-->
+
+<!--
 https://app.pluralsight.com/library/courses/pulumi-getting-started
 
 https://github.com/worldzhy/newbie/tree/main

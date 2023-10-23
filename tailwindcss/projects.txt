@@ -51,6 +51,7 @@ https://artillery.io
 
 Need test
 
+https://vmake.ai
 https://codedamn.com
 https://baselime.io
 https://hyperdx.io

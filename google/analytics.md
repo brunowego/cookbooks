@@ -1,6 +1,6 @@
 # Google Analytics
 
-**Keywords:** Web Analytics
+**Keywords:** Web Analytics, Non-compliance GDPR
 
 <!--
 v3

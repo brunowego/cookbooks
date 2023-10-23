@@ -102,6 +102,24 @@ rafce
 
 ## Issues
 
+### Missing JSX Provider
+
+```log
+Cannot use JSX unless the '--jsx' flag is provided
+```
+
+Check `./tsconfig.json` if `include` is set to `["src"]`.
+
+<!-- **Refer:** `./tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "jsx": "react"
+  }
+}
+``` -->
+
 ### Missing Use Effect
 
 ```log

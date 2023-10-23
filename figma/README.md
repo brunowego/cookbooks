@@ -1,6 +1,20 @@
 # Figma
 
 <!--
+Thumbnail
+Landing Page
+Web
+Mobile
+––––––––––
+Web Application
+↳ Landing Page
+↳ Sign In/Out
+↳ Main
+––––––––––
+Components
+-->
+
+<!--
 https://youtube.com/watch?v=GXhNLTZk85I
 https://youtube.com/watch?v=p2sZKAPOQXs
 

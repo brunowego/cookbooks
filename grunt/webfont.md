@@ -33,7 +33,4 @@ sudo apt -y install ttfautohint fontforge
 ModuleNotFoundError: No module named 'distutils.spawn'
 ```
 
-```sh
-# APT
-sudo apt -y install python3-distutils
-```
+Install [distutils](/python/distutils.md)

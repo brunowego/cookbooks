@@ -1,6 +1,12 @@
 # Vercel
 
 <!--
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+}
+-->
+
+<!--
 https://vercel.com/analytics
 https://vercel.com/edge
 https://vercel.com/live
@@ -10,6 +16,7 @@ https://github.com/vercel/nextjs-subscription-payments
 https://edge-mug.vercel.app/edge
 https://github.com/kovacsmarkakos/hacker-news-next
 https://github.com/leerob/esm
+
 https://epic-course-platform.vercel.app/
 -->
 

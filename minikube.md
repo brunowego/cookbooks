@@ -1,8 +1,6 @@
 # minikube
 
-## Alternatives
-
-- [Kubernetes in Docker (KinD)](/kind/README.md)
+**Keywords:** Local Kubernetes
 
 ## Links
 
@@ -18,7 +16,7 @@
 ### Dependencies
 
 - VM Driver
-  - [HyperKit](/hyperkit.md)
+  - [HyperKit](/hyperkit.md) 🌟
   - [Oracle VM VirtualBox](/virtualbox.md)
   - [Parallels](/parallels.md)
 
@@ -123,8 +121,10 @@ minikube start \
   $(echo "$MINIKUBE_START_OPTS") \
   -p minikube
 
-# Using specific Kubernetes version. Kubernetes Releases: https://kubernetes.io/releases/
-export KUBERNETES_VERSION='1.24.8'
+# Using specific Kubernetes version. Kubernetes Releases: https://kubernetes.io/releases
+
+# Kubernetes
+export KUBERNETES_VERSION='1.27.6'
 
 minikube start \
   $(echo "$MINIKUBE_START_OPTS") \

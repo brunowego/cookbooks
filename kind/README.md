@@ -4,6 +4,8 @@
 https://github.com/kubernetes/kubeadm/tree/master/kinder
 -->
 
+**Keywords:** Local Kubernetes
+
 ## Links
 
 - [Code Repository](https://github.com/kubernetes-sigs/kind)

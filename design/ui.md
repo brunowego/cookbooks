@@ -17,3 +17,7 @@ https://clay.global/
 ## Library
 
 - [shadcn/ui](/radix-ui/shadcn-ui.md)
+
+<!--
+https://horizon-ui.com
+-->

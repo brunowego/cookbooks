@@ -1,10 +1,19 @@
 # Cookie
 
 <!--
+https://github.com/dailydotdev/apps/blob/main/packages/shared/src/hooks/useCookieBanner.ts
+-->
+
+<!--
 https://avocode.com
 
 We use Cookies to ensure that we give you the best experience on our website. Read our Privacy Policy.
 -->
+
+## Terms
+
+- Cookie Audit
+- Cookie Consent
 
 ## Regulations
 
@@ -16,6 +25,10 @@ We use Cookies to ensure that we give you the best experience on our website. Re
 ## Tools
 
 - [Cookie Database](https://cookiedatabase.org)
+- Cookie Checker
+  - [Cookieserve](https://cookieserve.com)
+  - [CookieYes](https://cookieyes.com/cookie-checker) 🌟
+  - [Piwik](https://piwik.pro/cookie-scanner)
 
 ### Compliance
 
@@ -24,4 +37,6 @@ We use Cookies to ensure that we give you the best experience on our website. Re
 
 <!--
 - [Cookie Consent](https://github.com/osano/cookieconsent)
+
+https://securiti.ai
 -->

@@ -1,15 +1,11 @@
 # Tailwind CSS
 
 <!--
-default
-neutral
-primary
-secondary
-accent
-warning
-error
-success
-info
+Style Guide
+
+https://styleguidefortailwind.com
+https://github.com/garygreen/tsg
+https://github.com/mattbrailsford/tailwind-style-guide
 -->
 
 <!--

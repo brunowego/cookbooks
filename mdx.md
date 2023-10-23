@@ -29,4 +29,15 @@ jq '."recommendations" += ["unifiedjs.vscode-mdx"]' "$PWD"/.vscode/extensions.js
 First line in a file should be a top-level heading markdownlint MD041
 ```
 
-TODO
+**Refer:** `.trunk/trunk.yaml`
+
+```yml
+---
+# ...
+lint:
+  # ...
+  ignore:
+    - linters: [markdownlint]
+      paths:
+        - packages/ui/src/docs/*.stories.mdx
+```

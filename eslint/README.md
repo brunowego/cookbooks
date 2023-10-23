@@ -79,9 +79,30 @@ code --install-extension dbaeumer.vscode-eslint
 
 #
 jq '."recommendations" += ["dbaeumer.vscode-eslint"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+
+#
+jq '."eslint.workingDirectories" += [{ "mode": "auto" }]' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 ```
 
 ### Issues
+
+#### Missing Root ESLint Configuration (False Positive)
+
+```log
+ESLint couldn't find a configuration file. To set up a configuration file for this project, please run:
+```
+
+<!--
+https://github.com/eslint/eslint/issues/15746
+-->
+
+Try:
+
+```sh
+npx eslint ./
+# Org
+npx eslint --debug ./
+```
 
 #### Missing Working Directories for Monorepo
 
@@ -94,6 +115,19 @@ Pages directory cannot be found at /path/to/pages or /path/to/src/pages. If usin
 #
 jq '."eslint.workingDirectories" += [{ "pattern": "./apps/*/" }, { "pattern": "./packages/*/" }]' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 ```
+
+#### TBD
+
+```log
+Parsing error: ESLint was configured to run on `</path/to/filename>.ts` using `parserOptions.project`: </path/to/>/tsconfig.json
+However, that TSConfig does not include this file. Either:
+- Change ESLint's list of included files to not include this file
+- Change that TSConfig to include this file
+- Create a new TSConfig that includes this file and include it in your parserOptions.project
+See the typescript-eslint docs for more info: https://typescript-eslint.io/linting/troubleshooting#i-get-errors-telling-me-eslint-was-configured-to-run--however-that-tsconfig-does-not--none-of-those-tsconfigs-include-this-fileeslint
+```
+
+TODO
 
 <!-- #### Missing Matching Pattern
 

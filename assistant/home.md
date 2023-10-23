@@ -4,4 +4,6 @@ TODO
 
 <!--
 https://addons.community/
+
+https://home-assistant.io
 -->

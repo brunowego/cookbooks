@@ -2,7 +2,14 @@
 
 ## Related
 
-- [Clerk](/clerk.md)
+- [Clerk](/clerk/README.md)
+
+## Installation
+
+```sh
+# Using pnpm
+pnpm add @clerk/nextjs
+```
 
 ## Issues
 

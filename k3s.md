@@ -1,5 +1,7 @@
 # k3s
 
+**Keywords:** Lightweight Kubernetes
+
 ## Links
 
 - [Main Website](https://k3s.io)

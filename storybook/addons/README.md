@@ -14,3 +14,21 @@ https://storybook.js.org/addons/storybook-zeplin
 https://github.com/tonai/storybook-addon-themes
 https://github.com/hipstersmoothie/storybook-dark-mode
 -->
+
+<!-- ```ts
+// ...
+
+export default {
+  // ...
+  parameters: {
+    // ...
+    backgrounds: {
+      disable: true,
+      grid: {
+        disable: true,
+      },
+    },
+    // ...
+  },
+} satisfies Preview
+``` -->

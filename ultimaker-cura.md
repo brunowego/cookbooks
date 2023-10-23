@@ -28,8 +28,7 @@ choco install cura-new
 
 1. Settings -> Printer -> Add Printer
 2. Add a non-networked printer
-3. Creality3D -> Choose "Creality Ender-3"
-   - Change "Printer Name" to "Creality Ender-3 v2"
+3. Creality3D -> Choose "Creality Ender-3 v2"
    - Click Next
 4. Machine Settings
    - Printer Tab

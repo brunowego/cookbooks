@@ -10,12 +10,29 @@
 
 - [Storybook CLI](../README.md#cli)
 
-## Bootstrap
+## Monorepo Bootstrap
 
 <!--
 export NODE_OPTIONS=--openssl-legacy-provider
 
 echo 'shamefully-hoist = true' >> ./.npmrc
+-->
+
+<!--
+#
+cat << EOF > ./.storybook.env
+NODE_OPTIONS=--openssl-legacy-provider
+BROWSER=none
+STORYBOOK_DISABLE_TELEMETRY=1
+EOF
+-->
+
+<!--
+#
+cat << EOF > ./.gitignore
+/dist
+/node_modules
+EOF
 -->
 
 <!--
@@ -25,39 +42,27 @@ pnpm config set legacy-peer-deps true
 
 ```sh
 #
+mkdir -p ./packages/ui && cd "$_"
+
+# Only if it is not already exists
+pnpm init
+
+#
 pnpm dlx storybook@latest init \
   -s \
   -p tsx \
   --type react \
   -b @storybook/builder-vite
 
-#
+# Or
 pnpm dlx storybook@latest init \
   -s \
   -p tsx \
   --type nextjs
+
+#
+pnpm add dotenv-cli -D
 ```
-
-<!--
-#
-pnpm add react react-dom prop-types
-
-#
-pnpm add \
-  @mdx-js/react@1 \
-  @storybook/addon-backgrounds \
-  @storybook/addon-docs \
-  @storybook/addon-measure \
-  @storybook/addon-outline \
-  @storybook/addons \
-  @storybook/channel-postmessage \
-  @storybook/channel-websocket \
-  @storybook/client-api \
-  @storybook/preview-web \
-  dotenv-cli \
-  vite \
-  -D
--->
 
 ## Configuration
 
@@ -75,7 +80,7 @@ pnpm add \
 
 ```sh
 #
-echo '/public/sb' >> ./.eslintignore
+# echo '/public/sb' >> ./.eslintignore
 echo '/public/sb' >> ./.gitignore
 ```
 

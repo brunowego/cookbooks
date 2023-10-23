@@ -141,6 +141,9 @@ npx prettier -h
 
 ```sh
 #
+npx prettier --write ./**/*.{ts,tsx}
+
+#
 npx prettier --write ./**/*.{css,json,md,mjs,tsx}
 ```
 

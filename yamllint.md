@@ -52,9 +52,9 @@ rules:
   quoted-strings:
     quote-type: single
     required: only-when-needed
-  truthy:
-    # Allowing 'on' due to: https://github.com/adrienverge/yamllint/issues/158
-    # allowed-values: ['true', 'false', 'yes', 'no', 'on']
+  # truthy:
+  #   # Allowing 'on' due to: https://github.com/adrienverge/yamllint/issues/158
+  #   allowed-values: ['true', 'false', 'yes', 'no', 'on']
 EOF
 ```
 

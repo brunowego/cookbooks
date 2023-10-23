@@ -17,6 +17,9 @@
 # Breadcrumbs
 jq '."breadcrumbs.enabled" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 
+# Breadcrumbs
+jq '."security.workspace.trust.enabled" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+
 # Render whitespace
 jq '."editor.renderWhitespace" |= "all"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 

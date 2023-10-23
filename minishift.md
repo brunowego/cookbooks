@@ -13,6 +13,8 @@ mvn clean -DskipTests package -Pnative -Dquarkus.native.container-build=true
 oc start-build quarkus-hello-app --from-dir=. --follow
 -->
 
+**Keywords:** Local Kubernetes
+
 ## CLI
 
 ### Installation

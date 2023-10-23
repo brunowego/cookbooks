@@ -22,3 +22,64 @@ https://github.com/postgres/postgres/blob/master/src/backend/utils/misc/postgres
 - [PlanetScale](/planetscale.md)
 - [Supabase](/supabase.md)
 - [Vercel Postgres](https://vercel.com/storage/postgres) 🌟
+
+## Library
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install libpq
+```
+
+<!--
+brew install postgresql
+-->
+
+#### APT
+
+```sh
+sudo apt update
+sudo apt -y install libpq-dev
+# g++ make
+```
+
+#### YUM
+
+```sh
+yum check-update
+sudo yum -y install postgresql-devel
+```
+
+#### APK
+
+```sh
+sudo apk update
+sudo apk add postgresql-dev
+```
+
+### Environment
+
+#### Darwin
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# PostgreSQL Develop
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+```
+
+```sh
+source ~/.zshrc
+```
+
+### Issues
+
+#### TBD
+
+```log
+/bin/sh: pg_config: command not found
+```
+
+TODO

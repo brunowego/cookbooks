@@ -27,6 +27,7 @@
 <!--
 https://github.com/highlight/highlight/tree/main/packages/ui
 https://github.com/ballerine-io/ballerine/tree/dev/packages/ui
+https://developer.volvocars.com/design-system/web/
 -->
 
 ## CLI
@@ -47,3 +48,111 @@ npx -p @storybook/cli sb
 ```sh
 sb -h
 ```
+
+<!-- ## Issues -->
+
+<!-- ###
+
+```log
+Cannot find module './logo.svg' or its corresponding type declarations. ts(2307)
+```
+
+```
+declare module "*.svg" {
+  const svg: string | { width: number; height: number; src: string };
+  export = svg;
+}
+``` -->
+
+<!-- ###
+
+https://github.com/storybookjs/storybook/issues/17448
+
+```log
+ERR! Error: Cannot find module '/node_modules/react/package.json.js'
+```
+
+```sh
+# Using NPM
+npm uninstall @storybook/react
+npm install @storybook/preact --save-dev
+
+# Using Yarn
+yarn remove @storybook/react
+yarn add @storybook/preact --dev
+``` -->x1x``
+
+<!-- ### Missing Resolve Alias
+
+```log
+ModuleNotFoundError: Module not found: Error: Can't resolve '@/assets/images/logo/any.svg' in '/Volumes/Workspace/github.com/[org]/[project]/src/components/Layout'
+```
+
+**Refer:** `./.storybook/main.js`
+
+```js
+const path = require('path')
+
+module.exports = {
+  // ...
+  webpackFinal: async (config) => {
+    config.resolve = {
+      ...config.resolve,
+      alias: {
+        ...config.resolve.alias,
+        '@': path.resolve(__dirname, '../src'),
+      },
+    }
+
+    return config
+  },
+}
+``` -->
+
+<!-- ### Missing Module Rule for SVGR
+
+```log
+Failed to execute 'createElement' on 'Document': The tag name provided ('static/media/src/assets/images/social/linkedin.svg') is not a valid name.
+```
+
+**Refer:** `./.storybook/main.js`
+
+```js
+module.exports = {
+  // ...
+  webpackFinal: async (config) => {
+    config.module.rules = config.module.rules.map((rule) => {
+      if (String(rule.test).includes('svg')) {
+        return {
+          ...rule,
+          test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani)(\?.*)?$/,
+        }
+      }
+
+      return rule
+    })
+
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.tsx?$/,
+      use: [
+        {
+          loader: '@svgr/webpack',
+          options: {
+            svgoConfig: {
+              plugins: [
+                {
+                  name: 'removeViewBox',
+                  active: false,
+                },
+              ],
+            },
+          },
+        },
+      ],
+    })
+
+    return config
+  },
+}
+``` -->
