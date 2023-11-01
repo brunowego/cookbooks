@@ -155,14 +155,14 @@ kubectl get customresourcedefinitions.apiextensions.k8s.io
 
 ```sh
 #
-export KUBECTL_NAMESPACE='my-app'
+export K8S_NAMESPACE='my-app'
 
 #
-kubectl create ns "$KUBECTL_NAMESPACE"
+kubectl create ns "$K8S_NAMESPACE"
 
 #
 cat << EOF | kubectl apply \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
   -f -
 apiVersion: v1
 kind: ConfigMap
@@ -198,7 +198,7 @@ EOF
 
 #
 cat << EOF | kubectl apply \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
   -f -
 apiVersion: rabbitmq.com/v1beta1
 kind: RabbitmqCluster
@@ -259,7 +259,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 cat << EOF | kubectl apply \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
   -f -
 apiVersion: extensions/v1beta1
 kind: Ingress
@@ -319,7 +319,7 @@ kubectl rollout restart \
 #
 kubectl port-forward \
   svc/rabbitmq \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
   15692:15692
 
 #
@@ -331,7 +331,7 @@ echo -e '[INFO]\thttp://127.0.0.1:15692/metrics'
 ```sh
 #
 kubectl exec rabbitmq-server-0 \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
   -- /bin/sh \
     -c 'rabbitmqctl cluster_status --formatter json' | \
       jq -r '.running_nodes'
@@ -342,13 +342,13 @@ kubectl exec rabbitmq-server-0 \
 ```sh
 #
 kubectl delete rabbitmqcluster rabbitmq \
-  -n "$KUBECTL_NAMESPACE"
+  -n "$K8S_NAMESPACE"
 
 kubectl delete configmap rabbitmq-definitions \
-  -n "$KUBECTL_NAMESPACE"
+  -n "$K8S_NAMESPACE"
 
 kubectl delete ingress rabbitmq \
-  -n "$KUBECTL_NAMESPACE"
+  -n "$K8S_NAMESPACE"
 
-kubectl delete ns "$KUBECTL_NAMESPACE"
+kubectl delete ns "$K8S_NAMESPACE"
 ```

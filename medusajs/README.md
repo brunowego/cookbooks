@@ -76,3 +76,9 @@ medusa develop
 #
 medusa start
 ```
+
+<!--
+curl http://localhost:9000/health
+curl http://localhost:7000
+curl http://localhost:7001
+-->

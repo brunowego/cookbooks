@@ -19,8 +19,7 @@ https://github.com/postgres/postgres/blob/master/src/backend/utils/misc/postgres
 
 ## Managed
 
-- [PlanetScale](/planetscale.md)
-- [Supabase](/supabase.md)
+- [Supabase](/supabase/README.md)
 - [Vercel Postgres](https://vercel.com/storage/postgres) 🌟
 
 ## Library

@@ -81,6 +81,10 @@ sudo su - "$USER"
 
 **Environments:** `local`, `dev`, `qa`, `stg` and `prod`.
 
+<!--
+internal
+-->
+
 ```sh
 # Create
 kustomize create --resources ./.k8s/base

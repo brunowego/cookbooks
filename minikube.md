@@ -78,8 +78,8 @@ choco install -y minikube
 minikube config list
 
 #
-minikube config set cpus 4
-minikube config set memory 8192
+minikube config set cpus 2
+minikube config set memory 4096
 minikube config set disk-size 40g
 
 #
@@ -150,9 +150,6 @@ minikube profile list
 minikube profile minikube
 
 #
-minikube status -p minikube
-
-#
 kubectl config view
 
 #
@@ -168,8 +165,12 @@ minikube ssh \
 
 #
 minikube stop -p minikube
-# or
+
+#
 minikube start -p minikube
+
+#
+minikube status -p minikube
 
 #
 export KUBERNETES_IP="$(minikube ip)"
@@ -187,17 +188,15 @@ minikube addons list
 1. [Using Helm](/nginx/ingress-controller/README.md#helm)
 2. [Using Build-in](/nginx/ingress-controller/README.md#minikube)
 
+##### Metrics Server
+
+1. [Using Helm](/kubernetes/metrics-server.md#helm)
+2. [Using Build-in](/kubernetes/metrics-server.md#minikube)
+
 #### Mount
 
 ```sh
 minikube mount </path/to/export>:</path/to/mount/point>
-```
-
-### Environment
-
-```sh
-#
-eval "$(minikube docker-env)"
 ```
 
 #### Delete
@@ -210,8 +209,14 @@ minikube stop -p minikube && \
 
 ### Tips
 
-<!-- ####
+#### Set Docker Environment
 
+```sh
+#
+eval $(minikube -p minikube docker-env)
+```
+
+<!--
 ```sh
 #
 minikube start \
@@ -219,9 +224,6 @@ minikube start \
   -p minikube \
   --container-runtime docker \
   --vm=true
-
-#
-eval $(minikube -p minikube docker-env)
 ``` -->
 
 #### Added or Update Kube Config
@@ -270,6 +272,14 @@ sudo route \
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+Error response from daemon: invalid mount config for type "bind": bind source path does not exist: /path/to/filename
+```
+
+TODO
 
 <!-- ####
 

@@ -1,11 +1,39 @@
 # Kubernetes Registry
 
-https://github.com/kameshsampath/minikube-helpers/blob/master/cache/minikube-cache-images.sh
+<!--
 https://github.com/kameshsampath/minikube-helpers
+https://github.com/kameshsampath/minikube-helpers/blob/master/cache/minikube-cache-images.sh
+-->
 
-## Registry Aliases
+## Registries
 
 ```sh
+#
+export K8S_NAMESPACE='default'
+export EMAIL='brunowego@gmail.com'
+```
+
+### GitHub Packages
+
+```sh
+#
+export GITHUB_USERNAME='brunowego'
+export GITHUB_TOKEN='<github-token>'
+
+#
+kubens "$K8S_NAMESPACE"
+
+kubectl create secret docker-registry ghcr-docker-registry \
+  --docker-server=https://ghcr.io \
+  --docker-username=$GITHUB_USERNAME \
+  --docker-password=$GITHUB_TOKEN
+```
+
+<!--
+--docker-email=$EMAIL
+-->
+
+<!-- ```sh
 cat << EOF | kubectl apply -f -
 apiVersion: v1
 data:
@@ -17,9 +45,9 @@ metadata:
   name: registry-aliases
   namespace: kube-system
 EOF
-```
+``` -->
 
-```sh
+<!-- ```sh
 cat << \EOF | kubectl apply -f -
 apiVersion: apps/v1
 kind: DaemonSet
@@ -70,30 +98,19 @@ spec:
           hostPath:
             path: /etc/hosts
 EOF
-```
+``` -->
 
-```sh
+<!-- ```sh
 kubectl rollout status daemonset/registry-aliases-hosts-update -n kube-system
-```
+``` -->
 
-```sh
+<!-- ```sh
 minikube ssh -- sudo cat /etc/hosts
-```
+``` -->
 
 <!--
 kubectl create secret docker-registry docker-registry --from-literal <key>=<value>
 
-kubectl create secret docker-registry regcred \
-  --docker-server=<harbor.hao.com> \
-  --docker-username=<hao>
-  --docker-password=<xxxxx> --docker-email=<xxxx@qq.com>
-
-kubectl create secret docker-registry prte-docker-registry \
-  --docker-server='https://ghcr.io' \
-  --docker-username='<username>' \
-  --docker-password='<password>'
-
-#
 kubectl create secret generic docker-registry \
   -n api-local \
   --from-file=".dockerconfigjson=$HOME/.docker/config.json" \

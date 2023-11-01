@@ -1,5 +1,9 @@
 # Node Package Manager (NPM)
 
+<!--
+"$schema": "https://json.schemastore.org/package.json",
+-->
+
 **Keywords:** Node.js Package Manager
 
 ## Links

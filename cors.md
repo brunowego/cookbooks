@@ -17,3 +17,9 @@ CORS Preflight Did Not Succeed
 ```
 
 Reason: [CORS request did not succeed](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSDidNotSucceed)
+
+## Tips
+
+### Browser Extension
+
+- Google Chrome / [Allow CORS: Access-Control-Allow-Origin](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en)

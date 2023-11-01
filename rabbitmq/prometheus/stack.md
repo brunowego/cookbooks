@@ -20,10 +20,10 @@
 
 ```sh
 # RabbitMQ clusters
-export KUBECTL_NAMESPACE='my-app'
+export K8S_NAMESPACE='my-app'
 
 cat << EOF | kubectl apply \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
   -f -
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
@@ -37,7 +37,7 @@ spec:
       app.kubernetes.io/component: rabbitmq
   namespaceSelector:
     matchNames:
-    - $KUBECTL_NAMESPACE
+    - $K8S_NAMESPACE
   endpoints:
   - port: prometheus
     interval: 15s

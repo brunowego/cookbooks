@@ -1,5 +1,15 @@
 # kubectl-config
 
+<!--
+apiVersion: v1
+clusters:
+contexts: null
+current-context: minikube
+kind: Config
+preferences: {}
+users:
+-->
+
 ## Usage
 
 ```sh

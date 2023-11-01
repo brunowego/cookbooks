@@ -5,7 +5,7 @@
 ## Links
 
 - [Code Repository](https://github.com/NixOS/nix)
-- [Main Website](https://nixos.org/)
+- [Main Website](https://nixos.org)
 
 ## CLI
 

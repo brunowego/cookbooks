@@ -79,6 +79,7 @@ stern '<pod-prefix>'
 
 #
 stern .
+stern -s 1s .
 stern -s 1m .
 
 #

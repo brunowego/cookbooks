@@ -65,7 +65,7 @@ docker run -it --rm \
 
 ```sh
 #
-export KUBECTL_NAMESPACE='my-app'
+export K8S_NAMESPACE='my-app'
 ```
 
 ```sh
@@ -74,7 +74,7 @@ kubectl run -it --rm \
   perf-test \
   --env 'RABBITMQ_PERF_TEST_LOGGERS=com.rabbitmq.perf=debug,com.rabbitmq.perf.Producer=debug' \
   --image docker.io/pivotalrabbitmq/perf-test:latest \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
     -- \
       -h amqp://admin:admin@rabbitmq-server-0.rabbitmq-nodes.my-app:5672 \
       -u my_app_q
@@ -88,7 +88,7 @@ kubectl run -it --rm \
   perf-test \
   --env 'RABBITMQ_PERF_TEST_LOGGERS=com.rabbitmq.perf=debug,com.rabbitmq.perf.Producer=debug' \
   --image docker.io/pivotalrabbitmq/perf-test:latest \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
     -- \
       -h amqp://admin:admin@rabbitmq-server-0.rabbitmq-nodes.my-app:5672 \
       -u my_app_q \
@@ -99,7 +99,7 @@ kubectl run -it --rm \
   perf-test \
   --env 'RABBITMQ_PERF_TEST_LOGGERS=com.rabbitmq.perf=debug,com.rabbitmq.perf.Producer=debug' \
   --image docker.io/pivotalrabbitmq/perf-test:latest \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
     -- \
       -h amqp://admin:admin@rabbitmq-server-0.rabbitmq-nodes.my-app:5672 \
       -u my_app_q \
@@ -112,7 +112,7 @@ kubectl run -it --rm \
   perf-test \
   --env 'RABBITMQ_PERF_TEST_LOGGERS=com.rabbitmq.perf=debug,com.rabbitmq.perf.Producer=debug' \
   --image docker.io/pivotalrabbitmq/perf-test:latest \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
     -- \
       -h amqp://admin:admin@rabbitmq-server-0.rabbitmq-nodes.my-app:5672 \
       -u my_app4_q \

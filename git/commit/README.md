@@ -15,6 +15,12 @@
 
 ## Tips
 
+### Change Author
+
+```sh
+git commit --amend --author 'Bruno Wego <brunowego@gmail.com>'
+```
+
 ### Bypass pre-commit and commit-msg hooks
 
 ```sh

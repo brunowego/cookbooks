@@ -268,7 +268,7 @@ helm search repo -l bitnami/redis
 
 #
 helm install redis bitnami/redis \
-  --version 17.9.4 \
+  --version 18.1.6 \
   -f <(cat << EOF
 auth:
   password: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)

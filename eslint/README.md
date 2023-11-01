@@ -5,6 +5,10 @@
 -->
 
 <!--
+// eslint-disable-next-line <any> -- <any> is intentional
+-->
+
+<!--
 {
   "$schema": "https://json.schemastore.org/eslintrc"
 }

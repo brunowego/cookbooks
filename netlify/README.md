@@ -39,6 +39,10 @@ netlify login
 ```
 
 <!--
+netlify deploy
+-->
+
+<!--
 ```sh
 cat << EOF > ./netlify.toml
 [build]

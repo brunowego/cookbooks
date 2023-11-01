@@ -26,3 +26,11 @@ Falling back to copying packages from store
 ```
 
 Error happen when `node-linker` is set to `hoisted`.
+
+```sh
+#
+pnpm config set --local node-linker 'hoisted'
+
+#
+pnpm install
+```

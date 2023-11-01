@@ -77,6 +77,10 @@ kubectl delete ns argo
 
 - [Parameters](https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd#general-parameters)
 
+### Dependencies
+
+- [NGINX Ingress Controller](/nginx/ingress-controller/README.md#helm)
+
 ### Repository
 
 ```sh
@@ -103,7 +107,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 helm install argo-cd argo/argo-cd \
-  --version 5.19.11 \
+  --version 5.46.8 \
   -f <(cat << EOF
 configs:
   params:

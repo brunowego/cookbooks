@@ -17,6 +17,11 @@ minikube addons -p minikube enable metrics-server
 minikube addons -p minikube disable metrics-server
 ```
 
+```sh
+kubectl rollout status deploy/metrics-server \
+  -n kube-system
+```
+
 ## Custom Resource (CR)
 
 ### Install

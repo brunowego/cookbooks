@@ -207,6 +207,11 @@ minikube addons -p minikube enable ingress
 minikube addons -p minikube disable ingress
 ```
 
+```sh
+kubectl rollout status deploy/ingress-nginx-controller \
+  -n ingress-nginx
+```
+
 <!--
 minikube addons -p minikube enable ingress-dns
 minikube addons -p minikube disable ingress-dns
@@ -245,8 +250,8 @@ kubens ingress-nginx
 helm search repo -l ingress-nginx/ingress-nginx
 
 #
-helm upgrade ingress-controller ingress-nginx/ingress-nginx \
-  --version 4.4.2 \
+helm install ingress-controller ingress-nginx/ingress-nginx \
+  --version 4.8.2 \
   -f <(cat << EOF
 controller:
   ingressClass: nginx
@@ -367,6 +372,18 @@ minikube tunnel
 ``` -->
 
 ### Issues
+
+#### Not Ready Nodes
+
+```log
+Warning  FailedScheduling  3m48s  default-scheduler  0/4 nodes are available: 1 node(s) had untolerated taint {node-role.kubernetes.io/control-plane: }, 3 node(s) had untolerated taint {node.kubernetes.io/not-ready: }. preemption: 0/4 nodes are available: 4 Preemption is not helpful for scheduling..
+```
+
+```sh
+kubectl taint nodes \
+  --all \
+  node.kubernetes.io/not-ready-
+```
 
 #### TBD
 

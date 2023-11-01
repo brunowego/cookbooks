@@ -156,6 +156,26 @@ brew install prettier
 
 ## Issues
 
+### Missing Import Order Parser Plugins
+
+```log
+SyntaxError: This experimental syntax requires enabling one of the following parser plugin(s): "decorators", "decorators-legacy". (4:0)
+```
+
+**Refer:** `./prettier.config.cjs`
+
+```cjs
+/**
+ * @type { import('prettier').Options }
+ */
+const prettierConfig = {
+  // ...
+  importOrderParserPlugins: ['typescript', 'decorators-legacy'],
+}
+
+module.exports = prettierConfig
+```
+
 ### TBD
 
 ```log

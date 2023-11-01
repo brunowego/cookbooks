@@ -6,6 +6,7 @@
 
 - [Org. Repository](https://github.com/chainguard-images)
 - [Main Website](https://chainguard.dev)
+- [Academy](https://edu.chainguard.dev)
 
 ## Products
 

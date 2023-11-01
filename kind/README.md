@@ -9,7 +9,7 @@ https://github.com/kubernetes/kubeadm/tree/master/kinder
 ## Links
 
 - [Code Repository](https://github.com/kubernetes-sigs/kind)
-- [Main Website](https://kind.sigs.k8s.io/)
+- [Main Website](https://kind.sigs.k8s.io)
 
 ## Guides
 
@@ -33,7 +33,7 @@ brew install kind
 #### go get
 
 ```sh
-GO111MODULE='on' go get sigs.k8s.io/kind@v0.16.0
+GO111MODULE='on' go get sigs.k8s.io/kind@v0.20.0
 ```
 
 #### Chocolatey
@@ -128,7 +128,7 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 
 ```sh
 # Kubernetes Releases: https://kubernetes.io/releases/
-export KUBERNETES_VERSION='1.24.3'
+export KUBERNETES_VERSION='1.27.3'
 ```
 
 ```sh
@@ -148,6 +148,8 @@ kind create cluster \
 
 # Get installed version
 kubectl version --short
+
+kubectl cluster-info --context kind-kind-default
 ```
 
 #### Dependencies
@@ -186,8 +188,8 @@ kubectl config set-cluster "$(kubectl config current-context)" \
 kubectl cluster-info
 
 # or, using KUBECONFIG environment variable
-export KUBECONFIG="$(kind get kubeconfig --name 'kind-default')"
-kubectl cluster-info
+# export KUBECONFIG="$(kind get kubeconfig --name 'kind-default')"
+# kubectl cluster-info
 
 # or, using context parameter
 kubectl cluster-info --context kind-default
@@ -205,6 +207,16 @@ EOF
 ```
 
 ### Issues
+
+#### Wrong Kube Config Environemnt Path
+
+```log
+server: file name too long
+...
+client-key-data: file name too long
+```
+
+Check the environment `KUBECONFIG`. Try close and re-open the terminal.
 
 #### Port is Already Allocated
 

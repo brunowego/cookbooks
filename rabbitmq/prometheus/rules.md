@@ -8,7 +8,7 @@
 
 ```sh
 #
-export KUBECTL_NAMESPACE='my-app'
+export K8S_NAMESPACE='my-app'
 
 #
 kubectl get prometheus \
@@ -20,7 +20,7 @@ kubectl get prometheusrule -A
 
 #
 cat << \EOF | kubectl apply \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
   -f -
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule

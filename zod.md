@@ -6,6 +6,13 @@ https://github.com/chrsep/atreus/blob/main/dashboard/src/pages/api/companies/ind
 tRPC
 -->
 
+<!--
+Alternative
+
+https://github.com/jquense/yup
+https://github.com/hapijs/joi
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/colinhacks/zod)

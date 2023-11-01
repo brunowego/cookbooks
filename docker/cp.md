@@ -4,8 +4,8 @@
 
 ```sh
 #
-docker cp <container>:</absolute/path/to/source> </path/to/destination>
+docker cp <container-id>:</absolute/path/to/source> </path/to/destination>
 
 #
-docker cp </path/to/source> <container>:</absolute/path/to/destination>
+docker cp </path/to/source> <container-id>:</absolute/path/to/destination>
 ```

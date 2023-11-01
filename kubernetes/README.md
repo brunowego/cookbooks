@@ -50,7 +50,7 @@ dataeng
 ## Tools
 
 - [stern](/stern.md)
-- [Lens (a.k.a. OpenLens)](/lens.md)
+- [Lens (a.k.a. OpenLens)](/lens/README.md)
 
 ## Kubernetes Service Discovery Roles
 

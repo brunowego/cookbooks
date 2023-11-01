@@ -109,7 +109,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 
 #
 cat << EOF | kubectl apply \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
   -f -
 apiVersion: extensions/v1beta1
 kind: Ingress

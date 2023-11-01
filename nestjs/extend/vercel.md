@@ -1,6 +1,14 @@
 # Extend with Vercel
 
 <!--
+https://docs.cleavr.io/guides/nest/
+-->
+
+<!--
+https://github.com/orgs/vercel/discussions?discussions_q=nestjs
+-->
+
+<!--
 https://medium.com/nestjs-ninja/implementing-auth-flow-as-fast-as-possible-using-nestjs-bdf87488bc00
 https://www.technog.com.br/blog/tips-and-tricks/how-to-deploy-a-nestjs-app-for-free-on-vercel/
 https://www.danywalls.com/create-an-in-memory-crud-rest-api-using-nest-and-deploy-on-vercel

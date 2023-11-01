@@ -1,5 +1,13 @@
 # http-server
 
+<!--
+HashLocationStrategy / PathLocationStrategy
+-->
+
+## Links
+
+- [Code Repository](https://github.com/http-party/http-server)
+
 ## Library
 
 ### Installation
@@ -25,9 +33,6 @@ npm install http-server -g
 
 # Using Yarn 1.x
 yarn global add http-server
-
-# Using Yarn 1.x
-pnpm add http-server -D
 ```
 
 ### Commands

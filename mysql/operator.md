@@ -92,14 +92,14 @@ kubectl delete ns mysql-system \
 
 ```sh
 #
-export KUBECTL_NAMESPACE='my-app'
+export K8S_NAMESPACE='my-app'
 
 #
-kubectl create ns "$KUBECTL_NAMESPACE"
+kubectl create ns "$K8S_NAMESPACE"
 
 #
 cat << EOF | kubectl apply \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
   -f -
 apiVersion: mysql.presslabs.org/v1alpha1
 kind: MysqlCluster
@@ -150,7 +150,7 @@ spec:
 
 ```sh
 kubectl delete mysqlcluster mysql-cluster \
-  -n "$KUBECTL_NAMESPACE"
+  -n "$K8S_NAMESPACE"
 
-kubectl delete ns "$KUBECTL_NAMESPACE"
+kubectl delete ns "$K8S_NAMESPACE"
 ```

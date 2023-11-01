@@ -134,18 +134,18 @@ kubectl exec -it \
 
 ```sh
 #
-export KUBECTL_NAMESPACE='my-app'
+export K8S_NAMESPACE='my-app'
 
 kubectl port-forward svc/rabbitmq \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
   5672:5672
 
 kubectl port-forward svc/rabbitmq-nodes \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
   4369:4369
 
 kubectl port-forward svc/rabbitmq-nodes \
-  -n "$KUBECTL_NAMESPACE" \
+  -n "$K8S_NAMESPACE" \
   25672:25672
 ``` -->
 
