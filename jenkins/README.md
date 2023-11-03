@@ -63,7 +63,7 @@ controller:
   - configuration-as-code:1.51
   ingress:
     enabled: true
-    hostName: jenkins.${DOMAIN}
+    hostName: jenkins.${K8S_DOMAIN}
 EOF
 )
 ```
@@ -136,7 +136,7 @@ agent:
     mountPath: /var/run/docker.sock
   envVars:
   - name: DOCKER_REGISTRY_URL
-    value: https://registry.${DOMAIN}
+    value: https://registry.${K8S_DOMAIN}
   - name: DOCKER_REGISTRY_CREDENTIAL
     value: nxrm-oss-credential
 EOF

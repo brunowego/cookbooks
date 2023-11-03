@@ -41,7 +41,7 @@ metadata:
   namespace: ambassador
 spec:
   rules:
-  - host: ambassador.${DOMAIN}
+  - host: ambassador.${K8S_DOMAIN}
     http:
       paths:
       - backend:
@@ -58,7 +58,7 @@ metadata:
   namespace: ambassador
 spec:
   rules:
-  - host: admin.ambassador.${DOMAIN}
+  - host: admin.ambassador.${K8S_DOMAIN}
     http:
       paths:
       - backend:
@@ -101,7 +101,7 @@ kubectl apply -f <(yq m <(cat << EOF
 spec:
   tls:
     - hosts:
-        - ambassador.${DOMAIN}
+        - ambassador.${K8S_DOMAIN}
       secretName: ambassador.tls-secret
 EOF
 ) <(kubectl get ingress ambassador -n ambassador -o yaml))
@@ -111,7 +111,7 @@ kubectl apply -f <(yq m <(cat << EOF
 spec:
   tls:
     - hosts:
-        - admin.ambassador.${DOMAIN}
+        - admin.ambassador.${K8S_DOMAIN}
       secretName: ambassador.tls-secret
 EOF
 ) <(kubectl get ingress ambassador-admin -n ambassador -o yaml))
@@ -145,7 +145,7 @@ kubectl logs \
 
 ```sh
 # Admin
-echo -e "[INFO]\thttp://admin.ambassador.${DOMAIN}/ambassador/v0/diag/"
+echo -e "[INFO]\thttp://admin.ambassador.${K8S_DOMAIN}/ambassador/v0/diag/"
 ```
 
 ### Delete

@@ -48,7 +48,7 @@ ui:
   ingress:
     enabled: true
     hosts:
-    - host: consul.${DOMAIN}
+    - host: consul.${K8S_DOMAIN}
       paths:
       - /
 EOF

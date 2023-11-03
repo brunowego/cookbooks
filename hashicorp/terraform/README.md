@@ -354,6 +354,16 @@ https://www.youtube.com/watch?v=uFaMUS6Z9fI
 
 ### Issues
 
+#### Missing Upgrade
+
+```log
+The local name "argocd" in the root module represents provider "oboukili/argocd", but "argocd" in module.argo-cd represents "hashicorp/argocd".
+```
+
+```sh
+terraform init -upgrade
+```
+
 #### TBD
 
 ```log

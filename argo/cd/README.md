@@ -13,7 +13,6 @@ https://www.udemy.com/course/hands-on-guide-to-argo-workflows-on-kubernetes/
 
 - [Code Repository](https://github.com/argoproj/argo-cd)
 - [Main Website](https://argoproj.github.io/)
-- [Terraform Provider for ArgoCD](https://github.com/oboukili/terraform-provider-argocd)
 - Docs
   - [Git Webhook Configuration](https://argo-cd.readthedocs.io/en/stable/operator-manual/webhook/)
   - [SSO](https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/#sso)
@@ -92,22 +91,18 @@ helm repo update
 
 ```sh
 #
-kubectl create ns argocd
+kubectl create ns argocd && kubens argocd
 # kubectl create ns gitops
-
-#
-kubens argocd
 
 #
 helm search repo -l argo/argo-cd
 
 #
-export KUBERNETES_IP='<kubernetes-ip>'
-export DOMAIN="${KUBERNETES_IP}.nip.io"
+export K8S_DOMAIN=''
 
 #
 helm install argo-cd argo/argo-cd \
-  --version 5.46.8 \
+  --version 5.50.1 \
   -f <(cat << EOF
 configs:
   params:
@@ -118,7 +113,7 @@ server:
     enabled: true
     ingressClassName: nginx
     hosts:
-      - argocd.${DOMAIN}
+      - argocd.${K8S_DOMAIN}
 EOF
 )
 ```
@@ -344,6 +339,14 @@ kubectl patch configmap argocd-cm \
 > More details about Status Badge [here](https://argoproj.github.io/argo-cd/user-guide/status-badge/).
 
 ### Issues
+
+#### TBD
+
+```log
+Failed to load target state: failed to generate manifest for source 1 of 1: rpc error: code = Unknown desc = authentication required
+```
+
+TODO
 
 #### TBD
 

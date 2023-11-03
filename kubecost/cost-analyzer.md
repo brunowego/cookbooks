@@ -68,7 +68,7 @@ kubecostToken: ${KUBECOST_TOKEN}
 ingress:
   enabled: true
   hosts:
-  - kubecost.${DOMAIN}
+  - kubecost.${K8S_DOMAIN}
   className: nginx
 
 # remoteWrite:

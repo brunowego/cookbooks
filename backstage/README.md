@@ -175,7 +175,7 @@ helm upgrade backstage backstage/backstage \
 ingress:
   enabled: true
   className: nginx
-  host: backstage.${DOMAIN}
+  host: backstage.${K8S_DOMAIN}
   tls:
     enabled: true
     secretName: backstage.tls-secret
@@ -183,9 +183,9 @@ ingress:
 backstage:
   extraEnvVars:
     - name: APP_CONFIG_app_baseUrl
-      value: https://backstage.${DOMAIN}
+      value: https://backstage.${K8S_DOMAIN}
     - name: APP_CONFIG_backend_baseUrl
-      value: https://backstage.${DOMAIN}
+      value: https://backstage.${K8S_DOMAIN}
     # - name: POSTGRES_HOST
     #   value: backstage-postgresql
 

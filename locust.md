@@ -116,7 +116,7 @@ worker:
 ingress:
   enabled: true
   hosts:
-  - host: locust.${DOMAIN}
+  - host: locust.${K8S_DOMAIN}
     path: /
 EOF
 )

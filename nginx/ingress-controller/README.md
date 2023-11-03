@@ -137,7 +137,7 @@ Error: INSTALLATION FAILED: unable to build kubernetes objects from release mani
 ingress:
   enabled: true
   hosts:
-    - host: n8n.${DOMAIN}
+    - host: n8n.${K8S_DOMAIN}
       paths: ['/'] # add this
 ```
 
@@ -241,17 +241,14 @@ helm repo update
 
 ```sh
 #
-kubectl create ns ingress-nginx
-
-#
-kubens ingress-nginx
+kubectl create ns ingress-nginx && kubens ingress-nginx
 
 #
 helm search repo -l ingress-nginx/ingress-nginx
 
 #
 helm install ingress-controller ingress-nginx/ingress-nginx \
-  --version 4.8.2 \
+  --version 4.8.3 \
   -f <(cat << EOF
 controller:
   ingressClass: nginx
@@ -261,7 +258,8 @@ controller:
     kubernetes.io/os: linux
 
   service:
-    type: NodePort
+    # type: NodePort
+    type: LoadBalancer
 EOF
 )
 

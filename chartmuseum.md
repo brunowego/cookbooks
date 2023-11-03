@@ -35,7 +35,7 @@ helm install chartmuseum stable/chartmuseum \
   --set persistence.enabled=true \
   --set env.open.DISABLE_API=false \
   --set ingress.enabled=true \
-  --set "ingress.hosts[0].name=chartmuseum.${DOMAIN}" \
+  --set "ingress.hosts[0].name=chartmuseum.${K8S_DOMAIN}" \
   --set 'ingress.hosts[0].path=/' \
   --set 'ingress.hosts[0].tls=true' \
   --set 'ingress.hosts[0].tlsSecret=chartmuseum.tls-secret'
@@ -44,11 +44,11 @@ helm install chartmuseum stable/chartmuseum \
 #### API
 
 ```sh
-curl -ks https://chartmuseum.${DOMAIN}/index.yaml | yq r -
+curl -ks https://chartmuseum.${K8S_DOMAIN}/index.yaml | yq r -
 ```
 
 ```sh
-curl -ks https://chartmuseum.${DOMAIN}/api/charts | jq .
+curl -ks https://chartmuseum.${K8S_DOMAIN}/api/charts | jq .
 ```
 
 #### Repository
@@ -56,7 +56,7 @@ curl -ks https://chartmuseum.${DOMAIN}/api/charts | jq .
 ##### Local
 
 ```sh
-helm repo add --ca-file /etc/ssl/certs/chartmuseum/root-ca.crt chartmuseum https://chartmuseum.${DOMAIN}
+helm repo add --ca-file /etc/ssl/certs/chartmuseum/root-ca.crt chartmuseum https://chartmuseum.${K8S_DOMAIN}
 helm repo update
 ```
 
@@ -70,7 +70,7 @@ kubectl get secret chartmuseum.tls-secret \
 ```
 
 ```sh
-helm repo add --ca-file ./ca.crt chartmuseum https://chartmuseum.${DOMAIN}
+helm repo add --ca-file ./ca.crt chartmuseum https://chartmuseum.${K8S_DOMAIN}
 ```
 
 ```sh

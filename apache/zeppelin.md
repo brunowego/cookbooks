@@ -21,7 +21,7 @@ helm install zeppelin stable/zeppelin \
   --set spark.executorMemory=500mb \
   --set hadoop.useConfigMap=true \
   --set ingress.enabled=true \
-  --set ingress.hosts={zeppelin.${DOMAIN}}
+  --set ingress.hosts={zeppelin.${K8S_DOMAIN}}
 ```
 
 ```sh

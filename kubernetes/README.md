@@ -110,6 +110,15 @@ code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 jq '."recommendations" += ["ms-kubernetes-tools.vscode-kubernetes-tools"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
+<!-- ####
+
+```sh
+export KUBERNETES_IP='<kubernetes-ip>'
+export K8S_DOMAIN="${KUBERNETES_IP}.nip.io"
+
+export K8S_DOMAIN='k8s.orb.local'
+``` -->
+
 ### Issues
 
 #### Error Image Pull

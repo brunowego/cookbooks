@@ -72,7 +72,7 @@ elasticsearch:
   ingress:
     enabled: true
     hosts:
-    - host: elasticsearch.${DOMAIN}
+    - host: elasticsearch.${K8S_DOMAIN}
       paths:
       - path: /
 
@@ -82,7 +82,7 @@ kibana:
   ingress:
     enabled: true
     hosts:
-    - host: kibana.${DOMAIN}
+    - host: kibana.${K8S_DOMAIN}
       paths:
       - path: /
 
@@ -149,10 +149,10 @@ kubectl logs \
 
 ```sh
 #
-curl "http://elasticsearch.${DOMAIN}/_cat/indices?v"
+curl "http://elasticsearch.${K8S_DOMAIN}/_cat/indices?v"
 
 #
-curl "http://elasticsearch.${DOMAIN}/_aliases?pretty=true"
+curl "http://elasticsearch.${K8S_DOMAIN}/_aliases?pretty=true"
 ```
 
 ### Dashboard

@@ -703,7 +703,7 @@ metadata:
     app: matomo
 spec:
   rules:
-  - host: matomo.${DOMAIN}
+  - host: matomo.${K8S_DOMAIN}
     http:
       paths:
       - backend:
@@ -720,7 +720,7 @@ kubectl get ingress -n matomo
 ```
 
 ```sh
-echo -e "[INFO]\thttp://matomo.${DOMAIN}"
+echo -e "[INFO]\thttp://matomo.${K8S_DOMAIN}"
 ```
 
 ```sh
@@ -761,7 +761,7 @@ kubectl create ns matomo
 helm install matomo ./ \
   --namespace matomo \
   --set ingress.enabled=true \
-  --set "ingress.hosts[0].host=matomo.${DOMAIN}" \
+  --set "ingress.hosts[0].host=matomo.${K8S_DOMAIN}" \
   --set 'ingress.hosts[0].paths={/}'
 ```
 
@@ -786,7 +786,7 @@ ingress:
   tls:
     - secretName: matomo.tls-secret
       hosts:
-        - matomo.${DOMAIN}
+        - matomo.${K8S_DOMAIN}
 EOF
 ) <(helm get values matomo))
 ```
@@ -825,8 +825,8 @@ nslookup matomo.matomo.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "matomo.${DOMAIN}" +short
-nslookup "matomo.${DOMAIN}" 10.96.0.10
+dig @10.96.0.10 "matomo.${K8S_DOMAIN}" +short
+nslookup "matomo.${K8S_DOMAIN}" 10.96.0.10
 ```
 
 ### Secret

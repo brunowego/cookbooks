@@ -28,7 +28,7 @@ helm install artifactory-oss jfrog/artifactory-oss \
   --namespace artifactory \
   --set artifactory.nginx.enabled=false \
   --set artifactory.ingress.enabled=true \
-  --set "artifactory.ingress.hosts[0]=artifactory.${DOMAIN}"
+  --set "artifactory.ingress.hosts[0]=artifactory.${K8S_DOMAIN}"
 ```
 
 ### SSL
@@ -53,7 +53,7 @@ artifactory:
     tls:
       - secretName: artifactory.tls-secret
         hosts:
-          - artifactory.${DOMAIN}
+          - artifactory.${K8S_DOMAIN}
 EOF
 ) <(helm get values artifactory-oss))
 ```

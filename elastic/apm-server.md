@@ -40,7 +40,7 @@ helm install apm-server elastic/apm-server \
 ingress:
   enabled: true
   hosts:
-  - apm.${DOMAIN}
+  - apm.${K8S_DOMAIN}
 EOF
 )
 ```
@@ -65,7 +65,7 @@ kubectl logs \
 
 ```sh
 #
-echo -e "[INFO]\thttp://apm.${DOMAIN}"
+echo -e "[INFO]\thttp://apm.${K8S_DOMAIN}"
 ```
 
 ### Delete

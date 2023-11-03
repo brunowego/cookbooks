@@ -136,7 +136,7 @@ control:
     enabled: true
     className: nginx
     hosts:
-      - host: formance.${DOMAIN}
+      - host: formance.${K8S_DOMAIN}
         paths:
           - path: /
             pathType: ImplementationSpecific

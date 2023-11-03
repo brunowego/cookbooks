@@ -29,7 +29,7 @@ helm install rocketchat rocketchat/rocketchat \
   --namespace rocketchat \
   --version 3.1.0 \
   -f <(cat << EOF
-host: rocketchat.${DOMAIN}
+host: rocketchat.${K8S_DOMAIN}
 mongodb:
   auth:
     database: rocketchat
@@ -69,7 +69,7 @@ kubectl logs \
 
 ```sh
 #
-echo -e "[INFO]\thttp://rocketchat.${DOMAIN}"
+echo -e "[INFO]\thttp://rocketchat.${K8S_DOMAIN}"
 ```
 
 ### Delete

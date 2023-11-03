@@ -65,7 +65,7 @@ ingress:
   enabled: true
   ingressClassName: nginx
   hosts:
-    - host: weblate.${DOMAIN}
+    - host: weblate.${K8S_DOMAIN}
       paths:
         - path: /
           pathType: Prefix

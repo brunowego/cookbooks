@@ -71,7 +71,7 @@ ingress:
   enabled: true
   ingressClassName: nginx
   hosts:
-  - host: mailhog.${DOMAIN}
+  - host: mailhog.${K8S_DOMAIN}
     paths:
     - path: /
       pathType: Prefix
@@ -178,7 +178,7 @@ docker rm -f mailhog
 telnet '127.0.0.1' 1025
 
 # Kubernetes
-telnet "mailhog.${DOMAIN}" 1025
+telnet "mailhog.${K8S_DOMAIN}" 1025
 ```
 
 ```txt

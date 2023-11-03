@@ -23,7 +23,7 @@ kubectl create ns hue
 helm install hue gethue/hue \
   --namespace hue \
   --set ingress.enabled=true \
-  --set ingress.hosts={hue.${DOMAIN}}
+  --set ingress.hosts={hue.${K8S_DOMAIN}}
 ```
 
 ```sh

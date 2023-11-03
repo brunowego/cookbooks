@@ -6,6 +6,15 @@
 - [Main Website](https://hookdeck.com)
 - [Console](https://console.hookdeck.com)
 
+<!-- ## Library
+
+### Installation
+
+```sh
+# Using pnpm
+pnpm install hookdeck-cli -D
+``` -->
+
 ## CLI
 
 ### Links
@@ -13,6 +22,12 @@
 - [Code Repository](https://github.com/hookdeck/hookdeck-cli)
 
 ### Installation
+
+#### NPM
+
+```sh
+npm install hookdeck-cli -g
+```
 
 #### Homebrew
 
@@ -38,8 +53,13 @@ hookdeck login --cli-key <token>
 
 ```sh
 #
+hookdeck workspace list
+
+#
 hookdeck listen <port-or-url>
 hookdeck listen <port-or-url> <source-alias?>
+
+hookdeck listen 3000 shopify
 
 # What should be your new source label? ACME
 # What path should the webhooks be forwarded to (ie: /webhooks)? /api/webhooks

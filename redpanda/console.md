@@ -109,7 +109,7 @@ ingress:
   enabled: true
   className: nginx
   hosts:
-    - host: redpanda.${DOMAIN}
+    - host: redpanda.${K8S_DOMAIN}
       paths:
         - path: /
           pathType: ImplementationSpecific

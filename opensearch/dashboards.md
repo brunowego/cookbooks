@@ -37,7 +37,7 @@ ingress:
   ingressClassName: nginx
 
   hosts:
-    - host: opensearch.${DOMAIN}
+    - host: opensearch.${K8S_DOMAIN}
       paths:
         - path: /
           backend:

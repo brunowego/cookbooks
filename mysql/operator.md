@@ -44,7 +44,7 @@ orchestrator:
   ingress:
     enabled: true
     hosts:
-    - host: orchestrator.${DOMAIN}
+    - host: orchestrator.${K8S_DOMAIN}
       paths: ['/']
 EOF
 )

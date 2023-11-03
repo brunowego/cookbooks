@@ -16,7 +16,7 @@ kubectl create ns docker-registry
 helm install docker-registry stable/docker-registry \
   --namespace docker-registry \
   --set ingress.enabled=true \
-  --set ingress.hosts={registry.${DOMAIN}}
+  --set ingress.hosts={registry.${K8S_DOMAIN}}
 ```
 
 ### SSL
@@ -40,7 +40,7 @@ ingress:
   tls:
     - secretName: docker-registry.tls-secret
       hosts:
-        - registry.${DOMAIN}
+        - registry.${K8S_DOMAIN}
 EOF
 ) <(helm get values docker-registry))
 ```
@@ -75,8 +75,8 @@ nslookup docker-registry.docker-registry.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 registry.${DOMAIN} +short
-nslookup registry.${DOMAIN} 10.96.0.10
+dig @10.96.0.10 registry.${K8S_DOMAIN} +short
+nslookup registry.${K8S_DOMAIN} 10.96.0.10
 ```
 
 ### Secret

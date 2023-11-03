@@ -279,7 +279,7 @@ kubectl port-forward \
 ```
 
 <!--
-http://atlantis.${DOMAIN}/events
+http://atlantis.${K8S_DOMAIN}/events
 -->
 
 <!--

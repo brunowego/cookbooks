@@ -149,7 +149,7 @@ infracostAPIKey: $INFRACOST_API_KEY
 ingress:
   enabled: true
   hosts:
-  - host: cloud-pricing-api.${DOMAIN}
+  - host: cloud-pricing-api.${K8S_DOMAIN}
     paths:
     - path: /
 
@@ -182,7 +182,7 @@ kubectl logs \
 export INFRACOST_API_KEY="$(kubectl get secret cloud-pricing-api -o jsonpath='{.data.self-hosted-infracost-api-key}' -n infracost-system | base64 -d)"
 
 #
-infracost configure set pricing_api_endpoint "https://cloud-pricing-api.${DOMAIN}"
+infracost configure set pricing_api_endpoint "https://cloud-pricing-api.${K8S_DOMAIN}"
 infracost configure set api_key "$INFRACOST_API_KEY"
 
 #

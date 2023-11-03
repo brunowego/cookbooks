@@ -30,7 +30,7 @@ helm install kubeless incubator/kubeless \
   --set rbac.create=true \
   --set ui.enabled=true \
   --set ui.ingress.enabled=true \
-  --set ui.ingress.hosts={kubeless.${DOMAIN}} \
+  --set ui.ingress.hosts={kubeless.${K8S_DOMAIN}} \
   --set kafkaTrigger.enabled=true
 ```
 
@@ -56,7 +56,7 @@ ui:
     tls:
       - secretName: kubeless.tls-secret
         hosts:
-          - kubeless.${DOMAIN}
+          - kubeless.${K8S_DOMAIN}
 EOF
 ) <(helm get values kubeless))
 ```
@@ -93,8 +93,8 @@ nslookup kubeless-kubeless-ui.kubeless.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "kubeless.${DOMAIN}" +short
-nslookup "kubeless.${DOMAIN}" 10.96.0.10
+dig @10.96.0.10 "kubeless.${K8S_DOMAIN}" +short
+nslookup "kubeless.${K8S_DOMAIN}" 10.96.0.10
 ```
 
 ### Delete

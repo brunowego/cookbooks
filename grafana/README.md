@@ -196,7 +196,7 @@ adminPassword: $(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)
 ingress:
   enabled: true
   hosts:
-    - grafana.${DOMAIN}
+    - grafana.${K8S_DOMAIN}
   ingressClassName: nginx
 
 # plugins:

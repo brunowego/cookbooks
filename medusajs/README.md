@@ -1,10 +1,6 @@
 # MedusaJS
 
 <!--
-https://rigby.pl
--->
-
-<!--
 https://github.com/adrien2p/medusa-extender
 
 https://medusajs.notion.site/Medusa-Resources-dc2626aa8abf4e97ae3a5293a3fd41b9
@@ -21,6 +17,10 @@ https://medusajs.notion.site/Medusa-Resources-dc2626aa8abf4e97ae3a5293a3fd41b9
 - [API Reference](https://docs.medusajs.com/api/store)
 - [Awesome List](https://github.com/adrien2p/awesome-medusajs)
 - [Demo](https://demo.medusajs.com)
+
+<!-- ##
+
+https://rigby.pl -->
 
 ## Glossary
 
@@ -76,9 +76,3 @@ medusa develop
 #
 medusa start
 ```
-
-<!--
-curl http://localhost:9000/health
-curl http://localhost:7000
-curl http://localhost:7001
--->

@@ -38,7 +38,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: grafana.${DOMAIN}
+    - host: grafana.${K8S_DOMAIN}
       http:
         paths:
         - backend:
@@ -50,7 +50,7 @@ spec:
           pathType: Prefix
   tls:
     - hosts:
-        - grafana.${DOMAIN}
+        - grafana.${K8S_DOMAIN}
       secretName: teleport-grafana.tls-secret
 EOF
 ```

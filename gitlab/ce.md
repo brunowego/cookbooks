@@ -44,8 +44,8 @@ helm install gitlab-ce gitlab/gitlab \
   --namespace gitlab \
   --set global.edition=ce \
   --set global.hosts.domain=$(minikube ip).nip.io \
-  --set global.hosts.registry.name=registry.gitlab.${DOMAIN} \
-  --set global.hosts.minio.name=minio.gitlab.${DOMAIN} \
+  --set global.hosts.registry.name=registry.gitlab.${K8S_DOMAIN} \
+  --set global.hosts.minio.name=minio.gitlab.${K8S_DOMAIN} \
   --set global.ingress.configureCertmanager=false \
   --set global.ingress.class=nginx \
   --set certmanager.install=false \
@@ -100,8 +100,8 @@ nslookup gitlab-ce-unicorn.gitlab.svc.cluster.local 10.96.0.10
 ```
 
 ```sh
-dig @10.96.0.10 gitlab.${DOMAIN} +short
-nslookup gitlab.${DOMAIN} 10.96.0.10
+dig @10.96.0.10 gitlab.${K8S_DOMAIN} +short
+nslookup gitlab.${K8S_DOMAIN} 10.96.0.10
 ```
 
 ### Secrets

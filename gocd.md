@@ -44,7 +44,7 @@ server:
     enabled: true
     ingressClassName: nginx
     hosts:
-    - gocd.${DOMAIN}
+    - gocd.${K8S_DOMAIN}
 EOF
 )
 

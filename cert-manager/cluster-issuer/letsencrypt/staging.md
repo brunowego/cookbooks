@@ -63,4 +63,4 @@ kubectl get clusterissuer,certificates,certificaterequest,order,challenge -A
 Failed to determine a valid solver configuration for the set of domains on the Order: no configured challenge solvers can be used for this challenge
 ```
 
-Change domain in `dnsNames`, ex.: `grafana.${DOMAIN}`.
+Change domain in `dnsNames`, ex.: `grafana.${K8S_DOMAIN}`.

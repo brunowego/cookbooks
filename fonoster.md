@@ -62,7 +62,7 @@ helm install fonoster fonoster/fonos \
   -f <(cat << EOF
 apiserver:
   ingress:
-    host: fonos.${DOMAIN}
+    host: fonos.${K8S_DOMAIN}
 EOF
 )
 ```

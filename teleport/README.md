@@ -62,7 +62,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 [[ -n "${DOMAIN}" ]] && helm install teleport-cluster teleport/teleport-cluster \
   --version 13.1.0 \
   -f <(cat << EOF
-clusterName: teleport.${DOMAIN}
+clusterName: teleport.${K8S_DOMAIN}
 
 authentication:
   secondFactor: 'off'
@@ -114,10 +114,10 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - teleport.${DOMAIN}
+        - teleport.${K8S_DOMAIN}
       secretName: teleport.tls-secret
   rules:
-    - host: teleport.${DOMAIN}
+    - host: teleport.${K8S_DOMAIN}
       http:
         paths:
           - backend:
@@ -130,7 +130,7 @@ spec:
 EOF
 
 #
-curl -sk "https://teleport.${DOMAIN}/webapi/ping" | jq .
+curl -sk "https://teleport.${K8S_DOMAIN}/webapi/ping" | jq .
 ```
 
 ### Create App User
@@ -203,19 +203,19 @@ EOF
 helm get values teleport-cluster -o yaml
 
 #
-curl -sk "https://teleport.${DOMAIN}/webapi/ping" | jq .
+curl -sk "https://teleport.${K8S_DOMAIN}/webapi/ping" | jq .
 ```
 
 #### Option 3: Using Domain
 
 > Note: Currently Not Working
 
-| Service     | Host                        |
-| ----------- | --------------------------- |
-| SSH Proxy   | `ssh.teleport.${DOMAIN}`    |
-| Kubernetes  | `kube.teleport.${DOMAIN}`   |
-| SSH Tunnel  | `tunnel.teleport.${DOMAIN}` |
-| MySQL Proxy | `mysql.teleport.${DOMAIN}`  |
+| Service     | Host                            |
+| ----------- | ------------------------------- |
+| SSH Proxy   | `ssh.teleport.${K8S_DOMAIN}`    |
+| Kubernetes  | `kube.teleport.${K8S_DOMAIN}`   |
+| SSH Tunnel  | `tunnel.teleport.${K8S_DOMAIN}` |
+| MySQL Proxy | `mysql.teleport.${K8S_DOMAIN}`  |
 
 ```sh
 #
@@ -237,10 +237,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-      - ssh.teleport.${DOMAIN}
+      - ssh.teleport.${K8S_DOMAIN}
     secretName: teleport-ssh.tls-secret
   rules:
-    - host: ssh.teleport.${DOMAIN}
+    - host: ssh.teleport.${K8S_DOMAIN}
       http:
         paths:
         - backend:
@@ -260,12 +260,12 @@ helm upgrade teleport-cluster teleport/teleport-cluster \
   --version "$TELEPORT_HELM_CHART_VERSION" \
   -f <(yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' <(helm get values teleport-cluster -o yaml) <(cat << EOF
 sshPublicAddr:
-  - ssh.teleport.${DOMAIN}:443
+  - ssh.teleport.${K8S_DOMAIN}:443
 EOF
 ))
 
 #
-curl -sk "https://teleport.${DOMAIN}/webapi/ping" | jq .
+curl -sk "https://teleport.${K8S_DOMAIN}/webapi/ping" | jq .
 ```
 
 ### Next Steps

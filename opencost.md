@@ -60,12 +60,12 @@ opencost:
       # annotations:
       #   cert-manager.io/cluster-issuer: letsencrypt-issuer
       hosts:
-        - host: opencost.${DOMAIN}
+        - host: opencost.${K8S_DOMAIN}
           paths: ['/']
       # tls:
       #   - secretName: opencost.tls-secret
       #     hosts:
-      #       - opencost.${DOMAIN}
+      #       - opencost.${K8S_DOMAIN}
 EOF
 )
 ```

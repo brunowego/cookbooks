@@ -379,7 +379,7 @@ helm install lamp local/lamp \
   --namespace lamp \
   --set service.type=ClusterIP \
   --set ingress.enabled=true \
-  --set ingress.domain="lamp.${DOMAIN}"
+  --set ingress.domain="lamp.${K8S_DOMAIN}"
 ```
 
 ```sh

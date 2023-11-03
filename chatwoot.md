@@ -101,7 +101,7 @@ ingress:
   enabled: true
   ingressClassName: nginx
   hosts:
-    - host: chatwoot.${DOMAIN}
+    - host: chatwoot.${K8S_DOMAIN}
       paths:
         - path: /
           pathType: Prefix

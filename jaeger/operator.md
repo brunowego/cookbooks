@@ -63,7 +63,7 @@ metadata:
 spec:
   ingress:
     hosts:
-    - jaeger.${DOMAIN}
+    - jaeger.${K8S_DOMAIN}
 EOF
 ```
 
@@ -84,12 +84,12 @@ spec:
     type: elasticsearch
     options:
       es:
-        server-urls: http://elasticsearch.${DOMAIN}
+        server-urls: http://elasticsearch.${K8S_DOMAIN}
         username: [username]
         password: [password]
   ingress:
     hosts:
-    - jaeger.${DOMAIN}
+    - jaeger.${K8S_DOMAIN}
 EOF
 ```
 

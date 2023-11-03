@@ -124,7 +124,7 @@ helm upgrade discourse bitnami/discourse \
 ingress:
   enabled: true
   ingressClassName: nginx
-  hostname: discourse.${DOMAIN}
+  hostname: discourse.${K8S_DOMAIN}
 EOF
 )
 

@@ -44,7 +44,7 @@ helm install rancher rancher-latest/rancher \
   --namespace rancher-system \
   --version 2.6.2 \
   -f <(cat << EOF
-hostname: rancher.${DOMAIN}
+hostname: rancher.${K8S_DOMAIN}
 EOF
 )
 ```

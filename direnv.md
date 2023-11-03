@@ -149,3 +149,13 @@ command -v direnv >/dev/null && eval "$(direnv hook zsh)" # bash
 ```sh
 source ~/.zshrc
 ```
+
+### Issues
+
+#### TBD
+
+```log
+direnv: ([/usr/local/bin/direnv export zsh]) is taking a while to execute. Use CTRL-C to give up.
+```
+
+TODO

@@ -93,7 +93,7 @@ helm install spark stable/spark \
   --set Master.ServiceType=ClusterIP \
   --set Zeppelin.Ingress.Enabled=true \
   --set Zeppelin.ServiceType=ClusterIP \
-  --set Zeppelin.Ingress.Hosts={zeppelin.${DOMAIN}} \
+  --set Zeppelin.Ingress.Hosts={zeppelin.${K8S_DOMAIN}} \
   --set Zeppelin.Persistence.Config.Enabled=true \
   --set Zeppelin.Persistence.Config.StorageClass=$(kubectl get storageclass -o jsonpath='{.items[0].metadata.name}') \
   --set Zeppelin.Persistence.Notebook.Enabled=true \

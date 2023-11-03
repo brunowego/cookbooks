@@ -213,7 +213,7 @@ helm install dex dex/dex \
   -f <(cat << EOF
 ---
 config:
-  issuer: https://auth.${DOMAIN}
+  issuer: https://auth.${K8S_DOMAIN}
 
   storage:
     type: sqlite3
@@ -253,14 +253,14 @@ ingress:
   enabled: true
   className: nginx
   hosts:
-    - host: auth.${DOMAIN}
+    - host: auth.${K8S_DOMAIN}
       paths:
         - path: /
           pathType: Prefix
   tls:
     - secretName: dex.tls-secret
       hosts:
-        - auth.${DOMAIN}
+        - auth.${K8S_DOMAIN}
 EOF
 )
 ```
@@ -312,8 +312,8 @@ kubectl delete ns dex \
 2. Create Credentials / OAuth client ID
 3. Application type: Web application
    - Name: `Dex`
-   - Authorized JavaScript origins: `https://auth.${DOMAIN}`
-   - Authorized redirect URIs: `https://auth.${DOMAIN}/callback`
+   - Authorized JavaScript origins: `https://auth.${K8S_DOMAIN}`
+   - Authorized redirect URIs: `https://auth.${K8S_DOMAIN}/callback`
    - Create
 
 ### cURL Testing
@@ -322,7 +322,7 @@ kubectl delete ns dex \
 # Using Docker
 export DEX_URL='http://localhost:5556'
 # Using Kubernetes
-export DEX_URL="http://auth.${DOMAIN}"
+export DEX_URL="http://auth.${K8S_DOMAIN}"
 
 #
 curl -i "${DEX_URL}/healthz"

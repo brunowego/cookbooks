@@ -23,9 +23,9 @@ helm install weave-scope stable/weave-scope \
   --namespace weave-scope \
   --set weave-scope-frontend.ingress.enabled=true \
   --set weave-scope-frontend.ingress.paths={/} \
-  --set weave-scope-frontend.ingress.hosts={scope.${DOMAIN}} \
+  --set weave-scope-frontend.ingress.hosts={scope.${K8S_DOMAIN}} \
   --set 'weave-scope-frontend.ingress.tls[0].secretName=weave-scope.tls-secret' \
-  --set 'weave-scope-frontend.ingress.tls[0].hosts={scope.${DOMAIN}}'
+  --set 'weave-scope-frontend.ingress.tls[0].hosts={scope.${K8S_DOMAIN}}'
 ```
 
 ### Status

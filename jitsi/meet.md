@@ -47,13 +47,13 @@ helm install jitsi-meet jitsi/jitsi-meet \
   --namespace jitsi \
   --version 0.2.0 \
   -f <(cat << EOF
-publicURL: jitsi.${DOMAIN}
+publicURL: jitsi.${K8S_DOMAIN}
 
 web:
   ingress:
     enabled: true
     hosts:
-    - host: jitsi.${DOMAIN}
+    - host: jitsi.${K8S_DOMAIN}
       paths: ['/']
 EOF
 )

@@ -54,7 +54,7 @@ frontend:
     # annotations:
     #   cert-manager.io/cluster-issuer: letsencrypt-issuer
     hosts:
-      - host: signoz.${DOMAIN}
+      - host: signoz.${K8S_DOMAIN}
         paths:
           - path: /
             pathType: ImplementationSpecific
@@ -62,7 +62,7 @@ frontend:
     # tls:
     #   - secretName: signoz.tls-secret
     #     hosts:
-    #       - signoz.${DOMAIN}
+    #       - signoz.${K8S_DOMAIN}
 EOF
 )
 ```

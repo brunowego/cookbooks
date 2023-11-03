@@ -1,4 +1,4 @@
-# Terraform Provider for AWS
+# AWS Provider
 
 <!--
 https://registry.terraform.io/modules/terraform-aws-modules/pricing/aws/latest

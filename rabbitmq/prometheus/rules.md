@@ -130,5 +130,5 @@ EOF
 > Wait! This process take a while.
 
 ```sh
-echo -e "[INFO]\thttp://prometheus.${DOMAIN}/rules#rabbitmq.rules"
+echo -e "[INFO]\thttp://prometheus.${K8S_DOMAIN}/rules#rabbitmq.rules"
 ```

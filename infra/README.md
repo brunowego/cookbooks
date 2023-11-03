@@ -135,7 +135,7 @@ server:
     enabled: true
     className: nginx
     hosts:
-      - infra.${DOMAIN}
+      - infra.${K8S_DOMAIN}
 
   config:
     grants:

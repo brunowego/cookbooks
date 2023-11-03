@@ -60,14 +60,14 @@ dashboard:
     # annotations:
     #   cert-manager.io/cluster-issuer: letsencrypt-issuer
     hosts:
-      - host: goldilocks.${DOMAIN}
+      - host: goldilocks.${K8S_DOMAIN}
         paths:
           - path: /
             type: ImplementationSpecific
     # tls:
     #   - secretName: goldilocks.tls-secret
     #     hosts:
-    #       - goldilocks.${DOMAIN}
+    #       - goldilocks.${K8S_DOMAIN}
 EOF
 )
 ```

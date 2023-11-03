@@ -72,8 +72,8 @@ kubens kube-system
 helm search repo -l metrics-server/metrics-server
 
 #
-helm upgrade metrics-server metrics-server/metrics-server \
-  --version 3.8.3 \
+helm install metrics-server metrics-server/metrics-server \
+  --version 3.11.0 \
   -f <(cat << EOF
 defaultArgs:
   - --cert-dir=/tmp

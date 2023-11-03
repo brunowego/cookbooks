@@ -60,10 +60,10 @@ openvpn:
 ingress:
   gui:
     enabled: true
-    hostName: client.openvpn.${DOMAIN}
+    hostName: client.openvpn.${K8S_DOMAIN}
   admin:
     enabled: true
-    hostName: admin.openvpn.${DOMAIN}
+    hostName: admin.openvpn.${K8S_DOMAIN}
 EOF
 )
 

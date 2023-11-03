@@ -19,7 +19,7 @@ connectors:
     config:
       clientID: $GOOGLE_CLIENT_ID
       clientSecret: $GOOGLE_CLIENT_SECRET
-      redirectURI: https://auth.${DOMAIN}/callback
+      redirectURI: https://auth.${K8S_DOMAIN}/callback
       hostedDomains:
         - $GOOGLE_HOSTED_DOMAIN
 ```

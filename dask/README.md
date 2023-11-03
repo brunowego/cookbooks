@@ -37,7 +37,7 @@ metadata:
   namespace: dask
 spec:
   rules:
-  - host: jupyter.dask.${DOMAIN}
+  - host: jupyter.dask.${K8S_DOMAIN}
     http:
       paths:
       - backend:
@@ -56,7 +56,7 @@ metadata:
   namespace: dask
 spec:
   rules:
-  - host: dask.${DOMAIN}
+  - host: dask.${K8S_DOMAIN}
     http:
       paths:
       - backend:

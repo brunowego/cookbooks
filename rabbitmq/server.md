@@ -34,7 +34,7 @@ helm install rabbitmq bitnami/rabbitmq \
   --set auth.password=admin \
   --set replicaCount=3 \
   --set ingress.enabled=true \
-  --set ingress.hostname="rabbitmq.${DOMAIN}" \
+  --set ingress.hostname="rabbitmq.${K8S_DOMAIN}" \
   --set metrics.enabled=true
 ```
 

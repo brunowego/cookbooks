@@ -110,7 +110,7 @@ ingress:
   enabled: true
   ingressClassName: nginx
   hosts:
-    - metabase.${DOMAIN}
+    - metabase.${K8S_DOMAIN}
 EOF
 )
 ```

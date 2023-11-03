@@ -196,7 +196,7 @@ secret:
 ingress:
   enabled: true
   hosts:
-    - host: n8n.${DOMAIN}
+    - host: n8n.${K8S_DOMAIN}
       paths: ['/']
 EOF
 )

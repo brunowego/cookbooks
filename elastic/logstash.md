@@ -32,7 +32,7 @@ helm install logstash elastic/logstash \
 ingress:
   enabled: true
   hosts:
-  - host: logstash.${DOMAIN}
+  - host: logstash.${K8S_DOMAIN}
     paths:
     - path: /logs
       servicePort: 8080

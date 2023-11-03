@@ -84,7 +84,7 @@ minimumMasterNodes: 1
 ingress:
   enabled: true
   hosts:
-  - host: elasticsearch.${DOMAIN}
+  - host: elasticsearch.${K8S_DOMAIN}
     paths:
     - path: /
 EOF
@@ -131,21 +131,21 @@ curl \
   -X PUT \
   -H 'Content-Type: application/json' \
   -d '{"index.blocks.read_only_allow_delete": null}' \
-  "http://elasticsearch.${DOMAIN}/_all/_settings"
+  "http://elasticsearch.${K8S_DOMAIN}/_all/_settings"
 
 #
 curl \
   -X PUT \
   -H 'Content-Type: application/json' \
   -d '{"transient":{"cluster.routing.allocation.disk.watermark.low":"50gb","cluster.routing.allocation.disk.watermark.high":"20gb","cluster.routing.allocation.disk.watermark.flood_stage":"10gb","cluster.info.update.interval":"1m"}}' \
-  "http://elasticsearch.${DOMAIN}/_cluster/settings?pretty" \
+  "http://elasticsearch.${K8S_DOMAIN}/_cluster/settings?pretty" \
 
 #
 curl \
   -X PUT \
   -H 'Content-Type: application/json' \
   -d '{"index.blocks.read_only_allow_delete": null}' \
-  "http://elasticsearch.${DOMAIN}/_all/_settings"
+  "http://elasticsearch.${K8S_DOMAIN}/_all/_settings"
 ```
 
 #### 429 Too Many Requests
@@ -160,7 +160,7 @@ curl \
   -X PUT \
   -H 'Content-Type: application/json' \
   -d '{"index.blocks.read_only_allow_delete": null}' \
-  "http://elasticsearch.${DOMAIN}/_all/_settings"
+  "http://elasticsearch.${K8S_DOMAIN}/_all/_settings"
 ```
 
 ### Delete

@@ -25,7 +25,7 @@ kubectl create ns couchdb
 helm install couchdb stable/couchdb \
   --namespace couchdb \
   --set ingress.enabled=true \
-  --set ingress.hosts={couchdb.${DOMAIN}}
+  --set ingress.hosts={couchdb.${K8S_DOMAIN}}
 ```
 
 ### SSL
@@ -49,7 +49,7 @@ ingress:
   tls:
     - secretName: couchdb.tls-secret
       hosts:
-        - couchdb.${DOMAIN}
+        - couchdb.${K8S_DOMAIN}
 EOF
 ) <(helm get values couchdb))
 ```
@@ -84,8 +84,8 @@ nslookup couchdb-svc-couchdb.couchdb.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "couchdb.${DOMAIN}" +short
-nslookup "couchdb.${DOMAIN}" 10.96.0.10
+dig @10.96.0.10 "couchdb.${K8S_DOMAIN}" +short
+nslookup "couchdb.${K8S_DOMAIN}" 10.96.0.10
 ```
 
 ### Secret
@@ -106,7 +106,7 @@ kubectl get secret couchdb-couchdb \
 
 ```sh
 # Fauxton Visual Guide
-echo -e "[INFO]\thttp://couchdb.${DOMAIN}/_utils/"
+echo -e "[INFO]\thttp://couchdb.${K8S_DOMAIN}/_utils/"
 ```
 
 ### Delete

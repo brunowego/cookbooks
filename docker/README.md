@@ -13,7 +13,10 @@ DOCKER_TAG:
 -->
 
 <!--
+docker.for.mac.localhost
 host.docker.internal
+
+docker run --rm docker.io/library/alpine ping host.docker.internal
 -->
 
 ## Alternatives

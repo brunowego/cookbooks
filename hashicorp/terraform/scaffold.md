@@ -25,10 +25,14 @@ mkdir -p ./.infra/terraform/{modules,policies,vars}
 cat << EOF > ./.infra/terraform/.gitignore
 /.terraform
 /.terraform.lock.hcl
+/terraform.tfstate*
 EOF
 
 #
-echo '1.3.5' > ./.infra/terraform/.terraform-version
+curl -s https://api.github.com/repos/hashicorp/terraform/releases/latest | grep tag_name | cut -d '"' -f 4 | tr -d 'v'
+
+#
+echo '1.6.2' > ./.infra/terraform/.terraform-version
 
 #
 cat << EOF > ./.infra/terraform/locals.tf
@@ -42,15 +46,15 @@ EOF
 #
 cat << EOF > ./.infra/terraform/main.tf
 terraform {
-  # backend "local" {}
+  backend "local" {}
 
-  backend "remote" {
-    organization = "my-company"
+  # backend "remote" {
+  #   organization = "my-company"
 
-    workspaces {
-      prefix = "<project>-<app-name>-<region>-"
-    }
-  }
+  #   workspaces {
+  #     prefix = "<project>-<app-name>-<region>-"
+  #   }
+  # }
 }
 EOF
 
@@ -81,7 +85,7 @@ terraform {
   #   }
   # }
 
-  required_version = "~> 1.3.5"
+  required_version = "~> 1.6.2"
 }
 EOF
 ```
@@ -91,9 +95,35 @@ EOF
 cat << EOF > ./.infra/terraform/README.md
 # Terraform
 
+## Dependencies
+
+- [tfenv](https://github.com/tfutils/tfenv)
+
 ## Running
 
-TBD
+---sh
+#
+cd ./.infra/terraform
+
+#
+tfenv install
+tfenv use
+
+#
+terraform -v
+
+#
+terraform init
+
+#
+terraform validate
+
+#
+terraform plan
+
+#
+terraform apply
+---
 EOF
 ```
 
@@ -143,8 +173,4 @@ resource "..." "..." {
     ]
   }
 }
-```
-
-```
-
 ```

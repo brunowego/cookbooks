@@ -2,6 +2,10 @@
 
 **Keywords:** Local Kubernetes
 
+<!--
+host.minikube.internal
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/kubernetes/minikube)
@@ -208,6 +212,19 @@ minikube stop -p minikube && \
 ```
 
 ### Tips
+
+#### Logout Hook
+
+<!--
+https://superuser.com/questions/295924/how-to-run-a-script-at-login-logout-in-os-x
+-->
+
+**Dependencies:** [Login Window](/apple/macos/loginwindow.md#logout-hook)
+
+```sh
+#
+echo 'minikube stop -p minikube' >> /usr/local/bin/logouthook
+```
 
 #### Set Docker Environment
 

@@ -49,7 +49,7 @@ alertmanager:
   # ingress:
   #   enabled: true
   #   hosts:
-  #     - alertmanager.${DOMAIN}
+  #     - alertmanager.${K8S_DOMAIN}
   #   pathType: Prefix
 
 grafana:
@@ -58,7 +58,7 @@ grafana:
   # ingress:
   #   enabled: true
   #   hosts:
-  #     - grafana.${DOMAIN}
+  #     - grafana.${K8S_DOMAIN}
 
 # prometheus:
 #   prometheusSpec:
@@ -66,7 +66,7 @@ grafana:
 #   ingress:
 #     enabled: true
 #     hosts:
-#       - prometheus.${DOMAIN}
+#       - prometheus.${K8S_DOMAIN}
 #     pathType: Prefix
 
 # kubelet:
@@ -147,13 +147,13 @@ echo -e '[INFO]\thttp://127.0.0.1:8080'
 
 ```sh
 #
-echo -e "[INFO]\thttp://prometheus.${DOMAIN}"
+echo -e "[INFO]\thttp://prometheus.${K8S_DOMAIN}"
 
 #
-echo -e "[INFO]\thttp://alertmanager.${DOMAIN}"
+echo -e "[INFO]\thttp://alertmanager.${K8S_DOMAIN}"
 
 #
-echo -e "[INFO]\thttp://grafana.${DOMAIN}"
+echo -e "[INFO]\thttp://grafana.${K8S_DOMAIN}"
 ```
 
 ### Tips
@@ -251,8 +251,8 @@ EOF
 
 ```sh
 #
-echo -e "[INFO]\thttp://prometheus.${DOMAIN}/service-discovery"
-echo -e "[INFO]\thttp://prometheus.${DOMAIN}/config"
+echo -e "[INFO]\thttp://prometheus.${K8S_DOMAIN}/service-discovery"
+echo -e "[INFO]\thttp://prometheus.${K8S_DOMAIN}/config"
 ```
 
 #### AWS NLB

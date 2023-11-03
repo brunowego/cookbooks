@@ -55,7 +55,7 @@ ingress:
   enabled: true
   ingressClassName: nginx
   hosts:
-  - loki.${DOMAIN}
+  - loki.${K8S_DOMAIN}
 EOF
 )
 ```
@@ -215,7 +215,7 @@ EOF
 
 ```sh
 #
-export LOKI_ADDR="http://loki.${DOMAIN}"
+export LOKI_ADDR="http://loki.${K8S_DOMAIN}"
 
 #
 loki labels

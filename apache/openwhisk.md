@@ -80,10 +80,10 @@ git clone https://github.com/apache/openwhisk-deploy-kube.git
 ```sh
 helm install openwhisk openwhisk-deploy-kube/helm/openwhisk \
   --namespace openwhisk \
-  --set whisk.ingress.apiHostName="openwhisk.${DOMAIN}" \
+  --set whisk.ingress.apiHostName="openwhisk.${K8S_DOMAIN}" \
   --set whisk.ingress.apiHostPort='443' \
   --set whisk.ingress.type='Standard' \
-  --set whisk.ingress.domain="openwhisk.${DOMAIN}" \
+  --set whisk.ingress.domain="openwhisk.${K8S_DOMAIN}" \
   --set whisk.ingress.tls.enabled=true \
   --set whisk.ingress.tls.secretenabled=true \
   --set whisk.ingress.tls.secretname='openwhisk.tls-secret' \
@@ -95,7 +95,7 @@ rm -fR openwhisk-deploy-kube
 ```
 
 ```sh
-curl -k "https://openwhisk.${DOMAIN}/v1/health-check"
+curl -k "https://openwhisk.${K8S_DOMAIN}/v1/health-check"
 ```
 
 ### Status

@@ -44,7 +44,7 @@ dashboard:
     enabled: true
     ingressClassName: nginx
     hosts:
-      - name: chaos-mesh.${DOMAIN}
+      - name: chaos-mesh.${K8S_DOMAIN}
         tls: false
 EOF
 )

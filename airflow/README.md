@@ -92,9 +92,9 @@ airflow:
 ingress:
   enabled: true
   web:
-    host: airflow.${DOMAIN}
+    host: airflow.${K8S_DOMAIN}
   flower:
-    host: flower.${DOMAIN}
+    host: flower.${K8S_DOMAIN}
 EOF
 )
 ```

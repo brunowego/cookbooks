@@ -48,7 +48,7 @@ authentik:
 ingress:
   enabled: true
   hosts:
-    - host: authentik.${DOMAIN}
+    - host: authentik.${K8S_DOMAIN}
       paths:
         - path: /
           pathType: Prefix

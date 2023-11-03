@@ -48,7 +48,7 @@ ingress:
     nginx.ingress.kubernetes.io/rewrite-target: /\$1
   ingressClassName: nginx
   host:
-    name: litmus.${DOMAIN}
+    name: litmus.${K8S_DOMAIN}
 EOF
 )
 ```

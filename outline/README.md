@@ -58,7 +58,7 @@ export GOOGLE_CLIENT_SECRET='<google-client-secret>'
 #
 helm upgrade outline truecharts/outline \
   --version 7.0.12 \
-  --set workload.main.podSpec.containers.main.env.URL="http://outline.${DOMAIN}" \
+  --set workload.main.podSpec.containers.main.env.URL="http://outline.${K8S_DOMAIN}" \
   --set workload.main.podSpec.containers.main.env.GOOGLE_CLIENT_ID="$GOOGLE_CLIENT_ID" \
   --set workload.main.podSpec.containers.main.env.GOOGLE_CLIENT_SECRET="$GOOGLE_CLIENT_SECRET" \
   --set workload.main.podSpec.containers.main.env.PDF_EXPORT_ENABLED=true
@@ -84,7 +84,7 @@ metadata:
   namespace: outline
 spec:
   rules:
-  - host: outline.${DOMAIN}
+  - host: outline.${K8S_DOMAIN}
     http:
       paths:
       - backend:

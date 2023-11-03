@@ -45,13 +45,13 @@ ingress:
   frontend:
     enabled: true
     hosts:
-    - host: flagsmith.${DOMAIN}
+    - host: flagsmith.${K8S_DOMAIN}
       paths: ['/']
 
   api:
     enabled: true
     hosts:
-    - host: api.flagsmith.${DOMAIN}
+    - host: api.flagsmith.${K8S_DOMAIN}
       paths: ['/']
 EOF
 )

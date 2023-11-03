@@ -37,8 +37,8 @@ helm repo update
 #
 cat << EOF > ~/.s3cfg
 [default]
-host_base = minio.${DOMAIN}
-host_bucket = minio.${DOMAIN}
+host_base = minio.${K8S_DOMAIN}
+host_bucket = minio.${K8S_DOMAIN}
 use_https = False
 
 access_key = minio
@@ -71,7 +71,7 @@ configuration:
     config:
       region: default
       s3ForcePathStyle: true
-      publicUrl: http://minio.${DOMAIN}
+      publicUrl: http://minio.${K8S_DOMAIN}
       s3Url: http://minio.minio.svc.cluster.local:9000
   volumeSnapshotLocation:
     config:

@@ -150,7 +150,7 @@ server:
     enabled: true
     ingressClassName: nginx
     hosts:
-    - host: vault.${DOMAIN}
+    - host: vault.${K8S_DOMAIN}
 
   affinity: null
 

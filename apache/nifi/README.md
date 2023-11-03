@@ -41,7 +41,7 @@ helm install nifi cetic/nifi \
 ingress:
   enabled: true
   hosts:
-  - nifi.${DOMAIN}
+  - nifi.${K8S_DOMAIN}
 EOF
 )
 ```

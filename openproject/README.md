@@ -116,10 +116,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-      - openproject.${DOMAIN}
+      - openproject.${K8S_DOMAIN}
     secretName: openproject.tls-secret
   rules:
-    - host: openproject.${DOMAIN}
+    - host: openproject.${K8S_DOMAIN}
       http:
         paths:
         - backend:
@@ -132,7 +132,7 @@ spec:
 EOF
 
 #
-curl -k "https://openproject.${DOMAIN}"
+curl -k "https://openproject.${K8S_DOMAIN}"
 ```
 
 <!-- ### Issues

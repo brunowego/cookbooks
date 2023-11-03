@@ -279,7 +279,7 @@ serviceDiscovery:
 
 ingress:
   enabled: true
-  hostname: keycloak.${DOMAIN}
+  hostname: keycloak.${K8S_DOMAIN}
 EOF
 )
 ```

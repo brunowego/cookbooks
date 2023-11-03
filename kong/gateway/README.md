@@ -269,7 +269,7 @@ proxy:
   ingress:
     enabled: true
     ingressClassName: nginx
-    hostname: web.${DOMAIN}
+    hostname: web.${K8S_DOMAIN}
     # annotations:
     #   cert-manager.io/cluster-issuer: letsencrypt-issuer
     # tls: kong-proxy.tls-secret

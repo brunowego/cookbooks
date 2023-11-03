@@ -111,7 +111,7 @@ global:
 client:
   ingress:
     enabled: true
-    hostname: appsmith.${DOMAIN}
+    hostname: appsmith.${K8S_DOMAIN}
     ingressClassName: nginx
 
   service:

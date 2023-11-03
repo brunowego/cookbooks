@@ -58,7 +58,7 @@ helm install lago ./ \
 redis:
   enabled: true
 
-hostname: lago.${DOMAIN}
+hostname: lago.${K8S_DOMAIN}
 EOF
 )
 

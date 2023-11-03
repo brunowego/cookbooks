@@ -29,7 +29,7 @@ helm install nextcloud stable/nextcloud \
   --namespace nextcloud \
   --set image.tag=17.0.1-fpm-alpine \
   --set ingress.enabled=true \
-  --set nextcloud.host="nextcloud.${DOMAIN}" \
+  --set nextcloud.host="nextcloud.${K8S_DOMAIN}" \
   --set nextcloud.password="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
   --set nginx.enabled=true \
   --set mariadb.enabled=true
@@ -56,7 +56,7 @@ ingress:
   tls:
     - secretName: nextcloud.tls-secret
       hosts:
-        - nextcloud.${DOMAIN}
+        - nextcloud.${K8S_DOMAIN}
 EOF
 ) <(helm get values nextcloud))
 ```
@@ -91,8 +91,8 @@ nslookup nextcloud.nextcloud.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "nextcloud.${DOMAIN}" +short
-nslookup "nextcloud.${DOMAIN}" 10.96.0.10
+dig @10.96.0.10 "nextcloud.${K8S_DOMAIN}" +short
+nslookup "nextcloud.${K8S_DOMAIN}" 10.96.0.10
 ```
 
 ### Secret

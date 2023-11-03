@@ -161,7 +161,7 @@ helm install statping statping/statping \
   -f <(cat << EOF
 ingress:
   enabled: true
-  hostname: statping.${DOMAIN}
+  hostname: statping.${K8S_DOMAIN}
 persistence:
   storageClassName: $(kubectl get storageclass -o jsonpath='{.items[0].metadata.name}')
 EOF

@@ -55,7 +55,7 @@ ingress:
   enabled: true
   className: nginx
   hosts:
-    - host: flipt.${DOMAIN}
+    - host: flipt.${K8S_DOMAIN}
       paths:
         - path: /
           pathType: ImplementationSpecific

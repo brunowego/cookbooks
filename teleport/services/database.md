@@ -82,7 +82,7 @@ kubectl rollout restart deployment teleport-cluster -n teleport
 ```sh
 #
 tsh login \
-  --proxy "teleport.${DOMAIN}:443" \
+  --proxy "teleport.${K8S_DOMAIN}:443" \
   --auth local \
   --user admin
 
@@ -158,7 +158,7 @@ sre
 ```sh
 #
 tsh login \
-  --proxy "teleport.${DOMAIN}:443" \
+  --proxy "teleport.${K8S_DOMAIN}:443" \
   --auth local \
   --user johndoe
 

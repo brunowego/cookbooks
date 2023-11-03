@@ -31,7 +31,7 @@ helm install minio minio/minio-operator \
 console:
   ingress:
     enabled: true
-    host: minio.${DOMAIN}
+    host: minio.${K8S_DOMAIN}
 
 tenants: {}
 EOF
@@ -66,7 +66,7 @@ kubectl get secret $(kubectl get serviceaccount console-sa --namespace minio -o 
 ### Ingress
 
 ```sh
-echo -e "[INFO]\thttp://minio.${DOMAIN}"
+echo -e "[INFO]\thttp://minio.${K8S_DOMAIN}"
 ```
 
 ### Deploy Tenant

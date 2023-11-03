@@ -54,7 +54,7 @@ helm install polyaxon polyaxon/polyaxon \
   --namespace polyaxon \
   --set serviceType='ClusterIP' \
   --set ingress.enabled=true \
-  --set ingress.hostName="polyaxon.${DOMAIN}" \
+  --set ingress.hostName="polyaxon.${K8S_DOMAIN}" \
   --set user.username='admin' \
   --set user.email="admin@$(minikube ip).nip.io" \
   --set user.password="$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f 1)" \
@@ -83,7 +83,7 @@ ingress:
   tls:
     - secretName: polyaxon.tls-secret
       hosts:
-        - polyaxon.${DOMAIN}
+        - polyaxon.${K8S_DOMAIN}
 EOF
 ) <(helm get values polyaxon))
 ```
@@ -120,8 +120,8 @@ nslookup polyaxon-polyaxon-api.polyaxon.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "polyaxon.${DOMAIN}" +short
-nslookup "polyaxon.${DOMAIN}" 10.96.0.10
+dig @10.96.0.10 "polyaxon.${K8S_DOMAIN}" +short
+nslookup "polyaxon.${K8S_DOMAIN}" 10.96.0.10
 ```
 
 ### Secret
@@ -247,7 +247,7 @@ polyaxon --help
 ```sh
 # Configuration
 polyaxon config set \
-  --host 'polyaxon.${DOMAIN}' \
+  --host 'polyaxon.${K8S_DOMAIN}' \
   --port '443' \
   --use_https true \
   --verify_ssl false
@@ -274,7 +274,7 @@ polyaxon init '[name]'
 polyaxon project \
   -p '[name]' \
   git \
-    --url="https://gitlab.${DOMAIN}/experiments/[name].git"
+    --url="https://gitlab.${K8S_DOMAIN}/experiments/[name].git"
     --private
 
 #

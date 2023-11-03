@@ -61,7 +61,7 @@ tsh logout
 
 #
 tsh \
-  --proxy "teleport.${DOMAIN}:443" \
+  --proxy "teleport.${K8S_DOMAIN}:443" \
   --auth github \
   login
 ```

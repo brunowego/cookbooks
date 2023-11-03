@@ -82,7 +82,7 @@ hubble:
   #   ingress:
   #     enabled: true
   #     hosts:
-  #     - hubble.${DOMAIN}
+  #     - hubble.${K8S_DOMAIN}
 EOF
 ))
 ``` -->

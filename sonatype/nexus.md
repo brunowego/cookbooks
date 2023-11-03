@@ -30,8 +30,8 @@ helm install sonatype-nexus stable/sonatype-nexus \
   --namespace sonatype-nexus \
   --set statefulset.enabled=true \
   --set nexus.service.type='ClusterIP' \
-  --set nexusProxy.env.nexusDockerHost="registry.${DOMAIN}" \
-  --set nexusProxy.env.nexusHttpHost="nexus.${DOMAIN}" \
+  --set nexusProxy.env.nexusDockerHost="registry.${K8S_DOMAIN}" \
+  --set nexusProxy.env.nexusHttpHost="nexus.${K8S_DOMAIN}" \
   --set ingress.enabled=true \
   --set ingress.annotations."kubernetes\.io/ingress\.class"=nginx \
   --set ingress.annotations."nginx\.ingress\.kubernetes\.io/proxy-body-size"=0 \
@@ -98,7 +98,7 @@ kubectl exec -it \
 
 ```sh
 kubectl create secret docker-registry nxrm-oss-regcred \
-  --docker-server='https://registry.${DOMAIN}' \
+  --docker-server='https://registry.${K8S_DOMAIN}' \
   --docker-username='admin' \
   --docker-password='[password]' \
   --docker-email='admin@xyz.tld' \
@@ -119,13 +119,13 @@ kubectl patch serviceaccount default -p '{"imagePullSecrets":[{"name":"nxrm-oss-
 ```sh
 docker login \
   -u admin \
-  registry.${DOMAIN}
+  registry.${K8S_DOMAIN}
 ```
 
 ```sh
 docker pull docker.io/library/alpine:3.9
-docker tag docker.io/library/alpine:3.9 registry.${DOMAIN}/library/alpine:3.9
-docker push registry.${DOMAIN}/library/alpine:3.9
+docker tag docker.io/library/alpine:3.9 registry.${K8S_DOMAIN}/library/alpine:3.9
+docker push registry.${K8S_DOMAIN}/library/alpine:3.9
 ```
 
 ### Issues
@@ -150,7 +150,7 @@ EOF
 #### Server Misbehaving
 
 ```log
-Error response from daemon: Get http://registry.${DOMAIN}/v2/: dial tcp: lookup registry.${DOMAIN} on [ip]:53: server misbehaving
+Error response from daemon: Get http://registry.${K8S_DOMAIN}/v2/: dial tcp: lookup registry.${K8S_DOMAIN} on [ip]:53: server misbehaving
 ```
 
 <!-- ```sh
@@ -158,13 +158,13 @@ minikube ssh -- sudo cat /etc/hosts
 ```
 
 ```sh
-minikube ssh -- "sudo /usr/bin/sh -c 'echo -e \"$(kubectl get service nginx-ingress-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}' -n nginx-ingress)\tregistry.${DOMAIN}\" >> /etc/hosts'"
+minikube ssh -- "sudo /usr/bin/sh -c 'echo -e \"$(kubectl get service nginx-ingress-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}' -n nginx-ingress)\tregistry.${K8S_DOMAIN}\" >> /etc/hosts'"
 ``` -->
 
 #### Repository Missing
 
 ```log
-Error response from daemon: Get https://registry.${DOMAIN}/v2/: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get https://registry.${K8S_DOMAIN}/v2/: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
 ```
 
 Try create a [hosted docker repository](/sonatype-nexus.md#hosted).
@@ -172,10 +172,10 @@ Try create a [hosted docker repository](/sonatype-nexus.md#hosted).
 #### Self Signed Certificate
 
 ```log
-Get https://registry.${DOMAIN}/v2/: x509: certificate signed by unknown authority
+Get https://registry.${K8S_DOMAIN}/v2/: x509: certificate signed by unknown authority
 ```
 
-Add address `registry.${DOMAIN}` to insecure registry in docker daemon.
+Add address `registry.${K8S_DOMAIN}` to insecure registry in docker daemon.
 
 ### Delete
 

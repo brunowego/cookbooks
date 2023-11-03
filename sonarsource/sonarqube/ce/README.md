@@ -226,7 +226,7 @@ elasticsearch:
 ingress:
   enabled: true
   hosts:
-    - name: sonarqube.${DOMAIN}
+    - name: sonarqube.${K8S_DOMAIN}
   ingressClassName: nginx
 
 plugins:
@@ -234,7 +234,7 @@ plugins:
     - https://github.com/sbaudoin/sonar-yaml/releases/download/v1.7.0/sonar-yaml-plugin-1.7.0.jar
 
 sonarProperties:
-  email.from: noreply@sonarqube.${DOMAIN}
+  email.from: noreply@sonarqube.${K8S_DOMAIN}
   email.smtp_host.secured: mailhog.mailhog-system.svc.cluster.local
   email.smtp_port.secured: 1025
 EOF

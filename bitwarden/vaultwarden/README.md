@@ -86,13 +86,13 @@ ingress:
   enabled: true
   className: nginx
   hosts:
-    - host: vaultwarden.${DOMAIN}
+    - host: vaultwarden.${K8S_DOMAIN}
       paths:
         - path: /
           pathType: Prefix
   tls:
     - hosts:
-        - vaultwarden.${DOMAIN}
+        - vaultwarden.${K8S_DOMAIN}
       secretName: vaultwarden.tls-secret
 
 persistence:

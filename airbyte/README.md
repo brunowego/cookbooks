@@ -64,7 +64,7 @@ metadata:
   namespace: airbyte
 spec:
   rules:
-  - host: airbyte.${DOMAIN}
+  - host: airbyte.${K8S_DOMAIN}
     http:
       paths:
       - backend:

@@ -529,7 +529,7 @@ metadata:
   name: my-ingress
 spec:
   rules:
-  - host: example.${DOMAIN}
+  - host: example.${K8S_DOMAIN}
     http:
       paths:
       - backend:

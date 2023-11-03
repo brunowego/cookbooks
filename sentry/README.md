@@ -163,7 +163,7 @@ hooks:
 ingress:
   enabled: true
   ingressClassName: nginx
-  hostname: sentry.${DOMAIN}
+  hostname: sentry.${K8S_DOMAIN}
 
 clickhouse:
   clickhouse:
@@ -256,7 +256,7 @@ kubectl logs \
 
 ```sh
 #
-echo -e "[INFO]\thttp://sentry.${DOMAIN}"
+echo -e "[INFO]\thttp://sentry.${K8S_DOMAIN}"
 ```
 
 ### Secrets

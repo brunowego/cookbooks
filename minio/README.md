@@ -58,7 +58,7 @@ global:
 
 ingress:
   enabled: true
-  hostname: minio.${DOMAIN}
+  hostname: minio.${K8S_DOMAIN}
 
 persistence:
   size: 1G

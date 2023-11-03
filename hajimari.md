@@ -42,7 +42,7 @@ ingress:
   main:
     enabled: true
     hosts:
-      - host: hajimari.${DOMAIN}
+      - host: hajimari.${K8S_DOMAIN}
         paths:
           - path: /
             pathType: Prefix

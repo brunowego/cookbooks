@@ -17,7 +17,7 @@ helm install lamp stable/lamp \
   --namespace lamp \
   --set service.type=ClusterIP \
   --set ingress.enabled=true \
-  --set ingress.domain=lamp.${DOMAIN}
+  --set ingress.domain=lamp.${K8S_DOMAIN}
 ```
 
 ### SSL
@@ -41,7 +41,7 @@ ingress:
   tls:
     - secretName: lamp.tls-secret
       hosts:
-        - lamp.${DOMAIN}
+        - lamp.${K8S_DOMAIN}
 EOF
 ) <(helm get values lamp))
 ```
@@ -76,8 +76,8 @@ nslookup lamp.lamp.svc.cluster.local 10.96.0.10
 #### ExternalDNS
 
 ```sh
-dig @10.96.0.10 "lamp.${DOMAIN}" +short
-nslookup "lamp.${DOMAIN}" 10.96.0.10
+dig @10.96.0.10 "lamp.${K8S_DOMAIN}" +short
+nslookup "lamp.${K8S_DOMAIN}" 10.96.0.10
 ```
 
 ### Secret

@@ -105,21 +105,21 @@ alertmanager:
     enabled: false
     ingressClassName: nginx
     hosts:
-      - alertmanager.${DOMAIN}
+      - alertmanager.${K8S_DOMAIN}
 
 server:
   ingress:
     enabled: false
     ingressClassName: nginx
     hosts:
-      - prometheus.${DOMAIN}
+      - prometheus.${K8S_DOMAIN}
 
 pushgateway:
   ingress:
     enabled: false
     ingressClassName: nginx
     hosts:
-      - pushgateway.${DOMAIN}
+      - pushgateway.${K8S_DOMAIN}
 EOF
 )
 ```

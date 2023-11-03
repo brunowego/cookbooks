@@ -59,7 +59,7 @@ export DOMAIN="${KUBERNETES_IP}.nip.io"
 helm install teleport-app-service teleport/teleport-kube-agent \
   --version 13.1.1 \
   -f <(cat << EOF
-proxyAddr: teleport.${DOMAIN}:443
+proxyAddr: teleport.${K8S_DOMAIN}:443
 
 roles: app
 
@@ -67,7 +67,7 @@ joinParams:
   method: kubernetes
   tokenName: kubernetes-token
 
-# kubeClusterName: teleport.${DOMAIN}
+# kubeClusterName: teleport.${K8S_DOMAIN}
 
 apps:
   - name: grafana
@@ -81,7 +81,7 @@ EOF
 kubectl rollout status statefulset teleport-app-service
 
 #
-tsh login --proxy "teleport.${DOMAIN}" --user admin --insecure
+tsh login --proxy "teleport.${K8S_DOMAIN}" --user admin --insecure
 
 #
 tctl status --insecure

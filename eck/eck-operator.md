@@ -134,7 +134,7 @@ metadata:
   name: elasticsearch
 spec:
   rules:
-  - host: elasticsearch.${DOMAIN}
+  - host: elasticsearch.${K8S_DOMAIN}
     http:
       paths:
       - backend:
@@ -179,7 +179,7 @@ metadata:
   name: kibana
 spec:
   rules:
-  - host: kibana.${DOMAIN}
+  - host: kibana.${K8S_DOMAIN}
     http:
       paths:
       - backend:

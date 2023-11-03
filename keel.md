@@ -35,7 +35,7 @@ helm install keel keel/keel \
 ingress:
   enabled: true
   hosts:
-  - host: keel.${DOMAIN}
+  - host: keel.${K8S_DOMAIN}
     paths:
     - /
 EOF

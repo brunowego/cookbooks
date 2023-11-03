@@ -35,7 +35,7 @@ spec:
   entryPoints:
   - web
   routes:
-  - match: PathPrefix(\`/dashboard\`) || Host(\`traefik.${DOMAIN}\`)
+  - match: PathPrefix(\`/dashboard\`) || Host(\`traefik.${K8S_DOMAIN}\`)
     kind: Rule
     middlewares:
     - name: traefik-basic-auth
@@ -45,5 +45,5 @@ spec:
 EOF
 
 #
-echo -e "[INFO]\thttp://traefik.${DOMAIN}"
+echo -e "[INFO]\thttp://traefik.${K8S_DOMAIN}"
 ``` -->

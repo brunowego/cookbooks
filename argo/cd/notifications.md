@@ -11,6 +11,7 @@ Problem Exists Between Keyboard and Chair (PEBKAC)
 - [Triggers and Templates Catalog](https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/catalog)
 
 <!--
+https://argocd-notifications.readthedocs.io/en/stable/services/overview/
 https://argo-cd.readthedocs.io/en/stable/user-guide/subscriptions
 https://wearenotch.com/email-notifications-and-github-webhooks-with-argo-cd/
 -->
@@ -31,6 +32,9 @@ kubectl get cm argocd-notifications-cm -o yaml
 
 #
 kubectl edit cm argocd-notifications-cm
+
+#
+stern -s 1s argo-cd-argocd
 ```
 
 ```yml

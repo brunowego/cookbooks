@@ -55,7 +55,7 @@ helm install focalboard mattermost/focalboard \
 ingress:
   enabled: true
   hosts:
-  - host: focalboard.${DOMAIN}
+  - host: focalboard.${K8S_DOMAIN}
     paths:
       - path: /
 EOF

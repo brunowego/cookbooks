@@ -117,7 +117,7 @@ metadata:
   name: redis
 spec:
   rules:
-  - host: redis.${DOMAIN}
+  - host: redis.${K8S_DOMAIN}
     http:
       paths:
       - backend:

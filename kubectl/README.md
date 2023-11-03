@@ -675,6 +675,17 @@ kubectl rollout restart deployment \
 
 ### Issues
 
+#### Missing Proper Permission
+
+```log
+WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: ~/.kube/config
+WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: ~/.kube/config
+```
+
+```sh
+chmod 600 ~/.kube/config
+```
+
 #### TBD
 
 ```log

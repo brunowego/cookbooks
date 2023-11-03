@@ -40,14 +40,17 @@ export PATH="$HOME/.tfenv/bin:$PATH"
 ### Commands
 
 ```sh
-tfenv
+tfenv -h
 ```
 
 ### Configuration
 
 ```sh
 #
-echo '1.3.5' > ./.terraform-version
+curl -s https://api.github.com/repos/hashicorp/terraform/releases/latest | grep tag_name | cut -d '"' -f 4 | tr -d 'v'
+
+#
+echo '1.6.2' > ./.terraform-version
 ```
 
 ### Usage

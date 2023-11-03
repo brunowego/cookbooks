@@ -125,7 +125,7 @@ helm install kibana elastic/kibana \
 ingress:
   enabled: true
   hosts:
-  - host: kibana.${DOMAIN}
+  - host: kibana.${K8S_DOMAIN}
     paths:
     - path: /
 EOF

@@ -267,7 +267,7 @@ metadata:
   name: rabbitmq
 spec:
   rules:
-  - host: rabbitmq.${DOMAIN}
+  - host: rabbitmq.${K8S_DOMAIN}
     http:
       paths:
       - backend:
@@ -301,7 +301,7 @@ kubectl get secret rabbitmq-default-user \
 ### Ingress
 
 ```sh
-echo -e "[INFO]\thttp://rabbitmq.${DOMAIN}"
+echo -e "[INFO]\thttp://rabbitmq.${K8S_DOMAIN}"
 ```
 
 <!-- ###

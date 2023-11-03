@@ -67,7 +67,7 @@ metadata:
   namespace: dremio
 spec:
   rules:
-  - host: dremio.${DOMAIN}
+  - host: dremio.${K8S_DOMAIN}
     http:
       paths:
       - backend:

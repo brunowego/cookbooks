@@ -61,14 +61,14 @@ ingress:
   enabled: true
   className: nginx
   hosts:
-    - host: zitadel.${DOMAIN}
+    - host: zitadel.${K8S_DOMAIN}
       paths:
         - path: /
           pathType: Prefix
 
 # env:
 #   - name: ZITADEL_EXTERNAL_DOMAIN
-#     value: zitadel.${DOMAIN}
+#     value: zitadel.${K8S_DOMAIN}
 
 cockroachdb:
   single-node: true

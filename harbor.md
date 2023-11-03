@@ -49,10 +49,10 @@ expose:
   ingress:
     className: nginx
     hosts:
-      core: core.harbor.${DOMAIN}
-      notary: notary.harbor.${DOMAIN}
+      core: core.harbor.${K8S_DOMAIN}
+      notary: notary.harbor.${K8S_DOMAIN}
 
-externalURL: http://core.harbor.${DOMAIN}
+externalURL: http://core.harbor.${K8S_DOMAIN}
 EOF
 )
 

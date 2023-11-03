@@ -135,7 +135,7 @@ metadata:
   namespace: nifi
 spec:
   rules:
-  - host: nifi.${DOMAIN}
+  - host: nifi.${K8S_DOMAIN}
     http:
       paths:
       - backend:

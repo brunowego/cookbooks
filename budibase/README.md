@@ -170,7 +170,7 @@ ingress:
   enabled: true
   className: nginx
   hosts:
-    - host: budibase.${DOMAIN}
+    - host: budibase.${K8S_DOMAIN}
       paths:
         - path: /
           pathType: Prefix

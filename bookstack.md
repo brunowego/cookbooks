@@ -17,7 +17,7 @@ helm install bookstack stable/bookstack \
   --namespace bookstack \
   --set podSecurityPolicy.enabled=true \
   --set ingress.enabled=true \
-  --set ingress.hosts={bookstack.${DOMAIN}}
+  --set ingress.hosts={bookstack.${K8S_DOMAIN}}
 ```
 
 | Login           | Password |
