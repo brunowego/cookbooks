@@ -47,12 +47,12 @@ EOF
 shellcheck --help
 ```
 
-<!-- ### Usage
+### Usage
 
 ```sh
 #
-shellcheck
-``` -->
+shellcheck <./path/to/file>.sh
+```
 
 ### Tips
 
@@ -84,6 +84,13 @@ code --install-extension timonwong.shellcheck
 
 #
 jq '."recommendations" += ["timonwong.shellcheck"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+```
+
+**Configuration:**
+
+```sh
+#
+jq '."files.associations".".shellcheckrc" |= "properties"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
 ### Issues

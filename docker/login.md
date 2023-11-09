@@ -57,5 +57,5 @@ jq 'del(.credsStore)' ~/.docker/config.json | sponge ~/.docker/config.json
 #
 docker login \
   -u <username> \
-  <hostname>:5000
+  <hostname>:<port>
 ```

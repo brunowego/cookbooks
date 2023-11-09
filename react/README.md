@@ -102,6 +102,14 @@ rafce
 
 ## Issues
 
+### TBD
+
+```log
+Type error: Type '{ children: ReactNode; }' has no properties in common with type 'IntrinsicAttributes'.
+```
+
+TODO
+
 ### Missing JSX Provider
 
 ```log

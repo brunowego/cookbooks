@@ -115,7 +115,7 @@ trunk config hide
 ```sh
 #
 trunk check -a
-trunk check -ay
+trunk check -ayv
 
 #
 trunk fmt
@@ -131,14 +131,53 @@ trunk cache prune
 trunk cache clean --all
 
 ls ~/.cache/trunk
-
-#
-trunk daemon launch
-trunk daemon status
-trunk daemon shutdown
 ```
 
 ### Tips
+
+#### Daemon Process
+
+```sh
+#
+trunk daemon launch -v
+
+#
+trunk daemon status
+
+#
+trunk daemon shutdown
+```
+
+##### Kill Process
+
+```sh
+#
+trunk daemon status
+
+#
+kill -9 <pid>
+
+#
+ps aux | grep trunk
+
+#
+pkill trunk
+```
+
+#### Linters
+
+```sh
+#
+trunk check list
+
+#
+trunk check disable checkov
+trunk check disable osv-scanner
+trunk check disable trivy
+
+#
+trunk install
+```
 
 #### Actions
 
@@ -179,13 +218,13 @@ git config --unset core.hooksPath
 
 TODO
 
-#### Stopped Trunk on VS Code
+#### Stopped Trunk on VS Code or Taking Long Time
 
 ```log
 Trunk: Stopped
 ```
 
-- Option 1: Try remove `~/.cache/trunk`
+- Option 1: Try remove `~/.cache/trunk` and `./.trunk/tools`
 - Option 2: Try remove `./.trunk` and re-initialize `trunk init`
 
 #### Missing Dependencies (FAILURES)
@@ -225,8 +264,6 @@ cp $(brew --prefix hadolint)/bin/hadolint ~/.cache/trunk/tools/hadolint/2.12.0-6
 ps aux | grep trunk
 ```
 
-## Issues
-
-### Stopped Trunk
+#### Stopped Trunk
 
 TBD

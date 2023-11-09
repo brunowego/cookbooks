@@ -17,6 +17,14 @@ pnpm deploy ./pruned \
 
 ## Issues
 
+### Missing Development Dependencies
+
+```log
+Module not found: Can't resolve '@/modules/checkout/templates'
+```
+
+Try remove `-P` from `pnpm deploy` command.
+
 ### Hoisted Node Linker
 
 ```log

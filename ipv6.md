@@ -11,9 +11,7 @@ sudo networksetup -listallhardwareports
 networksetup -getinfo '[hardware-port]' # Thunderbolt Ethernet, Wi-Fi
 
 sudo networksetup -setv6off '[hardware-port]' # Thunderbolt Ethernet, Wi-Fi
-```
 
-```sh
 #
 sudo sed -i 's/^::1/# &/' /etc/hosts
 ```

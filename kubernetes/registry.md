@@ -23,7 +23,7 @@ export GITHUB_TOKEN='<github-token>'
 #
 kubens "$K8S_NAMESPACE"
 
-kubectl create secret docker-registry ghcr-docker-registry \
+kubectl create secret docker-registry ghcr-auth \
   --docker-server=https://ghcr.io \
   --docker-username=$GITHUB_USERNAME \
   --docker-password=$GITHUB_TOKEN

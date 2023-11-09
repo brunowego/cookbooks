@@ -55,7 +55,10 @@ yarn init -yp; yarn
 
 ```sh
 #
-yarn policies set-version 3.6.3
+yarn policies set-version 3.5.1
+
+#
+yarn -v
 
 # Git ignore
 echo '/yarn-error.log' >> ~/.gitignore_global
@@ -146,6 +149,22 @@ yarn info --recursive --dependents
 -->
 
 ### Tips
+
+#### Package Manager
+
+```sh
+#
+yarn -v
+```
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "packageManager": "yarn@3.5.1"
+}
+```
 
 #### Get Binary Path
 
@@ -272,7 +291,7 @@ YARN_CHECKSUM_BEHAVIOR=update yarn install
 ```sh
 #
 yarn explain peer-requirements
-yarn explain peer-requirements [hash]
+yarn explain peer-requirements <hash>
 ```
 
 TODO

@@ -99,6 +99,21 @@ pnpx <command>
 
 ### Tips
 
+#### Package Manager
+
+```sh
+pnpm -v
+```
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "packageManager": "pnpm@8.8.0"
+}
+```
+
 #### Fix Vulnerabilities
 
 ```sh

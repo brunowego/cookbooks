@@ -29,7 +29,7 @@ docker run -d \
   -p 6379:6379 \
   --name svix-redis \
   --network workbench \
-  docker.io/library/redis:7.0.8
+  docker.io/library/redis:7.0.10
 
 #
 docker run -d \

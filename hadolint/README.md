@@ -88,15 +88,24 @@ RUN pip3 install /usr/src/packages/<package-version>.tar.gz
 https://github.com/hadolint/hadolint/issues/897
 -->
 
-<!--
-where hadolint
-
+```sh
+#
 rm ./.trunk/tools/hadolint
+```
 
-hadolint@2.12.1-beta
--->
+**Refer:** `./.trunk/trunk.yaml`
 
-TODO
+```yml
+---
+# ...
+lint:
+  enabled:
+    - hadolint@2.12.1-beta
+```
+
+```sh
+trunk install
+```
 
 #### Deprecated Maintainer
 

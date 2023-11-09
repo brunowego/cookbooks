@@ -31,7 +31,7 @@ docker run -d \
   -p 6379:6379 \
   --name medusa-redis \
   --network workbench \
-  docker.io/library/redis:7.0.8
+  docker.io/library/redis:7.0.10
 
 #
 docker run -d \
@@ -49,21 +49,16 @@ docker run -d \
 
 ## Usage
 
-**Note:** pnpm is not supported yet.
-
 ```sh
 #
-mkdir ./app && cd "$_"
-
-#
-npx create-medusa-app@latest \
+pnpm dlx create-medusa-app@latest \
   --seed \
   --db-url 'postgres://medusa:medusa@127.0.0.1:5432/medusa' \
   --no-browser \
   ./
 
 # With Next.js Starter
-npx create-medusa-app@latest \
+pnpm dlx create-medusa-app@latest \
   --seed \
   --db-url 'postgres://medusa:medusa@127.0.0.1:5432/medusa' \
   --no-browser \

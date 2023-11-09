@@ -1,6 +1,10 @@
-# Redis High Availability
+# Redis Sentinel
 
-TODO
+**Keywords:** High Availability (HA)
+
+## Links
+
+- [Docs](https://redis.io/docs/management/sentinel)
 
 <!-- ```sh
 helm install stable/redis-ha -n redis \

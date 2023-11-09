@@ -24,10 +24,6 @@ kubectl get helmrelease/<name> -n <namespace> -o yaml | \
 - [Code Repository](https://github.com/helm/helm)
 - [Main Website](https://helm.sh)
 
-## Alternatives
-
-- [Kustomize](/kustomize.md)
-
 ## References
 
 - [Artifact HUB](https://artifacthub.io/)

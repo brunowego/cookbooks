@@ -16,7 +16,7 @@ services:
     restart: unless-stopped
 
   lago-redis:
-    image: docker.io/library/redis:7.0.8-alpine
+    image: docker.io/library/redis:7.0.10-alpine
     container_name: boilerplate-lago-redis
     volumes:
       - type: volume

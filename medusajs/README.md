@@ -1,9 +1,12 @@
 # MedusaJS
 
 <!--
+https://github.com/bidah/universal-medusa
 https://github.com/adrien2p/medusa-extender
 
 https://medusajs.notion.site/Medusa-Resources-dc2626aa8abf4e97ae3a5293a3fd41b9
+
+https://www.figma.com/community/file/1192103306884293603
 -->
 
 **Keywords:** Headless Commerce
@@ -63,6 +66,8 @@ medusa user -e brunowego@gmail.com --invite
 ```sh
 #
 medusa telemetry --disable
+# or
+MEDUSA_DISABLE_TELEMETRY=true
 
 #
 medusa migrations run
@@ -76,3 +81,19 @@ medusa develop
 #
 medusa start
 ```
+
+### Issues
+
+#### TBD
+
+```log
+Error: Cannot find module 'fs-extra'
+```
+
+TODO
+
+<!-- ```sh
+npm root -g
+
+npm list -g
+``` -->

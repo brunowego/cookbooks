@@ -1,5 +1,7 @@
 # GitHub Packages Docker
 
+**Keywords:** Container Registry
+
 ## Usage
 
 ```sh

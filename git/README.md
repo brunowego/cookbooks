@@ -371,6 +371,13 @@ git config --global user.useconfigonly true
 
 ### Issues
 
+#### Taking Long Time
+
+```sh
+# Try disable Hooks
+git config --unset core.hooksPath
+```
+
 #### Credentials
 
 ```log

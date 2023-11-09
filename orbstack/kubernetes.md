@@ -11,6 +11,9 @@
 orb start k8s
 
 #
+kubectl get pods -A
+
+#
 orb restart k8s
 
 #

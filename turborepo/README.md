@@ -39,12 +39,6 @@ npm install turbo -g
 
 # Using Yarn 1.x
 yarn global add turbo
-
-# Using Yarn >= 2.x
-yarn dlx turbo
-
-# Using pnpm
-pnpm add turbo -D
 ```
 
 ### Commands

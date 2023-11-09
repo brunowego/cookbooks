@@ -12,6 +12,9 @@ man ps
 
 ```sh
 #
+ps aux | grep [text]
+
+#
 ps -eo pid,etime,comm
 
 #

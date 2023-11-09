@@ -119,6 +119,16 @@ rm ~/.zcompdump*
 
 ### Issues
 
+#### TODO
+
+```log
+Error: Operation already in progress for netlify-cli.formula
+Another active Homebrew process is already using netlify-cli.formula.
+Please wait for it to finish or terminate it to continue.
+```
+
+TODO
+
 #### Missing Directory
 
 ```log

@@ -38,12 +38,12 @@ wait-for-it
 
 ```sh
 # Darwin
-wait-for-it [hostname]:[port] \
+wait-for-it <hostname>:<port> \
   -t 0 \
   -- say done
 
 # Linux
-wait-for-it [hostname]:[port] \
+wait-for-it <hostname>:<port> \
   -t 0 \
   -- spd-say done
 ```

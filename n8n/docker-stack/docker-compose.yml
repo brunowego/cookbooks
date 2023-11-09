@@ -92,7 +92,7 @@ services:
       retries: 3
 
   redis:
-    image: docker.io/library/redis:7.0.8
+    image: docker.io/library/redis:7.0.10
     container_name: n8n-redis
     hostname: redis
     volumes:

@@ -95,17 +95,14 @@ helm repo update
 
 ```sh
 #
-kubectl create ns cert-system
-
-#
-kubens cert-system
+kubectl create ns cert-system && kubens cert-system
 
 #
 helm search repo -l jetstack/cert-manager
 
 #
 helm install cert-manager jetstack/cert-manager \
-  --version v1.12.1 \
+  --version v1.13.2 \
   -f <(cat << EOF
 installCRDs: true
 

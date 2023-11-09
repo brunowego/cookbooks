@@ -174,11 +174,8 @@ helm repo update
 
 ```sh
 #
-kubectl create ns grafana
+kubectl create ns grafana && kubens grafana
 # kubectl create ns monitoring
-
-#
-kubens grafana
 
 #
 helm search repo -l grafana/grafana

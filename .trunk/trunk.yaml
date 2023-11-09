@@ -28,6 +28,7 @@ runtimes:
     - node@16.14.2
     - python@3.10.8
 actions:
+  disabled:
   enabled:
     - trunk-cache-prune
     - trunk-check-pre-push

@@ -38,17 +38,22 @@ choco install cura-new
 
 #### Parameters
 
+| Section              | Parameter                 | Value |
+| -------------------- | ------------------------- | ----- |
+| Build Plate Adhesion | Build Plate Adhesion Type | None  |
+| Special Modes        | Arc Welder                | Yes   |
+| Support              | Generate Support          | Yes   |
+
+##### Others
+
 | Section              | Parameter                  | Value         |
 | -------------------- | -------------------------- | ------------- |
-| Build Plate Adhesion | Build Plate Adhesion Type  | None or Brim  |
 | Build Plate Adhesion | Brim Line Count            | 10            |
 | Infill               | Infill Density             | +20%          |
 | Quality              | Layer Height               | 0.16          |
 | Shell                | Wall Line Count            | 3             |
-| Special Modes        | Arc Welder                 | Yes           |
 | Special Modes        | Print Sequence             | One at a Time |
 | Speed                | Print Speed                | 35.0 mm/s     |
-| Support              | Generate Support           | Yes           |
 | Top/Bottom           | Monotonic Top/Bottom Order | Yes           |
 
 ### Tips

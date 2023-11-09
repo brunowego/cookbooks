@@ -354,6 +354,20 @@ https://www.youtube.com/watch?v=uFaMUS6Z9fI
 
 ### Issues
 
+#### TBD
+
+```log
+│ dial tcp: lookup argocd.k8s.orb.local on [2804:2994:77::10]:53: no such host
+│ dial tcp: lookup argocd.k8s.orb.local on 8.8.8.8:53: no such host
+```
+
+<!--
+Try disable ipv6
+Try add address to /etc/hosts
+-->
+
+TODO
+
 #### Missing Upgrade
 
 ```log

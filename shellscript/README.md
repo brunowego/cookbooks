@@ -1,4 +1,4 @@
-# Shell
+# Shell Script
 
 <!--
 https://app.pluralsight.com/paths/skill/shell-scripting-with-bash-and-z-shell
@@ -68,10 +68,10 @@ history | less
 history 100
 
 # Run commando from line number
-![line-number]
+!<line-number>
 
 # Invoke last command run
-![command]
+!<command>
 ```
 
 ### Print Currently Filename

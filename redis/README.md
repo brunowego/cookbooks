@@ -43,7 +43,7 @@ docker run -d \
   -p 6379:6379 \
   --name redis \
   --network workbench \
-  docker.io/library/redis:7.0.8
+  docker.io/library/redis:7.0.10
 
 # With auth
 docker run -d \
@@ -55,7 +55,7 @@ docker run -d \
   --name redis \
   --network workbench \
   --entrypoint /bin/sh \
-  docker.io/library/redis:7.0.8 -c 'redis-server --requirepass ${REDIS_PASSWORD}'
+  docker.io/library/redis:7.0.10 -c 'redis-server --requirepass ${REDIS_PASSWORD}'
 ```
 
 <!--
@@ -106,7 +106,7 @@ version: '3'
 
 services:
   redis:
-    image: docker.io/library/redis:7.0.8-alpine
+    image: docker.io/library/redis:7.0.10-alpine
     volumes:
       - type: volume
         source: redis-data
