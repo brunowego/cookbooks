@@ -27,6 +27,7 @@ https://linkedin.com/learning/design-for-additive-manufacturing-fdm/welcome
 ## 3D Designs
 
 - [Cults](https://cults3d.com)
+- [STLFilter](https://stlfinder.com)
 - [Thingiverse](https://thingiverse.com)
 - [YouMagine](https://youmagine.com)
 

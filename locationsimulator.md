@@ -1,5 +1,9 @@
 # LocationSimulator
 
+<!--
+https://www.longitude-latitude-maps.com/city/28_30,Anapolis,Goias,Brazil
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/Schlaubischlump/LocationSimulator)
@@ -25,6 +29,7 @@ brew install locationsimulator
 
 #### Locations
 
-| Location   | Latitude     | Longitude    |
-| ---------- | ------------ | ------------ |
-| `Brasília` | `-15.790669` | `-47.892967` |
+| Location        | Latitude     | Longitude    |
+| --------------- | ------------ | ------------ |
+| `Brasília / DF` | `-15.790669` | `-47.892967` |
+| `Anápolis / GO` | `-16.328703` | `-48.953397` |

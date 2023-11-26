@@ -43,8 +43,6 @@ https://docs.google.com/spreadsheets/d/10U6a5VhymvDf0UPBr0sZPfYXVkLyexHXjMf1LUia
 -->
 
 <!--
-
-
 https://listagreen.com.br
 -->
 

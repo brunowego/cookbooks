@@ -1,6 +1,39 @@
 # Construction
 
 <!--
+flange
+
+cavar baldrame
+
+Pá Cortadeira Quadrada Vanga com Cabo Y
+Picareta Chibanca com Cabo de Madeira de 90cm
+
+20 (largura) x 30 (altura)
+
+Abrir Vala
+
+https://www.youtube.com/watch?v=RxMgI3JQIWY
+
+Martelete Dewalt 30 kg
+
+Outdoor String Light
+
+bulb holder E27
+
+https://www.youtube.com/watch?v=qbghCTpbrSE
+
+Waterproof Lamp Holder
+
+outdoor 2-way lamp holder
+
+Lamp Holder Flat Cable
+
+Eiva-2, 2-way outdoor lamp holder E27 and IP65 rating
+
+https://kolorowekable.pl/en/eiva-the-first-do-it-yourself-ip65-outdoor-lighting-system/5261-eiva-2-2-way-outdoor-lamp-holder-e27-and-ip65-rating-black-creative-cables-8057730960403.html
+-->
+
+<!--
 https://www.nelsonkon.com.br/casa-na-praia-brava/
 
 https://www.arquiteturasustentavel.arq.br/curso-tecnico-em-tijolo-ecologico/?src=yt0405

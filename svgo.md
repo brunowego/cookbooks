@@ -47,7 +47,6 @@ module.exports = {
 svgo ./
 ```
 
-
 ## Tips
 
 ### Trunk Ignore

@@ -28,3 +28,26 @@ Our systems are a bit busy at the moment, please take a break and try again soon
 ```
 
 Try use a VPN, with US location, to access the website.
+
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew tap appleboy/tap
+brew install codegpt
+```
+
+### Commands
+
+```sh
+codegpt -h
+```
+
+### Configuration
+
+```sh
+codegpt config set openai.api_key <sk-xxxxxxx>
+```

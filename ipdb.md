@@ -1,6 +1,10 @@
-# ipdb
+# IPython-enabled Python Debugger (ipdb)
 
-**Keywords:** Python Debugger
+**Keywords:** Python Debugger, REPL-style Debugger
+
+## Links
+
+- [Code Repository](https://github.com/gotcha/ipdb)
 
 ## Library
 

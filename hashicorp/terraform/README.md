@@ -244,6 +244,7 @@ terraform show
 
 #
 terraform output
+terraform output <name>
 
 #
 terraform destroy
@@ -313,6 +314,8 @@ terraform destroy \
 TF_LOG=trace \
   terraform <command>
 ```
+
+<!-- export TF_LOG='DEBUG' -->
 
 #### Environment Variables
 

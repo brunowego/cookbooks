@@ -114,6 +114,19 @@ EOF
 
 ### Issues
 
+#### TBD
+
+```log
+TSError: ⨯ Unable to compile TypeScript:
+error TS6053: File '@acme/tsconfig/base.json' not found.
+```
+
+<!--
+https://github.com/TypeStrong/ts-node/issues/2076
+-->
+
+Downgrade `typescript` package from version `5.3.x` to `5.2.2`.
+
 #### Not Assignable to Type String
 
 ```log

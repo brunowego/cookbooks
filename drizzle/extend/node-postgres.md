@@ -33,12 +33,16 @@ const db = drizzle(client, {
 export { schema, db }
 ```
 
-<!--
-Error: The edge runtime does not support Node.js 'crypto' module.
--->
+## Issues
+
+### TBD
+
+```log
+The edge runtime does not support Node.js 'crypto' module.
+```
 
 <!--
-ModuleBuildError: Module build failed: UnhandledSchemeError: Reading from "cloudflare:sockets" is not handled by plugins (Unhandled scheme).
-
-Downgrade postgres
+https://github.com/vvo/iron-session/issues/543
 -->
+
+TODO

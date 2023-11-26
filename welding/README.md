@@ -1,5 +1,9 @@
 # Welding
 
+<!--
+https://etsy.com/shop/madebythemetalist/?etsrc=sdt
+-->
+
 TODO
 
 <!--
@@ -14,4 +18,27 @@ https://www.amazon.com/gp/product/B00X2APO0G/ref=as_li_tl?ie=UTF8&camp=1789&crea
 https://thefabricatorseries.com/shop/restroom-sign-dxf-file
 https://www.amazon.com/s?k=blue+demon+welding&crid=1ARPRFPYG321G&sprefix=blue+daemon+%2Caps%2C290&ref=nb_sb_ss_sc_7_12
 https://www.youtube.com/watch?v=U2fwGGeyfKc&feature=youtu.be
+-->
+
+<!--
+Portão
+
+Metalon chapa 18 / 1.2mm
+
+https://www.youtube.com/watch?v=uHRJVJkVmuk
+-->
+
+<!--
+Electrode / MMA (Stick)
+Metal Inert Gas (MIG) / Metal Active Gas (MAG)
+Tungsten Inert Gas (TIG) / Lift TIG
+-->
+
+<!--
+Coco de pombo
+-->
+
+<!--
+Boxer Duramax 285
+ESAB LHN 242i
 -->

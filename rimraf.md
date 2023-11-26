@@ -29,7 +29,7 @@ pnpm add rimraf -D
 {
   // ...
   "scripts": {
-    "clean": "rimraf ./dist ./coverage"
+    "clean": "rimraf ./{dist,coverage}"
     // ...
   }
 }

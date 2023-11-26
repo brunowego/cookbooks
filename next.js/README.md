@@ -220,14 +220,6 @@ echo '/out' >> ./.gitignore
 
 ### Issues
 
-#### TBD
-
-```log
-Error: The edge runtime does not support Node.js 'crypto' module.
-```
-
-TODO
-
 #### Browser Extension Issue
 
 ```log

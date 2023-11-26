@@ -14,3 +14,28 @@
 ```sh
 brew install terrascan
 ```
+
+### Commands
+
+```sh
+terrascan -h
+```
+
+### Usage
+
+```sh
+#
+terrascan init
+
+#
+terrascan scan
+```
+
+<!--
+.terrascan.toml
+
+[rules]
+    skip-rules = [
+        "AC_DOCKER_0041"
+    ]
+-->
