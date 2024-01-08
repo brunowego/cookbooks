@@ -18,6 +18,8 @@ https://github.com/dichioniccolo/bloghub
 https://github.com/uninbox/UnInbox
 -->
 
+**Keywords:** TypeScript ORM
+
 ## Links
 
 - [Code Repository](https://github.com/drizzle-team/drizzle-orm)

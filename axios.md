@@ -1,18 +1,21 @@
-# axios
+# Axios
 
 ## References
 
-- [Example](https://github.com/axios/axios#example)
+- [Code Repository](https://github.com/axios/axios)
+- [Main Website](https://axios-http.com)
+- [Docs](https://axios-http.com/docs/intro)
 
 ## Library
 
 ### Installation
 
-#### NPM
-
 ```sh
-#
+# Using NPM
 npm install axios
+
+# Using pnpm
+pnpm install axios
 ```
 
 ### REPL

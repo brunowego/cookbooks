@@ -1,6 +1,5 @@
 # Intercom
 
-## Alternatives
+**Keywords:** Customer Service
 
-- [Acquire](https://acquire.io)
-- [Zendesk](https://zendesk.com)
+TODO

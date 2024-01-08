@@ -239,7 +239,9 @@ kubectl delete ns airflow \
   --force
 ```
 
-## Kubectl
+## Kubernetes
+
+### Running
 
 ```sh
 kubectl run -it \

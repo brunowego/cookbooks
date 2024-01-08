@@ -9,12 +9,22 @@
   - [What is a GTIN?](https://gs1us.org/upcs-barcodes-prefixes/what-is-a-gtin)
 - Developer
   - [Códigos de Status](https://apicnp.gs1br.org/api-portal/node/5)
+- Tools
+  - [Search by GTIN](https://gepir.gs1.org/index.php/search-by-gtin)
+
+<!--
+GS1 US https://store.unspsc.org
+-->
 
 <!--
 https://apicnp.gs1br.org/api-portal/node/4
 https://apicnp.gs1br.org/api-portal/node/7
 https://apicnp.gs1br.org/api-portal/myapps/1
 -->
+
+## Glossary
+
+- United Nations Standard Products and Services Code (UNSPSC)
 
 ## Specific Numbers / Identifiers
 

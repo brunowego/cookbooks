@@ -1,6 +1,6 @@
 # AWS RDS Aurora
 
-**Keywords:** Relational DB
+**Keywords:** Serverless MySQL, Serverless PostgreSQL, Relational DB
 
 <!--
 https://www.stefanproell.at/posts/2020-08-18-ubuntu20-04-01-mysql5.6/

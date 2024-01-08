@@ -1,12 +1,18 @@
 # Nodemon
 
-## CLI
+**Keywords:** Local Development Server
+
+## Links
+
+- [Code Repository](https://github.com/remy/nodemon)
+- [Main Website](https://nodemon.io)
+
+## Library
 
 ### Installation
 
-#### NPM
-
 ```sh
+# Using NPM
 npm install nodemon -D
 ```
 

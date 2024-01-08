@@ -31,6 +31,47 @@
 }
 -->
 
+<!--
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "types": ["vitest/globals"],
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "playwright.config.ts",
+    "tailwind.config.ts"
+  ],
+  "exclude": ["dist", "node_modules"]
+}
+-->
+
 ### Absolute Import
 
 **Refer:** `./tsconfig.json`
@@ -76,6 +117,22 @@ pnpm add ts-node tsconfig-paths -D
 
 ## Issues
 
+### Strict Null Checks
+
+```log
+'<attr>' is possibly 'undefined'. ts(18048)
+```
+
+```json
+{
+  // ...
+  "compilerOptions": {
+    "strictNullChecks": false
+  }
+  // ...
+}
+```
+
 ### TBD
 
 ```log
@@ -84,10 +141,17 @@ ModuleNotFoundError: Module not found: Error: Can't resolve '@/components/Layout
 
 TODO
 
-### TBD
+### Missing Inputs
 
 ```log
-No inputs were found in config file '/apps/web/tsconfig.json'. Specified 'include' paths were '["../../packages/acme-tsconfig/./next-env.d.ts","../../packages/acme-tsconfig/./**/*.ts","../../packages/acme-tsconfig/./**/*.tsx"]' and 'exclude' paths were '["../../packages/acme-tsconfig/./.yarn"]'.ts
+No inputs were found in config file '/path/to/tsconfig.json'. Specified 'include' paths were '["..."]' and 'exclude' paths were '["..."]'.ts
 ```
 
-TODO
+There is a missing reference to at least one TS file:
+
+```json
+{
+  // ...
+  "include": ["path/to/*.ts"]
+}
+```

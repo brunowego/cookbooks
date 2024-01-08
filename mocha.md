@@ -9,5 +9,5 @@ chai
 ### Usage
 
 ```sh
-mocha --recursive ./tests/unit/*.spec.js
+mocha --recursive ./test/unit/*.spec.js
 ```

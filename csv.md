@@ -7,6 +7,7 @@ https://flatfile.com
 ## Tools
 
 - [CSV Lint](https://csvlint.com/online-validator)
+- [JSON to CSV](https://json.diffbot.com)
 
 ## Tips
 

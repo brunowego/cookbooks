@@ -4,12 +4,6 @@
 
 ### Installation
 
-#### MAS
-
-```sh
-mas install 1085114709
-```
-
 #### Homebrew
 
 ```sh

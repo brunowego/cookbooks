@@ -6,8 +6,17 @@ https://linkedin.com/help/linkedin/answer/a563309/image-specifications-for-your-
 
 <!--
 kubernetes AND devops AND aws
+devops AND NOT crossover AND NOT EPAM
 
 Latin America
+
+First Engineer
+
+Quotes [""]
+Parentheses [()]
+NOT
+AND
+OR
 -->
 
 ## Links
@@ -16,6 +25,7 @@ Latin America
 - [Social Selling Index (SSI)](https://linkedin.com/sales/ssi)
 - My Network
   - [Invitation Sent](https://linkedin.com/mynetwork/invitation-manager/sent/)
+- [Manage Job Alerts](https://linkedin.com/jobs/jam/)
 
 ## Tips
 

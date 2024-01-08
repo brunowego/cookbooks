@@ -15,7 +15,7 @@
 - [Focalboard](/focalboard.md)
 - [MediaWiki](/mediawiki.md)
 - [Obsidian](/obsidian.md)
-- [Outline](/outline/README.md)
+- [Outline](/outline/README.md) 🌟
 
 <!--
 https://github.com/logseq/logseq

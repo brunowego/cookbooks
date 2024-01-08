@@ -14,9 +14,7 @@ packages
 tooling
 -->
 
-## Alternatives
-
-- [Monorepo Tools](/monorepo.md#tools)
+**Keywords:** Monorepo
 
 ## Links
 
@@ -58,11 +56,11 @@ turbo -h
 
 ```sh
 #
-turbo login
+npx turbo login
 
 #
-turbo link
-turbo unlink
+npx turbo link
+npx turbo unlink
 
 #
 turbo run build
@@ -72,6 +70,31 @@ turbo run build --scope <@package/name>
 ```
 
 ### Issues
+
+#### Failed to Contact Turbo Daemon
+
+```log
+WARNING  Failed to check if we can skip restoring outputs for @acme/api#build: GrpcFailure(DeadlineExceeded). Proceeding to check cache
+
+WARNING  Failed to mark outputs as cached for @acme/api#build: Error with daemon: server is unavailable
+```
+
+<!--
+https://github.com/vercel/turbo/issues/2034
+https://github.com/vercel/turbo/issues/2790
+https://github.com/vercel/turbo/issues/3800
+https://github.com/vercel/turbo/issues/4608
+-->
+
+TODO
+
+```sh
+#
+./node_modules/.bin/turbo daemon status
+
+#
+./node_modules/.bin/turbo daemon start
+```
 
 #### Unsupported Lockfile Version
 

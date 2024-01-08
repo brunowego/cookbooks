@@ -221,6 +221,19 @@ EOF
 
 ### Issues
 
+#### Link Package Binaries
+
+```log
+sh: 1: <cmd>: not found
+```
+
+```sh
+#
+npm link
+# Or using pnpm
+pnpm link -C ./path/to/package
+```
+
 #### Write Permissions
 
 Try use [Node version management (n)](/n.md) instead.

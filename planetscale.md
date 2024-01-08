@@ -5,7 +5,7 @@ https://github.com/planetscale/integrations/tree/main/vercel/nextjs-example
 https://github.com/planetscale/beam
 -->
 
-**Keywords:** Serverless MySQL Platform
+**Keywords:** Serverless MySQL
 
 ## Links
 

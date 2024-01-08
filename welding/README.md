@@ -1,10 +1,12 @@
 # Welding
 
+## Courses
+
+- [Curso de Serralheiro 38](https://youtube.com/watch?v=9m1XeEhkiV8) (Portuguese)
+
 <!--
 https://etsy.com/shop/madebythemetalist/?etsrc=sdt
 -->
-
-TODO
 
 <!--
 https://www.swagoffroad.com/SWAG-V40-Portaband-Table_p_63.html

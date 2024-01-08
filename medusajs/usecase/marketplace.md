@@ -1,5 +1,11 @@
 # Marketplace Use Case
 
+<!--
+https://github.com/extropysk/marketplace
+https://github.com/Slaknoah/medusa-marketplace
+https://github.com/shavidze/medusa-api
+-->
+
 ## Links
 
 - [Tutorial]

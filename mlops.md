@@ -31,7 +31,7 @@ https://github.com/jina-ai/jina
 ### Open Source
 
 - [Kubeflow](/kubeflow.md)
-- [MLflow](/mlflow.md)
+- [MLflow](/mlflow.md) 🌟
 - [Polyaxon](/polyaxon.md)
 
 <!--

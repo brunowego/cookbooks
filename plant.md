@@ -7,6 +7,19 @@ Esperar 24 horas antes de plantar
 Origin: Antilles / America Tropical
 -->
 
+<!--
+Flamboyant / Delonix Regia / Madagascar
+70 cm de cova
+-->
+
+<!--
+Banana
+
+https://www.calendarr.com/brasil/lua-hoje/
+
+https://www.youtube.com/watch?v=yJqVUID_ALw
+-->
+
 ## Grafting (Enxerto)
 
 TODO
@@ -42,3 +55,10 @@ TODO
 ## Cutting (Estaquia)
 
 TODO
+
+<!--
+Peumus Boldus (Boldo-do-Chile, Bold-Verdadeiro)
+Vernonia Condensata (Boldo-Baiano, Boldo-Goiano, Assa-Peixe, Boldo-Japonês)
+Plectranthus Barbatus (Falso-Boldo, Boldo-Brasileiro, Boldo-do-Reino, Boldo-de-Jardim, Folha-de-Oxalá)
+Plectranthus Ornatus (Boldo-Chinês, Boldo-Rasteiro, Boldo-Miúdo, Boldinho)
+-->

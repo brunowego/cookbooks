@@ -1,5 +1,11 @@
 # eCommerce
 
+<!--
+https://github.com/openshiporg/openfront
+
+https://redq.io/landings/pickbazar
+-->
+
 ## Terms
 
 - Dropshipping
@@ -26,7 +32,7 @@ https://castleit.io
 
 - [WooCommerce](https://woocommerce.com)
 - [Evershop](https://github.com/evershopcommerce/evershop)
-- [Magento](https://magento.com)
+- [Magento](/magento/README.md)
 - [PrestaShop](https://prestashop.com)
 
 <!--

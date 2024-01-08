@@ -156,6 +156,85 @@ brew install prettier
 
 ## Issues
 
+### Missing Require Resolve
+
+```log
+Instead change the require of /absolute/path/to/node_modules/.pnpm/prettier-plugin-tailwindcss@0.5.11_prettier@3.1.1/node_modules/prettier-plugin-tailwindcss/dist/index.mjs to a dynamic import() which is available in all CommonJS modules.
+```
+
+**Refer:** `./prettier.config.cjs`
+
+```cjs
+/**
+ * @type { import('prettier').Options }
+ */
+const prettierConfig = {
+  // ...
+  plugins: [require.resolve('prettier-plugin-tailwindcss')],
+}
+
+module.exports = prettierConfig
+```
+
+### Missing Import Order Parser Plugins
+
+```log
+error  Parsing error:   prettier/prettier
+```
+
+```cjs
+/**
+ * @type { import('prettier').Options }
+ */
+const prettierConfig = {
+  // ...
+  importOrderParserPlugins: ['decorators-legacy', 'typescript'],
+  // importOrderParserPlugins: ['jsx', 'typescript'],
+}
+
+module.exports = prettierConfig
+```
+
+### Max Line Length Conflict
+
+```log
+error  Replace `<...>` with `<...>`  prettier/prettier
+```
+
+Try remove `max_line_length = 100` from `.editorconfig`.
+
+### Missing Import Order Parser JSX Plugin
+
+```log
+[error] ./path/to/file.tsx: SyntaxError: Unexpected token, expected "," (18:10)
+```
+
+Problem with `@trivago/prettier-plugin-sort-imports` plugin.
+
+```cjs
+/**
+ * @type { import('prettier').Options }
+ */
+const prettierConfig = {
+  // ...
+  importOrderParserPlugins: ['...', 'jsx'],
+}
+
+module.exports = prettierConfig
+```
+
+<!--
+overrides: [
+  {
+    files: ['*.ts', '*.tsx'],
+    options: {
+      parser: 'typescript',
+      importOrderParserPlugins: ['decorators-legacy', 'typescript', 'jsx'],
+    },
+  },
+],
+-->
+
 ### Missing Import Order Parser Plugins
 
 ```log
@@ -170,7 +249,7 @@ SyntaxError: This experimental syntax requires enabling one of the following par
  */
 const prettierConfig = {
   // ...
-  importOrderParserPlugins: ['typescript', 'decorators-legacy'],
+  importOrderParserPlugins: ['decorators-legacy', 'typescript'],
 }
 
 module.exports = prettierConfig

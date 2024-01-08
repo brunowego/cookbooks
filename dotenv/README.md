@@ -28,3 +28,10 @@ code --install-extension mikestead.dotenv
 #
 jq '."recommendations" += ["mikestead.dotenv"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
+
+**Configuration:**
+
+```sh
+#
+jq '."files.associations"."*.env*" |= "properties"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+```

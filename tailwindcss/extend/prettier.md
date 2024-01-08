@@ -31,8 +31,12 @@ pnpm add prettier prettier-plugin-tailwindcss -D
  */
 const prettierConfig = {
   // ...require('../../prettier.config.cjs'),
-  plugins: [require('prettier-plugin-tailwindcss')],
-  tailwindConfig: './tailwind.config.cjs',
+  plugins: [
+    // ...
+    'prettier-plugin-tailwindcss',
+  ],
+  tailwindConfig: './tailwind.config.ts',
+  // tailwindFunctions: ['cva'],
 }
 
 module.exports = prettierConfig

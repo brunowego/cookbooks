@@ -1,5 +1,7 @@
 # HTTPie
 
+**Keywords:** API Testing Client
+
 ## Links
 
 - [Main Website](https://httpie.io)

@@ -114,6 +114,14 @@ EOF
 
 ### Issues
 
+#### Missing TSConfig File
+
+```log
+error TS6053: File '@acme/tsconfig/base.json' not found.
+```
+
+Rollback `typescript` to version `~5.2.2`.
+
 #### TBD
 
 ```log
@@ -180,4 +188,10 @@ jq '."[typescript]"."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD
 "eslint.nodePath": "./.yarn/sdks",
 "typescript.tsdk": "./.yarn/sdks/typescript/lib",
 "typescript.enablePromptUseWorkspaceTsdk": true
+-->
+
+<!--
+src/types.d.ts
+
+declare module 'konsta/config'
 -->

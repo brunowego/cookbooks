@@ -45,15 +45,21 @@ Single sign-on (SSO) is an authentication scheme that allows a user to log in wi
 
 ## Implementations
 
+### Managed
+
 - [Auth0](/auth0.md)
-- [Authelia](/authelia.md)
 - [Authentik](/authentik/README.md)
 - [Cisco Duo](https://duo.com/docs/sso)
 - [ForgeRock Identity Management (IDM)](/forgerock/idm.md)
-- [Keycloak](/keycloak/README.md)
 - [Microsoft Active Directory Federation Services (ADFS)](/azure/services/adfs.md)
 - [Microsoft Azure Active Directory (AD)](/azure/services/ad.md)
 - [Okta](/okta.md)
+
+### Open Source
+
+- [Authelia](/authelia.md)
+- [Dex](/dex/README.md) 🌟
+- [Keycloak](/keycloak/README.md)
 - [Ory Hydra](/ory/hydra.md)
 
 <!--

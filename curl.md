@@ -4,7 +4,7 @@
 
 - [Everything cURL](https://everything.curl.dev)
 
-## Kubectl
+## Kubernetes
 
 ### Running
 

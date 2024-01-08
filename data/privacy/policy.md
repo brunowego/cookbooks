@@ -15,3 +15,7 @@
 - ISO 27701
 - Microsoft SSPA
 - US Data Privacy (USDP)
+
+<!--
+https://linkedin.com/company/incognia
+-->

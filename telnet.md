@@ -72,7 +72,7 @@ docker run -it --rm \
 docker rm -f telnet
 ```
 
-## Kubectl
+## Kubernetes
 
 ### Running
 

@@ -40,13 +40,37 @@ email export -d ./src/templates
 
 ### Issues
 
+#### TBD
+
+```log
+Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+```
+
+TODO
+
+#### TBD
+
+```log
+Attempted import error: '../../emails/authentication-magic-link.tsx' does not contain a default export (imported as 'Mail').
+```
+
+TODO
+
+#### TBD
+
+```log
+✘ [ERROR] Could not resolve "react/jsx-runtime"
+```
+
+TBD
+
 #### Command Not Found
 
 ```log
 /bin/sh: next: command not found
 ```
 
-**Refer:** `./pnpm-workspace.yaml`
+<!-- **Refer:** `./pnpm-workspace.yaml`
 
 ```yml
 ---
@@ -54,4 +78,13 @@ packages:
   - ./apps/*
   - ./packages/*
   - ./packages/email/.react-email
+``` -->
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "workspaces": [".react-email"]
+}
 ```

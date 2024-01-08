@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-- [Mock Service Worker (MSW)](/msw.md#library)
+- [Mock Service Worker (MSW)](/msw/README.md#library)
 
 ## Examples
 

@@ -16,7 +16,8 @@ https://monorepo.tools/
 
 ## Tools
 
-- [Yarn Workspaces](/yarn/yarn-workspaces.md)
-- [Performant NPM (pnpm) Workspaces](/pnpm/pnpm-workspaces.md)
-- [Turborepo](/turborepo/README.md)
 - [Lerna](/lerna.md)
+- [NX](/nx.md)
+- [Performant NPM (pnpm) Workspaces](/pnpm/pnpm-workspaces.md)
+- [Turborepo](/turborepo/README.md) 🌟
+- [Yarn Workspaces](/yarn/yarn-workspaces.md)

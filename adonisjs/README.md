@@ -4,6 +4,8 @@
 https://github.com/CesarJrFontalvo/buen-comienzo-adonis-5/blob/main/Dockerfile
 -->
 
+**Keywords** Web Framework
+
 ## Links
 
 - [Code Repository](https://github.com/adonisjs/core)
@@ -53,6 +55,8 @@ node ace serve --watch
 ```
 
 <!--
+node ace bull:listen
+
 node ace dump:rcfile
 
 yarn add @adonisjs/lucid

@@ -25,9 +25,12 @@ brew install bun
 bun -h
 ```
 
-<!-- ### Usage
+### Usage
 
 ```sh
 #
 bun install
-``` -->
+
+#
+bun dev
+```

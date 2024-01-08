@@ -8,13 +8,14 @@ http://help.market.com.br/frente/index.html?permitir-ping-windows-10.htm
 
 - [Windows 7 ISO](https://microsoft.com/en-us/software-download/windows8ISO)
 - [Windows 10 ISO](https://microsoft.com/en-us/software-download/windows10ISO)
+- [Windows 11 ISO](https://microsoft.com/en-us/software-download/windows11)
 - [Windows Subsystem Linux (WSL)](/microsoft/windows/wsl.md)
 
 ## Docker
 
 ### Dependencies
 
-Docker running on Windows.
+- Docker running on Windows
 
 ### Network
 

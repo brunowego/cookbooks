@@ -54,8 +54,15 @@ jq ".credsStore |= \"osxkeychain\"" ~/.docker/config.json | sponge ~/.docker/con
 #
 jq 'del(.credsStore)' ~/.docker/config.json | sponge ~/.docker/config.json
 
-#
+# Private Registry
 docker login \
   -u <username> \
   <hostname>:<port>
+
+# GitHub
+export GITHUB_USERNAME='brunowego'
+
+docker login \
+  -u "$GITHUB_USERNAME" \
+  ghcr.io
 ```

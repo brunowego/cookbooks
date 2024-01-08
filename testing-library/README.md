@@ -1,10 +1,10 @@
 # Testing Library
 
 <!--
-https://www.youtube.com/watch?v=SMLG9TBh2OI
+https://github.com/rocketseat-education/pizzashop-web/blob/main/src/components/pagination.spec.tsx
 -->
 
 ## Links
 
-- [Code Repository](https://github.com/testing-library/react-testing-library)
+- [Org. Repository](https://github.com/testing-library)
 - [Main Website](https://testing-library.com)

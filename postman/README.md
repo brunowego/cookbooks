@@ -11,7 +11,7 @@ https://postman.com/<name>
 https://<name>.postman.co/settings/team/custom-domains
 -->
 
-**Keywords:** API Platform
+**Keywords:** API Testing Client
 
 ## Links
 

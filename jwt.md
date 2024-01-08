@@ -58,3 +58,7 @@ Signature
 
 }
 -->
+
+<!--
+JWT_SECRET_KEY=S3cr3t_K@Key
+-->

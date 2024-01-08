@@ -18,6 +18,13 @@ https://tailwindshades.com/
 - [Hue](https://en.wikipedia.org/wiki/Hue)
 - [Open Color](https://yeun.github.io/open-color/)
 
+## Types
+
+- RGB
+- HSL
+- HEX
+- CMYK
+
 ## Tools
 
 - Sip

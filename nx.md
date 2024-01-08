@@ -1,6 +1,6 @@
 # Nx
 
-**Keywords:** Build System
+**Keywords:** Monorepo
 
 ## Links
 

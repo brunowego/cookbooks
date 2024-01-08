@@ -2,60 +2,60 @@
 
 ## Tips
 
-### Delete Environment
+### Delete Environment (Deployments)
 
 ```sh
 #
-export USER='<github-user>'
-export TOKEN='<github-token>'
-export OWNER='<github-owner>'
-export REPO='<github-repo>'
+export GITHUB_USER='<github-user>'
+export GITHUB_TOKEN='<github-token>'
+export GITHUB_OWNER='<github-owner>'
+export GITHUB_REPO='<github-repo>'
 ```
 
 #### Individual
 
 ```sh
 #
-curl -su "$USER:$TOKEN" "https://api.github.com/repos/$OWNER/$REPO/deployments" | jq .
+curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments" | jq '.[].id'
 
 #
-export DEPLOYMENT_ID=1072201471
+export DEPLOYMENT_ID=1274134670
 
 #
 curl \
-  -u "$USER:$TOKEN" \
+  -u "$GITHUB_USER:$GITHUB_TOKEN" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/vnd.github.ant-man-preview+json" \
   -d '{"state": "inactive"}' \
-  "https://api.github.com/repos/$OWNER/$REPO/deployments/$DEPLOYMENT_ID/statuses"
+  "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments/$DEPLOYMENT_ID/statuses"
 
 #
 curl \
-  -u "$USER:$TOKEN" \
+  -u "$GITHUB_USER:$GITHUB_TOKEN" \
   -X DELETE \
-  "https://api.github.com/repos/$OWNER/$REPO/deployments/$DEPLOYMENT_ID"
+  "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments/$DEPLOYMENT_ID"
 ```
 
 #### Multiple
 
 ```sh
 #
-curl -su "$USER:$TOKEN" "https://api.github.com/repos/$OWNER/$REPO/deployments" | \
+curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments" | \
   for DEPLOYMENT_ID in `jq '.[].id'`; \
     do curl \
-      -u "$USER:$TOKEN" \
+      -u "$GITHUB_USER:$GITHUB_TOKEN" \
       -X POST \
       -H "Content-Type: application/json" \
       -H "Accept: application/vnd.github.ant-man-preview+json" \
       -d '{"state": "inactive"}' \
-      "https://api.github.com/repos/$OWNER/$REPO/deployments/$DEPLOYMENT_ID/statuses" ; done
+      "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments/$DEPLOYMENT_ID/statuses" ; done
 
 #
-curl -su "$USER:$TOKEN" "https://api.github.com/repos/$OWNER/$REPO/deployments" | \
+curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments" | \
   for DEPLOYMENT_ID in `jq '.[].id'`; \
     do curl \
-      -u "$USER:$TOKEN" \
+      -u "$GITHUB_USER:$GITHUB_TOKEN" \
       -X DELETE \
-      "https://api.github.com/repos/$OWNER/$REPO/deployments/$DEPLOYMENT_ID" ; done
+      "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments/$DEPLOYMENT_ID" ; done
 ```

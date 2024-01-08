@@ -27,3 +27,17 @@ export const postSchema = z.object({
   body: z.string(),
 })
 ``` -->
+
+<!--
+.regex(/^\d+$/)
+-->
+
+<!--
+import { trimString } from '@/lib/utils'
+
+z.preprocess(trimString, z.string())
+-->
+
+<!--
+slug: z.string().transform((s) => slugify(s)),
+-->

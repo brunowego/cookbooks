@@ -7,7 +7,7 @@
 ### Analyze
 
 - [Online Hash Crack - Hash Identification](https://onlinehashcrack.com/hash-identification.php)
-- [Hash Analyzer](https://tunnelsup.com/hash-analyzer/)
+- [Hash Analyzer](https://tunnelsup.com/hash-analyzer)
 - [Identify Hash Types](https://hashes.com/en/tools/hash_identifier)
 
 ## Types
@@ -31,3 +31,9 @@ md5 -s 'string'
 #
 openssl rand -base64 32
 ```
+
+<!--
+Base64(unhex(SHA-1($plaintext)))
+
+2XIfI9Mq4CyJmQ4GUgIFEn4fYfH
+-->

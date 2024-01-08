@@ -16,14 +16,14 @@
 - AZTEC
 - CODE 39/93/128
 - DATA MATRIX
-- EAN 8/13
+- EAN (8/13 digits)
 - ISBN
 - ITF
 - MAXICODE
 - PDF 417
 - QR Code
 - RSS 14 / EXPANDED
-- UPC A/E (North American)
+- UPC A/E (North American) (12 digits)
 
 <!--
 SKU
@@ -38,15 +38,20 @@ https://youtube.com/watch?v=WC179bmycnI
 
 ## Tools
 
+- [Check Digit Calculator](https://gs1.org/services/check-digit-calculator) 🌟
+- [Barcode Lookup](https://barcodelookup.com) 🌟
 - [Barcode Spider](https://barcodespider.com)
 - [EAN-Search](https://ean-search.org)
 - [ISRC Finder](https://isrcfinder.com)
 - [Scanbot / Lookup Tool](https://scanbot.io/lookup-tool)
 - [UPC / Barcode Search](https://go-upc.com/barcode-lookup) 🌟
-- [UPCitemdb](https://upcitemdb.com)
 - [UPCZilla](https://upczilla.com)
 
 <!--
+https://activebarcode.com/codes/ean13
+https://gtinsearch.org/home UPC
+https://product.okfn.org
+https://product-search.net
 https://pageloot.com/barcode-scanner
 https://nanonets.com/barcode-scanner
 https://products.aspose.app/barcode/recognize
@@ -64,27 +69,20 @@ https://zxing-js.github.io/library
 https://github.com/ericblade/quagga2
 
 https://scandit.com/upc-lookup
-https://barcodelookup.com
 -->
 
-## SDK / Library
+### Generator
 
-- [Scanbot](https://scanbot.io)
+TODO
 
 <!--
-https://github.com/jodal/biip (GS1)
-https://github.com/ronanguilloux/IsoCodes (GS1)
-
-https://github.com/lindell/JsBarcode
+https://barcode.tec-it.com
+https://barcodes.pro/generator
 -->
 
-## Platform
+### Lookup
 
-- [brocade.io](https://github.com/ferrisoxide/brocade.io)
-
-<!--
-https://github.com/frontendnetwork/vegancheck.me
--->
+- [brocade.io](https://github.com/ferrisoxide/brocade.io) 🌟
 
 ## Examples
 

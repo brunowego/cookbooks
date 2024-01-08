@@ -60,6 +60,19 @@ code --install-extension Trunk.io
 jq '."recommendations" += ["Trunk.io"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
+#### Ignore
+
+```yml
+---
+# ...
+lint:
+  # ...
+  ignore:
+    - linters: [svgo]
+      paths:
+        - path/to/file.svg
+```
+
 ## CLI
 
 ### Installation
@@ -225,6 +238,9 @@ Trunk: Stopped
 ```
 
 - Option 1: Try remove `~/.cache/trunk` and `./.trunk/tools`
+<!--
+rm -fR ~/.cache/trunk; rm -fR ./.trunk/tools
+-->
 - Option 2: Try remove `./.trunk` and re-initialize `trunk init`
 
 #### Missing Dependencies (FAILURES)
@@ -263,7 +279,3 @@ cp $(brew --prefix hadolint)/bin/hadolint ~/.cache/trunk/tools/hadolint/2.12.0-6
 
 ps aux | grep trunk
 ```
-
-#### Stopped Trunk
-
-TBD

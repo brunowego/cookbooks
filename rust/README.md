@@ -12,6 +12,7 @@ https://github.com/search?o=desc&q=filename%3ACargo.toml+path%3Aapps&s=indexed&t
 -->
 
 <!--
+https://github.com/stumpapp/stump
 https://github.com/bkonkle/rust-example-caster-api
 https://github.com/aerox0/rust-tweeter
 https://github.com/ddanielsantos/rust-commerce

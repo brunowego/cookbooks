@@ -137,7 +137,7 @@ kubectl rollout restart daemonset <name>
 
 **Docs:** [Configure Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
 
-### Readiness Probe
+### Readiness Probe 🌟
 
 ```yml
 # ...
@@ -149,6 +149,11 @@ spec:
       containers:
         - # ...
           readinessProbe:
+            exec:
+              command:
+                - curl
+                - -fs
+                - http://localhost:8080/livez
             httpGet:
               path: /readyz
               port: 8080
@@ -159,9 +164,9 @@ spec:
             #   port: 8080
             initialDelaySeconds: 10
             periodSeconds: 5
-            timeoutSeconds: 10
-            failureThreshold: 3
-            successThreshold: 1
+            # timeoutSeconds: 10
+            # failureThreshold: 3
+            # successThreshold: 1
 ```
 
 ### Liveness Probe
@@ -176,12 +181,17 @@ spec:
       containers:
         - # ...
           livenessProbe:
-            httpGet:
-              path: /livez
-              port: 8080
-              # httpHeaders:
-              #   - name: Custom-Header
-              #     value: Awesome
+            exec:
+              command:
+                - curl
+                - -fs
+                - http://localhost:8080/livez
+            # httpGet:
+            #   path: /livez
+            #   port: 8080
+            #   httpHeaders:
+            #     - name: Custom-Header
+            #       value: Awesome
             # tcpSocket:
             #   port: 8080
             # exec:
@@ -190,7 +200,7 @@ spec:
             #     - /tmp/healthy
             initialDelaySeconds: 10
             periodSeconds: 5
-            timeoutSeconds: 10
-            failureThreshold: 3
-            successThreshold: 1
+            # timeoutSeconds: 10
+            # failureThreshold: 3
+            # successThreshold: 1
 ```

@@ -8,6 +8,8 @@ https://github.com/search?o=desc&q=path%3Apackage.json+path%3Aapps+content%3Anes
 https://github.com/search?o=desc&q=path%3Asrc%2Fmodules+content%3Anestjs&s=indexed&type=code
 -->
 
+**Keywords:** Web Framework
+
 ## Links
 
 - [Code Repository](https://github.com/nestjs/nest)

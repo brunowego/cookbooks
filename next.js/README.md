@@ -33,7 +33,7 @@ const nextConfig = {
 }
 -->
 
-**Keywords:** Web Development Framework
+**Keywords:** React Framework
 
 ## Links
 
@@ -119,6 +119,26 @@ npx next buld
 ```
 
 ### Tips
+
+#### Telemetry
+
+<!--
+https://nextjs.org/telemetry
+-->
+
+```sh
+#
+next telemetry status
+
+#
+next telemetry disable
+
+#
+next telemetry enable
+
+#
+export NEXT_TELEMETRY_DISABLED=1
+```
 
 #### VS Code Files Exclude
 
@@ -219,6 +239,33 @@ echo '/out' >> ./.gitignore
 ```
 
 ### Issues
+
+#### Missing Use Client
+
+```log
+Error: (0 , react__WEBPACK_IMPORTED_MODULE_0__.createContext) is not a function
+```
+
+Missing `'use client'` in a internal component.
+
+#### Missing Metadata Base URL
+
+```log
+⚠ metadata.metadataBase is not set for resolving social open graph or twitter images, using "http://localhost:8000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+```
+
+<!--
+https://github.com/vercel/next.js/discussions/57251
+-->
+
+**Refer:** `./src/app/layout.tsx`
+
+```ts
+export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
+  ...
+}
+```
 
 #### Browser Extension Issue
 

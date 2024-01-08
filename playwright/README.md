@@ -2,33 +2,59 @@
 
 <!--
 https://github.com/allmycal/allmycal.com/tree/main/apps/web/playwright
+
+https://chromewebstore.google.com/detail/playwright-crx/jambeljnbnfbkcpnoiaedcabbgmnnlcd
+
+https://github.com/trpc/examples-next-prisma-starter/blob/main/playwright/smoke.test.ts
 -->
 
-**Keywords:** End-to-End (E2E), Integration
+**Keywords:** E2E Testing, UI Testing
 
 ## Links
 
 - [Code Repository](https://github.com/microsoft/playwright)
-- [Main Website](https://playwright.dev/)
-
-## Docs
-
-- [Advanced](https://playwright.dev/docs/test-advanced)
+- [Main Website](https://playwright.dev)
+- [Docs](https://playwright.dev/docs)
+  - [Intro](https://playwright.dev/docs/intro)
+  - [Advanced](https://playwright.dev/docs/test-advanced)
 
 ## Library
 
-### Installation
+### Dependencies
 
 ```sh
 # Using NPM
 npx playwright install-deps
 npx playwright install
-npm install @playwright/test --save-dev
+# or
+npx playwright install --with-deps
+
 
 # Using Yarn
 yarn dlx playwright install-deps
 yarn dlx playwright install
+# or
+yarn dlx playwright install --with-deps
+
+
+# Using pnpm
+pnpm dlx playwright install-deps
+pnpm dlx playwright install
+# or
+pnpm dlx playwright install --with-deps
+```
+
+### Installation
+
+```sh
+# Using NPM
+npm install @playwright/test --save-dev
+
+# Using Yarn
 yarn add @playwright/test --dev
+
+# Using pnpm
+pnpm add @playwright/test -D
 ```
 
 ### Configuration
@@ -39,8 +65,9 @@ yarn add @playwright/test --dev
 {
   "scripts": {
     // ...
-    "test": "playwright test",
-    "test:report": "playwright show-report ./test/report"
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report"
     // ...
   }
 }
@@ -49,38 +76,53 @@ yarn add @playwright/test --dev
 **Refer:** `./playwright.config.ts`
 
 ```ts
-import { PlaywrightTestConfig } from '@playwright/test'
-import path from 'path'
+import { defineConfig, devices } from '@playwright/test'
 
-const playwrightConfig: PlaywrightTestConfig = {
-  testDir: './test',
+export default defineConfig({
+  testDir: './test/e2e',
+  testMatch: /.*\.e2e-spec\.ts$/,
+  fullyParallel: true,
+  forbidOnly: !!process.env.CI,
+  retries: process.env.CI ? 2 : 0,
+  workers: process.env.CI ? 1 : undefined,
+  reporter: 'html',
+  use: {
+    trace: 'on-first-retry',
+    baseURL: 'http://localhost:3333',
+  },
+  projects: [
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
+
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
+
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
+  ],
   webServer: {
-    command: 'yarn dev',
-    port: 3000,
-    timeout: 30 * 1000,
+    command: 'pnpm dev -- --port 3333',
+    port: 3333,
     reuseExistingServer: !process.env.CI,
   },
-  reporter: [
-    ['list'],
-    ['html', { outputFolder: path.join(__dirname, 'test', 'report') }],
-  ],
-  use: {
-    baseURL: 'http://localhost:3000',
-  },
-}
-
-export default playwrightConfig
+})
 ```
 
 ```sh
 #
-echo '/test/report' >> ./.gitignore
+echo '/playwright-report' >> ./.gitignore
 
 #
 mkdir -p ./test/e2e/api
 ```
 
-**Refer:** `./test/e2e/api/health-check.spec.ts`
+**Refer:** `./test/e2e/api/health-check.e2e-spec.ts`
 
 ```ts
 import { test, expect } from '@playwright/test'
@@ -96,7 +138,7 @@ test.describe('GET /api/health-check', () => {
 })
 ```
 
-**Refer:** `./test/e2e/home.spec.ts`
+**Refer:** `./test/e2e/home.e2e-spec.ts`
 
 ```ts
 import { expect, test } from '@playwright/test'
@@ -134,14 +176,31 @@ npx playwright -h
 
 # Using Yarn
 yarn dlx playwright -h
+
+# Using pmpm
+pnpm dlx playwright -h
 ```
 
 ### Usage
 
 ```sh
 #
-yarn dlx playwright test ./test/e2e/api/health-check.spec.ts
+npm init playwright@latest
 
 #
-./node_modules/.bin/playwright test ./test/e2e/api/health-check.spec.ts
+playwright test ./test/e2e/api/health-check.e2e-spec.ts
 ```
+
+<!--
+"install-browsers": "pnpm dlx playwright@1.31.0 install --with-deps",
+"e2e": "pnpm install-browsers && pnpm dlx playwright@1.31.0 test"
+
+"test:e2e": "playwright test",
+"test:e2e:report": "playwright show-report",
+"test:e2e:ui": "playwright test --ui"
+
+#
+npx playwright test
+npx playwright test --ui
+npx playwright show-report
+-->

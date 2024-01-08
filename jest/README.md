@@ -74,6 +74,14 @@ jq '."recommendations" += ["Orta.vscode-jest"]' "$PWD"/.vscode/extensions.json |
 
 ### Issues
 
+#### TBD
+
+```log
+Jest worker encountered 4 child process exceptions, exceeding retry limit
+```
+
+TODO
+
 #### Missing Module Mapper
 
 ```log

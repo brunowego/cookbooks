@@ -4,6 +4,10 @@
 https://blazity.com/services/headless-ecommerce-solutions
 -->
 
+## Links
+
+- [Headless Commerce Platforms](https://headlesscommerceplatforms.com)
+
 ## Glossary
 
 - Order Management System (OMS)
@@ -31,6 +35,8 @@ https://blazity.com/services/headless-ecommerce-solutions
 - [Wix Stores](https://wix.com/app-market/wix-stores)
 
 <!--
+https://github.com/vendure-ecommerce/vendure
+https://crystallize.com
 https://vtex.com
 -->
 
@@ -40,6 +46,7 @@ https://vtex.com
 - [Saleor](/saleor/README.md)
 
 <!--
+https://github.com/vendure-ecommerce/vendure
 https://github.com/sylius/sylius
 https://github.com/spree/spree
 https://vtex.com/br-pt/headless-commerce

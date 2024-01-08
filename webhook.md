@@ -27,6 +27,7 @@ Webhook use Pushing to send data to the server.
 <!--
 https://hostedhooks.com
 https://ultrahook.com (localhost)
+https://webhook.cool
 -->
 
 ## Articles

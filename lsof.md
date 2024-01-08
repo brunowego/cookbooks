@@ -53,6 +53,12 @@ lsof -iTCP -sTCP:LISTEN -n -P
 
 #
 lsof -ti :<port>
-#
-lsof -ti :<port> | xargs kill -9
+```
+
+### Tips
+
+#### Combine with `kill`
+
+```sh
+kill $(lsof -ti :<port>)
 ```

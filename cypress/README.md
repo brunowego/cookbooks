@@ -9,7 +9,7 @@ https://app.pluralsight.com/library/courses/js-friends-session-02/table-of-conte
 https://app.pluralsight.com/library/courses/codemash-session-01/table-of-contents
 -->
 
-**Keywords:** E2E, Integration
+**Keywords:** JavaScript Component Testing, E2E Testing, UI Testing
 
 ## Links
 

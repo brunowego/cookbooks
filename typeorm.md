@@ -25,14 +25,18 @@ yarn dlx typeorm -h
 
 ```sh
 #
-yarn dlx typeorm migration:generate -n
+typeorm migration:generate -n
 
 #
-yarn dlx typeorm migration:create -n init
+typeorm migration:create -n init
 
 #
-yarn dlx typeorm migration:run
+typeorm migration:run
 
 #
-yarn dlx typeorm migration:revert
+typeorm migration:revert
 ```
+
+<!--
+npx typeorm migration:create src/migrations/PostCreate
+-->

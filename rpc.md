@@ -1,5 +1,9 @@
 # Remote Procedure Call (RPC)
 
+<!--
+https://github.com/ts-rest/ts-rest
+-->
+
 ## Alternatives
 
 - [Simple Object Access Protocol (SOAP)](/soap.md)

@@ -23,6 +23,11 @@ flyctl -h
 
 ### Usage
 
+<!--
+fly launch
+fly secrets set <NAME>=<VALUE>
+-->
+
 ```sh
 #
 flyctl deploy

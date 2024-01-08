@@ -27,9 +27,11 @@ https://rigby.pl -->
 
 ## Glossary
 
+- Harmonized System Code (HS Code)
+- Manufacturers Identification Code (MID Code)
+- Omnichannel Commerce
 - Order Management System (OMS)
 - Point-of-Sale (PoS)
-- Omnichannel Commerce
 
 ## Showcase
 
@@ -59,10 +61,6 @@ npx @medusajs/medusa-cli@latest -h
 
 ### Usage
 
-<!--
-medusa user -e brunowego@gmail.com --invite
--->
-
 ```sh
 #
 medusa telemetry --disable
@@ -80,6 +78,9 @@ medusa develop
 
 #
 medusa start
+
+#
+medusa user -e <email> --invite
 ```
 
 ### Issues

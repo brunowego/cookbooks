@@ -10,6 +10,10 @@
 104 between
 ``` -->
 
+## Related
+
+- [SVG Icon](/svg/icon.md)
+
 ## Guides
 
 - [Apple Developer / Human Interface Guidelines / App Icon](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/)

@@ -90,6 +90,131 @@ jq '."eslint.workingDirectories" += [{ "mode": "auto" }]' "$PWD/.vscode/settings
 
 ### Issues
 
+#### Missing Node Environment
+
+```log
+'require' is not defined. eslint no-undef
+```
+
+```cjs
+/**
+ * @type { import('eslint').Linter.Config }
+ */
+const eslintRC = {
+  // ...
+  env: {
+    node: true,
+  },
+}
+
+module.exports = eslintRC
+```
+
+#### Missing Parser Configuration
+
+```log
+Converting circular structure to JSON
+```
+
+```log
+RangeError: Maximum call stack size exceeded
+```
+
+```cjs
+/**
+ * @type { import('eslint').Linter.Config }
+ */
+const eslintRC = {
+  // ...
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: true,
+  },
+  // ...
+}
+
+module.exports = eslintRC
+```
+
+<!--
+overrides: [
+  {
+    files: ['src/**/*.ts', 'src/**/*.tsx'],
+    parserOptions: {
+      project: ['./tsconfig.json'],
+      tsconfigRootDir: __dirname,
+    },
+  },
+  {
+    files: ['*.mjs'],
+    parserOptions: {
+      ecmaVersion: 2022,
+      sourceType: module,
+    },
+  },
+  {
+    files: ['*.cjs'],
+    parserOptions: {
+      ecmaVersion: 2022,
+    },
+  },
+],
+-->
+
+#### Missing ECMA Version
+
+```log
+Error: Parsing error: The keyword 'import' is reserved
+```
+
+**Refer:** `./.eslintrc.cjs`
+
+```cjs
+/**
+ * @type { import('eslint').Linter.Config }
+ */
+const eslintRC = {
+  root: true,
+  extends: ['@acme/eslint-config/next.js'],
+  overrides: [
+    {
+      files: ['*.mjs'],
+      parserOptions: {
+        ecmaVersion: 2022,
+        sourceType: module,
+      },
+    },
+    {
+      files: ['*.cjs'],
+      parserOptions: {
+        ecmaVersion: 2022,
+      },
+    },
+  ],
+}
+
+module.exports = eslintRC
+```
+
+#### Missing Root Parameter
+
+```log
+You are linting "./src", but all of the files matching the glob pattern "./src" are ignored.
+```
+
+**Refer:** `./.eslintrc.cjs`
+
+```cjs
+/**
+ * @type { import('eslint').Linter.Config }
+ */
+module.exports = {
+  // ...
+  root: true,
+  // ...
+}
+```
+
 #### Missing Root ESLint Configuration (False Positive)
 
 ```log
@@ -120,18 +245,29 @@ Pages directory cannot be found at /path/to/pages or /path/to/src/pages. If usin
 jq '."eslint.workingDirectories" += [{ "pattern": "./apps/*/" }, { "pattern": "./packages/*/" }]' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 ```
 
-#### TBD
+#### Unecessary Parser Options
 
 ```log
-Parsing error: ESLint was configured to run on `</path/to/filename>.ts` using `parserOptions.project`: </path/to/>/tsconfig.json
-However, that TSConfig does not include this file. Either:
-- Change ESLint's list of included files to not include this file
-- Change that TSConfig to include this file
-- Create a new TSConfig that includes this file and include it in your parserOptions.project
-See the typescript-eslint docs for more info: https://typescript-eslint.io/linting/troubleshooting#i-get-errors-telling-me-eslint-was-configured-to-run--however-that-tsconfig-does-not--none-of-those-tsconfigs-include-this-fileeslint
+Parsing error: ESLint was configured to run on `<tsconfigRootDir>/path/to/jest.config.ts` using `parserOptions.project`
 ```
 
-TODO
+Try remove `parserOptions.project` from `./.eslintrc.cjs`:
+
+```js
+const { resolve } = require('node:path')
+const project = resolve(process.cwd(), 'tsconfig.json')
+
+/**
+ * @type { import('eslint').Linter.Config }
+ */
+module.exports = {
+  // ...
+  parserOptions: {
+    project,
+  },
+  // ...
+}
+```
 
 <!-- #### Missing Matching Pattern
 

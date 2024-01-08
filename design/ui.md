@@ -1,7 +1,7 @@
 # User Interface (UI)
 
 <!--
-https://www.vultr.com/register/
+https://vultr.com/register/
 https://clay.global/
 -->
 

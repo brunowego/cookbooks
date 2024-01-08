@@ -52,10 +52,9 @@ volta setup
 ```sh
 #
 volta install <tool>@<version>
-
-volta install node@lts
+volta install node
 volta install pnpm
-volta install yarn@1
+volta install yarn
 
 #
 volta list
@@ -63,10 +62,11 @@ volta list <tool>
 
 #
 volta pin <tool>
+volta pin node@<version>
 
 #
 volta which <tool>
-volta which yarn@1
+volta which yarn@<version>
 
 # REPL
 volta run <tool>

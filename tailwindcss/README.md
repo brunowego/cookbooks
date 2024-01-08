@@ -267,3 +267,19 @@ warn - No utilities were generated there is likely a problem with the `content` 
 ```
 
 Change `'./src/**/*.{ts,tsx}'` to `'./src/pages/**/*.{ts,tsx}'`.
+
+<!--
+import type { Config } from 'tailwindcss'
+
+const config: Pick<Config, "content" | "presets"> = {
+  presets: [
+    {
+      content: [
+        // ...
+      ],
+    },
+  ],
+}
+
+export default config
+-->

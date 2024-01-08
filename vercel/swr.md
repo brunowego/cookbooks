@@ -4,7 +4,7 @@
 https://blog.logrocket.com/handling-data-fetching-next-js-useswr/#:~:text=SWR%2C%20which%20stands%20for%20Stale,stale%20data%20from%20the%20cache.
 -->
 
-**Keywords:** Server-Sent Events
+**Keywords:** Data Fetching, Server-Sent Events
 
 ## Links
 

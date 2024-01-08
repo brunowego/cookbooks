@@ -14,6 +14,7 @@ https://freshdesk.com/helpdesk-management/ticketing-system/open-source
 
 ### Managed
 
+- [Acquire](https://acquire.io)
 - [Freshworks Freshdesk](https://freshdesk.com)
 - [HappyFox](https://happyfox.com)
 - [Help Scout](https://helpscout.com)

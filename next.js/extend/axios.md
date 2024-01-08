@@ -1,10 +1,30 @@
 # Axios
 
-<!--
-https://github.com/Jonathan-Wong-Code/next-bootstrap/blob/master/src/services/pokemon.ts
--->
+## Links
 
-TODO
+- [Axios](/axios.md)
+
+## Configuration
+
+**Refer:** `./src/lib/axios.ts`
+
+```ts
+import axios, {
+  AxiosInstance,
+  type AxiosRequestConfig,
+  AxiosError,
+} from 'axios'
+
+import { bundledEnv } from '@/env'
+
+const api: AxiosInstance = axios.create({
+  baseURL: bundledEnv.NEXT_PUBLIC_API_BASE_URL,
+  // withXSRFToken: true,
+  // withCredentials: true,
+} satisfies AxiosRequestConfig)
+
+export { api, AxiosError }
+```
 
 <!-- **Refer:** `./src/hooks/useRequest.ts`
 

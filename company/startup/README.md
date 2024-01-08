@@ -157,7 +157,7 @@ Key Performance Indicator (KPI)
 - Surveys
 - Landing page experiments
 - Feedback from users on a product
-- MVP
+- MVP / MVA
 
 ## Roles
 
@@ -190,7 +190,7 @@ Key Performance Indicator (KPI)
 2. Researched Idea
 3. Mockups
 4. Early Prototype
-5. MVP
+5. MVP / MVA
 6. Beta
 7. Later-Stage
 

@@ -15,10 +15,12 @@
 
 ## Tests
 
-- HTTP Health Check
-- Functional Tests
-- Smoke Tests
 - Database Checks
+- Functional Tests
+- HTTP Health Check
+- Memory Heap
+- Memory Resident Set Size (Memory RSS)
+- Smoke Tests
 
 ## Probe Endpoints
 
