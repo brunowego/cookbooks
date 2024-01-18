@@ -25,6 +25,11 @@ yarn dlx create-turbo@latest \
 pnpx create-turbo@latest \
   ./<app-name> && \
     cd "$_"
+
+# Use Bun
+bun create turbo \
+  ./<app-name> && \
+    cd "$_"
 ```
 
 ## Issues

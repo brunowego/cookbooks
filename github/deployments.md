@@ -2,7 +2,7 @@
 
 ## Tips
 
-### Delete Environment (Deployments)
+### Delete
 
 ```sh
 #
@@ -16,10 +16,10 @@ export GITHUB_REPO='<github-repo>'
 
 ```sh
 #
-curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments" | jq '.[].id'
+curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments" | jq '.[] | .id, .environment'
 
 #
-export DEPLOYMENT_ID=1274134670
+export DEPLOYMENT_ID=1274151952
 
 #
 curl \

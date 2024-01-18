@@ -118,6 +118,8 @@ docker volume rm mysql-data
 
 ### Manifest
 
+**Refer:** `./docker-compose.yml`
+
 ```yml
 ---
 version: '3'
@@ -145,6 +147,22 @@ services:
 volumes:
   mysql-data:
     driver: local
+```
+
+**Refer:** `./.env`
+
+```env
+COMPOSE_PROJECT_NAME=acme
+
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_ROOT_PASSWORD=root
+MYSQL_DATABASE=acme
+MYSQL_USER=acme
+MYSQL_PASSWORD=acme
+
+DATABASE_URL='mysql://acme:acme@localhost:3306/acme?ssl={"rejectUnauthorized":true}'
+DATABASE_URL=mysql://acme:acme@localhost:3306/acme
 ```
 
 ## Helm

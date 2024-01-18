@@ -46,7 +46,11 @@ https://github.com/open-source-labs/Swell
 ### Testing
 
 ```sh
+#
 curl -H 'Accept:text/event-stream' https://postman-echo.com/server-events/10
+
+#
+curl -N http://localhost:3000/sse
 ```
 
 <!--

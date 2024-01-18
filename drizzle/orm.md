@@ -27,7 +27,105 @@ https://github.com/uninbox/UnInbox
 
 ## Library
 
+### Installation
+
+```sh
+# Using pnpm
+pnpm add @faker-js/faker dotenv drizzle-kit pg tsx -D
+pnpm add @paralleldrive/cuid2 drizzle-orm postgres zod
+# drizzle-typebox drizzle-zod pg
+```
+
+### Configuration
+
+```sh
+mkdir -p ./src/db/{migrations,schemas}
+```
+
+**Refer:** `./src/db/schemas/index.ts`
+
+```ts
+import { createId } from '@paralleldrive/cuid2'
+import { pgEnum, pgTable, text, timestamp } from 'drizzle-orm/pg-core'
+
+export const userRoleEnum = pgEnum('user_role', [
+  'admin',
+  'manager',
+  'customer',
+])
+
+export const users = pgTable('users', {
+  id: text('id')
+    .$defaultFn(() => createId())
+    .primaryKey(),
+  name: text('name').notNull(),
+  email: text('email').notNull().unique(),
+  phone: text('phone'),
+  role: userRoleEnum('role').default('customer').notNull(),
+  createdAt: timestamp('created_at').defaultNow(),
+  updatedAt: timestamp('updated_at').defaultNow(),
+})
+```
+
+**Refer:** `./src/env.ts`
+
+```ts
+import { z } from 'zod'
+
+const envSchema = z.object({
+  DATABASE_URL: z.string().url().min(1),
+})
+
+export const env = envSchema.parse(process.env)
+```
+
+**Refer:** `./drizzle.config.ts`
+
+```ts
+
+```
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "type": "module",
+  "scripts": {
+    "db:generate": "drizzle-kit generate:pg",
+    "db:migrate": "dotenv -- tsx ./src/db/migrate.ts",
+    "db:seed": "dotenv -- tsx ./src/db/seed.ts",
+    "db:studio": "drizzle-kit studio"
+    // ...
+  }
+}
+```
+
+**Refer:** `./tsconfig.json`
+
+```json
+{
+  "include": ["drizzle.config.ts"]
+}
+```
+
 ### Issues
+
+#### Missing Type Module
+
+```log
+Top-level await is currently not supported with the "cjs" output format
+```
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "type": "module"
+  // ...
+}
+```
 
 #### TBD
 

@@ -88,6 +88,18 @@ medusa user -e <email> --invite
 #### TBD
 
 ```log
+Could not resolve module: cartCartSalesChannelSalesChannelLink. Error: Loaders for module cartCartSalesChannelSalesChannelLink failed: Cannot read properties of undefined (reading 'className')
+```
+
+<!--
+https://github.com/medusajs/medusa/issues/5539
+-->
+
+TODO
+
+#### TBD
+
+```log
 Error: Cannot find module 'fs-extra'
 ```
 

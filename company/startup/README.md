@@ -5,8 +5,8 @@ Caserbin raises $10M in seed funding to help companies deliver a great candidate
 
 https://github.com/gravitational/teleport/blob/master/rfd/0000-rfds.md
 
-https://angel.co/
-https://linktr.ee/
+https://angel.co
+https://linktr.ee
 
 Pró-Labore
 

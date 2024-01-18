@@ -2,9 +2,35 @@
 
 ## Links
 
-- [Main Website](https://console.cloud.google.com/apis/credentials)
+- [Console](https://console.cloud.google.com/apis/credentials)
 
 ## Issues
+
+### TBD
+
+```log
+Google hasn’t verified this app
+```
+
+TODO
+
+### TBD
+
+```log
+Access blocked: <AppName> has not completed the Google verification process
+```
+
+<!--
+Error 403: access_denied
+
+Request details: access_type=online response_type=code state=klro63yd7dzrwhb8b9rl3ew74erwn670cuv8l90tadt redirect_uri=http://localhost:3000/api/auth/google/callback client_id=367833509800-c1pns59k40nl2h8398iaot83bl8jajnt.apps.googleusercontent.com scope=https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid
+-->
+
+<!--
+https://stackoverflow.com/questions/75454425/access-blocked-project-has-not-completed-the-google-verification-process
+-->
+
+TODO
 
 ### TBD
 

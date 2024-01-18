@@ -24,6 +24,11 @@ https://linkedin.com/learning/ruby-on-rails-6-essential-training-models-and-asso
 -->
 
 <!--
+Fixtures
+Factories
+-->
+
+<!--
 This website is under heavy load (queue full)
 -->
 

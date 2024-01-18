@@ -36,6 +36,9 @@ yarn create next-app -h
 
 # Using pnpm
 pnpm create next-app -h
+
+# Using Bun
+bun create next-app -h
 ```
 
 ### Bootstrap
@@ -56,6 +59,12 @@ yarn create next-app \
 
 # Using pnpm
 pnpm create next-app \
+  --ts \
+  <app-name> && \
+    "$_"
+
+# Using bun
+bun create next-app \
   --ts \
   <app-name> && \
     "$_"

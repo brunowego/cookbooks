@@ -7,6 +7,11 @@ https://symbols-search.vercel.app
 -->
 
 <!--
+✔
+✘
+-->
+
+<!--
 —
 →
 

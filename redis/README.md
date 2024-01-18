@@ -100,6 +100,8 @@ docker volume rm redis-data
 
 ### Manifest
 
+**Refer:** `./docker-compose.yml`
+
 ```yml
 ---
 version: '3'
@@ -120,6 +122,15 @@ services:
 volumes:
   redis-data:
     driver: local
+```
+
+**Refer:** `./.env`
+
+```env
+REDIS_HOST=localhost
+REDIS_PORT=6379
+
+REDIS_URL=redis://$REDIS_HOST:$REDIS_PORT
 ```
 
 ## CLI
