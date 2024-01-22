@@ -5,7 +5,7 @@
 ## Links
 
 - [Code Repository](https://github.com/Infisical/infisical)
-- [Main Website](https://infisical.com/)
+- [Main Website](https://infisical.com)
 
 ## Glossary
 
@@ -37,3 +37,7 @@ infisical login
 #
 infisical init
 ```
+
+<!--
+infisical run
+-->

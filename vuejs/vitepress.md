@@ -1,7 +1,9 @@
 # VitePress
 
 <!--
-https://docs.stepci.com/
+https://docs.stepci.com
+
+https://github.com/agnyz/the-bed-stack/tree/main/docs
 -->
 
 ## Links

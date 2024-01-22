@@ -6,6 +6,10 @@ PORT=9000
 http://localhost:9000/health
 -->
 
+## Links
+
+- [Medusa Starter Default](https://github.com/medusajs/medusa-starter-default) (a.k.a. Medusa Server)
+
 ## Issues
 
 ### Rollback SDK version

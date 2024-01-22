@@ -115,10 +115,13 @@ Key Performance Indicator (KPI)
 - Free Cash Flow
 - Growth Hacking
 - Growth Mindset
+- Indie Creator
 - Media for Equity
+- Micro SaaS
 - Omnichannel
 - One Stop Shop
 - Payout Ratio
+- Platform Risk
 - Private Equity
 - Quiet Firing / Quiet Quitting
 - Rapport

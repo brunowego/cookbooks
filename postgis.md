@@ -6,4 +6,5 @@ https://github.com/2color/dev-infrastructure/blob/master/postgis/docker-compose.
 
 ## Links
 
-- [Main Website](https://postgis.net/)
+- [Code Repository](https://git.osgeo.org/gitea/postgis/postgis)
+- [Main Website](https://postgis.net)

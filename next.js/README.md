@@ -33,7 +33,7 @@ const nextConfig = {
 }
 -->
 
-**Keywords:** React Framework
+**Keywords:** Full-featured React framework
 
 ## Links
 

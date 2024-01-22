@@ -17,6 +17,9 @@ https://<name>.postman.co/settings/team/custom-domains
 
 - [Org. Repository](https://github.com/postmanlabs)
 - [Main Website](https://postman.com)
+- Browser Extension
+  - Postman Interceptor
+    - [Google Chrome](https://chromewebstore.google.com/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo)
 
 ## Guides
 

@@ -1,5 +1,9 @@
 # Extend with TypeOrm
 
+<!--
+https://github.com/ToolJet/ToolJet/blob/develop/server/ormconfig.ts
+-->
+
 TODO
 
 <!--

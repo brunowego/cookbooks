@@ -10,6 +10,21 @@ DB_USERNAME filetype:env
 - [dotenv-cli](/dotenv/cli.md)
 - [envo](/envo.md)
 
+## Configuration
+
+```sh
+#
+echo '/.env*.local' >> ./.gitignore
+
+#
+# .env
+# .env.development
+# .env.production
+
+#
+# .env.local
+```
+
 ## Tips
 
 ### Load

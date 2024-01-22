@@ -1,7 +1,10 @@
 # JSON Web Token (JWT)
 
 <!--
-https://www.youtube.com/watch?v=zYi9PguVFx8
+https://youtube.com/watch?v=zYi9PguVFx8
+
+http://jwtbuilder.jamiekurtz.com
+https://javainuse.com/jwtgenerator
 -->
 
 ## Links
@@ -9,6 +12,15 @@ https://www.youtube.com/watch?v=zYi9PguVFx8
 - [Main Website](https://jwt.io/)
 - [Encode or Decode JWTs](https://jsonwebtoken.io/)
 - [JWT Authentication](https://roadmap.sh/guides/jwt-authentication)
+
+## Store
+
+<!--
+SameSite=strict
+-->
+
+- Cookie: HttpOnly & Secure
+- LocalStorage or SessionStorage: Vulnarable to XSS attack
 
 <!--
 - SAML 1.1/2.0

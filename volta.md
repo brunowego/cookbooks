@@ -55,6 +55,7 @@ volta install <tool>@<version>
 volta install node
 volta install pnpm
 volta install yarn
+volta install bun
 
 #
 volta list
@@ -63,6 +64,7 @@ volta list <tool>
 #
 volta pin <tool>
 volta pin node@<version>
+volta pin bun@<version>
 
 #
 volta which <tool>
@@ -70,6 +72,9 @@ volta which yarn@<version>
 
 # REPL
 volta run <tool>
+
+#
+volta uninstall <tool>
 ```
 
 <!-- ### Tips

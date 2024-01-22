@@ -88,6 +88,18 @@ medusa user -e <email> --invite
 #### TBD
 
 ```log
+Error: Cannot find module '@medusajs/admin'
+```
+
+TODO
+
+<!-- ```sh
+bun add @medusajs/admin -D
+``` -->
+
+#### TBD
+
+```log
 Could not resolve module: cartCartSalesChannelSalesChannelLink. Error: Loaders for module cartCartSalesChannelSalesChannelLink failed: Cannot read properties of undefined (reading 'className')
 ```
 

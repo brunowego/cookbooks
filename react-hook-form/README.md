@@ -12,6 +12,10 @@ https://github.com/documenso/documenso/blob/main/apps/web/src/components/forms/p
 - [Main Website](https://react-hook-form.com)
 - [Form Builder](https://react-hook-form.com/form-builder)
 
+## Learning
+
+- [React Hook Form - Complete Tutorial (with Zod)](https://youtube.com/watch?v=cc_xmawJ8Kg)
+
 ## Library
 
 ### Installation

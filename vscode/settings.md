@@ -14,6 +14,10 @@
 ## Configuration
 
 ```sh
+# Terminal Scrollback
+jq '."terminal.integrated.scrollback" |= 100000000' "$HOME"/.vscode/settings.json | \
+  sponge "$HOME"/.vscode/settings.json
+
 # Breadcrumbs
 jq '."breadcrumbs.enabled" |= false' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 

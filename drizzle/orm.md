@@ -18,7 +18,7 @@ https://github.com/dichioniccolo/bloghub
 https://github.com/uninbox/UnInbox
 -->
 
-**Keywords:** TypeScript ORM
+**Keywords:** TypeScript ORM, Only SQL
 
 ## Links
 
@@ -82,7 +82,18 @@ export const env = envSchema.parse(process.env)
 **Refer:** `./drizzle.config.ts`
 
 ```ts
+import type { Config } from 'drizzle-kit'
 
+import { env } from './src/env'
+
+export default {
+  out: './src/db/migrations',
+  schema: './src/db/schemas/*.ts',
+  driver: 'pg',
+  dbCredentials: {
+    connectionString: env.DATABASE_URL,
+  },
+} satisfies Config
 ```
 
 **Refer:** `./package.json`
@@ -109,7 +120,29 @@ export const env = envSchema.parse(process.env)
 }
 ```
 
+### Snippets
+
+```ts
+
+```
+
 ### Issues
+
+#### TBD
+
+```log
+Type 'never[] & Iterable<never> & ResultQueryMeta<number, string | number | symbol>' is missing the following properties from type '{ name: string; id: string; url: string; userId: string; createdAt: Date; updatedAt: Date; }': name, id, url, userId, and 2 more. ts(2740)
+```
+
+TODO
+
+#### TBD
+
+```log
+Type '{ name: string; id: string; url: string; userId: string; createdAt: Date; updatedAt: Date; }[]' is missing the following properties from type '{ name: string; id: string; url: string; userId: string; createdAt: Date; updatedAt: Date; }': name, id, url, userId, and 2 more.ts(2740)
+```
+
+TODO
 
 #### Missing Type Module
 

@@ -120,6 +120,9 @@ yarn -h
 
 ```sh
 #
+yarn install
+
+#
 yarn create <app>
 
 #
@@ -134,6 +137,10 @@ yarn global list # show globally installed packages
 
 #
 yarn up -R '**'
+
+#
+yarn dev
+yarn --cwd ./<path/to/package> dev
 ```
 
 <!--

@@ -1,5 +1,13 @@
 # Barcode
 
+<!--
+https://github.com/ENT8R/node-brocade
+-->
+
+## Datasets
+
+- [List of Barcode & QR Code Datasets](https://github.com/BenSouchet/barcode-datasets)
+
 ## Glossary
 
 - Global Trade Item Number (GTIN)
@@ -39,13 +47,28 @@ https://youtube.com/watch?v=WC179bmycnI
 ## Tools
 
 - [Check Digit Calculator](https://gs1.org/services/check-digit-calculator) 🌟
+- [ISRC Finder](https://isrcfinder.com)
+
+### Lookup
+
 - [Barcode Lookup](https://barcodelookup.com) 🌟
 - [Barcode Spider](https://barcodespider.com)
 - [EAN-Search](https://ean-search.org)
-- [ISRC Finder](https://isrcfinder.com)
 - [Scanbot / Lookup Tool](https://scanbot.io/lookup-tool)
 - [UPC / Barcode Search](https://go-upc.com/barcode-lookup) 🌟
 - [UPCZilla](https://upczilla.com)
+
+#### API
+
+- [UPCitemdb](https://upcitemdb.com) (API) 🌟
+
+<!--
+https://barcodespider.com
+
+https://api.upcitemdb.com/prod/trial/lookup?upc=<code>
+
+https://upcitemdb.com/upc/<code>
+-->
 
 <!--
 https://activebarcode.com/codes/ean13

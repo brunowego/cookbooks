@@ -97,13 +97,15 @@ docker volume rm \
 
 ### Manifest
 
+**Refer:** `./docker-compose.yml`
+
 ```yml
 ---
 version: '3'
 
 services:
   mongodb:
-    image: docker.io/library/mongo:5.0.15
+    image: docker.io/library/mongo:6.0.13
     volumes:
       - type: volume
         source: mongodb-data
@@ -112,20 +114,30 @@ services:
         source: mongodb-configdb
         target: /data/configdb
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
-      MONGO_INITDB_DATABASE: dev
+      MONGO_INITDB_ROOT_USERNAME:
+      MONGO_INITDB_ROOT_PASSWORD:
+      MONGO_INITDB_DATABASE:
     ports:
       - target: 27017
         published: $MONGODB_PORT
         protocol: tcp
-    restart: always
+    restart: unless-stopped
 
 volumes:
   mongodb-data:
     driver: local
   mongodb-configdb:
     driver: local
+```
+
+**Refer:** `./.env`
+
+```env
+MONGODB_HOST=localhost
+MONGODB_PORT=27017
+MONGO_INITDB_ROOT_USERNAME=root
+MONGO_INITDB_ROOT_PASSWORD=root
+MONGO_INITDB_DATABASE=dev
 ```
 
 ## CLI

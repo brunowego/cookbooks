@@ -1,6 +1,8 @@
 # Vite
 
 <!--
+https://github.com/outline/outline
+
 https://github.com/search?o=desc&q=filename%3Apackage.json+%22vite%22+%22tailwindcss%22+%22typescript%22+path%3Aapps&s=indexed&type=Code
 
 https://dev.to/wojtekmaj/migrating-your-react-app-from-webpack-to-vite-inp

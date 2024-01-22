@@ -19,6 +19,11 @@ AND
 OR
 -->
 
+<!--
+Solution Architect
+Hands-on – Prototype / POC
+-->
+
 ## Links
 
 - [Following](https://linkedin.com/feed/following/)

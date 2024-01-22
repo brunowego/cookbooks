@@ -67,6 +67,9 @@ turbo run build
 turbo run build --force
 turbo run build --graph
 turbo run build --scope <@package/name>
+
+#
+yarn run build --filter @medusajs/dashboard
 ```
 
 ### Issues

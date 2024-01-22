@@ -4,6 +4,8 @@
 https://oku-ui.com/pergel
 -->
 
+**Keywords:** Full-featured React framework
+
 ## Links
 
 - [Code Repository](https://github.com/nuxt/nuxt.js)

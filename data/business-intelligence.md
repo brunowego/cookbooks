@@ -17,6 +17,7 @@
 - [ThoughtSpot](https://thoughtspot.com)
 
 <!--
+https://github.com/lightdash/lightdash
 https://sisense.com
 -->
 

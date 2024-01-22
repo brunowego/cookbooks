@@ -1,5 +1,7 @@
 # Heroku
 
+**Keywords:** Cloud Application Platform; PaaS
+
 ## Links
 
 - [Org. Repository](https://github.com/heroku)

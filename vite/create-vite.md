@@ -1,4 +1,4 @@
-# Create Vite Project
+# Create Vite App
 
 ## Templates
 
@@ -11,23 +11,14 @@
 | `lit`      | `lit-ts`     |
 | `svelte`   | `svelte-ts`  |
 
-## Bootstrap
+## Usage
 
 ```sh
-# Using NPM
-npm create vite@latest <app-name>
-# or
-npm create vite@latest <app-name> -- --template <name>
-
-# Using Yarn
-yarn create vite <app-name>
-# or
-yarn create vite <app-name> --template <name>
-
 # Using pnpm
-pnpm create vite <app-name>
-# or
-pnpm create vite <app-name> --template <name>
+pnpm create vite <app-name> --template react-ts
+
+# Using Bun
+bun create vite <app-name> --template react-ts
 ```
 
 ## Issues

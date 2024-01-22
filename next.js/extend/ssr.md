@@ -11,6 +11,7 @@ import dynamic from 'next/dynamic'
 import type { JSX } from 'react'
 
 const Page = (): JSX.Element => {
+  console.log(window.navigator.userAgent)
   // ...
 }
 

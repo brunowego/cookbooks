@@ -1,11 +1,10 @@
-# Create App
+# Create Elysia App
 
-## Usage
+## CLI
+
+### Bootstrap
 
 ```sh
 #
-bun create elysia ./app && cd "$_"
-
-#
-bun dev
+bun create elysia ./<api-name> && cd "$_"
 ```

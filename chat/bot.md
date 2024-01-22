@@ -3,6 +3,8 @@
 **Keywords:** Artificial Intelligence
 
 <!--
+https://github.com/vercel/ai-chatbot
+
 https://landbot.io/
 https://github.com/acheong08/ChatGPT
 https://github.com/wong2/chat-gpt-google-extension

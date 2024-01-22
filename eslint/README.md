@@ -40,7 +40,7 @@ pnpm add @types/eslint eslint -D
 ```json
 {
   "scripts": {
-    "lint": "eslint ./*.cjs"
+    "lint": "eslint --max-warnings 0 ./"
   }
 }
 ```

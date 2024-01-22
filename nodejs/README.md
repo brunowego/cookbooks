@@ -5,6 +5,10 @@ https://app.pluralsight.com/paths/skills/working-with-nodejs
 https://linkedin.com/learning/node-js-essential-training-3/learn-the-node-js-fundamentals
 -->
 
+<!--
+> 20.6 read .env files native
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/npm/cli)
