@@ -13,3 +13,10 @@ export const fontSans = FontSans({
   variable: '--font-sans',
 })
 ```
+
+<!--
+{
+  source: "/google-fonts/:path*",
+  destination: "https://fonts.googleapis.com/:path*",
+},
+-->

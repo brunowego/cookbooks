@@ -28,4 +28,4 @@ https://github.com/yieldgate/yieldgate
 
 ## Tools
 
-- [Mirror](https://mirror.xyz/)
+- [Mirror](https://mirror.xyz)

@@ -9,6 +9,7 @@ DB_USERNAME filetype:env
 - [direnv](/direnv.md) 🌟
 - [dotenv-cli](/dotenv/cli.md)
 - [envo](/envo.md)
+- [Dotenv / Vault](https://vault.dotenv.org)
 
 ## Configuration
 

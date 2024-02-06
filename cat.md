@@ -13,3 +13,11 @@
 ```sh
 man cat
 ```
+
+### Tips
+
+#### Filter
+
+```sh
+cat <path/to/filename> | grep '<pattern>'
+```

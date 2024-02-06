@@ -13,8 +13,3 @@
 ### Reader
 
 - [React QR Reader](https://github.com/JodusNodus/react-qr-reader)
-
-## Recognition Libraries
-
-- ZBar
-- ZXing

@@ -1,5 +1,9 @@
 # Stripe
 
+<!--
+https://github.com/quenti-io/quenti/tree/main/packages/payments
+-->
+
 ## Links
 
 - [Main Website](https://stripe.com)
@@ -73,3 +77,11 @@ pip3 install -U stripe
 ```sh
 python3 ./manage.py migrate
 ```
+
+<!--
+https://stripe.com/docs/testing
+
+Card Number: 4242 4242 4242 4242
+Card Validation: 12/34
+CVC: 567
+-->

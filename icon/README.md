@@ -29,12 +29,13 @@
 ## Libraries
 
 - [Feather](https://feathericons.com)
+- [Flaticon](https://flaticon.com) 🌟
 - [Hugeicons](https://hugeicons.com)
 - [Simple Icons](https://simpleicons.org)
 - [Tabler Icons](https://tabler-icons.io)
 
 <!--
-https://svgl.vercel.app/
+https://svgl.vercel.app
 
 https://github.com/stephenway/react-flagkit
 https://flagpack.xyz/docs/development/react

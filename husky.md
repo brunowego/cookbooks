@@ -5,7 +5,7 @@
 - [Code Repository](https://github.com/typicode/husky)
 - [Main Website](https://typicode.github.io/husky/#/)
 
-## CLI
+## Library
 
 ### Installation
 

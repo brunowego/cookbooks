@@ -19,13 +19,92 @@ tooling
 ## Links
 
 - [Code Repository](https://github.com/vercel/turborepo)
-- [Main Website](https://turborepo.org/)
+- [Main Website](https://turborepo.org)
 - [Examples](https://github.com/vercel/turborepo/tree/main/examples)
 
 ## Guides
 
 - [Getting Started with Turborepo](https://turborepo.org/docs/getting-started)
 - [Turborepo Codemods](https://turborepo.org/docs/reference/codemods)
+
+## Library
+
+### Installation
+
+```sh
+# Using Bun
+bun add turbo
+```
+
+### Configuration
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "scripts": {
+    "clean": "turbo clean",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "build": "turbo build",
+    "start": "turbo start"
+  }
+  // ...
+}
+```
+
+**Refer:** `./turbo.json`
+
+```json
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "pipeline": {
+    "clean": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "build": {
+      "dependsOn": ["^build"]
+    },
+    "start": {
+      "cache": false
+    }
+  }
+}
+```
+
+**Refer:** `./apps/web/turbo.json`
+
+```json
+{
+  "$schema": "https://turbo.build/schema.json",
+  "extends": ["//"]
+  // "pipeline": {
+  //   "build": {
+  //     "outputs": ["dist/**"]
+  //   }
+  // }
+}
+```
+
+### Usage
+
+```sh
+#
+bunx turbo telemetry status
+bunx turbo telemetry disable
+
+#
+bunx turbo build --filter <pkg-name>
+```
 
 ## CLI
 
@@ -37,6 +116,9 @@ npm install turbo -g
 
 # Using Yarn 1.x
 yarn global add turbo
+
+# Using Bun
+bun install turbo -g
 ```
 
 ### Commands

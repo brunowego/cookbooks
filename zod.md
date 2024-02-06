@@ -41,3 +41,19 @@ z.preprocess(trimString, z.string())
 <!--
 slug: z.string().transform((s) => slugify(s)),
 -->
+
+<!--
+password: z.string().superRefine((data, ctx) => {
+  const isStrict = false;
+  const result = isPasswordValid(data, true, isStrict);
+  Object.keys(result).map((key: string) => {
+    if (!result[key as keyof typeof result]) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: [key],
+        message: key,
+      });
+    }
+  });
+}),
+-->

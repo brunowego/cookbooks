@@ -159,6 +159,20 @@ module.exports = tailwindConfig
 
 ### Tips
 
+<!-- ####
+
+```ts
+screens: Object.fromEntries(
+  Object.entries(defaultTheme.screens).filter(([key]) => key !== '2xl'),
+),
+
+screens: Object.fromEntries(
+  Object.entries(defaultTheme.screens).filter(([key]) =>
+    ['sm', 'md'].includes(key),
+  ),
+),
+``` -->
+
 <!-- #### Vercel Ignore
 
 **Docs:** [Ignored Files and Folders](https://vercel.com/docs/concepts/deployments/build-step#ignored-files-and-folders)

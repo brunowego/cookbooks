@@ -21,7 +21,6 @@
 
 - [1Password](/1password.md)
 - [Bitwarden](/bitwarden/README.md)
-- [KeePass](/keepass.md)
 - [LastPass](/lastpass.md)
 
 <!--
@@ -30,6 +29,7 @@ https://cloaked.app
 
 ### Open Source
 
+- [KeePass](/keepass.md)
 - [Passbolt Community Edition (CE)](/passbolt-ce.md)
 - [Vaultwarden](/bitwarden/vaultwarden/README.md)
 

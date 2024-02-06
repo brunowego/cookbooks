@@ -52,29 +52,22 @@ volta setup
 ```sh
 #
 volta install <tool>@<version>
-volta install node
-volta install pnpm
-volta install yarn
-volta install bun
 
 #
 volta list
-volta list <tool>
+volta list <tool>@<version>
 
 #
-volta pin <tool>
-volta pin node@<version>
-volta pin bun@<version>
+volta pin <tool>@<version>
 
 #
-volta which <tool>
-volta which yarn@<version>
+volta which <tool>@<version>
 
 # REPL
-volta run <tool>
+volta run <tool>@<version>
 
 #
-volta uninstall <tool>
+volta uninstall <tool>@<version>
 ```
 
 <!-- ### Tips

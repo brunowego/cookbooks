@@ -18,7 +18,15 @@ https://github.com/dichioniccolo/bloghub
 https://github.com/uninbox/UnInbox
 -->
 
-**Keywords:** TypeScript ORM, Only SQL
+<!--
+.where(sql`${organizationsTable.name} = ${name} COLLATE NOCASE`)
+
+.where(
+  sql`(${organizationsTable.name} COLLATE NOCASE LIKE ${`%${name}%`})`,
+)
+-->
+
+**Keywords:** TypeScript ORM, Only SQL, Headless ORM
 
 ## Links
 

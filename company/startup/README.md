@@ -202,3 +202,11 @@ https://trueup.io/early-stage-startups
 
 https://workatastartup.com/companies?companySize=seed&companyStage=seed&demographic=any&hasEquity=any&hasSalary=any&industry=any&interviewProcess=any&jobType=any&layout=list-compact&remote=yes&sortBy=company_created_desc&tab=any&usVisaNotRequired=true
 -->
+
+<!--
+We’ll be back soon!
+
+We apologize for the disruption to our website caused by a widespread hosting server outage. Unfortunately, this inconvenience is beyond our control. We're doing everything we can to get back up and running as soon as possible.
+
+— StartupJobs team
+-->

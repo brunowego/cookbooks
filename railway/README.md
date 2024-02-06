@@ -52,6 +52,25 @@ railway run bun run ./src/index.ts
 
 ### Issues
 
+<!-- #### Missing Port
+
+```log
+
+```
+
+PORT -->
+
+#### Monorepo Missing Workspace
+
+```log
+error: workspace dependency "@acme/eslint-config" not found
+```
+
+```sh
+#
+export NIXPACKS_CONFIG_FILE='./services/api/nixpacks.toml'
+```
+
 #### Bun Version Problem
 
 ```log

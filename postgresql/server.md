@@ -274,6 +274,17 @@ volumes:
     driver: local
 ```
 
+<!--
+- type: bind
+  source: ./initdb.sql
+  target: /docker-entrypoint-initdb.d/initdb.sql:ro
+
+
+CREATE DATABASE barcode;
+
+GRANT ALL PRIVILEGES ON DATABASE barcode TO shopner;
+-->
+
 ## Helm
 
 ### References

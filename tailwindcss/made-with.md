@@ -57,12 +57,20 @@ https://himalayas.app/jobs
 
 Profile
 
+https://himalayas.app/@santiagoestrella
+https://himalayas.app/companies/simera
+https://himalayas.app/companies/skup/jobs/customer-success-manager
+https://hey.xyz/u/trustmebro
+https://posts.cv/apek
+https://tape.xyz/u/nohussle
+https://hashnode-t3.vercel.app/u/@ujen_basi
 https://escavador.com/nomes/francisco-carvalho-rodrigues-6221b0ac69
 https://himalayas.app/companies/coinbase
 https://toolfinder.co/tools/evernote
 
 Login
 
+https://app.midday.ai
 https://landingfolio.com/auth/signup
 https://app.prefect.cloud/auth/login
 https://app.boords.com/login
@@ -144,7 +152,6 @@ https://app.daily.dev/onboarding
 https://fi.co/join
 https://auth.featurebase.app/register
 https://mis.fans
-https://proofserve.com/get-started
 https://app.attio.com/welcome/workspace-details
 https://app.formbricks.com/onboarding
 https://app.techfx.com.br/onboarding/partner

@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://keepass.info/)
+- [Main Website](https://keepass.info)
 
 <!--
 kdbx

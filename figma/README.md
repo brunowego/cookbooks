@@ -1,6 +1,10 @@
 # Figma
 
 <!--
+https://grida.co
+-->
+
+<!--
 Thumbnail
 Landing Page
 Web

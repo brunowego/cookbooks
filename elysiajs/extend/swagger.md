@@ -37,8 +37,22 @@ app
           version: '0.0.0',
         },
       },
-      path: '/docs',
-      exclude: ['/docs', '/docs/json'],
+      // path: '/docs',
+      // exclude: ['/docs', '/docs/json'],
     })
   )
 ```
+
+<!-- **Refer:** `./src/http/modules/index.ts`
+
+```ts
+import type Elysia from 'elysia'
+
+export const initModules = (app: Elysia) => {
+  app.get('/', ({ set }) => {
+    set.redirect = '/docs'
+  })
+
+  // ...
+}
+``` -->

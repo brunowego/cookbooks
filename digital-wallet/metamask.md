@@ -3,8 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/MetaMask/metamask-extension)
-- [Main Website](https://metamask.io/)
-- [Download](https://metamask.io/download/)
+- [Download](https://metamask.io/download)
 
 ## Tips
 

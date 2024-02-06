@@ -2,7 +2,7 @@
 
 ## Links
 
-- [xkcd: Password Strength](https://xkcd.com/936/)
+- [xkcd: Password Strength](https://xkcd.com/936)
 
 ## Tools
 
@@ -11,6 +11,7 @@
 - [Kaspersky / Check your password](https://password.kaspersky.com)
 
 <!--
+https://github.com/deanilvincent/check-password-strength
 https://github.com/zxcvbn-ts/zxcvbn
 https://github.com/Kombustor/antd-password-input-strength
 -->

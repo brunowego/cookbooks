@@ -2,6 +2,8 @@
 
 <!--
 cdk.context.json
+
+https://github.com/yicru/otomo/tree/main/infrastructure/cdk
 -->
 
 ## Links

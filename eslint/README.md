@@ -245,6 +245,14 @@ Pages directory cannot be found at /path/to/pages or /path/to/src/pages. If usin
 jq '."eslint.workingDirectories" += [{ "pattern": "./apps/*/" }, { "pattern": "./packages/*/" }]' "$PWD/.vscode/settings.json" | sponge "$PWD/.vscode/settings.json"
 ```
 
+#### TBD
+
+```log
+Parsing error: ESLint was configured to run on `/path/to/test/e2e/dashboard.e2e-spec.ts` using `parserOptions.project`: /path/to/tsconfig.e2e.json
+```
+
+TODO
+
 #### Unecessary Parser Options
 
 ```log
@@ -379,3 +387,12 @@ npx eslint --debug ./
 #
 DEBUG=eslint:* npx eslint ./
 ```
+
+<!--
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.json",
+  "include": ["test/e2e/*.e2e-spec.ts"],
+  "exclude": ["node_modules"]
+}
+-->

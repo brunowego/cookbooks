@@ -20,7 +20,7 @@ https://github.com/leerob/esm
 https://epic-course-platform.vercel.app/
 -->
 
-**Keywords:** Cloud Application Platform; PaaS
+**Keywords:** Cloud Application Platform, PaaS
 
 ## Links
 

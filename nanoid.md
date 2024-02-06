@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/ai/nanoid)
-- [Main Website](https://zelark.github.io/nano-id-cc/)
+- [Main Website](https://zelark.github.io/nano-id-cc)
 
 ## Library
 
@@ -11,7 +11,7 @@
 
 ```sh
 # Using pnpm
-pnpm add @types/nanoid@3 nanoid@3
+pnpm add @types/nanoid nanoid
 ```
 
 ### Issues

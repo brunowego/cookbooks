@@ -15,3 +15,13 @@
 # Using pnpm
 pnpm add react-icons
 ```
+
+<!--
+const menu = [
+  {
+    label: "Dashboard",
+    icon: <Icons.Dashboard className="h-6 w-6" />,
+    path: "/",
+  },
+]
+-->

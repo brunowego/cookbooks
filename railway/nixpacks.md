@@ -53,16 +53,3 @@ nixpacks build \
   ./<path/to/app> \
   -v
 ```
-
-### Issues
-
-#### TBD
-
-```log
-error: workspace dependency "@acme/eslint-config" not found
-```
-
-```sh
-#
-export NIXPACKS_CONFIG_FILE='./apps/api/nixpacks.toml'
-```

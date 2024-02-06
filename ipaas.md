@@ -6,6 +6,10 @@
 
 - [Zapier](https://zapier.com)
 
+<!--
+https://supaglue.com
+-->
+
 ### Open Source
 
 - [Pipedream](/pipedream.md)

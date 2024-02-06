@@ -71,4 +71,17 @@ turso db show --url <name>
 
 #
 turso db tokens create <name>
+
+#
+turso db destroy <name>
 ```
+
+### Issues
+
+#### TBD
+
+```log
+Error: could not create database local: cannot create database on group default because it is sleeping
+```
+
+TODO

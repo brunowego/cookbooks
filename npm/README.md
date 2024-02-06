@@ -81,6 +81,18 @@ npm ci
 
 ### Tips
 
+#### Package with Git Repository
+
+```json
+//
+"<dep-name>": "<owner>/<repo>",
+"<dep-name>": "<owner>/<repo>#<branch>",
+"<dep-name>": "<owner>/<repo>#<commit-hash>",
+
+// Private Repo
+"<dep-name>": "git+https://<token>:x-oauth-basic@github.com/<owner>/<repo>.git"
+```
+
 #### Delete Node Modules
 
 ```sh

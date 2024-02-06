@@ -19,6 +19,17 @@ Mainnet
 Devnet
 -->
 
+<!--
+Blockchain Developer
+Solidity Developer
+De-fi Developer
+Smart Contract Developer
+Web3 Developer
+Ethereum Developer
+Solana Developer
+Rust Developer
+-->
+
 ## References
 
 - [DeFi Pulse](https://defipulse.com)

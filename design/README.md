@@ -1,8 +1,11 @@
 # Design
 
 <!--
+https://fundraiseup.com/contact-sales/
+
 https://gist.github.com/brunowego/6d73ada7fafa3531dcf34681e3ec98e2
 
+https://www.maismei.com.br/
 https://li.fi/sdk/
 https://developer-portfolio.zakariabenali.me/
 -->
@@ -46,7 +49,7 @@ https://developer-portfolio.zakariabenali.me/
 - [UsabilityHub](https://usabilityhub.com)
 
 <!--
-https://saas-ui.dev/
+https://saas-ui.dev
 https://light.so/home
 https://comfortdelgro.github.io/compass-design/design/colors
 https://javaistic.ml/

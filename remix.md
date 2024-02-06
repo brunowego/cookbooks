@@ -11,6 +11,10 @@ https://metronome.sh
 - [Main Website](https://remix.run/)
 - [Alternatives](/alternatives.md#react-framework)
 
+## Learning
+
+- [Remix Guide](https://remix.guide)
+
 ## Library
 
 ### Installation

@@ -1,23 +1,44 @@
 # Neon
 
+<!--
+https://github.com/neondatabase/preview-branches-with-vercel
+-->
+
 **Keywords:** Serverless PostgreSQL, Fault-Tolerant, Branchable Postgres
 
 ## Links
 
 - [Code Repository](https://github.com/neondatabase/neon)
 - [Main Website](https://neon.tech)
+- [Console](https://console.neon.tech)
 
-<!--
-https://github.com/neondatabase/preview-branches-with-vercel
--->
+## CLI
+
+### Installation
+
+#### Homebrew
+
+```sh
+brew install neonctl
+```
+
+### Commands
+
+```sh
+neonctl -h
+```
+
+### Usage
+
+```sh
+#
+neonctl auth
+
+#
+neonctl projects list
+```
 
 <!-- psql -h pg.neon.tech -->
-
-<!--
-pageserver
-
-neondatabase/neon
--->
 
 ## Helm
 

@@ -1,18 +1,18 @@
 # Mono-repo (a.k.a. monorepo)
 
 <!--
-https://monorepo.tools/
+https://monorepo.tools
 -->
 
 **Keyword:** Strategy
 
-## Terms
-
-- Poly-repo (a.k.a multi-repo)
-
 ## Links
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Monorepo)
+
+## Terms
+
+- Poly-repo (a.k.a multi-repo)
 
 ## Tools
 

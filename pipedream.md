@@ -1,6 +1,6 @@
 # Pipedream
 
-**Keywords:** Low-code Integration Tool
+**Keywords:** Low-code Integration Tool, Product Integration, Data Workflow, iPaaS
 
 ## Links
 

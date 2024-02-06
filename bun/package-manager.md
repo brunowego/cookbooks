@@ -10,6 +10,43 @@ https://dev.to/equiman/npm-vs-yarn-vs-pnpm-commands-cheatsheet-3el8
 
 ## CLI
 
+### Configuration
+
+```sh
+#
+bun init
+
+# Or
+cat << EOF > ./package.json
+{
+  "\$schema": "https://json.schemastore.org/package.json",
+  "private": true,
+  "license": "COPYRIGHT",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "latest"
+  },
+  "engines": {
+    "node": ">=$(node --version | sed -E 's/^v//')"
+  },
+  "packageManager": "bun@$(bun --version)"
+}
+EOF
+
+#
+echo  '/node_modules' > .gitignore
+
+#
+bun install
+
+#
+bun x npm-check-updates -ui
+```
+
+**Tips:** Prefer use [Volta](/volta.md)
+
 ### Usage
 
 ```sh
@@ -17,9 +54,6 @@ https://dev.to/equiman/npm-vs-yarn-vs-pnpm-commands-cheatsheet-3el8
 bun pm bin
 bun pm ls
 bun pm cache
-
-#
-bun init
 
 #
 bun install
@@ -41,18 +75,14 @@ bun update
 bun update -f
 ```
 
-<!--
+### Tips
+
+#### Workspaces
+
+```json
 {
   "$schema": "https://json.schemastore.org/package.json",
   // ...
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "bun@1.0.21",
-  "workspaces": [
-    "apps/*",
-    "packages/*",
-    "tooling/*"
-  ]
+  "workspaces": ["apps/*", "packages/*", "services/*", "tooling/*"]
 }
--->
+```

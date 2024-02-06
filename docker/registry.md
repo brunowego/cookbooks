@@ -1,5 +1,15 @@
 # Docker Registry
 
+## Pricing
+
+- [Amazon](https://aws.amazon.com/ecr/pricing)
+- [DigitalOcean](https://digitalocean.com/pricing/container-registry)
+- [GitHub](https://docs.github.com/en/billing/managing-billing-for-github-packages/about-billing-for-github-packages)
+
+<!--
+https://medium.com/@harsh.manvar111/container-registries-comparison-6af23cfa225a
+-->
+
 ## Helm
 
 ### References

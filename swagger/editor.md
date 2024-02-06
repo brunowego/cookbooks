@@ -1,5 +1,9 @@
 # Swagger Editor
 
+<!--
+https://docs.scalar.com/swagger-editor
+-->
+
 ## Docker
 
 ### Network

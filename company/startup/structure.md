@@ -1,26 +1,23 @@
 # Startup Structure
 
-<!--
-Request For Comments (RFCs)
-Internet Engineering Task Force (IETF)
--->
+## Glossary
 
-TODO
-
-<!--
-.github
-assets
-core
-design
-feedback
-
-translations
-blueprint
--->
+- Data Process Agreement (DPA)
+- Internet Engineering Task Force (IETF)
+- Request For Comments (RFCs)
 
 <!--
 Manifesto
 Privacy Policy
 Terms of Service
-Data Process Agreement (DPA)
 -->
+
+## Bootstrap
+
+1. [EditorConfig](/editorconfig.md#configuration)
+2. [Bun PM](/bun/package-manager.md#configuration)
+
+```sh
+#
+mkdir -p ./.github,{apps/{console,landing},packages/{id,ui},services/api,tooling/{eslint-config,tailwind-config,typescript-config}}
+```

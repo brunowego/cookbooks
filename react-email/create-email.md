@@ -1,14 +1,6 @@
-# React Email
+# Create Email
 
-## Links
-
-- [Code Repository](https://github.com/resendlabs/react-email)
-- [Main Website](https://react.email)
-- [Examples](https://react.email/examples)
-
-## Scaffold
-
-### Commands
+## Commands
 
 ```sh
 # Using NPM
@@ -21,14 +13,17 @@ yarn create email -h
 pnpm create email -h
 ```
 
-### Create
+## Create
 
 ```sh
 # Using pnpm
 pnpm create email ./
+
+# Using Bun
+bun create email ./
 ```
 
-### Usage
+## Usage
 
 ```sh
 #
@@ -38,9 +33,9 @@ NODE_DEBUG=preview-email email dev -d ./src/templates -p 8000
 email export -d ./src/templates
 ```
 
-### Issues
+## Issues
 
-#### TBD
+### TBD
 
 ```log
 Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
@@ -48,7 +43,7 @@ Error: Element type is invalid: expected a string (for built-in components) or a
 
 TODO
 
-#### TBD
+### TBD
 
 ```log
 Attempted import error: '../../emails/authentication-magic-link.tsx' does not contain a default export (imported as 'Mail').
@@ -56,7 +51,7 @@ Attempted import error: '../../emails/authentication-magic-link.tsx' does not co
 
 TODO
 
-#### TBD
+### TBD
 
 ```log
 ✘ [ERROR] Could not resolve "react/jsx-runtime"
@@ -64,7 +59,7 @@ TODO
 
 TBD
 
-#### Command Not Found
+### Command Not Found
 
 ```log
 /bin/sh: next: command not found

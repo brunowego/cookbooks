@@ -46,7 +46,7 @@ dig @9.9.9.9 "$DOMAIN" +short NS
 dig @1.1.1.1 "$DOMAIN" +short NS
 
 #
-dig grafana."$DOMAIN" +short CNAME
+dig "<cname>.$DOMAIN" +short CNAME
 
 #
 dig "$DOMAIN" +short MX

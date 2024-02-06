@@ -27,26 +27,26 @@ https://github.com/rizzui/rizzui
 ### Commands
 
 ```sh
-# Using pnpm
-pnpm dlx shadcn-ui@latest -h
+# Using Bun
+bunx shadcn-ui@latest -h
 ```
 
 ### Usage
 
 ```sh
 #
-pnpm dlx shadcn-ui@latest init
-pnpm dlx shadcn-ui@latest init -c ./packages/ui
+bunx shadcn-ui@latest init
+bunx shadcn-ui@latest init -c ./packages/ui
 
 #
-pnpm dlx shadcn-ui@latest add <name>
-pnpm dlx shadcn-ui@latest add -c ./packages/ui <name>
+bunx shadcn-ui@latest add <name>
+bunx shadcn-ui@latest add -c ./packages/ui <name>
 
 #
-pnpm dlx shadcn-ui@latest diff
-pnpm dlx shadcn-ui@latest diff -c ./packages/ui
-pnpm dlx shadcn-ui@latest diff <name>
-pnpm dlx shadcn-ui@latest diff -c ./packages/ui <name>
+bunx shadcn-ui@latest diff
+bunx shadcn-ui@latest diff -c ./packages/ui
+bunx shadcn-ui@latest diff <name>
+bunx shadcn-ui@latest diff -c ./packages/ui <name>
 ```
 
 <!--

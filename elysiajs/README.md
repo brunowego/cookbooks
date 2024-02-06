@@ -1,6 +1,8 @@
 # ElysiaJS
 
 <!--
+https://github.com/rocketseat-education/pizzashop-api
+
 https://github.com/HazelHook/Hazel
 
 https://github.com/asynched/transfer
@@ -23,7 +25,6 @@ https://github.com/QuangPhamvt/ie104-back-end
 https://github.com/itsanji/dairi
 https://github.com/FatihBARACKILIC/recipe-sharing-api
 
-https://github.com/rocketseat-education/pizzashop-api
 https://github.com/Teyvat-Collective-Network/api
 https://github.com/kofta999/simple-bun-auth/tree/master/src
 https://github.com/otaviootavio/elyssia-docker-react-app/tree/master/api/src
