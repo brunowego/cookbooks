@@ -83,7 +83,7 @@ import showToast from '@/lib/notification'
 
 // ...
 ;<button
-  className="bg-green-600 py-2 px-5 text-white"
+  className="py-2 px-5 text-white bg-green-600"
   onClick={() => {
     showToast('Successfully toasted!', 'success')
   }}

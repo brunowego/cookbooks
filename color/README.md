@@ -69,15 +69,27 @@ https://maketintsandshades.com
 
 ### Palette Generator
 
+#### Tailwind
+
+- [Grayscale Design / Color Palette Generator](https://grayscale.design/app)
+- [tints.dev / Palette Generator](https://tints.dev) 🌟 (Best)
+
+#### Between Two Colors
+
 - [ColorDesigner / Gradient Generator](https://colordesigner.io/gradient-generator)
 - [ColorKit / Gradient Palette](https://colorkit.co/gradient-palette)
 - [Coolors / Gradient Palette](https://coolors.co/gradient-palette) 🌟
-- [Grayscale Design / Color Palette Generator](https://grayscale.design/app)
-- [tints.dev / Palette Generator](https://tints.dev) 🌟
+
+<!--
+https://tailcolor.com/palettes
+https://javisperez.github.io/tailwindcolorshades/
+https://tailwind-color-palette.netlify.app
+https://uicolors.app/create
+-->
 
 ### Converter
 
-- [Colorffy / HEX to HSL](https://colorffy.com/color-converter/hex-to-hsl)
+- [Colorffy / HEX to HSL](https://colorffy.com/color-converter/hex-to-hsl) 🌟
 - [ConvertAColor](https://convertacolor.com) 🌟
 - [EasyRetro / HEX to HSL](https://easyretro.io/tools/hex-to-hsl)
 

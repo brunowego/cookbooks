@@ -17,6 +17,9 @@ npm install npkill -g
 
 # Using Yarn v1.x
 yarn global add npkill
+
+# Using Bun
+bun add npkill -g
 ```
 
 ### Commands
@@ -28,6 +31,9 @@ npx npkill -h
 # Using pnpm
 pnpm dlx npkill -h
 
+#
+bunx npkill -h
+
 # Using local
 npkill -h
 ```
@@ -36,5 +42,5 @@ npkill -h
 
 ```sh
 #
-npkill -d ./<path>
+npkill -d ./
 ```

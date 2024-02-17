@@ -167,11 +167,13 @@ Error: Text content does not match server-rendered HTML.
 
 TODO
 
-### Missing Babel
+### Missing FS Module
 
 ```log
 Module not found: Can't resolve 'fs'
 ```
+
+#### Using Babel
 
 Try create `.babelrc` file with the following content:
 
@@ -180,6 +182,27 @@ Try create `.babelrc` file with the following content:
   "presets": ["next/babel"],
   "plugins": ["macros"]
 }
+```
+
+#### Using SWC
+
+```sh
+# Using Bun
+bun add @lingui/swc-plugin
+```
+
+```mjs
+/**
+ * @type { import('next').NextConfig }
+ */
+const nextConfig = {
+  // ...
+  experimental: {
+    swcPlugins: [['@lingui/swc-plugin', {}]],
+  },
+}
+
+export default nextConfig
 ```
 
 ### Missing I18n Provider
@@ -207,6 +230,11 @@ I18nProvider did not render. A call to i18n.activate still needs to happen or fo
 ```log
 I18nProvider rendered `null`. A call to `i18n.activate` needs to happen in order for translations to be activated and for the I18nProvider to render. This is not an error but an informational message logged only in development.
 ```
+
+<!--
+https://github.com/lingui/js-lingui/issues/1838
+https://github.com/lingui/js-lingui/issues/1194
+-->
 
 TODO
 

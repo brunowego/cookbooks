@@ -37,7 +37,7 @@ https://www.sealights.io/software-development-metrics/10-powerful-agile-metrics-
 
 ## References
 
-- [Manifesto for Agile Software Development](https://agilemanifesto.org/)
+- [Manifesto for Agile Software Development](https://agilemanifesto.org)
 
 ## Metrics
 

@@ -1,5 +1,9 @@
 # Authorization (authz)
 
+<!--
+https://permit.io
+-->
+
 ## Access Control Types
 
 - Access-Control List (ACL)

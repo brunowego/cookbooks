@@ -34,23 +34,12 @@ yarn add msw --dev
 
 # Using pnpm
 pnpm add msw -D
+
+# Using Bun
+bun add msw -D
 ```
 
 ### Configuration
-
-**Refer:** `./.eslintrc.cjs`
-
-```cjs
-/**
- * @type { import('eslint').Linter.Config }
- */
-const eslintRC = {
-  // ...
-  ignorePatterns: ['mockServiceWorker.js'],
-}
-
-module.exports = eslintRC
-```
 
 **Refer:** `./package.json`
 
@@ -58,7 +47,7 @@ module.exports = eslintRC
 {
   // ...
   "msw": {
-    "workerDirectory": "public"
+    "workerDirectory": ["public"]
   }
 }
 ```
@@ -78,7 +67,7 @@ if (typeof window === 'undefined') {
 } else {
   const worker: SetupWorkerApi = require('./worker').worker
 
-  worker.start({ onUnhandledRequest: 'bypass' })
+  await worker.start({ onUnhandledRequest: 'bypass' })
 }
 ```
 
@@ -109,7 +98,49 @@ export const worker = setupWorker(...handlers)
 ./node_modules/.bin/msw init ./public
 ```
 
+### Tips
+
+#### Linting
+
+##### ESLint
+
+**Refer:** `./.eslintrc.cjs`
+
+```cjs
+/**
+ * @type { import('eslint').Linter.Config }
+ */
+const eslintRC = {
+  // ...
+  ignorePatterns: ['mockServiceWorker.js'],
+}
+
+module.exports = eslintRC
+```
+
+##### Biome
+
+**Refer:** `./biome.json`
+
+```json
+{
+  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+  // ...
+  "files": {
+    "ignore": ["public/mockServiceWorker.js"]
+  }
+}
+```
+
 ### Issues
+
+#### TBD
+
+```log
+GET http://localhost:4000/api/v1/me 404 (Not Found)
+```
+
+TODO
 
 #### TBD
 

@@ -20,7 +20,7 @@ pnpm add react-icons
 const menu = [
   {
     label: "Dashboard",
-    icon: <Icons.Dashboard className="h-6 w-6" />,
+    icon: <Icons.Dashboard className="w-6 h-6" />,
     path: "/",
   },
 ]

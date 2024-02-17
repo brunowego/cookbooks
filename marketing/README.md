@@ -4,12 +4,16 @@
 https://github.com/mautic/mautic
 -->
 
-## Terms
+## Glossary
 
 - Business-To-Business (B2B)
 - Business-To-Consumer (B2C)
-- Cutthroat Competition
 - Environmental Social and Governance (ESG)
+- Video Sales Letter (VSL)
+
+## Terms
+
+- Cutthroat Competition
 - False Engagement
 - Guerrilla Marketing
 - Media Training

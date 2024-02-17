@@ -11,6 +11,9 @@
 ```sh
 # Using NPM
 npm install gpt-po -g
+
+# Using Bun
+bun add gpt-po -g
 ```
 
 ### Commands
@@ -34,6 +37,5 @@ export OPENAI_API_KEY='sk-...'
 
 ```sh
 #
-gpt-po --po ./messages.po -l Portuguese --verbose
 gpt-po translate --po ./messages.po -l Portuguese --verbose
 ```

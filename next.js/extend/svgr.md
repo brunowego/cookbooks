@@ -15,6 +15,9 @@ yarn add @svgr/webpack --dev
 
 # Using pnpm
 pnpm add @svgr/webpack -D
+
+# Using Bun
+bun add @svgr/webpack -D
 ```
 
 ## Configuration
@@ -58,4 +61,27 @@ const nextConfig = {
 }
 
 export default nextConfig
+```
+
+## Issues
+
+### Chalk ESM Error
+
+```log
+Error [ERR_REQUIRE_ESM]: require() of ES Module </absolute/path/to>/node_modules/ansi-styles/index.js from </absolute/path/to>/node_modules/chalk/index.js not supported.
+```
+
+<!--
+https://stackoverflow.com/questions/70309135/chalk-error-err-require-esm-require-of-es-module
+-->
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "overrides": {
+    "chalk": "5.3.0"
+  }
+}
 ```

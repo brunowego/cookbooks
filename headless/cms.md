@@ -2,17 +2,24 @@
 
 **Keywords:** Content Platform, JAMStack
 
-## Options
+## Solutions
 
-- [Strapi](/strapi/README.md) 🌟
-- [Storyblok](https://storyblok.com)
-- [Sanity](/sanity/README.md) 🌟
-- [Netlify CMS](https://netlifycms.org)
-- [Keystone](/keystonejs.md)
-- [Ghost](https://ghost.org)
+### Open Source
+
 - [Contentful](https://contentful.com)
+- [Daptin](https://github.com/daptin/daptin) (LGPL-3.0)
+- [Ghost](https://ghost.org)
+- [Keystone](/keystonejs.md) (MIT)
+- [Netlify CMS](https://netlifycms.org)
+- [Payload](/payload/README.md) 🌟 (MIT)
+- [Sanity](/sanity/README.md) 🌟
+- [Storyblok](https://storyblok.com)
+- [Strapi](/strapi/README.md)
 
 <!--
+https://github.com/vriteio/vrite
+https://github.com/apostrophecms/apostrophe
+https://github.com/BuilderIO/builder
 https://github.com/gobeam/truthy
 -->
 
@@ -23,8 +30,6 @@ https://github.com/gobeam/truthy
 - [Publii](/publii.md)
 
 <!--
-https://github.com/payloadcms/payload
-
 https://retype.com
 
 https://jamstack.org/headless-cms

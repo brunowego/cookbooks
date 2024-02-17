@@ -16,4 +16,4 @@ https://github.com/sighupio/permission-manager
 
 ## Implementations
 
-- [NextShield](https://imjulianeral.github.io/next-shield/)
+- [NextShield](https://imjulianeral.github.io/next-shield)

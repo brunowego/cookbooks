@@ -3,7 +3,7 @@
 ## IP Address
 
 ```sh
-docker inspect --format '{{json .NetworkSettings.Networks}}' [container]
+docker inspect --format '{{json .NetworkSettings.Networks}}' <container>
 ```
 
 ### All

@@ -36,7 +36,7 @@ docker run -d \
   -p 27017:27017 \
   --name mongodb \
   --network workbench \
-  docker.io/library/mongo:5.0.15
+  docker.io/library/mongo:7.0.5
 
 # With User and Password
 docker run -d \
@@ -50,7 +50,7 @@ docker run -d \
   -p 27017:27017 \
   --name mongodb \
   --network workbench \
-  docker.io/library/mongo:5.0.15
+  docker.io/library/mongo:7.0.5
 
 # With Replica Set
 docker run -d \
@@ -61,7 +61,7 @@ docker run -d \
   -p 27017:27017 \
   --name mongodb \
   --network workbench \
-  docker.io/library/mongo:5.0.15 mongod --replSet rs0
+  docker.io/library/mongo:7.0.5 mongod --replSet rs0
 
 docker exec mongodb mongosh --eval 'rs.initiate({_id: "rs0", members: [{_id: 0, host: "localhost:27017"}]})'
 ```
@@ -80,7 +80,7 @@ ssl=false
 
 ```sh
 docker run -it --rm \
-  docker.io/library/mongo:5.0.15 mongo -h
+  docker.io/library/mongo:7.0.5 mongo -h
 ```
 
 ### Remove
@@ -105,7 +105,7 @@ version: '3'
 
 services:
   mongodb:
-    image: docker.io/library/mongo:6.0.13
+    image: docker.io/library/mongo:7.0.5
     volumes:
       - type: volume
         source: mongodb-data
@@ -117,6 +117,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME:
       MONGO_INITDB_ROOT_PASSWORD:
       MONGO_INITDB_DATABASE:
+    command: --storageEngine=wiredTiger
     ports:
       - target: 27017
         published: $MONGODB_PORT
@@ -135,10 +136,14 @@ volumes:
 ```env
 MONGODB_HOST=localhost
 MONGODB_PORT=27017
-MONGO_INITDB_ROOT_USERNAME=root
-MONGO_INITDB_ROOT_PASSWORD=root
+MONGO_INITDB_ROOT_USERNAME=dev
+MONGO_INITDB_ROOT_PASSWORD=dev
 MONGO_INITDB_DATABASE=dev
 ```
+
+<!--
+mongodb://dev:dev@localhost/dev
+-->
 
 ## CLI
 

@@ -17,6 +17,10 @@ https://github.com/hapijs/joi
 
 - [Code Repository](https://github.com/colinhacks/zod)
 
+## Tools
+
+- [transform / JSON to Zod Schema](https://transform.tools/json-to-zod)
+
 <!-- **Refer:** `./src/schemas/post.ts`
 
 ```ts

@@ -22,6 +22,8 @@ https://github.com/recharts/recharts/issues/3615
 Workaround for `defaultProps` warning:
 
 ```ts
+// ...
+
 const error = console.error
 
 console.error = (...args) => {
@@ -29,4 +31,6 @@ console.error = (...args) => {
 
   error(...args)
 }
+
+// ...
 ```

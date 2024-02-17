@@ -6,7 +6,7 @@
 
 ## Links
 
-- [Code Repository](https://github.com/mdx-js/mdx/)
+- [Code Repository](https://github.com/mdx-js/mdx)
 - [Main Website](https://mdxjs.com)
 
 ## Tips

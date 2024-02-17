@@ -63,6 +63,28 @@ ln -s /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome /usr/local/
 
 ### Tips
 
+#### Change Language
+
+<!--
+https://en.wikipedia.org/wiki/IETF_language_tag
+-->
+
+```sh
+#
+defaults read com.google.Chrome AppleLanguages
+
+#
+defaults write com.google.Chrome AppleLanguages '(pt-BR)'
+defaults write com.google.Chrome AppleLanguages '(es, es-ES)'
+
+#
+defaults delete com.google.Chrome AppleLanguages
+```
+
+<!--
+window.navigator.language
+-->
+
 <!-- ####
 
 ```sh

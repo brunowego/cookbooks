@@ -5,6 +5,8 @@
 - [Server-Sent Events (SSE)](/sse.md)
 
 <!--
+https://github.com/zircon-tech/sse
+
 https://github.com/zhangdongsh/L-GPT/blob/main/src/app/api/azure/route.ts
 
 https://velog.io/@baby_dev/Server-Component-%EC%8B%A4%EC%A0%84%EC%97%90%EC%84%9C-%EC%8D%A8%EB%A8%B9%EA%B8%B0-2%ED%8E%B8

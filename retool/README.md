@@ -10,7 +10,7 @@ https://github.com/illacloud/illa-builder
 
 - [Code Repository](https://github.com/tryretool/retool-onpremise)
 - [Main Website](https://retool.com)
-- [Integrations](https://retool.com/integrations/)
+- [Integrations](https://retool.com/integrations)
 
 ## Helm
 

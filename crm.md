@@ -12,6 +12,7 @@
 - [Salesforce CRM](https://salesforce.com/crm)
 
 <!--
+https://cubosuite.com.br
 https://cloud.taygo.com
 https://keap.com
 https://pipefy.com

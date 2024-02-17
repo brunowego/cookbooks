@@ -42,8 +42,6 @@ xcrun simctl create 'iPad Air (3rd generation)' 'com.apple.CoreSimulator.SimDevi
 #
 xcrun simctl list devices 'iPhone 11 Pro Max'
 
-# -AppleLanguages '(pt-BR)' -AppleLocale 'pt_BR'
-
 #
 export SIMULATOR_UDID="$(xcrun simctl getenv booted SIMULATOR_UDID)"
 # or, specify the device name
@@ -57,10 +55,10 @@ xcrun simctl boot "$SIMULATOR_UDID"
 xcrun simctl list | grep Booted
 
 #
-open -a simulator
+# xcrun simctl launch booted -AppleLanguages '(pt-BR)' -AppleLocale 'pt_BR'
 
-# xcrun simctl install booted ./demo.app
-# xcrun simctl launch <device> <bundle> <arguments>
+#
+open -a simulator
 
 #
 xcrun simctl shutdown "$SIMULATOR_UDID"

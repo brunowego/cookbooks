@@ -17,3 +17,18 @@ https://github.com/m1guelpf/chatgpt-telegram
 ## Glossary
 
 - Generative Pre-trained Transformer (GPT)
+
+## Solutions
+
+### Managed
+
+TODO
+
+<!--
+https://botconversa.com.br
+https://manychat.com
+-->
+
+### Open Source
+
+- [Typebot](/typebot/README.md)

@@ -29,4 +29,15 @@ https://github.com/makeless/makeless-go
 https://github.com/HugoGresse/open-feedback
 -->
 
-TODO
+## Permissions
+
+1. Super Admin / Owner
+2. Admin / Administrator
+3. Manager / Supervisor
+4. User / Member / Employee
+5. Viewer / Read-Only
+6. Customer Support / Help Desk
+7. Billing / Finance
+8. Content Creator / Editor
+9. API User / Integration User
+10. Auditor / Compliance Officer

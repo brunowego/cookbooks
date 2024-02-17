@@ -3,7 +3,7 @@
 ## Commands
 
 ```sh
-npx create-payload-app -h
+bunx create-payload-app -h
 ```
 
 ## Dependencies
@@ -12,7 +12,33 @@ npx create-payload-app -h
 #
 docker network create workbench \
   --subnet 10.1.1.0/24
+```
 
+### MongoDB
+
+```sh
+#
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h mongodb \
+  -v mongodb-data:/data/db \
+  -v mongodb-configdb:/data/configdb \
+  -e MONGO_INITDB_ROOT_USERNAME='payload' \
+  -e MONGO_INITDB_ROOT_PASSWORD='payload' \
+  -e MONGO_INITDB_DATABASE='payload' \
+  -p 27017:27017 \
+  --name payload-mongodb \
+  --network workbench \
+  docker.io/library/mongo:7.0.5-jammy
+```
+
+<!--
+mongodb://payload:payload@localhost:5432/payload
+-->
+
+### PostgreSQL
+
+```sh
 #
 docker run -d \
   $(echo "$DOCKER_RUN_OPTS") \
@@ -27,20 +53,19 @@ docker run -d \
   docker.io/library/postgres:15.1-alpine
 ```
 
+<!--
+postgres://payload:payload@localhost:5432/payload
+-->
+
 ## Usage
+
+<!--
+https://github.com/payloadcms/payload/tree/main/templates
+-->
 
 ```sh
 #
-npx create-payload-app \
-  -n my-store \
-  -t ecommerce \
+bunx create-payload-app \
+  -n cms \
   --use-pnpm
-
-# postgres://payload:payload@127.0.0.1:5432/payload
-
-#
-cd ./my-store
-
-#
-pnpm dev
 ```

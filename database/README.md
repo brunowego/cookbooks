@@ -22,6 +22,10 @@ https://linkedin.com/learning/database-foundations-administration-8375189/admini
 
 - [ByteByteGo / Key Steps in the Database Selection Process](https://blog.bytebytego.com/p/key-steps-in-the-database-selection)
 
+## Comparisons
+
+- [Wappalyzer / MongoDB vs. PostgreSQL](https://wappalyzer.com/compare/mongodb-vs-postgresql/)
+
 ## Glossary
 
 - Data Definition Language (DDL)

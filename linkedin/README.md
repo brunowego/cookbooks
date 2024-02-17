@@ -26,11 +26,11 @@ Hands-on – Prototype / POC
 
 ## Links
 
-- [Following](https://linkedin.com/feed/following/)
+- [Following](https://linkedin.com/feed/following)
 - [Social Selling Index (SSI)](https://linkedin.com/sales/ssi)
 - My Network
-  - [Invitation Sent](https://linkedin.com/mynetwork/invitation-manager/sent/)
-- [Manage Job Alerts](https://linkedin.com/jobs/jam/)
+  - [Invitation Sent](https://linkedin.com/mynetwork/invitation-manager/sent)
+- [Manage Job Alerts](https://linkedin.com/jobs/jam)
 
 ## Tips
 

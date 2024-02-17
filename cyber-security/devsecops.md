@@ -1,6 +1,10 @@
 # DevSecOps
 
 <!--
+https://kapstan.io
+-->
+
+<!--
 https://github.com/hahwul/DevSecOps
 
 https://app.pluralsight.com/paths/skill/fundamentals-of-devsecops

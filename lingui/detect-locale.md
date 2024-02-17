@@ -12,3 +12,14 @@ LocalStorage: lang=pt
 fromNavigator()
 navigator.language: pt
 -->
+
+## Configuration
+
+```ts
+import {
+  detect,
+  fromUrl,
+  fromStorage,
+  fromNavigator,
+} from '@lingui/detect-locale'
+```

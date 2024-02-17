@@ -28,6 +28,17 @@ npm install nodemon -D
 }
 ```
 
+<!--
+nodemon.json
+
+{
+  "$schema": "http://json.schemastore.org/nodemon",
+  "watch": ["./src/**/*"],
+  "ext": "ts",
+  "exec": "bun ./src/server.ts -- -I"
+}
+-->
+
 ## Docker
 
 ### Image

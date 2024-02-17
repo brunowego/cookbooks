@@ -1,5 +1,9 @@
 # i18next
 
+<!--
+https://github.com/lukevella/rallly/blob/main/apps/web/src/app/i18n/client.tsx
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/i18next/next-i18next)

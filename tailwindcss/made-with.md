@@ -46,6 +46,21 @@ https://liveblocks.io/test
 https://coastpay.com/test
 https://infisical.com/test
 
+Chat
+
+https://demo.foxthemes.net/socialite-v3.0/messages.html
+https://angular-material.fusetheme.com/apps/chat/ff6bc7f1-449a-4419-af62-b89ce6cae0aa
+https://midone-html.vercel.app/rubick-side-menu-chat-page.html
+https://mannatthemes.com/tailfox/default/projects-chat.html
+https://scribbler-react.themeyn.com/app/templates/chatbot
+https://wp.alithemes.com/html/frox/demos/chat-page-1.html
+https://wp.alithemes.com/html/frox/demos/chat-page-3.html
+https://square-eta.vercel.app/chat
+
+Booking
+
+https://chisfis-template.vercel.app/listing-stay-detail
+
 Help Center
 
 https://chatwoot.com/help-center
@@ -57,6 +72,7 @@ https://himalayas.app/jobs
 
 Profile
 
+https://app.opensauced.pizza/user/nickytonline
 https://himalayas.app/@santiagoestrella
 https://himalayas.app/companies/simera
 https://himalayas.app/companies/skup/jobs/customer-success-manager
@@ -70,6 +86,9 @@ https://toolfinder.co/tools/evernote
 
 Login
 
+https://console.baselime.io/login
+https://dashboard.mintlify.com/login
+https://fly.io/app/sign-in
 https://app.midday.ai
 https://landingfolio.com/auth/signup
 https://app.prefect.cloud/auth/login
@@ -82,6 +101,10 @@ https://metafy.gg/auth/account/create
 https://app.logsnag.com/auth/sign-in
 https://cloud.tailwarden.com/sign-in
 https://auth.planetscale.com/sign-in
+
+Integrations
+
+https://app.frigade.com/integrations
 
 Pricing
 
@@ -96,8 +119,16 @@ Placeholder
 
 https://metafy.gg/account/library
 
+Plans
+
+https://console.baselime.io/brunowego/plans
+
 Dashboard
 
+https://vercel-clone-three.vercel.app/dashboard
+https://app.specfy.io/
+https://console.qovery.com
+https://console.baselime.io/brunowego
 https://app.golaunchpad.com/consumer/account
 https://app.plane.so
 https://app.logsnag.com/dashboard
@@ -148,6 +179,8 @@ https://qwiz.party (mantine)
 
 Onboarding
 
+https://cloud.tiptap.dev/register
+https://dashboard.mintlify.com/onboarding
 https://app.daily.dev/onboarding
 https://fi.co/join
 https://auth.featurebase.app/register
@@ -157,12 +190,22 @@ https://app.formbricks.com/onboarding
 https://app.techfx.com.br/onboarding/partner
 https://app.boords.com/welcome
 
+Billing
+
+https://liveblocks.io/dashboard/SywVjn6Ertu-ji8SSOqB2/settings/billing
+
+Members
+
+https://liveblocks.io/dashboard/SywVjn6Ertu-ji8SSOqB2/members/invitations
+
 Progress
 
 https://rekrabice.cz
 
 Blog
 
+https://ncmaz-nextjs.vercel.app/single/this-is-single-slug
+https://ideko.netlify.app/category
 https://helicone.ai/blog
 https://supabase.com/blog
 https://clearbit.com/blog
