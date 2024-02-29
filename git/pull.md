@@ -16,6 +16,16 @@ find . \
 
 ## Issues
 
+### Refusing Merge
+
+```log
+fatal: refusing to merge unrelated histories
+```
+
+```sh
+git pull --allow-unrelated-histories
+```
+
 ### Turn Off Fast-Forward
 
 ```log

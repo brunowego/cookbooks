@@ -3,6 +3,8 @@
 **Keywords:** Live chat, Customer Service
 
 <!--
+https://www.youtube.com/watch?v=G8S_QFyTbl0
+
 https://artifacthub.io/packages/helm/chatwoot/chatwoot
 -->
 

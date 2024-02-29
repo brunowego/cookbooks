@@ -1,5 +1,7 @@
 # Clerk
 
+**Keywords:** Authentication (authn), Identity
+
 ## Links
 
 - [Org. Repository](https://github.com/clerkinc)

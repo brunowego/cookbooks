@@ -4,14 +4,10 @@
 https://grafana.com/grafana/dashboards?search=Jitsi
 -->
 
-## Alternatives
-
-- [Kurento](/kurento.md)
-
 ## Links
 
 - [Code Repository](https://github.com/jitsi/jitsi)
-- [Main Website](https://jitsi.org/)
+- [Main Website](https://jitsi.org)
 
 ## Solutions
 

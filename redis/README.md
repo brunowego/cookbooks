@@ -17,6 +17,14 @@ https://medium.com/swlh/use-the-source-redis-internal-tricks-5a8b735b9ef0
 ## Tools
 
 - [DBeaver Enterprise Edition (EE)](/dbeaver/dbeaver-ee.md)
+- [RedisInsight](/redis/redisinsight.md)
+
+<!--
+https://joeferner.github.io/redis-commander
+https://github.com/RedisInsight/RedisDesktopManager
+https://github.com/ekvedaras/redis-gui
+https://redsmin.com
+-->
 
 ## Providers
 

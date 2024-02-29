@@ -18,6 +18,22 @@ git show-branch -r
 
 ## Tips
 
+### With Sort
+
+```sh
+git branch --sort -committerdate
+```
+
+### Set Upstream Branch
+
+```sh
+git branch --set-upstream-to=origin/<branch> <branch>
+```
+
+<!--
+git branch --set-upstream-to <remote-branch>
+-->
+
 ### Rename Branch
 
 <!--

@@ -1,5 +1,9 @@
 # PO File Translation Tool for ChatGPT (gpt-po)
 
+<!--
+https://github.com/pandodao/i18n-cli
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/ryanhex53/gpt-po)

@@ -117,6 +117,21 @@ pnpm add ts-node tsconfig-paths -D
 
 ## Issues
 
+### Missing Type Module
+
+```log
+The current file is a CommonJS module whose imports will produce 'require' calls; however, the referenced file is an ECMAScript module and cannot be imported with 'require'. Consider writing a dynamic 'import("@acme/<package-name>")' call instead.
+```
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "type": "module"
+}
+```
+
 ### Strict Null Checks
 
 ```log

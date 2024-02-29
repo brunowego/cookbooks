@@ -22,6 +22,18 @@ https://github.com/rizzui/rizzui
 
 - [Shadcn UI Crash Course #1 - Introduction & Setup](https://youtube.com/watch?v=wcTzlJi2Oz4)
 
+## Tools
+
+### Themes
+
+- [shadcn/ui (official)](https://ui.shadcn.com/themes)
+- [shadcn/ui customizer](https://shadcn-ui-customizer.vercel.app)
+
+<!--
+https://github.com/Tellay/shadcn-ui-themes
+https://github.com/kiliman/shadcn-custom-theme
+-->
+
 ## CLI
 
 ### Commands
@@ -30,6 +42,8 @@ https://github.com/rizzui/rizzui
 # Using Bun
 bunx shadcn-ui@latest -h
 ```
+
+#131314
 
 ### Usage
 

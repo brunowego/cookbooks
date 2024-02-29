@@ -30,7 +30,8 @@ https://tailbits.com
 
 - [Code Repository](https://github.com/tailwindlabs/tailwindcss)
 - [Main Website](https://tailwindcss.com)
-- [Docs](https://tailwindcss.com/docs)c
+- [Docs](https://tailwindcss.com/docs)
+- [Tailwind Play](https://play.tailwindcss.com)
 - Examples
   - [CodePen](https://codepen.io/search/pens?q=tailwind)
 
@@ -43,7 +44,7 @@ https://tailbits.com
 
 - [Himalayas](https://himalayas.app)
 - [PlanetScale](https://planetscale.com)
-- [Supabase](https://supabase.io/)
+- [Supabase](https://supabase.io)
 
 <!-- ## UI Kit -->
 
@@ -64,6 +65,7 @@ https://tailbits.com
 
 ## Tools
 
+- [Tailwind Gradient Generator](https://tailwind-gradient-generator.vercel.app)
 - Converter
   - [Lembdadev / CSS to TailwindCSS Converter](https://lembdadev.com/css-to-tailwind-converter)
   - [Transform / CSS to TailwindCSS](https://transform.tools/css-to-tailwind)

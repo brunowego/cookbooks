@@ -20,7 +20,7 @@ https://github.com/leerob/esm
 https://epic-course-platform.vercel.app/
 -->
 
-**Keywords:** Cloud Application Platform, PaaS
+**Keywords:** Cloud Application Platform, PaaS, Frontend Cloud
 
 ## Links
 
@@ -257,13 +257,23 @@ EOF
 
 ### Issues
 
-#### TBD
+#### Wrong Sharp Version
 
 ```log
 RangeError: Maximum call stack size exceeded
 ```
 
-TODO
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "dependencies": {
+    // ...
+    "sharp": "0.33.1"
+  }
+}
+```
 
 #### Defined Node.js Version
 

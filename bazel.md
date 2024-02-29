@@ -1,7 +1,7 @@
 # Bazel
 
 <!--
-https://www.youtube.com/watch?v=mXLrk0ipwz4
+https://youtube.com/watch?v=mXLrk0ipwz4
 -->
 
 ## Links

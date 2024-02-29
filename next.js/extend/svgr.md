@@ -65,6 +65,14 @@ export default nextConfig
 
 ## Issues
 
+### Missing SVG Support
+
+```log
+Error: Unsupported Server Component type: {...}
+```
+
+Just install SVGR.
+
 ### Chalk ESM Error
 
 ```log
@@ -81,7 +89,7 @@ https://stackoverflow.com/questions/70309135/chalk-error-err-require-esm-require
 {
   // ...
   "overrides": {
-    "chalk": "5.3.0"
+    "chalk": "4.1.2"
   }
 }
 ```

@@ -14,6 +14,7 @@ about:preferences#general > Language
 
 ## Tools
 
+- [CSpell (a.k.a. spellcheck)](/cspell.md)
 - [PO File Translation Tool for ChatGPT (gpt-po)](/gpt-po.md)
 
 <!--

@@ -36,3 +36,7 @@ https://mockbin.io
 <!--
 https://github.com/keploy/keploy
 -->
+
+#### Fake REST API
+
+- [JSON Server](/json-server.md)

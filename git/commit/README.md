@@ -121,3 +121,15 @@ git commit --all -m 'New commit'
 
 git rebase --continue
 ```
+
+## Issues
+
+### Amend Merge
+
+```log
+fatal: You are in the middle of a merge -- cannot amend.
+```
+
+```sh
+git commit -a
+```

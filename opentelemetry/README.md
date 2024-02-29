@@ -1,5 +1,9 @@
 # OpenTelemetry (OTel) (Old OpenCensus and OpenTracing)
 
+<!--
+https://github.com/dash0hq/otelbin
+-->
+
 **Keywords:** Standard Instrumentation
 
 ## Links
@@ -16,6 +20,10 @@
 
 - [OpenTracing](/opentracing.md)
 - [OpenCensus](https://opencensus.io)
+
+<!--
+https://otelbin.io
+-->
 
 ## Basic
 

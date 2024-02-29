@@ -10,6 +10,7 @@ https://github.com/github/feedback
 
 <!--
 https://tally.so/feedback
+
 -->
 
 ## Glossary
@@ -34,7 +35,7 @@ https://tally.so/feedback
 - [Sleekplan](https://sleekplan.com)
 - [Upvoty](https://upvoty.com)
 
-
 <!--
+https://feedbase.app
 https://featurebase.app
 -->

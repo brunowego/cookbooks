@@ -4,6 +4,8 @@
 https://blog.logrocket.com/how-to-bootstrap-your-project-with-json-server/
 -->
 
+**Keywords:** Fake REST API
+
 ## Links
 
 - [Code Repository](https://github.com/typicode/json-server)
@@ -23,42 +25,32 @@ yarn global add json-server
 ### Commands
 
 ```sh
-json-server -h
+json-server --help
 ```
 
 ### Usage
 
 ```sh
 #
-json-server \
-  -H 127.0.0.1 \
-  -p 3000 \
-  -w \
-  -r <(cat << EOF
+cat << EOF > ./db.json
 {
-  "/api/*": "/$1"
-}
-EOF
-) \
-  ./<name>.json
-
-#
-cat << EOF > ./json-server.json
-{
-  "port": "3000",
-  "host": "127.0.0.1",
-  "watch": true,
-  "routes": "./routes.json"
+  "posts": [
+    { "id": "1", "title": "a title", "views": 100 },
+    { "id": "2", "title": "another title", "views": 200 }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
 EOF
 
-json-server \
-  -c ./json-server.json \
-  ./<name>.json
+#
+json-server ./db.json
 
 #
-json-server \
-  -c ./json-server.json \
-  ./<name>.json \
-  -m ./middlewares.js
+curl http://localhost:3000/posts/1
 ```

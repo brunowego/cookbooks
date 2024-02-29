@@ -9,7 +9,7 @@ https://github.com/uidu-org/uidu-cube
 https://github.com/seb7887/ecommerce-platform/tree/main
 -->
 
-**Keywords:** Metrics API, Semantic Layer
+**Keywords:** Metrics API, Semantic Layer, React Chart
 
 ## Links
 

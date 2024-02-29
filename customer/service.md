@@ -32,3 +32,8 @@ https://freshdesk.com/helpdesk-management/ticketing-system/open-source
 - [osTicket](https://github.com/osTicket/osTicket)
 - [UVdesk](https://uvdesk.com)
 - [Zammad](https://github.com/zammad/zammad)
+
+<!--
+https://github.com/papercups-io/papercups
+https://github.com/chaskiq/chaskiq
+-->

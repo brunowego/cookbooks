@@ -1,6 +1,12 @@
 # Payload
 
 <!--
+I18n
+
+https://www.youtube.com/watch?v=w58O_E0La3M
+
+
+https://github.com/joschan21/digitalhippo
 https://github.com/gustav-evensson/sjogren-innovation
 https://github.com/RicardoGEsteves/next-digital-marketplace
 https://github.com/Polo11121/Nextjs14-Digital-Marketplac-App

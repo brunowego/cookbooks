@@ -5,6 +5,7 @@
 - [Code Repository](https://github.com/resendlabs/react-email)
 - [Main Website](https://react.email)
 - [Examples](https://react.email/examples)
+  - [Code Repository](https://github.com/resend/react-email/tree/canary/apps/demo/emails)
 
 ## Library
 
@@ -16,6 +17,28 @@ bun add @react-email/components react-email
 ```
 
 ### Issues
+
+#### Tailwind Error
+
+```log
+Error: Tailwind: To use responsive styles you must have a <head> element as a direct child of the Tailwind component.
+```
+
+```tsx
+export const Email = () => {
+  return (
+    <Html>
+      <Tailwind>
+        <Head />
+
+        <Preview />
+
+        <Body />
+      </Tailwind>
+    </Html>
+  )
+}
+```
 
 #### TBD
 
