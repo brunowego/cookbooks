@@ -15,6 +15,10 @@ https://github.com/search?q=path%3Aapps+path%3Apackage.json+content%3Atailwindcs
 - [Netflix Global Top 10](https://netflix.com/tudum/top10)
 
 <!--
+https://github.com/ibelick/buttons
+-->
+
+<!--
 https://app.greenhouse.io/users/sign_in
 https://console.qovery.com/onboarding/project
 
@@ -51,6 +55,7 @@ https://juicebox.money/about
 
 Customers
 
+https://doppler.com/customers
 https://mintlify.com/customers
 
 404
@@ -85,6 +90,34 @@ https://vercel.com/help
 https://chatwoot.com/help-center
 https://paraform.com/help
 
+GameFi
+
+https://javelingames.io
+
+https://betswap.gg
+https://winr.games
+https://floki.com
+https://bisnis.vocagame.com
+https://vocagame.com
+https://dgi.game
+https://0xterminal.game
+
+https://marinade.finance
+https://coinx-ruddy.vercel.app
+https://tokenfi.com
+
+Crypto Proposal
+
+https://app.astroport.fi/governance/proposal/151
+
+Swap
+
+https://mobula.io/swap
+
+Stake
+
+https://winr.games/stake
+
 Search
 
 https://himalayas.app/jobs
@@ -116,6 +149,8 @@ Login
 https://www.feyapp.com/signup
 https://www.reviews.io/signup/basic?signup_email=true
 
+https://app.apidog.com/user/login
+https://markprompt.com/login
 https://mobbin.com/login
 https://hashnode.com/onboard
 https://app.shelf.nu/login
@@ -135,13 +170,23 @@ https://app.logsnag.com/auth/sign-in
 https://cloud.tailwarden.com/sign-in
 https://auth.planetscale.com/sign-in
 
+Crypto
+
+https://coinhall.org
+
+Landing Page
+
+https://localcan.com
+
 Integrations
 
+https://doppler.com/integrations
 https://githr.vercel.app/app/integrations
 https://app.frigade.com/integrations
 
 Pricing
 
+https://doppler.com/pricing
 https://obsidian.md/pricing
 https://infisical.com/pricing
 https://liveblocks.io/pricing
@@ -159,7 +204,8 @@ https://console.baselime.io/brunowego/plans
 
 Dashboard
 
-https://githr.vercel.app/
+https://dashboard.doppler.com
+https://githr.vercel.app
 https://vue-shadcn-dashboard.vercel.app/dashboard/home
 https://next-shadcn-dashboard-starter.vercel.app/dashboard
 https://shadcn-dashboard-three.vercel.app/
@@ -204,6 +250,7 @@ https://himalayas.app/companies/hustlewing/tech-stack
 
 Settings
 
+https://hoppscotch.io/settings
 https://himalayas.app/recruit/details
 https://resend.com/settings
 https://railway.app/account
@@ -212,6 +259,7 @@ https://app.plane.so/splendal/me/profile
 
 Roadmap
 
+https://app.pulsar.finance/proposals
 https://app.plane.so
 https://regels.overheid.nl/roadmap
 https://spacedrive.com/roadmap
@@ -219,6 +267,10 @@ https://feltlabs.ai
 https://qwiz.party
 https://helicone.ai/roadmap
 https://qwiz.party (mantine)
+
+Subscription
+
+https://www.imagine.art/dashboard/subscription
 
 Onboarding
 
@@ -247,12 +299,35 @@ Progress
 
 https://rekrabice.cz
 
+Game
+
+https://gamestorm-nuxt.vercel.app/games-details
+
 Blog
 
-https://ncmaz-nextjs.vercel.app/single/this-is-single-slug
-https://ideko.netlify.app/category
-https://helicone.ai/blog
+https://doppler.com/blog
+https://artillery.io/blog
+https://shopify.com/blog
+https://attio.com/blog
+https://moderntreasury.com/newsroom
+https://defer.run/blog
 https://supabase.com/blog
+https://helicone.ai/blog
+https://ideko.netlify.app/category
+https://hygraph.com/blog
+https://frigade.com/blog
+https://andromeda-astro.vercel.app/blog
+https://spydea-nextjs.vercel.app/blog
+https://humanloop.com/blog
+
+Post
+
+https://doppler.com/blog/humans-are-the-weakest-link-in-cybersecurity
+https://artillery.io/blog/introducing-opentelemetry-support
+https://ncmaz-nextjs.vercel.app/single/this-is-single-slug
+https://helicone.ai/blog/ai-safety
+https://ideko.netlify.app/single
+https://supabase.com/blog/nosql-mongodb-compatibility-with-ferretdb-and-flydotio
 https://clearbit.com/blog
 https://aurora.dev/blog
 https://datocms.com/blog/how-to-generate-typescript-types-from-graphql
@@ -272,6 +347,7 @@ https://dev.aurora.dev
 
 Careers
 
+https://doppler.com/careers
 https://railway.app/careers
 https://metafy.gg/careers
 https://planetscale.com/careers
@@ -295,5 +371,6 @@ https://clearbit.com/trust
 
 Support
 
+https://www.imagine.art/dashboard/support
 https://founderinstitute.freshdesk.com/en/support/home
 -->

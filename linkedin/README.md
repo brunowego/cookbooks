@@ -10,16 +10,19 @@ devops AND NOT crossover AND NOT EPAM
 
 Latin America
 
-First Engineer
-
 Quotes [""]
 Parentheses [()]
 NOT
 AND
 OR
--->
 
-<!--
+Founding Engineer
+First Engineer
+
+Early Stage
+
+Early Stage AND NOT GeekHunter AND NOT Listopro
+
 Solution Architect
 Hands-on – Prototype / POC
 -->

@@ -1,5 +1,7 @@
 # Loom
 
+**Keywords:** Screen Recorder
+
 ## Links
 
 - [Main Website](https://loom.com)

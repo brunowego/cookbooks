@@ -1,6 +1,15 @@
 # Hypertext Markup Language (HTML)
 
 <!--
+rel='nofollow noopener' target='_blank'
+-->
+
+<!--
+Apostrophe: ’ or &apos;
+Quote: " or &quot; or &ldquo; or &rdquo;
+-->
+
+<!--
 https://github.com/BuilderIO/qwik
 
 https://github.com/linthtml/linthtml

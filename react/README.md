@@ -167,3 +167,11 @@ TypeError: Cannot read property 'map' of undefined
 ```
 
 TODO
+
+### TBD
+
+```log
+Warning: Cannot update a component (`Router`) while rendering a different component (`GoBack`). To locate the bad setState() call inside `GoBack`, follow the stack trace as described in https://reactjs.org/link/setstate-in-render
+```
+
+TODO

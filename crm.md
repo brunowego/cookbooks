@@ -25,6 +25,7 @@ https://pipefy.com
 - [Twenty](/twenty.md) 🌟
 
 <!--
+https://github.com/pdovhomilja/nextcrm-app
 https://github.com/idurar/idurar-erp-crm
 -->
 

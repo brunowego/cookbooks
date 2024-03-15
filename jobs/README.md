@@ -10,18 +10,3 @@
 
 - [LinkedIn](https://linkedin.com/jobs)
 - [Wellfound](https://wellfound.com/jobs)
-
-<!--
-https://geekhunter.com.br/vagas
--->
-
-<!--
-Founding Engineer
-First Engineer
-
-Early Stage
--->
-
-<!--
-Early Stage AND NOT GeekHunter AND NOT Listopro
--->

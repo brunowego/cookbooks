@@ -1,4 +1,4 @@
-# URL
+# Uniform Resource Locator (URL)
 
 ## Tools
 

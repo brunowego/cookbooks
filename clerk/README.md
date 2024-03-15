@@ -1,6 +1,6 @@
 # Clerk
 
-**Keywords:** Authentication (authn), Identity
+**Keywords:** Authentication (authn), Identity Provider
 
 ## Links
 

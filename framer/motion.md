@@ -13,6 +13,9 @@ npm install framer-motion
 
 # Using Yarn
 yarn add framer-motion
+
+# Using Bun
+bun add framer-motion
 ```
 
 ## Configuration

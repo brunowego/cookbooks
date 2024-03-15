@@ -1,9 +1,5 @@
 # Jest Debugging
 
-<!--
-chrome://inspect
--->
-
 ## Links
 
 - [Troubleshooting](https://jestjs.io/docs/troubleshooting)

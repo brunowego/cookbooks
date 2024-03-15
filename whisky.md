@@ -1,6 +1,6 @@
 # Whisky
 
-**Keywords:** Wine Wrapper
+**Keywords:** Wine Wrapper, Emulator
 
 ## Links
 

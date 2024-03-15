@@ -1,6 +1,13 @@
 # Tailwind CSS
 
 <!--
+https://tailwind-converter.netlify.app
+https://vanillabreeze.dev
+https://inliner.kromate.dev/editor
+https://tailwind-to-css.vercel.app
+-->
+
+<!--
 Style Guide
 
 https://styleguidefortailwind.com
@@ -205,6 +212,19 @@ jq '."files.associations"."*.css" |= "tailwindcss"' "$PWD"/.vscode/settings.json
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+The inferred type of 'default' cannot be named without a reference to 'absolute/path/to/node_modules/tailwindcss/types/config'. This is likely not portable. A type annotation is necessary. ts(2742)
+```
+
+<!--
+"declaration": false,
+"declarationMap": false,
+-->
+
+TODO
 
 #### Missing PostCSS VSCode Extension
 

@@ -1,14 +1,13 @@
 # Lighthouse
 
+**Keywords:** Web Performance Testing
+
 ## Links
 
 - [Code Repository](https://github.com/GoogleChrome/lighthouse)
-- [Main Website](https://developers.google.com/web/tools/lighthouse/)
-
-## Tools
-
-- [Measure page quality](https://web.dev/measure/)
-- [WebPageTest](https://webpagetest.org/)
+- [Main Website](https://developers.google.com/web/tools/lighthouse)
+- Browser Extension
+  - [Google Chrome](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
 - [Lighthouse Metrics](https://lighthouse-metrics.com)
 
 ## CLI
@@ -47,16 +46,7 @@ lighthouse --help
 
 ```sh
 #
-lighthouse http://xyz.tld \
-  -G
-
-#
-lighthouse http://xyz.tld \
-  -A
-
-#
-lighthouse http://xyz.tld \
-  -GA
+lighthouse http://xyz.tld -GA --view
 
 #
 lighthouse http://localhost:3000/docs/ \

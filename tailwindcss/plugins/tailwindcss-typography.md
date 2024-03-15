@@ -1,5 +1,7 @@
 # @tailwindcss/typography
 
+**Keywords:** Prose
+
 ## Links
 
 - [Code Repository](https://github.com/tailwindlabs/tailwindcss-typography)
@@ -14,6 +16,9 @@ npm install @tailwindcss/typography --save-dev
 
 # Using Yarn
 yarn add @tailwindcss/typography --dev
+
+# Using Bun
+bun add @tailwindcss/typography -D
 ```
 
 ## Configuration
@@ -31,3 +36,9 @@ const tailwindConfig = {
 
 module.exports = tailwindConfig
 ```
+
+<!--
+max-w-screen-md mx-auto
+
+prose lg:prose-lg dark:prose-invert
+-->

@@ -75,3 +75,13 @@ export const useRequest = () => {
   return { getRequest, postRequest, deleteRequest, putRequest }
 }
 ``` -->
+
+## Issues
+
+### TBD
+
+```log
+AxiosError: Request failed with status code 400
+```
+
+TODO

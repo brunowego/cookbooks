@@ -24,6 +24,13 @@ https://sisense.com
 ### Open Source
 
 - [Apache Superset](/apache/superset.md)
+- [Evidence](/evidence/README.md) 🌟
 - [Metabase](/metabase/README.md) 🌟
 - [Pentaho](/pentaho/README.md)
 - [Redash](/redash.md)
+
+<!--
+https://github.com/frappe/insights
+https://github.com/evidence-dev/evidence
+https://github.com/ankane/blazer
+-->

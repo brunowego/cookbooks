@@ -114,6 +114,14 @@ EOF
 
 ### Issues
 
+#### Missing TypeScript
+
+```log
+sh: tsc: command not found
+```
+
+Missing `typescript` package.
+
 #### Missing TSConfig File
 
 ```log

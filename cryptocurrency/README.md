@@ -66,6 +66,14 @@ https://cryptocraft.com/
 https://blockchair.com/
 -->
 
+### Categories
+
+- [Gaming Coin](https://coinmarketcap.com/view/gaming/)
+
+<!--
+https://cryptoslate.com/cryptos/gaming/
+-->
+
 ### Scandals
 
 - [Crypto Leaks](https://cryptoleaks.info/)

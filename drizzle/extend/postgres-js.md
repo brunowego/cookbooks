@@ -33,11 +33,29 @@ export { db, schema }
 
 ## Issues
 
+### TBD
+
+```log
+ModuleBuildError: Module build failed: UnhandledSchemeError: Reading from "node:stream" is not handled by plugins (Unhandled scheme).
+Webpack supports "data:" and "file:" URIs by default.
+You may need an additional plugin to handle "node:" URIs.
+```
+
+TODO
+
 ### Downgrade Postgres.js
 
 ```log
 Module build failed: UnhandledSchemeError: Reading from "cloudflare:sockets" is not handled by plugins (Unhandled scheme).
+Webpack supports "data:" and "file:" URIs by default.
+You may need an additional plugin to handle "cloudflare:" URIs.
 ```
+
+<!--
+Try remove:
+
+export const runtime = 'edge'
+-->
 
 <!--
 https://github.com/vercel/next.js/discussions/50177
@@ -49,6 +67,10 @@ Downgrade `postgres` package from `3.4.x` to version `3.3.5`.
 
 ```log
 The edge runtime does not support Node.js 'net' module.
+```
+
+```log
+Error: Module not found: Can't resolve 'net'
 ```
 
 <!--

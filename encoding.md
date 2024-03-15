@@ -1,5 +1,10 @@
 # Encoding
 
+## Tools
+
+- [DenCode](https://dencode.com)
+- [Webatic / Encoding Explorer](https://webatic.com/encoding-explorer)
+
 ## Glossary
 
 - Byte Order Mark (BOM)

@@ -1,6 +1,8 @@
 # Meilisearch
 
 <!--
+https://blog.meilisearch.com/multi-tenancy/
+
 https://github.com/ElektronPlus/school-website
 https://github.com/Okampus/okampus
 https://github.com/Console45/nest-meilisearch

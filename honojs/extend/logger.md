@@ -1,5 +1,14 @@
 # Extend with Logger
 
+<!--
+Example
+
+@acme/console:dev:  ✓ Compiled in 209ms (2159 modules)
+@acme/console:dev:   <-- GET /api/v1/me
+@acme/console:dev:   -> GET /api/v1/me 200 1ms
+@acme/console:dev:  GET /api/v1/me 200 in 69ms
+-->
+
 ## Default
 
 ```ts

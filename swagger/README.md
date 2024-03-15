@@ -7,7 +7,12 @@ https://github.com/Redocly/redoc
 "Swagger UI" site:.com
 -->
 
-**Keywords:** Contract-first
+<!--
+https://example.com/swagger.json
+https://example.com/openapi.json
+-->
+
+**Keywords:** OpenAPI Specification, Contract-first
 
 ## Alternatives
 
@@ -15,6 +20,5 @@ https://github.com/Redocly/redoc
 
 ## Tools
 
-- [Swagger UI](/swagger/swagger-ui.md)
-- [Swagger Editor](/swagger/swagger-editor.md)
-- [OpenAPI](/openapi.md)
+- [Swagger UI](/swagger/ui.md)
+- [Swagger Editor](/swagger/editor.md)

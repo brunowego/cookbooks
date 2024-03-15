@@ -22,5 +22,6 @@
 packages:
   - apps/*
   - packages/*
+  - services/*
   - tooling/*
 ```

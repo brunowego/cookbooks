@@ -1,4 +1,4 @@
-# Sentry + Next.js
+# With Sentry
 
 <!--
 enabled: process.env.NODE_ENV !== 'development',
@@ -10,6 +10,10 @@ Refer: src/app/layout.tsx
 throw new Error('Sentry Example API Route Error')
 -->
 
+## Links
+
+- [Code Repository](https://github.com/getsentry/sentry-javascript/tree/master/packages/nextjs)
+
 ## Installation
 
 ```sh
@@ -18,37 +22,32 @@ npm install @sentry/nextjs --save
 
 # Using Yarn
 yarn add @sentry/nextjs
+
+# Using Bun
+bun add @sentry/nextjs
 ```
 
-### Dependencies
+<!-- ### Dependencies
 
-- [next-compose-plugins](/next.js/ext)
-- [Page 404](/next.js/extend/page-404.md)
+- [next-compose-plugins](/next.js/plugins/next-compose-plugins.md)
+- [Page 404](/next.js/extend/page-404.md) -->
 
 ### Configuration
 
-```sh
+<!-- ```sh
 #
 npx @sentry/wizard -i nextjs
 
 #
 yarn workspace [@package/name] dlx @sentry/wizard -i nextjs
-```
-
-```sh
-#
-mv ./next.config.js ./next.config.mjs
-mv ./src/pages/_error.js ./src/pages/_error.tsx
-mv ./sentry.client.config.js ./sentry.client.config.ts
-mv ./sentry.server.config.js ./sentry.server.config.ts
-```
+``` -->
 
 **Refer:** `./next.config.mjs`
 
 ```mjs
 import { withSentryConfig } from '@sentry/nextjs'
 
-const IS_DEVELOPMENT = process.env.NODE_ENV === 'development'
+const isDev = process.env.NODE_ENV === 'development'
 
 /**
  * @type { import('next').NextConfig }
@@ -56,16 +55,24 @@ const IS_DEVELOPMENT = process.env.NODE_ENV === 'development'
 const nextConfig = {
   // ...
   sentry: {
-    disableServerWebpackPlugin: IS_DEVELOPMENT,
-    disableClientWebpackPlugin: IS_DEVELOPMENT,
+    disableServerWebpackPlugin: isDev,
+    disableClientWebpackPlugin: isDev,
   },
 }
 
-const SentryWebpackPluginOptions = {
+const userSentryWebpackPluginOptions = {
   silent: true,
 }
 
-export default withSentryConfig(nextConfig, SentryWebpackPluginOptions)
+const sentryOptions = {
+  hideSourceMaps: false,
+}
+
+export default withSentryConfig(
+  nextConfig,
+  userSentryWebpackPluginOptions,
+  sentryOptions
+)
 ```
 
 **Refer:** `./sentry.client.config.ts`
@@ -78,16 +85,16 @@ const SENTRY_DSN = process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN
 Sentry.init({
   enabled: process.env.NODE_ENV !== 'development',
   dsn: SENTRY_DSN,
-  tracesSampleRate: 1.0,
+  // tracesSampleRate: 1.0,
 })
 ```
 
 **Refer:** `./sentry.properties`
 
 ```ini
-defaults.url=https://sentry.io/
-defaults.org=[organization]
-defaults.project=[project]
+defaults.url=https://sentry.io
+defaults.org=<organization>
+defaults.project=<project>
 ```
 
 **Refer:** `./sentry.server.config.ts`
@@ -100,11 +107,11 @@ const SENTRY_DSN = process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN
 Sentry.init({
   enabled: process.env.NODE_ENV !== 'development',
   dsn: SENTRY_DSN,
-  tracesSampleRate: 1.0,
+  // tracesSampleRate: 1.0,
 })
 ```
 
-**Refer:** `./src/pages/_error.tsx`
+<!-- **Refer:** `./src/pages/_error.tsx`
 
 ```tsx
 import { ReactElement } from 'react'
@@ -157,29 +164,54 @@ ErrorPage.getInitialProps = async ({ res, err, asPath }: NextPageContext) => {
 }
 
 export default ErrorPage
-```
+``` -->
 
 ### Environment Variables
 
 ```sh
 #
 export SENTRY_DSN=''
-export SENTRY_AUTH_TOKEN=''
+# export SENTRY_AUTH_TOKEN=''
 
 #
-cat << EOF >> ./env
+cat << EOF >> ./.env.local.sample
 SENTRY_DSN=$SENTRY_DSN
-SENTRY_AUTH_TOKEN=$SENTRY_AUTH_TOKEN
-EOF
-
-#
-cat << EOF >> ./.example.env
-SENTRY_DSN=
-SENTRY_AUTH_TOKEN=
+# SENTRY_AUTH_TOKEN=$SENTRY_AUTH_TOKEN
 EOF
 ```
 
 ## Issues
+
+### Missing Global Error File
+
+```log
+@acme/console:dev: warn  - It seems like you don't have a global error handler set up. It is recommended that you add a global-error.js file with Sentry instrumentation so that React rendering errors are reported to Sentry. Read more: https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/#react-render-errors-in-app-router
+```
+
+**Refer:** `./src/app/global-error.jsx`
+
+```tsx
+'use client'
+
+import { captureException } from '@sentry/nextjs'
+import { useEffect } from 'react'
+// biome-ignore lint/suspicious/noShadowRestrictedNames: This is a Next.js component
+import Error from 'next/error'
+
+export default function GlobalError({ error }) {
+  useEffect(() => {
+    captureException(error)
+  }, [error])
+
+  return (
+    <html lang="en">
+      <body>
+        <Error />
+      </body>
+    </html>
+  )
+}
+```
 
 ### Source Maps Not Uploaded
 
@@ -194,7 +226,7 @@ const nextConfig = {
   sentry: {
     widenClientFileUpload: true,
     // ...
-  }
+  },
 }
 // ...
 ```

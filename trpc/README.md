@@ -1,6 +1,8 @@
 # TypeScript Remote Procedure Call (tRPC)
 
 <!--
+https://github.com/BeBoRE/ei-noah-bot
+
 https://github.com/search?q=path%3Apackage.json+content%3Atrpc+content%3Anext&type=code
 
 https://github.com/openstatusHQ/openstatus

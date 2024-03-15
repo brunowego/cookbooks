@@ -1,5 +1,9 @@
 # next-compose-plugins
 
+## Links
+
+- [Code Repository](https://github.com/cyrilwanner/next-compose-plugins)
+
 ## Installation
 
 ```sh
@@ -8,6 +12,9 @@ npm install next-compose-plugins
 
 # Using Yarn
 yarn add next-compose-plugins
+
+# Using Bun
+bun add next-compose-plugins
 ```
 
 ## Configuration

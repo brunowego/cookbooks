@@ -1,24 +1,6 @@
-# OpenGraph (OG)
+# Snippets
 
-<!--
-https://github.com/QuiiBz/ogstudio
--->
-
-## Links
-
-- [Main Website](https://ogp.me)
-
-## Related
-
-- [Tunneling](/tunneling.md) (Localhost Debugger)
-
-## Tools
-
-- Checker
-  - [OpenGraph - Preview Social Media Share and Generate Metatags](https://opengraph.xyz) 🌟
-  - [OpenGraph.dev / Generate and Preview Open Graph Meta Tags](https://opengraph.dev)
-- Image Generator
-  - [og.anuragroy.dev](https://github.com/anurag-roy/og.anuragroy.dev)
+TODO
 
 <!--
 {/* Open Graph data for Facebook */}

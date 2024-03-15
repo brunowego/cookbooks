@@ -18,7 +18,7 @@ Lazy loading
 - [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - [Google Search Console](https://search.google.com/search-console/about)
 - [Measure page quality](https://web.dev/measure) 🌟
-- [WebPageTest](https://webpagetest.org/)
+- [WebPageTest](https://webpagetest.org)
 
 ### Extensions
 

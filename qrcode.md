@@ -1,5 +1,9 @@
 # Quick Response (QR) Code
 
+<!--
+https://chart.googleapis.com/chart?cht=qr&chs=120x120&chld=L|0&chl=https://web3.bio/${path}
+-->
+
 ## Tools
 
 - [QR Code Reader](/qr-code-reader.md) 🌟

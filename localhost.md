@@ -7,6 +7,7 @@
 ## Tools
 
 - [local.gd](https://local.gd)
+- [LocalCan](/localcan.md)
 - [localtest.me](https://readme.localtest.me) 🌟
 - [nip.io](https://nip.io) 🌟
 - [sslip.io](https://sslip.io)

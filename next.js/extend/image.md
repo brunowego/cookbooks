@@ -15,7 +15,12 @@
 const nextConfig = {
   // ...
   images: {
-    domains: ['assets.xyz.tld'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'assets.xyz.tld',
+      },
+    ],
   },
 }
 
@@ -50,3 +55,13 @@ const Home: NextPage = () => {
 
 export default Home
 ```
+
+## Issues
+
+### TBD
+
+```log
+The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+```
+
+TODO

@@ -4,6 +4,10 @@
 https://github.com/mautic/mautic
 -->
 
+<!--
+https://youtube.com/watch?v=g4XiKChyK7A
+-->
+
 ## Glossary
 
 - Business-To-Business (B2B)

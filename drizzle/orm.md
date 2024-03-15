@@ -168,10 +168,26 @@ Top-level await is currently not supported with the "cjs" output format
 }
 ```
 
+#### Wrong Instance of Date
+
+```log
+TypeError [ERR_INVALID_ARG_TYPE]: The "string" argument must be of type string or an instance of Buffer or ArrayBuffer. Received an instance of Date
+```
+
+Rollback `drizzle-orm` package version from "~0.30.1" to "~0.29.4".
+
 #### TBD
 
 ```log
 No config path provided, using default 'drizzle.config.ts'
+```
+
+TODO
+
+#### TBD
+
+```log
+terminating connection due to immediate shutdown command
 ```
 
 TODO

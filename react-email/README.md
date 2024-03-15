@@ -18,6 +18,14 @@ bun add @react-email/components react-email
 
 ### Issues
 
+#### TBD
+
+```log
+Error: The file "/vercel/path0/packages/email/.react-email/.next/routes-manifest.json" couldn't be found. This is often caused by a misconfiguration in your project.
+```
+
+TODO
+
 #### Tailwind Error
 
 ```log
@@ -25,15 +33,21 @@ Error: Tailwind: To use responsive styles you must have a <head> element as a di
 ```
 
 ```tsx
+import { Html, Head, Preview, Body } from '@react-email/components'
+import { Tailwind } from '@react-email/tailwind'
+import { Fragment } from 'react'
+
 export const Email = () => {
   return (
     <Html>
       <Tailwind>
-        <Head />
+        <Fragment>
+          <Head />
 
-        <Preview />
+          <Preview />
 
-        <Body />
+          <Body />
+        </Fragment>
       </Tailwind>
     </Html>
   )

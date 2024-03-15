@@ -24,7 +24,7 @@ https://github.com/hideckies/exploit-notes/blob/main/src/exploit/SMTP-Pentesting
 - [Mailjet](https://mailjet.com)
 - [Mailtrap.io](https://mailtrap.io)
 - [Postmark](https://postmarkapp.com)
-- [Resend](https://resend.com)
+- [Resend](https://resend.com) 🌟
 - [Sendinblue](https://sendinblue.com)
 - [SparkPost](https://sparkpost.com)
 - [Twilio SendGrid](/twilio/sendgrid.md) 🌟

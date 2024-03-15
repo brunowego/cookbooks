@@ -4,8 +4,10 @@
 https://linkedin.com/learning/building-apis-with-swagger-and-the-openapi-specification/open-source-tools
 -->
 
-## References
+## Links
 
+- [Code Repository](https://github.com/swagger-api/swagger-ui)
+- [Demo](https://petstore.swagger.io)
 - [Download](https://swagger.io/tools/swagger-ui/download/)
 
 ## Helm

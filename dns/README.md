@@ -13,6 +13,7 @@ https://public-dns.info/
 
 - [Google Public DNS](https://dns.google)
 - [localhost](/localhost.md#tools)
+- [Zoho Toolkit](https://zoho.com/toolkit)
 
 ### Propagation Check
 

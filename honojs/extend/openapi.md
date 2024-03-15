@@ -9,6 +9,7 @@ https://github.com/honojs/middleware/tree/main/packages/swagger-ui
 
 ## Links
 
+- [Code Repository](https://github.com/honojs/middleware/tree/main/packages/zod-openapi)
 - [Snippets](https://hono.dev/snippets/zod-openapi)
 
 ## Installation
@@ -34,3 +35,11 @@ https://github.com/oven-sh/bun/issues/1425
 #
 cat /etc/hosts | grep '::1'
 ```
+
+### TBD
+
+```log
+Property 'openapi' does not exist on type 'Hono<Env, {}, "/api/v1">'. ts(2339)
+```
+
+TODO

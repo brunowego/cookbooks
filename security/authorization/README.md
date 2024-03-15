@@ -4,6 +4,10 @@
 https://permit.io
 -->
 
+## Learn
+
+- [Como EU lido com autorizações (permissões) nos meus apps](https://youtube.com/watch?v=NG8qTapopj4)
+
 ## Access Control Types
 
 - Access-Control List (ACL)
@@ -33,4 +37,10 @@ https://permit.io
 
 <!--
 https://github.com/authzed/spicedb
+-->
+
+<!--
+Teams (Organization)
+Users
+Memberships
 -->

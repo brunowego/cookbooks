@@ -12,3 +12,9 @@
 - Instrument for success
 - Write performance apps
 - Continuous practice
+
+## Testing
+
+- [Lighthouse](/lighthouse/README.md) 🌟
+- [PageSpeed Insights](/pagespeed.md)
+- [WebPageTest](https://webpagetest.org)

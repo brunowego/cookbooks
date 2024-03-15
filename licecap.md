@@ -1,6 +1,6 @@
 # LICEcap
 
-**Keywords:** Screen recording
+**Keywords:** Screen Recorder
 
 ## App
 

@@ -1,5 +1,7 @@
 # CrossOver
 
+**Keywords:** Emulator
+
 <!--
 https://github.com/italomandara/CXPatcher
 -->
