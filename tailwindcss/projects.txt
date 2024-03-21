@@ -52,6 +52,7 @@ https://artillery.io
 
 Need test
 
+https://aptosfoundation.org
 https://welookup.vercel.app
 https://apidog.com
 https://doctave.com

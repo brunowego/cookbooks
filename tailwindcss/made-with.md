@@ -36,6 +36,10 @@ Feed
 
 https://threads-app-react.vercel.app
 
+Main Menu
+
+https://light.so/demo/overview
+
 Empty State
 
 https://tailwindui.com/components/application-ui/feedback/empty-states
@@ -186,6 +190,9 @@ https://app.frigade.com/integrations
 
 Pricing
 
+https://localcan.com/#pricing
+
+https://tembo.io/pricing
 https://doppler.com/pricing
 https://obsidian.md/pricing
 https://infisical.com/pricing
@@ -193,6 +200,10 @@ https://liveblocks.io/pricing
 https://raster.app/pricing
 https://railway.app/pricing
 https://helicone.ai/pricing
+
+Contact
+
+https://vercel.com/contact/sales
 
 Placeholder
 
@@ -250,12 +261,18 @@ https://himalayas.app/companies/hustlewing/tech-stack
 
 Settings
 
+https://app.plane.so/profile
+https://resend.com/profile
+https://app.cal.com/settings/my-account/profile
 https://hoppscotch.io/settings
 https://himalayas.app/recruit/details
 https://resend.com/settings
 https://railway.app/account
 https://cloud.tailwarden.com/workspace/settings/
-https://app.plane.so/splendal/me/profile
+
+Multi-Factor Authentication
+
+https://resend.com/profile
 
 Roadmap
 

@@ -58,6 +58,14 @@ const {
 #### TBD
 
 ```log
+Property '#private' in type 'QueryClient' refers to a different member that cannot be accessed from within type 'QueryClient'.
+```
+
+Set `@tanstack/react-query` to version `4.35.7`.
+
+#### TBD
+
+```log
 Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
 ```
 

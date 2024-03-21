@@ -1,5 +1,7 @@
 # Tauri
 
+**Keywords:** Desktop Application Development
+
 <!--
 https://github.com/spacedriveapp/spacedrive/blob/main/apps/desktop/package.json
 -->

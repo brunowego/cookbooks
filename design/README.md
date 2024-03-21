@@ -52,11 +52,13 @@ https://developer-portfolio.zakariabenali.me/
 - [UsabilityHub](https://usabilityhub.com)
 
 <!--
+https://curated.design
+https://refero.design
 https://saas-ui.dev
 https://light.so/home
 https://comfortdelgro.github.io/compass-design/design/colors
-https://javaistic.ml/
-https://prepo.io/
-https://risedle.com/
+https://javaistic.ml
+https://prepo.io
+https://risedle.com
 https://app.daily.dev/search
 -->

@@ -1,5 +1,9 @@
 # Whisky
 
+<!--
+Only works with ARM hardware architecture is supported.
+-->
+
 **Keywords:** Wine Wrapper, Emulator
 
 ## Links

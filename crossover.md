@@ -19,3 +19,18 @@ https://github.com/italomandara/CXPatcher
 ```sh
 brew install --cask crossover
 ```
+
+### Tips
+
+#### Uninstall
+
+```sh
+#
+brew uninstall --cask crossover
+
+#
+rm -fR ~/Library/Application\ Support/CrossOver
+rm -fR ~/Library/Preferences/com.codeweavers.CrossOver.*
+rm -fR ~/Library/Caches/com.codeweavers.CrossOver
+rm -fR ~/Library/Logs/CrossOver
+```

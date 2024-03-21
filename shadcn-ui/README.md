@@ -26,6 +26,7 @@ https://github.com/rizzui/rizzui
 
 ### Themes
 
+- [Palettify](https://palettify.co)
 - [shadcn/ui (official)](https://ui.shadcn.com/themes)
 - [shadcn/ui customizer](https://shadcn-ui-customizer.vercel.app)
 

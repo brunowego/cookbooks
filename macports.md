@@ -20,7 +20,10 @@ sudo xcodebuild -license
 
 ```sh
 #
-sudo port selfupdate
+sudo port -v selfupdate
+
+#
+sudo port -v install <package-name>
 ```
 
 <!-- ### Issues -->

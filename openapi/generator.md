@@ -8,6 +8,8 @@ Golang https://github.com/deepmap/oapi-codegen
 
 - [Code Repository](https://github.com/openapitools/openapi-generator)
 - [Main Website](https://openapi-generator.tech/)
+- [Docs](https://openapi-generator.tech/docs)
+  - [Generators](https://openapi-generator.tech/docs/generators)
 
 ## CLI
 

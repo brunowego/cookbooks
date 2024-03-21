@@ -1,7 +1,7 @@
 # Extend with API Key
 
 <!--
-https://www.stewright.me/2021/03/add-header-api-key-to-nestjs-rest-api/
+https://stewright.me/2021/03/add-header-api-key-to-nestjs-rest-api/
 https://medium.com/@Dee_Mayoor/apikey-authentication-for-nestjs-using-passport-js-6db467fc31f7
 
 https://medium.com/@alpercitak/nest-js-authenticate-with-both-api-key-and-jwt-4a22bf7b3049

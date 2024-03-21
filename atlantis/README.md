@@ -11,7 +11,7 @@ https://github.com/infracost/vscode-infracost
 ## Links
 
 - [Code Repository](https://github.com/runatlantis/atlantis)
-- [Main Website](https://runatlantis.io/)
+- [Main Website](https://runatlantis.io)
 
 ## Glossary
 

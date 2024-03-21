@@ -74,52 +74,6 @@ https://epic-course-platform.vercel.app/
 - React Server Components
 -->
 
-<!-- ## Supported Frameworks
-
-Angular
-Astro
-Blitz.js (Legacy)
-Brunch
-Create React App
-Docusaurus (v1)
-Docusaurus (v2)
-Dojo
-Eleventy
-Ember.js
-Gatsby.js
-Gridsome
-Hexo
-Hugo
-Hydrogen (v1)
-Ionic Angular
-Ionic React
-Jekyll
-Middleman
-Next.js
-Nuxt.js
-Parcel
-Polymer
-Preact
-RedwoodJS
-Remix
-Saber
-Sanity
-Sapper
-Scully
-SolidStart
-Stencil
-Storybook
-Svelte
-SvelteKit (v0)
-SvelteKit (v1)
-UmiJS
-Vite
-VitePress
-Vue.js
-VuePress
-Zola
-Other -->
-
 ## CLI
 
 ### Installation
@@ -186,20 +140,21 @@ vercel deploy --prod --no-clipboard
 vercel ls
 
 #
-vercel inspect [url]
+vercel inspect <url>
 
 #
-vercel logs [deploy-id]
+vercel logs <deploy-id>
 
 #
-vercel rm [deploy-id]
-
-#
-vercel billing ls
+vercel rm <deploy-id>
 
 #
 vercel logout
 ```
+
+<!--
+vercel billing ls
+-->
 
 ### Tips
 

@@ -21,6 +21,10 @@ ls -la ~/.orbstack
 
 ## App
 
+<!-- ### Dependencies
+
+- []() -->
+
 ### Installation
 
 #### Homebrew

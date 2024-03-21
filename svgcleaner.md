@@ -1,5 +1,15 @@
 # SVG Cleaner
 
+<!--
+Archived, no longer maintained
+
+SVG Optimizer (SVGO) is a better alternative
+-->
+
+## Links
+
+- [Code Repository](https://github.com/RazrFalcon/svgcleaner)
+
 ## App
 
 ### Installation

@@ -2,6 +2,7 @@
   "recommendations": [
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
+    "alefragnani.project-manager",
     "alefragnani.project-manager"
   ]
 }

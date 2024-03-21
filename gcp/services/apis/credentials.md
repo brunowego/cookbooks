@@ -44,6 +44,16 @@ TODO
 Add `owner` role
 -->
 
+### TBD
+
+```log
+Access blocked: Authorization Error
+...
+Error 401: invalid_client
+```
+
+TODO
+
 ### Missing Authorized Redirect URIs
 
 ```log

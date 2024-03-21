@@ -11,12 +11,14 @@ License: Elastic-2.0
 - [Org. Repository](https://github.com/mintlify)
 - [Main Website](https://mintlify.com)
 - [Components](https://github.com/mintlify/components)
+- [GitHub Apps](https://github.com/apps/mintlify)
 
 ## Examples
 
 - [Chatter](https://docs.trychatter.ai)
 - [Creo](https://docs.trycreo.com)
 - [Defer](https://defer.run/docs) 🌟
+- [Feedbase](https://docs.feedbase.app)
 - [Flatfile](https://flatfile.com/docs)
 - [Flipt](https://flipt.io/docs) 🌟
 - [Goody](https://developer.ongoody.com)

@@ -2,7 +2,7 @@
 
 ## Comparison
 
-- [DronaHQ / ToolJet vs DronaHQ: Empowering Business](https://dronahq.com/tooljet-vs-dronahq/)
+- [DronaHQ / ToolJet vs DronaHQ: Empowering Business](https://dronahq.com/tooljet-vs-dronahq)
 
 ## Solutions
 

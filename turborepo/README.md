@@ -33,7 +33,7 @@ tooling
 
 ```sh
 # Using Bun
-bun add turbo
+bun add turbo -D
 ```
 
 ### Configuration
@@ -104,6 +104,14 @@ bunx turbo telemetry disable
 
 #
 bunx turbo build --filter <pkg-name>
+```
+
+### Tips
+
+#### VS Code Files Exclude
+
+```sh
+jq '."search.exclude"."**/.turbo" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
 ## CLI
@@ -192,63 +200,6 @@ https://github.com/vercel/turbo/issues/5117
 -->
 
 Pump `turbo` to `>=1.10.3`.
-
-## Library
-
-### Installation
-
-```sh
-# Using Yarn
-yarn add turbo --dev
-```
-
-### Bootstrap
-
-#### Automatically
-
-Use [create-turbo](/turborepo/create-turbo.md) to bootstrap an application.
-
-#### Manually
-
-```sh
-#
-mkdir -p ./{apps/landing,packages}
-```
-
-**Refer:** `./package.json`
-
-```json
-{
-  // ...
-  "workspaces": ["./apps/*", "./packages/*"],
-  "scripts": {
-    // ...
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "test": "turbo run test",
-    "build": "turbo run build",
-    "start": "turbo run start"
-  }
-}
-```
-
-**Refer:** `./turbo.json`
-
-```json
-{
-  "$schema": "https://turborepo.org/schema.json",
-  "pipeline": {
-    "dev": {
-      "cache": false,
-      "persistent": true
-    },
-    "lint": {},
-    "test": {},
-    "build": {},
-    "start": {}
-  }
-}
-```
 
 ## Issues
 

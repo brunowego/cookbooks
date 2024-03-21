@@ -13,5 +13,5 @@ git clean -h
 git clean -ndx
 
 # Remove
-git clean -fdx
+git clean -fdx -e '.env*'
 ```

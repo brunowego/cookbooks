@@ -332,10 +332,10 @@ export TF_VAR_amap='{ foo = "bar", baz = "qux" }'
 
 ```sh
 #
-code --install-extension hashicorp.terraform
+code --install-extension HashiCorp.terraform
 
 #
-jq '."recommendations" += ["hashicorp.terraform"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+jq '."recommendations" += ["HashiCorp.terraform"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 **Configuration:**
@@ -343,7 +343,7 @@ jq '."recommendations" += ["hashicorp.terraform"]' "$PWD"/.vscode/extensions.jso
 ```sh
 #
 jq '."[terraform]"."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
-jq '."[terraform]"."editor.defaultFormatter" |= "hashicorp.terraform"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+jq '."[terraform]"."editor.defaultFormatter" |= "HashiCorp.terraform"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 
 #
 jq '."files.associations"."*.json.tpl" |= "json"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json

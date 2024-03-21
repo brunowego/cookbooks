@@ -19,10 +19,6 @@ Settings -> Service -> Performance -> Disable hardware acceleration
 - [Org. Repository](https://github.com/tradingview/)
 - [Widget](https://tradingview.com/widget/)
 
-<!-- ## Alternative
-
-- -->
-
 ## Tools
 
 - Fib Channel
@@ -30,6 +26,18 @@ Settings -> Service -> Performance -> Disable hardware acceleration
 - Parallel Channel
 - Pitchfork
 - Three Drives Pattern
+
+## Layouts
+
+- Commodities
+- Cryptocurrency
+- Foreign Exchange (FOREX)
+- Indices
+- Stocks
+
+<!--
+- Bonds
+-->
 
 ## TradingView Users
 

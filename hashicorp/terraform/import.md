@@ -1,6 +1,6 @@
 # Terraform Import
 
-## Links
+## Learn
 
 - [Command: import](https://developer.hashicorp.com/terraform/cli/commands/import)
 
@@ -22,6 +22,8 @@ terraform state list
 terraform state show '<resource-addr>'
 
 #
+terraform import '<resource-addr>' '<resource-id>'
+# or
 terraform import \
   -var-file "./vars/terraform-$(terraform workspace show).tfvars" \
   '<resource-addr>' \
@@ -29,11 +31,8 @@ terraform import \
 ```
 
 <!--
-terraform init
+# Kubernetes
+terraform import '<resource-addr>' '<kubernetes-name>'
 
-https://github.com/aws-samples/aws2tf
-
-https://github.com/hashicorp/learn-terraform-import
-
-terraform import --var-file="terraform.tfvars" "module.vpc.aws_route_table.private[2]"
+https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/manifest#import-the-resource-state-from-the-cluster
 -->

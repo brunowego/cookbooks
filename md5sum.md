@@ -23,5 +23,5 @@ md5sum --help
 echo -n "$USER" | md5sum -
 
 #
-md5sum <file1> <file2>
+md5sum <filename>
 ```

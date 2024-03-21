@@ -1,22 +1,19 @@
 # macOS Format
 
-## Disable Activation Lock
+1. Disable Activation Lock: Remove your device from [Find My](https://icloud.com/find).
+2. Make Bootable USB
 
-Remove your device from [Find My](https://icloud.com/find/).
+   ```sh
+   #
+   ls /Volumes
 
-## Make Bootable USB
+   # Ventura
+   sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --help
 
-```sh
-#
-ls /Volumes
+   sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia \
+     --volume /Volumes/<MyVolume> \
+     --nointeraction \
+     --downloadassets
+   ```
 
-# Ventura
-sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --help
-
-sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia \
-  --volume /Volumes/<MyVolume> \
-  --nointeraction \
-  --downloadassets
-```
-
-Reboot and press Option (⌥).
+3. Reboot and press Option (⌥).

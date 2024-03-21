@@ -240,6 +240,18 @@ echo '/out' >> ./.gitignore
 
 ### Issues
 
+#### TBD
+
+```log
+Error: Missed `structure` field in `String` node type definition
+```
+
+<!--
+https://github.com/orgs/vercel/discussions/4264
+-->
+
+TODO
+
 #### Missing Use Client
 
 ```log

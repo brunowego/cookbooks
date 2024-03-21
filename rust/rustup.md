@@ -1,8 +1,11 @@
 # rustup
 
-## References
+**Keywords:** Rust Toolchain
 
-- [Rust](/rust.md)
+## Links
+
+- [Code Repository](https://github.com/rust-lang/rustup)
+- [Main Website](https://rustup.rs)
 
 ## CLI
 
@@ -16,10 +19,10 @@ brew install rustup-init
 rustup-init -y
 ```
 
-#### Linux
+#### Unix-like
 
 ```sh
-curl https://sh.rustup.rs -sSf | sh -s -- -y
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 ### Environment
@@ -45,12 +48,13 @@ rustup help
 
 ```sh
 #
-rustup install stable
-rustup install nightly
+rustup install stable # nightly
+```
 
+<!--
 #
 rustup component add rust-src
 
 #
 rustup run nightly cargo install rustfmt-nightly
-```
+-->

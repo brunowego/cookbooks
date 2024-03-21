@@ -4,10 +4,27 @@
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Localhost)
 
+## Tutorials
+
+- [.localhost as TLD](/dnsmasq/tld/localhost.md)
+
 ## Tools
 
-- [local.gd](https://local.gd)
+- [hostess](/hostess.md)
 - [LocalCan](/localcan.md)
+- [SwitchHosts!](/switchhosts.md)
+
+### Resolves to 127.0.0.1
+
+- [local.gd](https://local.gd)
 - [localtest.me](https://readme.localtest.me) 🌟
+
+### Resolves to Any IP
+
 - [nip.io](https://nip.io) 🌟
 - [sslip.io](https://sslip.io)
+- [~~xip.io~~](https://xip.io) Discontinued
+
+<!--
+https://superuser.com/questions/1103491/resolving-adresses-with-localhost-tld-in-macos
+-->

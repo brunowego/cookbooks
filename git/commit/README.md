@@ -8,6 +8,8 @@
 ## Tools
 
 - [commitlint](/conventional-changelog/commitlint.md)
+- [gptcommit](/gptcommit.md)
+- [OpenCommit](/opencommit.md)
 
 <!--
 - [semantic-release](/semantic-release.md)
@@ -68,18 +70,6 @@ git commit -nm '<message>'
 
 ```sh
 git commit --date 'Wed Feb 16 14:00 2037 +0100'
-```
-
-### Visual Studio Code
-
-```sh
-#
-code --install-extension mhutchie.git-graph
-# code --install-extension donjayamanne.githistory
-
-#
-jq '."recommendations" += ["mhutchie.git-graph"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
-# jq '."recommendations" += ["donjayamanne.githistory"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
 ```
 
 ### Modify Specified Commit

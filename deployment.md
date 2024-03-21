@@ -3,7 +3,7 @@
 ## Release Techniques
 
 - Blue-green
-- Canary
+- Canary 🌟
 - A/B
 - Rolling
 

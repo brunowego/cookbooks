@@ -7,6 +7,7 @@ https://github.com/search?o=desc&q=filename%3Apackage.json+%22vite%22+%22tailwin
 
 https://dev.to/wojtekmaj/migrating-your-react-app-from-webpack-to-vite-inp
 
+https://github.com/usememos/memos
 https://github.com/haishanh/cherry
 https://github.com/rayriffy/rayriffy-h
 https://github.com/satyatiwar/satyam

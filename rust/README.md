@@ -1,46 +1,25 @@
 # Rust
 
 <!--
-https://www.youtube.com/watch?v=lzKeecy4OmQ
-
-https://github.com/soundise/soundise-backend
-
-.rs
-.rlib
-
-https://github.com/search?o=desc&q=filename%3ACargo.toml+path%3Aapps&s=indexed&type=Code
--->
-
-<!--
-https://github.com/stumpapp/stump
-https://github.com/bkonkle/rust-example-caster-api
-https://github.com/aerox0/rust-tweeter
-https://github.com/ddanielsantos/rust-commerce
+Ferris mascot
 -->
 
 ## Links
 
 - [Code Repository](https://github.com/rust-lang/rust)
 - [Main Website](https://rust-lang.org)
+- [Rust Playground](https://play.rust-lang.org)
 - [Awesome Alternatives in Rust](https://github.com/TaKO8Ki/awesome-alternatives-in-rust)
 - Rust Package Registry
   - [crates.io](https://crates.io)
 
-## References
+## Learning
 
-<!--
-- [asdf Rust](/asdf/rust.md) or [rustup](/rustup.md)
--->
+- [Are we web yet?](https://arewewebyet.org)
 
-- [Cargo](/cargo.md)
-- [WebAssembly](/wasm.md)
+## Glossary
 
-## Web Framework
-
-- [Actix web](https://github.com/actix/actix-web)
-- [Iron](https://github.com/iron/iron)
-- [Rocket](https://github.com/SergioBenitez/Rocket)
-- [Yew](https://github.com/yewstack/yew)
+- Resource Acquisition Is Initialization (RAII)
 
 ## CLI
 

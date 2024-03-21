@@ -30,6 +30,9 @@ yarn add prettier --dev
 
 # Using pnpm
 pnpm add prettier -D
+
+# Using Bun
+bun add prettier -D
 ```
 
 ### Configuration
@@ -105,7 +108,7 @@ v9.14.0
 code --install-extension esbenp.prettier-vscode
 
 #
-jq '."recommendations" += ["esbenp.prettier-vscode"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+# jq '."recommendations" += ["esbenp.prettier-vscode"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 **Configuration:**
@@ -120,7 +123,7 @@ echo '{}' > "$PWD"/.vscode/settings.json
 jq '."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 
 #
-jq '."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+# jq '."editor.defaultFormatter" |= "esbenp.prettier-vscode"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
 <!-- #### Ignore Comments

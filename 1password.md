@@ -26,6 +26,14 @@ brew install --cask 1password
 choco install -yf -not-silent 1password
 ```
 
+<!-- ### Tips
+
+#### Save in 1Password
+
+1. Extensions -> 1Password -> Settings
+2. Autofill & save
+   - Uncheck "Offer to fill and save password" -->
+
 ### Issues
 
 #### macOS QR Code Failed

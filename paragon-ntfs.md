@@ -1,8 +1,18 @@
 # Paragon NTFS
 
+## Links
+
+- [MyParagon](https://my.paragon-software.com)
+
 ## App
 
 ### Installation
+
+#### Homebrew
+
+```sh
+brew install --cask paragon-ntfs
+```
 
 #### DMG
 

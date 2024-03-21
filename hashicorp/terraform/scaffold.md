@@ -2,7 +2,7 @@
 
 <!-- ```sh
 #
-cat << EOF >> ./.infra/terraform/.gitignore
+cat << EOF >> ./.gitignore
 /.terraform
 /terraform.tfstate.d
 /*.tfplan
@@ -19,10 +19,16 @@ terraform.tfvars.example
 
 ```sh
 #
-mkdir -p ./.infra/terraform/{modules,policies,vars}
+mkdir -p ./.infra/terraform
 
 #
-cat << EOF > ./.infra/terraform/.gitignore
+cd ./.infra/terraform
+
+#
+mkdir -p ./{modules,policies,vars}
+
+#
+cat << EOF > ./.gitignore
 /.terraform
 /.terraform.lock.hcl
 /terraform.tfstate*
@@ -32,19 +38,19 @@ EOF
 curl -s https://api.github.com/repos/hashicorp/terraform/releases/latest | grep tag_name | cut -d '"' -f 4 | tr -d 'v'
 
 #
-echo '1.6.2' > ./.infra/terraform/.terraform-version
+echo '1.7.5' > ./.terraform-version
 
 #
-cat << EOF > ./.infra/terraform/locals.tf
-locals {
-  tags = {
-    managed-by = "terraform"
-  }
-}
+cat << EOF > ./locals.tf
+# locals {
+#   tags = {
+#     managed-by = "terraform"
+#   }
+# }
 EOF
 
 #
-cat << EOF > ./.infra/terraform/main.tf
+cat << EOF > ./main.tf
 terraform {
   backend "local" {}
 
@@ -52,59 +58,68 @@ terraform {
   #   organization = "my-company"
 
   #   workspaces {
-  #     prefix = "<project>-<app-name>-<region>-"
+  #     prefix = "<project>-"
+  #     # prefix = "<project>-<app-name>-"
+  #     # prefix = "<project>-<app-name>-<region>-"
   #   }
   # }
 }
 EOF
 
 #
-cat << EOF > ./.infra/terraform/outputs.tf
+cat << EOF > ./outputs.tf
 
 EOF
 
 #
-cat << EOF > ./.infra/terraform/provider.tf
+cat << EOF > ./provider.tf
 # provider "aws" {
 #   region = var.aws_region
 # }
 EOF
 
 #
-cat << EOF > ./.infra/terraform/variables.tf
+cat << EOF > ./variables.tf
 
 EOF
 
 #
-cat << EOF > ./.infra/terraform/versions.tf
+cat << EOF > ./versions.tf
 terraform {
+  required_version = "~> 1.7.5"
+
   # required_providers {
   #   aws = {
   #     source  = "hashicorp/aws"
   #     version = "~> 3.46"
   #   }
   # }
-
-  required_version = "~> 1.6.2"
 }
 EOF
 ```
 
 ```sh
 #
-cat << EOF > ./.infra/terraform/README.md
-# Terraform
+cat << EOF > ./README.md
+# Infra
+
+## Docs
+
+- [Developer Guide](/DEVELOPER.md)
+```
+
+```sh
+#
+cat << EOF > ./DEVELOPER.md
+# Developer Guide
 
 ## Dependencies
 
 - [tfenv](https://github.com/tfutils/tfenv)
 
-## Running
+## Local Development
 
----sh
-#
-cd ./.infra/terraform
-
+sh
 #
 tfenv install
 tfenv use
@@ -123,13 +138,12 @@ terraform plan
 
 #
 terraform apply
----
 EOF
 ```
 
 <!--
 #
-cd ./.infra/terraform
+cd .
 
 #
 terraform init

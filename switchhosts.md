@@ -1,8 +1,9 @@
 # SwitchHosts!
 
-<!--
-https://swh.app/
--->
+## Links
+
+- [Code Repository](https://github.com/oldj/SwitchHosts)
+- [Main Website](https://switchhosts.vercel.app)
 
 ## App
 

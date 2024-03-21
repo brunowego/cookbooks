@@ -1,5 +1,9 @@
 # Apple Boot Camp
 
+<!--
+Windows 10 only
+-->
+
 ## Issues
 
 ### Secure Boot is not enabled

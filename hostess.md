@@ -4,6 +4,12 @@
 sudo hostess add g1.globo.com 127.0.0.1
 -->
 
+**Keywords:** Hosts Editor
+
+## Links
+
+- [Code Repository](https://github.com/cbednarski/hostess)
+
 ## CLI
 
 ### Installation

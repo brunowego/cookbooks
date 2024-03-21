@@ -9,6 +9,14 @@ bun add @next/third-parties
 
 ## Configuration
 
+**Refer:** `./.env.local`
+
+```env
+NEXT_PUBLIC_GTM_ID=GTM-XYZ
+```
+
+**Refer:** `./src/app/layout.tsx`
+
 ```tsx
 import type { ReactNode, JSX } from 'react'
 import { GoogleAnalytics } from '@next/third-parties/google'
@@ -22,7 +30,9 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
     <html lang="en">
       <body>{children}</body>
 
-      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
+      {process.env.NEXT_PUBLIC_GTM_ID ? (
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
+      ) : null}
     </html>
   )
 }

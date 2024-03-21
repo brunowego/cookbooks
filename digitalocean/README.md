@@ -1,5 +1,12 @@
 # DigitalOcean
 
+## Links
+
+- [Console](https://cloud.digitalocean.com)
+- [Main Website](https://digitalocean.com)
+- [Docs](https://docs.digitalocean.com)
+  - [App Platform Availability](https://docs.digitalocean.com/products/platform/availability-matrix/#app-platform-availability)
+
 ## Docs
 
 ### WordPress

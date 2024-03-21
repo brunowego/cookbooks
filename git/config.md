@@ -44,11 +44,11 @@ git config --global merge.tool 'value' # Use `vimdiff`
 git config --global branch.autosetupmerge 'always'
 
 #
-git push --set-upstream origin develop
+git config push.autoSetupRemote true
 ```
 
 <!--
-git config --global --add --bool push.autoSetupRemote true
+git push --set-upstream origin develop
 
 git reflog
 git checkout <sha8>

@@ -2,6 +2,7 @@
 
 <!--
 https://permit.io
+https://permify.co
 -->
 
 ## Learn

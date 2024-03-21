@@ -1,5 +1,11 @@
 # Midjourney
 
+<!--
+https://www.youtube.com/watch?v=90tXPbyRGS8
+-->
+
+**Keywords:** AI Image Generator
+
 ## Links
 
 - [Main Website](https://midjourney.com)
