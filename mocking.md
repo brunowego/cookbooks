@@ -21,6 +21,8 @@ https://jsondataai.com
 TODO
 
 <!--
+https://mocko.dev
+https://mockfly.dev
 https://beeceptor.com
 https://mockapi.io
 https://designer.mocky.io

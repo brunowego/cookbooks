@@ -1,5 +1,9 @@
 # Software Properties Common
 
+## Dependencies
+
+- [OpenJDK](/openjdk/README.md)
+
 ## Installation
 
 ```sh

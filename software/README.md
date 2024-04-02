@@ -10,6 +10,13 @@ fmgmt -> File Management
 pmgmt -> Project Management
 -->
 
+<!--
+app.
+console.
+cloud.
+admin.
+-->
+
 ## Glossary
 
 - Foreign Function Interface (FFI)
@@ -34,16 +41,17 @@ Applicant Tracking System (ATS)
 
 ## Architectural Pattern
 
-- Layered
-- Client-Server
-- Master-Slave
-- Pipe-Filter
-- Broker
-- Peer-to-Peer
-- Event-bus
-- Model-View-Controller (MVC)
 - Blackboard
+- Broker
+- Client-Server
+- Controller-Service-Repository (CSR)
+- Event-bus
 - Interpreter
+- Layered
+- Master-Slave
+- Model-View-Controller (MVC)
+- Peer-to-Peer
+- Pipe-Filter
 
 ## Design Pattern
 

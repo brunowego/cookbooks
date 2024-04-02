@@ -9,7 +9,7 @@
 
 ### Links
 
-- [Code Repository](https://github.com/formancehq/fctl)
+- [Code Repository](https://github.com/formancehq/stack/tree/main/components/fctl)
 
 ### Installation
 
@@ -43,11 +43,15 @@ fctl cloud me info
 
 ```sh
 #
-fctl stack create foobar
+fctl stack list
+fctl stack create <name>
+fctl stack show --name <name>
 
 #
-fctl ledger send world foo 100 EUR/2 --ledger demo
-fctl ledger stats
+fctl ledger list
+fctl ledger send world foo 100 EUR/2 --ledger <name>
+fctl ledger transactions list --ledger <name>
+fctl ledger stats --ledger <name>
 
 #
 fctl ui
@@ -59,10 +63,9 @@ fctl auth clients list
 fctl auth users list
 
 #
-fctl cloud
-
-#
-fctl payments connectors install
+fctl payments connectors list
+fctl payments connectors install <connector>
+fctl payments connectors install stripe <api-key>
 
 #
 fctl profiles list
@@ -72,6 +75,10 @@ fctl prompt
 
 #
 fctl webhooks list
+fctl webhooks create 'https://example.com/webhook' 'ledger.committed_transactions'
+
+#
+fctl cloud organizations invitations send <email>
 ```
 
 ### Tips

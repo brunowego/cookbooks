@@ -11,7 +11,7 @@ wss://xyz.tld
 ## Pub/Sub Providers
 
 - [Ably](https://ably.com)
-- [Pusher](https://pusher.com)
+- [Pusher](/pusher/README.md) 🌟
 - [SignalR](https://dotnet.microsoft.com/en-us/apps/aspnet/signalr)
 - [PubNub](https://pubnub.com)
 - [Socket.IO](https://socket.io/)

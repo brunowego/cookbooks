@@ -13,14 +13,19 @@ https://javainuse.com/jwtgenerator
 - [Encode or Decode JWTs](https://jsonwebtoken.io/)
 - [JWT Authentication](https://roadmap.sh/guides/jwt-authentication)
 
+## Learn
+
+- [Estratégias de autenticação entre front-end e back-end com JWT (cookies storage)](https://youtube.com/watch?v=YcH2kxqK3nc)
+
 ## Store
 
 <!--
 SameSite=strict
 -->
 
-- Cookie: HttpOnly & Secure
+- Cookie: HttpOnly & Signed
 - LocalStorage or SessionStorage: Vulnarable to XSS attack
+- Memory: Not persistent
 
 <!--
 - SAML 1.1/2.0

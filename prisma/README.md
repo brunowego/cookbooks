@@ -29,6 +29,8 @@ https://github.com/podkrepi-bg/api/tree/master/db/seed
 ## Tools
 
 - [Prisma Schema Builder](https://github.com/albingroen/prismabuilder.io)
+- [SQL To Prisma Schema Generator](https://sql-to-prisma.vercel.app)
+- [EverSQL / SQL To Prisma](https://eversql.com/sql-to-prisma)
 
 ## Terms
 

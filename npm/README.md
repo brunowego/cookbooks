@@ -20,7 +20,7 @@
 
 ### Installation
 
-Included in [Node.js](/nodejs.md) package installers.
+Included in [Node.js](/nodejs/README.md) package installers.
 
 ### Configuration
 

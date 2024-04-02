@@ -14,8 +14,6 @@ https://github.com/jeanhdev/solstice
 https://github.com/loglib/loglib
 https://github.com/kleva-j/Taskaider
 https://github.com/dichioniccolo/bloghub
-
-https://github.com/uninbox/UnInbox
 -->
 
 <!--

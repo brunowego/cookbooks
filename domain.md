@@ -13,6 +13,8 @@
 - [.page](https://get.page)
 
 <!--
+https://namy.ai
+
 https://squadhelp.com
 https://flippa.com
 https://sedo.com

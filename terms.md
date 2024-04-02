@@ -37,7 +37,6 @@
 - Estimated Time of Arrival (ETA)
 - Exempli Gratia (e.g.)
 - Facebook, Amazon, Apple, Netflix e Google (FAANG)
-- Fear Of Missing Out (FOMO)
 - Five Ws (5WH)
 - Free and Open-Source Software (FOSS)
 - Human-Friendly

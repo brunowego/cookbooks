@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Donate Button](https://www.paypal.com/donate/buttons)
+- [Donate Button](https://paypal.com/donate/buttons)

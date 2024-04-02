@@ -16,7 +16,7 @@ export function GET() {
 }
 ```
 
-**Refer:** `./src/app/api/ping.ts`
+**Refer:** `./src/app/api/ping/route.ts`
 
 ```ts
 import { NextResponse } from 'next/server'

@@ -1,5 +1,7 @@
 # Nano ID
 
+**Keywords:** Identification (ID)
+
 ## Links
 
 - [Code Repository](https://github.com/ai/nanoid)

@@ -6,6 +6,7 @@ https://chart.googleapis.com/chart?cht=qr&chs=120x120&chld=L|0&chl=https://web3.
 
 ## Tools
 
+- [QR Code Generator](https://goqr.me)
 - [QR Code Reader](/qr-code-reader.md) 🌟
 - [Qrfy](https://qrfy.com)
 

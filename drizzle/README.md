@@ -9,3 +9,7 @@ https://github.com/Duckapple/prisma-to-drizzle
 ## Links
 
 - [Main Website](https://drizzle.team)
+
+## Glossary
+
+- Relational Query Builder (RQB)

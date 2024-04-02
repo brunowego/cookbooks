@@ -24,6 +24,7 @@ License: Elastic-2.0
 - [Goody](https://developer.ongoody.com)
 - [Infisical](https://infisical.com/docs)
 - [Invopop](https://docs.invopop.com)
+- [Kinbox](https://docs.kinbox.com.br)
 - [Lago](https://getlago.com/docs)
 - [Lotus](https://docs.uselotus.io)
 - [Metriport](https://docs.metriport.com)
@@ -81,4 +82,10 @@ export const LoomVideo = ({ id }) => (
 );
 
 <LoomVideo id="df5d64dd01ca47daa5b7acd18b05a725" />
+-->
+
+<!--
+VSCode
+
+mintlify.mintlify-snippets
 -->

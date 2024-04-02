@@ -18,7 +18,6 @@
 
 ```sh
 brew install mkcert
-brew install nss # if you use Firefox
 ```
 
 #### Linux Binary
@@ -44,6 +43,19 @@ mkcert -help
 ```
 
 ### Configuration
+
+```sh
+#
+mkcert -install
+```
+
+<!--
+sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ./rootCA.pem
+-->
+
+### Tips
+
+#### Example
 
 **Note:** Change `xyz.tld` for your domain.
 
@@ -77,8 +89,6 @@ CAROOT=/etc/ssl/certs/<xyz.tld>/ca \
 ```sh
 sudo hostess add app.<xyz.tld> 127.0.0.1
 ```
-
-### Tips
 
 #### http-server
 

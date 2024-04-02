@@ -4,13 +4,17 @@
 https://github.com/quenti-io/quenti/tree/main/packages/payments
 -->
 
+**Keywords:** Financial Service
+
 ## Links
 
 - [Main Website](https://stripe.com)
 - [Dashboard](https://dashboard.stripe.com)
   - [API keys](https://dashboard.stripe.com/test/apikeys)
   - [Webhooks](https://dashboard.stripe.com/test/webhooks/create?endpoint_location=local)
-  - [Products](https://dashboard.stripe.com/test/products)
+  - [Products](https://dashboard.stripe.com/test/products?active=true)
+  - [Settings]
+    - [Team and security](https://dashboard.stripe.com/settings/team)
 - Docs
   - [Testing](https://stripe.com/docs/testing)
 
@@ -61,6 +65,15 @@ stripe customers create
 #
 stripe trigger payment_intent.succeeded
 -->
+
+### Tips
+
+#### Upgrade
+
+```sh
+# Using Homebrew
+brew upgrade stripe
+```
 
 ## Python Library
 

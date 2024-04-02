@@ -9,23 +9,12 @@
 ```sh
 # Using pnpm
 pnpm add @hookform/devtools -D
+
+# Using Bun
+bun add @hookform/devtools -D
 ```
 
 ## Usage
-
-<!-- ```tsx
-import { DevTool } from '@hookform/devtools'
-
-export default () => {
-  return (
-    <>
-      <DevTool control={control} placement="top-left" />
-
-      <Form />
-    </>
-  )
-}
-``` -->
 
 ```tsx
 import type { DevtoolUIProps } from '@hookform/devtools/dist/devToolUI'

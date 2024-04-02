@@ -1,6 +1,10 @@
 # Postman
 
 <!--
+https://<org>.postman.co/usage/test-data
+-->
+
+<!--
 https://app.pluralsight.com/course-player?courseId=a609cb66-9343-41bd-87e3-a83514e29e27
 https://app.pluralsight.com/library/courses/postman-fundamentals/table-of-contents
 https://www.linkedin.com/learning/postman-essential-training

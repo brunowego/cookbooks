@@ -221,6 +221,15 @@ CME Gaps
 - Zero-knowledge Proof
 - Zero-Sum Game
 
+## Attacks
+
+- FUD Attack
+- Pump and Dump
+- Rug Pull
+- Scam
+- Short and Distort
+- Whale
+
 ## Stock Market Index
 
 | Abbr.                                | Title                                                |

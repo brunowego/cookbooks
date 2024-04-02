@@ -4,7 +4,7 @@
 
 ### References
 
-- [All Sketch Versions](https://sketch.com/updates/)
+- [All Sketch Versions](https://sketch.com/updates)
 
 ### Installation
 

@@ -26,7 +26,7 @@ kubectl get helmrelease/<name> -n <namespace> -o yaml | \
 
 ## References
 
-- [Artifact HUB](https://artifacthub.io/)
+- [Artifact HUB](https://artifacthub.io)
 
 ## CLI
 

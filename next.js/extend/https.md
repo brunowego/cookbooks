@@ -7,17 +7,32 @@
 
 ## Using Experimental Flag
 
+```sh
+#
+mkcert -install
+```
+
+**Refer:** `./.env.local`
+
+```env
+PORT=443
+```
+
 **Refer:** `./package.json`
 
 ```json
 {
   "scripts": {
-    "dev": "next dev --experimental-https"
+    "dev": "next dev -p ${PORT-3000} --experimental-https"
   }
 }
 ```
 
-## Using Proxy
+```sh
+echo '/certificates' >> ./.gitignore
+```
+
+## Using Local SSL Proxy
 
 ```sh
 #

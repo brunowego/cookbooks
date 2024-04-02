@@ -7,6 +7,7 @@
 
 ## Tools
 
+- [aicommits](/aicommits.md) 🌟
 - [commitlint](/conventional-changelog/commitlint.md)
 - [gptcommit](/gptcommit.md)
 - [OpenCommit](/opencommit.md)

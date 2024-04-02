@@ -1,6 +1,7 @@
 # Mantine
 
 <!--
+https://github.com/civitai/civitai
 https://github.com/paralect/ship
 https://github.com/Crossbell-Box/crossbell.io
 

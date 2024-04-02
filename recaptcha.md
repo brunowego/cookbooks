@@ -1,5 +1,0 @@
-# reCAPTCHA
-
-## Alternatives
-
-- hCaptcha

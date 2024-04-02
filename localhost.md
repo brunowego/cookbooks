@@ -12,7 +12,7 @@
 
 - [hostess](/hostess.md)
 - [LocalCan](/localcan.md)
-- [SwitchHosts!](/switchhosts.md)
+- [SwitchHosts!](/switchhosts.md) 🌟
 
 ### Resolves to 127.0.0.1
 

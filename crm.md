@@ -1,5 +1,13 @@
 # Customer Relationship Management (CRM)
 
+<!--
+https://www.youtube.com/watch?v=6f9WqZT6ZA8
+-->
+
+## Terms
+
+- Sales Funnel
+
 ## Learning
 
 - [5 Types of CRM Software Systems & Their Benefits](https://crm.org/crmland/types-of-crm)

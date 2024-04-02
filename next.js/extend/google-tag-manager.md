@@ -12,7 +12,7 @@ bun add @next/third-parties
 **Refer:** `./.env.local`
 
 ```env
-NEXT_PUBLIC_GTM_ID=GTM-XYZ
+NEXT_PUBLIC_GTM_ID='GTM-XYZ'
 ```
 
 **Refer:** `./src/app/layout.tsx`

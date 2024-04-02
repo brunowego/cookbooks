@@ -1,10 +1,15 @@
 # TypeScript Remote Procedure Call (tRPC)
 
 <!--
+https://github.com/lovrozagar/Next-Drizzle-Trpc-Lucia
+https://github.com/barelylabs/barely
+https://github.com/flojoy-ai/cloud
 https://github.com/BeBoRE/ei-noah-bot
 
 https://github.com/search?q=path%3Apackage.json+content%3Atrpc+content%3Anext&type=code
 
+https://github.com/lovrozagar/Next-Drizzle-Trpc-Lucia
+https://github.com/simonfarah/hoshi
 https://github.com/openstatusHQ/openstatus
 https://github.com/hearkus/hearkus/tree/trunk/packages/trpc-router
 https://github.com/echobind/bisonapp

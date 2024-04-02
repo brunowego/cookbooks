@@ -44,15 +44,12 @@ npm install n -g
 sudo mkdir -p /usr/local/n
 
 sudo chown -R "$(whoami)" \
-  /usr/local/n
+  /usr/local/n \
+  /usr/local/bin \
+  /usr/local/lib \
+  /usr/local/include \
+  /usr/local/share
 ```
-
-<!--
-/usr/local/bin \
-/usr/local/lib \
-/usr/local/include \
-/usr/local/share
--->
 
 ### Commands
 

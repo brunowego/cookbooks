@@ -20,19 +20,19 @@ mc -h
 
 ```sh
 # Config
-mc config host add [alias] [url] [accesskey] [secretkey]
+mc config host add <alias> <url> <accesskey> <secretkey>
 
 # List
-mc ls [repo]/[bucket]
+mc ls <alias>/<bucket>
 
 # Remove
-mc rm -r --force [repo]/[bucket]
+mc rm -r --force <alias>/<bucket>
 
 # Make Bucket
-mc mb [repo]/[bucket]
+mc mb <alias>/<bucket>
 
 # Policy
-mc policy [public|upload|download|list] [repo]/[bucket]
+mc policy <public|upload|download|list> <alias>/<bucket>
 ```
 
 <!--
@@ -40,6 +40,16 @@ mc --insecure alias set minio https://${MINIO_SERVICE_HOST}:${MINIO_SERVICE_PORT
 
 mc --insecure cp report-${HOSTNAME}.html minio/artillery
 -->
+
+### Issues
+
+#### TBD
+
+```log
+mc: <ERROR> Unable to initialize new alias from the provided credentials. Get "http://minio:9002/probe-bsign-pazv9zmfvwxwmfkplp05k4lnawiy5y/?locatio
+```
+
+TODO
 
 ## Kubectl
 

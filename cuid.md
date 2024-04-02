@@ -1,5 +1,7 @@
 # Collision-Resistant IDs (CUID)
 
+**Keywords:** Identification (ID)
+
 ## Links
 
 - [Code Repository](https://github.com/paralleldrive/cuid)

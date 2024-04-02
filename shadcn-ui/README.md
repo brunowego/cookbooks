@@ -31,6 +31,7 @@ https://github.com/rizzui/rizzui
 - [shadcn/ui customizer](https://shadcn-ui-customizer.vercel.app)
 
 <!--
+https://gradient.page/tools/shadcn-ui-theme-generator
 https://github.com/Tellay/shadcn-ui-themes
 https://github.com/kiliman/shadcn-custom-theme
 -->

@@ -17,11 +17,14 @@ npm install -g local-ssl-proxy
 
 ```sh
 local-ssl-proxy -h
+# or
+npx local-ssl-proxy -h
 ```
 
 ### Usage
 
 ```sh
 #
-local-ssl-proxy --source 9000 --target 3000
+local-ssl-proxy -s 443 -t 3000
+local-ssl-proxy -s 443 -t 3000 -n api.acme.tld
 ```

@@ -3,16 +3,15 @@
 TODO
 
 <!--
-MIT
 UNLICENSED
 COPYRIGHT
--->
-
-<!--
-Ok
 
 Apache-2.0
 MIT
+
+AGPL-3.0
+
+Elastic License 2.0 (ELv2)
 -->
 
 ## Tools

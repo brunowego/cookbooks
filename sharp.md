@@ -6,6 +6,13 @@
 
 ## Library
 
+### Installation
+
+```sh
+# Using Bun
+bun add sharp
+```
+
 ### Issues
 
 #### Wrong Build of sharp

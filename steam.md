@@ -8,14 +8,10 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Homebrew
 brew install --cask steam
-```
 
-### Chocolatey
-
-```sh
-choco install -y steam-client
+# Chocolatey
+choco install -y steam --ignore-checksums
 ```

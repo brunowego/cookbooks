@@ -1,6 +1,6 @@
 # Mockoon
 
-**Keywords:** Mocking
+**Keywords:** Mocking, Proxy
 
 ## Links
 
@@ -11,15 +11,11 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Homebrew
 brew install --cask mockoon
-```
 
-### Chocolatey
-
-```sh
+# Chocolatey
 choco install -y mockoon
 ```
 

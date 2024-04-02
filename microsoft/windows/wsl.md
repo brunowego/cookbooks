@@ -8,13 +8,13 @@
 
 ## CLI
 
-### Installation
+<!-- ### Installation
 
 #### Chocolatey
 
 ```sh
 choco install -y wsl2
-```
+``` -->
 
 ### Usage
 
@@ -23,7 +23,11 @@ choco install -y wsl2
 wsl --list --online
 
 #
+wsl --install
 wsl --install <name>
+
+#
+wsl --status
 ```
 
 ### Tips

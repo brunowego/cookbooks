@@ -34,3 +34,24 @@ tflint -h
 #
 TFLINT_LOG=debug tflint
 ```
+
+### Tips
+
+#### Visual Studio Code
+
+**Configuration:**
+
+```sh
+#
+jq '."files.associations"."*.hcl" |= "terraform"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+```
+
+#### HCL Configuration
+
+**Refer:** `./.tflint.hcl`
+
+```hcl
+rule "terraform_workspace_remote" {
+  enabled = false
+}
+```

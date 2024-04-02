@@ -9,7 +9,7 @@ accepted_tos_at datetime
 
 ## Tools
 
-- [PrivacyPolicies / Free Terms and Conditions Generator](https://privacypolicies.com/terms-conditions-generator/)
+- [PrivacyPolicies / Free Terms and Conditions Generator](https://privacypolicies.com/terms-conditions-generator)
 - [Termly / Terms and Conditions Generator](https://termly.io/products/terms-and-conditions-generator)
 
 <!--

@@ -8,13 +8,10 @@ https://github.com/jsa4000/Observable-Distributed-System/blob/7601330d7cba153285
 
 ## Links
 
-- [Main Website](https://min.io/)
+- [Code Repository](https://github.com/minio/minio)
+- [Main Website](https://min.io)
 
-## Alternatives
-
-- [Apache Ozone](https://github.com/apache/ozone)
-
-## References
+## Learn
 
 - [S3cmd with MinIO Server](https://docs.min.io/docs/s3cmd-with-minio)
 
@@ -173,15 +170,15 @@ docker volume rm minio-data
 **Refer:** `./.env`
 
 ```env
-MINIO_PORT=9002
+MINIO_PORT=9000
 MINIO_WEB_PORT=9001
 MINIO_ROOT_USER=minio
 MINIO_ROOT_PASSWORD=minio123
 
-MINIO_ENDPOINT=http://127.0.0.1:$MINIO_PORT
-MINIO_BUCKET=medusa
-MINIO_ACCESS_KEY=
-MINIO_SECRET_KEY=
+MINIO_ENDPOINT=http://localhost:$MINIO_PORT
+MINIO_BUCKET=acme
+MINIO_ACCESS_KEY=minio
+MINIO_SECRET_KEY=minio123
 ```
 
 **Refer:** `./docker-compose.yml`
@@ -192,7 +189,7 @@ version: '3'
 
 services:
   minio:
-    image: docker.io/minio/minio:RELEASE.2023-09-23T03-47-50Z
+    image: docker.io/minio/minio:RELEASE.2024-03-15T01-07-19Z
     volumes:
       - type: volume
         source: minio-data
@@ -209,6 +206,24 @@ services:
         published: $MINIO_WEB_PORT
         protocol: tcp
     restart: unless-stopped
+
+  minio-mc:
+    image: docker.io/minio/mc:RELEASE.2024-03-13T23-51-57Z
+    environment:
+      MINIO_ALIAS: acme
+      MINIO_ENDPOINT: http://minio:9000
+      MINIO_ACCESS_KEY:
+      MINIO_SECRET_KEY:
+      MINIO_BUCKET:
+    entrypoint: >
+      /bin/sh -c "
+        sleep 5;
+        /usr/bin/mc config host add $${MINIO_ALIAS} $${MINIO_ENDPOINT} $${MINIO_ACCESS_KEY} $${MINIO_SECRET_KEY};
+        /usr/bin/mc mb $${MINIO_ALIAS}/$${MINIO_BUCKET};
+        /usr/bin/mc anonymous set public $${MINIO_ALIAS}/$${MINIO_BUCKET};
+      "
+    depends_on:
+      - minio
 
 volumes:
   minio-data:

@@ -12,10 +12,6 @@
 - Instant Payment Platform (PIX)
 
 <!--
-
--->
-
-<!--
 https://openpix.com.br
 -->
 

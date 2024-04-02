@@ -1,5 +1,13 @@
 # Game Design
 
+<!--
+https://shrapnel.com
+-->
+
+## Related
+
+- [Gaming and Decentralized Finance (GameFi)](/cryptocurrency/gamefi.md)
+
 ## Glossary
 
 - Heads-Up Display (HUD)
@@ -12,6 +20,9 @@
 - Screen Shape
 
 <!--
+https://playground.com/search?q=%28science+fiction+isometric+sprites
+https://pixeltopoly.com
+
 https://graphicriver.net/item/30-hitech-panels-frames-and-screens-shapes/22556633
 https://graphicriver.net/item/30-hitech-frames-panels-and-screens/22549474
 https://graphicriver.net/item/39-hitech-panels-custom-shapes/20461064

@@ -78,6 +78,20 @@ EOF
 
 ### Issues
 
+#### TBD
+
+```log
+The operation couldn’t be completed. Unable to locate a Java Runtime that supports apt.
+Please visit http://www.java.com for information on installing Java.
+```
+
+TODO
+
+<!-- ```sh
+export JAVA_HOME="$(dirname $(dirname $(readlink -f $(which java))))"
+export PATH="$JAVA_HOME/bin:$PATH"
+``` -->
+
 #### Lock
 
 ```log

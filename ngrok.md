@@ -6,7 +6,7 @@
 
 ### Dependencies
 
-- [OpenSSH Server](/openssh-server.md)
+- [OpenSSH Server](/openssh/server.md)
 
 #### APT
 

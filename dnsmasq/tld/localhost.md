@@ -1,5 +1,9 @@
 # .localhost as TLD
 
+## Dependencies
+
+- [dnsmasq](/dnsmasq/README.md)
+
 ## Configuration
 
 ```sh

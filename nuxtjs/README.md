@@ -1,6 +1,8 @@
 # NuxtJS
 
 <!--
+https://github.com/Baroshem/nuxt-security
+
 https://oku-ui.com/pergel
 -->
 

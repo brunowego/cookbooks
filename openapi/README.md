@@ -1,5 +1,9 @@
 # OpenAPI Specification (OpenAPI)
 
+<!--
+https://acme.tld/specs/v1/openapi.json
+-->
+
 ## Links
 
 - [Org. Repository](https://github.com/oai)
@@ -11,7 +15,8 @@
 
 - [Apidog](/apidog.md)
 - [Redoc](https://github.com/Redocly/redoc)
-- [Scalar](/scalar.md)
+- [rest.wiki](https://rest.wiki)
+- [Scalar](/scalar.md) 🌟
 - [Swagger UI](/swagger/ui.md)
 
 <!--

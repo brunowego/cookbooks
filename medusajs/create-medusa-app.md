@@ -68,7 +68,7 @@ pnpm dlx create-medusa-app@latest \
 
 ## Configuration
 
-**Refer:** `./.env` (app)
+**Refer:** `./.env`
 
 ```env
 OPEN_BROWSER=false
@@ -89,7 +89,7 @@ COOKIE_SECRET=S3cr3t_K@Key
 
 ```sh
 #
-cd ./app
+cd ./<name>
 
 #
 medusa migrations run

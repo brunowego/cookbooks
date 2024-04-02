@@ -11,6 +11,7 @@ https://github.com/cristianoliveira/ergo
 ## Tools
 
 - [hide.me](https://hide.me/en/proxy)
+- [local-ssl-proxy](/local-ssl-proxy.md)
 
 ## List of Variables
 

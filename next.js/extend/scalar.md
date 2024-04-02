@@ -8,22 +8,21 @@
 
 ```sh
 # Using Bun
-bun add @scalar/api-reference @scalar/nextjs-api-reference
+bun add @scalar/nextjs-api-reference
 ```
 
 ## Configuration
 
-**Refer:** `./src/app/reference/route.ts`
+**Refer:** `./src/app/api/reference/route.ts`
 
 ```ts
 import { ApiReference } from '@scalar/nextjs-api-reference'
 
-// import content from '/absolute/path/to/openapi.json'
-
 const config = {
   spec: {
-    // content
-    url: '/api/v1/openapi.json',
+    content: await (
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/specs/openapi.json`)
+    ).json(),
   },
 }
 

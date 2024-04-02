@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Docs](https://docs.digitalocean.com/reference/doctl/)
+- [Docs](https://docs.digitalocean.com/reference/doctl)
 
 ## CLI
 
@@ -14,17 +14,36 @@
 brew install doctl
 ```
 
+### Commands
+
+```sh
+doctl -h
+```
+
+### Initialization
+
+```sh
+#
+doctl auth init
+
+#
+doctl auth switch
+
+#
+doctl account get
+
+#
+doctl account ratelimit
+```
+
 ### Usage
 
 ```sh
-# Account
-doctl account get
-doctl account ratelimit
+#
+doctl projects list
+```
 
-# Auth
-doctl auth init
-doctl auth switch
-
+<!--
 # Compute
 doctl compute action
 doctl compute cdn
@@ -52,7 +71,7 @@ doctl compute volume-action
 doctl projects create
 doctl projects delete [id]
 doctl projects get [id]
-doctl projects list
+
 doctl projects resources
 doctl projects update [id]
-```
+-->

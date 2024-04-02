@@ -114,6 +114,16 @@ bunx turbo build --filter <pkg-name>
 jq '."search.exclude"."**/.turbo" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
 
+### Issues
+
+#### TBD
+
+```log
+EPERM: Operation not permitted
+```
+
+TODO
+
 ## CLI
 
 ### Installation

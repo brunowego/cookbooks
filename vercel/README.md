@@ -78,6 +78,11 @@ https://epic-course-platform.vercel.app/
 
 ### Installation
 
+```sh
+# Using NPM
+npm install vercel@latest -g
+```
+
 #### Homebrew
 
 ```sh
@@ -135,6 +140,9 @@ vercel secrets ls
 #
 vercel deploy
 vercel deploy --prod --no-clipboard
+
+#
+vercel redeploy <url>
 
 #
 vercel ls

@@ -1,13 +1,13 @@
 # LocationSimulator
 
 <!--
-https://www.longitude-latitude-maps.com/city/28_30,Anapolis,Goias,Brazil
+https://longitude-latitude-maps.com/city/28_30,Anapolis,Goias,Brazil
 -->
 
 ## Links
 
 - [Code Repository](https://github.com/Schlaubischlump/LocationSimulator)
-- [Main Website](https://schlaubischlump.github.io/LocationSimulator/)
+- [Main Website](https://schlaubischlump.github.io/LocationSimulator)
 
 ## App
 

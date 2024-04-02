@@ -58,6 +58,7 @@ Discord: https://github.com/hacs/integration/blob/main/.github/workflows/validat
 
 ## Links
 
+- [GitHub Actions Runner Images](https://github.com/actions/runner-images)
 - [GitHub Actions Virtual Environments](https://github.com/actions/virtual-environments)
 - [Learning Lab](https://lab.github.com)
 - [Features Actions](https://github.com/features/actions)
@@ -333,10 +334,10 @@ TODO
 
 ```sh
 #
-code --install-extension cschleiden.vscode-github-actions
+code --install-extension GitHub.vscode-github-actions
 
 #
-jq '."recommendations" += ["cschleiden.vscode-github-actions"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+jq '."recommendations" += ["GitHub.vscode-github-actions"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 #### Concurrency

@@ -10,12 +10,6 @@
 # Using NPM
 npm install @svgr/webpack --save-dev
 
-# Using Yarn
-yarn add @svgr/webpack --dev
-
-# Using pnpm
-pnpm add @svgr/webpack -D
-
 # Using Bun
 bun add @svgr/webpack -D
 ```

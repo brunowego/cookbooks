@@ -1,5 +1,9 @@
 # Slack
 
+<!--
+https://usepylon.com
+-->
+
 ## Links
 
 - [Org. Repository](https://github.com/slackhq)
@@ -9,7 +13,7 @@
 - [Workspace Admin](https://my-org.slack.com/admin)
 
 <!--
-https://slack.github.com/
+https://slack.github.com
 -->
 
 ## App

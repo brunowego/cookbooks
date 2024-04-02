@@ -26,12 +26,23 @@ https://github.com/anaxios/CL4P-TP/blob/master/Dockerfile
 
 ### Installation
 
+```sh
+# Using NPM
+npm install bun -g
+```
+
 #### Homebrew
 
 ```sh
 brew tap oven-sh/bun
 brew install bun
 ```
+
+<!-- #### Snap
+
+```sh
+sudo snap install bun-js
+``` -->
 
 ## Environment
 

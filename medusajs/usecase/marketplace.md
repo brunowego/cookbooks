@@ -4,17 +4,15 @@
 https://github.com/extropysk/marketplace
 https://github.com/Slaknoah/medusa-marketplace
 https://github.com/shavidze/medusa-api
+https://github.com/ntthanhvy/testable-deployment
+https://github.com/loadpipe/Hamza-medusa
+https://github.com/CyrilSL/octopus
 -->
 
-## Links
+## Learn
 
-- [Tutorial]
-  - [Extending Medusa Example: Creating a Marketplace](https://medusajs.com/blog/extending-medusa-usecase-marketplace/)
-
-<!--
-https://github.com/shahednasser/medusa-1.8-marketplace-tutorial
--->
+- [Build a Marketplace](https://docs.medusajs.com/recipes/marketplace)
 
 ## Articles
 
-- [Foraged: Building a custom marketplace experience with Medusa](https://medusajs.com/blog/foraged-custom-marketplace)
+- [Foraged: Building a custom marketplace experience with Medusa](https://medusajs.com/blog/foraged)
