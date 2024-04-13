@@ -48,6 +48,16 @@ https://razorui.com/libraries/blade-application-ui/empty-states
 
 Hero
 
+https://tailwindcollections-organic.netlify.app
+
+Header
+
+https://tailwindcollections-grid-landingpage.netlify.app
+https://tailwindcollections-gallery-page.netlify.app
+
+Product
+
+https://tailwindcollections-furniture-store.netlify.app
 
 About
 
@@ -66,14 +76,24 @@ Customers
 https://doppler.com/customers
 https://mintlify.com/customers
 
-404
+Notifications
 
-https://chawkbazar.vercel.app/test
-https://phpsandbox.io/test
-https://kentcdodds.com/test1
-https://liveblocks.io/test
-https://coastpay.com/test
-https://infisical.com/test
+https://whop.com/account/general
+
+404 (Not Found)
+
+https://oneuptime.com/404
+https://app.plane.so/404
+https://console.baselime.io/404
+https://supabase.com/404
+https://productlane.com/404
+https://chawkbazar.vercel.app/404
+https://phpsandbox.io/404
+https://kentcdodds.com/404
+https://liveblocks.io/404
+https://coastpay.com/404
+https://infisical.com/404
+https://himalayas.app/404
 
 Chat
 
@@ -86,6 +106,10 @@ https://scribbler-react.themeyn.com/app/templates/chatbot
 https://wp.alithemes.com/html/frox/demos/chat-page-1.html
 https://wp.alithemes.com/html/frox/demos/chat-page-3.html
 https://square-eta.vercel.app/chat
+
+Dark/Light Transition
+
+https://github.com/milhamm/aang.dev
 
 Booking
 
@@ -132,6 +156,8 @@ https://himalayas.app/jobs
 
 Stats
 
+https://app.cometchat.com/app/2557845219771d1a/overview
+https://helicone.ai/dashboard
 https://projectx-eight-gilt.vercel.app/open
 
 Store
@@ -152,11 +178,17 @@ https://escavador.com/nomes/francisco-carvalho-rodrigues-6221b0ac69
 https://himalayas.app/companies/coinbase
 https://toolfinder.co/tools/evernote
 
+Email Verification
+
+https://app.cometchat.com/verification-email-sent?email=brunowego@gmail.com
+
 Login
 
+https://admin.brizy.io/signup
 https://feyapp.com/signup
 https://reviews.io/signup/basic?signup_email=true
 
+https://trading.hellostake.com/auth/login
 https://app.apidog.com/user/login
 https://markprompt.com/login
 https://mobbin.com/login
@@ -184,6 +216,10 @@ https://coinhall.org
 
 Landing Page
 
+https://jobbliss.com
+https://tailwind-landing-template.vercel.app
+https://tailwindcollections-grid-landingpage.netlify.app
+https://myfittracker.com
 https://localcan.com
 
 Integrations
@@ -222,19 +258,26 @@ https://console.baselime.io/brunowego/plans
 
 Dashboard
 
+https://app.cometchat.com/app/2557845219771d1a/overview
+https://app.runwayml.com/video-tools/teams/brunowego/dashboard
+https://tailwindcollections-spacex.netlify.app
+https://tailwindcollections-skateboard-video-platform.netlify.app
+https://tailwindcollections-product-dashboard.netlify.app
+https://tailwindcollections-order-dashboard.netlify.app
+https://tailwindcollections-money-transfer.netlify.app
 https://app.netbird.io/peers
 https://dashboard.doppler.com
 https://githr.vercel.app
 https://vue-shadcn-dashboard.vercel.app/dashboard/home
 https://next-shadcn-dashboard-starter.vercel.app/dashboard
-https://shadcn-dashboard-three.vercel.app/
-https://shadcn-admin.netlify.app/
-https://dashboard-ten-rho.vercel.app/
-https://framer-dashboard-clone.vercel.app/
+https://shadcn-dashboard-three.vercel.app
+https://shadcn-admin.netlify.app
+https://dashboard-ten-rho.vercel.app
+https://framer-dashboard-clone.vercel.app
 https://station-proto.netlify.app/doc
-https://miro-clone-ten.vercel.app/
+https://miro-clone-ten.vercel.app
 https://vercel-clone-three.vercel.app/dashboard
-https://app.specfy.io/
+https://app.specfy.io
 https://console.qovery.com
 https://console.baselime.io/brunowego
 https://app.golaunchpad.com/consumer/account
@@ -269,6 +312,7 @@ https://himalayas.app/companies/hustlewing/tech-stack
 
 Settings
 
+https://accounts.shopify.com/accounts/238884001/personal
 https://app.plane.so/profile
 https://resend.com/profile
 https://app.cal.com/settings/my-account/profile
@@ -305,6 +349,7 @@ https://newsletter.quivr.app/subscribe/a20f5eaf-9071-4647-93cb-74f5e771e3e1/mana
 
 Onboarding
 
+https://app.antimetal.com/workspace/connect
 https://app.documenso.com/documents
 https://feyapp.com/onboarding/subscription
 https://hashnode.com/onboard/reader/follow-tags

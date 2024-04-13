@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://avenue.us/)
+- [Main Website](https://avenue.us)
 
 ## Tips
 

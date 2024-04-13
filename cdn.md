@@ -15,3 +15,10 @@
 <!--
 https://bunny.net/cdn
 -->
+
+<!--
+Home Responses
+
+https://cdn.freecodecamp.org
+https://cdn.discordapp.com
+-->

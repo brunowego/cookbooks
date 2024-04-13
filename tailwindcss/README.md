@@ -27,6 +27,7 @@ https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atai
 
 <!--
 https://tailbits.com
+https://flowrift.com | https://github.com/n6ai/flowrift
 -->
 
 **Keywords:** CSS framework, Utility-first
@@ -72,6 +73,7 @@ https://tailbits.com
 
 ## Tools
 
+- [TailwindMate](https://tailwindmate.jaleelbennett.com) 🌟
 - [Tailwind Gradient Generator](https://tailwind-gradient-generator.vercel.app)
 - Converter
   - [Lembdadev / CSS to TailwindCSS Converter](https://lembdadev.com/css-to-tailwind-converter)

@@ -11,7 +11,7 @@ https://redq.io/landings/pickbazar
 - Dropshipping
 
 <!--
-https://www.udemy.com/course/starting-an-ecommerce-business-in-pakistan/
+https://udemy.com/course/starting-an-ecommerce-business-in-pakistan/
 -->
 
 ## References

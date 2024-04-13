@@ -1,18 +1,25 @@
 # Vercel Environment
 
+## Learn
+
+- [Exporting Development Environment Variables](https://vercel.com/docs/cli/env#exporting-development-environment-variables)
+
 ## Commands
 
 ```sh
 #
-vercel env -h
+vc env -h
 ```
 
 ## Usage
 
 ```sh
 #
-vercel link
+vc link
 
 #
-vercel env pull ./.env.development.local
+vc env ls
+
+#
+vc env pull ./.env.development.local
 ```

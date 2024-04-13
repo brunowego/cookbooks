@@ -146,4 +146,6 @@ minikube ssh docker pull opensearchproject/opensearch:2.4.1
 Warning  FailedScheduling  21s (x6 over 4m41s)  default-scheduler  0/4 nodes are available: 4 pod has unbound immediate PersistentVolumeClaims.
 ```
 
+<!-- 0/1 nodes are available: pod has unbound immediate PersistentVolumeClaims. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling. -->
+
 TODO

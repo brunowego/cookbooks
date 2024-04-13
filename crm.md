@@ -24,6 +24,8 @@ https://cubosuite.com.br
 https://cloud.taygo.com
 https://keap.com
 https://pipefy.com
+https://clint.digital
+https://sydle.com
 -->
 
 ### Open Source

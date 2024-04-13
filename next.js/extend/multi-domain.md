@@ -20,3 +20,15 @@ https://github.com/DevAlien/monitall/blob/main/apps/nextjs/src/app/%5Bdomain%5D/
 https://github.com/arsenalamerica/source/blob/main/apps/branches/app/%5Bdomain%5D/layout.tsx
 https://github.com/Yonom/AuthPortal/blob/main/apps/portal/app/isr/%5Bdomain%5D/layout.tsx
 -->
+
+<!--
+https://github.com/thedevdavid/bumblebee/blob/main/apps/web/src/app/%5Bdomain%5D/layout.tsx
+https://github.com/dichioniccolo/bloghub/blob/main/apps/blogs/src/app/%5Bdomain%5D/layout.tsx
+https://github.com/lumoflo/lumoflo.com/blob/main/apps/website/src/app/%5Bdomain%5D/layout.tsx
+https://github.com/RoylerMarichal/next-14-saas-boilerplate/blob/main/src/app/%5Bdomain%5D/layout.tsx
+https://github.com/matheuspergoli/draftlink/blob/main/src/app/%5Bdomain%5D/layout.tsx
+https://github.com/matheuspergoli/draftlab/blob/main/src/app/%5Bdomain%5D/layout.tsx
+https://github.com/and-voila/labs/blob/main/apps/ai/src/app/(domain)/%5Bdomain%5D/layout.tsx
+https://github.com/AnswerOverflow/AnswerOverflow/blob/main/apps/main-site/src/app/%5Bdomain%5D/layout.tsx
+https://github.com/openstatusHQ/openstatus/blob/main/apps/web/src/app/status-page/%5Bdomain%5D/layout.tsx
+-->

@@ -1,6 +1,10 @@
 # Extend with Open Graph
 
 <!--
+https://github.com/openstatusHQ/openstatus/blob/main/apps/web/src/app/status-page/%5Bdomain%5D/layout.tsx
+-->
+
+<!--
 1,200 x 630 pixels
 -->
 

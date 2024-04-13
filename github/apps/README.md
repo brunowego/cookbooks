@@ -9,6 +9,10 @@ https://github.com/organizations/<org>/settings/installations
 https://github.com/organizations/<org>/settings/apps
 -->
 
+## Links
+
+- [GitHub Apps](https://github.com/settings/apps)
+
 ## Issues
 
 ### Install From Org. Settings

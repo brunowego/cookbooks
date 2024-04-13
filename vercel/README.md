@@ -96,72 +96,72 @@ brew install vercel-cli
 npx vercel help
 
 # With Local
-vercel help
+vc help
 ```
 
 ### Usage
 
 ```sh
 #
-vercel login
-vercel switch
+vc login
+vc switch
 
 #
-vercel whoami
+vc whoami
 
 #
-vercel teams ls
+vc teams ls
 
 # For new project
-vercel init
+vc init
 # Or, older existing project
-vercel link
+vc link
 
 #
-vercel dev
+vc dev
 
 #
-vercel projects
+vc projects
 
 #
-vercel domains
-vercel dns
+vc domains
+vc dns
 
 #
-vercel certs ls
+vc certs ls
 
 #
-vercel env ls
-vercel env pull --environment development
+vc env ls
+vc env pull --environment development
 
 #
-vercel secrets ls
+vc secrets ls
 
 #
-vercel deploy
-vercel deploy --prod --no-clipboard
+vc deploy
+vc deploy --prod --no-clipboard
 
 #
-vercel redeploy <url>
+vc redeploy <url>
 
 #
-vercel ls
+vc ls
 
 #
-vercel inspect <url>
+vc inspect <url>
 
 #
-vercel logs <deploy-id>
+vc logs <deploy-id>
 
 #
-vercel rm <deploy-id>
+vc rm <deploy-id>
 
 #
-vercel logout
+vc logout
 ```
 
 <!--
-vercel billing ls
+vc billing ls
 -->
 
 ### Tips
@@ -173,7 +173,7 @@ git diff --quiet HEAD^ HEAD ./ -->
 #### Pull Local Environment Variables
 
 ```sh
-vercel env pull ./.env.local
+vc env pull ./.env.local
 ```
 
 #### DNS

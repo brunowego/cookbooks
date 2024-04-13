@@ -1,16 +1,18 @@
 # Zoho Mail
 
+<!--
+IMAP/SMTP only in paid plans
+-->
+
 ## Links
 
 - [Mail](https://mail.zoho.com)
 - [Admin](https://mailadmin.zoho.com)
 
 <!--
-https://www.zoho.com/toolkit/mx-lookup.html
-
-https://www.zoho.com/mail/help/imap-access.html
-
-https://www.zoho.com/pt-br/mail/help/adminconsole/godaddy.html#mx
+https://zoho.com/toolkit/mx-lookup.html
+https://zoho.com/mail/help/imap-access.html
+https://zoho.com/pt-br/mail/help/adminconsole/godaddy.html#mx
 
 https://zohomail.tools/#runChecks
 -->
@@ -22,3 +24,7 @@ https://zohomail.tools/#runChecks
 
 mail._domainkey
 -->
+
+## Learn
+
+- [Spark Mail / How to Add Zoho Email to Mac](https://sparkmailapp.com/add-zoho-mac)

@@ -174,6 +174,16 @@ osascript -e 'quit app "Visual Studio Code"'
 
 ### Issues
 
+#### Code Sign Error
+
+```log
+[0403/074223.597574:ERROR:codesign_util.cc(108)] SecCodeCheckValidity: Error Domain=NSOSStatusErrorDomain Code=-67062 "(null)" (-67062)
+```
+
+```sh
+codesign --deep --force --sign - /Applications/Visual\ Studio\ Code.app
+```
+
 #### TBD
 
 ```log

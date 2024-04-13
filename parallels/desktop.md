@@ -21,3 +21,7 @@ vagrant plugin install vagrant-parallels
 <!--
 FALL23
 -->
+
+<!--
+ParallelsDesktop.parallels-desktop
+-->

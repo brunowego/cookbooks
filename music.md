@@ -15,4 +15,4 @@ Oliver Tree - Life Goes On
 
 ## Tools
 
-- [DistroKid](https://distrokid.com/)
+- [DistroKid](https://distrokid.com)

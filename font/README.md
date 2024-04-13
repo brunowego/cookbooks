@@ -9,7 +9,7 @@ TTF, OTF, WOFF, EOT & SVG
 ## Tools
 
 - [What Font Is](https://whatfontis.com)
-- [WhatTheFont!](https://myfonts.com/WhatTheFont/)
+- [WhatTheFont!](https://myfonts.com/WhatTheFont)
 - [Font Identifier](https://fontsquirrel.com/matcherator)
 
 ### CDN

@@ -1,6 +1,10 @@
 # MDX
 
 <!--
+https://github.com/shuding/nextra | https://nextra.site
+-->
+
+<!--
 <pre>{JSON.stringify(<variable>, null, 2)}</pre>
 -->
 

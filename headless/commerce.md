@@ -37,7 +37,7 @@ https://blazity.com/services/headless-ecommerce-solutions
 - [Wix Stores](https://wix.com/app-market/wix-stores)
 
 <!--
-https://github.com/vendure-ecommerce/vendure
+https://github.com/reactioncommerce/reaction
 https://crystallize.com
 https://vtex.com
 -->

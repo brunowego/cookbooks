@@ -25,6 +25,12 @@ yarn add @trunkio/launcher -D
 pnpm add @trunkio/launcher -D
 ```
 
+### Initialization
+
+```sh
+pnpx trunk init
+```
+
 ### Configuration
 
 ```sh
@@ -44,6 +50,11 @@ trunk config share
   }
   // ...
 }
+```
+
+```sh
+#
+pnpx lint -a
 ```
 
 ### Tips
@@ -72,6 +83,16 @@ lint:
       paths:
         - path/to/file.svg
 ```
+
+### Issues
+
+#### TBD
+
+```log
+WARN  Failed to create bin at /node_modules/.bin/trunk_bash. ENOENT: no such file or directory, open '/node_modules/@trunkio/launcher/trunk'
+```
+
+TODO
 
 ## CLI
 

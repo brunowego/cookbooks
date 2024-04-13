@@ -78,7 +78,10 @@ git commit --date 'Wed Feb 16 14:00 2037 +0100'
 Modify `pick` to `edit`:
 
 ```sh
-git rebase -i '[hash]^'
+# Get hash of commit to modify
+git log --oneline
+
+git rebase -i '<hash>^'
 
 git commit --all --amend --no-edit
 

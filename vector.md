@@ -1,5 +1,9 @@
 # Vector
 
-## TBD
+TODO
 
-- [Vecta](https://vecta.io/)
+<!-- - [Vecta](https://vecta.io) -->
+
+<!--
+Anchor Points Simplify
+-->

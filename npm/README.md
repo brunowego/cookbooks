@@ -11,6 +11,10 @@
 - [npm trends](https://npmtrends.com/git-hooks-vs-husky-vs-pre-commit)
 - [Status Page](https://status.npmjs.org)
 
+## Local Registry
+
+- [Verdaccio](/verdaccio.md)
+
 ## CLI
 
 ### References

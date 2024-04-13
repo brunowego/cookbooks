@@ -4,9 +4,10 @@
 🌟
 -->
 
-## Links
+## Tools
 
-- [Main Website](https://getemoji.com)
+- [EmojiDB](https://emojidb.org) 🌟
+- [GetEmoji](https://getemoji.com)
 
 ## Tips
 

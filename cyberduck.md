@@ -1,5 +1,11 @@
 # Cyberduck
 
+**Keywords:** Storage Browser
+
+## Links
+
+- [Main Website](https://cyberduck.io)
+
 ## App
 
 ### Installation

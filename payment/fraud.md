@@ -10,9 +10,6 @@
 
 ### Managed
 
+- [ClearSale](https://clear.sale)
 - [Sift / Payment Fraud](https://sift.com/solutions/payment-fraud)
 - [Sumsub / KYT](https://sumsub.com/kyt)
-
-<!--
-ClearSale
--->

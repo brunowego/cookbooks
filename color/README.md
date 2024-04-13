@@ -97,6 +97,7 @@ https://uicolors.app/create
 
 - [Colorffy / HEX to HSL](https://colorffy.com/color-converter/hex-to-hsl) 🌟
 - [ConvertAColor](https://convertacolor.com) 🌟
+- [DivMagic / Color Converter](https://divmagic.com/tools/color-converter)
 - [EasyRetro / HEX to HSL](https://easyretro.io/tools/hex-to-hsl)
 
 ### Contrast Checker

@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/pacocoursey/next-themes)
-- [Main Website](https://next-themes-example.vercel.app/)
+- [Main Website](https://next-themes-example.vercel.app)
 
 ## Installation
 
@@ -33,3 +33,13 @@ function App({ Component, pageProps }: AppProps) {
 
 export default App
 ```
+
+## Issues
+
+### TBD
+
+```log
+Warning: Extra attributes from the server: class,style
+```
+
+TODO

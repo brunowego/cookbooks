@@ -1,4 +1,4 @@
-# NextAuth.js
+# Auth.js (p.k.a. NextAuth.js)
 
 <!--
 https://github.com/pedroapfilho/acme-monorepo/tree/main
@@ -7,13 +7,17 @@ https://github.com/pedroapfilho/acme-monorepo/tree/main
 ## Links
 
 - [Code Repository](https://github.com/nextauthjs/next-auth)
-- [Main Website](https://next-auth.js.org/)
+- [Main Website](https://authjs.dev/)
 
 ## Guides
 
 - [Tutorials and Explainers](https://next-auth.js.org/tutorials)
 - [Configuration / Options](https://next-auth.js.org/configuration/options)
 - [Configuration / Pages](https://next-auth.js.org/configuration/pages)
+
+## Tools
+
+- [Create GitHub Client](https://github-client-generator.vercel.app)
 
 ## Examples
 

@@ -4,10 +4,8 @@
 
 - [Main Website](https://openai.com)
 - [Status Page](https://status.openai.com)
-
-## Account
-
-- [API keys](https://beta.openai.com/account/api-keys)
+  Account
+  - [API keys](https://platform.openai.com/api-keys)
 
 ## Environment
 

@@ -1,11 +1,5 @@
 # Social Networks
 
-## Tools
-
-- [Instant Username](https://instantusername.com)
-- [Namecheckr](https://namecheckr.com)
-- [Namechk](https://namechk.com) 🌟
-
 ## My
 
 - [Behance](https://behance.net/brunowego)

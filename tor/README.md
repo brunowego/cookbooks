@@ -1,30 +1,25 @@
-# Tor
+# Tor (short for The Onion Router)
+
+**Keywords:** Anonymous Communication
 
 ## Links
 
 - [Code Repository](https://github.com/torproject/tor)
-- [Main Website](https://torproject.org/)
+- [Main Website](https://torproject.org)
 
 ## CLI
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Homebrew
 brew install tor
-```
 
-#### APT
-
-```sh
+# APT
 sudo apt update
 sudo apt -y install tor
-```
 
-#### YUM
-
-```sh
+# YUM
 yum check-update
 sudo yum -y install tor
 ```
@@ -46,3 +41,12 @@ brew services restart tor
 <!--
 ps axu | grep "/bin/tor"
 -->
+
+## Browser
+
+### Installation
+
+```sh
+# Homebrew
+brew install --cask tor-browser
+```

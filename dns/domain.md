@@ -4,8 +4,13 @@
 
 - Domain Name (DN)
 
+## Terms
+
+- Apex Domain
+
 ## Tools
 
+- [Domain Information Groper (dig)](/dig.md)
 - [Whois](/whois.md)
 
 ## TLD

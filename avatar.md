@@ -13,5 +13,5 @@
 - [XSGames / Random users](https://xsgames.co/randomusers)
 
 <!--
-https://xsgames.co/randomusers/assets/avatars/female/${i}.jpg
+https://xsgames.co/randomusers/assets/avatars/female/14.jpg
 -->

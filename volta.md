@@ -34,6 +34,9 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 ```sh
 # Volta
 export PATH="$PATH:$HOME/.volta/bin"
+
+# Volta Features
+# export VOLTA_FEATURE_PNPM=1
 ```
 
 ```sh

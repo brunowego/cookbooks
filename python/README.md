@@ -9,10 +9,8 @@ https://linkedin.com/learning/data-science-foundations-data-mining-in-python/pyt
 ## Links
 
 - [Python Cheat-Sheet](https://github.com/gto76/python-cheatsheet)
-
-## Docs
-
-- [Versions](https://python.org/doc/versions/)
+- Docs
+  - [Versions](https://python.org/doc/versions)
 
 ## Version
 

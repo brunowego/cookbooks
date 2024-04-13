@@ -1,4 +1,4 @@
-# Thems
+# Themes
 
 ## OneHalfDark
 

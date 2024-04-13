@@ -38,6 +38,12 @@ neonctl auth
 neonctl projects list
 ```
 
+<!--
+main
+staging
+develop
+-->
+
 <!-- psql -h pg.neon.tech -->
 
 ## Helm

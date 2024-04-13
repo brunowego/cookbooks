@@ -1,4 +1,4 @@
-# Prisma
+# Extend with Prisma
 
 ## Links
 
