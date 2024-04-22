@@ -2,6 +2,10 @@
 
 <!--
 https://synclinear.com
+
+https://github.com/tegonhq/tegon
 -->
 
-TODO
+## Links
+
+- [Main Website](https://linear.app)

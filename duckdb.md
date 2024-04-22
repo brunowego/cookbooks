@@ -1,5 +1,9 @@
 # DuckDB
 
+<!--
+https://github.com/pretzelai/pretzelai
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/duckdb/duckdb)

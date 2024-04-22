@@ -9,6 +9,8 @@ tRPC
 <!--
 Alternative
 
+https://github.com/fabian-hiller/valibot
+https://github.com/ianstormtaylor/superstruct
 https://github.com/jquense/yup
 https://github.com/hapijs/joi
 -->

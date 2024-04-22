@@ -54,6 +54,7 @@ https://gosquared.com
 - [umami](https://github.com/mikecao/umami)
 
 <!--
+https://github.com/Openpanel-dev/openpanel
 https://github.com/aptabase/aptabase
 https://github.com/withbeacon/beacon
 -->

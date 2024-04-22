@@ -33,3 +33,21 @@ axios.get('https://google.com')
 
 .exit
 ```
+
+<!-- ### Tips -->
+
+<!-- ####
+
+```ts
+import { isAxiosError } from './api'
+
+export function parseError(err: unknown) {
+  return isAxiosError(err) && typeof err.response?.data === 'string'
+    ? { status: err.response.status, message: err.response.data }
+    : err instanceof Error
+      ? { message: err.message }
+      : typeof err === 'string'
+        ? { message: err }
+        : {}
+}
+``` -->

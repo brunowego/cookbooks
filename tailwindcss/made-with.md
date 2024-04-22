@@ -42,9 +42,14 @@ https://light.so/demo/overview
 
 Empty State
 
+https://app.frigade.com/rules
 https://tailwindui.com/components/application-ui/feedback/empty-states
 https://kopi.dev/tailwind/empty-state-components-collection-using-tailwind-ui/
 https://razorui.com/libraries/blade-application-ui/empty-states
+
+Activity
+
+https://app.netbird.io/activity
 
 Hero
 
@@ -80,8 +85,13 @@ Notifications
 
 https://whop.com/account/general
 
+Changelog
+
+https://feyapp.com/updates
+
 404 (Not Found)
 
+https://api.themembers.dev.br/404
 https://oneuptime.com/404
 https://app.plane.so/404
 https://console.baselime.io/404
@@ -178,16 +188,28 @@ https://escavador.com/nomes/francisco-carvalho-rodrigues-6221b0ac69
 https://himalayas.app/companies/coinbase
 https://toolfinder.co/tools/evernote
 
+Address
+
+https://mercadolivre.com.br/addresses/v2/address?app=MY_ML&addressId=1305296149
+
 Email Verification
 
 https://app.cometchat.com/verification-email-sent?email=brunowego@gmail.com
 
-Login
+Magic Link
+
+https://opencollective.com/signin/sent?email=me%40brunowego.com
+
+Login / Sign up
 
 https://admin.brizy.io/signup
 https://feyapp.com/signup
 https://reviews.io/signup/basic?signup_email=true
 
+https://onboarding.speechify.com
+https://network-ui.vercel.app/login
+https://cosmo.wundergraph.com/login
+https://app.documenso.com/signup
 https://trading.hellostake.com/auth/login
 https://app.apidog.com/user/login
 https://markprompt.com/login
@@ -210,12 +232,21 @@ https://app.logsnag.com/auth/sign-in
 https://cloud.tailwarden.com/sign-in
 https://auth.planetscale.com/sign-in
 
+Pagination
+
+
+
+Schedule
+
+https://crashed.nu/builder
+
 Crypto
 
 https://coinhall.org
 
 Landing Page
 
+https://klave.com
 https://jobbliss.com
 https://tailwind-landing-template.vercel.app
 https://tailwindcollections-grid-landingpage.netlify.app
@@ -258,6 +289,13 @@ https://console.baselime.io/brunowego/plans
 
 Dashboard
 
+https://app.netbird.io/peers
+https://network-ui.vercel.app/dashboard/user/assets/received
+https://opencollective.com/dashboard/henkiz
+https://opencollective.com/dashboard
+https://app.neosync.dev/personal/jobs
+https://cosmo.wundergraph.com/d66e6912/graphs?migrate=true&namespace=default
+https://monorepo-starter-eight.vercel.app/analytics
 https://app.cometchat.com/app/2557845219771d1a/overview
 https://app.runwayml.com/video-tools/teams/brunowego/dashboard
 https://tailwindcollections-spacex.netlify.app
@@ -265,7 +303,6 @@ https://tailwindcollections-skateboard-video-platform.netlify.app
 https://tailwindcollections-product-dashboard.netlify.app
 https://tailwindcollections-order-dashboard.netlify.app
 https://tailwindcollections-money-transfer.netlify.app
-https://app.netbird.io/peers
 https://dashboard.doppler.com
 https://githr.vercel.app
 https://vue-shadcn-dashboard.vercel.app/dashboard/home
@@ -297,6 +334,7 @@ https://app.airplane.dev
 https://app.planetscale.com/settings/account
 https://himalayas.app/recruit/details
 https://productlane.com/insights
+https://votemonitor.vercel.app
 
 Event
 
@@ -349,6 +387,8 @@ https://newsletter.quivr.app/subscribe/a20f5eaf-9071-4647-93cb-74f5e771e3e1/mana
 
 Onboarding
 
+https://onboarding.speechify.com/quiz/intro
+https://intelfox.vercel.app/welcome
 https://app.antimetal.com/workspace/connect
 https://app.documenso.com/documents
 https://feyapp.com/onboarding/subscription

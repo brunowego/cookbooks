@@ -127,7 +127,7 @@ version: '3'
 services:
   mysql:
     image: docker.io/library/mysql:8.0
-    hostname: mysql
+    # hostname: mysql
     volumes:
       - type: volume
         source: mysql-data

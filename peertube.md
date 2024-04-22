@@ -1,5 +1,10 @@
 # PeerTube
 
+## Links
+
+- [Code Repository](https://github.com/Chocobozzz/PeerTube)
+- [Main Website](https://joinpeertube.org)
+
 ## References
 
 - [Dotenv Example File](https://github.com/Chocobozzz/PeerTube/blob/develop/support/docker/production/.env)

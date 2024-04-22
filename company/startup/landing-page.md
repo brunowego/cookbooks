@@ -11,4 +11,8 @@ https://midday.ai
 https://alguna.io
 https://zoltarlabs.com
 https://saaslandings.com
+
+Generator
+
+https://github.com/zinedkaloc/aipage.dev
 -->

@@ -58,15 +58,15 @@ Other
 <!--
 Address
 
-// Address Line 1
-// Address Line 2
-
 zipCode: string
+state: string
+city: string
+neighborhood: string
 street: string
+// line1: string
+// line2: string
 number: string
 complement: string
-neighborhood: string
-city: string
-state: string
-country: string
+
+// country: string
 -->

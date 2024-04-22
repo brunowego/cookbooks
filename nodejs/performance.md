@@ -11,6 +11,8 @@
 
 ## Tools
 
+<!-- https://github.com/pastelsky/bundlephobia | https://bundlephobia.com -->
+
 ### Managed
 
 - [AppSignal](https://docs.appsignal.com/nodejs)

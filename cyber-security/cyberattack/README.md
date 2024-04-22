@@ -56,6 +56,7 @@ Threat (Hacker, Flood)
 ## Glossary
 
 - Cyber Threat Intelligence (CTI)
+- Server-Side Template Injection (SSTI)
 
 ## Types
 

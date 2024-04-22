@@ -14,4 +14,8 @@
 
 <!--
 Daily Scrum
+
+Point Poker
+
+https://github.com/FinnDore/v
 -->

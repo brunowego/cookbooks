@@ -39,7 +39,6 @@ https://github.com/dichioniccolo/bloghub
 # Using pnpm
 pnpm add @faker-js/faker dotenv drizzle-kit pg tsx -D
 pnpm add @paralleldrive/cuid2 drizzle-orm postgres zod
-# drizzle-typebox drizzle-zod pg
 ```
 
 ### Configuration

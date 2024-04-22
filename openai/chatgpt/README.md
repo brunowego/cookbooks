@@ -3,6 +3,8 @@
 **Keywords:** Artificial Intelligence
 
 <!--
+https://github.com/denbondd/clarix
+
 https://langdock.com
 
 https://github.com/lencx/ChatGPT

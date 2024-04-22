@@ -13,6 +13,7 @@ https://www.udemy.com/course/microfrontend-course/
 
 ---
 
+https://github.com/farhoudshapouran/micro-frontends
 https://github.com/atilafassina/multiapp-domain
 https://github.com/Muzikanto/micro-frontend-starter
 https://github.com/HidemitsuHashimoto/micro-frontend-nextjs

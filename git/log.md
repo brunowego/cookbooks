@@ -12,6 +12,19 @@ git shortlog -s | cut -c8-
 
 ## Tips
 
+### Get First Commit
+
+```sh
+#
+git log --reverse
+
+#
+git log --pretty=oneline --reverse | head -1
+
+#
+git log $(git log --pretty=format:%H|tail -1)
+```
+
 ### Scan Projects
 
 ```sh

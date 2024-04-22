@@ -1,8 +1,18 @@
 # Markdown
 
+<!--
+https://medium.com/shiwaforce/notion-like-text-editor-with-ai-autocomplete-and-planetscale-database-in-next-js-using-shadcn-ui-d7ca2d56f85e
+-->
+
 ## Links
 
-- [Basic Syntax](https://markdownguide.org/basic-syntax/)
+- [Basic Syntax](https://markdownguide.org/basic-syntax)
+
+## Implementations
+
+- [markdown-it](https://github.com/markdown-it/markdown-it)
+- [Marked](https://github.com/markedjs/marked)
+- [MDXEditor](https://github.com/mdx-editor/editor)
 
 ## Syntax
 
@@ -17,6 +27,7 @@
 - [StackEdit](https://stackedit.io)
 
 <!--
+https://github.com/marktext/marktext
 https://markdownlivepreview.com
 -->
 

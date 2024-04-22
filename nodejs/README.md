@@ -188,16 +188,6 @@ kill -9 $(ps aux | grep node | grep -v grep | awk '{print $2}')
 antigen bundle node
 ```
 
-#### Visual Studio Code
-
-```sh
-#
-code --install-extension wix.vscode-import-cost
-
-#
-jq '."recommendations" += ["wix.vscode-import-cost"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
-```
-
 ### Issues
 
 #### OpenSSL Legacy Provider

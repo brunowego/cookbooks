@@ -9,7 +9,9 @@
 - [Sentry](/sentry/README.md) 🌟
 
 <!--
-https://glitchtip.com/
-https://logrocket.com/
-https://highlight.io/
+https://github.com/logbun/logbun
+
+https://glitchtip.com
+https://logrocket.com
+https://highlight.io
 -->

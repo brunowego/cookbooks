@@ -21,6 +21,18 @@ git remote remove "$REPO"
 
 ## Issues
 
+### TBD
+
+```log
+fatal: refusing to merge unrelated histories
+```
+
+TODO
+
+<!--
+git merge --allow-unrelated-histories <branch-name>
+-->
+
 ### Not Concluded Merge
 
 ```log

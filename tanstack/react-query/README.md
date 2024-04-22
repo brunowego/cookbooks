@@ -22,7 +22,7 @@ https://github.com/prasenjeet-symon/intellectia/blob/main/packages/client/src/ho
 
 ```sh
 # Using pnpm
-pnpm add @tanstack/react-query @tanstack/react-query-devtools @tanstack/react-query-next-experimental
+pnpm add @tanstack/query-core @tanstack/react-query @tanstack/react-query-devtools @tanstack/react-query-next-experimental
 ```
 
 ### Snippets

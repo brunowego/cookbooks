@@ -67,11 +67,6 @@ https://app.pluralsight.com/library/courses/ux-driven-software-design/table-of-c
 - [Sprint O Metodo Usado no Google Para Testar e Aplicar Novas Ideias em Apenas Cinco Dias (Em Portugues do Brasil)](https://amazon.com/Sprint-Metodo-Google-Aplicar-Portugues/dp/8551001523)
 - [Steve Jobs Capa comum](https://amazon.com.br/Steve-Jobs-Walter-Isaacson/dp/1982176865/)
 
-## Tools
-
-- [Mobbin](https://mobbin.com)
-- [UsabilityHub](https://usabilityhub.com)
-
 ## Metrics
 
 - Quantitative Research

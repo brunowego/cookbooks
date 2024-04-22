@@ -1,5 +1,7 @@
 # Product Hunt
 
+**Keywords:** New Products
+
 ## Links
 
 - [Main Website](https://producthunt.com)
