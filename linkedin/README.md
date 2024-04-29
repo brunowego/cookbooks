@@ -34,6 +34,7 @@ Hands-on – Prototype / POC
 - My Network
   - [Invitation Sent](https://linkedin.com/mynetwork/invitation-manager/sent)
 - [Manage Job Alerts](https://linkedin.com/jobs/jam)
+- [Developers](https://developer.linkedin.com)
 
 ## Tips
 

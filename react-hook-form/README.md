@@ -24,3 +24,13 @@ https://github.com/documenso/documenso/blob/main/apps/web/src/components/forms/p
 # Using pnpm
 pnpm add react-hook-form
 ```
+
+<!-- ### Tips -->
+
+<!-- #### TBD
+
+```ts
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
+
+await sleep(2000)
+``` -->

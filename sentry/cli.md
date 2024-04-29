@@ -42,7 +42,7 @@ sentry-cli -h
 ```sh
 #
 export SENTRY_URL='https://sentry.io'
-export SENTRY_ORG=''
+export SENTRY_ORG='<org-name>'
 
 #
 cat << EOF > ~/.sentryclirc

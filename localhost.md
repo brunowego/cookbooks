@@ -16,8 +16,11 @@
 
 ### Resolves to 127.0.0.1
 
-- [local.gd](https://local.gd)
 - [localtest.me](https://readme.localtest.me) 🌟
+
+<!--
+https://local.gd
+-->
 
 ### Resolves to Any IP
 

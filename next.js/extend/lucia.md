@@ -1,5 +1,9 @@
 # Extend with Lucia
 
+<!--
+https://github.com/RohanJacob23/clear-count
+-->
+
 TODO
 
 <!--
@@ -36,3 +40,55 @@ Authorization
 
 https://github.com/CUPUM/aipithet/blob/main/src/lib/auth/authorization.ts
 -->
+
+## Issues
+
+### TBD
+
+```log
+tI [Error]: Cookies can only be modified in a Server Action or Route Handler. Read more: https://nextjs.org/docs/app/api-reference/functions/cookies#cookiessetname-value-options
+```
+
+<!--
+https://github.com/ap-1/bionic-reading/blob/main/src/app/signup/action.tsx
+https://github.com/larsniet/server-actions-bug-report/blob/main/src/app/layout.tsx
+-->
+
+TODO
+
+### Missing CORS Headers
+
+```log
+Access to fetch at 'https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=<client-id>&state=<state>&scope=email+profile+openid&redirect_uri=http%3A%2F%2Fapi.acme.localtest.me%3A3000%2Fauth%2Fcallback%2Fgoogle&code_challenge=<code-challenge>&code_challenge_method=S256' (redirected from 'http://auth.acme.localtest.me:3000/sign-in/google?_rsc=1nyh2') from origin 'http://auth.acme.localtest.me:3000' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+```
+
+**Refer:** `./next.config.mjs`
+
+```mjs
+/**
+ * @type { import('next').NextConfig }
+ */
+const nextConfig = {
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET',
+            // value: 'GET,POST,PUT,PATCH,DELETE,OPTIONS',
+          },
+          {
+            key: 'Access-Control-Allow-Headers',
+            value: 'Content-Type',
+          },
+        ],
+      },
+    ]
+  },
+}
+
+export default nextConfig
+```

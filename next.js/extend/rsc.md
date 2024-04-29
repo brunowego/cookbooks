@@ -2,10 +2,22 @@
 
 ## Issues
 
+### TBD
+
+```log
+Failed to fetch RSC payload for http://localhost:13000/sign-in/github. Falling back to browser navigation. TypeError: Failed to fetch
+```
+
+<!--
+https://github.com/vercel/next.js/issues/60549
+-->
+
+TODO
+
 ### Ignore Prefetch
 
 ```log
-Failed to fetch RSC payload for http://localhost:3000/api/auth/github. Falling back to browser navigation. TypeError: Failed to fetch
+GET https://acme.tld/sign-in/google?_rsc=1nyh2 404 (Not Found) fetch-server-response.ts:106
 ```
 
 <!--
@@ -14,7 +26,8 @@ https://github.com/vercel/next.js/discussions/58357
 -->
 
 ```tsx
-<Link href="/api/auth/github" prefetch={false}>
+import Link from 'next/link'
+;<Link href="/api/auth/github" prefetch={false}>
   GitHub
 </Link>
 ```

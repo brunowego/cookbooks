@@ -10,14 +10,20 @@ https://roadmap.sh/guides/oauth
 
 ## Links
 
-- [Main Website](https://oauth.net/)
-- [Main Website - Code](https://oauth.net/code/)
-- [Web Authorization Protocol (OAuth)](https://datatracker.ietf.org/wg/oauth/documents/)
+- [Main Website](https://oauth.net)
+- [Main Website - Code](https://oauth.net/code)
+- [Web Authorization Protocol (OAuth)](https://datatracker.ietf.org/wg/oauth/documents)
 
 ## Specs
 
 - [RFC6749](https://datatracker.ietf.org/doc/html/rfc6749)
 - [RFC6750](https://datatracker.ietf.org/doc/html/rfc6750)
+
+<!--
+## Providers
+
+https://clerk.com/docs/authentication/social-connections/overview
+-->
 
 ## OAuth2 Flows
 

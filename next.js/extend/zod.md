@@ -1,5 +1,27 @@
 # Extend with Zod
 
+<!-- ## Structure
+
+```ts
+import { z } from "zod";
+
+export const CreateProjectSchema = z.object({
+
+});
+
+export const UpdateProjectSchema = CreateProjectSchema.merge(
+  z.object({
+    id: z.string(),
+  })
+);
+
+export const DeleteProjectSchema = z.object({
+  id: z.string(),
+});
+``` -->
+
+## Configuration
+
 **Refer:** `./src/app/api/.../route.ts`
 
 ```ts

@@ -1,9 +1,13 @@
 # Faker
 
+<!--
+https://chancejs.com
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/faker-js/faker)
-- [Main Website](https://fakerjs.dev/)
+- [Main Website](https://fakerjs.dev)
 - [API](https://github.com/faker-js/faker#api)
 
 ## Library

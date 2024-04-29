@@ -96,6 +96,8 @@ sudo zypper install -y postgresql-contrib
 brew link --force libpq
 ```
 
+<!-- echo 'export PATH="/usr/local/opt/libpq/bin:$PATH"' >> ~/.zshrc -->
+
 ### Commands
 
 ```sh

@@ -1,13 +1,25 @@
 # Mongoose
 
+<!--
+https://github.com/typegoose/typegoose
+-->
+
+**Keywords:** ODM
+
 ## Links
 
 - [Code Repository](https://github.com/Automattic/mongoose)
 - [Main Website](https://mongoosejs.com)
 
+## Glossary
+
+- Object Document Mapping (ODM)
+
 ## Library
 
-### REPL
+### Tips
+
+#### REPL
 
 ```js
 .editor

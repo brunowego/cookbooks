@@ -58,7 +58,7 @@ volta install <tool>@<version>
 
 #
 volta list
-volta list <tool>@<version>
+volta list <tool>
 
 #
 volta pin <tool>@<version>
@@ -68,14 +68,25 @@ volta which <tool>@<version>
 
 # REPL
 volta run <tool>@<version>
-
-#
-volta uninstall <tool>@<version>
 ```
 
-<!-- ### Tips
+### Tips
 
-#### Autocomplete
+#### Uninstall
+
+```sh
+#
+volta list node
+
+#
+ls ~/.volta/tools/image/node
+```
+
+<!--
+NOT SUPPORTED YET: volta uninstall <tool>@<version>
+-->
+
+<!-- #### Autocomplete
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 

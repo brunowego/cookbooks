@@ -29,14 +29,26 @@ bun add @biomejs/biome -D
 
 ```json
 {
-  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.6.4/schema.json",
   "organizeImports": {
     "enabled": false
   },
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "nursery": {
+        "useSortedClasses": {
+          "level": "warn",
+          "options": {
+            "functions": ["cva"]
+          }
+        }
+      },
+      "style": {
+        "recommended": true,
+        "useBlockStatements": "error"
+      }
     }
   },
   "formatter": {
@@ -46,7 +58,8 @@ bun add @biomejs/biome -D
   "javascript": {
     "formatter": {
       "semicolons": "asNeeded",
-      "quoteStyle": "single"
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "single"
     }
   }
 }

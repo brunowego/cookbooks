@@ -1,9 +1,14 @@
 # MongoDB
 
 <!--
-https://linkedin.com/learning/nosql-essential-training/
-https://linkedin.com/learning/learning-mongodb/
+27017 -> 27018
 -->
+
+## Links
+
+- [Code Repository](https://github.com/mongodb/mongo)
+- [Docs](https://mongodb.com/docs)
+  - [Connection Strings](https://mongodb.com/docs/manual/reference/connection-string/)
 
 ## References
 
@@ -15,6 +20,10 @@ https://linkedin.com/learning/learning-mongodb/
 - [Robo 3T (formerly Robomongo)](/robomongo.md)
 
 ## Docker
+
+### Links
+
+- [Code Repository](https://github.com/docker-library/mongo)
 
 ### Network
 
@@ -83,6 +92,16 @@ docker run -it --rm \
   docker.io/library/mongo:7.0.5 mongo -h
 ```
 
+### Issues
+
+#### TBD
+
+```log
+BadValue: security.keyFile is required when authorization is enabled with replica sets
+```
+
+TODO
+
 ### Remove
 
 ```sh
@@ -134,15 +153,17 @@ volumes:
 **Refer:** `./.env`
 
 ```env
+COMPOSE_PROJECT_NAME=acme
+
 MONGODB_HOST=localhost
 MONGODB_PORT=27017
-MONGO_INITDB_ROOT_USERNAME=dev
-MONGO_INITDB_ROOT_PASSWORD=dev
-MONGO_INITDB_DATABASE=dev
+MONGO_INITDB_ROOT_USERNAME=acme
+MONGO_INITDB_ROOT_PASSWORD=acme
+MONGO_INITDB_DATABASE=acme
 ```
 
 <!--
-mongodb://dev:dev@localhost/dev
+mongodb://acme:acme@localhost/acme
 -->
 
 ## CLI
@@ -260,6 +281,26 @@ kubectl delete ns mongodb \
 ```
 
 ## Issues
+
+### TBD
+
+```log
+Server selection timeout: No available servers. Topology: { Type: Unknown, Servers: [ { Address: localhost:27017, Type: Unknown, Error: Connection refused (os error 61) }, ] }
+```
+
+TODO
+
+### Missing Auth Source Admin
+
+```log
+SCRAM failure: Authentication failed.
+```
+
+Add `?authSource=admin` to `DATABASE_URL`.
+
+<!--
+mongodb://dev:dev@localhost/dev?authSource=admin
+-->
 
 ### TBD
 

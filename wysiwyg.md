@@ -4,9 +4,10 @@
 
 ## Implementations
 
+- [Plate](https://github.com/udecode/plate)
 - [Quill](https://github.com/quilljs/quill)
 - [TinyMCE](https://github.com/tinymce/tinymce)
-- [Tiptap](https://github.com/ueberdosis/tiptap)
+- [Tiptap](/tiptap.md) 🌟
 - [Trix](https://github.com/basecamp/trix)
 
 <!--

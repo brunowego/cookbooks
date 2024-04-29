@@ -1,6 +1,8 @@
 # MedusaJS
 
 <!--
+https://github.com/Agilo/medusawp
+
 https://github.com/bidah/universal-medusa
 https://github.com/adrien2p/medusa-extender
 

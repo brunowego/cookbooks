@@ -163,7 +163,27 @@ jq '."[prisma]"."editor.defaultFormatter" |= "Prisma.prisma"' "$PWD"/.vscode/set
 
 ### Issues
 
-### Unnecessary Declaration Property
+#### Missing Direct Connection
+
+```log
+Database error. error code: unknown, error message: Server selection timeout: No available servers. Topology: { Type: ReplicaSetNoPrimary, Servers: [ ] }
+```
+
+Add `&directConnection=true` to `DATABASE_URL`.
+
+#### Missing Replica Set
+
+```log
+Prisma needs to perform transactions, which requires your MongoDB server to be run as a replica set. https://pris.ly/d/mongodb-replica-set
+```
+
+Add `&replicaSet=rs0` to `DATABASE_URL`.
+
+<!--
+DATABASE_URL=mongodb://dev:dev@localhost/dev?authSource=admin&replicaSet=rs0
+-->
+
+#### Unnecessary Declaration Property
 
 ```log
 @acme/api:dev: src/modules/user/user.service.ts:14:9 - error TS2742: The inferred type of 'list' cannot be named without a reference to '../../../../../packages/db/node_modules/@prisma/client/runtime'. This is likely not portable. A type annotation is necessary.
@@ -171,7 +191,7 @@ jq '."[prisma]"."editor.defaultFormatter" |= "Prisma.prisma"' "$PWD"/.vscode/set
 
 Remove `"declaration": true` and `"declarationMap": true` in `./tsconfig.json`.
 
-### TBD
+#### TBD
 
 ```log
 error TS2339: Property 'user' does not exist on type 'PrismaService'.

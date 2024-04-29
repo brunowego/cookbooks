@@ -206,6 +206,7 @@ https://admin.brizy.io/signup
 https://feyapp.com/signup
 https://reviews.io/signup/basic?signup_email=true
 
+https://tape.xyz/login?signup=true
 https://onboarding.speechify.com
 https://network-ui.vercel.app/login
 https://cosmo.wundergraph.com/login
@@ -233,8 +234,6 @@ https://cloud.tailwarden.com/sign-in
 https://auth.planetscale.com/sign-in
 
 Pagination
-
-
 
 Schedule
 
@@ -387,6 +386,7 @@ https://newsletter.quivr.app/subscribe/a20f5eaf-9071-4647-93cb-74f5e771e3e1/mana
 
 Onboarding
 
+https://dashboard.openpanel.dev/onboarding
 https://onboarding.speechify.com/quiz/intro
 https://intelfox.vercel.app/welcome
 https://app.antimetal.com/workspace/connect
@@ -452,7 +452,12 @@ https://upstash.com/blog/lucia-sveltekit
 
 Footer
 
+https://alexanderjeamoro.vercel.app
 https://conceptzilla.com
+
+Text Effect
+
+https://sinister-incorporated.vercel.app | https://github.com/simonknittel/sinister-incorporated
 
 Code
 

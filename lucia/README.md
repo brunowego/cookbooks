@@ -40,6 +40,18 @@ sessionCookie: {
 
 ### Issues
 
+#### Wrong PostgreSQL Adapter
+
+```log
+⨯ TypeError: date.getTime is not a function
+```
+
+<!--
+https://github.com/lucia-auth/lucia/issues/1424
+-->
+
+Change PostgreSQL adapter, from `@lucia-auth/adapter-postgresql` to `@lucia-auth/adapter-drizzle`.
+
 #### Missing Email
 
 ```log

@@ -4,6 +4,10 @@
 
 - [How to Build a Multi-Tenant App with Custom Domains Using Next.js](https://vercel.com/guides/nextjs-multi-tenant-application)
 
+## Examples
+
+- [Hashnode](https://hashnode.com)
+
 ## Implementation
 
 ```sh

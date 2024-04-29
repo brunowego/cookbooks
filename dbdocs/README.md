@@ -17,7 +17,7 @@
 
 ```sh
 # Using NPM
-npm install -g dbdocs
+npm install dbdocs -g
 ```
 
 ### Commands

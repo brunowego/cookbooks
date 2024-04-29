@@ -4,19 +4,14 @@
 https://linkedin.com/learning/database-foundations-administration-8375189/administer-a-database-server
 -->
 
-<!--
-- Amazon DynamoDB
-- MongoDB
-- GCP Datastore
--->
-
 ## Related
 
 - [Scaling Databases](https://roadmap.sh/guides/scaling-databases)
 
 ## Tools
 
-- [Database Markup Language (DBML)](/dbml.md)
+- [dbdocs.io](/dbdocs/README.md)
+  - [Database Markup Language (DBML)](/dbdocs/dbml.md)
 
 ## Articles
 

@@ -54,6 +54,16 @@ Error 401: invalid_client
 
 TODO
 
+### Missing Redirect URI Environment Variable
+
+```log
+Access blocked: Authorization Error
+...
+Error 400: invalid_request
+```
+
+Missing `GOOGLE_REDIRECT_URI` environment variable.
+
 ### Missing Authorized Redirect URIs
 
 ```log

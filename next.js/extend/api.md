@@ -1,37 +1,13 @@
 # Extend with API
 
-## Issues
+## GET
 
-### CORS Error
-
-```log
-CORS error
-```
-
-**Refer:** `./next.config.mjs`
-
-```mjs
-/**
- * @type { import('next').NextConfig }
- */
-const nextConfig = {
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: [
-          { key: 'Access-Control-Allow-Origin', value: '*' },
-          {
-            key: 'Access-Control-Allow-Headers',
-            value: 'Content-Type',
-          },
-        ],
-      },
-    ]
-  },
-
-  // ...
+```ts
+export function GET(): Response {
+  return Response.json([
+    {
+      // ...
+    },
+  ])
 }
-
-export default nextConfig
 ```

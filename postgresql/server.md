@@ -240,11 +240,13 @@ docker volume rm postgresql-data
 ### Manifest
 
 ```env
+COMPOSE_PROJECT_NAME=acme
+
 POSTGRES_HOST=127.0.0.1
 POSTGRES_PORT=5432
-POSTGRES_DB=
-POSTGRES_USER=
-POSTGRES_PASSWORD=
+POSTGRES_DB=acme
+POSTGRES_USER=acme
+POSTGRES_PASSWORD=acme
 ```
 
 ```yml

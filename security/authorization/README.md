@@ -1,10 +1,5 @@
 # Authorization (authz)
 
-<!--
-https://permit.io
-https://permify.co
--->
-
 ## Learn
 
 - [Como EU lido com autorizações (permissões) nos meus apps](https://youtube.com/watch?v=NG8qTapopj4)
@@ -27,6 +22,11 @@ https://permify.co
 - Policy Management
 
 ## Implementations
+
+<!--
+https://permit.io
+https://permify.co
+-->
 
 ### Open Source
 
