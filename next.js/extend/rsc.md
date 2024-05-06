@@ -5,10 +5,13 @@
 ### TBD
 
 ```log
-Failed to fetch RSC payload for http://localhost:13000/sign-in/github. Falling back to browser navigation. TypeError: Failed to fetch
+Failed to fetch RSC payload for http://auth.acme.localtest.me:13000/sign-in/github. Falling back to browser navigation. TypeError: Failed to fetch
 ```
 
 <!--
+// export const dynamic = 'force-dynamic'
+
+https://github.com/vercel/next.js/issues/48677
 https://github.com/vercel/next.js/issues/60549
 -->
 

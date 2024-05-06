@@ -107,6 +107,7 @@ https://himalayas.app/404
 
 Chat
 
+https://chat-preview.lobehub.com/chat?agent=
 https://shadcn-chat.vercel.app/
 https://demo.foxthemes.net/socialite-v3.0/messages.html
 https://angular-material.fusetheme.com/apps/chat/ff6bc7f1-449a-4419-af62-b89ce6cae0aa
@@ -288,6 +289,7 @@ https://console.baselime.io/brunowego/plans
 
 Dashboard
 
+https://app.flows.sh | https://github.com/RBND-studio/flows-cloud
 https://app.netbird.io/peers
 https://network-ui.vercel.app/dashboard/user/assets/received
 https://opencollective.com/dashboard/henkiz
@@ -452,6 +454,7 @@ https://upstash.com/blog/lucia-sveltekit
 
 Footer
 
+https://swan.io
 https://alexanderjeamoro.vercel.app
 https://conceptzilla.com
 

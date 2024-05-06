@@ -19,23 +19,6 @@ redirects: async () => {
 -->
 
 <!--
-Failed to fetch RSC payload for https://preview.landing.sely.io/linkedin. Falling back to browser navigation. TypeError: Failed to fetch
-
-Access to fetch at 'https://twitter.com/sellitbr' (redirected from 'http://localhost:3000/x?_rsc=1gzlh') from origin 'http://localhost:3000' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
--->
-
-<!--
-async headers() {
-  return [
-    {
-      source: '/:path*',
-      headers: [{ key: 'Access-Control-Allow-Origin', value: '*' }],
-    },
-  ]
-},
--->
-
-<!--
 async redirects() {
   return [
     {

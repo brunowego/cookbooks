@@ -18,6 +18,16 @@ git show-branch -r
 
 ## Tips
 
+### Search Text Across All Branches
+
+```sh
+#
+git rev-list --all | xargs git grep '<pattern>'
+
+#
+git branch --contains <commit>
+```
+
 ### Fetch/Pull All Branches
 
 ```sh
@@ -54,5 +64,9 @@ https://stackoverflow.com/questions/6591213/how-can-i-rename-a-local-git-branch
 -->
 
 ```sh
+#
 git branch -m <newname>
+
+#
+git branch -m <oldname> <newname>
 ```

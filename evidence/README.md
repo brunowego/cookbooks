@@ -33,6 +33,19 @@ jq '."recommendations" += ["evidence.evidence-vscode"]' "$PWD"/.vscode/extension
 #### TBD
 
 ```log
+npm ERR! path /vercel/path0/node_modules/lz4
+```
+
+<!--
+https://github.com/evidence-dev/evidence/issues/1885
+https://github.com/evidence-dev/evidence/pull/1886
+-->
+
+TODO
+
+#### TBD
+
+```log
 (!) Could not auto-determine entry point from rollupOptions or html files and there are no explicit optimizeDeps.include patterns. Skipping dependency pre-bundling.
 ```
 

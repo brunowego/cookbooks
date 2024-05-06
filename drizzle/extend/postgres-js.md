@@ -1,11 +1,8 @@
 # Extend with Postgres.js
 
-## Installation
+## Links
 
-```sh
-# Using pnpm
-pnpm add postgres
-```
+- [postgres (a.k.a Postgres.js)](/postgres-js.md)
 
 ## Configuration
 
@@ -52,13 +49,7 @@ You may need an additional plugin to handle "cloudflare:" URIs.
 ```
 
 <!--
-Try remove:
-
-export const runtime = 'edge'
--->
-
-<!--
-https://github.com/vercel/next.js/discussions/50177
+https://github.com/vercel/next.js/discussions/50177#discussioncomment-9207298
 -->
 
 Downgrade `postgres` package from `3.4.x` to version `3.3.5`.
@@ -67,9 +58,7 @@ Downgrade `postgres` package from `3.4.x` to version `3.3.5`.
 
 ```log
 The edge runtime does not support Node.js 'net' module.
-```
-
-```log
+// or
 Error: Module not found: Can't resolve 'net'
 ```
 

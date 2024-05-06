@@ -82,6 +82,7 @@ https://avvvatars.com/
 
 ## Terms
 
+- Component-Driven Development (CDD)
 - React Server Components (RSC)
 
 ## Tips

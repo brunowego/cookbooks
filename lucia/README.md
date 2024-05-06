@@ -43,6 +43,10 @@ sessionCookie: {
 #### Wrong PostgreSQL Adapter
 
 ```log
+TypeError [ERR_INVALID_ARG_TYPE]: The "string" argument must be of type string or an instance of Buffer or ArrayBuffer. Received an instance of Date
+```
+
+```log
 ⨯ TypeError: date.getTime is not a function
 ```
 

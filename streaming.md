@@ -8,3 +8,4 @@
 ## Tools
 
 - [JustWatch](https://justwatch.com)
+- [whereto.stream](https://whereto.stream)

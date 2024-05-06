@@ -14,6 +14,15 @@ https://artifacthub.io/packages/helm/deliveryhero/hoppscotch
   - [Google Chrome](https://chrome.google.com/webstore/detail/hoppscotch-browser-extens/amknoiejhlmhancpahfcfcfhllgkpbld?hl=en)
   - [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/hoppscotch/)
 
+## App
+
+### Installation
+
+```sh
+# Using Homebrew
+brew install --cask hoppscotch
+```
+
 ## Docker
 
 ### Network

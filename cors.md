@@ -8,6 +8,20 @@
 
 - [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 
+## Tips
+
+### Check CORS Headers
+
+```sh
+export URL='http://acme.localtest.me:3000'
+
+curl -I \
+  -X OPTIONS \
+  -H "Origin: ${URL}" \
+  -H 'Access-Control-Request-Method: GET' \
+  "${URL}" 2>&1 | grep -i 'Access-Control-Allow-Origin'
+```
+
 ## Issues
 
 ### CORS Preflight

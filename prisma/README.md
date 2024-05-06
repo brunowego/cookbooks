@@ -9,6 +9,12 @@ https://github.com/charmverse/app.charmverse.io/blob/main/prisma/schema.prisma
 https://github.com/podkrepi-bg/api/tree/master/db/seed
 -->
 
+<!--
+POSTGRES_URL=
+POSTGRES_PRISMA_URL=
+POSTGRES_URL_NON_POOLING=
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/prisma/prisma)

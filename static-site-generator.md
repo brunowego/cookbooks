@@ -8,3 +8,4 @@
 
 - [Gatsby](/gatsby.md)
 - [Hugo](/hugo.md)
+- [Nextra](/nextra.md)

@@ -1,5 +1,10 @@
 # Console Ninja
 
+<!--
+https://github.com/wallabyjs/console-ninja/issues/36
+https://github.com/wallabyjs/console-ninja/issues/127
+-->
+
 ## Links
 
 - [Main Website](https://console-ninja.com)

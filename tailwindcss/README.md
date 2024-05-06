@@ -25,11 +25,6 @@ https://github.com/medusajs/medusa/blob/develop/www/docs/tailwind.config.js
 https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atailwindcss&type=code
 -->
 
-<!--
-https://tailbits.com
-https://flowrift.com | https://github.com/n6ai/flowrift
--->
-
 **Keywords:** CSS framework, Utility-first
 
 <!-- TODO: Lint not working with VS Code -->
@@ -66,6 +61,16 @@ https://flowrift.com | https://github.com/n6ai/flowrift
 - [Preline](https://preline.co)
 - [Sail UI](https://sailui.github.io/ui)
 - [Tailwind UI](https://tailwindui.com)
+
+## Blocks
+
+- [Flowrift](https://flowrift.com) <!-- https://github.com/n6ai/flowrift -->
+- [Tailbits](https://tailbits.com)
+- [Tailblocks](https://tailblocks.cc) <!-- https://github.com/mertJF/tailblocks -->
+
+<!--
+https://pagedone.io/blocks
+-->
 
 ## Useful
 

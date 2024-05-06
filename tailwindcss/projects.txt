@@ -19,7 +19,7 @@ https://paytient.com
 Theme
 
 https://tailus.io
-https://tailblocks.cc
+https://tailblocks.cc | https://github.com/mertJF/tailblocks
 https://builtatlightspeed.com
 https://lexingtonthemes.com
 https://themeforest.net/item/pickbazar-react-graphql-ecommerce-template/25283305
@@ -57,6 +57,9 @@ https://artillery.io
 
 Need test
 
+https://flightcontrol.dev
+https://prismic.io
+https://flows.sh
 https://contember.com
 https://outside.digital
 https://codemod.com

@@ -1,11 +1,8 @@
 # Extend with node-postgres
 
-## Installation
+## Links
 
-```sh
-# Using pnpm
-pnpm add pg
-```
+- [pg (a.k.a node-postgres)](/node-postgres.md)
 
 ## Configuration
 
@@ -38,11 +35,7 @@ export { schema, db }
 ### TBD
 
 ```log
-The edge runtime does not support Node.js 'crypto' module.
+Error: The edge runtime does not support Node.js 'crypto' module.
 ```
-
-<!--
-https://github.com/vvo/iron-session/issues/543
--->
 
 TODO

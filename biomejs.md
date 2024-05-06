@@ -37,6 +37,11 @@ bun add @biomejs/biome -D
     "enabled": true,
     "rules": {
       "recommended": true,
+      "correctness": {
+        "all": false,
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
+      },
       "nursery": {
         "useSortedClasses": {
           "level": "warn",

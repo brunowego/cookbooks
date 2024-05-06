@@ -1,7 +1,9 @@
 # Extend with Lucia
 
 <!--
-https://github.com/RohanJacob23/clear-count
+https://github.com/teo-goulois/nextjs-lucia-auth-drizzle-orm-template
+https://github.com/mugnavo/saas
+https://github.com/adamspicedev/mad-fit
 -->
 
 TODO
@@ -42,6 +44,18 @@ https://github.com/CUPUM/aipithet/blob/main/src/lib/auth/authorization.ts
 -->
 
 ## Issues
+
+### TBD
+
+```log
+Uncaught (in promise) SyntaxError: Unexpected identifier '__webpack_async_dependencies__'
+```
+
+<!--
+https://github.com/pilcrowOnPaper/oslo/issues/21
+-->
+
+TODO
 
 ### TBD
 

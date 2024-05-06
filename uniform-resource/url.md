@@ -2,8 +2,9 @@
 
 ## Tools
 
-- [URL-encoder for SVG](https://yoksel.github.io/url-encoder/)
+- [URL Encode and Decode](https://urlencoder.org) 🌟
 - [URL Encoder & Decoder](http://togglecase.com/url_encode_decode#results)
+- [URL-encoder for SVG](https://yoksel.github.io/url-encoder)
 
 ## URL + URN = URI
 

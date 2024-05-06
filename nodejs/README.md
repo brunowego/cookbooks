@@ -150,6 +150,9 @@ node -h
 ### Usage
 
 ```sh
+#
+node -p 'process.arch'
+
 # Version
 node --version | head -1
 
