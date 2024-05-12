@@ -1,14 +1,20 @@
 # Extend with Workspaces
 
 <!--
-https://github.com/antoninpire/kanban/tree/main/src/app/(authenticated)/app/%5BworkspaceId%5D actions
+https://github.com/antoninpire/kanban actions
 https://github.com/RobinHeidenis/hermes tRPC
 https://github.com/flojoy-ai/cloud tRPC
+https://github.com/captableinc/captable tRPC
 -->
 
 TODO
 
 <!--
-https://github.com/opencapco/opencap.co
-https://github.com/Rocketseat/nivo.video
+Using ID on URL
+
+https://app.infisical.com | https://app.infisical.com/login/select-organization
+
+Using Local Storage
+
+https://github.com/Rajdip019/freeflow
 -->

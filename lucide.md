@@ -1,5 +1,11 @@
 # Lucide
 
+<!--
+Dynamic Imports
+
+https://github.com/measuredco/puck/blob/main/apps/demo/config/blocks/Card/index.tsx
+-->
+
 **Keywords:** SVG Icons
 
 ## Links

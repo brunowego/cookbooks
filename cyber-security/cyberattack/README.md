@@ -1,6 +1,10 @@
 # Cyberattack
 
 <!--
+https://cybermap.kaspersky.com
+-->
+
+<!--
 https://youtube.com/playlist?list=PLc6zqGSJMvCQirRFTTcfodKaAbM1qgkNQ
 
 https://cisecurity.org/controls/cis-controls-navigator/

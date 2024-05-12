@@ -13,6 +13,10 @@ ePrivacy
 Agg. Data
 -->
 
+## Terms
+
+- Event Tracking
+
 ## Business Objectives
 
 - Generate Leads: Analyze visitor metrics and attract new customers

@@ -40,6 +40,10 @@ Docs-as-code is an approach to writing and publishing documentation with the sam
 - [Doctave](/doctave.md)
 - [Vale](/vale.md)
 
+<!--
+https://nextra.site
+-->
+
 ## Glossary
 
 - Architecture Decision Record (ADR)

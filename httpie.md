@@ -6,7 +6,17 @@
 
 - [Main Website](https://httpie.io)
 
+## App
+
+### Links
+
+- [Code Repository](https://github.com/httpie/desktop)
+
 ## CLI
+
+### Links
+
+- [Code Repository](https://github.com/httpie/cli)
 
 ### Installation
 

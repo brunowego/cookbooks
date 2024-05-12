@@ -12,7 +12,7 @@ raw value
 - [React Input Mask](https://github.com/Code-Forge-Net/react-input-mask) <!-- raw support -->
 - [react-number-format](https://github.com/s-yadav/react-number-format)
 - [Text Mask](https://github.com/text-mask/text-mask)
-- [use-mask-input](/use-mask-input.md) <!-- raw support / heavy library -->
+- [use-mask-input](/use-mask-input.md) 🌟 <!-- raw support / heavy library -->
 
 <!--
 Phone Input: https://shadcn-phone-input-five.vercel.app

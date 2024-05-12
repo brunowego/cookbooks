@@ -116,6 +116,30 @@ jq '."search.exclude"."**/.turbo" |= true' "$PWD"/.vscode/settings.json | sponge
 
 ### Issues
 
+#### Locked stdin
+
+<!--
+https://github.com/vercel/turbo/issues/1235
+https://github.com/vercel/turbo/discussions/7802
+-->
+
+```sh
+( cd ./packages/db; npx drizzle-kit generate:pg )
+```
+
+#### TBD
+
+```log
+× Invalid package dependency graph: cyclic dependency detected:
+```
+
+<!--
+https://github.com/vercel/turbo/discussions/1752
+https://github.com/vercel/turbo/issues/1480
+-->
+
+TODO
+
 #### TBD
 
 ```log
@@ -123,6 +147,69 @@ EPERM: Operation not permitted
 ```
 
 TODO
+
+#### TBD
+
+```log
+Error: '@acme/web' should be listed in the project's dependencies. Run 'npm i -S @acme/web' to add it  import/no-extraneous-dependencies
+```
+
+TODO
+
+#### Missing Global Env
+
+```log
+ 25:12  high  NODE_ENV is not listed as a dependency in turbo.json  eslint/turbo/no-undeclared-env-vars
+```
+
+**Refer:** `./turbo.json`
+
+```json
+{
+  // ...
+  "globalEnv": ["NODE_ENV"]
+  // ...
+}
+```
+
+#### TBD
+
+```log
+ERROR  run failed: Failed to add workspace "@org/ui" from apps/storybook, it already exists at packages/user-interface
+```
+
+TODO
+
+#### TBD
+
+```log
+[ERROR] invalid scope: No packages found matching the provided scope pattern.
+```
+
+TODO
+
+#### Run Without Daemon
+
+```log
+WARNING  failed to contact turbod. Continuing in standalone mode: connection to turbo daemon process failed. Please ensure the following: ...
+You can also run without the daemon process by passing --no-daemon
+```
+
+```sh
+yarn turbo daemon status
+```
+
+Add `--no-daemon` parameter to `turbo run`.
+
+#### Missing Package Manager
+
+```log
+[WARNING] Did not find "packageManager" in your package.json. Please run "npx @turbo/codemod add-package-manager"
+```
+
+```sh
+npx @turbo/codemod add-package-manager
+```
 
 ## CLI
 
@@ -210,71 +297,6 @@ https://github.com/vercel/turbo/issues/5117
 -->
 
 Pump `turbo` to `>=1.10.3`.
-
-## Issues
-
-### TBD
-
-```log
-Error: '@acme/web' should be listed in the project's dependencies. Run 'npm i -S @acme/web' to add it  import/no-extraneous-dependencies
-```
-
-TODO
-
-### Missing Global Env
-
-```log
- 25:12  high  NODE_ENV is not listed as a dependency in turbo.json  eslint/turbo/no-undeclared-env-vars
-```
-
-**Refer:** `./turbo.json`
-
-```json
-{
-  // ...
-  "globalEnv": ["NODE_ENV"]
-  // ...
-}
-```
-
-### TBD
-
-```log
-ERROR  run failed: Failed to add workspace "@org/ui" from apps/storybook, it already exists at packages/user-interface
-```
-
-TODO
-
-### TBD
-
-```log
-[ERROR] invalid scope: No packages found matching the provided scope pattern.
-```
-
-TODO
-
-### Run Without Daemon
-
-```log
-WARNING  failed to contact turbod. Continuing in standalone mode: connection to turbo daemon process failed. Please ensure the following: ...
-You can also run without the daemon process by passing --no-daemon
-```
-
-```sh
-yarn turbo daemon status
-```
-
-Add `--no-daemon` parameter to `turbo run`.
-
-### Missing Package Manager
-
-```log
-[WARNING] Did not find "packageManager" in your package.json. Please run "npx @turbo/codemod add-package-manager"
-```
-
-```sh
-npx @turbo/codemod add-package-manager
-```
 
 <!-- ## Dockerfile
 

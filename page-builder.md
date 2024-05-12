@@ -41,7 +41,7 @@ https://codux.com
 - [GrapesJS](https://github.com/GrapesJS/grapesjs) (BSD-3-Clause)
 - [Makeswift](/makeswift.md) (MIT)
 - [Plasmic](/plasmic/README.md) (MIT)
-- [Puck](/puck/README.md) (MIT)
+- [Puck](/puck/README.md) (MIT) 🌟
 - [Reka.js](/reka.js/README.md) (MIT)
 - [VvvebJs](https://github.com/givanz/VvvebJs) (Apache-2.0)
 - [Webstudio](https://github.com/webstudio-is/webstudio) (AGPL-3.0)

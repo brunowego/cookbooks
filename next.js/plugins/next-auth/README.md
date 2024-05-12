@@ -4,6 +4,10 @@
 https://github.com/Rocketseat/nivo.video/blob/main/packages/auth/package.json
 -->
 
+<!--
+hashed_password: $2a$12$GITVPHJe/jAReisR0xTwsOKW5kY8mOE7/FDWm9KkgbdDpWNmh1eny | password: Pa$$w0rd!
+-->
+
 ## Learn
 
 - [Installing Auth.js](https://authjs.dev/getting-started/installation?framework=next.js)
@@ -52,6 +56,58 @@ export default function NextAuthProvider({
 ``` -->
 
 ### Issues
+
+#### Missing Secret
+
+```log
+[auth][error] MissingSecret: Please define a `secret`.. Read more at https://errors.authjs.dev#missingsecret
+```
+
+```env
+AUTH_SECRET=
+```
+
+#### Missing Trust Host
+
+```log
+[auth][error] UntrustedHost: Host must be trusted. URL was: http://app.sellit.localtest.me:3000/api/auth/session. Read more at https://errors.authjs.dev#untrustedhost
+```
+
+<!--
+https://github.com/nextauthjs/next-auth/issues/6113
+-->
+
+```ts
+import type { NextAuthConfig } from 'next-auth'
+
+export default {
+  // ...
+  trustHost: true,
+} satisfies NextAuthConfig
+```
+
+#### Allow Dangerous Email Account Linking
+
+```log
+[auth][error] OAuthAccountNotLinked: Another account already exists with the same e-mail address. Read more at https://errors.authjs.dev#oauthaccountnotlinked
+```
+
+```ts
+import GitHubProvider, { type GitHubProfile } from 'next-auth/providers/github'
+
+export default GitHubProvider({
+  // ...
+  allowDangerousEmailAccountLinking: true,
+})
+```
+
+#### TBD
+
+```log
+[auth][error] CredentialsSignin: Read more at https://errors.authjs.dev#credentialssignin
+```
+
+TODO
 
 #### TBD
 
@@ -120,35 +176,6 @@ TODO
 ```
 
 TODO
-
-#### TBD
-
-```log
-[auth][error] CallbackRouteError: Read more at https://errors.authjs.dev#callbackrouteerror
-[auth][cause]: Error: TODO: Handle OIDC response body error
-```
-
-TODO
-
-#### Wrong Issuer
-
-```log
-[auth][error] OperationProcessingError: "response" is not a conform Authorization Server Metadata response
-```
-
-<!--
-https://github.com/nextauthjs/next-auth/issues/7809
-https://github.com/nextauthjs/next-auth/issues/8831
--->
-
-```ts
-import LinkedInProvider from 'next-auth/providers/linkedin'
-
-export default LinkedInProvider({
-  issuer: 'https://www.linkedin.com/oauth',
-  // ...
-})
-```
 
 #### Missing Session Strategy
 

@@ -52,6 +52,10 @@ Access blocked: Authorization Error
 Error 401: invalid_client
 ```
 
+<!--
+NEXTAUTH_URL=http://app.acme.localtest.me:3000
+-->
+
 TODO
 
 ### Missing Redirect URI Environment Variable

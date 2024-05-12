@@ -32,6 +32,11 @@ https://ui8.net/ui8/products/synapse-ai-ui-kit
 -->
 
 <!--
+eCommerce
+
+https://mishmash.pt
+https://demo-ecomus-global.myshopify.com
+
 Feed
 
 https://threads-app-react.vercel.app
@@ -40,7 +45,7 @@ Main Menu
 
 https://light.so/demo/overview
 
-Empty State
+Empty State / Placeholder
 
 https://app.frigade.com/rules
 https://tailwindui.com/components/application-ui/feedback/empty-states
@@ -177,6 +182,7 @@ https://nike-app-git-main-armans-projects-c9523aa4.vercel.app/
 
 Profile
 
+https://tbkiosk.xyz/projects/onchainalbumxyz
 https://app.opensauced.pizza/user/nickytonline
 https://himalayas.app/@santiagoestrella
 https://himalayas.app/companies/simera
@@ -207,6 +213,7 @@ https://admin.brizy.io/signup
 https://feyapp.com/signup
 https://reviews.io/signup/basic?signup_email=true
 
+https://console.datum.net/login
 https://tape.xyz/login?signup=true
 https://onboarding.speechify.com
 https://network-ui.vercel.app/login
@@ -265,6 +272,7 @@ Pricing
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://cardfy.vercel.app/pricing
 https://app.boords.com/pricing
 https://tembo.io/pricing
 https://doppler.com/pricing
@@ -279,16 +287,13 @@ Contact
 
 https://vercel.com/contact/sales
 
-Placeholder
-
-https://metafy.gg/account/library
-
 Plans
 
 https://console.baselime.io/brunowego/plans
 
 Dashboard
 
+https://console.datum.net/dashboard
 https://app.flows.sh | https://github.com/RBND-studio/flows-cloud
 https://app.netbird.io/peers
 https://network-ui.vercel.app/dashboard/user/assets/received
@@ -336,6 +341,8 @@ https://app.planetscale.com/settings/account
 https://himalayas.app/recruit/details
 https://productlane.com/insights
 https://votemonitor.vercel.app
+
+Delete Account
 
 Event
 
@@ -452,8 +459,13 @@ https://aurora.dev/blog
 https://datocms.com/blog/how-to-generate-typescript-types-from-graphql
 https://upstash.com/blog/lucia-sveltekit
 
+Team
+
+https://zapal.tech
+
 Footer
 
+https://zapal.tech
 https://swan.io
 https://alexanderjeamoro.vercel.app
 https://conceptzilla.com
@@ -489,6 +501,64 @@ https://raster.app/careers
 Demo
 
 https://oneuptime.com/enterprise/demo
+
+Coming Son
+
+https://coderthemes.com/opixo/coming-soon-4.html
+https://coderthemes.com/opixo/coming-soon-1.html
+https://coderthemes.com/opixo/coming-soon-2.html
+
+Coach, Speaker & Mentor
+
+https://julianabragancabeauty.com.br
+https://cacamontans.com.br/mentoria
+https://mapaconcursos.com.br/mentoria-excelere-pernambuco-2024
+https://mentorianextlevel.prontacompra.com.br
+https://joaoterrazan.com/pv-projeto-casa
+https://dramahiaraliell.com/mentoria-hof-expert-3
+https://lp.henriquemarinhohm.com.br/mentoria-highticket-pq2
+https://lp.henriquemarinhohm.com.br/mentoria-highticket-apl3
+https://isabeleloy.com.br/mentoria-direito-bancario-grupo-whatsapp
+https://www.qconcursos.com/l/mentoria-concursos-fernando-mesquita
+https://vd.victordamasio.com.br
+https://www.bunkerbrain.com.br
+https://mentoria.suelirepulho.com.br
+https://amazonerodeelite.com/lote-3
+https://gabrielatigre.com.br/mentoria-corpo-dos-sonhos
+https://metodo.embrand.com.br/speed-marketing
+https://mentoriaresidencia.com.br/ppt-inscricoes-geral-b
+https://dhoconsulting.com.br/mentoria-de-lideranca
+https://jornadadrop.com.br/jornada-start-do-drop-5-shopify-white-copy-curso-1990
+https://cursos.mochilacheia.com/influencer
+https://percursa.com/p/digital-influencer-na-moda
+https://mentoria.homozarpiens.com/listadeespera
+https://page.filipedetrey.com.br/pgt-kiwify
+https://www.mentoriaemvinhos.com.br/inscricao-jornada-apreciador-de-vinhos-a
+https://ebaconline.com.br/marketing-de-influencia
+https://maxcoach.jamstacktemplates.dev
+https://branco-react.hibootstrap.com/life-coach
+
+Conference
+
+http://www.themestarz.net/html/lifecoach/index2.html#page-top
+https://gardenegarden-felipebetts.vercel.app/
+https://coderthemes.com/opixo/home-event.html
+http://unbouncepages.com/eivent
+https://dsathemes.com/html/evter/files/demo-9.html
+https://dsathemes.com/html/evter/files/demo-1.html
+https://dsathemes.com/html/evter/files/demo-8.html
+https://dsathemes.com/html/evter/files/demo-7.html
+https://dsathemes.com/html/evter/files/demo-6.html
+https://dsathemes.com/html/evter/files/demo-5.html
+https://dsathemes.com/html/evter/files/demo-4.html
+https://dsathemes.com/html/evter/files/demo-3.html
+https://dsathemes.com/html/evter/files/demo-2.html
+https://dsathemes.com/html/evter/files/demo-1.html
+https://pixner.net/evlio/main-file/virtual/index.html
+https://pixner.net/evlio/main-file/business/index.html
+https://pixner.net/evlio/main-file/bootcamp/index.html
+https://pixner.net/evlio/main-file/digital/index.html
+https://pixner.net/evlio/main-file/creative/index.html
 
 Legal
 

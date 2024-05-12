@@ -1,7 +1,7 @@
 # Document Sharing
 
 <!--
-https://papermark.io
+https://github.com/mfts/papermark | https://papermark.io
 -->
 
 TODO

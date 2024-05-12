@@ -3,15 +3,15 @@
 **Keywords:** Chatbot
 
 <!--
-https://www.youtube.com/watch?v=pkwSPSv3fJM
-https://www.youtube.com/watch?v=bI1Ta4N8iJ0 CRM
-https://www.youtube.com/watch?v=xgXhOKKbTuY
-https://www.youtube.com/watch?v=Ymb1YZy04UM
+https://youtube.com/watch?v=pkwSPSv3fJM
+https://youtube.com/watch?v=bI1Ta4N8iJ0 CRM
+https://youtube.com/watch?v=xgXhOKKbTuY
+https://youtube.com/watch?v=Ymb1YZy04UM
 -->
 
 <!--
-https://www.udemy.com/course/abc-automacao-de-baixo-custo-typebot-whatsapp
-https://www.udemy.com/course/chatbot-no-whatsapp-sem-mensalidades-com-nodejs
+https://udemy.com/course/abc-automacao-de-baixo-custo-typebot-whatsapp
+https://udemy.com/course/chatbot-no-whatsapp-sem-mensalidades-com-nodejs
 -->
 
 <!--

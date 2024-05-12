@@ -1,11 +1,13 @@
 # Puck
 
 <!--
+Examples
+
 https://github.com/nguyendhst/low-code-monorepo
 -->
 
 <!--
-https://github.com/verynifty/fastdapp/blob/main/webapp/pages/visual.js
+Blocks
 
 https://github.com/measuredco/puck/tree/main/apps/demo/config/blocks
 -->
@@ -18,12 +20,9 @@ https://github.com/measuredco/puck/tree/main/apps/demo/config/blocks
 - [Demo](https://demo.puckeditor.com/edit)
   - [Custom UI](https://demo.puckeditor.com/custom-ui/edit)
 
-<!--
-https://github.com/measuredco/awesome-puck
--->
-
 ## Learn
 
+- [Awesome List](https://github.com/measuredco/awesome-puck)
 - [Building a React Page Builder: An Introduction to Puck / Adding Tailwind](https://measured.co/blog/building-a-react-page-builder-an-introduction-to-puck#adding-tailwind)
 
 ## Library

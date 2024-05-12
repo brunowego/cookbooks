@@ -28,12 +28,15 @@ drizzle-kit introspect:pg
 
 ### Issues
 
-#### Locked stdin
+#### TBD
+
+```log
+Invalid input Please specify 'dialect' param in config, either of 'pg', 'mysql' or 'sqlite'
+```
 
 <!--
-https://github.com/vercel/turbo/issues/1235
+https://github.com/drizzle-team/drizzle-orm/discussions/2203
+https://github.com/drizzle-team/drizzle-kit-mirror/issues/392
 -->
 
-```sh
-( cd ./packages/db; npx drizzle-kit generate:pg )
-```
+TODO

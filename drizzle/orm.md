@@ -130,6 +130,18 @@ export default {
 #### TBD
 
 ```log
+TypeError: Value is not JSON serializable
+```
+
+<!--
+Try check the API route.
+-->
+
+TODO
+
+#### TBD
+
+```log
 TypeError: Cannot read properties of undefined (reading 'referencedTable')
 ```
 
