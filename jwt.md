@@ -13,9 +13,23 @@ https://javainuse.com/jwtgenerator
 - [Encode or Decode JWTs](https://jsonwebtoken.io/)
 - [JWT Authentication](https://roadmap.sh/guides/jwt-authentication)
 
+## Glossary
+
+- Javascript Object Signing and Encryption (JOSE)
+- JSON Web Encryption (JWE)
+- JSON Web Signature (JWS)
+
 ## Learn
 
 - [Estratégias de autenticação entre front-end e back-end com JWT (cookies storage)](https://youtube.com/watch?v=YcH2kxqK3nc)
+
+## Tools
+
+- [FusionAuth / Dev Tools / JWT Decoder](https://fusionauth.io/dev-tools/jwt-decoder)
+
+<!--
+https://dinochiesa.github.io/jwt/
+-->
 
 ## Store
 

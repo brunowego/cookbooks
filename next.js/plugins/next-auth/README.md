@@ -57,6 +57,25 @@ export default function NextAuthProvider({
 
 ### Issues
 
+#### TBD
+
+```log
+Types of property 'transports' are incompatible.
+```
+
+**Refer:** `./package.json`
+
+```json
+{
+  // ...
+  "pnpm": {
+    "overrides": {
+      "@auth/core": "0.20.0"
+    }
+  }
+}
+```
+
 #### Missing Secret
 
 ```log
@@ -151,20 +170,6 @@ Error: The edge runtime does not support Node.js 'crypto' module.
 https://github.com/brianc/node-postgres/issues/3206
 https://github.com/vercel/next.js/discussions/62985 | https://github.com/haocloo/issue
 https://github.com/nextauthjs/next-auth/issues/10540
--->
-
-TODO
-
-#### TBD
-
-```log
-[auth][error] MissingAdapter: Email login requires an adapter.. Read more at https://errors.authjs.dev#missingadapter
-```
-
-<!--
-https://github.com/nextauthjs/next-auth/pull/9753
-https://github.com/nextauthjs/next-auth/issues/10632
-https://github.com/nextauthjs/next-auth/discussions/10042
 -->
 
 TODO

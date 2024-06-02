@@ -21,6 +21,7 @@ https://github.com/rizzui/rizzui
 
 ## Learning
 
+- [awesome-shadcn/ui](https://github.com/birobirobiro/awesome-shadcn-ui)
 - [Shadcn UI Crash Course #1 - Introduction & Setup](https://youtube.com/watch?v=wcTzlJi2Oz4)
 
 ## Tools
@@ -45,8 +46,6 @@ https://github.com/kiliman/shadcn-custom-theme
 # Using Bun
 bunx shadcn-ui@latest -h
 ```
-
-#131314
 
 ### Usage
 

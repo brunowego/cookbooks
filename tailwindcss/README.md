@@ -69,6 +69,7 @@ https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atai
 - [Tailblocks](https://tailblocks.cc) <!-- https://github.com/mertJF/tailblocks -->
 
 <!--
+https://componentland.com
 https://pagedone.io/blocks
 -->
 
@@ -87,6 +88,12 @@ https://pagedone.io/blocks
 - [DivMagic](/divmagic.md)
 - [Tailwind Color Palette](https://tailwindcolor.com)
 - [tailwindpdf](/tailwindpdf.md)
+
+<!--
+https://hypercolor.dev
+https://bobthered.github.io/tailwindcss-palette-generator
+https://tailwind.ink
+-->
 
 ## CLI
 

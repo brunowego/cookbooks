@@ -1,6 +1,6 @@
 # Nano ID
 
-**Keywords:** Identification (ID)
+**Keywords:** Identification (ID), Not Cursor-based Pagination
 
 ## Links
 

@@ -70,7 +70,10 @@ git commit -nm '<message>'
 ### Date
 
 ```sh
-git commit --date 'Wed Feb 16 14:00 2037 +0100'
+git commit --date '10 day ago' -m '<message>'
+git commit --date 'Wed Feb 16 14:00 2037 +0100' -m "<message>"
+
+git commit --amend --no-edit --date='10 day ago'
 ```
 
 ### Modify Specified Commit

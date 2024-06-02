@@ -1,5 +1,9 @@
 # Google Search
 
+<!--
+https://github.com/goenning/google-indexing-script
+-->
+
 ## Links
 
 - [Status Page](https://status.search.google.com)

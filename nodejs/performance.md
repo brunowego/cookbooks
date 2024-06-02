@@ -11,7 +11,14 @@
 
 ## Tools
 
-<!-- https://github.com/pastelsky/bundlephobia | https://bundlephobia.com -->
+### Performance
+
+- [Bundlephobia](https://bundlephobia.com) <!-- https://github.com/pastelsky/bundlephobia -->
+- [Package Phobia](https://packagephobia.com) 🌟 <!-- https://github.com/styfle/packagephobia -->
+
+<!--
+https://moiva.io
+-->
 
 ### Managed
 

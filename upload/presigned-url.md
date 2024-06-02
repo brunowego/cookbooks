@@ -1,7 +1,11 @@
 # Presigned URL
 
 <!--
-https://www.youtube.com/watch?v=Hf4ps7q2WCY
+https://github.com/captableinc/captable/blob/main/src/common/uploads.ts
+-->
+
+<!--
+https://youtube.com/watch?v=Hf4ps7q2WCY
 -->
 
 <!--

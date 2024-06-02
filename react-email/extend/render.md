@@ -3,6 +3,9 @@
 ## Installation
 
 ```sh
+# Using pnpm
+pnpm add @react-email/render
+
 # Using Bun
 bun add @react-email/render
 ```

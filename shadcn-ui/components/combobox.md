@@ -22,7 +22,9 @@ https://github.com/shadcn-ui/ui/issues/3051
 
 <!-- Replace `data-[disabled]:...` with `aria-disabled:....` in `./packages/ui/src/components/command.tsx`. -->
 
-Change `<CommandGroup />` to `<CommandList />`.
+<!-- Change `<CommandGroup />` to `<CommandList />`. -->
+
+TODO
 
 ### TBD
 

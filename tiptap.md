@@ -4,6 +4,8 @@
 
 - [Code Repository](https://github.com/ueberdosis/tiptap)
 - [Main Website](https://tiptap.dev)
+- [Examples](https://tiptap.dev/docs/editor/guide/node-views/examples)
+  - [Default text editor](https://tiptap.dev/docs/editor/examples/default)
 
 ## Library
 

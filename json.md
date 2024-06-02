@@ -3,8 +3,8 @@
 ## Tools
 
 - [JSON Crack](https://jsoncrack.com) 🌟
-- [JSON Formatter](https://jsonformatter.org/)
-- [JSON Schema Store](https://schemastore.org/json/)
+- [JSON Formatter](https://jsonformatter.org)
+- [JSON Schema Store](https://schemastore.org/json)
 
 <!--
 https://chrome.google.com/webstore/detail/json-viewer/efknglbfhoddmmfabeihlemgekhhnabb?hl=pt

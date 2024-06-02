@@ -5,9 +5,17 @@ Zod Example | https://github.com/search?q=repo%3AArish-Shah%2Fx-2008%20replyEnum
 -->
 
 ```ts
-export const ROLES = ['admin', 'customer'] as const
+export const USER_ROLES = ['admin', 'owner', 'member'] as const
 
-export const userRoleEnum = pgEnum('user_role', ROLES)
+export const userRoleEnum = pgEnum('user_role', USER_ROLES)
 
-export type Role = (typeof userRoleEnum.enumValues)[number]
+role: userRoleEnum('role').notNull(),
+
+export type UserRole = (typeof userRoleEnum.enumValues)[number]
+```
+
+```ts
+export const USER_ROLES = ['admin', 'owner', 'member'] as const
+
+role: varchar('role', { enum: USER_ROLES }).notNull().default('member'),
 ```

@@ -34,6 +34,7 @@ https://github.com/swisskyrepo/PayloadsAllTheThings
 - GIAC Web Application Penetration Tester (GWAPT)
 - Ground Penetration (GPEN)
 - National Institute of Standards and Technology (NIST)
+- Pentest As A Service (PTaaS)
 
 ## Tools
 

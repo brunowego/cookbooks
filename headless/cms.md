@@ -17,6 +17,7 @@
 - [Strapi](/strapi/README.md)
 
 <!--
+https://github.com/Wisp-CMS
 https://github.com/vriteio/vrite
 https://github.com/apostrophecms/apostrophe
 https://github.com/BuilderIO/builder

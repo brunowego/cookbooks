@@ -6,6 +6,7 @@
 
 - [Code Repository](https://github.com/sourcegraph/sourcegraph)
 - [Main Website](https://sourcegraph.com)
+- [Docs](https://sourcegraph.com/docs)
 
 ## CLI
 
@@ -28,7 +29,23 @@ src -h
 
 ```sh
 #
+src serve-git
+# http://localhost:3434
+
+#
 src search 'r:github.com/vercel/next.js turbo'
+```
+
+### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension sourcegraph.sourcegraph
+
+#
+jq '."recommendations" += ["sourcegraph.sourcegraph"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
 ```
 
 ### Issues

@@ -18,16 +18,6 @@ git show-branch -r
 
 ## Tips
 
-### Search Text Across All Branches
-
-```sh
-#
-git rev-list --all | xargs git grep '<pattern>'
-
-#
-git branch --contains <commit>
-```
-
 ### Fetch/Pull All Branches
 
 ```sh

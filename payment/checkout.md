@@ -9,6 +9,11 @@ https://checkout.sandbox.slope.so
 https://checkout4.xgrow.com/pt/8e9df1da-b202-4707-9ade-7e2a217719a2/MTk2MDk=?xa=48425
 -->
 
+## Terms
+
+- One-Click Checkout
+- Seamless Checkout
+
 ## Implementations
 
 ### Managed

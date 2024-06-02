@@ -1,7 +1,7 @@
 # Digital Signature
 
 <!--
-https://idwall.co/
+https://idwall.co
 -->
 
 ## Terms

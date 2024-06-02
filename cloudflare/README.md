@@ -1,6 +1,10 @@
 # Cloudflare
 
 <!--
+cf_clearance
+-->
+
+<!--
 https://blog.turso.tech/create-a-distributed-api-for-your-e-commerce-store-using-cloudflare-and-turso-fa449c932240
 
 https://github.com/mrbbot/miniflare

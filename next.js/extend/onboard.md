@@ -13,3 +13,7 @@ https://github.com/lightsats/lightsats/blob/main/app/prisma/schema.prisma
 -->
 
 TODO
+
+<!--
+https://acme.tld/onboard?page=1 | https://acme.tld/onboard?step=1
+-->

@@ -1,5 +1,9 @@
 # next-contentlayer
 
+<!--
+https://github.com/startkit-dev/next/blob/main/contentlayer.config.ts
+-->
+
 ## Dependencies
 
 - [Contentlayer](/contentlayer.md#library)

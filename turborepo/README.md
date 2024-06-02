@@ -124,7 +124,7 @@ https://github.com/vercel/turbo/discussions/7802
 -->
 
 ```sh
-( cd ./packages/db; npx drizzle-kit generate:pg )
+( cd ./packages/db; npx drizzle-kit generate )
 ```
 
 #### TBD

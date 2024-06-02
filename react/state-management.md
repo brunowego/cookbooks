@@ -2,7 +2,12 @@
 
 ## Libraries
 
+- [Jotai](https://jotai.org)
 - [MobX](/mobx.md)
-- [React Query](/react-query/README.md)
 - [Recoil](/recoiljs.md)
 - [Redux](/redux.md)
+- [Zustand](/zustand.md)
+
+<!-- ### Asynchronous
+
+- [React Query](/react-query/README.md) -->

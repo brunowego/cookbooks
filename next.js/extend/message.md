@@ -1,6 +1,7 @@
 # Extend with Message
 
 <!--
+https://github.com/jozef-hudec-27/buzzline-frontend
 https://github.com/beyerenrico/realtime-chat-messenger
 
 https://github.com/antonioerdeljac/next13-messenger

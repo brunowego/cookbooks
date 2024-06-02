@@ -1,6 +1,8 @@
 # Extend with Stripe
 
 <!--
+https://vercel.com/templates/next.js/subscription-starter
+
 https://github.com/webprodigies/fuzzie-production/blob/main/src/app/api/payment/route.ts
 
 https://github.com/vercel/nextjs-subscription-payments

@@ -7,3 +7,4 @@
 - Console
   - [Emails](https://resend.com/emails)
   - [API Keys](https://resend.com/api-keys)
+  - [SMTP](https://resend.com/settings/smtp)

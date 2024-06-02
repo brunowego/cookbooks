@@ -1,6 +1,10 @@
 # Barcode Reader
 
 <!--
+https://github.com/HugeLetters/recallio
+-->
+
+<!--
 https://github.com/jamenamcinteer/react-qr-barcode-scanner
 
 NotFoundException: No MultiFormat Readers were able to detect the code.

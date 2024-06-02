@@ -19,10 +19,10 @@ https://tailwindshades.com/
 
 ## References
 
-- [BrandColors](https://brandcolors.net/)
-- [Color Hunt](https://colorhunt.co/)
+- [BrandColors](https://brandcolors.net)
+- [Color Hunt](https://colorhunt.co)
 - [Hue](https://en.wikipedia.org/wiki/Hue)
-- [Open Color](https://yeun.github.io/open-color/)
+- [Open Color](https://yeun.github.io/open-color)
 
 ## Types
 
@@ -38,24 +38,25 @@ https://tailwindshades.com/
 ### Palette
 
 - [Accessible Color Generator](https://learnui.design/tools/accessible-color-generator.html)
-- [Accessible color palette builder](https://toolness.github.io/accessible-color-matrix/)
-- [Chroma.js Color Palette Helper](http://vis4.net/palettes/)
-- [ColorBox](http://colorbox.io/)
-- [CopyPalette](https://copypalette.app/) 🌟
-- [Deep learning color generator](https://colors.eva.design/)
-- [Hue The Color](https://eboye.github.io/huethecolor/)
+- [Accessible color palette builder](https://toolness.github.io/accessible-color-matrix)
+- [Chroma.js Color Palette Helper](http://vis4.net/palettes)
+- [ColorBox](http://colorbox.io)
+- [CopyPalette](https://copypalette.app) 🌟
+- [Deep learning color generator](https://colors.eva.design)
+- [Hue The Color](https://eboye.github.io/huethecolor)
 - [Huey / Color Palette Generator](https://huey.design)
-- [Leonardo](https://leonardocolor.io/)
-- [Material Color Generator (Auchri)](https://auchri.github.io/MaterialColorGenerator/)
-- [Material color generator (Rekire)](https://rekire.github.io/MaterialColorGenerator/)
-- [Material Design / Color Tool](https://material.io/resources/color/)
+- [Leonardo](https://leonardocolor.io)
+- [Material Color Generator (Auchri)](https://auchri.github.io/MaterialColorGenerator)
+- [Material color generator (Rekire)](https://rekire.github.io/MaterialColorGenerator)
+- [Material Design / Color Tool](https://material.io/resources/color)
 - [Material Design Palette Generator](https://materialpalettes.com) 🌟
 - [Material Design Theme & Palette Color Generator](http://mcg.mbitson.com)
 - [Palx](https://palx.jxnblk.com)
-- [Sass Color Generator](http://scg.ar-ch.org/)
+- [Sass Color Generator](http://scg.ar-ch.org)
 - [Tailwind Shades](https://tailwindshades.com) 🌟
 
 <!--
+https://tailcolor.com
 https://uicolors.app
 -->
 
@@ -87,8 +88,9 @@ https://maketintsandshades.com
 - [Coolors / Gradient Palette](https://coolors.co/gradient-palette) 🌟
 
 <!--
+https://brandingcolors.net
 https://tailcolor.com/palettes
-https://javisperez.github.io/tailwindcolorshades/
+https://javisperez.github.io/tailwindcolorshades
 https://tailwind-color-palette.netlify.app
 https://uicolors.app/create
 -->
@@ -107,11 +109,11 @@ https://uicolors.app/create
 - [Coolors / Color Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5)
 - [SiegeMedia / Contrast Ratio](https://siegemedia.com/contrast-ratio) (HSL)
 - [WCAG / Contrast Checker](https://contrastchecker.com)
-- [WebAIM / Contrast Checker](https://webaim.org/resources/contrastchecker/)
+- [WebAIM / Contrast Checker](https://webaim.org/resources/contrastchecker)
 
 ### A11y
 
-- [A11y Color Palette](http://a11yrocks.com/colorPalette/)
+- [A11y Color Palette](http://a11yrocks.com/colorPalette)
 
 ### Convert
 

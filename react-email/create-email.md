@@ -54,8 +54,17 @@ TODO
 ### TBD
 
 ```log
+Cannot find module 'react/jsx-runtime' or its corresponding type declarations. ts(2307)
+...
 ✘ [ERROR] Could not resolve "react/jsx-runtime"
 ```
+
+<!--
+https://github.com/resend/react-email/issues/1442
+https://github.com/resend/react-email/issues/1422#issuecomment-2072163519
+
+pnpm add react@latest react-dom@latest
+-->
 
 TBD
 

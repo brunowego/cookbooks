@@ -22,6 +22,8 @@ AWS Step Functions
 Buildbase
 Kedro
 
+https://github.com/Tauffer-Consulting/domino
+https://github.com/Shubham-Rasal/flow-forge
 https://github.com/Admyral-Security/admyral
 https://github.com/bpmn-io/bpmn-js
 https://camunda.com/

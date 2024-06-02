@@ -77,6 +77,10 @@ const nextConfig = {
 - Server-Side Rendering (SSR)
 - Static Site Generation (SSG)
 
+## Start Kit
+
+- [StartKit](https://startkit.dev) <!-- https://github.com/startkit-dev/next -->
+
 ## CLI
 
 ### Commands
@@ -239,6 +243,18 @@ echo '/out' >> ./.gitignore
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+Error: Could not find the module "..." in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+```
+
+<!--
+https://github.com/vercel/next.js/issues/58776
+-->
+
+TODO
 
 #### TBD
 

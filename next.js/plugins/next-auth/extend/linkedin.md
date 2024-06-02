@@ -2,7 +2,7 @@
 
 ## Issues
 
-#### Wrong Issuer
+### Wrong Issuer
 
 ```log
 [auth][error] OperationProcessingError: "response" is not a conform Authorization Server Metadata response

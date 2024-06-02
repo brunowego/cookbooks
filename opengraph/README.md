@@ -29,7 +29,7 @@ https://github.com/ThisIsSimmon/localhost-open-graph-debugger
 - [TailGraph](https://tailgraph.com)
 
 <!--
-https://github.com/QuiiBz/ogstudio
+https://github.com/QuiiBz/ogstudio | https://ogstudio.app
 -->
 
 ## Tips

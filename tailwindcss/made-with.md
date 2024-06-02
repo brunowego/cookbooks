@@ -62,6 +62,7 @@ https://tailwindcollections-organic.netlify.app
 
 Header
 
+https://fiction.com
 https://tailwindcollections-grid-landingpage.netlify.app
 https://tailwindcollections-gallery-page.netlify.app
 
@@ -71,6 +72,7 @@ https://tailwindcollections-furniture-store.netlify.app
 
 About
 
+https://fiction.com/about
 https://midday.ai/story
 https://oku-ui.com/oku
 https://timescale.com/about
@@ -96,6 +98,7 @@ https://feyapp.com/updates
 
 404 (Not Found)
 
+https://unkey.com/404
 https://api.themembers.dev.br/404
 https://oneuptime.com/404
 https://app.plane.so/404
@@ -109,6 +112,11 @@ https://liveblocks.io/404
 https://coastpay.com/404
 https://infisical.com/404
 https://himalayas.app/404
+
+Template Select
+
+https://aipage.dev/projects/4491/pages/5399
+https://vercel.com/templates/next.js/nextjs-boilerplate
 
 Chat
 
@@ -182,6 +190,11 @@ https://nike-app-git-main-armans-projects-c9523aa4.vercel.app/
 
 Profile
 
+https://roadmap.sh/u/brunowego
+https://layers.to/louisnguyen
+https://significa.co/projects/dia
+https://curationist.org/profile/a7f338e0-7f48-494f-a20b-b912db5b5afd
+https://account.hotmart.com
 https://tbkiosk.xyz/projects/onchainalbumxyz
 https://app.opensauced.pizza/user/nickytonline
 https://himalayas.app/@santiagoestrella
@@ -209,10 +222,13 @@ https://opencollective.com/signin/sent?email=me%40brunowego.com
 
 Login / Sign up
 
+https://flexify.framer.website/Sign-up
+https://ev.braip.com/register
 https://admin.brizy.io/signup
 https://feyapp.com/signup
 https://reviews.io/signup/basic?signup_email=true
 
+https://app.allo.restaurant/login
 https://console.datum.net/login
 https://tape.xyz/login?signup=true
 https://onboarding.speechify.com
@@ -243,6 +259,10 @@ https://auth.planetscale.com/sign-in
 
 Pagination
 
+Docs
+
+https://ciusji.gitbook.io/sheenflow
+
 Schedule
 
 https://crashed.nu/builder
@@ -262,6 +282,7 @@ https://localcan.com
 
 Integrations
 
+https://cloud.trigger.dev/orgs/henkiz-2a7a/integrations
 https://doppler.com/integrations
 https://githr.vercel.app/app/integrations
 https://app.frigade.com/integrations
@@ -272,6 +293,7 @@ Pricing
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://indexer.so/pricing
 https://cardfy.vercel.app/pricing
 https://app.boords.com/pricing
 https://tembo.io/pricing
@@ -285,17 +307,26 @@ https://helicone.ai/pricing
 
 Contact
 
+https://significa.co/contact
 https://vercel.com/contact/sales
 
 Plans
 
 https://console.baselime.io/brunowego/plans
 
+Simulation
+
+https://app.creditas.com/auto-refi/solicitacao/informacoes-pessoais?valor-emprestimo=150000&utm_source=crm&utm_medium=whatsapp&utm_campaign=CRARW-AT802_ar_winback_crm_whatsapp_autopq_automatic_pos_desc81_180d_maio24_v2_res_rat_mkt_per&experiment=CRMAT-023a
+
 Dashboard
 
+https://app.premai.io/projects
+https://app.netbird.io/peers | https://github.com/netbirdio/netbird
+
+https://dev.briefkastenhq.com/archives
+https://app.eververse.ai
 https://console.datum.net/dashboard
 https://app.flows.sh | https://github.com/RBND-studio/flows-cloud
-https://app.netbird.io/peers
 https://network-ui.vercel.app/dashboard/user/assets/received
 https://opencollective.com/dashboard/henkiz
 https://opencollective.com/dashboard
@@ -340,9 +371,10 @@ https://app.airplane.dev
 https://app.planetscale.com/settings/account
 https://himalayas.app/recruit/details
 https://productlane.com/insights
-https://votemonitor.vercel.app
 
 Delete Account
+
+https://app.netbird.io/settings?tab=danger-zone
 
 Event
 
@@ -359,14 +391,21 @@ https://himalayas.app/companies/hustlewing/tech-stack
 Settings
 
 https://accounts.shopify.com/accounts/238884001/personal
-https://app.plane.so/profile
-https://resend.com/profile
+
+https://chat-preview.lobehub.com/settings/agent?agent=&session=inbox&tab=
+https://account.hotmart.com/personal-information
+https://railway.app/account
 https://app.cal.com/settings/my-account/profile
 https://hoppscotch.io/settings
+https://app.plane.so/profile
+https://resend.com/profile
 https://himalayas.app/recruit/details
 https://resend.com/settings
-https://railway.app/account
-https://cloud.tailwarden.com/workspace/settings/
+https://cloud.tailwarden.com/workspace/settings
+
+Email Notifications
+
+https://app.plane.so/profile/preferences/email
 
 Gamification
 
@@ -395,9 +434,16 @@ https://newsletter.quivr.app/subscribe/a20f5eaf-9071-4647-93cb-74f5e771e3e1/mana
 
 Onboarding
 
-https://dashboard.openpanel.dev/onboarding
+https://flowbite.com/blocks/marketing/user-onboarding/
+https://componentland.com/component/onboarding-page-2
+
+https://console.neon.tech/app/welcome
+https://app.arcjet.com/teams/team_01hzcvnbabenvbwbx72tjk4m3p/new-site
+https://app.sportsbion.com/onboarding
+https://app.allo.restaurant/welcome
 https://onboarding.speechify.com/quiz/intro
 https://intelfox.vercel.app/welcome
+https://dashboard.openpanel.dev/onboarding
 https://app.antimetal.com/workspace/connect
 https://app.documenso.com/documents
 https://feyapp.com/onboarding/subscription
@@ -412,6 +458,10 @@ https://app.attio.com/welcome/workspace-details
 https://app.formbricks.com/onboarding
 https://app.techfx.com.br/onboarding/partner
 https://app.boords.com/welcome
+
+Invite
+
+https://roadmap.sh/account/friends
 
 Billing
 
@@ -431,6 +481,7 @@ https://gamestorm-nuxt.vercel.app/games-details
 
 Blog
 
+https://significa.co/blog
 https://doppler.com/blog
 https://artillery.io/blog
 https://shopify.com/blog
@@ -465,6 +516,7 @@ https://zapal.tech
 
 Footer
 
+https://fiction.com
 https://zapal.tech
 https://swan.io
 https://alexanderjeamoro.vercel.app
@@ -510,6 +562,10 @@ https://coderthemes.com/opixo/coming-soon-2.html
 
 Coach, Speaker & Mentor
 
+https://kaizen.ohamaruri.com
+https://networkingpro.pablomarcal.com.br/afiliados/?xa=43665
+https://omatheusdophotoshop.com.br/
+https://destravarnodigital.com.br/quase-100-maneiras-de-levantar-dinheiro-rapido-do-zero-bonus-2/
 https://julianabragancabeauty.com.br
 https://cacamontans.com.br/mentoria
 https://mapaconcursos.com.br/mentoria-excelere-pernambuco-2024
@@ -538,6 +594,12 @@ https://ebaconline.com.br/marketing-de-influencia
 https://maxcoach.jamstacktemplates.dev
 https://branco-react.hibootstrap.com/life-coach
 
+Audit / Security Log
+
+https://cosmo.wundergraph.com/henkiz/audit-log
+https://app.planetscale.com/settings/security-log
+https://railway.app/account/security
+
 Conference
 
 http://www.themestarz.net/html/lifecoach/index2.html#page-top
@@ -559,6 +621,10 @@ https://pixner.net/evlio/main-file/business/index.html
 https://pixner.net/evlio/main-file/bootcamp/index.html
 https://pixner.net/evlio/main-file/digital/index.html
 https://pixner.net/evlio/main-file/creative/index.html
+
+Checkout
+
+https://heyharper.com
 
 Legal
 

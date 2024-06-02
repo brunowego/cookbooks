@@ -4,6 +4,12 @@
 https://github.com/CesarJrFontalvo/buen-comienzo-adonis-5/blob/main/Dockerfile
 -->
 
+<!--
+{"message":"E_ROUTE_NOT_FOUND: Cannot GET:/ping"}
+
+https://api.example.com/health
+-->
+
 **Keywords** Web Framework
 
 ## Links

@@ -25,6 +25,7 @@ https://udemy.com/course/starting-an-ecommerce-business-in-pakistan/
 - [Shopify](https://shopify.com)
 
 <!--
+https://yampi.com.br
 https://wake.tech/wake-commerce
 https://castleit.io
 https://uvodo.com
@@ -70,7 +71,7 @@ https://github.com/netlify/gocommerce
 <!--
 Brazil
 
-https://empresas.koin.com.br/
+https://empresas.koin.com.br
 https://empresas.koin.com.br/koinpay
 https://bling.com.br
 https://nloja.com/br
