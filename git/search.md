@@ -19,5 +19,5 @@ git branch --contains <commit>
 ### Find File from All Branches
 
 ```sh
-git log --all -- '**/<filename>'
+git log --all --pretty=short -- '**/<filename>'
 ```

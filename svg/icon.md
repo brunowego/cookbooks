@@ -16,6 +16,7 @@
 - [Hugeicons Pro](https://hugeicons.pro)
 - [Lucide](/lucide.md)
 - [React Icons](/react-icons.md)
+- [Svgl](https://svgl.vercel.app)
 
 ## Animated
 

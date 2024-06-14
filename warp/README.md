@@ -5,7 +5,7 @@
 ## Links
 
 - [Org. Repository](https://github.com/warpdotdev)
-- [Main Website](https://warp.dev/)
+- [Main Website](https://warp.dev)
 
 ## App
 

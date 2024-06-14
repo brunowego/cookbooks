@@ -6,4 +6,6 @@
 
 ## Tools
 
+- [Git Tower](/git-tower.md)
+- [GitKraken](https://gitkraken.com)
 - [Sourcetree](/sourcetree.md)

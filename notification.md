@@ -6,4 +6,4 @@ https://github.com/dichioniccolo/bloghub
 
 ## Tools
 
-- [Novu](https://novu.co/)
+- [Novu](https://novu.co)

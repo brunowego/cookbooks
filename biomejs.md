@@ -29,7 +29,7 @@ bun add @biomejs/biome -D
 
 ```json
 {
-  "$schema": "https://biomejs.dev/schemas/1.6.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
   "organizeImports": {
     "enabled": false
   },
@@ -40,7 +40,8 @@ bun add @biomejs/biome -D
       "correctness": {
         "all": false,
         "noUnusedImports": "error",
-        "noUnusedVariables": "error"
+        "noUnusedVariables": "error",
+        "useJsxKeyInIterable": "error"
       },
       "nursery": {
         "useSortedClasses": {

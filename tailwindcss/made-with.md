@@ -90,6 +90,7 @@ https://mintlify.com/customers
 
 Notifications
 
+https://productlane.com/settings/notifications
 https://whop.com/account/general
 
 Changelog
@@ -190,6 +191,7 @@ https://nike-app-git-main-armans-projects-c9523aa4.vercel.app/
 
 Profile
 
+https://drawsql.app/user/profile
 https://roadmap.sh/u/brunowego
 https://layers.to/louisnguyen
 https://significa.co/projects/dia
@@ -282,6 +284,7 @@ https://localcan.com
 
 Integrations
 
+https://productlane.com/settings/integrations
 https://cloud.trigger.dev/orgs/henkiz-2a7a/integrations
 https://doppler.com/integrations
 https://githr.vercel.app/app/integrations
@@ -293,6 +296,15 @@ Pricing
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://pixeleye.io/pricing
+https://umami.is/pricing
+https://eboto.app
+https://formzillion.com/pricing
+https://loglib.io/pricing
+https://documenso.com/pricing
+https://replay.io/pricing
+https://bytebase.com/pricing
+https://midday.ai/pricing
 https://indexer.so/pricing
 https://cardfy.vercel.app/pricing
 https://app.boords.com/pricing
@@ -304,6 +316,8 @@ https://liveblocks.io/pricing
 https://raster.app/pricing
 https://railway.app/pricing
 https://helicone.ai/pricing
+https://openstatus.dev/pricing
+https://upstash-web-upstash.vercel.app/#section-pricing
 
 Contact
 
@@ -312,6 +326,7 @@ https://vercel.com/contact/sales
 
 Plans
 
+https://productlane.com/settings/plans
 https://console.baselime.io/brunowego/plans
 
 Simulation
@@ -370,7 +385,16 @@ https://resend.com/overview
 https://app.airplane.dev
 https://app.planetscale.com/settings/account
 https://himalayas.app/recruit/details
+
+Welcome
+
+https://app.eververse.ai/welcome
+
+Insights / Analytics / Metrics
+
 https://productlane.com/insights
+https://app.plane.so/shopner
+https://app.plane.so/shopner/analytics
 
 Delete Account
 
@@ -432,11 +456,17 @@ Subscription
 https://imagine.art/dashboard/subscription
 https://newsletter.quivr.app/subscribe/a20f5eaf-9071-4647-93cb-74f5e771e3e1/manage?post_id=aab8821e-81ed-4554-abbe-f040bb424f0d
 
+Teams
+
+https://drawsql.app/teams/create
+
 Onboarding
 
 https://flowbite.com/blocks/marketing/user-onboarding/
 https://componentland.com/component/onboarding-page-2
 
+https://brandfetch.com/onboarding
+https://drawsql.app/first-team/create
 https://console.neon.tech/app/welcome
 https://app.arcjet.com/teams/team_01hzcvnbabenvbwbx72tjk4m3p/new-site
 https://app.sportsbion.com/onboarding
@@ -549,6 +579,10 @@ https://neon.tech/careers
 https://moderntreasury.com/careers
 https://proofserve.com/careers
 https://raster.app/careers
+
+Hotel
+
+https://members.hotelengine.com
 
 Demo
 

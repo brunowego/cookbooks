@@ -39,3 +39,21 @@ ulid
 #
 ulid -z
 ```
+
+<!--
+import { ulid } from 'ulidx'
+
+export const generateId = (): string => ulid()
+-->
+
+<!--
+import { ulid } from 'ulidx'
+
+const prefixes = ['usr'] as const
+
+export type Prefix = (typeof prefixes)[number]
+
+export const generatePrefixedId = ({
+  prefix,
+}: { prefix: (typeof prefixes)[number] }): string => `${prefix}_${ulid()}`
+-->

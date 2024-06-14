@@ -21,7 +21,7 @@ https://linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 ## References
 
 - [Country Codes](https://countrycode.org/)
-- [Preload, prefetch and other <link> tags](https://3perf.com/blog/link-rels/)
+- [Preload, prefetch and other <link> tags](https://3perf.com/blog/link-rels)
 
 ## Tools
 

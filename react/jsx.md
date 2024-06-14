@@ -4,6 +4,11 @@
 
 - [Transform / HTML to JSX](https://transform.tools/html-to-jsx)
 
+<!--
+https://divmagic.com/tools/html-to-jsx
+https://magic.reactjs.net/htmltojsx.htm
+-->
+
 ## Issues
 
 ### Missing JSX Compiler

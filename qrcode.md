@@ -18,3 +18,7 @@ https://chart.googleapis.com/chart?cht=qr&chs=120x120&chld=L|0&chl=https://web3.
 ### Reader
 
 - [React QR Reader](https://github.com/JodusNodus/react-qr-reader)
+
+<!--
+https://revolut.com/qr-code-link?link=https%3A%2F%2Frevolut.onelink.me%2FE528%2Fqelwql6k
+-->

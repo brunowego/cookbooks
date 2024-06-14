@@ -13,4 +13,5 @@ https://www.youtube.com/watch?v=y0d15Y8RID8
 
 ## Tools
 
+- [Brandfetch](https://brandfetch.com)
 - [Svgl](https://svgl.vercel.app)

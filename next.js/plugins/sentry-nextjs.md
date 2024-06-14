@@ -180,6 +180,19 @@ SENTRY_DSN=$SENTRY_DSN
 EOF
 ```
 
+## Tips
+
+### Create User Auth Token
+
+1. [Auth Tokens](https://sentry.io/settings/account/api/auth-tokens)
+2. Create New User Auth Token
+   - General -> Name: `local`
+   - Permissions -> Project: `Read & Write`, Release: `Admin`, Issue & Event: `Read & Write`
+
+<!--
+event:read, event:write, project:read, project:releases, project:write
+-->
+
 ## Issues
 
 ### Missing Global Error File
@@ -263,7 +276,41 @@ TODO
 ### TBD
 
 ```log
+@acme/web:dev: [@sentry/nextjs] It appears you've configured a `sentry.server.config.ts` file. Please ensure to put this file's content into the `register()` function of a Next.js instrumentation hook instead. To ensure correct functionality of the SDK, `Sentry.init` must be called inside `instrumentation.ts`. Learn more about setting up an instrumentation hook in Next.js: https://nextjs.org/docs/app/building-your-application/optimizing/instrumentation. You can safely delete the `sentry.server.config.ts` file afterward.
+
+@acme/web:dev: [@sentry/nextjs] It appears you've configured a `sentry.edge.config.ts` file. Please ensure to put this file's content into the `register()` function of a Next.js instrumentation hook instead. To ensure correct functionality of the SDK, `Sentry.init` must be called inside `instrumentation.ts`. Learn more about setting up an instrumentation hook in Next.js: https://nextjs.org/docs/app/building-your-application/optimizing/instrumentation. You can safely delete the `sentry.edge.config.ts` file afterward.
+```
+
+TODO
+
+### TBD
+
+```log
+@acme/web:dev: [@sentry/nextjs] Setting a `sentry` property on the Next.js config object as a means of configuration is no longer supported. Please use the `sentryBuildOptions` argument of of the `withSentryConfig()` function instead.
+```
+
+TODO
+
+### TBD
+
+```log
 SyntaxError: Named export 'withSentryConfig' not found. The requested module '@sentry/nextjs' is a CommonJS module, which may not support all module.exports as named exports.
+```
+
+TODO
+
+### TBD
+
+```log
+@acme/web:build: [@sentry/nextjs - Node.js] Info: Sending error and performance telemetry data to Sentry. To disable telemetry, set `options.telemetry` to `false`.
+```
+
+TODO
+
+### TBD
+
+```log
+@acme/web:build:   WARN    2024-06-08 20:56:43.487106 -03:00 Unrecognized auth token format!
 ```
 
 TODO

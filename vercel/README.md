@@ -139,7 +139,7 @@ vc secrets ls
 
 #
 vc deploy
-vc deploy --prod --no-clipboard
+vc deploy --prod
 
 #
 vc redeploy <url>

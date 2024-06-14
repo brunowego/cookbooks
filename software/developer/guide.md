@@ -28,6 +28,9 @@ pnpm db:migrate
 # Run database seeders
 pnpm db:seed
 
+# Run database studio
+pnpm db:studio
+
 # Start the development server
 pnpm dev --filter web
 ```

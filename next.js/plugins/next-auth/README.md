@@ -237,3 +237,11 @@ Error: Client network socket disconnected before secure TLS connection was estab
 ```
 
 TODO
+
+#### TBD
+
+```log
+no authorization code in "callbackParameters"
+```
+
+TODO

@@ -9,9 +9,9 @@ https://github.com/kushagrasarathe/image-upload-shadcn
 - [Cropper.js](/cropperjs.md) <!--- 514kB -->
 - [react-advanced-cropper](https://github.com/advanced-cropper/react-advanced-cropper) <!-- 1.94MB -->
 - [react-avatar-editor](https://github.com/mosch/react-avatar-editor) <!-- 56.1kB -->
-- [react-cropper](https://github.com/react-cropper/react-cropper) <!--- 20.0kB + 514kB (cropperjs) -->
-- [react-easy-crop](/react-easy-crop.md) <!-- 484kB -->
-- [react-image-crop](/react-image-crop.md) 🌟 <!-- 108kB -->
+- [react-cropper](https://github.com/react-cropper/react-cropper) <!--- 20.0kB + 514kB (cropperjs) --> \*
+- [react-easy-crop](/react-easy-crop.md) <!-- 484kB --> \*
+- [react-image-crop](/react-image-crop.md) 🌟 <!-- 108kB --> \*
 
 <!--
 https://github.com/MrXujiang/react-cropper-pro

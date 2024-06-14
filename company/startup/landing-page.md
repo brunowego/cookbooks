@@ -5,6 +5,8 @@
 - [Landing Page Checklist](https://landingpage.fyi/landing-page-checklist)
 
 <!--
+https://greatpages.com.br
+
 https://earlybee.io
 
 https://midday.ai/en

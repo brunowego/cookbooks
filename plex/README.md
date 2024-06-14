@@ -9,6 +9,7 @@ https://skybox.xyz/en/
 ## Links
 
 - [Main Website](https://plex.tv)
+- [Status Page](https://status.plex.tv)
 
 ## Glossary
 
