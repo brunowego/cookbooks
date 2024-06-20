@@ -7,6 +7,11 @@
 - [Code Repository](https://github.com/ai/nanoid)
 - [Main Website](https://zelark.github.io/nano-id-cc)
 
+## Tools
+
+- [Nano ID Collision Calculator](https://alex7kom.github.io/nano-nanoid-cc)
+- [Nano ID generator](https://nanoid.jormaechea.com.ar)
+
 ## Library
 
 ### Installation

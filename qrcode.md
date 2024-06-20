@@ -1,6 +1,10 @@
 # Quick Response (QR) Code
 
 <!--
+https://github.com/latentcat/qrbtf
+-->
+
+<!--
 https://chart.googleapis.com/chart?cht=qr&chs=120x120&chld=L|0&chl=https://web3.bio/${path}
 -->
 

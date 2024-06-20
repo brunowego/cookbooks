@@ -1,5 +1,24 @@
 # Select
 
+## Snippets
+
+```tsx
+import Select from '@acme/ui/components/select'
+;<Select defaultValue={value} onValueChange={(v) => onChange(v)}>
+  <Select.Trigger>
+    <Select.Value />
+  </Select.Trigger>
+
+  <Select.Content>
+    {list.map((value, label) => (
+      <Select.Item key={value} value={value}>
+        {label}
+      </Select.Item>
+    ))}
+  </Select.Content>
+</Select>
+```
+
 ## Issues
 
 ### TBD

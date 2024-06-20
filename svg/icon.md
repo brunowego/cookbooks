@@ -18,6 +18,10 @@
 - [React Icons](/react-icons.md)
 - [Svgl](https://svgl.vercel.app)
 
+<!--
+https://slimicons.com
+-->
+
 ## Animated
 
 - [Lordicon](https://lordicon.com)

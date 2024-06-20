@@ -66,7 +66,7 @@ https://anymarket.com.br
 ### Open Source
 
 - [Dolibarr](https://github.com/Dolibarr/dolibarr)
-- [ERPNext](/erpnext.md)
+- [ERPNext](/erpnext/README.md)
 - [Odoo](https://github.com/odoo/odoo)
 
 <!--

@@ -49,6 +49,9 @@ rustup help
 ```sh
 #
 rustup install stable # nightly
+
+#
+rustup update stable
 ```
 
 <!--

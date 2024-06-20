@@ -1,6 +1,12 @@
 # MedusaJS
 
 <!--
+Medusa as a Service
+
+https://oak.dk/medusa-js-commerce
+-->
+
+<!--
 https://github.com/Agilo/medusawp
 
 https://github.com/bidah/universal-medusa

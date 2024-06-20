@@ -1,6 +1,10 @@
 # Urchin Tracking Module (UTM) parameters
 
 <!--
+?utm_source=whatsapp-blip&utm_medium=organico&utm_campaign=petdelicia&utm_content=valuation-petdelicia-20240529
+-->
+
+<!--
 https://linkedin.com/learning/marketing-tips-2/welcome-back
 
 https://www.terminusapp.com/blog/utm-parameters-best-practices/

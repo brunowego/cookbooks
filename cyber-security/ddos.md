@@ -4,6 +4,10 @@
 
 - Web Application Firewall (WAF)
 
+## Terms
+
+- DDoS Mitigation
+
 ## Mitigation Tools
 
 - [Cloudflare](/cloudflare/README.md)

@@ -4,6 +4,10 @@
 🌟
 -->
 
+<!--
+https://github.com/googlefonts/noto-emoji
+-->
+
 ## Tools
 
 - [EmojiDB](https://emojidb.org) 🌟

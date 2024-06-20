@@ -17,3 +17,7 @@ cargo install cargo-watch
 #
 cargo watch -x run
 ```
+
+<!--
+cargo watch -cqw ./src -x run
+-->

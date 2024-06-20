@@ -10,3 +10,7 @@ CHANGELOG.md
 
 https://github.com/olivierlacan/keep-a-changelog
 -->
+
+## Tools
+
+- [git-cliff](/git-cliff.md)

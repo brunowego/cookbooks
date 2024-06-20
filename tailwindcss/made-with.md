@@ -62,6 +62,9 @@ https://tailwindcollections-organic.netlify.app
 
 Header
 
+https://contra.com
+https://oneleet.com
+
 https://fiction.com
 https://tailwindcollections-grid-landingpage.netlify.app
 https://tailwindcollections-gallery-page.netlify.app
@@ -132,6 +135,10 @@ https://wp.alithemes.com/html/frox/demos/chat-page-1.html
 https://wp.alithemes.com/html/frox/demos/chat-page-3.html
 https://square-eta.vercel.app/chat
 
+FAQ
+
+https://rocketseat.com.br/oferta/fullstack
+
 Dark/Light Transition
 
 https://github.com/milhamm/aang.dev
@@ -189,8 +196,19 @@ Store
 
 https://nike-app-git-main-armans-projects-c9523aa4.vercel.app/
 
+Kyc
+
+https://my.ka.app
+
+POS
+
+https://pedido.anota.ai
+
 Profile
 
+https://bento.me/brunowego
+
+https://codedamn-frontend-assignment-rho.vercel.app/profile
 https://drawsql.app/user/profile
 https://roadmap.sh/u/brunowego
 https://layers.to/louisnguyen
@@ -210,13 +228,18 @@ https://escavador.com/nomes/francisco-carvalho-rodrigues-6221b0ac69
 https://himalayas.app/companies/coinbase
 https://toolfinder.co/tools/evernote
 
+Connect
+
+https://nstfkc.com/connect-modal
+
 Address
 
 https://mercadolivre.com.br/addresses/v2/address?app=MY_ML&addressId=1305296149
 
-Email Verification
+Email Verification / Email Confirmation
 
 https://app.cometchat.com/verification-email-sent?email=brunowego@gmail.com
+https://nstfkc.com/email-confirm
 
 Magic Link
 
@@ -224,12 +247,20 @@ https://opencollective.com/signin/sent?email=me%40brunowego.com
 
 Login / Sign up
 
+https://calendly.com/login
+https://my.mollie.com/dashboard/signup
+https://sso.botpress.cloud/registration
+https://cobrefacil.com.br/cadastrar
+https://bento.me/signup?ref=techcrunch
+https://my.ka.app/signup
 https://flexify.framer.website/Sign-up
 https://ev.braip.com/register
 https://admin.brizy.io/signup
 https://feyapp.com/signup
 https://reviews.io/signup/basic?signup_email=true
 
+https://buymeacoffee.com/signup
+https://buymeacoffee.com/login
 https://app.allo.restaurant/login
 https://console.datum.net/login
 https://tape.xyz/login?signup=true
@@ -258,6 +289,10 @@ https://metafy.gg/auth/account/create
 https://app.logsnag.com/auth/sign-in
 https://cloud.tailwarden.com/sign-in
 https://auth.planetscale.com/sign-in
+
+Home Sale
+
+https://trulia.com/GA/Atlanta
 
 Pagination
 
@@ -291,11 +326,16 @@ https://githr.vercel.app/app/integrations
 https://app.frigade.com/integrations
 https://app.netbird.io/integrations
 
+Invest
+
+https://eqseed.com/investir/petdelicia
+
 Pricing
 
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://side.domains
 https://pixeleye.io/pricing
 https://umami.is/pricing
 https://eboto.app
@@ -456,15 +496,25 @@ Subscription
 https://imagine.art/dashboard/subscription
 https://newsletter.quivr.app/subscribe/a20f5eaf-9071-4647-93cb-74f5e771e3e1/manage?post_id=aab8821e-81ed-4554-abbe-f040bb424f0d
 
+Store
+
+https://loja.infinitepay.io/henkiz
+
+Referral
+
+https://app.infinitepay.io/missions/referral
+
 Teams
 
 https://drawsql.app/teams/create
 
 Onboarding
 
+https://my.ka.app/signup/info
 https://flowbite.com/blocks/marketing/user-onboarding/
 https://componentland.com/component/onboarding-page-2
 
+https://buy.infinitepay.io/gestao-cobranca/celular
 https://brandfetch.com/onboarding
 https://drawsql.app/first-team/create
 https://console.neon.tech/app/welcome
@@ -527,6 +577,10 @@ https://andromeda-astro.vercel.app/blog
 https://spydea-nextjs.vercel.app/blog
 https://humanloop.com/blog
 
+Infoproduct
+
+https://whop.com/ariwixy/
+
 Post
 
 https://doppler.com/blog/humans-are-the-weakest-link-in-cybersecurity
@@ -545,6 +599,11 @@ Team
 https://zapal.tech
 
 Footer
+
+https://mollie.com
+https://botpress.com
+https://oneleet.com
+https://tangem.com/en
 
 https://fiction.com
 https://zapal.tech

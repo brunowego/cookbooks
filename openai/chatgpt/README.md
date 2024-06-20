@@ -31,6 +31,14 @@ Our systems are a bit busy at the moment, please take a break and try again soon
 
 Try use a VPN, with US location, to access the website.
 
+## App
+
+### Insrtallation
+
+```sh
+brew install --cask chatgpt
+```
+
 ## CLI
 
 ### Installation

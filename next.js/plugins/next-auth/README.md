@@ -1,6 +1,11 @@
 # NextAuth.js
 
 <!--
+Auth for subdomains
+https://vercel.com/templates/next.js/subdomains-auth
+-->
+
+<!--
 https://github.com/Rocketseat/nivo.video/blob/main/packages/auth/package.json
 -->
 
@@ -146,6 +151,14 @@ TODO
 ```log
 [auth][error] JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror
 [auth][cause]: Error: The edge runtime does not support Node.js 'net' module.
+```
+
+TODO
+
+#### TBD
+
+```log
+[auth][error] MissingAdapter: Database session requires an adapter.. Read more at https://errors.authjs.dev#missingadapter
 ```
 
 TODO

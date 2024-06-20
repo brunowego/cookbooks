@@ -1,6 +1,6 @@
 # Hurl
 
-**Keywords:** HTTP requests
+**Keywords:** HTTP Requests
 
 ## Links
 

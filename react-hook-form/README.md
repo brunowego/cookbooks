@@ -11,6 +11,16 @@ https://github.com/documenso/documenso/blob/main/apps/web/src/components/forms/p
 - [Code Repository](https://github.com/react-hook-form/react-hook-form)
 - [Main Website](https://react-hook-form.com)
 - [Form Builder](https://react-hook-form.com/form-builder)
+- [Docs](https://react-hook-form.com/docs)
+  [useForm](https://react-hook-form.com/docs/useform) (shadcn/ui)
+
+<!--
+useController
+useFormContext
+useWatch
+useFormState
+useFieldArray
+-->
 
 ## Learning
 

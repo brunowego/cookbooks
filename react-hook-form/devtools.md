@@ -43,6 +43,16 @@ export default () => {
 ### TBD
 
 ```log
+Warning: Cannot update a component (`DevTool`) while rendering a different component (`Controller`). To locate the bad setState() call inside `Controller`, follow the stack trace as described in https://reactjs.org/link/setstate-in-render
+```
+
+<!-- disable @hookform/devtools -->
+
+TODO
+
+### TBD
+
+```log
 Warning: Text content did not match. Server: "[+] EXPAND" Client: "[-] COLLAPSE"
 ```
 

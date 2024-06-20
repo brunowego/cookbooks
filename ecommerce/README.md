@@ -6,6 +6,10 @@ https://github.com/openshiporg/openfront
 https://redq.io/landings/pickbazar
 -->
 
+<!--
+Merchant ID
+-->
+
 ## Terms
 
 - Dropshipping

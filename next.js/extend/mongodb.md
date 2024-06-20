@@ -1,6 +1,10 @@
 # Extend with MongoDB
 
 <!--
+https://blog.stackademic.com/a-guide-to-build-an-api-server-with-nextjs-14-and-mongoose-e01f0e10a68a
+-->
+
+<!--
 https://github.com/juliaxyz/next-lucia-mongoose
 https://github.com/milankatira/newzletter
 https://github.com/Mriganka5137/lucia-mongoose

@@ -5,8 +5,11 @@
 - [Landing Page Checklist](https://landingpage.fyi/landing-page-checklist)
 
 <!--
+https://instapage.com
+https://leadpages.com
 https://greatpages.com.br
-
+https://swipepages.com
+https://unbounce.com
 https://earlybee.io
 
 https://midday.ai/en

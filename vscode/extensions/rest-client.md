@@ -4,6 +4,8 @@
 https://github.com/gabrielaigner/audally/blob/main/backend-api/rest-requests/requests.http
 -->
 
+**Keywords:** HTTP Requests
+
 ## Links
 
 - [Code Repository](https://github.com/Huachao/vscode-restclient)

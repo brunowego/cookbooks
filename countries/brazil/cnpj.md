@@ -14,12 +14,15 @@ Company Registration Number (CRN)
 Individual Taxpayer Identification Number (ITIN)
 Central Index Key (CIK)
 Standard Industrial Classification (SIC)
+Unique Entity Number (UEN) - Singapore
 -->
 
 <!--
 EIN number (Taxpayer Identification Number)
 
 9-digit EIN numer
+
+00.000.000/0000-00
 
 EIN/TAX ID : 770493581 : GOOGLE LLC
 

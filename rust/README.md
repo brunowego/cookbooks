@@ -4,6 +4,32 @@
 Ferris mascot
 -->
 
+<!--
+https://github.com/bitswired/rustgpt/blob/main/justfile
+-->
+
+<!--
+Rust + Next.js
+
+https://github.com/FrancescoXX/fullstack-rust-nextjs
+https://github.com/adamlh/habitus
+https://github.com/danilhendrasr/dializer/tree/main
+https://github.com/takaya-ishiyama/CustomStorage
+https://github.com/ddanielsantos/rust-commerce
+https://github.com/ColaYe1984/ryot/tree/main
+
+Rust + Remix
+
+https://github.com/takaya-ishiyama/bookRecommend
+
+Rust + Vite
+
+https://github.com/samueldurantes/chesu
+https://github.com/mikotoIO/mikoto
+https://github.com/lourw/schedulii
+https://github.com/iAverages/sei
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/rust-lang/rust)
@@ -13,9 +39,11 @@ Ferris mascot
 - Rust Package Registry
   - [crates.io](https://crates.io)
 
-## Learning
+## Learn
 
 - [Are we web yet?](https://arewewebyet.org)
+- [Next.js and Rust | An Innovative Approach to Full-Stack Development](https://shuttle.rs/blog/2023/03/23/nextjs-and-rust)
+- [Clean and Scalable Architecture for Web Applications in Rust](https://kerkour.com/rust-web-application-clean-architecture)
 
 ## Glossary
 
@@ -70,7 +98,7 @@ rustc --help
 
 ```sh
 # Version
-rustc --version | head -1
+rustc --version
 ```
 
 ### Tips

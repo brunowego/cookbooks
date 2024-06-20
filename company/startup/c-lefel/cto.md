@@ -2,9 +2,10 @@
 
 The CTO's job is to utilize techology to better their company.
 
-## Terms
+## Glossary
 
 - CTO-as-a-Service (CTOaaS)
+- Chief Product & Technology Officer (CPTO)
 
 ## Objectives
 

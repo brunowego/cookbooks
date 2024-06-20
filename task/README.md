@@ -8,6 +8,8 @@ https://github.com/networkpanic/homecluster/blob/main/Taskfile.yml
 https://github.com/hadenlabs/zsh-devops/blob/develop/Taskfile.yml
 -->
 
+**Keywords:** Task Runner
+
 ## Links
 
 - [Code Repository](https://github.com/go-task/task)

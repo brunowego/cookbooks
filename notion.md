@@ -1,6 +1,12 @@
 # Notion
 
 <!--
+Templates
+
+https://bento.me/ocaradonotion
+-->
+
+<!--
 https://helpkit.so
 
 Weekly Schedule

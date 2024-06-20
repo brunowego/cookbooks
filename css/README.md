@@ -74,20 +74,3 @@ https://www.treinaweb.com.br/blog/flexbox-ou-css-grid/
 https://imasters.com.br/css/adeus-flexbox-bem-vindo-css-grid-layout
 
 -->
-
-## References
-
-### Font Weight
-
-| Weight | Name        |
-| ------ | ----------- |
-| 100    | Thin        |
-| 200    | Extra Light |
-| 300    | Light       |
-| 400    | Regular     |
-| 450    | Book        |
-| 500    | Medium      |
-| 600    | Semi-bold   |
-| 700    | Bold        |
-| 800    | Black       |
-| 900    | Extra       |

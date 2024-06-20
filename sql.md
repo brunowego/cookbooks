@@ -39,6 +39,7 @@ jq '."recommendations" += ["adpyke.vscode-sql-formatter"]' "$PWD"/.vscode/extens
 cat << EOF > ./.editorconfig
 [*.sql]
 indent_size = 4
+indent_style = tab
 max_line_length = 100
 
 EOF

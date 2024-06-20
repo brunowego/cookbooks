@@ -1,6 +1,8 @@
 # Extend with Stripe
 
 <!--
+https://github.com/aliimam-in/aliimam/blob/main/apps/web/src/lib/stripe.ts
+
 https://vercel.com/templates/next.js/subscription-starter
 
 https://github.com/webprodigies/fuzzie-production/blob/main/src/app/api/payment/route.ts

@@ -1,6 +1,10 @@
 # Amazon Web Services (AWS)
 
 <!--
+https://github.com/infrascan/infrascan
+-->
+
+<!--
 https://app.pluralsight.com/roleiq/roles/7650da31-d0c8-44a5-997f-5904774ff72c
 
 https://youtube.com/watch?v=xCc9xk8LPTo

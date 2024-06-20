@@ -1,5 +1,9 @@
 # Identification (ID)
 
+<!--
+Use ChatGPT to identify the type of ID.
+-->
+
 ## Types
 
 - [Collision-Resistant IDs (CUID)](/cuid.md)
