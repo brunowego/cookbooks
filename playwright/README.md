@@ -8,7 +8,7 @@ https://chromewebstore.google.com/detail/playwright-crx/jambeljnbnfbkcpnoiaedcab
 https://github.com/trpc/examples-next-prisma-starter/blob/main/playwright/smoke.test.ts
 -->
 
-**Keywords:** E2E Testing, UI Testing
+**Keywords:** UI Testing, E2E Testing
 
 ## Links
 

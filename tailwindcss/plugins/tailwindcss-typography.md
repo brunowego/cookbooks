@@ -12,29 +12,29 @@
 
 ```sh
 # Using NPM
-npm install @tailwindcss/typography --save-dev
+npm install @tailwindcss/typography
+
+# Using pnpm
+pnpm add @tailwindcss/typography
 
 # Using Yarn
-yarn add @tailwindcss/typography --dev
+yarn add @tailwindcss/typography
 
 # Using Bun
-bun add @tailwindcss/typography -D
+bun add @tailwindcss/typography
 ```
 
 ## Configuration
 
-**Refer:** `./tailwind.config.cjs`
+**Refer:** `./tailwind.config.ts`
 
-```cjs
-/**
- * @type { import('tailwindcss').Config }
- */
-const tailwindConfig = {
+```ts
+import typographyPlugin from '@tailwindcss/typography'
+
+export default {
   // ...
-  plugins: [require('@tailwindcss/typography')],
-}
-
-module.exports = tailwindConfig
+  plugins: [typographyPlugin],
+} satisfies Config
 ```
 
 <!--

@@ -12,10 +12,6 @@
 
 ## Tools
 
-<!--
-https://jsondataai.com
--->
-
 ### Managed
 
 TODO
@@ -32,6 +28,7 @@ https://mockbin.io
 
 ### Open Source
 
+- [Keploy](https://github.com/keploy/keploy)
 - [Microcks](/microcks.md)
 - [Mock Service Worker (MSW)](/msw.md) 🌟
 - [Mockoon](/mockoon.md) 🌟
@@ -39,10 +36,7 @@ https://mockbin.io
 - [Prism](/prism.md) 🌟
 - [WireMock](/wiremock.md)
 
-<!--
-https://github.com/keploy/keploy
--->
+### Fake Data
 
-#### Fake REST API
-
+- [JSON Data AI](https://jsondataai.com) (AI-generated)
 - [JSON Server](/json-server.md)

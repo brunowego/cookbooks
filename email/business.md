@@ -8,9 +8,10 @@
 
 <!--
 https://improvmx.com
+
 https://namecheap.com/hosting/email
 https://hostgator.com.br/email-profissiona
-https://hostinger.com.br/email-profissional
+https://hostinger.com.br/email-profissional | https://hpanel.hostinger.com/emails
 https://locaweb.com.br/email-profissional-b
 https://godaddy.com/email/email-profissional
 https://dreamhost.com/products/email

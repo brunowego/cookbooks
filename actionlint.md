@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/rhysd/actionlint)
-- [Main Website](https://rhysd.github.io/actionlint/)
+- [Main Website](https://rhysd.github.io/actionlint)
 
 ## CLI
 

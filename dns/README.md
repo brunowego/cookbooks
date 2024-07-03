@@ -1,26 +1,18 @@
 # Domain Name System (DNS) (a.k.a Domain Name Service or Domain Name Server)
 
-<!--
-https://www.dnsperf.com/
-https://public-dns.info/
--->
-
 ## Links
 
 - [DNS in One Picture](https://roadmap.sh/guides/dns-in-one-picture)
+
+## Glossary
+
+- Internet Service Provider (ISP)
+- Time to Live (TTL)
 
 ## Tools
 
 - [Google Public DNS](https://dns.google)
 - [localhost](/localhost.md#tools)
-- [Zoho Toolkit](https://zoho.com/toolkit)
-
-### Propagation Check
-
-- [DNS Check and DNS Report Tools - Comprehensive DNS Tests - MxToolBox](https://mxtoolbox.com/dnscheck.aspx)
-- [DNS Checker - DNS Check Propagation Tool](https://dnschecker.org/)
-- [DNS Checker — DNS Check Tool](https://nslookup.io/dns-checker/) 🌟
-- [DNS Propagation Checker - Global DNS Testing Tool](https://whatsmydns.net/)
 
 ## Best Free & Public DNS Servers
 

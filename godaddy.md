@@ -17,6 +17,7 @@ https://sso.godaddy.com/access?hbi_code=1
 
 ### Dependencies
 
+- [pass](/pass.md)
 - [Lexicon](/lexicon/README.md)
 
 ### Store API Key
@@ -29,6 +30,9 @@ https://sso.godaddy.com/access?hbi_code=1
    - Next
 
 ```sh
+#
+pass -c godaddy.com
+
 #
 pass insert godaddy.com/api/key
 pass insert godaddy.com/api/secret

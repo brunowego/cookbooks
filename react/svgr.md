@@ -11,4 +11,19 @@ https://github.com/kaanakdeniz/twitter-clone-nextjs
 
 ## Docs
 
-- [Next.js](https://react-svgr.com/docs/next/)
+- [Next.js](https://react-svgr.com/docs/next)
+
+## CLI
+
+### Commands
+
+```sh
+npx @svgr/cli -h
+```
+
+### Usage
+
+```sh
+#
+npx @svgr/cli --typescript --out-dir ./src/icons -- ./src/assets/images/icons
+```

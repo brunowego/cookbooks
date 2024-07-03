@@ -6,7 +6,8 @@
 #
 npm login \
   --registry=https://npm.pkg.github.com \
-  --scope=@<owner>
+  --scope=@<owner> \
+  --auth-type legacy
 
 #
 npm publish

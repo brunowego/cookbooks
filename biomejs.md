@@ -16,13 +16,16 @@ https://github.com/HazelHook/Hazel/blob/main/biome.json
 ```sh
 # Using Bun
 bun add @biomejs/biome -D
+
+# Using pnpm
+pnpm add @biomejs/biome -D
 ```
 
 ### Configuration
 
 <!--
-    "lint": "biome check .",
-    "lint:fix": "biome check . --apply",
+"lint": "biome check .",
+"lint:fix": "biome check . --apply",
 -->
 
 **Refer:** `./biome.json`

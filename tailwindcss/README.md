@@ -69,6 +69,7 @@ https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atai
 - [Tailblocks](https://tailblocks.cc) <!-- https://github.com/mertJF/tailblocks -->
 
 <!--
+https://mynaui.com
 https://componentland.com
 https://pagedone.io/blocks
 -->
@@ -79,9 +80,11 @@ https://pagedone.io/blocks
 
 ## Tools
 
+- [Super Color Palette](https://supercolorpalette.com)
 - [TailwindMate](https://tailwindmate.jaleelbennett.com) 🌟
 - [Tailwind Gradient Generator](https://tailwind-gradient-generator.vercel.app)
 - Converter
+  - [Loopple / CSS to Tailwind Converter](https://loopple.com/tools/css-to-tailwind-converter)
   - [Lembdadev / CSS to TailwindCSS Converter](https://lembdadev.com/css-to-tailwind-converter)
   - [Transform / CSS to TailwindCSS](https://transform.tools/css-to-tailwind)
   - [TailwindCSS Converter / Convert Css To Tailwind](https://tailwind-converter.netlify.app)

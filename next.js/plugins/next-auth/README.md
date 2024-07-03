@@ -13,6 +13,11 @@ https://github.com/Rocketseat/nivo.video/blob/main/packages/auth/package.json
 hashed_password: $2a$12$GITVPHJe/jAReisR0xTwsOKW5kY8mOE7/FDWm9KkgbdDpWNmh1eny | password: Pa$$w0rd!
 -->
 
+## Links
+
+- Docs
+  - [Observability](https://authjs.dev/getting-started/deployment#observability)
+
 ## Learn
 
 - [Installing Auth.js](https://authjs.dev/getting-started/installation?framework=next.js)
@@ -61,6 +66,12 @@ export default function NextAuthProvider({
 ``` -->
 
 ### Issues
+
+#### TBD
+
+```log
+Error: [next-auth]: `useSession` must be wrapped in a <SessionProvider />
+```
 
 #### TBD
 

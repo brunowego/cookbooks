@@ -53,8 +53,8 @@ gtime --help
 
 ```sh
 # Homebrew
-gtime -v [command]
+gtime -v <command>
 
 # Linux
-time [command]
+time <command>
 ```

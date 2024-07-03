@@ -1,10 +1,5 @@
 # Alternatives
 
-<!--
-https://crisp.chat/en/
-https://intercom.com/
--->
-
 ## Links
 
 - [Awesome Open-Source Alternatives to SaaS](https://github.com/RunaCapital/awesome-oss-alternatives)

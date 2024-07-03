@@ -18,6 +18,7 @@ https://javainuse.com/jwtgenerator
 - Javascript Object Signing and Encryption (JOSE)
 - JSON Web Encryption (JWE)
 - JSON Web Signature (JWS)
+- JWT ID (jti)
 
 ## Learn
 

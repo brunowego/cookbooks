@@ -21,7 +21,7 @@ https://linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 ## References
 
 - [Country Codes](https://countrycode.org/)
-- [Preload, prefetch and other <link> tags](https://3perf.com/blog/link-rels)
+- [Preload, prefetch and other \<link\> tags](https://3perf.com/blog/link-rels)
 
 ## Tools
 
@@ -31,7 +31,8 @@ https://linkedin.com/learning/crafting-meaningful-html/craft-meaningful-html
 - [HTML Codes Table](https://ascii.cl/htmlcodes.htm)
 - [HTML Entities Encoder / Decoder](https://web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder)
 - [HTML Formatter](https://webformatter.com/html)
-- [Modern HTML Starter Template](https://htmltemplate.site/)
+- [HTML Online Viewer](https://html.onlineviewer.net)
+- [Modern HTML Starter Template](https://htmltemplate.site) 🌟
 
 ### HTML Entities Encoder/Decoder
 

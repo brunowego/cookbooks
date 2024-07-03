@@ -14,3 +14,7 @@ https://github.com/olivierlacan/keep-a-changelog
 ## Tools
 
 - [git-cliff](/git-cliff.md)
+
+<!--
+https://changelogfy.com
+-->

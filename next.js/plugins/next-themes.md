@@ -43,3 +43,7 @@ Warning: Extra attributes from the server: class,style
 ```
 
 TODO
+
+<!--
+<html suppressHydrationWarning />
+-->

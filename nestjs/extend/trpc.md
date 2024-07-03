@@ -11,6 +11,11 @@ https://github.com/pyeonne/pyeonne.dev
 https://github.com/armamini/octo
 https://github.com/wenerme/wode
 https://github.com/morshedulmunna/support-ticket-Server
+
+# Organization Switcher
+
+https://github.com/Zipper-Inc/zipper-functions/blob/main/apps/zipper.dev/src/hooks/use-organization-list.ts
+https://github.com/Zipper-Inc/zipper-functions/blob/main/apps/zipper.dev/src/components/auth/organizationSwitcher.tsx
 -->
 
 TODO

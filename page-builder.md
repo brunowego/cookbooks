@@ -14,6 +14,7 @@ https://www.youtube.com/watch?v=QGXUUXy0AMw
 ## Libraries
 
 <!--
+https://typedream.com
 https://prismic.io
 https://uigenerator.org
 https://mitosis.builder.io
@@ -72,5 +73,6 @@ https://loopple.com/builder/project-RM1HspwqVabauHHZQKImGrRMgY2xgWUgnvy
 <!--
 Design
 
+https://devdojo.com/tails/app
 https://github.com/tailwindcollections/website-builder | https://tailwindcollections-website-builder.netlify.app
 -->

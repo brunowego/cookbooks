@@ -1,4 +1,4 @@
-# GNU Privacy Guard (GnuPG / GPG) or GNU Pretty Good Privacy (PGP)
+# GNU Privacy Guard (GnuPG / GPG) or GNU Pretty Good Privacy (PGP) (gpg2)
 
 <!--
 https://github.com/miccal/personal-files/blob/master/README.md#pass
@@ -47,7 +47,15 @@ gpg -h
 #
 gpg --list-keys
 gpg --list-secret-keys
+
+#
+gpg --version
 ```
+
+<!--
+gpg --export-secret-keys > ./keyfile
+gpg --import ./keyfile
+-->
 
 ### Tips
 
@@ -115,3 +123,26 @@ Password encryption aborted.
 ```
 
 TODO
+
+<!-- ```sh
+rm -fR ~/.gnupg
+
+# start again
+``` -->
+
+<!-- ```sh
+gpg --list-keys
+gpg --edit-key <key>
+``` -->
+
+<!--
+trust
+5
+save
+-->
+
+<!-- ```sh
+cat ~/.password-store/.gpg-id
+
+pass -c <path/to/key>
+``` -->

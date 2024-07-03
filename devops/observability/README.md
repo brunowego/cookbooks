@@ -54,6 +54,9 @@
 - [Axiom](https://axiom.co)
 - [Datadog](/datadog.md)
 - [Dynatrace](/dynatrace.md)
+- [Highlight](https://highlight.io)
+- [HyperDX](https://hyperdx.io)
+- [Middleware](https://middleware.io)
 - [New Relic](/newrelic/README.md)
 - [Splunk](/splunk.md)
 

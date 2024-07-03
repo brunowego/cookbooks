@@ -16,6 +16,8 @@ https://app.pluralsight.com/library/courses/rest-fundamental/table-of-contents
 https://www.youtube.com/watch?v=_1xa8Bsho6A
 -->
 
+![REST API Design](/assets/images/api/rest-api-design.jpeg)
+
 ## Alternatives
 
 - [GraphQL](/graphql/README.md)

@@ -11,6 +11,7 @@ https://en.ryte.com/free-tools/robots-txt/?refresh=1&url=https%3A%2F%2Fhml.us.de
 - [Ryte / Robots.txt Test Tool](https://en.ryte.com/free-tools/robots-txt)
 
 <!--
+https://toolsaday.com/seo/noindex-checker
 https://technicalseo.com/tools/robots-txt/
 -->
 

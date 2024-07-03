@@ -15,4 +15,17 @@ npm install http-status-codes
 
 # Using Yarn
 yarn add http-status-codes
+
+# Usong pnpm
+pnpm add http-status-codes
+```
+
+### Snippet (Next.js)
+
+```ts
+import { StatusCodes } from 'http-status-codes'
+
+return new NextResponse('Unauthorized', {
+  status: StatusCodes.UNAUTHORIZED,
+})
 ```

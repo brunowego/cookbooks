@@ -9,6 +9,7 @@ https://tints.dev/green/0E1311 (900)
 <!--
 rgba hex
 
+https://brandcolors.org
 https://webkul.github.io/coolhue/
 https://boringavatars.com/
 https://pigment.shapefactory.co/
@@ -56,8 +57,9 @@ https://tailwindshades.com/
 - [Tailwind Shades](https://tailwindshades.com) 🌟
 
 <!--
+https://json-color-palette.netlify.app 🌟
 https://tailcolor.com
-https://uicolors.app
+https://uicolors.app 🌟
 -->
 
 ### Lighten & Darken
@@ -68,7 +70,7 @@ https://uicolors.app
 
 - [COLORS.tools / Tints & Shades](https://colors.tools/tints-and-shades)
 - [Noel Delgado / Shadowlord & Tints and Shades Generator Tool](https://noeldelgado.github.io/shadowlord) 🌟
-- [Shade Generator](https://shadegenerator.com)
+- [Shade Generator](https://shadegenerator.com) 🌟
 
 <!--
 https://maketintsandshades.com

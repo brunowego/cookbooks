@@ -124,7 +124,7 @@ module.exports = eslintRC
 
 ```json
 {
-  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
   // ...
   "files": {
     "ignore": ["public/mockServiceWorker.js"]

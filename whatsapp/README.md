@@ -1,6 +1,7 @@
 # WhatsApp
 
 <!--
+https://github.com/sarthakjdev/wapi.js
 https://github.com/EvolutionAPI/evolution-api
 
 https://wa.me/<number>

@@ -30,6 +30,6 @@ https://blog.track.co/o-que-e-customer-effort-score
 - Customer Effort Score (CES)
 - Product Market Fit (PMF)
 
-## Term
+## Glossary
 
 - Voice of the Customer (VoC)

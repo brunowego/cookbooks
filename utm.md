@@ -18,4 +18,22 @@ https://www.cockroachlabs.com/?utm_source=carbon&utm_medium=sponsor&utm_campaign
 ?ref=f918bef0ad305bf3996d7c2c49fec7ef&utm_source=plataforma&utm_campaign=MGM&utm_source=plataforma
 -->
 
-TODO
+## Terms
+
+- UTM Builder
+
+<!--
+https://zutrix.com/analytics-url-builder
+https://utmbuilder.net
+https://utmbuilder.com
+https://livechat.com/utm-builder
+https://web.utm.io/utm-builder-code-generator
+https://tilda.cc/utm
+https://usefathom.com/utm-builder
+https://utmtagbuilder.com
+-->
+
+<!--
+https://github.com/Swetrix/utm | url.swetrix.com
+https://github.com/sj0110/UTM-Tracker-URL-Builder | utm-tracker-url-builder.vercel.app
+-->

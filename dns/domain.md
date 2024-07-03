@@ -1,5 +1,9 @@
 # Domain
 
+<!--
+https://gist.github.com/brunowego/21ec27979a36ca4830296b729aa1b9ba
+-->
+
 ## Glossary
 
 - Domain Name (DN)
@@ -7,11 +11,6 @@
 ## Terms
 
 - Apex Domain
-
-## Tools
-
-- [Domain Information Groper (dig)](/dig.md)
-- [Whois](/whois.md)
 
 ## TLD
 

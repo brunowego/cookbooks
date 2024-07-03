@@ -33,8 +33,9 @@ dig -h
 #
 export DOMAIN='xyz.tld'
 
-#
+# A Record
 dig "$DOMAIN" +short
+dig "$DOMAIN" +short A
 
 #
 dig "$DOMAIN" +short NS
@@ -53,7 +54,4 @@ dig "$DOMAIN" +short MX
 
 #
 dig "$DOMAIN" +short -t txt
-
-#
-dig "$DOMAIN" +short A
 ```

@@ -27,8 +27,21 @@ TODO
 <!--
 https://botconversa.com.br
 https://manychat.com
+https://respondi.app
+
+ChatBot
+ManyChat
+Collect.chat
+Typeform
 -->
 
 ### Open Source
 
 - [Typebot](/typebot/README.md)
+
+<!--
+https://github.com/openchatai/OpenChat
+https://github.com/botpress/botpress
+https://chatbotui.com
+https://github.com/leon-ai/leon
+-->

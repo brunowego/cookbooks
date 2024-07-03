@@ -50,7 +50,10 @@ man pass
 
 ```sh
 #
-pass init "$(gpg -k | tail -n 4 | head -n 1 | sed 's/ //g')"
+gpg --list-keys
+
+#
+pass init <gpg-id>
 
 #
 ls ~/.password-store
@@ -71,23 +74,19 @@ pass show <path/to/key>
 pass show godaddy.com/api/key
 
 #
+pass edit <path/to/key>
+
+#
 pass rm <path/to/key>
 ```
 
 <!--
-pass generate github.com/ibihim/repository n
-
+pass generate github.com/ibihim/repository 20
 pass grep
-
 pass find
-
 pass edit
-
 pass generate
-
 pass mv
-
 pass cp
-
 pass git
 -->

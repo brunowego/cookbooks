@@ -43,6 +43,8 @@ https://linkedin.com/learning/aws-high-availability/aws-and-high-availability
 Transactions Per Second (TPS)
 -->
 
+![AWS Network Architecture](/assets/images/aws/aws-network-architecture.gif)
+
 ## Console
 
 - [Globally](https://console.aws.amazon.com)

@@ -48,11 +48,19 @@ https://github.com/Schniz/fnm
 ### Running
 
 ```sh
+# Debian 12 (bookworm)
 docker run -it --rm \
   $(echo "$DOCKER_RUN_OPTS") \
   -h node \
   --name node \
-  docker.io/library/node:13.5.0-alpine /bin/sh
+  docker.io/library/node:20.14.0 /bin/bash
+
+# Alpine
+docker run -it --rm \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h node \
+  --name node \
+  docker.io/library/node:20.14.0-alpine /bin/sh
 ```
 
 ## Dockerfile

@@ -19,7 +19,7 @@ man time
 type -a time
 
 #
-time -v [command]
+time -v <command>
 
 # Output Runtime Seconds
 time ls

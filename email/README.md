@@ -1,5 +1,9 @@
 # Email
 
+## Relative
+
+- [Email Forwarding](/email/forwarding.md)
+
 ## Tools
 
 - [YOPmail](https://yopmail.com)

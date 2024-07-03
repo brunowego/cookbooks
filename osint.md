@@ -19,7 +19,14 @@ https://defastra.com/
 ## Frameworks
 
 - [OSINT Framework](https://osintframework.com)
-- [Malfrat's OSINT Map](https://map.malfrats.industries/)
+- [Malfrat's OSINT Map](https://map.malfrats.industries)
+
+<!--
+https://github.com/s0md3v/Silver
+https://github.com/wssheldon/osintui
+https://github.com/Dheerajmadhukar/karma_v2
+https://github.com/KTZgraph/sarenka
+-->
 
 ## Glossary
 

@@ -9,14 +9,28 @@ Online Courses
 -->
 
 <!--
-https://scoreapps.com/blog/en/infoproducts/
--->
-
-<!--
 https://scoreapps.com
 -->
 
 ## Platforms
+
+<!--
+https://thinkific.com
+https://teachable.com
+https://sellfy.com
+https://podia.com
+https://stan.store
+https://sendowl.com
+https://payloadz.com
+https://memberpress.com
+https://payhip.com
+https://sellwire.net
+https://simplegoods.co
+https://e-junkie.com
+
+https://gumroad.com
+https://creativemarket.com
+-->
 
 - [Eduzz](https://eduzz.com)
 - [Green](https://greenn.com.br)
@@ -42,3 +56,30 @@ Info-produtor
 Afiliado
 Co-produtor
 -->
+
+## Learn
+
+- [Infoproducts: How to make a living from your knowledge creating and selling digital products](https://scoreapps.com/blog/en/infoproducts)
+
+<!--
+## Area Logada
+
+Compras / Assinaturas
+-->
+
+## Types
+
+- Best practice guides
+- Cheat sheets
+- Condensed notes / Summaries
+- Diagrams
+- Ebooks
+- Guided audio programs
+- Helpful software / Wizards (That teach)
+- Recorded interviews
+- Research papers
+- Screencasts
+- Self-guided courses
+- Videos
+- White papers
+- Workbooks

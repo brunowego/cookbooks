@@ -11,5 +11,6 @@ TODO
 ## Tools
 
 - [Instant Username](https://instantusername.com)
-- [Namecheckr](https://namecheckr.com) 🌟
+- [namae](https://namae.dev) 🌟 <!-- https://github.com/uetchy/namae -->
+- [Namecheckr](https://namecheckr.com)
 - [Namechk](https://namechk.com)

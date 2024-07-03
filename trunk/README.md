@@ -149,7 +149,7 @@ trunk config hide
 ```sh
 #
 trunk check -a
-trunk check -ayv
+trunk check -ay
 
 #
 trunk fmt

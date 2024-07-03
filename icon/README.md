@@ -31,10 +31,13 @@
 - [Feather](https://feathericons.com)
 - [Flaticon](https://flaticon.com) 🌟
 - [Hugeicons](https://hugeicons.com)
+- [Iconstica](https://iconstica.com)
 - [Simple Icons](https://simpleicons.org)
 - [Tabler Icons](https://tabler-icons.io)
 
 <!--
+https://phosphoricons.com | https://github.com/phosphor-icons/homepage
+https://heroicons.dev
 https://svgl.vercel.app
 
 https://github.com/stephenway/react-flagkit

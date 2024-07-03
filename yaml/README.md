@@ -66,13 +66,25 @@ projects:
 
 [_Documentation_](https://yaml.org/spec/1.2/spec.html#Block)
 
+**preserve_newlines:**
+
 ```yml
 ---
 literal: |
-  some
-  text
+  Line 1
+  Line 2
 
+# Line 1
+# Line 2
+```
+
+**fold_newlines:**
+
+```yaml
+---
 folded: >
-  some
-  text
+  Line 1
+  Line 2
+
+# Line 1 Line 2
 ```

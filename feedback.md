@@ -1,6 +1,14 @@
 # Feedback
 
 <!--
+dynafield
+fieldbyfield
+formbyform
+lessform
+headform
+-->
+
+<!--
 https://app.pluralsight.com/paths/skills/providing-quality-feedback
 
 https://app.pluralsight.com/library/courses/resolving-conflicts-with-feedback/table-of-contents
@@ -27,6 +35,8 @@ https://tally.so/feedback
 
 ### Managed
 
+- [Canny](https://canny.io)
+- [Featurebase](https://featurebase.app)
 - [Feedback Fish](https://feedback.fish)
 - [Frill](https://frill.co)
 - [GetFeedy](https://getfeedy.io)
@@ -35,17 +45,12 @@ https://tally.so/feedback
 - [Sleekplan](https://sleekplan.com)
 - [Upvoty](https://upvoty.com)
 
-<!--
-https://feedbase.app
-https://featurebase.app
-https://canny.io
--->
-
 ### Open Source
 
 TODO
 
 <!--
+https://github.com/chroxify/feedbase
 https://github.com/germla/germla
 https://github.com/dephraiim/userbase
 -->

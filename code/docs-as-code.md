@@ -43,6 +43,7 @@ Docs-as-code is an approach to writing and publishing documentation with the sam
 
 <!--
 https://nextra.site
+https://fumadocs.vercel.app
 -->
 
 ## Glossary

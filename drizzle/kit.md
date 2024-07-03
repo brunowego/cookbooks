@@ -24,9 +24,26 @@ drizzle-kit -h
 ```sh
 #
 drizzle-kit introspect:pg
+
+#
+drizzle-kit check
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+· You're about to add page_imports_page_id_unique unique constraint to the table, which contains 3 items. If this statement fails, you will receive an error from the database. Do you want to truncate page_imports table?
+
+error: relation "page_imports_page_id_unique" already exists
+```
+
+<!--
+https://www.answeroverflow.com/m/1195082897359642765
+-->
+
+TODO
 
 #### TBD
 

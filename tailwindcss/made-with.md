@@ -1,9 +1,5 @@
 # Made with TailwindCSS
 
-<!--
-https://github.com/search?q=path%3Aapps+path%3Apackage.json+content%3Atailwindcss&type=code
--->
-
 ## Portals
 
 - [Made with TailwindCSS](https://madewithtailwindcss.com)
@@ -19,31 +15,20 @@ https://github.com/search?q=path%3Aapps+path%3Apackage.json+content%3Atailwindcs
 - [buttons.ibelick](https://github.com/ibelick/buttons)
 
 <!--
-https://app.greenhouse.io/users/sign_in
-https://console.qovery.com/onboarding/project
-
-https://omise.co
-https://unikorns.agency
--->
-
-<!--
-https://ui8.net/ui8/products/brainwave-ai-ui-design-kit
-https://ui8.net/ui8/products/synapse-ai-ui-kit
--->
-
-<!--
 eCommerce
 
 https://mishmash.pt
 https://demo-ecomus-global.myshopify.com
 
-Feed
-
-https://threads-app-react.vercel.app
-
 Main Menu
 
+https://li.fi
+https://coda.io
+https://gleap.io
+https://reviews.io/front/pricingplans
+
 https://light.so/demo/overview
+https://tailwindcollections-gallery-page.netlify.app
 
 Empty State / Placeholder
 
@@ -52,30 +37,72 @@ https://tailwindui.com/components/application-ui/feedback/empty-states
 https://kopi.dev/tailwind/empty-state-components-collection-using-tailwind-ui/
 https://razorui.com/libraries/blade-application-ui/empty-states
 
+Feed / Social Network
+
+https://gatsby-medium.vercel.app
+https://kooapp.com/feed
+https://threads-app-react.vercel.app
+
+Background Animation
+
+https://simplegoods.co (morph)
+
+Sheet
+
+https://dribbble.com/shots/24297867-Zendenta-Detail-Account
+https://dribbble.com/shots/24250267-Zendenta-Reservation-Detail
+
+Customer Service
+
+https://lyssna.com
+
 Activity
 
 https://app.netbird.io/activity
 
-Hero
+CTA
 
+https://simplegoods.co
+
+Hero / Header
+
+https://li.fi
+https://mento.co
+https://buymeacoffee.com
+https://sellfy.com
+https://payloadz.com
 https://tailwindcollections-organic.netlify.app
-
-Header
-
 https://contra.com
+https://neverbeforeseen.co
 https://oneleet.com
 
-https://fiction.com
-https://tailwindcollections-grid-landingpage.netlify.app
-https://tailwindcollections-gallery-page.netlify.app
+https://shakuro.com
+https://contentful.com
+https://tofu.com
+https://featureflags.io
+https://organizze.com.br
+https://formance.com
+https://prismic.io
+https://pagedone.io
+https://mobbin.com
+https://lyssna.com
+https://simplegoods.co
+https://typedream.com
+https://devdojo.com
+https://tailwindcollections-grid-landingpage.netlify.app (used)
 
 Product
 
+https://curationist.org/works/work-met-242270
+https://chawkbazar.vercel.app/products/armani-veni-vidi-vici
 https://tailwindcollections-furniture-store.netlify.app
+
+Steps
+
+https://maxschmitt.me
 
 About
 
-https://fiction.com/about
 https://midday.ai/story
 https://oku-ui.com/oku
 https://timescale.com/about
@@ -96,8 +123,18 @@ Notifications
 https://productlane.com/settings/notifications
 https://whop.com/account/general
 
+https://app.midday.ai/settings/notifications
+https://app.bloghub.it/settings/notifications
+
+Notifications (Floating)
+
+https://app.midday.ai | https://github.com/midday-ai/midday
+https://app.bloghub.it
+https://widget-notification.vercel.app
+
 Changelog
 
+https://artillery.io/changelog
 https://feyapp.com/updates
 
 404 (Not Found)
@@ -122,6 +159,21 @@ Template Select
 https://aipage.dev/projects/4491/pages/5399
 https://vercel.com/templates/next.js/nextjs-boilerplate
 
+Scheduling
+
+https://ytsaurus.tech | https://github.com/ytsaurus/ytsaurus-ui
+
+Reviews
+
+https://tailwindui.com/components/ecommerce/components/reviews
+https://producthunt.com/products/tailwind-css/reviews
+https://material-tailwind.com/blocks/overview-sections
+
+https://social-reviews-section.vercel.app
+https://flowbite.com/blocks/e-commerce/product-review/
+https://tailwindflex.com/@akshay/user-review-card
+https://pagedone.io/blocks/e-commerce/product-review
+
 Chat
 
 https://chat-preview.lobehub.com/chat?agent=
@@ -135,8 +187,15 @@ https://wp.alithemes.com/html/frox/demos/chat-page-1.html
 https://wp.alithemes.com/html/frox/demos/chat-page-3.html
 https://square-eta.vercel.app/chat
 
+Meet our team
+
+https://coderthemes.com/opixo/home-saas.html
+
 FAQ
 
+https://shakuro.com
+https://coderthemes.com/opixo/home-saas.html
+https://artillery.io
 https://rocketseat.com.br/oferta/fullstack
 
 Dark/Light Transition
@@ -188,6 +247,8 @@ https://himalayas.app/jobs
 
 Stats
 
+https://keenthemes.com/metronic/tailwind/demo1/
+
 https://app.cometchat.com/app/2557845219771d1a/overview
 https://helicone.ai/dashboard
 https://projectx-eight-gilt.vercel.app/open
@@ -204,10 +265,17 @@ POS
 
 https://pedido.anota.ai
 
+Jobs
+
+https://hirewise.lexingtonthemes.com/
+
 Profile
 
 https://bento.me/brunowego
 
+https://plotwist.app/en-US/movies/786892
+https://oss.gg/brunowego
+https://paraform.com/company/pocus
 https://codedamn-frontend-assignment-rho.vercel.app/profile
 https://drawsql.app/user/profile
 https://roadmap.sh/u/brunowego
@@ -247,6 +315,14 @@ https://opencollective.com/signin/sent?email=me%40brunowego.com
 
 Login / Sign up
 
+https://web.novu.co/auth/login
+https://app.middleware.io/auth/login
+https://dash.reviews.io/login
+https://app.onmarathon.com/register
+
+https://app.gethipposcribe.com/
+https://app.greenhouse.io/users/sign_in
+https://my.simplebackups.com/register
 https://calendly.com/login
 https://my.mollie.com/dashboard/signup
 https://sso.botpress.cloud/registration
@@ -257,8 +333,8 @@ https://flexify.framer.website/Sign-up
 https://ev.braip.com/register
 https://admin.brizy.io/signup
 https://feyapp.com/signup
-https://reviews.io/signup/basic?signup_email=true
 
+https://pagedone.io/user-signup
 https://buymeacoffee.com/signup
 https://buymeacoffee.com/login
 https://app.allo.restaurant/login
@@ -290,6 +366,42 @@ https://app.logsnag.com/auth/sign-in
 https://cloud.tailwarden.com/sign-in
 https://auth.planetscale.com/sign-in
 
+Book a Demo
+
+https://app.odo.do
+
+Waitlist
+
+https://conductorquantum.com
+https://zeropath.com
+https://grida.co/assistant
+
+Social
+
+https://posts.cv/
+https://read.cv/open-roles
+
+Mosaic / Section / Section
+
+https://li.fi
+https://hypertune.com
+https://liveblocks.io
+https://clearbit.com
+https://plane.so
+https://getkoala.com
+https://tofu.com
+https://markprompt.com
+https://antimetal.com
+https://featureflags.io
+https://organizze.com.br
+https://significa.co/
+https://sandbox-tailwindcss.ibthemespro.com/demo17.html
+https://prismic.io
+https://paraform.com
+https://pagedone.io
+https://coderthemes.com/opixo/home-saas.html
+https://fridafurniture.com (Shop by category)
+
 Home Sale
 
 https://trulia.com/GA/Atlanta
@@ -298,11 +410,20 @@ Pagination
 
 Docs
 
+https://artillery.io/docs
 https://ciusji.gitbook.io/sheenflow
 
 Schedule
 
 https://crashed.nu/builder
+
+Tracker
+
+https://app.midday.ai/tracker
+
+Team Switch
+
+https://app.midday.ai
 
 Crypto
 
@@ -310,12 +431,21 @@ https://coinhall.org
 
 Landing Page
 
-https://klave.com
+https://lp-structure.vercel.app
+https://speedybrand.io
+https://electric-sql.com
+https://beneficios.swile.co/pt-br/vale-alimentacao-refeicao
+https://omise.co
+https://localcan.com
 https://jobbliss.com
+
+https://gleap.io
+https://paraform.com/chrome
+https://podcas-landing-page.vercel.app
+https://table-booking.vercel.app
+https://klave.com
 https://tailwind-landing-template.vercel.app
 https://tailwindcollections-grid-landingpage.netlify.app
-https://myfittracker.com
-https://localcan.com
 
 Integrations
 
@@ -326,15 +456,39 @@ https://githr.vercel.app/app/integrations
 https://app.frigade.com/integrations
 https://app.netbird.io/integrations
 
+Listing
+
+https://hellolanding.com
+https://homestra.com
+https://citamarketplace.com
+
+Marketplace
+
+https://app.contentful.com/spaces/wks05v1n2qoi/apps/list
+
+Guides
+
+https://simplegoods.co/guides
+
 Invest
 
 https://eqseed.com/investir/petdelicia
 
 Pricing
 
+https://gleap.io/pricing
+https://plane.so
+https://thirdweb.com/pricing
+https://www.reviews.io/front/pricingplans
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://hypertune.com/pricing
+https://contentful.com/pricing
+https://organizze.com.br/planos
+https://coderthemes.com/opixo/home-saas.html
+https://tailwindui.com/components#pricing
+https://simplegoods.co/pricing
 https://side.domains
 https://pixeleye.io/pricing
 https://umami.is/pricing
@@ -375,9 +529,22 @@ https://app.creditas.com/auto-refi/solicitacao/informacoes-pessoais?valor-empres
 
 Dashboard
 
+https://logs.betterstack.com/team/99181/sources
+https://perplexity.ai
+https://sanity.io/manage/personal/project/wdbkf3ma
+https://coda.io/workspaces/ws-mmg-0_nDgK/docs
+https://strut.so/c/021b95e6-0c3a-4b5a-8190-d35116b892c0
 https://app.premai.io/projects
 https://app.netbird.io/peers | https://github.com/netbirdio/netbird
 
+https://cloud.trigger.dev/orgs/henkiz-2a7a/projects/landing-page-VS5v
+https://app.hypertune.com/projects/3566/main/draft/logic?setup=0
+https://modal.com/brunowego/main/apps
+https://app.gethipposcribe.com
+https://unriddle.ai/new
+https://app.stack-auth.com/projects/b1fb514a-dbf9-44c3-8a6f-dfab02dac747/users
+https://app.changelogfy.com
+https://ub.cafe/editor/posts
 https://dev.briefkastenhq.com/archives
 https://app.eververse.ai
 https://console.datum.net/dashboard
@@ -409,7 +576,6 @@ https://vercel-clone-three.vercel.app/dashboard
 https://app.specfy.io
 https://console.qovery.com
 https://console.baselime.io/brunowego
-https://app.golaunchpad.com/consumer/account
 https://app.plane.so
 https://app.logsnag.com/dashboard
 https://cloud.tailwarden.com
@@ -422,8 +588,7 @@ https://supabase.com/dashboard
 https://highstorm.app/overview
 https://helicone.ai/dashboard
 https://resend.com/overview
-https://app.airplane.dev
-https://app.planetscale.com/settings/account
+https://app.planetscale.com/cloken
 https://himalayas.app/recruit/details
 
 Welcome
@@ -478,6 +643,7 @@ https://tryodyssey.xyz/loyalty/4446a700-4ebb-4edd-b830-880c810bdc03
 Multi-Factor Authentication
 
 https://resend.com/profile
+https://app.midday.ai/account/security
 
 Roadmap
 
@@ -491,6 +657,10 @@ https://qwiz.party
 https://helicone.ai/roadmap
 https://qwiz.party (mantine)
 
+Subscribe
+
+https://admin.stan.store/subscribe
+
 Subscription
 
 https://imagine.art/dashboard/subscription
@@ -500,20 +670,34 @@ Store
 
 https://loja.infinitepay.io/henkiz
 
+Form / Input
+
+https://eduzz.com/cadastro
+
+Finance
+
+https://loja.infinitepay.io/henkiz
+
 Referral
 
 https://app.infinitepay.io/missions/referral
 
 Teams
 
-https://drawsql.app/teams/create
+https://app.midday.ai/account/teams
 
 Onboarding
 
+https://sellfy.com/auth/onboarding
+https://console.qovery.com/onboarding/project
 https://my.ka.app/signup/info
 https://flowbite.com/blocks/marketing/user-onboarding/
 https://componentland.com/component/onboarding-page-2
 
+https://elevenlabs.io/app/onboarding
+https://build.typedream.com/onboarding
+https://devdojo.com/onboard
+https://drawsql.app/teams/create
 https://buy.infinitepay.io/gestao-cobranca/celular
 https://brandfetch.com/onboarding
 https://drawsql.app/first-team/create
@@ -553,6 +737,7 @@ https://liveblocks.io/dashboard/SywVjn6Ertu-ji8SSOqB2/members/invitations
 
 Progress
 
+https://dribbble.com/shots/24356046-Skill-Matrix-dashboard
 https://rekrabice.cz
 
 Game
@@ -561,6 +746,8 @@ https://gamestorm-nuxt.vercel.app/games-details
 
 Blog
 
+https://hypertune.com/blog
+https://artillery.io/blog
 https://significa.co/blog
 https://doppler.com/blog
 https://artillery.io/blog
@@ -579,14 +766,16 @@ https://humanloop.com/blog
 
 Infoproduct
 
-https://whop.com/ariwixy/
+https://whop.com/ariwixy
 
-Post
+Article / Blog Post
 
+https://paraform.com/blog/terradot
+https://artillery.io/blog
 https://doppler.com/blog/humans-are-the-weakest-link-in-cybersecurity
 https://artillery.io/blog/introducing-opentelemetry-support
 https://ncmaz-nextjs.vercel.app/single/this-is-single-slug
-https://helicone.ai/blog/ai-safety
+https://helicone.ai/blog
 https://ideko.netlify.app/single
 https://supabase.com/blog/nosql-mongodb-compatibility-with-ferretdb-and-flydotio
 https://clearbit.com/blog
@@ -600,11 +789,19 @@ https://zapal.tech
 
 Footer
 
+https://langdock.com
+https://logintrade.ai
+https://spaziobianco.lexingtonthemes.com
 https://mollie.com
 https://botpress.com
 https://oneleet.com
 https://tangem.com/en
+https://significa.co/projects/zoko
 
+https://bentoml.com
+https://chaindesk.ai
+https://midday.ai
+https://formance.com
 https://fiction.com
 https://zapal.tech
 https://swan.io

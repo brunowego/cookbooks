@@ -41,3 +41,15 @@ const tailwindConfig = {
 
 module.exports = tailwindConfig
 ```
+
+<!--
+Sans serif
+Monospace
+Serif
+Cursive
+Fantasy
+Ethnic fonts
+Script
+Decorative fonts
+Slab serif
+-->
