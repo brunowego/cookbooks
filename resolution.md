@@ -1,5 +1,9 @@
 # Resolution
 
+## Links
+
+- [Blisk / Devices](https://blisk.io/devices)
+
 ## Diferences
 
 <!-- CD 700mb -->
@@ -28,5 +32,8 @@ High Dynamic Range
 | 2xl    | 1536px        |
 
 <!--
+1366px
 1400px
+1440px
+1680px
 -->

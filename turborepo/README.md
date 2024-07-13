@@ -116,6 +116,16 @@ jq '."search.exclude"."**/.turbo" |= true' "$PWD"/.vscode/settings.json | sponge
 
 ### Issues
 
+#### TBD
+
+```log
+ERR_PNPM_FETCH_404  GET https://registry.npmjs.org/@acme%2Ftypescript-config: Not Found - 404
+This error happened while installing a direct dependency of /path/to/acme/platform/apps/app
+@acme/typescript-config is not in the npm registry, or you have no permission to fetch it.
+```
+
+TODO
+
 #### Locked stdin
 
 <!--

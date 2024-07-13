@@ -32,5 +32,5 @@ pnpm db:seed
 pnpm db:studio
 
 # Start the development server
-pnpm dev --filter web
+pnpm dev --filter @acme/web
 ```

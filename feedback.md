@@ -45,6 +45,11 @@ https://tally.so/feedback
 - [Sleekplan](https://sleekplan.com)
 - [Upvoty](https://upvoty.com)
 
+<!--
+https://usehall.com | https://community.usehall.com
+https://feedbackloopv2.vercel.app
+-->
+
 ### Open Source
 
 TODO

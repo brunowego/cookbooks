@@ -1,6 +1,7 @@
 # Brand
 
 <!--
+https://branded.ai | https://github.com/alanagoyal/branded
 https://vectorlogo.zone
 -->
 
@@ -13,6 +14,15 @@ https://busca.inpi.gov.br/pePI/
 
 https://servicosonline.inpi.pt/pesquisas/main/marcas.jsp?lang=PT
 -->
+
+## Types
+
+- Alternative Spelling (e.g. "Deel")
+- Foreign Language (e.g. "Samsara")
+- Historical Reference (e.g. "Tesla")
+- Literary Reference (e.g. "Palantir")
+- One Word (e.g. "Lattice")
+- Portmanteau (e.g. "Pinterest")
 
 ## Tips
 

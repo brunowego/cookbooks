@@ -36,6 +36,10 @@ Hands-on – Prototype / POC
 - [Manage Job Alerts](https://linkedin.com/jobs/jam)
 - [Developers](https://developer.linkedin.com)
 
+## Tools
+
+- [Teal / LinkedIn Profile Review Tool](https://tealhq.com/tools/linkedin-review)
+
 ## Tips
 
 ### Dark Mode

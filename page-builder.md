@@ -1,6 +1,8 @@
 # Page Builder
 
 <!--
+https://studio.weaverse.io/demo | https://github.com/Weaverse/pilot
+
 https://www.youtube.com/watch?v=INNjkgE5p0o
 https://www.youtube.com/watch?v=QGXUUXy0AMw
 -->

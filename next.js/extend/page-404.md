@@ -13,3 +13,7 @@ function NotFound() {
 
 export default NotFound
 ```
+
+<!--
+src/app/not-found.tsx
+-->

@@ -1,6 +1,8 @@
 # Agile Software Development (sometimes written Agile) Methodology
 
 <!--
+https://github.com/ParabolInc/parabol
+
 stakeholders
 
 https://linkedin.com/learning/paths/master-agile-software-development

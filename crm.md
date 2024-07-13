@@ -32,6 +32,7 @@ https://keap.com
 https://pipefy.com
 https://clint.digital
 https://sydle.com
+https://www.agendor.com.br
 -->
 
 ### Open Source

@@ -29,6 +29,8 @@ pnpm add @trunkio/launcher -D
 
 ```sh
 pnpx trunk init
+# or
+./node_modules/.bin/trunk init
 ```
 
 ### Configuration

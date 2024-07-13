@@ -5,6 +5,12 @@
 - Stubbing
 - Faking
 
+## Terms
+
+- Dummy Data
+- Identicon
+- Placeholder Data
+
 ## Glossary
 
 - OpenAPI Specification (OAS)
@@ -38,5 +44,6 @@ https://mockbin.io
 
 ### Fake Data
 
+- [DummyJSON](https://github.com/Ovi/DummyJSON)
 - [JSON Data AI](https://jsondataai.com) (AI-generated)
 - [JSON Server](/json-server.md)

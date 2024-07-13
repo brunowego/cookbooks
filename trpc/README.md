@@ -27,6 +27,15 @@ https://github.com/juliusmarminge/acme-corp/tree/main
 
 - [Learn With Jason / Let's Learn tRPC!](https://learnwithjason.dev/let-s-learn-trpc)
 
+## Library
+
+### Installation
+
+```sh
+# Using pnpm
+pnpm add @trpc/server@next @trpc/client@next
+```
+
 ## Tips
 
 ### cURL Request

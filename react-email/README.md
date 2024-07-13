@@ -21,6 +21,18 @@ bun add @react-email/components react-email
 #### TBD
 
 ```log
+Error: Unable to install the dependencies and it exited with code: 1
+```
+
+<!--
+https://github.com/resend/react-email/issues/1432
+-->
+
+TODO
+
+#### TBD
+
+```log
 Error: The file "/vercel/path0/packages/email/.react-email/.next/routes-manifest.json" couldn't be found. This is often caused by a misconfiguration in your project.
 ```
 

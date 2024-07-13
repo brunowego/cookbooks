@@ -27,11 +27,16 @@ https://coda.io
 https://gleap.io
 https://reviews.io/front/pricingplans
 
+https://usehall.com
 https://light.so/demo/overview
 https://tailwindcollections-gallery-page.netlify.app
 
 Empty State / Placeholder
 
+https://dashboard.lusha.com/enrich/workflows/onboarding
+https://dashboard.lusha.com/enrich/csv
+
+https://app.formcarry.com
 https://app.frigade.com/rules
 https://tailwindui.com/components/application-ui/feedback/empty-states
 https://kopi.dev/tailwind/empty-state-components-collection-using-tailwind-ui/
@@ -39,6 +44,8 @@ https://razorui.com/libraries/blade-application-ui/empty-states
 
 Feed / Social Network
 
+https://www.teamblind.com/
+https://storiny.com
 https://gatsby-medium.vercel.app
 https://kooapp.com/feed
 https://threads-app-react.vercel.app
@@ -64,8 +71,32 @@ CTA
 
 https://simplegoods.co
 
-Hero / Header
+Hero / Header | Hero
 
+https://www.artie.com/
+https://retool.com/products/workflows
+https://konbert.com/
+https://www.reworkd.ai/
+https://www.arist.co/
+https://career.io/
+https://june.so/
+https://noxx.net/
+https://rallyon.com/?ref=land-book.com
+https://lexpal-04bc93.webflow.io
+https://recall.ai
+https://beconfident.app
+https://devsignal.co
+https://betterpic.io/
+https://aragon.ai/ai-dating-photos
+https://guide.co
+https://getwheel.io
+https://edensapp.com
+https://rallyon.com
+https://honeyquote.com
+https://formcarry.com
+https://monspark.com/
+https://linear.app/homepage
+https://woodpecker.co/cold-email/
 https://li.fi
 https://mento.co
 https://buymeacoffee.com
@@ -76,6 +107,15 @@ https://contra.com
 https://neverbeforeseen.co
 https://oneleet.com
 
+https://ulysse.com/en/gift
+https://usehall.com
+https://resumeforrest.com
+https://positivustheme.vercel.app | https://github.com/manulthanura/Positivus
+https://productvideoexamples.com
+https://theui.studio
+https://wiz.io
+https://klickce.se
+https://plain.com
 https://shakuro.com
 https://contentful.com
 https://tofu.com
@@ -93,6 +133,7 @@ https://tailwindcollections-grid-landingpage.netlify.app (used)
 
 Product
 
+https://codemarch.gumroad.com/l/hxazr/Independence-day
 https://curationist.org/works/work-met-242270
 https://chawkbazar.vercel.app/products/armani-veni-vidi-vici
 https://tailwindcollections-furniture-store.netlify.app
@@ -103,6 +144,7 @@ https://maxschmitt.me
 
 About
 
+https://stateset.com/about
 https://midday.ai/story
 https://oku-ui.com/oku
 https://timescale.com/about
@@ -208,6 +250,7 @@ https://chisfis-template.vercel.app/listing-stay-detail
 
 Help Center
 
+https://usehall.com/help
 https://dub.co/help
 https://vercel.com/help
 https://chatwoot.com/help-center
@@ -257,6 +300,10 @@ Store
 
 https://nike-app-git-main-armans-projects-c9523aa4.vercel.app/
 
+Table
+
+https://affiliates.lemonsqueezy.com/programs
+
 Kyc
 
 https://my.ka.app
@@ -267,12 +314,24 @@ https://pedido.anota.ai
 
 Jobs
 
-https://hirewise.lexingtonthemes.com/
+https://hirewise.lexingtonthemes.com
 
-Profile
+Job Position
 
+https://careers.askorama.ai/jobs/54701-senior-software-engineer-typescript-frontend
+https://getonbrd.com/jobs/programming/senior-full-stack-next-js-developer-moventi-remote
+
+Affiliates
+
+https://pagedone.lemonsqueezy.com/affiliates
+
+Public Profile
+
+https://landingfolio.com/inspiration/post/miro-1
 https://bento.me/brunowego
 
+https://manuarora.in
+https://store.evmos.org/dapps/defi/osmosis
 https://plotwist.app/en-US/movies/786892
 https://oss.gg/brunowego
 https://paraform.com/company/pocus
@@ -282,7 +341,6 @@ https://roadmap.sh/u/brunowego
 https://layers.to/louisnguyen
 https://significa.co/projects/dia
 https://curationist.org/profile/a7f338e0-7f48-494f-a20b-b912db5b5afd
-https://account.hotmart.com
 https://tbkiosk.xyz/projects/onchainalbumxyz
 https://app.opensauced.pizza/user/nickytonline
 https://himalayas.app/@santiagoestrella
@@ -295,6 +353,12 @@ https://hashnode-t3.vercel.app/u/@ujen_basi
 https://escavador.com/nomes/francisco-carvalho-rodrigues-6221b0ac69
 https://himalayas.app/companies/coinbase
 https://toolfinder.co/tools/evernote
+
+Private Profile
+
+https://linear.app/henkiz/settings/account/profile
+
+https://account.hotmart.com
 
 Connect
 
@@ -313,13 +377,25 @@ Magic Link
 
 https://opencollective.com/signin/sent?email=me%40brunowego.com
 
-Login / Sign up
+Login / Sign In / Sign up
 
+https://app.deel.com/login
+https://app.usehall.com/signup
+https://dashboard.aragon.ai/login?template=avatar_professional
+https://appshots.design/
+https://app.formcarry.com/register
 https://web.novu.co/auth/login
 https://app.middleware.io/auth/login
 https://dash.reviews.io/login
 https://app.onmarathon.com/register
 
+https://app.wordtune.com/auth/signup
+https://app.usehall.com/login
+https://app.sigle.io/login
+https://falsenotes.dev/signin
+https://analytics.june.so/start?use_work_email_alert=true
+https://wearebren.com/signup
+https://headshotpro.com/auth/login
 https://app.gethipposcribe.com/
 https://app.greenhouse.io/users/sign_in
 https://my.simplebackups.com/register
@@ -366,23 +442,39 @@ https://app.logsnag.com/auth/sign-in
 https://cloud.tailwarden.com/sign-in
 https://auth.planetscale.com/sign-in
 
-Book a Demo
-
-https://app.odo.do
-
 Waitlist
 
+https://palatialxr.com/sign-up-for-alpha
 https://conductorquantum.com
 https://zeropath.com
 https://grida.co/assistant
 
 Social
 
-https://posts.cv/
+https://posts.cv
 https://read.cv/open-roles
+
+Post Blocks
+
+https://wefunder.com/explore
 
 Mosaic / Section / Section
 
+https://www.arist.co/
+https://onyxium.org/
+https://rallyon.com/?ref=land-book.com
+https://betterpic.io/
+https://aragon.ai/ai-dating-photos
+https://getwheel.io
+https://honeyquote.com
+https://linear.app/homepage
+https://omens.com.br
+https://send.it
+
+https://bookretreats.com/
+https://tuple.app
+https://tipybit.com
+https://plain.com | https://plain.com/product
 https://li.fi
 https://hypertune.com
 https://liveblocks.io
@@ -401,6 +493,23 @@ https://paraform.com
 https://pagedone.io
 https://coderthemes.com/opixo/home-saas.html
 https://fridafurniture.com (Shop by category)
+
+Sales Talk / Book a demo /  Request a demo / Schedule a demo | Get in touch | Get early access
+
+https://usehall.com/demo
+https://gotofu.com/contact
+https://cq2.co/
+https://prismic.io/demo
+https://formance.com/contact
+https://shakuro.com/get-in-touch
+https://wiz.io
+https://recall.ai/book-a-demo
+https://oneuptime.com/enterprise/demo
+https://oneleet.com/demo
+https://contra.com/request-a-demo
+https://mento.co
+https://li.fi
+https://frabit-io.vercel.app/demo
 
 Home Sale
 
@@ -431,6 +540,9 @@ https://coinhall.org
 
 Landing Page
 
+https://blackwing.fi
+https://buildshortcuts.com
+https://rectanglehq.com
 https://lp-structure.vercel.app
 https://speedybrand.io
 https://electric-sql.com
@@ -439,6 +551,7 @@ https://omise.co
 https://localcan.com
 https://jobbliss.com
 
+https://next-forge.com
 https://gleap.io
 https://paraform.com/chrome
 https://podcas-landing-page.vercel.app
@@ -447,7 +560,15 @@ https://klave.com
 https://tailwind-landing-template.vercel.app
 https://tailwindcollections-grid-landingpage.netlify.app
 
+Product Landing Page
+
+https://primer.tailwindui.com
+
 Integrations
+
+https://app.formcarry.com/integrations
+https://formcarry.com/integrations
+https://linear.app/henkiz/settings/integrations
 
 https://productlane.com/settings/integrations
 https://cloud.trigger.dev/orgs/henkiz-2a7a/integrations
@@ -476,13 +597,24 @@ https://eqseed.com/investir/petdelicia
 
 Pricing
 
+https://geticonjar.com/pricing
+https://formcarry.com/pricing
+https://monspark.com/pricing
+https://linear.app/henkiz/settings/plans
 https://gleap.io/pricing
 https://plane.so
 https://thirdweb.com/pricing
-https://www.reviews.io/front/pricingplans
+https://reviews.io/front/pricingplans
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://usehall.com/pricing
+https://betterpic.io/
+https://nicelydone.club/unlock-library
+https://tuple.app/pricing
+https://theui.studio/pricing
+https://eboto.app
+https://plain.com/pricing
 https://hypertune.com/pricing
 https://contentful.com/pricing
 https://organizze.com.br/planos
@@ -513,8 +645,19 @@ https://helicone.ai/pricing
 https://openstatus.dev/pricing
 https://upstash-web-upstash.vercel.app/#section-pricing
 
+Error Page
+
+https://app.honeyquote.com/error?msg=INVALID_ADDRESS
+
 Contact
 
+https://honeyquote.com/company/contact
+
+https://my-site-2-0-brown.vercel.app/contact
+https://www.labrahmi.me/contact
+https://www.cmarghin.com/contact
+https://datocms-minimalistic-photography-website.vercel.app/contact
+https://alexjpate.com/contact
 https://significa.co/contact
 https://vercel.com/contact/sales
 
@@ -527,8 +670,15 @@ Simulation
 
 https://app.creditas.com/auto-refi/solicitacao/informacoes-pessoais?valor-emprestimo=150000&utm_source=crm&utm_medium=whatsapp&utm_campaign=CRARW-AT802_ar_winback_crm_whatsapp_autopq_automatic_pos_desc81_180d_maio24_v2_res_rat_mkt_per&experiment=CRMAT-023a
 
+Workspace
+
+https://app.plain.com/workspaces
+
 Dashboard
 
+https://dribbble.com/shots/24509063-Chat-AI
+https://linear.app/henkiz/inbox
+https://app.plain.com/workspace/w_01J1WS23TMC8HW3JBRY4KPR4ED/?status=todo&sort=status-changed-asc
 https://logs.betterstack.com/team/99181/sources
 https://perplexity.ai
 https://sanity.io/manage/personal/project/wdbkf3ma
@@ -537,6 +687,12 @@ https://strut.so/c/021b95e6-0c3a-4b5a-8190-d35116b892c0
 https://app.premai.io/projects
 https://app.netbird.io/peers | https://github.com/netbirdio/netbird
 
+https://app.wordtune.com/editor/write/a2048701-2545-49da-9616-8139ca12eec5
+https://demo.getseam.ai/home
+https://avian-demo.netlify.app | https://github.com/demon-bixia/Avian-Template
+https://catalyst-demo.tailwindui.com
+https://tipybit.com/admin/dashboard
+https://refeedreader.com/discover
 https://cloud.trigger.dev/orgs/henkiz-2a7a/projects/landing-page-VS5v
 https://app.hypertune.com/projects/3566/main/draft/logic?setup=0
 https://modal.com/brunowego/main/apps
@@ -591,11 +747,17 @@ https://resend.com/overview
 https://app.planetscale.com/cloken
 https://himalayas.app/recruit/details
 
+Listing
+
+https://himalayas.app/jobs
+
 Welcome
 
 https://app.eververse.ai/welcome
 
 Insights / Analytics / Metrics
+
+https://dashboard.lusha.com/insights
 
 https://productlane.com/insights
 https://app.plane.so/shopner
@@ -619,8 +781,17 @@ https://himalayas.app/companies/hustlewing/tech-stack
 
 Settings
 
+https://app.wordtune.com/editor/account?origin=avatarMenu&originCTA=account&originApp=editor&referrer=editor
+https://dribbble.com/shots/23808366-General-Settings
+https://modal.com/settings/profile
+https://coda.io/account
+https://linear.app/henkiz/settings/account/preferences
 https://accounts.shopify.com/accounts/238884001/personal
 
+https://app.cal.com/settings/my-account/profile
+https://app.changelogfy.com/settings/general
+https://app.stack-auth.com/handler/account-settings
+https://refeedreader.com/discover?settings=general
 https://chat-preview.lobehub.com/settings/agent?agent=&session=inbox&tab=
 https://account.hotmart.com/personal-information
 https://railway.app/account
@@ -634,6 +805,7 @@ https://cloud.tailwarden.com/workspace/settings
 
 Email Notifications
 
+https://linear.app/henkiz/settings/account/notifications
 https://app.plane.so/profile/preferences/email
 
 Gamification
@@ -660,6 +832,7 @@ https://qwiz.party (mantine)
 Subscribe
 
 https://admin.stan.store/subscribe
+https://builtformars.com/subscribe?price=price_1OqxEDGDjHoUJ4H8s3iRgQiC&referralCodes=
 
 Subscription
 
@@ -682,18 +855,29 @@ Referral
 
 https://app.infinitepay.io/missions/referral
 
+Portfolio
+
+https://philfolio-template.vercel.app
+
 Teams
 
 https://app.midday.ai/account/teams
 
+Quiz
+
+https://leyaai.com/quiz
+
 Onboarding
 
+https://auth.lusha.com/onboarding
 https://sellfy.com/auth/onboarding
 https://console.qovery.com/onboarding/project
 https://my.ka.app/signup/info
 https://flowbite.com/blocks/marketing/user-onboarding/
 https://componentland.com/component/onboarding-page-2
 
+https://dashboard.aragon.ai/generate?step=welcome
+https://headshotpro.com/app/add?step=3
 https://elevenlabs.io/app/onboarding
 https://build.typedream.com/onboarding
 https://devdojo.com/onboard
@@ -737,6 +921,7 @@ https://liveblocks.io/dashboard/SywVjn6Ertu-ji8SSOqB2/members/invitations
 
 Progress
 
+https://resumeforrest.com/threeClicksArtist
 https://dribbble.com/shots/24356046-Skill-Matrix-dashboard
 https://rekrabice.cz
 
@@ -787,8 +972,14 @@ Team
 
 https://zapal.tech
 
+Shopping Cart
+
 Footer
 
+https://rallyon.com
+https://alice.com.br
+https://nucleoapp.com/downloads
+https://send.it
 https://langdock.com
 https://logintrade.ai
 https://spaziobianco.lexingtonthemes.com
@@ -798,6 +989,7 @@ https://oneleet.com
 https://tangem.com/en
 https://significa.co/projects/zoko
 
+https://wearebren.com
 https://bentoml.com
 https://chaindesk.ai
 https://midday.ai
@@ -840,10 +1032,6 @@ Hotel
 
 https://members.hotelengine.com
 
-Demo
-
-https://oneuptime.com/enterprise/demo
-
 Coming Son
 
 https://coderthemes.com/opixo/coming-soon-4.html
@@ -865,9 +1053,9 @@ https://dramahiaraliell.com/mentoria-hof-expert-3
 https://lp.henriquemarinhohm.com.br/mentoria-highticket-pq2
 https://lp.henriquemarinhohm.com.br/mentoria-highticket-apl3
 https://isabeleloy.com.br/mentoria-direito-bancario-grupo-whatsapp
-https://www.qconcursos.com/l/mentoria-concursos-fernando-mesquita
+https://qconcursos.com/l/mentoria-concursos-fernando-mesquita
 https://vd.victordamasio.com.br
-https://www.bunkerbrain.com.br
+https://bunkerbrain.com.br
 https://mentoria.suelirepulho.com.br
 https://amazonerodeelite.com/lote-3
 https://gabrielatigre.com.br/mentoria-corpo-dos-sonhos
@@ -879,7 +1067,7 @@ https://cursos.mochilacheia.com/influencer
 https://percursa.com/p/digital-influencer-na-moda
 https://mentoria.homozarpiens.com/listadeespera
 https://page.filipedetrey.com.br/pgt-kiwify
-https://www.mentoriaemvinhos.com.br/inscricao-jornada-apreciador-de-vinhos-a
+https://mentoriaemvinhos.com.br/inscricao-jornada-apreciador-de-vinhos-a
 https://ebaconline.com.br/marketing-de-influencia
 https://maxcoach.jamstacktemplates.dev
 https://branco-react.hibootstrap.com/life-coach
@@ -892,7 +1080,7 @@ https://railway.app/account/security
 
 Conference
 
-http://www.themestarz.net/html/lifecoach/index2.html#page-top
+http://themestarz.net/html/lifecoach/index2.html#page-top
 https://gardenegarden-felipebetts.vercel.app/
 https://coderthemes.com/opixo/home-event.html
 http://unbouncepages.com/eivent
@@ -914,7 +1102,12 @@ https://pixner.net/evlio/main-file/creative/index.html
 
 Checkout
 
+https://ulysse.com/en/gift/checkout?type=electronic
+https://dreamwave.ai/ai-headshots
+https://app.gumroad.com/checkout
 https://heyharper.com
+https://flowbite.com/blocks/e-commerce/checkout
+https://tuk.dev/components/E-commerce/Components/Checkouts
 
 Legal
 
@@ -922,6 +1115,7 @@ https://clearbit.com/trust
 
 Support
 
+https://support.wordtune.com/en/
 https://imagine.art/dashboard/support
 https://founderinstitute.freshdesk.com/en/support/home
 -->

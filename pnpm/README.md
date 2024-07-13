@@ -193,6 +193,18 @@ pnpm add -g pnpm
 
 ### Issues
 
+#### TBD
+
+```log
+ERR_PNPM_FETCH_401  GET https://npm.pkg.github.com/download/@acme/tailwind-config/0.0.1/7c5a3f84809d94bca8f1c427ce3b7fd1f5b3281c: Unauthorized - 401
+```
+
+<!--
+Check if not have a package with the version instead of `workspace:~`
+-->
+
+TODO
+
 #### Auto Install Peers Param Mismatch
 
 ```log

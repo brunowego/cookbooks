@@ -1,5 +1,9 @@
 # WebP
 
+## Links
+
+- [Main Website](https://developers.google.com/speed/webp)
+
 ## Tools
 
 - [WebPonize](/webponize.md)

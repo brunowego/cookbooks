@@ -8,6 +8,7 @@
 - [Avvvatars](https://avvvatars.com)
 
 <!--
+https://avaaatars.com
 https://github.com/Mayandev/notion-avatar
 https://github.com/txstc55/ugly-avatar
 -->

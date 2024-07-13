@@ -19,6 +19,10 @@ Could you propose me an database modeling of Enterprise Resource Planning System
 - DB2: IBM DB2
 - PL/SQL: Oracle PL/SQL
 
+## Tools
+
+- [SQLizer](https://sqlizer.io)
+
 ## Syntax
 
 ### Tips

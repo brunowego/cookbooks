@@ -22,6 +22,18 @@ hashed_password: $2a$12$GITVPHJe/jAReisR0xTwsOKW5kY8mOE7/FDWm9KkgbdDpWNmh1eny | 
 
 - [Installing Auth.js](https://authjs.dev/getting-started/installation?framework=next.js)
 
+## CLI
+
+### Links
+
+- [Code Repository](https://github.com/nextauthjs/cli)
+
+### Commands
+
+```sh
+npx auth -h
+```
+
 ## Library
 
 ### Installation
@@ -50,7 +62,7 @@ https://generate-secret.vercel.app/32
 
 import type { PropsWithChildren, JSX } from 'react'
 import type { Session } from 'next-auth'
-
+be
 import { SessionProvider } from 'next-auth/react'
 
 type NextAuthProviderProps = PropsWithChildren<{
@@ -105,7 +117,7 @@ AUTH_SECRET=
 #### Missing Trust Host
 
 ```log
-[auth][error] UntrustedHost: Host must be trusted. URL was: http://app.sellit.localtest.me:3000/api/auth/session. Read more at https://errors.authjs.dev#untrustedhost
+[auth][error] UntrustedHost: Host must be trusted. URL was: http://app.acme.localtest.me:3000/api/auth/session. Read more at https://errors.authjs.dev#untrustedhost
 ```
 
 <!--
@@ -119,6 +131,27 @@ export default {
   // ...
   trustHost: true,
 } satisfies NextAuthConfig
+```
+
+#### TBD
+
+```log
+[auth][error] UntrustedHost: Host must be trusted. URL was: https://null/api/auth/session. Read more at https://errors.authjs.dev#untrustedhost
+```
+
+**Refer:** `./turbo.json`
+
+```json
+{
+  // ...
+  "tasks": {
+    // ...
+    "build": {
+      // ...
+      "env": ["AUTH_URL", "AUTH_SECRET"]
+    }
+  }
+}
 ```
 
 #### Allow Dangerous Email Account Linking
@@ -135,6 +168,14 @@ export default GitHubProvider({
   allowDangerousEmailAccountLinking: true,
 })
 ```
+
+#### TBD
+
+```log
+[auth][cause]: PostgresError: duplicate key value violates unique constraint "accounts_provider_provider_account_id_pk"
+```
+
+TODO
 
 #### TBD
 

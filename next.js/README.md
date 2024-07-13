@@ -247,6 +247,34 @@ echo '/out' >> ./.gitignore
 #### TBD
 
 ```log
+Generating static pages (0/12)  [=   ]Static generation failed due to dynamic usage on /sign-in, reason: headers
+```
+
+<!--
+https://nextjs.org/docs/messages/app-static-to-dynamic-error
+
+try: next build -d
+-->
+
+**Refer:** `./src/app/layout.tsx`
+
+```ts
+// ...
+export const dynamic = 'force-static'
+// ...
+```
+
+#### TBD
+
+```log
+TypeError: Cannot convert object to primitive value
+```
+
+TODO
+
+#### TBD
+
+```log
 Error: Could not find the module "..." in the React Client Manifest. This is probably a bug in the React Server Components bundler.
 ```
 

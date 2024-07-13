@@ -27,13 +27,24 @@ https://fontspring.com
 
 ## Tips
 
-- Sans Serif
+### Decorative stroke
+
 - Serif
+- Sans Serif
 - Slab Serif
+
+### Classification
+
 - Display
-- Blackletter
+- Handwriting
+- Monospace
+- Not text
+
+<!--
 - Script
 - Symbols
+- Blackletter
+-->
 
 ## Weight
 

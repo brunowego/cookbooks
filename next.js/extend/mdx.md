@@ -7,8 +7,13 @@
 ## Installation
 
 ```sh
+# Using pnpm
+pnpm add @next/mdx @mdx-js/loader @mdx-js/react rehype-slug remark-gfm
+pnpm add @types/mdx -D
+
 # Using Bun
-bun add @next/mdx @mdx-js/loader @mdx-js/react @types/mdx
+bun add @next/mdx @mdx-js/loader @mdx-js/react rehype-slug remark-gfm
+bun add @types/mdx -D
 ```
 
 ## Issues

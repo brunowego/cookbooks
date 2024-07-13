@@ -17,20 +17,27 @@ https://github.com/topics/checkout
 
 ## Checkout Examples
 
+- [Gumroad](https://app.gumroad.com/checkout)
 - [Lemon Squeezy](https://123done.lemonsqueezy.com/checkout)
 - [NordVPN](https://nordcheckout.com/?product_group=nordvpn)
 - [Surfshark Checkout](https://order.surfshark.com)
-
-<!--
-https://checkout.leiturinha.com.br
-https://tunnelbear.com/account/upgrade
-https://udemy.com/payment/checkout
--->
+- [Tunnelbear Checkout](https://tunnelbear.com/account/upgrade)
+- [Udemy Checkout](https://udemy.com/payment/checkout)
 
 <!--
 https://pay.hotmart.com/P93348868J?bid=1716755028244
 
 https://checkout4.xgrow.com/pt/8e9df1da-b202-4707-9ade-7e2a217719a2/MTk2MDk=?xa=48425
 
-https://brunowego.mercadoshops.com.br/addresses/address-guest?confirmation_url=https%3A%2F%2Fbrunowego.mercadoshops.com.br%2Fms%2Fgz%2Fcheckout%2Fbuy-ms%3F_csrf%3DY1LmxvOa-Y61mV18QZfmdRjVcIRjcydg8-kQ%26mshops_mldataSessionId%3D4f5725ea-18e4-41d7-3d21-9ebd8beb4e9c%26mshops_d2id%3D3d81dbcb-cf5f-4da5-b15b-5592619270fa-s%26mode%3Dpage%26px_variant_id%3D25186%26item_id%3DMLB2098851887%26parent_url%3Dhttps%253A%252F%252Fbrunowego.mercadoshops.com.br%252FMLB-2098851887-tampa-acabamento-central-rack-teto-uno-100184769-_JM%26context%3Dvip-mshops%26channel%3Dmshops%26ms_store%3Dbrunowego.mercadoshops.com.br%26variation%3D173954753712%26quantity%3D1%26_ga%3DML1.1718361925294.1804280533.1718361918%26guest_has_address%3Dtrue%26flow_type%3DGUEST_LOGIN&cancel_url=https%3A%2F%2Fbrunowego.mercadoshops.com.br%2FMLB-2098851887-tampa-acabamento-central-rack-teto-uno-100184769-_JM
+https://checkout-us.heyharper.com/checkouts/cn/Z2NwLXVzLWVhc3QxOjAxSjJCVjZCMVlWNDQ3UlRFNjRBMkRUV01R?_gl=1%2Asgbsfo%2A_gcl_au%2AOTg3OTM0NjQ4LjE3MTcyOTQwODA.%2A_ga%2AMjIwNzg4NTM0LjE3MTcyOTQwODI.%2A_ga_YKE8CSZCYM%2AMTcyMDUzMjAxMi40LjEuMTcyMDUzMjAyNy40NS4wLjA.&checkout_referer=new_website&locale=en
+
+https://metafy.gg/checkout?productId=fc08f529-c81d-4a5f-b7b6-05184f758d71 | https://dribbble.com/shots/18772772-Checkout-Flow
+
+https://pay.kiwify.com.br/J9OPQnO?src=PV
+https://pay.kiwify.com.br/G44fCQz
+https://pay.kiwify.com.br/e0lhAyj?afid=ixS276xB
+https://pay.kiwify.com.br/zrurMTT
+https://pay.kiwify.com.br/rfrJafm?src=site&utm_source=site
+
+https://pay.hotmart.com/L83126193L?sck=HOTMART_SITE&off=q16agnos&hotfeature=33,34&_gl=1*l127ls*_gcl_aw*R0NMLjE3MTkzNTcyNTIuQ2p3S0NBancxZW16QmhCOEVpd0FId1paeGE5R0lkRGQ0MFlKZnJPYW93ZldLUjhtWnZ3YlEycEhNZE13Rks1YVh4TnM4SkdhcGhBTTFSb0NUMWdRQXZEX0J3RQ..*_gcl_au*NzEzNDExNDU5LjE3MTMzNjIyMTk.*_ga*MTM4NTg4NzQ0OC4xNzEzMzYyMjIw*_ga_GQH2V1F11Q*MTcyMDUzMjM0Mi41MS4xLjE3MjA1MzIzNDguNTQuMC4w&bid=1720532351186
 -->
