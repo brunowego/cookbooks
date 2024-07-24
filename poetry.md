@@ -1,30 +1,24 @@
 # Poetry
 
-**Keywords:** Python Package Manager
+**Keywords:** Python Package Manager, Isolated Python Environment
 
-## References
+## Links
 
+- [Code Repository](https://github.com/python-poetry/poetry)
 - [Doc](https://poetry.eustace.io/docs/)
 
 ## CLI
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Homebrew
 brew install poetry
-```
 
-#### Unix-like
-
-```sh
+# Unix-like
 curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
-```
 
-#### pip
-
-```sh
+# pip
 pip3 install -U poetry
 ```
 
@@ -45,4 +39,35 @@ sudo su - "$USER"
 
 ```sh
 poetry -h
+```
+
+### Usage
+
+```sh
+#
+poetry new ./<app-name>
+# or
+poetry init
+
+#
+poetry env use python3.8
+poetry env info
+poetry env info --path
+poetry env info --executable
+poetry env list
+
+#
+poetry shell
+
+#
+poetry install
+
+#
+poetry lock
+
+#
+poetry add <package-name>
+
+#
+poetry run python ./<script-name>
 ```

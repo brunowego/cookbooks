@@ -16,5 +16,6 @@ https://github.com/olivierlacan/keep-a-changelog
 - [git-cliff](/git-cliff.md)
 
 <!--
+https://getlog.co
 https://changelogfy.com
 -->

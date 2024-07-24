@@ -31,6 +31,12 @@ https://www.datadoghq.com/blog/postgresql-monitoring-tools/
 
 ## SQL
 
+### TBD
+
+```sql
+UPDATE <table-name> SET <column2-name> = <column1-name> WHERE <condition>;
+```
+
 ### Common
 
 ```sql

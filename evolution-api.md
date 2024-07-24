@@ -8,3 +8,4 @@ https://youtube.com/watch?v=s6l7E0cueBQ
 
 - [Code Repository](https://github.com/EvolutionAPI/evolution-api)
 - [Main Website](https://evolution-api.com)
+- [Docs](https://doc.evolution-api.com)

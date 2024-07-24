@@ -6,6 +6,7 @@
 
 - [Main Website](https://digitalocean.com/products/spaces)
 - Console
+  - [Projects](https://cloud.digitalocean.com/projects)
   - [Create a Spaces Bucket](https://cloud.digitalocean.com/spaces/new)
 
 ## Terms

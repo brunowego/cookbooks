@@ -190,6 +190,14 @@ Rollback `drizzle-orm` package version from "~0.30.1" to "~0.29.4".
 #### TBD
 
 ```log
+Please add a primary key column to your table to update or delete rows
+```
+
+TODO
+
+#### TBD
+
+```log
 No config path provided, using default 'drizzle.config.ts'
 ```
 

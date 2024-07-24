@@ -17,6 +17,16 @@ https://linkedin.com/learning/data-science-foundations-data-mining-in-python/pyt
 - [Python 2.x](/python/python2.md)
 - [Python 3.x](/python/python3.md)
 
+## Isolated Python Environments
+
+- [Pipenv](/pipenv.md)
+- [Virtualenv](/virtualenv.md)
+- [Poetry](/poetry.md)
+
+<!--
+https://github.com/conda/conda
+-->
+
 ## Tips
 
 ### EditorConfig

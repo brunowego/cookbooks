@@ -69,3 +69,23 @@ jq '.example.name |= "John Doe"' jq '.example.email |= "jdoe@xyz.tld"' <filename
 # Remove
 jq 'del(.example.name, .example.email)' <filename> | sponge <filename>
 ```
+
+### Tips
+
+#### Round price
+
+```json
+[
+  {"name": "item1", "price": 30.689999999999998}
+]
+
+// to
+
+[
+  {"name": "item1", "price": 30.69}
+]
+```
+
+```sh
+jq 'map(.price = ((.price * 100 | round) / 100))' input.json > output.json
+```

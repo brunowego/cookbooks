@@ -1,6 +1,6 @@
 # Database Markup Language (DBML)
 
-**Keywords:** Database Modeling
+**Keywords:** Database Design
 
 ## Links
 

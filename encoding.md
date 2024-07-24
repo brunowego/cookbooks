@@ -1,5 +1,9 @@
 # Encoding
 
+<!--
+\u200b - zero-width space (zwsp)
+-->
+
 ## Tools
 
 - [DenCode](https://dencode.com)

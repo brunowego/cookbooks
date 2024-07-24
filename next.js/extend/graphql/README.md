@@ -3,6 +3,7 @@
 <!--
 Examples
 
+https://github.com/belgattitude/mindfulness/tree/main
 https://github.com/Gateway-DAO/network-ui
 -->
 

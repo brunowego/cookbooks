@@ -1,11 +1,11 @@
 # Pipenv
 
-**Keywords:** Python Package Manager
+**Keywords:** Python Package Manager, Isolated Python Environment
 
 ## Links
 
 - [Code Repository](https://github.com/pypa/pipenv)
-- [Main Website](https://pipenv.pypa.io/en/latest/)
+- [Main Website](https://pipenv.pypa.io/en/latest)
 
 ## CLI
 
@@ -113,6 +113,28 @@ eval "$(pipenv --completion)"
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+Could not fetch URL https://pypi.python.org/simple/pipenv/: There was a problem confirming the ssl certificate: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:728) - skipping
+```
+
+```sh
+pip3 install -U pipenv --trusted-host pypi.python.org
+```
+
+#### TBD
+
+```log
+TypeError: 'NoneType' object is not callable
+```
+
+<!--
+pip install --upgrade pipenv
+-->
+
+TODO
 
 #### Missing Language Environment
 

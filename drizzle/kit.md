@@ -59,5 +59,6 @@ https://github.com/drizzle-team/drizzle-kit-mirror/issues/392
 TODO
 
 <!--
+( cd ./packages/db; npx drizzle-kit generate )
 ( cd ./packages/db; npx drizzle-kit push )
 -->

@@ -25,6 +25,14 @@ https://github.com/topics/checkout
 - [Udemy Checkout](https://udemy.com/payment/checkout)
 
 <!--
+Landing Pages
+
+https://digitalmanager.guru/resources/checkout?lead=94afdc0fb8c34f308f7a997ed3221c88&utm_content=pay
+-->
+
+<!--
+https://checkout.kobemedia.com/pay/audiobook-decimo-milhao-principal?utm_source=youtube&utm_medium=nomadedigital&utm_campaign=descricao&utm_term=acabouem2020&utm_content=checkout
+
 https://pay.hotmart.com/P93348868J?bid=1716755028244
 
 https://checkout4.xgrow.com/pt/8e9df1da-b202-4707-9ade-7e2a217719a2/MTk2MDk=?xa=48425

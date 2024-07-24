@@ -25,6 +25,9 @@ https://github.com/bbearcookie/image-crop-playground/blob/main/client/src/hooks/
 ### Installation
 
 ```sh
+# Using pnpm
+pnpm add react-image-crop
+
 # Using Bun
 bun add react-image-crop
 ```

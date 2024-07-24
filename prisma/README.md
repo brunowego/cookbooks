@@ -169,6 +169,16 @@ jq '."[prisma]"."editor.defaultFormatter" |= "Prisma.prisma"' "$PWD"/.vscode/set
 
 ### Issues
 
+#### Missing bcrypt
+
+```log
+Error: Cannot find module '/path/to/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node'
+```
+
+```sh
+npm rebuild bcrypt
+```
+
 #### Missing Direct Connection
 
 ```log

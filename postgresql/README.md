@@ -77,6 +77,14 @@ export PATH="/usr/local/opt/libpq/bin:$PATH"
 source ~/.zshrc
 ```
 
+### Tips
+
+#### Round price
+
+```sql
+UPDATE products SET price = ROUND(price::numeric, 2) WHERE price IS NOT NULL;
+```
+
 ### Issues
 
 #### TBD

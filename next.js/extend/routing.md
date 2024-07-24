@@ -6,7 +6,7 @@
 
 ## Snippets
 
-### GET
+### URL Parameter
 
 ```ts
 type GetProps = {
@@ -16,4 +16,15 @@ type GetProps = {
 export async function GET(_: Request, { params }: GetProps): Promise<Response> {
   // ...
 }
+```
+
+### Query Parameter
+
+```ts
+const url = req.nextUrl.searchParams.get('url')
+
+or
+
+const { searchParams } = new URL(req.url)
+const url = searchParams.get('url')
 ```

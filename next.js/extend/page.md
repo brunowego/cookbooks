@@ -2,6 +2,8 @@
 
 ## Snippets
 
+### URL Params
+
 ```tsx
 import type { JSX } from 'react'
 
@@ -13,3 +15,11 @@ export default function UserPage({ params }: UserPageProps): JSX.Element {
   return <>{params.userId}</>
 }
 ```
+
+### Query Params
+
+<!--
+https://nextjs.org/docs/app/api-reference/functions/use-search-params
+-->
+
+TODO
