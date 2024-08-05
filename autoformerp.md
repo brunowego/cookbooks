@@ -4,7 +4,7 @@
 
 ## Links
 
-- [Main Website](http://firefoxer.ru/)
+- [Main Website](http://firefoxer.ru)
 
 ## Download
 

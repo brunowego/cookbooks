@@ -31,6 +31,8 @@ https://digitalmanager.guru/resources/checkout?lead=94afdc0fb8c34f308f7a997ed322
 -->
 
 <!--
+https://cambly.com/en/student/subscribe
+
 https://checkout.kobemedia.com/pay/audiobook-decimo-milhao-principal?utm_source=youtube&utm_medium=nomadedigital&utm_campaign=descricao&utm_term=acabouem2020&utm_content=checkout
 
 https://pay.hotmart.com/P93348868J?bid=1716755028244

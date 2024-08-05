@@ -42,6 +42,10 @@ export default App
 Warning: Extra attributes from the server: class,style
 ```
 
+```log
+Warning: Extra attributes from the server: data-lt-installed
+```
+
 TODO
 
 <!--

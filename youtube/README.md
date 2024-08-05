@@ -1,7 +1,7 @@
 # YouTube
 
 <!--
-https://www.youtube.com/channel_switcher
+https://youtube.com/channel_switcher
 -->
 
 ## Links

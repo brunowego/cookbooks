@@ -7,6 +7,10 @@
 - [SVG to Data URI converter](https://codepen.io/elliz/details/ygvgay)
 - [URL-encoder for SVG](https://yoksel.github.io/url-encoder/)
 
+### Browser
+
+- [SVG Export](https://chromewebstore.google.com/detail/svg-export/naeaaedieihlkmdajjefioajbbdbdjgp)
+
 ## Tips
 
 ### Visual Studio Code

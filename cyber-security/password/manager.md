@@ -1,5 +1,17 @@
 # Password Manager
 
+<!--
+https://padloc.app | https://github.com/padloc/padloc
+
+https://github.com/CursedMun/decim
+
+https://github.com/mabhi1/safehouse
+https://github.com/CodeUnity-Foundation/Keyguard
+https://github.com/devdtory/secure-pass-front-end
+https://github.com/NotSooShariff/password-manager
+https://github.com/AlexTraveylan/password-guard-2
+-->
+
 ## Glossary
 
 - Group Policy Object (GPO)
@@ -25,6 +37,7 @@
 
 <!--
 https://cloaked.app
+https://psono.com
 -->
 
 ### Open Source

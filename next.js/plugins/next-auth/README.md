@@ -47,7 +47,7 @@ pnpm add next-auth@beta
 
 ```sh
 #
-npx auth secret
+npx auth secret --raw
 
 #
 echo 'AUTH_SECRET=<secret>' > ./.env.local

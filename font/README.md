@@ -6,6 +6,16 @@ vk
 TTF, OTF, WOFF, EOT & SVG
 -->
 
+<!--
+For Heading
+
+Georgia Bold
+-->
+
+<!--
+https://freefaces.gallery
+-->
+
 ## Tools
 
 - [What Font Is](https://whatfontis.com)

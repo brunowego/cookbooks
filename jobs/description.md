@@ -8,6 +8,7 @@ https://centi-hq.notion.site/Senior-Full-Stack-engineer-88cbf641b0d94fa286deb943
 
 <!--
 Proposed Stack: https://gist.github.com/brunowego/94b3e673f6d6f070e942798acc73009d
+
 DevSecOps: https://gist.github.com/brunowego/0a83333a2d41a03750eb5e6c0f5327f3
 DevOps: https://gist.github.com/brunowego/fbf69e2c188adce49ae40d4d5a5d9477
 Solution Architect: https://gist.github.com/brunowego/9dca8b1b05e2705a9260593d1c234347

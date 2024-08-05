@@ -1,11 +1,9 @@
 # Google Fonts
 
 <!--
-Syne
-Archivo
--->
+https://fonts.google.com/specimen/Archivo?preview.layout=grid&query=Archivo
+https://fonts.google.com/specimen/Syne?preview.layout=grid&query=Syne
 
-<!--
 Heading
 
 https://fonts.google.com/specimen/DM+Sans | https://wiz.io

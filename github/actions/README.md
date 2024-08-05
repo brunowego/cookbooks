@@ -45,6 +45,10 @@ Discord: https://github.com/hacs/integration/blob/main/.github/workflows/validat
 
 **Keywords:** Continuous Integration
 
+## Tools
+
+- [act](/act.md)
+
 ## Guides
 
 - [About self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners)

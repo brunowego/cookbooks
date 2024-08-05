@@ -1,7 +1,5 @@
 # GitHub Apps
 
-TODO
-
 <!--
 https://github.com/apps/<app-name>
 

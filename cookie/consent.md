@@ -15,6 +15,10 @@ https://github.com/ethernal/personal-site/blob/main/src/components/CookiePolicyB
 
 **Keywords:** GDPR, CCPA
 
+## Glossary
+
+- Consent Management Platform (CMP)
+
 ## Libraries
 
 - [react-cookie-consent](https://github.com/Mastermindzh/react-cookie-consent)
@@ -31,4 +35,8 @@ https://github.com/klaro-org/privacy-manager
 
 <!--
 consent=true
+-->
+
+<!--
+https://cookiechimp.com
 -->

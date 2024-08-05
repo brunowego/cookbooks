@@ -38,7 +38,7 @@ Sematext
 SignalIFX
 Sumo Logic
 
-https://chartbrew.com/
+https://chartbrew.com
 -->
 
 ### Self-Hosted

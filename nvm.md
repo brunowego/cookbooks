@@ -4,7 +4,7 @@
 
 ### Dependencies
 
-#### APT
+#### YUM
 
 ```sh
 yum check-update
@@ -75,7 +75,7 @@ nvm -h
 nvm ls-remote
 
 # Install
-nvm install [version]
+nvm install <version>
 
 # List
 nvm ls
@@ -84,5 +84,5 @@ nvm ls
 nvm current
 
 # Alias
-nvm alias default [version]
+nvm alias default <version>
 ```

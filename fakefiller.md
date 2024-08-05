@@ -4,6 +4,8 @@
 Pa$$w0rd!
 -->
 
+**Keywords:** Form Automation, Form Autofill
+
 ## Links
 
 - [Code Repository](https://github.com/FakeFiller/fake-filler-extension)

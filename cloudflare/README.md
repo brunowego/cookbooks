@@ -23,6 +23,18 @@ https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/cloud
 
 - [Deploy a Next.js site](https://developers.cloudflare.com/pages/framework-guides/deploy-a-nextjs-site)
 
+## Services
+
+- Cloudflare AI
+- Cloudflare Browser Rendering
+- [Cloudflare D1](./d1.md)
+- Cloudflare KV
+- [Cloudflare Pages](./pages.md)
+- Cloudflare Queues
+- [Cloudflare R2](./r2.md)
+- Cloudflare Vectorize
+- [Cloudflare Workers](./workers.md)
+
 ## CLI
 
 ### Installation

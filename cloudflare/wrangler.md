@@ -19,6 +19,9 @@ https://developers.cloudflare.com/browser-rendering/platform/wrangler
 ### Installation
 
 ```sh
+# Using pnpm
+pnpm add wrangler -D
+
 # Using Bun
 bun add wrangler -D
 ```
@@ -26,11 +29,14 @@ bun add wrangler -D
 ### Initialization
 
 ```sh
+#
+pnpx wrangler init <project-name>
+#
 npx wrangler init <project-name>
 ```
 
 <!--
-wrangler.toml
+./wrangler.toml
 -->
 
 ## CLI

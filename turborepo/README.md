@@ -271,6 +271,19 @@ yarn run build --filter @medusajs/dashboard
 
 ### Issues
 
+#### TBD
+
+```log
+sh: turbo: command not found
+ ELIFECYCLE  Command failed.
+```
+
+<!--
+https://github.com/vercel/turbo/issues/3798
+-->
+
+TODO
+
 #### Failed to Contact Turbo Daemon
 
 ```log

@@ -33,10 +33,6 @@ dig -h
 #
 export DOMAIN='xyz.tld'
 
-# A Record
-dig "$DOMAIN" +short
-dig "$DOMAIN" +short A
-
 #
 dig "$DOMAIN" +short NS
 # DNS Google
@@ -45,6 +41,10 @@ dig @8.8.8.8 "$DOMAIN" +short NS
 dig @9.9.9.9 "$DOMAIN" +short NS
 # DNS Cloudflare
 dig @1.1.1.1 "$DOMAIN" +short NS
+
+# A Record
+dig "$DOMAIN" +short
+dig "$DOMAIN" +short A
 
 #
 dig "<cname>.$DOMAIN" +short CNAME

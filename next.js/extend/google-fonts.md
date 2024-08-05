@@ -30,3 +30,13 @@ https://github.com/vercel/next.js/discussions/40345
 https://seeratawan.me/blog/lazy-load-fonts-in-nextjs-with-web-components
 https://stackoverflow.com/questions/71266063/nextjs-loading-font-from-database
 -->
+
+## Issues
+
+### TBD
+
+```log
+⨯ Failed to download `Poppins` from Google Fonts. Using fallback font instead.
+```
+
+TODO

@@ -3,6 +3,9 @@
 ## Installation
 
 ```sh
+# Using pnpm
+pnpm add @next/third-parties
+
 # Using Bun
 bun add @next/third-parties
 ```
@@ -22,9 +25,13 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
 
-      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        {process.env.NEXT_PUBLIC_GA_ID ? (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        ) : null}
+      </body>
     </html>
   )
 }

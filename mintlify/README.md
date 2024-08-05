@@ -61,6 +61,23 @@ mintlify install
 mintlify dev
 ```
 
+### Issues
+
+#### TBD
+
+```log
+Failed to verify update permissions
+```
+
+TODO
+
+<!--
+https://github.com/apps/<app-name>
+
+https://github.com/organizations/<org>/settings/installations
+https://github.com/organizations/<org>/settings/apps
+-->
+
 <!--
 ./snippets/loom-video.mdx
 

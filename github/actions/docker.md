@@ -48,8 +48,8 @@ jobs:
         id: sha
         run: echo "::set-output name=sha12::$(echo ${GITHUB_SHA} | cut -c 1-12)"
 
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
         # with:
         #   # Disabling shallow clone is recommended for improving relevancy of reporting
         #   fetch-depth: 0

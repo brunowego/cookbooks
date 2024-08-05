@@ -42,12 +42,12 @@ https://dashboard.lusha.com/enrich/csv
 https://app.formcarry.com
 https://app.frigade.com/rules
 https://tailwindui.com/components/application-ui/feedback/empty-states
-https://kopi.dev/tailwind/empty-state-components-collection-using-tailwind-ui/
+https://kopi.dev/tailwind/empty-state-components-collection-using-tailwind-ui
 https://razorui.com/libraries/blade-application-ui/empty-states
 
 Feed / Social Network
 
-https://teamblind.com/
+https://teamblind.com
 https://storiny.com
 https://gatsby-medium.vercel.app
 https://kooapp.com/feed
@@ -76,24 +76,28 @@ https://simplegoods.co
 
 Hero / Header | Hero
 
-https://about.gitlab.com/
-https://deothemes.com/wordpress-plugins/envision-blocks-elementor-widgets-and-addons/
-https://pirsch.io/
+https://manychat.com/
+https://www.faliam.com/
+https://www.teamcamp.app/
+https://savvycal.com/reserve
+https://about.gitlab.com
+https://deothemes.com/wordpress-plugins/envision-blocks-elementor-widgets-and-addons
+https://pirsch.io
 https://ragna.app/en?ref=producthunt
-https://artie.com/
+https://artie.com
 https://retool.com/products/workflows
-https://konbert.com/
-https://reworkd.ai/
-https://arist.co/
-https://career.io/
-https://june.so/
-https://noxx.net/
+https://konbert.com
+https://reworkd.ai
+https://arist.co
+https://career.io
+https://june.so
+https://noxx.net
 https://rallyon.com/?ref=land-book.com
 https://lexpal-04bc93.webflow.io
 https://recall.ai
 https://beconfident.app
 https://devsignal.co
-https://betterpic.io/
+https://betterpic.io
 https://aragon.ai/ai-dating-photos
 https://guide.co
 https://getwheel.io
@@ -101,9 +105,9 @@ https://edensapp.com
 https://rallyon.com
 https://honeyquote.com
 https://formcarry.com
-https://monspark.com/
+https://monspark.com
 https://linear.app/homepage
-https://woodpecker.co/cold-email/
+https://woodpecker.co/cold-email
 https://li.fi
 https://mento.co
 https://buymeacoffee.com
@@ -113,6 +117,7 @@ https://tailwindcollections-organic.netlify.app
 https://contra.com
 https://neverbeforeseen.co
 https://oneleet.com
+https://gleap.io
 
 https://devmilek.pl
 https://payfit.com
@@ -122,7 +127,7 @@ https://crunchydata.com
 https://ulysse.com/en/gift
 https://usehall.com
 https://resumeforrest.com
-https://positivustheme.vercel.app | https://github.com/manulthanura/Positivus
+https://positivustheme.vercel.app | https://github.wcom/manulthanura/Positivus
 https://productvideoexamples.com
 https://theui.studio
 https://wiz.io
@@ -198,7 +203,8 @@ https://feyapp.com/updates
 
 404 (Not Found)
 
-https://unkey.com/404
+https://app.tandem.net/404
+https://prismic.io/404
 https://api.themembers.dev.br/404
 https://oneuptime.com/404
 https://app.plane.so/404
@@ -210,8 +216,17 @@ https://phpsandbox.io/404
 https://kentcdodds.com/404
 https://liveblocks.io/404
 https://coastpay.com/404
+https://contentful.com/404/
+
+https://www.devmilek.pl/404
+https://wigwam.app/404
+https://www.wiz.io/404
+https://shakuro.com/404
+https://pagedone.io/404
 https://infisical.com/404
 https://himalayas.app/404
+https://unkey.com/404
+https://helptix.adslink.id/contact
 
 Template Select
 
@@ -229,14 +244,14 @@ https://producthunt.com/products/tailwind-css/reviews
 https://material-tailwind.com/blocks/overview-sections
 
 https://social-reviews-section.vercel.app
-https://flowbite.com/blocks/e-commerce/product-review/
+https://flowbite.com/blocks/e-commerce/product-review
 https://tailwindflex.com/@akshay/user-review-card
 https://pagedone.io/blocks/e-commerce/product-review
 
 Chat
 
 https://chat-preview.lobehub.com/chat?agent=
-https://shadcn-chat.vercel.app/
+https://shadcn-chat.vercel.app
 https://demo.foxthemes.net/socialite-v3.0/messages.html
 https://angular-material.fusetheme.com/apps/chat/ff6bc7f1-449a-4419-af62-b89ce6cae0aa
 https://midone-html.vercel.app/rubick-side-menu-chat-page.html
@@ -267,6 +282,7 @@ https://chisfis-template.vercel.app/listing-stay-detail
 
 Help Center
 
+https://rifei.com.br/ajuda
 https://usehall.com/help
 https://dub.co/help
 https://vercel.com/help
@@ -308,7 +324,7 @@ https://himalayas.app/jobs
 
 Stats
 
-https://keenthemes.com/metronic/tailwind/demo1/
+https://keenthemes.com/metronic/tailwind/demo1
 
 https://app.cometchat.com/app/2557845219771d1a/overview
 https://helicone.ai/dashboard
@@ -316,7 +332,7 @@ https://projectx-eight-gilt.vercel.app/open
 
 Store
 
-https://nike-app-git-main-armans-projects-c9523aa4.vercel.app/
+https://nike-app-git-main-armans-projects-c9523aa4.vercel.app
 
 Table
 
@@ -345,6 +361,7 @@ https://pagedone.lemonsqueezy.com/affiliates
 
 Public Profile
 
+https://dribbble.com/shots/24545050-Company-page-with-key-data
 https://dribbble.com/shots/24345777-Profile
 https://dribbble.com/shots/24535002-Area-land-sales-service-visual-identity
 https://landingfolio.com/inspiration/post/miro-1
@@ -401,8 +418,15 @@ Magic Link
 
 https://opencollective.com/signin/sent?email=me%40brunowego.com
 
+Users
+
+https://dribbble.com/shots/23579404-Teams-Employees-Engagement-App
+https://dribbble.com/shots/23559512-People-Employees-Engagement-App
+
 Login / Sign In / Sign up
 
+https://app.rifei.com.br/sign-up
+https://app.zave.it/#/auth/welcome
 https://archie-app.8base.com/auth/sign-up?tab=individual
 https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=Iu5prOXXJ0hgZbHMA8T8&redirect_uri=http://conceptbe.kr/oauth/redirected/naver&scope=nickname,email,profile_image&state=RANDOM_STATE
 https://try-stand.com/sign-up
@@ -410,7 +434,7 @@ https://claude.ai/login?returnTo=%2F%3F
 https://app.deel.com/login
 https://app.usehall.com/signup
 https://dashboard.aragon.ai/login?template=avatar_professional
-https://appshots.design/
+https://appshots.design
 https://app.formcarry.com/register
 https://web.novu.co/auth/login
 https://app.middleware.io/auth/login
@@ -424,7 +448,7 @@ https://falsenotes.dev/signin
 https://analytics.june.so/start?use_work_email_alert=true
 https://wearebren.com/signup
 https://headshotpro.com/auth/login
-https://app.gethipposcribe.com/
+https://app.gethipposcribe.com
 https://app.greenhouse.io/users/sign_in
 https://my.simplebackups.com/register
 https://calendly.com/login
@@ -488,11 +512,14 @@ https://wefunder.com/explore
 
 Mosaic / Section / Section
 
+https://rifei.com.br/
+https://zave.it/#creators
+https://savvycal.com/reserve
 https://fidforward.com/?ref=producthunt
-https://arist.co/
-https://onyxium.org/
+https://arist.co
+https://onyxium.org
 https://rallyon.com/?ref=land-book.com
-https://betterpic.io/
+https://betterpic.io
 https://aragon.ai/ai-dating-photos
 https://getwheel.io
 https://honeyquote.com
@@ -500,11 +527,11 @@ https://linear.app/homepage
 https://omens.com.br
 https://send.it
 
-https://im-agency.vercel.app/
+https://im-agency.vercel.app
 https://payfit.com
 https://wigwam.app
 https://brandby.co
-https://bookretreats.com/
+https://bookretreats.com
 https://tuple.app
 https://tipybit.com
 https://plain.com | https://plain.com/product
@@ -519,7 +546,7 @@ https://markprompt.com
 https://antimetal.com
 https://featureflags.io
 https://organizze.com.br
-https://significa.co/
+https://significa.co
 https://sandbox-tailwindcss.ibthemespro.com/demo17.html
 https://prismic.io
 https://paraform.com
@@ -527,11 +554,15 @@ https://pagedone.io
 https://coderthemes.com/opixo/home-saas.html
 https://fridafurniture.com (Shop by category)
 
+Multi Account
+
+https://startt.co/stats
+
 Sales Talk / Book a demo /  Request a demo / Schedule a demo | Get in touch | Get early access
 
 https://usehall.com/demo
 https://gotofu.com/contact
-https://cq2.co/
+https://cq2.co
 https://prismic.io/demo
 https://formance.com/contact
 https://shakuro.com/get-in-touch
@@ -573,8 +604,10 @@ https://coinhall.org
 
 Landing Page
 
+https://mvp.easyui.pro/
+https://waita.framer.website/?via=julesvcode
 https://withalba.com
-https://indiemaker.space/posts/
+https://indiemaker.space/posts
 https://blackwing.fi
 https://buildshortcuts.com
 https://rectanglehq.com
@@ -597,6 +630,7 @@ https://tailwindcollections-grid-landingpage.netlify.app
 
 Product Landing Page
 
+https://peterdraw.studio/product/paylink-digital-banking-website-ui-figma-template/
 https://primer.tailwindui.com
 
 Integrations
@@ -632,7 +666,9 @@ https://eqseed.com/investir/petdelicia
 
 Pricing
 
-https://fidforward.com/pricing/
+https://www.kommo.com/br/precos/compare-planos/
+https://modulesystem.design/#getmodule
+https://fidforward.com/pricing
 https://rotato.app/pricing
 https://geticonjar.com/pricing
 https://formcarry.com/pricing
@@ -645,9 +681,10 @@ https://reviews.io/front/pricingplans
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://cookiechimp.com/accounts/5J4tE6/edit/account_settings#billing
 https://crunchydata.com/pricing
 https://usehall.com/pricing
-https://betterpic.io/
+https://betterpic.io
 https://nicelydone.club/unlock-library
 https://tuple.app/pricing
 https://theui.studio/pricing
@@ -689,7 +726,10 @@ https://app.honeyquote.com/error?msg=INVALID_ADDRESS
 
 Contact
 
-https://fidforward.com/contact/
+https://helptix.adslink.id/request-demo
+https://outloud.co/start-a-project
+https://heyo.is/contact
+https://fidforward.com/contact
 https://honeyquote.com/company/contact
 
 https://my-site-2-0-brown.vercel.app/contact
@@ -715,6 +755,7 @@ https://app.plain.com/workspaces
 
 Dashboard
 
+https://dribbble.com/shots/24585141--data-catalog
 https://try-stand.com/team/da9ed47c
 https://dribbble.com/shots/24509063-Chat-AI
 https://linear.app/henkiz/inbox
@@ -824,6 +865,7 @@ https://himalayas.app/companies/hustlewing/tech-stack
 
 Settings
 
+https://app.rifei.com.br/account
 https://app.frame.so/company/qgZKo5rL/settings/company/general
 https://app.wordtune.com/editor/account?origin=avatarMenu&originCTA=account&originApp=editor&referrer=editor
 https://dribbble.com/shots/23808366-General-Settings
@@ -905,7 +947,7 @@ https://app.infinitepay.io/missions/referral
 
 Portfolio
 
-https://jamiepeak.co.uk/
+https://jamiepeak.co.uk
 https://philfolio-template.vercel.app
 
 Teams
@@ -923,10 +965,10 @@ https://auth.lusha.com/onboarding
 https://sellfy.com/auth/onboarding
 https://console.qovery.com/onboarding/project
 https://my.ka.app/signup/info
-https://flowbite.com/blocks/marketing/user-onboarding/
+https://flowbite.com/blocks/marketing/user-onboarding
 https://componentland.com/component/onboarding-page-2
 
-https://startt.co/sign-up/about-you/
+https://startt.co/sign-up/about-you
 https://dashboard.aragon.ai/generate?step=welcome
 https://headshotpro.com/app/add?step=3
 https://elevenlabs.io/app/onboarding
@@ -1013,6 +1055,8 @@ https://humanloop.com/blog
 Infoproduct
 
 https://whop.com/ariwixy
+https://craftwork.design/downloads/ignatius-school-ui-kit/
+https://doarpara.com.br/raphaellima
 
 Portfolio
 
@@ -1024,6 +1068,7 @@ https://im-agency.vercel.app/portfolio/keyboard
 
 Article / Blog Post
 
+https://webflow.com/blog/color-contrast-analyzer
 https://im-agency.vercel.app/blog/outsource-digital-marketing-efforts
 https://crunchydata.com/blog/postgres-full-text-search-a-search-engine-in-a-database
 https://paraform.com/blog/terradot
@@ -1051,6 +1096,7 @@ Shopping Cart
 
 Footer
 
+https://zave.it/#sofunktionierts
 https://truewind.ai
 https://rallyon.com
 https://alice.com.br
@@ -1063,16 +1109,16 @@ https://mollie.com
 https://botpress.com
 https://oneleet.com
 https://tangem.com/en
-https://significa.co/projects/zoko
 https://swan.io
+https://zapal.tech
+https://fiction.com
 
+https://significa.co
 https://wearebren.com
 https://bentoml.com
 https://chaindesk.ai
 https://midday.ai
 https://formance.com
-https://fiction.com
-https://zapal.tech
 https://alexanderjeamoro.vercel.app
 https://conceptzilla.com
 
@@ -1097,7 +1143,7 @@ https://planetscale.com/careers
 https://artillery.io/careers
 https://sprig.com/careers
 https://timescale.com/careers
-https://coastpay.com/careers/
+https://coastpay.com/careers
 https://attio.com/careers
 https://neon.tech/careers
 https://moderntreasury.com/careers
@@ -1118,8 +1164,8 @@ Coach, Speaker & Mentor
 
 https://kaizen.ohamaruri.com
 https://networkingpro.pablomarcal.com.br/afiliados/?xa=43665
-https://omatheusdophotoshop.com.br/
-https://destravarnodigital.com.br/quase-100-maneiras-de-levantar-dinheiro-rapido-do-zero-bonus-2/
+https://omatheusdophotoshop.com.br
+https://destravarnodigital.com.br/quase-100-maneiras-de-levantar-dinheiro-rapido-do-zero-bonus-2
 https://julianabragancabeauty.com.br
 https://cacamontans.com.br/mentoria
 https://mapaconcursos.com.br/mentoria-excelere-pernambuco-2024
@@ -1165,7 +1211,7 @@ https://railway.app/account/security
 Conference
 
 http://themestarz.net/html/lifecoach/index2.html#page-top
-https://gardenegarden-felipebetts.vercel.app/
+https://gardenegarden-felipebetts.vercel.app
 https://coderthemes.com/opixo/home-event.html
 http://unbouncepages.com/eivent
 https://dsathemes.com/html/evter/files/demo-9.html
@@ -1199,7 +1245,7 @@ https://clearbit.com/trust
 
 Support
 
-https://support.wordtune.com/en/
+https://support.wordtune.com/en
 https://imagine.art/dashboard/support
 https://founderinstitute.freshdesk.com/en/support/home
 -->

@@ -16,6 +16,8 @@ https://wati.io/blog/crm-no-whatsapp
 https://agendor.com.br
 
 https://github.com/Ibrairsyad17/support-ticket-system-fe
+https://github.com/suissa/zapzapticket-backend/tree/main
+https://github.com/canove/whaticket-community
 -->
 
 TODO

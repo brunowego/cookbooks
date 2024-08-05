@@ -22,6 +22,17 @@ A1: Basic
 ```
 
 ```txt
+In which country do you reside?
+```
+
+```txt
+How many years of experience do you have with Python?
+
+Less than 1 year of experience.
+10+ Years of experience.
+```
+
+```txt
 How did you hear about us?
 
 Social media

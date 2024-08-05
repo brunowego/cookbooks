@@ -108,8 +108,9 @@ export default {
   // ...
   "type": "module",
   "scripts": {
-    "db:generate": "drizzle-kit generate:pg",
-    "db:migrate": "dotenv -- tsx ./src/db/migrate.ts",
+    "db:generate": "drizzle-kit generate",
+    // "db:migrate": "dotenv -- tsx ./src/db/migrate.ts",
+    "db:migrate": "drizzle-kit push",
     "db:seed": "dotenv -- tsx ./src/db/seed.ts",
     "db:studio": "drizzle-kit studio"
     // ...

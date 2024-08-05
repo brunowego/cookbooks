@@ -23,3 +23,7 @@ https://receive-smss.com
 https://receivesms.co
 https://quackr.io
 -->
+
+<!--
+https://vonage.com/communications-apis
+-->

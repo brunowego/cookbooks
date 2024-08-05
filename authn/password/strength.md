@@ -36,3 +36,13 @@ Password strength: weak. Try lengthening it or adding numbers or symbols.
 Password strength: good. You can optionally lengthen it to make it stronger.
 Password strength: strong.
 -->
+
+<!--
+Mínimo de 8 caracteres
+Conter números
+Conter letra minúscula
+Conter letra maiúscula
+Conter caracteres especiais (Ex.: !, @, #, $, %)
+Não conter 3 ou mais caracteres iguais em sequência (Ex.: 111, aaa)
+Não conter 3 ou mais caracteres em sequência (Ex.: 123, abc)
+-->

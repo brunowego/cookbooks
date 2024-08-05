@@ -3,6 +3,11 @@
 **Keywords:** Live chat, Customer Service
 
 <!--
+https://github.com/willph/evolutionApi_chatwoot_docker
+https://github.com/HOOUVPN/SystemHelp
+https://github.com/rodtanci/ChatWoot-Disparador-de-Campanhas
+https://github.com/natancom2n/evolution/blob/main/docker-compose.yml
+
 https://www.youtube.com/watch?v=G8S_QFyTbl0
 
 https://artifacthub.io/packages/helm/chatwoot/chatwoot
