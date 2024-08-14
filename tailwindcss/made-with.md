@@ -76,6 +76,11 @@ https://simplegoods.co
 
 Hero / Header | Hero
 
+https://tofu.com/
+https://www.gotofu.com/
+https://www.goalto.io/
+https://www.klaviyo.com/
+https://www.usehaystack.io/
 https://manychat.com/
 https://www.faliam.com/
 https://www.teamcamp.app/
@@ -148,6 +153,10 @@ https://typedream.com
 https://devdojo.com
 https://tailwindcollections-grid-landingpage.netlify.app (used)
 
+Toast / Error
+
+https://app.crisp.chat/initiate/login | fill wrong the form and submit
+
 Mobile Menu
 
 https://lyssna.com
@@ -203,6 +212,8 @@ https://feyapp.com/updates
 
 404 (Not Found)
 
+https://www.alignui.com/product/hr-management
+https://page-not-found.framer.website/
 https://app.tandem.net/404
 https://prismic.io/404
 https://api.themembers.dev.br/404
@@ -425,6 +436,10 @@ https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
 Login / Sign In / Sign up
 
+https://app.crisp.chat/initiate/signup/
+https://languagetool.org/user-login
+https://dashboard.hookdeck.com/signin?redirect=/onboarding
+https://app.synthesia.io/#/welcome
 https://app.rifei.com.br/sign-up
 https://app.zave.it/#/auth/welcome
 https://archie-app.8base.com/auth/sign-up?tab=individual
@@ -512,7 +527,8 @@ https://wefunder.com/explore
 
 Mosaic / Section / Section
 
-https://rifei.com.br/
+https://www.maxio.com
+https://rifei.com.br
 https://zave.it/#creators
 https://savvycal.com/reserve
 https://fidforward.com/?ref=producthunt
@@ -604,6 +620,7 @@ https://coinhall.org
 
 Landing Page
 
+https://www.alignui.com/
 https://mvp.easyui.pro/
 https://waita.framer.website/?via=julesvcode
 https://withalba.com
@@ -755,6 +772,7 @@ https://app.plain.com/workspaces
 
 Dashboard
 
+https://dashboard.hookdeck.com/connections
 https://dribbble.com/shots/24585141--data-catalog
 https://try-stand.com/team/da9ed47c
 https://dribbble.com/shots/24509063-Chat-AI
@@ -863,6 +881,10 @@ Company
 https://wellfound.com/company/prosper-marketplace-3
 https://himalayas.app/companies/hustlewing/tech-stack
 
+Banking
+
+https://app.bossabox.com/profile/settings
+
 Settings
 
 https://app.rifei.com.br/account
@@ -960,6 +982,7 @@ https://leyaai.com/quiz
 
 Onboarding
 
+https://captable.com.br/users/sign_up
 https://try-stand.com (GOOD)
 https://auth.lusha.com/onboarding
 https://sellfy.com/auth/onboarding

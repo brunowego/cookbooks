@@ -247,6 +247,45 @@ echo '/out' >> ./.gitignore
 #### TBD
 
 ```log
+@acme/web:dev:  WARN  Issue while reading "/path/to/.npmrc". Failed to replace env in config: ${GITHUB_TOKEN}
+```
+
+TODO
+
+#### Compound Component Pattern in Server Component
+
+```log
+Error: Could not find the module "/path/to/packages/ui/src/components/accordion.tsx#default#Item" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+```
+
+<!--
+https://help.mantine.dev/q/server-components#error-compound-components-in-server-component
+
+https://github.com/vercel/next.js/issues/44030
+https://github.com/vercel/next.js/issues/50243
+https://github.com/vercel/next.js/issues/58776
+
+https://medium.com/@fdikmen/fixing-could-not-find-the-module-error-in-nextjs-with-ant-design-3ae2cfe0160d
+-->
+
+TODO
+
+#### TBD
+
+```log
+@acme/landing:build:   WARN    2024-08-08 23:50:51.682146011 +00:00 Failed to load .env file: Error parsing line: 'Acme <noreply@example.com>', error at line index: 8
+```
+
+**Refer:** `./.env`
+
+```env
+# Put quotes around the value
+SMTP_FROM='Acme <noreply@example.com>'
+```
+
+#### TBD
+
+```log
 Generating static pages (0/12)  [=   ]Static generation failed due to dynamic usage on /sign-in, reason: headers
 ```
 
@@ -269,18 +308,6 @@ export const dynamic = 'force-static'
 ```log
 TypeError: Cannot convert object to primitive value
 ```
-
-TODO
-
-#### TBD
-
-```log
-Error: Could not find the module "..." in the React Client Manifest. This is probably a bug in the React Server Components bundler.
-```
-
-<!--
-https://github.com/vercel/next.js/issues/58776
--->
 
 TODO
 

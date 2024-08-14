@@ -7,8 +7,7 @@ Exiting: error loading config file: config file ("[beat]") must be owned by the 
 ```
 
 ```yml
-version: '3'
-
+---
 services:
   beat:
     # <...>

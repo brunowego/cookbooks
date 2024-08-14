@@ -57,8 +57,6 @@ docker rm -f redpanda-console
 
 ```yml
 ---
-version: '3'
-
 services:
   # ...
 

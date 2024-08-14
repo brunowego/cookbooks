@@ -1,45 +1,10 @@
-# Cron Jobs
-
-## Links
-
-- [Vercel / Solutions / Cron Jobs](https://vercel.com/docs/concepts/solutions/cron-jobs)
-
-## Workflow
-
-### GitHub Actions
-
-```yml
----
-name: Cron - Downgrade Users
-
-on:
-  schedule:
-    - cron: '0,15,30,45 * * * *' # https://crontab.guru/#0,15,30,45_*_*_*_*
-
-jobs:
-  cron:
-    env:
-      APP_URL: ${{ secrets.APP_URL }}
-      API_SECRET_KEY: ${{ secrets.API_SECRET_KEY }}
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: cURL request
-        if: ${{ env.APP_URL && env.API_SECRET_KEY }}
-        run: |
-          curl ${{ secrets.APP_URL }}/api/cron/downgrade-users \
-            -X POST \
-            -H 'content-type: application/json' \
-            -H 'authorization: ${{ secrets.API_SECRET_KEY }}' \
-            --fail
-```
+# Downgrade Users
 
 ## Dependencies
 
 ```sh
-# Using Yarn
-yarn add dayjs
+# Using pnpm
+pnpm add dayjs
 ```
 
 ## Configuration
@@ -48,7 +13,7 @@ yarn add dayjs
 
 ```sh
 #
-echo 'API_SECRET_KEY=' >> ./.env
+echo 'API_SECRET_KEY=<secret-key>' >> ./.env
 ```
 
 **Refer:** `./src/types/env.d.ts`
@@ -67,13 +32,14 @@ declare namespace NodeJS {
 export const TRIAL_LIMIT_DAYS: number = 14
 ```
 
-**Refer:** `./src/pages/api/cron/downgrade-users.js`
+**Refer:** `./src/pages/api/cron/downgrade-users.ts`
 
 ```ts
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { StatusCodes, ReasonPhrases } from 'http-status-codes'
-import prisma from '@/lib/prisma'
 import dayjs from 'dayjs'
+
+import prisma from '@/lib/prisma'
 import { TRIAL_LIMIT_DAYS } from '@/constants'
 
 export default async function handler(
@@ -127,4 +93,35 @@ export default async function handler(
 
   res.status(StatusCodes.OK).json({ message: ReasonPhrases.OK })
 }
+```
+
+## Workflow
+
+### GitHub Actions
+
+```yml
+---
+name: Cron - Downgrade Users
+
+on:
+  schedule:
+    - cron: '0,15,30,45 * * * *' # https://crontab.guru/#0,15,30,45_*_*_*_*
+
+jobs:
+  cron:
+    env:
+      APP_URL: ${{ secrets.APP_URL }}
+      API_SECRET_KEY: ${{ secrets.API_SECRET_KEY }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: cURL request
+        if: ${{ env.APP_URL && env.API_SECRET_KEY }}
+        run: |
+          curl ${{ secrets.APP_URL }}/api/cron/downgrade-users \
+            -X POST \
+            -H 'content-type: application/json' \
+            -H 'authorization: ${{ secrets.API_SECRET_KEY }}' \
+            --fail
 ```

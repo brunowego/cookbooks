@@ -1,5 +1,9 @@
 # Extend with Image
 
+<!--
+The Better Way to Load Images | https://www.youtube.com/watch?v=7hS9b6n7HrM
+-->
+
 ## Links
 
 - [Docs](https://nextjs.org/docs/api-reference/next/image)

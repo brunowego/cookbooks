@@ -4,10 +4,18 @@
 https://github.com/dichioniccolo/bloghub
 -->
 
-## Tools
+## Types
+
+- Chat
+- Email
+- In-app
+- Push
+- SMS
+
+## Frameworks
 
 - [Knock](https://knock.app)
-- [Novu](https://novu.co)
+- [Novu](/novu/README.md)
 
 <!--
 SSE

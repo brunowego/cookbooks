@@ -6,14 +6,28 @@
 - [Main Website](https://hookdeck.com)
 - [Console](https://console.hookdeck.com)
 
-<!-- ## Library
+## Library
 
 ### Installation
 
 ```sh
 # Using pnpm
 pnpm install hookdeck-cli -D
-``` -->
+```
+
+<!--
+npx hookdeck-cli -h
+-->
+
+### Configuration
+
+```json
+{
+  "scripts": {
+    "webhook:listen": "hookdeck listen 3000 acme --path /api/webhook"
+  }
+}
+```
 
 ## CLI
 
@@ -53,15 +67,15 @@ hookdeck login --cli-key <token>
 
 ```sh
 #
-hookdeck workspace list
+hookdeck project list
 
 #
 hookdeck listen <port-or-url>
 hookdeck listen <port-or-url> <source-alias?>
-
-hookdeck listen 3000 shopify
-
-# What should be your new source label? ACME
-# What path should the webhooks be forwarded to (ie: /webhooks)? /api/webhooks
-# What's your connection label (ie: My API)? API
+# ex:
+hookdeck listen 3000 acme --path /api/webhooks
 ```
+
+<!--
+completion
+-->

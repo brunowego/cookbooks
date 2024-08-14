@@ -95,8 +95,6 @@ debezium.format.value.schemas.enable=false
 
 ```yml
 ---
-version: '3'
-
 services:
   # ...
 

@@ -2,6 +2,11 @@
 
 **Keywords:** Secure Tunnels, Tunneling
 
+## Links
+
+- [Main Website](https://ngrok.com)
+- [Dashboard](https://dashboard.ngrok.com)
+
 ## CLI
 
 ### Dependencies
@@ -27,7 +32,8 @@ sudo yum -y install wget unzip
 #### Homebrew
 
 ```sh
-brew install --cask ngrok
+brew tap ngrok/ngrok
+brew install ngrok
 ```
 
 #### Linux
@@ -67,6 +73,11 @@ ngrok http 80
 
 # TCP
 ngrok tcp 22
+
+# Custom
+ngrok http http://localhost:3000
+# With domain
+ngrok http http://localhost:3000 --domain <subdomain>.ngrok-free.app
 ```
 
 ### Tips

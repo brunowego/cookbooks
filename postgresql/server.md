@@ -251,8 +251,6 @@ POSTGRES_PASSWORD=acme
 
 ```yml
 ---
-version: '3'
-
 services:
   postgres:
     image: docker.io/library/postgres:15.1-alpine

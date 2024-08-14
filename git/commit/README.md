@@ -36,6 +36,22 @@ git commit -am <message>
 
 ## Tips
 
+### Amend Last Commit with Same Date
+
+```sh
+git commit --amend --no-edit --date="$(git show -s --format=%ci HEAD)"
+```
+
+### Information
+
+```sh
+#
+git --no-pager show $(git rev-list --max-parents=0 HEAD)
+
+#
+git --no-pager shortlog -s -n
+```
+
 ### Change Author
 
 ```sh

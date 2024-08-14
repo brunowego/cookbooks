@@ -29,3 +29,18 @@ https://brandnewname.com
 ## Register
 
 - [GoDaddy](https://godaddy.com)
+
+## Tips
+
+### Get IP
+
+```sh
+#
+dig +short <domain>
+
+#
+nslookup <domain>
+
+#
+ping <domain>
+```

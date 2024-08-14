@@ -88,8 +88,6 @@ Never use `./` at target bind volume.
 
 ```yml
 ---
-version: '3'
-
 x-shared: &shared
   build:
     context: ./services/acme

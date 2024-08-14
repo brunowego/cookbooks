@@ -1,6 +1,4 @@
 ---
-version: '3'
-
 services:
   redis:
     image: docker.io/library/redis:7.0.10

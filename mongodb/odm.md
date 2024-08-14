@@ -3,6 +3,7 @@
 ## Implementations
 
 - [Mongoose](/mongoose/README.md)
+- [Prisma](/prisma/mongodb.md)
 
 <!--
 MikroORM

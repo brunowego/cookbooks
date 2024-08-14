@@ -70,8 +70,6 @@ EOF
 
 ```yml
 ---
-version: '3'
-
 tasks:
   check:
     desc: Exist AWS CLI and dependencies

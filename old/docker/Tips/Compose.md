@@ -3,8 +3,7 @@
 ## TBD
 
 ```yml
-version: '3'
-
+---
 services:
   example:
     entrypoint: /bin/sh
@@ -14,8 +13,7 @@ services:
 ## TBD
 
 ```yml
-version: '3'
-
+---
 services:
   example:
     entrypoint: ['/bin/sh', '-c', '[command]']
@@ -24,8 +22,7 @@ services:
 ## TBD
 
 ```yml
-version: '3'
-
+---
 services:
   example:
     entrypoint:
@@ -37,8 +34,7 @@ services:
 ## TBD
 
 ```yml
-version: '3'
-
+---
 services:
   example:
     entrypoint:
@@ -51,8 +47,7 @@ services:
 ## Long String
 
 ```yml
-version: '3'
-
+---
 services:
   example:
     entrypoint: >
@@ -62,8 +57,7 @@ services:
 ## Linebreaks
 
 ```yml
-version: '3'
-
+---
 services:
   example:
     entrypoint: |

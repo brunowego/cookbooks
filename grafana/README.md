@@ -127,8 +127,6 @@ docker volume rm grafana-config grafana-data
 
 ```yml
 ---
-version: '3'
-
 services:
   grafana:
     image: docker.io/grafana/grafana:9.5.2

@@ -1,10 +1,5 @@
 # Supabase
 
-<!--
-"db:start": "supabase start",
-"db:stop": "supabase stop",
--->
-
 **Keywords:** Firebase Alternative
 
 ## Links
@@ -15,17 +10,29 @@
   - [Projects](https://supabase.com/dashboard/projects)
   - [SQL Editor](https://supabase.com/dashboard/project/_/sql/new)
 
+## Learn
+
+- [Supabase VS Custom Backend (Drizzle ORM + Next-Auth V5 + PostgresDB + Storage Service)](https://youtube.com/watch?v=XcZu3aKqedQ)
+
+## Glossary
+
+- Free and Open-Source Software (FOSS)
+- Software Development Kit (SDK)
+
 ## Library
 
 ### Installation
 
 ```sh
-# Using Bun
-bun add @supabase/supabase-js supabase
+# Using pnpm
+pnpm add @supabase/supabase-js
 ```
 
 <!--
 @supabase/ssr
+
+"db:start": "supabase start",
+"db:stop": "supabase stop",
 -->
 
 ## CLI
@@ -76,3 +83,13 @@ supabase db diff | npx supabase migration new
 supabase push
 supabase pull
 -->
+
+### Issues
+
+#### TBD
+
+```log
+@acme/db:db:migrate: error: must be owner of sequence key_key_id_seq
+```
+
+TODO

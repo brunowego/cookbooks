@@ -14,7 +14,9 @@ throw new Error('Sentry Example API Route Error')
 
 - [Code Repository](https://github.com/getsentry/sentry-javascript/tree/master/packages/nextjs)
 
-## Installation
+## Library
+
+### Installation
 
 ```sh
 # Using NPM
@@ -22,6 +24,9 @@ npm install @sentry/nextjs --save
 
 # Using Yarn
 yarn add @sentry/nextjs
+
+# Using pnpm
+pnpm add @sentry/nextjs
 
 # Using Bun
 bun add @sentry/nextjs
@@ -180,6 +185,21 @@ SENTRY_DSN=$SENTRY_DSN
 EOF
 ```
 
+<!--
+const checkInId = Sentry.captureCheckIn({
+  monitorSlug: "10-min-cron",
+  status: "in_progress",
+});
+
+// ...
+
+Sentry.captureCheckIn({
+  checkInId,
+  monitorSlug: "10-min-cron",
+  status: "ok",
+});
+-->
+
 ## Tips
 
 ### Create User Auth Token
@@ -194,6 +214,40 @@ event:read, event:write, project:read, project:releases, project:write
 -->
 
 ## Issues
+
+### TBD
+
+```log
+@acme/landing:build:       - warning: could not determine a source map reference (Could not auto-detect referenced sourcemap for ~/c8e7b438-6afe-46a5-8a1f-4ec115c877f6-3.js)
+```
+
+<!--
+https://github.com/getsentry/sentry-cli/issues/364
+-->
+
+TODO
+
+### TBD
+
+```log
+@acme/landing:build: [@sentry/nextjs - Node.js] Warning: No auth token provided. Will not create release. Please set the `authToken` option. You can find information on how to generate a Sentry auth token here: https://docs.sentry.io/api/auth/
+```
+
+**Refer:** `./apps/web/turbo.json`
+
+```json
+{
+  "$schema": "https://turbo.build/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    // ...
+    "build": {
+      // ...
+      "env": ["SENTRY_AUTH_TOKEN"]
+    }
+  }
+}
+```
 
 ### Missing Global Error File
 

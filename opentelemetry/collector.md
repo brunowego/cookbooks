@@ -53,8 +53,6 @@ service:
 
 ```yml
 ---
-version: '3'
-
 services:
   otelcol:
     image: docker.io/otel/opentelemetry-collector:0.78.0

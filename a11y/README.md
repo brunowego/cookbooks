@@ -9,10 +9,6 @@ https://linkedin.com/learning/simplifying-web-development-with-accessibility-bes
 - [A11Y](http://a11y.com)
 - [Search Engine Optimization (SEO)](/seo.md)
 
-## Tools
-
-- [Contrast Ratio](https://contrast-ratio.com)
-
 ## Evaluation
 
 - [AChecker](https://achecker.ca/checker/index.php)

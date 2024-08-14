@@ -217,9 +217,11 @@ echo '!/tailwind.config.cjs' > ./.vercelignore
 ```sh
 #
 code --install-extension bradlc.vscode-tailwindcss
+code --install-extension stivo.tailwind-fold
 
 #
 jq '."recommendations" += ["bradlc.vscode-tailwindcss"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+jq '."recommendations" += ["stivo.tailwind-fold"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 **Configuration:**

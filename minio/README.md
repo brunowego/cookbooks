@@ -185,8 +185,6 @@ MINIO_SECRET_KEY=minio123
 
 ```yml
 ---
-version: '3'
-
 services:
   minio:
     image: docker.io/minio/minio:RELEASE.2024-03-15T01-07-19Z

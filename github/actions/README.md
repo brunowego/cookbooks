@@ -423,6 +423,24 @@ gh api "repos/$OWNER/$REPO/actions/workflows/$WORKFLOW/runs" \
 
 ### Issues
 
+#### Missing Permissions
+
+```log
+Progress: resolved 768, reused 0, downloaded 294, added 287
+ ERR_PNPM_FETCH_403  GET https://npm.pkg.github.com/download/@feedithq/email/0.0.7/eb94274e4d44f0198d4bf1cd3b8c388351f5446d: Forbidden - 403
+
+An authorization header was used: ***
+
+These authorization settings were found:
+//npm.pkg.github.com/:_authToken=ghs_[hidden]
+@feedithq:registry=https://npm.pkg.github.com/
+Error: Process completed with exit code 1.
+```
+
+1. GitHub -> Owner
+2. Packages -> Select package -> Package settings
+3. Manage Actions access -> Add repository
+
 #### TBD
 
 ```log

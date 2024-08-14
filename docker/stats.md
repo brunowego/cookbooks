@@ -16,8 +16,6 @@ docker stats --no-stream
 
 ```yml
 ---
-version: '3'
-
 services:
   postgres:
     # ...

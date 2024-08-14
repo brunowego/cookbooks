@@ -32,8 +32,6 @@ influx -h
 
 ```yml
 ---
-version: '3'
-
 services:
   influxdb:
     image: docker.io/library/influxdb:2.7-alpine

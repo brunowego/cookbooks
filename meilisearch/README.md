@@ -81,8 +81,6 @@ MEILI_NO_ANALYTICS=true
 
 ```yml
 ---
-version: '3'
-
 services:
   meilisearch:
     image: docker.io/getmeili/meilisearch:v1.4.0

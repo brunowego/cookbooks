@@ -105,8 +105,7 @@ docker run -it --rm \
 ## Compose
 
 ```yml
-version: '3'
-
+---
 x-proxy-vars: &proxy_vars
   http_proxy: ${http_proxy}
   https_proxy: ${https_proxy}

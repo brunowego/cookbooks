@@ -94,13 +94,17 @@ docker run -it --rm \
 
 ### Issues
 
-#### TBD
+#### Missing Key File
 
 ```log
 BadValue: security.keyFile is required when authorization is enabled with replica sets
 ```
 
-TODO
+```sh
+#
+openssl rand -base64 24 > ./mongo.keyfile
+chmod 400 ./mongo.keyfile
+```
 
 ### Remove
 
@@ -120,8 +124,6 @@ docker volume rm \
 
 ```yml
 ---
-version: '3'
-
 services:
   mongodb:
     image: docker.io/library/mongo:7.0.5
@@ -133,8 +135,8 @@ services:
         source: mongodb-configdb
         target: /data/configdb
     environment:
-      MONGO_INITDB_ROOT_USERNAME:
-      MONGO_INITDB_ROOT_PASSWORD:
+      # MONGO_INITDB_ROOT_USERNAME:
+      # MONGO_INITDB_ROOT_PASSWORD:
       MONGO_INITDB_DATABASE:
     command: --storageEngine=wiredTiger
     ports:
@@ -157,13 +159,51 @@ COMPOSE_PROJECT_NAME=acme
 
 MONGODB_HOST=localhost
 MONGODB_PORT=27017
-MONGO_INITDB_ROOT_USERNAME=acme
-MONGO_INITDB_ROOT_PASSWORD=acme
+# MONGO_INITDB_ROOT_USERNAME=acme
+# MONGO_INITDB_ROOT_PASSWORD=acme
 MONGO_INITDB_DATABASE=acme
 ```
 
 <!--
+mongodb://localhost/acme
 mongodb://acme:acme@localhost/acme
+-->
+
+## <!--
+
+services:
+mongodb:
+image: docker.io/library/mongo:7.0.5
+volumes: - type: bind
+source: ./mongo.keyfile
+target: /auth/file.key - type: volume
+source: mongodb-data
+target: /data/db - type: volume
+source: mongodb-configdb
+target: /data/configdb
+environment:
+MONGO_INITDB_ROOT_USERNAME: $MONGO_USER
+      MONGO_INITDB_ROOT_PASSWORD: $MONGO_PASSWORD
+      MONGO_INITDB_DATABASE:
+    command: ["--keyFile", "/auth/file.key", "--replSet", "rs0", "--bind_ip_all"]
+    ports:
+      - target: 27017
+        published: $MONGODB_PORT
+        protocol: tcp
+    restart: unless-stopped
+    healthcheck:
+      test: test $$(echo "rs.initiate().ok" | mongosh -u $MONGO_USER -p $MONGO_PASSWORD --quiet) -eq 1 || exit 0
+interval: 5s
+timeout: 30s
+retries: 30
+start_period: 0s
+start_interval: 1s
+
+volumes:
+mongodb-data:
+driver: local
+mongodb-configdb:
+driver: local
 -->
 
 ## CLI
@@ -301,14 +341,6 @@ Add `?authSource=admin` to `DATABASE_URL`.
 <!--
 mongodb://dev:dev@localhost/dev?authSource=admin
 -->
-
-### TBD
-
-```log
-BadValue: security.keyFile is required when authorization is enabled with replica sets
-```
-
-TODO
 
 ### Missing Mechanism and Source
 

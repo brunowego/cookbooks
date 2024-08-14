@@ -1,3 +1,0 @@
-# Ory Kratos
-
-TODO

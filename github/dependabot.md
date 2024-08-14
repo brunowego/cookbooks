@@ -20,32 +20,28 @@
 ---
 version: 2
 
+registries:
+  npm-github:
+    type: npm-registry
+    url: https://npm.pkg.github.com
+    token: ${{ secrets.GH_TOKEN }}
+
 updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: daily
-    allow:
-      - dependency-type: direct
-    versioning-strategy: increase
-    commit-message:
-      prefix: deps
-      prefix-development: chore
-    labels:
-      - dependencies
-
-- package-ecosystem: npm
-    directory: /
-    schedule:
-      interval: daily
-    allow:
-      - dependency-type: direct
-    versioning-strategy: increase
-    commit-message:
-      prefix: deps
-      prefix-development: chore
-    labels:
-      - dependencies
+      interval: weekly
+    registries:
+      - npm-github
+    # allow:
+    #   - dependency-type: direct
+    # versioning-strategy: increase
+    # versioning-strategy: lockfile-only
+    # commit-message:
+    #   prefix: deps
+    #   prefix-development: chore
+    # labels:
+    #   - dependencies
 ```
 
 <!--
@@ -80,3 +76,25 @@ updates:
 | `@dependabot recreate`                  | Force recreate the PR                                                    |
 | `@dependabot reopen`                    | Reopen the closed PR                                                     |
 | `@dependabot squash and merge`          | Squash and merge after CI tests                                          |
+
+## Issues
+
+### TBD
+
+```log
+Errored with the message "Dependabot can't authenticate to a private package registry"
+```
+
+TODO
+
+### TBD
+
+```log
+Dependabot can't resolve your JavaScript dependency files
+```
+
+<!--
+https://zenn.dev/risu729/articles/dependabot-engine-strict
+-->
+
+TODO

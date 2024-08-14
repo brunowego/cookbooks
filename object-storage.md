@@ -15,6 +15,7 @@
 
 <!--
 https://uploadcare.com
+https://backblaze.com
 -->
 
 ### Open Source

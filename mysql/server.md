@@ -122,8 +122,6 @@ docker volume rm mysql-data
 
 ```yml
 ---
-version: '3'
-
 services:
   mysql:
     image: docker.io/library/mysql:8.0

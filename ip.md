@@ -9,3 +9,18 @@
 <!--
 https://ipinfo.io
 -->
+
+## Tips
+
+### From CLI
+
+```sh
+#
+wget -qO- ifconfig.me
+
+#
+curl ifconfig.co
+
+#
+dig +short myip.opendns.com @resolver1.opendns.com
+```

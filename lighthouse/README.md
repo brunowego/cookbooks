@@ -78,7 +78,7 @@ yarn add @lhci/cli --dev
 const lighthouseRC = {
   ci: {
     collect: {
-      startServerCommand: 'yarn start',
+      startServerCommand: 'pnpm start',
       url: ['http://localhost:3000'],
       numberOfRuns: 1,
     },

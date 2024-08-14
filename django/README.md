@@ -507,8 +507,6 @@ antigen bundle django
 
 ```yml
 ---
-version: '3'
-
 services:
   django:
     build: ./

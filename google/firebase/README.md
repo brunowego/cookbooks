@@ -12,10 +12,21 @@ https://github.com/SmartMoveSystems/keycloak-firebase-scrypt
 ## Links
 
 - [Main Website](https://firebase.google.com)
+- [Console](https://console.firebase.google.com)
+- Docs
+  - [CLI reference / auth:import e auth:export](https://firebase.google.com/docs/cli/auth)
 
-## Docs
+## Terms
 
-- [CLI reference / auth:import e auth:export](https://firebase.google.com/docs/cli/auth)
+- Real-Time Database
+
+## Services
+
+- Database: Real-Time Database
+- Firestore: NoSQL database
+- Auth: Authentication
+- Storage: File storage
+- Functions: Serverless functions
 
 ## CLI
 
@@ -40,7 +51,11 @@ firebase -h
 firebase login
 
 #
-firebase use [project-name]
+firebase projects:list
+firebase use <project-name>
+
+#
+firebase init
 ```
 
 ### Usage
@@ -48,7 +63,7 @@ firebase use [project-name]
 ```sh
 #
 firebase auth:export \
-  --project [name] \
+  --project <name> \
   --format json \
   ./users.json
 

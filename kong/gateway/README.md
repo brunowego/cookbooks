@@ -168,8 +168,6 @@ echo -e '[INFO]\thttp://127.0.0.1:8001/services'
 
 ```yml
 ---
-version: '3'
-
 x-kong: &kong
   image: docker.io/library/kong:3.2.2-alpine
   environment: &kong-environment

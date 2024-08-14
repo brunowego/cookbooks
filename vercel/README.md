@@ -223,6 +223,14 @@ EOF
 #### TBD
 
 ```log
+@acme/landing:build:  WARN  Issue while reading "/vercel/path0/.npmrc". Failed to replace env in config: ${GITHUB_TOKEN}
+```
+
+TODO
+
+#### TBD
+
+```log
 Vercel — No GitHub account was found matching the commit author email address
 ```
 

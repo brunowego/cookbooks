@@ -59,8 +59,6 @@ docker volume rm cube-config
 
 ```yml
 ---
-version: '3'
-
 services:
   # ...
 

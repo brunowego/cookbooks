@@ -2,17 +2,11 @@
 
 **Keywords:** Monorepo Versioning, Multi-Package Repository
 
-<!--
-"changeset": "changeset",
-"version-packages": "changeset version",
-"release": "turbo run build --filter=packages/docs && changeset publish"
--->
-
 ## Links
 
 - [Code Repository](https://github.com/changesets/changesets)
 
-## CLI
+## Library
 
 ### Links
 
@@ -21,22 +15,59 @@
 ### Installation
 
 ```sh
-# Using NPM
-npm install @changesets/cli --save-dev
-
-# Using Yarn
-yarn add @changesets/cli --dev
-
 # Using pnpm
-pnpm add @changesets/cli -D
+pnpm add @changesets/cli @changesets/changelog-github -D
+```
+
+### Commands
+
+```sh
+#
+pnpm changeset --help
+#
+./node_modules/.bin/changeset --help
 ```
 
 ### Initialize
 
 ```sh
-# Using Yarn
-yarn changeset init
-
 # Using pnpm
 pnpm changeset init
 ```
+
+### Usage
+
+```sh
+#
+pnpm changeset add
+
+#
+pnpm changeset version
+pnpm changeset version --snapshot
+
+#
+pnpm changeset publish
+```
+
+<!--
+"release": "pnpm dist && changeset publish"
+-->
+
+### Issues
+
+#### TBD
+
+```log
+🦋  warn No unreleased changesets found, exiting.
+```
+
+TODO
+
+#### TBD
+
+```log
+🦋  warn @acme/email is not being published because version 0.0.9 is already published on npm
+🦋  warn No unpublished projects to publish
+```
+
+TODO

@@ -2,8 +2,12 @@
 
 ## Tips
 
-### Remove Remove Tag
+### Remote Tag
 
 ```sh
-git push -d [origin] [tag-name]
+# Local
+git tag -d <tag-name>
+
+# Remove
+git push -d <origin> <tag-name>
 ```

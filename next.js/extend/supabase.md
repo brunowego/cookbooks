@@ -1,9 +1,5 @@
 # Supabase
 
-<!--
-https://github.com/law-lin/onecase-social-accountability/tree/master/src/mutations
--->
-
 ## Installation
 
 ```sh

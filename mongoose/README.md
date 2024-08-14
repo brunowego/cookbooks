@@ -1,6 +1,10 @@
 # Mongoose
 
 <!--
+https://github.com/merlinn-co/merlinn/tree/main/packages/db/src
+https://github.com/gashon/scrib/tree/main/packages/db
+https://github.com/aditya172001/hungry-hub/tree/main/packages/db
+
 https://github.com/typegoose/typegoose
 -->
 

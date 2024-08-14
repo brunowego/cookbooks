@@ -8,7 +8,9 @@ npm init
 npx create-turbo@latest
 ``` -->
 
-## Structure
+## Library
+
+### Structure
 
 <!--
 mobile
@@ -34,11 +36,11 @@ mv ./tailwind.config.{cjs,js} ./apps/landing
 mv ./tsconfig.json ./apps/landing
 ```
 
-## Checklist
+### Checklist
 
 - Move general `devDependencies` and `scripts` from `./apps/landing/package.json` to `./package.json`.
 
-## Configuration
+### Configuration
 
 ```sh
 #
@@ -113,7 +115,7 @@ const eslintRC = {
 module.exports = eslintRC
 ``` -->
 
-## Installation
+### Installation
 
 ```sh
 # Using NPM
@@ -121,4 +123,33 @@ npm install turbo --save-dev
 
 # Using Yarn
 yarn add turbo --ignore-workspace-root-check --dev
+```
+
+### Issues
+
+<!-- #### TBD
+
+```env
+TURBO_TELEMETRY_DISABLED=1
+DO_NOT_TRACK=1
+``` -->
+
+#### TBD
+
+```log
+WARN! Missing required `build` task in turbo.json. Skipping automatic setting assignment.
+```
+
+**Refer:** `./turbo.json`
+
+```json
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    // ...
+    "build": {
+      "dependsOn": ["^build"]
+    }
+  }
+}
 ```
