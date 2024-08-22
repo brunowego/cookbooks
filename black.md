@@ -17,6 +17,21 @@ EOF
 
 ### Tips
 
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension ms-python.black-formatter
+
+#
+jq '."recommendations" += ["ms-python.black-formatter"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+
+#
+jq '."[python]"."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+
+jq '."[python]"."editor.defaultFormatter" |= "ms-python.black-formatter"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+```
+
 #### pre-commit
 
 ```yml

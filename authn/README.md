@@ -17,6 +17,19 @@
 
 - SMART-on-FHIR
 
+## Tools
+
+- [Auth0](https://auth0.com)
+- [AWS Cognito](/aws/aws-cognito.md)
+- [Azure AD](https://azure.microsoft.com/en-us/services/active-directory/)
+- [Clerk](/clerk/README.md)
+- [Gluu](https://gluu.org/)
+- [Keycloak](/keycloak/README.md)
+- [Lucia](/lucia/README.md)
+- [Okta](https://okta.com)
+- [ORY Hydra](ory-hydra.md)
+
 <!--
 https://kinde.com
+https://github.com/stack-auth/stack
 -->

@@ -1,25 +1,18 @@
 # Pagar.me
 
 <!--
-https://www.postman.com/dark-flare-130304/mlearn/collection/b3rkn3i/mark-1-pagar-me-v5
-https://www.postman.com/interstellar-equinox-718029/workspace/pagar-me-2-0/request/5268812-1f38cf4f-952b-4bda-b7ba-94a2cbedc29f
--->
+## KYC
 
-<!--
-https://github.com/EuKaique/PetFood
-https://github.com/redgar1980/e-diarista
-https://github.com/treinaweb/multistack-ediaristas-react?tab=readme-ov-file
-https://github.com/institutoreditus/reditus
-https://github.com/Thiago-Mota-Santos/pagarmepix | https://pagarmepix.vercel.app
-https://github.com/fernando-mashimo/2024-back-end-applications/tree/main/app-health_videos_full-application
-
-https://github.com/pagarme/pagarme-nodejs-sdk/tree/main/doc/controllers
--->
-
-<!--
 Resolução 264, Artigo 13, do Banco Central, a partir de 6 de novembro de 2023
 
 https://docs.pagar.me/page/ambiente-de-teste-para-prova-de-vida
+-->
+
+<!--
+https://www.upinside.com.br/cursos/pagamentos-com-pagar-me
+https://plugins.escolaninjawp.com.br/produto/plugin-de-split-de-pagamento-pagarme-com-dokan-dashboard-2-0
+
+https://dev.to/devdoido/gateway-de-pagamento-de-forma-generica-nao-precisa-ser-complicado-4dl2
 -->
 
 ## Links
@@ -31,6 +24,11 @@ https://docs.pagar.me/page/ambiente-de-teste-para-prova-de-vida
 - [Docs](https://docs.pagar.me/docs/overview-principal)
   - [Chaves de acesso](https://docs.pagar.me/docs/chaves-de-acesso)
 - [Status Page](https://status.pagar.me)
+
+## Postman
+
+- [dark-flare-130304](https://postman.com/dark-flare-130304/mlearn/collection/b3rkn3i/mark-1-pagar-me-v5) 🌟
+- [Solutions_Onboardin_GC](https://postman.com/interstellar-equinox-718029/workspace/pagar-me-2-0/folder/5268812-e6ab7fc5-8a65-4097-8095-cb3e0b2dd355)
 
 ## Library
 
@@ -80,6 +78,14 @@ The account must have split settings enabled, in order to create a recipient
 #### TBD
 
 ```log
+Request denied. Second authentication factor is necessary.
+```
+
+TODO
+
+#### TBD
+
+```log
 IP de origem não autorizado a realizar essa operação.
 ```
 
@@ -91,6 +97,20 @@ https://www.reclameaqui.com.br/pagar-me/ip-de-origem-nao-autorizado-a-realizar-e
 -->
 
 TODO
+
+#### TBD
+
+```log
+TypeError: Do not know how to serialize a BigInt
+```
+
+```ts
+JSON.parse(
+  JSON.stringify(result, (_, value) =>
+    typeof value === 'bigint' ? value.toString() : value,
+  ),
+),
+```
 
 #### Missing Code Parameter
 

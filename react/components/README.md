@@ -9,6 +9,10 @@
 - [React Spectrum](https://react-spectrum.adobe.com)
 - [Tailwind UI](https://tailwindui.com)
 
+<!--
+https://getjustd.com | https://github.com/justdlabs/justd
+-->
+
 ## Blueprint
 
 ```tsx

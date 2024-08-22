@@ -65,3 +65,27 @@ The "images.domains" configuration is deprecated. Please use "images.remotePatte
 ```
 
 TODO
+
+<!--
+const domains = String(process.env.NEXT_PUBLIC_IMAGES_DOMAINS || "").split(",")
+
+const images = {
+  domains: [
+    "s.gravatar.com",
+    "lh3.googleusercontent.com",
+    "api.mapbox.com",
+    ...domains
+  ],
+}
+
+if (process.env.NODE_ENV !== "production") {
+  images["domains"].push("localhost")
+}
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images,
+}
+
+export default nextConfig
+-->

@@ -1,6 +1,13 @@
 # Software as a Service (SaaS)
 
 <!--
+https://microconf.com
+https://www.youtube.com/@MicroConf/videos
+https://www.startupsfortherestofus.com/
+https://www.amazon.com/SaaS-Playbook-Multimillion-Dollar-Startup-Without/dp/B0C87KHT1L
+-->
+
+<!--
 https://app.pluralsight.com/paths/skill/managing-saas-services-skill
 
 https://buildsaasappingo.com/

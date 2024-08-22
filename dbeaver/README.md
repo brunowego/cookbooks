@@ -12,6 +12,8 @@ Machines
   Docker
 -->
 
+**Keywords:** Database GUI
+
 ## App
 
 ### Dependencies

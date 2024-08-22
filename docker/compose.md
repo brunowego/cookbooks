@@ -24,6 +24,10 @@ sudo curl \
     sudo chmod +x /usr/local/bin/docker-compose
 ```
 
+<!--
+brew install docker-compose
+-->
+
 #### Chocolatey
 
 ```sh

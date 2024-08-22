@@ -20,6 +20,8 @@ https://linkedin.com/learning/microservices-security/securing-microservices
 Low Coupling, High Cohesion
 -->
 
+![Production Microservice App](/assets/images/microservice/production-microservice-app.gif)
+
 ## Glossary
 
 - Domain Driven Design (DDD)

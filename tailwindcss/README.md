@@ -69,6 +69,7 @@ https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atai
 - [Tailblocks](https://tailblocks.cc) <!-- https://github.com/mertJF/tailblocks -->
 
 <!--
+https://windstatic.com
 https://mynaui.com
 https://componentland.com
 https://pagedone.io/blocks

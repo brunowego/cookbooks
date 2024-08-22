@@ -2,7 +2,7 @@
 
 <!--
 https://github.com/vercel/next.js/tree/canary/examples/with-mongodb
-
+https://github.com/aaahhhrav15/BookingHound/blob/main/next-app/src/app/api/admin/job-details/route.ts
 https://github.com/amanpalap/magicmessage
 -->
 

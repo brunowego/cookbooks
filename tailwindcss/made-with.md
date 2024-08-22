@@ -22,6 +22,7 @@ https://demo-ecomus-global.myshopify.com
 
 Main Menu
 
+https://deriv.com | https://github.com/binary-com/deriv-com
 https://li.fi
 https://coda.io
 https://gleap.io
@@ -76,14 +77,15 @@ https://simplegoods.co
 
 Hero / Header | Hero
 
+https://www.skalata.vc
 https://tofu.com/
-https://www.gotofu.com/
-https://www.goalto.io/
-https://www.klaviyo.com/
-https://www.usehaystack.io/
+https://gotofu.com/
+https://goalto.io/
+https://klaviyo.com/
+https://usehaystack.io/
 https://manychat.com/
-https://www.faliam.com/
-https://www.teamcamp.app/
+https://faliam.com/
+https://teamcamp.app/
 https://savvycal.com/reserve
 https://about.gitlab.com
 https://deothemes.com/wordpress-plugins/envision-blocks-elementor-widgets-and-addons
@@ -124,6 +126,9 @@ https://neverbeforeseen.co
 https://oneleet.com
 https://gleap.io
 
+https://www.privy.io
+https://seline.so
+https://checkoutpage.co
 https://devmilek.pl
 https://payfit.com
 https://wigwam.app
@@ -152,6 +157,8 @@ https://simplegoods.co
 https://typedream.com
 https://devdojo.com
 https://tailwindcollections-grid-landingpage.netlify.app (used)
+
+
 
 Toast / Error
 
@@ -212,7 +219,8 @@ https://feyapp.com/updates
 
 404 (Not Found)
 
-https://www.alignui.com/product/hr-management
+https://public-us.opendatasoft.com/api/records/1.0/search/?dataset=fablabs&rows=1000
+https://alignui.com/product/hr-management
 https://page-not-found.framer.website/
 https://app.tandem.net/404
 https://prismic.io/404
@@ -229,9 +237,9 @@ https://liveblocks.io/404
 https://coastpay.com/404
 https://contentful.com/404/
 
-https://www.devmilek.pl/404
+https://devmilek.pl/404
 https://wigwam.app/404
-https://www.wiz.io/404
+https://wiz.io/404
 https://shakuro.com/404
 https://pagedone.io/404
 https://infisical.com/404
@@ -250,6 +258,7 @@ https://ytsaurus.tech | https://github.com/ytsaurus/ytsaurus-ui
 
 Reviews
 
+https://x.com/DilanOktay80/status/1824217052036444620
 https://tailwindui.com/components/ecommerce/components/reviews
 https://producthunt.com/products/tailwind-css/reviews
 https://material-tailwind.com/blocks/overview-sections
@@ -300,6 +309,10 @@ https://vercel.com/help
 https://chatwoot.com/help-center
 https://paraform.com/help
 
+Terms / Security
+
+https://www.privy.io/security
+
 GameFi
 
 https://javelingames.io
@@ -330,16 +343,9 @@ https://winr.games/stake
 
 Search
 
+https://ulysse.com/en
 https://dribbble.com/shots/24544533-Search-Interaction-Design
 https://himalayas.app/jobs
-
-Stats
-
-https://keenthemes.com/metronic/tailwind/demo1
-
-https://app.cometchat.com/app/2557845219771d1a/overview
-https://helicone.ai/dashboard
-https://projectx-eight-gilt.vercel.app/open
 
 Store
 
@@ -372,6 +378,7 @@ https://pagedone.lemonsqueezy.com/affiliates
 
 Public Profile
 
+https://zenn.dev/serinuntius?tab=scraps
 https://dribbble.com/shots/24545050-Company-page-with-key-data
 https://dribbble.com/shots/24345777-Profile
 https://dribbble.com/shots/24535002-Area-land-sales-service-visual-identity
@@ -456,6 +463,7 @@ https://app.middleware.io/auth/login
 https://dash.reviews.io/login
 https://app.onmarathon.com/register
 
+https://animations.dev/login
 https://app.wordtune.com/auth/signup
 https://app.usehall.com/login
 https://app.sigle.io/login
@@ -525,9 +533,13 @@ Post Blocks
 
 https://wefunder.com/explore
 
+Float Button
+
+https://shakuro.com
+
 Mosaic / Section / Section
 
-https://www.maxio.com
+https://maxio.com
 https://rifei.com.br
 https://zave.it/#creators
 https://savvycal.com/reserve
@@ -543,6 +555,8 @@ https://linear.app/homepage
 https://omens.com.br
 https://send.it
 
+https://mateusbelicio.github.io/bmi-calculator/
+https://polar.sh
 https://im-agency.vercel.app
 https://payfit.com
 https://wigwam.app
@@ -620,7 +634,7 @@ https://coinhall.org
 
 Landing Page
 
-https://www.alignui.com/
+https://alignui.com/
 https://mvp.easyui.pro/
 https://waita.framer.website/?via=julesvcode
 https://withalba.com
@@ -636,6 +650,8 @@ https://omise.co
 https://localcan.com
 https://jobbliss.com
 
+https://www.labrahmi.me | https://github.com/0sssama/website
+https://animations.dev
 https://next-forge.com
 https://gleap.io
 https://paraform.com/chrome
@@ -673,6 +689,10 @@ Marketplace
 
 https://app.contentful.com/spaces/wks05v1n2qoi/apps/list
 
+Register
+
+https://boostlab.com.br/cadastro
+
 Guides
 
 https://simplegoods.co/guides
@@ -683,7 +703,7 @@ https://eqseed.com/investir/petdelicia
 
 Pricing
 
-https://www.kommo.com/br/precos/compare-planos/
+https://kommo.com/br/precos/compare-planos/
 https://modulesystem.design/#getmodule
 https://fidforward.com/pricing
 https://rotato.app/pricing
@@ -698,6 +718,9 @@ https://reviews.io/front/pricingplans
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://catsync.co
+https://web.iconly.pro/pro
+https://iconly.pro
 https://cookiechimp.com/accounts/5J4tE6/edit/account_settings#billing
 https://crunchydata.com/pricing
 https://usehall.com/pricing
@@ -772,6 +795,7 @@ https://app.plain.com/workspaces
 
 Dashboard
 
+https://dribbble.com/shots/24696791-Coinstax-Cryptocurrency-Dashboard | https://layers.to/layers/clzwejd39001ule0d7pln92ot
 https://dashboard.hookdeck.com/connections
 https://dribbble.com/shots/24585141--data-catalog
 https://try-stand.com/team/da9ed47c
@@ -786,6 +810,7 @@ https://strut.so/c/021b95e6-0c3a-4b5a-8190-d35116b892c0
 https://app.premai.io/projects
 https://app.netbird.io/peers | https://github.com/netbirdio/netbird
 
+https://app.seline.so/projects/henkiz.com
 https://console.anthropic.com/dashboard
 https://fintracker-zeta.vercel.app
 https://app.wordtune.com/editor/write/a2048701-2545-49da-9616-8139ca12eec5
@@ -856,13 +881,19 @@ Welcome
 
 https://app.eververse.ai/welcome
 
-Insights / Analytics / Metrics
+Insights / Analytics / Metrics / Stats
 
+https://keenthemes.com/metronic/tailwind/demo1
 https://dashboard.lusha.com/insights
 
 https://productlane.com/insights
 https://app.plane.so/shopner
 https://app.plane.so/shopner/analytics
+https://fal.ai/models/fal-ai/flux-lora-general-training/analytics
+https://app.seline.so/projects/henkiz.com
+https://app.cometchat.com/app/2557845219771d1a/overview
+https://helicone.ai/dashboard
+https://projectx-eight-gilt.vercel.app/open
 
 Delete Account
 
@@ -887,6 +918,7 @@ https://app.bossabox.com/profile/settings
 
 Settings
 
+https://app.bossabox.com/profile/settings
 https://app.rifei.com.br/account
 https://app.frame.so/company/qgZKo5rL/settings/company/general
 https://app.wordtune.com/editor/account?origin=avatarMenu&originCTA=account&originApp=editor&referrer=editor
@@ -982,6 +1014,7 @@ https://leyaai.com/quiz
 
 Onboarding
 
+https://loom.com/welcome
 https://captable.com.br/users/sign_up
 https://try-stand.com (GOOD)
 https://auth.lusha.com/onboarding
@@ -1119,7 +1152,7 @@ Shopping Cart
 
 Footer
 
-https://zave.it/#sofunktionierts
+https://zave.it
 https://truewind.ai
 https://rallyon.com
 https://alice.com.br
@@ -1134,8 +1167,8 @@ https://oneleet.com
 https://tangem.com/en
 https://swan.io
 https://zapal.tech
-https://fiction.com
 
+https://wickedtemplates.com
 https://significa.co
 https://wearebren.com
 https://bentoml.com

@@ -11,6 +11,8 @@ https://github.com/emintatli/ai-headshot-generator
 https://github.com/TechInnovatorAI/headshots-ai
 https://github.com/jrarcher17/headshots-ai
 https://github.com/lucky-elsa/headshot-ai
+
+https://fal.ai/models/fal-ai/flux-lora-general-training
 -->
 
 TODO

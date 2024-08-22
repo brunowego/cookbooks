@@ -31,3 +31,11 @@ dig "$DOMAIN" +short NS
 ```
 
 Try use something like TunnelBear and change to another country.
+
+### TBD
+
+```log
+Registry status: Client transfer prohibited. Please unlock and allow a few hours to update.
+```
+
+TODO

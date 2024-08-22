@@ -85,6 +85,8 @@ source ~/.zshrc
 UPDATE products SET price = ROUND(price::numeric, 2) WHERE price IS NOT NULL;
 ```
 
+TODO
+
 ### Issues
 
 #### TBD

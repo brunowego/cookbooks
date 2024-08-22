@@ -1,6 +1,8 @@
 # GraphQL
 
 <!--
+https://github.com/datocms/next-minimalistic-photography/blob/main/app/contact/page.graphql.tsx
+
 Examples
 
 https://github.com/belgattitude/mindfulness/tree/main

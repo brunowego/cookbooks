@@ -1,3 +1,5 @@
 # Query Builder
 
-TODO
+## Languages
+
+- [TypeScript](/typescript/query-builder.md)

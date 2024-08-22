@@ -19,6 +19,10 @@ https://github.com/typegoose/typegoose
 
 - Object Document Mapping (ODM)
 
+## Learn
+
+- [Speed CRUD](https://youtube.com/watch?v=Lp57L8GLyfQ)
+
 ## Library
 
 ### Tips

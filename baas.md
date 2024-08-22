@@ -4,6 +4,7 @@
 
 ### Managed
 
+- [Convex](/convex.md)
 - [Firebase](/google/firebase.md)
 - [Supabase](/supabase/README.md)
 

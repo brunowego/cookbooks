@@ -1,6 +1,6 @@
 # Supabase
 
-**Keywords:** Firebase Alternative
+**Keywords:** Firebase Alternative, Backend as a Service
 
 ## Links
 

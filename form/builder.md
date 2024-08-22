@@ -14,6 +14,12 @@ https://github.com/TypeflowAI/typeflowai?tab=readme-ov-file
 - [Tally](/tally.md) 🌟
 - [Typeform](https://typeform.com)
 
+<!--
+https://respondi.app
+https://heyform.net
+https://formspark.io
+-->
+
 ### Open Source
 
 <!--

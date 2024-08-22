@@ -1,22 +1,16 @@
 # Extend with Stripe
 
 <!--
-https://github.com/CezarRoberto/payment-amqp-api
-https://github.com/aliimam-in/aliimam/blob/main/apps/web/src/lib/stripe.ts
-
 https://vercel.com/templates/next.js/subscription-starter
 
+https://github.com/CezarRoberto/payment-amqp-api
 https://github.com/webprodigies/fuzzie-production/blob/main/src/app/api/payment/route.ts
-
 https://github.com/vercel/nextjs-subscription-payments
 -->
 
-## Installation
+## Dependencies
 
-```sh
-# Using Bun
-bun add @stripe/stripe-js stripe
-```
+- [Stripe](/stripe/README.md#nodejs-library)
 
 ## Configuration
 
@@ -43,3 +37,10 @@ STRIPE_WEBHOOK_SECRET=
   }
 }
 ```
+
+<!--
+**Refer:** `./stripe-fixtures.json`
+
+```json
+```
+-->

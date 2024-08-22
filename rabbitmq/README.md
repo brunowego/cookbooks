@@ -1,6 +1,6 @@
 # RabbitMQ
 
-**Keywords:** Messaging System
+**Keywords:** Messaging System, Fully-featured Message Broker
 
 <!--
 https://gist.github.com/nicosingh/08be6d6e7605a43fe52d1f201c2b47d8

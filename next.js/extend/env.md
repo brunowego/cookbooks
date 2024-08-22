@@ -9,6 +9,16 @@ pnpm add zod
 
 ## Configuration
 
+```tsx
+if (process.env.NEXT_PUBLIC_ENV === undefined) {
+  throw new Error('NEXT_PUBLIC_ENV is not defined.')
+}
+
+// ...
+```
+
+### Using Zod
+
 **Refer:** `./src/env.ts`
 
 ```ts

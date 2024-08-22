@@ -7,7 +7,8 @@
 git log | grep Author: | sort -u
 
 # Names
-git shortlog -s | cut -c8-
+git -P shortlog -s | cut -c8-
+git -P shortlog -sn
 ```
 
 ## Tips

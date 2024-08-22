@@ -1,10 +1,6 @@
 # Redis
 
-<!--
-https://medium.com/swlh/use-the-source-redis-internal-tricks-5a8b735b9ef0
--->
-
-**Keywords:** Distributed Cache
+**Keywords:** Distributed Cache, In-Memory Data Store
 
 ## Links
 
@@ -14,7 +10,11 @@ https://medium.com/swlh/use-the-source-redis-internal-tricks-5a8b735b9ef0
 
 - [twemproxy (a.k.a nutcracker)](/twemproxy.md)
 
-## Tools
+## API-compatible
+
+- [Dragonfly](/dragonfly.md)
+
+## GUI
 
 - [DBeaver Enterprise Edition (EE)](/dbeaver/dbeaver-ee.md)
 - [RedisInsight](/redis/redisinsight.md)
@@ -114,7 +114,7 @@ docker volume rm redis-data
 ---
 services:
   redis:
-    image: docker.io/library/redis:7.2.3-alpine
+    image: docker.io/library/redis:7.4.0-alpine
     volumes:
       - type: volume
         source: redis-data

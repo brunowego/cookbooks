@@ -5,6 +5,8 @@ path:src/app/api path:route.ts content:hono
 -->
 
 <!--
+https://www.youtube.com/watch?v=2Y3A4deNs9A
+
 https://github.com/TheBinaryGuy/next-hono-lucia
 
 https://github.com/cloudflare/workers-sdk/blob/main/packages/turbo-r2-archive/src/routes.ts

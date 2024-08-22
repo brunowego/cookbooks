@@ -4,11 +4,18 @@
 https://docs.slingdata.io/sling-cli/github-actions
 -->
 
+**Keywords:** Data Integration
+
 ## Links
 
 - [Org. Repository](https://github.com/slingdata-io)
 - [Main Website](https://slingdata.io)
+- [Connectors](https://slingdata.io/en/connectors)
 - [Docs](https://docs.slingdata.io)
+
+## Learn
+
+- [How to Quickly Import Local JSON files into PostgreSQL](https://blog.slingdata.io/import-local-json-files-into-postgresql)
 
 ## CLi
 

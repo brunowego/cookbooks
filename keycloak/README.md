@@ -45,17 +45,6 @@ Red Hat WildFly (JBoss Application Server)
 - [Awesome Keycloak](https://github.com/thomasdarimont/awesome-keycloak)
 - [Downloads](https://keycloak.org/downloads.html)
 
-## Alternatives
-
-<!-- (Identity Provider (IdP)) -->
-
-- [Auth0](https://auth0.com)
-- [AWS Cognito](/aws/aws-cognito.md)
-- [Azure AD](https://azure.microsoft.com/en-us/services/active-directory/)
-- [Gluu](https://gluu.org/)
-- [Okta](https://okta.com)
-- [ORY Hydra](ory-hydra.md)
-
 ## Tools
 
 - [Keycloak Realm Generator & Importer (kci)](/kci.md)

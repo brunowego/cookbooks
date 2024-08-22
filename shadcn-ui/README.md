@@ -50,25 +50,25 @@ https://github.com/kiliman/shadcn-custom-theme
 
 ```sh
 # Using Bun
-bunx shadcn-ui@latest -h
+pnpx shadcn-ui@latest -h
 ```
 
 ### Usage
 
 ```sh
 #
-bunx shadcn-ui@latest init
-bunx shadcn-ui@latest init -c ./packages/ui
+pnpx shadcn-ui@latest init
+pnpx shadcn-ui@latest init -c ./packages/ui
 
 #
-bunx shadcn-ui@latest add <name>
-bunx shadcn-ui@latest add -c ./packages/ui <name>
+pnpx shadcn-ui@latest add <name>
+pnpx shadcn-ui@latest add -c ./packages/ui <name>
 
 #
-bunx shadcn-ui@latest diff
-bunx shadcn-ui@latest diff -c ./packages/ui
-bunx shadcn-ui@latest diff <name>
-bunx shadcn-ui@latest diff -c ./packages/ui <name>
+pnpx shadcn-ui@latest diff
+pnpx shadcn-ui@latest diff -c ./packages/ui
+pnpx shadcn-ui@latest diff <name>
+pnpx shadcn-ui@latest diff -c ./packages/ui <name>
 ```
 
 <!--
@@ -84,3 +84,13 @@ bunx shadcn-ui@latest diff -c ./packages/ui <name>
 ✔ Are you using React Server Components? … yes
 ✔ Write configuration to components.json. Proceed? yes
 -->
+
+### Issues
+
+#### TBD
+
+```log
+Error: Tailwind CSS is not installed. Visit https://tailwindcss.com/docs/installation to get started.
+```
+
+TODO
