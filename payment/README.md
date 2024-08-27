@@ -7,6 +7,10 @@
   - [Payment Security](https://blog.bytebytego.com/p/payment-security)
   - [How to learn payments?](https://blog.bytebytego.com/p/how-to-learn-payments)
 
+## Learn
+
+- [PSP x Gateway: qual é a diferença? | Pagar.me Pagamentos](https://youtube.com/watch?v=Y-rmt1pLnSY)
+
 <!-- ## Components
 
 - Ledger

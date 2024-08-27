@@ -1,10 +1,13 @@
 # Code Snippet
 
-## Tools
+## Screenshot
 
-- [Ray.so](https://ray.so)
+- Code
+  - [Ray.so](https://ray.so)
+- Terminal
+  - [termshot](/termshot.md)
 
 <!--
-https://github.com/carbon-app/carbon
+https://github.com/carbon-app/carbon | https://carbon.now.sh
 https://github.com/nimone/code-screeshot
 -->

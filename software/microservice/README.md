@@ -24,7 +24,7 @@ Low Coupling, High Cohesion
 
 ## Glossary
 
-- Domain Driven Design (DDD)
+- Domain-Driven Design (DDD)
 - Event-Driven Architecture (EDA)
 
 ## Articles

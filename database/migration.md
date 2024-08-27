@@ -13,3 +13,7 @@ ALTER TABLE "stores" ADD CONSTRAINT "stores_ein_unique" UNIQUE("ein");
 ALTER TABLE "stores" DROP CONSTRAINT "stores_ein_unique";--> statement-breakpoint
 ALTER TABLE "stores" DROP COLUMN IF EXISTS "ein";
 -->
+
+<!--
+create_users_table
+-->

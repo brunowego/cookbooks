@@ -2,7 +2,7 @@
 
 ## Links
 
-- [test-cors.org](https://test-cors.org)
+- [CORS Tester](https://cors-test.codehappy.dev)
 
 ## References
 

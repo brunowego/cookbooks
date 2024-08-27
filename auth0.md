@@ -12,7 +12,34 @@ https://egghead.io/blog/saas-app-with-nextjs-prisma-auth0-and-stripe
 ## Links
 
 - [Main Website](https://auth0.com)
+- [Dashboard](https://manage.auth0.com/dashboard)
 
 ## Guides
 
 - [Next.js](https://auth0.com/docs/quickstart/webapp/nextjs)
+
+## Certifications
+
+- GDPR Compliance
+- Gold CSA Star Certification
+- HIPAA Compliance
+- ISO 27001 Certified
+- ISO 27018 Certified
+- PCI DSS Compliance
+- SOC 2 Type II Certified
+
+## Learn
+
+- [Auth0 in 100 Seconds // And beyond with a Next.js Authentication Tutorial](https://youtube.com/watch?v=yufqeJLP1rI)
+
+## Samples
+
+- [auth0-express-webapp-sample](https://github.com/auth0-samples/auth0-express-webapp-sample)
+
+## Tips
+
+### Create Application
+
+1. [Dashboard](https://manage.auth0.com/dashboard) -> Applications -> Create Application
+2. Name: `<App Name>` -> Regular Web Application -> Create
+3. Settings -> Allowed Callback URLs: `http://localhost:3000/callback`

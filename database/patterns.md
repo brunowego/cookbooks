@@ -10,3 +10,7 @@
 - JSON/NoSQL Model
 - Key-Value Model
 - Traditional Relational Model
+
+<!--
+Group, Attribute, Block (GAB) Model
+-->

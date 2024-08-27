@@ -3,6 +3,11 @@
 <!--
 https://github.com/nearform/fastify-auth0-verify
 
+https://github.com/261497-FullStackDev-Nursing-Recording/nurse-backend-fastify/blob/main/src/plugins/auth.ts
+https://github.com/JeonB/fav-mov/blob/master/src/plugins/auth.ts
+https://github.com/doichev-kostia/fastify-guide/blob/master/src/plugins/auth.ts
+https://github.com/wendachye/mightyjaxx-nodejs/blob/main/src/plugins/auth.ts
+
 https://github.com/4NI4/poap/blob/master/server/src/plugins/optional-auth-decorator.ts
 https://github.com/riccardoperra/codeimage/blob/main/apps/api/src/plugins/auth0.ts
 https://github.com/Symblight/balance-mate/blob/main/packages/server/src/plugins/auth0-plugin.ts

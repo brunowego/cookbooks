@@ -23,11 +23,6 @@ pnpm add @biomejs/biome -D
 
 ### Configuration
 
-<!--
-"lint": "biome check .",
-"lint:fix": "biome check . --apply",
--->
-
 **Refer:** `./biome.json`
 
 ```json
@@ -99,6 +94,29 @@ jq '."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"
 
 #
 jq '."editor.defaultFormatter" |= "biomejs.biome"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
+```
+
+### Issues
+
+#### Enable Decorators
+
+```log
+Decorators are not valid here. biome (parse)
+```
+
+**Refer:** `./biome.json`
+
+```json
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
+  // ...
+  "javascript": {
+    // ...
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    }
+  }
+}
 ```
 
 ## CLI

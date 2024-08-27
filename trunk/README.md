@@ -246,6 +246,16 @@ git config --unset core.hooksPath
 
 ### Issues
 
+#### TBD
+
+```log
+✖ --upstream 'HEAD' not found in repo.
+```
+
+```sh
+git config --unset core.hooksPath
+```
+
 #### Blocked Push
 
 ```log

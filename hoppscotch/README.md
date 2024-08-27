@@ -23,6 +23,31 @@ https://artifacthub.io/packages/helm/deliveryhero/hoppscotch
 brew install --cask hoppscotch
 ```
 
+### Commands
+
+```sh
+hopp -h
+```
+
+### Usage
+
+<!--
+echo '[]' > ./hoppscotch_collection.json
+-->
+
+```sh
+hopp test ./hoppscotch_collection.json
+```
+
+## CLI
+
+### Installation
+
+```sh
+# Using npm
+npm install @hoppscotch/cli -g
+```
+
 ## Docker
 
 ### Network

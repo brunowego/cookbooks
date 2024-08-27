@@ -15,7 +15,7 @@ https://postman.com/<name>
 https://<name>.postman.co/settings/team/custom-domains
 -->
 
-**Keywords:** API Testing
+**Keywords:** API Testing Client
 
 ## Links
 
@@ -89,3 +89,43 @@ Error: connect ECONNREFUSED 127.0.0.1:13000
 ```
 
 TODO
+
+## CLI
+
+### Installation
+
+```sh
+#
+brew install --cask postman-cli
+```
+
+### Commands
+
+```sh
+postman -h
+```
+
+### Initialize
+
+```sh
+#
+postman login
+
+#
+postman logout
+```
+
+### Usage
+
+```sh
+#
+echo '{}' > ./postman_environment.json
+
+#
+postman collection run ./postman_environment.json
+```
+
+<!--
+postman api lint <api>
+postman api publish <api-id>
+-->

@@ -1,6 +1,10 @@
 # autocannon
 
-**Ketwords:** Benchmarking Tool
+**Ketwords:** API Benchmark
+
+<!--
+https://github.com/artem-galas/ComicsShop/tree/master/StressTest
+-->
 
 ## CLI
 
@@ -21,6 +25,7 @@ autocannon -h
 ### Usage
 
 ```sh
+#
 autocannon \
   -c 100 \
   -d 5 \

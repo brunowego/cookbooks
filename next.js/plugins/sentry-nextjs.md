@@ -1,6 +1,14 @@
 # With Sentry
 
 <!--
+SENTRY_ORG=sellit
+SENTRY_PROJECT=web
+SENTRY_DSN=
+SENTRY_AUTH_TOKEN=
+SENTRY_LOG_LEVEL=debug
+-->
+
+<!--
 enabled: process.env.NODE_ENV !== 'development',
 -->
 

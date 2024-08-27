@@ -33,6 +33,12 @@ anchor lcl audit
 
 #
 anchor lcl bootstrap
+
+#
+anchor lcl setup
+
+#
+anchor lcl trust
 ```
 
 ### Usage
@@ -71,6 +77,11 @@ const withAutoCert = autoCert({
 })
 
 export default withAutoCert(nextConfig)
+```
+
+```sh
+#
+anchor lcl setup
 ```
 
 ### Issues

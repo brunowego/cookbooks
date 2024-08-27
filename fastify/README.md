@@ -3,6 +3,9 @@
 <!--
 https://github.com/platformatic/learn-fastify
 
+https://github.com/nktfh100/campass
+https://github.com/dcramer/peated
+https://github.com/JeonB/fav-mov
 https://github.com/pedroapfilho/acme-monorepo
 https://github.com/theogravity/fastify-starter-turbo-monorepo
 https://github.com/HillcrestEnigma/mutiny
