@@ -1,5 +1,15 @@
 # Extend with Sentry
 
+<!--
+https://github.com/theponti/rocco-api
+https://github.com/CNLHC/rubbish-dashboard-template
+
+https://github.com/kamilkisiela/graphql-hive/blob/main/packages/services/service-common/src/sentry.ts
+https://github.com/Folderr/Folderr/blob/dev/src/backend/Structures/plugins/sentry.ts
+https://github.com/theponti/rocco-api/blob/main/src/plugins/sentry.ts
+https://github.com/FlawedLabs/Evenner/blob/main/packages/server/src/plugins/sentry.ts
+-->
+
 ## Links
 
 - [Docs](https://docs.sentry.io/platforms/javascript/guides/fastify)
@@ -37,3 +47,15 @@ pnpm add @sentry/node @sentry/profiling-node
   // ...
 }
 ```
+
+### TBD
+
+```log
+[Sentry] fastify is not instrumented. This is likely because you required/imported fastify before calling `Sentry.init()`.
+```
+
+<!--
+https://github.com/getsentry/sentry-javascript/issues/12119
+-->
+
+TODO

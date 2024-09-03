@@ -11,6 +11,12 @@ https://stack.convex.dev/types-cookbook
 https://jherr2020.medium.com/real-time-apis-done-right-with-rscs-4b474e253aad
 
 https://airbyte.com/how-to-sync/convex-dev-to-local-csv
+
+https://github.com/aafrzl/nextion
+https://github.com/betiiy-haile/Notion-Clone
+https://github.com/hackstack-dev/hack-stack
+https://codewithantonio.com/projects/notes-app
+https://github.com/samarbadriddin0v/notion-clone
 -->
 
 **Keywords:** Backend as a Service
@@ -52,6 +58,7 @@ convex dev --typecheck disable --until-success
 ```sh
 #
 convex dev
+convex dev --tail-logs
 
 #
 cat ~/.convex/config.json
@@ -63,6 +70,9 @@ convex docs
 #
 convex import --table <name> ./<filename>.jsonl
 convex import --table <name> ./<filename>.jsonl --replace
+
+#
+npx convex data <table> --limit 1000
 
 #
 convex run <functionName> [args]

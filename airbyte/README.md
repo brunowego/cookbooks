@@ -9,6 +9,27 @@
 - [Docs](https://docs.airbyte.com)
   - [Integrations](https://docs.airbyte.com/integrations)
 
+## CLI
+
+### Links
+
+- [Code Repository](https://github.com/airbytehq/abctl)
+
+### Installation
+
+```sh
+# With Homebrew
+brew tap airbytehq/tap
+brew install abctl
+```
+
+<!-- ### Usage -->
+
+<!--
+```sh
+```
+-->
+
 ## Helm
 
 ### Repository

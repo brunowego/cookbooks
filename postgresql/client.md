@@ -185,6 +185,13 @@ pg_dump \
   -n public \
   --schema-only \
   > ./dump-ddl.sql
+
+#
+pg_dump \
+  -d "$DATABASE_URL" \
+  -n public \
+  --schema-only \
+  > ./dump-ddl.sql
 ```
 
 ##### Data Manipulation Language (DML)

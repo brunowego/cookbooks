@@ -6,6 +6,7 @@
 
 ## Glossary
 
+- DNS over HTTPS (DoH)
 - Internet Service Provider (ISP)
 - Time to Live (TTL)
 

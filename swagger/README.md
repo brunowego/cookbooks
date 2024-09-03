@@ -16,7 +16,7 @@ https://example.com/openapi.json
 
 ## Alternatives
 
-- [Apiary](https://apiary.io/)
+- [Apiary](https://apiary.io)
 
 ## Tools
 

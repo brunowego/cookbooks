@@ -49,5 +49,5 @@ Warning: Extra attributes from the server: data-lt-installed
 TODO
 
 <!--
-<html suppressHydrationWarning />
+<html suppressHydrationWarning ... />
 -->

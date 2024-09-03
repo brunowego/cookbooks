@@ -9,6 +9,14 @@ https://github.com/wallabyjs/console-ninja/issues/127
 
 - [Main Website](https://console-ninja.com)
 
+## CLI
+
+TODO
+
+<!--
+~/.console-ninja/.bin
+-->
+
 ## Tips
 
 ### Visual Studio Code
@@ -18,12 +26,12 @@ https://github.com/wallabyjs/console-ninja/issues/127
 code --install-extension WallabyJs.console-ninja
 
 #
-jq '."recommendations" += ["WallabyJs.console-ninja"]' "$HOME"/.vscode/extensions.json | sponge "$HOME"/.vscode/extensions.json
+jq '."recommendations" += ["WallabyJs.console-ninja"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 **Configuration:**
 
 ```sh
 #
-jq '."console-ninja.featureSet" |= "Community"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+jq '."console-ninja.featureSet" |= "Community"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```

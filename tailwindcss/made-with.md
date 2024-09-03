@@ -48,6 +48,7 @@ https://razorui.com/libraries/blade-application-ui/empty-states
 
 Feed / Social Network
 
+https://cerebralvalley.ai/events
 https://teamblind.com
 https://storiny.com
 https://gatsby-medium.vercel.app
@@ -77,6 +78,9 @@ https://simplegoods.co
 
 Hero / Header | Hero
 
+https://tryarcane.com/
+https://t10bank.com.br/
+https://www.fivetran.com
 https://www.skalata.vc
 https://tofu.com/
 https://gotofu.com/
@@ -539,6 +543,7 @@ https://shakuro.com
 
 Mosaic / Section / Section
 
+https://tryarcane.com/
 https://maxio.com
 https://rifei.com.br
 https://zave.it/#creators
@@ -703,6 +708,7 @@ https://eqseed.com/investir/petdelicia
 
 Pricing
 
+https://azimutt.app/pricing
 https://kommo.com/br/precos/compare-planos/
 https://modulesystem.design/#getmodule
 https://fidforward.com/pricing
@@ -1152,6 +1158,7 @@ Shopping Cart
 
 Footer
 
+https://tryarcane.com/
 https://zave.it
 https://truewind.ai
 https://rallyon.com

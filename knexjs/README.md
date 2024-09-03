@@ -42,6 +42,18 @@ mkdir -p ./db/migrations
 "db:seed:make": "knex seed:make --timestamp-filename-prefix",
 -->
 
+### Tips
+
+#### Query Debugging
+
+```sh
+echo 'DEBUG=knex:query' >> ./.env
+```
+
+<!--
+yourQuery.toSQL().toNative()
+-->
+
 ### Issues
 
 #### Missing `ts-node`

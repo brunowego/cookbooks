@@ -47,3 +47,12 @@ npx wrangler init <project-name>
 # Using npm
 npm install wrangler -g
 ```
+
+<!--
+wrangler pages dev dist --env development --port 8786
+wrangler pages deploy dist
+
+wrangler d1 migrations apply sonicjs --local
+wrangler d1 migrations apply sonicjs
+wrangler pages deployment tail
+-->

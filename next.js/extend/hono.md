@@ -5,6 +5,10 @@ path:src/app/api path:route.ts content:hono
 -->
 
 <!--
+https://github.com/search?q=path%3Aapi%2F%5B%5B...route%5D%5D%2Froute.ts&type=code&p=3
+
+https://github.com/jeffersonbraster/finance-sass/tree/main/app/api/%5B%5B...route%5D%5D
+
 https://www.youtube.com/watch?v=2Y3A4deNs9A
 
 https://github.com/TheBinaryGuy/next-hono-lucia

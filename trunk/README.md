@@ -28,7 +28,7 @@ pnpm add @trunkio/launcher -D
 ### Initialization
 
 ```sh
-pnpx trunk init
+npx trunk init
 # or
 ./node_modules/.bin/trunk init
 ```
