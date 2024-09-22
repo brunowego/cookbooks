@@ -4,7 +4,7 @@
 
 ## Links
 
-- [Main Website](https://redis.io/)
+- [Main Website](https://redis.io)
 
 ## Related
 

@@ -244,14 +244,6 @@ echo '/out' >> ./.gitignore
 
 ### Issues
 
-#### TBD
-
-```log
-@acme/web:dev:  WARN  Issue while reading "/path/to/.npmrc". Failed to replace env in config: ${GITHUB_TOKEN}
-```
-
-TODO
-
 #### Compound Component Pattern in Server Component
 
 ```log

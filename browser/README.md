@@ -11,6 +11,7 @@
 ## Browsers
 
 - [Apple Safari](/apple/safari.md)
+- [Arc](/arc.md)
 - [Google Chrome](/google/chrome/README.md)
 - [Microsoft Edge](/microsoft/edge/README.md)
 - [Opera](/opera/README.md)

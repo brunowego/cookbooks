@@ -147,17 +147,15 @@ aws configure \
 #
 cat ~/.aws/config
 cat ~/.aws/credentials
+
+#
+aws configure list-profiles
+aws configure list --profile default
 ```
 
 ### Usage
 
 ```sh
-#
-aws configure list-profiles
-
-#
-aws configure list --profile default
-
 #
 aws s3 ls
 ```

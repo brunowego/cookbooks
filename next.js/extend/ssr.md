@@ -7,6 +7,7 @@
 ## Libraries
 
 - [conform](/conform.md)
+- [next-safe-action](/next.js/extend/safe-action.md)
 - [zsa](/zsa.md)
 
 ## Snippets

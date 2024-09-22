@@ -108,7 +108,7 @@ Decorators are not valid here. biome (parse)
 
 ```json
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.1/schema.json",
   // ...
   "javascript": {
     // ...
@@ -146,6 +146,8 @@ npx @biomejs/biome lint ./
 #
 npx @biomejs/biome check ./
 npx @biomejs/biome check --apply ./
+
+npx @biomejs/biome check --diagnostic-level error ./
 
 #
 npx @biomejs/biome ci ./

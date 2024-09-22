@@ -24,12 +24,25 @@
 - [Azure AD](https://azure.microsoft.com/en-us/services/active-directory/)
 - [Clerk](/clerk/README.md)
 - [Gluu](https://gluu.org/)
-- [Keycloak](/keycloak/README.md)
-- [Lucia](/lucia/README.md)
 - [Okta](https://okta.com)
-- [ORY Hydra](ory-hydra.md)
 
 <!--
+https://fusionauth.io
+-->
+
+### Open Source
+
+- [Auth.js](/next.js/plugins/next-auth/README.md)
+- [Keycloak](/keycloak/README.md)
+- [Lucia](/lucia/README.md)
+- [ORY Hydra](/ory/hydra.md)
+
+<!--
+https://zitadel.com/
 https://kinde.com
+
+https://github.com/logto-io/logto
+https://github.com/goauthentik/authentik
+https://github.com/authelia/authelia
 https://github.com/stack-auth/stack
 -->

@@ -42,17 +42,31 @@ https://github.com/AlexHHPS/typescript-ddd-hexagonal-ddd
 
 ```sh
 #
-pnpm add fastify-cli -D
+npm install fastify-cli -g
 ```
 
 ### Usage
 
 ```sh
 #
-npx fastify -h
+fastify -h
 ```
 
 <!--
 fastify start
 fastify print-routes <file>
 -->
+
+### Issues
+
+#### TBD
+
+```log
+(node:66661) [FSTWRN002] FastifyWarning: The anonymous plugin being registered mixes async and callback styles, which will result in an error in `fastify@5`
+```
+
+<!--
+https://github.com/FlowFuse/flowfuse/issues/3259
+-->
+
+TODO

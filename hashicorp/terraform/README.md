@@ -357,6 +357,20 @@ https://www.youtube.com/watch?v=uFaMUS6Z9fI
 
 ### Issues
 
+#### Wrong Execution Mode
+
+```log
+Error: No valid credential sources found
+```
+
+<!--
+Error: failed to refresh cached credentials, no EC2 IMDS role found, operation error ec2imds: GetMetadata, request canceled, context deadline exceeded
+-->
+
+1. [Terraform Organizations](https://app.terraform.io/app/organizations) -> Select Organization
+2. Workspaces -> Select Workspace
+3. Settings -> General Settings -> Execution Mode -> Local (custom)
+
 #### TBD
 
 ```log

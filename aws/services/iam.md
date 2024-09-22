@@ -158,7 +158,7 @@ aws sts get-caller-identity
 1. AWS Management Console -> AWS services
 2. Security, Identity, & Compliance -> [IAM](https://console.aws.amazon.com/iam/home?region=us-east-2#/home)
 3. Users -> Add User
-   - Set user details -> User name: <name>
+   - Set user details -> User name: `<name>`
    - Select AWS access type -> Access type: Check "Programmatic access"
    - Next: Permissions
    - Set permissions -> Attach existing policies directly -> Check "AdministratorAccess"

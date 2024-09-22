@@ -1,12 +1,20 @@
 # Platform-as-a-Service (PaaS)
 
+**Keywords:** Cloud Application Platform
+
 ## Implementations
 
 ### Managed
 
+- [Heroku](/heroku/README.md)
 - [OpenShift](https://openshift.com)
+- [Railway](/railway/README.md)
+- [Render](/render/README.md)
+- [Vercel](/vercel/README.md)
 
 <!--
+DigitalOcean
+
 https://withcoherence.com
 -->
 

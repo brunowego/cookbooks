@@ -1,7 +1,7 @@
 # English
 
 <!--
-https://ibs-americas.com/pt/
+https://ibs-americas.com/pt
 
 https://www.skillshare.com/home?via=header
 
@@ -15,8 +15,13 @@ https://linkedin.com/learning/grammar-foundations/
 
 ## Tests
 
-- IELTS
+- International English Language Testing System (IELTS)
 
 ## References
 
 - European Framework of Reference (CEFR)
+
+## Terms
+
+- idunno = I don't know
+- lmao = Laughing

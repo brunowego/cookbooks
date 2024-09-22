@@ -2,6 +2,10 @@
 
 **Keywords:** Node.js Version Manager
 
+<!--
+Written in Rust
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/volta-cli/volta)
@@ -36,7 +40,7 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 export PATH="$PATH:$HOME/.volta/bin"
 
 # Volta Features
-# export VOLTA_FEATURE_PNPM=1
+export VOLTA_FEATURE_PNPM=1
 ```
 
 ```sh
@@ -98,3 +102,19 @@ source <(volta completions zsh) # bash
 ```sh
 source ~/.zshrc
 ``` -->
+
+### Issues
+
+#### Missing PNPM
+
+```log
+ WARN  Unsupported engine: wanted: {"node":">=20.17.0 <20.18.0"} (current: {"node":"v20.12.2","pnpm":"9.7.0"})
+apps/api                                 |  WARN  Unsupported engine: wanted: {"node":">=20.17.0 <20.18.0"} (current: {"node":"v20.12.2","pnpm":"9.7.0"})
+apps/web                                 |  WARN  Unsupported engine: wanted: {"node":">=20.17.0 <20.18.0"} (current: {"node":"v20.12.2","pnpm":"9.7.0"})
+```
+
+```sh
+export VOLTA_FEATURE_PNPM=1
+
+volta pin pnpm
+```

@@ -1,4 +1,4 @@
-# Azure Synapse
+# Azure Synapse Analytics
 
 ## Glossary
 

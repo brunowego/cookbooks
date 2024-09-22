@@ -35,3 +35,13 @@ jq '."recommendations" += ["WallabyJs.console-ninja"]' "$PWD"/.vscode/extensions
 #
 jq '."console-ninja.featureSet" |= "Community"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 ```
+
+## Issues
+
+### TBD
+
+```log
+✘ next.js v13.4.20-canary.15 is not yet supported in the Community edition of Console Ninja.
+```
+
+TODO

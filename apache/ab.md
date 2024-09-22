@@ -28,12 +28,12 @@ ab -h
 ab \
   -n 1000 \
   -c 100 \
-  https://xyz.tld
+  http://127.0.0.1:3000/ping
 
 #
 ab \
   -n 2000 \
   -c 30 \
   -T application/json \
-  https://xyz.tld
+  http://127.0.0.1:3000/ping
 ```

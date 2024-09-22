@@ -37,7 +37,9 @@ npx trunk init
 
 ```sh
 #
-trunk config share
+npx trunk config share
+# or, hide
+npx trunk config hide
 ```
 
 **Refer:** `./package.json`
@@ -125,6 +127,9 @@ trunk -h
 trunk init
 
 #
+trunk config print
+
+#
 trunk login
 trunk whoami
 
@@ -205,6 +210,9 @@ pkill trunk
 ```sh
 #
 trunk check list
+
+#
+trunk check enable biome
 
 #
 trunk check disable checkov

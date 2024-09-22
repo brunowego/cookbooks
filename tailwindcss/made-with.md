@@ -629,9 +629,10 @@ Tracker
 
 https://app.midday.ai/tracker
 
-Team Switch
+Team Switch / Company Switch
 
 https://app.midday.ai
+https://admin.shopify.com/?no_redirect=true
 
 Crypto
 

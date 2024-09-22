@@ -40,7 +40,7 @@ https://medium.com/application-security/openid-connect-tester-for-developers-634
 - [Dex](/dex/README.md)
 - [IdentityServer](/identityserver.md)
 - [Keycloak](/keycloak/README.md)
-- [Ory Hydra](/ory-hydra.md)
+- [Ory Hydra](/ory-hydra/README.md)
 
 <!-- ##
 

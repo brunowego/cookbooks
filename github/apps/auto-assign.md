@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Code Repository](https://github.com/kentaro-m/auto-assign/)
+- [Code Repository](https://github.com/kentaro-m/auto-assign)
 - [Main Page](https://github.com/apps/auto-assign)
 
 ## Installation

@@ -52,6 +52,16 @@ SHOW max_connections;
 SHOW shared_buffers;
 ```
 
+### JSONB Search
+
+```sql
+SELECT *
+FROM <table-name>
+WHERE '<string>' IN (
+    SELECT jsonb_array_elements_text(<column-name>)
+);
+```
+
 ### Drop Tables
 
 ```sql

@@ -13,7 +13,7 @@ terraform workspace -h
 terraform workspace list
 
 #
-terraform workspace new <ws-name> # dev, uat, pre-prod, prod
+terraform workspace new <ws-name> # dev, uat, pre-prd or stg, prd
 
 #
 terraform workspace show <ws-name>

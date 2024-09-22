@@ -1,5 +1,7 @@
 # zsa
 
+**Keywords:** Type-Safe Server Actions
+
 ## Links
 
 - [Code Repository](https://github.com/IdoPesok/zsa)

@@ -13,13 +13,17 @@ https://yusufs.medium.com/practical-example-of-implementing-oauth-2-0-using-ory-
 
 **Keywords:** Identity Provider (IdP)
 
+## Links
+
+- [Main Website](https://ory.sh/hydra)
+
 ## Guides
 
-- [REST API](https://www.ory.sh/hydra/docs/reference/api/)
+- [REST API](https://ory.sh/hydra/docs/reference/api/)
 
 ## References
 
-- [5 Minute Tutorial](https://www.ory.sh/hydra/docs/5min-tutorial/)
+- [5 Minute Tutorial](https://ory.sh/hydra/docs/5min-tutorial)
 
 ## Tools
 

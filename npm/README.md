@@ -237,6 +237,21 @@ EOF
 
 ### Issues
 
+#### Missing Github Token Environment Variable
+
+```log
+ WARN  Issue while reading "/absolute/path/to/.npmrc". Failed to replace env in config: ${GITHUB_TOKEN}
+```
+
+<!--
+https://github.com/pnpm/pnpm/issues/8448
+https://github.com/pnpm/pnpm/issues/5914
+-->
+
+```sh
+export GITHUB_TOKEN='ghp_*'
+```
+
 #### Link Package Binaries
 
 ```log

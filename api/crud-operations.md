@@ -24,3 +24,8 @@
 - Endpoint: `GET /items/by-param/:paramValue`
 - Use Case: This approach is better suited when searching for a specific item that should uniquely match the given parameter (similar to finding by ID). It conveys that the result should be a single item, not a list.
 - Example: `GET /items/by-serial/:serialNumber` — Returns the item with the specific serial number.
+
+<!--
+findAllByParams -> LIST
+findByParams or findOneByParams -> SINGLE
+-->

@@ -1,5 +1,7 @@
 # Arc
 
+**Keywords:** Web Browser
+
 ## Links
 
 - [Main Website](https://arc.net)

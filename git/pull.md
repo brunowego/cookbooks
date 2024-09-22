@@ -2,6 +2,13 @@
 
 ## Tips
 
+### Update Current Branch with Remote
+
+```sh
+#
+git pull origin main
+```
+
 ### Run Subdirectories
 
 ```sh

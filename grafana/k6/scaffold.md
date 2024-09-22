@@ -47,16 +47,20 @@ import http from 'k6/http'
 import { check } from 'k6'
 
 export const options = {
-  vus: 1,
-  vusMax: 10,
-  duration: '10m',
+  scenarios: {
+    simple: {
+      executor: 'constant-vus',
+      vus: 12,
+      duration: '3m',
+    },
+  },
 }
 
 export default function () {
-  let res = http.get('http://127.0.0.1:3000')
+  const res = http.get('http://127.0.0.1:3000')
 
   check(res, {
-    'is status 200': (r) => r.status === 200,
+    'status is 200': (r) => r.status === 200,
   })
 }
 ```

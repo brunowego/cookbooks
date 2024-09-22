@@ -10,6 +10,7 @@
 
 ## Shortcuts
 
-| Shortcut               | Description  |
-| ---------------------- | ------------ |
-| `Option + Command + J` | Open Console |
+| Shortcut               | Description              |
+| ---------------------- | ------------------------ |
+| `Option + Command + I` | Open DevTools / Elements |
+| `Option + Command + J` | Open DevTools / Console  |

@@ -32,10 +32,10 @@ https://github.com/conda/conda
 ### EditorConfig
 
 ```sh
-cat << EOF > ./.editorconfig
+cat << EOF >> ./.editorconfig
+
 [*.py]
 indent_size = 4
-
 EOF
 ```
 

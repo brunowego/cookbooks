@@ -1,5 +1,7 @@
 # Balsamiq
 
+**Keywords:** Wireframe
+
 ## Links
 
 - [Main Website](https://balsamiq.com)

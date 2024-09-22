@@ -12,8 +12,13 @@
 
 ## Implementations
 
+### Managed
+
+- [Sumsub](https://sumsub.com/kyc-compliance)
+
+### Open Source
+
 - [Ballerine](/ballerine.md)
-- [Sumsub](https://sumsub.com/kyc-compliance/)
 
 <!--
 https://veriff.com
