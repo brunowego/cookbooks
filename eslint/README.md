@@ -90,6 +90,14 @@ jq '."eslint.workingDirectories" += [{ "mode": "auto" }]' "$PWD/.vscode/settings
 
 ### Issues
 
+#### TBD
+
+```log
+⨯ ESLint: Failed to load config "plugin:prettier-plugin-organize-imports" to extend from. Referenced from: /vercel/path0/.eslintrc.json
+```
+
+TODO
+
 #### Missing Node Environment
 
 ```log

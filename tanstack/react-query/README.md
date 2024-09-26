@@ -58,6 +58,14 @@ const {
 #### TBD
 
 ```log
+ ⨯ Error: Cannot find module './vendor-chunks/@tanstack.js'
+```
+
+TODO
+
+#### TBD
+
+```log
 Property '#private' in type 'QueryClient' refers to a different member that cannot be accessed from within type 'QueryClient'.
 ```
 

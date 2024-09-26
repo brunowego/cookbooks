@@ -17,7 +17,8 @@ npx playwright codegen -h
 ```sh
 #
 playwright codegen <url>
-playwright codegen --save-storage 'auth.json' github.com/microsoft/playwright
+playwright codegen --save-storage './playwright/.auth/user.json' <url>
+playwright codegen --load-storage './playwright/.auth/user.json' <url>
 
 # Emulation
 playwright codegen --viewport-size '800,600' <url>

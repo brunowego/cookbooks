@@ -1,14 +1,6 @@
 # With Sentry
 
 <!--
-SENTRY_ORG=sellit
-SENTRY_PROJECT=web
-SENTRY_DSN=
-SENTRY_AUTH_TOKEN=
-SENTRY_LOG_LEVEL=debug
--->
-
-<!--
 enabled: process.env.NODE_ENV !== 'development',
 -->
 
@@ -206,19 +198,6 @@ Sentry.captureCheckIn({
   monitorSlug: "10-min-cron",
   status: "ok",
 });
--->
-
-## Tips
-
-### Create User Auth Token
-
-1. [Auth Tokens](https://sentry.io/settings/account/api/auth-tokens)
-2. Create New User Auth Token
-   - General -> Name: `local`
-   - Permissions -> Project: `Read & Write`, Release: `Admin`, Issue & Event: `Read & Write`
-
-<!--
-event:read, event:write, project:read, project:releases, project:write
 -->
 
 ## Issues

@@ -5,7 +5,7 @@
 - [asdf](/asdf/nodejs.md)
 - [n](/n.md)
 - [nvm](/nvm.md)
-- [Volta](/volta.md)
+- [Volta](/volta.md) 🌟
 
 ## Options for Setup Node.js Version
 

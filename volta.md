@@ -83,7 +83,10 @@ volta run <tool>@<version>
 volta list node
 
 #
-ls ~/.volta/tools/image/node
+ls ~/.volta/tools/image/node/<version>
+
+#
+cat ~/.volta/tools/user/platform.json | jq '.node.runtime'
 ```
 
 <!--

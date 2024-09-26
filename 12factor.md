@@ -2,7 +2,7 @@
 
 ## References
 
-- [The Twelve-Factor App](https://12factor.net/)
+- [The Twelve-Factor App](https://12factor.net)
 - [Four Golden Signal](/4-golden-signals.md)
 
 <!--

@@ -269,12 +269,16 @@ kubectl get secret sentry-sentry-postgresql \
 
 ### Tips
 
-#### Auth Token
+### Create User Auth Token
 
-1. [User Auth Tokens](https://sellit.sentry.io/settings/auth-tokens/new-token/) -> Create New Auth Token
-2. Create New Auth Token
-   - Name: `pre-prod`
-   - Create Auth Token
+1. [Auth Tokens](https://sentry.io/settings/account/api/auth-tokens)
+2. Create New User Auth Token
+   - General -> Name: `local` <!-- pre-prod -->
+   - Permissions -> Project: `Read & Write`, Release: `Admin`, Issue & Event: `Read & Write`
+
+<!--
+event:read, event:write, project:read, project:releases, project:write
+-->
 
 #### Create User
 

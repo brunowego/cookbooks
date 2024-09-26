@@ -25,3 +25,4 @@ https://linkedin.com/learning/grammar-foundations/
 
 - idunno = I don't know
 - lmao = Laughing
+- wdym = What do you mean

@@ -28,20 +28,6 @@ npx playwright install-deps
 npx playwright install
 # or
 npx playwright install --with-deps
-
-
-# Using Yarn
-yarn dlx playwright install-deps
-yarn dlx playwright install
-# or
-yarn dlx playwright install --with-deps
-
-
-# Using pnpm
-pnpm dlx playwright install-deps
-pnpm dlx playwright install
-# or
-pnpm dlx playwright install --with-deps
 ```
 
 ### Installation
@@ -76,9 +62,13 @@ pnpm add @playwright/test -D
 **Refer:** `./playwright.config.ts`
 
 ```ts
+import { join } from 'path'
 import { defineConfig, devices } from '@playwright/test'
 
+export const STORAGE_STATE_PATH = join(__dirname, 'playwright/.auth/user.json')
+
 export default defineConfig({
+  // globalSetup: './global-setup',
   testDir: './test/e2e',
   testMatch: /.*\.e2e-spec\.ts$/,
   fullyParallel: true,
@@ -92,22 +82,20 @@ export default defineConfig({
   },
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'setup',
+      testMatch: '**/*.setup.ts',
     },
-
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
-
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
+    {
+      name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],
+        // storageState: STORAGE_STATE_PATH,
+      },
+      // dependencies: ['setup']
+    },
   ],
   webServer: {
-    command: 'pnpm dev -- --port 3333',
+    command: 'npm run dev -- --port 3333',
     port: 3333,
     reuseExistingServer: !process.env.CI,
   },
