@@ -1,5 +1,5 @@
 gunicorn==19.9.0
-eventlet==0.31.0
+eventlet==0.35.2
 python-dotenv==0.10.2
 Flask==1.0.3
 elasticsearch==7.0.2
