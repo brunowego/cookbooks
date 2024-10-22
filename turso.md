@@ -41,6 +41,9 @@ turso auth login
 turso auth whoami
 
 #
+turso auth token
+
+#
 turso auth api-tokens list
 
 #
@@ -74,6 +77,15 @@ turso db tokens create <name>
 
 #
 turso db destroy <name>
+```
+
+### Tips
+
+#### TBD
+
+```sh
+#
+turso dev --db-file ./local.db
 ```
 
 ### Issues

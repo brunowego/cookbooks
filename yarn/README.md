@@ -236,6 +236,14 @@ rm ~/.zcompdump*
 
 ### Issues
 
+#### Existence of a `package.json` in a directory above
+
+```log
+Usage Error: The nearest package directory (/path/to/repo) doesn't seem to be part of the project declared in /path/to/repo.
+```
+
+There is a `package.json` in some parent directory above the current directory.
+
 #### Enable Immutable Installs
 
 ```log

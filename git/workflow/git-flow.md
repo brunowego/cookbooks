@@ -4,11 +4,11 @@
 
 ## Links
 
-- [Main Website](https://jeffkreeftmeijer.com/git-flow/)
+- [Main Website](https://jeffkreeftmeijer.com/git-flow)
 
 ## Branches
 
-- `main` (or `master`)
+- `main`
 - `develop`
 - `feature`
 - `release`

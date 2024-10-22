@@ -48,12 +48,12 @@ zipinfo -h
 
 ```sh
 # Listing
-unzip -l [filename].zip
+unzip -l <filename>.zip
 # or
-zipinfo [filename].zip
+zipinfo <filename>.zip
 
 # Compressing With own directory
-zip -r [filename].zip [filepath]
+zip -r <filename>.zip <filepath>
 ```
 
 ## Docker

@@ -39,6 +39,8 @@ https://bendigiorgio.github.io/kiso/?path=/docs/components-switch--docs
 - [shadcn/ui customizer](https://shadcn-ui-customizer.vercel.app)
 
 <!--
+https://mynaui.com
+
 https://gradient.page/tools/shadcn-ui-theme-generator
 https://github.com/Tellay/shadcn-ui-themes
 https://github.com/kiliman/shadcn-custom-theme
@@ -50,25 +52,25 @@ https://github.com/kiliman/shadcn-custom-theme
 
 ```sh
 # Using Bun
-pnpx shadcn-ui@latest -h
+pnpx shadcn@latest -h
 ```
 
 ### Usage
 
 ```sh
 #
-pnpx shadcn-ui@latest init
-pnpx shadcn-ui@latest init -c ./packages/ui
+pnpx shadcn@latest init
+pnpx shadcn@latest init -c ./packages/ui
 
 #
-pnpx shadcn-ui@latest add <name>
-pnpx shadcn-ui@latest add -c ./packages/ui <name>
+pnpx shadcn@latest add <name>
+pnpx shadcn@latest add -c ./packages/ui <name>
 
 #
-pnpx shadcn-ui@latest diff
-pnpx shadcn-ui@latest diff -c ./packages/ui
-pnpx shadcn-ui@latest diff <name>
-pnpx shadcn-ui@latest diff -c ./packages/ui <name>
+pnpx shadcn@latest diff
+pnpx shadcn@latest diff -c ./packages/ui
+pnpx shadcn@latest diff <name>
+pnpx shadcn@latest diff -c ./packages/ui <name>
 ```
 
 <!--

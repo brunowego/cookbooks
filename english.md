@@ -1,6 +1,8 @@
 # English
 
 <!--
+https://tandem.net
+
 https://ibs-americas.com/pt
 
 https://www.skillshare.com/home?via=header

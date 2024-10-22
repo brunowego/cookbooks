@@ -5,5 +5,5 @@
 - [Encode to URL-encoded format](https://urlencoder.org)
 
 <!--
-https://meyerweb.com/eric/tools/dencoder/
+https://meyerweb.com/eric/tools/dencoder
 -->

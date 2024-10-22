@@ -12,7 +12,7 @@
 #### Homebrew
 
 ```sh
-brew install pngquant
+# brew install pngquant
 ```
 
 ### Commands
@@ -31,4 +31,7 @@ pngquant \
   --force \
   --skip-if-larger \
   ./*.png
+
+#
+find . -name '*.png' -exec pngquant --quality=70-80 --ext .png --force --skip-if-larger {} \;
 ```

@@ -18,6 +18,7 @@
 - [Outline](/outline/README.md) 🌟
 
 <!--
+https://github.com/siyuan-note/siyuan
 https://github.com/docmost/docmost
 https://github.com/Orgnise/webapp
 https://github.com/logseq/logseq

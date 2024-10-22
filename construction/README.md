@@ -1,6 +1,14 @@
 # Construction
 
 <!--
+25mm or 3/4 | brown
+-->
+
+<!--
+100mm | white
+-->
+
+<!--
 flange
 
 cavar baldrame

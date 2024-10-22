@@ -3,6 +3,10 @@
 **Keywords:** Type-Safe Server Actions
 
 <!--
+https://github.com/lucasbaquinoo/nextjs-template
+
+https://github.com/dkast/biztro
+https://github.com/DevAntonioRogers/drizzle-neon-next-multistep-form
 https://github.com/ell-ska/saver/blob/main/actions/create-account.ts
 https://github.com/A-Leclercq59/YouCode/blob/master/src/lib/action.ts
 https://github.com/tamalCodes/TheTechies/blob/main/lib/SafeAction.ts
@@ -14,3 +18,12 @@ https://github.com/SwiichyCode/GitShareSpace/blob/main/src/lib/next-safe-action.
 
 - [Code Repository](https://github.com/TheEdoRan/next-safe-action)
 - [Main Website](https://next-safe-action.dev)
+
+## Library
+
+### Installation
+
+```sh
+# Using pnpm
+pnpm add next-safe-action zod
+```

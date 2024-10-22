@@ -169,6 +169,30 @@ jq '."[prisma]"."editor.defaultFormatter" |= "Prisma.prisma"' "$PWD"/.vscode/set
 
 ### Issues
 
+#### TBD
+
+```log
+Error: BLOB, TEXT, GEOMETRY or JSON column 'text' can't have a default value
+```
+
+<!--
+https://github.com/planetscale/discussion/discussions/101
+-->
+
+<!--
+Try remove @db.LongText() from the schema.
+-->
+
+TODO
+
+#### TBD
+
+```log
+Error: Too many keys specified; max 64 keys allowed
+```
+
+TODO
+
 #### Missing bcrypt
 
 ```log

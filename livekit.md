@@ -19,3 +19,7 @@ https://github.com/AntonioErdeljac/next13-discord-clone
 ```sh
 brew install livekit
 ```
+
+<!--
+https://docs.livekit.io/home/self-hosting/local
+-->

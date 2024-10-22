@@ -11,6 +11,20 @@ https://flatfile.com
 
 ## Tips
 
+### Count rows
+
+```sh
+#
+cat </path/to/filename>.csv | tail -n +2 | wc -l
+```
+
+### Extract Headers
+
+```sh
+#
+head -n 1 </path/to/filename>.csv | sed 's/,/","/g' | awk '{print "{\"headers\": [\""$0"\"]}"}' | jq
+```
+
 ### Visual Studio Code
 
 ```sh

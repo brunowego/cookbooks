@@ -82,6 +82,14 @@ export default function NextAuthProvider({
 #### TBD
 
 ```log
+[auth][error] MissingCSRF: CSRF token was missing during an action signin. Read more at https://errors.authjs.dev#missingcsrf
+```
+
+TODO
+
+#### TBD
+
+```log
 Error: [next-auth]: `useSession` must be wrapped in a <SessionProvider />
 ```
 

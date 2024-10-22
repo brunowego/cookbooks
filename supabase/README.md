@@ -2,6 +2,11 @@
 
 **Keywords:** Firebase Alternative, Backend as a Service
 
+<!--
+https://hub.docker.com/r/supabase/postgres
+https://hub.docker.com/r/supabase/realtime
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/supabase/supabase)
@@ -77,14 +82,34 @@ supabase stop
 <!--
 supabase reset
 supabase link
-supabase gen types typescript --local --schema public > types_db.ts
-supabase db dump --data-only -f ./seed.sql
-supabase db diff | npx supabase migration new
+supabase gen types typescript --local --schema public > ./types_db.ts
 supabase push
 supabase pull
 -->
 
+### Tips
+
+#### Dump
+
+TODO
+
+<!--
+supabase db dump --use-copy --data-only -f ./seed.sql
+supabase db dump --role-only -f ./roles.sql
+supabase db dump -f ./schema.sql
+
+supabase db diff | npx supabase migration new
+-->
+
 ### Issues
+
+#### TBD
+
+```sh
+Unsupported provider: provider is not enabled
+```
+
+TODO
 
 #### TBD
 

@@ -1,6 +1,8 @@
 # Extend with CORS
 
 <!--
+https://github.com/kojikawazu/trip-web-app/blob/main/src/app/api/mail/send/route.ts
+
 https://codingwithmanny.medium.com/3-ways-to-configure-cors-for-nextjs-13-app-router-api-route-handlers-427e10929818
 https://stackoverflow.com/questions/70995299/allow-cors-from-one-next-js-app-to-another
 -->

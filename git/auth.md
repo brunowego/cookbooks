@@ -28,3 +28,13 @@ Missing or invalid credentials.
 ```
 
 TODO
+
+<!--
+git commit --author="Nome do Autor <email@example.com>" -m "Mensagem do commit"
+-->
+
+<!--
+git shortlog -sne
+
+git commit --amend --author="Novo Autor <email@example.com>"
+-->

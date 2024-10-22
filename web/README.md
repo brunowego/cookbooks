@@ -1,7 +1,7 @@
 # World Wide Web (a.k.a Web)
 
 <!--
-https://archive.org/
+https://archive.org
 -->
 
 ## Links

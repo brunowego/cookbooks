@@ -13,6 +13,14 @@ git push -u origin <local-branch>:<remote-branch>
 git push origin <commit-sha>:<remote-branch> -f
 ```
 
+## Tips
+
+### Push to Remote using HEAD
+
+```sh
+git push origin HEAD
+```
+
 ## Issues
 
 ### TBD

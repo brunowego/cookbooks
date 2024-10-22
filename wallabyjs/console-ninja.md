@@ -14,7 +14,7 @@ https://github.com/wallabyjs/console-ninja/issues/127
 TODO
 
 <!--
-~/.console-ninja/.bin
+PATH=~/.console-ninja/.bin:$PATH
 -->
 
 ## Tips

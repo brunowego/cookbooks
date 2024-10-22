@@ -1,7 +1,8 @@
 # Pagination
 
 <!--
-https://www.youtube.com/watch?v=SXmni_7B0r4
+https://youtube.com/watch?v=SXmni_7B0r4
+https://codemzy.com/blog/mongodb-pagination-next-page
 -->
 
 ## Learn
@@ -16,7 +17,28 @@ https://www.youtube.com/watch?v=SXmni_7B0r4
 - [Pagination in MySQL - offset vs. cursor](https://youtube.com/watch?v=zwDIN04lIpc)
 - [Web API Pagination | Offset-based vs Cursor-based](https://youtube.com/watch?v=WUICbOOtAic)
 
+### Examples
+
+- [FastAPI Pagination / Limit Offset Pagination](https://uriyyo-fastapi-pagination.netlify.app/tutorials/limit-offset-pagination)
+- [JSON API / “Cursor Pagination” Profile](https://jsonapi.org/profiles/ethanresnick/cursor-pagination/)
+
+<!--
+https://laravel.com/docs/master/pagination
+https://github.com/mislav/will_paginate/wiki
+-->
+
 ## Types
 
 - Cursor-based
 - Offset-Based (limit/offset)
+
+<!--
+Offset-Based (limit/offset)
+
+{
+  "items": [],
+  "total": 123,
+  "skip": 12,
+  "limit": 12
+}
+-->

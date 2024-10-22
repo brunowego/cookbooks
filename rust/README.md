@@ -103,6 +103,16 @@ rustc --version
 
 ### Tips
 
+### EditorConfig
+
+```sh
+cat << EOF >> ./.editorconfig
+
+[*.rs]
+indent_size = 4
+EOF
+```
+
 #### Visual Studio Code
 
 ```sh

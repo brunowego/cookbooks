@@ -40,6 +40,8 @@ https://www.youtube.com/watch?v=QrEOvHdH2Cg
 - [GraphQL Faker](https://github.com/APIs-guru/graphql-faker)
 - [GraphQL Voyager](https://apis.guru/graphql-voyager/)
 - [GraphQLEditor](https://github.com/graphql-editor/graphql-editor)
+- [GraphQL IDE](https://github.com/graphql/graphiql)
+- [Hoppscotch](/hoppscotch/README.md)
 
 ## Terms
 
@@ -64,11 +66,6 @@ https://www.youtube.com/watch?v=QrEOvHdH2Cg
 - Fragments
 - Operation Name
 - Variables
-
-## Tools
-
-- [GraphQL IDE](https://github.com/graphql/graphiql)
-- [Hoppscotch](/hoppscotch/README.md)
 
 ## Library
 
