@@ -64,3 +64,37 @@ pg_dump: error: a worker process died unexpectedly
 ```
 
 TODO
+
+## Docker
+
+### Running
+
+```sh
+#
+docker run -it --rm \
+  -h pg_dump \
+  --name pg_dump \
+  --entrypoint /usr/local/bin/pg_dump \
+  docker.io/library/postgres:11.2-alpine --help
+```
+
+### Tips
+
+#### Dump
+
+```sh
+#
+export DATABASE_URL=postgres://acme:acme@localhost:5432/acme
+
+#
+docker run -it --rm \
+  -h pg_dump \
+  --name pg_dump \
+  -e DATABASE_URL="$DATABASE_URL" \
+  -v $(pwd)/backup:/backup \
+  --entrypoint /usr/local/bin/pg_dump \
+  docker.io/library/postgres:17.0-alpine \
+    -f ./backup/dump-$(date -u '+%Y.%m.%d-%H%M').backup \
+    -Fc \
+    "$DATABASE_URL"
+```

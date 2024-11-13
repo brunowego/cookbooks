@@ -92,6 +92,14 @@ pnpx shadcn@latest diff -c ./packages/ui <name>
 #### TBD
 
 ```log
+An invalid components.json file was found at ./packages/ui.
+```
+
+TODO
+
+#### TBD
+
+```log
 Error: Tailwind CSS is not installed. Visit https://tailwindcss.com/docs/installation to get started.
 ```
 

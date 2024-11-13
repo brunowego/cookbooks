@@ -3,6 +3,10 @@
 **Keywords:** Rich Text Editor
 
 <!--
+Uses: ProseMirror
+-->
+
+<!--
 https://blocknote-main.vercel.app
 
 https://github.com/Nick-h4ck3r/quickflow/blob/main/components/editor.tsx
@@ -39,6 +43,19 @@ Warning: forwardRef render functions accept exactly two parameters: props and re
 
 <!--
 https://github.com/TypeCellOS/BlockNote/issues/749
+-->
+
+TODO
+
+#### TBD
+
+```log
+TypeError: Cannot read properties of undefined (reading 'nodeType')
+```
+
+<!--
+https://github.com/TypeCellOS/BlockNote/issues/1082
+https://github.com/TypeCellOS/BlockNote/blob/main/docs/pages/docs/advanced/nextjs.mdx
 -->
 
 TODO

@@ -19,5 +19,8 @@ jq '."recommendations" += ["alefragnani.project-manager"]' "$PWD"/.vscode/extens
 cat ~/Library/Application\ Support/Code/User/globalStorage/alefragnani.project-manager/projects.json | gh gist create - -f vscode-project-manager
 
 #
-# TODO
+gh gist list
+gh gist view <hash> > ~/Library/Application\ Support/Code/User/globalStorage/alefragnani.project-manager/projects.json
+
+history -r
 ```

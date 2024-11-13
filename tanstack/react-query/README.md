@@ -15,6 +15,7 @@ https://github.com/prasenjeet-symon/intellectia/blob/main/packages/client/src/ho
 - [Code Repository](https://github.com/TanStack/query)
 - [Main Website](https://tanstack.com/query)
 - [Docs](https://tanstack.com/query/latest/docs/react/overview)
+  - [Community Projects](https://tanstack.com/query/latest/docs/framework/react/community/community-projects)
 
 ## Library
 

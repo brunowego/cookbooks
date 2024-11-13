@@ -73,47 +73,34 @@ FROM docker.io/library/node:18.12-alpine
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Volta
+volta install node
+
+# Using Homebrew
 brew install nodejs
-```
 
-#### YUM
-
-```sh
+# Using YUM
 curl -sL https://rpm.nodesource.com/setup_20.x | sudo -E bash -
 
 yum check-update
 sudo yum -y install nodejs
-```
 
-#### APT
-
-```sh
+# Using APT
 curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 
 sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt -y install nodejs
-```
 
-#### APK
-
-```sh
+# Using APK
 apk update
 apk add nodejs
-```
 
-#### Zypper
-
-```sh
+# Using Zypper
 sudo zypper refresh
 sudo zypper install -y nodejs10
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y nodejs
 ```
 

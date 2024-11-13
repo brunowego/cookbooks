@@ -43,6 +43,7 @@ Nuls
 - RightFont
 - SAi FlexiSIGN
 - ScreenFlow
+- Screen Studio
 
 ## Notes
 
@@ -50,6 +51,7 @@ Nuls
 - VPN Connection
 - [Kubernetes Local Configuration](/kubectl/README.md#backup)
 - [Shell History](/history.md#backup)
+- Git Ignore Global
 
 ## Configuration
 

@@ -52,7 +52,6 @@ https://cerebralvalley.ai/events
 https://teamblind.com
 https://storiny.com
 https://gatsby-medium.vercel.app
-https://kooapp.com/feed
 https://threads-app-react.vercel.app
 
 Background Animation
@@ -134,6 +133,9 @@ https://neverbeforeseen.co
 https://oneleet.com
 https://gleap.io
 
+https://biztro.co
+https://www.spackle.so
+https://www.replyqai.com
 https://supahub.com
 https://www.privy.io
 https://seline.so
@@ -451,6 +453,7 @@ https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
 Login / Sign In / Sign up
 
+https://app.tryjournalist.com/login
 https://getds.pro/auth/sign-in?next=%2Fapp
 https://cloud.llamaindex.ai/login
 https://app.crisp.chat/initiate/signup/
@@ -465,7 +468,6 @@ https://try-stand.com/sign-up
 https://claude.ai/login?returnTo=%2F%3F
 https://app.deel.com/login
 https://app.usehall.com/signup
-https://dashboard.aragon.ai/login?template=avatar_professional
 https://appshots.design
 https://app.formcarry.com/register
 https://web.novu.co/auth/login
@@ -473,6 +475,7 @@ https://app.middleware.io/auth/login
 https://dash.reviews.io/login
 https://app.onmarathon.com/register
 
+https://dashboard.aragon.ai/login?template=avatar_professional
 https://workspace.supahub.com/signin
 https://biztro.co/login?callbackUrl=%2Fdashboard
 https://animations.dev/login
@@ -568,6 +571,7 @@ https://linear.app/homepage
 https://omens.com.br
 https://send.it
 
+https://sarah-portfolio-ten.vercel.app/
 https://mateusbelicio.github.io/bmi-calculator/
 https://polar.sh
 https://im-agency.vercel.app
@@ -734,6 +738,8 @@ https://reviews.io/front/pricingplans
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://tailscale.com/pricing
+https://builderbot.cloud/payment
 https://supahub.com/pricing
 https://catsync.co
 https://web.iconly.pro/pro
@@ -776,6 +782,9 @@ https://railway.app/pricing
 https://helicone.ai/pricing
 https://openstatus.dev/pricing
 https://upstash-web-upstash.vercel.app/#section-pricing
+
+Maintenance
+
 
 Error Page
 
@@ -1185,6 +1194,7 @@ Shopping Cart
 
 Footer
 
+https://www.pietrastudio.com/
 https://tryarcane.com/
 https://zave.it
 https://truewind.ai
@@ -1202,6 +1212,7 @@ https://tangem.com/en
 https://swan.io
 https://zapal.tech
 
+https://heyform.net/
 https://campsite.chat/
 https://wickedtemplates.com
 https://significa.co

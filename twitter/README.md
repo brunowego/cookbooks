@@ -10,6 +10,7 @@
 - [Foller.me](https://foller.me)
 - [SSSTwitter / Download Twitter MP4 Videos](https://ssstwitter.com)
 - [TweetDeck](https://tweetdeck.twitter.com)
+- [TwitterVid](https://twittervid.com)
 
 ## App
 

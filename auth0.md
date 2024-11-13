@@ -49,6 +49,16 @@ https://egghead.io/blog/saas-app-with-nextjs-prisma-auth0-and-stripe
 ### TBD
 
 ```log
+Callback URL mismatch.
+The provided redirect_uri is not in the list of allowed callback URLs.
+Please go to the Application Settings page and make sure you are sending a valid callback url from your application.
+```
+
+TODO
+
+### TBD
+
+```log
 ACME Corp.
 Oops!, something went wrong
 Callback URL mismatch.

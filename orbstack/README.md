@@ -27,9 +27,8 @@ ls -la ~/.orbstack
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask orbstack
 ```
 

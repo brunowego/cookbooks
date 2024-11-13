@@ -42,6 +42,7 @@ https://www.agendor.com.br
 - [Twenty](/twenty.md) 🌟
 
 <!--
+https://marmelab.com/atomic-crm
 https://github.com/pdovhomilja/nextcrm-app
 https://github.com/idurar/idurar-erp-crm
 -->

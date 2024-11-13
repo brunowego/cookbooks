@@ -6,6 +6,7 @@
 - [LICEcap](/licecap.md)
 - [Loom](/loom.md)
 - [ScreenFlow](/screenflow.md)
+- [Screen Studio](https://screen.studio)
 
 <!--
 https://bluedothq.com
@@ -17,5 +18,4 @@ https://wistia.com
 https://sendpotion.com
 https://screenrec.com
 https://descript.com
-https://screen.studio
 -->

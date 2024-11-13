@@ -14,6 +14,9 @@
 ## Configuration
 
 ```sh
+#
+cat "$HOME"/.vscode/settings.json
+
 # Terminal Scrollback
 jq '."terminal.integrated.scrollback" |= 100000000' "$HOME"/.vscode/settings.json | \
   sponge "$HOME"/.vscode/settings.json

@@ -19,7 +19,7 @@ export GITHUB_REPO='<github-repo>'
 curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments" | jq '.[] | .id, .environment'
 
 #
-export DEPLOYMENT_ID=1274151952
+export DEPLOYMENT_ID='1274151952'
 
 #
 curl \

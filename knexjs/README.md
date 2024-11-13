@@ -56,6 +56,22 @@ yourQuery.toSQL().toNative()
 
 ### Issues
 
+#### TBD
+
+```log
+Requiring external module ts-node/register
+knex: Required configuration option 'client' is missing.
+Error: knex: Required configuration option 'client' is missing.
+```
+
+<!--
+NODE_ENV=staging
+
+https://github.com/knex/knex/issues/5394
+-->
+
+TODO
+
 #### Missing `ts-node`
 
 ```log

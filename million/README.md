@@ -1,5 +1,9 @@
 # Million
 
+<!--
+^(?!.*ingest/healthcheck$)
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/aidenybai/million)

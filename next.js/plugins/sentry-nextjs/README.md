@@ -83,14 +83,33 @@ export default withSentryConfig(
 **Refer:** `./sentry.client.config.ts`
 
 ```ts
-import * as Sentry from '@sentry/nextjs'
+import { init, replayIntegration } from '@sentry/nextjs'
 
 const SENTRY_DSN = process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN
 
-Sentry.init({
-  enabled: process.env.NODE_ENV !== 'development',
+init({
+  enabled: Boolean(SENTRY_DSN),
   dsn: SENTRY_DSN,
-  // tracesSampleRate: 1.0,
+  environment: process.env.NEXT_PUBLIC_VERCEL_ENV ?? 'local',
+  tracesSampleRate: 1.0,
+  integrations: [replayIntegration()],
+  replaysSessionSampleRate: 0.1,
+  replaysOnErrorSampleRate: 1.0,
+})
+```
+
+**Refer:** `./sentry.edge.config.ts`
+
+```ts
+import { init } from '@sentry/nextjs'
+
+const SENTRY_DSN = process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN
+
+init({
+  enabled: Boolean(SENTRY_DSN),
+  dsn: SENTRY_DSN,
+  environment: process.env.NEXT_PUBLIC_VERCEL_ENV ?? 'local',
+  tracesSampleRate: 1.0,
 })
 ```
 
@@ -105,14 +124,15 @@ defaults.project=<project>
 **Refer:** `./sentry.server.config.ts`
 
 ```ts
-import * as Sentry from '@sentry/nextjs'
+import { init } from '@sentry/nextjs'
 
 const SENTRY_DSN = process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN
 
-Sentry.init({
-  enabled: process.env.NODE_ENV !== 'development',
+init({
+  enabled: Boolean(SENTRY_DSN),
   dsn: SENTRY_DSN,
-  // tracesSampleRate: 1.0,
+  environment: process.env.NEXT_PUBLIC_VERCEL_ENV ?? 'local',
+  tracesSampleRate: 1.0,
 })
 ```
 
@@ -242,25 +262,28 @@ TODO
 @acme/console:dev: warn  - It seems like you don't have a global error handler set up. It is recommended that you add a global-error.js file with Sentry instrumentation so that React rendering errors are reported to Sentry. Read more: https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/#react-render-errors-in-app-router
 ```
 
-**Refer:** `./src/app/global-error.jsx`
+**Refer:** `./src/app/global-error.tsx`
 
 ```tsx
 'use client'
 
+import { type JSX, useEffect } from 'react'
 import { captureException } from '@sentry/nextjs'
-import { useEffect } from 'react'
-// biome-ignore lint/suspicious/noShadowRestrictedNames: This is a Next.js component
-import Error from 'next/error'
+import NextError from 'next/error'
 
-export default function GlobalError({ error }) {
+type GlobalErrorProps = {
+  error: Error & { digest?: string }
+}
+
+export default function GlobalError({ error }: GlobalErrorProps): JSX.Element {
   useEffect(() => {
     captureException(error)
   }, [error])
 
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body>
-        <Error />
+        <NextError statusCode={undefined as unknown as number} />
       </body>
     </html>
   )
@@ -322,7 +345,19 @@ TODO
 @acme/web:dev: [@sentry/nextjs] It appears you've configured a `sentry.edge.config.ts` file. Please ensure to put this file's content into the `register()` function of a Next.js instrumentation hook instead. To ensure correct functionality of the SDK, `Sentry.init` must be called inside `instrumentation.ts`. Learn more about setting up an instrumentation hook in Next.js: https://nextjs.org/docs/app/building-your-application/optimizing/instrumentation. You can safely delete the `sentry.edge.config.ts` file afterward.
 ```
 
-TODO
+**Refer:** `./src/instrumentation.ts`
+
+```ts
+export async function register() {
+  if (process.env.NEXT_RUNTIME === 'nodejs') {
+    await import('../sentry.server.config')
+  }
+
+  if (process.env.NEXT_RUNTIME === 'edge') {
+    await import('../sentry.edge.config')
+  }
+}
+```
 
 ### TBD
 

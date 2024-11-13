@@ -99,11 +99,11 @@ bun add turbo -D
 
 ```sh
 #
-bunx turbo telemetry status
-bunx turbo telemetry disable
+npx turbo telemetry status
+npx turbo telemetry disable
 
 #
-bunx turbo build --filter <pkg-name>
+npx turbo build --filter <pkg-name>
 ```
 
 ### Tips

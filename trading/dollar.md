@@ -11,6 +11,10 @@ https://fred.stlouisfed.org/series/PCEDG | Units: Change from Year Ago
 - [Monetary Data / M2 (M2SL)](https://fred.stlouisfed.org/series/M2SL)
 - [Interest Rates / FRB Rates - discount, fed funds, primary credit](https://fred.stlouisfed.org/series/FEDFUNDS)
 
+<!--
+https://www.bcb.gov.br/estabilidadefinanceira/fechamentodolar
+-->
+
 ## Terms
 
 - Currency Peg

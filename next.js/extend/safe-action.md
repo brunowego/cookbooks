@@ -6,12 +6,21 @@
 https://github.com/lucasbaquinoo/nextjs-template
 
 https://github.com/dkast/biztro
+https://github.com/Design-System-Pro/engine/blob/main/apps/engine/src/lib/safe-action.ts
 https://github.com/DevAntonioRogers/drizzle-neon-next-multistep-form
 https://github.com/ell-ska/saver/blob/main/actions/create-account.ts
 https://github.com/A-Leclercq59/YouCode/blob/master/src/lib/action.ts
 https://github.com/tamalCodes/TheTechies/blob/main/lib/SafeAction.ts
 https://github.com/runtipi/runtipi/blob/develop/src/lib/safe-action.ts
 https://github.com/SwiichyCode/GitShareSpace/blob/main/src/lib/next-safe-action.ts
+
+zsa-react
+
+https://github.com/search?q=path%3Apackage.json+content%3A%22%5C%22zsa-react%5C%22%3A%22&type=code
+
+zsa-react-query
+
+https://github.com/search?q=path%3Apackage.json+content%3A%22%5C%22zsa-react-query%5C%22%3A%22&type=code
 -->
 
 ## Links

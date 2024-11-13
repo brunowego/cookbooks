@@ -16,6 +16,10 @@
 - [Data Build Tool (dbt)](/dbt/README.md)
 
 <!--
+Pandas
+-->
+
+<!--
 Node.js
 
 https://github.com/typestack/class-transformer | Class Validator

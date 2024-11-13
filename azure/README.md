@@ -17,6 +17,10 @@ https://github.com/githubpartners/github-azure-microservices-blueprint
 - [Regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
 - [Status Page](https://status.azure.com)
 
+<!--
+https://datacenters.microsoft.com/globe/explore
+-->
+
 ## Related
 
 - [Awesome Azure Architecture](https://github.com/lukemurraynz/awesome-azure-architecture)

@@ -92,6 +92,22 @@ TODO
 #### TBD
 
 ```log
+pg_restore: error: unsupported version (1.16) in file header
+```
+
+```sh
+#
+pg_restore --version
+
+#
+where pg_restore
+
+# For MacOS (Darwin): Just install libpq
+```
+
+#### TBD
+
+```log
 /bin/sh: pg_config: command not found
 ```
 

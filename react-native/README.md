@@ -5,12 +5,14 @@
 <!--
 https://app.pluralsight.com/library/courses/react-native-applications-styling/table-of-contents
 https://app.pluralsight.com/library/courses/building-chat-application-react-native/table-of-contents
+
+https://github.com/sullog-official/sullog-client
 -->
 
 ## Links
 
 - [Code Repository](https://github.com/facebook/react-native)
-- [Main Website](https://reactnative.dev/)
+- [Main Website](https://reactnative.dev)
 
 ## CLI
 

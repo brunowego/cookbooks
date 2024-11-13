@@ -80,7 +80,7 @@ https://avvvatars.com/
 - [React Developer Tools (Mozilla Firefox)](https://addons.mozilla.org/pt-BR/firefox/addon/react-devtools/)
 - [React - CodeSandbox](https://react.new)
 
-## Terms
+## Glossary
 
 - Component-Driven Development (CDD)
 - React Server Components (RSC)
@@ -100,6 +100,20 @@ jq '."recommendations" += ["dsznajder.es7-react-js-snippets"]' "$PWD"/.vscode/ex
 <!--
 rafce
 -->
+
+### Properties (Props)
+
+**Object Spread Properties (Spread Syntax):**
+
+```tsx
+<Table {...{ firstName: 'Bruno', lastName: 'Gomes' }} />
+```
+
+**Direct Prop Assignment:**
+
+```tsx
+<Table firstName="Bruno" lastName="Gomes" />
+```
 
 ## Issues
 

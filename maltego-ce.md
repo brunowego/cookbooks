@@ -4,6 +4,8 @@
 
 <!--
 https://github.com/sundowndev/phoneinfoga
+
+https://downloads.maltego.com/maltego-v4/mac/Maltego.v4.4.0.dmg
 -->
 
 ## Links

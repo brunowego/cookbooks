@@ -81,11 +81,8 @@ https://epic-course-platform.vercel.app/
 ```sh
 # Using NPM
 npm install vercel@latest -g
-```
 
-#### Homebrew
-
-```sh
+# Using Homebrew
 brew install vercel-cli
 ```
 

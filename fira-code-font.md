@@ -16,7 +16,6 @@ https://medium.com/@peterpme/operator-mono-fira-code-the-best-of-both-worlds-191
 #### Homebrew
 
 ```sh
-brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 ```
 
@@ -39,7 +38,7 @@ choco install -y firacode-ttf
 
 ```json
 {
-  "buffer_font_family": "Fira Code",
+  "buffer_font_family": "Fira Code"
 }
 ```
 

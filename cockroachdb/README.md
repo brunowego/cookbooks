@@ -2,6 +2,8 @@
 
 <!--
 https://app.pluralsight.com/library/courses/big-data-ldn-session-79/table-of-contents
+
+https://cockroachlabs.com/lp/serverless
 -->
 
 ## Links

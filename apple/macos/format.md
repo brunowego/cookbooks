@@ -1,5 +1,7 @@
 # macOS Format
 
+## macOS Monterey
+
 1. Disable Activation Lock: Remove your device from [Find My](https://icloud.com/find).
 2. Make Bootable USB
 
@@ -17,3 +19,9 @@
    ```
 
 3. Reboot and press Option (⌥).
+
+## Restore
+
+1. Logout from iCloud.
+2. Erase Disk: Disk Utility > View > Show All Devices > Erase.
+3. Reinstall macOS.

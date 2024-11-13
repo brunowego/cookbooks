@@ -12,6 +12,7 @@ https://github.com/acao/trpc-example-sse-craft/blob/main/render.yaml
 - Docs
   - [Native Runtimes](https://docs.render.com/native-runtimes)
   - [Setting Your Node.js Version](https://docs.render.com/node-version)
+  - [Default Environment Variables](https://docs.render.com/environment-variables)
 
 ## CLI
 

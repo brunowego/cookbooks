@@ -4,4 +4,10 @@
 
 - [HTTP](/http.md)
 
-TODO
+## Tips
+
+### Check Support
+
+```sh
+curl -I --http2 https://<domain.com>
+```

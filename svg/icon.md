@@ -19,7 +19,10 @@
 - [Svgl](https://svgl.vercel.app)
 
 <!--
+https://ionic.io/ionicons
+https://feathericons.com
 https://slimicons.com
+https://simpleicons.org
 -->
 
 ## Animated

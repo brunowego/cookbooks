@@ -5,6 +5,11 @@ https://linkedin.com/help/linkedin/answer/a563309/image-specifications-for-your-
 -->
 
 <!--
+https://taplio.com/linkedin-video-downloader
+https://contentstudio.io/tools/free-linkedin-downloader
+-->
+
+<!--
 kubernetes AND devops AND aws
 devops AND NOT crossover AND NOT EPAM
 

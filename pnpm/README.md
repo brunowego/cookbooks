@@ -24,6 +24,9 @@ dedupe-peer-dependents=true
 ### Installation
 
 ```sh
+# Using Volta
+volta install pnpm
+
 # Using NPM
 npm install pnpm -g
 

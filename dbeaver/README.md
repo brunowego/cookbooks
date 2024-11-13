@@ -90,7 +90,12 @@ Or:
 # MacOS
 ls "$HOME"/Library/DBeaverData
 
+# Backup
 cat "$HOME"/Library/DBeaverData/workspace6/General/.dbeaver/data-sources.json | gh gist create - -f dbeaver-data-sources.json
+
+# Restore
+gh gist list
+gh gist view <hash> > "$HOME"/Library/DBeaverData/workspace6/General/.dbeaver/data-sources.json
 ```
 
 #### SQL Formatting: Upper Case

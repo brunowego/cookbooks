@@ -70,7 +70,7 @@ https://uicolors.app 🌟
 
 - [COLORS.tools / Tints & Shades](https://colors.tools/tints-and-shades)
 - [Noel Delgado / Shadowlord & Tints and Shades Generator Tool](https://noeldelgado.github.io/shadowlord) 🌟
-- [Shade Generator](https://shadegenerator.com) 🌟
+- [Shade Generator](https://shadegenerator.com)
 
 <!--
 https://maketintsandshades.com

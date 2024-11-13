@@ -21,3 +21,7 @@ https://monorepo.tools
 - [Performant NPM (pnpm) Workspaces](/pnpm/pnpm-workspaces.md)
 - [Turborepo](/turborepo/README.md) 🌟
 - [Yarn Workspaces](/yarn/yarn-workspaces.md)
+
+<!--
+https://github.com/JamieMason/syncpack
+-->

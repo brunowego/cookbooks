@@ -89,6 +89,32 @@ supabase pull
 
 ### Tips
 
+#### SSL
+
+1. [Select a project to continue](https://supabase.com/dashboard/project/_/settings/database)
+2. SSL Configuration -> SSL Certificate -> Download certificate
+
+```sh
+#
+supabase projects list
+
+#
+supabase ssl-enforcement --project-ref <reference-id> get --experimental
+
+#
+# SSL is being enforced.
+# SSL is *NOT* being enforced.
+
+#
+mkdir ~/.postgres
+
+#
+cat </path/to/prod-ca-2021.crt> >> ~/.postgres/root.crt
+
+#
+DATABASE_URL=postgresql://<username>:<password>@aws-0-us-east-1.pooler.supabase.com:6543/postgres?sslmode=no-verify
+```
+
 #### Dump
 
 TODO
@@ -102,6 +128,34 @@ supabase db diff | npx supabase migration new
 -->
 
 ### Issues
+
+#### TBD
+
+```log
+self-signed certificate in certificate chain
+```
+
+TODO
+
+#### TBD
+
+```log
+SSL connection is required
+```
+
+<!--
+JWT verification error: SSL connection is required
+-->
+
+<!--
+https://github.com/Infisical/infisical/blob/main/backend/src/db/knexfile.ts
+-->
+
+<!--
+?sslmode=no-verify
+-->
+
+TODO
 
 #### TBD
 

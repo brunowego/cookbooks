@@ -4,6 +4,10 @@
 https://github.com/HazelHook/Hazel/blob/main/biome.json
 -->
 
+<!--
+https://www.ultracite.dev
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/biomejs/biome)
