@@ -7,6 +7,7 @@
 ## Tools
 
 - [bore](/bore.md)
+- [Cloudflare Tunnel (formerly Argo Tunnel)](/cloudflare/cloudflared.md)
 - [GO Simple Tunnel (gost)](/gost.md)
 - [LocalCan](/localcan.md)
 - [localtunnel](/localtunnel.md)

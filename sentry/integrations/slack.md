@@ -1,12 +1,16 @@
 # Slack Integration with Sentry
 
+## Links
+
+- [Slack + Sentry Integration](https://sentry.io/integrations/slack)
+
 ## Docs
 
-<!-- ###
+### Add to Organization
 
-1. Alerts Settings
-2. Email Settings:
-   - Subject Template: `$shortID - $title - $projectID` -->
+1. [Organization Settings](https://sentry.io/settings/organization)
+2. Integrations
+3. Slack
 
 ### Add to Project
 

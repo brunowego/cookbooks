@@ -13,32 +13,26 @@
 
 - [OpenSSH Server](/openssh/server.md)
 
-#### APT
+### Installation
 
 ```sh
+# Using APT
 sudo apt update
 sudo apt -y install wget unzip
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install wget unzip
 ```
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew tap ngrok/ngrok
 brew install ngrok
-```
 
-#### Linux
-
-```sh
+# Using Linux
 ( cd /usr/local/bin && \
   sudo wget -O tmp.zip 'https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip' && \
     sudo unzip tmp.zip && sudo rm tmp.zip )

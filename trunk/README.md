@@ -243,7 +243,7 @@ trunk actions enable trunk-cache-prune trunk-check-pre-push trunk-fmt-pre-commit
 
 ```sh
 #
-trunk git-hooks sync
+npx trunk git-hooks sync
 
 #
 git config --get core.hookspath

@@ -1,8 +1,12 @@
 # date
 
+## References
+
+- [gdate](/gdate.md)
+
 ## Tools
 
-- [EpochConverter](https://www.epochconverter.com)
+- [EpochConverter](https://epochconverter.com)
 
 ## CLI
 

@@ -30,8 +30,8 @@ export { Toaster as default } from 'sonner'
 
 import type { ComponentProps, JSX } from 'react'
 
-import Sonner from '@sellit/ui/providers/sonner'
-import { useTheme } from '@sellit/ui/hooks/use-theme'
+import Sonner from '@acme/ui/providers/sonner'
+import { useTheme } from '@acme/ui/hooks/use-theme'
 
 type SonnerProviderProps = ComponentProps<typeof Sonner>
 

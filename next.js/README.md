@@ -244,6 +244,18 @@ echo '/out' >> ./.gitignore
 
 ### Issues
 
+#### TBD
+
+```log
+Fetch API cannot load webpack-internal:///node_modules/<...>/next/dist/client/app-index.js. URL scheme "webpack-internal" is not supported.
+```
+
+<!--
+https://github.com/vercel/next.js/issues/32432
+-->
+
+TODO
+
 #### Compound Component Pattern in Server Component
 
 ```log

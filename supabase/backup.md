@@ -47,7 +47,65 @@ psql -d "$DATABASE_URL" -c 'ALTER USER acme WITH SUPERUSER'
 psql -d "$DATABASE_URL" < ./<filename>.backup
 ```
 
+## TBD
+
+```sh
+#
+export PGHOST=''
+export PGPORT=6543
+export PGDATABASE='postgres'
+export PGUSER=''
+export PGPASSWORD=''
+
+pg_dump --no-owner --no-acl --schema public -Fc -v > ./production.dump
+
+# Or
+export PRODUCTION_DATABASE_URL="postgresql://<username>:<password>@<host>:<port>/postgres"
+
+pg_dump --no-owner --no-acl --schema public -Fc -v --dbname "$PRODUCTION_DATABASE_URL" > ./production.dump
+```
+
+```sh
+#
+pg_restore --list ./production.dump
+
+#
+export PGHOST=''
+export PGPORT=6543
+export PGDATABASE='postgres'
+export PGUSER=''
+export PGPASSWORD=''
+
+#
+pg_restore --verbose --clean --no-owner --no-acl --dbname "$PGDATABASE" --schema public ./production.dump
+
+# Or
+export STAGING_DATABASE_URL="postgresql://<username>:<password>@<host>:<port>/postgres"
+
+pg_restore --verbose --clean --no-owner --no-acl --dbname "$STAGING_DATABASE_URL" --schema public ./production.dump
+```
+
 ## Issues
+
+### TBD
+
+```log
+pg_dump: error: Dumping the contents of table "block_attributes" failed: PQgetCopyData() failed.
+pg_dump: detail: Error message from server: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+pg_dump: detail: Command was: COPY public.block_attributes (id, cvx_id, cvx_group_attribute_id, meta, monthly_values, cvx_organization_id, cvx_parent_block_id, cvx_parent_group_id, value, created_at, updated_at) TO stdout;
+Error: Process completed with exit code 1.
+```
+
+<!--
+https://docs.simplebackups.com/help-tips--troubleshooting/mQyMDHYQcVeYgoW6VN65u8/pg_dump-error-error-message-from-server-ssl-syscall-error-eof-detected/prT6mN2eGZAjGZznmih1Ad
+-->
+
+TODO
 
 ### TBD
 

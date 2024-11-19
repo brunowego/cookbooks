@@ -2,7 +2,8 @@
 
 ## Links
 
-- [Code Repository](https://valibot.dev)
+- [Code Repository](https://github.com/fabian-hiller/valibot)
+- [Main Website](https://valibot.dev)
 
 ## Library
 

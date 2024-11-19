@@ -453,6 +453,8 @@ https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
 Login / Sign In / Sign up
 
+https://try-stand.com/user/login/
+https://app.uninbox.com/join
 https://app.tryjournalist.com/login
 https://getds.pro/auth/sign-in?next=%2Fapp
 https://cloud.llamaindex.ai/login
@@ -464,7 +466,6 @@ https://app.rifei.com.br/sign-up
 https://app.zave.it/#/auth/welcome
 https://archie-app.8base.com/auth/sign-up?tab=individual
 https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=Iu5prOXXJ0hgZbHMA8T8&redirect_uri=http://conceptbe.kr/oauth/redirected/naver&scope=nickname,email,profile_image&state=RANDOM_STATE
-https://try-stand.com/sign-up
 https://claude.ai/login?returnTo=%2F%3F
 https://app.deel.com/login
 https://app.usehall.com/signup
@@ -738,6 +739,7 @@ https://reviews.io/front/pricingplans
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://rotato.app/pricing
 https://tailscale.com/pricing
 https://builderbot.cloud/payment
 https://supahub.com/pricing
@@ -821,6 +823,7 @@ https://app.plain.com/workspaces
 
 Dashboard
 
+https://app.bucket.co/envs/production-enqqWasiw4Kba4/features?
 https://dribbble.com/shots/24729545-Application-PoC-View
 https://pbs.twimg.com/media/GZiqRsRWUAor4CL?format=jpg&name=4096x4096
 https://dribbble.com/shots/24696791-Coinstax-Cryptocurrency-Dashboard | https://layers.to/layers/clzwejd39001ule0d7pln92ot
@@ -1048,6 +1051,19 @@ https://philfolio-template.vercel.app
 Teams
 
 https://app.midday.ai/account/teams
+
+Kanban
+
+https://dribbble.com/shots/23928096-Security-vulnerability-kanban
+https://dribbble.com/shots/21227113-Managemate-Task-Management-Dashboard
+https://dribbble.com/shots/23761306-Task-Details-Task-Management-Dashboard
+
+https://coderthemes.com/konrix/layouts/apps-kanban.html
+https://preline.co/pro/examples.html#kanban-boards
+https://karban-task-management.vercel.app
+https://atlas-lac.vercel.app/workspaces/673aa1f600387a8e7c6a/tasks?task-view=kanban
+https://codepen.io/robstinson/pen/BaLQQdX
+https://gist.github.com/ifindev/6303acda602cf4575ae4040d7f495d01
 
 Quiz
 

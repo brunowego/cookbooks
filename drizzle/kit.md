@@ -62,3 +62,5 @@ TODO
 ( cd ./packages/db; npx drizzle-kit generate )
 ( cd ./packages/db; npx drizzle-kit push )
 -->
+
+<!-- npx drizzle-kit generate --custom --name=pg_trgm -->

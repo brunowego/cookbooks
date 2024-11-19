@@ -1,6 +1,6 @@
 # Bytebase
 
-**Keywords:** DaC
+**Keywords:** Database as Code (DaC)
 
 ## Links
 

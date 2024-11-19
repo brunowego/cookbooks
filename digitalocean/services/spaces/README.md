@@ -9,6 +9,14 @@
   - [Projects](https://cloud.digitalocean.com/projects)
   - [Create a Spaces Bucket](https://cloud.digitalocean.com/spaces/new)
 
+<!--
+https://cloud.digitalocean.com/account/api/spaces
+
+Domains
+
+https://cloud.digitalocean.com/networking/domains
+-->
+
 ## Terms
 
 - Pre-signed URL

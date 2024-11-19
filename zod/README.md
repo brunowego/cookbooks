@@ -15,6 +15,15 @@ https://github.com/jquense/yup
 https://github.com/hapijs/joi
 -->
 
+## Library
+
+### Installation
+
+```sh
+# Using pnpm
+pnpm add zod
+```
+
 ## Links
 
 - [Code Repository](https://github.com/colinhacks/zod)

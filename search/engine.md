@@ -4,6 +4,8 @@
 
 ## Implementations
 
+### Managed
+
 - [Algolia](https://algolia.com)
 
 ### Open Source

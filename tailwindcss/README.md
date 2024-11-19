@@ -86,7 +86,6 @@ https://pagedone.io/blocks
 - [Tailwind Gradient Generator](https://tailwind-gradient-generator.vercel.app)
 - Converter
   - [Loopple / CSS to Tailwind Converter](https://loopple.com/tools/css-to-tailwind-converter)
-  - [Lembdadev / CSS to TailwindCSS Converter](https://lembdadev.com/css-to-tailwind-converter)
   - [Transform / CSS to TailwindCSS](https://transform.tools/css-to-tailwind)
   - [TailwindCSS Converter / Convert Css To Tailwind](https://tailwind-converter.netlify.app)
 - [DivMagic](/divmagic.md)

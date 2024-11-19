@@ -4,15 +4,11 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask ultimaker-cura
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install cura-new
 ```
 

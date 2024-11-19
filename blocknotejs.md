@@ -25,6 +25,13 @@ https://github.com/mbeps/joker-notes
 
 ## Library
 
+### Installation
+
+```sh
+# Using pnpm
+pnpm add @blocknote/core @blocknote/react
+```
+
 ### Issues
 
 #### TBD

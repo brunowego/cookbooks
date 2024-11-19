@@ -8,3 +8,12 @@
 - [Main Website](https://localcan.com)
 - [Docs](https://localcan.com/docs)
 - [Download](https://localcan.com/download)
+
+## App
+
+### Installation
+
+```sh
+# Using Homebrew
+brew install --cask localcan
+```

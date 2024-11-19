@@ -51,3 +51,12 @@ sudo apt -y install slack-desktop
 # Darwin
 open -a /Applications/Slack.app
 ```
+
+<!--
+https://github.com/slackapi/node-slack-sdk
+
+How to quickly get and use a Slack API bot token https://api.slack.com/tutorials/tracks/getting-a-token
+
+https://api.slack.com/apps
+https://api.slack.com/apps/<app-id>/oauth
+-->

@@ -4,31 +4,21 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install htop
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 
 # Repo: EPEL
 sudo yum -y install htop
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install htop
-```
 
-#### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add htop
 ```
@@ -44,4 +34,7 @@ htop -h
 ```sh
 #
 htop
+
+#
+htop -p $(pgrep pg_dump)
 ```

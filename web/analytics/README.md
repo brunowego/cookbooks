@@ -55,7 +55,7 @@ https://gosquared.com
 - [Matomo](/matomo/README.md) 🌟
 - [Plausible Analytics](/plausible-analytics.md)
 - [PostHog](/posthog.md)
-- [umami](https://github.com/umami-software/umami)
+- [umami](/umami.md)
 
 <!--
 https://github.com/Openpanel-dev/openpanel

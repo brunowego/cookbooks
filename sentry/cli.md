@@ -9,22 +9,15 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew tap getsentry/tools
 brew install sentry-cli
-```
 
-#### NPM
-
-```sh
+# Using NPM
 npm install @sentry/cli
-```
 
-### Linux Binary
-
-```sh
+# Using Linux Binary
 curl \
   -L "https://github.com/getsentry/sentry-cli/releases/download/$(curl -s https://api.github.com/repos/getsentry/sentry-cli/releases/latest | grep tag_name | cut -d '"' -f 4)/sentry-cli-Linux-x86_64" \
   -o /usr/local/bin/sentry-cli && \
@@ -44,7 +37,14 @@ sentry-cli -h
 export SENTRY_URL='https://sentry.io'
 export SENTRY_ORG='<org-name>'
 
-#
+# locally
+cat << EOF > ./.sentryclirc
+[defaults]
+url = ${SENTRY_URL}
+org = ${SENTRY_ORG}
+EOF
+
+# Or, globally
 cat << EOF > ~/.sentryclirc
 [defaults]
 url = ${SENTRY_URL}
@@ -66,9 +66,6 @@ sentry-cli repos list
 
 #
 sentry-cli projects list
-
-#
-sentry-cli releases list
 ```
 
 ### Tips
