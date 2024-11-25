@@ -8,29 +8,19 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install zsh
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install zsh
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install zsh
-```
 
-#### Zypper
-
-```sh
+# Using Zypper
 sudo zypper refresh
 sudo zypper install -y zsh
 ```

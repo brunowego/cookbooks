@@ -4,6 +4,8 @@
 
 ## App
 
+### Dependencies
+
 ### Installation
 
 #### Homebrew
@@ -32,7 +34,8 @@ defaults write com.googlecode.iterm2 AboutToPasteTabsWithCancel -bool false
 /usr/libexec/PlistBuddy -c 'Add :TabViewType integer 1' ~/Library/Preferences/com.googlecode.iterm2.plist
 
 # Name
-/usr/libexec/PlistBuddy -c "Set :'New Bookmarks':0:Name $(id -F)" ~/Library/Preferences/com.googlecode.iterm2.plist
+/usr/libexec/PlistBuddy -c "Set :'New Bookmarks':0:Name $(dscl . -read /Users/$(whoami) RealName | tail -1)" ~/Library/Preferences/com.googlecode.iterm2.plist
+# /usr/libexec/PlistBuddy -c "Set :'New Bookmarks':0:Name $(id -F)" ~/Library/Preferences/com.googlecode.iterm2.plist
 
 # Reuse previous session directory
 /usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Custom Directory" Recycle' ~/Library/Preferences/com.googlecode.iterm2.plist

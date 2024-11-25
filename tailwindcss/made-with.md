@@ -40,6 +40,7 @@ https://app.frame.so/company/qgZKo5rL/settings/company/templates
 https://dashboard.lusha.com/enrich/workflows/onboarding
 https://dashboard.lusha.com/enrich/csv
 
+https://app.dataland.io/workspace/henkiz/actions
 https://app.formcarry.com
 https://app.frigade.com/rules
 https://tailwindui.com/components/application-ui/feedback/empty-states
@@ -653,6 +654,7 @@ https://coinhall.org
 
 Landing Page
 
+https://ezcater.github.io/recipe/
 https://alignui.com/
 https://mvp.easyui.pro/
 https://waita.framer.website/?via=julesvcode
@@ -788,10 +790,6 @@ https://upstash-web-upstash.vercel.app/#section-pricing
 Maintenance
 
 
-Error Page
-
-https://app.honeyquote.com/error?msg=INVALID_ADDRESS
-
 Contact
 
 https://helptix.adslink.id/request-demo
@@ -812,6 +810,11 @@ Plans
 
 https://productlane.com/settings/plans
 https://console.baselime.io/brunowego/plans
+
+Error Page / 500
+
+https://play.tailwindcss.com/K0dCTRDRBx
+https://app.honeyquote.com/error?msg=INVALID_ADDRESS
 
 Simulation
 
@@ -953,6 +956,7 @@ https://app.bossabox.com/profile/settings
 
 Settings
 
+https://dribbble.com/shots/25218098-Settings-page-Account-Security
 https://app.bossabox.com/profile/settings
 https://app.rifei.com.br/account
 https://app.frame.so/company/qgZKo5rL/settings/company/general

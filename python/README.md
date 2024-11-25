@@ -19,7 +19,7 @@ https://linkedin.com/learning/data-science-foundations-data-mining-in-python/pyt
 
 ## Isolated Python Environments
 
-- [Pipenv](/pipenv.md)
+- [Pipenv](/pipenv.md) 🌟
 - [Virtualenv](/virtualenv.md)
 - [Poetry](/poetry.md)
 

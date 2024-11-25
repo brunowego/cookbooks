@@ -49,6 +49,7 @@ pnpm init
 
 #
 pnpm dlx storybook@latest init \
+  --disable-telemetry \
   -s \
   -p tsx \
   --type react \
@@ -56,6 +57,7 @@ pnpm dlx storybook@latest init \
 
 # Or
 pnpm dlx storybook@latest init \
+  --disable-telemetry \
   -s \
   -p tsx \
   --type nextjs

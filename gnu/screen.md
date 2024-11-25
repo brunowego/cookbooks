@@ -8,22 +8,15 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install screen
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install screen
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install screen
 ```
@@ -55,7 +48,10 @@ screen -h
 
 ```sh
 # New Session
-screen -S [session_name]
+screen -S <session_name>
+
+# Show session
+echo $STY
 
 # List
 screen -ls
@@ -63,15 +59,15 @@ screen -ls
 # Detach: Ctrl + a d
 
 # Reattach
-screen -r [session_id]
-screen -x [session_id]
+screen -r <session_id>
+screen -x <session_id>
 
 # Quit
 screen -X quit
 
 # with session id
 screen \
-  -S [session_id] \
+  -S <session_id> \
   -X quit
 ```
 

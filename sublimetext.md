@@ -4,15 +4,12 @@
 
 ### Installation
 
-### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask sublime-text
 ```
 
-### Tips
-
-#### CLI
+### Configuration
 
 ```sh
 ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl

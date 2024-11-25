@@ -22,7 +22,7 @@ https://github.com/ahmadyusri/booking-app-nodejs/blob/master/etc/docker-entrypoi
 
 ```sh
 # With pnpm
-pnpm add pm2 -D
+pnpm add pm2
 ```
 
 ## CLI

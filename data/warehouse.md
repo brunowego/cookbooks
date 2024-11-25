@@ -25,7 +25,7 @@ Database -> Extract -> Transform (Aggregation -> Normalization) -> Load -> Data 
 - [Apache Hive](/apache/hive.md)
 - [ClickHouse](/clickhouse/README.md) 🌟
 - [Databend](/databend.md)
-- [Snowflake](/snowflake.md)
+- [Snowflake](/snowflake.md) 🌟
 - [Trino (f.k.a PrestoSQL)](/presto.md)
 
 <!--

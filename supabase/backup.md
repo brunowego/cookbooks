@@ -18,7 +18,7 @@ https://stackoverflow.com/questions/75251120/postgresql-restore-with-compressed-
 
 1. [Supabase Projects](https://supabase.com/dashboard/projects)
 2. Select a project
-3. Mein Menu -> Database
+3. Main Menu -> Database
 4. Aside Menu -> Platform -> Backups
 5. Database Backups -> Scheduled backups (Tab) -> Select one -> Download
 

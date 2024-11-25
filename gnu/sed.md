@@ -4,22 +4,15 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install gnu-sed
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install sed
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install sed
 ```

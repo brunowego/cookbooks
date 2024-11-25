@@ -12,6 +12,10 @@
 https://github.com/unkeyed/unkey/tree/main/packages/tinybird
 -->
 
+## Learn
+
+- [Build a real-time dashboard over BigQuery](https://tinybird.co/blog-posts/bigquery-real-time-dashboard)
+
 ## Terms
 
 - Log Analytics
@@ -26,7 +30,7 @@ https://github.com/unkeyed/unkey/tree/main/packages/tinybird
 ### Installation
 
 ```sh
-pip3 install -U tinybird-cli
+pip install tinybird-cli
 ```
 
 ### Commands
@@ -48,6 +52,9 @@ echo '/.tinyb' >> ./.gitignore
 <!--
 TINYBIRD_API_URL=https://api.tinybird.co
 TINYBIRD_API_KEY=
+
+# Tinybird
+export TB_VERSION_WARNING=0
 -->
 
 ### Usage

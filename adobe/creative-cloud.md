@@ -4,9 +4,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask adobe-creative-cloud
 ```
 

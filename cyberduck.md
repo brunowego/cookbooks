@@ -10,14 +10,10 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask cyberduck
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y cyberduck
 ```

@@ -91,6 +91,8 @@ ln -s '/Applications/Firefox.app/Contents/MacOS/firefox' '/usr/local/bin/firefox
 
 ```sh
 firefox -ProfileManager
+# Or
+firefox -P
 ```
 
 ### Usage

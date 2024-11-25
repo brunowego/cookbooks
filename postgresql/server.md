@@ -8,44 +8,27 @@ PostgreSQL is known to be faster while handling massive data sets, complicated q
 
 ### Installation
 
-#### Homebrew
-
 ```sh
-# Version 11.x
-brew install postgresql@11
-```
+# For Homebrew
+brew install postgresql@11 # Version 11.x
 
-#### APT
-
-```sh
+# For APT
 sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt -y install postgresql
-```
 
-#### YUM
-
-```sh
+# For YUM
 sudo zypper refresh
 sudo zypper install -y postgresql-server
-```
 
-#### APK
-
-```sh
+# For APK
 sudo apk update
 sudo apk add postgresql
-```
 
-#### Zypper
-
-```sh
+# For Zypper
 sudo zypper refresh
 sudo zypper install -y postgresql-server
-```
 
-#### Chocolatey
-
-```sh
+# For Chocolatey
 choco install -y postgresql
 ```
 

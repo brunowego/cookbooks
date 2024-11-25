@@ -93,6 +93,9 @@ https://pagedone.io/blocks
 - [tailwindpdf](/tailwindpdf.md)
 
 <!--
+https://divmagic.com/tools/css-to-tailwind
+https://js2ts.com/css-to-tailwind
+
 https://tailscan.com
 https://hypercolor.dev
 https://bobthered.github.io/tailwindcss-palette-generator

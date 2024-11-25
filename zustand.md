@@ -16,6 +16,7 @@
 
 - [Zustand Beginner Tutorial - Learn React State Management With Zustand](https://youtube.com/watch?v=-Y8brhQKvtA)
 - [Zustand Tutorial for Beginners - The Only Course You Will Ever Need](https://youtube.com/watch?v=AYO4qHAnLQI)
+- [Combining Zustand with React Query](https://youtube.com/watch?v=QTZTUrAbjeo)
 
 <!--
 ## Good Examples

@@ -52,6 +52,49 @@ pg_dump \
   "$DATABASE_URL"
 -->
 
+##### TBD
+
+<!--
+pg_dump --no-owner --no-acl --schema public -Fc -v --table public.users --dbname "$STAGING_DATABASE_URL" > ./users.dump
+pg_dump --no-owner --no-acl --schema public -v --table public.users --dbname "$STAGING_DATABASE_URL" > ./users.sql
+
+pg_restore --list ./users.dump
+
+pg_restore -f ./staging.sql -x -O --section=pre-data ./staging.dump
+pg_restore -f ./staging-data.sql -x -O --section=data ./staging.dump
+
+echo 'CREATE EXTENSION IF NOT EXISTS "uuid-ossp" SCHEMA public;' > ./schema.sql
+cat ./staging.sql >> ./schema.sql
+
+wc -l ./users.sql
+
+sed 's/extensions.uuid_generate_v4()/public.uuid_generate_v4()/g' ./schema.sql > ./schema_fixed.sql
+
+psql "$LOCAL_DATABASE_URL" -f ./schema_fixed.sql
+psql "$LOCAL_DATABASE_URL" -f ./staging-data.sql
+
+pg_restore --no-owner --no-acl -d "$LOCAL_DATABASE_URL" -v ./users.dump
+pg_restore --no-owner --no-acl -d "$LOCAL_DATABASE_URL" -v --disable-triggers ./users.dump
+
+pg_restore --verbose --clean --create --no-owner --no-acl --dbname "$LOCAL_DATABASE_URL" ./users.dump
+-->
+
+```sh
+#
+pg_dump --no-owner --no-acl --schema public -Fc -v --exclude-table public.block_attributes --dbname "$STAGING_DATABASE_URL" > ./staging.dump
+
+pg_restore --list ./staging.dump
+
+pg_dump --no-owner --no-acl --schema public -Fc -v --table public.block_attributes --dbname "$STAGING_DATABASE_URL" > ./block_attributes.dump
+
+pg_restore --list ./block_attributes.dump
+
+#
+pg_restore --verbose --clean --no-owner --no-acl --dbname "$LOCAL_DATABASE_URL" --schema public ./staging.dump
+
+pg_restore --verbose --no-owner --no-acl --dbname "$LOCAL_DATABASE_URL" --schema public ./block_attributes.dump
+```
+
 ### Issues
 
 #### TBD

@@ -1,6 +1,6 @@
 # Looker
 
-**Keywords:** Semantic Layer
+**Keywords:** Business Intelligence (BI)
 
 ## Links
 

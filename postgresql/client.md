@@ -55,36 +55,23 @@ psql \
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install libpq
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt -y install postgresql-contrib
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install postgresql-contrib
-```
 
-#### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add postgresql-client
-```
 
-#### Zypper
-
-```sh
+# Using Zypper
 sudo zypper refresh
 sudo zypper install -y postgresql-contrib
 ```

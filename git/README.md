@@ -27,43 +27,27 @@ Version 2.31
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install git
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install git
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install git
-```
 
-#### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add git
-```
 
-#### Zypper
-
-```sh
+# Using Zypper
 sudo zypper refresh
 sudo zypper install -y git-core
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y git
 ```
 

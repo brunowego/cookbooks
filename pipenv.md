@@ -11,22 +11,15 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Homebrew
 brew install pipenv
-```
 
-#### APT
-
-```sh
+# APT
 sudo update
 sudo apt -y install pipenv
-```
 
-#### pip
-
-```sh
+# pip
 pip3 install -U pipenv
 ```
 

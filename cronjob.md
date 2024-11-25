@@ -6,6 +6,7 @@
 - [EasyCron](https://easycron.com)
 - [GitHub Actions](https://github.com/features/actions)
 - [Pipedream](/pipedream.md)
+- [Trigger.dev](https://github.com/triggerdotdev/trigger.dev)
 - [Zeplo](https://zeplo.io)
 
 ## Schedules

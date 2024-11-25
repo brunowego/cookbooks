@@ -19,10 +19,12 @@ Prevent Toxic Environment
 
 - [PagerDuty Postmortems](https://postmortems.pagerduty.com)
 
-<!-- ##
+<!--
+##
 
 - Blameless Culture
-- Incident Management-->
+- Incident Management
+-->
 
 ## Metadata
 

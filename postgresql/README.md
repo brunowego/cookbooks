@@ -20,6 +20,8 @@ https://github.com/postgres/postgres/blob/master/src/backend/utils/misc/postgres
 ## Glossary
 
 - Generalized Inverted Index (GIN)
+- The Oversized-Attribute Storage Technique (TOAST)
+- Write-Ahead Logs (WAL)
 
 ## Managed
 
@@ -30,43 +32,30 @@ https://github.com/postgres/postgres/blob/master/src/backend/utils/misc/postgres
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install libpq
-```
+# brew install postgresql
 
-<!--
-brew install postgresql
--->
-
-#### APT
-
-```sh
+# Using APT
 sudo apt update
-sudo apt -y install libpq-dev
-# g++ make
-```
+sudo apt -y install postgresql-client
+# libpq-dev g++ make
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install postgresql-devel
-```
 
-#### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add postgresql-dev
 ```
 
 ### Environment
 
-#### Darwin
-
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+#### Darwin
 
 ```sh
 # PostgreSQL Develop

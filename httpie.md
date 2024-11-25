@@ -20,22 +20,15 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install httpie
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install httpie
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 
 # Repo: EPEL

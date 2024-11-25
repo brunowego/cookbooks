@@ -120,38 +120,27 @@ CMD ["gunicorn", "-b", "0:5000", "-k", "eventlet", "app:app"]
 
 ### Installation
 
-#### Homebrew
+**Note:** Prefer use [Simple Python Version Management (pyenv)](/pyenv.md)
 
 ```sh
+# Using Homebrew
 brew install python
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install python3
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 
 # Repo: EPEL
 sudo yum -y install python36
-```
 
-#### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add python3
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y python3
 ```
 
@@ -159,23 +148,16 @@ choco install -y python3
 
 ##### Dependencies
 
-###### YUM
-
 ```sh
+# YUM
 yum check-update
 sudo yum -y install curl gcc-c++ make zlib-devel libffi-devel openssl-devel bzip2-devel readline-devel sqlite-devel
-```
 
-###### APT
-
-```sh
+# APT
 sudo apt update
 sudo apt -y install curl g++ make zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
-```
 
-##### Build & Install
-
-```sh
+# Build & Install
 curl https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz | tar -zx
 ( cd ./Python-3.7.3 && ./configure --prefix /usr/local/lib/python3 --with-threads --enable-shared && make && sudo make altinstall ) && rm -r ./Python-3.7.3
 ```
@@ -288,6 +270,19 @@ export PYTHONWARNINGS='ignore'
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+× This environment is externally managed
+```
+
+```sh
+mkdir -p ~/.config/pip
+
+echo "[global]" >> ~/.config/pip/pip.conf
+echo "break-system-packages = true" >> ~/.config/pip/pip.conf
+```
 
 #### No Module Named
 
