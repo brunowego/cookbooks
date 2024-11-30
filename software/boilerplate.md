@@ -12,4 +12,6 @@ https://github.com/ixartz/Next-js-Boilerplate
 https://github.com/pankod/next-boilerplate
 -->
 
-TODO
+## Boilerplates
+
+- [Next Forge](https://next-forge.com) <!-- https://github.com/haydenbleasel/next-forge -->

@@ -46,7 +46,7 @@ https://egghead.io/blog/saas-app-with-nextjs-prisma-auth0-and-stripe
 
 ## Issues
 
-### TBD
+### Missing Callback URL
 
 ```log
 Callback URL mismatch.
@@ -54,16 +54,16 @@ The provided redirect_uri is not in the list of allowed callback URLs.
 Please go to the Application Settings page and make sure you are sending a valid callback url from your application.
 ```
 
-TODO
+1. [Dashboard](https://manage.auth0.com/dashboard)
+2. Applications -> Applications -> `<App Name>` -> Settings
+3. Settings -> Application URIs -> Allowed Callback URLs: `http://localhost:3000/api/auth/callback`
 
-### TBD
+### Missing Allowed Logout URL
 
 ```log
-ACME Corp.
-Oops!, something went wrong
-Callback URL mismatch.
-The provided redirect_uri is not in the list of allowed callback URLs.
-Please go to the Application Settings page and make sure you are sending a valid callback url from your application.
+There could be a misconfiguration in the system or a service outage. We track these errors automatically, but if the problem persists feel free to contact us.
 ```
 
-TBD
+1. [Dashboard](https://manage.auth0.com/dashboard)
+2. Applications -> Applications -> `<App Name>` -> Settings
+3. Settings -> Application URIs -> Allowed Logout URLs: `http://localhost:3000`

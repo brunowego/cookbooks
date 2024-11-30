@@ -38,9 +38,8 @@ https://configr.com/blog/medo-de-bi-pelo-alto-investimento-conheca-o-metabase/
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install metabase
 ```
 

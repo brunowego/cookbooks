@@ -53,6 +53,10 @@ https://talend.github.io/ui
 
 https://github.com/highlight/highlight/tree/main/packages/ui
 https://github.com/ballerine-io/ballerine/tree/dev/packages/ui
+
+Colors
+
+https://looker-open-source.github.io/components/latest/?path=/docs/foundations-color--docs
 -->
 
 ## Library

@@ -22,31 +22,21 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install moreutils
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install moreutils
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 
 # Repo: EPEL
 sudo yum -y install moreutils
-```
 
-#### Zypper
-
-```sh
+# Using Zypper
 sudo zypper refresh
 sudo zypper install -y moreutils
 ```

@@ -7,3 +7,7 @@ https://reddit.com/r/nextjs/comments/12dngvg/small_mistake_leads_to_3000_bill_fr
 ## Learn
 
 - [ServerlessHorrors](https://serverlesshorrors.com)
+
+## Tools
+
+- [SaaS Prices](https://saasprices.net)

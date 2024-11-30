@@ -62,6 +62,26 @@ fastify print-routes <file>
 #### TBD
 
 ```log
+@acme/api:dev:     msg: "Failed to start server: No \"exports\" main defined in /absolute/path/to/node_modules/@acme/db/package.json"
+```
+
+```json
+{
+  // ...
+  "exports": {
+    ".": {
+      // ...
+      "require": "./src/db.ts"
+    }
+    // ...
+  }
+  // ...
+}
+```
+
+#### TBD
+
+```log
 (node:66661) [FSTWRN002] FastifyWarning: The anonymous plugin being registered mixes async and callback styles, which will result in an error in `fastify@5`
 ```
 

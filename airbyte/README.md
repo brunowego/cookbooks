@@ -8,6 +8,7 @@
 - [Main Website](https://airbyte.io)
 - [Docs](https://docs.airbyte.com)
   - [Integrations](https://docs.airbyte.com/integrations)
+- [Console](https://cloud.airbyte.com)
 
 ## CLI
 

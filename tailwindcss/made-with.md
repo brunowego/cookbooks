@@ -34,9 +34,7 @@ https://tailwindcollections-gallery-page.netlify.app
 
 Empty State / Placeholder
 
-https://app.frame.so/company/qgZKo5rL/settings/company/users
-https://app.frame.so/company/qgZKo5rL/settings/account/general
-https://app.frame.so/company/qgZKo5rL/settings/company/templates
+https://app.formcarry.com
 https://dashboard.lusha.com/enrich/workflows/onboarding
 https://dashboard.lusha.com/enrich/csv
 
@@ -388,6 +386,7 @@ https://pagedone.lemonsqueezy.com/affiliates
 
 Public Profile
 
+https://framer.com/marketplace/plugins/depth-grid/
 https://buymeacoffee.com/cristianmihai
 https://zenn.dev/serinuntius?tab=scraps
 https://dribbble.com/shots/24545050-Company-page-with-key-data
@@ -573,7 +572,7 @@ https://linear.app/homepage
 https://omens.com.br
 https://send.it
 
-https://sarah-portfolio-ten.vercel.app/
+https://sarah-portfolio-ten.vercel.app
 https://mateusbelicio.github.io/bmi-calculator/
 https://polar.sh
 https://im-agency.vercel.app
@@ -654,6 +653,7 @@ https://coinhall.org
 
 Landing Page
 
+https://prospera.framer.ai/
 https://ezcater.github.io/recipe/
 https://alignui.com/
 https://mvp.easyui.pro/
@@ -826,6 +826,7 @@ https://app.plain.com/workspaces
 
 Dashboard
 
+https://app.frigade.com/dev/onboarding
 https://app.bucket.co/envs/production-enqqWasiw4Kba4/features?
 https://dribbble.com/shots/24729545-Application-PoC-View
 https://pbs.twimg.com/media/GZiqRsRWUAor4CL?format=jpg&name=4096x4096
@@ -956,6 +957,7 @@ https://app.bossabox.com/profile/settings
 
 Settings
 
+https://dribbble.com/shots/25243651-Settings-AI-Configuration
 https://dribbble.com/shots/25218098-Settings-page-Account-Security
 https://app.bossabox.com/profile/settings
 https://app.rifei.com.br/account

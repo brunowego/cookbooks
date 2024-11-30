@@ -2,17 +2,17 @@
 
 ## Installation
 
-### Homebrew
-
 ```sh
+# Using Homebrew
 brew install gawk
-```
 
-### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y gawk
 ```
+
+<!--
+alias awk=gawk
+-->
 
 ## Commands
 

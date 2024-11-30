@@ -18,7 +18,7 @@
 
 ### Open Source
 
-- [Airbyte](/airbyte/README.md)
+- [Airbyte](/airbyte/README.md) 🌟
 - [Apache Airflow](https://airflow.apache.org)
 - [Apache NiFi](https://nifi.apache.org)
 - [Bonobo](/bonobo.md)

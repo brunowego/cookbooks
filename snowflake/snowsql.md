@@ -78,3 +78,43 @@ SELECT CURRENT_DATABASE();
 2. Admin -> Accounts
 3. Select Account -> More -> Edit account name -> Manage URLs -> Current URL
    - Something like `https://<account_name>.snowflakecomputing.com`
+
+### Queries
+
+#### Database
+
+```sql
+SHOW DATABASES;
+
+-- e.g. baseball
+CREATE DATABASE <db-name>;
+
+USE DATABASE <db-name>;
+
+SHOW SCHEMAS;
+```
+
+#### Stages
+
+```sql
+-- e.g. baseball_game_stats
+CREATE OR REPLACE STAGE <stage-name> FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY = '"' SKIP_HEADER = 1);
+
+-- e.g. baseball_game_stats
+PUT file://absolute/path/to/<filename>.csv @<stage-name>;
+
+SHOW STAGES IN DATABASE <db-name>;
+```
+
+#### Tables
+
+```sql
+CREATE TABLE <table-name> (
+    -- ...
+);
+
+--
+COPY INTO <table-name> FROM @<stage-name> FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY = '"' SKIP_HEADER = 1);
+
+SELECT * FROM <table-name> LIMIT 20;
+```

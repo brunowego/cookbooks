@@ -1,5 +1,7 @@
 # Kysely
 
+**Keywords:** Query Builder
+
 ## Links
 
 - [Code Repository](https://github.com/kysely-org/kysely)

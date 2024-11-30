@@ -21,3 +21,16 @@ https://github.com/orgs/vercel/discussions/3260
 -->
 
 Try check if the token is correct.
+
+### TBD
+
+```log
+> You must re-authenticate to use henkiz scope.
+> Log in to Vercel (Use arrow keys)
+```
+
+<!--
+https://github.com/amondnet/vercel-action/issues/138#issuecomment-1090997531
+-->
+
+TODO

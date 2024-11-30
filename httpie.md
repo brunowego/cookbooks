@@ -17,6 +17,7 @@
 ### Links
 
 - [Code Repository](https://github.com/httpie/cli)
+- [Main Website](https://httpie.io/cli)
 
 ### Installation
 

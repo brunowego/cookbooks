@@ -12,12 +12,11 @@
 - [Google Looker](/gcp/looker.md)
 - [Holistics](https://holistics.io)
 - [Microsoft Power BI](/microsoft/powerbi.md)
-- [Qlik](https://qlik.com)
+- [Qlik Sense](https://qlik.com)
 - [Tableau](https://tableau.com)
 - [ThoughtSpot](https://thoughtspot.com)
 
 <!--
-https://github.com/lightdash/lightdash
 https://sisense.com
 -->
 
@@ -30,7 +29,7 @@ https://sisense.com
 - [Redash](/redash.md)
 
 <!--
+https://github.com/lightdash/lightdash
 https://github.com/frappe/insights
-https://github.com/evidence-dev/evidence
 https://github.com/ankane/blazer
 -->

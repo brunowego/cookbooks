@@ -10,9 +10,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install fetch
 ```
 
@@ -28,4 +27,9 @@ fetch \
   --branch '<branch>' \
   --source-path '<absolute/path/to/file-or-folder>' \
   './<path/to/file-or-folder>'
+
+#
+fetch \
+  --repo 'https://github.com/palugahq/platform' \
+  --commit 45c561f254929dcc1bde726c48f060eb7dccd90f
 ```

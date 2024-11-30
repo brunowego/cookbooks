@@ -142,4 +142,23 @@ knex seed:make
 <!--
 knex migrate:latest
 knex migrate:rollback
+
+knex seed:make --timestamp-filename-prefix <name>
 -->
+
+### Issues
+
+#### Missing `ts-node`
+
+```log
+Unknown file extension ".ts" for /absolute/path/to/knexfile.ts
+```
+
+<!--
+https://github.com/knex/knex/issues/4793
+https://github.com/knex/knex/issues/6087
+-->
+
+```sh
+pnpm add ts-node -D
+```

@@ -17,6 +17,7 @@ Database -> Extract -> Transform (Aggregation -> Normalization) -> Load -> Data 
 - [Databricks](/databricks.md)
 - [Google Cloud BigQuery](/gcp/services/bigquery.md) 🌟
 - [Greenplum](https://greenplum.org)
+- [Snowflake](/snowflake/README.md) 🌟
 - [Teradata](https://teradata.com)
 
 ### Open Source
@@ -25,7 +26,6 @@ Database -> Extract -> Transform (Aggregation -> Normalization) -> Load -> Data 
 - [Apache Hive](/apache/hive.md)
 - [ClickHouse](/clickhouse/README.md) 🌟
 - [Databend](/databend.md)
-- [Snowflake](/snowflake.md) 🌟
 - [Trino (f.k.a PrestoSQL)](/presto.md)
 
 <!--

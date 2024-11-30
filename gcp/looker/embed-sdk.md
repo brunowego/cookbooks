@@ -1,5 +1,11 @@
 # Looker Embed SDK
 
+**Keywords:** Iframe Embedding
+
+## Links
+
+- [Code Repository](https://github.com/looker-open-source/embed-sdk)
+
 ## Library
 
 ### Installation
@@ -8,7 +14,3 @@
 # Using pnpm
 pnpm add @looker/embed-sdk
 ```
-
-<!--
-@looker/sdk @looker/sdk-rtl @looker/sdk-node
--->

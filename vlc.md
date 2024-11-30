@@ -6,14 +6,10 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask vlc
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y vlc
 ```

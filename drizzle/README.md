@@ -6,6 +6,8 @@ https://github.com/typytypytypy/prisma-to-drizzle
 https://github.com/Duckapple/prisma-to-drizzle
 -->
 
+**Keywords:** Kysely
+
 ## Links
 
 - [Main Website](https://drizzle.team)

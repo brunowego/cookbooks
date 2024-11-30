@@ -7,7 +7,7 @@ path:packages/ui path:components.json content:"https://ui.shadcn.com/schema.json
 -->
 
 <!--
-https://github.com/origin-space/originui
+https://github.com/origin-space/originui | https://originui.com
 
 https://github.com/sadmann7/shadcn-table
 https://github.com/rizzui/rizzui

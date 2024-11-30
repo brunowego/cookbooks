@@ -1,6 +1,10 @@
 # Sentry
 
 <!--
+SENTRY:<ID>: <message>
+-->
+
+<!--
 https://blog.sentry.io/2018/07/17/source-code-fetching
 
 https://www.figma.com/file/NFOla85HaxGxbg6O1AdSWw/Color-System?t=XmKOcZHKw09kUquB-0

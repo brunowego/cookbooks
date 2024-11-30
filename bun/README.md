@@ -29,11 +29,8 @@ https://github.com/anaxios/CL4P-TP/blob/master/Dockerfile
 ```sh
 # Using NPM
 npm install bun -g
-```
 
-#### Homebrew
-
-```sh
+# Homebrew
 brew tap oven-sh/bun
 brew install bun
 ```
@@ -47,6 +44,8 @@ sudo snap install bun-js
 ## Environment
 
 ### Darwin
+
+**Note:** Only for Homebrew installation.
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 

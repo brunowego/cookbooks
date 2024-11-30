@@ -74,11 +74,9 @@ docker run -it --rm \
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install ruby
-# brew install ruby@2.7
 ```
 
 ### Environment
@@ -88,11 +86,9 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 ```sh
 # Ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
-# export PATH="/usr/local/opt/ruby@2.7/bin:$PATH"
 
 # RubyGems
-export PATH="/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
-# export PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
+export PATH="/usr/local/lib/ruby/gems/3.3.0/bin:$PATH"
 ```
 
 ### Configuration

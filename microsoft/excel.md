@@ -10,15 +10,11 @@
 
 ### Installation
 
-#### MAS
-
 ```sh
+# Using MAS
 mas install 462058435
-```
 
-#### Homebrew
-
-```sh
+# Using Homebrew
 brew install --cask microsoft-excel
 ```
 
