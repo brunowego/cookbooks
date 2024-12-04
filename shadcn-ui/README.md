@@ -1,6 +1,6 @@
 # shadcn/ui
 
-**Keywords:** Radix UI, Tailwind CSS
+**Keywords:** Radix UI, Tailwind CSS, UI Library
 
 <!--
 path:packages/ui path:components.json content:"https://ui.shadcn.com/schema.json"

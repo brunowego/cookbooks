@@ -36,6 +36,7 @@
 - [Tabler Icons](https://tabler-icons.io)
 
 <!--
+https://nucleoapp.com/premium-icons
 https://phosphoricons.com | https://github.com/phosphor-icons/homepage
 https://heroicons.dev
 https://svgl.vercel.app

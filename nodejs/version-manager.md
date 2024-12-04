@@ -14,7 +14,10 @@
 3. Engines in `package.json`:
 
 ```json
-"engines": {
-  "node": ">=20.15.1 <20.16.0"
+{
+  // ...
+  "engines": {
+    "node": ">=20.15.1 <20.16.0"
+  }
 }
 ```

@@ -62,6 +62,21 @@ fastify print-routes <file>
 #### TBD
 
 ```log
+FastifyError [Error]: Failed building the validation schema for GET: /pages/default, due to error strict mode: unknown keyword: "slug"
+```
+
+<!--
+Ajv v8
+
+https://github.com/fastify/fastify/issues/4549
+https://nearform.com/insights/upgrading-fastifys-input-validation-to-ajv-version-8/
+-->
+
+TODO
+
+#### TBD
+
+```log
 @acme/api:dev:     msg: "Failed to start server: No \"exports\" main defined in /absolute/path/to/node_modules/@acme/db/package.json"
 ```
 

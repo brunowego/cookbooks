@@ -1,7 +1,7 @@
 # Ollama
 
 <!--
-11434
+PORT: 11434
 -->
 
 **Keywords:** LLM
@@ -35,9 +35,25 @@ ollama -h
 
 ```sh
 #
+ollama serve
+
+#
+ollama pull <model> # llama2, llama3, etc.
+
+#
 ollama list
 
 #
 ollama run <model>
 ollama run <model> <text>
 ```
+
+### Issues
+
+#### TBD
+
+```log
+Error: could not connect to ollama app, is it running?
+```
+
+TODO

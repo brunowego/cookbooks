@@ -11,3 +11,7 @@
 https://github.com/carbon-app/carbon | https://carbon.now.sh
 https://github.com/nimone/code-screeshot
 -->
+
+## Tools
+
+- [SnippetsLab](/snippetslab.md)

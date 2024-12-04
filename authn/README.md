@@ -38,7 +38,7 @@ https://fusionauth.io
 - [ORY Hydra](/ory/hydra.md)
 
 <!--
-https://zitadel.com/
+https://zitadel.com
 https://kinde.com
 
 https://github.com/logto-io/logto

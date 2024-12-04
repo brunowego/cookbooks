@@ -8,6 +8,7 @@ https://github.com/acao/trpc-example-sse-craft/blob/main/render.yaml
 
 ## Links
 
+- [Org. Repository](https://github.com/renderinc)
 - [Main Website](https://render.com)
 - Docs
   - [Native Runtimes](https://docs.render.com/native-runtimes)
@@ -67,6 +68,19 @@ source ~/.zshrc
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+Unexpected token '{'
+SyntaxError: Unexpected token '{'
+```
+
+<!--
+NODE_VERSION=20
+-->
+
+TODO
 
 #### TBD
 

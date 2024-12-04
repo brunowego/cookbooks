@@ -25,6 +25,9 @@ export DOCKER_VOLUME_NAME=''
 
 # docker stop
 
+# Remove old backup
+rm ./backup.tar
+
 # Backup
 docker run --rm -v "$DOCKER_VOLUME_NAME":/volume -v $(pwd):/backup alpine tar cvf /backup/backup.tar /volume
 

@@ -2,29 +2,19 @@
 
 ## Installation
 
-### Homebrew
-
 ```sh
+# Using Homebrew
 brew install bind
-```
 
-### YUN
-
-```sh
+# Using YUN
 yum check-update
 sudo yum -y install bind
-```
 
-### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install bind9
-```
 
-### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add bind
 ```

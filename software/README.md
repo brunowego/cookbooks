@@ -52,6 +52,7 @@ Applicant Tracking System (ATS)
 - Model-View-Controller (MVC)
 - Peer-to-Peer
 - Pipe-Filter
+- Service-Repository (SR)
 
 ## Design Pattern
 

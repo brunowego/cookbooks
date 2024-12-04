@@ -82,8 +82,8 @@ Hero / Header | Hero
 
 https://tryarcane.com/
 https://t10bank.com.br/
-https://www.fivetran.com
-https://www.skalata.vc
+https://fivetran.com
+https://skalata.vc
 https://tofu.com/
 https://gotofu.com/
 https://goalto.io/
@@ -133,10 +133,10 @@ https://oneleet.com
 https://gleap.io
 
 https://biztro.co
-https://www.spackle.so
-https://www.replyqai.com
+https://spackle.so
+https://replyqai.com
 https://supahub.com
-https://www.privy.io
+https://privy.io
 https://seline.so
 https://checkoutpage.co
 https://devmilek.pl
@@ -319,7 +319,7 @@ https://paraform.com/help
 
 Terms / Security
 
-https://www.privy.io/security
+https://privy.io/security
 
 GameFi
 
@@ -476,6 +476,7 @@ https://app.middleware.io/auth/login
 https://dash.reviews.io/login
 https://app.onmarathon.com/register
 
+https://lmnr.ai/sign-in
 https://dashboard.aragon.ai/login?template=avatar_professional
 https://workspace.supahub.com/signin
 https://biztro.co/login?callbackUrl=%2Fdashboard
@@ -532,6 +533,10 @@ https://metafy.gg/auth/account/create
 https://app.logsnag.com/auth/sign-in
 https://cloud.tailwarden.com/sign-in
 https://auth.planetscale.com/sign-in
+
+API Key
+
+https://www.lmnr.ai/project/6ef466d6-badb-4c3e-a2bb-b6fe10618a37/settings
 
 Waitlist
 
@@ -672,7 +677,7 @@ https://localcan.com
 https://jobbliss.com
 
 https://biztro.co
-https://www.labrahmi.me | https://github.com/0sssama/website
+https://labrahmi.me | https://github.com/0sssama/website
 https://animations.dev
 https://next-forge.com
 https://gleap.io
@@ -723,6 +728,10 @@ Invest
 
 https://eqseed.com/investir/petdelicia
 
+Spreadsheet
+
+https://rowzero.io/workbook/1113207BB021C27C55E45ECA/0
+
 Pricing
 
 https://azimutt.app/pricing
@@ -741,6 +750,7 @@ https://reviews.io/front/pricingplans
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://rowzero.io/pricing
 https://rotato.app/pricing
 https://tailscale.com/pricing
 https://builderbot.cloud/payment
@@ -1120,9 +1130,10 @@ https://app.formbricks.com/onboarding
 https://app.techfx.com.br/onboarding/partner
 https://app.boords.com/welcome
 
-Invite
+Invite / Seat
 
 https://roadmap.sh/account/friends
+https://www.lmnr.ai/workspace/4f041ad6-d825-4307-b7ca-c69f2e35d821
 
 Billing
 
@@ -1216,7 +1227,7 @@ Shopping Cart
 
 Footer
 
-https://www.pietrastudio.com/
+https://pietrastudio.com/
 https://tryarcane.com/
 https://zave.it
 https://truewind.ai
@@ -1233,9 +1244,10 @@ https://oneleet.com
 https://tangem.com/en
 https://swan.io
 https://zapal.tech
+https://conceptzilla.com
 
-https://heyform.net/
-https://campsite.chat/
+https://heyform.net
+https://campsite.chat
 https://wickedtemplates.com
 https://significa.co
 https://wearebren.com
@@ -1244,7 +1256,6 @@ https://chaindesk.ai
 https://midday.ai
 https://formance.com
 https://alexanderjeamoro.vercel.app
-https://conceptzilla.com
 
 Text Effect
 

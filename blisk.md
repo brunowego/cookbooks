@@ -14,8 +14,7 @@ Expensive
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask blisk
 ```

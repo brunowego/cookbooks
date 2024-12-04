@@ -83,9 +83,9 @@ jq '."recommendations" += ["Trunk.io"]' "$PWD"/.vscode/extensions.json | sponge 
 lint:
   # ...
   ignore:
-    - linters: [svgo]
+    - linters: [<linter-name>]
       paths:
-        - path/to/file.svg
+        - <path/to/file>
 ```
 
 ### Issues
