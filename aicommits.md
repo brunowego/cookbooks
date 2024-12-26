@@ -17,6 +17,7 @@ npm install aicommits -g
 
 ```sh
 aicommits -h
+aic -h
 ```
 
 ### Configuration
@@ -35,4 +36,7 @@ cat ~/.aicommits
 ```sh
 #
 aicommits
+
+#
+npx aicommits
 ```

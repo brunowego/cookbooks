@@ -6,7 +6,9 @@
 - [Mailchimp](/mailchimp.md)
 
 <!--
+https://customer.io
 https://substack.com
+https://segment.com
 
 https://brevo.com
 https://klaviyo.com

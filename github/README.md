@@ -70,9 +70,8 @@ https://github.community/t/picture-tag-in-markdown/149471
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask github
 ```
 

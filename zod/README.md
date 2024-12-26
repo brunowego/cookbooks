@@ -24,6 +24,18 @@ https://github.com/hapijs/joi
 pnpm add zod
 ```
 
+### Syntax
+
+```ts
+import { z } from 'zod'
+
+export const ZUser = z.object({
+  // ...
+})
+
+export type TUser = z.infer<typeof ZUser>
+```
+
 ## Links
 
 - [Code Repository](https://github.com/colinhacks/zod)

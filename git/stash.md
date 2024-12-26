@@ -30,3 +30,11 @@ git stash show
 #
 # git stash pop stash@{2}
 -->
+
+## Tips
+
+### Only Stage Changes
+
+```sh
+git stash push --staged
+```

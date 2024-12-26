@@ -5,7 +5,7 @@
 ## Links
 
 - [Main Website](https://certbot.eff.org/)
-- [Docs](https://certbot.eff.org/docs/)
+- [Docs](https://certbot.eff.org/docs)
 
 ## Issues
 
@@ -20,31 +20,22 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install certbot
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo add-apt-repository ppa:certbot/certbot
 
 sudo apt update
-sudo apt install -y certbot python3-certbot-apache
-```
+sudo apt install -y certbot python3-certbot-apache # for HTTPd (Apache)
+sudo apt install -y certbot python3-certbot-nginx # for Nginx
 
-#### YUM
-
-```sh
+# Using YUM
 sudo check update
 sudo yum install -y certbot
-```
 
-#### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add certbot
 ```
@@ -57,10 +48,14 @@ sudo mkdir -p {/etc,/var/{lib,log}}/letsencrypt
 
 sudo chown -R "$(whoami)" {/etc,/var/{lib,log}}/letsencrypt
 
-cat << EOF > /etc/letsencrypt/cli.ini
-domains = <xyz.tld>, <www.xyz.tld>
+#
+export DOMAIN='<xyz.tld>'
+export EMAIL='<email>'
+
+cat << EOF >> /etc/letsencrypt/cli.ini
+domains = $DOMAIN
 authenticator = manual # standalone
-email = <email>
+email = $EMAIL
 EOF
 ```
 
@@ -120,5 +115,5 @@ ls /etc/letsencrypt/live/<xyz.tld>
 #### Automatic Renew
 
 ```sh
-(crontab -l 2>/dev/null; echo '0 8 * */3 * certbot renew --quiet') | crontab -
+(crontab -l 2>/dev/null; echo '0 8 * */3 * certbot renew --quiet') | crontab - # Every 3 months
 ```

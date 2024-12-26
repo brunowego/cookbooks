@@ -6,6 +6,10 @@
 
 ## CLI
 
+### Installation
+
+Follow the [instructions here](./README.md#installation).
+
 ### Commands
 
 ```sh

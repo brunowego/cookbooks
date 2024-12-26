@@ -12,9 +12,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask dbeaver-enterprise
 ```
 

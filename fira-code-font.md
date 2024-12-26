@@ -13,22 +13,15 @@ https://medium.com/@peterpme/operator-mono-fira-code-the-best-of-both-worlds-191
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask font-fira-code
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install fonts-firacode
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y firacode-ttf
 ```
 
@@ -50,4 +43,14 @@ jq '."editor.fontFamily" |= "'\''Fira Code'\''"' "$HOME"/.vscode/settings.json |
 
 #
 jq '."editor.fontLigatures" |= true' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+```
+
+#### Cursor
+
+```sh
+#
+jq '."editor.fontFamily" |= "'\''Fira Code'\''"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+
+#
+jq '."editor.fontLigatures" |= true' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 ```

@@ -80,6 +80,8 @@ https://simplegoods.co
 
 Hero / Header | Hero
 
+https://www.nis-insights.org/
+https://superpeer.com/
 https://tryarcane.com/
 https://t10bank.com.br/
 https://fivetran.com
@@ -132,6 +134,7 @@ https://neverbeforeseen.co
 https://oneleet.com
 https://gleap.io
 
+https://nstbrowser.io/en
 https://biztro.co
 https://spackle.so
 https://replyqai.com
@@ -536,7 +539,7 @@ https://auth.planetscale.com/sign-in
 
 API Key
 
-https://www.lmnr.ai/project/6ef466d6-badb-4c3e-a2bb-b6fe10618a37/settings
+https://lmnr.ai/project/6ef466d6-badb-4c3e-a2bb-b6fe10618a37/settings
 
 Waitlist
 
@@ -577,6 +580,8 @@ https://linear.app/homepage
 https://omens.com.br
 https://send.it
 
+https://www.alignui.com
+https://nstbrowser.io/en
 https://sarah-portfolio-ten.vercel.app
 https://mateusbelicio.github.io/bmi-calculator/
 https://polar.sh
@@ -699,6 +704,7 @@ https://app.formcarry.com/integrations
 https://formcarry.com/integrations
 https://linear.app/henkiz/settings/integrations
 
+https://fiber.dev/sources
 https://productlane.com/settings/integrations
 https://cloud.trigger.dev/orgs/henkiz-2a7a/integrations
 https://doppler.com/integrations
@@ -836,6 +842,7 @@ https://app.plain.com/workspaces
 
 Dashboard
 
+https://dribbble.com/shots/25156559-Compliance-Framework-Details-Tab-Navigation | https://dribbble.com/shots/25156193-SOC2-Requirements-View-Table
 https://app.frigade.com/dev/onboarding
 https://app.bucket.co/envs/production-enqqWasiw4Kba4/features?
 https://dribbble.com/shots/24729545-Application-PoC-View
@@ -855,6 +862,9 @@ https://strut.so/c/021b95e6-0c3a-4b5a-8190-d35116b892c0
 https://app.premai.io/projects
 https://app.netbird.io/peers | https://github.com/netbirdio/netbird
 
+https://overview.tremor.so/support
+https://planner.tremor.so/quotes/overview
+https://dashboard.tremor.so/settings/general
 https://henkiz.supahub.com/admin
 https://app.dub.co/henkiz
 https://cloud.llamaindex.ai/project/3d5f8e08-0b32-4aad-b099-d3bae0d4b289/extraction
@@ -965,6 +975,10 @@ Banking
 
 https://app.bossabox.com/profile/settings
 
+Page Builder
+
+https://shots.so
+
 Settings
 
 https://dribbble.com/shots/25243651-Settings-AI-Configuration
@@ -1038,6 +1052,10 @@ Subscription
 
 https://imagine.art/dashboard/subscription
 https://newsletter.quivr.app/subscribe/a20f5eaf-9071-4647-93cb-74f5e771e3e1/manage?post_id=aab8821e-81ed-4554-abbe-f040bb424f0d
+
+Newsletter / Email Preferences
+
+https://links.openphone.com/manage_subscription_preferences/dgT-4QQAAM3phwLL6YcCAZCZ09pC23G4vNPVyJYEeQ==/en
 
 Store
 
@@ -1133,7 +1151,7 @@ https://app.boords.com/welcome
 Invite / Seat
 
 https://roadmap.sh/account/friends
-https://www.lmnr.ai/workspace/4f041ad6-d825-4307-b7ca-c69f2e35d821
+https://lmnr.ai/workspace/4f041ad6-d825-4307-b7ca-c69f2e35d821
 
 Billing
 
@@ -1163,6 +1181,7 @@ https://gamestorm-nuxt.vercel.app/games-details
 
 Blog
 
+https://fiber.dev/blog
 https://im-agency.vercel.app/blog
 https://crunchydata.com/blog
 https://hypertune.com/blog
@@ -1246,6 +1265,7 @@ https://swan.io
 https://zapal.tech
 https://conceptzilla.com
 
+https://mailcoach.app
 https://heyform.net
 https://campsite.chat
 https://wickedtemplates.com
@@ -1328,6 +1348,13 @@ https://mentoriaemvinhos.com.br/inscricao-jornada-apreciador-de-vinhos-a
 https://ebaconline.com.br/marketing-de-influencia
 https://maxcoach.jamstacktemplates.dev
 https://branco-react.hibootstrap.com/life-coach
+
+Sidebar
+
+https://x.com/tanbirDsgnDev/status/1870504152876658816/photo/1
+
+https://herodesigns.vercel.app/notion
+https://go.v7labs.com/0193b698-7393-788b-ae65-adf45503479d/projects/0193e4dc-f10a-7bcf-a0c7-cd9ae3312677
 
 Drag & Drop / Upload
 

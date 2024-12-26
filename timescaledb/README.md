@@ -1,11 +1,13 @@
 # TimescaleDB
 
-**Keywords:** Time Series Database
+**Keywords:** Time Series Database, OLAP
 
 ## Links
 
 - [Code Repository](https://github.com/timescale/timescaledb)
 - [Main Website](https://timescale.com)
+- Docs
+  - [Continuous aggregates](https://docs.timescale.com/use-timescale/latest/continuous-aggregates/#continuous-aggregates)
 
 ## Docker
 
@@ -29,8 +31,12 @@ docker run -d \
   -p 5432:5432 \
   --name timescaledb \
   --network workbench \
-  docker.io/timescale/timescaledb:2.9.3-pg13
+  docker.io/timescale/timescaledb-ha:pg17
 ```
+
+<!--
+docker.io/timescale/timescaledb:latest-pg17
+-->
 
 ### Remove
 
@@ -40,15 +46,17 @@ docker rm -f timescaledb
 docker volume rm timescaledb-data
 ```
 
-<!-- ## CLI
+## CLI
 
 ### Installation
 
-#### Homebrew
-
 ```sh
-brew install timescale/tap/timescaledb
+# Using Homebrew
+brew tap timescale/tap
+brew install timescaledb
+```
 
+<!--
 sed -i "s/^#shared_preload_libraries = ''/shared_preload_libraries = 'timescaledb'/" /usr/local/var/postgres/postgresql.conf
 
 /usr/local/bin/timescaledb_move.sh
@@ -56,4 +64,4 @@ sed -i "s/^#shared_preload_libraries = ''/shared_preload_libraries = 'timescaled
 brew services restart postgresql
 
 createuser postgres -s
-``` -->
+-->

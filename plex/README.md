@@ -20,9 +20,8 @@ https://skybox.xyz/en/
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask plex-media-server
 ```
 
@@ -30,8 +29,7 @@ brew install --cask plex-media-server
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask plex-media-player
 ```

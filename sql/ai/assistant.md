@@ -48,19 +48,28 @@ database management, and data analysis. Provide guidance on how to write efficie
 SQL queries, and offer suggestions for optimizing database performance. Format output in Markdown.
 ```
 
+```txt
+I have a PostgreSQL database with the following schema:
+
+-- Paste your schema here
+
+I need help writing queries for the use cases I will describe in the next prompts.
+```
+
 ### SQL Query to List Tables
 
 **Dump:**
 
 ```sh
 #
-export DATABASE_URL=''
+export DATABASE_URL='postgresql://user:password@localhost:5432/database'
 
 #
 pg_dump \
   -d "$DATABASE_URL" \
   -n public \
   -x \
+  --schema-only \
   > ./dump-$(date -u '+%Y.%m.%d-%H%M').sql
 ```
 

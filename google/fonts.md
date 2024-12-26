@@ -1,8 +1,9 @@
 # Google Fonts
 
 <!--
-https://fonts.google.com/specimen/Archivo?preview.layout=grid&query=Archivo
-https://fonts.google.com/specimen/Syne?preview.layout=grid&query=Syne
+https://fonts.google.com/specimen/Archivo
+https://fonts.google.com/specimen/Syne
+https://fonts.google.com/specimen/Urbanist
 
 Heading
 

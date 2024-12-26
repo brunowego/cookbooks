@@ -13,6 +13,15 @@ https://linkedin.com/learning/database-foundations-administration-8375189/admini
 - [dbdocs.io](/dbdocs/README.md)
   - [Database Markup Language (DBML)](/dbdocs/dbml.md)
 
+### Database GUI
+
+- [DBeaver](/dbeaver/README.md)
+
+<!--
+Postico
+TablePlus
+-->
+
 ## Articles
 
 - [ByteByteGo / Key Steps in the Database Selection Process](https://blog.bytebytego.com/p/key-steps-in-the-database-selection)
@@ -26,6 +35,7 @@ https://linkedin.com/learning/database-foundations-administration-8375189/admini
 - Data Definition Language (DDL)
 - Data Manipulation Language (DML)
 - Not Only SQL (NoSQL)
+- Point-in-time recovery (PITR)
 - Relational Database Management System (RDBMS)
 - Time Series Database (TSDB)
 

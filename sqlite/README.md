@@ -1,5 +1,10 @@
 # SQLite
 
+<!--
+DB Browser for SQLite
+SQLiteStudio
+-->
+
 ## Links
 
 - [Main Website](https://sqlite.org)
@@ -8,16 +13,12 @@
 
 ### Installation
 
-#### APT
-
 ```sh
+# Using APT
 sudo apt update
 sudo apt -y install libsqlite3-dev
-```
 
-#### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add sqlite-dev
 ```
@@ -26,22 +27,15 @@ sudo apk add sqlite-dev
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install sqlite
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install sqlite
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y sqlite
 ```
 

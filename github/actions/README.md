@@ -334,11 +334,13 @@ TODO
 
 ### Tips
 
-#### Visual Studio Code
+#### Editor Extensions
 
 ```sh
-#
+# Visual Studio Code
 code --install-extension GitHub.vscode-github-actions
+# Cursor
+cursor --install-extension GitHub.vscode-github-actions
 
 #
 jq '."recommendations" += ["GitHub.vscode-github-actions"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json

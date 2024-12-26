@@ -2,14 +2,13 @@
 
 ## Links
 
-- [Main Website](https://sqlitebrowser.org/)
+- [Main Website](https://sqlitebrowser.org)
 
 ## App
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask db-browser-for-sqlite
 ```

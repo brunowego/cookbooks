@@ -15,10 +15,10 @@ jq '."recommendations" += ["alefragnani.project-manager"]' "$PWD"/.vscode/extens
 ### Backup
 
 ```sh
-#
+# Backup
 cat ~/Library/Application\ Support/Code/User/globalStorage/alefragnani.project-manager/projects.json | gh gist create - -f vscode-project-manager
 
-#
+# Restore
 gh gist list
 gh gist view <hash> > ~/Library/Application\ Support/Code/User/globalStorage/alefragnani.project-manager/projects.json
 

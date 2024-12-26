@@ -9,6 +9,10 @@ https://linkedin.com/learning/node-js-essential-training-3/learn-the-node-js-fun
 > 20.6 read .env files native
 -->
 
+<!--
+Import Hierarchy: External, Internal, Local, and Contextual
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/npm/cli)
@@ -81,13 +85,13 @@ volta install node
 brew install nodejs
 
 # Using YUM
-curl -sL https://rpm.nodesource.com/setup_20.x | sudo -E bash -
+curl -sL https://rpm.nodesource.com/setup_22.x | sudo -E bash -
 
 yum check-update
 sudo yum -y install nodejs
 
 # Using APT
-curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 
 sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt -y install nodejs

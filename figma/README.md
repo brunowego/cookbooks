@@ -41,7 +41,7 @@ Dark mode=False
 
 ## Links
 
-- [Downloads](https://figma.com/downloads/)
+- [Downloads](https://figma.com/downloads)
 - [Figma Mirror](https://figma.com/mirror)
 - [Developers / API](https://figma.com/developers/api)
 - [Status Page](https://status.figma.com)

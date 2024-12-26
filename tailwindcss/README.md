@@ -62,6 +62,10 @@ https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atai
 - [Sail UI](https://sailui.github.io/ui)
 - [Tailwind UI](https://tailwindui.com)
 
+<!--
+https://plumeui.com
+-->
+
 ## Blocks
 
 - [Flowrift](https://flowrift.com) <!-- https://github.com/n6ai/flowrift -->
@@ -211,20 +215,22 @@ screens: Object.fromEntries(
 echo '!/tailwind.config.cjs' > ./.vercelignore
 ``` -->
 
-#### Visual Studio Code
+#### Editor Extensions
 
 - [Code Repository](https://github.com/tailwindlabs/tailwindcss-intellisense)
 
 **Features:** Autocomplete, Linting and Hover Preview.
 
 ```sh
-#
+# Visual Studio Code
 code --install-extension bradlc.vscode-tailwindcss
-code --install-extension stivo.tailwind-fold
+# code --install-extension stivo.tailwind-fold
+# Cursor
+cursor --install-extension bradlc.vscode-tailwindcss
 
 #
 jq '."recommendations" += ["bradlc.vscode-tailwindcss"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
-jq '."recommendations" += ["stivo.tailwind-fold"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+# jq '."recommendations" += ["stivo.tailwind-fold"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
 **Configuration:**

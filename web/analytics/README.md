@@ -58,6 +58,7 @@ https://gosquared.com
 - [umami](/umami.md)
 
 <!--
+https://github.com/medama-io/medama
 https://tinybird.co/docs/starter-kits/web-analytics
 https://github.com/Openpanel-dev/openpanel
 https://github.com/aptabase/aptabase

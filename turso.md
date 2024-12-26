@@ -13,17 +13,11 @@ https://github.com/libsql/libsql
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew tap tursodatabase/tap
 brew install turso
 ```
-
-<!--
-brew tap libsql/sqld
-brew install sqld
--->
 
 ### Commands
 
@@ -87,6 +81,11 @@ turso db destroy <name>
 #
 turso dev --db-file ./local.db
 ```
+
+<!--
+TURSO_DATABASE_URL
+TURSO_AUTH_TOKEN
+-->
 
 ### Issues
 

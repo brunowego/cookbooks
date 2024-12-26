@@ -38,39 +38,27 @@ sudo apt -y install software-properties-common apt-transport-https wget
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask visual-studio-code
-```
 
-#### APT
-
-```sh
+# Using APT
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O - | \
   sudo apt-key add -
 
 sudo add-apt-repository 'deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main'
-```
 
-```sh
 sudo apt update
 sudo apt -y install code
-```
 
-#### Zypper
-
-```sh
+# Using Zypper
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[vscode]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/zypp/repos.d/vscode.repo'
 
 sudo zypper refresh
 sudo zypper --non-interactive install code
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y vscode
 ```
 

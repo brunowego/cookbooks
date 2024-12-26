@@ -1,9 +1,19 @@
 # Supabase Backup
 
+## Glossary
+
+- Point-in-Time Recovery (PITR)
+- Recovery Point Objective (RPO)
+- Write Ahead Log (WAL)
+
 ## Learn
 
 - [How to backup and restore Supabase Postgres database](https://nesin.io/blog/backup-restore-supabase-postgres-database)
 - [Restore PostgreSQL DB via a dump.gz file with gunzip and psql](https://www.stevenchang.tw/blog/2023/07/05/restore-db-via-a-dump-file-with-gunzip)
+
+<!--
+https://supabase.com/blog/restore-to-a-new-project
+-->
 
 <!--
 https://simplebackups.com/blog/how-to-backup-supabase

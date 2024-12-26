@@ -27,9 +27,8 @@ https://github.com/quenti-io/quenti/tree/main/packages/payments
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew tap stripe/stripe-cli
 brew install stripe
 ```

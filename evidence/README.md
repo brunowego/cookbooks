@@ -9,10 +9,17 @@
 - [Examples](https://evidence.dev/examples)
 - [Docs](https://docs.evidence.dev)
   - [Deployment / Vercel](https://docs.evidence.dev/deployment/vercel)
+  - [All Components](https://docs.evidence.dev/components/all-components/)
 
 <!--
 https://github.com/evidence-dev/demo
+
+reports
 -->
+
+## Related
+
+- [DuckDB](/duckdb.md)
 
 ## Library
 

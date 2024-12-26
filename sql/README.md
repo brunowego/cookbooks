@@ -41,6 +41,12 @@ code --install-extension adpyke.vscode-sql-formatter
 jq '."recommendations" += ["adpyke.vscode-sql-formatter"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
+#### VS Code Files Exclude
+
+```sh
+jq '."search.exclude"."**/*.sql" |= true' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+```
+
 #### EditorConfig
 
 ```sh

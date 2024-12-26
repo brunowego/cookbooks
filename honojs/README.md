@@ -1,6 +1,9 @@
 # Hono
 
 <!--
+https://github.com/ParasSolanki/roles-permissions
+https://github.com/michaelshimeles/react-local-first-hono
+
 https://github.com/DIYgod/RSSHub
 https://github.com/Rocketseat/houston
 https://github.com/turso-extended/app-turso-crm

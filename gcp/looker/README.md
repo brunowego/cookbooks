@@ -42,6 +42,7 @@ https://marketplace.looker.com/marketplace/detail/extension-api-explorer
 - [Console](https://console.cloud.google.com/projectselector2/looker/instances)
 - [Main Website](https://looker.com) <!-- https://cloud.google.com/looker -->
 - [Looker UI Components](https://components.looker.com)
+  - [Figma](https://figma.com/community/file/991772952747115810)
 - [Marketplace](https://marketplace.looker.com)
 - [Demo](https://demo.looker.com)
 
@@ -138,6 +139,15 @@ jq '."recommendations" += ["sgoley.lookml-syntax-highlighter"]' "$PWD"/.vscode/e
      - Client Secret: ``
 
 ## Issues
+
+### TBD
+
+```log
+You are not authorized to view this page.
+403
+```
+
+TODO
 
 ### TBD
 

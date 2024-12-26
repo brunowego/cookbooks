@@ -40,9 +40,8 @@ https://notion.so/Roadmap-85a79965456d4238a47d7484f7b1d62e
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask notion
 ```
 

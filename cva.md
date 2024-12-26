@@ -67,3 +67,17 @@ export const typographyVariants = cva('tracking-tight', {
   ],
 })
 ```
+
+### Tips
+
+#### Extend VSCode TailwindCSS Intellisense
+
+```json
+{
+  // ...
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
+}
+```

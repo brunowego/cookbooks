@@ -3,5 +3,5 @@
 TODO
 
 <!--
-https://openalternative.co/
+https://openalternative.co
 -->

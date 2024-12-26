@@ -4,14 +4,16 @@
 
 ### Managed
 
-- [AWS RDS Aurora](/aws/services/rds/aurora/README.md)
+- [AWS Aurora](/aws/services/rds/aurora/README.md)
 - [Neon](/neon/README.md)
-- [Supabase Edge Functions](/supabase/edge-functions.md)
+- [Nile](/nile/README.md)
+- [Xata](/xata/README.md)
 
 <!--
+Google AlloyDB for PostgreSQL (Serverless in Preview)
+
 https://github.com/niledatabase/niledatabase
 
-Crunchy
 CitusDB
 Bit.io
 -->

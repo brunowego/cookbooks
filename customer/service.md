@@ -25,6 +25,10 @@ https://freshdesk.com/helpdesk-management/ticketing-system/open-source
 - [Zendesk](https://zendesk.com)
 - [Zoho Desk](https://zoho.com/desk)
 
+<!--
+openwidget.com
+-->
+
 ### Open Source
 
 - [((OTRS)) Community Edition](https://github.com/OTRS/otrs)

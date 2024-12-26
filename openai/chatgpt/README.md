@@ -1,6 +1,6 @@
 # ChatGPT
 
-**Keywords:** Artificial Intelligence
+**Keywords:** Artificial Intelligence, LLM
 
 <!--
 https://github.com/denbondd/clarix

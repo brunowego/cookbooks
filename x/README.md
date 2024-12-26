@@ -1,4 +1,4 @@
-# Twitter
+# X (p.k.a. Twitter)
 
 ## Links
 
@@ -16,16 +16,15 @@
 
 ### Installation
 
-#### MAS
-
 ```sh
+# Using MAS
 mas install 1482454543
 ```
 
 ### Uninstall
 
 ```sh
-# MAS
+# Using MAS
 sudo mas uninstall 1482454543
 ```
 

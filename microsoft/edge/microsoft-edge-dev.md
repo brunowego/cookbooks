@@ -4,15 +4,15 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask microsoft-edge-dev
 ```
 
 ### Uninstall
 
 ```sh
+# Using Homebrew
 brew uninstall --cask microsoft-edge-dev
 ```
 

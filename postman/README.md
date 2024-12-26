@@ -33,9 +33,8 @@ https://<name>.postman.co/settings/team/custom-domains
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask postman
 ```
 

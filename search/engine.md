@@ -1,12 +1,12 @@
 # Search Engine
 
-**Keywords:** Full-text Search, Indexed Data
+**Keywords:** Full-text Search, Indexed Data, Search API
 
 ## Implementations
 
 ### Managed
 
-- [Algolia](https://algolia.com)
+- [Algolia](/algolia/README.md)
 
 ### Open Source
 
