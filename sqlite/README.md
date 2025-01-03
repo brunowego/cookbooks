@@ -9,6 +9,11 @@ SQLiteStudio
 
 - [Main Website](https://sqlite.org)
 
+## Managed Services
+
+- [Cloudflare D1](/cloudflare/d1.md)
+- [Turso](/turso.md)
+
 ## Library
 
 ### Installation

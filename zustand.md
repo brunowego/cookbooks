@@ -21,6 +21,8 @@
 <!--
 ## Good Examples
 
+https://github.com/amaben2020/advanced-cart-system-zustand
+
 https://github.com/midday-ai/midday/tree/main/apps/dashboard/src/store
 https://github.com/akrindev/smeduverse-gemini/tree/main/src/store
 https://github.com/igloo-4002/urbanflo-vite/tree/develop/src/zustand

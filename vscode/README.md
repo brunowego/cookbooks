@@ -9,6 +9,8 @@ https://code.visualstudio.com/docs/remote/ssh
 https://github.com/datalayer-examples/vscode-extension-examples
 -->
 
+**Keywords:** Code Editor
+
 ## Links
 
 - [Code Repository](https://github.com/microsoft/vscode)

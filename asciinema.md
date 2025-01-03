@@ -8,22 +8,15 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install asciinema
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install asciinema
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install asciinema
 ```

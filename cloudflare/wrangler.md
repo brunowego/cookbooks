@@ -26,18 +26,39 @@ pnpm add wrangler -D
 bun add wrangler -D
 ```
 
-### Initialization
+### Configuration
 
 ```sh
 #
-pnpx wrangler init <project-name>
+npx wrangler login
+
 #
-npx wrangler init <project-name>
+npx wrangler whoami
 ```
 
-<!--
-./wrangler.toml
--->
+### Initialization
+
+<!-- ```sh
+npx wrangler init <project-name>
+``` -->
+
+**Refer:** `./wrangler.toml`
+
+```toml
+name = '<name>'
+account_id = '<cloudflare-account-id>'
+workers_dev = true
+```
+
+### Issues
+
+#### TBD
+
+```sh
+✘ [ERROR] Missing entry-point: The entry-point should be specified via the command line (e.g. `wrangler dev path/to/script`) or the `main` config field.
+```
+
+TODO
 
 ## CLI
 
@@ -46,6 +67,16 @@ npx wrangler init <project-name>
 ```sh
 # Using npm
 npm install wrangler -g
+```
+
+### Configuration
+
+```sh
+#
+wrangler login
+
+#
+wrangler whoami
 ```
 
 <!--

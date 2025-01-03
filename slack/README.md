@@ -20,27 +20,18 @@ https://slack.github.com
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask slack
-```
 
-#### MAS
-
-```sh
+# Using MAS
 mas install 803453959
-```
 
-#### APT
-
-```sh
+# Using APT
 wget -O - 'https://packagecloud.io/slacktechnologies/slack/gpgkey' | sudo apt-key add -
 
 sudo /usr/bin/sh -c 'echo "deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main" >> /etc/apt/sources.list.d/slack.list'
-```
 
-```sh
 sudo apt update
 sudo apt -y install slack-desktop
 ```

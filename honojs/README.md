@@ -1,6 +1,13 @@
 # Hono
 
 <!--
+https://github.com/shahreaz0/actio
+https://github.com/alikehel/react-hono-drizzle-cloudflare-template/tree/main/apps/api/src/modules
+https://github.com/cellajs/hono-case/tree/main/src
+https://github.com/comuline/api
+
+https://github.com/rohannair/readitlater/blob/main/apps/api/src/workers/get-summary.ts
+
 https://github.com/ParasSolanki/roles-permissions
 https://github.com/michaelshimeles/react-local-first-hono
 

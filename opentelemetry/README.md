@@ -4,7 +4,7 @@
 https://github.com/dash0hq/otelbin
 -->
 
-**Keywords:** Standard Instrumentation
+**Keywords:** Standard Instrumentation, Observability
 
 ## Links
 

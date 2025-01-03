@@ -30,7 +30,7 @@ https://redsmin.com
 
 ### Managed
 
-- [Upstash](/upstash.md)
+- [Upstash](/upstash/README.md)
 
 ## Docker
 

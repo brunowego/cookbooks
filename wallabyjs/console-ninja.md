@@ -20,6 +20,13 @@ PATH=~/.console-ninja/.bin:$PATH
 
 ## Tips
 
+### Get Package Versions from 2 Months Ago
+
+```sh
+npm view <package-name> time --json | \
+  jq -r 'to_entries[] | select(.value >= "'$(date -d '2 months ago' --iso-8601=seconds)'") | "\(.key): \(.value)"'
+```
+
 ### Visual Studio Code
 
 ```sh

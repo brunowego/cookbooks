@@ -26,29 +26,19 @@ id IN ('<id>')
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask dbeaver-community
-```
 
-#### RPM
-
-```sh
+# Using RPM
 curl -LO 'https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm'
 sudo rpm -vi ./dbeaver-ce-latest-stable.x86_64.rpm && rm -f ./dbeaver-ce-latest-stable.x86_64.rpm
-```
 
-#### DPKG
-
-```sh
+# Using DPKG
 curl -LO 'https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb'
 sudo dpkg -i ./dbeaver-ce_latest_amd64.deb && rm -f ./dbeaver-ce_latest_amd64.deb
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y dbeaver
 ```
 

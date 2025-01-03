@@ -18,8 +18,7 @@ git log <remote-name>/<branch-name>
 
 #
 git cherry-pick <commit-hash>
-git cherry-pick <commit-hash> -n # without commit
-
+git cherry-pick -n <commit-hash> # without commit
 
 git cherry-pick --continue
 git cherry-pick --abort

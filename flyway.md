@@ -1,5 +1,9 @@
 # Flyway
 
+## Links
+
+- [Code Repository](https://github.com/flyway/flyway)
+
 ## Guides
 
 - [Database Migrations with Flyway](https://www.baeldung.com/database-migrations-with-flyway)
@@ -8,15 +12,11 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install flyway
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install flyway.commandline
 ```
 

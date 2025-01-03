@@ -6,7 +6,7 @@ https://github.com/tamasfe/taplo
 
 ## Links
 
-- [Main Website](https://toml.io/en/)
+- [Main Website](https://toml.io/en)
 
 ## Tips
 

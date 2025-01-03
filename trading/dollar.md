@@ -1,6 +1,9 @@
 # Dollar
 
 <!--
+https://www.remessaonline.com.br/cotacao/cotacao-dolar
+https://wise.com/br/currency-converter/dolar-hoje
+
 https://www.youtube.com/watch?v=wvNQIGsX9Ek&t=11
 
 https://fred.stlouisfed.org/series/PCEDG | Units: Change from Year Ago

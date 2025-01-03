@@ -3,6 +3,8 @@
 **Keywords:** Firebase Alternative, Backend as a Service
 
 <!--
+https://github.com/PaddleHQ/paddle-nextjs-starter-kit
+
 https://hub.docker.com/r/supabase/postgres
 https://hub.docker.com/r/supabase/realtime
 -->

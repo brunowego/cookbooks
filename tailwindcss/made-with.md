@@ -134,6 +134,7 @@ https://neverbeforeseen.co
 https://oneleet.com
 https://gleap.io
 
+https://tweetlify.vercel.app/
 https://nstbrowser.io/en
 https://biztro.co
 https://spackle.so
@@ -445,6 +446,10 @@ Email Verification / Email Confirmation
 https://app.cometchat.com/verification-email-sent?email=brunowego@gmail.com
 https://nstfkc.com/email-confirm
 
+Email Template
+
+https://preview.mailerlite.com/h2z8t3j0x1/2276046288082442870/v5f2/
+
 Magic Link
 
 https://opencollective.com/signin/sent?email=me%40brunowego.com
@@ -456,12 +461,12 @@ https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
 Login / Sign In / Sign up
 
-https://try-stand.com/user/login/
+https://try-stand.com/user/login
 https://app.uninbox.com/join
 https://app.tryjournalist.com/login
 https://getds.pro/auth/sign-in?next=%2Fapp
 https://cloud.llamaindex.ai/login
-https://app.crisp.chat/initiate/signup/
+https://app.crisp.chat/initiate/signup
 https://languagetool.org/user-login
 https://dashboard.hookdeck.com/signin?redirect=/onboarding
 https://app.synthesia.io/#/welcome
@@ -840,6 +845,10 @@ Workspace
 
 https://app.plain.com/workspaces
 
+Orders
+
+https://catalyst-demo.tailwindui.com/orders/3000
+
 Dashboard
 
 https://dribbble.com/shots/25156559-Compliance-Framework-Details-Tab-Navigation | https://dribbble.com/shots/25156193-SOC2-Requirements-View-Table
@@ -993,6 +1002,8 @@ https://coda.io/account
 https://linear.app/henkiz/settings/account/preferences
 https://accounts.shopify.com/accounts/238884001/personal
 
+https://dashboard.tremor.so/settings/general
+https://catalyst-demo.tailwindui.com/settings
 https://app.popsql.com/preferences/general
 https://app.cal.com/settings/my-account/profile
 https://app.changelogfy.com/settings/general
@@ -1105,6 +1116,7 @@ https://leyaai.com/quiz
 
 Onboarding
 
+https://app.attio.com/welcome/workspace-details
 https://loom.com/welcome
 https://captable.com.br/users/sign_up
 https://try-stand.com (GOOD)
@@ -1349,10 +1361,16 @@ https://ebaconline.com.br/marketing-de-influencia
 https://maxcoach.jamstacktemplates.dev
 https://branco-react.hibootstrap.com/life-coach
 
+Table
+
+https://planner.tremor.so/quotes/overview
+
 Sidebar
 
 https://x.com/tanbirDsgnDev/status/1870504152876658816/photo/1
+https://dashboard.hookdeck.com/requests
 
+https://planner.tremor.so/quotes/overview#
 https://herodesigns.vercel.app/notion
 https://go.v7labs.com/0193b698-7393-788b-ae65-adf45503479d/projects/0193e4dc-f10a-7bcf-a0c7-cd9ae3312677
 

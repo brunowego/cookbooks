@@ -4,6 +4,7 @@
 https://github.com/kodermax/nest-saas-starter
 https://github.com/kir-dev/konzisite-api
 https://github.com/tractr/traxion/blob/main/libs/nestjs/casl/mocks/role-permission.mock.ts
+https://github.com/audioling/audioling/blob/main/apps/server/src/modules/permissions/index.ts
 -->
 
 <!--

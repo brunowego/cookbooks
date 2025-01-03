@@ -35,7 +35,7 @@
 
 ### Feedback
 
-- [Maze](https://maze.co/)
+- [Maze](https://maze.co)
 - [UsabilityHub](https://usabilityhub.com)
 
 <!--

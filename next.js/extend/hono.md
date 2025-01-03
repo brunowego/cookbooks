@@ -5,6 +5,8 @@ path:src/app/api path:route.ts content:hono
 -->
 
 <!--
+https://github.com/joschan21/pingpanda/blob/main/src/server/index.ts
+
 https://github.com/search?q=path%3Aapi%2F%5B%5B...route%5D%5D%2Froute.ts&type=code&p=3
 
 https://github.com/jeffersonbraster/finance-sass/tree/main/app/api/%5B%5B...route%5D%5D
