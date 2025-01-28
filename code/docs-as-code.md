@@ -39,12 +39,10 @@ Docs-as-code is an approach to writing and publishing documentation with the sam
 
 - [Backstage](https://backstage.io)
 - [Doctave](/doctave.md)
+- [Fumadocs](/fumadocs/README.md)
+- [Mintlify](/mintlify/README.md)
+- [Nextra](/nextra.md)
 - [Vale](/vale.md)
-
-<!--
-https://nextra.site
-https://fumadocs.vercel.app
--->
 
 ## Glossary
 

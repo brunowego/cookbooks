@@ -63,6 +63,13 @@ ln -s /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome /usr/local/
 
 ### Tips
 
+#### Open a new window without address bar
+
+```sh
+# For MacOS
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window --app=http://localhost:3000/api/reference
+```
+
 #### Change Language
 
 <!--

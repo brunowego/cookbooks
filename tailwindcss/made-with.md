@@ -28,6 +28,8 @@ https://coda.io
 https://gleap.io
 https://reviews.io/front/pricingplans
 
+https://app.planetscale.com/cloken/settings
+https://clerk.com/docs/quickstarts/fastify
 https://usehall.com
 https://light.so/demo/overview
 https://tailwindcollections-gallery-page.netlify.app
@@ -69,10 +71,6 @@ https://lyssna.com
 Withdraw
 
 TODO
-
-Activity
-
-https://app.netbird.io/activity
 
 CTA
 
@@ -172,6 +170,11 @@ https://typedream.com
 https://devdojo.com
 https://tailwindcollections-grid-landingpage.netlify.app (used)
 
+Catalog / Shop
+
+https://weareathleats.com
+https://auto-exhibit.vercel.app
+
 Toast / Error
 
 https://app.crisp.chat/initiate/login | fill wrong the form and submit
@@ -226,6 +229,7 @@ https://widget-notification.vercel.app
 
 Changelog
 
+https://codeium.com/changelog
 https://artillery.io/changelog
 https://feyapp.com/updates
 
@@ -249,13 +253,11 @@ https://liveblocks.io/404
 https://coastpay.com/404
 https://contentful.com/404/
 
-https://devmilek.pl/404
 https://wigwam.app/404
 https://wiz.io/404
 https://shakuro.com/404
 https://pagedone.io/404
 https://infisical.com/404
-https://himalayas.app/404
 https://unkey.com/404
 https://helptix.adslink.id/contact
 
@@ -321,9 +323,10 @@ https://vercel.com/help
 https://chatwoot.com/help-center
 https://paraform.com/help
 
-Terms / Security
+Terms / Security / Legal / Privacy
 
 https://privy.io/security
+https://clearbit.com/trust
 
 GameFi
 
@@ -390,6 +393,7 @@ https://pagedone.lemonsqueezy.com/affiliates
 
 Public Profile
 
+https://wiza.co/d/claritisoftware/1805/ani-achugbue
 https://framer.com/marketplace/plugins/depth-grid/
 https://buymeacoffee.com/cristianmihai
 https://zenn.dev/serinuntius?tab=scraps
@@ -399,6 +403,7 @@ https://dribbble.com/shots/24535002-Area-land-sales-service-visual-identity
 https://landingfolio.com/inspiration/post/miro-1
 https://bento.me/brunowego
 
+https://www.geobrowser.io/space/DqiHGrgbniQ9RXRbcQArQ2
 https://manuarora.in
 https://store.evmos.org/dapps/defi/osmosis
 https://plotwist.app/en-US/movies/786892
@@ -446,6 +451,10 @@ Email Verification / Email Confirmation
 https://app.cometchat.com/verification-email-sent?email=brunowego@gmail.com
 https://nstfkc.com/email-confirm
 
+OTP / Login with OTP
+
+https://www.unriddle.ai/login
+
 Email Template
 
 https://preview.mailerlite.com/h2z8t3j0x1/2276046288082442870/v5f2/
@@ -461,6 +470,7 @@ https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
 Login / Sign In / Sign up
 
+https://login.retool.com/auth/login
 https://try-stand.com/user/login
 https://app.uninbox.com/join
 https://app.tryjournalist.com/login
@@ -484,6 +494,9 @@ https://app.middleware.io/auth/login
 https://dash.reviews.io/login
 https://app.onmarathon.com/register
 
+https://prosale.vercel.app/signin/ | https://github.com/basit2023/prosale
+https://prosale.vercel.app/auth/signup/
+https://workspace.supahub.com/signup
 https://lmnr.ai/sign-in
 https://dashboard.aragon.ai/login?template=avatar_professional
 https://workspace.supahub.com/signin
@@ -509,7 +522,6 @@ https://flexify.framer.website/Sign-up
 https://ev.braip.com/register
 https://admin.brizy.io/signup
 https://feyapp.com/signup
-
 https://pagedone.io/user-signup
 https://buymeacoffee.com/signup
 https://buymeacoffee.com/login
@@ -542,9 +554,17 @@ https://app.logsnag.com/auth/sign-in
 https://cloud.tailwarden.com/sign-in
 https://auth.planetscale.com/sign-in
 
-API Key
+API Key / API Token
 
+https://resend.com/api-keys
+https://dashboard.novu.co/api-keys
+https://go.v7labs.com/0193b698-7393-788b-ae65-adf45503479d/settings/api-keys
+https://app.documenso.com/settings/tokens
 https://lmnr.ai/project/6ef466d6-badb-4c3e-a2bb-b6fe10618a37/settings
+
+Webhook
+
+https://app.documenso.com/settings/webhooks
 
 Waitlist
 
@@ -568,6 +588,7 @@ https://shakuro.com
 
 Mosaic / Section / Section
 
+https://www.openphone.com/
 https://tryarcane.com/
 https://maxio.com
 https://rifei.com.br
@@ -585,6 +606,7 @@ https://linear.app/homepage
 https://omens.com.br
 https://send.it
 
+https://codeium.com
 https://www.alignui.com
 https://nstbrowser.io/en
 https://sarah-portfolio-ten.vercel.app
@@ -659,6 +681,7 @@ https://app.midday.ai/tracker
 
 Team Switch / Company Switch
 
+https://app.plain.com/workspaces
 https://app.midday.ai
 https://admin.shopify.com/?no_redirect=true
 
@@ -745,6 +768,7 @@ https://rowzero.io/workbook/1113207BB021C27C55E45ECA/0
 
 Pricing
 
+https://mainstreetdata.com/pricing
 https://azimutt.app/pricing
 https://kommo.com/br/precos/compare-planos/
 https://modulesystem.design/#getmodule
@@ -761,6 +785,9 @@ https://reviews.io/front/pricingplans
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://mercury.com/pricing
+https://codeium.com/pricing
+https://vlt.sh/serverless-registry
 https://rowzero.io/pricing
 https://rotato.app/pricing
 https://tailscale.com/pricing
@@ -827,6 +854,10 @@ https://alexjpate.com/contact
 https://significa.co/contact
 https://vercel.com/contact/sales
 
+Self hosted
+
+https://www.mailcoach.app/self-hosted
+
 Plans
 
 https://productlane.com/settings/plans
@@ -841,9 +872,10 @@ Simulation
 
 https://app.creditas.com/auto-refi/solicitacao/informacoes-pessoais?valor-emprestimo=150000&utm_source=crm&utm_medium=whatsapp&utm_campaign=CRARW-AT802_ar_winback_crm_whatsapp_autopq_automatic_pos_desc81_180d_maio24_v2_res_rat_mkt_per&experiment=CRMAT-023a
 
-Workspace
+Workspace Select / Team Select
 
 https://app.plain.com/workspaces
+https://workspace.supahub.com
 
 Orders
 
@@ -851,6 +883,8 @@ https://catalyst-demo.tailwindui.com/orders/3000
 
 Dashboard
 
+https://mainstreetdata.com/charting?metrics=revenue%2CgrossIncome
+https://wiza.co/app/dashboard
 https://dribbble.com/shots/25156559-Compliance-Framework-Details-Tab-Navigation | https://dribbble.com/shots/25156193-SOC2-Requirements-View-Table
 https://app.frigade.com/dev/onboarding
 https://app.bucket.co/envs/production-enqqWasiw4Kba4/features?
@@ -871,11 +905,12 @@ https://strut.so/c/021b95e6-0c3a-4b5a-8190-d35116b892c0
 https://app.premai.io/projects
 https://app.netbird.io/peers | https://github.com/netbirdio/netbird
 
+https://mainstreetdata.com
+https://app.dub.co/henkiz
 https://overview.tremor.so/support
 https://planner.tremor.so/quotes/overview
 https://dashboard.tremor.so/settings/general
 https://henkiz.supahub.com/admin
-https://app.dub.co/henkiz
 https://cloud.llamaindex.ai/project/3d5f8e08-0b32-4aad-b099-d3bae0d4b289/extraction
 https://app.popsql.com
 https://app.seline.so/projects/henkiz.com
@@ -1002,6 +1037,8 @@ https://coda.io/account
 https://linear.app/henkiz/settings/account/preferences
 https://accounts.shopify.com/accounts/238884001/personal
 
+https://liveblocks.io/dashboard/4klRfdewEcW7k-oOL4mpY/settings
+https://app.popsql.com/preferences/general
 https://dashboard.tremor.so/settings/general
 https://catalyst-demo.tailwindui.com/settings
 https://app.popsql.com/preferences/general
@@ -1080,12 +1117,17 @@ Cookie Policy
 
 https://try-stand.com
 
+Cookie Banner
+
+https://baselime.io
+
 Finance
 
 https://loja.infinitepay.io/henkiz
 
 Referral
 
+https://mainstreetdata.com/referral | https://mainstreetdata.com/affiliate
 https://app.infinitepay.io/missions/referral
 
 Portfolio
@@ -1116,6 +1158,7 @@ https://leyaai.com/quiz
 
 Onboarding
 
+https://my.openphone.com/onboarding/company
 https://app.attio.com/welcome/workspace-details
 https://loom.com/welcome
 https://captable.com.br/users/sign_up
@@ -1127,6 +1170,7 @@ https://my.ka.app/signup/info
 https://flowbite.com/blocks/marketing/user-onboarding
 https://componentland.com/component/onboarding-page-2
 
+https://www.unriddle.ai/new?onboarding=true
 https://workspace.supahub.com/onboard
 https://startt.co/sign-up/about-you
 https://dashboard.aragon.ai/generate?step=welcome
@@ -1183,10 +1227,6 @@ https://resumeforrest.com/threeClicksArtist
 https://dribbble.com/shots/24356046-Skill-Matrix-dashboard
 https://rekrabice.cz
 
-Page
-
-https://crunchydata.com/developers/get-started/postgres-operator
-
 Game
 
 https://gamestorm-nuxt.vercel.app/games-details
@@ -1204,10 +1244,8 @@ https://artillery.io/blog
 https://shopify.com/blog
 https://attio.com/blog
 https://moderntreasury.com/newsroom
-https://defer.run/blog
 https://supabase.com/blog
 https://helicone.ai/blog
-https://ideko.netlify.app/category
 https://hygraph.com/blog
 https://frigade.com/blog
 https://andromeda-astro.vercel.app/blog
@@ -1220,6 +1258,10 @@ https://whop.com/ariwixy
 https://craftwork.design/downloads/ignatius-school-ui-kit/
 https://doarpara.com.br/raphaellima
 
+Page / Internal
+
+https://crunchydata.com/developers/get-started/postgres-operator
+
 Portfolio
 
 https://im-agency.vercel.app/portfolio
@@ -1230,6 +1272,8 @@ https://im-agency.vercel.app/portfolio/keyboard
 
 Article / Blog Post
 
+https://vlabici.com/cases/mainstreetdata/
+https://fiber.dev/blog/september-2024
 https://webflow.com/blog/color-contrast-analyzer
 https://im-agency.vercel.app/blog/outsource-digital-marketing-efforts
 https://crunchydata.com/blog/postgres-full-text-search-a-search-engine-in-a-database
@@ -1288,6 +1332,12 @@ https://chaindesk.ai
 https://midday.ai
 https://formance.com
 https://alexanderjeamoro.vercel.app
+
+Sitemap
+
+https://next-allegro-esvc-md3.vercel.app/quick/sitemap
+https://opendevnet.com/sitemap
+https://www.michaeldemar.co/sitemap
 
 Text Effect
 
@@ -1378,15 +1428,37 @@ Drag & Drop / Upload
 
 https://tailwindcomponents.com/component/dropzone-upload
 
+Passkey
+
+https://app.stack-auth.com/handler/account-settings#auth
+
 WYSIWYG Editor
 
 https://tailwindcomponents.com/component/wysiwyg-editor
 
-Audit / Security Log
+Value Mapping
 
-https://cosmo.wundergraph.com/henkiz/audit-log
+https://app.eververse.ai/settings/statuses
+
+Application Log / System Log / Activity
+
+https://cloud.digitalocean.com/account/activity?i=f6dfe0
+https://console.anthropic.com/settings/logs
+https://resend.com/logs
+https://app.plane.so/profile/activity
+https://app.netbird.io/activity
+https://app.eververse.ai/activity
+
+Audit Log (Security Log) / Access Log
+
+https://supabase.com/dashboard/account/audit
 https://app.planetscale.com/settings/security-log
+https://cosmo.wundergraph.com/henkiz/audit-log
 https://railway.app/account/security
+
+Transaction Log
+
+
 
 Conference
 
@@ -1418,10 +1490,6 @@ https://app.gumroad.com/checkout
 https://heyharper.com
 https://flowbite.com/blocks/e-commerce/checkout
 https://tuk.dev/components/E-commerce/Components/Checkouts
-
-Legal
-
-https://clearbit.com/trust
 
 Support
 

@@ -35,7 +35,7 @@ https://tally.so/feedback
 
 ### Managed
 
-- [Canny](https://canny.io)
+- [Canny](https://canny.io) <!-- https://feedback.render.com/ -->
 - [Featurebase](https://featurebase.app)
 - [Feedback Fish](https://feedback.fish)
 - [Frill](https://frill.co)

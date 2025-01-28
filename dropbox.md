@@ -1,12 +1,15 @@
 # Dropbox
 
+<!--
+https://github.com/elwood-software/elwood
+-->
+
 ## App
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask dropbox
 ```
 

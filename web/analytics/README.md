@@ -55,7 +55,7 @@ https://gosquared.com
 - [Matomo](/matomo/README.md) 🌟
 - [Plausible Analytics](/plausible-analytics.md)
 - [PostHog](/posthog.md)
-- [umami](/umami.md)
+- [umami](/umami.md) 🌟
 
 <!--
 https://github.com/medama-io/medama

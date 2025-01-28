@@ -3,7 +3,9 @@
 ## Links
 
 <!--
-https://www.bcb.gov.br/
+https://bcb.gov.br
+
+https://br.tradingview.com/symbols/ECONOMICS-BRFER
 -->
 
 - [Org. Repository](https://github.com/bacen)

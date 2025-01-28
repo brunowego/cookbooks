@@ -10,7 +10,7 @@ Webpack supports "data:" and "file:" URIs by default.
 You may need an additional plugin to handle "node:" URIs.
 ```
 
-```mjs
+<!-- ```mjs
 /**
  * @type { import('next').NextConfig }
  */
@@ -25,6 +25,6 @@ const nextConfig = {
 }
 
 export default nextConfig
-```
+``` -->
 
 TODO

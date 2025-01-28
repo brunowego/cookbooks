@@ -16,11 +16,11 @@ https://ipinfo.io
 
 ```sh
 #
-wget -qO- ifconfig.me
+dig +short myip.opendns.com @resolver1.opendns.com
 
 #
 curl ifconfig.co
 
 #
-dig +short myip.opendns.com @resolver1.opendns.com
+wget -qO- ifconfig.me
 ```

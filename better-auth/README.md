@@ -13,3 +13,7 @@
 # Using pnpm
 pnpm add better-auth
 ```
+
+<!--
+BETTER_AUTH_SECRET
+-->

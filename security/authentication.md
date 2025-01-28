@@ -3,6 +3,7 @@
 <!--
 https://github.com/clerkinc
 https://logto.io
+https://authup.org
 -->
 
 ## Learn

@@ -23,9 +23,19 @@ https://cloud.digitalocean.com/networking/domains
 
 <!--
 https://<bucket-name>.nyc3.digitaloceanspaces.com
+
+STORAGE_DEFAULT_REGION=nyc3
 -->
 
 ### Issues
+
+#### TBD
+
+```log
+We encountered an error while setting up your custom subdomain due to an invalid certificate. We can help create your custom subdomain by generating a certificate for you. Alternatively, consider selecting a different custom subdomain.
+```
+
+TODO
 
 #### TBD
 

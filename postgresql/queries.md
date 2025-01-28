@@ -34,6 +34,12 @@ https://www.datadoghq.com/blog/postgresql-monitoring-tools/
 ### TBD
 
 ```sql
+SELECT pg_size_pretty(pg_database_size('<db-name>')) AS database_size;
+```
+
+### TBD
+
+```sql
 UPDATE <table-name> SET <column2-name> = <column1-name> WHERE <condition>;
 ```
 

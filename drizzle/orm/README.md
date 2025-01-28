@@ -131,6 +131,35 @@ export default {
 #### TBD
 
 ```log
+../../node_modules/.pnpm/postgres@3.4.5/node_modules/postgres/src/connection.js:1:1
+
+Module not found: Can't resolve 'net'
+> 1 | import net from 'net'
+    | ^
+  2 | import tls from 'tls'
+  3 | import crypto from 'crypto'
+  4 | import Stream from 'stream'
+```
+
+Try
+
+```ts
+// from
+import {
+  updateUserSchema,
+  // ...
+} from '@acme/db'
+
+// to
+import {
+  updateUserSchema,
+  // ...
+} from '@acme/db/schemas'
+```
+
+#### TBD
+
+```log
 TypeError: Value is not JSON serializable
 ```
 

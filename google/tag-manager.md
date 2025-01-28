@@ -7,3 +7,7 @@
 ## Tools
 
 - [SEOGraphy](https://seography.io/tools/google-tag-manager-checker)
+
+<!--
+https://www.youtube.com/watch?v=6brZtxgHBhs
+-->

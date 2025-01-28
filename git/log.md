@@ -41,3 +41,7 @@ find . \
 https://dedupelist.com/#startresults
 https://textfixer.com/tools/remove-duplicate-lines.php
 -->
+
+<!--
+git log --pretty=format:"%h,%an,%ad,%s" --date=iso > commits.csv
+-->

@@ -1,5 +1,9 @@
 # Email Marketing
 
+## Related
+
+- [Newsletter](/newsletter.md)
+
 ## Tools
 
 - [EmailOctopus](https://emailoctopus.com)

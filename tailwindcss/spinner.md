@@ -3,6 +3,8 @@
 TODO
 
 <!--
+https://github.com/davidhu2000/react-spinners
+
 https://github.com/GriffinJohnston/ldrs
 https://github.com/n3r4zzurr0/svg-spinners
 

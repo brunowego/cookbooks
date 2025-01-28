@@ -1,6 +1,9 @@
 # Software Architecture
 
 <!--
+https://github.com/campsite/campsite
+https://github.com/haydenbleasel/eververse
+
 https://github.com/thangchung/go-coffeeshop
 https://github.com/mehdihadeli/awesome-software-architecture
 

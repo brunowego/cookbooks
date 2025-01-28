@@ -6,6 +6,10 @@ https://vercel.com/templates/next.js/nextjs-baselime-opentelemetry | https://git
 
 **Keywords:** Observability, Error Tracking, Logging, Distributed Tracing
 
+## Links
+
+- [Main Website](https://baselime.io)
+
 ## CLI
 
 ### Installation

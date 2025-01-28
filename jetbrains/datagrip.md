@@ -1,11 +1,20 @@
-# Configuration
+# DataGrip
 
-## CLI
+## App
+
+### Installation
+
+```sh
+# Using Homebrew
+brew install --cask datagrip
+```
+
+### Configuration
 
 1. Tools
 2. Create Command-line Launcher...
 
-## Filesystem Case-Sensitivity
+#### Filesystem Case-Sensitivity
 
 ```sh
 echo 'idea.case.sensitive.fs=true' >> /Applications/DataGrip.app/Contents/bin/idea.properties

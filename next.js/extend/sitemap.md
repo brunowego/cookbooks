@@ -6,6 +6,11 @@ https://github.com/openstatusHQ/openstatus/blob/main/apps/web/src/app/sitemap.ts
 https://github.com/sadmann7/skateshop/blob/main/src/app/sitemap.ts
 -->
 
+<!--
+https://github.com/michaelfromyeg/michaeldemar.co-v5/blob/main/src/app/sitemap/page.tsx
+https://github.com/mateusfg7/mateusf.com/blob/dev/src/app/sitemap/page.tsx
+-->
+
 ## Configuration
 
 **Refer:** `./src/app/sitemap.ts`

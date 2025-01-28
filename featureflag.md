@@ -10,3 +10,4 @@
 - [Optimizely](https://optimizely.com)
 - [Split](https://split.io)
 - [Statsig](https://statsig.com)
+- [Vercel Flags](https://vercel.com/docs/workflow-collaboration/feature-flags/vercel-flags) 🌟

@@ -1,11 +1,41 @@
 # Umami
 
+<!--
+https://github.com/fabianmakila/Hangar/blob/staging/frontend/src/composables/useTracking.ts
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/umami-software/umami)
 - [Main Website](https://umami.is)
 - Docs
   - [Running on Vercel](https://umami.is/docs/guides/running-on-vercel)
+
+<!--
+https://github.com/TheMath123/my-portfolio/blob/main/src/lib/umami.ts
+https://github.com/animuslabs/fiddl-ui/blob/main/src/lib/umami.ts
+-->
+
+<!--
+{process.env.NEXT_PUBLIC_UMAMI_URL && (
+  <Script
+    async
+    defer
+    src={`${process.env.NEXT_PUBLIC_UMAMI_URL}/script.js`}
+    data-website-id={`${process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}`}
+  />
+)}
+
+{process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID && (
+  <Script
+    src="https://analytics.eu.umami.is/script.js"
+    data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+    strategy="lazyOnload"
+  />
+)}
+
+<Script src={NEXT_PUBLIC_UMAMI_URL} data-website-id={NEXT_PUBLIC_UMAMI_WEBSITE_ID} />
+-->
 
 ## Docker
 

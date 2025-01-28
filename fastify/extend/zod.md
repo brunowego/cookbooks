@@ -18,7 +18,3 @@ https://github.com/turkerdev/fastify-type-provider-zod
 ```
 
 TODO
-
-<!--
-Module not found: Can't resolve 'critters'
--->

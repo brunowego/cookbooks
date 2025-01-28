@@ -74,6 +74,10 @@ volta which <tool>@<version>
 volta run <tool>@<version>
 ```
 
+<!--
+NOT SUPPORTED YET: volta uninstall <tool>@<version>
+-->
+
 ### Tips
 
 #### Uninstall
@@ -84,14 +88,11 @@ volta list node
 
 #
 ls ~/.volta/tools/image/node/<version>
+rm -fR ~/.volta/tools/image/node/<version>
 
 #
 cat ~/.volta/tools/user/platform.json | jq '.node.runtime'
 ```
-
-<!--
-NOT SUPPORTED YET: volta uninstall <tool>@<version>
--->
 
 <!-- #### Autocomplete
 

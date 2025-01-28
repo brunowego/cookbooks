@@ -1,5 +1,10 @@
 # Knex.js
 
+<!--
+upsert
+findOrCreate
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/knex/knex)
@@ -27,17 +32,10 @@ mkdir -p ./db/migrations
 **Refer:** `./package.json`
 
 ```json
-
+// TODO
 ```
 
 <!--
-"db:migrate": "knex migrate:latest",
-"db:migrate:one": "knex migrate:up",
-"db:migrate:make": "knex migrate:make",
-"db:migrate:list": "knex migrate:list",
-"db:migrate:unlock": "knex migrate:unlock",
-"db:rollback": "knex migrate:rollback",
-"db:rollback:one": "knex migrate:down",
 "db:seed": "knex seed:run",
 "db:seed:make": "knex seed:make --timestamp-filename-prefix",
 -->
@@ -130,19 +128,10 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 ```sh
 #
-knex migrate:list
-
-#
-knex migrate:make <name>
-
-#
 knex seed:make
 ```
 
 <!--
-knex migrate:latest
-knex migrate:rollback
-
 knex seed:make --timestamp-filename-prefix <name>
 -->
 

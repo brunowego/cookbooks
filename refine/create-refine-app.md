@@ -7,14 +7,15 @@
 ## Commands
 
 ```sh
-bunx create-refine-app -h
+npx create-refine-app -h
 ```
 
 ## Usage
 
 ```sh
 #
-bunx create-refine-app --example app-crm
+npx create-refine-app
+npx create-refine-app --example app-crm
 ```
 
 <!--

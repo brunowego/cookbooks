@@ -20,6 +20,18 @@ https://www.youtube.com/watch?v=LMUN1BCcp6s
 ### TBD
 
 ```log
+ERR_SSL_VERSION_OR_CIPHER_MISMATCH
+```
+
+<!--
+https://developers.cloudflare.com/ssl/troubleshooting/version-cipher-mismatch/
+-->
+
+TODO
+
+### TBD
+
+```log
 ERR_NAME_NOT_RESOLVED
 ```
 

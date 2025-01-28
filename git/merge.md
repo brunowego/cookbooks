@@ -40,6 +40,16 @@ Git: You have not concluded your merge (MERGE_HEAD exists).
 ```
 
 ```sh
-#
 git merge --continue
+```
+
+### TBD
+
+```log
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+```
+
+```sh
+git merge --abort
 ```

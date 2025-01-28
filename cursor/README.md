@@ -37,3 +37,13 @@ cat ./.cursor/settings.json
 # Globally
 cat "$HOME"/.cursor/settings.json
 ```
+
+### Isses
+
+#### TBD
+
+```log
+Click to open in your editor
+```
+
+TODO

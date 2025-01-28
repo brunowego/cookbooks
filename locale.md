@@ -1,5 +1,7 @@
 # Locale
 
+**Keywords:** Spell Checker
+
 ## Tools
 
 - [GTranslate / Detect Browser Language](https://gtranslate.io/detect-browser-language)

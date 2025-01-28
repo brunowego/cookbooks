@@ -1,5 +1,10 @@
 https://tailbits.com
 
+# Inputs
+
+https://gist.github.com/brunowego/9c2b4fddbd7f09e1570da96941169947
+https://gist.github.com/brunowego/35edb2df26ca65d933f5ce62e1d0a944
+
 # Header
 
 https://play.tailwindcss.com/9W7e5EBuTk
@@ -29,7 +34,6 @@ https://play.tailwindcss.com/fVHQ7yZc5V
 https://play.tailwindcss.com/6OP802r4g3
 https://play.tailwindcss.com/3JUBtNGbj1
 https://play.tailwindcss.com/9gjVvUV5x9
-https://aurora.dev
 
 # Call out
 
@@ -38,10 +42,6 @@ https://play.tailwindcss.com/AJICTk38Z9
 # Integrations
 
 https://play.tailwindcss.com/mEaTH6pXic
-
-# Why
-
-https://play.tailwindcss.com/fNrNpKPDHP
 
 # Register
 
@@ -52,6 +52,7 @@ https://play.tailwindcss.com/zV8icXLItL
 
 # Pricing
 
+https://play.tailwindcss.com/fNrNpKPDHP
 https://play.tailwindcss.com/HVN42mGGPS
 https://play.tailwindcss.com/QRztBTU00w
 

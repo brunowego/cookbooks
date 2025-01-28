@@ -1,5 +1,7 @@
 # Refine
 
+**Keywords:** Internal Tools
+
 ## Links
 
 - [Code Repository](https://github.com/refinedev/refine)

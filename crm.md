@@ -40,7 +40,7 @@ https://www.agendor.com.br
 
 - [ERPNext CRM](https://erpnext.com/open-source-crm)
 - [Odoo CRM](https://odoo.com/app/crm)
-- [Twenty](/twenty.md) 🌟
+- [Twenty](/twenty/README.md) 🌟
 
 <!--
 https://marmelab.com/atomic-crm

@@ -2,6 +2,8 @@
 
 ## Tools
 
+### Managed
+
 - [Revue](https://getrevue.co)
 
 <!--
@@ -9,6 +11,10 @@ https://beehiiv.com | https://newsletter.openalternative.co/subscribe/485000595/
 https://kit.com | https://github.com/notJust-dev/notjustdev
 https://mailcoach.app
 -->
+
+### Open Source
+
+- [listmonk](/listmonk.md)
 
 <!--
 https://github.com/Innocraft-Tech/crafyhubui/blob/main/src/app/(user)/settings/email-preferences/page.tsx

@@ -57,6 +57,16 @@ develop
 #### TBD
 
 ```log
+error: remaining connection slots are reserved for roles with the SUPERUSER attribute
+```
+
+<!-- https://neon.tech/docs/connect/connection-errors -->
+
+TODO
+
+#### TBD
+
+```log
 PostgresError: Console request failed: endpoint is temporary unavailable. check your quotas and/or contact our support
 ```
 

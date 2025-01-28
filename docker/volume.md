@@ -32,7 +32,7 @@ rm ./backup.tar
 docker run --rm -v "$DOCKER_VOLUME_NAME":/volume -v $(pwd):/backup alpine tar cvf /backup/backup.tar /volume
 
 # Make a copy
-cp ./backup.tar /backup-$(date -u '+%Y-%m-%d').tar
+cp ./backup.tar ~/backup-$(date -u '+%Y-%m-%d').tar
 
 # Restore
 docker run --rm -v "$DOCKER_VOLUME_NAME":/volume -v $(pwd):/backup alpine sh -c "cd /volume && tar xvf /backup/backup.tar --strip 1"

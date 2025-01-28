@@ -247,6 +247,14 @@ echo '/out' >> ./.gitignore
 #### TBD
 
 ```log
+Module not found: Can't resolve 'critters'
+```
+
+TODO
+
+#### TBD
+
+```log
 Fetch API cannot load webpack-internal:///node_modules/<...>/next/dist/client/app-index.js. URL scheme "webpack-internal" is not supported.
 ```
 

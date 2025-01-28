@@ -8,6 +8,7 @@
 
 ### Managed
 
+- [Forest Admin](https://forestadmin.com) 🌟
 - [OutSystems](https://outsystems.com)
 
 <!--
@@ -17,6 +18,13 @@ https://bubble.io
 https://teleporthq.io
 https://basedash.com
 https://noloco.io/internal-tools/postgresql
+-->
+
+<!--
+https://jetadmin.io
+https://dronahq.com
+
+https://marmelab.com/react-admin
 -->
 
 ### Open Source

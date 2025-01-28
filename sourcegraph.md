@@ -12,9 +12,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew tap sourcegraph/src-cli
 brew install src-cli
 ```

@@ -1,5 +1,18 @@
 # GitHub Deployments (Environment)
 
+## Query
+
+```sh
+#
+curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments" | jq '.[] | .id, .environment'
+
+#
+curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments" | jq -r '.[] | select(.environment | contains("Production")) | .id, .environment'
+
+#
+curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments" | jq -r '.[] | select(.environment == "Production") | .id, .environment'
+```
+
 ## Tips
 
 ### Delete
@@ -15,9 +28,6 @@ export GITHUB_REPO='<github-repo>'
 #### Individual
 
 ```sh
-#
-curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments" | jq '.[] | .id, .environment'
-
 #
 export DEPLOYMENT_ID='1274151952'
 
@@ -42,7 +52,7 @@ curl \
 ```sh
 #
 curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments" | \
-  for DEPLOYMENT_ID in `jq '.[].id'`; \
+  for DEPLOYMENT_ID in `jq -r '.[] | select(.environment == "Production") | .id'`; \
     do curl \
       -u "$GITHUB_USER:$GITHUB_TOKEN" \
       -X POST \
@@ -53,7 +63,7 @@ curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNE
 
 #
 curl -su "$GITHUB_USER:$GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/deployments" | \
-  for DEPLOYMENT_ID in `jq '.[].id'`; \
+  for DEPLOYMENT_ID in `jq -r '.[] | select(.environment == "Production") | .id'`; \
     do curl \
       -u "$GITHUB_USER:$GITHUB_TOKEN" \
       -X DELETE \

@@ -37,3 +37,17 @@ https://github.com/cheorodio/next-ecommerce-store
 
 https://github.com/barrosohub/avanade-treinamento-nextjs-app/blob/main/src/app/prompt/%5Bid%5D/actions.js
 -->
+
+### Issues
+
+#### TBD
+
+```log
+Error: Failed to find Server Action "c4bf7da709bac38fd521e774d0ffa7e83cdb19c4". This request might be from an older or newer deployment. Original error: Cannot read properties of undefined (reading 'workers')
+```
+
+<!--
+try move from actions.tsx to actions.ts
+-->
+
+TODO

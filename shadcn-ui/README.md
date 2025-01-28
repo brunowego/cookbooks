@@ -7,6 +7,7 @@ path:packages/ui path:components.json content:"https://ui.shadcn.com/schema.json
 -->
 
 <!--
+https://github.com/haydenbleasel/kibo | https://kibo-ui.com
 https://github.com/origin-space/originui | https://originui.com
 
 https://github.com/sadmann7/shadcn-table
