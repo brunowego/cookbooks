@@ -7,6 +7,7 @@ https://fonts.google.com/specimen/Urbanist
 
 Heading
 
+https://fonts.google.com/specimen/Plus+Jakarta+Sans
 https://fonts.google.com/specimen/DM+Sans | https://wiz.io
 https://fonts.google.com/specimen/Bricolage+Grotesque
 -->

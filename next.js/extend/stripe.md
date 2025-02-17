@@ -1,6 +1,8 @@
 # Extend with Stripe
 
 <!--
+https://github.com/nextjs/saas-starter/tree/main/lib/payments
+
 https://vercel.com/templates/next.js/subscription-starter
 
 https://github.com/CezarRoberto/payment-amqp-api

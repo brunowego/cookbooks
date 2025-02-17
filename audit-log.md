@@ -5,6 +5,7 @@
 - [Building Audit Logs with Change Data Capture and Stream Processing](https://debezium.io/blog/2019/10/01/audit-logs-with-change-data-capture-and-stream-processing/)
 - [Martin Fowler / Audit Log](https://martinfowler.com/eaaDev/AuditLog.html)
 - [4 Common Designs of Audit Trail — Tracking Data Changes in Databases](https://medium.com/techtofreedom/4-common-designs-of-audit-trail-tracking-data-changes-in-databases-c894b7bb6d18)
+- [Guide to Building Great Audit Logs for Application Software](https://dev.to/dangtony98/guide-to-building-audit-logs-for-application-software-49fh)
 
 <!--
 https://github.com/debezium/debezium-examples/tree/main/auditlog

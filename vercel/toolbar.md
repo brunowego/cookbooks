@@ -1,5 +1,9 @@
 # Vercel Toolbar
 
+<!--
+https://github.com/luvnft/tutur/blob/main/apps/web/src/app/%5Blang%5D/staff-toolbar.tsx
+-->
+
 ## Links
 
 - [Docs](https://vercel.com/docs/workflow-collaboration/vercel-toolbar#vercel-toolbar)
@@ -11,6 +15,15 @@
 ```sh
 # Using pnpm
 pnpm add @vercel/toolbar
+```
+
+### Configuration
+
+```sh
+#
+vercel link
+# Or
+vercel link --cwd ./apps/web
 ```
 
 ## Issues

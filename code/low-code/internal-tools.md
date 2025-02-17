@@ -30,8 +30,10 @@ https://marmelab.com/react-admin
 ### Open Source
 
 - [Appsmith](/appsmith/README.md) (Apache-2.0)
+- [Appwrite](/appwrite/README.md)
 - [Budibase](/budibase/README.md) (GPL-3.0)
 - [NocoBase](https://nocobase.com) (AGPL-3.0)
+- [Refine](/refine/README.md)
 - [ToolJet](/tooljet.md) (AGPL-3.0)
 
 <!--

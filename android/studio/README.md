@@ -9,28 +9,14 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask android-studio
-```
 
-#### Snappy
-
-```sh
+# Using Snappy
 sudo snap install android-studio --classic
-```
 
-<!-- #### APT
-
-```sh
-wget -O - 'https://dl.google.com/dl/android/studio/ide-zips/3.5.2.0/android-studio-ide-191.5977832-linux.tar.gz' | \
-  tar -xz
-``` -->
-
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y androidstudio
 ```
 

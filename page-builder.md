@@ -16,6 +16,7 @@ https://www.youtube.com/watch?v=QGXUUXy0AMw
 ## Libraries
 
 <!--
+https://github.com/tryglow/glow
 https://typedream.com
 https://prismic.io
 https://uigenerator.org

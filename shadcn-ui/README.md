@@ -7,6 +7,12 @@ path:packages/ui path:components.json content:"https://ui.shadcn.com/schema.json
 -->
 
 <!--
+https://magicui.design
+https://starui.link
+https://mystic-ui.vercel.app
+https://lotru-ui.com
+https://prismui.tech
+
 https://github.com/haydenbleasel/kibo | https://kibo-ui.com
 https://github.com/origin-space/originui | https://originui.com
 

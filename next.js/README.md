@@ -1,6 +1,10 @@
 # Next.js
 
 <!--
+systemd-run --user --scope -p MemoryMax=4000M pnpm dev
+-->
+
+<!--
 export const revalidate = 1
 export const revalidate = 60 * 15 // 15 minutes
 -->
@@ -553,6 +557,26 @@ TODO
 
 ```log
 error - unhandledRejection: TypeError: res.once is not a function
+```
+
+TODO
+
+#### TBD
+
+```log
+Slow filesystem detected. If /absolute/path/to/project/.next is a network drive, consider moving it to a local folder. If you have an antivirus enabled, consider excluding your project directory.
+```
+
+<!--
+https://stackoverflow.com/questions/79196674/why-i-am-getting-slow-file-system-detected-error-in-my-next-js-15-project
+-->
+
+TODO
+
+#### TBD
+
+```log
+Uncaught Error: invariant expected app router to be mounted
 ```
 
 TODO

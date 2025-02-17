@@ -33,6 +33,5 @@ actions:
     - trunk-cache-prune
     - trunk-check-pre-push
     - trunk-fmt-pre-commit
-    - commitlint
     - trunk-announce
     - trunk-upgrade-available

@@ -31,5 +31,6 @@ https://subbly.co
 
 ### Open Source
 
-- [Lago](https://github.com/getlago/lago)
-- [Lotus](https://github.com/uselotus/lotus)
+- [Lago](/lago/README.md)
+- [Lotus](/lotus/README.md)
+- [OpenMeter](/openmeter.md)

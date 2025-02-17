@@ -1,5 +1,7 @@
 # Appwrite
 
+**Keywords:** Internal Tools
+
 ## Links
 
 - [Code Repository](https://github.com/appwrite/appwrite)

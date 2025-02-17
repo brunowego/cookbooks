@@ -136,15 +136,11 @@ output
 
 **Refer:** [Terraform Version Manager](./version-manager.md)
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install terraform
-```
 
-#### APT
-
-```sh
+# Using APT
 curl -fsSL https://apt.releases.hashicorp.com/gpg | \
   sudo apt-key add -
 
@@ -152,11 +148,8 @@ sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.rel
 
 sudo apt update
 sudo apt -y install terraform
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install terraform
 ```
 

@@ -5,7 +5,7 @@
 ## References
 
 - [Code Repository](https://github.com/knadh/listmonk)
-- [Templating](https://listmonk.app/docs/templating/)
+- [Templating](https://listmonk.app/docs/templating)
 
 ## Docker
 

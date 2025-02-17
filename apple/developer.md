@@ -77,7 +77,7 @@
 
 ### Create Device
 
-1. Access [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/)
+1. Access [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources)
 2. Devices -> Register a New Device
 3. Register a Device section
    - Device Name: `<Name>’s iPhone`

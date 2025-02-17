@@ -14,15 +14,11 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install tfenv
-```
 
-#### Unix-like
-
-```sh
+# Using Unix-like
 git clone --depth 1 'https://github.com/tfutils/tfenv.git' ~/.tfenv
 ```
 
@@ -72,3 +68,13 @@ tfenv use <version>
 #
 tfenv uninstall <version>
 ```
+
+### Issues
+
+#### TBD
+
+```log
+Not instructed to use Local PGP (/usr/local/Cellar/tfenv/3.0.0/use-{gpgv,gnupg}) & No keybase install found, skipping OpenPGP signature verification
+```
+
+TODO

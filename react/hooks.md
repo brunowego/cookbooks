@@ -17,6 +17,12 @@ https://github.com/Unleash/unleash/tree/main/frontend/src/hooks/api
 https://github.com/open-sauced/app/tree/beta/lib/hooks/api
 -->
 
+<!--
+Permission:
+
+https://github.com/djkepa/custom-react-hooks/blob/main/packages/use-permission/src/index.tsx
+-->
+
 ## Issues
 
 ### TBD

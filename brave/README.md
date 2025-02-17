@@ -16,15 +16,11 @@ brave://flags
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask brave-browser
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install brave
 ```
 

@@ -9,6 +9,7 @@
 ### Installation
 
 ```sh
+# Using Homebrew
 brew tap homeport/tap
 brew install termshot
 ```

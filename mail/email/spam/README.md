@@ -3,6 +3,7 @@
 ## Deliverability Test
 
 - [EXPERTE.com - E-Mail Spam Check](https://experte.com/spam-checker)
+- [Google - Postmaster Tools Spam Rate](https://postmaster.google.com)
 - [MailReach - Email Spam Test](https://mailreach.co/email-spam-test)
 - [Unspam.email - Email Tester, Spam Checker Reputation and Deliverability](https://unspam.email)
 
@@ -22,3 +23,15 @@
 BIMI
 MTA
 -->
+
+## Tips
+
+#### Detect Email Provider
+
+```sh
+#
+nslookup -type=mx <domain>
+
+#
+dig mx <domain>
+```

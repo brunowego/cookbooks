@@ -10,6 +10,10 @@ Webpack supports "data:" and "file:" URIs by default.
 You may need an additional plugin to handle "node:" URIs.
 ```
 
+<!--
+https://nextjs.org/docs/messages/node-module-in-edge-runtime
+-->
+
 <!-- ```mjs
 /**
  * @type { import('next').NextConfig }

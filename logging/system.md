@@ -6,6 +6,7 @@
 - Activity Log
 - Application Log
 - Audit Log
+- Job Event Log
 - Security Log
 - System Log
 - Transaction Log

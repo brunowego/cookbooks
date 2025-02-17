@@ -199,6 +199,19 @@ pnpm add -g pnpm
 #### TBD
 
 ```log
+Error evaluating Node.js code
+TypeError: 'process.env' only accepts a configurable, writable, and enumerable data descriptor
+```
+
+<!--
+https://github.com/aidenybai/million/issues/1167
+-->
+
+TODO
+
+#### TBD
+
+```log
 ERR_PNPM_FETCH_401  GET https://npm.pkg.github.com/download/@acme/tailwind-config/0.0.1/7c5a3f84809d94bca8f1c427ce3b7fd1f5b3281c: Unauthorized - 401
 ```
 

@@ -4,38 +4,25 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install jq
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install jq
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 
 # Repo: EPEL
 sudo yum -y install jq
-```
 
-#### Zypper
-
-```sh
+# Using Zypper
 sudo zypper refresh
 sudo zypper install -y jq
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y jq
 ```
 

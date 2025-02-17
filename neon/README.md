@@ -22,9 +22,8 @@ https://github.com/neondatabase/preview-branches-with-vercel
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install neonctl
 ```
 

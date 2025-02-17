@@ -14,3 +14,15 @@ b*******o@g***l.com
 
 - Data Protection
 - Sensitive Data
+
+<!--
+export const obfuscateApiKey = (apiKey: string) => {
+  const [prefix, identifier, secretPart] = apiKey.split('_') as [
+    string,
+    string,
+    string,
+  ]
+
+  return `${prefix}_${identifier}_${'*'.repeat(secretPart.length)}`
+}
+-->

@@ -7,7 +7,7 @@ Podfile
 ## Links
 
 - [Code Repository](https://github.com/CocoaPods/CocoaPods)
-- [Main Website](https://cocoapods.org/)
+- [Main Website](https://cocoapods.org)
 
 ## CLI
 
@@ -17,10 +17,9 @@ Podfile
 
 ### Installation
 
-#### Bundler
-
 ```sh
-bundler add cocoapods
+# Using Bundler
+sudo gem install -n /usr/local/bin cocoapods
 ```
 
 ### Commands

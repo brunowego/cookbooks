@@ -9,7 +9,7 @@
 - JSON - JavaScript Object Notation
 - MessagePack
 - ORC
-- Parquet
+- Parquet 🌟
 - Pickle (Python Only)
 - Protocol Buffers (Protobuf)
 - SQL

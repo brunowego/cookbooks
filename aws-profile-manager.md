@@ -10,10 +10,9 @@
 
 ### Installation
 
-#### pip
-
 ```sh
-pip3 install -U aws-profile-manager
+# Using pip
+pip install aws-profile-manager
 ```
 
 ### Commands
@@ -24,7 +23,7 @@ aws-profile-manager --help
 
 ### Environment
 
-**Dependency:** [alias](/shell/alias.md)
+**Dependency:** [alias](/shellscript/alias.md)
 
 ```sh
 #
@@ -78,3 +77,13 @@ apm rotate-keys
 #
 (crontab -l 2>/dev/null; echo '@monthly aws-profile-manager rotate-keys --aws-profile-name <name> --yes') | crontab -
 ```
+
+### Issues
+
+#### TBD
+
+```log
+UnboundLocalError: local variable 'defaults_backup' referenced before assignment
+```
+
+TODO

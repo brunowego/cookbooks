@@ -4,6 +4,8 @@
 https://youtube.com/watch?v=HJ91dyD1AQg
 -->
 
+**Keywords:** Internal Tools
+
 ## Links
 
 - [Code Repository](https://github.com/ToolJet/ToolJet)

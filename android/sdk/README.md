@@ -15,7 +15,7 @@
 
 ### Installation
 
-#### Using Android Studio 🌟
+#### Android Studio 🌟
 
 1. Tools -> SDK Manager
 2. Tab: SDK Tools
@@ -24,15 +24,13 @@
    - Check "Android SDK Command-line Tools (latest)"
    - Click: Apply
 
-#### Homebrew
+#### Using CLI
 
 ```sh
-brew install --cask android-sdk
-```
+# Using Homebrew
+brew install --cask android-commandlinetools
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y android-sdk
 ```
 
@@ -40,27 +38,15 @@ choco install -y android-sdk
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
-#### Using Android Studio
-
 ```sh
 # Android SDK
 export ANDROID_HOME="$HOME/Library/Android/sdk" # for Homebrew
 # export ANDROID_HOME="$HOME"/Android/Sdk # for Linux
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
 export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH"
-```
 
-```sh
-sudo su - "$USER"
-```
-
-#### Using Homebrew
-
-```sh
-# Android SDK
-export ANDROID_HOME='/usr/local/share/android-sdk'
-export ANDROID_SDK_ROOT="$ANDROID_HOME"
-export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
+#
+export PATH="/usr/local/share/android-commandlinetools/cmdline-tools/latest/bin:$PATH"
 ```
 
 ```sh
@@ -70,6 +56,7 @@ sudo su - "$USER"
 ### Commands
 
 ```sh
+#
 emulator -help
 sdkmanager --help
 avdmanager -h
@@ -93,6 +80,18 @@ adb shell getprop
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+WARNING      | /absolute/path/to/Library/Android/sdk/system-images/android-25/google_apis/x86_64/ is not a valid directory.
+WARNING      | emulator has searched the above paths but found no valid sdk root directory.
+PANIC: Broken AVD system path. Check your ANDROID_SDK_ROOT value [/absolute/path/to/Library/Android/sdk]!
+```
+
+```sh
+avdmanager list avd
+```
 
 #### TBD
 

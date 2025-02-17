@@ -33,9 +33,10 @@ Try use a VPN, with US location, to access the website.
 
 ## App
 
-### Insrtallation
+### Installation
 
 ```sh
+# Using Homebrew
 brew install --cask chatgpt
 ```
 
@@ -43,9 +44,8 @@ brew install --cask chatgpt
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew tap appleboy/tap
 brew install codegpt
 ```

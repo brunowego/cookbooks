@@ -99,28 +99,18 @@ https://github.com/johnnyopao/awsp
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install awscli
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt -y install awscli
-```
 
-#### pip
-
-```sh
+# Using pip
 pip3 install -U awscli
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install awscli
 ```
 

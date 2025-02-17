@@ -39,8 +39,15 @@ git commit -am <message>
 ### Change Commit Date for 1 hour ago
 
 ```sh
-git commit --amend --no-edit --date="$(gdate -d '1 hour ago' +'%Y-%m-%dT%H:%M:%S')"
+export GIT_COMMITTER_DATE="$(gdate -d 'last sunday' +'%Y-%m-%d') $(gdate +'%H:%M:%S')"
+export GIT_AUTHOR_DATE="$GIT_COMMITTER_DATE"
+
+git commit --amend --no-edit --date="$GIT_AUTHOR_DATE"
 ```
+
+<!--
+1 hour ago
+-->
 
 ### Amend Last Commit with Same Date
 

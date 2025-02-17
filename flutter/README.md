@@ -35,10 +35,29 @@ https://github.com/bizz84/flutter-tips-and-tricks
 
 - [Code Repository](https://github.com/flutter/flutter)
 - [Main Website](https://flutter.dev)
+- [Showcase](https://flutter.dev/showcase)
 
 ## Examples
 
 - [Timy app](https://github.com/janoodleFTW/timy-messenger)
+
+<!--
+https://github.com/icapps/flutter-template
+
+https://github.com/carlospsarmiento/CleanArchitecture_Flutter_Ecommerce
+https://github.com/yunweneric/flutter-open-ui/tree/wallet_app
+https://github.com/ahvvad/MotoRent
+https://github.com/ahvvad/Bookly
+https://github.com/mennamohamed97/Bubble_Chat
+https://github.com/hwb06/Flutter_DatingList_RestApis
+https://github.com/ShehanUdantha/clean_architecture_movie_app
+https://github.com/lazycatlabs/flutter_auth_app
+https://github.com/Sameera-Perera/Flutter-TDD-Clean-Architecture-E-Commerce-App
+
+https://github.com/MuhadJasiR/Zybo
+
+https://github.com/Sumat-Dev/flutter-bloc-news-app
+-->
 
 ## CLI
 
@@ -47,13 +66,12 @@ https://github.com/bizz84/flutter-tips-and-tricks
 - [CocoaPods](/cocoapods.md)
 - Android SDK
   - [CLI](/android/sdk/README.md#cli)
-  - [Create Device](/android/sdk/README.md#create-device)
+  - [Create Device](/android/emulator/x86_64.md#create-device)
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask flutter
 ```
 
@@ -157,7 +175,7 @@ flutter test -d <device-id> -r <reporter>
 #
 flutter emulators
 flutter emulators --launch apple_ios_simulator
-flutter emulators --launch Pixel_3a_API_33_x86_64
+flutter emulators --launch Pixel_4_API_35
 
 #
 flutter devices

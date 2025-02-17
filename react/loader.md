@@ -1,0 +1,13 @@
+# React Loader
+
+TODO
+
+<!--
+https://tailwindflex.com/@anonymous/loading-dots
+
+https://uiball.com/ldrs | https://github.com/GriffinJohnston/ldrs
+https://samherbert.net/svg-loaders
+https://nzbin.github.io/three-dots | https://github.com/nzbin/three-dots
+
+https://figma.com/community/file/1183111865001388870
+-->

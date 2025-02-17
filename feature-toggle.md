@@ -27,9 +27,14 @@ https://youtube.com/watch?v=i6j2hT7ox0c
 - [CloudBees / Feature Management](https://cloudbees.com/capabilities/feature-management)
 - [ConfigCat](https://configcat.com)
 - [DevCycle](https://devcycle.com)
+- [FeatureGlags](https://featureflags.io)
 - [HappyKit](https://happykit.dev)
+- [Hypertune](https://hypertune.com)
 - [LaunchDarkly](https://launchdarkly.com)
-- [Split](https://spit.io)
+- [Optimizely](https://optimizely.com)
+- [Split](https://split.io)
+- [Statsig](https://statsig.com)
+- [Vercel Flags](https://vercel.com/docs/workflow-collaboration/feature-flags/vercel-flags) 🌟
 
 ### Open Source
 
@@ -44,6 +49,7 @@ https://youtube.com/watch?v=i6j2hT7ox0c
 - [Unleash](https://github.com/Unleash/unleash) 🌟
 
 <!--
+https://github.com/go-feature-flag/flag-management
 https://github.com/progressively-crew/progressively
 https://github.com/tryabby/abby
 https://tesfy.vercel.app

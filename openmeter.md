@@ -1,5 +1,7 @@
 # OpenMeter
 
+**Keywords:** Billing
+
 ## Links
 
 - [Code Repository](https://github.com/openmeterio/openmeter)

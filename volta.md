@@ -19,9 +19,8 @@ Written in Rust
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install volta
 ```
 
@@ -37,7 +36,7 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 
 ```sh
 # Volta
-export PATH="$PATH:$HOME/.volta/bin"
+export PATH="$HOME/.volta/bin:$PATH"
 
 # Volta Features
 export VOLTA_FEATURE_PNPM=1

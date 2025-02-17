@@ -3,7 +3,7 @@
 ## Commands
 
 ```sh
-bunx create-payload-app -h
+npx create-payload-app -h
 ```
 
 ## Dependencies
@@ -65,7 +65,5 @@ https://github.com/payloadcms/payload/tree/main/templates
 
 ```sh
 #
-bunx create-payload-app \
-  -n cms \
-  --use-pnpm
+npx create-payload-app --use-pnpm
 ```

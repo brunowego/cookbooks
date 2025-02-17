@@ -1,10 +1,30 @@
 # AWS Simple Email Service (SES)
 
 <!--
-https://linkedin.com/learning/aws-for-developers-simple-email-service-ses/simple-email-service-ses-for-sending-cheap-and-reliable-email
+path:modules/ses path:main.ts
 
-email-smtp.us-east-1.amazonaws.com5
+https://github.com/FlowFuse/terraform-aws-flowfuse/blob/main/ses/main.tf
+https://github.com/mikedizon/terraform-aws-components/blob/master/modules/ses/main.tf
+https://github.com/cloudposse-terraform-components/aws-ses/blob/main/src/main.tf
+https://github.com/leonardobiffi/blueprints/tree/main/ses/simple
+https://github.com/deploymode/terraform-aws-modules/blob/master/modules/email/main.tf
+
+https://github.com/cloudposse/terraform-aws-components/tree/main/modules/ses
+https://github.com/cloudposse/terraform-aws-ses
+
+https://learnaws.io/aws-calculator/ses
+https://docs.sendwithses.com/pricing
+
+https://linkedin.com/learning/aws-for-developers-simple-email-service-ses/simple-email-service-ses-for-sending-cheap-and-reliable-email
+-->
+
+<!--
+email-smtp.us-east-1.amazonaws.com
 587
+-->
+
+<!--
+"v=DMARC1;p=quarantine;pct=75;rua=mailto:noreply@example.com"
 -->
 
 ## Links

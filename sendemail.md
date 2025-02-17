@@ -2,21 +2,17 @@
 
 ## CLI
 
-### Installation
-
-#### Dependencies
+### Dependencies
 
 - [Gmail](/gmail.md#mail-password)
 
-#### Homebrew
+### Installation
 
 ```sh
+# Using Homebrew
 brew install sendemail
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install sendemail
 ```

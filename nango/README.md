@@ -1,6 +1,10 @@
 # Nango
 
-**Keywords:** OAuth Token
+<!--
+https://github.com/trycompai/comp
+-->
+
+**Keywords:** OAuth Token, Integration Platform
 
 ## Links
 

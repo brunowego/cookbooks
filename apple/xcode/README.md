@@ -30,9 +30,8 @@ xcode-select --install
 
 ### Installation
 
-#### MAS
-
 ```sh
+# Using MAS
 mas install 497799835
 ```
 

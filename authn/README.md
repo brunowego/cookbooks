@@ -36,6 +36,7 @@ https://fusionauth.io
 - [Keycloak](/keycloak/README.md)
 - [Lucia](/lucia/README.md)
 - [ORY Hydra](/ory/hydra.md)
+- [Better Auth](/better-auth/README.md) 🌟
 
 <!--
 https://zitadel.com

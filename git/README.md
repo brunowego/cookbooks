@@ -400,6 +400,16 @@ error: cannot update the ref 'refs/remotes/origin/Feat/HAB-357': unable to creat
 mkdir ./.git/logs/refs/remotes/origin/Feat/HAB-357
 ```
 
+#### Index Lock
+
+```log
+Git: fatal: Unable to create '/path/to/project/.git/index.lock': File exists.
+```
+
+```sh
+rm ./.git/index.lock
+```
+
 #### Broken Reference
 
 ```log

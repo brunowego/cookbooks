@@ -39,5 +39,13 @@ https://www.w3.org/TR/xml-entity-names/025.html
 
 ## Tools
 
-- [patorjk.com / Text to ASCII Art Generator (TAAG)](https://patorjk.com/software/taag/)
+- [patorjk.com / Text to ASCII Art Generator (TAAG)](https://patorjk.com/software/taag) <!-- Big, Doom, Sub-zero, Slant, Ogre  -->
 - [OnlineTools / Convert ASCII to HTML Entities – Online ASCII Tools](https://onlinetools.com/ascii/convert-ascii-to-html-entities)
+
+<!--
+https://creativefabrica.com/tools/ascii-art-generator
+
+https://seotoolbelt.co/tools/ascii-art-generator
+https://en.rakko.tools/tools/68/
+https://asciiart.eu/text-to-ascii-art
+-->

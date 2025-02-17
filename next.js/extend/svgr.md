@@ -12,6 +12,9 @@ npm install @svgr/webpack --save-dev
 
 # Using Bun
 bun add @svgr/webpack -D
+
+# Using pnpm
+pnpm add @svgr/webpack -D
 ```
 
 ## Configuration
@@ -57,7 +60,29 @@ const nextConfig = {
 export default nextConfig
 ```
 
+<!--
+experimental: {
+    turbo: {
+      rules: {
+        '.svg': ['@svgr/webpack'],
+      },
+    },
+  },
+-->
+
 ## Issues
+
+### TBD
+
+```log
+React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: object.
+```
+
+<!--
+https://github.com/vercel/turborepo/issues/4832
+-->
+
+TODO
 
 ### Missing SVG Support
 
