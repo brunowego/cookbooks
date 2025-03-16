@@ -2,11 +2,12 @@
 
 ## CLI
 
+**Note:** Included in coreutils
+
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Homebrew
 brew install md5sha1sum
 ```
 

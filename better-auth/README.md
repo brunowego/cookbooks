@@ -4,6 +4,7 @@
 
 - [Code Repository](https://github.com/better-auth/better-auth)
 - [Main Website](https://better-auth.com)
+- [Demo](https://demo.better-auth.com) <!-- https://github.com/better-auth/better-auth/tree/main/demo/nextjs -->
 
 ## Library
 

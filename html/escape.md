@@ -6,4 +6,6 @@
 
 <!--
 Apostrophe: ’ or &apos;
+
+’ &rsquo;
 -->

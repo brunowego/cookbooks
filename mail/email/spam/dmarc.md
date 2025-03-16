@@ -10,6 +10,15 @@ Existing DMARC DNS Record
 
 - [Main Website](https://dmarc.io)
 
+## Tools
+
+- [MxToolbox - DMARC Check Tool - Check DMARC Records for Errors](https://mxtoolbox.com/dmarc.aspx)
+
+<!--
+https://dmarcian.com/domain-checker
+https://easydmarc.com/tools/dmarc-lookup
+-->
+
 <!-- ##
 
 https://login.ondmarc.com/signup -->
@@ -23,3 +32,7 @@ export DOMAIN='<domain>'
 #
 dig _dmarc."$DOMAIN" txt +noall +answer +short
 ```
+
+<!--
+v=DMARC1; p=quarantine; pct=50; rua=mailto:info@example.com; ruf=mailto:info@example.com; fo=1
+-->

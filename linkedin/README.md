@@ -1,6 +1,13 @@
 # LinkedIn
 
 <!--
+Cover
+
+https://linkedin.com/company/firstup-io
+https://linkedin.com/company/flight-science
+-->
+
+<!--
 https://linkedin.com/help/linkedin/answer/a563309/image-specifications-for-your-linkedin-pages-and-career-pages?lang=en
 -->
 

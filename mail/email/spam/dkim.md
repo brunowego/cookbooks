@@ -1,5 +1,9 @@
 # DomainKeys Identified Mail (DKIM)
 
+## Tools
+
+- [MxToolbox - DKIM Record Lookup](https://mxtoolbox.com/dkim.aspx)
+
 ## Checking
 
 ```sh

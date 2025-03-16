@@ -57,6 +57,8 @@ https://tailwindshades.com/
 - [Tailwind Shades](https://tailwindshades.com) 🌟
 
 <!--
+https://www.canva.com/colors/color-palette-generator/
+
 https://json-color-palette.netlify.app 🌟
 https://tailcolor.com
 https://uicolors.app 🌟

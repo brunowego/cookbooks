@@ -4,8 +4,9 @@
 
 - [SVG Artista](https://svgartista.net)
 - [SVG Minifier](https://svgminify.com)
+- [SVG Pattern Generator](https://svg-pattern-generator.vercel.app)
 - [SVG to Data URI converter](https://codepen.io/elliz/details/ygvgay)
-- [URL-encoder for SVG](https://yoksel.github.io/url-encoder/)
+- [URL-encoder for SVG](https://yoksel.github.io/url-encoder)
 
 ### Browser
 

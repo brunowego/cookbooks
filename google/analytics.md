@@ -16,6 +16,10 @@ GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
 - Tools
   - [Query Explorer](https://ga-dev-tools.appspot.com/query-explorer)
 
+## Related
+
+- [Google Tag Manager](./tag-manager.md)
+
 <!--
 ## Configuration
 

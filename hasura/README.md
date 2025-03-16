@@ -14,9 +14,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Homebrew
 brew install hasura-cli
 ```
 

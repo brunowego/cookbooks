@@ -3,6 +3,7 @@
 TODO
 
 <!--
+https://magecdn.com/tools/svg-loaders
 https://tailwindflex.com/@anonymous/loading-dots
 
 https://uiball.com/ldrs | https://github.com/GriffinJohnston/ldrs

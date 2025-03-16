@@ -137,6 +137,22 @@ knex seed:make --timestamp-filename-prefix <name>
 
 ### Issues
 
+#### TBD
+
+```log
+error: create table "migrations" ("id" serial primary key, "name" varchar(255), "batch" integer, "migration_time" timestamptz) - no schema has been selected to create in
+```
+
+<!--
+https://github.com/knex/knex/issues/1897
+-->
+
+<!--
+Try in another time, perhaps a problem with server outage
+-->
+
+TODO
+
 #### Missing `ts-node`
 
 ```log

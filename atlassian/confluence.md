@@ -1,6 +1,6 @@
 # Atlassian Confluence
 
-**Keywords:** Project Management
+**Keywords:** Project Management, Wiki
 
 ## Links
 

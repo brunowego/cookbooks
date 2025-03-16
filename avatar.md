@@ -19,6 +19,8 @@ https://github.com/txstc55/ugly-avatar
 - [XSGames / Random users](https://xsgames.co/randomusers)
 
 <!--
+https://i.pravatar.cc/150?u=Bruno Gomes
+
 https://xsgames.co/randomusers/assets/avatars/female/14.jpg
 https://avatar.vercel.sh/bruno-wego
 -->

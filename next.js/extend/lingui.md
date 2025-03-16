@@ -251,6 +251,19 @@ TODO
 ### TBD
 
 ```log
+Error: You tried to use `Trans` in Server Component, but i18n instance for RSC hasn't been setup.
+Make sure to call `setI18n` in the root of your page.
+```
+
+<!--
+https://github.com/lingui/js-lingui/issues/2120
+-->
+
+TODO
+
+### TBD
+
+```log
 Invalid dependencies have been reported by plugins or loaders for this module. All reported dependencies need to be absolute paths.
 ```
 

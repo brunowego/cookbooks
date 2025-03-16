@@ -1,5 +1,18 @@
 # Cloudflare DNS
 
+## Tips
+
+### Redirect Domain
+
+<!--
+https://developers.cloudflare.com/fundamentals/setup/manage-domains/redirect-domain
+https://developers.cloudflare.com/rules/url-forwarding
+
+https://www.youtube.com/watch?v=mic8MjRgAEw
+-->
+
+TODO
+
 ## Issues
 
 ### TBD

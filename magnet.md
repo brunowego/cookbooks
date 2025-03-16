@@ -1,6 +1,8 @@
 # Magnet
 
 <!--
+https://apps.apple.com/br/app/magnet/id441258766?mt=12
+
 Rectangle
 https://rectangleapp.com
 -->
@@ -9,8 +11,7 @@ https://rectangleapp.com
 
 ### Installation
 
-#### MAS
-
 ```sh
+# Using MAS
 mas install 441258766
 ```

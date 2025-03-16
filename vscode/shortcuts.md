@@ -10,6 +10,7 @@
 
 ## Shortcuts
 
-| Shortcut           | Description |
-| ------------------ | ----------- |
-| `Ctrl + Shift + L` | Delete Line |
+| Shortcut           | Description    |
+| ------------------ | -------------- |
+| `Ctrl + Shift + L` | Delete Line    |
+| `⌘ + B`            | Toggle Sidebar |

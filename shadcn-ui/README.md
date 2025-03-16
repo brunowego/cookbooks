@@ -7,11 +7,17 @@ path:packages/ui path:components.json content:"https://ui.shadcn.com/schema.json
 -->
 
 <!--
+https://21st.dev | https://github.com/serafimcloud/21st
+-->
+
+<!--
+https://cult-ui.com
 https://magicui.design
 https://starui.link
 https://mystic-ui.vercel.app
 https://lotru-ui.com
 https://prismui.tech
+https://www.eldoraui.site
 
 https://github.com/haydenbleasel/kibo | https://kibo-ui.com
 https://github.com/origin-space/originui | https://originui.com
@@ -61,25 +67,25 @@ https://github.com/kiliman/shadcn-custom-theme
 
 ```sh
 # Using Bun
-pnpx shadcn@latest -h
+npx shadcn@latest -h
 ```
 
 ### Usage
 
 ```sh
 #
-pnpx shadcn@latest init
-pnpx shadcn@latest init -c ./packages/ui
+npx shadcn@latest init
+npx shadcn@latest init -c ./packages/ui
 
 #
-pnpx shadcn@latest add <name>
-pnpx shadcn@latest add -c ./packages/ui <name>
+npx shadcn@latest add <name>
+npx shadcn@latest add -c ./packages/ui <name>
 
 #
-pnpx shadcn@latest diff
-pnpx shadcn@latest diff -c ./packages/ui
-pnpx shadcn@latest diff <name>
-pnpx shadcn@latest diff -c ./packages/ui <name>
+npx shadcn@latest diff
+npx shadcn@latest diff -c ./packages/ui
+npx shadcn@latest diff <name>
+npx shadcn@latest diff -c ./packages/ui <name>
 ```
 
 <!--

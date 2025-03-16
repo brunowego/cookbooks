@@ -580,3 +580,16 @@ Uncaught Error: invariant expected app router to be mounted
 ```
 
 TODO
+
+#### TBD
+
+```log
+http://localhost:3000/__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=TypeError%3A+organizations.find+is+not+a+function&file=webpack-internal%3A%2F%2F%2F%28app-pages-browser%29%2F.%2Fnode_modules%2F.pnpm%2Fnext%4014.1.2_%40babel%2Bcore%407.26.0_%40opentelemetry%2Bapi%401.9.0_react-dom%4018.2.0_react%4018.2.0__react%4018.2.0%2Fnode_modules%2Fnext%2Fdist%2Fcompiled%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=invokeGuardedCallback&arguments=&lineNumber=20622&column=29
+```
+
+<!--
+https://stackoverflow.com/questions/79348298/next-js-404-errors-for-nextjs-original-stack-frame-on-page-load
+https://github.com/vercel/next.js/discussions/63092
+-->
+
+TODO

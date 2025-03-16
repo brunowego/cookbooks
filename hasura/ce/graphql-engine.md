@@ -27,7 +27,7 @@ docker run -d \
   -p 5432:5432 \
   --name hasura-postgres \
   --network workbench \
-  docker.io/library/postgres:11.2-alpine
+  docker.io/library/postgres:17.3-alpine
 
 #
 docker run -d \
@@ -42,12 +42,16 @@ docker run -d \
   -p 8080:8080 \
   --name hasura-graphql-engine \
   --network workbench \
-  docker.io/hasura/graphql-engine:v2.25.0-ce
+  docker.io/hasura/graphql-engine:v2.45.0-ce
 ```
 
 ```sh
 echo -e '[INFO]\thttp://127.0.0.1:8080'
 ```
+
+| Admin Secret   |
+| -------------- |
+| `S3cr3t_K@Key` |
 
 ### Remove
 

@@ -2,4 +2,4 @@
 
 ## Links
 
-- [Main Website](https://hasura.io/opensource/)
+- [Main Website](https://hasura.io/opensource)

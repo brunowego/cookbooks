@@ -19,6 +19,7 @@ https://github.com/topics/checkout
 
 - [Gumroad](https://app.gumroad.com/checkout)
 - [Lemon Squeezy](https://123done.lemonsqueezy.com/checkout)
+- [Nomos Friends & Family](https://nomos.checkout.energy)
 - [NordVPN](https://nordcheckout.com/?product_group=nordvpn)
 - [Surfshark Checkout](https://order.surfshark.com)
 - [Tunnelbear Checkout](https://tunnelbear.com/account/upgrade)

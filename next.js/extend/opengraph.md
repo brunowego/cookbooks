@@ -9,8 +9,9 @@ https://github.com/openstatusHQ/openstatus/blob/main/apps/web/src/app/status-pag
 -->
 
 <!--
-https://github.com/leerob/leerob.io/blob/main/app/og/route.tsx
+https://github.com/search?q=path%3Asrc%2Fapp%2Fapi+path%3Aog%2Froute.tsx+content%3Anext%2Fog&type=code
 
+https://github.com/leerob/leerob.io/blob/main/app/og/route.tsx
 https://github.com/web3bio/web3bio/blob/main/app/api/og/route.tsx
 https://github.com/openstatusHQ/openstatus/blob/main/apps/web/src/app/api/og/route.tsx
 https://github.com/dubinc/dub/blob/main/apps/web/app/api/og/analytics/route.tsx

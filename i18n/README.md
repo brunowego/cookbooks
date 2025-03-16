@@ -1,6 +1,7 @@
 # Internationalization (i18n)
 
 <!--
+https://github.com/aymericzip/intlayer
 https://github.com/WeblateOrg/weblate
 https://github.com/formatjs/formatjs
 https://github.com/lokalise/i18n-ally
