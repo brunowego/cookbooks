@@ -1,11 +1,14 @@
 # Bartender
 
+<!--
+https://github.com/jordanbaird/Ice
+-->
+
 ## App
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask bartender
 ```

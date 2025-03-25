@@ -7,7 +7,7 @@ https://github.com/damithadev/shadcn-rich-text-editor-with-tiptap
 https://github.com/ndtrung341/next-tiptap
 -->
 
-**Keywords:** Rich Text Editor
+**Keywords:** Rich Text Editor, ProseMirror
 
 ## Links
 
@@ -26,6 +26,18 @@ pnpm add @tiptap/react @tiptap/starter-kit
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+RangeError: Can not convert <mention, " "> to a Fragment (looks like multiple versions of prosemirror-model were loaded)
+```
+
+<!--
+https://github.com/ueberdosis/tiptap/issues/577
+-->
+
+TODO
 
 #### TBD
 

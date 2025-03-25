@@ -88,6 +88,9 @@ https://skalata.vc
 
 Hero / Header | Hero
 
+https://ravenna.ai/
+https://www.talkme.ai
+https://www.arcade.software/
 https://adtrace.ai
 https://supercharged.design/work
 https://flowgen.framer.ai
@@ -234,6 +237,7 @@ https://tailwindcollections-furniture-store.netlify.app
 
 Manifesto
 
+https://ravenna.ai/
 https://www.proofs.io/manifesto
 
 Steps
@@ -242,6 +246,7 @@ https://maxschmitt.me
 
 About
 
+https://www.octolane.com/about
 https://stateset.com/about
 https://midday.ai/story
 https://oku-ui.com/oku
@@ -686,9 +691,10 @@ Post Blocks
 
 https://wefunder.com/explore
 
-Float Button
+Float Button / Button
 
 https://shakuro.com
+https://www.octolane.com/auth/sign-in
 
 Mosaic / Section
 
@@ -809,6 +815,7 @@ https://coinhall.org
 
 Landing Page
 
+https://www.logro.fit
 https://signal.un.ms
 https://boostlab.com.br
 https://pop.site
@@ -1341,7 +1348,7 @@ https://loja.infinitepay.io/henkiz
 
 Form / Input
 
-https://eduzz.com/cadastro
+
 
 Cookie Policy
 
@@ -1575,6 +1582,8 @@ https://alpha.mapform.co/app/yonical/settings
 
 Footer
 
+https://www.untitledproduct.com/
+https://www.arcade.software/
 https://supercharged.design/work
 https://boostlab.com.br
 https://spotlightdesign.io

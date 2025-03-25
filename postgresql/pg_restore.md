@@ -1,5 +1,9 @@
 # pg_restore
 
+## Installation
+
+Follow [this instructions](./README.md#library).
+
 ## Tips
 
 ### Large Databases

@@ -85,10 +85,9 @@ bun build --compile --outfile ./<my-cli> ./src/index.ts
 
 ```sh
 #
-bun x npm-check-updates -ui
-
+npx npm-check-updates -ui
 # Workspaces
-bunx npm-check-updates -ui -ws
+npx npm-check-updates -ui -ws
 ```
 
 ### Issues

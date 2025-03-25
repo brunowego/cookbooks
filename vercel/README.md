@@ -17,7 +17,7 @@ https://edge-mug.vercel.app/edge
 https://github.com/kovacsmarkakos/hacker-news-next
 https://github.com/leerob/esm
 
-https://epic-course-platform.vercel.app/
+https://epic-course-platform.vercel.app
 -->
 
 **Keywords:** Cloud Application Platform, PaaS, Frontend Cloud
@@ -89,11 +89,11 @@ brew install vercel-cli
 ### Commands
 
 ```sh
-# With NPX
-npx vercel help
-
 # With Local
 vc help
+
+# With NPX
+npx vercel help
 ```
 
 ### Usage

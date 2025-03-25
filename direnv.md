@@ -17,22 +17,15 @@ https://github.com/Shopify/shadowenv
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install direnv
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install direnv
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install direnv
 ```

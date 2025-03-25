@@ -4,22 +4,17 @@
 
 ### Installation
 
-#### Homebrew
+###
 
 ```sh
+# Using Homebrew
 brew install coreutils
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install coreutils
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y gnuwin32-coreutils.install
 ```
 

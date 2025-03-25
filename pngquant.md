@@ -1,5 +1,7 @@
 # pngquant
 
+**Keywords:** PNG Compression, PNG Optimization
+
 ## Links
 
 - [Code Repository](https://github.com/kornelski/pngquant)
@@ -9,10 +11,9 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
-# brew install pngquant
+# Using Homebrew
+brew install pngquant
 ```
 
 ### Commands

@@ -254,6 +254,10 @@ echo '/out' >> ./.gitignore
 Module not found: Can't resolve 'critters'
 ```
 
+<!--
+https://github.com/vercel/next.js/issues/34763
+-->
+
 TODO
 
 #### TBD

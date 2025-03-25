@@ -20,7 +20,12 @@ cat ~/Library/Application\ Support/Code/User/globalStorage/alefragnani.project-m
 
 # Restore
 gh gist list
+
+# VS Code
 gh gist view <hash> > ~/Library/Application\ Support/Code/User/globalStorage/alefragnani.project-manager/projects.json
+
+# Cursor
+gh gist view <hash> > ~/Library/Application\ Support/Cursor/User/globalStorage/alefragnani.project-manager/projects.json
 
 history -r
 ```

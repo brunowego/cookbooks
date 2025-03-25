@@ -104,6 +104,36 @@ touch ./.cspell/usernames.txt
 
 ### Tips
 
+#### Cursor
+
+```sh
+#
+cursor --install-extension streetsidesoftware.code-spell-checker
+
+cursor --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
+```
+
+**Configuration:**
+
+```sh
+#
+jq '."recommendations" += ["streetsidesoftware.code-spell-checker"]' "$HOME"/.cursor/extensions.json | sponge "$HOME"/.cursor/extensions.json
+
+jq '."recommendations" += ["streetsidesoftware.code-spell-checker-portuguese-brazilian"]' "$HOME"/.cursor/extensions.json | sponge "$HOME"/.cursor/extensions.json
+```
+
+```sh
+# English
+jq '."cSpell.language" |= "en"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+# English + Portuguese
+jq '."cSpell.language" |= "en,pt,pt_BR"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+```
+
+```sh
+#
+jq '."cSpell.diagnosticLevel" |= "Hint"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+```
+
 #### Visual Studio Code
 
 ```sh

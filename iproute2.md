@@ -8,29 +8,19 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install iproute2mac
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install iproute
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install iproute2
-```
 
-#### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add iproute2
 ```

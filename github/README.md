@@ -84,34 +84,25 @@ brew install --cask github
 
 ### Installation
 
-#### Homebrew
+###
 
 ```sh
+# Using Homebrew
 brew install gh
-```
 
-#### APT
-
-**Dependencies:** [GNU Privacy Guard (GnuPG / GPG)](/gnu/pg.md) and [Software Properties Common](/apt/software-properties-common.md)
-
-```sh
+# Using APT
+# Dependencies: [GNU Privacy Guard (GnuPG / GPG)](/gnu/pg.md) and [Software Properties Common](/apt/software-properties-common.md)
 sudo apt-key adv --keyserver 'keyserver.ubuntu.com' --recv-key 'C99B11DEB97541F0'
 sudo apt-add-repository 'https://cli.github.com/packages'
 
 sudo apt update
 sudo apt install gh
-```
 
-#### Scoop
-
-```sh
+# Using Scoop
 scoop bucket add github-gh 'https://github.com/cli/scoop-gh.git'
 scoop install gh
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install gh
 ```
 

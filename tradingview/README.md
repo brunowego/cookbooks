@@ -64,9 +64,8 @@ Settings -> Service -> Performance -> Disable hardware acceleration
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask tradingview
 ```
 

@@ -72,6 +72,17 @@ goenv uninstall -f <version>
 
 ### Issues
 
+#### Missing Permission
+
+```log
+github.com/oklog/ulid/v2/cmd/ulid: go install github.com/oklog/ulid/v2/cmd/ulid: copying /var/folders/g3/p61klrn556jdq8w0c2l3g6wr0000gn/T/go-build1943677534/b001/exe/a.out: open /usr/local/bin/ulid: permission denied
+```
+
+```sh
+#
+sudo chown -R $(whoami) /usr/local/bin
+```
+
 #### Behind Proxy
 
 ```log

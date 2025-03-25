@@ -35,16 +35,16 @@ git config --global push.default 'current'
 git config --global pull.rebase false
 
 # Auto CRLF
-git config core.autocrlf 'true' # Use `true`, `input` or `false`
+# git config core.autocrlf 'true' # Use `true`, `input` or `false`
 
 # Merge
-git config --global merge.tool 'value' # Use `vimdiff`
+# git config --global merge.tool 'value' # Use `vimdiff`
 
 # Branch
 git config --global branch.autosetupmerge 'always'
 
 #
-git config push.autoSetupRemote true
+# git config push.autoSetupRemote true
 ```
 
 <!--

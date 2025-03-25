@@ -1,5 +1,7 @@
 # Responsively App
 
+**Keywords:** Cross-Device Testing
+
 ## Links
 
 - [Code Repository](https://github.com/responsively-org/responsively-app)

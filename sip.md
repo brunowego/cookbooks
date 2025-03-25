@@ -12,9 +12,8 @@ https://sipapp.io/updates/#2.5.4
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask sip
 ```
 

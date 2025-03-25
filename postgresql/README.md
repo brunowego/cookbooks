@@ -61,7 +61,7 @@ For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshr
 
 ```sh
 # PostgreSQL Develop
-export PATH="/usr/local/opt/libpq/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 ```
 
 ```sh

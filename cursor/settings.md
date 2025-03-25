@@ -18,23 +18,23 @@
 cat "$HOME"/.cursor/settings.json
 
 # Terminal Scrollback
-jq '."terminal.integrated.scrollback" |= 100000000' "$HOME"/.cursor/settings.json | \
-  sponge "$HOME"/.cursor/settings.json
+# jq '."terminal.integrated.scrollback" |= 100000000' "$HOME"/.cursor/settings.json | \
+#   sponge "$HOME"/.cursor/settings.json
 
 # Breadcrumbs
 jq '."breadcrumbs.enabled" |= false' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
 # Activity Bar Orientation
-jq '."workbench.activityBar.orientation" |= "vertical' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+jq '."workbench.activityBar.orientation" |= "vertical"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
 # Workspace Trust
-jq '."security.workspace.trust.enabled" |= false' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+# jq '."security.workspace.trust.enabled" |= false' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
 # Render whitespace
 jq '."editor.renderWhitespace" |= "all"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
 # Minimap
-jq '."editor.minimap.enabled" |= false' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+# jq '."editor.minimap.enabled" |= false' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
 # Scroll beyond last line
 jq '."editor.scrollBeyondLastLine" |= false' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
@@ -45,15 +45,19 @@ jq '."editor.wordWrap" |= "on"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.
 # Font Size
 jq '."editor.fontSize" = 14' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
+#
+# jq '."editor.scrollBeyondLastColumn" = 0' "$HOME"/.cursor/settings.json | \
+#   sponge "$HOME"/.cursor/settings.json
+
 # Startup
-jq '."workbench.startupEditor" |= "newUntitledFile"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+# jq '."workbench.startupEditor" |= "newUntitledFile"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
 # SideBar Location
 jq '."workbench.sideBar.location" |= "right"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
 # Open Side by Side Direction
-jq '."workbench.editor.openSideBySideDirection" |= "down"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
-jq '."workbench.editor.splitInGroupLayout" |= "vertical"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+# jq '."workbench.editor.openSideBySideDirection" |= "down"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+# jq '."workbench.editor.splitInGroupLayout" |= "vertical"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 ```
 
 <!--

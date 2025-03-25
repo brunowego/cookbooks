@@ -8,26 +8,24 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
-brew tap homebrew/cask-versions
-brew install --cask adoptopenjdk # AdoptOpenJDK 14
-brew install --cask adoptopenjdk8 # AdoptOpenJDK 8
-```
+# Using Homebrew
+brew install openjdk
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install openjdk-8-jdk
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install java-1.8.0-openjdk-devel
+```
+
+### Configurations
+
+```sh
+# Using Homebrew
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 ```
 
 ### Environment

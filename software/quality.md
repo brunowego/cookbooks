@@ -26,3 +26,13 @@
 - Class names: UserController, InvoiceProcessor
 - Avoid abbreviations: userCount, not uc
 - Be consistent with language conventions
+
+## Tools
+
+- [SonarQube](/sonarsource/sonarqube/README.md)
+
+<!--
+https://codacy.com
+https://deepsource.com
+https://codeclimate.com
+-->

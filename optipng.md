@@ -1,12 +1,13 @@
 # optipng
 
+**Keywords:** PNG Compression, PNG Optimization
+
 ## CLI
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install optipng
 ```
 
@@ -14,4 +15,10 @@ brew install optipng
 
 ```sh
 optipng -h
+```
+
+### Usage
+
+```sh
+optipng -o7 ./*.png
 ```

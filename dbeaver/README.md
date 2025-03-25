@@ -84,6 +84,8 @@ ls "$HOME"/Library/DBeaverData
 cat "$HOME"/Library/DBeaverData/workspace6/General/.dbeaver/data-sources.json | gh gist create - -f dbeaver-data-sources.json
 
 # Restore
+mkdir -p "$HOME"/Library/DBeaverData/workspace6/General/.dbeaver
+
 gh gist list
 gh gist view <hash> > "$HOME"/Library/DBeaverData/workspace6/General/.dbeaver/data-sources.json
 ```
