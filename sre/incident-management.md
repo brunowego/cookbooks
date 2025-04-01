@@ -16,3 +16,7 @@
 1. Process for declaring incidents
 2. Dashboard for viewing current incidents
 3. Database of who to contact for each kind of incident
+
+<!--
+https://www.incidental.dev | https://github.com/incidentalhq/incidental
+-->

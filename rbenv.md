@@ -10,28 +10,30 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install rbenv
-```
 
-#### Git
-
-```sh
-#
+# Using Git
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 ( cd ~/.rbenv && ./src/configure && make -C src )
 
-#
 mkdir -p ~/.rbenv/plugins
 
-#
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
 ### Environment
+
+> For installation using Homebrew.
+
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+
+```sh
+# rbenv
+eval "$(rbenv init -)"
+```
 
 > For installation using Git.
 

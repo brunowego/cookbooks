@@ -29,13 +29,12 @@
 
 ### References
 
-- [Releases FTP](https://ftp.mozilla.org/pub/firefox/releases/)
+- [Releases FTP](https://ftp.mozilla.org/pub/firefox/releases)
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install \
   --cask \
   --appdir='/Applications' \

@@ -29,3 +29,7 @@ https://coderpad.io
 2. Tente criar o esqueleto da coisa, demostra noção de abstração
 3. Faça perguntas, não abaixe a cabeça e saia codando
 -->
+
+## Assessment Report
+
+- [Coderbyte](https://coderbyte.com/report/userxw44l08jq:javascript-assessment-8go5tpoix5)

@@ -22,6 +22,13 @@ https://freefaces.gallery
 - [WhatTheFont!](https://myfonts.com/WhatTheFont)
 - [Font Identifier](https://fontsquirrel.com/matcherator)
 
+<!--
+https://creativemarket.com/font-finder
+https://fontspring.com/matcherator
+https://fonts.adobe.com/fonts/vs/upload
+https://galaxy.ai/ai-font-identifier
+-->
+
 ### CDN
 
 - [CDNFonts](https://cdnfonts.com)

@@ -12,9 +12,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew tap heroku/brew
 brew install heroku
 ```

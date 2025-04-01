@@ -100,7 +100,7 @@ https://brandingcolors.net
 https://tailcolor.com/palettes
 https://javisperez.github.io/tailwindcolorshades
 https://tailwind-color-palette.netlify.app
-https://uicolors.app/create
+https://uicolors.app/create | https://uicolors.app/generate/51c765
 -->
 
 ### Converter
@@ -109,6 +109,10 @@ https://uicolors.app/create
 - [ConvertAColor](https://convertacolor.com) 🌟
 - [DivMagic / Color Converter](https://divmagic.com/tools/color-converter)
 - [EasyRetro / HEX to HSL](https://easyretro.io/tools/hex-to-hsl)
+
+<!--
+https://www.colorsandfonts.com/color-tools/color-converter/
+-->
 
 ### Contrast Checker
 

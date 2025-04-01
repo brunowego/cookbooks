@@ -15,11 +15,15 @@ Podfile
 
 - [Getting Started](https://guides.cocoapods.org/using/getting-started.html)
 
+## Dependencies
+
+- [rbenv](/rbenv.md) <!-- Ruby v3.2.2 -->
+
 ### Installation
 
 ```sh
 # Using Bundler
-sudo gem install -n /usr/local/bin cocoapods
+gem install cocoapods
 ```
 
 ### Commands

@@ -12,8 +12,7 @@ https://nucleoapp.com/
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask iconjar
 ```

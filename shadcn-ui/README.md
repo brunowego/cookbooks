@@ -11,6 +11,7 @@ https://21st.dev | https://github.com/serafimcloud/21st
 -->
 
 <!--
+https://reui.io/docs/checkbox
 https://ui.lndev.me
 https://cult-ui.com
 https://magicui.design
@@ -55,6 +56,7 @@ https://bendigiorgio.github.io/kiso/?path=/docs/components-switch--docs
 - [shadcn/ui customizer](https://shadcn-ui-customizer.vercel.app)
 
 <!--
+https://reui.io | https://github.com/keenthemes/reui
 https://mynaui.com
 
 https://gradient.page/tools/shadcn-ui-theme-generator

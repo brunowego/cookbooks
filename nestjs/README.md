@@ -123,4 +123,16 @@ nest info
 nest generate -h
 #
 nest g class config
+#
+nest g co --no-spec
+#
+nest g co --dry-run
+#
+nest g co module/<name>
 ```
+
+<!--
+nest g controller
+nest g service
+nest g module
+-->

@@ -88,6 +88,10 @@ https://skalata.vc
 
 Hero / Header | Hero
 
+https://www.spaceship.com/domains
+https://verdely.framer.ai/
+https://www.notion.com/
+https://www.venturekit.ai/
 https://ravenna.ai/
 https://www.talkme.ai
 https://www.arcade.software/
@@ -156,6 +160,7 @@ https://oneleet.com
 https://gleap.io
 https://amplemarket.com
 
+https://c15t.com | https://github.com/c15t/c15t
 https://savvycal.com/reserve
 https://github.com/papra-hq/owlrelay | https://owlrelay.email
 https://volta.net
@@ -466,6 +471,7 @@ https://pagedone.lemonsqueezy.com/affiliates
 
 Public Profile
 
+https://thefriendclub.com/member/brunogomes
 https://wiza.co/d/claritisoftware/1805/ani-achugbue
 https://buymeacoffee.com/cristianmihai
 https://zenn.dev/serinuntius?tab=scraps
@@ -539,6 +545,7 @@ https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
 Login / Sign In / Sign up
 
+https://hevy.com/login?postLoginPath=%2F
 https://login.retool.com/auth/login
 https://try-stand.com/user/login
 https://app.uninbox.com/join
@@ -698,6 +705,8 @@ https://www.octolane.com/auth/sign-in
 
 Mosaic / Section
 
+https://www.aeroband.net/
+https://www.venturekit.ai/
 https://folderly.com/email-deliverability-test
 https://preply.com
 https://openphone.com
@@ -815,6 +824,8 @@ https://coinhall.org
 
 Landing Page
 
+https://nemo.rescale.build/
+https://www.carlhauser.com
 https://www.logro.fit
 https://signal.un.ms
 https://boostlab.com.br
@@ -872,6 +883,7 @@ https://primer.tailwindui.com
 
 Integrations
 
+https://www.port.io/integrations
 https://app.formcarry.com/integrations
 https://formcarry.com/integrations
 https://linear.app/henkiz/settings/integrations
@@ -942,6 +954,7 @@ https://preview.tailus.io/oxymor-yv/
 
 Pricing
 
+https://startupr.xyz/pricing
 https://x.com/xmuhammadtalha/status/1899592097969176720
 https://mainstreetdata.com/pricing
 https://azimutt.app/pricing
@@ -1085,6 +1098,7 @@ https://appstudio.design
 
 Dashboard
 
+https://sitespeak.ai/user/profile
 https://mainstreetdata.com/charting?metrics=revenue%2CgrossIncome
 https://wiza.co/app/dashboard
 https://dribbble.com/shots/25156559-Compliance-Framework-Details-Tab-Navigation | https://dribbble.com/shots/25156193-SOC2-Requirements-View-Table
@@ -1580,8 +1594,15 @@ Stripe
 
 https://alpha.mapform.co/app/yonical/settings
 
+Call
+
+https://mimicdesign.co/call
+
 Footer
 
+https://www.inngest.com/
+https://www.dxos.org/
+https://outloud.co/
 https://www.untitledproduct.com/
 https://www.arcade.software/
 https://supercharged.design/work
@@ -1610,6 +1631,7 @@ https://swan.io
 https://zapal.tech
 https://conceptzilla.com
 
+https://verdely.framer.ai
 https://minthouse.dev/tech-workshop
 https://proofs.io
 https://zellify.app
@@ -1792,6 +1814,8 @@ Payment Receipt
 https://auth.max.com/payment-receipt/1fd049b9-cfd6-4af5-a4b1-f2bfe7406aea/da4d9db1-8ebf-4b52-8b81-27fa77ef92d7
 
 Checkout
+
+https://drconsulta.com/servicos/consultas/psiquiatria-online
 
 https://ulysse.com/en/gift/checkout?type=electronic
 https://dreamwave.ai/ai-headshots

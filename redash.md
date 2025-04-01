@@ -5,7 +5,7 @@
 ## Links
 
 - [Code Repository](https://github.com/getredash/redash)
-- [Main Website](https://redash.io/)
+- [Main Website](https://redash.io)
 
 ## Docker
 

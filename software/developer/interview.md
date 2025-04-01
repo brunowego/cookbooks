@@ -92,6 +92,14 @@ https://www.youtube.com/watch?v=Fws57ECYbo4
 
 - Situation, Task, Action, Result (STAR)
 
+## Steps
+
+- Screening
+- Live code
+- Tech interview
+- System design
+- Culture fit / Team fit
+
 ## Interview Structure
 
 - Interview may be single 1 hour session of multiple sessions totaling 5 hours

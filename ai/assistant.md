@@ -7,6 +7,8 @@
 - [Perplexity](/perplexity.md)
 
 <!--
+https://github.com/TabbyML/tabby
+
 https://gasbyai.com
 https://copilot.microsoft.com
 https://github.com/assistant-ui/assistant-ui
