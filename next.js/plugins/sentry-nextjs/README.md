@@ -225,6 +225,14 @@ Sentry.captureCheckIn({
 ### TBD
 
 ```log
+[@sentry/nextjs] WARNING: You are using the Sentry SDK with Turbopack (`next dev --turbo`). The Sentry SDK is compatible with Turbopack on Next.js version 15.3.0 or later. You are currently on 15.1.0. Please upgrade to a newer Next.js version to use the Sentry SDK with Turbopack. Note that the SDK will continue to work for non-Turbopack production builds. This warning is only about dev-mode.
+```
+
+TODO
+
+### TBD
+
+```log
 @acme/landing:build:       - warning: could not determine a source map reference (Could not auto-detect referenced sourcemap for ~/c8e7b438-6afe-46a5-8a1f-4ec115c877f6-3.js)
 ```
 

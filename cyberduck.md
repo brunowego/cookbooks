@@ -17,3 +17,9 @@ brew install --cask cyberduck
 # Using Chocolatey
 choco install -y cyberduck
 ```
+
+### Tips
+
+#### S3 Connection
+
+- Server: `<bucket-name>.s3.amazonaws.com`

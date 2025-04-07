@@ -30,6 +30,8 @@ https://e-junkie.com
 
 https://gumroad.com
 https://creativemarket.com
+
+https://lastlink.com
 -->
 
 - [Eduzz](https://eduzz.com)

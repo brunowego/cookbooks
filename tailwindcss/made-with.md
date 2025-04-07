@@ -88,6 +88,11 @@ https://skalata.vc
 
 Hero / Header | Hero
 
+https://www.privacy.com/
+https://www.getstark.co/
+https://found.com/
+https://kanmon.com/
+https://www.careerpuck.com/
 https://www.spaceship.com/domains
 https://verdely.framer.ai/
 https://www.notion.com/
@@ -1425,6 +1430,7 @@ https://my.ka.app/signup/info
 https://flowbite.com/blocks/marketing/user-onboarding
 https://componentland.com/component/onboarding-page-2
 
+https://app.instaheadshots.com/create
 https://dashboard.hookdeck.com/onboarding
 https://app.krisp.ai/setup
 https://venturekit.ai/business-plan/onboarding
@@ -1600,6 +1606,9 @@ https://mimicdesign.co/call
 
 Footer
 
+https://found.com/
+https://www.careerpuck.com/
+https://kanmon.com/
 https://www.inngest.com/
 https://www.dxos.org/
 https://outloud.co/

@@ -2,17 +2,25 @@
 
 ## Links
 
-- [Code Repository](https://rightfontapp.com)
+- [Main Website](https://rightfontapp.com)
+- [Updates](https://rightfontapp.com/updates)
+
+<!--
+https://install.appcenter.ms/orgs/rightfont-team/apps/rightfont/distribution_groups/release
+-->
 
 ## App
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask rightfont
 ```
+
+<!--
+https://rightfontapp.com/update/rightfont.zip
+-->
 
 <!-- ### Tips -->
 

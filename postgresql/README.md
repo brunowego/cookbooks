@@ -86,6 +86,10 @@ TODO
 pg_restore: error: unsupported version (1.16) in file header
 ```
 
+<!--
+https://dev.to/johndotowl/postgresql-17-installation-on-ubuntu-2404-5bfi
+-->
+
 ```sh
 #
 pg_restore --version

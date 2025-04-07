@@ -2,14 +2,14 @@
 
 ## Links
 
-- [Main Website](https://deepsource.io/)
+- [Main Website](https://deepsource.io)
 
 ## CLI
 
 ### Links
 
 - [Code Repository](https://github.com/deepsourcelabs/cli)
-- [Docs](https://deepsource.io/docs/cli/usage/)
+- [Docs](https://deepsource.io/docs/cli/usage)
 
 ### Docs
 
@@ -17,9 +17,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew tap deepsourcelabs/cli
 brew install deepsource
 ```

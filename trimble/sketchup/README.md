@@ -14,19 +14,15 @@ https://xr.sketchup.com
 
 ### Installation
 
-#### DMG
-
 ```sh
-#
+# DMG
 hdiutil attach 'https://sketchup.com/sketchup/SketchUpPro-dmg' \
   -nobrowse \
   -mountpoint /Volumes/SketchUpPro
 
-#
 ls /Volumes/SketchUpPro
 
-cp -R /Volumes/SketchUpPro/SketchUp\ 2023 /Applications
+cp -R /Volumes/SketchUpPro/SketchUp\ 2025 /Applications
 
-#
 hdiutil detach /Volumes/SketchUpPro
 ```

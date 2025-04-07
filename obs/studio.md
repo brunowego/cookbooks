@@ -19,32 +19,24 @@ https://linkedin.com/learning/delivering-video-to-facebook-live/welcome-and-what
 
 ### Dependencies
 
-#### APT
-
 ```sh
+# Using APT
 sudo apt -y install ffmpeg
 ```
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask obs
-```
 
-<!-- #### APT
-
-```sh
+# Using APT
 sudo add-apt-repository ppa:obsproject/obs-studio
 
 sudo apt update
 sudo apt -y install obs-studio
-``` -->
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y obs-studio
 ```
 
