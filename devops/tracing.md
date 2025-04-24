@@ -7,7 +7,7 @@
 ## Tools
 
 - [Jaeger](/jaeger/README.md)
-- [OpenTelemetry](/opentelemetry/README.md)
+- [OpenTelemetry](/opentelemetry/README.md) 🌟
 - [Zipkin](/zipkin.md)
 
 <!--

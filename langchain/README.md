@@ -1,6 +1,6 @@
 # LangChain
 
-**Keywords:** LLM, Orchestrator Framework
+**Keywords:** LLM, AI Orchestration
 
 <!--
 Good for prototyping and testing

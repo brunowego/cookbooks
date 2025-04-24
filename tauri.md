@@ -1,6 +1,6 @@
 # Tauri
 
-**Keywords:** Desktop Application Development
+**Keywords:** Desktop Application Development, node-webkit
 
 <!--
 https://github.com/spacedriveapp/spacedrive/blob/main/apps/desktop/package.json

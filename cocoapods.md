@@ -29,7 +29,7 @@ gem install cocoapods
 ### Commands
 
 ```sh
-bundle exec pod --help
+bundle -h
 ```
 
 ### Initialize

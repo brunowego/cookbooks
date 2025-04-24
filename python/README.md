@@ -19,9 +19,10 @@ https://linkedin.com/learning/data-science-foundations-data-mining-in-python/pyt
 
 ## Isolated Python Environments
 
-- [Pipenv](/pipenv.md) 🌟
-- [Virtualenv](/virtualenv.md)
+- [Pipenv](/pipenv.md)
 - [Poetry](/poetry.md)
+- [uv](/uv.md) 🌟
+- [Virtualenv](/virtualenv.md)
 
 <!--
 https://github.com/conda/conda

@@ -54,10 +54,10 @@ docker run -d \
   -e POSTGRES_PASSWORD='sonarqube' \
   -e POSTGRES_DB='sonarqube' \
   -v sonarqube-postgres-data:/var/lib/postgresql/data \
-  -p 5432:5432 \
+  -p 15432:15432 \
   --name sonarqube-postgres \
   --network workbench \
-  docker.io/library/postgres:11.2-alpine
+  docker.io/library/postgres:17.4-alpine
 
 #
 docker run -d \
@@ -65,7 +65,7 @@ docker run -d \
   -h sonarqube \
   -e SONARQUBE_JDBC_USERNAME='sonarqube' \
   -e SONARQUBE_JDBC_PASSWORD='sonarqube' \
-  -e SONARQUBE_JDBC_URL='jdbc:postgresql://sonarqube-postgres:5432/sonarqube' \
+  -e SONARQUBE_JDBC_URL='jdbc:postgresql://sonarqube-postgres:15432/sonarqube' \
   -v sonarqube-conf:/opt/sonarqube/conf \
   -v sonarqube-data:/opt/sonarqube/data \
   -v sonarqube-logs:/opt/sonarqube/logs \
@@ -73,7 +73,7 @@ docker run -d \
   -p 9000:9000 \
   --name sonarqube \
   --network workbench \
-  docker.io/library/sonarqube:9.7.1-community
+  docker.io/library/sonarqube:9.9.8-community
 ```
 
 > Wait! This process take a while.
@@ -105,17 +105,15 @@ docker volume rm \
 
 ### Dependencies
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install openjdk@11
 ```
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install sonarqube
 ```
 

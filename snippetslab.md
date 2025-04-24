@@ -1,5 +1,7 @@
 # SnippetsLab
 
+**Keywords:** Snippets, Snippet Manager
+
 ## Alternatives
 
 - [massCode](https://github.com/massCodeIO/massCode)

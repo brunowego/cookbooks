@@ -4,9 +4,8 @@
 
 ### Installation
 
-#### MAS
-
 ```sh
+# Using MAS
 mas install 967805235
 ```
 

@@ -19,8 +19,11 @@ In simple terms, a GraphQL Server receives the query from the client and respond
 - [Apollo Server](/apollo/server.md)
 - [Express GraphQL](https://graphql.org/graphql-js/express-graphql/)
 - [GraphQL Helix](/graphql-helix.md)
-- [GraphQL Yoga](/graphql-yoga.md)
+- [GraphQL Yoga](/graphql-yoga.md) 🌟
 - [Hasura GraphQL Engine](/hasura/graphql-engine.md)
+- [Mercurius](https://mercurius.dev)
+- [Pothos GraphQL](https://pothos-graphql.dev)
+- [WunderGraph](https://wundergraph.com)
 
 <!--
 https://github.com/dgraph-io/dgraph

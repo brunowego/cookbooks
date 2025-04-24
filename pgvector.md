@@ -1,6 +1,22 @@
 # pgvector
 
-**Keywords:** Vector Search
+<!--
+https://github.com/mazzasaverio/fastapi-langchain-rag
+-->
+
+**Keywords:** Vector Database, Vector Search Engine
+
+<!--
+brew install pgvector
+brew services list
+brew services start pgvector
+-->
+
+<!--
+SELECT * FROM pg_extension WHERE extname = 'vector';
+
+create extension if not exists vector;
+-->
 
 ## Links
 
@@ -62,25 +78,3 @@ docker rm -f pgvector
 
 docker volume rm pgvector-data
 ```
-
-## <!--
-
-services:
-pgvector:
-image: docker.io/pgvector/pgvector:pg17
-volumes: - type: volume
-source: pgvector-data
-target: /var/lib/postgresql/data
-environment:
-POSTGRES_DB:
-POSTGRES_USER:
-POSTGRES_PASSWORD:
-ports: - target: 5432
-published: $POSTGRES_PORT
-protocol: tcp
-restart: unless-stopped
-
-volumes:
-pgvector-data:
-driver: local
--->

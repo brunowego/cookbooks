@@ -9,9 +9,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew tap dart-lang/dart
 brew install dart
 ```
@@ -26,7 +25,10 @@ dart -h
 
 ```sh
 #
-dart analyze ./
+dart analyze
+
+#
+dart format ./
 ```
 
 ### Tips

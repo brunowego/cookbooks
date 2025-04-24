@@ -21,6 +21,24 @@ autoprefixer
 }
 ```
 
+## Issues
+
+### TBD
+
+```log
+@acme/web:build: Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+@acme/web:build:   npx update-browserslist-db@latest
+@acme/web:build:   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+```
+
+<!--
+https://github.com/browserslist/update-db/issues/20
+-->
+
+<!--
+pnpm update caniuse-lite -r
+-->
+
 ## CLI
 
 ### Commands

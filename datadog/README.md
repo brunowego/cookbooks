@@ -1,5 +1,7 @@
 # Datadog
 
+**Keywords:** Telemetry, Tracing, APM, Logs
+
 ## Links
 
 - [Main Website](https://datadoghq.com)

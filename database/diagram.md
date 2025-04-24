@@ -6,4 +6,4 @@
 
 ## Tools
 
-- [DrawSQL](https://drawsql.app)
+- [ERD](/erd.md)

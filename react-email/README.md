@@ -77,6 +77,25 @@ export const Email = () => {
 #### TBD
 
 ```log
+@acme/email:build: Error: Unable to install the dependencies and it exited with code: 1
+@acme/email:build:     at ChildProcess.<anonymous> (/vercel/path0/node_modules/.pnpm/react-email@3.0.7_@opentelemetry+api@1.9.0_@playwright+test@1.47.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/react-email/dist/cli/index.js:2116:36)
+@acme/email:build:     at ChildProcess.emit (node:events:518:28)
+@acme/email:build:     at maybeClose (node:internal/child_process:1101:16)
+@acme/email:build:     at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+@acme/email:build:  ELIFECYCLE  Command failed with exit code 1.
+@acme/email:build: ERROR: command finished with error: command (/vercel/path0/packages/email) /pnpm9/node_modules/.bin/pnpm run build exited (1)
+@acme/email#build: command (/vercel/path0/packages/email) /pnpm9/node_modules/.bin/pnpm run build exited (1)
+```
+
+<!--
+https://github.com/resend/react-email/issues/1432
+-->
+
+TODO
+
+#### TBD
+
+```log
 Warning: Each child in a list should have a unique "key" prop.%s See https://reactjs.org/link/warning-keys for more information.
 ```
 

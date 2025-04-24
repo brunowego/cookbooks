@@ -2,15 +2,16 @@
 
 ## References
 
-- [Apache Maven PMD Plugin](https://maven.apache.org/plugins/maven-pmd-plugin/)
+- [Code Repository](https://github.com/pmd/pmd)
+- [Main Website](https://pmd.github.io)
+- [Apache Maven PMD Plugin](https://maven.apache.org/plugins/maven-pmd-plugin)
 
 ## CLI
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install pmd
 ```
 

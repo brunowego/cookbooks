@@ -248,6 +248,48 @@ echo '/out' >> ./.gitignore
 
 ### Issues
 
+#### Mismatch with Server External Packages
+
+```log
+@acme/app:dev: Package import-in-the-middle can't be external
+@acme/app:dev: The request import-in-the-middle matches serverExternalPackages (or the default list).
+@acme/app:dev: The request could not be resolved by Node.js from the project directory.
+@acme/app:dev: Packages that should be external need to be installed in the project directory, so they can be resolved from the output files.
+@acme/app:dev: Try to install it into the project directory by running npm install import-in-the-middle from the project directory.
+```
+
+**Refer:** `./next.config.ts`
+
+```ts
+// ...
+const nextConfig: NextConfig = {
+  // ...
+  serverExternalPackages: ['import-in-the-middle'],
+}
+// ...
+```
+
+**Refer:** `./.npmrc`
+
+```npmrc
+public-hoist-pattern[]=*import-in-the-middle*
+public-hoist-pattern[]=*require-in-the-middle*
+```
+
+#### TBD
+
+```log
+@acme/app:dev:  ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+@acme/app:dev:  ⚠ See instructions if you need to configure Turbopack:
+@acme/app:dev:   https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+```
+
+**Refer:** `./next.config.ts`
+
+```ts
+// ...
+```
+
 #### TBD
 
 ```log
@@ -257,6 +299,14 @@ Module not found: Can't resolve 'critters'
 <!--
 https://github.com/vercel/next.js/issues/34763
 -->
+
+TODO
+
+#### TBD
+
+```log
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (3706kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+```
 
 TODO
 

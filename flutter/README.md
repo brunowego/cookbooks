@@ -1,6 +1,14 @@
 # Flutter
 
 <!--
+Gruntfuggly.todo-tree
+dotup.dart-data-class-generator
+Nash.awesome-flutter-snippets
+usernamehw.errorlens
+kisstkondoros.vscode-gutter-preview
+-->
+
+<!--
 https://www.fluttermix.com/
 -->
 
@@ -63,14 +71,20 @@ https://github.com/MuhadJasiR/Zybo
 https://github.com/Sumat-Dev/flutter-bloc-news-app
 -->
 
+## Learn
+
+- [10x Your Speed With Flutter](https://youtube.com/watch?v=8oIsZEhnqtA)
+
 ## CLI
 
 ### Dependencies
 
 - [CocoaPods](/cocoapods.md)
 - Android SDK
+  - [Android Studio](/android/studio/README.md#application)
   - [CLI](/android/sdk/README.md#cli)
   - [Create Device](/android/emulator/x86_64.md#create-device)
+- [Xcode](/apple/xcode/README.md)
 
 ### Installation
 
@@ -120,7 +134,7 @@ source ~/.zshrc
 
 ```sh
 #
-flutter config --no-analytics
+flutter config --disable-analytics
 
 # Android
 flutter config --android-sdk "$ANDROID_SDK_ROOT"
@@ -151,8 +165,8 @@ flutter downgrade
 ```sh
 #
 flutter create \
-  --org 'com.example.myapp' \
-  --project-name 'myapp' \
+  --org 'com.example' \
+  --project-name '<org-name>' \
   --platforms android,ios \
   -t app \
   ./
@@ -177,17 +191,21 @@ flutter test
 flutter test -d <device-id> -r <reporter>
 
 #
-flutter emulators
-flutter emulators --launch apple_ios_simulator
-flutter emulators --launch Pixel_4_API_35
-
-#
 flutter devices
 
 #
-flutter run -d web-server # chrome
-flutter run -d android
+flutter emulators
+
+# For iOS
+flutter emulators --launch apple_ios_simulator
 flutter run -d iphone
+
+# For Android
+flutter emulators --launch Medium_Phone_API_36
+flutter run -d emulator-5554 # android
+
+# For Web
+flutter run -d web-server # chrome
 ```
 
 ### Tips
@@ -220,6 +238,16 @@ jq '."recommendations" += ["Dart-Code.flutter"]' "$PWD"/.vscode/extensions.json 
 ```
 
 ### Issues
+
+#### Missing Simulator Runtimes
+
+```log
+Unable to get list of installed Simulator runtimes.
+```
+
+```sh
+xcodebuild -downloadPlatform iOS
+```
 
 #### TBD
 

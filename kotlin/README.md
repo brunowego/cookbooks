@@ -27,9 +27,8 @@ https://github.com/material-components/material-components-android-examples
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install kotlin
 ```
 
@@ -54,19 +53,21 @@ kotlin
 
 ```sh
 #
-code --install-extension fwcd.kotlin
+# code --install-extension fwcd.kotlin
+code --install-extension mathiasfrohlich.Kotlin
 
 #
-jq '."recommendations" += ["fwcd.kotlin"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+# jq '."recommendations" += ["fwcd.kotlin"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
+jq '."recommendations" += ["mathiasfrohlich.Kotlin"]' "$PWD"/.vscode/extensions.json | sponge "$PWD"/.vscode/extensions.json
 ```
 
-**Configuration:**
+<!-- **Configuration:**
 
 ```sh
 #
 jq '."[kotlin]"."editor.formatOnSave" |= true' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
 jq '."[kotlin]"."editor.defaultFormatter" |= "fwcd.kotlin"' "$PWD"/.vscode/settings.json | sponge "$PWD"/.vscode/settings.json
-```
+``` -->
 
 #### EditorConfig
 

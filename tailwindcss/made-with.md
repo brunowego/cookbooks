@@ -34,6 +34,10 @@ https://usehall.com
 https://light.so/demo/overview
 https://tailwindcollections-gallery-page.netlify.app
 
+Gallery
+
+https://sharerelay.com
+
 Empty State / Placeholder
 
 https://app.formcarry.com
@@ -88,18 +92,20 @@ https://skalata.vc
 
 Hero / Header | Hero
 
-https://www.privacy.com/
-https://www.getstark.co/
-https://found.com/
-https://kanmon.com/
-https://www.careerpuck.com/
-https://www.spaceship.com/domains
-https://verdely.framer.ai/
-https://www.notion.com/
-https://www.venturekit.ai/
-https://ravenna.ai/
-https://www.talkme.ai
-https://www.arcade.software/
+https://ros-design-academy.webflow.io/courses/freelance-mastery
+https://vinted.pt
+https://privacy.com
+https://getstark.co
+https://found.com
+https://kanmon.com
+https://careerpuck.com
+https://spaceship.com/domains
+https://verdely.framer.ai
+https://notion.com
+https://venturekit.ai
+https://ravenna.ai
+https://talkme.ai
+https://arcade.software
 https://adtrace.ai
 https://supercharged.design/work
 https://flowgen.framer.ai
@@ -247,8 +253,8 @@ https://tailwindcollections-furniture-store.netlify.app
 
 Manifesto
 
-https://ravenna.ai/
-https://www.proofs.io/manifesto
+https://ravenna.ai
+https://proofs.io/manifesto
 
 Steps
 
@@ -256,7 +262,7 @@ https://maxschmitt.me
 
 About
 
-https://www.octolane.com/about
+https://octolane.com/about
 https://stateset.com/about
 https://midday.ai/story
 https://oku-ui.com/oku
@@ -433,6 +439,7 @@ https://winr.games/stake
 
 Search Page
 
+https://kyte.com
 https://trueup.io/early-stage-startups
 https://javascript.jobs/remote
 https://sunbeltrentals.com
@@ -550,6 +557,7 @@ https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
 Login / Sign In / Sign up
 
+https://codecademy.com
 https://hevy.com/login?postLoginPath=%2F
 https://login.retool.com/auth/login
 https://try-stand.com/user/login
@@ -706,12 +714,12 @@ https://wefunder.com/explore
 Float Button / Button
 
 https://shakuro.com
-https://www.octolane.com/auth/sign-in
+https://octolane.com/auth/sign-in
 
 Mosaic / Section
 
-https://www.aeroband.net/
-https://www.venturekit.ai/
+https://aeroband.net
+https://venturekit.ai
 https://folderly.com/email-deliverability-test
 https://preply.com
 https://openphone.com
@@ -783,6 +791,7 @@ https://startt.co/stats
 
 Sales Talk / Book a demo /  Request a demo / Schedule a demo | Get in touch | Get early access
 
+https://ramp.com/see-a-demo
 https://usehall.com/demo
 https://gotofu.com/contact
 https://cq2.co
@@ -829,9 +838,12 @@ https://coinhall.org
 
 Landing Page
 
-https://nemo.rescale.build/
-https://www.carlhauser.com
-https://www.logro.fit
+https://uipub.com
+https://semanagrowarq.com
+https://exakt.io
+https://nemo.rescale.build
+https://carlhauser.com
+https://logro.fit
 https://signal.un.ms
 https://boostlab.com.br
 https://pop.site
@@ -888,7 +900,7 @@ https://primer.tailwindui.com
 
 Integrations
 
-https://www.port.io/integrations
+https://port.io/integrations
 https://app.formcarry.com/integrations
 https://formcarry.com/integrations
 https://linear.app/henkiz/settings/integrations
@@ -947,15 +959,15 @@ https://rowzero.io/workbook/1113207BB021C27C55E45ECA/0
 Testimonials
 
 https://gist.github.com/brunowego/a39b5e2644ee0f591baf313f9e441615
-https://www.finta.com/
-https://preview.tailus.io/oxymor-yv/
-https://www.getconnect.tech/
-https://tuple.app/
-https://brandby.co/
+https://finta.com
+https://preview.tailus.io/oxymor-yv
+https://getconnect.tech
+https://tuple.app
+https://brandby.co
 
 Line risk
 
-https://preview.tailus.io/oxymor-yv/
+https://preview.tailus.io/oxymor-yv
 
 Pricing
 
@@ -1126,6 +1138,7 @@ https://strut.so/c/021b95e6-0c3a-4b5a-8190-d35116b892c0
 https://app.premai.io/projects
 https://app.netbird.io/peers | https://github.com/netbirdio/netbird
 
+https://app.mem0.ai/dashboard/get-started
 https://app.logaflow.com/feedbacks?board=&page=1&limit=200
 https://3daistudio.com/Dashboard
 https://circle.lndev.me/lndev-ui/team/CORE/all | https://github.com/ln-dev7/circle
@@ -1260,7 +1273,7 @@ https://railway.com/account/referrals
 
 Companies
 
-https://www.clay.com/number-of-employees/color
+https://clay.com/number-of-employees/color
 
 Page Builder
 
@@ -1474,7 +1487,7 @@ https://app.plain.com/workspaces
 
 Progress Circle
 
-https://app.outerbase.com/dawn9340/
+https://app.outerbase.com/dawn9340
 https://circle.lndev.me/lndev-ui/team/CORE/all
 
 Invite / Seat
@@ -1587,6 +1600,7 @@ Download Page
 
 https://volta.net/download
 https://rotato.app/download
+https://kyte.com/download-app
 
 Shopping Cart
 
@@ -1606,14 +1620,14 @@ https://mimicdesign.co/call
 
 Footer
 
-https://found.com/
-https://www.careerpuck.com/
-https://kanmon.com/
-https://www.inngest.com/
-https://www.dxos.org/
-https://outloud.co/
-https://www.untitledproduct.com/
-https://www.arcade.software/
+https://found.com
+https://careerpuck.com
+https://kanmon.com
+https://inngest.com
+https://dxos.org
+https://outloud.co
+https://untitledproduct.com
+https://arcade.software
 https://supercharged.design/work
 https://boostlab.com.br
 https://spotlightdesign.io

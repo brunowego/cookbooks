@@ -11,11 +11,11 @@ https://github.com/whs-dot-hk/tilt-jenkins/blob/master/Tiltfile
 ## Links
 
 - [Code Repository](https://github.com/tilt-dev/tilt)
-- [Main Website](https://tilt.dev/)
+- [Main Website](https://tilt.dev)
 
 ## CLI
 
-#### Dependencies
+### Dependencies
 
 - [Docker CE](/docker/ce/README.md)
 

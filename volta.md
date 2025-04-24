@@ -22,6 +22,9 @@ Written in Rust
 ```sh
 # Using Homebrew
 brew install volta
+
+# Using cURL
+curl https://get.volta.sh | bash
 ```
 
 ### Commands

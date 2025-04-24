@@ -12,7 +12,11 @@ https://clay.global/
 
 ## Learning
 
-- [The Bézier Game](https://bezier.method.ac/)
+- [The Bézier Game](https://bezier.method.ac)
+
+### Videos
+
+- [The 8 UI/UX Cheat Codes for INSTANTLY Better Designs](https://youtube.com/watch?v=c1TvOcKdBVE)
 
 ## Library
 
@@ -22,3 +26,7 @@ https://clay.global/
 https://github.com/chakra-ui/ark
 https://horizon-ui.com
 -->
+
+## Terms
+
+- Kerning: The spacing between letters

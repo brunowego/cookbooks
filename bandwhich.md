@@ -8,9 +8,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# UsingHomebrew
 brew install bandwhich
 ```
 

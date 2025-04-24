@@ -1,5 +1,7 @@
 # Lexicon
 
+**Keywords:** DNS Management
+
 ## Links
 
 - [Code Repository](https://github.com/AnalogJ/lexicon)
@@ -8,9 +10,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install lexicon
 ```
 

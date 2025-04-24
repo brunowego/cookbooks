@@ -27,9 +27,8 @@ https://github.com/Stashchenko/sonarqube/blob/dc356fb8550c1c8605ae49c5c10a2b0e53
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install sonar-scanner
 ```
 

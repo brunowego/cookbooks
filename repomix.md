@@ -1,6 +1,6 @@
 # Repomix (formerly Repopack)
 
-**Keywords:** AI-friendly Codebase
+**Keywords:** Files to LLM Prompt
 
 ## Links
 
@@ -15,10 +15,27 @@
 brew install repomix
 ```
 
+### Configuration
+
+```sh
+#
+cat << EOF >> ~/.gitignore_global
+/.repomix
+/repomix-output.txt
+EOF
+```
+
 ### Usage
 
 ```sh
 repomix ./<path/to/repo>
 ```
 
-<!-- DorianMassoulier.repomix-runner -->
+### Tips
+
+#### Visual Studio Code
+
+```sh
+#
+code --install-extension DorianMassoulier.repomix-runner
+```

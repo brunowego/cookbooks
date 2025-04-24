@@ -13,14 +13,6 @@ https://github.com/jjfernandes87/comitando-prototype-to-prodction
 - [Main Website](https://developer.apple.com/xcode/)
 - [Apple ID](https://appleid.apple.com)
 
-## CLI
-
-### Installation
-
-```sh
-xcode-select --install
-```
-
 ## App
 
 ### References
@@ -233,3 +225,11 @@ Simulator requires additional components, but installation failed because Xcode'
 ```
 
 TODO -->
+
+## CLI
+
+### Installation
+
+```sh
+xcode-select --install
+```

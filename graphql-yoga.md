@@ -6,6 +6,8 @@ https://the-guild.dev/graphql/yoga-server/docs/integrations/integration-with-nes
 https://github.com/dotansimha/graphql-yoga/blob/main/website/src/pages/docs/features/apollo-federation.mdx
 -->
 
+**Keywords:** Serverless
+
 ## Links
 
 - [Code Repository](https://github.com/dotansimha/graphql-yoga)

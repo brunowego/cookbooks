@@ -1,13 +1,12 @@
 # Prepo
 
-**Keywords:** Icon Design
+**Keywords:** Mobile Icon, Icon Design
 
 ## App
 
 ### Installation
 
-#### MAS
-
 ```sh
+# Using MAS
 mas install 476533227
 ```

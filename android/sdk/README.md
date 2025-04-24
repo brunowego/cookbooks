@@ -17,10 +17,9 @@
 
 #### Android Studio 🌟
 
-1. Tools -> SDK Manager
-2. Tab: SDK Tools
-   - Check "Show Package Details"
-3. Expand "Android SDK Command-line Tools (latest)"
+1. Android Studio -> Settings...
+2. Languages & Frameworks -> Android SDK
+3. SDK Tools Tab -> Expand "Android SDK Command-line Tools (latest)"
    - Check "Android SDK Command-line Tools (latest)"
    - Click: Apply
 
@@ -38,15 +37,31 @@ choco install -y android-sdk
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 
+#### Using Android Studio
+
+<!--
+open /Applications/Android\ Studio.app
+-->
+
 ```sh
 # Android SDK
 export ANDROID_HOME="$HOME/Library/Android/sdk" # for Homebrew
 # export ANDROID_HOME="$HOME"/Android/Sdk # for Linux
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
 export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH"
+```
 
-#
-export PATH="/usr/local/share/android-commandlinetools/cmdline-tools/latest/bin:$PATH"
+```sh
+sudo su - "$USER"
+```
+
+#### Using CLI
+
+```sh
+# Android SDK
+export ANDROID_HOME='/opt/homebrew/share/android-commandlinetools' # for Homebrew
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH"
 ```
 
 ```sh
@@ -57,9 +72,9 @@ sudo su - "$USER"
 
 ```sh
 #
-emulator -help
 sdkmanager --help
 avdmanager -h
+emulator -help
 ```
 
 ### Configuration

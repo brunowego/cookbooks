@@ -41,12 +41,14 @@ sudo su - "$USER"
 fvm releases
 
 #
+fvm install
 fvm install <version>
 
 #
 fvm list
 
 #
+fvm use
 fvm use <version>
 
 #

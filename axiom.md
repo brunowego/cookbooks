@@ -14,9 +14,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew tap axiomhq/tap
 brew install axiom
 ```

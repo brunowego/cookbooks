@@ -8,6 +8,8 @@ https://www.udemy.com/course/new-relic-apm-application-performance-management-fo
 https://www.udemy.com/course/learn-new-relic-monitoring-and-devops-for-the-cloud-aws/
 -->
 
+**Keywords:** Telemetry, Tracing, APM, Logs
+
 ## Links
 
 - [Org. Repository](https://github.com/newrelic)

@@ -1,6 +1,13 @@
-# Vercel AI SDK
+# Vercel AI
+
+<!--
+Examples:
+
+https://github.com/dubinc/dub/blob/main/apps/web/ui/modals/add-edit-link-modal/tags-section.tsx
+-->
+
+**Keywords:** AI Orchestration
 
 ## Links
 
-- [Code Repository](https://github.com/vercel/ai)
-- [Main Website](https://sdk.vercel.ai/docs)
+- [Main Website](https://vercel.com/ai)

@@ -1,6 +1,6 @@
 # Liam
 
-**Keywords:** ER Diagrams
+**Keywords:** ERD
 
 ## Links
 

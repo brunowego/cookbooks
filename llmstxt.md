@@ -13,4 +13,6 @@ https://sitespeak.ai/tools/llms-txt-generator/63eb1d73-45dd-4f33-a273-f01b4a2b44
 https://github.com/thedaviddias/llms-txt-hub
 https://sdk.vercel.ai/llms.txt
 https://llmstxthub.com
+
+https://langchain-ai.github.io/langgraph/llms-txt-overview/
 -->

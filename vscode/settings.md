@@ -48,6 +48,9 @@ jq '."workbench.startupEditor" |= "newUntitledFile"' "$HOME"/.vscode/settings.js
 # SideBar Location
 jq '."workbench.sideBar.location" |= "right"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 
+# Terminal Scrollback
+jq '."terminal.integrated.scrollback" = 10000' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
+
 # Open Side by Side Direction
 jq '."workbench.editor.openSideBySideDirection" |= "down"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json
 jq '."workbench.editor.splitInGroupLayout" |= "vertical"' "$HOME"/.vscode/settings.json | sponge "$HOME"/.vscode/settings.json

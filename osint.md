@@ -41,4 +41,4 @@ https://github.com/KTZgraph/sarenka
 
 ### Tools
 
-- [Maltego Community Edition (CE)](/cyber-security/tools/maltego-ce.md)
+- [Maltego Community Edition (CE)](/maltego/ce.md)

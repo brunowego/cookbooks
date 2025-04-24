@@ -16,18 +16,21 @@
 
 - [How Large Language Models Work](https://youtube.com/watch?v=5sLYAQS9sWQ)
 
-## AI Communities
+## Implementations
 
-- [Hugging Face](https://huggingface.co)
+- [Anthropic Claude](/anthropic/claude/README.md)
+- [Cohere Command R+](/cohere/command-r+/README.md)
+- [Google DeepMind Gemini](/google/gemini/README.md)
+- [Meta LLaMA](/meta/llama/README.md)
+- [Mistral Mistral Large](https://mistral.ai)
+- [OpenAI GPT-4](/openai/chatgpt/README.md)
 
-## Development Platform
+## Tools
 
-- [Ollama](/ollama/README.md)
-- [LangChain](/langchain.md) (Orchestrator Framework)
-
-## Observability
-
-- [Helicone](https://github.com/Helicone/helicone)
+- AI Communities
+  - [Hugging Face](https://huggingface.co)
+- Observability
+  - [Helicone](https://github.com/Helicone/helicone)
 
 <!--
 https://lunary.ai
