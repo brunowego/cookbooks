@@ -6,6 +6,7 @@
 
 ## Tools
 
+- [Context7](https://context7.com)
 - [cursor.directory](https://cursor.directory)
 
 ## Configuration

@@ -248,6 +248,20 @@ echo '/out' >> ./.gitignore
 
 ### Issues
 
+#### TBD
+
+```log
+POST /__nextjs_original-stack-frames
+```
+
+<!--
+https://github.com/vercel/next.js/discussions/63092
+
+https://stackoverflow.com/questions/79348298/next-js-404-errors-for-nextjs-original-stack-frame-on-page-load
+-->
+
+TODO
+
 #### Mismatch with Server External Packages
 
 ```log

@@ -35,21 +35,21 @@ render -h
 
 ```sh
 #
-render config init
+render login
+render whoami
 
 #
-cat ~/.render/config.yaml
-
-#
-render config profiles
-render config schema
+cat ~/.render/cli.yaml
 ```
 
 ### Usage
 
 ```sh
 #
-render dashboard
+render projects list
+
+#
+render deploys list
 ```
 
 ### Tips

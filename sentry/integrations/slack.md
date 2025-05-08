@@ -2,7 +2,12 @@
 
 ## Links
 
+- [Code Repository](https://github.com/getsentry/sentry/tree/master/src/sentry/integrations/slack)
 - [Slack + Sentry Integration](https://sentry.io/integrations/slack)
+
+## Learn
+
+- [How to Integrate Sentry with Slack for Real-time Notifications](https://youtube.com/watch?v=nZFSqhI7fDI)
 
 ## Docs
 

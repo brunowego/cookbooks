@@ -557,6 +557,8 @@ https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
 Login / Sign In / Sign up
 
+https://login.listkit.io/login
+https://app.didweever.com/auth/sign-in
 https://codecademy.com
 https://hevy.com/login?postLoginPath=%2F
 https://login.retool.com/auth/login
@@ -838,6 +840,7 @@ https://coinhall.org
 
 Landing Page
 
+https://up.io
 https://uipub.com
 https://semanagrowarq.com
 https://exakt.io
@@ -938,6 +941,7 @@ https://hellolanding.com/homes/apartment-in-jacksonville-fl-bartram-park-2213
 
 Marketplace
 
+https://appstacks.club
 https://app.contentful.com/spaces/wks05v1n2qoi/apps/list
 
 Register
@@ -1281,6 +1285,7 @@ https://shots.so
 
 Settings
 
+https://liveyonder.co/account/?tab=Profile
 https://ui.modernbanc.com/henkiz/settings/general
 https://publish.buffer.com/settings
 https://dribbble.com/shots/25243651-Settings-AI-Configuration
@@ -1431,6 +1436,8 @@ https://clickup.com/brand
 
 Onboarding
 
+https://app.listkit.io/contact-information?plan=professionalV2&screen=signup
+https://start.wiserapp.co/onboarding?step=2&substep=2
 https://my.openphone.com/onboarding/company
 https://app.attio.com/welcome/workspace-details
 https://loom.com/welcome

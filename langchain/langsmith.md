@@ -5,6 +5,7 @@
 ## Links
 
 - [Main Website](https://langchain.com/langsmith)
+- [Dashboard](https://smith.langchain.com)
 
 ## Library
 

@@ -11,8 +11,9 @@ https://21st.dev | https://github.com/serafimcloud/21st
 -->
 
 <!--
+https://shadcn-extension.vercel.app | https://github.com/BelkacemYerfa/shadcn-extension
 https://blocks.so/stats
-https://reui.io/docs/checkbox
+https://reui.io
 https://ui.lndev.me
 https://cult-ui.com
 https://magicui.design
@@ -20,7 +21,7 @@ https://starui.link
 https://mystic-ui.vercel.app
 https://lotru-ui.com
 https://prismui.tech
-https://www.eldoraui.site
+https://eldoraui.site
 
 https://github.com/haydenbleasel/kibo | https://kibo-ui.com
 https://github.com/origin-space/originui | https://originui.com
@@ -53,10 +54,13 @@ https://bendigiorgio.github.io/kiso/?path=/docs/components-switch--docs
 ### Themes
 
 - [Palettify](https://palettify.co)
+- [shadcn/studio](https://shadcnstudio.com/theme-editor) <!-- https://github.com/themeselection/shadcn-studio -->
 - [shadcn/ui (official)](https://ui.shadcn.com/themes)
 - [shadcn/ui customizer](https://shadcn-ui-customizer.vercel.app)
 
 <!--
+https://shadcn-editor.vercel.app
+
 https://reui.io | https://github.com/keenthemes/reui
 https://mynaui.com
 

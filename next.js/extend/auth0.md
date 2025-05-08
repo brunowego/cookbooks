@@ -1,5 +1,9 @@
 # Extend with Auth0
 
+<!--
+https://github.com/auth0-developer-hub/auth0-b2b-saas-starter | https://saastart.app
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/auth0/nextjs-auth0)

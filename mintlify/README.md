@@ -16,8 +16,6 @@ License: Elastic-2.0
 ## Examples
 
 - [Chatter](https://docs.trychatter.ai)
-- [Creo](https://docs.trycreo.com)
-- [Defer](https://defer.run/docs) 🌟
 - [Feedbase](https://docs.feedbase.app)
 - [Flatfile](https://flatfile.com/docs)
 - [Flipt](https://flipt.io/docs) 🌟

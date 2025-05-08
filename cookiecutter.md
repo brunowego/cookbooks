@@ -1,5 +1,7 @@
 # Cookiecutter
 
+**Keywords:** Scaffolding Tool
+
 <!--
 https://github.com/f213/django
 https://github.com/reguengos/cookiecutter-argocd

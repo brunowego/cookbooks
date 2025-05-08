@@ -25,6 +25,47 @@ https://pganalyze.com
 
 ## Queries
 
+### Database size
+
+```sql
+SELECT pg_size_pretty(pg_database_size(current_database())) AS size;
+```
+
+### Tables without autoanalyze
+
+```sql
+-- Run autoanalyze
+ANALYZE;
+
+-- Show autoanalyze settings
+SHOW autovacuum;
+
+-- Check if autoanalyze is enabled
+SELECT
+  relname,
+  last_analyze,
+  last_autoanalyze
+FROM
+  pg_stat_user_tables
+ORDER BY
+  last_analyze DESC NULLS LAST;
+
+-- Vacuum and analyze running queries
+SELECT
+  pid,
+  datname,
+  usename,
+  state,
+  now() - query_start AS running_time,
+  query
+FROM
+  pg_stat_activity
+WHERE
+  query ILIKE '%vacuum%' OR query ILIKE '%analyze%'
+ORDER BY
+  running_time DESC;
+```
+
 ### Disk usage per table (very large tables)
 
 ```sql

@@ -4,6 +4,12 @@
 
 ### TBD
 
+When you open the Dialog, it looks like a Sheet.
+
+TODO
+
+### TBD
+
 ```log
 <body class="__className_e04c4e" style="pointer-events: none;">...</body>
 ```

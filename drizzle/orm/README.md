@@ -240,3 +240,13 @@ terminating connection due to immediate shutdown command
 ```
 
 TODO
+
+#### TBD
+
+```log
+Type 'string' is not assignable to type 'unknown[]'.
+```
+
+<!-- Try check if you are using `User` instead of `UpsertUser` under the types. -->
+
+TODO

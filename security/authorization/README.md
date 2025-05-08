@@ -11,7 +11,7 @@
 - Fine-Grained Access Control (FGAC)
 - Fine-Grained Authorization (FGA)
 - Policy-Based Access Control (PBAC)
-- Role-Based Access Control (RBAC)
+- Role-Based Access Control (RBAC) 🌟
 
 ## Glossary
 
@@ -23,22 +23,25 @@
 
 ## Implementations
 
-<!--
-https://permit.io
-https://permify.co
--->
+### Managed
+
+- [Permify](https://permify.co)
 
 ### Open Source
 
 - [Cerbos](/cerbos/README.md) 🌟
-- [Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
 - [Kyverno](/kyverno.md)
-- [Open Policy Agent (OPA)](/open-policy-agent/README.md)
+- [Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
 - [Warrant](/warrant.md)
 
 <!--
+https://permit.io
 https://github.com/authzed/spicedb
 -->
+
+## Specifications
+
+- [Open Policy Agent (OPA)](/open-policy-agent/README.md)
 
 <!--
 Teams (Organization)

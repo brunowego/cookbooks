@@ -1,10 +1,10 @@
 # Yeoman
 
+**Keywords:** Scaffolding Tool
+
 ## CLI
 
-#### Installation
-
-#### NPM
+### Installation
 
 ```sh
 npm install yo -g
