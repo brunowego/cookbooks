@@ -251,6 +251,18 @@ echo '/out' >> ./.gitignore
 #### TBD
 
 ```log
+No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+```
+
+<!--
+https://github.com/vercel/next.js/issues/73119
+-->
+
+TODO
+
+#### TBD
+
+```log
 POST /__nextjs_original-stack-frames
 ```
 

@@ -5,6 +5,10 @@
 - [The Non-Negotiables Of Look-Ahead Planning For Project Success](https://youtube.com/watch?v=h3GFyU1ZpSs)
 - [What Is A Lookahead Plan In Construction](https://youtube.com/watch?v=KrqrhW3yAGU)
 
+## Learning
+
+- [Introducing The Last Planner System](https://kylenitchen.substack.com/p/introducing-the-last-planner-system)
+
 ## Terms
 
 - Macro Level Takt Plan
@@ -34,4 +38,19 @@
 
 <!--
 https://planningengineer.net/3-weeks-look-ahead-schedule-excel-sheet/
+-->
+
+<!--
+https://sablono.com/en/product/payment-valuation-and-intelligence/look-ahead-planning
+https://outbuild.com/construction-planning-software
+
+https://essential.construction/files/construction/scheduling/weekly-lookahead-planner/
+https://template.net/editable/45049/construction-look-ahead-schedule
+
+https://medium.com/@mitrecaldera/look-ahead-planner-6f52ee041378
+
+https://github.com/Trontor/lookahead
+https://github.com/LookaheadProject/lookahead
+
+https://github.com/realworldbuilder/dingplan
 -->

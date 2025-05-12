@@ -38,10 +38,31 @@ neonctl -h
 ```sh
 #
 neonctl auth
+#
+cat ~/.config/neonctl/credentials.json
+#
+neonctl me
+
+#
+neonctl orgs list
+
+#
+neonctl set-context --org-id <org-id>
 
 #
 neonctl projects list
+
+#
+neonctl databases list --project-id <project-id>
+
+#
+neonctl branches list --project-id <project-id>
 ```
+
+<!--
+neonctl roles
+neonctl operations
+-->
 
 <!--
 main
@@ -50,6 +71,17 @@ develop
 -->
 
 <!-- psql -h pg.neon.tech -->
+
+### Tips
+
+#### Completion
+
+```sh
+# Neon DB neonctl
+if [ -x "$(command -v neonctl)" ]; then
+  source <(neonctl completion)
+fi
+```
 
 ### Issues
 
