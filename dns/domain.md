@@ -28,7 +28,15 @@ https://brandnewname.com
 
 ## Register
 
+- [Bluehost](https://bluehost.com)
 - [GoDaddy](https://godaddy.com)
+- [Google Domains](https://domains.google)
+- [HostGator](https://hostgator.com)
+- [Name.com](https://name.com)
+- [Namecheap](https://namecheap.com)
+- [Porkbun](https://porkbun.com)
+- [SiteGround](https://siteground.com)
+- [Squarespace](https://squarespace.com)
 
 ## Tips
 

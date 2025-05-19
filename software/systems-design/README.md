@@ -27,7 +27,7 @@ https://github.com/donnemartin/system-design-primer
 
 - System Flow Chart
 - Data Flow Diagram (DFD)
-- Entity- Relation Diagram
+- Entity-Relation Diagram
 - Context Diagram
 - Decision Table
 - Decision Tree

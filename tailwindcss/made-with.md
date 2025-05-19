@@ -557,6 +557,7 @@ https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
 Login / Sign In / Sign up
 
+https://betterstack.com/users/link
 https://login.listkit.io/login
 https://app.didweever.com/auth/sign-in
 https://codecademy.com
@@ -1662,7 +1663,6 @@ https://zapal.tech
 https://conceptzilla.com
 
 https://verdely.framer.ai
-https://minthouse.dev/tech-workshop
 https://proofs.io
 https://zellify.app
 https://volta.net

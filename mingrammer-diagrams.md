@@ -4,6 +4,10 @@
 https://github.com/cycloidio/inframap
 https://github.com/semnil/tfdiagrams
 https://github.com/patrickchugh/terravision
+https://github.com/Universalis-FFXIV/universalis-tf
+https://github.com/IsaacOrzDev/sketch-blend/tree/main
+
+https://github.com/IliaRyzhkovPR/qr-code-generator/blob/main/architecture/generate_diagram.py
 -->
 
 **Keywords:** Diagram as Code
@@ -25,9 +29,3 @@ pip3 install -U diagrams
 #
 pipenv install -d diagrams
 ```
-
-<!-- ### Usage
-
-```sh
-
-``` -->

@@ -3,7 +3,7 @@
 ## Links
 
 - [Code Repository](https://github.com/astral-sh/uv)
-- [Docs](https://docs.astral.sh/uv/)
+- [Docs](https://docs.astral.sh/uv)
 
 ## CLI
 
@@ -18,4 +18,24 @@ brew install uv
 
 ```sh
 uv -h
+```
+
+### Usage
+
+```sh
+#
+uv python list
+
+#
+uv python install <version>
+
+#
+uv venv
+source ./.venv/bin/activate
+
+#
+uv pip install -r ./requirements.txt
+
+#
+uv run python <script>
 ```

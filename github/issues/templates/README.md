@@ -4,6 +4,8 @@
 https://github.com/webdevcody/code-racer/tree/main/.github/ISSUE_TEMPLATE
 
 https://github.com/tailwindlabs/tailwindcss/blob/master/.github/ISSUE_TEMPLATE/config.yml
+
+.github/ISSUE_TEMPLATE/bug_report.yml
 -->
 
 **Note:** Issue form templates are not supported on private repositories.

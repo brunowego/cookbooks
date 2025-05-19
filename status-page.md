@@ -16,6 +16,10 @@
 - [Instatus](https://instatus.com) 🌟
 - [UptimeRobot](/uptimerobot/README.md) 🌟
 
+<!--
+https://statuspal.io
+-->
+
 ### Open Source
 
 - [Cachet](/cachet.md)
@@ -26,6 +30,8 @@
 - [Uptime Kuma](/uptime-kuma.md)
 
 <!--
+https://github.com/grp-org/status
+https://github.com/mehatab/fettle
 https://github.com/openstatusHQ/openstatus
 https://github.com/cstate/cstate
 https://github.com/TwiN/gatus

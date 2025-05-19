@@ -1,8 +1,8 @@
 # Systems Architecture
 
 <!--
-https://udemy.com/course/developer-to-architect/
-https://udemy.com/course/software-architecture-design-of-modern-large-scale-systems/
+https://udemy.com/course/developer-to-architect
+https://udemy.com/course/software-architecture-design-of-modern-large-scale-systems
 
 https://github.com/openvinotoolkit/openvino/blob/master/src/docs/architecture.md
 -->

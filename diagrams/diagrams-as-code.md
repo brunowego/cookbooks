@@ -2,15 +2,11 @@
 
 ## Tools
 
-<!--
-https://diagram.codes
-https://diagrams.mingrammer.com
-https://graphviz.org
-https://ilograph.com
-https://mermaid.js.org
-https://plantuml.com
-https://structurizr.com
-https://websequencediagrams.com
--->
-
-TODO
+- [Diagram.Codes](https://diagram.codes)
+- [Diagrams.Mingrammer](https://diagrams.mingrammer.com) 🌟
+- [Graphviz](https://graphviz.org)
+- [Ilograph](https://ilograph.com)
+- [Mermaid](https://mermaid.js.org) 🌟
+- [PlantUML](https://plantuml.com)
+- [Structurizr](https://structurizr.com) 🌟
+- [WebSequenceDiagrams](https://websequencediagrams.com)
