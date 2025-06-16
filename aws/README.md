@@ -86,7 +86,7 @@ https://github.com/johnnyopao/awsp
 ### Links
 
 - [Code Repository](https://github.com/aws/aws-cli)
-- [Main Website](https://aws.amazon.com/cli/)
+- [Main Website](https://aws.amazon.com/cli)
 
 ### Docs
 

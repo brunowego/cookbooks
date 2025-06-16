@@ -4,29 +4,22 @@
 
 ### Installation
 
-### Homebrew
-
 ```sh
+# Using Homebrew
 brew install lsof
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install lsof
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install lsof
 ```
 
 ### Environment
 
-#### Homebrew
+#### Using Homebrew
 
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
 

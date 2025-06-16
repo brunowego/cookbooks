@@ -9,17 +9,12 @@
 
 ## Installation
 
-### Homebrew
-
 ```sh
+# Homebrew
 brew install --cask docker
-```
 
-### APT
-
-#### Xenial Xerus 16.04 and newer
-
-```sh
+# Using APT
+# Xenial Xerus 16.04 and newer
 curl -fsSL 'https://download.docker.com/linux/ubuntu/gpg' | \
   sudo apt-key add - && sudo apt-key fingerprint 0EBFCD88
 
@@ -27,27 +22,21 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 sudo apt update
 sudo apt -y install docker-ce
-```
 
-### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum-config-manager --add-repo 'https://download.docker.com/linux/centos/docker-ce.repo'
 sudo yum -y install docker-ce
-```
 
-### Zypper
-
-```sh
+# Using Zypper
 sudo zypper refresh
 sudo zypper install -y docker-ce
-```
 
-### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y docker-for-windows
+
+# Using Winget
+winget install --id=Docker.DockerDesktop -e
 ```
 
 ## Service
@@ -98,6 +87,25 @@ sudo groupdel docker
 ```
 
 ## Issues
+
+### TBD
+
+```log
+Hyper-V feature not enabled
+```
+
+```powershell
+#
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+```
+
+### TBD
+
+```log
+running Hyper-V engine: starting Hyper-V VM: status code not OK but 500: Unhandled exception: job failed with message: 'DockerDesktopVM' failed to start. (Virtual machine ID
+```
+
+TODO
 
 ### TBD
 

@@ -251,6 +251,33 @@ echo '/out' >> ./.gitignore
 #### TBD
 
 ```log
+@acme/web:dev: Module parse failed: Unexpected token (1:10)
+@acme/web:dev: You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+@acme/web:dev: Attempted import error: '(.+?)' is not exported from '(.+?)'.
+```
+
+```ts
+import type { NextConfig } from 'next'
+
+const nextConfig: NextConfig = {
+  // ...
+
+  // Remove this section
+  webpack: (config) => {
+    config.externals = {
+      knex: 'commonjs knex',
+    }
+
+    return config
+  },
+}
+
+// ...
+```
+
+#### TBD
+
+```log
 No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
 ```
 
@@ -324,9 +351,12 @@ Module not found: Can't resolve 'critters'
 
 <!--
 https://github.com/vercel/next.js/issues/34763
+https://github.com/getsentry/profiling-node/issues/170
 -->
 
-TODO
+```sh
+pnpm add critters -D
+```
 
 #### TBD
 

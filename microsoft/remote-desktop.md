@@ -4,17 +4,20 @@
 https://support.microsoft.com/en-us/windows/how-to-use-remote-desktop-5fe128d5-8fb1-7a23-3b8a-41e636865e8c#ID0EDD=Windows_10
 -->
 
+## Glossary
+
+- Remote Desktop Protocol (RDP)
+
 ## Alternatives
 
-- [Remote Desktop](/remote-desktop.md)
+- [Apple Remote Desktop](/apple/remote-desktop.md)
 
 ## App
 
 ### Installation
 
-#### MAS
-
 ```sh
+# Using MAS
 mas install 1295203466
 ```
 

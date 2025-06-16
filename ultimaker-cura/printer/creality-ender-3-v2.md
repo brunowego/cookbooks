@@ -1,30 +1,10 @@
-# Ultimaker Cura
+# Creality Ender 3 v2
 
-## App
+## Configuration
 
-### Installation
-
-```sh
-# Using Homebrew
-brew install --cask ultimaker-cura
-
-# Using Chocolatey
-choco install cura-new
-```
-
-### Plugins
-
-- Arc Welder
-- Cylindric Custom Support
-- Mesh Tools
-
-### Configuration
-
-#### Creality Ender 3 v2
-
-1. Settings -> Printer -> Add Printer
-2. Add a non-networked printer
-3. Creality3D -> Choose "Creality Ender-3 v2"
+1. Preferences -> Configure Cura...
+2. Printers tab -> Add New -> Non Ultimaker printer -> Add a non-networked printer
+3. Creality3D -> Choose "Creality Ender-3 / Ender-3 v2"
    - Click Next
 4. Machine Settings
    - Printer Tab
@@ -32,7 +12,7 @@ choco install cura-new
      - Y (Depth): 220
      - Next
 
-#### Parameters
+## Parameters
 
 | Section              | Parameter                 | Value |
 | -------------------- | ------------------------- | ----- |
@@ -40,7 +20,7 @@ choco install cura-new
 | Special Modes        | Arc Welder                | Yes   |
 | Support              | Generate Support          | Yes   |
 
-##### Others
+### Others
 
 | Section              | Parameter                  | Value         |
 | -------------------- | -------------------------- | ------------- |
@@ -52,22 +32,22 @@ choco install cura-new
 | Speed                | Print Speed                | 35.0 mm/s     |
 | Top/Bottom           | Monotonic Top/Bottom Order | Yes           |
 
-### Tips
+## Tips
 
-#### Turn off model snapping to build platform
+### Turn off model snapping to build platform
 
 1. Preferences -> Configure Cura...
-2. General Tab
+2. General tab
 3. Viewport behavior
    - Uncheck: Automatically drop models to the build plate
    - Close
 
-#### Mesh Tools
+### Mesh Tools
 
 1. Right Click on Object
 2. Mesh Tools -> Split models into parts
 
-#### BLTouch
+### BLTouch
 
 1. Settings -> Printer -> Manage Printers...
 2. Printers -> Machine Settings
@@ -81,7 +61,7 @@ G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
 ...
 ```
 
-#### Keep Out Area
+### Keep Out Area
 
 **Refer:** `/Applications/Ultimaker-Cura.app/Contents/Resources/share/cura/resources/definitions/creality_ender3.def.json`
 

@@ -15,13 +15,8 @@
 ```sh
 # Using Homebrew
 brew install --cask dbeaver-enterprise
-```
 
-#### DMG
-
-##### 6.3.0
-
-```sh
+# Using DMG
 hdiutil attach https://dbeaver.com/files/6.3.0/dbeaver-ee-6.3.0-macos.dmg \
   -nobrowse \
   -mountpoint \
@@ -32,32 +27,24 @@ cp -R /Volumes/DBeaverEE/DBeaverEE.app /Applications
 
 #
 hdiutil detach /Volumes/DBeaverEE
-```
 
-<!--
-open /Applications/DBeaverEE.app
--->
+# open /Applications/DBeaverEE.app
 
-#### RPM
-
-```sh
+# Using RPM
 curl -LO https://dbeaver.com/files/dbeaver-ee-latest-stable.x86_64.rpm
 
 sudo rpm -vi dbeaver-ee-latest-stable.x86_64.rpm && rm -f dbeaver-ee-latest-stable.x86_64.rpm
-```
 
-#### DPKG
-
-```sh
+# Using DPKG
 curl -LO https://dbeaver.com/files/dbeaver-ee_latest_amd64.deb
 
 sudo dpkg -i dbeaver-ee_latest_amd64.deb && rm -f dbeaver-ee_latest_amd64.deb
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y dbeaver-ee
+
+# Using Winget
+winget install -e --id DBeaver.DBeaver
 ```
 
 ### Issues

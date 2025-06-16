@@ -37,7 +37,15 @@ RangeError: Can not convert <mention, " "> to a Fragment (looks like multiple ve
 https://github.com/ueberdosis/tiptap/issues/577
 -->
 
-TODO
+```json
+{
+  // ...
+  "resolutions": {
+    "prosemirror-model": "1.25.1"
+  }
+  // ...
+}
+```
 
 #### TBD
 

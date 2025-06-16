@@ -37,6 +37,14 @@ pnpm add @blocknote/core @blocknote/react
 #### TBD
 
 ```log
+Error: Can not convert <"This is a heading block1"> to a Fragment (looks like multiple versions of prosemirror-model were loaded)
+```
+
+TODO
+
+#### TBD
+
+```log
 ReferenceError: document is not defined
 ```
 

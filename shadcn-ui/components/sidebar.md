@@ -7,4 +7,6 @@
 
 <!--
 https://github.com/shadcn-ui/ui/tree/main/apps/www/registry/default/internal
+
+https://baseball-leaderboard.vercel.app | https://baseball-leaderboard.vercel.app
 -->

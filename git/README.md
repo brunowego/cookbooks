@@ -49,6 +49,9 @@ sudo zypper install -y git-core
 
 # Using Chocolatey
 choco install -y git
+
+# Using Winget
+winget install -e --id Git.Git
 ```
 
 ### Usage

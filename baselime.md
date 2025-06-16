@@ -15,6 +15,7 @@ https://vercel.com/templates/next.js/nextjs-baselime-opentelemetry | https://git
 ### Installation
 
 ```sh
+# Using Homebrew
 brew tap baselime/tap
 brew install baselime
 ```

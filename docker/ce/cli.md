@@ -8,52 +8,38 @@
 
 ## Installation
 
-### Homebrew
-
 ```sh
+# Using Homebrew
 brew install docker
-```
 
-### Linux
-
-```sh
+# Using Linux
 curl https://download.docker.com/linux/static/stable/x86_64/docker-19.03.1.tgz | \
   tar -xzC /usr/local/bin --strip-components 1 docker/docker
-```
 
-### APT
-
-```sh
+# Using APT
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
   sudo apt-key add - && sudo apt-key fingerprint 0EBFCD88
 
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-```
 
-```sh
 sudo apt update
 sudo apt -y install docker-ce-cli
-```
 
-### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum -y install docker-ce-cli
-```
 
-### Zypper
 
-```sh
+# Using Zypper
 sudo zypper refresh
 sudo zypper install -y docker-ce-cli
-```
 
-### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y docker-cli
+
+# Using Winget
+winget install -e --id Docker.DockerDesktop
 ```
 
 ## Commands

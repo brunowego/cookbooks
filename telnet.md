@@ -8,37 +8,27 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install telnet
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install telnet
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install telnet
-```
 
-#### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add busybox-extras
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y telnet
+
+# Using Windows
+Install-WindowsFeature -Name Telnet-Client
 ```
 
 ### Commands

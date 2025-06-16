@@ -23,10 +23,13 @@ ncu -h
 
 ```sh
 #
-ncu -u
+ncu -ui
 
 #
-ncu --deep -u
+ncu --deep -ui
+
+#
+npx npm-check-updates -ui --packageFile ./apps/web/package.json
 ```
 
 ## Library

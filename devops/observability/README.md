@@ -46,21 +46,25 @@
 - Security Monitoring
 -->
 
+## Specification / Protocol / Standard
+
+- [OpenTelemetry Protocol (OTLP)](/opentelemetry/README.md)
+
 ## Tools
 
 ### Managed
 
 - [AppDynamics](https://appdynamics.com)
 - [Axiom](https://axiom.co)
-- [Datadog](/datadog.md)
+- [Baselime](/baselime.md) 🌟
+- [Datadog](/datadog/README.md) 🌟
 - [Dynatrace](/dynatrace.md)
 - [Highlight](https://highlight.io)
-- [HyperDX](https://hyperdx.io)
 - [Middleware](https://middleware.io)
-- [New Relic](/newrelic/README.md)
+- [New Relic](/newrelic/README.md) 🌟
 - [Splunk](/splunk.md)
 
 ### Open Source
 
-- [Baselime](/baselime.md)
+- [HyperDX](https://hyperdx.io)
 - [SigNoz](/signoz/README.md) 🌟

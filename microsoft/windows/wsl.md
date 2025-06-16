@@ -16,6 +16,12 @@
 choco install -y wsl2
 ``` -->
 
+### Configuration
+
+```sh
+wsl --set-default-version 2
+```
+
 ### Usage
 
 ```sh
@@ -24,7 +30,12 @@ wsl --list --online
 
 #
 wsl --install
-wsl --install <name>
+wsl --install -d <name>
+wsl --install -d Ubuntu
+
+#
+wsl --set-default <name>
+wsl --set-default Ubuntu
 
 #
 wsl --status

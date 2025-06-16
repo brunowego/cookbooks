@@ -20,6 +20,14 @@ updateUserSchema | patchUserSchema
 deleteUserSchema
 -->
 
+## Links
+
+- [Code Repository](https://github.com/colinhacks/zod)
+
+## Tools
+
+- [transform / JSON to Zod Schema](https://transform.tools/json-to-zod)
+
 ## Library
 
 ### Installation
@@ -40,14 +48,6 @@ export const ZUser = z.object({
 
 export type TUser = z.infer<typeof ZUser>
 ```
-
-## Links
-
-- [Code Repository](https://github.com/colinhacks/zod)
-
-## Tools
-
-- [transform / JSON to Zod Schema](https://transform.tools/json-to-zod)
 
 <!-- **Refer:** `./src/schemas/post.ts`
 
@@ -89,3 +89,27 @@ password: z.string().superRefine((data, ctx) => {
   });
 }),
 -->
+
+### Issues
+
+#### TBD
+
+```log
+Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+```
+
+<!-- Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.ts(2322) -->
+
+TODO
+
+#### TBD
+
+```log
+Error: src/path/to/filename.tsx(57,17): error TS2589: Type instantiation is excessively deep and possibly infinite.
+```
+
+<!--
+Try upgrade TypeScript, Zod, and @types/node version.
+-->
+
+TODO
