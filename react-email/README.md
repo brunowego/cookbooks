@@ -21,6 +21,37 @@ bun add @react-email/components react-email
 #### TBD
 
 ```log
+@acme/web:dev: Package prettier can't be external
+@acme/web:dev: The request prettier/plugins/html matches serverExternalPackages (or the default list).
+@acme/web:dev: The request could not be resolved by Node.js from the project directory.
+@acme/web:dev: Packages that should be external need to be installed in the project directory, so they can be resolved from the output files.
+@acme/web:dev: Try to install it into the project directory by running npm install prettier from the project directory.
+```
+
+<!--
+https://github.com/vercel/next.js/issues/68805
+-->
+
+<!-- **Refer:** `./next.config.ts` -->
+
+<!-- ```ts
+// ...
+const nextConfig: NextConfig = {
+  // ...
+  serverExternalPackages: ['prettier'],
+}
+// ...
+``` -->
+
+**Refer:** `./.npmrc`
+
+```npmrc
+public-hoist-pattern[]=*prettier*
+```
+
+#### TBD
+
+```log
 Error: Cannot find module 'next/dist/server/app-render/after-task-async-storage.external.js'
 ```
 

@@ -1,5 +1,7 @@
 # GitHub Copilot
 
+**Keywords:** AI Code Review
+
 <!--
 https://githubnext.com/projects/copilot-cli/
 

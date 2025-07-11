@@ -47,6 +47,7 @@ https://github.com/samirdjelal/mail-dev
 ### Testing
 
 - [Ethereal Email](/ethereal.md)
+- [SMTP Tester](/smtptester.md)
 
 ## Connections
 

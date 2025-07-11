@@ -108,6 +108,12 @@ npx turbo build --filter <pkg-name>
 
 ### Tips
 
+#### Test With Limited Memory
+
+```sh
+NODE_OPTIONS="--max-old-space-size=2048" pnpm dev --filter @acme/web
+```
+
 #### VS Code Files Exclude
 
 ```sh

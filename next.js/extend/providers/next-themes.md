@@ -18,8 +18,6 @@ export { ThemeProvider } from 'next-themes'
 ```tsx
 'use client'
 
-import type { JSX } from 'react'
-
 import {
   type ThemeProviderProps,
   ThemeProvider,
@@ -28,7 +26,7 @@ import {
 export default function NextThemesProvider({
   children,
   ...props
-}: ThemeProviderProps): JSX.Element {
+}: ThemeProviderProps) {
   return <ThemeProvider {...props}>{children}</ThemeProvider>
 }
 ```
@@ -36,11 +34,11 @@ export default function NextThemesProvider({
 **Refer:** `./src/app/providers/index.tsx`
 
 ```tsx
-import type { ReactNode, JSX } from 'react'
+import type { ReactNode } from 'react'
 
 import NextThemesProvider from './next-themes'
 
-interface ProvidersProps {
+type ProvidersProps = {
   defaultTheme?: 'system' | 'light' | 'dark'
   children: ReactNode
 }
@@ -48,7 +46,7 @@ interface ProvidersProps {
 export default function Providers({
   defaultTheme = 'system',
   children,
-}: ProvidersProps): JSX.Element {
+}: ProvidersProps) {
   return (
     <NextThemesProvider
       attribute="class"

@@ -44,6 +44,7 @@ https://app.formcarry.com
 https://dashboard.lusha.com/enrich/workflows/onboarding
 https://dashboard.lusha.com/enrich/csv
 
+https://app.dub.co/henkiz/settings/domains
 https://app.hypertune.com/projects/3566/main/draft/logic?setup=0
 https://app.dub.co/henkiz/events
 https://app.dataland.io/workspace/henkiz/actions
@@ -172,6 +173,7 @@ https://gleap.io
 https://amplemarket.com
 https://tofu.com
 
+https://www.delphi.ai
 https://c15t.com | https://github.com/c15t/c15t
 https://savvycal.com/reserve
 https://github.com/papra-hq/owlrelay | https://owlrelay.email
@@ -352,7 +354,6 @@ https://pagedone.io/blocks/e-commerce/product-review
 Chat
 
 https://you.com
-https://chat-preview.lobehub.com/chat?agent=
 https://shadcn-chat.vercel.app
 https://demo.foxthemes.net/socialite-v3.0/messages.html
 https://angular-material.fusetheme.com/apps/chat/ff6bc7f1-449a-4419-af62-b89ce6cae0aa
@@ -555,10 +556,10 @@ https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
 Login / Sign In / Sign up
 
-https://betterstack.com/users/link
+https://betterstack.com/users/sign-in#magic
 https://login.listkit.io/login
 https://app.didweever.com/auth/sign-in
-https://codecademy.com
+https://www.codecademy.com/login
 https://hevy.com/login?postLoginPath=%2F
 https://login.retool.com/auth/login
 https://try-stand.com/user/login
@@ -576,7 +577,7 @@ https://archie-app.8base.com/auth/sign-up?tab=individual
 https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=Iu5prOXXJ0hgZbHMA8T8&redirect_uri=http://conceptbe.kr/oauth/redirected/naver&scope=nickname,email,profile_image&state=RANDOM_STATE
 https://claude.ai/login?returnTo=%2F%3F
 https://app.deel.com/login
-https://app.usehall.com/signup
+https://auth.usehall.com/sign-up
 https://appshots.design
 https://app.formcarry.com/register
 https://web.novu.co/auth/login
@@ -584,6 +585,7 @@ https://app.middleware.io/auth/login
 https://dash.reviews.io/login
 https://app.onmarathon.com/register
 
+https://screenshothis.com/register
 https://app.ramp.com/sign-in
 https://ramp.com/get-ramp?ref=sign-in-page
 https://helloskip.com/dashboard/verify-email?redirect=/dashboard
@@ -605,7 +607,6 @@ https://animations.dev/login
 https://app.wordtune.com/auth/signup
 https://app.usehall.com/login
 https://app.sigle.io/login
-https://falsenotes.dev/signin
 https://analytics.june.so/start?use_work_email_alert=true
 https://wearebren.com/signup
 https://headshotpro.com/auth/login
@@ -626,8 +627,6 @@ https://pagedone.io/user-signup
 https://buymeacoffee.com/signup
 https://buymeacoffee.com/login
 https://app.allo.restaurant/login
-https://console.datum.net/login
-https://tape.xyz/login?signup=true
 https://onboarding.speechify.com
 https://network-ui.vercel.app/login
 https://cosmo.wundergraph.com/login
@@ -650,7 +649,6 @@ https://auth.liveblocks.io/login
 https://app.sprig.com/login
 https://metafy.gg/auth/account/create
 https://app.logsnag.com/auth/sign-in
-https://cloud.tailwarden.com/sign-in
 https://auth.planetscale.com/sign-in
 
 Sign In OTP
@@ -703,6 +701,11 @@ https://conductorquantum.com
 https://zeropath.com
 https://grida.co/assistant
 
+Assistant / GPT
+
+https://chat-preview.lobehub.com/chat?agent=
+https://calendar.amie.so
+
 Social
 
 https://posts.cv
@@ -742,6 +745,8 @@ https://omens.com.br
 https://send.it
 https://li.fi
 
+https://kan.bn/#features
+https://trycomp.ai
 https://reweb.so/preview/GNeDWo6HM8W
 https://reweb.so/preview/X4Q67jszzez
 https://snov.io
@@ -785,6 +790,10 @@ https://paraform.com
 https://pagedone.io
 https://coderthemes.com/opixo/home-saas.html
 https://fridafurniture.com (Shop by category)
+
+Blocks
+
+https://tailark.com/mist
 
 Multi Account
 
@@ -830,6 +839,7 @@ https://ui.modernbanc.com/user/workspaces
 https://app.plain.com/workspaces
 https://app.midday.ai
 https://admin.shopify.com/?no_redirect=true
+https://kanbased.com/workspace-settings
 
 Crypto
 
@@ -868,6 +878,7 @@ https://omise.co
 https://localcan.com
 https://jobbliss.com
 
+https://ctrlplane.dev
 https://userjot.com
 https://morvalabs.com
 https://finta.com
@@ -992,6 +1003,7 @@ https://reviews.io/front/pricingplans
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://kan.bn/#pricing
 https://gist.github.com/brunowego/7317e17b96a352b279ad06090ab89ff6
 https://volta.net/pricing
 https://postiz.com/pricing
@@ -1119,6 +1131,8 @@ https://appstudio.design
 
 Dashboard
 
+https://cloud.tiptap.dev/v2
+https://www.startt.co/dashboard
 https://sitespeak.ai/user/profile
 https://mainstreetdata.com/charting?metrics=revenue%2CgrossIncome
 https://wiza.co/app/dashboard
@@ -1151,7 +1165,6 @@ https://polar.sh/dashboard/brunowego
 https://volta.net/inbox
 https://platform.keywordsai.co/platform/dashboard
 https://huly.app
-https://app.outerbase.com/dawn9340
 https://app.outerbase.com
 https://mainstreetdata.com
 https://app.dub.co/henkiz
@@ -1283,6 +1296,14 @@ Page Builder
 
 https://shots.so
 
+Settings Modal
+
+https://freenote.app/settings | https://github.com/celerforge-dev/freenote
+https://lesearch-app-two.vercel.app/graphview | https://github.com/TechForAqua/lesearch-app
+https://app.basemulti.com/workspaces/wspgJAk3YvJvSyknZbP | https://github.com/basemulti/basemulti
+https://dashboard.formizee.com/defeated-queen/welcome | https://github.com/formizee/formizee
+https://screenshothis.com/dashboard?range=30d | https://github.com/screenshothis/screenshothis
+
 Settings
 
 https://liveyonder.co/account/?tab=Profile
@@ -1301,9 +1322,8 @@ https://linear.app/henkiz/settings/account/preferences
 https://accounts.shopify.com/accounts/238884001/personal
 
 https://app.clay.com/workspaces/524509/settings
-https://admin.mistral.ai/account/security
+https://admin.mistral.ai/organization
 https://app.cal.com/settings/billing
-https://linear.app/henkiz/team/HEN/active
 https://app.bucket.co/envs/production-enqqWasiw4Kba4/debugger/recent
 https://app.campsite.com/henkiz/people
 https://linear.app/henkiz/settings/workspace
@@ -1312,17 +1332,14 @@ https://app.popsql.com/preferences/general
 https://dashboard.tremor.so/settings/general
 https://catalyst-demo.tailwindui.com/settings
 https://app.popsql.com/preferences/general
-https://app.cal.com/settings/my-account/profile
 https://app.changelogfy.com/settings/general
 https://app.stack-auth.com/handler/account-settings
 https://refeedreader.com/discover?settings=general
 https://chat-preview.lobehub.com/settings/agent?agent=&session=inbox&tab=
 https://account.hotmart.com/personal-information
 https://railway.app/account
-https://app.cal.com/settings/my-account/profile
 https://hoppscotch.io/settings
 https://app.plane.so/profile
-https://resend.com/profile
 https://himalayas.app/settings
 https://resend.com/settings
 https://cloud.tailwarden.com/workspace/settings
@@ -1433,6 +1450,10 @@ Brand
 
 https://clickup.com/brand
 
+Usage
+
+https://www.lumeai.xyz/usage
+
 Onboarding
 
 https://app.listkit.io/contact-information?plan=professionalV2&screen=signup
@@ -1449,6 +1470,8 @@ https://my.ka.app/signup/info
 https://flowbite.com/blocks/marketing/user-onboarding
 https://componentland.com/component/onboarding-page-2
 
+https://platform.tryprofound.com/welcome
+https://app.formflowai.me/welcome
 https://app.instaheadshots.com/create
 https://dashboard.hookdeck.com/onboarding
 https://app.krisp.ai/setup
@@ -1660,6 +1683,7 @@ https://zapal.tech
 https://conceptzilla.com
 https://verdely.framer.ai
 
+https://www.azion.com/pt-br
 https://proofs.io
 https://zellify.app
 https://volta.net

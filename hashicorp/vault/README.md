@@ -18,15 +18,14 @@ vault secrets enable aws
 ## Links
 
 - [Code Repository](https://github.com/hashicorp/vault)
-- [Main Website](https://vaultproject.io/)
+- [Main Website](https://vaultproject.io)
 
 ## CLI
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install vault
 ```
 

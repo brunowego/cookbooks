@@ -8,5 +8,10 @@
 <!--
 https://github.com/shadcn-ui/ui/tree/main/apps/www/registry/default/internal
 
-https://baseball-leaderboard.vercel.app | https://baseball-leaderboard.vercel.app
+https://ui.shadcn.com/view/sidebar-07
+https://ui.shadcn.com/view/sidebar-08
+https://ui.shadcn.com/view/sidebar-13
+https://ui.shadcn.com/view/sidebar-15
+
+https://baseball-leaderboard.vercel.app
 -->

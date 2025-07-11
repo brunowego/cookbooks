@@ -44,3 +44,36 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 
 await sleep(2000)
 ``` -->
+
+### Issues
+
+#### TBD
+
+```log
+Type '{ onChange: (...event: any[]) => void; onBlur: Noop; value: string | null | undefined; disabled?: boolean | undefined; name: "lastName"; ref: RefCallBack; type: "text"; }' is not assignable to type 'InputHTMLAttributes<HTMLInputElement>'.
+  Types of property 'value' are incompatible.
+    Type 'string | null | undefined' is not assignable to type 'string | number | readonly string[] | undefined'.
+      Type 'null' is not assignable to type 'string | number | readonly string[] | undefined'.ts(2322)
+```
+
+```tsx
+<Form.Field
+  control={control}
+  name="lastName"
+  render={({ field: { value, ...field } }) => (
+    <Form.Item>
+      <Form.Label>Last name</Form.Label>
+
+      <Form.Control>
+        <Input type="text" value={value ?? ''} {...field} />
+      </Form.Control>
+
+      <Form.Message />
+    </Form.Item>
+  )}
+/>
+```
+
+<!--
+or change from selectUserSchema to insertUserSchema
+-->

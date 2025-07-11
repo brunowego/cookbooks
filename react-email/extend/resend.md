@@ -1,5 +1,11 @@
 # Extend with Resend
 
+<!--
+https://github.com/284247028/supastarter-nextjs/tree/main/packages/mail/provider
+https://github.com/Daniyal-farooq123/perplexica/tree/master/packages/email/src/provider
+https://github.com/999pretty/projectthree/tree/main/packages/mail/src/provider
+-->
+
 ## Installation
 
 ```sh

@@ -46,6 +46,14 @@
 - Security Monitoring
 -->
 
+## SOC 2
+
+- Alerting & Incident Response
+- Availability Monitoring
+- Log Retention / Audit Trail
+- Log Search & Investigation
+- Real-time Monitoring
+
 ## Specification / Protocol / Standard
 
 - [OpenTelemetry Protocol (OTLP)](/opentelemetry/README.md)
@@ -57,11 +65,18 @@
 - [AppDynamics](https://appdynamics.com)
 - [Axiom](https://axiom.co)
 - [Baselime](/baselime.md) 🌟
+- [Checkly](https://checklyhq.com)
+- [Dash0](https://dash0.com)
 - [Datadog](/datadog/README.md) 🌟
 - [Dynatrace](/dynatrace.md)
+- [GraphJSON](https://graphjson.com)
 - [Highlight](https://highlight.io)
+- [Logalert](https://logalert.app)
+- [Logflare](https://logflare.app)
 - [Middleware](https://middleware.io)
 - [New Relic](/newrelic/README.md) 🌟
+- [Sematext Logs](https://sematext.com)
+- [Sentry](/sentry/README.md) 🌟
 - [Splunk](/splunk.md)
 
 ### Open Source

@@ -10,6 +10,7 @@
 ### Managed
 
 - [CodeRabbit](https://coderabbit.ai)
+- [GitHub Copilot](/github/copilot/README.md)
 
 <!--
 https://codara.io
@@ -28,7 +29,7 @@ https://pullrequest.com
 TODO
 
 <!--
-https://githubnext.com/projects/copilot-for-pull-requests/
+https://githubnext.com/projects/copilot-for-pull-requests
 
 https://github.com/freeedcom/ai-codereviewer
 https://github.com/sturdy-dev/codeball-action

@@ -17,9 +17,8 @@ works with rbenv
 
 ### Installation
 
-#### RubyGems
-
 ```sh
+# Using RubyGems
 gem install aws_security_viz
 ```
 

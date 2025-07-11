@@ -12,9 +12,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Homebrew
 brew install rename
 ```
 

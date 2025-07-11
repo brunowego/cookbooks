@@ -1,5 +1,7 @@
 # DeepSource
 
+**Keywords:** SBOM
+
 ## Links
 
 - [Main Website](https://deepsource.io)

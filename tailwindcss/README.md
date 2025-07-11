@@ -58,7 +58,7 @@ https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atai
 - [Headless UI](/headlessui.md) 🌟
 - [HyperUI](https://hyperui.dev)
 - [Myna UI](https://mynaui.com)
-- [Preline](https://preline.co)
+- [Preline](https://preline.co) 🌟
 - [Sail UI](https://sailui.github.io/ui)
 - [Tailwind UI](https://tailwindui.com)
 

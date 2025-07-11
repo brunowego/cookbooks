@@ -13,6 +13,13 @@ mas install 1633950905
 
 ### Tips
 
+#### AWS Testing
+
+- SMTP Server: `email-smtp.us-east-1.amazonaws.com`
+- Port: `587` or `465`
+- Username:
+- Password:
+
 #### Sender Identity
 
 ```log

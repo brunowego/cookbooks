@@ -16,7 +16,7 @@
 
 - [How Large Language Models Work](https://youtube.com/watch?v=5sLYAQS9sWQ)
 
-## Implementations
+## Providers
 
 - [Anthropic Claude](/anthropic/claude/README.md)
 - [Cohere Command R+](/cohere/command-r+/README.md)
@@ -24,6 +24,12 @@
 - [Meta LLaMA](/meta/llama/README.md)
 - [Mistral Mistral Large](https://mistral.ai)
 - [OpenAI GPT-4](/openai/chatgpt/README.md)
+
+<!--
+Fireworks
+xAI
+Together AI
+-->
 
 ## Tools
 

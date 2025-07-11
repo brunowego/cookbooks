@@ -7,6 +7,11 @@
 - Service-Level Indicator (SLI)
 - Service-Level Objective (SLO)
 
+## Monitoring Types
+
+- CRON Jobs
+- Serverless Workers
+
 ## Tools
 
 ### Managed
@@ -18,6 +23,7 @@
 
 <!--
 https://statuspal.io
+https://healthchecks.io
 -->
 
 ### Open Source

@@ -10,7 +10,7 @@ https://github.com/marketplace/actions/infracost
 ## Links
 
 - [Code Repository](https://github.com/infracost/infracost)
-- [Main Website](https://infracost.io/)
+- [Main Website](https://infracost.io)
 
 ## Docs
 
@@ -21,22 +21,15 @@ https://github.com/marketplace/actions/infracost
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install infracost
-```
 
-#### Linux Binary
-
-```sh
+# Using Linux Binary
 curl -L 'https://github.com/infracost/infracost/releases/download/v0.9.3/infracost-linux-amd64.tar.gz' | \
   tar -xzC /usr/local/bin --transform s/-linux-amd64//
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y infracost
 ```
 

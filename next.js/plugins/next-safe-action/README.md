@@ -39,6 +39,19 @@ pnpm add next-safe-action zod
 #### TBD
 
 ```log
+0:{"a":"$@1","f":"","b":"development"}
+1:{"serverError":"Something went wrong while executing the operation."}
+```
+
+```log
+@acme/app:dev: Action error: Server Action bind args validation error(s) occurred
+```
+
+TODO
+
+#### TBD
+
+```log
 Action error: Cannot await or return from a thenable. You cannot await a client module from a server component.
 ```
 
