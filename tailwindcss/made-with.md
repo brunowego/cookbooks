@@ -302,6 +302,7 @@ https://keywordsai.co/changelog
 https://codeium.com/changelog
 https://artillery.io/changelog
 https://feyapp.com/updates
+https://saveit-now-web.vercel.app/changelog
 
 404 (Not Found)
 
@@ -554,6 +555,10 @@ Users
 https://dribbble.com/shots/23579404-Teams-Employees-Engagement-App
 https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
+Explore Platform
+
+https://algora.io/platform
+
 Login / Sign In / Sign up
 
 https://betterstack.com/users/sign-in#magic
@@ -585,6 +590,8 @@ https://app.middleware.io/auth/login
 https://dash.reviews.io/login
 https://app.onmarathon.com/register
 
+https://algora.io/auth/login
+https://algora.io/auth/login
 https://screenshothis.com/register
 https://app.ramp.com/sign-in
 https://ramp.com/get-ramp?ref=sign-in-page
@@ -651,6 +658,11 @@ https://metafy.gg/auth/account/create
 https://app.logsnag.com/auth/sign-in
 https://auth.planetscale.com/sign-in
 
+Unsubscribe
+
+https://app.loops.so/unsubscribe/cmd7yhrfu003101m46qxv35iu/5d36214e644ed58a04062681ac238141138f6b65bc9d01a81b920530cadcd264
+https://unsubscribe.resend.com/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb250YWN0SWQiOiI0ZDc0Y2Y0Yi1kYjg1LTQ1MWMtYTg4YS1kM2YyZmY4NDcxYmMiLCJhdWRpZW5jZUlkIjoiZTJmNjk0YjktM2UwNi00ZWUwLWE2NDUtNjdlMDI5ZWRlYWRkIiwiYnJvYWRjYXN0SWQiOiIyNzdmODk0NS1iYWNhLTQ5YzMtOTU2OC02NTc5MDFkYTkxMTciLCJ0ZWFtSWQiOiI1NTYyMDkxNC0zYzg2LTRhNmUtODI1ZS0wYjRkYWE2NmI1NmEiLCJpYXQiOjE3NTE5MjA0NzgsImV4cCI6MTc4MzQ1NjQ3OH0.PyhkM-KBMUT1DmEWwuHSizq4rL5tGoFKspBqp6QFBOk
+
 Sign In OTP
 
 https://bahar.dev/login | https://github.com/Shunseii/bahar
@@ -705,6 +717,10 @@ Assistant / GPT
 
 https://chat-preview.lobehub.com/chat?agent=
 https://calendar.amie.so
+
+Calendar View
+
+https://tasklytic.fesyse.site/dashboard/calendar/month-view
 
 Social
 
@@ -801,6 +817,8 @@ https://startt.co/stats
 
 Sales Talk / Book a demo /  Request a demo / Schedule a demo | Get in touch | Get early access
 
+https://trycomp.ai/demo?email=me%40brunowego.com
+https://algora.io/auth/signup
 https://ramp.com/see-a-demo
 https://usehall.com/demo
 https://cq2.co
@@ -1070,6 +1088,7 @@ https://heyo.is/contact
 https://fidforward.com/contact
 https://honeyquote.com/company/contact
 
+https://saveit-now-web.vercel.app/contact
 https://formance.com/contact
 https://gotofu.com/contact
 https://my-site-2-0-brown.vercel.app/contact
@@ -1079,6 +1098,10 @@ https://datocms-minimalistic-photography-website.vercel.app/contact
 https://alexjpate.com/contact
 https://significa.co/contact
 https://vercel.com/contact/sales
+
+Contacts
+
+
 
 Self hosted
 
@@ -1101,6 +1124,10 @@ Error Page / 500
 
 https://play.tailwindcss.com/K0dCTRDRBx
 https://app.honeyquote.com/error?msg=INVALID_ADDRESS
+
+Invalid Code
+
+https://app.plain.com/callback/?code=LhnILe-pWvhBkqX0QLMSRxNEQv6st7OqkJSI52RI-UGLH&state=d05obFouZWhISXAycVg0Y2hoZHFZTUtWN0ZzSGVTZ2pVODIwck9UX1JJaA%3D%3D
 
 Simulation
 
@@ -1156,6 +1183,7 @@ https://strut.so/c/021b95e6-0c3a-4b5a-8190-d35116b892c0
 https://app.premai.io/projects
 https://app.netbird.io/peers | https://github.com/netbirdio/netbird
 
+https://app.useautumn.com/customers
 https://app.mem0.ai/dashboard/get-started
 https://app.logaflow.com/feedbacks?board=&page=1&limit=200
 https://3daistudio.com/Dashboard
@@ -1470,6 +1498,7 @@ https://my.ka.app/signup/info
 https://flowbite.com/blocks/marketing/user-onboarding
 https://componentland.com/component/onboarding-page-2
 
+https://app.getpalm.com/signup/profile/business | https://app.getpalm.com/signup/profile/phone/confirm
 https://platform.tryprofound.com/welcome
 https://app.formflowai.me/welcome
 https://app.instaheadshots.com/create
@@ -1522,7 +1551,6 @@ https://circle.lndev.me/lndev-ui/team/CORE/all
 Invite / Seat
 
 https://roadmap.sh/account/friends
-https://lmnr.ai/workspace/4f041ad6-d825-4307-b7ca-c69f2e35d821
 
 Beta Features
 

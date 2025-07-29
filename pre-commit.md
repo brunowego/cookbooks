@@ -13,15 +13,11 @@ https://github.com/antonbabenko/pre-commit-terraform
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install pre-commit
-```
 
-#### pip
-
-```sh
+# Using pip
 pip3 install -U pre-commit
 ```
 

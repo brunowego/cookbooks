@@ -251,8 +251,10 @@ TODO
 ### TBD
 
 ```log
-Error: You tried to use `Trans` in Server Component, but i18n instance for RSC hasn't been setup.
-Make sure to call `setI18n` in the root of your page.
+@acme/app:dev:  ⨯ [Error: You tried to use `Trans` in Server Component, but i18n instance for RSC hasn't been setup.
+@acme/app:dev: Make sure to call `setI18n` in the root of your page.] {
+@acme/app:dev:   digest: '3385606849'
+@acme/app:dev: }
 ```
 
 <!--

@@ -19,3 +19,13 @@ https://github.com/unsend-dev/unsend
 
 SMTP Tester
 -->
+
+## Issues
+
+### TBD
+
+```log
+Resend error: Missing API key. Pass it to the constructor `new Resend("re_123")`
+```
+
+TODO

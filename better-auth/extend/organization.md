@@ -1,7 +1,5 @@
 # Extend with Organization
 
-TODO
-
 <!--
 Prisma
 
@@ -38,3 +36,18 @@ TanStack Start
 
 https://github.com/screenshothis/screenshothis
 -->
+
+## Issues
+
+### TBD
+
+```log
+[cause]: [Error [PostgresError]: syntax error at or near "where"] {
+```
+
+<!--
+https://github.com/better-auth/better-auth/issues/667
+https://github.com/better-auth/better-auth/issues/2405
+-->
+
+TODO

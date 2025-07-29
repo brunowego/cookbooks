@@ -2,8 +2,6 @@
 
 ## CLI
 
-### Usage
-
 ### Darwin/Ubuntu
 
 Native.

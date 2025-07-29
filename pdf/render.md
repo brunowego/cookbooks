@@ -9,4 +9,5 @@
 
 <!--
 https://github.com/parallax/jsPDF
+https://github.com/anaralabs/lector
 -->

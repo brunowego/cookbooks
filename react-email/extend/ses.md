@@ -1,5 +1,11 @@
 # Extend with AWS SES
 
+<!--
+https://github.com/christran/create-2block-app/tree/main/packages/email/src
+https://github.com/a-type/auth/blob/main/packages/email-nodemailer/src/index.ts
+https://github.com/a-type/auth/blob/main/packages/email-ses/src/index.ts
+-->
+
 ## Issues
 
 ### TBD

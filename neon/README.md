@@ -14,6 +14,11 @@ https://github.com/neondatabase/preview-branches-with-vercel
 - [Status Page](https://neonstatus.com)
 - [Examples](https://github.com/neondatabase/examples)
 
+## Modes
+
+- Serverless Driver (HTTP-based, using WebSockets internally) (show as http pooler)
+- Traditional TCP Driver (libpq-compatible, ex: pg or postgres TCP) (show as pgbouncer)
+
 ## CLI
 
 ### Links

@@ -77,6 +77,9 @@ supabase login
 supabase projects list
 
 #
+supabase link --project-ref <reference-id>
+
+#
 supabase init
 
 #

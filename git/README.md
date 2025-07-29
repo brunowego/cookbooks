@@ -361,7 +361,10 @@ git config --global user.useconfigonly true
 #### Taking Long Time
 
 ```sh
-# Try disable Hooks
+# Check Hooks Path
+git config --get core.hookspath
+
+# Try disable Hooks Path
 git config --unset core.hooksPath
 ```
 

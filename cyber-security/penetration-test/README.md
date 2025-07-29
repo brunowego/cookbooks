@@ -51,6 +51,16 @@ https://github.com/swisskyrepo/PayloadsAllTheThings
 - [sqlmap](/cyber-security/tools/sqlmap.md)
 - [Wireshark](/wireshark.md)
 
+<!--
+https://aikido.dev
+https://bishopfox.com
+https://firecompass.com
+
+AppSecure
+HackerOne
+Red Sentry
+-->
+
 ## Linux Distribution
 
 - [Kali Linux](/kali.md)

@@ -24,3 +24,32 @@ serde
 <!--
 00000000-0000-0000-0000-000000000000
 -->
+
+### Usage
+
+```sql
+--
+SELECT version();
+
+-- Version 4
+SELECT gen_random_uuid();
+
+-- Version 7
+SELECT uuid_generate_v7();
+```
+
+### Issues
+
+#### TBD
+
+```log
+function uuid_generate_v7() does not exist
+```
+
+```sql
+--
+SELECT * FROM pg_available_extensions WHERE name = 'uuid-ossp';
+
+--
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+```

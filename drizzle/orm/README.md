@@ -131,6 +131,26 @@ export default {
 #### TBD
 
 ```log
+@acme/app:dev:  ⨯ ../../node_modules/.pnpm/pg-connection-string@2.9.1/node_modules/pg-connection-string/index.js:81:1
+@acme/app:dev: Module not found: Can't resolve 'fs'
+@acme/app:dev:   79 |
+@acme/app:dev:   80 |   // Only try to load fs if we expect to read from the disk
+@acme/app:dev: > 81 |   const fs = config.sslcert || config.sslkey || config.sslrootcert ? require('fs') : null
+@acme/app:dev:      | ^
+@acme/app:dev:   82 |
+@acme/app:dev:   83 |   if (config.sslcert) {
+@acme/app:dev:   84 |     config.ssl.cert = fs.readFileSync(config.sslcert).toString()
+```
+
+<!--
+https://stackoverflow.com/questions/79260989/pg-next-js-15-module-not-found-cant-resolve-fs
+-->
+
+Check if you are not accessing client-side code in the server-side code or vice versa.
+
+#### TBD
+
+```log
 ../../node_modules/.pnpm/postgres@3.4.5/node_modules/postgres/src/connection.js:1:1
 
 Module not found: Can't resolve 'net'

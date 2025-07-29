@@ -33,6 +33,10 @@ ssh \
 
 ```sh
 ls ~/.ssh
+
+cat "$HOME"/.ssh/config | gh gist create - -f ssh-config
+cat "$HOME"/.ssh/id_rsa.hetzner | gh gist create - -f ssh-id_rsa.hetzner
+cat "$HOME"/.ssh/id_rsa.hetzner.pub | gh gist create - -f ssh-id_rsa.hetzner.pub
 ```
 
 #### Visual Studio Code

@@ -36,7 +36,7 @@ Nuls
 - [Ultimaker Cura](/ultimaker-cura.md)
 - [AWS](/aws/README.md#backup-credentials)
 - VSCode
-  - [Project Manager](/vscode/extensions/project-manager.md)
+  - [Project Manager](/vscode/extensions/project-manager.md#backup)
 
 ## License Deactivate
 

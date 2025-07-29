@@ -32,6 +32,22 @@ pnpm add nuqs
 #### TBD
 
 ```log
+Error: [nuqs] nuqs requires an adapter to work with your framework.
+```
+
+<!--
+https://github.com/47ng/nuqs/issues/798
+-->
+
+<!--
+Try redeploying the app.
+-->
+
+TODO
+
+#### TBD
+
+```log
 TypeError: Cannot read properties of null (reading 'toString')
 ```
 

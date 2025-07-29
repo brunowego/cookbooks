@@ -1,6 +1,9 @@
 # Extend with Neon
 
 <!--
+https://github.com/remvze/katana/blob/main/src/database/drizzle.ts
+https://github.com/rsastri21/crew-match-2/blob/main/src/db/index.ts
+
 https://github.com/Nathan-Somto/designr/blob/main/packages/db/src/client.ts
 -->
 

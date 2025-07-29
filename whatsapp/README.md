@@ -23,15 +23,11 @@ https://clint.digital/crm-whatsapp-instagram
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Homebrew
 brew install --cask whatsapp
-```
 
-#### Chocolatey
-
-```sh
+# Chocolatey
 choco install -y whatsapp
 ```
 

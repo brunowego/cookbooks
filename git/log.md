@@ -13,6 +13,23 @@ git -P shortlog -sn
 
 ## Tips
 
+### Total Commits by Hour
+
+```log
+#
+git log --since="30 days ago" --pretty=format:"%ad" --date=format:"%Y-%m-%d %H" | \
+  while read line; do \
+    date_part=$(echo $line | cut -d' ' -f1); \
+    hour_part=$(echo $line | cut -d' ' -f2); \
+    weekday=$(date -jf "%Y-%m-%d" "$date_part" "+%u"); \
+    if [ "$weekday" -lt 6 ]; then echo "$hour_part"; fi; \
+  done | sort | uniq -c
+```
+
+<!--
+git log --since="30 days ago" --pretty=format:"%ad" --date=format:"%H" | sort | uniq -c
+-->
+
 ### Get First Commit
 
 ```sh

@@ -24,6 +24,28 @@ BETTER_AUTH_SECRET=
 #### TBD
 
 ```log
+The inferred type of this node exceeds the maximum length the compiler will serialize. An explicit type annotation is needed.
+```
+
+<!-- https://github.com/better-auth/better-auth/issues/3408 -->
+
+**Refer:** `./tsconfig.json`
+
+```json
+{
+  // ...
+  "compilerOptions": {
+    // ...
+    "declaration": false,
+    "declarationMap": false
+  }
+  // ...
+}
+```
+
+#### TBD
+
+```log
 Attempted import error: 'useRef' is not exported from 'react' (imported as 'useRef').
 ```
 

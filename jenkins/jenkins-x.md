@@ -9,11 +9,11 @@ https://github.com/SeldonIO/sig-mlops-jenkins-classic/tree/master/model_implemen
 
 ## Links
 
-- [Main Website](https://jenkins-x.io/)
+- [Main Website](https://jenkins-x.io)
 
 ## Guides
 
-- [Overview](https://jenkins-x.io/v3/about/overview/)
+- [Overview](https://jenkins-x.io/v3/about/overview)
 
 ## Workflow
 

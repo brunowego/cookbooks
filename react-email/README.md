@@ -1,5 +1,9 @@
 # React Email
 
+<!--
+https://github.com/aymericzip/intlayer/tree/main/apps/backend/src/emails
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/resendlabs/react-email)
@@ -74,6 +78,10 @@ TODO
 ```log
 Error: The file "/vercel/path0/packages/email/.react-email/.next/routes-manifest.json" couldn't be found. This is often caused by a misconfiguration in your project.
 ```
+
+<!--
+.react-email/.next
+-->
 
 TODO
 

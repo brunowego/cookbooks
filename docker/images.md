@@ -5,4 +5,7 @@
 ```sh
 #
 docker images -a
+
+# Remove all images
+docker rmi $(docker images -aq)
 ```

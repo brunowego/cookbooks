@@ -1,6 +1,8 @@
 # Apple ScreenCapture
 
-## Configuration
+TODO
+
+<!-- ## Configuration
 
 ```sh
 #
@@ -13,9 +15,8 @@ defaults read com.apple.screencapture location
 #
 defaults write com.apple.screencapture type -string 'jpg'
 defaults read com.apple.screencapture type
-```
 
-<!-- ```sh
-defaults write com.apple.systemsound com.apple.sound.uiaudio.enabled -int 0
-defaults read com.apple.systemsound com.apple.sound.uiaudio.enabled
+#
+defaults write com.apple.screencapture disable-sound -bool true
+killall SystemUIServer
 ``` -->

@@ -16,11 +16,14 @@ Amazon Performance Insights
 ## Tools
 
 - [Datadog / RDS Performance Monitoring](https://datadoghq.com/dg/monitor/rds-benefits)
+- [PgHero](https://github.com/ankane/pghero)
 
 <!--
 https://supabase.com/dashboard/project/<project-id>/advisors/performance
 
+https://pgwatch.com
 https://pganalyze.com
+https://pgdash.io
 -->
 
 ## Queries

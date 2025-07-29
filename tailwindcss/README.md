@@ -73,6 +73,8 @@ https://plumeui.com
 - [Tailblocks](https://tailblocks.cc) <!-- https://github.com/mertJF/tailblocks -->
 
 <!--
+https://21st.dev
+https://originui.com
 https://windstatic.com
 https://mynaui.com
 https://componentland.com
@@ -97,6 +99,9 @@ https://pagedone.io/blocks
 - [tailwindpdf](/tailwindpdf.md)
 
 <!--
+https://kigen.design/color
+https://tints.dev/palette/v1:YW1iZXJ8RjU5RTBCfDMwMHxwfDB8MHwwfDEwMHxh
+
 https://divmagic.com/tools/css-to-tailwind
 https://js2ts.com/css-to-tailwind
 

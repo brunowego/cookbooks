@@ -45,4 +45,7 @@ orb -h
 ```sh
 #
 orb uname -a
+
+#
+orb list
 ```

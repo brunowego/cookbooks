@@ -24,9 +24,8 @@ https://www.marksei.com/serverless/
 
 ### Installation
 
-#### NPM
-
 ```sh
+# Using NPM
 npm install serverless -g
 ```
 

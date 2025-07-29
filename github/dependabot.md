@@ -40,8 +40,8 @@ updates:
     # commit-message:
     #   prefix: deps
     #   prefix-development: chore
-    # labels:
-    #   - dependencies
+    labels:
+      - dependencies
 ```
 
 <!--
