@@ -70,3 +70,15 @@ You will need a pair of AWS Key with route53:ListHostedZones, route53:GetChange 
   certbot certonly --dns-route53 -d *.yourdomain.com -n --agree-tos -m your@email.com
 ```
 
+Adding auto renew
+
+```sh
+  crontab -e
+```
+
+Add this line
+
+```code
+0 3 * * 1 /usr/bin/certbot renew --dns-route53 --dns-route53-propagation-seconds 30 --quiet >> /var/log/certbot-renew.log 2>&1
+```
+
