@@ -47,3 +47,26 @@ openssl x509 \
 # Cleanup expired Let's Encrypt CA (Sept 30, 2021)
 RUN sed -i '/^mozilla\/DST_Root_CA_X3/s/^/!/' /etc/ca-certificates.conf && update-ca-certificates -f
 ```
+
+### With AWS Route53
+
+
+```sh
+  apt update
+  apt install snapd
+  snapt install --classic certbot
+  ln -s /snap/bin/certbot /usr/bin/certbot
+  snap set certbot trust-plugin-with-root=ok
+  snap install certbot-dns-route53
+  snap connect certbot:plugin certbot-dns-route53
+````
+
+You will need a pair of AWS Key with route53:ListHostedZones, route53:GetChange and policies.
+
+```sh
+  export AWS_ACCESS_KEY_ID=<aws-access-key-id>
+  export AWS_SECRET_ACCESS_KEY=<aws-secret-access-key>
+
+  certbot certonly --dns-route53 -d *.yourdomain.com -n --agree-tos -m your@email.com
+```
+
