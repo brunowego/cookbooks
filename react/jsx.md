@@ -2,6 +2,12 @@
 
 Business. People. Technology. ... as a Service
 
+<!--
+Remove Comments
+
+\{\/\*.+\*\/\}
+-->
+
 ## Tools
 
 - [Transform / HTML to JSX](https://transform.tools/html-to-jsx)

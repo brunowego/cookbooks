@@ -1,5 +1,7 @@
 # OpenAI SDK
 
+**Keywords:** Wrapper
+
 ## Links
 
 - [Code Repository](https://github.com/openai/openai-node)

@@ -90,6 +90,7 @@ ls $(brew --cache)
 # Clean Up
 brew cleanup -s
 
+# Force Remove Cache
 rm -fR $(brew --cache)
 ```
 

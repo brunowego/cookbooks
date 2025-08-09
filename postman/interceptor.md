@@ -16,12 +16,12 @@
 4. Domains -> `localhost` (without port number) -> Add Domain
 5. Send
 
-### Browser
+<!-- ### Browser
 
 #### Sync Cookies
 
 1. Open Browser -> Postman Interceptor
-2. Sync Cookies -> Domains -> `http://localhost:3000` -> Enter
+2. Sync Cookies -> Domains -> `localhost` -> Enter
 3. Sync Cookies
 
 #### Capture Requests
@@ -29,4 +29,4 @@
 1. Open Browser -> Postman Interceptor
 2. Capture Requests
 3. URL filter -> `http://localhost:3000` -> Enter
-4. Start Capture
+4. Start Capture -->

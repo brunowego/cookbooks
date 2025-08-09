@@ -13,3 +13,7 @@
 ## Prompts
 
 - [cursor.directory](https://cursor.directory)
+
+<!--
+https://www.promptlayer.com
+-->

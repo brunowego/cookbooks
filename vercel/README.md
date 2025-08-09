@@ -220,6 +220,32 @@ EOF
 #### TBD
 
 ```log
+2025-08-05T19:29:19.530Z  Error: The file "/vercel/path0/apps/app/.next/routes-manifest.json" couldn't be found. This is often caused by a misconfiguration in your project.
+2025-08-05T19:29:19.530Z  Learn More: https://err.sh/vercel/vercel/now-next-routes-manifest
+2025-08-05T19:29:21.637Z  ▲ Build system report
+2025-08-05T19:29:21.637Z  ▲ To always completely log this report, add VERCEL_BUILD_SYSTEM_REPORT=1 as an Environment Variable to your project.
+2025-08-05T19:29:21.637Z  • At least one "Out of Memory" ("OOM") event was detected during the build.
+2025-08-05T19:29:21.637Z    • This occurs when processes or applications running during the build completely fill up the available memory (RAM) in the build container. When this happens, the build container terminates one of the processes during the build with a SIGKILL signal.
+2025-08-05T19:29:21.637Z    • Read this troubleshooting guide for more information: https://vercel.link/troubleshoot-build-errors
+2025-08-05T19:29:21.637Z
+2025-08-05T19:29:21.637Z  To expand your machine size to get additional memory and disk space, consider enabling Enhanced Builds: https://vercel.com/docs/builds/managing-builds#enhanced-build-machines
+```
+
+<!--
+https://github.com/vercel/community/discussions/6445
+
+https://nextjs.org/docs/app/guides/memory-usage
+-->
+
+TODO
+
+<!--
+next build --experimental-debug-memory-usage
+-->
+
+#### TBD
+
+```log
 Vercel — No GitHub account was found matching the commit author email address
 ```
 

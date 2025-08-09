@@ -1,5 +1,7 @@
 # Addy.io
 
+**Keywords:** Email Forwarding
+
 ## Links
 
 - [Main Website](https://addy.io)

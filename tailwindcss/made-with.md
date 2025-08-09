@@ -93,6 +93,7 @@ https://skalata.vc
 
 Hero / Header | Hero
 
+https://www.odoo.com/pt_BR
 https://ros-design-academy.webflow.io/courses/freelance-mastery
 https://vinted.pt
 https://privacy.com
@@ -173,6 +174,11 @@ https://gleap.io
 https://amplemarket.com
 https://tofu.com
 
+https://ctrlplane.dev/
+https://director.run | https://github.com/director-run/director
+https://hookdeck.com/
+https://deco.chat/about
+https://dosu.dev/
 https://www.delphi.ai
 https://c15t.com | https://github.com/c15t/c15t
 https://savvycal.com/reserve
@@ -555,6 +561,10 @@ Users
 https://dribbble.com/shots/23579404-Teams-Employees-Engagement-App
 https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
+Add Dialog
+
+https://www.tasklypm.com/project/540/tasks
+
 Explore Platform
 
 https://algora.io/platform
@@ -590,6 +600,7 @@ https://app.middleware.io/auth/login
 https://dash.reviews.io/login
 https://app.onmarathon.com/register
 
+https://tazeai.com/signin
 https://algora.io/auth/login
 https://algora.io/auth/login
 https://screenshothis.com/register
@@ -721,6 +732,7 @@ https://calendar.amie.so
 Calendar View
 
 https://tasklytic.fesyse.site/dashboard/calendar/month-view
+https://big-calendar.vercel.app/month-view | https://github.com/lramos33/big-calendar
 
 Social
 
@@ -735,6 +747,11 @@ Float Button / Button
 
 https://shakuro.com
 https://octolane.com/auth/sign-in
+https://vidiopintar.com/register
+
+Pending Approval
+
+https://vembi.vercel.app/pending-approval
 
 Mosaic / Section
 
@@ -956,6 +973,7 @@ https://roots.withalba.com
 
 Listing
 
+https://www.portalzuk.com.br/imovel/go/goiania/parque-amazonia/rua-manaus-1230/33615-206283
 https://hellolanding.com
 https://homestra.com
 https://citamarketplace.com
@@ -1630,6 +1648,7 @@ https://im-agency.vercel.app/portfolio/keyboard
 
 Article / Blog Post
 
+https://www.morgen.so/de/guides/visually-organize-your-calendar-by-color-coding-events-copy
 https://keywordsai.co/blog/top-benchmarks-for-the-best-open-source-coding-llms
 https://vlabici.com/cases/mainstreetdata
 https://fiber.dev/blog/september-2024

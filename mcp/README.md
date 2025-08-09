@@ -1,5 +1,9 @@
 # Model Context Protocol (MCP)
 
+<!--
+https://smithery.ai
+-->
+
 **Keywords:** Function Calling Alternative
 
 ## Links

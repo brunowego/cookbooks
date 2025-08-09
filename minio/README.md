@@ -112,9 +112,8 @@ kubectl delete ns minio \
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew tap minio/stable
 brew install minio
 ```
@@ -125,6 +124,16 @@ brew install minio
 # Running
 minio server /data
 ```
+
+### Issues
+
+#### TBD
+
+```log
+mc: <ERROR> `config` is not a recognized command. Get help using `--help` flag.
+```
+
+TODO
 
 ## Docker
 

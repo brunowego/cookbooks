@@ -48,6 +48,10 @@ Hands-on – Prototype / POC
 - [Manage Job Alerts](https://linkedin.com/jobs/jam)
 - [Developers](https://developer.linkedin.com)
 
+<!--
+https://linkedin.com/jobs/preferences/application-preferences
+-->
+
 ## Tools
 
 - [Teal / LinkedIn Profile Review Tool](https://tealhq.com/tools/linkedin-review)

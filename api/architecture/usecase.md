@@ -7,6 +7,15 @@ https://github.com/search?q=path%3Apackages%2F+path%3Ause-case+path%3A.ts+conten
 -->
 
 <!--
+Safe Action
+
+https://github.com/celsopires1999/service-agreement/blob/main/src/actions/deleteServiceSystemAction.ts
+https://github.com/celsopires1999/service-agreement/blob/main/src/actions/deleteUserListAction.ts
+https://github.com/subhanmahmood/subhaniov2/blob/main/src/server/actions/link.actions.ts
+https://github.com/remcostoeten/next-drizzle-lucia-sqlite-template/blob/master/src/core/server/actions/auth/sign-in-action.ts
+-->
+
+<!--
 https://github.com/carlosazaustre/kata-users-ts
 
 https://github.com/kaufon/Pet-Lovers/tree/main/packages/core/src/use-cases

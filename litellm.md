@@ -67,13 +67,13 @@ litellm --model ollama/llama3
 curl \
   --location 'http://127.0.0.1:4000/chat/completions' \
   --header 'Content-Type: application/json' \
-  --data ' {
-  "model": "gpt-3.5-turbo",
-  "messages": [
-    {
-      "role": "user",
-      "content": "what llm model are you and what version?"
-    }
-  ]
-}'
+  --data '{
+    "model": "gpt-3.5-turbo",
+    "messages": [
+      {
+        "role": "user",
+        "content": "what llm model are you and what version?"
+      }
+    ]
+  }'
 ```

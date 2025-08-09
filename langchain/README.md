@@ -1,6 +1,6 @@
 # LangChain
 
-**Keywords:** LLM, AI Orchestration
+**Keywords:** LLM, AI Orchestration, RAG, LLM Framework
 
 <!--
 Good for prototyping and testing
@@ -18,11 +18,14 @@ https://udemy.com/course/langchain-python-portuguese/?couponCode=2021PM25
 
 - [Code Repository](https://github.com/langchain-ai/langchain)
 - [Main Website](https://langchain.ai)
-- [](dev.smith.langchain.com)
 
 ## Learning
 
 - [What is LangChain?](https://youtube.com/watch?v=1bUy-1hGZpI)
+
+<!--
+https://github.com/langchain-ai/langchain-academy
+-->
 
 ## CLI
 

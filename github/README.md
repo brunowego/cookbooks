@@ -1,6 +1,10 @@
 # GitHub
 
 <!--
+otpauth://totp/GitHub:brunowego?secret=<secret>&issuer=GitHub
+-->
+
+<!--
 https://github.com/martinvonz/jj
 
 https://education.github.com/benefits?type=student

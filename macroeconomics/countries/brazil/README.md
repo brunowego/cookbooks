@@ -124,7 +124,7 @@ graph TD
 
 ## External Trade
 
-- [Balança Comercial e Estatísticas de Comércio Exterior](https://www.gov.br/produtividade-e-comercio-exterior/pt-br/assuntos/comercio-exterior/estatisticas)
+- [Balança Comercial e Estatísticas de Comércio Exterior](https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas)
 - [ComexVis](http://comexstat.mdic.gov.br/pt/comex-vis)
 - [Secretaria de Comércio Exterior](https://gov.br/produtividade-e-comercio-exterior/pt-br/assuntos/comercio-exterior)
 

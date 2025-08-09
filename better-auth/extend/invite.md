@@ -1,6 +1,8 @@
 # Extend with Invite
 
 <!--
+https://github.com/innovations-dev/boiler/tree/main/lib/auth/plugins
+
 https://github.com/salvinoto/nextjs-ultimate-saas
 https://github.com/quanphm/hoalu
 https://github.com/devchaudhary24k/vidcastx
