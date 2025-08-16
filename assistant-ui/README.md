@@ -60,7 +60,25 @@ https://github.com/haimatrix99/ai-hackathon-2025
 npx assistant-ui -h
 ```
 
+<!-- ### Usage
+
+```sh
+add
+create
+codemod
+upgrade
+update
+``` -->
+
 ### Issues
+
+#### TBD
+
+```log
+data: {"type":"error","errorText":"OpenAI API key is missing. Pass it using the 'apiKey' parameter or the OPENAI_API_KEY environment variable."}
+```
+
+TODO
 
 #### TBD
 

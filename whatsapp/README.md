@@ -1,6 +1,12 @@
 # WhatsApp
 
 <!--
+https://app-utalk.umbler.com
+https://app.wati.io
+https://brunowego.kommo.com
+-->
+
+<!--
 https://github.com/sarthakjdev/wapi.js
 https://github.com/EvolutionAPI/evolution-api
 

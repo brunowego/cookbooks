@@ -116,6 +116,18 @@ npx shadcn@latest diff -c ./packages/ui <name>
 #### TBD
 
 ```log
+ℹ No files updated.
+```
+
+```sh
+cd ./packages/ui
+
+# Try again
+```
+
+#### TBD
+
+```log
 An invalid components.json file was found at ./packages/ui.
 ```
 

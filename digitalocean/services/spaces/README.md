@@ -53,6 +53,26 @@ This XML file does not appear to have any style information associated with it. 
 
 TODO
 
+#### TBD
+
+```log
+(failed) net::ERR_CERT_COMMON_NAME_INVALID
+```
+
+<!--
+https://<acme>.<acme>.nyc3.digitaloceanspaces.com/...
+-->
+
+<!--
+STORAGE_ENDPOINT_URL=https://autlin.nyc3.digitaloceanspaces.com
+
+to
+
+STORAGE_ENDPOINT_URL=https://nyc3.digitaloceanspaces.com
+-->
+
+TODO
+
 #### CORS error
 
 <!--
@@ -73,10 +93,22 @@ Access to XMLHttpRequest at 'https://nyc3.digitaloceanspaces.com/sellit/user/01J
 -->
 
 <!--
-403 Forbidden
-OPTIONS
-
 Access-Control-Allow-Origin
 X-Amz-Acl
 Content-Type
 -->
+
+TODO
+
+#### TBD
+
+```log
+(failed) net::ERR_BLOCKED_BY_ORB
+```
+
+<!--
+403 Forbidden
+OPTIONS
+-->
+
+TODO

@@ -93,7 +93,7 @@ https://skalata.vc
 
 Hero / Header | Hero
 
-https://www.odoo.com/pt_BR
+https://odoo.com/pt_BR
 https://ros-design-academy.webflow.io/courses/freelance-mastery
 https://vinted.pt
 https://privacy.com
@@ -174,18 +174,19 @@ https://gleap.io
 https://amplemarket.com
 https://tofu.com
 
-https://ctrlplane.dev/
+https://rayai.dev
+https://instalytics.devkart.me
+https://ctrlplane.dev
 https://director.run | https://github.com/director-run/director
-https://hookdeck.com/
+https://hookdeck.com
 https://deco.chat/about
-https://dosu.dev/
-https://www.delphi.ai
+https://dosu.dev
+https://delphi.ai
 https://c15t.com | https://github.com/c15t/c15t
 https://savvycal.com/reserve
 https://github.com/papra-hq/owlrelay | https://owlrelay.email
 https://volta.net
 https://postiz.com
-https://venturekit.ai
 https://shipfa.st
 https://keywordsai.co
 https://preview.tailus.io/oxymor-yv
@@ -243,6 +244,30 @@ Catalog / Shop
 
 https://weareathleats.com
 https://auto-exhibit.vercel.app
+
+Menu / Submenu
+
+https://www.arcade.software/
+https://www.venturekit.ai
+https://www.getstark.co
+https://found.com
+https://www.careerpuck.com/
+https://www.adtrace.ai/
+https://www.upwork.com/
+https://woodpecker.co/
+https://www.fivetran.com/
+https://www.usehaystack.io/
+https://www.teamcamp.app/
+https://www.honeyquote.com/
+https://linear.app/homepage
+https://www.oneleet.com/
+https://www.amplemarket.com/
+https://ctrlplane.dev/
+https://hookdeck.com/
+https://www.keywordsai.co/
+https://cal.com/
+https://supahub.com/
+https://www.wiz.io/
 
 Toast / Error
 
@@ -563,7 +588,7 @@ https://dribbble.com/shots/23559512-People-Employees-Engagement-App
 
 Add Dialog
 
-https://www.tasklypm.com/project/540/tasks
+https://tasklypm.com/project/540/tasks
 
 Explore Platform
 
@@ -574,7 +599,7 @@ Login / Sign In / Sign up
 https://betterstack.com/users/sign-in#magic
 https://login.listkit.io/login
 https://app.didweever.com/auth/sign-in
-https://www.codecademy.com/login
+https://codecademy.com/login
 https://hevy.com/login?postLoginPath=%2F
 https://login.retool.com/auth/login
 https://try-stand.com/user/login
@@ -600,6 +625,7 @@ https://app.middleware.io/auth/login
 https://dash.reviews.io/login
 https://app.onmarathon.com/register
 
+https://chat.z3c.dev/auth/signup | https://github.com/z3cdotdev/chat
 https://tazeai.com/signin
 https://algora.io/auth/login
 https://algora.io/auth/login
@@ -973,7 +999,7 @@ https://roots.withalba.com
 
 Listing
 
-https://www.portalzuk.com.br/imovel/go/goiania/parque-amazonia/rua-manaus-1230/33615-206283
+https://portalzuk.com.br/imovel/go/goiania/parque-amazonia/rua-manaus-1230/33615-206283
 https://hellolanding.com
 https://homestra.com
 https://citamarketplace.com
@@ -1017,6 +1043,8 @@ https://brandby.co
 Line risk
 
 https://preview.tailus.io/oxymor-yv
+
+Cookie Consent
 
 Pricing
 
@@ -1177,7 +1205,7 @@ https://appstudio.design
 Dashboard
 
 https://cloud.tiptap.dev/v2
-https://www.startt.co/dashboard
+https://startt.co/dashboard
 https://sitespeak.ai/user/profile
 https://mainstreetdata.com/charting?metrics=revenue%2CgrossIncome
 https://wiza.co/app/dashboard
@@ -1201,6 +1229,8 @@ https://strut.so/c/021b95e6-0c3a-4b5a-8190-d35116b892c0
 https://app.premai.io/projects
 https://app.netbird.io/peers | https://github.com/netbirdio/netbird
 
+https://app.zeroeval.com/a33e5d6e-9f30-4435-87bf-58c4be22ce9d/settings?section=general
+https://chat.z3c.dev/
 https://app.useautumn.com/customers
 https://app.mem0.ai/dashboard/get-started
 https://app.logaflow.com/feedbacks?board=&page=1&limit=200
@@ -1496,9 +1526,19 @@ Brand
 
 https://clickup.com/brand
 
+Providers / API Keys
+
+https://itz.am/onboard | https://github.com/itzam-ai/itzam
+
 Usage
 
-https://www.lumeai.xyz/usage
+https://lumeai.xyz/usage | https://github.com/C-W-D-Harshit/lume-ai
+https://itz.am/dashboard/usage | https://github.com/itzam-ai/itzam
+https://platform.aci.dev/usage | https://github.com/aipotheosis-labs/aci
+
+Buy Credits
+
+https://llmgateway.io/dashboard/oPzB1lYySL9HqlK8AfBD/fcxG8O4NIcNiyixgTkCk/usage?days=7
 
 Onboarding
 
@@ -1516,6 +1556,7 @@ https://my.ka.app/signup/info
 https://flowbite.com/blocks/marketing/user-onboarding
 https://componentland.com/component/onboarding-page-2
 
+https://itz.am/onboard
 https://app.getpalm.com/signup/profile/business | https://app.getpalm.com/signup/profile/phone/confirm
 https://platform.tryprofound.com/welcome
 https://app.formflowai.me/welcome
@@ -1648,7 +1689,8 @@ https://im-agency.vercel.app/portfolio/keyboard
 
 Article / Blog Post
 
-https://www.morgen.so/de/guides/visually-organize-your-calendar-by-color-coding-events-copy
+https://liveblocks.io/blog/how-to-build-undo-redo-in-a-multiplayer-environment
+https://morgen.so/de/guides/visually-organize-your-calendar-by-color-coding-events-copy
 https://keywordsai.co/blog/top-benchmarks-for-the-best-open-source-coding-llms
 https://vlabici.com/cases/mainstreetdata
 https://fiber.dev/blog/september-2024
@@ -1730,7 +1772,8 @@ https://zapal.tech
 https://conceptzilla.com
 https://verdely.framer.ai
 
-https://www.azion.com/pt-br
+https://budecosystem.com/
+https://azion.com/pt-br
 https://proofs.io
 https://zellify.app
 https://volta.net
@@ -1831,6 +1874,7 @@ https://planner.tremor.so/quotes/overview
 
 Sidebar
 
+https://docsurf.ai/doc
 https://x.com/tanbirDsgnDev/status/1870504152876658816/photo/1
 https://dashboard.hookdeck.com/requests
 

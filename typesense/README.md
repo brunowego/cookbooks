@@ -1,7 +1,7 @@
 # Typesense
 
 <!--
-https://www.youtube.com/watch?v=cIU19iA8I7U
+https://youtube.com/watch?v=cIU19iA8I7U
 
 https://github.com/tradingstrategy-ai/search/blob/main/schemas/trading-entities.json
 -->

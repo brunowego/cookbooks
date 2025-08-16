@@ -6,7 +6,7 @@
 - [LICEcap](/licecap.md)
 - [Loom](/loom.md)
 - [ScreenFlow](/screenflow.md)
-- [Screen Studio](https://screen.studio)
+- [Screen Studio](/screen-studio.md)
 
 <!--
 https://screen.now/edit

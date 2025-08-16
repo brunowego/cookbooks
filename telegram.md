@@ -8,9 +8,8 @@ https://www.youtube.com/watch?v=otUinXXejdE
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask telegram
 ```
 

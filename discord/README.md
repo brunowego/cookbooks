@@ -34,15 +34,11 @@ https://github.com/hanaui-git/ZeroDiscord
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask discord
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y discord
 ```
 

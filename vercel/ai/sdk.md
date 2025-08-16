@@ -10,3 +10,7 @@ https://github.com/jacksonkasi0/BrightMind-AI
 
 - [Code Repository](https://github.com/vercel/ai)
 - [Main Website](https://sdk.vercel.ai)
+
+<!--
+https://chat-sdk.dev
+-->
