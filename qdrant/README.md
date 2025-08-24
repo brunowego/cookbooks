@@ -1,6 +1,8 @@
 # Qdrant
 
 <!--
+https://github.com/hetsiro/langchain-pdfs
+
 https://github.com/rag-web-ui/rag-web-ui
 https://github.com/BCG-X-Official/agentkit
 https://github.com/pynterest83/RAGChatApp
@@ -34,11 +36,15 @@ docker run -d \
   -p 6334:6334 \
   --name qdrant \
   --network workbench \
-  docker.io/qdrant/qdrant:v1.13.6
+  docker.io/qdrant/qdrant:v1.15.6
 ```
 
 <!--
 http://localhost:6333/dashboard
+-->
+
+<!--
+curl -X GET 'http://localhost:6333/collections'
 -->
 
 ### Remove

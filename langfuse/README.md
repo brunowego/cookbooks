@@ -1,5 +1,15 @@
 # Langfuse
 
+<!--
+https://github.com/lucagrippa/md2anki
+https://github.com/0xinhua/joychat
+https://github.com/PerfLab-io/perfagent
+https://github.com/CloudCruise/BATS
+https://github.com/orctane/opentools
+https://github.com/youngchingjui/issue-to-pr
+https://github.com/lukai-app/lukai
+-->
+
 **Keywords:** LLM
 
 ## Links
@@ -9,6 +19,10 @@
 - Docs
   - [Migrate Langfuse v2 to v3](https://langfuse.com/self-hosting/upgrade-guides/upgrade-v2-to-v3)
   - [Configuration](https://langfuse.com/self-hosting/configuration)
+
+<!--
+https://langfuse.com/docs/prompt-management/features/github-integration
+-->
 
 ## Features
 
@@ -98,6 +112,33 @@ docker run -d \
 ```sh
 echo -e '[INFO]\thttp://127.0.0.1:13000'
 ```
+
+### Issues
+
+#### TBD
+
+```log
+Failed to prepare server TypeError: Cannot set property message of ZodError which has only a getter
+    at NextNodeServer.prepareImpl (/app/node_modules/.pnpm/next@14.2.30_@babel+core@7.24.3_@opentelemetry+api@1.9.0_@playwright+test@1.47.2_babel-plugin_pz5jczsrwmn5olwahiiemkgmoy/node_modules/next/dist/server/next-server.js:481:33)
+```
+
+<!--
+https://github.com/langfuse/langfuse/issues/7995
+https://github.com/langfuse/langfuse/issues/4675
+https://github.com/langfuse/langfuse/issues/8472
+-->
+
+TODO
+
+#### TBD
+
+```log
+2025-08-18T23:53:18.562Z error  prisma:error Error in PostgreSQL connection: Error { kind: Db, cause: Some(DbError { severity: "FATAL", parsed_severity: Some(Fatal), code: SqlState(E57P01), message: "terminating connection due to administrator command", detail: None, hint: None, position: None, where_: None, schema: None, table: None, column: None, datatype: None, constraint: None, file: Some("postgres.c"), line: Some(3315), routine: Some("ProcessInterrupts") }) }
+```
+
+<!--
+docker logs -f with-ai-sdk-model-usage-langfuse-1
+-->
 
 ### Remove
 

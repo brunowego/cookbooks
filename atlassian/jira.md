@@ -4,6 +4,15 @@
 https://github.com/unlogg/unlogg
 -->
 
+<!--
+To Do
+In Progress
+In Review
+Staging
+Ready for Production
+Done
+-->
+
 ## Links
 
 - [Main Website](https://atlassian.com/software/jira)
@@ -71,3 +80,17 @@ jira epic <epic-key> --plain
 <!--
 jira completion -h
 -->
+
+## Tips
+
+### Create a Field
+
+1. Projects -> Select a Project -> More (3 dots) -> Project settings
+2. Sidebar -> Expand Work types -> Select Epic
+3. Create a field (Right sidebar) -> Paragraph -> Staging Screenshot -> Add to Description fields
+4. Add to all Work types -> Save changes
+
+### Manage Workflow
+
+1. Projects -> Select a Project -> Manage workflow
+2. Select a Column -> Add Rule

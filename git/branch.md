@@ -6,17 +6,30 @@
 # Show upstream branch
 git branch -vv
 
-#
+# Show remote branches
 git branch -r
 
 #
 git ls-remote --heads
 
-#
+# Show remote branches
 git show-branch -r
+
+# Show local branches that are not tracking any remote branch
+git branch -vv | grep -v origin
 ```
 
 ## Tips
+
+### Push All Branches
+
+```sh
+#
+for branch in $(git branch --format='%(refname:short)'); do git rev-parse --verify --quiet origin/$branch >/dev/null || git push -u origin $branch; done
+
+#
+git branch -vv | grep -v origin
+```
 
 ### Fetch/Pull All Branches
 

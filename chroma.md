@@ -6,6 +6,11 @@
 https://github.com/thakkaryash94/chroma-ui | https://chroma-ui.vercel.app
 -->
 
+<!--
+pnpm add @chroma-core/default-embed chromadb
+pnpm add @mastra/chroma
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/chroma-core/chroma)
@@ -30,7 +35,7 @@ docker run -d \
   -p 8000:8000 \
   --name chroma \
   --network workbench \
-  docker.io/chromadb/chroma:1.0.5
+  docker.io/chromadb/chroma:1.0.20
 ```
 
 <!--

@@ -69,15 +69,11 @@ Dark mode=False
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask figma
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install figma -y --ignore-checksums
 ```
 

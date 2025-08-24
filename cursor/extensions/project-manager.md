@@ -4,10 +4,10 @@
 
 ```sh
 #
-code --install-extension alefragnani.project-manager
+cursor --install-extension alefragnani.project-manager
 
 #
-jq '."recommendations" += ["alefragnani.project-manager"]' "$PWD"/.cursor/extensions.json | sponge "$PWD"/.cursor/extensions.json
+jq '."recommendations" += ["alefragnani.project-manager"]' "$HOME"/.cursor/extensions.json | sponge "$HOME"/.cursor/extensions.json
 ```
 
 ## Tips

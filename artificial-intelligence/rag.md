@@ -12,3 +12,9 @@
 https://github.com/datvodinh/finbot
 https://github.com/pipeshub-ai/pipeshub-ai
 -->
+
+<!--
+Turso
+
+https://github.com/patelvivekdev/turso-vector-search
+-->

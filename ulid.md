@@ -17,6 +17,10 @@ https://medium.com/zendesk-engineering/how-probable-are-collisions-with-ulids-mo
 
 ## CLI
 
+### Dependencies
+
+TODO
+
 ### Installation
 
 #### go install

@@ -12,9 +12,8 @@ https://sparkmailapp.com/help/214-cant-connect-to-a-yandex-account.html
 
 ### Installation
 
-#### MAS
-
 ```sh
+# Using MAS
 mas install 1176895641
 ```
 

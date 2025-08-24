@@ -1,5 +1,12 @@
 # Scalable Vector Graphics (SVG)
 
+<!--
+Patterns
+
+https://www.toptal.com/designers/subtlepatterns/
+https://www.toptal.com/designers/subtlepatterns/tag/icon/
+-->
+
 ## Tools
 
 - [SVG Artista](https://svgartista.net)

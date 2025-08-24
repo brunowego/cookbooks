@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://openjdk.org/)
+- [Main Website](https://openjdk.org)
 
 ## CLI
 

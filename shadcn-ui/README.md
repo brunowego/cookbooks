@@ -12,6 +12,8 @@ https://www.kibo-ui.com/components/table
 -->
 
 <!--
+https://basecn.dev
+https://pro.tailark.com
 https://shadcn-extension.vercel.app | https://github.com/BelkacemYerfa/shadcn-extension
 https://blocks.so/stats
 https://reui.io

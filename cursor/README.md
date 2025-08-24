@@ -20,6 +20,9 @@ brew install --cask cursor
 mkdir -p "$HOME"/.cursor
 
 ln -s "$HOME"/Library/Application\ Support/Cursor/User/settings.json "$HOME"/.cursor/settings.json
+
+#
+cat "$HOME"/.cursor/settings.json
 ```
 
 ### Commands

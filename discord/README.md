@@ -16,6 +16,8 @@ https://github.com/hanaui-git/ZeroDiscord
 - [Org. Repository](https://github.com/discord)
 - [Main Website](https://discord.com)
 - [Status Page](https://discordstatus.com)
+- Developers
+  - [Applications](https://discord.com/developers/applications)
 
 ## Related
 

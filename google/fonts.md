@@ -11,6 +11,14 @@ Heading
 https://fonts.google.com/specimen/Plus+Jakarta+Sans
 https://fonts.google.com/specimen/DM+Sans | https://wiz.io
 https://fonts.google.com/specimen/Bricolage+Grotesque
+
+→ Geist
+→ Aeonik
+→ Satoshi
+→ Cal Sans
+→ Manrope
+→ Helvetica
+→ Space Grotesk
 -->
 
 ## Alternative

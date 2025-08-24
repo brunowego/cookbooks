@@ -93,6 +93,7 @@ https://skalata.vc
 
 Hero / Header | Hero
 
+https://sendbird.com/
 https://odoo.com/pt_BR
 https://ros-design-academy.webflow.io/courses/freelance-mastery
 https://vinted.pt
@@ -174,6 +175,8 @@ https://gleap.io
 https://amplemarket.com
 https://tofu.com
 
+https://langdock.com/
+https://sendbird.com/
 https://rayai.dev
 https://instalytics.devkart.me
 https://ctrlplane.dev
@@ -247,27 +250,27 @@ https://auto-exhibit.vercel.app
 
 Menu / Submenu
 
-https://www.arcade.software/
-https://www.venturekit.ai
-https://www.getstark.co
+https://arcade.software/
+https://venturekit.ai
+https://getstark.co
 https://found.com
-https://www.careerpuck.com/
-https://www.adtrace.ai/
-https://www.upwork.com/
+https://careerpuck.com/
+https://adtrace.ai/
+https://upwork.com/
 https://woodpecker.co/
-https://www.fivetran.com/
-https://www.usehaystack.io/
-https://www.teamcamp.app/
-https://www.honeyquote.com/
+https://fivetran.com/
+https://usehaystack.io/
+https://teamcamp.app/
+https://honeyquote.com/
 https://linear.app/homepage
-https://www.oneleet.com/
-https://www.amplemarket.com/
+https://oneleet.com/
+https://amplemarket.com/
 https://ctrlplane.dev/
 https://hookdeck.com/
-https://www.keywordsai.co/
+https://keywordsai.co/
 https://cal.com/
 https://supahub.com/
-https://www.wiz.io/
+https://wiz.io/
 
 Toast / Error
 
@@ -383,18 +386,28 @@ https://flowbite.com/blocks/e-commerce/product-review
 https://tailwindflex.com/@akshay/user-review-card
 https://pagedone.io/blocks/e-commerce/product-review
 
-Chat
+Meta Connect
+
+https://app.live.zoko.io/meta-connect
+
+AI Chat
 
 https://you.com
-https://shadcn-chat.vercel.app
+
+Chat / Messages
+
+https://shadcn-chat.vercel.app | https://github.com/jakobhoeg/shadcn-chat
 https://demo.foxthemes.net/socialite-v3.0/messages.html
 https://angular-material.fusetheme.com/apps/chat/ff6bc7f1-449a-4419-af62-b89ce6cae0aa
-https://midone-html.vercel.app/rubick-side-menu-chat-page.html
+https://midone-html.vercel.app/rubick-side-menu-chat.html
 https://mannatthemes.com/tailfox/default/projects-chat.html
 https://scribbler-react.themeyn.com/app/templates/chatbot
 https://wp.alithemes.com/html/frox/demos/chat-page-1.html
 https://wp.alithemes.com/html/frox/demos/chat-page-3.html
 https://square-eta.vercel.app/chat
+https://preline.co/pro/chat/index.html
+
+https://app-utalk.umbler.com/chats/
 
 Meet our team
 
@@ -490,6 +503,10 @@ https://nike-app-git-main-armans-projects-c9523aa4.vercel.app
 Table
 
 https://affiliates.lemonsqueezy.com/programs
+
+Collapsible Tables
+
+https://x.com/UI_Farhan/status/1957703686907417081/photo/1
 
 Kyc
 
@@ -596,6 +613,7 @@ https://algora.io/platform
 
 Login / Sign In / Sign up
 
+https://you.com/signin
 https://betterstack.com/users/sign-in#magic
 https://login.listkit.io/login
 https://app.didweever.com/auth/sign-in
@@ -625,6 +643,8 @@ https://app.middleware.io/auth/login
 https://dash.reviews.io/login
 https://app.onmarathon.com/register
 
+https://app.castmagic.io/users/sign-in
+https://app.plane.so
 https://chat.z3c.dev/auth/signup | https://github.com/z3cdotdev/chat
 https://tazeai.com/signin
 https://algora.io/auth/login
@@ -804,6 +824,7 @@ https://omens.com.br
 https://send.it
 https://li.fi
 
+https://agent.perflab.io/
 https://kan.bn/#features
 https://trycomp.ai
 https://reweb.so/preview/GNeDWo6HM8W
@@ -849,6 +870,15 @@ https://paraform.com
 https://pagedone.io
 https://coderthemes.com/opixo/home-saas.html
 https://fridafurniture.com (Shop by category)
+
+Academy
+
+https://labs.thenational.academy | https://github.com/oaknational/oak-ai-lesson-assistant
+
+Calculator
+
+https://pinecone.io/pricing/estimate/
+https://cloud.qdrant.io/calculator
 
 Blocks
 
@@ -939,6 +969,11 @@ https://omise.co
 https://localcan.com
 https://jobbliss.com
 
+https://tryprofound.com/
+https://torchapp.com/
+https://sellfy.com/
+https://dub.co/
+https://aihero.dev
 https://ctrlplane.dev
 https://userjot.com
 https://morvalabs.com
@@ -1012,6 +1047,7 @@ https://hellolanding.com/homes/apartment-in-jacksonville-fl-bartram-park-2213
 
 Marketplace
 
+https://tise.com/
 https://appstacks.club
 https://app.contentful.com/spaces/wks05v1n2qoi/apps/list
 
@@ -1147,7 +1183,7 @@ https://vercel.com/contact/sales
 
 Contacts
 
-
+https://preline.co/pro/inbox/contacts.html
 
 Self hosted
 
@@ -1195,7 +1231,12 @@ https://catalyst-demo.tailwindui.com/orders/3000
 
 Reports
 
+https://x.com/justinmfarrugia/status/1956685862550331635
 https://venturekit.ai/app
+
+Talk
+
+https://callstack.com/events/tips-tricks-from-the-ultimate-guide-to-react-native-optimization-2025?utm_campaign=performance&utm_source=twitter&utm_medium=paid&utm_content=sf_oskar_kwasniewski_talk&twclid=25jj8kgla3dx6xztfgjrz4e54o
 
 Personal / Profile
 
@@ -1229,6 +1270,9 @@ https://strut.so/c/021b95e6-0c3a-4b5a-8190-d35116b892c0
 https://app.premai.io/projects
 https://app.netbird.io/peers | https://github.com/netbirdio/netbird
 
+https://braintrust.dev
+https://app.coordinize.tech/yonical
+https://template.openstatus.dev/dashboard/overview
 https://app.zeroeval.com/a33e5d6e-9f30-4435-87bf-58c4be22ce9d/settings?section=general
 https://chat.z3c.dev/
 https://app.useautumn.com/customers
@@ -1312,6 +1356,10 @@ https://helicone.ai/dashboard
 https://resend.com/overview
 https://app.planetscale.com/cloken
 https://himalayas.app/recruit/details
+
+Appointment
+
+https://hospital-1.vercel.app/book-appointment
 
 Dashboard Filter
 
@@ -1397,6 +1445,7 @@ https://coda.io/account
 https://linear.app/henkiz/settings/account/preferences
 https://accounts.shopify.com/accounts/238884001/personal
 
+https://tasklypm.com/settings/project/540/general
 https://app.clay.com/workspaces/524509/settings
 https://admin.mistral.ai/organization
 https://app.cal.com/settings/billing
@@ -1505,18 +1554,25 @@ Teams
 
 https://app.midday.ai/account/teams
 
+Rich Modal
+
+https://tasklypm.com/project/540/tasks
+https://app.coordinize.tech/henkiz/posts/cmene49d60009js049wjnnn6a
+
 Kanban
 
 https://dribbble.com/shots/23928096-Security-vulnerability-kanban
 https://dribbble.com/shots/21227113-Managemate-Task-Management-Dashboard
 https://dribbble.com/shots/23761306-Task-Details-Task-Management-Dashboard
 
+https://tasklypm.com/project/540/tasks | https://github.com/GuruUpdesh/taskly
 https://coderthemes.com/konrix/layouts/apps-kanban.html
 https://preline.co/pro/examples.html#kanban-boards
 https://karban-task-management.vercel.app
-https://atlas-lac.vercel.app/workspaces/673aa1f600387a8e7c6a/tasks?task-view=kanban
+https://atlas-lac.vercel.app | https://github.com/akinbezatoglu/atlas
 https://codepen.io/robstinson/pen/BaLQQdX
 https://gist.github.com/ifindev/6303acda602cf4575ae4040d7f495d01
+https://kan.bn | https://github.com/kanbn/kan
 
 Quiz
 
@@ -1668,6 +1724,10 @@ https://frigade.com/blog
 https://andromeda-astro.vercel.app/blog
 https://spydea-nextjs.vercel.app/blog
 https://humanloop.com/blog
+
+Blog Post
+
+https://n8n.io/workflows/5817-build-a-weekly-ai-trend-alerter-with-arxiv-and-weaviate/
 
 Infoproduct
 

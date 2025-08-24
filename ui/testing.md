@@ -1,5 +1,10 @@
 # User Interace Testing
 
+## Terms
+
+- Autonomous Testing
+- QA agent
+
 ## Types
 
 - A/B Testing

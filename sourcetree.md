@@ -10,22 +10,18 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Usage Homebrew
 brew install --cask sourcetree
+
+# Usage Chocolatey
+choco install -y sourcetree
 ```
 
 #### Linux
 
 - [SourceTree for Linux](https://community.atlassian.com/t5/Sourcetree-questions/SourceTree-for-Linux/qaq-p/255473)
 - [Alternatives to Sourcetree for Linux](https://alternativeto.net/software/sourcetree/?platform=linux)
-
-#### Chocolatey
-
-```sh
-choco install -y sourcetree
-```
 
 ### Tips
 
