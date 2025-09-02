@@ -11,6 +11,10 @@
 ### Initialize
 
 ```sh
+#
+firebase login
+
+#
 firebase init emulators
 ```
 

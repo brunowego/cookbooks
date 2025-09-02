@@ -1,0 +1,88 @@
+# WAHA
+
+<!--
+https://github.com/search?q=path%3Aapi%20path%3Aroute.ts%20content%3Awaha&type=code
+-->
+
+<!--
+https://github.com/RajaPrasetya/whatsapp-autoreply
+https://github.com/PedroMGSilva/futebolada/blob/main/app/.server/waha/client.ts
+https://github.com/dittorahmat/waha-gateway/tree/main
+
+https://github.com/hambrianglory/community-fee-management/blob/main/src/lib/whatsappService.ts
+
+https://github.com/wilsonguimaraesrock/modular-crm-pilot
+-->
+
+<!--
+https://github.com/MajidRaimi/waha-sdk
+https://github.com/ariaseta/waha.js
+-->
+
+**Keywords:** WhatsApp HTTP API (REST API)
+
+## Links
+
+- [Code Repository](https://github.com/devlikeapro/waha)
+- [Portal](https://portal.devlike.pro)
+- Docs
+  - [Security](https://waha.devlike.pro/docs/how-to/security)
+
+<!--
+## Learn
+
+https://www.youtube.com/watch?v=6wuzYsYSEAY
+-->
+
+## Docker
+
+### Network
+
+```sh
+docker network create workbench \
+  --subnet 10.1.1.0/24
+```
+
+### Running
+
+```sh
+export DOCKER_RUN_OPTS='--platform linux/amd64'
+
+docker run -d \
+  $(echo "$DOCKER_RUN_OPTS") \
+  -h waha \
+  -p 3000:3000 \
+  --name waha \
+  docker.io/devlikeapro/waha
+```
+
+```sh
+echo -e '[INFO]\thttp://127.0.0.1:3000'
+```
+
+<!--
+http://localhost:3000/dashboard
+http://localhost:3000/dashboard/event-monitor
+-->
+
+### Issues
+
+#### TBD
+
+```log
+Cannot read properties of null (reading 'screenshot')
+```
+
+<!--
+https://github.com/devlikeapro/waha/issues/538
+https://github.com/devlikeapro/waha/issues/967
+https://github.com/devlikeapro/waha/issues/1071
+-->
+
+TODO
+
+### Remove
+
+```sh
+docker rm -f waha
+```

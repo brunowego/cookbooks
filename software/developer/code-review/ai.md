@@ -13,6 +13,7 @@
 - [GitHub Copilot](/github/copilot/README.md)
 
 <!--
+https://sourcery.ai
 https://codara.io
 https://bito.ai/product/ai-code-review-agent
 https://codium.ai
@@ -31,6 +32,7 @@ TODO
 <!--
 https://githubnext.com/projects/copilot-for-pull-requests
 
+https://github.com/qodo-ai/pr-agent
 https://github.com/freeedcom/ai-codereviewer
 https://github.com/sturdy-dev/codeball-action
 https://github.com/zordonai/codereviewer

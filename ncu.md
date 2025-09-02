@@ -32,14 +32,17 @@ ncu --deep -ui
 npx npm-check-updates -ui --packageFile ./apps/web/package.json
 ```
 
-## Library
+### Tips
 
-### Configuration
+#### Ignored Packages
 
 ```sh
-cat << EOF ./.ncurc.yml
+cat << EOF > ./.ncurc.yml
+---
 upgrade: true
-# reject:
-#   - package-name
+reject:
+  - "@biomejs/biome"
+  - "@types/node"
+  - zod
 EOF
 ```

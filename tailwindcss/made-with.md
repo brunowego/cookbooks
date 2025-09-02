@@ -93,6 +93,8 @@ https://skalata.vc
 
 Hero / Header | Hero
 
+https://bossabox.com/
+https://www.cascading.ai
 https://sendbird.com/
 https://odoo.com/pt_BR
 https://ros-design-academy.webflow.io/courses/freelance-mastery
@@ -573,14 +575,6 @@ https://linear.app/henkiz/settings/account/profile
 
 https://account.hotmart.com
 
-Connect
-
-https://nstfkc.com/connect-modal
-
-Modal
-
-https://stitchmate-ten.vercel.app/demo
-
 Address
 
 https://mercadolivre.com.br/addresses/v2/address?app=MY_ML&addressId=1305296149
@@ -613,6 +607,7 @@ https://algora.io/platform
 
 Login / Sign In / Sign up
 
+https://www.udemy.com/join/passwordless-auth
 https://you.com/signin
 https://betterstack.com/users/sign-in#magic
 https://login.listkit.io/login
@@ -643,6 +638,7 @@ https://app.middleware.io/auth/login
 https://dash.reviews.io/login
 https://app.onmarathon.com/register
 
+https://zendly.com.br/auth/cadastro?source=home
 https://app.castmagic.io/users/sign-in
 https://app.plane.so
 https://chat.z3c.dev/auth/signup | https://github.com/z3cdotdev/chat
@@ -765,6 +761,9 @@ https://app.documenso.com/settings/webhooks
 
 Waitlist
 
+https://www.slane.app/
+https://www.tyform.com/
+https://sapaguard.app/
 https://palatialxr.com/sign-up-for-alpha
 https://conductorquantum.com
 https://zeropath.com
@@ -1084,6 +1083,7 @@ Cookie Consent
 
 Pricing
 
+https://mixpanel.com/pricing/
 https://startupr.xyz/pricing
 https://x.com/xmuhammadtalha/status/1899592097969176720
 https://mainstreetdata.com/pricing
@@ -1240,6 +1240,7 @@ https://callstack.com/events/tips-tricks-from-the-ultimate-guide-to-react-native
 
 Personal / Profile
 
+https://adria.studio
 https://morvalabs.com
 https://appstudio.design
 
@@ -1420,6 +1421,15 @@ Page Builder
 
 https://shots.so
 
+Modal
+
+https://stitchmate-ten.vercel.app/demo
+
+Rich Modal
+
+https://tasklypm.com/project/540/tasks
+https://app.coordinize.tech/henkiz/posts/cmene49d60009js049wjnnn6a
+
 Settings Modal
 
 https://freenote.app/settings | https://github.com/celerforge-dev/freenote
@@ -1427,6 +1437,10 @@ https://lesearch-app-two.vercel.app/graphview | https://github.com/TechForAqua/l
 https://app.basemulti.com/workspaces/wspgJAk3YvJvSyknZbP | https://github.com/basemulti/basemulti
 https://dashboard.formizee.com/defeated-queen/welcome | https://github.com/formizee/formizee
 https://screenshothis.com/dashboard?range=30d | https://github.com/screenshothis/screenshothis
+
+Connect Modal
+
+https://nstfkc.com/connect-modal
 
 Settings
 
@@ -1547,17 +1561,13 @@ https://app.infinitepay.io/missions/referral
 
 Portfolio
 
+https://www.dhairya.dev
 https://jamiepeak.co.uk
 https://philfolio-template.vercel.app
 
 Teams
 
 https://app.midday.ai/account/teams
-
-Rich Modal
-
-https://tasklypm.com/project/540/tasks
-https://app.coordinize.tech/henkiz/posts/cmene49d60009js049wjnnn6a
 
 Kanban
 
@@ -1612,6 +1622,7 @@ https://my.ka.app/signup/info
 https://flowbite.com/blocks/marketing/user-onboarding
 https://componentland.com/component/onboarding-page-2
 
+https://app.peec.ai/plan
 https://itz.am/onboard
 https://app.getpalm.com/signup/profile/business | https://app.getpalm.com/signup/profile/phone/confirm
 https://platform.tryprofound.com/welcome
@@ -1797,6 +1808,7 @@ https://mimicdesign.co/call
 
 Footer
 
+https://momentic.ai
 https://found.com
 https://careerpuck.com
 https://kanmon.com
@@ -1832,6 +1844,7 @@ https://zapal.tech
 https://conceptzilla.com
 https://verdely.framer.ai
 
+https://apptronik.com/
 https://budecosystem.com/
 https://azion.com/pt-br
 https://proofs.io

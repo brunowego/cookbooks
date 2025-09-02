@@ -37,6 +37,7 @@ Nuls
 - [AWS](/aws/README.md#backup-credentials)
 - VSCode
   - [Project Manager](/vscode/extensions/project-manager.md#backup)
+- [Zsh](/zsh.md#backup)
 
 ## License Deactivate
 

@@ -1,5 +1,10 @@
 # pngquant
 
+<!--
+zopfli
+oxipng
+-->
+
 **Keywords:** PNG Compression, PNG Optimization
 
 ## Links

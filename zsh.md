@@ -50,6 +50,20 @@ zsh --version | head -1
 
 ### Tips
 
+#### Backup
+
+**Dependency:** [GitHub CLI](/github/README.md#cli)
+
+```sh
+# Backup
+cat ~/.zshrc | gh gist create - -f .zshrc
+
+# Restore
+gh gist list
+
+gh gist view <hash> > ~/.zshrc
+```
+
 #### Reload
 
 ```sh

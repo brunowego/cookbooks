@@ -67,7 +67,16 @@ ln -s /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome /usr/local/
 
 ```sh
 # For MacOS
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window --app=http://localhost:3000/api/reference
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+  --new-window --app=http://localhost:13000/data-table/with-toolbar-filter
+
+#
+open -na "Google Chrome" --args \
+  --user-data-dir="/tmp/chrome-app-profile" \
+  --new-window \
+  --window-size=1440,900 \
+  --window-position=100,100 \
+  --app=http://localhost:13000/data-table/with-toolbar-filter
 ```
 
 #### Change Language

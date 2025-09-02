@@ -14,9 +14,8 @@ sudo hostess add g1.globo.com 127.0.0.1
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install hostess
 ```
 

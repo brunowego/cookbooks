@@ -95,6 +95,14 @@ lint:
 #### TBD
 
 ```log
+✖ Unable to detect an upstream commit on this branch: Failed to compute a merge base for this branch - this could be due to a shallow checkout, or if this is an orphaned branch.
+```
+
+TODO
+
+#### TBD
+
+```log
 WARN  Failed to create bin at /node_modules/.bin/trunk_bash. ENOENT: no such file or directory, open '/node_modules/@trunkio/launcher/trunk'
 ```
 

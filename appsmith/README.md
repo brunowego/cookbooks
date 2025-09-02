@@ -29,7 +29,7 @@ docker run -d \
   -p 9001:9001 \
   --name appsmith \
   --network workbench \
-  docker.io/appsmith/appsmith-ce:v1.10
+  docker.io/appsmith/appsmith-ce:v1.85
 ```
 
 > Wait! This process take a while.

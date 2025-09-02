@@ -32,9 +32,8 @@ https://github.com/SmartMoveSystems/keycloak-firebase-scrypt
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install firebase-cli
 ```
 

@@ -50,6 +50,8 @@ Hands-on – Prototype / POC
 
 <!--
 https://linkedin.com/jobs/preferences/application-preferences
+
+https://linkedin.com/in/brunowego/recent-activity/all
 -->
 
 ## Tools
