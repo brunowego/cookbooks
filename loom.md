@@ -16,8 +16,7 @@ https://github.com/mangledbottles/screenlink
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask loom
 ```

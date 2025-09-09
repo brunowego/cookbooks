@@ -1,6 +1,16 @@
 # Extend with Stripe
 
 <!--
+https://app.paradigmai.com/onboarding/purchase
+
+https://api.paradigmai.com/api/events?events=onboarding-completed
+
+https://api.paradigmai.com/api/organizations
+
+https://api.paradigmai.com/api/subscriptions
+-->
+
+<!--
 https://github.com/nextjs/saas-starter/tree/main/lib/payments
 
 https://vercel.com/templates/next.js/subscription-starter

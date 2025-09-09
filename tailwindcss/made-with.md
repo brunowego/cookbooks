@@ -94,7 +94,7 @@ https://skalata.vc
 Hero / Header | Hero
 
 https://bossabox.com/
-https://www.cascading.ai
+https://cascading.ai
 https://sendbird.com/
 https://odoo.com/pt_BR
 https://ros-design-academy.webflow.io/courses/freelance-mastery
@@ -533,6 +533,7 @@ https://pagedone.lemonsqueezy.com/affiliates
 
 Public Profile
 
+https://owner.com/careers/role?=a50c8e21-f712-4ac5-b0f4-1e47c1de7479
 https://thefriendclub.com/member/brunogomes
 https://wiza.co/d/claritisoftware/1805/ani-achugbue
 https://buymeacoffee.com/cristianmihai
@@ -543,6 +544,7 @@ https://dribbble.com/shots/24535002-Area-land-sales-service-visual-identity
 https://landingfolio.com/inspiration/post/miro-1
 https://bento.me/brunowego
 
+https://floguo.com/
 https://framer.com/marketplace/plugins/depth-grid
 https://geobrowser.io/space/DqiHGrgbniQ9RXRbcQArQ2
 https://manuarora.in
@@ -607,7 +609,7 @@ https://algora.io/platform
 
 Login / Sign In / Sign up
 
-https://www.udemy.com/join/passwordless-auth
+https://udemy.com/join/passwordless-auth
 https://you.com/signin
 https://betterstack.com/users/sign-in#magic
 https://login.listkit.io/login
@@ -638,6 +640,7 @@ https://app.middleware.io/auth/login
 https://dash.reviews.io/login
 https://app.onmarathon.com/register
 
+https://thenational.academy/sign-up
 https://zendly.com.br/auth/cadastro?source=home
 https://app.castmagic.io/users/sign-in
 https://app.plane.so
@@ -761,8 +764,8 @@ https://app.documenso.com/settings/webhooks
 
 Waitlist
 
-https://www.slane.app/
-https://www.tyform.com/
+https://slane.app/
+https://tyform.com/
 https://sapaguard.app/
 https://palatialxr.com/sign-up-for-alpha
 https://conductorquantum.com
@@ -968,6 +971,7 @@ https://omise.co
 https://localcan.com
 https://jobbliss.com
 
+https://schemeserve.factorialhr.com/
 https://tryprofound.com/
 https://torchapp.com/
 https://sellfy.com/
@@ -1103,6 +1107,7 @@ https://reviews.io/front/pricingplans
 https://umso.com/ai-website-builder
 https://localcan.com/#pricing
 
+https://open-launch.com/pricing
 https://kan.bn/#pricing
 https://gist.github.com/brunowego/7317e17b96a352b279ad06090ab89ff6
 https://volta.net/pricing
@@ -1561,7 +1566,8 @@ https://app.infinitepay.io/missions/referral
 
 Portfolio
 
-https://www.dhairya.dev
+https://briancasel.com/
+https://dhairya.dev
 https://jamiepeak.co.uk
 https://philfolio-template.vercel.app
 
@@ -1598,6 +1604,7 @@ https://itz.am/onboard | https://github.com/itzam-ai/itzam
 
 Usage
 
+https://app.agentset.ai/henkiz/settings
 https://lumeai.xyz/usage | https://github.com/C-W-D-Harshit/lume-ai
 https://itz.am/dashboard/usage | https://github.com/itzam-ai/itzam
 https://platform.aci.dev/usage | https://github.com/aipotheosis-labs/aci
@@ -1622,6 +1629,7 @@ https://my.ka.app/signup/info
 https://flowbite.com/blocks/marketing/user-onboarding
 https://componentland.com/component/onboarding-page-2
 
+https://app.paradigmai.com/onboarding/team
 https://app.peec.ai/plan
 https://itz.am/onboard
 https://app.getpalm.com/signup/profile/business | https://app.getpalm.com/signup/profile/phone/confirm
@@ -1844,6 +1852,8 @@ https://zapal.tech
 https://conceptzilla.com
 https://verdely.framer.ai
 
+https://exa.ai/
+https://paradigmai.com/
 https://apptronik.com/
 https://budecosystem.com/
 https://azion.com/pt-br

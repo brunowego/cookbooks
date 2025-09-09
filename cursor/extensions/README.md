@@ -1,5 +1,10 @@
 # Visual Studio Code (a.k.a. VS Code) Extensions
 
+<!--
+usernamehw.errorlens
+yoavbls.pretty-ts-errors
+-->
+
 ## Usage
 
 ```sh

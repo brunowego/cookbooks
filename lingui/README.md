@@ -99,6 +99,16 @@ const config: LinguiConfig = {
 export default config
 ```
 
+### Issues
+
+#### TBD
+
+```log
+useLingui hook was used without I18nProvider.
+```
+
+TODO
+
 ## CLI
 
 ### Installation

@@ -6,6 +6,13 @@ grep
 
 ## Tips
 
+### Search Branches
+
+```sh
+#
+git branch --list '*<text>*'
+```
+
 ### Search Text Across All Branches
 
 ```sh

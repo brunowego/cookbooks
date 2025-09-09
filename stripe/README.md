@@ -17,7 +17,8 @@ https://github.com/quenti-io/quenti/tree/main/packages/payments
   - [Settings]
     - [Team and security](https://dashboard.stripe.com/settings/team)
 - Docs
-  - [Testing](https://stripe.com/docs/testing)
+  - [Testing](https://docs.stripe.com/testing)
+    - [Cards by brand](https://docs.stripe.com/testing#cards-by-brand)
 
 ## Docs
 
@@ -31,6 +32,10 @@ https://github.com/quenti-io/quenti/tree/main/packages/payments
 # Using Homebrew
 brew tap stripe/stripe-cli
 brew install stripe
+
+# Using Scoop
+scoop bucket add stripe https://github.com/stripe/scoop-stripe-cli.git
+scoop install stripe
 ```
 
 ### Commands
@@ -52,7 +57,7 @@ stripe listen --forward-to localhost:4242/webhook
 stripe listen --forward-to localhost:3000/api/webhooks/stripe
 
 #
-stripe listen -f http://localhost:3000/api/webhooks/
+stripe listen -f http://localhost:3000/api/webhooks
 
 #
 stripe listen -f http://localhost:52384/api/payments/completed/webhook

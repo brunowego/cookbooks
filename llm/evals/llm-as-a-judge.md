@@ -4,6 +4,8 @@
 https://trulens.org | https://github.com/truera/trulens
 https://github.com/confident-ai/deepeval | https://deepeval.com
 
+https://tensorzero.com
+
 GitHub Actions
 
 https://github.com/marketplace/actions/test-llm-outputs
