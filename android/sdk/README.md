@@ -10,7 +10,7 @@
 ### Dependencies
 
 - [OpenJDK](/openjdk/README.md) (v8)
-- Linux
+- For Linux
   - [Kernel-based Virtual Machine (KVM)](/kvm.md)
 
 ### Installation

@@ -10,7 +10,6 @@ https://github.com/ArcadeCity/arcade/tree/main/apps/expo
 - [Code Repository](https://github.com/expo/expo)
 - [Main Website](https://expo.dev)
 - [Docs](https://docs.expo.dev)
-- [Expo Go](https://expo.dev/client)
 
 ## CLI
 
@@ -21,9 +20,8 @@ https://github.com/ArcadeCity/arcade/tree/main/apps/expo
 
 ### Installation
 
-#### Using NPM
-
 ```sh
+# Using NPM
 npm install expo-cli -g
 ```
 
@@ -48,6 +46,9 @@ expo config
 ```
 
 <!--
+#
+expo install --fix
+
 #
 expo start
 expo start --android

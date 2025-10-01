@@ -99,6 +99,8 @@ https://pagedone.io/blocks
 - [tailwindpdf](/tailwindpdf.md)
 
 <!--
+https://tailscan.com/gradients
+
 https://kigen.design/color
 https://tints.dev/palette/v1:YW1iZXJ8RjU5RTBCfDMwMHxwfDB8MHwwfDEwMHxh
 

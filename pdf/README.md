@@ -7,6 +7,7 @@ https://github.com/jonaslejon/malicious-pdf
 ## Tools
 
 - [Adobe Acrobat Reader](/adobe/acrobat-reader.md)
+- [QPDF](/qpdf.md) <!-- Remove password -->
 
 ## Tips
 

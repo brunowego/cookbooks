@@ -8,10 +8,13 @@ path:packages/ui path:components.json content:"https://ui.shadcn.com/schema.json
 
 <!--
 https://21st.dev | https://github.com/serafimcloud/21st
-https://www.kibo-ui.com/components/table
+https://kibo-ui.com/components/table
 -->
 
 <!--
+https://www.tinte.dev/
+https://shadcnmarketplace.com/
+https://shadcnblocks.com
 https://basecn.dev
 https://pro.tailark.com
 https://shadcn-extension.vercel.app | https://github.com/BelkacemYerfa/shadcn-extension

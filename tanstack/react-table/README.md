@@ -23,6 +23,11 @@ https://rowstack.io
 https://github.com/archit-p/react-notion-table
 https://github.com/archit-p/editable-react-table
 https://github.com/s-d-le/tanstack-react-table-mega-example
+
+Persistence State
+
+https://github.com/fredrikburmester/streamystats/blob/main/apps/nextjs-app/hooks/usePersistantState.tsx
+https://github.com/Delles/gestiune-magazin/blob/main/src/hooks/use-inventory-table.ts#L85-L102
 -->
 
 ## Links

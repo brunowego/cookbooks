@@ -2,15 +2,15 @@
 
 ## Libraries
 
-- [Boring Avatars](/boringavatars.md)
+- [Boring Avatars](/boringavatars.md) 🌟
 - [DiceBear](/dicebear.md)
 - [Profile Pic Maker](https://pfpmaker.com)
 - [Avvvatars](https://avvvatars.com)
 
 <!--
 https://avaaatars.com
-https://github.com/Mayandev/notion-avatar
-https://github.com/txstc55/ugly-avatar
+https://github.com/Mayandev/notion-avatar | https://notion-avatar.app
+https://github.com/txstc55/ugly-avatar | https://txstc55.github.io/ugly-avatar
 -->
 
 ## Placeholder

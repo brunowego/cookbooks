@@ -8,11 +8,8 @@
 
 ### Installation
 
-#### Homebrew
-
-#### APT
-
 ```sh
+# Using APT
 sudo apt update
 sudo apt -y install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
 ```

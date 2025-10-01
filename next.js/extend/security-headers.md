@@ -25,7 +25,7 @@ const ContentSecurityPolicy = {
     "'unsafe-inline'",
     "'unsafe-eval'",
     // 'https://*.vercel.app',
-    // 'https://www.google-analytics.com/',
+    // 'https://www.google-analytics.com',
     process.env.NEXT_PUBLIC_BASE_URL,
   ],
   // 'frame-src': [],

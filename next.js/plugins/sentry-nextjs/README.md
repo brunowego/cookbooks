@@ -225,6 +225,25 @@ Sentry.captureCheckIn({
 ### TBD
 
 ```log
+@acme/web:dev: [@sentry/nextjs] Automatically enabling browser source map generation for turbopack build.
+@acme/web:dev: [@sentry/nextjs] Source maps will be automatically deleted after being uploaded to Sentry. If you want to keep the source maps, set the `sourcemaps.deleteSourcemapsAfterUpload` option to false in `withSentryConfig()`. If you do not want to generate and upload sourcemaps at all, set the `sourcemaps.disable` option to true.
+```
+
+**Refer:** `./next.config.ts`
+
+```ts
+export default withSentryConfig(withMDX(nextConfig), {
+  // ...
+  sourcemaps: {
+    deleteSourcemapsAfterUpload: true,
+  },
+  // ...
+})
+```
+
+### TBD
+
+```log
 [@sentry/nextjs] WARNING: You are using the Sentry SDK with Turbopack (`next dev --turbo`). The Sentry SDK is compatible with Turbopack on Next.js version 15.3.0 or later. You are currently on 15.1.0. Please upgrade to a newer Next.js version to use the Sentry SDK with Turbopack. Note that the SDK will continue to work for non-Turbopack production builds. This warning is only about dev-mode.
 ```
 

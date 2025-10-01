@@ -11,4 +11,8 @@
 Abandoned
 
 https://next-shadcn-ui-table.vercel.app
+
+Database Level
+
+https://github.com/sadmann7/shadcn-table/pull/965
 -->

@@ -26,3 +26,7 @@ Semantic Kernel (Microsoft)
 Dust
 AutoGen (Microsoft)
 -->
+
+## Learn
+
+- [A Complete Guide To Vercel’s AI SDK // The ESSENTIAL Tool For Shipping AI Apps](https://www.youtube.com/watch?v=mojZpktAiYQ)

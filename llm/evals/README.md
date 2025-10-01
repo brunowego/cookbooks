@@ -20,7 +20,15 @@ https://github.com/search?q=path%3A.github%2Fworkflows%20path%3A.y%20content%3Al
 
 ## Tools
 
+- [DSPy](/dspy.md)
+- [LangChain](/langchain/README.md)
+- [Langfuse](/langfuse/README.md)
+- [LiteLLM](/litellm.md)
 - [OpenAI Evals](https://github.com/openai/evals)
+- [OpenPipe](https://openpipe.ai)
+- [OpenRouter](/openrouter.md)
+- [Portkey](/portkey.md)
+- [TensorZero](/tensorzero/README.md)
 
 <!--
 TruLens

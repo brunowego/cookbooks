@@ -80,4 +80,10 @@ Access blocked: This app’s request is invalid
 Error 400: redirect_uri_mismatch
 ```
 
+<!--
+Better Auth
+
+http://localhost:3001/api/auth/callback/google
+-->
+
 Add "Authorized redirect URIs" in "Client ID for Web application" section.

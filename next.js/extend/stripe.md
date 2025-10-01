@@ -11,6 +11,7 @@ https://api.paradigmai.com/api/subscriptions
 -->
 
 <!--
+https://github.com/wannabespace/conar/blob/main/apps/api/src/lib/stripe.ts
 https://github.com/nextjs/saas-starter/tree/main/lib/payments
 
 https://vercel.com/templates/next.js/subscription-starter
@@ -18,6 +19,10 @@ https://vercel.com/templates/next.js/subscription-starter
 https://github.com/CezarRoberto/payment-amqp-api
 https://github.com/webprodigies/fuzzie-production/blob/main/src/app/api/payment/route.ts
 https://github.com/vercel/nextjs-subscription-payments
+
+Expired
+
+https://app.midday.ai/
 -->
 
 ## Dependencies

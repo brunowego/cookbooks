@@ -37,6 +37,7 @@ https://marmelab.com/react-admin
 - [ToolJet](/tooljet.md) (AGPL-3.0)
 
 <!--
+https://github.com/rocket-admin/rocketadmin
 https://github.com/uibakery/self-hosted
 https://github.com/dashpresshq/dashpress (AGPL-3.0)
 https://github.com/YaoApp/yao (Apache-2.0)

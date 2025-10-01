@@ -3,6 +3,7 @@
 ## Links
 
 - [Main Website](https://cursor.com)
+- [Learn](https://cursor.com/learn)
 
 ## App
 

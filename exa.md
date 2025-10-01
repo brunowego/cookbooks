@@ -4,15 +4,11 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install exa
-```
 
-#### Zypper
-
-```sh
+# Using Zypper
 sudo zypper refresh
 sudo zypper install -y exa
 ```

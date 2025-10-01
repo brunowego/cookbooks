@@ -1,5 +1,7 @@
 # Vector Databases
 
+**Keywords:** Semantic Search
+
 ## Links
 
 - [Astra DB (Vector)](https://datastax.com/products/datastax-astra)

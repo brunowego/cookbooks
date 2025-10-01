@@ -2,5 +2,4 @@
 
 ## Links
 
-- [Top Apps](https://www.similarweb.com/pt/top-apps/apple)
-- [Top Apps](https://www.similarweb.com/pt/top-apps/google)
+- [Top Apps](https://similarweb.com/pt/top-apps/apple)

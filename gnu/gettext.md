@@ -2,6 +2,12 @@
 
 **Keywords:** Portable Object
 
+<!--
+pospell
+pofilter
+po-lint
+-->
+
 ## Links
 
 - [Main Website](https://gnu.org/software/gettext/)
@@ -10,29 +16,19 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install gettext
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install gettext libgettextpo-dev
-```
 
-#### YUM
-
-```sh
+# Using YUM
 sudo yum check update
 sudo yum -y install gettext-devel
-```
 
-#### APK
-
-```sh
+# Using APK
 apk update
 apk add gettext gettext-dev
 ```

@@ -131,6 +131,30 @@ export default {
 #### TBD
 
 ```log
+@acme/db:db:generate: No config path provided, using default 'drizzle.config.ts'
+@acme/db:db:generate: Reading config file '/Users/brunogomes/CodeHub/github.com/boilitdev/nextjs-journey/packages/db/drizzle.config.ts'
+@acme/db:db:generate: Error: ENOENT: no such file or directory, open 'src/migrations/meta/_journal.json'
+...
+@acme/db:db:generate:   errno: -2,
+@acme/db:db:generate:   code: 'ENOENT',
+@acme/db:db:generate:   syscall: 'open',
+@acme/db:db:generate:   path: 'src/migrations/meta/_journal.json'
+@acme/db:db:generate: }
+```
+
+**Refer:** `./src/migrations/meta/_journal.json`
+
+```sh
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": []
+}
+```
+
+#### TBD
+
+```log
 @acme/app:dev:  ⨯ ../../node_modules/.pnpm/pg-connection-string@2.9.1/node_modules/pg-connection-string/index.js:81:1
 @acme/app:dev: Module not found: Can't resolve 'fs'
 @acme/app:dev:   79 |

@@ -64,11 +64,18 @@ echo '/.secrets' >> ./.gitignore # locally
 echo '/.secrets' >> ~/.gitignore_global # globally
 ```
 
+<!--
+-W .
+--secret-file .secrets
+-->
+
 ### Usage
 
 ```sh
 # List actions
 act -l
+# For Apple M-series chip
+act -l --container-architecture linux/amd64
 
 act \
   -l \

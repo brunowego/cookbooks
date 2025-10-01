@@ -15,7 +15,7 @@ brew services start pgvector
 <!--
 SELECT * FROM pg_extension WHERE extname = 'vector';
 
-create extension if not exists vector;
+CREATE EXTENSION IF NOT EXISTS vector;
 -->
 
 ## Links

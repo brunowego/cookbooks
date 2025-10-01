@@ -26,6 +26,17 @@ https://dbgate.org/features/ndjson-viewer.html
 
 ## Tips
 
+<!-- ### Cursor
+
+```sh
+#
+cursor --install-extension dbaeumer.vscode-json-lines
+``` -->
+
+<!--
+https://open-vsx.org/extension/adrieankhisbe/vscode-ndjson
+-->
+
 ### Get Keys
 
 ```sh

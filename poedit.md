@@ -1,5 +1,7 @@
 # Poedit
 
+**Keywords:** Portable Object
+
 ## Links
 
 - [Main Website](https://poedit.net)

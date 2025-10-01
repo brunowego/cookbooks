@@ -9,6 +9,7 @@ https://github.com/trendy-design/llmchat
 ## Term
 
 - Foundation Model
+- Stateless
 
 ## Glossary
 
