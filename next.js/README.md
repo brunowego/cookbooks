@@ -251,6 +251,19 @@ echo '/out' >> ./.gitignore
 #### TBD
 
 ```log
+⨯ useSearchParams() should be wrapped in a suspense boundary at page "/users". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+```
+
+```tsx
+import { Suspense } from 'react'
+
+// ...
+;<Suspense>// ...</Suspense>
+```
+
+#### TBD
+
+```log
 @acme/web:dev: Module parse failed: Unexpected token (1:10)
 @acme/web:dev: You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
 @acme/web:dev: Attempted import error: '(.+?)' is not exported from '(.+?)'.
@@ -311,6 +324,12 @@ TODO
 @acme/app:dev: Try to install it into the project directory by running npm install import-in-the-middle from the project directory.
 ```
 
+**Refer:** `./.npmrc`
+
+```npmrc
+public-hoist-pattern[]=*import-in-the-middle*
+```
+
 **Refer:** `./next.config.ts`
 
 ```ts
@@ -320,13 +339,6 @@ const nextConfig: NextConfig = {
   serverExternalPackages: ['import-in-the-middle'],
 }
 // ...
-```
-
-**Refer:** `./.npmrc`
-
-```npmrc
-public-hoist-pattern[]=*import-in-the-middle*
-public-hoist-pattern[]=*require-in-the-middle*
 ```
 
 #### TBD

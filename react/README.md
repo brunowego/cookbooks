@@ -120,6 +120,30 @@ rafce
 ### TBD
 
 ```log
+A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
+```
+
+```ts
+// from
+const defaultValues = useMemo(
+  () => ({
+    username: user?.username,
+  }),
+  [user]
+)
+
+// to
+const defaultValues = useMemo(
+  () => ({
+    username: user?.username || '',
+  }),
+  [user]
+)
+```
+
+### TBD
+
+```log
 Type error: Type '{ children: ReactNode; }' has no properties in common with type 'IntrinsicAttributes'.
 ```
 

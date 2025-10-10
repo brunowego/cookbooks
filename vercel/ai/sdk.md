@@ -12,5 +12,5 @@ https://github.com/jacksonkasi0/BrightMind-AI
 - [Main Website](https://sdk.vercel.ai)
 
 <!--
-https://chat-sdk.dev
+https://chat-sdk.dev | https://github.com/vercel/ai-chatbot
 -->

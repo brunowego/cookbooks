@@ -112,15 +112,11 @@ TODO
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask trunk-io
-```
 
-#### Unix-like
-
-```sh
+# Using Shell
 curl -fsSL 'https://get.trunk.io' | bash -s -- -y
 ```
 
@@ -263,6 +259,15 @@ git config --unset core.hooksPath
 ```
 
 ### Issues
+
+#### TBD
+
+```log
+Errors getting upgrades:
+cli: Unable to verify downloaded update script. Trunk was not updated.
+```
+
+TODO
 
 #### TBD
 

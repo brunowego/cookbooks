@@ -14,6 +14,14 @@ https://registry.terraform.io/modules/terraform-aws-modules/pricing/aws/latest
 
 ## Issues
 
+### Wrong Credentials
+
+```log
+An error occurred (InvalidClientTokenId) when calling the GetCallerIdentity operation: The security token included in the request is invalid.
+```
+
+Verify the credentials are correct.
+
 ### Final Snapshot Identifier
 
 ```log

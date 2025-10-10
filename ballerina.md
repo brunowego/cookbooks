@@ -6,17 +6,15 @@ https://github.com/CORDEA/archivist
 
 ## Dependencies
 
-### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask homebrew/cask-versions/adoptopenjdk8
 ```
 
 ## Installation
 
-### Homebrew
-
 ```sh
+# Using Homebrew
 brew install ballerina
 ```
 
@@ -24,9 +22,8 @@ brew install ballerina
 
 ### MySQL
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 curl \
   -L 'http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar' \
   -o "$(brew --prefix ballerina)/bre/lib/mysql-connector-java-5.1.47.jar"

@@ -62,12 +62,18 @@ npx assistant-ui -h
 
 <!-- ### Usage
 
-```sh
 add
 create
 codemod
 upgrade
 update
+-->
+
+<!-- ### Using shadcn/ui
+
+```sh
+#
+npx shadcn@latest add https://r.assistant-ui.com/thread
 ``` -->
 
 ### Issues

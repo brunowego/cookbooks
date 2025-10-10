@@ -217,9 +217,9 @@ You must specify a region. You can also configure your region by running "aws co
 
 ```sh
 #
-export AWS_REGION='us-east-1'
+export AWS_REGION='us-east-1' # N. Virginia
 # or
-aws configure set default.region us-east-1
+aws configure set default.region us-east-1 # N. Virginia
 ```
 
 #### Wrong Profile Selected

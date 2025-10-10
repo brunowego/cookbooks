@@ -116,6 +116,21 @@ npx shadcn@latest diff -c ./packages/ui <name>
 ✔ Write configuration to components.json. Proceed? yes
 -->
 
+<!--
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@acme/typescript-config/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["dist", "node_modules"]
+}
+-->
+
 ### Issues
 
 #### TBD

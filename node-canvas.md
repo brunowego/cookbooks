@@ -47,3 +47,13 @@ const textWidth = Math.round(measureText({ text: '/', fontSize: 14 }).width)
 
 style={{ paddingRight: textWidth + 24 }}
 ```
+
+### Issues
+
+#### TBD
+
+```log
+@acme/app:build: Type error: Object literal may only specify known properties, and 'canvas' does not exist in type 'RenderParameters'.
+```
+
+TODO

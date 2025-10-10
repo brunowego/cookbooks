@@ -12,7 +12,7 @@
 
 ```sh
 # Using pip
-pip install aws-profile-manager
+pipx install aws-profile-manager
 ```
 
 ### Commands
@@ -41,7 +41,13 @@ apm profile-current
 
 #
 apm profile-list
+```
 
+### Tips
+
+#### Add Profile
+
+```sh
 #
 export AWS_PROFILE_NAME='<name>'
 export AWS_ACCESS_KEY_ID='<access-key>'
@@ -57,19 +63,28 @@ apm profile-add \
 apm profile-switch
 
 #
+apm profile-current
+
+#
 export AWS_DEFAULT_REGION='us-east-1'
 aws configure get profile.default.region
+```
 
+#### Remove Profile
+
+```sh
 #
 apm profile-remove \
   --aws-profile-name "$AWS_PROFILE_NAME" \
   --yes
+```
 
+#### Rotate Keys
+
+```sh
 #
 apm rotate-keys
 ```
-
-### Tips
 
 #### Monthly Rotate Keys
 
@@ -80,10 +95,23 @@ apm rotate-keys
 
 ### Issues
 
-#### TBD
+#### Missing Credentials File
 
 ```log
-UnboundLocalError: local variable 'defaults_backup' referenced before assignment
+UnboundLocalError: cannot access local variable 'defaults_backup' where it is not associated with a value
 ```
 
-TODO
+```sh
+#
+cat ~/.aws/credentials
+
+#
+mkdir -p ~/.aws
+touch ~/.aws/credentials
+
+#
+cat << EOF > ~/.aws/credentials
+[default]
+
+EOF
+```

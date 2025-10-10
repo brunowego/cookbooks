@@ -29,6 +29,7 @@ ulid
 ### Generate
 
 - [Using Base64](/base64.md#generate-secrets)
+- [Generate Secret](https://generate-secret.vercel.app/32)
 
 **Or:**
 

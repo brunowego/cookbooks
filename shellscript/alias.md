@@ -11,11 +11,15 @@ man alias
 ### Configuration
 
 ```sh
+touch ~/.aliases
+```
+
+<!-- ```sh
 #
 cat << EOF > ~/.aliases
 # ...
 EOF
-```
+``` -->
 
 ### Environment
 
