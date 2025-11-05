@@ -1,6 +1,14 @@
 # Chaos Engineering (a.k.a. Chaos Monkey)
 
 <!--
+DR
+
+Failover
+
+AWS Fault Injection Simulator
+-->
+
+<!--
 https://netflixtechblog.com/fit-failure-injection-testing-35d8e2a9bb2
 https://netflixtechblog.com/keeping-netflix-reliable-using-prioritized-load-shedding-6cc827b02f94
 

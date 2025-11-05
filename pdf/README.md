@@ -7,7 +7,14 @@ https://github.com/jonaslejon/malicious-pdf
 ## Tools
 
 - [Adobe Acrobat Reader](/adobe/acrobat-reader.md)
-- [QPDF](/qpdf.md) <!-- Remove password -->
+- [QPDF](/qpdf.md) <!-- Remove password | 10 first pages -->
+- [pdftoppm](/pdftoppm.md)
+
+## Types
+
+- Image-based (PNG, JPEG/JPG)
+- Scanned PDF
+- Text-based PDF
 
 ## Tips
 

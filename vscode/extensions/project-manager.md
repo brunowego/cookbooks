@@ -1,5 +1,9 @@
 # Visual Studio Code Project Manager
 
+## Links
+
+- [Code Repository](https://github.com/alefragnani/vscode-project-manager)
+
 ## Installation
 
 ```sh

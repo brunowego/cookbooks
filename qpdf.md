@@ -23,3 +23,11 @@ qpdf --check <filename>.pdf
 # Remove password
 qpdf --password=<password> --decrypt ./<input>.pdf ./<output>.pdf
 ```
+
+### Tips
+
+#### 10 first pages
+
+```sh
+qpdf ./<input>.pdf --pages . 1-10 -- ./<output>.pdf
+```

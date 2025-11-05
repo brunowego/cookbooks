@@ -12,5 +12,8 @@
 - [Wellfound](https://wellfound.com/jobs)
 
 <!--
+https://www.trueup.io/early-stage-startups
 https://jobright.ai
+https://startup.jobs
+https://www.indeed.com/q-early-stage-startup-jobs.html
 -->

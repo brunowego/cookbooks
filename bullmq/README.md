@@ -3,8 +3,12 @@
 **Keywords:** Message Queue, Job Queue, Backed by Redis
 
 <!--
+https://upqueue.io
+
 https://github.com/alexbudure/queuedash
 https://github.com/felixmosh/bull-board
+https://github.com/bee-queue/arena
+https://github.com/s-r-x/bull-monitor
 -->
 
 ## Links

@@ -98,8 +98,12 @@ https://skalata.vc
 
 Hero / Header | Hero
 
-https://www.tembo.io/
-https://www.freelancethings.co/
+https://salvy.com.br/numero-whatstapp-para-empresas
+https://flatastic-app.com/en/
+https://duna.com/
+https://qatchup.com
+https://tembo.io/
+https://freelancethings.co/
 https://campfire.ai/
 https://metronome.com/
 https://metronome.com/product-overview
@@ -195,6 +199,12 @@ https://gleap.io
 https://amplemarket.com
 https://tofu.com
 
+https://hunter.io/email-finder
+https://www.reversecontact.com/
+https://uplane.com/
+https://www.amoeb.ai/
+https://ampcode.com/free
+https://0.finance/
 https://salsa.dev/
 https://granola.ai/
 https://mindtools.com/
@@ -416,6 +426,10 @@ https://anara.com/library
 Notes
 
 https://anara.com/library
+
+Course
+
+https://github.com/Black4315/course | https://course-teal-ten.vercel.app
 
 Meta Connect
 
@@ -656,6 +670,8 @@ https://algora.io/platform
 
 Login / Sign In / Sign up
 
+https://app.salvy.com.br/sign-up
+https://duna.com/forms/get-in-touch
 https://app.heptabase.com/
 https://app.mellowflow.app/signup-email-form
 https://app.zeroeval.com/login
@@ -818,6 +834,7 @@ https://app.documenso.com/settings/webhooks
 
 Waitlist
 
+https://www.readartifact.com/
 https://app.zeroeval.com/waitlist
 https://fiberplane.com/waitinglist | https://github.com/fiberplane/fiberplane
 https://slane.app/
@@ -847,7 +864,7 @@ https://read.cv/open-roles
 Text Header Background / Text Decoration / Text Effect
 
 https://savvycal.com/reserve
-https://www.sequoiacap.com/
+https://sequoiacap.com/
 https://sinister-incorporated.vercel.app | https://github.com/simonknittel/sinister-incorporated
 https://skalata.vc/
 https://mindtools.com
@@ -873,7 +890,7 @@ https://vembi.vercel.app/pending-approval
 
 Mosaic / Section
 
-https://www.tembo.io
+https://tembo.io
 https://cabanarecruitment.com
 https://unlimit.com
 https://aeroband.net
@@ -945,7 +962,7 @@ https://fridafurniture.com (Shop by category)
 
 Hero Prompt
 
-https://www.reweb.so/
+https://reweb.so/
 https://pietrastudio.com
 https://teable.ai
 
@@ -1362,6 +1379,8 @@ https://sanity.io/manage/personal/project/wdbkf3ma
 https://coda.io/workspaces/ws-mmg-0_nDgK/docs
 https://app.netbird.io/peers | https://github.com/netbirdio/netbird
 
+https://app.glue.ai/ai
+https://app.tana.inc/welcome/app?wsid=zVMtEmUXXNoC
 https://braintrust.dev
 https://app.coordinize.tech/yonical
 https://template.openstatus.dev/dashboard/overview
@@ -1707,6 +1726,7 @@ https://llmgateway.io/dashboard/oPzB1lYySL9HqlK8AfBD/fcxG8O4NIcNiyixgTkCk/usage?
 
 Onboarding
 
+https://app.octadesk.com/onboarding/pains
 https://app.tembo.io
 https://brunowego.substack.com/publish/home?utm_source=menu
 https://datafa.st/dashboard/new
@@ -1724,6 +1744,7 @@ https://my.ka.app/signup/info
 https://flowbite.com/blocks/marketing/user-onboarding
 https://componentland.com/component/onboarding-page-2
 
+https://app.tana.inc/welcome/app
 https://app.paradigmai.com/onboarding/team
 https://app.peec.ai/plan
 https://itz.am/onboard
@@ -1928,8 +1949,9 @@ https://runware.ai
 
 Footer
 
+https://salvy.com.br/numero-whatstapp-para-empresas
 https://geniestudio.app/
-https://www.rox.com
+https://rox.com
 https://tiniliving.com/en/models/
 https://momentic.ai
 https://found.com

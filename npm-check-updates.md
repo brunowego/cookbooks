@@ -43,6 +43,5 @@ upgrade: true
 reject:
   - "@biomejs/biome"
   - "@types/node"
-  - zod
 EOF
 ```

@@ -15,15 +15,11 @@ Golang https://github.com/deepmap/oapi-codegen
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install openapi-generator
-```
 
-#### Scoop
-
-```sh
+# Using Scoop
 scoop install openapi-generator-cli
 ```
 

@@ -8,6 +8,11 @@ https://youtube.com/channel_switcher
 
 - [Watch History](https://youtube.com/feed/history)
 - [Comment History](https://youtube.com/feed/history/comment_history)
+- [All subscriptions](https://youtube.com/feed/channels)
+
+## Tools
+
+- [YouTube Unsubscriber](https://github.com/moutaouakkil/youtube-unsubscriber/blob/master/youtube-unsubscriber.js)
 
 ## Terms
 

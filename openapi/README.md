@@ -23,3 +23,9 @@ https://acme.tld/specs/v1/openapi.json
 https://ratemyopenapi.com
 https://doctave.com
 -->
+
+<!--
+SDK
+
+https://github.com/readmeio/api
+-->

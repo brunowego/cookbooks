@@ -53,6 +53,18 @@ style={{ paddingRight: textWidth + 24 }}
 #### TBD
 
 ```log
+@acme/web:dev:  ⨯ Error: Failed to load external module canvas: Error: Cannot find module '../build/Release/canvas.node'
+```
+
+<!--
+pnpm approve-builds
+-->
+
+TODO
+
+#### TBD
+
+```log
 @acme/app:build: Type error: Object literal may only specify known properties, and 'canvas' does not exist in type 'RenderParameters'.
 ```
 

@@ -11,8 +11,11 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Homebrew
 brew install --cask redisinsight
 ```
+
+<!--
+open /Applications/Redis\ Insight.app
+-->

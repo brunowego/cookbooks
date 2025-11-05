@@ -5,6 +5,7 @@
 <!--
 https://openalternative.co
 
+https://github.com/midday-ai/midday
 https://github.com/kanbn/kan
 https://github.com/haydenbleasel/eververse
 https://github.com/trendy-design/llmchat

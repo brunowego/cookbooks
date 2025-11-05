@@ -1,6 +1,21 @@
 # WAHA
 
 <!--
+Drizze ORM Schema
+
+https://github.com/yansircc/text2sql-demo/blob/main/src/server/db/schema.ts
+-->
+
+<!--
+https://github.com/AstraOnlineWeb/astracampaign
+https://github.com/mikig28/Synapse
+-->
+
+<!--
+http://localhost:13002/-json
+-->
+
+<!--
 https://github.com/search?q=path%3Aapi%20path%3Aroute.ts%20content%3Awaha&type=code
 -->
 
@@ -29,10 +44,24 @@ https://github.com/ariaseta/waha.js
   - [Security](https://waha.devlike.pro/docs/how-to/security)
 
 <!--
+https://waha.devlike.pro/support-us
+-->
+
+<!--
 ## Learn
 
 https://www.youtube.com/watch?v=6wuzYsYSEAY
+
+https://dev.to/waha/waha-scaling-how-to-handle-500-whatsapp-sessions-3fie
+https://waha.devlike.pro/docs/how-to/observability/
 -->
+
+## Engines
+
+- [GOWS](https://waha.devlike.pro/docs/engines/gows)
+- [NOWEB](https://waha.devlike.pro/docs/engines/noweb)
+- [VENOM](https://waha.devlike.pro/docs/engines/venom)
+- [WebJS](https://waha.devlike.pro/docs/engines/webjs)
 
 ## Docker
 

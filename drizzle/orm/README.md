@@ -132,7 +132,7 @@ export default {
 
 ```log
 @acme/db:db:generate: No config path provided, using default 'drizzle.config.ts'
-@acme/db:db:generate: Reading config file '/Users/brunogomes/CodeHub/github.com/boilitdev/nextjs-journey/packages/db/drizzle.config.ts'
+@acme/db:db:generate: Reading config file '/path/to/packages/db/drizzle.config.ts'
 @acme/db:db:generate: Error: ENOENT: no such file or directory, open 'src/migrations/meta/_journal.json'
 ...
 @acme/db:db:generate:   errno: -2,

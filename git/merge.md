@@ -2,6 +2,16 @@
 
 ## Tips
 
+### Clean Merged Branches
+
+```sh
+#
+git fetch -p
+
+#
+git branch --merged main | grep -v "main" | xargs git branch -d
+```
+
 ### Monorepo
 
 ```sh

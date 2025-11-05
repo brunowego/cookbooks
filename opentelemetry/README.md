@@ -11,6 +11,8 @@ https://github.com/dash0hq/otelbin
 - [Org. Repository](https://github.com/open-telemetry)
 - [Main Website](https://opentelemetry.io)
 - [Vendors](https://opentelemetry.io/ecosystem/vendors)
+- Docs
+  - [Collector Troubleshooting](https://opentelemetry.io/docs/collector/troubleshooting)
 
 ## Glossary
 

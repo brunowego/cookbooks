@@ -13,3 +13,4 @@ https://blog.localstack.cloud/2024-05-22-introducing-localstack-for-snowflake/
 ## Links
 
 - [Org. Repository](https://github.com/snowflake-labs)
+- [Status Page](https://status.snowflake.com)

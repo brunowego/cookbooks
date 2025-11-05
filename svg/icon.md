@@ -19,6 +19,7 @@
 - [Svgl](https://svgl.vercel.app)
 
 <!--
+https://icons.pqoqubbw.dev
 https://remixicon.com
 https://ionic.io/ionicons
 https://feathericons.com

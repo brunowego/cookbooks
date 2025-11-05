@@ -18,6 +18,7 @@ https://www.youtube.com/watch?v=aiy1v0Cun-s
 ## Links
 
 - [Main Website](https://getdbt.com)
+- [Status Page](https://status.getdbt.com)
 - Product
   - [Semantic Layer](https://getdbt.com/product/semantic-layer/)
 - Docs
@@ -30,3 +31,9 @@ https://www.youtube.com/watch?v=aiy1v0Cun-s
 ## Terms
 
 - Data Warehouse
+
+<!--
+## Learn
+
+https://getdbt.com/blog/extract-load-transform
+-->

@@ -10,36 +10,23 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install skopeo
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install skopeo
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install skopeo
-```
 
-#### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add skopeo
-```
 
-#### Zypper
-
-```sh
+# Using Zypper
 sudo zypper refresh
 sudo zypper install -y skopeo
 ```
@@ -57,6 +44,9 @@ skopeo --help
 skopeo login \
   -u 'brunowego' \
   docker.io
+
+#
+skopeo list-tags docker://docker.io/library/ubuntu
 
 #
 skopeo inspect \

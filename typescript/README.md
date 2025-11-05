@@ -114,6 +114,14 @@ EOF
 
 ### Issues
 
+#### TBD
+
+```log
+This comparison appears to be unintentional because the types 'any[] | null | undefined' and 'string' have no overlap. ts(2367)
+```
+
+TODO
+
 #### Missing TypeScript
 
 ```log

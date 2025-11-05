@@ -1,6 +1,6 @@
 # Maestro
 
-**Keywords:** End-to-end Testing
+**Keywords:** End-to-end Mobile Testing
 
 ## Links
 

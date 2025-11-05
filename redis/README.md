@@ -26,6 +26,13 @@ https://github.com/ekvedaras/redis-gui
 https://redsmin.com
 -->
 
+## Features
+
+- Key-value storage
+- Pub/Sub
+- Rate limiting
+- Session storage
+
 ## Providers
 
 ### Managed

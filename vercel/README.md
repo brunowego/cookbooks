@@ -26,6 +26,7 @@ https://epic-course-platform.vercel.app
 
 - [Code Repository](https://github.com/vercel/vercel)
 - [Main Website](https://vercel.com)
+- [Community](https://community.vercel.com)
 - [Edge Functions](https://vercel.com/features/edge-functions)
 - [Previews](https://vercel.com/features/previews#checks)
 - [Examples](https://github.com/vercel/examples)

@@ -715,3 +715,36 @@ https://github.com/vercel/next.js/discussions/63092
 -->
 
 TODO
+
+#### TBD
+
+```log
+@acme/app:start:  ⨯ Error: Module 18655 was instantiated because it was required from module 827968, but the module factory is not available.
+@acme/app:start:     at instantiateModule (.next/server/chunks/ssr/[turbopack]_runtime.js:707:15)
+@acme/app:start:     at getOrInstantiateModuleFromParent (.next/server/chunks/ssr/[turbopack]_runtime.js:738:12)
+@acme/app:start:     at Context.esmImport [as i] (.next/server/chunks/ssr/[turbopack]_runtime.js:228:20)
+@acme/app:start:     at module evaluation (.next/server/chunks/ssr/_3295a836._.js:1:628359)
+@acme/app:start:     at instantiateModule (.next/server/chunks/ssr/[turbopack]_runtime.js:715:9)
+@acme/app:start:     at getOrInstantiateModuleFromParent (.next/server/chunks/ssr/[turbopack]_runtime.js:738:12)
+@acme/app:start:     at Context.commonJsRequire [as r] (.next/server/chunks/ssr/[turbopack]_runtime.js:249:12) {
+@acme/app:start:   digest: '1161697321'
+@acme/app:start: }
+```
+
+<!--
+https://x.com/ozgrozer/status/1980896874686300291
+-->
+
+TODO
+
+#### TBD
+
+```log
+@acme/app:dev: Missing required default.js file for parallel route at /(auth)/@actions
+@acme/app:dev: The parallel route slot "@actions" is missing a default.js file. When using parallel routes, each slot must have a default.js file to serve as a fallback.
+@acme/app:dev: Create a default.js file at: /(auth)/@actions/default.js
+@acme/app:dev:
+@acme/app:dev: https://nextjs.org/docs/messages/slot-missing-default
+```
+
+TODO

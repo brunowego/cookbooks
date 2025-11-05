@@ -12,8 +12,8 @@ https://kibo-ui.com/components/table
 -->
 
 <!--
-https://www.tinte.dev/
-https://shadcnmarketplace.com/
+https://tinte.dev
+https://shadcnmarketplace.com
 https://shadcnblocks.com
 https://basecn.dev
 https://pro.tailark.com

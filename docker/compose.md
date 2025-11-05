@@ -11,26 +11,19 @@
 ### Installation
 
 ```sh
-# Darwin
+# Using Darwin
 curl \
   -L "https://github.com/docker/compose/releases/download/$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep tag_name | cut -d '"' -f 4)/docker-compose-Darwin-x86_64" \
   -o /usr/local/bin/docker-compose && \
     chmod +x /usr/local/bin/docker-compose
 
-# Linux
+# Using Linux
 sudo curl \
   -L "https://github.com/docker/compose/releases/download/$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep tag_name | cut -d '"' -f 4)/docker-compose-Linux-x86_64" \
   -o /usr/local/bin/docker compose && \
     sudo chmod +x /usr/local/bin/docker-compose
-```
 
-<!--
-brew install docker-compose
--->
-
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y docker-compose
 ```
 

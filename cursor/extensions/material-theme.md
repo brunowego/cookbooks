@@ -21,6 +21,6 @@ jq '."recommendations" += ["zhuangtongfa.Material-theme"]' "$HOME"/.cursor/exten
 jq '."workbench.colorTheme" |= "One Dark Pro"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
 #
-jq '."workbench.colorTheme" |= "Cursor Light"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 jq '."workbench.colorTheme" |= "Default Light Modern"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+jq '."workbench.colorTheme" |= "Cursor Light"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 ```

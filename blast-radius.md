@@ -17,10 +17,8 @@
 
 ### Installation
 
-### pip
-
 ```sh
-#
+# Using pip
 pip3 install -U blastradius
 ```
 

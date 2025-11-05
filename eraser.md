@@ -4,6 +4,8 @@
 
 - [Main Website](https://eraser.io)
 - [Icons](https://docs.eraser.io/docs/icons)
+- AI
+  - [Mermaid Diagram Editor](https://eraser.io/ai/mermaid-diagram-editor)
 
 <!--
 ⚓️ Architecture

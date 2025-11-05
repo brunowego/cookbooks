@@ -4,8 +4,33 @@
 
 - [Server-Sent Events (SSE)](/sse.md)
 
+## Learning
+
+- [Server-sent events are pretty cool](https://youtube.com/watch?v=_XQiU3mLNk0)
+
 <!--
+https://github.com/FaiChou/IntraPaste/blob/main/lib/sse.ts
+https://github.com/Mdevgaonkar/nextjs-stream-sse-example/blob/main/src/app/api/items/route.ts
+-->
+
+<!--
+https://github.com/alexanderkasten/use-next-sse
+
+https://github.com/MagnusHL/TimeCraftAI/blob/main/src/app/api/dashboard/progress/route.ts
+https://github.com/Gariton/ArtifactFetcher/blob/main/src/lib/progressBus.ts
+https://github.com/Kr8thor/web-audit-craft/blob/main/app/api/audits/%5Bid%5D/progress/route.ts
+https://github.com/20freitas/massmail/blob/main/app/api/progress/route.ts
+https://github.com/JurIVoelker/mc-detector-test/blob/main/src/app/api/sync-progress/route.ts
+https://github.com/sventime/lap-design-prompt/blob/main/src/app/api/progress/route.ts
+https://github.com/Montinou/stratixpro/blob/main/app/api/upload/okr-file/jobs/%5Bid%5D/progress/route.ts
+https://github.com/VitorSampaioAmaral/athena
+https://github.com/silentmot/ws-ops/blob/master/apps/web/src/app/api/exports/progress/route.ts
+
+https://github.com/CarbonNeuron/sse-nextjs-example
+https://github.com/rishi-raj-jain/upstash-nextjs-publish-messages-with-sse-example
+https://github.com/vcashwin/sse-nextjs-starter
 https://github.com/zircon-tech/sse
+https://github.com/aaronjordan/nextjs-sse-demo
 
 https://github.com/zhangdongsh/L-GPT/blob/main/src/app/api/azure/route.ts
 
