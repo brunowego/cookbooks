@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Main Website](https://claude.aiai)
+- [Main Website](https://claude.ai)
 
 ## App
 

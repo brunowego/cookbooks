@@ -94,8 +94,12 @@ Access to XMLHttpRequest at 'https://nyc3.digitaloceanspaces.com/sellit/user/01J
 
 <!--
 Access-Control-Allow-Origin
-X-Amz-Acl
 Content-Type
+X-Amz-Acl
+
+OR
+
+*
 -->
 
 TODO

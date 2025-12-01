@@ -69,6 +69,7 @@ https://shadcn-editor.vercel.app
 
 https://reui.io | https://github.com/keenthemes/reui
 https://mynaui.com
+https://tweakcn.com
 
 https://gradient.page/tools/shadcn-ui-theme-generator
 https://github.com/Tellay/shadcn-ui-themes

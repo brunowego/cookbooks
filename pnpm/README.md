@@ -78,9 +78,6 @@ pnpm link </absolute/path/to/folder>
 
 #
 pnpm <command>
-
-# Clean cache
-pnpm store prune
 ```
 
 <!--
@@ -101,6 +98,16 @@ pnpx <command>
 ```
 
 ### Tips
+
+#### Clean Cache
+
+```sh
+#
+pnpm cache list
+
+#
+pnpm store prune
+```
 
 #### Package Manager
 

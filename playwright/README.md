@@ -1,14 +1,6 @@
 # Playwright
 
-<!--
-https://github.com/allmycal/allmycal.com/tree/main/apps/web/playwright
-
-https://chromewebstore.google.com/detail/playwright-crx/jambeljnbnfbkcpnoiaedcabbgmnnlcd
-
-https://github.com/trpc/examples-next-prisma-starter/blob/main/playwright/smoke.test.ts
--->
-
-**Keywords:** UI Testing, E2E Testing
+**Keywords:** Test Automation, UI Testing, E2E Testing
 
 ## Links
 
@@ -17,6 +9,10 @@ https://github.com/trpc/examples-next-prisma-starter/blob/main/playwright/smoke.
 - [Docs](https://playwright.dev/docs)
   - [Intro](https://playwright.dev/docs/intro)
   - [Advanced](https://playwright.dev/docs/test-advanced)
+
+## Learning
+
+- [Learn Playwright](https://ray.run)
 
 ## Library
 
@@ -155,6 +151,13 @@ jq '."recommendations" += ["ms-playwright.playwright"]' "$PWD"/.vscode/extension
 ```
 
 ## CLI
+
+### Installation
+
+```sh
+# Using NPM
+npm install playwright -g
+```
 
 ### Commands
 

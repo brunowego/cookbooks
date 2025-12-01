@@ -5,6 +5,7 @@ Caserbin raises $10M in seed funding to help companies deliver a great candidate
 
 https://github.com/gravitational/teleport/blob/master/rfd/0000-rfds.md
 
+https://startupfa.me
 https://angel.co
 https://linktr.ee
 
@@ -25,6 +26,10 @@ re
 hub
 -->
 
+<!--
+Qual é o TAM, SAM e SOM da <Company>?
+-->
+
 ## Links
 
 - [500](https://500.co)
@@ -40,6 +45,10 @@ hub
 - [Awesome CTO](https://github.com/kuchin/awesome-cto)
 - [Google for Startups / Start](https://startup.google.com/start/)
 - [Why ‘Winner Takes All’ Startups Leave Everyone Behind](https://marker.medium.com/why-winner-takes-all-leaves-everyone-behind-19bd756e1610)
+
+## Marketplaces
+
+- [Betalist](https://betalist.com)
 
 ## Tools
 

@@ -3,6 +3,8 @@
 TODO
 
 <!--
+https://www.diceui.com/docs/components/file-upload
+
 https://github.com/databayt/hogwarts/blob/main/src/components/file-upload/file-uploader/file-upload-button.tsx
 
 https://github.com/max-de-bug/feather-app/blob/master/src/app/components/UploadButton.tsx

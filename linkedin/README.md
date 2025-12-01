@@ -3,6 +3,7 @@
 <!--
 Cover
 
+https://linkedin.com/company/assemblyai/about/
 https://linkedin.com/company/firstup-io
 https://linkedin.com/company/flight-science
 -->
@@ -49,6 +50,8 @@ Hands-on – Prototype / POC
 - [Developers](https://developer.linkedin.com)
 
 <!--
+https://linkedin.com/in/brunowego/recent-activity/reactions/
+
 https://linkedin.com/jobs/preferences/application-preferences
 
 https://linkedin.com/in/brunowego/recent-activity/all

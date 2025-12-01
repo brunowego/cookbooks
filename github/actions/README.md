@@ -71,6 +71,10 @@ Discord: https://github.com/hacs/integration/blob/main/.github/workflows/validat
 - [Feather - Simply beautiful open source icons](https://feathericons.com)
 - [Enabling debug logging](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging)
 
+<!--
+https://github.com/<owner>/<repo>/actions/metrics/usage
+-->
+
 ## Blog
 
 - [GitHub Actions: Skip pull request and push workflows with [skip ci]](https://github.blog/changelog/2021-02-08-github-actions-skip-pull-request-and-push-workflows-with-skip-ci/)

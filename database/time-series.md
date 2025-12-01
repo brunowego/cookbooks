@@ -2,7 +2,7 @@
 
 ## Tools
 
-- [ClickHouse](/clickhouse/README.md)
+- [ClickHouse](/clickhouse/README.md) 🌟
 - [Elasticsearch](/elastic/elasticsearch.md)
 - [InfluxDB](/influxdb.md) 🌟
 - [QuestDB](/questdb.md)

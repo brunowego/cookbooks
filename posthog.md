@@ -10,6 +10,7 @@ https://artifacthub.io/packages/helm/posthog-clickhouse/posthog
 
 - [Code Repository](https://github.com/PostHog/posthog)
 - [Main Website](https://posthog.com)
+- [Status Page](https://status.posthog.com)
 
 <!--
 https://posthog.com/docs/libraries/node

@@ -14,3 +14,4 @@ https://free-for.dev
 - [Inbox](https://workatastartup.com/conversations)
 - [Startup School](https://startupschool.org)
   - [Co-Founder Match / Inbox](https://startupschool.org/cofounder-matching/inbox)
+- [Requests for Startups](https://ycombinator.com/rfs)

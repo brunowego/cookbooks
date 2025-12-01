@@ -1,6 +1,10 @@
 # WAHA
 
 <!--
+Waiting for this message. This may take a while.
+-->
+
+<!--
 Drizze ORM Schema
 
 https://github.com/yansircc/text2sql-demo/blob/main/src/server/db/schema.ts
@@ -38,7 +42,9 @@ https://github.com/ariaseta/waha.js
 
 ## Links
 
-- [Code Repository](https://github.com/devlikeapro/waha)
+- Code Repository
+  - [WAHA](https://github.com/devlikeapro/waha)
+  - [WAHA Plus](https://github.com/devlikeapro/waha-plus)
 - [Portal](https://portal.devlike.pro)
 - Docs
   - [Security](https://waha.devlike.pro/docs/how-to/security)

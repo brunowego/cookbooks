@@ -50,6 +50,28 @@ await sleep(2000)
 #### TBD
 
 ```log
+A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
+```
+
+<!-- Missing defaultValues -->
+
+TODO
+
+#### TBD
+
+```log
+Cannot update a component (`Controller`) while rendering a different component (`Controller`). To locate the bad setState() call inside `Controller`, follow the stack trace as described in https://react.dev/link/setstate-in-render
+```
+
+<!--
+https://github.com/facebook/react/issues/18178#issuecomment-595846312
+-->
+
+TODO
+
+#### TBD
+
+```log
 Type '{ onChange: (...event: any[]) => void; onBlur: Noop; value: string | null | undefined; disabled?: boolean | undefined; name: "lastName"; ref: RefCallBack; type: "text"; }' is not assignable to type 'InputHTMLAttributes<HTMLInputElement>'.
   Types of property 'value' are incompatible.
     Type 'string | null | undefined' is not assignable to type 'string | number | readonly string[] | undefined'.

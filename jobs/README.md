@@ -12,6 +12,7 @@
 - [Wellfound](https://wellfound.com/jobs)
 
 <!--
+https://www.onstrider.com/jobs
 https://www.trueup.io/early-stage-startups
 https://jobright.ai
 https://startup.jobs

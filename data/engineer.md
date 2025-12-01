@@ -10,4 +10,6 @@ https://app.pluralsight.com/paths/skill/data-engineering-on-google-cloud-platfor
 https://linkedin.com/learning/data-science-foundations-data-engineering/welcome
 -->
 
-TODO
+## Design Patterns
+
+- Medallion Architecture

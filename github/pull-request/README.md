@@ -57,3 +57,17 @@ _Please include a summary of the change and which issue is fixed. Please also in
 
 _Please replace this line with instructions on how to test your changes, as well as any relevant images for UI changes._
 ```
+
+## Issues
+
+### TBD
+
+```log
+Repository rule violations found Changes must be made through a pull request. Required status check "Vercel – <project-name>" is expected.
+```
+
+<!--
+Disable the ruleset for the repository.
+-->
+
+TODO

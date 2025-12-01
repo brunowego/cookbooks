@@ -7,6 +7,8 @@ https://conductor.build
 ## Links
 
 - [Main Website](https://anthropic.com/claude-code)
+- [Product](https://claude.com/product/claude-code)
+- [Usage](https://claude.ai/settings/usage)
 
 ## Learn
 

@@ -25,7 +25,7 @@ npx knip -h
 #
 cat << EOF > ./knip.json
 {
-  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "\$schema": "https://unpkg.com/knip@5/schema.json",
   "ignore": [".trunk/**"]
 }
 EOF

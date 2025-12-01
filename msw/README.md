@@ -95,7 +95,7 @@ export const worker = setupWorker(...handlers)
 
 ```sh
 #
-./node_modules/.bin/msw init ./public
+./node_modules/.bin/msw init ./public --save
 ```
 
 ### Tips

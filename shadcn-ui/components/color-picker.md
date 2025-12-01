@@ -5,6 +5,8 @@
 - [React Color](https://github.com/uiwjs/react-color) <!-- https://uiwjs.github.io/react-color -->
 
 <!--
+https://color-icon-picker.vercel.app | https://github.com/czystyl/color-icon-picker
+
 https://github.com/web-padawan/vanilla-colorful | https://iamkulykov.com/vanilla-colorful
 https://github.com/omgovich/react-colorful | 382kB
 

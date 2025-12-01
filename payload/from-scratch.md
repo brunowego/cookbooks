@@ -1,5 +1,10 @@
 # From Scratch
 
+<!--
+https://github.com/svetlyr/asg-club/tree/master/apps/cms
+https://github.com/Syoongy/nakamichi-v2/tree/main/apps/cms/src
+-->
+
 ## Bootstrap
 
 ```sh

@@ -8,8 +8,6 @@
 
 ```sh
 playwright codegen -h
-#
-npx playwright codegen -h
 ```
 
 ## Usage

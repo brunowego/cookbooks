@@ -1,5 +1,11 @@
 # Extend with Server-Sent Events
 
+<!--
+id
+data
+event
+-->
+
 ## Related
 
 - [Server-Sent Events (SSE)](/sse.md)

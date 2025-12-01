@@ -16,6 +16,14 @@ PORT: 11434
 
 - [Open WebUI (Formerly Ollama WebUI)](/open-webui.md)
 
+<!-- ## App -->
+
+<!--
+cd ~/Library/Application\ Support/Ollama
+
+rm -fR ~/.ollama/models
+-->
+
 ## CLI
 
 ### Installation

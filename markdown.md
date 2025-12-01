@@ -20,6 +20,22 @@ https://medium.com/shiwaforce/notion-like-text-editor-with-ai-autocomplete-and-p
 
 - ~~Strikethrough~~
 
+<!--
+*text*
+_text_
+~text~
+`text`
+
+1. Item
+2. Item
+3. Item
+
+- Item
+- Item
+
+> text
+-->
+
 ## Tools
 
 - [Dillinger](https://dillinger.io)

@@ -1,5 +1,9 @@
 # Benchmark
 
+<!--
+https://benchmarks.do
+-->
+
 ## Terms
 
 - Execution Time

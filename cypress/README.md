@@ -1,5 +1,7 @@
 # Cypress
 
+**Keywords:** JavaScript Component Testing, E2E Testing, UI Testing
+
 <!--
 https://linkedin.com/learning/end-to-end-javascript-testing-with-cypress-io/test-automation-with-javascript
 

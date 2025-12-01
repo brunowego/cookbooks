@@ -251,6 +251,14 @@ echo '/out' >> ./.gitignore
 #### TBD
 
 ```log
+A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+```
+
+TODO
+
+#### TBD
+
+```log
 ⨯ useSearchParams() should be wrapped in a suspense boundary at page "/users". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
 ```
 
@@ -733,6 +741,10 @@ TODO
 
 <!--
 https://x.com/ozgrozer/status/1980896874686300291
+-->
+
+<!--
+Rollback to Next.js version 15.x.
 -->
 
 TODO
