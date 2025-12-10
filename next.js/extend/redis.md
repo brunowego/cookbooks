@@ -7,3 +7,18 @@
 <!--
 https://github.com/wannabespace/conar/blob/main/apps/api/src/lib/redis.ts
 -->
+
+## Issues
+
+### TBD
+
+```log
+[ioredis] Unhandled error event: Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+```
+
+<!--
+https://upstash.com/docs/redis/troubleshooting/econn_reset
+-->
+
+TODO

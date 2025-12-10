@@ -44,6 +44,7 @@ https://sharerelay.com
 
 Empty State / Placeholder
 
+https://www.evaly.io/app
 https://app.formcarry.com
 https://dashboard.lusha.com/enrich/workflows/onboarding
 https://dashboard.lusha.com/enrich/csv
@@ -399,6 +400,7 @@ https://mintlify.com/customers
 
 Notifications
 
+https://www.evaly.io/app/settings?tab=notifications
 https://app.frame.so/company/qgZKo5rL/settings/account/notifications
 https://productlane.com/settings/notifications
 https://whop.com/account/general
@@ -506,6 +508,7 @@ https://you.com
 
 Chatroom / Messages
 
+https://sellmore.vercel.app/dashboard?contactSidebar=hidden | https://github.com/Agustin-Delgado/sellmore
 https://realtime-chat-app-gilt-nine.vercel.app/dashboard/chat/e124996a-a440-47f1-b67e-738df9e972ca--e68e3bff-2175-4fa2-939d-d299a2f561d7
 https://shark-chat.vercel.app | https://github.com/fuma-nama/shark-chat-js
 https://memo.ambe.dev | https://github.com/ammarmbe/memo
@@ -548,6 +551,7 @@ https://paraform.com/help
 
 Docs
 
+https://www.evaly.io/docs
 https://coda.io/workspaces/ws-mmg-0_nDgK/docs
 https://modal.com/docs
 https://liveblocks.io/docs
@@ -821,6 +825,7 @@ https://unsubscribe.resend.com/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb
 
 Sign In OTP
 
+https://www.evaly.io/verify-email
 https://bahar.dev/login | https://github.com/Shunseii/bahar
 https://buymeacoffee.com/login
 https://app.allo.restaurant/login
@@ -1351,6 +1356,7 @@ Maintenance
 
 Contact
 
+https://www.evaly.io/contact
 https://helptix.adslink.id/request-demo
 https://outloud.co/start-a-project
 https://heyo.is/contact
@@ -1880,6 +1886,7 @@ https://llmgateway.io/dashboard/oPzB1lYySL9HqlK8AfBD/fcxG8O4NIcNiyixgTkCk/usage?
 
 Onboarding
 
+https://www.octolane.com/onboarding
 https://visitors.now/register
 https://app.maybe.co/onboarding/interests
 https://app.wellapp.ai/onboarding
@@ -1965,6 +1972,7 @@ https://app.planetscale.com/cloken/settings/beta-features
 
 Billing
 
+https://www.evaly.io/app/settings?tab=billing
 https://publish.buffer.com/settings/billing
 https://app.planetscale.com/cloken/settings/billing
 https://liveblocks.io/dashboard/SywVjn6Ertu-ji8SSOqB2/settings/billing
@@ -1975,8 +1983,10 @@ https://app.planetscale.com/cloken/settings/authentication
 
 Members
 
+https://www.evaly.io/app/settings?tab=members
 https://app.planetscale.com/cloken/settings/members
 https://liveblocks.io/dashboard/4klRfdewEcW7k-oOL4mpY/members/invitations
+https://app.tembo.io/bruno-s-workspace-1759164666/settings/workspace/members
 
 Accept Invitation
 

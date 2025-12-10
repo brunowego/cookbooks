@@ -3,6 +3,9 @@
 TODO
 
 <!--
+https://github.com/ouestlabs/audio-ui
+https://ui.elevenlabs.io/
+
 https://github.com/search?q=path%3Ause+path%3Aaudio+path%3Arecord+path%3A.ts&type=code
 
 https://shadcn-ui-audio-recorder-with-visualizer.vercel.app

@@ -14,9 +14,8 @@ https://proxyman.io
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask charles
 ```
 

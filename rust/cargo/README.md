@@ -18,20 +18,15 @@ path:packages path:Cargo.toml
 
 ### Installation
 
-#### Darwin
-
-Included in Rust install.
-
-#### APT
-
 ```sh
+# Using Darwin
+# Included in Rust install.
+
+# Using APT
 sudo apt update
 sudo apt -y install cargo
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 
 # Repo: EPEL

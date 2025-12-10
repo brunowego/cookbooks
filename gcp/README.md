@@ -72,7 +72,7 @@ gcloud config configurations create <org-name>
 gcloud auth list
 
 #
-gcloud config set account <account>
+# gcloud config set account <account>
 
 #
 gcloud auth login

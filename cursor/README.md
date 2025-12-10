@@ -4,6 +4,7 @@
 
 - [Main Website](https://cursor.com)
 - [Learn](https://cursor.com/learn)
+- [Dashboard](https://cursor.com/dashboard)
 
 ## App
 

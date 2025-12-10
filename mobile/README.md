@@ -2,6 +2,17 @@
 
 ![Pipeline](/assets/images/fastlane/pipeline.jpeg)
 
+<!--
+Mobile Breakpoints
+
+768
+1024
+1366
+1400
+1440
+1680
+-->
+
 ## Terms
 
 - International Mobile Equipment Identity (IMEI)

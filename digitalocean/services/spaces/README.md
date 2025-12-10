@@ -80,6 +80,8 @@ https://stackoverflow.com/questions/75596632/digitalocean-spaces-presigned-link-
 -->
 
 <!--
+Advanced CORS Options
+
 https://www.digitalocean.com/community/questions/why-can-i-use-http-localhost-port-with-cors-in-spaces
 
 https://cloud.digitalocean.com/spaces/sellit/settings?i=69f64f

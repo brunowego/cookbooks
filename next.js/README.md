@@ -741,6 +741,7 @@ TODO
 
 <!--
 https://x.com/ozgrozer/status/1980896874686300291
+https://github.com/zaidmukaddam/auth-turbo-repo/blob/main/BUG_REPORT.md?plain=1
 -->
 
 <!--
@@ -748,6 +749,10 @@ Rollback to Next.js version 15.x.
 -->
 
 TODO
+
+<!--
+next build --webpack
+-->
 
 #### TBD
 

@@ -4,6 +4,10 @@
 
 - [Exporting Development Environment Variables](https://vercel.com/docs/cli/env#exporting-development-environment-variables)
 
+## Utils
+
+- [Environment Variables](https://vevd.vercel.app)
+
 ## Commands
 
 ```sh

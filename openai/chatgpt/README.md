@@ -40,6 +40,31 @@ Try use a VPN, with US location, to access the website.
 brew install --cask chatgpt
 ```
 
+### Issues
+
+#### TBD
+
+```log
+You've reached the maximum length for this conversation, but you can keep talking by starting a new chat.
+```
+
+TODO
+
+<!--
+Please create a comprehensive summary of our entire conversation that I can use to continue in a new chat. Include:
+
+1. Main Topic/Project: What we've been working on or discussing
+2. Key Decisions Made: Any important choices, preferences, or directions we agreed on
+3. Current Progress: Where we are in the project/discussion and what's been completed
+4. Pending Tasks: What still needs to be done or discussed
+5. Important Context: Any specific requirements, constraints, or background information that's essential
+6. Code/Content Created: Brief descriptions of any code, documents, or other content we've developed (include key snippets if critical)
+7. Problems Solved: Any issues we resolved and how
+8. Next Steps: What we were about to do or should focus on next
+
+Format this as a clear, structured summary that I can paste into a new conversation to pick up exactly where we left off.
+-->
+
 ## CLI
 
 ### Installation

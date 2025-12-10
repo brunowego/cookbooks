@@ -53,22 +53,15 @@ https://github.com/iAverages/sei
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install rust
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install rustc
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 
 # Repo: EPEL

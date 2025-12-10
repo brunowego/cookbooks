@@ -11,7 +11,7 @@
 <!--
 ##
 
-https://www.adobe.com/acrobat/online/ocr-pdf.html
+https://adobe.com/acrobat/online/ocr-pdf.html
 -->
 
 ## Tools

@@ -13,6 +13,7 @@ https://www.toptal.com/designers/subtlepatterns/tag/icon/
 - [SVG Minifier](https://svgminify.com)
 - [SVG Pattern Generator](https://svg-pattern-generator.vercel.app)
 - [SVG to Data URI converter](https://codepen.io/elliz/details/ygvgay)
+- [Svgl](https://svgl.vercel.app)
 - [URL-encoder for SVG](https://yoksel.github.io/url-encoder)
 
 ### Browser

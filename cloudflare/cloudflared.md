@@ -36,27 +36,53 @@ cloudflared tunnel login
 cloudflared tunnel list
 
 #
-cloudflared tunnel create <name>
-cloudflared tunnel create local
+export TUNNEL_NAME='<tunnel-name>'
 
 #
-cloudflared tunnel route dns <name> <name>.<domain>
+cloudflared tunnel create "$TUNNEL_NAME"
 
 #
-cloudflared tunnel run <name>
+export TUNNEL_ID='<tunnel-uuid>'
+export DOMAIN='<domain>'
 
+#
+cloudflared tunnel info "$TUNNEL_ID"
+
+#
+cat << YAML > ~/.cloudflared/config.yml
+tunnel: $TUNNEL_NAME
+credentials-file: $HOME/.cloudflared/$TUNNEL_ID.json
+
+ingress:
+  - hostname: local.$DOMAIN
+    service: http://localhost:3001
+  - service: http_status:404
+YAML
+
+#
+cat ~/.cloudflared/config.yml
+
+#
+cloudflared tunnel ingress validate
+cloudflared tunnel ingress rule https://local.$DOMAIN
+
+#
+cloudflared tunnel run "$TUNNEL_NAME"
+
+#
+cloudflared tunnel route dns "$TUNNEL_NAME" "local.$DOMAIN"
+
+#
+cloudflared tunnel cleanup <tunnel-name>
+cloudflared tunnel delete <tunnel-name>
+```
+
+<!--
 #
 cloudflared tunnel route ip list
 # cloudflared tunnel route ip add
 cloudflared tunnel route ip show
-
-#
-cloudflared tunnel info <name>
-
-#
-cloudflared tunnel cleanup <name>
-cloudflared tunnel delete <name>
-```
+-->
 
 <!--
 cloudflared tunnel --url http://localhost:3000
@@ -64,22 +90,22 @@ cloudflared tunnel --url http://localhost:3000
 
 ### Tips
 
-#### TBD
+<!-- #### TBD
 
 ```sh
 #
-# ~/.cloudflared/config.yml
+ls ~/.cloudflared
 
 #
-cloudflared tunnel --config ./.cloudflared/config.yml ingress validate
-cloudflared tunnel --config ./.cloudflared/config.yml ingress rule https://local-app.<domain>
+cloudflared tunnel --config ~/.cloudflared/config.yml ingress validate
+cloudflared tunnel --config ~/.cloudflared/config.yml ingress rule https://local-app.<domain>
 
 #
 cloudflared tunnel --config ./.cloudflared/config.yml route dns local local-app.<domain>
 
 #
 cloudflared tunnel --config ./.cloudflared/config.yml run
-```
+``` -->
 
 ### Issues
 

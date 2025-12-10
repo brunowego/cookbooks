@@ -83,7 +83,7 @@ output
 
 ## References
 
-- [Releases](https://releases.hashicorp.com/terraform/)
+- [Releases](https://releases.hashicorp.com/terraform)
 
 ## Tools
 
@@ -349,6 +349,27 @@ https://www.youtube.com/watch?v=uFaMUS6Z9fI
 -->
 
 ### Issues
+
+#### TBD
+
+```log
+Initializing the backend...
+╷
+│ Error: Failed to read organization "<organization>" at host app.terraform.io
+│
+│   on main.tf line 3, in terraform:
+│    3:     organization = "<organization>"
+│
+│ The "remote" backend encountered an unexpected error while reading the organization settings: organization "<organization>" at host app.terraform.io not found.
+│
+│ Please ensure that the organization and hostname are correct and that your API token for app.terraform.io is valid.
+```
+
+<!--
+Try create a new token for the organization.
+-->
+
+TODO
 
 #### Wrong Execution Mode
 

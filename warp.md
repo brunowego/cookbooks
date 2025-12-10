@@ -1,0 +1,15 @@
+# Warp
+
+## Links
+
+- [Org. Repository](https://github.com/warpdotdev)
+- [Main Website](https://warp.dev)
+
+## App
+
+### Installation
+
+```sh
+#
+brew install --cask warp
+```

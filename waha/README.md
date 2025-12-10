@@ -105,6 +105,16 @@ http://localhost:3000/dashboard/event-monitor
 #### TBD
 
 ```log
+Server connection failed
+WAHA (https://waha-621359962043.us-east1.run.app) is not connected.
+Please make sure it's online and set right API key in the configuration.
+```
+
+TODO
+
+#### TBD
+
+```log
 Cannot read properties of null (reading 'screenshot')
 ```
 

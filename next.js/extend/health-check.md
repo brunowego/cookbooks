@@ -1,6 +1,12 @@
 # Extend with Health Check
 
 <!--
+/api/health/services
+
+https://github.com/search?q=path%3Ahealth%2Fservices%20path%3Aroute.ts&type=code
+-->
+
+<!--
 https://github.com/kikuchi0790/ukfr-smbc-app/blob/main/app/api/health/route.ts | https://ukfr-smbc-app.vercel.app/api/health
 
 https://github.com/I360I/CloudGreet-Website/blob/main/app/api/admin/health/route.ts | https://cloud-greet-website.vercel.app/api/admin/health

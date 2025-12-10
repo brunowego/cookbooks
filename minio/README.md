@@ -6,6 +6,10 @@ helm3 install minio --namespace minio --create-namespace minio/minio-operator --
 https://github.com/jsa4000/Observable-Distributed-System/blob/7601330d7cba1532857b9933c7e673f311a50e44/kubernetes/manifests/minio-create-buckets.yaml
 -->
 
+<!--
+https://github.com/Jiangwlee/DeepSeek-OCR-Service/blob/main/docker-compose.yml
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/minio/minio)
