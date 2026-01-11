@@ -22,9 +22,8 @@ https://app.pluralsight.com/library/courses/writing-burp-suite-macros-plugins/ta
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install burp-suite
 ```
 

@@ -41,7 +41,7 @@ cat << EOF > ./.ncurc.yml
 ---
 upgrade: true
 reject:
-  - "@biomejs/biome"
-  - "@types/node"
+  - '@biomejs/biome'
+  - '@types/node'
 EOF
 ```

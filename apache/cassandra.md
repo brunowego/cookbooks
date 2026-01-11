@@ -1,6 +1,10 @@
 # Apache Cassandra
 
 <!--
+https://www.youtube.com/watch?v=bhw4-Kq_RPs
+-->
+
+<!--
 https://github.com/instaclustr/cassandra-operator
 
 https://app.pluralsight.com/library/courses/cassandra-developers/table-of-contents
@@ -10,11 +14,18 @@ https://app.pluralsight.com/library/courses/spark-kafka-cassandra-applying-lambd
 https://linkedin.com/learning/cassandra-data-modeling-essential-training/welcome
 -->
 
-**Keywords:**: NoSQL
+<!--
+RF / 2+1
+
+Eq. 10 / 2 = 5 + 1 = 6
+-->
+
+**Keywords:**: NoSQL, Sharding, Quorum
 
 ## Terms
 
 - Cassandra Query Language (CQL)
+- Replication Factor (RF)
 
 ## Docker
 

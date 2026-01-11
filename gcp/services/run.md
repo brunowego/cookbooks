@@ -1,5 +1,11 @@
 # Google Cloud Run
 
+## Links
+
+- [Console](https://console.cloud.google.com/run/overview)
+
+## CLI
+
 ```sh
 #
 gcloud secrets create dockerhub-auth \
@@ -48,9 +54,7 @@ gcloud run deploy waha \
   --cpu=1 \
   --memory=512Mi \
   --timeout=300s
-```
 
-```sh
 gcloud projects add-iam-policy-binding switec \
   --member="user:brunowego@gmail.com" \
   --role="roles/run.admin"
@@ -113,10 +117,16 @@ gcloud run services update waha \
   --project=switec \
   --region=us-east1 \
   --update-env-vars="RESTART_TIME=$(date +%s)"
-```
 
-```sh
 gcloud run services delete waha \
   --project=switec \
   --region=us-east1
 ```
+
+<!--
+gcloud run services update waha --project=switec --region=us-east1 --update-env-vars="RESTART_TIME=$(date +%s)"
+
+gcloud artifacts repositories list --project=switec --location=us-east1
+
+gcloud secrets list --project=switec --filter="name:docker OR name:waha"
+-->

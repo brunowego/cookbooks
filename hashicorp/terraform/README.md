@@ -166,6 +166,9 @@ terraform -h
 terraform login app.terraform.io
 
 cat ~/.terraform.d/credentials.tfrc.json
+
+# or
+export TF_TOKEN_app_terraform_io='<token>'
 ```
 
 <!--

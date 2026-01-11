@@ -5,6 +5,20 @@ Waiting for this message. This may take a while.
 -->
 
 <!--
+Text: https://gist.github.com/brunowego/ffe25b1659134d4500e4052297701d94
+File: https://gist.github.com/brunowego/22c67976b43135a46e8b3100d1ba2701
+Image: https://gist.github.com/brunowego/5a0c846fbe23f1a7cf76f3cbca065638
+Video: https://gist.github.com/brunowego/6d3e42a8d54bd02c7e6eea6ea4cb5188
+Photo: https://gist.github.com/brunowego/8b376f06fff467f7aad5b0f1ab8c3908
+Audio: https://gist.github.com/brunowego/7eec938611c4ea3aef248a3b09018b70
+Contact: https://gist.github.com/brunowego/9209bab1e265393d26e0891bd2802187
+Poll: https://gist.github.com/brunowego/fc54e6cf6451df5bade3c6e8b99253cd
+Event: https://gist.github.com/brunowego/fdbe04d4d28c1d9b0af4b1e0a5fd39f7
+New Sticker: https://gist.github.com/brunowego/ffad0be5695f4a6f8a9f062dc3468ffd
+Voice Message: https://gist.github.com/brunowego/2a7b534e65a7e4ab88cc8c85430bbc1d
+-->
+
+<!--
 Drizze ORM Schema
 
 https://github.com/yansircc/text2sql-demo/blob/main/src/server/db/schema.ts

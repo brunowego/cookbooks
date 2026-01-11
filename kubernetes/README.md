@@ -68,7 +68,14 @@ dataeng
 ## Kubernetes Special Interest Groups (SIGs)
  -->
 
-## Local Kubernetes
+## Kubernetes Orchestration
+
+- [Amazon Elastic Kubernetes Service (EKS)](/aws/services/eks.md)
+- [Kubernetes Operations (kOps)](/kops/README.md) 🌟
+- [Rancher](/rancher.md)
+- [Red Hat OpenShift](/openshift.md)
+
+### For Local Development
 
 - [K3s](/k3s.md)
 - [Kubernetes in Docker (kind)](/kind.md)

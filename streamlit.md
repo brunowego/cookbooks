@@ -13,13 +13,15 @@ https://github.com/alejandro-ao/chat-with-websites
 ## Links
 
 - [Code Repository](https://github.com/streamlit/streamlit)
+- [Main Website](https://streamlit.io)
 
 ## CLI
 
 ### Installation
 
 ```sh
-pip install streamlit
+# Using pipx
+pipx install streamlit
 ```
 
 ### Using

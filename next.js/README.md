@@ -251,6 +251,35 @@ echo '/out' >> ./.gitignore
 #### TBD
 
 ```log
+@acme/app:build: ✓ Compiled successfully in 22.0s
+@acme/app:build: ✓ Finished TypeScript in 8.4s
+  Collecting page data using 11 workers  .TypeError: a is not a function
+@acme/app:build:     at d (.next/server/chunks/1979.js:1:67282)
+@acme/app:build:     at async (.next/server/chunks/1979.js:1:2593)
+
+> Build error occurred
+Error: Failed to collect page data for /api/v1/webhooks/waha
+@acme/app:build:     at ignore-listed frames {
+@acme/app:build:   type: 'Error'
+@acme/app:build: }
+@acme/app:build:  ELIFECYCLE  Command failed with exit code 1.
+@acme/app:build:  ELIFECYCLE  Command failed with exit code 1.
+@acme/app:build: ERROR: command finished with error: command (/path/to/platform/apps/app) ~/.volta/tools/image/pnpm/10.23.0/bin/pnpm run build exited (1)
+@acme/app#build: command (/path/to/platform/apps/app) ~/.volta/tools/image/pnpm/10.23.0/bin/pnpm run build exited (1)
+```
+
+<!--
+https://github.com/vercel/next.js/issues/86132
+
+https://github.com/vercel/next.js/discussions/86492
+https://github.com/vercel/next.js/discussions/86140
+-->
+
+TODO
+
+#### TBD
+
+```log
 A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 ```
 

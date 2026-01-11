@@ -1,6 +1,17 @@
 # TypeScript Remote Procedure Call (tRPC)
 
 <!--
+const errorMessage =
+  err instanceof Error ? err.message : 'Unknown error'
+console.error('Failed to invite member:', errorMessage, err)
+
+throw new TRPCError({
+  code: 'INTERNAL_SERVER_ERROR',
+  message: `Failed to invite member: ${errorMessage}`,
+})
+-->
+
+<!--
 https://github.com/lovrozagar/Next-Drizzle-Trpc-Lucia
 https://github.com/barelylabs/barely
 https://github.com/flojoy-ai/cloud

@@ -209,3 +209,25 @@ TODO
 ```log
 ⨯ ReferenceError: EventSource is not defined
 ```
+
+### TBD
+
+```log
+2025-12-16 10:10:03.911 [error] Error: Unexpected end of form
+    at prefinish (internal:streams/writable:452:20)
+    at finishMaybe (internal:streams/writable:462:18)
+    at <anonymous> (internal:streams/writable:417:42)
+    at endFn2 (internal:streams/pipeline:236:26)
+    at endReadableNT (internal:streams/readable:862:50)
+    at processTicksAndRejections (null) {
+  digest: '1892367502'
+}
+```
+
+<!--
+https://github.com/kartikk221/hyper-express/discussions/86
+https://github.com/vercel/community/discussions/1748
+https://github.com/eamon0989/minimal-crash-reproduction-nestjs/blob/main/README.md?plain=1
+-->
+
+TODO

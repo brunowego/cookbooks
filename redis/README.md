@@ -2,6 +2,8 @@
 
 **Keywords:** Distributed Cache, In-Memory Data Store
 
+![Redis](/assets/images/redis-cache.jpg)
+
 ## Links
 
 - [Main Website](https://redis.io)

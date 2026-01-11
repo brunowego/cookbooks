@@ -34,6 +34,38 @@ https://github.com/donnemartin/system-design-primer
 - UML (Unified Modeling Language)
 - Use Case
 
+## Steps
+
+- Step 1: Clarify Requirements
+  - Functional Requirements
+  - Non-Functional Requirements
+- Step 2: Capacity Estimation
+  - Users
+  - Traffic
+  - Storage
+  - Memory
+  - Network
+- Step 3: High-Level Design
+- Step 4: Database Design
+  - SQL vs NoSQL
+  - Sharding
+  - Replication
+  - Caching
+  - Load Balancing
+  - Scaling
+  - High Availability
+  - Disaster Recovery
+  - Security
+- Step 5: API Design
+- Step 6: Dive Deeper into Key Components
+- Step 7: Address Key Issues
+  - Scalability
+  - Performance
+
+<!--
+https://blog.algomaster.io/p/how-to-answer-a-system-design-interview-problem
+-->
+
 ## Interview Preparation
 
 - [Design a Basic Search Engine (Google or Bing)](https://youtube.com/watch?v=0LTXCcVRQi0)

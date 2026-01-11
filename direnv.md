@@ -1,6 +1,8 @@
 # direnv
 
 <!--
+karn
+
 https://github.com/hyperupcall/autoenv
 https://github.com/untitaker/quickenv
 https://github.com/Shopify/shadowenv

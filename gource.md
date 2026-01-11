@@ -41,7 +41,9 @@ gource \
 
 ### Tips
 
-#### TBD
+#### Only Business Hours
+
+**Dependencies:** [GNU awk](/gnu/awk.md)
 
 ```sh
 #

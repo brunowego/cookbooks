@@ -16,9 +16,8 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew tap devops-kung-fu/homebrew-tap
 brew install bomber
 ```

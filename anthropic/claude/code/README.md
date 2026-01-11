@@ -6,8 +6,29 @@ https://conductor.build
 https://github.com/jhlee0409/claude-code-history-viewer
 -->
 
+<!--
+{
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "deny": [
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
+  },
+  "enabledPlugins": {
+    "claude-mem@thedotmack": true,
+    "claude-hud@claude-hud": true
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash -c 'node \"$(ls -td ~/.claude/plugins/cache/claude-hud/claude-hud/*/ 2>/dev/null | head -1)dist/index.js\"'"
+  }
+}
+-->
+
 ## Links
 
+- [Code Repository](https://github.com/anthropics/claude-code)
 - [Main Website](https://anthropic.com/claude-code)
 - [Product](https://claude.com/product/claude-code)
 - [Usage](https://claude.ai/settings/usage)
@@ -21,17 +42,27 @@ https://github.com/jhlee0409/claude-code-history-viewer
 ### Installation
 
 ```sh
-# Using NPM
-npm install @anthropic-ai/claude-code -g
-
 # Using Homebrew
 brew install --cask claude-code
+
+# Using NPM
+npm install @anthropic-ai/claude-code -g
+```
+
+### Commands
+
+```sh
+claude -h
 ```
 
 ### Initialize
 
 ```sh
+#
 claude /init # CLAUDE.md
+
+#
+claude update
 ```
 
 <!-- ### Configuration -->
@@ -71,13 +102,24 @@ claude mcp list
 # View session costs
 claude /cost
 
+# Rename session
+claude /rename <new-name>
 ```
 
 <!--
+claude --continue
+claude --resume
+-->
+
+<!--
 /compact
+
 /compact preserve the implementation plan for [feature]
 
+/rename <new-name>
+
 /clear
+
 Read the plan at ~/.claude/plans/<plan-name>.md and begin implementation
 
 /model
@@ -96,7 +138,19 @@ context7
 
 ### Tips
 
-### Viewing Logs
+#### Permissions
+
+```json
+{
+  // ...
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "deny": ["Bash(git commit:*)", "Bash(git push:*)"]
+  }
+}
+```
+
+#### Viewing Logs
 
 **Raw JSONL format:**
 

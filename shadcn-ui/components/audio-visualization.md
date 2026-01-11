@@ -9,6 +9,9 @@ https://wavesurfer.xyz
 https://alemangui.github.io/pizzicato
 https://github.com/bbc/peaks.js
 
+https://github.com/saravanan413/genzly1-51/blob/main/src/components/chat/VoiceMessage.tsx
+https://github.com/arulg2009/Chat-app/blob/main/components/chat/voice-message.tsx
+
 Extract Waveform
 
 https://github.com/deeeed/expo-audio-stream | https://deeeed.github.io/expo-audio-stream/playground/

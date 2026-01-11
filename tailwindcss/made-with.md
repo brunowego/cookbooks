@@ -49,6 +49,7 @@ https://app.formcarry.com
 https://dashboard.lusha.com/enrich/workflows/onboarding
 https://dashboard.lusha.com/enrich/csv
 
+https://app.usewrangle.com/dashboard
 https://ui.shadcn.com/docs/components/empty
 https://app.attio.com/henkiz-2/tasks
 https://app.dub.co/henkiz/settings/domains
@@ -122,6 +123,16 @@ https://skalata.vc
 
 Hero / Header | Hero
 
+https://www.smoo.link/
+https://kokonutui.com/
+https://www.zenrows.com/
+https://www.searchable.com/
+https://reactbits.dev/
+https://urrly.com/
+https://www.clearing.co/
+https://2chat.co
+https://localflare.dev/
+https://wrangle.ai/
 https://aave.com/
 https://www.specbook.ai/
 https://www.popcorn.space/
@@ -549,8 +560,9 @@ https://vercel.com/help
 https://chatwoot.com/help-center
 https://paraform.com/help
 
-Docs
+Docs / Knowledge Base
 
+https://app.usewrangle.com/knowledge/welcome
 https://www.evaly.io/docs
 https://coda.io/workspaces/ws-mmg-0_nDgK/docs
 https://modal.com/docs
@@ -822,6 +834,10 @@ Unsubscribe
 https://zocdoc.com/patient/unsubscribe?digest=2482a3cac4743d036fac274bc92e2047ea20a67443d5eb08099763b184942307&patientId=pa_3xX2PzgwHkqw7rQGT8zAAA&emailGroupId=5c2d7be2-df17-4f5f-9948-2f17fbd68a49&expirationDate=2025-11-29&utm_source=lifecycle&utm_medium=email_patient&utm_campaign=lifecycle_accountcreatornonbooker_drip&dd_referrer=
 https://app.loops.so/unsubscribe/cmd7yhrfu003101m46qxv35iu/5d36214e644ed58a04062681ac238141138f6b65bc9d01a81b920530cadcd264
 https://unsubscribe.resend.com/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb250YWN0SWQiOiI0ZDc0Y2Y0Yi1kYjg1LTQ1MWMtYTg4YS1kM2YyZmY4NDcxYmMiLCJhdWRpZW5jZUlkIjoiZTJmNjk0YjktM2UwNi00ZWUwLWE2NDUtNjdlMDI5ZWRlYWRkIiwiYnJvYWRjYXN0SWQiOiIyNzdmODk0NS1iYWNhLTQ5YzMtOTU2OC02NTc5MDFkYTkxMTciLCJ0ZWFtSWQiOiI1NTYyMDkxNC0zYzg2LTRhNmUtODI1ZS0wYjRkYWE2NmI1NmEiLCJpYXQiOjE3NTE5MjA0NzgsImV4cCI6MTc4MzQ1NjQ3OH0.PyhkM-KBMUT1DmEWwuHSizq4rL5tGoFKspBqp6QFBOk
+
+Headline / Line-stroke
+
+https://skanworks.com
 
 Sign In OTP
 
@@ -1709,6 +1725,7 @@ https://nstfkc.com/connect-modal
 
 Settings
 
+https://chats.cloodot.com/settings/appearance
 https://www.evaly.io/app/settings?tab=general
 https://app.tembo.io/bruno-s-workspace-1759164666/settings/workspace/members
 https://nthumods.com/en/settings

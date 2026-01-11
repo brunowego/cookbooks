@@ -50,6 +50,20 @@ zsh --version | head -1
 
 ### Tips
 
+####
+
+```sh
+#
+echo $HISTSIZE
+echo $SAVEHIST
+
+# ~/.zshrc
+
+# History
+export HISTSIZE=100000 # commands kept in memory
+export SAVEHIST=100000 # commands saved to ~/.zsh_history
+```
+
 #### Backup
 
 **Dependency:** [GitHub CLI](/github/README.md#cli)

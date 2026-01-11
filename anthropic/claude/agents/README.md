@@ -1,3 +1,0 @@
-# Claude Agents
-
-TODO

@@ -37,3 +37,14 @@ https://www.youtube.com/watch?v=aiy1v0Cun-s
 
 https://getdbt.com/blog/extract-load-transform
 -->
+
+<!--
+dbt run-operation create_lettings_snowpipe
+dbt build --full-refresh
+-->
+
+<!--
+dbt run-operation create_lettings_table
+dbt run-operation create_lettings_snowpipe
+dbt build --full-refresh
+-->
