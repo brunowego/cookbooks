@@ -30,7 +30,7 @@ KREW_VERSION="$(curl -s https://api.github.com/repos/kubernetes-sigs/krew/releas
 
 ### Environment
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # Krew

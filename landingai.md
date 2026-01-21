@@ -1,5 +1,10 @@
 # LandingAI
 
+## Links
+
+- [Console](https://login.landing.ai)
+- [Status Page](https://status.landing.ai)
+
 ## Issues
 
 ### TBD

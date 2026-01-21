@@ -1,8 +1,6 @@
 # Claude Code
 
 <!--
-https://conductor.build
-
 https://github.com/jhlee0409/claude-code-history-viewer
 -->
 
@@ -192,4 +190,14 @@ ls -t ~/.claude/projects/*/session*.jsonl | tail -n +11 | xargs rm
 ```sh
 #
 ~/.claude/projects
+``` -->
+
+### Issues
+
+#### TBD
+
+```log
+  ⎿  Context limit reached · /compact or /clear to continue
 ```
+
+TODO

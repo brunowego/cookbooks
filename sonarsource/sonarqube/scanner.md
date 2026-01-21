@@ -48,7 +48,7 @@ ln -s /opt/sonar-scanner-4.6.2.2472 /opt/sonar-scanner
 
 #### Unix-like
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # SonarQube Scanner

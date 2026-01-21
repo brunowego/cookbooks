@@ -185,7 +185,7 @@ echo -e '[INFO]\thttp://127.0.0.1:7001/console'
 
 ### Environment
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 #### 12.1.x
 

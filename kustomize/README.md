@@ -66,7 +66,7 @@ kustomize -h
 
 **Node:** Tested with version >= 4.4.0.
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # Kustomize

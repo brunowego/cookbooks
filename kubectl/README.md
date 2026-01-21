@@ -47,7 +47,7 @@ kubectl --help
 
 ### Environment
 
-For Bash or Zsh, put something like this in your `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.zshenv`:
 
 ```sh
 # Kubernetes Control (kubectl)

@@ -55,7 +55,7 @@ sudo curl -L 'https://github.com/prowler-cloud/prowler/archive/refs/tags/2.12.0.
 
 ### Environment (Unix-like Only)
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # Prowler

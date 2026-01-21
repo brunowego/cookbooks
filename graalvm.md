@@ -37,7 +37,7 @@ jabba install graalvm-ce-java11@21.1.0
 
 ### Environment
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # GraalVM from Homebrew
