@@ -1,6 +1,10 @@
 # Mermaid
 
 <!--
+https://agents.craft.do/mermaid
+-->
+
+<!--
 4 spaces
 -->
 

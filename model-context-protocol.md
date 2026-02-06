@@ -1,6 +1,10 @@
 # Model Context Protocol
 
 <!--
+/.env.mcp
+-->
+
+<!--
 https://modelcontextprotocol.io | https://github.com/modelcontextprotocol
 https://mcp.composio.dev
 -->

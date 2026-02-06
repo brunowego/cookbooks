@@ -9,7 +9,7 @@ https://stefanzweifel.io/posts/2021/05/24/deployer-on-github-actions
 ## Links
 
 - [Code Repository](https://github.com/deployphp/deployer)
-- [Main Website](https://deployer.org/)
+- [Main Website](https://deployer.org)
 
 ## CLI
 

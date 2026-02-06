@@ -8,6 +8,11 @@
 
 - [Docker CE Daemon](/docker/ce/daemon.md)
 
+```sh
+# Using Darwin
+sudo chown -R $(whoami) /usr/local/bin
+```
+
 ### Installation
 
 ```sh
@@ -26,6 +31,11 @@ sudo curl \
 # Using Chocolatey
 choco install -y docker-compose
 ```
+
+<!--
+# Using Homebrew
+brew install docker-compose
+-->
 
 ### Environment
 

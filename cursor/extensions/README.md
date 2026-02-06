@@ -24,6 +24,10 @@ code --disable-extension <extension>
 code --uninstall-extension <extension>
 ```
 
+<!--
+jq -r '.recommendations[]' .vscode/extensions.json | xargs -L 1 cursor --install-extension
+-->
+
 <!-- ## Tips -->
 
 <!-- ### All Extensions

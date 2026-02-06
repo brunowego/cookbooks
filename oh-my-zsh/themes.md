@@ -12,11 +12,16 @@
 
 ```sh
 # Set theme
-sed -i '/^ZSH_THEME/ s/robbyrussell/flazz/' ~/.zshrc
+sed -i '/^ZSH_THEME/ s/robbyrussell/refined/' ~/.zshrc
 
 # Reload
 source ~/.zshrc
 ```
+
+<!--
+cypher
+flazz
+-->
 
 <!-- ##
 

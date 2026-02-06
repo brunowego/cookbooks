@@ -1,4 +1,4 @@
-# Minecraft
+# Anydesk
 
 ## App
 
@@ -6,5 +6,5 @@
 
 ```sh
 # Using Homebrew
-brew install --cask minecraft
+brew install --cask anydesk
 ```

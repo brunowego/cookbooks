@@ -251,6 +251,18 @@ echo '/out' >> ./.gitignore
 #### TBD
 
 ```log
+Image with src "http://localhost:3001/static/img/empty-state.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+```
+
+<!--
+https://stackoverflow.com/a/77576677/4173913
+-->
+
+TODO
+
+#### TBD
+
+```log
 @acme/app:build: ✓ Compiled successfully in 22.0s
 @acme/app:build: ✓ Finished TypeScript in 8.4s
   Collecting page data using 11 workers  .TypeError: a is not a function

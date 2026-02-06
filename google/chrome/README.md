@@ -1,33 +1,28 @@
 # Google Chrome
 
+<!--
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+-->
+
 ## App
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install \
   --cask \
   --appdir='/Applications' \
   google-chrome
-```
 
-#### APT
-
-```sh
+# Using APT
 wget -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo /usr/bin/sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt update
-```
 
-```sh
 sudo apt -y install google-chrome-stable
-```
 
-#### YUM
-
-```sh
+# Using YUM
 cat << EOF | sudo tee /etc/yum.repos.d/google-chrome.repo
 [google-chrome]
 name=google-chrome
@@ -36,15 +31,10 @@ enabled=1
 gpgcheck=1
 gpgkey=https://dl.google.com/linux/linux_signing_key.pub
 EOF
-```
 
-```sh
 sudo yum -y install google-chrome-stable
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y googlechrome
 ```
 

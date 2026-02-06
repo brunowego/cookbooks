@@ -22,4 +22,6 @@ git worktree prune
 git worktree remove
 git worktree repair
 git worktree unlock
+
+cursor -r </path/to/worktree>
 -->

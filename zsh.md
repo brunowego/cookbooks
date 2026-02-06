@@ -50,7 +50,7 @@ zsh --version | head -1
 
 ### Tips
 
-####
+#### History Size
 
 ```sh
 #
@@ -59,9 +59,9 @@ echo $SAVEHIST
 
 # ~/.zshrc
 
-# History
-export HISTSIZE=100000 # commands kept in memory
-export SAVEHIST=100000 # commands saved to ~/.zsh_history
+# History Size
+export HISTSIZE=1000000 # 100,000 commands kept in memory
+export SAVEHIST=1000000 # 100,000 commands saved to ~/.zsh_history
 ```
 
 #### Backup

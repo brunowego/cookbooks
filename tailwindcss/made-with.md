@@ -123,6 +123,9 @@ https://skalata.vc
 
 Hero / Header | Hero
 
+https://icontactcamera.com/?srsltid=AfmBOoo0rFDILIKajlD4fDOREU8NHWhQDxFJzNGx1bZlOEpRr6_WlPvI
+https://www.youware.com/
+https://oncue.so/
 https://www.smoo.link/
 https://kokonutui.com/
 https://www.zenrows.com/
@@ -431,6 +434,7 @@ https://www.spurnow.com/en
 
 Changelog
 
+https://hazel.sh/changelog/
 https://volta.net/changelog
 https://keywordsai.co/changelog
 https://codeium.com/changelog
@@ -509,6 +513,7 @@ https://app.live.zoko.io/meta-connect
 
 AI Chat
 
+https://ai-template.alignui.com/ | https://pro.alignui.com/templates/ai-template
 https://x.com/z3dsy/status/1990540640795701364
 https://www.magicpatterns.com/
 https://fastino.ai/
@@ -628,6 +633,7 @@ https://weareathleats.com
 
 Store
 
+https://store.epicgames.com/en-US/p/ark?purchaseToken=019bd215b2eb711d893763a10defd3b5&orderId=A2601181710165199
 https://nike-app-git-main-armans-projects-c9523aa4.vercel.app
 
 Table
@@ -710,6 +716,8 @@ https://algora.io/platform
 
 Login / Sign In / Sign up
 
+https://auth.airtop.ai
+https://app.abacatepay.com/login
 https://spotvirtual.com/orgs/new/set-team-name
 https://app.rallly.co/login
 https://app.octadesk.com/login
@@ -828,6 +836,10 @@ https://app.sprig.com/login
 https://metafy.gg/auth/account/create
 https://app.logsnag.com/auth/sign-in
 https://auth.planetscale.com/sign-in
+
+Create Workspace
+
+https://crm.lightfield.app/create-workspace
 
 Unsubscribe
 
@@ -1457,6 +1469,9 @@ https://morvalabs.com
 
 Portfolio
 
+https://www.adilmania.com/
+https://kargul.studio/
+https://augustas.co/
 https://dominionogbaji.framer.website/
 https://jamiepeak.co.uk
 https://farguk.framer.website
@@ -1520,6 +1535,7 @@ https://account.hotmart.com
 
 Dashboard
 
+https://www.unosend.co/emails
 https://www.evaly.io/app/questions
 https://app.marblecms.com/yonical | https://github.com/usemarble/marble
 https://app.tembo.io

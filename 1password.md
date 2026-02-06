@@ -14,15 +14,11 @@ data-1p-ignore
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask 1password
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -yf -not-silent 1password
 ```
 

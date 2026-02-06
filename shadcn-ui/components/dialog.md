@@ -1,5 +1,9 @@
 # Dialog
 
+<!--
+https://www.kibo-ui.com/components/dialog-stack
+-->
+
 ## Issues
 
 ### TBD

@@ -7,6 +7,7 @@ path:packages/ui path:components.json content:"https://ui.shadcn.com/schema.json
 -->
 
 <!--
+https://whenua.dev
 https://21st.dev | https://github.com/serafimcloud/21st
 https://kibo-ui.com/components/table
 -->

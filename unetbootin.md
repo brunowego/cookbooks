@@ -1,12 +1,15 @@
 # UNetbootin
 
+## Links
+
+- [Main Website](https://unetbootin.github.io)
+
 ## App
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask unetbootin
 ```
 

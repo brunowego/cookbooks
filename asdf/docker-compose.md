@@ -7,7 +7,7 @@
 ## Installation
 
 ```sh
-asdf plugin-add docker compose 'https://github.com/virtualstaticvoid/asdf-docker-compose.git'
+asdf plugin-add docker-compose 'https://github.com/virtualstaticvoid/asdf-docker-compose.git'
 ```
 
 ## Usage

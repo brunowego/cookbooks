@@ -26,16 +26,15 @@
 
 ### Dependencies
 
-#### YUM
-
 ```sh
+# Using Homebrew
+brew install asdf
+
+# Using YUM
 yum check-update
 sudo yum -y install git
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install git
 ```

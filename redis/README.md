@@ -152,35 +152,22 @@ REDIS_URL=redis://$REDIS_HOST:$REDIS_PORT
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install redis
-```
 
-### Zypper
-
-```sh
+# Using Zypper
 sudo zypper refresh
 sudo zypper install -y redis
-```
 
-#### Linux
-
-```sh
-#
+# Using Linux
 curl 'http://download.redis.io/releases/redis-stable.tar.gz' | \
   tar -xzC /tmp
 
 ( cd /tmp/redis-stable && make && sudo make install PREFIX=/usr/local/redis )
 
-#
 sudo mkdir -p /usr/local/redis/conf
-
-#
 sudo cp /tmp/redis-stable/redis.conf /usr/local/redis/conf
-
-#
 rm -r /tmp/redis-stable
 ```
 
@@ -208,6 +195,10 @@ redis-server -h
 
 redis-cli -h
 ```
+
+<!--
+redis-cli KEYS "org:settings:operations:*"
+-->
 
 ### Usage
 

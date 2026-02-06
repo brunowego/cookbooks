@@ -40,7 +40,7 @@ jq '."editor.renderWhitespace" |= "all"' "$HOME"/.cursor/settings.json | sponge 
 jq '."editor.scrollBeyondLastLine" |= false' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
 # Word Wrap
-jq '."editor.wordWrap" |= "on"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+# jq '."editor.wordWrap" |= "on"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
 # Font Size
 jq '."editor.fontSize" = 14' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
@@ -53,7 +53,7 @@ jq '."editor.fontSize" = 14' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cur
 # jq '."workbench.startupEditor" |= "newUntitledFile"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
 # SideBar Location
-jq '."workbench.sideBar.location" |= "right"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
+# jq '."workbench.sideBar.location" |= "right"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json
 
 # Open Side by Side Direction
 # jq '."workbench.editor.openSideBySideDirection" |= "down"' "$HOME"/.cursor/settings.json | sponge "$HOME"/.cursor/settings.json

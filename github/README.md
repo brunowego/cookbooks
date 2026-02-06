@@ -88,8 +88,6 @@ brew install --cask github
 
 ### Installation
 
-###
-
 ```sh
 # Using Homebrew
 brew install gh

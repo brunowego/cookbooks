@@ -26,6 +26,8 @@ https://github.com/jhlee0409/claude-code-history-viewer
 }
 -->
 
+**Keywords:** Code Agent
+
 ## Links
 
 - [Code Repository](https://github.com/anthropics/claude-code)
@@ -42,6 +44,9 @@ https://github.com/jhlee0409/claude-code-history-viewer
 ### Installation
 
 ```sh
+# Using cURL
+curl -fsSL https://claude.ai/install.sh | bash
+
 # Using Homebrew
 brew install --cask claude-code
 
@@ -192,4 +197,29 @@ ls -t ~/.claude/projects/*/session*.jsonl | tail -n +11 | xargs rm
 ```sh
 #
 ~/.claude/projects
+``` -->
+
+### Issues
+
+#### TBD
+
+```log
+UserPromptSubmit operation blocked by hook:
+  [bun "${CLAUDE_PLUGIN_ROOT}/scripts/worker-service.cjs" hook claude-code
+  session-init]: Hook error: Error: Unable to connect. Is the computer able to
+   access the url?
 ```
+
+<!--
+https://github.com/anthropics/claude-code/issues/9630
+https://github.com/GWUDCAP/cc-sessions/issues/82
+https://github.com/thedotmack/claude-mem/issues/673
+-->
+
+<!--
+claude -v
+
+curl -s http://127.0.0.1:37777/api/health
+-->
+
+TODO
