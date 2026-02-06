@@ -22,7 +22,7 @@ git clone 'https://github.com/syndbg/goenv.git' ~/.goenv
 
 #### Unix-like
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # goenv

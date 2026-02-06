@@ -317,7 +317,7 @@ choco install -y mysql
 
 #### Homebrew
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # MySQL Server 5.7

@@ -9,7 +9,7 @@ curl -L 'https://github.com/istio/istio/releases/download/1.1.1/istio-1.1.1-osx.
 
 ## Environment
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # Istio

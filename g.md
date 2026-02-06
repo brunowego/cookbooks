@@ -20,7 +20,7 @@ chmod +x /usr/local/bin/g
 
 ### Darwin
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # g

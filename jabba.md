@@ -26,7 +26,7 @@ curl -sL 'https://github.com/shyiko/jabba/raw/master/install.sh' | \
 
 #### Unix-like
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # jabba

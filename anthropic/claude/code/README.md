@@ -1,8 +1,6 @@
 # Claude Code
 
 <!--
-https://conductor.build
-
 https://github.com/jhlee0409/claude-code-history-viewer
 -->
 
@@ -221,5 +219,8 @@ claude -v
 
 curl -s http://127.0.0.1:37777/api/health
 -->
+
+  ⎿  Context limit reached · /compact or /clear to continue
+```
 
 TODO

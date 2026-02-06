@@ -26,7 +26,7 @@ git clone --depth 1 'https://github.com/tfutils/tfenv.git' ~/.tfenv
 
 **Only:** For Unix-like installation.
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # tfenv

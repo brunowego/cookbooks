@@ -123,7 +123,7 @@ Looks like paste bracketing was left on when an ssh session ended unexpectedly o
 
 #### Remove Prompt %
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # Remove '%' in first line with the prompt

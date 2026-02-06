@@ -59,7 +59,7 @@ curl 'https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc
 
 ### Environment
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # DB2 CLI Driver

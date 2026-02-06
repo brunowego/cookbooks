@@ -7,6 +7,9 @@ https://github.com/stravu/crystal
 
 **Keywords:** Parallel Agents Orchestration
 
+https://github.com/stravu/crystal
+-->
+
 ## Links
 
 - [Main Website](https://conductor.build)

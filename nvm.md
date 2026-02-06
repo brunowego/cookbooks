@@ -36,7 +36,7 @@ curl -Ss https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | /
 
 #### Homebrew
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # NVM
@@ -50,7 +50,7 @@ sudo su - "$USER"
 
 #### Linux
 
-For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshrc`:
+For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
 # NVM
