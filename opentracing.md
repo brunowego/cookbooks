@@ -1,5 +1,10 @@
 # OpenTracing
 
+<!--
+https://traceroot.ai/
+https://www.opentraces.ai/
+-->
+
 ## Providers
 
 - [CNCF Jaeger](/jaeger.md)

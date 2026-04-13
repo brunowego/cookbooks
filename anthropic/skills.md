@@ -1,5 +1,11 @@
 # Skills
 
+<!--
+https://playbooks.com
+
+~/.claude/skills
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/anthropics/skills)

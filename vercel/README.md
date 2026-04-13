@@ -131,6 +131,7 @@ vc certs ls
 #
 vc env ls
 vc env pull --environment development
+vc env pull --environment preview
 
 #
 vc secrets ls

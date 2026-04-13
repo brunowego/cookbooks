@@ -44,11 +44,27 @@ scoop install stripe
 stripe help
 ```
 
-### Usage
+### Configuration
+
+<!--
+--project-name=<project-name>
+-->
 
 ```sh
 #
 stripe login
+
+#
+stripe config --list
+#
+cat ~/.config/stripe/config.toml
+```
+
+### Usage
+
+```sh
+#
+stripe customers list --project-name=<project-name>
 ```
 
 <!--
@@ -72,6 +88,30 @@ stripe trigger payment_intent.succeeded
 -->
 
 ### Tips
+
+#### Promotion Codes
+
+```sh
+#
+stripe coupons list --project-name=<project-name>
+
+#
+stripe promotion_codes create --promotion.coupon=<coupon-id> --promotion.type=coupon --code=100DISCOUNT --project-name=<project-name>
+```
+
+#### Coupons
+
+<!--
+--project-name=<project-name>
+-->
+
+```sh
+#
+stripe coupons create --percent-off=100 --duration=forever --max-redemptions=1 --name='100% Discount' --project-name=<project-name>
+
+#
+stripe subscriptions update <sub_id> --coupon=<coupon_id> --project-name=<project-name>
+```
 
 #### Upgrade
 
@@ -114,4 +154,12 @@ https://stripe.com/docs/testing
 Card Number: 4242 4242 4242 4242
 Card Validation: 12/34
 CVC: 567
+-->
+
+<!--
+stripe billing_portal_configurations create \
+  --features.subscription_update.enabled=true \
+  --features.subscription_update.default_allowed_updates[0]=price \
+  --features.subscription_cancel.enabled=true \
+  --business-profile.headline="Manage your Swite subscription"
 -->

@@ -1,6 +1,6 @@
 # Promptfoo
 
-**Keywords:** LLM evals, Red Teaming
+**Keywords:** Evaluation, LLM evals, Red Teaming
 
 ## Links
 

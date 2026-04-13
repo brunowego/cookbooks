@@ -36,36 +36,23 @@ docker run -it --rm \
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install curl
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install curl
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install curl
-```
 
-#### Zypper
-
-```sh
+# Using Zypper
 sudo zypper refresh
 sudo zypper install -y curl
-```
 
-#### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add curl
 ```

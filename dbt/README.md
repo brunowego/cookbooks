@@ -39,12 +39,10 @@ https://getdbt.com/blog/extract-load-transform
 -->
 
 <!--
-dbt run-operation create_lettings_snowpipe
-dbt build --full-refresh
--->
-
-<!--
+# Shared Operations
 dbt run-operation create_lettings_table
 dbt run-operation create_lettings_snowpipe
+
+# Full Refresh
 dbt build --full-refresh
 -->

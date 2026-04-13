@@ -13,3 +13,12 @@
 # Using Homebrew
 brew install pipx
 ```
+
+### Configuration
+
+```sh
+#
+pipx ensurepath
+# Or (Recommended)
+export PATH="$HOME/.local/bin:$PATH"
+```

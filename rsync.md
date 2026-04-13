@@ -28,6 +28,9 @@ rsync -h
 
 ```sh
 #
+rsync -ah --progress </source/path> </destination/path>
+
+#
 rsync -vahP <filename> <username>@<hostname>:</absolute/path/to/filename>
 rsync -vahP <username>@<hostname>:</absolute/path/to/filename> <filename>
 ```

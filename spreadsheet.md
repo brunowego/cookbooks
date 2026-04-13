@@ -1,6 +1,7 @@
 # Spreadsheet
 
 <!--
+https://github.com/productdevbook/hucre
 https://github.com/nocodb/nocodb
 -->
 

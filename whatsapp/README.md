@@ -2,6 +2,8 @@
 
 <!--
 https://antonella.ai
+https://ararahq.com/
+https://zenvio.dev/
 -->
 
 ## Links

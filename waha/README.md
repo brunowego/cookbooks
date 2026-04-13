@@ -62,6 +62,7 @@ https://github.com/ariaseta/waha.js
 - [Portal](https://portal.devlike.pro)
 - Docs
   - [Security](https://waha.devlike.pro/docs/how-to/security)
+  - [Changelog](https://waha.devlike.pro/docs/overview/changelog)
 
 <!--
 https://waha.devlike.pro/support-us

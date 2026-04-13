@@ -70,15 +70,6 @@ https://github.community/t/picture-tag-in-markdown/149471
 ".node" in:file filename:.gitattributes
 ```
 
-## App
-
-### Installation
-
-```sh
-# Using Homebrew
-brew install --cask github
-```
-
 ## CLI
 
 ### Links
@@ -127,6 +118,15 @@ gh repo create \
 
 ### Tips
 
+<!--
+gh auth setup-git --hostname github.com
+gh auth login --git-protocol https
+
+gh config set git_protocol https --host github.com
+
+gh auth status
+-->
+
 #### Clone with GitHub Token
 
 ```sh
@@ -144,3 +144,12 @@ git clone "https://${GITHUB_TOKEN}:x-oauth-basic@github.com/[my-org]/[my-repo].g
 1. Add file -> Create new file
 2. Type "Name your file...": License
    - Choose a license template
+
+## App
+
+### Installation
+
+```sh
+# Using Homebrew
+brew install --cask github
+```

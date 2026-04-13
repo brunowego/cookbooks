@@ -16,15 +16,11 @@ https://github.com/reguengos/cookiecutter-argocd
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install cookiecutter
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install cookiecutter
 ```

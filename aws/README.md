@@ -125,7 +125,14 @@ aws <options> <command> <subcommand> <parameters>
 
 ### Configuration
 
+<!--
+rm ~/.aws/credentials
+-->
+
 ```sh
+#
+aws login
+
 #
 aws configure set output text # json, table
 aws configure set cli_pager ''

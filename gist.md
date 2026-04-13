@@ -1,18 +1,18 @@
 # gist
 
+<!--
+https://gists.sh/
+-->
+
 ## CLI
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# UsingHomebrew
 brew install gist
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install gist
 ```

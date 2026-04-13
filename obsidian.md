@@ -11,16 +11,14 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask obsidian
 ```
 
 ### Uninstall
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew uninstall --cask obsidian
 ```

@@ -6,36 +6,23 @@ Its name derives from World Wide Web and get.
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install wget
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install wget
-```
 
-#### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install wget
-```
 
-#### APK
-
-```sh
+# Using APK
 sudo apk update
 sudo apk add wget
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y wget
 ```
 

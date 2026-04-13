@@ -1,14 +1,25 @@
 # Conductor
 
 <!--
-https://superset.sh/
+https://paseo.sh
+https://super.engineering/
+https://agents-os.dev/
+https://superset.sh
 https://github.com/stravu/crystal
+https://getpolyscope.com
+https://cmux.dev
+https://github.com/stravu/crystal
+https://agents.craft.do
+https://vvterm.com
+-->
+
+<!--
+git fetch origin
+git branch --set-upstream-to=origin/<branch>
+git pull --rebase
 -->
 
 **Keywords:** Parallel Agents Orchestration
-
-https://github.com/stravu/crystal
--->
 
 ## Links
 
@@ -25,6 +36,59 @@ brew install --cask conductor
 ```
 
 ### Tips
+
+#### TBD
+
+```sh
+# List running MCP
+ps aux | grep -i mcp | grep -v grep | awk '{print $2, $11, $12, $13}'
+
+#
+ps aux | grep -i mcp | grep -v grep | awk '{cpu+=$3; mem+=$4; count++} END {printf "Processes: %d | CPU: %.1f%% | MEM: %.1f%%\n", count, cpu, mem}'
+
+# Kill running MCP
+ps aux | grep -i mcp | grep -v grep | awk '{print $2}' | xargs kill -9
+```
+
+<!-- #### Custom Profile
+
+```sh
+mkdir -p "$HOME/.conductor-profiles/swite"
+
+HOME="$HOME/.conductor-profiles/swite" open -n /Applications/Conductor.app
+
+ls "$HOME/.conductor-profiles/swite"
+
+ln -s "$HOME/Library/Keychains" ~/.conductor-profiles/swite/Library/Keychains
+ln -s "$HOME/Library/Application Support" ~/.conductor-profiles/swite/Library/Application\ Support
+
+rm -rf "$HOME/.conductor-profiles/swite/.oh-my-zsh" && ln -s "$HOME/.oh-my-zsh" "$HOME/.conductor-profiles/swite/.oh-my-zsh"
+rm -rf "$HOME/.conductor-profiles/swite/.cache" && ln -s "$HOME/.cache" "$HOME/.conductor-profiles/swite/.cache"
+rm -rf "$HOME/.conductor-profiles/swite/.config" && ln -s "$HOME/.config" "$HOME/.conductor-profiles/swite/.config"
+rm -rf "$HOME/.conductor-profiles/swite/.mcp-auth" && ln -s "$HOME/.mcp-auth" "$HOME/.conductor-profiles/swite/.mcp-auth"
+rm -rf "$HOME/.conductor-profiles/swite/.zsh_history" && ln -s "$HOME/.zsh_history" "$HOME/.conductor-profiles/swite/.zsh_history"
+rm -rf "$HOME/.conductor-profiles/swite/.zsh_sessions" && ln -s "$HOME/.zsh_sessions" "$HOME/.conductor-profiles/swite/.zsh_sessions"
+rm -rf "$HOME/.conductor-profiles/swite/.volta" && ln -s "$HOME/.volta" "$HOME/.conductor-profiles/swite/.volta"
+rm -rf "$HOME/.conductor-profiles/swite/.npm" && ln -s "$HOME/.npm" "$HOME/.conductor-profiles/swite/.npm"
+rm -rf "$HOME/.conductor-profiles/swite/.cursor" && ln -s "$HOME/.cursor" "$HOME/.conductor-profiles/swite/.cursor"
+rm -rf "$HOME/.conductor-profiles/swite/.local" && ln -s "$HOME/.local" "$HOME/.conductor-profiles/swite/.local"
+rm -rf "$HOME/.conductor-profiles/swite/.claude" && ln -s "$HOME/.claude" "$HOME/.conductor-profiles/swite/.claude"
+rm -rf "$HOME/.conductor-profiles/swite/.claude.json" && ln -s "$HOME/.claude.json" "$HOME/.conductor-profiles/swite/.claude.json"
+rm -rf "$HOME/.conductor-profiles/swite/Library/Application Support/Cursor" && ln -s "$HOME/Library/Application Support/Cursor" "$HOME/.conductor-profiles/swite/Library/Application Support/Cursor"
+rm -rf "$HOME/.conductor-profiles/swite/Library/pnpm" && ln -s "$HOME/Library/pnpm" "$HOME/.conductor-profiles/swite/Library/pnpm"
+
+HOME="$HOME/.conductor-profiles/swite" gh auth status 2>&1
+``` -->
+
+<!--
+unlink ~/.conductor-profiles/swite/Library
+
+gh auth setup-git
+
+ln -s /Users/brunogomes/Library/Keychains ~/.conductor-profiles/<profile-name>/Library/Keychains
+
+ls ~/.conductor-profiles/swite/Library/Keychains
+-->
 
 #### Env Variables
 

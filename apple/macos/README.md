@@ -1,6 +1,14 @@
 # macOS (a.k.a. Darwin)
 
 <!--
+sudo purge
+
+alias memflush="sudo purge"
+
+sudo swapoff -a && sudo swapon -a
+-->
+
+<!--
 Catalina
 
 https://apps.apple.com/br/app/macos-catalina/id1466841314?l=en-GB&mt=12

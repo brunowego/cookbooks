@@ -5,8 +5,8 @@
 ## Links
 
 - [Code Repository](https://github.com/kubernetes/kops)
-- [Main Website](https://kops.sigs.k8s.io/)
-- [Addons](https://kops.sigs.k8s.io/addons/)
+- [Main Website](https://kops.sigs.k8s.io)
+- [Addons](https://kops.sigs.k8s.io/addons)
 
 ## Docs
 
@@ -24,24 +24,17 @@
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install kops
-```
 
-#### Linux Binary
-
-```sh
+# Using Linux Binary
 sudo curl \
   -L "https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64" \
   -o /usr/local/bin/kops && \
     sudo chmod +x /usr/local/bin/kops
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install kubernetes-kops
 ```
 

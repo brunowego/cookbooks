@@ -41,7 +41,7 @@ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 sudo xcodebuild -runFirstLaunch
 
 #
-sudo xcodebuild -license accept
+# sudo xcodebuild -license accept
 ```
 
 ### Commands

@@ -1,6 +1,8 @@
 # AWS Simple Email Service (SES)
 
 <!--
+https://github.com/marckohlbrugge/sessy
+
 path:modules/ses path:main.ts
 
 https://github.com/FlowFuse/terraform-aws-flowfuse/blob/main/ses/main.tf

@@ -13,6 +13,7 @@ https://kibo-ui.com/components/table
 -->
 
 <!--
+https://selia.earth/docs/chip/
 https://tinte.dev
 https://shadcnmarketplace.com
 https://shadcnblocks.com
@@ -41,6 +42,13 @@ https://github.com/rizzui/rizzui
 Storybook
 
 https://bendigiorgio.github.io/kiso/?path=/docs/components-switch--docs
+
+Components
+
+https://www.fluidfunctionalism.com/
+https://bazza.dev/craft/2026/hit-area
+https://www.facehash.dev/
+https://lina.sameer.sh | Scroll Area
 -->
 
 ## Links

@@ -14,15 +14,19 @@ https://github.com/brooklyn-data/dbtenv
 
 - [Docs](https://docs.getdbt.com/docs/core/about-the-cli)
 
+### Dependencies
+
+- [pipx](/pipx.md) (Recommended)
+
 ### Installation
 
 ```sh
 # Using pip (Recommended)
 pipx install dbt-core
 # Or, for postgres
-pipx install dbt-postgres --include-deps
+pipx install dbt-postgres --include-deps --python $(which python3)
 # Or, for snowflake
-pipx install dbt-snowflake --include-deps
+pipx install dbt-snowflake --include-deps --python $(which python3)
 
 # Using Homebrew
 # brew tap dbt-labs/dbt
@@ -52,7 +56,7 @@ cat << EOF > ~/.dbt/snowflake_key.p8
 <private-key>
 EOF
 
-cat << EOF > ~/.dbt/profile.yml
+cat << EOF > ~/.dbt/profiles.yml
 ---
 default:
   target: dev
@@ -71,7 +75,13 @@ EOF
 ```
 
 ```sh
+# Install/update dbt package dependencies (first time or after updates)
 dbt deps
+
+# Load seed files (known exceptions, item catalogs, etc.)
+dbt seed
+
+# Debug
 dbt debug
 ```
 
@@ -86,7 +96,32 @@ dbt debug
 
 #
 dbt show --inline '<query>' --limit 20
+
+#
+dbt build -s marts_state_validation_status --vars '{"build_test_summary": true}'
 ```
+
+<!--
+#
+dbt run-operation create_lettings_table
+
+#
+dbt run-operation create_lettings_snowpipe
+
+#
+dbt build --full-refresh
+-->
+
+<!--
+# Run only <name>-related models
+dbt run --full-refresh --select "*<name>*"
+
+# Test only <name> models
+dbt test --select "*<name>*"
+
+# Or run tests for a specific check
+dbt test --select "<check-name>"
+-->
 
 ### Issues
 

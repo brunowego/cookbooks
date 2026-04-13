@@ -2,6 +2,13 @@
 
 **Keywords:** Test Automation, UI Testing, E2E Testing
 
+<!--
+https://zerostep.com
+https://octomind.dev
+https://qawolf.com
+https://expect.dev
+-->
+
 ## Links
 
 - [Code Repository](https://github.com/microsoft/playwright)

@@ -10,22 +10,15 @@
 
 ## Installation
 
-### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask session-manager-plugin
-```
 
-### APT
-
-```sh
+# Using APT
 curl -LO 'https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb'
 sudo apt -y install ./session-manager-plugin.deb && rm ./session-manager-plugin.deb
-```
 
-### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y awscli-session-manager
 ```
 

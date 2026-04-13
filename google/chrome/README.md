@@ -53,6 +53,12 @@ ln -s /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome /usr/local/
 
 ### Tips
 
+#### Open a PDF
+
+```sh
+open -a 'Google Chrome' '/path/to/file.pdf'
+```
+
 #### Open a new window without address bar
 
 ```sh
@@ -126,6 +132,26 @@ Allow invalid certificates for resources loaded from localhost.
   --ignore-urlfetcher-cert-requests \
   --allow-insecure-localhost
 -->
+
+#### Snapshot
+
+```sh
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+  --user-data-dir="$HOME/.chrome-profiles/brunowego@gmail.com-live" \
+  --no-first-run --no-default-browser-check
+
+ls "$HOME/.chrome-profiles"
+
+[[ -n "$HOME" ]] && \
+  rm -fR "$HOME/.chrome-profiles/brunowego@gmail.com-snapshot" && \
+  cp -R "$HOME/.chrome-profiles/brunowego@gmail.com-live" \
+        "$HOME/.chrome-profiles/brunowego@gmail.com-snapshot" && \
+  echo 'Snapshot updated!'
+
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+  --user-data-dir="$HOME/.chrome-profiles/brunowego@gmail.com-snapshot" \
+  --no-first-run --no-default-browser-check
+```
 
 ### Issues
 

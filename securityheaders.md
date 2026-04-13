@@ -11,11 +11,9 @@
 
 ### Installation
 
-#### pip
-
 ```sh
-#
-pip3 install -U securityheaders
+# Using pipx
+pipx install securityheaders
 ```
 
 ### Commands

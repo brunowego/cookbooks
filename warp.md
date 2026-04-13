@@ -10,6 +10,6 @@
 ### Installation
 
 ```sh
-#
+# Using Homebrew
 brew install --cask warp
 ```

@@ -1,5 +1,7 @@
 # uv
 
+**Keywords:** uvx
+
 ## Links
 
 - [Code Repository](https://github.com/astral-sh/uv)

@@ -15,6 +15,11 @@
 brew install --cask lm-studio
 ```
 
+<!--
+# LM Studio CLI (lms)
+export PATH="$PATH:$HOME/.lmstudio/bin"
+-->
+
 ### Tips
 
 #### Models

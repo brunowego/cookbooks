@@ -8,6 +8,10 @@
 - [shadcn / Table (Simple)](https://ui.shadcn.com/docs/components/table)
 
 <!--
+https://www.kibo-ui.com/components/table
+-->
+
+<!--
 Abandoned
 
 https://next-shadcn-ui-table.vercel.app

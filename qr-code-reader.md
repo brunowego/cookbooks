@@ -1,5 +1,9 @@
 # QR Code Reader
 
+<!--
+Not exists in MAS more.
+-->
+
 ## App
 
 ### Installation

@@ -13,8 +13,7 @@ https://www.getclockwise.com/
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask gitify
 ```

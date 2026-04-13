@@ -4,6 +4,10 @@
 
 - [Malicious PDF Generator ☠️](https://github.com/jonaslejon/malicious-pdf)
 
+<!--
+https://github.com/projectdiscovery/interactsh
+-->
+
 ## Learning
 
 - [Malicious Documents – PDF Analysis in 5 steps](https://countuponsecurity.com/2014/09/22/malicious-documents-pdf-analysis-in-5-steps/)
@@ -18,3 +22,21 @@ https://tho-le.medium.com/investigate-malicious-pdf-documents-with-mpeepdf-a-qui
 
 https://github.com/jesparza/peepdf
 -->
+
+## Tips
+
+### Iframe Sandbox
+
+```js
+// Find the iframe (works regardless of title)
+document.querySelector('iframe')
+
+// Add sandbox
+document.querySelector('iframe').setAttribute('sandbox', 'allow-scripts')
+document
+  .querySelector('iframe')
+  .setAttribute('sandbox', 'allow-scripts allow-same-origin')
+
+// Remove sandbox
+document.querySelector('iframe').removeAttribute('sandbox')
+```

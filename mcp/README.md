@@ -84,3 +84,11 @@ Pre-defined templates for AI interactions:
 - Documentation Q&A
 - Transcript Summary
 - Output as JSON
+
+## Tips
+
+### Remove Authentication Files
+
+```sh
+rm -fR ~/.mcp-auth
+```

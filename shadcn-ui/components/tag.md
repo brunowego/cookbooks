@@ -8,4 +8,6 @@
 Best Example
 
 https://github.com/gokulkrishh/bmrk.cc/blob/main/components/card/tag-list.tsx
+
+https://www.kibo-ui.com/components/tags
 -->

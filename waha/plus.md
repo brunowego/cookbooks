@@ -32,6 +32,21 @@ docker network create workbench \
   --subnet 10.1.1.0/24
 ```
 
+### Pull
+
+```sh
+#
+export DOCKER_RUN_OPTS='--platform linux/amd64'
+
+#
+docker pull $(echo "$DOCKER_RUN_OPTS") \
+  docker.io/devlikeapro/waha-plus:latest
+
+#
+docker pull $(echo "$DOCKER_RUN_OPTS") \
+  docker.io/devlikeapro/waha-plus:gows-2026.3.4
+```
+
 ### Running
 
 ```sh
@@ -64,6 +79,9 @@ docker run -d \
   -p 13000:3000 \
   --name waha-plus \
   docker.io/devlikeapro/waha-plus:gows
+
+#
+docker logout
 ```
 
 <!--

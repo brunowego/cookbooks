@@ -11,13 +11,16 @@ https://manychat.com
 https://pact.chat
 https://app.wati.io
 https://kommo.com
-https://ia.zapresponder.com.br/
+https://ia.zapresponder.com.br
+https://ideiamultichat.com.br
+https://whato.app/br
 
 Complicated
 
 https://bolten.io/pt
 https://app-utalk.umbler.com
 
+https://spoki.com/es
 https://app.chatpro.com.br
 https://devzapp.com.br
 https://campanhas.octadesk.com/whatsapp/whatsapp-comercial

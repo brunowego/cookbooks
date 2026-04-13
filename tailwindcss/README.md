@@ -68,6 +68,7 @@ https://github.com/search?q=path%3Apackage.json%20content%3Anext%20content%3Atai
 - [Tailwind UI](https://tailwindui.com)
 
 <!--
+https://efferd.com/
 https://plumeui.com
 -->
 

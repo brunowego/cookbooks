@@ -17,10 +17,22 @@ npx skills -h
 
 ```sh
 npx skills init
+```
 
+### Usage
+
+<!--
 npx skills check
 npx skills update
 npx skills generate-lock
+-->
+
+```sh
+#
+npx skills ls
+
+#
+npx skills experimental_install
 ```
 
 <!--

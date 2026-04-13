@@ -2,6 +2,8 @@
 
 <!--
 https://github.com/jhlee0409/claude-code-history-viewer
+
+https://github.com/rtk-ai/rtk
 -->
 
 <!--
@@ -141,6 +143,16 @@ context7
 
 ### Tips
 
+#### Uninstall
+
+```sh
+# Using Volta
+volta uninstall @anthropic-ai/claude-code
+
+# Using Homebrew
+brew uninstall --cask claude-code
+```
+
 #### Permissions
 
 ```json
@@ -220,7 +232,9 @@ claude -v
 curl -s http://127.0.0.1:37777/api/health
 -->
 
-  ⎿  Context limit reached · /compact or /clear to continue
+⎿ Context limit reached · /compact or /clear to continue
+
 ```
 
 TODO
+```
