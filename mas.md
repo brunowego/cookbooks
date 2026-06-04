@@ -19,23 +19,23 @@ brew install mas
 mas help
 ```
 
-### Configuration
+<!-- ### Configuration
 
 ```sh
 mas signin
-```
+``` -->
 
 ### Usage
 
 ```sh
 # List
-mas listmas install 1085114709
+# mas listmas install 1085114709
 
 # Current User
-mas account
+# mas account
 
 #
-mas outdated
+# mas outdated
 ```
 
 ### Issues

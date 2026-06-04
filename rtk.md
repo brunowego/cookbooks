@@ -25,6 +25,13 @@ rtk -h
 rtk init -g
 ```
 
+### Configuration
+
+```sh
+# Disable telemetry
+rtk telemetry disable
+```
+
 ### Usage
 
 ```sh

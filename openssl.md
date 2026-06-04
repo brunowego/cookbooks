@@ -10,23 +10,16 @@ openssl rsa -in ./file.pem -pubout -outform DER | openssl md5 -c
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install openssl
 # brew install openssl@1.1
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install openssl
-```
 
-#### YUM
-
-```sh
+# YUM
 yum check-update
 sudo yum -y install openssl
 ```
@@ -35,16 +28,12 @@ sudo yum -y install openssl
 
 ##### Dependencies
 
-###### YUM
-
 ```sh
+# Using YUM
 yum check-update
 sudo yum -y install zlib-devel
-```
 
-###### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install zlib1g-dev
 ```

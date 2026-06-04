@@ -54,6 +54,12 @@ brew install --cask claude-code
 npm install @anthropic-ai/claude-code -g
 ```
 
+### Configuration
+
+```sh
+jq '.includeCoAuthoredBy = false' ~/.claude/settings.json | sponge ~/.claude/settings.json
+```
+
 ### Commands
 
 ```sh
@@ -232,9 +238,6 @@ claude -v
 curl -s http://127.0.0.1:37777/api/health
 -->
 
-⎿ Context limit reached · /compact or /clear to continue
-
-```
+<!-- ⎿ Context limit reached · /compact or /clear to continue -->
 
 TODO
-```

@@ -71,7 +71,7 @@ pip3 install [/path/to/package.tar.gz]
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
-# pip Binary Path
+# Local Binary Path
 export PATH="$HOME/.local/bin:$PATH"
 ```
 

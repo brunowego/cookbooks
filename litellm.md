@@ -38,7 +38,7 @@ pipx environment
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
-# pipx Binary Path
+# Local Binary Path
 export PATH="$HOME/.local/bin:$PATH"
 ```
 

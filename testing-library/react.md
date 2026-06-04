@@ -1,4 +1,4 @@
-# Testing Library React
+# React Testing Library (RTL)
 
 ## Library
 

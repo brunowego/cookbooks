@@ -1,6 +1,8 @@
 # dotENV
 
 <!--
+https://github.com/Hossiy21/razify
+
 DB_USERNAME filetype:env
 -->
 

@@ -13,15 +13,11 @@ https://support.google.com/a/answer/6115117?product_name=UnuFlow&hl=en&visit_id=
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install --cask google-drive
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install google-drive-file-stream
 ```
 

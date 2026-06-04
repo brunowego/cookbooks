@@ -1,4 +1,4 @@
-# Bastion Host
+# Bastion Host (or "jump box")
 
 ![Bastion Host](/assets/images/aws/bastion-host.jpg)
 

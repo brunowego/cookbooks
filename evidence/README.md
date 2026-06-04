@@ -1,6 +1,6 @@
 # Evidence
 
-**Keywords:** Serverless BI, Business Intelligence as Code
+**Keywords:** Serverless BI, BI-as-Code
 
 ## Links
 

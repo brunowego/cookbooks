@@ -31,6 +31,11 @@ https://www.youtube.com/watch?v=aOVdNAE2Jeg
 ## Connect
 
 ```sh
+# With SSM
+aws ssm start-session --target <instance-id>
+```
+
+<!-- ```sh
 #
 nc -zv 'ec2-<ip-address-separated-by-hyphen>.compute-1.amazonaws.com' 22
 
@@ -47,7 +52,7 @@ ssh \
   -N \
   -L <rds-port>:<rds-endpoint>:<rds-port> \
   <bastion-host-public-ip>
-```
+``` -->
 
 <!--
 IAM Role: EC2_SSM_core

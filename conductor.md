@@ -1,9 +1,11 @@
 # Conductor
 
 <!--
+https://helmor.ai
+https://omnara.com
 https://paseo.sh
-https://super.engineering/
-https://agents-os.dev/
+https://super.engineering
+https://agents-os.dev
 https://superset.sh
 https://github.com/stravu/crystal
 https://getpolyscope.com
@@ -11,6 +13,10 @@ https://cmux.dev
 https://github.com/stravu/crystal
 https://agents.craft.do
 https://vvterm.com
+https://superhq.ai
+https://acepe.dev
+https://onorca.dev
+https://dpcode.cc
 -->
 
 <!--
@@ -36,6 +42,20 @@ brew install --cask conductor
 ```
 
 ### Tips
+
+#### Backup
+
+```sh
+#
+cd ~/conductor
+
+#
+find . -name '.next' -type d -prune -exec rm -fR '{}' +
+find . -name 'node_modules' -type d -prune -exec rm -fR '{}' +
+
+#
+ls -la "$HOME/Library/Application Support/com.conductor.app/conductor.db"
+```
 
 #### TBD
 

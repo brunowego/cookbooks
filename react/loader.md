@@ -3,6 +3,11 @@
 TODO
 
 <!--
+https://dotmatrix.zzzzshawn.cloud/
+https://icons.icantcode.fyi/
+https://muload.dev/
+https://magecdn.com/tools/svg-loaders
+
 https://magecdn.com/tools/svg-loaders
 https://tailwindflex.com/@anonymous/loading-dots
 

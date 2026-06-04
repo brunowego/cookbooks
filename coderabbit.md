@@ -1,5 +1,9 @@
 # CodeRabbit
 
+<!--
+https://github.com/coderabbitai/skills
+-->
+
 ## Links
 
 - Docs
@@ -11,6 +15,8 @@
 @coderabbitai full review
 @coderabbitai resolve
 @coderabbitai approve
+@coderabbitai status
+@coderabbitai stats
 
 gh pr edit <pr-id> --add-reviewer coderabbitai
 -->

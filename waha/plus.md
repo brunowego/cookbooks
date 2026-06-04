@@ -44,7 +44,7 @@ docker pull $(echo "$DOCKER_RUN_OPTS") \
 
 #
 docker pull $(echo "$DOCKER_RUN_OPTS") \
-  docker.io/devlikeapro/waha-plus:gows-2026.3.4
+  docker.io/devlikeapro/waha-plus:gows-2026.5.1
 ```
 
 ### Running

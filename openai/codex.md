@@ -9,5 +9,21 @@
 ### Installation
 
 ```sh
+# Using Homebrew
+brew install --cask codex
+
+# Using NPM
 npm install -g @openai/codex
+```
+
+### Commands
+
+```sh
+codex -h
+```
+
+### Configuration
+
+```sh
+codex login
 ```

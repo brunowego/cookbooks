@@ -1,5 +1,9 @@
 # Parallels
 
+<!--
+Password: new password
+-->
+
 **Keywords:** Hypervisor
 
 ## Links

@@ -127,6 +127,20 @@ https://docs.autosend.com/ai/mcp-server#connecting-to-autosend-mcp
 
 Hero / Header | Hero
 
+https://www.lightdash.com/
+https://www.gitbook.com/
+https://once.film/
+https://www.joinvalley.co/
+https://runner.now/
+https://sourcegraph.com/
+https://superplane.com/
+https://lattice.com/
+https://snapzy.app/
+https://runey.app/
+https://home.medvi.org/
+https://myco.com/
+https://tester.army/
+https://www.getauctor.com/
 https://weav.com/
 https://clickdash.io/
 https://www.tryardent.com/
@@ -460,12 +474,19 @@ https://app.midday.ai | https://github.com/midday-ai/midday
 https://app.bloghub.it
 https://widget-notification.vercel.app
 
+B2C Dashboard
+
+https://x.com/rahulluthra22/status/2050523234291073289
+
 Swite / Support
 
 https://www.spurnow.com/en
 
 Changelog
 
+https://fp.dev/changelog
+https://log.sobanotes.app/
+https://linear.app/changelog/timeline
 https://superset.sh/changelog
 https://hazel.sh/changelog/
 https://volta.net/changelog
@@ -544,8 +565,14 @@ Meta Connect
 
 https://app.live.zoko.io/meta-connect
 
+CSS Transitions
+
+https://transitions.dev/
+
 AI Chat
 
+https://www.nollahealth.com/
+https://x.com/batukrskl/status/2049113713722994936
 https://ai-template.alignui.com/ | https://pro.alignui.com/templates/ai-template
 https://x.com/z3dsy/status/1990540640795701364
 https://www.magicpatterns.com/
@@ -659,8 +686,18 @@ https://ulysse.com/en
 https://dribbble.com/shots/24544533-Search-Interaction-Design
 https://himalayas.app/jobs
 
+Service Portal
+
+https://brainly.com/
+
+Timeline
+
+https://x.com/mrjeremyblaze/status/2052758189389529419
+
 Filter
 
+https://x.com/autumnpricing/status/2052860455522078959
+https://synaptic.com/
 https://mishmash.pt/shop
 https://weareathleats.com
 
@@ -704,6 +741,7 @@ https://mercadolivre.com.br/addresses/v2/address?app=MY_ML&addressId=1305296149
 
 Email Verification / Email Confirmation
 
+https://salte.app/en/confirmacao
 https://app.cometchat.com/verification-email-sent?email=brunowego@gmail.com
 https://nstfkc.com/email-confirm
 
@@ -758,6 +796,7 @@ https://linear.app/now/linear-incident-on-mar-24th-2026
 
 Login / Sign In / Sign up
 
+https://app.jackandjill.ai/sign-in?redirect_url=%2Fjack&utm_source=job_listing&utm_medium=job_board&utm_campaign=839d25b5-9d43-404f-bba0-cc8b265b0715
 https://app.tracer.cloud/sign-up
 https://there-there.app/login
 https://spotvirtual.com/login
@@ -971,6 +1010,7 @@ https://app.shelf.nu/reminders
 
 Calendar View
 
+https://x.com/bagus_fikri/status/2055619443829743840
 https://nthumods.com/en/timetable | https://github.com/nthumodifications/courseweb
 https://github.com/evoluhq/evolu.me
 https://tasklytic.fesyse.site/dashboard/calendar/month-view
@@ -1020,6 +1060,7 @@ https://obaidnadeem.github.io/dab/
 
 Mosaic / Section
 
+https://audyr.com/
 https://www.lunagraph.com/?ref=producthunt
 https://www.sully.ai/
 https://entire.io/
@@ -1203,6 +1244,13 @@ https://coinhall.org
 
 Landing Page
 
+https://www.popcorn.space/
+https://creed.md/ | https://github.com/connorhpbrn/creed
+https://wevm.dev/
+https://www.branch.computer/
+https://joi.software/
+https://tryplatto.com/
+https://peel.studio/
 https://omou.app/
 https://tenor.design/
 https://operational.co/
@@ -1274,6 +1322,7 @@ https://snov.io/api
 
 Product Landing Page
 
+https://con.nowledge.co/
 https://peterdraw.studio/product/paylink-digital-banking-website-ui-figma-template
 https://primer.tailwindui.com
 
@@ -1337,6 +1386,10 @@ https://boostlab.com.br/cadastro
 Guides
 
 https://simplegoods.co/guides
+
+Invoice
+
+https://x.com/maybepratikk/status/2048676720165974338
 
 Invest
 
@@ -1528,6 +1581,7 @@ https://callstack.com/events/tips-tricks-from-the-ultimate-guide-to-react-native
 
 Personal / Profile
 
+https://www.adfects.com/
 https://adria.studio
 https://morvalabs.com
 
@@ -1621,6 +1675,10 @@ https://colorsandfonts.com/mesh-generator/
 
 Dashboard
 
+https://login.tailscale.com/admin/machines
+https://x.com/keviduk/status/2052373899979964595
+https://x.com/iamsahilvhora/status/2052623055617433976
+https://interfere.com/
 https://runey.app/projects
 https://app.useautumn.com/sandbox/dev?tab=api_keys
 https://baz.co/changes
@@ -2168,8 +2226,20 @@ https://andromeda-astro.vercel.app/blog
 https://spydea-nextjs.vercel.app/blog
 https://humanloop.com/blog
 
+Colors Example
+
+https://mahadeva.framer.ai/
+https://vercel.com/geist/colors
+https://ninedays.co/
+https://atlassian.design/components/tokens/all-tokens
+https://wise.design/foundations/colour
+https://www.intercom.com/
+
 Chatbot AI / Workflow Builder
 
+https://plugnode.ai/dashboard/flows/cmp9u4o8y009n01qrga2q9zzh
+https://resend.com/automations/019e21c0-b8c8-711f-aa59-d78eeae2c44a/editor
+https://github.com/ShadowArcanist/netviz | https://netviz.shadowarcanist.com/
 https://x.com/markproduct/status/2042136077524447356
 https://github.com/denishsharma/chatbot-flow-builder-starter-kit
 https://github.com/nobruf/shadcn-next-workflows
@@ -2200,6 +2270,7 @@ https://x.com/siddharthvij_/status/2039666675751264285/photo/1
 
 Blog Post
 
+https://recipes.granola.ai/r/1c73b3da-833e-47dd-b7ac-fa9f96045b82
 https://www.aiverse.design/insights/design-canvas
 https://n8n.io/workflows/5817-build-a-weekly-ai-trend-alerter-with-arxiv-and-weaviate/
 
@@ -2298,6 +2369,8 @@ https://app.arcads.ai/onboarding/paywall
 
 Footer
 
+https://www.adschoice.co.uk/
+https://fynt.in/ | https://github.com/abhinavkale-dev/fynt
 https://weav.com
 https://www.rocket.new/
 https://runey.app/
@@ -2451,12 +2524,16 @@ Table
 
 https://planner.tremor.so/quotes/overview
 
+Trust Center
+
+
 Connect
 
 https://app.maybe.co/onboarding/connect
 
 Sidebar
 
+https://app.paradigmai.com/home
 https://app.wellapp.ai/app
 https://linear.app/henkiz/inbox
 https://dashboard.hookdeck.com/connections

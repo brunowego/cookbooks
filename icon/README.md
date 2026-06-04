@@ -26,6 +26,14 @@
 
 - [Prepo](/prepo.md)
 
+<!--
+https://github.com/gregberge/svgr | https://github.com/faezemohades/svger-cli
+https://github.com/tancredi/fantasticon
+https://github.com/jaywcjlove/svgtofont
+https://icomoon.io
+https://github.com/unplugin/unplugin-icons
+-->
+
 ## Libraries
 
 - [Feather](https://feathericons.com)
@@ -36,6 +44,7 @@
 - [Tabler Icons](https://tabler-icons.io)
 
 <!--
+https://www.itshover.com/
 https://nucleoapp.com/premium-icons
 https://phosphoricons.com | https://github.com/phosphor-icons/homepage
 https://heroicons.dev

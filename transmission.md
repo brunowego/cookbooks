@@ -31,9 +31,8 @@ choco install transmission
 
 ### Installation
 
-#### Homebrew
-
 ```sh
+# Using Homebrew
 brew install transmission-cli
 ```
 

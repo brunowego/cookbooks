@@ -3,6 +3,10 @@
 **Keywords:** Product Analytics, Web Analytics
 
 <!--
+-domain:*.sentry.io -domain:*.posthog.com
+-->
+
+<!--
 https://artifacthub.io/packages/helm/posthog-clickhouse/posthog
 -->
 

@@ -18,7 +18,7 @@ curl https://cursor.com/install -fsSL | bash
 For Bash or Zsh, put something like this in your `$HOME/.bashrc` or `$HOME/.zshenv`:
 
 ```sh
-# Cursor Agent
+# Local Binary Path
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
