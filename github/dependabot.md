@@ -98,3 +98,11 @@ https://zenn.dev/risu729/articles/dependabot-engine-strict
 -->
 
 TODO
+
+<!--
+gh api -H "Accept: application/vnd.github+json" \
+  "repos/<owner>/<repo>/dependabot/alerts?state=dismissed,fixed&per_page=100" \
+  --paginate \
+  --jq '.[] | {number, severity: .security_advisory.severity, cve: .security_advisory.cve_id, created_at, fixed_at, dismissed_at, pr: .auto_dismissed_at}' \
+  > closed-alerts.json
+-->

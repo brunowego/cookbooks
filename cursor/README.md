@@ -21,7 +21,8 @@ brew install --cask cursor
 # Darwin
 mkdir -p "$HOME"/.cursor
 
-ln -s "$HOME"/Library/Application\ Support/Cursor/User/settings.json "$HOME"/.cursor/settings.json
+# ln -s "$HOME"/Library/Application\ Support/Cursor/User/settings.json "$HOME"/.cursor/settings.json
+echo '{}' >  "$HOME"/.cursor/settings.json
 
 #
 cat "$HOME"/.cursor/settings.json

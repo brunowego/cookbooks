@@ -8,34 +8,25 @@
 
 **Note:** Use `npx yarn` instead of install it.
 
-#### NPM
-
 ```sh
+# Using Volta
+volta install yarn@1
+
+# Using NPM
 npm install -g yarn
-```
 
-#### APT
-
-```sh
+# Using APT
 sudo apt update
 sudo apt -y install yarn
-```
 
-#### YUM
-
-```sh
-#
+# Using YUM
 curl -Ls 'https://dl.yarnpkg.com/rpm/yarn.repo' | \
   sudo tee '/etc/yum.repos.d/yarn.repo'
 
-#
 yum check-update
 sudo yum -y install yarn
-```
 
-#### Chocolatey
-
-```sh
+# Using Chocolatey
 choco install -y yarn
 ```
 
