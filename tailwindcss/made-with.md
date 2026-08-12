@@ -117,6 +117,15 @@ Prompt Onboarding
 
 https://anara.com/brunowego?onboarding=true%3FcheckDevice%3Dtrue
 
+UI
+
+https://www.boardui.com/
+
+UI Dark
+
+https://offloop.org/
+https://kobbe.io/
+
 Words
 
 https://skalata.vc
@@ -127,6 +136,21 @@ https://docs.autosend.com/ai/mcp-server#connecting-to-autosend-mcp
 
 Hero / Header | Hero
 
+https://archil.com/
+https://www.sodax.com/
+https://xpander.ai/
+https://www.plutus.it/
+https://promptlab-wcb.framer.website/
+https://tasken-wcb.framer.website/
+https://lemonslice.com/
+https://anam.ai/
+https://superlog.sh/
+https://archil.com/
+https://scoutcrm.io/
+https://fountible.com/
+https://sunbeam.framer.media/
+https://getnick.ai/
+https://www.gong.io/
 https://www.lightdash.com/
 https://www.gitbook.com/
 https://once.film/
@@ -498,6 +522,7 @@ https://saveit-now-web.vercel.app/changelog
 
 404 (Not Found)
 
+https://docs.outerbase.com/introduction/quick-start
 https://www.evaly.io/app/tests/k177rrtsjv3btnv44077jtj4kd7wdxy7/share
 https://public-us.opendatasoft.com/api/records/1.0/search/?dataset=fablabs&rows=1000
 https://alignui.com/product/hr-management
@@ -567,10 +592,17 @@ https://app.live.zoko.io/meta-connect
 
 CSS Transitions
 
+https://amicro.vercel.app/
 https://transitions.dev/
+
+Audio Effects
+
+https://velvet-ui-eight.vercel.app/
 
 AI Chat
 
+https://beautiful-ui-five.vercel.app/
+https://capacity.so/
 https://www.nollahealth.com/
 https://x.com/batukrskl/status/2049113713722994936
 https://ai-template.alignui.com/ | https://pro.alignui.com/templates/ai-template
@@ -627,6 +659,11 @@ https://paraform.com/help
 
 Docs / Knowledge Base
 
+https://hiraki.ozzyx.xyz/ | https://github.com/ddoemonn/hiraki
+https://files-sdk.dev/
+https://docs.tembo.io/
+https://vocs.dev/
+https://www.env.style/
 https://app.usewrangle.com/knowledge/welcome
 https://www.evaly.io/docs
 https://coda.io/workspaces/ws-mmg-0_nDgK/docs
@@ -678,6 +715,8 @@ https://winr.games/stake
 
 Search Page
 
+https://opensource-together.com/
+https://www.portico.com/
 https://kyte.com
 https://trueup.io/early-stage-startups
 https://javascript.jobs/remote
@@ -790,12 +829,19 @@ Application
 https://www.withblair.com/
 https://nestle.cam
 
+Construction
+
+https://walkthrough-amber.vercel.app/
+
 Post mortem
 
 https://linear.app/now/linear-incident-on-mar-24th-2026
 
 Login / Sign In / Sign up
 
+https://scoutcrm.io/login/
+https://interfere.com/auth
+https://offloop.org/login
 https://app.jackandjill.ai/sign-in?redirect_url=%2Fjack&utm_source=job_listing&utm_medium=job_board&utm_campaign=839d25b5-9d43-404f-bba0-cc8b265b0715
 https://app.tracer.cloud/sign-up
 https://there-there.app/login
@@ -981,6 +1027,7 @@ https://app.documenso.com/settings/webhooks
 
 Waitlist
 
+https://scoutcrm.io/waitlist/
 https://indent.com/
 https://ando.so/
 https://www.spotlightnow.in/
@@ -1010,6 +1057,7 @@ https://app.shelf.nu/reminders
 
 Calendar View
 
+https://reui.io/components/event-calendar
 https://x.com/bagus_fikri/status/2055619443829743840
 https://nthumods.com/en/timetable | https://github.com/nthumodifications/courseweb
 https://github.com/evoluhq/evolu.me
@@ -1055,6 +1103,9 @@ https://www.thesys.dev/
 
 Loading
 
+https://flicker.laurie.fyi/gallery
+https://gradient-spin.vercel.app/
+https://orbs.jakubantalik.com/
 https://github.com/gunnargray-dev/unicode-animations
 https://obaidnadeem.github.io/dab/
 
@@ -1244,6 +1295,8 @@ https://coinhall.org
 
 Landing Page
 
+https://www.runeverything.ai/
+https://www.griffin.com/
 https://www.popcorn.space/
 https://creed.md/ | https://github.com/connorhpbrn/creed
 https://wevm.dev/
@@ -1581,6 +1634,9 @@ https://callstack.com/events/tips-tricks-from-the-ultimate-guide-to-react-native
 
 Personal / Profile
 
+https://paco.me/
+https://www.hamzaalabou.com/
+https://kickoof.com/
 https://www.adfects.com/
 https://adria.studio
 https://morvalabs.com
@@ -1675,6 +1731,7 @@ https://colorsandfonts.com/mesh-generator/
 
 Dashboard
 
+https://app.usewrangle.com/dashboard
 https://login.tailscale.com/admin/machines
 https://x.com/keviduk/status/2052373899979964595
 https://x.com/iamsahilvhora/status/2052623055617433976
@@ -1876,6 +1933,7 @@ https://app.foxchat.dev/9xurqa0xkoqt/settings
 
 Settings Modal
 
+https://x.com/dejvdesign/status/2080587606136357291/photo/1
 https://freenote.app/settings | https://github.com/celerforge-dev/freenote
 https://lesearch-app-two.vercel.app/graphview | https://github.com/TechForAqua/lesearch-app
 https://app.basemulti.com/workspaces/wspgJAk3YvJvSyknZbP | https://github.com/basemulti/basemulti
@@ -1893,6 +1951,7 @@ https://nstfkc.com/connect-modal
 
 Settings
 
+https://app.tembo.io/bruno-s-workspace-1759164666/settings/preferences
 https://chats.cloodot.com/settings/appearance
 https://www.evaly.io/app/settings?tab=general
 https://app.tembo.io/bruno-s-workspace-1759164666/settings/workspace/members
@@ -2070,6 +2129,8 @@ Buy Credits
 
 https://llmgateway.io/dashboard/oPzB1lYySL9HqlK8AfBD/fcxG8O4NIcNiyixgTkCk/usage?days=7
 
+
+
 Onboarding
 
 https://runey.app/dashboard
@@ -2237,6 +2298,7 @@ https://www.intercom.com/
 
 Chatbot AI / Workflow Builder
 
+https://www.foglamp.dev/scan
 https://plugnode.ai/dashboard/flows/cmp9u4o8y009n01qrga2q9zzh
 https://resend.com/automations/019e21c0-b8c8-711f-aa59-d78eeae2c44a/editor
 https://github.com/ShadowArcanist/netviz | https://netviz.shadowarcanist.com/

@@ -1,10 +1,14 @@
-# Second Brain
+# AI Second Brain
 
 **Keywords:** Company Brain
 
 TODO
 
 <!--
+https://github.com/getnao/sylph
+https://github.com/agno-agi/scout
+
+https://github.com/usenotra/notra
 https://egregore.xyz/
 https://app.gitbook.com/o/1nfW3IhzqgAOF8lLcvMj/s/sszqqAb322EWsPW6kjUh/
 https://missioncontrolhq.ai/

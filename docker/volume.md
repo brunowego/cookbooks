@@ -28,10 +28,10 @@ CONTAINERS=$(docker ps -q --filter volume="$DOCKER_VOLUME_NAME")
 docker stop $CONTAINERS
 
 # Backup (before backup, remove old backup)
-docker run --rm -v "$DOCKER_VOLUME_NAME":/volume -v $(pwd):/backup alpine tar cvf /backup/backup.tar /volume
+docker run --rm -v "$DOCKER_VOLUME_NAME":/volume -v $(pwd):/backup alpine tar cvf /backup/backup-$(date -u '+%Y-%m-%d').tar /volume
 
-# Make a copy
-cp ./backup.tar ./backup-$(date -u '+%Y-%m-%d').tar
+# Start
+docker start $CONTAINERS
 ```
 
 ### Restore
@@ -50,7 +50,7 @@ CONTAINERS=$(docker ps -q --filter volume="$DOCKER_VOLUME_NAME")
 docker stop $CONTAINERS
 
 # Restore
-docker run --rm -v "$DOCKER_VOLUME_NAME":/volume -v $(pwd):/backup alpine sh -c "cd /volume && tar xvf /backup/backup.tar --strip 1"
+docker run --rm -v "$DOCKER_VOLUME_NAME":/volume -v $(pwd):/backup alpine sh -c "cd /volume && tar xvf /backup/backup-<date>.tar --strip 1"
 
 # Start
 docker start $CONTAINERS

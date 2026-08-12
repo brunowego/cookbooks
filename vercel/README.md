@@ -31,6 +31,7 @@ https://epic-course-platform.vercel.app
 - [Previews](https://vercel.com/features/previews#checks)
 - [Examples](https://github.com/vercel/examples)
 - [Status Page](https://vercel-status.com)
+- [OSS](https://vercel.com/oss)
 
 ## Docs
 

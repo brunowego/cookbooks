@@ -2,15 +2,11 @@
 
 ## Installation
 
-### Homebrew
-
 ```sh
+# Using Homebrew
 brew install pv
-```
 
-### YUM
-
-```sh
+# Using YUM
 yum check-update
 sudo yum -y install pv
 ```

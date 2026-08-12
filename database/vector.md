@@ -1,6 +1,6 @@
 # Vector Databases
 
-**Keywords:** Semantic Search
+**Keywords:** Semantic Search, Embedding
 
 ## Links
 

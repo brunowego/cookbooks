@@ -2,6 +2,7 @@
 
 <!--
 https://smithery.ai
+https://integrations.sh/
 -->
 
 **Keywords:** Function Calling Alternative

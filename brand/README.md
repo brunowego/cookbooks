@@ -10,6 +10,7 @@ https://vectorlogo.zone
 - [Wikipedia](https://en.wikipedia.org/wiki/Brand)
 
 <!--
+https://logos.lndev.me/
 https://busca.inpi.gov.br/pePI/
 
 https://servicosonline.inpi.pt/pesquisas/main/marcas.jsp?lang=PT

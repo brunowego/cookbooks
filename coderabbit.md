@@ -6,6 +6,7 @@ https://github.com/coderabbitai/skills
 
 ## Links
 
+- [Status Page](https://status.coderabbit.ai)
 - Docs
   - [Code review commands](https://docs.coderabbit.ai/reference/review-commands)
 

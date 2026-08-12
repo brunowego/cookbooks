@@ -13,3 +13,11 @@
 # Using Homebrew
 brew install --cask warp
 ```
+
+### Uninstall
+
+```sh
+brew uninstall --cask warp
+rm -fR ~/.warp
+# rm -fR ~/Library/Application\ Support/warp.dev
+```

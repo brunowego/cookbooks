@@ -41,3 +41,7 @@ Promptfoo
 https://braintrust.dev
 https://github.com/langfuse/langfuse
 -->
+
+<!--
+https://nextjs.org/evals
+-->

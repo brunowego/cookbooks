@@ -8,15 +8,11 @@
 
 ### Installation
 
-#### MAS
-
 ```sh
+# Using MAS
 mas install 462054704
-```
 
-#### Homebrew
-
-```sh
+# Using Homebrew
 brew install --cask microsoft-word
 ```
 
