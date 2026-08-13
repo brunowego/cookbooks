@@ -63,6 +63,9 @@ docker run \
   -c "SELECT version();"
 
 #
+set -o pipefail
+
+#
 docker run \
   --rm \
   --log-driver=none \
@@ -74,7 +77,7 @@ docker run \
       aws s3 cp - s3://"$S3_BUCKET"/"$S3_PATH"/"$DUMP_FILENAME" --region "$S3_REGION"
 
 #
-aws s3api list-multipart-uploads --bucket "$S3_BUCKET" --region "$S3_REGION"
+aws s3api list-multipart-uploads --bucket "$S3_BUCKET" --region "$S3_REGION" --output json
 
 #
 export UPLOAD_ID='<upload-id>'
