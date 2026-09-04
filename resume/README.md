@@ -28,6 +28,7 @@ https://rxresu.me
 <!--
 https://resumeworded.com/resume-scanner
 https://jobscan.co/resume-scanner
+https://withresumeai.com/ — ResumeAI free ATS checker (3/day no account, 10/day free account); State of ATS 2026 (738 employers, Workday 37.9%)
 https://paintminds.com/resume/score-check
 https://nodeflair.com/resume-checker
 https://enhancv.com/resources/improve-your-resume-io-resume
