@@ -23,6 +23,7 @@ https://dbgate.org/features/ndjson-viewer.html
 
 - [konbert - Convert JSONLines to PostgreSQL](https://konbert.com/convert/jsonl/to/postgres)
 - [konbert - JSONLines Viewer](https://konbert.com/viewer/jsonl)
+- [DBConvert JSONL Viewer](https://streams.dbconvert.com/jsonl-viewer) - browser-local, file is not uploaded
 
 ## Tips
 
